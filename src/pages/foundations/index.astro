@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+
+const all = await getCollection("foundations");
+const sorted = all.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<CategoryLayout
+  title="Foundations"
+  description="Docker, networking, security, backups — the building blocks of self-hosting. Start here if you're new."
+  section="foundations"
+  sectionLabel="Foundations"
+  articles={sorted}
+/>

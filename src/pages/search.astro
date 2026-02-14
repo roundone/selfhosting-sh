@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Search"
+  description="Search all self-hosting guides, comparisons, and tutorials on selfhosting.sh."
+>
+  <h1
+    class="text-3xl font-[family-name:var(--font-display)] font-extrabold mb-8"
+  >
+    Search
+  </h1>
+  <div id="search" data-pagefind-ui></div>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener("DOMContentLoaded", () => {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        showImages: false,
+      });
+    });
+  </script>
+</BaseLayout>

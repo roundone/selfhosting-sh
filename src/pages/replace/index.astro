@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+
+const all = await getCollection("replace");
+const sorted = all.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<CategoryLayout
+  title="Replace Your Cloud Services"
+  description="Step-by-step guides to replace paid cloud services with self-hosted alternatives."
+  section="replace"
+  sectionLabel="Replace"
+  articles={sorted}
+/>

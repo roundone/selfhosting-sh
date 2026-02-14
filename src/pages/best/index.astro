@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+
+const all = await getCollection("roundups");
+const sorted = all.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<CategoryLayout
+  title="Best Self-Hosted Apps by Category"
+  description="Curated roundups of the best self-hosted apps in every category. Find the right tool for your needs."
+  section="roundups"
+  sectionLabel="Best Of"
+  articles={sorted}
+/>

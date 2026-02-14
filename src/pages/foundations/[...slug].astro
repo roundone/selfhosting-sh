@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("foundations");
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+
+const allFoundations = await getCollection("foundations");
+const related = allFoundations.filter(
+  (a) => a.data.topic === entry.data.topic
+);
+---
+
+<ArticleLayout
+  entry={entry}
+  headings={headings}
+  section="foundations"
+  sectionLabel="Foundations"
+  relatedArticles={related}
+>
+  <Content />
+</ArticleLayout>

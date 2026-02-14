@@ -1,0 +1,74 @@
+---
+const currentYear = new Date().getFullYear();
+
+const sections = [
+  {
+    title: "Content",
+    links: [
+      { label: "App Guides", href: "/apps/" },
+      { label: "Comparisons", href: "/compare/" },
+      { label: "Best Of", href: "/best/" },
+      { label: "Replace", href: "/replace/" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Hardware", href: "/hardware/" },
+      { label: "Foundations", href: "/foundations/" },
+      { label: "Troubleshooting", href: "/troubleshooting/" },
+      { label: "Search", href: "/search/" },
+    ],
+  },
+];
+---
+
+<footer class="border-t border-border mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid gap-8 sm:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span
+            class="w-3 h-3 rounded-full bg-accent shadow-[0_0_8px_rgba(52,211,153,0.4)]"
+          ></span>
+          <span
+            class="font-[family-name:var(--font-display)] font-bold text-primary"
+            >selfhosting.sh</span
+          >
+        </div>
+        <p class="text-sm text-secondary leading-relaxed">
+          The definitive self-hosting resource. Replace your cloud subscriptions
+          with stuff you run yourself.
+        </p>
+      </div>
+
+      {
+        sections.map((section) => (
+          <div>
+            <h3 class="text-sm font-[family-name:var(--font-mono)] font-bold text-muted uppercase tracking-wider mb-3">
+              {section.title}
+            </h3>
+            <ul class="space-y-2">
+              {section.links.map((link) => (
+                <li>
+                  <a
+                    href={link.href}
+                    class="text-sm text-secondary hover:text-accent transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+
+    <div
+      class="mt-10 pt-6 border-t border-border text-xs text-muted text-center"
+    >
+      &copy; {currentYear} selfhosting.sh. All rights reserved.
+    </div>
+  </div>
+</footer>

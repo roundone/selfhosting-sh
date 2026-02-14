@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+
+const allApps = await getCollection("apps");
+const sorted = allApps.sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+---
+
+<CategoryLayout
+  title="All App Guides"
+  description="Self-hosting setup guides for every app. Complete Docker Compose configs, step-by-step instructions."
+  section="apps"
+  sectionLabel="App Guides"
+  articles={sorted}
+/>

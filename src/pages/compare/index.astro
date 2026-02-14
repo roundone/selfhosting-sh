@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+
+const all = await getCollection("comparisons");
+const sorted = all.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<CategoryLayout
+  title="All Comparisons"
+  description="Head-to-head comparisons of self-hosted apps. Find out which one is right for you."
+  section="comparisons"
+  sectionLabel="Comparisons"
+  articles={sorted}
+/>

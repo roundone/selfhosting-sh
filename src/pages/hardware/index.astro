@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+
+const all = await getCollection("hardware");
+const sorted = all.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<CategoryLayout
+  title="Hardware Guides"
+  description="Mini PCs, NAS devices, networking gear, and everything you need for a self-hosting setup."
+  section="hardware"
+  sectionLabel="Hardware"
+  articles={sorted}
+/>

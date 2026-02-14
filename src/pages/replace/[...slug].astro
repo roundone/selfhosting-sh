@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("replace");
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+
+const allReplace = await getCollection("replace");
+const related = allReplace.filter(
+  (a) => a.data.category === entry.data.category
+);
+---
+
+<ArticleLayout
+  entry={entry}
+  headings={headings}
+  section="replace"
+  sectionLabel="Replace"
+  relatedArticles={related}
+>
+  <Content />
+</ArticleLayout>
