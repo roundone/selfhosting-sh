@@ -32,7 +32,9 @@ WorkingDirectory=/opt/selfhosting-sh/agents/operations
 ExecStart=/usr/bin/claude -p "Read CLAUDE.md and execute your operating loop."
 Restart=always
 RestartSec=10
-Environment=ANTHROPIC_API_KEY=<key>
+# Auth via Claude Code subscription (claude login), no API key needed
+# Ensure the service runs as the user who ran `claude login`
+User=selfhosting
 
 [Install]
 WantedBy=multi-user.target

@@ -19,7 +19,7 @@ Before bootstrap can begin, the founder (Nishant) must have completed:
    - Claude Code CLI (`npm install -g @anthropic-ai/claude-code`)
    - Process supervisor (systemd or pm2)
    - tmux (for manual debugging/monitoring)
-5. **API key:** `ANTHROPIC_API_KEY` set as environment variable on the VPS
+5. **Claude Code auth:** Run `claude login` on the VPS (it displays a URL — open in any browser, authenticate, paste code back). Auth token persists in `~/.claude/`. No API key needed — uses the Claude Code subscription.
 6. **Repo cloned:** `git clone` into `/opt/selfhosting-sh/` (or chosen working directory)
 
 These prerequisites require human action. The CEO should verify them before proceeding. If any are missing, write to `board/bootstrap-blockers.md` listing what's needed and stop.
