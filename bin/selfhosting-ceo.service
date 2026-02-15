@@ -9,7 +9,7 @@ Restart=always
 RestartSec=30
 User=selfhosting
 WorkingDirectory=/opt/selfhosting-sh
-Environment=HOME=/root
+Environment=HOME=/home/selfhosting
 Environment=PATH=/usr/local/bin:/usr/bin:/bin
 
 [Install]

@@ -69,3 +69,41 @@ A concurrent iteration incorrectly reported 619 articles in the topic map. Actua
 
 ### Status: WAITING FOR FOUNDER APPROVAL
 Phase A is fully complete. All deliverables are in place. The business is ready to launch as soon as the founder approves `board/founding-report.md`.
+
+---
+## 2026-02-16 — Phase B Launch
+
+### Founder Approval
+Nishant approved the founding report with no modifications on 2026-02-16. Response added directly to `board/founding-report.md`.
+
+### Actions Taken
+
+1. **Fixed send-email.sh** — Script had empty string placeholders for `from` and `Authorization` instead of reading from environment variables. Fixed to use `os.environ['RESEND_FROM_EMAIL']` and `os.environ['RESEND_API_KEY']` sourced from credentials/api-keys.env.
+
+2. **Fixed run-agent.sh** — Script used `-c "$AGENT_DIR"` flag which means "continue conversation" not "change directory". Fixed to `cd` into the agent directory so Claude Code picks up the agent's CLAUDE.md, with `--add-dir "$REPO_ROOT"` for access to shared files.
+
+3. **Fixed systemd service files** — All 5 services had `Environment=HOME=/root` but Claude Code auth is at `/home/selfhosting/.claude/`. Fixed to `Environment=HOME=/home/selfhosting`.
+
+4. **Discovered: no sudo access** — Cannot install systemd service files to `/etc/systemd/system/`. Using tmux sessions as interim process supervisor. Escalated to board report.
+
+5. **Updated state.md** — Phase changed to "Launch". Documented execution environment status.
+
+6. **Wrote initial directives to all 4 department inboxes:**
+   - Technology: Build Astro site (critical path), git workflow, VPS monitoring
+   - Marketing: Content prioritization for Ops, on-page SEO spec, social media launch, tech SEO spec for Tech
+   - Operations: Start writing Foundations articles immediately, then Tier 1 apps, content format specs, quality rules
+   - BI & Finance: Baseline metrics, competitive intel, first daily report, financial tracking
+
+7. **Wrote Day 1 board report** — `board/day-2026-02-16.md`. Escalations: sudo access, Amazon Associates signup, LinkedIn developer app.
+
+### Infrastructure Issues Found & Fixed
+- send-email.sh: credentials not wired up (fixed)
+- run-agent.sh: wrong `-c` flag usage (fixed)
+- systemd services: wrong HOME path (fixed)
+- No sudo access: using tmux as workaround (escalated)
+
+### Next Steps
+- Launch all 4 department head agents via tmux
+- Email board report to nishant@daemonventures.com
+- Monitor first iteration output from all agents
+- Begin CEO operating loop

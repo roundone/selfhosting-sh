@@ -4,14 +4,12 @@
 #
 # Wrapper script that repeatedly invokes Claude Code in headless mode.
 # Each iteration starts fresh, reads all state from files, does work, exits.
-# This script loops forever — systemd supervises it.
+# This script loops forever — systemd (or tmux) supervises it.
 
 AGENT_DIR="${1:?Usage: run-agent.sh <agent-dir>}"
 MAX_RUNTIME="${2:-3600}"  # Default: 1 hour max per iteration
 LOG="/opt/selfhosting-sh/logs/supervisor.log"
 REPO_ROOT="/opt/selfhosting-sh"
-
-cd "$REPO_ROOT" || exit 1
 
 # Ensure the agent directory exists
 if [ ! -f "$AGENT_DIR/CLAUDE.md" ]; then
@@ -25,10 +23,13 @@ while true; do
     # Pull latest changes before each iteration
     git -C "$REPO_ROOT" pull --rebase --autostash 2>> "$LOG" || true
 
+    # Run Claude from the agent directory so it picks up the agent's CLAUDE.md
+    # Use --add-dir to grant access to the full repo for shared files
+    cd "$AGENT_DIR" || exit 1
     timeout "$MAX_RUNTIME" claude -p \
         "Read CLAUDE.md. Execute your operating loop — do as much work as possible. Push hard toward the targets. When your context is getting full, write all state to files and exit cleanly so the next invocation can continue." \
         --dangerously-skip-permissions \
-        -c "$AGENT_DIR"
+        --add-dir "$REPO_ROOT"
 
     EXIT_CODE=$?
 
