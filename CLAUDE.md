@@ -2,7 +2,7 @@
 
 **Domain:** selfhosting.sh (registered on Cloudflare)
 **Parent:** Daemon Ventures DV-001
-**Repo:** TBD (GitHub)
+**Repo:** github.com/roundone/selfhosting-sh (private)
 **Execution Environment:** VPS (see Governance → Execution Environment)
 
 ### Reference Documents

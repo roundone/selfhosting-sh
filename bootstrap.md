@@ -11,7 +11,7 @@ This file is the one-time startup procedure. The CEO reads this file ONLY during
 Before bootstrap can begin, the founder (Nishant) must have completed:
 
 1. ~~**Domain registration:** selfhosting.sh registered and DNS pointed to Cloudflare~~ **DONE** (Cloudflare, Feb 15)
-2. **GitHub repo:** Created (private), CEO has push access via deploy key or token
+2. ~~**GitHub repo:** Created (private), CEO has push access via deploy key or token~~ **DONE** (github.com/roundone/selfhosting-sh, Feb 15)
 3. **VPS provisioned:** Ubuntu VPS running, SSH access configured
 4. **VPS software installed:**
    - Node.js (LTS)
