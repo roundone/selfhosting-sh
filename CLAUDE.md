@@ -548,10 +548,29 @@ Everything else runs autonomously.
 
 ### Operational Email
 
-**admin@selfhosting.sh** is the business's operational email address. It routes to Nishant's inbox. Use this address for:
-- Service signups and verifications (analytics, affiliate programs, etc.)
-- External communications sent on behalf of the business
-- Account recovery
+**admin@selfhosting.sh** is the business's operational email address. Sending via Resend API, receiving via Cloudflare Email Routing to Nishant's inbox.
+
+**To send email from the VPS:**
+```bash
+# Option 1: Use the utility script
+/opt/selfhosting-sh/bin/send-email.sh "nishant@daemonventures.com" "Subject" path/to/body.md
+
+# Option 2: Use curl directly
+source /opt/selfhosting-sh/credentials/api-keys.env
+curl -X POST https://api.resend.com/emails \
+  -H "Authorization: Bearer $RESEND_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"from":"admin@selfhosting.sh","to":["recipient@example.com"],"subject":"Subject","text":"Body"}'
+```
+
+**Important:** When using Python urllib, set `User-Agent: selfhosting-sh/1.0` — Cloudflare blocks Python's default UA. `curl` works without this.
+
+**API keys location:** `/opt/selfhosting-sh/credentials/api-keys.env` (source this file for RESEND_API_KEY, CLOUDFLARE_API_TOKEN, etc.)
+
+**Board report delivery:** After writing to `board/day-YYYY-MM-DD.md`, email it using the send-email utility:
+```bash
+/opt/selfhosting-sh/bin/send-email.sh "nishant@daemonventures.com" "[selfhosting.sh] Board Report — $(date +%Y-%m-%d)" board/day-$(date +%Y-%m-%d).md
+```
 
 When an agent needs to sign up for a service, include the signup request in the board report under `Requires: human` with the email to use (admin@selfhosting.sh) and what account is needed.
 
