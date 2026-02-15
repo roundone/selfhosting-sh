@@ -111,9 +111,12 @@ Each CLAUDE.md must include:
 
 ### Step 4: Set Up Process Supervision
 
-Create systemd service files (or pm2 config) for each department head:
+Create the agent runner script and systemd service files (see `playbooks.md` → "Execution Infrastructure" for the wrapper script and service templates):
 
 ```
+/opt/selfhosting-sh/bin/
+└── run-agent.sh              — wrapper script (loops headless claude invocations)
+
 /etc/systemd/system/
 ├── selfhosting-ceo.service
 ├── selfhosting-technology.service
@@ -121,6 +124,8 @@ Create systemd service files (or pm2 config) for each department head:
 ├── selfhosting-operations.service
 └── selfhosting-bi-finance.service
 ```
+
+Each service calls `run-agent.sh` with the agent's directory. The wrapper handles iteration loops, timeouts, and error recovery.
 
 DO NOT enable or start them yet. They are created during Phase A but only activated in Phase B.
 

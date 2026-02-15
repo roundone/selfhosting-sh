@@ -8,19 +8,62 @@ Referenced from the CEO CLAUDE.md. These playbooks contain detailed protocols, t
 
 ### The VPS
 
-All agents run on a single VPS as persistent processes. The VPS is the "home" of the business — it's where the agents live, work, and communicate.
+All agents run on a single VPS via a **headless iteration loop**. The VPS is the "home" of the business — it's where the agents live, work, and communicate.
 
 **What runs on the VPS:**
 - A git clone of the selfhosting.sh repo (the working directory for all agents)
-- One persistent Claude Code process per department head (4 total)
-- One persistent Claude Code process for the CEO
-- A process supervisor (systemd or pm2) that keeps all processes alive
+- One agent runner process per department head (4 total) + one for the CEO
+- Each agent runner is a bash wrapper that repeatedly invokes Claude Code in headless mode (`-p` flag)
+- systemd supervises the runner scripts (restarts if the wrapper itself crashes)
 - Sub-agent processes spawned by department heads as needed
 
-**Process supervision:**
-Each department head and the CEO run as supervised services. If a process crashes or exits unexpectedly, the supervisor restarts it automatically. Technology is responsible for configuring and maintaining the process supervisor.
+**Why headless iterations, not persistent interactive sessions:**
 
-Example systemd service (one per agent):
+A persistent Claude Code process can freeze — it asks a permission question, a clarification, or hits an auth prompt, and nobody responds. That department is dead until a human notices. The headless iteration model eliminates this:
+
+- **No interactive prompts.** The `-p` flag runs Claude Code in headless mode. It cannot ask questions or wait for input.
+- **`--allowedTools` pre-authorizes tools.** No permission prompts ever appear.
+- **Fresh context every iteration.** No context overflow. Each run reads all state from files.
+- **Timeout protection.** If a single iteration hangs for any reason, the timeout kills it and the loop continues.
+- **Automatic recovery.** If Claude Code crashes or errors, the wrapper logs it, waits, and tries again. If the wrapper itself crashes, systemd restarts it.
+
+All state lives in files (inbox, logs, learnings, state.md, topic-map). Nothing is lost between iterations. This is the key design guarantee — no agent carries state in memory that isn't also on disk.
+
+**Agent runner script** (`/opt/selfhosting-sh/bin/run-agent.sh`):
+```bash
+#!/bin/bash
+# Usage: run-agent.sh <agent-dir> [max-runtime-seconds]
+# Example: run-agent.sh /opt/selfhosting-sh/agents/operations 3600
+
+AGENT_DIR="${1:?Usage: run-agent.sh <agent-dir>}"
+MAX_RUNTIME="${2:-3600}"  # Default: 1 hour max per iteration
+LOG="/opt/selfhosting-sh/logs/supervisor.log"
+
+cd "$AGENT_DIR" || exit 1
+
+while true; do
+    echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — Starting iteration in $AGENT_DIR" >> "$LOG"
+
+    timeout "$MAX_RUNTIME" claude -p \
+        "Read CLAUDE.md and execute one iteration of your operating loop." \
+        --allowedTools "Bash,Read,Write,Edit,Glob,Grep,Task,WebFetch,WebSearch"
+
+    EXIT_CODE=$?
+
+    if [ $EXIT_CODE -eq 124 ]; then
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — TIMEOUT ($AGENT_DIR) after ${MAX_RUNTIME}s" >> "$LOG"
+    elif [ $EXIT_CODE -ne 0 ]; then
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — ERROR ($AGENT_DIR) code=$EXIT_CODE" >> "$LOG"
+        sleep 30  # Longer pause on errors to avoid tight failure loops
+    else
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — COMPLETED ($AGENT_DIR)" >> "$LOG"
+    fi
+
+    sleep 10
+done
+```
+
+**systemd service** (one per agent):
 ```ini
 [Unit]
 Description=selfhosting.sh - Head of Operations
@@ -28,17 +71,21 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/opt/selfhosting-sh/agents/operations
-ExecStart=/usr/bin/claude -p "Read CLAUDE.md and execute your operating loop."
+ExecStart=/opt/selfhosting-sh/bin/run-agent.sh /opt/selfhosting-sh/agents/operations 3600
 Restart=always
-RestartSec=10
-# Auth via Claude Code subscription (claude login), no API key needed
-# Ensure the service runs as the user who ran `claude login`
+RestartSec=30
 User=selfhosting
 
 [Install]
 WantedBy=multi-user.target
 ```
+
+**Health monitoring (CEO responsibility):**
+The CEO's operating loop includes checking that all department head services are running and producing output. Specifically:
+- Check systemd status of all 4 department services
+- Check log file timestamps — if a department hasn't logged anything in 2+ hours during work periods, investigate
+- If a service is stopped or stuck, restart it and log the incident
+- If auth has expired (repeated error exits), escalate to board report as `Requires: human`
 
 **Git workflow:**
 - Agents work on local files in the repo clone
@@ -49,9 +96,8 @@ WantedBy=multi-user.target
 **Sub-agent spawning:**
 When a department head spawns a sub-agent, it:
 1. Creates the sub-agent's CLAUDE.md (e.g., `agents/operations/writers/photo-management/CLAUDE.md`)
-2. Runs: `claude -p "Read CLAUDE.md and execute." --allowedTools "Bash,Read,Edit,Write,Glob,Grep"`
-3. For permanent sub-agents: the process runs indefinitely under supervision
-4. For project sub-agents: the process runs until scope is complete, writes results to parent's inbox, and exits
+2. For permanent sub-agents: creates a runner script entry and systemd service (same pattern as department heads)
+3. For project sub-agents: runs `claude -p "Read CLAUDE.md and execute." --allowedTools "Bash,Read,Write,Edit,Glob,Grep"` — a single headless run that exits when scope is complete, writing results to parent's inbox
 
 ---
 

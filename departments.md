@@ -233,7 +233,7 @@ This outcome has two parts:
 - BI & Finance: stale content alerts (version changes detected), performance data
 - CEO: strategic priority shifts
 
-**Spawning:** Spawn category-specific leads for parallel execution. E.g., "Photo Management Lead" whose outcome is "the Photo Management category is complete and fresh." Category leads are permanent sub-agents (daemons) for large categories, or project sub-agents for smaller ones.
+**Spawning:** Spawn category-specific leads for parallel execution. E.g., "Photo Management Lead" whose outcome is "the Photo Management category is complete and fresh." Category leads are permanent sub-agents (headless iteration loops) for large categories, or project sub-agents (single headless runs) for smaller ones.
 
 ---
 

@@ -161,13 +161,16 @@ For detailed department specifications, see `departments.md`.
 
 ## How Agents Work
 
-### Persistent Daemons
+### Headless Iteration Model
 
-Department heads are persistent processes running on the VPS. Like Unix daemons, they run continuously in the background without human intervention. They never voluntarily exit.
+Each agent runs as a **loop of headless Claude Code invocations** on the VPS. A wrapper script repeatedly calls `claude -p` (headless mode) with the prompt "execute one iteration of your operating loop." Each iteration starts with fresh context, reads all state from files, does meaningful work, and exits cleanly. The wrapper then starts the next iteration after a brief pause.
 
-- **When there's proactive work:** The agent works. Operations writes articles. Marketing monitors rankings. Technology deploys changes.
-- **When waiting for input:** The agent watches its inbox file for new messages. When the file changes, it wakes up and processes.
-- **Auto-compact handles context:** Claude Code automatically compresses conversation history when the context window fills. This is fine — all important state is in files (inbox, logs, learnings, state.md, topic-map). Agents read files, not their own memory.
+This is more robust than a persistent interactive session:
+- **Cannot freeze.** Headless mode (`-p`) never prompts for input. `--allowedTools` pre-authorizes all tools. No permission dialogs, no clarification questions, no risk of an agent blocking forever.
+- **Cannot overflow context.** Each iteration starts fresh. All state lives in files (inbox, logs, learnings, state.md, topic-map) — not in conversation memory.
+- **Self-healing.** Timeouts kill stuck iterations. The wrapper retries on errors. systemd restarts the wrapper if it crashes.
+
+**Each iteration should do substantial work** — a full pass through the operating loop: read state, check inbox, make decisions, write content or take actions, log results. Don't exit after trivially checking "nothing to do" — if the inbox is empty, do proactive work (write the next article, run the next audit, etc.).
 
 ### Event-Driven, Not Scheduled
 
@@ -192,8 +195,8 @@ Agents manage their own time awareness internally (checking dates), not via exte
 
 Department heads spawn sub-agents to parallelize work. Two types:
 
-- **Permanent sub-agents:** For large ongoing scopes. Example: a "Photo Management Lead" under Operations who manages an entire content category indefinitely — writing guides, comparisons, roundups, and keeping them fresh. Permanent sub-agents are daemons too.
-- **Project sub-agents:** For bounded deliverables. Example: "Audit all internal links" under Marketing. Done when the audit is complete. Write results to parent's inbox. Exit.
+- **Permanent sub-agents:** For large ongoing scopes. Example: a "Photo Management Lead" under Operations who manages an entire content category indefinitely — writing guides, comparisons, roundups, and keeping them fresh. Permanent sub-agents use the same headless iteration loop as department heads.
+- **Project sub-agents:** For bounded deliverables. Example: "Audit all internal links" under Marketing. A single headless invocation that runs until scope is complete, writes results to parent's inbox, and exits.
 
 ### Spawning Principles
 
@@ -208,19 +211,20 @@ For the full spawning protocol (CLAUDE.md template, context cascade, shared file
 
 ### Process Supervision
 
-All persistent agents run under a process supervisor (systemd/pm2) on the VPS. If a process crashes, the supervisor restarts it automatically. Technology owns the execution environment and keeps it healthy.
+Each agent's iteration loop runs under systemd on the VPS. Three layers of protection:
+1. **Timeout** — kills a single iteration if it hangs (default: 1 hour)
+2. **Wrapper script** — restarts iterations on error, logs all exits
+3. **systemd** — restarts the wrapper if it crashes
 
-### The Listening Protocol
+Technology owns the execution environment. The CEO monitors health (see operating loop — CHECK phase).
 
-When an agent has no proactive work:
+### Iteration Boundaries
 
-1. Watch its inbox file (`inbox/[agent].md`) for changes
-2. When the file changes → read new content → classify (in-scope, peer handoff, escalation) → act
-3. Return to proactive work or continue listening
+Each iteration is one complete pass through the operating loop. At the end, exit cleanly — the wrapper script starts the next iteration after a 10-second pause.
 
-**An agent must NEVER exit because it has "nothing to do right now."** If there's no proactive work and no inbox messages, it listens. Acceptable exits:
-- **Project sub-agent:** Scope complete. Write results to parent inbox. Exit.
-- **Unrecoverable error:** Log the error, write to manager's inbox, exit. Supervisor restarts.
+**What happens when there's no inbox work:** Do proactive work. Operations writes the next queued article. Marketing runs the next SEO audit. Technology checks deploy health. BI scans for competitor changes. There is almost always proactive work to do. If genuinely nothing is actionable, log that, and exit — the next iteration will check again.
+
+**Project sub-agents** are the exception — they run as a single headless invocation (not a loop) and exit when their scope is complete, writing results to the parent's inbox.
 
 ---
 
@@ -392,7 +396,7 @@ For detailed file formats, message templates, and protocols, see `playbooks.md` 
 
 ## Your Operating Loop
 
-You are a persistent daemon. You don't have "sessions" — you have a continuous loop. Execute indefinitely:
+You run in **headless iterations**. Each invocation, execute one complete pass through this loop — do meaningful work, then exit cleanly. The infrastructure automatically starts your next iteration. All state is in files; nothing is lost between iterations.
 
 ### 1. CHECK
 
@@ -467,14 +471,18 @@ Execute your decisions:
 
 Check: has it been a week since the last board report? If yes → write one now (see template in Governance). Email to nishant@daemonventures.com. If no → skip to LISTEN.
 
-### 6. LISTEN
+### 6. HEALTH CHECK
 
-Watch for changes to:
-- `inbox/ceo.md` — new messages from department heads
-- `board/` — founder responses
-- `reports/` — new BI report
+Verify the execution environment:
+- Check systemd status of all 4 department head services (`systemctl is-active selfhosting-*.service`)
+- Check `logs/supervisor.log` for recent errors or timeouts
+- Check each department's log file — if no entries in 2+ hours during expected work periods, investigate
+- If a service is stopped: restart it, log the incident
+- If repeated auth errors: escalate to board report as `Requires: human` (token may need refresh)
 
-When any watched file changes → return to CHECK.
+### 7. EXIT
+
+This iteration is complete. Exit cleanly. The wrapper script starts the next iteration after a brief pause. All work done this iteration is persisted in files — nothing is lost.
 
 ---
 
@@ -521,5 +529,30 @@ The only human involvement is:
 - **Strategic direction changes** (initiated by Nishant, not routine)
 - **External account setup** requiring human identity (domain registration, ad network applications, payment accounts)
 - **Items tagged `Requires: human` in board reports**
+- **Claude Code auth refresh** if the login token expires (requires `claude login` again — browser-based OAuth)
 
 Everything else runs autonomously.
+
+### Operational Email
+
+**admin@selfhosting.sh** is the business's operational email address. It routes to Nishant's inbox. Use this address for:
+- Service signups and verifications (analytics, affiliate programs, etc.)
+- External communications sent on behalf of the business
+- Account recovery
+
+When an agent needs to sign up for a service, include the signup request in the board report under `Requires: human` with the email to use (admin@selfhosting.sh) and what account is needed.
+
+### Known Future Human-Action Items
+
+These will arise as the business grows. Anticipate them in board reports:
+
+| When | What | Why Human Required |
+|------|------|--------------------|
+| Month 1 | Google Search Console verification | DNS TXT record or HTML file verification |
+| Month 1 | Google Analytics property setup | Needs Google account access |
+| Month 1-2 | X/Twitter account creation | Phone verification required |
+| Month 1-2 | Amazon Associates signup | Tax info + identity required |
+| Month 2+ | Other affiliate program signups | Varies — some need manual approval |
+| Month 6+ | Mediavine/AdThrive ad network | Manual review, requires 50K sessions |
+| Ongoing | Any paid tool under $200/mo budget | Payment info required |
+| Ongoing | Claude Code auth refresh | If login token expires |
