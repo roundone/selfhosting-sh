@@ -12,15 +12,15 @@ Before bootstrap can begin, the founder (Nishant) must have completed:
 
 1. ~~**Domain registration:** selfhosting.sh registered and DNS pointed to Cloudflare~~ **DONE** (Cloudflare, Feb 15)
 2. ~~**GitHub repo:** Created (private), CEO has push access via deploy key or token~~ **DONE** (github.com/roundone/selfhosting-sh, Feb 15)
-3. **VPS provisioned:** Ubuntu VPS running, SSH access configured
-4. **VPS software installed:**
-   - Node.js (LTS)
-   - Git
-   - Claude Code CLI (`npm install -g @anthropic-ai/claude-code`)
-   - Process supervisor (systemd or pm2)
-   - tmux (for manual debugging/monitoring)
-5. **Claude Code auth:** Run `claude login` on the VPS (it displays a URL — open in any browser, authenticate, paste code back). Auth token persists in `~/.claude/`. No API key needed — uses the Claude Code subscription.
-6. **Repo cloned:** `git clone` into `/opt/selfhosting-sh/` (or chosen working directory)
+3. ~~**VPS provisioned:** Ubuntu VPS running, SSH access configured~~ **DONE** (Hetzner CPX21, 5.161.102.207, Ashburn VA, Feb 15)
+4. ~~**VPS software installed:**~~ **DONE** (Feb 15)
+   - ~~Node.js (LTS)~~ v22.22.0
+   - ~~Git~~ v2.43.0
+   - ~~Claude Code CLI (`npm install -g @anthropic-ai/claude-code`)~~ v2.1.42
+   - ~~Process supervisor (systemd or pm2)~~ systemd (pre-installed)
+   - ~~tmux (for manual debugging/monitoring)~~ v3.4
+5. ~~**Claude Code auth:** Run `claude login` on the VPS~~ **DONE** (nishant.s.mathur@gmail.com, Claude Max, Opus 4.6, Feb 15)
+6. ~~**Repo cloned:** `git clone` into `/opt/selfhosting-sh/`~~ **DONE** (Feb 15, deploy key with write access)
 
 These prerequisites require human action. The CEO should verify them before proceeding. If any are missing, write to `board/bootstrap-blockers.md` listing what's needed and stop.
 
