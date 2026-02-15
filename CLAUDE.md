@@ -173,10 +173,10 @@ For detailed department specifications, see `departments.md`.
 
 ### Headless Iteration Model
 
-Each agent runs as a **loop of headless Claude Code invocations** on the VPS. A wrapper script repeatedly calls `claude -p` (headless mode) with the prompt "execute one iteration of your operating loop." Each iteration starts with fresh context, reads all state from files, does meaningful work, and exits cleanly. The wrapper then starts the next iteration after a brief pause.
+Each agent runs as a **loop of headless Claude Code invocations** on the VPS. A wrapper script repeatedly calls `claude -p` (headless mode) with `--dangerouslySkipPermissions` (full tool access, no prompts). Each iteration starts with fresh context, reads all state from files, does maximum work, and exits cleanly when context is getting full. The wrapper then starts the next iteration after a brief pause.
 
 This is more robust than a persistent interactive session:
-- **Cannot freeze.** Headless mode (`-p`) never prompts for input. `--allowedTools` pre-authorizes all tools. No permission dialogs, no clarification questions, no risk of an agent blocking forever.
+- **Cannot freeze.** Headless mode (`-p`) never prompts for input. `--dangerouslySkipPermissions` grants full tool access. No permission dialogs, no clarification questions, no risk of an agent blocking forever.
 - **Cannot overflow context.** Each iteration starts fresh. All state lives in files (inbox, logs, learnings, state.md, topic-map) — not in conversation memory.
 - **Self-healing.** Timeouts kill stuck iterations. The wrapper retries on errors. systemd restarts the wrapper if it crashes.
 
