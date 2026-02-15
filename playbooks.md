@@ -46,7 +46,7 @@ while true; do
 
     timeout "$MAX_RUNTIME" claude -p \
         "Read CLAUDE.md. Execute your operating loop — do as much work as possible. Push hard toward the targets. When your context is getting full, write all state to files and exit cleanly so the next invocation can continue." \
-        --dangerouslySkipPermissions
+        --dangerously-skip-permissions
 
     EXIT_CODE=$?
 
@@ -97,7 +97,7 @@ The CEO's operating loop includes checking that all department head services are
 When a department head spawns a sub-agent, it:
 1. Creates the sub-agent's CLAUDE.md (e.g., `agents/operations/writers/photo-management/CLAUDE.md`)
 2. For permanent sub-agents: creates a runner script entry and systemd service (same pattern as department heads)
-3. For project sub-agents: runs `claude -p "Read CLAUDE.md. Execute your scope fully — push hard, do maximum work. Write results to your parent's inbox when done." --dangerouslySkipPermissions` — a single headless run that exits when scope is complete
+3. For project sub-agents: runs `claude -p "Read CLAUDE.md. Execute your scope fully — push hard, do maximum work. Write results to your parent's inbox when done." --dangerously-skip-permissions` — a single headless run that exits when scope is complete
 
 ---
 
