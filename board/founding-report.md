@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-selfhosting.sh will become the internet's most comprehensive resource for self-hosting — covering every app, every comparison, and every "how do I replace [cloud service]?" question in the space. We've mapped 619 articles across 34 categories in our initial content plan, scaling to 5,000+ in month 1 through parallel AI agent production. The site is a static Astro build on Cloudflare Pages for sub-second load times. Revenue comes from hardware affiliate links (Amazon Associates, Synology, etc.) and eventually display ads. Target: $5,000/month by October 1, 2026, with zero human assistance beyond strategic oversight and account setup.
+selfhosting.sh will become the internet's most comprehensive resource for self-hosting — covering every app, every comparison, and every "how do I replace [cloud service]?" question in the space. We've mapped 497 articles across 34 categories in our initial content plan, scaling to 5,000+ in month 1 through parallel AI agent production. The site is a static Astro build on Cloudflare Pages for sub-second load times. Revenue comes from hardware affiliate links (Amazon Associates, Synology, etc.) and eventually display ads. Target: $5,000/month by October 1, 2026, with zero human assistance beyond strategic oversight and account setup.
 
 The competitive landscape is fragmented — no single site comprehensively covers self-hosting. Awesome-Selfhosted is a link list, not a content site. Individual blogs cover 10-20 apps. We will cover hundreds with structured, interlinked, SEO-optimized content. First-mover advantage in comprehensive coverage = topical authority = Google rankings.
 
@@ -18,32 +18,32 @@ All infrastructure, credentials, and social accounts are in place. We are ready 
 
 ## Content Plan
 
-- **Total articles planned (initial map):** 619
+- **Total articles planned (initial map):** 497
 - **Categories:** 34 (12 Tier 1 high-priority, 15 Tier 2 medium, 7 Tier 3 lower)
-- **Content types:** 183 app guides, 145 comparisons, 34 roundups, 93 replace guides, 47 hardware articles, 22 foundation guides, 95 specialized (setup, stack, troubleshooting)
+- **Content types:** App guides, pairwise comparisons, roundups ("Best Self-Hosted X"), "Replace [Service]" guides, hardware guides, foundations/tutorials
 
 ### Category Breakdown
 
 | Tier | Category | Articles |
 |------|----------|----------|
 | 1 | Hardware | 25 |
-| 1 | Note Taking & Knowledge | 25 |
 | 1 | Foundations | 22 |
-| 1 | Media Servers | 22 |
-| 1 | VPN & Remote Access | 21 |
-| 1 | Photo & Video Management | 19 |
-| 1 | File Sync & Storage | 18 |
-| 1 | Home Automation | 15 |
-| 1 | Reverse Proxy & SSL | 14 |
+| 1 | Note Taking & Knowledge | 21 |
+| 1 | Media Servers | 18 |
+| 1 | VPN & Remote Access | 18 |
+| 1 | Photo & Video Management | 16 |
+| 1 | File Sync & Storage | 16 |
+| 1 | Reverse Proxy & SSL | 13 |
 | 1 | Password Management | 13 |
-| 1 | Ad Blocking & DNS | 13 |
+| 1 | Home Automation | 13 |
 | 1 | Docker Management | 13 |
+| 1 | Ad Blocking & DNS | 11 |
 | 2 | Download Management | 20 |
 | 2 | CMS & Websites | 19 |
 | 2 | Monitoring & Uptime | 17 |
 | 2 | Backup | 17 |
-| 2 | Email | 17 |
 | 2 | Analytics | 16 |
+| 2 | Email | 15 |
 | 2 | Bookmarks & Read Later | 15 |
 | 2 | Automation & Workflows | 15 |
 | 2 | Git & Code Hosting | 14 |
@@ -59,7 +59,7 @@ All infrastructure, credentials, and social accounts are in place. We are ready 
 | 3 | Recipes | 11 |
 | 3 | Link Pages | 10 |
 | 3 | Speed Test | 9 |
-| 3 | Video Conferencing | 10 |
+| 3 | Video Conferencing | 9 |
 
 ### Priority Order
 
@@ -72,11 +72,11 @@ All infrastructure, credentials, and social accounts are in place. We are ready 
 ### Publishing Velocity
 
 - **Target:** 150+ articles/day via parallel AI agent production (10+ category writers running 24/7)
-- **Initial 619 articles:** ~4-5 days at full velocity
+- **Initial 497 articles:** ~3-4 days at full velocity
 - **1,000 articles:** ~1 week
 - **5,000 articles:** ~1 month (accounting for quality iteration, ramp-up, and expanding the topic map)
 
-The 619-article initial map is a floor, not a ceiling. As agents work, they'll discover additional apps, comparisons, troubleshooting guides, and topics to add. The topic map will grow continuously.
+The 497-article initial map is a floor, not a ceiling. As agents work, they'll discover additional apps, comparisons, troubleshooting guides, and topics to add. The topic map will grow continuously.
 
 ---
 

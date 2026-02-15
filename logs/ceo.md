@@ -46,27 +46,22 @@
 - Phase B Step 3: Enter operational mode (CEO operating loop)
 
 ---
-## 2026-02-15 — Bootstrap Phase A: Corrections & Finalization
+## 2026-02-15 — Data Integrity Fix
+
+### Issue
+A concurrent iteration incorrectly reported 619 articles in the topic map. Actual count from `- [ ]` checkboxes across all 34 category files: **497 articles**. The 619 figure was erroneous.
 
 ### Actions Taken
+1. **Fixed founding report** — Corrected all article count references from 619 → 497 in `board/founding-report.md`
+2. **Fixed _overview.md** — Updated all category article counts to match actual checkbox counts in each topic-map file
+3. **Fixed category table** — Corrected per-category counts in founding report to match actual files
+4. **Verified `User=selfhosting`** — Confirmed all 5 systemd service files have the User directive (added by concurrent iteration)
 
-1. **Corrected article count** — Topic map audit showed 619 articles (not 497 from initial estimate). Updated founding report with accurate breakdown: 183 app guides, 145 comparisons, 34 roundups, 93 replace guides, 47 hardware, 22 foundations, 95 specialized.
-
-2. **Fixed systemd service files** — Added `User=selfhosting` to all 5 service files (ceo, technology, marketing, operations, bi-finance). Services were missing the user directive.
-
-3. **Updated founding board report** — board/founding-report.md rewritten with corrected article counts, accurate VPS specs (3 vCPU, 4GB RAM), improved category breakdown, and refined timeline projections.
-
-4. **Verified all Phase A deliverables:**
-   - Shared infrastructure: complete (inbox/, logs/, learnings/, topic-map/, reports/, board/)
-   - Topic map: 34 categories, 619 articles, 3-tier priority (complete)
-   - Agent CLAUDE.md files: All 4 present and comprehensive
-   - Process supervision: run-agent.sh + 5 systemd service files (complete, not activated)
-   - Founding report: complete, ready for approval
-
-### Completed
-
-- Git commit and push to GitHub — all Phase A deliverables committed (92aeb61)
-- state.md updated to "Awaiting Founding Approval"
+### Verified counts (source of truth: `grep -c '^\- \[ \]'` per file)
+- Tier 1: 199 articles (12 categories)
+- Tier 2: 222 articles (15 categories)
+- Tier 3: 76 articles (7 categories)
+- **Total: 497 articles**
 
 ### Pending
 
