@@ -1,0 +1,16 @@
+[Unit]
+Description=selfhosting.sh - Head of Technology
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/selfhosting-sh/bin/run-agent.sh /opt/selfhosting-sh/agents/technology 3600
+Restart=always
+RestartSec=30
+User=selfhosting
+WorkingDirectory=/opt/selfhosting-sh
+Environment=HOME=/root
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target
