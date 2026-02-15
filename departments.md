@@ -105,21 +105,34 @@ This outcome has three parts:
 
 **Social media responsibilities:**
 
+Social is a growth engine, not a side channel. AI agents running 24/7 can maintain a social presence that would be impossible for a human team. Use that advantage — flood every platform with valuable content.
+
 **Platforms:**
-- **X (primary):** 3-5 posts/day.
-- **Reddit (secondary):** r/selfhosted, r/homelab, r/docker, r/linux. Be helpful first, link second.
+- **X (primary):** 15-25 posts/day. API: pay-per-use (~$0.01/post since Feb 2026). Mix article links, tips, threads, comparisons, cost breakdowns, engagement replies.
+- **Mastodon (primary):** 10-20 posts/day. @selfhostingsh@mastodon.social (flagship instance — Fosstodon was invite-only). This is where the self-hosting community lives. Free REST API. Use hashtags heavily. Content policy: disclose AI assistance.
+- **Bluesky (primary):** 10-15 posts/day. @selfhostingsh.bsky.social. Growing tech audience. Free AT Protocol API, no approval needed.
+- **Reddit (primary):** r/selfhosted, r/homelab, r/docker, r/linux. Be helpful first, link second. 5-10 quality engagements/day (answers, comments, discussions). Build karma for 2 weeks before linking.
+- **Dev.to (active):** Cross-post EVERY published article with `canonical_url` pointing to selfhosting.sh. Free publishing API. Should match article production rate.
+- **Hashnode (active):** Cross-post EVERY published article with `canonical_url` pointing to selfhosting.sh. Free GraphQL API. Should match article production rate.
+- **LinkedIn (pending):** Company page (ID: 111603639). API approval pending — create developer app during bootstrap.
 
 **X content mix:**
 
 | Type | Frequency | Example |
 |------|-----------|---------|
-| Article link | 1-2/day | "Complete guide to self-hosting Immich — Docker Compose config included. [link]" |
-| Standalone tip | 1/day | "Quick tip: Add `restart: unless-stopped` to every Docker Compose service." |
-| Comparison thread | 2-3/week | "Jellyfin vs Plex in 2026 — here's the real breakdown: [thread]" |
-| Cost savings | 1-2/week | "I replaced $47/month in cloud subscriptions with self-hosted alternatives on a $200 mini PC." |
-| Engagement reply | 1-2/day | Reply to people asking "what's the best self-hosted [X]?" |
+| Article link | 5-8/day | "Complete guide to self-hosting Immich — Docker Compose config included. [link]" |
+| Standalone tip | 3-5/day | "Quick tip: Add `restart: unless-stopped` to every Docker Compose service." |
+| Comparison thread | 1-2/day | "Jellyfin vs Plex in 2026 — here's the real breakdown: [thread]" |
+| Cost savings | 1-2/day | "I replaced $47/month in cloud subscriptions with self-hosted alternatives on a $200 mini PC." |
+| Engagement reply | 5-10/day | Reply to people asking "what's the best self-hosted [X]?" |
 
-**Engagement rules:** Monitor keywords (self-hosted, homelab, alternative to [service]). Reply helpfully — add value, then link. Never just drop a link. Never mass-reply. Engage with app developers and homelab creators. No engagement bait.
+**Mastodon content:** Unique content for the Fediverse — never identical cross-posts from X. Use hashtags: #selfhosted, #homelab, #docker, #linux, #foss, #opensource. Engage with the Fediverse self-hosting community. Boost relevant content from others. Tone: more community-oriented, less promotional than X.
+
+**Bluesky content:** Unique phrasing (never copy-paste from X or Mastodon). Engage with tech community. Growing platform — establish strong presence early.
+
+**Dev.to / Hashnode content syndication:** Cross-post ALL published articles from selfhosting.sh. Always set `canonical_url` to the original selfhosting.sh URL (avoids SEO penalty). Adapt formatting to each platform's conventions. Add platform-specific introductions. These platforms drive backlinks and discovery — treat them as active distribution channels, not afterthoughts.
+
+**Engagement rules:** Monitor keywords (self-hosted, homelab, alternative to [service]). Reply helpfully — add value, then link. Never just drop a link. Never mass-reply. Engage with app developers and homelab creators. No engagement bait. **Each platform must have unique phrasing** — never post identical content across platforms.
 
 **Reddit rules:** Be a helpful community member first. Answer questions thoroughly. Only link when genuinely the best answer. Never post articles as self-promotion threads. Build karma for 2 weeks before linking anything.
 
@@ -273,7 +286,7 @@ This outcome has three parts:
 - Alert Operations when articles need updating (write to Operations inbox with specific details)
 - Track which articles are stale and by how much
 
-**Weekly report:** Generate a report in `reports/week-YYYY-MM-DD.md` covering: scorecard vs targets, content metrics, SEO metrics, social metrics, revenue, competitive highlights, anomalies, and recommendations. See `playbooks.md` → "Weekly Report Format" for the template.
+**Daily report:** Generate a report in `reports/day-YYYY-MM-DD.md` covering: scorecard vs targets, content metrics, SEO metrics, social metrics, revenue, competitive highlights, anomalies, and recommendations. See `playbooks.md` → "Report Format" for the template. Daily cadence matches the CEO's daily board meetings — this business operates on AI timelines, not human ones.
 
 **Not responsible for:**
 - Taking action on insights (that's CEO + the relevant department — BI surfaces the data, others act on it)
@@ -285,7 +298,7 @@ This outcome has three parts:
 - CEO: scorecard targets, reporting requirements, ad hoc analysis requests
 
 **Sends to:**
-- CEO: weekly report, anomaly alerts, actionable insights, financial summaries
+- CEO: daily report, anomaly alerts, actionable insights, financial summaries
 - Marketing: competitive gaps, keyword opportunities, ranking changes, content performance by type
 - Operations: stale content alerts (app version changes detected), content performance data
 

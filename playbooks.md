@@ -213,7 +213,7 @@ topic-map/            — per-category content queues
 ├── hardware.md
 └── foundations.md
 
-reports/              — weekly reports (BI & Finance writes, CEO reads)
+reports/              — daily reports (BI & Finance writes, CEO reads)
 board/                — board reports (CEO writes, Nishant reads)
 ```
 
@@ -289,38 +289,40 @@ When the CEO updates a department head's CLAUDE.md, and that department head has
 
 ---
 
-## Weekly Report Format
+## Daily Report Format
 
-BI & Finance produces a weekly report in `reports/week-YYYY-MM-DD.md`:
+BI & Finance produces a daily report in `reports/day-YYYY-MM-DD.md`. This business operates on AI timelines — daily reports ensure course corrections happen fast enough to matter.
 
 ```markdown
-# Weekly Report — [date range]
+# Daily Report — [date]
 
 ## Scorecard
 [Current metrics vs targets from the Mission scorecard]
 
 ## Content
-- Articles published this week: [n]
+- Articles published today: [n]
+- Articles published this month: [n]
 - Total articles: [n]
 - Categories fully covered: [n] / [total]
 - Articles with quality issues flagged: [n]
 
 ## SEO
-- New page 1 keywords: [n]
+- New page 1 keywords (24h): [n]
 - Total page 1 keywords: [n]
-- Organic traffic this week: [n]
+- Organic traffic today: [n]
 - Top performing articles: [list]
 - Biggest ranking drops: [list]
 
 ## Social
-- New followers: [n]
+- Posts published today: [n] (by platform)
+- New followers today: [n] (by platform)
 - Total followers: [n]
 - Click-throughs to site: [n]
 - Top performing posts: [list]
 
 ## Revenue & Finance
-- Affiliate revenue this week: $[n]
-- Ad revenue this week: $[n]
+- Affiliate revenue today: $[n]
+- Ad revenue today: $[n]
 - Total revenue this month: $[n]
 - Total expenses this month: $[n]
 - P&L this month: $[n]
@@ -337,7 +339,7 @@ BI & Finance produces a weekly report in `reports/week-YYYY-MM-DD.md`:
 [Any open escalations or unresolved issues]
 
 ## Recommendation
-[What should the CEO focus on this week?]
+[What should the CEO focus on today?]
 ```
 
 ---
