@@ -935,3 +935,6 @@ Uploading... (206/206)
 ✨ Uploading _headers
 ✨ Uploading _redirects
 🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://2b994909.selfhosting-sh.pages.dev
+2026-02-16T08:31:16Z -- [auto-deploy] Deploy succeeded
+2026-02-16T08:31:16Z -- [auto-deploy] Pages deployed: 68
