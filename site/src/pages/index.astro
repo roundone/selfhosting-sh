@@ -7,14 +7,16 @@ const allCompare = await getCollection('compare', ({ data }) => !data.draft);
 const allBest = await getCollection('best', ({ data }) => !data.draft);
 const allReplace = await getCollection('replace', ({ data }) => !data.draft);
 const allFoundations = await getCollection('foundations', ({ data }) => !data.draft);
+const allHardware = await getCollection('hardware', ({ data }) => !data.draft);
 
-const totalArticles = allApps.length + allCompare.length + allBest.length + allReplace.length + allFoundations.length;
+const totalArticles = allApps.length + allCompare.length + allBest.length + allReplace.length + allFoundations.length + allHardware.length;
 
 const categories = [
   { name: 'App Guides', href: '/apps/', description: 'Setup tutorials for self-hosted apps', count: allApps.length },
   { name: 'Comparisons', href: '/compare/', description: 'Head-to-head app comparisons', count: allCompare.length },
   { name: 'Best Of', href: '/best/', description: 'Top picks by category', count: allBest.length },
   { name: 'Replace', href: '/replace/', description: 'Drop your cloud subscriptions', count: allReplace.length },
+  { name: 'Hardware', href: '/hardware/', description: 'Servers, NAS, drives, and builds', count: allHardware.length },
   { name: 'Foundations', href: '/foundations/', description: 'Docker, networking, Linux basics', count: allFoundations.length },
 ];
 
@@ -24,6 +26,7 @@ const allArticles = [
   ...allCompare.map(a => ({ ...a, collection: 'compare' })),
   ...allBest.map(a => ({ ...a, collection: 'best' })),
   ...allReplace.map(a => ({ ...a, collection: 'replace' })),
+  ...allHardware.map(a => ({ ...a, collection: 'hardware' })),
   ...allFoundations.map(a => ({ ...a, collection: 'foundations' })),
 ].sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 12);
 
@@ -46,6 +49,7 @@ const websiteLd = {
   <div class="hero">
     <h1><span class="highlight">$</span> Replace your cloud subscriptions</h1>
     <p>Practical guides to self-hosting everything. Docker setup tutorials, app comparisons, and hardware recommendations — no fluff.</p>
+    <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-top: 0.5rem;">{totalArticles} guides and growing</p>
     <div id="search"></div>
   </div>
 
