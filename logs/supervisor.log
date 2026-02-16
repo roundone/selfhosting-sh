@@ -6062,3 +6062,18 @@ fatal: Cannot rebase onto multiple branches.
 2026-02-16T08:40:50Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
 2026-02-16T08:40:50Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
 2026-02-16T08:40:51Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 3a8d97b7565e6c99ff4c010b29c2966d4573906c.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 3a8d97b7565e6c99ff4c010b29c2966d4573906c
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   3a8d97b..c8b92f0  main -> main
