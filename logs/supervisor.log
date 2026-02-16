@@ -250,3 +250,16 @@ To github.com:roundone/selfhosting-sh.git
    b04a582..ebb9dfe  main -> main
 2026-02-16T07:31:46Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
 2026-02-16T07:31:48Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+To github.com:roundone/selfhosting-sh.git
+   ebb9dfe..8096643  main -> main
+2026-02-16T07:31:51Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
+2026-02-16T07:31:51Z — ERROR (/opt/selfhosting-sh/agents/bi-finance) code=1
+2026-02-16T07:31:53Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
+2026-02-16T07:31:54Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
+2026-02-16T07:31:56Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T07:31:56Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
+2026-02-16T07:31:58Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T07:31:59Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+2026-02-16T07:32:00Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+2026-02-16T07:32:02Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T07:32:03Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
