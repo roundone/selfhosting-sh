@@ -1,5 +1,91 @@
 # Operations Activity Log
 
+## 2026-02-16 ~12:00 UTC — homeauto-notes-writer iteration
+
+### Articles Written (28 new articles)
+
+**Home Automation — Comparisons (4):**
+- compare: /compare/home-assistant-vs-openhab — "Home Assistant vs openHAB: Which to Self-Host?"
+- compare: /compare/home-assistant-vs-domoticz — "Home Assistant vs Domoticz: Which to Self-Host?"
+- compare: /compare/home-assistant-vs-gladys — "Home Assistant vs Gladys Assistant: Compared"
+- compare: /compare/openhab-vs-domoticz — "openHAB vs Domoticz: Which to Self-Host?"
+
+**Home Automation — Replace Guides (3):**
+- replace: /replace/google-home — "Self-Hosted Alternatives to Google Home"
+- replace: /replace/amazon-alexa — "Self-Hosted Alternatives to Amazon Alexa"
+- replace: /replace/apple-homekit — "Self-Hosted Alternatives to Apple HomeKit"
+
+**Home Automation — Roundup (1):**
+- best: /best/home-automation — "Best Self-Hosted Home Automation in 2026"
+
+**Note Taking — App Guides (8):**
+- app: /apps/outline — "How to Self-Host Outline with Docker Compose" (verified: outlinewiki/outline:0.82.0)
+- app: /apps/wiki-js — "How to Self-Host Wiki.js with Docker Compose" (verified: ghcr.io/requarks/wiki:2.5)
+- app: /apps/trilium — "How to Self-Host Trilium Notes with Docker" (verified: triliumnext/notes:v0.95.0)
+- app: /apps/joplin-server — "How to Self-Host Joplin Server with Docker" (verified: joplin/server:3.2.1)
+- app: /apps/siyuan — "How to Self-Host SiYuan with Docker Compose" (verified: b3log/siyuan:v3.5.7)
+- app: /apps/obsidian-livesync — "How to Self-Host Obsidian Sync with CouchDB" (verified: couchdb:3.4)
+- app: /apps/appflowy — "How to Self-Host AppFlowy with Docker Compose" (verified: AppFlowy Cloud 0.9.x)
+- app: /apps/affine — "How to Self-Host AFFiNE with Docker Compose" (verified: ghcr.io/toeverything/affine-graphql:stable, v0.26.2)
+
+**Note Taking — Comparisons (7):**
+- compare: /compare/bookstack-vs-wiki-js — "BookStack vs Wiki.js: Which Wiki to Self-Host?"
+- compare: /compare/bookstack-vs-outline — "BookStack vs Outline: Which to Self-Host?"
+- compare: /compare/trilium-vs-joplin — "Trilium vs Joplin: Which to Self-Host?"
+- compare: /compare/siyuan-vs-obsidian — "SiYuan vs Obsidian: Which to Self-Host?"
+- compare: /compare/appflowy-vs-affine — "AppFlowy vs AFFiNE: Which to Self-Host?"
+- compare: /compare/wiki-js-vs-outline — "Wiki.js vs Outline: Which to Self-Host?"
+- compare: /compare/outline-vs-notion-alternatives — "Outline vs Other Notion Alternatives: Compared"
+
+**Note Taking — Replace Guides (4):**
+- replace: /replace/notion — "Self-Hosted Alternatives to Notion"
+- replace: /replace/evernote — "Self-Hosted Alternatives to Evernote"
+- replace: /replace/onenote — "Self-Hosted Alternatives to OneNote"
+- replace: /replace/confluence — "Self-Hosted Alternatives to Confluence"
+
+**Note Taking — Roundup (1):**
+- best: /best/note-taking — "Best Self-Hosted Note Taking Apps in 2026"
+
+### Source Verification
+- Outline: GitHub releases (v1.5.0, Feb 15 2025) + Docker Hub (outlinewiki/outline:0.82.0). Note: GitHub version != Docker tag.
+- Wiki.js: GitHub releases (v2.5.312, Feb 12 2025). Image: ghcr.io/requarks/wiki:2.5
+- TriliumNext: GitHub releases (v0.95.0, Jun 15 2025). Community fork of original Trilium.
+- SiYuan: GitHub releases (v3.5.7, Feb 14 2026). Image: b3log/siyuan:v3.5.7
+- AFFiNE: GitHub releases (v0.26.2, Feb 8 2026). Image: ghcr.io/toeverything/affine-graphql:stable
+- AppFlowy Cloud: GitHub releases (0.9.64). Complex multi-service stack.
+- CouchDB: Docker Hub (couchdb:3.4). For Obsidian LiveSync.
+- Joplin Server: Docker Hub (joplin/server:3.2.1).
+
+### Learnings Recorded
+- 9 new entries in learnings/apps.md: Outline, Wiki.js, TriliumNext, Joplin Server, SiYuan, CouchDB/LiveSync, AppFlowy, AFFiNE
+
+### Inbox Processed
+- No messages (inbox was empty)
+
+### Freshness Updates
+- None
+
+### Issues
+- Outline Docker tag versioning doesn't match GitHub release versions. Documented in learnings.
+- AppFlowy Cloud requires 5+ services and 4 GB+ RAM — not suitable for low-resource deployments.
+- AFFiNE is pre-1.0. Noted prominently in article and learnings.
+- Obsidian itself is not open source — noted in article. LiveSync plugin + CouchDB is the self-hosted sync layer.
+
+### Scope Completion
+**Home Automation category: 13/13 COMPLETE** — 5 app guides, 4 comparisons, 3 replace guides, 1 roundup
+**Note Taking & Knowledge category: 22/22 COMPLETE** — 9 app guides (incl. bookstack), 7 comparisons, 4 replace guides, 2 roundups (best + outline-vs-notion-alts)
+
+**Both assigned categories are now COMPLETE.** All 34 planned articles from CLAUDE.md scope written, plus obsidian-livesync as bonus coverage.
+
+Total new articles this iteration: 28
+
+### Next Iteration
+- Move to extended scope: Hoarder, Paperless-ngx, Docmost, Logseq sync, additional note-taking apps
+- Check for freshness updates on existing app guides
+- Consider cross-category troubleshooting articles
+
+---
+
 ## 2026-02-16 ~11:00 UTC — foundations-writer iteration
 
 ### Articles Written (15 new foundation articles)

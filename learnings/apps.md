@@ -1,5 +1,64 @@
 # App Learnings
 
+## 2026-02-16 — Outline v1.5.0 (homeauto-notes-writer)
+- **Image:** `outlinewiki/outline:0.82.0` — Docker tags use a different versioning scheme from GitHub releases (v1.5.0 on GitHub ≠ 0.82.0 on Docker Hub).
+- **Port:** 3000
+- **Requires:** PostgreSQL + Redis + external auth provider (OIDC, Google, Slack, Azure, Discord). No built-in username/password auth.
+- **Secrets:** SECRET_KEY and UTILS_SECRET must be 64 hex chars (32 bytes). Generate with `openssl rand -hex 32`.
+- **Local file storage:** Set `FILE_STORAGE=local` and `FILE_STORAGE_LOCAL_ROOT_DIR=/var/lib/outline/data`.
+- **Gotcha:** `URL` env var must exactly match the URL users access, including protocol. Mismatch causes OIDC redirect failures.
+
+## 2026-02-16 — Wiki.js v2.5 (homeauto-notes-writer)
+- **Image:** `ghcr.io/requarks/wiki:2.5` — latest stable v2 branch. v3.0 is in development (not yet released).
+- **Port:** 3000
+- **Requires:** PostgreSQL. No Redis needed.
+- **Built-in auth:** Yes (email/password). Also supports LDAP, OIDC, OAuth2, SAML.
+- **Editor types are per-page and cannot be changed after creation.** Choose Markdown, WYSIWYG, or HTML when creating each page.
+- **Git sync:** Bidirectional sync to Git repository. Configured under Administration → Storage.
+
+## 2026-02-16 — TriliumNext Notes v0.95.0 (homeauto-notes-writer)
+- **Image:** `triliumnext/notes:v0.95.0` — community fork of original Trilium (now unmaintained).
+- **Port:** 8080
+- **No external database needed.** Uses embedded SQLite. Single container deployment.
+- **Password serves dual purpose:** authentication AND database encryption key.
+- **WebSocket passthrough required** for sync with desktop client. Configure reverse proxy accordingly.
+- **Auto backups:** Trilium creates daily backups in `trilium-data/backup/`.
+
+## 2026-02-16 — Joplin Server 3.2.1 (homeauto-notes-writer)
+- **Image:** `joplin/server:3.2.1`
+- **Port:** 22300
+- **Default admin:** `admin@localhost` / `admin` — only works on first login. Change immediately.
+- **Requires:** PostgreSQL. No Redis.
+- **E2EE configured in clients, not server.** Server stores encrypted blobs when E2EE is enabled.
+
+## 2026-02-16 — SiYuan v3.5.7 (homeauto-notes-writer)
+- **Image:** `b3log/siyuan:v3.5.7`
+- **Port:** 6806
+- **Auth:** Simple access code via `--accessAuthCode` flag. Not username/password.
+- **Data format:** Custom `.sy` JSON files, not Markdown. Not portable to other tools without conversion.
+- **`user: "1000:1000"` needed** in Docker to avoid root-owned files in volumes.
+- **Sync options:** S3, WebDAV, or SiYuan Cloud (paid). No Git sync.
+
+## 2026-02-16 — CouchDB 3.4 for Obsidian LiveSync (homeauto-notes-writer)
+- **Image:** `couchdb:3.4`
+- **Port:** 5984
+- **CORS config critical.** Must include `app://obsidian.md` (desktop) and `capacitor://localhost` (mobile) in origins.
+- **`local.ini` must set:** `single_node=true`, `max_document_size=50000000`, `require_valid_user=true`.
+- **Database created automatically** by LiveSync plugin. No manual creation needed.
+- **Compact periodically:** CouchDB revision history causes database bloat. Run `_compact` endpoint.
+
+## 2026-02-16 — AppFlowy Cloud 0.9.x (homeauto-notes-writer)
+- **Complex multi-service stack:** API server + GoTrue (auth) + PostgreSQL + Redis + MinIO (S3).
+- **Deployment:** Clone the official repo, configure `.env`, run docker compose.
+- **RAM:** 2-4 GB for the full stack. Not suitable for low-resource deployments.
+
+## 2026-02-16 — AFFiNE v0.26.2 (homeauto-notes-writer)
+- **Image:** `ghcr.io/toeverything/affine-graphql:stable`
+- **Port:** 3010 (API), 5555 (debug)
+- **Requires:** PostgreSQL + Redis.
+- **Self-deploy command:** `node ./scripts/self-host-predeploy && node ./dist/index.js` — runs migrations before starting.
+- **Pre-1.0 software.** Expect breaking changes between versions. Not recommended for production team use yet.
+
 ## 2026-02-16 — Passbolt CE Docker image versioning (password-adblock-writer)
 - **Image:** `passbolt/passbolt:5.9.0-1-ce` — latest CE tag as of 2026-01-30
 - **Non-root variant:** `passbolt/passbolt:5.9.0-1-ce-non-root`
