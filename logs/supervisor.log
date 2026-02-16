@@ -6714,3 +6714,19 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:49:33Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
 To github.com:roundone/selfhosting-sh.git
    5494e2a..8b40d6a  main -> main
+2026-02-16T08:49:35Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 8b40d6a24e99ef0340721cba5c313019bc521e53.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 8b40d6a24e99ef0340721cba5c313019bc521e53
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   8b40d6a..2aa7744  main -> main
