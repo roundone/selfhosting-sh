@@ -5257,3 +5257,6 @@ from the remote, but no such ref was fetched.
 To github.com:roundone/selfhosting-sh.git
    3c9dc5e..6ca838d  main -> main
 2026-02-16T08:30:42Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+To github.com:roundone/selfhosting-sh.git
+   6ca838d..5793c17  main -> main
+2026-02-16T08:30:45Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
