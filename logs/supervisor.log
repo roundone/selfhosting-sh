@@ -4903,3 +4903,6 @@ fatal: Cannot rebase onto multiple branches.
 To github.com:roundone/selfhosting-sh.git
    a7b8e2c..81cea38  main -> main
 2026-02-16T08:25:37Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+2026-02-16T08:25:40Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   81cea38..5faf79f  main -> main
