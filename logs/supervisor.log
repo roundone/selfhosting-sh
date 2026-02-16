@@ -1972,3 +1972,8 @@ to recover.
 To github.com:roundone/selfhosting-sh.git
    1100a04..835b49b  main -> main
 2026-02-16T07:53:23Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   835b49b..761e2ba  main -> main
+2026-02-16T07:53:25Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+2026-02-16T07:53:28Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+2026-02-16T07:53:30Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
