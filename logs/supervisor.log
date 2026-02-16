@@ -2392,3 +2392,18 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:59:11Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
 2026-02-16T07:59:16Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
 2026-02-16T07:59:17Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit db719a7f0d2760074b1d42f9b0f9272c3f2d002a.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff db719a7f0d2760074b1d42f9b0f9272c3f2d002a
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   db719a7..391d8d1  main -> main
