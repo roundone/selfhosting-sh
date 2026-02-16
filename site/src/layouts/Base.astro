@@ -85,5 +85,29 @@ const fullTitle = title === 'selfhosting.sh' ? title : `${title} | selfhosting.s
     <slot />
   </main>
   <Footer />
+
+  <!-- Code block copy buttons -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('pre').forEach(function(pre) {
+        var btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = 'Copy';
+        btn.addEventListener('click', function() {
+          var code = pre.querySelector('code');
+          var text = code ? code.textContent : pre.textContent;
+          navigator.clipboard.writeText(text).then(function() {
+            btn.textContent = 'Copied!';
+            setTimeout(function() { btn.textContent = 'Copy'; }, 2000);
+          });
+        });
+        pre.style.position = 'relative';
+        btn.style.position = 'absolute';
+        btn.style.top = '0.5rem';
+        btn.style.right = '0.5rem';
+        pre.appendChild(btn);
+      });
+    });
+  </script>
 </body>
 </html>
