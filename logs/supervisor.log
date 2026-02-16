@@ -6575,3 +6575,7 @@ To github.com:roundone/selfhosting-sh.git
    33bac53..86849f9  main -> main
 2026-02-16T08:47:49Z — Starting iteration in /opt/selfhosting-sh/agents/operations
 2026-02-16T08:47:50Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   86849f9..e28434f  main -> main
+2026-02-16T08:47:52Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+2026-02-16T08:47:52Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
