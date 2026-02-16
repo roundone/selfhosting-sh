@@ -9097,3 +9097,53 @@ Uploading... (775/775)
 ✨ Uploading _headers
 ✨ Uploading _redirects
 🌎 Deploying...
+2026-02-16T19:16:52Z -- [auto-deploy] Auto-deploy loop started (check every 300s, force every 1800s)
+2026-02-16T19:16:52Z -- [auto-deploy] Starting deploy: startup
+
+> selfhosting-sh@1.0.0 build
+> astro build && npx pagefind --site dist
+
+19:16:54 [content] Syncing content
+19:16:54 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+19:16:55 [content] Synced content
+19:16:55 [types] Generated 1.24s
+19:16:55 [build] output: "static"
+19:16:55 [build] mode: "static"
+19:16:55 [build] directory: /opt/selfhosting-sh/site/dist/
+19:16:55 [build] Collecting build info...
+19:16:55 [build] ✓ Completed in 1.27s.
+19:16:55 [build] Building static entrypoints...
+
+<--- Last few GCs --->
+
+[572421:0x25911000]     4677 ms: Scavenge 250.4 (260.7) -> 247.6 (260.7) MB, pooled: 0 MB, 2.58 / 0.00 ms  (average mu = 0.967, current mu = 0.969) allocation failure; 
+[572421:0x25911000]     4815 ms: Mark-Compact (reduce) 269.9 (281.1) -> 268.6 (274.8) MB, pooled: 0 MB, 63.86 / 0.00 ms  (+ 0.2 ms in 0 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 138 ms) (average mu = 0.877, current
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0xe40d24 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]
+ 2: 0x1216be0 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [node]
+ 3: 0x1216eb7 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [node]
+ 4: 0x1444875  [node]
+ 5: 0x145e109 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+ 6: 0x14327b8 v8::internal::HeapAllocator::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]
+ 7: 0x14336e5 v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]
+ 8: 0x140bade v8::internal::Factory::AllocateRaw(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]
+ 9: 0x13fabd4 v8::internal::FactoryBase<v8::internal::Factory>::AllocateRawWithImmortalMap(int, v8::internal::AllocationType, v8::internal::Tagged<v8::internal::Map>, v8::internal::AllocationAlignment) [node]
+10: 0x13fd178 v8::internal::FactoryBase<v8::internal::Factory>::NewBytecodeArray(int, unsigned char const*, int, int, v8::internal::Handle<v8::internal::TrustedFixedArray>, v8::internal::Handle<v8::internal::TrustedByteArray>) [node]
+11: 0x153e7b9 v8::internal::Handle<v8::internal::BytecodeArray> v8::internal::interpreter::BytecodeArrayWriter::ToBytecodeArray<v8::internal::Isolate>(v8::internal::Isolate*, int, int, v8::internal::Handle<v8::internal::TrustedByteArray>) [node]
+12: 0x154901c v8::internal::Handle<v8::internal::BytecodeArray> v8::internal::interpreter::BytecodeGenerator::FinalizeBytecode<v8::internal::Isolate>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Script>) [node]
+13: 0x15691ed v8::internal::CompilationJob::Status v8::internal::interpreter::InterpreterCompilationJob::DoFinalizeJobImpl<v8::internal::Isolate>(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Isolate*) [node]
+14: 0x1569393 v8::internal::interpreter::InterpreterCompilationJob::FinalizeJobImpl(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Isolate*) [node]
+15: 0x12bf6fc v8::internal::UnoptimizedCompilationJob::FinalizeJob(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Isolate*) [node]
+16: 0x12bf7d7  [node]
+17: 0x12ca54a  [node]
+18: 0x12ce156 v8::internal::Compiler::Compile(v8::internal::Isolate*, v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Compiler::ClearExceptionFlag, v8::internal::IsCompiledScope*, v8::internal::CreateSourcePositions) [node]
+19: 0x12ce802 v8::internal::Compiler::Compile(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Compiler::ClearExceptionFlag, v8::internal::IsCompiledScope*) [node]
+20: 0x18645af v8::internal::Runtime_CompileLazy(int, unsigned long*, v8::internal::Isolate*) [node]
+21: 0x1dcb476  [node]
+Aborted (core dumped)
+2026-02-16T19:17:04Z -- [auto-deploy] BUILD FAILED
