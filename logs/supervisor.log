@@ -6082,3 +6082,6 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:40:55Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
 To github.com:roundone/selfhosting-sh.git
    6032771..c7e401e  main -> main
+To github.com:roundone/selfhosting-sh.git
+   c7e401e..6c7f497  main -> main
+2026-02-16T08:41:02Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
