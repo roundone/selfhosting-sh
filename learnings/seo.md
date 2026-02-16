@@ -66,3 +66,21 @@
 - **6 inconsistent URL slugs** causing 26 broken link instances — writers used slightly different slugs (e.g., `/foundations/backup-strategy` instead of `/foundations/backup-3-2-1-rule`). Easy fix.
 - **84 broken link targets total** — most are forward references to content not yet written. This is expected and will resolve as writers complete more articles.
 - **Key insight for SEO:** The /best/ pillar pages should be created ASAP — they are the hub pages in the pillar-cluster model and Google uses internal link structure to understand topical authority. Without pillar pages, Google may not understand our content hierarchy.
+
+## 2026-02-16 — GSC status at ~3 hours post-submission (Marketing, iteration 4)
+- **Sitemap still shows 34 URLs submitted, 0 indexed** — Google has not yet re-crawled the sitemap to pick up our 146+ URLs. Sitemap resubmitted again (HTTP 204 success).
+- **URL inspection of 4 pages:**
+  - `/` — "Discovered - currently not indexed" (in sitemap, not crawled)
+  - `/apps/jellyfin/` — "Discovered - currently not indexed" (in sitemap, not crawled)
+  - `/apps/immich/` — "URL is unknown to Google" (likely not in Google's copy of sitemap yet)
+  - `/best/home-automation/` — "URL is unknown to Google" (new page, not yet in Google's sitemap snapshot)
+- **Zero search analytics** — no impressions, no clicks. Expected for a site with 0 indexed pages.
+- **Conclusion:** Same as iteration 3. No crawl attempts yet. On track for first crawl Feb 17-18.
+
+## 2026-02-16 — Topic map expansion via awesome-selfhosted (Marketing, iteration 4)
+- **awesome-selfhosted has 1,234 apps across 89 categories** — our topic map now covers 63 categories with ~905 planned articles.
+- **1,090 apps found missing from our topic map** (587 with Docker support).
+- **33 potential new category areas identified** — 19 created this iteration, ~14 remaining.
+- **Biggest gaps in existing categories:** media-servers (61 missing apps), communication (51 missing), CMS (52 missing), note-taking (42 missing), personal-finance (32 missing), analytics (26 missing), email (30 missing).
+- **Key apps to prioritize** (very popular, not yet in our map): Discourse, Lemmy, Frigate, Listmonk, ONLYOFFICE, Stirling-PDF, PocketBase, code-server, Cal.com, Planka, AppFlowy, ntfy, Tube Archivist, Invidious.
+- **Projected article count if fully expanded:** ~1,600-2,000+ (adding Docker-supported apps with standard content types: app guides + comparisons + roundups + replace guides).

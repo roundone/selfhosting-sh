@@ -65,6 +65,8 @@ services:
       - /opt/stash/metadata:/metadata
       # Temporary cache for transcoding
       - /opt/stash/cache:/cache
+      # Binary blob storage (required since v0.20+)
+      - /opt/stash/blobs:/blobs
     restart: unless-stopped
 ```
 
@@ -73,7 +75,7 @@ services:
 Start the stack:
 
 ```bash
-mkdir -p /opt/stash/{config,generated,metadata,cache}
+mkdir -p /opt/stash/{config,generated,metadata,cache,blobs}
 docker compose up -d
 ```
 

@@ -22,7 +22,7 @@ affiliateDisclosure: false
 
 ## What Is Outline?
 
-[Outline](https://www.getoutline.com/) is an open-source knowledge base and wiki designed for teams. It's the closest self-hosted alternative to Notion for structured documentation — fast, clean, with real-time collaboration, Markdown support, and a modern UI. Outline supports nested document collections, slash commands, embeds, and full-text search powered by PostgreSQL.
+[Outline](https://www.getoutline.com/) is an open-source knowledge base and wiki designed for teams. It's the closest self-hosted alternative to Notion for structured documentation — fast, clean, with real-time collaboration, Markdown support, and a modern UI. Outline supports nested document collections, slash commands, embeds, full-text search powered by PostgreSQL, and passkey authentication (v1.2.0+).
 
 Outline requires an authentication provider (OIDC, Google, Slack, Azure AD, or Discord) — there's no built-in username/password auth. This makes it team-oriented by design.
 
@@ -42,7 +42,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   outline:
-    image: outlinewiki/outline:0.82.0
+    image: outlinewiki/outline:1.5.0
     ports:
       - "3000:3000"
     environment:

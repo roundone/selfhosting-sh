@@ -8,6 +8,7 @@ apps:
   - nextcloud
   - seafile
   - syncthing
+  - owncloud
   - filebrowser
 tags:
   - best
@@ -28,6 +29,7 @@ affiliateDisclosure: false
 | Best overall | Nextcloud | Full cloud platform — file sync, calendar, contacts, office docs, 400+ apps |
 | Best pure file sync | Seafile | Block-level dedup makes it the fastest sync engine available |
 | Best peer-to-peer | Syncthing | No central server, no account, no trust required |
+| Best lightweight platform | ownCloud oCIS | Single container, no database, Spaces for teams |
 | Best lightweight file manager | Filebrowser | Web UI for server files in 20 MB of RAM |
 | Best Dropbox replacement | Seafile | Closest experience to Dropbox's fast, reliable sync |
 | Best Google Drive replacement | Nextcloud | File sync + collaborative editing + office suite |
@@ -115,7 +117,30 @@ The downside: no web UI for file browsing (just the admin dashboard), no link-ba
 
 [Read our full guide: How to Self-Host Syncthing](/apps/syncthing)
 
-### 4. Filebrowser — Best Lightweight File Manager
+### 4. ownCloud oCIS — Best Lightweight Platform
+
+[ownCloud oCIS](/apps/owncloud) is a complete rewrite of ownCloud in Go. It runs as a single container with no external database — metadata is stored in the filesystem. Spaces (project-based collaboration areas) are a standout feature that Nextcloud doesn't natively offer. Lighter and faster than Nextcloud, with a modern web UI.
+
+**Pros:**
+- Single container — no database, cache, or cron needed
+- Lower resource usage than Nextcloud (256-512 MB RAM)
+- Spaces for project-based team collaboration
+- Built-in identity provider and OIDC support
+- Fast startup (compiled Go binary)
+- Apache-2.0 license
+
+**Cons:**
+- No CalDAV/CardDAV (no calendar or contacts)
+- No video calls or app marketplace
+- Smaller community and less documentation than Nextcloud
+- Enterprise-focused — fewer community tutorials
+- Legacy ownCloud 10 (PHP) is a different product in maintenance mode
+
+**Best for:** Teams who want file sync with project-based collaboration (Spaces) and prefer a lighter, simpler platform than Nextcloud.
+
+[Read our full guide: How to Self-Host ownCloud oCIS](/apps/owncloud)
+
+### 5. Filebrowser — Best Lightweight File Manager
 
 [Filebrowser](https://filebrowser.org) is not a sync tool. It is a web-based file manager that gives you browser access to files on your server. Upload, download, rename, move, share via link — all through a clean web UI. It runs in ~20 MB of RAM with a single container.
 

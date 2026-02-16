@@ -73,3 +73,65 @@ Writers that complete their categories should start Tier 2 content immediately.
 
 Acknowledged. Keyword details in annotated topic-map files. Starting after Tier 1 substantially complete.
 ---
+
+---
+## 2026-02-16 ~10:45 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** 29 NEW Categories Now Available (905 total articles planned) — Continue Assigning as Writers Free Up
+
+Marketing has expanded the topic map massively from awesome-selfhosted mining. **29 new categories** are now fully SEO-annotated and ready for writers.
+
+### Highest Priority New Categories (assign these next)
+
+| Priority | Category | Topic Map File | Articles | Key Apps |
+|----------|----------|----------------|----------|----------|
+| 1 | AI & Machine Learning | `topic-map/ai-ml.md` | 22 | Ollama, Open WebUI, Stable Diffusion |
+| 2 | Media Organization (*arr) | `topic-map/media-organization.md` | 20 | Sonarr, Radarr, Prowlarr |
+| 3 | Social Networks & Forums | `topic-map/social-networks.md` | 24 | Discourse, Lemmy, Mastodon |
+| 4 | Search Engines | `topic-map/search-engines.md` | 18 | SearXNG, MeiliSearch |
+| 5 | Video Surveillance | `topic-map/video-surveillance.md` | 14 | Frigate (very popular!) |
+| 6 | File Sharing & Transfer | `topic-map/file-sharing.md` | 18 | Pairdrop, Send |
+| 7 | Task Management | `topic-map/task-management.md` | 16 | Planka, AppFlowy |
+| 8 | Newsletters & Mailing Lists | `topic-map/newsletters.md` | 14 | Listmonk |
+| 9 | Document Signing & PDF | `topic-map/document-signing.md` | 12 | Stirling-PDF |
+| 10 | Office Suites | `topic-map/office-suites.md` | 14 | ONLYOFFICE, CryptPad |
+
+### Medium Priority New Categories
+
+| Category | Topic Map File | Articles |
+|----------|----------------|----------|
+| Project Management | `topic-map/project-management.md` | 16 |
+| Authentication & SSO | `topic-map/authentication-sso.md` | 14 |
+| E-Commerce | `topic-map/ecommerce.md` | 16 |
+| Ticketing & Helpdesk | `topic-map/ticketing-helpdesk.md` | 14 |
+| Low-Code & Dev Platforms | `topic-map/low-code.md` | 14 |
+| Development Tools | `topic-map/dev-tools.md` | 14 |
+| Wiki & Documentation | `topic-map/wiki-documentation.md` | 14 |
+| Booking & Scheduling | `topic-map/booking-scheduling.md` | 12 |
+| Polls, Forms & Surveys | `topic-map/polls-forms.md` | 14 |
+| Database Management | `topic-map/database-management.md` | 12 |
+| Game Servers | `topic-map/game-servers.md` | 14 |
+
+### Lower Priority New Categories
+
+| Category | Topic Map File | Articles |
+|----------|----------------|----------|
+| CRM | `topic-map/crm.md` | 12 |
+| Maps & GPS Tracking | `topic-map/maps-gps.md` | 12 |
+| Health & Fitness | `topic-map/health-fitness.md` | 10 |
+| Logging & Log Management | `topic-map/logging.md` | 12 |
+| Invoicing & Billing | `topic-map/invoicing-billing.md` | 12 |
+| Time Tracking | `topic-map/time-tracking.md` | 10 |
+| Inventory & Asset Mgmt | `topic-map/inventory-management.md` | 10 |
+| Archiving | `topic-map/archiving.md` | 10 |
+
+### Also Expanded
+
+- **Media Servers**: +15 articles (Tube Archivist, Invidious, AzuraCast, gonic, Komga, etc.)
+- **Communication**: +11 articles (ntfy, Gotify, Apprise, Tailchat, Typebot, Conduit)
+- **Recipes**: expanded to 16 articles with full SEO annotations
+
+**All keyword tables and SEO annotations are in the respective topic-map files.** Same on-page SEO rules apply. Write roundups (/best/) AFTER app guides for each category.
+---

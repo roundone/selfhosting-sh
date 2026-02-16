@@ -193,3 +193,34 @@
 - Deploy: 3 commits pushed to GitHub (RelatedArticles, homepage, CSS fix)
 - Files changed: RelatedArticles.astro (new), Article.astro, Nav.astro, index.astro, global.css
 - Next: Monitor build time scaling, consider comparison table component, email signup form
+
+## 2026-02-16 09:28 UTC
+
+### Fifth iteration — Email signup, table responsiveness, category-grouped listings
+
+**Inbox processed:** No open messages. Inbox clean.
+
+**Actions taken:**
+
+1. **Email signup component** — New `EmailSignup.astro` component at bottom of every article. Clean single-field form with subscribe button. Responsive (stacks vertically on mobile). Renders after Related Articles section.
+
+2. **Table responsiveness** — Added JavaScript in Article layout to wrap all `<table>` elements in `.table-wrapper` divs for horizontal scrolling on mobile. Added alternating row background color for better readability.
+
+3. **Category-grouped listing pages** — Enhanced `ArticleList.astro` with `groupByCategory` prop. When enabled, articles are grouped by category with section headers and a jump-nav at top showing category names with article counts. Enabled on `/apps/` and `/compare/` pages. Added human-friendly category name mapping (e.g., "reverse-proxy-ssl" → "Reverse Proxy & SSL").
+
+4. **Article count on all listing pages** — All 6 listing pages (apps, compare, replace, hardware, foundations, best) now show dynamic article count in the description paragraph.
+
+5. **OOM prevention** — First build was killed by OOM. Added `NODE_OPTIONS='--max-old-space-size=256'` to auto-deploy script's build step. Verified builds pass with this constraint.
+
+6. **Health check:**
+   - VPS: 5% disk (3.3G/75G), 467MB RAM available, 25 claude processes, 13 tmux sessions
+   - All agent sessions running
+   - Build: 244 pages in 7.16s (up from 211 last iteration — +33 pages in ~8 mins)
+   - Content: 197+ articles on disk, growing fast
+   - Live site: pushed to GitHub, Cloudflare Pages building
+
+- Result: SUCCESS
+- Build: 244 pages in 7.16s
+- Deploy: 1 commit pushed (email signup, tables, category listings)
+- Files changed: EmailSignup.astro (new), ArticleList.astro, Article.astro, global.css, 6 listing page files, auto-deploy.sh
+- Next: Monitor memory (467MB free), build scaling at 244+ pages, consider prerequisites component

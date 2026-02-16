@@ -1,4 +1,4 @@
-# Foundations [27/41 complete]
+# Foundations [33/41 complete]
 **Priority:** high
 **SEO notes:** Foundational content with high beginner search volume. Strong interlinking hub — every app guide should link to 2+ foundation articles. These pages build topical authority and serve as the base of our pillar-cluster model.
 **Category keyword cluster:** "self-hosting tutorial", "homelab basics", "docker compose tutorial", "self-hosting for beginners"
@@ -16,9 +16,9 @@
 - [x] /foundations/dockerfile-basics — done 2026-02-16 — **KW:** "dockerfile tutorial" (Medium vol) — Priority 19
 - [x] /foundations/docker-updating — done 2026-02-16 — **KW:** "updating docker containers" (Medium vol) — Priority 16
 - [x] /foundations/docker-troubleshooting — done 2026-02-16 — **KW:** "docker troubleshooting guide" (Medium vol) — Priority 20
-- [ ] /foundations/docker-security — queued — **KW:** "docker security best practices"
+- [x] /foundations/docker-security — done 2026-02-16 — **KW:** "docker security best practices"
 - [ ] /foundations/docker-image-management — queued — **KW:** "docker image management"
-- [ ] /foundations/container-logging — queued — **KW:** "docker container logging"
+- [x] /foundations/container-logging — done 2026-02-16 — **KW:** "docker container logging"
 
 ## Networking
 - [x] /foundations/reverse-proxy-explained — done 2026-02-16 — **KW:** "what is a reverse proxy" (High vol) — Priority 5
@@ -41,7 +41,7 @@
 - [x] /foundations/linux-permissions — done 2026-02-16 — **KW:** "linux file permissions" (Medium vol) — Priority 12
 - [x] /foundations/linux-systemd — done 2026-02-16 — **KW:** "systemd service tutorial" (Medium vol) — Priority 13
 - [x] /foundations/linux-cron-jobs — done 2026-02-16 — **KW:** "cron job tutorial" (Medium vol) — Priority 14
-- [ ] /foundations/choosing-linux-distro — queued — **KW:** "best linux distro for server"
+- [x] /foundations/choosing-linux-distro — done 2026-02-16 — **KW:** "best linux distro for server"
 
 ## Backup & Recovery
 - [x] /foundations/backup-3-2-1-rule — done 2026-02-16 — **KW:** "3-2-1 backup rule" (Medium vol) — Priority 20
@@ -51,16 +51,16 @@
 - [x] /foundations/monitoring-basics — done 2026-02-16 — **KW:** "monitoring home server" (Medium vol) — Priority 17
 
 ## Remote Access
-- [ ] /foundations/tailscale-setup — queued — **KW:** "tailscale setup guide"
+- [x] /foundations/tailscale-setup — done 2026-02-16 — **KW:** "tailscale setup guide"
 - [ ] /foundations/wireguard-setup — queued — **KW:** "wireguard vpn setup"
-- [ ] /foundations/cloudflare-tunnel — queued — **KW:** "cloudflare tunnel setup"
+- [x] /foundations/cloudflare-tunnel — done 2026-02-16 — **KW:** "cloudflare tunnel setup"
 
 ## Reverse Proxy Guides
-- [ ] /foundations/nginx-proxy-manager-setup — queued — **KW:** "nginx proxy manager tutorial"
+- [x] /foundations/nginx-proxy-manager-setup — done 2026-02-16 — **KW:** "nginx proxy manager tutorial"
 - [ ] /foundations/traefik-setup — queued — **KW:** "traefik reverse proxy setup"
 - [ ] /foundations/caddy-setup — queued — **KW:** "caddy reverse proxy setup"
 
 ## Storage & Virtualization
-- [ ] /foundations/raid-explained — queued — **KW:** "raid configurations explained"
+- [x] /foundations/raid-explained — done 2026-02-16 — **KW:** "raid configurations explained"
 - [ ] /foundations/nas-basics — queued — **KW:** "network attached storage basics"
 - [ ] /foundations/proxmox-basics — queued — **KW:** "proxmox beginner guide"

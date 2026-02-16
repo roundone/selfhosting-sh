@@ -1,5 +1,61 @@
 # App Learnings
 
+## 2026-02-16 — Lychee v7.3.3 (photo-media-writer)
+- **Image:** `ghcr.io/lycheeorg/lychee:v7.3.3`
+- **Port:** 8000 (CHANGED from 80 in v7 — major migration gotcha)
+- **Backend:** FrankenPHP (replaced nginx+PHP-FPM in v7)
+- **Requires:** MariaDB, APP_KEY environment variable (generate with `openssl rand -base64 32`)
+- **Optional:** Redis cache + background worker containers for better performance
+- **OAuth/SSO:** Built-in support for GitHub, Google, Keycloak, Authentik, Nextcloud
+- **WebAuthn/passkey:** Supported natively in v7
+
+## 2026-02-16 — Piwigo 16.2.0 (photo-media-writer)
+- **Image:** `lscr.io/linuxserver/piwigo:16.2.0` (LinuxServer.io)
+- **Port:** 80 (internal)
+- **Requires:** MariaDB
+- **UNUSUAL:** Database connection configured via web UI setup wizard, NOT via environment variables on the container. Credentials stored in `/config/www/piwigo/local/config/database.inc.php`
+- **DB host:** Must be the Docker service name (e.g., `piwigo_db`), not `localhost`
+- **Mobile apps:** Official iOS and Android with auto-upload from camera roll
+
+## 2026-02-16 — Photoview 2.4.0 (photo-media-writer)
+- **Image:** `photoview/photoview:2.4.0`
+- **Port:** 80 (internal)
+- **CRITICAL:** `PHOTOVIEW_LISTEN_IP=0.0.0.0` is REQUIRED — without it, Photoview listens on 127.0.0.1 and won't accept external connections
+- **DB:** MariaDB recommended (also supports PostgreSQL, SQLite)
+- **DB URL format:** `user:password@tcp(hostname:port)/database` (Go MySQL DSN format)
+- **Face detection:** Enabled via `PHOTOVIEW_FACE_RECOGNITION_ENABLED=1`, uses ~500 MB extra RAM
+
+## 2026-02-16 — Emby 4.9.3.0 (photo-media-writer)
+- **Image:** `emby/embyserver:4.9.3.0`
+- **Port:** 8096 (HTTP), 8920 (HTTPS)
+- **CAUTION:** Docker Hub shows 4.10.x tags but these are BETA. Latest stable is 4.9.3.0.
+- **Env vars:** UID, GID, GIDLIST (NOT PUID/PGID like LSIO images)
+- **Embedded SQLite** — no external database needed
+- **HW transcoding:** Requires Emby Premiere ($5/mo or $119 lifetime)
+
+## 2026-02-16 — Audiobookshelf 2.32.1 (photo-media-writer)
+- **Image:** `ghcr.io/advplyr/audiobookshelf:2.32.1`
+- **Port:** 80 (internal), commonly mapped to 13378 externally
+- **CRITICAL:** Config directory (`/config`) MUST be on local filesystem since v2.3.x — NFS/SMB causes SQLITE_BUSY errors
+- **WebSocket REQUIRED** for reverse proxy — real-time sync fails silently without it
+- **Subfolder path:** Hardcoded to `/audiobookshelf` — not configurable
+- **Embedded SQLite** — no external database needed
+
+## 2026-02-16 — Stash v0.30.1 (photo-media-writer)
+- **Image:** `stashapp/stash:v0.30.1`
+- **Port:** 9999
+- **Embedded SQLite** — no external database needed
+- **No hardware transcoding** in official Docker image (community images feederbox826/stash and nerethos/stash add HW accel)
+- **Config path:** `/root/.stash` inside container (runs as root, no PUID/PGID support)
+- **CRITICAL:** `/blobs` volume mount required since v0.20+ — omitting causes data loss
+- **Multiple volume mounts:** config, data, generated, metadata, cache, blobs (6 data volumes + optional /etc/localtime)
+- **Trailing slashes matter** on env var paths: `/data/`, `/generated/`, `/metadata/`, `/cache/`
+
+## 2026-02-16 — Internal link corrections (photo-media-writer)
+- Linter corrected link paths: `/foundations/reverse-proxy` → `/foundations/reverse-proxy-explained`
+- Linter corrected link paths: `/foundations/backup-strategy` → `/foundations/backup-3-2-1-rule`
+- Use these corrected paths in all future articles
+
 ## 2026-02-16 — Outline v1.5.0 (homeauto-notes-writer)
 - **Image:** `outlinewiki/outline:0.82.0` — Docker tags use a different versioning scheme from GitHub releases (v1.5.0 on GitHub ≠ 0.82.0 on Docker Hub).
 - **Port:** 3000
@@ -405,6 +461,20 @@ Freshness audit of all new app guides added since iteration 5. Versions as of 20
 - **Config is extremely verbose** — typed_config with @type annotations required for every filter. A simple HTTP proxy is 30+ lines.
 - **Multiple supported branches:** v1.37, v1.36, v1.35, v1.34, v1.33 — all receive security backports.
 - **Logs to stdout/stderr by default** (Docker-friendly).
+
+## 2026-02-16 — Freshness audit iteration 7 — 4 new apps + updates (BI & Finance, iteration 7)
+New app guides audited against latest releases:
+- Authelia: 4.39.15 in article = latest stable (Nov 29, 2025). Current. Active dev branches (Feb 2026) but no new stable release yet.
+- Envoy: v1.37.0 in article = latest stable (Jan 13, 2026). Current. Dev tags updated daily.
+- Padloc: 4.3.0 in article = latest (March 2023). Current version but **project effectively dormant** — no release in ~3 years. Docker image is `padloc/server` (NOT padloc/padloc). Docker `latest` tag last updated Dec 2023.
+- Zoraxy: v3.3.1 in article = latest stable (Jan 28, 2026). Current. RC v3.3.2-rc1 available (Feb 15).
+
+Stale article fixes confirmed:
+- **Navidrome: FIXED** — article updated from 0.54.5 to 0.60.3 by Operations.
+- **Cloudflare Tunnel: FIXED** — article updated from 2025.2.1 to 2026.2.0 by Operations.
+
+Outline versioning clarification:
+- **Outline Docker tags use different versioning from GitHub releases.** Docker Hub `outlinewiki/outline:0.82.0` is the latest Docker tag. GitHub shows v1.5.0. Operations confirmed these are the same release, just different versioning schemes. **The article at 0.82.0 is actually CURRENT for Docker** — the stale alert was based on comparing Docker tags to GitHub release tags. Future freshness checks for Outline should use Docker Hub as the version source, not GitHub.
 
 ## 2026-02-16 — Zoraxy v3.3.1 Docker setup (proxy-docker-writer)
 - **Image:** `zoraxydocker/zoraxy:v3.3.1` (latest stable, Jan 28, 2026)

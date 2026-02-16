@@ -1,5 +1,156 @@
 # Operations Activity Log
 
+## 2026-02-16 ~15:30 UTC — hardware-writer iteration (ALL 25 ARTICLES COMPLETE)
+
+### Articles Written (22 new this iteration, 25 total hardware articles)
+- hardware: /hardware/raspberry-pi-home-server — "Raspberry Pi as a Home Server: Complete Guide" (NEW)
+- hardware: /hardware/raspberry-pi-vs-mini-pc — "Raspberry Pi vs Mini PC for Self-Hosting" (NEW)
+- hardware: /hardware/synology-vs-truenas — "Synology vs TrueNAS: Which NAS Platform?" (NEW)
+- hardware: /hardware/best-hard-drives-nas — "Best Hard Drives for NAS in 2026" (NEW)
+- hardware: /hardware/diy-nas-build — "DIY NAS Build Guide for Self-Hosting" (NEW)
+- hardware: /hardware/power-consumption-guide — "Home Server Power Consumption Guide" (NEW)
+- hardware: /hardware/used-dell-optiplex — "Dell OptiPlex as a Home Server" (NEW)
+- hardware: /hardware/used-lenovo-thinkcentre — "Lenovo ThinkCentre as a Home Server" (NEW)
+- hardware: /hardware/synology-vs-unraid — "Synology vs Unraid: Which Should You Use?" (NEW)
+- hardware: /hardware/truenas-vs-unraid — "TrueNAS vs Unraid: Which NAS OS?" (NEW)
+- hardware: /hardware/hdd-vs-ssd-home-server — "HDD vs SSD for Home Servers" (NEW)
+- hardware: /hardware/raid-explained — "RAID Levels Explained for Home Servers" (NEW)
+- hardware: /hardware/best-ssd-home-server — "Best SSDs for Home Servers in 2026" (NEW)
+- hardware: /hardware/best-ups-home-server — "Best UPS for Home Servers in 2026" (NEW)
+- hardware: /hardware/best-router-self-hosting — "Best Routers for Self-Hosting in 2026" (NEW)
+- hardware: /hardware/raspberry-pi-docker — "Raspberry Pi Docker Setup Guide" (NEW)
+- hardware: /hardware/managed-switch-home-lab — "Best Managed Switches for Homelab" (NEW)
+- hardware: /hardware/poe-explained — "PoE Explained for Home Servers" (NEW)
+- hardware: /hardware/best-access-points — "Best Access Points for Homelab" (NEW)
+- hardware: /hardware/server-case-guide — "Best Server Cases for Homelab" (NEW)
+- hardware: /hardware/home-server-rack — "Home Server Rack Setup Guide" (NEW)
+- hardware: /hardware/mini-pc-power-consumption — "Mini PC Power Consumption Compared" (NEW)
+
+### Pre-existing (3 articles from prior iteration)
+- hardware: /hardware/best-mini-pc, /hardware/intel-n100-mini-pc, /hardware/best-nas
+
+### Hardware Category: COMPLETE (25/25 priority articles)
+- Mini PCs: 4 articles | Raspberry Pi: 3 | NAS/Storage: 8 | Networking: 4 | Power: 3 | Used HW: 2 | Cases/Racks: 2
+
+### Quality
+- All affiliateDisclosure: true | All descriptions 150-160 chars | All titles <60 chars | All 5+ internal links | Opinionated voice throughout
+
+### Next: Generate bonus hardware articles (Proxmox HW guide, 10GbE networking, DAS vs NAS, etc.)
+
+---
+
+## 2026-02-16 ~15:00 UTC — foundations-writer iteration (combined waves 1+2)
+
+### Articles Written (22 new foundation articles total)
+
+**Wave 1 (15 articles):**
+- linux-permissions, linux-systemd, linux-cron-jobs
+- ports-explained, dhcp-static-ip, subnets-vlans
+- docker-environment-variables, dockerfile-basics
+- disaster-recovery, home-server-cost, port-forwarding
+- dynamic-dns, docker-updating, monitoring-basics
+- docker-troubleshooting, selfhosting-philosophy
+
+**Wave 2 (7 articles):**
+- docker-security, choosing-linux-distro, container-logging
+- raid-explained, tailscale-setup, cloudflare-tunnel
+- nginx-proxy-manager-setup
+
+### Topic Map: Foundations 33/41 complete
+
+### Remaining: wireguard-setup, traefik-setup, caddy-setup, docker-image-management, home-network-setup, nas-basics, proxmox-basics
+
+---
+
+## 2026-02-16 ~09:45 UTC — proxy-docker-writer iteration 3 (continued)
+
+### Additional Articles Written (3 more comparisons, 10 total this iteration)
+
+**Reverse Proxy & SSL — Comparisons (3 more):**
+- comparison: /compare/envoy-vs-caddy — "Envoy vs Caddy: Which Proxy to Self-Host?"
+- comparison: /compare/zoraxy-vs-caddy — "Zoraxy vs Caddy: Which Proxy to Self-Host?"
+- comparison: /compare/zoraxy-vs-cosmos-cloud — "Zoraxy vs Cosmos Cloud: Which to Self-Host?"
+
+### Iteration 3 Grand Total: 10 articles
+- 2 app guides (Envoy, Zoraxy)
+- 8 comparisons (envoy-vs-traefik, envoy-vs-haproxy, envoy-vs-nginx, envoy-vs-caddy, zoraxy-vs-npm, zoraxy-vs-traefik, zoraxy-vs-caddy, zoraxy-vs-cosmos-cloud)
+
+### Category Status
+- **Reverse Proxy & SSL:** 26 initial + 8 extended = 34 articles total (5 app guides, 13 comparisons, 2 replace guides, 1 roundup + 13 new comparisons/guides)
+- **Docker Management:** 13/13 initial scope COMPLETE
+
+---
+
+## 2026-02-16 ~14:30 UTC — photo-media-writer iteration 3
+
+### Articles Written (19 new articles)
+
+**Photo & Video Management — App Guides (3):**
+- app-guide: /apps/lychee — "How to Self-Host Lychee with Docker Compose" (ghcr.io/lycheeorg/lychee:v7.3.3, FrankenPHP, port 8000)
+- app-guide: /apps/piwigo — "How to Self-Host Piwigo with Docker Compose" (lscr.io/linuxserver/piwigo:16.2.0, MariaDB, DB via web UI)
+- app-guide: /apps/photoview — "How to Self-Host Photoview with Docker Compose" (photoview/photoview:2.4.0, MariaDB, PHOTOVIEW_LISTEN_IP=0.0.0.0)
+
+**Photo & Video Management — Comparisons (5):**
+- comparison: /compare/immich-vs-librephotos — "Immich vs LibrePhotos: Which Should You Self-Host?"
+- comparison: /compare/immich-vs-google-photos — "Immich vs Google Photos: Can Self-Hosted Replace Google?"
+- comparison: /compare/photoprism-vs-librephotos — "PhotoPrism vs LibrePhotos: Which Should You Self-Host?"
+- comparison: /compare/lychee-vs-piwigo — "Lychee vs Piwigo: Which Should You Self-Host?"
+- comparison: /compare/photoprism-vs-piwigo — "PhotoPrism vs Piwigo: Which Should You Self-Host?"
+
+**Photo & Video Management — Replace Guides (2):**
+- replace: /replace/icloud-photos — "Self-Hosted iCloud Photos Alternatives"
+- replace: /replace/amazon-photos — "Self-Hosted Amazon Photos Alternatives"
+
+**Media Servers — App Guides (3):**
+- app-guide: /apps/emby — "How to Self-Host Emby with Docker Compose" (emby/embyserver:4.9.3.0, port 8096)
+- app-guide: /apps/audiobookshelf — "How to Self-Host Audiobookshelf with Docker" (ghcr.io/advplyr/audiobookshelf:2.32.1, port 13378:80)
+- app-guide: /apps/stash — "How to Self-Host Stash with Docker Compose" (stashapp/stash:v0.30.1, port 9999)
+
+**Media Servers — Comparisons (4):**
+- comparison: /compare/jellyfin-vs-emby — "Jellyfin vs Emby: Which Should You Self-Host?"
+- comparison: /compare/plex-vs-emby — "Plex vs Emby: Which Should You Self-Host?"
+- comparison: /compare/jellyfin-vs-plex-vs-emby — "Jellyfin vs Plex vs Emby: Complete Comparison"
+- comparison: /compare/navidrome-vs-subsonic — "Navidrome vs Subsonic: Which Should You Self-Host?"
+- comparison: /compare/navidrome-vs-jellyfin — "Navidrome vs Jellyfin for Music: Which to Self-Host?"
+
+**Media Servers — Replace Guides (3):**
+- replace: /replace/netflix — "Self-Hosted Netflix Alternatives"
+- replace: /replace/spotify — "Self-Hosted Spotify Alternatives"
+- replace: /replace/audible — "Self-Hosted Audible Alternatives"
+- replace: /replace/youtube-music — "Self-Hosted YouTube Music Alternatives"
+
+### Verified Docker Configs
+- Emby: emby/embyserver:4.9.3.0, ports 8096/8920, UID/GID/GIDLIST env vars
+- Lychee: ghcr.io/lycheeorg/lychee:v7.3.3, port 8000 (changed from 80 in v7), FrankenPHP backend, APP_KEY required
+- Piwigo: lscr.io/linuxserver/piwigo:16.2.0, port 80, LSIO image, DB configured via web UI wizard
+- Photoview: photoview/photoview:2.4.0, port 80, PHOTOVIEW_LISTEN_IP=0.0.0.0 required
+- Audiobookshelf: ghcr.io/advplyr/audiobookshelf:2.32.1, port 80 internal mapped to 13378, config must be local filesystem since v2.3.x
+- Stash: stashapp/stash:v0.30.1, port 9999, embedded SQLite, no HW accel in official image
+
+### Scope Progress
+- **Photo & Video Management:** 14/16 complete (87.5%). Remaining: best/photo-management roundup + apps/dim (if it exists)
+- **Media Servers:** 16/18 complete (88.9%). Remaining: best/media-servers roundup + apps/dim
+- **Total articles this iteration:** 19
+
+### Issues
+- None
+
+### Learnings Recorded
+- Lychee v7 changed port from 80 to 8000, backend from nginx+PHP-FPM to FrankenPHP
+- Photoview requires PHOTOVIEW_LISTEN_IP=0.0.0.0 or container won't accept connections
+- Piwigo DB connection configured via web UI, not env vars (unusual for Docker apps)
+- Emby 4.10.x tags on Docker Hub are beta; 4.9.3.0 is the latest stable
+- Audiobookshelf config directory must be local filesystem since v2.3.x (SQLite locking issues on NFS/SMB)
+- Linter updated internal links: /foundations/reverse-proxy → /foundations/reverse-proxy-explained, /foundations/backup-strategy → /foundations/backup-3-2-1-rule
+
+### Next Iteration
+- Write best/photo-management roundup (requires all app guides complete — now they are)
+- Write best/media-servers roundup (requires all app guides complete — now they are)
+- Write apps/dim if it has an active Docker image
+- Extended scope: Kavita, Calibre-Web, Komga app guides
+
+---
+
 ## 2026-02-16 ~09:30 UTC — proxy-docker-writer iteration 3
 
 ### Articles Written (7 new articles)
