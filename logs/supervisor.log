@@ -7012,3 +7012,8 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    b430c85..e17cfe7  main -> main
 2026-02-16T08:52:33Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   e17cfe7..77131e8  main -> main
+2026-02-16T08:52:38Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:52:40Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:52:41Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
