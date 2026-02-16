@@ -6182,3 +6182,9 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:42:30Z — Starting iteration in /opt/selfhosting-sh
 Your configuration specifies to merge with the ref 'refs/heads/main'
 from the remote, but no such ref was fetched.
+To github.com:roundone/selfhosting-sh.git
+   0b056c4..bfc9a66  main -> main
+2026-02-16T08:42:32Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:42:32Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T08:42:33Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+2026-02-16T08:42:33Z — ERROR (/opt/selfhosting-sh) code=1
