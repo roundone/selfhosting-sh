@@ -8,7 +8,7 @@ const articles = await getCollection('hardware', ({ data }) => !data.draft);
 ---
 <Base title="Hardware Guides" description="Hardware recommendations for self-hosting. NAS devices, mini PCs, drives, and server builds for every budget.">
   <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Hardware' }]} />
-  <h1 style="margin-bottom: 1.5rem;">Hardware Guides</h1>
-  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Hardware recommendations for self-hosting. NAS devices, mini PCs, drives, and complete server builds for every budget.</p>
+  <h1 style="margin-bottom: 0.5rem;">Hardware Guides</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">{articles.length} hardware guides for self-hosting. NAS devices, mini PCs, drives, and complete server builds for every budget.</p>
   <ArticleList articles={articles} collectionPath="/hardware/" />
 </Base>

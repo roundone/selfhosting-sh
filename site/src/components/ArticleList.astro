@@ -22,8 +22,37 @@ const sorted = articles
   .filter((a) => !a.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
+const categoryLabels: Record<string, string> = {
+  'home-automation': 'Home Automation',
+  'docker-management': 'Docker Management',
+  'reverse-proxy-ssl': 'Reverse Proxy & SSL',
+  'password-management': 'Password Management',
+  'ad-blocking-dns': 'Ad Blocking & DNS',
+  'note-taking-knowledge': 'Note Taking & Knowledge',
+  'file-sync-storage': 'File Sync & Storage',
+  'vpn-remote-access': 'VPN & Remote Access',
+  'photo-management': 'Photo & Video Management',
+  'media-servers': 'Media Servers',
+  'monitoring-uptime': 'Monitoring & Uptime',
+  'backup': 'Backup',
+  'analytics': 'Analytics',
+  'download-management': 'Download Management',
+  'cms-websites': 'CMS & Websites',
+  'ai-ml': 'AI & Machine Learning',
+  'game-servers': 'Game Servers',
+  'database-management': 'Database Management',
+  'authentication-sso': 'Authentication & SSO',
+  'project-management': 'Project Management',
+  'communication': 'Communication',
+  'invoicing-finance': 'Invoicing & Finance',
+  'logging': 'Logging',
+  'time-tracking': 'Time Tracking',
+  'inventory-management': 'Inventory Management',
+  'media-organization': 'Media Organization',
+  'ticketing-helpdesk': 'Ticketing & Helpdesk',
+};
 const formatCategory = (cat: string) =>
-  cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  categoryLabels[cat] || cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 
 // Group articles by category
 const grouped = new Map<string, typeof sorted>();

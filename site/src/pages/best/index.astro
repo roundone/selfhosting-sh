@@ -8,7 +8,7 @@ const articles = await getCollection('best', ({ data }) => !data.draft);
 ---
 <Base title="Best Of" description="Curated lists of the best self-hosted apps by category. Our top picks for photo management, media servers, productivity, and more.">
   <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Best Of' }]} />
-  <h1 style="margin-bottom: 1.5rem;">Best Of</h1>
-  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Our top picks for self-hosted software by category. Tested, compared, and ranked.</p>
+  <h1 style="margin-bottom: 0.5rem;">Best Of</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">{articles.length} curated roundups of the best self-hosted software by category. Tested, compared, and ranked.</p>
   <ArticleList articles={articles} collectionPath="/best/" />
 </Base>
