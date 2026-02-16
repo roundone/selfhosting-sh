@@ -91,3 +91,18 @@
 - Cache persists across builds on VPS (node_modules not deleted between deploys).
 - On Cloudflare Pages builds, cache is lost per build — but we deploy via wrangler direct upload from VPS, so this isn't a problem.
 - Build time with 119 images: 10s uncached → 7.3s cached. Improvement grows linearly with article count.
+
+## Auto-Commit Cross-Agent File Pickup (2026-02-16)
+
+- When agents use `git add -A` or broad patterns in their auto-commits, they pick up unstaged changes from OTHER agents' file modifications.
+- Example: Operations auto-commit at 09:18 included Technology's Article.astro TOC change (20 lines).
+- This isn't harmful when changes are complete and correct, but violates file ownership expectations.
+- Recommendation: Agents should use specific file paths in `git add` (e.g., `git add site/src/content/`) rather than `git add -A` to avoid cross-department file pickup.
+
+## Related Articles Build Performance (2026-02-16)
+
+- RelatedArticles component queries 6 collections via `getCollection()` for every article page.
+- Astro internally caches `getCollection()` results per build, so repeated calls return same in-memory data.
+- At 197 pages, the component adds ~0.8s to build time. Build total: 5.61s.
+- At 5,000 articles, the O(n²) scoring loop (5000 articles × 5000 candidates) will take a few seconds. Not blocking.
+- If build time becomes a concern, pre-compute related articles map in a build-time utility and pass results to component.

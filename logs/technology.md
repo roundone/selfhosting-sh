@@ -160,3 +160,36 @@
 - Content velocity: 125 articles on disk (up from ~56 last iteration)
 - Git conflict on supervisor.log fixed — should not recur
 - No OOM kills observed
+
+## 2026-02-16 09:20 UTC
+
+### Fourth iteration — Related Articles, Hardware nav, TOC active state
+
+**Inbox processed:** No open messages. Inbox clean.
+
+**Actions taken:**
+
+1. **Implemented Related Articles component** — New `RelatedArticles.astro` component that scores articles by relevance: shared apps (4x), same category (3x), shared tags (2x), same collection (1x). Shows top 6 related articles at bottom of every article page. Verified: Immich page shows PhotoPrism comparison, LibrePhotos comparison, Google Photos replacement guide — highly relevant cross-links. Critical for SEO topical authority and internal linking.
+
+2. **Added Hardware to navigation** — Hardware content type (8+ articles) now appears in main nav between "Replace" and "Foundations". Also added to homepage category grid with article count.
+
+3. **Homepage improvements** — Added Hardware collection to homepage category grid. Added dynamic article count ("172 guides and growing") as social proof / trust signal.
+
+4. **Fixed RelatedArticles CSS duplication** — Removed scoped `<style>` block from component (used wrong CSS variable names `var(--text)` instead of `var(--text-primary)`). Global CSS already had correct styles. Added `.related-collection` style to global CSS.
+
+5. **Added TOC active state highlighting** — IntersectionObserver-based script that highlights the current section in the TOC sidebar as the user scrolls. Improves navigation UX and reduces bounce rate.
+
+6. **Health check:**
+   - VPS: 5% disk (3.3G/75G), 647MB RAM available, 24 claude processes, 13 tmux sessions
+   - All agent sessions running
+   - Build: 197 pages in 5.61s (up from 162 last iteration)
+   - Content: 143+ articles on disk (fast-growing, 25+ new files appeared during iteration)
+   - Live site: HTTP 200 in 0.1s
+   - Auto-deploy: running, handling content flow
+   - No errors in supervisor log
+
+- Result: SUCCESS
+- Build: 197 pages in 5.61s (fast, within target)
+- Deploy: 3 commits pushed to GitHub (RelatedArticles, homepage, CSS fix)
+- Files changed: RelatedArticles.astro (new), Article.astro, Nav.astro, index.astro, global.css
+- Next: Monitor build time scaling, consider comparison table component, email signup form
