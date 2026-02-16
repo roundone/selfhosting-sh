@@ -300,3 +300,127 @@ Error: Failed to upload files. Please try again. Error: {"errno":-2,"code":"ENOE
 07:30:17 [build] Collecting build info...
 07:30:17 [build] ✓ Completed in 2.34s.
 07:30:17 [build] Building static entrypoints...
+07:30:18 [vite] ✓ built in 1.60s
+07:30:18 [build] ✓ Completed in 1.64s.
+
+ generating static routes 
+07:30:18 ▶ src/pages/404.astro
+07:30:18   └─ /404.html (+8ms) 
+07:30:18 ▶ src/pages/about.astro
+07:30:18   └─ /about/index.html (+2ms) 
+07:30:18 ▶ src/pages/apps/index.astro
+07:30:18   └─ /apps/index.html (+36ms) 
+07:30:18 ▶ src/pages/apps/[...slug].astro
+07:30:18   ├─ /apps/portainer/index.html (+4ms) 
+07:30:18   ├─ /apps/adguard-home/index.html (+2ms) 
+07:30:18   ├─ /apps/jellyfin/index.html (+2ms) 
+07:30:18   ├─ /apps/home-assistant/index.html (+2ms) 
+07:30:18   ├─ /apps/pi-hole/index.html (+2ms) 
+07:30:18   ├─ /apps/uptime-kuma/index.html (+3ms) 
+07:30:18   ├─ /apps/vaultwarden/index.html (+2ms) 
+07:30:18   ├─ /apps/immich/index.html (+4ms) 
+07:30:18   ├─ /apps/nextcloud/index.html (+2ms) 
+07:30:18   ├─ /apps/nginx-proxy-manager/index.html (+1ms) 
+07:30:18   ├─ /apps/plex/index.html (+2ms) 
+07:30:18   ├─ /apps/bookstack/index.html (+1ms) 
+07:30:18   ├─ /apps/dockge/index.html (+6ms) 
+07:30:18   ├─ /apps/photoprism/index.html (+4ms) 
+07:30:18   ├─ /apps/syncthing/index.html (+3ms) 
+07:30:18   ├─ /apps/diun/index.html (+2ms) 
+07:30:18   ├─ /apps/caddy/index.html (+3ms) 
+07:30:18   ├─ /apps/domoticz/index.html (+2ms) 
+07:30:18   ├─ /apps/openhab/index.html (+4ms) 
+07:30:18   ├─ /apps/traefik/index.html (+2ms) 
+07:30:18   ├─ /apps/watchtower/index.html (+3ms) 
+07:30:18   ├─ /apps/yacht/index.html (+1ms) 
+07:30:18   ├─ /apps/gladys-assistant/index.html (+1ms) 
+07:30:18   ├─ /apps/cosmos-cloud/index.html (+4ms) 
+07:30:18   ├─ /apps/cloudflare-tunnel/index.html (+2ms) 
+07:30:18   ├─ /apps/filebrowser/index.html (+1ms) 
+07:30:18   ├─ /apps/headscale/index.html (+3ms) 
+07:30:18   ├─ /apps/iobroker/index.html (+1ms) 
+07:30:18   ├─ /apps/lazydocker/index.html (+1ms) 
+07:30:18   ├─ /apps/librephotos/index.html (+1ms) 
+07:30:18   ├─ /apps/navidrome/index.html (+1ms) 
+07:30:18   ├─ /apps/seafile/index.html (+1ms) 
+07:30:18   ├─ /apps/tailscale/index.html (+1ms) 
+07:30:18   ├─ /apps/wg-easy/index.html (+1ms) 
+07:30:18   └─ /apps/wireguard/index.html (+1ms) 
+07:30:18 ▶ src/pages/best/index.astro
+07:30:18   └─ /best/index.htmlThe collection "best" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+07:30:18 ▶ src/pages/best/[...slug].astro
+The collection "best" does not exist or is empty. Please check your content config file for errors.
+07:30:18 ▶ src/pages/compare/index.astro
+07:30:18   └─ /compare/index.html (+4ms) 
+07:30:18 ▶ src/pages/compare/[...slug].astro
+07:30:18   ├─ /compare/pi-hole-vs-adguard-home/index.html (+1ms) 
+07:30:18   ├─ /compare/jellyfin-vs-plex/index.html (+1ms) 
+07:30:18   ├─ /compare/portainer-vs-dockge/index.html (+1ms) 
+07:30:18   ├─ /compare/immich-vs-photoprism/index.html (+1ms) 
+07:30:18   └─ /compare/nginx-proxy-manager-vs-traefik/index.html (+1ms) 
+07:30:18 ▶ src/pages/foundations/index.astro
+07:30:18   └─ /foundations/index.html (+2ms) 
+07:30:18 ▶ src/pages/foundations/[...slug].astro
+07:30:18   ├─ /foundations/backup-3-2-1-rule/index.html (+1ms) 
+07:30:18   ├─ /foundations/docker-compose-basics/index.html (+1ms) 
+07:30:18   ├─ /foundations/docker-networking/index.html (+1ms) 
+07:30:18   ├─ /foundations/docker-volumes/index.html (+1ms) 
+07:30:18   ├─ /foundations/getting-started/index.html (+1ms) 
+07:30:18   ├─ /foundations/reverse-proxy-explained/index.html (+1ms) 
+07:30:18   ├─ /foundations/ssh-setup/index.html (+1ms) 
+07:30:18   ├─ /foundations/dns-explained/index.html (+1ms) 
+07:30:18   ├─ /foundations/firewall-ufw/index.html (+3ms) 
+07:30:18   ├─ /foundations/ssl-certificates/index.html (+1ms) 
+07:30:18   ├─ /foundations/fail2ban/index.html (+1ms) 
+07:30:18   └─ /foundations/linux-basics-self-hosting/index.html (+6ms) 
+07:30:18 ▶ src/pages/hardware/index.astro
+07:30:18   └─ /hardware/index.html (+4ms) 
+07:30:18 ▶ src/pages/hardware/[...slug].astro
+07:30:18   ├─ /hardware/best-mini-pc/index.html (+4ms) 
+07:30:18   ├─ /hardware/best-nas/index.html (+4ms) 
+07:30:18   └─ /hardware/intel-n100-mini-pc/index.html (+1ms) 
+07:30:19 λ src/pages/og/[...slug].png.ts
+The collection "best" does not exist or is empty. Please check your content config file for errors.
+The collection "troubleshooting" does not exist or is empty. Please check your content config file for errors.
+07:30:19   ├─ /og/apps/portainer.png (+189ms) 
+07:30:19   ├─ /og/apps/adguard-home.png (+131ms) 
+07:30:19   ├─ /og/apps/jellyfin.png (+151ms) 
+07:30:19   ├─ /og/apps/home-assistant.png (+130ms) 
+07:30:19   ├─ /og/apps/pi-hole.png (+143ms) 
+07:30:19   ├─ /og/apps/uptime-kuma.png (+140ms) 
+07:30:19   ├─ /og/apps/vaultwarden.png (+129ms) 
+07:30:20   ├─ /og/apps/immich.png (+124ms) 
+07:30:20   ├─ /og/apps/nextcloud.png (+107ms) 
+07:30:20   ├─ /og/apps/nginx-proxy-manager.png (+108ms) 
+07:30:20   ├─ /og/apps/plex.png (+117ms) 
+07:30:20   ├─ /og/apps/bookstack.png (+122ms) 
+07:30:20   ├─ /og/apps/dockge.png (+113ms) 
+07:30:20   ├─ /og/apps/photoprism.png (+118ms) 
+07:30:20   ├─ /og/apps/syncthing.png (+113ms) 
+07:30:20   ├─ /og/apps/diun.png (+113ms) 
+07:30:21   ├─ /og/apps/caddy.png (+117ms) 
+07:30:21   ├─ /og/apps/domoticz.png (+109ms) 
+07:30:21   ├─ /og/apps/openhab.png (+106ms) 
+07:30:21   ├─ /og/apps/traefik.png (+126ms) 
+07:30:21   ├─ /og/apps/watchtower.png (+132ms) 
+07:30:21   ├─ /og/apps/yacht.png (+133ms) 
+07:30:21   ├─ /og/apps/gladys-assistant.png (+122ms) 
+07:30:21   ├─ /og/apps/cosmos-cloud.png (+110ms) 
+07:30:22   ├─ /og/apps/cloudflare-tunnel.png (+103ms) 
+07:30:22   ├─ /og/apps/filebrowser.png (+106ms) 
+07:30:22   ├─ /og/apps/headscale.png (+104ms) 
+07:30:22   ├─ /og/apps/iobroker.png (+107ms) 
+07:30:22   ├─ /og/apps/lazydocker.png (+115ms) 
+07:30:22   ├─ /og/apps/librephotos.png (+108ms) 
+07:30:22   ├─ /og/apps/navidrome.png (+119ms) 
+07:30:22   ├─ /og/apps/seafile.png (+108ms) 
+07:30:22   ├─ /og/apps/tailscale.png (+107ms) 
+07:30:23   ├─ /og/apps/wg-easy.png (+112ms) 
+07:30:23   ├─ /og/apps/wireguard.png (+99ms) 
+07:30:23   ├─ /og/compare/pi-hole-vs-adguard-home.png (+100ms) 
+07:30:23   ├─ /og/compare/jellyfin-vs-plex.png (+128ms) 
+07:30:23   ├─ /og/compare/portainer-vs-dockge.png (+123ms) 
+07:30:23   ├─ /og/compare/immich-vs-photoprism.png (+104ms) 
+07:30:23   ├─ /og/compare/nginx-proxy-manager-vs-traefik.png (+130ms) 
+07:30:23   ├─ /og/replace/google-photos.png
