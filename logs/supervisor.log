@@ -5245,3 +5245,12 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:30:30Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
 2026-02-16T08:30:30Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
 2026-02-16T08:30:31Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+To github.com:roundone/selfhosting-sh.git
+   48b19ad..3c9dc5e  main -> main
+2026-02-16T08:30:34Z — ERROR (/opt/selfhosting-sh/agents/bi-finance) code=1
+2026-02-16T08:30:35Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+2026-02-16T08:30:36Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
+Your configuration specifies to merge with the ref 'refs/heads/main'
+from the remote, but no such ref was fetched.
+2026-02-16T08:30:38Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T08:30:39Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
