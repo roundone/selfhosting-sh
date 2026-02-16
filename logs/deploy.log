@@ -3375,3 +3375,8 @@ Uploading... (769/769)
 ✨ Deployment complete! Take a peek over at https://c2d7cd7d.selfhosting-sh.pages.dev
 2026-02-16T09:29:55Z -- [auto-deploy] Deploy succeeded
 2026-02-16T09:29:55Z -- [auto-deploy] Pages deployed: 248
+2026-02-16T09:59:55Z -- [auto-deploy] Starting deploy: periodic deploy (1800s since last)
+
+> selfhosting-sh@1.0.0 build
+> astro build && npx pagefind --site dist
+
