@@ -2020,3 +2020,10 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:53:56Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
 2026-02-16T07:53:56Z — Starting iteration in /opt/selfhosting-sh/agents/technology
 2026-02-16T07:53:57Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T07:53:58Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+To github.com:roundone/selfhosting-sh.git
+   d99ed22..01e260a  main -> main
+2026-02-16T07:54:00Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+2026-02-16T07:54:00Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T07:54:00Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T07:54:03Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
