@@ -7534,3 +7534,10 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:59:19Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
 To github.com:roundone/selfhosting-sh.git
    a7c8ff1..5a36a73  main -> main
+2026-02-16T08:59:23Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+To github.com:roundone/selfhosting-sh.git
+   5a36a73..d7a0b6f  main -> main
+2026-02-16T08:59:24Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+Your configuration specifies to merge with the ref 'refs/heads/main'
+from the remote, but no such ref was fetched.
+2026-02-16T08:59:26Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
