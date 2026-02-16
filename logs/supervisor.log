@@ -5618,3 +5618,9 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    023c554..98a5331  main -> main
 2026-02-16T08:35:31Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+To github.com:roundone/selfhosting-sh.git
+   98a5331..51260bb  main -> main
+2026-02-16T08:35:33Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
+2026-02-16T08:35:34Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+2026-02-16T08:35:35Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+2026-02-16T08:35:36Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
