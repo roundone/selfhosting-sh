@@ -4432,3 +4432,8 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:19:40Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
 2026-02-16T08:19:44Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
 2026-02-16T08:19:44Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+2026-02-16T08:19:47Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   bbc27a2..1ae7060  main -> main
+2026-02-16T08:19:47Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T08:19:49Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
