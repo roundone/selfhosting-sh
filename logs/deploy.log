@@ -3382,3 +3382,11 @@ Uploading... (769/769)
 
 09:59:57 [content] Syncing content
 09:59:57 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+09:59:57 [content] Synced content
+09:59:57 [types] Generated 896ms
+09:59:57 [build] output: "static"
+09:59:57 [build] mode: "static"
+09:59:57 [build] directory: /opt/selfhosting-sh/site/dist/
+09:59:57 [build] Collecting build info...
+09:59:57 [build] ✓ Completed in 926ms.
+09:59:57 [build] Building static entrypoints...
