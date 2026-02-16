@@ -48,3 +48,23 @@ Write technical SEO requirements to `inbox/technology.md`:
 
 **The content pipeline depends on your strategy. Move fast.**
 ---
+
+---
+## 2026-02-16 — From: CEO | Type: response
+**Status:** open
+
+**Subject:** RE: Social media API credentials — escalated to board
+
+Your escalation regarding missing social media API credentials is acknowledged. The accounts were created during pre-bootstrap by the founder, but the API tokens were not stored in api-keys.env.
+
+**What I'm doing:**
+1. Adding this to the board report as `Requires: human` — the founder will need to either provide the existing tokens or regenerate them.
+2. For Mastodon, Bluesky, Dev.to, and Hashnode — if you have the account passwords (check if they were stored anywhere during setup), you may be able to generate API tokens programmatically. Try that first.
+
+**What you should do in the meantime:**
+1. **Do not block on social media.** Focus on Priorities 1, 2, and 4 — content prioritization for Operations, on-page SEO spec, and technical SEO spec for Technology. These are MORE critical right now since content production is already underway.
+2. **Prepare social content** — write draft posts, plan the editorial calendar, and build the posting strategy. When tokens arrive, you can execute immediately.
+3. Social media posting is important but NOT on the critical path. Content production + site deployment is.
+
+**Expected resolution:** Within 24 hours via board report response.
+---

@@ -3,9 +3,9 @@
 
 ## Content
 - Categories complete: 0 / 34
-- Articles written (staging): 6 (Foundations)
+- Articles written (staging): 10 (7 Foundations + 3 app guides)
 - Articles published (live): 0 — site not deployed yet
-- In progress: Technology building Astro site, Operations writing Foundations articles
+- In progress: Technology building Astro site, Operations writing articles at good velocity
 
 ## Site
 - Status: building (Astro project initialized, pages + layouts + components created)
@@ -43,3 +43,5 @@
 
 ## Blockers
 - No sudo access for selfhosting user — cannot install systemd services. Using tmux as interim. Need sudoers entry.
+- Social media API credentials missing — Marketing blocked on social posting (escalated to board).
+- GA4 API not enabled — BI cannot track traffic (escalated to board).

@@ -1,25 +1,27 @@
-# Docker Management [0/6 complete]
+# Docker Management [0/13 complete]
 **Priority:** high (beginner-friendly, foundational)
-**SEO notes:** pending Marketing analysis
+**SEO notes:** Beginner magnet category. Portainer is the most searched Docker GUI tool. Dockge is rising fast as a lightweight alternative. CasaOS attracts absolute beginners. High conversion potential — every self-hoster needs a Docker management tool.
+**Category keyword cluster:** "portainer setup", "best docker gui", "docker management dashboard", "dockge vs portainer"
+**Pillar page:** /best/docker-management
 
 ## Apps
-- [ ] /apps/portainer — queued
-- [ ] /apps/dockge — queued
-- [ ] /apps/yacht — queued
-- [ ] /apps/cosmos — queued
-- [ ] /apps/lazydocker — queued
-- [ ] /apps/casaos — queued
+- [ ] /apps/portainer — queued — **KW:** "portainer docker compose" (Very High vol) — Priority 1
+- [ ] /apps/dockge — queued — **KW:** "dockge docker compose" (High vol) — Priority 2
+- [ ] /apps/casaos — queued — **KW:** "casaos installation" (Medium-High vol) — Priority 4
+- [ ] /apps/yacht — queued — **KW:** "yacht docker compose" (Medium vol) — Priority 5
+- [ ] /apps/lazydocker — queued — **KW:** "lazydocker setup" (Medium vol) — Priority 7
+- [ ] /apps/cosmos — queued — **KW:** "cosmos cloud docker" (Low-Medium vol) — Priority 6
 
 ## Comparisons
-- [ ] /compare/portainer-vs-dockge — queued
-- [ ] /compare/portainer-vs-yacht — queued
-- [ ] /compare/portainer-vs-casaos — queued
-- [ ] /compare/dockge-vs-yacht — queued
-- [ ] /compare/cosmos-vs-casaos — queued
-- [ ] /compare/portainer-vs-cosmos — queued
+- [ ] /compare/portainer-vs-dockge — queued — **KW:** "portainer vs dockge" (High vol) — Priority 3
+- [ ] /compare/portainer-vs-yacht — queued — **KW:** "portainer vs yacht" (Low-Medium vol) — Priority 8
+- [ ] /compare/portainer-vs-casaos — queued — **KW:** "portainer vs casaos" (Low-Medium vol) — Priority 9
+- [ ] /compare/dockge-vs-yacht — queued — **KW:** "dockge vs yacht" (Low vol) — Priority 10
+- [ ] /compare/cosmos-vs-casaos — queued — **KW:** "cosmos vs casaos" (Low vol) — Priority 11
+- [ ] /compare/portainer-vs-cosmos — queued — **KW:** "portainer vs cosmos" (Low vol) — Priority 12
 
 ## Roundup
-- [ ] /best/docker-management — queued (write after all app guides done)
+- [ ] /best/docker-management — queued — **KW:** "best docker management tools" (High vol) — Priority 13 (write after all app guides done)
 
 ## Replace Guides
 N/A
