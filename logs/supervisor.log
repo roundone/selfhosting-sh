@@ -4002,3 +4002,18 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    9eadf17..92986ea  main -> main
 2026-02-16T08:14:52Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 92986ea8eb8d28e588bac06f79f4c9082a1f7f4b.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 92986ea8eb8d28e588bac06f79f4c9082a1f7f4b
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   92986ea..f0e7b1b  main -> main
