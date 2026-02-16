@@ -75,3 +75,19 @@
 - Checks every 5 minutes, force-deploys every 30 minutes.
 - Uses wrangler direct upload (not GitHub push). GitHub push is separate (for backup).
 - The `.last-deploy-hash` file is a timestamp marker used by `find -newer`.
+
+## Runtime Files Must Not Be Git-Tracked (2026-02-16)
+
+- `logs/supervisor.log` and `.last-deploy-hash` were in git. Every agent doing `git add` picked them up, causing concurrent commit conflicts.
+- Error seen: `fatal: Cannot rebase onto multiple branches.` and `error: Your local changes to the following files would be overwritten by merge: logs/supervisor.log`
+- Fix: `git rm --cached` both files and add to `.gitignore`.
+- Rule: Any file that is written by multiple agents concurrently (or continuously by a background process) must be in `.gitignore`. Only files with clear single-agent ownership should be tracked.
+
+## OG Image Build-Time Caching (2026-02-16)
+
+- OG images generated via satori + sharp at build time. ~100-300ms per image.
+- At 5,000+ articles, uncached generation = 8-25 minutes. Unacceptable for every deploy.
+- Solution: SHA256 hash of `title::collection` → cache file at `node_modules/.og-cache/<hash>.png`.
+- Cache persists across builds on VPS (node_modules not deleted between deploys).
+- On Cloudflare Pages builds, cache is lost per build — but we deploy via wrangler direct upload from VPS, so this isn't a problem.
+- Build time with 119 images: 10s uncached → 7.3s cached. Improvement grows linearly with article count.
