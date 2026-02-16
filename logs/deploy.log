@@ -712,3 +712,12 @@ Total:
 
 Finished in 0.729 seconds
 2026-02-16T08:00:47Z -- [auto-deploy] Build succeeded
+Uploading... (206/206)
+✨ Success! Uploaded 0 files (206 already uploaded) (0.16 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://a8d92805.selfhosting-sh.pages.dev
+2026-02-16T08:00:57Z -- [auto-deploy] Deploy succeeded
+2026-02-16T08:00:57Z -- [auto-deploy] Pages deployed: 68
