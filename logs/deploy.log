@@ -737,3 +737,22 @@ Uploading... (206/206)
 08:30:59 [build] Collecting build info...
 08:30:59 [build] ✓ Completed in 630ms.
 08:30:59 [build] Building static entrypoints...
+08:31:01 [vite] ✓ built in 1.67s
+08:31:01 [build] ✓ Completed in 1.70s.
+
+ generating static routes 
+08:31:01 ▶ src/pages/404.astro
+08:31:01   └─ /404.html (+9ms) 
+08:31:01 ▶ src/pages/about.astro
+08:31:01   └─ /about/index.html (+2ms) 
+08:31:01 ▶ src/pages/apps/index.astro
+08:31:01   └─ /apps/index.html (+36ms) 
+08:31:01 ▶ src/pages/apps/[...slug].astro
+08:31:01   ├─ /apps/portainer/index.html (+3ms) 
+08:31:01   ├─ /apps/adguard-home/index.html (+2ms) 
+08:31:01   ├─ /apps/jellyfin/index.html (+3ms) 
+08:31:01   ├─ /apps/home-assistant/index.html (+3ms) 
+08:31:01   ├─ /apps/pi-hole/index.html (+2ms) 
+08:31:01   ├─ /apps/uptime-kuma/index.html (+3ms) 
+08:31:01   ├─ /apps/vaultwarden/index.html (+2ms) 
+08:31:01   ├─ /apps/immich/index.html
