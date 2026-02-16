@@ -1,0 +1,131 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  currentCollection: string;
+  category: string;
+  apps: string[];
+  tags: string[];
+  limit?: number;
+}
+
+const { currentSlug, currentCollection, category, apps, tags, limit = 6 } = Astro.props;
+
+const collectionNames = ['apps', 'compare', 'best', 'replace', 'hardware', 'foundations'] as const;
+
+type ScoredArticle = {
+  id: string;
+  collection: string;
+  title: string;
+  description: string;
+  href: string;
+  score: number;
+};
+
+const candidates: ScoredArticle[] = [];
+
+for (const name of collectionNames) {
+  let entries;
+  try {
+    entries = await getCollection(name, ({ data }) => !data.draft);
+  } catch {
+    continue;
+  }
+  for (const entry of entries) {
+    if (name === currentCollection && entry.id === currentSlug) continue;
+
+    let score = 0;
+
+    // Same category = strong signal
+    if (entry.data.category === category) score += 3;
+
+    // Shared apps = strongest signal
+    const sharedApps = entry.data.apps?.filter((a: string) => apps.includes(a)) || [];
+    score += sharedApps.length * 4;
+
+    // Shared tags = moderate signal
+    const sharedTags = entry.data.tags?.filter((t: string) => tags.includes(t)) || [];
+    score += sharedTags.length * 2;
+
+    // Same collection type = weak signal
+    if (name === currentCollection) score += 1;
+
+    if (score > 0) {
+      candidates.push({
+        id: entry.id,
+        collection: name,
+        title: entry.data.title,
+        description: entry.data.description,
+        href: `/${name}/${entry.id}/`,
+        score,
+      });
+    }
+  }
+}
+
+const related = candidates
+  .sort((a, b) => b.score - a.score)
+  .slice(0, limit);
+---
+{related.length > 0 && (
+  <section class="related-articles">
+    <h2>Related Articles</h2>
+    <div class="related-grid">
+      {related.map((article) => (
+        <a href={article.href} class="related-card">
+          <span class="related-collection">{article.collection}</span>
+          <h3>{article.title}</h3>
+          <p>{article.description.length > 120 ? article.description.slice(0, 120) + '...' : article.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related-articles {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+  .related-articles h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .related-card {
+    display: block;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+  .related-card:hover {
+    border-color: var(--accent);
+  }
+  .related-collection {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+  }
+  .related-card h3 {
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0.5rem;
+    line-height: 1.3;
+  }
+  .related-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin: 0;
+  }
+</style>

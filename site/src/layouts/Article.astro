@@ -2,6 +2,7 @@
 import Base from './Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
 
 interface Props {
   title: string;
@@ -209,6 +210,14 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
       <div class="prose">
         <slot />
       </div>
+
+      <RelatedArticles
+        currentSlug={slug}
+        currentCollection={collectionName}
+        category={category}
+        apps={apps}
+        tags={tags}
+      />
     </article>
 
     {tocHeadings.length > 0 && (
