@@ -7265,3 +7265,9 @@ To github.com:roundone/selfhosting-sh.git
    fddeea5..36241a4  main -> main
 2026-02-16T08:55:42Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
 2026-02-16T08:55:42Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+To github.com:roundone/selfhosting-sh.git
+   36241a4..e02d972  main -> main
+2026-02-16T08:55:47Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T08:55:47Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+Your configuration specifies to merge with the ref 'refs/heads/main'
+from the remote, but no such ref was fetched.
