@@ -2503,3 +2503,7 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:00:33Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
 To github.com:roundone/selfhosting-sh.git
    ec46674..9d0d688  main -> main
+2026-02-16T08:00:34Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   9d0d688..eacc628  main -> main
+2026-02-16T08:00:34Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
