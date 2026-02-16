@@ -1,11 +1,11 @@
-# Home Automation [0/13 complete]
+# Home Automation [1/13 complete]
 **Priority:** high
 **SEO notes:** Home Assistant dominates this space with massive search volume. Google Home/Alexa replacement queries tap into privacy concerns. The home automation community is large and engaged. HA has the biggest subreddit presence among self-hosted apps.
 **Category keyword cluster:** "home assistant docker", "best self-hosted home automation", "home assistant vs openhab", "smart home without cloud"
 **Pillar page:** /best/home-automation
 
 ## Apps
-- [ ] /apps/home-assistant — queued — **KW:** "home assistant docker compose" (Very High vol) — Priority 1
+- [x] /apps/home-assistant — done 2026-02-16 — **KW:** "home assistant docker compose" (Very High vol) — Priority 1
 - [ ] /apps/openhab — queued — **KW:** "openhab docker compose" (Medium vol) — Priority 4
 - [ ] /apps/domoticz — queued — **KW:** "domoticz docker compose" (Low-Medium vol) — Priority 6
 - [ ] /apps/gladys-assistant — queued — **KW:** "gladys assistant docker" (Low vol) — Priority 8

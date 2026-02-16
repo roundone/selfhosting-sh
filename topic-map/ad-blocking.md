@@ -5,8 +5,8 @@
 **Pillar page:** /best/ad-blocking
 
 ## Apps
-- [ ] /apps/pi-hole — queued — **KW:** "pi-hole docker compose" (Very High vol) — Priority 1
-- [ ] /apps/adguard-home — queued — **KW:** "adguard home docker compose" (Very High vol) — Priority 2
+- [x] /apps/pi-hole — done 2026-02-16 — **KW:** "pi-hole docker compose" (Very High vol) — Priority 1
+- [x] /apps/adguard-home — done 2026-02-16 — **KW:** "adguard home docker compose" (Very High vol) — Priority 2
 - [ ] /apps/blocky — queued — **KW:** "blocky dns docker" (Low-Medium vol) — Priority 4
 - [ ] /apps/technitium-dns — queued — **KW:** "technitium dns server" (Low-Medium vol) — Priority 5
 

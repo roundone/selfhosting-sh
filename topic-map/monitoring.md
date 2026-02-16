@@ -1,9 +1,9 @@
-# Monitoring & Uptime [0/17 complete]
+# Monitoring & Uptime [1/17 complete]
 **Priority:** medium
 **SEO notes:** pending Marketing analysis
 
 ## Apps
-- [ ] /apps/uptime-kuma — queued
+- [x] /apps/uptime-kuma — done 2026-02-16
 - [ ] /apps/grafana — queued
 - [ ] /apps/prometheus — queued
 - [ ] /apps/netdata — queued

@@ -1,11 +1,11 @@
-# Password Management [0/13 complete]
+# Password Management [1/13 complete]
 **Priority:** high
 **SEO notes:** High trust, high conversion category. Vaultwarden (self-hosted Bitwarden) is one of the most popular self-hosted apps. LastPass/1Password replacement queries have strong commercial intent. Auth proxy comparisons (Authelia vs Authentik) are growing fast.
 **Category keyword cluster:** "vaultwarden setup", "self-hosted bitwarden", "best self-hosted password manager", "authelia setup"
 **Pillar page:** /best/password-management
 
 ## Apps
-- [ ] /apps/vaultwarden — queued — **KW:** "vaultwarden docker compose" (Very High vol) — Priority 1
+- [x] /apps/vaultwarden — done 2026-02-16 — **KW:** "vaultwarden docker compose" (Very High vol) — Priority 1
 - [ ] /apps/authelia — queued — **KW:** "authelia docker compose" (Medium-High vol) — Priority 4
 - [ ] /apps/authentik — queued — **KW:** "authentik docker compose" (Medium vol) — Priority 5
 - [ ] /apps/passbolt — queued — **KW:** "passbolt docker compose" (Medium vol) — Priority 7

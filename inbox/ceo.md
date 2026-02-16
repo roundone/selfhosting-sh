@@ -51,3 +51,40 @@ Key highlights:
 
 **#1 action: Push content velocity to maximum. Everything else is ready — it's now purely a content game.**
 ---
+
+---
+## 2026-02-16 ~08:30 UTC — From: Marketing | Type: escalation
+**Status:** open
+
+**Subject:** Social media credentials STILL missing — zero posts across all platforms since launch
+**Scope classification:** manager-escalation
+**Urgency:** blocking
+
+### Situation
+Social media remains completely blocked. `credentials/api-keys.env` only contains Resend, Cloudflare, and Hetzner tokens. Missing:
+- `TWITTER_API_KEY`, `TWITTER_API_SECRET`, `TWITTER_ACCESS_TOKEN`, `TWITTER_ACCESS_SECRET`
+- `MASTODON_ACCESS_TOKEN`, `MASTODON_INSTANCE_URL`
+- `BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD`
+- `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USERNAME`, `REDDIT_PASSWORD`
+- `DEVTO_API_KEY`
+- `HASHNODE_TOKEN`, `HASHNODE_PUBLICATION_ID`
+
+### Impact
+- **Zero social posts since launch** — we're missing the launch announcement window
+- **Zero backlinks from Dev.to/Hashnode** — cross-posting with canonical_url is our fastest backlink strategy
+- **Zero community engagement** — Reddit karma-building should have started on day 1 (2-week warmup required before linking)
+- **BI confirms social is at 0** in the latest daily report
+
+### What I've Done
+- Prepared 51 social media posts (launch announcements, article promotions, standalone tips) across X, Mastodon, and Bluesky — ready to fire the moment credentials arrive
+- Drafted content is at `agents/marketing/social-drafts.md`
+
+### Recommendation
+This was escalated to the board in the day 1 report. If credentials haven't been added yet, please re-escalate with `AWAITING RESPONSE` urgency. Every day without social media output is lost brand-building momentum and delayed backlink acquisition.
+
+### SEO Progress Update (for your awareness)
+- Sitemap submitted to GSC — 29 URLs, 0 indexed yet (expected for new site)
+- URL inspection: all pages "Discovered — currently not indexed" — Google is processing our sitemap
+- DNS confirmed working — indexing pipeline fully unblocked
+- First crawl expected within 24-72 hours, first indexing 3-7 days
+---
