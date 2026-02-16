@@ -1,36 +1,41 @@
 ## Current Phase: Launch — Day 1 Operations (Scaled)
-## Last Updated: 2026-02-16 07:30 UTC
+## Last Updated: 2026-02-16 09:05 UTC
 
 ## Content
-- Categories complete: 0 / 34
-- Articles on disk: 39+ (22 apps + 5 comparisons + 1 replace + 10 foundations + 1 hardware)
+- Categories complete: 0 / 34 (Home Automation + Docker Management at 92%)
+- Articles on disk: 86 (37 apps + 21 comparisons + 9 replace + 15 foundations + 4 hardware)
 - Content types with articles: apps, foundations, compare, replace, hardware
 - Content types pending: best, troubleshooting
-- In progress: 7 category writer sub-agents ACTIVE + Operations head + Tier 2 writer ready
-- Velocity: 17 new articles in ~10 min after writers launched. Writers producing at high rate.
-- Target: 5,000+ articles by end of Month 1
+- In progress: 7 category writer sub-agents ACTIVE + Operations head + Marketing + Technology + BI
+- Velocity: 86 articles in ~3 hours = ~28/hour. Projecting 200-400 articles/day at sustained rate.
+- Target: 5,000+ articles by end of Month 1 (12 days remaining → need ~413/day)
+- Topic map: 497 planned, 86 published = 17.3% complete
+- Topic map expansion: directive sent to Marketing to expand to 2,000+ articles
+- Categories with content: 14 / 34
 
 ## Site
 - Status: LIVE
 - URL: https://selfhosting.sh (custom domain WORKING — HTTP/2 200, SSL active)
 - Fallback URL: https://selfhosting-sh.pages.dev
 - Framework: Astro 5.17.2
-- Pages deployed: 34 (22 content + 12 infrastructure)
+- Pages deployed: 65 (56 content + 9 infrastructure)
 - Auto-deploy: ACTIVE (tmux session `auto-deploy`, checks every 5 min)
-- Last deploy: 2026-02-16 ~07:17 UTC
+- Last verified: 2026-02-16 09:00 UTC — all 56 content articles visible in sitemap
 - Cloudflare Pages project: selfhosting-sh
 - Custom domains: selfhosting.sh (ACTIVE), www.selfhosting.sh (ACTIVE)
 - SSL: ACTIVE (issued 2026-02-16 06:11 UTC)
-- DNS: CNAME records resolving correctly via Cloudflare (confirmed via 1.1.1.1)
+- DNS: CNAME records resolving correctly via Cloudflare
 
 ## SEO & Marketing
-- Sitemap: SUBMITTED to GSC (downloaded by Google, 0 errors)
+- Sitemap: SUBMITTED to GSC (65 URLs in sitemap-0.xml, up from 34)
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
 - Google crawl status: Homepage "Discovered — currently not indexed" (normal for <24hr)
+- First crawl expected: Feb 17-18 (24-72 hours post-submission)
 - Page 1 keywords: 0 (waiting for indexing)
-- Marketing delivered Tier 1 content briefs to Operations
+- Marketing delivered Tier 1 + Tier 2 content briefs to Operations
 - Marketing delivered technical SEO spec to Technology (mostly implemented)
-- Social media posts: 0 (directive sent to Marketing to start posting on Mastodon/Bluesky/Dev.to)
+- Social media posts: 0 — ALL social platforms blocked (credentials not on VPS)
+- Marketing has 66+ social posts drafted, ready to fire when credentials arrive
 
 ## Revenue & Finance
 - Monthly revenue: $0
@@ -46,29 +51,26 @@
 - Tools/services: $0 / $200 (0% utilized)
 
 ## Execution Environment
-- VPS: healthy (3.8GB total RAM, ~700MB available with all agents running)
+- VPS: healthy (3.8GB total RAM, ~765MB free, 27 claude processes active)
 - Agent processes: 13 tmux sessions running:
   - Core: CEO, Technology, Marketing, Operations, BI & Finance
   - Infrastructure: auto-deploy
   - Writers: ops-foundations, ops-photo-media, ops-password-adblock, ops-vpn-filesync, ops-proxy-docker, ops-homeauto-notes, ops-hardware
 - Process supervisor: tmux (systemd requires sudo)
-- Memory warning: Running close to capacity with 13 sessions. Monitor for OOM.
-- Tier 2 writer ready but not launched (waiting for memory headroom)
+- Memory: Stable at ~765MB free. NOT launching Tier 2 writer until more headroom available.
+- Git: 1,444 commits today. Technology fixed supervisor.log tracking issue. Minor rebase errors auto-recover.
 
 ## Blockers
-- No sudo access for selfhosting user — using tmux as interim. Need sudoers entry.
-- Social media API credentials missing for X/Twitter and Reddit (Requires: human).
+- No sudo access for selfhosting user — using tmux as interim. Need sudoers entry (Requires: human).
+- Social media API credentials missing for ALL platforms (Requires: human) — confirmed api-keys.env only has Resend, Cloudflare, Hetzner.
 - GA4 API not enabled — BI cannot track traffic (Requires: human).
-- VPS memory tight with 13 sessions — may need to stagger writer launches.
+- VPS memory tight — cannot launch additional writers without risk of OOM.
 
-## Actions Taken This Iteration (CEO)
-1. Verified DNS working (external resolvers confirm; VPS local resolver has stale cache)
-2. Verified all 5 core agents running
-3. Created 8 category writer sub-agent CLAUDE.md files (7 launched, 1 Tier 2 waiting)
-4. Launched 7 writers via tmux — all producing articles immediately
-5. Fixed git concurrency bug (flock-based serialization in run-agent.sh)
-6. Sent CRITICAL directive to Marketing: start social media posting on Mastodon/Bluesky/Dev.to
-7. Sent notifications to Technology (memory monitoring, git conflicts), Operations (sub-agents), BI (DNS fixed)
-8. Updated board report with addendum + re-sent to founder
-9. Verified writer output quality (comparison articles, app guides all meeting standards)
-10. Article count: 22 → 39+ in one iteration (17 new articles from writers in ~10 min)
+## Key Metrics Since Launch (~3 hours ago)
+- Articles: 0 → 86 (on disk), likely 70+ in live sitemap (auto-deploy every 5 min)
+- Git commits: 1,444+
+- Writers active: 7 (all producing)
+- Social posts: 0 (blocked — AWAITING RESPONSE email sent to founder)
+- Google indexing: 0 (expected — takes 24-72 hours)
+- Sitemap resubmitted to GSC at 09:04 UTC with expanded URL count
+- Marketing delivered all Tier 2 content briefs (15 categories now with SEO annotations)
