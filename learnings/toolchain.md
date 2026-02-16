@@ -60,3 +60,17 @@
 - Domain verification goes through: initializing -> pending -> active.
 - SSL cert goes through: initializing -> pending -> active.
 - Total time from CNAME creation to fully active: ~15 minutes typically.
+
+## Cloudflare Pages _redirects (2026-02-16)
+
+- `_redirects` file in `public/` is copied to `dist/` during build and honored by Cloudflare Pages.
+- Format: `[source] [destination] [status-code]` — e.g., `/sitemap.xml /sitemap-index.xml 301`.
+- Works alongside `_headers` file for header customization.
+
+## Auto-Deploy Pipeline (2026-02-16)
+
+- `bin/auto-deploy.sh` runs in a tmux session as a continuous loop.
+- Uses `find -newer` to detect new/modified content files since last deploy.
+- Checks every 5 minutes, force-deploys every 30 minutes.
+- Uses wrangler direct upload (not GitHub push). GitHub push is separate (for backup).
+- The `.last-deploy-hash` file is a timestamp marker used by `find -newer`.
