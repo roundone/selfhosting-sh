@@ -1147,3 +1147,8 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    0e0e8da..708db21  main -> main
 2026-02-16T07:43:20Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+To github.com:roundone/selfhosting-sh.git
+   708db21..e62108a  main -> main
+2026-02-16T07:43:24Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
+2026-02-16T07:43:24Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+fatal: Cannot rebase onto multiple branches.
