@@ -176,7 +176,7 @@ Immich's face recognition is good and improving rapidly. It groups faces accurat
 
 ### What happens if my server dies?
 
-If you follow the [3-2-1 backup strategy](/foundations/backup-strategy), your photos are safe. Keep at least one off-site backup (cloud backup service or a drive at a friend's house). Your photo library is just files on disk — they're easy to back up and restore.
+If you follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule), your photos are safe. Keep at least one off-site backup (cloud backup service or a drive at a friend's house). Your photo library is just files on disk — they're easy to back up and restore.
 
 ## Related
 
@@ -189,5 +189,5 @@ If you follow the [3-2-1 backup strategy](/foundations/backup-strategy), your ph
 - [Best Self-Hosted Photo Management](/best/photo-management)
 - [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)
 - [Remote Access](/foundations/remote-access)

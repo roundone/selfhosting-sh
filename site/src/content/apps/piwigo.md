@@ -166,7 +166,7 @@ Forward traffic to port 8085 (or whatever port you mapped).
 - **Forward Port:** `8085`
 - Enable SSL with Let's Encrypt
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ## Backup
 
@@ -184,7 +184,7 @@ docker compose exec piwigo_db mysqldump -u piwigo -p piwigo > piwigo-db-backup-$
 tar czf piwigo-backup-$(date +%Y%m%d).tar.gz /opt/piwigo/config /opt/piwigo/gallery
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -247,4 +247,4 @@ Piwigo has official iOS and Android apps for browsing and uploading. The apps su
 - [Best Self-Hosted Photo Management](/best/photo-management)
 - [Self-Hosted Google Photos Alternatives](/replace/google-photos)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

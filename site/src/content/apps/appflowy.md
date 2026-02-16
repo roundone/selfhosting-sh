@@ -153,7 +153,7 @@ GOTRUE_SMTP_ADMIN_EMAIL=admin@yourdomain.com
 
 Set up a reverse proxy to serve AppFlowy Cloud over HTTPS. Point your proxy to the AppFlowy Cloud API port (default 9000). Ensure WebSocket passthrough is enabled for real-time collaboration.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -169,7 +169,7 @@ docker compose exec postgres pg_dump -U supabase appflowy > appflowy_backup.sql
 # MinIO data is in the minio-data volume
 ```
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -216,5 +216,5 @@ Choose AppFlowy if you specifically want Notion's database/kanban features in a 
 - [Replace Notion](/replace/notion)
 - [Replace Confluence](/replace/confluence)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

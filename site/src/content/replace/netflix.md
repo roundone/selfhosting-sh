@@ -122,7 +122,7 @@ affiliateDisclosure: false
 
 ### Can I access my media server outside my home network?
 
-Yes. Set up a reverse proxy with SSL and a domain name, or use a VPN like Tailscale for encrypted remote access. Jellyfin, Plex, and Emby all support remote streaming. See our [Remote Access guide](/foundations/remote-access) and [Reverse Proxy Setup](/foundations/reverse-proxy).
+Yes. Set up a reverse proxy with SSL and a domain name, or use a VPN like Tailscale for encrypted remote access. Jellyfin, Plex, and Emby all support remote streaming. See our [Remote Access guide](/foundations/remote-access) and [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
 
 ### How much storage do I need?
 
@@ -149,4 +149,4 @@ All three servers support SRT, ASS/SSA, and PGS subtitle formats. SRT subtitles 
 - [How to Self-Host Plex](/apps/plex)
 - [How to Self-Host Emby](/apps/emby)
 - [Best Self-Hosted Media Servers](/best/media-servers)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

@@ -201,7 +201,7 @@ proxy_read_timeout 600s;
 proxy_send_timeout 600s;
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ## Backup
 
@@ -217,7 +217,7 @@ tar czf emby-config-backup-$(date +%Y%m%d).tar.gz /opt/emby/config
 docker compose up -d
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -291,4 +291,4 @@ Emby has native apps for Android, iOS, Android TV, Amazon Fire TV, Roku, Apple T
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Netflix Alternatives](/replace/netflix)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

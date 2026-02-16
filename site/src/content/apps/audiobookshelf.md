@@ -155,7 +155,7 @@ audiobooks.yourdomain.com {
 
 Caddy supports WebSockets by default — no extra configuration needed.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ### Running on a Subfolder
 
@@ -191,7 +191,7 @@ Manual backup of critical data:
 tar czf audiobookshelf-backup-$(date +%Y%m%d).tar.gz /opt/audiobookshelf/config /opt/audiobookshelf/metadata
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -262,5 +262,5 @@ Plex treats audiobooks as music, which creates problems — no chapter support, 
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Spotify Alternatives](/replace/spotify)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

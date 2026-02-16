@@ -161,4 +161,4 @@ These are simpler alternatives to ngrok but share the same fundamental issue —
 - [Best Self-Hosted VPN Solutions](/best/vpn)
 - [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

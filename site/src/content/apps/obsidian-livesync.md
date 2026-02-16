@@ -180,7 +180,7 @@ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Forwarded-Proto $scheme;
 ```
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -190,7 +190,7 @@ For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
 
 Your Obsidian vault on each device is also a complete backup — every device has a full copy of all notes.
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -235,5 +235,5 @@ The main caveat: this only works if you use Obsidian. If you're choosing a note-
 - [Replace Notion](/replace/notion)
 - [Replace Evernote](/replace/evernote)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

@@ -238,7 +238,7 @@ docker run --rm \
 docker compose start filebrowser
 ```
 
-The database is small (typically under 1 MB) so backups are fast. Schedule this with a cron job or include it in your broader backup strategy. See [Backup Strategy](/foundations/backup-strategy) for a comprehensive approach.
+The database is small (typically under 1 MB) so backups are fast. Schedule this with a cron job or include it in your broader backup strategy. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -352,4 +352,4 @@ Yes. Filebrowser includes a built-in text editor that works for configuration fi
 - [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

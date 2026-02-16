@@ -212,7 +212,7 @@ Nginx Proxy Manager configuration:
 - Enable SSL with Let's Encrypt
 - Set `csrfTrustedOrigins` in `.env` to your full domain URL (e.g., `https://photos.example.com`)
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ## Backup
 
@@ -225,7 +225,7 @@ Critical data to back up:
 
 The ML models and cache can be regenerated from a rescan, so they're lower priority for backup.
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -303,5 +303,5 @@ Yes. You can create multiple users and assign each user a scan directory. Users 
 - [How to Self-Host Immich](/apps/immich)
 - [How to Self-Host PhotoPrism](/apps/photoprism)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

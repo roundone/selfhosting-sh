@@ -135,4 +135,4 @@ Both support RAW formats (CR2, NEF, ARW, DNG). Immich generates JPEG previews an
 - [Self-Hosted Google Photos Alternatives](/replace/google-photos)
 - [Best Self-Hosted Photo Management](/best/photo-management)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

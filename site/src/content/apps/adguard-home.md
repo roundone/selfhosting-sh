@@ -311,4 +311,4 @@ For a new deployment, go with AdGuard Home. The built-in encrypted DNS, simpler 
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
 - [Remote Access with VPN](/foundations/remote-access)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)

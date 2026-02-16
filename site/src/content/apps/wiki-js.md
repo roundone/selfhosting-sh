@@ -164,7 +164,7 @@ Under Administration → Theme, you can customize colors, add custom CSS, and in
 
 Set up a reverse proxy to access Wiki.js over HTTPS. Point your proxy to port 3000. Update the Site URL in Administration → General to match your external URL.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -176,7 +176,7 @@ Critical data to back up:
 
 Restore database: `cat wikijs_backup.sql | docker compose exec -T postgres psql -U wikijs wikijs`
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -224,4 +224,4 @@ Choose Wiki.js if Git-based content management matters to you.
 - [Replace Notion](/replace/notion)
 - [Replace Confluence](/replace/confluence)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

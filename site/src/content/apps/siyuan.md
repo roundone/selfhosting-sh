@@ -138,7 +138,7 @@ id -u && id -g
 
 Set up a reverse proxy to access SiYuan over HTTPS. Point your proxy to port 6806. SiYuan uses WebSocket connections, so ensure your proxy supports WebSocket passthrough.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -158,7 +158,7 @@ docker cp $(docker compose ps -q siyuan):/siyuan/workspace ./siyuan-backup
 docker compose start siyuan
 ```
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -204,4 +204,4 @@ The trade-off is complexity — the learning curve is steeper than [BookStack](/
 - [Replace Notion](/replace/notion)
 - [Replace Evernote](/replace/evernote)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

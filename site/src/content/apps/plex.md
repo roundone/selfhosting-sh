@@ -295,7 +295,7 @@ The server is free. The Plex Pass subscription ($5/month or $120 lifetime) adds 
 
 ### Should I use Plex or Jellyfin?
 
-Use [Jellyfin](/apps/jellyfin) if you want fully open source and free hardware transcoding. Use Plex if you want the most polished client apps across every platform, or if you share libraries with non-technical family members. See our [Plex vs Jellyfin comparison](/compare/plex-vs-jellyfin).
+Use [Jellyfin](/apps/jellyfin) if you want fully open source and free hardware transcoding. Use Plex if you want the most polished client apps across every platform, or if you share libraries with non-technical family members. See our [Plex vs Jellyfin comparison](/compare/jellyfin-vs-plex).
 
 ### Can I run Plex on a Raspberry Pi?
 
@@ -309,7 +309,7 @@ Plex remains the most polished and widely supported media server. Its client app
 
 - [How to Self-Host Jellyfin](/apps/jellyfin)
 - [Best Self-Hosted Media Servers](/best/media-servers)
-- [Plex vs Jellyfin](/compare/plex-vs-jellyfin)
+- [Plex vs Jellyfin](/compare/jellyfin-vs-plex)
 - [Replace Netflix with Self-Hosted Media](/replace/netflix)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

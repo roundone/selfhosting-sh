@@ -217,7 +217,7 @@ Outline supports custom team name and logo through the admin settings UI (Settin
 
 Set up a reverse proxy to access Outline over HTTPS with your domain. Point your proxy to port 3000 on the Outline container.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -229,7 +229,7 @@ Critical data to back up:
 
 Restore database: `cat outline_backup.sql | docker compose exec -T postgres psql -U outline outline`
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -279,5 +279,5 @@ For personal wikis where you don't want to set up OIDC, [BookStack](/apps/bookst
 - [Replace Notion](/replace/notion)
 - [Replace Confluence](/replace/confluence)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

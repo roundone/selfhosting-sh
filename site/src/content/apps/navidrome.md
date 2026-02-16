@@ -45,7 +45,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   navidrome:
-    image: deluan/navidrome:0.54.5
+    image: deluan/navidrome:0.60.3
     container_name: navidrome
     restart: unless-stopped
     user: "1000:1000"

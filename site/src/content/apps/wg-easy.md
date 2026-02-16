@@ -224,7 +224,7 @@ docker run --rm \
 docker compose up -d
 ```
 
-If you lose this volume, all client configurations become invalid. Every client would need new configs generated and redistributed. Back this up regularly — see [Backup Strategy](/foundations/backup-strategy) for a comprehensive approach.
+If you lose this volume, all client configurations become invalid. Every client would need new configs generated and redistributed. Back this up regularly — see [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -308,4 +308,4 @@ No. WireGuard requires a publicly reachable UDP port. If your ISP uses CGNAT (ca
 - [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

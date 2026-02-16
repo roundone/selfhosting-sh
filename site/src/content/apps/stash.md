@@ -149,7 +149,7 @@ stash.yourdomain.com {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ## Backup
 
@@ -169,7 +169,7 @@ tar czf stash-backup-$(date +%Y%m%d).tar.gz /opt/stash/config /opt/stash/metadat
 
 Stash also has a built-in backup feature under **Settings** → **System** → **Backup** that creates database snapshots.
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -241,5 +241,5 @@ Yes. Stash and Jellyfin serve different purposes and can point to the same media
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Netflix Alternatives](/replace/netflix)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

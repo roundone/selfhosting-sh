@@ -181,7 +181,7 @@ photos.yourdomain.com {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ## Backup
 
@@ -199,7 +199,7 @@ docker compose exec photoview-db mysqldump -u photoview -p photoview > photoview
 docker run --rm -v photoview-cache:/data -v $(pwd):/backup alpine tar czf /backup/photoview-cache-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -272,5 +272,5 @@ No native app. The web UI is responsive and works well on mobile browsers. You c
 - [Best Self-Hosted Photo Management](/best/photo-management)
 - [Self-Hosted Google Photos Alternatives](/replace/google-photos)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

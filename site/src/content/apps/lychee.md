@@ -266,7 +266,7 @@ Forward traffic to port 8000 (not port 80 — this changed in Lychee v7).
 
 After setting up the proxy, update `APP_URL` in your `.env` to the full HTTPS URL and restart the container.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
 
 ## Backup
 
@@ -283,7 +283,7 @@ docker compose exec lychee_db mysqldump -u lychee -p lychee > lychee-db-backup-$
 tar czf lychee-uploads-backup-$(date +%Y%m%d).tar.gz /opt/lychee/uploads
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -345,5 +345,5 @@ Yes. Use `ghcr.io/lycheeorg/lychee:v7.3.3-legacy` for the nginx+PHP-FPM variant.
 - [Best Self-Hosted Photo Management](/best/photo-management)
 - [Self-Hosted Google Photos Alternatives](/replace/google-photos)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

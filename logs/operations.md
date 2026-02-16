@@ -1,5 +1,70 @@
 # Operations Activity Log
 
+## 2026-02-16 09:10 UTC — vpn-filesync-writer iteration
+
+### Articles Written (this iteration: 16 articles)
+
+**VPN & Remote Access Comparisons (5):**
+- compare: /compare/tailscale-vs-wireguard — "Tailscale vs WireGuard: Which VPN Should You Use?" — vpn-remote-access (NEW)
+- compare: /compare/headscale-vs-tailscale — "Headscale vs Tailscale: Self-Hosted Control Plane" — vpn-remote-access (NEW)
+- compare: /compare/wg-easy-vs-wireguard — "wg-easy vs WireGuard: GUI vs Command Line" — vpn-remote-access (NEW)
+- compare: /compare/zerotier-vs-tailscale — "ZeroTier vs Tailscale: Which Mesh VPN to Use?" — vpn-remote-access (NEW)
+- compare: /compare/netbird-vs-tailscale — "NetBird vs Tailscale: Self-Hosted Mesh VPN" — vpn-remote-access (NEW)
+
+**VPN & Remote Access Replace Guides (3):**
+- replace: /replace/nordvpn — "Self-Hosted Alternatives to NordVPN" — vpn-remote-access (NEW)
+- replace: /replace/teamviewer — "Self-Hosted Alternatives to TeamViewer" — vpn-remote-access (NEW)
+- replace: /replace/ngrok — "Self-Hosted Alternatives to ngrok" — vpn-remote-access (NEW)
+
+**File Sync & Storage Comparisons (4):**
+- compare: /compare/nextcloud-vs-syncthing — "Nextcloud vs Syncthing: Which File Sync to Use?" — file-sync-storage (NEW)
+- compare: /compare/nextcloud-vs-seafile — "Nextcloud vs Seafile: Which File Server Wins?" — file-sync-storage (NEW)
+- compare: /compare/seafile-vs-syncthing — "Seafile vs Syncthing: Server vs Peer-to-Peer" — file-sync-storage (NEW)
+- compare: /compare/nextcloud-vs-owncloud — "Nextcloud vs ownCloud: Which File Server to Use?" — file-sync-storage (NEW)
+
+**File Sync & Storage Replace Guides (4):**
+- replace: /replace/google-drive — "Self-Hosted Alternatives to Google Drive" — file-sync-storage (NEW)
+- replace: /replace/dropbox — "Self-Hosted Alternatives to Dropbox" — file-sync-storage (NEW)
+- replace: /replace/onedrive — "Self-Hosted Alternatives to OneDrive" — file-sync-storage (NEW)
+- replace: /replace/icloud-drive — "Self-Hosted Alternatives to iCloud Drive" — file-sync-storage (NEW)
+
+### Source Verification
+- Tailscale: v1.94.2 confirmed via changelog (Feb 12, 2026)
+- WireGuard: wireguard-tools 1.0.20250521, kernel module in Linux 5.6+
+- Tailscale pricing: Free (3 users/100 devices), Personal Plus $5/mo, Starter $6/user/mo, Premium $18/user/mo
+- NetBird: v0.65.1 (Feb 14, 2026), 5 Docker services + OIDC required
+- ZeroTier: v1.16.0 controller licensing changed to commercial source-available
+- Firezone: 1.x is SaaS-only, 0.7.x is EOL — CANNOT write standard self-hosting guide
+
+### Research Findings (Critical)
+- **Firezone is NOT self-hostable in production.** 1.x is SaaS-first, 0.7.x is EOL. Skipped from content plan. Logged to learnings/apps.md.
+- **MinIO is ARCHIVED on GitHub.** Skipped from content plan (was in file-sync-storage scope). Alternatives: Garage, SeaweedFS.
+- **ZeroTier 1.16.0 controller license change.** Self-hosted controller now requires ZTNET or building from source with ZT_NONFREE=1. ztncui-aio is archived.
+
+### Learnings Recorded
+- Firezone self-hosting status (learnings/apps.md)
+- NetBird v0.65.1 Docker setup details (learnings/apps.md)
+- ZeroTier 1.16.0 licensing changes (learnings/apps.md)
+
+### Freshness Updates
+- None this iteration
+
+### Issues
+- Firezone guide cannot be written as planned — self-hosting not supported in production. Replaced with note in learnings.
+- MinIO guide cannot be written — project archived.
+
+### Topic Map Progress
+- VPN & Remote Access: 13/18 articles complete (5 app guides + 5 comparisons + 3 replace guides done; need ZeroTier app, NetBird app, best/vpn roundup, Firezone comparison dropped)
+- File Sync & Storage: 12/16 articles complete (4 app guides + 4 comparisons + 4 replace guides done; need ownCloud app, best/file-sync roundup)
+- Total new articles this iteration: 16
+
+### Next Iteration
+- Write apps/zerotier (with ZTNET as self-hosted controller)
+- Write apps/netbird (complex setup with OIDC)
+- Write apps/owncloud (oCIS version)
+- Write best/vpn roundup
+- Write best/file-sync roundup
+
 ## 2026-02-16 09:05 UTC — proxy-docker-writer iteration
 
 ### Articles Written (this iteration: 14 articles)

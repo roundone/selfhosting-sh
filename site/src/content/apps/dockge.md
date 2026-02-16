@@ -230,7 +230,7 @@ Yes. Dockge is fully open source under the MIT license.
 
 ### Should I use Dockge or Portainer?
 
-Use Dockge if you work exclusively with Docker Compose and want a simple, focused tool. Use [Portainer](/apps/portainer) if you need to manage individual containers, Docker Swarm, Kubernetes, or need a more comprehensive management interface. See our [Dockge vs Portainer comparison](/compare/dockge-vs-portainer).
+Use Dockge if you work exclusively with Docker Compose and want a simple, focused tool. Use [Portainer](/apps/portainer) if you need to manage individual containers, Docker Swarm, Kubernetes, or need a more comprehensive management interface. See our [Dockge vs Portainer comparison](/compare/portainer-vs-dockge).
 
 ### Can I run Dockge on a Raspberry Pi?
 
@@ -248,7 +248,7 @@ Dockge is the best Docker Compose management UI for self-hosters who want simpli
 
 - [How to Self-Host Portainer](/apps/portainer)
 - [Best Self-Hosted Docker Management](/best/docker-management)
-- [Dockge vs Portainer](/compare/dockge-vs-portainer)
+- [Dockge vs Portainer](/compare/portainer-vs-dockge)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Volumes and Storage](/foundations/docker-volumes)
 - [Docker Networking](/foundations/docker-networking)

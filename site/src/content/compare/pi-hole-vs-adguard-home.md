@@ -147,5 +147,5 @@ There's no official migration tool, but your blocklist URLs can be copied over m
 - [Best Self-Hosted Ad Blockers](/best/ad-blocking)
 - [Self-Hosted DNS Alternative](/replace/google-dns)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [DNS Basics](/foundations/dns-basics)
+- [DNS Basics](/foundations/dns-explained)
 - [Docker Networking](/foundations/docker-networking)

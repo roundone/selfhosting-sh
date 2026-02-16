@@ -132,7 +132,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -149,7 +149,7 @@ docker compose exec trilium cp /home/node/trilium-data/document.db /home/node/tr
 
 Or copy from the host volume. Since it's SQLite, you can also use Trilium's built-in export (Menu → Export) for portable formats.
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -194,5 +194,5 @@ The UI is functional but not as polished as [Outline](/apps/outline) or commerci
 - [Replace Notion](/replace/notion)
 - [Replace Evernote](/replace/evernote)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)

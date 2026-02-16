@@ -23,6 +23,8 @@ affiliateDisclosure: false
 
 [Yacht](https://yacht.sh) is a lightweight Docker container management UI designed for self-hosters. It provides a clean web interface for deploying, managing, and monitoring containers, with built-in app templates that let you deploy popular self-hosted apps in a few clicks. Think of it as a simpler alternative to Portainer — fewer features, but faster to learn.
 
+> **Note:** Yacht has not been updated since January 2023. The project appears to be abandoned. Consider [Portainer](/apps/portainer) or [Dockge](/apps/dockge) as actively maintained alternatives.
+
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
@@ -41,7 +43,7 @@ mkdir -p ~/yacht && cd ~/yacht
 ```yaml
 services:
   yacht:
-    image: selfhostedpro/yacht:v0.0.8
+    image: selfhostedpro/yacht:latest
     container_name: yacht
     restart: unless-stopped
     ports:

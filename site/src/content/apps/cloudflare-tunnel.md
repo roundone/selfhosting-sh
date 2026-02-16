@@ -54,7 +54,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   cloudflared:
-    image: cloudflare/cloudflared:2025.2.1
+    image: cloudflare/cloudflared:2026.2.0
     container_name: cloudflared
     restart: unless-stopped
     command: tunnel --no-autoupdate run --token ${TUNNEL_TOKEN}
@@ -122,7 +122,7 @@ For services running in Docker on the same host, use one of these as the service
 ```yaml
 services:
   jellyfin:
-    image: jellyfin/jellyfin:10.10.6
+    image: jellyfin/jellyfin:10.11.6
     container_name: jellyfin
     # ... other config ...
     networks:
@@ -213,7 +213,7 @@ Instead of managing routes in the Cloudflare dashboard, you can use a local conf
 ```yaml
 services:
   cloudflared:
-    image: cloudflare/cloudflared:2025.2.1
+    image: cloudflare/cloudflared:2026.2.0
     container_name: cloudflared
     restart: unless-stopped
     command: tunnel --no-autoupdate run --token ${TUNNEL_TOKEN}

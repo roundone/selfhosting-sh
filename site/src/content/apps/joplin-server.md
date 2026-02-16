@@ -178,7 +178,7 @@ Set up a reverse proxy to access Joplin Server over HTTPS. Point your proxy to p
 
 Ensure the `APP_BASE_URL` matches the external URL exactly.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -191,7 +191,7 @@ Restore: `cat joplin_backup.sql | docker compose exec -T postgres psql -U joplin
 
 Note: If you use Joplin's E2EE, the database backup contains encrypted data. You need the master password to decrypt after restore.
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -242,4 +242,4 @@ The main limitation is that Joplin Server is primarily a sync backend — the we
 - [Replace OneNote](/replace/onenote)
 - [Replace Notion](/replace/notion)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

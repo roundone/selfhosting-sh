@@ -178,7 +178,7 @@ environment:
 
 Set up a reverse proxy pointing to port 3010. AFFiNE uses WebSocket connections for real-time collaboration, so ensure WebSocket passthrough is enabled.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -188,7 +188,7 @@ Critical data to back up:
 - **Config volume:** `affine-config` contains server configuration
 - **Environment file:** Your `.env` with credentials
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-strategy)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
 
 ## Troubleshooting
 
@@ -235,5 +235,5 @@ Choose AFFiNE if whiteboards are essential to your workflow. Choose [AppFlowy](/
 - [How to Self-Host BookStack](/apps/bookstack)
 - [Replace Notion](/replace/notion)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Backup Strategy](/foundations/backup-3-2-1-rule)
