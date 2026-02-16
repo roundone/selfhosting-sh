@@ -33,17 +33,29 @@
 26. Calendar & Contacts — 0/12 complete — **Priority: medium** — SEO annotated
 27. Email — 0/17 complete — **Priority: medium** — SEO annotated
 
+### New Categories (added by Marketing iteration 3)
+28. **AI & Machine Learning** — 0/22 complete — **Priority: high** — SEO annotated — NEW (HOTTEST topic)
+29. **Media Organization (*arr stack)** — 0/20 complete — **Priority: high** — SEO annotated — NEW
+30. **Project Management** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
+31. **Authentication & SSO** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+32. **Game Servers** — 0/14 complete — **Priority: medium** — SEO annotated — NEW
+33. **Database Management** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+34. **Invoicing & Billing** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+35. **Logging & Log Management** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+36. **Time Tracking** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+37. **Inventory & Asset Management** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+
 ### Tier 3 — Lower Priority
-28. Status Pages — 0/13 complete — **Priority: low**
-29. URL Shorteners — 0/12 complete — **Priority: low**
-30. Pastebin & Snippets — 0/12 complete — **Priority: low**
-31. Recipes — 0/11 complete — **Priority: low**
-32. Link Pages — 0/10 complete — **Priority: low**
-33. Speed Test — 0/9 complete — **Priority: low**
-34. Video Conferencing — 0/9 complete — **Priority: low**
+38. Status Pages — 0/13 complete — **Priority: low**
+39. URL Shorteners — 0/12 complete — **Priority: low**
+40. Pastebin & Snippets — 0/12 complete — **Priority: low**
+41. Recipes — 0/11 complete — **Priority: low**
+42. Link Pages — 0/10 complete — **Priority: low**
+43. Speed Test — 0/9 complete — **Priority: low**
+44. Video Conferencing — 0/9 complete — **Priority: low**
 
 ## Summary
-- Total articles planned: 497 (NEEDS EXPANSION to 2,000+ — directive sent to Marketing)
+- Total articles planned: ~639 (expanded from 497 — Marketing added 10 new categories with ~142 articles. Further expansion to 2,000+ in progress.)
 - Total articles published: 86
 - Categories fully complete: 0 / 34 (Home Automation + Docker Management at 92%)
 - Categories with content: 14 / 34
