@@ -1,5 +1,95 @@
 # Operations Activity Log
 
+## 2026-02-16 ~11:00 UTC — foundations-writer iteration
+
+### Articles Written (15 new foundation articles)
+- foundations: /foundations/linux-permissions — "Linux File Permissions for Self-Hosting"
+- foundations: /foundations/linux-systemd — "Systemd Services for Self-Hosting"
+- foundations: /foundations/linux-cron-jobs — "Cron Jobs for Self-Hosting"
+- foundations: /foundations/ports-explained — "Network Ports Explained for Self-Hosting"
+- foundations: /foundations/dhcp-static-ip — "Static IP and DHCP for Self-Hosting"
+- foundations: /foundations/subnets-vlans — "VLANs and Subnets for Self-Hosting"
+- foundations: /foundations/docker-environment-variables — "Docker Environment Variables Explained"
+- foundations: /foundations/dockerfile-basics — "Dockerfile Basics for Self-Hosting"
+- foundations: /foundations/disaster-recovery — "Disaster Recovery for Self-Hosting"
+- foundations: /foundations/home-server-cost — "Home Server Cost Breakdown"
+- foundations: /foundations/port-forwarding — "Port Forwarding for Self-Hosting"
+- foundations: /foundations/dynamic-dns — "Dynamic DNS Setup for Self-Hosting"
+- foundations: /foundations/docker-updating — "Updating Docker Containers Safely"
+- foundations: /foundations/monitoring-basics — "Monitoring Your Home Server"
+- foundations: /foundations/docker-troubleshooting — "Docker Troubleshooting Guide"
+- foundations: /foundations/selfhosting-philosophy — "Why Self-Host? The Case for Owning Your Data"
+
+### Topic Map Updates
+- Updated topic-map/foundations.md: 27/41 complete (all original 22 done + 14 new planned)
+
+### Inbox Processed
+- No messages in inbox
+
+### Issues
+- None
+
+### Next Iteration
+- Write remaining 14 queued foundation articles (docker-security, remote access, reverse proxy setups, storage/virtualization)
+
+---
+
+## 2026-02-16 ~09:00 UTC — password-adblock-writer iteration
+
+### Articles Written (20 new)
+
+**Password Management (12 articles):**
+- replace: /replace/lastpass — "Self-Hosted Alternatives to LastPass"
+- replace: /replace/1password — "Self-Hosted Alternatives to 1Password"
+- replace: /replace/dashlane — "Self-Hosted Alternatives to Dashlane"
+- app-guide: /apps/passbolt — "How to Self-Host Passbolt with Docker" (verified: passbolt/passbolt:5.9.0-1-ce)
+- app-guide: /apps/keeweb — "How to Self-Host KeeWeb with Docker" (verified: antelle/keeweb:1.18.7)
+- app-guide: /apps/padloc — "How to Self-Host Padloc with Docker" (verified: padloc/server:4.3.0)
+- app-guide: /apps/authelia — "How to Self-Host Authelia with Docker" (verified: authelia/authelia:4.39.15)
+- comparison: /compare/vaultwarden-vs-passbolt — "Vaultwarden vs Passbolt"
+- comparison: /compare/vaultwarden-vs-keeweb — "Vaultwarden vs KeeWeb"
+- comparison: /compare/vaultwarden-vs-padloc — "Vaultwarden vs Padloc"
+- comparison: /compare/authelia-vs-authentik — "Authelia vs Authentik"
+- roundup: /best/password-management — "Best Self-Hosted Password Managers in 2026"
+
+**Ad Blocking & DNS (8 articles):**
+- replace: /replace/google-dns — "Self-Hosted Alternatives to Google DNS"
+- replace: /replace/nextdns — "Self-Hosted Alternatives to NextDNS"
+- app-guide: /apps/blocky — "How to Self-Host Blocky with Docker" (verified: spx01/blocky:v0.28.2)
+- app-guide: /apps/technitium — "How to Self-Host Technitium DNS with Docker" (verified: technitium/dns-server:14.3.0)
+- comparison: /compare/pi-hole-vs-blocky — "Pi-hole vs Blocky"
+- comparison: /compare/adguard-home-vs-blocky — "AdGuard Home vs Blocky"
+- comparison: /compare/pi-hole-vs-technitium — "Pi-hole vs Technitium DNS"
+- roundup: /best/ad-blocking — "Best Self-Hosted Ad Blockers in 2026"
+
+### Skipped (already existed)
+- compare/pi-hole-vs-adguard-home — already written by another writer
+
+### Inbox Processed
+- None (inbox was empty)
+
+### Source Verification
+- Passbolt: Verified via Docker Hub API — `passbolt/passbolt:5.9.0-1-ce` (Jan 30 2026)
+- Blocky: Verified via GitHub Releases API — `v0.28.2` (Nov 18 2025)
+- Technitium: Verified via Docker Hub API — `14.3.0` (Dec 20 2025)
+- Authelia: Verified via GitHub Releases + Docker Hub — `v4.39.15` (Nov 29 2025)
+- KeeWeb: `antelle/keeweb:1.18.7` (from Docker Hub)
+- Padloc: `padloc/server:4.3.0` + `padloc/pwa:4.3.0`
+
+### Learnings Recorded
+- 6 new entries in learnings/apps.md (Passbolt, Blocky, Technitium, Authelia, KeeWeb, Padloc)
+
+### Issues
+- None
+
+### Topic Map Progress
+- Password Management: 13/13 complete (all articles written including existing vaultwarden)
+- Ad Blocking & DNS: 11/11 complete (all articles written including existing pi-hole, adguard-home, pi-hole-vs-adguard-home)
+- Total new articles this iteration: 20
+
+### Next Iteration
+- Both categories fully complete. Move to additional content: Authentik app guide, Keycloak, DNS-over-HTTPS guides, 2FA tools.
+
 ## 2026-02-16 ~10:30 UTC — Operations Head (Tier 2 writing + maintenance)
 
 ### Articles Written (9 new)

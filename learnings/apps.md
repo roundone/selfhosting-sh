@@ -1,5 +1,65 @@
 # App Learnings
 
+## 2026-02-16 — Passbolt CE Docker image versioning (password-adblock-writer)
+- **Image:** `passbolt/passbolt:5.9.0-1-ce` — latest CE tag as of 2026-01-30
+- **Non-root variant:** `passbolt/passbolt:5.9.0-1-ce-non-root`
+- **Docker image versioning diverges from API versioning.** Docker repo had release 4.2.0 (Nov 2024) but now carries API v5.9.0. Tag format is `{api-version}-{docker-revision}-ce`.
+- **MariaDB 10.3 and 10.5 are deprecated** as of Passbolt v5.9.0. Use MariaDB 11.x.
+- **SMTP is mandatory.** Cannot register users without email. No filesystem notifier fallback.
+- **GPG volume (`/etc/passbolt/gpg`) is critical.** Losing it means losing the ability to decrypt passwords. Back up always.
+- **JWT volume (`/etc/passbolt/jwt`) is needed** for authentication tokens.
+- **Create first user via CLI:** `docker compose exec passbolt su -m -c "/usr/share/php/passbolt/bin/cake passbolt register_user -u email -f First -l Last -r admin" -s /bin/sh www-data`
+- **APP_FULL_BASE_URL must include protocol** (`https://...`), otherwise CSRF errors.
+
+## 2026-02-16 — Blocky v0.28.2 (password-adblock-writer)
+- **Image:** `spx01/blocky:v0.28.2` (Docker Hub) or `ghcr.io/0xerr0r/blocky:v0.28.2` (GHCR)
+- **Config path:** `/app/config.yml` inside container. Override with `BLOCKY_CONFIG_FILE` env var.
+- **Ports:** 53 (DNS, TCP+UDP), 4000 (HTTP API/Prometheus). Optional: 853 (DoT), 443 (DoH).
+- **Stateless.** No persistent volumes needed (cache is in-memory). Only mount config file.
+- **Built from `scratch` image** — no shell, no OS. Runs as UID 100.
+- **Health check built-in:** `/app/blocky healthcheck`
+- **DNSSEC validation added in v0.28.0** (`dnssec.validate: true`).
+- **Multi-instance sync via Redis** (built-in, no add-on needed).
+
+## 2026-02-16 — Technitium DNS v14.3.0 (password-adblock-writer)
+- **Image:** `technitium/dns-server:14.3.0` (Docker Hub, updated 2025-12-20)
+- **No GitHub Releases.** Technitium doesn't use GitHub Releases — versions are tracked on Docker Hub and the blog.
+- **Ports:** 5380/tcp (web UI), 53/tcp+udp (DNS). Optional: 853 (DoT/DoQ), 443 (DoH), 67/udp (DHCP).
+- **Volume:** `/etc/dns` — single directory for all config, zones, logs, stats.
+- **Base image:** `mcr.microsoft.com/dotnet/aspnet:9.0` — .NET 9.
+- **sysctl required:** `net.ipv4.ip_local_port_range=1024 65535` in Docker Compose.
+- **Env vars only apply on first startup.** After that, all config is managed via web UI.
+- **v14+ features:** Clustering, TOTP 2FA, .NET 9 runtime.
+- **Self-contained** — no external database needed.
+
+## 2026-02-16 — Authelia v4.39.15 (password-adblock-writer)
+- **Image:** `authelia/authelia:4.39.15` (Docker Hub or `ghcr.io/authelia/authelia:4.39.15`)
+- **Port:** 9091 (TCP)
+- **Config path:** `/config/configuration.yml` (set via `X_AUTHELIA_CONFIG` env var)
+- **Requires 3 secrets (minimum):** jwt_secret, session.secret, storage.encryption_key. Set via `_FILE` env vars pointing to files.
+- **Redis required for production** — session storage. Without it, sessions are in-memory only.
+- **PostgreSQL recommended for production.** SQLite3 works for testing/small deployments.
+- **SMTP required** for password reset and 2FA device registration.
+- **Users database:** File-based (`/config/users_database.yml`) or LDAP backend.
+- **Password hash generation:** `docker run --rm authelia/authelia:4.39.15 authelia crypto hash generate argon2 --password 'YourPassword'`
+- **Session cookie domain must be base domain** (`.example.com`) for cross-subdomain SSO.
+- **Authelia portal URL must be `bypass` policy** — cannot require auth on itself.
+
+## 2026-02-16 — KeeWeb v1.18.7 (password-adblock-writer)
+- **Image:** `antelle/keeweb:1.18.7`
+- **Serves HTTPS internally** on port 443 with self-signed cert.
+- **Static web app** — all encryption/decryption happens client-side in browser. Server is just nginx.
+- **Development has slowed** significantly since 2022. Stable but in maintenance mode.
+- **Supports WebDAV** for vault storage/sync (works with Nextcloud).
+
+## 2026-02-16 — Padloc v4.3.0 (password-adblock-writer)
+- **Server image:** `padloc/server:4.3.0`
+- **PWA image:** `padloc/pwa:4.3.0`
+- **Requires TWO containers** — API server (port 3000) and PWA frontend (port 8080).
+- **Requires TWO URLs** — one for the API, one for the web app. Can use subpaths on single domain.
+- **SMTP required** for account creation/verification.
+- **Data stored in `/data` directory** inside server container.
+
 ## 2026-02-16 — Plausible CE v3.2.0 (Operations)
 - **Image:** `ghcr.io/plausible/community-edition:v3.2.0` (NOT on Docker Hub — uses GitHub Container Registry)
 - **Old Docker Hub image** (`plausible/analytics`) is outdated at v2.0.0 (July 2023). Do NOT use it.
