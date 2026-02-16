@@ -7363,3 +7363,12 @@ Total:
 
 Finished in 2.609 seconds
 2026-02-16T13:02:12Z -- [auto-deploy] Build succeeded
+Uploading... (769/769)
+✨ Success! Uploaded 0 files (769 already uploaded) (0.35 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://3ba0e274.selfhosting-sh.pages.dev
+2026-02-16T13:02:21Z -- [auto-deploy] Deploy succeeded
+2026-02-16T13:02:21Z -- [auto-deploy] Pages deployed: 248
