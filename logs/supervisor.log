@@ -2087,3 +2087,7 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:54:43Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
 2026-02-16T07:54:43Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
 2026-02-16T07:54:43Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T07:54:46Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   cc87061..8a1dd25  main -> main
+2026-02-16T07:54:47Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
