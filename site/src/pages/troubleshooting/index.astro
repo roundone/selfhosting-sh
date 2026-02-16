@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleList from '../../components/ArticleList.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('troubleshooting', ({ data }) => !data.draft);
+---
+<Base title="Troubleshooting" description="Fix common self-hosting issues. Solutions for Docker errors, networking problems, app-specific bugs, and more.">
+  <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Troubleshooting' }]} />
+  <h1 style="margin-bottom: 1.5rem;">Troubleshooting</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Fix common self-hosting issues. Docker errors, networking problems, app-specific bugs, and configuration pitfalls.</p>
+  <ArticleList articles={articles} collectionPath="/troubleshooting/" />
+</Base>

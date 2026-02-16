@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleList from '../../components/ArticleList.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('compare', ({ data }) => !data.draft);
+---
+<Base title="Comparisons" description="Head-to-head comparisons of self-hosted apps. Find the best option for your needs with detailed feature breakdowns.">
+  <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Comparisons' }]} />
+  <h1 style="margin-bottom: 1.5rem;">Comparisons</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Head-to-head comparisons of self-hosted apps. We test both options and give you a clear recommendation.</p>
+  <ArticleList articles={articles} collectionPath="/compare/" />
+</Base>

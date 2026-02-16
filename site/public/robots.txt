@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://selfhosting.sh/sitemap-index.xml

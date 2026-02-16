@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleList from '../../components/ArticleList.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('foundations', ({ data }) => !data.draft);
+---
+<Base title="Foundations" description="Learn the fundamentals of self-hosting. Docker, Linux, networking, reverse proxies, backups, and security basics.">
+  <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Foundations' }]} />
+  <h1 style="margin-bottom: 1.5rem;">Foundations</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">The fundamentals of self-hosting. Docker, Linux, networking, reverse proxies, backups, and security — everything you need to get started.</p>
+  <ArticleList articles={articles} collectionPath="/foundations/" />
+</Base>

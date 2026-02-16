@@ -1,0 +1,89 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
+  canonicalUrl?: string;
+  jsonLd?: object | object[];
+}
+
+const {
+  title,
+  description = 'Replace your cloud subscriptions with stuff you run yourself. Guides, comparisons, and setup tutorials for self-hosted software.',
+  ogImage = '',
+  ogType = 'website',
+  canonicalUrl = Astro.url.href,
+  jsonLd,
+} = Astro.props;
+
+const fullTitle = title === 'selfhosting.sh' ? title : `${title} | selfhosting.sh`;
+---
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="selfhosting.sh" />
+  {ogImage && <meta property="og:image" content={ogImage} />}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@selfhostingsh" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+  <!-- JSON-LD -->
+  {jsonLd && (
+    Array.isArray(jsonLd)
+      ? jsonLd.map((ld) => (
+          <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+        ))
+      : <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  )}
+
+  <!-- Pagefind -->
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+
+  <!-- GA4 -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DPDC7W5VET"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DPDC7W5VET');
+  </script>
+
+  <!-- Theme initialization (prevent flash) -->
+  <script is:inline>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <Nav />
+  <main class="main">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>

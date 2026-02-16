@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleList from '../../components/ArticleList.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('replace', ({ data }) => !data.draft);
+---
+<Base title="Replace Guides" description="Drop your cloud subscriptions. Guides to replacing paid services like Google Photos, Dropbox, and Netflix with self-hosted alternatives.">
+  <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Replace' }]} />
+  <h1 style="margin-bottom: 1.5rem;">Replace Guides</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Drop your cloud subscriptions. Step-by-step guides to replacing paid services with self-hosted alternatives.</p>
+  <ArticleList articles={articles} collectionPath="/replace/" />
+</Base>

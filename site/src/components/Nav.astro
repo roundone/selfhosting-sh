@@ -1,0 +1,49 @@
+---
+const navLinks = [
+  { href: '/apps/', label: 'Apps' },
+  { href: '/compare/', label: 'Compare' },
+  { href: '/best/', label: 'Best Of' },
+  { href: '/replace/', label: 'Replace' },
+  { href: '/foundations/', label: 'Foundations' },
+];
+---
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><span class="prompt">$</span> selfhosting.sh</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      {navLinks.map(({ href, label }) => (
+        <li><a href={href}>{label}</a></li>
+      ))}
+    </ul>
+    <div class="nav-search">
+      <div id="search"></div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">&#9790;</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script is:inline>
+  // Mobile nav toggle
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+
+  // Theme toggle
+  document.getElementById('theme-toggle').addEventListener('click', function() {
+    var html = document.documentElement;
+    var current = html.getAttribute('data-theme');
+    var next = current === 'light' ? 'dark' : 'light';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    document.getElementById('theme-icon').innerHTML = next === 'light' ? '&#9728;' : '&#9790;';
+  });
+
+  // Set correct icon on load
+  (function() {
+    var theme = localStorage.getItem('theme') || 'dark';
+    document.getElementById('theme-icon').innerHTML = theme === 'light' ? '&#9728;' : '&#9790;';
+  })();
+</script>
