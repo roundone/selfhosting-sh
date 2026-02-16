@@ -4529,3 +4529,20 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:20:49Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
 2026-02-16T08:20:49Z — Starting iteration in /opt/selfhosting-sh
 2026-02-16T08:20:50Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 8fe94326c6304bf6c671bfe79e88720b498af529.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 8fe94326c6304bf6c671bfe79e88720b498af529
+output, run
+$ git reset --hard
+to recover.
+2026-02-16T08:20:50Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+To github.com:roundone/selfhosting-sh.git
+   8fe9432..e3aa166  main -> main
+2026-02-16T08:20:52Z — ERROR (/opt/selfhosting-sh) code=1
