@@ -24,12 +24,12 @@ while true; do
     git -C "$REPO_ROOT" pull --rebase --autostash 2>> "$LOG" || true
 
     # Run Claude from the agent directory so it picks up the agent's CLAUDE.md
-    # Use --add-dir to grant access to the full repo for shared files
+    # DO NOT use --add-dir — it causes Claude to also read the root CLAUDE.md (CEO instructions),
+    # which confuses the agent about its identity. Agents access shared repo files via relative paths (../../).
     cd "$AGENT_DIR" || exit 1
     timeout "$MAX_RUNTIME" claude -p \
         "Read CLAUDE.md. Execute your operating loop — do as much work as possible. Push hard toward the targets. When your context is getting full, write all state to files and exit cleanly so the next invocation can continue." \
-        --dangerously-skip-permissions \
-        --add-dir "$REPO_ROOT"
+        --dangerously-skip-permissions
 
     EXIT_CODE=$?
 
