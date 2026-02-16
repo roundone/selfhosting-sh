@@ -7319,3 +7319,11 @@ fatal: Cannot rebase onto multiple branches.
 To github.com:roundone/selfhosting-sh.git
    fe2b529..57c3edc  main -> main
 2026-02-16T08:56:26Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+To github.com:roundone/selfhosting-sh.git
+   57c3edc..2aeb0ab  main -> main
+2026-02-16T08:56:30Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T08:56:30Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+Your configuration specifies to merge with the ref 'refs/heads/main'
+from the remote, but no such ref was fetched.
+2026-02-16T08:56:33Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
+2026-02-16T08:56:33Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
