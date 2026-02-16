@@ -1,6 +1,7 @@
 import satori from 'satori';
 import sharp from 'sharp';
-import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { readFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const fontsDir = join(process.cwd(), 'src/assets/fonts');
@@ -19,7 +20,21 @@ const categoryLabels: Record<string, string> = {
   troubleshooting: 'Troubleshooting',
 };
 
+const CACHE_DIR = join(process.cwd(), 'node_modules/.og-cache');
+
+function getCacheKey(title: string, collection: string): string {
+  return createHash('sha256').update(`${title}::${collection}`).digest('hex');
+}
+
 export async function generateOgImage(title: string, category: string, collection: string): Promise<Buffer> {
+  // Check cache first
+  if (!existsSync(CACHE_DIR)) mkdirSync(CACHE_DIR, { recursive: true });
+  const cacheKey = getCacheKey(title, collection);
+  const cachePath = join(CACHE_DIR, `${cacheKey}.png`);
+  if (existsSync(cachePath)) {
+    return readFileSync(cachePath);
+  }
+
   const categoryLabel = categoryLabels[collection] || collection;
 
   const svg = await satori(
@@ -153,5 +168,9 @@ export async function generateOgImage(title: string, category: string, collectio
   );
 
   const png = await sharp(Buffer.from(svg)).png({ quality: 80 }).toBuffer();
+
+  // Write to cache for future builds
+  writeFileSync(cachePath, png);
+
   return png;
 }
