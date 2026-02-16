@@ -7377,3 +7377,130 @@ Uploading... (769/769)
 > selfhosting-sh@1.0.0 build
 > astro build && npx pagefind --site dist
 
+13:32:23 [content] Syncing content
+13:32:23 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+13:32:23 [content] Synced content
+13:32:23 [types] Generated 1.08s
+13:32:23 [build] output: "static"
+13:32:23 [build] mode: "static"
+13:32:23 [build] directory: /opt/selfhosting-sh/site/dist/
+13:32:23 [build] Collecting build info...
+13:32:23 [build] ✓ Completed in 1.11s.
+13:32:23 [build] Building static entrypoints...
+13:32:27 [vite] ✓ built in 3.32s
+13:32:27 [build] ✓ Completed in 3.41s.
+
+ generating static routes 
+13:32:27 ▶ src/pages/404.astro
+13:32:27   └─ /404.html (+25ms) 
+13:32:27 ▶ src/pages/about.astro
+13:32:27   └─ /about/index.html (+4ms) 
+13:32:27 ▶ src/pages/apps/index.astro
+13:32:27   └─ /apps/index.html (+172ms) 
+13:32:27 ▶ src/pages/apps/[...slug].astro
+13:32:27   ├─ /apps/portainer/index.html (+42ms) 
+13:32:27   ├─ /apps/adguard-home/index.html (+26ms) 
+13:32:27   ├─ /apps/jellyfin/index.html (+36ms) 
+13:32:27   ├─ /apps/home-assistant/index.html (+19ms) 
+13:32:27   ├─ /apps/pi-hole/index.html (+17ms) 
+13:32:27   ├─ /apps/uptime-kuma/index.html (+15ms) 
+13:32:27   ├─ /apps/vaultwarden/index.html (+16ms) 
+13:32:27   ├─ /apps/immich/index.html (+14ms) 
+13:32:27   ├─ /apps/nextcloud/index.html (+16ms) 
+13:32:27   ├─ /apps/nginx-proxy-manager/index.html (+14ms) 
+13:32:27   ├─ /apps/plex/index.html (+13ms) 
+13:32:27   ├─ /apps/bookstack/index.html (+8ms) 
+13:32:27   ├─ /apps/dockge/index.html (+12ms) 
+13:32:27   ├─ /apps/photoprism/index.html (+11ms) 
+13:32:27   ├─ /apps/syncthing/index.html (+11ms) 
+13:32:27   ├─ /apps/diun/index.html (+12ms) 
+13:32:27   ├─ /apps/caddy/index.html (+14ms) 
+13:32:27   ├─ /apps/domoticz/index.html (+13ms) 
+13:32:27   ├─ /apps/openhab/index.html (+13ms) 
+13:32:27   ├─ /apps/traefik/index.html (+10ms) 
+13:32:27   ├─ /apps/watchtower/index.html (+9ms) 
+13:32:27   ├─ /apps/yacht/index.html (+11ms) 
+13:32:28   ├─ /apps/gladys-assistant/index.html (+6ms) 
+13:32:28   ├─ /apps/cosmos-cloud/index.html (+4ms) 
+13:32:28   ├─ /apps/cloudflare-tunnel/index.html (+6ms) 
+13:32:28   ├─ /apps/filebrowser/index.html (+4ms) 
+13:32:28   ├─ /apps/headscale/index.html (+6ms) 
+13:32:28   ├─ /apps/iobroker/index.html (+8ms) 
+13:32:28   ├─ /apps/lazydocker/index.html (+8ms) 
+13:32:28   ├─ /apps/librephotos/index.html (+7ms) 
+13:32:28   ├─ /apps/navidrome/index.html (+9ms) 
+13:32:28   ├─ /apps/seafile/index.html (+5ms) 
+13:32:28   ├─ /apps/tailscale/index.html (+12ms) 
+13:32:28   ├─ /apps/wg-easy/index.html (+8ms) 
+13:32:28   ├─ /apps/wireguard/index.html (+13ms) 
+13:32:28   ├─ /apps/emby/index.html (+12ms) 
+13:32:28   ├─ /apps/grafana/index.html (+9ms) 
+13:32:28   ├─ /apps/passbolt/index.html (+8ms) 
+13:32:28   ├─ /apps/plausible/index.html (+11ms) 
+13:32:28   ├─ /apps/umami/index.html (+6ms) 
+13:32:28   ├─ /apps/audiobookshelf/index.html (+11ms) 
+13:32:28   ├─ /apps/blocky/index.html (+5ms) 
+13:32:28   ├─ /apps/haproxy/index.html (+7ms) 
+13:32:28   ├─ /apps/lychee/index.html (+8ms) 
+13:32:28   ├─ /apps/nginx/index.html (+10ms) 
+13:32:28   ├─ /apps/outline/index.html (+5ms) 
+13:32:28   ├─ /apps/piwigo/index.html (+6ms) 
+13:32:28   ├─ /apps/prometheus/index.html (+4ms) 
+13:32:28   ├─ /apps/restic/index.html (+9ms) 
+13:32:28   ├─ /apps/technitium/index.html (+4ms) 
+13:32:28   ├─ /apps/trilium/index.html (+5ms) 
+13:32:28   ├─ /apps/wiki-js/index.html (+4ms) 
+13:32:28   ├─ /apps/qbittorrent/index.html (+5ms) 
+13:32:28   ├─ /apps/borgbackup/index.html (+4ms) 
+13:32:28   ├─ /apps/joplin-server/index.html (+5ms) 
+13:32:28   ├─ /apps/obsidian-livesync/index.html (+4ms) 
+13:32:28   ├─ /apps/photoview/index.html (+5ms) 
+13:32:28   ├─ /apps/siyuan/index.html (+4ms) 
+13:32:28   ├─ /apps/appflowy/index.html (+7ms) 
+13:32:28   ├─ /apps/keeweb/index.html (+5ms) 
+13:32:28   ├─ /apps/stash/index.html (+5ms) 
+13:32:28   ├─ /apps/wordpress/index.html (+4ms) 
+13:32:28   ├─ /apps/affine/index.html (+6ms) 
+13:32:28   ├─ /apps/padloc/index.html (+5ms) 
+13:32:28   ├─ /apps/authelia/index.html (+7ms) 
+13:32:28   ├─ /apps/envoy/index.html (+4ms) 
+13:32:28   ├─ /apps/zoraxy/index.html (+5ms) 
+13:32:28   ├─ /apps/zerotier/index.html (+4ms) 
+13:32:28   ├─ /apps/netbird/index.html (+5ms) 
+13:32:28   ├─ /apps/owncloud/index.html (+4ms) 
+13:32:28   └─ /apps/authentik/index.html (+5ms) 
+13:32:28 ▶ src/pages/best/index.astro
+13:32:28   └─ /best/index.html (+2ms) 
+13:32:28 ▶ src/pages/best/[...slug].astro
+13:32:28   ├─ /best/home-automation/index.html (+4ms) 
+13:32:28   ├─ /best/reverse-proxy/index.html (+6ms) 
+13:32:28   ├─ /best/docker-management/index.html (+4ms) 
+13:32:28   ├─ /best/password-management/index.html (+5ms) 
+13:32:28   ├─ /best/ad-blocking/index.html (+4ms) 
+13:32:28   ├─ /best/note-taking/index.html (+5ms) 
+13:32:28   ├─ /best/file-sync/index.html (+4ms) 
+13:32:28   ├─ /best/media-servers/index.html (+7ms) 
+13:32:28   ├─ /best/photo-management/index.html (+4ms) 
+13:32:28   ├─ /best/vpn-remote-access/index.html (+10ms) 
+13:32:28   ├─ /best/vpn/index.html (+8ms) 
+13:32:28   ├─ /best/monitoring/index.html (+5ms) 
+13:32:28   └─ /best/backup/index.html (+4ms) 
+13:32:28 ▶ src/pages/compare/index.astro
+13:32:28   └─ /compare/index.html (+14ms) 
+13:32:28 ▶ src/pages/compare/[...slug].astro
+13:32:28   ├─ /compare/pi-hole-vs-adguard-home/index.html (+7ms) 
+13:32:28   ├─ /compare/jellyfin-vs-plex/index.html (+5ms) 
+13:32:28   ├─ /compare/portainer-vs-dockge/index.html (+5ms) 
+13:32:28   ├─ /compare/immich-vs-photoprism/index.html (+12ms) 
+13:32:28   ├─ /compare/nginx-proxy-manager-vs-traefik/index.html (+16ms) 
+13:32:28   ├─ /compare/home-assistant-vs-openhab/index.html (+9ms) 
+13:32:28   ├─ /compare/headscale-vs-tailscale/index.html (+11ms) 
+13:32:28   ├─ /compare/dockge-vs-yacht/index.html (+7ms) 
+13:32:28   ├─ /compare/immich-vs-librephotos/index.html (+12ms) 
+13:32:28   ├─ /compare/home-assistant-vs-gladys/index.html (+11ms) 
+13:32:28   ├─ /compare/nextcloud-vs-syncthing/index.html (+13ms) 
+13:32:28   ├─ /compare/home-assistant-vs-domoticz/index.html (+5ms) 
+13:32:28   ├─ /compare/nextcloud-vs-seafile/index.html (+10ms) 
+13:32:28   ├─ /compare/nginx-proxy-manager-vs-caddy/index.html (+9ms) 
+13:32:28   ├─ /compare/openhab-vs-domoticz/index.html (+12ms) 
+13:32:28   ├─ /compare/portainer-vs-cosmos/index.html
