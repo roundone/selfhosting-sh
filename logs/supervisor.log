@@ -6125,3 +6125,6 @@ From github.com:roundone/selfhosting-sh
    83f266c..3138796  main       -> origin/main
 To github.com:roundone/selfhosting-sh.git
    83f266c..3138796  main -> main
+To github.com:roundone/selfhosting-sh.git
+   3138796..0b741dc  main -> main
+2026-02-16T08:41:38Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
