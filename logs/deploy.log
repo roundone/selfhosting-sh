@@ -4514,3 +4514,6 @@ Uploading... (769/769)
 ✨ Uploading _headers
 ✨ Uploading _redirects
 🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://2e93cfb3.selfhosting-sh.pages.dev
+2026-02-16T10:30:39Z -- [auto-deploy] Deploy succeeded
+2026-02-16T10:30:39Z -- [auto-deploy] Pages deployed: 248
