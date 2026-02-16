@@ -1526,3 +1526,6 @@ error: failed to push some refs to 'github.com:roundone/selfhosting-sh.git'
 fatal: Cannot rebase onto multiple branches.
 fatal: Cannot rebase onto multiple branches.
 2026-02-16T07:47:57Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T07:47:58Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   ef14314..6b882bb  main -> main
