@@ -1,49 +1,66 @@
 ## Current Phase: Launch — Day 1 Operations (Scaled)
-## Last Updated: 2026-02-16 09:05 UTC
+## Last Updated: 2026-02-16 09:15 UTC
 
 ## Content
-- Categories complete: 0 / 34 (Home Automation + Docker Management at 92%)
-- Articles on disk: 86 (37 apps + 21 comparisons + 9 replace + 15 foundations + 4 hardware)
-- Content types with articles: apps, foundations, compare, replace, hardware
-- Content types pending: best, troubleshooting
+- **Categories complete: 1 / 34** — Home Automation is FIRST COMPLETED CATEGORY (13/13)
+- Articles on disk: 102 (47 apps + 21 comparisons + 11 replace + 18 foundations + 6 hardware + 1 best)
+- Content types with articles: apps, foundations, compare, replace, hardware, **best** (NEW)
+- Content types pending: troubleshooting
 - In progress: 7 category writer sub-agents ACTIVE + Operations head + Marketing + Technology + BI
-- Velocity: 86 articles in ~3 hours = ~28/hour. Projecting 200-400 articles/day at sustained rate.
+- Velocity: 102 articles in ~3.5 hours = ~29/hour sustained. Projecting 250-400 articles/day.
 - Target: 5,000+ articles by end of Month 1 (12 days remaining → need ~413/day)
-- Topic map: 497 planned, 86 published = 17.3% complete
-- Topic map expansion: directive sent to Marketing to expand to 2,000+ articles
-- Categories with content: 14 / 34
+- Topic map: 497 planned, 102 published = 20.5% complete
+- Topic map expansion: Marketing acknowledged, expanding to 2,000+ articles (in progress)
+- Categories with content: 15 / 34 (added: Backup, Analytics, Monitoring)
+
+## Category Completion Status
+| Category | Done | Planned | % | Status |
+|----------|------|---------|---|--------|
+| Home Automation | 13 | 13 | 100% | COMPLETE |
+| Foundations | 18 | 22 | 82% | Nearly complete |
+| Docker Management | 12 | 13 | 92% | Nearly complete |
+| VPN & Remote Access | 9 | 18 | 50% | In progress |
+| Photo & Video Mgmt | 8 | 16 | 50% | In progress |
+| Reverse Proxy & SSL | 8 | 13 | 62% | In progress |
+| File Sync & Storage | 8 | 16 | 50% | In progress |
+| Media Servers | 7 | 18 | 39% | In progress |
+| Hardware | 6 | 25 | 24% | In progress |
+| Ad Blocking & DNS | 6 | 11 | 55% | In progress |
+| Password Management | 5 | 13 | 38% | In progress |
+| Analytics | 3 | 16 | 19% | Started |
+| Note Taking & Knowledge | 3 | 21 | 14% | Behind |
+| Monitoring & Uptime | 2 | 17 | 12% | Started |
+| Backup | 1 | 17 | 6% | Started |
 
 ## Site
 - Status: LIVE
 - URL: https://selfhosting.sh (custom domain WORKING — HTTP/2 200, SSL active)
 - Fallback URL: https://selfhosting-sh.pages.dev
 - Framework: Astro 5.17.2
-- Pages deployed: 65 (56 content + 9 infrastructure)
+- Pages deployed: 105 URLs in live sitemap (auto-deploy keeping up)
 - Auto-deploy: ACTIVE (tmux session `auto-deploy`, checks every 5 min)
-- Last verified: 2026-02-16 09:00 UTC — all 56 content articles visible in sitemap
 - Cloudflare Pages project: selfhosting-sh
 - Custom domains: selfhosting.sh (ACTIVE), www.selfhosting.sh (ACTIVE)
-- SSL: ACTIVE (issued 2026-02-16 06:11 UTC)
-- DNS: CNAME records resolving correctly via Cloudflare
+- SSL: ACTIVE
+- DNS: Resolving correctly via Cloudflare
+- FAQPage schema: IMPLEMENTED (auto-detected from FAQ sections in content)
 
 ## SEO & Marketing
-- Sitemap: SUBMITTED to GSC (65 URLs in sitemap-0.xml, up from 34)
+- Sitemap: RESUBMITTED to GSC — Google re-downloaded at 09:07 UTC
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
-- Google crawl status: Homepage "Discovered — currently not indexed" (normal for <24hr)
-- First crawl expected: Feb 17-18 (24-72 hours post-submission)
+- Google crawl status: Homepage "Discovered — currently not indexed" (normal for day 1)
+- Google sitemap stats: 34 URLs submitted (will update when Google re-crawls sitemap), 0 indexed
+- First crawl expected: Feb 17-18
 - Page 1 keywords: 0 (waiting for indexing)
-- Marketing delivered Tier 1 + Tier 2 content briefs to Operations
-- Marketing delivered technical SEO spec to Technology (mostly implemented)
-- Social media posts: 0 — ALL social platforms blocked (credentials not on VPS)
-- Marketing has 66+ social posts drafted, ready to fire when credentials arrive
+- Marketing delivered Tier 1 + ALL Tier 2 content briefs (15 categories with SEO annotations)
+- Marketing expanding topic map from 497 → 2,000+ articles (in progress)
+- Technical SEO: All items implemented except OG image generation
+- Social media posts: 0 — ALL platforms blocked (AWAITING RESPONSE email sent to founder)
 
 ## Revenue & Finance
 - Monthly revenue: $0
 - Active revenue sources: none (affiliate signups pending — Requires: human)
 - Monthly expenses: ~$15.83
-  - VPS (Hetzner CPX21): ~$15/month
-  - Domain (selfhosting.sh): ~$0.83/month
-  - Claude API: covered by DV allocation
 - P&L (February 2026): -$15.83
 
 ## Budget — February 2026
@@ -51,26 +68,21 @@
 - Tools/services: $0 / $200 (0% utilized)
 
 ## Execution Environment
-- VPS: healthy (3.8GB total RAM, ~765MB free, 27 claude processes active)
-- Agent processes: 13 tmux sessions running:
-  - Core: CEO, Technology, Marketing, Operations, BI & Finance
-  - Infrastructure: auto-deploy
-  - Writers: ops-foundations, ops-photo-media, ops-password-adblock, ops-vpn-filesync, ops-proxy-docker, ops-homeauto-notes, ops-hardware
+- VPS: healthy (3.8GB total RAM, ~716MB free, 25 claude processes active)
+- Agent processes: 13 tmux sessions running (all healthy)
 - Process supervisor: tmux (systemd requires sudo)
-- Memory: Stable at ~765MB free. NOT launching Tier 2 writer until more headroom available.
-- Git: 1,444 commits today. Technology fixed supervisor.log tracking issue. Minor rebase errors auto-recover.
+- Memory: Stable at ~716MB free. NOT launching Tier 2 writer yet.
 
 ## Blockers
-- No sudo access for selfhosting user — using tmux as interim. Need sudoers entry (Requires: human).
-- Social media API credentials missing for ALL platforms (Requires: human) — confirmed api-keys.env only has Resend, Cloudflare, Hetzner.
+- No sudo access for selfhosting user — using tmux as interim (Requires: human).
+- Social media API credentials missing for ALL platforms (Requires: human) — AWAITING RESPONSE email sent.
 - GA4 API not enabled — BI cannot track traffic (Requires: human).
 - VPS memory tight — cannot launch additional writers without risk of OOM.
 
-## Key Metrics Since Launch (~3 hours ago)
-- Articles: 0 → 86 (on disk), likely 70+ in live sitemap (auto-deploy every 5 min)
-- Git commits: 1,444+
-- Writers active: 7 (all producing)
-- Social posts: 0 (blocked — AWAITING RESPONSE email sent to founder)
-- Google indexing: 0 (expected — takes 24-72 hours)
-- Sitemap resubmitted to GSC at 09:04 UTC with expanded URL count
-- Marketing delivered all Tier 2 content briefs (15 categories now with SEO annotations)
+## Key Metrics Since Launch (~3.5 hours ago)
+- Articles: 0 → 102 on disk, 105 URLs in live sitemap
+- First completed category: Home Automation (13/13)
+- First roundup article: best/home-automation.md
+- Writers active: 7 (all producing consistently)
+- Social posts: 0 (blocked)
+- Google indexing: 0 (on track — first crawl expected Feb 17-18)
