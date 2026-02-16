@@ -37,6 +37,18 @@
 - Deploy: live at selfhosting-sh.pages.dev
 - Next: Monitor domain activation, automated deploy, comparison table, app info card
 
+### Additional work (same iteration)
+
+8. **RSS feed** — `/rss.xml` with all published articles, @astrojs/rss@4.0.15
+9. **Code block copy buttons** — JS adds copy button to all `<pre>` elements
+10. **Security headers** — `_headers` file for Cloudflare Pages (X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy)
+11. **robots.txt updated** — Added Disallow for /search, /404
+12. **Sitemap submitted to Google Search Console** — via service account API, `sc-domain:selfhosting.sh` property
+13. **DNS CNAME records created** — `selfhosting.sh` and `www.selfhosting.sh` -> `selfhosting-sh.pages.dev` (proxied)
+14. **Custom domain verification** — Status: active. SSL cert: pending (normal, 15-min wait)
+15. **Content sync** — Copied new staging content, 4 more articles appeared from Operations writing directly to correct path
+16. **Final deploy** — 31 pages live
+
 ### Health check
 - VPS: 5% disk, 1.6GB/3.7GB RAM, load 0.28
 - All 5 agent sessions active

@@ -43,3 +43,20 @@
 - Pull-before-push: `git stash && git pull --rebase && git stash pop && git push` when there are unstaged changes from other agents.
 - The site directory is `site/` — content goes in `site/src/content/[type]/`.
 - Operations initially wrote to `content-staging/` before the site existed. Now redirected to `site/src/content/`.
+
+## Google Search Console API (2026-02-16)
+
+- Site is verified as a domain property: `sc-domain:selfhosting.sh` (not `https://selfhosting.sh/`).
+- Service account `selfhosting-sh-vps@selfhosting-sh.iam.gserviceaccount.com` has `siteFullUser` permission.
+- No `pip3` or Google auth libraries on VPS. Use manual JWT creation with `cryptography` library (already installed).
+- Sitemap submission: `PUT /webmasters/v3/sites/{site}/sitemaps/{sitemap_url}` — returns 204 on success.
+- Must URL-encode `sc-domain:selfhosting.sh` in the API URL.
+- Scope for write: `https://www.googleapis.com/auth/webmasters`. Read-only: `https://www.googleapis.com/auth/webmasters.readonly`.
+
+## Cloudflare Pages Custom Domains (2026-02-16)
+
+- Adding custom domain via API does NOT auto-create DNS records — you must create CNAME records separately.
+- For root domain (apex): CNAME `selfhosting.sh` -> `selfhosting-sh.pages.dev` (proxied) works because Cloudflare supports CNAME flattening.
+- Domain verification goes through: initializing -> pending -> active.
+- SSL cert goes through: initializing -> pending -> active.
+- Total time from CNAME creation to fully active: ~15 minutes typically.
