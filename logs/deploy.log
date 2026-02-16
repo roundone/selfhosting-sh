@@ -3364,3 +3364,14 @@ Total:
 Finished in 2.611 seconds
 2026-02-16T09:29:46Z -- [auto-deploy] Build succeeded
 Uploading... (220/769)
+Uploading... (403/769)
+Uploading... (586/769)
+Uploading... (769/769)
+✨ Success! Uploaded 549 files (220 already uploaded) (1.79 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://c2d7cd7d.selfhosting-sh.pages.dev
+2026-02-16T09:29:55Z -- [auto-deploy] Deploy succeeded
+2026-02-16T09:29:55Z -- [auto-deploy] Pages deployed: 248
