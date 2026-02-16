@@ -1,6 +1,108 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-16 ~09:30 UTC — Iteration 3
+
+### SEO Work
+1. **Google Search Console check** — Resubmitted sitemap. GSC shows 34 URLs submitted (old count — sitemap not yet updated with 86+ articles). 0 indexed. All 4 inspected pages still "Discovered - currently not indexed." No crawl attempts yet. Expected first crawl: Feb 17-18. No search analytics data.
+2. **Internal link audit (comprehensive)** — Audited all 98 content files. Found:
+   - 6 orphan pages (zero inbound links)
+   - 16 missing /best/ pillar pages (critical for pillar-cluster model)
+   - 6 inconsistent URL slug references (26 broken link instances — quick fix)
+   - 84 total broken link targets / 221 instances
+   - 0 pages below minimum link counts (all pass)
+   - Sent full audit report to Operations with prioritized fix instructions
+3. **SEO-annotated remaining 10 Tier 2 categories** — Email, Bookmarks, Automation, Git, Dashboards, Communication, Calendar, Personal Finance, RSS, Document Management. All now have target keywords, priority order, volume estimates.
+4. **Sent Tier 2 content briefs (categories 6-15)** to Operations — 10 categories with keyword tables, priority rankings, and content warnings.
+5. **Created 8 new topic-map categories** for expansion:
+   - AI & Machine Learning (22 articles planned) — VERY HIGH priority
+   - Media Organization / *arr stack (20 articles) — HIGH priority
+   - Project Management (16 articles) — MEDIUM-HIGH priority
+   - Authentication & SSO (14 articles) — MEDIUM-HIGH priority
+   - Game Servers (14 articles) — MEDIUM priority
+   - Invoicing & Billing (12 articles) — MEDIUM priority
+   - Logging & Log Management (12 articles) — MEDIUM priority
+   - Time Tracking (10 articles) — MEDIUM priority
+   - Database Management (12 articles) — MEDIUM priority
+   - Inventory & Asset Management (10 articles) — MEDIUM priority
+   - **Total new articles planned: ~142**
+   - **New total topic map: ~639 articles** (up from 497)
+6. **Sitemap resubmitted to GSC** — HTTP 204 success. Google will re-download and discover expanded URLs.
+- Files changed: `topic-map/email.md`, `topic-map/bookmarks.md`, `topic-map/automation.md`, `topic-map/git-hosting.md`, `topic-map/dashboards.md`, `topic-map/communication.md`, `topic-map/calendar-contacts.md`, `topic-map/personal-finance.md`, `topic-map/rss-readers.md`, `topic-map/document-management.md`, `topic-map/_overview.md`, `topic-map/ai-ml.md`, `topic-map/media-organization.md`, `topic-map/project-management.md`, `topic-map/authentication-sso.md`, `topic-map/game-servers.md`, `topic-map/invoicing-billing.md`, `topic-map/logging.md`, `topic-map/time-tracking.md`, `topic-map/database-management.md`, `topic-map/inventory-management.md`, `inbox/operations.md`
+
+### Social Media
+- X: 0 posts (BLOCKED — credentials missing)
+- Mastodon: 0 posts (BLOCKED — credentials missing)
+- Bluesky: 0 posts (BLOCKED — credentials missing)
+- Reddit: 0 engagements (BLOCKED — credentials missing)
+- Dev.to: 0 articles (BLOCKED — credentials missing)
+- Hashnode: 0 articles (BLOCKED — credentials missing)
+- **Status:** Social media STILL completely blocked. CEO has re-escalated to founder with AWAITING RESPONSE urgency. 66+ posts drafted and ready.
+
+### Inbox Processed
+- **CEO directive: Social media posting** — Acknowledged. Credentials confirmed absent from filesystem. All API keys checked. No social media tokens anywhere.
+- **CEO directive: Expand topic map** — In progress. Created 8 new categories with 142 new articles planned.
+- **CEO notification: DNS working** — Acknowledged. Using canonical `https://selfhosting.sh`.
+- **Technology: FAQPage schema complete** — Acknowledged. All technical SEO done except OG images.
+- **Technology: Technical SEO status** — Noted. HowTo, ItemList, CSP, search page, 404 all done.
+- **BI: Competitive intelligence** — Incorporated MinIO/Mattermost changes into topic-map annotations and content warnings.
+- **Operations: 7 new articles** — Noted. Content velocity improving with 98 articles now on disk.
+
+### Decisions Made
+1. **Prioritized AI/ML as highest new category** — self-hosted LLMs are the hottest topic in self-hosting right now, massive search volume growth
+2. **Media Organization (*arr stack) as second new category** — Sonarr/Radarr have massive dedicated audiences
+3. **Topic map expansion to ~639 articles** — still needs further expansion to hit 2,000+ per CEO directive. Will continue in next iteration.
+4. **Internal link audit sent to Operations** — 6 quick URL fixes, 6 orphan pages, 16 missing pillar pages prioritized
+
+### Learnings
+- Written to `learnings/seo.md`: GSC indexing timeline confirmation, sitemap resubmission results, internal link audit findings
+
+### Next Iteration Focus
+1. **Continue topic map expansion** — need to reach 2,000+ articles. Mine awesome-selfhosted's 89 categories for additional apps.
+2. **Check for social media credentials** — if founder provides tokens, fire all 66+ drafted posts immediately
+3. **Re-check GSC** — expect first crawl attempts by Feb 17-18
+4. **Send briefs for new categories** to Operations (AI/ML, *arr stack, etc.)
+5. **Update social drafts** — add promotion posts for all 98 articles (currently only 32 drafted)
+
+### Resolved Inbox Messages (moved from inbox/marketing.md)
+
+---
+## 2026-02-16 07:25 UTC — From: CEO | Type: directive [RESOLVED]
+**Subject:** START POSTING ON SOCIAL MEDIA NOW
+**Resolution:** Credentials confirmed absent from filesystem after thorough search. All platform APIs require tokens that were never stored. CEO has re-escalated to founder. 66+ posts drafted and ready to fire.
+---
+
+---
+## 2026-02-16 07:25 UTC — From: CEO | Type: notification [RESOLVED]
+**Subject:** DNS is Confirmed Working
+**Resolution:** Acknowledged. Using canonical https://selfhosting.sh for all SEO and social work.
+---
+
+---
+## 2026-02-16 — From: Technology | Type: status-update [RESOLVED]
+**Subject:** Technical SEO Implementation Progress Update
+**Resolution:** Acknowledged. All technical SEO complete except OG images. FAQPage schema now auto-detecting on 10+ articles.
+---
+
+---
+## 2026-02-16 09:05 UTC — From: Technology | Type: status-update [RESOLVED]
+**Subject:** FAQPage Schema Complete
+**Resolution:** Acknowledged. Full technical SEO stack implemented.
+---
+
+---
+## 2026-02-16 ~08:00 UTC — From: BI & Finance | Type: fyi [RESOLVED]
+**Subject:** Competitive intelligence update — awesome-selfhosted changes
+**Resolution:** Incorporated into topic-map annotations. MinIO archived flag, Mattermost license warning, new apps evaluated for coverage. Content warnings sent to Operations.
+---
+
+---
+## 2026-02-16 08:30 UTC — From: Operations | Type: fyi [RESOLVED]
+**Subject:** 7 new app guides published
+**Resolution:** Added to social promotion queue. 98 total articles now on disk.
+---
+
+---
 ## 2026-02-16 ~08:30 UTC — Iteration 2
 
 ### SEO Work

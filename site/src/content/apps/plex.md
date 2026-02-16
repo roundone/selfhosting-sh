@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   plex:
-    image: lscr.io/linuxserver/plex:1.41.4
+    image: lscr.io/linuxserver/plex:1.43.0
     container_name: plex
     network_mode: host
     restart: unless-stopped
@@ -76,7 +76,7 @@ Host networking is recommended because it simplifies discovery and remote access
 ```yaml
 services:
   plex:
-    image: lscr.io/linuxserver/plex:1.41.4
+    image: lscr.io/linuxserver/plex:1.43.0
     container_name: plex
     restart: unless-stopped
     ports:
@@ -167,7 +167,7 @@ Add the GPU device to your Docker Compose:
 ```yaml
 services:
   plex:
-    image: lscr.io/linuxserver/plex:1.41.4
+    image: lscr.io/linuxserver/plex:1.43.0
     # ... other config ...
     devices:
       - /dev/dri:/dev/dri  # Intel Quick Sync
@@ -187,7 +187,7 @@ ls -la /dev/dri
 ```yaml
 services:
   plex:
-    image: lscr.io/linuxserver/plex:1.41.4
+    image: lscr.io/linuxserver/plex:1.43.0
     # ... other config ...
     runtime: nvidia
     environment:

@@ -1,23 +1,23 @@
 # Dashboards [0/14 complete]
 **Priority:** medium (high beginner appeal)
-**SEO notes:** pending Marketing analysis
+**SEO notes:** Annotated by Marketing 2026-02-16. Dashboard apps are gateway content — beginners set these up first. Homarr and Homepage are the current favorites. "Homelab dashboard" is a gateway keyword. Very active comparison searches between the top 3 (Homarr, Homepage, Dashy).
 
 ## Apps
-- [ ] /apps/homarr — queued
-- [ ] /apps/homepage — queued
-- [ ] /apps/dashy — queued
-- [ ] /apps/heimdall — queued
-- [ ] /apps/flame — queued
-- [ ] /apps/homer — queued
-- [ ] /apps/organizr — queued
+- [ ] /apps/homarr — **Priority 1** | Target: "homarr docker compose" | Secondary: "homarr setup", "homelab dashboard", "homarr vs homepage" | Est. volume: high | Content type: app-guide
+- [ ] /apps/homepage — **Priority 2** | Target: "homepage dashboard docker" | Secondary: "gethomepage setup", "homepage homelab dashboard" | Est. volume: high | Content type: app-guide
+- [ ] /apps/dashy — **Priority 3** | Target: "dashy docker" | Secondary: "dashy setup", "dashy dashboard" | Est. volume: medium-high | Content type: app-guide
+- [ ] /apps/heimdall — **Priority 4** | Target: "heimdall docker" | Secondary: "heimdall dashboard setup" | Est. volume: medium | Content type: app-guide
+- [ ] /apps/homer — **Priority 5** | Target: "homer dashboard docker" | Secondary: "homer setup" | Est. volume: low-medium | Content type: app-guide
+- [ ] /apps/flame — **Priority 6** | Target: "flame dashboard docker" | Secondary: "flame startpage" | Est. volume: low | Content type: app-guide
+- [ ] /apps/organizr — **Priority 7** | Target: "organizr docker" | Secondary: "organizr setup" | Est. volume: low-medium | Content type: app-guide
 
 ## Comparisons
-- [ ] /compare/homarr-vs-homepage — queued
-- [ ] /compare/homarr-vs-dashy — queued
-- [ ] /compare/homepage-vs-dashy — queued
-- [ ] /compare/heimdall-vs-homer — queued
-- [ ] /compare/dashy-vs-flame — queued
-- [ ] /compare/homarr-vs-heimdall — queued
+- [ ] /compare/homarr-vs-homepage — **Priority 1** | Target: "homarr vs homepage" | Est. volume: high
+- [ ] /compare/homarr-vs-dashy — **Priority 2** | Target: "homarr vs dashy" | Est. volume: medium-high
+- [ ] /compare/homepage-vs-dashy — **Priority 3** | Target: "homepage vs dashy" | Est. volume: medium
+- [ ] /compare/heimdall-vs-homer — **Priority 4** | Target: "heimdall vs homer" | Est. volume: low-medium
+- [ ] /compare/dashy-vs-flame — **Priority 5** | Target: "dashy vs flame" | Est. volume: low
+- [ ] /compare/homarr-vs-heimdall — **Priority 6** | Target: "homarr vs heimdall" | Est. volume: low-medium
 
 ## Roundup
-- [ ] /best/dashboards — queued (write after all app guides done)
+- [ ] /best/dashboards — **Pillar page** | Target: "best self-hosted dashboard" | Secondary: "best homelab dashboard 2026", "best startpage self-hosted" | Est. volume: high | Write after app guides

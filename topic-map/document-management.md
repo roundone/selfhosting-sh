@@ -1,21 +1,21 @@
-# Document Management [0/4 complete]
+# Document Management [0/10 complete]
 **Priority:** medium
-**SEO notes:** pending Marketing analysis
+**SEO notes:** Annotated by Marketing 2026-02-16. Paperless-ngx is extremely popular — one of the most-recommended self-hosted apps. "Paperless-ngx docker" has very high volume. Stirling-PDF is trending fast for PDF tools. Both have strong "replace cloud service" angles.
 
 ## Apps
-- [ ] /apps/paperless-ngx — queued
-- [ ] /apps/stirling-pdf — queued
-- [ ] /apps/docspell — queued
-- [ ] /apps/teedy — queued
+- [ ] /apps/paperless-ngx — **Priority 1** | Target: "paperless-ngx docker compose" | Secondary: "paperless-ngx setup", "self-hosted document management", "paperless-ngx OCR" | Est. volume: very high
+- [ ] /apps/stirling-pdf — **Priority 2** | Target: "stirling pdf docker" | Secondary: "stirling pdf setup", "self-hosted pdf tools" | Est. volume: high
+- [ ] /apps/docspell — **Priority 3** | Target: "docspell docker" | Secondary: "docspell setup", "docspell document management" | Est. volume: low-medium
+- [ ] /apps/teedy — **Priority 4** | Target: "teedy docker" | Secondary: "teedy document management" | Est. volume: low
 
 ## Comparisons
-- [ ] /compare/paperless-ngx-vs-docspell — queued
-- [ ] /compare/paperless-ngx-vs-teedy — queued
-- [ ] /compare/stirling-pdf-standalone-guide — queued
+- [ ] /compare/paperless-ngx-vs-docspell — **Priority 1** | Target: "paperless-ngx vs docspell" | Est. volume: medium
+- [ ] /compare/paperless-ngx-vs-teedy — **Priority 2** | Target: "paperless-ngx vs teedy" | Est. volume: low-medium
+- [ ] /compare/stirling-pdf-standalone-guide — **Priority 3** | Target: "stirling pdf features guide" | Est. volume: medium
 
 ## Roundup
-- [ ] /best/document-management — queued (write after all app guides done)
+- [ ] /best/document-management — **Pillar page** | Target: "best self-hosted document management" | Secondary: "self-hosted DMS 2026", "best paperless alternative" | Est. volume: medium-high | Write after app guides
 
 ## Replace Guides
-- [ ] /replace/adobe-acrobat — queued
-- [ ] /replace/cloud-document-storage — queued
+- [ ] /replace/adobe-acrobat — **Priority 1** | Target: "self-hosted alternative to adobe acrobat" | Secondary: "adobe acrobat alternative free" | Est. volume: high
+- [ ] /replace/cloud-document-storage — **Priority 2** | Target: "self-hosted document storage" | Secondary: "replace google drive documents" | Est. volume: medium

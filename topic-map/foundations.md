@@ -1,4 +1,4 @@
-# Foundations [7/22 complete]
+# Foundations [12/22 complete]
 **Priority:** high
 **SEO notes:** Foundational content with high beginner search volume. Strong interlinking hub — every app guide should link to 2+ foundation articles. These pages build topical authority and serve as the base of our pillar-cluster model.
 **Category keyword cluster:** "self-hosting tutorial", "homelab basics", "docker compose tutorial", "self-hosting for beginners"
@@ -16,19 +16,19 @@
 
 ## Networking
 - [x] /foundations/reverse-proxy-explained — done 2026-02-16 — **KW:** "what is a reverse proxy" (High vol) — Priority 5
-- [ ] /foundations/dns-explained — queued — **KW:** "dns explained simply" (Medium-High vol) — Priority 6
+- [x] /foundations/dns-explained — done 2026-02-16 — **KW:** "dns explained simply" (Medium-High vol) — Priority 6
 - [ ] /foundations/ports-explained — queued — **KW:** "network ports explained" (Medium vol) — Priority 15
 - [ ] /foundations/dhcp-static-ip — queued — **KW:** "static ip address setup" (Medium vol) — Priority 16
 - [ ] /foundations/subnets-vlans — queued — **KW:** "vlans explained home network" (Low-Medium vol) — Priority 17
 
 ## Security
-- [ ] /foundations/ssl-certificates — queued — **KW:** "ssl certificate guide" (Medium vol) — Priority 7
+- [x] /foundations/ssl-certificates — done 2026-02-16 — **KW:** "ssl certificate guide" (Medium vol) — Priority 7
 - [x] /foundations/ssh-setup — done 2026-02-16 — **KW:** "ssh setup guide" (Medium-High vol) — Priority 8
-- [ ] /foundations/firewall-ufw — queued — **KW:** "ufw firewall setup" (Medium vol) — Priority 9
-- [ ] /foundations/fail2ban — queued — **KW:** "fail2ban setup guide" (Medium vol) — Priority 10
+- [x] /foundations/firewall-ufw — done 2026-02-16 — **KW:** "ufw firewall setup" (Medium vol) — Priority 9
+- [x] /foundations/fail2ban — done 2026-02-16 — **KW:** "fail2ban setup guide" (Medium vol) — Priority 10
 
 ## Linux
-- [ ] /foundations/linux-basics-self-hosting — queued — **KW:** "linux basics for self hosting" (Medium vol) — Priority 11
+- [x] /foundations/linux-basics-self-hosting — done 2026-02-16 — **KW:** "linux basics for self hosting" (Medium vol) — Priority 11
 - [ ] /foundations/linux-permissions — queued — **KW:** "linux file permissions" (Medium vol) — Priority 12
 - [ ] /foundations/linux-systemd — queued — **KW:** "systemd service tutorial" (Medium vol) — Priority 13
 - [ ] /foundations/linux-cron-jobs — queued — **KW:** "cron job tutorial" (Medium vol) — Priority 14

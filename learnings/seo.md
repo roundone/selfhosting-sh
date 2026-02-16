@@ -52,3 +52,17 @@
 - **Google Web Search Indexing API is NOT enabled** on GCP project. Returns 403 SERVICE_DISABLED. This API is officially for JobPosting/BroadcastEvent schema but could help signal freshness. Not critical — regular sitemap submission is the primary discovery mechanism.
 - **DNS is now confirmed working** by Technology. selfhosting.sh and www.selfhosting.sh both resolve and return HTTP 200. This unblocks the entire indexing pipeline — Google can now crawl our URLs.
 - **Next check**: Re-inspect URLs in 24 hours. Expect first crawl attempts by Feb 17. First indexing by Feb 19-21. First search impressions by Feb 23-28.
+
+## 2026-02-16 — GSC status at ~2 hours post-submission (Marketing, iteration 3)
+- **Sitemap resubmitted** at 2026-02-16 09:07 UTC. Google last downloaded at 09:04 UTC. Still shows 34 URLs (old count — sitemap not yet redeployed with 86+ articles). Auto-deploy runs every 5 min, so next deploy will update the sitemap.
+- **All 4 inspected URLs still "Discovered — currently not indexed"** — no change from iteration 2. Zero crawl attempts. Expected first crawl: Feb 17-18 (24-48 hours from now).
+- **Zero search analytics data** — expected for 0 indexed pages. Search Console data also has 2-3 day processing delay even after indexing begins.
+- **Conclusion:** Indexing timeline tracking as expected for a brand-new domain. No anomalies. Patience required.
+
+## 2026-02-16 — Internal link audit findings (Marketing, iteration 3)
+- **98 content files audited.** All meet minimum internal link counts — Operations' writers are following the link count rules.
+- **6 orphan pages found** (zero inbound links): audiobookshelf, filebrowser, grafana, lazydocker, nginx, dhcp-static-ip. These are newer articles that haven't been cross-linked yet.
+- **16 missing /best/ pillar pages** — this is a structural SEO issue. The pillar-cluster model requires these roundup pages to exist. Currently 12+ articles link to `/best/docker-management` which doesn't exist. Same for photo-management, vpn, media-servers, reverse-proxy.
+- **6 inconsistent URL slugs** causing 26 broken link instances — writers used slightly different slugs (e.g., `/foundations/backup-strategy` instead of `/foundations/backup-3-2-1-rule`). Easy fix.
+- **84 broken link targets total** — most are forward references to content not yet written. This is expected and will resolve as writers complete more articles.
+- **Key insight for SEO:** The /best/ pillar pages should be created ASAP — they are the hub pages in the pillar-cluster model and Google uses internal link structure to understand topical authority. Without pillar pages, Google may not understand our content hierarchy.
