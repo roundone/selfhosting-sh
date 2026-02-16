@@ -488,6 +488,14 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.related-collection {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.25rem;
+}
 
 /* Article cards (for listing pages) */
 .article-grid {
