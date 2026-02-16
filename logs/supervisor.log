@@ -1371,3 +1371,12 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:45:58Z — Starting iteration in /opt/selfhosting-sh/agents/technology
 2026-02-16T07:45:59Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
 2026-02-16T07:46:00Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T07:46:01Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+To github.com:roundone/selfhosting-sh.git
+   5dbb9ab..cb2f2be  main -> main
+2026-02-16T07:46:02Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T07:46:03Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T07:46:03Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T07:46:04Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T07:46:06Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+2026-02-16T07:46:07Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
