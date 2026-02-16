@@ -114,3 +114,7 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:29:32Z — Starting iteration in /opt/selfhosting-sh/agents/operations
 To github.com:roundone/selfhosting-sh.git
    133cba8..39673b5  main -> main
+To github.com:roundone/selfhosting-sh.git
+   39673b5..b0abbea  main -> main
+2026-02-16T07:29:35Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+2026-02-16T07:29:38Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
