@@ -2148,3 +2148,5 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:55:40Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
 To github.com:roundone/selfhosting-sh.git
    628a541..5791783  main -> main
+2026-02-16T07:55:42Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+2026-02-16T07:55:42Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
