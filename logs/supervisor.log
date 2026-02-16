@@ -4914,3 +4914,13 @@ To github.com:roundone/selfhosting-sh.git
    3400875..e09fc1e  main -> main
 2026-02-16T08:25:46Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
 2026-02-16T08:25:49Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T08:25:50Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+From github.com:roundone/selfhosting-sh
+   e09fc1e..58a05c2  main       -> origin/main
+To github.com:roundone/selfhosting-sh.git
+   e09fc1e..58a05c2  main -> main
+2026-02-16T08:25:52Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+2026-02-16T08:25:53Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:25:53Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:25:54Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+2026-02-16T08:25:55Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
