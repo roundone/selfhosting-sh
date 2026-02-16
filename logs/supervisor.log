@@ -3810,3 +3810,6 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:13:17Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
 To github.com:roundone/selfhosting-sh.git
    cada634..efcb5d2  main -> main
+2026-02-16T08:13:19Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   efcb5d2..64c9862  main -> main
