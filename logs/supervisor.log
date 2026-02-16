@@ -7466,3 +7466,10 @@ from the remote, but no such ref was fetched.
 2026-02-16T08:58:30Z — ERROR (/opt/selfhosting-sh) code=1
 To github.com:roundone/selfhosting-sh.git
    eaf95ce..906659e  main -> main
+To github.com:roundone/selfhosting-sh.git
+   906659e..c33896e  main -> main
+2026-02-16T08:58:31Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T08:58:31Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:58:32Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T08:58:33Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+fatal: Cannot rebase onto multiple branches.
