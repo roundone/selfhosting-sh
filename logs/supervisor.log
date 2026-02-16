@@ -2266,3 +2266,6 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:57:20Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
 2026-02-16T07:57:21Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
 2026-02-16T07:57:21Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T07:57:23Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   cbd213e..fac8a8f  main -> main
