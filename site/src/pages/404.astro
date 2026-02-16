@@ -2,9 +2,30 @@
 import Base from '../layouts/Base.astro';
 ---
 <Base title="Page Not Found" description="The page you're looking for doesn't exist.">
-  <div style="text-align: center; padding: 4rem 0;">
+  <div style="text-align: center; padding: 4rem 0; max-width: var(--content-width); margin: 0 auto;">
     <h1 style="font-size: 4rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 1rem;">404</h1>
     <p style="font-size: var(--font-size-lg); color: var(--text-secondary); margin-bottom: 2rem;">Page not found. It might have been moved or doesn't exist yet.</p>
-    <a href="/" style="color: var(--accent);">Back to homepage</a>
+    <div id="search-404" style="margin-bottom: 2rem;"></div>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="/" style="color: var(--accent);">Homepage</a>
+      <span style="color: var(--text-muted);">&middot;</span>
+      <a href="/apps/" style="color: var(--accent);">App Guides</a>
+      <span style="color: var(--text-muted);">&middot;</span>
+      <a href="/foundations/" style="color: var(--accent);">Foundations</a>
+      <span style="color: var(--text-muted);">&middot;</span>
+      <a href="/compare/" style="color: var(--accent);">Comparisons</a>
+    </div>
   </div>
+
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof PagefindUI !== 'undefined') {
+        new PagefindUI({
+          element: '#search-404',
+          showSubResults: false,
+          showImages: false,
+        });
+      }
+    });
+  </script>
 </Base>

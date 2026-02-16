@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Search" description="Search all self-hosting guides, comparisons, and tutorials on selfhosting.sh.">
+  <div style="max-width: var(--content-width); margin: 0 auto; padding: 2rem 0;">
+    <h1>Search</h1>
+    <p style="color: var(--text-secondary); margin: 0.5rem 0 1.5rem;">Find guides, comparisons, and tutorials across all categories.</p>
+    <div id="search-page"></div>
+  </div>
+
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof PagefindUI !== 'undefined') {
+        new PagefindUI({
+          element: '#search-page',
+          showSubResults: true,
+          showImages: false,
+        });
+        var params = new URLSearchParams(window.location.search);
+        var q = params.get('q');
+        if (q) {
+          var input = document.querySelector('#search-page input');
+          if (input) {
+            input.value = q;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        }
+      }
+    });
+  </script>
+</Base>

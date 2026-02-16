@@ -99,6 +99,41 @@ if (collectionName === 'apps' && apps.length > 0) {
   });
 }
 
+// ItemList schema for roundup ("best") articles
+if (collectionName === 'best' && apps.length > 0) {
+  jsonLdArray.push({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: title,
+    numberOfItems: apps.length,
+    itemListElement: apps.map((app, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: app,
+    })),
+  });
+}
+
+// HowTo schema for foundation/tutorial articles
+if (collectionName === 'foundations') {
+  const steps = headings
+    .filter((h) => h.depth === 2)
+    .map((h) => ({
+      '@type': 'HowToStep',
+      name: h.text,
+      url: `${canonicalUrl}#${h.slug}`,
+    }));
+  if (steps.length >= 2) {
+    jsonLdArray.push({
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      description,
+      step: steps,
+    });
+  }
+}
+
 const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 ---
 <Base
