@@ -637,4 +637,16 @@ The collection "troubleshooting" does not exist or is empty. Please check your c
 08:00:43   ├─ /og/apps/seafile.png (+115ms) 
 08:00:43   ├─ /og/apps/tailscale.png (+115ms) 
 08:00:43   ├─ /og/apps/wg-easy.png (+110ms) 
-08:00:43   ├─ /og/apps/wireguard.png
+08:00:43   ├─ /og/apps/wireguard.png (+111ms) 
+08:00:43   ├─ /og/compare/pi-hole-vs-adguard-home.png (+113ms) 
+08:00:44   ├─ /og/compare/jellyfin-vs-plex.png (+113ms) 
+08:00:44   ├─ /og/compare/portainer-vs-dockge.png (+159ms) 
+08:00:44   ├─ /og/compare/immich-vs-photoprism.png (+119ms) 
+08:00:44   ├─ /og/compare/nginx-proxy-manager-vs-traefik.png (+117ms) 
+08:00:44   ├─ /og/replace/google-photos.png (+124ms) 
+08:00:44   ├─ /og/hardware/best-mini-pc.png (+122ms) 
+08:00:44   ├─ /og/hardware/best-nas.png (+108ms) 
+08:00:44   ├─ /og/hardware/intel-n100-mini-pc.png (+123ms) 
+08:00:44   ├─ /og/foundations/backup-3-2-1-rule.png (+114ms) 
+08:00:45   ├─ /og/foundations/docker-compose-basics.png (+105ms) 
+08:00:45   ├─ /og/foundations/docker-networking.png
