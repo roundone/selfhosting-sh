@@ -1015,3 +1015,11 @@ Your configuration specifies to merge with the ref 'refs/heads/main'
 from the remote, but no such ref was fetched.
 2026-02-16T07:41:39Z — Starting iteration in /opt/selfhosting-sh
 2026-02-16T07:41:40Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+To github.com:roundone/selfhosting-sh.git
+   fb1d2d5..20269c5  main -> main
+2026-02-16T07:41:41Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T07:41:42Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T07:41:42Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T07:41:43Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T07:41:46Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+2026-02-16T07:41:46Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
