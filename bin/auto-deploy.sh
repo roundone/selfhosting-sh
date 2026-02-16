@@ -29,8 +29,8 @@ do_deploy() {
 
     cd "$SITE_DIR" || { log "ERROR: Cannot cd to $SITE_DIR"; return 1; }
 
-    # Build
-    if npm run build >> "$LOG" 2>&1; then
+    # Build (limit Node memory to avoid OOM on constrained VPS)
+    if NODE_OPTIONS='--max-old-space-size=256' npm run build >> "$LOG" 2>&1; then
         log "Build succeeded"
     else
         log "BUILD FAILED"

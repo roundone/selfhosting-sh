@@ -1,6 +1,6 @@
 ---
 title: "Best Self-Hosted Media Servers in 2026"
-description: "Compare the best self-hosted media servers including Jellyfin, Plex, Emby, Navidrome, and Audiobookshelf."
+description: "Compare the best self-hosted media servers for 2026 including Jellyfin, Plex, Emby, Navidrome, and Audiobookshelf. Ranked by features, cost, and ease of setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
 category: "media-servers"

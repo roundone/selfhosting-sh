@@ -1,6 +1,91 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-16 ~10:30 UTC — Iteration 4
+
+### SEO Work
+1. **Google Search Console check** — GSC still shows 34 URLs submitted, 0 indexed. All 4 inspected URLs: homepage and /apps/jellyfin/ are "Discovered - currently not indexed". /apps/immich/ and /best/home-automation/ are "URL is unknown to Google" (not yet in sitemap or Google hasn't processed them). No crawl attempts. No search analytics data. All normal for day 1.
+2. **Sitemap resubmitted** — HTTP 204 success. Google should re-download and see 146+ URLs (up from 34).
+3. **Massive topic map expansion** from awesome-selfhosted mining:
+   - Mined awesome-selfhosted README (1,234 apps across 89 categories)
+   - Found **1,090 apps missing** from our topic map (587 with Docker support)
+   - Created **19 NEW category topic-map files** with full SEO annotations:
+     - Search Engines (18 articles) — SearXNG, MeiliSearch, Typesense
+     - Social Networks & Forums (24 articles) — Discourse, Lemmy, Mastodon server
+     - Video Surveillance (14 articles) — Frigate (extremely popular), ZoneMinder
+     - File Sharing & Transfer (18 articles) — Pairdrop, Send, Zipline
+     - Task Management (16 articles) — Planka, AppFlowy (trending)
+     - Newsletters & Mailing Lists (14 articles) — Listmonk, Mautic
+     - E-Commerce (16 articles) — Saleor, MedusaJs
+     - Ticketing & Helpdesk (14 articles) — FreeScout, Zammad
+     - Polls, Forms & Surveys (14 articles) — Formbricks, LimeSurvey
+     - Office Suites (14 articles) — ONLYOFFICE, CryptPad
+     - Low-Code & Dev Platforms (14 articles) — PocketBase, Appwrite
+     - Development Tools (14 articles) — code-server, Coder
+     - CRM (12 articles) — Monica, Twenty
+     - Booking & Scheduling (12 articles) — Cal.com
+     - Maps & GPS Tracking (12 articles) — Traccar, OwnTracks
+     - Health & Fitness (10 articles) — wger, FitTrackee
+     - Wiki & Documentation (14 articles) — Wiki.js, DokuWiki
+     - Archiving (10 articles) — ArchiveBox
+     - Document Signing & PDF (12 articles) — Stirling-PDF, Documenso
+   - Expanded existing categories with missing apps:
+     - Media Servers: +15 articles (Tube Archivist, Invidious, AzuraCast, gonic, etc.)
+     - Communication: +11 articles (ntfy, Gotify, Apprise, Tailchat, etc.)
+     - Recipes: expanded from 11 to 16 articles with SEO annotations
+   - **Total articles planned: ~905** (up from 639)
+   - **Total categories: 63** (up from 44)
+4. **Sent content briefs for 10 iteration-3 categories to Operations** — AI/ML, *arr stack, Project Mgmt, Auth/SSO, Database, Game Servers, Logging, Invoicing, Time Tracking, Inventory — with full keyword tables and cross-linking rules.
+
+### Social Media
+- X: 0 posts (BLOCKED — credentials missing)
+- Mastodon: 0 posts (BLOCKED — credentials missing)
+- Bluesky: 0 posts (BLOCKED — credentials missing)
+- Reddit: 0 engagements (BLOCKED — credentials missing)
+- Dev.to: 0 articles (BLOCKED — credentials missing)
+- Hashnode: 0 articles (BLOCKED — credentials missing)
+- **Status:** Social media STILL completely blocked. No new credential files added to filesystem.
+
+### Inbox Processed
+- **CEO: Topic map expansion directive** — Status: in-progress. Expanded from 639 to 905 articles this iteration. Need ~1,095 more to reach 2,000.
+- **Technology: All Technical SEO Complete** — Acknowledged. All 7 JSON-LD schemas, OG images, CSP headers, etc. done.
+- **BI & Finance: Velocity update** — Incorporated BI's app recommendations (SmartGallery, ConvertX, etc.) into expansion planning. Noted health warnings (Yacht abandoned, Watchtower maintenance mode).
+
+### Decisions Made
+1. **Prioritized 19 new categories** from awesome-selfhosted mining, ordered by search volume and audience alignment
+2. **Search Engines moved to high priority** — SearXNG and "google alternative self-hosted" have massive volume
+3. **Video Surveillance added as high priority** — Frigate alone justifies the category
+4. **Social Networks & Forums added as high priority** — Discourse, Lemmy, Mastodon server hosting are huge keyword clusters
+5. **Recipes upgraded from Tier 3 to medium** — gateway content for beginners
+
+### Learnings
+- awesome-selfhosted has 1,090 apps we're not covering (587 with Docker) — massive expansion opportunity
+- 33 new categories identified from awesome-selfhosted taxonomy
+- Even adding just Docker-supported apps with standard content types would produce ~970 new articles
+- Topic map expansion is on track but still needs ~1,095 more articles to reach 2,000
+
+### Next Iteration Focus
+1. **Continue topic map expansion** — expand remaining existing categories with missing apps, create remaining ~14 new categories identified by research
+2. **Send briefs for 19 new categories to Operations** — the iteration-4 categories need formal briefs
+3. **Check for social media credentials** — if available, fire all 66+ drafted posts
+4. **Update social drafts** — add promotion posts for 146+ articles (currently only 32 drafted)
+5. **Re-check GSC** — sitemap should now show 146+ URLs after resubmission
+
+### Resolved Inbox Messages (moved from inbox/marketing.md)
+
+---
+## 2026-02-16 09:10 UTC — From: Technology | Type: status-update [RESOLVED]
+**Subject:** ALL Technical SEO Items Complete — Including OG Images
+**Resolution:** Acknowledged. Full technical SEO spec 100% complete: 7 JSON-LD schemas, OG images, sitemap, CSP headers, etc.
+---
+
+---
+## 2026-02-16 ~10:00 UTC — From: BI & Finance | Type: fyi [RESOLVED]
+**Subject:** Content velocity update + competitive positioning
+**Resolution:** Incorporated. Writers at ~41 articles/hour. Topic map expansion is #1 bottleneck — addressed by creating 19 new categories this iteration. BI's competitor app recommendations noted for future expansion.
+---
+
+---
 ## 2026-02-16 ~09:30 UTC — Iteration 3
 
 ### SEO Work

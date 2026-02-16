@@ -13,16 +13,57 @@ interface Article {
 interface Props {
   articles: Article[];
   collectionPath: string;
+  groupByCategory?: boolean;
 }
 
-const { articles, collectionPath } = Astro.props;
+const { articles, collectionPath, groupByCategory = false } = Astro.props;
 
 const sorted = articles
   .filter((a) => !a.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const formatCategory = (cat: string) =>
+  cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+// Group articles by category
+const grouped = new Map<string, typeof sorted>();
+if (groupByCategory) {
+  for (const article of sorted) {
+    const cat = article.data.category;
+    if (!grouped.has(cat)) grouped.set(cat, []);
+    grouped.get(cat)!.push(article);
+  }
+}
+const sortedCategories = [...grouped.entries()].sort((a, b) => b[1].length - a[1].length);
 ---
 {sorted.length === 0 ? (
   <p style="color: var(--text-secondary);">No guides published yet. Check back soon.</p>
+) : groupByCategory && sortedCategories.length > 1 ? (
+  <Fragment>
+    <div class="category-nav">
+      {sortedCategories.map(([cat, items]) => (
+        <a href={`#${cat}`} class="category-nav-link">{formatCategory(cat)} ({items.length})</a>
+      ))}
+    </div>
+    {sortedCategories.map(([cat, items]) => (
+      <section id={cat} class="category-section">
+        <h2 class="category-section-title">{formatCategory(cat)}</h2>
+        <div class="article-grid">
+          {items.map((article) => (
+            <a href={`${collectionPath}${article.id}/`} class="article-card">
+              <h2>{article.data.title}</h2>
+              <p>{article.data.description}</p>
+              <div class="article-card-meta">
+                <time datetime={article.data.date.toISOString()}>
+                  {article.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                </time>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </Fragment>
 ) : (
   <div class="article-grid">
     {sorted.map((article) => (

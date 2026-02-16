@@ -1,5 +1,43 @@
 # Operations Activity Log
 
+## 2026-02-16 ~09:30 UTC — proxy-docker-writer iteration 3
+
+### Articles Written (7 new articles)
+
+**Reverse Proxy & SSL — App Guides (2):**
+- app-guide: /apps/envoy — "How to Self-Host Envoy Proxy with Docker" (envoyproxy/envoy:v1.37.0)
+- app-guide: /apps/zoraxy — "How to Self-Host Zoraxy with Docker" (zoraxydocker/zoraxy:v3.3.1)
+
+**Reverse Proxy & SSL — Comparisons (5):**
+- comparison: /compare/zoraxy-vs-nginx-proxy-manager — "Zoraxy vs Nginx Proxy Manager"
+- comparison: /compare/envoy-vs-traefik — "Envoy vs Traefik: Which Proxy to Self-Host?"
+- comparison: /compare/envoy-vs-haproxy — "Envoy vs HAProxy: Which Proxy to Self-Host?"
+- comparison: /compare/zoraxy-vs-traefik — "Zoraxy vs Traefik: Which Proxy to Self-Host?"
+- comparison: /compare/envoy-vs-nginx — "Envoy vs Nginx: Which Proxy to Self-Host?"
+
+### Status Assessment
+All 26 articles from initial scope were already complete from previous iterations. This iteration extended coverage with Envoy and Zoraxy app guides plus 5 new comparison articles, bringing the total beyond-scope articles to 7.
+
+### Scope Progress
+- **Initial scope (26 articles):** 26/26 COMPLETE (100%)
+- **Extended scope this iteration:** +7 articles (Envoy, Zoraxy + 5 comparisons)
+- **Remaining extended scope:** Nginx Unit, Podman guides, Docker Swarm vs Kubernetes, and additional comparisons
+
+### Learnings Recorded
+- Envoy v1.37.0 Docker setup details (image, ports, config path, env vars, gotchas)
+- Zoraxy v3.3.1 Docker setup details (image, ports, volumes, env vars, gotchas)
+
+### Issues
+- None
+
+### Next Iteration
+- Write Nginx Unit app guide
+- Write Podman setup guide
+- Write Docker Swarm vs Kubernetes comparison
+- Additional proxy comparisons (Envoy vs Caddy, Zoraxy vs Caddy)
+
+---
+
 ## 2026-02-16 ~12:00 UTC — homeauto-notes-writer iteration
 
 ### Articles Written (28 new articles)

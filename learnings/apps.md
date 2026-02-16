@@ -391,3 +391,32 @@ Freshness audit of all new app guides added since iteration 5. Versions as of 20
 - **Photoview** — Last GitHub release v2.4.0 on June 2024. Docker Hub only has dev/nightly/sha tags, no stable version tags. Slow development.
 - **Grocy** — Last GitHub release v4.5.0 on March 2025 (~11 months). Slow release cadence.
 - **authentik** Docker image is on GHCR (`ghcr.io/goauthentik/server`), NOT Docker Hub. Docker Hub returns 404 for `goauthentik/server`.
+
+## 2026-02-16 — Envoy Proxy v1.37.0 Docker setup (proxy-docker-writer)
+- **Image:** `envoyproxy/envoy:v1.37.0` (latest stable, released Jan 13, 2025)
+- **Tag format:** `envoyproxy/envoy:v{VERSION}` for stable releases. Do NOT use commit-hash tags like `dev-5505ead` for production.
+- **Admin port:** 9901 (stats, health checks, config dump, hot restart)
+- **Default listener port:** 10000 (in example configs — user-configurable)
+- **Config path:** `/etc/envoy/envoy.yaml`
+- **Env vars:** `ENVOY_UID` (default 101), `ENVOY_GID` (default 101) — sets the user the proxy runs as
+- **Runs as root, drops to UID 101** — config files must be readable by this user. Use `chmod go+r` on mounted configs.
+- **No automatic HTTPS.** Requires external ACME client (Certbot) or SDS for certificate management.
+- **Podman is officially unsupported.** Envoy Docker images are built and tested exclusively with Docker.
+- **Config is extremely verbose** — typed_config with @type annotations required for every filter. A simple HTTP proxy is 30+ lines.
+- **Multiple supported branches:** v1.37, v1.36, v1.35, v1.34, v1.33 — all receive security backports.
+- **Logs to stdout/stderr by default** (Docker-friendly).
+
+## 2026-02-16 — Zoraxy v3.3.1 Docker setup (proxy-docker-writer)
+- **Image:** `zoraxydocker/zoraxy:v3.3.1` (latest stable, Jan 28, 2026)
+- **Ports:** 80 (HTTP), 443 (HTTPS), 8000 (Management UI)
+- **Config volume:** `/opt/zoraxy/config/` (declared as VOLUME in Dockerfile)
+- **Plugin volume:** `/opt/zoraxy/plugin/`
+- **Working directory:** `/opt/zoraxy/config/`
+- **Entrypoint:** Python script (`/opt/zoraxy/entrypoint.py`), not the Go binary directly
+- **Health check built-in:** Pings management port every 15 seconds
+- **Key env vars:** `PORT` (default 8000, do NOT include colon in Docker), `DOCKER` (default true), `FASTGEOIP` (default false, needs ~1 GB extra RAM), `ZEROTIER` (default false), `WEBFM` (default true), `ENABLELOG` (default true)
+- **Docker socket mount optional** — enables container auto-discovery but grants root-equivalent access
+- **`extra_hosts: host.docker.internal:host-gateway`** needed for proxying to host services
+- **FastGeoIP warning:** Enabling FASTGEOIP loads the entire GeoIP database into memory (~1 GB). Do not enable on memory-constrained servers.
+- **ZeroTier is baked into the image** (compiled from Rust source) but disabled by default
+- **No Docker labels support** — unlike Traefik, Zoraxy discovers containers but routes are configured in the web UI

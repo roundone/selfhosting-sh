@@ -8,7 +8,7 @@ const articles = await getCollection('apps', ({ data }) => !data.draft);
 ---
 <Base title="App Guides" description="Step-by-step self-hosting setup guides for popular apps. Docker Compose configs, configuration tips, and best practices.">
   <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'App Guides' }]} />
-  <h1 style="margin-bottom: 1.5rem;">App Guides</h1>
-  <p style="color: var(--text-secondary); margin-bottom: 2rem;">Step-by-step setup guides for self-hosted apps. Each guide includes Docker Compose configs, configuration tips, and everything you need to get running.</p>
-  <ArticleList articles={articles} collectionPath="/apps/" />
+  <h1 style="margin-bottom: 0.5rem;">App Guides</h1>
+  <p style="color: var(--text-secondary); margin-bottom: 2rem;">{articles.length} step-by-step setup guides for self-hosted apps. Each guide includes Docker Compose configs, configuration tips, and everything you need to get running.</p>
+  <ArticleList articles={articles} collectionPath="/apps/" groupByCategory={true} />
 </Base>

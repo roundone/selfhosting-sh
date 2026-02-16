@@ -3,6 +3,7 @@ import Base from './Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
+import EmailSignup from '../components/EmailSignup.astro';
 
 interface Props {
   title: string;
@@ -218,6 +219,8 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
         apps={apps}
         tags={tags}
       />
+
+      <EmailSignup />
     </article>
 
     {tocHeadings.length > 0 && (
@@ -234,12 +237,12 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     )}
   </div>
 
-  {tocHeadings.length > 0 && (
-    <script is:inline>
-      (function() {
-        var headings = document.querySelectorAll('.prose h2[id], .prose h3[id]');
-        var tocLinks = document.querySelectorAll('.toc a');
-        if (!headings.length || !tocLinks.length) return;
+  <script is:inline>
+    (function() {
+      // TOC active state tracking
+      var headings = document.querySelectorAll('.prose h2[id], .prose h3[id]');
+      var tocLinks = document.querySelectorAll('.toc a');
+      if (headings.length && tocLinks.length) {
         var observer = new IntersectionObserver(function(entries) {
           entries.forEach(function(entry) {
             if (entry.isIntersecting) {
@@ -250,7 +253,16 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
           });
         }, { rootMargin: '-80px 0px -70% 0px' });
         headings.forEach(function(h) { observer.observe(h); });
-      })();
-    </script>
-  )}
+      }
+
+      // Wrap tables in scrollable container for mobile
+      var tables = document.querySelectorAll('.prose table');
+      tables.forEach(function(table) {
+        var wrapper = document.createElement('div');
+        wrapper.className = 'table-wrapper';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      });
+    })();
+  </script>
 </Base>

@@ -33,7 +33,7 @@
 26. Calendar & Contacts — 0/12 complete — **Priority: medium** — SEO annotated
 27. Email — 0/17 complete — **Priority: medium** — SEO annotated
 
-### New Categories (added by Marketing iteration 3)
+### New Categories — Batch 1 (added by Marketing iteration 3)
 28. **AI & Machine Learning** — 0/22 complete — **Priority: high** — SEO annotated — NEW (HOTTEST topic)
 29. **Media Organization (*arr stack)** — 0/20 complete — **Priority: high** — SEO annotated — NEW
 30. **Project Management** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
@@ -45,28 +45,51 @@
 36. **Time Tracking** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
 37. **Inventory & Asset Management** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
 
+### New Categories — Batch 2 (added by Marketing iteration 4, from awesome-selfhosted mining)
+38. **Search Engines** — 0/18 complete — **Priority: high** — SEO annotated — NEW
+39. **Social Networks & Forums** — 0/24 complete — **Priority: high** — SEO annotated — NEW
+40. **Video Surveillance & NVR** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Frigate!)
+41. **File Sharing & Transfer** — 0/18 complete — **Priority: high** — SEO annotated — NEW
+42. **Task Management** — 0/16 complete — **Priority: high** — SEO annotated — NEW (Planka, AppFlowy)
+43. **Newsletters & Mailing Lists** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Listmonk!)
+44. **E-Commerce** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
+45. **Ticketing & Helpdesk** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+46. **Polls, Forms & Surveys** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+47. **Office Suites & Collaboration** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+48. **Low-Code & Dev Platforms** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (PocketBase!)
+49. **Development Tools** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (code-server!)
+50. **CRM** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+51. **Booking & Scheduling** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Cal.com!)
+52. **Maps & GPS Tracking** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+53. **Health & Fitness** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+54. **Wiki & Documentation** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+55. **Archiving & Digital Preservation** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+56. **Document Signing & PDF Tools** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Stirling-PDF!)
+
 ### Tier 3 — Lower Priority
-38. Status Pages — 0/13 complete — **Priority: low**
-39. URL Shorteners — 0/12 complete — **Priority: low**
-40. Pastebin & Snippets — 0/12 complete — **Priority: low**
-41. Recipes — 0/11 complete — **Priority: low**
-42. Link Pages — 0/10 complete — **Priority: low**
-43. Speed Test — 0/9 complete — **Priority: low**
-44. Video Conferencing — 0/9 complete — **Priority: low**
+57. Status Pages — 0/13 complete — **Priority: low**
+58. URL Shorteners — 0/12 complete — **Priority: low**
+59. Pastebin & Snippets — 0/12 complete — **Priority: low**
+60. Recipes — 0/16 complete — **Priority: medium** — SEO annotated (upgraded from Tier 3)
+61. Link Pages — 0/10 complete — **Priority: low**
+62. Speed Test — 0/9 complete — **Priority: low**
+63. Video Conferencing — 0/9 complete — **Priority: low**
 
 ## Summary
-- Total articles planned: ~639 (Marketing expanding to 2,000+ — CRITICAL PATH, writers will exhaust current map within hours)
+- Total articles planned: ~905 (up from 639 — Marketing iteration 4 added 19 new categories with ~266 articles + expanded existing categories)
 - Total articles published: 179
-- Categories fully complete: 5 / 44 (Home Automation, Foundations, Docker Management, Reverse Proxy & SSL, Password Management)
-- Categories with content: 17 / 44
+- Total categories: 63 (up from 44 — 19 new categories from awesome-selfhosted mining)
+- Categories fully complete: 5 / 63 (Home Automation, Foundations, Docker Management, Reverse Proxy & SSL, Password Management)
+- Categories with content: 17 / 63
 - Content types: apps (66), compare (45), foundations (27), replace (23), hardware (14), best (4)
 - Content types empty: troubleshooting (0)
+- **Still need: ~1,095 more planned articles to reach 2,000 target** — next iteration will expand existing categories further + add remaining awesome-selfhosted categories
 
 ## Velocity
 - Day 1 production: 179 articles in ~5.5 hours from 7 writers + Operations head
 - Current rate: ~46 articles/hour (accelerating)
 - Projected: ~1,100 articles/day if sustained
-- URGENT: Topic map expansion to 2,000+ is the #1 bottleneck
+- Topic map expansion ongoing — 905 planned is ~45% of 2,000 target
 
 ## Priority Rationale
 - **Tier 1:** Highest search volume, broadest audience appeal. 5 of 12 categories now COMPLETE. Focus: complete remaining 7.
