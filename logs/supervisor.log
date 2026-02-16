@@ -7408,3 +7408,12 @@ To github.com:roundone/selfhosting-sh.git
    e93bd96..8dc1cfc  main -> main
 2026-02-16T08:57:35Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
 2026-02-16T08:57:39Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   8dc1cfc..6fb8f8e  main -> main
+To github.com:roundone/selfhosting-sh.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 6fb8f8e0611fa12dfab0579479ff3283980cb643 but expected 8dc1cfc8495826620cf98e0739b84680f279d002)
+error: failed to push some refs to 'github.com:roundone/selfhosting-sh.git'
+2026-02-16T08:57:43Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:57:45Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:57:45Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T08:57:46Z — ERROR (/opt/selfhosting-sh) code=1
