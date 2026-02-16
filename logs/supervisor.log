@@ -6935,3 +6935,18 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    cdebb19..aa69ba7  main -> main
 2026-02-16T08:51:47Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit aa69ba7b7757f0a079ff1c91810578b376ec6ab5.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff aa69ba7b7757f0a079ff1c91810578b376ec6ab5
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   aa69ba7..d95cd20  main -> main
