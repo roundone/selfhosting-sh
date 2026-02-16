@@ -6950,3 +6950,6 @@ $ git reset --hard
 to recover.
 To github.com:roundone/selfhosting-sh.git
    aa69ba7..d95cd20  main -> main
+To github.com:roundone/selfhosting-sh.git
+   d95cd20..82d3328  main -> main
+2026-02-16T08:51:50Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
