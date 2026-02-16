@@ -19,6 +19,7 @@ interface Props {
   headings?: { depth: number; slug: string; text: string }[];
   collectionName: string;
   slug: string;
+  rawBody?: string;
 }
 
 const {
@@ -36,6 +37,7 @@ const {
   headings = [],
   collectionName,
   slug,
+  rawBody = '',
 } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
@@ -60,6 +62,7 @@ const crumbs = [
 ];
 
 const canonicalUrl = new URL(`${categoryPath}${slug}/`, Astro.site).href;
+const ogImageUrl = image || new URL(`/og/${collectionName}/${slug}.png`, Astro.site).href;
 
 // Article JSON-LD
 const articleLd: Record<string, unknown> = {
@@ -80,7 +83,7 @@ const articleLd: Record<string, unknown> = {
   },
 };
 if (dateUpdated) articleLd.dateModified = dateUpdated.toISOString();
-if (image) articleLd.image = image;
+articleLd.image = ogImageUrl;
 
 // SoftwareApplication schema for app guides
 const jsonLdArray: object[] = [articleLd];
@@ -134,12 +137,54 @@ if (collectionName === 'foundations') {
   }
 }
 
+// FAQPage schema auto-detection
+// Detects FAQ sections (## FAQ or ## Frequently Asked Questions) with ### questions and answer paragraphs
+if (rawBody) {
+  const sections = rawBody.split(/^## /m);
+  let faqSectionContent = '';
+  for (const section of sections) {
+    const firstLine = section.split('\n')[0]?.trim() || '';
+    if (firstLine === 'FAQ' || firstLine === 'Frequently Asked Questions') {
+      faqSectionContent = section.substring(firstLine.length).trim();
+      break;
+    }
+  }
+  if (faqSectionContent) {
+    const questionBlocks = faqSectionContent.split(/^### /m).filter(Boolean);
+    const faqItems: { question: string; answer: string }[] = [];
+    for (const block of questionBlocks) {
+      const lines = block.trim().split('\n');
+      const question = lines[0]?.trim();
+      if (!question) continue;
+      const answerLines = lines.slice(1).filter((l) => l.trim() !== '');
+      const answer = answerLines.map((l) => l.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim()).join(' ').trim();
+      if (answer) {
+        faqItems.push({ question, answer });
+      }
+    }
+    if (faqItems.length >= 2) {
+      jsonLdArray.push({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer,
+          },
+        })),
+      });
+    }
+  }
+}
+
 const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 ---
 <Base
   title={title}
   description={description}
-  ogImage={image}
+  ogImage={ogImageUrl}
   ogType="article"
   canonicalUrl={canonicalUrl}
   jsonLd={jsonLdArray}

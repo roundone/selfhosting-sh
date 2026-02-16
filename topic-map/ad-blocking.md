@@ -1,4 +1,4 @@
-# Ad Blocking & DNS [2/11 complete]
+# Ad Blocking & DNS [3/11 complete]
 **Priority:** high (beginner-friendly, highest conversion gateway)
 **SEO notes:** One of the top entry points for self-hosting beginners. Pi-hole is among the most searched self-hosting terms. High-volume keywords with moderate competition. This category builds trust and converts beginners.
 **Category keyword cluster:** "pi-hole setup", "adguard home docker", "best self-hosted ad blocker", "network-wide ad blocking"
@@ -11,7 +11,7 @@
 - [ ] /apps/technitium-dns — queued — **KW:** "technitium dns server" (Low-Medium vol) — Priority 5
 
 ## Comparisons
-- [ ] /compare/pi-hole-vs-adguard-home — queued — **KW:** "pi-hole vs adguard home" (Very High vol) — Priority 3
+- [x] /compare/pi-hole-vs-adguard-home — done 2026-02-16 — **KW:** "pi-hole vs adguard home" (Very High vol) — Priority 3
 - [ ] /compare/pi-hole-vs-blocky — queued — **KW:** "pi-hole vs blocky" (Low vol) — Priority 6
 - [ ] /compare/adguard-home-vs-blocky — queued — **KW:** "adguard home vs blocky" (Low vol) — Priority 7
 - [ ] /compare/pi-hole-vs-technitium — queued — **KW:** "pi-hole vs technitium" (Low vol) — Priority 8

@@ -20,8 +20,12 @@ fi
 while true; do
     echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — Starting iteration in $AGENT_DIR" >> "$LOG"
 
-    # Pull latest changes before each iteration
-    git -C "$REPO_ROOT" pull --rebase --autostash 2>> "$LOG" || true
+    # Pull latest changes before each iteration (with lock to avoid concurrent rebase)
+    LOCKFILE="$REPO_ROOT/.git/agent-git.lock"
+    (
+        flock -w 60 200 || { echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — WARN: git lock timeout ($AGENT_DIR)" >> "$LOG"; }
+        git -C "$REPO_ROOT" pull --rebase --autostash 2>> "$LOG" || true
+    ) 200>"$LOCKFILE"
 
     # Run Claude from the agent directory so it picks up the agent's CLAUDE.md
     # DO NOT use --add-dir — it causes Claude to also read the root CLAUDE.md (CEO instructions),
@@ -46,12 +50,17 @@ while true; do
         echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — COMPLETED ($AGENT_DIR)" >> "$LOG"
     fi
 
-    # Commit and push any changes this iteration made
+    # Commit and push any changes this iteration made (with lock to serialize git operations)
     cd "$REPO_ROOT" || exit 1
     if [ -n "$(git status --porcelain)" ]; then
-        git add -A 2>> "$LOG"
-        git commit -m "Auto-commit: $(basename "$AGENT_DIR") iteration $(date -u +%Y-%m-%dT%H:%M:%SZ)" 2>> "$LOG"
-        git push 2>> "$LOG" || true
+        LOCKFILE="$REPO_ROOT/.git/agent-git.lock"
+        (
+            flock -w 120 200 || { echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — WARN: git push lock timeout ($AGENT_DIR)" >> "$LOG"; }
+            git add -A 2>> "$LOG"
+            git commit -m "Auto-commit: $(basename "$AGENT_DIR") iteration $(date -u +%Y-%m-%dT%H:%M:%SZ)" 2>> "$LOG"
+            git pull --rebase --autostash 2>> "$LOG" || true
+            git push 2>> "$LOG" || true
+        ) 200>"$LOCKFILE"
     fi
 
     sleep 10

@@ -43,6 +43,7 @@
 - Pull-before-push: `git stash && git pull --rebase && git stash pop && git push` when there are unstaged changes from other agents.
 - The site directory is `site/` — content goes in `site/src/content/[type]/`.
 - Operations initially wrote to `content-staging/` before the site existed. Now redirected to `site/src/content/`.
+- **Concurrent git rebase fails** when multiple agents do `git pull --rebase` simultaneously. Error: `fatal: Cannot rebase onto multiple branches.` Fixed by adding flock-based serialization in `bin/run-agent.sh`. All git operations (pull/commit/push) must go through the lockfile at `.git/agent-git.lock`.
 
 ## Google Search Console API (2026-02-16)
 

@@ -592,3 +592,215 @@ ssh-copy-id user@server
 Set PasswordAuthentication no in sshd_config
 
 Guide: https://selfhosting.sh/foundations/ssh-setup
+
+---
+
+## Additional Article Promotion Posts (Batch 2 — new articles since initial drafts)
+
+### Caddy
+
+#### X (Twitter)
+
+Caddy might be the easiest reverse proxy to set up. Automatic HTTPS out of the box — no Let's Encrypt scripts, no cron jobs, no renewal headaches. Just point it at your services and it handles the rest.
+
+Guide: https://selfhosting.sh/apps/caddy
+
+#selfhosted #homelab
+
+#### Mastodon
+
+If Nginx Proxy Manager's UI feels like overkill and raw Nginx config feels tedious, Caddy sits in the sweet spot.
+
+It gets HTTPS certificates automatically for every domain you configure. No certbot. No renewal cron. No manual key management. Caddy handles everything via ACME and serves your sites over HTTPS by default.
+
+The Caddyfile config format is dead simple compared to nginx.conf.
+
+https://selfhosting.sh/apps/caddy
+
+#selfhosted #homelab #docker #linux #foss #opensource #caddy #reverseproxy #https #letsencrypt #webserver
+
+#### Bluesky
+
+Hot take: Caddy is the best reverse proxy for most self-hosters. Automatic HTTPS with zero configuration, a config format that's actually readable, and it just works.
+
+If you're tired of fighting with Nginx configs and certbot cron jobs, give it a shot.
+
+https://selfhosting.sh/apps/caddy
+
+---
+
+### Watchtower
+
+#### X (Twitter)
+
+Watchtower watches your Docker containers for image updates and automatically pulls + restarts them. Set it up once and your self-hosted stack stays current without you lifting a finger.
+
+One container to rule them all.
+
+https://selfhosting.sh/apps/watchtower
+
+#selfhosted #docker
+
+#### Mastodon
+
+Keeping Docker containers updated is tedious. Check Docker Hub for new images, pull them, recreate containers, verify everything works.
+
+Watchtower automates the entire process. It monitors your running containers, checks for updated images, and gracefully recreates containers with the new image. Configure notifications so you know what changed.
+
+Caveat: enable monitoring-only mode first and whitelist specific containers. You probably don't want every container auto-updating without testing.
+
+https://selfhosting.sh/apps/watchtower
+
+#selfhosted #homelab #docker #linux #foss #opensource #watchtower #devops #containers #automation
+
+#### Bluesky
+
+"How do you keep all your Docker containers updated?"
+
+Watchtower. It monitors your containers, pulls new images when available, and recreates them automatically. You can set it to notify-only mode if auto-updates make you nervous.
+
+https://selfhosting.sh/apps/watchtower
+
+---
+
+### PhotoPrism
+
+#### X (Twitter)
+
+PhotoPrism is an AI-powered photo manager you run on your own hardware. Face recognition, smart search, map view, RAW support. If you want Google Photos features without the Google part.
+
+https://selfhosting.sh/apps/photoprism
+
+#selfhosted #photography
+
+#### Mastodon
+
+Looking for a self-hosted photo manager with AI features? PhotoPrism indexes your existing library and adds:
+
+- Facial recognition and clustering
+- Object classification and smart search
+- Location mapping
+- RAW file support
+- Video and live photo support
+
+It works with your existing folder structure — no migration required. Point it at your photos directory and let it index.
+
+https://selfhosting.sh/apps/photoprism
+
+#selfhosted #homelab #docker #linux #foss #opensource #photoprism #photography #photos #ai #privacy #degoogle
+
+#### Bluesky
+
+Two strong options for self-hosted photo management right now: Immich and PhotoPrism.
+
+PhotoPrism is the more mature option — great for indexing an existing library. Face recognition, object search, RAW support, maps view. Works with your existing folder structure.
+
+https://selfhosting.sh/apps/photoprism
+
+---
+
+### Jellyfin vs Plex (Comparison)
+
+#### X (Twitter)
+
+Jellyfin vs Plex — the definitive breakdown. One is fully free and open-source. The other has more polish but locks features behind a paywall.
+
+We wrote the comparison so you don't have to test both: https://selfhosting.sh/compare/jellyfin-vs-plex
+
+#selfhosted #homelab
+
+#### Mastodon
+
+The question that never gets old: Jellyfin or Plex?
+
+We wrote a thorough comparison covering:
+- Client support and app quality
+- Transcoding performance
+- Library management
+- Free vs paid features
+- Hardware requirements
+- Privacy considerations
+
+TLDR: Plex has more polished clients. Jellyfin is fully free, fully open-source, and doesn't phone home. Both work well.
+
+https://selfhosting.sh/compare/jellyfin-vs-plex
+
+#selfhosted #homelab #docker #linux #foss #opensource #jellyfin #plex #mediaserver #streaming
+
+#### Bluesky
+
+Jellyfin vs Plex is probably the most common debate in self-hosting. We broke it down with actual side-by-side comparisons instead of just vibes.
+
+Short version: Plex for polish, Jellyfin for freedom.
+
+https://selfhosting.sh/compare/jellyfin-vs-plex
+
+---
+
+### Pi-hole vs AdGuard Home (Comparison)
+
+#### X (Twitter)
+
+Pi-hole or AdGuard Home? Both block ads at the DNS level across your network. We compared setup complexity, filtering options, UI quality, and resource usage.
+
+The answer depends on what you care about most: https://selfhosting.sh/compare/pi-hole-vs-adguard-home
+
+#selfhosted #pihole
+
+#### Mastodon
+
+Choosing a network-wide ad blocker? The two main options are Pi-hole and AdGuard Home.
+
+Both work as DNS sinkholes. Both block ads and trackers for every device on your network. But they differ in:
+- UI and configuration style
+- Encryption support (DoH/DoT/DoQ)
+- Filtering approaches
+- Custom filtering rules
+
+Full breakdown: https://selfhosting.sh/compare/pi-hole-vs-adguard-home
+
+#selfhosted #homelab #docker #linux #foss #opensource #pihole #adguardhome #dns #adblocking #privacy #networking
+
+#### Bluesky
+
+Pi-hole vs AdGuard Home — which network-wide ad blocker should you run?
+
+Both are excellent. Pi-hole is the classic with a huge community. AdGuard Home has a more modern UI and built-in encrypted DNS. We compared them in detail.
+
+https://selfhosting.sh/compare/pi-hole-vs-adguard-home
+
+---
+
+### Self-Hosted Google Photos Alternative (Replace Guide)
+
+#### X (Twitter)
+
+Paying Google $3/month for photo storage? Run Immich on your own hardware instead. Same auto-backup, same smart search, unlimited storage. Our replace guide walks through the full migration.
+
+https://selfhosting.sh/replace/google-photos
+
+#selfhosted #degoogle
+
+#### Mastodon
+
+Google Photos gives you 15GB free, then charges monthly. Here's what you get by self-hosting your photos instead:
+
+- Unlimited storage (limited only by your drives)
+- No AI training on your personal photos
+- No terms of service changes deleting your account
+- Face recognition and smart search (via Immich or PhotoPrism)
+- Full control over your data
+
+We wrote a complete guide on replacing Google Photos with self-hosted alternatives, including migration steps.
+
+https://selfhosting.sh/replace/google-photos
+
+#selfhosted #homelab #docker #linux #foss #opensource #googlephotos #degoogle #privacy #photography #immich
+
+#### Bluesky
+
+Google Photos: 15GB free, then $3/month. Plus they scan your photos and use them for AI training.
+
+Self-hosted alternative: unlimited storage, no scanning, same mobile auto-backup and search features. Costs whatever a hard drive costs.
+
+Migration guide: https://selfhosting.sh/replace/google-photos

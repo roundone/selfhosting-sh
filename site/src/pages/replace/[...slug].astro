@@ -27,6 +27,7 @@ const { Content, headings } = await render(entry);
   headings={headings}
   collectionName="replace"
   slug={entry.id}
+  rawBody={entry.body}
 >
   <Content />
 </Article>
