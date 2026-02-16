@@ -3989,3 +3989,8 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:14:40Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
 Your configuration specifies to merge with the ref 'refs/heads/main'
 from the remote, but no such ref was fetched.
+To github.com:roundone/selfhosting-sh.git
+   f604ff4..db602b6  main -> main
+2026-02-16T08:14:43Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
+2026-02-16T08:14:43Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T08:14:43Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
