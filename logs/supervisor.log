@@ -2353,3 +2353,12 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:58:36Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
 To github.com:roundone/selfhosting-sh.git
    095f4a4..21e597c  main -> main
+2026-02-16T07:58:38Z — ERROR (/opt/selfhosting-sh/agents/bi-finance) code=1
+To github.com:roundone/selfhosting-sh.git
+   21e597c..7c7e606  main -> main
+2026-02-16T07:58:41Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
+2026-02-16T07:58:45Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+2026-02-16T07:58:47Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
+2026-02-16T07:58:47Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+2026-02-16T07:58:48Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T07:58:48Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
