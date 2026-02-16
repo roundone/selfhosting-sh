@@ -1213,3 +1213,27 @@ To github.com:roundone/selfhosting-sh.git
    c093557..169257c  main -> main
 2026-02-16T07:44:08Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
 2026-02-16T07:44:08Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 169257cd2550cadcae235eed85eced8ef42dad0d.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 169257cd2550cadcae235eed85eced8ef42dad0d
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   169257c..e8c8b09  main -> main
+2026-02-16T07:44:10Z — ERROR (/opt/selfhosting-sh/agents/bi-finance) code=1
+2026-02-16T07:44:11Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
+2026-02-16T07:44:11Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
+2026-02-16T07:44:13Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T07:44:14Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
+2026-02-16T07:44:16Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T07:44:17Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+2026-02-16T07:44:19Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+2026-02-16T07:44:20Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
