@@ -342,3 +342,18 @@ To github.com:roundone/selfhosting-sh.git
    693afa5..42dc74d  main -> main
 2026-02-16T07:33:13Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
 2026-02-16T07:33:15Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 42dc74d80d03a26e6b687e84227410aad3b72cc3.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 42dc74d80d03a26e6b687e84227410aad3b72cc3
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   42dc74d..2a9036e  main -> main
