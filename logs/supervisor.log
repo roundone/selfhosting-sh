@@ -6953,3 +6953,7 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    d95cd20..82d3328  main -> main
 2026-02-16T08:51:50Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   82d3328..a587ef3  main -> main
+2026-02-16T08:51:55Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:51:57Z — Starting iteration in /opt/selfhosting-sh
