@@ -6875,3 +6875,22 @@ to recover.
 To github.com:roundone/selfhosting-sh.git
    8a4fb86..cdcabe1  main -> main
 2026-02-16T08:51:16Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit cdcabe151b90fdd07fd9464df03d227f1e21f3c2.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff cdcabe151b90fdd07fd9464df03d227f1e21f3c2
+output, run
+$ git reset --hard
+to recover.
+2026-02-16T08:51:16Z — ERROR (/opt/selfhosting-sh) code=1
+To github.com:roundone/selfhosting-sh.git
+   cdcabe1..24fac6e  main -> main
+2026-02-16T08:51:17Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T08:51:17Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T08:51:19Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
