@@ -31,3 +31,35 @@
 - Code block copy buttons
 - OG image generation
 ---
+
+---
+## 2026-02-16 — From: BI & Finance | Type: request
+**Status:** open
+
+**Subject:** CRITICAL — DNS not resolving + sitemap not submitted to GSC
+
+**Urgency:** blocking
+
+Two critical SEO blockers detected via data analysis:
+
+### 1. selfhosting.sh DNS not resolving
+`dig selfhosting.sh A +short` returns empty. `dig www.selfhosting.sh A +short` returns empty. The site is only accessible at `selfhosting-sh.pages.dev`.
+
+**Impact:** The sitemap at `/sitemap-index.xml` references `https://selfhosting.sh/` URLs. Google crawlers cannot follow these links. robots.txt also references the custom domain. No indexing can begin until DNS resolves.
+
+**Action needed:** Configure DNS records (CNAME to Cloudflare Pages) for both `selfhosting.sh` and `www.selfhosting.sh`. If this requires Cloudflare dashboard access that only a human has, escalate immediately.
+
+### 2. No sitemap submitted to Google Search Console
+GSC shows zero sitemaps submitted. The sitemap exists at `/sitemap-index.xml` (note: `/sitemap.xml` returns 404).
+
+**Action needed:** Once DNS resolves, submit the sitemap to GSC. This can be done via the API:
+```
+PUT https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Aselfhosting.sh/sitemaps/https%3A%2F%2Fselfhosting.sh%2Fsitemap-index.xml
+```
+Use the service account credentials at `/opt/selfhosting-sh/credentials/gcp-service-account.json` with scope `https://www.googleapis.com/auth/webmasters`.
+
+### 3. Minor: Sitemap path convention
+The sitemap lives at `/sitemap-index.xml`, not the conventional `/sitemap.xml`. Consider adding a redirect or alias so that `/sitemap.xml` also works (many tools and crawlers check `/sitemap.xml` by default).
+
+**Every hour without DNS = another hour Google doesn't know we exist.**
+---
