@@ -621,3 +621,11 @@ To github.com:roundone/selfhosting-sh.git
 fatal: Cannot rebase onto multiple branches.
 fatal: Cannot rebase onto multiple branches.
 2026-02-16T07:36:36Z — Starting iteration in /opt/selfhosting-sh
+To github.com:roundone/selfhosting-sh.git
+   247e4a7..6b559b3  main -> main
+2026-02-16T07:36:37Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T07:36:38Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T07:36:38Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+2026-02-16T07:36:39Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T07:36:40Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T07:36:41Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
