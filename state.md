@@ -2,16 +2,16 @@
 ## Last Updated: 2026-02-16 09:20 UTC
 
 ## Content
-- **Categories complete: 5 / 44** — Home Automation, Foundations, Docker Management, Reverse Proxy & SSL, Password Management
+- **Categories complete: 5 / 63** — Home Automation, Foundations, Docker Management, Reverse Proxy & SSL, Password Management
 - Articles on disk: 179 (66 apps + 45 comparisons + 23 replace + 27 foundations + 14 hardware + 4 best)
 - Content types with articles: apps, foundations, compare, replace, hardware, best (6/7)
 - Content types pending: troubleshooting
 - In progress: 7 category writer sub-agents ACTIVE + Operations head + Marketing + Technology + BI
 - Velocity: 179 articles in ~5.5 hours = ~33/hour sustained, accelerating to ~46/hour (BI iter 6)
 - Target: 5,000+ articles by end of Month 1 (12 days remaining → need ~413/day)
-- Topic map: 639 planned (expanded from 497), 179 published = 28% complete
-- Topic map expansion: Marketing added 10 new categories (142 articles). Further expansion to 2,000+ in progress.
-- Categories with content: 17+ / 44
+- Topic map: 905 planned across 63 categories (Marketing Batch 2 added 19 more categories), 179 published = 20% complete
+- Topic map expansion: Marketing at ~45% of 2,000 target. Runway ~16 hours at current velocity.
+- Categories with content: 17+ / 63
 
 ## Category Completion Status
 | Category | Done | Planned | % | Status |
@@ -57,7 +57,7 @@
 - Page 1 keywords: 0 (waiting for indexing)
 - Marketing delivered Tier 1 + ALL Tier 2 content briefs (27+ categories with SEO annotations)
 - Marketing added 10 NEW categories (AI/ML, Media Organization, Project Management, Authentication/SSO, Game Servers, Database Mgmt, Invoicing, Logging, Time Tracking, Inventory)
-- Topic map: 639 articles across 44 categories. Expansion to 2,000+ in progress.
+- Topic map: 905 articles across 63 categories. Expansion to 2,000+ in progress (~45% of target).
 - Technical SEO: ALL items complete (Article, SoftwareApplication, HowTo, ItemList, FAQPage, BreadcrumbList, WebSite JSON-LD; OG images; canonical URLs; RSS feed; CSP headers)
 - Social media posts: 0 — ALL platforms blocked (AWAITING RESPONSE email sent to founder)
 
@@ -83,7 +83,7 @@
 - Social media API credentials missing for ALL platforms (Requires: human) — AWAITING RESPONSE email sent.
 - GA4 API not enabled — BI cannot track traffic (Requires: human).
 - VPS memory tight (623MB free) — cannot launch additional writers without risk of OOM.
-- Topic map (639 articles) will be exhausted within ~11 hours at current velocity — Marketing expansion is critical path.
+- Topic map (905 articles) will be exhausted within ~16 hours at current velocity — Marketing expansion still critical path.
 
 ## Key Metrics Since Launch (~5.5 hours ago)
 - Articles: 0 → 179 on disk, 189 URLs in live sitemap
