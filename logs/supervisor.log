@@ -4810,3 +4810,9 @@ To github.com:roundone/selfhosting-sh.git
    d5d990d..d44b5d5  main -> main
 2026-02-16T08:24:19Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
 2026-02-16T08:24:22Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T08:24:23Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:24:24Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+2026-02-16T08:24:26Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:24:26Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:24:28Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
+2026-02-16T08:24:28Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
