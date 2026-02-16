@@ -913,3 +913,19 @@ Output:       "dist/pagefind"
 Found 69 files matching **/*.{html}
 
 [Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 56 pages
+  Indexed 6828 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.719 seconds
+2026-02-16T08:31:09Z -- [auto-deploy] Build succeeded
