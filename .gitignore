@@ -7,4 +7,6 @@ site/node_modules/
 site/.astro/
 .claude/
 logs/supervisor.log
+logs/deploy.log
+logs/proxy-status.json
 .last-deploy-hash
