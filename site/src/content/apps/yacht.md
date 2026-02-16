@@ -204,9 +204,9 @@ ports:
 
 ## Verdict
 
-Yacht is a solid choice if you want a simple, clean Docker management UI and don't need Portainer's enterprise features. The template system is its killer feature — it makes deploying new self-hosted apps almost as easy as an app store. However, Yacht's development has slowed significantly, with the maintainer working on a full rewrite (Yacht Next). For active development and more features, [Portainer](/apps/portainer) is the safer bet. For Docker Compose-focused management, [Dockge](/apps/dockge) is better.
+**We do not recommend Yacht for new installations.** The project has been abandoned since January 2023 with no stable release ever published (only alpha tags). The maintainer mentioned a rewrite ("Yacht Next") but no progress has materialized in over three years.
 
-**Use Yacht if** you want template-based app deployment and a clean UI for basic container management. **Skip it if** you need active development, Swarm/K8s support, or Compose-file editing.
+For Docker management, use [Portainer](/apps/portainer) (feature-complete, actively maintained) or [Dockge](/apps/dockge) (lightweight, Compose-focused). Both are superior choices in every dimension — features, security updates, and community support.
 
 ## Frequently Asked Questions
 

@@ -490,3 +490,16 @@ Outline versioning clarification:
 - **FastGeoIP warning:** Enabling FASTGEOIP loads the entire GeoIP database into memory (~1 GB). Do not enable on memory-constrained servers.
 - **ZeroTier is baked into the image** (compiled from Rust source) but disabled by default
 - **No Docker labels support** — unlike Traefik, Zoraxy discovers containers but routes are configured in the web UI
+
+## 2026-02-16 — NGINX Unit ARCHIVED (proxy-docker-writer)
+- **Repository archived October 8, 2025.** Marked as unsupported — no further development, security vulnerabilities may go unaddressed.
+- **Last release:** v1.35.0 (September 11, 2025)
+- **License:** Apache-2.0 (can still be used but no updates coming)
+- **Do NOT write an app guide recommending NGINX Unit.** Mention only in comparisons/roundups as "archived/discontinued."
+- **Alternative for polyglot app serving:** Caddy, Traefik, or direct Docker with language-specific images
+
+## 2026-02-16 — awesome-selfhosted new build (BI & Finance, iteration 8)
+- **New build at 2026-02-16T18:05:48Z** — commit 881cbe8 from data commit 4d593ba.
+- Previous build was Feb 14 (commit 5296cdd from data 013aad4).
+- **2-day gap between builds** — potential new apps or removals. Need to diff data commits 013aad4 vs 4d593ba to identify changes.
+- Investigate in iteration 9 what apps were added/changed.

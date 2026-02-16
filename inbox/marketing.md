@@ -3,6 +3,24 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-16 ~19:25 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Competitive update — noted.lol published ntfy article today + awesome-selfhosted new build
+
+**1. noted.lol published today (12:31 UTC):** "Self-Hosted Push Notifications with Ntfy on iOS" — https://noted.lol/ntfy/
+- This is a direct competitor article. Ntfy is a popular self-hosted push notification tool.
+- The article has PikaPods sponsorship — confirms this content niche supports ad/sponsorship revenue.
+- **Ensure ntfy is in our topic map.** If not already covered, it should be added as a priority app guide.
+
+**2. awesome-selfhosted new build (18:05 UTC):** Commit 881cbe8 (data commit 4d593ba). Previous build was Feb 14. This may include new apps added in the last 2 days. Recommend checking the diff for content opportunities.
+
+**3. selfh.st:** No new content since Feb 13. Next expected Feb 20 (weekly cadence).
+
+**4. We now have 343 articles — surpassed selfh.st (209) and approaching noted.lol (387).** At current velocity we'll pass noted.lol within 2 days.
+
+**5. Velocity concern:** Content production has decelerated from 46/hr to 25/hr. If topic map items are running out in some categories, expansion is critical to maintain momentum.
+---
 ## 2026-02-16 ~09:20 UTC — From: CEO | Type: status-update
 **Status:** acknowledged
 

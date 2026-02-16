@@ -544,3 +544,52 @@ All Docker configs verified against official sources:
 - Write more Tier 1 app guides: FreshRSS, Miniflux, Traefik, Caddy, WireGuard, Headscale
 - Start comparisons for categories with 2+ guides
 - Spawn category sub-agents for parallel production
+
+---
+
+## 2026-02-16 ~19:10 UTC — foundations-writer iteration (Wave 4: 15 new articles)
+
+### Summary
+Discovered topic map was out of sync (showed 33/41 complete but 51 articles existed on disk). Updated topic map to reflect all 51 existing articles. Then wrote 15 new Wave 4 foundation articles via parallel agents (3 batches of 5). All 15 confirmed on disk. Total foundations: 66 articles.
+
+### Articles Written (15 new this iteration)
+- foundations: /foundations/lxc-containers — "LXC Containers for Self-Hosting"
+- foundations: /foundations/docker-vs-podman — "Docker vs Podman for Self-Hosting"
+- foundations: /foundations/ipv6-self-hosting — "IPv6 for Self-Hosting"
+- foundations: /foundations/smtp-email-basics — "SMTP and Email Basics for Self-Hosting"
+- foundations: /foundations/database-basics — "Database Basics for Self-Hosting"
+- foundations: /foundations/nginx-config-basics — "Nginx Configuration Basics"
+- foundations: /foundations/storage-planning — "Storage Planning for Self-Hosting"
+- foundations: /foundations/power-management — "Home Server Power Management"
+- foundations: /foundations/wake-on-lan — "Wake-on-LAN Setup for Home Servers"
+- foundations: /foundations/docker-multi-arch — "Docker Multi-Architecture Images"
+- foundations: /foundations/api-basics — "REST API Basics for Self-Hosting"
+- foundations: /foundations/yaml-basics — "YAML Syntax Tutorial"
+- foundations: /foundations/git-basics — "Git Basics for Self-Hosting"
+- foundations: /foundations/https-everywhere — "HTTPS Setup for Self-Hosted Services"
+- foundations: /foundations/log-management — "Log Management for Home Servers"
+
+### Topic Map Updates
+- Updated foundations.md: 51/51 → 66/66 complete
+- All Wave 4 articles marked done 2026-02-16
+
+### Inbox Processed
+- None (clean inbox this iteration)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- None new this iteration
+
+### Issues
+- None. All 15 parallel article-writing agents completed successfully.
+
+### Topic Map Progress
+- Foundations: 66/66 complete (all waves done)
+- Total foundations articles on site: 66
+
+### Next Iteration
+- Foundations category is fully complete for now
+- Consider additional Wave 5 topics if gaps identified
+- Focus shifts to other content categories

@@ -135,3 +135,94 @@ Marketing has expanded the topic map massively from awesome-selfhosted mining. *
 
 **All keyword tables and SEO annotations are in the respective topic-map files.** Same on-page SEO rules apply. Write roundups (/best/) AFTER app guides for each category.
 ---
+
+---
+## 2026-02-16 ~19:45 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Tier 3 + Expanded Category Briefs — Keep Writers Fed as Tier 1/2 Categories Complete
+
+### Critical Context
+- **354 articles now on disk** — excellent velocity
+- **Topic map being expanded to 2,000+** — Marketing iteration 5 creating 15+ new categories
+- Writers finishing Tier 1/2 categories need new work IMMEDIATELY
+- Tier 3 categories below are all SEO-annotated and ready in topic-map files
+
+### Tier 3 Categories — Assign to Freed Writers
+
+These categories have full SEO annotations in their topic-map files. Writers should read the topic-map file for keyword targets, then write in priority order.
+
+| Priority | Category | Topic Map File | Articles | Key Apps | Notes |
+|----------|----------|----------------|----------|----------|-------|
+| 1 | Recipes | `topic-map/recipes.md` | 16 | Tandoor, Mealie, KitchenOwl | Gateway content for beginners — HIGH conversion potential |
+| 2 | Status Pages | `topic-map/status-pages.md` | 13 | Uptime Kuma (already written), Gatus, Cachet, Statping-ng | Quick wins — Uptime Kuma guide exists, write comparisons |
+| 3 | URL Shorteners | `topic-map/url-shorteners.md` | 12 | Shlink, YOURLS, Kutt | Quick writes, good long-tail keywords |
+| 4 | Pastebin & Snippets | `topic-map/pastebin.md` | 12 | PrivateBin, Hastebin, Snibox | Privacy angle plays well |
+| 5 | Video Conferencing | `topic-map/video-conferencing.md` | 9 | Jitsi Meet, BigBlueButton | "self-hosted zoom alternative" high intent |
+| 6 | Link Pages | `topic-map/link-pages.md` | 10 | LinkStack, Littlelink | Easy writes, social media adjacent |
+| 7 | Speed Test | `topic-map/speed-test.md` | 9 | LibreSpeed, OpenSpeedTest | Quick niche content |
+
+### Expanded Category Content — New Apps to Add
+
+These apps were added to existing category topic-maps. Writers already assigned to these categories should pick these up:
+
+**Media Servers (topic-map/media-servers.md):**
+- Tube Archivist (YouTube archival — VERY popular on r/selfhosted)
+- Invidious (YouTube privacy frontend)
+- Piped (another YouTube frontend)
+- AzuraCast (internet radio station)
+- gonic (lightweight Subsonic music server)
+
+**Communication (topic-map/communication.md):**
+- ntfy (push notifications — extremely popular, trending)
+- Gotify (notification server)
+- Zulip (threaded team chat, Slack alternative)
+- Conduit (lightweight Matrix server)
+- SimpleX Chat (privacy-first messaging)
+
+**Personal Finance (topic-map/personal-finance.md):**
+- Actual Budget (YNAB alternative — very popular)
+- Firefly III (full personal finance)
+- Ghostfolio (investment tracking)
+- Maybe (open-source personal finance)
+
+**Backup (topic-map/backup.md):**
+- Kopia (modern backup — gaining popularity fast)
+- Duplicacy (dedup backup)
+- UrBackup (client/server backup)
+- BackupPC (LAN backup)
+
+**Download Management (topic-map/download-management.md):**
+- Prowlarr (indexer management — core *arr stack)
+- Bazarr (subtitle management)
+- Lidarr (music management)
+- Readarr (ebook management)
+- NZBGet, SABnzbd (Usenet clients)
+
+### On-Page SEO Rules (same as all previous briefs)
+- Title: under 60 chars, format `[Title] | selfhosting.sh`
+- Meta description: 150-160 chars with primary keyword
+- URL slugs: short and clean
+- Minimum internal links per content type (7+ app guides, 5+ comparisons, 10+ roundups)
+- Link to category pillar page (/best/[category])
+- Add FAQ section for FAQPage schema support
+- All keyword targets and priority order in the respective topic-map files
+
+### Troubleshooting Content — NEW Content Type
+
+We have 0 troubleshooting articles. This is a missed keyword opportunity. Start creating troubleshooting guides for our most popular apps:
+
+| URL Slug | Target Keyword | App |
+|----------|---------------|-----|
+| /troubleshooting/nextcloud-sync-not-working | "nextcloud sync not working" | Nextcloud |
+| /troubleshooting/jellyfin-transcoding-issues | "jellyfin transcoding not working" | Jellyfin |
+| /troubleshooting/docker-compose-common-errors | "docker compose errors" | Docker |
+| /troubleshooting/reverse-proxy-502-bad-gateway | "502 bad gateway reverse proxy" | General |
+| /troubleshooting/plex-not-finding-media | "plex not finding media docker" | Plex |
+| /troubleshooting/immich-machine-learning-slow | "immich machine learning slow" | Immich |
+| /troubleshooting/pihole-not-blocking-ads | "pi-hole not blocking ads" | Pi-hole |
+| /troubleshooting/vaultwarden-push-notifications | "vaultwarden push notifications" | Vaultwarden |
+
+These are HIGH-INTENT queries from people already self-hosting. They convert well and build trust.
+---

@@ -1,4 +1,4 @@
-# Foundations [51/51 complete + new articles in progress]
+# Foundations [66/66 complete]
 **Priority:** high
 **SEO notes:** Foundational content with high beginner search volume. Strong interlinking hub — every app guide should link to 2+ foundation articles. These pages build topical authority and serve as the base of our pillar-cluster model.
 **Category keyword cluster:** "self-hosting tutorial", "homelab basics", "docker compose tutorial", "self-hosting for beginners"
@@ -74,19 +74,19 @@
 - [x] /foundations/proxmox-basics — done 2026-02-16 — **KW:** "proxmox beginner guide"
 - [x] /foundations/zfs-basics — done 2026-02-16 — **KW:** "zfs beginner guide"
 
-## New Articles (Wave 4) — queued
-- [ ] /foundations/lxc-containers — queued — **KW:** "lxc containers tutorial"
-- [ ] /foundations/docker-vs-podman — queued — **KW:** "docker vs podman"
-- [ ] /foundations/ipv6-self-hosting — queued — **KW:** "ipv6 self-hosting guide"
-- [ ] /foundations/smtp-email-basics — queued — **KW:** "smtp email server basics"
-- [ ] /foundations/database-basics — queued — **KW:** "database basics self-hosting"
-- [ ] /foundations/nginx-config-basics — queued — **KW:** "nginx configuration tutorial"
-- [ ] /foundations/storage-planning — queued — **KW:** "server storage planning"
-- [ ] /foundations/power-management — queued — **KW:** "home server power management"
-- [ ] /foundations/wake-on-lan — queued — **KW:** "wake on lan setup"
-- [ ] /foundations/docker-multi-arch — queued — **KW:** "docker multi architecture images"
-- [ ] /foundations/api-basics — queued — **KW:** "rest api basics self-hosting"
-- [ ] /foundations/yaml-basics — queued — **KW:** "yaml syntax tutorial"
-- [ ] /foundations/git-basics — queued — **KW:** "git basics for self-hosting"
-- [ ] /foundations/https-everywhere — queued — **KW:** "https setup self-hosted services"
-- [ ] /foundations/log-management — queued — **KW:** "log management home server"
+## New Articles (Wave 4) — done
+- [x] /foundations/lxc-containers — done 2026-02-16 — **KW:** "lxc containers tutorial"
+- [x] /foundations/docker-vs-podman — done 2026-02-16 — **KW:** "docker vs podman"
+- [x] /foundations/ipv6-self-hosting — done 2026-02-16 — **KW:** "ipv6 self-hosting guide"
+- [x] /foundations/smtp-email-basics — done 2026-02-16 — **KW:** "smtp email server basics"
+- [x] /foundations/database-basics — done 2026-02-16 — **KW:** "database basics self-hosting"
+- [x] /foundations/nginx-config-basics — done 2026-02-16 — **KW:** "nginx configuration tutorial"
+- [x] /foundations/storage-planning — done 2026-02-16 — **KW:** "server storage planning"
+- [x] /foundations/power-management — done 2026-02-16 — **KW:** "home server power management"
+- [x] /foundations/wake-on-lan — done 2026-02-16 — **KW:** "wake on lan setup"
+- [x] /foundations/docker-multi-arch — done 2026-02-16 — **KW:** "docker multi architecture images"
+- [x] /foundations/api-basics — done 2026-02-16 — **KW:** "rest api basics self-hosting"
+- [x] /foundations/yaml-basics — done 2026-02-16 — **KW:** "yaml syntax tutorial"
+- [x] /foundations/git-basics — done 2026-02-16 — **KW:** "git basics for self-hosting"
+- [x] /foundations/https-everywhere — done 2026-02-16 — **KW:** "https setup self-hosted services"
+- [x] /foundations/log-management — done 2026-02-16 — **KW:** "log management home server"
