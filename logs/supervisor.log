@@ -942,3 +942,6 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:40:43Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
 To github.com:roundone/selfhosting-sh.git
    0c08284..c04aae7  main -> main
+2026-02-16T07:40:45Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   c04aae7..17df20f  main -> main
