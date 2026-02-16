@@ -6130,3 +6130,10 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:41:38Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
 To github.com:roundone/selfhosting-sh.git
    0b741dc..1f42dc9  main -> main
+To github.com:roundone/selfhosting-sh.git
+   1f42dc9..50c5ff4  main -> main
+2026-02-16T08:41:46Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:41:47Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:41:47Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+fatal: Cannot rebase onto multiple branches.
+fatal: Cannot rebase onto multiple branches.
