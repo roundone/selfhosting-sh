@@ -18,7 +18,9 @@ const navLinks = [
       ))}
     </ul>
     <div class="nav-search">
-      <div id="search"></div>
+      <form class="nav-search-form" action="/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Search guides..." aria-label="Search" class="nav-search-input" />
+      </form>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
         <span id="theme-icon">&#9790;</span>
       </button>

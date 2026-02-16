@@ -27,3 +27,119 @@
 ## Setup Guides
 - [ ] /guides/privacy-friendly-analytics-setup — **Target:** "privacy-friendly analytics setup" | **Secondary:** "self-hosted privacy analytics", "gdpr compliant analytics self-hosted", "cookie-free analytics setup" | **Volume:** High | **Priority:** 1
 - [ ] /guides/self-hosted-analytics-comparison — **Target:** "self-hosted analytics comparison" | **Secondary:** "compare self-hosted analytics tools", "which self-hosted analytics to use" | **Volume:** Medium-High | **Priority:** 2
+
+## Expanded Apps (Marketing iteration — topic map expansion)
+
+### Self-Host Ackee — Minimal Privacy-Focused Analytics
+- **URL slug:** /apps/ackee
+- **Content type:** app-guide
+- **Target keyword:** "ackee analytics docker compose"
+- **Secondary keywords:** "ackee setup", "ackee self-hosted analytics", "minimal analytics self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 7
+- **Status:** planned
+
+### Self-Host Shynet — Lightweight Privacy-Respecting Analytics
+- **URL slug:** /apps/shynet
+- **Content type:** app-guide
+- **Target keyword:** "shynet docker compose"
+- **Secondary keywords:** "shynet setup", "shynet analytics", "privacy analytics self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 8
+- **Status:** planned
+
+### Self-Host GoatCounter — Simple Web Analytics
+- **URL slug:** /apps/goatcounter
+- **Content type:** app-guide
+- **Target keyword:** "goatcounter self-hosted"
+- **Secondary keywords:** "goatcounter docker", "goatcounter setup", "simple analytics self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+### Self-Host Open Web Analytics — Full-Featured Analytics Alternative
+- **URL slug:** /apps/open-web-analytics
+- **Content type:** app-guide
+- **Target keyword:** "open web analytics docker"
+- **Secondary keywords:** "open web analytics setup", "OWA self-hosted", "open web analytics alternative"
+- **Estimated volume:** low-medium
+- **Priority:** 10
+- **Status:** planned
+
+### Self-Host Countly — Product Analytics and User Engagement
+- **URL slug:** /apps/countly
+- **Content type:** app-guide
+- **Target keyword:** "countly docker compose"
+- **Secondary keywords:** "countly self-hosted", "countly setup", "mobile analytics self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 11
+- **Status:** planned
+
+## Expanded Comparisons
+
+### PostHog vs Plausible — Product Analytics vs Web Analytics
+- **URL slug:** /compare/posthog-vs-plausible
+- **Content type:** comparison
+- **Target keyword:** "posthog vs plausible"
+- **Secondary keywords:** "posthog or plausible", "product analytics vs web analytics self-hosted"
+- **Estimated volume:** medium-high
+- **Priority:** 7
+- **Status:** planned
+
+### GoatCounter vs Umami — Simple Analytics Compared
+- **URL slug:** /compare/goatcounter-vs-umami
+- **Content type:** comparison
+- **Target keyword:** "goatcounter vs umami"
+- **Secondary keywords:** "goatcounter or umami", "simplest analytics self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 8
+- **Status:** planned
+
+### Matomo vs PostHog — Traditional vs Modern Analytics
+- **URL slug:** /compare/matomo-vs-posthog
+- **Content type:** comparison
+- **Target keyword:** "matomo vs posthog"
+- **Secondary keywords:** "matomo or posthog", "best full-featured self-hosted analytics"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+## Expanded Replace Guides
+
+### Replace Mixpanel with Self-Hosted Product Analytics
+- **URL slug:** /replace/mixpanel
+- **Content type:** replace
+- **Target keyword:** "self-hosted alternative to mixpanel"
+- **Secondary keywords:** "mixpanel replacement self-hosted", "free mixpanel alternative"
+- **Estimated volume:** medium-high
+- **Priority:** 2
+- **Status:** planned
+
+### Replace Hotjar with Self-Hosted Analytics
+- **URL slug:** /replace/hotjar
+- **Content type:** replace
+- **Target keyword:** "self-hosted alternative to hotjar"
+- **Secondary keywords:** "hotjar replacement self-hosted", "session recording self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 3
+- **Status:** planned
+
+## Troubleshooting
+
+### Plausible Not Tracking Visits — Fix Guide
+- **URL slug:** /troubleshooting/plausible-not-tracking
+- **Content type:** troubleshooting
+- **Target keyword:** "plausible not tracking visits"
+- **Secondary keywords:** "plausible analytics not working", "plausible script not loading"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### Matomo GDPR Compliance Setup — Configuration Guide
+- **URL slug:** /troubleshooting/matomo-gdpr-setup
+- **Content type:** troubleshooting
+- **Target keyword:** "matomo gdpr compliance setup"
+- **Secondary keywords:** "matomo privacy settings", "matomo cookie consent"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned

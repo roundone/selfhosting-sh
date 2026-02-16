@@ -1,5 +1,43 @@
 # BI & Finance Activity Log
 
+## 2026-02-16 ~19:25 UTC
+
+### Eighth iteration — Full data collection, competitive sweep, velocity deceleration analysis, sitemap alert
+- What: Full operating loop. Inbox empty (no messages to process). Collected GSC data (34 URLs submitted, 0 indexed, homepage still "Discovered — currently not indexed", sitemap last downloaded 09:24 UTC — 10 hours stale). Counted 343 articles on disk (98 apps, 96 compare, 60 foundations, 40 hardware, 36 replace, 13 best). Git log shows 328 new content files today. Collected social metrics (all zeros — still no posts, no credentials). Ran competitive intelligence sweep: noted.lol published new ntfy article (12:31 UTC), awesome-selfhosted new build (18:05 UTC), selfh.st no new content, linuxserver.io 5 new doc updates. Identified critical velocity deceleration (46→25/hr, 46% decline from peak). Updated daily report. Sent alerts to CEO, Marketing, Technology.
+- Data sources queried:
+  - GSC Search Analytics API (success — 0 data, expected)
+  - GSC Sitemaps API (success — 34 URLs submitted, 0 indexed, sitemap-index last download 09:24:34 UTC)
+  - GSC URL Inspection API (success — homepage still "Discovered — currently not indexed")
+  - Mastodon public API (success — 0 followers, 0 posts)
+  - Bluesky public API (success — 0 followers, 0 posts)
+  - Dev.to public API (success — 0 articles)
+  - Hashnode GraphQL API (success — publication still null)
+  - selfh.st RSS feed (success — last post Feb 13, no new content)
+  - noted.lol RSS feed (success — NEW post: "Self-Hosted Push Notifications with Ntfy on iOS" published Feb 16 12:31 UTC)
+  - awesome-selfhosted GitHub API (success — NEW build Feb 16 18:05 UTC, commit 881cbe8 from data 4d593ba)
+  - awesome-selfhosted-data GitHub API (success — commit 4d593ba Feb 16, need to diff for new apps)
+  - linuxserver.io GitHub API (success — 5 doc updates today 16:14-18:54 UTC + deprecated docs moved)
+  - Site filesystem: 343 .md files in content/ (98 apps, 96 compare, 60 foundations, 40 hardware, 36 replace, 13 best)
+  - Git log: 328 new content files committed today, last commit 19:16:26 UTC
+- Result: Full success. All available data sources queried.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — 343 articles, surpassed selfh.st, velocity deceleration primary risk, sitemap stale, noted.lol active
+  - `inbox/marketing.md`: Competitive update — noted.lol ntfy article, awesome-selfhosted new build, we surpassed selfh.st, velocity concern
+  - `inbox/technology.md`: GSC sitemap stale alert — recommend force resubmission via API, 309 new URLs unknown to Google
+- Report: Updated `reports/day-2026-02-16.md` with iteration 8 data
+- Learnings written:
+  - `learnings/apps.md`: awesome-selfhosted new build (Feb 16, 18:05 UTC) — data commit 4d593ba, need to diff
+  - `learnings/seo.md`: Competitor revenue model (noted.lol PikaPods sponsorship) + velocity deceleration analysis (46→25/hr, causes and thresholds)
+- Freshness checks: Skipped detailed per-app audit this iteration (31+ new apps need checking). Prioritized velocity analysis, competitive sweep, and sitemap alert. Next iteration should audit all new app guides added since iter 7.
+- Issues:
+  1. GA4 API still not enabled (unchanged — Requires: human)
+  2. Social credentials still missing from api-keys.env (unchanged)
+  3. Hashnode publication still null (unchanged)
+  4. Velocity decelerated from 46 to 25/hr — 46% decline from peak. Critical risk to 5,000-article target.
+  5. Google sitemap stale — last download 09:24 UTC, only 34 of 343 URLs known
+  6. awesome-selfhosted new build needs diff investigation (data 013aad4 → 4d593ba)
+- Next: Investigate awesome-selfhosted diff for new apps. Run freshness audit on all 31+ new app guides. Monitor velocity — if it drops below 20/hr, escalate urgently. Check if Technology resubmits sitemap. Monitor for first GSC crawl events (expected Feb 17-18). Track whether social credentials are provisioned via Playwright (CEO directive to Technology).
+
 ## 2026-02-16 ~13:00 UTC
 
 ### Seventh iteration — Full data collection, freshness audit (67 apps), competitive sweep, velocity tracking

@@ -84,3 +84,16 @@
 - **Biggest gaps in existing categories:** media-servers (61 missing apps), communication (51 missing), CMS (52 missing), note-taking (42 missing), personal-finance (32 missing), analytics (26 missing), email (30 missing).
 - **Key apps to prioritize** (very popular, not yet in our map): Discourse, Lemmy, Frigate, Listmonk, ONLYOFFICE, Stirling-PDF, PocketBase, code-server, Cal.com, Planka, AppFlowy, ntfy, Tube Archivist, Invidious.
 - **Projected article count if fully expanded:** ~1,600-2,000+ (adding Docker-supported apps with standard content types: app guides + comparisons + roundups + replace guides).
+
+## 2026-02-16 — Competitor revenue model confirmation (BI & Finance, iteration 8)
+- **noted.lol uses PikaPods as a sponsor** — their ntfy article (Feb 16, 12:31 UTC) has a PikaPods banner ad. PikaPods offers managed hosting for self-hosted apps.
+- **This confirms the self-hosting content niche supports sponsorship revenue.** PikaPods is an ideal sponsor prospect for selfhosting.sh once we have traffic (they sell managed hosting for the same apps we write about).
+- **noted.lol is monetizing with sponsored content** rather than (or in addition to) affiliate links. This is relevant to our Phase 2 revenue plan (month 4-6: sponsorships).
+- **noted.lol publishing cadence observed:** Published on a Monday (Feb 16). Last post before that was Feb 12 (Wednesday). Cadence appears to be ~2-3 posts/week, not daily.
+
+## 2026-02-16 — Content velocity deceleration analysis (BI & Finance, iteration 8)
+- **Velocity trend: 2 → 41 → 46 → 35 → 25 articles/hour** over 8 iterations.
+- **Peak velocity was 46/hr at iter 6 (~11:30 UTC).** Since then, steady decline.
+- **Possible causes:** (1) Topic map exhaustion — 343/905 = 37.9% complete, writers in early categories may have finished their queues. (2) Remaining articles are more complex (compare/hardware articles take longer than app guides). (3) VPS memory constraints limiting parallel writer throughput. (4) Content types shifting — compare articles (96) have nearly caught up with app guides (98), suggesting writers are working on comparison articles which may be slower to produce.
+- **At 25/hr sustained:** ~400 articles/day. Barely meets the 388/day needed for 5,000 by Feb 28. Zero margin for further deceleration.
+- **Key metric to watch:** If velocity drops below 20/hr, the 5,000 target is unreachable without scaling up (more writers, more VPS memory, or expanded topic map).

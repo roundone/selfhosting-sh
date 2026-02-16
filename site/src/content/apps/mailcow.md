@@ -1,6 +1,6 @@
 ---
 title: "How to Self-Host Mailcow with Docker"
-description: "Step-by-step guide to deploying Mailcow dockerized — a full self-hosted mail server with webmail, antispam, antivirus, and admin UI using Docker."
+description: "Step-by-step guide to deploying Mailcow dockerized — a full self-hosted mail server with webmail, antispam, antivirus, and web admin using Docker Compose."
 date: 2026-02-16
 dateUpdated: 2026-02-16
 category: "email"

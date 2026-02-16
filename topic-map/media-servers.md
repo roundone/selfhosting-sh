@@ -33,6 +33,84 @@
 - [ ] /replace/youtube — **Priority 22** | Target: "self-hosted alternative to youtube" | Secondary: "youtube alternative self-hosted" | Est. volume: very high
 - [ ] /replace/podcast-apps — **Priority 23** | Target: "self-hosted podcast player" | Est. volume: medium
 
+## Expanded Apps (Marketing iteration — topic map expansion)
+
+### Self-Host Piped — Privacy-Friendly YouTube Frontend
+- **URL slug:** /apps/piped
+- **Content type:** app-guide
+- **Target keyword:** "piped docker compose"
+- **Secondary keywords:** "piped setup", "piped youtube frontend", "self-hosted youtube privacy"
+- **Estimated volume:** high
+- **Priority:** 28
+- **Status:** planned
+
+### Self-Host Stremio Server — Media Aggregation Platform
+- **URL slug:** /apps/stremio-server
+- **Content type:** app-guide
+- **Target keyword:** "stremio server docker"
+- **Secondary keywords:** "stremio server setup", "self-hosted stremio", "stremio addon server"
+- **Estimated volume:** medium
+- **Priority:** 29
+- **Status:** planned
+
+### Self-Host Olaris — Modern Media Server
+- **URL slug:** /apps/olaris
+- **Content type:** app-guide
+- **Target keyword:** "olaris docker compose"
+- **Secondary keywords:** "olaris media server", "olaris setup", "modern media server self-hosted"
+- **Estimated volume:** low
+- **Priority:** 30
+- **Status:** planned
+
+## Expanded Comparisons
+
+### Invidious vs Piped — YouTube Frontend Comparison
+- **URL slug:** /compare/invidious-vs-piped
+- **Content type:** comparison
+- **Target keyword:** "invidious vs piped"
+- **Secondary keywords:** "invidious or piped", "best youtube frontend self-hosted"
+- **Estimated volume:** medium-high
+- **Priority:** 31
+- **Status:** planned
+
+### Jellyfin vs Emby vs Plex — Three-Way Media Server Comparison
+- **URL slug:** /compare/jellyfin-vs-emby-vs-plex
+- **Content type:** comparison
+- **Target keyword:** "jellyfin vs emby vs plex"
+- **Secondary keywords:** "media server comparison 2026", "best media server plex jellyfin emby"
+- **Estimated volume:** very high
+- **Priority:** 32
+- **Status:** planned
+
+## Expanded Troubleshooting
+
+### Jellyfin Transcoding Not Working — Fix Guide
+- **URL slug:** /troubleshooting/jellyfin-transcoding
+- **Content type:** troubleshooting
+- **Target keyword:** "jellyfin transcoding not working"
+- **Secondary keywords:** "jellyfin hardware transcoding", "jellyfin transcoding error"
+- **Estimated volume:** high
+- **Priority:** 33
+- **Status:** planned
+
+### Plex Not Finding Media — Fix Guide
+- **URL slug:** /troubleshooting/plex-not-finding-media
+- **Content type:** troubleshooting
+- **Target keyword:** "plex not finding media"
+- **Secondary keywords:** "plex library scan not working", "plex media not showing"
+- **Estimated volume:** high
+- **Priority:** 34
+- **Status:** planned
+
+### Jellyfin Remote Access Not Working — Fix Guide
+- **URL slug:** /troubleshooting/jellyfin-remote-access
+- **Content type:** troubleshooting
+- **Target keyword:** "jellyfin remote access not working"
+- **Secondary keywords:** "jellyfin external access setup", "jellyfin reverse proxy not working"
+- **Estimated volume:** medium-high
+- **Priority:** 35
+- **Status:** planned
+
 ## Comparisons
 - [x] /compare/jellyfin-vs-plex — done 2026-02-16 — **KW:** "jellyfin vs plex" (Very High vol) — Priority 2
 - [ ] /compare/jellyfin-vs-emby — queued — **KW:** "jellyfin vs emby" (Medium vol) — Priority 8

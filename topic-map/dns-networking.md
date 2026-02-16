@@ -29,3 +29,108 @@
 - [ ] /troubleshooting/reverse-proxy-502 — **Priority 2** | Target: "reverse proxy 502 bad gateway docker" | Est. volume: high
 - [ ] /troubleshooting/docker-network-connectivity — **Priority 3** | Target: "docker containers can't communicate" | Est. volume: medium-high
 - [ ] /troubleshooting/ssl-certificate-errors — **Priority 4** | Target: "self-hosted ssl certificate errors" | Est. volume: medium
+
+## Expanded Apps (Marketing iteration — topic map expansion)
+
+### Self-Host Technitium DNS — Full-Featured DNS Server
+- **URL slug:** /apps/technitium
+- **Content type:** app-guide
+- **Target keyword:** "technitium dns docker compose"
+- **Secondary keywords:** "technitium dns setup", "technitium dns server", "self-hosted dns with ad blocking"
+- **Estimated volume:** medium-high
+- **Priority:** 8
+- **Status:** planned
+
+### Self-Host Blocky — DNS Proxy and Ad Blocker
+- **URL slug:** /apps/blocky
+- **Content type:** app-guide
+- **Target keyword:** "blocky dns docker compose"
+- **Secondary keywords:** "blocky setup", "blocky dns proxy", "lightweight dns ad blocker"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+### Self-Host Pi-hole as Primary DNS — Beyond Ad Blocking
+- **URL slug:** /apps/pihole-dns
+- **Content type:** app-guide
+- **Target keyword:** "pi-hole as primary dns server"
+- **Secondary keywords:** "pi-hole conditional forwarding", "pi-hole dns only setup", "pi-hole local dns"
+- **Estimated volume:** high
+- **Priority:** 10
+- **Status:** planned
+
+### Self-Host AdGuard Home DNS — Advanced DNS Configuration
+- **URL slug:** /apps/adguard-home-dns
+- **Content type:** app-guide
+- **Target keyword:** "adguard home dns server setup"
+- **Secondary keywords:** "adguard home dns configuration", "adguard home advanced dns", "adguard home as dns server"
+- **Estimated volume:** high
+- **Priority:** 11
+- **Status:** planned
+
+### Self-Host Knot Resolver — High-Performance DNS Resolver
+- **URL slug:** /apps/knot-resolver
+- **Content type:** app-guide
+- **Target keyword:** "knot resolver docker"
+- **Secondary keywords:** "knot resolver setup", "knot dns resolver", "high performance dns self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 12
+- **Status:** planned
+
+## Expanded Comparisons
+
+### Pi-hole vs AdGuard Home (DNS Focus) — Which DNS Server?
+- **URL slug:** /compare/pihole-vs-adguard-dns
+- **Content type:** comparison
+- **Target keyword:** "pi-hole vs adguard home dns"
+- **Secondary keywords:** "pi-hole or adguard as dns server", "best self-hosted dns server"
+- **Estimated volume:** very high
+- **Priority:** 5
+- **Status:** planned
+
+### Technitium vs Unbound — Self-Hosted DNS Compared
+- **URL slug:** /compare/technitium-vs-unbound
+- **Content type:** comparison
+- **Target keyword:** "technitium vs unbound"
+- **Secondary keywords:** "technitium or unbound", "best recursive dns self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 6
+- **Status:** planned
+
+### Blocky vs Pi-hole — Lightweight DNS Solutions Compared
+- **URL slug:** /compare/blocky-vs-pihole
+- **Content type:** comparison
+- **Target keyword:** "blocky vs pi-hole"
+- **Secondary keywords:** "blocky or pi-hole", "lightweight dns ad blocker comparison"
+- **Estimated volume:** medium
+- **Priority:** 7
+- **Status:** planned
+
+### CoreDNS vs Technitium — DNS Server Feature Comparison
+- **URL slug:** /compare/coredns-vs-technitium
+- **Content type:** comparison
+- **Target keyword:** "coredns vs technitium"
+- **Secondary keywords:** "coredns or technitium", "self-hosted dns server comparison"
+- **Estimated volume:** low-medium
+- **Priority:** 8
+- **Status:** planned
+
+## Expanded Foundation Guides
+
+### Setting Up Split DNS for Self-Hosted Services
+- **URL slug:** /foundations/split-dns-setup
+- **Content type:** foundation
+- **Target keyword:** "split dns self-hosted"
+- **Secondary keywords:** "split horizon dns", "internal dns self-hosted services", "hairpin NAT alternative"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned
+
+### DNS over HTTPS/TLS with Self-Hosted DNS — Complete Guide
+- **URL slug:** /foundations/dns-encryption-setup
+- **Content type:** foundation
+- **Target keyword:** "dns over https self-hosted"
+- **Secondary keywords:** "dns over tls setup", "encrypted dns self-hosted", "DoH DoT setup guide"
+- **Estimated volume:** medium-high
+- **Priority:** 2
+- **Status:** planned

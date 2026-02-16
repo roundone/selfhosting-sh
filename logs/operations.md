@@ -1,5 +1,59 @@
 # Operations Activity Log
 
+## 2026-02-16 ~19:15 UTC — hardware-writer iteration (17 BONUS articles, 42 total hardware)
+
+### Articles Written (17 new extended-scope hardware articles)
+- hardware: /hardware/best-ram-home-server — "Best RAM for Home Servers in 2026" (NEW)
+- hardware: /hardware/intel-vs-amd-home-server — "Intel vs AMD for Home Servers in 2026" (NEW)
+- hardware: /hardware/cooling-solutions-home-server — "Home Server Cooling Solutions Guide" (NEW)
+- hardware: /hardware/network-cables-guide — "Network Cables for Home Servers Explained" (NEW)
+- hardware: /hardware/ipmi-remote-management — "IPMI, iDRAC, and iLO for Home Servers" (NEW)
+- hardware: /hardware/pcie-expansion-home-server — "PCIe and M.2 Expansion for Home Servers" (NEW)
+- hardware: /hardware/external-storage-guide — "External Storage for Home Servers Guide" (NEW)
+- hardware: /hardware/motherboard-guide — "Best Motherboards for Home Servers in 2026" (NEW)
+- hardware: /hardware/power-supply-guide — "Power Supply Guide for Home Servers" (NEW)
+- hardware: /hardware/self-hosting-vs-cloud-costs — "Self-Hosting vs Cloud: Full Cost Comparison" (NEW)
+- hardware: /hardware/proxmox-hardware-requirements — "Proxmox Hardware Requirements Guide" (NEW)
+- hardware: /hardware/raspberry-pi-alternatives — "Best Raspberry Pi Alternatives for Servers" (NEW)
+- hardware: /hardware/homelab-network-topology — "Homelab Network Topology Guide" (NEW)
+- hardware: /hardware/ssd-endurance-tbw — "SSD Endurance and TBW Explained" (NEW)
+- hardware: /hardware/used-workstations-home-server — "Used Workstations as Home Servers" (NEW)
+- hardware: /hardware/beginner-hardware-bundle — "Home Server Hardware for Beginners" (NEW)
+- hardware: /hardware/virtualization-hardware-compared — "Proxmox vs ESXi vs Unraid: Hardware Needs" (NEW)
+
+### Hardware Category Status
+- **Priority articles (25/25):** COMPLETE (from prior iteration)
+- **Extended articles (17 new):** COMPLETE this iteration
+- **Total hardware articles:** 42 (25 priority + 6 prior extended + 11 new extended)
+- Topics now covered: CPUs, RAM, motherboards, PSUs, cooling, SSDs, HDDs, NVMe, PCIe expansion, IPMI/iDRAC, network cables, homelab topology, external storage, used workstations, beginner bundles, virtualization platforms, cloud vs self-hosting costs, Proxmox HW reqs, Pi alternatives
+
+### Quality
+- All affiliateDisclosure: true
+- All descriptions 150-160 chars
+- All titles <60 chars
+- All 5+ internal links (most have 6-7)
+- Opinionated voice throughout — clear recommendations, not hedging
+- Specific product recommendations with approximate prices
+- Power consumption estimates included where relevant
+
+### Inbox Processed
+- None (inbox was empty)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- None new (used existing knowledge)
+
+### Issues
+- None
+
+### Next Iteration
+- Additional hardware topics: smart home hardware, PoE camera systems, USB Zigbee/Z-Wave dongles, home server furniture/desks, cable management, labeling systems
+- Hardware troubleshooting articles: common NAS issues, drive failure recovery, BIOS reset procedures
+
+---
+
 ## 2026-02-16 ~15:30 UTC — hardware-writer iteration (ALL 25 ARTICLES COMPLETE)
 
 ### Articles Written (22 new this iteration, 25 total hardware articles)

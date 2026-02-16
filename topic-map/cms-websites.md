@@ -30,3 +30,117 @@
 ## Setup Guides
 - [ ] /guides/self-hosted-blog-setup — **Target:** "self-hosted blog setup" | **Secondary:** "how to self-host a blog", "self-hosted blog guide", "start self-hosted blog" | **Volume:** High | **Priority:** 1
 - [ ] /guides/headless-cms-comparison — **Target:** "best self-hosted headless CMS" | **Secondary:** "headless CMS comparison self-hosted", "directus vs strapi vs others" | **Volume:** Medium-High | **Priority:** 2
+
+## Expanded Apps (Marketing iteration — topic map expansion)
+
+### Self-Host Payload CMS — TypeScript-First Headless CMS
+- **URL slug:** /apps/payload-cms
+- **Content type:** app-guide
+- **Target keyword:** "payload cms docker compose"
+- **Secondary keywords:** "payload cms setup", "payload cms self-hosted", "typescript headless cms"
+- **Estimated volume:** medium-high
+- **Priority:** 8
+- **Status:** planned
+
+### Self-Host KeystoneJS — Powerful Node.js Headless CMS
+- **URL slug:** /apps/keystonejs
+- **Content type:** app-guide
+- **Target keyword:** "keystonejs docker compose"
+- **Secondary keywords:** "keystonejs setup", "keystonejs self-hosted", "node.js headless CMS"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+### Self-Host Wagtail — Django-Powered CMS
+- **URL slug:** /apps/wagtail
+- **Content type:** app-guide
+- **Target keyword:** "wagtail docker compose"
+- **Secondary keywords:** "wagtail cms setup", "wagtail self-hosted", "django CMS docker"
+- **Estimated volume:** medium
+- **Priority:** 10
+- **Status:** planned
+
+### Self-Host October CMS — Laravel-Based CMS
+- **URL slug:** /apps/october-cms
+- **Content type:** app-guide
+- **Target keyword:** "october cms docker compose"
+- **Secondary keywords:** "october cms setup", "october cms self-hosted", "laravel CMS self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 11
+- **Status:** planned
+
+### Self-Host Statamic — Flat-File Laravel CMS
+- **URL slug:** /apps/statamic
+- **Content type:** app-guide
+- **Target keyword:** "statamic docker compose"
+- **Secondary keywords:** "statamic self-hosted", "statamic setup", "flat-file cms docker"
+- **Estimated volume:** medium
+- **Priority:** 12
+- **Status:** planned
+
+### Self-Host Apostrophe CMS — Full-Featured Node.js CMS
+- **URL slug:** /apps/apostrophe-cms
+- **Content type:** app-guide
+- **Target keyword:** "apostrophe cms docker"
+- **Secondary keywords:** "apostrophe cms setup", "apostrophe self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 13
+- **Status:** planned
+
+## Expanded Comparisons
+
+### Strapi vs Directus vs Payload — Headless CMS Showdown
+- **URL slug:** /compare/strapi-vs-directus-vs-payload
+- **Content type:** comparison
+- **Target keyword:** "strapi vs directus vs payload"
+- **Secondary keywords:** "best headless CMS 2026", "headless CMS comparison"
+- **Estimated volume:** high
+- **Priority:** 6
+- **Status:** planned
+
+### Wagtail vs WordPress — Python vs PHP CMS
+- **URL slug:** /compare/wagtail-vs-wordpress
+- **Content type:** comparison
+- **Target keyword:** "wagtail vs wordpress"
+- **Secondary keywords:** "wagtail or wordpress", "django CMS vs wordpress"
+- **Estimated volume:** medium
+- **Priority:** 7
+- **Status:** planned
+
+### Ghost vs Strapi — Blog CMS vs Headless CMS
+- **URL slug:** /compare/ghost-vs-strapi
+- **Content type:** comparison
+- **Target keyword:** "ghost vs strapi"
+- **Secondary keywords:** "ghost or strapi", "blog cms vs headless cms"
+- **Estimated volume:** medium
+- **Priority:** 8
+- **Status:** planned
+
+### Grav vs Hugo vs Publii — Static/Flat-File CMS Comparison
+- **URL slug:** /compare/grav-vs-hugo-vs-publii
+- **Content type:** comparison
+- **Target keyword:** "grav vs hugo vs publii"
+- **Secondary keywords:** "best static CMS", "flat-file CMS comparison"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+## Expanded Troubleshooting
+
+### WordPress Docker Slow Performance — Optimization Guide
+- **URL slug:** /troubleshooting/wordpress-docker-slow
+- **Content type:** troubleshooting
+- **Target keyword:** "wordpress docker slow"
+- **Secondary keywords:** "wordpress docker performance", "wordpress docker optimization"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned
+
+### Ghost Docker Migration Issues — Fix Guide
+- **URL slug:** /troubleshooting/ghost-docker-migration
+- **Content type:** troubleshooting
+- **Target keyword:** "ghost docker migration issues"
+- **Secondary keywords:** "ghost database migration", "ghost docker upgrade problems"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned

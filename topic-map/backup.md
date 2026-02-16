@@ -26,3 +26,119 @@
 - [ ] /replace/backblaze — **Target:** "self-hosted alternative to backblaze" | **Secondary:** "backblaze replacement self-hosted", "self-hosted cloud backup" | **Volume:** High | **Priority:** 1
 - [ ] /replace/crashplan — **Target:** "self-hosted alternative to crashplan" | **Secondary:** "crashplan replacement self-hosted", "leave crashplan for self-hosted" | **Volume:** Medium-High | **Priority:** 2
 - [ ] /replace/icloud-backup — **Target:** "self-hosted alternative to icloud backup" | **Secondary:** "icloud backup replacement", "self-hosted apple backup alternative" | **Volume:** Medium | **Priority:** 3
+
+## Expanded Apps (Marketing iteration — topic map expansion)
+
+### Self-Host BackupPC — Centralized Backup for Multiple Machines
+- **URL slug:** /apps/backuppc
+- **Content type:** app-guide
+- **Target keyword:** "backuppc docker compose"
+- **Secondary keywords:** "backuppc setup", "backuppc centralized backup", "backuppc server"
+- **Estimated volume:** medium
+- **Priority:** 8
+- **Status:** planned
+
+### Self-Host Bacula — Enterprise-Grade Backup Solution
+- **URL slug:** /apps/bacula
+- **Content type:** app-guide
+- **Target keyword:** "bacula docker compose"
+- **Secondary keywords:** "bacula setup", "bacula backup server", "bacula enterprise backup"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+### Self-Host Velero — Kubernetes Backup and Disaster Recovery
+- **URL slug:** /apps/velero
+- **Content type:** app-guide
+- **Target keyword:** "velero kubernetes backup setup"
+- **Secondary keywords:** "velero setup", "kubernetes backup self-hosted", "velero docker"
+- **Estimated volume:** medium-high
+- **Priority:** 10
+- **Status:** planned
+
+### Self-Host Syncthing (as Backup) — Continuous File Synchronization
+- **URL slug:** /apps/syncthing-backup
+- **Content type:** app-guide
+- **Target keyword:** "syncthing as backup solution"
+- **Secondary keywords:** "syncthing backup setup", "syncthing for backups", "file sync backup"
+- **Estimated volume:** medium
+- **Priority:** 11
+- **Status:** planned
+
+## Expanded Comparisons
+
+### Kopia vs Duplicati — Modern vs GUI Backup Compared
+- **URL slug:** /compare/kopia-vs-duplicati
+- **Content type:** comparison
+- **Target keyword:** "kopia vs duplicati"
+- **Secondary keywords:** "kopia or duplicati", "best gui backup self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 7
+- **Status:** planned
+
+### BorgBackup vs Duplicacy — Deduplication Backup Compared
+- **URL slug:** /compare/borgbackup-vs-duplicacy
+- **Content type:** comparison
+- **Target keyword:** "borgbackup vs duplicacy"
+- **Secondary keywords:** "borgbackup or duplicacy", "deduplication backup comparison"
+- **Estimated volume:** medium
+- **Priority:** 8
+- **Status:** planned
+
+### UrBackup vs BackupPC — Centralized Backup Servers Compared
+- **URL slug:** /compare/urbackup-vs-backuppc
+- **Content type:** comparison
+- **Target keyword:** "urbackup vs backuppc"
+- **Secondary keywords:** "urbackup or backuppc", "best self-hosted centralized backup"
+- **Estimated volume:** low-medium
+- **Priority:** 9
+- **Status:** planned
+
+### Restic vs Kopia vs BorgBackup — Top Three Backup Tools Compared
+- **URL slug:** /compare/restic-vs-kopia-vs-borgbackup
+- **Content type:** comparison
+- **Target keyword:** "restic vs kopia vs borgbackup"
+- **Secondary keywords:** "best cli backup tool", "backup tool three-way comparison"
+- **Estimated volume:** high
+- **Priority:** 10
+- **Status:** planned
+
+## Expanded Replace Guides
+
+### Replace Google Drive Backup with Self-Hosted
+- **URL slug:** /replace/google-drive-backup
+- **Content type:** replace
+- **Target keyword:** "self-hosted alternative to google drive backup"
+- **Secondary keywords:** "google backup alternative", "self-hosted cloud backup"
+- **Estimated volume:** medium-high
+- **Priority:** 4
+- **Status:** planned
+
+### Replace Time Machine with Self-Hosted Backup
+- **URL slug:** /replace/time-machine
+- **Content type:** replace
+- **Target keyword:** "self-hosted alternative to time machine"
+- **Secondary keywords:** "time machine network backup alternative", "mac backup self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 5
+- **Status:** planned
+
+## Troubleshooting
+
+### Restic Repository Locked — Fix Guide
+- **URL slug:** /troubleshooting/restic-repository-locked
+- **Content type:** troubleshooting
+- **Target keyword:** "restic repository locked"
+- **Secondary keywords:** "restic unlock repository", "restic lock error"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### BorgBackup Slow Backup Speed — Optimization Guide
+- **URL slug:** /troubleshooting/borgbackup-slow
+- **Content type:** troubleshooting
+- **Target keyword:** "borgbackup slow speed"
+- **Secondary keywords:** "borgbackup performance", "borgbackup optimization"
+- **Estimated volume:** low-medium
+- **Priority:** 2
+- **Status:** planned

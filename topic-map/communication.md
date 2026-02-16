@@ -37,3 +37,108 @@
 - [ ] /replace/slack — **Priority 1** | Target: "self-hosted alternative to slack" | Secondary: "replace slack self-hosted", "slack alternative open source" | Est. volume: very high
 - [ ] /replace/discord — **Priority 2** | Target: "self-hosted alternative to discord" | Secondary: "discord alternative self-hosted" | Est. volume: high
 - [ ] /replace/microsoft-teams — **Priority 3** | Target: "self-hosted alternative to microsoft teams" | Secondary: "teams alternative self-hosted" | Est. volume: medium-high
+
+## Expanded Apps (Marketing iteration — topic map expansion)
+
+### Self-Host Zulip — Threaded Team Communication
+- **URL slug:** /apps/zulip
+- **Content type:** app-guide
+- **Target keyword:** "zulip docker compose"
+- **Secondary keywords:** "zulip setup", "zulip self-hosted", "threaded chat self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 12
+- **Status:** planned
+
+### Self-Host Matterbridge — Multi-Platform Chat Bridge
+- **URL slug:** /apps/matterbridge
+- **Content type:** app-guide
+- **Target keyword:** "matterbridge docker compose"
+- **Secondary keywords:** "matterbridge setup", "chat bridge self-hosted", "matterbridge multi-platform"
+- **Estimated volume:** low-medium
+- **Priority:** 13
+- **Status:** planned
+
+### Self-Host SimpleX Chat — Privacy-First Messaging
+- **URL slug:** /apps/simplex
+- **Content type:** app-guide
+- **Target keyword:** "simplex chat self-hosted server"
+- **Secondary keywords:** "simplex server setup", "simplex chat docker", "privacy messaging self-hosted"
+- **Estimated volume:** medium
+- **Priority:** 14
+- **Status:** planned
+
+### Self-Host Session Node — Decentralized Encrypted Messaging
+- **URL slug:** /apps/session
+- **Content type:** app-guide
+- **Target keyword:** "session messenger self-hosted"
+- **Secondary keywords:** "session node setup", "session decentralized messaging"
+- **Estimated volume:** low-medium
+- **Priority:** 15
+- **Status:** planned
+
+### Self-Host Jami — Peer-to-Peer Communication
+- **URL slug:** /apps/jami
+- **Content type:** app-guide
+- **Target keyword:** "jami self-hosted server"
+- **Secondary keywords:** "jami TURN server setup", "jami peer-to-peer communication", "jami docker"
+- **Estimated volume:** low-medium
+- **Priority:** 16
+- **Status:** planned
+
+### Self-Host Revolt — Discord-Like Chat Platform
+- **URL slug:** /apps/revolt
+- **Content type:** app-guide
+- **Target keyword:** "revolt chat docker compose"
+- **Secondary keywords:** "revolt self-hosted", "revolt chat setup", "discord alternative self-hosted revolt"
+- **Estimated volume:** medium
+- **Priority:** 17
+- **Status:** planned
+
+## Expanded Comparisons
+
+### Matrix vs Zulip — Threaded Messaging Comparison
+- **URL slug:** /compare/matrix-vs-zulip
+- **Content type:** comparison
+- **Target keyword:** "matrix vs zulip"
+- **Secondary keywords:** "matrix or zulip", "best threaded chat self-hosted"
+- **Estimated volume:** low-medium
+- **Priority:** 8
+- **Status:** planned
+
+### SimpleX vs Matrix — Privacy Messaging Compared
+- **URL slug:** /compare/simplex-vs-matrix
+- **Content type:** comparison
+- **Target keyword:** "simplex vs matrix"
+- **Secondary keywords:** "simplex or matrix", "most private self-hosted chat"
+- **Estimated volume:** medium
+- **Priority:** 9
+- **Status:** planned
+
+### Revolt vs Discord — Self-Hosted Discord Alternative Review
+- **URL slug:** /compare/revolt-vs-discord
+- **Content type:** comparison
+- **Target keyword:** "revolt vs discord"
+- **Secondary keywords:** "revolt discord alternative", "is revolt a good discord replacement"
+- **Estimated volume:** medium-high
+- **Priority:** 10
+- **Status:** planned
+
+## Expanded Troubleshooting
+
+### Matrix Synapse High Memory Usage — Optimization Guide
+- **URL slug:** /troubleshooting/matrix-synapse-memory
+- **Content type:** troubleshooting
+- **Target keyword:** "matrix synapse high memory usage"
+- **Secondary keywords:** "synapse memory optimization", "matrix server slow"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### Matrix Federation Not Working — Fix Guide
+- **URL slug:** /troubleshooting/matrix-federation-issues
+- **Content type:** troubleshooting
+- **Target keyword:** "matrix federation not working"
+- **Secondary keywords:** "synapse federation troubleshooting", "matrix server federation setup"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned
