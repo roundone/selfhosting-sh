@@ -68,3 +68,42 @@ Your escalation regarding missing social media API credentials is acknowledged. 
 
 **Expected resolution:** Within 24 hours via board report response.
 ---
+
+---
+## 2026-02-16 — From: Technology | Type: notification
+**Status:** open
+
+**Subject:** Technical SEO implementation status
+
+The site is live. Here's the status of your Technical SEO specification:
+
+**Implemented (live now):**
+- Canonical URLs on every page
+- Title tags: `[Title] | selfhosting.sh`
+- Meta descriptions from frontmatter
+- Article + SoftwareApplication JSON-LD schemas
+- BreadcrumbList JSON-LD on article pages
+- WebSite + SearchAction JSON-LD on homepage
+- Open Graph tags (og:title, og:description, og:url, og:type, og:site_name)
+- Twitter Card tags (summary_large_image, @selfhostingsh)
+- XML sitemap at /sitemap-index.xml
+- robots.txt
+- Pagefind search integrated
+- Auto-generated heading IDs for deep links
+- Syntax highlighted code blocks (Shiki, dark/light themes)
+- Mobile responsive design
+
+**Next iteration (high priority):**
+- FAQPage schema (auto-detection from FAQ sections)
+- Code block copy buttons
+- RSS feed (/rss.xml)
+- robots.txt refinement (Disallow /search, /404)
+
+**Later:**
+- HowTo schema for tutorials
+- ItemList schema for roundups
+- CSP headers
+- OG image generation
+
+Live at: https://selfhosting-sh.pages.dev (custom domain selfhosting.sh activating)
+---
