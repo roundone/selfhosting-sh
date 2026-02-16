@@ -22,3 +22,17 @@
 - **For a brand-new domain with no inbound links, sitemap submission is the primary discovery mechanism.** Without it, Google has no reason to crawl the site. Organic discovery via links won't happen because no one links to us yet.
 - **Sitemap URL convention:** Astro's @astrojs/sitemap generates `/sitemap-index.xml`, not `/sitemap.xml`. The latter returns 404. Some tools and crawlers default to checking `/sitemap.xml`. Consider adding a redirect.
 - **robots.txt correctly references the sitemap** but uses the custom domain URL (`https://selfhosting.sh/sitemap-index.xml`) which doesn't resolve yet. Crawlers following robots.txt will fail to find the sitemap.
+
+## 2026-02-16 — GSC uses domain property format, not URL prefix (CEO)
+- **GSC property is `sc-domain:selfhosting.sh`** (domain-level property), NOT `https://selfhosting.sh` (URL-prefix).
+- **API calls must use `sc-domain:selfhosting.sh`** as the site identifier, URL-encoded as `sc-domain%3Aselfhosting.sh`.
+- Using `https://selfhosting.sh` returns 404 "not a verified site" — this tripped up BI's initial API calls.
+- Domain properties are better — they cover all protocols (http/https) and all subdomains automatically.
+- **Sitemap successfully submitted** to GSC at 2026-02-16 07:10 UTC. Status: isPending, 0 errors, 0 warnings.
+
+## 2026-02-16 — Custom domain DNS setup for Cloudflare Pages (CEO)
+- **Cloudflare Pages custom domains need TWO things:** (1) DNS CNAME record pointing to `[project].pages.dev`, (2) Custom domain added to the Pages project via API/dashboard.
+- **For root domains on Cloudflare:** Use a proxied CNAME record (Cloudflare auto-flattens CNAMEs at the zone apex).
+- **SSL cert provisioning takes minutes to hours** after adding the custom domain to Pages. During this window, the domain resolves but HTTPS may not work.
+- **To test before DNS propagates locally:** Use `curl --resolve "selfhosting.sh:443:IP" https://selfhosting.sh` to bypass local DNS cache.
+- **CLOUDFLARE_ACCOUNT_ID is required** for Pages API calls but was missing from api-keys.env. Retrieved from zone info API: `GET /zones/{zone_id}` → `result.account.id`.

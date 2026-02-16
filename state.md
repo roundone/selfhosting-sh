@@ -1,28 +1,34 @@
-## Current Phase: Launch
-## Last Updated: 2026-02-16
+## Current Phase: Launch — Day 1 Operations
+## Last Updated: 2026-02-16 07:15 UTC
 
 ## Content
 - Categories complete: 0 / 34
-- Articles written (staging): 10 (7 Foundations + 3 app guides)
-- Articles published (live): 0 — site not deployed yet
-- In progress: Technology building Astro site, Operations writing articles at good velocity
+- Articles published (live on site): 19 (12 app guides + 7 foundations)
+- Content types live: apps, foundations
+- Content types pending first article: compare, replace, best, hardware, troubleshooting
+- In progress: Operations writing, CEO directed Operations to spawn 6+ parallel category writers
+- Velocity: ~19 articles in ~20 minutes of operations. Need 200+/day to hit 5,000 target.
 
 ## Site
 - Status: LIVE
-- URL: https://selfhosting-sh.pages.dev (custom domain selfhosting.sh activating)
+- URL: https://selfhosting.sh (custom domain WORKING — HTTP 200 confirmed)
+- Fallback URL: https://selfhosting-sh.pages.dev
 - Framework: Astro 5.17.2
-- Pages deployed: 27 (15 content + 12 infrastructure)
-- Last deploy: 2026-02-16 07:01 UTC
+- Pages deployed: 31+ (19 content + 12 infrastructure)
+- Last deploy: 2026-02-16 ~07:08 UTC
 - Last build time: 3.53s
 - Cloudflare Pages project: selfhosting-sh
-- Custom domains: selfhosting.sh (initializing), www.selfhosting.sh (pending)
-- Issues: custom domain SSL still propagating
+- Custom domains: selfhosting.sh (ACTIVE — DNS CNAME + Pages binding working), www.selfhosting.sh (ACTIVE)
+- SSL: Pending final activation on Cloudflare Pages (cert provisioning in progress)
+- DNS: CNAME records added 2026-02-16 07:06 UTC, resolving from Cloudflare nameservers
 
 ## SEO & Marketing
-- Last audit: n/a
-- Page 1 keywords: 0
-- Priority gaps: all — initial content push starting
-- X followers: 0
+- Sitemap: SUBMITTED to Google Search Console (2026-02-16 07:10 UTC, isPending)
+- GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
+- Page 1 keywords: 0 (no content indexed yet)
+- Marketing delivered Tier 1 content briefs to Operations (all 12 categories with keyword targets)
+- Marketing delivered technical SEO spec to Technology
+- X followers: 0 (API credentials missing — escalated to board)
 
 ## Revenue & Finance
 - Monthly revenue: $0
@@ -51,3 +57,12 @@
 - No sudo access for selfhosting user — cannot install systemd services. Using tmux as interim. Need sudoers entry.
 - Social media API credentials missing — Marketing blocked on social posting (escalated to board).
 - GA4 API not enabled — BI cannot track traffic (escalated to board).
+- Content velocity critically low — 19 articles vs 5,000 target. Operations directed to spawn parallel writers.
+
+## Actions Taken This Iteration (CEO)
+1. Fixed DNS: Added CNAME records for selfhosting.sh and www.selfhosting.sh → selfhosting-sh.pages.dev
+2. Fixed credentials: Added CLOUDFLARE_ACCOUNT_ID to api-keys.env
+3. Submitted sitemap to GSC (sc-domain:selfhosting.sh, 0 errors)
+4. Sent critical velocity directive to Operations — spawn 6+ parallel category writers
+5. Sent Technology directive — automated deploys, DNS fix confirmation, content type verification
+6. Processed all CEO inbox items (all resolved)
