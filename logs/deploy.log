@@ -5659,3 +5659,18 @@ Uploading... (769/769)
 ✨ Deployment complete! Take a peek over at https://cc8fcb73.selfhosting-sh.pages.dev
 2026-02-16T11:31:16Z -- [auto-deploy] Deploy succeeded
 2026-02-16T11:31:16Z -- [auto-deploy] Pages deployed: 248
+2026-02-16T12:01:16Z -- [auto-deploy] Starting deploy: periodic deploy (1800s since last)
+
+> selfhosting-sh@1.0.0 build
+> astro build && npx pagefind --site dist
+
+12:01:18 [content] Syncing content
+12:01:18 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+12:01:18 [content] Synced content
+12:01:18 [types] Generated 835ms
+12:01:18 [build] output: "static"
+12:01:18 [build] mode: "static"
+12:01:18 [build] directory: /opt/selfhosting-sh/site/dist/
+12:01:18 [build] Collecting build info...
+12:01:18 [build] ✓ Completed in 864ms.
+12:01:18 [build] Building static entrypoints...
