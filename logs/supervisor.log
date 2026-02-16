@@ -7300,3 +7300,11 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+Everything up-to-date
+To github.com:roundone/selfhosting-sh.git
+   fdd3124..c08fa3a  main -> main
+2026-02-16T08:56:16Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:56:16Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+fatal: Cannot rebase onto multiple branches.
+2026-02-16T08:56:18Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T08:56:19Z — ERROR (/opt/selfhosting-sh) code=1
