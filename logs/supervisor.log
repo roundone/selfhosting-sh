@@ -3702,3 +3702,10 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    a379844..5e432a6  main -> main
 2026-02-16T08:12:11Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+2026-02-16T08:12:12Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+From github.com:roundone/selfhosting-sh
+   5e432a6..a9c259c  main       -> origin/main
+To github.com:roundone/selfhosting-sh.git
+   5e432a6..a9c259c  main -> main
+2026-02-16T08:12:15Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
+2026-02-16T08:12:18Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
