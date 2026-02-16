@@ -5756,3 +5756,6 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:37:14Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
 To github.com:roundone/selfhosting-sh.git
    4d9f595..a81865e  main -> main
+2026-02-16T08:37:17Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   a81865e..129f9fd  main -> main
