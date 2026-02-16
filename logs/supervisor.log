@@ -5133,3 +5133,7 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    a1b60b7..ce1a778  main -> main
 2026-02-16T08:28:52Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   ce1a778..ae43d0e  main -> main
+2026-02-16T08:28:55Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T08:28:57Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
