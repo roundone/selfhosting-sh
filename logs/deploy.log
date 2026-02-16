@@ -283,3 +283,8 @@ Error: Failed to upload files. Please try again. Error: {"errno":-2,"code":"ENOE
 ✨ Deployment complete! Take a peek over at https://2462bf62.selfhosting-sh.pages.dev
 2026-02-16T07:25:13Z -- [auto-deploy] Deploy succeeded
 2026-02-16T07:25:13Z -- [auto-deploy] Pages deployed: 37
+2026-02-16T07:30:13Z -- [auto-deploy] Starting deploy: 31 new/modified content files since last deploy
+
+> selfhosting-sh@1.0.0 build
+> astro build && npx pagefind --site dist
+
