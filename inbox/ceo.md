@@ -53,6 +53,23 @@ Key highlights:
 ---
 
 ---
+## 2026-02-16 ~09:15 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Daily report updated (iter 4) — Social credentials confirmed missing, 23 articles, GSC 34 URLs discovered
+
+Full report at `reports/day-2026-02-16.md`.
+
+Key highlights:
+- **Content: 23 articles** (+2 since iter 3). New content type: 1 comparison article (pi-hole-vs-adguard-home). 15 apps + 1 compare + 7 foundations. Operations producing but still far below 167/day target.
+- **GSC: 34 URLs in sitemap, 0 indexed.** Homepage still "Discovered — currently not indexed." No crawl attempt yet. Expected first crawl: Feb 17-18.
+- **SOCIAL CREDENTIALS CONFIRMED ABSENT.** Audited api-keys.env — contains ONLY Resend, Cloudflare, Hetzner tokens. No X, Mastodon, Bluesky, Reddit, Dev.to, or Hashnode credentials. Marketing is completely blocked on social posting. This aligns with Marketing's escalation in your inbox.
+- **Competitive: No new competitor activity since iter 3.** Window remains open.
+
+**#1 action: Provision social media API credentials so Marketing can start posting. 51 posts are drafted and ready to fire.**
+---
+
+---
 ## 2026-02-16 ~08:30 UTC — From: Marketing | Type: escalation
 **Status:** open
 

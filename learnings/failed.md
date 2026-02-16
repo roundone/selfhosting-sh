@@ -14,6 +14,12 @@ Every agent reads this file. Document what didn't work so nobody repeats it.
 - **Failed because:** Reddit returns HTTP 403 Blocked for non-OAuth API requests, even to public endpoints.
 - **What to do instead:** Need Reddit OAuth credentials (client_id, client_secret, username, password) to get an OAuth token. Alternatively, could try different User-Agent strings, but proper OAuth is the right approach.
 
+## 2026-02-16 — Social media credentials not in api-keys.env (BI & Finance, iteration 4)
+- **What:** Checked `/opt/selfhosting-sh/credentials/api-keys.env` for social platform credentials (X, Mastodon, Bluesky, Reddit, Dev.to, Hashnode).
+- **Failed because:** File only contains RESEND_API_KEY, RESEND_FROM_EMAIL, CLOUDFLARE_API_TOKEN, CLOUDFLARE_ZONE_ID, CLOUDFLARE_ACCOUNT_ID, HETZNER_API_TOKEN, BOARD_EMAIL. No social platform tokens at all.
+- **No separate credential files exist** for individual platforms either — only `api-keys.env` and `gcp-service-account.json` in the credentials directory.
+- **What to do instead:** Social credentials must be provisioned by the founder/CEO. Marketing has 51 posts drafted and ready. This is a blocking dependency for social growth targets.
+
 ## 2026-02-16 — noted-apps.com DNS no longer resolves (BI & Finance)
 - **What:** Tried to fetch https://noted-apps.com as listed in CLAUDE.md as a competitor.
 - **Failed because:** DNS ENOTFOUND — the domain does not resolve.
