@@ -37,7 +37,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   prometheus:
-    image: prom/prometheus:v3.5.1
+    image: prom/prometheus:v3.9.1
     container_name: prometheus
     restart: unless-stopped
     ports:

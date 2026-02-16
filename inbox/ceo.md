@@ -46,3 +46,84 @@ awesome-selfhosted covers 1,234 apps. If we create standard content (app guide +
 ### Velocity Note
 BI flagged velocity dipping (46 → 35/hour). Topic map exhaustion is likely the cause — some writers may be running out of queued articles in their categories. The 29 new categories should address this. Recommend Operations assigns freed-up writers to the new high-priority categories immediately.
 ---
+
+---
+## 2026-02-16 ~15:00 UTC — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Site QA issues + visitor stats required in board reports
+
+### 1. Site Search Is Broken
+The search functionality on selfhosting.sh does not work. This was discovered during a manual review. **This needs immediate QA.** The Technology department must investigate and fix. Going forward, establish a QA checklist that runs after every deploy — at minimum:
+- Search works
+- Navigation works
+- Article pages render correctly
+- Code blocks have copy buttons and syntax highlighting
+- Mobile responsive
+- No broken links on homepage/category pages
+
+### 2. Board Reports Must Include Actual Visitor Stats
+Current board reports reference GSC indexing status but do not include actual visitor numbers. Starting with the next board report, include:
+- **Google Analytics (GA4) data**: Sessions, users, pageviews, top pages, traffic sources
+- The GA4 property is G-DPDC7W5VET. The GCP service account has Viewer access.
+- BI & Finance should use the GA4 Data API (Analytics Data API) to pull this data programmatically
+- Even if numbers are zero on day 1, include the section — it sets the baseline
+
+### 3. Rate Limiting Infrastructure Installed
+A rate-limiting proxy has been installed at localhost:3128. All agents now route through it via HTTPS_PROXY. This prevents the 429 rate_limit_error that caused 6,041 wasted error iterations. The proxy limits requests to ~2/sec across all agents. Error backoff is now exponential (30s → 30min cap).
+
+**Do not remove the HTTPS_PROXY setting from run-agent.sh.** The proxy must be running before any agents start. It runs as selfhosting-proxy.service.
+
+### 4. All Services Now Managed by systemd
+All agent services are installed and enabled:
+- selfhosting-proxy.service (rate-limiting proxy — must start first)
+- selfhosting-ceo.service
+- selfhosting-technology.service
+- selfhosting-marketing.service
+- selfhosting-operations.service
+- selfhosting-bi-finance.service
+
+Use systemctl to manage agents. Do not use tmux for production.
+---
+
+---
+## 2026-02-16 ~15:30 UTC — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Install Playwright MCP on VPS for browser automation
+
+The VPS currently has no browser automation capability. This means every task that requires a browser (generating API tokens, signing up for services, QA checks, verifying site functionality) becomes a human escalation. That breaks the zero-human model.
+
+**Action required:** Technology department should install headless Playwright on the VPS so agents can automate browser tasks. Specifically:
+1. Install Chromium dependencies and Playwright browser binaries
+2. Configure Playwright MCP in Claude Code settings for the selfhosting user
+3. Ensure only one agent uses the browser at a time (memory constraint — 4GB VPS, Chromium uses ~200-400MB)
+4. Once installed, use it to generate the remaining API tokens that are marked PENDING in credentials/api-keys.env (Mastodon access token, Dev.to API key, Hashnode PAT, X developer app, Reddit app)
+
+**Memory note:** If Chromium causes OOM issues, escalate a VPS upgrade request (CPX31 8GB, ~5/mo) via the board report.
+---
+
+---
+## 2026-02-16 ~15:35 UTC — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Build a web-based status dashboard for the founder
+
+I need a simple way to see what is happening on the VPS from my browser. Technology department should build a lightweight status dashboard:
+
+**Requirements:**
+- Accessible at http://5.161.102.207:8080 (or a subdomain of selfhosting.sh)
+- Auto-refreshes every 30 seconds
+- Shows at a glance:
+  - Agent status (running/stopped/errored) for all 6 services
+  - Recent supervisor log entries (last 20-30 lines)
+  - Article count and recent commits
+  - Rate limit proxy stats (if available)
+  - Last board report summary
+  - Memory/CPU usage
+- Lightweight — Node.js or static HTML with shell script backend. No frameworks.
+- Runs as a systemd service
+- Basic auth or IP whitelist for security (this is operational data, not public)
+
+**This is a founder-facing tool, not a public page.** Keep it simple but informative. Think of it as a terminal dashboard rendered in HTML.
+---

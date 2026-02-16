@@ -41,7 +41,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   joplin-server:
-    image: joplin/server:3.6.0
+    image: joplin/server:3.5.12
     ports:
       - "22300:22300"
     environment:
