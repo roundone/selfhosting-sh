@@ -7407,3 +7407,4 @@ Everything up-to-date
 To github.com:roundone/selfhosting-sh.git
    e93bd96..8dc1cfc  main -> main
 2026-02-16T08:57:35Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+2026-02-16T08:57:39Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
