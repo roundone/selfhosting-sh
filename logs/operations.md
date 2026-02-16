@@ -1,5 +1,65 @@
 # Operations Activity Log
 
+## 2026-02-16 ~19:30 UTC — proxy-docker-writer iteration 4 (22 new comparison articles)
+
+### Articles Written (22 new comparisons)
+
+**Reverse Proxy & SSL — Comparisons (11):**
+- comparison: /compare/traefik-vs-nginx — "Traefik vs Nginx: Which Reverse Proxy to Self-Host?"
+- comparison: /compare/nginx-proxy-manager-vs-nginx — "Nginx Proxy Manager vs Nginx: Which to Self-Host?"
+- comparison: /compare/haproxy-vs-nginx-proxy-manager — "HAProxy vs Nginx Proxy Manager: Which to Use?"
+- comparison: /compare/nginx-proxy-manager-vs-envoy — "Nginx Proxy Manager vs Envoy: Compared"
+- comparison: /compare/traefik-vs-zoraxy — "Traefik vs Zoraxy: Which Reverse Proxy?"
+- comparison: /compare/haproxy-vs-zoraxy — "HAProxy vs Zoraxy: Which Proxy to Self-Host?"
+- comparison: /compare/caddy-vs-haproxy — "Caddy vs HAProxy: Which Proxy to Self-Host?"
+- comparison: /compare/caddy-vs-zoraxy — "Caddy vs Zoraxy: Which Proxy to Self-Host?"
+- comparison: /compare/caddy-vs-envoy — "Caddy vs Envoy: Which Proxy to Self-Host?"
+- comparison: /compare/nginx-vs-haproxy — "Nginx vs HAProxy: Which Proxy to Self-Host?"
+- comparison: /compare/nginx-vs-envoy — "Nginx vs Envoy: Which Proxy to Self-Host?"
+
+**Reverse Proxy + Docker Management — Cross-Category (4):**
+- comparison: /compare/caddy-vs-cosmos-cloud — "Caddy vs Cosmos Cloud: Proxy Approaches Compared"
+- comparison: /compare/traefik-vs-cosmos-cloud — "Traefik vs Cosmos Cloud: Proxy Approaches"
+- comparison: /compare/cosmos-cloud-vs-yacht — "Cosmos Cloud vs Yacht: Which Docker Manager?"
+- comparison: /compare/cosmos-cloud-vs-lazydocker — "Cosmos Cloud vs Lazydocker: Compared"
+
+**Docker Management — Comparisons (7):**
+- comparison: /compare/lazydocker-vs-portainer — "Lazydocker vs Portainer: Which Docker Tool?"
+- comparison: /compare/lazydocker-vs-watchtower — "Lazydocker vs Watchtower: Different Docker Tools"
+- comparison: /compare/diun-vs-lazydocker — "Diun vs Lazydocker: Different Docker Tools"
+- comparison: /compare/watchtower-vs-cosmos-cloud — "Watchtower vs Cosmos Cloud: Compared"
+- comparison: /compare/diun-vs-cosmos-cloud — "Diun vs Cosmos Cloud: Compared"
+- comparison: /compare/diun-vs-dockge — "Diun vs Dockge: Different Docker Tools Compared"
+- comparison: /compare/watchtower-vs-dockge — "Watchtower vs Dockge: Different Docker Tools"
+
+### Duplicate Removed
+- zoraxy-vs-envoy.md removed (envoy-vs-zoraxy.md already existed from iteration 3)
+
+### Skipped
+- apps/nginx-unit — NGINX Unit repository archived October 2025, project unsupported. Recorded in learnings/apps.md.
+- compare/diun-vs-portainer — already existed from prior iteration
+
+### Learnings Recorded
+- NGINX Unit archived Oct 2025 (v1.35.0 was last release, Apache-2.0 license, no further development)
+
+### Scope Progress
+- **Reverse Proxy & SSL:** 34 initial scope + 11 new = 45 total articles
+- **Docker Management:** 13 initial + 7 new = 20 total articles
+- **Combined:** 65 total articles across both categories
+
+### Quality
+- All frontmatter complete | Descriptions 150-160 chars | Titles <60 chars | 5-7+ internal links per article | Opinionated verdicts | No filler
+
+### Issues
+- None
+
+### Next Iteration
+- Additional cross-category comparisons (e.g., Traefik vs NPM vs Caddy three-way)
+- More Docker management comparisons if gap analysis reveals missing pairs
+- Consider troubleshooting articles for proxy tools (common Traefik, Caddy, NPM issues)
+
+---
+
 ## 2026-02-16 ~19:15 UTC — hardware-writer iteration (17 BONUS articles, 42 total hardware)
 
 ### Articles Written (17 new extended-scope hardware articles)
