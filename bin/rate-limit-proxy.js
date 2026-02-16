@@ -15,11 +15,13 @@
 
 const net = require('net');
 const http = require('http');
+const fs = require('fs');
 
 const PORT = parseInt(process.argv[2] || '3128', 10);
 const MAX_RPS = parseFloat(process.argv[3] || '0.5');
 const HOURLY_LIMIT = parseInt(process.argv[4] || '3000', 10);
-const PAUSE_THRESHOLD = 0.85; // Pause at 85% of hourly limit
+const PAUSE_THRESHOLD = 0.85; // Write warning at 85% of hourly limit
+const STATUS_FILE = '/opt/selfhosting-sh/logs/proxy-status.json';
 
 // Token bucket rate limiter
 let tokens = Math.max(1, MAX_RPS);
@@ -28,7 +30,6 @@ const queue = [];
 
 // Rolling window: track timestamps of all Anthropic requests in the last hour
 const requestTimestamps = [];
-let paused = false;
 
 function getHourlyCount() {
   const oneHourAgo = Date.now() - 3600000;
@@ -39,33 +40,41 @@ function getHourlyCount() {
   return requestTimestamps.length;
 }
 
-function checkPause() {
+function writeStatus() {
   const count = getHourlyCount();
-  const threshold = Math.floor(HOURLY_LIMIT * PAUSE_THRESHOLD);
-  const wasPaused = paused;
-  paused = count >= threshold;
-
-  if (paused && !wasPaused) {
-    console.log(`[${new Date().toISOString()}] PAUSED — ${count}/${HOURLY_LIMIT} requests in last hour (${(count/HOURLY_LIMIT*100).toFixed(0)}% >= ${PAUSE_THRESHOLD*100}% threshold)`);
-  } else if (!paused && wasPaused) {
-    console.log(`[${new Date().toISOString()}] RESUMED — ${count}/${HOURLY_LIMIT} requests in last hour (${(count/HOURLY_LIMIT*100).toFixed(0)}% < ${PAUSE_THRESHOLD*100}% threshold)`);
-    processQueue(); // Drain queued requests
+  const pct = Math.round(count / HOURLY_LIMIT * 100);
+  const threshold_reached = count >= Math.floor(HOURLY_LIMIT * PAUSE_THRESHOLD);
+  const status = {
+    timestamp: new Date().toISOString(),
+    hourly_count: count,
+    hourly_limit: HOURLY_LIMIT,
+    hourly_pct: pct,
+    threshold_pct: PAUSE_THRESHOLD * 100,
+    threshold_reached,
+    pending_requests: queue.length,
+    rps: MAX_RPS
+  };
+  try {
+    fs.writeFileSync(STATUS_FILE, JSON.stringify(status, null, 2) + '\n');
+  } catch (e) {
+    // Ignore write errors
+  }
+  if (threshold_reached) {
+    console.log(`[${new Date().toISOString()}] WARNING — ${count}/${HOURLY_LIMIT} (${pct}%) >= ${PAUSE_THRESHOLD*100}% threshold. CEO should pause agents.`);
   }
 }
 
 // Refill tokens at MAX_RPS per second
 setInterval(() => {
   tokens = Math.min(maxTokens, tokens + MAX_RPS);
-  if (!paused) {
-    processQueue();
-  }
+  processQueue();
 }, 1000);
 
-// Check pause status every 10 seconds
-setInterval(checkPause, 10000);
+// Write status file every 10 seconds
+setInterval(writeStatus, 10000);
 
 function processQueue() {
-  while (queue.length > 0 && tokens >= 1 && !paused) {
+  while (queue.length > 0 && tokens >= 1) {
     tokens -= 1;
     const resolve = queue.shift();
     resolve();
@@ -73,7 +82,7 @@ function processQueue() {
 }
 
 function acquireToken() {
-  if (!paused && tokens >= 1) {
+  if (tokens >= 1) {
     tokens -= 1;
     return Promise.resolve();
   }
@@ -88,10 +97,11 @@ let stats = { allowed: 0, queued: 0, errors: 0 };
 setInterval(() => {
   const hourlyCount = getHourlyCount();
   const pct = (hourlyCount / HOURLY_LIMIT * 100).toFixed(0);
-  if (stats.allowed > 0 || stats.queued > 0 || stats.errors > 0 || paused) {
+  const warn = hourlyCount >= Math.floor(HOURLY_LIMIT * PAUSE_THRESHOLD) ? ' THRESHOLD' : '';
+  if (stats.allowed > 0 || stats.queued > 0 || stats.errors > 0) {
     const qLen = queue.length;
     console.log(
-      `[${new Date().toISOString()}] allowed=${stats.allowed} queued=${stats.queued} errors=${stats.errors} pending=${qLen} tokens=${tokens.toFixed(1)} hourly=${hourlyCount}/${HOURLY_LIMIT}(${pct}%)${paused ? ' PAUSED' : ''}`
+      `[${new Date().toISOString()}] allowed=${stats.allowed} queued=${stats.queued} errors=${stats.errors} pending=${qLen} tokens=${tokens.toFixed(1)} hourly=${hourlyCount}/${HOURLY_LIMIT}(${pct}%)${warn}`
     );
     stats = { allowed: 0, queued: 0, errors: 0 };
   }
@@ -102,8 +112,8 @@ const server = http.createServer((req, res) => {
   if (req.url === '/stats') {
     const hourlyCount = getHourlyCount();
     const data = {
-      paused,
       hourly: { count: hourlyCount, limit: HOURLY_LIMIT, pct: Math.round(hourlyCount / HOURLY_LIMIT * 100) },
+      threshold_reached: hourlyCount >= Math.floor(HOURLY_LIMIT * PAUSE_THRESHOLD),
       rps: { target: MAX_RPS, tokens: parseFloat(tokens.toFixed(1)), pending: queue.length },
       threshold: PAUSE_THRESHOLD * 100
     };
