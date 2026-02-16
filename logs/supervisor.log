@@ -3822,3 +3822,9 @@ commit 6510042d5778032b66a1c9f6dafb23da97f29783.
 To github.com:roundone/selfhosting-sh.git
    6510042..5120173  main -> main
 2026-02-16T08:13:27Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
+2026-02-16T08:13:28Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:13:30Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:13:31Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:13:32Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+2026-02-16T08:13:33Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T08:13:35Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
