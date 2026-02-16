@@ -5846,3 +5846,30 @@ Auto packing the repository in background for optimum performance.
 See "git help gc" for manual housekeeping.
 Auto packing the repository in background for optimum performance.
 See "git help gc" for manual housekeeping.
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 0a7502ebc8f2e54e947ae930a97511a6dbd8ea93.
+error: Unable to create '/opt/selfhosting-sh/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 0a7502ebc8f2e54e947ae930a97511a6dbd8ea93
+output, run
+$ git reset --hard
+to recover.
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+To github.com:roundone/selfhosting-sh.git
+   0a7502e..f3ba643  main -> main
+To github.com:roundone/selfhosting-sh.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at f3ba643a6c2d0344141d968f85ff209d1e2bbaba but expected 0a7502ebc8f2e54e947ae930a97511a6dbd8ea93)
+error: failed to push some refs to 'github.com:roundone/selfhosting-sh.git'
+2026-02-16T08:38:27Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer
+2026-02-16T08:38:28Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+2026-02-16T08:38:29Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+2026-02-16T08:38:29Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
