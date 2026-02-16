@@ -4517,3 +4517,121 @@ Uploading... (769/769)
 ✨ Deployment complete! Take a peek over at https://2e93cfb3.selfhosting-sh.pages.dev
 2026-02-16T10:30:39Z -- [auto-deploy] Deploy succeeded
 2026-02-16T10:30:39Z -- [auto-deploy] Pages deployed: 248
+2026-02-16T11:00:39Z -- [auto-deploy] Starting deploy: periodic deploy (1800s since last)
+
+> selfhosting-sh@1.0.0 build
+> astro build && npx pagefind --site dist
+
+11:00:40 [content] Syncing content
+11:00:40 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+11:00:41 [content] Synced content
+11:00:41 [types] Generated 831ms
+11:00:41 [build] output: "static"
+11:00:41 [build] mode: "static"
+11:00:41 [build] directory: /opt/selfhosting-sh/site/dist/
+11:00:41 [build] Collecting build info...
+11:00:41 [build] ✓ Completed in 853ms.
+11:00:41 [build] Building static entrypoints...
+11:00:43 [vite] ✓ built in 2.05s
+11:00:43 [build] ✓ Completed in 2.08s.
+
+ generating static routes 
+11:00:43 ▶ src/pages/404.astro
+11:00:43   └─ /404.html (+10ms) 
+11:00:43 ▶ src/pages/about.astro
+11:00:43   └─ /about/index.html (+2ms) 
+11:00:43 ▶ src/pages/apps/index.astro
+11:00:43   └─ /apps/index.html (+100ms) 
+11:00:43 ▶ src/pages/apps/[...slug].astro
+11:00:43   ├─ /apps/portainer/index.html (+14ms) 
+11:00:43   ├─ /apps/adguard-home/index.html (+10ms) 
+11:00:43   ├─ /apps/jellyfin/index.html (+15ms) 
+11:00:43   ├─ /apps/home-assistant/index.html (+10ms) 
+11:00:43   ├─ /apps/pi-hole/index.html (+9ms) 
+11:00:43   ├─ /apps/uptime-kuma/index.html (+7ms) 
+11:00:43   ├─ /apps/vaultwarden/index.html (+7ms) 
+11:00:43   ├─ /apps/immich/index.html (+7ms) 
+11:00:43   ├─ /apps/nextcloud/index.html (+7ms) 
+11:00:43   ├─ /apps/nginx-proxy-manager/index.html (+5ms) 
+11:00:43   ├─ /apps/plex/index.html (+5ms) 
+11:00:43   ├─ /apps/bookstack/index.html (+4ms) 
+11:00:43   ├─ /apps/dockge/index.html (+7ms) 
+11:00:43   ├─ /apps/photoprism/index.html (+6ms) 
+11:00:43   ├─ /apps/syncthing/index.html (+7ms) 
+11:00:43   ├─ /apps/diun/index.html (+5ms) 
+11:00:43   ├─ /apps/caddy/index.html (+6ms) 
+11:00:43   ├─ /apps/domoticz/index.html (+5ms) 
+11:00:43   ├─ /apps/openhab/index.html (+6ms) 
+11:00:43   ├─ /apps/traefik/index.html (+5ms) 
+11:00:43   ├─ /apps/watchtower/index.html (+5ms) 
+11:00:43   ├─ /apps/yacht/index.html (+4ms) 
+11:00:43   ├─ /apps/gladys-assistant/index.html (+5ms) 
+11:00:43   ├─ /apps/cosmos-cloud/index.html (+4ms) 
+11:00:43   ├─ /apps/cloudflare-tunnel/index.html (+5ms) 
+11:00:43   ├─ /apps/filebrowser/index.html (+4ms) 
+11:00:43   ├─ /apps/headscale/index.html (+6ms) 
+11:00:43   ├─ /apps/iobroker/index.html (+4ms) 
+11:00:43   ├─ /apps/lazydocker/index.html (+5ms) 
+11:00:43   ├─ /apps/librephotos/index.html (+4ms) 
+11:00:43   ├─ /apps/navidrome/index.html (+4ms) 
+11:00:43   ├─ /apps/seafile/index.html (+4ms) 
+11:00:43   ├─ /apps/tailscale/index.html (+5ms) 
+11:00:43   ├─ /apps/wg-easy/index.html (+4ms) 
+11:00:43   ├─ /apps/wireguard/index.html (+5ms) 
+11:00:43   ├─ /apps/emby/index.html (+5ms) 
+11:00:43   ├─ /apps/grafana/index.html (+6ms) 
+11:00:43   ├─ /apps/passbolt/index.html (+5ms) 
+11:00:43   ├─ /apps/plausible/index.html (+6ms) 
+11:00:43   ├─ /apps/umami/index.html (+5ms) 
+11:00:43   ├─ /apps/audiobookshelf/index.html (+9ms) 
+11:00:43   ├─ /apps/blocky/index.html (+6ms) 
+11:00:43   ├─ /apps/haproxy/index.html (+6ms) 
+11:00:43   ├─ /apps/lychee/index.html (+5ms) 
+11:00:43   ├─ /apps/nginx/index.html (+6ms) 
+11:00:43   ├─ /apps/outline/index.html (+5ms) 
+11:00:43   ├─ /apps/piwigo/index.html (+5ms) 
+11:00:43   ├─ /apps/prometheus/index.html (+4ms) 
+11:00:43   ├─ /apps/restic/index.html (+5ms) 
+11:00:43   ├─ /apps/technitium/index.html (+4ms) 
+11:00:43   ├─ /apps/trilium/index.html (+5ms) 
+11:00:43   ├─ /apps/wiki-js/index.html (+4ms) 
+11:00:43   ├─ /apps/qbittorrent/index.html (+5ms) 
+11:00:43   ├─ /apps/borgbackup/index.html (+4ms) 
+11:00:43   ├─ /apps/joplin-server/index.html (+4ms) 
+11:00:43   ├─ /apps/obsidian-livesync/index.html (+4ms) 
+11:00:43   ├─ /apps/photoview/index.html (+4ms) 
+11:00:43   ├─ /apps/siyuan/index.html (+4ms) 
+11:00:43   ├─ /apps/appflowy/index.html (+5ms) 
+11:00:43   ├─ /apps/keeweb/index.html (+4ms) 
+11:00:43   ├─ /apps/stash/index.html (+5ms) 
+11:00:43   ├─ /apps/wordpress/index.html (+5ms) 
+11:00:43   ├─ /apps/affine/index.html (+6ms) 
+11:00:43   ├─ /apps/padloc/index.html (+5ms) 
+11:00:43   ├─ /apps/authelia/index.html (+8ms) 
+11:00:43   ├─ /apps/envoy/index.html (+5ms) 
+11:00:43   ├─ /apps/zoraxy/index.html (+6ms) 
+11:00:43   ├─ /apps/zerotier/index.html (+5ms) 
+11:00:43   ├─ /apps/netbird/index.html (+6ms) 
+11:00:43   ├─ /apps/owncloud/index.html (+4ms) 
+11:00:43   └─ /apps/authentik/index.html (+5ms) 
+11:00:43 ▶ src/pages/best/index.astro
+11:00:43   └─ /best/index.html (+2ms) 
+11:00:43 ▶ src/pages/best/[...slug].astro
+11:00:43   ├─ /best/home-automation/index.html (+4ms) 
+11:00:43   ├─ /best/reverse-proxy/index.html (+5ms) 
+11:00:43   ├─ /best/docker-management/index.html (+4ms) 
+11:00:43   ├─ /best/password-management/index.html (+5ms) 
+11:00:43   ├─ /best/ad-blocking/index.html (+4ms) 
+11:00:43   ├─ /best/note-taking/index.html (+5ms) 
+11:00:43   ├─ /best/file-sync/index.html (+4ms) 
+11:00:43   ├─ /best/media-servers/index.html (+4ms) 
+11:00:43   ├─ /best/photo-management/index.html (+4ms) 
+11:00:43   ├─ /best/vpn-remote-access/index.html (+5ms) 
+11:00:43   ├─ /best/vpn/index.html (+4ms) 
+11:00:43   ├─ /best/monitoring/index.html (+4ms) 
+11:00:43   └─ /best/backup/index.html (+4ms) 
+11:00:43 ▶ src/pages/compare/index.astro
+11:00:43   └─ /compare/index.html (+7ms) 
+11:00:43 ▶ src/pages/compare/[...slug].astro
+11:00:43   ├─ /compare/pi-hole-vs-adguard-home/index.html (+7ms) 
+11:00:44   ├─ /compare/jellyfin-vs-plex/index.html
