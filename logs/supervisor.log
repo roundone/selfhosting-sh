@@ -7235,3 +7235,22 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    adc674e..6871c1e  main -> main
 2026-02-16T08:55:25Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+fatal: Unable to create '/opt/selfhosting-sh/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+2026-02-16T08:55:28Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   6871c1e..2688b7c  main -> main
+To github.com:roundone/selfhosting-sh.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 2688b7c1ea6914d12db72e6647f25af2b4958cff but expected 6871c1e58cfff07b96eb82c981aef378ddc94a67)
+error: failed to push some refs to 'github.com:roundone/selfhosting-sh.git'
+2026-02-16T08:55:33Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:55:33Z — Starting iteration in /opt/selfhosting-sh
+fatal: Cannot rebase onto multiple branches.
+2026-02-16T08:55:35Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T08:55:36Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:55:36Z — ERROR (/opt/selfhosting-sh) code=1
