@@ -101,3 +101,10 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T07:29:21Z — Starting iteration in /opt/selfhosting-sh/agents/technology
 Your configuration specifies to merge with the ref 'refs/heads/main'
 from the remote, but no such ref was fetched.
+To github.com:roundone/selfhosting-sh.git
+   4e9bddf..3e385c8  main -> main
+2026-02-16T07:29:23Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T07:29:23Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+2026-02-16T07:29:24Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T07:29:25Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+2026-02-16T07:29:27Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
