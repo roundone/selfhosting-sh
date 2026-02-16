@@ -7161,3 +7161,10 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    1e65efd..f25311f  main -> main
 2026-02-16T08:54:15Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   f25311f..b512aec  main -> main
+2026-02-16T08:54:19Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+2026-02-16T08:54:19Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+fatal: Cannot rebase onto multiple branches.
+fatal: Cannot rebase onto multiple branches.
+2026-02-16T08:54:22Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
