@@ -6796,3 +6796,7 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    050f424..788bbd1  main -> main
 2026-02-16T08:50:22Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/foundations-writer) code=1
+To github.com:roundone/selfhosting-sh.git
+   788bbd1..4ae379b  main -> main
+2026-02-16T08:50:28Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+2026-02-16T08:50:29Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
