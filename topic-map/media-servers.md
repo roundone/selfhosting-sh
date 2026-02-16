@@ -1,12 +1,12 @@
-# Media Servers [0/18 complete]
+# Media Servers [2/18 complete]
 **Priority:** high
 **SEO notes:** Jellyfin vs Plex is one of the most searched comparisons in the self-hosting space. Media server queries have very high volume. Netflix/Spotify replacement angles drive strong traffic.
 **Category keyword cluster:** "jellyfin setup", "plex vs jellyfin", "self-hosted media server", "best media server"
 **Pillar page:** /best/media-servers
 
 ## Apps
-- [ ] /apps/jellyfin — queued — **KW:** "jellyfin docker compose" (Very High vol) — Priority 1
-- [ ] /apps/plex — queued — **KW:** "plex docker compose" (Very High vol) — Priority 3
+- [x] /apps/jellyfin — done 2026-02-16 — **KW:** "jellyfin docker compose" (Very High vol) — Priority 1
+- [x] /apps/plex — done 2026-02-16 — **KW:** "plex docker compose" (Very High vol) — Priority 3
 - [ ] /apps/navidrome — queued — **KW:** "navidrome docker compose" (High vol) — Priority 4
 - [ ] /apps/emby — queued — **KW:** "emby docker compose" (Medium vol) — Priority 7
 - [ ] /apps/audiobookshelf — queued — **KW:** "audiobookshelf docker compose" (Medium vol) — Priority 10

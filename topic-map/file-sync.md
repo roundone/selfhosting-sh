@@ -1,12 +1,12 @@
-# File Sync & Storage [0/16 complete]
+# File Sync & Storage [2/16 complete]
 **Priority:** high
 **SEO notes:** Nextcloud is the single most searched self-hosted app. Dropbox/Google Drive replacement queries have massive volume and strong user intent. Syncthing is the top peer-to-peer alternative. This category has the widest appeal across all audience segments.
 **Category keyword cluster:** "nextcloud docker compose", "self-hosted dropbox alternative", "syncthing setup", "best self-hosted cloud storage"
 **Pillar page:** /best/file-sync
 
 ## Apps
-- [ ] /apps/nextcloud — queued — **KW:** "nextcloud docker compose" (Very High vol) — Priority 1
-- [ ] /apps/syncthing — queued — **KW:** "syncthing docker compose" (High vol) — Priority 4
+- [x] /apps/nextcloud — done 2026-02-16 — **KW:** "nextcloud docker compose" (Very High vol) — Priority 1
+- [x] /apps/syncthing — done 2026-02-16 — **KW:** "syncthing docker compose" (High vol) — Priority 4
 - [ ] /apps/seafile — queued — **KW:** "seafile docker compose" (Medium vol) — Priority 6
 - [ ] /apps/filebrowser — queued — **KW:** "filebrowser docker compose" (Medium vol) — Priority 8
 - [ ] /apps/owncloud — queued — **KW:** "owncloud docker compose" (Medium vol) — Priority 10

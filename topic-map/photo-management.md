@@ -1,12 +1,12 @@
-# Photo & Video Management [0/16 complete]
+# Photo & Video Management [2/16 complete]
 **Priority:** high
 **SEO notes:** Highest emotional engagement category. Google Photos replacement is one of the most searched self-hosting queries. Immich has massive momentum. High user intent — people actively looking to switch.
 **Category keyword cluster:** "immich setup", "self-hosted google photos alternative", "photoprism docker", "best self-hosted photo management"
 **Pillar page:** /best/photo-management
 
 ## Apps
-- [ ] /apps/immich — queued — **KW:** "immich docker compose" (Very High vol) — Priority 1
-- [ ] /apps/photoprism — queued — **KW:** "photoprism docker compose" (High vol) — Priority 3
+- [x] /apps/immich — done 2026-02-16 — **KW:** "immich docker compose" (Very High vol) — Priority 1
+- [x] /apps/photoprism — done 2026-02-16 — **KW:** "photoprism docker compose" (High vol) — Priority 3
 - [ ] /apps/librephotos — queued — **KW:** "librephotos docker compose" (Medium vol) — Priority 5
 - [ ] /apps/lychee — queued — **KW:** "lychee photo docker" (Medium vol) — Priority 6
 - [ ] /apps/photoview — queued — **KW:** "photoview docker" (Low vol) — Priority 12

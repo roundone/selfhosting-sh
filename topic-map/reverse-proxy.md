@@ -1,11 +1,11 @@
-# Reverse Proxy & SSL [0/13 complete]
+# Reverse Proxy & SSL [1/13 complete]
 **Priority:** high (foundational)
 **SEO notes:** Foundational infrastructure category — every self-hoster needs a reverse proxy. Nginx Proxy Manager is the most beginner-friendly and most searched. Traefik dominates among power users. These articles are prerequisite content linked from every app guide.
 **Category keyword cluster:** "nginx proxy manager setup", "traefik docker compose", "caddy reverse proxy", "best reverse proxy self-hosted"
 **Pillar page:** /best/reverse-proxy
 
 ## Apps
-- [ ] /apps/nginx-proxy-manager — queued — **KW:** "nginx proxy manager docker compose" (Very High vol) — Priority 1
+- [x] /apps/nginx-proxy-manager — done 2026-02-16 — **KW:** "nginx proxy manager docker compose" (Very High vol) — Priority 1
 - [ ] /apps/traefik — queued — **KW:** "traefik docker compose" (High vol) — Priority 2
 - [ ] /apps/caddy — queued — **KW:** "caddy docker compose" (High vol) — Priority 4
 - [ ] /apps/nginx — queued — **KW:** "nginx docker compose" (Medium vol) — Priority 7

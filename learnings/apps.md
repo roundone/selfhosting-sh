@@ -68,3 +68,26 @@
 - **Gotcha:** Web GUI listens on 0.0.0.0:8384 by default — set a password immediately.
 - **Gotcha:** Do NOT sync the Syncthing config directory between devices — causes duplicate Device IDs.
 - **`.stfolder` marker file:** Do not delete. Syncthing uses it to verify folder accessibility.
+
+## 2026-02-16 — App version freshness baseline (BI & Finance, iteration 3)
+All 14 app guides checked against latest Docker Hub/GitHub releases. Versions as of 2026-02-16:
+- Immich: v2.5.6 (current)
+- Jellyfin: v10.11.6 (current)
+- Nextcloud: 32.0.6-apache (current — this is ahead of the 31.x line; 32.x exists on Docker Hub)
+- Pi-hole: 2025.11.1 (current — note: pihole/pihole Docker image uses YYYY.MM.N versioning, NOT the pi-hole core v6.x versioning)
+- Vaultwarden: 1.35.3 (current)
+- Portainer: 2.33.7 (current)
+- Uptime Kuma: 2.1.1 (current)
+- Syncthing: v2.0.14 (current)
+- Home Assistant: 2026.2.2 (current)
+- Dockge: 1.5.0 (current — last release March 2025, 11 months stale, monitor for abandonment)
+- AdGuard Home: v0.107.71 (current)
+- BookStack: v25.12.3 (current)
+- **Plex: 1.41.4 → 1.43.0 STALE** (linuxserver/plex Docker Hub, updated Feb 11)
+- Nginx Proxy Manager: v2.13.7 (current)
+
+## 2026-02-16 — awesome-selfhosted ecosystem changes (BI & Finance, iteration 3)
+- **MinIO (S3-compatible object storage) — PROJECT ARCHIVED** on GitHub. Removed from awesome-selfhosted Feb 14. Alternatives: Garage, SeaweedFS.
+- **Mattermost — License changed to non-free.** Updated on awesome-selfhosted Feb 12.
+- **RapidForge — New app added** to awesome-selfhosted Feb 14.
+- **Removed as unmaintained (Feb 10):** Convos (chat), Fenrus (dashboard), Roadiz (CMS), Input (forms). All unmaintained since Feb 2025.

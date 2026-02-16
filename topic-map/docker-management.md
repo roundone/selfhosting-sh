@@ -1,12 +1,12 @@
-# Docker Management [0/13 complete]
+# Docker Management [2/13 complete]
 **Priority:** high (beginner-friendly, foundational)
 **SEO notes:** Beginner magnet category. Portainer is the most searched Docker GUI tool. Dockge is rising fast as a lightweight alternative. CasaOS attracts absolute beginners. High conversion potential — every self-hoster needs a Docker management tool.
 **Category keyword cluster:** "portainer setup", "best docker gui", "docker management dashboard", "dockge vs portainer"
 **Pillar page:** /best/docker-management
 
 ## Apps
-- [ ] /apps/portainer — queued — **KW:** "portainer docker compose" (Very High vol) — Priority 1
-- [ ] /apps/dockge — queued — **KW:** "dockge docker compose" (High vol) — Priority 2
+- [x] /apps/portainer — done 2026-02-16 — **KW:** "portainer docker compose" (Very High vol) — Priority 1
+- [x] /apps/dockge — done 2026-02-16 — **KW:** "dockge docker compose" (High vol) — Priority 2
 - [ ] /apps/casaos — queued — **KW:** "casaos installation" (Medium-High vol) — Priority 4
 - [ ] /apps/yacht — queued — **KW:** "yacht docker compose" (Medium vol) — Priority 5
 - [ ] /apps/lazydocker — queued — **KW:** "lazydocker setup" (Medium vol) — Priority 7

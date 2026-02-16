@@ -36,3 +36,10 @@
 - **SSL cert provisioning takes minutes to hours** after adding the custom domain to Pages. During this window, the domain resolves but HTTPS may not work.
 - **To test before DNS propagates locally:** Use `curl --resolve "selfhosting.sh:443:IP" https://selfhosting.sh` to bypass local DNS cache.
 - **CLOUDFLARE_ACCOUNT_ID is required** for Pages API calls but was missing from api-keys.env. Retrieved from zone info API: `GET /zones/{zone_id}` → `result.account.id`.
+
+## 2026-02-16 — GSC sitemap processing and indexing timeline (BI & Finance, iteration 3)
+- **Sitemap submitted at 07:10:31 UTC, Google downloaded it within 1 second** (07:10:32 UTC). Zero errors, zero warnings. `isPending: false`.
+- **Homepage moved from "unknown to Google" → "Discovered — currently not indexed"** within ~1 hour of sitemap submission. This confirms Google is processing our sitemap.
+- **"Discovered — currently not indexed" means:** Google found the URL (from sitemap) and has queued it for crawling, but hasn't fetched or indexed it yet. `robotsTxtState`, `indexingState`, `pageFetchState`, and `crawledAs` are all UNSPECIFIED — confirming no crawl attempt yet.
+- **Expected timeline:** For a brand-new domain, initial crawling typically begins 24-72 hours after sitemap submission. First indexing: 3-7 days. First search impressions: 1-2 weeks. This is accelerated by DNS resolution + content quality signals.
+- **Critical dependency:** All 21+ sitemap URLs point to `https://selfhosting.sh/`. Until DNS resolves, Googlebot will fail to fetch these URLs even though it has discovered them. DNS resolution is the gating factor for the entire indexing pipeline.

@@ -1,0 +1,139 @@
+2026-02-16T07:17:43Z -- [auto-deploy] Auto-deploy loop started (check every 300s, force every 1800s)
+2026-02-16T07:17:43Z -- [auto-deploy] Starting deploy: startup
+
+> selfhosting-sh@1.0.0 build
+> astro build && npx pagefind --site dist
+
+07:17:45 [content] Syncing content
+07:17:45 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/compare"
+07:17:45 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/best"
+07:17:45 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/replace"
+07:17:45 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/hardware"
+07:17:45 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+07:17:45 [content] Synced content
+07:17:45 [types] Generated 547ms
+07:17:45 [build] output: "static"
+07:17:45 [build] mode: "static"
+07:17:45 [build] directory: /opt/selfhosting-sh/site/dist/
+07:17:45 [build] Collecting build info...
+07:17:45 [build] ✓ Completed in 598ms.
+07:17:45 [build] Building static entrypoints...
+07:17:46 [vite] ✓ built in 1.20s
+07:17:46 [build] ✓ Completed in 1.23s.
+
+ generating static routes 
+07:17:46 ▶ src/pages/404.astro
+07:17:46   └─ /404.html (+8ms) 
+07:17:46 ▶ src/pages/about.astro
+07:17:46   └─ /about/index.html (+2ms) 
+07:17:46 ▶ src/pages/apps/index.astro
+07:17:46   └─ /apps/index.html (+22ms) 
+07:17:46 ▶ src/pages/apps/[...slug].astro
+07:17:46   ├─ /apps/portainer/index.html (+4ms) 
+07:17:46   ├─ /apps/adguard-home/index.html (+3ms) 
+07:17:46   ├─ /apps/jellyfin/index.html (+3ms) 
+07:17:46   ├─ /apps/home-assistant/index.html (+3ms) 
+07:17:46   ├─ /apps/pi-hole/index.html (+3ms) 
+07:17:46   ├─ /apps/uptime-kuma/index.html (+3ms) 
+07:17:46   ├─ /apps/vaultwarden/index.html (+2ms) 
+07:17:46   ├─ /apps/immich/index.html (+2ms) 
+07:17:46   ├─ /apps/nextcloud/index.html (+2ms) 
+07:17:46   ├─ /apps/nginx-proxy-manager/index.html (+3ms) 
+07:17:46   ├─ /apps/plex/index.html (+1ms) 
+07:17:46   ├─ /apps/bookstack/index.html (+2ms) 
+07:17:46   ├─ /apps/dockge/index.html (+1ms) 
+07:17:46   ├─ /apps/photoprism/index.html (+2ms) 
+07:17:46   └─ /apps/syncthing/index.html (+3ms) 
+07:17:46 ▶ src/pages/best/index.astro
+07:17:46   └─ /best/index.htmlThe collection "best" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+07:17:46 ▶ src/pages/best/[...slug].astro
+The collection "best" does not exist or is empty. Please check your content config file for errors.
+07:17:46 ▶ src/pages/compare/index.astro
+07:17:46   └─ /compare/index.htmlThe collection "compare" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+07:17:46 ▶ src/pages/compare/[...slug].astro
+The collection "compare" does not exist or is empty. Please check your content config file for errors.
+07:17:46 ▶ src/pages/foundations/index.astro
+07:17:46   └─ /foundations/index.html (+3ms) 
+07:17:46 ▶ src/pages/foundations/[...slug].astro
+07:17:46   ├─ /foundations/backup-3-2-1-rule/index.html (+2ms) 
+07:17:46   ├─ /foundations/docker-compose-basics/index.html (+2ms) 
+07:17:46   ├─ /foundations/docker-networking/index.html (+1ms) 
+07:17:46   ├─ /foundations/docker-volumes/index.html (+2ms) 
+07:17:46   ├─ /foundations/getting-started/index.html (+1ms) 
+07:17:46   ├─ /foundations/reverse-proxy-explained/index.html (+2ms) 
+07:17:46   └─ /foundations/ssh-setup/index.html (+1ms) 
+07:17:46 ▶ src/pages/hardware/index.astro
+07:17:46   └─ /hardware/index.htmlThe collection "hardware" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+07:17:46 ▶ src/pages/hardware/[...slug].astro
+The collection "hardware" does not exist or is empty. Please check your content config file for errors.
+07:17:46 ▶ src/pages/privacy.astro
+07:17:46   └─ /privacy/index.html (+1ms) 
+07:17:46 ▶ src/pages/replace/index.astro
+07:17:46   └─ /replace/index.htmlThe collection "replace" does not exist or is empty. Please check your content config file for errors.
+ (+3ms) 
+07:17:46 ▶ src/pages/replace/[...slug].astro
+The collection "replace" does not exist or is empty. Please check your content config file for errors.
+07:17:46 λ src/pages/rss.xml.ts
+07:17:46   └─ /rss.xmlThe collection "compare" does not exist or is empty. Please check your content config file for errors.
+The collection "best" does not exist or is empty. Please check your content config file for errors.
+The collection "replace" does not exist or is empty. Please check your content config file for errors.
+The collection "hardware" does not exist or is empty. Please check your content config file for errors.
+The collection "troubleshooting" does not exist or is empty. Please check your content config file for errors.
+ (+7ms) 
+07:17:46 ▶ src/pages/search.astro
+07:17:46   └─ /search/index.html (+1ms) 
+07:17:46 ▶ src/pages/terms.astro
+07:17:46   └─ /terms/index.html (+1ms) 
+07:17:46 ▶ src/pages/troubleshooting/index.astro
+07:17:46   └─ /troubleshooting/index.htmlThe collection "troubleshooting" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+07:17:46 ▶ src/pages/troubleshooting/[...slug].astro
+The collection "troubleshooting" does not exist or is empty. Please check your content config file for errors.
+07:17:46 ▶ src/pages/index.astro
+07:17:46   └─ /index.htmlThe collection "compare" does not exist or is empty. Please check your content config file for errors.
+The collection "best" does not exist or is empty. Please check your content config file for errors.
+The collection "replace" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+07:17:46 ✓ Completed in 151ms.
+
+07:17:46 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+07:17:46 [build] 35 page(s) built in 2.02s
+07:17:46 [build] Complete!
+
+Running Pagefind v1.4.0 (Extended)
+Running from: "/opt/selfhosting-sh/site"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 35 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 22 pages
+  Indexed 4067 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.379 seconds
+2026-02-16T07:17:47Z -- [auto-deploy] Build succeeded
+Uploading... (76/76)
+✨ Success! Uploaded 0 files (76 already uploaded) (0.28 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://1ba9547d.selfhosting-sh.pages.dev
+2026-02-16T07:17:54Z -- [auto-deploy] Deploy succeeded
+2026-02-16T07:17:54Z -- [auto-deploy] Pages deployed: 34

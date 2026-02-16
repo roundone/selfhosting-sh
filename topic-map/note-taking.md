@@ -1,11 +1,11 @@
-# Note Taking & Knowledge [0/21 complete]
+# Note Taking & Knowledge [1/21 complete]
 **Priority:** high
 **SEO notes:** "Self-hosted Notion alternative" is one of the highest-volume queries in the self-hosting space. BookStack and Wiki.js are the most established self-hosted wikis. Obsidian Sync self-hosting is trending. This category captures knowledge workers frustrated with subscription fatigue.
 **Category keyword cluster:** "self-hosted notion alternative", "bookstack setup", "best self-hosted wiki", "obsidian sync self-hosted"
 **Pillar page:** /best/note-taking
 
 ## Apps
-- [ ] /apps/bookstack — queued — **KW:** "bookstack docker compose" (High vol) — Priority 1
+- [x] /apps/bookstack — done 2026-02-16 — **KW:** "bookstack docker compose" (High vol) — Priority 1
 - [ ] /apps/outline — queued — **KW:** "outline docker compose" (Medium-High vol) — Priority 3
 - [ ] /apps/wiki-js — queued — **KW:** "wiki-js docker compose" (Medium-High vol) — Priority 4
 - [ ] /apps/trilium — queued — **KW:** "trilium docker compose" (Medium vol) — Priority 7

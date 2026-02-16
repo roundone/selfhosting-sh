@@ -1,4 +1,4 @@
-# Ad Blocking & DNS [0/11 complete]
+# Ad Blocking & DNS [2/11 complete]
 **Priority:** high (beginner-friendly, highest conversion gateway)
 **SEO notes:** One of the top entry points for self-hosting beginners. Pi-hole is among the most searched self-hosting terms. High-volume keywords with moderate competition. This category builds trust and converts beginners.
 **Category keyword cluster:** "pi-hole setup", "adguard home docker", "best self-hosted ad blocker", "network-wide ad blocking"
