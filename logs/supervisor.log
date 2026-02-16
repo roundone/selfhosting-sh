@@ -316,3 +316,9 @@ To github.com:roundone/selfhosting-sh.git
    0c461e0..648e8f2  main -> main
 To github.com:roundone/selfhosting-sh.git
    648e8f2..6a411f0  main -> main
+To github.com:roundone/selfhosting-sh.git
+   6a411f0..c8c0ef0  main -> main
+2026-02-16T07:32:57Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T07:32:58Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+fatal: Cannot rebase onto multiple branches.
+2026-02-16T07:32:58Z — Starting iteration in /opt/selfhosting-sh/agents/technology
