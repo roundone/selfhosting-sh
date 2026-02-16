@@ -3663,3 +3663,23 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:11:58Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
 2026-02-16T08:12:01Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/password-adblock-writer) code=1
 2026-02-16T08:12:01Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 8cb8b466b7a300092ff0ed2cfa743d01b6a98a3b.
+error: Your local changes to the following files would be overwritten by merge:
+	logs/supervisor.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 8cb8b466b7a300092ff0ed2cfa743d01b6a98a3b
+output, run
+$ git reset --hard
+to recover.
+To github.com:roundone/selfhosting-sh.git
+   8cb8b46..6a9eeb3  main -> main
+2026-02-16T08:12:02Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:12:05Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:12:05Z — Starting iteration in /opt/selfhosting-sh/agents/technology
+2026-02-16T08:12:05Z — ERROR (/opt/selfhosting-sh) code=1
+2026-02-16T08:12:08Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
