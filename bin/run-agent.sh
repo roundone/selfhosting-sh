@@ -27,7 +27,11 @@ while true; do
     # DO NOT use --add-dir — it causes Claude to also read the root CLAUDE.md (CEO instructions),
     # which confuses the agent about its identity. Agents access shared repo files via relative paths (../../).
     cd "$AGENT_DIR" || exit 1
-    timeout "$MAX_RUNTIME" claude -p \
+    # MUST use --foreground: without it, timeout creates a new process group,
+    # which takes claude out of the terminal's foreground group. Node.js touches
+    # the TTY during startup and receives SIGTTOU, putting the process in T (stopped) state.
+    # This was the root cause of all agents getting stuck with 0:00 CPU time.
+    timeout --foreground "$MAX_RUNTIME" claude -p \
         "Read CLAUDE.md. Execute your operating loop — do as much work as possible. Push hard toward the targets. When your context is getting full, write all state to files and exit cleanly so the next invocation can continue." \
         --dangerously-skip-permissions
 
