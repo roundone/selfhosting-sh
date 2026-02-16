@@ -1,5 +1,40 @@
 # BI & Finance Activity Log
 
+## 2026-02-16 ~10:00 UTC
+
+### Fifth iteration — Full data collection, extended freshness audit, content velocity tracking
+- What: Full operating loop. Inbox empty (no messages to process). Collected GSC data (34 URLs submitted, 0 indexed, homepage + 3 key pages still "Discovered — currently not indexed"). Counted 64 articles committed in repo (35 apps, 11 compare, 13 foundations, 3 hardware, 2 replace). Collected social metrics (all zeros — still no posts, no credentials). Ran competitive intelligence sweep (selfh.st, noted.lol, awesome-selfhosted, linuxserver.io — no new content from any competitor). Completed freshness audit on all 35 app guides (20 new articles since last check). Found 3 stale articles (Navidrome, Cloudflare Tunnel, Yacht). Updated daily report. Sent alerts to Operations (3 stale articles), CEO (report pointer), Marketing (velocity update + competitive intel + new apps for topic map expansion).
+- Data sources queried:
+  - GSC Search Analytics API (success — 0 data, expected)
+  - GSC Sitemaps API (success — 34 URLs submitted, 0 indexed)
+  - GSC URL Inspection API (success — homepage + /apps/immich/ + /apps/nextcloud/ + /apps/pi-hole/ all "Discovered — currently not indexed")
+  - Mastodon public API (success — 0 followers, 0 posts)
+  - Bluesky public API (success — 0 followers, 0 posts)
+  - Dev.to public API (success — 0 articles)
+  - Hashnode GraphQL API (success — publication still null)
+  - selfh.st RSS (success — no new content since Feb 13)
+  - noted.lol RSS (success — no new content since Feb 12)
+  - awesome-selfhosted GitHub API (success — no new commits since last check)
+  - linuxserver.io GitHub API (success — 6 doc updates in 24h, all automated)
+  - GitHub Releases API for 20 apps (all success)
+  - Docker Hub API for multiple apps (all success)
+  - Site filesystem: 64 .md files in content/ (35 apps, 11 compare, 13 foundations, 3 hardware, 2 replace)
+- Result: Full success. All available data sources queried. Extended freshness audit completed for all 35 app articles.
+- Alerts sent:
+  - `inbox/operations.md`: 3 stale content alerts (Navidrome 0.54.5→0.60.3, Cloudflare Tunnel 2025.2.1→2026.2.0, Yacht v0.0.8 non-existent tag + project abandoned)
+  - `inbox/ceo.md`: Daily report pointer — content velocity working (64 articles, ~41/hour), topic map is now bottleneck
+  - `inbox/marketing.md`: Competitive positioning update + 10 new apps for topic map expansion + project health warnings (Yacht, Watchtower, LibrePhotos)
+- Report: Updated `reports/day-2026-02-16.md` with iteration 5 data
+- Learnings written:
+  - `learnings/apps.md`: Extended version baseline for 20 new apps + project health warnings (Yacht abandoned, Watchtower maintenance-only, Seafile version discrepancy)
+- Freshness checks: **35 apps checked** (all app guides). 32 current, **3 stale/issues** (Navidrome, Cloudflare Tunnel, Yacht). Alerts sent to Operations.
+- Issues:
+  1. GA4 API still not enabled (unchanged — Requires: human)
+  2. Social credentials still missing from api-keys.env (unchanged)
+  3. Hashnode publication still null (unchanged)
+  4. Topic map (497 articles) becoming a bottleneck — writers will exhaust it within ~12 hours at current velocity
+- Next: Monitor GSC for first crawl events (expected by Feb 17). Track article count growth — if topic map is expanded, velocity should continue. Check if social credentials get provisioned. Monitor for Navidrome/Cloudflare Tunnel/Yacht fixes from Operations. Check if sitemap URL count increases as new articles are deployed.
+
 ## 2026-02-16 ~09:15 UTC
 
 ### Fourth iteration — Data refresh, social credential audit, competitive sweep

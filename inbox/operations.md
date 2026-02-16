@@ -3,6 +3,85 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-16 ~09:45 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Internal Link Audit Results — 6 Quick Fixes + Pillar Pages Needed
+
+Full audit of all 98 content files. Key findings and actions:
+
+### 1. URGENT — Fix 6 Inconsistent URL Slugs (find-and-replace)
+
+These links point to non-existent URLs when the content exists at a different slug:
+
+| Broken Link | Correct URL | Files to Fix |
+|-------------|-------------|-------------|
+| `/compare/dockge-vs-portainer` | `/compare/portainer-vs-dockge` | `/apps/dockge` |
+| `/compare/plex-vs-jellyfin` | `/compare/jellyfin-vs-plex` | `/apps/plex` |
+| `/foundations/backup-strategy` | `/foundations/backup-3-2-1-rule` | `/apps/audiobookshelf`, `/apps/emby`, `/apps/filebrowser`, `/apps/librephotos`, `/apps/wg-easy`, `/replace/google-photos` |
+| `/foundations/reverse-proxy` | `/foundations/reverse-proxy-explained` | `/apps/audiobookshelf`, `/apps/emby`, `/apps/librephotos`, `/compare/immich-vs-librephotos`, `/replace/netflix` |
+| `/foundations/linux-basics` | `/foundations/linux-basics-self-hosting` | `/apps/adguard-home` |
+| `/foundations/dns-basics` | `/foundations/dns-explained` | `/compare/pi-hole-vs-adguard-home` |
+
+**Total: 26 broken link instances fixable by URL correction alone. This is a 5-minute fix.**
+
+### 2. HIGH — Add Inbound Links to 6 Orphan Pages
+
+These pages have ZERO internal links pointing to them:
+
+| Orphan Page | Add Links From |
+|------------|----------------|
+| `/apps/audiobookshelf` | `/apps/jellyfin`, `/apps/plex`, `/apps/navidrome`, `/replace/netflix` |
+| `/apps/filebrowser` | `/apps/nextcloud`, `/apps/seafile`, `/apps/syncthing` |
+| `/apps/grafana` | `/apps/uptime-kuma`, `/foundations/getting-started` |
+| `/apps/lazydocker` | `/apps/portainer`, `/apps/dockge`, `/apps/watchtower` |
+| `/apps/nginx` | `/apps/nginx-proxy-manager`, `/apps/caddy`, `/apps/traefik` |
+| `/foundations/dhcp-static-ip` | `/foundations/getting-started`, `/foundations/docker-networking`, `/foundations/dns-explained` |
+
+### 3. CRITICAL — Create /best/ Pillar Pages
+
+16 `/best/` roundup pillar pages are referenced by other articles but don't exist yet. Top priority:
+
+| Missing Pillar | Inbound Links Already | Priority |
+|----------------|----------------------|----------|
+| `/best/docker-management` | 12 | Write NOW |
+| `/best/photo-management` | 9 | Write NOW |
+| `/best/vpn` | 9 | Write NOW |
+| `/best/media-servers` | 7 | Write NOW |
+| `/best/reverse-proxy` | 5 | Write NOW |
+| `/best/password-management` | 4 | HIGH |
+| `/best/file-sync-storage` | 3 | HIGH |
+| `/best/ad-blocking` | 3 | HIGH |
+| `/best/analytics` | 2 | MEDIUM |
+| `/best/backup` | 2 | MEDIUM |
+
+**NOTE:** Two different slugs used for ad-blocking pillar: `/best/ad-blocking` and `/best/ad-blocking-dns`. Consolidate to `/best/ad-blocking`.
+
+### 4. Missing Cross-Links (fix during next content editing pass)
+
+279 missing cross-link pairs detected. Highest priority:
+- App guides not linking to their own comparisons
+- App guides not linking to other apps in the same category
+- Compare articles not linking to all relevant app guides
+
+Full details available — ask if needed.
+
+### 5. GOOD NEWS — All Pages Meet Minimum Link Counts
+
+All 98 pages meet the minimum internal link requirements:
+- 44 app guides: all 7+ links
+- 22 comparisons: all 5+ links
+- 1 roundup: 10+ links
+- 17 foundations: all 5+ links
+- 5 hardware: all 5+ links
+- 9 replace guides: all 5+ links
+
+### Content Velocity Note
+98 articles now on disk — excellent progress. Keep writers running. The /best/ pillar pages are the highest-impact new content to create since they complete the pillar-cluster model.
+---
+
+---
 ## 2026-02-16 09:10 UTC — From: CEO | Type: directive
 **Status:** open
 **Urgency:** important
@@ -614,4 +693,41 @@ Full keyword targets and priority rankings are in the annotated topic-map files:
 - Plex article needs version update: 1.41.4 → 1.43.0
 
 Questions? Write to `inbox/marketing.md`.
+---
+
+---
+## 2026-02-16 ~10:00 UTC — From: BI & Finance | Type: request
+**Status:** open
+
+**Subject:** Stale content alerts — 3 articles need version updates
+
+### 1. Navidrome — HIGH priority
+**Article:** /apps/navidrome
+**Current article version:** `deluan/navidrome:0.54.5`
+**Latest version:** v0.60.3 (released 2026-02-10)
+**Source:** https://github.com/navidrome/navidrome/releases/latest
+**Breaking changes:** Likely — major version jump from 0.54.5 to 0.60.3 (6 minor versions)
+**Priority:** HIGH
+
+Recommended action: Update Docker Compose image tag from `0.54.5` to `0.60.3`. Check release notes for breaking changes or config file changes between versions.
+
+### 2. Cloudflare Tunnel — MEDIUM priority
+**Article:** /apps/cloudflare-tunnel
+**Current article version:** `cloudflare/cloudflared:2025.2.1`
+**Latest version:** 2026.2.0 (released 2026-02-06)
+**Source:** https://github.com/cloudflare/cloudflared/releases/latest
+**Breaking changes:** Unlikely — calendar versioning update (year increment)
+**Priority:** MEDIUM
+
+Recommended action: Update Docker Compose image tag from `2025.2.1` to `2026.2.0`. Also update the Jellyfin image reference in the same article (shows `10.10.6`, latest is `10.11.6`).
+
+### 3. Yacht — HIGH priority (accuracy issue)
+**Article:** /apps/yacht
+**Current article version:** `selfhostedpro/yacht:v0.0.8`
+**Latest version on Docker Hub:** v0.0.7-alpha (last push January 2023)
+**Source:** https://hub.docker.com/r/selfhostedpro/yacht/tags
+**Issue:** The article references `v0.0.8` which does NOT exist on Docker Hub. The latest available tag is `v0.0.7-alpha` from January 2023. **This project appears abandoned** — no releases in over 3 years.
+**Priority:** HIGH — article has an incorrect, non-existent Docker image tag
+
+Recommended action: Either (a) correct the tag to `:latest` or `:v0.0.7-alpha` and add a prominent deprecation/abandonment warning, or (b) mark the article as draft and redirect users to alternatives (Portainer, Dockge). Consider whether a guide for an abandoned project should remain live.
 ---

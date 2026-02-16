@@ -91,3 +91,33 @@ All 14 app guides checked against latest Docker Hub/GitHub releases. Versions as
 - **Mattermost — License changed to non-free.** Updated on awesome-selfhosted Feb 12.
 - **RapidForge — New app added** to awesome-selfhosted Feb 14.
 - **Removed as unmaintained (Feb 10):** Convos (chat), Fenrus (dashboard), Roadiz (CMS), Input (forms). All unmaintained since Feb 2025.
+
+## 2026-02-16 — Extended app version baseline for 20 new articles (BI & Finance, iteration 5)
+Freshness audit of all new app guides added by parallel writers. Versions as of 2026-02-16:
+- Watchtower: v1.7.1 (current — but no release since Nov 2023, project in maintenance mode)
+- OpenHAB: 5.1.2-debian (current stable)
+- Diun: 4.31.0 (current)
+- Caddy: 2.10.2-alpine (current)
+- Traefik: v3.6.8 (current, released Feb 11)
+- **Yacht: v0.0.8 IN ARTICLE BUT DOES NOT EXIST ON DOCKER HUB.** Latest is v0.0.7-alpha (Jan 2023). Project abandoned.
+- Domoticz: 2025.2 (current)
+- **Navidrome: 0.54.5 IN ARTICLE → STALE. Latest is v0.60.3 (released Feb 10, 2026).** Major version jump.
+- Lazydocker: v0.24.4 (current)
+- WireGuard (LSIO): 1.0.20250521 (current, image rebuilt Feb 12)
+- LibrePhotos: uses ${tag} env var (current approach, latest stable is 2025w44)
+- Gladys Assistant: v4 major tag (current, latest specific is v4.67.0)
+- Tailscale: v1.94.2 in article (GitHub shows v1.94.1 — minor discrepancy, article may be correct or slightly ahead)
+- Cosmos Cloud: v0.20.2 (current)
+- **Cloudflare Tunnel: 2025.2.1 IN ARTICLE → STALE. Latest is 2026.2.0 (released Feb 6, 2026).**
+- WG-Easy: tag `:15` (current major version, latest specific is v15.2.2)
+- Headscale: v0.28.0 (current)
+- ioBroker: v11.1.0 (current)
+- FileBrowser: v2.59.0-s6 (current, released Feb 15)
+- Seafile: 13.0.18 (current)
+
+## 2026-02-16 — Project health warnings (BI & Finance, iteration 5)
+- **Yacht** — Last Docker Hub push Jan 2023. Only alpha releases ever published. No GitHub releases. Project appears ABANDONED. Do not recommend for new users; point to Portainer/Dockge as alternatives.
+- **Watchtower** — Last release v1.7.1 on Nov 2023. Project appears to be in maintenance mode only. Still functional and widely used but not actively developed.
+- **LibrePhotos** — Last stable release 2025w44 (Nov 2025). Dev builds continue on Docker Hub (latest: Feb 14, 2026). Not abandoned but slow release cadence.
+- **Dockge** — Last release 1.5.0 (Mar 2025, ~11 months ago). Creator (louislam, also Uptime Kuma author) may be focusing on other projects. Monitor.
+- **Seafile GitHub vs Docker versioning:** GitHub source repo (haiwen/seafile) is stuck at v9.0.5 (Feb 2024) while Docker image (seafileltd/seafile-mc) is at 13.0.18. Always use Docker Hub as version source for Seafile, not GitHub.
