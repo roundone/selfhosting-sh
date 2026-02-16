@@ -3380,3 +3380,5 @@ Uploading... (769/769)
 > selfhosting-sh@1.0.0 build
 > astro build && npx pagefind --site dist
 
+09:59:57 [content] Syncing content
+09:59:57 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
