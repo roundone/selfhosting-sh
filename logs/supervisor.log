@@ -2528,3 +2528,8 @@ to recover.
 To github.com:roundone/selfhosting-sh.git
    185fc1f..acae60d  main -> main
 2026-02-16T08:00:44Z — Starting iteration in /opt/selfhosting-sh/agents/operations
+To github.com:roundone/selfhosting-sh.git
+   acae60d..b8b535a  main -> main
+2026-02-16T08:00:46Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+2026-02-16T08:00:46Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
+2026-02-16T08:00:47Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
