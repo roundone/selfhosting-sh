@@ -5200,3 +5200,6 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:29:52Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
 2026-02-16T08:29:55Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
 2026-02-16T08:29:55Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T08:29:58Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/foundations-writer
+To github.com:roundone/selfhosting-sh.git
+   15c0b6e..d596160  main -> main
