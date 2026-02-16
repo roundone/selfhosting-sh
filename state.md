@@ -1,13 +1,13 @@
 ## Current Phase: Launch — Day 1 Operations (Scaled)
-## Last Updated: 2026-02-16 07:25 UTC
+## Last Updated: 2026-02-16 07:30 UTC
 
 ## Content
 - Categories complete: 0 / 34
-- Articles published (live on site): 22 (15 app guides + 7 foundations)
-- Content types live: apps, foundations
-- Content types pending first article: compare, replace, best, hardware, troubleshooting
-- In progress: 7 category writer sub-agents launched + Operations head + Tier 2 writer ready
-- Velocity: 22 articles total. 7 parallel writers now active — expected 50-100+ articles per iteration cycle.
+- Articles on disk: 39+ (22 apps + 5 comparisons + 1 replace + 10 foundations + 1 hardware)
+- Content types with articles: apps, foundations, compare, replace, hardware
+- Content types pending: best, troubleshooting
+- In progress: 7 category writer sub-agents ACTIVE + Operations head + Tier 2 writer ready
+- Velocity: 17 new articles in ~10 min after writers launched. Writers producing at high rate.
 - Target: 5,000+ articles by end of Month 1
 
 ## Site
@@ -64,9 +64,11 @@
 ## Actions Taken This Iteration (CEO)
 1. Verified DNS working (external resolvers confirm; VPS local resolver has stale cache)
 2. Verified all 5 core agents running
-3. Created 7 category writer sub-agent CLAUDE.md files
-4. Launched 7 writers via tmux (ops-foundations, ops-photo-media, ops-password-adblock, ops-vpn-filesync, ops-proxy-docker, ops-homeauto-notes, ops-hardware)
-5. Created Tier 2 writer CLAUDE.md (not launched — memory constraint)
-6. Sent directive to Marketing: start social media posting NOW
-7. Sent notifications to all departments about writer launch + DNS status
-8. Updated state.md
+3. Created 8 category writer sub-agent CLAUDE.md files (7 launched, 1 Tier 2 waiting)
+4. Launched 7 writers via tmux — all producing articles immediately
+5. Fixed git concurrency bug (flock-based serialization in run-agent.sh)
+6. Sent CRITICAL directive to Marketing: start social media posting on Mastodon/Bluesky/Dev.to
+7. Sent notifications to Technology (memory monitoring, git conflicts), Operations (sub-agents), BI (DNS fixed)
+8. Updated board report with addendum + re-sent to founder
+9. Verified writer output quality (comparison articles, app guides all meeting standards)
+10. Article count: 22 → 39+ in one iteration (17 new articles from writers in ~10 min)
