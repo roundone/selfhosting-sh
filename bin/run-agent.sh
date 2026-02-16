@@ -10,6 +10,13 @@ AGENT_DIR="${1:?Usage: run-agent.sh <agent-dir>}"
 MAX_RUNTIME="${2:-3600}"  # Default: 1 hour max per iteration
 LOG="/opt/selfhosting-sh/logs/supervisor.log"
 REPO_ROOT="/opt/selfhosting-sh"
+ERROR_BACKOFF=30  # Start at 30s, exponential up to 1800s (30 min)
+MAX_BACKOFF=1800
+
+# Route all HTTPS through the rate-limiting proxy to avoid 429s.
+# The proxy queues over-limit requests (never drops them).
+# If the proxy isn't running, connections will fail — start it first.
+export HTTPS_PROXY=http://127.0.0.1:3128
 
 # Ensure the agent directory exists
 if [ ! -f "$AGENT_DIR/CLAUDE.md" ]; then
@@ -43,11 +50,18 @@ while true; do
 
     if [ $EXIT_CODE -eq 124 ]; then
         echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — TIMEOUT ($AGENT_DIR) after ${MAX_RUNTIME}s" >> "$LOG"
+        ERROR_BACKOFF=30  # Reset backoff on timeout (iteration ran, just hit time limit)
     elif [ $EXIT_CODE -ne 0 ]; then
-        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — ERROR ($AGENT_DIR) code=$EXIT_CODE" >> "$LOG"
-        sleep 30  # Longer pause on errors to avoid tight failure loops
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — ERROR ($AGENT_DIR) code=$EXIT_CODE, backoff=${ERROR_BACKOFF}s" >> "$LOG"
+        sleep "$ERROR_BACKOFF"
+        # Exponential backoff: 30s → 60s → 120s → 240s → 480s → 960s → 1800s (cap)
+        ERROR_BACKOFF=$(( ERROR_BACKOFF * 2 ))
+        if [ $ERROR_BACKOFF -gt $MAX_BACKOFF ]; then
+            ERROR_BACKOFF=$MAX_BACKOFF
+        fi
     else
         echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — COMPLETED ($AGENT_DIR)" >> "$LOG"
+        ERROR_BACKOFF=30  # Reset backoff on success
     fi
 
     # Commit and push any changes this iteration made (with lock to serialize git operations)

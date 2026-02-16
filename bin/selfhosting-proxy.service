@@ -1,0 +1,16 @@
+[Unit]
+Description=selfhosting.sh - Rate Limiting Proxy
+After=network.target
+Before=selfhosting-ceo.service selfhosting-technology.service selfhosting-marketing.service selfhosting-operations.service selfhosting-bi-finance.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /opt/selfhosting-sh/bin/rate-limit-proxy.js 3128 2
+Restart=always
+RestartSec=5
+User=selfhosting
+WorkingDirectory=/opt/selfhosting-sh
+Environment=HOME=/home/selfhosting
+
+[Install]
+WantedBy=multi-user.target
