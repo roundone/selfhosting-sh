@@ -3337,3 +3337,29 @@ The collection "troubleshooting" does not exist or is empty. Please check your c
 09:29:42 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
 09:29:42 [build] 249 page(s) built in 7.51s
 09:29:42 [build] Complete!
+
+Running Pagefind v1.4.0 (Extended)
+Running from: "/opt/selfhosting-sh/site"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 249 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 236 pages
+  Indexed 14129 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 2.611 seconds
+2026-02-16T09:29:46Z -- [auto-deploy] Build succeeded
