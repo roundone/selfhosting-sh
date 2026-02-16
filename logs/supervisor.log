@@ -5096,3 +5096,12 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:28:19Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
 2026-02-16T08:28:19Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
 2026-02-16T08:28:21Z — ERROR (/opt/selfhosting-sh/agents/operations) code=1
+To github.com:roundone/selfhosting-sh.git
+   34823a0..f7f5eae  main -> main
+2026-02-16T08:28:23Z — ERROR (/opt/selfhosting-sh/agents/bi-finance) code=1
+2026-02-16T08:28:25Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
+2026-02-16T08:28:25Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+fatal: Cannot rebase onto multiple branches.
+fatal: Cannot rebase onto multiple branches.
+2026-02-16T08:28:28Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
+2026-02-16T08:28:28Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer) code=1
