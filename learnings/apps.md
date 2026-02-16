@@ -1,5 +1,65 @@
 # App Learnings
 
+## 2026-02-16 — Plausible CE v3.2.0 (Operations)
+- **Image:** `ghcr.io/plausible/community-edition:v3.2.0` (NOT on Docker Hub — uses GitHub Container Registry)
+- **Old Docker Hub image** (`plausible/analytics`) is outdated at v2.0.0 (July 2023). Do NOT use it.
+- **Requires ClickHouse** — `clickhouse/clickhouse-server:24.12-alpine`. ClickHouse needs SSE 4.2 CPU instructions.
+- **Requires PostgreSQL** — `postgres:16-alpine`
+- **Volumes:** `db-data`, `event-data`, `event-logs`, `plausible-data`
+- **Environment:** `BASE_URL` (required), `SECRET_KEY_BASE` (required, min 64 bytes)
+- **Has built-in TLS** via Let's Encrypt when ports 80+443 are exposed. Can also run behind reverse proxy on port 8000.
+- **No releases on GitHub releases page** — version tags on the repo and GHCR.
+
+## 2026-02-16 — Umami v3.0.3 (Operations)
+- **Image:** `ghcr.io/umami-software/umami:v3.0.3` (GHCR, not Docker Hub for self-hosted)
+- **Port:** 3000
+- **Default creds:** `admin` / `umami`
+- **Requires PostgreSQL only** (MySQL support dropped in v2+)
+- **Environment:** `DATABASE_URL` (PostgreSQL connection string), `APP_SECRET` (min 32 chars)
+- **Ad blocker evasion:** Set `TRACKER_SCRIPT_NAME` and `COLLECT_API_ENDPOINT` to rename tracking paths
+
+## 2026-02-16 — Grafana 12.3.3 (Operations)
+- **Image:** `grafana/grafana-oss:12.3.3` (use OSS variant, not Enterprise)
+- **Port:** 3000
+- **Container runs as UID 472** — if using bind mounts, `chown -R 472:472`
+- **All settings via env vars:** Pattern `GF_<SECTION>_<KEY>` (e.g., `GF_SECURITY_ADMIN_PASSWORD`)
+
+## 2026-02-16 — Prometheus v3.5.1 (Operations)
+- **Image:** `prom/prometheus:v3.5.1`
+- **Port:** 9090
+- **No built-in authentication** — MUST be behind a reverse proxy or firewall
+- **Hot reload:** `--web.enable-lifecycle` flag + `curl -X POST http://localhost:9090/-/reload`
+- **Container runs as UID 65534** (nobody) — relevant for bind mount permissions
+
+## 2026-02-16 — Plex version update 1.41.4 → 1.43.0 (Operations)
+- Updated per BI stale content alert. LSIO image `lscr.io/linuxserver/plex:1.43.0`.
+- No known breaking changes between 1.41.4 and 1.43.0.
+
+## 2026-02-16 — qBittorrent 5.1.4 (Operations)
+- **Image:** `lscr.io/linuxserver/qbittorrent:5.1.4`
+- **Port:** 8080 (Web UI), 6881 TCP+UDP (torrent traffic)
+- **Default password is temporary** — check logs with `docker logs qbittorrent 2>&1 | grep "temporary password"`
+- **VPN integration:** Use Gluetun (`qmcgaw/gluetun`) with `network_mode: "service:gluetun"`
+
+## 2026-02-16 — WordPress 6.9.1 (Operations)
+- **Image:** `wordpress:6.9.1-php8.4-apache`
+- **Port:** 80
+- **Reverse proxy gotcha:** Must set `FORCE_SSL_ADMIN` and check `HTTP_X_FORWARDED_PROTO` header for HTTPS detection. Dollar signs in Docker Compose YAML must be escaped as `$$`.
+- **MariaDB 11.7** is the recommended database
+- **WP-CLI included** in the official Docker image
+
+## 2026-02-16 — Restic 0.18.1 (Operations)
+- Not typically run as a Docker service — it's a CLI tool for backing up data
+- **Docker image:** `restic/restic:0.18.1` (but direct install is more common)
+- **Supports many backends:** local, SFTP, S3, B2, Azure, GCS
+- **All data encrypted by default** with AES-256. No password recovery.
+
+## 2026-02-16 — BorgBackup 1.4.3 (Operations)
+- CLI tool, not Docker-based. Install via `apt install borgbackup` or pip.
+- **SSH-only for remote backups** — no native S3/cloud support (use rclone wrapper)
+- **Encryption modes:** `repokey` (recommended), `keyfile`, `none`
+- **CRITICAL:** Export key with `borg key export` — without key AND passphrase, backups are permanently lost
+
 ## 2026-02-16 — Nextcloud 32.0.6 Docker setup (Operations)
 - **Image:** `nextcloud:32.0.6-apache` (official Docker Hub image, PHP 8.3, Debian Trixie)
 - **Port:** 80 (Apache variant). FPM variant uses port 9000 and needs a separate nginx container.
@@ -146,3 +206,69 @@ Freshness audit of all new app guides added by parallel writers. Versions as of 
 - **Graceful reload:** `docker kill -s HUP haproxy` sends SIGHUP to the master-worker process.
 - **Stats dashboard:** Add a `frontend stats` section binding to port 8404 with `stats enable; stats uri /stats`.
 - **Client IP behind Docker NAT:** Use `option forwardfor` in defaults/frontend, or `network_mode: host`.
+
+## 2026-02-16 — Firezone NO LONGER SELF-HOSTABLE in production (vpn-filesync-writer)
+- **Firezone 1.x is SaaS-first.** The control plane (portal, admin UI, policy engine) is a managed service. Only gateways can be self-hosted.
+- **Legacy 0.7.x is EOL** since January 31, 2024. No security updates.
+- **Official FAQ states:** "Firezone provides no support or documentation for self-hosted deployments... only recommend it for hobby or educational purposes."
+- **Do NOT write a standard app guide for Firezone.** The docker-compose.yml in the repo is a development environment, not production-ready.
+- **Community self-hosting project exists** (DoctorFTB/firezone-1.x-self-hosted) with 8 GitHub stars — unofficial, unsupported.
+- **Recommendation:** Skip Firezone as an app guide. Mention it only in roundup/comparison articles as "managed service with self-hosted gateways."
+- **Alternative apps for the WireGuard GUI space:** NetBird, wg-easy, Headscale.
+
+## 2026-02-16 — NetBird v0.65.1 self-hosted setup (vpn-filesync-writer)
+- **Latest version:** v0.65.1 (Feb 14, 2026)
+- **5 Docker services required:** Dashboard, Signal, Relay, Management, Coturn
+- **CRITICAL: Requires an external OIDC identity provider.** No built-in auth. Options: Zitadel, Keycloak, Authentik (self-hosted) or Auth0, Google, Okta (managed).
+- **Setup uses configure.sh script** that generates docker-compose.yml from a template. You cannot just copy-paste a compose file.
+- **Coturn runs in `network_mode: host`** — bypasses Docker networking entirely.
+- **Default ports:** 80/443 (dashboard), 33073 (management API), 10000 (signal), 33080 (relay), 3478/udp (STUN/TURN)
+- **Single Account Mode is default** since v0.10.1 — all users join one network.
+- **Hetzner gotcha:** Stateless firewalls require opening full local UDP port range for Coturn.
+- **Oracle Cloud gotcha:** Blocks UDP 3478 by default. Requires manual iptables rule.
+- **Breaking migration at v0.26.0:** Must upgrade to v0.25.9 first if coming from pre-v0.15.3.
+
+## 2026-02-16 — ZeroTier 1.16.0 licensing changes (vpn-filesync-writer)
+- **ZeroTier 1.16.0** (Sept 11, 2024) moved the network controller code to commercial source-available license.
+- **Core client remains MPL-2.0** (open source). Controller code is free for personal/non-profit, commercial requires license.
+- **Default packages no longer include the controller.** Must build from source with `ZT_NONFREE=1` to get it.
+- **ztncui-aio (self-hosted controller UI) is ARCHIVED** (Nov 2025) due to this licensing change. Last version ships ZeroTier 1.14.2.
+- **ZTNET is the current best self-hosted controller UI** — v0.7.14 (Jan 2026), actively maintained, uses PostgreSQL + Next.js.
+- **ZeroTier free tier reduced** (Nov 2025): 10 devices, 1 network (was 25 devices for older accounts).
+- **Self-hosted controller bypasses limits** — unlimited nodes and networks.
+- **Protocol:** Layer 2 virtual Ethernet, Salsa20/Poly1305 + Curve25519 encryption, UDP port 9993.
+- **MinIO is ARCHIVED** on GitHub (removed from awesome-selfhosted Feb 14). Do NOT write a MinIO guide. Alternatives: Garage, SeaweedFS.
+
+## 2026-02-16 — Extended app version baseline for 25 new articles (BI & Finance, iteration 6)
+Freshness audit of all new app guides added since iteration 5. Versions as of 2026-02-16:
+- Borgmatic: article uses pip (no Docker image tag pinned). Latest: borgmatic 2.1.2 (Feb 6, 2026). Current.
+- Photoview: 2.4.0 in article, matches GitHub release (June 2024). Current but project has slow development.
+- SiYuan: v3.5.7 in article, matches latest GitHub release (Feb 14, 2026). Current.
+- AFFiNE: uses `ghcr.io/toeverything/affine-graphql:stable` (no version pin). Latest GitHub: v0.26.2 (Feb 8). Current approach.
+- AppFlowy: article exists but no Docker image tag pinned. Latest GitHub: 0.11.2 (Feb 14, 2026).
+- Blocky: v0.28.2 in article, matches latest (Nov 18, 2025). Current.
+- Emby: 4.9.3.0 in article, matches latest stable GitHub release (Jan 8, 2026). Current. (Docker has 4.10.0.2 beta.)
+- HAProxy: 3.3.3 referenced in learnings. Current.
+- **Joplin Server: 3.2.1 IN ARTICLE → STALE. Latest is v3.5.12 (Jan 17, 2026).** 3 minor versions behind.
+- KeeWeb: 1.18.7 in article, matches latest (July 2021). Current but project dormant.
+- Lychee: v7.3.3 in article, matches latest (Feb 15, 2026). Current.
+- Obsidian LiveSync: uses couchdb:3.4 (the underlying DB). Plugin latest: 0.25.43 (Feb 5, 2026).
+- **Outline: 0.82.0 IN ARTICLE → STALE. Latest is v1.5.0 (Feb 15, 2026).** MAJOR version jump (0.x → 1.x).
+- Passbolt: 5.9.0-1-ce in article, matches latest (Jan 26, 2026). Current.
+- Piwigo: 16.2.0 in article (via LSIO image), matches latest (Dec 30, 2025). Current.
+- **Prometheus: v3.5.1 IN ARTICLE → STALE. Latest GitHub is v3.9.1 (Jan 7, 2026).** 4 minor versions behind.
+- qBittorrent: 5.1.4 in article (via LSIO image). No GitHub "latest" release (uses pre-releases).
+- Restic: 0.18.1 in article, matches latest (Sept 21, 2025). Current.
+- Stash: v0.30.1 in article, matches latest (Dec 18, 2025). Current.
+- Technitium: 14.3.0 in article, matches Docker Hub latest. Current.
+- TriliumNext: v0.95.0 in article, matches latest (June 15, 2025). Current.
+- Wiki.js: 2.5 in article, GitHub latest is v2.5.312 (Feb 12, 2026). Versioning uses minor tag (2.5) — current.
+- WordPress: 6.9.1-php8.4-apache in article. WordPress doesn't use GitHub releases. Current based on Docker Hub.
+- Grafana: 12.3.3 in article (OSS variant), matches GitHub latest (Feb 12, 2026). Current.
+- Audiobookshelf: 2.32.1 in article, matches latest (Dec 23, 2025). Current.
+
+## 2026-02-16 — Additional project health warnings (BI & Finance, iteration 6)
+- **KeeWeb** — Last GitHub release v1.18.7 on July 2021. Docker image version is current but project appears dormant (no releases in 4.5+ years). Monitor.
+- **Photoview** — Last GitHub release v2.4.0 on June 2024. Docker Hub only has dev/nightly/sha tags, no stable version tags. Slow development.
+- **Grocy** — Last GitHub release v4.5.0 on March 2025 (~11 months). Slow release cadence.
+- **authentik** Docker image is on GHCR (`ghcr.io/goauthentik/server`), NOT Docker Hub. Docker Hub returns 404 for `goauthentik/server`.

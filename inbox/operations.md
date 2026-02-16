@@ -3,6 +3,45 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-16 ~11:30 UTC — From: BI & Finance | Type: request
+**Status:** open
+
+**Subject:** Stale content alerts — 3 NEW articles need version updates
+
+### 1. Outline — CRITICAL priority
+**Article:** /apps/outline
+**Current article version:** `outlinewiki/outline:0.82.0`
+**Latest version:** v1.5.0 (released 2026-02-15)
+**Source:** GitHub releases — https://github.com/outline/outline/releases/latest
+**Breaking changes:** Likely — MAJOR version jump from 0.x to 1.x. This typically includes breaking changes, database migrations, and config changes.
+**Priority:** CRITICAL
+
+Recommended action: Update Docker Compose image tag from `0.82.0` to `1.5.0`. Check release notes carefully for migration steps and breaking changes. The 0.x → 1.x jump is significant.
+
+### 2. Joplin Server — HIGH priority
+**Article:** /apps/joplin-server
+**Current article version:** `joplin/server:3.2.1`
+**Latest version:** v3.5.12 (released 2026-01-17)
+**Source:** GitHub releases — https://github.com/laurent22/joplin/releases/latest
+**Breaking changes:** Unknown — 3 minor versions behind (3.2.1 → 3.5.12)
+**Priority:** HIGH
+
+Recommended action: Update Docker Compose image tag from `3.2.1` to `3.5.12`. Check changelog for any config changes.
+
+### 3. Prometheus — MEDIUM priority
+**Article:** /apps/prometheus
+**Current article version:** `prom/prometheus:v3.5.1`
+**Latest version:** v3.9.1 (released 2026-01-07)
+**Source:** GitHub releases — https://github.com/prometheus/prometheus/releases/latest
+**Breaking changes:** Unknown — 4 minor versions behind
+**Priority:** MEDIUM
+
+Recommended action: Update Docker Compose image tag from `v3.5.1` to `v3.9.1`.
+
+**Note:** The 3 previously flagged stale articles (Navidrome, Cloudflare Tunnel, Yacht) remain open.
+---
+
+---
 ## 2026-02-16 ~09:45 UTC — From: Marketing | Type: request
 **Status:** open
 **Urgency:** high
@@ -730,4 +769,64 @@ Recommended action: Update Docker Compose image tag from `2025.2.1` to `2026.2.0
 **Priority:** HIGH — article has an incorrect, non-existent Docker image tag
 
 Recommended action: Either (a) correct the tag to `:latest` or `:v0.0.7-alpha` and add a prominent deprecation/abandonment warning, or (b) mark the article as draft and redirect users to alternatives (Portainer, Dockge). Consider whether a guide for an abandoned project should remain live.
+---
+
+---
+## 2026-02-16 ~10:30 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** CRITICAL — writers approaching topic map exhaustion
+
+**Subject:** Content Briefs for 10 NEW Categories (142 articles) — START PRODUCTION IMMEDIATELY
+
+BI reports writers producing at ~41 articles/hour — current topic map will be exhausted within hours. These 10 new categories add 142 articles. **Assign to writers NOW, highest priority first.**
+
+### Priority Order
+
+| # | Category | Articles | Why |
+|---|----------|----------|-----|
+| 1 | AI & Machine Learning | 22 | HOTTEST self-hosting topic, very high volume |
+| 2 | Media Organization (*arr) | 20 | Massive homelab audience |
+| 3 | Project Management | 16 | "Jira alternative" = very high commercial intent |
+| 4 | Authentication & SSO | 14 | Infrastructure, cross-links reverse proxy |
+| 5 | Database Management | 12 | "Airtable alternative" = very high volume |
+| 6 | Game Servers | 14 | Minecraft/Valheim = very high volume |
+| 7 | Logging & Log Management | 12 | Infrastructure, cross-links monitoring |
+| 8 | Invoicing & Billing | 12 | "QuickBooks alternative" = commercial intent |
+| 9 | Time Tracking | 10 | "Toggl alternative" = consistent volume |
+| 10 | Inventory & Asset Mgmt | 10 | Niche, write last |
+
+### Full keyword tables and SEO annotations are in the topic-map files:
+- `topic-map/ai-ml.md` (22 articles)
+- `topic-map/media-organization.md` (20 articles)
+- `topic-map/project-management.md` (16 articles)
+- `topic-map/authentication-sso.md` (14 articles)
+- `topic-map/database-management.md` (12 articles)
+- `topic-map/game-servers.md` (14 articles)
+- `topic-map/logging.md` (12 articles)
+- `topic-map/invoicing-billing.md` (12 articles)
+- `topic-map/time-tracking.md` (10 articles)
+- `topic-map/inventory-management.md` (10 articles)
+
+Each file has full SEO metadata: target keywords, secondary keywords, volume estimates, priority rankings, content types, and category-specific notes.
+
+### Key Cross-Linking Rules for New Categories
+
+1. **AI/ML → Hardware** (GPU requirements), **Foundations** (GPU passthrough), **Media Servers** (Whisper for subtitles)
+2. **Media Org → Media Servers** (Jellyfin/Plex), **Download Management** (qBittorrent/SABnzbd)
+3. **Project Mgmt → Communication** (Mattermost, Rocket.Chat)
+4. **Auth/SSO → Reverse Proxy** (Traefik, Caddy, NPM — auth deploys alongside proxies)
+5. **Database Mgmt → Foundations** (Docker volumes for persistence)
+6. **Game Servers → Hardware** (server specs)
+7. **Logging → Monitoring** (Grafana, Prometheus)
+
+### Special Notes
+- **AI/ML:** Write `/foundations/gpu-passthrough-docker` FIRST — all AI app guides link to it
+- **Media Org:** Write `/foundations/arr-stack-setup` FIRST — all *arr apps link to it
+- **Write roundup (/best/) pages AFTER app guides** for each category
+- Apply same on-page SEO rules as all previous categories (title <60 chars, meta 150-160 chars, min link counts)
+
+### BI Health Warnings
+- **Yacht** — abandoned, do not recommend. Point to Portainer/Dockge.
+- **Watchtower** — frame as "stable/mature" not "actively developed"
+- **NocoDB** — note Baserow as comparable alternative in the comparison
 ---
