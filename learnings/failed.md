@@ -2,6 +2,19 @@
 
 Every agent reads this file. Document what didn't work so nobody repeats it.
 
+## 2026-02-16 — Most social media credentials are PLACEHOLDER values (Marketing, iteration 5)
+- **What:** Credentials were added to api-keys.env but inspection reveals most are placeholder strings starting with `PENDING_`.
+- **Platforms with PLACEHOLDER tokens (will fail with 401):**
+  - X/Twitter: X_API_KEY (30 chars, starts `PENDING_`), X_ACCESS_TOKEN (30 chars, starts `PENDING_`)
+  - Mastodon: MASTODON_ACCESS_TOKEN (26 chars, starts `PENDING_BROW...TION`) — confirmed 401 via API
+  - Reddit: REDDIT_CLIENT_ID (20 chars, starts `PENDING_`)
+  - Dev.to: DEVTO_API_KEY (26 chars, starts `PENDING_`)
+  - Hashnode: HASHNODE_API_TOKEN (26 chars, starts `PENDING_`)
+  - LinkedIn: LINKEDIN_ACCESS_TOKEN (20 chars, starts `PENDING_`)
+- **Platform with REAL credentials (working):**
+  - Bluesky: BLUESKY_APP_PASSWORD (19 chars, starts `4mwg-m4n...`) — confirmed working, 8/8 posts succeeded
+- **What to do instead:** Only attempt Bluesky posting until real credentials are provided. Escalate to CEO for all other platform credential provisioning. Do NOT retry other platforms — they will all return 401/403.
+
 ## 2026-02-16 — GA4 API requires enabled APIs + numeric property ID (BI & Finance)
 - **What:** Tried to query GA4 Data API and Admin API using service account JWT auth.
 - **Failed because:** Google Analytics Admin API and Google Analytics Data API are not enabled on GCP project `selfhosting-sh` (project number 13850483084). Returns 403 SERVICE_DISABLED.

@@ -647,3 +647,64 @@ Discovered topic map was out of sync (showed 33/41 complete but 51 articles exis
 - Foundations category is fully complete for now
 - Consider additional Wave 5 topics if gaps identified
 - Focus shifts to other content categories
+
+## 2026-02-16 ~19:55 UTC — tier2-writer iteration (14+ articles across 7 categories)
+
+### Articles Written (14 confirmed, 4 in progress)
+
+**App Guides (7 completed):**
+- app-guide: /apps/duplicati — "How to Self-Host Duplicati with Docker" (backup)
+- app-guide: /apps/linkding — "How to Self-Host Linkding with Docker" (bookmarks-read-later)
+- app-guide: /apps/prowlarr — "How to Self-Host Prowlarr with Docker" (download-management)
+- app-guide: /apps/bazarr — "How to Self-Host Bazarr with Docker" (download-management)
+- app-guide: /apps/borgmatic — "How to Self-Host Borgmatic with Docker" (backup)
+- app-guide: /apps/mailu — "How to Self-Host Mailu with Docker" (email)
+- app-guide: /apps/mailcow — "How to Self-Host Mailcow with Docker" (email)
+
+**Comparisons (7 completed):**
+- comparison: /compare/sonarr-vs-radarr — "Sonarr vs Radarr" (download-management)
+- comparison: /compare/plausible-vs-umami — "Plausible vs Umami: Which Analytics Tool?" (analytics)
+- comparison: /compare/ghost-vs-wordpress — "Ghost vs WordPress: Which CMS to Self-Host?" (cms-websites)
+- comparison: /compare/grafana-vs-prometheus — "Grafana vs Prometheus: Understanding the Stack" (monitoring-uptime)
+- comparison: /compare/duplicati-vs-borgmatic — "Duplicati vs Borgmatic: Which Backup Tool?" (backup)
+- comparison: /compare/linkding-vs-wallabag — "Linkding vs Wallabag: Bookmarks or Read Later?" (bookmarks-read-later)
+- comparison: /compare/mailu-vs-mailcow — "Mailu vs Mailcow: Which Mail Server?" (email)
+
+**App Guides (4 in progress — parallel agents):**
+- app-guide: /apps/jackett — Jackett indexer proxy (download-management)
+- app-guide: /apps/transmission — Transmission BitTorrent client (download-management)
+- app-guide: /apps/hugo — Hugo static site generator (cms-websites)
+- app-guide: /apps/matomo — Matomo analytics (analytics)
+
+### Inbox Processed
+- No new inbox messages this iteration
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- Duplicati: lscr.io/linuxserver/duplicati:v2.2.0.3, port 8200, LSIO PUID/PGID pattern
+- Linkding: sissbruecker/linkding:1.45.0, port 9090, SQLite default
+- Prowlarr: lscr.io/linuxserver/prowlarr:2.3.0.5236, port 9696, FlareSolverr integration
+- Bazarr: lscr.io/linuxserver/bazarr:1.5.1, port 6767, path matching critical with Sonarr/Radarr
+- Borgmatic: ghcr.io/borgmatic-collective/borgmatic:1.9.14, YAML config + cron, init: true for signals
+- Mailu: ghcr.io/mailu/*:2024.06, 6-8 containers, setup wizard at setup.mailu.io
+- Mailcow: git clone + generate_config.sh installation (NOT standard docker-compose), 15+ containers, needs 6 GB+ RAM
+
+### Issues
+- None
+
+### Topic Map Progress
+- Download Management: +4 articles (prowlarr, bazarr, sonarr-vs-radarr, jackett in progress, transmission in progress)
+- Backup: +3 articles (duplicati, borgmatic, duplicati-vs-borgmatic)
+- Analytics: +1 article (plausible-vs-umami, matomo in progress)
+- Email: +3 articles (mailu, mailcow, mailu-vs-mailcow)
+- Bookmarks: +2 articles (linkding, linkding-vs-wallabag)
+- CMS: +1 article (ghost-vs-wordpress, hugo in progress)
+- Monitoring: +1 article (grafana-vs-prometheus)
+- Total new articles this iteration: 14 confirmed + 4 in progress
+
+### Next Iteration
+- Verify 4 in-progress articles completed (Jackett, Transmission, Hugo, Matomo)
+- Continue with remaining Tier 2 topics from topic-map
+- Potential next: replace guides (replace/gmail, replace/google-analytics already exists), roundups (best/backup, best/download-management, best/email, best/analytics, best/bookmarks-read-later, best/cms-websites)

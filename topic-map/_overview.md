@@ -3,7 +3,7 @@
 ## Category Priority Order
 
 ### Tier 1 — High Priority (launch categories)
-1. Foundations — 27/22 complete — **Priority: high** — COMPLETE (122%, +5 bonus articles)
+1. Foundations — 66/81 complete — **Priority: high** — MOSTLY COMPLETE (81%, expanded with 15 troubleshooting + advanced guides)
 2. Home Automation — 13/13 complete — **Priority: high** — COMPLETE (100%)
 3. Docker Management — 13/13 complete — **Priority: high** — COMPLETE (100%)
 4. Reverse Proxy & SSL — 13/13 complete — **Priority: high** — COMPLETE (100%)
@@ -13,92 +13,157 @@
 8. File Sync & Storage — 12/16 complete — **Priority: high** — IN PROGRESS (75%)
 9. VPN & Remote Access — 13/18 complete — **Priority: high** — IN PROGRESS (72%)
 10. Photo & Video Management — 11/16 complete — **Priority: high** — IN PROGRESS (68%)
-11. Media Servers — 11/18 complete — **Priority: high** — IN PROGRESS (61%)
+11. Media Servers — 11/26 complete — **Priority: high** — IN PROGRESS (42%, expanded with 8 new articles)
 12. Hardware — 14/25 complete — **Priority: high** — IN PROGRESS (56%)
 
-### Tier 2 — Medium Priority (SEO-annotated)
-13. Analytics — 3/16 complete — **Priority: medium** — SEO annotated — STARTED
-14. Monitoring & Uptime — 3/17 complete — **Priority: medium** — SEO annotated — STARTED
-15. Backup — 2/17 complete — **Priority: medium** — SEO annotated — STARTED
-16. Download Management — 1/20 complete — **Priority: medium** — SEO annotated — STARTED
-17. CMS & Websites — 1/19 complete — **Priority: medium** — SEO annotated — STARTED
+### Tier 2 — Medium Priority (SEO-annotated, expanded)
+13. Analytics — 3/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
+14. Monitoring & Uptime — 3/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+11 articles)
+15. Backup — 2/29 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
+16. Download Management — 1/34 complete — **Priority: medium** — SEO annotated — EXPANDED (+14 articles)
+17. CMS & Websites — 1/31 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
 18. Automation & Workflows — 0/15 complete — **Priority: medium** — SEO annotated
 19. Dashboards — 0/14 complete — **Priority: medium** — SEO annotated
 20. Git & Code Hosting — 0/14 complete — **Priority: medium** — SEO annotated
-21. Personal Finance — 0/12 complete — **Priority: medium** — SEO annotated
-22. Communication & Chat — 0/14 complete — **Priority: medium** — SEO annotated
+21. Personal Finance — 0/22 complete — **Priority: medium** — SEO annotated — EXPANDED (+10 articles)
+22. Communication & Chat — 0/25 complete — **Priority: medium** — SEO annotated — EXPANDED (+11 articles)
 23. RSS Readers — 0/12 complete — **Priority: medium** — SEO annotated
 24. Bookmarks & Read Later — 0/15 complete — **Priority: medium** — SEO annotated
 25. Document Management — 0/10 complete — **Priority: medium** — SEO annotated
 26. Calendar & Contacts — 0/12 complete — **Priority: medium** — SEO annotated
-27. Email — 0/17 complete — **Priority: medium** — SEO annotated
+27. Email — 0/32 complete — **Priority: medium** — SEO annotated — EXPANDED (+15 articles)
+28. DNS & Networking — 0/29 complete — **Priority: high** — SEO annotated — EXPANDED (+11 articles)
 
 ### New Categories — Batch 1 (added by Marketing iteration 3)
-28. **AI & Machine Learning** — 0/22 complete — **Priority: high** — SEO annotated — NEW (HOTTEST topic)
-29. **Media Organization (*arr stack)** — 0/20 complete — **Priority: high** — SEO annotated — NEW
-30. **Project Management** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
-31. **Authentication & SSO** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
-32. **Game Servers** — 0/14 complete — **Priority: medium** — SEO annotated — NEW
-33. **Database Management** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
-34. **Invoicing & Billing** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
-35. **Logging & Log Management** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
-36. **Time Tracking** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
-37. **Inventory & Asset Management** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+29. **AI & Machine Learning** — 0/22 complete — **Priority: high** — SEO annotated — NEW (HOTTEST topic)
+30. **Media Organization (*arr stack)** — 0/20 complete — **Priority: high** — SEO annotated — NEW
+31. **Project Management** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
+32. **Authentication & SSO** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+33. **Game Servers** — 0/14 complete — **Priority: medium** — SEO annotated — NEW
+34. **Database Management** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+35. **Invoicing & Billing** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+36. **Logging & Log Management** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+37. **Time Tracking** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+38. **Inventory & Asset Management** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
 
 ### New Categories — Batch 2 (added by Marketing iteration 4, from awesome-selfhosted mining)
-38. **Search Engines** — 0/18 complete — **Priority: high** — SEO annotated — NEW
-39. **Social Networks & Forums** — 0/24 complete — **Priority: high** — SEO annotated — NEW
-40. **Video Surveillance & NVR** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Frigate!)
-41. **File Sharing & Transfer** — 0/18 complete — **Priority: high** — SEO annotated — NEW
-42. **Task Management** — 0/16 complete — **Priority: high** — SEO annotated — NEW (Planka, AppFlowy)
-43. **Newsletters & Mailing Lists** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Listmonk!)
-44. **E-Commerce** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
-45. **Ticketing & Helpdesk** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
-46. **Polls, Forms & Surveys** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
-47. **Office Suites & Collaboration** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
-48. **Low-Code & Dev Platforms** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (PocketBase!)
-49. **Development Tools** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (code-server!)
-50. **CRM** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
-51. **Booking & Scheduling** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Cal.com!)
-52. **Maps & GPS Tracking** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
-53. **Health & Fitness** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
-54. **Wiki & Documentation** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
-55. **Archiving & Digital Preservation** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
-56. **Document Signing & PDF Tools** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Stirling-PDF!)
+39. **Search Engines** — 0/18 complete — **Priority: high** — SEO annotated — NEW
+40. **Social Networks & Forums** — 0/24 complete — **Priority: high** — SEO annotated — NEW
+41. **Video Surveillance & NVR** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Frigate!)
+42. **File Sharing & Transfer** — 0/18 complete — **Priority: high** — SEO annotated — NEW
+43. **Task Management** — 0/16 complete — **Priority: high** — SEO annotated — NEW (Planka, AppFlowy)
+44. **Newsletters & Mailing Lists** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Listmonk!)
+45. **E-Commerce** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
+46. **Ticketing & Helpdesk** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+47. **Polls, Forms & Surveys** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+48. **Office Suites & Collaboration** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+49. **Low-Code & Dev Platforms** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (PocketBase!)
+50. **Development Tools** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (code-server!)
+51. **CRM** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+52. **Booking & Scheduling** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Cal.com!)
+53. **Maps & GPS Tracking** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
+54. **Health & Fitness** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+55. **Wiki & Documentation** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+56. **Archiving & Digital Preservation** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
+57. **Document Signing & PDF Tools** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Stirling-PDF!)
+
+### New Categories — Batch 3 (added by Marketing topic map expansion)
+58. **Music & Audio** — 0/22 complete — **Priority: high** — SEO annotated — NEW (Navidrome, Spotify replacement)
+59. **Ebooks & Reading** — 0/18 complete — **Priority: medium-high** — SEO annotated — NEW (Calibre-Web, Kavita)
+60. **Container Orchestration** — 0/16 complete — **Priority: high** — SEO annotated — NEW (k3s, k0s, Kubernetes)
+61. **Network Monitoring** — 0/15 complete — **Priority: medium-high** — SEO annotated — NEW (Zabbix, LibreNMS)
+62. **Notification Services** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (ntfy, Gotify)
+63. **Link Management** — 0/14 complete — **Priority: medium** — SEO annotated — NEW (Shlink, LinkStack)
+64. **Webmail & Email Clients** — 0/13 complete — **Priority: medium** — SEO annotated — NEW (Roundcube, Snappymail)
+65. **Learning & Education** — 0/14 complete — **Priority: medium** — SEO annotated — NEW (Moodle, Canvas LMS)
+66. **Photo Editing & Design** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Penpot, Excalidraw)
+67. **Secrets Management** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Vault, Infisical)
+68. **Podcast Hosting** — 0/10 complete — **Priority: medium** — SEO annotated — NEW (Castopod, AzuraCast)
+69. **Genealogy & Family** — 0/10 complete — **Priority: low-medium** — SEO annotated — NEW (webtrees, Gramps)
+70. **Home Inventory** — 0/10 complete — **Priority: medium** — SEO annotated — NEW (Homebox, Grocy)
+71. **Digital Signage** — 0/8 complete — **Priority: low-medium** — SEO annotated — NEW (Anthias, Xibo)
 
 ### Tier 3 — Lower Priority
-57. Status Pages — 0/13 complete — **Priority: low**
-58. URL Shorteners — 0/12 complete — **Priority: low**
-59. Pastebin & Snippets — 0/12 complete — **Priority: low**
-60. Recipes — 0/16 complete — **Priority: medium** — SEO annotated (upgraded from Tier 3)
-61. Link Pages — 0/10 complete — **Priority: low**
-62. Speed Test — 0/9 complete — **Priority: low**
-63. Video Conferencing — 0/9 complete — **Priority: low**
+72. Status Pages — 0/13 complete — **Priority: low**
+73. URL Shorteners — 0/12 complete — **Priority: low**
+74. Pastebin & Snippets — 0/12 complete — **Priority: low**
+75. Recipes — 0/16 complete — **Priority: medium** — SEO annotated (upgraded from Tier 3)
+76. Link Pages — 0/10 complete — **Priority: low**
+77. Speed Test — 0/9 complete — **Priority: low**
+78. Video Conferencing — 0/9 complete — **Priority: low**
 
 ## Summary
-- Total articles planned: ~905 (up from 639 — Marketing iteration 4 added 19 new categories with ~266 articles + expanded existing categories)
+- **Total articles planned: ~1,224** (up from ~905 — Marketing topic map expansion added 15 new categories with ~188 articles + expanded 10 existing categories with ~131 articles)
 - Total articles published: 179
-- Total categories: 63 (up from 44 — 19 new categories from awesome-selfhosted mining)
-- Categories fully complete: 5 / 63 (Home Automation, Foundations, Docker Management, Reverse Proxy & SSL, Password Management)
-- Categories with content: 17 / 63
-- Content types: apps (66), compare (45), foundations (27), replace (23), hardware (14), best (4)
-- Content types empty: troubleshooting (0)
-- **Still need: ~1,095 more planned articles to reach 2,000 target** — next iteration will expand existing categories further + add remaining awesome-selfhosted categories
+- Total categories: 78 (up from 63 — 15 new categories added)
+- Categories fully complete: 4 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management)
+- Categories with content: 17 / 78
+- Content types: apps (66+), compare (45+), foundations (27+), replace (23+), hardware (14+), best (4+), troubleshooting (many new)
+- **Troubleshooting articles now planned**: 50+ across all categories (was 0)
+- **Still need: ~776 more planned articles to reach 2,000 target** — next expansion should add more apps to underserved categories + create additional comparison and troubleshooting content
+
+## What Was Added This Expansion
+
+### 15 New Categories (188 articles)
+| Category | Articles | Key Apps |
+|----------|----------|----------|
+| Music & Audio | 22 | Navidrome, Funkwhale, Ampache, Airsonic-Advanced, Koel, gonic, LMS, Beets |
+| Ebooks & Reading | 18 | Calibre-Web, Kavita, Komga, Stump, Readarr, LazyLibrarian |
+| Container Orchestration | 16 | k3s, k0s, MicroK8s, Docker Swarm, Nomad, Rancher |
+| Network Monitoring | 15 | Zabbix, LibreNMS, Cacti, Observium, NetBox, phpIPAM, Oxidized |
+| Notification Services | 14 | ntfy, Gotify, Apprise, Bark, Alertmanager |
+| Link Management | 14 | Shlink, YOURLS, Linkwarden, LinkStack, Kutt |
+| Learning & Education | 14 | Moodle, Canvas LMS, Open edX, Chamilo, ILIAS, Kolibri |
+| Webmail & Email Clients | 13 | Roundcube, Snappymail, Cypht, Mailtrain, SOGo |
+| Photo Editing & Design | 12 | Penpot, Excalidraw, draw.io, Minder, Tldraw |
+| Secrets Management | 12 | HashiCorp Vault, Infisical, PrivateBin, Yopass, OneTimeSecret |
+| Genealogy & Family | 10 | webtrees, Gramps Web |
+| Home Inventory | 10 | Homebox, Grocy, Shelf |
+| Podcast Hosting | 10 | Castopod, AzuraCast, Podgrab, Audiobookshelf |
+| Digital Signage | 8 | Anthias, Xibo, PiSignage |
+
+### 10 Existing Categories Expanded (131 articles)
+| Category | Articles Added | Key Additions |
+|----------|---------------|---------------|
+| Foundations | +15 | Docker troubleshooting, DNS debugging, SSL issues, reverse proxy debugging, security hardening, performance tuning, VPS vs home server |
+| Email | +15 | Postal, Chasquid, iRedMail, Modoboa, Haraka, Wildduck + deliverability guide + troubleshooting |
+| Download Management | +14 | Bazarr, Readarr, FlareSolverr, Deluge, Aria2, pyLoad + comparisons + troubleshooting |
+| CMS & Websites | +12 | Payload CMS, KeystoneJS, Wagtail, October CMS, Statamic + 3-way headless comparison |
+| Analytics | +12 | Ackee, Shynet, GoatCounter, Open Web Analytics, Countly + Mixpanel/Hotjar replacement |
+| Backup | +12 | BackupPC, Bacula, Velero, Syncthing-backup + 3-way comparison + troubleshooting |
+| DNS & Networking | +11 | Technitium, Blocky, Pi-hole DNS, AdGuard Home DNS, Knot Resolver + split DNS guide |
+| Communication | +11 | Zulip, Matterbridge, SimpleX, Session, Jami, Revolt + federation troubleshooting |
+| Monitoring | +11 | Glances, Healthchecks, Gatus, Monit + Grafana/Prometheus troubleshooting |
+| Personal Finance | +10 | Beancount/Fava, Maybe, IHateMoney, Crater + Splitwise replacement |
+| Media Servers | +8 | Piped, Stremio Server, Olaris + 3-way comparison + Jellyfin/Plex troubleshooting |
 
 ## Velocity
 - Day 1 production: 179 articles in ~5.5 hours from 7 writers + Operations head
 - Current rate: ~46 articles/hour (accelerating)
 - Projected: ~1,100 articles/day if sustained
-- Topic map expansion ongoing — 905 planned is ~45% of 2,000 target
+- Topic map expansion: 1,224 planned = ~61% of 2,000 target (up from 45%)
 
 ## Priority Rationale
-- **Tier 1:** Highest search volume, broadest audience appeal. 5 of 12 categories now COMPLETE. Focus: complete remaining 7.
-- **Tier 2:** Strong search demand. 5 categories started. Writers finishing Tier 1 should transition here.
-- **New Categories:** High-value additions — AI/ML and *arr stack especially hot.
+- **Tier 1:** Highest search volume, broadest audience appeal. 4 of 12 categories now COMPLETE. Focus: complete remaining 8.
+- **Tier 2:** Strong search demand. Many expanded with additional apps, comparisons, and troubleshooting guides.
+- **New Categories Batch 1-2:** High-value additions — AI/ML and *arr stack especially hot.
+- **New Categories Batch 3:** Strong niches — Music/Audio, Container Orchestration, and Ebooks/Reading have excellent search volume.
 - **Tier 3:** Niche topics. Cover after Tiers 1 and 2 substantially complete.
 
+## Next Expansion Needed (to reach 2,000)
+- **~776 more articles needed** to reach 2,000 target
+- Strategies for next expansion:
+  1. Add more apps to Batch 1 and 2 categories (many have room for 5-10 more articles each)
+  2. Create "vs cloud" comparison articles for every major app (e.g., "Immich vs Google Photos", "Nextcloud vs Dropbox")
+  3. Add troubleshooting guides to ALL categories (currently only ~12 categories have them)
+  4. Create more foundation/how-to guides for advanced topics
+  5. Add more replace guides targeting specific SaaS products
+  6. Create category-specific hardware guides
+  7. New niche categories: IoT/Smart Home platforms, Media production, Network security, Virtualization (Proxmox ecosystem)
+
 ## Projected Timeline
-- Day 1 (NOW): 5 categories complete, Tier 1 at 83%. Targeting 7+ complete by end of day.
+- Day 1 (NOW): 4 categories complete, Tier 1 at 83%. Targeting 7+ complete by end of day.
 - Day 2-3: Complete remaining Tier 1, Tier 2 at scale
 - Day 3-7: Complete Tier 2 + expanded topic map
 - Week 2-3: New categories + Tier 3 + freshness updates
+- Week 3-4: Expand to 2,000+ with additional comparisons, troubleshooting, and niche categories

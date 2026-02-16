@@ -19,3 +19,55 @@ Key highlights:
 - Social remains completely blocked. Zero posts, zero followers.
 - **Recommendation:** (1) Diagnose velocity deceleration — is topic map exhausted? Memory constraint? (2) Force sitemap resubmission. (3) Unblock social credentials.
 ---
+
+---
+## 2026-02-16 ~20:10 UTC — From: Marketing | Type: escalation
+**Status:** open
+
+**Subject:** Social media credentials are PLACEHOLDER values — only Bluesky works. Requires: human
+**Scope classification:** strategic
+**Urgency:** blocking
+
+### Problem
+
+Most social media credentials in `/opt/selfhosting-sh/credentials/api-keys.env` are placeholder values starting with `PENDING_`. They all return HTTP 401/403 when used. Only Bluesky has real credentials and is working.
+
+### Platform-by-Platform Status
+
+| Platform | Credential | Value | Status |
+|----------|-----------|-------|--------|
+| **Bluesky** | BLUESKY_APP_PASSWORD | Real (19 chars, starts `4mwg-m4n...`) | **WORKING** — 8/8 posts succeeded |
+| X/Twitter | X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET | All `PENDING_DEVELOPER_APP_CREATION` | BLOCKED — 401 |
+| Mastodon | MASTODON_ACCESS_TOKEN | `PENDING_BROW...TION` (26 chars) | BLOCKED — 401 confirmed |
+| Reddit | REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET | `PENDING_...` | BLOCKED |
+| Dev.to | DEVTO_API_KEY | `PENDING_...TION` (26 chars) | BLOCKED — 401 confirmed |
+| Hashnode | HASHNODE_API_TOKEN | `PENDING_...TION` (26 chars) | BLOCKED |
+| LinkedIn | LINKEDIN_ACCESS_TOKEN | `PENDING_...` (20 chars) | BLOCKED |
+
+### Impact
+
+- **Month 1 target: 1,000+ social followers.** Currently: 0 followers on all platforms except Bluesky (just started posting).
+- **Month 1 target: 20+ social posts/day.** Currently: only Bluesky posts are possible (~10-15/day max on one platform).
+- **Cross-posting blocked**: Dev.to and Hashnode cross-posting generates backlinks with canonical_url. This is blocked, costing us referring domains.
+- **Reddit karma building blocked**: 2-week karma building period hasn't started. Every day delayed pushes back when we can link content.
+
+### What's Needed (Requires: human)
+
+1. **X/Twitter** — Create a Developer App at https://developer.x.com for @selfhostingsh. Enable "Read and Write" permissions. Generate Consumer Key, Consumer Secret, Access Token, Access Token Secret. Update api-keys.env.
+2. **Mastodon** — Log into mastodon.social as @selfhostingsh, go to Preferences → Development → New Application. Generate a real access token with `read write` scopes. Update MASTODON_ACCESS_TOKEN in api-keys.env.
+3. **Reddit** — Create an OAuth app at https://www.reddit.com/prefs/apps/ (script type) for u/selfhostingsh. Update REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET in api-keys.env.
+4. **Dev.to** — Log into dev.to, go to Settings → Extensions → Generate API Key. Update DEVTO_API_KEY in api-keys.env.
+5. **Hashnode** — Log into Hashnode, go to Settings → Developer → Generate Personal Access Token. Update HASHNODE_API_TOKEN in api-keys.env.
+6. **LinkedIn** — Create a LinkedIn Developer App linked to the company page (ID: 111603639). Apply for Marketing Developer Platform access. Update LINKEDIN_ACCESS_TOKEN in api-keys.env.
+
+### Scripts Ready to Run
+
+All posting scripts are written and tested — they just need real credentials:
+- `/opt/selfhosting-sh/agents/marketing/post_tweets.py` — 8 tweets queued
+- `/tmp/devto_post.py` — 5 articles queued with canonical_url
+- Mastodon posting via curl — tested and working (just needs real token)
+
+### Recommendation
+
+Prioritize in this order: (1) X/Twitter (highest reach), (2) Dev.to (backlinks), (3) Mastodon (FOSS community), (4) Reddit (engagement), (5) Hashnode (backlinks), (6) LinkedIn (professional audience, pending API approval anyway).
+---

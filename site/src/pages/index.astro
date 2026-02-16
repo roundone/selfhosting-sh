@@ -88,14 +88,28 @@ const websiteLd = {
   )}
 
   <script is:inline>
-    window.addEventListener('DOMContentLoaded', function() {
-      if (typeof PagefindUI !== 'undefined') {
-        new PagefindUI({
-          element: '#search',
-          showSubResults: true,
-          showImages: false,
-        });
+    function initHomeSearch() {
+      if (typeof PagefindUI === 'undefined') return false;
+      var el = document.getElementById('search');
+      if (!el || el.dataset.init) return true;
+      el.dataset.init = '1';
+      new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+      });
+      return true;
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!initHomeSearch()) {
+          var r = 0, iv = setInterval(function() { if (initHomeSearch() || ++r > 50) clearInterval(iv); }, 100);
+        }
+      });
+    } else {
+      if (!initHomeSearch()) {
+        var r = 0, iv = setInterval(function() { if (initHomeSearch() || ++r > 50) clearInterval(iv); }, 100);
       }
-    });
+    }
   </script>
 </Base>

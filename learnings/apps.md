@@ -503,3 +503,99 @@ Outline versioning clarification:
 - Previous build was Feb 14 (commit 5296cdd from data 013aad4).
 - **2-day gap between builds** — potential new apps or removals. Need to diff data commits 013aad4 vs 4d593ba to identify changes.
 - Investigate in iteration 9 what apps were added/changed.
+
+## 2026-02-16 — Duplicati v2.2.0.3 (tier2-writer)
+- **Image:** `lscr.io/linuxserver/duplicati:v2.2.0.3-ls5` (LinuxServer.io)
+- **Port:** 8200 (web UI)
+- **LSIO pattern:** PUID/PGID env vars for file permissions
+- **Volumes:** /config (app data), /backups (backup destination), /source (data to back up, mount read-only)
+- **Backends:** S3, B2, Google Drive, OneDrive, SFTP, WebDAV, and 20+ more — all configured via web UI
+- **Encryption:** AES-256 built-in, configured per backup job
+- **NOTE:** Duplicati 2.x has been in "beta" for years despite being widely used in production
+
+## 2026-02-16 — Linkding 1.45.0 (tier2-writer)
+- **Image:** `sissbruecker/linkding:1.45.0`
+- **Port:** 9090
+- **Database:** SQLite by default (no separate DB container needed), PostgreSQL optional for heavy use
+- **Auth:** LD_SUPERUSER_NAME + LD_SUPERUSER_PASSWORD env vars for initial admin
+- **Very lightweight:** ~50 MB RAM idle, single container
+- **API:** REST API with token auth at /api/
+- **Background tasks:** LD_ENABLE_EBOOK_SUPPORT and LD_ENABLE_PREVIEW_IMAGES require chromium (adds ~200 MB to image)
+
+## 2026-02-16 — Prowlarr 2.3.0.5236 (tier2-writer)
+- **Image:** `lscr.io/linuxserver/prowlarr:2.3.0.5236`
+- **Port:** 9696
+- **Role:** Indexer manager for *arr stack — manages indexers in one place, pushes to Sonarr/Radarr/Lidarr
+- **FlareSolverr:** Use `ghcr.io/flaresolverr/flaresolverr:v3.3.21` for Cloudflare-protected indexers
+- **Network:** Must share Docker network with other *arr apps for direct communication
+- **API:** Accessible at /api/v1/ with X-Api-Key header
+
+## 2026-02-16 — Bazarr 1.5.1 (tier2-writer)
+- **Image:** `lscr.io/linuxserver/bazarr:1.5.1`
+- **Port:** 6767
+- **CRITICAL:** Media paths in Bazarr MUST match paths in Sonarr/Radarr exactly. If Sonarr sees /tv, Bazarr must also see /tv at the same mount point. Path mismatch = subtitle downloads fail silently.
+- **Subtitle providers:** OpenSubtitles.org (requires account), Addic7ed, Subscene, etc.
+- **Anti-captcha:** Some providers need anti-captcha service for automated downloads
+
+## 2026-02-16 — Borgmatic 1.9.14 (tier2-writer)
+- **Image:** `ghcr.io/borgmatic-collective/borgmatic:1.9.14`
+- **Config:** /etc/borgmatic/config.yaml (YAML config file, NOT env vars for backup configuration)
+- **Scheduling:** crontab.txt mounted at /etc/borgmatic.d/crontab.txt
+- **IMPORTANT:** Use `init: true` in Docker Compose for proper signal handling (clean shutdown)
+- **BORG_PASSPHRASE:** Set via environment variable for encryption
+- **Remote backups:** Via SSH — mount SSH keys at /root/.ssh
+- **Hooks:** pre_backup, post_backup, on_error — can run database dumps, notifications (Apprise), healthchecks.io pings
+- **Borg cache:** Mount /root/.cache/borg as a volume to persist dedup index between runs
+
+## 2026-02-16 — Mailu 2024.06 (tier2-writer)
+- **Images:** `ghcr.io/mailu/*:2024.06` (front, admin, imap, smtp, antispam, webmail, resolver)
+- **Setup:** Use setup wizard at setup.mailu.io to generate docker-compose.yml and mailu.env
+- **Containers:** 6-8 depending on options (add ClamAV for +1 GB RAM)
+- **RAM:** ~1.5-2 GB without ClamAV, ~2.5-3 GB with ClamAV
+- **ARM64:** Supported — works on Raspberry Pi 4
+- **Webmail:** SnappyMail (replaced Roundcube in recent versions)
+- **DNS requirements:** MX, SPF, DKIM (auto-generated), DMARC, PTR (reverse DNS)
+- **Port 25:** MUST be open from hosting provider — many cloud providers block it
+
+## 2026-02-16 — Mailcow 2026-01 (tier2-writer)
+- **Installation:** `git clone` + `./generate_config.sh` — NOT a standard docker-compose file you write yourself
+- **Containers:** 15+ including SOGo, memcached, PHP-FPM, watchdog, rspamd
+- **RAM:** 4-5 GB idle without ClamAV, 6+ GB recommended
+- **x86_64 ONLY:** No ARM support
+- **Groupware:** SOGo provides CalDAV, CardDAV, ActiveSync (major differentiator vs Mailu)
+- **2FA:** Built-in TOTP and U2F/WebAuthn support
+- **Backup:** Built-in `helper-scripts/backup_and_restore.sh`
+- **Update:** Built-in `./update.sh` handles migrations
+- **Admin UI:** Feature-rich — rate limiting, rspamd training, quarantine, app passwords
+
+## 2026-02-16 — Jackett v0.24.988 (tier2-writer)
+- **Image:** `lscr.io/linuxserver/jackett` (LSIO)
+- **Port:** 9117
+- **Role:** Indexer proxy — translates Torznab/Potato queries from Sonarr/Radarr into tracker-specific requests
+- **NOTE:** Prowlarr is the newer, recommended replacement. Jackett still works and is actively maintained but Prowlarr offers native *arr integration without API key copy-paste.
+
+## 2026-02-16 — Transmission 4.0.6 (tier2-writer)
+- **Image:** `lscr.io/linuxserver/transmission:4.0.6` (LSIO)
+- **Ports:** 9091 (web UI), 51413 TCP+UDP (peer connections)
+- **Auth:** USER and PASS env vars for web UI authentication
+- **Alt web UIs:** TRANSMISSION_WEB_HOME env var to point to alternative UIs (Flood, Combustion, etc.)
+- **PEERPORT:** Set to match Docker port mapping; disables random port selection
+
+## 2026-02-16 — Matomo 5.7.1 (tier2-writer)
+- **Image:** `matomo:5.7.1-apache` (official Docker Hub)
+- **Port:** 80 (internal, map to 8080 or behind reverse proxy)
+- **Requires:** MariaDB/MySQL
+- **Setup:** Web-based installer wizard on first access
+- **Env vars:** MATOMO_DATABASE_HOST, MATOMO_DATABASE_USERNAME, MATOMO_DATABASE_PASSWORD, MATOMO_DATABASE_DBNAME
+- **Cron:** Needs scheduled task (`core:archive`) for report processing — run via Docker exec or sidecar
+- **Plugins:** Marketplace with free and paid plugins (heatmaps, session recording are paid)
+- **GA import:** Supports importing data from Google Analytics
+
+## 2026-02-16 — Hugo (tier2-writer)
+- **Image:** `ghcr.io/gohugoio/hugo:0.145.0` (official) or `hugomods/hugo` (community)
+- **NOT a typical Docker app** — Hugo generates static HTML, then a web server (Nginx/Caddy) serves it
+- **Best pattern:** Multi-stage Docker build: Hugo builds the site → Nginx serves the output
+- **Dev server:** `hugo server --bind 0.0.0.0` on port 1313
+- **Hugo Extended:** Required for SCSS/SASS processing
+- **Config:** hugo.toml (or config.toml) in project root
+- **Themes:** Installed via git submodule in themes/ directory
