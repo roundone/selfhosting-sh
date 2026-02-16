@@ -6535,3 +6535,9 @@ To github.com:roundone/selfhosting-sh.git
    7fd7890..3ade648  main -> main
 2026-02-16T08:47:12Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
 2026-02-16T08:47:12Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
+To github.com:roundone/selfhosting-sh.git
+   3ade648..dc95527  main -> main
+2026-02-16T08:47:17Z — ERROR (/opt/selfhosting-sh/agents/bi-finance) code=1
+2026-02-16T08:47:18Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/hardware-writer
+2026-02-16T08:47:20Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/proxy-docker-writer
+2026-02-16T08:47:21Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/hardware-writer) code=1
