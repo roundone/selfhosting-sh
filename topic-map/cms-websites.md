@@ -1,9 +1,9 @@
-# CMS & Websites [0/19 complete]
+# CMS & Websites [1/19 complete]
 **Priority:** medium
 **SEO notes:** Keyword cluster: "self-hosted CMS", "self-hosted blog", "self-hosted website builder", "best self-hosted CMS". WordPress and Ghost dominate search volume in this category by a wide margin. WordPress "docker compose" is one of the highest-volume self-hosting queries overall. Ghost is the top "modern alternative" with strong brand recognition. Headless CMS tools (Directus, Strapi) target a developer-focused audience with growing interest. Static site generators (Hugo, Grav, Publii) have dedicated niches. Replace guides for Squarespace, Wix, and Medium tap into high commercial intent. Strategy: lead with WordPress and Ghost (massive search volume), then fill in headless CMS and static site options.
 
 ## Apps
-- [ ] /apps/wordpress — **Target:** "wordpress docker compose" | **Secondary:** "self-host wordpress", "wordpress setup docker", "wordpress self-hosted" | **Volume:** Very High | **Priority:** 1
+- [x] /apps/wordpress — done 2026-02-16 | **Target:** "wordpress docker compose" | **Volume:** Very High | **Priority:** done
 - [ ] /apps/ghost — **Target:** "ghost docker compose" | **Secondary:** "self-host ghost", "ghost blog setup docker", "ghost CMS self-hosted" | **Volume:** Very High | **Priority:** 2
 - [ ] /apps/strapi — **Target:** "strapi docker compose" | **Secondary:** "self-host strapi", "strapi setup guide", "strapi headless CMS docker" | **Volume:** High | **Priority:** 3
 - [ ] /apps/directus — **Target:** "directus docker compose" | **Secondary:** "self-host directus", "directus setup guide", "directus headless CMS" | **Volume:** High | **Priority:** 4

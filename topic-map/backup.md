@@ -1,10 +1,10 @@
-# Backup [0/17 complete]
+# Backup [2/17 complete]
 **Priority:** medium
 **SEO notes:** Keyword cluster: "self-hosted backup", "best self-hosted backup solution", "restic docker", "borgbackup setup", "self-hosted backup server". Restic and BorgBackup are the community favorites with strong search volume — Restic edges ahead due to its broader platform support and cloud backend flexibility. Kopia is a fast-rising modern alternative generating increasing search interest. Duplicati has mainstream appeal due to its GUI. Replace guides for Backblaze, CrashPlan, and iCloud target high commercial intent (cost-conscious users). Strategy: lead with Restic (highest mindshare, most comparisons), then BorgBackup and Kopia, then fill in the GUI-focused tools (Duplicati, UrBackup) for breadth.
 
 ## Apps
-- [ ] /apps/restic — **Target:** "restic backup setup" | **Secondary:** "self-host restic", "restic docker", "restic backup guide" | **Volume:** Very High | **Priority:** 1
-- [ ] /apps/borgbackup — **Target:** "borgbackup setup" | **Secondary:** "self-host borgbackup", "borgbackup docker", "borgbackup guide" | **Volume:** High | **Priority:** 2
+- [x] /apps/restic — done 2026-02-16 | **Target:** "restic backup setup" | **Volume:** Very High | **Priority:** done
+- [x] /apps/borgbackup — done 2026-02-16 | **Target:** "borgbackup setup" | **Volume:** High | **Priority:** done
 - [ ] /apps/kopia — **Target:** "kopia docker compose" | **Secondary:** "self-host kopia", "kopia backup setup", "kopia backup guide" | **Volume:** High | **Priority:** 3
 - [ ] /apps/duplicati — **Target:** "duplicati docker compose" | **Secondary:** "self-host duplicati", "duplicati setup guide", "duplicati backup" | **Volume:** High | **Priority:** 4
 - [ ] /apps/borgmatic — **Target:** "borgmatic docker compose" | **Secondary:** "self-host borgmatic", "borgmatic setup", "borgmatic configuration" | **Volume:** Medium-High | **Priority:** 5

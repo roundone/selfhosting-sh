@@ -1810,3 +1810,14 @@ Total:
 Finished in 1.429 seconds
 2026-02-16T09:12:11Z -- [auto-deploy] Build succeeded
 Uploading... (296/455)
+Uploading... (349/455)
+Uploading... (402/455)
+Uploading... (455/455)
+✨ Success! Uploaded 159 files (296 already uploaded) (1.58 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://77dda7c1.selfhosting-sh.pages.dev
+2026-02-16T09:12:25Z -- [auto-deploy] Deploy succeeded
+2026-02-16T09:12:25Z -- [auto-deploy] Pages deployed: 148

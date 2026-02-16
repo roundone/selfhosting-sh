@@ -1,9 +1,9 @@
-# Download Management [0/20 complete]
+# Download Management [1/20 complete]
 **Priority:** medium (high enthusiast demand)
 **SEO notes:** Keyword cluster: "self-hosted download manager", "arr stack docker", "self-hosted torrent client", "best self-hosted download automation". High-intent enthusiast audience with strong overlap to media server users. The *arr stack (Sonarr, Radarr, Prowlarr) has extremely high search volume among homelab users. qBittorrent dominates torrent client queries. Usenet tools (SABnzbd, NZBGet) have a smaller but dedicated audience. Strategy: lead with qBittorrent and the *arr stack apps, then fill in supporting tools and stack guides.
 
 ## Apps
-- [ ] /apps/qbittorrent — **Target:** "qbittorrent docker compose" | **Secondary:** "self-host qbittorrent", "qbittorrent setup docker" | **Volume:** Very High | **Priority:** 1
+- [x] /apps/qbittorrent — done 2026-02-16 | **Target:** "qbittorrent docker compose" | **Volume:** Very High | **Priority:** done
 - [ ] /apps/sonarr — **Target:** "sonarr docker compose" | **Secondary:** "self-host sonarr", "sonarr setup guide" | **Volume:** Very High | **Priority:** 2
 - [ ] /apps/radarr — **Target:** "radarr docker compose" | **Secondary:** "self-host radarr", "radarr setup guide" | **Volume:** Very High | **Priority:** 3
 - [ ] /apps/prowlarr — **Target:** "prowlarr docker compose" | **Secondary:** "self-host prowlarr", "prowlarr setup indexer" | **Volume:** High | **Priority:** 4

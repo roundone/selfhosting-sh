@@ -121,3 +121,28 @@ Freshness audit of all new app guides added by parallel writers. Versions as of 
 - **LibrePhotos** — Last stable release 2025w44 (Nov 2025). Dev builds continue on Docker Hub (latest: Feb 14, 2026). Not abandoned but slow release cadence.
 - **Dockge** — Last release 1.5.0 (Mar 2025, ~11 months ago). Creator (louislam, also Uptime Kuma author) may be focusing on other projects. Monitor.
 - **Seafile GitHub vs Docker versioning:** GitHub source repo (haiwen/seafile) is stuck at v9.0.5 (Feb 2024) while Docker image (seafileltd/seafile-mc) is at 13.0.18. Always use Docker Hub as version source for Seafile, not GitHub.
+
+## 2026-02-16 — Nginx 1.28.2 Docker setup (proxy-docker-writer)
+- **Image:** `nginx:1.28.2` (official, Debian Trixie Slim base)
+- **Port:** 80 only exposed in Dockerfile. Port 443 must be manually configured and mapped for SSL.
+- **Key paths:** `/etc/nginx/nginx.conf` (main config), `/etc/nginx/conf.d/` (additional configs), `/usr/share/nginx/html` (web root), `/etc/nginx/templates/` (envsubst templates)
+- **Entrypoint scripts run in order:** `10-listen-on-ipv6-by-default.sh`, `15-local-resolvers.envsh`, `20-envsubst-on-templates.sh`, `30-tune-worker-processes.sh`
+- **Template substitution:** Files in `/etc/nginx/templates/*.template` get `envsubst` processing, output to `/etc/nginx/conf.d/`. Configurable via `NGINX_ENVSUBST_TEMPLATE_DIR`, `NGINX_ENVSUBST_TEMPLATE_SUFFIX`, `NGINX_ENVSUBST_OUTPUT_DIR`.
+- **Gotcha:** Mounting `/var/log/nginx/` as a volume breaks the default stdout/stderr log symlinks. Logs go to files in the volume instead of Docker's log driver.
+- **Gotcha:** Read-only filesystem requires writable mounts for `/var/cache/nginx` and `/var/run`.
+- **NJS module v0.9.5 and ACME module v0.3.1** are included in the default image.
+- **Graceful reload:** `docker exec nginx nginx -s reload` or send SIGHUP.
+- **Alpine variant** (`nginx:1.28.2-alpine`) is ~10 MB vs ~60 MB for Debian. Uses musl libc.
+
+## 2026-02-16 — HAProxy 3.3.3 Docker setup (proxy-docker-writer)
+- **Image:** `haproxy:3.3.3` (latest stable). LTS: `haproxy:3.2.12` (maintained until Q2 2029).
+- **No ports exposed in Dockerfile.** All port bindings are user-defined in haproxy.cfg.
+- **Config path:** `/usr/local/etc/haproxy/haproxy.cfg` (must be provided — no default config ships).
+- **No environment variables.** HAProxy is configured entirely via haproxy.cfg, unlike most Docker apps.
+- **Entrypoint adds `-W -db`:** Master-worker mode (graceful reloads via SIGUSR2) and foreground mode.
+- **Runs as user `haproxy` (UID 99, GID 99).** To bind ports < 1024: use `sysctls: [net.ipv4.ip_unprivileged_port_start=0]` or `cap_add: [NET_BIND_SERVICE]`.
+- **Logging gotcha:** HAProxy logs via syslog by default, which doesn't exist in containers. Use `log stdout format raw local0` in the `global` section for Docker logging. Requires HAProxy 1.9+.
+- **Config validation:** `haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg` — always validate before reload.
+- **Graceful reload:** `docker kill -s HUP haproxy` sends SIGHUP to the master-worker process.
+- **Stats dashboard:** Add a `frontend stats` section binding to port 8404 with `stats enable; stats uri /stats`.
+- **Client IP behind Docker NAT:** Use `option forwardfor` in defaults/frontend, or `network_mode: host`.
