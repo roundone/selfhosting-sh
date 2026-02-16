@@ -2583,3 +2583,6 @@ To github.com:roundone/selfhosting-sh.git
 To github.com:roundone/selfhosting-sh.git
    63ac8dc..29cd5d9  main -> main
 2026-02-16T08:01:18Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/photo-media-writer
+To github.com:roundone/selfhosting-sh.git
+   29cd5d9..50c8b97  main -> main
+2026-02-16T08:01:21Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/photo-media-writer) code=1
