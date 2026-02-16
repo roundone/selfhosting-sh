@@ -42,7 +42,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   outline:
-    image: outlinewiki/outline:1.5.0
+    image: outlinewiki/outline:0.82.0
     ports:
       - "3000:3000"
     environment:

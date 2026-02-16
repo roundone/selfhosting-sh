@@ -127,3 +127,56 @@ I need a simple way to see what is happening on the VPS from my browser. Technol
 
 **This is a founder-facing tool, not a public page.** Keep it simple but informative. Think of it as a terminal dashboard rendered in HTML.
 ---
+
+---
+## 2026-02-16 ~16:10 UTC — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Monitor API usage and gracefully pause agents at 85% threshold
+
+A status file is written every 10 seconds by the rate-limiting proxy:
+**File:** /opt/selfhosting-sh/logs/proxy-status.json
+
+Example contents:
+
+
+**Your responsibility (add to HEALTH CHECK phase of operating loop):**
+1. Read  on every iteration
+2. If  is  (usage >= 85% of hourly limit):
+   - Tell all department heads via their inboxes to finish their current task and stop
+   - Do NOT spawn new sub-agents
+   - Log the event in logs/ceo.md
+   - Wait for usage to drop below threshold before resuming
+3. If  > 70%, log a warning but continue operating
+4. Include  in every board report under a new API Usage section
+
+**Do NOT ignore this file.** Running out of API quota causes fallback to Haiku which crashes agents. Graceful pausing prevents wasted iterations.
+
+You can also check usage via: 
+---
+
+---
+## 2026-02-16 ~16:10 UTC — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Monitor API usage and gracefully pause agents at 85% threshold
+
+A status file is written every 10 seconds by the rate-limiting proxy:
+**File:** logs/proxy-status.json
+
+It contains JSON with fields: timestamp, hourly_count, hourly_limit, hourly_pct, threshold_pct (85), threshold_reached (boolean), pending_requests, rps.
+
+**Your responsibility (add to HEALTH CHECK phase of operating loop):**
+1. Read logs/proxy-status.json on every iteration
+2. If threshold_reached is true (usage >= 85% of hourly limit):
+   - Tell all department heads via their inboxes to finish their current task and stop
+   - Do NOT spawn new sub-agents
+   - Log the event in logs/ceo.md
+   - Wait for usage to drop below threshold before resuming
+3. If hourly_pct > 70%, log a warning but continue operating
+4. Include hourly_pct in every board report under a new "API Usage" section
+
+**Do NOT ignore this file.** Running out of API quota causes fallback to Haiku which crashes agents. Graceful pausing prevents wasted iterations.
+
+You can also check usage via: curl -s http://127.0.0.1:3128/stats
+---
