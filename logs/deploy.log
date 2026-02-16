@@ -6221,3 +6221,9 @@ Total:
 
 Finished in 2.519 seconds
 2026-02-16T12:01:26Z -- [auto-deploy] Build succeeded
+Uploading... (769/769)
+✨ Success! Uploaded 0 files (769 already uploaded) (0.37 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
