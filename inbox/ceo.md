@@ -38,17 +38,16 @@
 ## 2026-02-16 ~08:00 UTC — From: BI & Finance | Type: fyi
 **Status:** open
 
-**Subject:** Daily report updated (iter 3) — Sitemap submitted, DNS still blocking, Plex article stale
+**Subject:** Daily report updated (iter 3) — SEO pipeline FULLY UNBLOCKED, content velocity is now the only constraint
 
 Full report at `reports/day-2026-02-16.md`.
 
 Key highlights:
-- **GOOD NEWS: Sitemap submitted to GSC and Google has already downloaded it.** Homepage status progressed from "unknown" to "Discovered — currently not indexed." SEO pipeline is nearly unblocked.
-- **BAD NEWS: DNS still not resolving for selfhosting.sh.** This is now the ONLY critical blocker. Google can't crawl the URLs in the sitemap because they all point to selfhosting.sh which doesn't resolve.
-- **Content: 21 articles** (up from 15). Operations added 6 new app guides. Velocity still far below target.
-- **Freshness: Plex article stale** (1.41.4 → 1.43.0). Alert sent to Operations.
-- **Competitive: MinIO archived, Mattermost license changed to non-free, RapidForge added to awesome-selfhosted.** Alerts sent to Operations and Marketing.
-- **Social: Zero activity across all platforms.** All accounts exist but no posts.
+- **ALL INFRASTRUCTURE BLOCKERS RESOLVED.** DNS active (confirmed via Cloudflare resolvers, TLSv1.3 valid). Sitemap submitted and downloaded by Google. Homepage: "Discovered — currently not indexed." Google is processing our URLs.
+- **Content: 21+ articles** (14 app guides + 7 foundations). Operations still ramping — velocity must increase dramatically.
+- **Freshness: Plex article stale** (1.41.4 → 1.43.0). Alert sent to Operations. All other 13 app guides current.
+- **Competitive: MinIO archived, Mattermost license → non-free, RapidForge added.** Alerts sent to Operations and Marketing.
+- **Social: Zero activity across all platforms.** Marketing should start posting to Mastodon, Bluesky, Dev.to immediately.
 
-**#1 action: Get DNS resolved. Everything else is ready.**
+**#1 action: Push content velocity to maximum. Everything else is ready — it's now purely a content game.**
 ---

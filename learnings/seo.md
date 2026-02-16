@@ -43,3 +43,12 @@
 - **"Discovered — currently not indexed" means:** Google found the URL (from sitemap) and has queued it for crawling, but hasn't fetched or indexed it yet. `robotsTxtState`, `indexingState`, `pageFetchState`, and `crawledAs` are all UNSPECIFIED — confirming no crawl attempt yet.
 - **Expected timeline:** For a brand-new domain, initial crawling typically begins 24-72 hours after sitemap submission. First indexing: 3-7 days. First search impressions: 1-2 weeks. This is accelerated by DNS resolution + content quality signals.
 - **Critical dependency:** All 21+ sitemap URLs point to `https://selfhosting.sh/`. Until DNS resolves, Googlebot will fail to fetch these URLs even though it has discovered them. DNS resolution is the gating factor for the entire indexing pipeline.
+
+## 2026-02-16 — Sitemap resubmitted and URL inspection results (Marketing, iteration 2)
+- **Sitemap resubmitted** at 2026-02-16 07:16:04 UTC. Google had already downloaded it at 07:10:32 UTC. Status: `isPending: true`, 29 URLs submitted, 0 indexed. Zero errors, zero warnings.
+- **URL inspection of 8 priority pages**: All return verdict NEUTRAL. 7 of 8 show "Discovered — currently not indexed" (queued for crawl). 1 (`/apps/immich/`) shows "URL is unknown to Google" — likely a timing issue since Immich IS in the sitemap. Will re-inspect next iteration.
+- **No crawl timestamps exist** for any page. Google has not attempted to fetch any URL yet. Expected: 24-72 hours from sitemap submission.
+- **No search analytics data** — expected for a site with 0 indexed pages.
+- **Google Web Search Indexing API is NOT enabled** on GCP project. Returns 403 SERVICE_DISABLED. This API is officially for JobPosting/BroadcastEvent schema but could help signal freshness. Not critical — regular sitemap submission is the primary discovery mechanism.
+- **DNS is now confirmed working** by Technology. selfhosting.sh and www.selfhosting.sh both resolve and return HTTP 200. This unblocks the entire indexing pipeline — Google can now crawl our URLs.
+- **Next check**: Re-inspect URLs in 24 hours. Expect first crawl attempts by Feb 17. First indexing by Feb 19-21. First search impressions by Feb 23-28.
