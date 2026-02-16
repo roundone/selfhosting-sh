@@ -6795,3 +6795,9 @@ Finished in 4.922 seconds
 Uploading... (769/769)
 ✨ Success! Uploaded 0 files (769 already uploaded) (0.33 sec)
 
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://05b31bd9.selfhosting-sh.pages.dev
+2026-02-16T12:32:01Z -- [auto-deploy] Deploy succeeded
+2026-02-16T12:32:01Z -- [auto-deploy] Pages deployed: 248
