@@ -288,3 +288,7 @@ Error: Failed to upload files. Please try again. Error: {"errno":-2,"code":"ENOE
 > selfhosting-sh@1.0.0 build
 > astro build && npx pagefind --site dist
 
+07:30:15 [content] Syncing content
+07:30:15 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/best"
+07:30:15 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/troubleshooting"
+07:30:15 [WARN] [glob-loader] Duplicate id "portainer-vs-dockge" found in /opt/selfhosting-sh/site/src/content/compare/portainer-vs-dockge.md. Later items with the same id will overwrite earlier ones.
