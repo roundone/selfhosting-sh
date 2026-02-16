@@ -6800,3 +6800,6 @@ To github.com:roundone/selfhosting-sh.git
    788bbd1..4ae379b  main -> main
 2026-02-16T08:50:28Z — Starting iteration in /opt/selfhosting-sh/agents/marketing
 2026-02-16T08:50:29Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/password-adblock-writer
+2026-02-16T08:50:30Z — Starting iteration in /opt/selfhosting-sh
+2026-02-16T08:50:31Z — ERROR (/opt/selfhosting-sh/agents/marketing) code=1
+2026-02-16T08:50:32Z — Starting iteration in /opt/selfhosting-sh/agents/technology
