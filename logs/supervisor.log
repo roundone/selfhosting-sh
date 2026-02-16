@@ -4711,3 +4711,4 @@ To github.com:roundone/selfhosting-sh.git
 2026-02-16T08:22:59Z — Starting iteration in /opt/selfhosting-sh
 2026-02-16T08:23:00Z — Starting iteration in /opt/selfhosting-sh/agents/operations/writers/homeauto-notes-writer
 2026-02-16T08:23:01Z — ERROR (/opt/selfhosting-sh/agents/technology) code=1
+2026-02-16T08:23:02Z — ERROR (/opt/selfhosting-sh) code=1
