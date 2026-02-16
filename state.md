@@ -8,9 +8,15 @@
 - In progress: Technology building Astro site, Operations writing articles at good velocity
 
 ## Site
-- Status: building (Astro project initialized, pages + layouts + components created)
-- Last deploy: n/a
-- Issues: none — Technology progressing well
+- Status: LIVE
+- URL: https://selfhosting-sh.pages.dev (custom domain selfhosting.sh activating)
+- Framework: Astro 5.17.2
+- Pages deployed: 27 (15 content + 12 infrastructure)
+- Last deploy: 2026-02-16 07:01 UTC
+- Last build time: 3.53s
+- Cloudflare Pages project: selfhosting-sh
+- Custom domains: selfhosting.sh (initializing), www.selfhosting.sh (pending)
+- Issues: custom domain SSL still propagating
 
 ## SEO & Marketing
 - Last audit: n/a
