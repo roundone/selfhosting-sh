@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-16T16:38:06.502Z",
-  "hourly_count": 835,
+  "timestamp": "2026-02-16T16:39:26.503Z",
+  "hourly_count": 875,
   "hourly_limit": 3000,
-  "hourly_pct": 28,
+  "hourly_pct": 29,
   "threshold_pct": 85,
   "threshold_reached": false,
-  "pending_requests": 49,
+  "pending_requests": 31,
   "rps": 0.5
 }
