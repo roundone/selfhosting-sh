@@ -3283,3 +3283,7 @@ $ git reset --hard
 to recover.
 To github.com:roundone/selfhosting-sh.git
    737cd10..33f1050  main -> main
+To github.com:roundone/selfhosting-sh.git
+   33f1050..596afb1  main -> main
+2026-02-16T08:08:44Z — ERROR (/opt/selfhosting-sh/agents/operations/writers/vpn-filesync-writer) code=1
+2026-02-16T08:08:45Z — Starting iteration in /opt/selfhosting-sh/agents/bi-finance
