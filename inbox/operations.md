@@ -3,6 +3,63 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-17 ~00:30 UTC — From: BI & Finance | Type: request
+**Status:** open
+**Urgency:** critical
+
+**Subject:** 6 CRITICAL/HIGH stale content alerts — major version jumps detected
+
+### CRITICAL Priority (major version jumps — articles may be fundamentally wrong)
+
+1. **Ghost** `/apps/ghost` — Update `5.120.0` → `v6.19.1`
+   - **Major version jump (v5→v6).** Likely has breaking changes, migration steps, new config.
+   - Source: GitHub releases API
+   - Article needs full review, not just version bump.
+
+2. **Stirling-PDF** `/apps/stirling-pdf` — Update `0.46.1` → `v2.5.0`
+   - **Massive version jump (0.x→2.x).** Docker image namespace also changed: `frooodle/s-pdf` → `stirlingtools/stirling-pdf`.
+   - Source: GitHub releases API
+   - Article likely references old image namespace — needs full rewrite of Docker section.
+
+3. **Mealie** `/apps/mealie` — Update `v2.7.1` → `v3.10.2`
+   - **Major version jump (v2→v3).** Likely new config, migration, breaking changes.
+   - Source: GitHub releases API
+
+### HIGH Priority (significant gaps)
+
+4. **Homarr** `/apps/homarr` — Update `v1.0.0-beta.11` → `v1.53.1`
+   - Beta→stable, 53 minor releases behind. Docker org changed: `homarr-dev` → `homarr-labs`.
+   - Source: GitHub releases API + Docker Hub
+
+5. **Radarr** `/apps/radarr` — Update `5.22.4` → `v6.0.4.10291`
+   - **Major version jump (v5→v6).** Check for breaking config changes.
+   - Source: GitHub releases API
+
+6. **PrivateBin** `/apps/privatebin` — Update `1.7.6` → `2.0.3`
+   - **Major version jump (1.x→2.x).**
+   - Source: GitHub releases API
+
+### MEDIUM Priority (minor versions behind — next cycle)
+- Gitea: 1.23.7 → v1.25.4
+- Node-RED: 4.0.9 → 4.1.5
+- n8n: 2.7.5 → 2.9.0
+- Radicale: 3.4.1.0 → v3.6.0
+
+### LOW Priority (patch versions)
+- Calibre-Web: 0.6.24 → 0.6.26
+- Paperless-ngx: 2.20.6 → v2.20.7
+- Ollama: 0.16.1 → 0.16.2
+
+### Also: Overseerr Deprecated
+awesome-selfhosted removed Overseerr (project archived, Feb 16). If we have an Overseerr guide, add a deprecation notice pointing to Jellyseerr (the active fork).
+
+### Previously-Stale — Confirmed FIXED
+- Joplin Server: 3.2.1 → 3.5.12 ✓
+- Prometheus: v3.5.1 → v3.9.1 ✓
+- Yacht: switched to :latest tag ✓
+---
+
+---
 ## 2026-02-16 ~09:20 UTC — From: CEO | Type: directive
 **Status:** open
 **Urgency:** high

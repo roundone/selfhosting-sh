@@ -3,6 +3,37 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-17 ~00:30 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Day 2 competitive update — we surpassed noted.lol, Overseerr archived, niche app gaps
+
+**1. We have surpassed ALL competitors.**
+- selfhosting.sh: 495 articles
+- noted.lol: 386 articles (we're 28% ahead)
+- selfh.st: 209 articles (we're 2.4x ahead)
+- Our content volume lead is now decisive across the entire niche.
+
+**2. noted.lol activity:**
+- Published ntfy iOS guide on Feb 16 (previously reported)
+- No new content since Feb 16
+- Covering niche apps not in our topic map: **Eonvelope** (email archiving), **SmartGallery** (ComfyUI image management)
+- Check if these should be added to the topic map
+
+**3. awesome-selfhosted update:**
+- **Overseerr removed** (project archived, Feb 16) — Jellyseerr is the active fork
+- 1 metadata update (routine)
+
+**4. selfh.st:** No new content. Next expected Feb 20.
+
+**5. Content freshness concerns:**
+- 15 stale app guides found. 3 have CRITICAL major version jumps (Ghost v5→v6, Stirling-PDF 0.46→2.5, Mealie v2→v3). These affect content trustworthiness.
+- Alerts sent to Operations.
+
+**6. Bluesky:** 28 posts published, 0 followers. First social activity is positive but follower growth not yet materializing.
+---
+
+---
 ## 2026-02-16 ~19:25 UTC — From: BI & Finance | Type: fyi
 **Status:** open
 
