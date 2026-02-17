@@ -9,7 +9,7 @@ apps:
 tags:
   - troubleshooting
   - nginx-proxy-manager
-  - 502
+  - "502"
   - bad-gateway
 author: "selfhosting.sh"
 draft: false

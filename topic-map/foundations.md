@@ -1,4 +1,4 @@
-# Foundations [66/66 complete]
+# Foundations [81/81 complete]
 **Priority:** high
 **SEO notes:** Foundational content with high beginner search volume. Strong interlinking hub — every app guide should link to 2+ foundation articles. These pages build topical authority and serve as the base of our pillar-cluster model.
 **Category keyword cluster:** "self-hosting tutorial", "homelab basics", "docker compose tutorial", "self-hosting for beginners"
@@ -91,139 +91,21 @@
 - [x] /foundations/https-everywhere — done 2026-02-16 — **KW:** "https setup self-hosted services"
 - [x] /foundations/log-management — done 2026-02-16 — **KW:** "log management home server"
 
-## Expanded Troubleshooting & Advanced Foundations (Marketing iteration — topic map expansion)
+## Expanded Troubleshooting & Advanced Foundations — done 2026-02-16
+- [x] /foundations/docker-common-issues — done 2026-02-16 — **KW:** "docker troubleshooting guide"
+- [x] /foundations/dns-debugging — done 2026-02-16 — **KW:** "dns debugging self-hosted"
+- [x] /foundations/ssl-certificate-issues — done 2026-02-16 — **KW:** "ssl certificate troubleshooting"
+- [x] /foundations/reverse-proxy-debugging — done 2026-02-16 — **KW:** "reverse proxy debugging guide"
+- [x] /foundations/docker-performance-tuning — done 2026-02-16 — **KW:** "docker performance tuning"
+- [x] /foundations/security-hardening — done 2026-02-16 — **KW:** "security hardening self-hosted services"
+- [x] /foundations/docker-container-not-starting — done 2026-02-16 — **KW:** "docker container not starting"
+- [x] /foundations/docker-networking-issues — done 2026-02-16 — **KW:** "docker networking issues"
+- [x] /foundations/docker-volume-permissions — done 2026-02-16 — **KW:** "docker volume permission denied"
+- [x] /foundations/port-already-in-use — done 2026-02-16 — **KW:** "docker port already in use"
+- [x] /foundations/docker-automatic-updates — done 2026-02-16 — **KW:** "docker automatic updates"
+- [x] /foundations/docker-compose-networking-advanced — done 2026-02-16 — **KW:** "docker compose networking advanced"
+- [x] /foundations/reverse-proxy-multiple-services — done 2026-02-16 — **KW:** "reverse proxy multiple docker services"
+- [x] /foundations/backup-docker-volumes — done 2026-02-16 — **KW:** "backup docker volumes"
+- [x] /foundations/vps-vs-home-server — done 2026-02-16 — **KW:** "vps vs home server self-hosting"
 
-### Docker Troubleshooting — Common Issues and Fixes
-- **URL slug:** /troubleshooting/docker-common-issues
-- **Content type:** troubleshooting
-- **Target keyword:** "docker troubleshooting guide"
-- **Secondary keywords:** "docker common errors", "docker container not starting", "docker compose errors"
-- **Estimated volume:** very high
-- **Priority:** 1
-- **Status:** planned
-
-### DNS Debugging for Self-Hosted Services
-- **URL slug:** /troubleshooting/dns-debugging
-- **Content type:** troubleshooting
-- **Target keyword:** "dns debugging self-hosted"
-- **Secondary keywords:** "dns not resolving docker", "self-hosted dns troubleshooting", "nslookup dig tutorial"
-- **Estimated volume:** high
-- **Priority:** 2
-- **Status:** planned
-
-### SSL Certificate Issues — Complete Troubleshooting Guide
-- **URL slug:** /troubleshooting/ssl-certificate-issues
-- **Content type:** troubleshooting
-- **Target keyword:** "ssl certificate troubleshooting"
-- **Secondary keywords:** "let's encrypt not renewing", "ssl certificate expired fix", "self-signed certificate docker"
-- **Estimated volume:** very high
-- **Priority:** 3
-- **Status:** planned
-
-### Reverse Proxy Debugging — 502, 504, and Connection Errors
-- **URL slug:** /troubleshooting/reverse-proxy-debugging
-- **Content type:** troubleshooting
-- **Target keyword:** "reverse proxy debugging guide"
-- **Secondary keywords:** "nginx 502 bad gateway fix", "traefik 502 error", "reverse proxy connection refused"
-- **Estimated volume:** very high
-- **Priority:** 4
-- **Status:** planned
-
-### Docker Performance Tuning — Speed Up Your Containers
-- **URL slug:** /foundations/docker-performance-tuning
-- **Content type:** foundation
-- **Target keyword:** "docker performance tuning"
-- **Secondary keywords:** "docker slow performance fix", "docker container optimization", "speed up docker"
-- **Estimated volume:** high
-- **Priority:** 5
-- **Status:** planned
-
-### Security Hardening for Self-Hosted Services
-- **URL slug:** /foundations/security-hardening
-- **Content type:** foundation
-- **Target keyword:** "security hardening self-hosted services"
-- **Secondary keywords:** "harden docker containers", "self-hosting security guide", "secure home server"
-- **Estimated volume:** high
-- **Priority:** 6
-- **Status:** planned
-
-### Docker Container Not Starting — Complete Fix Guide
-- **URL slug:** /troubleshooting/docker-container-not-starting
-- **Content type:** troubleshooting
-- **Target keyword:** "docker container not starting"
-- **Secondary keywords:** "docker container exiting immediately", "docker compose up fails", "container restart loop"
-- **Estimated volume:** very high
-- **Priority:** 7
-- **Status:** planned
-
-### Docker Networking Issues — Container Communication Problems
-- **URL slug:** /troubleshooting/docker-networking-issues
-- **Content type:** troubleshooting
-- **Target keyword:** "docker networking issues"
-- **Secondary keywords:** "docker containers can't communicate", "docker network not working", "docker bridge network problems"
-- **Estimated volume:** very high
-- **Priority:** 8
-- **Status:** planned
-
-### Docker Volume Permissions — Fix Access Denied Errors
-- **URL slug:** /troubleshooting/docker-volume-permissions
-- **Content type:** troubleshooting
-- **Target keyword:** "docker volume permission denied"
-- **Secondary keywords:** "docker volume permissions fix", "docker file permission errors", "docker uid gid mapping"
-- **Estimated volume:** very high
-- **Priority:** 9
-- **Status:** planned
-
-### Port Already in Use — Fix Docker Port Conflicts
-- **URL slug:** /troubleshooting/port-already-in-use
-- **Content type:** troubleshooting
-- **Target keyword:** "docker port already in use"
-- **Secondary keywords:** "port conflict docker compose", "address already in use docker", "port 80 443 already in use"
-- **Estimated volume:** high
-- **Priority:** 10
-- **Status:** planned
-
-### Automatic Updates for Docker Containers — Watchtower and Alternatives
-- **URL slug:** /foundations/docker-automatic-updates
-- **Content type:** foundation
-- **Target keyword:** "docker automatic updates"
-- **Secondary keywords:** "watchtower docker setup", "auto update docker containers", "docker container auto update"
-- **Estimated volume:** high
-- **Priority:** 11
-- **Status:** planned
-
-### Docker Compose Networking — Advanced Guide
-- **URL slug:** /foundations/docker-compose-networking-advanced
-- **Content type:** foundation
-- **Target keyword:** "docker compose networking advanced"
-- **Secondary keywords:** "docker compose multiple networks", "docker compose external networks", "inter-service networking docker"
-- **Estimated volume:** high
-- **Priority:** 12
-- **Status:** planned
-
-### Reverse Proxy with Multiple Docker Services — Complete Guide
-- **URL slug:** /foundations/reverse-proxy-multiple-services
-- **Content type:** foundation
-- **Target keyword:** "reverse proxy multiple docker services"
-- **Secondary keywords:** "nginx multiple services docker", "traefik multiple containers", "caddy reverse proxy multiple apps"
-- **Estimated volume:** very high
-- **Priority:** 13
-- **Status:** planned
-
-### Backing Up Docker Volumes — Complete Guide
-- **URL slug:** /foundations/backup-docker-volumes
-- **Content type:** foundation
-- **Target keyword:** "backup docker volumes"
-- **Secondary keywords:** "docker volume backup guide", "how to backup docker data", "docker compose backup strategy"
-- **Estimated volume:** high
-- **Priority:** 14
-- **Status:** planned
-
-### Self-Hosting on a VPS vs Home Server — Pros and Cons
-- **URL slug:** /foundations/vps-vs-home-server
-- **Content type:** foundation
-- **Target keyword:** "vps vs home server self-hosting"
-- **Secondary keywords:** "self-host vps or home", "home server vs cloud vps", "where to self-host"
-- **Estimated volume:** high
-- **Priority:** 15
-- **Status:** planned
+## Wave 5 — New Foundation Articles (2026-02-17)
