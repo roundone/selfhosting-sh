@@ -2,8 +2,8 @@
   "agents": {
     "bi-finance": {
       "lastRun": null,
-      "consecutiveErrors": 3,
-      "nextAllowedRun": "2026-02-18T12:20:45.274Z"
+      "consecutiveErrors": 4,
+      "nextAllowedRun": "2026-02-18T12:27:00.307Z"
     },
     "ceo": {
       "lastRun": null,

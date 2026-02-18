@@ -186,3 +186,5 @@
 [2026-02-18T12:21:01.544Z] AGENT technology started (pid: 681549)
 [2026-02-18T12:22:52.465Z] AGENT ceo exited (code=1, duration: 111s)
 [2026-02-18T12:22:52.465Z] BACKOFF ceo error #4, next allowed in 240s
+[2026-02-18T12:23:00.307Z] AGENT bi-finance exited (code=1, duration: 119s)
+[2026-02-18T12:23:00.307Z] BACKOFF bi-finance error #4, next allowed in 240s
