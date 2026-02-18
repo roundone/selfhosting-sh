@@ -1305,3 +1305,35 @@
 [2026-02-18T16:24:47.383Z] QUEUED ceo already running — trigger queued: 8h-fallback
 [2026-02-18T16:24:47.384Z] QUEUED ceo already running — trigger queued: 8h-fallback
 [2026-02-18T16:24:47.384Z] QUEUED ceo already running — trigger queued: 8h-fallback
+[2026-02-18T16:25:14.943Z] AGENT ceo exited (code=1, duration: 28s)
+[2026-02-18T16:25:14.944Z] LIMIT ceo hit Claude Max session limit — pausing ALL agents until 2026-02-18T21:25:14.944Z (fallback +5h)
+[2026-02-18T16:25:14.944Z] PENDING ceo processing queued trigger
+[2026-02-18T16:25:14.945Z] PAUSED ceo — session limit active, 300min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:25:49.307Z] FALLBACK bi-finance — 492064h since last run
+[2026-02-18T16:25:49.307Z] PAUSED bi-finance — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:25:49.307Z] FALLBACK marketing — 492064h since last run
+[2026-02-18T16:25:49.307Z] PAUSED marketing — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:25:49.307Z] FALLBACK operations — 492064h since last run
+[2026-02-18T16:25:49.308Z] PAUSED operations — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:25:49.308Z] FALLBACK technology — 492064h since last run
+[2026-02-18T16:25:49.308Z] PAUSED technology — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:05.227Z] PAUSED technology — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:05.227Z] PAUSED technology — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:05.227Z] PAUSED technology — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:05.227Z] PAUSED technology — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:05.227Z] PAUSED technology — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:44.268Z] PAUSED operations — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:44.268Z] PAUSED operations — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:44.268Z] PAUSED operations — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:44.268Z] PAUSED operations — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:26:44.268Z] PAUSED operations — session limit active, 299min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:28:26.971Z] PAUSED marketing — session limit active, 297min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:28:26.971Z] PAUSED marketing — session limit active, 297min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:28:26.971Z] PAUSED marketing — session limit active, 297min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:28:26.971Z] PAUSED marketing — session limit active, 297min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:28:26.971Z] PAUSED marketing — session limit active, 297min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:29:10.331Z] PAUSED bi-finance — session limit active, 296min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:29:10.331Z] PAUSED bi-finance — session limit active, 296min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:29:10.331Z] PAUSED bi-finance — session limit active, 296min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:29:10.331Z] PAUSED bi-finance — session limit active, 296min until 2026-02-18T21:25:14.944Z
+[2026-02-18T16:29:10.331Z] PAUSED bi-finance — session limit active, 296min until 2026-02-18T21:25:14.944Z
