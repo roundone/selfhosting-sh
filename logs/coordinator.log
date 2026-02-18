@@ -2269,3 +2269,7 @@
 [2026-02-18T21:25:20.070Z] QUEUED operations already running — trigger queued: 8h-fallback
 [2026-02-18T21:25:20.070Z] QUEUED technology already running — trigger queued: 8h-fallback
 [2026-02-18T21:25:20.070Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:27:09.350Z] AGENT ceo exited (code=1, duration: 109s)
+[2026-02-18T21:27:09.350Z] LIMIT ceo hit Claude Max session limit — pausing ALL agents until 2026-02-19T02:27:09.350Z (fallback +5h)
+[2026-02-18T21:27:09.351Z] PENDING ceo processing queued trigger
+[2026-02-18T21:27:09.351Z] PAUSED ceo — session limit active, 300min until 2026-02-19T02:27:09.350Z
