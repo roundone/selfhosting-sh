@@ -1069,3 +1069,7 @@
 [2026-02-18T15:28:16.410Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
 [2026-02-18T15:28:16.411Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
 [2026-02-18T15:28:16.411Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T15:28:43.295Z] AGENT bi-finance exited (code=1, duration: 27s)
+[2026-02-18T15:28:43.296Z] BACKOFF bi-finance error #12, next allowed in 1800s
+[2026-02-18T15:28:43.296Z] PENDING bi-finance processing queued trigger
+[2026-02-18T15:28:43.296Z] BACKOFF bi-finance in backoff for 1800s more
