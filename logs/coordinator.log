@@ -2277,3 +2277,7 @@
 [2026-02-18T21:27:19.288Z] LIMIT operations hit Claude Max session limit — pausing ALL agents until 2026-02-19T02:27:19.288Z (fallback +5h)
 [2026-02-18T21:27:19.288Z] PENDING operations processing queued trigger
 [2026-02-18T21:27:19.288Z] PAUSED operations — session limit active, 300min until 2026-02-19T02:27:19.288Z
+[2026-02-18T21:27:23.229Z] AGENT technology exited (code=1, duration: 123s)
+[2026-02-18T21:27:23.229Z] LIMIT technology hit Claude Max session limit — pausing ALL agents until 2026-02-19T02:27:23.229Z (fallback +5h)
+[2026-02-18T21:27:23.230Z] PENDING technology processing queued trigger
+[2026-02-18T21:27:23.230Z] PAUSED technology — session limit active, 300min until 2026-02-19T02:27:23.229Z

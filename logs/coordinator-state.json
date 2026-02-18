@@ -21,12 +21,12 @@
       "nextAllowedRun": "2026-02-18T16:26:44.150Z"
     },
     "technology": {
-      "lastRun": null,
+      "lastRun": "2026-02-18T21:27:23.229Z",
       "consecutiveErrors": 13,
       "nextAllowedRun": "2026-02-18T16:26:05.111Z"
     }
   },
   "lastReleasesCheck": "2026-02-18T21:20:53.123Z",
   "lastArchiveCleanup": "2026-02-18T21:20:53.126Z",
-  "pausedUntil": "2026-02-19T02:27:19.288Z"
+  "pausedUntil": "2026-02-19T02:27:23.229Z"
 }
