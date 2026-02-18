@@ -1231,3 +1231,77 @@
 [2026-02-18T16:05:54.026Z] BACKOFF marketing in backoff for 1353s more
 [2026-02-18T16:05:54.524Z] BACKOFF operations in backoff for 1250s more
 [2026-02-18T16:05:55.024Z] BACKOFF technology in backoff for 1210s more
+[2026-02-18T16:10:49.121Z] FALLBACK ceo — 492064h since last run
+[2026-02-18T16:10:49.121Z] BACKOFF ceo in backoff for 838s more
+[2026-02-18T16:10:49.121Z] FALLBACK bi-finance — 492064h since last run
+[2026-02-18T16:10:49.121Z] BACKOFF bi-finance in backoff for 1101s more
+[2026-02-18T16:10:49.121Z] FALLBACK marketing — 492064h since last run
+[2026-02-18T16:10:49.121Z] BACKOFF marketing in backoff for 1058s more
+[2026-02-18T16:10:49.121Z] FALLBACK operations — 492064h since last run
+[2026-02-18T16:10:49.121Z] BACKOFF operations in backoff for 955s more
+[2026-02-18T16:10:49.121Z] FALLBACK technology — 492064h since last run
+[2026-02-18T16:10:49.122Z] BACKOFF technology in backoff for 916s more
+[2026-02-18T16:15:49.200Z] FALLBACK ceo — 492064h since last run
+[2026-02-18T16:15:49.200Z] BACKOFF ceo in backoff for 538s more
+[2026-02-18T16:15:49.200Z] FALLBACK bi-finance — 492064h since last run
+[2026-02-18T16:15:49.200Z] BACKOFF bi-finance in backoff for 801s more
+[2026-02-18T16:15:49.200Z] FALLBACK marketing — 492064h since last run
+[2026-02-18T16:15:49.200Z] BACKOFF marketing in backoff for 758s more
+[2026-02-18T16:15:49.200Z] FALLBACK operations — 492064h since last run
+[2026-02-18T16:15:49.201Z] BACKOFF operations in backoff for 655s more
+[2026-02-18T16:15:49.201Z] FALLBACK technology — 492064h since last run
+[2026-02-18T16:15:49.201Z] BACKOFF technology in backoff for 616s more
+[2026-02-18T16:20:49.290Z] FALLBACK ceo — 492064h since last run
+[2026-02-18T16:20:49.290Z] BACKOFF ceo in backoff for 238s more
+[2026-02-18T16:20:49.290Z] FALLBACK bi-finance — 492064h since last run
+[2026-02-18T16:20:49.291Z] BACKOFF bi-finance in backoff for 501s more
+[2026-02-18T16:20:49.291Z] FALLBACK marketing — 492064h since last run
+[2026-02-18T16:20:49.291Z] BACKOFF marketing in backoff for 458s more
+[2026-02-18T16:20:49.291Z] FALLBACK operations — 492064h since last run
+[2026-02-18T16:20:49.291Z] BACKOFF operations in backoff for 355s more
+[2026-02-18T16:20:49.291Z] FALLBACK technology — 492064h since last run
+[2026-02-18T16:20:49.291Z] BACKOFF technology in backoff for 316s more
+[2026-02-18T16:20:49.291Z] RELEASES running check-releases.js
+[2026-02-18T16:20:49.361Z] RELEASES 2026-02-18T16:20:49.356Z [check-releases] starting
+[2026-02-18T16:20:49.362Z] RELEASES 2026-02-18T16:20:49.361Z [check-releases] checking 29 GitHub repos
+[2026-02-18T16:20:49.478Z] RELEASES 2026-02-18T16:20:49.478Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-18T16:20:50.062Z] RELEASES 2026-02-18T16:20:50.062Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-18T16:20:50.675Z] RELEASES 2026-02-18T16:20:50.675Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-18T16:20:51.252Z] RELEASES 2026-02-18T16:20:51.252Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-18T16:20:51.824Z] RELEASES 2026-02-18T16:20:51.823Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-18T16:20:52.403Z] RELEASES 2026-02-18T16:20:52.403Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-18T16:20:52.996Z] RELEASES 2026-02-18T16:20:52.995Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-18T16:20:53.579Z] RELEASES 2026-02-18T16:20:53.579Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1147)
+[2026-02-18T16:20:54.167Z] RELEASES 2026-02-18T16:20:54.167Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-18T16:20:54.738Z] RELEASES 2026-02-18T16:20:54.737Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-18T16:20:55.320Z] RELEASES 2026-02-18T16:20:55.320Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-18T16:20:55.982Z] RELEASES 2026-02-18T16:20:55.981Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-18T16:20:56.549Z] RELEASES 2026-02-18T16:20:56.549Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-18T16:20:57.149Z] RELEASES 2026-02-18T16:20:57.148Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-18T16:20:57.717Z] RELEASES 2026-02-18T16:20:57.717Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-18T16:20:58.293Z] RELEASES 2026-02-18T16:20:58.293Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-18T16:20:58.860Z] RELEASES 2026-02-18T16:20:58.859Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-18T16:20:59.433Z] RELEASES 2026-02-18T16:20:59.432Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-18T16:21:00.078Z] RELEASES 2026-02-18T16:21:00.078Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-18T16:21:00.652Z] RELEASES 2026-02-18T16:21:00.652Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-18T16:21:01.224Z] RELEASES 2026-02-18T16:21:01.224Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-18T16:21:01.798Z] RELEASES 2026-02-18T16:21:01.798Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.1)
+[2026-02-18T16:21:02.358Z] RELEASES 2026-02-18T16:21:02.357Z [check-releases]   dani-garcia/vaultwarden → 200 but same version (1.35.3)
+[2026-02-18T16:21:02.949Z] RELEASES 2026-02-18T16:21:02.949Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-18T16:21:03.530Z] RELEASES 2026-02-18T16:21:03.530Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-18T16:21:04.118Z] RELEASES 2026-02-18T16:21:04.117Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-18T16:21:04.697Z] RELEASES 2026-02-18T16:21:04.697Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-18T16:21:05.275Z] RELEASES 2026-02-18T16:21:05.274Z [check-releases]   nextcloud/server → 200 but same version (v33.0.0)
+[2026-02-18T16:21:05.844Z] RELEASES 2026-02-18T16:21:05.844Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-18T16:21:06.345Z] RELEASES 2026-02-18T16:21:06.345Z [check-releases] checking 3 feeds
+[2026-02-18T16:21:06.403Z] RELEASES 2026-02-18T16:21:06.402Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-18T16:21:16.641Z] RELEASES 2026-02-18T16:21:16.640Z [check-releases]   https://selfh.st/index.xml → HTTP 0 timeout
+[2026-02-18T16:21:16.940Z] RELEASES 2026-02-18T16:21:16.940Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-18T16:21:17.142Z] RELEASES 2026-02-18T16:21:17.141Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-18T16:21:17.149Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-18T16:24:47.381Z] AGENT ceo starting (trigger: inbox-missed)
+[2026-02-18T16:24:47.383Z] AGENT ceo started (pid: 695192)
+[2026-02-18T16:24:47.383Z] QUEUED ceo already running — trigger queued: 8h-fallback
+[2026-02-18T16:24:47.383Z] QUEUED ceo already running — trigger queued: 8h-fallback
+[2026-02-18T16:24:47.384Z] QUEUED ceo already running — trigger queued: 8h-fallback
+[2026-02-18T16:24:47.384Z] QUEUED ceo already running — trigger queued: 8h-fallback
