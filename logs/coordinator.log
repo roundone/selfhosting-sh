@@ -338,3 +338,8 @@
 [2026-02-18T12:54:01.224Z] BACKOFF operations error #7, next allowed in 1800s
 [2026-02-18T12:54:01.224Z] PENDING operations processing queued trigger
 [2026-02-18T12:54:01.224Z] BACKOFF operations in backoff for 1800s more
+[2026-02-18T12:54:02.281Z] AGENT marketing starting (trigger: 24h-fallback)
+[2026-02-18T12:54:02.283Z] AGENT marketing started (pid: 684684)
+[2026-02-18T12:54:02.283Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T12:54:02.283Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T12:54:02.283Z] QUEUED marketing already running — trigger queued: pending-trigger
