@@ -1813,3 +1813,73 @@
 [2026-02-18T20:10:52.423Z] PAUSED operations — session limit active, 74min until 2026-02-18T21:25:14.944Z
 [2026-02-18T20:10:52.424Z] FALLBACK technology — 492068h since last run
 [2026-02-18T20:10:52.424Z] PAUSED technology — session limit active, 74min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:15:52.496Z] FALLBACK bi-finance — 492068h since last run
+[2026-02-18T20:15:52.496Z] PAUSED bi-finance — session limit active, 69min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:15:52.496Z] FALLBACK marketing — 492068h since last run
+[2026-02-18T20:15:52.496Z] PAUSED marketing — session limit active, 69min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:15:52.496Z] FALLBACK operations — 492068h since last run
+[2026-02-18T20:15:52.496Z] PAUSED operations — session limit active, 69min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:15:52.496Z] FALLBACK technology — 492068h since last run
+[2026-02-18T20:15:52.496Z] PAUSED technology — session limit active, 69min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:20:52.499Z] FALLBACK bi-finance — 492068h since last run
+[2026-02-18T20:20:52.499Z] PAUSED bi-finance — session limit active, 64min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:20:52.500Z] FALLBACK marketing — 492068h since last run
+[2026-02-18T20:20:52.500Z] PAUSED marketing — session limit active, 64min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:20:52.500Z] FALLBACK operations — 492068h since last run
+[2026-02-18T20:20:52.500Z] PAUSED operations — session limit active, 64min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:20:52.500Z] FALLBACK technology — 492068h since last run
+[2026-02-18T20:20:52.500Z] PAUSED technology — session limit active, 64min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:20:52.500Z] RELEASES running check-releases.js
+[2026-02-18T20:20:52.554Z] RELEASES 2026-02-18T20:20:52.549Z [check-releases] starting
+[2026-02-18T20:20:52.555Z] RELEASES 2026-02-18T20:20:52.555Z [check-releases] checking 29 GitHub repos
+[2026-02-18T20:20:52.661Z] RELEASES 2026-02-18T20:20:52.660Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-18T20:20:53.226Z] RELEASES 2026-02-18T20:20:53.225Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-18T20:20:53.842Z] RELEASES 2026-02-18T20:20:53.842Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-18T20:20:54.466Z] RELEASES 2026-02-18T20:20:54.465Z [check-releases]   crazy-max/diun → 200 but same version (v4.31.0)
+[2026-02-18T20:20:55.023Z] RELEASES 2026-02-18T20:20:55.022Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-18T20:20:55.573Z] RELEASES 2026-02-18T20:20:55.573Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-18T20:20:56.162Z] RELEASES 2026-02-18T20:20:56.162Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-18T20:20:56.731Z] RELEASES 2026-02-18T20:20:56.730Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1147)
+[2026-02-18T20:20:57.300Z] RELEASES 2026-02-18T20:20:57.300Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-18T20:20:57.862Z] RELEASES 2026-02-18T20:20:57.862Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-18T20:20:58.420Z] RELEASES 2026-02-18T20:20:58.420Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-18T20:20:59.066Z] RELEASES 2026-02-18T20:20:59.066Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-18T20:20:59.624Z] RELEASES 2026-02-18T20:20:59.624Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-18T20:21:00.222Z] RELEASES 2026-02-18T20:21:00.222Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-18T20:21:00.845Z] RELEASES 2026-02-18T20:21:00.844Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-18T20:21:01.414Z] RELEASES 2026-02-18T20:21:01.414Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-18T20:21:01.992Z] RELEASES 2026-02-18T20:21:01.991Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-18T20:21:02.618Z] RELEASES 2026-02-18T20:21:02.618Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-18T20:21:03.209Z] RELEASES 2026-02-18T20:21:03.209Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-18T20:21:03.785Z] RELEASES 2026-02-18T20:21:03.785Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-18T20:21:04.352Z] RELEASES 2026-02-18T20:21:04.352Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-18T20:21:04.913Z] RELEASES 2026-02-18T20:21:04.912Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.1)
+[2026-02-18T20:21:05.464Z] RELEASES 2026-02-18T20:21:05.464Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-18T20:21:06.020Z] RELEASES 2026-02-18T20:21:06.020Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-18T20:21:06.592Z] RELEASES 2026-02-18T20:21:06.591Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-18T20:21:07.163Z] RELEASES 2026-02-18T20:21:07.162Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-18T20:21:07.739Z] RELEASES 2026-02-18T20:21:07.739Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-18T20:21:08.309Z] RELEASES 2026-02-18T20:21:08.309Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-18T20:21:08.867Z] RELEASES 2026-02-18T20:21:08.867Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-18T20:21:09.368Z] RELEASES 2026-02-18T20:21:09.368Z [check-releases] checking 3 feeds
+[2026-02-18T20:21:09.434Z] RELEASES 2026-02-18T20:21:09.433Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-18T20:21:09.706Z] RELEASES 2026-02-18T20:21:09.706Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-18T20:21:10.039Z] RELEASES 2026-02-18T20:21:10.039Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-18T20:21:10.239Z] RELEASES 2026-02-18T20:21:10.239Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-18T20:21:10.245Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-18T20:25:52.511Z] FALLBACK bi-finance — 492068h since last run
+[2026-02-18T20:25:52.511Z] PAUSED bi-finance — session limit active, 59min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:25:52.511Z] FALLBACK marketing — 492068h since last run
+[2026-02-18T20:25:52.511Z] PAUSED marketing — session limit active, 59min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:25:52.511Z] FALLBACK operations — 492068h since last run
+[2026-02-18T20:25:52.511Z] PAUSED operations — session limit active, 59min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:25:52.511Z] FALLBACK technology — 492068h since last run
+[2026-02-18T20:25:52.511Z] PAUSED technology — session limit active, 59min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:30:52.611Z] FALLBACK bi-finance — 492069h since last run
+[2026-02-18T20:30:52.612Z] PAUSED bi-finance — session limit active, 54min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:30:52.612Z] FALLBACK marketing — 492069h since last run
+[2026-02-18T20:30:52.612Z] PAUSED marketing — session limit active, 54min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:30:52.612Z] FALLBACK operations — 492069h since last run
+[2026-02-18T20:30:52.612Z] PAUSED operations — session limit active, 54min until 2026-02-18T21:25:14.944Z
+[2026-02-18T20:30:52.612Z] FALLBACK technology — 492069h since last run
+[2026-02-18T20:30:52.612Z] PAUSED technology — session limit active, 54min until 2026-02-18T21:25:14.944Z
