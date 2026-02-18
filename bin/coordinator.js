@@ -21,8 +21,8 @@
  *    Example: "watch: credentials/api-keys.env" → coordinator writes a credentials-updated
  *    event and starts the agent when that file changes.
  *
- * 4. 24-HOUR FALLBACK (safety net)
- *    Every agent runs at most once per 24h even if no events fire. Catches unknown unknowns.
+ * 4. 8-HOUR FALLBACK (safety net)
+ *    Every agent runs at most once per 8h even if no events fire. Catches unknown unknowns.
  *
  * 5. SCHEDULED TASKS
  *    Runs check-releases.js hourly (ETag-based GitHub release checker — writes events when
@@ -59,7 +59,7 @@ const CHECK_RELEASES = path.join(REPO_ROOT, 'bin', 'check-releases.js');
 const HOOK_SOURCE = path.join(REPO_ROOT, 'bin', 'hooks', 'post-commit');
 const HOOK_DEST = path.join(REPO_ROOT, '.git', 'hooks', 'post-commit');
 
-const FALLBACK_INTERVAL_MS = 24 * 60 * 60 * 1000;      // 24 hours
+const FALLBACK_INTERVAL_MS = 8 * 60 * 60 * 1000;       // 8 hours
 const RELEASES_CHECK_INTERVAL_MS = 60 * 60 * 1000;      // 1 hour
 const ARCHIVE_CLEANUP_INTERVAL_MS = 60 * 60 * 1000;     // 1 hour
 const PERIODIC_CHECK_INTERVAL_MS = 5 * 60 * 1000;       // 5 minutes
@@ -88,8 +88,9 @@ const pendingTriggers = {};
 const debounceTimers = {};
 
 // Persisted state (saved to STATE_FILE):
-// { agents: { name → { lastRun, consecutiveErrors, nextAllowedRun } }, lastReleasesCheck, lastArchiveCleanup }
-let state = { agents: {}, lastReleasesCheck: null, lastArchiveCleanup: null };
+// { agents: { name → { lastRun, consecutiveErrors, nextAllowedRun } }, lastReleasesCheck, lastArchiveCleanup,
+//   pausedUntil (ISO string | null) — global pause when Claude Max session limit is hit }
+let state = { agents: {}, lastReleasesCheck: null, lastArchiveCleanup: null, pausedUntil: null };
 
 // ─── Logging ──────────────────────────────────────────────────────────────────
 
@@ -110,10 +111,11 @@ function loadState() {
         if (fs.existsSync(STATE_FILE)) {
             state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
             state.agents = state.agents || {};
+            if (state.pausedUntil === undefined) state.pausedUntil = null;
         }
     } catch (e) {
         log(`WARN state file corrupt, starting fresh: ${e.message}`);
-        state = { agents: {}, lastReleasesCheck: null, lastArchiveCleanup: null };
+        state = { agents: {}, lastReleasesCheck: null, lastArchiveCleanup: null, pausedUntil: null };
     }
 }
 
@@ -230,6 +232,58 @@ function getBackoffMs(consecutiveErrors) {
     return Math.min(BACKOFF_BASE_MS * Math.pow(2, consecutiveErrors - 1), BACKOFF_MAX_MS);
 }
 
+// ─── Usage limit detection ────────────────────────────────────────────────────
+
+// Parse "resets Feb 19, 4pm (UTC)" from Claude's limit error message.
+// Returns a Date or null.
+function parseResetTime(output) {
+    // Pattern: "resets [Month] [day], [hour][am/pm] (UTC)"
+    const m = output.match(/resets\s+(\w+ \d+),\s*(\d+(?::\d+)?(?:am|pm))\s*\(UTC\)/i);
+    if (!m) return null;
+    try {
+        const year = new Date().getUTCFullYear();
+        const parsed = new Date(`${m[1]}, ${year} ${m[2]} UTC`);
+        if (isNaN(parsed.getTime())) return null;
+        // If the parsed time is in the past (e.g., we're parsing Dec date in Jan), advance year
+        if (parsed.getTime() < Date.now()) parsed.setUTCFullYear(year + 1);
+        return parsed;
+    } catch (e) {
+        return null;
+    }
+}
+
+function applyUsageLimitPause(output, agentName) {
+    const resetTime = parseResetTime(output);
+    const pauseUntil = resetTime || new Date(Date.now() + 5 * 60 * 60 * 1000); // fallback: +5h
+    state.pausedUntil = pauseUntil.toISOString();
+    saveState();
+    const source = resetTime ? `parsed from error message` : `fallback +5h`;
+    log(`LIMIT ${agentName} hit Claude Max session limit — pausing ALL agents until ${state.pausedUntil} (${source})`);
+}
+
+function isGloballyPaused() {
+    if (!state.pausedUntil) return false;
+    if (new Date(state.pausedUntil).getTime() <= Date.now()) {
+        log('RESUMED global pause expired — resuming agents');
+        state.pausedUntil = null;
+        saveState();
+        return false;
+    }
+    return true;
+}
+
+function checkUnpauseEvent(filename) {
+    // Manual override: drop events/coordinator-unpause-{ts}.json to clear pause immediately
+    if (!filename.startsWith('coordinator-unpause-')) return false;
+    log('UNPAUSE manual unpause event received — clearing global pause');
+    state.pausedUntil = null;
+    saveState();
+    // Archive the event so it doesn't re-trigger
+    const filePath = path.join(EVENTS_DIR, filename);
+    if (fs.existsSync(filePath)) archiveEvent(filePath);
+    return true;
+}
+
 // ─── Core: starting an agent ──────────────────────────────────────────────────
 
 function tryStartAgent(agentName, triggerEventPath, reason) {
@@ -244,6 +298,18 @@ function tryStartAgent(agentName, triggerEventPath, reason) {
         pendingTriggers[agentName] = triggerEventPath || null;
         const reasonStr = reason || (triggerEventPath ? path.basename(triggerEventPath) : 'unknown');
         log(`QUEUED ${agentName} already running — trigger queued: ${reasonStr}`);
+        return;
+    }
+
+    // Global pause: Claude Max session limit hit — wait until reset
+    if (isGloballyPaused()) {
+        const msLeft = new Date(state.pausedUntil).getTime() - Date.now();
+        const minsLeft = Math.round(msLeft / 60000);
+        log(`PAUSED ${agentName} — session limit active, ${minsLeft}min until ${state.pausedUntil}`);
+        // Queue the trigger so it fires when the pause lifts
+        pendingTriggers[agentName] = triggerEventPath || pendingTriggers[agentName] || null;
+        // Schedule a retry when the pause expires
+        setTimeout(() => tryStartAgent(agentName, pendingTriggers[agentName], reason), msLeft + 5000);
         return;
     }
 
@@ -277,11 +343,26 @@ function spawnAgent(agentName, triggerEventPath, reason) {
     if (triggerEventPath) env.TRIGGER_EVENT = triggerEventPath;
     if (reason && !triggerEventPath) env.TRIGGER_REASON = reason;
 
+    // Capture stdout+stderr to detect "hit your limit" while still forwarding to journald
     const child = spawn('bash', [RUN_AGENT_ONCE, agentDir, String(AGENT_MAX_RUNTIME)], {
         env,
         detached: false,   // keep as our child so we can kill it and its descendants
-        stdio: 'inherit',  // agent stdout/stderr goes to our stdout (captured by journald)
+        stdio: ['ignore', 'pipe', 'pipe'],
     });
+
+    // Buffer last 16KB of output for limit detection; forward everything to journald via our stdout
+    const OUTPUT_BUFFER_MAX = 16 * 1024;
+    let outputBuffer = '';
+    function onData(chunk) {
+        const text = chunk.toString();
+        process.stdout.write(text); // forward to journald
+        outputBuffer += text;
+        if (outputBuffer.length > OUTPUT_BUFFER_MAX) {
+            outputBuffer = outputBuffer.slice(outputBuffer.length - OUTPUT_BUFFER_MAX);
+        }
+    }
+    child.stdout.on('data', onData);
+    child.stderr.on('data', onData);
 
     running[agentName] = {
         pid: child.pid,
@@ -294,7 +375,7 @@ function spawnAgent(agentName, triggerEventPath, reason) {
     child.on('error', (err) => {
         log(`ERROR ${agentName} failed to spawn: ${err.message}`);
         delete running[agentName];
-        handleAgentExit(agentName, 1, triggerEventPath);
+        handleAgentExit(agentName, 1, triggerEventPath, outputBuffer);
     });
 
     child.on('exit', (code, signal) => {
@@ -302,13 +383,14 @@ function spawnAgent(agentName, triggerEventPath, reason) {
         const exitDesc = signal ? `signal=${signal}` : `code=${code}`;
         log(`AGENT ${agentName} exited (${exitDesc}, duration: ${durationSec}s)`);
         delete running[agentName];
-        handleAgentExit(agentName, code, triggerEventPath);
+        handleAgentExit(agentName, code, triggerEventPath, outputBuffer);
     });
 }
 
-function handleAgentExit(agentName, exitCode, triggerEventPath) {
+function handleAgentExit(agentName, exitCode, triggerEventPath, outputBuffer) {
     const agentState = getAgentState(agentName);
     const now = new Date().toISOString();
+    const output = outputBuffer || '';
 
     // Archive the triggering event now that the agent has processed it
     if (triggerEventPath && fs.existsSync(triggerEventPath)) {
@@ -324,6 +406,11 @@ function handleAgentExit(agentName, exitCode, triggerEventPath) {
         agentState.consecutiveErrors = 0;
         agentState.nextAllowedRun = null;
         log(`STATE ${agentName} lastRun updated, errors reset`);
+    } else if (exitCode === 1 && output.includes('hit your limit')) {
+        // Claude Max session limit hit — pause globally, don't count as agent error
+        applyUsageLimitPause(output, agentName);
+        // Don't increment consecutiveErrors — this isn't the agent's fault
+        agentState.lastRun = now; // record the run so 8h fallback doesn't fire immediately after unpause
     } else {
         // Error: apply backoff
         agentState.consecutiveErrors = (agentState.consecutiveErrors || 0) + 1;
@@ -438,6 +525,8 @@ function watchEventsDir() {
         const filePath = path.join(EVENTS_DIR, filename);
         debounce(`event:${filename}`, () => {
             if (!fs.existsSync(filePath)) return; // already archived
+            // Handle coordinator-level events first (not agent triggers)
+            if (checkUnpauseEvent(filename)) return;
             const agentName = routeEventFile(filename);
             if (!agentName) {
                 log(`EVENT ${filename} → no matching agent (unrouted)`);
@@ -548,7 +637,7 @@ function checkFallbacks() {
         const lastRun = agentState.lastRun ? new Date(agentState.lastRun).getTime() : 0;
         if (now - lastRun >= FALLBACK_INTERVAL_MS) {
             log(`FALLBACK ${agentName} — ${Math.round((now - lastRun) / 3600000)}h since last run`);
-            tryStartAgent(agentName, null, '24h-fallback');
+            tryStartAgent(agentName, null, '8h-fallback');
         }
     }
 }
@@ -591,7 +680,7 @@ function ensureDirectories() {
 
 function start() {
     log('='.repeat(60));
-    log('STARTUP coordinator v1.0');
+    log('STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)');
 
     ensureDirectories();
     loadState();
@@ -605,8 +694,9 @@ function start() {
     // Give watchers a moment to initialize, then run crash recovery
     setTimeout(recoverFromCrash, 1000);
 
-    // Periodic checks: 24h fallbacks + releases + cleanup
+    // Periodic checks: 8h fallbacks + releases + cleanup + pause expiry
     setInterval(() => {
+        isGloballyPaused(); // side-effect: clears expired pause and logs
         checkFallbacks();
         runCheckReleases();
         runArchiveCleanup();
