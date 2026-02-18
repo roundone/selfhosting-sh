@@ -1201,3 +1201,33 @@
 [2026-02-18T16:01:04.547Z] BACKOFF operations in backoff for 1540s more
 [2026-02-18T16:01:04.548Z] FALLBACK technology — 492064h since last run
 [2026-02-18T16:01:04.548Z] BACKOFF technology in backoff for 1501s more
+[2026-02-18T16:05:45.958Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-18T16:05:49.017Z] ============================================================
+[2026-02-18T16:05:49.019Z] STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)
+[2026-02-18T16:05:49.020Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-18T16:05:49.021Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-18T16:05:49.021Z] WATCH events/ (routing by filename convention)
+[2026-02-18T16:05:49.021Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-18T16:05:49.022Z] STARTUP complete — watching for events
+[2026-02-18T16:05:50.022Z] RECOVERY scanning for missed events and stale state...
+[2026-02-18T16:05:50.023Z] RECOVERY bi-finance inbox modified since last run — starting
+[2026-02-18T16:05:50.023Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-18T16:05:50.023Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-18T16:05:50.024Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-18T16:05:50.024Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-18T16:05:50.024Z] RECOVERY complete — 5 missed event(s) found
+[2026-02-18T16:05:53.026Z] BACKOFF bi-finance in backoff for 1397s more
+[2026-02-18T16:05:53.524Z] BACKOFF ceo in backoff for 1134s more
+[2026-02-18T16:05:54.023Z] FALLBACK ceo — 492064h since last run
+[2026-02-18T16:05:54.023Z] BACKOFF ceo in backoff for 1133s more
+[2026-02-18T16:05:54.023Z] FALLBACK bi-finance — 492064h since last run
+[2026-02-18T16:05:54.023Z] BACKOFF bi-finance in backoff for 1396s more
+[2026-02-18T16:05:54.024Z] FALLBACK marketing — 492064h since last run
+[2026-02-18T16:05:54.024Z] BACKOFF marketing in backoff for 1353s more
+[2026-02-18T16:05:54.024Z] FALLBACK operations — 492064h since last run
+[2026-02-18T16:05:54.024Z] BACKOFF operations in backoff for 1250s more
+[2026-02-18T16:05:54.024Z] FALLBACK technology — 492064h since last run
+[2026-02-18T16:05:54.024Z] BACKOFF technology in backoff for 1211s more
+[2026-02-18T16:05:54.026Z] BACKOFF marketing in backoff for 1353s more
+[2026-02-18T16:05:54.524Z] BACKOFF operations in backoff for 1250s more
+[2026-02-18T16:05:55.024Z] BACKOFF technology in backoff for 1210s more
