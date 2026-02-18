@@ -184,3 +184,5 @@
 [2026-02-18T12:21:01.542Z] FALLBACK technology — 492060h since last run
 [2026-02-18T12:21:01.542Z] AGENT technology starting (trigger: 24h-fallback)
 [2026-02-18T12:21:01.544Z] AGENT technology started (pid: 681549)
+[2026-02-18T12:22:52.465Z] AGENT ceo exited (code=1, duration: 111s)
+[2026-02-18T12:22:52.465Z] BACKOFF ceo error #4, next allowed in 240s
