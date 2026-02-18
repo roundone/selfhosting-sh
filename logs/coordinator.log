@@ -1045,3 +1045,15 @@
 [2026-02-18T15:26:04.018Z] BACKOFF marketing in backoff for 88s more
 [2026-02-18T15:26:04.018Z] FALLBACK technology — 492063h since last run
 [2026-02-18T15:26:04.018Z] BACKOFF technology in backoff for 1774s more
+[2026-02-18T15:26:17.107Z] AGENT operations exited (code=1, duration: 27s)
+[2026-02-18T15:26:17.107Z] BACKOFF operations error #12, next allowed in 1800s
+[2026-02-18T15:26:17.107Z] PENDING operations processing queued trigger
+[2026-02-18T15:26:17.108Z] BACKOFF operations in backoff for 1800s more
+[2026-02-18T15:27:32.424Z] AGENT marketing starting (trigger: 24h-fallback)
+[2026-02-18T15:27:32.426Z] AGENT marketing started (pid: 692083)
+[2026-02-18T15:27:32.426Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T15:27:32.426Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T15:27:32.426Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T15:27:32.426Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T15:27:32.426Z] QUEUED marketing already running — trigger queued: pending-trigger
+[2026-02-18T15:27:32.426Z] QUEUED marketing already running — trigger queued: 24h-fallback
