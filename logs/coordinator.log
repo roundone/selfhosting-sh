@@ -57,3 +57,5 @@
 [2026-02-18T12:13:46.737Z] AGENT technology started (pid: 680180)
 [2026-02-18T12:13:50.895Z] AGENT operations starting (trigger: pending-trigger)
 [2026-02-18T12:13:50.898Z] AGENT operations started (pid: 680217)
+[2026-02-18T12:14:10.692Z] AGENT ceo exited (code=1, duration: 34s)
+[2026-02-18T12:14:10.692Z] BACKOFF ceo error #2, next allowed in 60s
