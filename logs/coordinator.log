@@ -320,3 +320,17 @@
 [2026-02-18T12:52:50.192Z] QUEUED technology already running — trigger queued: 24h-fallback
 [2026-02-18T12:52:50.192Z] QUEUED technology already running — trigger queued: 24h-fallback
 [2026-02-18T12:52:50.192Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T12:53:17.158Z] AGENT technology exited (code=1, duration: 27s)
+[2026-02-18T12:53:17.158Z] BACKOFF technology error #7, next allowed in 1800s
+[2026-02-18T12:53:17.158Z] PENDING technology processing queued trigger
+[2026-02-18T12:53:17.158Z] BACKOFF technology in backoff for 1800s more
+[2026-02-18T12:53:34.361Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T12:53:34.363Z] AGENT operations started (pid: 684497)
+[2026-02-18T12:53:34.363Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T12:53:34.363Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T12:53:34.363Z] QUEUED operations already running — trigger queued: pending-trigger
+[2026-02-18T12:53:54.373Z] AGENT bi-finance starting (trigger: 24h-fallback)
+[2026-02-18T12:53:54.374Z] AGENT bi-finance started (pid: 684570)
+[2026-02-18T12:53:54.375Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T12:53:54.375Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T12:53:54.375Z] QUEUED bi-finance already running — trigger queued: pending-trigger
