@@ -41,3 +41,7 @@
 [2026-02-18T12:13:12.635Z] BACKOFF marketing error #1, next allowed in 30s
 [2026-02-18T12:13:12.635Z] PENDING marketing processing queued trigger
 [2026-02-18T12:13:12.635Z] BACKOFF marketing in backoff for 30s more
+[2026-02-18T12:13:16.630Z] AGENT technology exited (code=1, duration: 130s)
+[2026-02-18T12:13:16.630Z] BACKOFF technology error #1, next allowed in 30s
+[2026-02-18T12:13:16.630Z] PENDING technology processing queued trigger
+[2026-02-18T12:13:16.630Z] BACKOFF technology in backoff for 30s more
