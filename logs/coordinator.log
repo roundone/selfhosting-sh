@@ -33,3 +33,7 @@
 [2026-02-18T12:12:08.931Z] QUEUED ceo already running — trigger queued: ceo-test-20260218T121500Z.json
 [2026-02-18T12:12:22.647Z] AGENT bi-finance exited (code=1, duration: 77s)
 [2026-02-18T12:12:22.647Z] BACKOFF bi-finance error #1, next allowed in 30s
+[2026-02-18T12:13:06.994Z] AGENT ceo exited (code=1, duration: 121s)
+[2026-02-18T12:13:06.995Z] BACKOFF ceo error #1, next allowed in 30s
+[2026-02-18T12:13:06.995Z] PENDING ceo processing queued trigger
+[2026-02-18T12:13:06.995Z] BACKOFF ceo in backoff for 30s more
