@@ -1175,3 +1175,15 @@
 [2026-02-18T15:57:59.301Z] QUEUED marketing already running — trigger queued: 24h-fallback
 [2026-02-18T15:57:59.301Z] QUEUED marketing already running — trigger queued: pending-trigger
 [2026-02-18T15:57:59.301Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T15:58:26.829Z] AGENT marketing exited (code=1, duration: 28s)
+[2026-02-18T15:58:26.829Z] BACKOFF marketing error #13, next allowed in 1800s
+[2026-02-18T15:58:26.829Z] PENDING marketing processing queued trigger
+[2026-02-18T15:58:26.829Z] BACKOFF marketing in backoff for 1800s more
+[2026-02-18T15:58:43.411Z] AGENT bi-finance starting (trigger: 24h-fallback)
+[2026-02-18T15:58:43.413Z] AGENT bi-finance started (pid: 693750)
+[2026-02-18T15:58:43.413Z] QUEUED bi-finance already running — trigger queued: pending-trigger
+[2026-02-18T15:58:43.413Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T15:58:43.413Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T15:58:43.413Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T15:58:43.413Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T15:58:43.413Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
