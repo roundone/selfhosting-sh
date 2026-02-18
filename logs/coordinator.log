@@ -216,3 +216,5 @@
 [2026-02-18T12:27:15.537Z] BACKOFF ceo error #5, next allowed in 480s
 [2026-02-18T12:27:16.373Z] AGENT operations starting (trigger: 24h-fallback)
 [2026-02-18T12:27:16.375Z] AGENT operations started (pid: 682888)
+[2026-02-18T12:28:22.675Z] AGENT technology exited (code=1, duration: 74s)
+[2026-02-18T12:28:22.676Z] BACKOFF technology error #5, next allowed in 480s
