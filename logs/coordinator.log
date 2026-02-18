@@ -254,3 +254,13 @@
 [2026-02-18T12:36:43.701Z] AGENT operations starting (trigger: 24h-fallback)
 [2026-02-18T12:36:43.702Z] AGENT operations started (pid: 683800)
 [2026-02-18T12:36:43.702Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T12:36:50.053Z] AGENT technology exited (code=1, duration: 27s)
+[2026-02-18T12:36:50.053Z] BACKOFF technology error #6, next allowed in 960s
+[2026-02-18T12:36:50.053Z] PENDING technology processing queued trigger
+[2026-02-18T12:36:50.053Z] BACKOFF technology in backoff for 960s more
+[2026-02-18T12:37:03.670Z] AGENT bi-finance starting (trigger: 24h-fallback)
+[2026-02-18T12:37:03.672Z] AGENT bi-finance started (pid: 683876)
+[2026-02-18T12:37:03.672Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T12:37:09.681Z] AGENT marketing starting (trigger: 24h-fallback)
+[2026-02-18T12:37:09.683Z] AGENT marketing started (pid: 683984)
+[2026-02-18T12:37:09.683Z] QUEUED marketing already running — trigger queued: 24h-fallback
