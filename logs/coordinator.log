@@ -747,3 +747,15 @@
 [2026-02-18T14:24:11.586Z] QUEUED technology already running — trigger queued: 24h-fallback
 [2026-02-18T14:24:11.586Z] QUEUED technology already running — trigger queued: 24h-fallback
 [2026-02-18T14:24:11.586Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T14:24:41.123Z] AGENT technology exited (code=1, duration: 30s)
+[2026-02-18T14:24:41.123Z] BACKOFF technology error #10, next allowed in 1800s
+[2026-02-18T14:24:41.124Z] PENDING technology processing queued trigger
+[2026-02-18T14:24:41.124Z] BACKOFF technology in backoff for 1800s more
+[2026-02-18T14:24:56.449Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-18T14:24:56.451Z] AGENT operations started (pid: 689025)
+[2026-02-18T14:24:56.452Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T14:24:56.452Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T14:24:56.452Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T14:24:56.452Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T14:24:56.452Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T14:24:56.452Z] QUEUED operations already running — trigger queued: 24h-fallback
