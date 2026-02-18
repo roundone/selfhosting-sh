@@ -45,3 +45,15 @@
 [2026-02-18T12:13:16.630Z] BACKOFF technology error #1, next allowed in 30s
 [2026-02-18T12:13:16.630Z] PENDING technology processing queued trigger
 [2026-02-18T12:13:16.630Z] BACKOFF technology in backoff for 30s more
+[2026-02-18T12:13:20.791Z] AGENT operations exited (code=1, duration: 134s)
+[2026-02-18T12:13:20.791Z] BACKOFF operations error #1, next allowed in 30s
+[2026-02-18T12:13:20.791Z] PENDING operations processing queued trigger
+[2026-02-18T12:13:20.791Z] BACKOFF operations in backoff for 30s more
+[2026-02-18T12:13:37.099Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-18T12:13:37.101Z] AGENT ceo started (pid: 680062)
+[2026-02-18T12:13:42.740Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-18T12:13:42.742Z] AGENT marketing started (pid: 680142)
+[2026-02-18T12:13:46.735Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-18T12:13:46.737Z] AGENT technology started (pid: 680180)
+[2026-02-18T12:13:50.895Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-18T12:13:50.898Z] AGENT operations started (pid: 680217)
