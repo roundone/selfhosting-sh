@@ -517,3 +517,7 @@
 [2026-02-18T13:26:02.506Z] BACKOFF operations in backoff for 1706s more
 [2026-02-18T13:26:02.506Z] FALLBACK technology — 492061h since last run
 [2026-02-18T13:26:02.507Z] BACKOFF technology in backoff for 1662s more
+[2026-02-18T13:26:25.505Z] AGENT bi-finance exited (code=1, duration: 76s)
+[2026-02-18T13:26:25.505Z] BACKOFF bi-finance error #8, next allowed in 1800s
+[2026-02-18T13:26:25.505Z] PENDING bi-finance processing queued trigger
+[2026-02-18T13:26:25.505Z] BACKOFF bi-finance in backoff for 1800s more
