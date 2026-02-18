@@ -1,0 +1,9 @@
+{
+  "type": "github-release",
+  "repo": "nextcloud/server",
+  "latestVersion": "v33.0.0",
+  "previousVersion": "v32.0.6",
+  "releaseUrl": "https://github.com/nextcloud/server/releases/tag/v33.0.0",
+  "hasBreakingChanges": false,
+  "ts": "2026-02-18T13:16:02.457Z"
+}
