@@ -264,3 +264,7 @@
 [2026-02-18T12:37:09.681Z] AGENT marketing starting (trigger: 24h-fallback)
 [2026-02-18T12:37:09.683Z] AGENT marketing started (pid: 683984)
 [2026-02-18T12:37:09.683Z] QUEUED marketing already running — trigger queued: 24h-fallback
+[2026-02-18T12:37:34.252Z] AGENT operations exited (code=1, duration: 51s)
+[2026-02-18T12:37:34.252Z] BACKOFF operations error #6, next allowed in 960s
+[2026-02-18T12:37:34.252Z] PENDING operations processing queued trigger
+[2026-02-18T12:37:34.252Z] BACKOFF operations in backoff for 960s more
