@@ -155,3 +155,7 @@
 [2026-02-18T12:16:20.792Z] AGENT technology started (pid: 680944)
 [2026-02-18T12:16:52.851Z] AGENT ceo exited (code=1, duration: 51s)
 [2026-02-18T12:16:52.851Z] BACKOFF ceo error #3, next allowed in 120s
+[2026-02-18T12:17:22.903Z] AGENT bi-finance exited (code=1, duration: 81s)
+[2026-02-18T12:17:22.903Z] BACKOFF bi-finance error #2, next allowed in 60s
+[2026-02-18T12:17:22.903Z] PENDING bi-finance processing queued trigger
+[2026-02-18T12:17:22.904Z] BACKOFF bi-finance in backoff for 60s more
