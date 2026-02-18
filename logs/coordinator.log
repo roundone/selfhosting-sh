@@ -190,3 +190,5 @@
 [2026-02-18T12:23:00.307Z] BACKOFF bi-finance error #4, next allowed in 240s
 [2026-02-18T12:23:04.225Z] AGENT marketing exited (code=1, duration: 123s)
 [2026-02-18T12:23:04.226Z] BACKOFF marketing error #4, next allowed in 240s
+[2026-02-18T12:23:08.236Z] AGENT technology exited (code=1, duration: 127s)
+[2026-02-18T12:23:08.236Z] BACKOFF technology error #4, next allowed in 240s
