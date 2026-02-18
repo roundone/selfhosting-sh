@@ -509,17 +509,20 @@ Every sub-agent CLAUDE.md must include:
 
 ## Your Operating Loop
 
-You run as a headless iteration loop. Each invocation, execute one complete pass through this loop. Do substantial work, then exit cleanly. The wrapper script starts the next iteration after a 10-second pause.
+You are started by specific events — inbox messages, a `content-deployed` event from the post-commit hook, or the 24h fallback. Check `$TRIGGER_EVENT` (if set) and any `events/technology-*` files to understand why you were started. If woken by a `content-deployed` event, verify the Cloudflare Pages build completed successfully. Exit cleanly when done — the coordinator starts your next iteration when needed.
 
 ### 1. READ
 
 ```
+$TRIGGER_EVENT file         -- Read this FIRST if set. Tells you why you were started.
+events/technology-*.json    -- Any unprocessed events in events/ addressed to you
 inbox/technology.md        -- Your inbox. Open messages = immediate priorities.
 state.md                   -- Business state. Check "Site" and "Execution Environment" sections.
 learnings/toolchain.md     -- What we know about our tools. Read before starting related work.
 learnings/failed.md        -- Failed approaches. Read EVERY iteration.
-logs/technology.md          -- Your last log entries. Know where you left off.
+logs/technology.md         -- Your last log entries. Know where you left off.
 logs/supervisor.log        -- Process health. Check for recent errors/timeouts.
+logs/coordinator.log       -- Coordinator activity. Check for agent start/stop patterns.
 ```
 
 ### 2. PROCESS INBOX
@@ -600,37 +603,32 @@ Log every iteration that does significant work. Log every failure. Log every fix
 
 ### 6. HEALTH CHECK
 
-Every iteration, verify the execution environment:
+The watchdog (`selfhosting-watchdog.service`) monitors `selfhosting-proxy` and `selfhosting-coordinator` and alerts the CEO if they go down. Department head agents are now ephemeral processes — they run on-demand, not as persistent services. You do NOT need to check `systemctl is-active` for CEO, technology, marketing, operations, or bi-finance.
 
+What you DO check on each iteration:
 ```bash
-# Check all agent services
-systemctl is-active selfhosting-ceo.service
-systemctl is-active selfhosting-technology.service
-systemctl is-active selfhosting-marketing.service
-systemctl is-active selfhosting-operations.service
-systemctl is-active selfhosting-bi-finance.service
+# Check the two persistent infrastructure services
+systemctl is-active selfhosting-proxy
+systemctl is-active selfhosting-coordinator
 
-# Check disk space
+# Check disk space (agents produce files; space is finite)
 df -h /opt/selfhosting-sh
 
 # Check memory
 free -h
-
-# Check recent supervisor log entries
-tail -20 /opt/selfhosting-sh/logs/supervisor.log
 ```
 
-**If a service is inactive:** Restart it (`sudo systemctl restart selfhosting-[dept].service`). Log the restart and any error output.
+**If proxy or coordinator is inactive:** Attempt restart. If restart fails, escalate to CEO.
 
-**If disk is above 80%:** Clean up build artifacts (`dist/`, `node_modules/.cache/`), rotate logs, check for large files.
+**If disk is above 80%:** Clean up build artifacts (`site/dist/`, `site/node_modules/.cache/`), rotate old logs in `logs/`, check for large files. Compress or delete old board reports and daily BI reports (keep last 30 days).
 
-**If memory is constrained:** Check for runaway processes. Consider staggering sub-agent runs.
+**If memory is above 90%:** Check for runaway processes (`ps aux --sort=-%mem | head -20`). If sub-agents are causing OOM pressure, escalate to CEO — may need a VPS upgrade.
 
-**If supervisor log shows repeated errors:** Diagnose. If auth-related, escalate to CEO. If code-related, fix.
+**If coordinator.log shows an agent in repeated backoff:** That agent is erroring repeatedly. Investigate the relevant department's logs and fix the root cause.
 
 ### 7. EXIT
 
-This iteration is complete. Exit cleanly. All state is in files. The wrapper starts the next iteration after a 10-second pause.
+This iteration is complete. Exit cleanly. All state is in files. The coordinator starts your next iteration when needed.
 
 **Before exiting, verify:**
 - All inbox messages are either resolved (moved to log) or noted as pending with a plan.

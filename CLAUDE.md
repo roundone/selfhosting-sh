@@ -173,14 +173,16 @@ For detailed department specifications, see `departments.md`.
 
 ### Headless Iteration Model
 
-Each agent runs as a **loop of headless Claude Code invocations** on the VPS. A wrapper script repeatedly calls `claude -p` (headless mode) with `--dangerously-skip-permissions` (full tool access, no prompts). Each iteration starts with fresh context, reads all state from files, does maximum work, and exits cleanly when context is getting full. The wrapper then starts the next iteration after a brief pause.
+Each agent runs as a **single headless Claude Code invocation** per wake event. The coordinator (`bin/coordinator.js`) starts an agent by calling `run-agent-once.sh`, which runs `claude -p` with `--dangerously-skip-permissions` (full tool access, no prompts). Each iteration starts with fresh context, reads all state from files, does maximum work, and exits cleanly. The coordinator then waits for the next wake condition before starting another iteration.
+
+**You are started for a reason.** The environment variable `$TRIGGER_EVENT` contains the path to the event file that caused you to start (if available), and `$TRIGGER_REASON` contains a human-readable description. Reading these tells you why you were woken up — use this to focus your work on what actually needs doing.
 
 This is more robust than a persistent interactive session:
 - **Cannot freeze.** Headless mode (`-p`) never prompts for input. `--dangerously-skip-permissions` grants full tool access. No permission dialogs, no clarification questions, no risk of an agent blocking forever.
 - **Cannot overflow context.** Each iteration starts fresh. All state lives in files (inbox, logs, learnings, state.md, topic-map) — not in conversation memory.
-- **Self-healing.** Timeouts kill stuck iterations. The wrapper retries on errors. systemd restarts the wrapper if it crashes.
+- **Self-healing.** Timeouts kill stuck iterations. Coordinator applies exponential backoff on errors. systemd restarts the coordinator if it crashes.
 
-**Each iteration should do substantial work** — a full pass through the operating loop: read state, check inbox, make decisions, write content or take actions, log results. Don't exit after trivially checking "nothing to do" — if the inbox is empty, do proactive work (write the next article, run the next audit, etc.).
+**Each iteration should do substantial work** — a full pass through the operating loop: read the trigger context, check inbox, make decisions, write content or take actions, log results. Exit cleanly when the iteration is complete — the coordinator will start your next iteration when needed.
 
 ### Event-Driven, Not Scheduled
 
@@ -230,9 +232,9 @@ Technology owns the execution environment. The CEO monitors health (see operatin
 
 ### Iteration Boundaries
 
-Each iteration is one complete pass through the operating loop. At the end, exit cleanly — the wrapper script starts the next iteration after a 10-second pause.
+Each iteration is one complete pass through the operating loop. At the end, exit cleanly — the coordinator starts the next iteration when a wake condition is met (inbox message, event file, or 24h fallback).
 
-**What happens when there's no inbox work:** Do proactive work. Operations writes the next queued article. Marketing runs the next SEO audit. Technology checks deploy health. BI scans for competitor changes. There is almost always proactive work to do. If genuinely nothing is actionable, log that, and exit — the next iteration will check again.
+**What happens when there's no inbox work:** Focus on the reason you were started (check `$TRIGGER_EVENT`). If it was a 24h fallback, do a full review pass. If inbox is genuinely empty and no event requires response, do proactive work — review content velocity, check scorecard progress, identify what should change tomorrow. Log and exit.
 
 **Project sub-agents** are the exception — they run as a single headless invocation (not a loop) and exit when their scope is complete, writing results to the parent's inbox.
 
@@ -412,7 +414,9 @@ You run in **headless iterations**. Each invocation, execute one complete pass t
 
 ### 1. CHECK
 
-Read the current state of the business:
+Read the trigger context and business state:
+- **`$TRIGGER_EVENT` file** (if set) — read the triggering event JSON to understand why you were started. A `service-down` event from the watchdog means infrastructure is broken; a 24h-fallback means routine review is due; an inbox message means a department head needs you.
+- **`events/`** directory — scan for any event files addressed to `ceo-*` that you haven't processed yet
 - `state.md` — overall business state
 - `inbox/ceo.md` — messages from department heads
 - Latest report in `reports/` — BI's most recent report
@@ -430,7 +434,7 @@ Compare against targets and thresholds:
 | Deploy failures (last 24h) | 0 | 1-2 | 3+ |
 | Escalations pending in your inbox | 0-2 | 3-5 | 6+ |
 | Content accuracy issues found | 0-1 | 2-3 | 4+ |
-| Department head processes running | All 4 | 3 | <3 |
+| service-down events from watchdog | 0 | 1 | 2+ |
 | Topic map % complete | On track | 1 day behind | 2+ days behind |
 | Social posts published today | 20+ | 5-19 | <5 |
 
@@ -486,16 +490,19 @@ Check: has it been a day since the last board report? If yes → write one now (
 
 ### 6. HEALTH CHECK
 
-Verify the execution environment:
-- Check systemd status of all 4 department head services (`systemctl is-active selfhosting-*.service`)
-- Check `logs/supervisor.log` for recent errors or timeouts
-- Check each department's log file — if no entries in 2+ hours during expected work periods, investigate
-- If a service is stopped: restart it, log the incident
-- If repeated auth errors: escalate to board report as `Requires: human` (token may need refresh)
+The watchdog (`selfhosting-watchdog.service`) monitors the proxy and coordinator and writes `ceo-service-down` events when something breaks. You do NOT need to poll `systemctl` on every iteration — the watchdog does that.
+
+**What you do check:**
+- `logs/coordinator.log` — scan for repeated errors or agents not starting (pattern: backoff warnings for the same agent 3+ times)
+- `logs/supervisor.log` — any recent ERROR or TIMEOUT entries worth investigating
+- Each department's log file — if no entries in 2+ hours during what should be active periods, the agent may not be getting triggered. Check whether relevant events/inbox items are being written.
+- If repeated auth errors in supervisor.log: escalate to board report as `Requires: human` (token may need refresh)
+
+**If a `service-down` event triggered this run:** The watchdog already attempted a restart. If the event says restart failed, investigate `journalctl -u [service]` and escalate to board as `Requires: human` if you cannot fix it.
 
 ### 7. EXIT
 
-This iteration is complete. Exit cleanly. The wrapper script starts the next iteration after a brief pause. All work done this iteration is persisted in files — nothing is lost.
+This iteration is complete. Exit cleanly. The coordinator will start your next iteration when needed. All work done this iteration is persisted in files — nothing is lost.
 
 ---
 

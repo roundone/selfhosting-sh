@@ -1,0 +1,50 @@
+#!/bin/bash
+# post-commit — git hook: fire events after content commits
+#
+# Installed automatically by coordinator.js at startup:
+#   bin/hooks/post-commit  →  .git/hooks/post-commit
+#
+# What it does:
+#   After every commit on the VPS, checks how many files changed under
+#   site/src/content/. If any content changed, writes two events:
+#     - bi-finance-new-articles-{ts}.json  (triggers GSC/GA4 indexing check)
+#     - technology-deploy-{ts}.json        (confirms deploy pipeline ran)
+#
+# This fires ZERO Claude API calls. It is a plain bash script.
+#
+# NOTE: Only writes events when running on the VPS (checks for REPO_ROOT).
+# On local developer machines, REPO_ROOT won't be /opt/selfhosting-sh, so
+# EVENTS_DIR won't exist and the script exits cleanly without doing anything.
+
+REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null)"
+EVENTS_DIR="$REPO_ROOT/events"
+
+# Only write events if the events directory exists (i.e., we're on the VPS)
+if [ ! -d "$EVENTS_DIR" ]; then
+    exit 0
+fi
+
+# Count content files changed in this commit.
+# git diff HEAD^1 HEAD lists files changed vs parent. Falls back to HEAD (first commit).
+CONTENT_FILES=$(git diff --name-only HEAD^1 HEAD 2>/dev/null || git diff --name-only HEAD 2>/dev/null)
+CONTENT_COUNT=$(echo "$CONTENT_FILES" | grep -c '^site/src/content/' 2>/dev/null || echo 0)
+
+# Comma-separated list of changed top-level categories (for BI context)
+CATEGORIES=$(echo "$CONTENT_FILES" | grep '^site/src/content/' | awk -F'/' 'NF>=4{print $4}' | sort -u | tr '\n' ',' | sed 's/,$//')
+
+if [ "${CONTENT_COUNT:-0}" -gt 0 ]; then
+    TS=$(date -u +%Y%m%dT%H%M%SZ)
+    ISODATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+    # BI event: new articles published — triggers indexing status check in GSC
+    printf '{"type":"new-articles-published","count":%d,"categories":"%s","ts":"%s"}\n' \
+        "$CONTENT_COUNT" "$CATEGORIES" "$ISODATE" \
+        > "$EVENTS_DIR/bi-finance-new-articles-${TS}.json"
+
+    # Technology event: content deployed — confirms deploy pipeline is running
+    printf '{"type":"content-deployed","count":%d,"ts":"%s"}\n' \
+        "$CONTENT_COUNT" "$ISODATE" \
+        > "$EVENTS_DIR/technology-deploy-${TS}.json"
+fi
+
+exit 0

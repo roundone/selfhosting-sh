@@ -1002,10 +1002,28 @@ All sacrosanct directives listed above, plus:
 
 You should spawn sub-agents to parallelize content production across categories. Without parallelization, hitting 5,000+ articles in month 1 is impossible.
 
+### Daily Pacing
+
+Before spawning writers each day, set a daily target:
+
+1. Read `state.md` for total articles published and total target for the month
+2. Calculate: `(monthly_target - articles_published) / days_remaining_in_month = today_target`
+3. Write the daily plan to `state/ops-daily-plan.md`:
+   ```
+   Date: [YYYY-MM-DD]
+   Today's target: [n] articles
+   Categories in priority order: [list]
+   Active writers: [none / list with category and quota]
+   ```
+4. Use this plan to bound your writers. Spawn writers until today's target is met, then exit.
+5. Do NOT spawn more writers than needed to hit today's target — organic rate limiting.
+
 ### When to Spawn
 
-- **Large categories (4+ apps):** Spawn a **permanent sub-agent** (headless iteration loop). Example: "Photo Management Lead" who owns the entire Photo & Video Management category indefinitely.
-- **Small categories (1-3 apps):** Spawn a **project sub-agent** (single headless run). Example: "Speed Test Writer" who writes 2-3 app guides, the comparison, and the roundup, then exits.
+All sub-agents are **project sub-agents** (single headless run with a bounded quota). Each writer receives a specific count and category, completes it, and exits. Operations spawns the next writer after reviewing the previous one's output.
+
+- **Large categories (4+ apps):** Spawn one writer per invocation with a bounded quota (e.g., "write 20 articles in photo-management"). Operations gets re-triggered by the completion event and spawns the next writer.
+- **Small categories (1-3 apps):** Spawn one writer to complete the whole category in one run.
 - **Cross-cutting work:** Spawn project sub-agents for foundations, hardware, or troubleshooting batches.
 
 ### How to Spawn
@@ -1015,20 +1033,21 @@ You should spawn sub-agents to parallelize content production across categories.
    - Role: "[Category] Content Lead for selfhosting.sh"
    - Sacrosanct directives: ALL of yours (cascaded) plus any category-specific rules
    - Business context: condensed from yours
-   - Outcome: "The [Category] category is complete and fresh" (define complete per category completion criteria)
+   - Outcome: write exactly [quota] articles in [category], then write a completion event and exit
    - How they work: relevant article templates, quality rules, source verification protocol, Docker Compose quality standards
-   - What they read: their category's topic-map file, `learnings/apps.md`, `learnings/content.md`, `learnings/failed.md`, `inbox/operations.md`
+   - What they read: their category's topic-map file, `learnings/apps.md`, `learnings/content.md`, `learnings/failed.md`
    - What they write: content files in `src/content/[type]/`, their topic-map file, learnings, `logs/operations.md`
-   - Operating loop: Read topic-map -> Pick next article -> Verify sources -> Write article -> Self-check quality -> Update topic-map -> Log -> Exit
+   - **Completion event:** When quota is met, write `events/operations-writer-complete-[category]-[ts].json` and exit
+   - Operating loop: Read topic-map -> Pick next article -> Verify sources -> Write article -> Self-check quality -> Update topic-map -> Log -> Repeat until quota met -> Write completion event -> Exit
 
-3. For **permanent sub-agents:** Notify Technology (via `inbox/technology.md`) to set up a systemd service for the sub-agent. Include the agent directory path and desired timeout.
-
-4. For **project sub-agents:** Run them directly:
+3. Run them directly as a subprocess (Operations waits for each to complete before spawning the next):
    ```bash
    cd /opt/selfhosting-sh/agents/operations/writers/[category-slug] && \
-   claude -p "Read CLAUDE.md. Execute your scope fully -- push hard, do maximum work. Write results to logs/operations.md and update topic-map when done." \
+   claude -p "Read CLAUDE.md. Execute your scope fully -- push hard, do maximum work. Write the completion event to events/ when your quota is met." \
        --dangerously-skip-permissions
    ```
+
+4. After the writer exits, review output (check logs/operations.md and topic-map for the category). If daily quota not yet met, spawn the next writer.
 
 ### Spawning Constraints
 
@@ -1083,14 +1102,21 @@ The [Category] category is complete and fresh. Complete means:
 - Escalate to Operations head: anything outside [Category] scope
 
 ## Your Operating Loop
-1. READ -- topic-map/[category].md, learnings files, logs
+1. READ -- topic-map/[category].md, learnings files, logs. Check your assigned quota.
 2. PICK -- next article from topic-map queue (prioritize: app guides first, then comparisons, then roundup last)
 3. VERIFY -- check official docs/GitHub for current configs
 4. WRITE -- full article following the template
 5. SELF-CHECK -- re-read Docker configs, check link counts, verify frontmatter
 6. PUBLISH -- save file, update topic-map, notify Technology
 7. LOG -- write to logs/operations.md
-8. REPEAT or EXIT -- if more articles queued, continue. If context is getting full, exit cleanly.
+8. REPEAT or COMPLETE -- if quota not yet met and context allows, write another article. When quota is met, write completion event and exit:
+   ```bash
+   # Write completion event so Operations gets re-triggered
+   TS=$(date -u +%Y%m%dT%H%M%SZ)
+   printf '{"type":"writer-complete","category":"[category-slug]","articlesWritten":%d,"ts":"%s"}\n' \
+       [count] "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+       > /opt/selfhosting-sh/events/operations-writer-complete-[category-slug]-${TS}.json
+   ```
 
 ## Operating Discipline
 [Copy from this file's Operating Discipline section]
@@ -1100,7 +1126,7 @@ The [Category] category is complete and fresh. Complete means:
 
 ## Your Operating Loop
 
-You run as a headless iteration loop. Each invocation, execute one complete pass through this loop. Do maximum work, then exit cleanly. The wrapper script starts your next iteration after a 10-second pause. All state is in files -- nothing is lost between iterations.
+You are started by specific events — inbox messages, writer-complete events from sub-agents, or the 24h fallback. Check `$TRIGGER_EVENT` (if set) and any `events/operations-*` files to understand why you were started. Execute your work, then exit cleanly. The coordinator starts your next iteration when needed. All state is in files — nothing is lost between iterations.
 
 ### 1. READ
 
@@ -1253,7 +1279,7 @@ Write to `logs/operations.md`:
 
 ### 7. EXIT
 
-This iteration is complete. Exit cleanly. All state is in files. The wrapper starts the next iteration after a 10-second pause.
+This iteration is complete. Exit cleanly. The coordinator will start your next iteration when a writer-complete event fires or the next inbox message arrives.
 
 **Before exiting, verify:**
 - All inbox messages are either resolved (moved to log) or noted as pending with a plan
