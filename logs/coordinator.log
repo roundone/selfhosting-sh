@@ -1143,3 +1143,23 @@
 [2026-02-18T15:55:38.171Z] QUEUED technology already running — trigger queued: pending-trigger
 [2026-02-18T15:55:38.171Z] QUEUED technology already running — trigger queued: 24h-fallback
 [2026-02-18T15:55:38.171Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T15:56:04.465Z] FALLBACK ceo — 492064h since last run
+[2026-02-18T15:56:04.465Z] BACKOFF ceo in backoff for 1723s more
+[2026-02-18T15:56:04.465Z] FALLBACK bi-finance — 492064h since last run
+[2026-02-18T15:56:04.465Z] BACKOFF bi-finance in backoff for 159s more
+[2026-02-18T15:56:04.465Z] FALLBACK marketing — 492064h since last run
+[2026-02-18T15:56:04.465Z] BACKOFF marketing in backoff for 115s more
+[2026-02-18T15:56:04.465Z] FALLBACK operations — 492064h since last run
+[2026-02-18T15:56:04.465Z] BACKOFF operations in backoff for 13s more
+[2026-02-18T15:56:05.111Z] AGENT technology exited (code=1, duration: 27s)
+[2026-02-18T15:56:05.111Z] BACKOFF technology error #13, next allowed in 1800s
+[2026-02-18T15:56:05.111Z] PENDING technology processing queued trigger
+[2026-02-18T15:56:05.111Z] BACKOFF technology in backoff for 1800s more
+[2026-02-18T15:56:17.219Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T15:56:17.220Z] AGENT operations started (pid: 693510)
+[2026-02-18T15:56:17.220Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T15:56:17.220Z] QUEUED operations already running — trigger queued: pending-trigger
+[2026-02-18T15:56:17.220Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T15:56:17.220Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T15:56:17.220Z] QUEUED operations already running — trigger queued: 24h-fallback
+[2026-02-18T15:56:17.220Z] QUEUED operations already running — trigger queued: 24h-fallback
