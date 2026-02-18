@@ -505,3 +505,15 @@
 [2026-02-18T13:25:09.370Z] QUEUED bi-finance already running — trigger queued: bi-finance-github-release-2026-02-18T1316Z.json
 [2026-02-18T13:25:09.370Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
 [2026-02-18T13:25:09.370Z] QUEUED bi-finance already running — trigger queued: pending-trigger
+[2026-02-18T13:26:01.349Z] AGENT marketing exited (code=1, duration: 59s)
+[2026-02-18T13:26:01.350Z] BACKOFF marketing error #8, next allowed in 1800s
+[2026-02-18T13:26:01.350Z] PENDING marketing processing queued trigger
+[2026-02-18T13:26:01.350Z] BACKOFF marketing in backoff for 1800s more
+[2026-02-18T13:26:02.506Z] FALLBACK ceo — 492061h since last run
+[2026-02-18T13:26:02.506Z] BACKOFF ceo in backoff for 1581s more
+[2026-02-18T13:26:02.506Z] FALLBACK marketing — 492061h since last run
+[2026-02-18T13:26:02.506Z] BACKOFF marketing in backoff for 1799s more
+[2026-02-18T13:26:02.506Z] FALLBACK operations — 492061h since last run
+[2026-02-18T13:26:02.506Z] BACKOFF operations in backoff for 1706s more
+[2026-02-18T13:26:02.506Z] FALLBACK technology — 492061h since last run
+[2026-02-18T13:26:02.507Z] BACKOFF technology in backoff for 1662s more
