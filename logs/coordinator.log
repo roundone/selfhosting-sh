@@ -236,3 +236,21 @@
 [2026-02-18T12:31:01.728Z] BACKOFF technology in backoff for 321s more
 [2026-02-18T12:35:15.643Z] AGENT ceo starting (trigger: 24h-fallback)
 [2026-02-18T12:35:15.645Z] AGENT ceo started (pid: 683608)
+[2026-02-18T12:35:38.038Z] AGENT ceo exited (code=1, duration: 22s)
+[2026-02-18T12:35:38.038Z] BACKOFF ceo error #6, next allowed in 960s
+[2026-02-18T12:36:01.751Z] FALLBACK ceo — 492061h since last run
+[2026-02-18T12:36:01.751Z] BACKOFF ceo in backoff for 936s more
+[2026-02-18T12:36:01.751Z] FALLBACK bi-finance — 492061h since last run
+[2026-02-18T12:36:01.751Z] BACKOFF bi-finance in backoff for 62s more
+[2026-02-18T12:36:01.751Z] FALLBACK marketing — 492061h since last run
+[2026-02-18T12:36:01.751Z] BACKOFF marketing in backoff for 68s more
+[2026-02-18T12:36:01.751Z] FALLBACK operations — 492061h since last run
+[2026-02-18T12:36:01.751Z] BACKOFF operations in backoff for 42s more
+[2026-02-18T12:36:01.751Z] FALLBACK technology — 492061h since last run
+[2026-02-18T12:36:01.751Z] BACKOFF technology in backoff for 21s more
+[2026-02-18T12:36:22.787Z] AGENT technology starting (trigger: 24h-fallback)
+[2026-02-18T12:36:22.788Z] AGENT technology started (pid: 683724)
+[2026-02-18T12:36:22.789Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T12:36:43.701Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T12:36:43.702Z] AGENT operations started (pid: 683800)
+[2026-02-18T12:36:43.702Z] QUEUED operations already running — trigger queued: 24h-fallback
