@@ -1,13 +1,13 @@
 [Unit]
 Description=selfhosting.sh - Service Health Watchdog
 After=network.target selfhosting-coordinator.service
+StartLimitIntervalSec=0
 
 [Service]
 Type=simple
 ExecStart=/bin/bash /opt/selfhosting-sh/bin/watchdog.sh
 Restart=always
 RestartSec=10
-StartLimitIntervalSec=0
 # Run as root so it can call systemctl restart without sudo
 User=root
 WorkingDirectory=/opt/selfhosting-sh

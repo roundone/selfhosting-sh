@@ -2,6 +2,8 @@
 Description=selfhosting.sh - Event-Driven Agent Coordinator
 After=network.target selfhosting-proxy.service
 Requires=selfhosting-proxy.service
+# Allow unlimited restarts — coordinator must always come back
+StartLimitIntervalSec=0
 
 [Service]
 Type=simple
@@ -9,8 +11,6 @@ ExecStart=/usr/bin/node /opt/selfhosting-sh/bin/coordinator.js
 Restart=always
 # Short restart delay — coordinator is stateless on startup and recovers quickly
 RestartSec=5
-# Allow unlimited restarts (default systemd gives up after 5 in 10s)
-StartLimitIntervalSec=0
 User=selfhosting
 WorkingDirectory=/opt/selfhosting-sh
 Environment=HOME=/home/selfhosting
