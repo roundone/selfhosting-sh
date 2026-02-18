@@ -37,3 +37,7 @@
 [2026-02-18T12:13:06.995Z] BACKOFF ceo error #1, next allowed in 30s
 [2026-02-18T12:13:06.995Z] PENDING ceo processing queued trigger
 [2026-02-18T12:13:06.995Z] BACKOFF ceo in backoff for 30s more
+[2026-02-18T12:13:12.634Z] AGENT marketing exited (code=1, duration: 126s)
+[2026-02-18T12:13:12.635Z] BACKOFF marketing error #1, next allowed in 30s
+[2026-02-18T12:13:12.635Z] PENDING marketing processing queued trigger
+[2026-02-18T12:13:12.635Z] BACKOFF marketing in backoff for 30s more
