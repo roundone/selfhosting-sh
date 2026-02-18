@@ -917,3 +917,13 @@
 [2026-02-18T14:58:16.291Z] BACKOFF bi-finance error #11, next allowed in 1800s
 [2026-02-18T14:58:16.291Z] PENDING bi-finance processing queued trigger
 [2026-02-18T14:58:16.291Z] BACKOFF bi-finance in backoff for 1800s more
+[2026-02-18T15:01:03.815Z] FALLBACK ceo — 492063h since last run
+[2026-02-18T15:01:03.815Z] BACKOFF ceo in backoff for 1368s more
+[2026-02-18T15:01:03.815Z] FALLBACK bi-finance — 492063h since last run
+[2026-02-18T15:01:03.815Z] BACKOFF bi-finance in backoff for 1632s more
+[2026-02-18T15:01:03.815Z] FALLBACK marketing — 492063h since last run
+[2026-02-18T15:01:03.815Z] BACKOFF marketing in backoff for 1588s more
+[2026-02-18T15:01:03.816Z] FALLBACK operations — 492063h since last run
+[2026-02-18T15:01:03.816Z] BACKOFF operations in backoff for 1486s more
+[2026-02-18T15:01:03.816Z] FALLBACK technology — 492063h since last run
+[2026-02-18T15:01:03.816Z] BACKOFF technology in backoff for 1445s more
