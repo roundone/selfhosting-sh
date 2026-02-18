@@ -212,3 +212,7 @@
 [2026-02-18T12:27:04.330Z] AGENT marketing started (pid: 682740)
 [2026-02-18T12:27:08.341Z] AGENT technology starting (trigger: 24h-fallback)
 [2026-02-18T12:27:08.342Z] AGENT technology started (pid: 682777)
+[2026-02-18T12:27:15.537Z] AGENT ceo exited (code=1, duration: 23s)
+[2026-02-18T12:27:15.537Z] BACKOFF ceo error #5, next allowed in 480s
+[2026-02-18T12:27:16.373Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T12:27:16.375Z] AGENT operations started (pid: 682888)
