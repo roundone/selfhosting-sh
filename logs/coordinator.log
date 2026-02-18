@@ -268,3 +268,7 @@
 [2026-02-18T12:37:34.252Z] BACKOFF operations error #6, next allowed in 960s
 [2026-02-18T12:37:34.252Z] PENDING operations processing queued trigger
 [2026-02-18T12:37:34.252Z] BACKOFF operations in backoff for 960s more
+[2026-02-18T12:37:54.252Z] AGENT bi-finance exited (code=1, duration: 51s)
+[2026-02-18T12:37:54.253Z] BACKOFF bi-finance error #6, next allowed in 960s
+[2026-02-18T12:37:54.253Z] PENDING bi-finance processing queued trigger
+[2026-02-18T12:37:54.253Z] BACKOFF bi-finance in backoff for 960s more
