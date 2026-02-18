@@ -623,3 +623,11 @@
 [2026-02-18T13:56:02.944Z] BACKOFF operations in backoff for 1733s more
 [2026-02-18T13:56:02.944Z] FALLBACK technology — 492062h since last run
 [2026-02-18T13:56:02.944Z] BACKOFF technology in backoff for 1689s more
+[2026-02-18T13:56:25.628Z] AGENT bi-finance starting (trigger: 24h-fallback)
+[2026-02-18T13:56:25.630Z] AGENT bi-finance started (pid: 687751)
+[2026-02-18T13:56:25.630Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T13:56:25.630Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T13:56:25.630Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T13:56:25.630Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
+[2026-02-18T13:56:25.630Z] QUEUED bi-finance already running — trigger queued: pending-trigger
+[2026-02-18T13:56:25.630Z] QUEUED bi-finance already running — trigger queued: 24h-fallback
