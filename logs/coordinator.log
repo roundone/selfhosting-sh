@@ -2285,3 +2285,7 @@
 [2026-02-18T21:27:27.400Z] LIMIT bi-finance hit Claude Max session limit — pausing ALL agents until 2026-02-19T02:27:27.400Z (fallback +5h)
 [2026-02-18T21:27:27.400Z] PENDING bi-finance processing queued trigger
 [2026-02-18T21:27:27.400Z] PAUSED bi-finance — session limit active, 300min until 2026-02-19T02:27:27.400Z
+[2026-02-18T21:27:35.418Z] AGENT marketing exited (code=1, duration: 135s)
+[2026-02-18T21:27:35.419Z] LIMIT marketing hit Claude Max session limit — pausing ALL agents until 2026-02-19T02:27:35.418Z (fallback +5h)
+[2026-02-18T21:27:35.419Z] PENDING marketing processing queued trigger
+[2026-02-18T21:27:35.419Z] PAUSED marketing — session limit active, 300min until 2026-02-19T02:27:35.418Z
