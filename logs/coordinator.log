@@ -61,3 +61,5 @@
 [2026-02-18T12:14:10.692Z] BACKOFF ceo error #2, next allowed in 60s
 [2026-02-18T12:14:54.691Z] AGENT operations exited (code=1, duration: 64s)
 [2026-02-18T12:14:54.691Z] BACKOFF operations error #2, next allowed in 60s
+[2026-02-18T12:15:18.778Z] AGENT marketing exited (code=1, duration: 96s)
+[2026-02-18T12:15:18.778Z] BACKOFF marketing error #2, next allowed in 60s
