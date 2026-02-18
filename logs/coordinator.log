@@ -222,3 +222,5 @@
 [2026-02-18T12:28:43.580Z] BACKOFF operations error #5, next allowed in 480s
 [2026-02-18T12:29:03.556Z] AGENT bi-finance exited (code=1, duration: 123s)
 [2026-02-18T12:29:03.556Z] BACKOFF bi-finance error #5, next allowed in 480s
+[2026-02-18T12:29:09.574Z] AGENT marketing exited (code=1, duration: 125s)
+[2026-02-18T12:29:09.574Z] BACKOFF marketing error #5, next allowed in 480s
