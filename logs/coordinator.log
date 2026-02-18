@@ -224,3 +224,13 @@
 [2026-02-18T12:29:03.556Z] BACKOFF bi-finance error #5, next allowed in 480s
 [2026-02-18T12:29:09.574Z] AGENT marketing exited (code=1, duration: 125s)
 [2026-02-18T12:29:09.574Z] BACKOFF marketing error #5, next allowed in 480s
+[2026-02-18T12:31:01.727Z] FALLBACK ceo — 492061h since last run
+[2026-02-18T12:31:01.727Z] BACKOFF ceo in backoff for 254s more
+[2026-02-18T12:31:01.727Z] FALLBACK bi-finance — 492061h since last run
+[2026-02-18T12:31:01.727Z] BACKOFF bi-finance in backoff for 362s more
+[2026-02-18T12:31:01.727Z] FALLBACK marketing — 492061h since last run
+[2026-02-18T12:31:01.727Z] BACKOFF marketing in backoff for 368s more
+[2026-02-18T12:31:01.728Z] FALLBACK operations — 492061h since last run
+[2026-02-18T12:31:01.728Z] BACKOFF operations in backoff for 342s more
+[2026-02-18T12:31:01.728Z] FALLBACK technology — 492061h since last run
+[2026-02-18T12:31:01.728Z] BACKOFF technology in backoff for 321s more
