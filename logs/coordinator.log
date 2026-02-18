@@ -153,3 +153,5 @@
 [2026-02-18T12:16:20.451Z] QUEUED bi-finance already running — trigger queued: bi-finance-feed-updated-2026-02-18T1216Z.json
 [2026-02-18T12:16:20.791Z] AGENT technology starting (trigger: 24h-fallback)
 [2026-02-18T12:16:20.792Z] AGENT technology started (pid: 680944)
+[2026-02-18T12:16:52.851Z] AGENT ceo exited (code=1, duration: 51s)
+[2026-02-18T12:16:52.851Z] BACKOFF ceo error #3, next allowed in 120s
