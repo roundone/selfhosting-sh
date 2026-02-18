@@ -27,7 +27,9 @@ fi
 # Count content files changed in this commit.
 # git diff HEAD^1 HEAD lists files changed vs parent. Falls back to HEAD (first commit).
 CONTENT_FILES=$(git diff --name-only HEAD^1 HEAD 2>/dev/null || git diff --name-only HEAD 2>/dev/null)
-CONTENT_COUNT=$(echo "$CONTENT_FILES" | grep -c '^site/src/content/' 2>/dev/null || echo 0)
+# Use grep+wc instead of grep -c: grep -c exits 1 on no match, causing || echo 0
+# to append a second 0, making CONTENT_COUNT="0\n0" which fails integer comparison.
+CONTENT_COUNT=$(echo "$CONTENT_FILES" | grep '^site/src/content/' | wc -l | tr -d '[:space:]')
 
 # Comma-separated list of changed top-level categories (for BI context)
 CATEGORIES=$(echo "$CONTENT_FILES" | grep '^site/src/content/' | awk -F'/' 'NF>=4{print $4}' | sort -u | tr '\n' ',' | sed 's/,$//')
