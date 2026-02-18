@@ -22,10 +22,10 @@
     },
     "technology": {
       "lastRun": null,
-      "consecutiveErrors": 1,
-      "nextAllowedRun": "2026-02-18T12:13:46.630Z"
+      "consecutiveErrors": 2,
+      "nextAllowedRun": "2026-02-18T12:16:20.690Z"
     }
   },
-  "lastReleasesCheck": null,
-  "lastArchiveCleanup": null
+  "lastReleasesCheck": "2026-02-18T12:16:01.434Z",
+  "lastArchiveCleanup": "2026-02-18T12:16:01.442Z"
 }

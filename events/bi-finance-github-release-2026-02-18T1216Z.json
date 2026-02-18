@@ -1,0 +1,9 @@
+{
+  "type": "github-release",
+  "repo": "fatedier/frp",
+  "latestVersion": "v0.67.0",
+  "previousVersion": null,
+  "releaseUrl": "https://github.com/fatedier/frp/releases/tag/v0.67.0",
+  "hasBreakingChanges": false,
+  "ts": "2026-02-18T12:16:01.477Z"
+}

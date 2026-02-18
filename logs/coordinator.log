@@ -63,3 +63,93 @@
 [2026-02-18T12:14:54.691Z] BACKOFF operations error #2, next allowed in 60s
 [2026-02-18T12:15:18.778Z] AGENT marketing exited (code=1, duration: 96s)
 [2026-02-18T12:15:18.778Z] BACKOFF marketing error #2, next allowed in 60s
+[2026-02-18T12:15:20.690Z] AGENT technology exited (code=1, duration: 94s)
+[2026-02-18T12:15:20.690Z] BACKOFF technology error #2, next allowed in 60s
+[2026-02-18T12:16:01.427Z] FALLBACK ceo — 492060h since last run
+[2026-02-18T12:16:01.427Z] AGENT ceo starting (trigger: 24h-fallback)
+[2026-02-18T12:16:01.429Z] AGENT ceo started (pid: 680682)
+[2026-02-18T12:16:01.429Z] FALLBACK bi-finance — 492060h since last run
+[2026-02-18T12:16:01.429Z] AGENT bi-finance starting (trigger: 24h-fallback)
+[2026-02-18T12:16:01.430Z] AGENT bi-finance started (pid: 680683)
+[2026-02-18T12:16:01.430Z] FALLBACK marketing — 492060h since last run
+[2026-02-18T12:16:01.430Z] BACKOFF marketing in backoff for 17s more
+[2026-02-18T12:16:01.430Z] FALLBACK operations — 492060h since last run
+[2026-02-18T12:16:01.430Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T12:16:01.433Z] AGENT operations started (pid: 680685)
+[2026-02-18T12:16:01.433Z] FALLBACK technology — 492060h since last run
+[2026-02-18T12:16:01.433Z] BACKOFF technology in backoff for 19s more
+[2026-02-18T12:16:01.434Z] RELEASES running check-releases.js
+[2026-02-18T12:16:01.477Z] RELEASES 2026-02-18T12:16:01.474Z [check-releases] starting
+[2026-02-18T12:16:01.477Z] RELEASES 2026-02-18T12:16:01.477Z [check-releases] cache is empty — bootstrapping from content directory
+[2026-02-18T12:16:01.501Z] RELEASES 2026-02-18T12:16:01.501Z [check-releases]   discovered 29 GitHub repos from content
+[2026-02-18T12:16:01.502Z] RELEASES 2026-02-18T12:16:01.501Z [check-releases] checking 29 GitHub repos
+[2026-02-18T12:16:01.592Z] RELEASES 2026-02-18T12:16:01.592Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → NEW RELEASE none → 0.9.64
+[2026-02-18T12:16:01.592Z] RELEASES 2026-02-18T12:16:01.592Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:02.154Z] RELEASES 2026-02-18T12:16:02.154Z [check-releases]   janeczku/calibre-web → NEW RELEASE none → 0.6.26
+[2026-02-18T12:16:02.155Z] RELEASES 2026-02-18T12:16:02.154Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:02.776Z] RELEASES 2026-02-18T12:16:02.775Z [check-releases]   Dusk-Labs/dim → NEW RELEASE none → v0.3.0-rc6
+2026-02-18T12:16:02.775Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:03.370Z] RELEASES 2026-02-18T12:16:03.367Z [check-releases]   crazy-max/diun → NEW RELEASE none → v4.31.0
+2026-02-18T12:16:03.369Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:03.934Z] RELEASES 2026-02-18T12:16:03.934Z [check-releases]   louislam/dockge → NEW RELEASE none → 1.5.0
+2026-02-18T12:16:03.934Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:04.508Z] RELEASES 2026-02-18T12:16:04.508Z [check-releases]   docmost/docmost → NEW RELEASE none → v0.25.3
+[2026-02-18T12:16:04.508Z] RELEASES 2026-02-18T12:16:04.508Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:05.093Z] RELEASES 2026-02-18T12:16:05.093Z [check-releases]   juanfont/headscale → NEW RELEASE none → v0.28.0
+[2026-02-18T12:16:05.094Z] RELEASES 2026-02-18T12:16:05.094Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:05.659Z] RELEASES 2026-02-18T12:16:05.659Z [check-releases]   Jackett/Jackett → NEW RELEASE none → v0.24.1147
+[2026-02-18T12:16:05.660Z] RELEASES 2026-02-18T12:16:05.660Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:06.229Z] RELEASES 2026-02-18T12:16:06.228Z [check-releases]   jesseduffield/lazydocker → NEW RELEASE none → v0.24.4
+[2026-02-18T12:16:06.229Z] RELEASES 2026-02-18T12:16:06.229Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:06.797Z] RELEASES 2026-02-18T12:16:06.797Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-18T12:16:07.362Z] RELEASES 2026-02-18T12:16:07.362Z [check-releases]   sissbruecker/linkding → NEW RELEASE none → v1.45.0
+[2026-02-18T12:16:07.363Z] RELEASES 2026-02-18T12:16:07.362Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:07.980Z] RELEASES 2026-02-18T12:16:07.980Z [check-releases]   matomo-org/matomo → NEW RELEASE none → 5.7.1
+[2026-02-18T12:16:07.981Z] RELEASES 2026-02-18T12:16:07.980Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:08.548Z] RELEASES 2026-02-18T12:16:08.548Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-18T12:16:09.141Z] RELEASES 2026-02-18T12:16:09.141Z [check-releases]   netbirdio/netbird → NEW RELEASE none → v0.65.2
+[2026-02-18T12:16:09.142Z] RELEASES 2026-02-18T12:16:09.142Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:09.709Z] RELEASES 2026-02-18T12:16:09.708Z [check-releases]   vrtmrz/obsidian-livesync → NEW RELEASE none → 0.25.43
+[2026-02-18T12:16:09.709Z] RELEASES 2026-02-18T12:16:09.709Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:10.278Z] RELEASES 2026-02-18T12:16:10.278Z [check-releases]   open-webui/open-webui → NEW RELEASE none → v0.8.3
+[2026-02-18T12:16:10.279Z] RELEASES 2026-02-18T12:16:10.279Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:10.867Z] RELEASES 2026-02-18T12:16:10.867Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-18T12:16:11.447Z] RELEASES 2026-02-18T12:16:11.447Z [check-releases]   restic/restic → NEW RELEASE none → v0.18.1
+[2026-02-18T12:16:11.448Z] RELEASES 2026-02-18T12:16:11.447Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:12.033Z] RELEASES 2026-02-18T12:16:12.032Z [check-releases]   drakkan/sftpgo → NEW RELEASE none → v2.7.0
+[2026-02-18T12:16:12.033Z] RELEASES 2026-02-18T12:16:12.033Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:12.591Z] RELEASES 2026-02-18T12:16:12.591Z [check-releases]   Stirling-Tools/Stirling-PDF → NEW RELEASE none → v2.5.1
+[2026-02-18T12:16:12.591Z] RELEASES 2026-02-18T12:16:12.591Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:13.151Z] RELEASES 2026-02-18T12:16:13.150Z [check-releases]   TriliumNext/Notes → NEW RELEASE none → v0.95.0
+[2026-02-18T12:16:13.151Z] RELEASES 2026-02-18T12:16:13.151Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:13.704Z] RELEASES 2026-02-18T12:16:13.704Z [check-releases]   louislam/uptime-kuma → NEW RELEASE none → 2.1.1
+[2026-02-18T12:16:13.704Z] RELEASES 2026-02-18T12:16:13.704Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:14.276Z] RELEASES 2026-02-18T12:16:14.275Z [check-releases]   dani-garcia/vaultwarden → NEW RELEASE none → 1.35.3
+[2026-02-18T12:16:14.276Z] RELEASES 2026-02-18T12:16:14.276Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:14.854Z] RELEASES 2026-02-18T12:16:14.854Z [check-releases]   containrrr/watchtower → NEW RELEASE none → v1.7.1
+[2026-02-18T12:16:14.855Z] RELEASES 2026-02-18T12:16:14.854Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:15.425Z] RELEASES 2026-02-18T12:16:15.424Z [check-releases]   wg-easy/wg-easy → NEW RELEASE none → v15.2.2
+[2026-02-18T12:16:15.425Z] RELEASES 2026-02-18T12:16:15.425Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:15.982Z] RELEASES 2026-02-18T12:16:15.982Z [check-releases]   sinamics/ztnet → NEW RELEASE none → v0.7.14
+[2026-02-18T12:16:15.983Z] RELEASES 2026-02-18T12:16:15.982Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:16.568Z] RELEASES 2026-02-18T12:16:16.567Z [check-releases]   gurucomputing/headscale-ui → NEW RELEASE none → 2025.08.23
+[2026-02-18T12:16:16.568Z] RELEASES 2026-02-18T12:16:16.568Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:17.121Z] RELEASES 2026-02-18T12:16:17.121Z [check-releases]   nextcloud/server → NEW RELEASE none → v32.0.6
+[2026-02-18T12:16:17.122Z] RELEASES 2026-02-18T12:16:17.122Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:17.706Z] RELEASES 2026-02-18T12:16:17.706Z [check-releases]   fatedier/frp → NEW RELEASE none → v0.67.0
+[2026-02-18T12:16:17.706Z] RELEASES 2026-02-18T12:16:17.706Z [check-releases] event written: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:18.207Z] RELEASES 2026-02-18T12:16:18.207Z [check-releases] checking 3 feeds
+[2026-02-18T12:16:18.450Z] RELEASES 2026-02-18T12:16:18.450Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → CHANGED
+[2026-02-18T12:16:18.450Z] RELEASES 2026-02-18T12:16:18.450Z [check-releases] event written: bi-finance-feed-updated-2026-02-18T1216Z.json
+[2026-02-18T12:16:18.704Z] RELEASES 2026-02-18T12:16:18.704Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-18T12:16:18.878Z] AGENT marketing starting (trigger: 24h-fallback)
+[2026-02-18T12:16:18.879Z] AGENT marketing started (pid: 680875)
+[2026-02-18T12:16:19.012Z] RELEASES 2026-02-18T12:16:19.010Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-18T12:16:19.211Z] RELEASES 2026-02-18T12:16:19.211Z [check-releases] done — 26 release event(s), 1 feed event(s) written
+[2026-02-18T12:16:19.221Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-18T12:16:19.707Z] EVENT bi-finance-github-release-2026-02-18T1216Z.json → bi-finance
+[2026-02-18T12:16:19.707Z] QUEUED bi-finance already running — trigger queued: bi-finance-github-release-2026-02-18T1216Z.json
+[2026-02-18T12:16:20.451Z] EVENT bi-finance-feed-updated-2026-02-18T1216Z.json → bi-finance
+[2026-02-18T12:16:20.451Z] QUEUED bi-finance already running — trigger queued: bi-finance-feed-updated-2026-02-18T1216Z.json
+[2026-02-18T12:16:20.791Z] AGENT technology starting (trigger: 24h-fallback)
+[2026-02-18T12:16:20.792Z] AGENT technology started (pid: 680944)
