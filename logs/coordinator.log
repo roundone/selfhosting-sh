@@ -272,3 +272,42 @@
 [2026-02-18T12:37:54.253Z] BACKOFF bi-finance error #6, next allowed in 960s
 [2026-02-18T12:37:54.253Z] PENDING bi-finance processing queued trigger
 [2026-02-18T12:37:54.253Z] BACKOFF bi-finance in backoff for 960s more
+[2026-02-18T12:38:02.180Z] AGENT marketing exited (code=1, duration: 52s)
+[2026-02-18T12:38:02.180Z] BACKOFF marketing error #6, next allowed in 960s
+[2026-02-18T12:38:02.180Z] PENDING marketing processing queued trigger
+[2026-02-18T12:38:02.180Z] BACKOFF marketing in backoff for 960s more
+[2026-02-18T12:41:01.817Z] FALLBACK ceo — 492061h since last run
+[2026-02-18T12:41:01.817Z] BACKOFF ceo in backoff for 636s more
+[2026-02-18T12:41:01.817Z] FALLBACK bi-finance — 492061h since last run
+[2026-02-18T12:41:01.817Z] BACKOFF bi-finance in backoff for 772s more
+[2026-02-18T12:41:01.817Z] FALLBACK marketing — 492061h since last run
+[2026-02-18T12:41:01.817Z] BACKOFF marketing in backoff for 780s more
+[2026-02-18T12:41:01.817Z] FALLBACK operations — 492061h since last run
+[2026-02-18T12:41:01.817Z] BACKOFF operations in backoff for 752s more
+[2026-02-18T12:41:01.817Z] FALLBACK technology — 492061h since last run
+[2026-02-18T12:41:01.817Z] BACKOFF technology in backoff for 708s more
+[2026-02-18T12:46:01.899Z] FALLBACK ceo — 492061h since last run
+[2026-02-18T12:46:01.899Z] BACKOFF ceo in backoff for 336s more
+[2026-02-18T12:46:01.900Z] FALLBACK bi-finance — 492061h since last run
+[2026-02-18T12:46:01.900Z] BACKOFF bi-finance in backoff for 472s more
+[2026-02-18T12:46:01.900Z] FALLBACK marketing — 492061h since last run
+[2026-02-18T12:46:01.900Z] BACKOFF marketing in backoff for 480s more
+[2026-02-18T12:46:01.900Z] FALLBACK operations — 492061h since last run
+[2026-02-18T12:46:01.900Z] BACKOFF operations in backoff for 452s more
+[2026-02-18T12:46:01.900Z] FALLBACK technology — 492061h since last run
+[2026-02-18T12:46:01.900Z] BACKOFF technology in backoff for 408s more
+[2026-02-18T12:51:02.000Z] FALLBACK ceo — 492061h since last run
+[2026-02-18T12:51:02.000Z] BACKOFF ceo in backoff for 36s more
+[2026-02-18T12:51:02.000Z] FALLBACK bi-finance — 492061h since last run
+[2026-02-18T12:51:02.000Z] BACKOFF bi-finance in backoff for 172s more
+[2026-02-18T12:51:02.000Z] FALLBACK marketing — 492061h since last run
+[2026-02-18T12:51:02.000Z] BACKOFF marketing in backoff for 180s more
+[2026-02-18T12:51:02.000Z] FALLBACK operations — 492061h since last run
+[2026-02-18T12:51:02.000Z] BACKOFF operations in backoff for 152s more
+[2026-02-18T12:51:02.000Z] FALLBACK technology — 492061h since last run
+[2026-02-18T12:51:02.001Z] BACKOFF technology in backoff for 108s more
+[2026-02-18T12:51:38.175Z] AGENT ceo starting (trigger: 24h-fallback)
+[2026-02-18T12:51:38.177Z] AGENT ceo started (pid: 684260)
+[2026-02-18T12:51:38.177Z] QUEUED ceo already running — trigger queued: 24h-fallback
+[2026-02-18T12:51:38.177Z] QUEUED ceo already running — trigger queued: 24h-fallback
+[2026-02-18T12:51:38.177Z] QUEUED ceo already running — trigger queued: 24h-fallback
