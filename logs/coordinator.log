@@ -1537,3 +1537,81 @@
 [2026-02-18T18:05:50.534Z] PAUSED operations — session limit active, 199min until 2026-02-18T21:25:14.944Z
 [2026-02-18T18:05:50.534Z] FALLBACK technology — 492066h since last run
 [2026-02-18T18:05:50.534Z] PAUSED technology — session limit active, 199min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:10:50.634Z] FALLBACK bi-finance — 492066h since last run
+[2026-02-18T18:10:50.635Z] PAUSED bi-finance — session limit active, 194min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:10:50.635Z] FALLBACK marketing — 492066h since last run
+[2026-02-18T18:10:50.635Z] PAUSED marketing — session limit active, 194min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:10:50.635Z] FALLBACK operations — 492066h since last run
+[2026-02-18T18:10:50.635Z] PAUSED operations — session limit active, 194min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:10:50.635Z] FALLBACK technology — 492066h since last run
+[2026-02-18T18:10:50.635Z] PAUSED technology — session limit active, 194min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:15:50.731Z] FALLBACK bi-finance — 492066h since last run
+[2026-02-18T18:15:50.731Z] PAUSED bi-finance — session limit active, 189min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:15:50.731Z] FALLBACK marketing — 492066h since last run
+[2026-02-18T18:15:50.731Z] PAUSED marketing — session limit active, 189min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:15:50.731Z] FALLBACK operations — 492066h since last run
+[2026-02-18T18:15:50.731Z] PAUSED operations — session limit active, 189min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:15:50.731Z] FALLBACK technology — 492066h since last run
+[2026-02-18T18:15:50.732Z] PAUSED technology — session limit active, 189min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:20:50.818Z] FALLBACK bi-finance — 492066h since last run
+[2026-02-18T18:20:50.818Z] PAUSED bi-finance — session limit active, 184min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:20:50.818Z] FALLBACK marketing — 492066h since last run
+[2026-02-18T18:20:50.818Z] PAUSED marketing — session limit active, 184min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:20:50.818Z] FALLBACK operations — 492066h since last run
+[2026-02-18T18:20:50.818Z] PAUSED operations — session limit active, 184min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:20:50.818Z] FALLBACK technology — 492066h since last run
+[2026-02-18T18:20:50.818Z] PAUSED technology — session limit active, 184min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:20:50.818Z] RELEASES running check-releases.js
+[2026-02-18T18:20:50.851Z] RELEASES 2026-02-18T18:20:50.848Z [check-releases] starting
+[2026-02-18T18:20:50.851Z] RELEASES 2026-02-18T18:20:50.851Z [check-releases] checking 29 GitHub repos
+[2026-02-18T18:20:50.942Z] RELEASES 2026-02-18T18:20:50.942Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-18T18:20:51.504Z] RELEASES 2026-02-18T18:20:51.503Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-18T18:20:52.148Z] RELEASES 2026-02-18T18:20:52.147Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-18T18:20:52.751Z] RELEASES 2026-02-18T18:20:52.751Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-18T18:20:53.328Z] RELEASES 2026-02-18T18:20:53.328Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-18T18:20:53.893Z] RELEASES 2026-02-18T18:20:53.893Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-18T18:20:54.487Z] RELEASES 2026-02-18T18:20:54.486Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-18T18:20:55.052Z] RELEASES 2026-02-18T18:20:55.052Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1147)
+[2026-02-18T18:20:55.617Z] RELEASES 2026-02-18T18:20:55.617Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-18T18:20:56.177Z] RELEASES 2026-02-18T18:20:56.177Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-18T18:20:56.756Z] RELEASES 2026-02-18T18:20:56.756Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-18T18:20:57.388Z] RELEASES 2026-02-18T18:20:57.387Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-18T18:20:57.965Z] RELEASES 2026-02-18T18:20:57.964Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-18T18:20:58.579Z] RELEASES 2026-02-18T18:20:58.579Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-18T18:20:59.144Z] RELEASES 2026-02-18T18:20:59.144Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-18T18:20:59.707Z] RELEASES 2026-02-18T18:20:59.706Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-18T18:21:00.290Z] RELEASES 2026-02-18T18:21:00.290Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-18T18:21:00.867Z] RELEASES 2026-02-18T18:21:00.867Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-18T18:21:01.476Z] RELEASES 2026-02-18T18:21:01.476Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-18T18:21:02.038Z] RELEASES 2026-02-18T18:21:02.038Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-18T18:21:02.618Z] RELEASES 2026-02-18T18:21:02.618Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-18T18:21:03.187Z] RELEASES 2026-02-18T18:21:03.186Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.1)
+[2026-02-18T18:21:03.747Z] RELEASES 2026-02-18T18:21:03.747Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-18T18:21:04.333Z] RELEASES 2026-02-18T18:21:04.333Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-18T18:21:04.888Z] RELEASES 2026-02-18T18:21:04.887Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-18T18:21:05.449Z] RELEASES 2026-02-18T18:21:05.449Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-18T18:21:06.017Z] RELEASES 2026-02-18T18:21:06.017Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-18T18:21:06.587Z] RELEASES 2026-02-18T18:21:06.587Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-18T18:21:07.170Z] RELEASES 2026-02-18T18:21:07.170Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-18T18:21:07.671Z] RELEASES 2026-02-18T18:21:07.671Z [check-releases] checking 3 feeds
+[2026-02-18T18:21:07.734Z] RELEASES 2026-02-18T18:21:07.733Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-18T18:21:08.008Z] RELEASES 2026-02-18T18:21:08.007Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-18T18:21:08.331Z] RELEASES 2026-02-18T18:21:08.331Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-18T18:21:08.531Z] RELEASES 2026-02-18T18:21:08.531Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-18T18:21:08.537Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-18T18:25:50.919Z] FALLBACK bi-finance — 492066h since last run
+[2026-02-18T18:25:50.919Z] PAUSED bi-finance — session limit active, 179min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:25:50.919Z] FALLBACK marketing — 492066h since last run
+[2026-02-18T18:25:50.919Z] PAUSED marketing — session limit active, 179min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:25:50.919Z] FALLBACK operations — 492066h since last run
+[2026-02-18T18:25:50.919Z] PAUSED operations — session limit active, 179min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:25:50.919Z] FALLBACK technology — 492066h since last run
+[2026-02-18T18:25:50.919Z] PAUSED technology — session limit active, 179min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:30:50.988Z] FALLBACK bi-finance — 492067h since last run
+[2026-02-18T18:30:50.988Z] PAUSED bi-finance — session limit active, 174min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:30:50.988Z] FALLBACK marketing — 492067h since last run
+[2026-02-18T18:30:50.988Z] PAUSED marketing — session limit active, 174min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:30:50.988Z] FALLBACK operations — 492067h since last run
+[2026-02-18T18:30:50.988Z] PAUSED operations — session limit active, 174min until 2026-02-18T21:25:14.944Z
+[2026-02-18T18:30:50.988Z] FALLBACK technology — 492067h since last run
+[2026-02-18T18:30:50.988Z] PAUSED technology — session limit active, 174min until 2026-02-18T21:25:14.944Z
