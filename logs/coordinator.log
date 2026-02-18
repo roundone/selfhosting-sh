@@ -579,3 +579,15 @@
 [2026-02-18T13:52:24.180Z] QUEUED ceo already running — trigger queued: 24h-fallback
 [2026-02-18T13:52:24.180Z] QUEUED ceo already running — trigger queued: 24h-fallback
 [2026-02-18T13:52:24.180Z] QUEUED ceo already running — trigger queued: 24h-fallback
+[2026-02-18T13:52:46.089Z] AGENT ceo exited (code=1, duration: 22s)
+[2026-02-18T13:52:46.089Z] BACKOFF ceo error #9, next allowed in 1800s
+[2026-02-18T13:52:46.089Z] PENDING ceo processing queued trigger
+[2026-02-18T13:52:46.089Z] BACKOFF ceo in backoff for 1800s more
+[2026-02-18T13:53:44.268Z] AGENT technology starting (trigger: 24h-fallback)
+[2026-02-18T13:53:44.269Z] AGENT technology started (pid: 687356)
+[2026-02-18T13:53:44.269Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T13:53:44.269Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T13:53:44.270Z] QUEUED technology already running — trigger queued: pending-trigger
+[2026-02-18T13:53:44.270Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T13:53:44.270Z] QUEUED technology already running — trigger queued: 24h-fallback
+[2026-02-18T13:53:44.270Z] QUEUED technology already running — trigger queued: 24h-fallback
