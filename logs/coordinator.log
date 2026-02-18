@@ -167,3 +167,20 @@
 [2026-02-18T12:17:58.919Z] BACKOFF operations error #3, next allowed in 120s
 [2026-02-18T12:18:23.027Z] AGENT bi-finance starting (trigger: pending-trigger)
 [2026-02-18T12:18:23.029Z] AGENT bi-finance started (pid: 681264)
+[2026-02-18T12:18:45.273Z] AGENT bi-finance exited (code=1, duration: 22s)
+[2026-02-18T12:18:45.274Z] BACKOFF bi-finance error #3, next allowed in 120s
+[2026-02-18T12:21:01.528Z] FALLBACK ceo — 492060h since last run
+[2026-02-18T12:21:01.528Z] AGENT ceo starting (trigger: 24h-fallback)
+[2026-02-18T12:21:01.530Z] AGENT ceo started (pid: 681541)
+[2026-02-18T12:21:01.531Z] FALLBACK bi-finance — 492060h since last run
+[2026-02-18T12:21:01.531Z] AGENT bi-finance starting (trigger: 24h-fallback)
+[2026-02-18T12:21:01.532Z] AGENT bi-finance started (pid: 681542)
+[2026-02-18T12:21:01.532Z] FALLBACK marketing — 492060h since last run
+[2026-02-18T12:21:01.532Z] AGENT marketing starting (trigger: 24h-fallback)
+[2026-02-18T12:21:01.535Z] AGENT marketing started (pid: 681544)
+[2026-02-18T12:21:01.535Z] FALLBACK operations — 492060h since last run
+[2026-02-18T12:21:01.536Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T12:21:01.542Z] AGENT operations started (pid: 681546)
+[2026-02-18T12:21:01.542Z] FALLBACK technology — 492060h since last run
+[2026-02-18T12:21:01.542Z] AGENT technology starting (trigger: 24h-fallback)
+[2026-02-18T12:21:01.544Z] AGENT technology started (pid: 681549)
