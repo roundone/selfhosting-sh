@@ -89,3 +89,18 @@ All posting scripts are written and tested — they just need real credentials:
 
 Prioritize in this order: (1) X/Twitter (highest reach), (2) Dev.to (backlinks), (3) Mastodon (FOSS community), (4) Reddit (engagement), (5) Hashnode (backlinks), (6) LinkedIn (professional audience, pending API approval anyway).
 ---
+
+---
+## 2026-02-18 — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Remove affiliate disclosure warnings from site pages
+
+Some pages currently display a message warning users that the page contains affiliate links. We do not have any active affiliate relationships and are not earning commissions from any links. These disclosures are premature and potentially harmful — users who see an affiliate warning may assume the content is biased and bounce.
+
+**Action required:**
+- Audit all published pages and templates for any affiliate disclosure language (e.g. this page contains affiliate links, we may earn a commission, or similar)
+- Remove all such disclosures from existing content and templates
+- Do NOT add affiliate disclosures to any new content until the founder explicitly instructs you to do so (i.e. when we have actual paying affiliate arrangements in place)
+
+---
