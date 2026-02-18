@@ -1,0 +1,33 @@
+[2026-02-18T12:11:01.393Z] ============================================================
+[2026-02-18T12:11:01.394Z] STARTUP coordinator v1.0
+[2026-02-18T12:11:01.395Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-18T12:11:01.395Z] HOOK installed bin/hooks/post-commit → .git/hooks/post-commit
+[2026-02-18T12:11:01.396Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-18T12:11:01.396Z] WATCH events/ (routing by filename convention)
+[2026-02-18T12:11:01.396Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-18T12:11:01.396Z] STARTUP complete — watching for events
+[2026-02-18T12:11:02.398Z] RECOVERY scanning for missed events and stale state...
+[2026-02-18T12:11:02.399Z] RECOVERY bi-finance inbox modified since last run — starting
+[2026-02-18T12:11:02.399Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-18T12:11:02.399Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-18T12:11:02.399Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-18T12:11:02.399Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-18T12:11:02.399Z] RECOVERY complete — 5 missed event(s) found
+[2026-02-18T12:11:05.402Z] AGENT bi-finance starting (trigger: inbox-missed)
+[2026-02-18T12:11:05.404Z] AGENT bi-finance started (pid: 678951)
+[2026-02-18T12:11:05.899Z] AGENT ceo starting (trigger: inbox-missed)
+[2026-02-18T12:11:05.900Z] AGENT ceo started (pid: 678972)
+[2026-02-18T12:11:06.398Z] FALLBACK marketing — 492060h since last run
+[2026-02-18T12:11:06.398Z] AGENT marketing starting (trigger: 24h-fallback)
+[2026-02-18T12:11:06.400Z] AGENT marketing started (pid: 678993)
+[2026-02-18T12:11:06.400Z] FALLBACK operations — 492060h since last run
+[2026-02-18T12:11:06.400Z] AGENT operations starting (trigger: 24h-fallback)
+[2026-02-18T12:11:06.404Z] AGENT operations started (pid: 678995)
+[2026-02-18T12:11:06.404Z] FALLBACK technology — 492060h since last run
+[2026-02-18T12:11:06.404Z] AGENT technology starting (trigger: 24h-fallback)
+[2026-02-18T12:11:06.405Z] AGENT technology started (pid: 678997)
+[2026-02-18T12:11:06.405Z] QUEUED marketing already running — trigger queued: inbox-missed
+[2026-02-18T12:11:06.903Z] QUEUED operations already running — trigger queued: inbox-missed
+[2026-02-18T12:11:07.400Z] QUEUED technology already running — trigger queued: inbox-missed
+[2026-02-18T12:12:08.930Z] EVENT ceo-test-20260218T121500Z.json → ceo
+[2026-02-18T12:12:08.931Z] QUEUED ceo already running — trigger queued: ceo-test-20260218T121500Z.json
