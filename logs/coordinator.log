@@ -1947,3 +1947,325 @@
 [2026-02-18T21:10:53.078Z] PAUSED operations — session limit active, 14min until 2026-02-18T21:25:14.944Z
 [2026-02-18T21:10:53.078Z] FALLBACK technology — 492069h since last run
 [2026-02-18T21:10:53.078Z] PAUSED technology — session limit active, 14min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:15:53.107Z] FALLBACK bi-finance — 492069h since last run
+[2026-02-18T21:15:53.107Z] PAUSED bi-finance — session limit active, 9min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:15:53.107Z] FALLBACK marketing — 492069h since last run
+[2026-02-18T21:15:53.107Z] PAUSED marketing — session limit active, 9min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:15:53.107Z] FALLBACK operations — 492069h since last run
+[2026-02-18T21:15:53.107Z] PAUSED operations — session limit active, 9min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:15:53.107Z] FALLBACK technology — 492069h since last run
+[2026-02-18T21:15:53.107Z] PAUSED technology — session limit active, 9min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:20:53.123Z] FALLBACK bi-finance — 492069h since last run
+[2026-02-18T21:20:53.123Z] PAUSED bi-finance — session limit active, 4min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:20:53.123Z] FALLBACK marketing — 492069h since last run
+[2026-02-18T21:20:53.123Z] PAUSED marketing — session limit active, 4min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:20:53.123Z] FALLBACK operations — 492069h since last run
+[2026-02-18T21:20:53.123Z] PAUSED operations — session limit active, 4min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:20:53.123Z] FALLBACK technology — 492069h since last run
+[2026-02-18T21:20:53.123Z] PAUSED technology — session limit active, 4min until 2026-02-18T21:25:14.944Z
+[2026-02-18T21:20:53.123Z] RELEASES running check-releases.js
+[2026-02-18T21:20:53.159Z] RELEASES 2026-02-18T21:20:53.157Z [check-releases] starting
+[2026-02-18T21:20:53.160Z] RELEASES 2026-02-18T21:20:53.160Z [check-releases] checking 29 GitHub repos
+[2026-02-18T21:20:53.246Z] RELEASES 2026-02-18T21:20:53.246Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-18T21:20:53.819Z] RELEASES 2026-02-18T21:20:53.818Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-18T21:20:54.440Z] RELEASES 2026-02-18T21:20:54.440Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-18T21:20:55.025Z] RELEASES 2026-02-18T21:20:55.024Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-18T21:20:55.577Z] RELEASES 2026-02-18T21:20:55.577Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-18T21:20:56.135Z] RELEASES 2026-02-18T21:20:56.135Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-18T21:20:56.723Z] RELEASES 2026-02-18T21:20:56.723Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-18T21:20:57.284Z] RELEASES 2026-02-18T21:20:57.284Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1147)
+[2026-02-18T21:20:57.848Z] RELEASES 2026-02-18T21:20:57.848Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-18T21:20:58.438Z] RELEASES 2026-02-18T21:20:58.438Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-18T21:20:58.994Z] RELEASES 2026-02-18T21:20:58.994Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-18T21:20:59.625Z] RELEASES 2026-02-18T21:20:59.625Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-18T21:21:00.183Z] RELEASES 2026-02-18T21:21:00.182Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-18T21:21:00.794Z] RELEASES 2026-02-18T21:21:00.794Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-18T21:21:01.381Z] RELEASES 2026-02-18T21:21:01.380Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-18T21:21:01.945Z] RELEASES 2026-02-18T21:21:01.944Z [check-releases]   open-webui/open-webui → 200 but same version (v0.8.3)
+[2026-02-18T21:21:02.518Z] RELEASES 2026-02-18T21:21:02.518Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-18T21:21:03.076Z] RELEASES 2026-02-18T21:21:03.076Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-18T21:21:03.655Z] RELEASES 2026-02-18T21:21:03.655Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-18T21:21:04.218Z] RELEASES 2026-02-18T21:21:04.218Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-18T21:21:04.778Z] RELEASES 2026-02-18T21:21:04.778Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-18T21:21:05.346Z] RELEASES 2026-02-18T21:21:05.346Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.1)
+[2026-02-18T21:21:05.897Z] RELEASES 2026-02-18T21:21:05.897Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-18T21:21:06.467Z] RELEASES 2026-02-18T21:21:06.467Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-18T21:21:07.021Z] RELEASES 2026-02-18T21:21:07.021Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-18T21:21:07.589Z] RELEASES 2026-02-18T21:21:07.589Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-18T21:21:08.159Z] RELEASES 2026-02-18T21:21:08.159Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-18T21:21:08.729Z] RELEASES 2026-02-18T21:21:08.729Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-18T21:21:09.296Z] RELEASES 2026-02-18T21:21:09.295Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-18T21:21:09.797Z] RELEASES 2026-02-18T21:21:09.796Z [check-releases] checking 3 feeds
+[2026-02-18T21:21:09.858Z] RELEASES 2026-02-18T21:21:09.857Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-18T21:21:10.119Z] RELEASES 2026-02-18T21:21:10.119Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-18T21:21:10.439Z] RELEASES 2026-02-18T21:21:10.438Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-18T21:21:10.639Z] RELEASES 2026-02-18T21:21:10.639Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-18T21:21:10.644Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-18T21:25:20.037Z] RESUMED global pause expired — resuming agents
+[2026-02-18T21:25:20.037Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-18T21:25:20.039Z] AGENT ceo started (pid: 704383)
+[2026-02-18T21:25:20.039Z] AGENT operations starting (trigger: 8h-fallback)
+[2026-02-18T21:25:20.041Z] AGENT operations started (pid: 704384)
+[2026-02-18T21:25:20.041Z] AGENT technology starting (trigger: 8h-fallback)
+[2026-02-18T21:25:20.044Z] AGENT technology started (pid: 704386)
+[2026-02-18T21:25:20.044Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.044Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.044Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-18T21:25:20.044Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.045Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.045Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.045Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.045Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.045Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.045Z] AGENT marketing starting (trigger: 8h-fallback)
+[2026-02-18T21:25:20.049Z] AGENT marketing started (pid: 704389)
+[2026-02-18T21:25:20.049Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.049Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.049Z] AGENT bi-finance starting (trigger: 8h-fallback)
+[2026-02-18T21:25:20.051Z] AGENT bi-finance started (pid: 704391)
+[2026-02-18T21:25:20.051Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.051Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.052Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.054Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.054Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.054Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.054Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.055Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.056Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.057Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.057Z] QUEUED technology already running — trigger queued: inbox-missed
+[2026-02-18T21:25:20.057Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.057Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.057Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.057Z] QUEUED operations already running — trigger queued: inbox-missed
+[2026-02-18T21:25:20.058Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: inbox-missed
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: inbox-missed
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.058Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.059Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.061Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.061Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.062Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.063Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.064Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.066Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.066Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.066Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.066Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.067Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.068Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.069Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED marketing already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED operations already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED technology already running — trigger queued: 8h-fallback
+[2026-02-18T21:25:20.070Z] QUEUED bi-finance already running — trigger queued: 8h-fallback
