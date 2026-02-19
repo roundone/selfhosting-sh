@@ -3000,3 +3000,7 @@
 [2026-02-19T12:34:10.049Z] LIMIT technology hit Claude Max session limit — pausing ALL agents until 2026-02-19T17:34:10.049Z (fallback +5h)
 [2026-02-19T12:34:10.049Z] PENDING technology processing queued trigger
 [2026-02-19T12:34:10.049Z] PAUSED technology — session limit active, 300min until 2026-02-19T17:34:10.049Z
+[2026-02-19T12:34:20.078Z] AGENT marketing exited (code=1, duration: 119s)
+[2026-02-19T12:34:20.078Z] LIMIT marketing hit Claude Max session limit — pausing ALL agents until 2026-02-19T17:34:20.078Z (fallback +5h)
+[2026-02-19T12:34:20.078Z] PENDING marketing processing queued trigger
+[2026-02-19T12:34:20.078Z] PAUSED marketing — session limit active, 300min until 2026-02-19T17:34:20.078Z
