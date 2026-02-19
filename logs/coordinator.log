@@ -3008,3 +3008,7 @@
 [2026-02-19T12:34:24.307Z] LIMIT ceo hit Claude Max session limit — pausing ALL agents until 2026-02-19T17:34:24.307Z (fallback +5h)
 [2026-02-19T12:34:24.307Z] PENDING ceo processing queued trigger
 [2026-02-19T12:34:24.307Z] PAUSED ceo — session limit active, 300min until 2026-02-19T17:34:24.307Z
+[2026-02-19T12:34:28.211Z] AGENT operations exited (code=1, duration: 127s)
+[2026-02-19T12:34:28.211Z] LIMIT operations hit Claude Max session limit — pausing ALL agents until 2026-02-19T17:34:28.211Z (fallback +5h)
+[2026-02-19T12:34:28.211Z] PENDING operations processing queued trigger
+[2026-02-19T12:34:28.212Z] PAUSED operations — session limit active, 300min until 2026-02-19T17:34:28.211Z
