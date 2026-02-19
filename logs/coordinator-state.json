@@ -1,32 +1,12 @@
 {
   "agents": {
-    "bi-finance": {
-      "lastRun": "2026-02-19T12:34:35.995Z",
-      "consecutiveErrors": 13,
-      "nextAllowedRun": "2026-02-18T16:29:10.188Z"
-    },
-    "ceo": {
-      "lastRun": "2026-02-19T12:34:24.306Z",
-      "consecutiveErrors": 13,
-      "nextAllowedRun": "2026-02-18T16:24:47.180Z"
-    },
-    "marketing": {
-      "lastRun": "2026-02-19T12:34:20.078Z",
-      "consecutiveErrors": 13,
-      "nextAllowedRun": "2026-02-18T16:28:26.829Z"
-    },
-    "operations": {
-      "lastRun": "2026-02-19T12:34:28.211Z",
-      "consecutiveErrors": 13,
-      "nextAllowedRun": "2026-02-18T16:26:44.150Z"
-    },
-    "technology": {
-      "lastRun": "2026-02-19T12:34:10.049Z",
-      "consecutiveErrors": 13,
-      "nextAllowedRun": "2026-02-18T16:26:05.111Z"
-    }
+    "bi-finance": { "lastRun": null, "consecutiveErrors": 0, "nextAllowedRun": null },
+    "ceo": { "lastRun": null, "consecutiveErrors": 0, "nextAllowedRun": null },
+    "marketing": { "lastRun": null, "consecutiveErrors": 0, "nextAllowedRun": null },
+    "operations": { "lastRun": null, "consecutiveErrors": 0, "nextAllowedRun": null },
+    "technology": { "lastRun": null, "consecutiveErrors": 0, "nextAllowedRun": null }
   },
-  "lastReleasesCheck": "2026-02-19T15:21:08.413Z",
-  "lastArchiveCleanup": "2026-02-19T15:21:08.415Z",
-  "pausedUntil": "2026-02-19T17:34:35.995Z"
+  "lastReleasesCheck": null,
+  "lastArchiveCleanup": null,
+  "pausedUntil": null
 }
