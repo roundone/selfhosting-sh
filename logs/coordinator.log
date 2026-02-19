@@ -3273,3 +3273,7 @@
 [2026-02-19T16:22:52.037Z] BACKOFF bi-finance error #1, next allowed in 30s
 [2026-02-19T16:22:52.037Z] PENDING bi-finance processing queued trigger
 [2026-02-19T16:22:52.038Z] BACKOFF bi-finance in backoff for 30s more
+[2026-02-19T16:22:52.993Z] AGENT operations exited (code=137, duration: 527s)
+[2026-02-19T16:22:52.993Z] BACKOFF operations error #1, next allowed in 30s
+[2026-02-19T16:22:52.994Z] PENDING operations processing queued trigger
+[2026-02-19T16:22:52.994Z] BACKOFF operations in backoff for 30s more
