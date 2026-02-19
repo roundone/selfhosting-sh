@@ -818,7 +818,7 @@ Content freshness monitoring — rotate through covered apps:
 
 ### 8. EXIT
 
-This iteration is complete. Exit cleanly. All state is persisted in files. The wrapper starts the next iteration after a 10-second pause.
+This iteration is complete. Exit cleanly. All state is persisted in files. The coordinator starts your next iteration when needed (event, inbox message, or 24h fallback).
 
 **Before exiting, verify:**
 - All inbox messages are processed (resolved and moved to log, or explicitly deferred with reason logged)
