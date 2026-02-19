@@ -1,0 +1,9 @@
+{
+  "type": "github-release",
+  "repo": "netbirdio/netbird",
+  "latestVersion": "v0.65.3",
+  "previousVersion": "v0.65.2",
+  "releaseUrl": "https://github.com/netbirdio/netbird/releases/tag/v0.65.3",
+  "hasBreakingChanges": true,
+  "ts": "2026-02-19T20:23:14.917Z"
+}
