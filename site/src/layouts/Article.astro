@@ -1,7 +1,6 @@
 ---
 import Base from './Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import EmailSignup from '../components/EmailSignup.astro';
 
@@ -16,7 +15,6 @@ interface Props {
   author?: string;
   image?: string;
   imageAlt?: string;
-  affiliateDisclosure?: boolean;
   draft?: boolean;
   headings?: { depth: number; slug: string; text: string }[];
   collectionName: string;
@@ -35,7 +33,6 @@ const {
   author = 'selfhosting.sh',
   image,
   imageAlt,
-  affiliateDisclosure = false,
   headings = [],
   collectionName,
   slug,
@@ -192,8 +189,6 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   jsonLd={jsonLdArray}
 >
   <Breadcrumbs crumbs={crumbs} />
-
-  {affiliateDisclosure && <AffiliateDisclosure />}
 
   <div class="article-layout">
     <article class="article" data-pagefind-body>

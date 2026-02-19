@@ -18,7 +18,7 @@ author: "selfhosting.sh"
 draft: false
 image: ""
 imageAlt: ""
-affiliateDisclosure: true
+affiliateDisclosure: false
 ---
 
 ## Why Replace Dashlane?

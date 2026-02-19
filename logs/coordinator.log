@@ -3281,3 +3281,192 @@
 [2026-02-19T16:22:53.940Z] BACKOFF marketing error #1, next allowed in 30s
 [2026-02-19T16:22:53.940Z] PENDING marketing processing queued trigger
 [2026-02-19T16:22:53.940Z] BACKOFF marketing in backoff for 30s more
+[2026-02-19T16:22:54.920Z] AGENT ceo exited (code=137, duration: 530s)
+[2026-02-19T16:22:54.921Z] BACKOFF ceo error #1, next allowed in 30s
+[2026-02-19T16:22:54.921Z] PENDING ceo processing queued trigger
+[2026-02-19T16:22:54.921Z] BACKOFF ceo in backoff for 30s more
+[2026-02-19T16:23:18.979Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-19T16:23:21.147Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-19T16:23:21.148Z] AGENT technology started (pid: 751221)
+[2026-02-19T16:24:06.224Z] ============================================================
+[2026-02-19T16:24:06.226Z] STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)
+[2026-02-19T16:24:06.227Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-19T16:24:06.228Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-19T16:24:06.228Z] WATCH events/ (routing by filename convention)
+[2026-02-19T16:24:06.228Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-19T16:24:06.229Z] STARTUP complete — watching for events
+[2026-02-19T16:24:07.230Z] RECOVERY scanning for missed events and stale state...
+[2026-02-19T16:24:07.231Z] RECOVERY bi-finance inbox modified since last run — starting
+[2026-02-19T16:24:07.231Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-19T16:24:07.231Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-19T16:24:07.232Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-19T16:24:07.232Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-19T16:24:07.232Z] RECOVERY complete — 5 missed event(s) found
+[2026-02-19T16:24:10.235Z] AGENT bi-finance starting (trigger: inbox-missed)
+[2026-02-19T16:24:10.239Z] AGENT bi-finance started (pid: 751269)
+[2026-02-19T16:24:10.732Z] AGENT ceo starting (trigger: inbox-missed)
+[2026-02-19T16:24:10.734Z] AGENT ceo started (pid: 751292)
+[2026-02-19T16:24:11.229Z] FALLBACK marketing — 492088h since last run
+[2026-02-19T16:24:11.229Z] AGENT marketing starting (trigger: 8h-fallback)
+[2026-02-19T16:24:11.233Z] AGENT marketing started (pid: 751316)
+[2026-02-19T16:24:11.233Z] FALLBACK operations — 492088h since last run
+[2026-02-19T16:24:11.233Z] AGENT operations starting (trigger: 8h-fallback)
+[2026-02-19T16:24:11.239Z] AGENT operations started (pid: 751318)
+[2026-02-19T16:24:11.240Z] FALLBACK technology — 492088h since last run
+[2026-02-19T16:24:11.240Z] AGENT technology starting (trigger: 8h-fallback)
+[2026-02-19T16:24:11.243Z] AGENT technology started (pid: 751320)
+[2026-02-19T16:24:11.244Z] QUEUED marketing already running — trigger queued: inbox-missed
+[2026-02-19T16:24:11.736Z] QUEUED operations already running — trigger queued: inbox-missed
+[2026-02-19T16:24:12.233Z] QUEUED technology already running — trigger queued: inbox-missed
+[2026-02-19T16:34:52.422Z] INBOX marketing.md modified → marketing
+[2026-02-19T16:34:52.422Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-19T16:41:35.617Z] AGENT marketing exited (signal=SIGTERM, duration: 1044s)
+[2026-02-19T16:41:35.618Z] BACKOFF marketing error #2, next allowed in 60s
+[2026-02-19T16:41:35.620Z] PENDING marketing processing queued trigger
+[2026-02-19T16:41:35.620Z] BACKOFF marketing in backoff for 60s more
+[2026-02-19T16:41:35.621Z] AGENT technology exited (signal=SIGTERM, duration: 1044s)
+[2026-02-19T16:41:35.623Z] BACKOFF technology error #2, next allowed in 60s
+[2026-02-19T16:41:35.623Z] PENDING technology processing queued trigger
+[2026-02-19T16:41:35.623Z] BACKOFF technology in backoff for 60s more
+[2026-02-19T16:41:35.624Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-19T16:41:35.624Z] SHUTDOWN killing bi-finance (pid: 751269)
+[2026-02-19T16:41:35.625Z] SHUTDOWN killing ceo (pid: 751292)
+[2026-02-19T16:41:35.625Z] SHUTDOWN killing operations (pid: 751318)
+[2026-02-19T16:41:35.626Z] AGENT bi-finance exited (signal=SIGTERM, duration: 1045s)
+[2026-02-19T16:41:35.627Z] BACKOFF bi-finance error #2, next allowed in 60s
+[2026-02-19T16:41:35.628Z] AGENT ceo exited (signal=SIGTERM, duration: 1045s)
+[2026-02-19T16:41:35.628Z] BACKOFF ceo error #2, next allowed in 60s
+[2026-02-19T16:41:35.629Z] AGENT operations exited (signal=SIGTERM, duration: 1044s)
+[2026-02-19T16:41:35.630Z] BACKOFF operations error #2, next allowed in 60s
+[2026-02-19T16:41:35.630Z] PENDING operations processing queued trigger
+[2026-02-19T16:41:35.631Z] BACKOFF operations in backoff for 60s more
+[2026-02-19T16:42:08.130Z] ============================================================
+[2026-02-19T16:42:08.131Z] STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)
+[2026-02-19T16:42:08.132Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-19T16:42:08.132Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-19T16:42:08.133Z] WATCH events/ (routing by filename convention)
+[2026-02-19T16:42:08.133Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-19T16:42:08.133Z] STARTUP complete — watching for events
+[2026-02-19T16:42:09.135Z] RECOVERY scanning for missed events and stale state...
+[2026-02-19T16:42:09.136Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-19T16:42:09.137Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-19T16:42:09.138Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-19T16:42:09.138Z] RECOVERY complete — 3 missed event(s) found
+[2026-02-19T16:42:12.140Z] PAUSED marketing — session limit active, 108min until 2026-02-19T18:30:00.000Z
+[2026-02-19T16:42:12.638Z] PAUSED operations — session limit active, 108min until 2026-02-19T18:30:00.000Z
+[2026-02-19T16:42:13.138Z] PAUSED technology — session limit active, 108min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:05:51.166Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-19T17:05:54.218Z] ============================================================
+[2026-02-19T17:05:54.221Z] STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)
+[2026-02-19T17:05:54.221Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-19T17:05:54.222Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-19T17:05:54.222Z] WATCH events/ (routing by filename convention)
+[2026-02-19T17:05:54.223Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-19T17:05:54.223Z] STARTUP complete — watching for events
+[2026-02-19T17:05:55.225Z] RECOVERY scanning for missed events and stale state...
+[2026-02-19T17:05:55.225Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-19T17:05:55.226Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-19T17:05:55.226Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-19T17:05:55.226Z] RECOVERY complete — 3 missed event(s) found
+[2026-02-19T17:05:58.229Z] PAUSED marketing — session limit active, 84min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:05:58.727Z] PAUSED operations — session limit active, 84min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:05:59.226Z] PAUSED technology — session limit active, 84min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:07:54.849Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-19T17:08:11.769Z] ============================================================
+[2026-02-19T17:08:11.771Z] STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)
+[2026-02-19T17:08:11.772Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-19T17:08:11.772Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-19T17:08:11.772Z] WATCH events/ (routing by filename convention)
+[2026-02-19T17:08:11.773Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-19T17:08:11.773Z] STARTUP complete — watching for events
+[2026-02-19T17:08:12.775Z] RECOVERY scanning for missed events and stale state...
+[2026-02-19T17:08:12.776Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-19T17:08:12.776Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-19T17:08:12.776Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-19T17:08:12.776Z] RECOVERY complete — 3 missed event(s) found
+[2026-02-19T17:08:15.780Z] PAUSED marketing — session limit active, 82min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:08:16.277Z] PAUSED operations — session limit active, 82min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:08:16.776Z] PAUSED technology — session limit active, 82min until 2026-02-19T18:30:00.000Z
+[2026-02-19T17:23:11.995Z] RELEASES running check-releases.js
+[2026-02-19T17:23:12.030Z] RELEASES 2026-02-19T17:23:12.027Z [check-releases] starting
+[2026-02-19T17:23:12.031Z] RELEASES 2026-02-19T17:23:12.030Z [check-releases] checking 29 GitHub repos
+[2026-02-19T17:23:12.131Z] RELEASES 2026-02-19T17:23:12.130Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-19T17:23:12.685Z] RELEASES 2026-02-19T17:23:12.684Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-19T17:23:13.318Z] RELEASES 2026-02-19T17:23:13.317Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-19T17:23:13.900Z] RELEASES 2026-02-19T17:23:13.900Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-19T17:23:14.460Z] RELEASES 2026-02-19T17:23:14.459Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-19T17:23:15.025Z] RELEASES 2026-02-19T17:23:15.024Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-19T17:23:15.584Z] RELEASES 2026-02-19T17:23:15.583Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-19T17:23:16.210Z] RELEASES 2026-02-19T17:23:16.209Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-19T17:23:16.779Z] RELEASES 2026-02-19T17:23:16.779Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-19T17:23:17.347Z] RELEASES 2026-02-19T17:23:17.347Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-19T17:23:17.901Z] RELEASES 2026-02-19T17:23:17.900Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-19T17:23:18.516Z] RELEASES 2026-02-19T17:23:18.515Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-19T17:23:19.074Z] RELEASES 2026-02-19T17:23:19.074Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-19T17:23:19.659Z] RELEASES 2026-02-19T17:23:19.659Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-19T17:23:20.217Z] RELEASES 2026-02-19T17:23:20.217Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-19T17:23:20.781Z] RELEASES 2026-02-19T17:23:20.781Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-19T17:23:21.347Z] RELEASES 2026-02-19T17:23:21.347Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-19T17:23:21.913Z] RELEASES 2026-02-19T17:23:21.912Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-19T17:23:22.553Z] RELEASES 2026-02-19T17:23:22.552Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-19T17:23:23.113Z] RELEASES 2026-02-19T17:23:23.113Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-19T17:23:23.701Z] RELEASES 2026-02-19T17:23:23.701Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-19T17:23:24.253Z] RELEASES 2026-02-19T17:23:24.253Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-19T17:23:24.818Z] RELEASES 2026-02-19T17:23:24.818Z [check-releases]   dani-garcia/vaultwarden → 200 but same version (1.35.3)
+[2026-02-19T17:23:25.382Z] RELEASES 2026-02-19T17:23:25.382Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-19T17:23:25.948Z] RELEASES 2026-02-19T17:23:25.947Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-19T17:23:26.515Z] RELEASES 2026-02-19T17:23:26.514Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-19T17:23:27.075Z] RELEASES 2026-02-19T17:23:27.075Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-19T17:23:27.631Z] RELEASES 2026-02-19T17:23:27.631Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-19T17:23:28.203Z] RELEASES 2026-02-19T17:23:28.203Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-19T17:23:28.704Z] RELEASES 2026-02-19T17:23:28.703Z [check-releases] checking 3 feeds
+[2026-02-19T17:23:28.795Z] RELEASES 2026-02-19T17:23:28.795Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-19T17:23:29.322Z] RELEASES 2026-02-19T17:23:29.322Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-19T17:23:29.648Z] RELEASES 2026-02-19T17:23:29.648Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-19T17:23:29.849Z] RELEASES 2026-02-19T17:23:29.849Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-19T17:23:29.856Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T18:23:12.965Z] RELEASES running check-releases.js
+[2026-02-19T18:23:12.999Z] RELEASES 2026-02-19T18:23:12.996Z [check-releases] starting
+[2026-02-19T18:23:13.000Z] RELEASES 2026-02-19T18:23:12.999Z [check-releases] checking 29 GitHub repos
+[2026-02-19T18:23:13.101Z] RELEASES 2026-02-19T18:23:13.101Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-19T18:23:13.653Z] RELEASES 2026-02-19T18:23:13.653Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-19T18:23:14.254Z] RELEASES 2026-02-19T18:23:14.254Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-19T18:23:14.823Z] RELEASES 2026-02-19T18:23:14.823Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-19T18:23:15.388Z] RELEASES 2026-02-19T18:23:15.388Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-19T18:23:15.937Z] RELEASES 2026-02-19T18:23:15.937Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-19T18:23:16.511Z] RELEASES 2026-02-19T18:23:16.511Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-19T18:23:17.079Z] RELEASES 2026-02-19T18:23:17.079Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-19T18:23:17.642Z] RELEASES 2026-02-19T18:23:17.642Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-19T18:23:18.203Z] RELEASES 2026-02-19T18:23:18.203Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-19T18:23:18.761Z] RELEASES 2026-02-19T18:23:18.761Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-19T18:23:19.379Z] RELEASES 2026-02-19T18:23:19.378Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-19T18:23:19.945Z] RELEASES 2026-02-19T18:23:19.945Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-19T18:23:20.529Z] RELEASES 2026-02-19T18:23:20.529Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-19T18:23:21.094Z] RELEASES 2026-02-19T18:23:21.094Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-19T18:23:21.660Z] RELEASES 2026-02-19T18:23:21.660Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-19T18:23:22.228Z] RELEASES 2026-02-19T18:23:22.227Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-19T18:23:22.788Z] RELEASES 2026-02-19T18:23:22.788Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-19T18:23:23.353Z] RELEASES 2026-02-19T18:23:23.352Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-19T18:23:23.909Z] RELEASES 2026-02-19T18:23:23.909Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-19T18:23:24.475Z] RELEASES 2026-02-19T18:23:24.474Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-19T18:23:25.036Z] RELEASES 2026-02-19T18:23:25.035Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-19T18:23:25.602Z] RELEASES 2026-02-19T18:23:25.602Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-19T18:23:26.185Z] RELEASES 2026-02-19T18:23:26.185Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-19T18:23:26.741Z] RELEASES 2026-02-19T18:23:26.741Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-19T18:23:27.297Z] RELEASES 2026-02-19T18:23:27.297Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-19T18:23:27.864Z] RELEASES 2026-02-19T18:23:27.864Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-19T18:23:28.430Z] RELEASES 2026-02-19T18:23:28.430Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-19T18:23:28.991Z] RELEASES 2026-02-19T18:23:28.990Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-19T18:23:29.492Z] RELEASES 2026-02-19T18:23:29.491Z [check-releases] checking 3 feeds
+[2026-02-19T18:23:29.559Z] RELEASES 2026-02-19T18:23:29.559Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-19T18:23:29.847Z] RELEASES 2026-02-19T18:23:29.847Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-19T18:23:30.183Z] RELEASES 2026-02-19T18:23:30.183Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-19T18:23:30.384Z] RELEASES 2026-02-19T18:23:30.384Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-19T18:23:30.390Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T18:30:05.079Z] RESUMED global pause expired — resuming agents
+[2026-02-19T18:30:05.080Z] AGENT marketing starting (trigger: inbox-missed)
+[2026-02-19T18:30:05.082Z] AGENT marketing started (pid: 759313)
+[2026-02-19T18:30:05.082Z] AGENT operations starting (trigger: inbox-missed)
+[2026-02-19T18:30:05.084Z] AGENT operations started (pid: 759314)
+[2026-02-19T18:30:05.084Z] AGENT technology starting (trigger: inbox-missed)
+[2026-02-19T18:30:05.087Z] AGENT technology started (pid: 759317)

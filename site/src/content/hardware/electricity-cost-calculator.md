@@ -10,7 +10,7 @@ author: "selfhosting.sh"
 draft: false
 image: ""
 imageAlt: ""
-affiliateDisclosure: true
+affiliateDisclosure: false
 ---
 
 ## The Formula
