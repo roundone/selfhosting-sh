@@ -22,8 +22,8 @@
     },
     "technology": {
       "lastRun": null,
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-19T16:23:21.045Z"
     }
   },
   "lastReleasesCheck": "2026-02-19T16:19:01.071Z",
