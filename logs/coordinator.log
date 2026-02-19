@@ -2923,3 +2923,11 @@
 [2026-02-19T11:21:22.371Z] RELEASES 2026-02-19T11:21:22.371Z [check-releases]   https://noted.lol/rss → HTTP 301
 [2026-02-19T11:21:22.573Z] RELEASES 2026-02-19T11:21:22.572Z [check-releases] done — 0 release event(s), 0 feed event(s) written
 [2026-02-19T11:21:22.579Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T11:23:55.256Z] EVENT marketing-file-changed-2026-02-19T1105Z.json → marketing
+[2026-02-19T11:23:55.256Z] PAUSED marketing — session limit active, 68min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:23:55.256Z] EVENT marketing-file-changed-2026-02-19T1106Z.json → marketing
+[2026-02-19T11:23:55.256Z] PAUSED marketing — session limit active, 68min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:23:55.257Z] INBOX ceo.md modified → ceo
+[2026-02-19T11:23:55.257Z] PAUSED ceo — session limit active, 68min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:23:55.257Z] INBOX marketing.md modified → marketing
+[2026-02-19T11:23:55.257Z] PAUSED marketing — session limit active, 68min until 2026-02-19T12:32:15.766Z
