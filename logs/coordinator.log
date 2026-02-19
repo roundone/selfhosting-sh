@@ -2502,3 +2502,7 @@
 [2026-02-19T02:29:39.465Z] LIMIT ceo hit Claude Max session limit — pausing ALL agents until 2026-02-19T07:29:39.465Z (fallback +5h)
 [2026-02-19T02:29:39.465Z] PENDING ceo processing queued trigger
 [2026-02-19T02:29:39.466Z] PAUSED ceo — session limit active, 300min until 2026-02-19T07:29:39.465Z
+[2026-02-19T02:29:43.517Z] AGENT technology exited (code=1, duration: 123s)
+[2026-02-19T02:29:43.517Z] LIMIT technology hit Claude Max session limit — pausing ALL agents until 2026-02-19T07:29:43.517Z (fallback +5h)
+[2026-02-19T02:29:43.517Z] PENDING technology processing queued trigger
+[2026-02-19T02:29:43.518Z] PAUSED technology — session limit active, 300min until 2026-02-19T07:29:43.517Z
