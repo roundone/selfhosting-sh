@@ -3478,3 +3478,7 @@
 [2026-02-19T18:31:29.455Z] PAUSED bi-finance — session limit active, 300min until 2026-02-19T23:31:28.617Z
 [2026-02-19T18:31:29.455Z] EVENT technology-deploy-20260219T183127Z.json → technology
 [2026-02-19T18:31:29.456Z] QUEUED technology already running — trigger queued: technology-deploy-20260219T183127Z.json
+[2026-02-19T18:31:32.319Z] AGENT operations exited (code=1, duration: 87s)
+[2026-02-19T18:31:32.320Z] LIMIT operations hit Claude Max session limit — pausing ALL agents until 2026-02-19T23:31:32.320Z (fallback +5h)
+[2026-02-19T18:31:32.320Z] PENDING operations processing queued trigger
+[2026-02-19T18:31:32.320Z] PAUSED operations — session limit active, 300min until 2026-02-19T23:31:32.320Z
