@@ -3277,3 +3277,7 @@
 [2026-02-19T16:22:52.993Z] BACKOFF operations error #1, next allowed in 30s
 [2026-02-19T16:22:52.994Z] PENDING operations processing queued trigger
 [2026-02-19T16:22:52.994Z] BACKOFF operations in backoff for 30s more
+[2026-02-19T16:22:53.940Z] AGENT marketing exited (code=137, duration: 528s)
+[2026-02-19T16:22:53.940Z] BACKOFF marketing error #1, next allowed in 30s
+[2026-02-19T16:22:53.940Z] PENDING marketing processing queued trigger
+[2026-02-19T16:22:53.940Z] BACKOFF marketing in backoff for 30s more

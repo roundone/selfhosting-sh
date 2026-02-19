@@ -12,8 +12,8 @@
     },
     "marketing": {
       "lastRun": null,
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-19T16:23:23.940Z"
     },
     "operations": {
       "lastRun": null,
