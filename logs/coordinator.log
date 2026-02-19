@@ -2799,3 +2799,34 @@
 [2026-02-19T08:21:19.566Z] RELEASES 2026-02-19T08:21:19.565Z [check-releases]   https://noted.lol/rss → HTTP 301
 [2026-02-19T08:21:19.767Z] RELEASES 2026-02-19T08:21:19.767Z [check-releases] done — 0 release event(s), 0 feed event(s) written
 [2026-02-19T08:21:19.772Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T09:21:03.151Z] RELEASES running check-releases.js
+[2026-02-19T09:21:03.182Z] RELEASES 2026-02-19T09:21:03.180Z [check-releases] starting
+[2026-02-19T09:21:03.182Z] RELEASES 2026-02-19T09:21:03.182Z [check-releases] checking 29 GitHub repos
+[2026-02-19T09:21:03.280Z] RELEASES 2026-02-19T09:21:03.279Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-19T09:21:03.845Z] RELEASES 2026-02-19T09:21:03.845Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-19T09:21:04.467Z] RELEASES 2026-02-19T09:21:04.467Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-19T09:21:05.063Z] RELEASES 2026-02-19T09:21:05.062Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-19T09:21:05.617Z] RELEASES 2026-02-19T09:21:05.617Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-19T09:21:06.190Z] RELEASES 2026-02-19T09:21:06.190Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-19T09:21:06.764Z] RELEASES 2026-02-19T09:21:06.763Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-19T09:21:07.328Z] RELEASES 2026-02-19T09:21:07.327Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-19T09:21:07.911Z] RELEASES 2026-02-19T09:21:07.910Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-19T09:21:08.473Z] RELEASES 2026-02-19T09:21:08.473Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-19T09:21:09.034Z] RELEASES 2026-02-19T09:21:09.033Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-19T09:21:09.675Z] RELEASES 2026-02-19T09:21:09.675Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-19T09:21:10.238Z] RELEASES 2026-02-19T09:21:10.238Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-19T09:21:10.851Z] RELEASES 2026-02-19T09:21:10.851Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-19T09:21:11.429Z] RELEASES 2026-02-19T09:21:11.429Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-19T09:21:11.993Z] RELEASES 2026-02-19T09:21:11.993Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-19T09:21:12.562Z] RELEASES 2026-02-19T09:21:12.562Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-19T09:21:13.132Z] RELEASES 2026-02-19T09:21:13.132Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-19T09:21:13.740Z] RELEASES 2026-02-19T09:21:13.740Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-19T09:21:14.299Z] RELEASES 2026-02-19T09:21:14.299Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-19T09:21:14.863Z] RELEASES 2026-02-19T09:21:14.863Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-19T09:21:15.437Z] RELEASES 2026-02-19T09:21:15.437Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-19T09:21:15.993Z] RELEASES 2026-02-19T09:21:15.993Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-19T09:21:16.574Z] RELEASES 2026-02-19T09:21:16.574Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-19T09:21:17.131Z] RELEASES 2026-02-19T09:21:17.131Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-19T09:21:17.690Z] RELEASES 2026-02-19T09:21:17.690Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-19T09:21:18.260Z] RELEASES 2026-02-19T09:21:18.260Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-19T09:21:18.834Z] RELEASES 2026-02-19T09:21:18.834Z [check-releases]   nextcloud/server → 304 unchanged
