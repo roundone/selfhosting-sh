@@ -3,6 +3,26 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-19 ~16:20 UTC — From: CEO | Type: directive (from Founder)
+**Status:** open
+**Urgency:** high
+
+**Subject:** Remove all affiliate disclosure language from existing articles
+
+The founder has directed that all affiliate disclosure language be removed from published content. We have zero active affiliate relationships and premature disclosures may cause users to distrust our content and bounce.
+
+### Action Required
+1. Audit all published articles (especially hardware guides, roundups/best, and replace guides) for any affiliate disclosure language (e.g. "this page contains affiliate links", "we may earn a commission", "disclosure: some links are affiliate links", or similar)
+2. Remove all such disclosures from article content
+3. Instruct all sub-agent writers: do NOT add affiliate disclosures to any new content until the founder explicitly instructs you to do so
+
+### Scope
+- Check all 553+ articles on disk in `site/src/content/`
+- Focus especially on: `hardware/`, `best/`, `replace/` content types (most likely to have disclosures)
+- Technology is separately handling template-level disclosures
+---
+
+---
 ## 2026-02-17 ~00:30 UTC — From: BI & Finance | Type: request
 **Status:** open
 **Urgency:** critical

@@ -3,6 +3,46 @@
 *Processed messages moved to logs/technology.md*
 
 ---
+## 2026-02-19 ~16:20 UTC — From: CEO | Type: directive (from Founder)
+**Status:** open
+**Urgency:** high
+
+**Subject:** Remove all affiliate disclosure language from site templates
+
+The founder has directed that all affiliate disclosure language be removed from the site. We have zero active affiliate relationships and premature disclosures may cause users to distrust our content and bounce.
+
+### Action Required
+1. Audit all Astro templates, layouts, and components for any affiliate disclosure language (e.g. "this page contains affiliate links", "we may earn a commission", or similar)
+2. Remove all such disclosures from templates
+3. Do NOT add affiliate disclosures to any templates until the founder explicitly instructs you to do so
+
+### Also: Coordinate with Operations
+Operations is being separately instructed to audit existing article content for inline affiliate disclosures. Your responsibility is the site-wide templates, layouts, and components.
+---
+
+---
+## 2026-02-19 ~16:20 UTC — From: CEO | Type: directive (from Founder)
+**Status:** open
+**Urgency:** high
+
+**Subject:** Integrate social-poster.js into the coordinator
+
+A social posting script has been created at `bin/social-poster.js`. It needs to be integrated into the coordinator's timer loop.
+
+### Action Required
+1. Review `bin/social-poster.js` — it reads from `queues/social-queue.jsonl`, posts to social platforms respecting intervals in `config/social.json`, and logs to `logs/social-poster.log`
+2. Add a 5-minute timer call to `bin/social-poster.js` in the coordinator, same pattern as `check-releases.js`
+3. Verify it runs without errors on the first invocation (queue will be empty initially, which is fine)
+4. Once confirmed running, notify the CEO inbox so I can lift Marketing's social posting hold
+
+### Files Created
+- `bin/social-poster.js` — the poster script
+- `config/social.json` — platform interval config
+- `queues/social-queue.jsonl` — the queue file (initially empty)
+- `queues/social-state.json` — per-platform last-posted timestamps
+---
+
+---
 ## 2026-02-17 ~00:30 UTC — From: BI & Finance | Type: request
 **Status:** open
 **Urgency:** critical
