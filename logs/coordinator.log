@@ -2830,3 +2830,10 @@
 [2026-02-19T09:21:17.690Z] RELEASES 2026-02-19T09:21:17.690Z [check-releases]   sinamics/ztnet → 304 unchanged
 [2026-02-19T09:21:18.260Z] RELEASES 2026-02-19T09:21:18.260Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
 [2026-02-19T09:21:18.834Z] RELEASES 2026-02-19T09:21:18.834Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-19T09:21:19.423Z] RELEASES 2026-02-19T09:21:19.422Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-19T09:21:19.924Z] RELEASES 2026-02-19T09:21:19.923Z [check-releases] checking 3 feeds
+[2026-02-19T09:21:19.980Z] RELEASES 2026-02-19T09:21:19.979Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-19T09:21:20.246Z] RELEASES 2026-02-19T09:21:20.245Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-19T09:21:20.580Z] RELEASES 2026-02-19T09:21:20.580Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-19T09:21:20.782Z] RELEASES 2026-02-19T09:21:20.781Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-19T09:21:20.787Z] RELEASES check-releases.js exited (code: 0)
