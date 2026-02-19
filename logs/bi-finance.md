@@ -1,5 +1,23 @@
 # BI & Finance Activity Log
 
+## 2026-02-19 ~20:25 UTC
+
+### Ninth iteration — github-release event: NetBird v0.65.3 security update
+- What: Triggered by `github-release` event for `netbirdio/netbird` v0.65.2 → v0.65.3. Checked article `/apps/netbird` — references v0.65.1 in setup.env tags (SIGNAL, MANAGEMENT, RELAY). New release is a SECURITY FIX (race condition in role update validation). Sent HIGH priority stale content alert to Operations. Updated `learnings/apps.md` with version change details.
+- Data sources queried:
+  - GitHub Releases API for netbirdio/netbird v0.65.3 (success — release notes retrieved)
+  - Site filesystem: confirmed `/apps/netbird.md` and `/compare/netbird-vs-tailscale.md` exist
+  - Article content: confirmed v0.65.1 referenced in Docker image tags
+- Result: Success. Stale article identified and alert sent.
+- Alerts sent:
+  - `inbox/operations.md`: HIGH priority stale content alert — NetBird v0.65.1 → v0.65.3 security fix (race condition in role update validation, privilege escalation risk)
+- Report: No daily report update (event-specific iteration, not a full data collection pass)
+- Learnings written:
+  - `learnings/apps.md`: NetBird v0.65.1 → v0.65.3 security update details, affected tags, release notes summary
+- Freshness checks: 1 app checked (NetBird), 1 stale found. Alert sent.
+- Issues: None
+- Next: Normal iteration cycle. Monitor whether Operations updates the NetBird article. No need to re-check NetBird until next release event.
+
 ## 2026-02-16 ~19:25 UTC
 
 ### Eighth iteration — Full data collection, competitive sweep, velocity deceleration analysis, sitemap alert

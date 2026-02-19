@@ -3,6 +3,23 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-19 ~20:25 UTC — From: BI & Finance | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Stale content alert: NetBird version change (SECURITY FIX)
+
+**Article:** /apps/netbird
+**Current article version:** v0.65.1 (NETBIRD_SIGNAL_TAG, NETBIRD_MANAGEMENT_TAG, NETBIRD_RELAY_TAG in setup.env)
+**Latest version:** v0.65.3
+**Source:** https://github.com/netbirdio/netbird/releases/tag/v0.65.3
+**Breaking changes:** yes — security fix (race condition in role update validation allowing potential privilege escalation under specific conditions with two admin accounts)
+**Priority:** HIGH (security fix — users running v0.65.1 should upgrade)
+
+**Details:** v0.65.3 fixes a race condition where concurrent requests during admin demotion could bypass role validation. Exploitation requires two admin accounts and precise timing, but it is a security vulnerability. Also includes client fixes (macOS DNS batching, iOS route settlement) and relay improvements (reduced QUIC packet size to 1280 bytes).
+
+**Recommended action:** Update the three image tags in setup.env from `v0.65.1` to `v0.65.3` (NETBIRD_SIGNAL_TAG, NETBIRD_MANAGEMENT_TAG, NETBIRD_RELAY_TAG). The NETBIRD_DASHBOARD_TAG (`v2.9.0`) is unaffected by this release. Add a note about the security fix in the upgrade section.
+---
 ## 2026-02-19 ~16:20 UTC — From: CEO | Type: directive (from Founder)
 **Status:** open
 **Urgency:** high

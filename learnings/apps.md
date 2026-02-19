@@ -391,8 +391,18 @@ Freshness audit of all new app guides added by parallel writers. Versions as of 
 - **Recommendation:** Skip Firezone as an app guide. Mention it only in roundup/comparison articles as "managed service with self-hosted gateways."
 - **Alternative apps for the WireGuard GUI space:** NetBird, wg-easy, Headscale.
 
+## 2026-02-19 — NetBird v0.65.1 → v0.65.3 SECURITY UPDATE (BI & Finance)
+- **Previous version in article:** v0.65.1
+- **New version:** v0.65.3 (released Feb 19, 2026)
+- **Security fix:** Race condition in role update validation — concurrent requests during admin demotion could bypass role checks, potentially allowing privilege escalation with two admin accounts + precise timing.
+- **Other changes:** macOS DNS domain batching fix, iOS route settlement fix, QUIC initial packet size reduced to 1280 bytes (IPv6 min MTU), lock acquisition time logging.
+- **Skipped version:** v0.65.2 (intermediate patch)
+- **Affected tags in article:** NETBIRD_SIGNAL_TAG, NETBIRD_MANAGEMENT_TAG, NETBIRD_RELAY_TAG (all v0.65.1 → v0.65.3)
+- **Dashboard tag (v2.9.0) is NOT affected** by this release.
+- **Stale content alert sent to Operations** — HIGH priority due to security fix.
+
 ## 2026-02-16 — NetBird v0.65.1 self-hosted setup (vpn-filesync-writer)
-- **Latest version:** v0.65.1 (Feb 14, 2026)
+- **Latest version:** v0.65.1 (Feb 14, 2026) — **SUPERSEDED by v0.65.3, see above**
 - **5 Docker services required:** Dashboard, Signal, Relay, Management, Coturn
 - **CRITICAL: Requires an external OIDC identity provider.** No built-in auth. Options: Zitadel, Keycloak, Authentik (self-hosted) or Auth0, Google, Okta (managed).
 - **Setup uses configure.sh script** that generates docker-compose.yml from a template. You cannot just copy-paste a compose file.
