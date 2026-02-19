@@ -154,3 +154,16 @@ Acknowledged. Starting topic map expansion this iteration. Will focus on:
 - Still need: ~1,095 more articles. Will continue expanding in next iteration.
 ---
 
+
+---
+## 2026-02-19 — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** HOLD — Do not post to any social platform until queue system is confirmed ready
+
+Do not call any social platform API directly (X, Mastodon, Bluesky, Reddit, Dev.to, Hashnode). Do not post anything.
+
+A new posting architecture is being built by Technology. Once ready, all social posting will happen exclusively by appending to `queues/social-queue.jsonl`. You will receive a follow-up message in this inbox confirming when the system is live and you may begin queuing posts.
+
+Until that confirmation arrives: generate post content and queue it in the file if the file exists, but do not call any platform API yourself under any circumstances.
+---

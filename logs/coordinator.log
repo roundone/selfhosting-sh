@@ -2875,3 +2875,51 @@
 [2026-02-19T10:21:21.431Z] RELEASES 2026-02-19T10:21:21.430Z [check-releases]   https://noted.lol/rss → HTTP 301
 [2026-02-19T10:21:21.631Z] RELEASES 2026-02-19T10:21:21.631Z [check-releases] done — 0 release event(s), 0 feed event(s) written
 [2026-02-19T10:21:21.639Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T11:05:24.734Z] FILEWATCH api-keys.env changed → marketing
+[2026-02-19T11:05:24.734Z] INBOX marketing.md modified → marketing
+[2026-02-19T11:05:24.734Z] PAUSED marketing — session limit active, 87min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:05:26.737Z] EVENT marketing-file-changed-2026-02-19T1105Z.json → marketing
+[2026-02-19T11:05:26.737Z] PAUSED marketing — session limit active, 87min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:06:34.601Z] FILEWATCH api-keys.env changed → marketing
+[2026-02-19T11:06:36.602Z] EVENT marketing-file-changed-2026-02-19T1106Z.json → marketing
+[2026-02-19T11:06:36.602Z] PAUSED marketing — session limit active, 86min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:13:15.419Z] INBOX ceo.md modified → ceo
+[2026-02-19T11:13:15.419Z] PAUSED ceo — session limit active, 79min until 2026-02-19T12:32:15.766Z
+[2026-02-19T11:21:04.963Z] RELEASES running check-releases.js
+[2026-02-19T11:21:05.001Z] RELEASES 2026-02-19T11:21:04.999Z [check-releases] starting
+[2026-02-19T11:21:05.002Z] RELEASES 2026-02-19T11:21:05.002Z [check-releases] checking 29 GitHub repos
+[2026-02-19T11:21:05.093Z] RELEASES 2026-02-19T11:21:05.093Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-19T11:21:05.682Z] RELEASES 2026-02-19T11:21:05.681Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-19T11:21:06.288Z] RELEASES 2026-02-19T11:21:06.288Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-19T11:21:06.887Z] RELEASES 2026-02-19T11:21:06.887Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-19T11:21:07.451Z] RELEASES 2026-02-19T11:21:07.451Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-19T11:21:08.004Z] RELEASES 2026-02-19T11:21:08.003Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-19T11:21:08.593Z] RELEASES 2026-02-19T11:21:08.592Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-19T11:21:09.160Z] RELEASES 2026-02-19T11:21:09.159Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-19T11:21:09.759Z] RELEASES 2026-02-19T11:21:09.759Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-19T11:21:10.330Z] RELEASES 2026-02-19T11:21:10.329Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-19T11:21:10.909Z] RELEASES 2026-02-19T11:21:10.909Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-19T11:21:11.523Z] RELEASES 2026-02-19T11:21:11.523Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-19T11:21:12.076Z] RELEASES 2026-02-19T11:21:12.075Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-19T11:21:12.672Z] RELEASES 2026-02-19T11:21:12.672Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-19T11:21:13.237Z] RELEASES 2026-02-19T11:21:13.237Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-19T11:21:13.795Z] RELEASES 2026-02-19T11:21:13.794Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-19T11:21:14.370Z] RELEASES 2026-02-19T11:21:14.370Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-19T11:21:14.947Z] RELEASES 2026-02-19T11:21:14.947Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-19T11:21:15.533Z] RELEASES 2026-02-19T11:21:15.533Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-19T11:21:16.105Z] RELEASES 2026-02-19T11:21:16.105Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-19T11:21:16.670Z] RELEASES 2026-02-19T11:21:16.669Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-19T11:21:17.225Z] RELEASES 2026-02-19T11:21:17.225Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-19T11:21:17.785Z] RELEASES 2026-02-19T11:21:17.785Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-19T11:21:18.362Z] RELEASES 2026-02-19T11:21:18.362Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-19T11:21:18.913Z] RELEASES 2026-02-19T11:21:18.913Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-19T11:21:19.476Z] RELEASES 2026-02-19T11:21:19.475Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-19T11:21:20.069Z] RELEASES 2026-02-19T11:21:20.068Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-19T11:21:20.630Z] RELEASES 2026-02-19T11:21:20.630Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-19T11:21:21.184Z] RELEASES 2026-02-19T11:21:21.184Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-19T11:21:21.685Z] RELEASES 2026-02-19T11:21:21.685Z [check-releases] checking 3 feeds
+[2026-02-19T11:21:21.757Z] RELEASES 2026-02-19T11:21:21.757Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-19T11:21:22.024Z] RELEASES 2026-02-19T11:21:22.023Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-19T11:21:22.371Z] RELEASES 2026-02-19T11:21:22.371Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-19T11:21:22.573Z] RELEASES 2026-02-19T11:21:22.572Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-19T11:21:22.579Z] RELEASES check-releases.js exited (code: 0)

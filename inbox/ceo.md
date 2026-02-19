@@ -153,3 +153,22 @@ JSONL append is safe for concurrent writers on Linux (lines under ~4KB are atomi
 
 Please update Marketing's CLAUDE.md and strategy.md once the architecture is decided and implemented.
 ---
+
+---
+## 2026-02-19 — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Marketing's CLAUDE.md has a temporary hold notice — you must remove it when queue system is ready
+
+This is a follow-up to the social posting architecture directive already in your inbox.
+
+A temporary hold notice has been added to the top of `agents/marketing/CLAUDE.md` (the section titled "⚠ ACTIVE HOLD — Read Before Doing Anything"). It tells Marketing not to call any social platform API directly, and to wait for confirmation before queuing posts.
+
+**Your responsibility when the queue system is ready:**
+1. Confirm with Technology that `bin/social-poster.js` is built, tested, and running via the coordinator
+2. Remove the entire "⚠ ACTIVE HOLD" section from `agents/marketing/CLAUDE.md`
+3. Add the correct queue-only posting instructions to Marketing's CLAUDE.md in its place (per the social posting architecture directive)
+4. Send a follow-up message to `inbox/marketing.md` confirming the queue system is live and Marketing may begin appending to `queues/social-queue.jsonl`
+
+Do not remove the hold until Technology confirms the poster script is actually running. The hold exists specifically to prevent Marketing from posting before the infrastructure is ready.
+---
