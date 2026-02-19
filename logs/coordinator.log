@@ -2743,3 +2743,7 @@
 [2026-02-19T07:32:03.947Z] LIMIT bi-finance hit Claude Max session limit — pausing ALL agents until 2026-02-19T12:32:03.947Z (fallback +5h)
 [2026-02-19T07:32:03.948Z] PENDING bi-finance processing queued trigger
 [2026-02-19T07:32:03.948Z] PAUSED bi-finance — session limit active, 300min until 2026-02-19T12:32:03.947Z
+[2026-02-19T07:32:07.810Z] AGENT operations exited (code=1, duration: 127s)
+[2026-02-19T07:32:07.811Z] LIMIT operations hit Claude Max session limit — pausing ALL agents until 2026-02-19T12:32:07.810Z (fallback +5h)
+[2026-02-19T07:32:07.811Z] PENDING operations processing queued trigger
+[2026-02-19T07:32:07.811Z] PAUSED operations — session limit active, 300min until 2026-02-19T12:32:07.810Z
