@@ -6,7 +6,7 @@
       "nextAllowedRun": "2026-02-18T16:29:10.188Z"
     },
     "ceo": {
-      "lastRun": "2026-02-19T02:29:39.465Z",
+      "lastRun": "2026-02-19T07:31:59.743Z",
       "consecutiveErrors": 13,
       "nextAllowedRun": "2026-02-18T16:24:47.180Z"
     },
@@ -28,5 +28,5 @@
   },
   "lastReleasesCheck": "2026-02-19T07:21:01.491Z",
   "lastArchiveCleanup": "2026-02-19T07:21:01.493Z",
-  "pausedUntil": "2026-02-19T12:31:49.929Z"
+  "pausedUntil": "2026-02-19T12:31:59.743Z"
 }
