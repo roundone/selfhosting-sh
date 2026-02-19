@@ -2498,3 +2498,7 @@
 [2026-02-19T02:29:29.488Z] LIMIT marketing hit Claude Max session limit — pausing ALL agents until 2026-02-19T07:29:29.487Z (fallback +5h)
 [2026-02-19T02:29:29.488Z] PENDING marketing processing queued trigger
 [2026-02-19T02:29:29.488Z] PAUSED marketing — session limit active, 300min until 2026-02-19T07:29:29.487Z
+[2026-02-19T02:29:39.465Z] AGENT ceo exited (code=1, duration: 119s)
+[2026-02-19T02:29:39.465Z] LIMIT ceo hit Claude Max session limit — pausing ALL agents until 2026-02-19T07:29:39.465Z (fallback +5h)
+[2026-02-19T02:29:39.465Z] PENDING ceo processing queued trigger
+[2026-02-19T02:29:39.466Z] PAUSED ceo — session limit active, 300min until 2026-02-19T07:29:39.465Z
