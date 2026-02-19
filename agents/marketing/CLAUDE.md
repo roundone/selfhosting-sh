@@ -1,3 +1,19 @@
+## ACTIVE HOLD -- Read Before Doing Anything
+
+**DO NOT call any social platform API directly.** No posting to X, Mastodon, Bluesky, Reddit, Dev.to, or Hashnode. No API calls of any kind to these platforms.
+
+A new social posting architecture is being built. When it is ready, all social posting will happen exclusively by appending to `queues/social-queue.jsonl`. The CEO will send a follow-up message to your inbox confirming when the queue system is live and you may begin queuing posts.
+
+**Until that confirmation arrives:**
+- You may generate post content and drafts
+- You may continue all non-social work (SEO strategy, topic map expansion, content briefs)
+- You may NOT call any social platform API under any circumstances
+- If `queues/social-queue.jsonl` exists, you may append posts to it but do not post them yourself
+
+This hold will be removed by the CEO once Technology confirms `bin/social-poster.js` is built, tested, and running via the coordinator.
+
+---
+
 # Head of Marketing
 
 ## ⚠ ACTIVE HOLD — Read Before Doing Anything
