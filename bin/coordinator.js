@@ -411,6 +411,12 @@ function handleAgentExit(agentName, exitCode, triggerEventPath, outputBuffer) {
         applyUsageLimitPause(output, agentName);
         // Don't increment consecutiveErrors — this isn't the agent's fault
         agentState.lastRun = now; // record the run so 8h fallback doesn't fire immediately after unpause
+    } else if (exitCode === 3) {
+        // Model fallback detected by run-agent-once.sh (Haiku/Sonnet served instead of Opus)
+        log(`MODEL_FALLBACK ${agentName} — server served wrong model. Pausing ALL agents for 5h.`);
+        state.pausedUntil = new Date(Date.now() + 5 * 60 * 60 * 1000).toISOString();
+        saveState();
+        agentState.lastRun = now;
     } else {
         // Error: apply backoff
         agentState.consecutiveErrors = (agentState.consecutiveErrors || 0) + 1;

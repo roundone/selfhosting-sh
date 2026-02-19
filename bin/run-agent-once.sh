@@ -15,20 +15,27 @@
 #   124 = timeout (iteration hit the time limit — not an error, coordinator resets backoff)
 #   1   = claude error
 #   2   = setup error (agent dir missing, proxy down)
+#   3   = model fallback detected (Haiku/Sonnet served instead of Opus — coordinator should pause all agents)
 #
 # Environment variables (set by coordinator):
 #   TRIGGER_EVENT  = path to the event JSON file that caused this agent to start (optional)
 #   TRIGGER_REASON = human-readable reason string if no event file (e.g. "24h-fallback")
 #   HTTPS_PROXY    = set here, required for all API calls to route through rate-limiter
+#   ANTHROPIC_MODEL = set here, explicitly request Opus
 
 AGENT_DIR="${1:?Usage: run-agent-once.sh <agent-dir>}"
 MAX_RUNTIME="${2:-3600}"
 LOG="/opt/selfhosting-sh/logs/supervisor.log"
 REPO_ROOT="/opt/selfhosting-sh"
 EVENTS_DIR="$REPO_ROOT/events"
+DEBUG_DIR="/home/selfhosting/.claude/debug"
 
 # All Anthropic API traffic through the rate-limiting proxy (prevents 429s and Haiku fallback)
 export HTTPS_PROXY=http://127.0.0.1:3128
+
+# Explicitly request Opus. The server can still override when rate-limited,
+# but this ensures we never default to a weaker model voluntarily.
+export ANTHROPIC_MODEL=opus
 
 # --- Sanity checks ---
 if [ ! -f "$AGENT_DIR/CLAUDE.md" ]; then
@@ -64,6 +71,9 @@ EVENTS_CONTEXT=" Before executing your loop, check the events/ directory for any
 
 FULL_PROMPT="Read CLAUDE.md and execute your operating loop.${TRIGGER_CONTEXT}${EVENTS_CONTEXT} Exit cleanly when your iteration is complete — the coordinator will start your next iteration when needed."
 
+# --- Snapshot debug log state (to detect new entries from this iteration) ---
+LATEST_DEBUG_BEFORE=$(readlink -f "$DEBUG_DIR/latest" 2>/dev/null || echo "")
+
 # --- Run Claude (single iteration) ---
 echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — STARTING ($AGENT_DIR)$([ -n "$TRIGGER_CONTEXT" ] && echo " [$EVENT_TYPE]")" >> "$LOG"
 
@@ -72,9 +82,45 @@ cd "$AGENT_DIR" || exit 2
 # MUST use --foreground: without it, timeout creates a new process group. Node.js touches
 # the TTY during startup and receives SIGTTOU in a background group → process stops immediately.
 timeout --foreground "$MAX_RUNTIME" claude -p "$FULL_PROMPT" \
+    --model opus \
     --dangerously-skip-permissions
 
 EXIT_CODE=$?
+
+# --- Check for model fallback (Haiku/Sonnet served instead of Opus) ---
+# When rate-limited, the server silently serves a weaker model. Detect this from debug logs.
+# If detected, exit with code 3 so the coordinator pauses all agents.
+if [ $EXIT_CODE -ne 0 ] && [ $EXIT_CODE -ne 124 ]; then
+    LATEST_DEBUG_AFTER=$(readlink -f "$DEBUG_DIR/latest" 2>/dev/null || echo "")
+    MODEL_FALLBACK=false
+
+    # Check all debug files written during this iteration
+    for dbg in "$DEBUG_DIR"/*.txt; do
+        [ -f "$dbg" ] || continue
+        # Only check files newer than our start snapshot
+        if [ "$dbg" = "$LATEST_DEBUG_BEFORE" ]; then continue; fi
+        if [ -n "$LATEST_DEBUG_BEFORE" ] && [ "$dbg" -ot "$LATEST_DEBUG_BEFORE" ]; then continue; fi
+
+        # Look for the telltale signs of model fallback
+        if grep -q "model does not support tool_reference" "$dbg" 2>/dev/null; then
+            MODEL_FALLBACK=true
+            FALLBACK_MODEL=$(grep -o "model '[^']*'" "$dbg" 2>/dev/null | head -1 || echo "unknown")
+            break
+        fi
+        if grep -q "claude-haiku" "$dbg" 2>/dev/null; then
+            MODEL_FALLBACK=true
+            FALLBACK_MODEL="haiku"
+            break
+        fi
+    done
+
+    if [ "$MODEL_FALLBACK" = true ]; then
+        echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — MODEL_FALLBACK ($AGENT_DIR) — server served $FALLBACK_MODEL instead of Opus. Exiting with code 3 to trigger global pause." >> "$LOG"
+        # Clean up any changes from the failed iteration (don't commit garbage)
+        cd "$REPO_ROOT" && git checkout -- . 2>/dev/null
+        exit 3
+    fi
+fi
 
 # --- Log outcome ---
 if [ $EXIT_CODE -eq 124 ]; then
