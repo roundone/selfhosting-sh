@@ -109,33 +109,47 @@ Some pages currently display a message warning users that the page contains affi
 ## 2026-02-19 — From: Founder (Nishant) | Type: directive
 **Status:** open
 
-**Subject:** Social posting must be rate-limited — implement a per-platform queue
+**Subject:** Social posting architecture — agents queue, a central poster script posts
 
-**Context:** X API keys are now live in api-keys.env. Before Marketing begins posting, we need a posting cadence system in place. Blasting 50 posts in 5 minutes will get the account suspended and burn the API credit instantly.
+**Context:** X API keys are now live in api-keys.env. Before Marketing begins posting, a posting architecture must be in place. This directive describes the required design. Implementation is yours to decide, but the core principle — agents never call social APIs directly — is non-negotiable.
 
-**The problem:** Marketing has ~374 published articles to promote and will want to post them all. Without spacing, it will post them all in one agent iteration. That is not acceptable on any platform — especially X.
+**The principle:** Agents only write to a queue. A separate script does all the actual posting, at a human-paced cadence. This keeps API logic out of agent context, centralises rate-limiting in one place, and makes the queue auditable.
 
-**Recommended approach (your call to implement as you see fit):**
+**Proposed architecture (implement as you see fit, but cover these concerns):**
 
-Implement a per-platform post queue system:
+**1. Queue file** — A single append-only JSONL file (one JSON object per line), e.g. `queues/social-queue.jsonl`. Agents append a line when they want to post something. They never call any social API directly. Example line:
+```
+{"id":"<uuid>","platform":"x","queued_at":"<iso-timestamp>","content":"<text>","url":"<article-url>","status":"pending"}
+```
+JSONL append is safe for concurrent writers on Linux (lines under ~4KB are atomic).
 
-1. **Queue files** — Marketing writes pending posts to platform-specific queue files (e.g. , , etc.) rather than posting immediately. Each entry includes the content and a not-before timestamp.
+**2. State file** — `queues/social-state.json` tracks last-successfully-posted timestamp per platform. The poster reads this to decide whether enough time has elapsed before the next post on each platform.
 
-2. **Drain on iteration** — Each time Marketing runs, it checks the queue for each platform. If the minimum gap since the last post has elapsed, it posts one item and updates the last-post timestamp. If not, it skips and moves on.
+**3. Config** — Per-platform minimum interval (in minutes) lives in a central config file (e.g. `config/social.json` or added to an existing config). The poster reads this. Agents never read it. Suggested starting values (CEO adjusts based on what works):
+- X: 60 min (new account, conservative)
+- Mastodon: 30 min
+- Bluesky: 30 min
+- Reddit: 240 min per subreddit (aggressive banning of new accounts)
+- Dev.to: 1440 min (one article/day)
+- Hashnode: 1440 min
 
-3. **Minimum gaps (suggested starting points — adjust based on what works):**
-   - X: 60 minutes between posts (conservative — new account, spam risk high)
-   - Mastodon: 30 minutes
-   - Bluesky: 30 minutes
-   - Reddit: 4 hours per subreddit (Reddit bans accounts that post too fast)
-   - Dev.to / Hashnode: 1 article per day (cross-posting platforms)
+**4. Poster script** — `bin/social-poster.js`. Every 5 minutes it:
+   - Reads the state file and config
+   - For each platform where elapsed time > min interval: takes the oldest pending item from the queue, posts it via the platform API, updates the state file timestamp, marks the queue item as `posted`
+   - Logs all activity (successes and failures) to `logs/social-poster.log`
+   - Failed posts go to status `failed` with the error reason — never silently dropped
 
-4. **Queue state file** — A  tracking last-post timestamp per platform so Marketing knows when it can next post.
+**5. Coordinator integration** — Run `social-poster.js` on a 5-minute timer inside the coordinator, same pattern as `check-releases.js`. No new systemd service needed.
+
+**6. Marketing's role** — Marketing appends to the queue, nothing more. Marketing's CLAUDE.md must be updated to reflect this: no direct API calls, queue only. The queue is Marketing's output for social content.
+
+**Error handling requirement:** If a post fails (API error, rate limit, account issue), the item must not be silently dropped. It should be marked `failed` with the error, and a note written to `logs/social-poster.log`. Repeated failures on a platform should escalate to the CEO inbox.
 
 **What this achieves:**
-- Posts look human-paced to platform algorithms
-- No account suspensions
-- API credit is spent over days/weeks, not minutes
-- Queue is auditable — you and I can see what is pending
+- Posts look human-paced to platform algorithms — no spam detection or suspensions
+- Social API logic lives in one script, not scattered across agent iterations
+- Agents use no API quota for posting — just a file append
+- Queue is fully auditable — founder can open `queues/social-queue.jsonl` and see everything pending, posted, and failed
 
-**Decision yours:** You may implement differently — a dedicated posting sub-agent, a different queue format, different cadence numbers. The principle is non-negotiable (must space posts out); the implementation is your call. Update Marketing\s CLAUDE.md and strategy.md when decided.
+Please update Marketing's CLAUDE.md and strategy.md once the architecture is decided and implemented.
+---
