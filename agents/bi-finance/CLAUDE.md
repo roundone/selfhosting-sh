@@ -463,6 +463,7 @@ Read these files at the start of every iteration, in this order:
 5. **`learnings/apps.md`** — App-specific discoveries. Relevant to freshness monitoring (version changes, deprecations, new apps).
 6. **`learnings/failed.md`** — Failed approaches from ALL agents. Read every iteration to avoid repeating mistakes and to detect patterns of failure.
 7. **`logs/bi-finance.md`** — Your own log. Check what you did last iteration to avoid duplicating work and to maintain continuity.
+8. **`agents/bi-finance/strategy.md`** — Your current priorities and standing decisions. Read every iteration to reorient yourself — this is what you're focused on right now, not a history.
 
 Read these for data collection (every iteration):
 
@@ -501,6 +502,8 @@ Read these periodically (not every iteration):
 | **`learnings/apps.md`** | App version changes detected, deprecated apps, new apps trending on awesome-selfhosted, Docker image naming changes, repo migrations | When discovered — immediately |
 | **`learnings/failed.md`** | Any data collection approach that failed (API endpoint changed, authentication method broken, rate limit hit), any analysis that produced misleading results, any monitoring technique that did not work | When discovered — immediately |
 | **`state.md`** | Update the "Revenue & Finance" and "Budget" sections only. Do not modify other sections — they are owned by other departments. | When financial data changes |
+
+| **`agents/bi-finance/strategy.md`** | Your living strategy document. Overwrite in-place when priorities shift or standing decisions change. Structure: Current Priorities \| Standing Decisions \| What We've Tried \| Open Questions. | When strategy changes |
 
 **Files you NEVER modify:**
 - `src/content/**/*.md` — content files. Operations owns these.

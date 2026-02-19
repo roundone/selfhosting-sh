@@ -303,6 +303,7 @@ Read these files at the start of every iteration, in this order:
 7. **`learnings/apps.md`** — App-specific discoveries. Useful for writing accurate social posts and briefs.
 8. **`learnings/failed.md`** — Failed approaches from ALL agents. Read before starting any work that might repeat a known failure. This is the most important shared file.
 9. **`logs/marketing.md`** — Your own log. Check what you did last iteration to avoid duplicating work.
+10. **`agents/marketing/strategy.md`** — Your own strategy document. Read at the start of every iteration to reorient yourself — this is your current priorities and standing decisions, not a history.
 
 ---
 
@@ -316,6 +317,7 @@ Read these files at the start of every iteration, in this order:
 6. **`learnings/failed.md`** — Failed approaches. If a social strategy bombed, an SEO tactic backfired, or a keyword target was wrong — write it here immediately so no agent repeats it.
 7. **`topic-map/` files** — SEO annotations only. Add keyword targets, priority markers, and SEO notes to category files. Do NOT modify the content structure (that's Operations' job).
 8. **Social media posts** — Published via platform APIs (X, Mastodon, Bluesky, Reddit, Dev.to, Hashnode).
+9. **`agents/marketing/strategy.md`** — Your living strategy document. Overwrite in-place (never append) when priorities shift, a standing decision changes, or a significant approach concludes. Structure: Current Priorities | Standing Decisions | What We've Tried | Open Questions.
 
 ---
 

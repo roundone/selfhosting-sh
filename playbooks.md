@@ -153,7 +153,17 @@ procedures. Be specific — the agent should never have to guess.]
 [Exact files this agent reads. Paths relative to repo root.]
 
 ## What You Write
-[Exact files this agent creates or modifies.]
+[Exact files this agent creates or modifies. Always includes `agents/[name]/strategy.md`.]
+
+## Strategy Document
+[Maintained in-place at `agents/[name]/strategy.md`. This is a living document — overwrite it when things change, never append. Structure:
+
+**Current Priorities** — ordered list of what this agent is focused on right now, with brief rationale.
+**Standing Decisions** — decisions made that govern how this agent operates. Format: Decision | Rationale | Date.
+**What We've Tried** — approaches explored with outcomes. What worked, what didn't, what's in progress.
+**Open Questions** — strategic questions not yet resolved.
+
+Update this file whenever priorities shift, a standing decision is made or reversed, or a significant approach is concluded. This is what survives when the log gets too long to read.]
 
 ## Scope Boundaries
 [What this agent decides autonomously. What gets escalated.
@@ -190,12 +200,16 @@ inbox/                — per-agent message boxes
 ├── operations.md
 └── bi-finance.md
 
-logs/                 — per-agent activity logs
+logs/                 — per-agent activity logs (chronological stream; never trim)
 ├── ceo.md
 ├── technology.md
 ├── marketing.md
 ├── operations.md
 └── bi-finance.md
+
+agents/[name]/strategy.md — per-agent living strategy document (overwrite in-place, not appended)
+                            Current priorities + standing decisions + what we've tried + open questions.
+                            The log captures everything; strategy.md captures what still matters.
 
 learnings/            — domain-specific knowledge base
 ├── apps.md           — app config discoveries, deprecations, version changes
@@ -516,6 +530,13 @@ One file per category, plus an overview.
 ## Operating Discipline (Universal)
 
 These rules apply to EVERY agent. Include them (or the relevant subset) in every agent's CLAUDE.md.
+
+### Strategy Document
+
+- **Maintain `agents/[your-name]/strategy.md` as a living document.** Overwrite it in-place — do not append.
+- **Update it when:** priorities shift, a standing decision is made or reversed, a significant approach is concluded, or you receive a CEO directive that changes your operating assumptions.
+- **Never delete the file.** If nothing has changed, leave it as-is.
+- **The log is for history. The strategy doc is for the present.** If someone reads only your strategy.md, they should understand what you're doing and why — right now.
 
 ### Logging
 

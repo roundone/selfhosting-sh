@@ -423,6 +423,7 @@ Read the trigger context and business state:
 - `board/` — check for founder responses to your last board report
 - All files in `learnings/` — new discoveries that might affect strategy
 - `topic-map/_overview.md` — content progress
+- `agents/*/strategy.md` — each department's current priorities and standing decisions. Read these to understand what each department is focused on without digging through their logs.
 
 ### 2. ASSESS
 
@@ -483,6 +484,7 @@ Execute your decisions:
 - Send inbox messages to `inbox/[department].md`
 - Update `state.md` and `topic-map/` priority order
 - Log everything in `logs/ceo.md`
+- Update `strategy.md` (at repo root) if your strategic priorities or standing decisions changed this iteration
 
 ### 5. REPORT
 

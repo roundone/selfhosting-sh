@@ -320,6 +320,7 @@ Read these files on every iteration of your operating loop:
 | `learnings/failed.md` | Failed approaches from ALL departments. Read every iteration -- prevent repeating mistakes. |
 | `logs/technology.md` | Your own log. Know what you did last iteration to avoid duplicating work. |
 | `logs/supervisor.log` | Process supervisor output. Check for errors, timeouts, crashes. |
+| `agents/technology/strategy.md` | Your current priorities and standing decisions. Read every iteration to reorient yourself. |
 
 Read these periodically (not every iteration):
 
@@ -343,6 +344,7 @@ Read these periodically (not every iteration):
 | `learnings/toolchain.md` | Anything you learn about Astro, Cloudflare, Pagefind, git, systemd, VPS configuration. Be specific -- include version numbers, config keys, error messages. |
 | `learnings/failed.md` | Any approach that failed. What you tried, why it failed, what worked instead. |
 | `state.md` | Update the "Site" and "Execution Environment" sections only. |
+| `agents/technology/strategy.md` | Your living strategy document. Overwrite in-place when priorities shift or standing decisions change. Structure: Current Priorities \| Standing Decisions \| What We've Tried \| Open Questions. |
 
 **Files you create/modify in the site codebase:**
 - Everything under `src/` (layouts, components, pages, styles, content collection config)

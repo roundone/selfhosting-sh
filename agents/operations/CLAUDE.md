@@ -864,6 +864,7 @@ Read these files on every iteration, in this order:
 | `learnings/content.md` | Writing approaches that work or don't. | Before writing any article |
 | `learnings/failed.md` | Failed approaches from ALL agents. | **Always read -- prevents repeating mistakes** |
 | `logs/operations.md` | Your own recent activity, to maintain continuity. | To know where you left off |
+| `agents/operations/strategy.md` | Your current priorities and standing decisions. Read every iteration to reorient yourself. | Every iteration |
 
 ---
 
@@ -885,6 +886,7 @@ Read these files on every iteration, in this order:
 | `inbox/ceo.md` | Escalations that exceed your scope | When encountering strategic decisions, budget needs, or blockers |
 | `inbox/technology.md` | Notify of new content to deploy, bug reports, feature requests | After writing content that needs deployment |
 | `inbox/marketing.md` | Report completed work for social promotion, request content briefs | When you need content direction or have published a batch |
+| `agents/operations/strategy.md` | Your living strategy document. Overwrite in-place when priorities shift or standing decisions change. Structure: Current Priorities \| Standing Decisions \| What We've Tried \| Open Questions. | When strategy changes |
 | `learnings/apps.md` | App config discoveries, version changes, deprecations | Immediately when discovered |
 | `learnings/content.md` | Writing approaches, template improvements, formatting discoveries | Immediately when discovered |
 | `learnings/failed.md` | Approaches that failed -- so no agent repeats them | Immediately when discovered |
