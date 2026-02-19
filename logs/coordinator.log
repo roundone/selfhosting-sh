@@ -2969,3 +2969,30 @@
 [2026-02-19T12:21:23.390Z] RELEASES 2026-02-19T12:21:23.390Z [check-releases]   https://noted.lol/rss → HTTP 301
 [2026-02-19T12:21:23.592Z] RELEASES 2026-02-19T12:21:23.591Z [check-releases] done — 0 release event(s), 0 feed event(s) written
 [2026-02-19T12:21:23.597Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T12:31:54.977Z] PAUSED marketing — session limit active, 0min until 2026-02-19T12:32:15.766Z
+[2026-02-19T12:32:04.753Z] PAUSED ceo — session limit active, 0min until 2026-02-19T12:32:15.766Z
+[2026-02-19T12:32:08.952Z] PAUSED bi-finance — session limit active, 0min until 2026-02-19T12:32:15.766Z
+[2026-02-19T12:32:12.814Z] PAUSED operations — session limit active, 0min until 2026-02-19T12:32:15.766Z
+[2026-02-19T12:32:20.772Z] RESUMED global pause expired — resuming agents
+[2026-02-19T12:32:20.773Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-19T12:32:20.774Z] AGENT ceo started (pid: 737137)
+[2026-02-19T12:32:20.775Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-19T12:32:20.776Z] AGENT marketing started (pid: 737138)
+[2026-02-19T12:32:20.776Z] QUEUED marketing already running — trigger queued: marketing-file-changed-2026-02-19T1106Z.json
+[2026-02-19T12:32:20.776Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-19T12:32:20.777Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-19T12:32:20.777Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-19T12:32:20.777Z] QUEUED marketing already running — trigger queued: marketing-file-changed-2026-02-19T1106Z.json
+[2026-02-19T12:32:20.777Z] QUEUED marketing already running — trigger queued: marketing-file-changed-2026-02-19T1106Z.json
+[2026-02-19T12:32:20.777Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-19T12:32:20.777Z] QUEUED marketing already running — trigger queued: marketing-file-changed-2026-02-19T1106Z.json
+[2026-02-19T12:32:20.777Z] QUEUED marketing already running — trigger queued: marketing-file-changed-2026-02-19T1106Z.json
+[2026-02-19T12:32:20.777Z] QUEUED marketing already running — trigger queued: pending-trigger
+[2026-02-19T12:32:20.777Z] QUEUED ceo already running — trigger queued: pending-trigger
+[2026-02-19T12:32:20.777Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-19T12:32:20.781Z] AGENT technology started (pid: 737141)
+[2026-02-19T12:32:20.781Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-19T12:32:20.783Z] AGENT bi-finance started (pid: 737143)
+[2026-02-19T12:32:20.784Z] QUEUED marketing already running — trigger queued: marketing-file-changed-2026-02-19T1106Z.json
+[2026-02-19T12:32:20.784Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-19T12:32:20.786Z] AGENT operations started (pid: 737144)
