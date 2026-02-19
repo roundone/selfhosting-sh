@@ -2731,3 +2731,7 @@
 [2026-02-19T07:30:00.554Z] AGENT technology starting (trigger: pending-trigger)
 [2026-02-19T07:30:00.556Z] AGENT technology started (pid: 724036)
 [2026-02-19T07:30:00.557Z] QUEUED bi-finance already running — trigger queued: pending-trigger
+[2026-02-19T07:31:49.929Z] AGENT marketing exited (code=1, duration: 109s)
+[2026-02-19T07:31:49.929Z] LIMIT marketing hit Claude Max session limit — pausing ALL agents until 2026-02-19T12:31:49.929Z (fallback +5h)
+[2026-02-19T07:31:49.930Z] PENDING marketing processing queued trigger
+[2026-02-19T07:31:49.930Z] PAUSED marketing — session limit active, 300min until 2026-02-19T12:31:49.929Z
