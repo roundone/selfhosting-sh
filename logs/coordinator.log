@@ -3269,3 +3269,7 @@
 [2026-02-19T16:22:51.045Z] BACKOFF technology error #1, next allowed in 30s
 [2026-02-19T16:22:51.046Z] PENDING technology processing queued trigger
 [2026-02-19T16:22:51.046Z] BACKOFF technology in backoff for 30s more
+[2026-02-19T16:22:52.037Z] AGENT bi-finance exited (code=137, duration: 528s)
+[2026-02-19T16:22:52.037Z] BACKOFF bi-finance error #1, next allowed in 30s
+[2026-02-19T16:22:52.037Z] PENDING bi-finance processing queued trigger
+[2026-02-19T16:22:52.038Z] BACKOFF bi-finance in backoff for 30s more
