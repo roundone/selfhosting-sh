@@ -3470,3 +3470,11 @@
 [2026-02-19T18:30:05.084Z] AGENT operations started (pid: 759314)
 [2026-02-19T18:30:05.084Z] AGENT technology starting (trigger: inbox-missed)
 [2026-02-19T18:30:05.087Z] AGENT technology started (pid: 759317)
+[2026-02-19T18:31:28.616Z] AGENT marketing exited (code=1, duration: 84s)
+[2026-02-19T18:31:28.617Z] LIMIT marketing hit Claude Max session limit — pausing ALL agents until 2026-02-19T23:31:28.617Z (fallback +5h)
+[2026-02-19T18:31:28.617Z] PENDING marketing processing queued trigger
+[2026-02-19T18:31:28.617Z] PAUSED marketing — session limit active, 300min until 2026-02-19T23:31:28.617Z
+[2026-02-19T18:31:29.455Z] EVENT bi-finance-new-articles-20260219T183127Z.json → bi-finance
+[2026-02-19T18:31:29.455Z] PAUSED bi-finance — session limit active, 300min until 2026-02-19T23:31:28.617Z
+[2026-02-19T18:31:29.455Z] EVENT technology-deploy-20260219T183127Z.json → technology
+[2026-02-19T18:31:29.456Z] QUEUED technology already running — trigger queued: technology-deploy-20260219T183127Z.json
