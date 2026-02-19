@@ -1,0 +1,9 @@
+{
+  "type": "github-release",
+  "repo": "louislam/uptime-kuma",
+  "latestVersion": "2.1.3",
+  "previousVersion": "2.1.2",
+  "releaseUrl": "https://github.com/louislam/uptime-kuma/releases/tag/2.1.3",
+  "hasBreakingChanges": false,
+  "ts": "2026-02-19T06:21:00.845Z"
+}

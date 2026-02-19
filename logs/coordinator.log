@@ -2631,3 +2631,47 @@
 [2026-02-19T05:21:17.582Z] RELEASES 2026-02-19T05:21:17.581Z [check-releases]   https://noted.lol/rss → HTTP 301
 [2026-02-19T05:21:17.782Z] RELEASES 2026-02-19T05:21:17.782Z [check-releases] done — 1 release event(s), 0 feed event(s) written
 [2026-02-19T05:21:17.787Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-19T06:21:00.812Z] RELEASES running check-releases.js
+[2026-02-19T06:21:00.844Z] RELEASES 2026-02-19T06:21:00.842Z [check-releases] starting
+[2026-02-19T06:21:00.845Z] RELEASES 2026-02-19T06:21:00.845Z [check-releases] checking 29 GitHub repos
+[2026-02-19T06:21:00.943Z] RELEASES 2026-02-19T06:21:00.942Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-19T06:21:01.558Z] RELEASES 2026-02-19T06:21:01.558Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-19T06:21:02.167Z] RELEASES 2026-02-19T06:21:02.167Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-19T06:21:02.744Z] RELEASES 2026-02-19T06:21:02.744Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-19T06:21:03.291Z] RELEASES 2026-02-19T06:21:03.291Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-19T06:21:03.846Z] RELEASES 2026-02-19T06:21:03.846Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-19T06:21:04.425Z] RELEASES 2026-02-19T06:21:04.424Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-19T06:21:04.988Z] RELEASES 2026-02-19T06:21:04.988Z [check-releases]   Jackett/Jackett → NEW RELEASE v0.24.1147 → v0.24.1157
+[2026-02-19T06:21:04.989Z] RELEASES 2026-02-19T06:21:04.988Z [check-releases] event written: bi-finance-github-release-2026-02-19T0621Z.json
+[2026-02-19T06:21:05.559Z] RELEASES 2026-02-19T06:21:05.559Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-19T06:21:06.119Z] RELEASES 2026-02-19T06:21:06.119Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-19T06:21:06.674Z] RELEASES 2026-02-19T06:21:06.674Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-19T06:21:06.989Z] EVENT bi-finance-github-release-2026-02-19T0621Z.json → bi-finance
+[2026-02-19T06:21:06.989Z] PAUSED bi-finance — session limit active, 69min until 2026-02-19T07:29:55.536Z
+[2026-02-19T06:21:07.280Z] RELEASES 2026-02-19T06:21:07.280Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-19T06:21:07.824Z] RELEASES 2026-02-19T06:21:07.824Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-19T06:21:08.413Z] RELEASES 2026-02-19T06:21:08.413Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.2)
+[2026-02-19T06:21:08.978Z] RELEASES 2026-02-19T06:21:08.978Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-19T06:21:09.546Z] RELEASES 2026-02-19T06:21:09.546Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-19T06:21:10.112Z] RELEASES 2026-02-19T06:21:10.112Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-19T06:21:10.677Z] RELEASES 2026-02-19T06:21:10.676Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-19T06:21:11.251Z] RELEASES 2026-02-19T06:21:11.251Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-19T06:21:11.812Z] RELEASES 2026-02-19T06:21:11.812Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-19T06:21:12.375Z] RELEASES 2026-02-19T06:21:12.375Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-19T06:21:12.926Z] RELEASES 2026-02-19T06:21:12.926Z [check-releases]   louislam/uptime-kuma → NEW RELEASE 2.1.2 → 2.1.3
+[2026-02-19T06:21:12.926Z] RELEASES 2026-02-19T06:21:12.926Z [check-releases] event written: bi-finance-github-release-2026-02-19T0621Z.json
+[2026-02-19T06:21:13.473Z] RELEASES 2026-02-19T06:21:13.473Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-19T06:21:14.072Z] RELEASES 2026-02-19T06:21:14.072Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-19T06:21:14.615Z] RELEASES 2026-02-19T06:21:14.614Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-19T06:21:14.927Z] EVENT bi-finance-github-release-2026-02-19T0621Z.json → bi-finance
+[2026-02-19T06:21:14.927Z] PAUSED bi-finance — session limit active, 69min until 2026-02-19T07:29:55.536Z
+[2026-02-19T06:21:15.177Z] RELEASES 2026-02-19T06:21:15.176Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-19T06:21:15.737Z] RELEASES 2026-02-19T06:21:15.737Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-19T06:21:16.307Z] RELEASES 2026-02-19T06:21:16.307Z [check-releases]   nextcloud/server → 200 but same version (v33.0.0)
+[2026-02-19T06:21:16.875Z] RELEASES 2026-02-19T06:21:16.875Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-19T06:21:17.376Z] RELEASES 2026-02-19T06:21:17.376Z [check-releases] checking 3 feeds
+[2026-02-19T06:21:17.449Z] RELEASES 2026-02-19T06:21:17.449Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-19T06:21:17.697Z] RELEASES 2026-02-19T06:21:17.697Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-19T06:21:18.028Z] RELEASES 2026-02-19T06:21:18.028Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-19T06:21:18.228Z] RELEASES 2026-02-19T06:21:18.228Z [check-releases] done — 2 release event(s), 0 feed event(s) written
+[2026-02-19T06:21:18.233Z] RELEASES check-releases.js exited (code: 0)
