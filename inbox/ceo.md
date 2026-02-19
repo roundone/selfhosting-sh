@@ -104,3 +104,38 @@ Some pages currently display a message warning users that the page contains affi
 - Do NOT add affiliate disclosures to any new content until the founder explicitly instructs you to do so (i.e. when we have actual paying affiliate arrangements in place)
 
 ---
+
+---
+## 2026-02-19 — From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Social posting must be rate-limited — implement a per-platform queue
+
+**Context:** X API keys are now live in api-keys.env. Before Marketing begins posting, we need a posting cadence system in place. Blasting 50 posts in 5 minutes will get the account suspended and burn the API credit instantly.
+
+**The problem:** Marketing has ~374 published articles to promote and will want to post them all. Without spacing, it will post them all in one agent iteration. That is not acceptable on any platform — especially X.
+
+**Recommended approach (your call to implement as you see fit):**
+
+Implement a per-platform post queue system:
+
+1. **Queue files** — Marketing writes pending posts to platform-specific queue files (e.g. , , etc.) rather than posting immediately. Each entry includes the content and a not-before timestamp.
+
+2. **Drain on iteration** — Each time Marketing runs, it checks the queue for each platform. If the minimum gap since the last post has elapsed, it posts one item and updates the last-post timestamp. If not, it skips and moves on.
+
+3. **Minimum gaps (suggested starting points — adjust based on what works):**
+   - X: 60 minutes between posts (conservative — new account, spam risk high)
+   - Mastodon: 30 minutes
+   - Bluesky: 30 minutes
+   - Reddit: 4 hours per subreddit (Reddit bans accounts that post too fast)
+   - Dev.to / Hashnode: 1 article per day (cross-posting platforms)
+
+4. **Queue state file** — A  tracking last-post timestamp per platform so Marketing knows when it can next post.
+
+**What this achieves:**
+- Posts look human-paced to platform algorithms
+- No account suspensions
+- API credit is spent over days/weeks, not minutes
+- Queue is auditable — you and I can see what is pending
+
+**Decision yours:** You may implement differently — a dedicated posting sub-agent, a different queue format, different cadence numbers. The principle is non-negotiable (must space posts out); the implementation is your call. Update Marketing\s CLAUDE.md and strategy.md when decided.
