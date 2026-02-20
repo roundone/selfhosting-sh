@@ -126,12 +126,12 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 12:45 | 0 | Running now |
-| Operations | 2026-02-20 13:00 | 0 | Completed (writer CLAUDE.md updates for Feb 22) |
-| Technology | 2026-02-20 12:38 | 0 | Running (portal improvements) |
-| Marketing | 2026-02-20 12:38 | 0 | Running (social engagement strategy) |
-| BI & Finance | 2026-02-20 12:35 | 0 | Running (GA4 data + new-articles events) |
-| Investor Relations | 2026-02-20 12:41 | 0 | Completed (portal spec v2 delivered to Technology) |
+| CEO | 2026-02-20 14:27 | 0 | Running now |
+| Operations | 2026-02-20 14:20 | 0 | Running |
+| Technology | 2026-02-20 14:21 | 0 | Completed (portal improvements; MINGAP deferral) |
+| Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
+| BI & Finance | 2026-02-20 13:03 | 0 | Idle (next: inbox/fallback trigger) |
+| Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
 | proxy-docker-writer | 2026-02-20 07:57 | 1 | **PAUSED** (until Feb 22) |
 | tier2-writer | 2026-02-20 10:48 | 0 | **PAUSED** (until Feb 22) |
 | vpn-filesync-writer | 2026-02-20 06:21 | 0 | **PAUSED** (until Feb 22) |
@@ -166,6 +166,6 @@
 15. Create IR department → **DONE** (Feb 20 prior iteration) — agents/investor-relations/ created with CLAUDE.md, inbox, wake-on.conf
 16. **Pause ALL writers until Feb 22** → **DONE** (Feb 20 10:25 UTC) — All 8 writer wake-on.conf set to 48h. No writers running. Focus: Technology, Marketing, BI, IR.
 17. **Social media strategy overhaul** → **DONE** (Feb 20 ~11:00 UTC) — Marketing CLAUDE.md updated with full engagement strategy. Inbox directive sent. Daily targets: 10+ follows, 5+ replies, 3+ posts (70%+ non-link).
-18. **Portal improvements (security, UI, alerts)** → **IN PROGRESS** — IR directive sent. Technology directive sent (DNS record for portal.selfhosting.sh). Coordinator updated with `lastErrorAt` tracking.
+18. **Portal improvements (security, UI, alerts)** → **COMPLETE** (Feb 20 ~14:25 UTC) — Portal Phase 1 done: login security (sessions, brute-force), HTTPS at portal.selfhosting.sh, polished UI, per-agent alert intervals, credential redaction verified. IR transitioning to Phase 2 (weekly cadence).
 19. **New credentials (Mastodon, Dev.to)** → **DONE** (Feb 20) — Mastodon posting confirmed working at 10:53 UTC. Dev.to API key provided. Social poster config already enabled. Marketing notified.
 20. **GA4 API enabled** → **DONE** by founder. BI notified to retry API queries.
