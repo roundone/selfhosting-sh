@@ -2,13 +2,13 @@
 ## Last Updated: 2026-02-20 09:55 UTC
 
 ## Content
-- **Total articles on disk: 740** (197 apps + 260 compare + 105 foundations + 91 hardware + 54 replace + 23 best + 7 troubleshooting)
+- **Total articles on disk: 759** (197 apps + 260 compare + 105 foundations + 110 hardware + 54 replace + 23 best + 7 troubleshooting)
 - In progress: Hardware writer active (1 of 1 writer slot). Operations processing writer-complete event for container-orch + automation.
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
 - **Writer pipeline THROTTLED** — Founder override: max 1 concurrent writer (was 4), 8h fallback (was 1h). Only 1 writer at a time.
-- Velocity: +89 articles today (container-orch/automation writer produced 24, hardware writer now active and producing).
-- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). Need ~760 more articles by Feb 28 (~95/day for 8 days).
-- Topic map: 1,224 planned across 78 categories, ~740 published = ~60% of topic map
+- Velocity: +108 articles today (container-orch/automation writer produced 24, hardware writer active and producing ~19 more since last check).
+- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). Need ~741 more articles by Feb 28 (~93/day for 8 days).
+- Topic map: 1,224 planned across 78 categories, ~759 published = ~62% of topic map
 - Categories with content: 22+ / 78 (AI/ML, Search Engines, Automation & Workflows COMPLETE; Container Orchestration 13/16)
 
 ## Category Completion Status
@@ -19,7 +19,7 @@
 | Docker Management | 13 | 13 | 100% | COMPLETE |
 | Reverse Proxy & SSL | 13 | 13 | 100% | COMPLETE |
 | Password Management | 13 | 13 | 100% | COMPLETE |
-| Hardware | 74 | 25 | 296% | COMPLETE (expanded) |
+| Hardware | 91+ | 25 | 364%+ | COMPLETE (expanding further) |
 | Ad Blocking & DNS | 10 | 11 | 90% | Nearly complete |
 | Note Taking & Knowledge | 17 | 21 | 80% | In progress |
 | File Sync & Storage | 12 | 16 | 75% | In progress |
@@ -52,7 +52,7 @@
 - URL: https://selfhosting.sh (custom domain WORKING — HTTP/2 200, SSL active)
 - Fallback URL: https://selfhosting-sh.pages.dev
 - Framework: Astro 5.17.2
-- Auto-deploy: ACTIVE
+- Auto-deploy: ACTIVE (systemd timer, every 30 min — replaced OOM-crashed loop process Feb 20)
 - Cloudflare Pages project: selfhosting-sh
 - Custom domains: selfhosting.sh (ACTIVE), www.selfhosting.sh (ACTIVE)
 - SSL: ACTIVE
@@ -124,9 +124,9 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 09:50 | 0 | Running now |
+| CEO | 2026-02-20 10:10 | 0 | Running now |
 | Operations | 2026-02-20 09:47 | 1 | Running (triggered by writer-complete event) |
-| Technology | 2026-02-20 09:47 | 0 | Pending trigger (completed IR portal build) |
+| Technology | 2026-02-20 10:08 | 0 | Completed (deploy pipeline fix — systemd timer) |
 | Marketing | 2026-02-20 06:56 | 0 | Idle (8h fallback) |
 | BI & Finance | 2026-02-20 06:54 | 0 | Idle (8h fallback) |
 | Investor Relations | — | — | Not yet discovered by coordinator (code fix staged) |

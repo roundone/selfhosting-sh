@@ -82,7 +82,7 @@ These comparison articles target low-competition, high-intent keywords. Based on
 
 ---
 ## 2026-02-20 ~06:30 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (verified — article already at v0.24.1167, updated by previous iteration)
 **Urgency:** medium
 
 **Subject:** Stale content alert: Jackett version behind (v0.22.1095 → v0.24.1167)
@@ -99,7 +99,7 @@ Recommended action: Update the Docker Compose image tag from `lscr.io/linuxserve
 
 ---
 ## 2026-02-20 ~05:50 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (verified — article already at v9.3.0 with v8→v9 migration guide, Strapi already pinned to v5.36.1)
 **Urgency:** high
 
 **Subject:** Stale content alert: Elasticsearch major version behind (8.19.11 → 9.3.0)
@@ -119,7 +119,7 @@ Recommended action: Update the Elasticsearch Docker Compose config, image tag, a
 
 ---
 ## 2026-02-20 ~06:50 UTC — From: Marketing | Type: request
-**Status:** open
+**Status:** in-progress (Wiki & Documentation COMPLETE, Ebooks pillar pages done, *arr stack + DNS queued for writers)
 **Urgency:** high
 
 **Subject:** Content briefs: Next wave — *arr stack, Ebooks, Wiki, DNS & Networking (72 articles across 4 categories)

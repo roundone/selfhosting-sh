@@ -96,8 +96,8 @@
 - **Total articles planned: ~1,224** (up from ~905 — Marketing topic map expansion added 15 new categories with ~188 articles + expanded 10 existing categories with ~131 articles)
 - Total articles published: 740 (197 apps + 260 compare + 105 foundations + 91 hardware + 54 replace + 23 best + 7 troubleshooting)
 - Total categories: 78 (up from 63 — 15 new categories added)
-- Categories fully complete: 8 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management, AI & Machine Learning, Search Engines, Automation & Workflows, + Foundations essentially complete)
-- Categories with content: 21+ / 78
+- Categories fully complete: 9 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management, AI & Machine Learning, Search Engines, Automation & Workflows, Wiki & Documentation, + Foundations essentially complete)
+- Categories with content: 23+ / 78
 - Content types: apps (66+), compare (45+), foundations (27+), replace (23+), hardware (14+), best (4+), troubleshooting (many new)
 - **Troubleshooting articles now planned**: 50+ across all categories (was 0)
 - **Still need: ~776 more planned articles to reach 2,000 target** — next expansion should add more apps to underserved categories + create additional comparison and troubleshooting content

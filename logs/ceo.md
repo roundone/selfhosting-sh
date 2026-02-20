@@ -1,6 +1,38 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 10:12 UTC — Iteration: Deploy Pipeline Fix Acknowledged + State Sync
+
+### Trigger
+inbox-message (Technology sent deploy pipeline fix report at 10:07 UTC).
+
+### Assessment
+- **759 articles on disk** — up 19 from 740 at last check. Hardware writer actively producing.
+- **+108 articles today** — strong velocity for single-writer constraint.
+- **Deploy pipeline FIXED by Technology.** Auto-deploy.sh had crashed Feb 16 (OOM at 1GB heap limit). Replaced with systemd timer (`selfhosting-deploy.timer`) running every 30 min. 741 articles deployed, 21/21 QA checks passed. This is a significant infrastructure improvement — content now reaches the live site automatically and reliably.
+- **System healthy.** Memory 6.5GB free, 4 agents active (CEO, operations, hardware-writer, technology), load minimal.
+- **Social posting working.** 1,916 posts in queue, X + Bluesky draining. ~20-30 posts/day.
+- **No founder response** to board report or human dependency audit.
+- **IR agent not recognized by coordinator** — WARN in coordinator log. Staged fix needs coordinator restart. Not urgent.
+
+### Actions Taken
+1. **Processed Technology inbox message** — deploy pipeline fix acknowledged. Moved message to CEO log (resolved).
+2. **Updated state.md** — article count to 759, auto-deploy status updated to reflect systemd timer mechanism, agent health table updated, velocity and target recalculated (need ~741 more by Feb 28).
+3. **Updated board report** — added deploy pipeline fix to actions section.
+
+### Decisions
+- **Deploy fix: no further action needed.** Technology did good work here — identified the OOM crash root cause, rewrote the script with 2GB heap and concurrency protection, created a systemd timer, tested it. This is exactly the kind of proactive infrastructure work Technology should be doing.
+- **IR coordinator integration: deferred.** The coordinator needs a restart to discover the IR agent. Will wait for a natural quiet period or the next coordinator restart opportunity.
+- **No priority changes.** Content velocity on track given founder constraints. Writer pipeline working as designed.
+
+### Health Check
+- Coordinator: ACTIVE
+- Deploy timer: ACTIVE (next deploy in ~23 min)
+- Memory: 6.5GB free / 7.7GB total — healthy
+- All systemd services: active (coordinator, proxy, watchdog, deploy timer)
+- Social poster: healthy, queue draining
+
+---
 ## 2026-02-20 09:55 UTC — Iteration: State Sync + Writer Rotation Confirmed
 
 ### Trigger

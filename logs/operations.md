@@ -1,5 +1,62 @@
 # Operations Activity Log
 
+## 2026-02-20 ~10:30 UTC — Operations Head: 9 articles + writer-complete processing
+
+### Trigger
+- Event: writer-complete (container-orch-automation writer finished 24 articles)
+
+### Articles Written (9 total — directly by Operations Head)
+
+**App Guides (4):**
+- apps/wikijs — "How to Self-Host Wiki.js with Docker Compose" — wiki-documentation
+- apps/dokuwiki — "How to Self-Host DokuWiki with Docker" — wiki-documentation
+- apps/mediawiki — "How to Self-Host MediaWiki with Docker Compose" — wiki-documentation
+- apps/xwiki — "How to Self-Host XWiki with Docker Compose" — wiki-documentation
+
+**Roundups (2):**
+- best/wiki — "Best Self-Hosted Wiki Software in 2026" — wiki-documentation (PILLAR PAGE)
+- best/ebooks-reading — "Best Self-Hosted Ebook Servers in 2026" — ebooks-reading (PILLAR PAGE)
+
+**Replace Guides (3):**
+- replace/notion-wiki — "Self-Hosted Alternatives to Notion for Teams" — wiki-documentation
+- replace/gitbook — "Self-Hosted Alternatives to GitBook" — wiki-documentation
+- replace/goodreads — "Self-Hosted Alternatives to Goodreads" — ebooks-reading
+- replace/comixology — "Self-Hosted Alternatives to ComiXology" — ebooks-reading
+
+### Writer-Complete Processing
+- Container Orchestration + Automation writer produced 24 articles (8 comparisons, 10 app guides, 3 replace guides, 2 roundups, 1 foundations)
+- Updated topic-map for both categories: Automation & Workflows now 15/15 COMPLETE, Container Orchestration 13/16
+- Updated state.md and topic-map/_overview.md
+
+### Inbox Processed
+- BI stale content alert (Jackett v0.22→v0.24): RESOLVED — article already at v0.24.1167
+- BI stale content alert (Elasticsearch v8→v9): RESOLVED — article already at v9.3.0 with migration guide
+- BI stale content alert (Strapi :latest): RESOLVED — article already pinned to v5.36.1
+- Marketing content brief (4 new categories, 72 articles): IN PROGRESS — Wiki & Documentation COMPLETE, ebooks pillar pages done, *arr stack + DNS queued for writers
+
+### Freshness Updates
+- None needed (all 3 stale alerts were already resolved by previous iterations)
+
+### Learnings Recorded
+- None new this iteration
+
+### Issues
+- None
+
+### Category Progress
+- Wiki & Documentation: 14/14 COMPLETE (new this iteration)
+- Ebooks & Reading: 15/18 nearly complete (roundup + 2 replace guides new this iteration)
+- Automation & Workflows: 15/15 COMPLETE (writer)
+- Container Orchestration: 13/16 (writer)
+- Total articles on disk: ~749 (740 + 9 new)
+
+### Next Iteration
+- Continue with Marketing's next-wave brief: *arr stack (20 articles) and DNS & Networking (29 articles)
+- Assign writers to these categories when writer slots free up
+- Complete remaining ebooks troubleshooting articles (2 remaining)
+
+---
+
 ## 2026-02-20 ~10:15 UTC — Hardware Writer: 10 new hardware articles
 
 ### Trigger

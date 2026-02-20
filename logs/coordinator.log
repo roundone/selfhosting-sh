@@ -5608,3 +5608,91 @@
 [2026-02-20T10:12:14.061Z] QUEUED operations already running — trigger queued: operations-writer-complete-hardware-20260220T101212Z.json
 [2026-02-20T10:12:44.409Z] INBOX technology.md modified → technology
 [2026-02-20T10:12:44.409Z] MINGAP technology — only 247s since last run (min: 5min), deferring 53s
+[2026-02-20T10:13:06.078Z] AGENT ops-hardware-writer exited (code=0, duration: 1541s)
+[2026-02-20T10:13:06.078Z] STATE ops-hardware-writer lastRun updated, errors reset
+[2026-02-20T10:13:06.078Z] WRITER_SLOT ops-proxy-docker-writer — writer slot freed by ops-hardware-writer
+[2026-02-20T10:13:06.078Z] AGENT ops-proxy-docker-writer starting (trigger: writer-slot-available)
+[2026-02-20T10:13:06.079Z] AGENT ops-proxy-docker-writer started (pid: 43755)
+[2026-02-20T10:13:07.071Z] EVENT bi-finance-new-articles-20260220T101305Z.json → bi-finance
+[2026-02-20T10:13:07.071Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T101305Z.json)
+[2026-02-20T10:13:07.073Z] AGENT bi-finance started (pid: 43778)
+[2026-02-20T10:13:07.073Z] EVENT technology-deploy-20260220T101305Z.json → technology
+[2026-02-20T10:13:07.073Z] CONCURRENCY technology — 4/4 agents running, queued
+[2026-02-20T10:13:10.870Z] STATUS running=4/4 writers=1/1 freeMem=6392MB agents=[operations(1560s), ceo(164s), ops-proxy-docker-writer(5s), bi-finance(4s)] paused=no
+[2026-02-20T10:13:10.873Z] SOCIAL running social-poster.js
+[2026-02-20T10:13:10.903Z] SOCIAL 2026-02-20T10:13:10.901Z [social-poster] starting
+[2026-02-20T10:13:10.911Z] SOCIAL 2026-02-20T10:13:10.911Z [social-poster] queue has 1916 posts
+[2026-02-20T10:13:11.262Z] SOCIAL 2026-02-20T10:13:11.262Z [social-poster] OK bluesky: posted "Step-by-step guide to running Beszel on your own server. Doc..."
+[2026-02-20T10:13:11.276Z] SOCIAL 2026-02-20T10:13:11.276Z [social-poster] removed 1 posted items from queue (1915 remaining)
+[2026-02-20T10:13:11.276Z] SOCIAL 2026-02-20T10:13:11.276Z [social-poster] done — 1 attempted, 1 succeeded, 1915 remaining in queue
+[2026-02-20T10:13:11.283Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T10:13:37.415Z] CONCURRENCY technology — 4/4 agents running, queued
+[2026-02-20T10:13:49.106Z] INBOX ceo.md modified → ceo
+[2026-02-20T10:13:49.106Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T10:14:24.275Z] INBOX technology.md modified → technology
+[2026-02-20T10:14:24.275Z] CONCURRENCY technology — 4/4 agents running, queued
+[2026-02-20T10:14:49.244Z] INBOX marketing.md modified → marketing
+[2026-02-20T10:14:49.244Z] CONCURRENCY marketing — 4/4 agents running, queued
+[2026-02-20T10:15:24.223Z] INBOX operations.md modified → operations
+[2026-02-20T10:15:24.223Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T10:15:37.006Z] INBOX operations.md modified → operations
+[2026-02-20T10:15:37.006Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T10:15:58.721Z] INBOX operations.md modified → operations
+[2026-02-20T10:15:58.721Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T10:17:31.566Z] INBOX ceo.md modified → ceo
+[2026-02-20T10:17:31.566Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T10:18:10.879Z] STATUS running=4/4 writers=1/1 freeMem=6307MB agents=[operations(1860s), ceo(464s), ops-proxy-docker-writer(305s), bi-finance(304s)] paused=no
+[2026-02-20T10:18:10.880Z] FALLBACK ops-homeauto-notes-writer — 8h since last run (2 due, starting up to 2)
+[2026-02-20T10:18:10.880Z] CONCURRENCY ops-homeauto-notes-writer — 4/4 agents running, queued
+[2026-02-20T10:18:10.880Z] FALLBACK ops-password-adblock-writer — 8h since last run (2 due, starting up to 2)
+[2026-02-20T10:18:10.880Z] CONCURRENCY ops-password-adblock-writer — 4/4 agents running, queued
+[2026-02-20T10:18:10.880Z] RELEASES running check-releases.js
+[2026-02-20T10:18:10.882Z] SOCIAL running social-poster.js
+[2026-02-20T10:18:10.918Z] RELEASES 2026-02-20T10:18:10.915Z [check-releases] starting
+[2026-02-20T10:18:10.918Z] SOCIAL 2026-02-20T10:18:10.916Z [social-poster] starting
+[2026-02-20T10:18:10.919Z] RELEASES 2026-02-20T10:18:10.919Z [check-releases] checking 29 GitHub repos
+[2026-02-20T10:18:10.928Z] SOCIAL 2026-02-20T10:18:10.928Z [social-poster] queue has 1915 posts
+[2026-02-20T10:18:11.013Z] RELEASES 2026-02-20T10:18:11.013Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T10:18:11.156Z] SOCIAL 2026-02-20T10:18:11.156Z [social-poster] OK x: posted "Google Photos free tier: 15GB shared across Gmail and Drive...."
+[2026-02-20T10:18:11.165Z] SOCIAL 2026-02-20T10:18:11.165Z [social-poster] removed 1 posted items from queue (1914 remaining)
+[2026-02-20T10:18:11.165Z] SOCIAL 2026-02-20T10:18:11.165Z [social-poster] done — 1 attempted, 1 succeeded, 1914 remaining in queue
+[2026-02-20T10:18:11.170Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T10:18:11.242Z] AGENT ops-proxy-docker-writer exited (signal=SIGTERM, duration: 305s)
+[2026-02-20T10:18:11.242Z] BACKOFF ops-proxy-docker-writer error #1, next allowed in 30s
+[2026-02-20T10:18:11.243Z] WRITER_SLOT ops-homeauto-notes-writer — writer slot freed by ops-proxy-docker-writer
+[2026-02-20T10:18:11.243Z] AGENT ops-homeauto-notes-writer starting (trigger: writer-slot-available)
+[2026-02-20T10:18:11.244Z] AGENT ops-homeauto-notes-writer started (pid: 44739)
+[2026-02-20T10:18:11.567Z] RELEASES 2026-02-20T10:18:11.567Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T10:18:12.180Z] RELEASES 2026-02-20T10:18:12.180Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T10:18:12.789Z] RELEASES 2026-02-20T10:18:12.789Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T10:18:13.345Z] RELEASES 2026-02-20T10:18:13.344Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T10:18:13.897Z] RELEASES 2026-02-20T10:18:13.897Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T10:18:14.463Z] RELEASES 2026-02-20T10:18:14.463Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T10:18:15.043Z] RELEASES 2026-02-20T10:18:15.043Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T10:18:15.604Z] RELEASES 2026-02-20T10:18:15.604Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T10:18:16.177Z] RELEASES 2026-02-20T10:18:16.177Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T10:18:16.726Z] RELEASES 2026-02-20T10:18:16.726Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T10:18:17.336Z] RELEASES 2026-02-20T10:18:17.336Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-20T10:18:17.891Z] RELEASES 2026-02-20T10:18:17.891Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T10:18:18.467Z] RELEASES 2026-02-20T10:18:18.467Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T10:18:19.026Z] RELEASES 2026-02-20T10:18:19.026Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T10:18:19.582Z] RELEASES 2026-02-20T10:18:19.582Z [check-releases]   open-webui/open-webui → 200 but same version (v0.8.3)
+[2026-02-20T10:18:20.150Z] RELEASES 2026-02-20T10:18:20.149Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T10:18:20.717Z] RELEASES 2026-02-20T10:18:20.717Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T10:18:21.447Z] RELEASES 2026-02-20T10:18:21.447Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T10:18:22.028Z] RELEASES 2026-02-20T10:18:22.027Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T10:18:22.597Z] RELEASES 2026-02-20T10:18:22.597Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T10:18:23.161Z] RELEASES 2026-02-20T10:18:23.161Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T10:18:23.710Z] RELEASES 2026-02-20T10:18:23.710Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T10:18:24.313Z] RELEASES 2026-02-20T10:18:24.313Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T10:18:24.873Z] RELEASES 2026-02-20T10:18:24.872Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T10:18:25.435Z] RELEASES 2026-02-20T10:18:25.434Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T10:18:26.012Z] RELEASES 2026-02-20T10:18:26.012Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T10:18:26.569Z] RELEASES 2026-02-20T10:18:26.569Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T10:18:27.125Z] RELEASES 2026-02-20T10:18:27.125Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T10:18:27.626Z] RELEASES 2026-02-20T10:18:27.626Z [check-releases] checking 3 feeds
+[2026-02-20T10:18:27.706Z] RELEASES 2026-02-20T10:18:27.706Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T10:18:28.027Z] RELEASES 2026-02-20T10:18:28.027Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T10:18:28.380Z] RELEASES 2026-02-20T10:18:28.380Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T10:18:28.581Z] RELEASES 2026-02-20T10:18:28.580Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T10:18:28.586Z] RELEASES check-releases.js exited (code: 0)
