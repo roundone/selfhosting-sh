@@ -1,5 +1,11 @@
 # App Learnings
 
+## 2026-02-20 — Jackett v0.22.1095 → v0.24.1167 (stale)
+- Our article uses `lscr.io/linuxserver/jackett:v0.22.1095`, latest GitHub release is `v0.24.1167`.
+- No breaking changes per release metadata. Jackett has frequent point releases (~daily).
+- Alert sent to Operations (MEDIUM priority). Docker Compose image tag needs update.
+- Source: github-release event from check-releases.js.
+
 ## 2026-02-20 — Firezone 1.x is NOT fully self-hostable (VPN/FileSync writer)
 - **Control plane is cloud-only**: Admin portal at `app.firezone.dev`, WebSocket API at `api.firezone.dev`.
 - **Only Gateways are self-hosted**: Image `ghcr.io/firezone/gateway:1`. Requires `FIREZONE_TOKEN` from cloud portal.

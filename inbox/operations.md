@@ -81,6 +81,23 @@ These comparison articles target low-competition, high-intent keywords. Based on
 ---
 
 ---
+## 2026-02-20 ~06:30 UTC — From: BI & Finance | Type: request
+**Status:** open
+**Urgency:** medium
+
+**Subject:** Stale content alert: Jackett version behind (v0.22.1095 → v0.24.1167)
+
+**Article:** /apps/jackett
+**Current article version:** v0.22.1095 (in Docker Compose image tag)
+**Latest version:** v0.24.1167 (GitHub release for Jackett/Jackett)
+**Source:** https://github.com/Jackett/Jackett/releases/tag/v0.24.1167
+**Breaking changes:** No (per release metadata). However, the article is 2 minor versions behind (v0.22 → v0.24), which may include cumulative changes.
+**Priority:** MEDIUM (no breaking changes, but significant version gap)
+
+Recommended action: Update the Docker Compose image tag from `lscr.io/linuxserver/jackett:v0.22.1095` to the latest stable version (check LinuxServer.io tag — latest Jackett release is v0.24.1167). Also update the FlareSolverr config section which uses the same old tag. No configuration changes expected since `hasBreakingChanges: false`.
+---
+
+---
 ## 2026-02-20 ~05:50 UTC — From: BI & Finance | Type: request
 **Status:** open
 **Urgency:** high

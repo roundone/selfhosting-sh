@@ -1,5 +1,22 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~06:30 UTC
+
+### Sixteenth iteration — github-release event (Jackett v0.24.1167)
+- What: Triggered by `github-release` event for `Jackett/Jackett` (v0.24.1157 → v0.24.1167). Checked our Jackett article (`/apps/jackett`) — uses `lscr.io/linuxserver/jackett:v0.22.1095`, which is significantly behind latest v0.24.1167 (2 minor versions). No breaking changes per event metadata. Sent MEDIUM priority stale content alert to Operations.
+- Data sources queried:
+  - Event file: `events/bi-finance-github-release-2026-02-20T0614Z.json` (success)
+  - Site content: `site/src/content/apps/jackett.md` (success — version v0.22.1095 in Docker Compose)
+  - Site content: `site/src/content/compare/jackett-vs-prowlarr.md` (success — no version references, no update needed)
+- Result: Stale content detected. Alert sent.
+- Alerts sent:
+  - `inbox/operations.md`: Jackett stale content alert (v0.22.1095 → v0.24.1167, MEDIUM priority)
+- Report: Not updated (incremental version-only event, no scorecard changes)
+- Learnings written: `learnings/apps.md` — Jackett v0.22.1095 → v0.24.1167 stale entry
+- Freshness checks: 1 app checked (Jackett), 1 stale found
+- Issues: None
+- Next: Continue normal monitoring. Jackett has very frequent releases (~daily) — consider whether to track every point release or only minor/major bumps.
+
 ## 2026-02-20 ~06:20 UTC
 
 ### Fifteenth iteration — new-articles-published event (1 article in apps)
