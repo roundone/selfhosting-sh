@@ -6345,3 +6345,7 @@ docker run --rm -v myvolume..."
 [2026-02-20T13:02:42.700Z] QUEUED investor-relations already running — trigger queued: inbox-message
 [2026-02-20T13:02:42.700Z] INBOX technology.md modified → technology
 [2026-02-20T13:02:42.700Z] MINGAP technology — only 137s since last run (min: 5min), deferring 163s
+[2026-02-20T13:03:07.990Z] AGENT investor-relations exited (code=0, duration: 369s)
+[2026-02-20T13:03:07.990Z] STATE investor-relations lastRun updated, errors reset
+[2026-02-20T13:03:07.990Z] PENDING investor-relations processing queued trigger
+[2026-02-20T13:03:07.990Z] MINGAP investor-relations — only 0s since last run (min: 5min), deferring 300s
