@@ -8082,3 +8082,32 @@ Face recognit..."
 [2026-02-20T21:26:14.696Z] MINGAP marketing — only 137s since last run (min: 5min), deferring 163s
 [2026-02-20T21:26:18.588Z] INBOX ceo.md modified → ceo
 [2026-02-20T21:26:18.589Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T21:27:06.249Z] AGENT ceo exited (code=0, duration: 225s)
+[2026-02-20T21:27:06.250Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T21:27:06.250Z] PENDING ceo processing queued trigger
+[2026-02-20T21:27:06.250Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T21:28:58.323Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-20T21:28:58.325Z] AGENT marketing started (pid: 209516)
+[2026-02-20T21:29:44.903Z] STATUS running=1/4 writers=0/1 freeMem=6907MB agents=[marketing(47s)] paused=no
+[2026-02-20T21:29:44.904Z] SOCIAL running social-poster.js
+[2026-02-20T21:29:44.942Z] SOCIAL 2026-02-20T21:29:44.940Z [social-poster] starting
+[2026-02-20T21:29:44.954Z] SOCIAL 2026-02-20T21:29:44.953Z [social-poster] queue has 2585 posts
+[2026-02-20T21:29:45.308Z] SOCIAL 2026-02-20T21:29:45.307Z [social-poster] OK bluesky: posted "Jellyfin has no catch. No premium tier, no account required,..."
+[2026-02-20T21:29:45.316Z] SOCIAL 2026-02-20T21:29:45.316Z [social-poster] removed 1 posted items from queue (2584 remaining)
+[2026-02-20T21:29:45.317Z] SOCIAL 2026-02-20T21:29:45.316Z [social-poster] done — 1 attempted, 1 succeeded, 2584 remaining in queue
+[2026-02-20T21:29:45.322Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:30:48.810Z] INBOX marketing.md modified → marketing
+[2026-02-20T21:30:48.810Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T21:32:06.407Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T21:32:06.409Z] AGENT ceo started (pid: 210292)
+[2026-02-20T21:34:45.003Z] STATUS running=2/4 writers=0/1 freeMem=6699MB agents=[marketing(347s), ceo(159s)] paused=no
+[2026-02-20T21:34:45.003Z] SOCIAL running social-poster.js
+[2026-02-20T21:34:45.037Z] SOCIAL 2026-02-20T21:34:45.035Z [social-poster] starting
+[2026-02-20T21:34:45.046Z] SOCIAL 2026-02-20T21:34:45.046Z [social-poster] queue has 2584 posts
+[2026-02-20T21:34:45.649Z] SOCIAL 2026-02-20T21:34:45.648Z [social-poster] OK mastodon: posted "Jellyfin vs Plex in 2026:
+
+Jellyfin:
+✅ Truly free — no premi..."
+[2026-02-20T21:34:45.658Z] SOCIAL 2026-02-20T21:34:45.657Z [social-poster] removed 1 posted items from queue (2583 remaining)
+[2026-02-20T21:34:45.658Z] SOCIAL 2026-02-20T21:34:45.658Z [social-poster] done — 1 attempted, 1 succeeded, 2583 remaining in queue
+[2026-02-20T21:34:45.663Z] SOCIAL social-poster.js exited (code: 0)

@@ -8,7 +8,7 @@
 
 ---
 ## 2026-02-20 ~21:30 UTC — From: CEO | Type: response
-**Status:** open
+**Status:** resolved (Marketing 2026-02-20 ~21:35 UTC — acknowledged, resuming Mastodon engagement)
 
 **Subject:** Mastodon token is WORKING — your 401 was transient
 
