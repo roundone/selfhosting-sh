@@ -7822,3 +7822,56 @@ iCloud..."
 [2026-02-20T20:20:06.851Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-20T20:23:06.711Z] INBOX ceo.md modified → ceo
 [2026-02-20T20:23:06.712Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T20:23:32.344Z] AGENT operations exited (code=0, duration: 245s)
+[2026-02-20T20:23:32.344Z] STATE operations lastRun updated, errors reset
+[2026-02-20T20:23:47.779Z] INBOX bi-finance.md modified → bi-finance
+[2026-02-20T20:23:47.780Z] MINGAP bi-finance — only 297s since last run (min: 5min), deferring 3s
+[2026-02-20T20:23:51.038Z] AGENT bi-finance starting (trigger: inbox-message)
+[2026-02-20T20:23:51.040Z] AGENT bi-finance started (pid: 194990)
+[2026-02-20T20:24:00.287Z] INBOX technology.md modified → technology
+[2026-02-20T20:24:00.287Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T20:24:44.263Z] STATUS running=4/4 writers=0/1 freeMem=6337MB agents=[marketing(583s), ceo(500s), technology(464s), bi-finance(53s)] paused=no
+[2026-02-20T20:24:44.263Z] RELEASES running check-releases.js
+[2026-02-20T20:24:44.265Z] SOCIAL running social-poster.js
+[2026-02-20T20:24:44.297Z] RELEASES 2026-02-20T20:24:44.294Z [check-releases] starting
+[2026-02-20T20:24:44.297Z] RELEASES 2026-02-20T20:24:44.297Z [check-releases] checking 29 GitHub repos
+[2026-02-20T20:24:44.305Z] SOCIAL 2026-02-20T20:24:44.303Z [social-poster] starting
+[2026-02-20T20:24:44.316Z] SOCIAL 2026-02-20T20:24:44.316Z [social-poster] queue has 2540 posts
+[2026-02-20T20:24:44.381Z] RELEASES 2026-02-20T20:24:44.381Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T20:24:44.504Z] SOCIAL 2026-02-20T20:24:44.504Z [social-poster] ERROR mastodon: Mastodon post failed: 422 {"error":"Validation failed: Text character limit of 500 exceeded"}
+[2026-02-20T20:24:44.505Z] SOCIAL 2026-02-20T20:24:44.504Z [social-poster] done — 1 attempted, 0 succeeded, 2540 remaining in queue
+[2026-02-20T20:24:44.512Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:24:44.942Z] RELEASES 2026-02-20T20:24:44.941Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T20:24:45.544Z] RELEASES 2026-02-20T20:24:45.543Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T20:24:46.135Z] RELEASES 2026-02-20T20:24:46.135Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T20:24:46.686Z] RELEASES 2026-02-20T20:24:46.686Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T20:24:47.243Z] RELEASES 2026-02-20T20:24:47.242Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T20:24:47.841Z] RELEASES 2026-02-20T20:24:47.840Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T20:24:48.413Z] RELEASES 2026-02-20T20:24:48.412Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T20:24:48.984Z] RELEASES 2026-02-20T20:24:48.984Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T20:24:49.554Z] RELEASES 2026-02-20T20:24:49.553Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T20:24:50.123Z] RELEASES 2026-02-20T20:24:50.123Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T20:24:50.738Z] RELEASES 2026-02-20T20:24:50.737Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T20:24:51.291Z] RELEASES 2026-02-20T20:24:51.291Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T20:24:51.879Z] RELEASES 2026-02-20T20:24:51.879Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T20:24:52.448Z] RELEASES 2026-02-20T20:24:52.448Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T20:24:53.012Z] RELEASES 2026-02-20T20:24:53.012Z [check-releases]   open-webui/open-webui → 200 but same version (v0.8.3)
+[2026-02-20T20:24:53.580Z] RELEASES 2026-02-20T20:24:53.580Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T20:24:54.152Z] RELEASES 2026-02-20T20:24:54.152Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T20:24:54.723Z] RELEASES 2026-02-20T20:24:54.722Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T20:24:55.285Z] RELEASES 2026-02-20T20:24:55.285Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T20:24:55.842Z] RELEASES 2026-02-20T20:24:55.842Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T20:24:56.399Z] RELEASES 2026-02-20T20:24:56.399Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T20:24:56.951Z] RELEASES 2026-02-20T20:24:56.951Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T20:24:57.516Z] RELEASES 2026-02-20T20:24:57.516Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T20:24:58.072Z] RELEASES 2026-02-20T20:24:58.072Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T20:24:58.653Z] RELEASES 2026-02-20T20:24:58.652Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T20:24:59.217Z] RELEASES 2026-02-20T20:24:59.217Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-20T20:24:59.780Z] RELEASES 2026-02-20T20:24:59.780Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T20:25:00.358Z] RELEASES 2026-02-20T20:25:00.358Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T20:25:00.859Z] RELEASES 2026-02-20T20:25:00.859Z [check-releases] checking 3 feeds
+[2026-02-20T20:25:00.930Z] RELEASES 2026-02-20T20:25:00.930Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T20:25:01.211Z] RELEASES 2026-02-20T20:25:01.211Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T20:25:01.546Z] RELEASES 2026-02-20T20:25:01.545Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T20:25:01.746Z] RELEASES 2026-02-20T20:25:01.746Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T20:25:01.752Z] RELEASES check-releases.js exited (code: 0)
