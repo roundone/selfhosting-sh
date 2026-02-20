@@ -1,6 +1,67 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~18:20 UTC — Iteration: Founder directive processing (inbox-message)
+
+**Trigger:** inbox-message — Founder (Nishant) directive with 6 action items
+
+### Founder Directive Received
+Processed comprehensive directive from Nishant covering:
+1. Social queue cleanup
+2. Comment reply system
+3. Following accounts on X
+4. Logo/branding on all profiles
+5. IR portal redesign
+6. Department role clarity/expansion
+
+### Actions Taken
+
+**1. Social Queue Trimmed (DONE)**
+- Queue trimmed from ~1,986 items to 544 items
+- Kept: 376 article link posts (from 133 unique articles across all categories) + 168 non-link posts
+- Selection criteria: category diversity (apps, compare, best, replace, foundations, hardware, troubleshooting), random sampling for variety within each category
+- Current mix: 69% article links, 31% non-link — Marketing directed to generate 400+ non-link posts to reach 70%+ non-link target
+
+**2. Marketing Directive Sent (DONE)**
+- Combined directives 2, 3, 4 into one CRITICAL-urgency inbox message to Marketing
+- Comment reply system: monitor mentions/comments every iteration, 30-50% reply rate, genuine replies
+- Following strategy: 10+ follows/day across platforms
+- Profile branding audit: check all 7 profiles for avatar, header, bio, links, pinned post
+
+**3. Technology Directive Sent (DONE)**
+- Portal redesign requirements written to Technology inbox (HIGH urgency)
+- Social media activity feed (last 30 interactions + next 20 queue items)
+- Remove PIDs, group into collapsible sections
+- CEO dashboard feel, not sysadmin panel
+
+**4. Department CLAUDE.md Files Updated (DONE)**
+- **Marketing CLAUDE.md:** Added to "In Your Scope": social media engagement (not just posting), community management, follower growth strategy, content distribution beyond social, SEO strategy ownership, social profile management
+- **BI-Finance CLAUDE.md:** Added to "In Your Scope": monetization readiness tracking, proactive product insights. Added to reporting section: mandatory actionable insights per report, monetization threshold tracking
+- **CEO CLAUDE.md:** Added job #6: own product decisions. Note about no separate Product/Monetization dept needed yet. Proactive consultation with Marketing and BI.
+
+### Files Changed
+- `queues/social-queue.jsonl` — trimmed from ~1,986 to 544 items
+- `inbox/marketing.md` — new CRITICAL directive (4 action items)
+- `inbox/technology.md` — new HIGH directive (portal redesign)
+- `agents/marketing/CLAUDE.md` — expanded scope section
+- `agents/bi-finance/CLAUDE.md` — expanded scope + reporting sections
+- `CLAUDE.md` — added product ownership responsibility
+
+### Assessment
+All 6 founder directives processed and delegated. No CEO-blocking items remain. Next: departments will execute on their directives in their next iterations. Coordinator will wake them via inbox-message triggers.
+
+### Founder Directives Status Update
+- Directive #26: Social queue cleanup → DONE (CEO handled directly)
+- Directive #27: Comment reply system → DELEGATED to Marketing
+- Directive #28: Follow accounts on X → DELEGATED to Marketing
+- Directive #29: Profile branding audit → DELEGATED to Marketing
+- Directive #30: IR portal redesign → DELEGATED to Technology
+- Directive #31: Department role clarity → DONE (CLAUDE.md files updated)
+
+### Exit
+Clean exit. All inbox items processed. Directives delegated. CLAUDE.md files updated. State.md update pending (below).
+
+---
 ## 2026-02-20 ~17:00 UTC — Iteration: Routine health check (pending-trigger)
 
 **Trigger:** pending-trigger — queued from previous iteration

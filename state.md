@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 15:31 UTC
+## Last Updated: 2026-02-20 18:40 UTC
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -79,7 +79,7 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~1,921 items** (draining — 3 platforms active now; Marketing adding new posts)
+- Queue: **~544 items** (trimmed from ~2,000 by CEO per founder directive — 376 article links + 168 non-link. Marketing directed to add 400+ non-link posts for 70%+ non-link target)
 - **Mastodon: 4 followers, 25 following** (active engagement started — 27 follows, 10 favs, 6 boosts, 5 replies this iteration)
 - **Bluesky: 14 follows, 7 likes, 3 replies** this iteration
 - **Mastodon: 3.4 engagements/post** — dramatically outperforming X (0/post). Self-hosting community active on fediverse.
@@ -130,7 +130,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 15:42 | 0 | Running — resolved founder directive (CLAUDE.md password + Running:0 fix) |
+| CEO | 2026-02-20 18:40 | 0 | Running — processed 6-item founder directive (queue trim, social overhaul, portal, dept roles) |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 17:00 | 0 | Completed (Portal v3: Growth + Instructions pages) |
 | Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
@@ -178,3 +178,9 @@
 23. **Portal CLAUDE.md access + Growth metrics dashboard** → **COMPLETE** (Feb 20 ~17:00 UTC) — CLAUDE.md viewer LIVE with extra password layer. Growth dashboard LIVE at `/growth` (GSC+GA4+Social data, 6 top-line cards, sparklines, cached APIs). Agent Instructions LIVE at `/instructions` (14 agents, CEO editable). Portal v3 with 11 pages.
 24. **CLAUDE.md extra password + Running:0 fix** → **DONE** (Feb 20 ~15:42 UTC) — Separate password generated and stored. Portal CLAUDE.md section requires additional auth. Coordinator persists running state. Credentials emailed to founder.
 25. **Newsletter subscribe broken — implement or remove** → **COMPLETE** (Feb 20 ~16:42 UTC) — Full pipeline LIVE: CF Pages Functions → VPS portal storage. Subscribe/unsubscribe working. Newsletter sending script ready. Marketing content strategy pending. VPS storage used (Resend API key send-only, CF token lacks KV scope — both Requires:human optional upgrades).
+26. **Social queue cleanup** → **DONE** (Feb 20 ~18:20 UTC) — CEO trimmed queue from ~2,000 to 544 items (376 article links from 133 unique articles + 168 non-link). Marketing directed to add 400+ non-link posts.
+27. **Comment reply system** → **DELEGATED to Marketing** (Feb 20 ~18:20 UTC) — Directive sent. Monitor/reply every iteration, 30-50% reply rate.
+28. **Follow accounts on X/Bluesky/Mastodon** → **DELEGATED to Marketing** (Feb 20 ~18:20 UTC) — Directive sent. 10+/day target.
+29. **Profile branding audit** → **IN PROGRESS** — Marketing audited all 7 platforms. Critical gap: no logo exists. Technology directed to create logo + header. Marketing proceeding with bio/link/pin fixes.
+30. **IR portal redesign** → **DELEGATED to Technology** (Feb 20 ~18:25 UTC) — Full spec sent: social activity feed, collapsible sections, CEO dashboard UX.
+31. **Department role clarity** → **DONE** (Feb 20 ~18:30 UTC) — Marketing CLAUDE.md expanded (engagement, community mgmt, follower growth, distribution). BI-Finance CLAUDE.md expanded (monetization readiness, proactive insights). CEO CLAUDE.md updated (product ownership).

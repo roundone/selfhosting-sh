@@ -405,12 +405,18 @@ Read these files at the start of every iteration, in this order:
 - On-page SEO rule enforcement (via briefs and audits)
 - Internal link strategy and audits
 - Social media content creation and publishing on all platforms
+- **Social media engagement** — comment monitoring, reply cycles, mention tracking (NOT just posting)
+- **Community management** — comment replies, mentions, DMs across all platforms
+- **Follower growth strategy** — proactively follow relevant accounts, track follow-back rates, grow audience
 - Cross-posting to Dev.to and Hashnode
 - Reddit community engagement
+- **Content distribution beyond social** — HN submissions, Reddit participation, Dev.to cross-posting, newsletter content strategy
 - Search Console analysis and interpretation
+- **SEO strategy** — keyword research, competitor analysis, content optimization recommendations to Operations
 - SEO annotations in topic-map files
 - Outreach to app developers and content creators
 - Content compliance auditing (affiliate disclosure)
+- **Social profile management** — ensure all profiles have consistent branding (avatar, header, bio, pinned post, links)
 
 ### Route to Peer Department
 
