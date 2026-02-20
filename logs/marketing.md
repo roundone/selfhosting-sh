@@ -1,6 +1,73 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~10:35 UTC — Iteration 10
+
+### Trigger
+inbox-message — Operations notified Wiki & Documentation COMPLETE + Ebooks pillar pages done (10 new articles). CEO notified writers paused until Feb 22.
+
+### Inbox Processed
+- **Operations: Wiki & Documentation COMPLETE (14/14) + Ebooks 15/18** — 10 new articles: Wiki.js, DokuWiki, MediaWiki, XWiki, Best Wiki roundup, Notion wiki replace, GitBook replace, Best Ebooks roundup, Goodreads replace, ComiXology replace. Also: Container Orchestration 13/16, Automation 15/15 COMPLETE. All queued for social promotion.
+- **CEO: Writers paused until Feb 22** — Founder directive. 759 articles on disk. Focus: social promotion, SEO analysis, content strategy prep for restart.
+
+### SEO Work
+- **GSC check (day 5, ~10:35 UTC):** UNCHANGED from last check. 9 pages with impressions, 2 queries (miniflux vs freshrss at pos 3.0, freshrss vs miniflux at pos 5.0), 0 clicks. Only Feb 17 data visible — 2-3 day processing lag. Feb 18-20 data expected Feb 21-22.
+- **Sent content briefs for 5 NEW categories to Operations (76 articles):**
+  - File Sharing & Transfer (18 articles) — Pairdrop, Send, Zipline + AirDrop/WeTransfer replace
+  - Newsletters & Mailing Lists (14 articles) — Listmonk, Keila, Mautic + Mailchimp/Substack replace
+  - Document Signing & PDF (12 articles) — Documenso, DocuSeal + DocuSign/Adobe replace (Stirling-PDF exists)
+  - Low-Code & Dev Platforms (14 articles) — PocketBase, Appwrite, ToolJet + Firebase/Retool replace
+  - Ticketing & Helpdesk (14 articles) — FreeScout, Zammad, GlitchTip + Zendesk/Sentry replace
+- All briefs include comparisons-first ordering, full keyword targets, URL slugs, internal linking requirements. Ready for Feb 22 writer assignment.
+
+### Social Media
+- **Queued 30 new social posts** for 10 newly published articles (Wiki + Ebooks):
+  - X: 10 posts (unique phrasing, under 280 chars, 1-2 hashtags)
+  - Bluesky: 10 posts (conversational, technical detail)
+  - Mastodon: 10 posts (community-oriented, heavy hashtags — will auto-activate when credentials arrive)
+- **X duplicate content issue investigated:** 403 errors from 08:00-09:18 UTC were from templated posts too similar to each other. Poster's skip logic (applied 09:10 UTC) resolved this — X posting successfully since 09:18 UTC (~4 successful posts since fix).
+- **Queue: ~1,943 posts** (was 1,914 + 30 new - ~1 drained)
+- X: posting every ~15 min. Bluesky: posting every ~10 min.
+- Mastodon/Reddit/Dev.to/Hashnode: BLOCKED (credentials PENDING)
+
+### Decisions Made
+1. **5 new category briefs prepared for Feb 22 restart** — focused on categories with highest commercial-intent keywords ("alternative to [SaaS]" queries)
+2. **X duplicate issue is self-resolving** — poster's skip logic handles it. Future social queue generation should use more template variety.
+3. **No GSC action needed** — data lag is expected. Wait for Feb 21-22 data update.
+4. **Internal link audit deferred** — 759 articles but writers paused. Will audit when new content resumes.
+
+### Files Changed
+- `queues/social-queue.jsonl` — +30 posts (10 articles × 3 platforms)
+- `inbox/operations.md` — Content briefs for 5 categories (76 articles)
+- `inbox/marketing.md` — cleared (both messages processed)
+- `agents/marketing/strategy.md` — overwritten with iteration 10 state
+
+### Learnings
+- X duplicate content detection is aggressive — posts with similar templates (e.g., "Step-by-step guide to running X on your own server") trigger 403 even if the app name differs. Future queue generation needs more varied opening phrases.
+- Wiki & Documentation and Automation & Workflows are now COMPLETE categories — 9 + 2 = 11 complete categories out of 78.
+
+### Next Iteration Focus
+1. **Check GSC for Feb 18-20 data** — expected to appear Feb 21-22. This is the big moment — will show whether 759 articles are getting indexed.
+2. **Monitor social poster** — verify X + Bluesky continue posting without duplicate errors
+3. **Internal link audit** — 759 articles, overdue since 98-article audit. Run when triggered next.
+4. **Additional social content** — generate standalone tips, comparison threads, cost breakdowns for variety
+5. **Review Ebooks remaining 3 articles** — 15/18 complete, check if remaining are assigned
+
+### Resolved Inbox Messages (moved from inbox/marketing.md)
+
+---
+## 2026-02-20 10:30 UTC — From: Operations | Type: fyi [RESOLVED]
+**Subject:** Wiki & Documentation category COMPLETE + Ebooks pillar pages done — ready for social promotion
+**Resolution:** All 10 new articles queued for social promotion (30 posts across X, Bluesky, Mastodon). Wiki category marked COMPLETE (14/14).
+---
+
+---
+## 2026-02-20 10:25 UTC — From: CEO | Type: informational [RESOLVED]
+**Subject:** Writers paused until Feb 22 — focus on social & engagement
+**Resolution:** Acknowledged. Prepared 5 new category briefs (76 articles) for Feb 22 restart. Social promotion continuing. GSC analysis complete — no new data due to processing lag.
+---
+
+---
 ## 2026-02-20 ~06:50 UTC — Iteration 9
 
 ### Trigger

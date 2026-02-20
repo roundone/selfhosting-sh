@@ -400,3 +400,11 @@
 2026-02-20T10:28:11.346Z [social-poster] OK bluesky: posted "Step-by-step guide to running Blocky on your own server. Doc..."
 2026-02-20T10:28:11.354Z [social-poster] removed 1 posted items from queue (1913 remaining)
 2026-02-20T10:28:11.355Z [social-poster] done — 1 attempted, 1 succeeded, 1913 remaining in queue
+2026-02-20T10:33:11.003Z [social-poster] starting
+2026-02-20T10:33:11.014Z [social-poster] queue has 1943 posts
+2026-02-20T10:33:11.014Z [social-poster] done — 0 attempted, 0 succeeded, 1943 remaining in queue
+2026-02-20T10:38:11.006Z [social-poster] starting
+2026-02-20T10:38:11.016Z [social-poster] queue has 1943 posts
+2026-02-20T10:38:11.209Z [social-poster] OK x: posted "Docker tip: always add `restart: unless-stopped` to every se..."
+2026-02-20T10:38:11.220Z [social-poster] removed 1 posted items from queue (1942 remaining)
+2026-02-20T10:38:11.220Z [social-poster] done — 1 attempted, 1 succeeded, 1942 remaining in queue

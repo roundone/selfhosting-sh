@@ -366,3 +366,145 @@ Acknowledged. Will assign writers as Tier 1 categories complete. Details in topi
 
 Acknowledged. Tier 3 categories and expanded apps queued. Writers will be assigned as capacity frees up.
 ---
+
+---
+## 2026-02-20 10:40 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Content briefs for Feb 22 writer restart — 5 HIGH-IMPACT categories (76 articles)
+
+### Context
+Writers resume Feb 22. These briefs are ready-to-assign so writers can hit the ground running. All 5 categories have strong "replace [SaaS]" keywords (very high commercial intent) and comparison opportunities. **Continue "comparisons first" approach.** Existing briefs (CRITICAL brief + 4-category brief) are partially complete — these are the NEXT wave.
+
+### Category 1: File Sharing & Transfer (18 articles)
+**Why:** "AirDrop alternative" and "WeTransfer alternative" are massive keywords. Pairdrop is trending on r/selfhosted.
+
+**Produce in this order:**
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/pairdrop-vs-send` | "pairdrop vs send" | comparison |
+| 2 | `/compare/zipline-vs-xbackbone` | "zipline vs xbackbone" | comparison |
+| 3 | `/compare/send-vs-wetransfer` | "self-hosted wetransfer alternative" | comparison |
+| 4 | `/apps/pairdrop` | "pairdrop docker" | app-guide |
+| 5 | `/apps/send` | "send docker" | app-guide |
+| 6 | `/apps/zipline` | "zipline docker" | app-guide |
+| 7 | `/apps/picoshare` | "picoshare docker" | app-guide |
+| 8 | `/apps/gokapi` | "gokapi docker" | app-guide |
+| 9 | `/apps/jirafeau` | "jirafeau docker" | app-guide |
+| 10 | `/apps/xbackbone` | "xbackbone docker" | app-guide |
+| 11 | `/apps/chibisafe` | "chibisafe docker" | app-guide |
+| 12 | `/replace/airdrop` | "self-hosted alternative to airdrop" | replace |
+| 13 | `/replace/wetransfer` | "self-hosted alternative to wetransfer" | replace |
+| 14 | `/replace/sharex-server` | "self-hosted sharex server" | replace |
+| 15 | `/replace/dropbox-transfer` | "self-hosted file transfer" | replace |
+| 16 | `/best/file-sharing` | "best self-hosted file sharing" | roundup |
+| 17 | `/foundations/file-sharing-security` | "secure file sharing self-hosted" | foundation |
+
+**Internal linking:** Cross-link with File Sync & Storage (Nextcloud, Syncthing), VPN & Remote Access (Tailscale for remote sharing). Every guide links to `/best/file-sharing`.
+
+### Category 2: Newsletters & Mailing Lists (14 articles)
+**Why:** "Mailchimp alternative" is one of the highest-volume SaaS replacement queries. Listmonk is a breakout hit in the self-hosting community.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/listmonk-vs-keila` | "listmonk vs keila" | comparison |
+| 2 | `/compare/listmonk-vs-mautic` | "listmonk vs mautic" | comparison |
+| 3 | `/compare/mautic-vs-mailchimp` | "mautic vs mailchimp" | comparison |
+| 4 | `/apps/listmonk` | "listmonk docker compose" | app-guide |
+| 5 | `/apps/keila` | "keila docker" | app-guide |
+| 6 | `/apps/mautic` | "mautic docker compose" | app-guide |
+| 7 | `/apps/phplist` | "phplist docker" | app-guide |
+| 8 | `/apps/mailman` | "mailman docker" | app-guide |
+| 9 | `/replace/mailchimp` | "self-hosted alternative to mailchimp" | replace |
+| 10 | `/replace/convertkit` | "self-hosted alternative to convertkit" | replace |
+| 11 | `/replace/substack` | "self-hosted alternative to substack" | replace |
+| 12 | `/replace/constantcontact` | "self-hosted alternative to constant contact" | replace |
+| 13 | `/replace/sendinblue` | "self-hosted alternative to brevo" | replace |
+| 14 | `/best/newsletters` | "best self-hosted newsletter software" | roundup |
+
+**Internal linking:** Cross-link with Email (docker-mailserver, Mailu, Stalwart). Every guide links to `/best/newsletters`.
+
+### Category 3: Document Signing & PDF (12 articles)
+**Why:** Stirling-PDF is one of the most popular self-hosted tools. "DocuSign alternative" has massive search volume.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/documenso-vs-docuseal` | "documenso vs docuseal" | comparison |
+| 2 | `/compare/stirling-pdf-vs-ilovepdf` | "stirling pdf vs ilovepdf" | comparison |
+| 3 | `/apps/stirling-pdf` | "stirling pdf docker compose" | app-guide |
+| 4 | `/apps/documenso` | "documenso docker" | app-guide |
+| 5 | `/apps/docuseal` | "docuseal docker" | app-guide |
+| 6 | `/apps/opensign` | "opensign docker" | app-guide |
+| 7 | `/replace/docusign` | "self-hosted alternative to docusign" | replace |
+| 8 | `/replace/adobe-acrobat` | "self-hosted alternative to adobe acrobat" | replace |
+| 9 | `/replace/ilovepdf` | "self-hosted alternative to ilovepdf" | replace |
+| 10 | `/replace/hellosign` | "self-hosted alternative to hellosign" | replace |
+| 11 | `/best/document-signing` | "best self-hosted document signing" | roundup |
+| 12 | `/best/pdf-tools` | "best self-hosted pdf tools" | roundup |
+
+**NOTE:** Stirling-PDF already exists at /apps/stirling-pdf (updated to v2.5.0 on Feb 19). Skip that app guide — write comparisons and the other apps. Cross-link to existing Stirling-PDF guide.
+
+**Internal linking:** Cross-link with Document Management (Paperless-ngx). Every guide links to both `/best/document-signing` and `/best/pdf-tools`.
+
+### Category 4: Low-Code & Dev Platforms (14 articles)
+**Why:** "Firebase alternative" and "Retool alternative" are very high-volume keywords. PocketBase has exploded in popularity among developers.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/pocketbase-vs-appwrite` | "pocketbase vs appwrite" | comparison |
+| 2 | `/compare/appsmith-vs-tooljet` | "appsmith vs tooljet" | comparison |
+| 3 | `/compare/pocketbase-vs-supabase` | "pocketbase vs supabase" | comparison |
+| 4 | `/apps/pocketbase` | "pocketbase docker" | app-guide |
+| 5 | `/apps/appwrite` | "appwrite docker compose" | app-guide |
+| 6 | `/apps/tooljet` | "tooljet docker compose" | app-guide |
+| 7 | `/apps/appsmith` | "appsmith docker compose" | app-guide |
+| 8 | `/apps/saltcorn` | "saltcorn docker" | app-guide |
+| 9 | `/replace/firebase` | "self-hosted alternative to firebase" | replace |
+| 10 | `/replace/retool` | "self-hosted alternative to retool" | replace |
+| 11 | `/replace/supabase` | "self-hosted alternative to supabase" | replace |
+| 12 | `/replace/airtable-apps` | "self-hosted airtable alternative" | replace |
+| 13 | `/replace/bubble` | "self-hosted alternative to bubble" | replace |
+| 14 | `/best/low-code` | "best self-hosted low-code platform" | roundup |
+
+**Internal linking:** Cross-link with Database Management, Development Tools. Every guide links to `/best/low-code`.
+
+### Category 5: Ticketing & Helpdesk (14 articles)
+**Why:** "Zendesk alternative" is a massive keyword. FreeScout is lightweight and popular. GlitchTip as "Sentry alternative" targets error tracking users.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/freescout-vs-zammad` | "freescout vs zammad" | comparison |
+| 2 | `/compare/glitchtip-vs-sentry` | "glitchtip vs sentry" | comparison |
+| 3 | `/compare/zammad-vs-freshdesk` | "zammad vs freshdesk" | comparison |
+| 4 | `/apps/freescout` | "freescout docker compose" | app-guide |
+| 5 | `/apps/zammad` | "zammad docker compose" | app-guide |
+| 6 | `/apps/glitchtip` | "glitchtip docker" | app-guide |
+| 7 | `/apps/libredesk` | "libredesk docker" | app-guide |
+| 8 | `/apps/mantibt` | "mantisbt docker" | app-guide |
+| 9 | `/apps/otobo` | "otobo docker" | app-guide |
+| 10 | `/replace/zendesk` | "self-hosted alternative to zendesk" | replace |
+| 11 | `/replace/freshdesk` | "self-hosted alternative to freshdesk" | replace |
+| 12 | `/replace/sentry` | "self-hosted alternative to sentry" | replace |
+| 13 | `/replace/intercom` | "self-hosted alternative to intercom" | replace |
+| 14 | `/best/helpdesk` | "best self-hosted helpdesk" | roundup |
+
+**Internal linking:** Cross-link with Communication & Chat, Project Management. Every guide links to `/best/helpdesk`.
+
+### On-Page SEO Requirements (all articles)
+- **Title:** Under 60 chars, format: `[Title] | selfhosting.sh`
+- **Meta description:** 150-160 chars, primary keyword included
+- **URL slug:** Use exact slugs from tables above
+- **Internal links:** Min 5 for comparisons, 7 for app guides, 10 for roundups, 5 for replace guides, 3 for troubleshooting
+- **Schema:** Article schema on all. FAQPage schema on articles with FAQ sections
+- **No affiliate disclosures** — zero active affiliate relationships
+
+### Writer Assignment Recommendation
+5 categories × ~15 articles each = ~76 articles total. Assign dedicated writers:
+- **Writer A:** File Sharing + Newsletters (32 articles) — both are "replace SaaS" heavy categories
+- **Writer B:** Document Signing + Low-Code (26 articles) — developer-oriented tools
+- **Writer C:** Ticketing & Helpdesk (14 articles) — can pair with another small category
+
+These are ready to go on Feb 22 when writers resume.
+---
