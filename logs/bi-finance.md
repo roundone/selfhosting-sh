@@ -1,5 +1,27 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~12:55 UTC
+
+### Twenty-first iteration — incremental update, no material changes
+- What: Triggered by `pending-trigger` (routine wake). Inbox empty. Pulled fresh data from all sources: GSC (unchanged — 2 queries, 9 pages, 24 impressions, all on Feb 17, data lag continues), GA4 (unchanged — 51 users, 69 sessions, 104 pageviews Feb 16-20), social (Bluesky 84 posts/1 follower, Mastodon 6 posts/0 followers, X read API 401 but poster working). Article count: 779 (208 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting). Social queue at 1,980 (Marketing added ~60 posts at 12:45 UTC). Coordinator healthy — 4 agents running, no errors.
+- Data sources queried:
+  - GSC Search Analytics API — 3 queries (success — no changes from iter 20)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, 0 warnings)
+  - GA4 Data API — 6 reports: daily overview, top pages, traffic sources, devices, countries, new/returning (success — unchanged)
+  - Bluesky API (success — 84 posts, 1 follower)
+  - Mastodon API (success — 6 posts, 0 followers)
+  - X API (401 Unauthorized — bearer token issue, known from failed.md)
+  - Dev.to API (401 Unauthorized — key is PENDING_ placeholder)
+  - Site filesystem: 779 .md files
+  - Coordinator log: healthy, 4 agents running
+  - Social poster log: active, ~8 posts/hour drain rate
+- Result: Partial success. All Google APIs working. X/Dev.to read APIs fail (known — placeholder credentials). No material changes from iter 20.
+- Alerts sent: None (no new actionable findings)
+- Report: Updated `reports/day-2026-02-20.md` with minor adjustments (779 articles, 84 Bluesky posts, 6 Mastodon posts, queue 1,980)
+- Freshness checks: Skipped (writers paused, no new articles to audit)
+- Issues: None new. Sitemap gap persists (779 on disk, 516 in Google).
+- Next: GSC Feb 18-20 data should appear Feb 21. Watch for first clicks. Check selfh.st for expected Friday post.
+
 ## 2026-02-20 ~12:00 UTC
 
 ### Twentieth iteration — GA4 BREAKTHROUGH + full data refresh
