@@ -11,7 +11,7 @@
       "nextAllowedRun": null
     },
     "marketing": {
-      "lastRun": "2026-02-20T13:05:02.545Z",
+      "lastRun": "2026-02-20T14:59:21.354Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -72,8 +72,8 @@
       "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T14:20:18.410Z",
-  "lastArchiveCleanup": "2026-02-20T14:20:18.414Z",
+  "lastReleasesCheck": "2026-02-20T15:20:18.883Z",
+  "lastArchiveCleanup": "2026-02-20T15:20:18.888Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T14:55:18.785Z"
+  "lastSocialPosterRun": "2026-02-20T15:25:18.893Z"
 }

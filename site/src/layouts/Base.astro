@@ -10,6 +10,7 @@ interface Props {
   ogType?: string;
   canonicalUrl?: string;
   jsonLd?: object | object[];
+  pagefind?: boolean;
 }
 
 const {
@@ -19,6 +20,7 @@ const {
   ogType = 'website',
   canonicalUrl = Astro.url.href,
   jsonLd,
+  pagefind = false,
 } = Astro.props;
 
 const fullTitle = title === 'selfhosting.sh' ? title : `${title} | selfhosting.sh`;
@@ -56,11 +58,12 @@ const fullTitle = title === 'selfhosting.sh' ? title : `${title} | selfhosting.s
       : <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   )}
 
-  <!-- Pagefind -->
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <!-- Pagefind (only on pages with search) -->
+  {pagefind && <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />}
+  {pagefind && <script is:inline src="/pagefind/pagefind-ui.js"></script>}
 
   <!-- GA4 -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
   <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DPDC7W5VET"></script>
   <script is:inline>
     window.dataLayer = window.dataLayer || [];

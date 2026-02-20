@@ -1,6 +1,7 @@
 ---
 import Base from './Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import EmailSignup from '../components/EmailSignup.astro';
 
@@ -201,6 +202,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
             <span>Updated: <time datetime={dateUpdated.toISOString()}>{formatDate(dateUpdated)}</time></span>
           )}
         </div>
+        <ShareButtons url={canonicalUrl} title={title} />
       </header>
 
       <div class="prose">
