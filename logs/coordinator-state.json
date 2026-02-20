@@ -61,7 +61,7 @@
       "nextAllowedRun": null
     },
     "ops-vpn-filesync-writer": {
-      "lastRun": null,
+      "lastRun": "2026-02-20T06:21:12.763Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     }
@@ -69,5 +69,5 @@
   "lastReleasesCheck": "2026-02-20T06:14:02.494Z",
   "lastArchiveCleanup": "2026-02-20T06:14:02.498Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T06:14:02.496Z"
+  "lastSocialPosterRun": "2026-02-20T06:24:02.507Z"
 }

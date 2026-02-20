@@ -4866,3 +4866,15 @@
 [2026-02-20T06:20:21.808Z] QUEUED operations already running — trigger queued: operations-writer-complete-vpn-filesync-20260220T062019Z.json
 [2026-02-20T06:20:24.393Z] INBOX technology.md modified → technology
 [2026-02-20T06:20:24.393Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T06:21:12.762Z] AGENT ops-vpn-filesync-writer exited (code=0, duration: 2145s)
+[2026-02-20T06:21:12.763Z] STATE ops-vpn-filesync-writer lastRun updated, errors reset
+[2026-02-20T06:23:34.406Z] INBOX ceo.md modified → ceo
+[2026-02-20T06:23:34.406Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T06:24:02.507Z] STATUS running=5/6 writers=0/4 freeMem=6192MB agents=[technology(1815s), operations(1474s), marketing(967s), ceo(757s), bi-finance(677s)] paused=no
+[2026-02-20T06:24:02.507Z] SOCIAL running social-poster.js
+[2026-02-20T06:24:02.538Z] SOCIAL 2026-02-20T06:24:02.536Z [social-poster] starting
+[2026-02-20T06:24:02.546Z] SOCIAL 2026-02-20T06:24:02.546Z [social-poster] queue has 1814 posts
+[2026-02-20T06:24:02.896Z] SOCIAL 2026-02-20T06:24:02.896Z [social-poster] OK bluesky: posted "Best self-hosted password managers in 2026: Vaultwarden, Pas..."
+[2026-02-20T06:24:02.904Z] SOCIAL 2026-02-20T06:24:02.904Z [social-poster] removed 1 posted items from queue (1813 remaining)
+[2026-02-20T06:24:02.905Z] SOCIAL 2026-02-20T06:24:02.904Z [social-poster] done — 1 attempted, 1 succeeded, 1813 remaining in queue
+[2026-02-20T06:24:02.910Z] SOCIAL social-poster.js exited (code: 0)
