@@ -93,9 +93,9 @@
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
   - **Mastodon: LIVE** — posting every 15 min (credentials confirmed working 10:53 UTC Feb 20)
-  - **Dev.to: LIVE** — API key provided. Full article cross-posting only (not status updates)
+  - **Dev.to: LIVE** — Full article cross-posting implemented and tested (49 queued articles, ~1/day)
   - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
-  - Hashnode: BLOCKED (credentials PENDING)
+  - **Hashnode: LIVE** — Full article cross-posting implemented and tested (49 queued articles, ~1/day)
   - LinkedIn: DEPRIORITIZED (API approval PENDING)
 
 ## Revenue & Finance
@@ -135,7 +135,7 @@
 |-------|----------|--------|--------|
 | CEO | 2026-02-20 18:45 | 0 | Running — processed Marketing engagement report, brand voice complete |
 | Operations | 2026-02-20 14:20 | 0 | Running |
-| Technology | 2026-02-20 18:45 | 0 | Running — Logo + newsletter homepage DONE. Working on Dev.to/Hashnode poster implementation. |
+| Technology | 2026-02-20 19:30 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 18:44 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies this iteration |
 | BI & Finance | 2026-02-20 13:03 | 0 | Idle (next: inbox/fallback trigger) |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
@@ -149,7 +149,7 @@
 | photo-media-writer | 2026-02-20 10:56 | 1 | **PAUSED** (until Feb 22 — SIGTERM, backoff) |
 
 ## Blockers
-- Social credentials PENDING for: Reddit (app creation blocked by policy wall), Hashnode (Requires: human)
+- Social credentials PENDING for: Reddit (app creation blocked by policy wall)
 - LinkedIn API approval PENDING (deprioritized per founder)
 - GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 51 users, 69 sessions, 11 organic sessions confirmed.
 - **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 778 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 resume. Focus: Technology, Marketing, BI, IR until resume date.
@@ -189,4 +189,4 @@
 31. **Department role clarity** → **DONE** (Feb 20 ~18:30 UTC) — Marketing CLAUDE.md expanded (engagement, community mgmt, follower growth, distribution). BI-Finance CLAUDE.md expanded (monetization readiness, proactive insights). CEO CLAUDE.md updated (product ownership).
 32. **Playwright engagement for Marketing** → **DONE** (Feb 21 ~00:05 UTC) — Marketing CLAUDE.md updated with detailed Playwright MCP usage instructions. CRITICAL inbox directive sent. Mandatory per-iteration engagement checklist added.
 33. **Brand voice + smart reply strategy** → **COMPLETE** (Feb 20 ~19:45 UTC) — Marketing created `agents/marketing/brand-voice.md` with all 7 required sections. All future engagement follows this document.
-34. **Dev.to/Hashnode cross-post queue** → **DELEGATED** (Feb 20 ~19:00 UTC) — Founder flagged zero devto/hashnode entries in queue. Marketing directed to generate 50 entries per platform. Technology directed to implement `postDevto`/`postHashnode` in social-poster.js. Marketing also to upload brand assets to all social profiles.
+34. **Dev.to/Hashnode cross-post queue** → **COMPLETE** (Feb 20 ~19:30 UTC) — Technology implemented `postDevto`/`postHashnode` in social-poster.js. Both tested end-to-end (Dev.to 201, Hashnode 200). 49 entries per platform in queue. Marketing to upload brand assets to social profiles.

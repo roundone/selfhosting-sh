@@ -71,6 +71,36 @@ function isRealCredential(value) {
     return value && !value.startsWith('PENDING_') && value.length > 5;
 }
 
+// ─── Article reading helpers ─────────────────────────────────────────────────
+
+function readArticleMarkdown(slug) {
+    // slug is like "/compare/adguard-home-vs-blocky" or "/apps/immich"
+    // Map to file: site/src/content/compare/adguard-home-vs-blocky.md
+    if (!slug) return null;
+
+    // Strip leading slash
+    const cleanSlug = slug.replace(/^\//, '');
+    const filePath = path.join(REPO_ROOT, 'site', 'src', 'content', cleanSlug + '.md');
+
+    try {
+        const raw = fs.readFileSync(filePath, 'utf8');
+        return stripFrontmatter(raw);
+    } catch (e) {
+        if (e.code === 'ENOENT') return null;
+        log(`ERROR reading article ${filePath}: ${e.message}`);
+        return null;
+    }
+}
+
+function stripFrontmatter(markdown) {
+    // Remove YAML frontmatter delimited by --- at start of file
+    const match = markdown.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n/);
+    if (match) {
+        return markdown.slice(match[0].length).trim();
+    }
+    return markdown.trim();
+}
+
 // ─── HTTP helpers ────────────────────────────────────────────────────────────
 
 function httpRequest(url, options, body) {
@@ -205,21 +235,119 @@ async function postMastodon(creds, text) {
     return JSON.parse(res.body);
 }
 
-async function postHashnode(creds, post) {
-    // Hashnode publishes articles via GraphQL, not short posts.
-    // Only article_link posts with a URL make sense here.
-    // For now, skip Hashnode — it requires full article cross-posting, not status updates.
-    log('Hashnode: skipping — requires full article cross-posting (not status updates)');
-    return null;
+async function postHashnode(creds, text, post) {
+    // Hashnode publishes full articles via GraphQL API
+    if (!post || post.type !== 'article_crosspost') {
+        log('Hashnode: removing non-article post from queue (Hashnode only supports article cross-posting)');
+        return { skipped: true, reason: 'unsupported_type' };
+    }
+
+    const markdown = readArticleMarkdown(post.slug);
+    if (!markdown) {
+        log(`Hashnode: article file not found for slug "${post.slug}" — skipping`);
+        return null;
+    }
+
+    const publicationId = '69987c5ffbf4a1bed0ec1579';
+    const tags = (post.tags || []).map(t => ({ slug: t, name: t }));
+
+    const mutation = `mutation PublishPost($input: PublishPostInput!) {
+        publishPost(input: $input) {
+            post { id url title }
+        }
+    }`;
+    const variables = {
+        input: {
+            title: post.title,
+            contentMarkdown: markdown,
+            publicationId: publicationId,
+            originalArticleURL: post.canonical_url,
+            tags: tags,
+        }
+    };
+
+    const body = JSON.stringify({ query: mutation, variables });
+    const res = await httpRequest('https://gql.hashnode.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': creds.HASHNODE_API_TOKEN,
+            'User-Agent': 'selfhosting-sh/1.0',
+        },
+    }, body);
+
+    if (res.status !== 200) {
+        throw new Error(`Hashnode API error: ${res.status} ${res.body.slice(0, 300)}`);
+    }
+
+    const result = JSON.parse(res.body);
+    if (result.errors && result.errors.length > 0) {
+        const errMsg = result.errors[0].message || JSON.stringify(result.errors[0]);
+        if (errMsg.includes('duplicate') || errMsg.includes('already')) {
+            log(`Hashnode: duplicate article detected — "${post.title}"`);
+            return { skipped: true, reason: 'duplicate' };
+        }
+        throw new Error(`Hashnode GraphQL error: ${errMsg}`);
+    }
+
+    const postUrl = result.data?.publishPost?.post?.url;
+    log(`Hashnode: published "${post.title}" → ${postUrl || 'unknown URL'}`);
+    return { url: postUrl };
 }
 
-async function postDevto(creds, post) {
-    // Dev.to publishes articles, not status updates. Skip for now.
-    log('Dev.to: skipping — requires full article cross-posting (not status updates)');
-    return null;
+async function postDevto(creds, text, post) {
+    // Dev.to publishes full articles via Forem API
+    if (!post || post.type !== 'article_crosspost') {
+        log('Dev.to: removing non-article post from queue (Dev.to only supports article cross-posting)');
+        return { skipped: true, reason: 'unsupported_type' };
+    }
+
+    const markdown = readArticleMarkdown(post.slug);
+    if (!markdown) {
+        log(`Dev.to: article file not found for slug "${post.slug}" — skipping`);
+        return null;
+    }
+
+    const tags = (post.tags || []).slice(0, 4); // Dev.to allows max 4 tags
+
+    const body = JSON.stringify({
+        article: {
+            title: post.title,
+            body_markdown: markdown,
+            canonical_url: post.canonical_url,
+            published: true,
+            tags: tags,
+        }
+    });
+
+    const res = await httpRequest('https://dev.to/api/articles', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'api-key': creds.DEVTO_API_KEY,
+            'User-Agent': 'selfhosting-sh/1.0',
+        },
+    }, body);
+
+    if (res.status === 422) {
+        const errBody = res.body.slice(0, 300);
+        if (errBody.includes('has already been taken') || errBody.includes('duplicate')) {
+            log(`Dev.to: duplicate article detected — "${post.title}"`);
+            return { skipped: true, reason: 'duplicate' };
+        }
+        throw new Error(`Dev.to validation error: ${errBody}`);
+    }
+
+    if (res.status !== 201 && res.status !== 200) {
+        throw new Error(`Dev.to API error: ${res.status} ${res.body.slice(0, 300)}`);
+    }
+
+    const result = JSON.parse(res.body);
+    log(`Dev.to: published "${post.title}" → ${result.url || 'unknown URL'}`);
+    return { url: result.url };
 }
 
-async function postReddit(creds, post) {
+async function postReddit(creds, text, post) {
     // Reddit requires OAuth — credentials are PENDING
     if (!isRealCredential(creds.REDDIT_CLIENT_ID)) {
         return null;
@@ -319,14 +447,16 @@ async function main() {
                 postsSucceeded++;
                 state.last_posted[platform] = new Date().toISOString();
                 processedIndices.add(postIdx);
-                log(`OK ${platform}: posted "${post.text.slice(0, 60)}..."`);
+                const logText = post.text ? post.text.slice(0, 60) : (post.title || 'unknown');
+                log(`OK ${platform}: posted "${logText}..."`);
             }
         } catch (e) {
             log(`ERROR ${platform}: ${e.message}`);
             // Permanent failures: remove from queue and try next post
-            if (e.message.includes('duplicate content') || e.message.includes('403')) {
+            const logText2 = post.text ? post.text.slice(0, 60) : (post.title || 'unknown');
+            if (e.message.includes('duplicate content') || e.message.includes('403') || e.message.includes('duplicate') || e.message.includes('has already been taken')) {
                 processedIndices.add(postIdx);
-                log(`SKIP ${platform}: removing duplicate/rejected post from queue — "${post.text.slice(0, 60)}..."`);
+                log(`SKIP ${platform}: removing duplicate/rejected post from queue — "${logText2}..."`);
                 // Try next post for this platform immediately
                 const nextIdx = queue.findIndex((p, i) => p.platform === platform && !processedIndices.has(i) && i > postIdx);
                 if (nextIdx !== -1) {
@@ -337,11 +467,12 @@ async function main() {
                             postsSucceeded++;
                             state.last_posted[platform] = new Date().toISOString();
                             processedIndices.add(nextIdx);
-                            log(`OK ${platform}: posted "${nextPost.text.slice(0, 60)}..." (after skipping duplicate)`);
+                            const logText3 = nextPost.text ? nextPost.text.slice(0, 60) : (nextPost.title || 'unknown');
+                            log(`OK ${platform}: posted "${logText3}..." (after skipping duplicate)`);
                         }
                     } catch (e2) {
                         log(`ERROR ${platform}: ${e2.message} (retry after skip)`);
-                        if (e2.message.includes('duplicate content') || e2.message.includes('403')) {
+                        if (e2.message.includes('duplicate content') || e2.message.includes('403') || e2.message.includes('duplicate') || e2.message.includes('has already been taken')) {
                             processedIndices.add(nextIdx);
                             log(`SKIP ${platform}: also duplicate — removing`);
                         }

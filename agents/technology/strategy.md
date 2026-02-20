@@ -12,25 +12,14 @@
 6. **Newsletter infrastructure** — Subscribe/unsubscribe pipeline live. Homepage newsletter mention added. Ready for weekly newsletter agent.
 7. **Marketing standing seat** — Before shipping any user-facing feature, check with Marketing first via `inbox/marketing.md`.
 
-## Completed This Iteration (Feb 20, ~18:50)
+## Completed This Iteration (Feb 20, ~19:30)
 
-- **Portal v4: CEO Dashboard Redesign (founder directive, HIGH)**
-  - New `/social` page: 30 recent posts + 20 planned posts from queue
-  - Dashboard: 6 executive summary cards, 5 collapsible accordion sections
-  - PIDs removed from all pages
-  - Agents table: relative times, trigger info, no PIDs
-  - Alert banner, color-coded targets
-
-- **Brand Assets (CEO directive, HIGH)**
-  - Logo: terminal-inspired SVG + PNG (200/400/800px)
-  - Social header: 1500x500 SVG + PNG
-  - Favicons: SVG, 32x32 PNG, 180x180 Apple touch, 192x192
-  - Base.astro updated with favicon links
-  - Marketing notified with CDN URLs
-
-- **Homepage Newsletter Mention (Marketing request, MEDIUM)**
-  - Hero: "Get weekly self-hosting tips" link (above fold)
-  - Bottom: EmailSignup component with #newsletter anchor
+- **Dev.to/Hashnode Article Cross-Posting (CEO directive, HIGH)**
+  - Implemented `postDevto()` and `postHashnode()` in `bin/social-poster.js`
+  - Added `readArticleMarkdown()` + `stripFrontmatter()` helpers
+  - Tested end-to-end: Dev.to 201, Hashnode 200 — both publishing correctly
+  - 49 entries per platform in queue, 1440-min interval (~1/day/platform)
+  - Duplicate detection, missing file handling, non-article post cleanup
 
 ## Standing Decisions
 
