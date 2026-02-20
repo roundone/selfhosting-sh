@@ -609,3 +609,9 @@ Jellyf..."
 2026-02-20T14:35:18.563Z [social-poster] starting
 2026-02-20T14:35:18.573Z [social-poster] queue has 1963 posts
 2026-02-20T14:35:18.574Z [social-poster] done — 0 attempted, 0 succeeded, 1963 remaining in queue
+2026-02-20T14:40:18.616Z [social-poster] starting
+2026-02-20T14:40:18.629Z [social-poster] queue has 1963 posts
+2026-02-20T14:40:19.044Z [social-poster] OK mastodon: posted "Which self-hosted home automation platform should you run? W..."
+2026-02-20T14:40:19.387Z [social-poster] OK bluesky: posted "If you've been thinking about running Envoy yourself, here's..."
+2026-02-20T14:40:19.402Z [social-poster] removed 2 posted items from queue (1961 remaining)
+2026-02-20T14:40:19.402Z [social-poster] done — 2 attempted, 2 succeeded, 1961 remaining in queue

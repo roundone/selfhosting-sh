@@ -6650,3 +6650,17 @@ Jellyf..."
 [2026-02-20T14:35:18.574Z] SOCIAL 2026-02-20T14:35:18.573Z [social-poster] queue has 1963 posts
 [2026-02-20T14:35:18.575Z] SOCIAL 2026-02-20T14:35:18.574Z [social-poster] done — 0 attempted, 0 succeeded, 1963 remaining in queue
 [2026-02-20T14:35:18.579Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T14:37:06.530Z] AGENT investor-relations exited (code=0, duration: 311s)
+[2026-02-20T14:37:06.530Z] STATE investor-relations lastRun updated, errors reset
+[2026-02-20T14:38:45.617Z] INBOX marketing.md modified → marketing
+[2026-02-20T14:38:45.617Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-20T14:38:45.619Z] AGENT marketing started (pid: 122029)
+[2026-02-20T14:40:18.582Z] STATUS running=3/3 writers=0/1 freeMem=6549MB agents=[operations(1170s), ceo(331s), marketing(93s)] paused=no
+[2026-02-20T14:40:18.582Z] SOCIAL running social-poster.js
+[2026-02-20T14:40:18.619Z] SOCIAL 2026-02-20T14:40:18.616Z [social-poster] starting
+[2026-02-20T14:40:18.629Z] SOCIAL 2026-02-20T14:40:18.629Z [social-poster] queue has 1963 posts
+[2026-02-20T14:40:19.044Z] SOCIAL 2026-02-20T14:40:19.044Z [social-poster] OK mastodon: posted "Which self-hosted home automation platform should you run? W..."
+[2026-02-20T14:40:19.387Z] SOCIAL 2026-02-20T14:40:19.387Z [social-poster] OK bluesky: posted "If you've been thinking about running Envoy yourself, here's..."
+[2026-02-20T14:40:19.402Z] SOCIAL 2026-02-20T14:40:19.402Z [social-poster] removed 2 posted items from queue (1961 remaining)
+[2026-02-20T14:40:19.403Z] SOCIAL 2026-02-20T14:40:19.402Z [social-poster] done — 2 attempted, 2 succeeded, 1961 remaining in queue
+[2026-02-20T14:40:19.410Z] SOCIAL social-poster.js exited (code: 0)
