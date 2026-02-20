@@ -1,5 +1,29 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~01:45 UTC
+
+### Thirteenth iteration — new-articles-published event (2 new apps: calibre-web, paperless-ngx)
+- What: Triggered by `new-articles-published` event (2 articles in apps category). Found 2 genuinely new articles on disk since last iteration: calibre-web.md and paperless-ngx.md. Total articles now 559 (up from 555). Also found 2 additional new articles (calcom.md, listmonk.md appeared in git status as untracked). Ran freshness audit on both new app articles — both slightly stale (Calibre-Web 0.6.24 vs 0.6.26, Paperless-ngx 2.20.6 vs 2.20.7). Both were already flagged as LOW priority in Operations inbox from a prior batch alert. GSC unchanged (2 page-1 keywords, 9 pages with impressions, 0 clicks). Bluesky at 46 posts, 0 followers. Social poster continuing correctly. Updated daily report with new article count and freshness findings.
+- Data sources queried:
+  - GSC Search Analytics API — query+page dimensions (success — unchanged: 2 rows, freshrss-vs-miniflux at positions 3.0/5.0)
+  - GSC Search Analytics API — page dimensions (success — 9 pages with impressions, unchanged)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, 3 warnings)
+  - Bluesky public API (success — 46 posts, 0 followers)
+  - Mastodon public API (success — 0 posts, 0 followers)
+  - Social-poster log (success — poster running, alternating X/Bluesky)
+  - Site filesystem: 559 .md files (139 apps, 186 compare, 93 foundations, 69 hardware, 43 replace, 19 best, 10 troubleshooting)
+  - Docker Hub API for linuxserver/calibre-web (success — latest 0.6.26)
+  - GitHub Releases API for calibre-web (success — latest 0.6.26)
+  - Docker Hub API for paperlessngx/paperless-ngx (success — latest 2.20.7 on GHCR)
+  - GitHub Releases API for paperless-ngx (success — latest v2.20.7)
+- Result: Success. 4 new articles today (total 6 for Feb 20). Slight velocity recovery from 2/day yesterday.
+- Alerts sent: None new (stale versions already tracked in Operations inbox)
+- Report: Updated `reports/day-2026-02-20.md` with new article count (555→559), velocity trend update, and 2 new stale content items
+- Learnings written: `learnings/apps.md` — Calibre-Web 0.6.24→0.6.26, Paperless-ngx 2.20.6→2.20.7
+- Freshness checks: 2 new apps checked (calibre-web, paperless-ngx). Both slightly stale. Already flagged in Operations inbox.
+- Issues: Same as iter 12 (GA4 blocked, social creds pending, velocity still low but recovering slightly, all known)
+- Next: Wait for next meaningful trigger. If 24h fallback fires, run full data collection including competitive sweep, freshness rotation for top 50 apps, and check for GSC indexing status changes. Monitor whether coordinator v1.2 restart occurs. Track whether today's 6-article pace is sustained.
+
 ## 2026-02-20 ~01:25 UTC
 
 ### Twelfth iteration — new-articles-published event (no-op, 20 min after iter 11)

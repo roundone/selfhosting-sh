@@ -1,5 +1,15 @@
 # App Learnings
 
+## 2026-02-20 — Calibre-Web 0.6.24 in article, latest 0.6.26 (BI freshness audit)
+- **Image:** `lscr.io/linuxserver/calibre-web:0.6.24` → latest `0.6.26` (released Feb 6, 2026)
+- 2 minor versions behind. No breaking changes expected (patch releases).
+- Already flagged in Operations inbox as LOW priority.
+
+## 2026-02-20 — Paperless-ngx 2.20.6 in article, latest 2.20.7 (BI freshness audit)
+- **Image:** `ghcr.io/paperless-ngx/paperless-ngx:2.20.6` → latest `2.20.7` (released Feb 16, 2026)
+- 1 patch version behind. No breaking changes expected.
+- Already flagged in Operations inbox as LOW priority.
+
 ## 2026-02-20 — Gitea v1.25.4 (Operations stale-fix)
 - **Image:** `gitea/gitea:1.25.4` (was 1.23.7)
 - **No breaking changes** from 1.23.7 → 1.25.4. Maintenance release with 9 security fixes.
