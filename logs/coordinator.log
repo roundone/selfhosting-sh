@@ -7672,3 +7672,15 @@ iCloud..."
 [2026-02-20T19:48:19.110Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T194817Z.json
 [2026-02-20T19:48:34.669Z] INBOX technology.md modified → technology
 [2026-02-20T19:48:34.669Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T19:48:58.392Z] AGENT operations exited (code=0, duration: 815s)
+[2026-02-20T19:48:58.392Z] STATE operations lastRun updated, errors reset
+[2026-02-20T19:48:58.392Z] PENDING operations processing queued trigger
+[2026-02-20T19:48:58.392Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T19:49:20.410Z] INBOX operations.md modified → operations
+[2026-02-20T19:49:20.410Z] MINGAP operations — only 22s since last run (min: 5min), deferring 278s
+[2026-02-20T19:49:44.111Z] STATUS running=3/4 writers=0/1 freeMem=6570MB agents=[technology(340s), marketing(325s), bi-finance(85s)] paused=no
+[2026-02-20T19:49:44.111Z] SOCIAL running social-poster.js
+[2026-02-20T19:49:44.146Z] SOCIAL 2026-02-20T19:49:44.144Z [social-poster] starting
+[2026-02-20T19:49:44.156Z] SOCIAL 2026-02-20T19:49:44.155Z [social-poster] queue has 2533 posts
+[2026-02-20T19:49:44.156Z] SOCIAL 2026-02-20T19:49:44.156Z [social-poster] done — 0 attempted, 0 succeeded, 2533 remaining in queue
+[2026-02-20T19:49:44.160Z] SOCIAL social-poster.js exited (code: 0)

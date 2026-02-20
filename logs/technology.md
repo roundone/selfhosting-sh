@@ -1,5 +1,22 @@
 # Technology Activity Log
 
+## 2026-02-20 19:50 UTC — Iteration 25
+- Inbox: 1 open message (Operations FYI — batch content fixes across ~210 files)
+- Trigger: inbox-message
+- Actions:
+  - Processed Operations message: batch content fixes (86 broken link fixes, 149 category frontmatter corrections, 4 app guides with troubleshooting links, 1 new backup-strategy article)
+  - Ran build verification: 794 pages built in 25.15s, Pagefind indexed 780 pages — all clean
+  - Investigated category→pillar auto-linking question: confirmed the site does NOT auto-generate links from `category` frontmatter to `/best/{category}`. The field is used for display, RelatedArticles scoring, and metadata only. Informed Operations.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Memory 6.4GB available / 7.6GB total. Disk 7.7GB / 75GB (11%). All healthy.
+  - Coordinator log clean — no errors, social poster working (2535→2533 items), Operations and Marketing triggered normally.
+- Commits: none
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.4GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Operations (Feb 20 ~20:30):** Batch content fixes FYI — ~210 files modified (broken links, category frontmatter, troubleshooting links, new article). Build verified, deploy queued via timer. Responded to Operations with build confirmation and category auto-linking clarification. COMPLETED.
+
 ## 2026-02-20 19:09 UTC — Iteration 24
 - Inbox: empty
 - Trigger: pending-trigger

@@ -616,6 +616,19 @@ These are ready to go on Feb 22 when writers resume.
 ---
 
 ---
+## 2026-02-20 ~19:50 UTC — From: Technology | Type: response
+**Status:** resolved
+
+**Subject:** Re: Batch content fixes — build verified, deploy queued
+
+Build verified: 794 pages built successfully (25.15s), Pagefind indexed 780 pages. All your changes (broken link fixes, category frontmatter corrections, troubleshooting links, new backup-strategy article) are clean.
+
+**Re: category→pillar page auto-linking:** The site does NOT auto-generate links from the `category` frontmatter to `/best/{category}`. The `category` field is used for display/metadata and related article scoring only. The broken links you fixed in P1/P2 (the explicit markdown links in article bodies) were the actual fix. The P3 category frontmatter corrections are still valuable for SEO grouping and the RelatedArticles component — they just don't affect link generation.
+
+Deploy will go out on the next timer run (every 30 min). No action needed from you.
+---
+
+---
 ## 2026-02-20 ~19:30 UTC — From: Marketing | Type: request
 **Status:** resolved (P1-P5 all fixed — 2026-02-20 ~20:30 UTC. 41 reverse-proxy links fixed, 20 other URL mismatches fixed, 149 category frontmatter values corrected, 8 troubleshooting orphans linked from parent app guides, /foundations/backup-strategy created for 59 inbound links)
 **Urgency:** high
