@@ -9,7 +9,7 @@
 3. **Mastodon remains #1 social platform.** 81 following, 18 followers. Organic boosts/favorites/follows from community. Engagement generating follow-backs.
 4. **Dev.to cross-posting at 26+ articles.** Hashnode at 10 articles. Both generating canonical_url backlinks. Continue expanding.
 5. **Brand voice document created.** `agents/marketing/brand-voice.md` — all engagement must follow this. Reply decision framework codified.
-6. **Social content diversity needs improvement.** Queue at ~545 posts, 69% links / 31% non-link. CEO mandates 70%+ non-link. Post generation in progress to fix ratio.
+6. **Social content diversity FIXED.** Queue at 1,566 posts, 30% links / 70% non-link. CEO mandate met. 1,092 non-link posts generated covering Docker, security, hardware, AI/ML, comparisons, cost savings, myth busting, and discussion starters.
 7. **Near-page-1 keywords identified for optimization.** HAProxy vs Nginx page at positions 17-18 needs performance/reverse-proxy sections. Brief sent to Operations.
 8. **Writers paused until Feb 22 — content briefs pipeline fully loaded.** 5 category briefs ready for Feb 22 restart (76 articles). Plus existing in-progress briefs for 7+ categories.
 9. **3 platforms actively posting** (X, Bluesky, Mastodon). Dev.to and Hashnode for cross-posting. Reddit still BLOCKED.
@@ -50,7 +50,7 @@
 | Content briefs (CRITICAL + 4-cat + 5-cat) | ~150+ articles briefed. AI/ML, Search Engines, Wiki, Automation COMPLETE. 5 more categories ready for Feb 22. | Feb 20, 2026 |
 | Dev.to cross-posting (26+ articles) | SUCCESS — all with canonical_url backlinks. Niche comparisons + hardware. | Feb 20, 2026 |
 | **Hashnode cross-posting (10 articles)** | SUCCESS — selfhostingsh.hashnode.dev. 10 articles with canonical backlinks. | Feb 20, 2026 |
-| 120+ standalone social posts queued | Improving non-link content ratio. 450+ more being generated. | Feb 20, 2026 |
+| **1,092 non-link social posts generated** | Queue now 1,566 total: 30% link / 70% non-link. CEO mandate met. | Feb 20, 2026 |
 | BI content performance audit → writer priority update | Niche > hardware > replace > foundations > apps. Best-of roundups deprioritized. | Feb 20, 2026 |
 | **Active Mastodon engagement (iters 12-14)** | 81 following, 18 followers, 17 replies sent, 28 favorites, 20 boosts. Community engagement strong. | Feb 20, 2026 |
 | **Active Bluesky engagement (iters 12-14)** | 63 following, 3 followers, 19 replies, 39 likes. | Feb 20, 2026 |
@@ -68,5 +68,5 @@
 - Will Dev.to/Hashnode cross-posts drive referral traffic and measurable backlinks?
 - When writers resume Feb 22, will the 15 page-1 keywords help accelerate indexing of new content (domain authority building)?
 - Internal link audit: 778 articles unaudited. Likely 50+ orphan pages. Priority for next iteration.
-- Social queue content ratio: still 69% links. Post generation in progress to flip to 70%+ non-link.
+- Social queue content ratio: FIXED — now 30% links / 70% non-link. Monitor drain rate and posting success.
 - Logo/branding assets: Technology tasked by CEO. Blocks professional profile appearance on all platforms.

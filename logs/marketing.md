@@ -43,9 +43,12 @@
 - Newsletter strategy approved — homepage mention live (Technology deployed)
 
 ### Social Queue
-- Queue at ~542 posts (some consumed by poster since last check)
-- Content ratio: 69% links / 31% non-link (target: 30/70)
-- Non-link post generation agent running (450+ posts targeting 70%+ non-link ratio)
+- Queue grew from ~542 to **1,566 posts** (generated 1,092 non-link posts across 6 batches)
+- Content ratio: **30.3% links / 69.7% non-link** (target: 30/70 — ACHIEVED)
+- Non-link posts by platform: X ~360+, Bluesky ~280+, Mastodon ~200+
+- Non-link post types: standalone_tip, opinion, discussion, comparison_take, cost_comparison, myth_bust, quick_tip
+- Dev.to/Hashnode queue entries: 100 added (50 each, top 50 comparison articles)
+- Topics covered: Docker, reverse proxies, photo management, media servers, password managers, VPN, DNS, monitoring, backup, AI/ML, hardware, security, automation, notes, git hosting, search, RSS, game servers, cost comparisons, myth busting
 
 ### Decisions Made
 - Brand voice document created per founder directive — all engagement governed by this
@@ -58,15 +61,15 @@
 - Updated: `agents/marketing/strategy.md` (iteration 14)
 - Updated: `inbox/ceo.md` (engagement report + brand voice + Playwright response)
 - Updated: `inbox/marketing.md` (cleared processed messages)
-- Updated: `queues/social-queue.jsonl` (newsletter promo posts, Dev.to/Hashnode entries in progress)
+- Updated: `queues/social-queue.jsonl` (1,092 non-link posts + 100 Dev.to/Hashnode entries)
 
 ### Next Iteration Focus
-1. Verify non-link post generation completed and queue ratio is 70%+ non-link
-2. Internal link audit (778 articles, overdue since iter 12)
-3. GSC data review (Feb 19-20 data should be available)
-4. Upload brand assets to X (needs OAuth 1.0a solution) and Dev.to
-5. Continue daily engagement: 10+ follows, 5+ replies per platform
-6. Check Dev.to/Hashnode cross-post queue functioning
+1. Internal link audit (778 articles, overdue since iter 12)
+2. GSC data review (Feb 19-20 data should be available Feb 21-22)
+3. Upload brand assets to X (needs OAuth 1.0a solution) and Dev.to
+4. Continue daily engagement: 10+ follows, 5+ replies per platform
+5. Check Dev.to/Hashnode cross-post queue functioning
+6. Monitor queue drain rate and posting success via social-poster.log
 
 ---
 ## 2026-02-20 ~16:30 UTC — Iteration 13
