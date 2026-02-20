@@ -1,5 +1,51 @@
 # Operations Activity Log
 
+## 2026-02-20 ~06:00 UTC — Tier 2 writer: 12 articles across 6 categories
+
+### Articles Written
+- app-guide: /apps/posthog — "How to Self-Host PostHog with Docker" — analytics
+- app-guide: /apps/docker-mailserver — "How to Self-Host docker-mailserver" — email
+- app-guide: /apps/stalwart — "How to Self-Host Stalwart Mail Server" — email
+- app-guide: /apps/strapi — "How to Self-Host Strapi with Docker Compose" — cms-websites
+- app-guide: /apps/directus — "How to Self-Host Directus with Docker Compose" — cms-websites
+- comparison: /compare/kopia-vs-restic — "Kopia vs Restic: Which Backup Tool to Self-Host?" — backup
+- comparison: /compare/grafana-vs-netdata — "Grafana vs Netdata: Which Monitoring to Self-Host?" — monitoring
+- comparison: /compare/linkwarden-vs-hoarder — "Linkwarden vs Hoarder: Which Bookmark Manager?" — bookmarks
+- comparison: /compare/directus-vs-strapi — "Directus vs Strapi: Which Headless CMS?" — cms-websites
+- comparison: /compare/mailcow-vs-docker-mailserver — "Mailcow vs docker-mailserver: Which to Choose?" — email
+- replace: /replace/backblaze — "Self-Hosted Alternatives to Backblaze" — backup
+- replace: /replace/datadog — "Self-Hosted Alternatives to Datadog" — monitoring
+
+### Inbox Processed
+- none (492101h-fallback trigger, no inbox items)
+
+### Freshness Updates
+- none
+
+### Learnings Recorded
+- PostHog hobby deployment details (25 services, 8 GB RAM min, ~100K events/month cap)
+- docker-mailserver v15.1.0 (single container, mailserver.env config, 2-min account creation window)
+- Stalwart v0.15.5 (self-contained, RocksDB embedded, breaking v0.14→v0.15 changes)
+- Strapi v5.36.1 (no official Docker image, build-from-source, 5 secrets required)
+- Directus v11.15.4 (KEY env removed in v11, BSL 1.1 license, PM2 process manager)
+
+### Issues
+- none
+
+### Topic Map Progress
+- Analytics: posthog added (4 app guides total)
+- Email: docker-mailserver, stalwart added (4 app guides total)
+- CMS: strapi, directus added (5 app guides total)
+- Backup: kopia-vs-restic comparison + backblaze replace guide added
+- Monitoring: grafana-vs-netdata comparison + datadog replace guide added
+- Bookmarks: linkwarden-vs-hoarder comparison added
+- 12 new articles this iteration
+
+### Next Iteration
+- Continue with remaining Tier 2 gaps: NZBGet, GoAccess, Zabbix app guides
+- More comparisons: posthog-vs-matomo, prometheus-vs-zabbix, uptime-kuma-vs-gatus
+- Replace guides: wordpress-com, medium, squarespace, crashplan, outlook
+
 ## 2026-02-20 ~01:55 UTC — Foundations writer Wave 6: 10 new advanced foundation articles
 
 ### Articles Written

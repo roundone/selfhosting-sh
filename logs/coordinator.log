@@ -4076,3 +4076,648 @@
 [2026-02-20T02:05:08.409Z] SOCIAL 2026-02-20T02:05:08.409Z [social-poster] queue has 1713 posts
 [2026-02-20T02:05:08.410Z] SOCIAL 2026-02-20T02:05:08.410Z [social-poster] done — 0 attempted, 0 succeeded, 1713 remaining in queue
 [2026-02-20T02:05:08.414Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:15:46.555Z] AGENT operations exited (code=3, duration: 3333s)
+[2026-02-20T02:15:46.555Z] MODEL_FALLBACK operations — server served wrong model. Pausing ALL agents for 5h.
+[2026-02-20T02:15:46.556Z] PENDING operations processing queued trigger
+[2026-02-20T02:15:46.556Z] PAUSED operations — session limit active, 300min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:20:08.431Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:20:08.432Z] PAUSED ops-proxy-docker-writer — session limit active, 296min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:20:08.432Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:20:08.432Z] PAUSED ops-tier2-writer — session limit active, 296min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:20:08.432Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:20:08.432Z] PAUSED ops-vpn-filesync-writer — session limit active, 296min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:20:08.432Z] SOCIAL running social-poster.js
+[2026-02-20T02:20:08.465Z] SOCIAL 2026-02-20T02:20:08.463Z [social-poster] starting
+[2026-02-20T02:20:08.475Z] SOCIAL 2026-02-20T02:20:08.475Z [social-poster] queue has 1824 posts
+[2026-02-20T02:20:08.717Z] SOCIAL 2026-02-20T02:20:08.717Z [social-poster] OK bluesky: posted "Self-hosted Notion alternatives: AppFlowy vs AFFiNE. AppFlow..."
+[2026-02-20T02:20:08.727Z] SOCIAL 2026-02-20T02:20:08.726Z [social-poster] removed 1 posted items from queue (1823 remaining)
+[2026-02-20T02:20:08.727Z] SOCIAL 2026-02-20T02:20:08.727Z [social-poster] done — 1 attempted, 1 succeeded, 1823 remaining in queue
+[2026-02-20T02:20:08.733Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:25:08.531Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:25:08.531Z] PAUSED ops-hardware-writer — session limit active, 291min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:25:08.531Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:25:08.531Z] PAUSED ops-proxy-docker-writer — session limit active, 291min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:25:08.532Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:25:08.532Z] PAUSED ops-tier2-writer — session limit active, 291min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:25:08.532Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:25:08.532Z] PAUSED ops-vpn-filesync-writer — session limit active, 291min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:25:08.532Z] SOCIAL running social-poster.js
+[2026-02-20T02:25:08.585Z] SOCIAL 2026-02-20T02:25:08.582Z [social-poster] starting
+[2026-02-20T02:25:08.599Z] SOCIAL 2026-02-20T02:25:08.599Z [social-poster] queue has 1823 posts
+[2026-02-20T02:25:08.600Z] SOCIAL 2026-02-20T02:25:08.600Z [social-poster] done — 0 attempted, 0 succeeded, 1823 remaining in queue
+[2026-02-20T02:25:08.606Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:30:08.632Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:30:08.632Z] PAUSED ops-hardware-writer — session limit active, 286min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:30:08.632Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:30:08.632Z] PAUSED ops-proxy-docker-writer — session limit active, 286min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:30:08.632Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:30:08.632Z] PAUSED ops-tier2-writer — session limit active, 286min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:30:08.632Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:30:08.632Z] PAUSED ops-vpn-filesync-writer — session limit active, 286min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:30:08.632Z] RELEASES running check-releases.js
+[2026-02-20T02:30:08.634Z] SOCIAL running social-poster.js
+[2026-02-20T02:30:08.665Z] SOCIAL 2026-02-20T02:30:08.664Z [social-poster] starting
+[2026-02-20T02:30:08.666Z] RELEASES 2026-02-20T02:30:08.663Z [check-releases] starting
+[2026-02-20T02:30:08.666Z] RELEASES 2026-02-20T02:30:08.666Z [check-releases] checking 29 GitHub repos
+[2026-02-20T02:30:08.674Z] SOCIAL 2026-02-20T02:30:08.674Z [social-poster] queue has 1823 posts
+[2026-02-20T02:30:08.675Z] SOCIAL 2026-02-20T02:30:08.675Z [social-poster] done — 0 attempted, 0 succeeded, 1823 remaining in queue
+[2026-02-20T02:30:08.679Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:30:08.757Z] RELEASES 2026-02-20T02:30:08.757Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T02:30:09.313Z] RELEASES 2026-02-20T02:30:09.312Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T02:30:09.919Z] RELEASES 2026-02-20T02:30:09.918Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T02:30:10.499Z] RELEASES 2026-02-20T02:30:10.499Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T02:30:11.060Z] RELEASES 2026-02-20T02:30:11.059Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T02:30:11.608Z] RELEASES 2026-02-20T02:30:11.608Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T02:30:12.185Z] RELEASES 2026-02-20T02:30:12.184Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T02:30:12.743Z] RELEASES 2026-02-20T02:30:12.743Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-20T02:30:13.306Z] RELEASES 2026-02-20T02:30:13.306Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T02:30:13.866Z] RELEASES 2026-02-20T02:30:13.866Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T02:30:14.419Z] RELEASES 2026-02-20T02:30:14.419Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T02:30:15.034Z] RELEASES 2026-02-20T02:30:15.034Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T02:30:15.587Z] RELEASES 2026-02-20T02:30:15.587Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T02:30:16.203Z] RELEASES 2026-02-20T02:30:16.202Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T02:30:16.778Z] RELEASES 2026-02-20T02:30:16.778Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T02:30:17.344Z] RELEASES 2026-02-20T02:30:17.344Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T02:30:17.932Z] RELEASES 2026-02-20T02:30:17.932Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T02:30:18.509Z] RELEASES 2026-02-20T02:30:18.509Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T02:30:19.079Z] RELEASES 2026-02-20T02:30:19.078Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T02:30:19.640Z] RELEASES 2026-02-20T02:30:19.639Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T02:30:20.194Z] RELEASES 2026-02-20T02:30:20.194Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T02:30:20.747Z] RELEASES 2026-02-20T02:30:20.747Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T02:30:21.309Z] RELEASES 2026-02-20T02:30:21.308Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T02:30:21.881Z] RELEASES 2026-02-20T02:30:21.880Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T02:30:22.441Z] RELEASES 2026-02-20T02:30:22.441Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T02:30:22.997Z] RELEASES 2026-02-20T02:30:22.996Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T02:30:23.553Z] RELEASES 2026-02-20T02:30:23.553Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-20T02:30:24.126Z] RELEASES 2026-02-20T02:30:24.126Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T02:30:24.685Z] RELEASES 2026-02-20T02:30:24.685Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T02:30:25.186Z] RELEASES 2026-02-20T02:30:25.186Z [check-releases] checking 3 feeds
+[2026-02-20T02:30:25.238Z] RELEASES 2026-02-20T02:30:25.237Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T02:30:25.727Z] RELEASES 2026-02-20T02:30:25.727Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T02:30:26.031Z] RELEASES 2026-02-20T02:30:26.031Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T02:30:26.233Z] RELEASES 2026-02-20T02:30:26.232Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T02:30:26.238Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T02:35:08.710Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:35:08.710Z] PAUSED ops-hardware-writer — session limit active, 281min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:35:08.710Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:35:08.710Z] PAUSED ops-proxy-docker-writer — session limit active, 281min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:35:08.710Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:35:08.710Z] PAUSED ops-tier2-writer — session limit active, 281min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:35:08.711Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:35:08.711Z] PAUSED ops-vpn-filesync-writer — session limit active, 281min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:35:08.711Z] SOCIAL running social-poster.js
+[2026-02-20T02:35:08.744Z] SOCIAL 2026-02-20T02:35:08.742Z [social-poster] starting
+[2026-02-20T02:35:08.752Z] SOCIAL 2026-02-20T02:35:08.752Z [social-poster] queue has 1823 posts
+[2026-02-20T02:35:08.753Z] SOCIAL 2026-02-20T02:35:08.753Z [social-poster] done — 0 attempted, 0 succeeded, 1823 remaining in queue
+[2026-02-20T02:35:08.758Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:40:08.726Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T02:40:08.727Z] PAUSED ops-foundations-writer — session limit active, 276min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:40:08.727Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:40:08.727Z] PAUSED ops-hardware-writer — session limit active, 276min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:40:08.727Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:40:08.727Z] PAUSED ops-proxy-docker-writer — session limit active, 276min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:40:08.727Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:40:08.727Z] PAUSED ops-tier2-writer — session limit active, 276min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:40:08.727Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:40:08.727Z] PAUSED ops-vpn-filesync-writer — session limit active, 276min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:40:08.727Z] SOCIAL running social-poster.js
+[2026-02-20T02:40:08.763Z] SOCIAL 2026-02-20T02:40:08.761Z [social-poster] starting
+[2026-02-20T02:40:08.771Z] SOCIAL 2026-02-20T02:40:08.771Z [social-poster] queue has 1823 posts
+[2026-02-20T02:40:08.772Z] SOCIAL 2026-02-20T02:40:08.771Z [social-poster] done — 0 attempted, 0 succeeded, 1823 remaining in queue
+[2026-02-20T02:40:08.776Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:45:08.819Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T02:45:08.819Z] PAUSED ops-foundations-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.819Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:45:08.819Z] PAUSED ops-hardware-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.819Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T02:45:08.820Z] PAUSED ops-homeauto-notes-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.820Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T02:45:08.820Z] PAUSED ops-password-adblock-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.820Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T02:45:08.820Z] PAUSED ops-photo-media-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.820Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:45:08.820Z] PAUSED ops-proxy-docker-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.820Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:45:08.820Z] PAUSED ops-tier2-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.820Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:45:08.820Z] PAUSED ops-vpn-filesync-writer — session limit active, 271min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:45:08.820Z] SOCIAL running social-poster.js
+[2026-02-20T02:45:08.856Z] SOCIAL 2026-02-20T02:45:08.854Z [social-poster] starting
+[2026-02-20T02:45:08.864Z] SOCIAL 2026-02-20T02:45:08.864Z [social-poster] queue has 1823 posts
+[2026-02-20T02:45:08.865Z] SOCIAL 2026-02-20T02:45:08.865Z [social-poster] done — 0 attempted, 0 succeeded, 1823 remaining in queue
+[2026-02-20T02:45:08.869Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:50:08.918Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-foundations-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-hardware-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-homeauto-notes-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-password-adblock-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-photo-media-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-proxy-docker-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-tier2-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:50:08.919Z] PAUSED ops-vpn-filesync-writer — session limit active, 266min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:50:08.919Z] SOCIAL running social-poster.js
+[2026-02-20T02:50:08.959Z] SOCIAL 2026-02-20T02:50:08.957Z [social-poster] starting
+[2026-02-20T02:50:08.969Z] SOCIAL 2026-02-20T02:50:08.969Z [social-poster] queue has 1823 posts
+[2026-02-20T02:50:09.334Z] SOCIAL 2026-02-20T02:50:09.333Z [social-poster] OK bluesky: posted "If you're choosing between Cosmos Cloud and Yacht for Docker..."
+[2026-02-20T02:50:09.341Z] SOCIAL 2026-02-20T02:50:09.341Z [social-poster] removed 1 posted items from queue (1822 remaining)
+[2026-02-20T02:50:09.341Z] SOCIAL 2026-02-20T02:50:09.341Z [social-poster] done — 1 attempted, 1 succeeded, 1822 remaining in queue
+[2026-02-20T02:50:09.346Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:55:08.982Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-foundations-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-hardware-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-homeauto-notes-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-password-adblock-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-photo-media-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-proxy-docker-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-tier2-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T02:55:08.982Z] PAUSED ops-vpn-filesync-writer — session limit active, 261min until 2026-02-20T07:15:46.555Z
+[2026-02-20T02:55:08.982Z] SOCIAL running social-poster.js
+[2026-02-20T02:55:09.017Z] SOCIAL 2026-02-20T02:55:09.014Z [social-poster] starting
+[2026-02-20T02:55:09.025Z] SOCIAL 2026-02-20T02:55:09.025Z [social-poster] queue has 1822 posts
+[2026-02-20T02:55:09.026Z] SOCIAL 2026-02-20T02:55:09.026Z [social-poster] done — 0 attempted, 0 succeeded, 1822 remaining in queue
+[2026-02-20T02:55:09.030Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:00:09.043Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:00:09.043Z] PAUSED ops-foundations-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:00:09.044Z] PAUSED ops-hardware-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:00:09.044Z] PAUSED ops-homeauto-notes-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:00:09.044Z] PAUSED ops-password-adblock-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:00:09.044Z] PAUSED ops-photo-media-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:00:09.044Z] PAUSED ops-proxy-docker-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:00:09.044Z] PAUSED ops-tier2-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.044Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:00:09.045Z] PAUSED ops-vpn-filesync-writer — session limit active, 256min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:00:09.045Z] SOCIAL running social-poster.js
+[2026-02-20T03:00:09.095Z] SOCIAL 2026-02-20T03:00:09.092Z [social-poster] starting
+[2026-02-20T03:00:09.106Z] SOCIAL 2026-02-20T03:00:09.105Z [social-poster] queue has 1822 posts
+[2026-02-20T03:00:09.340Z] SOCIAL 2026-02-20T03:00:09.339Z [social-poster] OK x: posted "Every DNS query to 8.8.8.8 tells Google which sites you visi..."
+[2026-02-20T03:00:09.347Z] SOCIAL 2026-02-20T03:00:09.347Z [social-poster] removed 1 posted items from queue (1821 remaining)
+[2026-02-20T03:00:09.348Z] SOCIAL 2026-02-20T03:00:09.347Z [social-poster] done — 1 attempted, 1 succeeded, 1821 remaining in queue
+[2026-02-20T03:00:09.353Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:05:09.130Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-foundations-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-hardware-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-homeauto-notes-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-password-adblock-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-photo-media-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-proxy-docker-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-tier2-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:05:09.130Z] PAUSED ops-vpn-filesync-writer — session limit active, 251min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:05:09.130Z] SOCIAL running social-poster.js
+[2026-02-20T03:05:09.157Z] SOCIAL 2026-02-20T03:05:09.156Z [social-poster] starting
+[2026-02-20T03:05:09.164Z] SOCIAL 2026-02-20T03:05:09.163Z [social-poster] queue has 1821 posts
+[2026-02-20T03:05:09.164Z] SOCIAL 2026-02-20T03:05:09.164Z [social-poster] done — 0 attempted, 0 succeeded, 1821 remaining in queue
+[2026-02-20T03:05:09.168Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:10:09.156Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:10:09.156Z] PAUSED ops-foundations-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.156Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-hardware-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-homeauto-notes-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-password-adblock-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-photo-media-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-proxy-docker-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-tier2-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:10:09.157Z] PAUSED ops-vpn-filesync-writer — session limit active, 246min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:10:09.157Z] SOCIAL running social-poster.js
+[2026-02-20T03:10:09.190Z] SOCIAL 2026-02-20T03:10:09.188Z [social-poster] starting
+[2026-02-20T03:10:09.198Z] SOCIAL 2026-02-20T03:10:09.198Z [social-poster] queue has 1821 posts
+[2026-02-20T03:10:09.199Z] SOCIAL 2026-02-20T03:10:09.198Z [social-poster] done — 0 attempted, 0 succeeded, 1821 remaining in queue
+[2026-02-20T03:10:09.203Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:15:09.257Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:15:09.257Z] PAUSED ops-foundations-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.257Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:15:09.257Z] PAUSED ops-hardware-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.257Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:15:09.257Z] PAUSED ops-homeauto-notes-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.258Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:15:09.258Z] PAUSED ops-password-adblock-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.258Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:15:09.258Z] PAUSED ops-photo-media-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.258Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:15:09.258Z] PAUSED ops-proxy-docker-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.258Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:15:09.258Z] PAUSED ops-tier2-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.258Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:15:09.258Z] PAUSED ops-vpn-filesync-writer — session limit active, 241min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:15:09.258Z] SOCIAL running social-poster.js
+[2026-02-20T03:15:09.288Z] SOCIAL 2026-02-20T03:15:09.286Z [social-poster] starting
+[2026-02-20T03:15:09.295Z] SOCIAL 2026-02-20T03:15:09.295Z [social-poster] queue has 1821 posts
+[2026-02-20T03:15:09.296Z] SOCIAL 2026-02-20T03:15:09.296Z [social-poster] done — 0 attempted, 0 succeeded, 1821 remaining in queue
+[2026-02-20T03:15:09.300Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:20:09.273Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:20:09.273Z] PAUSED ops-foundations-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.273Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:20:09.273Z] PAUSED ops-hardware-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.273Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:20:09.273Z] PAUSED ops-homeauto-notes-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.273Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:20:09.273Z] PAUSED ops-password-adblock-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.274Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:20:09.274Z] PAUSED ops-photo-media-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.274Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:20:09.274Z] PAUSED ops-proxy-docker-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.274Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:20:09.274Z] PAUSED ops-tier2-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.274Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:20:09.274Z] PAUSED ops-vpn-filesync-writer — session limit active, 236min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:20:09.274Z] SOCIAL running social-poster.js
+[2026-02-20T03:20:09.332Z] SOCIAL 2026-02-20T03:20:09.330Z [social-poster] starting
+[2026-02-20T03:20:09.342Z] SOCIAL 2026-02-20T03:20:09.342Z [social-poster] queue has 1821 posts
+[2026-02-20T03:20:09.729Z] SOCIAL 2026-02-20T03:20:09.728Z [social-poster] OK bluesky: posted "Jellyfin is the media server with zero strings attached. No ..."
+[2026-02-20T03:20:09.744Z] SOCIAL 2026-02-20T03:20:09.744Z [social-poster] removed 1 posted items from queue (1820 remaining)
+[2026-02-20T03:20:09.745Z] SOCIAL 2026-02-20T03:20:09.745Z [social-poster] done — 1 attempted, 1 succeeded, 1820 remaining in queue
+[2026-02-20T03:20:09.754Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:25:09.367Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:25:09.367Z] PAUSED ops-foundations-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.367Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:25:09.367Z] PAUSED ops-hardware-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.367Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:25:09.367Z] PAUSED ops-homeauto-notes-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.368Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:25:09.368Z] PAUSED ops-password-adblock-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.368Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:25:09.368Z] PAUSED ops-photo-media-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.368Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:25:09.368Z] PAUSED ops-proxy-docker-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.368Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:25:09.368Z] PAUSED ops-tier2-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.368Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:25:09.368Z] PAUSED ops-vpn-filesync-writer — session limit active, 231min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:25:09.368Z] SOCIAL running social-poster.js
+[2026-02-20T03:25:09.408Z] SOCIAL 2026-02-20T03:25:09.404Z [social-poster] starting
+[2026-02-20T03:25:09.419Z] SOCIAL 2026-02-20T03:25:09.419Z [social-poster] queue has 1820 posts
+[2026-02-20T03:25:09.421Z] SOCIAL 2026-02-20T03:25:09.420Z [social-poster] done — 0 attempted, 0 succeeded, 1820 remaining in queue
+[2026-02-20T03:25:09.425Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:30:09.388Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-foundations-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-hardware-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-homeauto-notes-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-password-adblock-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-photo-media-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-proxy-docker-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-tier2-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:30:09.388Z] PAUSED ops-vpn-filesync-writer — session limit active, 226min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:30:09.388Z] RELEASES running check-releases.js
+[2026-02-20T03:30:09.390Z] SOCIAL running social-poster.js
+[2026-02-20T03:30:09.422Z] RELEASES 2026-02-20T03:30:09.419Z [check-releases] starting
+[2026-02-20T03:30:09.422Z] SOCIAL 2026-02-20T03:30:09.420Z [social-poster] starting
+[2026-02-20T03:30:09.422Z] RELEASES 2026-02-20T03:30:09.422Z [check-releases] checking 29 GitHub repos
+[2026-02-20T03:30:09.431Z] SOCIAL 2026-02-20T03:30:09.431Z [social-poster] queue has 1820 posts
+[2026-02-20T03:30:09.432Z] SOCIAL 2026-02-20T03:30:09.432Z [social-poster] done — 0 attempted, 0 succeeded, 1820 remaining in queue
+[2026-02-20T03:30:09.436Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:30:09.511Z] RELEASES 2026-02-20T03:30:09.511Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T03:30:10.066Z] RELEASES 2026-02-20T03:30:10.065Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T03:30:10.654Z] RELEASES 2026-02-20T03:30:10.654Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T03:30:11.216Z] RELEASES 2026-02-20T03:30:11.215Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T03:30:11.770Z] RELEASES 2026-02-20T03:30:11.770Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T03:30:12.329Z] RELEASES 2026-02-20T03:30:12.329Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T03:30:12.896Z] RELEASES 2026-02-20T03:30:12.896Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T03:30:13.474Z] RELEASES 2026-02-20T03:30:13.474Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-20T03:30:14.039Z] RELEASES 2026-02-20T03:30:14.039Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T03:30:14.590Z] RELEASES 2026-02-20T03:30:14.590Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T03:30:15.142Z] RELEASES 2026-02-20T03:30:15.141Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T03:30:15.761Z] RELEASES 2026-02-20T03:30:15.761Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T03:30:16.307Z] RELEASES 2026-02-20T03:30:16.306Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T03:30:16.881Z] RELEASES 2026-02-20T03:30:16.880Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T03:30:17.437Z] RELEASES 2026-02-20T03:30:17.436Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T03:30:17.995Z] RELEASES 2026-02-20T03:30:17.994Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T03:30:18.559Z] RELEASES 2026-02-20T03:30:18.558Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T03:30:19.125Z] RELEASES 2026-02-20T03:30:19.125Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T03:30:19.709Z] RELEASES 2026-02-20T03:30:19.709Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T03:30:20.273Z] RELEASES 2026-02-20T03:30:20.273Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T03:30:20.829Z] RELEASES 2026-02-20T03:30:20.829Z [check-releases]   TriliumNext/Notes → 200 but same version (v0.95.0)
+[2026-02-20T03:30:21.382Z] RELEASES 2026-02-20T03:30:21.381Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T03:30:21.941Z] RELEASES 2026-02-20T03:30:21.941Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T03:30:22.505Z] RELEASES 2026-02-20T03:30:22.504Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T03:30:23.056Z] RELEASES 2026-02-20T03:30:23.055Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T03:30:23.622Z] RELEASES 2026-02-20T03:30:23.621Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T03:30:24.181Z] RELEASES 2026-02-20T03:30:24.180Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-20T03:30:24.731Z] RELEASES 2026-02-20T03:30:24.731Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T03:30:25.283Z] RELEASES 2026-02-20T03:30:25.283Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T03:30:25.783Z] RELEASES 2026-02-20T03:30:25.783Z [check-releases] checking 3 feeds
+[2026-02-20T03:30:25.984Z] RELEASES 2026-02-20T03:30:25.984Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T03:30:26.250Z] RELEASES 2026-02-20T03:30:26.249Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T03:30:26.565Z] RELEASES 2026-02-20T03:30:26.565Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T03:30:26.766Z] RELEASES 2026-02-20T03:30:26.765Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T03:30:26.771Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T03:35:09.479Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-foundations-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-hardware-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-homeauto-notes-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-password-adblock-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-photo-media-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-proxy-docker-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-tier2-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:35:09.479Z] PAUSED ops-vpn-filesync-writer — session limit active, 221min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:35:09.479Z] SOCIAL running social-poster.js
+[2026-02-20T03:35:09.511Z] SOCIAL 2026-02-20T03:35:09.509Z [social-poster] starting
+[2026-02-20T03:35:09.518Z] SOCIAL 2026-02-20T03:35:09.518Z [social-poster] queue has 1820 posts
+[2026-02-20T03:35:09.519Z] SOCIAL 2026-02-20T03:35:09.519Z [social-poster] done — 0 attempted, 0 succeeded, 1820 remaining in queue
+[2026-02-20T03:35:09.522Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:40:09.571Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:40:09.571Z] PAUSED ops-foundations-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.571Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:40:09.571Z] PAUSED ops-hardware-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.571Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:40:09.571Z] PAUSED ops-homeauto-notes-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.571Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:40:09.571Z] PAUSED ops-password-adblock-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.572Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:40:09.572Z] PAUSED ops-photo-media-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.572Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:40:09.572Z] PAUSED ops-proxy-docker-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.572Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:40:09.572Z] PAUSED ops-tier2-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.572Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:40:09.572Z] PAUSED ops-vpn-filesync-writer — session limit active, 216min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:40:09.572Z] SOCIAL running social-poster.js
+[2026-02-20T03:40:09.603Z] SOCIAL 2026-02-20T03:40:09.602Z [social-poster] starting
+[2026-02-20T03:40:09.611Z] SOCIAL 2026-02-20T03:40:09.611Z [social-poster] queue has 1820 posts
+[2026-02-20T03:40:09.612Z] SOCIAL 2026-02-20T03:40:09.612Z [social-poster] done — 0 attempted, 0 succeeded, 1820 remaining in queue
+[2026-02-20T03:40:09.615Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:45:09.635Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:45:09.635Z] PAUSED ops-foundations-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.635Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:45:09.635Z] PAUSED ops-hardware-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.635Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:45:09.635Z] PAUSED ops-homeauto-notes-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.635Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:45:09.635Z] PAUSED ops-password-adblock-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.635Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:45:09.636Z] PAUSED ops-photo-media-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.636Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:45:09.636Z] PAUSED ops-proxy-docker-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.636Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:45:09.636Z] PAUSED ops-tier2-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.636Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:45:09.636Z] PAUSED ops-vpn-filesync-writer — session limit active, 211min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:45:09.636Z] SOCIAL running social-poster.js
+[2026-02-20T03:45:09.669Z] SOCIAL 2026-02-20T03:45:09.667Z [social-poster] starting
+[2026-02-20T03:45:09.677Z] SOCIAL 2026-02-20T03:45:09.677Z [social-poster] queue has 1820 posts
+[2026-02-20T03:45:09.677Z] SOCIAL 2026-02-20T03:45:09.677Z [social-poster] done — 0 attempted, 0 succeeded, 1820 remaining in queue
+[2026-02-20T03:45:09.681Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:50:09.735Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-foundations-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-hardware-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-homeauto-notes-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-password-adblock-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-photo-media-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-proxy-docker-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-tier2-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:50:09.736Z] PAUSED ops-vpn-filesync-writer — session limit active, 206min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:50:09.736Z] SOCIAL running social-poster.js
+[2026-02-20T03:50:09.769Z] SOCIAL 2026-02-20T03:50:09.767Z [social-poster] starting
+[2026-02-20T03:50:09.776Z] SOCIAL 2026-02-20T03:50:09.776Z [social-poster] queue has 1820 posts
+[2026-02-20T03:50:10.005Z] SOCIAL 2026-02-20T03:50:10.005Z [social-poster] OK bluesky: posted "Nextcloud is the most well-known self-hosted cloud solution ..."
+[2026-02-20T03:50:10.012Z] SOCIAL 2026-02-20T03:50:10.012Z [social-poster] removed 1 posted items from queue (1819 remaining)
+[2026-02-20T03:50:10.012Z] SOCIAL 2026-02-20T03:50:10.012Z [social-poster] done — 1 attempted, 1 succeeded, 1819 remaining in queue
+[2026-02-20T03:50:10.018Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T03:55:09.836Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T03:55:09.837Z] PAUSED ops-foundations-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.837Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T03:55:09.837Z] PAUSED ops-hardware-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.837Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T03:55:09.837Z] PAUSED ops-homeauto-notes-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.837Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T03:55:09.837Z] PAUSED ops-password-adblock-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.837Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T03:55:09.838Z] PAUSED ops-photo-media-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.838Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T03:55:09.838Z] PAUSED ops-proxy-docker-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.838Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T03:55:09.838Z] PAUSED ops-tier2-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.838Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T03:55:09.838Z] PAUSED ops-vpn-filesync-writer — session limit active, 201min until 2026-02-20T07:15:46.555Z
+[2026-02-20T03:55:09.838Z] SOCIAL running social-poster.js
+[2026-02-20T03:55:09.893Z] SOCIAL 2026-02-20T03:55:09.890Z [social-poster] starting
+[2026-02-20T03:55:09.906Z] SOCIAL 2026-02-20T03:55:09.905Z [social-poster] queue has 1819 posts
+[2026-02-20T03:55:09.907Z] SOCIAL 2026-02-20T03:55:09.906Z [social-poster] done — 0 attempted, 0 succeeded, 1819 remaining in queue
+[2026-02-20T03:55:09.911Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T04:00:09.936Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T04:00:09.936Z] PAUSED ops-foundations-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-hardware-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-homeauto-notes-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-password-adblock-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-photo-media-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-photo-media-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-proxy-docker-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-proxy-docker-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-tier2-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-tier2-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] FALLBACK ops-vpn-filesync-writer — 30m since last run
+[2026-02-20T04:00:09.937Z] PAUSED ops-vpn-filesync-writer — session limit active, 196min until 2026-02-20T07:15:46.555Z
+[2026-02-20T04:00:09.937Z] SOCIAL running social-poster.js
+[2026-02-20T04:00:09.970Z] SOCIAL 2026-02-20T04:00:09.968Z [social-poster] starting
+[2026-02-20T04:00:09.978Z] SOCIAL 2026-02-20T04:00:09.978Z [social-poster] queue has 1819 posts
+[2026-02-20T04:00:10.301Z] SOCIAL 2026-02-20T04:00:10.301Z [social-poster] OK x: posted "AppFlowy vs AFFiNE — two self-hosted Notion alternatives com..."
+[2026-02-20T04:00:10.309Z] SOCIAL 2026-02-20T04:00:10.309Z [social-poster] removed 1 posted items from queue (1818 remaining)
+[2026-02-20T04:00:10.310Z] SOCIAL 2026-02-20T04:00:10.309Z [social-poster] done — 1 attempted, 1 succeeded, 1818 remaining in queue
+[2026-02-20T04:00:10.315Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T04:00:43.442Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T05:05:46.476Z] ============================================================
+[2026-02-20T05:05:46.478Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T05:05:46.478Z] CONFIG loaded: maxTotal=4, maxWriters=2, memMin=800MB, writerFallback=8h, deptFallback=8h, minGap=5min
+[2026-02-20T05:05:46.480Z] AGENTS discovered: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T05:05:46.481Z] HOOK installed bin/hooks/post-commit → .git/hooks/post-commit
+[2026-02-20T05:05:46.481Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T05:05:46.482Z] WATCH events/ (routing by filename convention)
+[2026-02-20T05:05:46.482Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T05:05:46.484Z] STARTUP complete — watching for events
+[2026-02-20T05:05:47.484Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T05:05:47.485Z] RECOVERY found unprocessed event: technology-deploy-20260220T015401Z.json → technology
+[2026-02-20T05:05:47.485Z] RECOVERY found unprocessed event: technology-deploy-20260220T020145Z.json → technology
+[2026-02-20T05:05:47.485Z] RECOVERY found unprocessed event: technology-deploy-20260220T020215Z.json → technology
+[2026-02-20T05:05:47.485Z] RECOVERY complete — 3 missed event(s) found
+[2026-02-20T05:05:51.488Z] FALLBACK ops-proxy-docker-writer — 492101h since last run (3 due, starting 1)
+[2026-02-20T05:05:51.489Z] PAUSED ops-proxy-docker-writer — session limit active, 130min until 2026-02-20T07:15:46.555Z
+[2026-02-20T05:05:52.486Z] PAUSED technology — session limit active, 130min until 2026-02-20T07:15:46.555Z
+[2026-02-20T05:06:29.417Z] UNPAUSE manual unpause event received — clearing global pause
+[2026-02-20T05:06:52.505Z] AGENT technology starting (trigger: technology-deploy-20260220T020145Z.json)
+[2026-02-20T05:06:52.509Z] AGENT technology started (pid: 810877)
+[2026-02-20T05:07:52.532Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T020215Z.json
+[2026-02-20T05:10:46.568Z] STATUS running=1/4 writers=0/2 freeMem=3155MB agents=[technology(234s)] paused=no
+[2026-02-20T05:10:46.568Z] FALLBACK ops-proxy-docker-writer — 492101h since last run (3 due, starting 1)
+[2026-02-20T05:10:46.569Z] AGENT ops-proxy-docker-writer starting (trigger: 492101h-fallback)
+[2026-02-20T05:10:46.570Z] AGENT ops-proxy-docker-writer started (pid: 811523)
+[2026-02-20T05:10:46.571Z] RELEASES running check-releases.js
+[2026-02-20T05:10:46.573Z] SOCIAL running social-poster.js
+[2026-02-20T05:10:46.607Z] RELEASES 2026-02-20T05:10:46.604Z [check-releases] starting
+[2026-02-20T05:10:46.608Z] RELEASES 2026-02-20T05:10:46.608Z [check-releases] checking 29 GitHub repos
+[2026-02-20T05:10:46.617Z] SOCIAL 2026-02-20T05:10:46.613Z [social-poster] starting
+[2026-02-20T05:10:46.626Z] SOCIAL 2026-02-20T05:10:46.626Z [social-poster] queue has 1818 posts
+[2026-02-20T05:10:46.687Z] RELEASES 2026-02-20T05:10:46.687Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T05:10:46.857Z] SOCIAL 2026-02-20T05:10:46.857Z [social-poster] OK x: posted "Cosmos Cloud vs Yacht for Docker management: Yacht hasn't ha..."
+[2026-02-20T05:10:47.180Z] SOCIAL 2026-02-20T05:10:47.179Z [social-poster] OK bluesky: posted "Pi-hole blocks ads for every device on your network in about..."
+[2026-02-20T05:10:47.187Z] SOCIAL 2026-02-20T05:10:47.187Z [social-poster] removed 2 posted items from queue (1816 remaining)
+[2026-02-20T05:10:47.187Z] SOCIAL 2026-02-20T05:10:47.187Z [social-poster] done — 2 attempted, 2 succeeded, 1816 remaining in queue
+[2026-02-20T05:10:47.194Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T05:10:47.240Z] RELEASES 2026-02-20T05:10:47.239Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T05:10:47.837Z] RELEASES 2026-02-20T05:10:47.837Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T05:10:48.423Z] RELEASES 2026-02-20T05:10:48.423Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T05:10:48.971Z] RELEASES 2026-02-20T05:10:48.970Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T05:10:49.526Z] RELEASES 2026-02-20T05:10:49.526Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T05:10:50.106Z] RELEASES 2026-02-20T05:10:50.106Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T05:10:50.670Z] RELEASES 2026-02-20T05:10:50.670Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-20T05:10:51.232Z] RELEASES 2026-02-20T05:10:51.232Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T05:10:51.803Z] RELEASES 2026-02-20T05:10:51.803Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T05:10:52.357Z] RELEASES 2026-02-20T05:10:52.357Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T05:10:52.967Z] RELEASES 2026-02-20T05:10:52.967Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T05:10:53.508Z] RELEASES 2026-02-20T05:10:53.508Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T05:10:54.086Z] RELEASES 2026-02-20T05:10:54.086Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T05:10:54.670Z] RELEASES 2026-02-20T05:10:54.669Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T05:10:55.225Z] RELEASES 2026-02-20T05:10:55.225Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T05:10:55.774Z] RELEASES 2026-02-20T05:10:55.774Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T05:10:56.344Z] RELEASES 2026-02-20T05:10:56.344Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T05:10:56.920Z] RELEASES 2026-02-20T05:10:56.920Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T05:10:57.523Z] RELEASES 2026-02-20T05:10:57.522Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T05:10:58.085Z] RELEASES 2026-02-20T05:10:58.085Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T05:10:58.722Z] RELEASES 2026-02-20T05:10:58.722Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T05:10:59.283Z] RELEASES 2026-02-20T05:10:59.283Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T05:10:59.845Z] RELEASES 2026-02-20T05:10:59.845Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T05:11:00.403Z] RELEASES 2026-02-20T05:11:00.402Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T05:11:00.960Z] RELEASES 2026-02-20T05:11:00.960Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T05:11:01.518Z] RELEASES 2026-02-20T05:11:01.518Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T05:11:02.076Z] RELEASES 2026-02-20T05:11:02.076Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T05:11:02.634Z] RELEASES 2026-02-20T05:11:02.634Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T05:11:03.135Z] RELEASES 2026-02-20T05:11:03.135Z [check-releases] checking 3 feeds
+[2026-02-20T05:11:03.194Z] RELEASES 2026-02-20T05:11:03.194Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T05:11:03.461Z] RELEASES 2026-02-20T05:11:03.461Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T05:11:03.783Z] RELEASES 2026-02-20T05:11:03.783Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T05:11:03.984Z] RELEASES 2026-02-20T05:11:03.984Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T05:11:03.990Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T05:12:23.115Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T05:12:23.115Z] SHUTDOWN killing technology (pid: 810877)
+[2026-02-20T05:12:23.116Z] SHUTDOWN killing ops-proxy-docker-writer (pid: 811523)
+[2026-02-20T05:12:23.116Z] AGENT technology exited (signal=SIGTERM, duration: 331s)
+[2026-02-20T05:12:23.117Z] BACKOFF technology error #1, next allowed in 30s
+[2026-02-20T05:12:23.118Z] PENDING technology processing queued trigger
+[2026-02-20T05:12:23.118Z] BACKOFF technology in backoff for 30s more
+[2026-02-20T05:12:23.118Z] AGENT ops-proxy-docker-writer exited (signal=SIGTERM, duration: 97s)
+[2026-02-20T05:12:23.118Z] BACKOFF ops-proxy-docker-writer error #1, next allowed in 30s
+[2026-02-20T05:12:23.119Z] PENDING ops-proxy-docker-writer processing queued trigger
+[2026-02-20T05:12:23.119Z] BACKOFF ops-proxy-docker-writer in backoff for 30s more
+[2026-02-20T05:14:02.150Z] ============================================================
+[2026-02-20T05:14:02.158Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T05:14:02.160Z] CONFIG loaded: maxTotal=4, maxWriters=2, memMin=800MB, writerFallback=8h, deptFallback=8h, minGap=5min
+[2026-02-20T05:14:02.165Z] AGENTS discovered: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T05:14:02.167Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T05:14:02.168Z] WATCH events/ (routing by filename convention)
+[2026-02-20T05:14:02.169Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T05:14:02.178Z] STARTUP complete — watching for events
+[2026-02-20T05:14:03.179Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T05:14:03.182Z] RECOVERY complete — 0 missed event(s) found
+[2026-02-20T05:14:07.183Z] FALLBACK ops-proxy-docker-writer — 492101h since last run (3 due, starting 1)
+[2026-02-20T05:14:07.184Z] AGENT ops-proxy-docker-writer starting (trigger: 492101h-fallback)
+[2026-02-20T05:14:07.187Z] AGENT ops-proxy-docker-writer started (pid: 981)
+[2026-02-20T05:19:02.184Z] STATUS running=1/4 writers=1/2 freeMem=7049MB agents=[ops-proxy-docker-writer(295s)] paused=no
+[2026-02-20T05:19:02.184Z] FALLBACK ops-tier2-writer — 492101h since last run (2 due, starting 1)
+[2026-02-20T05:19:02.184Z] AGENT ops-tier2-writer starting (trigger: 492101h-fallback)
+[2026-02-20T05:19:02.186Z] AGENT ops-tier2-writer started (pid: 1592)
+[2026-02-20T05:19:02.186Z] SOCIAL running social-poster.js
+[2026-02-20T05:19:02.213Z] SOCIAL 2026-02-20T05:19:02.211Z [social-poster] starting
+[2026-02-20T05:19:02.221Z] SOCIAL 2026-02-20T05:19:02.221Z [social-poster] queue has 1816 posts
+[2026-02-20T05:19:02.223Z] SOCIAL 2026-02-20T05:19:02.222Z [social-poster] done — 0 attempted, 0 succeeded, 1816 remaining in queue
+[2026-02-20T05:19:02.228Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T05:24:02.241Z] STATUS running=2/4 writers=2/2 freeMem=6830MB agents=[ops-proxy-docker-writer(595s), ops-tier2-writer(300s)] paused=no
+[2026-02-20T05:24:02.241Z] FALLBACK ops-vpn-filesync-writer — 492101h since last run (1 due, starting 1)
+[2026-02-20T05:24:02.241Z] WRITER_LIMIT ops-vpn-filesync-writer — 2 writers already running, queued
+[2026-02-20T05:24:02.241Z] SOCIAL running social-poster.js
+[2026-02-20T05:24:02.277Z] SOCIAL 2026-02-20T05:24:02.274Z [social-poster] starting
+[2026-02-20T05:24:02.286Z] SOCIAL 2026-02-20T05:24:02.286Z [social-poster] queue has 1816 posts
+[2026-02-20T05:24:02.286Z] SOCIAL 2026-02-20T05:24:02.286Z [social-poster] done — 0 attempted, 0 succeeded, 1816 remaining in queue
+[2026-02-20T05:24:02.290Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T05:27:40.999Z] EVENT ceo-manual-20260220T053000Z.json → ceo
+[2026-02-20T05:27:40.999Z] AGENT ceo starting (trigger: ceo-manual-20260220T053000Z.json)
+[2026-02-20T05:27:41.001Z] AGENT ceo started (pid: 3086)
+[2026-02-20T05:29:02.300Z] STATUS running=3/4 writers=2/2 freeMem=6421MB agents=[ops-proxy-docker-writer(895s), ops-tier2-writer(600s), ceo(81s)] paused=no
+[2026-02-20T05:29:02.301Z] FALLBACK ops-vpn-filesync-writer — 492101h since last run (1 due, starting 1)
+[2026-02-20T05:29:02.301Z] WRITER_LIMIT ops-vpn-filesync-writer — 2 writers already running, queued
+[2026-02-20T05:29:02.301Z] SOCIAL running social-poster.js
+[2026-02-20T05:29:02.326Z] SOCIAL 2026-02-20T05:29:02.325Z [social-poster] starting
+[2026-02-20T05:29:02.333Z] SOCIAL 2026-02-20T05:29:02.332Z [social-poster] queue has 1816 posts
+[2026-02-20T05:29:02.333Z] SOCIAL 2026-02-20T05:29:02.333Z [social-poster] done — 0 attempted, 0 succeeded, 1816 remaining in queue
+[2026-02-20T05:29:02.336Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T05:34:02.401Z] STATUS running=3/4 writers=2/2 freeMem=6579MB agents=[ops-proxy-docker-writer(1195s), ops-tier2-writer(900s), ceo(381s)] paused=no
+[2026-02-20T05:34:02.401Z] FALLBACK ops-vpn-filesync-writer — 492102h since last run (1 due, starting 1)
+[2026-02-20T05:34:02.401Z] WRITER_LIMIT ops-vpn-filesync-writer — 2 writers already running, queued
+[2026-02-20T05:34:02.401Z] SOCIAL running social-poster.js
+[2026-02-20T05:34:02.441Z] SOCIAL 2026-02-20T05:34:02.439Z [social-poster] starting
+[2026-02-20T05:34:02.450Z] SOCIAL 2026-02-20T05:34:02.450Z [social-poster] queue has 1816 posts
+[2026-02-20T05:34:02.451Z] SOCIAL 2026-02-20T05:34:02.451Z [social-poster] done — 0 attempted, 0 succeeded, 1816 remaining in queue
+[2026-02-20T05:34:02.454Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T05:39:02.417Z] STATUS running=3/4 writers=2/2 freeMem=6535MB agents=[ops-proxy-docker-writer(1495s), ops-tier2-writer(1200s), ceo(681s)] paused=no
+[2026-02-20T05:39:02.417Z] FALLBACK ops-vpn-filesync-writer — 492102h since last run (1 due, starting 1)
+[2026-02-20T05:39:02.417Z] WRITER_LIMIT ops-vpn-filesync-writer — 2 writers already running, queued
+[2026-02-20T05:39:02.417Z] SOCIAL running social-poster.js
+[2026-02-20T05:39:02.453Z] SOCIAL 2026-02-20T05:39:02.450Z [social-poster] starting
+[2026-02-20T05:39:02.463Z] SOCIAL 2026-02-20T05:39:02.463Z [social-poster] queue has 1816 posts
+[2026-02-20T05:39:02.463Z] SOCIAL 2026-02-20T05:39:02.463Z [social-poster] done — 0 attempted, 0 succeeded, 1816 remaining in queue
+[2026-02-20T05:39:02.468Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T05:41:28.686Z] INBOX ceo.md modified → ceo
+[2026-02-20T05:41:28.687Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T05:44:02.456Z] STATUS running=3/4 writers=2/2 freeMem=6535MB agents=[ops-proxy-docker-writer(1795s), ops-tier2-writer(1500s), ceo(981s)] paused=no
+[2026-02-20T05:44:02.456Z] FALLBACK ops-vpn-filesync-writer — 492102h since last run (1 due, starting 1)
+[2026-02-20T05:44:02.457Z] WRITER_LIMIT ops-vpn-filesync-writer — 2 writers already running, queued
+[2026-02-20T05:44:02.457Z] SOCIAL running social-poster.js
+[2026-02-20T05:44:02.488Z] SOCIAL 2026-02-20T05:44:02.486Z [social-poster] starting
+[2026-02-20T05:44:02.495Z] SOCIAL 2026-02-20T05:44:02.495Z [social-poster] queue has 1816 posts
+[2026-02-20T05:44:02.848Z] SOCIAL 2026-02-20T05:44:02.848Z [social-poster] OK bluesky: posted "Bitwarden official server: 2+ GB RAM, MSSQL required, .NET s..."
+[2026-02-20T05:44:02.855Z] SOCIAL 2026-02-20T05:44:02.855Z [social-poster] removed 1 posted items from queue (1815 remaining)
+[2026-02-20T05:44:02.855Z] SOCIAL 2026-02-20T05:44:02.855Z [social-poster] done — 1 attempted, 1 succeeded, 1815 remaining in queue
+[2026-02-20T05:44:02.860Z] SOCIAL social-poster.js exited (code: 0)

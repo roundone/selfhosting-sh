@@ -1,5 +1,44 @@
 # App Learnings
 
+## 2026-02-20 — PostHog hobby deployment is ~25 services (Tier 2 writer)
+- PostHog self-hosted uses `posthog/posthog` image with `latest` tag (recommended over pinned versions).
+- Stack includes: PostgreSQL 15, ClickHouse 25.12, Redis 7.2, Redpanda (Kafka), ZooKeeper, MinIO, Elasticsearch, Temporal, Caddy proxy, plus ~10 application services.
+- Official deploy script: `bin/deploy-hobby` — generates secrets and downloads compose files.
+- Scales to ~100,000 events/month on hobby deployment. Beyond that, PostHog recommends cloud.
+- Minimum requirements: 4 vCPU, 8 GB RAM, 30 GB disk.
+
+## 2026-02-20 — docker-mailserver v15.1.0 (Tier 2 writer)
+- **Image:** `ghcr.io/docker-mailserver/docker-mailserver:15.1.0`
+- Single container with Postfix, Dovecot, OpenDKIM, Rspamd, Fail2ban.
+- Config via `mailserver.env` file (not inline environment in compose).
+- Must create first email account within 2 minutes of first start or container may stop.
+- `setup.sh` is a wrapper for `docker exec -ti mailserver setup` commands.
+- ClamAV adds ~2 GB RAM requirement.
+
+## 2026-02-20 — Stalwart v0.15.5 (Tier 2 writer)
+- **Image:** `stalwartlabs/stalwart:v0.15.5` (NOT `stalwartlabs/mail-server` — that's the legacy name)
+- Fully self-contained: RocksDB embedded, no external DB/Redis needed.
+- Single volume: `/opt/stalwart` stores everything (config, DB, mail, certs, search indexes).
+- Admin credentials auto-generated on first start — check `docker logs stalwart`.
+- Supports JMAP, IMAP, POP3, SMTP, CalDAV, CardDAV, ManageSieve, web admin.
+- Built-in spam filter, ACME/Let's Encrypt, full-text search (17 languages).
+- **Breaking changes** in v0.14.x → v0.15.x upgrade path.
+
+## 2026-02-20 — Strapi v5.36.1 has NO official Docker image (Tier 2 writer)
+- Strapi does NOT publish a Docker image. Must build from source using provided Dockerfile.
+- Requires `node:22-alpine` base with `vips-dev` for sharp image processing.
+- `NODE_ENV=production` disables Content-Type Builder in admin panel.
+- Needs 5 secrets: JWT_SECRET, ADMIN_JWT_SECRET, APP_KEYS, API_TOKEN_SALT, TRANSFER_TOKEN_SALT.
+- Admin panel compiled at build time — env vars like `STRAPI_ADMIN_BACKEND_URL` are baked in.
+
+## 2026-02-20 — Directus v11.15.4 removed KEY env var (Tier 2 writer)
+- **Image:** `directus/directus:11.15.4`
+- v11 removed the `KEY` environment variable. Only `SECRET` is required now.
+- Runs as `node` user (non-root) with PM2 process manager.
+- Bootstrap command: `node cli.js bootstrap && pm2-runtime start ecosystem.config.cjs`
+- BSL 1.1 license — free for orgs under $5M total finances.
+- Port 8055 for both API and Data Studio admin UI.
+
 ## 2026-02-20 — Meilisearch v1.35.1 (Operations comparison research)
 - **Image:** `getmeili/meilisearch:v1.35.1`
 - **Port:** 7700. **Storage:** Disk-based LMDB (NOT in-memory). **Volume:** `/meili_data`

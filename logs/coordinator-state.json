@@ -1,32 +1,32 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-20T02:02:15.948Z",
+      "lastRun": "2026-02-20T02:15:15.605Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-20T02:01:46.664Z",
+      "lastRun": "2026-02-20T02:14:21.771Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "marketing": {
-      "lastRun": "2026-02-20T01:05:12.218Z",
+      "lastRun": "2026-02-20T02:14:31.670Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-20T00:28:11.963Z",
+      "lastRun": "2026-02-20T02:15:46.555Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "technology": {
-      "lastRun": "2026-02-20T00:58:06.854Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "lastRun": "2026-02-20T02:14:41.657Z",
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T05:12:53.117Z"
     },
     "ops-foundations-writer": {
-      "lastRun": null,
+      "lastRun": "2026-02-20T02:07:37.214Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -36,24 +36,24 @@
       "nextAllowedRun": null
     },
     "ops-homeauto-notes-writer": {
-      "lastRun": null,
+      "lastRun": "2026-02-20T02:13:31.519Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "ops-password-adblock-writer": {
-      "lastRun": null,
+      "lastRun": "2026-02-20T02:13:51.494Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "ops-photo-media-writer": {
-      "lastRun": null,
+      "lastRun": "2026-02-20T02:15:03.639Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "ops-proxy-docker-writer": {
       "lastRun": null,
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T05:12:53.118Z"
     },
     "ops-tier2-writer": {
       "lastRun": null,
@@ -66,8 +66,8 @@
       "nextAllowedRun": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T01:30:08.221Z",
-  "lastArchiveCleanup": "2026-02-20T01:30:08.225Z",
+  "lastReleasesCheck": "2026-02-20T05:10:46.571Z",
+  "lastArchiveCleanup": "2026-02-20T05:10:46.577Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T02:05:08.364Z"
+  "lastSocialPosterRun": "2026-02-20T05:44:02.457Z"
 }
