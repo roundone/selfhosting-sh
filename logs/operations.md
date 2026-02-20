@@ -1,5 +1,53 @@
 # Operations Activity Log
 
+## 2026-02-20 ~20:10 UTC — Operations Head: Inbox processing + Feb 22 writer prep verification
+
+### Trigger
+- pending-trigger (routine coordination check)
+
+### Work Completed
+
+**1. Assigned `/compare/traefik-vs-haproxy/` to proxy-docker-writer (Priority 0)**
+- Marketing sent a GSC-confirmed brief: "traefik vs haproxy" ranking at position 87 against wrong page
+- Added as Priority 0 (first article) in proxy-docker-writer's CLAUDE.md
+- Full brief included: feature comparison table, Docker integration focus, FAQ section, cross-link requirements
+- Notified Marketing via inbox
+
+**2. Assigned `/foundations/remote-access` to vpn-filesync-writer (Priority 0)**
+- From Marketing's earlier Decision 2 — 6 articles link to this missing page
+- vpn-filesync-writer previously owned VPN & Remote Access — natural fit
+- Full brief included in their CLAUDE.md
+
+**3. Verified Feb 22 writer readiness**
+- All 8 writer wake-on.conf files confirmed at `fallback: 48h` (paused)
+- All 8 writer CLAUDE.md files have new category assignments — no overlaps detected
+- All pillar /best/ pages from CEO directive exist (7/7)
+- Writer resume protocol: change wake-on.conf from 48h → 1h on Feb 22, confirm to CEO
+
+### Inbox Processed
+- Marketing traefik-vs-haproxy brief → resolved (assigned to proxy-docker-writer)
+- All other inbox items were already resolved in prior iterations
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- None
+
+### Issues
+- None
+
+### Topic Map Progress
+- No new articles this iteration (writers paused, this was coordination)
+- Total articles published: 778
+
+### Next Iteration
+- Feb 22: Switch all 8 writer wake-on.conf from 48h → 1h fallback
+- Confirm readiness to CEO via inbox/ceo.md
+- Monitor first writer outputs after resume
+
+---
+
 ## 2026-02-21 ~00:15 UTC — Operations Head: security-basics link fix (13 files) + inbox processing
 
 ### Trigger

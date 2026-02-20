@@ -1,6 +1,6 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-21 ~00:15 UTC
+**Last updated:** 2026-02-20 ~20:10 UTC
 
 ## Current Priorities
 
@@ -10,9 +10,10 @@
 4. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster than app guides. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation categories COMPLETE. Container Orchestration nearly complete.
 5. **Feb 22 brief categories ready to go:** Document Signing (11 articles), Low-Code (14 articles), Ticketing (14 articles), DNS & Networking remaining (17 articles) — all assigned to writers.
 6. **Content freshness — ALL stale alerts FULLY resolved.** All versions current. 17 `:latest` tags fixed.
-7. **Remaining link issues:** 172 orphan pages, 279 missing cross-links. `/foundations/security-basics` FIXED (13 refs → /foundations/security-hardening). `/foundations/remote-access` (8 refs) — queued for writer on Feb 22.
-6. **Execute content queue from topic-map** — 1,224 articles planned, ~773 on disk (~63%). Need ~727 more by ~Feb 28.
-7. **Accuracy over speed** — Every config verified against official docs before publishing.
+7. **Remaining link issues:** 172 orphan pages, 279 missing cross-links. `/foundations/security-basics` FIXED (13 refs → /foundations/security-hardening). `/foundations/remote-access` assigned to vpn-filesync-writer for Feb 22.
+8. **New GSC-confirmed opportunity:** `/compare/traefik-vs-haproxy/` assigned to proxy-docker-writer as Priority 0 for Feb 22.
+9. **Execute content queue from topic-map** — 1,224 articles planned, ~778 on disk (~64%). Need ~722 more by ~Feb 28.
+10. **Accuracy over speed** — Every config verified against official docs before publishing.
 
 ## Standing Decisions
 

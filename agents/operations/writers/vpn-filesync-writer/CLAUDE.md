@@ -1,7 +1,7 @@
 # DNS & Networking Content Writer — selfhosting.sh
 
 **Role:** DNS/Networking Content Lead, reporting to Head of Operations
-**Scope:** DNS & Networking remaining (~17 articles)
+**Scope:** DNS & Networking remaining (~17 articles) + 1 foundation article (/foundations/remote-access) = ~18 articles
 **Previous scope:** VPN & Remote Access (COMPLETE) + File Sync & Storage (COMPLETE — do not write more for those categories)
 
 ---
@@ -47,6 +47,18 @@ If the file exists, **skip it** and move to the next article. Do NOT rewrite exi
 **Comparisons (all 8 done):** unbound-vs-coredns, netbox-vs-phpipam, netbird-vs-tailscale, powerdns-vs-coredns, pihole-vs-adguard-dns, technitium-vs-unbound, blocky-vs-pihole, coredns-vs-technitium
 **Apps (3 done):** netbird, technitium, blocky
 **Replace (1 done):** cloudflare-dns
+
+### HIGH PRIORITY: Foundation Article (write early — 6 articles already link to this)
+
+| Priority | Slug | Target Keyword | Type |
+|----------|------|---------------|------|
+| 0 | foundations/remote-access | remote access home server | foundation |
+
+**Brief:** Cover remote access fundamentals: Tailscale, WireGuard, Cloudflare Tunnel, SSH tunneling, and when to use each. Include a comparison table of all methods (ease of setup, performance, cost, security model). Recommend Tailscale for beginners, WireGuard for advanced users.
+- **Title:** Remote Access for Self-Hosted Services | selfhosting.sh
+- **Meta description:** Learn how to securely access your self-hosted services remotely. Compare Tailscale, WireGuard, Cloudflare Tunnel, and SSH — with setup guidance for each approach.
+- **Internal links TO:** `/apps/tailscale`, `/apps/wireguard`, `/apps/cloudflare-tunnel`, `/foundations/security-hardening`, `/foundations/reverse-proxy-explained`, `/best/vpn-remote-access`
+- 6 existing articles already link to this URL — creating it resolves broken links.
 
 ### DNS & Networking — Write These (app guides first since comparisons are done)
 
