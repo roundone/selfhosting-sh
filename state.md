@@ -60,7 +60,7 @@
 - OG image generation: IMPLEMENTED
 - Technical SEO: 100% COMPLETE
 - **Search: FIXED** (CEO fixed Feb 20 05:50 UTC — Pagefind index/ renamed to idx/ for CF Pages compatibility)
-- **Board Portal: LIVE** at http://5.161.102.207:8080 (token auth, 8 pages, systemd `selfhosting-portal`; replaced old dashboard)
+- **Board Portal v3: LIVE** at https://portal.selfhosting.sh (login auth, 11 pages incl. Growth metrics + Agent Instructions, systemd `selfhosting-portal`)
 - **Post-deploy QA: INTEGRATED** (21 checks, all passing)
 - **Share buttons: LIVE** (ShareButtons.astro — X, Reddit, HN, LinkedIn, Bluesky, Copy Link)
 - **Page speed: OPTIMIZED** (prefetch, preconnect GTM, conditional Pagefind — articles skip ~50KB)
@@ -68,12 +68,11 @@
 ## SEO & Marketing
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
 - **GSC: sitemap resubmitted Feb 20 05:50 UTC** (should pick up 604 articles on next Google crawl)
-- **9 pages showing search impressions** (as of Feb 19):
-  - `/hardware/proxmox-hardware-guide/` — 8 impressions, position 6.9
-  - `/compare/freshrss-vs-miniflux/` — 4 impressions, position 4.5
-  - `/foundations/reverse-proxy-explained/` — 4 impressions, position 7.2
-  - 6 more pages with 1-2 impressions each
-- **2 page-1 keywords confirmed:** "freshrss vs miniflux" (pos 3.0), "miniflux vs freshrss" (pos 5.0)
+- **GSC BREAKTHROUGH (Feb 18 data): 518 impressions (20x increase from 24), 15 page-1 keywords (was 2)**
+  - 22 pages showing impressions (was 9). Google shifted to active indexing.
+  - Top: `/hardware/proxmox-hardware-guide/` — 181 impressions, pos 6.2
+  - 10 of 15 page-1 keywords are comparison/niche queries — validates comparison-first strategy
+  - Zero clicks still — first clicks expected in Feb 19-20 data (avail Feb 21-22)
 - GSC sitemap warnings: 0 (resolved)
 - Topic map: 1,224 articles across 78 categories
 
@@ -132,7 +131,7 @@
 |-------|----------|--------|--------|
 | CEO | 2026-02-20 15:42 | 0 | Running — resolved founder directive (CLAUDE.md password + Running:0 fix) |
 | Operations | 2026-02-20 14:20 | 0 | Running |
-| Technology | 2026-02-20 14:21 | 0 | Completed (portal improvements; MINGAP deferral) |
+| Technology | 2026-02-20 17:00 | 0 | Completed (Portal v3: Growth + Instructions pages) |
 | Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
 | BI & Finance | 2026-02-20 13:03 | 0 | Idle (next: inbox/fallback trigger) |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
@@ -175,5 +174,5 @@
 20. **GA4 API enabled** → **DONE** by founder. BI notified to retry API queries.
 21. **Portal login broken** → **FIXED by CEO** (Feb 20 ~15:15 UTC) — Simplified to password-only (removed username field). Portal restarted. Credentials emailed to founder.
 22. **Product features must maximize SEO/social** → **COMPLETE** (Feb 20 ~15:30 UTC) — All implemented: 7 existing features ✓, share buttons LIVE (6 targets, pure HTML/CSS), page speed optimized (prefetch, preconnect, conditional Pagefind), Marketing standing seat on features ✓. Comments: deferred (CEO decision — spam/moderation risk with no humans). Marketing consultation still pending.
-23. **Portal CLAUDE.md access + Growth metrics dashboard** → **CLAUDE.md DONE / Dashboard IN PROGRESS** (Feb 20 ~15:42 UTC) — CLAUDE.md viewer LIVE with extra password layer (14 files, CEO editable, others read-only). Growth dashboard: IR to spec → Technology builds.
+23. **Portal CLAUDE.md access + Growth metrics dashboard** → **COMPLETE** (Feb 20 ~17:00 UTC) — CLAUDE.md viewer LIVE with extra password layer. Growth dashboard LIVE at `/growth` (GSC+GA4+Social data, 6 top-line cards, sparklines, cached APIs). Agent Instructions LIVE at `/instructions` (14 agents, CEO editable). Portal v3 with 11 pages.
 24. **CLAUDE.md extra password + Running:0 fix** → **DONE** (Feb 20 ~15:42 UTC) — Separate password generated and stored. Portal CLAUDE.md section requires additional auth. Coordinator persists running state. Credentials emailed to founder.

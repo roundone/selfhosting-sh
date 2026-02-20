@@ -1,16 +1,15 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-20 11:00 UTC
+**Last updated:** 2026-02-20 16:00 UTC
 
 ## Current Priorities
 
-1. **ALL WRITERS PAUSED until Feb 22** — Founder directive 2026-02-20. 773 articles on disk. No new content production until Feb 22. All 8 writer wake-on.conf set to 48h. Focus shifts entirely to non-content work.
-2. **Social media strategy overhaul** — Founder directive: Marketing must do active engagement (follows, replies, boosts), not just queue syndication. Max 30% article links, 70% other content. Marketing CLAUDE.md updated, directive sent.
-3. **Portal improvements** — Founder directive: security (login page, HTTPS via portal.selfhosting.sh, sessions), UI polish, smarter alerts. IR speccing, Technology implementing. Coordinator updated with lastErrorAt.
-4. **New credentials live** — Mastodon posting confirmed. Dev.to API key provided. GA4 API enabled. BI notified.
-5. **Operations: writer CLAUDE.md prep for Feb 22** — Quality audit done. Meta descriptions deferred. Focus on updating all 8 writer CLAUDE.md files for reassignment.
-6. **BI & Finance: GA4 API now available** — Should be able to query GA4 Data API. Need numeric property ID.
-7. **Technology improvements** — Deploy pipeline stable (systemd timer). Portal DNS + improvements coming.
+1. **GSC BREAKTHROUGH — comparison strategy validated.** 15 page-1 keywords (was 2), 518 impressions (20x increase). 10/15 are comparison/niche queries. Double down when writers resume Feb 22.
+2. **ALL WRITERS PAUSED until Feb 22** — Founder directive. 779 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 restart with comparison-first priority.
+3. **Feb 22 writer restart prep** — Need to reset all 8 wake-on.conf from 48h to 1h. Confirm coordinator allows writers. Target: ~120 articles/day to hit 1,500 by Feb 28.
+4. **Social media engagement** — Marketing executing. Mastodon best performer (8 followers, 3.4 engagements/post). Dev.to: 21 cross-posted articles. Continue daily engagement targets.
+5. **Technology: portal v3** — IR spec delivered. Agent Instructions page + Growth Metrics dashboard. Technology to implement.
+6. **Monitor for first clicks** — Feb 19-20 GSC data arrives Feb 21-22. With 15 keywords at positions 3-10, organic clicks are imminent.
 
 ## Standing Decisions
 
@@ -49,9 +48,10 @@
 
 ## Open Questions
 
-- **Writer pause impact on Month 1 target** — 773 articles published vs 1,500 target. Writers paused until Feb 22. With 6 days remaining (Feb 22-28), need ~727 articles in 6 days (~121/day). Achievable with 8 concurrent writers but tight.
-- **Social engagement execution** — Can Marketing effectively use Playwright for active engagement (following, replying, browsing feeds)? This is new territory.
-- **Portal security timeline** — How fast can Technology implement login page + HTTPS? DNS record is straightforward; login system requires more work.
-- **GA4 data availability** — BI should be able to query GA4 now. Need to confirm numeric property ID discovery works.
+- **Writer pause impact on Month 1 target** — 779 articles published vs 1,500 target. Writers paused until Feb 22. With 6 days remaining (Feb 22-28), need ~721 articles in 6 days (~120/day). Achievable with 8 concurrent writers but tight.
+- **Social engagement execution** — Marketing showed strong first results (41 follows, 8 replies). Can they sustain and grow? Mastodon is the clear winner. → PARTIALLY ANSWERED: Yes, first iteration exceeded all targets.
+- **Portal security + v3** — ✅ RESOLVED. Portal v3 live with login auth, 11 pages including Growth metrics and Agent Instructions. HTTPS at portal.selfhosting.sh.
+- **GA4 data availability** — ✅ RESOLVED. BI successfully querying GA4 API. Property ID 524871536 confirmed working.
 - **Reddit app creation blocked** — Policy wall on Reddit's end. Monitor and retry.
-- **Dev.to cross-posting volume** — 773 articles to cross-post. Marketing needs a strategy for prioritizing which articles get cross-posted first.
+- **Dev.to cross-posting volume** — Marketing cross-posted 21 articles. Prioritizing niche comparisons per GSC data. Ongoing.
+- **When will first clicks arrive?** — 15 keywords at positions 3-10 with 518 impressions. Feb 19-20 GSC data (available Feb 21-22) should confirm first click-throughs.
