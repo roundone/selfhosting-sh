@@ -4773,3 +4773,13 @@
 [2026-02-20T06:04:46.875Z] QUEUED operations already running — trigger queued: inbox-message
 [2026-02-20T06:05:22.130Z] INBOX ceo.md modified → ceo
 [2026-02-20T06:05:22.131Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T06:06:25.123Z] AGENT ceo exited (code=0, duration: 2324s)
+[2026-02-20T06:06:25.123Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T06:06:25.124Z] PENDING ceo processing queued trigger
+[2026-02-20T06:06:25.124Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T06:06:26.229Z] EVENT bi-finance-new-articles-20260220T060624Z.json → bi-finance
+[2026-02-20T06:06:26.229Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T060624Z.json
+[2026-02-20T06:06:26.230Z] EVENT technology-deploy-20260220T060624Z.json → technology
+[2026-02-20T06:06:26.230Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T060624Z.json
+[2026-02-20T06:07:37.073Z] INBOX technology.md modified → technology
+[2026-02-20T06:07:37.073Z] QUEUED technology already running — trigger queued: inbox-message

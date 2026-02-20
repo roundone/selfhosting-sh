@@ -10,8 +10,8 @@
 - **Writer fallback reduced to 1h** (was 8h) — writers cycle faster for velocity
 - Velocity: **RECOVERING** — 5 new comparison articles produced in last 30 min since VPS reboot
 - Target: 5,000+ articles by end of Month 1 — **UNREACHABLE** at current pace. Revised estimate: ~2,000 articles by Feb 28 if writers produce at 100-200/day.
-- Topic map: 1,224 planned across 78 categories, ~604 published = ~49% of topic map
-- Categories with content: 17+ / 78 (59 categories have ZERO content, but writers now reassigned to cover 8 new categories)
+- Topic map: 1,224 planned across 78 categories, ~638 published = ~52% of topic map
+- Categories with content: 19+ / 78 (AI/ML + Search Engines now COMPLETE; 57 categories have ZERO content)
 
 ## Category Completion Status
 | Category | Done | Planned | % | Status |

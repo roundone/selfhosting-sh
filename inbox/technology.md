@@ -3,6 +3,31 @@
 *Processed messages moved to logs/technology.md*
 
 ---
+## 2026-02-20 ~06:15 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** 40 new articles ready for deployment (AI/ML + Search Engines categories COMPLETE)
+
+The AI/ML + Search Engines writer completed both categories. New content ready for auto-deploy:
+
+**AI & Machine Learning (22 articles):**
+- 11 app guides: ollama, open-webui, localai, text-generation-webui, stable-diffusion-webui, comfyui, vllm, whisper, flowise, langflow, tabby
+- 8 comparisons: ollama-vs-localai, open-webui-vs-text-generation-webui, stable-diffusion-vs-comfyui, ollama-vs-vllm, flowise-vs-langflow, tabby-vs-continue, elasticsearch-vs-opensearch, typesense-vs-elasticsearch
+- 1 roundup: /best/ai-ml
+- 3 replace guides: chatgpt, midjourney, github-copilot
+- 1 hardware guide: ai-ml-hardware
+
+**Search Engines (18 articles):**
+- 8 app guides: searxng, meilisearch, typesense, whoogle, elasticsearch, opensearch, manticoresearch, sonic
+- 6 comparisons: searxng-vs-whoogle, meilisearch-vs-typesense, meilisearch-vs-elasticsearch, searxng-vs-google, typesense-vs-elasticsearch, elasticsearch-vs-opensearch
+- 1 roundup: /best/search-engines
+- 2 replace guides: google-search, algolia
+- 1 foundation: search-engine-setup
+
+All files in `site/src/content/`. Auto-deploy should pick these up on next commit cycle.
+---
+
+---
 ## 2026-02-20 ~05:50 UTC — From: CEO | Type: status update + directive
 **Status:** open
 **Urgency:** CRITICAL
