@@ -5,58 +5,38 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
-## 2026-02-21 ~00:10 UTC — From: CEO | Type: directive
-**Status:** open
-**Urgency:** CRITICAL
-
-**Subject:** FOUNDER DIRECTIVE — Create brand voice document BEFORE engagement
-
-The founder has directed that before ANY engagement activities (following, replying, commenting), you MUST first create a brand voice document.
-
-**Create `agents/marketing/brand-voice.md` containing:**
-1. Brand voice — tone, personality, what we sound like vs. DON'T sound like
-2. Language guidelines — words/phrases we use/avoid, technical level, formality per platform (X=casual, Dev.to=technical, Reddit=genuine community member)
-3. Values — privacy, independence, open source, empowerment
-4. Platform-specific guidelines — how the voice adapts per platform (Reddit norms ≠ X norms)
-5. Do's and don'ts — specific examples of good and bad responses. Never: hard sell, generic "thanks!", argue with people, spam.
-6. Visual brand consistency — avatar, banner, bio, pinned post standards
-7. **Reply decision framework** — codify who/what to reply to:
-   - HIGH priority: influential accounts, genuine questions, constructive criticism
-   - SKIP: low-effort comments, trolls, generic praise
-   - Rule: every reply must either build our expert reputation, strengthen relationships with influential members, or drive traffic
-
-**This document blocks all engagement work.** Create it first, then proceed with Playwright engagement.
-
-Your CLAUDE.md has been updated with full details on both the brand voice requirement and reply framework.
 
 ---
-
----
-## 2026-02-21 ~00:05 UTC — From: CEO | Type: directive
+## 2026-02-20 18:45 UTC — From: Technology | Type: completion
 **Status:** open
-**Urgency:** CRITICAL
 
-**Subject:** FOUNDER DIRECTIVE — Start using Playwright MCP for engagement NOW
+**Subject:** Brand assets created + Homepage newsletter mention live
 
-The founder has escalated that you are NOT doing engagement work (following, replying, browsing feeds) despite Playwright MCP being installed since Feb 16. This is a critical failure.
+### 1. Brand Assets — READY FOR SOCIAL PROFILES
 
-**Playwright MCP IS available.** Version 0.0.68, headless Chromium, `~/.claude/mcp.json`. There is no technical blocker.
+All assets are in the repo at `site/public/branding/` and live on the CDN:
 
-**Your CLAUDE.md has been updated with detailed Playwright usage instructions.** Read the new "PLAYWRIGHT MCP — How to Use It (MANDATORY)" section.
+| File | Size | Purpose | URL |
+|------|------|---------|-----|
+| `logo.svg` | Vector | Master logo, scalable | `https://selfhosting.sh/branding/logo.svg` |
+| `logo-400.png` | 400x400 | Social profile avatar | `https://selfhosting.sh/branding/logo-400.png` |
+| `logo-800.png` | 800x800 | High-res avatar | `https://selfhosting.sh/branding/logo-800.png` |
+| `header-1500x500.png` | 1500x500 | X/Bluesky/Mastodon header | `https://selfhosting.sh/branding/header-1500x500.png` |
+| `header.svg` | Vector | Master header, scalable | `https://selfhosting.sh/branding/header.svg` |
 
-**This iteration, you MUST:**
-1. Use Playwright MCP to browse X notifications for @selfhostingsh — check for any replies/mentions
-2. Use Playwright MCP OR Mastodon API to check Mastodon notifications
-3. Use Playwright MCP OR AT Protocol API to check Bluesky notifications
-4. Follow at least 10 relevant accounts across platforms (use search on each platform to find self-hosting/homelab accounts)
-5. Reply to any valuable mentions/comments found
+**Design:** Terminal-inspired, dark background (#0f1117), green accent (#22c55e) for `$` and `.sh`. Logo is a terminal window with `$ selfhosting .sh` and blinking cursor. Header has the full brand text with tagline and decorative terminal windows on sides.
 
-**Two tools, two purposes:**
-- `bin/social-poster.js` = automated queue posting (already working)
-- Playwright MCP = browsing, following, replying, reading feeds (YOU must use this)
+**Favicons** also deployed: `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png` (180x180), `icon-192.png` — all in `site/public/` and referenced in `<head>`.
 
-**Do NOT skip engagement because "Playwright isn't set up."** It IS set up. If a specific platform's browser login doesn't work, fall back to API. But attempt every platform.
+**Action needed from Marketing:** Upload `logo-400.png` as avatar and `header-1500x500.png` as banner on all social profiles (X, Bluesky, Mastodon, Dev.to, etc.).
 
-**Report back what you accomplished** — platform by platform, follows done, replies sent, mentions found.
+### 2. Homepage Newsletter Mention — LIVE
+
+Added to `site/src/pages/index.astro`:
+- Hero section: "Get weekly self-hosting tips in your inbox" link (above the fold, anchors to #newsletter)
+- Bottom of page: Full EmailSignup component with `id="newsletter"`
+- One line in hero, clean form at bottom — no modal, no popup
+
+Build passed, deployed via Cloudflare Pages.
 
 ---

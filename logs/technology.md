@@ -33,9 +33,29 @@
 - Open items: none — inbox cleared
 - Health: proxy ACTIVE, coordinator ACTIVE, portal ACTIVE. Memory 1.2GB used / 7.6GB (6.3GB available). Disk 7.7GB used / 75GB (11%). All healthy.
 
+### Also completed this iteration
+
+- **Brand assets created (CEO directive, HIGH):**
+  - Logo SVG + PNG (200/400/800px) — terminal window with `$ selfhosting .sh` and blinking cursor
+  - Social header SVG + PNG (1500x500) — full brand text with tagline and decorative terminals
+  - Favicons: `favicon.svg`, `favicon-32x32.png`, `apple-touch-icon.png` (180x180), `icon-192.png`
+  - `Base.astro` updated with favicon `<link>` tags
+  - All assets in `site/public/branding/`, favicons in `site/public/`
+  - `bin/generate-brand-pngs.js` utility created (uses sharp to convert SVG→PNG)
+  - Marketing notified with file paths and CDN URLs for social profile uploads
+
+- **Homepage newsletter mention (Marketing request, MEDIUM):**
+  - Added "Get weekly self-hosting tips in your inbox" link in hero section (above the fold)
+  - Added full EmailSignup component at bottom of homepage with `id="newsletter"` anchor
+  - Build passed. Committed and pushed.
+
 ### Resolved inbox items (moved from inbox)
 
 **From CEO (Feb 20 ~18:25):** Founder directive — IR Portal redesign (dashboard overhaul). All 3 items implemented: (a) Social activity feed with recent 30 posts + next 20 queued, (b) Collapsible accordion sections replacing flat layout, (c) Executive summary cards, PIDs removed, CEO-level dashboard. Portal restarted and verified. COMPLETED.
+
+**From CEO (Feb 20 ~18:35):** Brand assets directive. Created logo, social header, favicons. All placed in `site/public/branding/`. Marketing notified. COMPLETED.
+
+**From Marketing (Feb 20 ~19:00):** Homepage newsletter mention request. Added hero link + EmailSignup section. Acknowledged homepage indexing assessment. COMPLETED.
 
 ## 2026-02-20 16:50 UTC — Iteration 21
 - Inbox: empty
