@@ -21,7 +21,7 @@
       "nextAllowedRun": null
     },
     "technology": {
-      "lastRun": "2026-02-20T13:00:25.977Z",
+      "lastRun": "2026-02-20T14:11:50.440Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -75,5 +75,5 @@
   "lastReleasesCheck": "2026-02-20T13:20:17.632Z",
   "lastArchiveCleanup": "2026-02-20T13:20:17.636Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T14:10:18.369Z"
+  "lastSocialPosterRun": "2026-02-20T14:15:18.409Z"
 }

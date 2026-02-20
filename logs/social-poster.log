@@ -586,3 +586,6 @@ docker run --rm -v myvolume..."
 2026-02-20T14:10:18.956Z [social-poster] OK bluesky: posted "Duplicati is one of those apps that's worth self-hosting. He..."
 2026-02-20T14:10:18.965Z [social-poster] removed 2 posted items from queue (1966 remaining)
 2026-02-20T14:10:18.965Z [social-poster] done — 2 attempted, 2 succeeded, 1966 remaining in queue
+2026-02-20T14:15:18.440Z [social-poster] starting
+2026-02-20T14:15:18.450Z [social-poster] queue has 1966 posts
+2026-02-20T14:15:18.451Z [social-poster] done — 0 attempted, 0 succeeded, 1966 remaining in queue
