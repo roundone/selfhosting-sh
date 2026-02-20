@@ -848,3 +848,11 @@ Deploy AFFiNE with Doc..."
 2026-02-20T18:49:43.582Z [social-poster] starting
 2026-02-20T18:49:43.587Z [social-poster] queue has 542 posts
 2026-02-20T18:49:43.588Z [social-poster] done — 0 attempted, 0 succeeded, 542 remaining in queue
+2026-02-20T18:54:43.615Z [social-poster] starting
+2026-02-20T18:54:43.621Z [social-poster] queue has 642 posts
+2026-02-20T18:54:43.940Z [social-poster] Dev.to: duplicate article detected — "AdGuard Home vs Blocky: Which DNS Ad Blocker?"
+2026-02-20T18:54:43.940Z [social-poster] OK devto: posted "AdGuard Home vs Blocky: Which DNS Ad Blocker?..."
+2026-02-20T18:54:44.616Z [social-poster] Hashnode: published "AdGuard Home vs Blocky: Which DNS Ad Blocker?" → https://selfhostingsh.hashnode.dev/adguard-home-vs-blocky-which-dns-ad-blocker
+2026-02-20T18:54:44.616Z [social-poster] OK hashnode: posted "AdGuard Home vs Blocky: Which DNS Ad Blocker?..."
+2026-02-20T18:54:44.618Z [social-poster] removed 2 posted items from queue (640 remaining)
+2026-02-20T18:54:44.619Z [social-poster] done — 2 attempted, 2 succeeded, 640 remaining in queue

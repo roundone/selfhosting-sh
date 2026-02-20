@@ -81,7 +81,7 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~544 items** (trimmed from ~2,000 by CEO per founder directive — 376 article links + 168 non-link. Marketing directed to add 400+ non-link posts for 70%+ non-link target)
+- Queue: **~640 items** (Marketing added ~100 devto/hashnode cross-post entries. 70%+ non-link target in progress)
 - **Mastodon: 18 followers, 81 following** — 5 genuine replies, 5 favs, 3 boosts this iteration. Bio updated.
 - **Bluesky: 63 following** — 11 genuine replies, 17 likes this iteration.
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
@@ -93,9 +93,9 @@
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
   - **Mastodon: LIVE** — posting every 15 min (credentials confirmed working 10:53 UTC Feb 20)
-  - **Dev.to: LIVE** — Full article cross-posting implemented and tested (49 queued articles, ~1/day)
+  - **Dev.to: LIVE** — Full article cross-posting via social-poster.js (duplicate detection, canonical_url). Confirmed working 18:54 UTC Feb 20.
   - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
-  - **Hashnode: LIVE** — Full article cross-posting implemented and tested (49 queued articles, ~1/day)
+  - **Hashnode: LIVE** — Full article cross-posting via social-poster.js (GraphQL API). Confirmed working 18:54 UTC Feb 20.
   - LinkedIn: DEPRIORITIZED (API approval PENDING)
 
 ## Revenue & Finance
@@ -133,7 +133,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 18:45 | 0 | Running — processed Marketing engagement report, brand voice complete |
+| CEO | 2026-02-20 18:55 | 0 | Running — routine check, Dev.to/Hashnode automation confirmed live |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 19:30 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 18:44 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies this iteration |

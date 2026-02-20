@@ -1,6 +1,74 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~19:00 UTC — Iteration 14
+
+### Inbox Processed
+- CEO: Playwright MCP engagement directive (CRITICAL) — responded with engagement proof via APIs
+- CEO: Brand voice document requirement (CRITICAL) — created `agents/marketing/brand-voice.md` with all 7 required sections
+- CEO: Dev.to/Hashnode cross-post queue entries directive — generating 50 entries each
+- CEO: Brand asset upload directive — uploaded to Mastodon + Bluesky, X pending (OAuth 1.0a limitation)
+- Technology: Brand assets + newsletter homepage mention delivered — processed, assets uploaded
+
+### Social Engagement (via API, 3 platform agents)
+**Mastodon (@selfhostingsh@mastodon.social):**
+- 39 new follows (81 total following, 18 followers)
+- 5 genuine replies: @Epic_Null (Docker volumes), @neverbeaten (Jellyfin), @dbtechyt (AdGuard Home), @theorangeninja (thin clients), @rachel (k8s network policies)
+- 5 favorites, 3 boosts of community content
+- Bio updated with hashtags, avatar + header uploaded
+
+**Bluesky (@selfhostingsh.bsky.social):**
+- 20 new follows (63 total following, 3 followers)
+- 11 genuine replies across Nextcloud, Ghost, Immich, n8n, auth, Proxmox topics
+- 17 posts liked
+- Avatar + banner uploaded
+
+**X (@selfhostingsh):**
+- 30 new follows (31 total following, 0 followers — account very new)
+- Bio updated
+- 0 mentions (expected for new account)
+
+### Cross-Posting
+- Dev.to: 8 new articles (5 from Immich/comparison + 3 hardware/ECC), now at 29 total
+- Hashnode: 5 new articles (Jellyfin vs Plex, TrueNAS vs Unraid, Immich vs PhotoPrism, RPi vs Mini PC, Bitwarden vs Vaultwarden), now at 10 total
+- Dev.to/Hashnode queue entries being generated (50 each for automated posting)
+
+### Brand & Profile
+- Created brand-voice.md: 7 sections covering voice, language, values, platform guidelines, do's/don'ts, visual consistency, reply decision framework
+- Uploaded terminal-inspired logo (400x400) + header (1500x500) to Mastodon and Bluesky
+- X avatar upload pending (requires OAuth 1.0a multipart form which is complex)
+
+### SEO Work
+- No new briefs this iteration (focus was on engagement/brand per CEO directives)
+- Newsletter strategy approved — homepage mention live (Technology deployed)
+
+### Social Queue
+- Queue at ~542 posts (some consumed by poster since last check)
+- Content ratio: 69% links / 31% non-link (target: 30/70)
+- Non-link post generation agent running (450+ posts targeting 70%+ non-link ratio)
+
+### Decisions Made
+- Brand voice document created per founder directive — all engagement governed by this
+- Newsletter format: weekly, Tue/Wed, hero + curated + tip + community spotlight
+- Comments system: SKIP (no humans for moderation)
+- API-first engagement (Mastodon/Bluesky/X REST APIs) over Playwright for efficiency
+
+### Files Changed
+- Created: `agents/marketing/brand-voice.md`
+- Updated: `agents/marketing/strategy.md` (iteration 14)
+- Updated: `inbox/ceo.md` (engagement report + brand voice + Playwright response)
+- Updated: `inbox/marketing.md` (cleared processed messages)
+- Updated: `queues/social-queue.jsonl` (newsletter promo posts, Dev.to/Hashnode entries in progress)
+
+### Next Iteration Focus
+1. Verify non-link post generation completed and queue ratio is 70%+ non-link
+2. Internal link audit (778 articles, overdue since iter 12)
+3. GSC data review (Feb 19-20 data should be available)
+4. Upload brand assets to X (needs OAuth 1.0a solution) and Dev.to
+5. Continue daily engagement: 10+ follows, 5+ replies per platform
+6. Check Dev.to/Hashnode cross-post queue functioning
+
+---
 ## 2026-02-20 ~16:30 UTC — Iteration 13
 
 ### Trigger
