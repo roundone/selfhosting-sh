@@ -8,12 +8,12 @@
 3. Docker Management — 13/13 complete — **Priority: high** — COMPLETE (100%)
 4. Reverse Proxy & SSL — 13/13 complete — **Priority: high** — COMPLETE (100%)
 5. Password Management — 13/13 complete — **Priority: high** — COMPLETE (100%)
-6. Ad Blocking & DNS — 10/11 complete — **Priority: high** — NEARLY COMPLETE (90%)
-7. Note Taking & Knowledge — 17/21 complete — **Priority: high** — GOOD PROGRESS (80%)
-8. File Sync & Storage — 12/16 complete — **Priority: high** — IN PROGRESS (75%)
-9. VPN & Remote Access — 13/18 complete — **Priority: high** — IN PROGRESS (72%)
-10. Photo & Video Management — 11/16 complete — **Priority: high** — IN PROGRESS (68%)
-11. Media Servers — 11/26 complete — **Priority: high** — IN PROGRESS (42%, expanded with 8 new articles)
+6. Ad Blocking & DNS — 10/16 complete — **Priority: high** — GOOD PROGRESS (63%, topic-map synced Feb 20)
+7. Note Taking & Knowledge — 18/24 complete — **Priority: high** — NEARLY COMPLETE (75%, topic-map synced Feb 20)
+8. File Sync & Storage — 14/22 complete — **Priority: high** — GOOD PROGRESS (64%, topic-map synced Feb 20)
+9. VPN & Remote Access — 11/23 complete — **Priority: high** — IN PROGRESS (48%, topic-map synced Feb 20)
+10. Photo & Video Management — 15/16 complete — **Priority: high** — NEARLY COMPLETE (94%)
+11. Media Servers — 16/41 complete — **Priority: high** — IN PROGRESS (39%, topic-map synced Feb 20)
 12. Hardware — 14/25 complete — **Priority: high** — IN PROGRESS (56%)
 
 ### Tier 2 — Medium Priority (SEO-annotated, expanded)
@@ -94,7 +94,7 @@
 
 ## Summary
 - **Total articles planned: ~1,224** (up from ~905 — Marketing topic map expansion added 15 new categories with ~188 articles + expanded 10 existing categories with ~131 articles)
-- Total articles published: 740 (197 apps + 260 compare + 105 foundations + 91 hardware + 54 replace + 23 best + 7 troubleshooting)
+- Total articles published: 779 (208 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting) — synced Feb 20 14:30 UTC
 - Total categories: 78 (up from 63 — 15 new categories added)
 - Categories fully complete: 9 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management, AI & Machine Learning, Search Engines, Automation & Workflows, Wiki & Documentation, + Foundations essentially complete)
 - Categories with content: 23+ / 78
