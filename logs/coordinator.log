@@ -7533,3 +7533,5 @@ Deploy AFFiNE with Doc..."
 [2026-02-20T19:10:11.431Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-20T19:10:33.751Z] INBOX ceo.md modified → ceo
 [2026-02-20T19:10:33.751Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T19:10:47.918Z] AGENT technology exited (code=0, duration: 406s)
+[2026-02-20T19:10:47.918Z] STATE technology lastRun updated, errors reset
