@@ -1,15 +1,16 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-20 05:55 UTC
+**Last updated:** 2026-02-20 09:10 UTC
 
 ## Current Priorities
 
-1. **Content velocity recovery** — Coordinator config updated: maxWriters=4 (was 2), writerFallback=1h (was 8h). VPS upgraded to 8GB allows more concurrency. Writers actively producing comparison articles in new categories. Target: 100-200 articles/day sustained.
-2. **Technology accountability** — CEO directly fixed site search (founder directive #1). Technology inbox cleared and reprioritized. Remaining: Playwright MCP, status dashboard, GSC sitemap warnings. If Technology stalls again, CEO will take direct action.
-3. **Month 1 target revision** — 5,000 articles by Feb 28 is unreachable. ~2,000 is achievable. Proposing to board.
-4. **Social posting momentum** — Queue at 1,816 posts. X + Bluesky posting at rate limits. 5 platform credentials still pending.
-5. **Google indexing momentum** — 9 pages with impressions on day 4. 2 page-1 keywords. Sitemap resubmitted with 604 articles. Comparison articles rank fastest — all writer assignments lead with comparisons.
-6. **Writer category coverage** — 8 new categories assigned to writers. With maxWriters=4, more writers can run concurrently. 59/78 categories still need content.
+1. **Content velocity recovery** — Coordinator config: maxWriters=4, writerFallback=1h. VPS 8GB allows more concurrency. Writers active. **Month 1 target revised to 1,500 (board approved).** 651 articles published, need ~850 more by Feb 28 (~106/day for 8 days). Achievable.
+2. **Social poster fix** — X (Twitter) was stuck in duplicate content loop since ~07:23 UTC. Fixed social-poster.js to skip 403 duplicate posts and try next item. Bluesky still working.
+3. **Investor Relations portal** — New department created per founder directive. IR agent has CLAUDE.md, inbox, and welcome directive. Will spec the board portal and send to Technology for build.
+4. **Playwright-first policy** — Cascading to all department CLAUDE.md files. Before escalating to human, all agents must first attempt Playwright browser automation.
+5. **Google indexing momentum** — 9 pages with impressions on day 5. 2 page-1 keywords. Comparison articles rank fastest.
+6. **Social credentials** — 5 platforms still blocked. Human dependency audit written with step-by-step instructions at `board/human-dependency-audit-2026-02-20.md`.
+7. **Writer category coverage** — 8 writers assigned across categories. 2 currently running (foundations, hardware). Others queued via coordinator fallback.
 
 ## Standing Decisions
 
@@ -25,6 +26,9 @@
 | Comparison articles first | GSC data shows comparisons rank 2-3x faster than app guides. All writer CLAUDE.md files prioritize comparisons. | Feb 20, 2026 |
 | CEO directly fixes critical issues when departments stall | Technology was non-functional for 5 days. CEO fixed search directly. Escalation-only approach was too slow. | Feb 20, 2026 |
 | Pagefind index/ → idx/ rename in build | Cloudflare Pages treats `index/` as directory-index reference. Post-build step renames it. | Feb 20, 2026 |
+| **Month 1 target: 1,500 articles (revised from 5,000)** | Board approved. 5,000 moves to Month 2. Realistic given infrastructure constraints and ramp-up time. | Feb 20, 2026 |
+| **Playwright-first policy** | All agents must attempt Playwright browser automation before escalating to human. Founder directive. | Feb 20, 2026 |
+| **Social poster skips 403 duplicates** | Fixed infinite loop where X duplicate content errors blocked all X posting. Poster now removes rejected posts and tries next. | Feb 20, 2026 |
 
 ## What We've Tried
 
@@ -41,9 +45,8 @@
 
 ## Open Questions
 
-- **Technology root cause** — Why has Technology produced zero work since Feb 16? Agent may have persistent CLAUDE.md issues, or rate limiting consistently kills iterations before meaningful work. Need to investigate its logs more deeply.
-- **Month 1 target** — Proposing 2,000 articles (achievable) instead of 5,000 (not achievable). In Feb 20 board report.
-- **When to request remaining social credentials again** — In every board report until resolved.
+- **Technology reliability** — Discipline rules added to CLAUDE.md. Monitoring compliance this iteration. Strategy.md shows recent work completed but needs consistent logging.
+- **When to request remaining social credentials again** — Human dependency audit delivered. In every board report until resolved.
 - **Operations crash rate** — 19/20 iterations failing with code=1. Lower priority since writers are the main production engine. Operations head should focus on coordination, not direct writing.
-- **Topic map expansion** — Current map has 1,224 articles. With 604 published (49%), writers will exhaust their assigned articles within days. Marketing needs to continue expanding.
-- **VPS upgrade cost** — Need to confirm the pricing impact of the 8GB upgrade and update expense tracking in next board report.
+- **Topic map expansion** — Current map has 1,224 articles. With 651 published (53%), writers will exhaust their assigned articles within days. Marketing needs to continue expanding.
+- **IR portal timeline** — IR department created. First iteration should produce a portal spec. Technology builds. Estimated: portal live within 2-3 days.

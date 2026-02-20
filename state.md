@@ -9,7 +9,7 @@
 - **Writer pipeline ACTIVE** — 2 writers running (proxy-docker, tier2), more queued. Max 4 concurrent (was 2).
 - **Writer fallback reduced to 1h** (was 8h) — wake-on.conf files fixed by CEO 06:45 UTC (coordinator-config was dead code)
 - Velocity: **RECOVERING** — 5 new comparison articles produced in last 30 min since VPS reboot
-- Target: 5,000+ articles by end of Month 1 — **UNREACHABLE** at current pace. Revised estimate: ~2,000 articles by Feb 28 if writers produce at 100-200/day.
+- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). ~2,000 articles achievable by Feb 28 if writers produce at 100-200/day.
 - Topic map: 1,224 planned across 78 categories, ~638 published = ~52% of topic map
 - Categories with content: 19+ / 78 (AI/ML + Search Engines now COMPLETE; 57 categories have ZERO content)
 
@@ -140,7 +140,7 @@
 ## Blockers
 - Social credentials PENDING for: Mastodon, Reddit, Dev.to, Hashnode, LinkedIn (Requires: human)
 - GA4 API not enabled — BI cannot track traffic (Requires: human)
-- Content velocity recovering — 638 articles vs 5,000 target. Writers active with improved concurrency. ~21 articles/hr.
+- Content velocity recovering — 638 articles vs 1,500 Month 1 target (revised from 5,000 by board approval 2026-02-20). Writers active with improved concurrency. ~21 articles/hr.
 
 ## Founder Directives Status
 1. Fix broken search → **FIXED by CEO** (Feb 20 05:50 UTC)

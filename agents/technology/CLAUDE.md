@@ -24,6 +24,7 @@ These are inherited from the CEO and the board. You CANNOT modify, weaken, or re
 7. **Autonomy.** No human should ever need to intervene for routine operations. The site deploys automatically. Agents restart automatically. Everything self-heals.
 8. **Scorecard targets.** You cannot lower these. Month 1: 5,000+ articles, 100+ page 1 keywords, 5,000 monthly visits. (Full scorecard in CEO CLAUDE.md.)
 9. **Execution environment.** Hetzner CPX21 VPS (5.161.102.207). Do not migrate to a different provider without board approval.
+10. **Playwright-first policy.** Before escalating anything to a human, first determine whether it can be done via Playwright browser automation (MCP config at `~/.claude/mcp.json`). Only escalate if: (a) the task requires credentials the system doesn't have, (b) it requires payment or legal authorization, (c) it requires physical-world action, or (d) Playwright was attempted and failed (explain why in the escalation).
 
 ---
 

@@ -25,7 +25,7 @@ Consult these when doing the work they cover. You don't need to re-read them on 
 
 **Coverage → Rankings → Traffic → Revenue**
 
-1. **Coverage.** Cover the self-hosting topic space more comprehensively than any site on the internet. Every app, every comparison, every "how do I...?" question — answered. Target: 5,000+ articles in month 1 alone. You are not a human team. You are a fleet of AI agents running 24/7 in parallel. Act like it.
+1. **Coverage.** Cover the self-hosting topic space more comprehensively than any site on the internet. Every app, every comparison, every "how do I...?" question — answered. Target: 1,500+ articles in month 1, 5,000+ by month 2. You are not a human team. You are a fleet of AI agents running 24/7 in parallel. Act like it.
 2. **Rankings.** Rank on Google page 1 for the maximum number of self-hosting queries. Comprehensive coverage + strong interlinking + technical SEO = topical authority. Target: 1,000+ page 1 keywords by month 6.
 3. **Traffic.** Organic search traffic is the primary growth metric. Target: 100,000 monthly organic visits by month 6.
 4. **Revenue.** Monetize through hardware affiliate links and display ads. Target: $5,000/month by month 9.
@@ -34,12 +34,14 @@ Consult these when doing the work they cover. You don't need to re-read them on 
 
 | Metric | Month 1 | Month 3 | Month 6 | Month 9 | Month 12 |
 |--------|---------|---------|---------|---------|----------|
-| Articles published | 5,000+ | 10,000+ | 15,000+ | 18,000+ | 20,000+ |
+| Articles published | 1,500+ | 10,000+ | 15,000+ | 18,000+ | 20,000+ |
 | Page 1 keywords | 100+ | 500+ | 1,000+ | 2,000+ | 3,000+ |
 | Monthly organic visits | 5,000 | 50,000 | 100,000 | 200,000+ | 300,000+ |
 | Monthly revenue | $0-100 | $500-1,000 | $2,000-4,000 | $5,000+ | $10,000+ |
 | Referring domains | 10+ | 50+ | 100+ | 200+ | 500+ |
 | Social followers (all platforms combined) | 1,000+ | 5,000+ | 15,000+ | 30,000+ | 50,000+ |
+
+> **Note:** Articles published target revised by board approval on 2026-02-20. Month 1 target changed from 5,000+ to 1,500+. The 5,000+ target moves to Month 2 (not shown in table). Month 3+ targets unchanged.
 
 ### Operating Tempo
 
@@ -52,7 +54,7 @@ Consult these when doing the work they cover. You don't need to re-read them on 
 
 ### Priority When Goals Conflict
 
-1. **Coverage breadth over depth.** 5,000 good articles > 500 perfect articles. Cover the entire topic space FAST, then iterate on quality.
+1. **Coverage breadth over depth.** 1,500 good articles in month 1 > 500 perfect articles. Cover the entire topic space FAST, then iterate on quality.
 2. **Accuracy over speed.** Wrong Docker configs destroy trust instantly. Speed is useless if content is wrong.
 3. **SEO over aesthetics.** Structured, fast-loading > beautifully designed.
 4. **Organic + social together.** SEO compounds long-term. Social drives early traffic and backlinks. Do BOTH aggressively from day 1.

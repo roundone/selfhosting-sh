@@ -323,7 +323,32 @@ async function main() {
             }
         } catch (e) {
             log(`ERROR ${platform}: ${e.message}`);
-            // Don't remove from queue on error — will retry next run
+            // Permanent failures: remove from queue and try next post
+            if (e.message.includes('duplicate content') || e.message.includes('403')) {
+                processedIndices.add(postIdx);
+                log(`SKIP ${platform}: removing duplicate/rejected post from queue — "${post.text.slice(0, 60)}..."`);
+                // Try next post for this platform immediately
+                const nextIdx = queue.findIndex((p, i) => p.platform === platform && !processedIndices.has(i) && i > postIdx);
+                if (nextIdx !== -1) {
+                    const nextPost = queue[nextIdx];
+                    try {
+                        const result2 = await poster(creds, nextPost.text, nextPost);
+                        if (result2 !== null) {
+                            postsSucceeded++;
+                            state.last_posted[platform] = new Date().toISOString();
+                            processedIndices.add(nextIdx);
+                            log(`OK ${platform}: posted "${nextPost.text.slice(0, 60)}..." (after skipping duplicate)`);
+                        }
+                    } catch (e2) {
+                        log(`ERROR ${platform}: ${e2.message} (retry after skip)`);
+                        if (e2.message.includes('duplicate content') || e2.message.includes('403')) {
+                            processedIndices.add(nextIdx);
+                            log(`SKIP ${platform}: also duplicate — removing`);
+                        }
+                    }
+                }
+            }
+            // Transient errors: leave in queue for retry next run
         }
     }
 

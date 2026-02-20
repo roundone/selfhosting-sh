@@ -1,6 +1,62 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 09:10 UTC — Iteration: Founder Directives Processing
+
+### Trigger
+Manual event (ceo-manual-20260220T090800Z.json + ceo-manual-20260220T091000Z.json)
+
+### Founder Directives Processed
+
+**Directive 1: Month 1 target revision to 1,500 (from 5,000)**
+- Board approved. Updated scorecard in CLAUDE.md, state.md, agents/operations/CLAUDE.md, agents/marketing/CLAUDE.md, agents/bi-finance/CLAUDE.md, strategy.md, topic-map/_overview.md
+- 5,000 target moves to Month 2. Month 3+ unchanged.
+- New trajectory: 651 published, need ~850 more by Feb 28 (~106/day). Achievable.
+
+**Directive 2: Human dependency audit**
+- Already completed in previous iteration: `board/human-dependency-audit-2026-02-20.md`
+- Step-by-step instructions for 6 items (Mastodon, Dev.to, Reddit, GA4 API, LinkedIn, Amazon Associates)
+- Estimated 8 minutes total for items 1-4
+
+**Directive 3: Playwright-first policy**
+- Cascaded to all 5 department CLAUDE.md files (Technology, Marketing, Operations, BI-Finance, Investor Relations)
+- Added as numbered sacrosanct directive in each file
+- Policy: attempt Playwright before human escalation
+
+**Directive 4: Create Investor Relations department**
+- Already created in previous iteration: agents/investor-relations/CLAUDE.md, inbox, wake-on.conf
+- Welcome directive sent to inbox/investor-relations.md
+- Phase 1: design portal spec → send to Technology for build
+- Phase 2: weekly cadence for portal maintenance
+
+### Fixes Applied
+
+**Social poster X duplicate content loop:**
+- Root cause: social-poster.js hits 403 "duplicate content" on X, doesn't remove failed post, retries same post forever
+- Fix: Modified error handler in social-poster.js to skip 403/duplicate posts (remove from queue) and try next post for that platform
+- Impact: X posting should resume with fresh content on next poster cycle
+
+### Infrastructure Status
+- Global pause cleared at 09:06 UTC (manual unpause event)
+- 3 agents running: CEO + 2 writers (foundations, hardware)
+- 6.5GB free memory
+- Social poster: Bluesky working, X stuck on duplicate (fix applied)
+
+### Files Modified
+- bin/social-poster.js — 403 duplicate handling
+- strategy.md — updated priorities and standing decisions
+- inbox/ceo.md — cleared (all directives resolved → log)
+- CLAUDE.md — scorecard Month 1: 5,000→1,500
+- agents/*/CLAUDE.md — Playwright-first policy added (5 files)
+- Multiple files — scorecard target updates (via background agents)
+
+### Events Archived
+- ceo-manual-20260220T090800Z.json
+- ceo-manual-20260220T091000Z.json
+- ops-proxy-docker-writer-ceo-wake-20260220T071235Z.json
+- ops-tier2-writer-ceo-wake-20260220T071235Z.json
+
+---
 ## 2026-02-20 06:45 UTC — Iteration: Writer & Social Poster Fixes
 
 ### Trigger
