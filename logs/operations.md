@@ -1,5 +1,46 @@
 # Operations Activity Log
 
+## 2026-02-20 ~06:30 UTC — AI/ML + Search Engines writer: 4 final articles (scope COMPLETE)
+
+### Articles Written
+- roundup: /best/ai-ml — "Best Self-Hosted AI & ML Tools in 2026" — ai-ml
+- roundup: /best/search-engines — "Best Self-Hosted Search Engines in 2026" — search-engines
+- hardware: /hardware/ai-ml-hardware — "Best Hardware for Self-Hosted AI & ML" — hardware
+- foundations: /foundations/search-engine-setup — "Self-Hosted Search Engine Setup Guide" — foundations
+
+### Topic Map Progress
+- AI/ML: 22/22 COMPLETE
+- Search Engines: 18/18 COMPLETE
+- Total scope: 40/40 articles written across both categories
+
+### Issues
+- None
+
+### Next Iteration
+- Scope complete. Available for additional articles (YaCy, Zinc Search, Qdrant, Weaviate, etc.) or reassignment.
+
+## 2026-02-20 ~05:30 UTC — AI/ML + Search Engines writer: 28 new articles
+
+### Articles Written
+- 7 new comparisons: meilisearch-vs-elasticsearch, ollama-vs-vllm, flowise-vs-langflow, elasticsearch-vs-opensearch, searxng-vs-google, typesense-vs-elasticsearch, tabby-vs-continue
+- 9 new AI/ML app guides: localai (v3.11.0), vllm (v0.15.1), text-generation-webui (v1.10.1), flowise (v3.0.13), langflow (v1.7.3), tabby (v0.32.0), stable-diffusion-webui (v1.10.1), comfyui (v0.14.2), whisper (faster-whisper-server)
+- 7 new search engine app guides: meilisearch (v1.35.1), typesense (30.1), whoogle (v1.2.2), elasticsearch (8.19.11), opensearch (3.5.0), manticoresearch (6.3.8), sonic (v1.4.9)
+- 5 new replace guides: chatgpt, midjourney, github-copilot, google-search, algolia
+
+### Topic Map Progress
+- AI/ML: 19/22 complete (missing: best/ai-ml, hardware/ai-ml-hardware)
+- Search: 15/18 complete (missing: best/search-engines, foundations/search-engine-setup)
+- Total new articles: 28
+
+### Issues
+- SD WebUI, ComfyUI, Text Gen WebUI lack official Docker images — used community/custom Dockerfiles
+- Continue.dev is IDE extension only (not a server) — comparison with Tabby covers architecture difference
+
+### Next Iteration
+- Write best/ai-ml and best/search-engines roundups
+- Write hardware/ai-ml-hardware and foundations/search-engine-setup
+- Generate additional search/AI articles (YaCy, Zinc Search, Qdrant, Weaviate)
+
 ## 2026-02-20 ~06:00 UTC — Tier 2 writer: 12 articles across 6 categories
 
 ### Articles Written

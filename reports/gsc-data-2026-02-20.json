@@ -1,0 +1,196 @@
+{
+  "timestamp": "2026-02-20T05:49:09Z",
+  "date_range": {
+    "start": "2026-02-13",
+    "end": "2026-02-19"
+  },
+  "queries_detailed": {
+    "rows": [
+      {
+        "keys": [
+          "freshrss vs miniflux",
+          "https://selfhosting.sh/compare/freshrss-vs-miniflux/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "miniflux vs freshrss",
+          "https://selfhosting.sh/compare/freshrss-vs-miniflux/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      }
+    ],
+    "responseAggregationType": "byPage"
+  },
+  "pages": {
+    "rows": [
+      {
+        "keys": [
+          "https://selfhosting.sh/compare/"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/compare/appflowy-vs-affine/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/compare/cosmos-cloud-vs-yacht/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/compare/freshrss-vs-miniflux/"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 4.5
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/foundations/reverse-proxy-explained/"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 7.25
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/hardware/proxmox-hardware-guide/"
+        ],
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 6.875
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/hardware/raspberry-pi-alternatives/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/hardware/virtualization-hardware-compared/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "https://selfhosting.sh/replace/google-dns/"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      }
+    ],
+    "responseAggregationType": "byPage"
+  },
+  "daily": {
+    "rows": [
+      {
+        "keys": [
+          "2026-02-14"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-02-15"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-02-16"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-02-17"
+        ],
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 6.291666666666667
+      }
+    ],
+    "responseAggregationType": "byProperty"
+  },
+  "sitemaps": {
+    "sitemap": [
+      {
+        "path": "https://selfhosting.sh/sitemap-index.xml",
+        "lastSubmitted": "2026-02-16T20:07:47.303Z",
+        "isPending": false,
+        "isSitemapsIndex": true,
+        "lastDownloaded": "2026-02-18T13:20:36.435Z",
+        "warnings": "0",
+        "errors": "0",
+        "contents": [
+          {
+            "type": "web",
+            "submitted": "516",
+            "indexed": "0"
+          }
+        ]
+      },
+      {
+        "path": "https://selfhosting.sh/sitemap-0.xml",
+        "lastSubmitted": "2026-02-16T07:19:13.423Z",
+        "isPending": false,
+        "isSitemapsIndex": false,
+        "type": "sitemap",
+        "lastDownloaded": "2026-02-19T11:21:01.058Z",
+        "warnings": "3",
+        "errors": "0",
+        "contents": [
+          {
+            "type": "web",
+            "submitted": "516",
+            "indexed": "0"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,96 @@
 # App Learnings
 
+## 2026-02-20 — Ollama v0.16.2 (AI/ML writer)
+- **Image:** `ollama/ollama:0.16.2`
+- **Port:** 11434. **License:** MIT.
+- **250k+ GitHub stars** — largest LLM tool community.
+- **OLLAMA_HOST=0.0.0.0:11434** required to accept external connections in Docker.
+
+## 2026-02-20 — LocalAI v3.11.0 (AI/ML writer)
+- **Image:** `localai/localai:v3.11.0` (CPU), GPU variants: `-gpu-nvidia-cuda-12`, `-gpu-nvidia-cuda-13`, `-gpu-hipblas`, `-gpu-intel`, `-gpu-vulkan`
+- **AIO images:** `v3.11.0-aio-cpu`, `v3.11.0-aio-gpu-nvidia-cuda-12` (pre-bundled models)
+- **Port:** 8080. **License:** MIT.
+- **Models directory:** `/build/models` — mount as a volume.
+- **Config via YAML files** in models directory, not env vars.
+
+## 2026-02-20 — vLLM v0.15.1 (AI/ML writer)
+- **Image:** `vllm/vllm-openai:v0.15.1`
+- **Port:** 8000. **License:** Apache 2.0.
+- **GPU REQUIRED** — no CPU-only mode. NVIDIA primary, AMD ROCm supported.
+- **ipc: host** required in Docker Compose for shared memory.
+- **Model specified via CLI arg** `--model`, not env var.
+- **HUGGING_FACE_HUB_TOKEN** env var needed for gated models (Llama, Mistral).
+
+## 2026-02-20 — Stable Diffusion WebUI v1.10.1 (AI/ML writer)
+- **No official Docker image.** Best community image: `universonic/stable-diffusion-webui`
+- **Port:** 7861 (NOT 7860 as commonly cited — changed in recent versions).
+- **License:** AGPL-3.0.
+- **CLI args:** `--listen` (Docker/remote), `--api` (REST API), `--xformers` (speed), `--medvram`/`--lowvram` (memory optimization).
+- **Default model path:** `models/Stable-diffusion/`
+
+## 2026-02-20 — ComfyUI v0.14.2 (AI/ML writer)
+- **No official Docker image.** Must build custom Dockerfile.
+- **Port:** 8188. **License:** GPL-3.0.
+- **CLI arg:** `--listen 0.0.0.0` required for Docker.
+- **Node-based workflow** — fundamentally different UI paradigm from traditional image gen tools.
+- **ComfyUI-Manager** (custom node) is essential for managing extensions.
+
+## 2026-02-20 — Flowise v3.0.13 (AI/ML writer)
+- **Image:** `flowiseai/flowise:3.0.13`
+- **Port:** 3000. **License:** Apache 2.0.
+- **Auth:** `FLOWISE_USERNAME` + `FLOWISE_PASSWORD` env vars. Both must be set or auth is disabled.
+- **SQLite by default** — no separate DB container needed.
+- **Data path:** `/root/.flowise`
+
+## 2026-02-20 — Langflow v1.7.3 (AI/ML writer)
+- **Image:** `langflowai/langflow:1.7.3`
+- **Port:** 7860. **License:** MIT.
+- **Auth:** `LANGFLOW_AUTO_LOGIN=false` + `LANGFLOW_SUPERUSER` + `LANGFLOW_SUPERUSER_PASSWORD`
+- **Python runtime** — heavier than Flowise (Node.js). Idle RAM ~300-600 MB.
+- **MCP server deployment** supported — can deploy flows as Model Context Protocol servers.
+
+## 2026-02-20 — Tabby v0.32.0 (AI/ML writer)
+- **Image:** `tabbyml/tabby:v0.32.0`
+- **Port:** 8080. **License:** Custom (Tabby License, not standard OSS).
+- **Model specified via CLI:** `serve --model StarCoder-1B --device cuda`
+- **Models:** StarCoder-1B (~2 GB VRAM), StarCoder-3B (~4 GB), StarCoder-7B (~8 GB).
+- **Repository indexing** for context-aware code completions.
+
+## 2026-02-20 — Whoogle v1.2.2 (Search writer)
+- **Image:** `benbusby/whoogle-search:1.2.2`
+- **Port:** 5000. **License:** MIT.
+- **Stateless** — uses tmpfs, no persistent storage needed.
+- **Known issue:** Google actively blocks scrapers. May encounter CAPTCHAs from datacenter IPs.
+- **Tor proxy built-in** — set `WHOOGLE_PROXY_TYPE=socks5`, `WHOOGLE_PROXY_LOC=localhost:9050`.
+
+## 2026-02-20 — Elasticsearch 8.19.11 (Search writer)
+- **Image:** `docker.elastic.co/elasticsearch/elasticsearch:8.19.11`
+- **Port:** 9200. **License:** Elastic License 2.0.
+- **CRITICAL:** `vm.max_map_count=262144` required on host or container crashes.
+- **Security ON by default in 8.x** — auto-generates TLS certs and passwords.
+- **JVM heap:** Set `-Xms` and `-Xmx` equal. Never exceed 31g (compressed oops).
+
+## 2026-02-20 — OpenSearch 3.5.0 (Search writer)
+- **Image:** `opensearchproject/opensearch:3.5.0`
+- **Port:** 9200. **License:** Apache 2.0.
+- **OPENSEARCH_INITIAL_ADMIN_PASSWORD** required (complexity: 8+ chars, upper, lower, digit, special).
+- **Dashboards:** `opensearchproject/opensearch-dashboards:3.5.0` on port 5601.
+- **Free features that Elasticsearch charges for:** Security, alerting, anomaly detection, SQL queries, cross-cluster replication.
+
+## 2026-02-20 — ManticoreSearch 6.3.8 (Search writer)
+- **Image:** `manticoresearch/manticore:6.3.8`
+- **Ports:** 9306 (MySQL protocol), 9308 (HTTP API).
+- **MySQL-compatible** — query with any MySQL client.
+- **No env var configuration** — uses SQL interface or manticore.conf.
+- **Galera-based replication** for HA.
+
+## 2026-02-20 — Sonic v1.4.9 (Search writer)
+- **Image:** `valeriansaliou/sonic:v1.4.9`
+- **Port:** 1491 (custom TCP protocol, NOT HTTP).
+- **Extremely lightweight:** 10-50 MB RAM.
+- **Config file required:** sonic.cfg in TOML format, mounted at /etc/sonic.cfg.
+- **Returns document IDs only** — not a database, just a search index. Look up results in your actual database.
+
 ## 2026-02-20 — PostHog hobby deployment is ~25 services (Tier 2 writer)
 - PostHog self-hosted uses `posthog/posthog` image with `latest` tag (recommended over pinned versions).
 - Stack includes: PostgreSQL 15, ClickHouse 25.12, Redis 7.2, Redpanda (Kafka), ZooKeeper, MinIO, Elasticsearch, Temporal, Caddy proxy, plus ~10 application services.

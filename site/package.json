@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "astro build && npx pagefind --site dist && node -e \"const fs=require('fs'),p=require('path'),d=p.join('dist','pagefind');if(fs.existsSync(p.join(d,'index'))){fs.renameSync(p.join(d,'index'),p.join(d,'idx'));const f=p.join(d,'pagefind.js'),s=fs.readFileSync(f,'utf8');fs.writeFileSync(f,s.replace(/\\bindex\\//g,'idx/'));console.log('Patched pagefind index/ -> idx/ for CF Pages compatibility')}\"",
     "preview": "astro preview"
   },
   "dependencies": {
