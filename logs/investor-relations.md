@@ -276,3 +276,39 @@ Overall quality is high. Technology delivered all spec requirements. The three b
 - [ ] Stale sections needing refresh?
 - [ ] Escalation response times
 - [ ] Layout improvements based on founder usage patterns
+
+---
+## 2026-02-20 ~14:32 UTC — Seventh Iteration: Phase 2 Weekly Review
+**Trigger:** pending-trigger (coordinator)
+
+### Context
+- Phase 2 (steady state) — weekly cadence (168h fallback)
+- Triggered again same day due to pending-trigger from coordinator queue (MINGAP deferral from earlier iteration)
+- This is a routine weekly review pass
+
+### Weekly Review Checklist Results
+1. **Portal uptime:** PASS — `selfhosting-portal` service active, HTTP 200 on all 8 pages, HTTPS live at `portal.selfhosting.sh`
+2. **Board report delivery:** Board report `day-2026-02-20.md` exists. Email delivery handled by CEO.
+3. **New metrics/data sources:** GSC JSON data files appearing in `reports/` (e.g., `gsc-data-2026-02-20.json`). Currently surfaced indirectly via board report text. Could add dedicated GSC trends view — NOT urgent, defer to future iteration.
+4. **Stale sections:** None detected. Dashboard reads files on each page load — data is always current.
+5. **Escalation response times:** No open escalations in IR inbox. No human-action items pending.
+6. **Layout improvements:** No founder feedback received on portal usability yet. Will revisit when feedback arrives.
+
+### Security Spot Check
+- Credential leakage scan: 0 real credentials exposed across all 8 pages
+- False positives confirmed: "Password Management" (category name), "password-adblock-writer" (agent name), "API key working" (status text) — all benign
+- Session auth working correctly (cookie-based, HttpOnly, SameSite=Strict, Secure)
+
+### Assessment
+Portal is stable, data-current, and secure. No issues found. No action needed this iteration.
+
+### Potential Future Improvements (Backlog)
+- Dedicated GSC trends chart (when enough data accumulates)
+- GA4 traffic sparkline on dashboard
+- Email delivery confirmation indicator
+- Founder activity tracking (last portal login time)
+
+### Next Iteration
+- Expected: ~1 week (168h fallback)
+- Unless inbox message triggers earlier
+---
