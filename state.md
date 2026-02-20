@@ -77,17 +77,18 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~1,942 items** (draining slowly — 2 platforms active; Marketing adding new posts)
-- **First follower on Bluesky!** (1 follower as of 06:18 UTC)
-- **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item (fixed 09:10 UTC)
+- Queue: **~1,940 items** (draining — 3 platforms active now; Marketing adding new posts)
+- **1 follower on Bluesky** (as of 06:18 UTC)
+- **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
+- **FOUNDER DIRECTIVE (Feb 20):** Social strategy overhaul — Marketing must do active engagement (follows, replies, boosts), not just queue syndication. Max 30% article links, 70% other content. Daily targets: 10+ follows, 5+ replies, 3+ original posts.
 - Platform status:
-  - **X (Twitter): LIVE** — posting every 15 min. Duplicate skip fix confirmed working at 09:18 UTC.
+  - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
-  - Mastodon: BLOCKED (credentials PENDING)
-  - Reddit: BLOCKED (credentials PENDING)
-  - Dev.to: BLOCKED (credentials PENDING)
+  - **Mastodon: LIVE** — posting every 15 min (credentials confirmed working 10:53 UTC Feb 20)
+  - **Dev.to: LIVE** — API key provided. Full article cross-posting only (not status updates)
+  - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
   - Hashnode: BLOCKED (credentials PENDING)
-  - LinkedIn: BLOCKED (API approval PENDING)
+  - LinkedIn: DEPRIORITIZED (API approval PENDING)
 
 ## Revenue & Finance
 - Monthly revenue: $0
@@ -124,30 +125,31 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 10:35 | 0 | Running now |
-| Operations | 2026-02-20 09:47 | 1 | Running (triggered by writer-complete event) |
-| Technology | 2026-02-20 10:08 | 0 | Completed (deploy pipeline fix — systemd timer) |
-| Marketing | 2026-02-20 06:56 | 0 | Idle (8h fallback) |
-| BI & Finance | 2026-02-20 06:54 | 0 | Idle (8h fallback) |
-| Investor Relations | — | — | Not yet discovered by coordinator (code fix staged) |
-| proxy-docker-writer | 2026-02-20 07:57 | 0 | **PAUSED** (until Feb 22) |
-| tier2-writer | 2026-02-20 07:58 | 0 | **PAUSED** (until Feb 22) |
+| CEO | 2026-02-20 10:54 | 0 | Running now |
+| Operations | 2026-02-20 10:56 | 0 | Completed (quality audit + writer reassignment planning) |
+| Technology | 2026-02-20 10:57 | 0 | Running (deploy trigger) |
+| Marketing | 2026-02-20 10:39 | 0 | Queued (concurrency full — has pending inbox trigger) |
+| BI & Finance | 2026-02-20 10:39 | 0 | Running (new-articles event) |
+| Investor Relations | — | — | Not yet discovered by coordinator |
+| proxy-docker-writer | 2026-02-20 07:57 | 1 | **PAUSED** (until Feb 22) |
+| tier2-writer | 2026-02-20 10:48 | 0 | **PAUSED** (until Feb 22) |
 | vpn-filesync-writer | 2026-02-20 06:21 | 0 | **PAUSED** (until Feb 22) |
-| foundations-writer | 2026-02-20 09:47 | 2 | **PAUSED** (COMPLETE — 24 articles. Paused until Feb 22) |
-| hardware-writer | 2026-02-20 ~10:15 | 3 | **PAUSED** (finished iteration, paused until Feb 22) |
-| homeauto-notes-writer | 2026-02-20 10:18 | 0 | **Running** (timing race — started before pause detected; will pause after this iteration) |
-| password-adblock-writer | 2026-02-20 02:13 | 2 | **PAUSED** (until Feb 22) |
-| photo-media-writer | 2026-02-20 07:58 | 0 | **PAUSED** (until Feb 22) |
+| foundations-writer | 2026-02-20 10:56 | 2 | **PAUSED** (until Feb 22 — started via writer-slot-available before maxWriters=0 took effect) |
+| hardware-writer | 2026-02-20 10:13 | 0 | **PAUSED** (until Feb 22) |
+| homeauto-notes-writer | 2026-02-20 10:45 | 0 | **PAUSED** (completed iteration, now paused) |
+| password-adblock-writer | 2026-02-20 10:55 | 3 | **PAUSED** (until Feb 22 — SIGTERM, backoff) |
+| photo-media-writer | 2026-02-20 10:56 | 1 | **PAUSED** (until Feb 22 — SIGTERM, backoff) |
 
 ## Blockers
-- Social credentials PENDING for: Mastodon, Reddit, Dev.to, Hashnode, LinkedIn (Requires: human)
-- GA4 API not enabled — BI cannot track traffic (Requires: human)
+- Social credentials PENDING for: Reddit (app creation blocked by policy wall), Hashnode (Requires: human)
+- LinkedIn API approval PENDING (deprioritized per founder)
+- GA4 API: **ENABLED** by founder (Feb 20). BI should now be able to query. Need numeric property ID.
 - **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 773 articles on disk (14 added today via timing race + pre-pause work). Focus shifts to Technology, Marketing, BI, IR until resume date.
 - Coordinator doesn't discover IR agent — code fix staged in coordinator.js, takes effect on next coordinator restart
 
 ## Founder Directives Status
 1. Fix broken search → **FIXED by CEO** (Feb 20 05:50 UTC)
-2. GA4 visitor stats → BI (blocked by API access)
+2. GA4 visitor stats → BI (**GA4 API ENABLED by founder** — BI should retry)
 3. Rate-limiting proxy awareness → Integrated ✓
 4. systemd migration → COMPLETE ✓
 5. Install Playwright MCP → **COMPLETE** (Feb 20 ~06:05 UTC — @playwright/mcp@0.0.68, Chromium installed, MCP config at ~/.claude/mcp.json)
@@ -162,3 +164,7 @@
 14. Playwright-first policy → **DONE** (Feb 20 09:15 UTC) — Added as sacrosanct directive in all 5 department CLAUDE.md files
 15. Create IR department → **DONE** (Feb 20 prior iteration) — agents/investor-relations/ created with CLAUDE.md, inbox, wake-on.conf
 16. **Pause ALL writers until Feb 22** → **DONE** (Feb 20 10:25 UTC) — All 8 writer wake-on.conf set to 48h. No writers running. Focus: Technology, Marketing, BI, IR.
+17. **Social media strategy overhaul** → **DONE** (Feb 20 ~11:00 UTC) — Marketing CLAUDE.md updated with full engagement strategy. Inbox directive sent. Daily targets: 10+ follows, 5+ replies, 3+ posts (70%+ non-link).
+18. **Portal improvements (security, UI, alerts)** → **IN PROGRESS** — IR directive sent. Technology directive sent (DNS record for portal.selfhosting.sh). Coordinator updated with `lastErrorAt` tracking.
+19. **New credentials (Mastodon, Dev.to)** → **DONE** (Feb 20) — Mastodon posting confirmed working at 10:53 UTC. Dev.to API key provided. Social poster config already enabled. Marketing notified.
+20. **GA4 API enabled** → **DONE** by founder. BI notified to retry API queries.

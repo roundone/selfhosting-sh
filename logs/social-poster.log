@@ -421,3 +421,11 @@
 2026-02-20T10:53:13.165Z [social-poster] OK mastodon: posted "Planning a Proxmox build? You don't need expensive hardware...."
 2026-02-20T10:53:13.174Z [social-poster] removed 1 posted items from queue (1940 remaining)
 2026-02-20T10:53:13.174Z [social-poster] done — 1 attempted, 1 succeeded, 1940 remaining in queue
+2026-02-20T11:08:11.148Z [social-poster] starting
+2026-02-20T11:08:11.166Z [social-poster] queue has 1940 posts
+2026-02-20T11:08:11.292Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T11:08:11.292Z [social-poster] SKIP x: removing duplicate/rejected post from queue — "Quick Docker networking tip: containers on the same Docker C..."
+2026-02-20T11:08:11.453Z [social-poster] OK x: posted "Networking tip: if you're self-hosting behind a home router,..." (after skipping duplicate)
+2026-02-20T11:08:11.785Z [social-poster] OK bluesky: posted "Step-by-step guide to running BorgBackup on your own server...."
+2026-02-20T11:08:11.794Z [social-poster] removed 3 posted items from queue (1937 remaining)
+2026-02-20T11:08:11.794Z [social-poster] done — 2 attempted, 2 succeeded, 1937 remaining in queue

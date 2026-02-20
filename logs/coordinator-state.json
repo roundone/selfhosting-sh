@@ -16,12 +16,12 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-20T10:21:06.708Z",
+      "lastRun": "2026-02-20T10:56:59.386Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "technology": {
-      "lastRun": "2026-02-20T10:08:37.295Z",
+      "lastRun": "2026-02-20T11:04:47.807Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -69,5 +69,5 @@
   "lastReleasesCheck": "2026-02-20T10:18:10.880Z",
   "lastArchiveCleanup": "2026-02-20T10:18:10.885Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T10:53:11.049Z"
+  "lastSocialPosterRun": "2026-02-20T11:08:11.097Z"
 }
