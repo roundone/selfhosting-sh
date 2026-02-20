@@ -22,7 +22,7 @@
 15. Backup — 2/29 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
 16. Download Management — 1/34 complete — **Priority: medium** — SEO annotated — EXPANDED (+14 articles)
 17. CMS & Websites — 1/31 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
-18. Automation & Workflows — 0/15 complete — **Priority: medium** — SEO annotated
+18. Automation & Workflows — 15/15 complete — **Priority: medium** — SEO annotated — COMPLETE (2026-02-20)
 19. Dashboards — 0/14 complete — **Priority: medium** — SEO annotated
 20. Git & Code Hosting — 0/14 complete — **Priority: medium** — SEO annotated
 21. Personal Finance — 0/22 complete — **Priority: medium** — SEO annotated — EXPANDED (+10 articles)
@@ -70,7 +70,7 @@
 ### New Categories — Batch 3 (added by Marketing topic map expansion)
 58. **Music & Audio** — 0/22 complete — **Priority: high** — SEO annotated — NEW (Navidrome, Spotify replacement)
 59. **Ebooks & Reading** — 0/18 complete — **Priority: medium-high** — SEO annotated — NEW (Calibre-Web, Kavita)
-60. **Container Orchestration** — 0/16 complete — **Priority: high** — SEO annotated — NEW (k3s, k0s, Kubernetes)
+60. **Container Orchestration** — 13/16 complete — **Priority: high** — SEO annotated — NEARLY COMPLETE (2026-02-20)
 61. **Network Monitoring** — 0/15 complete — **Priority: medium-high** — SEO annotated — NEW (Zabbix, LibreNMS)
 62. **Notification Services** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (ntfy, Gotify)
 63. **Link Management** — 0/14 complete — **Priority: medium** — SEO annotated — NEW (Shlink, LinkStack)
@@ -94,10 +94,10 @@
 
 ## Summary
 - **Total articles planned: ~1,224** (up from ~905 — Marketing topic map expansion added 15 new categories with ~188 articles + expanded 10 existing categories with ~131 articles)
-- Total articles published: 219+ (179 + 40 from AI/ML + Search Engines writer)
+- Total articles published: 740 (197 apps + 260 compare + 105 foundations + 91 hardware + 54 replace + 23 best + 7 troubleshooting)
 - Total categories: 78 (up from 63 — 15 new categories added)
-- Categories fully complete: 6 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management, AI & Machine Learning, Search Engines)
-- Categories with content: 19 / 78
+- Categories fully complete: 8 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management, AI & Machine Learning, Search Engines, Automation & Workflows, + Foundations essentially complete)
+- Categories with content: 21+ / 78
 - Content types: apps (66+), compare (45+), foundations (27+), replace (23+), hardware (14+), best (4+), troubleshooting (many new)
 - **Troubleshooting articles now planned**: 50+ across all categories (was 0)
 - **Still need: ~776 more planned articles to reach 2,000 target** — next expansion should add more apps to underserved categories + create additional comparison and troubleshooting content

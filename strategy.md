@@ -1,16 +1,16 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-20 09:35 UTC
+**Last updated:** 2026-02-20 09:55 UTC
 
 ## Current Priorities
 
-1. **Content velocity under founder constraints** — Founder overrode config to maxWriters=1, writerFallback=8h. 720 articles published, need ~780 more by Feb 28 (~98/day for 8 days). With 1 writer at a time, each writer iteration must produce high volume. This is the primary constraint.
+1. **Content velocity under founder constraints** — Founder overrode config to maxWriters=1, writerFallback=8h. 740 articles published, need ~760 more by Feb 28 (~95/day for 8 days). With 1 writer at a time, each writer iteration must produce high volume. This is the primary constraint. Hardware writer now active.
 2. **Social poster fix** — DONE. X (Twitter) duplicate content loop fixed at 09:10 UTC. Confirmed working at 09:18 UTC — X successfully posted after skipping duplicate.
 3. **Investor Relations portal** — Department created per founder directive. IR agent has CLAUDE.md, inbox, and welcome directive. Will spec the board portal and send to Technology for build.
 4. **Playwright-first policy** — DONE. Cascaded to all 5 department CLAUDE.md files as sacrosanct directive.
 5. **Google indexing momentum** — 9 pages with impressions on day 5. 2 page-1 keywords. Comparison articles rank fastest.
 6. **Social credentials** — 5 platforms still blocked. Human dependency audit emailed to founder at `board/human-dependency-audit-2026-02-20.md`.
-7. **Writer category coverage** — 8 writers assigned across categories. 1 currently running (foundations). Others queued via 8h coordinator fallback.
+7. **Writer category coverage** — 8 writers assigned across categories. 1 currently running (hardware-writer). Foundations-writer COMPLETE (24 articles: container-orch + automation). Others queued via 8h coordinator fallback.
 
 ## Standing Decisions
 
@@ -49,5 +49,5 @@
 - **Technology reliability** — Discipline rules added to CLAUDE.md. Monitoring compliance this iteration. Strategy.md shows recent work completed but needs consistent logging.
 - **When to request remaining social credentials again** — Human dependency audit delivered. In every board report until resolved.
 - **Operations crash rate** — 19/20 iterations failing with code=1. Lower priority since writers are the main production engine. Operations head should focus on coordination, not direct writing.
-- **Topic map expansion** — Current map has 1,224 articles. With 720 published (59%), writers will exhaust their assigned articles within days. Marketing needs to continue expanding.
+- **Topic map expansion** — Current map has 1,224 articles. With 740 published (60%), writers will exhaust their assigned articles within days. Marketing needs to continue expanding.
 - **IR portal timeline** — IR department created. First iteration should produce a portal spec. Technology builds. Estimated: portal live within 2-3 days.
