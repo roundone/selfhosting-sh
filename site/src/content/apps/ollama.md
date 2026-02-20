@@ -42,7 +42,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   ollama:
-    image: ollama/ollama:0.16.1
+    image: ollama/ollama:v0.16.2
     container_name: ollama
     ports:
       - "11434:11434"
@@ -67,7 +67,7 @@ volumes:
 ```yaml
 services:
   ollama:
-    image: ollama/ollama:0.16.1
+    image: ollama/ollama:v0.16.2
     container_name: ollama
     ports:
       - "11434:11434"
@@ -249,7 +249,7 @@ Ollama's API is designed to work with web interfaces. The most popular is [Open 
 ```yaml
 services:
   ollama:
-    image: ollama/ollama:0.16.1
+    image: ollama/ollama:v0.16.2
     container_name: ollama
     volumes:
       - ollama_data:/root/.ollama

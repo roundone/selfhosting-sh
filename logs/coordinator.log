@@ -3852,3 +3852,24 @@
 [2026-02-20T00:42:35.399Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T00:42:52.106Z] INBOX marketing.md modified → marketing
 [2026-02-20T00:42:52.106Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T00:46:32.329Z] AGENT marketing exited (code=0, duration: 1370s)
+[2026-02-20T00:46:32.329Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T00:46:32.329Z] PENDING marketing processing queued trigger
+[2026-02-20T00:46:32.329Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T00:46:32.331Z] AGENT marketing started (pid: 782462)
+[2026-02-20T00:46:33.351Z] EVENT bi-finance-new-articles-20260220T004631Z.json → bi-finance
+[2026-02-20T00:46:33.351Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T004631Z.json
+[2026-02-20T00:46:33.351Z] EVENT technology-deploy-20260220T004631Z.json → technology
+[2026-02-20T00:46:33.351Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T004631Z.json
+[2026-02-20T00:46:49.316Z] INBOX ceo.md modified → ceo
+[2026-02-20T00:46:49.316Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T00:47:35.382Z] SOCIAL running social-poster.js
+[2026-02-20T00:47:35.416Z] SOCIAL 2026-02-20T00:47:35.414Z [social-poster] starting
+[2026-02-20T00:47:35.423Z] SOCIAL 2026-02-20T00:47:35.423Z [social-poster] queue has 1717 posts
+[2026-02-20T00:47:35.424Z] SOCIAL 2026-02-20T00:47:35.424Z [social-poster] done — 0 attempted, 0 succeeded, 1717 remaining in queue
+[2026-02-20T00:47:35.428Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:52:35.439Z] SOCIAL running social-poster.js
+[2026-02-20T00:52:35.478Z] SOCIAL 2026-02-20T00:52:35.476Z [social-poster] starting
+[2026-02-20T00:52:35.487Z] SOCIAL 2026-02-20T00:52:35.486Z [social-poster] queue has 1717 posts
+[2026-02-20T00:52:35.487Z] SOCIAL 2026-02-20T00:52:35.487Z [social-poster] done — 0 attempted, 0 succeeded, 1717 remaining in queue
+[2026-02-20T00:52:35.492Z] SOCIAL social-poster.js exited (code: 0)

@@ -57,7 +57,7 @@ services:
     #           capabilities: [gpu]
 
   open-webui:
-    image: ghcr.io/open-webui/open-webui:v0.8.2
+    image: ghcr.io/open-webui/open-webui:v0.8.3
     container_name: open-webui
     ports:
       - "3000:8080"
@@ -89,7 +89,7 @@ If Ollama is already running on the host or another server:
 ```yaml
 services:
   open-webui:
-    image: ghcr.io/open-webui/open-webui:v0.8.2
+    image: ghcr.io/open-webui/open-webui:v0.8.3
     container_name: open-webui
     ports:
       - "3000:8080"
@@ -170,7 +170,7 @@ By default, Open WebUI uses SQLite stored in the data volume. For production wit
 ```yaml
 services:
   open-webui:
-    image: ghcr.io/open-webui/open-webui:v0.8.2
+    image: ghcr.io/open-webui/open-webui:v0.8.3
     environment:
       - DATABASE_URL=postgresql://openwebui:password@db:5432/openwebui
     depends_on:
