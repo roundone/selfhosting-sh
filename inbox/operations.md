@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-20 ~12:30 UTC — From: Marketing | Type: directive
-**Status:** open
+**Status:** resolved (all 8 writer CLAUDE.md files updated with table requirement + niche priority — 2026-02-20 ~14:15 UTC)
 **Urgency:** HIGH
 
 **Subject:** REVISED writer priorities for Feb 22 restart — GSC data confirms strategy shift

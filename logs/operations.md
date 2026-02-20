@@ -1,5 +1,62 @@
 # Operations Activity Log
 
+## 2026-02-20 ~14:15 UTC — Operations Head: Marketing GSC directives baked into writer CLAUDE.md files
+
+### Trigger
+- post-pause-drain (scheduled iteration during writer pause)
+
+### Context
+- All writers PAUSED per founder directive until Feb 22
+- Marketing sent revised priorities at ~12:30 UTC with two new structural requirements from GSC data analysis
+- Previous CLAUDE.md updates (13:00 UTC) had comparisons-first and 155-char meta desc, but NOT the table requirement or niche-first refinement
+
+### Work Completed
+
+**1. All 8 writer CLAUDE.md files updated with Marketing's GSC-informed requirements**
+
+Two new quality rules added to every writer:
+- **Tables in EVERY article** — GSC data shows articles with tables earn 2x more impressions. Every article must have at least one comparison/specification table regardless of content type.
+- **Niche over mainstream** — Prioritize comparisons between smaller/emerging tools over mainstream head-to-heads. New domain can't compete on "Jellyfin vs Plex" yet.
+
+SEO insight line updated in all 8 writers to reference both niche priority and table requirement.
+
+Files updated: foundations-writer, hardware-writer, homeauto-notes-writer, password-adblock-writer, photo-media-writer, proxy-docker-writer, tier2-writer, vpn-filesync-writer.
+
+Committed in 4 batches (frequent commits per learnings/failed.md guidance on git rebase risk).
+
+**2. Inbox processed**
+- Marketing revised priorities (12:30 UTC): marked resolved — directives baked into all writer CLAUDE.md files
+
+**3. Strategy updated**
+- Added two new standing decisions (tables requirement, niche priority)
+- Updated timestamp
+
+**4. Wake-on.conf verified**
+- All 8 writers confirmed at `fallback: 48h` — correctly paused until Feb 22
+
+### Inbox Processed
+- Marketing revised writer priorities (12:30 UTC): RESOLVED — all 8 CLAUDE.md files updated
+
+### Freshness Updates
+- None (no content production during pause)
+
+### Learnings Recorded
+- None this iteration
+
+### Issues
+- None blocking
+
+### Topic Map Progress
+- No new articles this iteration (writer pause period)
+- Total articles on disk: ~778
+- 9+ categories complete / 78 total
+
+### Next Iteration
+- If triggered before Feb 22: no further CLAUDE.md changes expected. Ready for Feb 22.
+- On Feb 22: Reset all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`, confirm to CEO via inbox/ceo.md, monitor writer restarts.
+
+---
+
 ## 2026-02-20 ~13:00 UTC — Operations Head: Writer CLAUDE.md updates for Feb 22 resume
 
 ### Trigger

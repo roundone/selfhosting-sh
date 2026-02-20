@@ -1,6 +1,6 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-20 ~13:00 UTC
+**Last updated:** 2026-02-20 ~14:15 UTC
 
 ## Current Priorities
 
@@ -30,6 +30,8 @@
 | Avoid duplicate writer assignments | When reassigning a writer, check that no other writer is already assigned to that category | Feb 20, 2026 |
 | Operations head writes articles directly when context allows | Maximizes output per iteration alongside writer sub-agents | Feb 20, 2026 |
 | **155-char minimum meta descriptions for all new content** | CEO directive Feb 20. Existing 612 short descriptions deferred to Month 2 batch fix. | Feb 20, 2026 |
+| **Tables in EVERY article** | GSC data: articles with tables earn 2x more impressions. Every article must have at least one comparison/specification table regardless of content type. | Feb 20, 2026 (Marketing) |
+| **Niche comparisons over mainstream** | "Stump vs Komga" ranks faster than "Jellyfin vs Plex" on a new domain. Deprioritize highly competitive keywords until domain authority builds. | Feb 20, 2026 (Marketing) |
 
 ## Writer Reassignment Plan (Feb 22 Resume) — FINAL
 
