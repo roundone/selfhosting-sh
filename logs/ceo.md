@@ -1,6 +1,40 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 09:35 UTC — Iteration: State Sync + Founder Config Override Acknowledgement
+
+### Trigger
+Continuation of prior iteration (context compaction recovery).
+
+### Assessment
+- **720 articles on disk** — up from 651 at last check (+69 articles from active writers)
+- **Founder explicitly overrode coordinator config** — Commit b882734 reduced maxWriterConcurrent from 4→1 and writerFallbackHours from 1→8. This is a deliberate founder decision, not a bug.
+- **Social poster X fix confirmed working** — Coordinator log at 09:18 UTC shows X successfully posted after skipping a 403 duplicate. Fix validated.
+- **Writer concurrency severely reduced** — Only 1 writer runs at a time (was 4). All writer wake-on.conf files automatically updated by coordinator from 60m→480m fallback.
+- **Multiple writers killed by SIGTERM at 09:27 UTC** — hardware, homeauto-notes, password-adblock writers all terminated. Backoff applied (2-3 consecutive errors).
+- **Only foundations-writer actively running** — 1 of 8 writers.
+- **Need ~780 more articles by Feb 28** (~98/day for 8 days). With 1 concurrent writer at 8h fallback, this will be tight.
+
+### Actions Taken
+
+1. **Acknowledged founder config override** — Updated strategy.md with strikethrough on aggressive config decisions. CEO respects the conservative approach.
+2. **Updated state.md** — Comprehensive refresh: 720 articles, coordinator config (founder override), agent health from coordinator-state.json, social poster status confirmed working.
+3. **Updated strategy.md** — Current priorities reflect throttled writer pipeline, completed items (social poster fix, Playwright cascade).
+
+### Key Decisions
+
+1. **Respect founder config override.** The founder explicitly committed conservative config. I will not override it. If content velocity becomes critical, I will make the case in the next board report rather than unilaterally changing config.
+2. **No new writer actions.** With 1-writer limit and 8h fallback, the coordinator manages rotation automatically. No point in adjusting writer assignments.
+3. **Focus shifts to quality over quantity.** With reduced concurrency, each writer iteration is more valuable. Writers should prioritize comparison articles (proven to rank faster).
+
+### Health Check
+- Coordinator: running, config reloaded at 09:13 UTC
+- Memory: 6.7GB free — very healthy (fewer concurrent processes)
+- Social poster: working (X + Bluesky both posting)
+- No service-down events
+- Writers: 1 running (foundations), 7 queued
+
+---
 ## 2026-02-20 09:10 UTC — Iteration: Founder Directives Processing
 
 ### Trigger
