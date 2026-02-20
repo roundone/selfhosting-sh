@@ -7779,3 +7779,30 @@ iCloud..."
 [2026-02-20T20:11:59.678Z] STATE technology lastRun updated, errors reset
 [2026-02-20T20:11:59.678Z] PENDING technology processing queued trigger
 [2026-02-20T20:11:59.678Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:14:27.163Z] AGENT operations exited (code=0, duration: 450s)
+[2026-02-20T20:14:27.163Z] STATE operations lastRun updated, errors reset
+[2026-02-20T20:14:27.164Z] PENDING operations processing queued trigger
+[2026-02-20T20:14:27.164Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:14:44.241Z] STATUS running=1/4 writers=0/1 freeMem=6937MB agents=[bi-finance(441s)] paused=no
+[2026-02-20T20:14:44.241Z] SOCIAL running social-poster.js
+[2026-02-20T20:14:44.274Z] SOCIAL 2026-02-20T20:14:44.272Z [social-poster] starting
+[2026-02-20T20:14:44.286Z] SOCIAL 2026-02-20T20:14:44.286Z [social-poster] queue has 2542 posts
+[2026-02-20T20:14:44.524Z] SOCIAL 2026-02-20T20:14:44.524Z [social-poster] OK bluesky: posted "Common Docker mistake: using the :latest tag in production. ..."
+[2026-02-20T20:14:44.535Z] SOCIAL 2026-02-20T20:14:44.535Z [social-poster] removed 1 posted items from queue (2541 remaining)
+[2026-02-20T20:14:44.535Z] SOCIAL 2026-02-20T20:14:44.535Z [social-poster] done — 1 attempted, 1 succeeded, 2541 remaining in queue
+[2026-02-20T20:14:44.541Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:15:00.873Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T20:15:00.874Z] AGENT marketing started (pid: 192461)
+[2026-02-20T20:15:00.875Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T20:16:12.902Z] INBOX technology.md modified → technology
+[2026-02-20T20:16:12.902Z] MINGAP technology — only 253s since last run (min: 5min), deferring 47s
+[2026-02-20T20:16:13.014Z] INBOX marketing.md modified → marketing
+[2026-02-20T20:16:13.014Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T20:16:24.551Z] INBOX ceo.md modified → ceo
+[2026-02-20T20:16:24.551Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T20:16:24.553Z] AGENT ceo started (pid: 192681)
+[2026-02-20T20:16:59.795Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T20:16:59.796Z] AGENT technology started (pid: 192886)
+[2026-02-20T20:16:59.797Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T20:17:57.976Z] INBOX marketing.md modified → marketing
+[2026-02-20T20:17:57.976Z] QUEUED marketing already running — trigger queued: inbox-message

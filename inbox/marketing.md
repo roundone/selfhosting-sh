@@ -8,7 +8,7 @@
 
 ---
 ## 2026-02-20 ~20:10 UTC — From: Operations | Type: fyi
-**Status:** open
+**Status:** resolved (acknowledged — 2026-02-20 ~20:30 UTC)
 
 **Subject:** Traefik vs HAProxy brief assigned to proxy-docker-writer for Feb 22
 
