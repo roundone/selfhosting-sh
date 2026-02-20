@@ -4,22 +4,22 @@
 
 ## Apps
 - [x] /apps/wordpress — done 2026-02-16 | **Target:** "wordpress docker compose" | **Volume:** Very High | **Priority:** done
-- [ ] /apps/ghost — **Target:** "ghost docker compose" | **Secondary:** "self-host ghost", "ghost blog setup docker", "ghost CMS self-hosted" | **Volume:** Very High | **Priority:** 2
-- [ ] /apps/strapi — **Target:** "strapi docker compose" | **Secondary:** "self-host strapi", "strapi setup guide", "strapi headless CMS docker" | **Volume:** High | **Priority:** 3
-- [ ] /apps/directus — **Target:** "directus docker compose" | **Secondary:** "self-host directus", "directus setup guide", "directus headless CMS" | **Volume:** High | **Priority:** 4
-- [ ] /apps/hugo — **Target:** "hugo self-hosted" | **Secondary:** "hugo static site setup", "hugo blog setup", "hugo deployment guide" | **Volume:** Medium-High | **Priority:** 5
+- [x] /apps/ghost — done 2026-02-20 (disk sync) | **Target:** "ghost docker compose" | **Secondary:** "self-host ghost", "ghost blog setup docker", "ghost CMS self-hosted" | **Volume:** Very High | **Priority:** done
+- [x] /apps/strapi — done 2026-02-20 (disk sync) | **Target:** "strapi docker compose" | **Secondary:** "self-host strapi", "strapi setup guide", "strapi headless CMS docker" | **Volume:** High | **Priority:** done
+- [x] /apps/directus — done 2026-02-20 (disk sync) | **Target:** "directus docker compose" | **Secondary:** "self-host directus", "directus setup guide", "directus headless CMS" | **Volume:** High | **Priority:** done
+- [x] /apps/hugo — done 2026-02-20 (disk sync) | **Target:** "hugo self-hosted" | **Secondary:** "hugo static site setup", "hugo blog setup", "hugo deployment guide" | **Volume:** Medium-High | **Priority:** done
 - [ ] /apps/grav — **Target:** "grav CMS docker" | **Secondary:** "self-host grav", "grav CMS setup", "grav flat-file CMS" | **Volume:** Medium | **Priority:** 6
 - [ ] /apps/publii — **Target:** "publii self-hosted" | **Secondary:** "publii CMS setup", "publii static site generator", "publii blog" | **Volume:** Low-Medium | **Priority:** 7
 
 ## Comparisons
-- [ ] /compare/ghost-vs-wordpress — **Target:** "ghost vs wordpress" | **Secondary:** "ghost or wordpress", "ghost vs wordpress self-hosted", "ghost vs wordpress comparison" | **Volume:** Very High | **Priority:** 1
-- [ ] /compare/directus-vs-strapi — **Target:** "directus vs strapi" | **Secondary:** "directus or strapi", "best self-hosted headless CMS" | **Volume:** High | **Priority:** 2
+- [x] /compare/ghost-vs-wordpress — done 2026-02-20 (disk sync) | **Target:** "ghost vs wordpress" | **Secondary:** "ghost or wordpress", "ghost vs wordpress self-hosted", "ghost vs wordpress comparison" | **Volume:** Very High | **Priority:** done
+- [x] /compare/directus-vs-strapi — done 2026-02-20 (disk sync) | **Target:** "directus vs strapi" | **Secondary:** "directus or strapi", "best self-hosted headless CMS" | **Volume:** High | **Priority:** done
 - [ ] /compare/ghost-vs-medium-alternatives — **Target:** "ghost vs medium" | **Secondary:** "self-hosted medium alternative", "ghost as medium replacement" | **Volume:** High | **Priority:** 3
-- [ ] /compare/hugo-vs-ghost — **Target:** "hugo vs ghost" | **Secondary:** "hugo or ghost", "static vs dynamic blog self-hosted" | **Volume:** Medium | **Priority:** 4
+- [x] /compare/hugo-vs-ghost — done 2026-02-20 (disk sync, on disk as ghost-vs-hugo) | **Target:** "hugo vs ghost" | **Secondary:** "hugo or ghost", "static vs dynamic blog self-hosted" | **Volume:** Medium | **Priority:** done
 - [ ] /compare/grav-vs-hugo — **Target:** "grav vs hugo" | **Secondary:** "grav or hugo", "flat-file CMS vs static site generator" | **Volume:** Low-Medium | **Priority:** 5
 
 ## Roundup
-- [ ] /best/cms-websites — **Target:** "best self-hosted CMS" | **Secondary:** "best self-hosted blog platform", "best self-hosted website builder", "top self-hosted CMS 2026" | **Volume:** Very High | **Priority:** write after all app guides done
+- [x] /best/cms-websites — done 2026-02-20 (disk sync) | **Target:** "best self-hosted CMS" | **Secondary:** "best self-hosted blog platform", "best self-hosted website builder", "top self-hosted CMS 2026" | **Volume:** Very High | **Priority:** done
 
 ## Replace Guides
 - [ ] /replace/wordpress-com — **Target:** "self-hosted alternative to wordpress.com" | **Secondary:** "self-host wordpress", "wordpress.com replacement", "leave wordpress.com" | **Volume:** Very High | **Priority:** 1

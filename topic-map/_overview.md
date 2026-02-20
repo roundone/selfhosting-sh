@@ -17,21 +17,21 @@
 12. Hardware — 14/25 complete — **Priority: high** — IN PROGRESS (56%)
 
 ### Tier 2 — Medium Priority (SEO-annotated, expanded)
-13. Analytics — 3/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
-14. Monitoring & Uptime — 3/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+11 articles)
-15. Backup — 2/29 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
+13. Analytics — 9/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles) — synced Feb 20
+14. Monitoring & Uptime — 10/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+11 articles) — synced Feb 20
+15. Backup — 10/29 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles) — synced Feb 20
 16. Download Management — 21/34 complete — **Priority: medium** — SEO annotated — GOOD PROGRESS (topic-map synced Feb 20)
-17. CMS & Websites — 1/31 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
+17. CMS & Websites — 9/31 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles) — synced Feb 20
 18. Automation & Workflows — 15/15 complete — **Priority: medium** — SEO annotated — COMPLETE (2026-02-20)
 19. Dashboards — 0/14 complete — **Priority: medium** — SEO annotated
 20. Git & Code Hosting — 0/14 complete — **Priority: medium** — SEO annotated
 21. Personal Finance — 0/22 complete — **Priority: medium** — SEO annotated — EXPANDED (+10 articles)
 22. Communication & Chat — 0/25 complete — **Priority: medium** — SEO annotated — EXPANDED (+11 articles)
 23. RSS Readers — 0/12 complete — **Priority: medium** — SEO annotated
-24. Bookmarks & Read Later — 0/15 complete — **Priority: medium** — SEO annotated
+24. Bookmarks & Read Later — 8/15 complete — **Priority: medium** — SEO annotated — synced Feb 20
 25. Document Management — 0/10 complete — **Priority: medium** — SEO annotated
 26. Calendar & Contacts — 0/12 complete — **Priority: medium** — SEO annotated
-27. Email — 0/32 complete — **Priority: medium** — SEO annotated — EXPANDED (+15 articles)
+27. Email — 8/32 complete — **Priority: medium** — SEO annotated — EXPANDED (+15 articles) — synced Feb 20
 28. DNS & Networking — 0/29 complete — **Priority: high** — SEO annotated — EXPANDED (+11 articles)
 
 ### New Categories — Batch 1 (added by Marketing iteration 3)
