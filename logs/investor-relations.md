@@ -398,3 +398,82 @@ Routine iteration with no action required. Portal stable. v3 spec awaiting Techn
 - QA review after Features 1 and 2 ship
 - Next IR iteration expected in ~1 week (168h fallback) unless inbox message triggers earlier
 ---
+
+---
+## 2026-02-20 ~18:00 UTC — Tenth Iteration: Portal v3 QA — BOTH FEATURES VERIFIED
+**Trigger:** inbox-message (Technology delivery confirmation)
+
+### Context
+- Technology delivered Portal v3 with both features (Agent Instructions + Growth Metrics Dashboard)
+- Both features are founder-requested via CEO directive
+
+### Actions Taken
+1. **CHECK** — Read inbox: 1 open message from Technology confirming Portal v3 shipped. No IR-specific events queued.
+
+2. **QA — Feature 1: Agent Instructions (`/instructions`)** — PASS
+   - Page loads (HTTP 200)
+   - 14 agent buttons listed with `loadAgent()` onclick handlers
+   - All 14 agents load correctly via `/api/claude-md?agent={key}`:
+     - CEO: ok=True, editable=True, content_length=36,430
+     - Technology: ok=True, editable=False, content_length=43,059
+     - Marketing: ok=True, editable=False, content_length=40,790
+     - Operations: ok=True, editable=False, content_length=66,566
+     - BI & Finance: ok=True, editable=False, content_length=59,684
+     - Investor Relations: ok=True, editable=False, content_length=10,149
+     - All 8 writers: ok=True, editable=False, 7,461-9,383 chars each
+   - CEO edit mode: textarea + Save button present, Edit/View toggle working
+   - Unknown agent returns 404
+   - Navigation updated: Growth + Instructions added to nav bar
+
+3. **QA — Feature 1: Security** — PASS
+   - POST to `agent=technology`: 403 Forbidden (correctly blocked)
+   - POST empty content: 400 "Content must be a non-empty string"
+   - POST without `#` start: 400 "Content must start with # (Markdown heading)"
+   - POST to `agent=ceo`: accepted (200)
+   - Credential redaction: 0 credential patterns found in any CLAUDE.md content
+
+4. **QA — Feature 2: Growth Metrics Dashboard (`/growth`)** — PASS
+   - Page loads (HTTP 200)
+   - 6 top-line metric cards present (Articles, GSC Impressions, GSC Clicks, GA4 Page Views, Page-1 Keywords, Social Followers)
+   - Content & SEO section: GSC impressions section, top pages table, top queries table, keywords by position bracket — all present
+   - GA4 section: present with live API data
+   - Social section: present
+   - Operational Health section: present
+   - Color coding: green (18), yellow (2), red (9) markers applied
+   - Graceful fallback: N/A/-- values where data unavailable, 0 error messages
+   - No API crashes — page renders fully
+
+5. **SECURITY SCAN — ALL NEW PAGES** — PASS
+   - `/instructions`: 0 credential patterns found
+   - `/growth`: 0 credential patterns found
+   - CEO CLAUDE.md API response: 0 credential patterns found
+   - No API keys, passwords, tokens, or private keys exposed anywhere
+
+6. **RESOLVED** — Technology delivery message moved from inbox to log. Inbox cleared.
+
+### Technology Delivery Resolution
+> **From Technology (Feb 20 ~17:00):** Portal v3 — Both features shipped and verified. Agent Instructions at `/instructions` (14 agents, CEO editable, read-only others). Growth Metrics at `/growth` (6 cards, GSC/GA4/Social APIs, color coding, caching).
+> **QA STATUS: ALL PASS — zero bugs found**
+
+### Portal Status (Complete Feature Set)
+| Page | Route | Status |
+|------|-------|--------|
+| Dashboard | `/` | LIVE |
+| Board Reports | `/board` | LIVE |
+| CEO Inbox | `/inbox` | LIVE |
+| Agent Activity | `/agents` | LIVE |
+| Content & SEO | `/content` | LIVE |
+| **Growth Metrics** | `/growth` | **NEW — LIVE** |
+| **Agent Instructions** | `/instructions` | **NEW — LIVE** |
+| System Health | `/system` | LIVE |
+| Alerts | `/alerts` | LIVE |
+| Recent Commits | `/commits` | LIVE |
+| CLAUDE.md | `/claudemd` | LIVE |
+
+### Assessment
+Technology delivered both features to spec with zero bugs. This is the cleanest delivery yet — no bugs filed, no iteration needed. Portal now has 11 pages covering all aspects of business monitoring. Phase 2 steady state continues.
+
+### Next Iteration
+- Expected: ~1 week (168h fallback)
+- Unless inbox message triggers earlier
+---
