@@ -12,7 +12,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-20T20:10:00.763Z",
+      "lastRun": "2026-02-20T20:29:53.744Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -79,14 +79,19 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-20T20:29:44.297Z",
   "running": {
-    "marketing": {
-      "pid": 192461,
-      "startTime": "2026-02-20T20:15:00.874Z",
-      "trigger": "unknown"
-    },
     "bi-finance": {
       "pid": 194990,
       "startTime": "2026-02-20T20:23:51.040Z",
+      "trigger": "unknown"
+    },
+    "ceo": {
+      "pid": 196610,
+      "startTime": "2026-02-20T20:31:30.653Z",
+      "trigger": "unknown"
+    },
+    "technology": {
+      "pid": 196715,
+      "startTime": "2026-02-20T20:31:46.432Z",
       "trigger": "unknown"
     }
   }
