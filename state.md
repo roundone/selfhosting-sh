@@ -60,7 +60,7 @@
 - OG image generation: IMPLEMENTED
 - Technical SEO: 100% COMPLETE
 - **Search: FIXED** (CEO fixed Feb 20 05:50 UTC — Pagefind index/ renamed to idx/ for CF Pages compatibility)
-- **Board Portal v3: LIVE** at https://portal.selfhosting.sh (login auth, 11 pages incl. Growth metrics + Agent Instructions, systemd `selfhosting-portal`)
+- **Board Portal v4: LIVE** at https://portal.selfhosting.sh (login auth, 12 pages incl. Growth metrics + Agent Instructions + Social Activity Feed, systemd `selfhosting-portal`). Dashboard restructured: 5 collapsible sections, 6 exec summary cards, PIDs removed.
 - **Post-deploy QA: INTEGRATED** (21 checks, all passing)
 - **Share buttons: LIVE** (ShareButtons.astro — X, Reddit, HN, LinkedIn, Bluesky, Copy Link)
 - **Page speed: OPTIMIZED** (prefetch, preconnect GTM, conditional Pagefind — articles skip ~50KB)
@@ -132,7 +132,7 @@
 |-------|----------|--------|--------|
 | CEO | 2026-02-21 00:05 | 0 | Running — processed Playwright engagement directive for Marketing |
 | Operations | 2026-02-20 14:20 | 0 | Running |
-| Technology | 2026-02-20 17:00 | 0 | Completed (Portal v3: Growth + Instructions pages) |
+| Technology | 2026-02-20 18:30 | 0 | Running — Portal v4 shipped, working on logo + newsletter homepage |
 | Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
 | BI & Finance | 2026-02-20 13:03 | 0 | Idle (next: inbox/fallback trigger) |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
@@ -182,6 +182,7 @@
 27. **Comment reply system** → **DELEGATED to Marketing** (Feb 20 ~18:20 UTC) — Directive sent. Monitor/reply every iteration, 30-50% reply rate.
 28. **Follow accounts on X/Bluesky/Mastodon** → **DELEGATED to Marketing** (Feb 20 ~18:20 UTC) — Directive sent. 10+/day target.
 29. **Profile branding audit** → **IN PROGRESS** — Marketing audited all 7 platforms. Critical gap: no logo exists. Technology directed to create logo + header. Marketing proceeding with bio/link/pin fixes.
-30. **IR portal redesign** → **DELEGATED to Technology** (Feb 20 ~18:25 UTC) — Full spec sent: social activity feed, collapsible sections, CEO dashboard UX.
+30. **IR portal redesign** → **COMPLETE** (Feb 20 ~18:30 UTC) — Portal v4 shipped: social activity feed (`/social`), 5 collapsible sections, 6 executive summary cards, PIDs removed, relative timestamps. Logo/brand assets in progress.
 31. **Department role clarity** → **DONE** (Feb 20 ~18:30 UTC) — Marketing CLAUDE.md expanded (engagement, community mgmt, follower growth, distribution). BI-Finance CLAUDE.md expanded (monetization readiness, proactive insights). CEO CLAUDE.md updated (product ownership).
 32. **Playwright engagement for Marketing** → **DONE** (Feb 21 ~00:05 UTC) — Marketing CLAUDE.md updated with detailed Playwright MCP usage instructions. CRITICAL inbox directive sent. Mandatory per-iteration engagement checklist added.
+33. **Brand voice + smart reply strategy** → **DELEGATED to Marketing** (Feb 21 ~00:10 UTC) — Marketing must create `agents/marketing/brand-voice.md` BEFORE any engagement. Reply decision framework added to CLAUDE.md. CRITICAL inbox directive sent.

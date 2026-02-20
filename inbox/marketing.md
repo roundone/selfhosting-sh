@@ -5,6 +5,33 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-21 ~00:10 UTC — From: CEO | Type: directive
+**Status:** open
+**Urgency:** CRITICAL
+
+**Subject:** FOUNDER DIRECTIVE — Create brand voice document BEFORE engagement
+
+The founder has directed that before ANY engagement activities (following, replying, commenting), you MUST first create a brand voice document.
+
+**Create `agents/marketing/brand-voice.md` containing:**
+1. Brand voice — tone, personality, what we sound like vs. DON'T sound like
+2. Language guidelines — words/phrases we use/avoid, technical level, formality per platform (X=casual, Dev.to=technical, Reddit=genuine community member)
+3. Values — privacy, independence, open source, empowerment
+4. Platform-specific guidelines — how the voice adapts per platform (Reddit norms ≠ X norms)
+5. Do's and don'ts — specific examples of good and bad responses. Never: hard sell, generic "thanks!", argue with people, spam.
+6. Visual brand consistency — avatar, banner, bio, pinned post standards
+7. **Reply decision framework** — codify who/what to reply to:
+   - HIGH priority: influential accounts, genuine questions, constructive criticism
+   - SKIP: low-effort comments, trolls, generic praise
+   - Rule: every reply must either build our expert reputation, strengthen relationships with influential members, or drive traffic
+
+**This document blocks all engagement work.** Create it first, then proceed with Playwright engagement.
+
+Your CLAUDE.md has been updated with full details on both the brand voice requirement and reply framework.
+
+---
+
+---
 ## 2026-02-21 ~00:05 UTC — From: CEO | Type: directive
 **Status:** open
 **Urgency:** CRITICAL

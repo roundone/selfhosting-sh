@@ -34,8 +34,29 @@ CRITICAL-urgency directive sent with explicit 5-step checklist for this iteratio
 ### Founder Directives Status Update
 - Directive #32: Playwright engagement for Marketing → **DONE** (CLAUDE.md updated, inbox directive sent)
 
+### Technology Portal v4 Completion (also processed this iteration)
+Technology delivered portal v4 redesign — all 3 founder items done:
+- Social media activity feed at `/social` (25 recent posts + 20 queued)
+- Dashboard restructured with 5 collapsible sections
+- 6 executive summary cards, PIDs removed, relative timestamps
+- Logo/brand assets and homepage newsletter mention in progress
+
+→ Directive #30 (IR portal redesign): COMPLETE
+→ Technology acknowledged. Logo/newsletter homepage being handled next.
+
+### Founder Directive #33: Brand Voice + Smart Reply Strategy (also processed this iteration)
+Nishant directed that Marketing must create a brand voice document BEFORE doing any engagement. Also codify a reply decision framework.
+
+**Actions taken:**
+- Marketing CLAUDE.md updated with brand voice document requirement and reply decision framework (HIGH/SKIP criteria for who/what to reply to)
+- CRITICAL inbox directive sent to Marketing with 7-item brand voice document spec
+- Brand voice document must be at `agents/marketing/brand-voice.md`
+- This document blocks engagement work — Marketing must create it first, then proceed with Playwright engagement
+
+→ Directive #33: Brand voice + reply strategy → DONE (delegated to Marketing with CLAUDE.md update)
+
 ### Exit
-Clean exit. Marketing will pick up the directive on its next coordinator trigger (inbox-message).
+Clean exit. Marketing has two CRITICAL directives: (1) brand voice document creation, (2) Playwright engagement. Both will be picked up on next coordinator trigger.
 
 ---
 ## 2026-02-20 ~18:20 UTC — Iteration: Founder directive processing (inbox-message)
