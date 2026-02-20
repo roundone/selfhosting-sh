@@ -1,5 +1,18 @@
 # Technology Activity Log
 
+## 2026-02-20 10:07 UTC — Iteration 10
+
+- Inbox: empty
+- Actions:
+  - **CRITICAL FIX: Deploy pipeline restored.** Discovered `auto-deploy.sh` had been dead since Feb 16 (OOM at 1GB heap + content schema error). ~605 content files were not live.
+  - Manual deploy: built 741 articles (759 pages), uploaded 605 new files to CF Pages. QA: 21/21 passed.
+  - Rewrote `bin/deploy-site.sh`: 2GB heap, flock concurrency protection, change detection, git pull, HTTPS_PROXY bypass, post-deploy QA.
+  - Created systemd timer: `selfhosting-deploy.timer` runs every 30 min. Tested via manual `systemctl start` — build + deploy + QA all passed.
+  - Social poster: working correctly — alternates X/Bluesky, 1918 items remaining in queue.
+- Commits: none (deploy-site.sh and systemd files are VPS-local, not repo-tracked)
+- Open items: none — inbox clear, deploy pipeline restored
+- Health: proxy ACTIVE, coordinator ACTIVE, watchdog ACTIVE, portal ACTIVE. Memory 6.2GB free / 7.6GB. Disk 65GB free / 75GB (11%). No errors in coordinator.log. ops-hardware-writer currently running (1/1 writer slot). ops-foundations-writer in backoff (error #2).
+
 ## 2026-02-20 09:47 UTC — Iteration 9
 
 - Inbox: 1 open message (IR: Build Board Portal — HIGH priority)

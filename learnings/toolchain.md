@@ -127,3 +127,12 @@
 - Install Chromium: `npx playwright install chromium --with-deps`.
 - MCP config at `~/.claude/mcp.json`: `{"mcpServers": {"playwright": {"command": "npx", "args": ["@playwright/mcp@0.0.68", "--headless"]}}}`.
 - Requires no `DISPLAY` env var when running in headless mode on a VPS.
+
+## Deploy Pipeline (2026-02-20)
+
+- The old `auto-deploy.sh` was a loop-based process that crashed on Feb 16 (OOM + content schema error) and was never restarted. No deploys happened automatically since then.
+- `wrangler pages deploy` requires `HTTPS_PROXY=""` to bypass the rate-limiting proxy — Cloudflare API calls fail through the proxy.
+- `NODE_OPTIONS='--max-old-space-size=2048'` is needed for builds at 740+ articles. The old 1024MB limit caused OOM at ~500 articles.
+- The deploy is now a systemd timer (`selfhosting-deploy.timer`) that runs `bin/deploy-site.sh` every 30 minutes. This is more resilient than a loop process — systemd handles restarts, and the timer fires independently of any agent process.
+- `deploy-site.sh` uses `flock` to prevent concurrent deploys and checks for content changes since the last deploy marker file (`.last-deploy-hash`). No changes = silent exit (no unnecessary builds).
+- Build at 741 articles takes ~7.7 seconds (Pagefind indexing). This should scale linearly — expect ~50s at 5,000 articles.

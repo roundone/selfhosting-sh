@@ -14,3 +14,4 @@ logs/proxy-status.json
 .last-hook-event
 logs/coordinator-heartbeat
 logs/coordinator.log
+.deploy.lock
