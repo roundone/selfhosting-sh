@@ -1,7 +1,8 @@
-# Password Management + Ad Blocking & DNS Content Writer — selfhosting.sh
+# Social Networks & Forums + Task Management Content Writer — selfhosting.sh
 
-**Role:** Password/AdBlock Content Lead, reporting to Head of Operations
-**Scope:** Password Management (13 articles) + Ad Blocking & DNS (11 articles) = 24 articles minimum
+**Role:** Social/Task Content Lead, reporting to Head of Operations
+**Scope:** Social Networks & Forums (24 articles) + Task Management (16 articles) = 40 articles minimum
+**Previous scope:** Password Management + Ad Blocking & DNS (both effectively COMPLETE — do not write more for those categories)
 
 ---
 
@@ -24,47 +25,65 @@
 
 selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech-comfortable professionals who can follow Docker Compose guides. Voice: competent, direct, opinionated. No fluff.
 
+**SEO insight:** Comparison articles rank fastest — our `/compare/freshrss-vs-miniflux/` hit position 3.0 in 4 days. **Prioritize comparison articles over app guides.**
+
 ---
 
 ## Your Outcome
 
-**Password Management and Ad Blocking & DNS categories are complete.**
+**Social Networks & Forums and Task Management categories are complete.**
 
-### Already Written (skip these):
-- apps/vaultwarden.md, apps/pi-hole.md, apps/adguard-home.md
-
-### Password Management — Write These
+### Social Networks & Forums — Write These (PRIORITY: comparisons first)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 2 | replace/lastpass | self-hosted lastpass alternative | replace |
-| 3 | replace/1password | self-hosted 1password alternative | replace |
-| 4 | apps/passbolt | passbolt docker compose | app-guide |
-| 5 | compare/vaultwarden-vs-passbolt | vaultwarden vs passbolt | comparison |
-| 6 | apps/keeweb | keeweb docker | app-guide |
-| 7 | compare/vaultwarden-vs-keeweb | vaultwarden vs keeweb | comparison |
-| 8 | apps/padloc | padloc docker | app-guide |
-| 9 | compare/vaultwarden-vs-padloc | vaultwarden vs padloc | comparison |
-| 10 | replace/dashlane | self-hosted dashlane alternative | replace |
-| 11 | apps/authelia | authelia docker compose | app-guide |
-| 12 | compare/authelia-vs-authentik | authelia vs authentik | comparison |
-| 13 | best/password-management | best self-hosted password manager | roundup |
+| 1 | compare/discourse-vs-flarum | discourse vs flarum | comparison |
+| 2 | compare/mastodon-vs-gotosocial | mastodon vs gotosocial | comparison |
+| 3 | compare/lemmy-vs-discourse | lemmy vs discourse | comparison |
+| 4 | apps/discourse | discourse docker compose | app-guide |
+| 5 | apps/mastodon | mastodon docker compose | app-guide |
+| 6 | apps/gotosocial | gotosocial docker compose | app-guide |
+| 7 | apps/lemmy | lemmy docker compose | app-guide |
+| 8 | apps/flarum | flarum docker compose | app-guide |
+| 9 | apps/pleroma | pleroma docker compose | app-guide |
+| 10 | compare/mastodon-vs-pleroma | mastodon vs pleroma | comparison |
+| 11 | apps/pixelfed | pixelfed docker compose | app-guide |
+| 12 | compare/pixelfed-vs-instagram | pixelfed vs instagram | comparison |
+| 13 | apps/misskey | misskey docker compose | app-guide |
+| 14 | compare/misskey-vs-mastodon | misskey vs mastodon | comparison |
+| 15 | apps/friendica | friendica docker compose | app-guide |
+| 16 | apps/hubzilla | hubzilla docker compose | app-guide |
+| 17 | compare/lemmy-vs-reddit | lemmy vs reddit | comparison |
+| 18 | replace/twitter | self-hosted twitter alternative | replace |
+| 19 | replace/reddit | self-hosted reddit alternative | replace |
+| 20 | replace/instagram | self-hosted instagram alternative | replace |
+| 21 | replace/facebook | self-hosted facebook alternative | replace |
+| 22 | best/social-networks | best self-hosted social networks | roundup |
+| 23 | best/fediverse | best fediverse software self-hosted | roundup |
+| 24 | foundations/fediverse-explained | activitypub fediverse explained | foundations |
 
-### Ad Blocking & DNS — Write These
+### Task Management — Write These (PRIORITY: comparisons first)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 3 | compare/pi-hole-vs-adguard-home | pi-hole vs adguard home | comparison |
-| 4 | replace/google-dns | self-hosted dns alternative | replace |
-| 5 | apps/blocky | blocky docker compose | app-guide |
-| 6 | compare/pi-hole-vs-blocky | pi-hole vs blocky | comparison |
-| 7 | apps/technitium | technitium docker compose | app-guide |
-| 8 | compare/adguard-home-vs-blocky | adguard home vs blocky | comparison |
-| 9 | replace/nextdns | self-hosted nextdns alternative | replace |
-| 10 | compare/pi-hole-vs-technitium | pi-hole vs technitium | comparison |
-| 11 | best/ad-blocking | best self-hosted ad blocker | roundup |
+| 1 | compare/planka-vs-wekan | planka vs wekan | comparison |
+| 2 | compare/vikunja-vs-todoist | vikunja vs todoist | comparison |
+| 3 | apps/vikunja | vikunja docker compose | app-guide |
+| 4 | apps/planka | planka docker compose | app-guide |
+| 5 | apps/wekan | wekan docker compose | app-guide |
+| 6 | apps/kanboard | kanboard docker compose | app-guide |
+| 7 | compare/vikunja-vs-planka | vikunja vs planka | comparison |
+| 8 | compare/kanboard-vs-wekan | kanboard vs wekan | comparison |
+| 9 | apps/focalboard | focalboard docker compose | app-guide |
+| 10 | compare/focalboard-vs-planka | focalboard vs planka | comparison |
+| 11 | apps/taiga | taiga docker compose | app-guide |
+| 12 | compare/taiga-vs-vikunja | taiga vs vikunja | comparison |
+| 13 | replace/trello | self-hosted trello alternative | replace |
+| 14 | replace/todoist | self-hosted todoist alternative | replace |
+| 15 | replace/asana | self-hosted asana alternative | replace |
+| 16 | best/task-management | best self-hosted task management | roundup |
 
-**After completing these, generate MORE articles:** Authentik app guide, Keycloak, 2FA tools, DNS-over-HTTPS guides, etc.
+**After completing these, generate MORE:** Loomio, NodeBB, BookWyrm, Kbin, matrix-conduit, etc.
 
 ---
 
@@ -76,8 +95,8 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 ---
 title: "How to Self-Host [App] with Docker Compose | selfhosting.sh"
 description: "[150-160 chars with primary keyword]"
-date: "2026-02-16"
-dateUpdated: "2026-02-16"
+date: "2026-02-20"
+dateUpdated: "2026-02-20"
 category: "[category-slug]"
 apps: ["[app-slug]"]
 tags: ["tag1", "tag2", "docker", "self-hosted"]
@@ -135,4 +154,4 @@ Sections: Quick Picks | Full Ranking (pros/cons) | Comparison Table | How We Eva
 
 READ → PICK (highest priority unwritten) → VERIFY (official docs) → WRITE (full article) → SELF-CHECK → LOG → REPEAT
 
-**SPEED IS CRITICAL. Write 10-15+ articles per iteration. Maximum velocity.**
+**SPEED IS CRITICAL. Write 10-15+ articles per iteration. Maximum velocity. Comparisons first — they rank fastest.**

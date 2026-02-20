@@ -3921,3 +3921,112 @@
 [2026-02-20T01:12:35.654Z] SOCIAL 2026-02-20T01:12:35.654Z [social-poster] queue has 1715 posts
 [2026-02-20T01:12:35.655Z] SOCIAL 2026-02-20T01:12:35.654Z [social-poster] done — 0 attempted, 0 succeeded, 1715 remaining in queue
 [2026-02-20T01:12:35.659Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:20:08.172Z] ============================================================
+[2026-02-20T01:20:08.174Z] STARTUP coordinator v1.2 (writer-discovery, per-agent-fallback, writer-concurrency-limit)
+[2026-02-20T01:20:08.176Z] AGENTS discovered: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T01:20:08.177Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T01:20:08.177Z] WATCH events/ (routing by filename convention)
+[2026-02-20T01:20:08.178Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T01:20:08.179Z] STARTUP complete — watching for events
+[2026-02-20T01:20:09.181Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T01:20:09.181Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T005805Z.json → bi-finance
+[2026-02-20T01:20:09.182Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T01:20:09.182Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-20T01:20:09.182Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-20T01:20:09.182Z] RECOVERY complete — 4 missed event(s) found
+[2026-02-20T01:20:11.184Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T005805Z.json)
+[2026-02-20T01:20:11.188Z] AGENT bi-finance started (pid: 798114)
+[2026-02-20T01:20:12.683Z] AGENT ceo starting (trigger: inbox-missed)
+[2026-02-20T01:20:12.686Z] AGENT ceo started (pid: 798148)
+[2026-02-20T01:20:13.180Z] FALLBACK ops-foundations-writer — 30m since last run
+[2026-02-20T01:20:13.180Z] AGENT ops-foundations-writer starting (trigger: 30m-fallback)
+[2026-02-20T01:20:13.183Z] AGENT ops-foundations-writer started (pid: 798219)
+[2026-02-20T01:20:13.183Z] FALLBACK ops-hardware-writer — 30m since last run
+[2026-02-20T01:20:13.184Z] AGENT ops-hardware-writer starting (trigger: 30m-fallback)
+[2026-02-20T01:20:13.188Z] AGENT ops-hardware-writer started (pid: 798220)
+[2026-02-20T01:20:13.191Z] FALLBACK ops-homeauto-notes-writer — 30m since last run
+[2026-02-20T01:20:13.191Z] AGENT ops-homeauto-notes-writer starting (trigger: 30m-fallback)
+[2026-02-20T01:20:13.198Z] AGENT ops-homeauto-notes-writer started (pid: 798223)
+[2026-02-20T01:20:13.198Z] AGENT operations starting (trigger: inbox-missed)
+[2026-02-20T01:20:13.203Z] AGENT operations started (pid: 798229)
+[2026-02-20T01:20:13.683Z] AGENT technology starting (trigger: inbox-missed)
+[2026-02-20T01:20:13.686Z] AGENT technology started (pid: 798266)
+[2026-02-20T01:25:08.188Z] SOCIAL running social-poster.js
+[2026-02-20T01:25:08.221Z] SOCIAL 2026-02-20T01:25:08.219Z [social-poster] starting
+[2026-02-20T01:25:08.229Z] SOCIAL 2026-02-20T01:25:08.229Z [social-poster] queue has 1715 posts
+[2026-02-20T01:25:08.230Z] SOCIAL 2026-02-20T01:25:08.230Z [social-poster] done — 0 attempted, 0 succeeded, 1715 remaining in queue
+[2026-02-20T01:25:08.237Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:30:08.221Z] RELEASES running check-releases.js
+[2026-02-20T01:30:08.223Z] SOCIAL running social-poster.js
+[2026-02-20T01:30:08.254Z] RELEASES 2026-02-20T01:30:08.252Z [check-releases] starting
+[2026-02-20T01:30:08.255Z] RELEASES 2026-02-20T01:30:08.255Z [check-releases] checking 29 GitHub repos
+[2026-02-20T01:30:08.260Z] SOCIAL 2026-02-20T01:30:08.257Z [social-poster] starting
+[2026-02-20T01:30:08.270Z] SOCIAL 2026-02-20T01:30:08.270Z [social-poster] queue has 1715 posts
+[2026-02-20T01:30:08.271Z] SOCIAL 2026-02-20T01:30:08.271Z [social-poster] done — 0 attempted, 0 succeeded, 1715 remaining in queue
+[2026-02-20T01:30:08.276Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:30:08.334Z] RELEASES 2026-02-20T01:30:08.334Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T01:30:08.950Z] RELEASES 2026-02-20T01:30:08.950Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T01:30:09.552Z] RELEASES 2026-02-20T01:30:09.552Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T01:30:10.130Z] RELEASES 2026-02-20T01:30:10.130Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T01:30:10.681Z] RELEASES 2026-02-20T01:30:10.681Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T01:30:11.244Z] RELEASES 2026-02-20T01:30:11.244Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T01:30:11.818Z] RELEASES 2026-02-20T01:30:11.817Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T01:30:12.383Z] RELEASES 2026-02-20T01:30:12.382Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-20T01:30:12.946Z] RELEASES 2026-02-20T01:30:12.945Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T01:30:13.499Z] RELEASES 2026-02-20T01:30:13.499Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T01:30:14.043Z] RELEASES 2026-02-20T01:30:14.043Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T01:30:14.644Z] RELEASES 2026-02-20T01:30:14.644Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T01:30:15.194Z] RELEASES 2026-02-20T01:30:15.194Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T01:30:15.775Z] RELEASES 2026-02-20T01:30:15.775Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T01:30:16.332Z] RELEASES 2026-02-20T01:30:16.332Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T01:30:16.890Z] RELEASES 2026-02-20T01:30:16.890Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T01:30:17.455Z] RELEASES 2026-02-20T01:30:17.455Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T01:30:18.011Z] RELEASES 2026-02-20T01:30:18.011Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T01:30:18.581Z] RELEASES 2026-02-20T01:30:18.580Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T01:30:19.138Z] RELEASES 2026-02-20T01:30:19.138Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T01:30:19.707Z] RELEASES 2026-02-20T01:30:19.707Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T01:30:20.251Z] RELEASES 2026-02-20T01:30:20.251Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T01:30:20.798Z] RELEASES 2026-02-20T01:30:20.797Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T01:30:21.359Z] RELEASES 2026-02-20T01:30:21.359Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T01:30:21.915Z] RELEASES 2026-02-20T01:30:21.914Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T01:30:22.473Z] RELEASES 2026-02-20T01:30:22.472Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T01:30:23.034Z] RELEASES 2026-02-20T01:30:23.033Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T01:30:23.580Z] RELEASES 2026-02-20T01:30:23.580Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T01:30:24.144Z] RELEASES 2026-02-20T01:30:24.144Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T01:30:24.645Z] RELEASES 2026-02-20T01:30:24.644Z [check-releases] checking 3 feeds
+[2026-02-20T01:30:24.835Z] RELEASES 2026-02-20T01:30:24.835Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T01:30:25.127Z] RELEASES 2026-02-20T01:30:25.127Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T01:30:25.428Z] RELEASES 2026-02-20T01:30:25.428Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T01:30:25.629Z] RELEASES 2026-02-20T01:30:25.629Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T01:30:25.635Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T01:35:08.263Z] SOCIAL running social-poster.js
+[2026-02-20T01:35:08.294Z] SOCIAL 2026-02-20T01:35:08.292Z [social-poster] starting
+[2026-02-20T01:35:08.302Z] SOCIAL 2026-02-20T01:35:08.302Z [social-poster] queue has 1715 posts
+[2026-02-20T01:35:08.519Z] SOCIAL 2026-02-20T01:35:08.519Z [social-poster] OK bluesky: posted "Google DNS (8.8.8.8) logs every query tied to your IP. Four ..."
+[2026-02-20T01:35:08.525Z] SOCIAL 2026-02-20T01:35:08.525Z [social-poster] removed 1 posted items from queue (1714 remaining)
+[2026-02-20T01:35:08.525Z] SOCIAL 2026-02-20T01:35:08.525Z [social-poster] done — 1 attempted, 1 succeeded, 1714 remaining in queue
+[2026-02-20T01:35:08.530Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:40:08.268Z] SOCIAL running social-poster.js
+[2026-02-20T01:40:08.301Z] SOCIAL 2026-02-20T01:40:08.299Z [social-poster] starting
+[2026-02-20T01:40:08.308Z] SOCIAL 2026-02-20T01:40:08.308Z [social-poster] queue has 1714 posts
+[2026-02-20T01:40:08.309Z] SOCIAL 2026-02-20T01:40:08.309Z [social-poster] done — 0 attempted, 0 succeeded, 1714 remaining in queue
+[2026-02-20T01:40:08.313Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:45:08.344Z] SOCIAL running social-poster.js
+[2026-02-20T01:45:08.373Z] SOCIAL 2026-02-20T01:45:08.372Z [social-poster] starting
+[2026-02-20T01:45:08.380Z] SOCIAL 2026-02-20T01:45:08.380Z [social-poster] queue has 1714 posts
+[2026-02-20T01:45:08.381Z] SOCIAL 2026-02-20T01:45:08.380Z [social-poster] done — 0 attempted, 0 succeeded, 1714 remaining in queue
+[2026-02-20T01:45:08.384Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:50:06.501Z] INBOX ceo.md modified → ceo
+[2026-02-20T01:50:06.501Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T01:50:08.346Z] SOCIAL running social-poster.js
+[2026-02-20T01:50:08.380Z] SOCIAL 2026-02-20T01:50:08.378Z [social-poster] starting
+[2026-02-20T01:50:08.387Z] SOCIAL 2026-02-20T01:50:08.387Z [social-poster] queue has 1714 posts
+[2026-02-20T01:50:08.388Z] SOCIAL 2026-02-20T01:50:08.388Z [social-poster] done — 0 attempted, 0 succeeded, 1714 remaining in queue
+[2026-02-20T01:50:08.391Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:52:42.936Z] INBOX marketing.md modified → marketing
+[2026-02-20T01:52:42.936Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-20T01:52:42.937Z] AGENT marketing started (pid: 802248)
+[2026-02-20T01:52:45.418Z] INBOX ceo.md modified → ceo
+[2026-02-20T01:52:45.418Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T01:52:45.420Z] INBOX marketing.md modified → marketing
+[2026-02-20T01:52:45.420Z] QUEUED marketing already running — trigger queued: inbox-message

@@ -10,7 +10,7 @@ author: "selfhosting.sh"
 draft: false
 image: ""
 imageAlt: ""
-affiliateDisclosure: false
+affiliateDisclosure: true
 ---
 
 ## Quick Summary

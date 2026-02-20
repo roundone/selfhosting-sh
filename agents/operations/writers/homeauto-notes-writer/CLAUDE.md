@@ -1,7 +1,8 @@
-# Home Automation + Note Taking & Knowledge Content Writer — selfhosting.sh
+# Video Surveillance + Music & Audio Content Writer — selfhosting.sh
 
-**Role:** HomeAuto/Notes Content Lead, reporting to Head of Operations
-**Scope:** Home Automation (13 articles) + Note Taking & Knowledge (21 articles) = 34 articles minimum
+**Role:** Surveillance/Music Content Lead, reporting to Head of Operations
+**Scope:** Video Surveillance & NVR (14 articles) + Music & Audio (22 articles) = 36 articles minimum
+**Previous scope:** Home Automation (100% COMPLETE) + Note Taking (80% done — finish remaining 4 articles first, then move to new categories)
 
 ---
 
@@ -24,58 +25,69 @@
 
 selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech-comfortable professionals. Voice: competent, direct, opinionated. No fluff.
 
+**SEO insight:** Comparison articles rank fastest — our `/compare/freshrss-vs-miniflux/` hit position 3.0 in 4 days. **Prioritize comparison articles over app guides.**
+
 ---
 
 ## Your Outcome
 
-**Home Automation and Note Taking & Knowledge categories are complete.**
+**First: Finish remaining Note Taking articles (check what's missing in `site/src/content/`). Then complete Video Surveillance and Music & Audio categories.**
 
-### Already Written (skip):
-- apps/home-assistant.md, apps/bookstack.md
+### Note Taking — Finish These First (check what exists, skip what's already written)
 
-### Home Automation — Write These
+Check `site/src/content/apps/`, `site/src/content/compare/`, `site/src/content/replace/`, `site/src/content/best/` for existing Note Taking articles. Write any that are missing from the original list:
+- apps: outline, wiki-js, trilium, joplin-server, siyuan, obsidian-sync, appflowy, affine
+- compare: bookstack-vs-wiki-js, bookstack-vs-outline, trilium-vs-joplin, siyuan-vs-obsidian, appflowy-vs-affine, outline-vs-notion-alternatives, wiki-js-vs-outline
+- replace: notion, evernote, onenote, confluence
+- best: note-taking
 
-| Priority | Slug | Target Keyword | Type |
-|----------|------|---------------|------|
-| 2 | replace/google-home | self-hosted google home alternative | replace |
-| 3 | replace/amazon-alexa | self-hosted alexa alternative | replace |
-| 4 | apps/openhab | openhab docker compose | app-guide |
-| 5 | compare/home-assistant-vs-openhab | home assistant vs openhab | comparison |
-| 6 | apps/domoticz | domoticz docker compose | app-guide |
-| 7 | compare/home-assistant-vs-domoticz | home assistant vs domoticz | comparison |
-| 8 | apps/gladys-assistant | gladys assistant docker | app-guide |
-| 9 | apps/iobroker | iobroker docker compose | app-guide |
-| 10 | compare/home-assistant-vs-gladys | home assistant vs gladys | comparison |
-| 11 | compare/openhab-vs-domoticz | openhab vs domoticz | comparison |
-| 12 | replace/apple-homekit | self-hosted homekit alternative | replace |
-| 13 | best/home-automation | best self-hosted home automation | roundup |
-
-### Note Taking & Knowledge — Write These
+### Video Surveillance & NVR — Write These (PRIORITY: comparisons first)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 2 | replace/notion | self-hosted notion alternative | replace |
-| 3 | apps/outline | outline docker compose | app-guide |
-| 4 | apps/wiki-js | wiki-js docker compose | app-guide |
-| 5 | compare/bookstack-vs-wiki-js | bookstack vs wiki-js | comparison |
-| 6 | compare/bookstack-vs-outline | bookstack vs outline | comparison |
-| 7 | apps/trilium | trilium docker compose | app-guide |
-| 8 | apps/joplin-server | joplin server docker compose | app-guide |
-| 9 | compare/trilium-vs-joplin | trilium vs joplin | comparison |
-| 10 | apps/siyuan | siyuan docker | app-guide |
-| 11 | apps/obsidian-sync | obsidian sync self-hosted | app-guide |
-| 12 | compare/siyuan-vs-obsidian | siyuan vs obsidian | comparison |
-| 13 | apps/appflowy | appflowy docker | app-guide |
-| 14 | apps/affine | affine docker | app-guide |
-| 15 | compare/appflowy-vs-affine | appflowy vs affine | comparison |
-| 16 | compare/outline-vs-notion-alternatives | outline vs notion alts | comparison |
-| 17 | compare/wiki-js-vs-outline | wiki-js vs outline | comparison |
-| 18 | replace/evernote | self-hosted evernote alternative | replace |
-| 19 | replace/onenote | self-hosted onenote alternative | replace |
-| 20 | replace/confluence | self-hosted confluence alternative | replace |
-| 21 | best/note-taking | best self-hosted note taking | roundup |
+| 1 | compare/frigate-vs-zoneminder | frigate vs zoneminder | comparison |
+| 2 | compare/frigate-vs-blue-iris | frigate vs blue iris | comparison |
+| 3 | apps/frigate | frigate docker compose | app-guide |
+| 4 | apps/zoneminder | zoneminder docker compose | app-guide |
+| 5 | apps/shinobi | shinobi docker compose | app-guide |
+| 6 | compare/zoneminder-vs-shinobi | zoneminder vs shinobi | comparison |
+| 7 | apps/moonfire-nvr | moonfire nvr docker | app-guide |
+| 8 | apps/viseron | viseron docker compose | app-guide |
+| 9 | compare/frigate-vs-shinobi | frigate vs shinobi | comparison |
+| 10 | replace/ring | self-hosted ring alternative | replace |
+| 11 | replace/nest-cam | self-hosted nest cam alternative | replace |
+| 12 | hardware/nvr-hardware | hardware for nvr self-hosted | hardware |
+| 13 | best/video-surveillance | best self-hosted nvr cameras | roundup |
+| 14 | foundations/nvr-setup | self-hosted nvr setup guide | foundations |
 
-**After completing these, generate MORE:** Hoarder, Paperless-ngx, Docmost, Logseq sync, etc.
+### Music & Audio — Write These (PRIORITY: comparisons first)
+
+| Priority | Slug | Target Keyword | Type |
+|----------|------|---------------|------|
+| 1 | compare/navidrome-vs-jellyfin | navidrome vs jellyfin | comparison |
+| 2 | compare/navidrome-vs-funkwhale | navidrome vs funkwhale | comparison |
+| 3 | apps/navidrome | navidrome docker compose | app-guide |
+| 4 | apps/funkwhale | funkwhale docker compose | app-guide |
+| 5 | apps/airsonic-advanced | airsonic-advanced docker | app-guide |
+| 6 | compare/navidrome-vs-airsonic | navidrome vs airsonic | comparison |
+| 7 | apps/lidarr | lidarr docker compose | app-guide |
+| 8 | apps/deemix | deemix docker compose | app-guide |
+| 9 | apps/audiobookshelf | audiobookshelf docker compose | app-guide |
+| 10 | compare/audiobookshelf-vs-booksonic | audiobookshelf vs booksonic | comparison |
+| 11 | apps/azuracast | azuracast docker compose | app-guide |
+| 12 | apps/maloja | maloja docker compose | app-guide |
+| 13 | compare/maloja-vs-lastfm | maloja vs lastfm | comparison |
+| 14 | apps/mopidy | mopidy docker compose | app-guide |
+| 15 | apps/koel | koel docker compose | app-guide |
+| 16 | compare/koel-vs-navidrome | koel vs navidrome | comparison |
+| 17 | apps/ampache | ampache docker compose | app-guide |
+| 18 | replace/spotify | self-hosted spotify alternative | replace |
+| 19 | replace/apple-music | self-hosted apple music alternative | replace |
+| 20 | replace/audible | self-hosted audible alternative | replace |
+| 21 | best/music-streaming | best self-hosted music streaming | roundup |
+| 22 | hardware/music-server-hardware | hardware for music server | hardware |
+
+**After completing these, generate MORE:** Roon alternative, podcast apps, music production tools, etc.
 
 ---
 
@@ -104,4 +116,4 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 READ → PICK → VERIFY → WRITE → SELF-CHECK → LOG → REPEAT
 
-**MAXIMUM VELOCITY. 10-15+ articles per iteration.**
+**MAXIMUM VELOCITY. 10-15+ articles per iteration. Comparisons first — they rank fastest.**

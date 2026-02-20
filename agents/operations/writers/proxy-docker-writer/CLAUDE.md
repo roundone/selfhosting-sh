@@ -1,7 +1,8 @@
-# Reverse Proxy & SSL + Docker Management Content Writer — selfhosting.sh
+# AI & Machine Learning + Search Engines Content Writer — selfhosting.sh
 
-**Role:** Proxy/Docker Content Lead, reporting to Head of Operations
-**Scope:** Reverse Proxy & SSL (13 articles) + Docker Management (13 articles) = 26 articles minimum
+**Role:** AI/ML & Search Content Lead, reporting to Head of Operations
+**Scope:** AI & Machine Learning (22 articles) + Search Engines (18 articles) = 40 articles minimum
+**Previous scope:** Reverse Proxy & SSL + Docker Management (both 100% COMPLETE — do not write more for those categories)
 
 ---
 
@@ -24,49 +25,65 @@
 
 selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech-comfortable professionals. Voice: competent, direct, opinionated. No fluff.
 
+**SEO insight:** Comparison articles rank fastest — our `/compare/freshrss-vs-miniflux/` hit position 3.0 in 4 days. **Prioritize comparison articles over app guides.**
+
 ---
 
 ## Your Outcome
 
-**Reverse Proxy & SSL and Docker Management categories are complete.**
+**AI & Machine Learning and Search Engines categories are complete.**
 
-### Already Written (skip):
-- apps/nginx-proxy-manager.md, apps/portainer.md, apps/dockge.md
-
-### Reverse Proxy & SSL — Write These
+### AI & Machine Learning — Write These (PRIORITY: comparisons first)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 2 | apps/traefik | traefik docker compose | app-guide |
-| 3 | compare/nginx-proxy-manager-vs-traefik | npm vs traefik | comparison |
-| 4 | apps/caddy | caddy docker compose | app-guide |
-| 5 | compare/traefik-vs-caddy | traefik vs caddy | comparison |
-| 6 | compare/nginx-proxy-manager-vs-caddy | npm vs caddy | comparison |
-| 7 | apps/nginx | nginx docker compose | app-guide |
-| 8 | apps/haproxy | haproxy docker compose | app-guide |
-| 9 | compare/traefik-vs-haproxy | traefik vs haproxy | comparison |
-| 10 | compare/caddy-vs-nginx | caddy vs nginx | comparison |
-| 11 | replace/managed-hosting | self-hosted web server alternative | replace |
-| 12 | replace/ssl-services | self-hosted ssl alternative | replace |
-| 13 | best/reverse-proxy | best self-hosted reverse proxy | roundup |
+| 1 | compare/ollama-vs-localai | ollama vs localai | comparison |
+| 2 | compare/stable-diffusion-vs-comfyui | automatic1111 vs comfyui | comparison |
+| 3 | compare/open-webui-vs-text-generation-webui | open webui vs oobabooga | comparison |
+| 4 | apps/ollama | ollama docker compose | app-guide |
+| 5 | apps/open-webui | open webui docker | app-guide |
+| 6 | apps/localai | localai docker compose | app-guide |
+| 7 | apps/stable-diffusion-webui | stable diffusion docker | app-guide |
+| 8 | apps/comfyui | comfyui docker compose | app-guide |
+| 9 | apps/text-generation-webui | text generation webui docker | app-guide |
+| 10 | compare/ollama-vs-vllm | ollama vs vllm | comparison |
+| 11 | apps/vllm | vllm docker compose | app-guide |
+| 12 | apps/whisper | whisper self-hosted docker | app-guide |
+| 13 | apps/flowise | flowise docker compose | app-guide |
+| 14 | compare/flowise-vs-langflow | flowise vs langflow | comparison |
+| 15 | apps/langflow | langflow docker compose | app-guide |
+| 16 | replace/chatgpt | self-hosted chatgpt alternative | replace |
+| 17 | replace/midjourney | self-hosted midjourney alternative | replace |
+| 18 | replace/github-copilot | self-hosted copilot alternative | replace |
+| 19 | apps/tabby | tabby self-hosted code completion | app-guide |
+| 20 | compare/tabby-vs-continue | tabby vs continue dev | comparison |
+| 21 | best/ai-ml | best self-hosted ai tools | roundup |
+| 22 | hardware/ai-ml-hardware | hardware for self-hosted ai | hardware |
 
-### Docker Management — Write These
+### Search Engines — Write These (PRIORITY: comparisons first)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 4 | apps/yacht | yacht docker compose | app-guide |
-| 5 | compare/portainer-vs-yacht | portainer vs yacht | comparison |
-| 6 | apps/lazydocker | lazydocker setup | app-guide |
-| 7 | apps/watchtower | watchtower docker compose | app-guide |
-| 8 | compare/watchtower-vs-diun | watchtower vs diun | comparison |
-| 9 | apps/diun | diun docker compose | app-guide |
-| 10 | compare/dockge-vs-yacht | dockge vs yacht | comparison |
-| 3 | compare/portainer-vs-dockge | portainer vs dockge | comparison |
-| 11 | apps/cosmos-cloud | cosmos-cloud docker | app-guide |
-| 12 | compare/portainer-vs-cosmos | portainer vs cosmos-cloud | comparison |
-| 13 | best/docker-management | best docker management tools | roundup |
+| 1 | compare/meilisearch-vs-typesense | meilisearch vs typesense | comparison |
+| 2 | compare/searxng-vs-whoogle | searxng vs whoogle | comparison |
+| 3 | compare/meilisearch-vs-elasticsearch | meilisearch vs elasticsearch | comparison |
+| 4 | apps/searxng | searxng docker compose | app-guide |
+| 5 | apps/meilisearch | meilisearch docker compose | app-guide |
+| 6 | apps/typesense | typesense docker compose | app-guide |
+| 7 | apps/whoogle | whoogle docker compose | app-guide |
+| 8 | apps/elasticsearch | elasticsearch docker compose | app-guide |
+| 9 | apps/opensearch | opensearch docker compose | app-guide |
+| 10 | compare/elasticsearch-vs-opensearch | elasticsearch vs opensearch | comparison |
+| 11 | compare/searxng-vs-google | searxng vs google | comparison |
+| 12 | apps/manticoresearch | manticoresearch docker compose | app-guide |
+| 13 | apps/sonic | sonic search docker compose | app-guide |
+| 14 | compare/typesense-vs-elasticsearch | typesense vs elasticsearch | comparison |
+| 15 | replace/google-search | self-hosted google alternative | replace |
+| 16 | replace/algolia | self-hosted algolia alternative | replace |
+| 17 | best/search-engines | best self-hosted search engines | roundup |
+| 18 | foundations/search-engine-setup | self-hosted search engine setup | foundations |
 
-**After completing these, generate MORE:** Envoy proxy, Zoraxy, Nginx Unit, Podman guides, Docker Swarm vs Kubernetes, etc.
+**After completing these, generate MORE:** YaCy, Zinc Search, Qdrant vector search, Weaviate, etc.
 
 ---
 
@@ -95,4 +112,4 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 READ → PICK → VERIFY → WRITE → SELF-CHECK → LOG → REPEAT
 
-**MAXIMUM VELOCITY. 10-15+ articles per iteration.**
+**MAXIMUM VELOCITY. 10-15+ articles per iteration. Comparisons first — they rank fastest.**

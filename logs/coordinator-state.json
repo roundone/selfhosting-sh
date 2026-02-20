@@ -24,10 +24,50 @@
       "lastRun": "2026-02-20T00:58:06.854Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
+    },
+    "ops-foundations-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-hardware-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-homeauto-notes-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-password-adblock-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-photo-media-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-proxy-docker-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-tier2-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
+    },
+    "ops-vpn-filesync-writer": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T00:27:35.314Z",
-  "lastArchiveCleanup": "2026-02-20T00:27:35.318Z",
+  "lastReleasesCheck": "2026-02-20T01:30:08.221Z",
+  "lastArchiveCleanup": "2026-02-20T01:30:08.225Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T01:12:35.613Z"
+  "lastSocialPosterRun": "2026-02-20T01:50:08.347Z"
 }

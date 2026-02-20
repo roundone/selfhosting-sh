@@ -1,0 +1,288 @@
+---
+title: "How to Self-Host Plane with Docker Compose"
+description: "Deploy Plane with Docker — a self-hosted project management tool that replaces Jira, Linear, and Asana."
+date: 2026-02-20
+dateUpdated: 2026-02-20
+category: "project-management"
+apps:
+  - plane
+tags:
+  - self-hosted
+  - plane
+  - docker
+  - project-management
+  - jira-alternative
+  - kanban
+author: "selfhosting.sh"
+draft: false
+image: ""
+imageAlt: ""
+affiliateDisclosure: false
+---
+
+## What Is Plane?
+
+[Plane](https://plane.so) is a self-hosted project management platform that handles issue tracking, sprint planning, kanban boards, and project cycles. It is a direct replacement for Jira, Linear, and Asana — with the advantage of running entirely on your own infrastructure under the AGPL-3.0 license. If your team needs a modern issue tracker without SaaS lock-in or per-seat pricing, Plane is the strongest open-source option available.
+
+## Prerequisites
+
+- A Linux server (Ubuntu 22.04+ recommended)
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- **8 GB of RAM minimum** (4 GB is technically possible but will be slow under load — Plane runs 13 services)
+- 20+ GB of free disk space
+- A domain name (recommended for team access)
+- Git installed on the server
+
+Plane's resource requirements are significantly higher than most self-hosted apps because it runs a full microservices stack. Do not attempt this on a 1 GB VPS.
+
+## Docker Compose Configuration
+
+Plane ships a complex 13-service Docker stack. Writing a custom `docker-compose.yml` from scratch is not practical here — use their official setup tooling instead.
+
+### Step 1: Clone the Repository
+
+```bash
+mkdir -p ~/plane && cd ~/plane
+git clone https://github.com/makeplane/plane.git --depth 1 --branch v1.2.1
+cd plane
+```
+
+### Step 2: Run the Setup Script
+
+Plane provides a `setup.sh` script that generates the `.env` file and configures all service connections:
+
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+The script prompts you for:
+- **Domain name** — enter your domain (e.g., `plane.example.com`) or use `localhost` for local testing
+- **External access settings** — whether to expose HTTP (port 80) or HTTPS (port 443)
+
+It generates a `.env` file with database passwords, secret keys, and service connection strings. Review it before proceeding.
+
+### Step 3: Start the Stack
+
+```bash
+docker compose -f docker-compose.yml up -d
+```
+
+First startup takes several minutes. The `migrator` service runs database migrations before the API becomes available. Monitor progress with:
+
+```bash
+docker compose logs -f migrator
+```
+
+Wait until the migrator exits successfully, then check that all services are healthy:
+
+```bash
+docker compose ps
+```
+
+All 13 services should show `running` (except `migrator`, which exits after completing).
+
+## Architecture Overview
+
+Plane runs as a microservices stack with 13 containers. Here is what each service does:
+
+| Service | Image | Purpose |
+|---------|-------|---------|
+| **web** | `makeplane/plane-frontend` | Next.js frontend — the main UI users interact with |
+| **admin** | `makeplane/plane-admin` | Admin panel for instance-level settings |
+| **space** | `makeplane/plane-space` | Public project spaces and deploy boards |
+| **live** | `makeplane/plane-live` | Real-time collaboration (WebSocket server) |
+| **api** | `makeplane/plane-backend` | Django REST API — core business logic |
+| **worker** | `makeplane/plane-backend` | Celery worker for background tasks (notifications, imports) |
+| **beat-worker** | `makeplane/plane-backend` | Celery beat scheduler for periodic tasks |
+| **migrator** | `makeplane/plane-backend` | Runs database migrations on startup, then exits |
+| **proxy** | Caddy | Reverse proxy that routes traffic to the correct service |
+| **plane-db** | PostgreSQL 15.7 | Primary database |
+| **plane-redis** | Valkey 7.2.11 | Caching and Celery message broker |
+| **plane-mq** | RabbitMQ 3.13.6 | Message queue for async task distribution |
+| **plane-minio** | MinIO | S3-compatible object storage for file uploads |
+
+The Caddy proxy sits in front of everything and routes requests to `web`, `api`, `space`, `admin`, or `live` based on URL path. PostgreSQL stores all project data. Valkey handles caching and session state. RabbitMQ distributes background jobs to the Celery workers. MinIO stores uploaded files and attachments.
+
+## Initial Setup
+
+1. Open `http://your-server-ip` (or your configured domain) in a browser
+2. Create your admin account on the first-run setup screen
+3. Configure your workspace name and invite URL
+4. Create your first project — choose between kanban, list, or spreadsheet views
+5. Invite team members via email or share the workspace invite link
+
+Default access is on port 80 (HTTP) or 443 (HTTPS) depending on what you configured during `setup.sh`.
+
+## Configuration
+
+Key environment variables in the `.env` file generated by `setup.sh`:
+
+| Variable | Purpose | Default |
+|----------|---------|---------|
+| `WEB_URL` | Public-facing URL for the instance | Set during setup |
+| `CORS_ALLOWED_ORIGINS` | Allowed CORS origins for API requests | Matches `WEB_URL` |
+| `SECRET_KEY` | Django secret key for session signing | Auto-generated |
+| `DATABASE_URL` | PostgreSQL connection string | Points to `plane-db` container |
+| `REDIS_URL` | Valkey connection string | Points to `plane-redis` container |
+| `RABBITMQ_HOST` | RabbitMQ hostname | `plane-mq` |
+| `AWS_S3_ENDPOINT_URL` | MinIO endpoint for file storage | Points to `plane-minio` container |
+| `AWS_ACCESS_KEY_ID` | MinIO access key | Auto-generated |
+| `AWS_SECRET_ACCESS_KEY` | MinIO secret key | Auto-generated |
+| `ENABLE_SIGNUP` | Allow public signups | `1` (enabled) |
+| `ENABLE_EMAIL_PASSWORD` | Allow email/password authentication | `1` (enabled) |
+| `GUNICORN_WORKERS` | Number of API worker processes | `1` |
+
+**Settings you should change for production:**
+
+- **`WEB_URL`** — set to your actual public domain with HTTPS (e.g., `https://plane.example.com`)
+- **`ENABLE_SIGNUP`** — set to `0` after your team has registered to prevent unauthorized signups
+- **`GUNICORN_WORKERS`** — increase to `2-4` for teams larger than 10 people
+- **Database passwords** — change the auto-generated passwords if they do not meet your security policy
+
+To apply configuration changes:
+
+```bash
+docker compose down
+# Edit .env
+docker compose up -d
+```
+
+## Reverse Proxy
+
+Plane includes a built-in Caddy reverse proxy that handles routing between the frontend, API, admin panel, and WebSocket services. For basic deployments, this is sufficient — Caddy can also handle automatic HTTPS with Let's Encrypt if port 443 is exposed.
+
+If you are running Plane behind an existing reverse proxy (Nginx Proxy Manager, Traefik, or Caddy on the host), point your external proxy to the Caddy container's exposed port and set the appropriate headers:
+
+```nginx
+# Nginx example — proxy to Plane's Caddy container
+location / {
+    proxy_pass http://127.0.0.1:80;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+}
+```
+
+The `Upgrade` and `Connection` headers are required for the `live` service's WebSocket connections. Without them, real-time collaboration will not work.
+
+For a full reverse proxy setup guide, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+
+## Backup
+
+Plane stores data in three places: PostgreSQL (project data, issues, users), MinIO (file uploads), and Valkey (ephemeral cache — does not need backup).
+
+### Back Up PostgreSQL
+
+```bash
+docker compose exec plane-db pg_dump -U plane plane > plane-db-backup-$(date +%Y%m%d).sql
+```
+
+### Back Up MinIO Data
+
+MinIO stores uploaded files in a Docker volume. Back up the volume directory:
+
+```bash
+docker compose exec plane-minio mc mirror /data /backup
+# Or back up the Docker volume directly:
+docker run --rm -v plane_uploads:/data -v $(pwd):/backup alpine tar czf /backup/minio-backup-$(date +%Y%m%d).tar.gz /data
+```
+
+### Restore PostgreSQL
+
+```bash
+docker compose exec -T plane-db psql -U plane plane < plane-db-backup-20260220.sql
+```
+
+Schedule automated backups with a cron job and follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule) — three copies, two different media, one offsite.
+
+## Troubleshooting
+
+### Services Fail to Start with Out-of-Memory Errors
+
+**Symptom:** Containers restart repeatedly. `docker compose logs` shows `Killed` or OOM messages.
+
+**Fix:** Plane requires at least 4 GB of RAM for all 13 services. On a system with 4 GB total, the OS and other processes leave too little for the stack. Upgrade to 8 GB or reduce `GUNICORN_WORKERS` to `1` and add swap space:
+
+```bash
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+
+### Migrator Service Fails or Loops
+
+**Symptom:** The `migrator` container exits with an error or keeps restarting. The web UI shows a connection error.
+
+**Fix:** The migrator depends on PostgreSQL being fully ready. Check if the database is up:
+
+```bash
+docker compose logs plane-db
+```
+
+If PostgreSQL is still initializing, wait and restart the migrator:
+
+```bash
+docker compose restart migrator
+```
+
+If the error is a migration conflict, check the [Plane GitHub issues](https://github.com/makeplane/plane/issues) for your specific error message. You may need to reset the database for a fresh install:
+
+```bash
+docker compose down -v  # WARNING: destroys all data
+docker compose up -d
+```
+
+### WebSocket Connections Fail (No Real-Time Updates)
+
+**Symptom:** Changes made by other users do not appear in real time. The browser console shows WebSocket connection errors.
+
+**Fix:** If running behind an external reverse proxy, ensure you are forwarding the `Upgrade` and `Connection` headers (see the Reverse Proxy section above). Also verify that `WEB_URL` in `.env` matches the actual URL users access — a mismatch causes CORS and WebSocket origin failures.
+
+### File Uploads Fail or Attachments Missing
+
+**Symptom:** Uploading files to issues returns an error. Existing attachments show broken links.
+
+**Fix:** Check that the MinIO service is running and healthy:
+
+```bash
+docker compose logs plane-minio
+```
+
+Verify that `AWS_S3_ENDPOINT_URL`, `AWS_ACCESS_KEY_ID`, and `AWS_SECRET_ACCESS_KEY` in `.env` match the MinIO container's configuration. If you changed MinIO credentials after initial setup, you need to update the bucket policy:
+
+```bash
+docker compose exec plane-minio mc alias set local http://localhost:9000 $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY
+docker compose exec plane-minio mc ls local/
+```
+
+## Resource Requirements
+
+- **RAM:** 4 GB minimum (all 13 services idle), 8-16 GB recommended for teams with active usage
+- **CPU:** 2+ cores minimum, 4 cores recommended
+- **Disk:** 20 GB for the application stack, plus additional storage proportional to file uploads and attachment volume
+- **Network:** Low bandwidth — the API serves JSON payloads, not media streams
+
+Plane is one of the heaviest self-hosted apps you can run. A dedicated mini PC or a VPS with 8 GB RAM is the sweet spot for small-to-medium teams (5-30 people).
+
+## Verdict
+
+Plane is the best self-hosted Jira alternative available today. The UI is modern and fast, the feature set covers issues, sprints, cycles, modules, and pages — and it does not nickel-and-dime you with per-seat pricing. For teams that want to own their project management data, Plane is the clear first choice.
+
+The trade-off is operational complexity. Thirteen services is a lot. Startup is slow, RAM requirements are steep, and debugging issues means understanding which of those 13 containers is misbehaving. If you are a solo developer or a small team that just needs a kanban board, look at something lighter like [Vikunja](/apps/vikunja) or [Focalboard](/apps/focalboard). But if you are a team of 5+ that currently pays for Jira or Linear and wants out, Plane is worth the infrastructure investment.
+
+## Related
+
+- [Best Self-Hosted Project Management Tools](/best/project-management)
+- [Self-Hosted Alternatives to Jira](/replace/jira)
+- [Self-Hosted Alternatives to Trello](/replace/trello)
+- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [Docker Networking](/foundations/docker-networking)
+- [Getting Started with Self-Hosting](/foundations/getting-started)

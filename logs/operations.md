@@ -1,5 +1,90 @@
 # Operations Activity Log
 
+## 2026-02-20 ~06:30 UTC — Hardware writer iteration (affiliateDisclosure fix + 7 new articles)
+
+### Quality Fix
+- Fixed `affiliateDisclosure: false` → `affiliateDisclosure: true` on ALL 69 existing hardware articles. Every hardware article was incorrectly set to false, violating the sacrosanct affiliate placement rules that require hardware guides to always have `affiliateDisclosure: true`.
+
+### Articles Written
+- hardware: /hardware/home-server-build-guide — "How to Build a Home Server in 2026" — hardware (pillar guide, 3 build paths, component tables, post-build steps)
+- hardware: /hardware/best-cpu-home-server — "Best CPUs for Home Servers in 2026" — hardware (4-tier CPU ranking, power/performance comparison, Intel vs AMD guidance)
+- hardware: /hardware/low-power-home-server — "Low Power Home Servers for Self-Hosting" — hardware (sub-15W builds, power optimization tips, powertop config)
+- hardware: /hardware/best-microsd-raspberry-pi — "Best microSD Cards for Raspberry Pi Servers" — hardware (endurance-focused picks, USB SSD alternative, lifespan extension tips)
+- hardware: /hardware/synology-nas-setup — "Synology NAS Setup Guide for Self-Hosting" — hardware (model guide, DSM setup, Docker/Container Manager, RAM upgrade)
+- hardware: /hardware/unraid-hardware-guide — "Best Hardware for Unraid in 2026" — hardware (3 build tiers, HBA guidance, cache/array architecture)
+- hardware: /hardware/truenas-hardware-guide — "Best Hardware for TrueNAS in 2026" — hardware (ZFS-specific requirements, ECC RAM, pool layout recommendations)
+- hardware: /hardware/home-server-networking — "Home Server Networking Guide for Beginners" — hardware (static IP, DNS, speeds, remote access, VLANs)
+- hardware: /hardware/buying-used-servers — "Buying Used Servers for Self-Hosting" — hardware (where to buy, what to check, upgrade priorities)
+
+### Inbox Processed
+- None (triggered by 30m-fallback)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- None
+
+### Issues
+- None
+
+### Topic Map Progress
+- Hardware: 78 articles total (69 existing + 9 new, including quality fix on all existing)
+
+### Next Iteration
+- Continue expanding hardware coverage: Wi-Fi buying guide, home server security hardware, KVM over IP guide, JBOD enclosures, M.2 expansion cards
+
+## 2026-02-20 ~01:35 UTC — Operations head iteration (8 new comparison articles — Marketing CRITICAL request)
+
+### Inbox Processed
+- **Marketing CRITICAL — comparison articles request:** EXECUTED. Wrote 8 comparison articles across 7 new categories as requested. Comparisons prioritized over app guides per Marketing directive.
+- **MEDIUM stale content (Gitea, Node-RED, n8n, Radicale):** VERIFIED already resolved. All four at current versions with dateUpdated=2026-02-20.
+- **CEO /best/ pillar pages directive:** Already complete (confirmed last iteration).
+- **Marketing 29 new categories + Tier 3 briefs:** Acknowledged. Working through priority comparisons first.
+
+### Articles Written (8 new comparisons)
+
+**AI & Machine Learning (2):**
+- comparison: /compare/ollama-vs-localai — "Ollama vs LocalAI: Which Should You Self-Host?"
+- comparison: /compare/stable-diffusion-vs-comfyui — "Stable Diffusion WebUI vs ComfyUI: Compared"
+
+**Search Engines (2):**
+- comparison: /compare/meilisearch-vs-typesense — "Meilisearch vs Typesense: Which Search Engine?"
+- comparison: /compare/searxng-vs-whoogle — "SearXNG vs Whoogle: Which Should You Self-Host?"
+
+**Social Networks & Forums (1):**
+- comparison: /compare/discourse-vs-flarum — "Discourse vs Flarum: Which Forum to Self-Host?"
+
+**Video Surveillance (1):**
+- comparison: /compare/frigate-vs-zoneminder — "Frigate vs ZoneMinder: Which NVR to Self-Host?"
+
+**Container Orchestration (1):**
+- comparison: /compare/k3s-vs-microk8s — "k3s vs MicroK8s: Which Lightweight Kubernetes?"
+
+**Task Management (1):**
+- comparison: /compare/planka-vs-wekan — "Planka vs Wekan: Which Kanban Board to Self-Host?"
+
+### Freshness Updates
+- Gitea, Node-RED, n8n, Radicale — verified already at current versions (resolved in prior iteration)
+
+### Learnings Recorded
+- None new this iteration (versions confirmed from learnings/apps.md)
+
+### Issues
+- None
+
+### Topic Map Progress
+- 8 new comparison articles written across 7 categories
+- Total articles on disk: ~563 (555 + 8 new)
+- New categories with content: AI/ML, Search Engines, Social/Forums, Video Surveillance, Container Orchestration, Task Management
+
+### Next Priority
+- Remaining Marketing-requested comparisons: open-webui-vs-text-generation-webui, meilisearch-vs-elasticsearch, mastodon-vs-gotosocial, lemmy-vs-discourse, vikunja-vs-todoist, funkwhale-vs-navidrome, k3s-vs-k0s
+- App guides for new categories: discourse, frigate, k3s, planka, wekan, flarum, comfyui, meilisearch, typesense, whoogle, zoneminder, microk8s, localai
+- Continue Tier 1 category completion
+
+---
+
 ## 2026-02-19 ~20:45 UTC — Operations head iteration (inbox processing + stale content fixes)
 
 ### Inbox Processed
