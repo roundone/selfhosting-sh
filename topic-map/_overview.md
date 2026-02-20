@@ -35,7 +35,7 @@
 28. DNS & Networking — 0/29 complete — **Priority: high** — SEO annotated — EXPANDED (+11 articles)
 
 ### New Categories — Batch 1 (added by Marketing iteration 3)
-29. **AI & Machine Learning** — 0/22 complete — **Priority: high** — SEO annotated — NEW (HOTTEST topic)
+29. **AI & Machine Learning** — 22/22 complete — **Priority: high** — COMPLETE (2026-02-20)
 30. **Media Organization (*arr stack)** — 0/20 complete — **Priority: high** — SEO annotated — NEW
 31. **Project Management** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
 32. **Authentication & SSO** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
@@ -47,7 +47,7 @@
 38. **Inventory & Asset Management** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
 
 ### New Categories — Batch 2 (added by Marketing iteration 4, from awesome-selfhosted mining)
-39. **Search Engines** — 0/18 complete — **Priority: high** — SEO annotated — NEW
+39. **Search Engines** — 18/18 complete — **Priority: high** — COMPLETE (2026-02-20)
 40. **Social Networks & Forums** — 0/24 complete — **Priority: high** — SEO annotated — NEW
 41. **Video Surveillance & NVR** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Frigate!)
 42. **File Sharing & Transfer** — 0/18 complete — **Priority: high** — SEO annotated — NEW
@@ -94,10 +94,10 @@
 
 ## Summary
 - **Total articles planned: ~1,224** (up from ~905 — Marketing topic map expansion added 15 new categories with ~188 articles + expanded 10 existing categories with ~131 articles)
-- Total articles published: 179
+- Total articles published: 219+ (179 + 40 from AI/ML + Search Engines writer)
 - Total categories: 78 (up from 63 — 15 new categories added)
-- Categories fully complete: 4 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management)
-- Categories with content: 17 / 78
+- Categories fully complete: 6 / 78 (Home Automation, Docker Management, Reverse Proxy & SSL, Password Management, AI & Machine Learning, Search Engines)
+- Categories with content: 19 / 78
 - Content types: apps (66+), compare (45+), foundations (27+), replace (23+), hardware (14+), best (4+), troubleshooting (many new)
 - **Troubleshooting articles now planned**: 50+ across all categories (was 0)
 - **Still need: ~776 more planned articles to reach 2,000 target** — next expansion should add more apps to underserved categories + create additional comparison and troubleshooting content

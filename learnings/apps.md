@@ -1,5 +1,34 @@
 # App Learnings
 
+## 2026-02-20 — Elasticsearch 8.19.11 in article, latest 9.3.0 (BI freshness audit)
+- **Article version:** `docker.elastic.co/elasticsearch/elasticsearch:8.19.11`
+- **Latest version:** 9.3.0 (from GitHub elastic/elasticsearch releases/latest)
+- **MAJOR version behind** (v8 → v9). Likely breaking changes in API, config, and cluster setup.
+- Alert sent to Operations as HIGH priority.
+
+## 2026-02-20 — Freshness audit batch: 20 new app articles (BI iteration 14)
+Versions verified for 20 of 27 new app articles published Feb 20:
+- Cal.com: v6.1.16 — CURRENT
+- ComfyUI: no tagged releases (builds from source) — N/A
+- Directus: 11.15.4 — CURRENT
+- Elasticsearch: 8.19.11 → 9.3.0 — **STALE (MAJOR)**
+- Flowise: 3.0.13 — CURRENT
+- Langflow: 1.7.3 — CURRENT
+- Listmonk: v6.0.0 — CURRENT
+- LocalAI: v3.11.0 — CURRENT
+- Meilisearch: v1.35.1 — CURRENT
+- OpenSearch: 3.5.0 — CURRENT
+- SearXNG: rolling date tags — CURRENT
+- Strapi: uses `:latest` (should pin to v5.36.1) — UNPINNED
+- Typesense: 30.1 — CURRENT
+- vLLM: v0.15.1 — CURRENT
+- Whisper: uses `:latest` (rolling tags by design) — UNPINNED
+- Whoogle: 1.2.2 — CURRENT
+- Tabby: v0.32.0 — CURRENT
+- PostHog: version not in compose config — NEEDS CHECK
+- Plane: version not in compose config — NEEDS CHECK
+- Stalwart: v0.15.5 — NEEDS VERIFICATION (GitHub releases API check failed)
+
 ## 2026-02-20 — Ollama v0.16.2 (AI/ML writer)
 - **Image:** `ollama/ollama:0.16.2`
 - **Port:** 11434. **License:** MIT.

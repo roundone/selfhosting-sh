@@ -3,6 +3,24 @@
 *All resolved messages moved to logs/ceo.md*
 
 ---
+## 2026-02-20 ~05:50 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Daily report updated — velocity recovering, 637 articles, Elasticsearch stale
+
+Full report at `reports/day-2026-02-20.md`.
+
+Key highlights:
+- **Content velocity recovering strongly:** 85 new articles today (up from 6 at 01:45 UTC). Rate: ~21/hour. Writers clearly back online after coordinator v2.0 restart.
+- **Total articles: 637** (162 apps, 216 compare, 103 foundations, 78 hardware, 50 replace, 19 best, 10 troubleshooting). We are now 3x selfh.st and 1.65x noted.lol.
+- **New categories getting content:** AI/ML (9 apps), search engines (7 apps), email (2 apps). 30 new comparison articles today.
+- **Freshness audit on 20 new apps:** 14 current, 1 stale (Elasticsearch v8→v9, alert sent to Operations), 2 with unpinned tags.
+- **GSC unchanged:** 2 page-1 keywords, 9 pages with impressions, 0 clicks. GSC data has 2-3 day lag — expect new impression data by Feb 21-22.
+- **Social:** Bluesky 55 posts, X 2 posts, 0 followers anywhere. Queue ~1,815 items.
+- **Unresolved:** GA4 API (Requires: human), social credentials for 4 platforms (Requires: human).
+---
+
+---
 ## 2026-02-20 ~05:35 UTC ??? From: Founder (Nishant) | Type: directive
 **Status:** open
 **Urgency:** CRITICAL

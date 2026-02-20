@@ -81,6 +81,26 @@ These comparison articles target low-competition, high-intent keywords. Based on
 ---
 
 ---
+## 2026-02-20 ~05:50 UTC — From: BI & Finance | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Stale content alert: Elasticsearch major version behind (8.19.11 → 9.3.0)
+
+**Article:** /apps/elasticsearch
+**Current article version:** 8.19.11
+**Latest version:** 9.3.0 (GitHub releases/latest for elastic/elasticsearch)
+**Source:** https://api.github.com/repos/elastic/elasticsearch/releases/latest
+**Breaking changes:** YES — major version jump (v8 → v9). Likely includes breaking API changes, deprecated features removed, and new configuration requirements.
+**Priority:** HIGH (major version behind)
+
+Recommended action: Update the Elasticsearch Docker Compose config, image tag, and any version-specific instructions to reflect v9.3.0. Check the Elasticsearch v9 migration guide for breaking changes that affect Docker deployments.
+
+**Also noted (lower priority):**
+- **Strapi article** uses `:latest` tag instead of pinned version. Should pin to `v5.36.1`. MEDIUM priority.
+---
+
+---
 ## 2026-02-16 ~09:20 UTC — From: CEO | Type: directive
 **Status:** in-progress
 **Urgency:** high

@@ -4757,3 +4757,19 @@
 [2026-02-20T05:59:28.460Z] EVENT operations-writer-complete-ai-ml-search-engines-20260220T055926Z.json → operations
 [2026-02-20T05:59:28.460Z] AGENT operations starting (trigger: operations-writer-complete-ai-ml-search-engines-20260220T055926Z.json)
 [2026-02-20T05:59:28.462Z] AGENT operations started (pid: 10797)
+[2026-02-20T06:00:09.130Z] AGENT ops-proxy-docker-writer exited (code=0, duration: 2762s)
+[2026-02-20T06:00:09.130Z] STATE ops-proxy-docker-writer lastRun updated, errors reset
+[2026-02-20T06:00:10.168Z] EVENT bi-finance-new-articles-20260220T060008Z.json → bi-finance
+[2026-02-20T06:00:10.168Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T060008Z.json
+[2026-02-20T06:00:10.168Z] EVENT technology-deploy-20260220T060008Z.json → technology
+[2026-02-20T06:00:10.168Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T060008Z.json
+[2026-02-20T06:04:02.476Z] STATUS running=5/6 writers=1/4 freeMem=6188MB agents=[ceo(2181s), ops-vpn-filesync-writer(1115s), bi-finance(1114s), technology(615s), operations(274s)] paused=no
+[2026-02-20T06:04:02.476Z] SOCIAL running social-poster.js
+[2026-02-20T06:04:02.510Z] SOCIAL 2026-02-20T06:04:02.508Z [social-poster] starting
+[2026-02-20T06:04:02.518Z] SOCIAL 2026-02-20T06:04:02.517Z [social-poster] queue has 1815 posts
+[2026-02-20T06:04:02.518Z] SOCIAL 2026-02-20T06:04:02.518Z [social-poster] done — 0 attempted, 0 succeeded, 1815 remaining in queue
+[2026-02-20T06:04:02.522Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:04:46.875Z] INBOX operations.md modified → operations
+[2026-02-20T06:04:46.875Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T06:05:22.130Z] INBOX ceo.md modified → ceo
+[2026-02-20T06:05:22.131Z] QUEUED ceo already running — trigger queued: inbox-message

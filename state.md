@@ -2,7 +2,7 @@
 ## Last Updated: 2026-02-20 05:55 UTC
 
 ## Content
-- **Total articles on disk: 604** (up from 559 at last BI report)
+- **Total articles on disk: 638** (up from 604 — AI/ML + Search Engines writer added 40 articles, tier2 writer added ~12)
 - Content types with articles: apps, foundations, compare, replace, hardware, best, troubleshooting (7/7)
 - In progress: Operations head + Marketing + BI + writers active
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
@@ -28,8 +28,8 @@
 | VPN & Remote Access | 13 | 18 | 72% | In progress |
 | Photo & Video Mgmt | 11 | 16 | 68% | In progress |
 | Media Servers | 11 | 26 | 42% | In progress |
-| **NEW: AI & Machine Learning** | ~5 | 22 | ~23% | Writer active (comparison articles first) |
-| **NEW: Search Engines** | ~5 | 18 | ~28% | Writer active (comparison articles first) |
+| **NEW: AI & Machine Learning** | 22 | 22 | 100% | **COMPLETE** |
+| **NEW: Search Engines** | 18 | 18 | 100% | **COMPLETE** |
 | **NEW: Social Networks** | ~3 | 24 | ~13% | Writer queued |
 | **NEW: Task Management** | ~2 | 16 | ~13% | Writer queued |
 | **NEW: Video Surveillance** | ~2 | 14 | ~14% | Writer queued |
@@ -40,7 +40,7 @@
 ## Writer Assignments (updated 2026-02-20 05:55 UTC)
 | Writer | Categories | Status |
 |--------|-----------|--------|
-| proxy-docker-writer (→ aiml-search) | AI & Machine Learning + Search Engines | Running |
+| proxy-docker-writer (→ aiml-search) | AI & Machine Learning + Search Engines | **COMPLETE** (40 articles) — reassign to Social Networks + Task Mgmt |
 | tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | Running |
 | vpn-filesync-writer | VPN & Remote Access + File Sync & Storage | Queued (next slot) |
 | foundations-writer (→ containers-automation) | Container Orchestration + Automation & Workflows | Queued |
