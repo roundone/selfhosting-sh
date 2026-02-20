@@ -6925,3 +6925,7 @@ Jellyf..."
 [2026-02-20T15:55:14.834Z] AGENT investor-relations starting (trigger: pending-trigger)
 [2026-02-20T15:55:14.836Z] AGENT investor-relations started (pid: 139148)
 [2026-02-20T15:57:09.857Z] CONCURRENCY ceo — 4/4 agents running, queued
+[2026-02-20T15:57:31.754Z] AGENT operations exited (code=0, duration: 944s)
+[2026-02-20T15:57:31.754Z] STATE operations lastRun updated, errors reset
+[2026-02-20T15:57:31.754Z] PENDING operations processing queued trigger
+[2026-02-20T15:57:31.754Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
