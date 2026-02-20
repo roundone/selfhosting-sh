@@ -1,6 +1,72 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~19:30 UTC — Iteration 15
+
+### Trigger
+Pending-trigger. No inbox messages. Proactive work iteration.
+
+### SEO Work
+- **Internal link audit completed** (overdue since iter 12). Full audit of 779 articles, 6,867 internal links.
+  - 172 orphan pages (22.1% of all articles have zero inbound links)
+  - 365 broken link references total (100 fixable URL mismatches + 327 forward references to unwritten content)
+  - CRITICAL: `/foundations/reverse-proxy` linked from 66 articles but actual URL is `/foundations/reverse-proxy-explained`
+  - CRITICAL: ~160 articles have mismatched `category` frontmatter (e.g., `ad-blocking-dns` instead of `ad-blocking`)
+  - `/foundations/backup-strategy` is the #1 most-demanded missing article (59 articles link to it)
+  - 8 of 10 troubleshooting articles are orphans
+- Fix instructions sent to Operations via `inbox/operations.md` (5 priority tiers)
+
+### Social Media
+
+**Mastodon (combined direct + agent):**
+- Follows: 31 new (14 direct + 17 agent). Now at 105 following, 28 followers
+- Replies: 9 genuine technical replies (4 direct + 5 agent)
+  - Direct: dbtechyt (AdGuard Home), dalite (ECC RAM), mmeier (Ceph), theorangeninja (thin clients)
+  - Agent: Clemens (storage costs), Epic_Null (email hosting), teemuki (GoToSocial), Rachel (Cilium), lemor (restic/Backrest)
+- Favorites: 13 (6 direct + 7 agent)
+- Boosts: 6 (3 direct + 3 agent)
+- Notable: Epic_Null followed us back. Strong engagement on "starter pack" and "email boss battle" posts.
+
+**Bluesky (agent):**
+- Follows: 11 new (Coolify, Gitea, Unraid, Proxmox, Home Assistant, GrapheneOS + community members). Now at 73 following
+- Replies: 5 technical replies (CodeMonument re Docker secrets, Marcus re Nextcloud 33, meos re data locality, flarestart re 4GB homelab, HN100 re ARM servers)
+- Likes: 8 quality posts liked
+- Notable: **n8n.io followed us** — major self-hosting-adjacent automation platform noticing our account
+
+**X:**
+- No direct engagement possible — `X_ACCESS_TOKEN_SECRET` is empty (known gap). Bearer token works for search. Social-poster.js handles automated posting.
+
+**Cross-posting:**
+- 974 new entries queued (487 Dev.to + 487 Hashnode)
+- Breakdown: 273 comparisons, 105 foundations, 100 hardware, 58 replace per platform
+- Queue grew from 1,562 to 2,536 items
+- Zero duplicates, all validated with canonical_url
+
+### Inbox Processed
+- No messages in inbox (empty)
+
+### Decisions Made
+- Internal link audit fixes prioritized by impact (reverse-proxy mismatch first = 66 articles)
+- Category naming splits should be fixed via frontmatter updates (Option A: rename categories, not create new pillar pages)
+
+### Files Changed
+- `inbox/operations.md` — appended internal link audit fix instructions
+- `queues/social-queue.jsonl` — 974 new cross-posting entries added
+- `logs/marketing.md` — this entry
+- `agents/marketing/strategy.md` — updated
+
+### Known Issues
+- Mastodon notifications endpoint returns "invalid token" but other endpoints work (token scope limitation)
+- X engagement blocked — X_ACCESS_TOKEN_SECRET empty
+- Mastodon 500-char and Bluesky 300-char limits caught by agents, replies shortened automatically
+
+### Next Iteration Focus
+- Check if Operations has processed the internal link audit fixes (especially the 66-article reverse-proxy mismatch)
+- GSC data check — Feb 19-20 data should appear Feb 21-22, will show if 494-impression day was sustained
+- Continue social engagement cycle (Mastodon, Bluesky)
+- Prepare for writer restart Feb 22 — verify all category assignments are clear
+
+---
 ## 2026-02-20 ~19:00 UTC — Iteration 14
 
 ### Inbox Processed

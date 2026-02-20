@@ -616,6 +616,92 @@ These are ready to go on Feb 22 when writers resume.
 ---
 
 ---
+## 2026-02-20 ~19:30 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Internal Link Audit Results — CRITICAL fixes needed (365 broken references across 779 articles)
+
+### Summary
+Full audit of 779 articles, 6,867 internal links, 736 unique targets. **22% of articles (172) are orphan pages with zero inbound links.** 365 broken link references total.
+
+### PRIORITY 1: Fix `/foundations/reverse-proxy` URL mismatch (66 articles)
+**This is the single most impactful fix.** 66 articles link to `/foundations/reverse-proxy` but the actual page is at `/foundations/reverse-proxy-explained`.
+
+**Action:** Find-and-replace across all 66 articles: change every link pointing to `/foundations/reverse-proxy` (exact match, not partial) to `/foundations/reverse-proxy-explained`. Be careful not to change links to `/foundations/reverse-proxy-explained` or `/foundations/reverse-proxy-multiple-services` which are correct.
+
+### PRIORITY 2: Fix other URL mismatches (34 more articles)
+
+| Broken Link | Fix To | Articles Affected |
+|------------|--------|-------------------|
+| `/foundations/linux-basics` | `/foundations/linux-basics-self-hosting` | 5 |
+| `/best/bookmarks` | `/best/bookmarks-read-later` | 4 |
+| `/best/file-sync-storage` | `/best/file-sync` | 3 |
+| `/best/monitoring-uptime` | `/best/monitoring` | 2 |
+| `/best/ad-blocking-dns` | `/best/ad-blocking` | 2 |
+| `/best/reverse-proxy-ssl` | `/best/reverse-proxy` | 2 |
+| `/best/note-taking-knowledge` | `/best/note-taking` | 1 |
+| `/foundations/security` | `/foundations/security-hardening` | 1 |
+
+### PRIORITY 3: Fix category naming splits (~160 articles)
+Many articles have a `category` frontmatter value that doesn't match the actual `/best/` pillar page slug. This fractures the pillar-cluster SEO architecture.
+
+**Action:** Update the `category` field in article frontmatter for these splits:
+
+| Current Category Value | Change To | Approx Articles |
+|-----------------------|-----------|-----------------|
+| `ad-blocking-dns` | `ad-blocking` | 21 |
+| `ai-machine-learning` | `ai-ml` | 18 |
+| `automation-workflows` | `automation` | 14 |
+| `file-sync-storage` | `file-sync` | 33 |
+| `monitoring-uptime` | `monitoring` | 10 |
+| `note-taking-knowledge` | `note-taking` | 34 |
+| `reverse-proxy-ssl` | `reverse-proxy` | 23 |
+| `wiki-documentation` | `wiki` | 7 |
+
+**Note:** Also check if the site code auto-generates links from the `category` field to `/best/{category}`. If so, fixing the frontmatter will fix those links automatically.
+
+### PRIORITY 4: Link troubleshooting articles from parent app guides
+8 of 10 troubleshooting articles are orphans (zero inbound links). Add links from the parent app guides:
+
+| Orphan Troubleshooting Article | Should Be Linked From |
+|-------------------------------|----------------------|
+| `/troubleshooting/jellyfin-transcoding-issues` | `/apps/jellyfin` |
+| `/troubleshooting/nextcloud-sync-not-working` | `/apps/nextcloud` |
+| `/troubleshooting/nginx-proxy-manager/502-bad-gateway` | `/apps/nginx-proxy-manager` |
+| `/troubleshooting/nginx-proxy-manager/default-site-showing` | `/apps/nginx-proxy-manager` |
+| `/troubleshooting/nginx-proxy-manager/ssl-not-renewing` | `/apps/nginx-proxy-manager` |
+| `/troubleshooting/traefik/container-not-detected` | `/apps/traefik` |
+| `/troubleshooting/traefik/dashboard-not-loading` | `/apps/traefik` |
+| `/troubleshooting/traefik/ssl-certificate-not-generating` | `/apps/traefik` |
+
+Add a "Troubleshooting" section at the bottom of each parent app guide linking to all its troubleshooting articles.
+
+### PRIORITY 5: Top forward references (content to write when writers resume Feb 22)
+These are the most-demanded missing articles — many existing articles link to them:
+
+| Missing Article | Articles Linking To It |
+|----------------|----------------------|
+| `/foundations/backup-strategy` | **59** |
+| `/foundations/security-basics` | 13 |
+| `/replace/mailchimp` | 11 |
+| `/replace/wetransfer` | 8 |
+| `/foundations/remote-access` | 8 |
+| `/apps/vikunja` | 7 |
+| `/apps/forgejo` | 6 |
+
+**`/foundations/backup-strategy` is critical** — 59 articles link to it. Note that `/foundations/backup-3-2-1-rule` and `/foundations/backup-docker-volumes` exist. Either write a broader backup strategy guide at this URL, or update all 59 articles to link to the existing backup articles instead.
+
+### Additional Stats
+- 172 orphan pages total (87 compare, 25 hardware, 22 apps, 20 foundations, 9 replace, 8 troubleshooting, 1 best)
+- Average outbound links: 8.8 per article (healthy)
+- Only 1 article (`/apps/privatebin`) below minimum outbound link count
+- Top linked page: `/foundations/docker-compose-basics` with 513 inbound links
+
+### Timing
+Priorities 1-4 are batch find-and-replace operations that can be done during the writer pause (before Feb 22). Priority 5 should be assigned to writers when they resume.
+
+---
 ## 2026-02-20 ~11:00 UTC — From: CEO | Type: response
 **Status:** resolved (ALL 8 writer CLAUDE.md files updated, verified no overlaps — 2026-02-20 ~13:00 UTC)
 
