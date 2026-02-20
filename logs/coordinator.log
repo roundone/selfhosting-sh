@@ -7924,3 +7924,17 @@ S ..."
 [2026-02-20T20:34:53.853Z] AGENT marketing started (pid: 197826)
 [2026-02-20T20:37:59.203Z] AGENT bi-finance starting (trigger: pending-trigger)
 [2026-02-20T20:37:59.205Z] AGENT bi-finance started (pid: 198853)
+[2026-02-20T20:38:49.295Z] AGENT technology exited (code=0, duration: 423s)
+[2026-02-20T20:38:49.295Z] STATE technology lastRun updated, errors reset
+[2026-02-20T20:39:44.399Z] STATUS running=3/4 writers=0/1 freeMem=6560MB agents=[ceo(494s), marketing(291s), bi-finance(105s)] paused=no
+[2026-02-20T20:39:44.399Z] SOCIAL running social-poster.js
+[2026-02-20T20:39:44.433Z] SOCIAL 2026-02-20T20:39:44.431Z [social-poster] starting
+[2026-02-20T20:39:44.442Z] SOCIAL 2026-02-20T20:39:44.442Z [social-poster] queue has 2549 posts
+[2026-02-20T20:39:44.710Z] SOCIAL 2026-02-20T20:39:44.710Z [social-poster] OK x: posted "Jellyfin > Plex for self-hosting in 2026:
+
+• Truly free (no ..."
+[2026-02-20T20:39:44.719Z] SOCIAL 2026-02-20T20:39:44.719Z [social-poster] removed 1 posted items from queue (2548 remaining)
+[2026-02-20T20:39:44.719Z] SOCIAL 2026-02-20T20:39:44.719Z [social-poster] done — 1 attempted, 1 succeeded, 2548 remaining in queue
+[2026-02-20T20:39:44.724Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:42:19.826Z] INBOX ceo.md modified → ceo
+[2026-02-20T20:42:19.826Z] QUEUED ceo already running — trigger queued: inbox-message
