@@ -13,7 +13,6 @@ const articleSchema = z.object({
   draft: z.boolean().default(false),
   image: z.string().optional().default(''),
   imageAlt: z.string().optional().default(''),
-  affiliateDisclosure: z.boolean().default(false),
 });
 
 const apps = defineCollection({
