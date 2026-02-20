@@ -7997,3 +7997,38 @@ Face recognit..."
 [2026-02-20T21:04:44.686Z] SOCIAL 2026-02-20T21:04:44.686Z [social-poster] queue has 2556 posts
 [2026-02-20T21:04:44.686Z] SOCIAL 2026-02-20T21:04:44.686Z [social-poster] done — 0 attempted, 0 succeeded, 2556 remaining in queue
 [2026-02-20T21:04:44.690Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:07:50.332Z] AGENT marketing exited (code=0, duration: 870s)
+[2026-02-20T21:07:50.332Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T21:07:50.332Z] PENDING marketing processing queued trigger
+[2026-02-20T21:07:50.332Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T21:09:44.672Z] STATUS running=0/4 writers=0/1 freeMem=7133MB agents=[none] paused=no
+[2026-02-20T21:09:44.672Z] SOCIAL running social-poster.js
+[2026-02-20T21:09:44.705Z] SOCIAL 2026-02-20T21:09:44.703Z [social-poster] starting
+[2026-02-20T21:09:44.714Z] SOCIAL 2026-02-20T21:09:44.714Z [social-poster] queue has 2572 posts
+[2026-02-20T21:09:44.714Z] SOCIAL 2026-02-20T21:09:44.714Z [social-poster] done — 0 attempted, 0 succeeded, 2572 remaining in queue
+[2026-02-20T21:09:44.719Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:12:50.472Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T21:12:50.474Z] AGENT marketing started (pid: 206315)
+[2026-02-20T21:14:44.772Z] STATUS running=1/4 writers=0/1 freeMem=6916MB agents=[marketing(114s)] paused=no
+[2026-02-20T21:14:44.772Z] SOCIAL running social-poster.js
+[2026-02-20T21:14:44.805Z] SOCIAL 2026-02-20T21:14:44.803Z [social-poster] starting
+[2026-02-20T21:14:44.815Z] SOCIAL 2026-02-20T21:14:44.814Z [social-poster] queue has 2572 posts
+[2026-02-20T21:14:45.265Z] SOCIAL 2026-02-20T21:14:45.265Z [social-poster] OK mastodon: posted "Minimum security checklist for any internet-facing self-host..."
+[2026-02-20T21:14:45.590Z] SOCIAL 2026-02-20T21:14:45.589Z [social-poster] OK bluesky: posted "Tailscale vs WireGuard: Tailscale is WireGuard underneath, b..."
+[2026-02-20T21:14:45.599Z] SOCIAL 2026-02-20T21:14:45.599Z [social-poster] removed 2 posted items from queue (2570 remaining)
+[2026-02-20T21:14:45.599Z] SOCIAL 2026-02-20T21:14:45.599Z [social-poster] done — 2 attempted, 2 succeeded, 2570 remaining in queue
+[2026-02-20T21:14:45.604Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:19:44.814Z] STATUS running=1/4 writers=0/1 freeMem=6908MB agents=[marketing(414s)] paused=no
+[2026-02-20T21:19:44.815Z] SOCIAL running social-poster.js
+[2026-02-20T21:19:44.846Z] SOCIAL 2026-02-20T21:19:44.844Z [social-poster] starting
+[2026-02-20T21:19:44.856Z] SOCIAL 2026-02-20T21:19:44.856Z [social-poster] queue has 2570 posts
+[2026-02-20T21:19:45.071Z] SOCIAL 2026-02-20T21:19:45.071Z [social-poster] OK x: posted "The self-hosting starter pack:
+
+1. Pi-hole (ad blocking)
+2. ..."
+[2026-02-20T21:19:45.081Z] SOCIAL 2026-02-20T21:19:45.081Z [social-poster] removed 1 posted items from queue (2569 remaining)
+[2026-02-20T21:19:45.082Z] SOCIAL 2026-02-20T21:19:45.082Z [social-poster] done — 1 attempted, 1 succeeded, 2569 remaining in queue
+[2026-02-20T21:19:45.087Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:23:21.658Z] INBOX ceo.md modified → ceo
+[2026-02-20T21:23:21.658Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T21:23:21.659Z] AGENT ceo started (pid: 208655)
