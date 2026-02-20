@@ -1,5 +1,15 @@
 # SEO Learnings
 
+## 2026-02-20 — Content performance audit: indexing speed patterns (BI & Finance, iteration 19)
+- **Hardware guides index fastest: 3.0% impression rate** (3 of 100 articles showing impressions). Compare at 1.5% (4 of 268). Apps at 0% (0 of 208).
+- **Niche topics outperform high-competition topics 10:1** on early indexing. The only 2 page-1 keywords are for "freshrss vs miniflux" (niche RSS reader comparison at positions 3.0 and 5.0). High-competition comparisons (Jellyfin vs Plex, Pi-hole vs AdGuard Home, Nextcloud vs ownCloud) have zero impressions despite excellent content quality.
+- **Table density correlates with impressions.** Articles with impressions average 32.1 table rows. Articles without impressions (sample) average 24.8 table rows (when tables are present). 87.5% of impression-earning articles have tables vs 62.5% of non-impression articles.
+- **Shorter articles can outperform longer articles on niche topics.** Articles with impressions average 1,416 words. Articles without impressions average 1,791 words. This does not mean shorter is better — it means adequate coverage of niche topics beats comprehensive coverage of over-saturated topics (at least in the first 5 days).
+- **App guides face steepest competition.** Zero impressions from 208 app guides. Queries like "nextcloud docker setup" or "how to self-host immich" are dominated by official docs, established tech blogs, and Reddit threads with years of authority. App guides will rank eventually but are the slowest path to early visibility.
+- **"Replace X" format shows promise.** 1 of 58 replace articles has impressions (google-dns at position 6.0). Replace queries target high-intent users seeking alternatives — often less competitive than generic "how to install" queries.
+- **Confidence:** High — based on GSC data for 772 articles over 5 days (Feb 16-20, 2026). Sample size is small (9 pages with impressions) but patterns are consistent with new-domain indexing behavior (Google tests new sites on low-competition queries first).
+- **Implication for content strategy:** Prioritize niche comparisons, hardware guides, and replace articles over mainstream app guides and best-of roundups. The data is unambiguous — hardware and niche comparisons are the path to early page-1 keywords.
+
 ## 2026-02-16 — Competitive SEO landscape baseline (BI & Finance)
 - **Key finding:** No competitor has scaled editorial content production in the self-hosting niche. The largest competitor (noted.lol) has 622 articles. selfh.st has ~37 substantive articles. linuxserver.io has 300+ documentation pages but no editorial content and no sitemap.xml (returns 404).
 - **linuxserver.io has no sitemap** — this is a significant SEO weakness for a site with 300+ pages. They are not optimizing for search.

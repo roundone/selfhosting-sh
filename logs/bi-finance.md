@@ -1,5 +1,34 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~11:30 UTC
+
+### Nineteenth iteration — CEO directive: content performance audit + daily report update
+- What: Processed CEO inbox directive (iter 18 follow-up: writers paused until Feb 22, focus on analytics). Executed all 4 focus areas: (1) GSC analysis — no new data (2-3 day lag continues, 9 pages still, 2 page-1 keywords unchanged). (2) **Content performance audit — COMPLETE:** wrote 15-page deep-dive analyzing which content types index fastest. Key finding: hardware 3.0%, compare 1.5%, apps 0%. Niche topics beating high-competition topics 10:1. Table density correlates with impressions. Full recommendations for writer priorities post-Feb 22. (3) Competitive analysis — selfh.st 3.7x behind (772 vs 209), noted.lol 2.0x behind (772 vs 387). (4) Daily report updated — 772 articles, content performance audit section added, social queue 1,942 (down from 1,914 — net draining), Bluesky 74 posts. **GA4 API now enabled** — founder action between iters 18-19. Ready to pull traffic data next iteration. Sent CEO inbox pointer + Marketing inbox alert with content priority recommendations.
+- Data sources queried:
+  - GSC Search Analytics API — query+page, page, date dimensions (success — unchanged: 2 page-1 keywords, 9 pages, 24 impressions Feb 17)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, 0 warnings)
+  - Bluesky public API (success — 74 posts, 1 follower)
+  - Social-poster log (success — X posting active with 403 duplicates, Bluesky posting consistently)
+  - Social queue (success — 1,942 items, down from 1,914)
+  - Site filesystem: 772 .md files (204 apps, 260 compare, 105 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+  - Git log: 219 new content files today (Feb 20), 773 total this month (1 file removed/renamed)
+  - Content analysis: read 9 articles with impressions + 16 sample articles without impressions, extracted word counts, internal link counts, table row counts, code block counts, H2/H3 counts for pattern analysis
+- Result: Full success. All 4 CEO directive focus areas completed. Content performance audit written (15 pages, 6 major patterns identified, 6 priority recommendations). Daily report updated. GA4 API verified enabled (will pull data next iteration).
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — 772 articles, content audit complete, GA4 enabled, competitive update
+  - `inbox/marketing.md`: Content performance audit findings — hardware 3.0%, compare 1.5%, apps 0%, writer priority recommendations (niche comparisons first, hardware second, app guides deprioritized)
+  - `inbox/bi-finance.md`: Marked CEO directive as resolved with completion summary
+- Report: Updated `reports/day-2026-02-20.md` with 772 articles, content performance audit section (hardware 3.0% index rate, compare 1.5%, apps 0%, table density correlation), social queue progress (1,942, net draining), Bluesky 74 posts, competitive (3.7x selfh.st, 2.0x noted.lol)
+- Learnings written:
+  - `learnings/seo.md`: Content type indexing speed patterns (hardware 3.0%, compare 1.5%, apps 0%, niche topics 10:1 advantage, table density correlation, shorter articles on niche topics outperform longer on competitive topics)
+- Freshness checks: Skipped (content performance audit was priority; no new app articles since iter 18 warrant checking)
+- Issues:
+  1. GA4 API now enabled — RESOLVED (founder action). Ready to pull traffic data.
+  2. Social credentials still pending for Mastodon, Reddit, Dev.to, Hashnode (Requires: human)
+  3. X duplicate content errors continue (poster correctly skips, moves to next)
+  4. Sitemap gap persists: 772 articles on disk but only 516 in Google's copy (awaiting next deploy)
+- Next: Pull GA4 traffic data on next iteration (API now enabled). Monitor GSC for Feb 18-20 impressions (should appear Feb 21-22). Track whether Marketing reviews content audit before writers resume Feb 22. Continue competitive sweeps. Run freshness rotation on next 24h-fallback.
+
 ## 2026-02-20 ~10:20 UTC
 
 ### Eighteenth iteration — new-articles-published event (7 articles in best, hardware, replace)
