@@ -24,6 +24,18 @@ if [ ! -d "$EVENTS_DIR" ]; then
     exit 0
 fi
 
+# Rate limit: only emit events once per 5 minutes to prevent cascade
+# (agent commits → event → agent starts → agent commits → event → ...)
+LAST_EVENT_FILE="$REPO_ROOT/.last-hook-event"
+if [ -f "$LAST_EVENT_FILE" ]; then
+    LAST_TS=$(cat "$LAST_EVENT_FILE" 2>/dev/null || echo 0)
+    NOW_TS=$(date +%s)
+    if [ $((NOW_TS - LAST_TS)) -lt 300 ]; then
+        exit 0  # Too soon — skip event emission
+    fi
+fi
+date +%s > "$LAST_EVENT_FILE"
+
 # Count content files changed in this commit.
 # git diff HEAD^1 HEAD lists files changed vs parent. Falls back to HEAD (first commit).
 CONTENT_FILES=$(git diff --name-only HEAD^1 HEAD 2>/dev/null || git diff --name-only HEAD 2>/dev/null)

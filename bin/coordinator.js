@@ -74,6 +74,68 @@ const AGENT_MAX_RUNTIME = 3600;                           // 1 hour per iteratio
 const BACKOFF_BASE_MS = 30 * 1000;
 const BACKOFF_MAX_MS = 30 * 60 * 1000;
 
+// ─── Dynamic config (CEO-tunable) ────────────────────────────────────────────
+
+const CONFIG_FILE = path.join(REPO_ROOT, 'config', 'coordinator-config.json');
+const HEARTBEAT_FILE = path.join(LOGS_DIR, 'coordinator-heartbeat');
+
+const DEFAULT_CONFIG = {
+    maxTotalConcurrent: 4,
+    maxWriterConcurrent: 2,
+    writerFallbackHours: 8,
+    deptFallbackHours: 8,
+    memoryMinFreeMb: 800,
+    minIterationGapMinutes: 5,
+};
+
+let config = { ...DEFAULT_CONFIG };
+
+function loadConfig() {
+    try {
+        if (fs.existsSync(CONFIG_FILE)) {
+            const parsed = JSON.parse(fs.readFileSync(CONFIG_FILE, 'utf8'));
+            config = { ...DEFAULT_CONFIG, ...parsed };
+            log(`CONFIG loaded: maxTotal=${config.maxTotalConcurrent}, maxWriters=${config.maxWriterConcurrent}, memMin=${config.memoryMinFreeMb}MB, writerFallback=${config.writerFallbackHours}h, deptFallback=${config.deptFallbackHours}h, minGap=${config.minIterationGapMinutes}min`);
+        } else {
+            log('CONFIG file not found, using defaults');
+        }
+    } catch (e) {
+        log(`WARN config parse error, keeping previous config: ${e.message}`);
+    }
+}
+
+function watchConfig() {
+    const configDir = path.join(REPO_ROOT, 'config');
+    fs.mkdirSync(configDir, { recursive: true });
+    if (!fs.existsSync(CONFIG_FILE)) {
+        fs.writeFileSync(CONFIG_FILE, JSON.stringify(DEFAULT_CONFIG, null, 2));
+        log('CONFIG default config written');
+    }
+    try {
+        fs.watch(configDir, (event, filename) => {
+            if (filename === 'coordinator-config.json') {
+                debounce('config-reload', () => {
+                    log('CONFIG file changed, reloading');
+                    loadConfig();
+                });
+            }
+        });
+    } catch (e) {
+        log(`WARN could not watch config dir: ${e.message}`);
+    }
+}
+
+// ─── Memory monitoring ───────────────────────────────────────────────────────
+
+function getFreeMem() {
+    try {
+        const meminfo = fs.readFileSync('/proc/meminfo', 'utf8');
+        const available = meminfo.match(/MemAvailable:\s+(\d+)\s+kB/);
+        if (available) return Math.floor(parseInt(available[1]) / 1024);
+    } catch (e) { /* fail-open */ }
+    return 9999; // can't read? don't block
+}
+
 // ─── State ────────────────────────────────────────────────────────────────────
 
 // Discovered agents: { agentName → agentDirPath }
@@ -297,6 +359,17 @@ function isGloballyPaused() {
         log('RESUMED global pause expired — resuming agents');
         state.pausedUntil = null;
         saveState();
+        // Drain pending triggers with 60s stagger to avoid stampede
+        const pending = Object.entries(pendingTriggers);
+        if (pending.length > 0) {
+            log(`RESUMED draining ${pending.length} pending trigger(s) with 60s stagger`);
+            let idx = 0;
+            for (const [agentName, trigger] of pending) {
+                delete pendingTriggers[agentName];
+                setTimeout(() => tryStartAgent(agentName, trigger, 'post-pause-drain'), 5000 + idx * 60000);
+                idx++;
+            }
+        }
         return false;
     }
     return true;
@@ -343,10 +416,40 @@ function tryStartAgent(agentName, triggerEventPath, reason) {
         return;
     }
 
-    // Writer concurrency limit
-    if (agentName.startsWith('ops-') && countRunningWriters() >= MAX_CONCURRENT_WRITERS) {
+    // Global concurrency limit
+    const totalRunning = Object.keys(running).length;
+    if (totalRunning >= config.maxTotalConcurrent) {
         pendingTriggers[agentName] = triggerEventPath || null;
-        log(`WRITER_LIMIT ${agentName} — ${MAX_CONCURRENT_WRITERS} writers already running, queued`);
+        log(`CONCURRENCY ${agentName} — ${totalRunning}/${config.maxTotalConcurrent} agents running, queued`);
+        return;
+    }
+
+    // Memory gate — don't start if system is low on RAM
+    const freeMem = getFreeMem();
+    if (freeMem < config.memoryMinFreeMb) {
+        pendingTriggers[agentName] = triggerEventPath || null;
+        log(`MEMORY ${agentName} — only ${freeMem}MB free (min: ${config.memoryMinFreeMb}MB), queued — retrying in 60s`);
+        setTimeout(() => tryStartAgent(agentName, pendingTriggers[agentName] || triggerEventPath, reason), 60000);
+        return;
+    }
+
+    // Min iteration gap — prevent rapid re-runs (e.g., post-commit cascade)
+    const agentStateGap = getAgentState(agentName);
+    if (agentStateGap.lastRun) {
+        const msSinceLastRun = Date.now() - new Date(agentStateGap.lastRun).getTime();
+        const minGapMs = config.minIterationGapMinutes * 60000;
+        if (msSinceLastRun < minGapMs) {
+            const waitMs = minGapMs - msSinceLastRun;
+            log(`MINGAP ${agentName} — only ${Math.round(msSinceLastRun / 1000)}s since last run (min: ${config.minIterationGapMinutes}min), deferring ${Math.round(waitMs / 1000)}s`);
+            setTimeout(() => tryStartAgent(agentName, triggerEventPath, reason), waitMs + 100);
+            return;
+        }
+    }
+
+    // Writer concurrency limit
+    if (agentName.startsWith('ops-') && countRunningWriters() >= config.maxWriterConcurrent) {
+        pendingTriggers[agentName] = triggerEventPath || null;
+        log(`WRITER_LIMIT ${agentName} — ${config.maxWriterConcurrent} writers already running, queued`);
         return;
     }
 
@@ -653,8 +756,8 @@ function recoverFromCrash() {
             if (agentName) {
                 const filePath = path.join(EVENTS_DIR, filename);
                 log(`RECOVERY found unprocessed event: ${filename} → ${agentName}`);
-                // Small delay to let watchers initialize first
-                setTimeout(() => tryStartAgent(agentName, filePath, null), 2000 + recovered * 500);
+                // Stagger recovered agents by 60s to avoid stampede
+                setTimeout(() => tryStartAgent(agentName, filePath, null), 5000 + recovered * 60000);
                 recovered++;
             }
         }
@@ -672,7 +775,7 @@ function recoverFromCrash() {
                 const lastRun = agentState.lastRun ? new Date(agentState.lastRun) : null;
                 if (!lastRun || inboxMtime > lastRun) {
                     log(`RECOVERY ${agentName} inbox modified since last run — starting`);
-                    setTimeout(() => tryStartAgent(agentName, null, 'inbox-missed'), 3000 + recovered * 500);
+                    setTimeout(() => tryStartAgent(agentName, null, 'inbox-missed'), 5000 + recovered * 60000);
                     recovered++;
                 }
             } catch (e) { /* skip */ }
@@ -693,24 +796,32 @@ function countRunningWriters() {
     return count;
 }
 
-const MAX_CONCURRENT_WRITERS = 3; // Memory safety: 3 writers × ~300MB + core agents
-
 function checkFallbacks() {
     const now = Date.now();
+
+    // Collect all agents due for fallback, sorted by priority: CEO > dept heads > writers
+    const due = [];
     for (const [agentName] of Object.entries(agents)) {
         if (running[agentName]) continue; // already running
         const agentState = getAgentState(agentName);
         const lastRun = agentState.lastRun ? new Date(agentState.lastRun).getTime() : 0;
         const fallbackMs = agentFallbackOverrides[agentName] || FALLBACK_INTERVAL_MS;
         if (now - lastRun >= fallbackMs) {
-            // Enforce writer concurrency limit
-            if (agentName.startsWith('ops-') && countRunningWriters() >= MAX_CONCURRENT_WRITERS) {
-                continue; // defer — too many writers running
-            }
+            // Priority: ceo=0, dept heads=1, writers=2
+            const priority = agentName === 'ceo' ? 0 : agentName.startsWith('ops-') ? 2 : 1;
             const intervalLabel = fallbackMs < 3600000 ? `${Math.round(fallbackMs / 60000)}m` : `${Math.round((now - lastRun) / 3600000)}h`;
-            log(`FALLBACK ${agentName} — ${intervalLabel} since last run`);
-            tryStartAgent(agentName, null, agentFallbackOverrides[agentName] ? `${intervalLabel}-fallback` : '8h-fallback');
+            due.push({ agentName, priority, intervalLabel, fallbackMs });
         }
+    }
+
+    // Sort by priority (CEO first, writers last)
+    due.sort((a, b) => a.priority - b.priority);
+
+    // Only start 1 agent per cycle to prevent stampede
+    if (due.length > 0) {
+        const { agentName, intervalLabel, fallbackMs } = due[0];
+        log(`FALLBACK ${agentName} — ${intervalLabel} since last run (${due.length} due, starting 1)`);
+        tryStartAgent(agentName, null, agentFallbackOverrides[agentName] ? `${intervalLabel}-fallback` : '8h-fallback');
     }
 }
 
@@ -768,11 +879,30 @@ function ensureDirectories() {
     }
 }
 
+function logStatus() {
+    const runningNames = Object.keys(running);
+    const writerCount = runningNames.filter(n => n.startsWith('ops-')).length;
+    const freeMem = getFreeMem();
+    const runningDetails = runningNames.map(n => {
+        const durSec = Math.round((Date.now() - running[n].startTime) / 1000);
+        return `${n}(${durSec}s)`;
+    }).join(', ') || 'none';
+    log(`STATUS running=${runningNames.length}/${config.maxTotalConcurrent} writers=${writerCount}/${config.maxWriterConcurrent} freeMem=${freeMem}MB agents=[${runningDetails}] paused=${state.pausedUntil || 'no'}`);
+}
+
+function writeHeartbeat() {
+    try {
+        fs.writeFileSync(HEARTBEAT_FILE, new Date().toISOString());
+    } catch (e) { /* non-critical */ }
+}
+
 function start() {
     log('='.repeat(60));
-    log('STARTUP coordinator v1.2 (writer-discovery, per-agent-fallback, writer-concurrency-limit)');
+    log('STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)');
 
     ensureDirectories();
+    loadConfig();
+    watchConfig();
     loadState();
     agents = discoverAgents();
     installGitHook();
@@ -784,8 +914,10 @@ function start() {
     // Give watchers a moment to initialize, then run crash recovery
     setTimeout(recoverFromCrash, 1000);
 
-    // Periodic checks: 8h fallbacks + releases + cleanup + pause expiry
+    // Periodic checks: status + fallbacks + releases + cleanup + pause expiry
     setInterval(() => {
+        logStatus();
+        writeHeartbeat();
         isGloballyPaused(); // side-effect: clears expired pause and logs
         checkFallbacks();
         runCheckReleases();

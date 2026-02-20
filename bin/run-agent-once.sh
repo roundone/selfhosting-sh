@@ -133,16 +133,53 @@ fi
 
 # --- Git commit + push any changes this iteration produced ---
 cd "$REPO_ROOT" || exit $EXIT_CODE
+
+# Determine agent name for scoped git operations
+AGENT_NAME=$(basename "$AGENT_DIR")
+
 if [ -n "$(git status --porcelain)" ]; then
     (
         flock -w 120 200 || {
             echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — WARN: git push lock timeout ($AGENT_DIR)" >> "$LOG"
         }
-        AGENT_NAME=$(basename "$AGENT_DIR")
-        git add -A 2>> "$LOG"
-        git commit -m "Auto-commit: $AGENT_NAME $(date -u +%Y-%m-%dT%H:%M:%SZ)" 2>> "$LOG"
-        git pull --rebase --autostash 2>> "$LOG" || true
-        git push 2>> "$LOG" || true
+
+        # Layer 1: Agent-scoped git add
+        # Only the technology agent may modify bin/ (infrastructure scripts)
+        if [ "$AGENT_NAME" = "technology" ]; then
+            git add -A 2>> "$LOG"
+        else
+            git add -A -- ':!bin/' 2>> "$LOG"
+        fi
+
+        # Layer 2: Zero-byte file guard — catch truncated files before committing
+        for file in $(git diff --cached --name-only 2>/dev/null); do
+            if [ -f "$file" ] && [ ! -s "$file" ]; then
+                OLD_SIZE=$(git cat-file -s HEAD:"$file" 2>/dev/null || echo 0)
+                if [ "$OLD_SIZE" -gt 0 ]; then
+                    echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — GIT_SAFETY: $file truncated to 0 bytes (was ${OLD_SIZE}B), restoring from HEAD ($AGENT_DIR)" >> "$LOG"
+                    git reset HEAD -- "$file" 2>> "$LOG"
+                    git checkout HEAD -- "$file" 2>> "$LOG"
+                fi
+            fi
+        done
+
+        # Layer 3: Protected files check — belt + suspenders with Layer 1
+        if [ "$AGENT_NAME" != "technology" ]; then
+            PROTECTED=$(git diff --cached --name-only 2>/dev/null | grep '^bin/' || true)
+            if [ -n "$PROTECTED" ]; then
+                echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — GIT_SAFETY: $AGENT_NAME tried to commit bin/ files: $PROTECTED — unstaging ($AGENT_DIR)" >> "$LOG"
+                echo "$PROTECTED" | xargs git reset HEAD -- 2>> "$LOG"
+            fi
+        fi
+
+        # Only commit if there are still staged changes after safety checks
+        if git diff --cached --quiet 2>/dev/null; then
+            echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) — GIT_SAFETY: All staged changes removed by safety checks, skipping commit ($AGENT_DIR)" >> "$LOG"
+        else
+            git commit -m "Auto-commit: $AGENT_NAME $(date -u +%Y-%m-%dT%H:%M:%SZ)" 2>> "$LOG"
+            git pull --rebase --autostash 2>> "$LOG" || true
+            git push 2>> "$LOG" || true
+        fi
     ) 200>"$LOCKFILE"
 fi
 

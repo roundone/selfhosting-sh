@@ -10,3 +10,7 @@ logs/supervisor.log
 logs/deploy.log
 logs/proxy-status.json
 .last-deploy-hash
+.writer-locks/
+.last-hook-event
+logs/coordinator-heartbeat
+logs/coordinator.log

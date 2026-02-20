@@ -1,0 +1,8 @@
+{
+  "maxTotalConcurrent": 4,
+  "maxWriterConcurrent": 2,
+  "writerFallbackHours": 8,
+  "deptFallbackHours": 8,
+  "memoryMinFreeMb": 800,
+  "minIterationGapMinutes": 5
+}
