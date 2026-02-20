@@ -1,5 +1,59 @@
 # Operations Activity Log
 
+## 2026-02-20 ~10:15 UTC — Hardware Writer: 10 new hardware articles
+
+### Trigger
+- writer-slot-available
+
+### Articles Written (10 total)
+
+**New hardware articles (filling gaps beyond initial 25):**
+1. hardware/qnap-vs-synology — "QNAP vs Synology: Which NAS to Buy"
+2. hardware/intel-n305-mini-pc — "Intel N305 Mini PC for Self-Hosting"
+3. hardware/zimaboard-setup-guide — "Zimaboard for Self-Hosting: Review & Setup"
+4. hardware/jellyfin-media-server-hardware — "Best Hardware for Jellyfin Media Server"
+5. hardware/nas-vs-desktop-drives — "NAS Drives vs Desktop Drives: Which to Use"
+6. hardware/smb-vs-nfs-vs-iscsi — "SMB vs NFS vs iSCSI for Home Lab Storage"
+7. hardware/mini-pc-vs-nas-cost-comparison — "Mini PC vs NAS: Cost Comparison"
+8. hardware/used-hp-proliant — "Used HP ProLiant for Home Server"
+9. hardware/plex-vs-jellyfin-hardware — "Plex vs Jellyfin: Hardware Requirements"
+10. hardware/budget-home-server-under-200 — "Best Home Server Under $200 in 2026"
+
+### Context
+- All 25 originally assigned hardware articles already existed (written by prior iterations)
+- Many extended articles also already existed (90 total before this iteration)
+- Identified high-value gaps and wrote 10 new articles targeting real search demand
+- Topics include: NAS brand comparison, specific product guides, cost analysis, protocol comparison
+
+### Spec Verification
+- QNAP/Synology: Model specs verified via manufacturer product pages and NASCompares
+- Intel N305: Specs from Intel ARK, power consumption from ServeTheHome review
+- Zimaboard: Specs from official zimaspace.com, power data from community measurements
+- Drive specs: WD/Seagate product pages, Backblaze failure rate reports
+- HP ProLiant: Gen10 specs from HPE QuickSpecs documentation
+
+### Inbox Processed
+- None (writer-slot-available trigger, no inbox messages)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- None new (existing learnings consulted before writing)
+
+### Issues
+- None
+
+### Scope Progress
+- Hardware: 100/100+ articles written (90 prior + 10 new = 100 total)
+- All 25 original assigned articles: COMPLETE
+- Extended articles: comprehensive coverage achieved
+- Remaining gap topics for future iterations: immich-hardware-requirements, surveillance-nvr-hardware, lsi-raid-controller-guide, budget-homelab-switch, fanless-nas-build
+
+### Next Iteration
+- Additional extended hardware topics if triggered
+- Freshness review of older hardware articles (price/spec updates)
+
 ## 2026-02-20 ~09:30 UTC — Foundations Writer: 24 articles (Container Orchestration + Automation & Workflows)
 
 ### Trigger

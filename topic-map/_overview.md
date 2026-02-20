@@ -63,13 +63,13 @@
 52. **Booking & Scheduling** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Cal.com!)
 53. **Maps & GPS Tracking** — 0/12 complete — **Priority: medium** — SEO annotated — NEW
 54. **Health & Fitness** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
-55. **Wiki & Documentation** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
+55. **Wiki & Documentation** — 14/14 complete — **Priority: medium-high** — SEO annotated — COMPLETE (2026-02-20)
 56. **Archiving & Digital Preservation** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
 57. **Document Signing & PDF Tools** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Stirling-PDF!)
 
 ### New Categories — Batch 3 (added by Marketing topic map expansion)
 58. **Music & Audio** — 0/22 complete — **Priority: high** — SEO annotated — NEW (Navidrome, Spotify replacement)
-59. **Ebooks & Reading** — 0/18 complete — **Priority: medium-high** — SEO annotated — NEW (Calibre-Web, Kavita)
+59. **Ebooks & Reading** — 15/18 complete — **Priority: medium-high** — SEO annotated — NEARLY COMPLETE (2026-02-20)
 60. **Container Orchestration** — 13/16 complete — **Priority: high** — SEO annotated — NEARLY COMPLETE (2026-02-20)
 61. **Network Monitoring** — 0/15 complete — **Priority: medium-high** — SEO annotated — NEW (Zabbix, LibreNMS)
 62. **Notification Services** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW (ntfy, Gotify)

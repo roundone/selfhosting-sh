@@ -5600,3 +5600,11 @@
 [2026-02-20T10:08:10.902Z] SOCIAL 2026-02-20T10:08:10.902Z [social-poster] queue has 1916 posts
 [2026-02-20T10:08:10.903Z] SOCIAL 2026-02-20T10:08:10.902Z [social-poster] done — 0 attempted, 0 succeeded, 1916 remaining in queue
 [2026-02-20T10:08:10.906Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T10:08:37.295Z] AGENT technology exited (code=0, duration: 954s)
+[2026-02-20T10:08:37.295Z] STATE technology lastRun updated, errors reset
+[2026-02-20T10:10:26.824Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T10:10:26.825Z] AGENT ceo started (pid: 43203)
+[2026-02-20T10:12:14.061Z] EVENT operations-writer-complete-hardware-20260220T101212Z.json → operations
+[2026-02-20T10:12:14.061Z] QUEUED operations already running — trigger queued: operations-writer-complete-hardware-20260220T101212Z.json
+[2026-02-20T10:12:44.409Z] INBOX technology.md modified → technology
+[2026-02-20T10:12:44.409Z] MINGAP technology — only 247s since last run (min: 5min), deferring 53s
