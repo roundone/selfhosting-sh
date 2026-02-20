@@ -1,4 +1,4 @@
-# Analytics [3/16 complete]
+# Analytics [9/28 complete]
 **Priority:** medium
 **SEO notes:** Keyword cluster: "self-hosted analytics", "self-hosted google analytics alternative", "best self-hosted analytics", "privacy-friendly analytics self-hosted". Plausible and Umami are the hot alternatives to Google Analytics driving the most search interest in this category — both position heavily on privacy and simplicity. Matomo is the established enterprise-grade option with strong brand recognition. PostHog targets product analytics (broader scope, developer-heavy audience). GoAccess serves a niche for server-log-based analytics. The "replace Google Analytics" angle has very high commercial intent and search volume. Strategy: lead with Plausible and Umami (trending, high search interest), then Matomo (established authority), then fill in PostHog and niche tools.
 

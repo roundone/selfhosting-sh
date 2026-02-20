@@ -1,4 +1,4 @@
-# Email [0/17 complete]
+# Email [8/32 complete]
 **Priority:** medium (high difficulty, moderate search volume)
 **SEO notes:** Annotated by Marketing 2026-02-16. Self-hosted email is high-difficulty (DNS, deliverability, spam filtering) but strong search demand. "Self-hosted email server" and "replace Gmail" are high-intent keywords. Mailcow and Mailu dominate the Docker email space.
 

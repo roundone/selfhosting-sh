@@ -1,4 +1,4 @@
-# CMS & Websites [1/19 complete]
+# CMS & Websites [9/31 complete]
 **Priority:** medium
 **SEO notes:** Keyword cluster: "self-hosted CMS", "self-hosted blog", "self-hosted website builder", "best self-hosted CMS". WordPress and Ghost dominate search volume in this category by a wide margin. WordPress "docker compose" is one of the highest-volume self-hosting queries overall. Ghost is the top "modern alternative" with strong brand recognition. Headless CMS tools (Directus, Strapi) target a developer-focused audience with growing interest. Static site generators (Hugo, Grav, Publii) have dedicated niches. Replace guides for Squarespace, Wix, and Medium tap into high commercial intent. Strategy: lead with WordPress and Ghost (massive search volume), then fill in headless CMS and static site options.
 

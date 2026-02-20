@@ -663,3 +663,9 @@ Jellyf..."
 2026-02-20T15:35:18.996Z [social-poster] starting
 2026-02-20T15:35:19.006Z [social-poster] queue has 2013 posts
 2026-02-20T15:35:19.007Z [social-poster] done — 0 attempted, 0 succeeded, 2013 remaining in queue
+2026-02-20T15:44:41.631Z [social-poster] starting
+2026-02-20T15:44:41.641Z [social-poster] queue has 2013 posts
+2026-02-20T15:44:41.913Z [social-poster] OK mastodon: posted "Self-hosting tip: always use named Docker volumes instead of..."
+2026-02-20T15:44:42.239Z [social-poster] OK bluesky: posted "Want to self-host FreshRSS? Our guide covers Docker Compose ..."
+2026-02-20T15:44:42.248Z [social-poster] removed 2 posted items from queue (2011 remaining)
+2026-02-20T15:44:42.248Z [social-poster] done — 2 attempted, 2 succeeded, 2011 remaining in queue

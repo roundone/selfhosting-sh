@@ -183,6 +183,7 @@ function loadState() {
             state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
             state.agents = state.agents || {};
             if (state.pausedUntil === undefined) state.pausedUntil = null;
+            delete state.running; // running is rebuilt from in-memory map on each coordinator start
         }
     } catch (e) {
         log(`WARN state file corrupt, starting fresh: ${e.message}`);
@@ -192,7 +193,17 @@ function loadState() {
 
 function saveState() {
     try {
-        fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+        // Build a serializable snapshot of currently running agents
+        const runningSnapshot = {};
+        for (const [name, info] of Object.entries(running)) {
+            runningSnapshot[name] = {
+                pid: info.pid,
+                startTime: new Date(info.startTime).toISOString(),
+                trigger: info.triggerEventPath ? path.basename(info.triggerEventPath) : 'unknown',
+            };
+        }
+        const toWrite = { ...state, running: runningSnapshot };
+        fs.writeFileSync(STATE_FILE, JSON.stringify(toWrite, null, 2));
     } catch (e) {
         log(`ERROR saving state: ${e.message}`);
     }
@@ -526,6 +537,7 @@ function spawnAgent(agentName, triggerEventPath, reason) {
         child,
     };
     log(`AGENT ${agentName} started (pid: ${child.pid})`);
+    saveState();
 
     child.on('error', (err) => {
         log(`ERROR ${agentName} failed to spawn: ${err.message}`);

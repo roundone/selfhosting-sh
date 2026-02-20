@@ -1,4 +1,4 @@
-# Bookmarks & Read Later [0/15 complete]
+# Bookmarks & Read Later [8/15 complete]
 **Priority:** medium
 **SEO notes:** Annotated by Marketing 2026-02-16. Bookmark managers are a growing niche. Linkwarden and Hoarder are trending in the self-hosting community. "Self-hosted bookmark manager" and "Pocket alternative" have decent volume. Omnivore shut down in 2024 — note this in any coverage (users migrating = search spike).
 

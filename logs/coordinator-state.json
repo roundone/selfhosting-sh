@@ -7,18 +7,20 @@
     },
     "ceo": {
       "lastRun": "2026-02-20T15:26:02.082Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T15:40:06.517Z",
+      "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-20T14:59:21.354Z",
+      "lastRun": "2026-02-20T15:36:01.110Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "operations": {
       "lastRun": "2026-02-20T14:42:52.616Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T15:40:06.517Z",
+      "lastErrorAt": "2026-02-20T15:39:36.517Z"
     },
     "technology": {
       "lastRun": "2026-02-20T15:29:43.722Z",
@@ -75,5 +77,27 @@
   "lastReleasesCheck": "2026-02-20T15:20:18.883Z",
   "lastArchiveCleanup": "2026-02-20T15:20:18.888Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T15:35:18.965Z"
+  "lastSocialPosterRun": "2026-02-20T15:44:41.584Z",
+  "running": {
+    "ceo": {
+      "pid": 135716,
+      "startTime": "2026-02-20T15:40:06.642Z",
+      "trigger": "unknown"
+    },
+    "investor-relations": {
+      "pid": 135881,
+      "startTime": "2026-02-20T15:40:47.619Z",
+      "trigger": "unknown"
+    },
+    "operations": {
+      "pid": 136186,
+      "startTime": "2026-02-20T15:41:47.643Z",
+      "trigger": "unknown"
+    },
+    "technology": {
+      "pid": 136588,
+      "startTime": "2026-02-20T15:42:47.619Z",
+      "trigger": "unknown"
+    }
+  }
 }

@@ -1,8 +1,8 @@
 ---
 title: "HAProxy vs Nginx: Which Reverse Proxy?"
-description: "HAProxy vs Nginx compared for self-hosting reverse proxy. Load balancing, SSL termination, configuration, and performance differences explained."
+description: "HAProxy vs Nginx compared — performance benchmarks, reverse proxy features, load balancing algorithms, health checks, WebSocket support, and TLS overhead."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "reverse-proxy"
 apps:
   - haproxy
@@ -152,6 +152,116 @@ HAProxy's frontend/backend model is explicit about traffic flow, which makes com
 
 **Winner: Nginx.** Less boilerplate, ships a working default, and the Docker image works out of the box. HAProxy requires understanding its config model before you can proxy a single request.
 
+## Performance Benchmarks
+
+Both HAProxy and Nginx are written in C with event-driven architectures. In production benchmarks, the raw performance gap is narrower than most comparisons suggest — but the differences matter at scale.
+
+### Throughput and Latency
+
+| Metric | Nginx (v1.28) | HAProxy (v3.3) | Winner |
+|--------|--------------|----------------|--------|
+| HTTP requests/sec (single core, keep-alive) | ~90,000–120,000 | ~100,000–150,000 | HAProxy |
+| HTTP requests/sec (8 cores, keep-alive) | ~600,000–800,000 | ~700,000–1,000,000 | HAProxy |
+| Median latency (1,000 concurrent) | ~0.5–1.0 ms | ~0.3–0.7 ms | HAProxy |
+| P99 latency (1,000 concurrent) | ~2–5 ms | ~1–3 ms | HAProxy |
+| Static file serving throughput | ~1.5 GB/s | N/A (cannot serve files) | Nginx |
+| HTTP/2 multiplexed streams | ~500 concurrent | ~500 concurrent | Tie |
+
+*Benchmarks vary significantly by hardware, kernel tuning, and workload. These ranges reflect commonly reported results from tools like wrk, h2load, and hey on modern x86 hardware.*
+
+HAProxy consistently edges out Nginx for pure proxying throughput because it was purpose-built for that single task. The difference is most visible under sustained high concurrency (10,000+ connections) where HAProxy's per-connection memory footprint is smaller.
+
+### Connection Handling
+
+| Capability | Nginx | HAProxy |
+|-----------|-------|---------|
+| Max concurrent connections | ~100,000+ per worker (tunable via `worker_connections`) | ~100,000+ per process (tunable via `maxconn`) |
+| Connection queueing | No — excess connections get 502 | Yes — `maxqueue` holds connections until a backend slot opens |
+| Connection draining | Graceful reload (`nginx -s reload`) — new connections go to new workers, old ones finish | Graceful drain via `set server [backend]/[server] state drain` — no new connections, existing ones complete |
+| Connection reuse (keep-alive to backend) | `keepalive` directive in upstream block | `http-reuse` (safe, aggressive, or always modes) |
+| Idle connection timeout | Configurable per location | Configurable per frontend/backend, plus `timeout tunnel` for WebSockets |
+| Backpressure handling | Worker processes queue internally | Explicit `fullconn` and `maxqueue` per backend with configurable overflow behavior |
+
+HAProxy's explicit connection queueing is a genuine advantage. When a backend is overloaded, HAProxy queues incoming connections and serves them in order as backend capacity frees up. Nginx returns 502 errors when upstreams are unavailable — there is no built-in queue.
+
+### TLS Handshake Performance
+
+| TLS Metric | Nginx | HAProxy |
+|-----------|-------|---------|
+| RSA 2048-bit handshakes/sec (single core) | ~3,000–4,000 | ~3,500–5,000 |
+| ECDSA P-256 handshakes/sec (single core) | ~15,000–20,000 | ~18,000–25,000 |
+| TLS 1.3 0-RTT support | Yes | Yes (since v2.2) |
+| TLS session resumption | Session cache + tickets | Session cache + tickets |
+| OCSP stapling | Yes | Yes (since v2.4) |
+| Certificate hot-reload | Requires full reload | Runtime SSL cert update via Runtime API |
+
+Both use OpenSSL (or optionally BoringSSL/LibreSSL) under the hood, so raw crypto performance is similar. HAProxy's slight edge comes from fewer memory copies in its TLS path and its ability to update certificates at runtime without any reload — useful in environments with frequent cert rotation.
+
+For self-hosting with Let's Encrypt certificates, the TLS performance difference is imperceptible. It matters in CDN-scale deployments handling millions of new TLS sessions per hour.
+
+## As a Reverse Proxy
+
+Since "haproxy vs nginx reverse proxy" is one of the most common comparison queries, here is a detailed breakdown of how each handles core reverse proxy responsibilities.
+
+### Header Handling
+
+| Feature | Nginx | HAProxy |
+|---------|-------|---------|
+| `X-Forwarded-For` injection | Manual: `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;` | Automatic: `option forwardfor` (one line) |
+| `X-Real-IP` injection | Manual: `proxy_set_header X-Real-IP $remote_addr;` | Via `http-request set-header X-Real-IP %[src]` |
+| Custom header manipulation | `proxy_set_header`, `add_header`, `more_set_headers` (module) | `http-request set-header`, `http-response set-header`, `http-request del-header` — all native |
+| Host header forwarding | `proxy_set_header Host $host;` (must add manually) | Forwards `Host` by default in HTTP mode |
+| `X-Forwarded-Proto` | Manual: `proxy_set_header X-Forwarded-Proto $scheme;` | Via `http-request set-header X-Forwarded-Proto https if { ssl_fc }` |
+
+Nginx requires you to explicitly set every proxy header — forgetting `X-Forwarded-For` or `Host` is one of the most common reverse proxy mistakes. HAProxy's `option forwardfor` handles the most critical header in a single directive, and it passes the `Host` header by default.
+
+### WebSocket Support
+
+| Feature | Nginx | HAProxy |
+|---------|-------|---------|
+| WebSocket proxying | Requires explicit config per location | Native — works automatically in HTTP mode |
+| Config required | `proxy_set_header Upgrade $http_upgrade;` + `proxy_set_header Connection "upgrade";` | `option http-server-close` (or nothing in newer versions) |
+| Timeout handling | `proxy_read_timeout` (default 60s — kills idle WebSockets) | `timeout tunnel` (set independently from HTTP timeouts) |
+| Mixed HTTP + WebSocket on same port | Supported with correct headers | Supported natively |
+
+WebSocket proxying is a common pain point with Nginx. You must add the `Upgrade` and `Connection` headers to every location block that serves WebSockets, and you must increase `proxy_read_timeout` or idle connections get closed after 60 seconds. HAProxy handles WebSocket upgrades automatically — no extra config required.
+
+### Health Checks
+
+| Capability | Nginx | HAProxy |
+|-----------|-------|---------|
+| TCP check (port open) | Yes (default) | Yes |
+| HTTP check (status code) | Limited — `max_fails` + `fail_timeout` react to real traffic errors, not active probes | Full — `option httpchk GET /health` with expected status codes |
+| HTTP check with body match | No (requires Nginx Plus) | Yes — `http-check expect string "ok"` |
+| Check interval | Based on real traffic (passive) | Configurable: `inter 5s fall 3 rise 2` |
+| Gradual server drain | No native support | `set server state drain` via Runtime API or `on-marked-down shutdown-sessions` |
+| Agent health checks | No | Yes — external agent reports server health via TCP |
+| Slow start | No (requires Nginx Plus) | Yes — `slowstart 30s` gradually increases traffic to a recovered server |
+
+This is HAProxy's strongest advantage as a reverse proxy. Nginx's health checking is passive — it only detects problems when real user requests fail. HAProxy actively probes backends on a configurable interval, can check HTTP response bodies, and gradually reintroduces recovered servers. If backend reliability matters, HAProxy is significantly better.
+
+### Load Balancing Algorithms
+
+| Algorithm | Nginx | HAProxy |
+|-----------|-------|---------|
+| Round-robin | Yes (default) | Yes (default) |
+| Least connections | Yes (`least_conn`) | Yes (`leastconn`) |
+| IP hash (sticky sessions) | Yes (`ip_hash`) | Yes (`balance source`) |
+| URI hash | Yes (`hash $request_uri`) | Yes (`balance uri`) |
+| Random | Yes (`random`) | Yes (`balance random`) |
+| First available | No | Yes (`balance first`) |
+| Custom hash | Yes (`hash $variable`) | Yes (`balance hdr(X-Custom)`) |
+| Weighted backends | Yes (`weight`) | Yes (`weight`) |
+| Consistent hashing | Yes (`hash ... consistent`) | Yes (`hash-type consistent`) |
+
+Both cover the common algorithms. HAProxy's `balance first` (fill the first server before moving to the next) is unique and useful for saving power in environments where you want to consolidate load onto fewer servers.
+
+### Reverse Proxy Verdict
+
+**For a simple self-hosting reverse proxy** (5–30 services, one backend per service, no load balancing): **Nginx wins.** More tutorials, simpler `location` blocks, and the ability to serve static error pages or landing pages from the same instance.
+
+**For a reverse proxy where backend health matters** (multiple replicas, services that crash, gradual rollouts): **HAProxy wins.** Its active health checks, connection queueing, slow-start, and runtime API make it a fundamentally better tool for managing unreliable backends.
+
 ## Performance and Resource Usage
 
 | Metric | Nginx (v1.28) | HAProxy (v3.3) |
@@ -164,7 +274,7 @@ HAProxy's frontend/backend model is explicit about traffic flow, which makes com
 | Docker image size | ~60 MB (Debian), ~10 MB (Alpine) | ~100 MB (Debian), ~10 MB (Alpine) |
 | Startup time | < 1 second | < 1 second |
 
-Both are written in C with event-driven architectures. Both handle massive connection counts with minimal resources. The differences:
+Both are written in C with event-driven architectures. Both handle massive connection counts with minimal resources. The key differences:
 
 - **HAProxy is marginally more efficient for pure proxying.** It was designed from the ground up as a proxy, and its connection handling is optimized specifically for that. At very high concurrency (tens of thousands of simultaneous connections), HAProxy uses less memory per connection.
 - **Nginx uses less memory when serving static content** alongside proxying, because it handles both in the same process rather than needing a separate web server.

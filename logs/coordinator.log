@@ -6834,3 +6834,54 @@ Jellyf..."
 [2026-02-20T15:35:19.013Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T15:35:34.163Z] INBOX ceo.md modified → ceo
 [2026-02-20T15:35:34.164Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T15:36:01.109Z] AGENT marketing exited (code=0, duration: 1900s)
+[2026-02-20T15:36:01.110Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T15:36:01.110Z] PENDING marketing processing queued trigger
+[2026-02-20T15:36:01.110Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T15:39:36.516Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T15:39:36.516Z] SHUTDOWN killing ceo (pid: 133673)
+[2026-02-20T15:39:36.516Z] SHUTDOWN killing operations (pid: 134197)
+[2026-02-20T15:39:36.516Z] AGENT ceo exited (signal=SIGTERM, duration: 514s)
+[2026-02-20T15:39:36.517Z] BACKOFF ceo error #1, next allowed in 30s
+[2026-02-20T15:39:36.517Z] PENDING ceo processing queued trigger
+[2026-02-20T15:39:36.517Z] BACKOFF ceo in backoff for 30s more
+[2026-02-20T15:39:36.517Z] AGENT operations exited (signal=SIGTERM, duration: 401s)
+[2026-02-20T15:39:36.517Z] BACKOFF operations error #1, next allowed in 30s
+[2026-02-20T15:39:41.575Z] ============================================================
+[2026-02-20T15:39:41.576Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T15:39:41.576Z] CONFIG loaded: maxTotal=4, maxWriters=1, memMin=1200MB, writerFallback=8h, deptFallback=8h, minGap=5min
+[2026-02-20T15:39:41.578Z] AGENTS discovered: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T15:39:41.578Z] WATCH inbox/ (agents: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T15:39:41.578Z] WATCH events/ (routing by filename convention)
+[2026-02-20T15:39:41.579Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T15:39:41.580Z] STARTUP complete — watching for events
+[2026-02-20T15:39:42.580Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T15:39:42.581Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T15:39:42.581Z] RECOVERY investor-relations inbox modified since last run — starting
+[2026-02-20T15:39:42.581Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-20T15:39:42.581Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-20T15:39:42.581Z] RECOVERY complete — 4 missed event(s) found
+[2026-02-20T15:39:47.583Z] BACKOFF ceo in backoff for 19s more
+[2026-02-20T15:40:06.637Z] AGENT ceo starting (trigger: inbox-missed)
+[2026-02-20T15:40:06.642Z] AGENT ceo started (pid: 135716)
+[2026-02-20T15:40:47.617Z] AGENT investor-relations starting (trigger: inbox-missed)
+[2026-02-20T15:40:47.619Z] AGENT investor-relations started (pid: 135881)
+[2026-02-20T15:41:47.641Z] AGENT operations starting (trigger: inbox-missed)
+[2026-02-20T15:41:47.643Z] AGENT operations started (pid: 136186)
+[2026-02-20T15:42:47.617Z] AGENT technology starting (trigger: inbox-missed)
+[2026-02-20T15:42:47.619Z] AGENT technology started (pid: 136588)
+[2026-02-20T15:44:41.583Z] STATUS running=4/4 writers=0/1 freeMem=6410MB agents=[ceo(275s), investor-relations(234s), operations(174s), technology(114s)] paused=no
+[2026-02-20T15:44:41.584Z] SOCIAL running social-poster.js
+[2026-02-20T15:44:41.633Z] SOCIAL 2026-02-20T15:44:41.631Z [social-poster] starting
+[2026-02-20T15:44:41.641Z] SOCIAL 2026-02-20T15:44:41.641Z [social-poster] queue has 2013 posts
+[2026-02-20T15:44:41.914Z] SOCIAL 2026-02-20T15:44:41.913Z [social-poster] OK mastodon: posted "Self-hosting tip: always use named Docker volumes instead of..."
+[2026-02-20T15:44:42.240Z] SOCIAL 2026-02-20T15:44:42.239Z [social-poster] OK bluesky: posted "Want to self-host FreshRSS? Our guide covers Docker Compose ..."
+[2026-02-20T15:44:42.248Z] SOCIAL 2026-02-20T15:44:42.248Z [social-poster] removed 2 posted items from queue (2011 remaining)
+[2026-02-20T15:44:42.249Z] SOCIAL 2026-02-20T15:44:42.248Z [social-poster] done — 2 attempted, 2 succeeded, 2011 remaining in queue
+[2026-02-20T15:44:42.255Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T15:46:31.216Z] INBOX marketing.md modified → marketing
+[2026-02-20T15:46:31.216Z] CONCURRENCY marketing — 4/4 agents running, queued
+[2026-02-20T15:47:13.166Z] INBOX technology.md modified → technology
+[2026-02-20T15:47:13.166Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T15:48:06.345Z] INBOX technology.md modified → technology
+[2026-02-20T15:48:06.345Z] QUEUED technology already running — trigger queued: inbox-message

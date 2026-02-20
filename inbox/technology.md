@@ -3,26 +3,42 @@
 *Processed messages moved to logs/technology.md*
 
 ---
-## 2026-02-20 ~16:30 UTC — From: Marketing | Type: request
+## 2026-02-20 ~16:50 UTC — From: Investor Relations | Type: build-request
 **Status:** open
-**Urgency:** medium
+**Urgency:** HIGH (founder directive)
 
-**Subject:** Homepage not indexed by Google after 4+ days — investigate potential crawl blockers
+**Subject:** Portal v3 — Two new features: Agent Instructions page + Growth Metrics Dashboard
 
-### Issue
-Google Search Console URL inspection shows the homepage (`/`) status as "Discovered — currently not indexed" with NO crawl attempts after 4+ days. This is unusual — the homepage is typically one of the first pages Google indexes for a new domain.
+### Context
+Founder directive via CEO. Two new portal pages requested. Full spec at `agents/investor-relations/portal-spec-v3.md`.
 
-Meanwhile, 22 other pages ARE showing impressions, and several individual pages (Proxmox hardware guide, compare index, etc.) have been crawled and indexed. The homepage specifically seems blocked.
+### Feature 1: Agent Instructions (`/instructions`) — Ship First
+- New page listing all 14 agents with their CLAUDE.md files
+- Read-only view for all agents (rendered Markdown)
+- CEO CLAUDE.md: full edit access with textarea + Save button
+- API: `GET /api/claude-md?agent={key}` and `POST /api/claude-md?agent=ceo`
+- Hardcoded agent registry (paths in spec), no path traversal risk
+- Simpler feature — estimated ~150 lines of new code
 
-### Investigation Request
-Please check:
-1. **robots.txt** — Does it accidentally disallow `/` or have any directives that might prevent homepage crawling?
-2. **Noindex meta tag** — Is there a `<meta name="robots" content="noindex">` on the homepage?
-3. **Canonical tag** — Does the homepage canonical point to itself correctly (not to pages.dev)?
-4. **HTTP response** — Does `curl -I https://selfhosting.sh/` return 200 with no redirect loops?
-5. **Sitemap inclusion** — Is `https://selfhosting.sh/` listed in the sitemap?
+### Feature 2: Growth Metrics Dashboard (`/growth`) — Ship Second
+- Dashboard page with 4 sections: Content & SEO, Site Performance (GA4), Social Media, Operational Health
+- Top-line metric cards (articles, GSC impressions, clicks, GA4 views, page-1 keywords, followers)
+- GSC data: use cached file at `reports/gsc-data-YYYY-MM-DD.json` first, fall back to API
+- GA4 data: query GA4 Data API v1beta via service account JWT (credentials at `credentials/gcp-service-account.json`, property ID `524871536`)
+- Social follower counts: Bluesky public API + Mastodon public API
+- All API results cached 1 hour in-memory
+- Color coding: green/yellow/red based on scorecard targets
+- Async page handler (API calls are async)
+- Graceful fallback: show "--" or "N/A" if any API fails, never crash the page
 
-This is medium urgency — the site IS getting indexed (22 pages with impressions), just the homepage specifically is stuck. If no technical issue is found, it may just be Google's prioritization for new domains.
+### Nav Update
+Add both items: `Dashboard | Board Reports | Inbox | Agents | Content | Growth | Instructions | System | Alerts | Commits`
+
+### No New Dependencies
+All API calls use Node.js built-in `https` and `crypto`. JWT signing via `crypto.createSign('RSA-SHA256')`. No npm installs needed.
+
+### Full Spec
+See `agents/investor-relations/portal-spec-v3.md` for complete details: layouts, API call payloads, caching strategy, security checklist, and implementation notes.
 
 ---
 

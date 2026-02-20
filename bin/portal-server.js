@@ -18,7 +18,9 @@ const PORT_HTTPS = 443;
 const BASE = '/opt/selfhosting-sh';
 const TOKEN_PATH = `${BASE}/credentials/portal-token`;
 const PASSWORD_PATH = `${BASE}/credentials/portal-password`;
+const CLAUDEMD_PASSWORD_PATH = `${BASE}/credentials/portal-claudemd-password`;
 const SESSION_COOKIE = 'portal_session';
+const CLAUDEMD_SESSION_COOKIE = 'portal_claudemd_session';
 const SESSION_MAX_AGE = 86400; // 24 hours
 const MAX_SUBJECT_LEN = 200;
 const MAX_MESSAGE_LEN = 5000;
@@ -80,6 +82,54 @@ try {
     console.error('FATAL: Cannot write portal password to', PASSWORD_PATH);
     process.exit(1);
   }
+}
+
+// Load CLAUDE.md section password
+let CLAUDEMD_PASSWORD = '';
+try {
+  CLAUDEMD_PASSWORD = fs.readFileSync(CLAUDEMD_PASSWORD_PATH, 'utf8').trim();
+} catch {
+  CLAUDEMD_PASSWORD = crypto.randomBytes(24).toString('base64url');
+  try {
+    fs.writeFileSync(CLAUDEMD_PASSWORD_PATH, CLAUDEMD_PASSWORD + '\n', { mode: 0o600 });
+    console.log('Generated new CLAUDE.md password at', CLAUDEMD_PASSWORD_PATH);
+  } catch (e) {
+    console.error('WARN: Cannot write CLAUDE.md password:', e.message);
+  }
+}
+
+// CLAUDE.md session store (separate from main portal sessions)
+const claudemdSessionMap = new Map();
+setInterval(() => {
+  const now = Date.now();
+  for (const [token, session] of claudemdSessionMap) {
+    if (now - session.createdAt > SESSION_MAX_AGE * 1000) {
+      claudemdSessionMap.delete(token);
+    }
+  }
+}, 300000);
+
+function checkClaudemdSession(req) {
+  const cookies = parseCookies(req);
+  const sessionToken = cookies[CLAUDEMD_SESSION_COOKIE];
+  if (!sessionToken) return false;
+  const session = claudemdSessionMap.get(sessionToken);
+  if (!session) return false;
+  if (Date.now() - session.createdAt > SESSION_MAX_AGE * 1000) {
+    claudemdSessionMap.delete(sessionToken);
+    return false;
+  }
+  return true;
+}
+
+function createClaudemdSession(ip) {
+  const token = crypto.randomBytes(32).toString('hex');
+  claudemdSessionMap.set(token, { createdAt: Date.now(), ip });
+  return token;
+}
+
+function claudemdSessionCookieHeader(token) {
+  return `${CLAUDEMD_SESSION_COOKIE}=${token}; HttpOnly; SameSite=Strict; Secure; Max-Age=${SESSION_MAX_AGE}; Path=/`;
 }
 
 // -- Helpers --
@@ -435,7 +485,7 @@ function navHtml(currentPath) {
   const links = [
     ['/', 'Dashboard'], ['/board', 'Board Reports'], ['/inbox', 'Inbox'],
     ['/agents', 'Agents'], ['/content', 'Content & SEO'], ['/system', 'System'],
-    ['/alerts', `Alerts ${alertBadge}`], ['/commits', 'Commits']
+    ['/alerts', `Alerts ${alertBadge}`], ['/commits', 'Commits'], ['/claudemd', 'CLAUDE.md']
   ];
   const items = links.map(([href, label]) => {
     const active = currentPath === href ? ' class="active"' : '';
@@ -629,9 +679,11 @@ function pageDashboard() {
   const artPct = Math.min(100, Math.round((articles.total / target) * 100));
 
   let agentRunning = 0, agentQueued = 0, agentErrors = 0;
+  const runningAgents = (coordState && coordState.running) ? coordState.running : {};
+  const runningSet = new Set(Object.keys(runningAgents));
   if (coordState && coordState.agents) {
     for (const [name, info] of Object.entries(coordState.agents)) {
-      if (info.running) agentRunning++;
+      if (runningSet.has(name)) agentRunning++;
       else agentQueued++;
       if (isActiveError(info, name)) agentErrors++;
     }
@@ -760,9 +812,11 @@ function pageAgents() {
   let body = '<h2 style="margin-bottom:12px">Agent Activity</h2>';
 
   let running = 0, queued = 0, errors = 0, backoff = 0;
+  const runningAgentsMap = (coordState && coordState.running) ? coordState.running : {};
+  const agentRunningSet = new Set(Object.keys(runningAgentsMap));
   if (coordState && coordState.agents) {
     for (const [name, info] of Object.entries(coordState.agents)) {
-      if (info.running) running++;
+      if (agentRunningSet.has(name)) running++;
       else queued++;
       if (isActiveError(info, name)) { errors++; backoff++; }
     }
@@ -789,7 +843,9 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
     for (const [name, info] of sorted) {
       const paused = isAgentPaused(name);
       const hasActiveError = isActiveError(info, name);
-      const status = info.running ? 'running' : paused ? 'paused' : hasActiveError ? 'backoff' : 'idle';
+      const isRunning = agentRunningSet.has(name);
+      const status = isRunning ? 'running' : paused ? 'paused' : hasActiveError ? 'backoff' : 'idle';
+      const runInfo = isRunning ? runningAgentsMap[name] : null;
       const lastStart = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const lastExit = info.lastExited ? new Date(info.lastExited).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const errs = info.consecutiveErrors || 0;
@@ -820,9 +876,16 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
       if (!fs.existsSync(logPath)) logPath = `${BASE}/logs/${logName}.md`;
       const logContent = fs.existsSync(logPath) ? readFileTail(logPath, 30) : '';
 
+      let runningDetail = '';
+      if (isRunning && runInfo) {
+        const durMs = Date.now() - new Date(runInfo.startTime).getTime();
+        const durStr = formatTimeAgo(durMs);
+        runningDetail = ` <span style="font-size:12px;color:#22c55e">(${durStr}, pid ${runInfo.pid}, ${escapeHtml(runInfo.trigger || '')})</span>`;
+      }
+
       body += `<tr>
 <td>${escapeHtml(name)}</td>
-<td>${statusBadge(status)}${errorDetail}</td>
+<td>${statusBadge(status)}${runningDetail}${errorDetail}</td>
 <td style="font-size:12px">${escapeHtml(lastStart)}</td>
 <td style="font-size:12px">${escapeHtml(lastExit)}</td>
 <td>${errs > 0 ? `<span class="crit">${errs}</span>` : '0'}</td>
@@ -977,12 +1040,13 @@ function pageAlerts() {
   const inboxHumanCount = inboxHumanMatches ? inboxHumanMatches.length : 0;
 
   let agentErrors = [];
+  const alertRunningSet = new Set(Object.keys((coordState && coordState.running) ? coordState.running : {}));
   if (coordState && coordState.agents) {
     for (const [name, info] of Object.entries(coordState.agents)) {
       if (isActiveError(info, name)) {
         const errorTimestamp = info.lastErrorAt || info.lastRun;
         const errorAge = errorTimestamp ? Date.now() - new Date(errorTimestamp).getTime() : 0;
-        agentErrors.push({ name, errors: info.consecutiveErrors, running: info.running, errorAge });
+        agentErrors.push({ name, errors: info.consecutiveErrors, running: alertRunningSet.has(name), errorAge });
       }
     }
   }
@@ -1060,6 +1124,132 @@ function filterCommits(tag) {
 </script>`;
 
   return layoutHtml('Commits', '/commits', body);
+}
+
+// -- CLAUDE.md pages --
+
+function getClaudemdFiles() {
+  const files = [];
+  // CEO CLAUDE.md
+  const ceoPath = `${BASE}/CLAUDE.md`;
+  if (fs.existsSync(ceoPath)) {
+    files.push({ name: 'CEO (CLAUDE.md)', path: ceoPath, key: 'ceo', editable: true });
+  }
+  // Department heads
+  const agentsDir = `${BASE}/agents`;
+  if (fs.existsSync(agentsDir)) {
+    for (const name of fs.readdirSync(agentsDir).sort()) {
+      const agentPath = path.join(agentsDir, name, 'CLAUDE.md');
+      if (fs.existsSync(agentPath)) {
+        files.push({ name: `${name}`, path: agentPath, key: name, editable: false });
+      }
+      // Writers
+      const writersDir = path.join(agentsDir, name, 'writers');
+      if (fs.existsSync(writersDir)) {
+        for (const wName of fs.readdirSync(writersDir).sort()) {
+          const wPath = path.join(writersDir, wName, 'CLAUDE.md');
+          if (fs.existsSync(wPath)) {
+            files.push({ name: `${name}/${wName}`, path: wPath, key: `${name}-${wName}`, editable: false });
+          }
+        }
+      }
+    }
+  }
+  return files;
+}
+
+function pageClaudemdAuth(error) {
+  const errorHtml = error ? '<p class="login-error">Invalid password</p>' : '';
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CLAUDE.md Access — selfhosting.sh Portal</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f1117; color: #e2e8f0; font-family: 'JetBrains Mono', 'Fira Code', monospace; display: flex; justify-content: center; align-items: center; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+.login-card { background: #1a1d27; border: 1px solid #2d3148; border-radius: 12px; padding: 40px; width: 100%; max-width: 400px; }
+.login-header { text-align: center; margin-bottom: 32px; }
+.login-header h1 { color: #f59e0b; font-size: 18px; font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+.login-header p { color: #94a3b8; font-size: 13px; margin-top: 6px; }
+.login-form { display: flex; flex-direction: column; gap: 16px; }
+.login-form label { color: #94a3b8; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: -8px; }
+.login-form input { background: #0d0f14; border: 1px solid #2d3148; border-radius: 6px; color: #e2e8f0; padding: 12px 14px; font-family: inherit; font-size: 14px; transition: border-color 0.2s, box-shadow 0.2s; }
+.login-form input:focus { border-color: #f59e0b; outline: none; box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2); }
+.login-form button { background: #f59e0b; color: #000; border: none; padding: 12px; border-radius: 6px; font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit; transition: background 0.2s; margin-top: 8px; }
+.login-form button:hover { background: #d97706; }
+.login-error { color: #ef4444; font-size: 13px; text-align: center; margin-top: 4px; }
+.back-link { text-align: center; margin-top: 16px; }
+.back-link a { color: #64748b; font-size: 12px; text-decoration: none; }
+.back-link a:hover { color: #94a3b8; }
+</style>
+</head>
+<body>
+<div class="login-card">
+  <div class="login-header">
+    <h1>CLAUDE.md — Restricted Access</h1>
+    <p>Agent instructions contain sensitive operational details.<br>Enter the CLAUDE.md password to continue.</p>
+  </div>
+  <form class="login-form" method="POST" action="/claudemd/auth">
+    <label for="claudemd_password">CLAUDE.md Password</label>
+    <input type="password" id="claudemd_password" name="password" placeholder="Password" autocomplete="off" required autofocus>
+    <button type="submit">Unlock</button>
+    ${errorHtml}
+  </form>
+  <div class="back-link"><a href="/">&larr; Back to Dashboard</a></div>
+</div>
+</body>
+</html>`;
+}
+
+function pageClaudemdViewer(selectedKey, saveMsg, saveErr) {
+  const files = getClaudemdFiles();
+  let body = '<h2 style="margin-bottom:12px">Agent CLAUDE.md Files</h2>';
+  body += '<p style="color:#64748b;font-size:12px;margin-bottom:16px">Sensitive — extra authentication required. CEO CLAUDE.md is editable; all others are read-only.</p>';
+
+  if (saveMsg) body += `<div class="success-msg">${escapeHtml(saveMsg)}</div>`;
+  if (saveErr) body += `<div class="error-msg">${escapeHtml(saveErr)}</div>`;
+
+  // File selector sidebar + content
+  body += '<div style="display:flex;gap:16px;flex-wrap:wrap">';
+
+  // Sidebar
+  body += '<div style="min-width:200px;max-width:280px">';
+  body += '<div class="card"><h2>Files</h2>';
+  for (const f of files) {
+    const active = f.key === selectedKey;
+    const style = active ? 'color:#22c55e;font-weight:700' : 'color:#94a3b8';
+    const icon = f.editable ? '&#9998; ' : '&#128274; ';
+    body += `<div style="padding:6px 0;border-bottom:1px solid #2d3148"><a href="/claudemd?file=${encodeURIComponent(f.key)}" style="${style};font-size:13px;text-decoration:none">${icon}${escapeHtml(f.name)}</a></div>`;
+  }
+  body += '</div></div>';
+
+  // Content area
+  body += '<div style="flex:1;min-width:0">';
+  const selected = files.find(f => f.key === selectedKey) || files[0];
+  if (selected) {
+    const content = readFileSafe(selected.path);
+    const lines = content.split('\n').length;
+    body += `<div class="card"><h2>${escapeHtml(selected.name)} <span style="font-size:11px;color:#64748b;font-weight:400">(${lines} lines, ${(content.length / 1024).toFixed(1)}KB)</span></h2>`;
+
+    if (selected.editable) {
+      body += `<form method="POST" action="/claudemd/save">
+<input type="hidden" name="key" value="${escapeHtml(selected.key)}">
+<textarea name="content" style="width:100%;min-height:600px;background:#0d0f14;border:1px solid #2d3148;color:#e2e8f0;padding:14px;border-radius:6px;font-family:'JetBrains Mono','Fira Code',monospace;font-size:13px;line-height:1.5;resize:vertical;tab-size:2">${escapeHtml(content)}</textarea>
+<div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+<button type="submit" style="background:#22c55e;color:#000;border:none;padding:8px 20px;border-radius:6px;font-weight:700;cursor:pointer;font-family:inherit;font-size:14px">Save Changes</button>
+<span style="color:#64748b;font-size:12px">Only CEO CLAUDE.md can be edited from the portal</span>
+</div>
+</form>`;
+    } else {
+      body += `<div class="md-content">${renderMarkdown(content)}</div>`;
+    }
+    body += '</div>';
+  }
+  body += '</div></div>';
+
+  return layoutHtml('CLAUDE.md', '/claudemd', body);
 }
 
 // -- Server --
@@ -1148,6 +1338,27 @@ function handleRequest(req, res) {
     } else if (pathname === '/commits') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(pageCommits());
+    } else if (pathname === '/claudemd') {
+      // Extra password gate for CLAUDE.md section
+      if (!checkClaudemdSession(req)) {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end(pageClaudemdAuth(false));
+        return;
+      }
+      const fileKey = url.searchParams.get('file') || 'ceo';
+      const msg = url.searchParams.get('msg');
+      const err = url.searchParams.get('err');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(pageClaudemdViewer(fileKey, msg, err));
+    } else if (pathname === '/claudemd/auth' && req.method === 'POST') {
+      handleClaudemdAuth(req, res);
+    } else if (pathname === '/claudemd/save' && req.method === 'POST') {
+      if (!checkClaudemdSession(req)) {
+        res.writeHead(302, { 'Location': '/claudemd' });
+        res.end();
+        return;
+      }
+      handleClaudemdSave(req, res);
     } else if (pathname === '/api/submit-message' && req.method === 'POST') {
       handleSubmitMessage(req, res);
     } else {
@@ -1297,6 +1508,72 @@ function handleSubmitMessage(req, res) {
       res.end(JSON.stringify({ ok: true, message: 'Message delivered to CEO inbox' }));
     } else {
       res.writeHead(302, { 'Location': '/inbox?msg=' + encodeURIComponent('Message delivered to CEO inbox') });
+      res.end();
+    }
+  });
+}
+
+function handleClaudemdAuth(req, res) {
+  let body = '';
+  req.on('data', chunk => {
+    body += chunk;
+    if (body.length > 10000) req.destroy();
+  });
+  req.on('end', () => {
+    const ip = getClientIp(req);
+    if (!checkLoginRateLimit(ip)) {
+      res.writeHead(429, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(pageRateLimited());
+      return;
+    }
+    const params = new URLSearchParams(body);
+    const password = (params.get('password') || '').trim();
+    if (password === CLAUDEMD_PASSWORD) {
+      const sessionToken = createClaudemdSession(ip);
+      res.writeHead(302, {
+        'Location': '/claudemd',
+        'Set-Cookie': claudemdSessionCookieHeader(sessionToken)
+      });
+      res.end();
+    } else {
+      recordLoginFailure(ip);
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(pageClaudemdAuth(true));
+    }
+  });
+}
+
+function handleClaudemdSave(req, res) {
+  let body = '';
+  req.on('data', chunk => {
+    body += chunk;
+    if (body.length > 500000) req.destroy(); // CLAUDE.md files can be large
+  });
+  req.on('end', () => {
+    const params = new URLSearchParams(body);
+    const key = params.get('key');
+    const content = params.get('content');
+
+    // Only CEO CLAUDE.md is editable
+    if (key !== 'ceo') {
+      res.writeHead(302, { 'Location': '/claudemd?file=' + encodeURIComponent(key) + '&err=' + encodeURIComponent('This file is read-only') });
+      res.end();
+      return;
+    }
+
+    if (!content) {
+      res.writeHead(302, { 'Location': '/claudemd?file=ceo&err=' + encodeURIComponent('Content cannot be empty') });
+      res.end();
+      return;
+    }
+
+    try {
+      fs.writeFileSync(`${BASE}/CLAUDE.md`, content);
+      res.writeHead(302, { 'Location': '/claudemd?file=ceo&msg=' + encodeURIComponent('CLAUDE.md saved successfully') });
+      res.end();
+    } catch (err) {
+      console.error('Failed to save CLAUDE.md:', err.message);
+      res.writeHead(302, { 'Location': '/claudemd?file=ceo&err=' + encodeURIComponent('Failed to save: ' + err.message) });
       res.end();
     }
   });

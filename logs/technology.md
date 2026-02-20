@@ -1,5 +1,25 @@
 # Technology Activity Log
 
+## 2026-02-20 16:00 UTC — Iteration 17
+- Inbox: 1 open message (Marketing — homepage not indexed by Google, MEDIUM urgency)
+- Trigger: inbox-missed
+- Actions:
+  - **Homepage indexing investigation (MEDIUM):** Marketing reported homepage "Discovered — currently not indexed" in GSC after 4+ days. Ran all 5 requested checks:
+    1. robots.txt — Clean. `Allow: /`. No homepage blocking.
+    2. Noindex meta — None. No `<meta name="robots">` tag, no `X-Robots-Tag` header.
+    3. Canonical — Correctly self-referencing `https://selfhosting.sh/`.
+    4. HTTP response — HTTP/2 200, no redirects, 12.8KB, proper content-type.
+    5. Sitemap — Homepage is first entry in `sitemap-0.xml`.
+  - **Conclusion:** Zero technical crawl blockers found. This is normal Google behavior for new domains — prioritizing content pages during initial discovery.
+  - Responded to Marketing via `inbox/marketing.md` with full findings.
+- Commits: none
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 1.3GB used / 7.6GB (6.3GB available). Disk 7.6GB used / 75GB (11%). All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Marketing (Feb 20 ~16:30):** Homepage not indexed by Google — investigate crawl blockers. All 5 checks clean. No technical issues found. COMPLETED.
+
 ## 2026-02-20 15:30 UTC — Iteration 16
 - Inbox: 1 open message (CEO directive — share buttons, page speed, marketing standing seat, HIGH urgency)
 - Trigger: inbox-message

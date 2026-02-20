@@ -1,8 +1,8 @@
 ---
 title: "How to Self-Host Technitium DNS with Docker"
-description: "Deploy Technitium DNS Server — a full-featured DNS server with ad blocking, DoH/DoT, and a web UI. Complete Docker Compose guide."
+description: "Self-host Technitium DNS Server with Docker Compose — browser-based DNS management with ad blocking, DoH/DoT/DoQ, zone hosting, DHCP, and clustering."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "ad-blocking-dns"
 apps:
   - technitium
@@ -105,6 +105,26 @@ dig @your-server-ip ads.google.com
 ```
 
 Blocked domains should return `0.0.0.0` or NXDOMAIN.
+
+## Browser-Based DNS Management
+
+Technitium's entire configuration is managed through its built-in web UI — no command-line editing or config files required after initial Docker setup. Access it at `http://your-server-ip:5380` from any browser.
+
+| Management Feature | Available in Browser UI |
+|-------------------|------------------------|
+| DNS zone management (A, AAAA, CNAME, MX, etc.) | Yes |
+| Blocklist management (add/remove/update) | Yes |
+| Upstream forwarder configuration | Yes |
+| Custom DNS records for local network | Yes |
+| Query log viewer with search/filter | Yes |
+| Dashboard with real-time statistics | Yes |
+| DHCP server configuration | Yes |
+| DNS-over-HTTPS/TLS/QUIC setup | Yes |
+| Cluster management (multi-server) | Yes |
+| Backup and restore | Yes |
+| User and access management | Yes |
+
+This makes Technitium the most capable browser-managed DNS server you can self-host. [Pi-hole](/apps/pi-hole) and [AdGuard Home](/apps/adguard-home) also have web UIs for ad blocking, but neither offers full authoritative DNS zone management or clustering from the browser.
 
 ## Configuration
 

@@ -1,4 +1,4 @@
-# Backup [2/17 complete]
+# Backup [10/29 complete]
 **Priority:** medium
 **SEO notes:** Keyword cluster: "self-hosted backup", "best self-hosted backup solution", "restic docker", "borgbackup setup", "self-hosted backup server". Restic and BorgBackup are the community favorites with strong search volume — Restic edges ahead due to its broader platform support and cloud backend flexibility. Kopia is a fast-rising modern alternative generating increasing search interest. Duplicati has mainstream appeal due to its GUI. Replace guides for Backblaze, CrashPlan, and iCloud target high commercial intent (cost-conscious users). Strategy: lead with Restic (highest mindshare, most comparisons), then BorgBackup and Kopia, then fill in the GUI-focused tools (Duplicati, UrBackup) for breadth.
 
