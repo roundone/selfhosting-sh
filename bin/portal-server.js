@@ -5,6 +5,7 @@
  */
 
 const http = require('http');
+const https = require('https');
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
@@ -12,18 +13,24 @@ const crypto = require('crypto');
 const { marked } = require('marked');
 
 const PORT = 8080;
+const PORT_HTTP = 80;
+const PORT_HTTPS = 443;
 const BASE = '/opt/selfhosting-sh';
 const TOKEN_PATH = `${BASE}/credentials/portal-token`;
-const COOKIE_NAME = 'portal_token';
-const COOKIE_MAX_AGE = 604800; // 7 days
+const PASSWORD_PATH = `${BASE}/credentials/portal-password`;
+const SESSION_COOKIE = 'portal_session';
+const SESSION_MAX_AGE = 86400; // 24 hours
 const MAX_SUBJECT_LEN = 200;
 const MAX_MESSAGE_LEN = 5000;
 const MAX_MESSAGE_LINES = 200;
 const RATE_LIMIT_MAX = 10;
 const RATE_LIMIT_WINDOW = 3600000; // 1 hour
+const LOGIN_RATE_LIMIT_MAX = 5;
+const LOGIN_RATE_LIMIT_WINDOW = 900000; // 15 minutes
 
 // Rate limiting state
 const rateLimitMap = new Map();
+const loginRateLimitMap = new Map();
 setInterval(() => {
   const cutoff = Date.now() - RATE_LIMIT_WINDOW;
   for (const [ip, times] of rateLimitMap) {
@@ -31,15 +38,48 @@ setInterval(() => {
     if (filtered.length === 0) rateLimitMap.delete(ip);
     else rateLimitMap.set(ip, filtered);
   }
+  const loginCutoff = Date.now() - LOGIN_RATE_LIMIT_WINDOW;
+  for (const [ip, times] of loginRateLimitMap) {
+    const filtered = times.filter(t => t > loginCutoff);
+    if (filtered.length === 0) loginRateLimitMap.delete(ip);
+    else loginRateLimitMap.set(ip, filtered);
+  }
 }, 300000); // Clean every 5 min
 
-// Load auth token
+// Session store: Map<sessionToken, { createdAt: number, ip: string }>
+const sessionMap = new Map();
+setInterval(() => {
+  const now = Date.now();
+  for (const [token, session] of sessionMap) {
+    if (now - session.createdAt > SESSION_MAX_AGE * 1000) {
+      sessionMap.delete(token);
+    }
+  }
+}, 300000); // Clean expired sessions every 5 min
+
+// Load API bearer token (for /api/status backward compat)
 let AUTH_TOKEN = '';
 try {
   AUTH_TOKEN = fs.readFileSync(TOKEN_PATH, 'utf8').trim();
 } catch (e) {
   console.error('FATAL: Cannot read portal token from', TOKEN_PATH);
   process.exit(1);
+}
+
+// Load or generate portal password
+let PORTAL_PASSWORD = '';
+try {
+  PORTAL_PASSWORD = fs.readFileSync(PASSWORD_PATH, 'utf8').trim();
+} catch {
+  // Generate a strong random password on first startup
+  PORTAL_PASSWORD = crypto.randomBytes(24).toString('base64url');
+  try {
+    fs.writeFileSync(PASSWORD_PATH, PORTAL_PASSWORD + '\n', { mode: 0o600 });
+    console.log('Generated new portal password at', PASSWORD_PATH);
+  } catch (e) {
+    console.error('FATAL: Cannot write portal password to', PASSWORD_PATH);
+    process.exit(1);
+  }
 }
 
 // -- Helpers --
@@ -79,7 +119,6 @@ function stripHtml(str) {
 
 function sanitizeInput(str) {
   let s = stripHtml(str);
-  // Belt-and-suspenders XSS check
   const dangerous = /<script/i.test(s) || /<iframe/i.test(s) ||
     /javascript:/i.test(s) || /onerror\s*=/i.test(s) || /onload\s*=/i.test(s);
   if (dangerous) return null;
@@ -87,14 +126,12 @@ function sanitizeInput(str) {
 }
 
 function redactCredentials(text) {
-  // Redact env var assignments
   let out = text.replace(/(export\s+)?([A-Z_]{2,})\s*=\s*(\S+)/g, (match, exp, key, val) => {
     if (/key|token|secret|password|bearer/i.test(key)) {
       return `${exp || ''}${key}=[REDACTED]`;
     }
     return match;
   });
-  // Redact bearer tokens
   out = out.replace(/(Bearer\s+)[A-Za-z0-9_\-]{20,}/gi, '$1[REDACTED]');
   return out;
 }
@@ -117,17 +154,51 @@ function parseCookies(req) {
   return cookies;
 }
 
-function checkAuth(req) {
-  // 1. Query param
-  const url = new URL(req.url, `http://${req.headers.host}`);
-  if (url.searchParams.get('token') === AUTH_TOKEN) return 'query';
-  // 2. Authorization header
-  const authHeader = req.headers.authorization || '';
-  if (authHeader === `Bearer ${AUTH_TOKEN}`) return 'header';
-  // 3. Cookie
+// -- Auth --
+
+function checkSession(req) {
   const cookies = parseCookies(req);
-  if (cookies[COOKIE_NAME] === AUTH_TOKEN) return 'cookie';
-  return null;
+  const sessionToken = cookies[SESSION_COOKIE];
+  if (!sessionToken) return false;
+  const session = sessionMap.get(sessionToken);
+  if (!session) return false;
+  if (Date.now() - session.createdAt > SESSION_MAX_AGE * 1000) {
+    sessionMap.delete(sessionToken);
+    return false;
+  }
+  return true;
+}
+
+function checkBearerAuth(req) {
+  const authHeader = req.headers.authorization || '';
+  return authHeader === `Bearer ${AUTH_TOKEN}`;
+}
+
+function checkLoginRateLimit(ip) {
+  const now = Date.now();
+  const cutoff = now - LOGIN_RATE_LIMIT_WINDOW;
+  const times = (loginRateLimitMap.get(ip) || []).filter(t => t > cutoff);
+  if (times.length >= LOGIN_RATE_LIMIT_MAX) return false;
+  return true;
+}
+
+function recordLoginFailure(ip) {
+  const now = Date.now();
+  const times = loginRateLimitMap.get(ip) || [];
+  times.push(now);
+  loginRateLimitMap.set(ip, times);
+}
+
+function createSession(ip) {
+  const token = crypto.randomBytes(32).toString('hex');
+  sessionMap.set(token, { createdAt: Date.now(), ip });
+  return token;
+}
+
+function destroySession(req) {
+  const cookies = parseCookies(req);
+  const sessionToken = cookies[SESSION_COOKIE];
+  if (sessionToken) sessionMap.delete(sessionToken);
 }
 
 function checkRateLimit(ip) {
@@ -138,6 +209,14 @@ function checkRateLimit(ip) {
   times.push(now);
   rateLimitMap.set(ip, times);
   return true;
+}
+
+function sessionCookieHeader(token) {
+  return `${SESSION_COOKIE}=${token}; HttpOnly; SameSite=Strict; Secure; Max-Age=${SESSION_MAX_AGE}; Path=/`;
+}
+
+function clearSessionCookieHeader() {
+  return `${SESSION_COOKIE}=; HttpOnly; SameSite=Strict; Secure; Max-Age=0; Path=/`;
 }
 
 // -- Data helpers --
@@ -226,22 +305,51 @@ function getSocialQueueSize() {
   }, 0);
 }
 
-const STALE_ERROR_MS = 2 * 60 * 60 * 1000;
-function isActiveError(info) {
-  if (!info.consecutiveErrors || info.consecutiveErrors <= 0) return false;
-  if (!info.lastRun) return false;
-  return (Date.now() - new Date(info.lastRun).getTime()) < STALE_ERROR_MS;
+// -- Alert logic with per-agent interval awareness --
+
+function getExpectedIntervalMs(agentName) {
+  // Try to read agent's wake-on.conf for dynamic interval
+  const possiblePaths = [
+    `${BASE}/agents/${agentName}/wake-on.conf`,
+    `${BASE}/agents/operations/writers/${agentName.replace(/^ops-/, '')}/wake-on.conf`
+  ];
+  for (const confPath of possiblePaths) {
+    try {
+      const content = fs.readFileSync(confPath, 'utf8');
+      const match = content.match(/fallback:\s*(\d+)h/);
+      if (match) return parseInt(match[1], 10) * 60 * 60 * 1000;
+    } catch {}
+  }
+  // Defaults by agent type
+  if (agentName.startsWith('ops-')) return 48 * 60 * 60 * 1000; // writers: 48h default
+  if (agentName === 'investor-relations') return 168 * 60 * 60 * 1000; // IR: weekly
+  return 8 * 60 * 60 * 1000; // dept heads: 8h default
 }
+
+function isActiveError(info, agentName) {
+  if (!info.consecutiveErrors || info.consecutiveErrors <= 0) return false;
+  const errorTimestamp = info.lastErrorAt || info.lastRun;
+  if (!errorTimestamp) return false;
+  const errorAge = Date.now() - new Date(errorTimestamp).getTime();
+  const expectedInterval = getExpectedIntervalMs(agentName || '');
+  return errorAge < (expectedInterval * 1.5);
+}
+
+function formatTimeAgo(ms) {
+  if (ms < 60000) return `${Math.round(ms / 1000)}s ago`;
+  if (ms < 3600000) return `${Math.round(ms / 60000)}m ago`;
+  if (ms < 86400000) return `${Math.round(ms / 3600000)}h ago`;
+  return `${Math.round(ms / 86400000)}d ago`;
+}
+
 function getAlertCount() {
   let count = 0;
-  // Agent errors
   const state = getCoordinatorState();
   if (state && state.agents) {
-    for (const info of Object.values(state.agents)) {
-      if (isActiveError(info)) count++;
+    for (const [name, info] of Object.entries(state.agents)) {
+      if (isActiveError(info, name)) count++;
     }
   }
-  // Human action items from latest board report
   const latest = getLatestBoardReport();
   if (latest) {
     const humanSection = latest.content.match(/## Escalations Requiring Human Action[\s\S]*?(?=\n## |\n---|\Z)/);
@@ -300,87 +408,158 @@ function layoutHtml(title, currentPath, bodyHtml) {
 <title>${escapeHtml(title)} — selfhosting.sh Portal</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #0f1117; color: #e2e8f0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.6; }
-.header { background: #1a1d27; border-bottom: 1px solid #2d3148; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
-.header h1 { color: #22c55e; font-size: 16px; }
-.header .time { color: #64748b; font-size: 11px; }
-nav { background: #151822; border-bottom: 1px solid #2d3148; padding: 0 20px; display: flex; gap: 0; overflow-x: auto; }
-nav a { color: #94a3b8; padding: 10px 16px; text-decoration: none; font-size: 12px; white-space: nowrap; border-bottom: 2px solid transparent; }
+body { background: #0f1117; color: #e2e8f0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 15px; line-height: 1.6; letter-spacing: 0.01em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { background: #1a1d27; border-bottom: 1px solid #2d3148; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+.header h1 { color: #22c55e; font-size: 18px; }
+.header .right { display: flex; align-items: center; gap: 16px; }
+.header .time { color: #64748b; font-size: 12px; }
+.header .refresh-note { color: #475569; font-size: 11px; }
+.header .logout-link { color: #94a3b8; font-size: 12px; text-decoration: none; }
+.header .logout-link:hover { color: #ef4444; }
+nav { background: #151822; border-bottom: 1px solid #2d3148; padding: 0 24px; display: flex; gap: 0; overflow-x: auto; }
+nav a { color: #94a3b8; padding: 12px 20px; text-decoration: none; font-size: 14px; white-space: nowrap; border-bottom: 2px solid transparent; transition: background 0.2s; }
 nav a:hover { color: #e2e8f0; background: #1a1d27; }
 nav a.active { color: #22c55e; border-bottom-color: #22c55e; }
-.content { padding: 20px; max-width: 1400px; margin: 0 auto; }
+.content { padding: 24px; max-width: 1440px; margin: 0 auto; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; margin-bottom: 16px; }
-.card { background: #1a1d27; border: 1px solid #2d3148; border-radius: 8px; padding: 16px; overflow: hidden; }
-.card h2 { color: #94a3b8; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #2d3148; padding-bottom: 8px; }
+.card { background: #1a1d27; border: 1px solid #2d3148; border-radius: 10px; padding: 20px; overflow: hidden; transition: border-color 0.2s; }
+.card:hover { border-color: #3d4168; }
+.card h2 { color: #94a3b8; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #2d3148; padding-bottom: 8px; }
 .card.wide { grid-column: 1 / -1; }
-.metric { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; }
+.metric { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; }
 .metric-label { color: #94a3b8; }
 .metric-value { color: #e2e8f0; font-weight: 600; }
-.metric-value.big { font-size: 22px; color: #22c55e; }
-.bar { height: 8px; background: #2d3148; border-radius: 4px; overflow: hidden; margin: 4px 0; }
-.bar-fill { height: 100%; border-radius: 4px; }
+.metric-value.big { font-size: 28px; color: #22c55e; }
+.bar { height: 12px; background: #2d3148; border-radius: 6px; overflow: hidden; margin: 4px 0; box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); }
+.bar-fill { height: 100%; border-radius: 6px; }
 table { width: 100%; border-collapse: collapse; }
-th, td { padding: 6px 8px; text-align: left; border-bottom: 1px solid #2d3148; font-size: 12px; }
-th { color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
-pre { background: #0d0f14; border: 1px solid #2d3148; border-radius: 4px; padding: 12px; overflow-x: auto; font-size: 11px; line-height: 1.4; max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
-.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; color: #000; font-weight: 600; font-size: 11px; }
-.alert-badge { display: inline-block; background: #ef4444; color: #fff; font-size: 10px; padding: 1px 6px; border-radius: 10px; margin-left: 4px; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #2d3148; font-size: 14px; }
+tr:nth-child(even) { background: rgba(26, 29, 39, 0.5); }
+th { color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+pre { background: #0d0f14; border: 1px solid #2d3148; border-radius: 6px; padding: 14px; overflow-x: auto; font-size: 13px; line-height: 1.4; max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; color: #000; font-weight: 600; font-size: 12px; }
+.alert-badge { display: inline-block; background: #ef4444; color: #fff; font-size: 11px; padding: 1px 6px; border-radius: 10px; margin-left: 4px; }
 .ok { color: #22c55e; }
 .warn { color: #f59e0b; }
 .crit { color: #ef4444; }
+.stale { color: #64748b; }
 a { color: #22c55e; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .md-content { line-height: 1.7; }
-.md-content h1 { font-size: 20px; color: #22c55e; margin: 16px 0 8px; }
-.md-content h2 { font-size: 16px; color: #e2e8f0; margin: 14px 0 6px; border-bottom: 1px solid #2d3148; padding-bottom: 4px; }
-.md-content h3 { font-size: 14px; color: #94a3b8; margin: 10px 0 4px; }
+.md-content h1 { font-size: 24px; color: #22c55e; margin: 16px 0 8px; }
+.md-content h2 { font-size: 18px; color: #e2e8f0; margin: 14px 0 6px; border-bottom: 1px solid #2d3148; padding-bottom: 4px; }
+.md-content h3 { font-size: 16px; color: #94a3b8; margin: 10px 0 4px; }
 .md-content p { margin: 6px 0; }
 .md-content ul, .md-content ol { margin: 6px 0 6px 20px; }
 .md-content table { margin: 8px 0; }
-.md-content code { background: #0d0f14; padding: 2px 5px; border-radius: 3px; font-size: 12px; }
+.md-content code { background: #0d0f14; padding: 2px 5px; border-radius: 3px; font-size: 13px; }
 .md-content pre code { background: none; padding: 0; }
 .md-content blockquote { border-left: 3px solid #22c55e; padding-left: 12px; color: #94a3b8; margin: 8px 0; }
 .md-content hr { border: none; border-top: 1px solid #2d3148; margin: 12px 0; }
-.accordion { border: 1px solid #2d3148; border-radius: 6px; margin: 8px 0; overflow: hidden; }
-.accordion summary { background: #1a1d27; padding: 10px 14px; cursor: pointer; color: #e2e8f0; font-size: 13px; }
+.accordion { border: 1px solid #2d3148; border-radius: 8px; margin: 8px 0; overflow: hidden; }
+.accordion summary { background: #1a1d27; padding: 12px 16px; cursor: pointer; color: #e2e8f0; font-size: 14px; }
 .accordion summary:hover { background: #222638; }
-.accordion .acc-body { padding: 14px; }
+.accordion .acc-body { padding: 16px; }
 .msg-form { display: flex; flex-direction: column; gap: 10px; }
-.msg-form input, .msg-form textarea { background: #0d0f14; border: 1px solid #2d3148; color: #e2e8f0; padding: 8px 12px; border-radius: 4px; font-family: inherit; font-size: 13px; }
+.msg-form input, .msg-form textarea { background: #0d0f14; border: 1px solid #2d3148; color: #e2e8f0; padding: 10px 14px; border-radius: 6px; font-family: inherit; font-size: 15px; transition: border-color 0.2s, box-shadow 0.2s; }
+.msg-form input:focus, .msg-form textarea:focus { border-color: #22c55e; outline: none; box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2); }
 .msg-form textarea { min-height: 120px; resize: vertical; }
-.msg-form button { background: #22c55e; color: #000; border: none; padding: 10px 20px; border-radius: 4px; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 13px; align-self: flex-start; }
+.msg-form button { background: #22c55e; color: #000; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 15px; align-self: flex-start; transition: background 0.2s; }
 .msg-form button:hover { background: #16a34a; }
-.msg-form .char-count { color: #64748b; font-size: 11px; text-align: right; }
-.success-msg { background: #14532d; border: 1px solid #22c55e; color: #22c55e; padding: 10px 14px; border-radius: 4px; margin-bottom: 12px; }
-.error-msg { background: #450a0a; border: 1px solid #ef4444; color: #ef4444; padding: 10px 14px; border-radius: 4px; margin-bottom: 12px; }
+.msg-form .char-count { color: #64748b; font-size: 12px; text-align: right; }
+.success-msg { background: #14532d; border: 1px solid #22c55e; color: #22c55e; padding: 10px 14px; border-radius: 6px; margin-bottom: 12px; }
+.error-msg { background: #450a0a; border: 1px solid #ef4444; color: #ef4444; padding: 10px 14px; border-radius: 6px; margin-bottom: 12px; }
 .filter-bar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
-.filter-btn { background: #1a1d27; border: 1px solid #2d3148; color: #94a3b8; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 11px; }
+.filter-btn { background: #1a1d27; border: 1px solid #2d3148; color: #94a3b8; padding: 4px 12px; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 12px; transition: border-color 0.2s, color 0.2s; }
 .filter-btn.active, .filter-btn:hover { color: #22c55e; border-color: #22c55e; }
-.search-box { background: #0d0f14; border: 1px solid #2d3148; color: #e2e8f0; padding: 6px 12px; border-radius: 4px; font-family: inherit; font-size: 12px; width: 100%; max-width: 400px; margin-bottom: 12px; }
-.alert-item { background: #1a1d27; border: 1px solid #2d3148; border-left: 3px solid #ef4444; border-radius: 4px; padding: 12px 14px; margin: 8px 0; }
+.search-box { background: #0d0f14; border: 1px solid #2d3148; color: #e2e8f0; padding: 8px 14px; border-radius: 6px; font-family: inherit; font-size: 14px; width: 100%; max-width: 400px; margin-bottom: 12px; transition: border-color 0.2s, box-shadow 0.2s; }
+.search-box:focus { border-color: #22c55e; outline: none; box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2); }
+.alert-item { background: #1a1d27; border: 1px solid #2d3148; border-left: 4px solid #ef4444; border-radius: 6px; padding: 16px 18px; margin: 8px 0; }
 .alert-item.warning { border-left-color: #f59e0b; }
-.alert-item h3 { font-size: 13px; color: #e2e8f0; margin-bottom: 4px; }
-.alert-item .meta { color: #64748b; font-size: 11px; }
-.progress-bar { background: #2d3148; border-radius: 4px; height: 20px; overflow: hidden; position: relative; }
-.progress-fill { height: 100%; border-radius: 4px; background: #22c55e; }
-.progress-label { position: absolute; top: 0; left: 0; right: 0; text-align: center; line-height: 20px; font-size: 11px; font-weight: 600; color: #fff; }
+.alert-item h3 { font-size: 14px; color: #e2e8f0; margin-bottom: 4px; }
+.alert-item .meta { color: #64748b; font-size: 12px; }
+.progress-bar { background: #2d3148; border-radius: 6px; height: 20px; overflow: hidden; position: relative; }
+.progress-fill { height: 100%; border-radius: 6px; background: #22c55e; }
+.progress-label { position: absolute; top: 0; left: 0; right: 0; text-align: center; line-height: 20px; font-size: 12px; font-weight: 600; color: #fff; }
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; }
   nav { flex-wrap: wrap; }
-  nav a { padding: 8px 12px; }
+  nav a { padding: 8px 12px; font-size: 13px; }
+  .content { padding: 12px; }
+  th, td { font-size: 13px; padding: 8px 6px; }
+  .metric { flex-direction: column; align-items: flex-start; gap: 2px; }
 }
 </style>
 </head>
 <body>
 <div class="header">
   <h1>$ selfhosting.sh board portal</h1>
-  <span class="time">Last refresh: ${new Date().toISOString().replace('T', ' ').slice(0, 19)} UTC</span>
+  <div class="right">
+    <span class="refresh-note">Auto-refreshes every 60s</span>
+    <span class="time">Last refresh: ${new Date().toISOString().replace('T', ' ').slice(0, 19)} UTC</span>
+    <a href="/logout" class="logout-link">Logout</a>
+  </div>
 </div>
 ${navHtml(currentPath)}
 <div class="content">
 ${bodyHtml}
 </div>
 </body>
+</html>`;
+}
+
+// -- Login page --
+
+function pageLogin(error) {
+  const errorHtml = error ? '<p class="login-error">Invalid username or password</p>' : '';
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login — selfhosting.sh Portal</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f1117; color: #e2e8f0; font-family: 'JetBrains Mono', 'Fira Code', monospace; display: flex; justify-content: center; align-items: center; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+.login-card { background: #1a1d27; border: 1px solid #2d3148; border-radius: 12px; padding: 40px; width: 100%; max-width: 400px; }
+.login-header { text-align: center; margin-bottom: 32px; }
+.login-header h1 { color: #22c55e; font-size: 20px; font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+.login-header p { color: #94a3b8; font-size: 14px; margin-top: 6px; }
+.login-form { display: flex; flex-direction: column; gap: 16px; }
+.login-form label { color: #94a3b8; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: -8px; }
+.login-form input { background: #0d0f14; border: 1px solid #2d3148; border-radius: 6px; color: #e2e8f0; padding: 12px 14px; font-family: inherit; font-size: 14px; transition: border-color 0.2s, box-shadow 0.2s; }
+.login-form input:focus { border-color: #22c55e; outline: none; box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2); }
+.login-form button { background: #22c55e; color: #000; border: none; padding: 12px; border-radius: 6px; font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit; transition: background 0.2s; margin-top: 8px; }
+.login-form button:hover { background: #16a34a; }
+.login-error { color: #ef4444; font-size: 13px; text-align: center; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="login-card">
+  <div class="login-header">
+    <h1>selfhosting.sh</h1>
+    <p>Board Portal</p>
+  </div>
+  <form class="login-form" method="POST" action="/login">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="admin" autocomplete="username" required>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required>
+    <button type="submit">Sign in</button>
+    ${errorHtml}
+  </form>
+</div>
+</body>
+</html>`;
+}
+
+function pageRateLimited() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Rate Limited</title>
+<style>body{background:#0f1117;color:#e2e8f0;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;text-align:center}h1{color:#f59e0b;font-size:18px}p{color:#64748b;margin-top:8px;font-size:14px}</style>
+</head>
+<body><div><h1>429 — Too Many Attempts</h1><p>Too many failed login attempts. Please try again in 15 minutes.</p></div></body>
 </html>`;
 }
 
@@ -401,33 +580,29 @@ function pageDashboard() {
   const diskPct = parseInt(disk.pct) || 0;
   const diskColor = diskPct > 80 ? '#ef4444' : diskPct > 60 ? '#f59e0b' : '#22c55e';
 
-  // Scorecard
   const target = 1500;
   const artPct = Math.min(100, Math.round((articles.total / target) * 100));
 
-  // Agent summary
   let agentRunning = 0, agentQueued = 0, agentErrors = 0;
   if (coordState && coordState.agents) {
-    for (const info of Object.values(coordState.agents)) {
+    for (const [name, info] of Object.entries(coordState.agents)) {
       if (info.running) agentRunning++;
       else agentQueued++;
-      if (isActiveError(info)) agentErrors++;
+      if (isActiveError(info, name)) agentErrors++;
     }
   }
 
-  // Extract health summary from latest board report
   let healthSummary = '';
   if (latest) {
     const match = latest.content.match(/## Business Health.*?\n([\s\S]*?)(?=\n## )/);
     if (match) healthSummary = match[1].trim().slice(0, 300);
   }
 
-  // Social last posted
   let socialInfo = '';
   if (socialState.platforms) {
     for (const [platform, data] of Object.entries(socialState.platforms)) {
       if (data.lastPosted) {
-        socialInfo += `<div class="metric"><span class="metric-label">${escapeHtml(platform)}</span><span class="metric-value" style="font-size:11px">${escapeHtml(new Date(data.lastPosted).toISOString().replace('T', ' ').slice(0, 19))}</span></div>`;
+        socialInfo += `<div class="metric"><span class="metric-label">${escapeHtml(platform)}</span><span class="metric-value" style="font-size:12px">${escapeHtml(new Date(data.lastPosted).toISOString().replace('T', ' ').slice(0, 19))}</span></div>`;
       }
     }
   }
@@ -435,8 +610,8 @@ function pageDashboard() {
   let body = `<div class="grid">
 <div class="card">
   <h2>Business Health</h2>
-  ${healthSummary ? `<div class="md-content" style="font-size:12px">${renderMarkdown(healthSummary)}</div>` : '<p style="color:#64748b">No board report available yet</p>'}
-  ${alertCount > 0 ? `<div style="margin-top:10px"><span class="badge" style="background:#ef4444;color:#fff">${alertCount} alert${alertCount > 1 ? 's' : ''} need attention</span> <a href="/alerts" style="font-size:11px">View &rarr;</a></div>` : '<div style="margin-top:10px"><span class="badge" style="background:#22c55e">All clear</span></div>'}
+  ${healthSummary ? `<div class="md-content" style="font-size:13px">${renderMarkdown(healthSummary)}</div>` : '<p style="color:#64748b">No board report available yet</p>'}
+  ${alertCount > 0 ? `<div style="margin-top:10px"><span class="badge" style="background:#ef4444;color:#fff">${alertCount} alert${alertCount > 1 ? 's' : ''} need attention</span> <a href="/alerts" style="font-size:12px">View &rarr;</a></div>` : '<div style="margin-top:10px"><span class="badge" style="background:#22c55e">All clear</span></div>'}
 </div>
 
 <div class="card">
@@ -453,7 +628,7 @@ function pageDashboard() {
   <div class="metric"><span class="metric-label">Running</span><span class="metric-value ok">${agentRunning}</span></div>
   <div class="metric"><span class="metric-label">Queued / Idle</span><span class="metric-value">${agentQueued}</span></div>
   <div class="metric"><span class="metric-label">With Errors</span><span class="metric-value ${agentErrors > 0 ? 'crit' : ''}">${agentErrors}</span></div>
-  <a href="/agents" style="font-size:11px;margin-top:8px;display:block">View agents &rarr;</a>
+  <a href="/agents" style="font-size:12px;margin-top:8px;display:block">View agents &rarr;</a>
 </div>
 
 <div class="card">
@@ -462,18 +637,18 @@ function pageDashboard() {
   ${barHtml(memPct, memColor)}
   <div class="metric"><span class="metric-label">Disk</span><span class="metric-value" style="color:${diskColor}">${escapeHtml(disk.used)} / ${escapeHtml(disk.size)}</span></div>
   ${barHtml(diskPct, diskColor)}
-  <a href="/system" style="font-size:11px;margin-top:8px;display:block">View details &rarr;</a>
+  <a href="/system" style="font-size:12px;margin-top:8px;display:block">View details &rarr;</a>
 </div>
 
 <div class="card">
   <h2>Social Media</h2>
   <div class="metric"><span class="metric-label">Queue</span><span class="metric-value">${queueSize} items</span></div>
-  ${socialInfo || '<div style="color:#64748b;font-size:11px">No platform data available</div>'}
+  ${socialInfo || '<div style="color:#64748b;font-size:12px">No platform data available</div>'}
 </div>
 
 <div class="card">
   <h2>Latest Board Report</h2>
-  ${latest ? `<div class="metric"><span class="metric-label">Date</span><span class="metric-value">${escapeHtml(latest.name)}</span></div><div style="color:#94a3b8;font-size:11px;margin-top:6px">${escapeHtml(latest.content.slice(0, 200))}...</div><a href="/board" style="font-size:11px;margin-top:8px;display:block">Read full report &rarr;</a>` : '<p style="color:#64748b">No board reports yet</p>'}
+  ${latest ? `<div class="metric"><span class="metric-label">Date</span><span class="metric-value">${escapeHtml(latest.name)}</span></div><div style="color:#94a3b8;font-size:12px;margin-top:6px">${escapeHtml(latest.content.slice(0, 200))}...</div><a href="/board" style="font-size:12px;margin-top:8px;display:block">Read full report &rarr;</a>` : '<p style="color:#64748b">No board reports yet</p>'}
 </div>
 </div>`;
 
@@ -539,13 +714,12 @@ function pageAgents() {
   const coordState = getCoordinatorState();
   let body = '<h2 style="margin-bottom:12px">Agent Activity</h2>';
 
-  // Summary
   let running = 0, queued = 0, errors = 0, backoff = 0;
   if (coordState && coordState.agents) {
-    for (const info of Object.values(coordState.agents)) {
+    for (const [name, info] of Object.entries(coordState.agents)) {
       if (info.running) running++;
       else queued++;
-      if (isActiveError(info)) { errors++; backoff++; }
+      if (isActiveError(info, name)) { errors++; backoff++; }
     }
   }
   body += `<div style="margin-bottom:12px">
@@ -556,7 +730,6 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
 </div>`;
 
   if (coordState && coordState.agents) {
-    // Sort: dept heads first, then writers
     const deptOrder = ['ceo', 'operations', 'technology', 'marketing', 'bi-finance', 'investor-relations'];
     const sorted = Object.entries(coordState.agents).sort(([a], [b]) => {
       const ai = deptOrder.indexOf(a);
@@ -569,12 +742,29 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
 
     body += '<table><tr><th>Agent</th><th>Status</th><th>Last Start</th><th>Last Exit</th><th>Errors</th><th>Log</th></tr>';
     for (const [name, info] of sorted) {
-      const status = info.running ? 'running' : isActiveError(info) ? 'backoff' : 'idle';
+      const hasActiveError = isActiveError(info, name);
+      const status = info.running ? 'running' : hasActiveError ? 'backoff' : 'idle';
       const lastStart = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const lastExit = info.lastExited ? new Date(info.lastExited).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const errs = info.consecutiveErrors || 0;
 
-      // Try to read agent log
+      // Error age display
+      let errorDetail = '';
+      if (errs > 0) {
+        const errorTimestamp = info.lastErrorAt || info.lastRun;
+        if (errorTimestamp) {
+          const errorAge = Date.now() - new Date(errorTimestamp).getTime();
+          const ageStr = formatTimeAgo(errorAge);
+          const expectedInterval = getExpectedIntervalMs(name);
+          const isStale = errorAge >= (expectedInterval * 1.5);
+          if (isStale) {
+            errorDetail = ` <span class="stale" style="font-size:12px">(last error: ${ageStr} — stale)</span>`;
+          } else {
+            errorDetail = ` <span class="crit" style="font-size:12px">(last error: ${ageStr} — active)</span>`;
+          }
+        }
+      }
+
       const logName = name.replace(/^ops-/, '');
       let logPath = `${BASE}/logs/${name}.md`;
       if (!fs.existsSync(logPath)) logPath = `${BASE}/logs/${logName}.md`;
@@ -582,11 +772,11 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
 
       body += `<tr>
 <td>${escapeHtml(name)}</td>
-<td>${statusBadge(status)}</td>
-<td style="font-size:11px">${escapeHtml(lastStart)}</td>
-<td style="font-size:11px">${escapeHtml(lastExit)}</td>
+<td>${statusBadge(status)}${errorDetail}</td>
+<td style="font-size:12px">${escapeHtml(lastStart)}</td>
+<td style="font-size:12px">${escapeHtml(lastExit)}</td>
 <td>${errs > 0 ? `<span class="crit">${errs}</span>` : '0'}</td>
-<td>${logContent ? `<details><summary style="cursor:pointer;font-size:11px;color:#22c55e">view</summary><pre style="margin-top:6px;font-size:10px">${escapeHtml(redactCredentials(logContent))}</pre></details>` : '<span style="color:#64748b;font-size:11px">-</span>'}</td>
+<td>${logContent ? `<details><summary style="cursor:pointer;font-size:12px;color:#22c55e">view</summary><pre style="margin-top:6px;font-size:12px">${escapeHtml(redactCredentials(logContent))}</pre></details>` : '<span style="color:#64748b;font-size:12px">-</span>'}</td>
 </tr>`;
     }
     body += '</table>';
@@ -594,7 +784,6 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
     body += '<p style="color:#64748b">No coordinator state available</p>';
   }
 
-  // Coordinator log
   const coordLog = readFileTail(`${BASE}/logs/coordinator.log`, 50);
   body += `<div class="card wide" style="margin-top:16px">
 <h2>Recent Coordinator Log</h2>
@@ -613,7 +802,6 @@ function pageContent() {
 
   let body = '<h2 style="margin-bottom:12px">Content & SEO</h2>';
 
-  // Article counts
   body += `<div class="grid">
 <div class="card">
   <h2>Article Progress</h2>
@@ -631,7 +819,6 @@ function pageContent() {
 </div>
 </div>`;
 
-  // Category completion from state.md
   const stateContent = readFileSafe(`${BASE}/state.md`);
   const catMatch = stateContent.match(/## Category Completion Status[\s\S]*?\n\n/);
   if (catMatch) {
@@ -641,7 +828,6 @@ function pageContent() {
 </div>`;
   }
 
-  // Social posting
   body += `<div class="card wide" style="margin-top:16px">
 <h2>Social Posting</h2>
 <div class="metric"><span class="metric-label">Queue Size</span><span class="metric-value">${queueSize}</span></div>`;
@@ -650,7 +836,7 @@ function pageContent() {
     for (const [platform, data] of Object.entries(socialState.platforms)) {
       const lastPosted = data.lastPosted ? new Date(data.lastPosted).toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '-';
       const status = data.lastPosted ? 'active' : 'blocked';
-      body += `<tr><td>${escapeHtml(platform)}</td><td>${statusBadge(status)}</td><td style="font-size:11px">${escapeHtml(lastPosted)}</td></tr>`;
+      body += `<tr><td>${escapeHtml(platform)}</td><td>${statusBadge(status)}</td><td style="font-size:12px">${escapeHtml(lastPosted)}</td></tr>`;
     }
     body += '</table>';
   }
@@ -694,7 +880,6 @@ function pageSystem() {
 </div>
 </div>`;
 
-  // Coordinator config
   if (config) {
     body += `<div class="card wide" style="margin-top:16px">
 <h2>Coordinator Config</h2>
@@ -704,7 +889,6 @@ function pageSystem() {
 </div>`;
   }
 
-  // Rate limit proxy
   body += `<div class="card wide" style="margin-top:16px">
 <h2>Rate Limit Proxy</h2>
 <div class="metric"><span class="metric-label">Status</span><span class="metric-value">${exec('systemctl is-active selfhosting-proxy') === 'active' ? '<span class="ok">ACTIVE</span>' : '<span class="crit">INACTIVE</span>'}</span></div>
@@ -720,7 +904,6 @@ function pageAlerts() {
 
   let body = '<h2 style="margin-bottom:12px">Alerts & Escalations</h2>';
 
-  // Human action items
   let humanItems = [];
   if (latest) {
     const humanMatch = latest.content.match(/## Escalations Requiring Human Action([\s\S]*?)(?=\n## |$)/);
@@ -739,17 +922,17 @@ function pageAlerts() {
     }
   }
 
-  // CEO inbox human items
   const ceoInbox = getCeoInbox();
   const inboxHumanMatches = ceoInbox.match(/Requires:\s*human/gi);
   const inboxHumanCount = inboxHumanMatches ? inboxHumanMatches.length : 0;
 
-  // Agent errors
   let agentErrors = [];
   if (coordState && coordState.agents) {
     for (const [name, info] of Object.entries(coordState.agents)) {
-      if (isActiveError(info)) {
-        agentErrors.push({ name, errors: info.consecutiveErrors, running: info.running });
+      if (isActiveError(info, name)) {
+        const errorTimestamp = info.lastErrorAt || info.lastRun;
+        const errorAge = errorTimestamp ? Date.now() - new Date(errorTimestamp).getTime() : 0;
+        agentErrors.push({ name, errors: info.consecutiveErrors, running: info.running, errorAge });
       }
     }
   }
@@ -757,7 +940,7 @@ function pageAlerts() {
   const totalAlerts = humanItems.length + agentErrors.length;
 
   if (totalAlerts === 0) {
-    body += '<div style="text-align:center;padding:40px;color:#64748b"><p style="font-size:16px">No active alerts</p><p style="margin-top:8px">All systems operating normally</p></div>';
+    body += '<div style="text-align:center;padding:40px;color:#64748b"><p style="font-size:18px">No active alerts</p><p style="margin-top:8px">All systems operating normally</p></div>';
   } else {
     body += `<p style="margin-bottom:12px;color:#94a3b8">${totalAlerts} item${totalAlerts > 1 ? 's' : ''} need attention</p>`;
   }
@@ -770,13 +953,14 @@ function pageAlerts() {
   }
 
   if (inboxHumanCount > 0) {
-    body += `<div class="alert-item warning"><h3>CEO Inbox</h3><div class="meta">${inboxHumanCount} item(s) tagged "Requires: human" in CEO inbox</div><a href="/inbox" style="font-size:11px">View inbox &rarr;</a></div>`;
+    body += `<div class="alert-item warning"><h3>CEO Inbox</h3><div class="meta">${inboxHumanCount} item(s) tagged "Requires: human" in CEO inbox</div><a href="/inbox" style="font-size:12px">View inbox &rarr;</a></div>`;
   }
 
   if (agentErrors.length > 0) {
     body += '<h3 style="color:#f59e0b;margin:16px 0 8px">Agent Errors</h3>';
     for (const ae of agentErrors) {
-      body += `<div class="alert-item warning"><h3>${escapeHtml(ae.name)}</h3><div class="meta">${ae.errors} consecutive error(s) — ${ae.running ? 'currently running' : 'in backoff'}</div></div>`;
+      const ageStr = ae.errorAge ? formatTimeAgo(ae.errorAge) : 'unknown';
+      body += `<div class="alert-item warning"><h3>${escapeHtml(ae.name)}</h3><div class="meta">${ae.errors} consecutive error(s) — ${ae.running ? 'currently running' : 'in backoff'} — last error: ${ageStr} — <span class="crit">active</span></div></div>`;
     }
   }
 
@@ -807,8 +991,8 @@ function pageCommits() {
 
     body += `<div class="commit-item" data-tags="${tags.join(',')}" style="border-bottom:1px solid #2d3148;padding:8px 0">
 <div style="display:flex;justify-content:space-between;align-items:baseline">
-  <span><code style="color:#22c55e;font-size:11px">${escapeHtml(c.short)}</code> <span style="margin-left:8px">${escapeHtml(c.subject)}</span></span>
-  <span style="color:#64748b;font-size:11px;white-space:nowrap;margin-left:12px">${escapeHtml(c.date)}</span>
+  <span><code style="color:#22c55e;font-size:12px">${escapeHtml(c.short)}</code> <span style="margin-left:8px">${escapeHtml(c.subject)}</span></span>
+  <span style="color:#64748b;font-size:12px;white-space:nowrap;margin-left:12px">${escapeHtml(c.date)}</span>
 </div>
 </div>`;
   }
@@ -828,37 +1012,60 @@ function filterCommits(tag) {
   return layoutHtml('Commits', '/commits', body);
 }
 
-function pageUnauth() {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Access Denied</title>
-<style>body{background:#0f1117;color:#e2e8f0;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;text-align:center}h1{color:#ef4444;font-size:18px}p{color:#64748b;margin-top:8px;font-size:13px}</style>
-</head>
-<body><div><h1>401 — Access Denied</h1><p>Valid token required. Use ?token=... or Authorization header.</p></div></body>
-</html>`;
-}
-
 // -- Server --
 
-const server = http.createServer((req, res) => {
+function handleRequest(req, res) {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   const pathname = url.pathname;
 
-  // Auth check (except for the 401 page itself)
-  const authMethod = checkAuth(req);
-  if (!authMethod) {
-    res.writeHead(401, { 'Content-Type': 'text/html; charset=utf-8' });
-    res.end(pageUnauth());
+  // Public routes: login, logout
+  if (pathname === '/login' && req.method === 'GET') {
+    const error = url.searchParams.get('error');
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(pageLogin(error));
     return;
   }
 
-  // If authed via query param, set cookie and redirect to clean URL
-  if (authMethod === 'query') {
-    const cleanUrl = pathname + (url.search ? url.search.replace(/[?&]token=[^&]*/, '').replace(/^&/, '?').replace(/^\?$/, '') : '');
+  if (pathname === '/login' && req.method === 'POST') {
+    handleLogin(req, res);
+    return;
+  }
+
+  if (pathname === '/logout') {
+    destroySession(req);
     res.writeHead(302, {
-      'Location': cleanUrl || '/',
-      'Set-Cookie': `${COOKIE_NAME}=${AUTH_TOKEN}; HttpOnly; SameSite=Strict; Max-Age=${COOKIE_MAX_AGE}; Path=/`
+      'Location': '/login',
+      'Set-Cookie': clearSessionCookieHeader()
     });
+    res.end();
+    return;
+  }
+
+  // /api/status allows Bearer token auth (backward compat)
+  if (pathname === '/api/status') {
+    if (!checkSession(req) && !checkBearerAuth(req)) {
+      res.writeHead(401, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Unauthorized' }));
+      return;
+    }
+    const data = {
+      timestamp: new Date().toISOString(),
+      memory: getMemory(),
+      disk: getDisk(),
+      load: getLoad(),
+      services: getServices(),
+      articles: getArticleCounts(),
+      agents: getCoordinatorState(),
+      social: { queueSize: getSocialQueueSize(), state: getSocialState() }
+    };
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(data, null, 2));
+    return;
+  }
+
+  // All other routes require session auth
+  if (!checkSession(req)) {
+    res.writeHead(302, { 'Location': '/login' });
     res.end();
     return;
   }
@@ -891,19 +1098,6 @@ const server = http.createServer((req, res) => {
     } else if (pathname === '/commits') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(pageCommits());
-    } else if (pathname === '/api/status') {
-      const data = {
-        timestamp: new Date().toISOString(),
-        memory: getMemory(),
-        disk: getDisk(),
-        load: getLoad(),
-        services: getServices(),
-        articles: getArticleCounts(),
-        agents: getCoordinatorState(),
-        social: { queueSize: getSocialQueueSize(), state: getSocialState() }
-      };
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(data, null, 2));
     } else if (pathname === '/api/submit-message' && req.method === 'POST') {
       handleSubmitMessage(req, res);
     } else {
@@ -915,7 +1109,42 @@ const server = http.createServer((req, res) => {
     res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(layoutHtml('Error', '', '<h2>500 — Internal Server Error</h2>'));
   }
-});
+}
+
+function handleLogin(req, res) {
+  let body = '';
+  req.on('data', chunk => {
+    body += chunk;
+    if (body.length > 10000) req.destroy();
+  });
+  req.on('end', () => {
+    const ip = getClientIp(req);
+
+    // Brute force protection
+    if (!checkLoginRateLimit(ip)) {
+      res.writeHead(429, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(pageRateLimited());
+      return;
+    }
+
+    const params = new URLSearchParams(body);
+    const username = (params.get('username') || '').trim();
+    const password = (params.get('password') || '').trim();
+
+    if (username === 'admin' && password === PORTAL_PASSWORD) {
+      const sessionToken = createSession(ip);
+      res.writeHead(302, {
+        'Location': '/',
+        'Set-Cookie': sessionCookieHeader(sessionToken)
+      });
+      res.end();
+    } else {
+      recordLoginFailure(ip);
+      res.writeHead(302, { 'Location': '/login?error=1' });
+      res.end();
+    }
+  });
+}
 
 function handleSubmitMessage(req, res) {
   let body = '';
@@ -928,7 +1157,6 @@ function handleSubmitMessage(req, res) {
   req.on('end', () => {
     const ip = getClientIp(req);
 
-    // Rate limit
     if (!checkRateLimit(ip)) {
       if (req.headers['content-type']?.includes('application/json')) {
         res.writeHead(429, { 'Content-Type': 'application/json' });
@@ -954,13 +1182,11 @@ function handleSubmitMessage(req, res) {
         return;
       }
     } else {
-      // URL-encoded form
       const params = new URLSearchParams(body);
       subject = params.get('subject');
       message = params.get('message');
     }
 
-    // Validate
     if (!subject || !message) {
       const err = 'Subject and message are required.';
       if (contentType.includes('application/json')) {
@@ -973,7 +1199,6 @@ function handleSubmitMessage(req, res) {
       return;
     }
 
-    // Sanitize
     subject = sanitizeInput(subject.slice(0, MAX_SUBJECT_LEN));
     message = sanitizeInput(message.slice(0, MAX_MESSAGE_LEN));
 
@@ -989,7 +1214,6 @@ function handleSubmitMessage(req, res) {
       return;
     }
 
-    // Check line count
     if (message.split('\n').length > MAX_MESSAGE_LINES) {
       const err = `Message exceeds ${MAX_MESSAGE_LINES} line limit.`;
       if (contentType.includes('application/json')) {
@@ -1002,7 +1226,6 @@ function handleSubmitMessage(req, res) {
       return;
     }
 
-    // Append to CEO inbox
     const timestamp = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
     const entry = `\n---\n## ${timestamp} — From: Founder (via portal) | Type: directive\n**Status:** open\n\n**Subject:** ${subject}\n\n${message}\n---\n`;
 
@@ -1020,7 +1243,6 @@ function handleSubmitMessage(req, res) {
       return;
     }
 
-    // Success
     if (contentType.includes('application/json')) {
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ ok: true, message: 'Message delivered to CEO inbox' }));
@@ -1031,6 +1253,34 @@ function handleSubmitMessage(req, res) {
   });
 }
 
+// Start servers on both ports
+const server = http.createServer(handleRequest);
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`Board Portal running at http://0.0.0.0:${PORT}`);
 });
+
+// Also listen on port 80 for Cloudflare proxy (Flexible SSL mode)
+const serverHttp = http.createServer(handleRequest);
+serverHttp.listen(PORT_HTTP, '0.0.0.0', () => {
+  console.log(`Board Portal (HTTP) running at http://0.0.0.0:${PORT_HTTP}`);
+}).on('error', (err) => {
+  console.warn(`Could not listen on port ${PORT_HTTP}: ${err.message}.`);
+});
+
+// Also listen on port 443 for Cloudflare proxy (Full/Full Strict SSL mode)
+const SSL_KEY = `${BASE}/credentials/ssl/portal-key.pem`;
+const SSL_CERT = `${BASE}/credentials/ssl/portal-cert.pem`;
+try {
+  const sslOpts = {
+    key: fs.readFileSync(SSL_KEY),
+    cert: fs.readFileSync(SSL_CERT)
+  };
+  const serverHttps = https.createServer(sslOpts, handleRequest);
+  serverHttps.listen(PORT_HTTPS, '0.0.0.0', () => {
+    console.log(`Board Portal (HTTPS) running at https://0.0.0.0:${PORT_HTTPS}`);
+  }).on('error', (err) => {
+    console.warn(`Could not listen on port ${PORT_HTTPS}: ${err.message}.`);
+  });
+} catch (err) {
+  console.warn(`SSL certs not found. HTTPS listener disabled.`);
+}

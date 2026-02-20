@@ -353,11 +353,19 @@ function parseResetTime(output) {
 
 function applyUsageLimitPause(output, agentName) {
     const resetTime = parseResetTime(output);
-    const pauseUntil = resetTime || new Date(Date.now() + 5 * 60 * 60 * 1000); // fallback: +5h
+    const pauseUntil = resetTime || new Date(Date.now() + 1 * 60 * 60 * 1000); // fallback: +1h
     state.pausedUntil = pauseUntil.toISOString();
     saveState();
-    const source = resetTime ? `parsed from error message` : `fallback +5h`;
+    const source = resetTime ? `parsed from error message` : `fallback +1h`;
     log(`LIMIT ${agentName} hit Claude Max session limit — pausing ALL agents until ${state.pausedUntil} (${source})`);
+    // Reduce concurrency to prevent repeated rate limit hits (never below 3)
+    {
+        const prevMax = config.maxTotalConcurrent;
+        config.maxTotalConcurrent = Math.max(3, config.maxTotalConcurrent - 1);
+        if (config.maxTotalConcurrent < prevMax) {
+            log(`CONCURRENCY_ADAPT maxTotalConcurrent reduced: ${prevMax} -> ${config.maxTotalConcurrent} (min: 3)`);
+        }
+    }
 }
 
 function isGloballyPaused() {
@@ -560,9 +568,17 @@ function handleAgentExit(agentName, exitCode, triggerEventPath, outputBuffer) {
         agentState.lastRun = now; // record the run so 8h fallback doesn't fire immediately after unpause
     } else if (exitCode === 3) {
         // Model fallback detected by run-agent-once.sh (Haiku/Sonnet served instead of Opus)
-        log(`MODEL_FALLBACK ${agentName} — server served wrong model. Pausing ALL agents for 5h.`);
-        state.pausedUntil = new Date(Date.now() + 5 * 60 * 60 * 1000).toISOString();
+        log(`MODEL_FALLBACK ${agentName} — server served wrong model. Pausing ALL agents for 1h.`);
+        state.pausedUntil = new Date(Date.now() + 1 * 60 * 60 * 1000).toISOString();
         saveState();
+        // Reduce concurrency to prevent repeated rate limit hits (never below 3)
+        {
+            const prevMax = config.maxTotalConcurrent;
+            config.maxTotalConcurrent = Math.max(3, config.maxTotalConcurrent - 1);
+            if (config.maxTotalConcurrent < prevMax) {
+                log(`CONCURRENCY_ADAPT maxTotalConcurrent reduced: ${prevMax} -> ${config.maxTotalConcurrent} (min: 3)`);
+            }
+        }
         agentState.lastRun = now;
     } else {
         // Error: apply backoff

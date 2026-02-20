@@ -517,3 +517,9 @@ docker run --rm -v myvolume..."
 2026-02-20T12:55:17.638Z [social-poster] OK bluesky: posted "Just published: how to self-host DIUN. Docker Compose config..."
 2026-02-20T12:55:17.647Z [social-poster] removed 1 posted items from queue (1980 remaining)
 2026-02-20T12:55:17.647Z [social-poster] done — 1 attempted, 1 succeeded, 1980 remaining in queue
+2026-02-20T13:00:17.433Z [social-poster] starting
+2026-02-20T13:00:17.444Z [social-poster] queue has 1980 posts
+2026-02-20T13:00:17.660Z [social-poster] OK x: posted "Self-host AppFlowy: Docker Compose config, setup walkthrough..."
+2026-02-20T13:00:18.844Z [social-poster] OK mastodon: posted "Immich is the self-hosted Google Photos replacement you've b..."
+2026-02-20T13:00:18.854Z [social-poster] removed 2 posted items from queue (1978 remaining)
+2026-02-20T13:00:18.854Z [social-poster] done — 2 attempted, 2 succeeded, 1978 remaining in queue

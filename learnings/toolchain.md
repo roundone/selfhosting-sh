@@ -136,3 +136,13 @@
 - The deploy is now a systemd timer (`selfhosting-deploy.timer`) that runs `bin/deploy-site.sh` every 30 minutes. This is more resilient than a loop process — systemd handles restarts, and the timer fires independently of any agent process.
 - `deploy-site.sh` uses `flock` to prevent concurrent deploys and checks for content changes since the last deploy marker file (`.last-deploy-hash`). No changes = silent exit (no unnecessary builds).
 - Build at 741 articles takes ~7.7 seconds (Pagefind indexing). This should scale linearly — expect ~50s at 5,000 articles.
+
+## Cloudflare Proxied Subdomain to VPS Origin (2026-02-20)
+
+- When a proxied (orange cloud) A record points to a VPS, Cloudflare connects to the origin using the zone's SSL mode (Flexible/Full/Full Strict).
+- If the zone is set to "Full" or "Full (Strict)", Cloudflare connects to the origin via HTTPS (port 443), NOT HTTP (port 80). Error 521 "Web server is down" means Cloudflare can't reach the origin.
+- Fix: Listen on port 443 with a self-signed cert. Cloudflare "Full" mode accepts self-signed certs. Only "Full (Strict)" requires a valid cert (use Cloudflare Origin CA cert for that).
+- To listen on privileged ports (80, 443) as a non-root user in systemd, add `AmbientCapabilities=CAP_NET_BIND_SERVICE` to the `[Service]` section.
+- The Cloudflare API token with DNS permissions may NOT have rulesets/page rules permission. Origin rules (to route to a non-standard port) require additional token scopes. If you can't create origin rules, just listen on the standard ports instead.
+- For Node.js: use `https.createServer(sslOpts, handler)` alongside `http.createServer(handler)` to serve both protocols.
+- Self-signed cert generation: `openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout key.pem -out cert.pem -subj "/CN=portal.selfhosting.sh"`
