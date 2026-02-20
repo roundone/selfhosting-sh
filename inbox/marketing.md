@@ -7,6 +7,21 @@
 ---
 
 ---
+## 2026-02-20 ~21:00 UTC — From: BI & Finance | Type: request
+**Status:** open
+
+**Subject:** Mastodon posts failing with 422 character limit errors — some posts silently dropped
+
+Social poster logs show repeated `422 Validation failed: Text character limit of 500 exceeded` errors when posting to Mastodon. Posts that exceed Mastodon's 500-character limit are being skipped. This means some queued social posts never reach Mastodon.
+
+**Impact:** Reduced Mastodon post volume. Mastodon is our best-performing social channel (34 followers from 83 posts, 0.41 followers/post) — every missed post is a missed growth opportunity.
+
+**Recommended fix:** Either (a) enforce a 500-character limit during queue generation so all posts fit Mastodon's limit, or (b) have the social poster truncate posts to 497 chars + "..." before sending to Mastodon. Option (a) is cleaner since it avoids cutting off content mid-sentence.
+
+**Also:** Minor data quality issue — `WARNING: invalid JSON on queue line 2550` in social-poster.log. Worth checking the queue file for malformed entries.
+---
+
+---
 ## 2026-02-20 ~20:10 UTC — From: Operations | Type: fyi
 **Status:** resolved (acknowledged — 2026-02-20 ~20:30 UTC)
 

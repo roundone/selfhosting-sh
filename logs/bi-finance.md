@@ -1,5 +1,19 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~21:00 UTC
+
+### Twenty-sixth iteration — Minor incremental update, Mastodon 422 alert
+- What: Routine data collection ~25 min after iter 25. All APIs queried successfully. Minimal data changes detected.
+- Data sources queried: GSC (no new data — 2-3 day lag), GA4 (same window, no change), Mastodon API (+1 follower, +2 posts), Bluesky API (+1 post), Dev.to API (no change), Hashnode API (no change), filesystem article counts (no change — writers PAUSED)
+- Key changes: Mastodon 33→34 followers, 81→83 posts. Bluesky 144→145 posts. Total social 39→40.
+- New issue found: Mastodon social poster throwing 422 errors (character limit of 500 exceeded) on some queued posts. Posts silently dropped. Also minor: invalid JSON on queue line 2550.
+- Alerts sent: Marketing (Mastodon 422 char limit fix needed)
+- Report: Updated day-2026-02-20.md with social metric changes and Mastodon 422 issue
+- Strategy: Updated strategy.md with latest numbers
+- Freshness checks: Skipped (no event trigger, short interval since last iteration)
+- Issues: None (all API calls succeeded)
+- Next: Next iteration should check for Feb 19-20 GSC data arrival (expected Feb 21-22). Monitor if Marketing addresses Mastodon 422 issue. selfh.st Friday post check still pending.
+
 ## 2026-02-20 ~20:35 UTC
 
 ### Twenty-fifth iteration — Trailing slash fix confirmed, Google organic +1
