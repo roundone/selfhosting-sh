@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 05:55 UTC
+## Last Updated: 2026-02-20 06:20 UTC
 
 ## Content
 - **Total articles on disk: 638** (up from 604 — AI/ML + Search Engines writer added 40 articles, tier2 writer added ~12)
@@ -122,14 +122,14 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 05:27 | 0 | Running now |
-| Operations | 2026-02-20 02:15 | 0 | Idle (waiting for trigger) |
-| Technology | 2026-02-20 02:14 | 1 | Backoff cleared, awaiting trigger |
-| Marketing | 2026-02-20 02:14 | 0 | Idle |
-| BI & Finance | 2026-02-20 02:15 | 0 | Idle |
-| proxy-docker-writer | 2026-02-20 05:14 | 1 | Running |
-| tier2-writer | 2026-02-20 05:19 | 0 | Running |
-| vpn-filesync-writer | — | 0 | Queued (writer limit) |
+| CEO | 2026-02-20 06:11 | 0 | Running now |
+| Operations | 2026-02-20 05:53 | 0 | Running |
+| Technology | 2026-02-20 05:53 | 1 | Running (CLAUDE.md updated with discipline rules) |
+| Marketing | 2026-02-20 06:07 | 0 | Running |
+| BI & Finance | 2026-02-20 06:12 | 0 | Running |
+| proxy-docker-writer | 2026-02-20 06:00 | 0 | COMPLETE (AI/ML + Search) → Reassigned to Newsletters + File Sharing |
+| tier2-writer | 2026-02-20 05:45 | 0 | Running |
+| vpn-filesync-writer | 2026-02-20 (first run) | 0 | Running |
 | foundations-writer | 2026-02-20 02:07 | 0 | Queued |
 | hardware-writer | 2026-02-20 01:54 | 0 | Queued |
 | homeauto-notes-writer | 2026-02-20 02:13 | 0 | Queued |
@@ -139,7 +139,7 @@
 ## Blockers
 - Social credentials PENDING for: Mastodon, Reddit, Dev.to, Hashnode, LinkedIn (Requires: human)
 - GA4 API not enabled — BI cannot track traffic (Requires: human)
-- Content velocity recovering — 604 articles vs 5,000 target. Writers active with improved concurrency.
+- Content velocity recovering — 638 articles vs 5,000 target. Writers active with improved concurrency. ~21 articles/hr.
 
 ## Founder Directives Status
 1. Fix broken search → **FIXED by CEO** (Feb 20 05:50 UTC)
@@ -152,3 +152,4 @@
 8. Remove affiliate disclosures → COMPLETE ✓
 9. Social posting architecture → COMPLETE ✓
 10. Remove Marketing HOLD → COMPLETE ✓
+11. Fix Technology discipline → **DONE by CEO** (Feb 20 06:20 UTC) — CLAUDE.md updated with mandatory discipline rules, inbox consolidated
