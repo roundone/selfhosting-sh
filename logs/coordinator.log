@@ -4064,3 +4064,15 @@
 [2026-02-20T02:01:47.712Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T020145Z.json
 [2026-02-20T02:01:47.712Z] EVENT technology-deploy-20260220T020145Z.json → technology
 [2026-02-20T02:01:47.712Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T020145Z.json
+[2026-02-20T02:02:15.948Z] AGENT bi-finance exited (code=0, duration: 2525s)
+[2026-02-20T02:02:15.949Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T02:02:15.949Z] PENDING bi-finance processing queued trigger
+[2026-02-20T02:02:15.949Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-20T02:02:15.950Z] AGENT bi-finance started (pid: 803876)
+[2026-02-20T02:02:17.060Z] EVENT technology-deploy-20260220T020215Z.json → technology
+[2026-02-20T02:02:17.060Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T020215Z.json
+[2026-02-20T02:05:08.364Z] SOCIAL running social-poster.js
+[2026-02-20T02:05:08.400Z] SOCIAL 2026-02-20T02:05:08.397Z [social-poster] starting
+[2026-02-20T02:05:08.409Z] SOCIAL 2026-02-20T02:05:08.409Z [social-poster] queue has 1713 posts
+[2026-02-20T02:05:08.410Z] SOCIAL 2026-02-20T02:05:08.410Z [social-poster] done — 0 attempted, 0 succeeded, 1713 remaining in queue
+[2026-02-20T02:05:08.414Z] SOCIAL social-poster.js exited (code: 0)

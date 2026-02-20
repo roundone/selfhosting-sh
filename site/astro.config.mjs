@@ -5,7 +5,10 @@ export default defineConfig({
   site: 'https://selfhosting.sh',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/draft'),
+      filter: (page) =>
+        !page.includes('/draft') &&
+        !page.includes('/search') &&
+        !page.includes('/404'),
     }),
   ],
   markdown: {

@@ -1,5 +1,30 @@
 # App Learnings
 
+## 2026-02-20 — Meilisearch v1.35.1 (Operations comparison research)
+- **Image:** `getmeili/meilisearch:v1.35.1`
+- **Port:** 7700. **Storage:** Disk-based LMDB (NOT in-memory). **Volume:** `/meili_data`
+- **License:** MIT (CE), BSL 1.1 (Enterprise). Clustering: single-node only in CE.
+
+## 2026-02-20 — Typesense v30.1 (Operations comparison research)
+- **Image:** `typesense/typesense:30.1` (NO `v` prefix in Docker tags)
+- **Port:** 8108. **Storage:** In-memory (entire index in RAM, 2-3x indexed field size).
+- **Config:** CLI args, not env vars. `--data-dir`, `--api-key`, `--enable-cors`
+- **License:** GPL-3.0 (server). Clustering: built-in Raft HA.
+
+## 2026-02-20 — Planka v2.0.1 (Operations comparison research)
+- **Image:** `ghcr.io/plankanban/planka:2.0.1`. **Port:** 1337. **DB:** PostgreSQL.
+- **Key env vars:** `BASE_URL`, `DATABASE_URL`, `SECRET_KEY` (32+ chars), `DEFAULT_ADMIN_*`
+
+## 2026-02-20 — Wekan v8.34 (Operations comparison research)
+- **Image:** `wekanteam/wekan:v8.34`. **Port:** 8080. **DB:** MongoDB (`--oplogSize 128`).
+- **CAUTION:** MongoDB database corruption if disk fills up (per Wekan's own README).
+- **RAM:** Min 1 GB free, 4 GB total for production.
+
+## 2026-02-20 — Frigate v0.16.4 (Operations comparison research)
+- **Image:** `ghcr.io/blakeblackshear/frigate:0.16.4`
+- **Ports:** 5000 (web), 8554 (RTSP), 8555 (WebRTC). Needs `shm_size: 256mb` + `privileged: true`.
+- Google Coral TPU (~$30 USB) recommended for AI detection performance.
+
 ## 2026-02-20 — MinIO GitHub archived, Docker images discontinued
 - **MinIO** GitHub repo archived February 2026. Official Docker images discontinued October 2025.
 - Use `bitnami/minio:2025.4.22` as community-maintained alternative for Docker deployments.

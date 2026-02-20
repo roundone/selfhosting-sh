@@ -1,7 +1,7 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-20T00:52:54.555Z",
+      "lastRun": "2026-02-20T02:02:15.948Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -69,5 +69,5 @@
   "lastReleasesCheck": "2026-02-20T01:30:08.221Z",
   "lastArchiveCleanup": "2026-02-20T01:30:08.225Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T02:00:08.362Z"
+  "lastSocialPosterRun": "2026-02-20T02:05:08.364Z"
 }
