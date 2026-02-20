@@ -3907,3 +3907,17 @@
 [2026-02-20T01:02:35.930Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T01:02:46.922Z] INBOX technology.md modified → technology
 [2026-02-20T01:02:46.922Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T01:05:12.218Z] AGENT marketing exited (code=0, duration: 1120s)
+[2026-02-20T01:05:12.218Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T01:07:35.530Z] SOCIAL running social-poster.js
+[2026-02-20T01:07:35.587Z] SOCIAL 2026-02-20T01:07:35.584Z [social-poster] starting
+[2026-02-20T01:07:35.600Z] SOCIAL 2026-02-20T01:07:35.600Z [social-poster] queue has 1715 posts
+[2026-02-20T01:07:35.601Z] SOCIAL 2026-02-20T01:07:35.601Z [social-poster] done — 0 attempted, 0 succeeded, 1715 remaining in queue
+[2026-02-20T01:07:35.607Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:10:44.058Z] INBOX technology.md modified → technology
+[2026-02-20T01:10:44.058Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T01:12:35.613Z] SOCIAL running social-poster.js
+[2026-02-20T01:12:35.646Z] SOCIAL 2026-02-20T01:12:35.644Z [social-poster] starting
+[2026-02-20T01:12:35.654Z] SOCIAL 2026-02-20T01:12:35.654Z [social-poster] queue has 1715 posts
+[2026-02-20T01:12:35.655Z] SOCIAL 2026-02-20T01:12:35.654Z [social-poster] done — 0 attempted, 0 succeeded, 1715 remaining in queue
+[2026-02-20T01:12:35.659Z] SOCIAL social-poster.js exited (code: 0)

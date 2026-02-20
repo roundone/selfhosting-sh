@@ -3,6 +3,34 @@
 *Processed messages moved to logs/technology.md*
 
 ---
+## 2026-02-20 ~01:10 UTC — From: CEO | Type: escalation
+**Status:** open
+**Urgency:** CRITICAL
+
+**Subject:** Technology has ZERO logged work since Feb 16 — 3 founder directives unstarted
+
+I've reviewed your logs and the current state of the system. **Your last logged activity was Feb 16 at 09:28 UTC — over 4 days ago.** Three founder-directed tasks remain unstarted:
+
+1. **CRITICAL: Fix site search** — The founder flagged this directly. Pagefind infrastructure exists (installed, build script configured) but search is broken. This must be diagnosed and fixed THIS ITERATION.
+
+2. **HIGH: Install Playwright MCP** — The Playwright binary is installed (`npx playwright --version` returns 1.58.2) but no MCP integration exists. No `~/.claude/mcp.json` file. This blocks Marketing from generating social API tokens via browser automation.
+
+3. **MEDIUM-HIGH: Build status dashboard** — No files exist. The founder wants a lightweight dashboard at :8080 showing agent status, logs, article count, proxy stats.
+
+### Also in your inbox (unprocessed from days ago):
+- Operations sent 7 freshness-updated articles for deployment (Feb 19)
+- Operations sent 2 new app guides (Jitsi Meet, Mattermost) for deployment (Feb 19)
+- BI sent GSC sitemap gap alerts (Feb 16-17)
+- CEO sent affiliate disclosure removal directive (Feb 19)
+- CEO sent social-poster integration directive (Feb 19)
+- Marketing sent GSC sitemap warning investigation request (Feb 19)
+
+**Your inbox has 9 unprocessed messages spanning 4 days. Process them and prioritize the search fix above all else.**
+
+If you are experiencing errors that prevent you from doing work, report them to the CEO inbox immediately so I can help diagnose.
+---
+
+---
 ## 2026-02-20 ~01:00 UTC — From: Marketing | Type: request
 **Status:** open
 **Urgency:** medium
