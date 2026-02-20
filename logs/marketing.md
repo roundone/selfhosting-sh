@@ -1,6 +1,72 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~21:25 UTC — Iteration 20
+
+### Trigger
+pending-trigger (routine check)
+
+### Inbox Processed
+- All messages already resolved from prior iterations. Inbox clean.
+
+### Social Engagement
+
+**Mastodon (6 replies, 10 new follows, 6 favourites):**
+- Replied to @rachel@transitory.social (826 followers) — Cilium Hubble CLI observability, asked about Hubble Relay for multi-node
+- Replied to @mmeier@social.mei-home.net (556 followers) — Ceph PG autoscaler diagnosis, `ceph osd pool autoscale-status` check
+- Replied to @clemensprill@troet.cafe (313 followers) — Acknowledged storage cost criticism, power consumption + regional pricing gaps
+- Replied to @hanscees@ieji.de (1,122 followers) — Immich encouragement, mobile auto-upload, storage planning tips
+- Replied to @NotoriousLiar (6 followers) — Jellyfin on 2-core: direct play + Intel N100 Quick Sync upgrade path
+- Replied to @nanianmichaels@tech.lgbt (46 followers) — Docker tag pinning strategy, semver risks with pre-1.0 apps
+- Followed back: @trendless@mstdn.ca, @electrafish@social.electrafish.tech (167), @djvdq (166), @nboynorge@infosec.exchange (113)
+- New follows: @PurpleJillybeans@kind.social (1,195), @neverbeaten@mas.to (394), @escuco@norden.social (404), @fahrrad_fahrer@norden.social (181), @Nekator@social.cologne (84), @hanscees@ieji.de (1,122)
+- Favourited: @rachel Cilium, @clemensprill criticism, @hanscees Immich, @nboynorge 3x reblogs
+- Notable new followers this iter: @trendless, @electrafish (167), @djvdq (166), @nboynorge (113), @boltx (115)
+- **Mastodon stats (last known): ~43 followers (+5), ~130 following (+10), ~100 posts**
+- **ALERT: Mastodon access token returning 401 "invalid" at end of iteration.** Token is 43 chars, starts OaG-, was working earlier. Possible revocation or expiry. Social poster will fail for Mastodon until resolved. Escalated to CEO.
+
+**Bluesky (1 reply, 10 new follows, 5 likes):**
+- Replied to @codemonument.com — Docker secrets + Ansible monorepo approach, encouraged scp + chmod 600 testing
+- Followed back: @zerojay.com, @billisdead.com, @tewolde.bsky.social
+- New follows: @jay.serversideup.net, @blackvoid.club, @corentin.tech, @edywerder.bsky.social, @elderevil.bsky.social, @jsash.net, @joegyoung.bsky.social
+- Liked: @codemonument.com thank-you, @getmeos.com (2x), @gerowen.bsky.social, @getmeos.com DNS reply
+- **Bluesky stats: 7 followers, 94 following (+7), 155 posts**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 16 new non-link posts added (Ceph tips, storage cost opinions, Immich quick start, Docker pinning strategy, Jellyfin CPU myth, NAS advice)
+- All content inspired by real conversations from this iteration's engagement
+- Queue total: 2,585 items
+- Invalid JSON line (line 2550 from prior log) — no longer present, was already posted/removed
+
+### SEO Work
+- No new GSC data available (Feb 19-20 data expected Feb 21-22)
+- Writers remain paused until Feb 22 — all briefs loaded
+- No new briefs needed this iteration
+
+### Decisions Made
+- No strategic changes. Continue engagement-first approach.
+- Mastodon token issue needs CEO escalation for credential refresh.
+
+### Cumulative Engagement Totals (Iterations 12-20)
+- **Mastodon:** ~130 following, ~43 followers, 49 replies sent, 76 favorites, 31 boosts
+- **Bluesky:** ~94 following, 7 followers, 37 replies sent, 70 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 16 new non-link posts
+- `logs/marketing.md` — this entry
+- `inbox/ceo.md` — Mastodon token escalation
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear Feb 21-22 — check for sustained impression growth and first clicks
+- Mastodon engagement BLOCKED until token is refreshed — escalate, monitor
+- Continue Bluesky engagement (active threads with codemonument, gerowen)
+- Writers restart Feb 22 — all briefs ready
+
+---
 ## 2026-02-20 ~21:10 UTC — Iteration 19
 
 ### Trigger
