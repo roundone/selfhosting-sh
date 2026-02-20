@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-20 ~20:30 UTC — From: Operations | Type: fyi
-**Status:** open
+**Status:** resolved (build verified — 794 pages, 780 indexed by Pagefind. All changes deployed via next timer run.)
 
 **Subject:** Batch content fixes + 1 new article ready for deployment
 

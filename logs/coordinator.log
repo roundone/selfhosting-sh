@@ -7635,3 +7635,40 @@ iClou..."
 [2026-02-20T19:35:23.134Z] INBOX operations.md modified → operations
 [2026-02-20T19:35:23.134Z] AGENT operations starting (trigger: inbox-message)
 [2026-02-20T19:35:23.136Z] AGENT operations started (pid: 180362)
+[2026-02-20T19:38:41.964Z] AGENT marketing exited (code=0, duration: 729s)
+[2026-02-20T19:38:41.964Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T19:39:44.063Z] STATUS running=1/4 writers=0/1 freeMem=6924MB agents=[operations(261s)] paused=no
+[2026-02-20T19:39:44.063Z] SOCIAL running social-poster.js
+[2026-02-20T19:39:44.098Z] SOCIAL 2026-02-20T19:39:44.096Z [social-poster] starting
+[2026-02-20T19:39:44.108Z] SOCIAL 2026-02-20T19:39:44.108Z [social-poster] queue has 2536 posts
+[2026-02-20T19:39:44.345Z] SOCIAL 2026-02-20T19:39:44.345Z [social-poster] OK x: posted "Self-hosting storage math:
+
+4TB HDD = ~$80 (one-time)
+iCloud..."
+[2026-02-20T19:39:44.358Z] SOCIAL 2026-02-20T19:39:44.357Z [social-poster] removed 1 posted items from queue (2535 remaining)
+[2026-02-20T19:39:44.358Z] SOCIAL 2026-02-20T19:39:44.358Z [social-poster] done — 1 attempted, 1 succeeded, 2535 remaining in queue
+[2026-02-20T19:39:44.364Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:43:42.848Z] INBOX operations.md modified → operations
+[2026-02-20T19:43:42.848Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T19:44:03.818Z] INBOX technology.md modified → technology
+[2026-02-20T19:44:03.819Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-20T19:44:03.820Z] AGENT technology started (pid: 181975)
+[2026-02-20T19:44:19.563Z] INBOX marketing.md modified → marketing
+[2026-02-20T19:44:19.563Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-20T19:44:19.564Z] AGENT marketing started (pid: 182054)
+[2026-02-20T19:44:44.087Z] STATUS running=3/4 writers=0/1 freeMem=6534MB agents=[operations(561s), technology(40s), marketing(25s)] paused=no
+[2026-02-20T19:44:44.087Z] SOCIAL running social-poster.js
+[2026-02-20T19:44:44.129Z] SOCIAL 2026-02-20T19:44:44.127Z [social-poster] starting
+[2026-02-20T19:44:44.139Z] SOCIAL 2026-02-20T19:44:44.139Z [social-poster] queue has 2535 posts
+[2026-02-20T19:44:44.653Z] SOCIAL 2026-02-20T19:44:44.653Z [social-poster] OK mastodon: posted "WireGuard is absurdly fast compared to OpenVPN — 2-3x throug..."
+[2026-02-20T19:44:44.985Z] SOCIAL 2026-02-20T19:44:44.984Z [social-poster] OK bluesky: posted "Unpopular take: Docker Compose handles 95% of home server ne..."
+[2026-02-20T19:44:44.993Z] SOCIAL 2026-02-20T19:44:44.993Z [social-poster] removed 2 posted items from queue (2533 remaining)
+[2026-02-20T19:44:44.993Z] SOCIAL 2026-02-20T19:44:44.993Z [social-poster] done — 2 attempted, 2 succeeded, 2533 remaining in queue
+[2026-02-20T19:44:44.998Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:48:19.108Z] EVENT bi-finance-new-articles-20260220T194817Z.json → bi-finance
+[2026-02-20T19:48:19.109Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T194817Z.json)
+[2026-02-20T19:48:19.110Z] AGENT bi-finance started (pid: 183586)
+[2026-02-20T19:48:19.110Z] EVENT technology-deploy-20260220T194817Z.json → technology
+[2026-02-20T19:48:19.110Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T194817Z.json
+[2026-02-20T19:48:34.669Z] INBOX technology.md modified → technology
+[2026-02-20T19:48:34.669Z] QUEUED technology already running — trigger queued: inbox-message

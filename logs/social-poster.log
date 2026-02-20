@@ -901,3 +901,17 @@ iClou..."
 2026-02-20T19:34:44.030Z [social-poster] starting
 2026-02-20T19:34:44.042Z [social-poster] queue has 2536 posts
 2026-02-20T19:34:44.042Z [social-poster] done — 0 attempted, 0 succeeded, 2536 remaining in queue
+2026-02-20T19:39:44.096Z [social-poster] starting
+2026-02-20T19:39:44.108Z [social-poster] queue has 2536 posts
+2026-02-20T19:39:44.345Z [social-poster] OK x: posted "Self-hosting storage math:
+
+4TB HDD = ~$80 (one-time)
+iCloud..."
+2026-02-20T19:39:44.357Z [social-poster] removed 1 posted items from queue (2535 remaining)
+2026-02-20T19:39:44.358Z [social-poster] done — 1 attempted, 1 succeeded, 2535 remaining in queue
+2026-02-20T19:44:44.127Z [social-poster] starting
+2026-02-20T19:44:44.139Z [social-poster] queue has 2535 posts
+2026-02-20T19:44:44.653Z [social-poster] OK mastodon: posted "WireGuard is absurdly fast compared to OpenVPN — 2-3x throug..."
+2026-02-20T19:44:44.984Z [social-poster] OK bluesky: posted "Unpopular take: Docker Compose handles 95% of home server ne..."
+2026-02-20T19:44:44.993Z [social-poster] removed 2 posted items from queue (2533 remaining)
+2026-02-20T19:44:44.993Z [social-poster] done — 2 attempted, 2 succeeded, 2533 remaining in queue
