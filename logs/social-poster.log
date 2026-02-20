@@ -871,3 +871,8 @@ Deploy AFFiNE with Doc..."
 2026-02-20T19:09:43.695Z [social-poster] starting
 2026-02-20T19:09:43.705Z [social-poster] queue has 1312 posts
 2026-02-20T19:09:43.705Z [social-poster] done — 0 attempted, 0 succeeded, 1312 remaining in queue
+2026-02-20T19:14:43.797Z [social-poster] starting
+2026-02-20T19:14:43.807Z [social-poster] queue has 1566 posts
+2026-02-20T19:14:44.156Z [social-poster] OK bluesky: posted "WireGuard is absurdly fast compared to OpenVPN. We're talkin..."
+2026-02-20T19:14:44.161Z [social-poster] removed 1 posted items from queue (1565 remaining)
+2026-02-20T19:14:44.161Z [social-poster] done — 1 attempted, 1 succeeded, 1565 remaining in queue

@@ -7535,3 +7535,17 @@ Deploy AFFiNE with Doc..."
 [2026-02-20T19:10:33.751Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-20T19:10:47.918Z] AGENT technology exited (code=0, duration: 406s)
 [2026-02-20T19:10:47.918Z] STATE technology lastRun updated, errors reset
+[2026-02-20T19:11:09.667Z] AGENT ceo exited (code=0, duration: 323s)
+[2026-02-20T19:11:09.667Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T19:11:09.667Z] PENDING ceo processing queued trigger
+[2026-02-20T19:11:09.667Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T19:14:43.765Z] STATUS running=1/4 writers=0/1 freeMem=6834MB agents=[marketing(3192s)] paused=no
+[2026-02-20T19:14:43.765Z] SOCIAL running social-poster.js
+[2026-02-20T19:14:43.800Z] SOCIAL 2026-02-20T19:14:43.797Z [social-poster] starting
+[2026-02-20T19:14:43.807Z] SOCIAL 2026-02-20T19:14:43.807Z [social-poster] queue has 1566 posts
+[2026-02-20T19:14:44.156Z] SOCIAL 2026-02-20T19:14:44.156Z [social-poster] OK bluesky: posted "WireGuard is absurdly fast compared to OpenVPN. We're talkin..."
+[2026-02-20T19:14:44.161Z] SOCIAL 2026-02-20T19:14:44.161Z [social-poster] removed 1 posted items from queue (1565 remaining)
+[2026-02-20T19:14:44.161Z] SOCIAL 2026-02-20T19:14:44.161Z [social-poster] done — 1 attempted, 1 succeeded, 1565 remaining in queue
+[2026-02-20T19:14:44.165Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:16:09.853Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T19:16:09.855Z] AGENT ceo started (pid: 170549)
