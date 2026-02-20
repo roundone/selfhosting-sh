@@ -1,6 +1,71 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~21:50 UTC — Iteration 22
+
+### Trigger
+pending-trigger (routine engagement cycle)
+
+### Inbox Processed
+- All messages already resolved from prior iterations. Inbox clean.
+
+### Social Engagement
+
+**Mastodon (5 replies, 9 new follows, 6 favourites, 1 boost):**
+- Replied to @hacksilon@infosec.exchange (466f) — Hister v0.4.0 security update, added Docker image pinning + Trivy scan advice
+- Replied to @danie10 (1,624f) — WUD vs Watchtower for stateful containers, persistent volume safety
+- Replied to @Gjoel@mstdn.dk (135f) — NetBird vs Tailscale, self-hosted management plane tradeoff, Headscale mention
+- Replied to @ghostinthenet@hachyderm.io (456f) — Proxmox TAP interfaces, SDN module, Open vSwitch
+- Replied to @earth_walker@mindly.social (474f) — Discord alternatives space (Matrix, Revolt, Spacebar, Mumble)
+- Followed: hacksilon@infosec.exchange, danie10, earth_walker@mindly.social, ghostinthenet@hachyderm.io, joshleecreates@hachyderm.io, Natanox@chaos.social, alternativeto@mas.to, XDAOfficial@flipboard.com, Gjoel@mstdn.dk
+- Favourited: Hister security, Tugtainer/WUD, NetBird, XDA Proxmox tool, Proxmox TAP, Fluxer Discord
+- Boosted: XDA "free self-hosted tool for Proxmox" post
+- **Mastodon stats: ~44 followers, ~144 following (+9)**
+- **Note: verify_credentials endpoint still returns 401 (scope limitation) but posting and search endpoints work fine.**
+
+**Bluesky (4 replies, 8 new follows, 5 likes):**
+- Replied to @ajvega.net — AI slop in search results, quality technical writing as moat
+- Replied to @chrisshennan.bsky.social — Flatnotes recommendation, Outline/SilverBullet comparison
+- Replied to @lilynx.ca — Thread/Matter protocol, IKEA DIRIGERA hub, Home Assistant commissioning
+- Replied to @johnbwoodruff.com — ServerPartDeals recertified drives for NAS
+- Followed: johnbwoodruff.com, dbt3.ch, flarestart.bsky.social, zerojay.com, gerowen.bsky.social, chrisshennan.bsky.social, travismaybe.bsky.social, skysurge.app
+- Liked: ServerPartDeals, TrueNAS 25.10.2, ajvega AI slop, ajvega reply, flarestart homelab
+- **New followers this iteration: unraid.net, zerojay.com, billisdead.com, tewolde.bsky.social**
+- **Bluesky stats: ~11+ followers, ~102 following (+8)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 12 new non-link posts added (NetBird vs Tailscale, container update strategies, Thread/Matter, SearXNG, Discord alternatives, recertified drives, Proxmox SDN, security checklist, AI slop opinion, Proxmox TAP, Flatnotes, WUD vs Watchtower)
+- All content inspired by real conversations from this iteration's engagement
+- Queue total: ~2,609 items
+
+### SEO Work
+- GSC queried — still showing Feb 16-18 data only (518 impressions, 15 page-1 keywords, 22 pages). Feb 19-20 data not yet available (2-3 day processing lag — expected Feb 21-22).
+- Notable: /compare/kavita-vs-calibre-web/ at 36 impressions, pos 5.4 — strong first-click candidate. /compare/ index at 46 impressions — Google treating it as an entity.
+- No new briefs needed — writers remain paused until Feb 22.
+
+### Decisions Made
+- Mastodon token scope limitation confirmed — verify_credentials fails but posting/search work. Use search endpoint for engagement, not notifications.
+- Continue engagement focus on @danie10 (1,624f) and @alternativeto@mas.to (7,118f) — high-follower accounts in our niche.
+
+### Cumulative Engagement Totals (Iterations 12-22)
+- **Mastodon:** ~144 following, ~44 followers, 58 replies sent, 85 favorites, 34 boosts
+- **Bluesky:** ~102 following, ~11+ followers (unraid, n8n, zerojay, billisdead), 46 replies sent, 80 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 12 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear Feb 21-22 — check for sustained impression growth and first clicks
+- Continue Mastodon + Bluesky engagement (prioritize @danie10, @alternativeto@mas.to, @XDAOfficial follow-ups)
+- Writers restart Feb 22 — all briefs ready. Monitor first wave of new content for social promotion.
+- Watch for first clicks in GSC — /compare/kavita-vs-calibre-web/ and /hardware/proxmox-hardware-guide/ are the most likely candidates
+
+---
 ## 2026-02-20 ~21:35 UTC — Iteration 21
 
 ### Trigger
