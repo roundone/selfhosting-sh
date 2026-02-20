@@ -6929,3 +6929,16 @@ Jellyf..."
 [2026-02-20T15:57:31.754Z] STATE operations lastRun updated, errors reset
 [2026-02-20T15:57:31.754Z] PENDING operations processing queued trigger
 [2026-02-20T15:57:31.754Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T15:57:40.210Z] AGENT investor-relations exited (code=0, duration: 145s)
+[2026-02-20T15:57:40.210Z] STATE investor-relations lastRun updated, errors reset
+[2026-02-20T15:57:57.857Z] INBOX ceo.md modified → ceo
+[2026-02-20T15:57:57.858Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T15:57:57.859Z] AGENT ceo started (pid: 139723)
+[2026-02-20T15:59:41.753Z] STATUS running=3/4 writers=0/1 freeMem=6591MB agents=[bi-finance(673s), technology(374s), ceo(104s)] paused=no
+[2026-02-20T15:59:41.753Z] SOCIAL running social-poster.js
+[2026-02-20T15:59:41.785Z] SOCIAL 2026-02-20T15:59:41.783Z [social-poster] starting
+[2026-02-20T15:59:41.793Z] SOCIAL 2026-02-20T15:59:41.793Z [social-poster] queue has 2010 posts
+[2026-02-20T15:59:42.141Z] SOCIAL 2026-02-20T15:59:42.140Z [social-poster] OK bluesky: posted "Garage is one of those apps that's worth self-hosting. Here'..."
+[2026-02-20T15:59:42.150Z] SOCIAL 2026-02-20T15:59:42.149Z [social-poster] removed 1 posted items from queue (2009 remaining)
+[2026-02-20T15:59:42.150Z] SOCIAL 2026-02-20T15:59:42.150Z [social-poster] done — 1 attempted, 1 succeeded, 2009 remaining in queue
+[2026-02-20T15:59:42.155Z] SOCIAL social-poster.js exited (code: 0)
