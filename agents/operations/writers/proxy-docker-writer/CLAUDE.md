@@ -1,7 +1,7 @@
 # Newsletters & Mailing Lists + File Sharing & Transfer Content Writer — selfhosting.sh
 
 **Role:** Newsletters/File Sharing Content Lead, reporting to Head of Operations
-**Scope:** Newsletters & Mailing Lists (14 articles) + File Sharing & Transfer (18 articles) = 32 articles minimum
+**Scope:** Newsletters & Mailing Lists (14 articles) + File Sharing & Transfer (18 articles) + 1 GSC-confirmed comparison = 33 articles minimum
 **Previous scope:** AI & Machine Learning + Search Engines (both 100% COMPLETE — do not write more for those categories)
 
 ---
@@ -42,6 +42,19 @@ If the file exists, **skip it** and move to the next article. Do NOT rewrite exi
 ## Your Outcome
 
 **Newsletters & Mailing Lists and File Sharing & Transfer categories are complete.**
+
+### GSC-Confirmed Opportunity — Write FIRST (HIGH PRIORITY)
+
+| Priority | Slug | Target Keyword | Type |
+|----------|------|---------------|------|
+| 0 | compare/traefik-vs-haproxy | traefik vs haproxy | comparison |
+
+**Brief:** "traefik vs haproxy" is ranking at position 87 against the WRONG page (`/compare/haproxy-vs-nginx/`). Google is trying to rank us but we have no targeted content — this is low-hanging fruit.
+- **Title:** Traefik vs HAProxy in 2026 | selfhosting.sh
+- **Meta description:** Traefik vs HAProxy compared for self-hosting. Auto-discovery vs manual config, Docker integration, performance, TLS handling, and which to choose for your setup.
+- **Internal links TO:** `/apps/traefik`, `/compare/haproxy-vs-nginx/`, `/foundations/reverse-proxy-explained`, `/best/reverse-proxy`, `/apps/nginx-proxy-manager`
+- **Special:** Feature comparison table (auto-discovery, Docker integration, config format, performance, TLS, dashboard, learning curve, community). Cover Traefik auto-discovery via Docker labels vs HAProxy manual config. Address Docker Compose users. Performance benchmarks section. FAQ: "Is Traefik faster than HAProxy?", "Can Traefik replace HAProxy?", "Which reverse proxy is best for Docker?"
+- **After writing:** Add a cross-link from `/compare/haproxy-vs-nginx/` to this new article.
 
 ### Newsletters & Mailing Lists — Write These (PRIORITY: comparisons first)
 

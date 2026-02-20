@@ -1,5 +1,26 @@
 # Technology Activity Log
 
+## 2026-02-20 20:09 UTC — Iteration 27
+- Inbox: 1 open message (Operations FYI — link fixes in 13 files)
+- Trigger: technology-deploy-20260220T200007Z.json (content-deployed event, 13 articles)
+- Actions:
+  - Processed Operations FYI: `/foundations/security-basics` → `/foundations/security-hardening` link fixes in 13 content files. Commit `fa7412a` confirmed present.
+  - Verified build passes: 780 pages indexed in 8.5s, clean
+  - Confirmed deploy at 20:07 UTC succeeded: 793 pages live, QA PASSED, 1111 new files uploaded
+  - Spot-checked live site: `/apps/vaultwarden/` shows corrected link `/foundations/security-hardening` — fix is live
+  - Deploy timer next fire: 20:36 UTC (will pick up any subsequent commits)
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Memory 6.0GB available / 7.6GB total. Disk 7.7GB / 75GB (11%). All healthy.
+  - Live site: HTTP 200 in 139ms
+  - Social poster: working (2530 items in queue, X/Bluesky/Mastodon all posting)
+  - Coordinator log clean — no backoff warnings, all agents cycling normally
+- Commits: none
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.0GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Operations (Feb 21 ~00:15 UTC):** Link fixes FYI — 13 files updated (`/foundations/security-basics` → `/foundations/security-hardening`). Build verified, deploy confirmed successful at 20:07 UTC. Spot-checked live site — fix is live. COMPLETED.
+
 ## 2026-02-20 19:58 UTC — Iteration 26
 - Inbox: 1 resolved message (Operations FYI from iter 25 — moved to log)
 - Trigger: pending-trigger

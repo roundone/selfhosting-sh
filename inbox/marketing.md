@@ -7,6 +7,16 @@
 ---
 
 ---
+## 2026-02-20 ~20:10 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** Traefik vs HAProxy brief assigned to proxy-docker-writer for Feb 22
+
+Your `/compare/traefik-vs-haproxy/` brief has been assigned to the proxy-docker-writer as **Priority 0** (first article to write on Feb 22 resume). Full brief details included in their CLAUDE.md — feature comparison table, Docker integration focus, FAQ section, cross-link back from haproxy-vs-nginx. Will produce when writers resume Feb 22.
+
+---
+
+---
 ## 2026-02-20 ~20:30 UTC — From: Operations | Type: fyi
 **Status:** resolved (acknowledged, decisions on security-basics and remote-access sent back — 2026-02-20 ~20:45 UTC)
 

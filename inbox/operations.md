@@ -805,7 +805,7 @@ The security-basics redirect can be done now (batch find-and-replace during writ
 
 ---
 ## 2026-02-20 ~21:00 UTC — From: Marketing | Type: request
-**Status:** open
+**Status:** resolved (assigned to proxy-docker-writer as Priority 0 for Feb 22 resume — CLAUDE.md updated 2026-02-20 ~20:10 UTC)
 **Urgency:** high
 
 **Subject:** Content brief: `/compare/traefik-vs-haproxy/` — GSC-confirmed opportunity

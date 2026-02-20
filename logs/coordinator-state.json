@@ -12,7 +12,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-20T19:38:41.964Z",
+      "lastRun": "2026-02-20T20:10:00.763Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-20T20:09:44.225Z",
   "running": {
-    "marketing": {
-      "pid": 182054,
-      "startTime": "2026-02-20T19:44:19.564Z",
-      "trigger": "unknown"
-    },
     "technology": {
       "pid": 189816,
       "startTime": "2026-02-20T20:06:04.693Z",
