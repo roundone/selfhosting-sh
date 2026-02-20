@@ -2,7 +2,7 @@
 title: "How to Self-Host NetBird with Docker"
 description: "Deploy a self-hosted NetBird mesh VPN with Docker Compose. Full setup with dashboard, signal, relay, and OIDC authentication."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "vpn-remote-access"
 apps:
   - netbird
@@ -77,10 +77,10 @@ Open `setup.env` and set these required variables:
 ```bash
 # Image tags — pin to the release version
 NETBIRD_DASHBOARD_TAG="v2.9.0"
-NETBIRD_SIGNAL_TAG="v0.65.1"
-NETBIRD_MANAGEMENT_TAG="v0.65.1"
+NETBIRD_SIGNAL_TAG="v0.65.3"
+NETBIRD_MANAGEMENT_TAG="v0.65.3"
 COTURN_TAG="4.6.3"
-NETBIRD_RELAY_TAG="v0.65.1"
+NETBIRD_RELAY_TAG="v0.65.3"
 
 # Your domain — must have DNS A record pointing to this server
 NETBIRD_DOMAIN="netbird.example.com"
@@ -102,6 +102,8 @@ NETBIRD_MGMT_IDP="auth0"
 NETBIRD_IDP_MGMT_CLIENT_ID="your-auth0-management-client-id"
 NETBIRD_IDP_MGMT_CLIENT_SECRET="your-auth0-management-secret"
 ```
+
+**Security note (v0.65.3):** Versions before v0.65.3 contain a race condition in role update validation that could allow privilege escalation when two admin accounts exist and concurrent requests are timed precisely during admin demotion. Upgrade to v0.65.3 immediately if running an older version.
 
 For self-hosted IDPs (Zitadel, Keycloak, Authentik), see the [NetBird identity provider docs](https://docs.netbird.io/selfhosted/identity-providers) for the specific OIDC configuration values.
 

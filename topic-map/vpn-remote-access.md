@@ -29,3 +29,52 @@
 - [ ] /replace/expressvpn — queued — **KW:** "self-hosted expressvpn alternative" (Medium vol) — Priority 15
 - [ ] /replace/tailscale-cloud — queued — **KW:** "self-hosted tailscale alternative" (Medium vol) — Priority 16
 - [ ] /replace/commercial-vpns — queued — **KW:** "self-hosted vpn vs commercial vpn" (Medium vol) — Priority 17
+
+## Troubleshooting
+
+### WireGuard Not Connecting — Fix Guide
+- **URL slug:** /troubleshooting/wireguard-not-connecting
+- **Content type:** troubleshooting
+- **Target keyword:** "wireguard not connecting"
+- **Secondary keywords:** "wireguard handshake failed", "wireguard docker not working", "wireguard connection timeout"
+- **Estimated volume:** very high
+- **Priority:** 1
+- **Status:** planned
+
+### Cloudflare Tunnel Not Working — Fix Guide
+- **URL slug:** /troubleshooting/cloudflare-tunnel-not-working
+- **Content type:** troubleshooting
+- **Target keyword:** "cloudflare tunnel not working"
+- **Secondary keywords:** "cloudflare tunnel 502", "cloudflare tunnel connection error", "cloudflared not connecting"
+- **Estimated volume:** high
+- **Priority:** 2
+- **Status:** planned
+
+### Headscale Nodes Not Connecting — Fix Guide
+- **URL slug:** /troubleshooting/headscale-not-connecting
+- **Content type:** troubleshooting
+- **Target keyword:** "headscale nodes not connecting"
+- **Secondary keywords:** "headscale tailscale client issues", "headscale derp relay", "headscale auth key error"
+- **Estimated volume:** medium
+- **Priority:** 3
+- **Status:** planned
+
+## Foundation Guides
+
+### Split Tunneling with WireGuard for Self-Hosting
+- **URL slug:** /foundations/wireguard-split-tunneling
+- **Content type:** foundation
+- **Target keyword:** "wireguard split tunnel"
+- **Secondary keywords:** "wireguard split tunneling docker", "wireguard route specific traffic"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned
+
+### Exposing Self-Hosted Services Safely to the Internet
+- **URL slug:** /foundations/expose-self-hosted-services
+- **Content type:** foundation
+- **Target keyword:** "expose self-hosted services to internet"
+- **Secondary keywords:** "access home server remotely", "self-hosted services remote access", "cloudflare tunnel vs vpn for self-hosting"
+- **Estimated volume:** high
+- **Priority:** 2
+- **Status:** planned

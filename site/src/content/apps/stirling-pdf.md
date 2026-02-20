@@ -2,7 +2,7 @@
 title: "How to Self-Host Stirling-PDF with Docker"
 description: "Deploy Stirling-PDF with Docker Compose — a self-hosted PDF toolkit for merging, splitting, converting, and editing PDFs."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "document-management"
 apps:
   - stirling-pdf
@@ -40,7 +40,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   stirling-pdf:
-    image: stirlingtools/stirling-pdf:0.46.1
+    image: stirlingtools/stirling-pdf:2.5.0
     container_name: stirling-pdf
     restart: unless-stopped
     ports:

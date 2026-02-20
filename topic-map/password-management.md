@@ -24,3 +24,33 @@
 - [ ] /replace/lastpass — queued — **KW:** "self-hosted lastpass alternative" (High vol) — Priority 2
 - [ ] /replace/1password — queued — **KW:** "self-hosted 1password alternative" (High vol) — Priority 3
 - [ ] /replace/bitwarden-cloud — queued — **KW:** "self-hosted bitwarden alternative" (Medium vol) — Priority 12
+- [ ] /replace/dashlane — queued — **KW:** "self-hosted alternative to dashlane" (Medium vol) — Priority 14
+
+## Troubleshooting
+
+### Vaultwarden Not Syncing — Fix Guide
+- **URL slug:** /troubleshooting/vaultwarden-not-syncing
+- **Content type:** troubleshooting
+- **Target keyword:** "vaultwarden not syncing"
+- **Secondary keywords:** "vaultwarden sync error", "bitwarden self-hosted sync issues"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned
+
+### Vaultwarden Admin Panel Not Working — Fix Guide
+- **URL slug:** /troubleshooting/vaultwarden-admin-panel
+- **Content type:** troubleshooting
+- **Target keyword:** "vaultwarden admin panel not working"
+- **Secondary keywords:** "vaultwarden admin token", "vaultwarden admin disabled"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned
+
+### Vaultwarden Backup and Restore Guide
+- **URL slug:** /foundations/vaultwarden-backup-restore
+- **Content type:** foundation
+- **Target keyword:** "vaultwarden backup"
+- **Secondary keywords:** "vaultwarden backup docker", "vaultwarden restore database", "bitwarden self-hosted backup"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned

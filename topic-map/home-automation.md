@@ -24,3 +24,62 @@
 - [ ] /replace/google-home — queued — **KW:** "self-hosted google home alternative" (High vol) — Priority 2
 - [ ] /replace/amazon-alexa — queued — **KW:** "self-hosted alexa alternative" (Medium-High vol) — Priority 3
 - [ ] /replace/apple-homekit — queued — **KW:** "self-hosted homekit alternative" (Medium vol) — Priority 12
+- [ ] /replace/samsung-smartthings — queued — **KW:** "self-hosted smartthings alternative" (Medium vol) — Priority 14
+
+## Troubleshooting
+
+### Home Assistant Docker Not Starting — Fix Guide
+- **URL slug:** /troubleshooting/home-assistant-not-starting
+- **Content type:** troubleshooting
+- **Target keyword:** "home assistant docker not starting"
+- **Secondary keywords:** "home assistant container error", "home assistant docker crash", "home assistant won't start"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned
+
+### Home Assistant Zigbee Integration Issues — Fix Guide
+- **URL slug:** /troubleshooting/home-assistant-zigbee-issues
+- **Content type:** troubleshooting
+- **Target keyword:** "home assistant zigbee not working"
+- **Secondary keywords:** "home assistant zigbee devices not found", "home assistant zha problems"
+- **Estimated volume:** medium-high
+- **Priority:** 2
+- **Status:** planned
+
+### Home Assistant Automations Not Triggering — Fix Guide
+- **URL slug:** /troubleshooting/home-assistant-automations-not-triggering
+- **Content type:** troubleshooting
+- **Target keyword:** "home assistant automation not working"
+- **Secondary keywords:** "home assistant automation not triggering", "home assistant yaml automation debug"
+- **Estimated volume:** high
+- **Priority:** 3
+- **Status:** planned
+
+### Home Assistant Database Growing Too Large — Fix Guide
+- **URL slug:** /troubleshooting/home-assistant-database-too-large
+- **Content type:** troubleshooting
+- **Target keyword:** "home assistant database too large"
+- **Secondary keywords:** "home assistant recorder purge", "home assistant sqlite size", "home assistant slow database"
+- **Estimated volume:** medium
+- **Priority:** 4
+- **Status:** planned
+
+## Foundation Guides
+
+### Home Assistant Automation Best Practices
+- **URL slug:** /foundations/home-assistant-automation-guide
+- **Content type:** foundation
+- **Target keyword:** "home assistant automation tutorial"
+- **Secondary keywords:** "home assistant automation examples", "home assistant yaml automation guide"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned
+
+### Migrating from Google Home to Home Assistant
+- **URL slug:** /foundations/migrate-google-home-to-home-assistant
+- **Content type:** foundation
+- **Target keyword:** "migrate google home to home assistant"
+- **Secondary keywords:** "switch from google home", "google home to home assistant guide"
+- **Estimated volume:** medium-high
+- **Priority:** 2
+- **Status:** planned

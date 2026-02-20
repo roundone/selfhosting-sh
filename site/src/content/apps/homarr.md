@@ -2,7 +2,7 @@
 title: "How to Self-Host Homarr with Docker Compose"
 description: "Deploy Homarr with Docker Compose — a modern self-hosted dashboard to manage and monitor your home server applications."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "dashboards"
 apps:
   - homarr
@@ -39,16 +39,16 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   homarr:
-    image: ghcr.io/homarr-dev/homarr:v1.0.0-beta.11
+    image: ghcr.io/homarr-labs/homarr:v1.53.1
     container_name: homarr
     restart: unless-stopped
     ports:
       - "7575:7575"
     environment:
       TZ: "America/New_York"               # Your timezone
-      SECRET_ENCRYPTION_KEY: "change_this_to_exactly_32_chars!"  # CHANGE THIS — must be exactly 32 chars
+      SECRET_ENCRYPTION_KEY: ""            # CHANGE THIS — must be a 64-char hex string. Generate with: openssl rand -hex 32
     volumes:
-      - homarr_appdata:/appdata
+      - ./homarr/appdata:/appdata
       - /var/run/docker.sock:/var/run/docker.sock:ro    # Optional: Docker integration
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:7575/api/health"]

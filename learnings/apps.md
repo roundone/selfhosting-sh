@@ -609,3 +609,52 @@ Outline versioning clarification:
 - **Hugo Extended:** Required for SCSS/SASS processing
 - **Config:** hugo.toml (or config.toml) in project root
 - **Themes:** Installed via git submodule in themes/ directory
+
+## 2026-02-19 — Ghost v6.19.1 freshness update (Operations)
+- **Image:** `ghost:6.19.1` (updated from v5.120.0)
+- **Major version jump (v5→v6):** Node.js v22+ now required (handled by Docker image). API `?limit=all` removed — max 100 items per request. `created_by`/`updated_by` columns removed in auto-migration.
+- **No Docker Compose config changes required.** MySQL 8, port 2368, double-underscore env var format all unchanged.
+- **v6.19.1 includes a security fix** for SQL injection in the Content API.
+
+## 2026-02-19 — Stirling-PDF v2.5.0 freshness update (Operations)
+- **Image:** `stirlingtools/stirling-pdf:2.5.0` (was `frooodle/s-pdf:0.46.1`)
+- **Namespace changed:** `frooodle/s-pdf` → `stirlingtools/stirling-pdf`. Old image is deprecated.
+- **Port unchanged:** 8080
+- **Removed env vars:** `UI_APPNAME`, `UI_HOMEDESCRIPTION`, `SECURITY_JWT_SECURECOOKIE`. UI branding now configured via admin panel.
+- **Renamed env vars:** `SECURITY_JWT_ENABLED` → `SECURITY_JWT_PERSISTENCE`, `SECURITY_JWT_KEYCLEANUP` → `SECURITY_JWT_ENABLEKEYCLEANUP`
+- **New env var:** `MODE` (BOTH/BACKEND/FRONTEND, default BOTH)
+- **Frontend rewritten:** Thymeleaf → React. Custom HTML/CSS overrides must be migrated.
+- **Volume paths unchanged.** `/configs`, `/usr/share/tessdata`, `/logs`, `/pipeline`, `/customFiles` all still valid.
+
+## 2026-02-19 — Mealie v3.10.2 freshness update (Operations)
+- **Image:** `ghcr.io/mealie-recipes/mealie:v3.10.2` (was v2.7.1)
+- **Port unchanged:** 9000 internal
+- **All v2 env vars work in v3.** No Docker Compose changes required.
+- **API routes changed:** `/api/users` → `/api/admin/users`. Only affects custom integrations.
+- **New env var:** `ALLOW_PASSWORD_LOGIN` (default true), `OPENAI_CUSTOM_PROMPT_DIR` (v3.10.0+)
+- **PostgreSQL still recommended.**
+
+## 2026-02-19 — Homarr v1.53.1 freshness update (Operations)
+- **Image:** `ghcr.io/homarr-labs/homarr:v1.53.1` (was `ghcr.io/homarr-dev/homarr:v1.0.0-beta.11`)
+- **Org changed:** `homarr-dev` → `homarr-labs`
+- **Port unchanged:** 7575
+- **SECRET_ENCRYPTION_KEY:** Must be a 64-character hex string (generate with `openssl rand -hex 32`). Previous article said 32 chars — was wrong.
+- **Volume:** Official docs use bind mount `./homarr/appdata:/appdata` rather than named volume.
+- **Database:** Uses better-sqlite3 internally. No external DB needed.
+
+## 2026-02-19 — Radarr v6.0.4 freshness update (Operations)
+- **Image:** `lscr.io/linuxserver/radarr:6.0.4` (was 5.22.4)
+- **Major change:** Runtime migrated from Mono to .NET. In Docker this is transparent — just update the image.
+- **Port unchanged:** 7878
+- **Env vars and volume paths unchanged.** PUID, PGID, TZ, /config, /movies, /downloads all the same.
+- **Database auto-migrates** from v5 to v6 on first start.
+- **SQLite gotcha:** v6 uses SourceGear SQLite3 which requires newer GLIBC. Affects bare-metal on old Debian/Ubuntu but not Docker.
+
+## 2026-02-19 — PrivateBin v2.0.3 freshness update (Operations)
+- **Image:** `privatebin/nginx-fpm-alpine:2.0.3` (was 1.7.6)
+- **Port unchanged:** 8080
+- **Breaking change:** Legacy storage class names (`privatebin_data`, `privatebin_db`, `zerobin_db`) removed. Must use `Filesystem`, `Database`, `GoogleCloudStorage`, or `S3Storage` in `[model]` config section.
+- **ZeroBin compatibility dropped** — v1 paste format no longer supported.
+- **Old page templates removed** — `bootstrap5` is now the only/default template.
+- **New features:** URL shortening (`shortenbydefault`), password peek, native S3 storage backend.
+- **Config path unchanged:** `/srv/cfg/conf.php`

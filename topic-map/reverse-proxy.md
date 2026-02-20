@@ -24,3 +24,52 @@
 ## Replace Guides
 - [ ] /replace/managed-hosting — queued — **KW:** "self-hosted web server alternative" (Low-Medium vol) — Priority 11
 - [ ] /replace/ssl-services — queued — **KW:** "self-hosted ssl alternative" (Low vol) — Priority 12
+
+## Troubleshooting
+
+### Nginx Proxy Manager SSL Certificate Not Renewing — Fix Guide
+- **URL slug:** /troubleshooting/npm-ssl-not-renewing
+- **Content type:** troubleshooting
+- **Target keyword:** "nginx proxy manager ssl not renewing"
+- **Secondary keywords:** "npm lets encrypt error", "nginx proxy manager certificate failed"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned
+
+### Traefik 502 Bad Gateway — Fix Guide
+- **URL slug:** /troubleshooting/traefik-502-bad-gateway
+- **Content type:** troubleshooting
+- **Target keyword:** "traefik 502 bad gateway"
+- **Secondary keywords:** "traefik service not reachable", "traefik bad gateway docker"
+- **Estimated volume:** medium-high
+- **Priority:** 2
+- **Status:** planned
+
+### Caddy Reverse Proxy Not Working — Fix Guide
+- **URL slug:** /troubleshooting/caddy-reverse-proxy-not-working
+- **Content type:** troubleshooting
+- **Target keyword:** "caddy reverse proxy not working"
+- **Secondary keywords:** "caddy proxy error", "caddy docker reverse proxy issues"
+- **Estimated volume:** medium
+- **Priority:** 3
+- **Status:** planned
+
+## Foundation Guides
+
+### Reverse Proxy Explained: Why Every Self-Hoster Needs One
+- **URL slug:** /foundations/reverse-proxy-explained
+- **Content type:** foundation
+- **Target keyword:** "reverse proxy explained"
+- **Secondary keywords:** "what is a reverse proxy", "reverse proxy for self-hosting", "why use reverse proxy"
+- **Estimated volume:** very high
+- **Priority:** 1
+- **Status:** planned
+
+### Wildcard SSL Certificates with Reverse Proxy
+- **URL slug:** /foundations/wildcard-ssl-reverse-proxy
+- **Content type:** foundation
+- **Target keyword:** "wildcard ssl certificate reverse proxy"
+- **Secondary keywords:** "wildcard ssl docker", "wildcard certificate self-hosted"
+- **Estimated volume:** medium-high
+- **Priority:** 2
+- **Status:** planned

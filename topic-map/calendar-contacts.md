@@ -21,3 +21,35 @@
 - [ ] /replace/google-calendar — **Priority 1** | Target: "self-hosted alternative to google calendar" | Secondary: "degoogle calendar" | Est. volume: high
 - [ ] /replace/google-contacts — **Priority 2** | Target: "self-hosted alternative to google contacts" | Est. volume: medium
 - [ ] /replace/icloud-calendar — **Priority 3** | Target: "self-hosted alternative to icloud calendar" | Est. volume: low-medium
+- [ ] /replace/outlook-calendar — **Priority 4** | Target: "self-hosted alternative to outlook calendar" | Est. volume: low-medium
+
+## Troubleshooting
+
+### CalDAV Sync Not Working with Mobile — Fix Guide
+- **URL slug:** /troubleshooting/caldav-sync-mobile
+- **Content type:** troubleshooting
+- **Target keyword:** "caldav sync not working iphone"
+- **Secondary keywords:** "caldav android sync error", "caldav mobile setup", "radicale iphone sync"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### Baikal CardDAV Contacts Not Syncing — Fix Guide
+- **URL slug:** /troubleshooting/baikal-carddav-sync
+- **Content type:** troubleshooting
+- **Target keyword:** "baikal contacts not syncing"
+- **Secondary keywords:** "baikal carddav error", "baikal sync issues"
+- **Estimated volume:** low-medium
+- **Priority:** 2
+- **Status:** planned
+
+## Foundation Guides
+
+### Migrating from Google Calendar to Self-Hosted CalDAV
+- **URL slug:** /foundations/migrate-google-calendar-caldav
+- **Content type:** foundation
+- **Target keyword:** "migrate google calendar to self-hosted"
+- **Secondary keywords:** "export google calendar caldav", "google calendar to radicale", "degoogle calendar migration"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned

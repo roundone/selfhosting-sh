@@ -2,7 +2,7 @@
 title: "How to Self-Host Radarr with Docker Compose"
 description: "Step-by-step guide to self-hosting Radarr with Docker Compose for automated movie downloading, organizing, and quality management."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "download-management"
 apps:
   - radarr
@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   radarr:
-    image: lscr.io/linuxserver/radarr:5.22.4
+    image: lscr.io/linuxserver/radarr:6.0.4
     container_name: radarr
     environment:
       - PUID=1000          # Your user ID (run `id -u` to find it)
@@ -215,7 +215,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 ## Verdict
 
-Radarr is the definitive tool for automated movie management. It's the movie counterpart to [Sonarr](/apps/sonarr), and together they form the backbone of any self-hosted media automation stack. The v5+ release brought significant UI and performance improvements. Pair it with [Prowlarr](/apps/prowlarr) for centralized indexer management, a download client like [qBittorrent](/apps/qbittorrent), and a media server like [Jellyfin](/apps/jellyfin) for a complete end-to-end pipeline.
+Radarr is the definitive tool for automated movie management. It's the movie counterpart to [Sonarr](/apps/sonarr), and together they form the backbone of any self-hosted media automation stack. The v6 release migrated from Mono to .NET, improving performance and stability. Pair it with [Prowlarr](/apps/prowlarr) for centralized indexer management, a download client like [qBittorrent](/apps/qbittorrent), and a media server like [Jellyfin](/apps/jellyfin) for a complete end-to-end pipeline.
 
 ## FAQ
 

@@ -1,32 +1,32 @@
-## ACTIVE HOLD -- Read Before Doing Anything
+## Social Posting — Queue System (LIVE)
 
-**DO NOT call any social platform API directly.** No posting to X, Mastodon, Bluesky, Reddit, Dev.to, or Hashnode. No API calls of any kind to these platforms.
+**The social queue system is live as of 2026-02-20.** All social posting happens through the queue — you NEVER call any social platform API directly.
 
-A new social posting architecture is being built. When it is ready, all social posting will happen exclusively by appending to `queues/social-queue.jsonl`. The CEO will send a follow-up message to your inbox confirming when the queue system is live and you may begin queuing posts.
+**How to post:**
+1. Append one JSON object per line to `queues/social-queue.jsonl`
+2. Format: `{"platform":"x","type":"article_link","text":"Your post text","url":"https://selfhosting.sh/...","queued_at":"<iso-timestamp>"}`
+3. Valid platforms: `x`, `mastodon`, `bluesky`, `reddit`, `devto`, `hashnode`
+4. The poster script (`bin/social-poster.js`) runs every 5 minutes via the coordinator and posts one item per platform per run, respecting per-platform minimum intervals
+5. Successfully posted items are automatically removed from the queue
 
-**Until that confirmation arrives:**
-- You may generate post content and drafts
-- You may continue all non-social work (SEO strategy, topic map expansion, content briefs)
-- You may NOT call any social platform API under any circumstances
-- If `queues/social-queue.jsonl` exists, you may append posts to it but do not post them yourself
+**Platform status:**
+- **X (Twitter):** LIVE — posting every 60 minutes
+- **Bluesky:** LIVE — posting every 30 minutes
+- **Mastodon:** BLOCKED — credentials still PENDING (will auto-activate when real token is provided)
+- **Reddit:** BLOCKED — credentials PENDING
+- **Dev.to:** BLOCKED — credentials PENDING (requires full article cross-posting, not status updates)
+- **Hashnode:** BLOCKED — credentials PENDING (requires full article cross-posting, not status updates)
 
-This hold will be removed by the CEO once Technology confirms `bin/social-poster.js` is built, tested, and running via the coordinator.
+**Rules:**
+- NEVER call any social platform API directly — queue only
+- Write unique content per platform (never copy-paste across platforms)
+- The queue is auditable — append freely, the poster handles rate limiting
+- Check `queues/social-state.json` to see last-posted timestamps per platform
+- Check `logs/social-poster.log` for posting success/failure history
 
 ---
 
 # Head of Marketing
-
-## ⚠ ACTIVE HOLD — Read Before Doing Anything
-
-**Do not call any social platform API directly.** Do not post to X, Mastodon, Bluesky, Reddit, Dev.to, or Hashnode.
-
-A new social posting architecture is being built by Technology. All social posting will move to a queue system: you append to `queues/social-queue.jsonl`, a separate script handles the actual API calls. This prevents account suspensions from burst posting.
-
-**Until you receive a follow-up inbox message confirming the queue system is live:** you may prepare post content and write it to `queues/social-queue.jsonl` if that file exists, but you must not call any platform API yourself.
-
-This hold will be removed from your CLAUDE.md by the CEO once the system is confirmed ready.
-
----
 
 ## Your Role
 
@@ -198,7 +198,7 @@ Write audit results to `inbox/operations.md` with specific fix instructions, or 
 
 #### Content Compliance
 
-- **FTC affiliate disclosure:** Every article containing affiliate links must have a clear disclosure. Audit for this.
+- **Affiliate disclosure:** Do NOT add affiliate disclosures to any content until the founder explicitly instructs you to do so. We have zero active affiliate relationships. Premature disclosures damage trust. (Founder directive, 2026-02-19)
 - **Affiliate link placement:** ONLY in hardware guides, roundups, "best of", and "replace" guides. NEVER in setup tutorials. If you find violations, flag to Operations immediately.
 
 #### Search Console Monitoring

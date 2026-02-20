@@ -3693,3 +3693,130 @@
 [2026-02-19T23:31:41.427Z] AGENT technology started (pid: 762312)
 [2026-02-19T23:36:57.502Z] INBOX operations.md modified → operations
 [2026-02-19T23:36:57.503Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-19T23:41:43.466Z] AGENT bi-finance exited (code=0, duration: 602s)
+[2026-02-19T23:41:43.467Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-19T23:41:43.467Z] PENDING bi-finance processing queued trigger
+[2026-02-19T23:41:43.467Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-19T23:41:43.469Z] AGENT bi-finance started (pid: 763998)
+[2026-02-19T23:43:16.394Z] INBOX technology.md modified → technology
+[2026-02-19T23:43:16.394Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-19T23:57:29.920Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-19T23:57:29.920Z] SHUTDOWN killing operations (pid: 762231)
+[2026-02-19T23:57:29.920Z] SHUTDOWN killing marketing (pid: 762309)
+[2026-02-19T23:57:29.921Z] SHUTDOWN killing technology (pid: 762312)
+[2026-02-19T23:57:29.921Z] SHUTDOWN killing bi-finance (pid: 763998)
+[2026-02-19T23:57:29.921Z] AGENT operations exited (signal=SIGTERM, duration: 1553s)
+[2026-02-19T23:57:29.921Z] BACKOFF operations error #1, next allowed in 30s
+[2026-02-19T23:57:29.922Z] PENDING operations processing queued trigger
+[2026-02-19T23:57:29.922Z] BACKOFF operations in backoff for 30s more
+[2026-02-19T23:57:29.922Z] AGENT marketing exited (signal=SIGTERM, duration: 1548s)
+[2026-02-19T23:57:29.922Z] BACKOFF marketing error #1, next allowed in 30s
+[2026-02-19T23:57:29.922Z] PENDING marketing processing queued trigger
+[2026-02-19T23:57:29.922Z] BACKOFF marketing in backoff for 30s more
+[2026-02-19T23:57:29.923Z] AGENT bi-finance exited (signal=SIGTERM, duration: 946s)
+[2026-02-19T23:57:29.923Z] BACKOFF bi-finance error #1, next allowed in 30s
+[2026-02-19T23:57:29.923Z] AGENT technology exited (signal=SIGTERM, duration: 1548s)
+[2026-02-19T23:57:29.923Z] BACKOFF technology error #1, next allowed in 30s
+[2026-02-19T23:57:29.923Z] PENDING technology processing queued trigger
+[2026-02-19T23:57:29.923Z] BACKOFF technology in backoff for 30s more
+[2026-02-19T23:57:34.995Z] ============================================================
+[2026-02-19T23:57:34.998Z] STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)
+[2026-02-19T23:57:34.998Z] AGENTS discovered: ceo, bi-finance, marketing, operations, technology
+[2026-02-19T23:57:34.999Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, technology)
+[2026-02-19T23:57:34.999Z] WATCH events/ (routing by filename convention)
+[2026-02-19T23:57:35.000Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-19T23:57:35.000Z] STARTUP complete — watching for events
+[2026-02-19T23:57:36.002Z] RECOVERY scanning for missed events and stale state...
+[2026-02-19T23:57:36.002Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-19T23:57:36.003Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-19T23:57:36.003Z] RECOVERY complete — 2 missed event(s) found
+[2026-02-19T23:57:39.006Z] BACKOFF operations in backoff for 21s more
+[2026-02-19T23:57:39.504Z] BACKOFF technology in backoff for 20s more
+[2026-02-19T23:58:00.041Z] AGENT operations starting (trigger: inbox-missed)
+[2026-02-19T23:58:00.045Z] AGENT operations started (pid: 766497)
+[2026-02-19T23:58:00.045Z] AGENT technology starting (trigger: inbox-missed)
+[2026-02-19T23:58:00.047Z] AGENT technology started (pid: 766499)
+[2026-02-20T00:02:35.028Z] SOCIAL running social-poster.js
+[2026-02-20T00:02:35.061Z] SOCIAL 2026-02-20T00:02:35.059Z [social-poster] starting
+[2026-02-20T00:02:35.062Z] SOCIAL 2026-02-20T00:02:35.062Z [social-poster] queue has 56 posts
+[2026-02-20T00:02:35.062Z] SOCIAL 2026-02-20T00:02:35.062Z [social-poster] done — 0 attempted, 0 succeeded, 56 remaining in queue
+[2026-02-20T00:02:35.068Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:07:35.039Z] SOCIAL running social-poster.js
+[2026-02-20T00:07:35.075Z] SOCIAL 2026-02-20T00:07:35.073Z [social-poster] starting
+[2026-02-20T00:07:35.076Z] SOCIAL 2026-02-20T00:07:35.076Z [social-poster] queue has 56 posts
+[2026-02-20T00:07:35.076Z] SOCIAL 2026-02-20T00:07:35.076Z [social-poster] done — 0 attempted, 0 succeeded, 56 remaining in queue
+[2026-02-20T00:07:35.082Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:12:35.139Z] SOCIAL running social-poster.js
+[2026-02-20T00:12:35.181Z] SOCIAL 2026-02-20T00:12:35.178Z [social-poster] starting
+[2026-02-20T00:12:35.183Z] SOCIAL 2026-02-20T00:12:35.183Z [social-poster] queue has 56 posts
+[2026-02-20T00:12:35.183Z] SOCIAL 2026-02-20T00:12:35.183Z [social-poster] done — 0 attempted, 0 succeeded, 56 remaining in queue
+[2026-02-20T00:12:35.189Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:15:25.383Z] INBOX operations.md modified → operations
+[2026-02-20T00:15:25.383Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T00:16:26.550Z] INBOX technology.md modified → technology
+[2026-02-20T00:16:26.550Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T00:17:35.208Z] FALLBACK ceo — 8h since last run
+[2026-02-20T00:17:35.208Z] AGENT ceo starting (trigger: 8h-fallback)
+[2026-02-20T00:17:35.210Z] AGENT ceo started (pid: 772473)
+[2026-02-20T00:17:35.211Z] SOCIAL running social-poster.js
+[2026-02-20T00:17:35.250Z] SOCIAL 2026-02-20T00:17:35.247Z [social-poster] starting
+[2026-02-20T00:17:35.251Z] SOCIAL 2026-02-20T00:17:35.250Z [social-poster] queue has 56 posts
+[2026-02-20T00:17:35.251Z] SOCIAL 2026-02-20T00:17:35.251Z [social-poster] done — 0 attempted, 0 succeeded, 56 remaining in queue
+[2026-02-20T00:17:35.257Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:22:35.220Z] SOCIAL running social-poster.js
+[2026-02-20T00:22:35.254Z] SOCIAL 2026-02-20T00:22:35.252Z [social-poster] starting
+[2026-02-20T00:22:35.256Z] SOCIAL 2026-02-20T00:22:35.255Z [social-poster] queue has 56 posts
+[2026-02-20T00:22:35.256Z] SOCIAL 2026-02-20T00:22:35.256Z [social-poster] done — 0 attempted, 0 succeeded, 56 remaining in queue
+[2026-02-20T00:22:35.260Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:23:42.086Z] INBOX marketing.md modified → marketing
+[2026-02-20T00:23:42.086Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-20T00:23:42.087Z] AGENT marketing started (pid: 774291)
+[2026-02-20T00:24:31.889Z] INBOX ceo.md modified → ceo
+[2026-02-20T00:24:31.889Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T00:27:35.314Z] RELEASES running check-releases.js
+[2026-02-20T00:27:35.316Z] SOCIAL running social-poster.js
+[2026-02-20T00:27:35.348Z] RELEASES 2026-02-20T00:27:35.345Z [check-releases] starting
+[2026-02-20T00:27:35.348Z] RELEASES 2026-02-20T00:27:35.348Z [check-releases] checking 29 GitHub repos
+[2026-02-20T00:27:35.354Z] SOCIAL 2026-02-20T00:27:35.351Z [social-poster] starting
+[2026-02-20T00:27:35.355Z] SOCIAL 2026-02-20T00:27:35.355Z [social-poster] queue has 56 posts
+[2026-02-20T00:27:35.428Z] RELEASES 2026-02-20T00:27:35.427Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T00:27:35.582Z] SOCIAL 2026-02-20T00:27:35.582Z [social-poster] OK bluesky: posted "Miniflux or FreshRSS? If you want speed and minimalism, Mini..."
+[2026-02-20T00:27:35.583Z] SOCIAL 2026-02-20T00:27:35.582Z [social-poster] removed 1 posted items from queue (55 remaining)
+[2026-02-20T00:27:35.583Z] SOCIAL 2026-02-20T00:27:35.583Z [social-poster] done — 1 attempted, 1 succeeded, 55 remaining in queue
+[2026-02-20T00:27:35.589Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:27:35.985Z] RELEASES 2026-02-20T00:27:35.985Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T00:27:36.597Z] RELEASES 2026-02-20T00:27:36.596Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T00:27:37.178Z] RELEASES 2026-02-20T00:27:37.177Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T00:27:37.723Z] RELEASES 2026-02-20T00:27:37.723Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T00:27:38.285Z] RELEASES 2026-02-20T00:27:38.285Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T00:27:38.844Z] RELEASES 2026-02-20T00:27:38.844Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T00:27:39.392Z] RELEASES 2026-02-20T00:27:39.392Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1157)
+[2026-02-20T00:27:39.973Z] RELEASES 2026-02-20T00:27:39.973Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T00:27:40.533Z] RELEASES 2026-02-20T00:27:40.533Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T00:27:41.086Z] RELEASES 2026-02-20T00:27:41.085Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T00:27:41.685Z] RELEASES 2026-02-20T00:27:41.684Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T00:27:42.239Z] RELEASES 2026-02-20T00:27:42.239Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T00:27:42.821Z] RELEASES 2026-02-20T00:27:42.821Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T00:27:43.383Z] RELEASES 2026-02-20T00:27:43.383Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T00:27:43.933Z] RELEASES 2026-02-20T00:27:43.933Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T00:27:44.498Z] RELEASES 2026-02-20T00:27:44.498Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T00:27:45.062Z] RELEASES 2026-02-20T00:27:45.061Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T00:27:45.623Z] RELEASES 2026-02-20T00:27:45.623Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T00:27:46.182Z] RELEASES 2026-02-20T00:27:46.182Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T00:27:46.746Z] RELEASES 2026-02-20T00:27:46.746Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T00:27:47.330Z] RELEASES 2026-02-20T00:27:47.330Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T00:27:47.876Z] RELEASES 2026-02-20T00:27:47.875Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T00:27:48.429Z] RELEASES 2026-02-20T00:27:48.428Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T00:27:48.985Z] RELEASES 2026-02-20T00:27:48.985Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T00:27:49.539Z] RELEASES 2026-02-20T00:27:49.538Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T00:27:50.094Z] RELEASES 2026-02-20T00:27:50.094Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-20T00:27:50.646Z] RELEASES 2026-02-20T00:27:50.646Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T00:27:51.201Z] RELEASES 2026-02-20T00:27:51.201Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T00:27:51.702Z] RELEASES 2026-02-20T00:27:51.702Z [check-releases] checking 3 feeds
+[2026-02-20T00:27:51.754Z] RELEASES 2026-02-20T00:27:51.753Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T00:27:52.028Z] RELEASES 2026-02-20T00:27:52.027Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T00:27:52.344Z] RELEASES 2026-02-20T00:27:52.343Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T00:27:52.544Z] RELEASES 2026-02-20T00:27:52.544Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T00:27:52.550Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T00:27:55.963Z] INBOX technology.md modified → technology
+[2026-02-20T00:27:55.963Z] QUEUED technology already running — trigger queued: inbox-message

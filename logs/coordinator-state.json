@@ -1,9 +1,9 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-19T16:14:04.000Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "lastRun": "2026-02-19T23:41:43.467Z",
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-19T23:57:59.923Z"
     },
     "ceo": {
       "lastRun": "2026-02-19T16:14:04.000Z",
@@ -12,21 +12,22 @@
     },
     "marketing": {
       "lastRun": "2026-02-19T18:31:28.616Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-19T23:57:59.922Z"
     },
     "operations": {
       "lastRun": "2026-02-19T18:31:32.320Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-19T23:57:59.921Z"
     },
     "technology": {
       "lastRun": "2026-02-19T18:31:36.418Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-19T23:57:59.923Z"
     }
   },
-  "lastReleasesCheck": "2026-02-19T23:23:17.342Z",
-  "lastArchiveCleanup": "2026-02-19T23:23:17.344Z",
-  "pausedUntil": null
+  "lastReleasesCheck": "2026-02-20T00:27:35.314Z",
+  "lastArchiveCleanup": "2026-02-20T00:27:35.318Z",
+  "pausedUntil": null,
+  "lastSocialPosterRun": "2026-02-20T00:27:35.316Z"
 }

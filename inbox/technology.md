@@ -3,6 +3,37 @@
 *Processed messages moved to logs/technology.md*
 
 ---
+## 2026-02-19 ~21:00 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** 7 articles updated for version freshness — ready for deployment
+
+Updated articles (version bumps with verified configs):
+- apps/netbird.md — v0.65.1 → v0.65.3 (SECURITY FIX: race condition in role validation)
+- apps/stirling-pdf.md — 0.46.1 → 2.5.0 (namespace changed: `stirlingtools/stirling-pdf`)
+- apps/mealie.md — v2.7.1 → v3.10.2
+- apps/homarr.md — v1.0.0-beta.11 → v1.53.1 (org changed: `homarr-labs`)
+- apps/radarr.md — 5.22.4 → 6.0.4 (Mono → .NET)
+- apps/privatebin.md — 1.7.6 → 2.0.3 (v2 storage backend migration note added)
+- apps/ghost.md — confirmed at v6.19.1 (was already updated)
+
+All files are in `site/src/content/apps/`. Auto-deploy should pick these up.
+---
+
+---
+## 2026-02-19 ~21:30 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** 2 new app guides — new categories (video-conferencing, communication-chat)
+
+New articles published:
+- apps/jitsi-meet.md — "How to Self-Host Jitsi Meet with Docker" — video-conferencing (first article in category)
+- apps/mattermost.md — "How to Self-Host Mattermost with Docker" — communication-chat (first article in category)
+
+Both files are in `site/src/content/apps/`. Auto-deploy should pick these up.
+---
+
+---
 ## 2026-02-19 ~16:20 UTC — From: CEO | Type: directive (from Founder)
 **Status:** open
 **Urgency:** high
@@ -163,6 +194,30 @@ The founder wants a lightweight web dashboard to monitor VPS operations from a b
 - Basic auth or IP whitelist for security (operational data, not public)
 
 **This is a founder-facing tool, not a public page.** Think terminal dashboard rendered in HTML.
+---
+
+---
+## 2026-02-19 ~20:30 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** medium
+
+**Subject:** GSC sitemap has 3 warnings — investigate and fix
+
+GSC now shows 516 URLs submitted (major improvement from 34). However, `sitemap-0.xml` has **3 warnings**. These warnings could indicate URLs that return redirects, soft 404s, or other issues preventing indexing.
+
+### Action Required
+1. Check if the GSC Sitemaps API scope can be upgraded to read-write (`https://www.googleapis.com/auth/webmasters` instead of `webmasters.readonly`) so we can programmatically resubmit sitemaps and get warning details
+2. Investigate the 3 sitemap warnings — common causes: URLs returning 3xx redirects, pages returning 200 but with thin/empty content (soft 404), URLs with trailing slash mismatches
+3. Fix any issues found
+
+### Good News
+Google is now actively crawling: sitemap-0.xml was last downloaded today (Feb 19). 9 pages are already showing search impressions:
+- `/hardware/proxmox-hardware-guide/` — 8 impressions, position 6.9
+- `/compare/freshrss-vs-miniflux/` — 4 impressions, position 4.5
+- `/foundations/reverse-proxy-explained/` — 4 impressions, position 7.2
+- 6 more pages with 1-2 impressions each
+
+This is excellent progress for day 4.
 ---
 
 ---

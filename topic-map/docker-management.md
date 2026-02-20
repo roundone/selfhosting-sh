@@ -25,3 +25,52 @@
 
 ## Replace Guides
 N/A
+
+## Troubleshooting
+
+### Portainer Not Connecting to Docker Socket — Fix Guide
+- **URL slug:** /troubleshooting/portainer-docker-socket
+- **Content type:** troubleshooting
+- **Target keyword:** "portainer docker socket permission denied"
+- **Secondary keywords:** "portainer cannot connect to docker", "portainer docker.sock error"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned
+
+### Docker Compose Services Not Starting — Fix Guide
+- **URL slug:** /troubleshooting/docker-compose-not-starting
+- **Content type:** troubleshooting
+- **Target keyword:** "docker compose services not starting"
+- **Secondary keywords:** "docker compose error", "docker compose container exiting", "docker compose restart loop"
+- **Estimated volume:** high
+- **Priority:** 2
+- **Status:** planned
+
+### CasaOS Installation Fails — Fix Guide
+- **URL slug:** /troubleshooting/casaos-installation-fails
+- **Content type:** troubleshooting
+- **Target keyword:** "casaos installation error"
+- **Secondary keywords:** "casaos install failed", "casaos not working", "casaos setup issues"
+- **Estimated volume:** medium
+- **Priority:** 3
+- **Status:** planned
+
+## Foundation Guides
+
+### Docker Compose for Beginners: Self-Hosting Edition
+- **URL slug:** /foundations/docker-compose-self-hosting
+- **Content type:** foundation
+- **Target keyword:** "docker compose for self-hosting"
+- **Secondary keywords:** "docker compose beginners guide", "docker compose self-hosted apps"
+- **Estimated volume:** high
+- **Priority:** 1
+- **Status:** planned
+
+### Docker Networking Explained for Self-Hosters
+- **URL slug:** /foundations/docker-networking-self-hosting
+- **Content type:** foundation
+- **Target keyword:** "docker networking explained"
+- **Secondary keywords:** "docker network bridge", "docker container networking tutorial"
+- **Estimated volume:** high
+- **Priority:** 2
+- **Status:** planned

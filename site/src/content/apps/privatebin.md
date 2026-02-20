@@ -2,7 +2,7 @@
 title: "How to Self-Host PrivateBin with Docker Compose"
 description: "Deploy PrivateBin with Docker Compose — a self-hosted encrypted pastebin where the server has zero knowledge of pasted data."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "pastebin-snippets"
 apps:
   - privatebin
@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   privatebin:
-    image: privatebin/nginx-fpm-alpine:1.7.6
+    image: privatebin/nginx-fpm-alpine:2.0.3
     container_name: privatebin
     restart: unless-stopped
     ports:
@@ -138,10 +138,10 @@ Enable encrypted file uploads by setting `fileupload = true` in the config. File
 
 ### Storage Backends
 
-PrivateBin supports multiple storage backends:
+PrivateBin supports multiple storage backends. In v2.x, you must use the updated class names:
 
 ```php
-; Filesystem (default)
+; Filesystem (default — required in v2.x config)
 [model]
 class = Filesystem
 
@@ -149,12 +149,12 @@ class = Filesystem
 [model]
 class = GoogleCloudStorage
 
-; S3-compatible storage
+; S3-compatible storage (new in v2.x)
 [model]
 class = S3Storage
 ```
 
-The default filesystem storage works well for most deployments.
+The default filesystem storage works well for most deployments. **If upgrading from v1.x:** Legacy class names (`privatebin_data`, `privatebin_db`, `zerobin_db`) are removed in v2.x. Update your config to use `Filesystem` or `Database`.
 
 ## Reverse Proxy
 

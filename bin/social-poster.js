@@ -1,0 +1,346 @@
+#!/usr/bin/env node
+/**
+ * social-poster.js — Queue-based social media poster
+ *
+ * Called every 5 minutes by coordinator.js. Reads from queues/social-queue.jsonl,
+ * posts to social platforms respecting per-platform intervals from config/social.json,
+ * and tracks last-posted timestamps in queues/social-state.json.
+ *
+ * Only posts to platforms with real credentials. Skips PENDING_ credentials silently.
+ * Processes one post per platform per run.
+ *
+ * Zero Claude API usage. Pure Node.js stdlib (https module).
+ */
+
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
+const http = require('http');
+const crypto = require('crypto');
+
+const REPO_ROOT = '/opt/selfhosting-sh';
+const QUEUE_FILE = path.join(REPO_ROOT, 'queues', 'social-queue.jsonl');
+const STATE_FILE = path.join(REPO_ROOT, 'queues', 'social-state.json');
+const CONFIG_FILE = path.join(REPO_ROOT, 'config', 'social.json');
+const LOG_FILE = path.join(REPO_ROOT, 'logs', 'social-poster.log');
+const CREDS_FILE = path.join(REPO_ROOT, 'credentials', 'api-keys.env');
+
+// ─── Utilities ───────────────────────────────────────────────────────────────
+
+function log(msg) {
+    const ts = new Date().toISOString();
+    const line = `${ts} [social-poster] ${msg}\n`;
+    fs.appendFileSync(LOG_FILE, line);
+    process.stdout.write(line);
+}
+
+function loadJson(filepath, fallback) {
+    try {
+        return JSON.parse(fs.readFileSync(filepath, 'utf8'));
+    } catch {
+        return fallback;
+    }
+}
+
+function saveJson(filepath, data) {
+    fs.writeFileSync(filepath, JSON.stringify(data, null, 2) + '\n');
+}
+
+function loadCreds() {
+    const env = {};
+    try {
+        const lines = fs.readFileSync(CREDS_FILE, 'utf8').split('\n');
+        for (const line of lines) {
+            const trimmed = line.trim();
+            if (!trimmed || trimmed.startsWith('#')) continue;
+            const eqIdx = trimmed.indexOf('=');
+            if (eqIdx === -1) continue;
+            const key = trimmed.slice(0, eqIdx).trim();
+            const val = trimmed.slice(eqIdx + 1).trim();
+            env[key] = val;
+        }
+    } catch (e) {
+        log(`ERROR loading credentials: ${e.message}`);
+    }
+    return env;
+}
+
+function isRealCredential(value) {
+    return value && !value.startsWith('PENDING_') && value.length > 5;
+}
+
+// ─── HTTP helpers ────────────────────────────────────────────────────────────
+
+function httpRequest(url, options, body) {
+    return new Promise((resolve, reject) => {
+        const mod = url.startsWith('https') ? https : http;
+        const req = mod.request(url, options, (res) => {
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('end', () => resolve({ status: res.statusCode, headers: res.headers, body: data }));
+        });
+        req.on('error', reject);
+        req.setTimeout(30000, () => { req.destroy(); reject(new Error('timeout')); });
+        if (body) req.write(body);
+        req.end();
+    });
+}
+
+// ─── Platform Posters ────────────────────────────────────────────────────────
+
+async function postBluesky(creds, text) {
+    // Step 1: Create session
+    const authBody = JSON.stringify({
+        identifier: creds.BLUESKY_HANDLE,
+        password: creds.BLUESKY_APP_PASSWORD,
+    });
+    const authRes = await httpRequest(
+        `${creds.BLUESKY_PDS || 'https://bsky.social'}/xrpc/com.atproto.server.createSession`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json' } },
+        authBody
+    );
+    if (authRes.status !== 200) {
+        throw new Error(`Bluesky auth failed: ${authRes.status} ${authRes.body.slice(0, 200)}`);
+    }
+    const session = JSON.parse(authRes.body);
+
+    // Step 2: Parse facets for links
+    const facets = [];
+    const urlRegex = /https?:\/\/[^\s)]+/g;
+    let match;
+    // Bluesky uses byte offsets for facets
+    const encoder = new TextEncoder();
+    const textBytes = encoder.encode(text);
+    while ((match = urlRegex.exec(text)) !== null) {
+        const beforeBytes = encoder.encode(text.slice(0, match.index));
+        const matchBytes = encoder.encode(match[0]);
+        facets.push({
+            index: { byteStart: beforeBytes.length, byteEnd: beforeBytes.length + matchBytes.length },
+            features: [{ $type: 'app.bsky.richtext.facet#link', uri: match[0] }],
+        });
+    }
+
+    // Step 3: Create post
+    const record = {
+        $type: 'app.bsky.feed.post',
+        text,
+        createdAt: new Date().toISOString(),
+        langs: ['en'],
+    };
+    if (facets.length > 0) record.facets = facets;
+
+    const postBody = JSON.stringify({
+        repo: session.did,
+        collection: 'app.bsky.feed.post',
+        record,
+    });
+    const postRes = await httpRequest(
+        `${creds.BLUESKY_PDS || 'https://bsky.social'}/xrpc/com.atproto.repo.createRecord`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.accessJwt}` } },
+        postBody
+    );
+    if (postRes.status !== 200) {
+        throw new Error(`Bluesky post failed: ${postRes.status} ${postRes.body.slice(0, 200)}`);
+    }
+    return JSON.parse(postRes.body);
+}
+
+async function postTwitter(creds, text) {
+    // Twitter API v2 with OAuth 1.0a HMAC-SHA1 signing
+    const url = 'https://api.twitter.com/2/tweets';
+    const method = 'POST';
+    const oauthParams = {
+        oauth_consumer_key: creds.X_API_KEY,
+        oauth_nonce: crypto.randomBytes(16).toString('hex'),
+        oauth_signature_method: 'HMAC-SHA1',
+        oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
+        oauth_token: creds.X_ACCESS_TOKEN,
+        oauth_version: '1.0',
+    };
+
+    // Build signature base string
+    const paramString = Object.keys(oauthParams).sort()
+        .map(k => `${encodeURIComponent(k)}=${encodeURIComponent(oauthParams[k])}`)
+        .join('&');
+    const signatureBase = `${method}&${encodeURIComponent(url)}&${encodeURIComponent(paramString)}`;
+    const signingKey = `${encodeURIComponent(creds.X_API_SECRET)}&${encodeURIComponent(creds.X_ACCESS_SECRET)}`;
+    const signature = crypto.createHmac('sha1', signingKey).update(signatureBase).digest('base64');
+    oauthParams.oauth_signature = signature;
+
+    const authHeader = 'OAuth ' + Object.keys(oauthParams).sort()
+        .map(k => `${encodeURIComponent(k)}="${encodeURIComponent(oauthParams[k])}"`)
+        .join(', ');
+
+    const body = JSON.stringify({ text });
+    const res = await httpRequest(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': authHeader,
+            'Content-Type': 'application/json',
+            'User-Agent': 'selfhosting-sh/1.0',
+        },
+    }, body);
+
+    if (res.status !== 201 && res.status !== 200) {
+        throw new Error(`Twitter post failed: ${res.status} ${res.body.slice(0, 300)}`);
+    }
+    return JSON.parse(res.body);
+}
+
+async function postMastodon(creds, text) {
+    const body = JSON.stringify({ status: text, visibility: 'public' });
+    const res = await httpRequest('https://mastodon.social/api/v1/statuses', {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${creds.MASTODON_ACCESS_TOKEN}`,
+            'Content-Type': 'application/json',
+            'User-Agent': 'selfhosting-sh/1.0',
+        },
+    }, body);
+    if (res.status !== 200) {
+        throw new Error(`Mastodon post failed: ${res.status} ${res.body.slice(0, 200)}`);
+    }
+    return JSON.parse(res.body);
+}
+
+async function postHashnode(creds, post) {
+    // Hashnode publishes articles via GraphQL, not short posts.
+    // Only article_link posts with a URL make sense here.
+    // For now, skip Hashnode — it requires full article cross-posting, not status updates.
+    log('Hashnode: skipping — requires full article cross-posting (not status updates)');
+    return null;
+}
+
+async function postDevto(creds, post) {
+    // Dev.to publishes articles, not status updates. Skip for now.
+    log('Dev.to: skipping — requires full article cross-posting (not status updates)');
+    return null;
+}
+
+async function postReddit(creds, post) {
+    // Reddit requires OAuth — credentials are PENDING
+    if (!isRealCredential(creds.REDDIT_CLIENT_ID)) {
+        return null;
+    }
+    log('Reddit: skipping — OAuth flow not implemented yet');
+    return null;
+}
+
+// ─── Main ────────────────────────────────────────────────────────────────────
+
+const PLATFORM_POSTERS = {
+    bluesky: postBluesky,
+    x: postTwitter,
+    mastodon: postMastodon,
+    reddit: postReddit,
+    devto: postDevto,
+    hashnode: postHashnode,
+};
+
+const PLATFORM_CRED_CHECKS = {
+    bluesky: (c) => isRealCredential(c.BLUESKY_APP_PASSWORD) && c.BLUESKY_HANDLE,
+    x: (c) => isRealCredential(c.X_API_KEY) && isRealCredential(c.X_ACCESS_TOKEN),
+    mastodon: (c) => isRealCredential(c.MASTODON_ACCESS_TOKEN),
+    reddit: (c) => isRealCredential(c.REDDIT_CLIENT_ID),
+    devto: (c) => isRealCredential(c.DEVTO_API_KEY),
+    hashnode: (c) => isRealCredential(c.HASHNODE_API_TOKEN),
+};
+
+async function main() {
+    log('starting');
+
+    // Load config, state, credentials
+    const config = loadJson(CONFIG_FILE, { platforms: {} });
+    const state = loadJson(STATE_FILE, { last_posted: {} });
+    const creds = loadCreds();
+
+    // Load queue
+    let queue = [];
+    try {
+        const raw = fs.readFileSync(QUEUE_FILE, 'utf8').trim();
+        if (raw) {
+            queue = raw.split('\n').map((line, i) => {
+                try { return JSON.parse(line); }
+                catch { log(`WARNING: invalid JSON on queue line ${i + 1}`); return null; }
+            }).filter(Boolean);
+        }
+    } catch (e) {
+        if (e.code !== 'ENOENT') log(`ERROR reading queue: ${e.message}`);
+        else log('queue file empty or missing — nothing to do');
+        return;
+    }
+
+    if (queue.length === 0) {
+        log('queue empty — nothing to do');
+        return;
+    }
+
+    log(`queue has ${queue.length} posts`);
+
+    const now = Date.now();
+    let postsAttempted = 0;
+    let postsSucceeded = 0;
+    const processedIndices = new Set();
+
+    // Process one post per platform
+    for (const platform of Object.keys(config.platforms || {})) {
+        const platformConfig = config.platforms[platform];
+        if (!platformConfig.enabled) continue;
+
+        // Check credentials
+        const credCheck = PLATFORM_CRED_CHECKS[platform];
+        if (!credCheck || !credCheck(creds)) {
+            continue; // silently skip platforms without real credentials
+        }
+
+        // Check interval
+        const lastPosted = state.last_posted?.[platform];
+        if (lastPosted) {
+            const elapsed = (now - new Date(lastPosted).getTime()) / 60000;
+            if (elapsed < platformConfig.min_interval_minutes) {
+                continue; // too soon
+            }
+        }
+
+        // Find the oldest queued post for this platform
+        const postIdx = queue.findIndex((p, i) => p.platform === platform && !processedIndices.has(i));
+        if (postIdx === -1) continue;
+
+        const post = queue[postIdx];
+        const poster = PLATFORM_POSTERS[platform];
+        if (!poster) continue;
+
+        postsAttempted++;
+        try {
+            const result = await poster(creds, post.text, post);
+            if (result !== null) {
+                postsSucceeded++;
+                state.last_posted[platform] = new Date().toISOString();
+                processedIndices.add(postIdx);
+                log(`OK ${platform}: posted "${post.text.slice(0, 60)}..."`);
+            }
+        } catch (e) {
+            log(`ERROR ${platform}: ${e.message}`);
+            // Don't remove from queue on error — will retry next run
+        }
+    }
+
+    // Remove successfully posted items from queue
+    if (processedIndices.size > 0) {
+        const remaining = queue.filter((_, i) => !processedIndices.has(i));
+        fs.writeFileSync(QUEUE_FILE, remaining.map(p => JSON.stringify(p)).join('\n') + (remaining.length ? '\n' : ''));
+        log(`removed ${processedIndices.size} posted items from queue (${remaining.length} remaining)`);
+    }
+
+    // Save state
+    saveJson(STATE_FILE, state);
+
+    log(`done — ${postsAttempted} attempted, ${postsSucceeded} succeeded, ${queue.length - processedIndices.size} remaining in queue`);
+}
+
+main().catch(e => {
+    log(`FATAL: ${e.message}`);
+    process.exit(1);
+});

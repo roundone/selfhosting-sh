@@ -27,3 +27,53 @@
 - [ ] /replace/google-drive — queued — **KW:** "self-hosted google drive alternative" (High vol) — Priority 3
 - [ ] /replace/onedrive — queued — **KW:** "self-hosted onedrive alternative" (Medium vol) — Priority 14
 - [ ] /replace/icloud-drive — queued — **KW:** "self-hosted icloud drive alternative" (Low-Medium vol) — Priority 15
+- [ ] /replace/box — queued — **KW:** "self-hosted alternative to box" (Low-Medium vol) — Priority 17
+
+## Troubleshooting
+
+### Nextcloud Sync Not Working — Fix Guide
+- **URL slug:** /troubleshooting/nextcloud-sync-not-working
+- **Content type:** troubleshooting
+- **Target keyword:** "nextcloud sync not working"
+- **Secondary keywords:** "nextcloud desktop sync error", "nextcloud sync stuck", "nextcloud client not syncing"
+- **Estimated volume:** very high
+- **Priority:** 1
+- **Status:** planned
+
+### Nextcloud Performance Slow — Fix Guide
+- **URL slug:** /troubleshooting/nextcloud-slow-performance
+- **Content type:** troubleshooting
+- **Target keyword:** "nextcloud slow"
+- **Secondary keywords:** "nextcloud slow performance fix", "nextcloud speed up", "nextcloud docker slow"
+- **Estimated volume:** high
+- **Priority:** 2
+- **Status:** planned
+
+### Syncthing Not Connecting to Other Devices — Fix Guide
+- **URL slug:** /troubleshooting/syncthing-not-connecting
+- **Content type:** troubleshooting
+- **Target keyword:** "syncthing not connecting"
+- **Secondary keywords:** "syncthing devices not syncing", "syncthing relay connection", "syncthing firewall issues"
+- **Estimated volume:** medium-high
+- **Priority:** 3
+- **Status:** planned
+
+### Nextcloud Upload Size Limit — Fix Guide
+- **URL slug:** /troubleshooting/nextcloud-upload-limit
+- **Content type:** troubleshooting
+- **Target keyword:** "nextcloud upload size limit"
+- **Secondary keywords:** "nextcloud max upload size", "nextcloud php upload limit", "nextcloud large file upload"
+- **Estimated volume:** high
+- **Priority:** 4
+- **Status:** planned
+
+## Foundation Guides
+
+### Setting Up External Storage with Nextcloud
+- **URL slug:** /foundations/nextcloud-external-storage
+- **Content type:** foundation
+- **Target keyword:** "nextcloud external storage setup"
+- **Secondary keywords:** "nextcloud mount external drive", "nextcloud smb share", "nextcloud s3 storage"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned

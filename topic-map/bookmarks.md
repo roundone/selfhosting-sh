@@ -24,3 +24,24 @@
 - [ ] /replace/pocket — **Priority 1** | Target: "self-hosted alternative to pocket" | Secondary: "replace pocket self-hosted", "pocket alternative open source" | Est. volume: high (Pocket losing users)
 - [ ] /replace/raindrop-io — **Priority 2** | Target: "self-hosted alternative to raindrop" | Secondary: "raindrop.io alternative" | Est. volume: low-medium
 - [ ] /replace/instapaper — **Priority 3** | Target: "self-hosted alternative to instapaper" | Secondary: "instapaper alternative self-hosted" | Est. volume: low
+- [ ] /replace/pinboard — **Priority 4** | Target: "self-hosted alternative to pinboard" | Secondary: "pinboard alternative free" | Est. volume: low
+
+## Troubleshooting
+
+### Linkwarden Not Saving Pages — Fix Guide
+- **URL slug:** /troubleshooting/linkwarden-not-saving
+- **Content type:** troubleshooting
+- **Target keyword:** "linkwarden not saving pages"
+- **Secondary keywords:** "linkwarden archive not working", "linkwarden screenshot error"
+- **Estimated volume:** low-medium
+- **Priority:** 1
+- **Status:** planned
+
+### Wallabag Import Not Working — Fix Guide
+- **URL slug:** /troubleshooting/wallabag-import-not-working
+- **Content type:** troubleshooting
+- **Target keyword:** "wallabag import not working"
+- **Secondary keywords:** "wallabag pocket import", "wallabag import error"
+- **Estimated volume:** low-medium
+- **Priority:** 2
+- **Status:** planned

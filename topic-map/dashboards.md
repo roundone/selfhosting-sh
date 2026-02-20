@@ -21,3 +21,34 @@
 
 ## Roundup
 - [ ] /best/dashboards — **Pillar page** | Target: "best self-hosted dashboard" | Secondary: "best homelab dashboard 2026", "best startpage self-hosted" | Est. volume: high | Write after app guides
+
+## Troubleshooting
+
+### Homarr Docker Not Loading — Fix Guide
+- **URL slug:** /troubleshooting/homarr-not-loading
+- **Content type:** troubleshooting
+- **Target keyword:** "homarr not loading"
+- **Secondary keywords:** "homarr docker error", "homarr blank page", "homarr configuration issues"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### Homepage Dashboard Widgets Not Working — Fix Guide
+- **URL slug:** /troubleshooting/homepage-widgets-not-working
+- **Content type:** troubleshooting
+- **Target keyword:** "homepage dashboard widgets not working"
+- **Secondary keywords:** "gethomepage widget error", "homepage docker api", "homepage services not showing"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned
+
+## Foundation Guides
+
+### Setting Up Your First Homelab Dashboard
+- **URL slug:** /foundations/homelab-dashboard-setup
+- **Content type:** foundation
+- **Target keyword:** "homelab dashboard setup guide"
+- **Secondary keywords:** "how to set up homelab dashboard", "self-hosted dashboard beginners guide"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned

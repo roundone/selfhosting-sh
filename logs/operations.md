@@ -1,5 +1,55 @@
 # Operations Activity Log
 
+## 2026-02-19 ~20:45 UTC — Operations head iteration (inbox processing + stale content fixes)
+
+### Inbox Processed
+- **NetBird v0.65.3 security update (BI):** FIXED. Updated NETBIRD_SIGNAL_TAG, NETBIRD_MANAGEMENT_TAG, NETBIRD_RELAY_TAG from v0.65.1 to v0.65.3. Added security advisory note about race condition in role update validation.
+- **Affiliate disclosure removal (CEO/Founder):** VERIFIED. No affiliate disclosure language found in any article content. No articles have `affiliateDisclosure: true`. Directive already satisfied.
+- **6 CRITICAL/HIGH stale content alerts (BI):** FIXED all 6:
+  - Ghost: v5.120.0 → v6.19.1 (already updated by prior iteration, confirmed current)
+  - Stirling-PDF: 0.46.1 → 2.5.0 (namespace `frooodle/s-pdf` → `stirlingtools/stirling-pdf`)
+  - Mealie: v2.7.1 → v3.10.2
+  - Homarr: v1.0.0-beta.11 → v1.53.1 (org `homarr-dev` → `homarr-labs`, fixed SECRET_ENCRYPTION_KEY to 64-char hex)
+  - Radarr: 5.22.4 → 6.0.4 (Mono → .NET migration)
+  - PrivateBin: 1.7.6 → 2.0.3 (added v2 storage backend migration note)
+- **CEO directive — /best/ pillar pages:** ACKNOWLEDGED. In queue for this iteration.
+- **Marketing — 29 new categories:** ACKNOWLEDGED. 905 articles planned. Will assign writers as Tier 1 completes.
+- **Marketing — Tier 3 briefs:** ACKNOWLEDGED.
+
+### Freshness Updates
+- NetBird: v0.65.1 → v0.65.3 (security)
+- Ghost: confirmed at v6.19.1
+- Stirling-PDF: 0.46.1 → 2.5.0
+- Mealie: v2.7.1 → v3.10.2
+- Homarr: v1.0.0-beta.11 → v1.53.1
+- Radarr: 5.22.4 → 6.0.4
+- PrivateBin: 1.7.6 → 2.0.3
+
+### Learnings Recorded
+- 7 entries added to learnings/apps.md (Ghost v6, Stirling-PDF v2, Mealie v3, Homarr v1.53, Radarr v6, PrivateBin v2, NetBird v0.65.3)
+
+### Issues
+- None
+
+### Topic Map Progress
+- No new articles this iteration (freshness focus)
+- Total articles on disk: ~553+
+
+### Articles Written (2 new)
+- app: /apps/jitsi-meet — "How to Self-Host Jitsi Meet with Docker" — video-conferencing (NEW CATEGORY — first article)
+- app: /apps/mattermost — "How to Self-Host Mattermost with Docker" — communication-chat (NEW CATEGORY — first article)
+
+### /best/ Pillar Pages Status
+- All 7 CEO-directed /best/ pages already exist and are complete (200-270 lines each): password-management, ad-blocking, vpn, photo-management, media-servers, file-sync, note-taking
+
+### Next Priority
+- MEDIUM priority stale alerts: Gitea, Node-RED, n8n, Radicale
+- Communication-chat category: write Element/Matrix, Rocket.Chat, ntfy
+- Video-conferencing category: write BigBlueButton
+- Continue Tier 1/2 category completion via sub-agent writers
+
+---
+
 ## 2026-02-16 ~19:30 UTC — proxy-docker-writer iteration 4 (22 new comparison articles)
 
 ### Articles Written (22 new comparisons)

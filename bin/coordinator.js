@@ -56,11 +56,13 @@ const STATE_FILE = path.join(LOGS_DIR, 'coordinator-state.json');
 const COORDINATOR_LOG = path.join(LOGS_DIR, 'coordinator.log');
 const RUN_AGENT_ONCE = path.join(REPO_ROOT, 'bin', 'run-agent-once.sh');
 const CHECK_RELEASES = path.join(REPO_ROOT, 'bin', 'check-releases.js');
+const SOCIAL_POSTER = path.join(REPO_ROOT, 'bin', 'social-poster.js');
 const HOOK_SOURCE = path.join(REPO_ROOT, 'bin', 'hooks', 'post-commit');
 const HOOK_DEST = path.join(REPO_ROOT, '.git', 'hooks', 'post-commit');
 
 const FALLBACK_INTERVAL_MS = 8 * 60 * 60 * 1000;       // 8 hours
 const RELEASES_CHECK_INTERVAL_MS = 60 * 60 * 1000;      // 1 hour
+const SOCIAL_POSTER_INTERVAL_MS = 5 * 60 * 1000;        // 5 minutes
 const ARCHIVE_CLEANUP_INTERVAL_MS = 60 * 60 * 1000;     // 1 hour
 const PERIODIC_CHECK_INTERVAL_MS = 5 * 60 * 1000;       // 5 minutes
 const ARCHIVE_MAX_BYTES = 10 * 1024 * 1024;              // 10 MB
@@ -88,9 +90,9 @@ const pendingTriggers = {};
 const debounceTimers = {};
 
 // Persisted state (saved to STATE_FILE):
-// { agents: { name → { lastRun, consecutiveErrors, nextAllowedRun } }, lastReleasesCheck, lastArchiveCleanup,
+// { agents: { name → { lastRun, consecutiveErrors, nextAllowedRun } }, lastReleasesCheck, lastSocialPosterRun, lastArchiveCleanup,
 //   pausedUntil (ISO string | null) — global pause when Claude Max session limit is hit }
-let state = { agents: {}, lastReleasesCheck: null, lastArchiveCleanup: null, pausedUntil: null };
+let state = { agents: {}, lastReleasesCheck: null, lastSocialPosterRun: null, lastArchiveCleanup: null, pausedUntil: null };
 
 // ─── Logging ──────────────────────────────────────────────────────────────────
 
@@ -666,6 +668,24 @@ function runCheckReleases() {
     child.on('exit', code => log(`RELEASES check-releases.js exited (code: ${code})`));
 }
 
+function runSocialPoster() {
+    const now = Date.now();
+    const lastRun = state.lastSocialPosterRun ? new Date(state.lastSocialPosterRun).getTime() : 0;
+    if (now - lastRun < SOCIAL_POSTER_INTERVAL_MS) return;
+
+    log('SOCIAL running social-poster.js');
+    state.lastSocialPosterRun = new Date().toISOString();
+    saveState();
+
+    const child = spawn('node', [SOCIAL_POSTER], {
+        env: { ...process.env, HOME: '/home/selfhosting' },
+        stdio: ['ignore', 'pipe', 'pipe'],
+    });
+    child.stdout.on('data', d => log(`SOCIAL ${d.toString().trim()}`));
+    child.stderr.on('data', d => log(`SOCIAL ERR ${d.toString().trim()}`));
+    child.on('exit', code => log(`SOCIAL social-poster.js exited (code: ${code})`));
+}
+
 function runArchiveCleanup() {
     const now = Date.now();
     const lastCleanup = state.lastArchiveCleanup ? new Date(state.lastArchiveCleanup).getTime() : 0;
@@ -705,6 +725,7 @@ function start() {
         isGloballyPaused(); // side-effect: clears expired pause and logs
         checkFallbacks();
         runCheckReleases();
+        runSocialPoster();
         runArchiveCleanup();
     }, PERIODIC_CHECK_INTERVAL_MS);
 

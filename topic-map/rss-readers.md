@@ -21,3 +21,24 @@
 ## Replace Guides
 - [ ] /replace/feedly — **Priority 1** | Target: "self-hosted alternative to feedly" | Secondary: "feedly alternative self-hosted" | Est. volume: medium-high
 - [ ] /replace/inoreader — **Priority 2** | Target: "self-hosted alternative to inoreader" | Est. volume: low-medium
+- [ ] /replace/google-reader — **Priority 3** | Target: "google reader alternative self-hosted" | Est. volume: low-medium
+
+## Troubleshooting
+
+### FreshRSS Not Updating Feeds — Fix Guide
+- **URL slug:** /troubleshooting/freshrss-not-updating
+- **Content type:** troubleshooting
+- **Target keyword:** "freshrss not updating feeds"
+- **Secondary keywords:** "freshrss feed refresh not working", "freshrss cron job", "freshrss docker feeds not updating"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### Miniflux Feed Import Errors — Fix Guide
+- **URL slug:** /troubleshooting/miniflux-feed-import
+- **Content type:** troubleshooting
+- **Target keyword:** "miniflux feed import error"
+- **Secondary keywords:** "miniflux opml import", "miniflux feed not found"
+- **Estimated volume:** low-medium
+- **Priority:** 2
+- **Status:** planned

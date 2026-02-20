@@ -2,7 +2,7 @@
 title: "How to Self-Host Ghost with Docker Compose"
 description: "Step-by-step guide to self-hosting Ghost CMS with Docker Compose, including MySQL setup, email configuration, and theme management."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "cms-websites"
 apps:
   - ghost
@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   ghost:
-    image: ghost:5.120.0
+    image: ghost:6.19.1
     container_name: ghost
     environment:
       database__client: mysql

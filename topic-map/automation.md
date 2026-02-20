@@ -24,3 +24,44 @@
 - [ ] /replace/zapier — **Priority 1** | Target: "self-hosted alternative to zapier" | Secondary: "replace zapier self-hosted", "zapier alternative open source" | Est. volume: very high
 - [ ] /replace/make-integromat — **Priority 2** | Target: "self-hosted alternative to make" | Secondary: "integromat alternative self-hosted" | Est. volume: medium
 - [ ] /replace/ifttt — **Priority 3** | Target: "self-hosted alternative to ifttt" | Secondary: "ifttt alternative self-hosted" | Est. volume: medium
+- [ ] /replace/power-automate — **Priority 4** | Target: "self-hosted alternative to power automate" | Secondary: "microsoft power automate alternative" | Est. volume: medium
+
+## Troubleshooting
+
+### n8n Workflows Not Triggering — Fix Guide
+- **URL slug:** /troubleshooting/n8n-workflows-not-triggering
+- **Content type:** troubleshooting
+- **Target keyword:** "n8n workflow not triggering"
+- **Secondary keywords:** "n8n webhook not working", "n8n cron trigger error", "n8n self-hosted trigger issues"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned
+
+### Node-RED Flows Not Deploying — Fix Guide
+- **URL slug:** /troubleshooting/node-red-flows-not-deploying
+- **Content type:** troubleshooting
+- **Target keyword:** "node-red flows not deploying"
+- **Secondary keywords:** "node-red deploy error", "node-red docker flow issues"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned
+
+### n8n Docker Memory Issues — Fix Guide
+- **URL slug:** /troubleshooting/n8n-docker-memory
+- **Content type:** troubleshooting
+- **Target keyword:** "n8n docker high memory"
+- **Secondary keywords:** "n8n memory usage", "n8n container out of memory", "n8n performance optimization"
+- **Estimated volume:** medium
+- **Priority:** 3
+- **Status:** planned
+
+## Foundation Guides
+
+### Automation Recipes: 20 Self-Hosted Workflows to Set Up First
+- **URL slug:** /foundations/self-hosted-automation-recipes
+- **Content type:** foundation
+- **Target keyword:** "self-hosted automation workflows"
+- **Secondary keywords:** "n8n workflow examples", "self-hosted automation ideas", "homelab automation"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned

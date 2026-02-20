@@ -2,7 +2,7 @@
 title: "How to Self-Host Mealie with Docker Compose"
 description: "Deploy Mealie with Docker Compose — a self-hosted recipe manager with meal planning, grocery lists, and web scraping."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-19
 category: "recipes"
 apps:
   - mealie
@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   mealie:
-    image: ghcr.io/mealie-recipes/mealie:v2.7.1
+    image: ghcr.io/mealie-recipes/mealie:v3.10.2
     container_name: mealie
     restart: unless-stopped
     ports:

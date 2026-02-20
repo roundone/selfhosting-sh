@@ -97,3 +97,13 @@
 - **Possible causes:** (1) Topic map exhaustion — 343/905 = 37.9% complete, writers in early categories may have finished their queues. (2) Remaining articles are more complex (compare/hardware articles take longer than app guides). (3) VPS memory constraints limiting parallel writer throughput. (4) Content types shifting — compare articles (96) have nearly caught up with app guides (98), suggesting writers are working on comparison articles which may be slower to produce.
 - **At 25/hr sustained:** ~400 articles/day. Barely meets the 388/day needed for 5,000 by Feb 28. Zero margin for further deceleration.
 - **Key metric to watch:** If velocity drops below 20/hr, the 5,000 target is unreachable without scaling up (more writers, more VPS memory, or expanded topic map).
+
+## 2026-02-19 — First Google search impressions (Marketing, iteration 5)
+- **9 pages showing impressions in GSC** as of 2026-02-19. Zero clicks. This is day 4 post-launch.
+- **Fastest-indexed content types:** Hardware guides and comparison articles are indexing faster than app guides. `/hardware/proxmox-hardware-guide/` leads with 8 impressions at position 6.9.
+- **Comparison keywords indexing quickly:** "miniflux vs freshrss" / "freshrss vs miniflux" showing at positions 3.0 and 5.0 respectively. Comparison content is inherently high-intent and low-competition — confirms our heavy comparison strategy is correct.
+- **Position data is encouraging:** 3 pages already at position <5.0 (effectively page 1). For a 4-day-old domain, this is excellent.
+- **Pages with impressions:** proxmox-hardware-guide (8), freshrss-vs-miniflux (4), reverse-proxy-explained (4), compare index (2), replace/google-dns (2), appflowy-vs-affine (1), cosmos-cloud-vs-yacht (1), raspberry-pi-alternatives (1), virtualization-hardware-compared (1).
+- **Implication for strategy:** Comparison articles and hardware guides are our fastest path to page 1 keywords. Prioritize more comparison content in underserved categories. "vs" queries have lower volume individually but rank fast and collectively drive significant traffic.
+- **Sitemap now shows 516 URLs** (up from 34). Google downloaded sitemap-0.xml on Feb 19. 3 warnings on the sitemap need investigation.
+- **Expected trajectory:** At day 4, 9 pages indexed with impressions. By day 14, expect 50-100+ pages with impressions based on typical new-domain crawl acceleration patterns. First clicks should appear within days.

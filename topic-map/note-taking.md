@@ -32,3 +32,34 @@
 - [ ] /replace/evernote — queued — **KW:** "self-hosted evernote alternative" (Medium vol) — Priority 18
 - [ ] /replace/onenote — queued — **KW:** "self-hosted onenote alternative" (Medium vol) — Priority 19
 - [ ] /replace/confluence — queued — **KW:** "self-hosted confluence alternative" (Medium vol) — Priority 20
+- [ ] /replace/google-keep — queued — **KW:** "self-hosted alternative to google keep" (Medium vol) — Priority 22
+- [ ] /replace/apple-notes — queued — **KW:** "self-hosted alternative to apple notes" (Low-Medium vol) — Priority 23
+
+## Troubleshooting
+
+### BookStack LDAP Authentication Not Working — Fix Guide
+- **URL slug:** /troubleshooting/bookstack-ldap-issues
+- **Content type:** troubleshooting
+- **Target keyword:** "bookstack ldap not working"
+- **Secondary keywords:** "bookstack ldap authentication error", "bookstack active directory setup"
+- **Estimated volume:** medium
+- **Priority:** 1
+- **Status:** planned
+
+### Outline Docker Not Starting — Fix Guide
+- **URL slug:** /troubleshooting/outline-not-starting
+- **Content type:** troubleshooting
+- **Target keyword:** "outline docker not starting"
+- **Secondary keywords:** "outline wiki docker error", "outline s3 configuration error"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned
+
+### Joplin Server Sync Issues — Fix Guide
+- **URL slug:** /troubleshooting/joplin-server-sync
+- **Content type:** troubleshooting
+- **Target keyword:** "joplin server sync not working"
+- **Secondary keywords:** "joplin server sync error", "joplin self-hosted sync issues"
+- **Estimated volume:** medium-high
+- **Priority:** 3
+- **Status:** planned

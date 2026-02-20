@@ -19,3 +19,33 @@
 ## Replace Guides
 - [ ] /replace/adobe-acrobat — **Priority 1** | Target: "self-hosted alternative to adobe acrobat" | Secondary: "adobe acrobat alternative free" | Est. volume: high
 - [ ] /replace/cloud-document-storage — **Priority 2** | Target: "self-hosted document storage" | Secondary: "replace google drive documents" | Est. volume: medium
+- [ ] /replace/evernote-documents — **Priority 3** | Target: "self-hosted document scanner alternative" | Secondary: "evernote scanning alternative" | Est. volume: low-medium
+
+## Troubleshooting
+
+### Paperless-ngx OCR Not Working — Fix Guide
+- **URL slug:** /troubleshooting/paperless-ngx-ocr-not-working
+- **Content type:** troubleshooting
+- **Target keyword:** "paperless-ngx ocr not working"
+- **Secondary keywords:** "paperless-ngx ocr error", "paperless-ngx tesseract", "paperless-ngx text recognition"
+- **Estimated volume:** medium-high
+- **Priority:** 1
+- **Status:** planned
+
+### Paperless-ngx Consumption Folder Not Processing — Fix Guide
+- **URL slug:** /troubleshooting/paperless-ngx-consumption
+- **Content type:** troubleshooting
+- **Target keyword:** "paperless-ngx consumption not working"
+- **Secondary keywords:** "paperless-ngx not processing files", "paperless-ngx folder watch", "paperless-ngx import stuck"
+- **Estimated volume:** medium
+- **Priority:** 2
+- **Status:** planned
+
+### Stirling-PDF Conversion Errors — Fix Guide
+- **URL slug:** /troubleshooting/stirling-pdf-errors
+- **Content type:** troubleshooting
+- **Target keyword:** "stirling pdf not working"
+- **Secondary keywords:** "stirling pdf conversion error", "stirling pdf docker issues"
+- **Estimated volume:** medium
+- **Priority:** 3
+- **Status:** planned
