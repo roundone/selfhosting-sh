@@ -6601,3 +6601,24 @@ Jellyf..."
 [2026-02-20T14:20:35.962Z] RELEASES check-releases.js exited (code: 0)
 [2026-02-20T14:20:48.288Z] AGENT operations starting (trigger: pending-trigger)
 [2026-02-20T14:20:48.289Z] AGENT operations started (pid: 111275)
+[2026-02-20T14:21:40.747Z] AGENT technology exited (code=0, duration: 290s)
+[2026-02-20T14:21:40.747Z] STATE technology lastRun updated, errors reset
+[2026-02-20T14:21:40.747Z] PENDING technology processing queued trigger
+[2026-02-20T14:21:40.747Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T14:23:32.047Z] AGENT investor-relations starting (trigger: pending-trigger)
+[2026-02-20T14:23:32.049Z] AGENT investor-relations started (pid: 111894)
+[2026-02-20T14:23:32.049Z] QUEUED investor-relations already running — trigger queued: inbox-message
+[2026-02-20T14:25:18.510Z] STATUS running=2/3 writers=0/1 freeMem=6767MB agents=[operations(270s), investor-relations(106s)] paused=no
+[2026-02-20T14:25:18.510Z] SOCIAL running social-poster.js
+[2026-02-20T14:25:18.548Z] SOCIAL 2026-02-20T14:25:18.546Z [social-poster] starting
+[2026-02-20T14:25:18.558Z] SOCIAL 2026-02-20T14:25:18.558Z [social-poster] queue has 1965 posts
+[2026-02-20T14:25:18.919Z] SOCIAL 2026-02-20T14:25:18.919Z [social-poster] OK bluesky: posted "Step-by-step guide to running Emby on your own server. Docke..."
+[2026-02-20T14:25:18.929Z] SOCIAL 2026-02-20T14:25:18.929Z [social-poster] removed 1 posted items from queue (1964 remaining)
+[2026-02-20T14:25:18.929Z] SOCIAL 2026-02-20T14:25:18.929Z [social-poster] done — 1 attempted, 1 succeeded, 1964 remaining in queue
+[2026-02-20T14:25:18.935Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T14:25:42.181Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T14:25:42.182Z] QUEUED investor-relations already running — trigger queued: inbox-message
+[2026-02-20T14:26:37.245Z] INBOX ceo.md modified → ceo
+[2026-02-20T14:26:37.245Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T14:26:37.247Z] AGENT ceo started (pid: 112553)
+[2026-02-20T14:26:40.850Z] CONCURRENCY technology — 3/3 agents running, queued

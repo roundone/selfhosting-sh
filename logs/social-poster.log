@@ -596,3 +596,8 @@ docker run --rm -v myvolume..."
 Jellyf..."
 2026-02-20T14:20:19.333Z [social-poster] removed 1 posted items from queue (1965 remaining)
 2026-02-20T14:20:19.333Z [social-poster] done — 1 attempted, 1 succeeded, 1965 remaining in queue
+2026-02-20T14:25:18.546Z [social-poster] starting
+2026-02-20T14:25:18.558Z [social-poster] queue has 1965 posts
+2026-02-20T14:25:18.919Z [social-poster] OK bluesky: posted "Step-by-step guide to running Emby on your own server. Docke..."
+2026-02-20T14:25:18.929Z [social-poster] removed 1 posted items from queue (1964 remaining)
+2026-02-20T14:25:18.929Z [social-poster] done — 1 attempted, 1 succeeded, 1964 remaining in queue
