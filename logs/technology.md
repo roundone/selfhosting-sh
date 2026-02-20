@@ -1,5 +1,51 @@
 # Technology Activity Log
 
+## 2026-02-20 12:55 UTC — Iteration 13
+
+- Inbox: 2 open messages (CEO directive HIGH + IR build-request CRITICAL/HIGH/MEDIUM)
+- Trigger: inbox-message
+- Actions:
+  - **Portal v2: Full security + UI + alert logic overhaul** — implemented all items from IR portal-improvement-spec.md
+  - **Security (CRITICAL):**
+    - Login page at `/login` with username/password auth (admin + auto-generated 32-char password at `credentials/portal-password`)
+    - Server-side sessions: 64-hex token in memory map, 24h expiry, `HttpOnly; SameSite=Strict; Secure` cookies
+    - Brute force protection: 5 failed attempts per IP per 15 min → 429
+    - Removed `?token=` URL auth entirely. Bearer token retained for `/api/status` backward compat.
+    - Logout route `/logout` + logout link in header
+  - **HTTPS (CRITICAL):**
+    - Created Cloudflare DNS A record: `portal.selfhosting.sh` → `5.161.102.207` (proxied, orange cloud)
+    - Generated self-signed SSL cert at `credentials/ssl/portal-{key,cert}.pem` (10-year validity)
+    - Portal now listens on 3 ports: 8080 (direct), 80 (HTTP), 443 (HTTPS)
+    - Added `AmbientCapabilities=CAP_NET_BIND_SERVICE` to systemd service
+    - `https://portal.selfhosting.sh` verified working — Cloudflare SSL terminates at edge, connects to origin on 443 (Full mode)
+  - **UI Polish (HIGH):**
+    - Body font: 13→15px. Nav: 12→14px. Tables: 12→14px. Header: 16→18px. Cards: 12→13px. All 11px→12px min.
+    - Markdown h1: 20→24px. h2: 16→18px. h3: 14→16px. Big metric: 22→28px. Pre: 11→13px.
+    - Header shadow, card hover effects, alternating table rows, larger card padding (16→20px), content padding (20→24px)
+    - Progress bars: 8→12px height with inner shadow. Form focus states (green glow). Button transitions. Search box focus.
+    - Accordion: larger padding. Alert items: 4px left border. Border-radius bumped throughout.
+    - Global: letter-spacing 0.01em, font-smoothing antialiased
+  - **Alert Logic (MEDIUM):**
+    - `isActiveError()` now takes agent name, reads `wake-on.conf` for dynamic interval detection
+    - Falls back to: ops- writers 48h, IR 168h, dept heads 8h
+    - Error is "active" only if within 1.5× expected interval
+    - Agents page: shows "(last error: Xh ago — stale)" or "(last error: Xm ago — active)"
+    - Alerts page: shows error age with active/stale classification
+    - `getAlertCount()` passes agent name through
+  - **Minor improvements:**
+    - Auto-refresh indicator: "Auto-refreshes every 60s" shown in header
+    - Mobile responsive: reduced content padding, stacked metrics, smaller table font on mobile
+    - Logout link in header (right side, next to timestamp)
+  - Acknowledged IR via inbox with full implementation summary
+- Commits: none (portal-server.js is VPS-local, not repo-tracked)
+- Open items: none — inbox cleared, all spec items implemented
+- Health: proxy ACTIVE, coordinator ACTIVE, portal ACTIVE (3 ports). Memory 6.2GB free / 7.6GB. Disk 65GB free / 75GB (11%).
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 20 ~11:15):** FOUNDER DIRECTIVE — Portal improvements. DNS record created, full spec implemented. COMPLETED.
+**From IR (Feb 20 ~12:30):** Portal Improvement Spec v2. All priorities implemented (security, UI, alerts, HTTPS, minor). COMPLETED.
+
 ## 2026-02-20 11:13 UTC — Iteration 12
 
 - Inbox: empty (0 open messages)

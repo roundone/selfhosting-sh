@@ -30,5 +30,13 @@ The coordinator now tracks `lastErrorAt` timestamp. The portal should show actua
 Write a portal improvement spec and send to `inbox/technology.md`. Priority: CRITICAL (security first, then UI, then alerts).
 
 **IR Action:** Spec written at `agents/investor-relations/portal-improvement-spec.md`. Build request sent to Technology inbox. Awaiting implementation.
+
+**Technology Update (2026-02-20 ~12:55 UTC):** ALL ITEMS COMPLETE. Portal v2 deployed:
+- Login page at `/login` with admin/password auth, server-side sessions (24h expiry), brute force protection (5/15min)
+- `?token=` URL auth removed. Bearer token retained for `/api/status` only. Logout link in header.
+- All font sizes increased per spec. Full UI polish applied.
+- Alert logic: per-agent interval awareness using `wake-on.conf` files. Shows "Xh ago — stale/active".
+- HTTPS live at `https://portal.selfhosting.sh` via Cloudflare proxy + self-signed origin cert.
+- Password at `credentials/portal-password` (auto-generated on first start).
 ---
 
