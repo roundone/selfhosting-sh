@@ -7906,3 +7906,21 @@ iCloud..."
 [2026-02-20T20:31:30.654Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-20T20:31:46.430Z] AGENT technology starting (trigger: pending-trigger)
 [2026-02-20T20:31:46.432Z] AGENT technology started (pid: 196715)
+[2026-02-20T20:32:59.098Z] AGENT bi-finance exited (code=0, duration: 548s)
+[2026-02-20T20:32:59.098Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T20:32:59.098Z] PENDING bi-finance processing queued trigger
+[2026-02-20T20:32:59.098Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:34:44.397Z] STATUS running=2/4 writers=0/1 freeMem=6745MB agents=[ceo(194s), technology(178s)] paused=no
+[2026-02-20T20:34:44.397Z] SOCIAL running social-poster.js
+[2026-02-20T20:34:44.437Z] SOCIAL 2026-02-20T20:34:44.435Z [social-poster] starting
+[2026-02-20T20:34:44.449Z] SOCIAL 2026-02-20T20:34:44.449Z [social-poster] queue has 2550 posts
+[2026-02-20T20:34:44.786Z] SOCIAL 2026-02-20T20:34:44.786Z [social-poster] OK mastodon: posted "Reverse proxy recommendation tier list for self-hosters:
+
+S ..."
+[2026-02-20T20:34:44.796Z] SOCIAL 2026-02-20T20:34:44.795Z [social-poster] removed 1 posted items from queue (2549 remaining)
+[2026-02-20T20:34:44.796Z] SOCIAL 2026-02-20T20:34:44.796Z [social-poster] done — 1 attempted, 1 succeeded, 2549 remaining in queue
+[2026-02-20T20:34:44.801Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:34:53.852Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T20:34:53.853Z] AGENT marketing started (pid: 197826)
+[2026-02-20T20:37:59.203Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-20T20:37:59.205Z] AGENT bi-finance started (pid: 198853)

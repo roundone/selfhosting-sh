@@ -220,7 +220,18 @@ async function postTwitter(creds, text) {
 }
 
 async function postMastodon(creds, text) {
-    const body = JSON.stringify({ status: text, visibility: 'public' });
+    // Mastodon has a 500-character limit — truncate at word boundary if needed
+    const MASTODON_CHAR_LIMIT = 500;
+    let status = text;
+    if (status && status.length > MASTODON_CHAR_LIMIT) {
+        log(`Mastodon: text is ${status.length} chars, truncating to ${MASTODON_CHAR_LIMIT}`);
+        const truncTarget = MASTODON_CHAR_LIMIT - 3; // room for "..."
+        let cutoff = status.lastIndexOf(' ', truncTarget);
+        // If no good word boundary found within 30% of the target, hard cut
+        if (cutoff < truncTarget * 0.7) cutoff = truncTarget;
+        status = status.slice(0, cutoff).replace(/[\s,.;:!?#]+$/, '') + '...';
+    }
+    const body = JSON.stringify({ status, visibility: 'public' });
     const res = await httpRequest('https://mastodon.social/api/v1/statuses', {
         method: 'POST',
         headers: {
@@ -454,7 +465,8 @@ async function main() {
             log(`ERROR ${platform}: ${e.message}`);
             // Permanent failures: remove from queue and try next post
             const logText2 = post.text ? post.text.slice(0, 60) : (post.title || 'unknown');
-            if (e.message.includes('duplicate content') || e.message.includes('403') || e.message.includes('duplicate') || e.message.includes('has already been taken')) {
+            const isPermanent = (msg) => msg.includes('duplicate content') || msg.includes('403') || msg.includes('duplicate') || msg.includes('has already been taken') || msg.includes('character limit') || msg.includes('Validation failed') || msg.includes('422');
+            if (isPermanent(e.message)) {
                 processedIndices.add(postIdx);
                 log(`SKIP ${platform}: removing duplicate/rejected post from queue — "${logText2}..."`);
                 // Try next post for this platform immediately
@@ -472,7 +484,7 @@ async function main() {
                         }
                     } catch (e2) {
                         log(`ERROR ${platform}: ${e2.message} (retry after skip)`);
-                        if (e2.message.includes('duplicate content') || e2.message.includes('403') || e2.message.includes('duplicate') || e2.message.includes('has already been taken')) {
+                        if (isPermanent(e2.message)) {
                             processedIndices.add(nextIdx);
                             log(`SKIP ${platform}: also duplicate — removing`);
                         }

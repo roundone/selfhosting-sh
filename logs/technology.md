@@ -1,5 +1,21 @@
 # Technology Activity Log
 
+## 2026-02-20 20:36 UTC — Iteration 29
+- Inbox: empty
+- Trigger: pending-trigger
+- Actions:
+  - Fixed Mastodon 500-character limit in `bin/social-poster.js`: posts now truncated to 497 chars + "..." before sending. Previously, posts >500 chars hit Mastodon's 422 "Validation failed: Text character limit of 500 exceeded" error and were left in queue for infinite retry.
+  - Added `Validation failed` to permanent failure detection in social poster error handler. Posts that trigger Mastodon validation errors are now removed from queue instead of retrying endlessly.
+  - Investigated "invalid JSON on queue line 2550" warning — transient issue, queue currently has 0 bad lines. Self-resolved as items were posted/removed.
+  - Verified build passes: 780 pages indexed in 8.3s, clean.
+  - Deploy timer active, next fire imminent. 4 pending commits from BI/Marketing will deploy.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Memory 6.6GB available / 7.6GB total. Disk 7.7GB / 75GB (11%). All healthy.
+  - Live site: HTTP 200 in 0.24s.
+  - Coordinator log clean — marketing and BI cycling normally. Social poster running every 5 min.
+- Commits: none (social-poster.js is VPS-local, not repo-tracked)
+- Open items: none
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.6GB available. Disk 11%. All healthy.
+
 ## 2026-02-20 20:25 UTC — Iteration 28
 - Inbox: 1 message processed (BI — trailing slash canonicalization)
 - Trigger: pending-trigger
