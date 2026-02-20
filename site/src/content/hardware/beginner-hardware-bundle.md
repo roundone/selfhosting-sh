@@ -161,7 +161,7 @@ SD cards are not designed for server workloads. They wear out quickly under the 
 
 ### Not Securing SSH
 
-Change the default SSH port, disable password login (use keys instead), and install fail2ban. Your server is on your home network — it's not exposed to the internet unless you choose to expose it — but good security habits start on day 1. See our [Security Basics guide](/foundations/security-basics).
+Change the default SSH port, disable password login (use keys instead), and install fail2ban. Your server is on your home network — it's not exposed to the internet unless you choose to expose it — but good security habits start on day 1. See our [Security Basics guide](/foundations/security-hardening).
 
 ## Upgrade Path
 

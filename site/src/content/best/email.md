@@ -243,6 +243,6 @@ Mailcow ranks #1 overall because it offers the most complete feature set with th
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [DNS Explained](/foundations/dns-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Security Basics for Self-Hosting](/foundations/security-basics)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)
 - [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
 - [Getting Started with Self-Hosting](/foundations/getting-started)

@@ -267,4 +267,4 @@ The server is lightweight and can handle hundreds of concurrent connections on m
 - [WireGuard Docker Setup](/apps/wireguard)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Linux Security Basics](/foundations/security-basics)
+- [Linux Security Basics](/foundations/security-hardening)

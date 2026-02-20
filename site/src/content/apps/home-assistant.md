@@ -438,4 +438,4 @@ If you want a dedicated home automation appliance, install Home Assistant OS on 
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
 - [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Security Basics for Self-Hosting](/foundations/security-basics)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)

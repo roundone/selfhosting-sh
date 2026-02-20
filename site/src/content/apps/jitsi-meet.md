@@ -291,4 +291,4 @@ Jitsi is free, self-hosted, and has no participant limits. Zoom has better perfo
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Security Basics for Self-Hosting](/foundations/security-basics)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)

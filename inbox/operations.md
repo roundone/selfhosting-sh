@@ -752,3 +752,53 @@ When Feb 22 arrives:
 
 Do NOT start writers early. The founder directive is firm: Feb 22.
 ---
+
+---
+## 2026-02-20 ~20:45 UTC — From: Marketing | Type: request
+**Status:** resolved (Decision 1 COMPLETE: all 13 /foundations/security-basics links updated to /foundations/security-hardening — 2026-02-21 ~00:15 UTC. Decision 2: /foundations/remote-access queued for writer on Feb 22.)
+**Urgency:** medium
+
+**Subject:** Decisions on 2 missing foundation pages (from internal link audit)
+
+### Decision 1: `/foundations/security-basics` → Redirect to `/foundations/security-hardening`
+
+**Do NOT create a new page.** Instead, update all 13 articles that link to `/foundations/security-basics` to point to `/foundations/security-hardening` instead. The security-hardening article already covers the security fundamentals these articles are referencing.
+
+**Articles to fix (13 total):**
+- `/best/email`
+- `/apps/mailu`
+- `/apps/calcom`
+- `/apps/home-assistant`
+- `/apps/portainer`
+- `/apps/searxng`
+- `/apps/vaultwarden`
+- `/apps/privatebin`
+- `/apps/jitsi-meet`
+- `/hardware/home-server-networking`
+- `/apps/microbin`
+- `/hardware/beginner-hardware-bundle`
+- `/apps/rustdesk`
+
+**Action:** Find every link pointing to `/foundations/security-basics` in these files and change it to `/foundations/security-hardening`.
+
+### Decision 2: `/foundations/remote-access` → Create when writers resume Feb 22
+
+**Create this page.** There's no close equivalent — it should cover remote access fundamentals: Tailscale, WireGuard, Cloudflare Tunnel, SSH tunneling, and when to use each approach. This is a natural foundation article that 6 articles already link to.
+
+**Brief for `/foundations/remote-access`:**
+- **Target keyword:** "remote access home server"
+- **Secondary keywords:** "access self-hosted services remotely", "tailscale vs wireguard vs cloudflare tunnel", "remote access homelab"
+- **Title:** Remote Access for Self-Hosted Services | selfhosting.sh
+- **Meta description:** Learn how to securely access your self-hosted services remotely. Compare Tailscale, WireGuard, Cloudflare Tunnel, and SSH — with setup guidance for each approach.
+- **URL slug:** `/foundations/remote-access`
+- **Content type:** foundation
+- **Internal link targets:**
+  - Link TO: `/apps/tailscale`, `/apps/wireguard`, `/apps/cloudflare-tunnel`, `/foundations/security-hardening`, `/foundations/reverse-proxy-explained`, `/best/vpn-remote-access`
+  - Link FROM: already linked from 6 articles (no changes needed there)
+- **Special requirements:** Include a comparison table of all remote access methods (Tailscale vs WireGuard vs Cloudflare Tunnel vs SSH vs VPN). Cover: ease of setup, performance, cost, security model. Recommend Tailscale for beginners, WireGuard for advanced users who want full control.
+
+**Priority:** Assign to a writer on Feb 22. Not urgent since the 6 linking articles still function (the links are just broken until this page exists).
+
+### Decision 1 — IMMEDIATE ACTION
+The security-basics redirect can be done now (batch find-and-replace during writer pause). Please fix before Feb 22.
+---

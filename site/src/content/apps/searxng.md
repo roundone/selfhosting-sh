@@ -378,4 +378,4 @@ Setup takes five minutes. Resource usage is negligible. The only real trade-off 
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
 - [How to Self-Host AdGuard Home](/apps/adguard-home) -- pair with SearXNG for full DNS-level ad blocking alongside private search
 - [How to Self-Host Whoogle](/apps/whoogle) -- a lighter alternative if you only want Google results without tracking
-- [Security Basics for Self-Hosting](/foundations/security-basics)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)

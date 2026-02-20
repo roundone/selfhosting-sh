@@ -171,7 +171,7 @@ The traditional approach. Expose ports 80 and 443 on your router, point them at 
 - **Security responsibility is yours** — exposed ports are attack surface
 - **Dynamic DNS needed** if your public IP changes (most residential ISPs)
 
-**Security warning:** Exposing ports to the internet means your server is directly reachable. Use a reverse proxy with SSL, enable fail2ban, keep software updated. See [Security Basics](/foundations/security-basics).
+**Security warning:** Exposing ports to the internet means your server is directly reachable. Use a reverse proxy with SSL, enable fail2ban, keep software updated. See [Security Basics](/foundations/security-hardening).
 
 ## VLANs (Optional, Advanced)
 

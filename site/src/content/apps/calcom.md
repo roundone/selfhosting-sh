@@ -340,4 +340,4 @@ For personal use where you just need a simple booking link, Cal.com is overkill 
 - [Backup: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
 - [How to Self-Host n8n](/apps/n8n)
 - [How to Self-Host Radicale](/apps/radicale)
-- [Security Basics for Self-Hosting](/foundations/security-basics)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)

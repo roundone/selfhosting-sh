@@ -210,5 +210,5 @@ PrivateBin is the best self-hosted pastebin. The zero-knowledge encryption means
 - [Best Self-Hosted Pastebins](/best/pastebin)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Security Basics for Self-Hosting](/foundations/security-basics)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)

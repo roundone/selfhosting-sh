@@ -297,4 +297,4 @@ The main alternative is [Dockge](/apps/dockge) — a simpler, more focused tool 
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
 - [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Security Basics](/foundations/security-basics)
+- [Security Basics](/foundations/security-hardening)
