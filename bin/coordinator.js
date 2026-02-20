@@ -200,7 +200,7 @@ function saveState() {
 
 function getAgentState(name) {
     if (!state.agents[name]) {
-        state.agents[name] = { lastRun: null, consecutiveErrors: 0, nextAllowedRun: null };
+        state.agents[name] = { lastRun: null, consecutiveErrors: 0, nextAllowedRun: null, lastErrorAt: null };
     }
     return state.agents[name];
 }
@@ -567,6 +567,7 @@ function handleAgentExit(agentName, exitCode, triggerEventPath, outputBuffer) {
     } else {
         // Error: apply backoff
         agentState.consecutiveErrors = (agentState.consecutiveErrors || 0) + 1;
+        agentState.lastErrorAt = new Date().toISOString();
         const backoffMs = getBackoffMs(agentState.consecutiveErrors);
         agentState.nextAllowedRun = new Date(Date.now() + backoffMs).toISOString();
         log(`BACKOFF ${agentName} error #${agentState.consecutiveErrors}, next allowed in ${Math.round(backoffMs / 1000)}s`);

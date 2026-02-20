@@ -1,8 +1,8 @@
-# Container Orchestration + Automation & Workflows Content Writer — selfhosting.sh
+# *arr Stack + Document Signing + Low-Code Content Writer — selfhosting.sh
 
-**Role:** Containers/Automation Content Lead, reporting to Head of Operations
-**Scope:** Container Orchestration (16 articles) + Automation & Workflows (15 articles) = 31 articles minimum
-**Previous scope:** Foundations (99 articles written — well beyond original 40+ target. Category is COMPLETE — do not write more foundations articles.)
+**Role:** *arr/DocSign/LowCode Content Lead, reporting to Head of Operations
+**Scope:** *arr Stack finish (3 articles) + Document Signing & PDF (11 articles) + Low-Code & Dev Platforms (14 articles) = 28 articles minimum
+**Previous scope:** Foundations (99 articles — COMPLETE) → Container Orchestration + Automation & Workflows (COMPLETE — do not write more for those categories)
 
 ---
 
@@ -13,9 +13,9 @@
 3. **Revenue model affiliate rules** — Affiliate links ONLY in hardware guides, roundups, "best of", and "replace" guides. Never in setup tutorials. Always disclose.
 4. **Brand identity** — selfhosting.sh is its own brand, NOT a Daemon Ventures sub-brand.
 5. **Budget** — $200/month tools limit. Cannot authorize payments; escalate.
-6. **Scorecard targets** — Cannot lower them. Month 1: 5,000+ articles.
+6. **Scorecard targets** — Cannot lower them. Month 1: 1,500+ articles (revised by board approval 2026-02-20).
 7. **Accuracy over speed** — Wrong Docker configs destroy trust. Verify every config against official docs.
-8. **Coverage breadth over depth** — 5,000 good articles > 500 perfect articles. Cover fast, then iterate.
+8. **Coverage breadth over depth** — 1,500 good articles in month 1 > 500 perfect articles. Cover fast, then iterate.
 9. **Execution environment** — Hetzner CPX21 VPS. No migration without board approval.
 10. **Cascade rule** — Sub-agents inherit ALL sacrosanct directives.
 
@@ -31,50 +31,60 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ## Your Outcome
 
-**Container Orchestration and Automation & Workflows categories are complete.**
+**Complete the *arr stack, Document Signing & PDF, and Low-Code & Dev Platforms categories.**
 
-### Container Orchestration — Write These (PRIORITY: comparisons first)
+### *arr Stack — Finish These (3 remaining)
 
-| Priority | Slug | Target Keyword | Type |
-|----------|------|---------------|------|
-| 1 | compare/docker-swarm-vs-kubernetes | docker swarm vs kubernetes | comparison |
-| 2 | compare/k3s-vs-k8s | k3s vs k8s | comparison |
-| 3 | compare/nomad-vs-kubernetes | nomad vs kubernetes | comparison |
-| 4 | apps/k3s | k3s setup guide | app-guide |
-| 5 | apps/docker-swarm | docker swarm setup | app-guide |
-| 6 | apps/portainer-kubernetes | portainer kubernetes management | app-guide |
-| 7 | apps/rancher | rancher docker compose | app-guide |
-| 8 | compare/rancher-vs-portainer | rancher vs portainer | comparison |
-| 9 | apps/nomad | hashicorp nomad self-hosted | app-guide |
-| 10 | apps/microk8s | microk8s setup guide | app-guide |
-| 11 | compare/k3s-vs-microk8s | k3s vs microk8s | comparison |
-| 12 | apps/podman | podman setup guide | app-guide |
-| 13 | compare/podman-vs-docker | podman vs docker | comparison |
-| 14 | replace/managed-kubernetes | self-hosted kubernetes alternative | replace |
-| 15 | best/container-orchestration | best container orchestration self-hosted | roundup |
-| 16 | foundations/container-orchestration-explained | container orchestration explained | foundations |
-
-### Automation & Workflows — Write These (PRIORITY: comparisons first)
+All app guides and comparisons exist. Only these remain:
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 1 | compare/n8n-vs-node-red | n8n vs node-red | comparison |
-| 2 | compare/n8n-vs-huginn | n8n vs huginn | comparison |
-| 3 | apps/n8n | n8n docker compose | app-guide |
-| 4 | apps/node-red | node-red docker compose | app-guide |
-| 5 | apps/huginn | huginn docker compose | app-guide |
-| 6 | apps/activepieces | activepieces docker compose | app-guide |
-| 7 | compare/n8n-vs-activepieces | n8n vs activepieces | comparison |
-| 8 | apps/automatisch | automatisch docker compose | app-guide |
-| 9 | compare/automatisch-vs-n8n | automatisch vs n8n | comparison |
-| 10 | apps/windmill | windmill docker compose | app-guide |
-| 11 | compare/windmill-vs-n8n | windmill vs n8n | comparison |
-| 12 | replace/zapier | self-hosted zapier alternative | replace |
-| 13 | replace/ifttt | self-hosted ifttt alternative | replace |
-| 14 | best/automation | best self-hosted automation tools | roundup |
-| 15 | foundations/automation-workflows-guide | self-hosted automation guide | foundations |
+| 1 | foundations/arr-stack-setup | arr stack docker compose | foundation |
+| 2 | foundations/usenet-setup | usenet self-hosted | foundation |
+| 3 | best/media-organization | best self-hosted media management | roundup |
 
-**After completing these, generate MORE:** Temporal, Airflow, Prefect, Kestra, etc.
+**Internal linking:** Cross-link with existing apps: sonarr, radarr, prowlarr, lidarr, readarr, bazarr, jellyseerr, tautulli, recyclarr, sabnzbd, nzbget, jackett, flaresolverr. Cross-link with Media Servers (Jellyfin, Plex). Link to `/best/media-organization` from all.
+
+**NOTE on Overseerr:** The project is archived. If you reference it, add a deprecation notice recommending Jellyseerr (the active fork).
+
+### Document Signing & PDF — Write These (PRIORITY: comparisons first)
+
+| Priority | Slug | Target Keyword | Type |
+|----------|------|---------------|------|
+| 1 | compare/documenso-vs-docuseal | documenso vs docuseal | comparison |
+| 2 | compare/stirling-pdf-vs-ilovepdf | stirling pdf vs ilovepdf | comparison |
+| 3 | apps/documenso | documenso docker | app-guide |
+| 4 | apps/docuseal | docuseal docker | app-guide |
+| 5 | apps/opensign | opensign docker | app-guide |
+| 6 | replace/docusign | self-hosted alternative to docusign | replace |
+| 7 | replace/adobe-acrobat | self-hosted alternative to adobe acrobat | replace |
+| 8 | replace/ilovepdf | self-hosted alternative to ilovepdf | replace |
+| 9 | replace/hellosign | self-hosted alternative to hellosign | replace |
+| 10 | best/document-signing | best self-hosted document signing | roundup |
+| 11 | best/pdf-tools | best self-hosted pdf tools | roundup |
+
+**NOTE:** Stirling-PDF already exists at `/apps/stirling-pdf` (updated to v2.5.0). Skip that app guide — cross-link to it. Cross-link with Document Management (Paperless-ngx). Every guide links to both `/best/document-signing` and `/best/pdf-tools`.
+
+### Low-Code & Dev Platforms — Write These (PRIORITY: comparisons first)
+
+| Priority | Slug | Target Keyword | Type |
+|----------|------|---------------|------|
+| 1 | compare/pocketbase-vs-appwrite | pocketbase vs appwrite | comparison |
+| 2 | compare/appsmith-vs-tooljet | appsmith vs tooljet | comparison |
+| 3 | compare/pocketbase-vs-supabase | pocketbase vs supabase | comparison |
+| 4 | apps/pocketbase | pocketbase docker | app-guide |
+| 5 | apps/appwrite | appwrite docker compose | app-guide |
+| 6 | apps/tooljet | tooljet docker compose | app-guide |
+| 7 | apps/appsmith | appsmith docker compose | app-guide |
+| 8 | apps/saltcorn | saltcorn docker | app-guide |
+| 9 | replace/firebase | self-hosted alternative to firebase | replace |
+| 10 | replace/retool | self-hosted alternative to retool | replace |
+| 11 | replace/supabase | self-hosted alternative to supabase | replace |
+| 12 | replace/airtable-apps | self-hosted airtable alternative | replace |
+| 13 | replace/bubble | self-hosted alternative to bubble | replace |
+| 14 | best/low-code | best self-hosted low-code platform | roundup |
+
+**Internal linking:** Cross-link with Database Management, Development Tools. Every guide links to `/best/low-code`.
 
 ---
 
@@ -84,11 +94,36 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ### Comparison: Quick Verdict | Overview | Feature Table (10-12 rows) | Installation | Performance | Community | Use Cases | Final Verdict | FAQ | Related (5+ links)
 
-### Replace/Roundup: Standard templates. `affiliateDisclosure: true` for roundups/replace.
+### Replace/Roundup: Standard templates. `affiliateDisclosure: false` (zero active affiliate relationships).
 
-**Frontmatter:** title under 60 chars, description 150-160 chars with keyword.
+### Frontmatter Rules
+- Title under 60 chars
+- **Description MUST be 155-160 chars** (not shorter). This is a strict minimum. Pad with useful detail if needed.
+- Primary keyword included naturally in description
+- `author: "selfhosting.sh"`, `draft: false`
+- `affiliateDisclosure: false` for app guides and comparisons
+- `affiliateDisclosure: true` for roundups and replace guides (even though no active affiliates yet)
 
-**Quality:** Pin versions. Complete Docker Compose. Verify against official docs. No filler. Be opinionated. `restart: unless-stopped`. Health checks. Include dependent services.
+### Quality Rules
+- Pin versions. Complete Docker Compose. Verify against official docs. No filler. Be opinionated.
+- `restart: unless-stopped`. Health checks. Include dependent services.
+- NEVER use `:latest` for image tags — always pin specific versions.
+- Internal linking minimums: app guides 7+, comparisons 5+, roundups 10+, replace 5+.
+
+### Docker Compose Standards
+- Use `docker compose` (v2), not `docker-compose`
+- Pin ALL image tags (no `:latest`)
+- Include ALL required env vars with comments
+- Sensitive values: instruct user to change them
+- Named volumes or explicit host paths
+- Correct port mappings (verify against docs)
+- Include dependent services (PostgreSQL, Redis, etc.)
+- `restart: unless-stopped` on all services
+- Health checks where supported
+- Comments for non-obvious config choices
+
+### Source Verification
+For EVERY app guide: check the app's GitHub repo, official docs, or Docker Hub. Verify image name, tag, env vars, volume paths, ports. If you cannot verify, flag it in `learnings/apps.md` and move on.
 
 ---
 
@@ -102,5 +137,13 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 ## Operating Loop
 
 READ → PICK → VERIFY → WRITE → SELF-CHECK → LOG → REPEAT
+
+When all 28 articles are complete, write the completion event and exit:
+```bash
+TS=$(date -u +%Y%m%dT%H%M%SZ)
+printf '{"type":"writer-complete","category":"arr-docsign-lowcode","articlesWritten":%d,"ts":"%s"}\n' \
+    TOTAL "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+    > /opt/selfhosting-sh/events/operations-writer-complete-arr-docsign-lowcode-${TS}.json
+```
 
 **MAXIMUM VELOCITY. 10-15+ articles per iteration. Comparisons first — they rank fastest.**

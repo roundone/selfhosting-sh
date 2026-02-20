@@ -1,6 +1,61 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~11:00 UTC — Iteration: FOUNDER DIRECTIVE — Social Overhaul + Portal + Credentials
+
+### Trigger
+inbox-message (2 open items: Operations quality audit, Founder comprehensive directive)
+
+### Messages Processed
+
+1. **Founder directive (10:35 UTC) — comprehensive:** 4 sections covering social media strategy overhaul, portal improvements, new credentials, writer pause reminder. → ALL PROCESSED (see actions below)
+
+2. **Operations quality audit (12:00 UTC):** 17 `:latest` tags fixed. 612/767 short meta descriptions. Zero filler language issues. Writer reassignment plan ready. → ACKNOWLEDGED. Meta descriptions DEFERRED. Operations directed to focus on writer CLAUDE.md prep for Feb 22.
+
+### Actions Taken
+
+**1. Social Media Strategy Overhaul → Marketing**
+- Updated Marketing CLAUDE.md: Added full "FOUNDER DIRECTIVE: Social Media Engagement Strategy" section with active engagement requirements, content variety rules (max 30% article links), daily targets, profile polish responsibility, and Playwright MCP for engagement.
+- Updated platform status in Marketing CLAUDE.md: Mastodon LIVE, Dev.to LIVE, X interval 15min, Bluesky 10min.
+- Sent detailed directive to `inbox/marketing.md` with 6 action items.
+
+**2. Portal Improvements → IR + Technology**
+- Sent directive to `inbox/investor-relations.md`: spec security (login, HTTPS, sessions), UI (fonts, polish), alert logic (lastErrorAt-based display).
+- Sent directive to `inbox/technology.md`: create DNS A record for portal.selfhosting.sh, prepare for portal improvements.
+- Updated `bin/coordinator.js`: added `agentState.lastErrorAt = new Date().toISOString()` in error recording path. Updated default state to include lastErrorAt field.
+
+**3. Credentials → State Updates + Notifications**
+- Verified Mastodon posting working (confirmed in coordinator log at 10:53 UTC — 3 platforms now active).
+- Verified Dev.to API key present in api-keys.env (poster correctly skips Dev.to for non-article posts).
+- Notified BI about GA4 API being enabled — sent to `inbox/bi-finance.md` with instructions to discover numeric property ID via Admin API.
+- Updated social poster platform status in state.md.
+
+**4. Operations Quality Audit Response**
+- Sent response to `inbox/operations.md`: meta descriptions DEFERRED. Bake 155-char minimum into writer CLAUDE.md files. Focus pause time on writer CLAUDE.md updates for Feb 22 reassignment. Do NOT modify coordinator config (GIT_SAFETY caught an attempt).
+
+**5. State Files Updated**
+- `state.md`: social platform status (3 active), agent health table, blockers section, founder directives 17-20 added.
+- `strategy.md`: priorities reordered, 3 new standing decisions added, open questions updated.
+- `board/day-2026-02-20.md`: added founder directive processing update (11:00 UTC section).
+- `inbox/ceo.md`: both messages resolved and moved to log.
+
+### Health Check
+- Memory: 6,355MB available / 7,751MB — healthy
+- Load: 0.02 — minimal
+- All 5 services active (coordinator, proxy, watchdog, portal, deploy timer)
+- Social poster: 3 platforms (X, Bluesky, Mastodon). Queue: 1,937.
+- Writers: maxWriters=0 config reloaded at 10:56. Some writers started via timing race before config took effect — will self-correct.
+- No watchdog alerts. No repeated errors.
+
+### Decisions Made
+- Meta descriptions: DEFER batch fix to Month 2. New content: 155-char minimum.
+- Social strategy: Adopted founder directive fully. Marketing owns engagement, not just syndication.
+- Portal: IR specs → Technology builds. DNS record for portal.selfhosting.sh immediate action for Technology.
+- Coordinator lastErrorAt: implemented directly (small change, no need to route through Technology).
+- Reddit: BLOCKED by platform policy wall, not our credentials issue. Monitor and retry.
+- LinkedIn: DEPRIORITIZED per founder.
+
+---
 ## 2026-02-20 10:40 UTC — Iteration: Routine State Sync (Writer Pause Active)
 
 ### Trigger

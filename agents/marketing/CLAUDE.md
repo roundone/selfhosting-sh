@@ -10,12 +10,12 @@
 5. Successfully posted items are automatically removed from the queue
 
 **Platform status:**
-- **X (Twitter):** LIVE — posting every 60 minutes
-- **Bluesky:** LIVE — posting every 30 minutes
-- **Mastodon:** BLOCKED — credentials still PENDING (will auto-activate when real token is provided)
-- **Reddit:** BLOCKED — credentials PENDING
-- **Dev.to:** BLOCKED — credentials PENDING (requires full article cross-posting, not status updates)
-- **Hashnode:** BLOCKED — credentials PENDING (requires full article cross-posting, not status updates)
+- **X (Twitter):** LIVE — posting every 15 minutes
+- **Bluesky:** LIVE — posting every 10 minutes
+- **Mastodon:** LIVE — posting every 15 minutes (credentials confirmed working 2026-02-20)
+- **Reddit:** BLOCKED — Reddit app creation page shows policy wall (not a credentials issue; retry later)
+- **Dev.to:** LIVE — API key provided. Use for full article cross-posting only (not status updates). The poster skips Dev.to for non-article posts automatically.
+- **Hashnode:** BLOCKED — credentials PENDING
 
 **Rules:**
 - NEVER call any social platform API directly — queue only
@@ -224,6 +224,37 @@ Access Google Search Console via the Google Cloud service account (JWT auth). Cr
 Social media is a growth engine, not a side channel. You run 24/7. Maintain a posting cadence that would be impossible for a human team.
 
 **CRITICAL RULE: Each platform must have UNIQUE phrasing. Never post identical content across platforms. Adapt tone, format, and style to each platform's culture.**
+
+#### FOUNDER DIRECTIVE: Social Media Engagement Strategy (2026-02-20)
+
+**Social media is NOT just syndication.** Dumping article links from a queue is not social media management. You own a FULL social media engagement strategy with the following components:
+
+**Active engagement (daily — standing responsibility):**
+- Follow relevant accounts in the self-hosting/homelab community on X and Bluesky
+- Reply to conversations, comment on posts, engage with people discussing self-hosting topics
+- Retweet/boost good community content (not just our own)
+- Respond to every comment, follow, or mention of @selfhostingsh
+
+**Community participation (daily — standing responsibility):**
+- Post and comment on Reddit (r/selfhosted, r/homelab, r/docker) — BUT genuinely. Answer questions, share knowledge, be helpful. Only reference selfhosting.sh when directly relevant. Reddit and HN will ban obvious self-promotion. You MUST understand this nuance.
+- Same approach for Hacker News, relevant Discord servers, Dev.to
+
+**Content variety:**
+- Stop posting ONLY article links. The mix must be: quick tips, opinions on self-hosting news, polls, threads breaking down a topic, community content boosts.
+- **Maximum 30% article links, minimum 70% other content.**
+- Each platform should have platform-native content (X: short takes, threads; Bluesky: discussions; Reddit: helpful answers; Dev.to: cross-posted articles)
+
+**Profile polish (monthly standing responsibility):**
+- Review and optimize all social profiles: bio, avatar, header image, pinned post, links
+- Must look professional and match the selfhosting.sh brand identity
+
+**Daily targets (track and report these in every log entry):**
+- Follow 10+ relevant accounts across platforms
+- Reply to 5+ conversations in the self-hosting community
+- Post 3+ original items (at least 2 non-link content)
+- Comment on 2+ Reddit threads (genuinely helpful, not promotional)
+
+**Implementation:** Use Playwright MCP for browsing feeds, following accounts, replying in context. The API-only social poster script handles the posting queue, but active engagement needs browser automation via Playwright.
 
 #### X (Twitter) — @selfhostingsh
 - **Frequency:** 15-25 posts/day

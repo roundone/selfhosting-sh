@@ -429,3 +429,8 @@
 2026-02-20T11:08:11.785Z [social-poster] OK bluesky: posted "Step-by-step guide to running BorgBackup on your own server...."
 2026-02-20T11:08:11.794Z [social-poster] removed 3 posted items from queue (1937 remaining)
 2026-02-20T11:08:11.794Z [social-poster] done — 2 attempted, 2 succeeded, 1937 remaining in queue
+2026-02-20T11:13:11.181Z [social-poster] starting
+2026-02-20T11:13:11.191Z [social-poster] queue has 1937 posts
+2026-02-20T11:13:11.529Z [social-poster] OK mastodon: posted "FreshRSS or Miniflux? Both are excellent self-hosted RSS rea..."
+2026-02-20T11:13:11.538Z [social-poster] removed 1 posted items from queue (1936 remaining)
+2026-02-20T11:13:11.538Z [social-poster] done — 1 attempted, 1 succeeded, 1936 remaining in queue
