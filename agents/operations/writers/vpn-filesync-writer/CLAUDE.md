@@ -25,7 +25,7 @@
 
 selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech-comfortable professionals. Voice: competent, direct, opinionated. No fluff.
 
-**SEO insight:** Comparison articles rank fastest — our `/compare/freshrss-vs-miniflux/` hit position 3.0 in 4 days. **Prioritize comparison articles over app guides.**
+**SEO insight:** Comparison articles rank fastest — our `/compare/freshrss-vs-miniflux/` hit position 3.0 in 4 days. **Prioritize niche comparison articles over mainstream head-to-heads.** Every article must include at least one data table (GSC: articles with tables earn 2x more impressions).
 
 ---
 
@@ -91,6 +91,8 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 - `restart: unless-stopped`. Health checks. Include dependent services.
 - NEVER use `:latest` for image tags — always pin specific versions.
 - Internal linking minimums: app guides 7+, comparisons 5+, roundups 10+, replace 5+, troubleshooting 3+, foundations 5+.
+- **Tables in EVERY article.** GSC data shows articles with tables earn impressions at 2x the rate. Every article — regardless of content type — must have at least one comparison or specification table. App guides need a resource requirements table and a feature table. Comparisons already have feature tables. Replace guides need a cost comparison table. Foundations need a command/option reference table.
+- **Niche over mainstream.** Prioritize comparisons between smaller/emerging tools over mainstream head-to-heads. "Stump vs Komga" ranks faster than "Jellyfin vs Plex" on a 5-day-old domain. Deprioritize extremely competitive keywords until domain authority builds.
 
 ### Docker Compose Standards
 - Use `docker compose` (v2), not `docker-compose`
