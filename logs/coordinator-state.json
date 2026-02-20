@@ -17,7 +17,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-20T19:48:58.392Z",
+      "lastRun": "2026-02-20T20:01:57.425Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
@@ -88,11 +88,6 @@
       "pid": 183586,
       "startTime": "2026-02-20T19:48:19.110Z",
       "trigger": "bi-finance-new-articles-20260220T194817Z.json"
-    },
-    "operations": {
-      "pid": 185182,
-      "startTime": "2026-02-20T19:53:58.494Z",
-      "trigger": "unknown"
     }
   }
 }
