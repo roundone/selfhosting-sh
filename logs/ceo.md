@@ -1511,3 +1511,68 @@ VPS now shows 7.7GB total RAM (was 3.8GB). 6.4GB free. Coordinator v2.0 running 
 3. Monitor GSC indexing — expect new impression data by Feb 21-22
 4. Push for social credentials if no founder response
 5. Verify writer rotation as categories complete
+
+---
+## 2026-02-20 ~17:30 UTC — Iteration: Newsletter directive (inbox-message)
+
+**Trigger:** inbox-message — Founder directive: newsletter subscribe form is broken
+
+### Messages Processed
+
+1. **Founder (Nishant) (~15:25 UTC) — Newsletter subscribe is broken — implement full pipeline or remove**
+   - Subscribe form on site POSTs to `/api/subscribe` but NO backend handler exists
+   - `EmailSignup.astro` renders on every article page — users get a 404/error on submit
+   - Founder: "Do not put a subscribe option on the site if it doesn't work"
+   - Directive: implement full newsletter pipeline (subscribe, storage, unsubscribe, weekly sends, metrics) OR remove the form
+
+### Investigation
+
+- Confirmed: `EmailSignup.astro` exists, renders on every article, POSTs to `https://selfhosting.sh/api/subscribe`
+- Confirmed: No backend handler anywhere — no Cloudflare Pages Function, no Worker, no API route
+- Confirmed: Site is static (Astro static output), no SSR adapter
+- Confirmed: `data/newsletter-subscribers.json` does not exist
+- Root cause: Frontend form was built without a backend. Classic broken integration.
+
+### Actions Taken
+
+1. **Technology directive (CRITICAL priority):** Sent to `inbox/technology.md` — implement full newsletter subscribe infrastructure:
+   - Immediate: remove form from Article.astro if full implementation not possible this iteration
+   - Build: Cloudflare Pages Function at `functions/api/subscribe.ts` for subscribe endpoint
+   - Build: Unsubscribe endpoint (legally required — CAN-SPAM, GDPR)
+   - Build: Subscriber storage (recommended Cloudflare KV)
+   - Build: Newsletter sending script via Resend API
+   - Update: EmailSignup.astro with success/error states
+   - Optional: Double opt-in (nice to have)
+
+2. **Marketing consultation (HIGH priority):** Sent to `inbox/marketing.md` — define newsletter content strategy:
+   - Frequency (weekly recommended by founder)
+   - Content mix (new articles only vs. curated picks + tips)
+   - Email template format and branding
+   - Promotion strategy for subscriber growth
+   - Subscriber growth targets for scorecard
+
+### Health Check
+- All 4 systemd services: ACTIVE (coordinator, proxy, watchdog, portal)
+- Memory: 6.7GB free / 7.7GB total — healthy
+- Agents cycling normally: Technology running (will pick up directive), Operations running
+- Social poster: active, 2006 posts remaining in queue
+- No error patterns in coordinator log — clean exits for all agents
+- Writers: still paused per founder directive (resume Feb 22) — on track
+
+### Key Decisions
+
+1. **Newsletter is a two-department effort.** Technology owns infrastructure (endpoints, storage, sending). Marketing owns content strategy (format, frequency, content mix). CEO will create the weekly newsletter agent/task once both deliver.
+
+2. **Immediate fallback: remove form.** If Technology can't build the full endpoint this iteration, the form must come off the site immediately. A broken form is unacceptable per founder.
+
+3. **Cloudflare Pages Functions recommended** as the implementation path. Simplest for our static site on CF Pages. KV for storage.
+
+### Founder Directive Status Update
+25. **Newsletter subscribe broken — implement or remove** → IN PROGRESS (Technology and Marketing tasked; awaiting implementation)
+
+### Next Iteration Priorities
+1. Verify Technology implemented newsletter subscribe endpoint (or removed the form)
+2. Check Marketing's newsletter content strategy response
+3. Create weekly newsletter agent/task once infrastructure is ready
+4. Monitor writer pause status (resume Feb 22)
+5. Track GSC indexing — new impression data expected
