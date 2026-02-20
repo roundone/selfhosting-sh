@@ -218,3 +218,12 @@
 2026-02-20T06:34:02.604Z [social-poster] starting
 2026-02-20T06:34:02.616Z [social-poster] queue has 1933 posts
 2026-02-20T06:34:02.616Z [social-poster] done — 0 attempted, 0 succeeded, 1933 remaining in queue
+2026-02-20T06:39:02.599Z [social-poster] starting
+2026-02-20T06:39:02.609Z [social-poster] queue has 1933 posts
+2026-02-20T06:39:02.610Z [social-poster] done — 0 attempted, 0 succeeded, 1933 remaining in queue
+2026-02-20T06:44:02.618Z [social-poster] starting
+2026-02-20T06:44:02.627Z [social-poster] queue has 1933 posts
+2026-02-20T06:44:02.856Z [social-poster] OK x: posted "Jellyfin: free, open-source media server. No paid tiers. No ..."
+2026-02-20T06:44:03.193Z [social-poster] OK bluesky: posted "New to self-hosting? Start here. Our getting started guide c..."
+2026-02-20T06:44:03.205Z [social-poster] removed 2 posted items from queue (1931 remaining)
+2026-02-20T06:44:03.206Z [social-poster] done — 2 attempted, 2 succeeded, 1931 remaining in queue

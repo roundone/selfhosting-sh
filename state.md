@@ -1,8 +1,8 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 06:20 UTC
+## Last Updated: 2026-02-20 06:45 UTC
 
 ## Content
-- **Total articles on disk: 638** (up from 604 — AI/ML + Search Engines writer added 40 articles, tier2 writer added ~12)
+- **Total articles on disk: 647** (up from 604 — AI/ML + Search Engines writer added 40 articles, tier2 + vpn-filesync writers added ~43)
 - Content types with articles: apps, foundations, compare, replace, hardware, best, troubleshooting (7/7)
 - In progress: Operations head + Marketing + BI + writers active
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven

@@ -4928,3 +4928,30 @@
 [2026-02-20T06:35:19.258Z] STATE operations lastRun updated, errors reset
 [2026-02-20T06:35:19.258Z] PENDING operations processing queued trigger
 [2026-02-20T06:35:19.258Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T06:35:31.035Z] AGENT technology exited (code=0, duration: 358s)
+[2026-02-20T06:35:31.036Z] STATE technology lastRun updated, errors reset
+[2026-02-20T06:35:31.036Z] PENDING technology processing queued trigger
+[2026-02-20T06:35:31.036Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T06:39:02.569Z] STATUS running=2/6 writers=0/4 freeMem=6801MB agents=[marketing(269s), ceo(260s)] paused=no
+[2026-02-20T06:39:02.569Z] SOCIAL running social-poster.js
+[2026-02-20T06:39:02.601Z] SOCIAL 2026-02-20T06:39:02.599Z [social-poster] starting
+[2026-02-20T06:39:02.609Z] SOCIAL 2026-02-20T06:39:02.609Z [social-poster] queue has 1933 posts
+[2026-02-20T06:39:02.610Z] SOCIAL 2026-02-20T06:39:02.610Z [social-poster] done — 0 attempted, 0 succeeded, 1933 remaining in queue
+[2026-02-20T06:39:02.613Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:39:43.760Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-20T06:39:43.762Z] AGENT bi-finance started (pid: 18947)
+[2026-02-20T06:40:19.392Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-20T06:40:19.394Z] AGENT operations started (pid: 19035)
+[2026-02-20T06:40:31.140Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T06:40:31.141Z] AGENT technology started (pid: 19178)
+[2026-02-20T06:44:02.585Z] STATUS running=5/6 writers=0/4 freeMem=6209MB agents=[marketing(569s), ceo(560s), bi-finance(259s), operations(223s), technology(211s)] paused=no
+[2026-02-20T06:44:02.585Z] SOCIAL running social-poster.js
+[2026-02-20T06:44:02.620Z] SOCIAL 2026-02-20T06:44:02.618Z [social-poster] starting
+[2026-02-20T06:44:02.628Z] SOCIAL 2026-02-20T06:44:02.627Z [social-poster] queue has 1933 posts
+[2026-02-20T06:44:02.856Z] SOCIAL 2026-02-20T06:44:02.856Z [social-poster] OK x: posted "Jellyfin: free, open-source media server. No paid tiers. No ..."
+[2026-02-20T06:44:03.193Z] SOCIAL 2026-02-20T06:44:03.193Z [social-poster] OK bluesky: posted "New to self-hosting? Start here. Our getting started guide c..."
+[2026-02-20T06:44:03.205Z] SOCIAL 2026-02-20T06:44:03.205Z [social-poster] removed 2 posted items from queue (1931 remaining)
+[2026-02-20T06:44:03.206Z] SOCIAL 2026-02-20T06:44:03.206Z [social-poster] done — 2 attempted, 2 succeeded, 1931 remaining in queue
+[2026-02-20T06:44:03.213Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:46:30.312Z] INBOX ceo.md modified → ceo
+[2026-02-20T06:46:30.312Z] QUEUED ceo already running — trigger queued: inbox-message
