@@ -2,7 +2,7 @@
 title: "How to Self-Host Open WebUI with Docker"
 description: "Set up Open WebUI with Docker Compose for a self-hosted ChatGPT-like interface. Connect to Ollama, manage models, and chat with local LLMs."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "ai-ml"
 apps:
   - open-webui

@@ -2,7 +2,7 @@
 title: "How to Self-Host Ollama with Docker Compose"
 description: "Run large language models locally with Ollama and Docker Compose. Complete setup guide with GPU passthrough, model management, and API configuration."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "ai-ml"
 apps:
   - ollama

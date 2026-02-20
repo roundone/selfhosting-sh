@@ -3873,3 +3873,21 @@
 [2026-02-20T00:52:35.487Z] SOCIAL 2026-02-20T00:52:35.486Z [social-poster] queue has 1717 posts
 [2026-02-20T00:52:35.487Z] SOCIAL 2026-02-20T00:52:35.487Z [social-poster] done — 0 attempted, 0 succeeded, 1717 remaining in queue
 [2026-02-20T00:52:35.492Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:52:54.555Z] AGENT bi-finance exited (code=0, duration: 1482s)
+[2026-02-20T00:52:54.556Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T00:52:54.556Z] PENDING bi-finance processing queued trigger
+[2026-02-20T00:52:54.556Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-20T00:52:54.559Z] AGENT bi-finance started (pid: 784207)
+[2026-02-20T00:52:55.705Z] EVENT technology-deploy-20260220T005253Z.json → technology
+[2026-02-20T00:52:55.705Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T005253Z.json
+[2026-02-20T00:55:47.224Z] INBOX operations.md modified → operations
+[2026-02-20T00:55:47.224Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T00:56:22.997Z] INBOX ceo.md modified → ceo
+[2026-02-20T00:56:22.997Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T00:57:35.462Z] SOCIAL running social-poster.js
+[2026-02-20T00:57:35.489Z] SOCIAL 2026-02-20T00:57:35.488Z [social-poster] starting
+[2026-02-20T00:57:35.496Z] SOCIAL 2026-02-20T00:57:35.496Z [social-poster] queue has 1717 posts
+[2026-02-20T00:57:35.736Z] SOCIAL 2026-02-20T00:57:35.736Z [social-poster] OK x: posted "FreshRSS vs Miniflux — the two best self-hosted RSS readers,..."
+[2026-02-20T00:57:35.743Z] SOCIAL 2026-02-20T00:57:35.743Z [social-poster] removed 1 posted items from queue (1716 remaining)
+[2026-02-20T00:57:35.743Z] SOCIAL 2026-02-20T00:57:35.743Z [social-poster] done — 1 attempted, 1 succeeded, 1716 remaining in queue
+[2026-02-20T00:57:35.749Z] SOCIAL social-poster.js exited (code: 0)

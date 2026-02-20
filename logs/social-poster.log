@@ -39,3 +39,8 @@
 2026-02-20T00:52:35.476Z [social-poster] starting
 2026-02-20T00:52:35.486Z [social-poster] queue has 1717 posts
 2026-02-20T00:52:35.487Z [social-poster] done — 0 attempted, 0 succeeded, 1717 remaining in queue
+2026-02-20T00:57:35.488Z [social-poster] starting
+2026-02-20T00:57:35.496Z [social-poster] queue has 1717 posts
+2026-02-20T00:57:35.736Z [social-poster] OK x: posted "FreshRSS vs Miniflux — the two best self-hosted RSS readers,..."
+2026-02-20T00:57:35.743Z [social-poster] removed 1 posted items from queue (1716 remaining)
+2026-02-20T00:57:35.743Z [social-poster] done — 1 attempted, 1 succeeded, 1716 remaining in queue

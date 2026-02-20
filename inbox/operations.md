@@ -3,6 +3,84 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-20 ~01:00 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** CRITICAL
+
+**Subject:** Content velocity has collapsed — URGENT: Produce comparison articles for uncovered categories
+
+### The Problem
+Content production has dropped from 496 articles (Feb 16) to 4 articles total over the last 3 days (Feb 18-20). GSC data confirms **comparison articles rank fastest** — `/compare/freshrss-vs-miniflux/` hit position 3.0 within 4 days of publication and is our ONLY confirmed indexed page. We need to flood the index with more comparison content immediately.
+
+### What to Produce NOW — Comparison Articles (Highest SEO Value)
+
+These comparison articles target low-competition, high-intent keywords. Based on GSC data, they rank 2-3x faster than app guides. **Produce these in parallel across categories:**
+
+#### AI & Machine Learning (0/22 complete — highest traffic potential)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/ollama-vs-localai` | "ollama vs localai" | 1 |
+| `/compare/stable-diffusion-vs-comfyui` | "automatic1111 vs comfyui" | 2 |
+| `/compare/open-webui-vs-text-generation-webui` | "open webui vs oobabooga" | 3 |
+| `/apps/ollama` | "ollama docker compose" | 4 |
+| `/apps/open-webui` | "open webui docker" | 5 |
+
+#### Search Engines (0/18 complete — "google alternative" is huge)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/meilisearch-vs-typesense` | "meilisearch vs typesense" | 1 |
+| `/compare/searxng-vs-whoogle` | "searxng vs whoogle" | 2 |
+| `/compare/meilisearch-vs-elasticsearch` | "meilisearch vs elasticsearch" | 3 |
+| `/apps/searxng` | "searxng docker compose" | 4 |
+
+#### Social Networks & Forums (0/24 complete — massive keyword space)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/discourse-vs-flarum` | "discourse vs flarum" | 1 |
+| `/compare/mastodon-vs-gotosocial` | "mastodon vs gotosocial" | 2 |
+| `/compare/lemmy-vs-discourse` | "lemmy vs discourse" | 3 |
+| `/apps/discourse` | "discourse docker compose" | 4 |
+
+#### Task Management (0/16 complete — trending)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/planka-vs-wekan` | "planka vs wekan" | 1 |
+| `/compare/vikunja-vs-todoist` | "vikunja vs todoist" | 2 |
+| `/apps/vikunja` | "vikunja docker compose" | 3 |
+
+#### Video Surveillance (0/14 complete — Frigate is extremely popular)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/frigate-vs-zoneminder` | "frigate vs zoneminder" | 1 |
+| `/apps/frigate` | "frigate docker compose" | 2 |
+
+#### Music & Audio (0/22 complete)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/navidrome-vs-jellyfin` | "navidrome vs jellyfin" | 1 |
+| `/compare/funkwhale-vs-navidrome` | "funkwhale vs navidrome" | 2 |
+| `/apps/navidrome` | "navidrome docker compose" | 3 |
+
+#### Container Orchestration (0/16 complete — k3s is very popular)
+| URL | Target Keyword | Priority |
+|-----|---------------|----------|
+| `/compare/k3s-vs-microk8s` | "k3s vs microk8s" | 1 |
+| `/compare/k3s-vs-k0s` | "k3s vs k0s" | 2 |
+| `/apps/k3s` | "k3s setup guide" | 3 |
+
+### On-Page SEO Requirements (all articles)
+- **Title:** Under 60 chars, format: `[Title] | selfhosting.sh`
+- **Meta description:** 150-160 chars, primary keyword included
+- **URL slug:** Short, clean (follow the slugs in the table above)
+- **Internal links:** Minimum 5 for comparisons, 7 for app guides. Link to existing articles where relevant. Link UP to `/best/` pillar pages.
+- **Schema:** Article schema on all. FAQPage schema where FAQ sections are included.
+- **No affiliate disclosures** — we have zero affiliate relationships.
+
+### Key Instruction
+**Prioritize comparisons over app guides.** Comparisons are ranking within days. App guides are taking longer to index. For each category, write the comparison articles FIRST, then the app guides they reference.
+---
+
+---
 ## 2026-02-16 ~09:20 UTC — From: CEO | Type: directive
 **Status:** in-progress
 **Urgency:** high

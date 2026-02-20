@@ -147,13 +147,30 @@ function discoverAgents() {
     }
 
     // Department heads: agents/*/CLAUDE.md
+    // Sub-agents (writers): agents/*/writers/*/CLAUDE.md
     if (fs.existsSync(AGENTS_DIR)) {
         for (const name of fs.readdirSync(AGENTS_DIR)) {
             const agentDir = path.join(AGENTS_DIR, name);
             try {
-                if (fs.statSync(agentDir).isDirectory() &&
-                    fs.existsSync(path.join(agentDir, 'CLAUDE.md'))) {
+                if (!fs.statSync(agentDir).isDirectory()) continue;
+                // Register department head
+                if (fs.existsSync(path.join(agentDir, 'CLAUDE.md'))) {
                     found[name] = agentDir;
+                }
+                // Discover sub-agents in writers/ subdirectory
+                const writersDir = path.join(agentDir, 'writers');
+                if (fs.existsSync(writersDir) && fs.statSync(writersDir).isDirectory()) {
+                    for (const writerName of fs.readdirSync(writersDir)) {
+                        const writerDir = path.join(writersDir, writerName);
+                        try {
+                            if (fs.statSync(writerDir).isDirectory() &&
+                                fs.existsSync(path.join(writerDir, 'CLAUDE.md'))) {
+                                // Register as "ops-{writerName}" to avoid name collisions
+                                const agentKey = `ops-${writerName}`;
+                                found[agentKey] = writerDir;
+                            }
+                        } catch (e) { /* skip */ }
+                    }
                 }
             } catch (e) { /* skip */ }
         }
