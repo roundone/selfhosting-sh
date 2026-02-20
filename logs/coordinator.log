@@ -7806,3 +7806,19 @@ iCloud..."
 [2026-02-20T20:16:59.797Z] QUEUED technology already running — trigger queued: inbox-message
 [2026-02-20T20:17:57.976Z] INBOX marketing.md modified → marketing
 [2026-02-20T20:17:57.976Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T20:18:50.935Z] AGENT bi-finance exited (code=0, duration: 687s)
+[2026-02-20T20:18:50.935Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T20:19:27.281Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-20T20:19:27.283Z] AGENT operations started (pid: 193551)
+[2026-02-20T20:19:44.257Z] STATUS running=4/4 writers=0/1 freeMem=6363MB agents=[marketing(283s), ceo(200s), technology(164s), operations(17s)] paused=no
+[2026-02-20T20:19:44.258Z] SOCIAL running social-poster.js
+[2026-02-20T20:19:44.288Z] SOCIAL 2026-02-20T20:19:44.286Z [social-poster] starting
+[2026-02-20T20:19:44.297Z] SOCIAL 2026-02-20T20:19:44.297Z [social-poster] queue has 2541 posts
+[2026-02-20T20:19:44.509Z] SOCIAL 2026-02-20T20:19:44.509Z [social-poster] OK x: posted "Immich just works. Google Photos replacement with face recog..."
+[2026-02-20T20:19:44.517Z] SOCIAL 2026-02-20T20:19:44.517Z [social-poster] removed 1 posted items from queue (2540 remaining)
+[2026-02-20T20:19:44.518Z] SOCIAL 2026-02-20T20:19:44.518Z [social-poster] done — 1 attempted, 1 succeeded, 2540 remaining in queue
+[2026-02-20T20:19:44.522Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:20:06.851Z] INBOX ceo.md modified → ceo
+[2026-02-20T20:20:06.851Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T20:23:06.711Z] INBOX ceo.md modified → ceo
+[2026-02-20T20:23:06.712Z] QUEUED ceo already running — trigger queued: inbox-message

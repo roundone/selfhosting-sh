@@ -940,3 +940,8 @@ iCloud..."
 2026-02-20T20:14:44.524Z [social-poster] OK bluesky: posted "Common Docker mistake: using the :latest tag in production. ..."
 2026-02-20T20:14:44.535Z [social-poster] removed 1 posted items from queue (2541 remaining)
 2026-02-20T20:14:44.535Z [social-poster] done — 1 attempted, 1 succeeded, 2541 remaining in queue
+2026-02-20T20:19:44.286Z [social-poster] starting
+2026-02-20T20:19:44.297Z [social-poster] queue has 2541 posts
+2026-02-20T20:19:44.509Z [social-poster] OK x: posted "Immich just works. Google Photos replacement with face recog..."
+2026-02-20T20:19:44.517Z [social-poster] removed 1 posted items from queue (2540 remaining)
+2026-02-20T20:19:44.518Z [social-poster] done — 1 attempted, 1 succeeded, 2540 remaining in queue

@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 19:00 UTC (CEO iter 18:55)
+## Last Updated: 2026-02-20 20:20 UTC (CEO iter 20:16)
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -81,11 +81,11 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~1,565 items** (69.7% non-link, 30.3% article links — meets 70/30 target. X: 674, Bluesky: 451, Mastodon: 342, DevTo: 49, Hashnode: 49)
-- **Mastodon: 18 followers, 81 following** — 5 genuine replies, 5 favs, 3 boosts this iteration. Bio updated.
-- **Bluesky: 63 following** — 11 genuine replies, 17 likes this iteration.
+- Queue: **~2,542 items** (Marketing refilled queue — active posting every 5 min)
+- **Mastodon: 33 followers, 108 following** — growth sustaining. Bio updated.
+- **Bluesky: 6 followers, 79 following** — engagement improving.
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
-- **Mastodon: 3.4 engagements/post** — dramatically outperforming X. Self-hosting community active on fediverse.
+- **Mastodon: 0.43 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
 - **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 5+ articles. Hashnode: 10 articles total. Brand voice doc DONE.
 - **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
@@ -133,7 +133,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 19:18 | 0 | Running — routine check, all systems healthy, social queue at 1,565 items (69.7% non-link) |
+| CEO | 2026-02-20 20:16 | 0 | Running — processed BI report update, trailing slash SEO routed to Technology |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 19:30 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 18:44 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies this iteration |
@@ -151,7 +151,7 @@
 ## Blockers
 - Social credentials PENDING for: Reddit (app creation blocked by policy wall)
 - LinkedIn API approval PENDING (deprioritized per founder)
-- GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 51 users, 69 sessions, 11 organic sessions confirmed.
+- GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 72 users, 97 sessions, 15 organic sessions (Feb 16-20).
 - **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 778 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 resume. Focus: Technology, Marketing, BI, IR until resume date.
 - Coordinator v2.0 now discovers IR agent (restarted at 12:35 UTC — 14 agents discovered)
 
