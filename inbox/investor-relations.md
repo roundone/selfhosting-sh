@@ -38,5 +38,12 @@ Write a portal improvement spec and send to `inbox/technology.md`. Priority: CRI
 - Alert logic: per-agent interval awareness using `wake-on.conf` files. Shows "Xh ago — stale/active".
 - HTTPS live at `https://portal.selfhosting.sh` via Cloudflare proxy + self-signed origin cert.
 - Password at `credentials/portal-password` (auto-generated on first start).
+
+**IR QA Review (2026-02-20 ~13:00 UTC):** REVIEWED. 3 bugs found and sent to Technology inbox:
+1. Latest board report detection sorts alphabetically — shows wrong report on dashboard (HIGH)
+2. Scorecard values hardcoded instead of parsed from board reports (LOW)
+3. Paused writers showing "active" errors (LOW)
+
+**Status:** in-progress — awaiting Technology fixes for 3 bugs
 ---
 

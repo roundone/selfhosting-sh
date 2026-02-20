@@ -101,3 +101,45 @@
 - Once HTTPS is live, verify `portal.selfhosting.sh` access
 - Share login credentials with founder via secure channel (board report)
 ---
+
+---
+## 2026-02-20 ~13:00 UTC — Third Iteration: Portal v2 QA Review
+**Trigger:** inbox-message (Technology completion notification)
+
+### Context
+- Technology completed portal v2 build per improvement spec
+- All three spec areas (security, UI, alert logic) implemented
+- HTTPS live at `portal.selfhosting.sh`
+
+### Actions Taken
+1. **CHECK** — Read inbox: CEO directive still open, Technology reported all items complete.
+
+2. **VERIFIED** — Tested portal v2 implementation:
+   - **Login page:** WORKING. Clean design at `/login`. POST form with username/password. Returns 302 with `portal_session` cookie (HttpOnly, SameSite=Strict, Secure, 24h Max-Age). Logout link in header.
+   - **Session security:** Cookie flags correct. Brute force protection claimed (5 attempts/15min).
+   - **HTTPS:** DNS resolves for `portal.selfhosting.sh` (Cloudflare proxy IPs: 172.67.202.164, 104.21.22.43). Self-signed origin cert behind CF proxy.
+   - **UI:** Body font 15px (up from 13px). Card styling polished with hover effects, alternating table rows, focus states. Header has shadow. Mobile responsive with media queries.
+   - **Dashboard:** 6 cards (Business Health, Scorecard, Agent Summary, System Status, Social Media, Latest Board Report). 8 nav pages with active indicators. Alert badge in nav. Auto-refresh every 60s.
+   - **Agents page:** Table with status badges, error counts, expandable log details per agent.
+   - **Alerts page:** 4 alerts shown with per-agent interval-aware timing ("Xh ago — active/stale").
+   - **Password:** Stored at `credentials/portal-password` (auto-generated, 32-char random).
+
+3. **IDENTIFIED BUGS** — Found 3 issues:
+   - **Bug 1 (HIGH):** `getBoardReports()` sorts alphabetically reversed. `social-credentials-request.md` sorts after `day-*.md` files, so dashboard shows it as "latest report." Business Health says "No board report available yet" because wrong file has no health section. Fix: filter for `day-*.md` only.
+   - **Bug 2 (LOW):** Scorecard values (keywords, visits, revenue) are hardcoded strings. Should parse from latest board report table.
+   - **Bug 3 (LOW):** Paused writers (48h wake-on.conf) show "active" errors because 2-11h errors are within 72h window (48h × 1.5). Portal doesn't distinguish "paused" from "running."
+
+4. **COMMUNICATED** — Sent bug report to `inbox/technology.md` with full context, file locations, line numbers, and suggested fixes.
+
+### Portal v2 Assessment
+Overall quality is high. Technology delivered all spec requirements. The three bugs are edge cases — Bug 1 is the most impactful (founder sees wrong data on dashboard). Bugs 2-3 are nice-to-haves.
+
+### Inbox Status
+- CEO directive (portal improvements): IN-PROGRESS — v2 built, 3 bugs sent to Technology for fixes
+
+### Next Steps
+- Technology fixes Bug 1 (priority) and optionally Bugs 2-3
+- After fixes: do final QA pass
+- Then mark CEO directive as RESOLVED and move to log
+- Transition to Phase 2 (weekly cadence) once portal is stable
+---
