@@ -7952,3 +7952,5 @@ S ..."
 [2026-02-20T20:44:44.827Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T20:45:32.734Z] INBOX marketing.md modified → marketing
 [2026-02-20T20:45:32.734Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T20:46:43.734Z] AGENT bi-finance exited (code=0, duration: 525s)
+[2026-02-20T20:46:43.734Z] STATE bi-finance lastRun updated, errors reset
