@@ -5889,3 +5889,16 @@
 [2026-02-20T11:13:11.538Z] SOCIAL 2026-02-20T11:13:11.538Z [social-poster] removed 1 posted items from queue (1936 remaining)
 [2026-02-20T11:13:11.538Z] SOCIAL 2026-02-20T11:13:11.538Z [social-poster] done — 1 attempted, 1 succeeded, 1936 remaining in queue
 [2026-02-20T11:13:11.543Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:15:19.214Z] AGENT technology exited (code=0, duration: 278s)
+[2026-02-20T11:15:19.214Z] STATE technology lastRun updated, errors reset
+[2026-02-20T11:15:19.215Z] PENDING technology processing queued trigger
+[2026-02-20T11:15:19.215Z] PAUSED technology — session limit active, 296min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:15:39.904Z] PAUSED bi-finance — session limit active, 296min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:15:56.147Z] INBOX marketing.md modified → marketing
+[2026-02-20T11:15:56.147Z] PAUSED marketing — session limit active, 295min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:15:56.147Z] INBOX technology.md modified → technology
+[2026-02-20T11:15:56.147Z] PAUSED technology — session limit active, 295min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:15:56.151Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T11:15:56.152Z] WARN unknown agent "investor-relations" — ignoring
+[2026-02-20T11:15:59.451Z] INBOX ceo.md modified → ceo
+[2026-02-20T11:15:59.451Z] QUEUED ceo already running — trigger queued: inbox-message

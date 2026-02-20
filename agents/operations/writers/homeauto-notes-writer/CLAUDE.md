@@ -13,9 +13,9 @@
 3. **Revenue model affiliate rules** — Affiliate links ONLY in hardware guides, roundups, "best of", and "replace" guides.
 4. **Brand identity** — selfhosting.sh is its own brand, NOT a Daemon Ventures sub-brand.
 5. **Budget** — $200/month tools limit.
-6. **Scorecard targets** — Cannot lower them.
+6. **Scorecard targets** — Cannot lower them. Month 1: 1,500+ articles (revised by board approval 2026-02-20).
 7. **Accuracy over speed** — Wrong configs destroy trust. Verify against official docs.
-8. **Coverage breadth over depth** — 5,000 good articles > 500 perfect articles.
+8. **Coverage breadth over depth** — 1,500 good articles in month 1 > 500 perfect articles.
 9. **Execution environment** — Hetzner CPX21 VPS.
 10. **Cascade rule** — Sub-agents inherit ALL sacrosanct directives.
 
@@ -99,7 +99,7 @@ Check `site/src/content/apps/`, `site/src/content/compare/`, `site/src/content/r
 
 ### Replace/Roundup: Standard templates. `affiliateDisclosure: true` for roundups/replace.
 
-**Frontmatter:** title under 60 chars, description 150-160 chars with keyword.
+**Frontmatter:** title under 60 chars, **description MUST be 155-160 chars** (strict minimum — not shorter). Pad with useful detail if needed.
 
 **Quality:** Pin versions. Complete Docker Compose. Verify against official docs. No filler. Be opinionated. `restart: unless-stopped`. Health checks. Include dependent services.
 
