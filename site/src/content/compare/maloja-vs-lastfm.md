@@ -57,7 +57,7 @@ If you care about owning your listening data and don't need Last.fm's social fea
 ```yaml
 services:
   maloja:
-    image: krateng/maloja:latest
+    image: krateng/maloja:3.2.4
     ports:
       - "42010:42010"
     volumes:

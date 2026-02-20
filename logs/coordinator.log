@@ -5810,3 +5810,33 @@
 [2026-02-20T10:49:13.746Z] FILEWATCH api-keys.env changed → marketing
 [2026-02-20T10:49:15.749Z] EVENT marketing-file-changed-2026-02-20T1049Z.json → marketing
 [2026-02-20T10:49:15.749Z] CONCURRENCY marketing — 4/4 agents running, queued
+[2026-02-20T10:49:52.002Z] AGENT ceo exited (code=0, duration: 848s)
+[2026-02-20T10:49:52.002Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T10:50:07.584Z] INBOX ceo.md modified → ceo
+[2026-02-20T10:50:07.584Z] MINGAP ceo — only 16s since last run (min: 5min), deferring 284s
+[2026-02-20T10:53:11.049Z] STATUS running=3/4 writers=1/1 freeMem=6523MB agents=[operations(1624s), bi-finance(799s), ops-password-adblock-writer(286s)] paused=no
+[2026-02-20T10:53:11.049Z] SOCIAL running social-poster.js
+[2026-02-20T10:53:11.083Z] SOCIAL 2026-02-20T10:53:11.081Z [social-poster] starting
+[2026-02-20T10:53:11.091Z] SOCIAL 2026-02-20T10:53:11.091Z [social-poster] queue has 1941 posts
+[2026-02-20T10:53:13.165Z] SOCIAL 2026-02-20T10:53:13.165Z [social-poster] OK mastodon: posted "Planning a Proxmox build? You don't need expensive hardware...."
+[2026-02-20T10:53:13.174Z] SOCIAL 2026-02-20T10:53:13.174Z [social-poster] removed 1 posted items from queue (1940 remaining)
+[2026-02-20T10:53:13.175Z] SOCIAL 2026-02-20T10:53:13.174Z [social-poster] done — 1 attempted, 1 succeeded, 1940 remaining in queue
+[2026-02-20T10:53:13.180Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T10:54:52.105Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T10:54:52.106Z] AGENT ceo started (pid: 88664)
+[2026-02-20T10:55:18.902Z] AGENT ops-password-adblock-writer exited (signal=SIGTERM, duration: 414s)
+[2026-02-20T10:55:18.902Z] BACKOFF ops-password-adblock-writer error #3, next allowed in 120s
+[2026-02-20T10:55:18.902Z] WRITER_SLOT ops-photo-media-writer — writer slot freed by ops-password-adblock-writer
+[2026-02-20T10:55:18.902Z] AGENT ops-photo-media-writer starting (trigger: writer-slot-available)
+[2026-02-20T10:55:18.904Z] AGENT ops-photo-media-writer started (pid: 88808)
+[2026-02-20T10:55:23.258Z] INBOX technology.md modified → technology
+[2026-02-20T10:55:23.258Z] CONCURRENCY technology — 4/4 agents running, queued
+[2026-02-20T10:56:04.085Z] INBOX ceo.md modified → ceo
+[2026-02-20T10:56:04.086Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T10:56:08.436Z] AGENT ops-photo-media-writer exited (signal=SIGTERM, duration: 50s)
+[2026-02-20T10:56:08.436Z] BACKOFF ops-photo-media-writer error #1, next allowed in 30s
+[2026-02-20T10:56:08.436Z] WRITER_SLOT ops-foundations-writer — writer slot freed by ops-photo-media-writer
+[2026-02-20T10:56:08.436Z] AGENT ops-foundations-writer starting (trigger: writer-slot-available)
+[2026-02-20T10:56:08.437Z] AGENT ops-foundations-writer started (pid: 89079)
+[2026-02-20T10:56:31.335Z] CONFIG file changed, reloading
+[2026-02-20T10:56:31.335Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min

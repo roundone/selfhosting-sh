@@ -1,5 +1,33 @@
 # App Learnings
 
+## 2026-02-20 — Faster Whisper Server renamed to Speaches (Operations quality audit)
+- **Old image:** `fedirz/faster-whisper-server:latest-cuda` / `fedirz/faster-whisper-server:latest-cpu`
+- **New image:** `ghcr.io/speaches-ai/speaches:v0.8.3` (latest stable, Sep 2024) or `v0.9.0-rc.3` (latest RC, Dec 2024)
+- **Source:** https://github.com/speaches-ai/speaches/releases
+- Old Docker Hub images still exist but are no longer updated. Use the new GHCR image.
+
+## 2026-02-20 — PhotoPrism uses date-based tags, not semver (Operations quality audit)
+- **Format:** `photoprism/photoprism:YYMMDD-commitsha` (e.g., `251130-b3068414c`)
+- **Latest stable:** `251130-b3068414c` (Nov 30, 2025)
+- No semantic version tags. Pin to the date-based tag.
+
+## 2026-02-20 — SearXNG uses rolling date-based tags (Operations quality audit)
+- **Format:** `searxng/searxng:YYYY.M.DD-commitsha` (e.g., `2026.2.11-970f2b843`)
+- Every commit to master is treated as a release. No semantic versions.
+
+## 2026-02-20 — Booksonic-Air is deprecated by LinuxServer (Operations quality audit)
+- **Image:** `lscr.io/linuxserver/booksonic-air:v2201.1.0-ls45` (last build, Feb 2025)
+- LinuxServer has deprecated this image. No further updates.
+- For audiobooks, use [Audiobookshelf](https://github.com/advplyr/audiobookshelf) instead.
+
+## 2026-02-20 — AzuraCast latest stable: 0.23.1 (Operations quality audit)
+- **Image:** `ghcr.io/azuracast/azuracast:0.23.1` (Oct 2025)
+- Source: https://github.com/AzuraCast/AzuraCast/releases
+
+## 2026-02-20 — Maloja latest stable: 3.2.4 (Operations quality audit)
+- **Image:** `krateng/maloja:3.2.4` (Feb 2025)
+- Source: https://github.com/krateng/maloja
+
 ## 2026-02-20 — Shinobi has NO semantic version Docker tags (homeauto-notes-writer)
 - **Image:** `shinobisystems/shinobi` on Docker Hub.
 - **Tags:** Only `:dev` (rolling release). No versioned tags.

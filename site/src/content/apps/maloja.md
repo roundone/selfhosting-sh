@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   maloja:
-    image: krateng/maloja:latest
+    image: krateng/maloja:3.2.4
     container_name: maloja
     restart: unless-stopped
     ports:

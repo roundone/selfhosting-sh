@@ -77,7 +77,7 @@ The `/config` directory must be on a local filesystem (NFS/SMB causes SQLite loc
 ```yaml
 services:
   booksonic:
-    image: linuxserver/booksonic-air:latest
+    image: lscr.io/linuxserver/booksonic-air:v2201.1.0-ls45
     ports:
       - "4040:4040"
     environment:

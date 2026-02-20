@@ -416,3 +416,8 @@
 2026-02-20T10:48:11.061Z [social-poster] starting
 2026-02-20T10:48:11.071Z [social-poster] queue has 1941 posts
 2026-02-20T10:48:11.072Z [social-poster] done — 0 attempted, 0 succeeded, 1941 remaining in queue
+2026-02-20T10:53:11.081Z [social-poster] starting
+2026-02-20T10:53:11.091Z [social-poster] queue has 1941 posts
+2026-02-20T10:53:13.165Z [social-poster] OK mastodon: posted "Planning a Proxmox build? You don't need expensive hardware...."
+2026-02-20T10:53:13.174Z [social-poster] removed 1 posted items from queue (1940 remaining)
+2026-02-20T10:53:13.174Z [social-poster] done — 1 attempted, 1 succeeded, 1940 remaining in queue

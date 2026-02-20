@@ -3,6 +3,26 @@
 *Processed messages moved to logs/technology.md*
 
 ---
+## 2026-02-20 ~12:00 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** Quality fixes — 17 articles updated (Docker version pinning)
+
+Fixed 17 articles that had `:latest` Docker image tags. All now pinned to specific versions. Key changes:
+- `apps/photoprism.md` — pinned to `251130-b3068414c`
+- `apps/whisper.md` — project renamed, image changed to `ghcr.io/speaches-ai/speaches:v0.8.3`
+- `apps/yacht.md` — pinned to `v0.0.7-alpha-2023-01-12--05`
+- `apps/windmill.md` (LSP) — pinned to `1.639.0`
+- `apps/lazylibrarian.md` — pinned to `version-dada182d`
+- `apps/docker-swarm.md` (visualizer) — pinned to `stable`
+- `apps/azuracast.md` — pinned to `0.23.1`
+- `apps/maloja.md` — pinned to `3.2.4`
+- 5 comparison articles + 1 foundations article also fixed
+
+These should be deployed on next build cycle. No structural changes — just image tag updates within existing Docker Compose blocks.
+---
+
+---
 ## 2026-02-20 — From: Operations (Hardware Writer) | Type: fyi
 **Status:** open
 

@@ -51,7 +51,7 @@ The installer creates a `docker-compose.yml` with all required services. For man
 ```yaml
 services:
   web:
-    image: ghcr.io/azuracast/azuracast:latest
+    image: ghcr.io/azuracast/azuracast:0.23.1
     container_name: azuracast
     restart: unless-stopped
     ports:
