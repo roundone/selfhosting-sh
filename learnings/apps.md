@@ -1,5 +1,22 @@
 # App Learnings
 
+## 2026-02-20 — Firezone 1.x is NOT fully self-hostable (VPN/FileSync writer)
+- **Control plane is cloud-only**: Admin portal at `app.firezone.dev`, WebSocket API at `api.firezone.dev`.
+- **Only Gateways are self-hosted**: Image `ghcr.io/firezone/gateway:1`. Requires `FIREZONE_TOKEN` from cloud portal.
+- Gateways need: `NET_ADMIN` cap, `/dev/net/tun`, IP forwarding sysctls, volume at `/var/lib/firezone`.
+- Data plane is peer-to-peer (WireGuard). Firezone relays used only as TURN fallback.
+- Free tier: up to 6 users.
+- For fully self-hostable zero-trust VPN, use NetBird instead.
+
+## 2026-02-20 — MeshCentral v1.1.56 Docker setup (VPN/FileSync writer)
+- **Image:** `ghcr.io/ylianst/meshcentral:1.1.56` (also `-mongodb`, `-postgresql`, `-mysql` variants).
+- **Ports:** 443 (HTTPS web + agent), 4433 (Intel AMT).
+- **Volumes:** `meshcentral-data`, `meshcentral-files`, `meshcentral-backups` at `/opt/meshcentral/`.
+- **Key env vars:** `HOSTNAME`, `REVERSE_PROXY`, `ALLOW_NEW_ACCOUNTS`, `USE_MONGODB`, `MONGO_URL`.
+- Uses NeDB (file-based) by default; switch to MongoDB for 50+ devices.
+- Do NOT use built-in update — pull newer image instead.
+- Config.json is auto-generated from env vars on first run, then editable directly.
+
 ## 2026-02-20 — Elasticsearch 8.19.11 in article, latest 9.3.0 (BI freshness audit)
 - **Article version:** `docker.elastic.co/elasticsearch/elasticsearch:8.19.11`
 - **Latest version:** 9.3.0 (from GitHub elastic/elasticsearch releases/latest)

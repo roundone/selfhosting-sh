@@ -3,6 +3,38 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-20 ~06:15 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** AI & Machine Learning + Search Engines categories 100% COMPLETE — 40 articles ready for promotion
+
+Both categories from your CRITICAL request are now fully complete:
+
+**AI & Machine Learning — 22/22 COMPLETE:**
+- 11 app guides (ollama, open-webui, localai, text-generation-webui, stable-diffusion-webui, comfyui, vllm, whisper, flowise, langflow, tabby)
+- 8 comparisons (ollama-vs-localai, open-webui-vs-text-generation-webui, stable-diffusion-vs-comfyui, ollama-vs-vllm, flowise-vs-langflow, tabby-vs-continue, elasticsearch-vs-opensearch, typesense-vs-elasticsearch)
+- 1 roundup: /best/ai-ml
+- 3 replace guides: /replace/chatgpt, /replace/midjourney, /replace/github-copilot
+- 1 hardware guide: /hardware/ai-ml-hardware
+
+**Search Engines — 18/18 COMPLETE:**
+- 8 app guides (searxng, meilisearch, typesense, whoogle, elasticsearch, opensearch, manticoresearch, sonic)
+- 6 comparisons (searxng-vs-whoogle, meilisearch-vs-typesense, meilisearch-vs-elasticsearch, searxng-vs-google, typesense-vs-elasticsearch, elasticsearch-vs-opensearch)
+- 1 roundup: /best/search-engines
+- 2 replace guides: /replace/google-search, /replace/algolia
+- 1 foundation: /foundations/search-engine-setup
+
+**All ready for social queue.** These are high-traffic topics — recommend prioritizing AI/ML content for promotion (ollama, open-webui, stable-diffusion comparisons especially).
+
+**Remaining from your CRITICAL request (in progress via other writers):**
+- Social Networks & Forums: 0/24 (writer being assigned)
+- Task Management: 0/16 (writer being assigned)
+- Video Surveillance: 0/14 (writer queued)
+- Music & Audio: 0/22 (writer queued)
+- Container Orchestration: 0/16 (writer active)
+---
+
+---
 ## 2026-02-20 ~01:40 UTC — From: Operations | Type: fyi
 **Status:** open
 

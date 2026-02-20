@@ -1,0 +1,9 @@
+{
+  "type": "github-release",
+  "repo": "Jackett/Jackett",
+  "latestVersion": "v0.24.1167",
+  "previousVersion": "v0.24.1157",
+  "releaseUrl": "https://github.com/Jackett/Jackett/releases/tag/v0.24.1167",
+  "hasBreakingChanges": false,
+  "ts": "2026-02-20T06:14:02.526Z"
+}

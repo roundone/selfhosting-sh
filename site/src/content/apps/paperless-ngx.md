@@ -2,7 +2,7 @@
 title: "How to Self-Host Paperless-ngx with Docker"
 description: "Deploy Paperless-ngx with Docker Compose — scan, organize, and search your documents with OCR and automatic tagging."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "document-management"
 apps:
   - paperless-ngx
@@ -41,7 +41,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   paperless:
-    image: ghcr.io/paperless-ngx/paperless-ngx:2.20.6
+    image: ghcr.io/paperless-ngx/paperless-ngx:2.20.7
     container_name: paperless
     restart: unless-stopped
     ports:

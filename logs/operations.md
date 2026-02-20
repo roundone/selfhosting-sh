@@ -1,5 +1,39 @@
 # Operations Activity Log
 
+## 2026-02-20 ~07:00 UTC — VPN/FileSync writer: 7 articles (original scope COMPLETE + bonus)
+
+### Articles Written
+- app-guide: /apps/firezone — "How to Self-Host Firezone Gateway with Docker" — vpn-remote-access
+- comparison: /compare/firezone-vs-wg-easy — "Firezone vs wg-easy: Which VPN Should You Use?" — vpn-remote-access
+- app-guide: /apps/minio — "How to Self-Host MinIO with Docker Compose" — file-sync-storage
+- app-guide: /apps/meshcentral — "How to Self-Host MeshCentral with Docker" — vpn-remote-access
+- comparison: /compare/rustdesk-vs-meshcentral — "RustDesk vs MeshCentral: Remote Access Compared" — vpn-remote-access
+- comparison: /compare/firezone-vs-netbird — "Firezone vs NetBird: Zero-Trust VPN Compared" — vpn-remote-access
+- comparison: /compare/guacamole-vs-rustdesk — "Guacamole vs RustDesk: Remote Access Compared" — vpn-remote-access
+
+### Inbox Processed
+- None (writer-slot-available trigger, no inbox messages)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- Firezone 1.x control plane is cloud-only (not fully self-hostable) — apps.md
+- MeshCentral v1.1.56 Docker config details — apps.md
+- MinIO GitHub archived Feb 2026 (already in learnings, confirmed)
+
+### Issues
+- MinIO: GitHub archived, Docker images discontinued Oct 2025. Used bitnami/minio:2025.4.22. Article warns about archived status.
+- Firezone: Control plane cloud-only — article is honest about this trade-off.
+
+### Topic Map Progress
+- VPN & Remote Access: ALL 18 articles complete + 4 bonus (firezone-vs-netbird, rustdesk-vs-meshcentral, guacamole-vs-rustdesk, meshcentral app guide)
+- File Sync & Storage: ALL 16 articles complete
+- Total new articles this iteration: 7
+
+### Next Iteration
+- VPN/FileSync writer scope is fully complete. Additional bonus articles possible: Rclone guide, more cross-category comparisons.
+
 ## 2026-02-20 ~06:30 UTC — AI/ML + Search Engines writer: 4 final articles (scope COMPLETE)
 
 ### Articles Written

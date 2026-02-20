@@ -4783,3 +4783,86 @@
 [2026-02-20T06:06:26.230Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T060624Z.json
 [2026-02-20T06:07:37.073Z] INBOX technology.md modified → technology
 [2026-02-20T06:07:37.073Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T06:07:45.580Z] AGENT bi-finance exited (code=0, duration: 1337s)
+[2026-02-20T06:07:45.580Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T06:07:45.581Z] PENDING bi-finance processing queued trigger
+[2026-02-20T06:07:45.581Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T06:07:55.411Z] INBOX marketing.md modified → marketing
+[2026-02-20T06:07:55.412Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-20T06:07:55.413Z] AGENT marketing started (pid: 12424)
+[2026-02-20T06:09:02.479Z] STATUS running=4/6 writers=1/4 freeMem=6441MB agents=[ops-vpn-filesync-writer(1415s), technology(915s), operations(574s), marketing(67s)] paused=no
+[2026-02-20T06:09:02.480Z] SOCIAL running social-poster.js
+[2026-02-20T06:09:02.510Z] SOCIAL 2026-02-20T06:09:02.508Z [social-poster] starting
+[2026-02-20T06:09:02.518Z] SOCIAL 2026-02-20T06:09:02.517Z [social-poster] queue has 1815 posts
+[2026-02-20T06:09:02.518Z] SOCIAL 2026-02-20T06:09:02.518Z [social-poster] done — 0 attempted, 0 succeeded, 1815 remaining in queue
+[2026-02-20T06:09:02.521Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:11:25.224Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T06:11:25.225Z] AGENT ceo started (pid: 13201)
+[2026-02-20T06:12:45.687Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-20T06:12:45.689Z] AGENT bi-finance started (pid: 13568)
+[2026-02-20T06:14:02.494Z] STATUS running=6/6 writers=1/4 freeMem=6028MB agents=[ops-vpn-filesync-writer(1715s), technology(1215s), operations(874s), marketing(367s), ceo(157s), bi-finance(77s)] paused=no
+[2026-02-20T06:14:02.494Z] RELEASES running check-releases.js
+[2026-02-20T06:14:02.496Z] SOCIAL running social-poster.js
+[2026-02-20T06:14:02.525Z] RELEASES 2026-02-20T06:14:02.523Z [check-releases] starting
+[2026-02-20T06:14:02.526Z] RELEASES 2026-02-20T06:14:02.526Z [check-releases] checking 29 GitHub repos
+[2026-02-20T06:14:02.532Z] SOCIAL 2026-02-20T06:14:02.530Z [social-poster] starting
+[2026-02-20T06:14:02.542Z] SOCIAL 2026-02-20T06:14:02.541Z [social-poster] queue has 1815 posts
+[2026-02-20T06:14:02.604Z] RELEASES 2026-02-20T06:14:02.604Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T06:14:02.760Z] SOCIAL 2026-02-20T06:14:02.759Z [social-poster] OK x: posted "Immich: self-hosted Google Photos with AI-powered search, fa..."
+[2026-02-20T06:14:02.767Z] SOCIAL 2026-02-20T06:14:02.767Z [social-poster] removed 1 posted items from queue (1814 remaining)
+[2026-02-20T06:14:02.768Z] SOCIAL 2026-02-20T06:14:02.768Z [social-poster] done — 1 attempted, 1 succeeded, 1814 remaining in queue
+[2026-02-20T06:14:02.772Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:14:03.167Z] RELEASES 2026-02-20T06:14:03.167Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T06:14:03.782Z] RELEASES 2026-02-20T06:14:03.782Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T06:14:04.359Z] RELEASES 2026-02-20T06:14:04.358Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T06:14:04.911Z] RELEASES 2026-02-20T06:14:04.911Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T06:14:05.464Z] RELEASES 2026-02-20T06:14:05.464Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T06:14:06.038Z] RELEASES 2026-02-20T06:14:06.037Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T06:14:06.599Z] RELEASES 2026-02-20T06:14:06.599Z [check-releases]   Jackett/Jackett → NEW RELEASE v0.24.1157 → v0.24.1167
+[2026-02-20T06:14:06.599Z] RELEASES 2026-02-20T06:14:06.599Z [check-releases] event written: bi-finance-github-release-2026-02-20T0614Z.json
+[2026-02-20T06:14:07.168Z] RELEASES 2026-02-20T06:14:07.168Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T06:14:07.721Z] RELEASES 2026-02-20T06:14:07.721Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T06:14:08.284Z] RELEASES 2026-02-20T06:14:08.284Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T06:14:08.599Z] EVENT bi-finance-github-release-2026-02-20T0614Z.json → bi-finance
+[2026-02-20T06:14:08.600Z] QUEUED bi-finance already running — trigger queued: bi-finance-github-release-2026-02-20T0614Z.json
+[2026-02-20T06:14:08.902Z] RELEASES 2026-02-20T06:14:08.902Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T06:14:09.451Z] RELEASES 2026-02-20T06:14:09.451Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T06:14:10.030Z] RELEASES 2026-02-20T06:14:10.030Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T06:14:10.611Z] RELEASES 2026-02-20T06:14:10.610Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T06:14:11.183Z] RELEASES 2026-02-20T06:14:11.182Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T06:14:11.742Z] RELEASES 2026-02-20T06:14:11.742Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T06:14:12.317Z] RELEASES 2026-02-20T06:14:12.317Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T06:14:12.959Z] RELEASES 2026-02-20T06:14:12.959Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T06:14:13.524Z] RELEASES 2026-02-20T06:14:13.524Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T06:14:14.093Z] RELEASES 2026-02-20T06:14:14.093Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T06:14:14.649Z] RELEASES 2026-02-20T06:14:14.649Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T06:14:15.206Z] RELEASES 2026-02-20T06:14:15.206Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T06:14:15.775Z] RELEASES 2026-02-20T06:14:15.774Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T06:14:16.328Z] RELEASES 2026-02-20T06:14:16.328Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T06:14:16.899Z] RELEASES 2026-02-20T06:14:16.898Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T06:14:17.465Z] RELEASES 2026-02-20T06:14:17.465Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T06:14:18.030Z] RELEASES 2026-02-20T06:14:18.030Z [check-releases]   nextcloud/server → 200 but same version (v33.0.0)
+[2026-02-20T06:14:18.594Z] RELEASES 2026-02-20T06:14:18.594Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T06:14:19.095Z] RELEASES 2026-02-20T06:14:19.095Z [check-releases] checking 3 feeds
+[2026-02-20T06:14:19.161Z] RELEASES 2026-02-20T06:14:19.161Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T06:14:19.431Z] RELEASES 2026-02-20T06:14:19.431Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T06:14:19.739Z] RELEASES 2026-02-20T06:14:19.739Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T06:14:19.940Z] RELEASES 2026-02-20T06:14:19.939Z [check-releases] done — 1 release event(s), 0 feed event(s) written
+[2026-02-20T06:14:19.944Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T06:15:41.155Z] INBOX ceo.md modified → ceo
+[2026-02-20T06:15:41.155Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T06:16:25.914Z] INBOX technology.md modified → technology
+[2026-02-20T06:16:25.915Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T06:19:02.495Z] STATUS running=6/6 writers=1/4 freeMem=6008MB agents=[ops-vpn-filesync-writer(2015s), technology(1515s), operations(1174s), marketing(667s), ceo(457s), bi-finance(377s)] paused=no
+[2026-02-20T06:19:04.330Z] INBOX technology.md modified → technology
+[2026-02-20T06:19:04.330Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T06:19:07.323Z] INBOX marketing.md modified → marketing
+[2026-02-20T06:19:07.323Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T06:19:07.323Z] INBOX technology.md modified → technology
+[2026-02-20T06:19:07.323Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T06:19:55.931Z] INBOX operations.md modified → operations
+[2026-02-20T06:19:55.932Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T06:20:21.807Z] EVENT operations-writer-complete-vpn-filesync-20260220T062019Z.json → operations
+[2026-02-20T06:20:21.808Z] QUEUED operations already running — trigger queued: operations-writer-complete-vpn-filesync-20260220T062019Z.json
+[2026-02-20T06:20:24.393Z] INBOX technology.md modified → technology
+[2026-02-20T06:20:24.393Z] QUEUED technology already running — trigger queued: inbox-message

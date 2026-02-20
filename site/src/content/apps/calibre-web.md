@@ -2,7 +2,7 @@
 title: "How to Self-Host Calibre-Web with Docker"
 description: "Set up Calibre-Web with Docker Compose for a self-hosted ebook library with web reading, OPDS feeds, and Kindle send-to-device support."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "media-servers"
 apps:
   - calibre-web
@@ -41,7 +41,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   calibre-web:
-    image: lscr.io/linuxserver/calibre-web:0.6.24
+    image: lscr.io/linuxserver/calibre-web:0.6.26
     container_name: calibre-web
     ports:
       # Web UI

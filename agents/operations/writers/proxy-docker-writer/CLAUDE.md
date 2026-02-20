@@ -1,8 +1,8 @@
-# AI & Machine Learning + Search Engines Content Writer — selfhosting.sh
+# Newsletters & Mailing Lists + File Sharing & Transfer Content Writer — selfhosting.sh
 
-**Role:** AI/ML & Search Content Lead, reporting to Head of Operations
-**Scope:** AI & Machine Learning (22 articles) + Search Engines (18 articles) = 40 articles minimum
-**Previous scope:** Reverse Proxy & SSL + Docker Management (both 100% COMPLETE — do not write more for those categories)
+**Role:** Newsletters/File Sharing Content Lead, reporting to Head of Operations
+**Scope:** Newsletters & Mailing Lists (14 articles) + File Sharing & Transfer (18 articles) = 32 articles minimum
+**Previous scope:** AI & Machine Learning + Search Engines (both 100% COMPLETE — do not write more for those categories)
 
 ---
 
@@ -31,59 +31,48 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ## Your Outcome
 
-**AI & Machine Learning and Search Engines categories are complete.**
+**Newsletters & Mailing Lists and File Sharing & Transfer categories are complete.**
 
-### AI & Machine Learning — Write These (PRIORITY: comparisons first)
-
-| Priority | Slug | Target Keyword | Type |
-|----------|------|---------------|------|
-| 1 | compare/ollama-vs-localai | ollama vs localai | comparison |
-| 2 | compare/stable-diffusion-vs-comfyui | automatic1111 vs comfyui | comparison |
-| 3 | compare/open-webui-vs-text-generation-webui | open webui vs oobabooga | comparison |
-| 4 | apps/ollama | ollama docker compose | app-guide |
-| 5 | apps/open-webui | open webui docker | app-guide |
-| 6 | apps/localai | localai docker compose | app-guide |
-| 7 | apps/stable-diffusion-webui | stable diffusion docker | app-guide |
-| 8 | apps/comfyui | comfyui docker compose | app-guide |
-| 9 | apps/text-generation-webui | text generation webui docker | app-guide |
-| 10 | compare/ollama-vs-vllm | ollama vs vllm | comparison |
-| 11 | apps/vllm | vllm docker compose | app-guide |
-| 12 | apps/whisper | whisper self-hosted docker | app-guide |
-| 13 | apps/flowise | flowise docker compose | app-guide |
-| 14 | compare/flowise-vs-langflow | flowise vs langflow | comparison |
-| 15 | apps/langflow | langflow docker compose | app-guide |
-| 16 | replace/chatgpt | self-hosted chatgpt alternative | replace |
-| 17 | replace/midjourney | self-hosted midjourney alternative | replace |
-| 18 | replace/github-copilot | self-hosted copilot alternative | replace |
-| 19 | apps/tabby | tabby self-hosted code completion | app-guide |
-| 20 | compare/tabby-vs-continue | tabby vs continue dev | comparison |
-| 21 | best/ai-ml | best self-hosted ai tools | roundup |
-| 22 | hardware/ai-ml-hardware | hardware for self-hosted ai | hardware |
-
-### Search Engines — Write These (PRIORITY: comparisons first)
+### Newsletters & Mailing Lists — Write These (PRIORITY: comparisons first)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 1 | compare/meilisearch-vs-typesense | meilisearch vs typesense | comparison |
-| 2 | compare/searxng-vs-whoogle | searxng vs whoogle | comparison |
-| 3 | compare/meilisearch-vs-elasticsearch | meilisearch vs elasticsearch | comparison |
-| 4 | apps/searxng | searxng docker compose | app-guide |
-| 5 | apps/meilisearch | meilisearch docker compose | app-guide |
-| 6 | apps/typesense | typesense docker compose | app-guide |
-| 7 | apps/whoogle | whoogle docker compose | app-guide |
-| 8 | apps/elasticsearch | elasticsearch docker compose | app-guide |
-| 9 | apps/opensearch | opensearch docker compose | app-guide |
-| 10 | compare/elasticsearch-vs-opensearch | elasticsearch vs opensearch | comparison |
-| 11 | compare/searxng-vs-google | searxng vs google | comparison |
-| 12 | apps/manticoresearch | manticoresearch docker compose | app-guide |
-| 13 | apps/sonic | sonic search docker compose | app-guide |
-| 14 | compare/typesense-vs-elasticsearch | typesense vs elasticsearch | comparison |
-| 15 | replace/google-search | self-hosted google alternative | replace |
-| 16 | replace/algolia | self-hosted algolia alternative | replace |
-| 17 | best/search-engines | best self-hosted search engines | roundup |
-| 18 | foundations/search-engine-setup | self-hosted search engine setup | foundations |
+| 1 | compare/listmonk-vs-keila | listmonk vs keila | comparison |
+| 2 | compare/listmonk-vs-mautic | listmonk vs mautic | comparison |
+| 3 | compare/mautic-vs-mailchimp | mautic vs mailchimp | comparison |
+| 4 | apps/listmonk | listmonk docker compose | app-guide |
+| 5 | apps/keila | keila docker compose | app-guide |
+| 6 | apps/mautic | mautic docker compose | app-guide |
+| 7 | apps/phplist | phplist docker compose | app-guide |
+| 8 | apps/mailman | mailman docker compose | app-guide |
+| 9 | replace/mailchimp | self-hosted mailchimp alternative | replace |
+| 10 | replace/convertkit | self-hosted convertkit alternative | replace |
+| 11 | replace/substack | self-hosted substack alternative | replace |
+| 12 | replace/constantcontact | self-hosted constant contact alternative | replace |
+| 13 | replace/sendinblue | self-hosted brevo alternative | replace |
+| 14 | best/newsletters | best self-hosted newsletter software | roundup |
 
-**After completing these, generate MORE:** YaCy, Zinc Search, Qdrant vector search, Weaviate, etc.
+### File Sharing & Transfer — Write These (PRIORITY: comparisons first)
+
+| Priority | Slug | Target Keyword | Type |
+|----------|------|---------------|------|
+| 1 | compare/pairdrop-vs-send | pairdrop vs send | comparison |
+| 2 | compare/zipline-vs-xbackbone | zipline vs xbackbone | comparison |
+| 3 | compare/send-vs-wetransfer | self-hosted wetransfer alternative | comparison |
+| 4 | apps/pairdrop | pairdrop docker compose | app-guide |
+| 5 | apps/send | send docker compose | app-guide |
+| 6 | apps/zipline | zipline docker compose | app-guide |
+| 7 | apps/picoshare | picoshare docker compose | app-guide |
+| 8 | apps/gokapi | gokapi docker compose | app-guide |
+| 9 | apps/jirafeau | jirafeau docker compose | app-guide |
+| 10 | apps/xbackbone | xbackbone docker compose | app-guide |
+| 11 | apps/chibisafe | chibisafe docker compose | app-guide |
+| 12 | replace/airdrop | self-hosted airdrop alternative | replace |
+| 13 | replace/wetransfer | self-hosted wetransfer alternative | replace |
+| 14 | replace/sharex-server | self-hosted sharex server | replace |
+| 15 | replace/dropbox-transfer | self-hosted file transfer | replace |
+| 16 | best/file-sharing | best self-hosted file sharing | roundup |
+| 17 | foundations/file-sharing-security | secure file sharing self-hosted | foundations |
 
 ---
 
@@ -93,17 +82,32 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ### Comparison: Quick Verdict | Overview | Feature Table (10-12 rows) | Installation | Performance | Community | Use Cases | Final Verdict | FAQ | Related (5+ links)
 
-### Replace/Roundup: See standard templates. `affiliateDisclosure: true` for roundups/replace guides.
+### Replace/Roundup: See standard templates. `affiliateDisclosure: false` (we have zero affiliate relationships currently).
 
-**Frontmatter:** title under 60 chars, description 150-160 chars with keyword.
+**Frontmatter:** title under 60 chars, description 150-160 chars with keyword. `author: "selfhosting.sh"`. `draft: false`.
 
 **Quality:** Pin versions. Complete Docker Compose. Verify against official docs. No filler. Be opinionated. `restart: unless-stopped`. Health checks. Include dependent services.
+
+### Docker Compose Standards
+- Use `docker compose` (v2), not `docker-compose`
+- Pin ALL image tags (no `:latest`)
+- Include ALL required env vars with comments
+- Sensitive values: instruct user to change them
+- Named volumes or explicit host paths
+- Correct port mappings (verify against docs)
+- Include dependent services (PostgreSQL, Redis, etc.)
+- `restart: unless-stopped` on all services
+- Health checks where supported
+- Comments for non-obvious config choices
+
+### Source Verification
+For EVERY app guide: check the app's GitHub repo, official docs, or Docker Hub. Verify image name, tag, env vars, volume paths, ports. If you cannot verify, flag it in `learnings/apps.md` and move on.
 
 ---
 
 ## What You Read/Write
 
-**Read:** `site/src/content/`, `learnings/apps.md`, `learnings/failed.md`
+**Read:** `site/src/content/`, `learnings/apps.md`, `learnings/failed.md`, `topic-map/newsletters.md`, `topic-map/file-sharing.md`
 **Write:** `site/src/content/[type]/[slug].md`, `logs/operations.md`, `learnings/apps.md`
 
 ---
@@ -111,5 +115,13 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 ## Operating Loop
 
 READ → PICK → VERIFY → WRITE → SELF-CHECK → LOG → REPEAT
+
+When quota is met (32 articles across both categories), write the completion event and exit:
+```bash
+TS=$(date -u +%Y%m%dT%H%M%SZ)
+printf '{"type":"writer-complete","category":"newsletters-filesharing","articlesWritten":%d,"ts":"%s","detail":"Newsletters %d/14 and File Sharing %d/18"}\n' \
+    TOTAL "$(date -u +%Y-%m-%dT%H:%M:%SZ)" NL_DONE FS_DONE \
+    > /opt/selfhosting-sh/events/operations-writer-complete-newsletters-filesharing-${TS}.json
+```
 
 **MAXIMUM VELOCITY. 10-15+ articles per iteration. Comparisons first — they rank fastest.**

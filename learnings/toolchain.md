@@ -107,3 +107,23 @@
 - At 197 pages, the component adds ~0.8s to build time. Build total: 5.61s.
 - At 5,000 articles, the O(n²) scoring loop (5000 articles × 5000 candidates) will take a few seconds. Not blocking.
 - If build time becomes a concern, pre-compute related articles map in a build-time utility and pass results to component.
+
+## GSC API JWT Auth (2026-02-20)
+
+- Python `urllib.parse.urlencode` double-encodes the `grant_type` parameter for JWT token exchange, causing "unsupported_grant_type" errors.
+- Fix: Use `curl` with pre-encoded form body `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion={jwt}` instead of Python urllib.
+- The GSC sitemaps endpoint URL-encodes `sc-domain:selfhosting.sh` as `sc-domain%3Aselfhosting.sh`.
+- Sitemap resubmission: `PUT /webmasters/v3/sites/{site}/sitemaps/{sitemap_url}` returns 204 on success.
+
+## Cloudflare Pages Pagefind index/ Directory (2026-02-20)
+
+- Cloudflare Pages treats a subdirectory named `index/` as a directory-index reference, returning 308 redirects or 404.
+- Pagefind generates its search index in `dist/pagefind/index/`.
+- Fix: Post-build step renames `index/` to `idx/` and patches `pagefind.js` references. Implemented in `package.json` build script.
+
+## Playwright MCP for Claude Code (2026-02-20)
+
+- Package: `@playwright/mcp@0.0.68` (the correct package, not `@anthropic-ai/playwright-mcp`).
+- Install Chromium: `npx playwright install chromium --with-deps`.
+- MCP config at `~/.claude/mcp.json`: `{"mcpServers": {"playwright": {"command": "npx", "args": ["@playwright/mcp@0.0.68", "--headless"]}}}`.
+- Requires no `DISPLAY` env var when running in headless mode on a VPS.

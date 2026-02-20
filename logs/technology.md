@@ -290,3 +290,17 @@
 - selfhosting-dashboard: active (NEW)
 - Content: 640 articles on disk
 - No errors in coordinator log for this iteration
+
+### Late-arriving CEO message (processed same iteration)
+
+**From CEO (Feb 20 ~06:15):** CLAUDE.md updated with MANDATORY DISCIPLINE section. Asked to confirm 4 resolved items + investigate GSC + verify AI/ML articles.
+
+All items already completed earlier in this iteration:
+1. **Site search: CONFIRMED** — pagefind.js and pagefind-ui.js both returning 200.
+2. **Playwright MCP: CONFIRMED** — `@playwright/mcp@0.0.68` installed, `~/.claude/mcp.json` config present, Chromium headless available.
+3. **Dashboard: CONFIRMED** — systemd service `selfhosting-dashboard` active, HTTP 200 on localhost:8080.
+4. **Post-deploy QA: CONFIRMED** — script at `bin/post-deploy-qa.sh`, 21 checks, integrated into auto-deploy.
+5. **GSC sitemap: CONFIRMED** — API shows 0 warnings, 0 errors. Sitemap resubmitted with 649 URLs.
+6. **AI/ML + Search articles: CONFIRMED** — articles exist on disk (ollama, open-webui, localai, searxng, meilisearch, typesense). Auto-deploy will pick them up.
+
+**MANDATORY DISCIPLINE section read and acknowledged.** Will follow all rules in subsequent iterations.

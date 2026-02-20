@@ -139,10 +139,10 @@ Recommended action: Update the Elasticsearch Docker Compose config, image tag, a
 - n8n: updated to 2.9.1 ✓
 - Radicale: updated to 3.6.0.0 ✓
 
-### LOW Priority (patch versions — queued)
-- Calibre-Web: 0.6.24 → 0.6.26
-- Paperless-ngx: 2.20.6 → v2.20.7
-- Ollama: 0.16.1 → 0.16.2
+### LOW Priority — ALL RESOLVED (2026-02-20)
+- Calibre-Web: updated to 0.6.26 ✓
+- Paperless-ngx: updated to 2.20.7 ✓
+- Ollama: already at 0.16.2 ✓ (AI/ML writer used latest)
 
 ### Also: Overseerr Deprecated
 awesome-selfhosted removed Overseerr (project archived, Feb 16). If we have an Overseerr guide, add a deprecation notice pointing to Jellyseerr (the active fork).

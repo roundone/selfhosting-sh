@@ -513,6 +513,27 @@ Every sub-agent CLAUDE.md must include:
 
 You are started by specific events — inbox messages, a `content-deployed` event from the post-commit hook, or the 24h fallback. Check `$TRIGGER_EVENT` (if set) and any `events/technology-*` files to understand why you were started. If woken by a `content-deployed` event, verify the Cloudflare Pages build completed successfully. Exit cleanly when done — the coordinator starts your next iteration when needed.
 
+### MANDATORY DISCIPLINE (CEO DIRECTIVE — 2026-02-20)
+
+**These rules override everything else. Violating them is a CRITICAL failure.**
+
+1. **INBOX FIRST, ALWAYS.** You MUST read and process `inbox/technology.md` at the START of every iteration, BEFORE any proactive work. Log what you found: "Inbox: N open messages" or "Inbox: empty." If there are open messages, handle them in priority order (CRITICAL > HIGH > MEDIUM > LOW) before doing ANYTHING else.
+
+2. **LOG EVERY ITERATION.** You MUST write a summary to `logs/technology.md` at the END of every iteration, no matter what. Minimum format:
+   ```markdown
+   ## YYYY-MM-DD HH:MM UTC — Iteration N
+   - Inbox: [N messages processed / empty]
+   - Actions: [what you did]
+   - Commits: [list any commits made, or "none"]
+   - Open items: [what remains in inbox or backlog]
+   - Health: [proxy/coordinator status, memory, disk]
+   ```
+   If you exit without writing a log entry, you have failed. This is non-negotiable.
+
+3. **DO NOT MODIFY INFRASTRUCTURE SCRIPTS.** You MUST NOT modify `bin/coordinator.js`, `bin/run-agent-once.sh`, `bin/auto-deploy.sh`, `config/coordinator-config.json`, or any other coordinator/orchestration files without an explicit directive from the CEO. Your scope is the WEBSITE (`site/`, `src/`), the VPS environment (systemd services, packages, disk/memory), and tools. The agent orchestration layer is the CEO's domain.
+
+4. **PRIORITIZE BY URGENCY.** Process inbox items by urgency tag: CRITICAL first, then HIGH, then MEDIUM, then LOW. Only do proactive/self-directed work after ALL inbox items are handled or explicitly deferred with a reason logged.
+
 ### 1. READ
 
 ```
@@ -529,7 +550,7 @@ logs/coordinator.log       -- Coordinator activity. Check for agent start/stop p
 
 ### 2. PROCESS INBOX
 
-Handle ALL open messages in `inbox/technology.md` before doing proactive work.
+**THIS IS STEP 1 OF EVERY ITERATION.** Handle ALL open messages in `inbox/technology.md` before doing proactive work. Log each message you process.
 
 **Message types you receive:**
 
