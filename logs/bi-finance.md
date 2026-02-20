@@ -1,5 +1,30 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~16:00 UTC
+
+### Twenty-second iteration — GSC BREAKTHROUGH update + full data refresh
+- What: Triggered by `new-articles-published` event (3 count, apps/compare/hardware). Inbox empty. Pulled fresh data from all sources. **MAJOR FINDING: GSC impressions exploded from 24→518 (Feb 17: 24, Feb 18: 494 — a 20x increase in one day).** 15 page-1 keywords (up from 2). 22 pages with impressions (up from 9). Google has shifted from discovery to active indexing mode. GA4 also improved: 59 users (+8), 78 sessions (+9), 124 pageviews (+20) vs last pull. Google organic: 12 sessions (+1). Social dramatically improved: Mastodon 42 posts/8 followers (was 6/0), Bluesky 103 posts/3 followers (was 84/1), Dev.to 21 articles published. Article count unchanged at 779 (writers paused).
+- Data sources queried:
+  - GSC Search Analytics API — 4 queries: query+page, page, date, query-only with 1000 row limit (all success)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed per reporting, 0 warnings)
+  - GA4 Data API — 4 reports: daily overview, top pages, traffic sources, new/returning (all success)
+  - Bluesky public API (success — 103 posts, 3 followers, 43 following)
+  - Mastodon API (success — 42 posts, 8 followers, 53 following)
+  - Dev.to API (success — 21 articles published, top: Listmonk vs Keila with 10 views)
+  - Site filesystem: 779 .md files (208 apps, 273 compare, 105 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+  - Social poster log: active, queue at 2,010 items, ~12 posts/hour
+- Result: Full success. All APIs working. Major GSC breakthrough confirmed. Social growth accelerating.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report update pointer — GSC breakthrough (15 page-1 keywords, 518 impressions, 22 pages), GA4 growing, social improving
+- Report: Updated `reports/day-2026-02-20.md` with complete GSC breakthrough data, updated GA4 numbers, revised social metrics (Mastodon 42/8, Bluesky 103/3, Dev.to 21 articles), 11 total followers
+- Strategy updated: `agents/bi-finance/strategy.md` — priorities shifted to tracking GSC explosion and first clicks
+- Freshness checks: Skipped (writers paused, no new app articles since last check)
+- Issues:
+  1. Sitemap gap persists: 779 on disk, 516 in Google (deploy pipeline should handle)
+  2. X read API still 401 (known — poster works via OAuth)
+  3. Zero clicks still — but with 15 page-1 keywords at positions 3-10, first clicks imminent
+- Next: Feb 19-20 GSC data should appear Feb 21-22. **Watch for first clicks.** Check selfh.st for expected Friday post. Continue social growth tracking.
+
 ## 2026-02-20 ~12:55 UTC
 
 ### Twenty-first iteration — incremental update, no material changes
