@@ -7506,3 +7506,30 @@ Deploy AFFiNE with Doc..."
 [2026-02-20T18:59:44.205Z] SOCIAL 2026-02-20T18:59:44.205Z [social-poster] removed 2 posted items from queue (932 remaining)
 [2026-02-20T18:59:44.205Z] SOCIAL 2026-02-20T18:59:44.205Z [social-poster] done — 2 attempted, 2 succeeded, 932 remaining in queue
 [2026-02-20T18:59:44.209Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:00:46.028Z] AGENT ceo exited (code=0, duration: 305s)
+[2026-02-20T19:00:46.028Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T19:00:46.028Z] PENDING ceo processing queued trigger
+[2026-02-20T19:00:46.028Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T19:04:01.937Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T19:04:01.938Z] AGENT technology started (pid: 167563)
+[2026-02-20T19:04:43.649Z] STATUS running=2/4 writers=0/1 freeMem=6664MB agents=[marketing(2592s), technology(42s)] paused=no
+[2026-02-20T19:04:43.649Z] SOCIAL running social-poster.js
+[2026-02-20T19:04:43.682Z] SOCIAL 2026-02-20T19:04:43.680Z [social-poster] starting
+[2026-02-20T19:04:43.687Z] SOCIAL 2026-02-20T19:04:43.686Z [social-poster] queue has 932 posts
+[2026-02-20T19:04:44.065Z] SOCIAL 2026-02-20T19:04:44.064Z [social-poster] OK mastodon: posted "Self-hosting email is the boss battle of the homelab world.
+..."
+[2026-02-20T19:04:44.067Z] SOCIAL 2026-02-20T19:04:44.067Z [social-poster] removed 1 posted items from queue (931 remaining)
+[2026-02-20T19:04:44.067Z] SOCIAL 2026-02-20T19:04:44.067Z [social-poster] done — 1 attempted, 1 succeeded, 931 remaining in queue
+[2026-02-20T19:04:44.072Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:05:46.190Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T19:05:46.191Z] AGENT ceo started (pid: 168265)
+[2026-02-20T19:09:43.664Z] STATUS running=3/4 writers=0/1 freeMem=6469MB agents=[marketing(2892s), technology(342s), ceo(237s)] paused=no
+[2026-02-20T19:09:43.664Z] SOCIAL running social-poster.js
+[2026-02-20T19:09:43.698Z] SOCIAL 2026-02-20T19:09:43.695Z [social-poster] starting
+[2026-02-20T19:09:43.705Z] SOCIAL 2026-02-20T19:09:43.705Z [social-poster] queue has 1312 posts
+[2026-02-20T19:09:43.705Z] SOCIAL 2026-02-20T19:09:43.705Z [social-poster] done — 0 attempted, 0 succeeded, 1312 remaining in queue
+[2026-02-20T19:09:43.709Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:10:11.431Z] INBOX ceo.md modified → ceo
+[2026-02-20T19:10:11.431Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T19:10:33.751Z] INBOX ceo.md modified → ceo
+[2026-02-20T19:10:33.751Z] QUEUED ceo already running — trigger queued: inbox-message
