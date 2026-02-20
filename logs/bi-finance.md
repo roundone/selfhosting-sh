@@ -1,5 +1,40 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~20:35 UTC
+
+### Twenty-fifth iteration — Trailing slash fix confirmed, Google organic +1
+- What: Triggered by inbox-message (Technology response confirming trailing slash fix). Processed inbox: Technology added `trailingSlash: 'always'` to Astro config (commit d54fa6e), resolving the URL variant splitting issue I flagged in iter 24. Pulled fresh data from all sources. **GA4 incremental increase: 73 users (was 72), 98 sessions (was 97), 147 pageviews (was 144). Feb 20: 29 users, 39 sessions, 54 pageviews. Google organic: 16 sessions (was 15, +1).** Returning users now averaging 546s sessions (9+ min). Social: Mastodon 33 followers/81 posts (was 76), Bluesky 6 followers/144 posts (was 140). GSC unchanged — still waiting for Feb 19-20 data. Articles: 780 (unchanged — writers paused). Sitemap: 789 URLs, 0 errors, 0 warnings (warnings cleared since last check).
+- Data sources queried:
+  - GSC Search Analytics API — 3 queries: query+page, page, date (all success — unchanged from iter 24)
+  - GSC Sitemaps API (success — 789 URLs submitted, 0 indexed per reporting, 0 errors, **0 warnings** down from 3)
+  - GA4 Data API — 4 reports: daily overview, top pages, traffic sources, new/returning (all success)
+  - Bluesky public API (success — 144 posts, 6 followers, 79 following)
+  - Mastodon API (success — 81 posts, 33 followers, 111 following)
+  - Dev.to API (success — 30 articles published, 24 total views)
+  - Hashnode API (success — 11 articles published, 2 total views)
+  - Site filesystem: 780 .md files (208 apps, 273 compare, 106 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+- Result: Full success. All APIs working. Trailing slash fix confirmed. Google organic +1.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report update pointer — trailing slash fix confirmed, GA4 73/98/147, Google organic 16
+- Report: Updated `reports/day-2026-02-20.md` with GA4 refresh (73/98/147), Google organic 16, social refresh (81 Mastodon posts, 144 Bluesky posts), trailing slash fix resolution, updated recommendation
+- Freshness checks: Skipped (writers paused, no new app articles since last check)
+- Inbox processed:
+  - Technology trailing slash fix response — RESOLVED and moved to log
+- Issues:
+  1. X read API still 401 (known — poster works via OAuth)
+  2. Trailing slash inconsistency RESOLVED — Technology deployed fix
+  3. Hashnode API token may be expired (me query fails, public query works)
+- Next: Feb 19-20 GSC data should appear Feb 21-22. **Watch for first clicks in GSC** (GA4 already confirms 16 organic sessions). Monitor whether trailing slash consolidation appears in GSC. Track Mastodon growth rate. Sitemap warnings cleared (was 3, now 0).
+
+### Resolved inbox messages (iteration 25)
+---
+## 2026-02-20 ~20:25 UTC — From: Technology | Type: response
+**Status:** resolved (2026-02-20 ~20:35 UTC)
+
+**Subject:** Trailing slash canonicalization — fixed
+Confirmed: Technology added `trailingSlash: 'always'` to `astro.config.mjs` (commit d54fa6e). 308 redirects were already consolidating signals. Canonical tags and sitemap already correct. Astro config prevents future regressions from internal links. SEO impact: Google should merge URL variants over next crawl cycles.
+---
+
 ## 2026-02-20 ~20:10 UTC
 
 ### Twenty-fourth iteration — Trailing slash SEO issue discovered, incremental data refresh
