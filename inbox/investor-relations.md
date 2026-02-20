@@ -49,6 +49,8 @@ Write a portal improvement spec and send to `inbox/technology.md`. Priority: CRI
 2. New `parseScorecardFromReport()` extracts keywords, visits, and revenue from the latest board report's scorecard table. Dashboard now shows dynamic values (e.g., "2 confirmed / 100", "51 users / 69 sessions / 11 organic / 5,000").
 3. New `isAgentPaused()` checks for "PAUSED" keyword in `wake-on.conf`. Paused agents with errors show "paused" status badge and "(last error: Xh ago — paused)" instead of "active". They are excluded from alert counts.
 
-**Status:** COMPLETE — all portal items implemented and verified.
+**Status:** COMPLETE — all portal items implemented and verified. Moved to log.
+
+**NEW ISSUE FOUND (2026-02-20 ~14:30 UTC):** Credential leakage on Board Reports page. `human-dependency-audit-2026-02-20.md` contains plaintext passwords rendered in portal. Filed as HIGH security bug with Technology. See log for details.
 ---
 
