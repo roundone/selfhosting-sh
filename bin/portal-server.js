@@ -626,6 +626,34 @@ function getSocialQueueSize() {
   }, 0);
 }
 
+function getRecentSocialPosts(limit = 30) {
+  return safe(() => {
+    const log = fs.readFileSync(`${BASE}/logs/social-poster.log`, 'utf8');
+    const lines = log.split('\n').filter(l => l.includes(' OK '));
+    const posts = [];
+    for (const line of lines.slice(-limit)) {
+      const match = line.match(/^(\S+)\s+\[social-poster\]\s+OK\s+(\w+):\s+posted\s+"(.*)"/);
+      if (match) {
+        posts.push({ time: match[1], platform: match[2], text: match[3] });
+      }
+    }
+    return posts.reverse(); // newest first
+  }, []);
+}
+
+function getUpcomingSocialPosts(limit = 20) {
+  return safe(() => {
+    const raw = fs.readFileSync(`${BASE}/queues/social-queue.jsonl`, 'utf8');
+    const lines = raw.split('\n').filter(Boolean).slice(0, limit);
+    return lines.map(line => {
+      try {
+        const item = JSON.parse(line);
+        return { platform: item.platform || '?', type: item.type || '', text: (item.text || '').slice(0, 120), url: item.url || '' };
+      } catch { return null; }
+    }).filter(Boolean);
+  }, []);
+}
+
 // -- Alert logic with per-agent interval awareness --
 
 function getAgentWakeConfig(agentName) {
@@ -720,8 +748,8 @@ function navHtml(currentPath) {
   const alertBadge = alertCount > 0 ? `<span class="alert-badge">${alertCount}</span>` : '';
   const links = [
     ['/', 'Dashboard'], ['/board', 'Board Reports'], ['/inbox', 'Inbox'],
-    ['/agents', 'Agents'], ['/content', 'Content & SEO'], ['/growth', 'Growth'],
-    ['/instructions', 'Instructions'], ['/system', 'System'],
+    ['/agents', 'Agents'], ['/content', 'Content'], ['/social', 'Social'],
+    ['/growth', 'Growth'], ['/instructions', 'Instructions'], ['/system', 'System'],
     ['/alerts', `Alerts ${alertBadge}`], ['/commits', 'Commits'], ['/claudemd', 'CLAUDE.md']
   ];
   const items = links.map(([href, label]) => {
@@ -899,6 +927,7 @@ function pageRateLimited() {
 function pageDashboard() {
   const mem = getMemory();
   const disk = getDisk();
+  const load = getLoad();
   const articles = getArticleCounts();
   const coordState = getCoordinatorState();
   const socialState = getSocialState();
@@ -906,6 +935,7 @@ function pageDashboard() {
   const latest = getLatestBoardReport();
   const alertCount = getAlertCount();
   const scorecard = parseScorecardFromReport(latest);
+  const recentPosts = getRecentSocialPosts(5);
 
   const memPct = mem.total > 0 ? Math.round((mem.used / mem.total) * 100) : 0;
   const memColor = memPct > 90 ? '#ef4444' : memPct > 75 ? '#f59e0b' : '#22c55e';
@@ -915,13 +945,13 @@ function pageDashboard() {
   const target = 1500;
   const artPct = Math.min(100, Math.round((articles.total / target) * 100));
 
-  let agentRunning = 0, agentQueued = 0, agentErrors = 0;
+  let agentRunning = 0, agentTotal = 0, agentErrors = 0;
   const runningAgents = (coordState && coordState.running) ? coordState.running : {};
   const runningSet = new Set(Object.keys(runningAgents));
   if (coordState && coordState.agents) {
+    agentTotal = Object.keys(coordState.agents).length;
     for (const [name, info] of Object.entries(coordState.agents)) {
       if (runningSet.has(name)) agentRunning++;
-      else agentQueued++;
       if (isActiveError(info, name)) agentErrors++;
     }
   }
@@ -932,59 +962,174 @@ function pageDashboard() {
     if (match) healthSummary = match[1].trim().slice(0, 300);
   }
 
-  let socialInfo = '';
-  if (socialState.platforms) {
-    for (const [platform, data] of Object.entries(socialState.platforms)) {
-      if (data.lastPosted) {
-        socialInfo += `<div class="metric"><span class="metric-label">${escapeHtml(platform)}</span><span class="metric-value" style="font-size:12px">${escapeHtml(new Date(data.lastPosted).toISOString().replace('T', ' ').slice(0, 19))}</span></div>`;
-      }
+  // Services status
+  const services = getServices();
+  const allServicesUp = services.every(s => s.status === 'active');
+
+  // Platform icons helper
+  const platformIcon = (p) => {
+    const icons = { x: 'X', bluesky: 'BS', mastodon: 'M', reddit: 'R', devto: 'D', hashnode: 'H' };
+    return icons[p] || p;
+  };
+
+  // Executive summary cards
+  let body = `<div class="top-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin-bottom:20px">
+  <div class="top-card" style="background:#1a1d27;border:1px solid #2d3148;border-radius:10px;padding:16px;text-align:center">
+    <div style="color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Articles</div>
+    <div style="font-size:28px;font-weight:700;color:#22c55e">${articles.total}</div>
+    <div style="color:#94a3b8;font-size:11px;margin-top:2px">/ ${target} target</div>
+  </div>
+  <div class="top-card" style="background:#1a1d27;border:1px solid #2d3148;border-radius:10px;padding:16px;text-align:center">
+    <div style="color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Page 1 Keywords</div>
+    <div style="font-size:28px;font-weight:700;color:${parseInt(scorecard.keywords) >= 100 ? '#22c55e' : parseInt(scorecard.keywords) >= 50 ? '#eab308' : '#e2e8f0'}">${escapeHtml(scorecard.keywords || '--')}</div>
+    <div style="color:#94a3b8;font-size:11px;margin-top:2px">/ 100 target</div>
+  </div>
+  <div class="top-card" style="background:#1a1d27;border:1px solid #2d3148;border-radius:10px;padding:16px;text-align:center">
+    <div style="color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Monthly Visits</div>
+    <div style="font-size:28px;font-weight:700;color:#e2e8f0">${escapeHtml(scorecard.visits || '--')}</div>
+    <div style="color:#94a3b8;font-size:11px;margin-top:2px">/ 5,000 target</div>
+  </div>
+  <div class="top-card" style="background:#1a1d27;border:1px solid #2d3148;border-radius:10px;padding:16px;text-align:center">
+    <div style="color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Revenue</div>
+    <div style="font-size:28px;font-weight:700;color:#e2e8f0">${escapeHtml(scorecard.revenue || '$0')}</div>
+    <div style="color:#94a3b8;font-size:11px;margin-top:2px">Month 1</div>
+  </div>
+  <div class="top-card" style="background:#1a1d27;border:1px solid #2d3148;border-radius:10px;padding:16px;text-align:center">
+    <div style="color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Agents</div>
+    <div style="font-size:28px;font-weight:700;color:${agentErrors > 0 ? '#ef4444' : '#22c55e'}">${agentRunning}<span style="font-size:14px;color:#64748b">/${agentTotal}</span></div>
+    <div style="color:#94a3b8;font-size:11px;margin-top:2px">${agentErrors > 0 ? `<span style="color:#ef4444">${agentErrors} error(s)</span>` : 'running'}</div>
+  </div>
+  <div class="top-card" style="background:#1a1d27;border:1px solid #2d3148;border-radius:10px;padding:16px;text-align:center">
+    <div style="color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Infrastructure</div>
+    <div style="font-size:28px;font-weight:700;color:${allServicesUp ? '#22c55e' : '#ef4444'}">${allServicesUp ? '&#10003;' : '&#10007;'}</div>
+    <div style="color:#94a3b8;font-size:11px;margin-top:2px">Mem ${memPct}% | Disk ${diskPct}%</div>
+  </div>
+</div>`;
+
+  // Alert banner (if any)
+  if (alertCount > 0) {
+    body += `<div style="background:#451a03;border:1px solid #f59e0b;border-radius:8px;padding:12px 16px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center">
+  <span style="color:#fbbf24;font-weight:600"><span style="margin-right:6px">&#9888;</span>${alertCount} alert${alertCount > 1 ? 's' : ''} need attention</span>
+  <a href="/alerts" style="color:#fbbf24;font-size:12px">View alerts &rarr;</a>
+</div>`;
+  }
+
+  // Collapsible sections
+  // 1. Business Health
+  body += `<details class="accordion" open>
+<summary>Business Health</summary>
+<div class="acc-body">
+  ${healthSummary ? `<div class="md-content" style="font-size:13px">${renderMarkdown(healthSummary)}</div>` : '<p style="color:#64748b">No board report available yet</p>'}
+  <div style="margin-top:12px">
+    <div class="progress-bar"><div class="progress-fill" style="width:${artPct}%"></div><span class="progress-label">Content: ${artPct}% of Month 1 target</span></div>
+  </div>
+  ${latest ? `<div style="margin-top:12px"><a href="/board" style="font-size:12px">Latest board report: ${escapeHtml(latest.name)} &rarr;</a></div>` : ''}
+</div>
+</details>`;
+
+  // 2. Agents
+  body += `<details class="accordion">
+<summary>Agents &mdash; ${agentRunning} running, ${agentTotal - agentRunning} idle${agentErrors > 0 ? `, <span style="color:#ef4444">${agentErrors} errors</span>` : ''}</summary>
+<div class="acc-body">`;
+
+  if (coordState && coordState.agents) {
+    const deptOrder = ['ceo', 'operations', 'technology', 'marketing', 'bi-finance', 'investor-relations'];
+    const sorted = Object.entries(coordState.agents).sort(([a], [b]) => {
+      const ai = deptOrder.indexOf(a);
+      const bi = deptOrder.indexOf(b);
+      if (ai >= 0 && bi >= 0) return ai - bi;
+      if (ai >= 0) return -1;
+      if (bi >= 0) return 1;
+      return a.localeCompare(b);
+    });
+
+    body += '<table><tr><th>Agent</th><th>Status</th><th>Last Run</th><th>Errors</th></tr>';
+    for (const [name, info] of sorted) {
+      const paused = isAgentPaused(name);
+      const hasActiveError = isActiveError(info, name);
+      const isRunning = runningSet.has(name);
+      const status = isRunning ? 'running' : paused ? 'paused' : hasActiveError ? 'backoff' : 'idle';
+      const lastRun = info.lastStarted ? formatTimeAgo(Date.now() - new Date(info.lastStarted).getTime()) : '--';
+      const errs = info.consecutiveErrors || 0;
+      body += `<tr><td>${escapeHtml(name)}</td><td>${statusBadge(status)}</td><td style="font-size:12px">${escapeHtml(lastRun)}</td><td>${errs > 0 ? `<span class="crit">${errs}</span>` : '0'}</td></tr>`;
+    }
+    body += '</table>';
+  }
+  body += `<div style="margin-top:8px"><a href="/agents" style="font-size:12px">Full agent details &rarr;</a></div>
+</div>
+</details>`;
+
+  // 3. Content
+  body += `<details class="accordion">
+<summary>Content &mdash; ${articles.total} articles published</summary>
+<div class="acc-body">
+<table><tr><th>Type</th><th>Count</th></tr>
+${Object.entries(articles.collections).sort(([,a],[,b]) => b - a).map(([k,v]) => `<tr><td>${escapeHtml(k)}</td><td>${v}</td></tr>`).join('')}
+</table>
+<div style="margin-top:8px"><a href="/content" style="font-size:12px">Full content details &rarr;</a></div>
+</div>
+</details>`;
+
+  // 4. Social Media
+  const lastPosted = (socialState && socialState.last_posted) || {};
+  const activePlatforms = Object.entries(lastPosted).filter(([,v]) => v).length;
+
+  body += `<details class="accordion">
+<summary>Social Media &mdash; ${activePlatforms} platforms active, ${queueSize} queued</summary>
+<div class="acc-body">`;
+
+  // Platform status row
+  body += '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px">';
+  const platforms = ['x', 'bluesky', 'mastodon', 'reddit', 'devto', 'hashnode'];
+  for (const p of platforms) {
+    const lp = lastPosted[p];
+    const statusColor = lp ? '#22c55e' : '#64748b';
+    const ago = lp ? formatTimeAgo(Date.now() - new Date(lp).getTime()) : 'inactive';
+    body += `<div style="background:#0d0f14;border:1px solid #2d3148;border-radius:6px;padding:8px 12px;text-align:center;min-width:80px">
+  <div style="font-weight:700;color:${statusColor};font-size:13px">${escapeHtml(platformIcon(p))}</div>
+  <div style="color:#64748b;font-size:10px;margin-top:2px">${escapeHtml(ago)}</div>
+</div>`;
+  }
+  body += '</div>';
+
+  // Recent posts
+  if (recentPosts.length > 0) {
+    body += '<div style="color:#64748b;font-size:12px;margin-bottom:6px">Recent posts</div>';
+    for (const post of recentPosts) {
+      const time = new Date(post.time).toISOString().replace('T', ' ').slice(11, 16) + ' UTC';
+      body += `<div style="border-bottom:1px solid #2d3148;padding:6px 0;font-size:12px">
+  <span class="badge" style="background:${post.platform === 'x' ? '#1d9bf0' : post.platform === 'bluesky' ? '#0085ff' : '#6364ff'};font-size:10px">${escapeHtml(platformIcon(post.platform))}</span>
+  <span style="color:#94a3b8;margin-left:6px">${escapeHtml(time)}</span>
+  <span style="color:#e2e8f0;margin-left:6px">${escapeHtml(post.text.slice(0, 80))}${post.text.length > 80 ? '...' : ''}</span>
+</div>`;
     }
   }
 
-  let body = `<div class="grid">
-<div class="card">
-  <h2>Business Health</h2>
-  ${healthSummary ? `<div class="md-content" style="font-size:13px">${renderMarkdown(healthSummary)}</div>` : '<p style="color:#64748b">No board report available yet</p>'}
-  ${alertCount > 0 ? `<div style="margin-top:10px"><span class="badge" style="background:#ef4444;color:#fff">${alertCount} alert${alertCount > 1 ? 's' : ''} need attention</span> <a href="/alerts" style="font-size:12px">View &rarr;</a></div>` : '<div style="margin-top:10px"><span class="badge" style="background:#22c55e">All clear</span></div>'}
+  body += `<div style="margin-top:8px"><a href="/social" style="font-size:12px">Full social activity &rarr;</a></div>
 </div>
+</details>`;
 
-<div class="card">
-  <h2>Scorecard</h2>
-  <div class="metric"><span class="metric-label">Articles</span><span class="metric-value">${articles.total} / ${target}</span></div>
-  <div class="progress-bar"><div class="progress-fill" style="width:${artPct}%"></div><span class="progress-label">${artPct}%</span></div>
-  <div class="metric" style="margin-top:8px"><span class="metric-label">Page 1 Keywords</span><span class="metric-value">${escapeHtml(scorecard.keywords || 'N/A')} / 100</span></div>
-  <div class="metric"><span class="metric-label">Monthly Visits</span><span class="metric-value">${escapeHtml(scorecard.visits || 'N/A')} / 5,000</span></div>
-  <div class="metric"><span class="metric-label">Revenue</span><span class="metric-value">${escapeHtml(scorecard.revenue || '$0')}</span></div>
+  // 5. System Health
+  body += `<details class="accordion">
+<summary>System Health &mdash; <span style="color:${allServicesUp ? '#22c55e' : '#ef4444'}">${allServicesUp ? 'All services up' : 'Issues detected'}</span></summary>
+<div class="acc-body">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+  <div>
+    <div class="metric"><span class="metric-label">Memory</span><span class="metric-value" style="color:${memColor}">${mem.used}MB / ${mem.total}MB</span></div>
+    ${barHtml(memPct, memColor)}
+  </div>
+  <div>
+    <div class="metric"><span class="metric-label">Disk</span><span class="metric-value" style="color:${diskColor}">${escapeHtml(disk.used)} / ${escapeHtml(disk.size)}</span></div>
+    ${barHtml(diskPct, diskColor)}
+  </div>
+  <div>
+    <div class="metric"><span class="metric-label">Load</span><span class="metric-value">${escapeHtml(load)}</span></div>
+    <div class="metric"><span class="metric-label">Services</span><span class="metric-value">${services.map(s => `<span style="color:${s.status === 'active' ? '#22c55e' : '#ef4444'}">${s.status === 'active' ? '&#9679;' : '&#9679;'}</span>`).join(' ')}</span></div>
+  </div>
 </div>
-
-<div class="card">
-  <h2>Agent Summary</h2>
-  <div class="metric"><span class="metric-label">Running</span><span class="metric-value ok">${agentRunning}</span></div>
-  <div class="metric"><span class="metric-label">Queued / Idle</span><span class="metric-value">${agentQueued}</span></div>
-  <div class="metric"><span class="metric-label">With Errors</span><span class="metric-value ${agentErrors > 0 ? 'crit' : ''}">${agentErrors}</span></div>
-  <a href="/agents" style="font-size:12px;margin-top:8px;display:block">View agents &rarr;</a>
+<div style="margin-top:8px"><a href="/system" style="font-size:12px">Full system details &rarr;</a></div>
 </div>
-
-<div class="card">
-  <h2>System Status</h2>
-  <div class="metric"><span class="metric-label">Memory</span><span class="metric-value" style="color:${memColor}">${mem.used}MB / ${mem.total}MB</span></div>
-  ${barHtml(memPct, memColor)}
-  <div class="metric"><span class="metric-label">Disk</span><span class="metric-value" style="color:${diskColor}">${escapeHtml(disk.used)} / ${escapeHtml(disk.size)}</span></div>
-  ${barHtml(diskPct, diskColor)}
-  <a href="/system" style="font-size:12px;margin-top:8px;display:block">View details &rarr;</a>
-</div>
-
-<div class="card">
-  <h2>Social Media</h2>
-  <div class="metric"><span class="metric-label">Queue</span><span class="metric-value">${queueSize} items</span></div>
-  ${socialInfo || '<div style="color:#64748b;font-size:12px">No platform data available</div>'}
-</div>
-
-<div class="card">
-  <h2>Latest Board Report</h2>
-  ${latest ? `<div class="metric"><span class="metric-label">Date</span><span class="metric-value">${escapeHtml(latest.name)}</span></div><div style="color:#94a3b8;font-size:12px;margin-top:6px">${escapeHtml(latest.content.slice(0, 200))}...</div><a href="/board" style="font-size:12px;margin-top:8px;display:block">Read full report &rarr;</a>` : '<p style="color:#64748b">No board reports yet</p>'}
-</div>
-</div>`;
+</details>`;
 
   return layoutHtml('Dashboard', '/', body);
 }
@@ -1076,15 +1221,14 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
       return a.localeCompare(b);
     });
 
-    body += '<table><tr><th>Agent</th><th>Status</th><th>Last Start</th><th>Last Exit</th><th>Errors</th><th>Log</th></tr>';
+    body += '<table><tr><th>Agent</th><th>Status</th><th>Last Active</th><th>Duration</th><th>Trigger</th><th>Errors</th><th>Log</th></tr>';
     for (const [name, info] of sorted) {
       const paused = isAgentPaused(name);
       const hasActiveError = isActiveError(info, name);
       const isRunning = agentRunningSet.has(name);
       const status = isRunning ? 'running' : paused ? 'paused' : hasActiveError ? 'backoff' : 'idle';
       const runInfo = isRunning ? runningAgentsMap[name] : null;
-      const lastStart = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 19) : '-';
-      const lastExit = info.lastExited ? new Date(info.lastExited).toISOString().replace('T', ' ').slice(0, 19) : '-';
+      const lastActive = info.lastStarted ? formatTimeAgo(Date.now() - new Date(info.lastStarted).getTime()) : '--';
       const errs = info.consecutiveErrors || 0;
 
       // Error age display
@@ -1095,15 +1239,13 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
           const errorAge = Date.now() - new Date(errorTimestamp).getTime();
           const ageStr = formatTimeAgo(errorAge);
           if (paused) {
-            errorDetail = ` <span class="stale" style="font-size:12px">(last error: ${ageStr} — paused)</span>`;
+            errorDetail = ` <span class="stale" style="font-size:11px">(${ageStr} — paused)</span>`;
           } else {
             const expectedInterval = getExpectedIntervalMs(name);
             const isStale = errorAge >= (expectedInterval * 1.5);
-            if (isStale) {
-              errorDetail = ` <span class="stale" style="font-size:12px">(last error: ${ageStr} — stale)</span>`;
-            } else {
-              errorDetail = ` <span class="crit" style="font-size:12px">(last error: ${ageStr} — active)</span>`;
-            }
+            errorDetail = isStale
+              ? ` <span class="stale" style="font-size:11px">(${ageStr} — stale)</span>`
+              : ` <span class="crit" style="font-size:11px">(${ageStr} — active)</span>`;
           }
         }
       }
@@ -1113,18 +1255,21 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
       if (!fs.existsSync(logPath)) logPath = `${BASE}/logs/${logName}.md`;
       const logContent = fs.existsSync(logPath) ? readFileTail(logPath, 30) : '';
 
-      let runningDetail = '';
+      // Running details — show duration and trigger, no PID
+      let duration = '--';
+      let trigger = '--';
       if (isRunning && runInfo) {
         const durMs = Date.now() - new Date(runInfo.startTime).getTime();
-        const durStr = formatTimeAgo(durMs);
-        runningDetail = ` <span style="font-size:12px;color:#22c55e">(${durStr}, pid ${runInfo.pid}, ${escapeHtml(runInfo.trigger || '')})</span>`;
+        duration = formatTimeAgo(durMs).replace(' ago', '');
+        trigger = runInfo.trigger || '--';
       }
 
       body += `<tr>
 <td>${escapeHtml(name)}</td>
-<td>${statusBadge(status)}${runningDetail}${errorDetail}</td>
-<td style="font-size:12px">${escapeHtml(lastStart)}</td>
-<td style="font-size:12px">${escapeHtml(lastExit)}</td>
+<td>${statusBadge(status)}${errorDetail}</td>
+<td style="font-size:12px">${escapeHtml(lastActive)}</td>
+<td style="font-size:12px">${escapeHtml(duration)}</td>
+<td style="font-size:12px">${escapeHtml(trigger)}</td>
 <td>${errs > 0 ? `<span class="crit">${errs}</span>` : '0'}</td>
 <td>${logContent ? `<details><summary style="cursor:pointer;font-size:12px;color:#22c55e">view</summary><pre style="margin-top:6px;font-size:12px">${escapeHtml(redactCredentials(logContent))}</pre></details>` : '<span style="color:#64748b;font-size:12px">-</span>'}</td>
 </tr>`;
@@ -1147,10 +1292,8 @@ function pageContent() {
   const articles = getArticleCounts();
   const target = 1500;
   const artPct = Math.min(100, Math.round((articles.total / target) * 100));
-  const queueSize = getSocialQueueSize();
-  const socialState = getSocialState();
 
-  let body = '<h2 style="margin-bottom:12px">Content & SEO</h2>';
+  let body = '<h2 style="margin-bottom:12px">Content</h2>';
 
   body += `<div class="grid">
 <div class="card">
@@ -1178,21 +1321,112 @@ function pageContent() {
 </div>`;
   }
 
-  body += `<div class="card wide" style="margin-top:16px">
-<h2>Social Posting</h2>
-<div class="metric"><span class="metric-label">Queue Size</span><span class="metric-value">${queueSize}</span></div>`;
-  if (socialState.platforms) {
-    body += '<table><tr><th>Platform</th><th>Status</th><th>Last Posted</th></tr>';
-    for (const [platform, data] of Object.entries(socialState.platforms)) {
-      const lastPosted = data.lastPosted ? new Date(data.lastPosted).toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '-';
-      const status = data.lastPosted ? 'active' : 'blocked';
-      body += `<tr><td>${escapeHtml(platform)}</td><td>${statusBadge(status)}</td><td style="font-size:12px">${escapeHtml(lastPosted)}</td></tr>`;
-    }
-    body += '</table>';
+  return layoutHtml('Content', '/content', body);
+}
+
+function pageSocial() {
+  const socialState = getSocialState();
+  const queueSize = getSocialQueueSize();
+  const recentPosts = getRecentSocialPosts(30);
+  const upcomingPosts = getUpcomingSocialPosts(20);
+  const lastPosted = (socialState && socialState.last_posted) || {};
+
+  const platformIcon = (p) => {
+    const icons = { x: 'X', bluesky: 'BS', mastodon: 'M', reddit: 'R', devto: 'D', hashnode: 'H' };
+    return icons[p] || p;
+  };
+  const platformColor = (p) => {
+    const colors = { x: '#1d9bf0', bluesky: '#0085ff', mastodon: '#6364ff', reddit: '#ff4500', devto: '#0a0a0a', hashnode: '#2962ff' };
+    return colors[p] || '#64748b';
+  };
+  const platformName = (p) => {
+    const names = { x: 'X (Twitter)', bluesky: 'Bluesky', mastodon: 'Mastodon', reddit: 'Reddit', devto: 'Dev.to', hashnode: 'Hashnode' };
+    return names[p] || p;
+  };
+
+  let body = '<h2 style="margin-bottom:12px">Social Media Activity</h2>';
+
+  // Platform overview cards
+  body += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px">';
+  const platformList = ['x', 'bluesky', 'mastodon', 'reddit', 'devto', 'hashnode'];
+  for (const p of platformList) {
+    const lp = lastPosted[p];
+    const isActive = !!lp;
+    const lastTime = lp ? formatTimeAgo(Date.now() - new Date(lp).getTime()) : 'Inactive';
+    const borderColor = isActive ? platformColor(p) : '#2d3148';
+    body += `<div style="background:#1a1d27;border:1px solid ${borderColor};border-radius:8px;padding:14px;text-align:center">
+  <div style="font-weight:700;color:${isActive ? platformColor(p) : '#64748b'};font-size:14px;margin-bottom:4px">${escapeHtml(platformName(p))}</div>
+  <div style="font-size:11px;color:${isActive ? '#94a3b8' : '#475569'}">${escapeHtml(lastTime)}</div>
+  <div style="margin-top:6px">${statusBadge(isActive ? 'active' : (p === 'reddit' || p === 'hashnode') ? 'blocked' : 'inactive')}</div>
+</div>`;
   }
   body += '</div>';
 
-  return layoutHtml('Content & SEO', '/content', body);
+  // Queue info
+  body += `<div style="background:#1a1d27;border:1px solid #2d3148;border-radius:8px;padding:12px 16px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center">
+  <span style="color:#94a3b8"><span style="color:#22c55e;font-weight:700">${queueSize}</span> posts queued for publishing</span>
+  <span style="color:#64748b;font-size:12px">Posting every 5-15 min per platform</span>
+</div>`;
+
+  // Recent posts (last 30)
+  body += `<details class="accordion" open>
+<summary>Recent Activity (Last ${recentPosts.length} Posts)</summary>
+<div class="acc-body">`;
+
+  if (recentPosts.length === 0) {
+    body += '<p style="color:#64748b">No recent posts found in log</p>';
+  } else {
+    body += '<table><tr><th>Time</th><th>Platform</th><th>Content</th></tr>';
+    for (const post of recentPosts) {
+      const time = new Date(post.time);
+      const timeStr = time.toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
+      const ago = formatTimeAgo(Date.now() - time.getTime());
+      const postUrl = getPostUrl(post.platform, post.text);
+      const contentHtml = postUrl
+        ? `<a href="${escapeHtml(postUrl)}" target="_blank" style="color:#e2e8f0">${escapeHtml(post.text.slice(0, 100))}${post.text.length > 100 ? '...' : ''}</a>`
+        : `${escapeHtml(post.text.slice(0, 100))}${post.text.length > 100 ? '...' : ''}`;
+      body += `<tr>
+  <td style="font-size:12px;white-space:nowrap"><span title="${escapeHtml(timeStr)}">${escapeHtml(ago)}</span></td>
+  <td><span class="badge" style="background:${platformColor(post.platform)};color:#fff;font-size:10px">${escapeHtml(platformIcon(post.platform))}</span></td>
+  <td style="font-size:12px">${contentHtml}</td>
+</tr>`;
+    }
+    body += '</table>';
+  }
+  body += '</div></details>';
+
+  // Upcoming queue (next 20)
+  body += `<details class="accordion">
+<summary>Next ${upcomingPosts.length} Planned Posts</summary>
+<div class="acc-body">`;
+
+  if (upcomingPosts.length === 0) {
+    body += '<p style="color:#64748b">Queue is empty</p>';
+  } else {
+    body += '<table><tr><th>Platform</th><th>Type</th><th>Content Preview</th></tr>';
+    for (const post of upcomingPosts) {
+      body += `<tr>
+  <td><span class="badge" style="background:${platformColor(post.platform)};color:#fff;font-size:10px">${escapeHtml(platformIcon(post.platform))}</span></td>
+  <td style="font-size:12px;color:#94a3b8">${escapeHtml(post.type || '--')}</td>
+  <td style="font-size:12px">${escapeHtml(post.text)}${post.text.length >= 120 ? '...' : ''}</td>
+</tr>`;
+    }
+    body += '</table>';
+  }
+  body += '</div></details>';
+
+  return layoutHtml('Social Media', '/social', body);
+}
+
+// Helper to construct platform post URLs from log content
+function getPostUrl(platform, text) {
+  // We can't reconstruct exact URLs from log text alone, but we can link to profiles
+  const profileUrls = {
+    x: 'https://x.com/selfhostingsh',
+    bluesky: 'https://bsky.app/profile/selfhostingsh.bsky.social',
+    mastodon: 'https://mastodon.social/@selfhostingsh',
+  };
+  return profileUrls[platform] || null;
 }
 
 function pageSystem() {
@@ -1983,15 +2217,15 @@ async function pageGrowth() {
     });
     const runMap = (coordState.running) || {};
 
-    body += '<table><tr><th>Agent</th><th>Runs (24h)</th><th>Errors</th><th>Last Run</th><th>Status</th></tr>';
+    body += '<table><tr><th>Agent</th><th>Errors</th><th>Last Active</th><th>Status</th></tr>';
     for (const [name, info] of sorted) {
       const paused = isAgentPaused(name);
       const hasErr = isActiveError(info, name);
       const isRunning = !!runMap[name];
       const status = isRunning ? 'running' : paused ? 'paused' : hasErr ? 'backoff' : 'idle';
-      const lastRun = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 16) + ' UTC' : '--';
+      const lastActive = info.lastStarted ? formatTimeAgo(Date.now() - new Date(info.lastStarted).getTime()) : '--';
       const errs = info.consecutiveErrors || 0;
-      body += `<tr><td>${escapeHtml(name)}</td><td>--</td><td>${errs > 0 ? '<span class="crit">' + errs + '</span>' : '0'}</td><td style="font-size:12px">${escapeHtml(lastRun)}</td><td>${statusBadge(status)}</td></tr>`;
+      body += `<tr><td>${escapeHtml(name)}</td><td>${errs > 0 ? '<span class="crit">' + errs + '</span>' : '0'}</td><td style="font-size:12px">${escapeHtml(lastActive)}</td><td>${statusBadge(status)}</td></tr>`;
     }
     body += '</table>';
   }
@@ -2185,6 +2419,9 @@ function handleRequest(req, res) {
     } else if (pathname === '/content') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(pageContent());
+    } else if (pathname === '/social') {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(pageSocial());
     } else if (pathname === '/system') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(pageSystem());

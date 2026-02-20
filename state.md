@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-21 00:05 UTC
+## Last Updated: 2026-02-20 18:45 UTC
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -80,11 +80,12 @@
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
 - Queue: **~544 items** (trimmed from ~2,000 by CEO per founder directive — 376 article links + 168 non-link. Marketing directed to add 400+ non-link posts for 70%+ non-link target)
-- **Mastodon: 4 followers, 25 following** (active engagement started — 27 follows, 10 favs, 6 boosts, 5 replies this iteration)
-- **Bluesky: 14 follows, 7 likes, 3 replies** this iteration
-- **Mastodon: 3.4 engagements/post** — dramatically outperforming X (0/post). Self-hosting community active on fediverse.
+- **Mastodon: 18 followers, 81 following** — 5 genuine replies, 5 favs, 3 boosts this iteration. Bio updated.
+- **Bluesky: 63 following** — 11 genuine replies, 17 likes this iteration.
+- **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
+- **Mastodon: 3.4 engagements/post** — dramatically outperforming X. Self-hosting community active on fediverse.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
-- **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing exceeded all daily targets (41 follows, 8 replies, 30+ posts). Dev.to: 13 articles cross-posted.
+- **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 5+ articles. Hashnode: 10 articles total. Brand voice doc DONE.
 - **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
 - Platform status:
   - **X (Twitter): LIVE** — posting every 15 min
@@ -130,10 +131,10 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-21 00:05 | 0 | Running — processed Playwright engagement directive for Marketing |
+| CEO | 2026-02-20 18:45 | 0 | Running — processed Marketing engagement report, brand voice complete |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 18:30 | 0 | Running — Portal v4 shipped, working on logo + newsletter homepage |
-| Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
+| Marketing | 2026-02-20 18:44 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies this iteration |
 | BI & Finance | 2026-02-20 13:03 | 0 | Idle (next: inbox/fallback trigger) |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
 | proxy-docker-writer | 2026-02-20 07:57 | 1 | **PAUSED** (until Feb 22) |
@@ -179,10 +180,10 @@
 24. **CLAUDE.md extra password + Running:0 fix** → **DONE** (Feb 20 ~15:42 UTC) — Separate password generated and stored. Portal CLAUDE.md section requires additional auth. Coordinator persists running state. Credentials emailed to founder.
 25. **Newsletter subscribe broken — implement or remove** → **COMPLETE** (Feb 20 ~16:42 UTC) — Full pipeline LIVE: CF Pages Functions → VPS portal storage. Subscribe/unsubscribe working. Newsletter sending script ready. Marketing content strategy pending. VPS storage used (Resend API key send-only, CF token lacks KV scope — both Requires:human optional upgrades).
 26. **Social queue cleanup** → **DONE** (Feb 20 ~18:20 UTC) — CEO trimmed queue from ~2,000 to 544 items (376 article links from 133 unique articles + 168 non-link). Marketing directed to add 400+ non-link posts.
-27. **Comment reply system** → **DELEGATED to Marketing** (Feb 20 ~18:20 UTC) — Directive sent. Monitor/reply every iteration, 30-50% reply rate.
-28. **Follow accounts on X/Bluesky/Mastodon** → **DELEGATED to Marketing** (Feb 20 ~18:20 UTC) — Directive sent. 10+/day target.
+27. **Comment reply system** → **ACTIVE** (Feb 20 ~19:45 UTC) — Marketing reported 16 genuine replies sent across Mastodon (5) and Bluesky (11). Reply rate tracking ongoing.
+28. **Follow accounts on X/Bluesky/Mastodon** → **ACTIVE** (Feb 20 ~19:45 UTC) — Marketing reported 89 new follows: Mastodon +39 (81 total), Bluesky +20 (63 total), X +30 (31 total). Exceeds 10/day target.
 29. **Profile branding audit** → **IN PROGRESS** — Marketing audited all 7 platforms. Critical gap: no logo exists. Technology directed to create logo + header. Marketing proceeding with bio/link/pin fixes.
 30. **IR portal redesign** → **COMPLETE** (Feb 20 ~18:30 UTC) — Portal v4 shipped: social activity feed (`/social`), 5 collapsible sections, 6 executive summary cards, PIDs removed, relative timestamps. Logo/brand assets in progress.
 31. **Department role clarity** → **DONE** (Feb 20 ~18:30 UTC) — Marketing CLAUDE.md expanded (engagement, community mgmt, follower growth, distribution). BI-Finance CLAUDE.md expanded (monetization readiness, proactive insights). CEO CLAUDE.md updated (product ownership).
 32. **Playwright engagement for Marketing** → **DONE** (Feb 21 ~00:05 UTC) — Marketing CLAUDE.md updated with detailed Playwright MCP usage instructions. CRITICAL inbox directive sent. Mandatory per-iteration engagement checklist added.
-33. **Brand voice + smart reply strategy** → **DELEGATED to Marketing** (Feb 21 ~00:10 UTC) — Marketing must create `agents/marketing/brand-voice.md` BEFORE any engagement. Reply decision framework added to CLAUDE.md. CRITICAL inbox directive sent.
+33. **Brand voice + smart reply strategy** → **COMPLETE** (Feb 20 ~19:45 UTC) — Marketing created `agents/marketing/brand-voice.md` with all 7 required sections. All future engagement follows this document.
