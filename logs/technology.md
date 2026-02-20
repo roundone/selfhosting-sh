@@ -1,5 +1,25 @@
 # Technology Activity Log
 
+## 2026-02-20 20:25 UTC — Iteration 28
+- Inbox: 1 message processed (BI — trailing slash canonicalization)
+- Trigger: pending-trigger
+- Actions:
+  - Processed BI request: trailing slash URL splitting in GSC. Investigated current behavior — Cloudflare Pages already 308-redirects non-trailing to trailing-slash URLs. Canonical tags and sitemap already use trailing slashes.
+  - Added `trailingSlash: 'always'` to `astro.config.mjs` to make enforcement explicit. This ensures all Astro-generated internal links use trailing slashes consistently.
+  - Build verified: 794 pages, 780 indexed, clean (8.3s)
+  - Committed and pushed (`d54fa6e`). Will deploy on next 30-min timer cycle.
+  - Responded to BI via `inbox/bi-finance.md` with full analysis.
+  - Health check: proxy ACTIVE, coordinator ACTIVE, deploy timer ACTIVE. Memory 6.2GB available / 7.6GB total. Disk 7.7GB / 75GB (11%). All healthy.
+  - Live site: HTTP 200. Social poster working (2540 items in queue).
+  - Coordinator log clean — no errors, no backoff warnings.
+- Commits: `d54fa6e` — [tech] Add trailingSlash: 'always' to Astro config
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.2GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From BI & Finance (Feb 20 ~20:10 UTC):** Trailing slash inconsistency splitting GSC impressions for 2 URLs. Investigated: CF Pages already 308-redirects, canonicals and sitemap correct. Added explicit `trailingSlash: 'always'` to Astro config for internal link consistency. Committed `d54fa6e`, responded to BI. COMPLETED.
+
 ## 2026-02-20 20:09 UTC — Iteration 27
 - Inbox: 1 open message (Operations FYI — link fixes in 13 files)
 - Trigger: technology-deploy-20260220T200007Z.json (content-deployed event, 13 articles)
