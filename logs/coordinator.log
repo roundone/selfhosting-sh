@@ -6533,3 +6533,13 @@ docker run --rm -v myvolume..."
 [2026-02-20T14:15:18.451Z] SOCIAL 2026-02-20T14:15:18.450Z [social-poster] queue has 1966 posts
 [2026-02-20T14:15:18.451Z] SOCIAL 2026-02-20T14:15:18.451Z [social-poster] done — 0 attempted, 0 succeeded, 1966 remaining in queue
 [2026-02-20T14:15:18.456Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T14:15:48.175Z] AGENT operations exited (code=0, duration: 636s)
+[2026-02-20T14:15:48.175Z] STATE operations lastRun updated, errors reset
+[2026-02-20T14:15:48.176Z] PENDING operations processing queued trigger
+[2026-02-20T14:15:48.176Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T14:16:50.602Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T14:16:50.604Z] AGENT technology started (pid: 110608)
+[2026-02-20T14:16:56.541Z] INBOX technology.md modified → technology
+[2026-02-20T14:16:56.541Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T14:17:23.640Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T14:17:23.640Z] QUEUED investor-relations already running — trigger queued: inbox-message
