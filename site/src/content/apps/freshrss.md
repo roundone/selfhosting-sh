@@ -252,4 +252,4 @@ FreshRSS is the best self-hosted RSS reader for most people. It's lightweight, f
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)

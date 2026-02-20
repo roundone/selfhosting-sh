@@ -254,5 +254,5 @@ Immich wins because it is the only self-hosted app that genuinely competes with 
 - [Self-Hosted Alternatives to iCloud Photos](/replace/icloud-photos)
 - [Self-Hosted Alternatives to Amazon Photos](/replace/amazon-photos)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to UptimeRobot"
 description: "Best self-hosted alternatives to UptimeRobot for monitoring uptime, status pages, and endpoint health checking."
 date: 2026-02-17
 dateUpdated: 2026-02-17
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - uptime-kuma
   - gatus

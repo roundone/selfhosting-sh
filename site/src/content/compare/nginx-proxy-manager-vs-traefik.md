@@ -3,7 +3,7 @@ title: "Nginx Proxy Manager vs Traefik"
 description: "Nginx Proxy Manager vs Traefik compared for self-hosting. NPM offers a simple web UI while Traefik provides config-as-code with auto-discovery."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - nginx-proxy-manager
   - traefik

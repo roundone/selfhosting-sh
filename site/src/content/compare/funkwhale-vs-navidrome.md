@@ -198,4 +198,4 @@ Yes. Navidrome supports multiple users with separate libraries, playlists, and s
 - [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin-music)
 - [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

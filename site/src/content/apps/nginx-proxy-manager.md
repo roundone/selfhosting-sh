@@ -3,7 +3,7 @@ title: "How to Self-Host Nginx Proxy Manager"
 description: "Set up Nginx Proxy Manager with Docker Compose for easy reverse proxy management, free SSL certificates, and a clean web UI."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - nginx-proxy-manager
 tags:
@@ -300,7 +300,7 @@ Nginx Proxy Manager is the best reverse proxy solution for most self-hosters. It
 
 ## Related
 
-- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy-ssl)
+- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy)
 - [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Networking](/foundations/docker-networking)

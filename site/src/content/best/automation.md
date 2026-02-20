@@ -3,7 +3,7 @@ title: "Best Self-Hosted Automation Tools in 2026"
 description: "The best self-hosted workflow automation tools compared — n8n, Activepieces, Node-RED, Windmill, Huginn, and Automatisch."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
   - activepieces

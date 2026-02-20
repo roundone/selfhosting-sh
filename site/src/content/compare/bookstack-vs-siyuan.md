@@ -3,7 +3,7 @@ title: "BookStack vs SiYuan: Which to Self-Host?"
 description: "BookStack vs SiYuan compared for self-hosted knowledge management — team documentation platform versus personal block-based notes."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
   - siyuan

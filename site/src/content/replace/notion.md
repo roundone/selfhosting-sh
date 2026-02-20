@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Notion"
 description: "Best self-hosted Notion alternatives — Outline, AppFlowy, AFFiNE, BookStack, and more for private, self-hosted knowledge management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - appflowy

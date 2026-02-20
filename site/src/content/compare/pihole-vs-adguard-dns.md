@@ -3,7 +3,7 @@ title: "Pi-hole vs AdGuard Home: DNS Server Comparison"
 description: "Pi-hole vs AdGuard Home compared as DNS servers. Filtering, DoH/DoT support, DHCP, clients management, and which DNS server to choose."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - adguard-home

@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Managed Hosting"
 description: "Replace expensive managed hosting with self-hosted reverse proxies and web servers. Compare Caddy, Nginx, Traefik, and NPM for hosting your own sites."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - caddy
   - nginx

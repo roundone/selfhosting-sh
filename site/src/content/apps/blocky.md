@@ -3,7 +3,7 @@ title: "How to Self-Host Blocky with Docker"
 description: "Deploy Blocky — a lightweight DNS proxy and ad blocker configured entirely via YAML. Complete Docker Compose setup guide."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - blocky
 tags:

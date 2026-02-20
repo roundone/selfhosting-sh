@@ -3,7 +3,7 @@ title: "How to Self-Host Docmost with Docker Compose"
 description: "Step-by-step guide to self-hosting Docmost wiki with Docker Compose, including PostgreSQL, Redis, and collaboration setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - docmost
 tags:

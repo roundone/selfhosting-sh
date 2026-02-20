@@ -3,7 +3,7 @@ title: "How to Self-Host Activepieces with Docker Compose"
 description: "Deploy Activepieces with Docker Compose — an open-source workflow automation platform and self-hosted Zapier alternative."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - activepieces
 tags:

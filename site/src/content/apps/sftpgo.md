@@ -3,7 +3,7 @@ title: "How to Self-Host SFTPGo with Docker Compose"
 description: "Deploy SFTPGo with Docker Compose for self-hosted SFTP, FTP, WebDAV, and HTTP file sharing with a web admin UI."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - sftpgo
 tags:

@@ -3,7 +3,7 @@ title: "Nextcloud vs FileBrowser: Which to Self-Host?"
 description: "Nextcloud vs FileBrowser comparison for self-hosted file management. Full suite vs lightweight file browser for your home server."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
   - filebrowser

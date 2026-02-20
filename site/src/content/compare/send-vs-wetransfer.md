@@ -161,4 +161,4 @@ Depends on your upload limits and expiry settings. With a 5 GB max file size and
 - [Self-Hosted Alternatives to AirDrop](/replace/airdrop)
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

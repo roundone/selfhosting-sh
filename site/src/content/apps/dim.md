@@ -127,7 +127,7 @@ Dim supports multiple user accounts. Each user gets:
 
 Standard reverse proxy configuration. Point your proxy to port 8000. Ensure WebSocket support is enabled for real-time playback updates.
 
-[Reverse Proxy Setup](/foundations/reverse-proxy)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -202,5 +202,5 @@ Jellyfin is more mature, has native mobile/TV apps, supports music and books, ha
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Netflix Alternatives](/replace/netflix)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

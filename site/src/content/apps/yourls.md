@@ -217,5 +217,5 @@ YOURLS runs on whatever domain you configure via `YOURLS_SITE`. To use a short d
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
 - [HTTPS Setup for Self-Hosted Services](/foundations/https-everywhere)

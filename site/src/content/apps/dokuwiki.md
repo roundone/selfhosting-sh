@@ -3,7 +3,7 @@ title: "How to Self-Host DokuWiki with Docker"
 description: "Step-by-step guide to self-hosting DokuWiki with Docker. A flat-file wiki with zero database dependencies and simple setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - dokuwiki
 tags:

@@ -3,7 +3,7 @@ title: "Envoy vs Traefik: Which Proxy to Self-Host?"
 description: "Envoy vs Traefik compared for self-hosting. gRPC support, Docker integration, load balancing, observability, and which cloud-native proxy fits your setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - envoy
   - traefik

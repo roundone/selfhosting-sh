@@ -3,7 +3,7 @@ title: "Docmost vs BookStack: Which Wiki to Self-Host?"
 description: "Docmost vs BookStack compared for self-hosted documentation — modern collaboration versus proven library-style organization."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - docmost
   - bookstack

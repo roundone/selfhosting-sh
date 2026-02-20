@@ -3,7 +3,7 @@ title: "How to Self-Host Stable Diffusion WebUI"
 description: "Deploy AUTOMATIC1111's Stable Diffusion WebUI with Docker for self-hosted AI image generation. GPU setup and model guide."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - stable-diffusion-webui
 tags:

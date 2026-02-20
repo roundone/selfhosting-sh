@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to iCloud Drive"
 description: "Replace iCloud Drive with self-hosted file sync. Compare Nextcloud, Seafile, and Syncthing for Apple users going self-hosted."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
   - seafile

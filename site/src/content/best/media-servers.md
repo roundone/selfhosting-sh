@@ -249,5 +249,5 @@ Jellyfin wins because it scores highest across the board when you factor in that
 - [Self-Hosted Alternatives to Netflix](/replace/netflix)
 - [Self-Hosted Alternatives to Spotify](/replace/spotify)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

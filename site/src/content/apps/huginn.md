@@ -3,7 +3,7 @@ title: "How to Self-Host Huginn with Docker Compose"
 description: "Deploy Huginn with Docker Compose — a self-hosted agent system for monitoring the web, automating tasks, and acting on your behalf."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - huginn
 tags:

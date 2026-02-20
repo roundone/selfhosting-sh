@@ -623,7 +623,7 @@ myapp.example.com {
 
 ## Related
 
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Docker Networking](/foundations/docker-networking)
 - [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors)
 - [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)

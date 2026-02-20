@@ -3,7 +3,7 @@ title: "How to Self-Host vLLM with Docker Compose"
 description: "Deploy vLLM with Docker for high-throughput LLM serving. PagedAttention, continuous batching, and OpenAI-compatible API setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - vllm
 tags:

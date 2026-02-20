@@ -3,7 +3,7 @@ title: "Technitium vs Unbound: DNS Server Comparison"
 description: "Technitium DNS vs Unbound compared for self-hosted DNS. Recursive resolution, web UI, zone management, and which DNS server to choose."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - technitium
   - unbound

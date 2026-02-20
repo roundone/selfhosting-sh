@@ -3,7 +3,7 @@ title: "How to Self-Host Whisper with Docker Compose"
 description: "Deploy OpenAI's Whisper with Docker for private speech-to-text transcription. GPU acceleration and API setup guide."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - whisper
 tags:

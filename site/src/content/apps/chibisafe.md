@@ -128,7 +128,7 @@ ChibiSafe supports multi-user with role-based access:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 files.example.com {
@@ -214,4 +214,4 @@ Yes, via the API. Configure Flameshot to POST to the upload endpoint with your A
 - [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server)
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

@@ -249,5 +249,5 @@ If you're hosting email just for yourself and a family member, Mailu is the prag
 - [Best Self-Hosted Email Servers](/best/email)
 - [Replace Gmail](/replace/gmail)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
-- [Security Basics for Self-Hosting](/foundations/security)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Security Basics for Self-Hosting](/foundations/security-hardening)

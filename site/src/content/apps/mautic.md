@@ -252,7 +252,7 @@ Mautic supports Salesforce, SugarCRM, vTiger, and other CRMs via plugins:
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 mautic.example.com {
@@ -343,5 +343,5 @@ Yes. SES is the recommended SMTP relay for cost-effective high-volume sending. C
 - [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
 - [Self-Hosted Alternatives to ConvertKit](/replace/convertkit)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

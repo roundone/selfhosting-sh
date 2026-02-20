@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to GitHub Copilot"
 description: "Best self-hosted GitHub Copilot alternatives for private AI code completion. Tabby, Continue, and Ollama-powered setups."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - tabby
   - ollama

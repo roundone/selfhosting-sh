@@ -3,7 +3,7 @@ title: "How to Self-Host BookStack with Docker"
 description: "Step-by-step guide to self-hosting BookStack with Docker Compose — a wiki platform for organizing documentation and knowledge."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
 tags:
@@ -296,7 +296,7 @@ BookStack is the best self-hosted wiki for teams that want structured, organized
 
 ## Related
 
-- [Best Self-Hosted Note Taking & Knowledge](/best/note-taking-knowledge)
+- [Best Self-Hosted Note Taking & Knowledge](/best/note-taking)
 - [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
 - [BookStack vs Outline](/compare/bookstack-vs-outline)
 - [Replace Notion](/replace/notion)

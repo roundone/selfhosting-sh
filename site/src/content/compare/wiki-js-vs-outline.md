@@ -3,7 +3,7 @@ title: "Wiki.js vs Outline: Which to Self-Host?"
 description: "Wiki.js vs Outline compared — editors, collaboration, Git sync, and team features for self-hosted knowledge management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - wiki-js
   - outline

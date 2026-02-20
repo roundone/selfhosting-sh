@@ -3,7 +3,7 @@ title: "How to Self-Host XWiki with Docker Compose"
 description: "Deploy XWiki with Docker Compose and PostgreSQL. A full-featured enterprise wiki with structured data and application platform."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - xwiki
 tags:

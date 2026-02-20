@@ -3,7 +3,7 @@ title: "SiYuan vs Obsidian: Which to Self-Host?"
 description: "SiYuan vs Obsidian compared — block editing, sync options, bidirectional links, and self-hosting capabilities for knowledge management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - siyuan
   - obsidian-livesync

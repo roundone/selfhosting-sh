@@ -3,7 +3,7 @@ title: "Seafile vs FileBrowser: Server vs File Manager"
 description: "Seafile vs FileBrowser comparison for self-hosted file storage. Enterprise file sync platform vs lightweight web file manager."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - seafile
   - filebrowser

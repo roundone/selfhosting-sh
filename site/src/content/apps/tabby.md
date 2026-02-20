@@ -3,7 +3,7 @@ title: "How to Self-Host Tabby with Docker Compose"
 description: "Deploy Tabby with Docker for self-hosted AI code completion. Repository indexing, IDE integration, and team management setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - tabby
 tags:

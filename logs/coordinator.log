@@ -7561,3 +7561,77 @@ Instea..."
 [2026-02-20T19:19:44.058Z] SOCIAL 2026-02-20T19:19:44.058Z [social-poster] removed 1 posted items from queue (1564 remaining)
 [2026-02-20T19:19:44.058Z] SOCIAL 2026-02-20T19:19:44.058Z [social-poster] done — 1 attempted, 1 succeeded, 1564 remaining in queue
 [2026-02-20T19:19:44.063Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:21:33.129Z] AGENT marketing exited (code=124, duration: 3602s)
+[2026-02-20T19:21:33.129Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T19:21:33.130Z] PENDING marketing processing queued trigger
+[2026-02-20T19:21:33.130Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T19:24:43.881Z] STATUS running=0/4 writers=0/1 freeMem=7139MB agents=[none] paused=no
+[2026-02-20T19:24:43.882Z] RELEASES running check-releases.js
+[2026-02-20T19:24:43.883Z] SOCIAL running social-poster.js
+[2026-02-20T19:24:43.915Z] SOCIAL 2026-02-20T19:24:43.913Z [social-poster] starting
+[2026-02-20T19:24:43.920Z] RELEASES 2026-02-20T19:24:43.917Z [check-releases] starting
+[2026-02-20T19:24:43.920Z] RELEASES 2026-02-20T19:24:43.920Z [check-releases] checking 29 GitHub repos
+[2026-02-20T19:24:43.921Z] SOCIAL 2026-02-20T19:24:43.921Z [social-poster] queue has 1564 posts
+[2026-02-20T19:24:44.017Z] RELEASES 2026-02-20T19:24:44.017Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T19:24:44.362Z] SOCIAL 2026-02-20T19:24:44.362Z [social-poster] OK mastodon: posted "Storage cost comparison for self-hosters:
+
+☁️ iCloud 2TB: $1..."
+[2026-02-20T19:24:44.367Z] SOCIAL 2026-02-20T19:24:44.366Z [social-poster] removed 1 posted items from queue (1563 remaining)
+[2026-02-20T19:24:44.367Z] SOCIAL 2026-02-20T19:24:44.367Z [social-poster] done — 1 attempted, 1 succeeded, 1563 remaining in queue
+[2026-02-20T19:24:44.372Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:24:44.580Z] RELEASES 2026-02-20T19:24:44.580Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T19:24:45.190Z] RELEASES 2026-02-20T19:24:45.190Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T19:24:45.795Z] RELEASES 2026-02-20T19:24:45.795Z [check-releases]   crazy-max/diun → 200 but same version (v4.31.0)
+[2026-02-20T19:24:46.368Z] RELEASES 2026-02-20T19:24:46.368Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T19:24:46.923Z] RELEASES 2026-02-20T19:24:46.923Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T19:24:47.496Z] RELEASES 2026-02-20T19:24:47.496Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T19:24:48.049Z] RELEASES 2026-02-20T19:24:48.048Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T19:24:48.629Z] RELEASES 2026-02-20T19:24:48.629Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T19:24:49.209Z] RELEASES 2026-02-20T19:24:49.209Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T19:24:49.771Z] RELEASES 2026-02-20T19:24:49.771Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T19:24:50.376Z] RELEASES 2026-02-20T19:24:50.376Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T19:24:50.932Z] RELEASES 2026-02-20T19:24:50.931Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T19:24:51.507Z] RELEASES 2026-02-20T19:24:51.507Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T19:24:52.083Z] RELEASES 2026-02-20T19:24:52.083Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T19:24:52.655Z] RELEASES 2026-02-20T19:24:52.653Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T19:24:53.234Z] RELEASES 2026-02-20T19:24:53.234Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T19:24:53.797Z] RELEASES 2026-02-20T19:24:53.797Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T19:24:54.380Z] RELEASES 2026-02-20T19:24:54.379Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T19:24:54.941Z] RELEASES 2026-02-20T19:24:54.941Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T19:24:55.499Z] RELEASES 2026-02-20T19:24:55.499Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T19:24:56.058Z] RELEASES 2026-02-20T19:24:56.058Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T19:24:56.617Z] RELEASES 2026-02-20T19:24:56.617Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T19:24:57.200Z] RELEASES 2026-02-20T19:24:57.200Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T19:24:57.755Z] RELEASES 2026-02-20T19:24:57.755Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T19:24:58.316Z] RELEASES 2026-02-20T19:24:58.316Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T19:24:58.878Z] RELEASES 2026-02-20T19:24:58.878Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T19:24:59.444Z] RELEASES 2026-02-20T19:24:59.444Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T19:25:00.015Z] RELEASES 2026-02-20T19:25:00.015Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T19:25:00.516Z] RELEASES 2026-02-20T19:25:00.516Z [check-releases] checking 3 feeds
+[2026-02-20T19:25:00.575Z] RELEASES 2026-02-20T19:25:00.575Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T19:25:00.853Z] RELEASES 2026-02-20T19:25:00.853Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T19:25:01.172Z] RELEASES 2026-02-20T19:25:01.171Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T19:25:01.372Z] RELEASES 2026-02-20T19:25:01.372Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T19:25:01.377Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T19:26:33.255Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T19:26:33.256Z] AGENT marketing started (pid: 173007)
+[2026-02-20T19:29:43.921Z] STATUS running=1/4 writers=0/1 freeMem=6891MB agents=[marketing(191s)] paused=no
+[2026-02-20T19:29:43.921Z] SOCIAL running social-poster.js
+[2026-02-20T19:29:43.960Z] SOCIAL 2026-02-20T19:29:43.956Z [social-poster] starting
+[2026-02-20T19:29:43.971Z] SOCIAL 2026-02-20T19:29:43.971Z [social-poster] queue has 1563 posts
+[2026-02-20T19:29:44.209Z] SOCIAL 2026-02-20T19:29:44.209Z [social-poster] OK bluesky: posted "Storage math for self-hosters:
+
+4TB HDD: ~$80 one-time
+iClou..."
+[2026-02-20T19:29:44.213Z] SOCIAL 2026-02-20T19:29:44.213Z [social-poster] removed 1 posted items from queue (1562 remaining)
+[2026-02-20T19:29:44.214Z] SOCIAL 2026-02-20T19:29:44.213Z [social-poster] done — 1 attempted, 1 succeeded, 1562 remaining in queue
+[2026-02-20T19:29:44.219Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:34:44.000Z] STATUS running=1/4 writers=0/1 freeMem=6880MB agents=[marketing(491s)] paused=no
+[2026-02-20T19:34:44.000Z] SOCIAL running social-poster.js
+[2026-02-20T19:34:44.032Z] SOCIAL 2026-02-20T19:34:44.030Z [social-poster] starting
+[2026-02-20T19:34:44.042Z] SOCIAL 2026-02-20T19:34:44.042Z [social-poster] queue has 2536 posts
+[2026-02-20T19:34:44.042Z] SOCIAL 2026-02-20T19:34:44.042Z [social-poster] done — 0 attempted, 0 succeeded, 2536 remaining in queue
+[2026-02-20T19:34:44.045Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:35:23.134Z] INBOX operations.md modified → operations
+[2026-02-20T19:35:23.134Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-20T19:35:23.136Z] AGENT operations started (pid: 180362)

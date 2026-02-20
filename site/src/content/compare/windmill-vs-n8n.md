@@ -3,7 +3,7 @@ title: "Windmill vs n8n: Which Automation Platform to Self-Host?"
 description: "Comparing Windmill and n8n for self-hosted automation — developer workflows, visual editors, Docker setup, and which to pick."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - windmill
   - n8n

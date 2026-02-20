@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to OneNote"
 description: "Best self-hosted OneNote alternatives — Joplin, Trilium, BookStack, and more for private note-taking without Microsoft's cloud."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - joplin-server
   - trilium

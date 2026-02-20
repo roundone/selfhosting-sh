@@ -3,7 +3,7 @@ title: "How to Self-Host LocalAI with Docker Compose"
 description: "Deploy LocalAI with Docker Compose for private AI inference. Text, image generation, audio transcription, and OpenAI API compatibility."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - localai
 tags:

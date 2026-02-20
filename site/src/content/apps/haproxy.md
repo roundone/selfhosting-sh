@@ -3,7 +3,7 @@ title: "How to Self-Host HAProxy with Docker Compose"
 description: "Deploy HAProxy with Docker Compose as a reverse proxy and load balancer. Includes config, stats dashboard, SSL termination, and troubleshooting."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - haproxy
 tags:

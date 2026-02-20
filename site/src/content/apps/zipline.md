@@ -184,7 +184,7 @@ Zipline supports custom themes. Place theme files in the `./themes` directory an
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 zipline.example.com {
@@ -274,5 +274,5 @@ No direct migration tool exists. Re-upload files to Zipline or manually copy the
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [PairDrop vs Send](/compare/pairdrop-vs-send)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

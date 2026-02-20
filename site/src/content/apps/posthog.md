@@ -235,4 +235,4 @@ For most self-hosters who just want website analytics (pageviews, referrers, top
 - [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
 - [Best Self-Hosted Analytics](/best/analytics)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

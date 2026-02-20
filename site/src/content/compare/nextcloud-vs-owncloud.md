@@ -3,7 +3,7 @@ title: "Nextcloud vs ownCloud: Which File Server to Use?"
 description: "Nextcloud vs ownCloud comparison for self-hosted file sync. We compare features, performance, licensing, and which to choose."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
   - owncloud

@@ -3,7 +3,7 @@ title: "Envoy vs Caddy: Which Proxy to Self-Host?"
 description: "Envoy vs Caddy compared for self-hosting. Automatic HTTPS, gRPC support, configuration complexity, and which reverse proxy fits your homelab."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - envoy
   - caddy

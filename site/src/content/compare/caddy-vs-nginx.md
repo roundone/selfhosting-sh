@@ -3,7 +3,7 @@ title: "Caddy vs Nginx: Which Web Server?"
 description: "Caddy vs Nginx compared for self-hosting. Automatic HTTPS and simple config versus battle-tested performance and maximum control."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - caddy
   - nginx

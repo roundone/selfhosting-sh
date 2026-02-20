@@ -3,7 +3,7 @@ title: "How to Self-Host SiYuan with Docker Compose"
 description: "Deploy SiYuan with Docker — a local-first note-taking app with block-level editing, bidirectional links, and graph view."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - siyuan
 tags:

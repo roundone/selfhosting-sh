@@ -3,7 +3,7 @@ title: "Open WebUI vs Text Generation WebUI: Compared"
 description: "Open WebUI vs Oobabooga's Text Generation WebUI compared for self-hosted LLM interfaces. Features, GPU usage, and setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - open-webui
   - text-generation-webui

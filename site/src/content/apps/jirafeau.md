@@ -123,7 +123,7 @@ Access `your-domain/admin.php` to:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 share.example.com {

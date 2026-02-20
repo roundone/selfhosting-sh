@@ -3,7 +3,7 @@ title: "Envoy vs HAProxy: Which Proxy to Self-Host?"
 description: "Envoy vs HAProxy compared for self-hosting. Load balancing, TCP proxying, observability, configuration, and which production-grade proxy to choose."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - envoy
   - haproxy

@@ -3,7 +3,7 @@ title: "How to Self-Host Flowise with Docker Compose"
 description: "Deploy Flowise with Docker for visual AI workflow building. No-code chatbots, RAG pipelines, and LLM agent creation guide."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - flowise
 tags:

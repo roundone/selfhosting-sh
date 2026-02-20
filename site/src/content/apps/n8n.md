@@ -3,7 +3,7 @@ title: "How to Self-Host n8n with Docker Compose"
 description: "Deploy n8n with Docker Compose — a powerful self-hosted workflow automation platform that replaces Zapier, Make, and IFTTT."
 date: 2026-02-16
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
 tags:

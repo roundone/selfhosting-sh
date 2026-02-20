@@ -3,7 +3,7 @@ title: "Ollama vs LocalAI: Which Should You Self-Host?"
 description: "Ollama vs LocalAI compared for self-hosted AI inference. Features, GPU support, API compatibility, and resource usage side by side."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - ollama
   - localai

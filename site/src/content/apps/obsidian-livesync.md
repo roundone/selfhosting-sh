@@ -3,7 +3,7 @@ title: "How to Self-Host Obsidian Sync with CouchDB"
 description: "Set up self-hosted Obsidian sync with CouchDB and the LiveSync plugin — sync your vault across devices without Obsidian's paid plan."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - obsidian-livesync
 tags:

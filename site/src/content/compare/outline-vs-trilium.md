@@ -3,7 +3,7 @@ title: "Outline vs Trilium: Which to Self-Host?"
 description: "Outline vs TriliumNext compared for self-hosted knowledge management — team collaboration versus personal knowledge base."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - trilium

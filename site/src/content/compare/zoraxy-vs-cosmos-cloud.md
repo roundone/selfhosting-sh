@@ -3,7 +3,7 @@ title: "Zoraxy vs Cosmos Cloud: Which to Self-Host?"
 description: "Zoraxy vs Cosmos Cloud compared for self-hosting. Both bundle reverse proxying with extra features. Find out which all-in-one platform fits your homelab."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - zoraxy
   - cosmos-cloud

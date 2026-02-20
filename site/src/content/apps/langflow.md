@@ -3,7 +3,7 @@ title: "How to Self-Host Langflow with Docker Compose"
 description: "Deploy Langflow with Docker for visual AI workflow building. Multi-agent orchestration, Python components, and API deployment."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - langflow
 tags:

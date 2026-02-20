@@ -3,7 +3,7 @@ title: "Zoraxy vs Nginx Proxy Manager"
 description: "Zoraxy vs Nginx Proxy Manager compared for self-hosting. Features, performance, Docker setup, and which GUI reverse proxy to choose for your homelab."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - zoraxy
   - nginx-proxy-manager

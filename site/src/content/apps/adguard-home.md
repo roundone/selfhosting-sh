@@ -3,7 +3,7 @@ title: "How to Self-Host AdGuard Home with Docker"
 description: "Set up AdGuard Home as a network-wide ad blocker and DNS server with Docker Compose. Modern Pi-hole alternative."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - adguard-home
 tags: ["self-hosted", "ad-blocking", "adguard-home", "docker", "dns"]
@@ -303,7 +303,7 @@ For a new deployment, go with AdGuard Home. The built-in encrypted DNS, simpler 
 
 ## Related
 
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking-dns)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
 - [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
 - [How to Self-Host Pi-hole](/apps/pi-hole)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

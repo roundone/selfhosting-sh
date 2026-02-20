@@ -3,7 +3,7 @@ title: "How to Self-Host Technitium DNS with Docker"
 description: "Self-host Technitium DNS Server with Docker Compose — browser-based DNS management with ad blocking, DoH/DoT/DoQ, zone hosting, DHCP, and clustering."
 date: 2026-02-16
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - technitium
 tags:

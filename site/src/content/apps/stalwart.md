@@ -186,7 +186,7 @@ ports:
   - "127.0.0.1:8080:8080"  # Through reverse proxy — Web Admin
 ```
 
-Then proxy `https://mail.example.com` to `http://localhost:8080` in your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy)).
+Then proxy `https://mail.example.com` to `http://localhost:8080` in your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)).
 
 ## Backup
 
@@ -256,5 +256,5 @@ Fair warning: Stalwart is newer than Mailu and Mailcow, so the community is smal
 - [Best Self-Hosted Email Servers](/best/email)
 - [Self-Hosted Alternatives to Gmail](/replace/gmail)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

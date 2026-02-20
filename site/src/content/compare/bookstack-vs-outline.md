@@ -3,7 +3,7 @@ title: "BookStack vs Outline: Which to Self-Host?"
 description: "BookStack vs Outline compared — structure, collaboration, authentication, and team features for self-hosted knowledge management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
   - outline

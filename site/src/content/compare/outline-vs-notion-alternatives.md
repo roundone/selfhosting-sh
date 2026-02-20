@@ -3,7 +3,7 @@ title: "Outline vs Other Notion Alternatives: Compared"
 description: "Outline compared to AppFlowy, AFFiNE, BookStack, and other self-hosted Notion alternatives — features, maturity, and best use cases."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - appflowy

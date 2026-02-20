@@ -3,7 +3,7 @@ title: "Docmost vs Outline: Which Wiki to Self-Host?"
 description: "Docmost vs Outline compared for self-hosted team wikis — setup complexity, collaboration features, and authentication differences."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - docmost
   - outline

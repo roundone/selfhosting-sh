@@ -146,7 +146,7 @@ Example Nginx Proxy Manager setup:
 - **Forward Port:** 5000
 - Enable **Websockets Support** for real-time reading progress
 
-[Reverse Proxy Setup](/foundations/reverse-proxy)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -232,5 +232,5 @@ Kavita supports more formats (EPUB, PDF in addition to comics) and has a built-i
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Kindle Alternatives](/replace/kindle)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

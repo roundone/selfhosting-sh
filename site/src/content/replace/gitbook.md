@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to GitBook"
 description: "Best self-hosted alternatives to GitBook for documentation. Wiki.js, BookStack, Docusaurus, and MkDocs compared."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - wikijs
   - bookstack

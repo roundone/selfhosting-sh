@@ -189,7 +189,7 @@ HyperKitty provides a web-based archive of all mailing list discussions:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 lists.example.com {
@@ -265,4 +265,4 @@ For outbound email, yes — configure your MTA to relay through SES. For inbound
 - [Best Self-Hosted Newsletter Software](/best/newsletters)
 - [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

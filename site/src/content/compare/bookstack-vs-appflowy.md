@@ -3,7 +3,7 @@ title: "BookStack vs AppFlowy: Which to Self-Host?"
 description: "BookStack vs AppFlowy compared for self-hosted knowledge tools — mature team wiki versus emerging Notion alternative with databases."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
   - appflowy

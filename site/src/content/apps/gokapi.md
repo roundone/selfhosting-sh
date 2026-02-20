@@ -137,7 +137,7 @@ Gokapi supports OAuth2 and OIDC for admin authentication, integrating with Authe
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 share.example.com {

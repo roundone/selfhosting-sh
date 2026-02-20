@@ -183,7 +183,7 @@ The used enterprise server is the most expensive option over 3 years despite bei
 
 Regardless of which hardware you choose:
 
-1. **Install an OS.** Ubuntu Server 24.04 LTS or Debian 12 are the standards. See our [Linux Basics](/foundations/linux-basics) guide.
+1. **Install an OS.** Ubuntu Server 24.04 LTS or Debian 12 are the standards. See our [Linux Basics](/foundations/linux-basics-self-hosting) guide.
 2. **Install Docker.** See [Docker Compose Basics](/foundations/docker-compose-basics).
 3. **Set up your first app.** [Pi-hole](/apps/pi-hole) is the classic first self-hosted service — immediate value, minimal resources.
 4. **Set up remote access.** [Tailscale](/apps/headscale) or [Cloudflare Tunnel](/apps/cloudflare-tunnel) — access your server from anywhere.

@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to NextDNS"
 description: "Best self-hosted DNS ad blockers to replace NextDNS. Compare Pi-hole, AdGuard Home, Blocky, and Technitium with setup details."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - adguard-home

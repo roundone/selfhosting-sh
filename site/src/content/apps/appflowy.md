@@ -3,7 +3,7 @@ title: "How to Self-Host AppFlowy with Docker Compose"
 description: "Deploy AppFlowy with Docker — an open-source Notion alternative with documents, databases, kanban boards, and real-time collaboration."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - appflowy
 tags:

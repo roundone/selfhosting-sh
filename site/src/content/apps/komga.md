@@ -173,7 +173,7 @@ location / {
 }
 ```
 
-[Reverse Proxy Setup](/foundations/reverse-proxy)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -259,5 +259,5 @@ Use [ComicTagger](https://github.com/comictagger/comictagger) to embed ComicInfo
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Kindle Alternatives](/replace/kindle)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

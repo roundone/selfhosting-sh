@@ -166,7 +166,7 @@ For virtualization, see [Proxmox Hardware Guide](/hardware/proxmox-hardware-guid
 4. **Set a static IP** in your router's DHCP settings or via netplan
 5. **Install Docker and Docker Compose** ([guide](/foundations/docker-compose-basics))
 6. **Install your first app** — we recommend [Portainer](/apps/portainer) for a Docker management GUI, then [Pi-hole](/apps/pihole) as your first real service
-7. **Set up a reverse proxy** — [Nginx Proxy Manager](/apps/nginx-proxy-manager) is the easiest. See our [Reverse Proxy Setup guide](/foundations/reverse-proxy)
+7. **Set up a reverse proxy** — [Nginx Proxy Manager](/apps/nginx-proxy-manager) is the easiest. See our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained)
 8. **Configure backups** — [Backup Strategy](/foundations/backup-strategy)
 
 ## Power Consumption and Running Costs

@@ -3,7 +3,7 @@ title: "Grafana vs Uptime Kuma: Which to Self-Host?"
 description: "Grafana vs Uptime Kuma comparison for self-hosting. Full monitoring stack vs simple uptime monitoring, and which tool fits your needs better."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - grafana
   - uptime-kuma

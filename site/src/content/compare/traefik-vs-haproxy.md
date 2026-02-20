@@ -3,7 +3,7 @@ title: "Traefik vs HAProxy: Reverse Proxy Showdown"
 description: "Traefik vs HAProxy compared for self-hosting. Docker-native auto-discovery versus production-grade load balancing — which reverse proxy fits your setup?"
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - traefik
   - haproxy

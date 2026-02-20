@@ -3,7 +3,7 @@ title: "How to Self-Host Traefik with Docker"
 description: "Step-by-step guide to deploying Traefik v3 with Docker Compose for automatic HTTPS via Let's Encrypt, Docker label-based routing, and middleware setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - traefik
 tags:

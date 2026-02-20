@@ -69,7 +69,7 @@ ports:
 
 The left side is the host port (changeable). The right side is the container port (fixed by the application).
 
-**Option C: Use a random host port.** If you are using a [reverse proxy](/foundations/reverse-proxy), you do not need to expose a fixed host port at all. Remove the `ports:` section and access the container through Docker's internal network.
+**Option C: Use a random host port.** If you are using a [reverse proxy](/foundations/reverse-proxy-explained), you do not need to expose a fixed host port at all. Remove the `ports:` section and access the container through Docker's internal network.
 
 ---
 
@@ -206,7 +206,7 @@ network my_proxy_network declared as external, but could not be found
 
 ### The Cause
 
-Your Compose file references an external Docker network that does not exist yet. External networks are created outside of the Compose file and shared between multiple Compose stacks — commonly used when a [reverse proxy](/foundations/reverse-proxy) needs to reach backend containers.
+Your Compose file references an external Docker network that does not exist yet. External networks are created outside of the Compose file and shared between multiple Compose stacks — commonly used when a [reverse proxy](/foundations/reverse-proxy-explained) needs to reach backend containers.
 
 ### The Fix
 
@@ -668,5 +668,5 @@ These practices prevent most of the errors above:
 - [Docker Networking](/foundations/docker-networking)
 - [How to Self-Host Portainer](/apps/portainer)
 - [How to Self-Host Dockge](/apps/dockge)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Getting Started with Self-Hosting](/foundations/getting-started)

@@ -3,7 +3,7 @@ title: "CoreDNS vs Technitium: DNS Server Comparison"
 description: "CoreDNS vs Technitium compared for self-hosted DNS. Plugin-based flexibility vs all-in-one DNS with a web UI — which fits your setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - coredns
   - technitium

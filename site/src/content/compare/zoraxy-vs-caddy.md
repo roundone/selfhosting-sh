@@ -3,7 +3,7 @@ title: "Zoraxy vs Caddy: Which Proxy to Self-Host?"
 description: "Zoraxy vs Caddy compared for self-hosting. Web UI vs Caddyfile, automatic HTTPS, Docker integration, and which reverse proxy to pick for your homelab."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - zoraxy
   - caddy

@@ -3,7 +3,7 @@ title: "How to Self-Host Beszel with Docker Compose"
 description: "Step-by-step guide to self-hosting Beszel with Docker for lightweight multi-server monitoring and alerting."
 date: 2026-02-17
 dateUpdated: 2026-02-17
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - beszel
 tags:

@@ -3,7 +3,7 @@ title: "How to Self-Host Seafile with Docker"
 description: "Set up Seafile file sync and share server with Docker Compose including MariaDB for a fast, reliable Dropbox alternative."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - seafile
 tags:
@@ -471,7 +471,7 @@ For users coming from [Syncthing](/apps/syncthing) who want a central server wit
 
 ## Related
 
-- [Best Self-Hosted File Sync & Storage](/best/file-sync-storage)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync)
 - [How to Self-Host Nextcloud](/apps/nextcloud)
 - [How to Self-Host Syncthing](/apps/syncthing)
 - [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)

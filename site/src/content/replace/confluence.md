@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Confluence"
 description: "Best self-hosted Confluence alternatives — Outline, BookStack, Wiki.js, and more for team documentation without Atlassian's cloud."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - bookstack

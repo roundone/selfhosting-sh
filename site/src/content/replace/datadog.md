@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Datadog"
 description: "Best self-hosted monitoring tools to replace Datadog for server metrics, alerting, and infrastructure observability without per-host pricing."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - grafana
   - prometheus

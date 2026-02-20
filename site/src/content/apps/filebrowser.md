@@ -3,7 +3,7 @@ title: "How to Self-Host Filebrowser with Docker"
 description: "Deploy Filebrowser with Docker Compose for a lightweight web-based file manager to browse, upload, and share server files."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - filebrowser
 tags:

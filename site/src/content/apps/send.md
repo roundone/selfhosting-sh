@@ -154,7 +154,7 @@ docker exec send du -sh /uploads
 
 ## Reverse Proxy
 
-Send **requires** HTTPS. The browser-side encryption depends on a secure context. Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Send **requires** HTTPS. The browser-side encryption depends on a secure context. Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 send.example.com {
@@ -244,4 +244,4 @@ Not natively. Send has no authentication. To restrict access, put it behind a re
 - [Self-Hosted Alternatives to AirDrop](/replace/airdrop)
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

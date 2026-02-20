@@ -3,7 +3,7 @@ title: "Best Self-Hosted Ad Blockers in 2026"
 description: "The best self-hosted DNS ad blockers compared — Pi-hole, AdGuard Home, Blocky, and Technitium ranked with features, setup, and recommendations."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - adguard-home

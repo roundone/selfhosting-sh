@@ -157,7 +157,7 @@ Standard reverse proxy setup. Point your proxy to port 8083.
 
 If using Kobo sync behind a reverse proxy, ensure the proxy passes the `X-Forwarded-For` header and supports WebSocket connections.
 
-[Reverse Proxy Setup](/foundations/reverse-proxy)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 ## Backup
 
@@ -246,5 +246,5 @@ Enable uploads in the admin settings. Users with upload permission can add books
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Self-Hosted Kindle Alternatives](/replace/kindle)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

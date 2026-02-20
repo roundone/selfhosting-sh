@@ -3,7 +3,7 @@ title: "Tabby vs Continue: Self-Hosted Code AI Compared"
 description: "Tabby vs Continue compared for self-hosted AI code completion. Architecture, IDE support, model options, and setup complexity."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - tabby
 tags:

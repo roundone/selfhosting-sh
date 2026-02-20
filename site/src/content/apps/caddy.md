@@ -3,7 +3,7 @@ title: "How to Self-Host Caddy with Docker"
 description: "Complete guide to deploying Caddy with Docker Compose as a reverse proxy with automatic HTTPS, Caddyfile configuration, and TLS certificate management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - caddy
 tags:
@@ -498,7 +498,7 @@ Yes. The `caddy:2.10.2-alpine` image supports arm64. Caddy's low resource usage 
 
 - [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
 - [How to Self-Host Traefik](/apps/traefik)
-- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy-ssl)
+- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy)
 - [NPM vs Caddy Comparison](/compare/nginx-proxy-manager-vs-caddy)
 - [Traefik vs Caddy Comparison](/compare/traefik-vs-caddy)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

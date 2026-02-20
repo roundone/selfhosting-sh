@@ -3,7 +3,7 @@ title: "How to Self-Host Zoraxy with Docker"
 description: "Deploy Zoraxy reverse proxy with Docker Compose for web UI management, automatic HTTPS, stream proxying, uptime monitoring, and Docker integration."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - zoraxy
 tags:

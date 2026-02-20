@@ -3,7 +3,7 @@ title: "How to Self-Host MinIO with Docker Compose"
 description: "Deploy MinIO for S3-compatible object storage with Docker Compose. Includes setup, configuration, and migration advice."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - minio
 tags:
@@ -203,7 +203,7 @@ For Nginx Proxy Manager, create two proxy hosts:
 - `s3.yourdomain.com` → `minio:9000`
 - `console.yourdomain.com` → `minio:9001`
 
-Enable WebSocket support for the console. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy).
+Enable WebSocket support for the console. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
 
 ## Backup
 
@@ -307,5 +307,5 @@ MinIO shifted focus to its commercial enterprise product and stopped supporting 
 - [Self-Hosted Google Drive Alternatives](/replace/google-drive)
 - [Self-Hosted Dropbox Alternatives](/replace/dropbox)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

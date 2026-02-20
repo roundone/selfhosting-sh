@@ -3,7 +3,7 @@ title: "Best Self-Hosted Note Taking Apps in 2026"
 description: "The best self-hosted note-taking and knowledge management apps compared — Outline, BookStack, Trilium, Joplin, and more ranked."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - bookstack

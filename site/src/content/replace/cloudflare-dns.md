@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Cloudflare DNS"
 description: "Best self-hosted alternatives to Cloudflare DNS (1.1.1.1) — Pi-hole, AdGuard Home, Blocky, and Technitium compared with setup links."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - adguard-home

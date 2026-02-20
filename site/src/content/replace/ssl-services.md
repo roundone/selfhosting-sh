@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Paid SSL Services"
 description: "Replace paid SSL certificate providers with free, automated certificate management using Caddy, Traefik, Nginx Proxy Manager, or Certbot."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - caddy
   - traefik

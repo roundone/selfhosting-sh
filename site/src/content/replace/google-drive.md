@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Google Drive"
 description: "Replace Google Drive with self-hosted file sync. Compare Nextcloud, Seafile, and Syncthing for storage, sharing, and privacy."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
   - seafile

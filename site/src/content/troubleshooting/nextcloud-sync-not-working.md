@@ -3,7 +3,7 @@ title: "Nextcloud Sync Not Working: Fix Guide"
 description: "Fix Nextcloud desktop and mobile sync issues including file locking, WebDAV errors, slow uploads, and reverse proxy configuration problems."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
 tags: ["troubleshooting", "nextcloud", "sync", "webdav", "docker"]
@@ -850,7 +850,7 @@ docker exec -u www-data <nextcloud_container> php occ config:system:set memcache
 
 - [How to Self-Host Nextcloud](/apps/nextcloud)
 - [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors)
 - [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

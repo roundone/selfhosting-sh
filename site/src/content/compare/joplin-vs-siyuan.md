@@ -3,7 +3,7 @@ title: "Joplin vs SiYuan: Which to Self-Host?"
 description: "Joplin Server vs SiYuan compared for self-hosted note taking — encrypted Markdown sync versus block-based knowledge management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - joplin-server
   - siyuan

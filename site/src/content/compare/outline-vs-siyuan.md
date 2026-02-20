@@ -3,7 +3,7 @@ title: "Outline vs SiYuan: Which to Self-Host?"
 description: "Outline vs SiYuan compared for self-hosted knowledge management — team wiki versus personal block-based note system."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - siyuan

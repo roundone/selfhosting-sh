@@ -3,7 +3,7 @@ title: "Blocky vs Pi-hole: Lightweight DNS Blocking"
 description: "Blocky vs Pi-hole compared for DNS-level ad blocking. Resource usage, configuration, features, and which DNS blocker fits your setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - blocky
   - pi-hole

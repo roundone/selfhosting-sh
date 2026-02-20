@@ -237,7 +237,7 @@ FIREZONE_NO_TELEMETRY=true
 
 Firezone Gateways don't serve a web UI — the admin interface is the cloud-hosted portal at `app.firezone.dev`. No reverse proxy configuration is needed for the gateway itself.
 
-If you're using Firezone to provide access to services behind a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik), define those services as Resources in the admin portal and create policies to control access. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy).
+If you're using Firezone to provide access to services behind a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik), define those services as Resources in the admin portal and create policies to control access. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
 
 ## Backup
 
@@ -353,5 +353,5 @@ Existing tunnels continue to work — the data plane is peer-to-peer. However, n
 - [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
 - [Self-Hosted NordVPN Alternatives](/replace/nordvpn)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

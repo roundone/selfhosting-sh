@@ -3,7 +3,7 @@ title: "How to Self-Host Outline with Docker Compose"
 description: "Deploy Outline wiki with Docker Compose — a fast, modern knowledge base with real-time collaboration and Markdown support."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
 tags:

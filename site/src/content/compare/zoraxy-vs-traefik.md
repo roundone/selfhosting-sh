@@ -3,7 +3,7 @@ title: "Zoraxy vs Traefik: Which Proxy to Self-Host?"
 description: "Zoraxy vs Traefik compared for self-hosting. Web UI vs Docker labels, Docker integration, SSL management, and which reverse proxy fits your homelab."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - zoraxy
   - traefik

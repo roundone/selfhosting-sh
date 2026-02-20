@@ -3,7 +3,7 @@ title: "Blocky vs Technitium: Which DNS Server?"
 description: "Blocky vs Technitium DNS compared — config-as-code vs web UI, features, resource usage, and which self-hosted DNS solution fits your setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - blocky
   - technitium

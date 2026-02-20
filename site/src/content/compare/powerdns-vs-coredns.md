@@ -3,7 +3,7 @@ title: "PowerDNS vs CoreDNS: Authoritative DNS Compared"
 description: "PowerDNS vs CoreDNS compared for self-hosted DNS. Authoritative serving, API management, database backends, and which DNS server to choose."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - powerdns
   - coredns

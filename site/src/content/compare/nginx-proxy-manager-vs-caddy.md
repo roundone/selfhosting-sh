@@ -3,7 +3,7 @@ title: "Nginx Proxy Manager vs Caddy"
 description: "Nginx Proxy Manager vs Caddy compared for self-hosting. GUI-based proxy management versus simple Caddyfile config with automatic HTTPS."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - nginx-proxy-manager
   - caddy

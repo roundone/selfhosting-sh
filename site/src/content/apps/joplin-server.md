@@ -3,7 +3,7 @@ title: "How to Self-Host Joplin Server with Docker"
 description: "Deploy Joplin Server with Docker Compose — sync your Joplin notes across devices with your own private server and end-to-end encryption."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - joplin-server
 tags:

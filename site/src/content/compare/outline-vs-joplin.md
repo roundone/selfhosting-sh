@@ -3,7 +3,7 @@ title: "Outline vs Joplin: Which to Self-Host?"
 description: "Outline vs Joplin Server compared for self-hosted notes — team knowledge base versus encrypted personal notebook sync."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - outline
   - joplin-server

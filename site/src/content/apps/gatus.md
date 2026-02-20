@@ -3,7 +3,7 @@ title: "How to Self-Host Gatus with Docker Compose"
 description: "Step-by-step guide to self-hosting Gatus with Docker Compose for automated endpoint monitoring and status pages."
 date: 2026-02-17
 dateUpdated: 2026-02-17
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - gatus
 tags:

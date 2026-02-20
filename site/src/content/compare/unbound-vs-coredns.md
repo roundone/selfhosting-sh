@@ -3,7 +3,7 @@ title: "Unbound vs CoreDNS: Which DNS Resolver?"
 description: "Unbound vs CoreDNS compared for self-hosted DNS resolution. Recursive resolving, caching, performance, and which to choose for your setup."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - unbound
   - coredns

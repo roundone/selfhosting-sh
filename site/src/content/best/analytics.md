@@ -194,7 +194,7 @@ For most self-hosters running a blog, documentation site, or small web applicati
 - [Plausible vs Umami: Which Should You Self-Host?](/compare/plausible-vs-umami)
 - [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)
 - [Getting Started with Self-Hosting](/foundations/getting-started)
 - [Best Self-Hosted Monitoring Tools](/best/monitoring)

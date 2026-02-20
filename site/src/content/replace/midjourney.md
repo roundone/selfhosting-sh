@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Midjourney"
 description: "Best self-hosted Midjourney alternatives for AI image generation. Stable Diffusion, ComfyUI, and FLUX running on your own hardware."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - stable-diffusion-webui
   - comfyui

@@ -3,7 +3,7 @@ title: "Pi-hole vs Blocky: Which DNS Ad Blocker?"
 description: "Pi-hole vs Blocky compared — features, resource usage, configuration approach, and which DNS ad blocker suits your self-hosting setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - blocky

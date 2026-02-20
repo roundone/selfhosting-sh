@@ -3,7 +3,7 @@ title: "How to Self-Host ownCloud oCIS with Docker"
 description: "Deploy ownCloud Infinite Scale with Docker Compose. Single container, no database required, fast file sync with Spaces."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - owncloud
 tags:

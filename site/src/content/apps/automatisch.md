@@ -3,7 +3,7 @@ title: "How to Self-Host Automatisch with Docker Compose"
 description: "Deploy Automatisch with Docker Compose — an open-source business automation tool and self-hosted alternative to Zapier."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - automatisch
 tags:

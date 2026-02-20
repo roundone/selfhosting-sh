@@ -3,7 +3,7 @@ title: "Trilium vs Joplin: Which to Self-Host?"
 description: "Trilium Notes vs Joplin compared — knowledge management features, sync, editors, and use cases for self-hosted note-taking."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - trilium
   - joplin-server

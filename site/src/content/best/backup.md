@@ -191,5 +191,5 @@ We evaluated each tool on: reliability (does restore actually work?), encryption
 - [Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Volumes & Bind Mounts](/foundations/docker-volumes)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
 - [Getting Started with Self-Hosting](/foundations/getting-started)

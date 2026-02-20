@@ -3,7 +3,7 @@ title: "Automatisch vs n8n: Which Automation Tool to Self-Host?"
 description: "Comparing Automatisch and n8n for self-hosted workflow automation — features, licensing, Docker setup, and which to choose."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - automatisch
   - n8n

@@ -3,7 +3,7 @@ title: "Best Self-Hosted Wiki Software in 2026"
 description: "The best self-hosted wiki platforms compared. Wiki.js, BookStack, DokuWiki, MediaWiki, XWiki, Outline, and Docmost ranked."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - wikijs
   - bookstack

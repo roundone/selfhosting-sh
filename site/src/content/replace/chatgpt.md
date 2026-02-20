@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to ChatGPT"
 description: "Best self-hosted ChatGPT alternatives for private AI chat. Run LLMs locally with Ollama, Open WebUI, and more."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - ollama
   - open-webui

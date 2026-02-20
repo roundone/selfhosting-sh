@@ -3,7 +3,7 @@ title: "Ollama vs vLLM: Which Should You Self-Host?"
 description: "Ollama vs vLLM compared for self-hosted LLM inference. Ease of use vs throughput, GPU requirements, and deployment scenarios."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - ollama
   - vllm

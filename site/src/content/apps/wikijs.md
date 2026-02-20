@@ -3,7 +3,7 @@ title: "How to Self-Host Wiki.js with Docker Compose"
 description: "Step-by-step guide to self-hosting Wiki.js with Docker Compose and PostgreSQL for a modern, feature-rich team wiki."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - wikijs
 tags:

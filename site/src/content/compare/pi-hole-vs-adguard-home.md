@@ -3,7 +3,7 @@ title: "Pi-hole vs AdGuard Home: Which Ad Blocker?"
 description: "Pi-hole vs AdGuard Home compared — features, performance, setup complexity, and which network-wide ad blocker you should self-host."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - adguard-home

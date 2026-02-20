@@ -3,7 +3,7 @@ title: "n8n vs Node-RED: Which Automation Tool to Self-Host?"
 description: "Comparing n8n and Node-RED for self-hosted workflow automation — features, setup complexity, performance, and which to choose."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
   - node-red

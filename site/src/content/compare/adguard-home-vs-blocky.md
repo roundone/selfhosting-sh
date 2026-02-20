@@ -3,7 +3,7 @@ title: "AdGuard Home vs Blocky: Which DNS Ad Blocker?"
 description: "AdGuard Home vs Blocky compared — features, UI, resource usage, encrypted DNS, and which self-hosted DNS ad blocker fits your setup."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - adguard-home
   - blocky

@@ -3,7 +3,7 @@ title: "Envoy vs Nginx: Which Proxy to Self-Host?"
 description: "Envoy vs Nginx compared for self-hosting. Performance, gRPC support, configuration, observability, and which proxy fits your infrastructure needs."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - envoy
   - nginx

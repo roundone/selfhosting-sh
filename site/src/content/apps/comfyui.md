@@ -3,7 +3,7 @@ title: "How to Self-Host ComfyUI with Docker Compose"
 description: "Deploy ComfyUI with Docker for node-based AI image generation. Workflow editor, custom nodes, and GPU setup guide."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - comfyui
 tags:

@@ -101,5 +101,5 @@ Omnivore was an open-source read-later app, but it was acquired by ElevenLabs in
 - [How to Self-Host Wallabag](/apps/wallabag)
 - [How to Self-Host Linkwarden](/apps/linkwarden)
 - [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag)
-- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks)
+- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

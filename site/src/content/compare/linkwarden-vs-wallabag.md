@@ -108,6 +108,6 @@ They solve different problems. **Linkwarden** is a bookmark manager with archiva
 
 - [How to Self-Host Linkwarden](/apps/linkwarden)
 - [How to Self-Host Wallabag](/apps/wallabag)
-- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks)
+- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later)
 - [Replace Pocket with Self-Hosted Tools](/replace/pocket)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Notion for Teams"
 description: "Best self-hosted Notion alternatives for team wikis and knowledge bases. Outline, Wiki.js, BookStack, and Docmost compared."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - outline
   - wikijs

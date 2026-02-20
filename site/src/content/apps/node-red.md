@@ -3,7 +3,7 @@ title: "How to Self-Host Node-RED with Docker Compose"
 description: "Deploy Node-RED with Docker Compose — a flow-based programming tool for wiring together IoT devices, APIs, and online services."
 date: 2026-02-16
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - node-red
 tags:

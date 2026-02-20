@@ -3,7 +3,7 @@ title: "Seafile vs Syncthing: Server vs Peer-to-Peer"
 description: "Seafile vs Syncthing comparison for self-hosted file sync. Compare architecture, performance, sharing, and which fits your needs."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - seafile
   - syncthing

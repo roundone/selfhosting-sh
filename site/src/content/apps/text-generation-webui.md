@@ -3,7 +3,7 @@ title: "How to Self-Host Text Generation WebUI"
 description: "Deploy Oobabooga's Text Generation WebUI for local LLM inference. GGUF, GPTQ, and LoRA training with Docker setup guide."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - text-generation-webui
 tags:

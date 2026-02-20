@@ -160,7 +160,7 @@ phpList supports custom subscriber attributes beyond email:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 newsletter.example.com {

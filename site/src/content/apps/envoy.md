@@ -3,7 +3,7 @@ title: "How to Self-Host Envoy Proxy with Docker"
 description: "Deploy Envoy Proxy with Docker Compose for advanced load balancing, gRPC proxying, and service mesh capabilities on your self-hosted infrastructure."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - envoy
 tags:

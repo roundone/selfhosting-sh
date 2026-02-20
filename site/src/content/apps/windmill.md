@@ -3,7 +3,7 @@ title: "How to Self-Host Windmill with Docker Compose"
 description: "Deploy Windmill with Docker Compose — a self-hosted developer platform for scripts, workflows, and internal tools."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - windmill
 tags:

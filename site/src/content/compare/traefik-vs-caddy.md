@@ -3,7 +3,7 @@ title: "Traefik vs Caddy: Which Reverse Proxy?"
 description: "Traefik vs Caddy compared for self-hosting. Docker auto-discovery versus simple Caddyfile config, performance, and HTTPS automation."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - traefik
   - caddy

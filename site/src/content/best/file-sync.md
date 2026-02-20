@@ -3,7 +3,7 @@ title: "Best Self-Hosted File Sync & Storage in 2026"
 description: "The best self-hosted file sync and storage solutions compared — Nextcloud, Seafile, Syncthing, and Filebrowser ranked with pros, cons, and setup links."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
   - seafile
@@ -216,7 +216,7 @@ As much as you have files. All four solutions store data on your server's filesy
 
 ### Do I need a reverse proxy for these?
 
-For remote access with HTTPS, yes. All four work behind [Nginx Proxy Manager, Traefik, or Caddy](/foundations/reverse-proxy). Syncthing is the exception for sync traffic (it handles its own encryption), but the web UI benefits from a reverse proxy if exposed remotely.
+For remote access with HTTPS, yes. All four work behind [Nginx Proxy Manager, Traefik, or Caddy](/foundations/reverse-proxy-explained). Syncthing is the exception for sync traffic (it handles its own encryption), but the web UI benefits from a reverse proxy if exposed remotely.
 
 ## Related
 
@@ -233,5 +233,5 @@ For remote access with HTTPS, yes. All four work behind [Nginx Proxy Manager, Tr
 - [Self-Hosted Alternatives to OneDrive](/replace/onedrive)
 - [Self-Hosted Alternatives to iCloud Drive](/replace/icloud-drive)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

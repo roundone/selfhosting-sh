@@ -3,7 +3,7 @@ title: "BookStack vs Wiki.js: Which Wiki to Self-Host?"
 description: "BookStack vs Wiki.js compared — editors, organization, Git sync, and ease of use to help you choose the right self-hosted wiki."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
   - wiki-js

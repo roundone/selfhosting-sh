@@ -3,7 +3,7 @@ title: "Grafana vs Netdata: Which Monitoring to Self-Host?"
 description: "Comparing Grafana and Netdata for self-hosted server monitoring — dashboards, setup complexity, resource usage, and alerting."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - grafana
   - netdata

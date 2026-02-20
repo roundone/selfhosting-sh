@@ -3,7 +3,7 @@ title: "Grafana vs Prometheus: Understanding the Stack"
 description: "Grafana vs Prometheus explained — how these complementary monitoring tools work together for self-hosted infrastructure."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - grafana
   - prometheus
@@ -239,6 +239,6 @@ If you want simpler uptime monitoring without the full metrics stack, look at [U
 - [How to Self-Host Grafana](/apps/grafana)
 - [How to Self-Host Prometheus](/apps/prometheus)
 - [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring-uptime)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

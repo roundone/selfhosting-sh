@@ -3,7 +3,7 @@ title: "n8n vs Huginn: Which Automation Platform to Self-Host?"
 description: "Comparing n8n and Huginn for self-hosted automation — features, ease of use, Docker setup, and which fits your workflow needs."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
   - huginn

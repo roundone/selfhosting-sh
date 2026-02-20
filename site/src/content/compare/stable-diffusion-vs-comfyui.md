@@ -3,7 +3,7 @@ title: "Stable Diffusion WebUI vs ComfyUI: Compared"
 description: "AUTOMATIC1111/Forge vs ComfyUI compared for self-hosted AI image generation. UI, workflows, GPU usage, and features."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - stable-diffusion
   - comfyui

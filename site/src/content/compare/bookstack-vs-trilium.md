@@ -3,7 +3,7 @@ title: "BookStack vs Trilium: Which to Self-Host?"
 description: "BookStack vs TriliumNext compared for self-hosted note taking — structured documentation versus personal knowledge management."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
   - trilium

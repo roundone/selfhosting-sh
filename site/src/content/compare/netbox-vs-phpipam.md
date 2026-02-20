@@ -3,7 +3,7 @@ title: "NetBox vs phpIPAM: IP Address Management"
 description: "NetBox vs phpIPAM compared for self-hosted IP address management. DCIM, API, automation, and which IPAM tool fits your network."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - netbox
   - phpipam

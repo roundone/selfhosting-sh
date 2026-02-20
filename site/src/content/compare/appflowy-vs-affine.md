@@ -3,7 +3,7 @@ title: "AppFlowy vs AFFiNE: Which to Self-Host?"
 description: "AppFlowy vs AFFiNE compared — Notion alternatives with databases, editors, whiteboards, and self-hosting complexity."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - appflowy
   - affine

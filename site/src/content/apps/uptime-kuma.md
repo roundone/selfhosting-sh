@@ -3,7 +3,7 @@ title: "How to Self-Host Uptime Kuma with Docker"
 description: "Deploy Uptime Kuma — a beautiful, self-hosted monitoring tool for tracking uptime of your services and websites."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - uptime-kuma
 tags: ["self-hosted", "monitoring", "uptime-kuma", "docker", "uptime"]
@@ -336,7 +336,7 @@ The only reason to look elsewhere is if you need metrics collection and time-ser
 
 ## Related
 
-- [Best Self-Hosted Monitoring Tools](/best/monitoring-uptime)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring)
 - [Uptime Kuma vs UptimeRobot](/compare/uptime-kuma-vs-uptimerobot)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Volumes](/foundations/docker-volumes)

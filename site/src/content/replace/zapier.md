@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Zapier"
 description: "The best self-hosted alternatives to Zapier for workflow automation — n8n, Activepieces, Node-RED, and more compared."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
   - activepieces

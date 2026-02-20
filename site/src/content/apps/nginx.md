@@ -3,7 +3,7 @@ title: "How to Self-Host Nginx with Docker Compose"
 description: "Deploy Nginx with Docker Compose as a reverse proxy or web server. Includes config examples, SSL setup, environment templates, and troubleshooting."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - nginx
 tags:

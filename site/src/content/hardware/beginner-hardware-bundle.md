@@ -187,7 +187,7 @@ Not to start. Access your server by IP address on your local network (e.g., `htt
 
 ### Should I run Windows or Linux?
 
-Linux. Specifically Ubuntu Server 24.04 LTS. Docker runs natively on Linux with zero overhead. Docker on Windows runs in a Linux VM, which adds complexity and uses more resources. If you've never used Linux, now is a great time to learn — see [Linux Basics for Self-Hosting](/foundations/linux-basics).
+Linux. Specifically Ubuntu Server 24.04 LTS. Docker runs natively on Linux with zero overhead. Docker on Windows runs in a Linux VM, which adds complexity and uses more resources. If you've never used Linux, now is a great time to learn — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting).
 
 ### How much internet speed do I need?
 

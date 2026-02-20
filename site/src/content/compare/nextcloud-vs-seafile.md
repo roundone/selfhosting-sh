@@ -3,7 +3,7 @@ title: "Nextcloud vs Seafile: Which File Server Wins?"
 description: "Nextcloud vs Seafile comparison for self-hosted file sync and storage. We compare performance, features, and resource usage."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
   - seafile

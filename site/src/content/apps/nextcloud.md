@@ -3,7 +3,7 @@ title: "How to Self-Host Nextcloud with Docker"
 description: "Complete guide to self-hosting Nextcloud with Docker Compose, PostgreSQL, and Redis — your own Dropbox and Google Drive replacement."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - nextcloud
 tags:
@@ -342,7 +342,7 @@ Nextcloud is the default recommendation for anyone wanting a self-hosted cloud p
 ## Related
 
 - [How to Self-Host Syncthing](/apps/syncthing)
-- [Best Self-Hosted File Sync & Storage](/best/file-sync-storage)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync)
 - [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
 - [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud)
 - [Replace Dropbox](/replace/dropbox)

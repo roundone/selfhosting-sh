@@ -3,7 +3,7 @@ title: "How to Self-Host Syncthing with Docker"
 description: "Set up Syncthing with Docker Compose for peer-to-peer file sync across devices without a central server or cloud dependency."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - syncthing
 tags:
@@ -298,7 +298,7 @@ Syncthing is the best self-hosted file sync tool for users who want simplicity, 
 ## Related
 
 - [How to Self-Host Nextcloud](/apps/nextcloud)
-- [Best Self-Hosted File Sync & Storage](/best/file-sync-storage)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync)
 - [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud)
 - [Replace Dropbox](/replace/dropbox)
 - [Replace Google Drive](/replace/google-drive)

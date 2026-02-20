@@ -3,7 +3,7 @@ title: "Trilium vs SiYuan: Which to Self-Host?"
 description: "TriliumNext vs SiYuan compared for personal knowledge management — note cloning versus block references, SQLite versus JSON files."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - trilium
   - siyuan

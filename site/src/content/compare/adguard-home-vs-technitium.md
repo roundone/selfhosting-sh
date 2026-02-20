@@ -3,7 +3,7 @@ title: "AdGuard Home vs Technitium: Which DNS Server?"
 description: "AdGuard Home vs Technitium DNS compared — ad blocking, DNS features, web UI, resource usage, and which self-hosted DNS server to pick."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - adguard-home
   - technitium

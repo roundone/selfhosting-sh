@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Evernote"
 description: "Best self-hosted Evernote alternatives — Joplin, Trilium, SiYuan, and more for private, self-hosted note-taking with sync."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - joplin-server
   - trilium

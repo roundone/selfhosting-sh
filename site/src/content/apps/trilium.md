@@ -3,7 +3,7 @@ title: "How to Self-Host Trilium Notes with Docker"
 description: "Deploy TriliumNext Notes with Docker Compose — a hierarchical note-taking app with relation maps, cloning, and end-to-end encryption."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - trilium
 tags:

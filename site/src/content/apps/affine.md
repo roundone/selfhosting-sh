@@ -3,7 +3,7 @@ title: "How to Self-Host AFFiNE with Docker Compose"
 description: "Deploy AFFiNE with Docker — an open-source Notion and Miro alternative with docs, whiteboards, and database views."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - affine
 tags:

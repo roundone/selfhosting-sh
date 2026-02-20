@@ -3,7 +3,7 @@ title: "Docmost vs Wiki.js: Which Wiki to Self-Host?"
 description: "Docmost vs Wiki.js compared for self-hosted wikis — real-time Notion-like editing versus multi-editor flexibility and Git sync."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - docmost
   - wiki-js

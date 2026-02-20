@@ -199,7 +199,7 @@ XBackBone supports LDAP for centralized authentication. Configure in `config.php
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 xbackbone.example.com {
@@ -281,4 +281,4 @@ Pull the new image and restart: `docker compose pull && docker compose up -d`. T
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [PairDrop vs Send](/compare/pairdrop-vs-send)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

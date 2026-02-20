@@ -115,7 +115,7 @@ PicoShare supports guest upload links — generate a temporary URL that allows s
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 share.example.com {
@@ -185,4 +185,4 @@ PicoShare has no built-in file size limit. The constraint is your server's disk 
 - [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

@@ -3,7 +3,7 @@ title: "ownCloud vs Seafile: Which File Server to Use?"
 description: "ownCloud Infinite Scale vs Seafile comparison for self-hosted file sync. Two focused alternatives to Nextcloud with different strengths."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - owncloud
   - seafile

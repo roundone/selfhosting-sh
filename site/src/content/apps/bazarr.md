@@ -207,7 +207,7 @@ Create a proxy host pointing to `http://bazarr-ip:6767`. No special configuratio
 
 If you need a subpath (e.g., `/bazarr`), set the base URL in Bazarr under **Settings → General → Base URL** to `/bazarr`, then configure your proxy accordingly.
 
-For a full reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy).
+For a full reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
 
 ## Backup
 
@@ -282,5 +282,5 @@ Bazarr is essential if you run Sonarr and Radarr and watch content that benefits
 - [How to Self-Host Jellyfin with Docker](/apps/jellyfin)
 - [Best Self-Hosted Download Management](/best/download-management)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

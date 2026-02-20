@@ -3,7 +3,7 @@ title: "BookStack vs Joplin: Which to Self-Host?"
 description: "BookStack vs Joplin Server compared for self-hosted notes — team wiki versus personal encrypted notebook with sync."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - bookstack
   - joplin-server

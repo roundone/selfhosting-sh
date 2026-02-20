@@ -161,7 +161,7 @@ cloudflared tunnel create my-server
 
 The traditional approach. Expose ports 80 and 443 on your router, point them at a reverse proxy (Nginx Proxy Manager, Caddy, Traefik) on your server.
 
-1. Set up a reverse proxy — [Reverse Proxy Setup Guide](/foundations/reverse-proxy)
+1. Set up a reverse proxy — [Reverse Proxy Setup Guide](/foundations/reverse-proxy-explained)
 2. Get a domain name and point it at your public IP
 3. Forward ports 80 (HTTP) and 443 (HTTPS) on your router to your server
 4. Set up SSL certificates (Let's Encrypt, automatic with most reverse proxies)
@@ -255,5 +255,5 @@ For self-hosting services: yes, easily. 1 Gbps handles 50+ simultaneous 1080p Pl
 - [Network Cables Guide](/hardware/network-cables-guide)
 - [Homelab Network Topology](/hardware/homelab-network-topology)
 - [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

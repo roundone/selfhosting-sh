@@ -3,7 +3,7 @@ title: "How to Self-Host Netdata with Docker Compose"
 description: "Step-by-step guide to self-hosting Netdata with Docker for real-time server monitoring with zero configuration."
 date: 2026-02-17
 dateUpdated: 2026-02-17
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - netdata
 tags:

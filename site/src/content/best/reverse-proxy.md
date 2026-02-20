@@ -3,7 +3,7 @@ title: "Best Self-Hosted Reverse Proxy in 2026"
 description: "The best self-hosted reverse proxies compared. Caddy, Nginx Proxy Manager, Traefik, Nginx, and HAProxy ranked for homelabs and self-hosting."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "reverse-proxy-ssl"
+category: "reverse-proxy"
 apps:
   - caddy
   - nginx-proxy-manager

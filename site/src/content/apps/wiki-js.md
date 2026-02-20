@@ -3,7 +3,7 @@ title: "How to Self-Host Wiki.js with Docker Compose"
 description: "Deploy Wiki.js with Docker Compose — a powerful open-source wiki with Markdown, visual editor, Git sync, and full-text search."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "note-taking-knowledge"
+category: "note-taking"
 apps:
   - wiki-js
 tags:

@@ -3,7 +3,7 @@ title: "MinIO vs Garage: S3-Compatible Object Storage"
 description: "MinIO vs Garage comparison for self-hosted S3-compatible object storage. Why Garage is now the better choice after MinIO's archival."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - minio
   - garage

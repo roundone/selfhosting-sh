@@ -247,7 +247,7 @@ location / {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy).
 
 ## Backup
 
@@ -319,5 +319,5 @@ The main drawback is the build-from-source Docker workflow — there's no pre-bu
 - [Ghost vs WordPress](/compare/ghost-vs-wordpress)
 - [Best Self-Hosted CMS](/best/cms-websites)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

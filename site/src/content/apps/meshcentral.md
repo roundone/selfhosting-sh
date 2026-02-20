@@ -242,7 +242,7 @@ MeshCentral requires WebSocket support in your reverse proxy. For Nginx Proxy Ma
 
 Critical: Do not use MeshCentral's built-in update mechanism when running in Docker. Update by pulling a newer image version instead.
 
-For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy).
+For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
 
 ## Backup
 
@@ -336,5 +336,5 @@ MeshCentral has a mobile-responsive web interface for managing devices from a ph
 - [Best Self-Hosted VPN Solutions](/best/vpn)
 - [How to Self-Host Tailscale](/apps/tailscale)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

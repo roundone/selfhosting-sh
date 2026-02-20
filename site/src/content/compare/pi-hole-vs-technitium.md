@@ -3,7 +3,7 @@ title: "Pi-hole vs Technitium DNS: Which Should You Use?"
 description: "Pi-hole vs Technitium DNS compared — ad blocking, DNS features, web UI, resource usage, and which self-hosted DNS server fits your needs."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "ad-blocking-dns"
+category: "ad-blocking"
 apps:
   - pi-hole
   - technitium

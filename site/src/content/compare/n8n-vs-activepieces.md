@@ -3,7 +3,7 @@ title: "n8n vs Activepieces: Which Automation Tool to Self-Host?"
 description: "Comparing n8n and Activepieces for self-hosted workflow automation — features, UI, Docker setup, and which is right for you."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
   - activepieces

@@ -201,7 +201,7 @@ Ensure your SES account is out of sandbox mode and your domain has verified SPF/
 
 Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or another reverse proxy, point your domain to `localhost:4000`. Ensure WebSocket support is enabled for live preview functionality.
 
-For Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+For Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 keila.example.com {
@@ -281,5 +281,5 @@ No. Keila is newsletters and marketing campaigns only. For transactional emails,
 - [Best Self-Hosted Newsletter Software](/best/newsletters)
 - [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

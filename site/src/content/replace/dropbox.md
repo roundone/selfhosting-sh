@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to Dropbox"
 description: "Replace Dropbox with self-hosted file sync. Compare Syncthing, Nextcloud, and Seafile for file syncing without monthly fees."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - syncthing
   - nextcloud

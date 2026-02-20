@@ -260,4 +260,4 @@ These approaches are not mutually exclusive. A common setup is Tailscale for dev
 - [Self-Hosted Alternatives to ngrok](/replace/ngrok)
 - [Remote Access Guide](/foundations/remote-access)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

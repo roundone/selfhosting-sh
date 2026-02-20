@@ -221,7 +221,7 @@ Real-time data updates are available via WebSocket when `WEBSOCKETS_ENABLED` is 
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8055. See [Reverse Proxy Setup](/foundations/reverse-proxy) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy).
+Configure your reverse proxy to forward to port 8055. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy).
 
 ## Backup
 
@@ -300,5 +300,5 @@ Choose Directus over [Strapi](/apps/strapi) if you want simpler deployment (pre-
 - [Ghost vs WordPress](/compare/ghost-vs-wordpress)
 - [Best Self-Hosted CMS](/best/cms-websites)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

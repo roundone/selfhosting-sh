@@ -3,7 +3,7 @@ title: "Best Self-Hosted Monitoring Tools in 2026"
 description: "Compare the best self-hosted monitoring and uptime tools including Grafana, Prometheus, Uptime Kuma, Netdata, and Zabbix."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "monitoring-uptime"
+category: "monitoring"
 apps:
   - grafana
   - prometheus
@@ -184,5 +184,5 @@ We evaluated each tool on: ease of setup, out-of-box value, customizability, ale
 - [Replace New Relic](/replace/new-relic)
 - [Replace Pingdom](/replace/pingdom)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

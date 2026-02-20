@@ -3,7 +3,7 @@ title: "How to Self-Host Garage with Docker Compose"
 description: "Deploy Garage, a lightweight S3-compatible object storage system, with Docker Compose for self-hosted cloud storage."
 date: 2026-02-16
 dateUpdated: 2026-02-16
-category: "file-sync-storage"
+category: "file-sync"
 apps:
   - garage
 tags:

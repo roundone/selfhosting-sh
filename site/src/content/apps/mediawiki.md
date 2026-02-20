@@ -3,7 +3,7 @@ title: "How to Self-Host MediaWiki with Docker Compose"
 description: "Deploy MediaWiki with Docker Compose and MariaDB. The wiki engine behind Wikipedia, self-hosted for your team or project."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "wiki-documentation"
+category: "wiki"
 apps:
   - mediawiki
 tags:

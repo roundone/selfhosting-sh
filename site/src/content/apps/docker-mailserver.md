@@ -242,7 +242,7 @@ RELAY_PASSWORD=your-sendgrid-api-key
 
 ## Reverse Proxy
 
-docker-mailserver handles its own TLS for SMTP/IMAP connections. You don't need a reverse proxy for email protocols. However, if you want a webmail interface, pair it with [Roundcube](https://roundcube.net/) or [Snappymail](https://snappymail.eu/) behind your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy)).
+docker-mailserver handles its own TLS for SMTP/IMAP connections. You don't need a reverse proxy for email protocols. However, if you want a webmail interface, pair it with [Roundcube](https://roundcube.net/) or [Snappymail](https://snappymail.eu/) behind your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)).
 
 ## Backup
 
@@ -323,5 +323,5 @@ Self-hosting email is hard. DNS, deliverability, IP reputation, and spam filteri
 - [Best Self-Hosted Email Servers](/best/email)
 - [Self-Hosted Alternatives to Gmail](/replace/gmail)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 - [Backup Strategy](/foundations/backup-strategy)

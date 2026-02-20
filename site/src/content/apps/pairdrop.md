@@ -171,7 +171,7 @@ Enable `WS_FALLBACK=true` if users connect through VPNs or corporate networks th
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy)):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
 
 ```
 pairdrop.example.com {
@@ -242,4 +242,4 @@ No limit. Since files transfer peer-to-peer, the only constraint is the sender's
 - [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
 - [Best Self-Hosted File Sharing Tools](/best/file-sharing)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

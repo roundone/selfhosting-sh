@@ -3,7 +3,7 @@ title: "Flowise vs Langflow: Which Should You Self-Host?"
 description: "Flowise vs Langflow compared for self-hosted AI workflow building. Visual editors, LLM integration, and deployment options."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "ai-machine-learning"
+category: "ai-ml"
 apps:
   - flowise
   - langflow

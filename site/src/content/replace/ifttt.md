@@ -3,7 +3,7 @@ title: "Self-Hosted Alternatives to IFTTT"
 description: "The best self-hosted alternatives to IFTTT for simple automations — n8n, Activepieces, Node-RED, and Huginn compared."
 date: 2026-02-20
 dateUpdated: 2026-02-20
-category: "automation-workflows"
+category: "automation"
 apps:
   - n8n
   - activepieces
