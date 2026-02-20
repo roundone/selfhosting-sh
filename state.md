@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 12:45 UTC
+## Last Updated: 2026-02-20 15:31 UTC
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -62,6 +62,8 @@
 - **Search: FIXED** (CEO fixed Feb 20 05:50 UTC — Pagefind index/ renamed to idx/ for CF Pages compatibility)
 - **Board Portal: LIVE** at http://5.161.102.207:8080 (token auth, 8 pages, systemd `selfhosting-portal`; replaced old dashboard)
 - **Post-deploy QA: INTEGRATED** (21 checks, all passing)
+- **Share buttons: LIVE** (ShareButtons.astro — X, Reddit, HN, LinkedIn, Bluesky, Copy Link)
+- **Page speed: OPTIMIZED** (prefetch, preconnect GTM, conditional Pagefind — articles skip ~50KB)
 
 ## SEO & Marketing
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
@@ -78,10 +80,12 @@
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
 - Queue: **~1,921 items** (draining — 3 platforms active now; Marketing adding new posts)
-- **1 follower on Bluesky** (as of 12:45 UTC)
+- **Mastodon: 4 followers, 25 following** (active engagement started — 27 follows, 10 favs, 6 boosts, 5 replies this iteration)
+- **Bluesky: 14 follows, 7 likes, 3 replies** this iteration
 - **Mastodon: 3.4 engagements/post** — dramatically outperforming X (0/post). Self-hosting community active on fediverse.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
-- **FOUNDER DIRECTIVE (Feb 20):** Social strategy overhaul — Marketing must do active engagement (follows, replies, boosts), not just queue syndication. Max 30% article links, 70% other content. Daily targets: 10+ follows, 5+ replies, 3+ original posts.
+- **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing exceeded all daily targets (41 follows, 8 replies, 30+ posts). Dev.to: 13 articles cross-posted.
+- **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
 - Platform status:
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
@@ -170,5 +174,5 @@
 19. **New credentials (Mastodon, Dev.to)** → **DONE** (Feb 20) — Mastodon posting confirmed working at 10:53 UTC. Dev.to API key provided. Social poster config already enabled. Marketing notified.
 20. **GA4 API enabled** → **DONE** by founder. BI notified to retry API queries.
 21. **Portal login broken** → **FIXED by CEO** (Feb 20 ~15:15 UTC) — Simplified to password-only (removed username field). Portal restarted. Credentials emailed to founder.
-22. **Product features must maximize SEO/social** → **IN PROGRESS** (Feb 20 ~15:15 UTC) — Site audited: 7/9 features already implemented (newsletter, related articles, schema x7, OG/Twitter cards, sitemap, internal linking, page speed). Share buttons: directive sent to Technology. Comments: pending Marketing input. Process change: Marketing standing seat added to both Marketing and Technology CLAUDE.md.
+22. **Product features must maximize SEO/social** → **COMPLETE** (Feb 20 ~15:30 UTC) — All implemented: 7 existing features ✓, share buttons LIVE (6 targets, pure HTML/CSS), page speed optimized (prefetch, preconnect, conditional Pagefind), Marketing standing seat on features ✓. Comments: deferred (CEO decision — spam/moderation risk with no humans). Marketing consultation still pending.
 23. **Portal CLAUDE.md access + Growth metrics dashboard** → **IN PROGRESS** (Feb 20 ~15:20 UTC) — CEO expanded metrics list and sent comprehensive spec directive to IR. IR to spec both features → Technology builds. CLAUDE.md viewer: CEO editable, all others read-only. Growth dashboard: GSC, GA4, social, operational metrics.

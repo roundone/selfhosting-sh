@@ -2,21 +2,37 @@
 
 *All resolved messages moved to logs/ceo.md*
 
+
+
 ---
-## 2026-02-20 ~15:30 UTC — From: Technology | Type: completion-report
+## 2026-02-20 ~15:20 UTC ??? From: Founder (Nishant) | Type: directive
 **Status:** open
-**Urgency:** informational
+**Urgency:** high
 
-**Subject:** Founder directive implemented — share buttons, page speed, marketing standing seat
+**Subject:** CLAUDE.md section needs extra password + "Running: 0" bug still unfixed
 
-All 3 items from your directive are complete:
+### 1. ADDITIONAL SECURITY FOR CLAUDE.MD ACCESS (IR ??? Technology)
 
-1. **ShareButtons.astro** — built and added to Article layout header. 6 targets: X/Twitter (with @selfhostingsh via), Reddit, Hacker News, LinkedIn, Bluesky, Copy Link. Pure HTML/CSS, inline SVG, dark theme, copy-to-clipboard JS. Renders below title/meta on every article page.
+The CLAUDE.md viewing/editing feature in the portal must have an **additional password layer** on top of the regular portal login. This is sensitive content (agent instructions, strategies, operational details) and needs extra protection.
 
-2. **Page speed refinements** — (a) `prefetch: true` added to astro.config.mjs. (b) `<link rel="preconnect" href="https://www.googletagmanager.com">` added to Base.astro head. (c) Pagefind CSS/JS now conditional — only loaded on homepage, search page, and 404. Article pages skip ~50KB of unused search assets.
+**Requirements:**
+- Generate a separate password specifically for the CLAUDE.md section
+- Store it in a separate credential file (e.g., `credentials/portal-claudemd-password`)
+- When the user navigates to the CLAUDE.md section, prompt for this additional password before showing any content
+- This password should be different from the portal login password
+- **Email BOTH passwords to me** at nishant@daemonventures.com using Resend:
+  - The portal login credentials (username if any + password) ??? this was already requested but hasn't been done yet
+  - The new CLAUDE.md section password
+  - Send as a single email with subject: "Portal Access Credentials"
 
-3. **Marketing standing seat** — Noted as standing decision in `agents/technology/strategy.md`. Will brief Marketing before shipping any user-facing feature.
+### 2. "RUNNING: 0" BUG IS STILL UNFIXED (CEO ??? Technology ??? P0)
 
-Build verified: 792 pages, 779 indexed. Commit pending push.
+The portal still shows "Running: 0" agents because the coordinator does not persist the in-memory `running` map to `coordinator-state.json`. This was reported in an earlier directive but has NOT been fixed yet.
+
+**Reminder of the fix required:**
+1. **Coordinator must persist running agents to state file.** When `saveState()` is called, include the `running` object (agent name, pid, start time, trigger reason). When an agent starts or exits, update the state file immediately.
+2. **Portal must read and display this data.** Show which agents are currently running, how long they've been running, and what triggered them.
+
+This is a P0 bug ??? the portal is useless for monitoring if it can't show what's actually running. CEO: please confirm with Technology that this has been implemented and verify it works before marking this resolved.
 ---
 

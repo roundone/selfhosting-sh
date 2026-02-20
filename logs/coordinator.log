@@ -6803,3 +6803,34 @@ Jellyf..."
 [2026-02-20T15:27:59.299Z] MINGAP ceo — only 117s since last run (min: 5min), deferring 183s
 [2026-02-20T15:28:05.358Z] INBOX technology.md modified → technology
 [2026-02-20T15:28:05.358Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T15:29:43.722Z] AGENT technology exited (code=0, duration: 579s)
+[2026-02-20T15:29:43.722Z] STATE technology lastRun updated, errors reset
+[2026-02-20T15:29:43.722Z] PENDING technology processing queued trigger
+[2026-02-20T15:29:43.722Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T15:30:18.928Z] STATUS running=1/3 writers=0/1 freeMem=6913MB agents=[marketing(1557s)] paused=no
+[2026-02-20T15:30:18.929Z] SOCIAL running social-poster.js
+[2026-02-20T15:30:18.962Z] SOCIAL 2026-02-20T15:30:18.960Z [social-poster] starting
+[2026-02-20T15:30:18.971Z] SOCIAL 2026-02-20T15:30:18.970Z [social-poster] queue has 1984 posts
+[2026-02-20T15:30:19.200Z] SOCIAL 2026-02-20T15:30:19.199Z [social-poster] OK x: posted "Run BorgBackup on your own hardware. Full Docker Compose set..."
+[2026-02-20T15:30:19.209Z] SOCIAL 2026-02-20T15:30:19.209Z [social-poster] removed 1 posted items from queue (1983 remaining)
+[2026-02-20T15:30:19.209Z] SOCIAL 2026-02-20T15:30:19.209Z [social-poster] done — 1 attempted, 1 succeeded, 1983 remaining in queue
+[2026-02-20T15:30:19.214Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T15:31:02.225Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T15:31:02.227Z] AGENT ceo started (pid: 133673)
+[2026-02-20T15:31:02.227Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T15:32:55.172Z] INBOX operations.md modified → operations
+[2026-02-20T15:32:55.172Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-20T15:32:55.174Z] AGENT operations started (pid: 134197)
+[2026-02-20T15:33:20.559Z] INBOX technology.md modified → technology
+[2026-02-20T15:33:20.559Z] CONCURRENCY technology — 3/3 agents running, queued
+[2026-02-20T15:33:21.578Z] INBOX ceo.md modified → ceo
+[2026-02-20T15:33:21.578Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T15:34:43.849Z] CONCURRENCY technology — 3/3 agents running, queued
+[2026-02-20T15:35:18.964Z] STATUS running=3/3 writers=0/1 freeMem=6533MB agents=[marketing(1857s), ceo(257s), operations(144s)] paused=no
+[2026-02-20T15:35:18.965Z] SOCIAL running social-poster.js
+[2026-02-20T15:35:18.998Z] SOCIAL 2026-02-20T15:35:18.996Z [social-poster] starting
+[2026-02-20T15:35:19.007Z] SOCIAL 2026-02-20T15:35:19.006Z [social-poster] queue has 2013 posts
+[2026-02-20T15:35:19.008Z] SOCIAL 2026-02-20T15:35:19.007Z [social-poster] done — 0 attempted, 0 succeeded, 2013 remaining in queue
+[2026-02-20T15:35:19.013Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T15:35:34.163Z] INBOX ceo.md modified → ceo
+[2026-02-20T15:35:34.164Z] QUEUED ceo already running — trigger queued: inbox-message
