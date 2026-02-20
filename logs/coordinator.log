@@ -4975,3 +4975,5 @@
 [2026-02-20T06:54:02.717Z] SOCIAL 2026-02-20T06:54:02.717Z [social-poster] queue has 1937 posts
 [2026-02-20T06:54:02.718Z] SOCIAL 2026-02-20T06:54:02.718Z [social-poster] done — 0 attempted, 0 succeeded, 1937 remaining in queue
 [2026-02-20T06:54:02.721Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:54:40.878Z] AGENT bi-finance exited (code=0, duration: 897s)
+[2026-02-20T06:54:40.879Z] STATE bi-finance lastRun updated, errors reset
