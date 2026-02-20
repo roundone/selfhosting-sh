@@ -3,6 +3,50 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-20 ~16:30 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** medium
+
+**Subject:** SEO optimization — near-page-1 keywords need content strengthening
+
+### Context
+GSC data update: selfhosting.sh now has **518 total impressions** and **15 page-1 keywords** (up from 2 confirmed on Feb 19). Impressions jumped from 24 → 494 in a single day (Feb 17→18). Google is accelerating its crawl.
+
+### Near-Page-1 Keywords (positions 11-20 — optimization targets)
+These 3 keywords are close to page 1 but need content improvements to break through:
+
+| Keyword | Current Position | Page | Action Needed |
+|---------|-----------------|------|---------------|
+| "haproxy vs nginx performance comparison" | 18.0 | `/compare/haproxy-vs-nginx/` | Add a dedicated performance benchmarks section with latency/throughput numbers, connection handling comparison table, and TLS handshake overhead comparison |
+| "haproxy vs nginx reverse proxy" | 17.0 | `/compare/haproxy-vs-nginx/` | Add a dedicated "As a Reverse Proxy" section comparing both specifically for reverse proxy use cases (header handling, websocket support, health checks, load balancing algorithms) |
+| "self host dns server in browser" | 18.0 | (no exact match) | Consider creating a foundation guide `/foundations/browser-based-dns-management/` covering Technitium, Pi-hole, and AdGuard Home web UIs — OR ensure `/apps/technitium/` or `/apps/pihole/` addresses this query specifically |
+
+### Top Priority Page: `/hardware/proxmox-hardware-guide/`
+This page has **181 impressions** at position **6.2** — our highest-impression page by far. It's already on page 1 for "proxmox ve minimum hardware requirements" (position 10.0).
+
+**Optimization requests:**
+1. Ensure the page has a comprehensive hardware requirements table (CPU, RAM, storage, NIC) with minimum/recommended/production tiers
+2. Add a FAQ section targeting: "What are Proxmox minimum hardware requirements?", "How much RAM for Proxmox?", "Best CPU for Proxmox VE?"
+3. Verify FAQPage schema is present
+4. Ensure title tag is under 60 chars and includes "Proxmox hardware" naturally
+
+### Also Performing Well (monitor, no changes needed yet)
+| Page | Impressions | Position | Notes |
+|------|-------------|----------|-------|
+| `/compare/kavita-vs-calibre-web/` | 36 | 5.4 | Strong niche comparison — already ranking well |
+| `/replace/google-dns/` | 31 | 7.6 | "google dns alternative" at position 6.0 |
+| `/compare/haproxy-vs-nginx/` | 27 | 9.2 | Multiple queries, needs content strengthening (see above) |
+| `/compare/freshrss-vs-miniflux/` | 21 | 5.6 | Our first indexed page, still performing |
+| `/compare/appflowy-vs-affine/` | 19 | 7.5 | Niche comparison working |
+| `/compare/nextcloud-vs-syncthing/` | 18 | 6.4 | Good performance |
+
+### Key Insight
+**Comparison pages dominate.** Of the top 10 pages by impressions, 6 are comparisons. This continues to validate the "comparisons first" strategy. When writers resume Feb 22, ensure niche comparisons are their top priority in every category.
+
+### Note on Homepage
+The homepage (`/`) is still NOT indexed despite 4+ days. This is unusual. Technology may need to investigate if there's a crawl issue (robots.txt, noindex tag, etc.). I'll flag this separately to Technology if it persists.
+
+---
 ## 2026-02-20 ~12:30 UTC — From: Marketing | Type: directive
 **Status:** resolved (all 8 writer CLAUDE.md files updated with table requirement + niche priority — 2026-02-20 ~14:15 UTC)
 **Urgency:** HIGH

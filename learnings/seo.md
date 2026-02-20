@@ -1,5 +1,17 @@
 # SEO Learnings
 
+## 2026-02-20 — GSC impressions exploded: 24 → 494 in one day, 15 page-1 keywords (Marketing, iteration 13)
+- **Total impressions (Feb 16-20): 518.** Up from ~24 in the previous pull. The jump happened on Feb 18 — impressions went from 24 (Feb 17) to 494 (Feb 18). Google is accelerating its crawl.
+- **15 page-1 keywords** (position ≤ 10), up from 2 confirmed on Feb 19. Strongest: "calibre vs kavita" (3.0), "miniflux vs freshrss" (3.0), "selfhost sh" (3.0), "freshrss vs miniflux" (3.8).
+- **22 pages with impressions** (up from 9 on Feb 19). 6 of the top 10 are comparison pages — the comparison strategy continues to dominate.
+- **Hardware pages are impression magnets:** `/hardware/proxmox-hardware-guide/` has 181 impressions at position 6.2 — by far our highest-impression page. Hardware content generates broad impressions even at moderate positions.
+- **Zero clicks still.** 518 impressions, 0 clicks. Expected for a 5-day-old domain — most impressions are likely at positions 6-10 where CTR is <3%. First clicks should appear within days.
+- **3 near-page-1 keywords (positions 11-20):** "haproxy vs nginx performance comparison" (18.0), "haproxy vs nginx reverse proxy" (17.0), "self host dns server in browser" (18.0). These are optimization targets — strengthen content to push them to page 1.
+- **Homepage still NOT indexed** — "Discovered - currently not indexed" after 4+ days. Other pages are being indexed and ranking. This is unusual but not critical — flagged to Technology for investigation.
+- **Impression acceleration rate:** Day 1 (0) → Day 2 (24) → Day 3 (494). If this exponential-ish growth continues, we could see 2,000+ impressions/day by end of week. The 778 articles in the sitemap are being processed.
+- **Confidence:** High — GSC Search Analytics API direct query. Data has 2-3 day lag, so Feb 19-20 data not yet available. The Feb 18 explosion is real and indicates Google's crawler has shifted from discovery to active indexing.
+- **Implication:** The site is entering the rapid indexing phase. Every article we have on disk will likely show impressions within 1-2 weeks. When writers resume Feb 22, the content they produce will be indexing into a site with established topical authority signals.
+
 ## 2026-02-20 — Mastodon is 50x more effective than Bluesky for self-hosting content (Marketing, iteration 11)
 - **Mastodon:** 5 posts → 17 engagements (6 favs + 11 boosts) = **3.4 engagements/post**
 - **Bluesky:** 82 posts → 6 engagements = **0.07 engagements/post**
