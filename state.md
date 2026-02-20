@@ -35,17 +35,17 @@
 | **NEW: Container Orchestration** | 13 | 16 | 81% | Nearly complete (writer done, 3 articles remaining) |
 | **NEW: Automation & Workflows** | 15 | 15 | 100% | **COMPLETE** |
 
-## Writer Assignments (updated 2026-02-20 09:55 UTC)
+## Writer Assignments (updated 2026-02-20 10:25 UTC — ALL PAUSED per founder directive)
 | Writer | Categories | Status |
 |--------|-----------|--------|
-| proxy-docker-writer (→ newsletters-filesharing) | Newsletters & Mailing Lists + File Sharing & Transfer | Queued (8h writer fallback) |
-| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | Queued (8h writer fallback) |
-| vpn-filesync-writer | VPN & Remote Access + File Sync & Storage | Queued (8h writer fallback) |
-| foundations-writer (→ containers-automation) | Container Orchestration + Automation & Workflows | **COMPLETE** (24 articles). Queued for reassignment. |
-| hardware-writer | Hardware (expanding) | **ACTIVE** (1 of 1 writer slot, started 09:47 UTC) |
-| homeauto-notes-writer (→ surveillance-music) | Video Surveillance, Music & Audio | Queued (8h writer fallback) |
-| password-adblock-writer (→ social-task) | Social Networks & Forums + Task Management | Queued (8h writer fallback) |
-| photo-media-writer | Photo & Video Mgmt + Media Servers | Queued (8h writer fallback) |
+| proxy-docker-writer | Newsletters & Mailing Lists + File Sharing & Transfer | **PAUSED** (until Feb 22) |
+| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | **PAUSED** (until Feb 22) |
+| vpn-filesync-writer | VPN & Remote Access + File Sync & Storage | **PAUSED** (until Feb 22) |
+| foundations-writer | Container Orchestration + Automation & Workflows | **COMPLETE** (24 articles). PAUSED until Feb 22. |
+| hardware-writer | Hardware (expanding) | **PAUSED** (until Feb 22, finished current iteration) |
+| homeauto-notes-writer | Video Surveillance, Music & Audio | **PAUSED** (until Feb 22) |
+| password-adblock-writer | Social Networks & Forums + Task Management | **PAUSED** (until Feb 22) |
+| photo-media-writer | Photo & Video Mgmt + Media Servers | **PAUSED** (until Feb 22) |
 
 ## Site
 - Status: LIVE
@@ -106,20 +106,20 @@
   - selfhosting-coordinator.service: ACTIVE (v2.0, 13 agents discovered + IR pending next restart)
   - selfhosting-proxy.service: ACTIVE
   - selfhosting-watchdog.service: ACTIVE
-  - 4 agents active (CEO, operations, hardware-writer, technology)
-  - Memory: ~6.4GB available / 7.7GB total — healthy
-  - Load: 0.02 — minimal
+  - 2 agents active (CEO, operations). Writers PAUSED until Feb 22.
+  - Memory: ~6.5GB available / 7.7GB total — healthy
+  - Load: minimal
 - Rate-limiting proxy: ACTIVE at localhost:3128
 - Social poster: ACTIVE (running every 5 min via coordinator)
 
-## Coordinator Config (FOUNDER OVERRIDE 2026-02-20 ~09:13 UTC)
-- maxTotalConcurrent: 4 (was 6, founder reduced)
-- maxWriterConcurrent: 1 (was 4, founder reduced)
-- writerFallbackHours: 8 (was 1, founder restored to conservative)
+## Coordinator Config (FOUNDER OVERRIDE 2026-02-20)
+- maxTotalConcurrent: 4
+- maxWriterConcurrent: 0 (config file immutable; writers paused via 48h wake-on.conf)
+- writerFallbackHours: 48 (all writers paused until Feb 22 per founder directive)
 - deptFallbackHours: 8
 - memoryMinFreeMb: 1200
 - minIterationGapMinutes: 5
-- **Note:** Founder explicitly overrode CEO's aggressive config. Commit: b882734 "Founder override: conservative config". CEO respects this decision.
+- **Note:** Founder directive 2026-02-20: ALL writers paused until Feb 22. Config file locked (immutable attr). Focus: Technology, Marketing, BI, IR.
 
 ## Agent Health
 | Agent | Last Run | Errors | Status |
@@ -130,19 +130,19 @@
 | Marketing | 2026-02-20 06:56 | 0 | Idle (8h fallback) |
 | BI & Finance | 2026-02-20 06:54 | 0 | Idle (8h fallback) |
 | Investor Relations | — | — | Not yet discovered by coordinator (code fix staged) |
-| proxy-docker-writer | 2026-02-20 07:57 | 0 | Queued (8h writer fallback, 1-writer limit) |
-| tier2-writer | 2026-02-20 07:58 | 0 | Queued (8h writer fallback, 1-writer limit) |
-| vpn-filesync-writer | 2026-02-20 06:21 | 0 | Queued (8h writer fallback, 1-writer limit) |
-| foundations-writer | 2026-02-20 09:47 | 2 | **COMPLETE** (24 articles). Queued for next assignment. |
-| hardware-writer | 2026-02-20 09:47 | 0 | **ACTIVE** (1 of 1 writer slot) |
-| homeauto-notes-writer | 2026-02-20 02:13 | 2 | Backoff expired — waiting for 8h fallback |
-| password-adblock-writer | 2026-02-20 02:13 | 2 | Backoff expired — waiting for 8h fallback |
-| photo-media-writer | 2026-02-20 07:58 | 0 | Queued (8h writer fallback, 1-writer limit) |
+| proxy-docker-writer | 2026-02-20 07:57 | 0 | **PAUSED** (until Feb 22) |
+| tier2-writer | 2026-02-20 07:58 | 0 | **PAUSED** (until Feb 22) |
+| vpn-filesync-writer | 2026-02-20 06:21 | 0 | **PAUSED** (until Feb 22) |
+| foundations-writer | 2026-02-20 09:47 | 2 | **PAUSED** (COMPLETE — 24 articles. Paused until Feb 22) |
+| hardware-writer | 2026-02-20 ~10:15 | 3 | **PAUSED** (finished iteration, paused until Feb 22) |
+| homeauto-notes-writer | 2026-02-20 02:13 | 2 | **PAUSED** (until Feb 22) |
+| password-adblock-writer | 2026-02-20 02:13 | 2 | **PAUSED** (until Feb 22) |
+| photo-media-writer | 2026-02-20 07:58 | 0 | **PAUSED** (until Feb 22) |
 
 ## Blockers
 - Social credentials PENDING for: Mastodon, Reddit, Dev.to, Hashnode, LinkedIn (Requires: human)
 - GA4 API not enabled — BI cannot track traffic (Requires: human)
-- Content velocity constrained — 740 articles vs 1,500 Month 1 target. Founder override limits writers to 1 concurrent with 8h fallback. ~95/day needed for 8 remaining days. At current throttle, this may be tight.
+- **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 759 articles on disk. Focus shifts to Technology, Marketing, BI, IR until resume date.
 - Coordinator doesn't discover IR agent — code fix staged in coordinator.js, takes effect on next coordinator restart
 
 ## Founder Directives Status
@@ -161,3 +161,4 @@
 13. Human dependency audit → **DONE** (Feb 20 09:15 UTC) — `board/human-dependency-audit-2026-02-20.md` emailed to founder
 14. Playwright-first policy → **DONE** (Feb 20 09:15 UTC) — Added as sacrosanct directive in all 5 department CLAUDE.md files
 15. Create IR department → **DONE** (Feb 20 prior iteration) — agents/investor-relations/ created with CLAUDE.md, inbox, wake-on.conf
+16. **Pause ALL writers until Feb 22** → **DONE** (Feb 20 10:25 UTC) — All 8 writer wake-on.conf set to 48h. No writers running. Focus: Technology, Marketing, BI, IR.

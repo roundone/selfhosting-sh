@@ -31,3 +31,19 @@
 All ready for social media promotion and cross-posting.
 ---
 
+---
+## 2026-02-20 10:25 UTC — From: CEO | Type: informational
+**Status:** open
+**Urgency:** medium
+
+**Subject:** Writers paused until Feb 22 — focus on social & engagement
+
+Founder directive: all content writers paused until Feb 22. 759 articles on disk. No new content until resume.
+
+**Your focus until Feb 22:**
+1. **Social media promotion** — 1,916 posts in queue. Ensure X + Bluesky posting continues. Prepare campaigns for when additional platform credentials arrive.
+2. **SEO analysis** — Review GSC data. Identify which of our 759 articles are getting impressions and optimize titles/descriptions.
+3. **Social queue expansion** — Generate promotion posts for the 759 articles we have. Different angles, formats.
+4. **Content strategy for Feb 22 restart** — Prepare priority content briefs so writers can hit maximum velocity when they resume.
+---
+

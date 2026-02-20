@@ -1,16 +1,16 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-20 09:55 UTC
+**Last updated:** 2026-02-20 10:25 UTC
 
 ## Current Priorities
 
-1. **Content velocity under founder constraints** — Founder overrode config to maxWriters=1, writerFallback=8h. 740 articles published, need ~760 more by Feb 28 (~95/day for 8 days). With 1 writer at a time, each writer iteration must produce high volume. This is the primary constraint. Hardware writer now active.
-2. **Social poster fix** — DONE. X (Twitter) duplicate content loop fixed at 09:10 UTC. Confirmed working at 09:18 UTC — X successfully posted after skipping duplicate.
-3. **Investor Relations portal** — Department created per founder directive. IR agent has CLAUDE.md, inbox, and welcome directive. Will spec the board portal and send to Technology for build.
-4. **Playwright-first policy** — DONE. Cascaded to all 5 department CLAUDE.md files as sacrosanct directive.
-5. **Google indexing momentum** — 9 pages with impressions on day 5. 2 page-1 keywords. Comparison articles rank fastest.
-6. **Social credentials** — 5 platforms still blocked. Human dependency audit emailed to founder at `board/human-dependency-audit-2026-02-20.md`.
-7. **Writer category coverage** — 8 writers assigned across categories. 1 currently running (hardware-writer). Foundations-writer COMPLETE (24 articles: container-orch + automation). Others queued via 8h coordinator fallback.
+1. **ALL WRITERS PAUSED until Feb 22** — Founder directive 2026-02-20. 759 articles on disk. No new content production until Feb 22. All 8 writer wake-on.conf set to 48h. Focus shifts entirely to non-content work.
+2. **Technology improvements** — Deploy pipeline fixed (systemd timer). Focus: site quality, SEO, portal, search improvements.
+3. **Marketing & social growth** — Social poster working (X + Bluesky). 1,916 posts in queue. 5 platforms still blocked pending credentials. Push for social credentials from founder.
+4. **Investor Relations portal** — IR department created. Portal spec in progress. Technology to build.
+5. **BI & Finance analytics** — GA4 API still blocked. GSC data available. 9 pages with impressions, 2 page-1 keywords.
+6. **Operations coordination (NOT writing)** — Operations head should focus on content quality review, topic map planning, and preparing for Feb 22 writer restart.
+7. **Social credentials** — 5 platforms still blocked. Human dependency audit emailed to founder.
 
 ## Standing Decisions
 
@@ -21,8 +21,8 @@
 | Social posting via queue only | Founder directive — agents never call social APIs directly. bin/social-poster.js handles all posting. | Feb 19, 2026 |
 | No affiliate disclosures until founder says otherwise | Premature disclosures damage trust. We have zero affiliate relationships. | Feb 19, 2026 |
 | Marketing can queue social posts freely | HOLD lifted Feb 20. Queue handles rate limiting automatically. | Feb 20, 2026 |
-| ~~Max 4 concurrent writers~~ → **Max 1 writer (founder override)** | Founder overrode CEO's aggressive config. Commit b882734. CEO respects this. | Feb 20, 2026 |
-| ~~Writers on 1-hour fallback~~ → **Writers on 8-hour fallback (founder override)** | Founder restored conservative fallback. CEO respects this. | Feb 20, 2026 |
+| ~~Max 4 concurrent writers~~ → ~~Max 1 writer~~ → **ALL WRITERS PAUSED (founder directive)** | Founder paused all writers until Feb 22. 759 articles sufficient. Focus: Technology, Marketing, BI, IR. | Feb 20, 2026 |
+| ~~Writers on 1-hour fallback~~ → ~~8-hour fallback~~ → **48h fallback (paused until Feb 22)** | Founder directive. Do NOT override without board approval. | Feb 20, 2026 |
 | Comparison articles first | GSC data shows comparisons rank 2-3x faster than app guides. All writer CLAUDE.md files prioritize comparisons. | Feb 20, 2026 |
 | CEO directly fixes critical issues when departments stall | Technology was non-functional for 5 days. CEO fixed search directly. Escalation-only approach was too slow. | Feb 20, 2026 |
 | Pagefind index/ → idx/ rename in build | Cloudflare Pages treats `index/` as directory-index reference. Post-build step renames it. | Feb 20, 2026 |
@@ -46,8 +46,9 @@
 
 ## Open Questions
 
-- **Technology reliability** — Discipline rules added to CLAUDE.md. Monitoring compliance this iteration. Strategy.md shows recent work completed but needs consistent logging.
+- **Writer pause impact on Month 1 target** — 759 articles published vs 1,500 target. Writers paused until Feb 22 (2 days lost). With 6 days remaining after resume (Feb 22-28), need ~741 articles in 6 days (~124/day). Founder is aware of this tradeoff.
+- **Technology reliability** — Deploy fix shows Technology is now productive. Discipline rules in CLAUDE.md. Continue monitoring.
 - **When to request remaining social credentials again** — Human dependency audit delivered. In every board report until resolved.
-- **Operations crash rate** — 19/20 iterations failing with code=1. Lower priority since writers are the main production engine. Operations head should focus on coordination, not direct writing.
-- **Topic map expansion** — Current map has 1,224 articles. With 740 published (60%), writers will exhaust their assigned articles within days. Marketing needs to continue expanding.
-- **IR portal timeline** — IR department created. First iteration should produce a portal spec. Technology builds. Estimated: portal live within 2-3 days.
+- **Operations role during pause** — Should focus on content quality review, topic map optimization, and preparing for Feb 22 writer restart.
+- **IR portal timeline** — IR department created. Portal spec in progress. Technology builds.
+- **Deploy pipeline now stable** — systemd timer replaces crash-prone loop. 30-minute deploy cycle confirmed working.
