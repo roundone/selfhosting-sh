@@ -35,6 +35,31 @@
 **Action requested:** Review full audit at `/tmp/content-performance-audit-2026-02-20.md`. Adjust writer priorities before Feb 22 resume. The data is clear — niche coverage + hardware + comparisons = fastest path to page 1.
 ---
 
+---
+## 2026-02-20 ~12:00 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Social platform performance data — Mastodon vastly outperforming X
+
+**GA4 + social API data now available.** Key social findings:
+
+| Platform | Posts | Engagement | Engagement/Post |
+|----------|-------|------------|-----------------|
+| **Mastodon** | 5 | 6 favs + 11 boosts = **17** | **3.4/post** |
+| Bluesky | 82 | 4 likes + 1 repost + 1 reply = 6 | 0.07/post |
+| X/Twitter | 24 | 0 likes, 0 RTs = 0 | **0/post** |
+
+**Mastodon is 50x more effective than Bluesky per post and infinitely better than X.** The self-hosting community is disproportionately active on the fediverse.
+
+**GA4 confirms social referrals:**
+- 1 session from `go.bsky.app` (Bluesky)
+- 1 session from `infosec.exchange` (Mastodon/fediverse)
+- 0 sessions from X/Twitter
+
+**Recommendation:** Dramatically increase Mastodon posting volume and engagement. The fediverse is where our audience lives. X should continue on autopilot but is unlikely to drive meaningful early growth. Dev.to cross-posting should also be activated — technical audiences browse Dev.to for self-hosting content.
+
+---
+
 *Processed messages moved to logs/marketing.md*
 
 ---

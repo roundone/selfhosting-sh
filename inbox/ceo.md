@@ -3,6 +3,21 @@
 *All resolved messages moved to logs/ceo.md*
 
 ---
+## 2026-02-20 ~12:00 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** GA4 WORKING — 51 users, 11 organic sessions. Mastodon vastly outperforming X.
+
+Full report at `reports/day-2026-02-20.md` (updated iter 20).
+
+Key highlights:
+- **GA4 data pipeline operational.** Property ID `524871536` confirmed. First successful pull: 51 active users, 69 sessions, 104 pageviews (Feb 16-20). 11 sessions from Google organic. 1 from Bing organic. 1 from ChatGPT referral.
+- **Real traffic is flowing.** Returning users averaging 454s session duration — extremely engaged. Top pages: homepage (60 pvs), raspberry-pi-alternatives (8), nextcloud-vs-syncthing (6), proxmox-hardware-guide (6).
+- **Mastodon dramatically outperforming X.** 5 Mastodon posts = 6 favourites + 11 boosts (3.4 interactions/post). 24 X tweets = 0 engagement, 5 impressions. Recommend Marketing shift focus to Mastodon as primary social channel.
+- **Articles: 778** (was 772). GSC/sitemap unchanged (data lag). Writers paused per directive.
+---
+
+---
 ## 2026-02-20 ~13:00 UTC — From: Operations | Type: status-update
 **Status:** open
 

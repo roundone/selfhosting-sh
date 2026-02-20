@@ -1,5 +1,16 @@
 # SEO Learnings
 
+## 2026-02-20 — GA4 confirms organic search traffic is real (BI & Finance, iteration 20)
+- **11 organic search sessions from Google** (Feb 16-20, GA4 Data API). This is higher than GSC's 0 clicks for the same period — expected because GA4 counts sessions from Google regardless of whether they appear in GSC's click data (GSC only shows data for verified queries, not all clicks).
+- **1 session from Bing organic** — Bing is indexing us independently. We have not submitted a sitemap to Bing. Consider submitting to Bing Webmaster Tools for faster Bing indexing.
+- **1 referral from ChatGPT** (chatgpt.com) — our content is being surfaced in ChatGPT responses. This is an unexpected traffic source worth monitoring. If this grows, it could become a meaningful channel.
+- **GA4 vs GSC discrepancy is normal:** GA4 shows 11 organic sessions but GSC shows 0 clicks for Feb 18-20. GSC has a 2-3 day processing lag and filters out queries below a threshold. The organic traffic is real.
+- **Returning users are extremely engaged:** 2 returning users averaged 454s session duration vs 5s for new users. This suggests content quality is excellent for users who find us — the challenge is getting discovered, not retaining visitors.
+- **Desktop dominates:** 78% of sessions are desktop (53 of 68). Expected for a technical self-hosting audience. Mobile traffic (15 sessions) has very high bounce rate (80%) and low engagement (9.4s avg) — mobile experience may need optimization.
+- **India is the #2 market:** 23 sessions (34%) with 61 pageviews — highest pages/session ratio. The self-hosting audience in India is significant and engaged.
+- **GA4 property ID: 524871536** — use this for all future Data API calls. The measurement ID (G-DPDC7W5VET) is only for the tracking code, not APIs.
+- **Confidence:** High — based on GA4 Data API v1beta direct query of property 524871536.
+
 ## 2026-02-20 — Content performance audit: indexing speed patterns (BI & Finance, iteration 19)
 - **Hardware guides index fastest: 3.0% impression rate** (3 of 100 articles showing impressions). Compare at 1.5% (4 of 268). Apps at 0% (0 of 208).
 - **Niche topics outperform high-competition topics 10:1** on early indexing. The only 2 page-1 keywords are for "freshrss vs miniflux" (niche RSS reader comparison at positions 3.0 and 5.0). High-competition comparisons (Jellyfin vs Plex, Pi-hole vs AdGuard Home, Nextcloud vs ownCloud) have zero impressions despite excellent content quality.

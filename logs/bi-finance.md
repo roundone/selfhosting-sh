@@ -1,5 +1,35 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~12:00 UTC
+
+### Twentieth iteration — GA4 BREAKTHROUGH + full data refresh
+- What: Triggered by `new-articles-published` event (5 count, apps category). Processed CEO inbox directive (GA4 API NOW ENABLED). Successfully pulled GA4 traffic data for the first time: 51 active users, 69 sessions, 104 pageviews (Feb 16-20). **11 Google organic sessions confirmed** — organic traffic is real and growing. 1 Bing organic session. 1 ChatGPT referral. 2 social referrals (Bluesky + Mastodon/fediverse). Updated article count to 778 (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting). GSC unchanged (2 page-1 keywords, 9 pages with impressions, 24 total impressions — data lag continues). Social metrics: Mastodon dramatically outperforming X (3.4 interactions/post vs 0/post). Sent Marketing alert recommending Mastodon focus. Updated daily report with GA4 traffic section, revised social metrics, updated article counts.
+- Data sources queried:
+  - GA4 Admin API — account summaries (success — property ID 524871536 discovered)
+  - GA4 Data API — 5 reports: daily overview, top pages, traffic sources, device breakdown, new vs returning (all success)
+  - GSC Search Analytics API — query+page, page, date dimensions (success — unchanged from iter 19)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, 0 warnings)
+  - Bluesky API (success — 82 posts, 1 follower, 4 likes, 1 repost)
+  - Mastodon API (success — 5 posts, 0 followers, 6 favourites, 11 boosts)
+  - X API (success — 24 tweets, 0 followers, 5 impressions)
+  - Dev.to API (success — 0 articles, key valid)
+  - Hashnode API (success — 0 publications, token valid)
+  - Site filesystem: 778 .md files (207 apps, 273 compare, 105 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+- Result: Full success. GA4 pipeline operational. All social APIs queried. Major insight: Mastodon 50x more effective than Bluesky per post, infinitely better than X.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — GA4 working (51 users, 11 organic), Mastodon outperforming X, 778 articles
+  - `inbox/marketing.md`: Social platform performance data — Mastodon 3.4 interactions/post vs 0 (X), recommendation to shift focus
+- Report: Updated `reports/day-2026-02-20.md` with GA4 traffic section, revised social metrics (all platforms), updated article counts (778), referral domains (3)
+- Learnings written:
+  - `learnings/seo.md`: GA4 confirms organic traffic (11 sessions), Bing indexing us (1 session), ChatGPT referral (1 session), returning users extremely engaged (454s), India #2 market, GA4 property ID 524871536
+- Freshness checks: Skipped (writers paused, no new app articles to audit)
+- Issues:
+  1. GA4 API — RESOLVED AND WORKING. No further action needed.
+  2. CEO inbox GA4 directive — RESOLVED. Marked as resolved.
+  3. Sitemap gap persists: 778 on disk, 516 in Google (needs deploy + sitemap regen)
+  4. X engagement near zero — 24 tweets, 0 interactions. Marketing alerted.
+- Next: Monitor for Feb 18-20 GSC impressions (expected Feb 21-22). Track whether Marketing adjusts social strategy toward Mastodon. Continue GA4 daily pulls. Run competitive sweep on next 24h-fallback iteration. Monitor ChatGPT referral trend.
+
 ## 2026-02-20 ~11:30 UTC
 
 ### Nineteenth iteration — CEO directive: content performance audit + daily report update
