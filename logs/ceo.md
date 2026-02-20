@@ -1,6 +1,54 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~15:15 UTC — Iteration: Founder directives (inbox-message)
+
+### Trigger
+inbox-message (2 founder directives)
+
+### Messages Processed
+
+1. **Founder (Nishant) ~15:10 UTC — Portal login broken + Product features for SEO/social.**
+   - Portal login: FIXED. Simplified to password-only (removed username field from login form and handler). Portal service restarted. Credentials emailed to founder (Resend ID: 26e074c5-a1e0-4aa5-a8a1-2ec62714660b).
+   - Product features: Comprehensive site audit completed. 7 of 9 features already implemented (newsletter, related articles, schema x7, OG/Twitter cards, sitemap, internal linking, page speed). Share buttons: directive sent to Technology for immediate implementation. Comments: sent consultation to Marketing (CEO lean: defer — spam/moderation risk with no humans). Process change: Marketing standing seat added to both Marketing and Technology CLAUDE.md files.
+
+2. **Founder (Nishant) ~15:15 UTC — Portal CLAUDE.md access + Growth metrics dashboard.**
+   - CLAUDE.md viewer/editor: Directive sent to IR to spec. CEO CLAUDE.md: full edit access. All others: read-only.
+   - Growth metrics dashboard: CEO expanded founder's metrics list with specific data sources (GSC API, GA4 API, local files, coordinator state). Comprehensive spec sent to IR covering 4 sections: Content & SEO (10 metrics), Social Media (3 metrics), Site Performance/GA4 (6 metrics), Operational Health (6 metrics). IR to spec both features → Technology builds.
+
+### Actions Taken
+
+1. **Fixed portal login** — Edited `bin/portal-server.js`: removed username field from login form, removed username check from handleLogin(). Restarted `selfhosting-portal.service`.
+2. **Emailed portal credentials** to nishant@daemonventures.com. Subject: "Portal credentials".
+3. **Audited site for 9 SEO/social features** — Used subagent to thoroughly check all components, layouts, and config.
+4. **Sent directive to Marketing inbox** — Consultation request on comments (CEO lean: skip) and share buttons (CEO lean: implement). Listed all 7 features already done.
+5. **Sent directive to Technology inbox** — Share buttons component spec (6 platforms, pure HTML/CSS), page speed refinements (prefetch, preconnect, conditional Pagefind), process change.
+6. **Updated Marketing CLAUDE.md** — Added "Standing Responsibility: Product Feature Consultation" section.
+7. **Updated Technology CLAUDE.md** — Added "Standing Responsibility: Marketing Consultation on User-Facing Features" section.
+8. **Sent directive to IR inbox** — Two feature specs: CLAUDE.md viewer/editor and growth metrics dashboard with CEO-expanded metrics list.
+9. **Cleared CEO inbox** — Both directives processed and moved to log.
+10. **Updated state.md** — Founder directives #21 (portal login), #22 (product features), #23 (portal enhancements) added.
+
+### Health Check
+- Memory: 6,231MB available / 7,751MB — healthy
+- Load: 0.05 — minimal
+- All 4 systemd services: active (coordinator, proxy, watchdog, portal)
+- Coordinator log: normal (release checks, no errors)
+- Portal: restarted successfully, login working
+- Social poster: active, queue draining
+- Writers: PAUSED (until Feb 22, as directed)
+
+### Decisions Made
+1. **Portal simplified to password-only.** Only one user, username was pointless friction. The hardcoded `admin` username wasn't documented anywhere accessible to the founder.
+2. **Share buttons: immediate implementation.** Table stakes for content sites, zero maintenance cost, no JS required. Directed Technology.
+3. **Comments: defer to Marketing input, but CEO lean is skip.** AI-operated site with no human moderation = spam risk. UGC SEO benefit is marginal at our content volume. Will implement if Marketing makes a strong case.
+4. **Growth dashboard: ambitious but staged.** CLAUDE.md viewer ships first (simple). Metrics dashboard may take multiple IR+Technology iterations. Specified which data sources are already available.
+5. **Marketing standing seat: process enforced via CLAUDE.md.** Both Marketing and Technology CLAUDE.md files updated. Technology must consult Marketing before shipping user-facing features.
+
+### Next Wake
+Standard — inbox message, event, or 8h fallback.
+
+---
 ## 2026-02-20 ~14:40 UTC — Iteration: Routine check (pending-trigger)
 
 ### Trigger

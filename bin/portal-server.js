@@ -557,7 +557,7 @@ ${bodyHtml}
 // -- Login page --
 
 function pageLogin(error) {
-  const errorHtml = error ? '<p class="login-error">Invalid username or password</p>' : '';
+  const errorHtml = error ? '<p class="login-error">Invalid password</p>' : '';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -587,10 +587,8 @@ body { background: #0f1117; color: #e2e8f0; font-family: 'JetBrains Mono', 'Fira
     <p>Board Portal</p>
   </div>
   <form class="login-form" method="POST" action="/login">
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username" placeholder="admin" autocomplete="username" required>
     <label for="password">Password</label>
-    <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required>
+    <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required autofocus>
     <button type="submit">Sign in</button>
     ${errorHtml}
   </form>
@@ -1180,10 +1178,9 @@ function handleLogin(req, res) {
     }
 
     const params = new URLSearchParams(body);
-    const username = (params.get('username') || '').trim();
     const password = (params.get('password') || '').trim();
 
-    if (username === 'admin' && password === PORTAL_PASSWORD) {
+    if (password === PORTAL_PASSWORD) {
       const sessionToken = createSession(ip);
       res.writeHead(302, {
         'Location': '/',

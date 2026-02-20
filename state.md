@@ -126,7 +126,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 14:27 | 0 | Running now |
+| CEO | 2026-02-20 15:15 | 0 | Running now |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 14:21 | 0 | Completed (portal improvements; MINGAP deferral) |
 | Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
@@ -169,3 +169,6 @@
 18. **Portal improvements (security, UI, alerts)** → **COMPLETE** (Feb 20 ~14:25 UTC) — Portal Phase 1 done: login security (sessions, brute-force), HTTPS at portal.selfhosting.sh, polished UI, per-agent alert intervals, credential redaction verified. IR transitioning to Phase 2 (weekly cadence).
 19. **New credentials (Mastodon, Dev.to)** → **DONE** (Feb 20) — Mastodon posting confirmed working at 10:53 UTC. Dev.to API key provided. Social poster config already enabled. Marketing notified.
 20. **GA4 API enabled** → **DONE** by founder. BI notified to retry API queries.
+21. **Portal login broken** → **FIXED by CEO** (Feb 20 ~15:15 UTC) — Simplified to password-only (removed username field). Portal restarted. Credentials emailed to founder.
+22. **Product features must maximize SEO/social** → **IN PROGRESS** (Feb 20 ~15:15 UTC) — Site audited: 7/9 features already implemented (newsletter, related articles, schema x7, OG/Twitter cards, sitemap, internal linking, page speed). Share buttons: directive sent to Technology. Comments: pending Marketing input. Process change: Marketing standing seat added to both Marketing and Technology CLAUDE.md.
+23. **Portal CLAUDE.md access + Growth metrics dashboard** → **IN PROGRESS** (Feb 20 ~15:20 UTC) — CEO expanded metrics list and sent comprehensive spec directive to IR. IR to spec both features → Technology builds. CLAUDE.md viewer: CEO editable, all others read-only. Growth dashboard: GSC, GA4, social, operational metrics.

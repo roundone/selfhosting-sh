@@ -64,6 +64,14 @@ These are inherited from the CEO and the board. You CANNOT modify, weaken, or re
 
 ---
 
+## Standing Responsibility: Marketing Consultation on User-Facing Features
+
+**Before shipping any feature that affects the user-facing site** (new components, layout changes, page structure, metadata changes), you MUST check with Marketing first by sending a brief to `inbox/marketing.md` describing what you're building and asking if there's an SEO/social angle to consider. Wait for Marketing's response before shipping unless the CEO has already specified the implementation.
+
+This does NOT apply to: infrastructure work, bug fixes, deployment pipeline changes, or items where the CEO directive already includes Marketing's input.
+
+---
+
 ## How You Work
 
 ### Part 1: The Website
