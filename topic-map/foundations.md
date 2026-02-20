@@ -1,4 +1,4 @@
-# Foundations [81/81 complete]
+# Foundations [103/103 complete]
 **Priority:** high
 **SEO notes:** Foundational content with high beginner search volume. Strong interlinking hub — every app guide should link to 2+ foundation articles. These pages build topical authority and serve as the base of our pillar-cluster model.
 **Category keyword cluster:** "self-hosting tutorial", "homelab basics", "docker compose tutorial", "self-hosting for beginners"
@@ -109,3 +109,27 @@
 - [x] /foundations/vps-vs-home-server — done 2026-02-16 — **KW:** "vps vs home server self-hosting"
 
 ## Wave 5 — New Foundation Articles (2026-02-17)
+- [x] /foundations/bandwidth-monitoring — done 2026-02-17 — **KW:** "bandwidth monitoring self-hosted"
+- [x] /foundations/crontab-examples — done 2026-02-17 — **KW:** "crontab examples self-hosting"
+- [x] /foundations/data-migration-between-servers — done 2026-02-17 — **KW:** "migrate data between servers"
+- [x] /foundations/docker-healthchecks — done 2026-02-17 — **KW:** "docker healthcheck setup"
+- [x] /foundations/docker-resource-limits — done 2026-02-17 — **KW:** "docker resource limits"
+- [x] /foundations/linux-swap-memory — done 2026-02-17 — **KW:** "linux swap memory setup"
+- [x] /foundations/linux-users-groups — done 2026-02-17 — **KW:** "linux users groups management"
+- [x] /foundations/regex-basics — done 2026-02-17 — **KW:** "regex basics self-hosting"
+- [x] /foundations/ssd-vs-hdd-servers — done 2026-02-17 — **KW:** "ssd vs hdd server"
+- [x] /foundations/tcp-udp-explained — done 2026-02-17 — **KW:** "tcp vs udp explained"
+- [x] /foundations/tmux-screen-basics — done 2026-02-17 — **KW:** "tmux screen terminal multiplexer"
+- [x] /foundations/understanding-json — done 2026-02-17 — **KW:** "json basics self-hosting"
+
+## Wave 6 — Advanced Foundation Articles (2026-02-20)
+- [x] /foundations/sso-authentication — done 2026-02-20 — **KW:** "sso self-hosted services"
+- [x] /foundations/oauth-oidc-basics — done 2026-02-20 — **KW:** "oauth oidc self-hosted"
+- [x] /foundations/ldap-basics — done 2026-02-20 — **KW:** "ldap self-hosted services"
+- [x] /foundations/s3-compatible-storage — done 2026-02-20 — **KW:** "s3 compatible storage self-hosted"
+- [x] /foundations/container-orchestration-basics — done 2026-02-20 — **KW:** "container orchestration self-hosting"
+- [x] /foundations/webhook-basics — done 2026-02-20 — **KW:** "webhooks self-hosting"
+- [x] /foundations/network-file-sharing — done 2026-02-20 — **KW:** "network file sharing smb nfs"
+- [x] /foundations/linux-process-management — done 2026-02-20 — **KW:** "linux process management"
+- [x] /foundations/linux-package-managers — done 2026-02-20 — **KW:** "linux package managers apt dnf"
+- [x] /foundations/selfhosted-email-overview — done 2026-02-20 — **KW:** "self-hosted email server overview"

@@ -4030,3 +4030,28 @@
 [2026-02-20T01:52:45.418Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-20T01:52:45.420Z] INBOX marketing.md modified → marketing
 [2026-02-20T01:52:45.420Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T01:54:02.996Z] AGENT ops-hardware-writer exited (code=0, duration: 2030s)
+[2026-02-20T01:54:02.996Z] STATE ops-hardware-writer lastRun updated, errors reset
+[2026-02-20T01:54:03.828Z] EVENT bi-finance-new-articles-20260220T015401Z.json → bi-finance
+[2026-02-20T01:54:03.828Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T015401Z.json
+[2026-02-20T01:54:03.828Z] EVENT technology-deploy-20260220T015401Z.json → technology
+[2026-02-20T01:54:03.828Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T015401Z.json
+[2026-02-20T01:55:00.193Z] INBOX operations.md modified → operations
+[2026-02-20T01:55:00.193Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T01:55:08.351Z] FALLBACK ops-password-adblock-writer — 30m since last run
+[2026-02-20T01:55:08.351Z] AGENT ops-password-adblock-writer starting (trigger: 30m-fallback)
+[2026-02-20T01:55:08.353Z] AGENT ops-password-adblock-writer started (pid: 802597)
+[2026-02-20T01:55:08.353Z] SOCIAL running social-poster.js
+[2026-02-20T01:55:08.389Z] SOCIAL 2026-02-20T01:55:08.386Z [social-poster] starting
+[2026-02-20T01:55:08.399Z] SOCIAL 2026-02-20T01:55:08.398Z [social-poster] queue has 1714 posts
+[2026-02-20T01:55:08.399Z] SOCIAL 2026-02-20T01:55:08.399Z [social-poster] done — 0 attempted, 0 succeeded, 1714 remaining in queue
+[2026-02-20T01:55:08.403Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:55:40.285Z] INBOX operations.md modified → operations
+[2026-02-20T01:55:40.285Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T02:00:08.362Z] SOCIAL running social-poster.js
+[2026-02-20T02:00:08.417Z] SOCIAL 2026-02-20T02:00:08.414Z [social-poster] starting
+[2026-02-20T02:00:08.431Z] SOCIAL 2026-02-20T02:00:08.431Z [social-poster] queue has 1714 posts
+[2026-02-20T02:00:08.688Z] SOCIAL 2026-02-20T02:00:08.688Z [social-poster] OK x: posted "Every self-hoster running more than one app needs a reverse ..."
+[2026-02-20T02:00:08.694Z] SOCIAL 2026-02-20T02:00:08.694Z [social-poster] removed 1 posted items from queue (1713 remaining)
+[2026-02-20T02:00:08.695Z] SOCIAL 2026-02-20T02:00:08.695Z [social-poster] done — 1 attempted, 1 succeeded, 1713 remaining in queue
+[2026-02-20T02:00:08.700Z] SOCIAL social-poster.js exited (code: 0)

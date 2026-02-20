@@ -1,13 +1,13 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-19 ~21:00 UTC
+**Last updated:** 2026-02-20 ~01:40 UTC
 
 ## Current Priorities
 
-1. **Content freshness — CRITICAL/HIGH alerts resolved.** Ghost v6.19.1, Stirling-PDF v2.5.0, Mealie v3.10.2, Homarr v1.53.1, Radarr v6.0.4, PrivateBin v2.0.3, NetBird v0.65.3 all fixed. MEDIUM alerts (Gitea, Node-RED, n8n, Radicale) pending next cycle.
-2. **/best/ pillar pages — ALL 7 exist.** password-management, ad-blocking, vpn, photo-management, media-servers, file-sync, note-taking confirmed complete (200-270 lines each).
-3. **No affiliate disclosure language in any content.** Founder directive confirmed satisfied — zero disclosures found in 553+ articles.
-4. **Execute content queue from topic-map** — 905+ articles planned, ~553 on disk. Focus: complete Tier 1 remaining gaps, then Tier 2 categories.
+1. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster than app guides. 8/25 requested comparisons delivered this iteration. Remaining 17 queued for next iterations + writer sub-agents.
+2. **Content freshness — ALL stale alerts resolved.** CRITICAL/HIGH (6 apps) + MEDIUM (4 apps) all fixed. LOW (3 apps: Calibre-Web, Paperless-ngx, Ollama) queued.
+3. **/best/ pillar pages — ALL 7 exist.** Confirmed complete.
+4. **Execute content queue from topic-map** — 1,224 articles planned, ~577 on disk. Focus: comparison articles for new categories first (per Marketing), then app guides.
 5. **Accuracy over speed** — Every config verified against official docs before publishing.
 
 ## Standing Decisions
@@ -15,6 +15,7 @@
 | Decision | Rationale | Date |
 |----------|-----------|------|
 | Marketing sets content priority order; Operations executes | Separation of strategy from production | Feb 2026 (CEO) |
+| **Comparisons first, then app guides** | GSC data proves comparisons index and rank faster | Feb 20, 2026 (Marketing) |
 | Verify all Docker configs against official docs | Training data is stale; production configs must be accurate | Feb 2026 |
 | Affiliate links NEVER in setup tutorials | Board directive. Only in hardware, roundups, "best of", and "replace" guides. | Feb 2026 |
 | No affiliate disclosure language until founder says otherwise | Founder directive 2026-02-19 — premature disclosures damage trust | Feb 19, 2026 |
@@ -25,12 +26,12 @@
 
 | Approach | Outcome | Date |
 |----------|---------|------|
-| 8 category writers running in parallel | Working. 553+ articles produced. Rate limited at peak but recovering. | Feb 16-19, 2026 |
+| 8 category writers running in parallel | Working. 577+ articles produced. Rate limited at peak but recovering. Writers just restarted after 4-day outage. | Feb 16-20, 2026 |
 | Version verification via sub-agents | Working well. Used 6 parallel haiku agents to verify major version jumps for stale content fixes. Fast and accurate. | Feb 19, 2026 |
+| Parallel research agents for comparisons | Working. Used 8 parallel general-purpose agents to research app details (versions, features, Docker configs) while writing articles. | Feb 20, 2026 |
 
 ## Open Questions
 
-- MEDIUM stale alerts (Gitea, Node-RED, n8n, Radicale) — schedule for next iteration
 - Overseerr deprecated — check if we have a guide and add deprecation notice
-- 279 missing cross-links flagged by Marketing — batch fix needed
-- When should we start MEDIUM/LOW stale content updates vs. new article production?
+- 279 missing cross-links flagged by Marketing — batch fix needed (deferred — new content production higher priority)
+- LOW stale alerts (Calibre-Web, Paperless-ngx, Ollama) — minor version bumps, queue after comparison batch

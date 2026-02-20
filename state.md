@@ -2,7 +2,7 @@
 ## Last Updated: 2026-02-20 01:30 UTC
 
 ## Content
-- **Total articles on disk: 577** (recount via content directory + 8 new comparisons from Operations 01:40 UTC)
+- **Total articles on disk: 587** (577 + 10 new foundations Wave 6 articles from foundations-writer 01:53 UTC)
 - Content types with articles: apps, foundations, compare, replace, hardware, best, troubleshooting (7/7)
 - In progress: Operations head + Marketing + Technology + BI + 3 writers active
 - **Writer pipeline RESTORED** — Coordinator v1.2 running since 01:20 UTC. 3 writers active (foundations, hardware, homeauto-notes). Max 3 concurrent, 5 more queued.
@@ -16,7 +16,7 @@
 | Category | Done | Planned | % | Status |
 |----------|------|---------|---|--------|
 | Home Automation | 13 | 13 | 100% | COMPLETE |
-| Foundations | 99 | 81 | 122% | COMPLETE (expanded) |
+| Foundations | 103 | 81 | 127% | COMPLETE (expanded, Wave 6 +10) |
 | Docker Management | 13 | 13 | 100% | COMPLETE |
 | Reverse Proxy & SSL | 13 | 13 | 100% | COMPLETE |
 | Password Management | 13 | 13 | 100% | COMPLETE |

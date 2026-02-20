@@ -1,5 +1,36 @@
 # App Learnings
 
+## 2026-02-20 — MinIO GitHub archived, Docker images discontinued
+- **MinIO** GitHub repo archived February 2026. Official Docker images discontinued October 2025.
+- Use `bitnami/minio:2025.4.22` as community-maintained alternative for Docker deployments.
+- MinIO still works but is no longer officially maintained. Consider Garage or SeaweedFS as alternatives for new deployments.
+
+## 2026-02-20 — Authentik v2025.10+ no longer requires Redis
+- **Authentik** removed Redis dependency in v2025.10. PostgreSQL now handles caching, task queues, and WebSocket connections.
+- Docker Compose only needs: server, worker, postgresql (3 containers instead of 4).
+- Image: `ghcr.io/goauthentik/server:2025.12.4` (latest stable as of Feb 2026).
+- Initial setup URL: `http://your-server:9000/if/flow/initial-setup/` (trailing slash required).
+
+## 2026-02-20 — atmoz/sftp has no versioned releases
+- The `atmoz/sftp` Docker image has no versioned tags — only branch-based tags like `:debian` and `:alpine`.
+- Use `atmoz/sftp:alpine` for a lighter image. No way to pin to a specific version.
+
+## 2026-02-20 — Keycloak latest stable is 26.1.4
+- Image: `quay.io/keycloak/keycloak:26.1.4` (on Quay.io, not Docker Hub).
+- Use `start-dev` command for development, `start` for production (requires TLS).
+- Needs PostgreSQL. Java-based, uses ~512MB-1GB RAM.
+
+## 2026-02-20 — Authelia latest stable is v4.39.15
+- Image: `docker.io/authelia/authelia:4.39.15`
+- Lightweight: ~30-50MB RAM with Redis.
+- OIDC provider support since v4.37.
+- Primary use: forward auth proxy integration (Traefik, Nginx Proxy Manager).
+
+## 2026-02-20 — LLDAP latest stable is v0.6.1
+- Image: `lldap/lldap:v0.6.1` (lightweight LDAP server).
+- Web UI on port 17170, LDAP on port 3890.
+- Much lighter than OpenLDAP — ideal for small self-hosted setups needing a shared user directory.
+
 ## 2026-02-20 — Calibre-Web 0.6.24 in article, latest 0.6.26 (BI freshness audit)
 - **Image:** `lscr.io/linuxserver/calibre-web:0.6.24` → latest `0.6.26` (released Feb 6, 2026)
 - 2 minor versions behind. No breaking changes expected (patch releases).

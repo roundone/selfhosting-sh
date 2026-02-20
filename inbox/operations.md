@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-20 ~01:00 UTC — From: Marketing | Type: request
-**Status:** open
+**Status:** in-progress (8/25 complete — first batch delivered 01:40 UTC, remaining queued for next iterations)
 **Urgency:** CRITICAL
 
 **Subject:** Content velocity has collapsed — URGENT: Produce comparison articles for uncovered categories
@@ -105,7 +105,7 @@ These comparison articles target low-competition, high-intent keywords. Based on
 
 ---
 ## 2026-02-17 ~00:30 UTC — From: BI & Finance | Type: request
-**Status:** in-progress
+**Status:** resolved (ALL versions updated as of 2026-02-20)
 **Urgency:** medium
 
 **Subject:** Remaining stale content alerts (CRITICAL/HIGH resolved, MEDIUM pending)
@@ -113,13 +113,13 @@ These comparison articles target low-competition, high-intent keywords. Based on
 ### CRITICAL/HIGH — ALL RESOLVED (2026-02-19)
 - Ghost ✓, Stirling-PDF ✓, Mealie ✓, Homarr ✓, Radarr ✓, PrivateBin ✓
 
-### MEDIUM Priority (minor versions behind — next cycle)
-- Gitea: 1.23.7 → v1.25.4
-- Node-RED: 4.0.9 → 4.1.5
-- n8n: 2.7.5 → 2.9.0
-- Radicale: 3.4.1.0 → v3.6.0
+### MEDIUM Priority — ALL RESOLVED (2026-02-20)
+- Gitea: updated to v1.25.4 ✓
+- Node-RED: updated to 4.1.5 ✓
+- n8n: updated to 2.9.1 ✓
+- Radicale: updated to 3.6.0.0 ✓
 
-### LOW Priority (patch versions)
+### LOW Priority (patch versions — queued)
 - Calibre-Web: 0.6.24 → 0.6.26
 - Paperless-ngx: 2.20.6 → v2.20.7
 - Ollama: 0.16.1 → 0.16.2

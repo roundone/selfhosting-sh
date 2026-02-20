@@ -30,7 +30,7 @@ Meilisearch and Typesense are both open-source, typo-tolerant search engines des
 
 **Meilisearch** — Written in Rust. 56k GitHub stars. MIT license (community edition). Created by Meili. Latest version: v1.35.1 (February 2026).
 
-**Typesense** — Written in C++. 25k GitHub stars. GPL-3.0 license (server). Created by Typesense Inc. Latest version: v31.0 (2026).
+**Typesense** — Written in C++. 25k GitHub stars. GPL-3.0 license (server). Created by Typesense Inc. Latest version: v30.1 (January 2025).
 
 ## Feature Comparison
 
@@ -84,7 +84,7 @@ volumes:
 ```yaml
 services:
   typesense:
-    image: typesense/typesense:27.1
+    image: typesense/typesense:30.1
     container_name: typesense
     ports:
       - "8108:8108"
@@ -104,11 +104,11 @@ Both are equally simple to deploy for a single node. Typesense uses command-line
 
 ## Performance and Resource Usage
 
-**Meilisearch** uses an in-memory index by default — fast reads but higher memory usage relative to dataset size. Indexing is single-threaded for writes. Good for datasets up to a few million documents.
+**Meilisearch** uses disk-based storage (LMDB, memory-mapped). Only the portions of the index being actively queried are loaded into RAM. This means Meilisearch can handle datasets much larger than available memory — up to ~80 TiB theoretically, with best performance under 2 TiB. Indexing uses up to 2/3 of available RAM by default (configurable). Good for large datasets when RAM is limited.
 
-**Typesense** is designed for memory efficiency. A fresh instance uses ~30 MB of RAM. Benchmarks show 1 million Hacker News titles consuming ~165 MB. A 4-vCPU machine handles 46-104 concurrent searches per second depending on query complexity.
+**Typesense** keeps its entire index in RAM for maximum search speed. A fresh instance uses ~30 MB, and 1 million Hacker News titles consume ~165 MB. Expect 2-3x the size of your searchable fields in RAM usage. A 4-vCPU machine handles 46-104 concurrent searches per second. The trade-off: your dataset size is limited by available RAM.
 
-For small to medium datasets (under 1M documents), both perform similarly. For larger datasets, Typesense is more memory-efficient and handles concurrent queries better.
+This is the fundamental architectural difference. Meilisearch handles larger datasets on less RAM. Typesense is faster for datasets that fit in memory but can't exceed it. For most self-hosting use cases (under 1M documents), both perform well.
 
 ## Community and Support
 

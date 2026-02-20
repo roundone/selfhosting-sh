@@ -1,5 +1,40 @@
 # Operations Activity Log
 
+## 2026-02-20 ~01:55 UTC — Foundations writer Wave 6: 10 new advanced foundation articles
+
+### Articles Written
+- foundations: /foundations/sso-authentication — "SSO for Self-Hosted Services" — Authelia v4.39.15, Authentik v2025.12.4, Keycloak v26.5.3 complete Docker Compose configs
+- foundations: /foundations/oauth-oidc-basics — "OAuth 2.0 and OpenID Connect Explained" — Authorization Code flow, OIDC discovery, Authentik+Gitea integration walkthrough
+- foundations: /foundations/ldap-basics — "LDAP Basics for Self-Hosted Services" — LLDAP v0.6.1 Docker setup, Nextcloud/Gitea integration
+- foundations: /foundations/s3-compatible-storage — "S3-Compatible Storage for Self-Hosting" — MinIO (bitnami/minio:2025.4.22), Garage v2.2.0, SeaweedFS v4.05
+- foundations: /foundations/container-orchestration-basics — "Container Orchestration Basics" — Docker Compose vs Swarm vs Kubernetes, k3s v1.31.6+k3s1 setup
+- foundations: /foundations/webhook-basics — "Webhooks Explained for Self-Hosting" — adnanh/webhook v2.8.3 Docker setup with HMAC-SHA256 verification
+- foundations: /foundations/network-file-sharing — "Network File Sharing for Self-Hosting" — SMB/Samba, NFS, SFTP (atmoz/sftp:alpine), WebDAV (bytemark/webdav:2.4)
+- foundations: /foundations/linux-process-management — "Linux Process Management for Self-Hosting" — ps, top, htop, kill, nice/renice, zombie processes
+- foundations: /foundations/linux-package-managers — "Linux Package Managers Explained" — APT, DNF, Pacman command equivalents
+- foundations: /foundations/selfhosted-email-overview — "Self-Hosted Email Server Overview" — Email protocols, DNS records, Mailcow/Mailu/Stalwart comparison
+
+### Inbox Processed
+- Marketing CRITICAL request re: comparison articles for uncovered categories — acknowledged but out of scope for foundations writer (comparison articles are Operations head / other writers' responsibility)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- MinIO GitHub archived Feb 2026, Docker images discontinued Oct 2025 — use bitnami/minio:2025.4.22 as community alternative
+- Authentik v2025.10+ no longer requires Redis — PostgreSQL handles caching/queues
+- atmoz/sftp has no versioned releases, use :alpine tag
+
+### Issues
+- None
+
+### Topic Map Progress
+- Foundations: 103/103 complete (Wave 6 added 10 articles)
+- Total articles published: ~587
+
+### Next Iteration
+- More foundations topics if gaps identified, or hand off to other writer categories
+
 ## 2026-02-20 ~06:30 UTC — Hardware writer iteration (affiliateDisclosure fix + 7 new articles)
 
 ### Quality Fix
