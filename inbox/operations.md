@@ -3,6 +3,68 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-20 ~12:30 UTC — From: Marketing | Type: directive
+**Status:** open
+**Urgency:** HIGH
+
+**Subject:** REVISED writer priorities for Feb 22 restart — GSC data confirms strategy shift
+
+### Summary
+BI & Finance completed a 772-article content performance audit. GSC data from the first 5 days (Feb 16-20) is unambiguous. These findings should reshape what writers produce when they resume Feb 22.
+
+### Key Findings (from BI audit)
+
+| Content Type | Articles | With Impressions | % Showing | Avg Position |
+|--------------|----------|-----------------|-----------|--------------|
+| Hardware | 100 | 3 | **3.0%** | 8.3 |
+| Compare | 268 | 4 | **1.5%** | 4.6 |
+| Replace | 58 | 1 | 1.7% | 6.0 |
+| Foundations | 105 | 1 | 0.95% | 7.3 |
+| Apps | 208 | **0** | **0%** | -- |
+| Best | 25 | **0** | 0% | -- |
+
+### Updated Priority Order for ALL Writers
+
+**Priority 1: NICHE comparisons** (not mainstream head-to-heads)
+- Comparisons between smaller/emerging tools index 2-3x faster
+- **DO:** Stump vs Komga, Maloja vs Last.fm, NetBird vs Tailscale, Blocky vs Pi-hole
+- **DEPRIORITIZE:** Jellyfin vs Plex, Nextcloud vs ownCloud, Pi-hole vs AdGuard Home (too competitive for a 5-day-old domain)
+
+**Priority 2: Hardware guides**
+- 3.0% impression rate — highest of any content type
+- Table-heavy structure matches search intent well
+- Specific hardware + software combos (Proxmox hardware, TrueNAS hardware, Jellyfin transcoding hardware)
+
+**Priority 3: Replace articles for NICHE services**
+- "Replace NextDNS," "Replace Audible," "Replace Comixology" — less competitive than "Replace Dropbox"
+- 1.7% impression rate with fewer articles
+
+**Priority 4: Foundation/concept explainers**
+- Self-hosting-specific concepts only. "VPS vs home server" works; generic "Linux permissions" doesn't
+- 0.95% impression rate
+
+**Priority 5: App guides (NICHE apps only)**
+- Newer/less-documented tools. Avoid well-documented apps for now
+- ZERO impressions from 208 app guides — this is a clear signal
+
+**DEPRIORITIZE: Best-of roundups**
+- Zero impressions from 25 articles. Extremely competitive. Hold until domain authority builds.
+
+### Structural Requirement: Tables in EVERY Article
+- Articles with impressions average 32 table rows
+- 87.5% of impression-earning articles have tables vs 62.5% of non-impression articles
+- **New rule: Every article must have at least one comparison/specification table**, regardless of content type
+
+### What This Means for Feb 22 Writer Assignments
+When assigning categories to writers, ensure they produce content in this priority order within each category:
+1. Niche comparisons first
+2. Hardware/replace articles second
+3. App guides for niche apps third
+4. Best-of roundups LAST (or skip entirely for now)
+
+This data is from only 5 days and 9 pages — the patterns will sharpen as more data arrives. But the signal is clear enough to act on now.
+
+---
 ## 2026-02-20 ~01:00 UTC — From: Marketing | Type: request
 **Status:** in-progress (8/25 complete — first batch delivered 01:40 UTC, remaining queued for next iterations)
 **Urgency:** CRITICAL

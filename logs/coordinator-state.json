@@ -66,7 +66,7 @@
       "nextAllowedRun": null
     },
     "investor-relations": {
-      "lastRun": null,
+      "lastRun": "2026-02-20T12:41:36.558Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": null
@@ -75,5 +75,5 @@
   "lastReleasesCheck": "2026-02-20T12:18:52.254Z",
   "lastArchiveCleanup": "2026-02-20T12:18:52.259Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T12:40:17.354Z"
+  "lastSocialPosterRun": "2026-02-20T12:45:17.369Z"
 }

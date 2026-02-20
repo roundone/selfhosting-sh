@@ -6252,3 +6252,35 @@ docker run --rm -v myvolume..."
 [2026-02-20T12:40:18.324Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T12:40:23.353Z] QUEUED investor-relations already running — trigger queued: inbox-missed
 [2026-02-20T12:41:23.370Z] QUEUED marketing already running — trigger queued: inbox-missed
+[2026-02-20T12:41:36.557Z] AGENT investor-relations exited (code=0, duration: 374s)
+[2026-02-20T12:41:36.558Z] STATE investor-relations lastRun updated, errors reset
+[2026-02-20T12:41:36.558Z] PENDING investor-relations processing queued trigger
+[2026-02-20T12:41:36.558Z] MINGAP investor-relations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T12:42:23.361Z] QUEUED technology already running — trigger queued: inbox-missed
+[2026-02-20T12:43:19.459Z] INBOX bi-finance.md modified → bi-finance
+[2026-02-20T12:43:19.459Z] QUEUED bi-finance already running — trigger queued: inbox-message
+[2026-02-20T12:43:51.312Z] INBOX ceo.md modified → ceo
+[2026-02-20T12:43:51.312Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T12:43:51.313Z] AGENT ceo started (pid: 101618)
+[2026-02-20T12:44:32.313Z] INBOX marketing.md modified → marketing
+[2026-02-20T12:44:32.314Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T12:45:17.369Z] STATUS running=4/4 writers=0/0 freeMem=6392MB agents=[bi-finance(594s), marketing(414s), technology(400s), ceo(86s)] paused=no
+[2026-02-20T12:45:17.369Z] SOCIAL running social-poster.js
+[2026-02-20T12:45:17.399Z] SOCIAL 2026-02-20T12:45:17.397Z [social-poster] starting
+[2026-02-20T12:45:17.408Z] SOCIAL 2026-02-20T12:45:17.408Z [social-poster] queue has 1981 posts
+[2026-02-20T12:45:17.409Z] SOCIAL 2026-02-20T12:45:17.409Z [social-poster] done — 0 attempted, 0 succeeded, 1981 remaining in queue
+[2026-02-20T12:45:17.413Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:46:36.682Z] CONCURRENCY investor-relations — 4/4 agents running, queued
+[2026-02-20T12:47:30.029Z] CONFIG file changed, reloading
+[2026-02-20T12:47:30.029Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min
+[2026-02-20T12:47:30.030Z] AGENTS discovered: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T12:47:30.030Z] INBOX bi-finance.md modified → bi-finance
+[2026-02-20T12:47:30.030Z] QUEUED bi-finance already running — trigger queued: inbox-message
+[2026-02-20T12:47:30.030Z] INBOX ceo.md modified → ceo
+[2026-02-20T12:47:30.030Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T12:47:30.030Z] INBOX marketing.md modified → marketing
+[2026-02-20T12:47:30.030Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T12:47:40.492Z] INBOX ceo.md modified → ceo
+[2026-02-20T12:47:40.492Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T12:47:41.387Z] INBOX operations.md modified → operations
+[2026-02-20T12:47:41.387Z] CONCURRENCY operations — 4/4 agents running, queued

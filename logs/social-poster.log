@@ -506,3 +506,6 @@ docker run --rm -v myvolume..."
 2026-02-20T12:40:18.308Z [social-poster] OK bluesky: posted "Want to self-host Dim? Our guide covers Docker Compose setup..."
 2026-02-20T12:40:18.316Z [social-poster] removed 3 posted items from queue (1921 remaining)
 2026-02-20T12:40:18.317Z [social-poster] done — 3 attempted, 3 succeeded, 1921 remaining in queue
+2026-02-20T12:45:17.397Z [social-poster] starting
+2026-02-20T12:45:17.408Z [social-poster] queue has 1981 posts
+2026-02-20T12:45:17.409Z [social-poster] done — 0 attempted, 0 succeeded, 1981 remaining in queue
