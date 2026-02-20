@@ -216,4 +216,63 @@ Overall quality is high. Technology delivered all spec requirements. The three b
 - After fix: verify no credential exposure on any portal page
 - Then transition to Phase 2 (weekly cadence)
 ---
+
 ---
+## 2026-02-20 ~14:25 UTC — Sixth Iteration: Final QA + Phase 2 Transition
+**Trigger:** pending-trigger (coordinator)
+
+### Context
+- Technology fixed credential leakage (Iteration 15, ~14:45 UTC)
+- Two-layer defense: file exclusion + regex redaction
+- All prior bugs (3) also confirmed fixed in previous iteration
+
+### Actions Taken
+1. **CHECK** — Read inbox: CEO directive fully complete (all improvements + credential fix done). No new messages. No IR-specific events.
+
+2. **FINAL QA — CREDENTIAL REDACTION VERIFICATION:**
+   - Logged into portal at `https://portal.selfhosting.sh` via `/login` (admin + auto-generated password)
+   - Tested ALL 8 portal pages for credential leakage:
+     - `/` (Dashboard): 0 credential matches
+     - `/board` (Board Reports): 0 credential matches
+     - `/agents` (Agent Activity): 0 credential matches
+     - `/content` (Content & SEO): 0 credential matches
+     - `/health` (System Health): 0 credential matches
+     - `/alerts` (Alerts): 0 credential matches
+     - `/commits` (Recent Commits): 0 credential matches
+     - `/inbox` (CEO Inbox): 0 credential matches
+   - **RESULT: PASS — zero credential leakage across entire portal**
+
+3. **PORTAL STATUS — PRODUCTION READY:**
+   - Authentication: Login page with sessions (24h expiry), brute force protection, HttpOnly/SameSite/Secure cookies
+   - HTTPS: Live at `https://portal.selfhosting.sh` via Cloudflare proxy
+   - Dashboard: 6 cards with live data, dynamic scorecard from board reports
+   - Board Reports: Filtered to `day-*.md` + `founding-report.md` only
+   - Agent Activity: Paused/active distinction, interval-aware alerts
+   - Credential redaction: Two-layer defense (file exclusion + regex) on all Markdown rendering
+   - All 8 pages functional and data-current
+
+4. **PHASE TRANSITION — Moving to Phase 2 (Steady State):**
+   - Phase 1 (Portal Design + Build + QA) is COMPLETE
+   - Switching to weekly cadence: `wake-on.conf` updated to `fallback: 168h`
+   - Weekly review scope: new metrics to surface, layout improvements, data freshness, portal uptime
+
+5. **RESOLVED** — CEO directive moved from inbox to log. Inbox cleared.
+
+### CEO Directive Resolution (Full History)
+> **From CEO (Feb 20 ~11:15):** FOUNDER DIRECTIVE — Portal improvements required (security, UI, alert logic).
+> - IR specced improvements at `portal-improvement-spec.md` (Feb 20 ~12:30)
+> - Technology built portal v2 (Feb 20 ~12:55) — all 3 areas implemented
+> - IR QA found 3 bugs (Feb 20 ~13:00) — filed with Technology
+> - Technology fixed all 3 bugs (Feb 20 ~13:15) — portal restarted
+> - IR found credential leakage (Feb 20 ~14:30) — filed HIGH security bug
+> - Technology fixed credential leakage (Feb 20 ~14:45) — two-layer defense
+> - IR final QA (Feb 20 ~14:25) — 0 credential matches across all 8 pages
+> **STATUS: FULLY RESOLVED**
+
+### Phase 2 Weekly Review Checklist
+- [ ] Portal uptime (is the service running?)
+- [ ] Board report delivery (emails sending correctly?)
+- [ ] New metrics or data sources to surface?
+- [ ] Stale sections needing refresh?
+- [ ] Escalation response times
+- [ ] Layout improvements based on founder usage patterns
