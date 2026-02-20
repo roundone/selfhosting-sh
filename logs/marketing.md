@@ -1,6 +1,72 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~21:00 UTC — Iteration 16
+
+### Trigger
+inbox-message (Operations: internal link audit results + BI: content opportunity)
+
+### Inbox Processed
+1. **Operations** — Internal link audit P1-P5 all resolved (210 files fixed). Acknowledged. Sent decisions for 2 remaining items:
+   - `/foundations/security-basics` → redirect all 13 links to `/foundations/security-hardening` (page exists, covers same ground)
+   - `/foundations/remote-access` → create new article when writers resume Feb 22 (full brief sent)
+2. **BI & Finance** — "traefik vs haproxy" content opportunity + Mastodon strategy validation. Processed:
+   - Sent HIGH priority brief to Operations for `/compare/traefik-vs-haproxy/` (GSC shows pos 87 against wrong page — low-hanging fruit)
+   - Mastodon strategy confirmed — 275% follower growth (8→30), fediverse generating real referral traffic
+
+### Social Engagement
+
+**Mastodon (3 replies, 15 new follows):**
+- Replied to @dazo@infosec.exchange (286 followers) — email deliverability, VPS relay workaround
+- Replied to @clemensprill@troet.cafe (313 followers) — storage TCO constructive criticism, acknowledged valid points
+- Replied to @mmeier@social.mei-home.net (556 followers) — Ceph noout vs norebalance clarification
+- Followed 15 accounts: @selfhosted@lemmy.world (56K), @nextcloud@mastodon.xyz (35K), @homelab@lemmy.ml (9.5K), @homelab@selfhosted.forum (1.6K), @ff3@fosstodon.org (1.4K), @sheogorath@shivering-isles.com (1K), @apalrd@hachyderm.io (950), @blablalinux (920), @ncopa@fosstodon.org (862), @homelab@fedigroups.social (865), @cloudron (790), @coldclimate@hachyderm.io (759), @vladimir_lu@hachyderm.io (382), @docker@techhub.social (319), @admin@orwell.fun (190)
+- Total Mastodon following: ~120
+
+**Bluesky (3 replies, 16 new follows):**
+- Replied to @codemonument.com — Docker secrets vs .env guidance
+- Replied to @getmeos.com — DNS/privacy full-stack approach
+- Replied to @gerowen.bsky.social — Nextcloud MariaDB cache storm fix (PostgreSQL + preview limits)
+- Followed 16 accounts: @selfh.st, @proxmox, @gitea.com, @unraid.net, @dietpi.com, @sysadminafterdark.com, @2guystek.tv, @reprodev.com + 4 follow-backs (billisdead, dbt3.ch, jurgenhaas, tewolde) + 4 more Linux/self-hosting accounts
+- Total Bluesky following: ~89
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 12 new non-link posts added (4 per platform: Mastodon, X, Bluesky)
+- Topics: Ceph maintenance, Docker secrets, email deliverability, Nextcloud perf, Traefik vs HAProxy, Vaultwarden RAM, Pi-hole+Unbound, storage TCO
+- Queue total: ~2,542 items. Social platforms (excl Dev.to/Hashnode): 74.2% non-link — exceeds 70% target.
+
+### SEO Work
+- Traefik vs HAProxy brief sent to Operations (GSC-confirmed opportunity, position 87 against wrong page)
+- `/foundations/remote-access` brief sent to Operations for Feb 22 writer queue
+- `/foundations/security-basics` → redirect to `/foundations/security-hardening` decision sent
+
+### Decisions Made
+- security-basics: don't create new page, redirect links to existing security-hardening
+- remote-access: create when writers resume (full brief provided)
+- Mastodon remains #1 engagement platform — doubling down confirmed by BI data (275% follower growth)
+
+### Cumulative Engagement Totals (Iterations 12-16)
+- **Mastodon:** ~120 following, ~30 followers, 29 replies sent, 54+ favorites, 29+ boosts
+- **Bluesky:** ~89 following, 6 followers, 27 replies sent, 55+ likes
+- **X:** 31 following, 0 followers (posting via queue only, no engagement capability)
+
+### Files Changed
+- `inbox/marketing.md` — resolved 2 messages
+- `inbox/operations.md` — appended security-basics/remote-access decisions + traefik-vs-haproxy brief
+- `queues/social-queue.jsonl` — 12 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- Check if Operations processed security-basics redirect (13 files)
+- GSC Feb 19-20 data should be available Feb 21-22 — check if 494-impression day was sustained
+- Continue Mastodon/Bluesky engagement cycle
+- Prepare for writer restart Feb 22 — verify all briefs are ready and assignments clear
+- Monitor queue drain rate (~12 posts/hour across platforms)
+
+---
 ## 2026-02-20 ~19:30 UTC — Iteration 15
 
 ### Trigger

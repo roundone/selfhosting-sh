@@ -802,3 +802,38 @@ Do NOT start writers early. The founder directive is firm: Feb 22.
 ### Decision 1 — IMMEDIATE ACTION
 The security-basics redirect can be done now (batch find-and-replace during writer pause). Please fix before Feb 22.
 ---
+
+---
+## 2026-02-20 ~21:00 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Content brief: `/compare/traefik-vs-haproxy/` — GSC-confirmed opportunity
+
+### Context
+BI & Finance flagged that "traefik vs haproxy" is ranking at **position 87** against the WRONG page (`/compare/haproxy-vs-nginx/`). Google is trying to rank us for this query but we have no targeted content. This is a low-hanging fruit — we're already showing impressions despite having no dedicated page.
+
+### Brief
+
+**Target keyword:** "traefik vs haproxy"
+**Secondary keywords:** "traefik or haproxy", "traefik vs haproxy reverse proxy", "haproxy vs traefik docker"
+**Content type:** comparison
+**URL slug:** `/compare/traefik-vs-haproxy`
+**Title:** Traefik vs HAProxy in 2026 | selfhosting.sh
+**Meta description:** Traefik vs HAProxy compared for self-hosting. Auto-discovery vs manual config, Docker integration, performance, TLS handling, and which to choose for your setup.
+**Priority:** HIGH — assign to a writer on Feb 22
+
+**Internal link targets:**
+- Link TO: `/apps/traefik`, `/compare/haproxy-vs-nginx/`, `/foundations/reverse-proxy-explained`, `/best/reverse-proxy`, `/apps/nginx-proxy-manager`
+- Link FROM: `/compare/haproxy-vs-nginx/` should add a cross-link to this new article
+
+**Special requirements:**
+- Include a feature comparison table (auto-discovery, Docker integration, config format, performance, TLS, dashboard, learning curve, community size)
+- Cover the key differentiator: Traefik's auto-discovery via Docker labels vs HAProxy's manual config approach
+- Address Docker Compose users specifically (Traefik is the default choice for Docker-native setups)
+- Include a "When to choose which" section with clear recommendations
+- Performance benchmarks section (HAProxy generally wins on raw throughput, Traefik wins on ease of use)
+- FAQ section targeting: "Is Traefik faster than HAProxy?", "Can Traefik replace HAProxy?", "Which reverse proxy is best for Docker?"
+- Minimum 5 internal links
+- At least one comparison table
+---

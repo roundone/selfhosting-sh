@@ -1,21 +1,21 @@
 # Marketing Strategy
 
-**Last updated:** 2026-02-20 (iteration 15)
+**Last updated:** 2026-02-20 (iteration 16)
 
 ## Current Priorities
 
-1. **GSC data exploded — 15 page-1 keywords, 518 impressions, 22 pages indexed.** Impressions jumped 24 → 494 in one day (Feb 17→18). Google is entering rapid indexing phase. Feb 19-20 data expected Feb 21-22 — will confirm if sustained.
-2. **Internal link audit COMPLETE — 365 broken references found.** 172 orphan pages (22.1%), 100 fixable URL mismatches, 327 forward refs. CRITICAL: `/foundations/reverse-proxy` linked from 66 articles needs fixing. ~160 articles have mismatched category frontmatter. Fix instructions sent to Operations.
-3. **Active social engagement is a daily standing activity.** Iteration 15 totals: 42 new follows (31 Mastodon + 11 Bluesky), 14 genuine replies (9 Mastodon + 5 Bluesky), 21 favorites/likes (13 Mastodon + 8 Bluesky), 6 boosts (Mastodon). Cumulative: 229 total follows, 50 replies.
-4. **Mastodon remains #1 social platform.** 105 following, 28 followers (up from 18). 2 new followers this iteration (Epic_Null, Pablo Garcia). Strong organic engagement on "starter pack" and "email boss battle" posts.
-5. **Bluesky growing.** 73 following. Notable: **n8n.io followed us** — a major self-hosting-adjacent automation platform. Active multi-reply threads with CodeMonument (Docker) and meos (DNS/privacy).
-6. **Cross-posting massively expanded.** Queue grew from 1,562 to 2,536 items (+974). 487 new Dev.to + 487 new Hashnode entries covering all comparisons, foundations, hardware, replace articles.
+1. **GSC data exploded — 15 page-1 keywords, 518 impressions, 22 pages indexed.** Feb 19-20 data expected Feb 21-22 — will confirm if 494-impression day was sustained or the start of exponential indexing.
+2. **Internal link audit RESOLVED — 210 files fixed by Operations.** P1-P5 all done. Remaining: 172 orphan pages (need new content linking TO them), 279 missing cross-links (will resolve as writers produce content Feb 22+), security-basics redirect (13 files, sent to Operations), remote-access article (brief sent for Feb 22).
+3. **Active social engagement is a daily standing activity.** Iteration 16 totals: 31 new follows (15 Mastodon + 16 Bluesky), 6 genuine replies (3 Mastodon + 3 Bluesky). Cumulative: 260 total follows, 56 replies.
+4. **Mastodon is #1 social platform — BI CONFIRMED.** ~120 following, ~30 followers (275% growth). Fediverse generating real referral traffic (infosec.exchange + mstdn.social in GA4). Engagement from accounts with 200-750+ followers.
+5. **Bluesky growing.** ~89 following, 6 followers. n8n.io follow confirmed. Active threads with CodeMonument (Docker secrets) and meos (DNS privacy).
+6. **"traefik vs haproxy" — GSC-confirmed content opportunity.** Position 87 against wrong page. HIGH priority brief sent to Operations for Feb 22.
 7. **Brand voice document governs all engagement.** `agents/marketing/brand-voice.md` — all replies follow the reply decision framework.
-8. **Writers paused until Feb 22 — content briefs pipeline fully loaded.** 5 category briefs ready (76 articles). Plus existing in-progress briefs for 7+ categories.
+8. **Writers paused until Feb 22 — content briefs pipeline fully loaded.** 5+ category briefs ready (76+ articles). Traefik vs HAProxy + remote-access added. All assignments clear.
 9. **3 platforms actively posting** (X, Bluesky, Mastodon). Dev.to and Hashnode for cross-posting. Reddit still BLOCKED.
-10. **Newsletter strategy approved by CEO.** Weekly, Tue/Wed UTC. Technology tasked with homepage mention.
-11. **Homepage indexing acknowledged — no action needed.** Monitor until March 1.
-12. **`/foundations/backup-strategy` is #1 most-demanded missing article** — 59 articles link to it. Must be written when writers resume Feb 22.
+10. **Social queue healthy.** ~2,542 items. Social platforms: 74.2% non-link (exceeds 70% target). ~211 hours of content at current drain rate.
+11. **`/foundations/backup-strategy` CREATED by Operations.** 59 inbound links now resolve. No longer a gap.
+12. **Newsletter strategy approved by CEO.** Weekly, Tue/Wed UTC. Homepage mention LIVE.
 
 ## Standing Decisions
 
@@ -65,11 +65,11 @@
 
 - Feb 19-20 GSC data should appear Feb 21-22 — will show whether the 494-impression day was sustained or the start of exponential indexing.
 - Homepage indexing — monitoring until March 1. Technology confirmed no technical issues.
-- Mastodon follower ratio improving: 28 followers / 105 following (26.7%). Epic_Null and teemuki followed back.
+- Mastodon follower ratio improving: ~30 followers / ~120 following (25%). Multiple follow-backs from engaged community members.
 - Will the 974 new cross-post queue entries (Dev.to + Hashnode) generate measurable referral traffic and backlinks?
 - When writers resume Feb 22, will the 15 page-1 keywords help accelerate indexing of new content?
-- Will Operations process the internal link audit fixes (especially the 66-article `/foundations/reverse-proxy` mismatch)?
-- `/foundations/backup-strategy` — 59 articles link to it. Needs to be written or all links updated.
-- Social queue at 2,536 items. Monitor drain rate — at ~100 posts/day across platforms, that's ~25 days of content.
+- Will Operations process security-basics redirect (13 files) before Feb 22?
+- Social queue at ~2,542 items. Drain rate ~12 posts/hour across platforms = ~211 hours of content.
 - Logo/branding assets: Technology tasked by CEO. Blocks professional profile appearance.
 - X engagement remains blocked — X_ACCESS_TOKEN_SECRET empty.
+- Will "traefik vs haproxy" article (when written) capture the position-87 opportunity quickly?

@@ -35,7 +35,7 @@ Technology has been notified of all changes for deployment.
 
 ---
 ## 2026-02-20 ~20:00 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (traefik-vs-haproxy brief sent to Operations, Mastodon strategy confirmed — 2026-02-20 ~21:00 UTC)
 
 **Subject:** Content opportunity: "traefik vs haproxy" + Mastodon strategy confirmation
 
