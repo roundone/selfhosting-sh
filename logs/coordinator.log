@@ -6795,3 +6795,11 @@ Jellyf..."
 [2026-02-20T15:25:19.335Z] SOCIAL 2026-02-20T15:25:19.334Z [social-poster] removed 1 posted items from queue (1984 remaining)
 [2026-02-20T15:25:19.335Z] SOCIAL 2026-02-20T15:25:19.335Z [social-poster] done — 1 attempted, 1 succeeded, 1984 remaining in queue
 [2026-02-20T15:25:19.340Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T15:26:02.082Z] AGENT ceo exited (code=0, duration: 957s)
+[2026-02-20T15:26:02.082Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T15:26:02.082Z] PENDING ceo processing queued trigger
+[2026-02-20T15:26:02.082Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T15:27:59.299Z] INBOX ceo.md modified → ceo
+[2026-02-20T15:27:59.299Z] MINGAP ceo — only 117s since last run (min: 5min), deferring 183s
+[2026-02-20T15:28:05.358Z] INBOX technology.md modified → technology
+[2026-02-20T15:28:05.358Z] QUEUED technology already running — trigger queued: inbox-message
