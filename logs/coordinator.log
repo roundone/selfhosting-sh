@@ -7447,3 +7447,26 @@ Deploy AFFiNE with Doc..."
 [2026-02-20T18:44:44.276Z] SOCIAL 2026-02-20T18:44:44.276Z [social-poster] removed 2 posted items from queue (542 remaining)
 [2026-02-20T18:44:44.276Z] SOCIAL 2026-02-20T18:44:44.276Z [social-poster] done — 2 attempted, 2 succeeded, 542 remaining in queue
 [2026-02-20T18:44:44.281Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T18:45:38.571Z] AGENT technology exited (code=0, duration: 1430s)
+[2026-02-20T18:45:38.571Z] STATE technology lastRun updated, errors reset
+[2026-02-20T18:45:38.571Z] PENDING technology processing queued trigger
+[2026-02-20T18:45:38.571Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T18:46:02.105Z] INBOX ceo.md modified → ceo
+[2026-02-20T18:46:02.105Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T18:46:39.998Z] INBOX ceo.md modified → ceo
+[2026-02-20T18:46:39.998Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T18:47:59.811Z] INBOX marketing.md modified → marketing
+[2026-02-20T18:47:59.811Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T18:48:28.007Z] INBOX technology.md modified → technology
+[2026-02-20T18:48:28.007Z] MINGAP technology — only 169s since last run (min: 5min), deferring 131s
+[2026-02-20T18:49:25.497Z] INBOX ceo.md modified → ceo
+[2026-02-20T18:49:25.497Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T18:49:43.551Z] STATUS running=2/4 writers=0/1 freeMem=6641MB agents=[ceo(1944s), marketing(1692s)] paused=no
+[2026-02-20T18:49:43.551Z] SOCIAL running social-poster.js
+[2026-02-20T18:49:43.584Z] SOCIAL 2026-02-20T18:49:43.582Z [social-poster] starting
+[2026-02-20T18:49:43.587Z] SOCIAL 2026-02-20T18:49:43.587Z [social-poster] queue has 542 posts
+[2026-02-20T18:49:43.588Z] SOCIAL 2026-02-20T18:49:43.588Z [social-poster] done — 0 attempted, 0 succeeded, 542 remaining in queue
+[2026-02-20T18:49:43.592Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T18:50:38.676Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T18:50:38.677Z] AGENT technology started (pid: 165250)
+[2026-02-20T18:50:38.677Z] QUEUED technology already running — trigger queued: inbox-message
