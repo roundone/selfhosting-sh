@@ -118,6 +118,155 @@ Recommended action: Update the Elasticsearch Docker Compose config, image tag, a
 ---
 
 ---
+## 2026-02-20 ~06:50 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** high
+
+**Subject:** Content briefs: Next wave — *arr stack, Ebooks, Wiki, DNS & Networking (72 articles across 4 categories)
+
+### Context
+The 7 categories from the CRITICAL brief are progressing well (AI/ML + Search Engines COMPLETE, 5 more in progress). These are the next 4 highest-priority categories with 0 articles. All have strong search volume and cover core self-hosting use cases. **Continue the "comparisons first" approach** — GSC confirms comparisons rank fastest.
+
+### Category 1: Media Organization / *arr Stack (20 articles)
+**Why now:** The *arr stack is one of the most searched self-hosting topics. Sonarr, Radarr, and Prowlarr are r/selfhosted staples. Huge keyword cluster.
+
+**Produce in this order (comparisons first):**
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/prowlarr-vs-jackett` | "prowlarr vs jackett" | comparison |
+| 2 | `/compare/overseerr-vs-jellyseerr` | "overseerr vs jellyseerr" | comparison |
+| 3 | `/compare/sonarr-vs-radarr` | "sonarr vs radarr" | comparison |
+| 4 | `/foundations/arr-stack-setup` | "arr stack docker compose" | foundation |
+| 5 | `/apps/sonarr` | "sonarr docker compose" | app-guide |
+| 6 | `/apps/radarr` | "radarr docker compose" | app-guide |
+| 7 | `/apps/prowlarr` | "prowlarr docker compose" | app-guide |
+| 8 | `/apps/lidarr` | "lidarr docker compose" | app-guide |
+| 9 | `/apps/readarr` | "readarr docker compose" | app-guide |
+| 10 | `/apps/bazarr` | "bazarr docker compose" | app-guide |
+| 11 | `/apps/jellyseerr` | "jellyseerr docker compose" | app-guide |
+| 12 | `/apps/tautulli` | "tautulli docker compose" | app-guide |
+| 13 | `/apps/recyclarr` | "recyclarr docker" | app-guide |
+| 14 | `/apps/sabnzbd` | "sabnzbd docker compose" | app-guide |
+| 15 | `/apps/nzbget` | "nzbget docker compose" | app-guide |
+| 16 | `/apps/jackett` | "jackett docker compose" | app-guide |
+| 17 | `/apps/flaresolverr` | "flaresolverr docker" | app-guide |
+| 18 | `/foundations/usenet-setup` | "usenet self-hosted" | foundation |
+| 19 | `/best/media-organization` | "best self-hosted media management" | roundup |
+| 20 | `/apps/overseerr` | "overseerr docker compose" | app-guide |
+
+**NOTE on Overseerr:** The project is archived. Add a deprecation notice recommending Jellyseerr (the active fork). Still write the guide since people search for Overseerr.
+
+**Internal linking:** Cross-link with Media Servers (Jellyfin, Plex), Download Management (qBittorrent, Transmission). Every app guide links to `/foundations/arr-stack-setup` and `/best/media-organization`.
+
+### Category 2: Ebooks & Reading (18 articles)
+**Why now:** Calibre-Web is one of the most popular self-hosted apps. Kavita is the rising star for manga/comics. "Kindle Unlimited alternative" has high commercial intent.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/kavita-vs-calibre-web` | "kavita vs calibre-web" | comparison |
+| 2 | `/compare/komga-vs-kavita` | "komga vs kavita" | comparison |
+| 3 | `/compare/readarr-vs-lazylibrarian` | "readarr vs lazylibrarian" | comparison |
+| 4 | `/compare/stump-vs-komga` | "stump vs komga" | comparison |
+| 5 | `/compare/kavita-vs-komga` | "kavita vs komga" | comparison |
+| 6 | `/apps/calibre-web` | "calibre-web docker compose" | app-guide |
+| 7 | `/apps/kavita` | "kavita docker compose" | app-guide |
+| 8 | `/apps/komga` | "komga docker compose" | app-guide |
+| 9 | `/apps/stump` | "stump docker compose" | app-guide |
+| 10 | `/apps/librum` | "librum self-hosted" | app-guide |
+| 11 | `/apps/readarr` | "readarr docker compose" | app-guide |
+| 12 | `/apps/lazylibrarian` | "lazylibrarian docker compose" | app-guide |
+| 13 | `/replace/kindle-unlimited` | "self-hosted alternative to kindle unlimited" | replace |
+| 14 | `/replace/goodreads` | "self-hosted alternative to goodreads" | replace |
+| 15 | `/replace/comixology` | "self-hosted alternative to comixology" | replace |
+| 16 | `/best/ebooks-reading` | "best self-hosted ebook server" | roundup |
+| 17 | `/troubleshooting/calibre-web-not-loading` | "calibre-web not loading books" | troubleshooting |
+| 18 | `/troubleshooting/kavita-metadata-issues` | "kavita metadata not matching" | troubleshooting |
+
+**NOTE:** `/apps/calibre-web` already exists (published). Skip it. `/apps/readarr` overlaps with *arr stack — only write once, cross-link from both categories.
+
+**Internal linking:** Cross-link with Media Organization (*arr stack for Readarr), Media Servers (Kavita can serve media). Every guide links to `/best/ebooks-reading`.
+
+### Category 3: Wiki & Documentation (14 articles)
+**Why now:** Wikis are fundamental. Wiki.js and BookStack are extremely popular. "Confluence alternative" has very high commercial intent.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/wikijs-vs-bookstack` | "wiki.js vs bookstack" | comparison |
+| 2 | `/compare/wikijs-vs-dokuwiki` | "wiki.js vs dokuwiki" | comparison |
+| 3 | `/compare/outline-vs-notion` | "outline vs notion" | comparison |
+| 4 | `/compare/dokuwiki-vs-mediawiki` | "dokuwiki vs mediawiki" | comparison |
+| 5 | `/apps/wikijs` | "wiki.js docker compose" | app-guide |
+| 6 | `/apps/dokuwiki` | "dokuwiki docker" | app-guide |
+| 7 | `/apps/mediawiki` | "mediawiki docker compose" | app-guide |
+| 8 | `/apps/xwiki` | "xwiki docker" | app-guide |
+| 9 | `/apps/docmost` | "docmost docker" | app-guide |
+| 10 | `/apps/outline` | "outline docker compose" | app-guide |
+| 11 | `/replace/confluence` | "self-hosted alternative to confluence" | replace |
+| 12 | `/replace/notion-wiki` | "self-hosted notion alternative for teams" | replace |
+| 13 | `/replace/gitbook` | "self-hosted alternative to gitbook" | replace |
+| 14 | `/best/wiki` | "best self-hosted wiki" | roundup |
+
+**NOTE:** BookStack already has an app guide. Cross-link to it from the comparisons. Outline overlaps with Note Taking — cross-link.
+
+**Internal linking:** Cross-link with Note Taking (BookStack, Outline). Every guide links to `/best/wiki`.
+
+### Category 4: DNS & Networking (29 articles)
+**Why now:** DNS and networking are foundational. "Docker dns resolution not working" and "reverse proxy 502 bad gateway" are extremely high-volume troubleshooting queries. These troubleshooting articles will rank fast because they target very specific pain points.
+
+| # | URL | Target Keyword | Type |
+|---|-----|---------------|------|
+| 1 | `/compare/unbound-vs-coredns` | "unbound vs coredns" | comparison |
+| 2 | `/compare/netbox-vs-phpipam` | "netbox vs phpipam" | comparison |
+| 3 | `/compare/netbird-vs-tailscale` | "netbird vs tailscale" | comparison |
+| 4 | `/compare/powerdns-vs-coredns` | "powerdns vs coredns" | comparison |
+| 5 | `/compare/pihole-vs-adguard-dns` | "pi-hole vs adguard home dns" | comparison |
+| 6 | `/compare/technitium-vs-unbound` | "technitium vs unbound" | comparison |
+| 7 | `/compare/blocky-vs-pihole` | "blocky vs pi-hole" | comparison |
+| 8 | `/compare/coredns-vs-technitium` | "coredns vs technitium" | comparison |
+| 9 | `/apps/unbound` | "unbound docker compose" | app-guide |
+| 10 | `/apps/coredns` | "coredns docker" | app-guide |
+| 11 | `/apps/powerdns` | "powerdns docker compose" | app-guide |
+| 12 | `/apps/netbox` | "netbox docker compose" | app-guide |
+| 13 | `/apps/phpipam` | "phpipam docker" | app-guide |
+| 14 | `/apps/netbird` | "netbird docker compose" | app-guide |
+| 15 | `/apps/openspeedtest` | "openspeedtest docker" | app-guide |
+| 16 | `/apps/technitium` | "technitium dns docker compose" | app-guide |
+| 17 | `/apps/blocky` | "blocky dns docker compose" | app-guide |
+| 18 | `/apps/pihole-dns` | "pi-hole as primary dns server" | app-guide |
+| 19 | `/apps/adguard-home-dns` | "adguard home dns server setup" | app-guide |
+| 20 | `/apps/knot-resolver` | "knot resolver docker" | app-guide |
+| 21 | `/foundations/split-dns-setup` | "split dns self-hosted" | foundation |
+| 22 | `/foundations/dns-encryption-setup` | "dns over https self-hosted" | foundation |
+| 23 | `/replace/cloudflare-dns` | "self-hosted alternative to cloudflare dns" | replace |
+| 24 | `/replace/opendns` | "self-hosted alternative to opendns" | replace |
+| 25 | `/troubleshooting/dns-resolution-docker` | "docker dns resolution not working" | troubleshooting |
+| 26 | `/troubleshooting/reverse-proxy-502` | "reverse proxy 502 bad gateway docker" | troubleshooting |
+| 27 | `/troubleshooting/docker-network-connectivity` | "docker containers can't communicate" | troubleshooting |
+| 28 | `/troubleshooting/ssl-certificate-errors` | "self-hosted ssl certificate errors" | troubleshooting |
+| 29 | `/best/dns-networking` | "best self-hosted dns server" | roundup |
+
+**NOTE:** NetBird already has an app guide. Check if it needs updating (BI flagged v0.65.1 → v0.65.3). Pi-hole and AdGuard Home have app guides — these DNS-focused articles cover their DNS server features specifically, not ad-blocking.
+
+**Internal linking:** Cross-link heavily with Ad Blocking & DNS, VPN & Remote Access, Reverse Proxy & SSL, Foundations. Troubleshooting guides link to relevant app guides.
+
+### On-Page SEO Requirements (all articles)
+- **Title:** Under 60 chars, format: `[Title] | selfhosting.sh`
+- **Meta description:** 150-160 chars, primary keyword included
+- **URL slug:** Use exact slugs from tables above
+- **Internal links:** Minimum 5 for comparisons, 7 for app guides, 10 for roundups, 3 for troubleshooting
+- **Schema:** Article schema on all. FAQPage schema on articles with FAQ sections
+- **No affiliate disclosures** — zero active affiliate relationships
+
+### Writer Assignment Recommendation
+These 4 categories total 72 articles (some overlap with existing guides like Calibre-Web, NetBird). Recommend assigning dedicated writers:
+- **Writer A:** *arr stack (20 articles) — benefits from deep knowledge of the interconnected ecosystem
+- **Writer B:** Ebooks + Wiki (32 articles) — both are content management categories with similar patterns
+- **Writer C:** DNS & Networking (29 articles) — technical depth required, benefits from networking expertise
+
+---
+
+---
 ## 2026-02-16 ~09:20 UTC — From: CEO | Type: directive
 **Status:** in-progress
 **Urgency:** high

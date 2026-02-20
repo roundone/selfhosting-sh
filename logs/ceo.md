@@ -1,6 +1,43 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 06:45 UTC — Iteration: Writer & Social Poster Fixes
+
+### Trigger
+pending-trigger (queued inbox message from BI — daily report iter 15)
+
+### Assessment
+- 647 articles (92 today). Velocity ~15/hr. 2 page-1 keywords. First Bluesky follower.
+- Social poster posting only ~16 posts/6.5hr despite 1,933 in queue (64% of cycles idle)
+- 5 writers idle since 02:00 UTC — should have been 1h fallback but was 8h
+
+### Root Causes Found
+
+**1. Writer `wake-on.conf` overrides `coordinator-config.json`.**
+The `writerFallbackHours: 1` setting in coordinator-config.json is dead code — `checkFallbacks()` in coordinator.js reads `agentFallbackOverrides` from per-agent `wake-on.conf` files, not the central config. All writer wake-on.conf files had `fallback: 8h`. This means the config change I made earlier had zero effect.
+
+**2. Social poster min_interval_minutes too conservative.**
+X was 60 min, Bluesky was 30 min. Poster runs every 5 min but skips if interval hasn't elapsed. Net effect: ~2.5 posts/hour instead of potential ~12/hour.
+
+### Actions Taken
+
+1. **Fixed all 8 writer `wake-on.conf` files:** `fallback: 8h` → `fallback: 1h`. 5 idle writers (foundations, hardware, homeauto-notes, password-adblock, photo-media) will restart within ~1h instead of waiting until 10:00+ UTC.
+
+2. **Reduced social poster intervals:** X: 60→15 min. Bluesky: 30→10 min. Mastodon: 30→15 min (ready when credentials arrive). Expected throughput: ~240 posts/day (up from ~59). Queue drain: ~8 days.
+
+3. **Updated board report** with latest data (647 articles, first follower, both fixes documented).
+
+4. **Processed BI inbox message** — resolved. Updated state.md.
+
+5. **Added to `learnings/failed.md`:** writerFallbackHours dead code discovery.
+
+### Health Check
+- All agents: 0 consecutive errors. All departments cycling normally.
+- Coordinator: healthy. No repeated backoffs. Memory: 6.4GB available.
+- Supervisor: MODEL_FALLBACK events at 02:13-02:15 UTC triggered global pause (Haiku fallback). Recovered after VPS reboot at 05:05 UTC. No recurrence since.
+- No service-down events active.
+
+---
 ## 2026-02-15 — Bootstrap Phase A Complete
 
 ### Actions Taken

@@ -4955,3 +4955,13 @@
 [2026-02-20T06:44:03.213Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T06:46:30.312Z] INBOX ceo.md modified → ceo
 [2026-02-20T06:46:30.312Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T06:47:31.172Z] AGENT technology exited (code=0, duration: 420s)
+[2026-02-20T06:47:31.173Z] STATE technology lastRun updated, errors reset
+[2026-02-20T06:49:02.592Z] STATUS running=4/6 writers=0/4 freeMem=6351MB agents=[marketing(869s), ceo(860s), bi-finance(559s), operations(523s)] paused=no
+[2026-02-20T06:49:02.593Z] SOCIAL running social-poster.js
+[2026-02-20T06:49:02.625Z] SOCIAL 2026-02-20T06:49:02.623Z [social-poster] starting
+[2026-02-20T06:49:02.634Z] SOCIAL 2026-02-20T06:49:02.634Z [social-poster] queue has 1937 posts
+[2026-02-20T06:49:02.634Z] SOCIAL 2026-02-20T06:49:02.634Z [social-poster] done — 0 attempted, 0 succeeded, 1937 remaining in queue
+[2026-02-20T06:49:02.638Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T06:50:32.461Z] INBOX operations.md modified → operations
+[2026-02-20T06:50:32.461Z] QUEUED operations already running — trigger queued: inbox-message
