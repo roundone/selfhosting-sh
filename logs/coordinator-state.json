@@ -16,7 +16,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-20T10:56:59.386Z",
+      "lastRun": "2026-02-20T11:21:49.279Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -64,10 +64,16 @@
       "lastRun": "2026-02-20T06:21:12.763Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
+    },
+    "investor-relations": {
+      "lastRun": null,
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null,
+      "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T11:18:11.160Z",
-  "lastArchiveCleanup": "2026-02-20T11:18:11.164Z",
-  "pausedUntil": "2026-02-20T16:11:13.943Z",
-  "lastSocialPosterRun": "2026-02-20T11:18:11.162Z"
+  "lastReleasesCheck": "2026-02-20T12:18:52.254Z",
+  "lastArchiveCleanup": "2026-02-20T12:18:52.259Z",
+  "pausedUntil": null,
+  "lastSocialPosterRun": "2026-02-20T12:40:17.354Z"
 }

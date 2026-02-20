@@ -5960,3 +5960,295 @@
 [2026-02-20T11:20:53.227Z] QUEUED operations already running — trigger queued: inbox-message
 [2026-02-20T11:21:09.449Z] INBOX ceo.md modified → ceo
 [2026-02-20T11:21:09.449Z] PAUSED ceo — session limit active, 290min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:21:49.279Z] AGENT operations exited (code=0, duration: 1012s)
+[2026-02-20T11:21:49.279Z] STATE operations lastRun updated, errors reset
+[2026-02-20T11:21:49.279Z] PENDING operations processing queued trigger
+[2026-02-20T11:21:49.279Z] PAUSED operations — session limit active, 289min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:23:11.225Z] STATUS running=0/4 writers=0/0 freeMem=7176MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:23:11.226Z] SOCIAL running social-poster.js
+[2026-02-20T11:23:11.280Z] SOCIAL 2026-02-20T11:23:11.277Z [social-poster] starting
+[2026-02-20T11:23:11.293Z] SOCIAL 2026-02-20T11:23:11.292Z [social-poster] queue has 1936 posts
+[2026-02-20T11:23:11.531Z] SOCIAL 2026-02-20T11:23:11.531Z [social-poster] OK bluesky: posted "Want to self-host Borgmatic? Our guide covers Docker Compose..."
+[2026-02-20T11:23:11.544Z] SOCIAL 2026-02-20T11:23:11.543Z [social-poster] removed 1 posted items from queue (1935 remaining)
+[2026-02-20T11:23:11.544Z] SOCIAL 2026-02-20T11:23:11.544Z [social-poster] done — 1 attempted, 1 succeeded, 1935 remaining in queue
+[2026-02-20T11:23:11.551Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:23:48.505Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T11:23:51.547Z] ============================================================
+[2026-02-20T11:23:51.549Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T11:23:51.549Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min
+[2026-02-20T11:23:51.551Z] AGENTS discovered: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T11:23:51.551Z] WATCH inbox/ (agents: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T11:23:51.552Z] WATCH events/ (routing by filename convention)
+[2026-02-20T11:23:51.552Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T11:23:51.553Z] STARTUP complete — watching for events
+[2026-02-20T11:23:52.555Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T11:23:52.555Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T103950Z.json → bi-finance
+[2026-02-20T11:23:52.556Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T104531Z.json → bi-finance
+[2026-02-20T11:23:52.556Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T105658Z.json → bi-finance
+[2026-02-20T11:23:52.556Z] RECOVERY found unprocessed event: marketing-file-changed-2026-02-20T1049Z.json → marketing
+[2026-02-20T11:23:52.556Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T11:23:52.556Z] RECOVERY investor-relations inbox modified since last run — starting
+[2026-02-20T11:23:52.556Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-20T11:23:52.557Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-20T11:23:52.557Z] RECOVERY complete — 8 missed event(s) found
+[2026-02-20T11:23:56.557Z] FALLBACK investor-relations — 492107h since last run (1 due, starting 1)
+[2026-02-20T11:23:56.558Z] PAUSED investor-relations — session limit active, 287min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:23:57.556Z] PAUSED bi-finance — session limit active, 287min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:24:57.563Z] PAUSED bi-finance — session limit active, 286min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:25:57.569Z] PAUSED bi-finance — session limit active, 285min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:26:57.601Z] PAUSED marketing — session limit active, 284min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:27:57.616Z] PAUSED ceo — session limit active, 283min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:28:51.590Z] STATUS running=0/4 writers=0/0 freeMem=7182MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:28:51.590Z] FALLBACK investor-relations — 492107h since last run (1 due, starting 1)
+[2026-02-20T11:28:51.590Z] PAUSED investor-relations — session limit active, 282min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:28:51.590Z] SOCIAL running social-poster.js
+[2026-02-20T11:28:51.622Z] SOCIAL 2026-02-20T11:28:51.619Z [social-poster] starting
+[2026-02-20T11:28:51.629Z] SOCIAL 2026-02-20T11:28:51.629Z [social-poster] queue has 1935 posts
+[2026-02-20T11:28:51.831Z] SOCIAL 2026-02-20T11:28:51.831Z [social-poster] OK x: posted "Self-hosting cost reality check: a family of four on Google ..."
+[2026-02-20T11:28:52.456Z] SOCIAL 2026-02-20T11:28:52.456Z [social-poster] OK mastodon: posted "Stop accessing your apps by IP:port. A reverse proxy gives y..."
+[2026-02-20T11:28:52.465Z] SOCIAL 2026-02-20T11:28:52.465Z [social-poster] removed 2 posted items from queue (1933 remaining)
+[2026-02-20T11:28:52.465Z] SOCIAL 2026-02-20T11:28:52.465Z [social-poster] done — 2 attempted, 2 succeeded, 1933 remaining in queue
+[2026-02-20T11:28:52.473Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:28:57.561Z] PAUSED investor-relations — session limit active, 282min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:29:57.569Z] PAUSED marketing — session limit active, 281min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:30:57.607Z] PAUSED technology — session limit active, 280min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:33:51.617Z] STATUS running=0/4 writers=0/0 freeMem=7164MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:33:51.617Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T11:33:51.617Z] PAUSED investor-relations — session limit active, 277min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:33:51.617Z] SOCIAL running social-poster.js
+[2026-02-20T11:33:51.649Z] SOCIAL 2026-02-20T11:33:51.647Z [social-poster] starting
+[2026-02-20T11:33:51.657Z] SOCIAL 2026-02-20T11:33:51.657Z [social-poster] queue has 1933 posts
+[2026-02-20T11:33:52.008Z] SOCIAL 2026-02-20T11:33:52.008Z [social-poster] OK bluesky: posted "Self-hosting Caddy is easier than you think. Docker Compose ..."
+[2026-02-20T11:33:52.017Z] SOCIAL 2026-02-20T11:33:52.017Z [social-poster] removed 1 posted items from queue (1932 remaining)
+[2026-02-20T11:33:52.018Z] SOCIAL 2026-02-20T11:33:52.018Z [social-poster] done — 1 attempted, 1 succeeded, 1932 remaining in queue
+[2026-02-20T11:33:52.024Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:38:51.717Z] STATUS running=0/4 writers=0/0 freeMem=7178MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:38:51.718Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T11:38:51.718Z] PAUSED investor-relations — session limit active, 272min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:38:51.718Z] SOCIAL running social-poster.js
+[2026-02-20T11:38:51.755Z] SOCIAL 2026-02-20T11:38:51.752Z [social-poster] starting
+[2026-02-20T11:38:51.765Z] SOCIAL 2026-02-20T11:38:51.765Z [social-poster] queue has 1932 posts
+[2026-02-20T11:38:51.767Z] SOCIAL 2026-02-20T11:38:51.767Z [social-poster] done — 0 attempted, 0 succeeded, 1932 remaining in queue
+[2026-02-20T11:38:51.772Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:43:51.737Z] STATUS running=0/4 writers=0/0 freeMem=7166MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:43:51.737Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T11:43:51.737Z] PAUSED investor-relations — session limit active, 267min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:43:51.737Z] SOCIAL running social-poster.js
+[2026-02-20T11:43:51.774Z] SOCIAL 2026-02-20T11:43:51.772Z [social-poster] starting
+[2026-02-20T11:43:51.783Z] SOCIAL 2026-02-20T11:43:51.783Z [social-poster] queue has 1932 posts
+[2026-02-20T11:43:51.784Z] SOCIAL 2026-02-20T11:43:51.784Z [social-poster] done — 0 attempted, 0 succeeded, 1932 remaining in queue
+[2026-02-20T11:43:51.789Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:48:51.741Z] STATUS running=0/4 writers=0/0 freeMem=7182MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:48:51.741Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T11:48:51.741Z] PAUSED investor-relations — session limit active, 262min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:48:51.741Z] SOCIAL running social-poster.js
+[2026-02-20T11:48:51.775Z] SOCIAL 2026-02-20T11:48:51.772Z [social-poster] starting
+[2026-02-20T11:48:51.784Z] SOCIAL 2026-02-20T11:48:51.784Z [social-poster] queue has 1932 posts
+[2026-02-20T11:48:51.980Z] SOCIAL 2026-02-20T11:48:51.980Z [social-poster] OK x: posted "Docker volume backup one-liner:
+
+docker run --rm -v myvolume..."
+[2026-02-20T11:48:52.446Z] SOCIAL 2026-02-20T11:48:52.446Z [social-poster] OK mastodon: posted "Google logs every DNS query tied to your IP for 24-48 hours,..."
+[2026-02-20T11:48:52.650Z] SOCIAL 2026-02-20T11:48:52.649Z [social-poster] OK bluesky: posted "Calibre-Web is one of those apps that's worth self-hosting. ..."
+[2026-02-20T11:48:52.659Z] SOCIAL 2026-02-20T11:48:52.659Z [social-poster] removed 3 posted items from queue (1929 remaining)
+[2026-02-20T11:48:52.660Z] SOCIAL 2026-02-20T11:48:52.659Z [social-poster] done — 3 attempted, 3 succeeded, 1929 remaining in queue
+[2026-02-20T11:48:52.665Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:53:51.813Z] STATUS running=0/4 writers=0/0 freeMem=7172MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:53:51.813Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T11:53:51.813Z] PAUSED investor-relations — session limit active, 257min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:53:51.813Z] SOCIAL running social-poster.js
+[2026-02-20T11:53:51.845Z] SOCIAL 2026-02-20T11:53:51.843Z [social-poster] starting
+[2026-02-20T11:53:51.854Z] SOCIAL 2026-02-20T11:53:51.853Z [social-poster] queue has 1929 posts
+[2026-02-20T11:53:51.854Z] SOCIAL 2026-02-20T11:53:51.854Z [social-poster] done — 0 attempted, 0 succeeded, 1929 remaining in queue
+[2026-02-20T11:53:51.859Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:58:51.913Z] STATUS running=0/4 writers=0/0 freeMem=7178MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:58:51.914Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T11:58:51.914Z] PAUSED investor-relations — session limit active, 252min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:58:51.914Z] SOCIAL running social-poster.js
+[2026-02-20T11:58:51.948Z] SOCIAL 2026-02-20T11:58:51.945Z [social-poster] starting
+[2026-02-20T11:58:51.956Z] SOCIAL 2026-02-20T11:58:51.956Z [social-poster] queue has 1929 posts
+[2026-02-20T11:58:51.958Z] SOCIAL 2026-02-20T11:58:51.957Z [social-poster] done — 0 attempted, 0 succeeded, 1929 remaining in queue
+[2026-02-20T11:58:51.962Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:03:52.014Z] STATUS running=0/4 writers=0/0 freeMem=7171MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T12:03:52.014Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T12:03:52.014Z] PAUSED investor-relations — session limit active, 247min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:03:52.014Z] SOCIAL running social-poster.js
+[2026-02-20T12:03:52.046Z] SOCIAL 2026-02-20T12:03:52.044Z [social-poster] starting
+[2026-02-20T12:03:52.055Z] SOCIAL 2026-02-20T12:03:52.054Z [social-poster] queue has 1929 posts
+[2026-02-20T12:03:52.275Z] SOCIAL 2026-02-20T12:03:52.275Z [social-poster] OK x: posted "Self-host Actual Budget: Docker Compose config, setup walkth..."
+[2026-02-20T12:03:52.609Z] SOCIAL 2026-02-20T12:03:52.608Z [social-poster] OK bluesky: posted "If you've been thinking about running Cloudflare Tunnel your..."
+[2026-02-20T12:03:52.622Z] SOCIAL 2026-02-20T12:03:52.621Z [social-poster] removed 2 posted items from queue (1927 remaining)
+[2026-02-20T12:03:52.622Z] SOCIAL 2026-02-20T12:03:52.622Z [social-poster] done — 2 attempted, 2 succeeded, 1927 remaining in queue
+[2026-02-20T12:03:52.630Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:08:52.051Z] STATUS running=0/4 writers=0/0 freeMem=7161MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T12:08:52.051Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T12:08:52.052Z] PAUSED investor-relations — session limit active, 242min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:08:52.052Z] SOCIAL running social-poster.js
+[2026-02-20T12:08:52.084Z] SOCIAL 2026-02-20T12:08:52.082Z [social-poster] starting
+[2026-02-20T12:08:52.093Z] SOCIAL 2026-02-20T12:08:52.092Z [social-poster] queue has 1927 posts
+[2026-02-20T12:08:52.592Z] SOCIAL 2026-02-20T12:08:52.592Z [social-poster] OK mastodon: posted "Looking for a self-hosted Notion replacement? AppFlowy and A..."
+[2026-02-20T12:08:52.600Z] SOCIAL 2026-02-20T12:08:52.600Z [social-poster] removed 1 posted items from queue (1926 remaining)
+[2026-02-20T12:08:52.600Z] SOCIAL 2026-02-20T12:08:52.600Z [social-poster] done — 1 attempted, 1 succeeded, 1926 remaining in queue
+[2026-02-20T12:08:52.605Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:13:52.152Z] STATUS running=0/4 writers=0/0 freeMem=7168MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T12:13:52.152Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T12:13:52.152Z] PAUSED investor-relations — session limit active, 237min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:13:52.152Z] SOCIAL running social-poster.js
+[2026-02-20T12:13:52.183Z] SOCIAL 2026-02-20T12:13:52.181Z [social-poster] starting
+[2026-02-20T12:13:52.191Z] SOCIAL 2026-02-20T12:13:52.191Z [social-poster] queue has 1926 posts
+[2026-02-20T12:13:52.192Z] SOCIAL 2026-02-20T12:13:52.192Z [social-poster] done — 0 attempted, 0 succeeded, 1926 remaining in queue
+[2026-02-20T12:13:52.196Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:18:52.253Z] STATUS running=0/4 writers=0/0 freeMem=7164MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T12:18:52.253Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T12:18:52.253Z] PAUSED investor-relations — session limit active, 232min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:18:52.254Z] RELEASES running check-releases.js
+[2026-02-20T12:18:52.255Z] SOCIAL running social-poster.js
+[2026-02-20T12:18:52.285Z] SOCIAL 2026-02-20T12:18:52.283Z [social-poster] starting
+[2026-02-20T12:18:52.286Z] RELEASES 2026-02-20T12:18:52.284Z [check-releases] starting
+[2026-02-20T12:18:52.287Z] RELEASES 2026-02-20T12:18:52.287Z [check-releases] checking 29 GitHub repos
+[2026-02-20T12:18:52.293Z] SOCIAL 2026-02-20T12:18:52.292Z [social-poster] queue has 1926 posts
+[2026-02-20T12:18:52.388Z] RELEASES 2026-02-20T12:18:52.388Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T12:18:52.508Z] SOCIAL 2026-02-20T12:18:52.508Z [social-poster] OK x: posted "Complete guide to self-hosting AdGuard Home with Docker Comp..."
+[2026-02-20T12:18:52.830Z] SOCIAL 2026-02-20T12:18:52.830Z [social-poster] OK bluesky: posted "Self-hosting Cosmos Cloud is easier than you think. Docker C..."
+[2026-02-20T12:18:52.839Z] SOCIAL 2026-02-20T12:18:52.838Z [social-poster] removed 2 posted items from queue (1924 remaining)
+[2026-02-20T12:18:52.839Z] SOCIAL 2026-02-20T12:18:52.839Z [social-poster] done — 2 attempted, 2 succeeded, 1924 remaining in queue
+[2026-02-20T12:18:52.844Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:18:52.959Z] RELEASES 2026-02-20T12:18:52.959Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T12:18:53.589Z] RELEASES 2026-02-20T12:18:53.589Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T12:18:54.179Z] RELEASES 2026-02-20T12:18:54.179Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T12:18:54.761Z] RELEASES 2026-02-20T12:18:54.761Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T12:18:55.324Z] RELEASES 2026-02-20T12:18:55.324Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T12:18:55.890Z] RELEASES 2026-02-20T12:18:55.889Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T12:18:56.446Z] RELEASES 2026-02-20T12:18:56.446Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T12:18:57.012Z] RELEASES 2026-02-20T12:18:57.012Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T12:18:57.578Z] RELEASES 2026-02-20T12:18:57.578Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T12:18:58.130Z] RELEASES 2026-02-20T12:18:58.130Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T12:18:58.744Z] RELEASES 2026-02-20T12:18:58.744Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-20T12:18:59.339Z] RELEASES 2026-02-20T12:18:59.339Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T12:18:59.926Z] RELEASES 2026-02-20T12:18:59.926Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T12:19:00.496Z] RELEASES 2026-02-20T12:19:00.496Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T12:19:01.069Z] RELEASES 2026-02-20T12:19:01.068Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T12:19:01.629Z] RELEASES 2026-02-20T12:19:01.629Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T12:19:02.206Z] RELEASES 2026-02-20T12:19:02.206Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T12:19:02.788Z] RELEASES 2026-02-20T12:19:02.788Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T12:19:03.345Z] RELEASES 2026-02-20T12:19:03.345Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T12:19:03.917Z] RELEASES 2026-02-20T12:19:03.916Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T12:19:04.472Z] RELEASES 2026-02-20T12:19:04.472Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T12:19:05.034Z] RELEASES 2026-02-20T12:19:05.033Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T12:19:05.603Z] RELEASES 2026-02-20T12:19:05.603Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T12:19:06.168Z] RELEASES 2026-02-20T12:19:06.168Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T12:19:06.732Z] RELEASES 2026-02-20T12:19:06.731Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T12:19:07.298Z] RELEASES 2026-02-20T12:19:07.298Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-20T12:19:07.883Z] RELEASES 2026-02-20T12:19:07.882Z [check-releases]   nextcloud/server → 200 but same version (v33.0.0)
+[2026-02-20T12:19:08.460Z] RELEASES 2026-02-20T12:19:08.459Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T12:19:08.961Z] RELEASES 2026-02-20T12:19:08.960Z [check-releases] checking 3 feeds
+[2026-02-20T12:19:09.032Z] RELEASES 2026-02-20T12:19:09.032Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T12:19:09.295Z] RELEASES 2026-02-20T12:19:09.295Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T12:19:09.645Z] RELEASES 2026-02-20T12:19:09.645Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T12:19:09.845Z] RELEASES 2026-02-20T12:19:09.845Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T12:19:09.849Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T12:23:52.268Z] STATUS running=0/4 writers=0/0 freeMem=7170MB agents=[none] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T12:23:52.269Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T12:23:52.269Z] PAUSED investor-relations — session limit active, 227min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:23:52.269Z] SOCIAL running social-poster.js
+[2026-02-20T12:23:52.300Z] SOCIAL 2026-02-20T12:23:52.298Z [social-poster] starting
+[2026-02-20T12:23:52.308Z] SOCIAL 2026-02-20T12:23:52.308Z [social-poster] queue has 1924 posts
+[2026-02-20T12:23:52.309Z] SOCIAL 2026-02-20T12:23:52.309Z [social-poster] done — 0 attempted, 0 succeeded, 1924 remaining in queue
+[2026-02-20T12:23:52.313Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:28:20.192Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T12:28:23.240Z] ============================================================
+[2026-02-20T12:28:23.242Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T12:28:23.242Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min
+[2026-02-20T12:28:23.244Z] AGENTS discovered: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T12:28:23.244Z] WATCH inbox/ (agents: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T12:28:23.244Z] WATCH events/ (routing by filename convention)
+[2026-02-20T12:28:23.245Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T12:28:23.246Z] STARTUP complete — watching for events
+[2026-02-20T12:28:24.248Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T12:28:24.248Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T103950Z.json → bi-finance
+[2026-02-20T12:28:24.249Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T104531Z.json → bi-finance
+[2026-02-20T12:28:24.249Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T105658Z.json → bi-finance
+[2026-02-20T12:28:24.249Z] RECOVERY found unprocessed event: marketing-file-changed-2026-02-20T1049Z.json → marketing
+[2026-02-20T12:28:24.249Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T12:28:24.249Z] RECOVERY investor-relations inbox modified since last run — starting
+[2026-02-20T12:28:24.249Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-20T12:28:24.250Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-20T12:28:24.250Z] RECOVERY complete — 8 missed event(s) found
+[2026-02-20T12:28:28.250Z] FALLBACK investor-relations — 492108h since last run (1 due, starting 1)
+[2026-02-20T12:28:28.251Z] PAUSED investor-relations — session limit active, 223min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:28:29.249Z] PAUSED bi-finance — session limit active, 223min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:29:29.291Z] PAUSED bi-finance — session limit active, 222min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:30:29.309Z] PAUSED bi-finance — session limit active, 221min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:31:29.309Z] PAUSED marketing — session limit active, 220min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:32:29.309Z] PAUSED ceo — session limit active, 219min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:32:35.522Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T12:32:38.601Z] ============================================================
+[2026-02-20T12:32:38.605Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T12:32:38.606Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min
+[2026-02-20T12:32:38.609Z] AGENTS discovered: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T12:32:38.609Z] WATCH inbox/ (agents: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T12:32:38.609Z] WATCH events/ (routing by filename convention)
+[2026-02-20T12:32:38.611Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T12:32:38.612Z] STARTUP complete — watching for events
+[2026-02-20T12:32:39.613Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T12:32:39.614Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T103950Z.json → bi-finance
+[2026-02-20T12:32:39.614Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T104531Z.json → bi-finance
+[2026-02-20T12:32:39.614Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T105658Z.json → bi-finance
+[2026-02-20T12:32:39.614Z] RECOVERY found unprocessed event: marketing-file-changed-2026-02-20T1049Z.json → marketing
+[2026-02-20T12:32:39.615Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T12:32:39.615Z] RECOVERY investor-relations inbox modified since last run — starting
+[2026-02-20T12:32:39.615Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-20T12:32:39.616Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-20T12:32:39.616Z] RECOVERY complete — 8 missed event(s) found
+[2026-02-20T12:32:43.616Z] FALLBACK investor-relations — 492109h since last run (1 due, starting 1)
+[2026-02-20T12:32:43.617Z] PAUSED investor-relations — session limit active, 219min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:32:44.615Z] PAUSED bi-finance — session limit active, 218min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:33:44.674Z] PAUSED bi-finance — session limit active, 217min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:34:44.675Z] PAUSED bi-finance — session limit active, 216min until 2026-02-20T16:11:13.943Z
+[2026-02-20T12:34:54.637Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T12:35:17.339Z] ============================================================
+[2026-02-20T12:35:17.341Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T12:35:17.342Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min
+[2026-02-20T12:35:17.343Z] AGENTS discovered: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T12:35:17.343Z] WATCH inbox/ (agents: ceo, bi-finance, investor-relations, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T12:35:17.343Z] WATCH events/ (routing by filename convention)
+[2026-02-20T12:35:17.344Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T12:35:17.345Z] STARTUP complete — watching for events
+[2026-02-20T12:35:18.346Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T12:35:18.347Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T103950Z.json → bi-finance
+[2026-02-20T12:35:18.347Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T104531Z.json → bi-finance
+[2026-02-20T12:35:18.347Z] RECOVERY found unprocessed event: bi-finance-new-articles-20260220T105658Z.json → bi-finance
+[2026-02-20T12:35:18.347Z] RECOVERY found unprocessed event: marketing-file-changed-2026-02-20T1049Z.json → marketing
+[2026-02-20T12:35:18.348Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T12:35:18.348Z] RECOVERY investor-relations inbox modified since last run — starting
+[2026-02-20T12:35:18.348Z] RECOVERY marketing inbox modified since last run — starting
+[2026-02-20T12:35:18.348Z] RECOVERY technology inbox modified since last run — starting
+[2026-02-20T12:35:18.348Z] RECOVERY complete — 8 missed event(s) found
+[2026-02-20T12:35:22.350Z] FALLBACK investor-relations — 492109h since last run (1 due, starting 1)
+[2026-02-20T12:35:22.351Z] AGENT investor-relations starting (trigger: 492109h-fallback)
+[2026-02-20T12:35:22.354Z] AGENT investor-relations started (pid: 98598)
+[2026-02-20T12:35:23.348Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T103950Z.json)
+[2026-02-20T12:35:23.350Z] AGENT bi-finance started (pid: 98621)
+[2026-02-20T12:36:23.393Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T104531Z.json
+[2026-02-20T12:37:23.393Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T105658Z.json
+[2026-02-20T12:38:23.407Z] AGENT marketing starting (trigger: marketing-file-changed-2026-02-20T1049Z.json)
+[2026-02-20T12:38:23.409Z] AGENT marketing started (pid: 100229)
+[2026-02-20T12:38:37.540Z] INBOX technology.md modified → technology
+[2026-02-20T12:38:37.541Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-20T12:38:37.542Z] AGENT technology started (pid: 100374)
+[2026-02-20T12:39:23.371Z] CONCURRENCY ceo — 4/4 agents running, queued
+[2026-02-20T12:39:31.204Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T12:39:31.204Z] QUEUED investor-relations already running — trigger queued: inbox-message
+[2026-02-20T12:40:17.353Z] STATUS running=4/4 writers=0/0 freeMem=6388MB agents=[investor-relations(295s), bi-finance(294s), marketing(114s), technology(100s)] paused=no
+[2026-02-20T12:40:17.354Z] SOCIAL running social-poster.js
+[2026-02-20T12:40:17.387Z] SOCIAL 2026-02-20T12:40:17.385Z [social-poster] starting
+[2026-02-20T12:40:17.395Z] SOCIAL 2026-02-20T12:40:17.395Z [social-poster] queue has 1924 posts
+[2026-02-20T12:40:17.633Z] SOCIAL 2026-02-20T12:40:17.633Z [social-poster] OK x: posted "Take control of your data — self-host AFFiNE. Docker guide w..."
+[2026-02-20T12:40:17.975Z] SOCIAL 2026-02-20T12:40:17.975Z [social-poster] OK mastodon: posted "Cosmos Cloud vs Yacht for managing your Docker containers:
+
+..."
+[2026-02-20T12:40:18.308Z] SOCIAL 2026-02-20T12:40:18.308Z [social-poster] OK bluesky: posted "Want to self-host Dim? Our guide covers Docker Compose setup..."
+[2026-02-20T12:40:18.317Z] SOCIAL 2026-02-20T12:40:18.316Z [social-poster] removed 3 posted items from queue (1921 remaining)
+[2026-02-20T12:40:18.317Z] SOCIAL 2026-02-20T12:40:18.317Z [social-poster] done — 3 attempted, 3 succeeded, 1921 remaining in queue
+[2026-02-20T12:40:18.324Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T12:40:23.353Z] QUEUED investor-relations already running — trigger queued: inbox-missed
+[2026-02-20T12:41:23.370Z] QUEUED marketing already running — trigger queued: inbox-missed

@@ -437,3 +437,72 @@
 2026-02-20T11:18:11.198Z [social-poster] starting
 2026-02-20T11:18:11.210Z [social-poster] queue has 1936 posts
 2026-02-20T11:18:11.212Z [social-poster] done — 0 attempted, 0 succeeded, 1936 remaining in queue
+2026-02-20T11:23:11.277Z [social-poster] starting
+2026-02-20T11:23:11.292Z [social-poster] queue has 1936 posts
+2026-02-20T11:23:11.531Z [social-poster] OK bluesky: posted "Want to self-host Borgmatic? Our guide covers Docker Compose..."
+2026-02-20T11:23:11.543Z [social-poster] removed 1 posted items from queue (1935 remaining)
+2026-02-20T11:23:11.544Z [social-poster] done — 1 attempted, 1 succeeded, 1935 remaining in queue
+2026-02-20T11:28:51.619Z [social-poster] starting
+2026-02-20T11:28:51.629Z [social-poster] queue has 1935 posts
+2026-02-20T11:28:51.831Z [social-poster] OK x: posted "Self-hosting cost reality check: a family of four on Google ..."
+2026-02-20T11:28:52.456Z [social-poster] OK mastodon: posted "Stop accessing your apps by IP:port. A reverse proxy gives y..."
+2026-02-20T11:28:52.465Z [social-poster] removed 2 posted items from queue (1933 remaining)
+2026-02-20T11:28:52.465Z [social-poster] done — 2 attempted, 2 succeeded, 1933 remaining in queue
+2026-02-20T11:33:51.647Z [social-poster] starting
+2026-02-20T11:33:51.657Z [social-poster] queue has 1933 posts
+2026-02-20T11:33:52.008Z [social-poster] OK bluesky: posted "Self-hosting Caddy is easier than you think. Docker Compose ..."
+2026-02-20T11:33:52.017Z [social-poster] removed 1 posted items from queue (1932 remaining)
+2026-02-20T11:33:52.018Z [social-poster] done — 1 attempted, 1 succeeded, 1932 remaining in queue
+2026-02-20T11:38:51.752Z [social-poster] starting
+2026-02-20T11:38:51.765Z [social-poster] queue has 1932 posts
+2026-02-20T11:38:51.767Z [social-poster] done — 0 attempted, 0 succeeded, 1932 remaining in queue
+2026-02-20T11:43:51.772Z [social-poster] starting
+2026-02-20T11:43:51.783Z [social-poster] queue has 1932 posts
+2026-02-20T11:43:51.784Z [social-poster] done — 0 attempted, 0 succeeded, 1932 remaining in queue
+2026-02-20T11:48:51.772Z [social-poster] starting
+2026-02-20T11:48:51.784Z [social-poster] queue has 1932 posts
+2026-02-20T11:48:51.980Z [social-poster] OK x: posted "Docker volume backup one-liner:
+
+docker run --rm -v myvolume..."
+2026-02-20T11:48:52.446Z [social-poster] OK mastodon: posted "Google logs every DNS query tied to your IP for 24-48 hours,..."
+2026-02-20T11:48:52.649Z [social-poster] OK bluesky: posted "Calibre-Web is one of those apps that's worth self-hosting. ..."
+2026-02-20T11:48:52.659Z [social-poster] removed 3 posted items from queue (1929 remaining)
+2026-02-20T11:48:52.659Z [social-poster] done — 3 attempted, 3 succeeded, 1929 remaining in queue
+2026-02-20T11:53:51.843Z [social-poster] starting
+2026-02-20T11:53:51.853Z [social-poster] queue has 1929 posts
+2026-02-20T11:53:51.854Z [social-poster] done — 0 attempted, 0 succeeded, 1929 remaining in queue
+2026-02-20T11:58:51.945Z [social-poster] starting
+2026-02-20T11:58:51.956Z [social-poster] queue has 1929 posts
+2026-02-20T11:58:51.957Z [social-poster] done — 0 attempted, 0 succeeded, 1929 remaining in queue
+2026-02-20T12:03:52.044Z [social-poster] starting
+2026-02-20T12:03:52.054Z [social-poster] queue has 1929 posts
+2026-02-20T12:03:52.275Z [social-poster] OK x: posted "Self-host Actual Budget: Docker Compose config, setup walkth..."
+2026-02-20T12:03:52.608Z [social-poster] OK bluesky: posted "If you've been thinking about running Cloudflare Tunnel your..."
+2026-02-20T12:03:52.621Z [social-poster] removed 2 posted items from queue (1927 remaining)
+2026-02-20T12:03:52.622Z [social-poster] done — 2 attempted, 2 succeeded, 1927 remaining in queue
+2026-02-20T12:08:52.082Z [social-poster] starting
+2026-02-20T12:08:52.092Z [social-poster] queue has 1927 posts
+2026-02-20T12:08:52.592Z [social-poster] OK mastodon: posted "Looking for a self-hosted Notion replacement? AppFlowy and A..."
+2026-02-20T12:08:52.600Z [social-poster] removed 1 posted items from queue (1926 remaining)
+2026-02-20T12:08:52.600Z [social-poster] done — 1 attempted, 1 succeeded, 1926 remaining in queue
+2026-02-20T12:13:52.181Z [social-poster] starting
+2026-02-20T12:13:52.191Z [social-poster] queue has 1926 posts
+2026-02-20T12:13:52.192Z [social-poster] done — 0 attempted, 0 succeeded, 1926 remaining in queue
+2026-02-20T12:18:52.283Z [social-poster] starting
+2026-02-20T12:18:52.292Z [social-poster] queue has 1926 posts
+2026-02-20T12:18:52.508Z [social-poster] OK x: posted "Complete guide to self-hosting AdGuard Home with Docker Comp..."
+2026-02-20T12:18:52.830Z [social-poster] OK bluesky: posted "Self-hosting Cosmos Cloud is easier than you think. Docker C..."
+2026-02-20T12:18:52.838Z [social-poster] removed 2 posted items from queue (1924 remaining)
+2026-02-20T12:18:52.839Z [social-poster] done — 2 attempted, 2 succeeded, 1924 remaining in queue
+2026-02-20T12:23:52.298Z [social-poster] starting
+2026-02-20T12:23:52.308Z [social-poster] queue has 1924 posts
+2026-02-20T12:23:52.309Z [social-poster] done — 0 attempted, 0 succeeded, 1924 remaining in queue
+2026-02-20T12:40:17.385Z [social-poster] starting
+2026-02-20T12:40:17.395Z [social-poster] queue has 1924 posts
+2026-02-20T12:40:17.633Z [social-poster] OK x: posted "Take control of your data — self-host AFFiNE. Docker guide w..."
+2026-02-20T12:40:17.975Z [social-poster] OK mastodon: posted "Cosmos Cloud vs Yacht for managing your Docker containers:
+
+..."
+2026-02-20T12:40:18.308Z [social-poster] OK bluesky: posted "Want to self-host Dim? Our guide covers Docker Compose setup..."
+2026-02-20T12:40:18.316Z [social-poster] removed 3 posted items from queue (1921 remaining)
+2026-02-20T12:40:18.317Z [social-poster] done — 3 attempted, 3 succeeded, 1921 remaining in queue
