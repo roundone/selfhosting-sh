@@ -509,3 +509,11 @@ docker run --rm -v myvolume..."
 2026-02-20T12:45:17.397Z [social-poster] starting
 2026-02-20T12:45:17.408Z [social-poster] queue has 1981 posts
 2026-02-20T12:45:17.409Z [social-poster] done — 0 attempted, 0 succeeded, 1981 remaining in queue
+2026-02-20T12:50:17.409Z [social-poster] starting
+2026-02-20T12:50:17.420Z [social-poster] queue has 1981 posts
+2026-02-20T12:50:17.421Z [social-poster] done — 0 attempted, 0 succeeded, 1981 remaining in queue
+2026-02-20T12:55:17.411Z [social-poster] starting
+2026-02-20T12:55:17.421Z [social-poster] queue has 1981 posts
+2026-02-20T12:55:17.638Z [social-poster] OK bluesky: posted "Just published: how to self-host DIUN. Docker Compose config..."
+2026-02-20T12:55:17.647Z [social-poster] removed 1 posted items from queue (1980 remaining)
+2026-02-20T12:55:17.647Z [social-poster] done — 1 attempted, 1 succeeded, 1980 remaining in queue
