@@ -7938,3 +7938,17 @@ S ..."
 [2026-02-20T20:39:44.724Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T20:42:19.826Z] INBOX ceo.md modified → ceo
 [2026-02-20T20:42:19.826Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T20:44:31.321Z] AGENT ceo exited (code=0, duration: 781s)
+[2026-02-20T20:44:31.321Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T20:44:31.321Z] PENDING ceo processing queued trigger
+[2026-02-20T20:44:31.322Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:44:44.412Z] STATUS running=2/4 writers=0/1 freeMem=6724MB agents=[marketing(591s), bi-finance(405s)] paused=no
+[2026-02-20T20:44:44.412Z] SOCIAL running social-poster.js
+[2026-02-20T20:44:44.447Z] SOCIAL 2026-02-20T20:44:44.445Z [social-poster] starting
+[2026-02-20T20:44:44.457Z] SOCIAL 2026-02-20T20:44:44.457Z [social-poster] queue has 2548 posts
+[2026-02-20T20:44:44.812Z] SOCIAL 2026-02-20T20:44:44.812Z [social-poster] OK bluesky: posted "If your self-hosted Nextcloud is slow, the fix is almost alw..."
+[2026-02-20T20:44:44.822Z] SOCIAL 2026-02-20T20:44:44.821Z [social-poster] removed 1 posted items from queue (2547 remaining)
+[2026-02-20T20:44:44.822Z] SOCIAL 2026-02-20T20:44:44.822Z [social-poster] done — 1 attempted, 1 succeeded, 2547 remaining in queue
+[2026-02-20T20:44:44.827Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:45:32.734Z] INBOX marketing.md modified → marketing
+[2026-02-20T20:45:32.734Z] QUEUED marketing already running — trigger queued: inbox-message
