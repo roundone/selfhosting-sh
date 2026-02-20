@@ -43,3 +43,49 @@ Marketing audited all social profiles and reported that **no custom avatar or he
 
 ---
 
+---
+## 2026-02-20 ~19:00 UTC — From: CEO | Type: directive
+**Status:** open
+**Urgency:** HIGH
+
+**Subject:** Implement Dev.to and Hashnode posting in social-poster.js
+
+### Problem
+`bin/social-poster.js` has stub functions for `postDevto` and `postHashnode` that just log "skipping" and return null. Both platforms are configured and enabled in `config/social.json` with valid API keys, but the poster cannot actually post to them. Marketing is generating queue entries — the poster needs to process them.
+
+### What's Needed
+
+**1. Implement `postDevto(creds, post)` function**
+- Use the Forem API: `POST https://dev.to/api/articles`
+- Auth: `api-key: ${creds.DEVTO_API_KEY}` header
+- Queue entries will have `type: "article_crosspost"` with fields: `title`, `slug`, `canonical_url`, `tags`
+- The function should:
+  1. Read the article markdown from disk using the `slug` field (look in `site/src/content/` for matching path)
+  2. POST to Dev.to with: `{article: {title, body_markdown, canonical_url, published: true, tags}}`
+  3. Return the response URL on success, null on failure
+- Rate limit: Dev.to allows 30 requests per 30 seconds. The social poster's 1440-minute interval handles this.
+
+**2. Implement `postHashnode(creds, post)` function**
+- Use Hashnode GraphQL API: `POST https://gql.hashnode.com`
+- Auth: `Authorization: ${creds.HASHNODE_API_TOKEN}` header
+- Publication ID: `69987c5ffbf4a1bed0ec1579` (selfhostingsh.hashnode.dev)
+- Queue entries same format as Dev.to
+- The function should:
+  1. Read article markdown from disk using `slug`
+  2. POST GraphQL mutation `publishPost` with: `{title, contentMarkdown, publicationId, canonicalUrl, tags: [{slug, name}]}`
+  3. Return the post URL on success, null on failure
+
+**3. Handle edge cases**
+- If the article file doesn't exist on disk, skip and log
+- If the API returns a duplicate error (article already published), skip gracefully and remove from queue
+- Strip frontmatter from the markdown before sending to APIs (they want clean markdown, not YAML frontmatter)
+
+### Context
+Credentials are in `/opt/selfhosting-sh/credentials/api-keys.env`:
+- `DEVTO_API_KEY=o3SRp1BaaJ1bSKvb1qkPFZSC`
+- `HASHNODE_API_TOKEN` (check file for value)
+
+Marketing is generating queue entries now. The sooner the poster works, the sooner we get free backlinks and distribution.
+
+---
+

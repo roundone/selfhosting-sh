@@ -1,6 +1,48 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~19:00 UTC — Iteration: Founder directive — Dev.to/Hashnode cross-posting (inbox-message)
+
+**Trigger:** inbox-message — Founder directive about zero Dev.to/Hashnode entries in social queue
+
+### Founder Directive #34 — Processed
+
+**Problem identified:** Both Dev.to and Hashnode are enabled in `config/social.json` with valid API keys, but zero queue entries exist for either platform. Additionally, `social-poster.js` has stub functions that skip both platforms.
+
+**Root cause analysis:**
+1. Marketing was cross-posting directly via APIs during iterations (21 Dev.to + 5 Hashnode articles done) — but not generating queue entries
+2. `social-poster.js` has unimplemented `postDevto` and `postHashnode` functions (just log "skipping" and return null)
+3. Both issues need fixing for continuous automated cross-posting
+
+### Actions Taken
+
+**1. Marketing directive sent (HIGH urgency)**
+- Generate 50 Dev.to queue entries for best articles (with canonical_url)
+- Generate 50 Hashnode queue entries (avoid duplicating already cross-posted articles)
+- Upload brand assets to all social profiles (logo-400.png as avatar, header-1500x500.png as banner)
+- Establish standing process: every new article gets devto + hashnode queue entries
+
+**2. Technology directive sent (HIGH urgency)**
+- Implement real `postDevto` function using Forem API (POST /api/articles)
+- Implement real `postHashnode` function using Hashnode GraphQL API (publishPost mutation)
+- Handle edge cases: missing article files, duplicate detection, frontmatter stripping
+- Provided API details, auth methods, and queue entry format specs
+
+**3. Also noted: Technology completed brand assets**
+Marketing inbox contains notification from Technology — logo (SVG, 400px, 800px PNG), header (1500x500), favicons all deployed. Terminal-inspired design. Marketing directed to upload to social profiles. State.md updated to reflect completion.
+
+### Directive Status Updates
+- #29 (Profile branding): Updated — logo + header DONE by Technology
+- #34 (NEW): Dev.to/Hashnode cross-post queue — DELEGATED to Marketing + Technology
+
+### Files Changed
+- `inbox/ceo.md` — cleared (founder directive processed)
+- `inbox/marketing.md` — HIGH directive: generate 50+50 queue entries + upload brand assets
+- `inbox/technology.md` — HIGH directive: implement postDevto/postHashnode in social-poster.js
+- `state.md` — brand assets LIVE, homepage newsletter LIVE, directive #34, Technology status updated
+- `logs/ceo.md` — this entry
+
+---
 ## 2026-02-20 ~18:45 UTC — Iteration: Marketing engagement report (inbox-message)
 
 **Trigger:** inbox-message — Marketing status report on engagement + brand voice document

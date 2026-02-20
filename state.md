@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 18:45 UTC
+## Last Updated: 2026-02-20 19:00 UTC
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -65,6 +65,8 @@
 - **Share buttons: LIVE** (ShareButtons.astro — X, Reddit, HN, LinkedIn, Bluesky, Copy Link)
 - **Page speed: OPTIMIZED** (prefetch, preconnect GTM, conditional Pagefind — articles skip ~50KB)
 - **Newsletter pipeline: LIVE** (subscribe/unsubscribe endpoints at /api/subscribe, /api/unsubscribe. VPS-backed storage. Sending via bin/send-newsletter.sh. Content strategy pending Marketing.)
+- **Brand assets: LIVE** — Logo (SVG, 400px, 800px PNG), header (1500x500 PNG/SVG), favicons all deployed to `site/public/branding/` and CDN. Terminal-inspired design. Marketing uploading to social profiles.
+- **Homepage newsletter mention: LIVE** — Hero section link + bottom EmailSignup component.
 
 ## SEO & Marketing
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
@@ -133,7 +135,7 @@
 |-------|----------|--------|--------|
 | CEO | 2026-02-20 18:45 | 0 | Running — processed Marketing engagement report, brand voice complete |
 | Operations | 2026-02-20 14:20 | 0 | Running |
-| Technology | 2026-02-20 18:30 | 0 | Running — Portal v4 shipped, working on logo + newsletter homepage |
+| Technology | 2026-02-20 18:45 | 0 | Running — Logo + newsletter homepage DONE. Working on Dev.to/Hashnode poster implementation. |
 | Marketing | 2026-02-20 18:44 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies this iteration |
 | BI & Finance | 2026-02-20 13:03 | 0 | Idle (next: inbox/fallback trigger) |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
@@ -182,8 +184,9 @@
 26. **Social queue cleanup** → **DONE** (Feb 20 ~18:20 UTC) — CEO trimmed queue from ~2,000 to 544 items (376 article links from 133 unique articles + 168 non-link). Marketing directed to add 400+ non-link posts.
 27. **Comment reply system** → **ACTIVE** (Feb 20 ~19:45 UTC) — Marketing reported 16 genuine replies sent across Mastodon (5) and Bluesky (11). Reply rate tracking ongoing.
 28. **Follow accounts on X/Bluesky/Mastodon** → **ACTIVE** (Feb 20 ~19:45 UTC) — Marketing reported 89 new follows: Mastodon +39 (81 total), Bluesky +20 (63 total), X +30 (31 total). Exceeds 10/day target.
-29. **Profile branding audit** → **IN PROGRESS** — Marketing audited all 7 platforms. Critical gap: no logo exists. Technology directed to create logo + header. Marketing proceeding with bio/link/pin fixes.
+29. **Profile branding audit** → **IN PROGRESS** — Logo + header DONE by Technology. Marketing uploading to all social profiles via API/Playwright.
 30. **IR portal redesign** → **COMPLETE** (Feb 20 ~18:30 UTC) — Portal v4 shipped: social activity feed (`/social`), 5 collapsible sections, 6 executive summary cards, PIDs removed, relative timestamps. Logo/brand assets in progress.
 31. **Department role clarity** → **DONE** (Feb 20 ~18:30 UTC) — Marketing CLAUDE.md expanded (engagement, community mgmt, follower growth, distribution). BI-Finance CLAUDE.md expanded (monetization readiness, proactive insights). CEO CLAUDE.md updated (product ownership).
 32. **Playwright engagement for Marketing** → **DONE** (Feb 21 ~00:05 UTC) — Marketing CLAUDE.md updated with detailed Playwright MCP usage instructions. CRITICAL inbox directive sent. Mandatory per-iteration engagement checklist added.
 33. **Brand voice + smart reply strategy** → **COMPLETE** (Feb 20 ~19:45 UTC) — Marketing created `agents/marketing/brand-voice.md` with all 7 required sections. All future engagement follows this document.
+34. **Dev.to/Hashnode cross-post queue** → **DELEGATED** (Feb 20 ~19:00 UTC) — Founder flagged zero devto/hashnode entries in queue. Marketing directed to generate 50 entries per platform. Technology directed to implement `postDevto`/`postHashnode` in social-poster.js. Marketing also to upload brand assets to all social profiles.
