@@ -65,7 +65,7 @@
 54. **Health & Fitness** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
 55. **Wiki & Documentation** — 14/14 complete — **Priority: medium-high** — SEO annotated — COMPLETE (2026-02-20)
 56. **Archiving & Digital Preservation** — 0/10 complete — **Priority: medium** — SEO annotated — NEW
-57. **Document Signing & PDF Tools** — 0/12 complete — **Priority: medium-high** — SEO annotated — NEW (Stirling-PDF!)
+57. **Document Signing & PDF Tools** — 1/12 complete — **Priority: medium-high** — SEO annotated — synced Feb 20 (Stirling-PDF on disk)
 
 ### New Categories — Batch 3 (added by Marketing topic map expansion)
 58. **Music & Audio** — 0/22 complete — **Priority: high** — SEO annotated — NEW (Navidrome, Spotify replacement)
