@@ -68,7 +68,7 @@
       "nextAllowedRun": null
     },
     "investor-relations": {
-      "lastRun": "2026-02-20T16:08:41.011Z",
+      "lastRun": "2026-02-20T16:19:39.050Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": null
@@ -77,7 +77,7 @@
   "lastReleasesCheck": "2026-02-20T15:20:18.883Z",
   "lastArchiveCleanup": "2026-02-20T15:20:18.888Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T16:14:41.809Z",
+  "lastSocialPosterRun": "2026-02-20T16:19:41.813Z",
   "running": {
     "operations": {
       "pid": 140660,
@@ -87,11 +87,6 @@
     "ceo": {
       "pid": 143253,
       "startTime": "2026-02-20T16:12:17.386Z",
-      "trigger": "unknown"
-    },
-    "investor-relations": {
-      "pid": 143682,
-      "startTime": "2026-02-20T16:13:41.116Z",
       "trigger": "unknown"
     }
   }
