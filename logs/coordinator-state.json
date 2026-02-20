@@ -16,9 +16,9 @@
       "nextAllowedRun": "2026-02-19T23:57:59.922Z"
     },
     "operations": {
-      "lastRun": "2026-02-19T18:31:32.320Z",
-      "consecutiveErrors": 1,
-      "nextAllowedRun": "2026-02-19T23:57:59.921Z"
+      "lastRun": "2026-02-20T00:28:11.963Z",
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     },
     "technology": {
       "lastRun": "2026-02-19T18:31:36.418Z",
@@ -29,5 +29,5 @@
   "lastReleasesCheck": "2026-02-20T00:27:35.314Z",
   "lastArchiveCleanup": "2026-02-20T00:27:35.318Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T00:27:35.316Z"
+  "lastSocialPosterRun": "2026-02-20T00:32:35.323Z"
 }

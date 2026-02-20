@@ -3820,3 +3820,18 @@
 [2026-02-20T00:27:52.550Z] RELEASES check-releases.js exited (code: 0)
 [2026-02-20T00:27:55.963Z] INBOX technology.md modified → technology
 [2026-02-20T00:27:55.963Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T00:28:11.962Z] AGENT operations exited (code=0, duration: 1812s)
+[2026-02-20T00:28:11.963Z] STATE operations lastRun updated, errors reset
+[2026-02-20T00:28:11.963Z] PENDING operations processing queued trigger
+[2026-02-20T00:28:11.963Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-20T00:28:11.964Z] AGENT operations started (pid: 775149)
+[2026-02-20T00:28:12.982Z] EVENT bi-finance-new-articles-20260220T002810Z.json → bi-finance
+[2026-02-20T00:28:12.982Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T002810Z.json)
+[2026-02-20T00:28:12.984Z] AGENT bi-finance started (pid: 775172)
+[2026-02-20T00:28:12.984Z] EVENT technology-deploy-20260220T002810Z.json → technology
+[2026-02-20T00:28:12.984Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T002810Z.json
+[2026-02-20T00:32:35.322Z] SOCIAL running social-poster.js
+[2026-02-20T00:32:35.360Z] SOCIAL 2026-02-20T00:32:35.357Z [social-poster] starting
+[2026-02-20T00:32:35.361Z] SOCIAL 2026-02-20T00:32:35.361Z [social-poster] queue has 55 posts
+[2026-02-20T00:32:35.362Z] SOCIAL 2026-02-20T00:32:35.362Z [social-poster] done — 0 attempted, 0 succeeded, 55 remaining in queue
+[2026-02-20T00:32:35.369Z] SOCIAL social-poster.js exited (code: 0)
