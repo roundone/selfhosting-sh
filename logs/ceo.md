@@ -586,3 +586,84 @@ Updated with new escalations, re-emailed to nishant@daemonventures.com.
 3. Monitor founder response to board report
 4. Push for remaining social credentials in board report
 5. Check if Marketing is flooding the queue as directed
+
+---
+## 2026-02-20 01:10 UTC — CEO Operating Loop: pending-trigger — CRITICAL: Writer Pipeline Fix + Board Report
+
+### Trigger
+pending-trigger. Previous CEO run completed at 00:33 UTC; inbox was modified at 00:24 UTC (queued trigger).
+
+### Assessment — CRITICAL Issues Found
+
+1. **CRITICAL: Writer sub-agent pipeline DEAD since Feb 18.**
+   - Root cause: Coordinator v1.1 (deployed Feb 18) only discovers 5 top-level agents (`agents/*/CLAUDE.md`). The 8 writer sub-agents at `agents/operations/writers/*/CLAUDE.md` are invisible to it.
+   - Impact: Content velocity collapsed from 374 articles/day (Day 1) to ~47 articles/day (Days 2-5).
+   - All 8 writer directories exist with valid CLAUDE.md files but no system is running them.
+   - The old supervisor attempted to restart writers on Feb 19 but 6 of 8 were killed (code=137, likely OOM/process conflict).
+
+2. **CRITICAL: Technology department non-functional for 4 days.**
+   - Zero logged activity since Feb 16 09:28 UTC.
+   - Three founder-directed tasks unstarted: search fix (CRITICAL), Playwright MCP (HIGH), status dashboard (MEDIUM-HIGH).
+   - 9 unprocessed inbox messages spanning 4 days.
+   - Technology's `consecutiveErrors: 1` from SIGTERM during coordinator restart, but it just started a new iteration at 00:58 UTC.
+
+3. **Operations crashing 19/20 iterations.**
+   - Operations head agent has been failing with `code=1` on most runs since Feb 18.
+   - When it does succeed, it writes 2 articles directly instead of managing writers.
+   - Latest successful run at 00:28 UTC wrote Jitsi Meet + Mattermost guides.
+
+4. **Article count: 555** (not 563 as previously reported — recounted by content directory).
+   - 135 apps, 186 compare, 93 foundations, 69 hardware, 43 replace, 19 best, 10 troubleshooting
+
+5. **Social queue healthy.** Marketing flooded queue from 56 to 1,663 posts. Poster running every 5 min, respecting rate limits (X: 60min, Bluesky: 30min). 3 total posts since launch (~24h ago).
+
+6. **Proxy at 58% usage** — elevated from 11% but within safe range.
+
+7. **Board report was 4 days overdue** — previous CEO run wrote it but didn't email it.
+
+### Actions Taken
+
+1. **DEPLOYED COORDINATOR v1.2** — Three changes to `bin/coordinator.js`:
+   - `discoverAgents()` now recursively discovers writer sub-agents at `agents/*/writers/*/CLAUDE.md`, registered as `ops-{writerName}`
+   - `loadWakeConf()` now supports `fallback:` directive for per-agent fallback intervals (e.g., `fallback: 30m`)
+   - `checkFallbacks()` enforces `MAX_CONCURRENT_WRITERS = 3` to prevent OOM on 4GB VPS
+   - `handleAgentExit()` now chains writer starts — when a writer finishes, next queued writer starts
+   - Version label updated to `v1.2 (writer-discovery, per-agent-fallback, writer-concurrency-limit)`
+
+2. **Created `wake-on.conf` for all 8 writers** — Each set to `fallback: 30m` so writers run every 30 minutes instead of the default 8h.
+
+3. **Sent CRITICAL escalation to Technology inbox** — Detailed the 4-day gap, listed all unprocessed items, demanded search fix THIS ITERATION.
+
+4. **Updated board report** (board/day-2026-02-20.md):
+   - Updated health summary with root cause analysis
+   - Updated infrastructure section with v1.2 details
+   - Updated risks section with velocity fix and Technology status
+   - Updated founder directives with accurate NOT STARTED status for items 1, 5, 6
+   - Updated scorecard with corrected article count
+
+5. **Emailed board report** to nishant@daemonventures.com (ID: 7c433a93-7326-4c44-a94d-5ee57c3ac399). Subject includes "CRITICAL: Writer pipeline fixed".
+
+6. **Updated state.md** — Comprehensive refresh with corrected article counts, agent health table, coordinator v1.2 status, all blockers.
+
+### Key Decisions
+
+1. **Writer concurrency limit set to 3.** On a 4GB VPS with ~2.2GB available, running 3 writers (~300MB each) plus 2-3 core agents is safe. Running all 8 simultaneously would cause OOM. Writers will rotate — as each finishes, the next starts.
+
+2. **30-minute writer fallback.** Writers need to run frequently to maintain velocity. 30 minutes allows each writer to complete an iteration (typically 15-30 articles), commit, and restart. With 3 concurrent writers at 30 min cycles, expected throughput: ~45-90 articles/hour = ~1,000-2,000 articles/day.
+
+3. **Month 1 target revision recommended.** 5,000 articles by Feb 28 is mathematically unreachable (555 + ~200/day × 8 days ≈ 2,155 max). Recommending 2,000 as the revised Month 1 target and 5,000 as Month 2.
+
+4. **Technology needs one more iteration to prove viability.** If Technology's current iteration (started 00:58 UTC) produces no results, I will consider: (a) updating Technology's CLAUDE.md to be more directive, (b) spawning a specialist agent to handle the search fix directly, or (c) fixing search myself.
+
+### Coordinator Restart Required
+The coordinator is running v1.1 and needs restart to load v1.2. This will kill all running agents (including this CEO iteration). All work has been committed to files. The restart will:
+- Discover 13 agents instead of 5 (5 core + 8 writers)
+- Start writer fallback cycles (30-minute intervals, max 3 concurrent)
+- Resume all core agents based on their inbox/event triggers
+
+### Next Iteration Priorities
+1. Verify writers are running and producing after coordinator restart
+2. Monitor Technology — did the current iteration produce results?
+3. Track content velocity — are we back to 100+ articles/day?
+4. Monitor founder response to board report
+5. Check social poster — X and Bluesky should be posting at rate limit

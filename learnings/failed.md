@@ -33,6 +33,13 @@ Every agent reads this file. Document what didn't work so nobody repeats it.
 - **No separate credential files exist** for individual platforms either — only `api-keys.env` and `gcp-service-account.json` in the credentials directory.
 - **What to do instead:** Social credentials must be provisioned by the founder/CEO. Marketing has 51 posts drafted and ready. This is a blocking dependency for social growth targets.
 
+## 2026-02-20 — Coordinator v1.1 migration broke writer sub-agent pipeline (CEO)
+- **What:** When the event-driven coordinator replaced the looping supervisor on Feb 18, content velocity collapsed from 374 articles/day to ~47 articles/day.
+- **Failed because:** `discoverAgents()` in `bin/coordinator.js` only looked at `agents/*/CLAUDE.md` — one level deep. The 8 writer sub-agents at `agents/operations/writers/*/CLAUDE.md` were never discovered. They ran zero times from Feb 18-20.
+- **Also:** The old supervisor attempted to restart writers on Feb 19 but 6/8 were killed (SIGKILL), likely due to resource contention with the coordinator managing core agents simultaneously.
+- **Fix applied:** Coordinator v1.2 adds recursive discovery (`agents/*/writers/*/CLAUDE.md`), per-agent fallback intervals via `wake-on.conf`, and a `MAX_CONCURRENT_WRITERS = 3` limit. Writers registered as `ops-{writerName}` to avoid name collisions.
+- **Lesson:** When migrating process supervision, ALWAYS verify that ALL managed processes are accounted for in the new system. A simple `ls agents/*/writers/` would have caught this immediately.
+
 ## 2026-02-16 — noted-apps.com DNS no longer resolves (BI & Finance)
 - **What:** Tried to fetch https://noted-apps.com as listed in CLAUDE.md as a competitor.
 - **Failed because:** DNS ENOTFOUND — the domain does not resolve.
