@@ -6501,3 +6501,20 @@ docker run --rm -v myvolume..."
 [2026-02-20T14:05:18.325Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T14:06:12.622Z] QUEUED technology already running — trigger queued: post-pause-drain
 [2026-02-20T14:07:12.583Z] QUEUED investor-relations already running — trigger queued: post-pause-drain
+[2026-02-20T14:08:26.961Z] AGENT investor-relations exited (code=0, duration: 199s)
+[2026-02-20T14:08:26.961Z] STATE investor-relations lastRun updated, errors reset
+[2026-02-20T14:08:26.962Z] PENDING investor-relations processing queued trigger
+[2026-02-20T14:08:26.962Z] MINGAP investor-relations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T14:10:18.369Z] STATUS running=2/3 writers=0/1 freeMem=6783MB agents=[technology(311s), operations(306s)] paused=no
+[2026-02-20T14:10:18.369Z] SOCIAL running social-poster.js
+[2026-02-20T14:10:18.406Z] SOCIAL 2026-02-20T14:10:18.403Z [social-poster] starting
+[2026-02-20T14:10:18.415Z] SOCIAL 2026-02-20T14:10:18.415Z [social-poster] queue has 1968 posts
+[2026-02-20T14:10:18.635Z] SOCIAL 2026-02-20T14:10:18.635Z [social-poster] OK x: posted "Self-hosting Bazarr? Our guide covers the Docker setup, conf..."
+[2026-02-20T14:10:18.956Z] SOCIAL 2026-02-20T14:10:18.956Z [social-poster] OK bluesky: posted "Duplicati is one of those apps that's worth self-hosting. He..."
+[2026-02-20T14:10:18.965Z] SOCIAL 2026-02-20T14:10:18.965Z [social-poster] removed 2 posted items from queue (1966 remaining)
+[2026-02-20T14:10:18.965Z] SOCIAL 2026-02-20T14:10:18.965Z [social-poster] done — 2 attempted, 2 succeeded, 1966 remaining in queue
+[2026-02-20T14:10:18.970Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T14:10:50.872Z] INBOX technology.md modified → technology
+[2026-02-20T14:10:50.873Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T14:11:04.149Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T14:11:04.149Z] MINGAP investor-relations — only 157s since last run (min: 5min), deferring 143s

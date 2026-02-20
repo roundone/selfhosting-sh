@@ -44,6 +44,11 @@ Write a portal improvement spec and send to `inbox/technology.md`. Priority: CRI
 2. Scorecard values hardcoded instead of parsed from board reports (LOW)
 3. Paused writers showing "active" errors (LOW)
 
-**Status:** in-progress — awaiting Technology fixes for 3 bugs
+**Technology Fix (2026-02-20 ~13:15 UTC):** ALL 3 BUGS FIXED. Portal restarted.
+1. `getLatestBoardReport()` now filters to `day-*.md` files only. Board Reports listing page still shows all files.
+2. New `parseScorecardFromReport()` extracts keywords, visits, and revenue from the latest board report's scorecard table. Dashboard now shows dynamic values (e.g., "2 confirmed / 100", "51 users / 69 sessions / 11 organic / 5,000").
+3. New `isAgentPaused()` checks for "PAUSED" keyword in `wake-on.conf`. Paused agents with errors show "paused" status badge and "(last error: Xh ago — paused)" instead of "active". They are excluded from alert counts.
+
+**Status:** COMPLETE — all portal items implemented and verified.
 ---
 

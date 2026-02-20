@@ -286,8 +286,28 @@ function getBoardReports() {
 }
 
 function getLatestBoardReport() {
-  const reports = getBoardReports();
+  const reports = getBoardReports().filter(r => /^day-\d{4}-\d{2}-\d{2}\.md$/.test(r.name));
   return reports.length > 0 ? reports[0] : null;
+}
+
+function parseScorecardFromReport(report) {
+  if (!report) return {};
+  const tableMatch = report.content.match(/## Scorecard vs Target[\s\S]*?\n\|.*\|[\s\S]*?(?=\n(?:## |\n[^|]))/);
+  if (!tableMatch) return {};
+  const rows = tableMatch[0].split('\n').filter(r => r.startsWith('|') && !r.match(/^\|[\s-]+\|/));
+  const result = {};
+  for (const row of rows) {
+    const cells = row.split('|').map(c => c.trim()).filter(Boolean);
+    if (cells.length < 3) continue;
+    const metric = cells[0].replace(/\*+/g, '').trim().toLowerCase();
+    const actual = cells[2].replace(/\*+/g, '').trim();
+    if (metric.includes('keyword')) result.keywords = actual;
+    else if (metric.includes('visit')) result.visits = actual;
+    else if (metric.includes('revenue')) result.revenue = actual;
+    else if (metric.includes('referring')) result.referrers = actual;
+    else if (metric.includes('social') || metric.includes('follower')) result.followers = actual;
+  }
+  return result;
 }
 
 function getCeoInbox() {
@@ -307,8 +327,7 @@ function getSocialQueueSize() {
 
 // -- Alert logic with per-agent interval awareness --
 
-function getExpectedIntervalMs(agentName) {
-  // Try to read agent's wake-on.conf for dynamic interval
+function getAgentWakeConfig(agentName) {
   const possiblePaths = [
     `${BASE}/agents/${agentName}/wake-on.conf`,
     `${BASE}/agents/operations/writers/${agentName.replace(/^ops-/, '')}/wake-on.conf`
@@ -317,17 +336,29 @@ function getExpectedIntervalMs(agentName) {
     try {
       const content = fs.readFileSync(confPath, 'utf8');
       const match = content.match(/fallback:\s*(\d+)h/);
-      if (match) return parseInt(match[1], 10) * 60 * 60 * 1000;
+      const paused = /PAUSED/i.test(content);
+      const intervalMs = match ? parseInt(match[1], 10) * 60 * 60 * 1000 : null;
+      return { intervalMs, paused };
     } catch {}
   }
-  // Defaults by agent type
-  if (agentName.startsWith('ops-')) return 48 * 60 * 60 * 1000; // writers: 48h default
-  if (agentName === 'investor-relations') return 168 * 60 * 60 * 1000; // IR: weekly
-  return 8 * 60 * 60 * 1000; // dept heads: 8h default
+  return { intervalMs: null, paused: false };
+}
+
+function getExpectedIntervalMs(agentName) {
+  const config = getAgentWakeConfig(agentName);
+  if (config.intervalMs) return config.intervalMs;
+  if (agentName.startsWith('ops-')) return 48 * 60 * 60 * 1000;
+  if (agentName === 'investor-relations') return 168 * 60 * 60 * 1000;
+  return 8 * 60 * 60 * 1000;
+}
+
+function isAgentPaused(agentName) {
+  return getAgentWakeConfig(agentName).paused;
 }
 
 function isActiveError(info, agentName) {
   if (!info.consecutiveErrors || info.consecutiveErrors <= 0) return false;
+  if (isAgentPaused(agentName || '')) return false;
   const errorTimestamp = info.lastErrorAt || info.lastRun;
   if (!errorTimestamp) return false;
   const errorAge = Date.now() - new Date(errorTimestamp).getTime();
@@ -374,7 +405,7 @@ function getRecentCommits(n = 50) {
 // -- Page rendering --
 
 function statusBadge(status) {
-  const colors = { active: '#22c55e', running: '#22c55e', queued: '#f59e0b', backoff: '#ef4444', idle: '#6b7280', inactive: '#ef4444' };
+  const colors = { active: '#22c55e', running: '#22c55e', queued: '#f59e0b', backoff: '#ef4444', idle: '#6b7280', inactive: '#ef4444', paused: '#64748b' };
   const color = colors[status] || '#6b7280';
   return `<span class="badge" style="background:${color}">${escapeHtml(status)}</span>`;
 }
@@ -574,6 +605,7 @@ function pageDashboard() {
   const queueSize = getSocialQueueSize();
   const latest = getLatestBoardReport();
   const alertCount = getAlertCount();
+  const scorecard = parseScorecardFromReport(latest);
 
   const memPct = mem.total > 0 ? Math.round((mem.used / mem.total) * 100) : 0;
   const memColor = memPct > 90 ? '#ef4444' : memPct > 75 ? '#f59e0b' : '#22c55e';
@@ -618,9 +650,9 @@ function pageDashboard() {
   <h2>Scorecard</h2>
   <div class="metric"><span class="metric-label">Articles</span><span class="metric-value">${articles.total} / ${target}</span></div>
   <div class="progress-bar"><div class="progress-fill" style="width:${artPct}%"></div><span class="progress-label">${artPct}%</span></div>
-  <div class="metric" style="margin-top:8px"><span class="metric-label">Page 1 Keywords</span><span class="metric-value">2 / 100</span></div>
-  <div class="metric"><span class="metric-label">Monthly Visits</span><span class="metric-value">~0 / 5,000</span></div>
-  <div class="metric"><span class="metric-label">Revenue</span><span class="metric-value">$0</span></div>
+  <div class="metric" style="margin-top:8px"><span class="metric-label">Page 1 Keywords</span><span class="metric-value">${escapeHtml(scorecard.keywords || 'N/A')} / 100</span></div>
+  <div class="metric"><span class="metric-label">Monthly Visits</span><span class="metric-value">${escapeHtml(scorecard.visits || 'N/A')} / 5,000</span></div>
+  <div class="metric"><span class="metric-label">Revenue</span><span class="metric-value">${escapeHtml(scorecard.revenue || '$0')}</span></div>
 </div>
 
 <div class="card">
@@ -742,8 +774,9 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
 
     body += '<table><tr><th>Agent</th><th>Status</th><th>Last Start</th><th>Last Exit</th><th>Errors</th><th>Log</th></tr>';
     for (const [name, info] of sorted) {
+      const paused = isAgentPaused(name);
       const hasActiveError = isActiveError(info, name);
-      const status = info.running ? 'running' : hasActiveError ? 'backoff' : 'idle';
+      const status = info.running ? 'running' : paused ? 'paused' : hasActiveError ? 'backoff' : 'idle';
       const lastStart = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const lastExit = info.lastExited ? new Date(info.lastExited).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const errs = info.consecutiveErrors || 0;
@@ -755,12 +788,16 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
         if (errorTimestamp) {
           const errorAge = Date.now() - new Date(errorTimestamp).getTime();
           const ageStr = formatTimeAgo(errorAge);
-          const expectedInterval = getExpectedIntervalMs(name);
-          const isStale = errorAge >= (expectedInterval * 1.5);
-          if (isStale) {
-            errorDetail = ` <span class="stale" style="font-size:12px">(last error: ${ageStr} — stale)</span>`;
+          if (paused) {
+            errorDetail = ` <span class="stale" style="font-size:12px">(last error: ${ageStr} — paused)</span>`;
           } else {
-            errorDetail = ` <span class="crit" style="font-size:12px">(last error: ${ageStr} — active)</span>`;
+            const expectedInterval = getExpectedIntervalMs(name);
+            const isStale = errorAge >= (expectedInterval * 1.5);
+            if (isStale) {
+              errorDetail = ` <span class="stale" style="font-size:12px">(last error: ${ageStr} — stale)</span>`;
+            } else {
+              errorDetail = ` <span class="crit" style="font-size:12px">(last error: ${ageStr} — active)</span>`;
+            }
           }
         }
       }

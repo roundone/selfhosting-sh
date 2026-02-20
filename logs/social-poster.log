@@ -580,3 +580,9 @@ docker run --rm -v myvolume..."
 2026-02-20T14:05:18.311Z [social-poster] starting
 2026-02-20T14:05:18.320Z [social-poster] queue has 1968 posts
 2026-02-20T14:05:18.321Z [social-poster] done — 0 attempted, 0 succeeded, 1968 remaining in queue
+2026-02-20T14:10:18.403Z [social-poster] starting
+2026-02-20T14:10:18.415Z [social-poster] queue has 1968 posts
+2026-02-20T14:10:18.635Z [social-poster] OK x: posted "Self-hosting Bazarr? Our guide covers the Docker setup, conf..."
+2026-02-20T14:10:18.956Z [social-poster] OK bluesky: posted "Duplicati is one of those apps that's worth self-hosting. He..."
+2026-02-20T14:10:18.965Z [social-poster] removed 2 posted items from queue (1966 remaining)
+2026-02-20T14:10:18.965Z [social-poster] done — 2 attempted, 2 succeeded, 1966 remaining in queue

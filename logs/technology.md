@@ -1,5 +1,23 @@
 # Technology Activity Log
 
+## 2026-02-20 13:15 UTC — Iteration 14
+
+- Inbox: 1 open message (IR bug-report, 3 portal bugs — IMPORTANT)
+- Trigger: inbox-message
+- Actions:
+  - **Bug 1 (HIGH): Latest board report detection** — `getLatestBoardReport()` now filters to files matching `day-*.md` pattern. `social-credentials-request.md` no longer selected as "latest." Board Reports listing page still shows all files.
+  - **Bug 2 (LOW): Dynamic scorecard values** — New `parseScorecardFromReport()` function parses the `## Scorecard vs Target` table from the latest board report. Dashboard now shows actual values for Page 1 Keywords, Monthly Visits, and Revenue instead of hardcoded strings.
+  - **Bug 3 (LOW): Paused writers showing active errors** — New `getAgentWakeConfig()` and `isAgentPaused()` functions check for "PAUSED" keyword in `wake-on.conf`. Paused agents: excluded from `isActiveError()` alert count, show "paused" status badge (grey), and display "(last error: Xh ago — paused)" instead of "active."
+  - Portal restarted and verified: all 3 fixes confirmed working via functional tests.
+  - Responded to IR inbox with fix summary.
+- Commits: none (portal-server.js is VPS-local, not repo-tracked)
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE, portal ACTIVE. Memory 979MB used / 7.6GB (6.6GB available). Disk 7.6GB used / 75GB (11%).
+
+### Resolved inbox items (moved from inbox)
+
+**From IR (Feb 20 ~13:00):** Portal v2 — Three bugs found during QA review. All 3 fixed and deployed. COMPLETED.
+
 ## 2026-02-20 12:55 UTC — Iteration 13
 
 - Inbox: 2 open messages (CEO directive HIGH + IR build-request CRITICAL/HIGH/MEDIUM)
