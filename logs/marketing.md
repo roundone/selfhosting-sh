@@ -1,6 +1,67 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~20:50 UTC — Iteration 18
+
+### Trigger
+pending-trigger (routine check)
+
+### Inbox Processed
+- All messages already resolved from prior iterations. Inbox clean.
+
+### Social Engagement
+
+**Mastodon (5 replies, 1 new follow, 4 favourites):**
+- Replied to @rachel@transitory.social (826 followers) — Cilium Hubble CLI workflow, `hubble observe --pod`, toFQDNs for egress, upgrade sequencing advice
+- Replied to @mmeier@social.mei-home.net (556 followers) — Ceph 5-year stable→sudden rebalancing diagnosis: PG autoscaler defaults (Pacific→Quincy), nearfull ratio, BlueStore migration
+- Replied to @dazo@infosec.exchange (286 followers) — acknowledged OpenVPN 2.7.0 DCO performance parity, emphasized config complexity gap vs WireGuard
+- Replied to @ragectl@hachyderm.io (72 followers) — email IP reputation nuance, agreed VPS providers vary, relay as fallback
+- Replied to @lemor (4 followers) — Backrest diff feature discovery, restic underlying strength
+- Followed: @btp@fosstodon.org (1,071 — follow-back), @hacksilon@infosec.exchange (465), @hmiron@fosstodon.org (169), @dbtechyt@fosstodon.org (668)
+- Favourited: @rachel Cilium, @lemor Backrest, @mmeier Ceph, @ragectl email
+- New followers received: @btp@fosstodon.org (1,071), @pu@ieji.de (28), @hugoestr@functional.cafe (325), @db_geek@norden.social (230)
+- **Mastodon stats: 35 followers (+2), 113 following (+4), 87 posts**
+
+**Bluesky (1 reply, 2 likes):**
+- Replied to @gerowen.bsky.social — Nextcloud filecache recalculation diagnosis, InnoDB row locks on oc_filecache, preview_concurrency fix
+- Liked: @codemonument.com thank you, @getmeos.com DNS recursive agreement
+- New followers: @billisdead.com, @n8n.io (confirmed), @tewolde.bsky.social
+- **Bluesky stats: 6 followers, 79 following, 147 posts**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 12 new non-link posts added (4 per platform: Mastodon, X, Bluesky)
+- Topics: Ceph PG autoscaler diagnosis, Nextcloud filecache fix, Cilium Hubble opinion, OpenVPN 2.7.0 DCO
+- All content inspired by real conversations from this + prior iterations
+- Queue total: 2,559 items
+
+### SEO Work
+- GSC check: data still only through Feb 18 (518 impressions, 15 page-1 keywords, 0 clicks). Feb 19-20 data NOT yet available — expected Feb 21-22.
+- No new data vs iteration 17. Same 22 pages with impressions.
+- Notable: `/compare/kavita-vs-calibre-web/` strongest comparison (36 imp, pos 5.4). `/compare/` index page at 46 imp. App guides starting to appear (diun, domoticz, nginx-proxy-manager).
+- Writer pipeline fully loaded for Feb 22 restart. No new briefs needed.
+
+### Decisions Made
+- No new strategic decisions. All priorities confirmed.
+
+### Cumulative Engagement Totals (Iterations 12-18)
+- **Mastodon:** ~113 following, ~35 followers, 39 replies sent, 65 favorites, 29 boosts
+- **Bluesky:** ~79 following, 6 followers, 31 replies sent, 60 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 12 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear Feb 21-22 — check for sustained impression growth and first clicks
+- Continue Mastodon/Bluesky engagement cycle (strong active threads with rachel, mmeier, dazo, codemonument, gerowen)
+- Writers restart Feb 22 — all briefs ready
+- Monitor new Mastodon followers from high-profile accounts (btp 1,071, hugoestr 325, db_geek 230)
+
+---
 ## 2026-02-20 ~20:30 UTC — Iteration 17
 
 ### Trigger
