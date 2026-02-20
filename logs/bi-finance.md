@@ -1,5 +1,35 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~10:20 UTC
+
+### Eighteenth iteration — new-articles-published event (7 articles in best, hardware, replace)
+- What: Triggered by `new-articles-published` event (7 count, categories: best, hardware, replace). Executed full data collection pass. Found 759 total articles on disk (up from 651 at iter 17 — 108 new articles). Content velocity: 206 articles today (~20/hour). Key growth: apps +36, compare +38, hardware +21, replace +8, best +4. Revised Month 1 target (1,500) is on track — 50.6% complete, need ~93/day for 8 remaining days. GSC data unchanged (2 page-1 keywords, 9 pages with impressions, 24 total impressions on Feb 17, 0 clicks — expected due to 2-3 day data lag). Sitemaps: 516 submitted, 0 indexed (reporting lag), 0 warnings. Bluesky: 73 posts, 1 follower. X: posting with many 403 duplicate errors. Social queue: 1,914 (down from 1,931 — net draining for first time). Noted founder writer-pause directive in CEO inbox (not my action item). Updated daily report.
+- Data sources queried:
+  - GSC Search Analytics API — query+page dimensions (success — unchanged: 2 rows, freshrss-vs-miniflux at positions 3.0/5.0)
+  - GSC Search Analytics API — page dimensions (success — 9 pages, unchanged)
+  - GSC Search Analytics API — date dimensions (success — 24 impressions on Feb 17, unchanged)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, 0 warnings)
+  - Bluesky public API (success — 73 posts, 1 follower)
+  - Mastodon public API (success — 0 posts, 0 followers)
+  - Social-poster log (success — Bluesky posting consistently, X hitting many 403 duplicates)
+  - Social queue (success — 1,914 items, down from 1,931)
+  - Social state (success — last X post 10:18 UTC, last Bluesky post 10:13 UTC)
+  - Site filesystem: 759 .md files (201 apps, 260 compare, 105 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+  - Git log: 206 new content files today (Feb 20), 760 total this month
+- Result: Success. All available data sources queried. Material changes: article count 651→759, social queue 1,931→1,914 (net draining).
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — 759 articles, revised target on track, GSC unchanged (data lag), social queue draining, sitemap gap noted, founder directive acknowledged
+- Report: Updated `reports/day-2026-02-20.md` with all new data (articles 651→759, velocity trend, content by type breakdown, social queue improvement, competitive ratios updated)
+- Learnings written: None (no new version changes or SEO patterns discovered this iteration)
+- Freshness checks: Skipped (no new app articles requiring audit beyond what was checked in iters 14-17; trigger event was best/hardware/replace categories, not apps)
+- Issues:
+  1. GA4 API still not enabled (unchanged — Requires: human)
+  2. Social credentials still pending for Mastodon, Reddit, Dev.to, Hashnode (Requires: human)
+  3. X duplicate content errors reducing effective posting throughput
+  4. Sitemap gap: 759 articles on disk but only 516 in Google's copy
+  5. Founder directive to pause writers until Feb 22 — will affect velocity; CEO to process
+- Next: Monitor for GSC data updates (Feb 18-20 impressions should appear Feb 21-22). Track whether sitemap gets regenerated with 759 articles after next deploy. Monitor social queue drain rate to confirm net-positive trend. If founder writer pause takes effect, focus on analytics/reporting depth rather than velocity tracking. Run full freshness rotation on next 24h-fallback.
+
 ## 2026-02-20 ~06:50 UTC
 
 ### Seventeenth iteration — github-release event (Jackett v0.24.1167, duplicate)
