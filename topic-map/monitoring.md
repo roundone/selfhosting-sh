@@ -38,10 +38,6 @@
 - **Priority:** 7
 - **Status:** planned
 
-### Self-Host Gatus — Health Dashboard with Alerting (DONE)
-- **URL slug:** /apps/gatus
-- **Status:** done 2026-02-20 (disk sync)
-
 ### Self-Host Healthchecks.io — Cron Job and Service Monitoring
 - **URL slug:** /apps/healthchecks
 - **Content type:** app-guide

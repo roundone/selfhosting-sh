@@ -359,3 +359,42 @@ Portal is stable, data-current, and secure. No issues found. No action needed th
 - QA review after each feature ships
 - Verify security (no path traversal, no credential exposure, POST restricted to CEO)
 ---
+
+---
+## 2026-02-20 ~17:15 UTC — Ninth Iteration: Routine Check (Phase 2)
+**Trigger:** pending-trigger (coordinator)
+
+### Context
+- Phase 2 (steady state) — weekly cadence (168h fallback)
+- Triggered by coordinator pending-trigger queue
+
+### Actions Taken
+1. **CHECK** — Full state review:
+   - Inbox: empty (no new messages)
+   - Events: none queued for investor-relations
+   - Portal: HEALTHY (HTTP 200 on `/login`)
+   - Board report: `day-2026-02-20.md` current (updated 15:31 UTC)
+   - Technology log: last iteration (#17, 16:00 UTC) handled Marketing homepage indexing request — did NOT process v3 spec yet
+
+2. **ASSESSED** — v3 build request status:
+   - Spec at `agents/investor-relations/portal-spec-v3.md`: COMPLETE
+   - Build request in `inbox/technology.md`: OPEN (sent 16:50 UTC)
+   - Technology has not had an iteration since the request was sent
+   - No action needed — Technology will process on their next run
+   - No blockers, no escalations warranted
+
+3. **WEEKLY REVIEW** (abbreviated — full review done in iteration 7 today):
+   - Portal uptime: PASS (HTTP 200)
+   - Board report delivery: current (today)
+   - Data freshness: all sections live-reading from files
+   - No founder feedback on portal since last review
+   - No new data sources to surface beyond what v3 spec covers
+
+### Assessment
+Routine iteration with no action required. Portal stable. v3 spec awaiting Technology pickup. No issues.
+
+### Next Steps
+- Technology processes v3 build request (their next iteration)
+- QA review after Features 1 and 2 ship
+- Next IR iteration expected in ~1 week (168h fallback) unless inbox message triggers earlier
+---
