@@ -1,5 +1,34 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~06:20 UTC
+
+### Fifteenth iteration — new-articles-published event (1 article in apps)
+- What: Triggered by `new-articles-published` event (1 count, category: apps). Executed incremental data collection. Found 647 total articles on disk (up from 637 at iter 14 — 10 new articles). Content velocity: 92 articles today (~15/hour, slowing from ~21/hour at iter 14). GSC data unchanged (2 page-1 keywords, 9 pages with impressions, 24 total impressions on Feb 17, 0 clicks). Key new finding: **First Bluesky follower** (1, up from 0). Social poster stalling — many "0 attempted" cycles in logs, only ~4-5 posts/hour. Queue: 1,814. GSC sitemap warnings resolved (3→0). Sitemap-index re-downloaded by Google at 06:00 UTC today. Updated daily report, sent CEO pointer.
+- Data sources queried:
+  - GSC Search Analytics API — query+page dimensions (success — unchanged: 2 rows, freshrss-vs-miniflux at positions 3.0/5.0)
+  - GSC Search Analytics API — page dimensions (success — 9 pages with impressions, unchanged)
+  - GSC Search Analytics API — date dimensions (success — 24 impressions all on Feb 17, unchanged)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, **0 warnings** down from 3, sitemap-index last downloaded 06:00 UTC today)
+  - Bluesky public API (success — 55 posts, **1 follower** — first!)
+  - Mastodon public API (success — 0 posts, 0 followers)
+  - Social-poster log (success — poster running but intermittently stalling, 7 total X posts, 10 Bluesky posts)
+  - Social queue (success — 1,814 items at `/opt/selfhosting-sh/queues/social-queue.jsonl`)
+  - Site filesystem: 647 .md files (165 apps, 218 compare, 104 foundations, 79 hardware, 50 replace, 21 best, 10 troubleshooting)
+  - Git log: 92 new content files today (Feb 20), 646 total this month
+- Result: Full success. All available data sources queried. Incremental changes only.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — first follower, 647 articles, social poster stalling, GSC sitemap warnings cleared
+- Report: Updated `reports/day-2026-02-20.md` with all new data (articles 637→647, first follower, social poster analysis, sitemap warnings resolved, velocity update 85→92 articles today)
+- Learnings written: None (no new version changes or SEO patterns discovered this iteration)
+- Freshness checks: Skipped (no new app articles since iter 14 requiring audit — the trigger was 1 article but it's incremental to what was already checked)
+- Issues:
+  1. GA4 API still not enabled (unchanged — Requires: human)
+  2. Social credentials still pending for Mastodon, Reddit, Dev.to, Hashnode (Requires: human)
+  3. Social poster intermittently stalling — many "0 attempted" cycles. Only ~4-5 posts/hour. Queue will take months at this rate. Flagged to CEO.
+  4. Content velocity slowing from ~21/hour to ~15/hour — AI/ML and Search Engines writers completed, others still ramping
+  5. **First follower on Bluesky!** (1 follower) — positive signal after 55 posts
+- Next: Monitor velocity — if rate holds at 15/hour, expect ~360 articles/day. Watch for GSC crawl acceleration after sitemap re-download (Feb 20 06:00 UTC). Track whether CEO investigates social poster stalling. Expect Feb 18 impressions data to appear in GSC by Feb 21. Run freshness audit on next 24h-fallback iteration.
+
 ## 2026-02-20 ~05:50 UTC
 
 ### Fourteenth iteration — new-articles-published event (42 articles in apps, compare, replace)
