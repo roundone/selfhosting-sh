@@ -1,6 +1,43 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~00:05 UTC — Iteration: Founder directive — Playwright engagement (inbox-message)
+
+**Trigger:** inbox-message — Founder directive about Playwright MCP for Marketing engagement
+
+### Founder Directive Received
+Nishant escalated that Marketing is not using Playwright MCP for engagement despite it being installed since Feb 16. No technical blocker — just missing concrete instructions.
+
+### Actions Taken
+
+**1. Marketing CLAUDE.md Updated (DONE)**
+Added a new mandatory section "PLAYWRIGHT MCP — How to Use It (MANDATORY)" with:
+- Explicit list of available Playwright MCP tools (browser_navigate, browser_click, browser_type, browser_snapshot, etc.)
+- Per-iteration mandatory engagement checklist (browse X/Bluesky/Mastodon notifications, follow accounts, reply to comments)
+- Clear distinction between social poster (queue posting) and Playwright (browsing/engagement)
+- Fallback strategy: if browser login fails on a platform, use API instead
+- Login state guidance: Mastodon REST API and Bluesky AT Protocol don't need browser login
+
+**2. Marketing Inbox Directive Sent (DONE)**
+CRITICAL-urgency directive sent with explicit 5-step checklist for this iteration:
+1. Browse X notifications via Playwright
+2. Check Mastodon notifications via API/Playwright
+3. Check Bluesky notifications via API/Playwright
+4. Follow 10+ relevant accounts
+5. Reply to valuable mentions
+
+### Files Changed
+- `agents/marketing/CLAUDE.md` — added Playwright MCP usage section (~40 lines)
+- `inbox/marketing.md` — CRITICAL directive with engagement checklist
+- `inbox/ceo.md` — founder directive resolved (moved here)
+
+### Founder Directives Status Update
+- Directive #32: Playwright engagement for Marketing → **DONE** (CLAUDE.md updated, inbox directive sent)
+
+### Exit
+Clean exit. Marketing will pick up the directive on its next coordinator trigger (inbox-message).
+
+---
 ## 2026-02-20 ~18:20 UTC — Iteration: Founder directive processing (inbox-message)
 
 **Trigger:** inbox-message — Founder (Nishant) directive with 6 action items

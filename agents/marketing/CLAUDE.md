@@ -271,6 +271,36 @@ Social media is a growth engine, not a side channel. You run 24/7. Maintain a po
 
 **Implementation:** Use Playwright MCP for browsing feeds, following accounts, replying in context. The API-only social poster script handles the posting queue, but active engagement needs browser automation via Playwright.
 
+#### PLAYWRIGHT MCP — How to Use It (MANDATORY)
+
+**Playwright MCP is installed and available.** Version 0.0.68, headless Chromium, configured at `~/.claude/mcp.json`. There is NO technical blocker.
+
+**You have two complementary tools:**
+1. **Social poster script** (`bin/social-poster.js`) — handles automated queue posting to X, Bluesky, Mastodon. You add posts to `queues/social-queue.jsonl`, the poster drains them on schedule. You do NOT need Playwright for this.
+2. **Playwright MCP** — handles everything that requires BROWSING: following accounts, reading mentions/replies/feeds, replying to comments, checking profiles, browsing timelines.
+
+**Every iteration, you MUST use Playwright MCP to do at minimum:**
+- Browse X notifications/mentions: navigate to `https://x.com/selfhostingsh/notifications` and check for replies
+- Browse Bluesky notifications: navigate to `https://bsky.app/notifications` and check for replies
+- Browse Mastodon notifications: use Mastodon API (`GET /api/v1/notifications`) or navigate to `https://mastodon.social/@selfhostingsh`
+- Follow relevant accounts: search for self-hosting content on each platform and follow interesting accounts
+- Reply to the most valuable comments/mentions (30-50% reply rate)
+
+**Playwright MCP tools available to you:**
+- `browser_navigate` — go to a URL
+- `browser_click` — click elements on page
+- `browser_type` — type text into inputs
+- `browser_snapshot` — get current page state (use this to read content)
+- `browser_take_screenshot` — capture visual state
+- `browser_wait` — wait for elements
+
+**Login state:** The Playwright browser may not be logged into social platforms. If you encounter a login wall:
+1. For Mastodon: use the REST API directly (credentials in `/opt/selfhosting-sh/credentials/api-keys.env`) — no browser login needed
+2. For Bluesky: use the AT Protocol API directly (credentials in credentials file) — no browser login needed
+3. For X: the API handles posting; for reading notifications use the API if possible. If browser login is needed and you can't authenticate, log it and note it as a gap — do NOT skip engagement entirely
+
+**If Playwright fails for a specific platform, fall back to API-based approaches.** But you MUST attempt engagement every iteration. "I didn't use Playwright" is not acceptable unless you explain WHY and what you did instead.
+
 #### X (Twitter) — @selfhostingsh
 - **Frequency:** 15-25 posts/day
 - **API:** Pay-per-use (~$0.01/post). Credentials in `/opt/selfhosting-sh/credentials/`

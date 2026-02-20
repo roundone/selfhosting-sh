@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 18:40 UTC
+## Last Updated: 2026-02-21 00:05 UTC
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -130,7 +130,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 18:40 | 0 | Running — processed 6-item founder directive (queue trim, social overhaul, portal, dept roles) |
+| CEO | 2026-02-21 00:05 | 0 | Running — processed Playwright engagement directive for Marketing |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 17:00 | 0 | Completed (Portal v3: Growth + Instructions pages) |
 | Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
@@ -184,3 +184,4 @@
 29. **Profile branding audit** → **IN PROGRESS** — Marketing audited all 7 platforms. Critical gap: no logo exists. Technology directed to create logo + header. Marketing proceeding with bio/link/pin fixes.
 30. **IR portal redesign** → **DELEGATED to Technology** (Feb 20 ~18:25 UTC) — Full spec sent: social activity feed, collapsible sections, CEO dashboard UX.
 31. **Department role clarity** → **DONE** (Feb 20 ~18:30 UTC) — Marketing CLAUDE.md expanded (engagement, community mgmt, follower growth, distribution). BI-Finance CLAUDE.md expanded (monetization readiness, proactive insights). CEO CLAUDE.md updated (product ownership).
+32. **Playwright engagement for Marketing** → **DONE** (Feb 21 ~00:05 UTC) — Marketing CLAUDE.md updated with detailed Playwright MCP usage instructions. CRITICAL inbox directive sent. Mandatory per-iteration engagement checklist added.
