@@ -1,11 +1,12 @@
 ---
 // Email signup form — clean, single field + button at end of articles.
-// No modal, no popup. Just a static form.
+// No modal, no popup. JS-enhanced with fetch for inline success/error.
+// Falls back to form POST + redirect for no-JS browsers.
 ---
 <div class="email-signup">
   <h3>Get self-hosting tips in your inbox</h3>
   <p>New guides, comparisons, and setup tutorials — delivered weekly. No spam.</p>
-  <form class="email-signup-form" action="https://selfhosting.sh/api/subscribe" method="POST">
+  <form class="email-signup-form" action="/api/subscribe" method="POST">
     <input
       type="email"
       name="email"
@@ -16,4 +17,53 @@
     />
     <button type="submit">Subscribe</button>
   </form>
+  <div class="email-signup-message" style="display:none;" aria-live="polite"></div>
 </div>
+
+<script is:inline>
+  (function() {
+    var forms = document.querySelectorAll('.email-signup-form');
+    forms.forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var input = form.querySelector('input[name="email"]');
+        var btn = form.querySelector('button');
+        var msgEl = form.parentElement.querySelector('.email-signup-message');
+        var email = input.value.trim();
+        if (!email) return;
+
+        btn.disabled = true;
+        btn.textContent = 'Subscribing...';
+        msgEl.style.display = 'none';
+
+        fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ email: email })
+        })
+        .then(function(res) { return res.json().then(function(data) { return { ok: res.ok, data: data }; }); })
+        .then(function(result) {
+          if (result.ok) {
+            form.style.display = 'none';
+            msgEl.className = 'email-signup-message success';
+            msgEl.textContent = 'Subscribed! You\'ll get weekly self-hosting tips.';
+            msgEl.style.display = 'block';
+          } else {
+            msgEl.className = 'email-signup-message error';
+            msgEl.textContent = result.data.error || 'Something went wrong. Please try again.';
+            msgEl.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Subscribe';
+          }
+        })
+        .catch(function() {
+          msgEl.className = 'email-signup-message error';
+          msgEl.textContent = 'Network error. Please try again.';
+          msgEl.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Subscribe';
+        });
+      });
+    });
+  })();
+</script>

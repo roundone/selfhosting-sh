@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Subscribed" description="You're subscribed to the selfhosting.sh newsletter.">
+  <div class="subscribed-page">
+    <div class="subscribed-card" id="subscribed-card">
+      <div class="icon success-icon">&#10003;</div>
+      <h1>You're subscribed!</h1>
+      <p>You'll get a weekly email with the best new self-hosting guides, comparisons, and tutorials. No spam — just useful content.</p>
+      <a href="/" class="back-link">Back to selfhosting.sh</a>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var error = params.get('error');
+      if (error) {
+        var card = document.getElementById('subscribed-card');
+        if (card) {
+          card.innerHTML = '<div class="icon error-icon">&#10007;</div>' +
+            '<h1>Something went wrong</h1>' +
+            '<p>' + error.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+            '<a href="/" class="back-link">Back to selfhosting.sh</a>';
+        }
+      }
+    })();
+  </script>
+
+  <style>
+    .subscribed-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      padding: 2rem;
+    }
+    .subscribed-card {
+      background: var(--bg-secondary, #1a1d27);
+      border: 1px solid var(--border, #2a2d37);
+      border-radius: 12px;
+      padding: 3rem;
+      max-width: 480px;
+      text-align: center;
+    }
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .success-icon { color: var(--accent, #22c55e); }
+    .error-icon { color: #ef4444; }
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 0.75rem 0;
+    }
+    p {
+      color: var(--text-secondary, #a0a0a0);
+      margin: 0 0 1.5rem 0;
+      line-height: 1.6;
+    }
+    .back-link {
+      color: var(--accent, #22c55e);
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</Base>
