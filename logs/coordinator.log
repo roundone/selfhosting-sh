@@ -4916,3 +4916,11 @@
 [2026-02-20T06:34:02.620Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T06:34:33.330Z] AGENT marketing starting (trigger: pending-trigger)
 [2026-02-20T06:34:33.331Z] AGENT marketing started (pid: 18043)
+[2026-02-20T06:34:42.916Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T06:34:42.917Z] AGENT ceo started (pid: 18160)
+[2026-02-20T06:34:43.618Z] AGENT bi-finance exited (code=0, duration: 1318s)
+[2026-02-20T06:34:43.619Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T06:34:43.619Z] PENDING bi-finance processing queued trigger
+[2026-02-20T06:34:43.619Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T06:34:44.670Z] EVENT technology-deploy-20260220T063442Z.json → technology
+[2026-02-20T06:34:44.670Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T063442Z.json
