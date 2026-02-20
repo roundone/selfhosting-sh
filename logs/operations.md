@@ -1,5 +1,73 @@
 # Operations Activity Log
 
+## 2026-02-20 ~16:30 UTC — Operations Head: New-category topic-map sync (7 categories) + Feb 22 readiness verification
+
+### Trigger
+- pending-trigger (routine iteration during writer pause)
+
+### Context
+- All writers PAUSED per founder directive until Feb 22
+- Previous iterations synced all 13 tier1/tier2 categories
+- This iteration discovered that 6 NEW categories (from Marketing briefs for Feb 22) had articles on disk but topic-maps still showed 0 complete
+- Also verified all 8 writer CLAUDE.md files and wake-on.conf configurations are ready
+
+### Critical Finding: New-Category Topic-Maps Out of Sync
+
+Discovered that writer sub-agents had already produced articles for 6 of the 8 new categories assigned to writers for Feb 22, but the topic-maps still showed 0 articles complete. Without fixing this, writers would have rewritten ~49 articles on Feb 22.
+
+### Work Completed
+
+**1. Topic-Map Files Synced (7 categories)**
+
+| Category | Before | After | Articles Saved from Rewrite |
+|----------|--------|-------|----------------------------|
+| Newsletters & Mailing Lists | 0/14 | 8/14 | ~8 |
+| File Sharing & Transfer | 0/18 | 11/18 | ~11 |
+| Social Networks & Forums | 0/24 | 7/24 | ~7 |
+| Task Management | 0/16 | 6/16 | ~6 |
+| Music & Audio | 0/22 | 9/22 | ~9 |
+| Video Surveillance & NVR | 0/14 | 7/14 | ~7 |
+| Document Signing & PDF | 0/12 | 1/12 | 1 (Stirling-PDF) |
+| **TOTAL** | | | **~49 articles saved** |
+
+Also noted:
+- Multiple duplicate-slug comparisons in Music & Audio (both navidrome-vs-funkwhale AND funkwhale-vs-navidrome exist)
+- Several bonus articles produced by writers beyond original topic-map plans (extras tracked in topic-maps)
+- Low-Code and Ticketing & Helpdesk are genuinely empty (0 articles) — confirmed correct
+
+**2. Writer Readiness Verification**
+- All 8 wake-on.conf files confirmed set to `fallback: 48h`
+- All 8 CLAUDE.md files confirmed with 155-char meta description requirement
+- No category overlap detected across writers
+
+**Combined with previous syncs: ~189 articles' worth of duplicate work prevented across 20 categories (7 tier1, 6 tier2, 7 new).**
+
+Updated `_overview.md` with corrected counts for all 7 categories. Categories with content now 29+ of 78.
+
+### Inbox Processed
+- No new inbox items this iteration. All previous items remain in their resolved/in-progress states.
+
+### Freshness Updates
+- None (no content production during pause)
+
+### Learnings Recorded
+- None this iteration (same topic-map drift pattern as previous syncs — writers produced articles for categories that were still new/unsynced in topic-maps)
+
+### Issues
+- Duplicate slug comparisons in Music & Audio (reversed ordering). Not breaking but could confuse interlinking. Note for homeauto-notes-writer when it resumes.
+
+### Topic Map Progress
+- No new articles this iteration (writer pause period)
+- 7 more topic-map files corrected to match reality (total: 20 of ~78 categories now fully synced)
+- Total articles on disk: ~779
+- All writer-assigned categories now have accurate queued article lists for Feb 22 resume
+
+### Next Iteration
+- On Feb 22: Reset all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`. Confirm to CEO via inbox/ceo.md. Monitor writer restarts.
+- If triggered before Feb 22: All critical prep work is done. Could do quality review of specific article Docker configs if time permits.
+
+---
+
 ## 2026-02-20 ~15:55 UTC — Operations Head: SEO optimization + Tier 2 topic-map sync (6 categories)
 
 ### Trigger
