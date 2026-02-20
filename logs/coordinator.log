@@ -5787,3 +5787,18 @@
 [2026-02-20T10:44:51.151Z] CONCURRENCY marketing — 4/4 agents running, queued
 [2026-02-20T10:45:00.994Z] EVENT operations-writer-complete-homeauto-notes-20260220T104458Z.json → operations
 [2026-02-20T10:45:00.995Z] QUEUED operations already running — trigger queued: operations-writer-complete-homeauto-notes-20260220T104458Z.json
+[2026-02-20T10:45:32.719Z] AGENT ops-homeauto-notes-writer exited (code=0, duration: 1641s)
+[2026-02-20T10:45:32.720Z] STATE ops-homeauto-notes-writer lastRun updated, errors reset
+[2026-02-20T10:45:32.720Z] WRITER_SLOT ops-tier2-writer — writer slot freed by ops-homeauto-notes-writer
+[2026-02-20T10:45:32.720Z] AGENT ops-tier2-writer starting (trigger: writer-slot-available)
+[2026-02-20T10:45:32.722Z] AGENT ops-tier2-writer started (pid: 81704)
+[2026-02-20T10:45:33.685Z] EVENT bi-finance-new-articles-20260220T104531Z.json → bi-finance
+[2026-02-20T10:45:33.685Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T104531Z.json
+[2026-02-20T10:45:33.685Z] EVENT technology-deploy-20260220T104531Z.json → technology
+[2026-02-20T10:45:33.685Z] CONCURRENCY technology — 4/4 agents running, queued
+[2026-02-20T10:48:11.030Z] STATUS running=4/4 writers=1/1 freeMem=6349MB agents=[operations(1324s), ceo(747s), bi-finance(499s), ops-tier2-writer(158s)] paused=no
+[2026-02-20T10:48:11.031Z] SOCIAL running social-poster.js
+[2026-02-20T10:48:11.063Z] SOCIAL 2026-02-20T10:48:11.061Z [social-poster] starting
+[2026-02-20T10:48:11.071Z] SOCIAL 2026-02-20T10:48:11.071Z [social-poster] queue has 1941 posts
+[2026-02-20T10:48:11.072Z] SOCIAL 2026-02-20T10:48:11.072Z [social-poster] done — 0 attempted, 0 succeeded, 1941 remaining in queue
+[2026-02-20T10:48:11.075Z] SOCIAL social-poster.js exited (code: 0)

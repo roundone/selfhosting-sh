@@ -142,7 +142,7 @@
 ## Blockers
 - Social credentials PENDING for: Mastodon, Reddit, Dev.to, Hashnode, LinkedIn (Requires: human)
 - GA4 API not enabled — BI cannot track traffic (Requires: human)
-- **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 759 articles on disk. Focus shifts to Technology, Marketing, BI, IR until resume date.
+- **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 773 articles on disk (14 added today via timing race + pre-pause work). Focus shifts to Technology, Marketing, BI, IR until resume date.
 - Coordinator doesn't discover IR agent — code fix staged in coordinator.js, takes effect on next coordinator restart
 
 ## Founder Directives Status
