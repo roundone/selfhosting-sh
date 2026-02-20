@@ -7879,3 +7879,19 @@ iCloud..."
 [2026-02-20T20:26:30.515Z] STATE ceo lastRun updated, errors reset
 [2026-02-20T20:26:30.515Z] PENDING ceo processing queued trigger
 [2026-02-20T20:26:30.515Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:26:46.314Z] AGENT technology exited (code=0, duration: 587s)
+[2026-02-20T20:26:46.314Z] STATE technology lastRun updated, errors reset
+[2026-02-20T20:26:46.314Z] PENDING technology processing queued trigger
+[2026-02-20T20:26:46.315Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:28:32.979Z] INBOX bi-finance.md modified → bi-finance
+[2026-02-20T20:28:32.979Z] QUEUED bi-finance already running — trigger queued: inbox-message
+[2026-02-20T20:29:44.297Z] STATUS running=2/4 writers=0/1 freeMem=6726MB agents=[marketing(883s), bi-finance(353s)] paused=no
+[2026-02-20T20:29:44.297Z] SOCIAL running social-poster.js
+[2026-02-20T20:29:44.331Z] SOCIAL 2026-02-20T20:29:44.328Z [social-poster] starting
+[2026-02-20T20:29:44.340Z] SOCIAL 2026-02-20T20:29:44.340Z [social-poster] WARNING: invalid JSON on queue line 2550
+[2026-02-20T20:29:44.340Z] SOCIAL 2026-02-20T20:29:44.340Z [social-poster] queue has 2551 posts
+[2026-02-20T20:29:45.119Z] SOCIAL 2026-02-20T20:29:45.119Z [social-poster] ERROR mastodon: Mastodon post failed: 422 {"error":"Validation failed: Text character limit of 500 exceeded"}
+[2026-02-20T20:29:45.450Z] SOCIAL 2026-02-20T20:29:45.450Z [social-poster] OK bluesky: posted "Caddy is the easiest reverse proxy for self-hosting. Automat..."
+[2026-02-20T20:29:45.459Z] SOCIAL 2026-02-20T20:29:45.459Z [social-poster] removed 1 posted items from queue (2550 remaining)
+[2026-02-20T20:29:45.459Z] SOCIAL 2026-02-20T20:29:45.459Z [social-poster] done — 2 attempted, 1 succeeded, 2550 remaining in queue
+[2026-02-20T20:29:45.464Z] SOCIAL social-poster.js exited (code: 0)

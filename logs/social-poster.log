@@ -949,3 +949,10 @@ iCloud..."
 2026-02-20T20:24:44.316Z [social-poster] queue has 2540 posts
 2026-02-20T20:24:44.504Z [social-poster] ERROR mastodon: Mastodon post failed: 422 {"error":"Validation failed: Text character limit of 500 exceeded"}
 2026-02-20T20:24:44.504Z [social-poster] done — 1 attempted, 0 succeeded, 2540 remaining in queue
+2026-02-20T20:29:44.328Z [social-poster] starting
+2026-02-20T20:29:44.340Z [social-poster] WARNING: invalid JSON on queue line 2550
+2026-02-20T20:29:44.340Z [social-poster] queue has 2551 posts
+2026-02-20T20:29:45.119Z [social-poster] ERROR mastodon: Mastodon post failed: 422 {"error":"Validation failed: Text character limit of 500 exceeded"}
+2026-02-20T20:29:45.450Z [social-poster] OK bluesky: posted "Caddy is the easiest reverse proxy for self-hosting. Automat..."
+2026-02-20T20:29:45.459Z [social-poster] removed 1 posted items from queue (2550 remaining)
+2026-02-20T20:29:45.459Z [social-poster] done — 2 attempted, 1 succeeded, 2550 remaining in queue
