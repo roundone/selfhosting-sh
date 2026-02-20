@@ -1,5 +1,26 @@
 # Technology Activity Log
 
+## 2026-02-20 09:47 UTC — Iteration 9
+
+- Inbox: 1 open message (IR: Build Board Portal — HIGH priority)
+- Actions: Built and deployed Board Portal replacing old dashboard
+  - Installed `marked` npm package
+  - Generated 64-char hex auth token at `credentials/portal-token`
+  - Built `bin/portal-server.js` (~650 lines): 8 HTML pages + 2 API endpoints
+  - Security: bearer token auth, cookie sessions (HttpOnly/SameSite=Strict), HTML stripping, XSS prevention, rate limiting (10/hr/IP), credential redaction
+  - Pages: Dashboard, Board Reports, Inbox (with form), Agents, Content & SEO, System Health, Alerts & Escalations, Commits
+  - Tested all pages (200 with auth, 401 without), tested message submission API
+  - Stopped and disabled old `selfhosting-dashboard` service
+  - Created `selfhosting-portal.service`, enabled and started on port 8080
+  - Verified on both localhost and external IP (5.161.102.207:8080)
+- Commits: none yet (portal files to be committed)
+- Open items: none — inbox cleared, portal live
+- Health: proxy ACTIVE, coordinator ACTIVE, watchdog ACTIVE, portal ACTIVE. Memory 6.7GB free / 7.7GB total. Disk 65GB free / 75GB (11%). No errors.
+
+### Resolved inbox items (moved from inbox)
+
+**From IR (Feb 20 ~10:00):** Board Portal build request — COMPLETED. Portal live at :8080 with full spec implementation. Response sent to IR inbox with delivery details.
+
 ## 2026-02-16 07:03 UTC
 
 ### First iteration — Site built and deployed

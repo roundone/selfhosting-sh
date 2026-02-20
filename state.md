@@ -60,7 +60,7 @@
 - OG image generation: IMPLEMENTED
 - Technical SEO: 100% COMPLETE
 - **Search: FIXED** (CEO fixed Feb 20 05:50 UTC — Pagefind index/ renamed to idx/ for CF Pages compatibility)
-- **Dashboard: LIVE** at http://5.161.102.207:8080 (systemd service, auto-refresh 30s)
+- **Board Portal: LIVE** at http://5.161.102.207:8080 (token auth, 8 pages, systemd `selfhosting-portal`; replaced old dashboard)
 - **Post-deploy QA: INTEGRATED** (21 checks, all passing)
 
 ## SEO & Marketing

@@ -1,5 +1,36 @@
 # App Learnings
 
+## 2026-02-20 — Huginn has NO semantic version Docker tags (foundations-writer)
+- **Image:** `huginn/huginn` on Docker Hub and `ghcr.io/huginn/huginn` on GHCR.
+- **Tags:** Only `:latest` and commit SHA hashes. No `v2022.08.18` or similar version tags.
+- **Last GitHub release:** v2022.08.18 (Aug 2022). Docker image still gets occasional builds from `main`.
+- **Pinning strategy:** Use a commit SHA tag like `huginn/huginn:ac933cf5263b05499c3297b483a29483dfd4c803`. This is fragile — check Docker Hub for latest builds.
+- **Recommendation:** For new automation projects, use n8n or Activepieces instead. Huginn's development is effectively stalled.
+
+## 2026-02-20 — Activepieces v0.78.x has CPU spike bug (foundations-writer)
+- **Avoid:** v0.78.0 and v0.78.1 have a known bug causing CPU spikes every 15 minutes.
+- **Use instead:** v0.77.8 (`ghcr.io/activepieces/activepieces:0.77.8`) — stable, no CPU issues.
+- **Source:** Activepieces GitHub issues.
+
+## 2026-02-20 — Automatisch development appears stalled (foundations-writer)
+- **Last release:** v0.15.0 (Aug 2025). ~6 months with no tagged release.
+- **Docker image:** `automatischio/automatisch:0.15.0` or `ghcr.io/automatisch/automatisch:0.15.0`
+- **Default creds:** `user@automatisch.io` / `sample` — CHANGE IMMEDIATELY.
+- **Architecture:** Requires separate `main` and `worker` containers (set `WORKER=true` on worker).
+- **Integration count:** ~40, significantly fewer than n8n (400+) or Activepieces (200+).
+
+## 2026-02-20 — Windmill v1.639.0 worker setup (foundations-writer)
+- **Workers need Docker socket** (`/var/run/docker.sock`) for isolated script execution.
+- **Default workers run as privileged** in the official docker-compose.yml.
+- **Native workers** don't need Docker socket — they run scripts in-process. Set `WORKER_GROUP=native`.
+- **PostgreSQL needs `shm_size: 1g`** in docker-compose for proper shared memory.
+- **Default creds:** `admin@windmill.dev` / `changeme`.
+
+## 2026-02-20 — Nomad uses BSL 1.1 license since v1.6+ (foundations-writer)
+- **Not open source** by OSI definition. BSL 1.1 allows non-competitive use.
+- **Self-hosting for internal use is fine.** Cannot offer Nomad as a managed service.
+- **Alternative:** If licensing matters, use k3s (Apache 2.0) instead.
+
 ## 2026-02-20 — Jackett v0.22.1095 → v0.24.1167 (stale)
 - Our article uses `lscr.io/linuxserver/jackett:v0.22.1095`, latest GitHub release is `v0.24.1167`.
 - No breaking changes per release metadata. Jackett has frequent point releases (~daily).

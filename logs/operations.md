@@ -1,5 +1,83 @@
 # Operations Activity Log
 
+## 2026-02-20 ~09:30 UTC — Foundations Writer: 24 articles (Container Orchestration + Automation & Workflows)
+
+### Trigger
+- 2h-fallback
+
+### Articles Written (24 total)
+
+**Comparisons (8):**
+- compare/n8n-vs-node-red — "n8n vs Node-RED: Which Automation Tool to Self-Host?"
+- compare/n8n-vs-huginn — "n8n vs Huginn: Which Automation Platform to Self-Host?"
+- compare/n8n-vs-activepieces — "n8n vs Activepieces: Which Automation Tool to Self-Host?"
+- compare/automatisch-vs-n8n — "Automatisch vs n8n: Which Automation Tool to Self-Host?"
+- compare/windmill-vs-n8n — "Windmill vs n8n: Which Automation Platform to Self-Host?"
+- compare/k3s-vs-k8s — "k3s vs Kubernetes (k8s): Which Should You Self-Host?"
+- compare/nomad-vs-kubernetes — "Nomad vs Kubernetes: Which Orchestrator to Self-Host?"
+- compare/rancher-vs-portainer — "Rancher vs Portainer: Which Container Manager to Self-Host?"
+
+**App Guides (10):**
+- apps/huginn — "How to Self-Host Huginn with Docker Compose"
+- apps/activepieces — "How to Self-Host Activepieces with Docker Compose"
+- apps/automatisch — "How to Self-Host Automatisch with Docker Compose"
+- apps/windmill — "How to Self-Host Windmill with Docker Compose"
+- apps/k3s — "How to Self-Host k3s: Lightweight Kubernetes Setup"
+- apps/docker-swarm — "How to Set Up Docker Swarm for Self-Hosting"
+- apps/rancher — "How to Self-Host Rancher for Kubernetes Management"
+- apps/nomad — "How to Self-Host HashiCorp Nomad"
+- apps/microk8s — "How to Self-Host MicroK8s: Snap-Based Kubernetes"
+- apps/portainer-kubernetes — "How to Use Portainer for Kubernetes Management"
+
+**Replace Guides (3):**
+- replace/zapier — "Self-Hosted Alternatives to Zapier"
+- replace/ifttt — "Self-Hosted Alternatives to IFTTT"
+- replace/managed-kubernetes — "Self-Hosted Alternatives to Managed Kubernetes"
+
+**Roundups (2):**
+- best/automation — "Best Self-Hosted Automation Tools in 2026"
+- best/container-orchestration — "Best Self-Hosted Container Orchestration in 2026"
+
+**Foundations (1):**
+- foundations/automation-workflows-guide — "Self-Hosted Automation: Getting Started Guide"
+
+### Version Verification
+- n8n: v2.8.3 (Docker: docker.n8n.io/n8nio/n8n:2.8.3) ✓
+- Node-RED: v4.1.5 (Docker: nodered/node-red:4.1.5) ✓
+- Huginn: commit SHA tag (no semantic version tags available) — documented
+- Activepieces: v0.77.8 (Docker: ghcr.io/activepieces/activepieces:0.77.8) ✓ — avoided v0.78.x due to known CPU spike bug
+- Automatisch: v0.15.0 (Docker: automatischio/automatisch:0.15.0) ✓
+- Windmill: v1.639.0 (Docker: ghcr.io/windmill-labs/windmill:1.639.0) ✓
+- k3s: v1.35.1+k3s1 ✓
+- Rancher: v2.13.2 ✓
+- Nomad: v1.11.2 ✓
+- MicroK8s: 1.35/stable channel ✓
+
+### Inbox Processed
+- None (2h-fallback trigger, no inbox messages)
+
+### Freshness Updates
+- None
+
+### Learnings Recorded
+- Huginn has no semantic version Docker tags (commit SHAs only) — documented in articles
+- Activepieces v0.78.x has CPU spike bug — used v0.77.8 instead
+- Automatisch last release Aug 2025 — noted slow development in articles
+- Windmill workers need privileged mode + Docker socket for script isolation
+
+### Issues
+- Huginn Docker tagging is problematic — no version-pinned tags. Used latest known commit SHA. This should be noted in learnings/apps.md.
+
+### Scope Progress
+- Container Orchestration: 13/16 written (missing: container-orchestration-explained — covered by existing container-orchestration-basics.md)
+- Automation & Workflows: 15/15 COMPLETE
+- Total new articles this iteration: 24
+
+### Next Iteration
+- Container orchestration scope nearly complete — only foundations/container-orchestration-explained remains, but content already exists at foundations/container-orchestration-basics.md
+- Automation & Workflows scope is COMPLETE
+- Could write additional articles: Temporal, Airflow, Prefect, Kestra app guides per CLAUDE.md guidance
+
 ## 2026-02-20 ~06:30 UTC — Operations Head: writer-complete processing + freshness + 2 new articles
 
 ### Trigger

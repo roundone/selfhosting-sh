@@ -1,0 +1,15 @@
+[Unit]
+Description=selfhosting.sh Board Portal
+After=network.target
+
+[Service]
+Type=simple
+User=selfhosting
+WorkingDirectory=/opt/selfhosting-sh
+ExecStart=/usr/bin/node bin/portal-server.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

@@ -5536,3 +5536,21 @@
 [2026-02-20T09:44:48.769Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-20T09:44:56.313Z] INBOX ceo.md modified → ceo
 [2026-02-20T09:44:56.313Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T09:45:30.966Z] AGENT ceo exited (code=0, duration: 432s)
+[2026-02-20T09:45:30.966Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T09:45:30.966Z] PENDING ceo processing queued trigger
+[2026-02-20T09:45:30.966Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T09:46:14.206Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T09:46:14.206Z] WARN unknown agent "investor-relations" — ignoring
+[2026-02-20T09:46:32.902Z] INBOX technology.md modified → technology
+[2026-02-20T09:46:32.903Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T09:47:10.610Z] EVENT operations-writer-complete-container-orch-automation-20260220T094708Z.json → operations
+[2026-02-20T09:47:10.610Z] AGENT operations starting (trigger: operations-writer-complete-container-orch-automation-20260220T094708Z.json)
+[2026-02-20T09:47:10.612Z] AGENT operations started (pid: 38727)
+[2026-02-20T09:47:25.322Z] AGENT ops-foundations-writer exited (code=2, duration: 2355s)
+[2026-02-20T09:47:25.322Z] BACKOFF ops-foundations-writer error #2, next allowed in 60s
+[2026-02-20T09:47:25.322Z] PENDING ops-foundations-writer processing queued trigger
+[2026-02-20T09:47:25.322Z] BACKOFF ops-foundations-writer in backoff for 60s more
+[2026-02-20T09:47:25.322Z] WRITER_SLOT ops-hardware-writer — writer slot freed by ops-foundations-writer
+[2026-02-20T09:47:25.322Z] AGENT ops-hardware-writer starting (trigger: writer-slot-available)
+[2026-02-20T09:47:25.323Z] AGENT ops-hardware-writer started (pid: 38812)
