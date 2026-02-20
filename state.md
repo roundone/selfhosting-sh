@@ -1,14 +1,14 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 10:40 UTC
+## Last Updated: 2026-02-20 12:45 UTC
 
 ## Content
-- **Total articles on disk: 773** (207 apps + 268 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
+- **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
 - In progress: **ALL WRITERS PAUSED** (Founder directive 2026-02-20). No writers running. Resume Feb 22.
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
 - **Writer pipeline PAUSED** — Founder directive 2026-02-20: ALL writers paused until Feb 22. Focus: Technology, Marketing, BI, IR, Operations coordination. All wake-on.conf set to 48h. Note: homeauto-notes-writer started via timing race at 10:18 (before coordinator detected 48h conf change at 10:23) — will finish this iteration then pause.
-- Velocity: +122 articles today (container-orch/automation +24, hardware +19, homeauto-notes-writer +14 via timing race before pause took effect).
-- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 773 published. Writers paused until Feb 22 per founder directive.
-- Topic map: 1,224 planned across 78 categories, ~773 published = ~63% of topic map
+- Velocity: +225 articles today (writers now PAUSED — no further production until Feb 22).
+- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 778 published. Writers paused until Feb 22 per founder directive. Need ~90/day for 8 remaining days.
+- Topic map: 1,224 planned across 78 categories, ~778 published = ~64% of topic map
 - Categories with content: 22+ / 78 (AI/ML, Search Engines, Automation & Workflows COMPLETE; Container Orchestration 13/16)
 
 ## Category Completion Status
@@ -77,8 +77,9 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~1,940 items** (draining — 3 platforms active now; Marketing adding new posts)
-- **1 follower on Bluesky** (as of 06:18 UTC)
+- Queue: **~1,921 items** (draining — 3 platforms active now; Marketing adding new posts)
+- **1 follower on Bluesky** (as of 12:45 UTC)
+- **Mastodon: 3.4 engagements/post** — dramatically outperforming X (0/post). Self-hosting community active on fediverse.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
 - **FOUNDER DIRECTIVE (Feb 20):** Social strategy overhaul — Marketing must do active engagement (follows, replies, boosts), not just queue syndication. Max 30% article links, 70% other content. Daily targets: 10+ follows, 5+ replies, 3+ original posts.
 - Platform status:
@@ -104,10 +105,10 @@
 - **VPS: UPGRADED** — 7.7GB total RAM (was 3.8GB), ~6.3GB available
 - VPS uptime: rebooted ~05:14 UTC Feb 20 (4h40m uptime)
 - **Infrastructure: Coordinator v2.0 RUNNING** (config-driven, concurrency limits, memory gate)
-  - selfhosting-coordinator.service: ACTIVE (v2.0, 13 agents discovered + IR pending next restart)
+  - selfhosting-coordinator.service: ACTIVE (v2.0, 14 agents discovered including IR)
   - selfhosting-proxy.service: ACTIVE
   - selfhosting-watchdog.service: ACTIVE
-  - 4 agents active (CEO, operations, marketing, homeauto-notes-writer). BI queued (concurrency 4/4). Writers PAUSED until Feb 22 (homeauto-notes-writer finishing final iteration).
+  - 4 agents active (CEO, BI, marketing, technology). IR completed. Writers PAUSED until Feb 22.
   - Memory: ~6.5GB available / 7.7GB total — healthy
   - Load: minimal
 - Rate-limiting proxy: ACTIVE at localhost:3128
@@ -125,12 +126,12 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 10:54 | 0 | Running now |
-| Operations | 2026-02-20 10:56 | 0 | Completed (quality audit + writer reassignment planning) |
-| Technology | 2026-02-20 10:57 | 0 | Running (deploy trigger) |
-| Marketing | 2026-02-20 10:39 | 0 | Queued (concurrency full — has pending inbox trigger) |
-| BI & Finance | 2026-02-20 10:39 | 0 | Running (new-articles event) |
-| Investor Relations | — | — | Not yet discovered by coordinator |
+| CEO | 2026-02-20 12:45 | 0 | Running now |
+| Operations | 2026-02-20 13:00 | 0 | Completed (writer CLAUDE.md updates for Feb 22) |
+| Technology | 2026-02-20 12:38 | 0 | Running (portal improvements) |
+| Marketing | 2026-02-20 12:38 | 0 | Running (social engagement strategy) |
+| BI & Finance | 2026-02-20 12:35 | 0 | Running (GA4 data + new-articles events) |
+| Investor Relations | 2026-02-20 12:41 | 0 | Completed (portal spec v2 delivered to Technology) |
 | proxy-docker-writer | 2026-02-20 07:57 | 1 | **PAUSED** (until Feb 22) |
 | tier2-writer | 2026-02-20 10:48 | 0 | **PAUSED** (until Feb 22) |
 | vpn-filesync-writer | 2026-02-20 06:21 | 0 | **PAUSED** (until Feb 22) |
@@ -143,13 +144,13 @@
 ## Blockers
 - Social credentials PENDING for: Reddit (app creation blocked by policy wall), Hashnode (Requires: human)
 - LinkedIn API approval PENDING (deprioritized per founder)
-- GA4 API: **ENABLED** by founder (Feb 20). BI should now be able to query. Need numeric property ID.
-- **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 773 articles on disk (14 added today via timing race + pre-pause work). Focus shifts to Technology, Marketing, BI, IR until resume date.
-- Coordinator doesn't discover IR agent — code fix staged in coordinator.js, takes effect on next coordinator restart
+- GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 51 users, 69 sessions, 11 organic sessions confirmed.
+- **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 778 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 resume. Focus: Technology, Marketing, BI, IR until resume date.
+- Coordinator v2.0 now discovers IR agent (restarted at 12:35 UTC — 14 agents discovered)
 
 ## Founder Directives Status
 1. Fix broken search → **FIXED by CEO** (Feb 20 05:50 UTC)
-2. GA4 visitor stats → BI (**GA4 API ENABLED by founder** — BI should retry)
+2. GA4 visitor stats → **DONE** (GA4 API working — 51 users, 69 sessions, 11 organic confirmed)
 3. Rate-limiting proxy awareness → Integrated ✓
 4. systemd migration → COMPLETE ✓
 5. Install Playwright MCP → **COMPLETE** (Feb 20 ~06:05 UTC — @playwright/mcp@0.0.68, Chromium installed, MCP config at ~/.claude/mcp.json)
