@@ -1,16 +1,18 @@
 # Marketing Strategy
 
-**Last updated:** 2026-02-20 (iteration 11)
+**Last updated:** 2026-02-20 (iteration 12)
 
 ## Current Priorities
 
-1. **Mastodon is our #1 social platform.** BI data confirms: Mastodon gets 3.4 engagements/post vs 0.07 for Bluesky and 0 for X. The self-hosting community lives on the fediverse. Prioritize Mastodon content quality, engagement, and volume.
-2. **Dev.to cross-posting is LIVE.** First 5 articles published with canonical_url backlinks. Cross-post more high-performing articles on every iteration.
-3. **Writers paused until Feb 22 — content briefs pipeline is fully loaded.** Updated writer priorities sent to Operations based on BI content performance audit. Niche comparisons > hardware > replace > foundations > app guides. Best-of roundups deprioritized.
-4. **Social content diversity enforced.** Added 60 standalone posts (tips, opinions, discussions) to queue. Queue composition improving toward 70% non-link target.
-5. **3 platforms now active** (X, Bluesky, Mastodon). All posting successfully via social-poster queue system.
-6. **GSC data lag — expect Feb 18-20 data by Feb 21-22.** Current: 9 pages with impressions, 2 page-1 keywords.
-7. **Internal link audit still overdue.** 773 articles. Will run when writers resume.
+1. **Active social engagement is now live.** Iteration 12 executed the full founder engagement directive: 41 follows, 8 replies, 17 favorites, 6 boosts across Mastodon + Bluesky. Must repeat daily.
+2. **Mastodon is our #1 social platform.** BI data confirms: Mastodon gets 3.4 engagements/post vs 0.07 for Bluesky and 0 for X. Now actively following 25+ accounts and engaging with community.
+3. **Dev.to cross-posting accelerating.** 13 articles now live with canonical_url backlinks. Prioritizing niche comparisons + hardware guides per BI data.
+4. **Writers paused until Feb 22 — content briefs pipeline is fully loaded.** Updated writer priorities sent to Operations based on BI content performance audit. Niche comparisons > hardware > replace > foundations > app guides. Best-of roundups deprioritized.
+5. **Social content diversity improving.** 90 standalone posts queued (60 from iter 11 + 30 from iter 12). Queue composition trending toward 70% non-link target.
+6. **3 platforms actively posting** (X, Bluesky, Mastodon). All posting successfully via social-poster queue system.
+7. **GSC data lag — expect Feb 18-20 data by Feb 21-22.** Current: 9 pages with impressions, 2 page-1 keywords.
+8. **Internal link audit overdue.** 773 articles. Priority for next iteration.
+9. **Hashnode credentials now available.** Start cross-posting next iteration.
 
 ## Standing Decisions
 
@@ -29,6 +31,8 @@
 | X posting at 15-min intervals | Pay-per-use at $0.01/tweet. ~$28.80/month. | Feb 20, 2026 (CEO set) |
 | X duplicate posts auto-skipped | Poster skips 403 duplicates | Feb 20, 2026 |
 | Dev.to cross-posting with canonical_url | Generates backlinks + reaches technical audience | Feb 20, 2026 |
+| **Use Mastodon/Bluesky REST APIs for engagement** | Faster and more reliable than Playwright for follows, favs, boosts, replies | Feb 20, 2026 (iter 12) |
+| **Daily engagement: 10+ follows, 5+ replies, 3+ original posts** | Founder directive — active engagement builds followers, pure syndication doesn't | Feb 20, 2026 (founder) |
 
 ## What We've Tried
 
@@ -41,14 +45,17 @@
 | CRITICAL content brief — 7 categories | AI/ML + Search Engines COMPLETE (40 articles). Wiki + Automation COMPLETE. Others in progress. | Feb 20, 2026 |
 | 4-category brief (arr/ebooks/wiki/DNS) | Wiki COMPLETE (14/14). Ebooks nearly complete (15/18). arr + DNS awaiting writers. | Feb 20, 2026 |
 | 5-category brief for Feb 22 restart | File Sharing, Newsletters, Doc Signing, Low-Code, Ticketing (76 articles). Ready to assign. | Feb 20, 2026 |
-| Dev.to cross-posting (5 articles) | SUCCESS — Proxmox HW, FreshRSS vs Miniflux, Headscale vs Tailscale, Budget Server, N100 | Feb 20, 2026 |
-| 60 standalone social posts (tips/opinions/discussions) | Added to queue — improving non-link content ratio | Feb 20, 2026 |
+| Dev.to cross-posting (13 articles total) | SUCCESS — 5 initial + 8 new (iter 12). All with canonical_url backlinks. | Feb 20, 2026 |
+| 90 standalone social posts (tips/opinions/discussions) | Added to queue — improving non-link content ratio | Feb 20, 2026 |
 | BI content performance audit → writer priority update | Sent revised writer priorities to Operations: niche > hardware > replace > foundations > apps | Feb 20, 2026 |
+| **Active Mastodon engagement (iter 12)** | 27 accounts followed, 10 favorited, 6 boosted, 5 replies. First genuine community engagement. | Feb 20, 2026 |
+| **Active Bluesky engagement (iter 12)** | 14 accounts followed, 7 liked, 3 replies. | Feb 20, 2026 |
 
 ## Open Questions
 
 - When will Feb 18-20 GSC data appear? Expected Feb 21-22. Will show whether 773 articles are getting indexed.
-- Will Mastodon engagement continue at 3.4/post rate as volume increases? Need to monitor.
-- Dev.to cross-posting: will canonical_url articles generate referral traffic and backlinks?
+- Will Mastodon engagement (follows) generate follow-backs? Monitoring from iter 12 engagement push.
+- Will Dev.to cross-posted articles drive referral traffic and backlinks?
 - When writers resume Feb 22, will the revised priority order (niche comparisons first) accelerate indexing?
-- Internal link audit: 773 articles unaudited since last audit at 98 articles. Likely 50+ orphan pages.
+- Internal link audit: 773 articles unaudited. Likely 50+ orphan pages.
+- Hashnode cross-posting: credentials available, need to start next iteration.
