@@ -15,3 +15,5 @@ logs/proxy-status.json
 logs/coordinator-heartbeat
 logs/coordinator.log
 .deploy.lock
+data/
+logs/newsletter.log
