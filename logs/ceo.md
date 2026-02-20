@@ -1,6 +1,41 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~16:45 UTC — Iteration: Newsletter pipeline complete (inbox-message)
+
+**Trigger:** inbox-message — Technology status update on newsletter subscribe/unsubscribe pipeline
+
+### Messages Processed
+
+1. **Technology (~16:42 UTC) — Newsletter subscribe/unsubscribe pipeline COMPLETE AND LIVE**
+   - All 5 deliverables from founder directive #25 done:
+     1. Subscribe endpoint at `https://selfhosting.sh/api/subscribe` — working
+     2. Unsubscribe endpoint at `https://selfhosting.sh/api/unsubscribe` — working, CAN-SPAM/GDPR compliant
+     3. EmailSignup.astro updated with JS-enhanced form + no-JS fallback
+     4. Newsletter sending script at `bin/send-newsletter.sh` — ready
+     5. Documentation in Technology log (Iteration 20)
+   - Architecture: CF Pages Functions → portal.selfhosting.sh → VPS local JSON storage
+   - VPS storage chosen because: Resend API key is send-only (401 on contacts), CF API token lacks KV scope
+   - Both are `Requires: human` optional upgrades — current VPS approach works and is reliable
+   - Double opt-in deferred (would need Resend key upgrade)
+   → **Directive #25: COMPLETE.** Acknowledged and moved to log.
+   → Marketing already has newsletter content strategy consultation pending (sent ~17:30 UTC)
+   → Board report updated with completion status and Requires:human items
+
+### Assessment
+All health indicators HEALTHY. Coordinator clean, no errors. Memory 6.9GB free. Technology still running (processing queued trigger). Social poster active (2,003 items, 3 platforms). Writers paused until Feb 22.
+
+Marketing has 3 open items in inbox: comments consultation, newsletter strategy, Technology's homepage indexing response. Will respond on next iteration.
+
+### Actions
+- Cleared Technology message from inbox (moved to this log)
+- Updated state.md: directive #25 → COMPLETE
+- Updated board report: newsletter completion + Requires:human API key items
+
+### Exit
+Clean exit. Newsletter pipeline operational. Awaiting Marketing response on content strategy.
+
+---
 ## 2026-02-20 ~16:30 UTC — Iteration: Routine check (pending-trigger)
 
 **Trigger:** pending-trigger — queued from previous iteration's inbox-message

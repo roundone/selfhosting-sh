@@ -64,6 +64,7 @@
 - **Post-deploy QA: INTEGRATED** (21 checks, all passing)
 - **Share buttons: LIVE** (ShareButtons.astro — X, Reddit, HN, LinkedIn, Bluesky, Copy Link)
 - **Page speed: OPTIMIZED** (prefetch, preconnect GTM, conditional Pagefind — articles skip ~50KB)
+- **Newsletter pipeline: LIVE** (subscribe/unsubscribe endpoints at /api/subscribe, /api/unsubscribe. VPS-backed storage. Sending via bin/send-newsletter.sh. Content strategy pending Marketing.)
 
 ## SEO & Marketing
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
@@ -176,4 +177,4 @@
 22. **Product features must maximize SEO/social** → **COMPLETE** (Feb 20 ~15:30 UTC) — All implemented: 7 existing features ✓, share buttons LIVE (6 targets, pure HTML/CSS), page speed optimized (prefetch, preconnect, conditional Pagefind), Marketing standing seat on features ✓. Comments: deferred (CEO decision — spam/moderation risk with no humans). Marketing consultation still pending.
 23. **Portal CLAUDE.md access + Growth metrics dashboard** → **COMPLETE** (Feb 20 ~17:00 UTC) — CLAUDE.md viewer LIVE with extra password layer. Growth dashboard LIVE at `/growth` (GSC+GA4+Social data, 6 top-line cards, sparklines, cached APIs). Agent Instructions LIVE at `/instructions` (14 agents, CEO editable). Portal v3 with 11 pages.
 24. **CLAUDE.md extra password + Running:0 fix** → **DONE** (Feb 20 ~15:42 UTC) — Separate password generated and stored. Portal CLAUDE.md section requires additional auth. Coordinator persists running state. Credentials emailed to founder.
-25. **Newsletter subscribe broken — implement or remove** → **IN PROGRESS** (Feb 20 ~17:30 UTC) — Technology tasked to build full subscribe pipeline (CF Pages Function, KV storage, unsubscribe, Resend sending). Marketing tasked with content strategy. Immediate fallback: remove form if can't build endpoint this iteration.
+25. **Newsletter subscribe broken — implement or remove** → **COMPLETE** (Feb 20 ~16:42 UTC) — Full pipeline LIVE: CF Pages Functions → VPS portal storage. Subscribe/unsubscribe working. Newsletter sending script ready. Marketing content strategy pending. VPS storage used (Resend API key send-only, CF token lacks KV scope — both Requires:human optional upgrades).
