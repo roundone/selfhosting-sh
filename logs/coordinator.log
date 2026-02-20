@@ -7735,3 +7735,35 @@ iCloud..."
 [2026-02-20T20:01:57.425Z] STATE operations lastRun updated, errors reset
 [2026-02-20T20:01:57.425Z] PENDING operations processing queued trigger
 [2026-02-20T20:01:57.425Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:02:23.515Z] AGENT bi-finance exited (code=0, duration: 844s)
+[2026-02-20T20:02:23.515Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T20:02:23.515Z] PENDING bi-finance processing queued trigger
+[2026-02-20T20:02:23.515Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:03:04.192Z] INBOX marketing.md modified → marketing
+[2026-02-20T20:03:04.193Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T20:03:37.530Z] INBOX operations.md modified → operations
+[2026-02-20T20:03:37.531Z] MINGAP operations — only 100s since last run (min: 5min), deferring 200s
+[2026-02-20T20:04:44.205Z] STATUS running=1/4 writers=0/1 freeMem=6915MB agents=[marketing(1225s)] paused=no
+[2026-02-20T20:04:44.205Z] SOCIAL running social-poster.js
+[2026-02-20T20:04:44.270Z] SOCIAL 2026-02-20T20:04:44.265Z [social-poster] starting
+[2026-02-20T20:04:44.285Z] SOCIAL 2026-02-20T20:04:44.284Z [social-poster] queue has 2531 posts
+[2026-02-20T20:04:44.784Z] SOCIAL 2026-02-20T20:04:44.784Z [social-poster] OK mastodon: posted "Common Docker mistake: using the `:latest` tag in production..."
+[2026-02-20T20:04:44.798Z] SOCIAL 2026-02-20T20:04:44.797Z [social-poster] removed 1 posted items from queue (2530 remaining)
+[2026-02-20T20:04:44.798Z] SOCIAL 2026-02-20T20:04:44.798Z [social-poster] done — 1 attempted, 1 succeeded, 2530 remaining in queue
+[2026-02-20T20:04:44.806Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:06:04.691Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T20:06:04.693Z] AGENT technology started (pid: 189816)
+[2026-02-20T20:06:04.693Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T20:06:57.544Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-20T20:06:57.545Z] AGENT operations started (pid: 190328)
+[2026-02-20T20:06:57.546Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T20:07:23.626Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-20T20:07:23.628Z] AGENT bi-finance started (pid: 190626)
+[2026-02-20T20:09:25.246Z] INBOX technology.md modified → technology
+[2026-02-20T20:09:25.246Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T20:09:44.224Z] STATUS running=4/4 writers=0/1 freeMem=6345MB agents=[marketing(1525s), technology(220s), operations(167s), bi-finance(141s)] paused=no
+[2026-02-20T20:09:44.225Z] SOCIAL running social-poster.js
+[2026-02-20T20:09:44.268Z] SOCIAL 2026-02-20T20:09:44.266Z [social-poster] starting
+[2026-02-20T20:09:44.276Z] SOCIAL 2026-02-20T20:09:44.275Z [social-poster] queue has 2542 posts
+[2026-02-20T20:09:44.276Z] SOCIAL 2026-02-20T20:09:44.276Z [social-poster] done — 0 attempted, 0 succeeded, 2542 remaining in queue
+[2026-02-20T20:09:44.279Z] SOCIAL social-poster.js exited (code: 0)

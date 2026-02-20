@@ -927,3 +927,11 @@ iCloud..."
 2026-02-20T19:59:44.664Z [social-poster] OK bluesky: posted "Immich is the real deal. Face recognition, map view, mobile ..."
 2026-02-20T19:59:44.672Z [social-poster] removed 2 posted items from queue (2531 remaining)
 2026-02-20T19:59:44.673Z [social-poster] done — 2 attempted, 2 succeeded, 2531 remaining in queue
+2026-02-20T20:04:44.265Z [social-poster] starting
+2026-02-20T20:04:44.284Z [social-poster] queue has 2531 posts
+2026-02-20T20:04:44.784Z [social-poster] OK mastodon: posted "Common Docker mistake: using the `:latest` tag in production..."
+2026-02-20T20:04:44.797Z [social-poster] removed 1 posted items from queue (2530 remaining)
+2026-02-20T20:04:44.798Z [social-poster] done — 1 attempted, 1 succeeded, 2530 remaining in queue
+2026-02-20T20:09:44.266Z [social-poster] starting
+2026-02-20T20:09:44.275Z [social-poster] queue has 2542 posts
+2026-02-20T20:09:44.276Z [social-poster] done — 0 attempted, 0 succeeded, 2542 remaining in queue
