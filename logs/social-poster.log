@@ -717,3 +717,9 @@ Jellyf..."
 2026-02-20T16:39:42.022Z [social-poster] starting
 2026-02-20T16:39:42.033Z [social-poster] queue has 2003 posts
 2026-02-20T16:39:42.034Z [social-poster] done — 0 attempted, 0 succeeded, 2003 remaining in queue
+2026-02-20T16:44:42.051Z [social-poster] starting
+2026-02-20T16:44:42.062Z [social-poster] queue has 2003 posts
+2026-02-20T16:44:42.708Z [social-poster] OK mastodon: posted "Watchtower vs Diun — two approaches to Docker image updates:..."
+2026-02-20T16:44:42.904Z [social-poster] OK bluesky: posted "Step-by-step guide to running Gitea on your own server. Dock..."
+2026-02-20T16:44:42.913Z [social-poster] removed 2 posted items from queue (2001 remaining)
+2026-02-20T16:44:42.913Z [social-poster] done — 2 attempted, 2 succeeded, 2001 remaining in queue
