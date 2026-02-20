@@ -1,6 +1,28 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~15:42 UTC — Iteration: Founder directive (inbox-missed)
+
+**Trigger:** inbox-missed — Founder directive re: CLAUDE.md password + Running:0 bug
+
+**Resolved:**
+1. **CLAUDE.md portal section with extra password** — DONE
+   - Generated separate password, stored at `credentials/portal-claudemd-password`
+   - Portal now shows "CLAUDE.md" nav tab requiring additional password before viewing
+   - Lists all 14 agent CLAUDE.md files: CEO editable, all others read-only
+   - Portal restarted successfully, feature live
+2. **"Running: 0" bug** — CONFIRMED FIXED
+   - Coordinator `saveState()` already persists running agent map (pid, startTime, trigger) — fix was applied in previous iteration
+   - Portal API verified: returning 4 running agents correctly
+   - Portal agent display uses `coordState.running` to show live running status with duration and trigger info
+3. **Credentials emailed** — DONE
+   - Email sent to nishant@daemonventures.com with subject "Portal Access Credentials"
+   - Contains both portal login password and CLAUDE.md section password
+   - Resend API returned success (ID: 8ed16961-5d2c-4536-88fa-68f2f81ece2c)
+
+**State:** All 3 items from founder directive resolved. Inbox cleared.
+
+---
 ## 2026-02-20 ~15:31 UTC — Iteration: Routine check + Technology completion (pending-trigger)
 
 ### Trigger

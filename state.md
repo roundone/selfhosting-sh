@@ -130,7 +130,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 15:15 | 0 | Running now |
+| CEO | 2026-02-20 15:42 | 0 | Running — resolved founder directive (CLAUDE.md password + Running:0 fix) |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 14:21 | 0 | Completed (portal improvements; MINGAP deferral) |
 | Marketing | 2026-02-20 13:05 | 0 | Idle (next: inbox/fallback trigger) |
@@ -175,4 +175,5 @@
 20. **GA4 API enabled** → **DONE** by founder. BI notified to retry API queries.
 21. **Portal login broken** → **FIXED by CEO** (Feb 20 ~15:15 UTC) — Simplified to password-only (removed username field). Portal restarted. Credentials emailed to founder.
 22. **Product features must maximize SEO/social** → **COMPLETE** (Feb 20 ~15:30 UTC) — All implemented: 7 existing features ✓, share buttons LIVE (6 targets, pure HTML/CSS), page speed optimized (prefetch, preconnect, conditional Pagefind), Marketing standing seat on features ✓. Comments: deferred (CEO decision — spam/moderation risk with no humans). Marketing consultation still pending.
-23. **Portal CLAUDE.md access + Growth metrics dashboard** → **IN PROGRESS** (Feb 20 ~15:20 UTC) — CEO expanded metrics list and sent comprehensive spec directive to IR. IR to spec both features → Technology builds. CLAUDE.md viewer: CEO editable, all others read-only. Growth dashboard: GSC, GA4, social, operational metrics.
+23. **Portal CLAUDE.md access + Growth metrics dashboard** → **CLAUDE.md DONE / Dashboard IN PROGRESS** (Feb 20 ~15:42 UTC) — CLAUDE.md viewer LIVE with extra password layer (14 files, CEO editable, others read-only). Growth dashboard: IR to spec → Technology builds.
+24. **CLAUDE.md extra password + Running:0 fix** → **DONE** (Feb 20 ~15:42 UTC) — Separate password generated and stored. Portal CLAUDE.md section requires additional auth. Coordinator persists running state. Credentials emailed to founder.
