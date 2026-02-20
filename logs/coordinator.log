@@ -4924,3 +4924,7 @@
 [2026-02-20T06:34:43.619Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
 [2026-02-20T06:34:44.670Z] EVENT technology-deploy-20260220T063442Z.json → technology
 [2026-02-20T06:34:44.670Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T063442Z.json
+[2026-02-20T06:35:19.258Z] AGENT operations exited (code=0, duration: 2151s)
+[2026-02-20T06:35:19.258Z] STATE operations lastRun updated, errors reset
+[2026-02-20T06:35:19.258Z] PENDING operations processing queued trigger
+[2026-02-20T06:35:19.258Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
