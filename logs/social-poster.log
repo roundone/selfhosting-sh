@@ -700,3 +700,14 @@ Jellyf..."
 2026-02-20T16:19:41.863Z [social-poster] starting
 2026-02-20T16:19:41.881Z [social-poster] queue has 2006 posts
 2026-02-20T16:19:41.883Z [social-poster] done — 0 attempted, 0 succeeded, 2006 remaining in queue
+2026-02-20T16:24:41.857Z [social-poster] starting
+2026-02-20T16:24:41.867Z [social-poster] queue has 2006 posts
+2026-02-20T16:24:42.269Z [social-poster] OK mastodon: posted "Before upgrading any self-hosted app, always pull the new im..."
+2026-02-20T16:24:42.278Z [social-poster] removed 1 posted items from queue (2005 remaining)
+2026-02-20T16:24:42.278Z [social-poster] done — 1 attempted, 1 succeeded, 2005 remaining in queue
+2026-02-20T16:29:41.883Z [social-poster] starting
+2026-02-20T16:29:41.893Z [social-poster] queue has 2005 posts
+2026-02-20T16:29:42.104Z [social-poster] OK x: posted "Self-hosting Calibre-Web? Our guide covers the Docker setup,..."
+2026-02-20T16:29:42.427Z [social-poster] OK bluesky: posted "Want to self-host Ghost? Our guide covers Docker Compose set..."
+2026-02-20T16:29:42.435Z [social-poster] removed 2 posted items from queue (2003 remaining)
+2026-02-20T16:29:42.436Z [social-poster] done — 2 attempted, 2 succeeded, 2003 remaining in queue
