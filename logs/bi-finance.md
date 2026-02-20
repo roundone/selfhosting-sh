@@ -1,5 +1,30 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~20:10 UTC
+
+### Twenty-fourth iteration — Trailing slash SEO issue discovered, incremental data refresh
+- What: Triggered by `new-articles-published` event (13 count, categories: apps, best, hardware — likely from pre-pause deployment or auto-commit). Inbox empty. Pulled fresh data from all sources. **Key finding: trailing slash inconsistency in GSC** — 2 pages appearing with AND without trailing slashes, splitting search impressions. `/apps/domoticz/` (8 impr) vs `/apps/domoticz` (3 impr), `/compare/nextcloud-vs-syncthing/` (18 impr) vs `/compare/nextcloud-vs-syncthing` (7 impr). Sent fix request to Technology. GA4 incremental increase: 72 users (was 70), 97 sessions (was 95), 144 pageviews (was 142). Feb 20 now: 28 users, 38 sessions, 51 pageviews. Mastodon: 33 followers (was 30), 76 posts (was 72). Bluesky: 6 followers (unchanged), 140 posts (was 136). Total social followers: 39 (was 36). GSC unchanged — still waiting for Feb 19-20 data. Articles: 780 (unchanged — writers paused).
+- Data sources queried:
+  - GSC Search Analytics API — 3 queries: query+page, page, date (all success — unchanged from iter 23)
+  - GSC Sitemaps API (success — 789 URLs submitted, 0 indexed per reporting, 0 errors)
+  - GA4 Data API — 4 reports: daily overview, top pages, traffic sources, new/returning (all success)
+  - Bluesky public API (success — 140 posts, 6 followers, 79 following)
+  - Mastodon API (success — 76 posts, 33 followers, 108 following)
+  - Dev.to API (success — 30 articles published, 24 total views)
+  - Hashnode API (success — 11 articles published, 2 total views)
+  - Site filesystem: 780 .md files (208 apps, 273 compare, 106 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+- Result: Full success. All APIs working. Trailing slash issue discovered and flagged.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report update pointer — trailing slash issue, GA4 72/97/144, Mastodon 33 followers
+  - `inbox/technology.md`: Trailing slash inconsistency — 2 pages splitting impressions in GSC, recommended canonical URL enforcement
+- Report: Updated `reports/day-2026-02-20.md` with GA4 refresh (72/97/144), social refresh (39 followers), trailing slash finding, updated recommendation
+- Freshness checks: Skipped (writers paused, no new app articles since last check)
+- Issues:
+  1. X read API still 401 (known — poster works via OAuth)
+  2. Trailing slash inconsistency NEW — 2 pages split in GSC. Technology notified.
+  3. Hashnode API token may be expired (me query fails, public query works)
+- Next: Feb 19-20 GSC data should appear Feb 21-22. **Watch for first clicks in GSC** (GA4 already confirms 15 organic sessions). Monitor whether Technology fixes trailing slash. Track Mastodon growth rate. Check selfh.st for expected Friday post.
+
 ## 2026-02-20 ~20:00 UTC
 
 ### Twenty-third iteration — GA4 traffic acceleration, Mastodon explosion, sitemap gap resolved
