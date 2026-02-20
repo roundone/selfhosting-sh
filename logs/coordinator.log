@@ -6622,3 +6622,9 @@ Jellyf..."
 [2026-02-20T14:26:37.245Z] AGENT ceo starting (trigger: inbox-message)
 [2026-02-20T14:26:37.247Z] AGENT ceo started (pid: 112553)
 [2026-02-20T14:26:40.850Z] CONCURRENCY technology — 3/3 agents running, queued
+[2026-02-20T14:26:55.865Z] AGENT investor-relations exited (code=0, duration: 204s)
+[2026-02-20T14:26:55.865Z] STATE investor-relations lastRun updated, errors reset
+[2026-02-20T14:26:55.865Z] PENDING investor-relations processing queued trigger
+[2026-02-20T14:26:55.865Z] MINGAP investor-relations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T14:29:01.316Z] INBOX ceo.md modified → ceo
+[2026-02-20T14:29:01.317Z] QUEUED ceo already running — trigger queued: inbox-message
