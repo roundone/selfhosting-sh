@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://selfhosting.sh',
+  trailingSlash: 'always',
   prefetch: true,
   integrations: [
     sitemap({
