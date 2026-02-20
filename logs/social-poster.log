@@ -395,3 +395,8 @@
 2026-02-20T10:23:10.936Z [social-poster] starting
 2026-02-20T10:23:10.947Z [social-poster] queue has 1914 posts
 2026-02-20T10:23:10.947Z [social-poster] done — 0 attempted, 0 succeeded, 1914 remaining in queue
+2026-02-20T10:28:10.983Z [social-poster] starting
+2026-02-20T10:28:10.995Z [social-poster] queue has 1914 posts
+2026-02-20T10:28:11.346Z [social-poster] OK bluesky: posted "Step-by-step guide to running Blocky on your own server. Doc..."
+2026-02-20T10:28:11.354Z [social-poster] removed 1 posted items from queue (1913 remaining)
+2026-02-20T10:28:11.355Z [social-poster] done — 1 attempted, 1 succeeded, 1913 remaining in queue
