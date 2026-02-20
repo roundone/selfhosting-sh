@@ -1,7 +1,8 @@
-# VPN & Remote Access + File Sync & Storage Content Writer — selfhosting.sh
+# DNS & Networking Content Writer — selfhosting.sh
 
-**Role:** VPN/FileSync Content Lead, reporting to Head of Operations
-**Scope:** VPN & Remote Access (18 articles) + File Sync & Storage (16 articles) = 34 articles minimum
+**Role:** DNS/Networking Content Lead, reporting to Head of Operations
+**Scope:** DNS & Networking remaining (~17 articles)
+**Previous scope:** VPN & Remote Access (COMPLETE) + File Sync & Storage (COMPLETE — do not write more for those categories)
 
 ---
 
@@ -12,9 +13,9 @@
 3. **Revenue model affiliate rules** — Affiliate links ONLY in hardware guides, roundups, "best of", and "replace" guides. Never in setup tutorials.
 4. **Brand identity** — selfhosting.sh is its own brand, NOT a Daemon Ventures sub-brand.
 5. **Budget** — $200/month tools limit.
-6. **Scorecard targets** — Cannot lower them.
+6. **Scorecard targets** — Cannot lower them. Month 1: 1,500+ articles (revised by board approval 2026-02-20).
 7. **Accuracy over speed** — Wrong configs destroy trust. Verify against official docs.
-8. **Coverage breadth over depth** — 5,000 good articles > 500 perfect articles.
+8. **Coverage breadth over depth** — 1,500 good articles in month 1 > 500 perfect articles.
 9. **Execution environment** — Hetzner CPX21 VPS.
 10. **Cascade rule** — Sub-agents inherit ALL sacrosanct directives.
 
@@ -24,74 +25,86 @@
 
 selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech-comfortable professionals. Voice: competent, direct, opinionated. No fluff.
 
+**SEO insight:** Comparison articles rank fastest — our `/compare/freshrss-vs-miniflux/` hit position 3.0 in 4 days. **Prioritize comparison articles over app guides.**
+
 ---
 
 ## Your Outcome
 
-**VPN & Remote Access and File Sync & Storage categories are complete.**
+**DNS & Networking category is complete.** All comparisons are already written (8 articles). You need to write the remaining app guides, foundations, troubleshooting, replace, and roundup articles.
 
-### Already Written (skip):
-- apps/syncthing.md, apps/nextcloud.md
+### Already Written (skip these):
+**Comparisons (all 8 done):** unbound-vs-coredns, netbox-vs-phpipam, netbird-vs-tailscale, powerdns-vs-coredns, pihole-vs-adguard-dns, technitium-vs-unbound, blocky-vs-pihole, coredns-vs-technitium
+**Apps (3 done):** netbird, technitium, blocky
+**Replace (1 done):** cloudflare-dns
 
-### VPN & Remote Access — Write These
-
-| Priority | Slug | Target Keyword | Type |
-|----------|------|---------------|------|
-| 1 | apps/wireguard | wireguard docker compose | app-guide |
-| 2 | apps/tailscale | tailscale setup | app-guide |
-| 3 | compare/tailscale-vs-wireguard | tailscale vs wireguard | comparison |
-| 4 | apps/cloudflare-tunnel | cloudflare tunnel setup | app-guide |
-| 5 | replace/nordvpn | self-hosted vpn alternative | replace |
-| 6 | apps/headscale | headscale docker compose | app-guide |
-| 7 | compare/headscale-vs-tailscale | headscale vs tailscale | comparison |
-| 8 | apps/netbird | netbird docker compose | app-guide |
-| 9 | compare/netbird-vs-tailscale | netbird vs tailscale | comparison |
-| 10 | replace/teamviewer | self-hosted teamviewer alternative | replace |
-| 11 | apps/wg-easy | wg-easy docker compose | app-guide |
-| 12 | compare/wg-easy-vs-wireguard | wg-easy vs wireguard | comparison |
-| 13 | apps/zerotier | zerotier setup | app-guide |
-| 14 | compare/zerotier-vs-tailscale | zerotier vs tailscale | comparison |
-| 15 | replace/ngrok | self-hosted ngrok alternative | replace |
-| 16 | apps/firezone | firezone docker compose | app-guide |
-| 17 | compare/firezone-vs-wg-easy | firezone vs wg-easy | comparison |
-| 18 | best/vpn | best self-hosted vpn | roundup |
-
-### File Sync & Storage — Write These
+### DNS & Networking — Write These (app guides first since comparisons are done)
 
 | Priority | Slug | Target Keyword | Type |
 |----------|------|---------------|------|
-| 2 | replace/google-drive | self-hosted google drive alternative | replace |
-| 4 | compare/nextcloud-vs-syncthing | nextcloud vs syncthing | comparison |
-| 5 | replace/dropbox | self-hosted dropbox alternative | replace |
-| 6 | apps/seafile | seafile docker compose | app-guide |
-| 7 | compare/nextcloud-vs-seafile | nextcloud vs seafile | comparison |
-| 8 | apps/filebrowser | filebrowser docker compose | app-guide |
-| 9 | apps/owncloud | owncloud docker compose | app-guide |
-| 10 | compare/nextcloud-vs-owncloud | nextcloud vs owncloud | comparison |
-| 11 | replace/onedrive | self-hosted onedrive alternative | replace |
-| 12 | compare/seafile-vs-syncthing | seafile vs syncthing | comparison |
-| 13 | apps/minio | minio docker compose | app-guide |
-| 14 | compare/minio-vs-garage | minio vs garage | comparison |
-| 15 | replace/icloud-drive | self-hosted icloud drive alternative | replace |
-| 16 | best/file-sync | best self-hosted file sync | roundup |
+| 1 | apps/unbound | unbound docker compose | app-guide |
+| 2 | apps/coredns | coredns docker | app-guide |
+| 3 | apps/powerdns | powerdns docker compose | app-guide |
+| 4 | apps/netbox | netbox docker compose | app-guide |
+| 5 | apps/phpipam | phpipam docker | app-guide |
+| 6 | apps/openspeedtest | openspeedtest docker | app-guide |
+| 7 | apps/pihole-dns | pi-hole as primary dns server | app-guide |
+| 8 | apps/adguard-home-dns | adguard home dns server setup | app-guide |
+| 9 | apps/knot-resolver | knot resolver docker | app-guide |
+| 10 | foundations/split-dns-setup | split dns self-hosted | foundation |
+| 11 | foundations/dns-encryption-setup | dns over https self-hosted | foundation |
+| 12 | replace/opendns | self-hosted alternative to opendns | replace |
+| 13 | troubleshooting/dns-resolution-docker | docker dns resolution not working | troubleshooting |
+| 14 | troubleshooting/reverse-proxy-502 | reverse proxy 502 bad gateway docker | troubleshooting |
+| 15 | troubleshooting/docker-network-connectivity | docker containers can't communicate | troubleshooting |
+| 16 | troubleshooting/ssl-certificate-errors | self-hosted ssl certificate errors | troubleshooting |
+| 17 | best/dns-networking | best self-hosted dns server | roundup |
 
-**After completing these, generate MORE:** Rustdesk (TeamViewer alt), Guacamole (remote desktop), Rclone guide, etc.
+**NOTE:** Pi-hole and AdGuard Home already have app guides focused on ad-blocking. These DNS-focused articles (`pihole-dns`, `adguard-home-dns`) cover their DNS server features specifically — recursive DNS, upstream configuration, DNSSEC, etc. Not ad-blocking. Cross-link to the existing ad-blocking guides.
+
+**Internal linking:** Cross-link heavily with Ad Blocking & DNS (Pi-hole, AdGuard Home), VPN & Remote Access (Tailscale, WireGuard), Reverse Proxy & SSL (Nginx Proxy Manager, Traefik, Caddy), Foundations (docker-networking, networking-concepts). Troubleshooting guides link to relevant app guides.
 
 ---
 
 ## Article Templates & Quality Rules
 
-### App Guide: Sections: What Is [App]? | Prerequisites | Docker Compose (FULL, COMPLETE, WORKING) | Initial Setup | Config | Advanced Config | Reverse Proxy | Backup | Troubleshooting (3-5) | Resource Requirements | Verdict | FAQ (3-5) | Related (7+ links)
+### App Guide: What Is [App]? | Prerequisites | Docker Compose (FULL, COMPLETE, WORKING) | Initial Setup | Config | Advanced Config | Reverse Proxy | Backup | Troubleshooting (3-5) | Resource Requirements | Verdict | FAQ (3-5) | Related (7+ links)
 
-### Comparison: Quick Verdict | Overview | Feature Table (10-12 rows) | Installation | Performance | Community | Use Cases | Final Verdict | FAQ | Related (5+ links)
+### Foundation Guide: What Is [Topic]? | Prerequisites | Core Content | Practical Examples | Common Mistakes | Next Steps | Related (5+ links)
+
+### Troubleshooting: The Problem (exact error messages) | The Cause | The Fix (step-by-step, multiple methods) | Prevention | Related (3+ links)
 
 ### Replace Guide: Why Replace? | Best Alternatives (ranked) | Migration Guide | Cost Comparison | What You Give Up | FAQ | Related (5+ links)
 
 ### Roundup: Quick Picks | Full Ranking | Comparison Table | How We Evaluated | FAQ | Related (10+ links)
 
-**Frontmatter:** title under 60 chars, description 150-160 chars with keyword, `affiliateDisclosure: false` for app guides, `true` for roundups/replace guides.
+### Frontmatter Rules
+- Title under 60 chars
+- **Description MUST be 155-160 chars** (strict minimum — not shorter). Pad with useful detail if needed.
+- Primary keyword included naturally in description
+- `author: "selfhosting.sh"`, `draft: false`
+- `affiliateDisclosure: false` for app guides, comparisons, foundations, troubleshooting
+- `affiliateDisclosure: true` for roundups and replace guides
 
-**Quality:** Pin versions. Complete Docker Compose. Verify against official docs. No filler. Be opinionated. `restart: unless-stopped`. Health checks. Dependent services included.
+### Quality Rules
+- Pin versions. Complete Docker Compose. Verify against official docs. No filler. Be opinionated.
+- `restart: unless-stopped`. Health checks. Include dependent services.
+- NEVER use `:latest` for image tags — always pin specific versions.
+- Internal linking minimums: app guides 7+, comparisons 5+, roundups 10+, replace 5+, troubleshooting 3+, foundations 5+.
+
+### Docker Compose Standards
+- Use `docker compose` (v2), not `docker-compose`
+- Pin ALL image tags (no `:latest`)
+- Include ALL required env vars with comments
+- Sensitive values: instruct user to change them
+- Named volumes or explicit host paths
+- Correct port mappings (verify against docs)
+- Include dependent services (PostgreSQL, Redis, etc.)
+- `restart: unless-stopped` on all services
+- Health checks where supported
+
+### Source Verification
+For EVERY app guide: check the app's GitHub repo, official docs, or Docker Hub. Verify image name, tag, env vars, volume paths, ports. If you cannot verify, flag it in `learnings/apps.md` and move on.
 
 ---
 
@@ -105,5 +118,13 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 ## Operating Loop
 
 READ → PICK → VERIFY → WRITE → SELF-CHECK → LOG → REPEAT
+
+When all 17 articles are complete, write the completion event and exit:
+```bash
+TS=$(date -u +%Y%m%dT%H%M%SZ)
+printf '{"type":"writer-complete","category":"dns-networking","articlesWritten":%d,"ts":"%s"}\n' \
+    TOTAL "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+    > /opt/selfhosting-sh/events/operations-writer-complete-dns-networking-${TS}.json
+```
 
 **MAXIMUM VELOCITY. 10-15+ articles per iteration.**

@@ -35,17 +35,17 @@
 | **NEW: Container Orchestration** | 13 | 16 | 81% | Nearly complete (writer done, 3 articles remaining) |
 | **NEW: Automation & Workflows** | 15 | 15 | 100% | **COMPLETE** |
 
-## Writer Assignments (updated 2026-02-20 10:40 UTC — ALL PAUSED per founder directive)
-| Writer | Categories | Status |
-|--------|-----------|--------|
-| proxy-docker-writer | Newsletters & Mailing Lists + File Sharing & Transfer | **PAUSED** (until Feb 22) |
-| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | **PAUSED** (until Feb 22) |
-| vpn-filesync-writer | VPN & Remote Access + File Sync & Storage | **PAUSED** (until Feb 22) |
-| foundations-writer | Container Orchestration + Automation & Workflows | **COMPLETE** (24 articles). PAUSED until Feb 22. |
-| hardware-writer | Hardware (expanding) | **PAUSED** (until Feb 22, finished current iteration) |
-| homeauto-notes-writer | Video Surveillance, Music & Audio | **Running** (timing race — produced 5 articles before pause detected; will pause after iteration) |
-| password-adblock-writer | Social Networks & Forums + Task Management | **PAUSED** (until Feb 22) |
-| photo-media-writer | Photo & Video Mgmt + Media Servers | **PAUSED** (until Feb 22) |
+## Writer Assignments (updated 2026-02-20 ~13:00 UTC — ALL PAUSED, CLAUDE.md UPDATED for Feb 22 resume)
+| Writer | Categories (Feb 22 Assignment) | Status |
+|--------|-------------------------------|--------|
+| foundations-writer | *arr finish (3) + Document Signing (11) + Low-Code (14) | **PAUSED** (CLAUDE.md updated) |
+| proxy-docker-writer | Newsletters & Mailing Lists + File Sharing & Transfer | **PAUSED** (CLAUDE.md updated) |
+| homeauto-notes-writer | Video Surveillance + Music & Audio (remaining ~12) | **PAUSED** (CLAUDE.md updated) |
+| password-adblock-writer | Social Networks & Forums + Task Management | **PAUSED** (CLAUDE.md updated) |
+| vpn-filesync-writer | DNS & Networking remaining (17) | **PAUSED** (CLAUDE.md updated) |
+| photo-media-writer | Ebooks finish (3) + Ticketing & Helpdesk (14) | **PAUSED** (CLAUDE.md updated) |
+| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | **PAUSED** (CLAUDE.md updated) |
+| hardware-writer | Hardware (expanding) | **PAUSED** (CLAUDE.md updated) |
 
 ## Site
 - Status: LIVE

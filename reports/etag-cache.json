@@ -3,192 +3,192 @@
     "AppFlowy-IO/AppFlowy-Cloud": {
       "etag": "W/\"88e33f2b31e56a3d39cbc9d0b8f6d7eb1883d5e28d6b27b3e84cf1da685e0e33\"",
       "latestVersion": "0.9.64",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "janeczku/calibre-web": {
-      "etag": "W/\"fbc6042701be328fc95248453d3d6391a06ee91c8142b4a7a0fffca1a59020fe\"",
+      "etag": "W/\"4609cb6cd5d1ef62a5c990623e0cc069910413ce984bab002002111a51cb3ea6\"",
       "latestVersion": "0.6.26",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "Dusk-Labs/dim": {
       "etag": "W/\"51d626bfe5954edd1dd2400282a8238aa2d95f2c505be9feb1caec888130275d\"",
       "latestVersion": "v0.3.0-rc6",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "crazy-max/diun": {
       "etag": "W/\"48070c6d823389f20567d6403d632d9ac82c0cca598d0b2b09113c9633cd6923\"",
       "latestVersion": "v4.31.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "louislam/dockge": {
       "etag": "W/\"e4d663ffd4962b31fbfde99ff2f4434ed1a7ef970f9870fe34732988f332abef\"",
       "latestVersion": "1.5.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "docmost/docmost": {
       "etag": "W/\"e291b7ae37f72c7933249efc7b192279c779367b4180006a9cb37ee20c9c3393\"",
       "latestVersion": "v0.25.3",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "juanfont/headscale": {
-      "etag": "W/\"d4e0e2fdf13f0cf8d943d475a9cf234207a89bb7c2dc2670388baa184b95afa7\"",
+      "etag": "W/\"3c4e9f4bc963c544b28a6608b03cd6c1930e2fb7ea2bc9955496945888fefa40\"",
       "latestVersion": "v0.28.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "Jackett/Jackett": {
-      "etag": "W/\"c077cf658a3b78daa04aa8b0e936a78ca980d74956d497131e521ce3ac7b0a09\"",
+      "etag": "W/\"cbb2ffe4f4054f76241e02fa68d25b07efdf527dc895bce72fcefbe391962ae2\"",
       "latestVersion": "v0.24.1167",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-20T06:14:02.526Z"
     },
     "jesseduffield/lazydocker": {
-      "etag": "W/\"0c692464994c2276c54c1bd4aff2ce4e55c98b7c9e9ca121ba640e3cdc563cb4\"",
+      "etag": "W/\"60a1375fc017e315b21b2ff3e5d32be74e4ef7b1d194adc0f23f013395976e22\"",
       "latestVersion": "v0.24.4",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "LibrePhotos/librephotos": {
       "etag": null,
       "latestVersion": null,
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": null
     },
     "sissbruecker/linkding": {
       "etag": "W/\"b8f6eadb41221c573e76643a61d6a3ba60f4730e4b86e397129954cd795e06cd\"",
       "latestVersion": "v1.45.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "matomo-org/matomo": {
       "etag": "W/\"60031f0b71ecb723a899f979ec4162a786ff2f3ad6af8c6dc540427824c96c90\"",
       "latestVersion": "5.7.1",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "stonith404/pocket-id": {
       "etag": null,
       "latestVersion": null,
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": null
     },
     "netbirdio/netbird": {
-      "etag": "W/\"a9cf81dcea729535fdbc680d99865e9ffcd5284588625122fb18ae85427fb0ca\"",
+      "etag": "W/\"beb58e52d51a493f86bcc304455bb5c75777be280d39216702a3831b49e50c1c\"",
       "latestVersion": "v0.65.3",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-19T20:23:14.917Z"
     },
     "vrtmrz/obsidian-livesync": {
-      "etag": "W/\"6b4db9001ce2701bcacdb6149a296edbc22e534dd0d213b29b60184a52957d61\"",
+      "etag": "W/\"48bf125a52596f04eb8a4f447d3d429c1507b3557db53746ca596bed5dd55c99\"",
       "latestVersion": "0.25.43",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "open-webui/open-webui": {
       "etag": "W/\"d9bfda18fb850de44634a2ee3bd73ee67fe9d6d3b74600849b755f8bb74383dd\"",
       "latestVersion": "v0.8.3",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "plausible/community-edition": {
       "etag": null,
       "latestVersion": null,
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": null
     },
     "restic/restic": {
-      "etag": "W/\"feeda159119bbac98e705c6d60ca1570ff5eed0a370d26e2b447d4d2c99613b9\"",
+      "etag": "W/\"066e609087f250bb2a10542d89139635783707edc045cb112031b464433b17be\"",
       "latestVersion": "v0.18.1",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "drakkan/sftpgo": {
-      "etag": "W/\"c226e37632931820a9ce7e6ce624082e5770a81c9cd67b7560b443309c834c2f\"",
+      "etag": "W/\"9e94d43b385c31cba8c6770511f8134f43493459e9bc9ec8ee33dadb123f0cd8\"",
       "latestVersion": "v2.7.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "Stirling-Tools/Stirling-PDF": {
-      "etag": "W/\"ac15c2e624a295ccc9f492e36c0001463ca97818d8c637a1d8ae4f65e8208571\"",
+      "etag": "W/\"e075c15aa9150ead5315b5bae7b1171a1c9b4171ef5d72786c48b63f01b05ccc\"",
       "latestVersion": "v2.5.1",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "TriliumNext/Notes": {
       "etag": "W/\"a1205af4aada67cb41d1ebbfab102f557e4ea98077403880f95b2f7705092814\"",
       "latestVersion": "v0.95.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "louislam/uptime-kuma": {
-      "etag": "W/\"73982eaa92bd6620622f32fd01aa255f208dd09a2c1042c2a2ba4c8a6665f87a\"",
+      "etag": "W/\"4765279181d1930e49c3b0ce3fc040e83073824cadbe4ec08d144930968672f7\"",
       "latestVersion": "2.1.3",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-19T06:21:00.845Z"
     },
     "dani-garcia/vaultwarden": {
       "etag": "W/\"341712070fb5143d8925fe47befb2ae1d1fee2aaa364bcfd45f027e16c1b23a3\"",
       "latestVersion": "1.35.3",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "containrrr/watchtower": {
       "etag": "W/\"678e70505e92f0168e537120fe34c754b6e9b24289ef38af24edf4f03be52c10\"",
       "latestVersion": "v1.7.1",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "wg-easy/wg-easy": {
       "etag": "W/\"4caeb572a50417d15f11741cd9d112ef1790958ef578feb7a42379753cedadca\"",
       "latestVersion": "v15.2.2",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "sinamics/ztnet": {
       "etag": "W/\"95cb6dcec80fe6ffdd27116d2cee349246c422b044015092131268a0069b986b\"",
       "latestVersion": "v0.7.14",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "gurucomputing/headscale-ui": {
       "etag": "W/\"ef68dd278b9e6f34348611ecd7bfb25e80629b1963fab3454481a01942e97fdf\"",
       "latestVersion": "2025.08.23",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "nextcloud/server": {
       "etag": "W/\"fd613adaa20253d4db7102ab2eb20fc01690ef6473981cd1e16007fc450b9042\"",
       "latestVersion": "v33.0.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T13:16:02.457Z"
     },
     "fatedier/frp": {
-      "etag": "W/\"8914ceee92bbea22c5287a0ac061ae8cd16bf87c516d29b794f31be413c29907\"",
+      "etag": "W/\"a3e13b2aef18641a9cc6cdec8496710e064bd8995d633e4195b7b0cfdc057604\"",
       "latestVersion": "v0.67.0",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     }
   },
   "rss_feeds": {
     "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md": {
       "etag": "\"984584f1f038e96e88fec67e08c72bfc6338c235\"",
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": "2026-02-18T12:16:01.477Z"
     },
     "https://selfh.st/index.xml": {
       "etag": null,
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": null
     },
     "https://noted.lol/rss": {
       "etag": null,
-      "lastChecked": "2026-02-20T10:18:10.918Z",
+      "lastChecked": "2026-02-20T11:18:11.194Z",
       "lastChanged": null
     }
   }

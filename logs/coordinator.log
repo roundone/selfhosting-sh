@@ -5902,3 +5902,61 @@
 [2026-02-20T11:15:56.152Z] WARN unknown agent "investor-relations" — ignoring
 [2026-02-20T11:15:59.451Z] INBOX ceo.md modified → ceo
 [2026-02-20T11:15:59.451Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T11:17:49.998Z] AGENT ceo exited (code=0, duration: 1378s)
+[2026-02-20T11:17:49.998Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T11:17:49.999Z] PENDING ceo processing queued trigger
+[2026-02-20T11:17:49.999Z] PAUSED ceo — session limit active, 293min until 2026-02-20T16:11:13.943Z
+[2026-02-20T11:18:11.160Z] STATUS running=1/4 writers=0/0 freeMem=6974MB agents=[operations(794s)] paused=2026-02-20T16:11:13.943Z
+[2026-02-20T11:18:11.160Z] RELEASES running check-releases.js
+[2026-02-20T11:18:11.162Z] SOCIAL running social-poster.js
+[2026-02-20T11:18:11.194Z] RELEASES 2026-02-20T11:18:11.191Z [check-releases] starting
+[2026-02-20T11:18:11.195Z] RELEASES 2026-02-20T11:18:11.195Z [check-releases] checking 29 GitHub repos
+[2026-02-20T11:18:11.200Z] SOCIAL 2026-02-20T11:18:11.198Z [social-poster] starting
+[2026-02-20T11:18:11.211Z] SOCIAL 2026-02-20T11:18:11.210Z [social-poster] queue has 1936 posts
+[2026-02-20T11:18:11.212Z] SOCIAL 2026-02-20T11:18:11.212Z [social-poster] done — 0 attempted, 0 succeeded, 1936 remaining in queue
+[2026-02-20T11:18:11.217Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T11:18:11.299Z] RELEASES 2026-02-20T11:18:11.298Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T11:18:11.886Z] RELEASES 2026-02-20T11:18:11.886Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T11:18:12.507Z] RELEASES 2026-02-20T11:18:12.506Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T11:18:13.084Z] RELEASES 2026-02-20T11:18:13.083Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T11:18:13.653Z] RELEASES 2026-02-20T11:18:13.652Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T11:18:14.206Z] RELEASES 2026-02-20T11:18:14.206Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T11:18:14.802Z] RELEASES 2026-02-20T11:18:14.801Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T11:18:15.368Z] RELEASES 2026-02-20T11:18:15.368Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T11:18:15.949Z] RELEASES 2026-02-20T11:18:15.949Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T11:18:16.512Z] RELEASES 2026-02-20T11:18:16.512Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T11:18:17.063Z] RELEASES 2026-02-20T11:18:17.063Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T11:18:17.700Z] RELEASES 2026-02-20T11:18:17.699Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T11:18:18.247Z] RELEASES 2026-02-20T11:18:18.246Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T11:18:18.822Z] RELEASES 2026-02-20T11:18:18.822Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T11:18:19.420Z] RELEASES 2026-02-20T11:18:19.420Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T11:18:19.987Z] RELEASES 2026-02-20T11:18:19.987Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T11:18:20.550Z] RELEASES 2026-02-20T11:18:20.550Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T11:18:21.130Z] RELEASES 2026-02-20T11:18:21.130Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T11:18:21.726Z] RELEASES 2026-02-20T11:18:21.726Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T11:18:22.285Z] RELEASES 2026-02-20T11:18:22.285Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T11:18:22.870Z] RELEASES 2026-02-20T11:18:22.869Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T11:18:23.419Z] RELEASES 2026-02-20T11:18:23.419Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T11:18:23.976Z] RELEASES 2026-02-20T11:18:23.976Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T11:18:24.535Z] RELEASES 2026-02-20T11:18:24.535Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T11:18:25.105Z] RELEASES 2026-02-20T11:18:25.105Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T11:18:25.660Z] RELEASES 2026-02-20T11:18:25.660Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T11:18:26.253Z] RELEASES 2026-02-20T11:18:26.253Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T11:18:26.806Z] RELEASES 2026-02-20T11:18:26.806Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T11:18:27.378Z] RELEASES 2026-02-20T11:18:27.378Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T11:18:27.879Z] RELEASES 2026-02-20T11:18:27.879Z [check-releases] checking 3 feeds
+[2026-02-20T11:18:27.949Z] RELEASES 2026-02-20T11:18:27.948Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T11:18:28.209Z] RELEASES 2026-02-20T11:18:28.209Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T11:18:28.535Z] RELEASES 2026-02-20T11:18:28.535Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T11:18:28.736Z] RELEASES 2026-02-20T11:18:28.736Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T11:18:28.742Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T11:20:34.070Z] INBOX operations.md modified → operations
+[2026-02-20T11:20:34.070Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T11:20:39.709Z] INBOX operations.md modified → operations
+[2026-02-20T11:20:39.709Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T11:20:48.160Z] INBOX operations.md modified → operations
+[2026-02-20T11:20:48.160Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T11:20:53.227Z] INBOX operations.md modified → operations
+[2026-02-20T11:20:53.227Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T11:21:09.449Z] INBOX ceo.md modified → ceo
+[2026-02-20T11:21:09.449Z] PAUSED ceo — session limit active, 290min until 2026-02-20T16:11:13.943Z

@@ -1,5 +1,73 @@
 # Operations Activity Log
 
+## 2026-02-20 ~13:00 UTC — Operations Head: Writer CLAUDE.md updates for Feb 22 resume
+
+### Trigger
+- inbox-message (CEO directive to update writer CLAUDE.md files)
+- writer-complete event from homeauto-notes-writer (15 articles)
+
+### Context
+- All writers PAUSED per founder directive until Feb 22
+- CEO directive: update all 8 writer CLAUDE.md files with new assignments, 155-char meta desc, corrected scorecard
+- Marketing briefs for Feb 22 ready (Document Signing, Low-Code, Ticketing, DNS, File Sharing, Newsletters)
+
+### Work Completed
+
+**1. Writer CLAUDE.md Updates (ALL 8 COMPLETE)**
+
+Updated every writer with:
+- 155-char minimum meta description requirement (strict, added to quality rules and frontmatter sections)
+- Month 1 scorecard corrected from 5,000 to 1,500 (board approval 2026-02-20)
+
+Category reassignments (CLAUDE.md rewritten for writers with new scope):
+- **foundations-writer**: Container Orch/Automation (DONE) → *arr finish (3) + Document Signing (11) + Low-Code (14) = 28 articles
+- **vpn-filesync-writer**: VPN/File Sync (DONE) → DNS & Networking remaining (17) = 17 articles
+- **photo-media-writer**: Photo/Media (DONE) → Ebooks finish (3) + Ticketing & Helpdesk (14) = 17 articles
+- proxy-docker-writer: Newsletters + File Sharing (unchanged, 32 articles)
+- homeauto-notes-writer: Music & Audio + Video Surveillance (unchanged, ~12 remaining)
+- password-adblock-writer: Social Networks + Task Management (unchanged, 40 articles)
+- tier2-writer: Download Mgmt + CMS + Monitoring + Backup + Analytics + Email + Bookmarks (unchanged)
+- hardware-writer: Hardware (unchanged, open-ended)
+
+**2. Overlap Verification: CLEAN**
+- No two writers assigned to same category
+- Cross-category articles (Readarr, Navidrome) already exist — no duplicate writing risk
+
+**3. Writer-Complete Event Processed**
+- homeauto-notes-writer completed 15 articles (Video Surveillance + Music & Audio)
+- Event archived to events/archive/
+
+**4. State Files Updated**
+- strategy.md: revised reassignment plan with final assignments
+- state.md: writer assignments table updated with new categories and CLAUDE.md status
+- inbox/operations.md: CEO directive marked resolved, Marketing briefs marked in-progress with writer assignments
+- inbox/ceo.md: confirmation message sent
+
+### Inbox Processed
+- CEO directive (writer CLAUDE.md prep): RESOLVED — all 8 files updated
+- Marketing Feb 22 brief (5 categories): IN-PROGRESS — all categories assigned to writers
+- homeauto-notes-writer completion event: PROCESSED — archived
+
+### Freshness Updates
+- None (quality audit work, no content production)
+
+### Learnings Recorded
+- None this iteration
+
+### Issues
+- None blocking
+
+### Topic Map Progress
+- No new articles this iteration (CLAUDE.md update focus per CEO directive)
+- Total articles on disk: 773
+- 9+ categories complete / 78 total
+
+### Next Iteration
+- If triggered before Feb 22: Continue review work, verify wake-on.conf files ready for 48h→1h switch
+- On Feb 22: Reset all 8 writer wake-on.conf to `fallback: 1h`, confirm to CEO, monitor writer restarts
+
+---
+
 ## 2026-02-20 ~12:00 UTC — Operations Head: Quality audit + writer reassignment planning
 
 ### Trigger
