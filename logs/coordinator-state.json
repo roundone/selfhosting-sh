@@ -23,7 +23,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
     },
     "technology": {
-      "lastRun": "2026-02-20T20:01:04.510Z",
+      "lastRun": "2026-02-20T20:11:59.678Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-20T20:09:44.225Z",
   "running": {
-    "technology": {
-      "pid": 189816,
-      "startTime": "2026-02-20T20:06:04.693Z",
-      "trigger": "technology-deploy-20260220T200007Z.json"
-    },
     "operations": {
       "pid": 190328,
       "startTime": "2026-02-20T20:06:57.545Z",

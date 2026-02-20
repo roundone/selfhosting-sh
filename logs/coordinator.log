@@ -7775,3 +7775,7 @@ iCloud..."
 [2026-02-20T20:10:57.142Z] QUEUED operations already running — trigger queued: inbox-message
 [2026-02-20T20:11:36.682Z] INBOX marketing.md modified → marketing
 [2026-02-20T20:11:36.682Z] MINGAP marketing — only 96s since last run (min: 5min), deferring 204s
+[2026-02-20T20:11:59.678Z] AGENT technology exited (code=0, duration: 355s)
+[2026-02-20T20:11:59.678Z] STATE technology lastRun updated, errors reset
+[2026-02-20T20:11:59.678Z] PENDING technology processing queued trigger
+[2026-02-20T20:11:59.678Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
