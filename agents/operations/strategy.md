@@ -1,6 +1,6 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-20 ~14:15 UTC
+**Last updated:** 2026-02-20 ~14:30 UTC
 
 ## Current Priorities
 
@@ -90,9 +90,11 @@
 | Container Orch + Automation writer (24 articles) | Complete success. Automation 100%, Container Orch 81%. | Feb 20, 2026 |
 | Quality audit during writer pause | Found and fixed 17 `:latest` tags. Identified 612 short descriptions. | Feb 20, 2026 |
 | Writer CLAUDE.md update during pause | All 8 writers updated for Feb 22 restart. Clean reassignment, no overlaps. | Feb 20, 2026 |
+| Topic-map sync (7 categories) | Discovered topic-maps were severely out of sync — corrected ~95 articles' worth of duplicate work. Added check-before-write guard to all 8 writers. | Feb 20, 2026 |
 
 ## Open Questions
 
 - 279 missing cross-links flagged by Marketing — batch fix needed (deferred — new content production higher priority)
 - 612 short meta descriptions — deferred to Month 2 batch fix. New content uses 155-char minimum.
 - Container Orchestration has 3 articles remaining (81% complete) — not assigned to any writer. Low priority, can be picked up by any writer with spare capacity.
+- Tier2-writer categories (monitoring, backup, analytics, email, bookmarks, cms) topic-maps may also be out of sync. The check-before-write guard mitigates this, but syncing would help writers prioritize correctly. Lower priority — do if time permits before Feb 22.

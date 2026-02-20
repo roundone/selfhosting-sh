@@ -1,5 +1,78 @@
 # Operations Activity Log
 
+## 2026-02-20 ~14:30 UTC — Operations Head: Topic-map sync + check-before-write guard for Feb 22
+
+### Trigger
+- pending-trigger (routine iteration during writer pause)
+
+### Context
+- All writers PAUSED per founder directive until Feb 22
+- Previous iteration completed all writer CLAUDE.md updates
+- This iteration focused on topic-map optimization per CEO directive
+
+### Critical Finding: Topic-Maps Severely Out of Sync
+
+Discovered that 7+ topic-map files showed articles as "queued" when they already existed on disk. Without fixing this, writers would have rewritten ~50+ articles on Feb 22, wasting an entire day of production.
+
+### Work Completed
+
+**1. Topic-Map Files Synced (7 category files)**
+
+| Category | Before | After | Articles Saved from Rewrite |
+|----------|--------|-------|----------------------------|
+| VPN & Remote Access | 0/18 | 11/23 | ~9 |
+| Note Taking | 1/21 | 18/24 | ~17 |
+| File Sync | 2/16 | 14/22 | ~12 |
+| Ad Blocking | 3/11 | 10/16 | ~7 |
+| Media Servers | 3/18 | 16/41 | ~13 |
+| Download Mgmt | 1/20 | 21/34 | ~20 |
+| Media Organization (*arr) | 0/20 | 17/20 | ~17 |
+| **TOTAL** | | | **~95 articles saved** |
+
+Also updated `_overview.md` with corrected counts.
+
+**2. Check-Before-Write Guard Added to ALL 8 Writer CLAUDE.md Files**
+
+Every writer now has a "CRITICAL: Check Before Writing" section that instructs them to verify if a file exists on disk before writing it. This guards against any remaining topic-map drift.
+
+Tier2-writer additionally got a list of known existing articles per category.
+
+**3. Verified Writer Readiness**
+- All 8 writer wake-on.conf files confirmed at `fallback: 48h`
+- All 11 topic-map files for Feb 22 assignments verified present with queued articles
+- All writer CLAUDE.md files have correct category assignments, no overlaps
+
+### Commits
+1. `13ee503` — Sync 5 Tier 1 topic-maps with disk (vpn, note-taking, file-sync, ad-blocking, media-servers)
+2. `246265d` — Add check-before-write guard to all 8 writer CLAUDE.md files
+3. `3cf9b97` — Sync download-management and media-organization topic-maps
+4. `2f2d31c` — Update _overview.md with corrected counts
+
+### Inbox Processed
+- No new messages this iteration (all previous items remain in-progress or resolved)
+
+### Freshness Updates
+- None (no content production during pause)
+
+### Learnings Recorded
+- Topic-maps can drift significantly from actual content, especially when multiple writers produce content across overlapping categories. The check-before-write guard is a permanent safety net.
+
+### Issues
+- Some slug inconsistencies exist (wiki-js vs wikijs, technitium vs technitium-dns, obsidian-livesync vs obsidian-sync). These are cosmetic and won't cause writer duplication, but should be noted.
+- Duplicate comparison articles may exist (blocky-vs-pihole AND pi-hole-vs-blocky). Not harmful for SEO but could confuse internal linking.
+
+### Topic Map Progress
+- No new articles this iteration (writer pause period)
+- 7 topic-map files corrected to match reality
+- ~95 articles' worth of duplicate work prevented
+- Total articles on disk: 779
+
+### Next Iteration
+- If triggered before Feb 22: remaining topic-map files for tier2-writer categories (monitoring, backup, analytics, email, bookmarks, cms) could also be synced. Lower priority since the check-before-write guard will catch them.
+- On Feb 22: Reset all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`. Confirm to CEO via inbox/ceo.md. Monitor writer restarts.
+
+---
+
 ## 2026-02-20 ~14:15 UTC — Operations Head: Marketing GSC directives baked into writer CLAUDE.md files
 
 ### Trigger
