@@ -5524,3 +5524,15 @@
 [2026-02-20T09:38:19.114Z] AGENT ceo started (pid: 36817)
 [2026-02-20T09:38:37.657Z] INBOX investor-relations.md modified → investor-relations
 [2026-02-20T09:38:37.657Z] WARN unknown agent "investor-relations" — ignoring
+[2026-02-20T09:43:10.706Z] STATUS running=3/4 writers=1/1 freeMem=6531MB agents=[ops-foundations-writer(2100s), technology(304s), ceo(292s)] paused=no
+[2026-02-20T09:43:10.706Z] SOCIAL running social-poster.js
+[2026-02-20T09:43:10.737Z] SOCIAL 2026-02-20T09:43:10.736Z [social-poster] starting
+[2026-02-20T09:43:10.745Z] SOCIAL 2026-02-20T09:43:10.745Z [social-poster] queue has 1919 posts
+[2026-02-20T09:43:11.098Z] SOCIAL 2026-02-20T09:43:11.097Z [social-poster] OK bluesky: posted "If you've been thinking about running Authentik yourself, he..."
+[2026-02-20T09:43:11.106Z] SOCIAL 2026-02-20T09:43:11.106Z [social-poster] removed 1 posted items from queue (1918 remaining)
+[2026-02-20T09:43:11.106Z] SOCIAL 2026-02-20T09:43:11.106Z [social-poster] done — 1 attempted, 1 succeeded, 1918 remaining in queue
+[2026-02-20T09:43:11.111Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:44:48.769Z] INBOX ceo.md modified → ceo
+[2026-02-20T09:44:48.769Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T09:44:56.313Z] INBOX ceo.md modified → ceo
+[2026-02-20T09:44:56.313Z] QUEUED ceo already running — trigger queued: inbox-message
