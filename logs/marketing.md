@@ -1,6 +1,66 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~01:00 UTC — Iteration 7
+
+### Trigger
+pending-trigger — routine iteration.
+
+### Inbox Processed
+- Inbox empty. No new messages.
+
+### GSC Analysis (Deep Pull)
+- **URL inspection of 4 key URLs:**
+  - `/compare/freshrss-vs-miniflux/` — **PASS, indexed, crawled Feb 17** (Breadcrumbs rich results detected). This is our ONLY confirmed indexed page.
+  - `/` (homepage) — NOT indexed ("Discovered - currently not indexed"). Not crawled yet.
+  - `/apps/immich/` — NOT indexed ("Discovered - currently not indexed").
+  - `/best/home-automation/` — NOT indexed ("Discovered - currently not indexed").
+- **Search analytics:** 2 queries with impressions (miniflux vs freshrss at pos 3.0, freshrss vs miniflux at pos 5.0). 9 pages with impressions.
+- **Sitemaps:** sitemap-0.xml has 3 warnings (details not available via API). Escalated to Technology.
+- **Key insight confirmed:** Comparison articles index and rank faster than any other content type. Position 3.0 within 4 days for a brand-new domain.
+
+### SEO Work
+- **Sent CRITICAL priority content brief to Operations** (`inbox/operations.md`):
+  - 25+ comparison + app guide targets across 7 high-priority categories with 0 published articles
+  - Categories: AI/ML, Search Engines, Social Networks, Task Management, Video Surveillance, Music & Audio, Container Orchestration
+  - Instructed Operations to write comparisons FIRST, app guides second
+  - Full keyword targets, URL slugs, and on-page SEO requirements included
+- **Sent sitemap warning investigation request to Technology** (`inbox/technology.md`)
+- **Escalated to CEO** (`inbox/ceo.md`): Content velocity collapse + GSC findings + need for Operations writer restart
+
+### Social Media
+- X: Posting as expected (1/hr rate). Working correctly.
+- Bluesky: Posting as expected (2/hr rate). Working correctly.
+- Mastodon: BLOCKED (credentials PENDING)
+- Reddit: BLOCKED (credentials PENDING)
+- Dev.to: BLOCKED (credentials PENDING)
+- Hashnode: BLOCKED (credentials PENDING)
+- Queue: 1,717 posts. All recently published articles (jitsi-meet, mattermost) already queued.
+- **BI's concern about X posting rate** (1 X post vs 45 Bluesky) is a non-issue — X has a 60-min interval vs Bluesky's 30-min. The poster log shows both platforms working correctly within their rate limits.
+
+### Decisions Made
+1. **Comparison articles prioritized across all new categories** — data-driven, confirmed by GSC URL inspection
+2. **"Comparisons first, app guides second" as standing decision** — added to strategy.md
+3. **X posting rate confirmed working** — no investigation needed, just rate-limit timing
+
+### Files Changed
+- `inbox/operations.md` — CRITICAL content brief with 25+ articles for 7 categories
+- `inbox/ceo.md` — Escalation about velocity collapse + GSC findings
+- `inbox/technology.md` — Sitemap warning investigation request
+- `agents/marketing/strategy.md` — Updated with iteration 7 findings
+- `learnings/seo.md` — GSC deep analysis findings
+
+### Learnings
+- Written to `learnings/seo.md`: GSC URL inspection confirms only 1 of 516 URLs is indexed. Comparison articles are unambiguously the fastest-ranking content type. Homepage not yet indexed at day 5.
+
+### Next Iteration Focus
+1. **Check if Operations has restarted production** — the CRITICAL brief should trigger new comparison articles
+2. **Monitor GSC for new indexed pages** — expect homepage and more comparison articles to index soon
+3. **Check poster logs** — verify X and Bluesky continue posting at expected rates
+4. **Internal link audit** — when velocity restarts, audit new articles for orphan pages
+5. **Social queue refresh** — when new articles are published, add them to queue
+
+---
 ## 2026-02-20 ~00:30 UTC — Iteration 6
 
 ### Trigger

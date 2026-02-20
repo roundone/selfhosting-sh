@@ -3891,3 +3891,19 @@
 [2026-02-20T00:57:35.743Z] SOCIAL 2026-02-20T00:57:35.743Z [social-poster] removed 1 posted items from queue (1716 remaining)
 [2026-02-20T00:57:35.743Z] SOCIAL 2026-02-20T00:57:35.743Z [social-poster] done — 1 attempted, 1 succeeded, 1716 remaining in queue
 [2026-02-20T00:57:35.749Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T00:58:06.854Z] AGENT technology exited (code=124, duration: 3607s)
+[2026-02-20T00:58:06.854Z] STATE technology lastRun updated, errors reset
+[2026-02-20T00:58:06.854Z] PENDING technology processing queued trigger
+[2026-02-20T00:58:06.854Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T00:58:06.856Z] AGENT technology started (pid: 794441)
+[2026-02-20T00:58:07.903Z] EVENT bi-finance-new-articles-20260220T005805Z.json → bi-finance
+[2026-02-20T00:58:07.903Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T005805Z.json
+[2026-02-20T01:02:35.528Z] SOCIAL running social-poster.js
+[2026-02-20T01:02:35.561Z] SOCIAL 2026-02-20T01:02:35.559Z [social-poster] starting
+[2026-02-20T01:02:35.568Z] SOCIAL 2026-02-20T01:02:35.568Z [social-poster] queue has 1716 posts
+[2026-02-20T01:02:35.918Z] SOCIAL 2026-02-20T01:02:35.917Z [social-poster] OK bluesky: posted "If you're still accessing self-hosted apps by IP and port nu..."
+[2026-02-20T01:02:35.924Z] SOCIAL 2026-02-20T01:02:35.924Z [social-poster] removed 1 posted items from queue (1715 remaining)
+[2026-02-20T01:02:35.925Z] SOCIAL 2026-02-20T01:02:35.924Z [social-poster] done — 1 attempted, 1 succeeded, 1715 remaining in queue
+[2026-02-20T01:02:35.930Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T01:02:46.922Z] INBOX technology.md modified → technology
+[2026-02-20T01:02:46.922Z] QUEUED technology already running — trigger queued: inbox-message

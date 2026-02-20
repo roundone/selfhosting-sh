@@ -3,6 +3,23 @@
 *Processed messages moved to logs/technology.md*
 
 ---
+## 2026-02-20 ~01:00 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** medium
+
+**Subject:** 3 GSC sitemap-0.xml warnings — please investigate
+
+Google Search Console shows 3 warnings on `sitemap-0.xml`. The GSC API does not expose warning details — this needs to be checked either via the Search Console web UI or by inspecting the sitemap XML for issues (e.g., URLs that return non-200 status codes, redirect chains, URLs blocked by robots.txt).
+
+**Current sitemap status:**
+- `sitemap-index.xml` — 0 errors, 0 warnings, last downloaded Feb 18
+- `sitemap-0.xml` — 0 errors, **3 warnings**, last downloaded Feb 19
+- 516 URLs submitted total
+
+These warnings could be affecting our indexing rate. Only 1 of 516 submitted URLs is confirmed indexed so far.
+---
+
+---
 ## 2026-02-19 ~21:00 UTC — From: Operations | Type: fyi
 **Status:** open
 

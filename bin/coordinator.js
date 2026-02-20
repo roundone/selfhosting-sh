@@ -220,6 +220,9 @@ function installGitHook() {
 
 // ─── wake-on.conf loading ─────────────────────────────────────────────────────
 
+// Per-agent fallback overrides: { agentName → milliseconds }
+let agentFallbackOverrides = {};
+
 function loadWakeConf(agentName, agentDir) {
     const confPath = path.join(agentDir, 'wake-on.conf');
     if (!fs.existsSync(confPath)) return [];
@@ -236,6 +239,14 @@ function loadWakeConf(agentName, agentDir) {
             const value = trimmed.slice(colonIdx + 1).trim();
             if (directive === 'watch') {
                 watches.push({ agentName, filePath: path.join(REPO_ROOT, value) });
+            } else if (directive === 'fallback') {
+                // Parse interval like "30m", "1h", "45m"
+                const match = value.match(/^(\d+)(m|h)$/);
+                if (match) {
+                    const num = parseInt(match[1]);
+                    const ms = match[2] === 'h' ? num * 3600000 : num * 60000;
+                    agentFallbackOverrides[agentName] = ms;
+                }
             }
         }
     } catch (e) {
@@ -329,6 +340,13 @@ function tryStartAgent(agentName, triggerEventPath, reason) {
         pendingTriggers[agentName] = triggerEventPath || pendingTriggers[agentName] || null;
         // Schedule a retry when the pause expires
         setTimeout(() => tryStartAgent(agentName, pendingTriggers[agentName], reason), msLeft + 5000);
+        return;
+    }
+
+    // Writer concurrency limit
+    if (agentName.startsWith('ops-') && countRunningWriters() >= MAX_CONCURRENT_WRITERS) {
+        pendingTriggers[agentName] = triggerEventPath || null;
+        log(`WRITER_LIMIT ${agentName} — ${MAX_CONCURRENT_WRITERS} writers already running, queued`);
         return;
     }
 
@@ -452,6 +470,18 @@ function handleAgentExit(agentName, exitCode, triggerEventPath, outputBuffer) {
         delete pendingTriggers[agentName];
         log(`PENDING ${agentName} processing queued trigger`);
         tryStartAgent(agentName, pendingTrigger, 'pending-trigger');
+    }
+
+    // If a writer just finished, check if any queued writers can now start
+    if (agentName.startsWith('ops-')) {
+        for (const [queuedAgent, queuedTrigger] of Object.entries(pendingTriggers)) {
+            if (queuedAgent.startsWith('ops-') && !running[queuedAgent]) {
+                delete pendingTriggers[queuedAgent];
+                log(`WRITER_SLOT ${queuedAgent} — writer slot freed by ${agentName}`);
+                tryStartAgent(queuedAgent, queuedTrigger, 'writer-slot-available');
+                break; // only start one — check limit inside tryStartAgent
+            }
+        }
     }
 }
 
@@ -654,15 +684,32 @@ function recoverFromCrash() {
 
 // ─── Scheduled tasks ──────────────────────────────────────────────────────────
 
+// Count how many writer agents (ops-*) are currently running
+function countRunningWriters() {
+    let count = 0;
+    for (const name of Object.keys(running)) {
+        if (name.startsWith('ops-') && running[name]) count++;
+    }
+    return count;
+}
+
+const MAX_CONCURRENT_WRITERS = 3; // Memory safety: 3 writers × ~300MB + core agents
+
 function checkFallbacks() {
     const now = Date.now();
     for (const [agentName] of Object.entries(agents)) {
         if (running[agentName]) continue; // already running
         const agentState = getAgentState(agentName);
         const lastRun = agentState.lastRun ? new Date(agentState.lastRun).getTime() : 0;
-        if (now - lastRun >= FALLBACK_INTERVAL_MS) {
-            log(`FALLBACK ${agentName} — ${Math.round((now - lastRun) / 3600000)}h since last run`);
-            tryStartAgent(agentName, null, '8h-fallback');
+        const fallbackMs = agentFallbackOverrides[agentName] || FALLBACK_INTERVAL_MS;
+        if (now - lastRun >= fallbackMs) {
+            // Enforce writer concurrency limit
+            if (agentName.startsWith('ops-') && countRunningWriters() >= MAX_CONCURRENT_WRITERS) {
+                continue; // defer — too many writers running
+            }
+            const intervalLabel = fallbackMs < 3600000 ? `${Math.round(fallbackMs / 60000)}m` : `${Math.round((now - lastRun) / 3600000)}h`;
+            log(`FALLBACK ${agentName} — ${intervalLabel} since last run`);
+            tryStartAgent(agentName, null, agentFallbackOverrides[agentName] ? `${intervalLabel}-fallback` : '8h-fallback');
         }
     }
 }
@@ -723,7 +770,7 @@ function ensureDirectories() {
 
 function start() {
     log('='.repeat(60));
-    log('STARTUP coordinator v1.1 (8h-fallback, usage-limit-detection)');
+    log('STARTUP coordinator v1.2 (writer-discovery, per-agent-fallback, writer-concurrency-limit)');
 
     ensureDirectories();
     loadState();

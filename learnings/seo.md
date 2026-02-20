@@ -98,6 +98,16 @@
 - **At 25/hr sustained:** ~400 articles/day. Barely meets the 388/day needed for 5,000 by Feb 28. Zero margin for further deceleration.
 - **Key metric to watch:** If velocity drops below 20/hr, the 5,000 target is unreachable without scaling up (more writers, more VPS memory, or expanded topic map).
 
+## 2026-02-20 — GSC deep analysis confirms comparison articles index fastest (Marketing, iteration 7)
+- **URL inspection confirms only 1 page is FULLY INDEXED:** `/compare/freshrss-vs-miniflux/` — crawled 2026-02-17T19:13:54Z as MOBILE, verdict PASS, canonical matches, Breadcrumbs rich results detected.
+- **Homepage (`/`) is NOT indexed** — still "Discovered - currently not indexed" after 4 days. No crawl attempt yet. This is concerning but not uncommon for brand-new domains.
+- **`/apps/immich/` and `/best/home-automation/` also NOT indexed** — same "Discovered but not crawled" state.
+- **Key implication:** Despite 9 pages showing search impressions, only 1 is formally indexed per URL inspection. The other 8 pages likely have cached/soft-indexed status that shows impressions but hasn't been formally confirmed by URL inspection yet.
+- **Comparison articles are unambiguously our fastest-ranking content type.** The only indexed page is a comparison. Comparisons also have the best positions (3.0, 4.5). Hardware guides show more impressions (8) but at worse positions (6.9). This validates the "comparisons first, app guides second" strategy.
+- **Sitemap status:** sitemap-0.xml has 3 warnings (details not exposed via API). sitemap-index.xml has 0 warnings. Both show 516 URLs submitted, 0 "indexed" (GSC reporting lag — we know at least 1 is indexed from URL inspection).
+- **Search analytics shows only 2 queries** this pull (vs 9 pages with impressions). This is likely due to GSC's 2-3 day data processing delay and aggregation thresholds.
+- **Action taken:** Sent CRITICAL priority brief to Operations for 25+ comparison articles across 7 high-priority uncovered categories (AI/ML, Search Engines, Social Networks, Task Management, Video Surveillance, Music & Audio, Container Orchestration).
+
 ## 2026-02-19 — First Google search impressions (Marketing, iteration 5)
 - **9 pages showing impressions in GSC** as of 2026-02-19. Zero clicks. This is day 4 post-launch.
 - **Fastest-indexed content types:** Hardware guides and comparison articles are indexing faster than app guides. `/hardware/proxmox-hardware-guide/` leads with 8 impressions at position 6.9.

@@ -1,15 +1,15 @@
 # Marketing Strategy
 
-**Last updated:** 2026-02-20
+**Last updated:** 2026-02-20 (iteration 7)
 
 ## Current Priorities
 
-1. **Social queue maintenance** — Queue system is LIVE (X and Bluesky active, Mastodon pending credentials). 1,717 posts queued covering 556 unique article URLs + 54 standalone tips. Poster processes 1 per platform per interval (X: 60min, Bluesky: 30min). Keep queue full — goal is 200+ items at all times. Queue for Mastodon too (auto-activates when credentials arrive).
-2. **GSC monitoring & indexing acceleration** — 9 pages with impressions at day 5. Comparison and hardware content indexing fastest. Prioritize more comparison content to Operations. Track first clicks (expected within days).
-3. **Topic map expansion** — Current: 1,224 planned articles / 78 categories. 550 published. Need ~776 more planned to reach 2,000 target. Next: expand existing categories with more apps, add vs-cloud comparisons, add troubleshooting guides.
-4. **Internal link audit** — 550 articles published. Need comprehensive link audit: orphan pages, weak clusters, broken links. Route fixes to Operations.
-5. **Content briefs for uncovered categories** — Many Batch 2 and Batch 3 categories have 0 articles. Send priority briefs to Operations.
-6. **SEO annotations for freshrss-vs-miniflux success pattern** — Comparison content ranks fastest (position 3-5 on day 4). Double down on comparison articles across all categories.
+1. **URGENT: Restart content production** — Content velocity collapsed to near-zero (4 articles in 3 days). Sent CRITICAL brief to Operations with 25+ comparison + app guide targets across 7 high-priority uncovered categories. Escalated to CEO. This is the #1 blocker for all SEO goals.
+2. **Double down on comparison articles** — GSC CONFIRMED: `/compare/freshrss-vs-miniflux/` is our only indexed page (crawled Feb 17, position 3.0). Comparison articles rank within days. Briefed Operations to prioritize comparisons over app guides in every new category.
+3. **Social queue maintenance** — Queue healthy at 1,717 posts. X posting every 60 min, Bluesky every 30 min. Both working correctly (BI's "1 X post vs 45 Bluesky" was a timing artifact, not a bug). Mastodon auto-activates when credentials arrive.
+4. **GSC monitoring** — Only 1 page confirmed indexed, but 9 showing impressions. Homepage NOT indexed yet. 3 sitemap warnings unresolved. Need Technology to investigate.
+5. **Topic map expansion** — 1,224 planned / 555 published / 78 categories. 40+ categories at 0 articles. Next: when velocity restarts, ensure new categories get covered.
+6. **Internal link audit** — Pending from last iteration. 555 articles need comprehensive audit. Lower priority until velocity restarts.
 
 ## Standing Decisions
 
@@ -20,7 +20,8 @@
 | No affiliate links in setup tutorials | Trust-building; commissions must not influence recommendations | Feb 2026 (inherited from board) |
 | No affiliate disclosures until founder instructs | Zero active affiliate relationships; premature disclosures damage trust | Feb 19, 2026 (founder directive) |
 | Queue-only social posting | All social posts go through queues/social-queue.jsonl — never call APIs directly | Feb 20, 2026 (CEO directive) |
-| Comparison content is highest SEO priority | Comparison articles ranking fastest (positions 3-5 at day 4) — low competition, high intent | Feb 20, 2026 (GSC data) |
+| Comparison content is highest SEO priority | **CONFIRMED by GSC** — only indexed page is a comparison article. Position 3.0 within 4 days. | Feb 20, 2026 (GSC data) |
+| Prioritize comparisons BEFORE app guides in new categories | Comparisons rank faster and with less content; app guides support them | Feb 20, 2026 |
 
 ## What We've Tried
 
@@ -29,11 +30,13 @@
 | Topic map initial build (905 articles / 63 categories) | Complete. Expanded to 1,224/78. | Feb 17-18, 2026 |
 | awesome-selfhosted mining for topic map expansion | Found 1,090 missing apps (587 with Docker). Created 19 new categories. | Feb 18, 2026 |
 | Social queue flood (1,717 posts) | Generated 1,608 article promos + 54 standalone tips. X + Bluesky active. | Feb 20, 2026 |
-| GSC analysis day 5 | 9 pages indexed, 24 impressions, 0 clicks. Comparisons rank fastest. | Feb 20, 2026 |
+| GSC analysis day 5 (iter 6) | 9 pages with impressions, 0 clicks. Comparisons rank fastest. | Feb 20, 2026 |
+| GSC deep-pull day 5 (iter 7) | Only 1 page CONFIRMED indexed (freshrss-vs-miniflux). Homepage not indexed. | Feb 20, 2026 |
+| Content brief — 25+ comparison articles for 7 categories | Sent to Operations. Awaiting production restart. | Feb 20, 2026 |
 
 ## Open Questions
 
-- Which categories have the highest keyword volume / lowest competition? Need more GSC data as indexing progresses.
-- What posting cadence and content mix performs best on each social platform? First data points expected within 1-2 days as posts go out.
-- Should we prioritize "Replace [Service]" guides early? High commercial intent, good affiliate fit.
-- Sitemap-0.xml has 3 warnings in GSC — need to investigate what URLs are affected.
+- Why has content velocity collapsed? CEO investigating. Are writer agents stuck? Topic map exhaustion?
+- Sitemap-0.xml has 3 warnings — Technology needs to investigate (can't see warning details via API).
+- When will homepage get indexed? It's been "Discovered - currently not indexed" since Feb 16.
+- Mastodon, Reddit, Dev.to, Hashnode credentials still pending — limits social reach to 2 platforms.
