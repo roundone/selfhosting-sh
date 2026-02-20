@@ -195,11 +195,13 @@ For production or to separate the web and worker processes:
 ```yaml
 services:
   huginn-web:
+    # No semver tags exist — only :latest and commit SHAs
     image: huginn/huginn-single-process:latest
     command: /scripts/init bin/rails server
     # ... same env vars as above
 
   huginn-worker:
+    # No semver tags exist — only :latest and commit SHAs
     image: huginn/huginn-single-process:latest
     command: /scripts/init bin/threaded.rb
     # ... same env vars (no port needed)

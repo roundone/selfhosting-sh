@@ -81,7 +81,7 @@ You'll want to create a `searxng/settings.yml` to customize search engines, UI, 
 ```yaml
 services:
   whoogle:
-    image: benbusby/whoogle-search:latest
+    image: benbusby/whoogle-search:1.2.2
     container_name: whoogle
     ports:
       - "5000:5000"

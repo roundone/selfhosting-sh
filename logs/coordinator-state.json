@@ -11,7 +11,7 @@
       "nextAllowedRun": null
     },
     "marketing": {
-      "lastRun": "2026-02-20T06:56:13.392Z",
+      "lastRun": "2026-02-20T10:39:51.015Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -69,5 +69,5 @@
   "lastReleasesCheck": "2026-02-20T10:18:10.880Z",
   "lastArchiveCleanup": "2026-02-20T10:18:10.885Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T10:38:10.974Z"
+  "lastSocialPosterRun": "2026-02-20T10:43:11.021Z"
 }

@@ -1,14 +1,14 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 10:25 UTC
+## Last Updated: 2026-02-20 10:40 UTC
 
 ## Content
-- **Total articles on disk: 759** (197 apps + 260 compare + 105 foundations + 110 hardware + 54 replace + 23 best + 7 troubleshooting)
+- **Total articles on disk: 773** (207 apps + 268 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
 - In progress: **ALL WRITERS PAUSED** (Founder directive 2026-02-20). No writers running. Resume Feb 22.
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
-- **Writer pipeline PAUSED** — Founder directive 2026-02-20: ALL writers paused until Feb 22. Focus: Technology, Marketing, BI, IR, Operations coordination. All wake-on.conf set to 48h.
-- Velocity: +108 articles today (container-orch/automation writer produced 24, hardware writer produced ~19 before pausing).
-- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 759 published. Writers paused until Feb 22 per founder directive.
-- Topic map: 1,224 planned across 78 categories, ~759 published = ~62% of topic map
+- **Writer pipeline PAUSED** — Founder directive 2026-02-20: ALL writers paused until Feb 22. Focus: Technology, Marketing, BI, IR, Operations coordination. All wake-on.conf set to 48h. Note: homeauto-notes-writer started via timing race at 10:18 (before coordinator detected 48h conf change at 10:23) — will finish this iteration then pause.
+- Velocity: +122 articles today (container-orch/automation +24, hardware +19, homeauto-notes-writer +14 via timing race before pause took effect).
+- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 773 published. Writers paused until Feb 22 per founder directive.
+- Topic map: 1,224 planned across 78 categories, ~773 published = ~63% of topic map
 - Categories with content: 22+ / 78 (AI/ML, Search Engines, Automation & Workflows COMPLETE; Container Orchestration 13/16)
 
 ## Category Completion Status
@@ -30,12 +30,12 @@
 | **NEW: Search Engines** | 18 | 18 | 100% | **COMPLETE** |
 | **NEW: Social Networks** | ~3 | 24 | ~13% | Writer queued |
 | **NEW: Task Management** | ~2 | 16 | ~13% | Writer queued |
-| **NEW: Video Surveillance** | ~2 | 14 | ~14% | Writer queued |
-| **NEW: Music & Audio** | 0 | 22 | 0% | Writer queued |
+| **NEW: Video Surveillance** | ~5 | 14 | ~36% | In progress (3 app guides added) |
+| **NEW: Music & Audio** | ~2 | 22 | ~9% | In progress (2 app guides added) |
 | **NEW: Container Orchestration** | 13 | 16 | 81% | Nearly complete (writer done, 3 articles remaining) |
 | **NEW: Automation & Workflows** | 15 | 15 | 100% | **COMPLETE** |
 
-## Writer Assignments (updated 2026-02-20 10:25 UTC — ALL PAUSED per founder directive)
+## Writer Assignments (updated 2026-02-20 10:40 UTC — ALL PAUSED per founder directive)
 | Writer | Categories | Status |
 |--------|-----------|--------|
 | proxy-docker-writer | Newsletters & Mailing Lists + File Sharing & Transfer | **PAUSED** (until Feb 22) |
@@ -43,7 +43,7 @@
 | vpn-filesync-writer | VPN & Remote Access + File Sync & Storage | **PAUSED** (until Feb 22) |
 | foundations-writer | Container Orchestration + Automation & Workflows | **COMPLETE** (24 articles). PAUSED until Feb 22. |
 | hardware-writer | Hardware (expanding) | **PAUSED** (until Feb 22, finished current iteration) |
-| homeauto-notes-writer | Video Surveillance, Music & Audio | **PAUSED** (until Feb 22) |
+| homeauto-notes-writer | Video Surveillance, Music & Audio | **Running** (timing race — produced 5 articles before pause detected; will pause after iteration) |
 | password-adblock-writer | Social Networks & Forums + Task Management | **PAUSED** (until Feb 22) |
 | photo-media-writer | Photo & Video Mgmt + Media Servers | **PAUSED** (until Feb 22) |
 
@@ -77,7 +77,7 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **1,918 items** (draining slowly — 2 platforms active)
+- Queue: **~1,942 items** (draining slowly — 2 platforms active; Marketing adding new posts)
 - **First follower on Bluesky!** (1 follower as of 06:18 UTC)
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item (fixed 09:10 UTC)
 - Platform status:
@@ -106,7 +106,7 @@
   - selfhosting-coordinator.service: ACTIVE (v2.0, 13 agents discovered + IR pending next restart)
   - selfhosting-proxy.service: ACTIVE
   - selfhosting-watchdog.service: ACTIVE
-  - 2 agents active (CEO, operations). Writers PAUSED until Feb 22.
+  - 4 agents active (CEO, operations, marketing, homeauto-notes-writer). BI queued (concurrency 4/4). Writers PAUSED until Feb 22 (homeauto-notes-writer finishing final iteration).
   - Memory: ~6.5GB available / 7.7GB total — healthy
   - Load: minimal
 - Rate-limiting proxy: ACTIVE at localhost:3128
@@ -124,7 +124,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 10:10 | 0 | Running now |
+| CEO | 2026-02-20 10:35 | 0 | Running now |
 | Operations | 2026-02-20 09:47 | 1 | Running (triggered by writer-complete event) |
 | Technology | 2026-02-20 10:08 | 0 | Completed (deploy pipeline fix — systemd timer) |
 | Marketing | 2026-02-20 06:56 | 0 | Idle (8h fallback) |
@@ -135,7 +135,7 @@
 | vpn-filesync-writer | 2026-02-20 06:21 | 0 | **PAUSED** (until Feb 22) |
 | foundations-writer | 2026-02-20 09:47 | 2 | **PAUSED** (COMPLETE — 24 articles. Paused until Feb 22) |
 | hardware-writer | 2026-02-20 ~10:15 | 3 | **PAUSED** (finished iteration, paused until Feb 22) |
-| homeauto-notes-writer | 2026-02-20 02:13 | 2 | **PAUSED** (until Feb 22) |
+| homeauto-notes-writer | 2026-02-20 10:18 | 0 | **Running** (timing race — started before pause detected; will pause after this iteration) |
 | password-adblock-writer | 2026-02-20 02:13 | 2 | **PAUSED** (until Feb 22) |
 | photo-media-writer | 2026-02-20 07:58 | 0 | **PAUSED** (until Feb 22) |
 

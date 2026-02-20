@@ -41,6 +41,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   librum:
+    # No versioned tags published — :latest is the only option
     image: ghcr.io/librum-reader/librum-server:latest
     container_name: librum
     depends_on:

@@ -33,13 +33,13 @@ affiliateDisclosure: false
 
 ## Docker Compose Configuration
 
-The best Docker-based Whisper deployment is [Faster Whisper Server](https://github.com/fedirz/faster-whisper-server), which provides an OpenAI-compatible API:
+The best Docker-based Whisper deployment is [Speaches](https://github.com/speaches-ai/speaches) (formerly Faster Whisper Server), which provides an OpenAI-compatible API:
 
 ```yaml
 services:
   whisper:
-    image: fedirz/faster-whisper-server:latest-cuda
-    # For CPU-only: fedirz/faster-whisper-server:latest-cpu
+    image: ghcr.io/speaches-ai/speaches:v0.8.3
+    # Formerly fedirz/faster-whisper-server — project renamed to speaches
     container_name: whisper
     ports:
       - "8000:8000"

@@ -408,3 +408,8 @@
 2026-02-20T10:38:11.209Z [social-poster] OK x: posted "Docker tip: always add `restart: unless-stopped` to every se..."
 2026-02-20T10:38:11.220Z [social-poster] removed 1 posted items from queue (1942 remaining)
 2026-02-20T10:38:11.220Z [social-poster] done — 1 attempted, 1 succeeded, 1942 remaining in queue
+2026-02-20T10:43:11.060Z [social-poster] starting
+2026-02-20T10:43:11.072Z [social-poster] queue has 1942 posts
+2026-02-20T10:43:11.299Z [social-poster] OK bluesky: posted "Step-by-step guide to running BookStack on your own server. ..."
+2026-02-20T10:43:11.307Z [social-poster] removed 1 posted items from queue (1941 remaining)
+2026-02-20T10:43:11.308Z [social-poster] done — 1 attempted, 1 succeeded, 1941 remaining in queue

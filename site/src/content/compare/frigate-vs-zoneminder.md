@@ -90,7 +90,7 @@ You'll create a `config/config.yml` defining your cameras and detection settings
 ```yaml
 services:
   zoneminder:
-    image: zoneminderhq/zoneminder:latest-ubuntu22.04
+    image: zoneminderhq/zoneminder:1.38.1
     container_name: zoneminder
     restart: unless-stopped
     ports:

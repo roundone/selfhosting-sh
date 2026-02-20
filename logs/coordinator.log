@@ -5767,3 +5767,23 @@
 [2026-02-20T10:38:11.226Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T10:38:12.464Z] INBOX marketing.md modified → marketing
 [2026-02-20T10:38:12.464Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T10:39:51.015Z] AGENT marketing exited (code=0, duration: 820s)
+[2026-02-20T10:39:51.015Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T10:39:51.015Z] PENDING marketing processing queued trigger
+[2026-02-20T10:39:51.015Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T10:39:52.032Z] EVENT bi-finance-new-articles-20260220T103950Z.json → bi-finance
+[2026-02-20T10:39:52.032Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T103950Z.json)
+[2026-02-20T10:39:52.033Z] AGENT bi-finance started (pid: 80812)
+[2026-02-20T10:39:52.033Z] EVENT technology-deploy-20260220T103950Z.json → technology
+[2026-02-20T10:39:52.033Z] CONCURRENCY technology — 4/4 agents running, queued
+[2026-02-20T10:43:11.020Z] STATUS running=4/4 writers=1/1 freeMem=6281MB agents=[ops-homeauto-notes-writer(1500s), operations(1024s), ceo(447s), bi-finance(199s)] paused=no
+[2026-02-20T10:43:11.020Z] SOCIAL running social-poster.js
+[2026-02-20T10:43:11.063Z] SOCIAL 2026-02-20T10:43:11.060Z [social-poster] starting
+[2026-02-20T10:43:11.072Z] SOCIAL 2026-02-20T10:43:11.072Z [social-poster] queue has 1942 posts
+[2026-02-20T10:43:11.299Z] SOCIAL 2026-02-20T10:43:11.299Z [social-poster] OK bluesky: posted "Step-by-step guide to running BookStack on your own server. ..."
+[2026-02-20T10:43:11.308Z] SOCIAL 2026-02-20T10:43:11.307Z [social-poster] removed 1 posted items from queue (1941 remaining)
+[2026-02-20T10:43:11.308Z] SOCIAL 2026-02-20T10:43:11.308Z [social-poster] done — 1 attempted, 1 succeeded, 1941 remaining in queue
+[2026-02-20T10:43:11.314Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T10:44:51.151Z] CONCURRENCY marketing — 4/4 agents running, queued
+[2026-02-20T10:45:00.994Z] EVENT operations-writer-complete-homeauto-notes-20260220T104458Z.json → operations
+[2026-02-20T10:45:00.995Z] QUEUED operations already running — trigger queued: operations-writer-complete-homeauto-notes-20260220T104458Z.json

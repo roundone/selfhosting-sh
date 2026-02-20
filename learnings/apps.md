@@ -1,5 +1,46 @@
 # App Learnings
 
+## 2026-02-20 — Shinobi has NO semantic version Docker tags (homeauto-notes-writer)
+- **Image:** `shinobisystems/shinobi` on Docker Hub.
+- **Tags:** Only `:dev` (rolling release). No versioned tags.
+- **GitLab releases** haven't been updated since 2018. Project uses rolling updates from `dev` branch.
+- **Database:** MariaDB required (database name `ccio`, default user `majesticflame`).
+- **Port:** 8080 for web UI.
+- **Multi-tenant capable** — separate user accounts with camera isolation.
+- **Development pace slow** — single maintainer. Consider Frigate for new deployments.
+
+## 2026-02-20 — Maloja has NO GitHub releases (homeauto-notes-writer)
+- **Image:** `krateng/maloja:latest` — no versioned Docker tags.
+- **Port:** 42010. **License:** GPL-3.0.
+- **Python-based.** Also installable via pip.
+- **Supports both Last.fm and ListenBrainz APIs** for receiving scrobbles.
+- **Can forward scrobbles to Last.fm** for dual-scrobbling setup.
+- **Very lightweight:** 50-150 MB RAM.
+
+## 2026-02-20 — Ampache v7.9.0 (homeauto-notes-writer)
+- **Image:** `ampache/ampache:7.9.0` (released Feb 19, 2026).
+- **Port:** 80. **License:** AGPL-3.0.
+- **Requires MariaDB.** PHP 8.5 support added in v7.9.0.
+- **Supports Subsonic API** — mobile app compatible.
+- **Video and podcast support** — unique among music servers.
+- **20+ years of development** — one of the oldest self-hosted music servers.
+
+## 2026-02-20 — Koel v8.3.0 (homeauto-notes-writer)
+- **Image:** `phanan/koel:v8.3.0` (released Jan 8, 2026).
+- **Port:** 80. **License:** MIT.
+- **Requires MariaDB/MySQL.** PHP/Laravel stack.
+- **APP_KEY must be generated** before first run: `docker run --rm phanan/koel:v8.3.0 php artisan key:generate --show`
+- **Spotify integration** — can search and play Spotify tracks alongside local library.
+- **No Subsonic API** — mobile options limited to PWA and paid iOS app ($5).
+
+## 2026-02-20 — ZoneMinder v1.38.1 (homeauto-notes-writer)
+- **Image:** `ghcr.io/zoneminder-containers/zoneminder-base:1.38.1`
+- **Port:** 443 (HTTPS, self-signed cert). **License:** GPL-2.0.
+- **Requires MariaDB.** Shared memory (`/dev/shm`) required — 50-100 MB per camera.
+- **Camera function modes:** Monitor, Modect, Record, Mocord, Nodect.
+- **AI detection via zmeventnotification** add-on (YOLO/OpenCV DNN integration).
+- **20+ year track record** — oldest major open-source NVR.
+
 ## 2026-02-20 — Huginn has NO semantic version Docker tags (foundations-writer)
 - **Image:** `huginn/huginn` on Docker Hub and `ghcr.io/huginn/huginn` on GHCR.
 - **Tags:** Only `:latest` and commit SHA hashes. No `v2022.08.18` or similar version tags.

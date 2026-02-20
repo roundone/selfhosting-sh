@@ -62,7 +62,7 @@ This isn't a fair fight on search quality — Google has decades of data and the
 ```yaml
 services:
   searxng:
-    image: searxng/searxng:latest
+    image: searxng/searxng:2026.2.11-970f2b843
     container_name: searxng
     ports:
       - "8080:8080"

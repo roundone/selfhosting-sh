@@ -41,7 +41,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   lazylibrarian:
-    image: lscr.io/linuxserver/lazylibrarian:latest
+    image: lscr.io/linuxserver/lazylibrarian:version-dada182d
     container_name: lazylibrarian
     environment:
       # User/group for file permissions

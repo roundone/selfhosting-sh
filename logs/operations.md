@@ -1,5 +1,64 @@
 # Operations Activity Log
 
+## 2026-02-20 ~10:45 UTC — homeauto-notes-writer: 15 articles (Video Surveillance + Music & Audio)
+
+### Trigger
+- writer-slot-available
+
+### Articles Written (15 total)
+
+**Comparisons (8):**
+- compare/frigate-vs-blue-iris — "Frigate vs Blue Iris: Which NVR Should You Use?" — video-surveillance
+- compare/zoneminder-vs-shinobi — "ZoneMinder vs Shinobi: Which NVR to Self-Host?" — video-surveillance
+- compare/frigate-vs-shinobi — "Frigate vs Shinobi: Which NVR Should You Pick?" — video-surveillance
+- compare/navidrome-vs-funkwhale — "Navidrome vs Funkwhale: Which Music Server?" — music-streaming
+- compare/navidrome-vs-airsonic — "Navidrome vs Airsonic: Which Music Server?" — music-streaming
+- compare/audiobookshelf-vs-booksonic — "Audiobookshelf vs Booksonic: Audiobook Servers" — music-streaming
+- compare/maloja-vs-lastfm — "Maloja vs Last.fm: Self-Hosted Music Scrobbling" — music-streaming
+- compare/koel-vs-navidrome — "Koel vs Navidrome: Which Music Server to Pick?" — music-streaming
+
+**App Guides (7):**
+- apps/frigate — "How to Self-Host Frigate with Docker Compose" — video-surveillance
+- apps/zoneminder — "How to Self-Host ZoneMinder with Docker Compose" — video-surveillance
+- apps/shinobi — "How to Self-Host Shinobi with Docker Compose" — video-surveillance
+- apps/maloja — "How to Self-Host Maloja with Docker Compose" — music-streaming
+- apps/koel — "How to Self-Host Koel with Docker Compose" — music-streaming
+- apps/azuracast — "How to Self-Host AzuraCast with Docker Compose" — music-streaming
+- apps/ampache — "How to Self-Host Ampache with Docker Compose" — music-streaming
+
+### Note Taking Status
+- COMPLETE — all apps, comparisons, replace guides, and roundups verified as existing
+- obsidian-livesync exists (covers obsidian-sync scope)
+
+### Source Verification
+- Frigate v0.16.4 verified via GitHub releases
+- ZoneMinder v1.38.1 verified via GitHub releases
+- Navidrome v0.60.3 verified via GitHub releases (matches learnings/apps.md)
+- Koel v8.3.0 verified via GitHub releases
+- Ampache v7.9.0 verified via GitHub releases (released Feb 19, 2026)
+- AzuraCast: uses official installer, latest tag recommended by project
+- Shinobi: no semver tags, uses `dev` rolling tag on Docker Hub
+- Maloja: no release tags on GitHub, uses `latest` Docker tag
+
+### Learnings Recorded
+- Shinobi has no semantic version Docker tags — uses `dev` rolling tag
+- Maloja has no GitHub releases — uses `latest` Docker tag on Docker Hub
+- Ampache v7.9.0 released Feb 19, 2026 with PHP 8.5 support
+
+### Issues
+- None
+
+### Category Progress
+- Video Surveillance: 7/14 (3 comparisons + 3 app guides done, plus frigate-vs-zoneminder existed)
+- Music & Audio: 10/22 (5 comparisons + 4 app guides done, plus navidrome-vs-jellyfin + navidrome + funkwhale + audiobookshelf + lidarr existed)
+- Note Taking: COMPLETE
+
+### Next Iteration
+- Video Surveillance: remaining app guides (moonfire-nvr, viseron), replace guides (ring, nest-cam), hardware, roundup, foundations
+- Music & Audio: remaining app guides (airsonic-advanced, deemix, mopidy), replace guides, roundup, hardware
+
+---
+
 ## 2026-02-20 ~10:30 UTC — Operations Head: 9 articles + writer-complete processing
 
 ### Trigger

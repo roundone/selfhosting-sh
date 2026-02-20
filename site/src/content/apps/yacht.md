@@ -43,8 +43,8 @@ mkdir -p ~/yacht && cd ~/yacht
 ```yaml
 services:
   yacht:
-    # No stable versioned tags exist — project abandoned Jan 2023
-    image: selfhostedpro/yacht:latest
+    # Last tagged build: Jan 2023 — project in major rewrite
+    image: selfhostedpro/yacht:v0.0.7-alpha-2023-01-12--05
     container_name: yacht
     restart: unless-stopped
     ports:

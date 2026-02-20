@@ -44,7 +44,7 @@ mkdir -p ~/photoprism && cd ~/photoprism
 ```yaml
 services:
   photoprism:
-    image: photoprism/photoprism:latest
+    image: photoprism/photoprism:251130-b3068414c
     container_name: photoprism
     restart: unless-stopped
     stop_grace_period: 15s

@@ -208,7 +208,7 @@ For in-browser code completion, add the LSP service:
 
 ```yaml
 lsp:
-  image: ghcr.io/windmill-labs/windmill-extra:latest
+  image: ghcr.io/windmill-labs/windmill-extra:1.639.0
   container_name: windmill-lsp
   restart: unless-stopped
   volumes:

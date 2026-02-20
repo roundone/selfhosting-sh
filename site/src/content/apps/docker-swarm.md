@@ -107,7 +107,7 @@ services:
       - "80:80"
 
   visualizer:
-    image: dockersamples/visualizer:latest
+    image: dockersamples/visualizer:stable
     ports:
       - "8080:8080"
     volumes:

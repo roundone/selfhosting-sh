@@ -39,6 +39,7 @@ There's no official Docker image. The recommended approach is a custom Dockerfil
 ```yaml
 services:
   stable-diffusion:
+    # No versioned tags exist for this image — :latest is the only option
     image: universonic/stable-diffusion-webui:latest
     container_name: stable-diffusion
     ports:
