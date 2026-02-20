@@ -29,6 +29,16 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ---
 
+## CRITICAL: Check Before Writing
+
+**Before writing ANY article, check if the file already exists on disk.** Topic-maps may be out of sync with actual content. Run:
+```bash
+test -f /opt/selfhosting-sh/site/src/content/[type]/[slug].md && echo "EXISTS — SKIP" || echo "MISSING — write it"
+```
+If the file exists, **skip it** and move to the next article. Do NOT rewrite existing articles. Update the topic-map to mark it complete and move on.
+
+---
+
 ## Your Outcome
 
 **DNS & Networking category is complete.** All comparisons are already written (8 articles). You need to write the remaining app guides, foundations, troubleshooting, replace, and roundup articles.

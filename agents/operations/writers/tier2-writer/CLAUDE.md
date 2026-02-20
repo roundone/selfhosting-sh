@@ -28,9 +28,28 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ---
 
+## CRITICAL: Check Before Writing
+
+**Before writing ANY article, check if the file already exists on disk.** Many articles in your priority list were written by previous writers but the topic-map was not updated. Run:
+```bash
+test -f /opt/selfhosting-sh/site/src/content/[type]/[slug].md && echo "EXISTS — SKIP" || echo "MISSING — write it"
+```
+If the file exists, **skip it** and move to the next article. Do NOT rewrite existing articles. Update the topic-map to mark it complete and move on.
+
+**Known existing articles in your categories (as of Feb 20):**
+- Download Mgmt: sonarr, radarr, prowlarr, transmission, sabnzbd, lidarr, jackett, nzbget, bazarr, readarr, flaresolverr, recyclarr, jellyseerr, tautulli, overseerr, qbittorrent (16 apps), plus comparisons: qbittorrent-vs-transmission, jackett-vs-prowlarr, sonarr-vs-radarr, prowlarr-vs-jackett, overseerr-vs-jellyseerr, best/download-management
+- CMS: ghost, wordpress, hugo, strapi, directus (5 apps)
+- Monitoring: uptime-kuma, grafana, prometheus, netdata, beszel, glances (6 apps)
+- Backup: duplicati, restic, borgbackup, borgmatic, kopia (5 apps)
+- Analytics: plausible, umami, matomo (3 apps)
+- Email: mailu, mailcow, stalwart, docker-mailserver (4 apps)
+- Bookmarks: linkwarden, wallabag, hoarder (3 apps)
+
+---
+
 ## Your Outcome
 
-**Write the highest-priority app guides for ALL Tier 2 categories.** Start with the most popular app in each category, then comparisons and replace guides.
+**Write the highest-priority REMAINING articles for ALL Tier 2 categories.** Check what exists first, skip it, then write what's missing — comparisons, replace guides, troubleshooting, and remaining app guides.
 
 ### Priority Order — Write the #1 app guide for each category first:
 

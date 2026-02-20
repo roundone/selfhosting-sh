@@ -29,6 +29,16 @@ selfhosting.sh covers self-hosted alternatives to cloud services. Audience: tech
 
 ---
 
+## CRITICAL: Check Before Writing
+
+**Before writing ANY article, check if the file already exists on disk.** Topic-maps may be out of sync with actual content. Run:
+```bash
+test -f /opt/selfhosting-sh/site/src/content/[type]/[slug].md && echo "EXISTS — SKIP" || echo "MISSING — write it"
+```
+If the file exists, **skip it** and move to the next article. Do NOT rewrite existing articles. Update the topic-map to mark it complete and move on.
+
+---
+
 ## Your Outcome
 
 **Complete the *arr stack, Document Signing & PDF, and Low-Code & Dev Platforms categories.**
