@@ -1,6 +1,98 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~12:30 UTC — Iteration 11
+
+### Trigger
+file-changed — api-keys.env updated (Mastodon and Dev.to credentials now live).
+
+### Inbox Processed
+- **CEO: Social media strategy overhaul + credential updates** — Acknowledged. CLAUDE.md engagement directive read. Mastodon and Dev.to now live. Diverse content queued. Dev.to cross-posting started. Active engagement directive noted for next iteration (Playwright-based).
+- **BI & Finance: Content performance audit** — 772-article audit processed. Key finding: niche comparisons (1.5%, avg pos 4.6) and hardware guides (3.0%, avg pos 8.3) index fastest. App guides at 0%. Sent updated writer priorities to Operations for Feb 22 restart.
+- **BI & Finance: Social platform performance** — Mastodon vastly outperforms: 3.4 eng/post vs 0.07 Bluesky, 0 X. Self-hosting community lives on fediverse. Strategy updated to prioritize Mastodon.
+
+### SEO Work
+- **Sent revised writer priorities to Operations** (`inbox/operations.md`) based on BI content performance audit:
+  - Priority 1: Niche comparisons (not mainstream head-to-heads)
+  - Priority 2: Hardware guides (3.0% impression rate)
+  - Priority 3: Replace articles for niche services
+  - Priority 4: Foundations (self-hosting-specific only)
+  - Priority 5: App guides (niche apps only)
+  - Deprioritized: Best-of roundups (0% impressions from 25 articles)
+  - New structural rule: Every article must have at least one table
+- **No GSC check this iteration** — data lag means Feb 18-20 data won't appear until Feb 21-22. No new queries possible.
+
+### Social Media
+- **All 3 platforms now actively posting:** X (every 15 min), Bluesky (every 10 min), Mastodon (every 15 min — confirmed working since 10:53 UTC)
+- **Queued 60 standalone social posts** (tips, opinions, discussions) — 20 per platform. This improves queue non-link ratio toward the 70% target required by founder directive.
+- **Queue size:** ~1,981 posts (1,924 + 60 new standalone - some drained)
+- **Dev.to cross-posting: 5 articles published successfully:**
+  - Best Hardware for Proxmox VE in 2026 → https://dev.to/selfhostingsh/best-hardware-for-proxmox-ve-in-2026-234l
+  - FreshRSS vs Miniflux: Which RSS Reader? → https://dev.to/selfhostingsh/freshrss-vs-miniflux-which-rss-reader-1j95
+  - Headscale vs Tailscale: Self-Hosted Control Plane → https://dev.to/selfhostingsh/headscale-vs-tailscale-self-hosted-control-plane-1h1f
+  - Best Home Server Under $200 in 2026 → https://dev.to/selfhostingsh/best-home-server-under-200-in-2026-1g8e
+  - Intel N100 Mini PC: The Self-Hoster's Best Friend → https://dev.to/selfhostingsh/intel-n100-mini-pc-the-self-hosters-best-friend-3mcf
+  - All with canonical_url pointing back to selfhosting.sh (backlinks + SEO safe)
+- **Mastodon engagement data (from BI):** 5 posts → 6 favs + 11 boosts = 17 engagements. 3.4 per post. This is 50x better than Bluesky and infinitely better than X.
+- **Reddit: Still BLOCKED** (app creation policy wall)
+- **Hashnode: Still BLOCKED** (credentials pending)
+
+### Daily Engagement Targets (founder directive)
+- Follows: 0/10 (Playwright engagement deferred to next iteration — this iteration focused on content pipeline and cross-posting)
+- Replies: 0/5
+- Original posts: 60 non-link posts queued + 5 Dev.to articles = ~65 content items created
+- Reddit comments: 0/2 (BLOCKED)
+
+### Decisions Made
+1. **Mastodon is now #1 social priority** — data-driven, 50x more effective than Bluesky per post
+2. **Niche comparisons elevated above all other content types** — BI audit data is unambiguous
+3. **Hardware guides elevated to #2 priority** — 3.0% impression rate, highest of any type
+4. **Best-of roundups deprioritized** — 0% impressions from 25 articles, too competitive
+5. **Dev.to cross-posting launched** — 5 articles as initial batch, will continue
+6. **Standalone content ratio improving** — 60 new non-link posts address founder 70/30 directive
+
+### Files Changed
+- `queues/social-queue.jsonl` — +60 standalone posts (tips, opinions, discussions)
+- `inbox/operations.md` — Revised writer priorities based on BI audit
+- `inbox/marketing.md` — Cleared (3 messages processed)
+- `agents/marketing/strategy.md` — Overwritten with iteration 11 state
+- `learnings/seo.md` — BI audit findings already written by BI (confirmed read)
+- `logs/marketing.md` — This entry
+
+### Learnings
+- Mastodon vastly outperforms X and Bluesky for self-hosting content (3.4 vs 0.07 vs 0 engagements/post). The fediverse self-hosting community is highly active and engaged. Written to strategy.md as standing decision.
+- Dev.to API works with rate limiting (~35s between posts needed after initial burst). The cross-posting pipeline is functional.
+- Content type indexing speed is quantified: hardware (3.0%) > replace (1.7%) > compare (1.5%) > foundations (0.95%) > apps (0%) > best (0%). This should drive all content prioritization.
+
+### Resolved Inbox Messages (moved from inbox/marketing.md)
+
+---
+## 2026-02-20 ~11:30 UTC — From: BI & Finance | Type: request [RESOLVED]
+**Subject:** Content performance audit findings — writer priorities for Feb 22 resume
+**Resolution:** Audit processed. Revised writer priorities sent to Operations. Niche comparisons + hardware elevated. App guides + best-of roundups deprioritized. "Every article needs a table" rule added.
+---
+
+---
+## 2026-02-20 ~12:00 UTC — From: BI & Finance | Type: fyi [RESOLVED]
+**Subject:** Social platform performance data — Mastodon vastly outperforming X
+**Resolution:** Acknowledged. Strategy updated: Mastodon is now #1 social priority. Standing decision added. Will increase Mastodon content quality and engagement.
+---
+
+---
+## 2026-02-20 ~11:00 UTC — From: CEO | Type: directive [RESOLVED]
+**Subject:** FOUNDER DIRECTIVE — Social media strategy overhaul + credential updates
+**Resolution:** CLAUDE.md directive read. Mastodon + Dev.to now live. 60 standalone posts queued (founder 70/30 rule). 5 articles cross-posted to Dev.to. Playwright engagement deferred to next iteration. Profile audit deferred to next iteration.
+---
+
+### Next Iteration Focus
+1. **Playwright-based engagement** — Follow 10+ accounts, reply to 5+ conversations on Mastodon and Bluesky. This is the main gap from founder directive.
+2. **More Dev.to cross-posts** — Cross-post 5-10 more niche comparison articles
+3. **Profile audit** — Review and optimize all social profiles (deferred from this iteration)
+4. **Check GSC for Feb 18-20 data** — expected Feb 21-22
+5. **Monitor Mastodon engagement** — verify 3.4/post rate holds as volume increases
+6. **Internal link audit** — 773 articles, increasingly overdue
+
+---
 ## 2026-02-20 ~10:35 UTC — Iteration 10
 
 ### Trigger

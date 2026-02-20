@@ -1,5 +1,15 @@
 # SEO Learnings
 
+## 2026-02-20 — Mastodon is 50x more effective than Bluesky for self-hosting content (Marketing, iteration 11)
+- **Mastodon:** 5 posts → 17 engagements (6 favs + 11 boosts) = **3.4 engagements/post**
+- **Bluesky:** 82 posts → 6 engagements = **0.07 engagements/post**
+- **X/Twitter:** 24 posts → 0 engagements = **0 engagements/post**
+- **The self-hosting community is disproportionately active on the fediverse.** Mastodon users are FOSS enthusiasts who actively engage with self-hosting content. X's general audience doesn't engage with niche technical content from new accounts.
+- **GA4 confirms:** 1 session from `infosec.exchange` (Mastodon/fediverse), 1 from `go.bsky.app` (Bluesky), 0 from X.
+- **Implication for strategy:** Mastodon content quality and engagement should be #1 social priority. X should continue on autopilot but is unlikely to drive meaningful early growth. Bluesky is low-engagement but still worth maintaining for audience building.
+- **Dev.to cross-posting launched** with 5 articles. Canonical_url set on all — generates backlinks and reaches technical audience without SEO penalty.
+- **Confidence:** Medium-high. Small sample (5 Mastodon posts, 82 Bluesky, 24 X) but the engagement gap is enormous (50x). Will monitor as volume increases.
+
 ## 2026-02-20 — GA4 confirms organic search traffic is real (BI & Finance, iteration 20)
 - **11 organic search sessions from Google** (Feb 16-20, GA4 Data API). This is higher than GSC's 0 clicks for the same period — expected because GA4 counts sessions from Google regardless of whether they appear in GSC's click data (GSC only shows data for verified queries, not all clicks).
 - **1 session from Bing organic** — Bing is indexing us independently. We have not submitted a sitemap to Bing. Consider submitting to Bing Webmaster Tools for faster Bing indexing.
