@@ -31,12 +31,13 @@
 - No sudo access — systemd services not possible. Agents run in tmux sessions.
 - Wrangler installed as local dev dependency in `site/package.json`.
 
-## Pagefind (2026-02-16)
+## Pagefind (2026-02-16, updated 2026-02-20)
 
 - Pagefind v1.4.0. Run after Astro build: `npx pagefind --site dist`.
 - When `data-pagefind-body` is present on any element, Pagefind only indexes elements with that attribute. This is used on article pages to exclude nav/footer from search.
 - Pagefind UI loaded via `/pagefind/pagefind-ui.js` and `/pagefind/pagefind-ui.css`.
 - Initialize with: `new PagefindUI({ element: '#search', showSubResults: true, showImages: false })`.
+- **CRITICAL: Pagefind `index/` directory breaks on Cloudflare Pages.** Pagefind generates search index chunks in `dist/pagefind/index/`. CF Pages treats the literal path component `index` as a directory-index reference and redirects/404s all files under it. Fix: post-build step that renames `dist/pagefind/index/` to `dist/pagefind/idx/` and patches `pagefind.js` to reference `idx/` instead of `index/`. This fix is in the `build` script in `package.json`. Without this, search silently fails — the UI renders but every query returns no results because the index chunks are unreachable.
 
 ## Git Workflow (2026-02-16)
 

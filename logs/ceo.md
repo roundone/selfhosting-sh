@@ -724,3 +724,90 @@ Meanwhile, 59 of 78 categories have ZERO content. Marketing's brief targets 7 of
 3. Monitor memory stability with 7 concurrent claude processes
 4. Check for founder response to board report
 5. Track social poster — queue draining correctly?
+
+---
+## 2026-02-20 05:30 UTC — CEO Operating Loop: manual trigger — Search Fixed, Coordinator Tuned, VPS Upgraded
+
+### Trigger
+Manual from founder at 05:30 UTC. VPS rebooted ~05:14 UTC (18 min uptime at start of iteration).
+
+### Major Discovery: VPS Upgraded to 8GB RAM
+VPS now shows 7.7GB total RAM (was 3.8GB). 6.4GB free. Coordinator v2.0 running (deployed by Technology — its only productive contribution this cycle).
+
+### Assessment
+- **604 articles on disk** — up from 559 at last BI report (+45 articles)
+- **5 new comparison articles in last 30 min** — writers ARE producing after reboot
+- **Coordinator v2.0** running with config: maxTotal=4, maxWriters=2 (too conservative for 8GB)
+- **Technology still non-functional** — last logged work Feb 16 09:28 UTC. 12 unprocessed inbox messages. Three founder directives unstarted.
+- **CEO inbox empty** — no pending escalations
+- **Proxy at 16% usage** — healthy
+- **Social poster working** — 1,816 posts in queue, X and Bluesky posting at rate limits
+- **No founder response** to Feb 20 board report or social credentials request
+
+### Actions Taken
+
+1. **FIXED SITE SEARCH (Founder Directive #1 — DONE)**
+   - Root cause: Cloudflare Pages treats `index/` subdirectory as directory-index reference, returning 308 redirects or 404s for all Pagefind index chunks at `/pagefind/index/*.pf_index`
+   - Fix: Added post-build step to `package.json` that renames `dist/pagefind/index/` to `dist/pagefind/idx/` and patches `pagefind.js` to reference `idx/`
+   - Built, deployed to Cloudflare Pages, verified all Pagefind assets return 200
+   - Search page at /search/ loads correctly
+   - CEO fixed this directly because Technology was non-functional for 5 days
+
+2. **UPDATED COORDINATOR CONFIG for VPS upgrade**
+   - maxTotalConcurrent: 4 → 6
+   - maxWriterConcurrent: 2 → 4
+   - writerFallbackHours: 8 → 1
+   - memoryMinFreeMb: 800 → 1200
+   - Coordinator auto-reloads config file on change — no restart needed
+
+3. **INCREASED BUILD MEMORY** — `auto-deploy.sh` now uses `--max-old-space-size=1024` (was 512). VPS has the headroom.
+
+4. **REWROTE TECHNOLOGY INBOX** — Cleared 12 resolved items. Wrote clean prioritized directive:
+   - Search: RESOLVED by CEO (documented root cause + fix)
+   - Social poster: Already integrated
+   - GSC gap: Already resolved
+   - NEW priority #1: Investigate 3 GSC sitemap warnings
+   - NEW priority #2: Install Playwright MCP (VPS has memory now)
+   - NEW priority #3: Build status dashboard
+
+5. **RESUBMITTED SITEMAP TO GSC** — HTTP 204 success. 604 articles now, Google should discover the new URLs on next crawl.
+
+6. **UPDATED state.md** — Comprehensive refresh with VPS upgrade, coordinator v2.0, search fix, 604 articles, updated agent health.
+
+7. **UPDATED strategy.md** — New standing decisions: CEO directly fixes critical issues when departments stall; Pagefind index/→idx/ rename; maxWriters=4; writerFallback=1h.
+
+8. **WROTE LEARNINGS** — Pagefind/CF Pages `index/` conflict documented in `learnings/toolchain.md`.
+
+9. **ARCHIVED EVENT** — `events/ceo-manual-20260220T053000Z.json` → `events/archive/`
+
+### Health Check
+- VPS: 7.7GB RAM, 6.4GB free, load 0.07 — very healthy
+- Coordinator v2.0: ACTIVE, 13 agents discovered
+- Proxy: ACTIVE, 16% usage
+- Watchdog: ACTIVE
+- Writers: 2 running (proxy-docker, tier2), producing articles
+- Social poster: running every 5 min, queue draining
+- No service-down events
+
+### Key Decisions
+
+1. **CEO directly fixing critical items when departments fail.** Technology was non-functional for 5 days despite 12+ escalation messages. The escalation-only approach failed. New standing decision: CEO takes direct action on critical items after 48h of department inaction.
+
+2. **Coordinator config tuned for 8GB VPS.** 4 concurrent writers + 2 core agents = 6 total processes. At ~300MB each = 1.8GB. With 6.4GB free, this is comfortable. memoryMinFreeMb=1200 provides safety gate.
+
+3. **Writer fallback reduced to 1h.** At 8h fallback, writers only cycle 3 times/day. At 1h, they cycle 24 times/day. Each cycle produces 10-20 articles. 4 writers × 24 cycles × 15 articles = ~1,440 articles/day potential (theoretical max).
+
+4. **No new board report needed.** Today's report was sent at 01:10 UTC, and the major development (search fix) will be reflected in tomorrow's report. The search fix resolves the #1 founder directive, which is significant enough to mention in the next report.
+
+### Board Report Status
+- Last report: 2026-02-20 01:10 UTC (today)
+- Next report: 2026-02-21 (tomorrow)
+- Key update for tomorrow: search FIXED, VPS upgraded acknowledged, coordinator tuned, velocity data after 24h with new config
+
+### Next Iteration Priorities
+1. Verify velocity recovery — how many articles produced in first 24h with new config?
+2. Check if Technology processed its updated inbox
+3. Monitor coordinator config reload — did it pick up the new maxWriters=4?
+4. Track GSC — did Google recrawl the sitemap with 604 articles?
+5. Check for founder response to board report
+6. Prepare tomorrow's board report with search fix and VPS upgrade
