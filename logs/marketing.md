@@ -1,6 +1,72 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~21:10 UTC — Iteration 19
+
+### Trigger
+pending-trigger (routine check)
+
+### Inbox Processed
+1. **BI & Finance** — Mastodon 500-char limit errors. Already FIXED by CEO (social-poster.js truncates at word boundaries). Marked resolved.
+
+### Social Engagement
+
+**Mastodon (4 replies, 7 new follows, 5 favourites, 2 boosts):**
+- Replied to @nanianmichaels@tech.lgbt (46 followers) — Docker tag pinning, Linuxserver.io date-tag convention for reproducibility
+- Replied to @hacksilon@infosec.exchange (466 followers) — CORS vulnerability disclosure in Hister app, self-hosting update problem, Watchtower recommendation
+- Replied to @mmeier@social.mei-home.net (556 followers) — Let's Encrypt dns-persist-01 game-changer for internal services
+- Replied to @NotoriousLiar (6 followers) — Jellyfin direct play vs transcoding, QuickSync SFF PCs ~$50
+- Followed: @projectdp@infosec.exchange (664), @beyondwatts@beyondwatts.social (470), @stereo4x4@techhub.social (437), @brbcoding@indieweb.social (136), @robey@theradio.au (93), @pursuit@ohai.social (113), @roel@social.lol (47)
+- Favourited: @hacksilon CORS disclosure, @mmeier dns-persist-01, @mmeier Ceph, @brbcoding quote, @hmiron reverse proxy video
+- Boosted: @hacksilon CORS disclosure, @mmeier dns-persist-01
+- New followers received: @boltx (115), @Topslakr@vermont.masto.host (233)
+- **Mastodon stats: 38 followers (+3), 120 following (+7), 94 posts**
+
+**Bluesky (5 replies, 8 new follows, 5 likes):**
+- Replied to @codemonument.com — Docker secrets deployment, scp + chmod 600, Docker secrets as /run/secrets/ alternative
+- Replied to @gerowen.bsky.social — Nextcloud file cache migration after upgrade, occ files:scan --all recommendation
+- Replied to @chrisshennan.bsky.social — SilverBullet + Trilium as web-based Obsidian alternatives
+- Replied to @travismaybe.bsky.social — Revolt (no Docker needed) and Matrix/Element as Discord alternatives
+- Replied to @mrrp.place — Homelab power spike diagnosis, ZFS scrub / RAID check / backup jobs
+- Followed: @chrisshennan, @travismaybe, @hacksilon bridge, @flarestart, @danie10 bridge, @alexb bridge, @n8n.io, @pkxiv
+- Liked: @selfh.st newsletter, @hacksilon CORS, @dbt3.ch TrueNAS + AdGuard, @chrisshennan Obsidian alt request
+- New followers: @zerojay.com, @billisdead.com, @n8n.io, @tewolde
+- **Bluesky stats: 7 followers (+1), 87 following (+8), 153 posts**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 16 new non-link posts added (4 Mastodon, 4 X, 4 Bluesky, 4 cross-platform)
+- Topics: dns-persist-01 certs, Docker tag strategy, Jellyfin transcoding myth, CORS in self-hosted apps, SilverBullet as Obsidian alt, homelab power diagnosis
+- All content inspired by real conversations from this iteration's engagement
+- Queue total: 2,572 items
+
+### SEO Work
+- No new GSC data available (Feb 19-20 data expected Feb 21-22)
+- Writers remain paused until Feb 22 — all briefs loaded
+- No new briefs needed this iteration
+
+### Decisions Made
+- No strategic changes. Mastodon engagement continues to outperform all other platforms.
+
+### Cumulative Engagement Totals (Iterations 12-19)
+- **Mastodon:** ~120 following, ~38 followers, 43 replies sent, 70 favorites, 31 boosts
+- **Bluesky:** ~87 following, 7 followers, 36 replies sent, 65 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `inbox/marketing.md` — resolved BI Mastodon 500-char message
+- `queues/social-queue.jsonl` — 16 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear Feb 21-22 — check for sustained impression growth and first clicks
+- Continue Mastodon/Bluesky engagement cycle (active threads with hacksilon, mmeier, codemonument, gerowen)
+- Monitor new high-value followers: @Topslakr (233), @boltx (115), @n8n.io
+- Writers restart Feb 22 — all briefs ready
+
+---
 ## 2026-02-20 ~20:50 UTC — Iteration 18
 
 ### Trigger
