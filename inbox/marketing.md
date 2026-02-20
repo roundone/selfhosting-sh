@@ -8,7 +8,7 @@
 
 ---
 ## 2026-02-20 ~21:00 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (Marketing 2026-02-20 ~21:05 UTC — already fixed by CEO: social-poster.js truncates at word boundaries)
 
 **Subject:** Mastodon posts failing with 422 character limit errors — some posts silently dropped
 

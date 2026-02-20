@@ -7954,3 +7954,29 @@ S ..."
 [2026-02-20T20:45:32.734Z] QUEUED marketing already running — trigger queued: inbox-message
 [2026-02-20T20:46:43.734Z] AGENT bi-finance exited (code=0, duration: 525s)
 [2026-02-20T20:46:43.734Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T20:48:20.275Z] AGENT marketing exited (code=0, duration: 806s)
+[2026-02-20T20:48:20.275Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T20:48:20.276Z] PENDING marketing processing queued trigger
+[2026-02-20T20:48:20.276Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T20:49:31.492Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T20:49:31.494Z] AGENT ceo started (pid: 201624)
+[2026-02-20T20:49:44.425Z] STATUS running=1/4 writers=0/1 freeMem=6911MB agents=[ceo(13s)] paused=no
+[2026-02-20T20:49:44.425Z] SOCIAL running social-poster.js
+[2026-02-20T20:49:44.454Z] SOCIAL 2026-02-20T20:49:44.452Z [social-poster] starting
+[2026-02-20T20:49:44.462Z] SOCIAL 2026-02-20T20:49:44.461Z [social-poster] queue has 2559 posts
+[2026-02-20T20:49:44.462Z] SOCIAL 2026-02-20T20:49:44.462Z [social-poster] done — 0 attempted, 0 succeeded, 2559 remaining in queue
+[2026-02-20T20:49:44.465Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:53:20.435Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T20:53:20.437Z] AGENT marketing started (pid: 202429)
+[2026-02-20T20:54:44.508Z] STATUS running=2/4 writers=0/1 freeMem=6728MB agents=[ceo(313s), marketing(84s)] paused=no
+[2026-02-20T20:54:44.509Z] SOCIAL running social-poster.js
+[2026-02-20T20:54:44.542Z] SOCIAL 2026-02-20T20:54:44.540Z [social-poster] starting
+[2026-02-20T20:54:44.551Z] SOCIAL 2026-02-20T20:54:44.551Z [social-poster] queue has 2559 posts
+[2026-02-20T20:54:45.375Z] SOCIAL 2026-02-20T20:54:45.375Z [social-poster] OK mastodon: posted "Immich is the real deal for photo management.
+
+Face recognit..."
+[2026-02-20T20:54:45.384Z] SOCIAL 2026-02-20T20:54:45.384Z [social-poster] removed 1 posted items from queue (2558 remaining)
+[2026-02-20T20:54:45.384Z] SOCIAL 2026-02-20T20:54:45.384Z [social-poster] done — 1 attempted, 1 succeeded, 2558 remaining in queue
+[2026-02-20T20:54:45.389Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T20:54:58.820Z] INBOX marketing.md modified → marketing
+[2026-02-20T20:54:58.820Z] QUEUED marketing already running — trigger queued: inbox-message
