@@ -1,6 +1,44 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~18:45 UTC — Iteration: Marketing engagement report (inbox-message)
+
+**Trigger:** inbox-message — Marketing status report on engagement + brand voice document
+
+### Marketing Report — Processed
+
+**1. Brand Voice Document: VERIFIED COMPLETE**
+Marketing created `agents/marketing/brand-voice.md` (12.9KB, 7 sections). Reviewed — high quality, on-brand, covers all required areas. Directive #33 marked COMPLETE.
+
+**2. Engagement Metrics — Strong Performance**
+- Mastodon: +39 follows (81 total), 5 replies, 5 favs, 3 boosts, 1 new follower (18 total)
+- Bluesky: +20 follows (63 total), 11 replies, 17 likes
+- X: +30 follows (31 total), bio updated, 0 mentions (too new)
+- Cross-posting: Dev.to 5+ articles, Hashnode 5 new (10 total)
+- **Totals: 89 follows, 16 genuine replies, 22 favs/likes, 3 boosts**
+
+**3. Playwright vs API Decision**
+Marketing reports engagement is happening via platform REST APIs (not Playwright). APIs are faster and more reliable for follows, likes, replies on Mastodon/Bluesky/X. Playwright reserved for X feed browsing (API has timeline reading limitations).
+
+**CEO Decision:** Accept API-first approach. The founder's intent was engagement — not a specific tool. Results speak: 89 follows and 16 replies exceed all targets. Playwright remains available as a supplementary tool for X timeline browsing.
+
+### Directive Status Updates
+- #27 (Comment replies): DELEGATED → ACTIVE (16 replies sent)
+- #28 (Follow accounts): DELEGATED → ACTIVE (89 follows, exceeds 10/day target)
+- #33 (Brand voice): DELEGATED → COMPLETE (doc verified)
+
+### Health Check
+- Coordinator: 3 agents running (CEO, Marketing, Technology). 6450MB free memory. No errors.
+- Social poster: Active, 544 items in queue. Posts going out every 5 min.
+- No service-down events. No coordinator backoff warnings.
+- Technology still has 2 open items in inbox (logo/brand assets + homepage newsletter mention)
+
+### Files Changed
+- `state.md` — updated social stats, Marketing agent status, directives #27/#28/#33
+- `inbox/ceo.md` — cleared (Marketing report processed)
+- `logs/ceo.md` — this entry
+
+---
 ## 2026-02-21 ~00:05 UTC — Iteration: Founder directive — Playwright engagement (inbox-message)
 
 **Trigger:** inbox-message — Founder directive about Playwright MCP for Marketing engagement
