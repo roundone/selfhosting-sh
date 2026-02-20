@@ -2009,6 +2009,13 @@ async function pageGrowth() {
 
 // -- Server --
 
+function unsubscribeHtml(message, isError = false) {
+  const color = isError ? '#ef4444' : '#22c55e';
+  const icon = isError ? '&#10007;' : '&#10003;';
+  const title = isError ? 'Something went wrong' : 'Unsubscribed';
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} | selfhosting.sh</title><style>body{background:#0f1117;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}.card{background:#1a1d27;border:1px solid #2a2d37;border-radius:12px;padding:48px;max-width:480px;text-align:center}.icon{font-size:48px;color:${color};margin-bottom:16px}h1{font-size:20px;margin:0 0 12px}p{color:#a0a0a0;margin:0 0 24px;line-height:1.6}a{color:#22c55e;text-decoration:none}a:hover{text-decoration:underline}</style></head><body><div class="card"><div class="icon">${icon}</div><h1>${title}</h1><p>${message}</p><a href="https://selfhosting.sh">Back to selfhosting.sh</a></div></body></html>`;
+}
+
 function handleRequest(req, res) {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   const pathname = url.pathname;
@@ -2055,6 +2062,100 @@ function handleRequest(req, res) {
     };
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify(data, null, 2));
+    return;
+  }
+
+  // -- Newsletter subscriber endpoints (public, CORS-enabled) --
+  const SUBSCRIBERS_FILE = `${BASE}/data/subscribers.json`;
+  const CORS = {
+    'Access-Control-Allow-Origin': 'https://selfhosting.sh',
+    'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+
+  if (pathname === '/api/newsletter/subscribe' && req.method === 'OPTIONS') {
+    res.writeHead(204, CORS);
+    res.end();
+    return;
+  }
+
+  if (pathname === '/api/newsletter/subscribe' && req.method === 'POST') {
+    let body = '';
+    req.on('data', c => body += c);
+    req.on('end', () => {
+      try {
+        let email = '';
+        const ct = req.headers['content-type'] || '';
+        if (ct.includes('application/json')) {
+          const parsed = JSON.parse(body);
+          email = (parsed.email || '').trim().toLowerCase();
+        } else {
+          const params = new URLSearchParams(body);
+          email = (params.get('email') || '').trim().toLowerCase();
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254) {
+          res.writeHead(400, { 'Content-Type': 'application/json', ...CORS });
+          res.end(JSON.stringify({ error: 'Please enter a valid email address.' }));
+          return;
+        }
+        // Load existing subscribers
+        let subscribers = [];
+        try { subscribers = JSON.parse(fs.readFileSync(SUBSCRIBERS_FILE, 'utf8')); } catch {}
+        // Check for duplicate
+        const existing = subscribers.find(s => s.email === email);
+        if (existing) {
+          if (existing.unsubscribed) {
+            existing.unsubscribed = false;
+            existing.resubscribed_at = new Date().toISOString();
+          }
+          // Already subscribed — return success (idempotent)
+        } else {
+          subscribers.push({ email, subscribed_at: new Date().toISOString(), unsubscribed: false });
+        }
+        // Ensure data directory exists
+        const dataDir = path.dirname(SUBSCRIBERS_FILE);
+        if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+        fs.writeFileSync(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2));
+        // Return success
+        const accept = req.headers['accept'] || '';
+        if (accept.includes('application/json')) {
+          res.writeHead(200, { 'Content-Type': 'application/json', ...CORS });
+          res.end(JSON.stringify({ success: true, message: "Subscribed! Check your inbox." }));
+        } else {
+          res.writeHead(303, { 'Location': 'https://selfhosting.sh/subscribed/', ...CORS });
+          res.end();
+        }
+      } catch (err) {
+        res.writeHead(500, { 'Content-Type': 'application/json', ...CORS });
+        res.end(JSON.stringify({ error: 'Something went wrong. Please try again.' }));
+      }
+    });
+    return;
+  }
+
+  if (pathname === '/api/newsletter/unsubscribe' && req.method === 'GET') {
+    const email = (url.searchParams.get('email') || '').trim().toLowerCase();
+    if (!email) {
+      res.writeHead(400, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(unsubscribeHtml('No email address provided. Please use the unsubscribe link from your email.', true));
+      return;
+    }
+    try {
+      let subscribers = [];
+      try { subscribers = JSON.parse(fs.readFileSync(SUBSCRIBERS_FILE, 'utf8')); } catch {}
+      const sub = subscribers.find(s => s.email === email);
+      if (sub) {
+        sub.unsubscribed = true;
+        sub.unsubscribed_at = new Date().toISOString();
+        fs.writeFileSync(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2));
+      }
+      // Always show success (don't leak whether email exists)
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(unsubscribeHtml("You've been unsubscribed from the selfhosting.sh newsletter. You won't receive any more emails from us."));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(unsubscribeHtml("We couldn't process your request. Please email admin@selfhosting.sh for help.", true));
+    }
     return;
   }
 

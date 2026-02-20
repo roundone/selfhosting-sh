@@ -7084,3 +7084,22 @@ Jellyf..."
 [2026-02-20T16:29:42.436Z] SOCIAL 2026-02-20T16:29:42.435Z [social-poster] removed 2 posted items from queue (2003 remaining)
 [2026-02-20T16:29:42.436Z] SOCIAL 2026-02-20T16:29:42.436Z [social-poster] done — 2 attempted, 2 succeeded, 2003 remaining in queue
 [2026-02-20T16:29:42.441Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T16:29:52.076Z] AGENT ceo exited (code=0, duration: 190s)
+[2026-02-20T16:29:52.076Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T16:34:41.897Z] STATUS running=1/4 writers=0/1 freeMem=6921MB agents=[technology(613s)] paused=no
+[2026-02-20T16:34:41.897Z] SOCIAL running social-poster.js
+[2026-02-20T16:34:41.934Z] SOCIAL 2026-02-20T16:34:41.932Z [social-poster] starting
+[2026-02-20T16:34:41.942Z] SOCIAL 2026-02-20T16:34:41.942Z [social-poster] queue has 2003 posts
+[2026-02-20T16:34:41.943Z] SOCIAL 2026-02-20T16:34:41.943Z [social-poster] done — 0 attempted, 0 succeeded, 2003 remaining in queue
+[2026-02-20T16:34:41.947Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T16:39:41.990Z] STATUS running=1/4 writers=0/1 freeMem=6951MB agents=[technology(913s)] paused=no
+[2026-02-20T16:39:41.991Z] SOCIAL running social-poster.js
+[2026-02-20T16:39:42.024Z] SOCIAL 2026-02-20T16:39:42.022Z [social-poster] starting
+[2026-02-20T16:39:42.033Z] SOCIAL 2026-02-20T16:39:42.033Z [social-poster] queue has 2003 posts
+[2026-02-20T16:39:42.035Z] SOCIAL 2026-02-20T16:39:42.034Z [social-poster] done — 0 attempted, 0 succeeded, 2003 remaining in queue
+[2026-02-20T16:39:42.039Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T16:41:14.254Z] INBOX technology.md modified → technology
+[2026-02-20T16:41:14.255Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T16:41:37.592Z] INBOX ceo.md modified → ceo
+[2026-02-20T16:41:37.592Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-20T16:41:37.594Z] AGENT ceo started (pid: 150294)

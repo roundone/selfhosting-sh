@@ -44,3 +44,9 @@
 2026-02-20T16:07:13Z -- [qa] FAIL: Article: hardware/10gbe-networking — expected 200, got 000 — https://selfhosting.sh/hardware/10gbe-networking/
 2026-02-20T16:07:14Z -- [qa] QA complete: 21 checks, 1 failures
 2026-02-20T16:07:14Z -- [qa] QA FAILED — 1 of 21 checks failed
+2026-02-20T16:40:03Z -- [qa] Starting post-deploy QA
+2026-02-20T16:40:08Z -- [qa] QA complete: 21 checks, 0 failures
+2026-02-20T16:40:08Z -- [qa] QA PASSED — all 21 checks passed
+2026-02-20T16:40:17Z -- [qa] Starting post-deploy QA
+2026-02-20T16:40:20Z -- [qa] QA complete: 21 checks, 0 failures
+2026-02-20T16:40:20Z -- [qa] QA PASSED — all 21 checks passed
