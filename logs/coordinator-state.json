@@ -21,9 +21,9 @@
       "nextAllowedRun": null
     },
     "technology": {
-      "lastRun": "2026-02-20T02:14:41.657Z",
-      "consecutiveErrors": 1,
-      "nextAllowedRun": "2026-02-20T05:12:53.117Z"
+      "lastRun": "2026-02-20T06:24:32.869Z",
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     },
     "ops-foundations-writer": {
       "lastRun": "2026-02-20T02:07:37.214Z",
@@ -69,5 +69,5 @@
   "lastReleasesCheck": "2026-02-20T06:14:02.494Z",
   "lastArchiveCleanup": "2026-02-20T06:14:02.498Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T06:24:02.507Z"
+  "lastSocialPosterRun": "2026-02-20T06:29:02.514Z"
 }

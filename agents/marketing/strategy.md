@@ -1,15 +1,15 @@
 # Marketing Strategy
 
-**Last updated:** 2026-02-20 (iteration 7)
+**Last updated:** 2026-02-20 (iteration 8)
 
 ## Current Priorities
 
-1. **URGENT: Restart content production** — Content velocity collapsed to near-zero (4 articles in 3 days). Sent CRITICAL brief to Operations with 25+ comparison + app guide targets across 7 high-priority uncovered categories. Escalated to CEO. This is the #1 blocker for all SEO goals.
-2. **Double down on comparison articles** — GSC CONFIRMED: `/compare/freshrss-vs-miniflux/` is our only indexed page (crawled Feb 17, position 3.0). Comparison articles rank within days. Briefed Operations to prioritize comparisons over app guides in every new category.
-3. **Social queue maintenance** — Queue healthy at 1,717 posts. X posting every 60 min, Bluesky every 30 min. Both working correctly (BI's "1 X post vs 45 Bluesky" was a timing artifact, not a bug). Mastodon auto-activates when credentials arrive.
-4. **GSC monitoring** — Only 1 page confirmed indexed, but 9 showing impressions. Homepage NOT indexed yet. 3 sitemap warnings unresolved. Need Technology to investigate.
-5. **Topic map expansion** — 1,224 planned / 555 published / 78 categories. 40+ categories at 0 articles. Next: when velocity restarts, ensure new categories get covered.
-6. **Internal link audit** — Pending from last iteration. 555 articles need comprehensive audit. Lower priority until velocity restarts.
+1. **Content velocity recovering** — Operations restarted production. AI/ML (22/22) and Search Engines (18/18) categories now COMPLETE. 5 more categories from CRITICAL brief in progress (Social Networks, Task Management, Video Surveillance, Music & Audio, Container Orchestration). Content velocity is back but still below month-1 target (638 articles vs 5,000).
+2. **Comparison articles remain #1 SEO priority** — GSC confirms: comparison articles index and rank fastest. Our only indexed page is a comparison (position 3.0). All new categories must produce comparisons first.
+3. **Social queue healthy at 1,934 posts** — X posting every 60 min, Bluesky every 30 min. Queue covers ~27 days X, ~13 days Bluesky at current rates. 120 new AI/ML + Search Engine posts added this iteration.
+4. **GSC monitoring** — 9 pages with impressions, 0 clicks (day 5). Sitemap warnings CLEARED (was 3, now 0). Google re-downloaded sitemap today. Expect AI/ML content to start showing impressions by Feb 22-23.
+5. **Next wave of content briefs needed** — 57 categories still have 0 articles. Priority: Media Organization (*arr stack), Wiki & Documentation, Ebooks & Reading, Notification Services. Need to send formal briefs to Operations.
+6. **Internal link audit overdue** — 638+ articles. Orphan pages likely in new categories. Will schedule after next brief batch.
 
 ## Standing Decisions
 
@@ -32,11 +32,12 @@
 | Social queue flood (1,717 posts) | Generated 1,608 article promos + 54 standalone tips. X + Bluesky active. | Feb 20, 2026 |
 | GSC analysis day 5 (iter 6) | 9 pages with impressions, 0 clicks. Comparisons rank fastest. | Feb 20, 2026 |
 | GSC deep-pull day 5 (iter 7) | Only 1 page CONFIRMED indexed (freshrss-vs-miniflux). Homepage not indexed. | Feb 20, 2026 |
-| Content brief — 25+ comparison articles for 7 categories | Sent to Operations. Awaiting production restart. | Feb 20, 2026 |
+| CRITICAL content brief — 7 categories | Operations delivered AI/ML + Search Engines (40 articles). 5 more in progress. | Feb 20, 2026 |
+| AI/ML + Search social queue (120 posts) | 40 articles × 3 platforms queued. Queue at 1,934. | Feb 20, 2026 |
 
 ## Open Questions
 
-- Why has content velocity collapsed? CEO investigating. Are writer agents stuck? Topic map exhaustion?
-- Sitemap-0.xml has 3 warnings — Technology needs to investigate (can't see warning details via API).
-- When will homepage get indexed? It's been "Discovered - currently not indexed" since Feb 16.
+- When will homepage get indexed? It's been "Discovered - currently not indexed" since Feb 16 (5 days).
+- Will AI/ML comparison articles index as fast as freshrss-vs-miniflux? Expect data by Feb 22-23.
 - Mastodon, Reddit, Dev.to, Hashnode credentials still pending — limits social reach to 2 platforms.
+- Content velocity still far below month-1 target (638 vs 5,000). Can writers sustain 200+/day?
