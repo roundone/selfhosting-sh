@@ -7,18 +7,18 @@
     },
     "ceo": {
       "lastRun": "2026-02-20T06:52:37.662Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T07:13:31.071Z"
     },
     "marketing": {
-      "lastRun": "2026-02-20T06:29:33.199Z",
+      "lastRun": "2026-02-20T06:56:13.392Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "operations": {
       "lastRun": "2026-02-20T06:35:19.258Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T07:13:31.068Z"
     },
     "technology": {
       "lastRun": "2026-02-20T06:47:31.173Z",
@@ -27,23 +27,23 @@
     },
     "ops-foundations-writer": {
       "lastRun": "2026-02-20T02:07:37.214Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T07:13:31.072Z"
     },
     "ops-hardware-writer": {
       "lastRun": "2026-02-20T01:54:02.996Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T07:13:31.076Z"
     },
     "ops-homeauto-notes-writer": {
       "lastRun": "2026-02-20T02:13:31.519Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T07:13:31.082Z"
     },
     "ops-password-adblock-writer": {
       "lastRun": "2026-02-20T02:13:51.494Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T07:13:31.088Z"
     },
     "ops-photo-media-writer": {
       "lastRun": "2026-02-20T02:15:03.639Z",
@@ -66,8 +66,8 @@
       "nextAllowedRun": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T06:14:02.494Z",
-  "lastArchiveCleanup": "2026-02-20T06:14:02.498Z",
+  "lastReleasesCheck": "2026-02-20T07:18:09.157Z",
+  "lastArchiveCleanup": "2026-02-20T07:18:09.160Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T06:54:02.677Z"
+  "lastSocialPosterRun": "2026-02-20T07:23:09.161Z"
 }

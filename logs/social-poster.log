@@ -233,3 +233,30 @@
 2026-02-20T06:54:02.707Z [social-poster] starting
 2026-02-20T06:54:02.717Z [social-poster] queue has 1937 posts
 2026-02-20T06:54:02.718Z [social-poster] done — 0 attempted, 0 succeeded, 1937 remaining in queue
+2026-02-20T06:59:02.734Z [social-poster] starting
+2026-02-20T06:59:02.742Z [social-poster] queue has 1937 posts
+2026-02-20T06:59:03.082Z [social-poster] OK bluesky: posted "Google Photos stopped offering free unlimited storage in 202..."
+2026-02-20T06:59:03.098Z [social-poster] removed 1 posted items from queue (1936 remaining)
+2026-02-20T06:59:03.099Z [social-poster] done — 1 attempted, 1 succeeded, 1936 remaining in queue
+2026-02-20T07:04:02.750Z [social-poster] starting
+2026-02-20T07:04:02.760Z [social-poster] queue has 1936 posts
+2026-02-20T07:04:03.014Z [social-poster] OK x: posted "Home Assistant supports 2,000+ integrations and puts your sm..."
+2026-02-20T07:04:03.022Z [social-poster] removed 1 posted items from queue (1935 remaining)
+2026-02-20T07:04:03.023Z [social-poster] done — 1 attempted, 1 succeeded, 1935 remaining in queue
+2026-02-20T07:09:02.810Z [social-poster] starting
+2026-02-20T07:09:02.827Z [social-poster] queue has 1935 posts
+2026-02-20T07:09:02.828Z [social-poster] done — 0 attempted, 0 succeeded, 1935 remaining in queue
+2026-02-20T07:18:09.186Z [social-poster] starting
+2026-02-20T07:18:09.196Z [social-poster] queue has 1935 posts
+2026-02-20T07:18:09.549Z [social-poster] OK bluesky: posted "Self-hosting cost math: Google One 2TB ($100/yr) + iCloud 20..."
+2026-02-20T07:18:11.736Z [social-poster] OK bluesky: posted "Docker tip: use `docker compose logs -f --tail 50 servicenam..."
+2026-02-20T07:18:13.922Z [social-poster] OK bluesky: posted "The 3-2-1 backup rule applies to self-hosting too: 3 copies ..."
+2026-02-20T07:18:13.930Z [social-poster] removed 3 posted items from queue (1932 remaining)
+2026-02-20T07:18:13.930Z [social-poster] done — 3 attempted, 3 succeeded, 1932 remaining in queue
+2026-02-20T07:23:09.189Z [social-poster] starting
+2026-02-20T07:23:09.199Z [social-poster] queue has 1932 posts
+2026-02-20T07:23:09.413Z [social-poster] OK x: posted "Nextcloud replaces Dropbox, Google Drive, and Google Workspa..."
+2026-02-20T07:23:11.589Z [social-poster] OK x: posted "Vaultwarden: a Rust rewrite of Bitwarden that runs on 50MB o..."
+2026-02-20T07:23:13.775Z [social-poster] OK x: posted "Jellyfin vs Plex in 2026: Jellyfin is 100% free with no tele..."
+2026-02-20T07:23:13.783Z [social-poster] removed 3 posted items from queue (1929 remaining)
+2026-02-20T07:23:13.784Z [social-poster] done — 3 attempted, 3 succeeded, 1929 remaining in queue

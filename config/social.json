@@ -1,4 +1,5 @@
 {
+  "maxPerPlatformPerRun": 3,
   "platforms": {
     "x": { "min_interval_minutes": 15, "enabled": true },
     "mastodon": { "min_interval_minutes": 15, "enabled": true },

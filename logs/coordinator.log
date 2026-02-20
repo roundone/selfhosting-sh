@@ -4977,3 +4977,181 @@
 [2026-02-20T06:54:02.721Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T06:54:40.878Z] AGENT bi-finance exited (code=0, duration: 897s)
 [2026-02-20T06:54:40.879Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T06:56:13.391Z] AGENT marketing exited (code=0, duration: 1300s)
+[2026-02-20T06:56:13.392Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T06:57:37.829Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T06:57:37.831Z] AGENT ceo started (pid: 22245)
+[2026-02-20T06:59:02.709Z] STATUS running=2/6 writers=0/4 freeMem=6743MB agents=[operations(1123s), ceo(85s)] paused=no
+[2026-02-20T06:59:02.709Z] SOCIAL running social-poster.js
+[2026-02-20T06:59:02.735Z] SOCIAL 2026-02-20T06:59:02.734Z [social-poster] starting
+[2026-02-20T06:59:02.742Z] SOCIAL 2026-02-20T06:59:02.742Z [social-poster] queue has 1937 posts
+[2026-02-20T06:59:03.082Z] SOCIAL 2026-02-20T06:59:03.082Z [social-poster] OK bluesky: posted "Google Photos stopped offering free unlimited storage in 202..."
+[2026-02-20T06:59:03.099Z] SOCIAL 2026-02-20T06:59:03.098Z [social-poster] removed 1 posted items from queue (1936 remaining)
+[2026-02-20T06:59:03.099Z] SOCIAL 2026-02-20T06:59:03.099Z [social-poster] done — 1 attempted, 1 succeeded, 1936 remaining in queue
+[2026-02-20T06:59:03.106Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T07:04:02.719Z] STATUS running=2/6 writers=0/4 freeMem=6730MB agents=[operations(1423s), ceo(385s)] paused=no
+[2026-02-20T07:04:02.720Z] SOCIAL running social-poster.js
+[2026-02-20T07:04:02.752Z] SOCIAL 2026-02-20T07:04:02.750Z [social-poster] starting
+[2026-02-20T07:04:02.761Z] SOCIAL 2026-02-20T07:04:02.760Z [social-poster] queue has 1936 posts
+[2026-02-20T07:04:03.015Z] SOCIAL 2026-02-20T07:04:03.014Z [social-poster] OK x: posted "Home Assistant supports 2,000+ integrations and puts your sm..."
+[2026-02-20T07:04:03.023Z] SOCIAL 2026-02-20T07:04:03.022Z [social-poster] removed 1 posted items from queue (1935 remaining)
+[2026-02-20T07:04:03.023Z] SOCIAL 2026-02-20T07:04:03.023Z [social-poster] done — 1 attempted, 1 succeeded, 1935 remaining in queue
+[2026-02-20T07:04:03.028Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T07:06:30.971Z] INBOX ceo.md modified → ceo
+[2026-02-20T07:06:30.971Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T07:09:02.761Z] STATUS running=2/6 writers=0/4 freeMem=6696MB agents=[operations(1723s), ceo(685s)] paused=no
+[2026-02-20T07:09:02.762Z] SOCIAL running social-poster.js
+[2026-02-20T07:09:02.814Z] SOCIAL 2026-02-20T07:09:02.810Z [social-poster] starting
+[2026-02-20T07:09:02.828Z] SOCIAL 2026-02-20T07:09:02.827Z [social-poster] queue has 1935 posts
+[2026-02-20T07:09:02.829Z] SOCIAL 2026-02-20T07:09:02.828Z [social-poster] done — 0 attempted, 0 succeeded, 1935 remaining in queue
+[2026-02-20T07:09:02.834Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T07:12:37.972Z] EVENT ops-foundations-writer-ceo-wake-20260220T071235Z.json → ops-foundations-writer
+[2026-02-20T07:12:37.972Z] AGENT ops-foundations-writer starting (trigger: ops-foundations-writer-ceo-wake-20260220T071235Z.json)
+[2026-02-20T07:12:37.973Z] AGENT ops-foundations-writer started (pid: 24328)
+[2026-02-20T07:12:37.977Z] EVENT ops-hardware-writer-ceo-wake-20260220T071235Z.json → ops-hardware-writer
+[2026-02-20T07:12:37.977Z] AGENT ops-hardware-writer starting (trigger: ops-hardware-writer-ceo-wake-20260220T071235Z.json)
+[2026-02-20T07:12:37.978Z] AGENT ops-hardware-writer started (pid: 24330)
+[2026-02-20T07:12:37.980Z] EVENT ops-homeauto-notes-writer-ceo-wake-20260220T071235Z.json → ops-homeauto-notes-writer
+[2026-02-20T07:12:37.980Z] AGENT ops-homeauto-notes-writer starting (trigger: ops-homeauto-notes-writer-ceo-wake-20260220T071235Z.json)
+[2026-02-20T07:12:37.981Z] AGENT ops-homeauto-notes-writer started (pid: 24332)
+[2026-02-20T07:12:37.983Z] EVENT ops-password-adblock-writer-ceo-wake-20260220T071235Z.json → ops-password-adblock-writer
+[2026-02-20T07:12:37.984Z] AGENT ops-password-adblock-writer starting (trigger: ops-password-adblock-writer-ceo-wake-20260220T071235Z.json)
+[2026-02-20T07:12:37.986Z] AGENT ops-password-adblock-writer started (pid: 24336)
+[2026-02-20T07:12:37.987Z] EVENT ops-photo-media-writer-ceo-wake-20260220T071235Z.json → ops-photo-media-writer
+[2026-02-20T07:12:37.988Z] CONCURRENCY ops-photo-media-writer — 6/6 agents running, queued
+[2026-02-20T07:12:37.990Z] EVENT ops-proxy-docker-writer-ceo-wake-20260220T071235Z.json → ops-proxy-docker-writer
+[2026-02-20T07:12:37.990Z] CONCURRENCY ops-proxy-docker-writer — 6/6 agents running, queued
+[2026-02-20T07:12:37.993Z] EVENT ops-tier2-writer-ceo-wake-20260220T071235Z.json → ops-tier2-writer
+[2026-02-20T07:12:37.993Z] CONCURRENCY ops-tier2-writer — 6/6 agents running, queued
+[2026-02-20T07:13:01.067Z] SHUTDOWN received SIGTERM — stopping running agents
+[2026-02-20T07:13:01.067Z] SHUTDOWN killing operations (pid: 19035)
+[2026-02-20T07:13:01.067Z] SHUTDOWN killing ceo (pid: 22245)
+[2026-02-20T07:13:01.067Z] SHUTDOWN killing ops-foundations-writer (pid: 24328)
+[2026-02-20T07:13:01.067Z] SHUTDOWN killing ops-hardware-writer (pid: 24330)
+[2026-02-20T07:13:01.068Z] SHUTDOWN killing ops-homeauto-notes-writer (pid: 24332)
+[2026-02-20T07:13:01.068Z] SHUTDOWN killing ops-password-adblock-writer (pid: 24336)
+[2026-02-20T07:13:01.068Z] AGENT operations exited (signal=SIGTERM, duration: 1962s)
+[2026-02-20T07:13:01.068Z] BACKOFF operations error #1, next allowed in 30s
+[2026-02-20T07:13:01.069Z] PENDING operations processing queued trigger
+[2026-02-20T07:13:01.070Z] BACKOFF operations in backoff for 30s more
+[2026-02-20T07:13:01.070Z] AGENT ceo exited (signal=SIGTERM, duration: 923s)
+[2026-02-20T07:13:01.071Z] BACKOFF ceo error #1, next allowed in 30s
+[2026-02-20T07:13:01.071Z] PENDING ceo processing queued trigger
+[2026-02-20T07:13:01.071Z] BACKOFF ceo in backoff for 30s more
+[2026-02-20T07:13:01.071Z] AGENT ops-foundations-writer exited (signal=SIGTERM, duration: 23s)
+[2026-02-20T07:13:01.072Z] BACKOFF ops-foundations-writer error #1, next allowed in 30s
+[2026-02-20T07:13:01.072Z] WRITER_SLOT ops-photo-media-writer — writer slot freed by ops-foundations-writer
+[2026-02-20T07:13:01.072Z] AGENT ops-photo-media-writer starting (trigger: writer-slot-available)
+[2026-02-20T07:13:01.075Z] AGENT ops-photo-media-writer started (pid: 24588)
+[2026-02-20T07:13:01.076Z] AGENT ops-hardware-writer exited (signal=SIGTERM, duration: 23s)
+[2026-02-20T07:13:01.076Z] BACKOFF ops-hardware-writer error #1, next allowed in 30s
+[2026-02-20T07:13:01.076Z] WRITER_SLOT ops-proxy-docker-writer — writer slot freed by ops-hardware-writer
+[2026-02-20T07:13:01.076Z] AGENT ops-proxy-docker-writer starting (trigger: writer-slot-available)
+[2026-02-20T07:13:01.082Z] AGENT ops-proxy-docker-writer started (pid: 24590)
+[2026-02-20T07:13:01.082Z] AGENT ops-homeauto-notes-writer exited (signal=SIGTERM, duration: 23s)
+[2026-02-20T07:13:01.082Z] BACKOFF ops-homeauto-notes-writer error #1, next allowed in 30s
+[2026-02-20T07:13:01.085Z] WRITER_SLOT ops-tier2-writer — writer slot freed by ops-homeauto-notes-writer
+[2026-02-20T07:13:01.085Z] AGENT ops-tier2-writer starting (trigger: writer-slot-available)
+[2026-02-20T07:13:01.087Z] AGENT ops-tier2-writer started (pid: 24592)
+[2026-02-20T07:13:01.087Z] AGENT ops-password-adblock-writer exited (signal=SIGTERM, duration: 23s)
+[2026-02-20T07:13:01.088Z] BACKOFF ops-password-adblock-writer error #1, next allowed in 30s
+[2026-02-20T07:13:09.128Z] ============================================================
+[2026-02-20T07:13:09.130Z] STARTUP coordinator v2.0 (concurrency-limits, memory-gate, stagger, config-driven)
+[2026-02-20T07:13:09.130Z] CONFIG loaded: maxTotal=6, maxWriters=4, memMin=1200MB, writerFallback=1h, deptFallback=8h, minGap=5min
+[2026-02-20T07:13:09.131Z] AGENTS discovered: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology
+[2026-02-20T07:13:09.131Z] WATCH inbox/ (agents: ceo, bi-finance, marketing, operations, ops-foundations-writer, ops-hardware-writer, ops-homeauto-notes-writer, ops-password-adblock-writer, ops-photo-media-writer, ops-proxy-docker-writer, ops-tier2-writer, ops-vpn-filesync-writer, technology)
+[2026-02-20T07:13:09.132Z] WATCH events/ (routing by filename convention)
+[2026-02-20T07:13:09.132Z] WATCH credentials/api-keys.env (marketing, from wake-on.conf)
+[2026-02-20T07:13:09.133Z] STARTUP complete — watching for events
+[2026-02-20T07:13:10.135Z] RECOVERY scanning for missed events and stale state...
+[2026-02-20T07:13:10.135Z] RECOVERY found unprocessed event: ops-photo-media-writer-ceo-wake-20260220T071235Z.json → ops-photo-media-writer
+[2026-02-20T07:13:10.135Z] RECOVERY found unprocessed event: ops-proxy-docker-writer-ceo-wake-20260220T071235Z.json → ops-proxy-docker-writer
+[2026-02-20T07:13:10.136Z] RECOVERY found unprocessed event: ops-tier2-writer-ceo-wake-20260220T071235Z.json → ops-tier2-writer
+[2026-02-20T07:13:10.136Z] RECOVERY ceo inbox modified since last run — starting
+[2026-02-20T07:13:10.136Z] RECOVERY operations inbox modified since last run — starting
+[2026-02-20T07:13:10.136Z] RECOVERY complete — 5 missed event(s) found
+[2026-02-20T07:13:14.138Z] FALLBACK ops-foundations-writer — 5h since last run (7 due, starting up to 2)
+[2026-02-20T07:13:14.138Z] BACKOFF ops-foundations-writer in backoff for 17s more
+[2026-02-20T07:13:14.139Z] FALLBACK ops-hardware-writer — 5h since last run (7 due, starting up to 2)
+[2026-02-20T07:13:14.139Z] BACKOFF ops-hardware-writer in backoff for 17s more
+[2026-02-20T07:13:15.137Z] AGENT ops-photo-media-writer starting (trigger: ops-photo-media-writer-ceo-wake-20260220T071235Z.json)
+[2026-02-20T07:13:15.140Z] AGENT ops-photo-media-writer started (pid: 24840)
+[2026-02-20T07:13:31.189Z] AGENT ops-foundations-writer starting (trigger: 5h-fallback)
+[2026-02-20T07:13:31.191Z] AGENT ops-foundations-writer started (pid: 24917)
+[2026-02-20T07:13:31.192Z] AGENT ops-hardware-writer starting (trigger: 5h-fallback)
+[2026-02-20T07:13:31.194Z] AGENT ops-hardware-writer started (pid: 24918)
+[2026-02-20T07:14:15.169Z] AGENT ops-proxy-docker-writer starting (trigger: ops-proxy-docker-writer-ceo-wake-20260220T071235Z.json)
+[2026-02-20T07:14:15.171Z] AGENT ops-proxy-docker-writer started (pid: 25112)
+[2026-02-20T07:15:15.166Z] WRITER_LIMIT ops-tier2-writer — 4 writers already running, queued
+[2026-02-20T07:16:15.169Z] AGENT ceo starting (trigger: inbox-missed)
+[2026-02-20T07:16:15.171Z] AGENT ceo started (pid: 25232)
+[2026-02-20T07:17:15.196Z] AGENT operations starting (trigger: inbox-missed)
+[2026-02-20T07:17:15.197Z] AGENT operations started (pid: 25635)
+[2026-02-20T07:18:09.155Z] STATUS running=6/6 writers=4/4 freeMem=6074MB agents=[ops-photo-media-writer(294s), ops-foundations-writer(278s), ops-hardware-writer(278s), ops-proxy-docker-writer(234s), ceo(114s), operations(54s)] paused=no
+[2026-02-20T07:18:09.156Z] FALLBACK ops-homeauto-notes-writer — 5h since last run (3 due, starting up to 2)
+[2026-02-20T07:18:09.156Z] CONCURRENCY ops-homeauto-notes-writer — 6/6 agents running, queued
+[2026-02-20T07:18:09.156Z] FALLBACK ops-password-adblock-writer — 5h since last run (3 due, starting up to 2)
+[2026-02-20T07:18:09.157Z] CONCURRENCY ops-password-adblock-writer — 6/6 agents running, queued
+[2026-02-20T07:18:09.157Z] RELEASES running check-releases.js
+[2026-02-20T07:18:09.158Z] SOCIAL running social-poster.js
+[2026-02-20T07:18:09.187Z] RELEASES 2026-02-20T07:18:09.185Z [check-releases] starting
+[2026-02-20T07:18:09.188Z] RELEASES 2026-02-20T07:18:09.188Z [check-releases] checking 29 GitHub repos
+[2026-02-20T07:18:09.188Z] SOCIAL 2026-02-20T07:18:09.186Z [social-poster] starting
+[2026-02-20T07:18:09.196Z] SOCIAL 2026-02-20T07:18:09.196Z [social-poster] queue has 1935 posts
+[2026-02-20T07:18:09.273Z] RELEASES 2026-02-20T07:18:09.273Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T07:18:09.549Z] SOCIAL 2026-02-20T07:18:09.549Z [social-poster] OK bluesky: posted "Self-hosting cost math: Google One 2TB ($100/yr) + iCloud 20..."
+[2026-02-20T07:18:09.836Z] RELEASES 2026-02-20T07:18:09.835Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T07:18:10.436Z] RELEASES 2026-02-20T07:18:10.435Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T07:18:11.028Z] RELEASES 2026-02-20T07:18:11.028Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T07:18:11.579Z] RELEASES 2026-02-20T07:18:11.578Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T07:18:11.737Z] SOCIAL 2026-02-20T07:18:11.736Z [social-poster] OK bluesky: posted "Docker tip: use `docker compose logs -f --tail 50 servicenam..."
+[2026-02-20T07:18:12.134Z] RELEASES 2026-02-20T07:18:12.134Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T07:18:12.714Z] RELEASES 2026-02-20T07:18:12.713Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T07:18:13.280Z] RELEASES 2026-02-20T07:18:13.280Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T07:18:13.861Z] RELEASES 2026-02-20T07:18:13.861Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T07:18:13.923Z] SOCIAL 2026-02-20T07:18:13.922Z [social-poster] OK bluesky: posted "The 3-2-1 backup rule applies to self-hosting too: 3 copies ..."
+[2026-02-20T07:18:13.930Z] SOCIAL 2026-02-20T07:18:13.930Z [social-poster] removed 3 posted items from queue (1932 remaining)
+[2026-02-20T07:18:13.930Z] SOCIAL 2026-02-20T07:18:13.930Z [social-poster] done — 3 attempted, 3 succeeded, 1932 remaining in queue
+[2026-02-20T07:18:13.937Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T07:18:14.416Z] RELEASES 2026-02-20T07:18:14.416Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T07:18:14.962Z] RELEASES 2026-02-20T07:18:14.962Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T07:18:15.583Z] RELEASES 2026-02-20T07:18:15.582Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T07:18:16.135Z] RELEASES 2026-02-20T07:18:16.135Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T07:18:16.745Z] RELEASES 2026-02-20T07:18:16.744Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T07:18:17.309Z] RELEASES 2026-02-20T07:18:17.308Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T07:18:17.876Z] RELEASES 2026-02-20T07:18:17.876Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T07:18:18.447Z] RELEASES 2026-02-20T07:18:18.446Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T07:18:19.012Z] RELEASES 2026-02-20T07:18:19.012Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T07:18:19.602Z] RELEASES 2026-02-20T07:18:19.602Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T07:18:20.155Z] RELEASES 2026-02-20T07:18:20.155Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T07:18:20.722Z] RELEASES 2026-02-20T07:18:20.721Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T07:18:21.275Z] RELEASES 2026-02-20T07:18:21.275Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T07:18:21.839Z] RELEASES 2026-02-20T07:18:21.838Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T07:18:22.399Z] RELEASES 2026-02-20T07:18:22.399Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T07:18:22.961Z] RELEASES 2026-02-20T07:18:22.961Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T07:18:23.531Z] RELEASES 2026-02-20T07:18:23.531Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T07:18:24.093Z] RELEASES 2026-02-20T07:18:24.093Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T07:18:24.648Z] RELEASES 2026-02-20T07:18:24.648Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T07:18:25.203Z] RELEASES 2026-02-20T07:18:25.203Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T07:18:25.704Z] RELEASES 2026-02-20T07:18:25.704Z [check-releases] checking 3 feeds
+[2026-02-20T07:18:25.758Z] RELEASES 2026-02-20T07:18:25.758Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T07:18:26.024Z] RELEASES 2026-02-20T07:18:26.024Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T07:18:26.354Z] RELEASES 2026-02-20T07:18:26.354Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T07:18:26.558Z] RELEASES 2026-02-20T07:18:26.557Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T07:18:26.570Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T07:22:22.085Z] INBOX ceo.md modified → ceo
+[2026-02-20T07:22:22.085Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T07:23:09.161Z] STATUS running=6/6 writers=4/4 freeMem=5955MB agents=[ops-photo-media-writer(594s), ops-foundations-writer(578s), ops-hardware-writer(578s), ops-proxy-docker-writer(534s), ceo(414s), operations(354s)] paused=no
+[2026-02-20T07:23:09.161Z] FALLBACK ops-homeauto-notes-writer — 5h since last run (4 due, starting up to 2)
+[2026-02-20T07:23:09.161Z] CONCURRENCY ops-homeauto-notes-writer — 6/6 agents running, queued
+[2026-02-20T07:23:09.161Z] FALLBACK ops-password-adblock-writer — 5h since last run (4 due, starting up to 2)
+[2026-02-20T07:23:09.161Z] CONCURRENCY ops-password-adblock-writer — 6/6 agents running, queued
+[2026-02-20T07:23:09.161Z] SOCIAL running social-poster.js
+[2026-02-20T07:23:09.191Z] SOCIAL 2026-02-20T07:23:09.189Z [social-poster] starting
+[2026-02-20T07:23:09.199Z] SOCIAL 2026-02-20T07:23:09.199Z [social-poster] queue has 1932 posts
+[2026-02-20T07:23:09.413Z] SOCIAL 2026-02-20T07:23:09.413Z [social-poster] OK x: posted "Nextcloud replaces Dropbox, Google Drive, and Google Workspa..."
+[2026-02-20T07:23:11.589Z] SOCIAL 2026-02-20T07:23:11.589Z [social-poster] OK x: posted "Vaultwarden: a Rust rewrite of Bitwarden that runs on 50MB o..."
+[2026-02-20T07:23:13.775Z] SOCIAL 2026-02-20T07:23:13.775Z [social-poster] OK x: posted "Jellyfin vs Plex in 2026: Jellyfin is 100% free with no tele..."
+[2026-02-20T07:23:13.783Z] SOCIAL 2026-02-20T07:23:13.783Z [social-poster] removed 3 posted items from queue (1929 remaining)
+[2026-02-20T07:23:13.784Z] SOCIAL 2026-02-20T07:23:13.784Z [social-poster] done — 3 attempted, 3 succeeded, 1929 remaining in queue
+[2026-02-20T07:23:13.789Z] SOCIAL social-poster.js exited (code: 0)
