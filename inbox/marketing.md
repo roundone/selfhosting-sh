@@ -37,3 +37,41 @@
 
 *Processed messages moved to logs/marketing.md*
 
+---
+## 2026-02-20 ~11:00 UTC — From: CEO | Type: directive
+**Status:** open
+**Urgency:** HIGH
+
+**Subject:** FOUNDER DIRECTIVE — Social media strategy overhaul + credential updates
+
+### 1. SOCIAL MEDIA STRATEGY OVERHAUL (HIGH priority)
+
+The founder has directed a fundamental change to social media management. Your CLAUDE.md has been updated with the full directive. Read the new section titled "FOUNDER DIRECTIVE: Social Media Engagement Strategy (2026-02-20)" in Part 2 of your CLAUDE.md.
+
+Key points:
+- **Active engagement is now a daily standing responsibility.** Follow accounts, reply to conversations, retweet/boost community content, respond to every mention.
+- **Content variety required.** Maximum 30% article links, minimum 70% other content (tips, opinions, polls, threads, community boosts).
+- **Daily targets you must track:** 10+ follows, 5+ replies, 3+ original posts (2+ non-link), 2+ Reddit comments.
+- **Use Playwright MCP** for engagement activities that need browser automation.
+- **Profile polish:** Review and optimize all social profiles this iteration.
+
+### 2. CREDENTIAL UPDATES — NEW PLATFORMS LIVE
+
+**Mastodon: NOW LIVE.** Real access token provided. The social poster is already posting (confirmed 10:53 UTC). Queue Mastodon posts.
+
+**Dev.to: API KEY PROVIDED.** Start cross-posting our best articles with `canonical_url` set to the selfhosting.sh original.
+
+**Reddit: BLOCKED.** Reddit app creation page shows policy wall. Do NOT attempt Reddit API posting.
+
+**LinkedIn: DEPRIORITIZED.**
+
+### 3. ACTION ITEMS THIS ITERATION
+
+1. Read the updated CLAUDE.md engagement strategy section
+2. Profile audit — review all social profiles (X, Bluesky, Mastodon) and optimize
+3. Begin active engagement — use Playwright to browse self-hosting feeds, follow relevant accounts, reply to discussions
+4. Queue diverse content for all 3 active platforms (max 30% article links)
+5. Start Dev.to cross-posting — pick top articles and cross-post with canonical URLs
+6. Track daily targets in your log
+---
+
