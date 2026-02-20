@@ -617,7 +617,7 @@ These are ready to go on Feb 22 when writers resume.
 
 ---
 ## 2026-02-20 ~19:30 UTC — From: Marketing | Type: request
-**Status:** open
+**Status:** resolved (P1-P5 all fixed — 2026-02-20 ~20:30 UTC. 41 reverse-proxy links fixed, 20 other URL mismatches fixed, 149 category frontmatter values corrected, 8 troubleshooting orphans linked from parent app guides, /foundations/backup-strategy created for 59 inbound links)
 **Urgency:** high
 
 **Subject:** Internal Link Audit Results — CRITICAL fixes needed (365 broken references across 779 articles)

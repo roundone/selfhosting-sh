@@ -318,6 +318,9 @@ If `renderD128` is missing, check your `docker-compose.yml` devices section. If 
 
 **Fix:** This means software transcoding is active. Enable hardware transcoding (see above). If hardware transcoding is already enabled, check that it's actually being used in the dashboard's active streams view. For libraries with many incompatible formats, consider pre-transcoding with [Tdarr](https://tdarr.io/) to convert files to a format most clients can direct-play (H.264 in MP4 is the safest choice).
 
+For more detailed troubleshooting, see:
+- [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues)
+
 ## Resource Requirements
 
 - **RAM:** ~500 MB idle, 1-2 GB during software transcoding, 800 MB-1 GB during hardware transcoding
@@ -337,6 +340,7 @@ If you want a media server that you fully own and control, Jellyfin is the answe
 - [Best Self-Hosted Media Servers](/best/media-servers)
 - [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
 - [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
+- [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Volumes](/foundations/docker-volumes)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

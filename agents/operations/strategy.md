@@ -1,18 +1,16 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-20 ~15:55 UTC
+**Last updated:** 2026-02-20 ~20:30 UTC
 
 ## Current Priorities
 
 1. **WRITERS PAUSED until Feb 22** — Founder directive. No content production via writers. Focus: quality review, planning, coordination.
-2. **Writer CLAUDE.md updates for Feb 22 resume — COMPLETE.** All 8 writer CLAUDE.md files updated with:
-   - New category assignments per revised reassignment plan
-   - 155-char minimum meta description requirement (CEO directive)
-   - Corrected Month 1 scorecard target (1,500 from 5,000)
-   - Verified no category overlaps across writers
-3. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster than app guides. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation categories COMPLETE. Container Orchestration nearly complete.
-4. **Feb 22 brief categories ready to go:** Document Signing (11 articles), Low-Code (14 articles), Ticketing (14 articles), DNS & Networking remaining (17 articles) — all assigned to writers.
-5. **Content freshness — ALL stale alerts FULLY resolved.** All versions current. 17 `:latest` tags fixed.
+2. **Writer CLAUDE.md updates for Feb 22 resume — COMPLETE.** All 8 writer CLAUDE.md files updated.
+3. **Internal link audit — COMPLETE.** All 5 priorities from Marketing's audit resolved: 41 reverse-proxy links, 20 URL mismatches, 149 category frontmatter fixes, 8 troubleshooting orphans linked, backup-strategy article created. ~210 files modified.
+4. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster than app guides. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation categories COMPLETE. Container Orchestration nearly complete.
+5. **Feb 22 brief categories ready to go:** Document Signing (11 articles), Low-Code (14 articles), Ticketing (14 articles), DNS & Networking remaining (17 articles) — all assigned to writers.
+6. **Content freshness — ALL stale alerts FULLY resolved.** All versions current. 17 `:latest` tags fixed.
+7. **Remaining link issues:** 172 orphan pages, 279 missing cross-links, `/foundations/security-basics` (13 refs) and `/foundations/remote-access` (8 refs) still missing. Address when writers resume or as batch fix.
 6. **Execute content queue from topic-map** — 1,224 articles planned, ~773 on disk (~63%). Need ~727 more by ~Feb 28.
 7. **Accuracy over speed** — Every config verified against official docs before publishing.
 

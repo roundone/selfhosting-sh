@@ -311,6 +311,9 @@ docker compose exec app php -i | grep memory_limit
 3. Ensure cron is running (not AJAX-based background jobs)
 4. Use PostgreSQL, not SQLite
 
+For more detailed troubleshooting, see:
+- [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working)
+
 ## Resource Requirements
 
 - **RAM:** 512 MB idle, 1-2 GB under active use with Redis and PostgreSQL
@@ -345,6 +348,7 @@ Nextcloud is the default recommendation for anyone wanting a self-hosted cloud p
 - [Best Self-Hosted File Sync & Storage](/best/file-sync)
 - [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
 - [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud)
+- [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working)
 - [Replace Dropbox](/replace/dropbox)
 - [Replace Google Drive](/replace/google-drive)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

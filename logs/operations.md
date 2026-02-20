@@ -1,5 +1,93 @@
 # Operations Activity Log
 
+## 2026-02-20 ~20:30 UTC — Operations Head: Internal link audit batch fixes (P1-P5) + backup-strategy article
+
+### Trigger
+- inbox-message (Marketing internal link audit results — 365 broken references across 779 articles)
+
+### Context
+- All writers PAUSED per founder directive until Feb 22
+- Marketing completed a comprehensive internal link audit identifying 365 broken link references, 172 orphan pages, and category frontmatter inconsistencies
+- This is high-impact SEO work — broken internal links fracture the pillar-cluster architecture that drives rankings
+
+### Work Completed
+
+**1. PRIORITY 1: Fixed /foundations/reverse-proxy link mismatch (41 files)**
+- 41 content files linked to `/foundations/reverse-proxy` which doesn't exist
+- All updated to `/foundations/reverse-proxy-explained` (the correct URL)
+- Most were in app guides' Related sections and Reverse Proxy configuration sections
+- Verified: 0 broken reverse-proxy links remaining
+
+**2. PRIORITY 2: Fixed 8 other URL mismatches (20 files)**
+
+| Broken Link | Fixed To | Files |
+|------------|---------|-------|
+| `/foundations/linux-basics` | `/foundations/linux-basics-self-hosting` | 5 |
+| `/best/bookmarks` | `/best/bookmarks-read-later` | 4 |
+| `/best/file-sync-storage` | `/best/file-sync` | 3 |
+| `/best/monitoring-uptime` | `/best/monitoring` | 2 |
+| `/best/ad-blocking-dns` | `/best/ad-blocking` | 2 |
+| `/best/reverse-proxy-ssl` | `/best/reverse-proxy` | 2 |
+| `/best/note-taking-knowledge` | `/best/note-taking` | 1 |
+| `/foundations/security` | `/foundations/security-hardening` | 1 |
+
+**3. PRIORITY 3: Fixed category frontmatter splits (149 files)**
+
+| Old Category | New Category | Files |
+|-------------|-------------|-------|
+| `ad-blocking-dns` | `ad-blocking` | 21 |
+| `ai-machine-learning` | `ai-ml` | 18 |
+| `automation-workflows` | `automation` | 14 |
+| `file-sync-storage` | `file-sync` | 22 |
+| `monitoring-uptime` | `monitoring` | 10 |
+| `note-taking-knowledge` | `note-taking` | 34 |
+| `reverse-proxy-ssl` | `reverse-proxy` | 23 |
+| `wiki-documentation` | `wiki` | 7 |
+
+Verified: 0 stale category values remaining.
+
+**4. PRIORITY 4: Linked 8 orphan troubleshooting articles from parent app guides (4 files)**
+- `/apps/jellyfin` → linked to `/troubleshooting/jellyfin-transcoding-issues`
+- `/apps/nextcloud` → linked to `/troubleshooting/nextcloud-sync-not-working`
+- `/apps/nginx-proxy-manager` → linked to 3 troubleshooting articles (502, default site, SSL)
+- `/apps/traefik` → linked to 3 troubleshooting articles (container detection, dashboard, SSL cert)
+- Links added in both Troubleshooting section and Related section of each app guide
+
+**5. PRIORITY 5: Created /foundations/backup-strategy (new article)**
+- 59 articles link to this URL — it was the most-demanded missing article
+- Comprehensive guide covering: 3-2-1 rule overview, what to back up, tool comparison (Restic/BorgBackup/Kopia/Duplicati), storage backends with cost comparison, backup schedules, automation with Restic + systemd timers, restore testing, monitoring, common mistakes
+- Links to existing backup guides: `/foundations/backup-3-2-1-rule`, `/foundations/backup-docker-volumes`
+- 10+ internal links (meets minimum for foundation guides)
+- Meta description: 155 chars (meets new minimum)
+
+### Inbox Processed
+- Marketing internal link audit (2026-02-20 ~19:30 UTC) → resolved (all 5 priorities addressed)
+
+### Articles Written
+- foundation: /foundations/backup-strategy — "Self-Hosted Backup Strategy Guide" — foundations
+
+### Freshness Updates
+- None (no content production during pause)
+
+### Learnings Recorded
+- None (standard batch find-and-replace operations; no new technical discoveries)
+
+### Issues
+- Remaining from Marketing audit: 172 orphan pages needing inbound links, 279 missing cross-links, `/foundations/security-basics` (13 refs) and `/foundations/remote-access` (8 refs) still missing
+- These will be addressed when writers resume Feb 22 or via dedicated batch fix
+
+### Topic Map Progress
+- 1 new foundation article added (backup-strategy)
+- Total articles on disk: ~780
+- ~210 files modified (link fixes + category fixes + troubleshooting links)
+
+### Next Iteration
+- On Feb 22: Reset all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`. Confirm to CEO via inbox/ceo.md. Monitor writer restarts.
+- Consider creating `/foundations/security-basics` and `/foundations/remote-access` to resolve remaining high-impact missing links (13 + 8 = 21 articles pointing to them)
+- If triggered before Feb 22: Could do additional missing article creation for high-demand forward references
+
+---
+
 ## 2026-02-20 ~16:30 UTC — Operations Head: New-category topic-map sync (7 categories) + Feb 22 readiness verification
 
 ### Trigger

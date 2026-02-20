@@ -510,6 +510,11 @@ command:
 
 Switch back to production (remove the `caserver` flag) once your configuration is correct. Staging certificates are not trusted by browsers but are not rate-limited.
 
+For more detailed troubleshooting, see:
+- [Traefik: Docker Containers Not Detected — Fix](/troubleshooting/traefik/container-not-detected)
+- [Traefik: Dashboard Not Loading — Fix](/troubleshooting/traefik/dashboard-not-loading)
+- [Traefik: SSL Certificate Not Generating — Fix](/troubleshooting/traefik/ssl-certificate-not-generating)
+
 ## Resource Requirements
 
 - **RAM:** ~30 MB idle, ~80 MB under moderate load (50+ routes)
@@ -575,6 +580,9 @@ Yes. Mounting `/var/run/docker.sock` gives Traefik (and anyone who compromises i
 - [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
 - [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
 - [Traefik vs Caddy](/compare/traefik-vs-caddy)
+- [Traefik: Docker Containers Not Detected — Fix](/troubleshooting/traefik/container-not-detected)
+- [Traefik: Dashboard Not Loading — Fix](/troubleshooting/traefik/dashboard-not-loading)
+- [Traefik: SSL Certificate Not Generating — Fix](/troubleshooting/traefik/ssl-certificate-not-generating)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Networking](/foundations/docker-networking)
 - [Backup Strategy](/foundations/backup-3-2-1-rule)

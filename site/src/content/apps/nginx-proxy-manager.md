@@ -270,6 +270,11 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
+For more detailed troubleshooting, see:
+- [Nginx Proxy Manager: 502 Bad Gateway — Fix](/troubleshooting/nginx-proxy-manager/502-bad-gateway)
+- [NPM: Default Site Showing Instead of App — Fix](/troubleshooting/nginx-proxy-manager/default-site-showing)
+- [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing)
+
 ## Resource Requirements
 
 - **RAM:** ~50 MB idle, ~100 MB under moderate load
@@ -302,6 +307,9 @@ Nginx Proxy Manager is the best reverse proxy solution for most self-hosters. It
 
 - [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy)
 - [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [Nginx Proxy Manager: 502 Bad Gateway — Fix](/troubleshooting/nginx-proxy-manager/502-bad-gateway)
+- [NPM: Default Site Showing Instead of App — Fix](/troubleshooting/nginx-proxy-manager/default-site-showing)
+- [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Networking](/foundations/docker-networking)
 - [How to Self-Host Home Assistant](/apps/home-assistant)
