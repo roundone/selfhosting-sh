@@ -8121,3 +8121,35 @@ Jellyfin:
 [2026-02-20T21:39:45.352Z] SOCIAL 2026-02-20T21:39:45.352Z [social-poster] removed 1 posted items from queue (2582 remaining)
 [2026-02-20T21:39:45.353Z] SOCIAL 2026-02-20T21:39:45.352Z [social-poster] done — 1 attempted, 1 succeeded, 2582 remaining in queue
 [2026-02-20T21:39:45.359Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:41:58.859Z] AGENT marketing exited (code=0, duration: 781s)
+[2026-02-20T21:41:58.859Z] STATE marketing lastRun updated, errors reset
+[2026-02-20T21:41:58.859Z] PENDING marketing processing queued trigger
+[2026-02-20T21:41:58.859Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T21:44:45.160Z] STATUS running=0/4 writers=0/1 freeMem=7100MB agents=[none] paused=no
+[2026-02-20T21:44:45.161Z] SOCIAL running social-poster.js
+[2026-02-20T21:44:45.194Z] SOCIAL 2026-02-20T21:44:45.192Z [social-poster] starting
+[2026-02-20T21:44:45.205Z] SOCIAL 2026-02-20T21:44:45.204Z [social-poster] queue has 2598 posts
+[2026-02-20T21:44:45.606Z] SOCIAL 2026-02-20T21:44:45.606Z [social-poster] OK bluesky: posted "Authelia vs Authentik for self-hosted SSO:
+
+Authelia: config..."
+[2026-02-20T21:44:45.616Z] SOCIAL 2026-02-20T21:44:45.615Z [social-poster] removed 1 posted items from queue (2597 remaining)
+[2026-02-20T21:44:45.616Z] SOCIAL 2026-02-20T21:44:45.616Z [social-poster] done — 1 attempted, 1 succeeded, 2597 remaining in queue
+[2026-02-20T21:44:45.622Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:46:58.978Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-20T21:46:58.980Z] AGENT marketing started (pid: 212867)
+[2026-02-20T21:49:45.178Z] STATUS running=1/4 writers=0/1 freeMem=6917MB agents=[marketing(166s)] paused=no
+[2026-02-20T21:49:45.178Z] SOCIAL running social-poster.js
+[2026-02-20T21:49:45.204Z] SOCIAL 2026-02-20T21:49:45.203Z [social-poster] starting
+[2026-02-20T21:49:45.212Z] SOCIAL 2026-02-20T21:49:45.212Z [social-poster] queue has 2597 posts
+[2026-02-20T21:49:45.212Z] SOCIAL 2026-02-20T21:49:45.212Z [social-poster] done — 0 attempted, 0 succeeded, 2597 remaining in queue
+[2026-02-20T21:49:45.215Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T21:54:45.279Z] STATUS running=1/4 writers=0/1 freeMem=6897MB agents=[marketing(466s)] paused=no
+[2026-02-20T21:54:45.279Z] SOCIAL running social-poster.js
+[2026-02-20T21:54:45.316Z] SOCIAL 2026-02-20T21:54:45.313Z [social-poster] starting
+[2026-02-20T21:54:45.325Z] SOCIAL 2026-02-20T21:54:45.325Z [social-poster] queue has 2609 posts
+[2026-02-20T21:54:45.631Z] SOCIAL 2026-02-20T21:54:45.631Z [social-poster] OK mastodon: posted "PhotoPrism troubleshooting tip:
+
+If PhotoPrism crashes durin..."
+[2026-02-20T21:54:45.648Z] SOCIAL 2026-02-20T21:54:45.647Z [social-poster] removed 1 posted items from queue (2608 remaining)
+[2026-02-20T21:54:45.648Z] SOCIAL 2026-02-20T21:54:45.648Z [social-poster] done — 1 attempted, 1 succeeded, 2608 remaining in queue
+[2026-02-20T21:54:45.657Z] SOCIAL social-poster.js exited (code: 0)

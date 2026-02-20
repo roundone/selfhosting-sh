@@ -1032,3 +1032,20 @@ Jellyfin:
 2026-02-20T21:39:45.341Z [social-poster] OK x: posted "Unpopular opinion: you don't need Kubernetes for self-hostin..."
 2026-02-20T21:39:45.352Z [social-poster] removed 1 posted items from queue (2582 remaining)
 2026-02-20T21:39:45.352Z [social-poster] done — 1 attempted, 1 succeeded, 2582 remaining in queue
+2026-02-20T21:44:45.192Z [social-poster] starting
+2026-02-20T21:44:45.204Z [social-poster] queue has 2598 posts
+2026-02-20T21:44:45.606Z [social-poster] OK bluesky: posted "Authelia vs Authentik for self-hosted SSO:
+
+Authelia: config..."
+2026-02-20T21:44:45.615Z [social-poster] removed 1 posted items from queue (2597 remaining)
+2026-02-20T21:44:45.616Z [social-poster] done — 1 attempted, 1 succeeded, 2597 remaining in queue
+2026-02-20T21:49:45.203Z [social-poster] starting
+2026-02-20T21:49:45.212Z [social-poster] queue has 2597 posts
+2026-02-20T21:49:45.212Z [social-poster] done — 0 attempted, 0 succeeded, 2597 remaining in queue
+2026-02-20T21:54:45.313Z [social-poster] starting
+2026-02-20T21:54:45.325Z [social-poster] queue has 2609 posts
+2026-02-20T21:54:45.631Z [social-poster] OK mastodon: posted "PhotoPrism troubleshooting tip:
+
+If PhotoPrism crashes durin..."
+2026-02-20T21:54:45.647Z [social-poster] removed 1 posted items from queue (2608 remaining)
+2026-02-20T21:54:45.648Z [social-poster] done — 1 attempted, 1 succeeded, 2608 remaining in queue
