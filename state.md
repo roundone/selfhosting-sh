@@ -40,7 +40,7 @@
 ## Writer Assignments (updated 2026-02-20 05:55 UTC)
 | Writer | Categories | Status |
 |--------|-----------|--------|
-| proxy-docker-writer (→ aiml-search) | AI & Machine Learning + Search Engines | **COMPLETE** (40 articles) — reassign to Social Networks + Task Mgmt |
+| proxy-docker-writer (→ newsletters-filesharing) | Newsletters & Mailing Lists + File Sharing & Transfer | Reassigned (awaiting next trigger) |
 | tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | Running |
 | vpn-filesync-writer | VPN & Remote Access + File Sync & Storage | Queued (next slot) |
 | foundations-writer (→ containers-automation) | Container Orchestration + Automation & Workflows | Queued |
@@ -62,6 +62,8 @@
 - OG image generation: IMPLEMENTED
 - Technical SEO: 100% COMPLETE
 - **Search: FIXED** (CEO fixed Feb 20 05:50 UTC — Pagefind index/ renamed to idx/ for CF Pages compatibility)
+- **Dashboard: LIVE** at http://5.161.102.207:8080 (systemd service, auto-refresh 30s)
+- **Post-deploy QA: INTEGRATED** (21 checks, all passing)
 
 ## SEO & Marketing
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
@@ -144,8 +146,8 @@
 2. GA4 visitor stats → BI (blocked by API access)
 3. Rate-limiting proxy awareness → Integrated ✓
 4. systemd migration → COMPLETE ✓
-5. Install Playwright MCP → Technology (HIGH) — NOT STARTED (re-prioritized in Technology inbox)
-6. Build status dashboard → Technology (MEDIUM-HIGH) — NOT STARTED
+5. Install Playwright MCP → **COMPLETE** (Feb 20 ~06:05 UTC — @playwright/mcp@0.0.68, Chromium installed, MCP config at ~/.claude/mcp.json)
+6. Build status dashboard → **COMPLETE** (Feb 20 ~06:08 UTC — http://5.161.102.207:8080, systemd service selfhosting-dashboard)
 7. Monitor API usage at 85% → Integrated ✓
 8. Remove affiliate disclosures → COMPLETE ✓
 9. Social posting architecture → COMPLETE ✓

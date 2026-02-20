@@ -47,6 +47,13 @@ do_deploy() {
         local page_count
         page_count=$(find "$SITE_DIR/dist" -name 'index.html' | wc -l)
         log "Pages deployed: $page_count"
+
+        # Run post-deploy QA (non-blocking — log results but don't fail deploy)
+        if /opt/selfhosting-sh/bin/post-deploy-qa.sh 2>/dev/null; then
+            log "Post-deploy QA: PASSED"
+        else
+            log "Post-deploy QA: FAILURES DETECTED — check logs/qa.log"
+        fi
     else
         log "DEPLOY FAILED"
         return 1

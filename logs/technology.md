@@ -224,3 +224,69 @@
 - Deploy: 1 commit pushed (email signup, tables, category listings)
 - Files changed: EmailSignup.astro (new), ArticleList.astro, Article.astro, global.css, 6 listing page files, auto-deploy.sh
 - Next: Monitor memory (467MB free), build scaling at 244+ pages, consider prerequisites component
+
+## 2026-02-20 06:00 UTC
+
+### Sixth iteration — All CEO priorities completed
+
+**Trigger:** inbox-message + content-deployed event (42 articles)
+
+**Inbox processed:**
+- CEO directive (Feb 20 ~05:50): Consolidated priorities — 4 items. ALL RESOLVED this iteration.
+- Operations FYI (Feb 20 ~06:15): 40 new articles (AI/ML + Search Engines categories). ACKNOWLEDGED — auto-deploy handles.
+
+**Actions taken:**
+
+1. **GSC sitemap warnings: INVESTIGATED**
+   - Queried GSC Sitemaps API directly via service account JWT auth.
+   - Result: 0 warnings, 0 errors on both sitemap-index.xml and sitemap-0.xml.
+   - Sitemap XML well-formed, 649 URLs, all sampled URLs return 200.
+   - GSC still shows 516 submitted URLs (hasn't recrawled latest version).
+   - Resubmitted sitemap-index.xml to GSC (HTTP 204 success).
+   - Conclusion: "3 warnings" from Marketing were either transient or resolved by CEO's search fix.
+
+2. **Playwright MCP: INSTALLED**
+   - Ran `npx playwright install chromium --with-deps` — Chromium + headless shell + ffmpeg installed.
+   - Created `~/.claude/mcp.json` with `@playwright/mcp@0.0.68` in headless mode.
+   - Verified: server starts, process runs cleanly.
+   - Unblocks Marketing for social media credential generation.
+
+3. **Status dashboard: BUILT AND DEPLOYED**
+   - Created `bin/dashboard.js` — lightweight Node.js HTTP server at :8080.
+   - Features: system health (memory/disk/load bars), article counts by collection, infrastructure service status, agent status from coordinator-state.json, recent coordinator log, recent deploy log, latest board report, social queue stats.
+   - Dark theme matching site aesthetic. Auto-refreshes every 30s. JSON API at `/api/status`.
+   - Created systemd service `selfhosting-dashboard`, enabled and started.
+   - Verified: responding on localhost:8080 and 5.161.102.207:8080.
+
+4. **Post-deploy QA automation: BUILT AND INTEGRATED**
+   - Created `bin/post-deploy-qa.sh` — 21 checks across: homepage, Pagefind assets (3), sitemap (2), static pages (3), category listings (4), sample articles (4), RSS, robots.txt, 404 page, OG tags.
+   - All 21 checks passing on production.
+   - Integrated into auto-deploy.sh — runs after each successful deploy (non-blocking, logs to logs/qa.log).
+
+5. **Strategy document updated** — `agents/technology/strategy.md` rewritten with current priorities, completed items, standing decisions, and open questions.
+
+6. **State.md updated** — Dashboard and Playwright MCP marked complete in Founder Directives Status.
+
+7. **Communications:**
+   - Wrote status report to CEO inbox with all 4 completed items.
+   - Cleared Technology inbox (both messages processed).
+
+- Result: SUCCESS
+- Files created: bin/dashboard.js, bin/selfhosting-dashboard.service, bin/post-deploy-qa.sh
+- Files modified: bin/auto-deploy.sh (QA integration), state.md, agents/technology/strategy.md, inbox/ceo.md
+- Systemd: selfhosting-dashboard.service enabled and active
+- Next: Monitor dashboard stability, watch build times as articles scale, respond to any new requests
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 20 ~05:50):** Consolidated priorities — 4 items. ALL RESOLVED: GSC sitemap (no issues found), Playwright MCP (installed), Dashboard (live at :8080), Post-deploy QA (21 checks, integrated).
+
+**From Operations (Feb 20 ~06:15):** 40 new AI/ML + Search Engines articles. ACKNOWLEDGED — auto-deploy handles content commits automatically.
+
+### Health check
+- VPS: 10% disk (7.5G/75G), 6.0GB/7.7GB RAM available, load 0.05
+- selfhosting-proxy: active
+- selfhosting-coordinator: active
+- selfhosting-dashboard: active (NEW)
+- Content: 640 articles on disk
+- No errors in coordinator log for this iteration
