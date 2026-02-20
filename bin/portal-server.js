@@ -226,13 +226,19 @@ function getSocialQueueSize() {
   }, 0);
 }
 
+const STALE_ERROR_MS = 2 * 60 * 60 * 1000;
+function isActiveError(info) {
+  if (!info.consecutiveErrors || info.consecutiveErrors <= 0) return false;
+  if (!info.lastRun) return false;
+  return (Date.now() - new Date(info.lastRun).getTime()) < STALE_ERROR_MS;
+}
 function getAlertCount() {
   let count = 0;
   // Agent errors
   const state = getCoordinatorState();
   if (state && state.agents) {
     for (const info of Object.values(state.agents)) {
-      if (info.consecutiveErrors > 0) count++;
+      if (isActiveError(info)) count++;
     }
   }
   // Human action items from latest board report
@@ -405,7 +411,7 @@ function pageDashboard() {
     for (const info of Object.values(coordState.agents)) {
       if (info.running) agentRunning++;
       else agentQueued++;
-      if (info.consecutiveErrors > 0) agentErrors++;
+      if (isActiveError(info)) agentErrors++;
     }
   }
 
@@ -539,7 +545,7 @@ function pageAgents() {
     for (const info of Object.values(coordState.agents)) {
       if (info.running) running++;
       else queued++;
-      if (info.consecutiveErrors > 0) { errors++; backoff++; }
+      if (isActiveError(info)) { errors++; backoff++; }
     }
   }
   body += `<div style="margin-bottom:12px">
@@ -563,7 +569,7 @@ ${errors > 0 ? `<span class="badge" style="background:#ef4444;color:#fff;margin-
 
     body += '<table><tr><th>Agent</th><th>Status</th><th>Last Start</th><th>Last Exit</th><th>Errors</th><th>Log</th></tr>';
     for (const [name, info] of sorted) {
-      const status = info.running ? 'running' : info.consecutiveErrors > 0 ? 'backoff' : 'idle';
+      const status = info.running ? 'running' : isActiveError(info) ? 'backoff' : 'idle';
       const lastStart = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const lastExit = info.lastExited ? new Date(info.lastExited).toISOString().replace('T', ' ').slice(0, 19) : '-';
       const errs = info.consecutiveErrors || 0;
@@ -742,7 +748,7 @@ function pageAlerts() {
   let agentErrors = [];
   if (coordState && coordState.agents) {
     for (const [name, info] of Object.entries(coordState.agents)) {
-      if (info.consecutiveErrors > 0) {
+      if (isActiveError(info)) {
         agentErrors.push({ name, errors: info.consecutiveErrors, running: info.running });
       }
     }
