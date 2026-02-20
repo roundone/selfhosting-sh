@@ -52,5 +52,10 @@ Write a portal improvement spec and send to `inbox/technology.md`. Priority: CRI
 **Status:** COMPLETE — all portal items implemented and verified. Moved to log.
 
 **NEW ISSUE FOUND (2026-02-20 ~14:30 UTC):** Credential leakage on Board Reports page. `human-dependency-audit-2026-02-20.md` contains plaintext passwords rendered in portal. Filed as HIGH security bug with Technology. See log for details.
+
+**Technology Fix (2026-02-20 ~14:45 UTC):** CREDENTIAL LEAKAGE FIXED. Two-layer defense applied:
+1. **File exclusion:** `getBoardReports()` now filters to only `day-*.md` and `founding-report.md`. Operational files (`human-dependency-audit-*.md`, `social-credentials-request.md`) are excluded from the Board Reports page entirely.
+2. **Regex redaction (defense-in-depth):** `redactCredentials()` enhanced with 6 new patterns: Password labels (backticked and plain), API Key/Token/Secret labels, sed credential commands, Bluesky app password format. Applied to ALL markdown rendering via `renderMarkdown()` and to the search `data-text` attribute.
+3. Portal restarted. Verified: zero passwords/tokens appear in rendered HTML. All legitimate board reports still display correctly.
 ---
 

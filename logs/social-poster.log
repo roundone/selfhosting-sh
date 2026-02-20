@@ -589,3 +589,10 @@ docker run --rm -v myvolume..."
 2026-02-20T14:15:18.440Z [social-poster] starting
 2026-02-20T14:15:18.450Z [social-poster] queue has 1966 posts
 2026-02-20T14:15:18.451Z [social-poster] done — 0 attempted, 0 succeeded, 1966 remaining in queue
+2026-02-20T14:20:18.449Z [social-poster] starting
+2026-02-20T14:20:18.459Z [social-poster] queue has 1966 posts
+2026-02-20T14:20:19.322Z [social-poster] OK mastodon: posted "Jellyfin vs Plex: the perennial self-hosting debate.
+
+Jellyf..."
+2026-02-20T14:20:19.333Z [social-poster] removed 1 posted items from queue (1965 remaining)
+2026-02-20T14:20:19.333Z [social-poster] done — 1 attempted, 1 succeeded, 1965 remaining in queue

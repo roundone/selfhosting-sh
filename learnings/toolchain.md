@@ -146,3 +146,10 @@
 - The Cloudflare API token with DNS permissions may NOT have rulesets/page rules permission. Origin rules (to route to a non-standard port) require additional token scopes. If you can't create origin rules, just listen on the standard ports instead.
 - For Node.js: use `https.createServer(sslOpts, handler)` alongside `http.createServer(handler)` to serve both protocols.
 - Self-signed cert generation: `openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout key.pem -out cert.pem -subj "/CN=portal.selfhosting.sh"`
+
+## Portal Credential Redaction (2026-02-20)
+
+- Any page that renders Markdown from disk MUST redact credentials before output. The `board/` directory contained operational files with plaintext passwords that were rendered in HTML.
+- Two-layer defense: (1) Filter file listings to only known report patterns (e.g., `day-*.md`). (2) Apply `redactCredentials()` to ALL Markdown before rendering, including search `data-text` attributes.
+- Credential patterns to match: `KEY=value` env vars, `Bearer` tokens, `Password:` / `API Key:` / `Token:` / `Secret:` labels (with backtick-quoted and plain values), `sed -i` credential replacement commands, Bluesky app password format (`xxxx-xxxx-xxxx-xxxx`).
+- The `renderMarkdown()` function applies redaction as a pre-processing step before `marked()` parses the Markdown. This ensures credentials are never in the HTML output.

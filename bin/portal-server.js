@@ -126,18 +126,31 @@ function sanitizeInput(str) {
 }
 
 function redactCredentials(text) {
-  let out = text.replace(/(export\s+)?([A-Z_]{2,})\s*=\s*(\S+)/g, (match, exp, key, val) => {
+  let out = text;
+  // Redact env-var style: SOME_KEY=value, SOME_TOKEN=value
+  out = out.replace(/(export\s+)?([A-Z_]{2,})\s*=\s*(\S+)/g, (match, exp, key, val) => {
     if (/key|token|secret|password|bearer/i.test(key)) {
       return `${exp || ''}${key}=[REDACTED]`;
     }
     return match;
   });
+  // Redact Bearer tokens
   out = out.replace(/(Bearer\s+)[A-Za-z0-9_\-]{20,}/gi, '$1[REDACTED]');
+  // Redact "Password: `...`" or "Password: ..." patterns (inline code or plain)
+  out = out.replace(/(password\s*[:=]\s*)`[^`]+`/gi, '$1`[REDACTED]`');
+  out = out.replace(/(password\s*[:=]\s*)(?!`|\[REDACTED\])(\S+)/gi, '$1[REDACTED]');
+  // Redact "API Key: `...`" / "Token: `...`" / "Secret: `...`" patterns
+  out = out.replace(/((?:api[_ ]?key|access[_ ]?token|token|secret|app[_ ]?password)\s*[:=]\s*)`[^`]+`/gi, '$1`[REDACTED]`');
+  out = out.replace(/((?:api[_ ]?key|access[_ ]?token|token|secret|app[_ ]?password)\s*[:=]\s*)(?!`|\[REDACTED\])(\S+)/gi, '$1[REDACTED]');
+  // Redact sed commands that replace credentials (sed -i 's/OLD/NEW/')
+  out = out.replace(/sed\s+-i\s+'s\/[^']*(?:TOKEN|KEY|PASSWORD|SECRET)[^']*'/gi, 'sed -i [REDACTED]');
+  // Redact Bluesky app passwords (pattern: xxxx-xxxx-xxxx-xxxx)
+  out = out.replace(/\b[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}\b/g, '[REDACTED]');
   return out;
 }
 
 function renderMarkdown(md) {
-  return marked(md, { breaks: true, gfm: true });
+  return marked(redactCredentials(md), { breaks: true, gfm: true });
 }
 
 function getClientIp(req) {
@@ -277,7 +290,9 @@ function getArticleCounts() {
 
 function getBoardReports() {
   return safe(() => {
-    const files = fs.readdirSync(`${BASE}/board`).sort().reverse();
+    const files = fs.readdirSync(`${BASE}/board`)
+      .filter(f => /^day-\d{4}-\d{2}-\d{2}\.md$/.test(f) || f === 'founding-report.md')
+      .sort().reverse();
     return files.map(f => ({
       name: f,
       content: fs.readFileSync(`${BASE}/board/${f}`, 'utf8')
@@ -698,7 +713,7 @@ function pageBoard() {
     for (let i = 0; i < reports.length; i++) {
       const r = reports[i];
       const openAttr = i === 0 ? ' open' : '';
-      body += `<details class="accordion report-item" data-text="${escapeHtml(r.content.toLowerCase())}"${openAttr}>
+      body += `<details class="accordion report-item" data-text="${escapeHtml(redactCredentials(r.content).toLowerCase())}"${openAttr}>
   <summary>${escapeHtml(r.name)}</summary>
   <div class="acc-body md-content">${renderMarkdown(r.content)}</div>
 </details>`;

@@ -66,14 +66,14 @@
       "nextAllowedRun": null
     },
     "investor-relations": {
-      "lastRun": "2026-02-20T14:08:26.961Z",
+      "lastRun": "2026-02-20T14:18:31.847Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T13:20:17.632Z",
-  "lastArchiveCleanup": "2026-02-20T13:20:17.636Z",
+  "lastReleasesCheck": "2026-02-20T14:20:18.410Z",
+  "lastArchiveCleanup": "2026-02-20T14:20:18.414Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T14:15:18.409Z"
+  "lastSocialPosterRun": "2026-02-20T14:20:18.412Z"
 }
