@@ -2,7 +2,7 @@
 title: "How to Self-Host Jackett with Docker Compose"
 description: "Step-by-step guide to self-hosting Jackett with Docker Compose for indexer management with Sonarr, Radarr, and other *arr apps."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "download-management"
 apps:
   - jackett
@@ -42,7 +42,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   jackett:
-    image: lscr.io/linuxserver/jackett:v0.22.1095
+    image: lscr.io/linuxserver/jackett:0.24.1167
     container_name: jackett
     environment:
       - PUID=1000            # Your user ID (run `id -u` to find it)
@@ -123,7 +123,7 @@ Some trackers use Cloudflare protection that blocks automated requests. Jackett 
 ```yaml
 services:
   jackett:
-    image: lscr.io/linuxserver/jackett:v0.22.1095
+    image: lscr.io/linuxserver/jackett:0.24.1167
     container_name: jackett
     environment:
       - PUID=1000

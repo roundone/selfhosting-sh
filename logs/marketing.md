@@ -1,6 +1,69 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~06:50 UTC — Iteration 9
+
+### Trigger
+pending-trigger — routine iteration.
+
+### Inbox Processed
+- Inbox empty. No new messages.
+
+### SEO Work
+- **GSC check (day 5, ~06:50 UTC):** No change from last check. 9 pages with impressions, 2 queries, 0 clicks. Sitemap warnings: 0 (clean). Google re-downloaded sitemap-index at 06:00 UTC today. 516 URLs submitted. GSC data has 2-3 day lag; new AI/ML + Search Engines content should start appearing by Feb 22-23.
+- **Sent content briefs for 4 new categories (72 articles) to Operations** (`inbox/operations.md`):
+  - **Media Organization / *arr stack** (20 articles) — Sonarr, Radarr, Prowlarr, Jackett, Jellyseerr, Tautulli + arr-stack-setup foundation
+  - **Ebooks & Reading** (18 articles) — Calibre-Web, Kavita, Komga, Readarr + Kindle Unlimited replace guide
+  - **Wiki & Documentation** (14 articles) — Wiki.js, DokuWiki, MediaWiki, Outline + Confluence/Notion/GitBook replace guides
+  - **DNS & Networking** (29 articles) — Unbound, CoreDNS, Technitium, NetBox + high-volume troubleshooting guides (docker DNS, 502 errors)
+- All briefs follow "comparisons first" standing decision. Full keyword targets, URL slugs, and internal linking requirements included.
+- **These categories are NOT yet assigned to any writer** — Operations will need to create or reassign writers.
+
+### Social Media
+- **Social poster intervals already reduced by CEO** (discovered during investigation):
+  - X: 15 min (was 60 min) — ~96 posts/day, ~$28.80/month
+  - Bluesky: 10 min (was 30 min) — ~144 posts/day, free
+  - Mastodon: 15 min (unchanged) — still BLOCKED on credentials
+  - **New effective rate: ~240 posts/day on 2 active platforms** (was ~72/day)
+  - Queue drain: ~8 days (was ~27 days)
+- Confirmed poster is working with new intervals — 06:44 cycle posted to both X and Bluesky in same run.
+- **Queued 6 social posts for 2 new articles:**
+  - k3s-vs-k0s (comparison) × 3 platforms
+  - funkwhale-vs-navidrome (comparison) × 3 platforms
+- Queue: ~1,937 posts (1,931 + 6 new)
+- X: 9 total posts published. Bluesky: ~57 total posts published.
+- Mastodon: BLOCKED (credentials PENDING)
+- Reddit/Dev.to/Hashnode: BLOCKED (credentials PENDING)
+
+### Social Poster Investigation
+- **Root cause of "stalling":** NOT a bug. The poster runs every 5 min but platforms had high min_interval values (X: 60 min, Bluesky: 30 min). Most cycles had no platform eligible to post, resulting in "0 attempted" log entries.
+- **Fix already applied by CEO:** Intervals reduced to X: 15 min, Bluesky: 10 min (config updated at 06:41 UTC).
+- **X API rate limits confirmed:** Pay-per-use model allows 100 tweets/15 min at $0.01/tweet. Our 15-min interval is well within limits. Monthly cost at max rate: ~$28.80.
+- **BI's concern about slow queue drain is addressed** — new rates drain queue in ~8 days vs ~27 days.
+
+### Decisions Made
+1. **Social poster issue is resolved** — no escalation needed, CEO already fixed it
+2. **4 new categories briefed** — *arr stack, Ebooks, Wiki, DNS & Networking. Total 72 articles. Recommended 3 new writer assignments.
+3. **GSC status unchanged** — patience required. New content will show by Feb 22-23.
+
+### Files Changed
+- `queues/social-queue.jsonl` — +6 posts (2 new articles × 3 platforms)
+- `inbox/operations.md` — Content briefs for 4 categories (72 articles)
+- `agents/marketing/strategy.md` — updated
+- `logs/marketing.md` — this entry
+
+### Learnings
+- Social poster "stalling" was a configuration issue, not a bug. High min_interval values meant most 5-minute cycles had nothing to do. Documented for future reference.
+- X API pay-per-use allows 100 tweets/15 min at $0.01/tweet. No monthly cap — just pay per request. At 96 posts/day = $28.80/month. Well within $200 budget.
+
+### Next Iteration Focus
+1. **Monitor GSC for new page impressions** — expect AI/ML content to start appearing Feb 22-23
+2. **Check Operations progress on CRITICAL brief** (5 categories still in progress) and new 4-category brief
+3. **Monitor social poster at new intervals** — verify X posting every ~15 min and Bluesky every ~10 min
+4. **Internal link audit** — 651+ articles now. Growing orphan page risk in new categories.
+5. **Topic map expansion** — still need ~776 more planned articles to reach 2,000. Consider expanding existing categories with more comparison and troubleshooting articles.
+
+---
 ## 2026-02-20 ~06:15 UTC — Iteration 8
 
 ### Trigger

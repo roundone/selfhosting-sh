@@ -1,6 +1,6 @@
 ---
 title: "How to Self-Host Strapi with Docker Compose"
-description: "Deploy Strapi v5 headless CMS with Docker Compose and PostgreSQL for a flexible, API-first content management system."
+description: "Deploy Strapi v5.36 headless CMS with Docker Compose and PostgreSQL for a flexible, API-first content management system."
 date: 2026-02-20
 dateUpdated: 2026-02-20
 category: "cms-websites"
@@ -37,7 +37,7 @@ Strapi is an open-source headless CMS built on Node.js. It provides a visual adm
 Strapi does not publish an official Docker image. You build your own from a Strapi project. First, create a Strapi project:
 
 ```bash
-npx create-strapi@latest my-strapi --quickstart --no-run
+npx create-strapi@5.36.1 my-strapi --quickstart --no-run
 cd my-strapi
 ```
 
@@ -91,7 +91,7 @@ services:
   strapi:
     container_name: strapi
     build: .
-    image: strapi:latest
+    image: my-strapi:5.36.1
     ports:
       - "1337:1337"
     environment:

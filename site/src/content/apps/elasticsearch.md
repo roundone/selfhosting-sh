@@ -46,7 +46,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.11
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.3.0
     container_name: elasticsearch
     ports:
       - "9200:9200"
@@ -81,7 +81,7 @@ For production with security enabled:
 ```yaml
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.11
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.3.0
     container_name: elasticsearch
     ports:
       - "9200:9200"
@@ -100,7 +100,7 @@ services:
     restart: unless-stopped
 
   kibana:
-    image: docker.elastic.co/kibana/kibana:8.19.11
+    image: docker.elastic.co/kibana/kibana:9.3.0
     container_name: kibana
     ports:
       - "5601:5601"
@@ -155,7 +155,7 @@ docker logs elasticsearch 2>&1 | grep "Password"
 |----------|---------|-------------|
 | `discovery.type` | | Set to `single-node` for single-node deployment |
 | `ES_JAVA_OPTS` | | JVM heap: `-Xms1g -Xmx1g` (set both equal) |
-| `xpack.security.enabled` | `true` (8.x) | Enable/disable security |
+| `xpack.security.enabled` | `true` (9.x) | Enable/disable security |
 | `ELASTIC_PASSWORD` | Auto-generated | Password for `elastic` user |
 | `cluster.name` | `elasticsearch` | Cluster identifier |
 | `node.name` | Auto-generated | Node identifier |
@@ -200,6 +200,18 @@ curl -X PUT "http://localhost:9200/_snapshot/my_backup" \
 # Create a snapshot
 curl -X PUT "http://localhost:9200/_snapshot/my_backup/snapshot_1"
 ```
+
+## Upgrading from v8
+
+Elasticsearch 9 dropped TLSv1.1, removed several deprecated settings, and returns 429 instead of 5xx for timeouts. For most single-node Docker deployments:
+
+1. **Take a snapshot** before upgrading
+2. **Remove deprecated env vars** if you added any: `cluster.routing.allocation.disk.watermark.enable_for_single_data_node`, `xpack.searchable.snapshot.allocate_on_rolling_restart`
+3. **Unfreeze frozen indices** — v9 cannot read frozen indices
+4. **Update client code** if you use the `_knn_search` endpoint (replaced by `_search` with knn query)
+5. Update the image tag to `9.3.0` and Kibana to match
+
+Most standard single-node setups with `discovery.type=single-node` work without config changes beyond the image tag.
 
 ## Reverse Proxy
 
