@@ -2,7 +2,7 @@
 title: "How to Self-Host Radicale with Docker Compose"
 description: "Deploy Radicale with Docker Compose — a lightweight CalDAV and CardDAV server for self-hosted calendar and contacts sync."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "calendar-contacts"
 apps:
   - radicale
@@ -41,7 +41,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   radicale:
-    image: tomsquest/docker-radicale:3.4.1.0
+    image: tomsquest/docker-radicale:3.6.0.0
     container_name: radicale
     restart: unless-stopped
     ports:
@@ -81,7 +81,7 @@ Create a user with htpasswd:
 
 ```bash
 mkdir -p config
-docker run --rm -it tomsquest/docker-radicale:3.4.1.0 htpasswd -nBC 10 admin
+docker run --rm -it tomsquest/docker-radicale:3.6.0.0 htpasswd -nBC 10 admin
 ```
 
 Copy the output line into a `users` file and mount it, or create it directly:

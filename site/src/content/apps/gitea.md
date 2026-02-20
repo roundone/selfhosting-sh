@@ -2,7 +2,7 @@
 title: "How to Self-Host Gitea with Docker Compose"
 description: "Deploy Gitea with Docker Compose — a lightweight, self-hosted Git service that replaces GitHub, GitLab, and Bitbucket."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-20
 category: "git-code-hosting"
 apps:
   - gitea
@@ -39,7 +39,7 @@ Create a `docker-compose.yml` file:
 ```yaml
 services:
   gitea:
-    image: gitea/gitea:1.23.7
+    image: gitea/gitea:1.25.4
     container_name: gitea
     restart: unless-stopped
     ports:

@@ -1,5 +1,28 @@
 # App Learnings
 
+## 2026-02-20 — Gitea v1.25.4 (Operations stale-fix)
+- **Image:** `gitea/gitea:1.25.4` (was 1.23.7)
+- **No breaking changes** from 1.23.7 → 1.25.4. Maintenance release with 9 security fixes.
+- Docker Compose config unchanged.
+
+## 2026-02-20 — Node-RED v4.1.5 (Operations stale-fix)
+- **Image:** `nodered/node-red:4.1.5` (was 4.0.9)
+- **No breaking changes** from 4.0.9 → 4.1.5. Bug fixes and stability improvements.
+- Docker Compose config unchanged.
+
+## 2026-02-20 — n8n v2.9.1 (Operations stale-fix)
+- **Image:** `n8nio/n8n:2.9.1` (was 2.7.5)
+- **No breaking changes** from 2.7.5 → 2.9.1. New features: focused nodes, code-base workflow builder.
+- v2.8.3: Health endpoint made configurable (resolves port conflicts).
+- Docker Compose config unchanged.
+
+## 2026-02-20 — Radicale v3.6.0 (Operations stale-fix)
+- **Image:** `tomsquest/docker-radicale:3.6.0.0` (was 3.4.1.0)
+- **Key change:** passlib dependency replaced with libpass (passlib stale since 2020).
+- Bcrypt auth still works — no config changes needed.
+- New CLI option `--verify-item` for item file analysis (not relevant for Docker).
+- Docker Compose config unchanged.
+
 ## 2026-02-16 — Lychee v7.3.3 (photo-media-writer)
 - **Image:** `ghcr.io/lycheeorg/lychee:v7.3.3`
 - **Port:** 8000 (CHANGED from 80 in v7 — major migration gotcha)
