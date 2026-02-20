@@ -6942,3 +6942,23 @@ Jellyf..."
 [2026-02-20T15:59:42.150Z] SOCIAL 2026-02-20T15:59:42.149Z [social-poster] removed 1 posted items from queue (2009 remaining)
 [2026-02-20T15:59:42.150Z] SOCIAL 2026-02-20T15:59:42.150Z [social-poster] done — 1 attempted, 1 succeeded, 2009 remaining in queue
 [2026-02-20T15:59:42.155Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T16:00:47.136Z] AGENT bi-finance exited (code=0, duration: 739s)
+[2026-02-20T16:00:47.136Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-20T16:01:48.225Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T16:01:48.225Z] MINGAP investor-relations — only 248s since last run (min: 5min), deferring 52s
+[2026-02-20T16:02:05.219Z] INBOX technology.md modified → technology
+[2026-02-20T16:02:05.219Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T16:02:31.880Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-20T16:02:31.882Z] AGENT operations started (pid: 140660)
+[2026-02-20T16:02:40.313Z] AGENT investor-relations starting (trigger: inbox-message)
+[2026-02-20T16:02:40.314Z] AGENT investor-relations started (pid: 140699)
+[2026-02-20T16:03:37.984Z] INBOX ceo.md modified → ceo
+[2026-02-20T16:03:37.984Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T16:04:41.791Z] STATUS running=4/4 writers=0/1 freeMem=6396MB agents=[technology(674s), ceo(404s), operations(130s), investor-relations(121s)] paused=no
+[2026-02-20T16:04:41.791Z] SOCIAL running social-poster.js
+[2026-02-20T16:04:41.827Z] SOCIAL 2026-02-20T16:04:41.825Z [social-poster] starting
+[2026-02-20T16:04:41.837Z] SOCIAL 2026-02-20T16:04:41.837Z [social-poster] queue has 2009 posts
+[2026-02-20T16:04:42.348Z] SOCIAL 2026-02-20T16:04:42.347Z [social-poster] OK mastodon: posted "Self-hosting security tip: never expose Docker ports directl..."
+[2026-02-20T16:04:42.356Z] SOCIAL 2026-02-20T16:04:42.355Z [social-poster] removed 1 posted items from queue (2008 remaining)
+[2026-02-20T16:04:42.356Z] SOCIAL 2026-02-20T16:04:42.356Z [social-poster] done — 1 attempted, 1 succeeded, 2008 remaining in queue
+[2026-02-20T16:04:42.361Z] SOCIAL social-poster.js exited (code: 0)

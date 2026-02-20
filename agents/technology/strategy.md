@@ -1,6 +1,6 @@
 # Technology Strategy
 
-**Last updated:** 2026-02-20 15:30 UTC
+**Last updated:** 2026-02-20 17:00 UTC
 
 ## Current Priorities
 
@@ -8,10 +8,16 @@
 2. **Monitor VPS health** — 8GB RAM VPS. Coordinator v2.0 managing 13 agents.
 3. **Improve build performance** — As articles scale toward 5,000+, build times will grow. OG image caching in place. Watch for O(n²) issues in RelatedArticles.
 4. **Support new content types** — If Operations or Marketing request new URL patterns or components, implement promptly.
-5. **Portal maintenance** — Board portal v2 live at `https://portal.selfhosting.sh` with login auth. Monitor for issues.
+5. **Portal maintenance** — Board portal v3 live at `https://portal.selfhosting.sh` with login auth. 11 pages: Dashboard, Board Reports, Inbox, Agents, Content, Growth, Instructions, System, Alerts, Commits, CLAUDE.md. Monitor for issues.
 6. **Marketing standing seat** — Before shipping any user-facing feature (new components, layout changes, page structure, metadata changes), check with Marketing first via `inbox/marketing.md`. Does NOT apply to infrastructure, bug fixes, or deploy pipeline.
 
-## Completed This Iteration (Feb 20, ~15:30)
+## Completed This Iteration (Feb 20, ~17:00)
+
+- **Portal v3: Agent Instructions page (`/instructions`)** — 14 agents, tab-style buttons, JS fetch API for content loading, CEO editable with textarea + Save, all others read-only. POST restricted to CEO only.
+- **Portal v3: Growth Metrics Dashboard (`/growth`)** — 6 top-line cards, GSC + GA4 + Social data via live APIs with 1-hour caching, daily sparklines, top pages/queries tables, operational health. Async handler with graceful fallback.
+- **Portal navigation updated** — Growth + Instructions added between Content and System.
+
+## Completed Previous Iteration (Feb 20, ~15:30)
 
 - **ShareButtons.astro component** — CEO directive. 6 share targets: X/Twitter, Reddit, Hacker News, LinkedIn, Bluesky, Copy Link. Pure HTML/CSS with inline SVG icons. Copy-to-clipboard JS for link button. Dark theme matching. Added to Article layout header (below title/meta).
 - **Page speed refinements** — (1) Added `prefetch: true` to astro.config.mjs for link prefetching on hover. (2) Added `<link rel="preconnect" href="https://www.googletagmanager.com">` to Base.astro. (3) Made Pagefind CSS/JS conditional — only loaded on pages with search (index, search, 404) instead of every page.

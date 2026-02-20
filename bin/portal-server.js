@@ -30,6 +30,242 @@ const RATE_LIMIT_WINDOW = 3600000; // 1 hour
 const LOGIN_RATE_LIMIT_MAX = 5;
 const LOGIN_RATE_LIMIT_WINDOW = 900000; // 15 minutes
 
+// Agent CLAUDE.md registry for /instructions page
+const AGENT_CLAUDE_MDS = [
+  { name: 'CEO', key: 'ceo', path: `${BASE}/CLAUDE.md`, editable: true },
+  { name: 'Technology', key: 'technology', path: `${BASE}/agents/technology/CLAUDE.md`, editable: false },
+  { name: 'Marketing', key: 'marketing', path: `${BASE}/agents/marketing/CLAUDE.md`, editable: false },
+  { name: 'Operations', key: 'operations', path: `${BASE}/agents/operations/CLAUDE.md`, editable: false },
+  { name: 'BI & Finance', key: 'bi-finance', path: `${BASE}/agents/bi-finance/CLAUDE.md`, editable: false },
+  { name: 'Investor Relations', key: 'investor-relations', path: `${BASE}/agents/investor-relations/CLAUDE.md`, editable: false },
+  { name: 'Foundations Writer', key: 'foundations-writer', path: `${BASE}/agents/operations/writers/foundations-writer/CLAUDE.md`, editable: false },
+  { name: 'Hardware Writer', key: 'hardware-writer', path: `${BASE}/agents/operations/writers/hardware-writer/CLAUDE.md`, editable: false },
+  { name: 'Home Auto / Notes Writer', key: 'homeauto-notes-writer', path: `${BASE}/agents/operations/writers/homeauto-notes-writer/CLAUDE.md`, editable: false },
+  { name: 'Password / Adblock Writer', key: 'password-adblock-writer', path: `${BASE}/agents/operations/writers/password-adblock-writer/CLAUDE.md`, editable: false },
+  { name: 'Photo / Media Writer', key: 'photo-media-writer', path: `${BASE}/agents/operations/writers/photo-media-writer/CLAUDE.md`, editable: false },
+  { name: 'Proxy / Docker Writer', key: 'proxy-docker-writer', path: `${BASE}/agents/operations/writers/proxy-docker-writer/CLAUDE.md`, editable: false },
+  { name: 'Tier 2 Writer', key: 'tier2-writer', path: `${BASE}/agents/operations/writers/tier2-writer/CLAUDE.md`, editable: false },
+  { name: 'VPN / Filesync Writer', key: 'vpn-filesync-writer', path: `${BASE}/agents/operations/writers/vpn-filesync-writer/CLAUDE.md`, editable: false },
+];
+
+// GA4 property ID
+const GA4_PROPERTY_ID = '524871536';
+
+// API cache for growth metrics
+const apiCache = new Map();
+const CACHE_TTL = 3600000; // 1 hour
+
+async function getCachedAsync(key, fetchFn) {
+  const cached = apiCache.get(key);
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    return cached.data;
+  }
+  try {
+    const data = await fetchFn();
+    apiCache.set(key, { data, timestamp: Date.now() });
+    return data;
+  } catch (err) {
+    // Return stale cache if available, otherwise rethrow
+    if (cached) return cached.data;
+    throw err;
+  }
+}
+
+// Google API JWT auth
+let cachedGoogleToken = null;
+let cachedGoogleTokenExpiry = 0;
+
+function base64url(data) {
+  return Buffer.from(data).toString('base64')
+    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+async function getGoogleAccessToken() {
+  if (cachedGoogleToken && Date.now() < cachedGoogleTokenExpiry) {
+    return cachedGoogleToken;
+  }
+  const sa = JSON.parse(fs.readFileSync(`${BASE}/credentials/gcp-service-account.json`, 'utf8'));
+  const now = Math.floor(Date.now() / 1000);
+  const header = base64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }));
+  const payload = base64url(JSON.stringify({
+    iss: sa.client_email,
+    scope: 'https://www.googleapis.com/auth/webmasters.readonly https://www.googleapis.com/auth/analytics.readonly',
+    aud: 'https://oauth2.googleapis.com/token',
+    iat: now,
+    exp: now + 3600
+  }));
+  const signInput = `${header}.${payload}`;
+  const sign = crypto.createSign('RSA-SHA256');
+  sign.update(signInput);
+  const signature = sign.sign(sa.private_key, 'base64')
+    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const jwt = `${signInput}.${signature}`;
+
+  // Exchange JWT for access token
+  const tokenData = await httpPost('https://oauth2.googleapis.com/token',
+    `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=${jwt}`,
+    { 'Content-Type': 'application/x-www-form-urlencoded' });
+  const tokenJson = JSON.parse(tokenData);
+  if (!tokenJson.access_token) throw new Error('No access_token in response: ' + tokenData);
+  cachedGoogleToken = tokenJson.access_token;
+  cachedGoogleTokenExpiry = Date.now() + 55 * 60 * 1000; // 55 min
+  return cachedGoogleToken;
+}
+
+// HTTP helper for API calls
+function httpPost(url, body, headers = {}) {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const opts = {
+      hostname: u.hostname,
+      port: u.port || 443,
+      path: u.pathname + u.search,
+      method: 'POST',
+      headers: { ...headers, 'Content-Length': Buffer.byteLength(body) }
+    };
+    const req = https.request(opts, (res) => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => {
+        if (res.statusCode >= 400) reject(new Error(`HTTP ${res.statusCode}: ${data.slice(0, 500)}`));
+        else resolve(data);
+      });
+    });
+    req.on('error', reject);
+    req.setTimeout(15000, () => { req.destroy(); reject(new Error('Request timeout')); });
+    req.write(body);
+    req.end();
+  });
+}
+
+function httpGet(url, headers = {}) {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const mod = u.protocol === 'https:' ? https : http;
+    const opts = {
+      hostname: u.hostname,
+      port: u.port || (u.protocol === 'https:' ? 443 : 80),
+      path: u.pathname + u.search,
+      method: 'GET',
+      headers: { ...headers, 'User-Agent': 'selfhosting-sh/1.0' }
+    };
+    const req = mod.request(opts, (res) => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => {
+        if (res.statusCode >= 400) reject(new Error(`HTTP ${res.statusCode}: ${data.slice(0, 500)}`));
+        else resolve(data);
+      });
+    });
+    req.on('error', reject);
+    req.setTimeout(15000, () => { req.destroy(); reject(new Error('Request timeout')); });
+    req.end();
+  });
+}
+
+// GSC data fetcher — uses cached file first, falls back to API
+async function fetchGSCData() {
+  // Try cached file first (today or yesterday)
+  for (const daysAgo of [0, 1]) {
+    const d = new Date(Date.now() - daysAgo * 86400000);
+    const dateStr = d.toISOString().split('T')[0];
+    const filePath = `${BASE}/reports/gsc-data-${dateStr}.json`;
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (data.pages && data.daily && data.queries_detailed) {
+        return { data, source: 'file', date: dateStr };
+      }
+    } catch {}
+  }
+
+  // Fall back to live API
+  try {
+    const token = await getGoogleAccessToken();
+    const endDate = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    const startDate = new Date(Date.now() - 7 * 86400000).toISOString().split('T')[0];
+    const siteUrl = encodeURIComponent('sc-domain:selfhosting.sh');
+    const apiBase = `https://www.googleapis.com/webmasters/v3/sites/${siteUrl}/searchAnalytics/query`;
+    const authHeaders = { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' };
+
+    const [dailyRaw, pagesRaw, queriesRaw] = await Promise.all([
+      httpPost(apiBase, JSON.stringify({ startDate, endDate, dimensions: ['date'], rowLimit: 30 }), authHeaders),
+      httpPost(apiBase, JSON.stringify({ startDate, endDate, dimensions: ['page'], rowLimit: 10 }), authHeaders),
+      httpPost(apiBase, JSON.stringify({ startDate, endDate, dimensions: ['query'], rowLimit: 25000 }), authHeaders),
+    ]);
+
+    return {
+      data: {
+        daily: JSON.parse(dailyRaw),
+        pages: JSON.parse(pagesRaw),
+        queries_detailed: JSON.parse(queriesRaw),
+      },
+      source: 'api',
+      date: endDate
+    };
+  } catch (err) {
+    return { data: null, source: 'error', error: err.message };
+  }
+}
+
+// GA4 data fetcher
+async function fetchGA4Data() {
+  const token = await getGoogleAccessToken();
+  const apiUrl = `https://analyticsdata.googleapis.com/v1beta/properties/${GA4_PROPERTY_ID}:runReport`;
+  const authHeaders = { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' };
+
+  const [dailyRaw, engagementRaw, topPagesRaw, sourcesRaw] = await Promise.all([
+    httpPost(apiUrl, JSON.stringify({
+      dateRanges: [{ startDate: '7daysAgo', endDate: 'yesterday' }],
+      dimensions: [{ name: 'date' }],
+      metrics: [{ name: 'activeUsers' }, { name: 'screenPageViews' }, { name: 'sessions' }]
+    }), authHeaders),
+    httpPost(apiUrl, JSON.stringify({
+      dateRanges: [{ startDate: '7daysAgo', endDate: 'yesterday' }],
+      metrics: [{ name: 'bounceRate' }, { name: 'averageSessionDuration' }, { name: 'activeUsers' }, { name: 'screenPageViews' }]
+    }), authHeaders),
+    httpPost(apiUrl, JSON.stringify({
+      dateRanges: [{ startDate: '7daysAgo', endDate: 'yesterday' }],
+      dimensions: [{ name: 'pagePath' }],
+      metrics: [{ name: 'screenPageViews' }],
+      limit: 10,
+      orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }]
+    }), authHeaders),
+    httpPost(apiUrl, JSON.stringify({
+      dateRanges: [{ startDate: '7daysAgo', endDate: 'yesterday' }],
+      dimensions: [{ name: 'sessionSource' }, { name: 'sessionMedium' }],
+      metrics: [{ name: 'sessions' }],
+      limit: 10,
+      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }]
+    }), authHeaders),
+  ]);
+
+  return {
+    daily: JSON.parse(dailyRaw),
+    engagement: JSON.parse(engagementRaw),
+    topPages: JSON.parse(topPagesRaw),
+    sources: JSON.parse(sourcesRaw),
+  };
+}
+
+// Social follower counts
+async function fetchSocialFollowers() {
+  const results = { bluesky: null, mastodon: null };
+
+  try {
+    const bskyRaw = await httpGet('https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=selfhostingsh.bsky.social');
+    const bskyData = JSON.parse(bskyRaw);
+    results.bluesky = bskyData.followersCount || 0;
+  } catch {}
+
+  try {
+    const mastoRaw = await httpGet('https://mastodon.social/api/v1/accounts/lookup?acct=selfhostingsh');
+    const mastoData = JSON.parse(mastoRaw);
+    results.mastodon = mastoData.followers_count || 0;
+  } catch {}
+
+  return results;
+}
+
 // Rate limiting state
 const rateLimitMap = new Map();
 const loginRateLimitMap = new Map();
@@ -484,7 +720,8 @@ function navHtml(currentPath) {
   const alertBadge = alertCount > 0 ? `<span class="alert-badge">${alertCount}</span>` : '';
   const links = [
     ['/', 'Dashboard'], ['/board', 'Board Reports'], ['/inbox', 'Inbox'],
-    ['/agents', 'Agents'], ['/content', 'Content & SEO'], ['/system', 'System'],
+    ['/agents', 'Agents'], ['/content', 'Content & SEO'], ['/growth', 'Growth'],
+    ['/instructions', 'Instructions'], ['/system', 'System'],
     ['/alerts', `Alerts ${alertBadge}`], ['/commits', 'Commits'], ['/claudemd', 'CLAUDE.md']
   ];
   const items = links.map(([href, label]) => {
@@ -1252,6 +1489,524 @@ function pageClaudemdViewer(selectedKey, saveMsg, saveErr) {
   return layoutHtml('CLAUDE.md', '/claudemd', body);
 }
 
+// -- Instructions page --
+
+function pageInstructions() {
+  const defaultKey = 'ceo';
+  const agentButtons = AGENT_CLAUDE_MDS.map(a => {
+    const shortName = a.name.length > 16 ? a.name.slice(0, 14) + '..' : a.name;
+    return `<button class="agent-btn" data-key="${escapeHtml(a.key)}" onclick="loadAgent('${escapeHtml(a.key)}')">${escapeHtml(shortName)}</button>`;
+  }).join('\n    ');
+
+  let body = `<h2 style="margin-bottom:12px">Agent Instructions</h2>
+<p style="color:#64748b;font-size:12px;margin-bottom:16px">${AGENT_CLAUDE_MDS.length} agents. CEO CLAUDE.md is editable; all others are read-only.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px" id="agentButtons">
+    ${agentButtons}
+</div>
+
+<div id="agentHeader" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+  <div>
+    <span id="agentTitle" style="font-size:16px;color:#22c55e;font-weight:700">CEO</span>
+    <span id="agentMeta" style="font-size:12px;color:#64748b;margin-left:8px"></span>
+  </div>
+  <div id="editControls" style="display:none;gap:8px">
+    <button id="toggleEditBtn" onclick="toggleEdit()" style="background:#1a1d27;border:1px solid #2d3148;color:#94a3b8;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:12px">Edit</button>
+    <button id="saveBtn" onclick="saveContent()" style="background:#22c55e;color:#000;border:none;padding:4px 12px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:12px;font-weight:700;display:none">Save</button>
+  </div>
+</div>
+
+<div id="viewContainer" class="card" style="max-height:80vh;overflow-y:auto">
+  <div id="mdContent" class="md-content" style="font-size:14px">Loading...</div>
+</div>
+
+<div id="editContainer" style="display:none">
+  <textarea id="editArea" style="width:100%;min-height:600px;background:#0d0f14;border:1px solid #2d3148;color:#e2e8f0;padding:14px;border-radius:6px;font-family:'JetBrains Mono','Fira Code',monospace;font-size:13px;line-height:1.5;resize:vertical;tab-size:2"></textarea>
+</div>
+
+<div id="toast" style="display:none;position:fixed;bottom:24px;right:24px;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;z-index:1000"></div>
+
+<style>
+.agent-btn { background:#1a1d27; border:1px solid #2d3148; color:#94a3b8; padding:6px 12px; border-radius:6px; cursor:pointer; font-family:inherit; font-size:12px; transition:border-color 0.2s,color 0.2s; }
+.agent-btn:hover { color:#e2e8f0; border-color:#3d4168; }
+.agent-btn.active { color:#22c55e; border-color:#22c55e; background:#0d0f14; }
+</style>
+
+<script>
+let currentAgent = '${defaultKey}';
+let isEditing = false;
+let currentContent = '';
+
+function showToast(msg, isError) {
+  const toast = document.getElementById('toast');
+  toast.style.background = isError ? '#450a0a' : '#14532d';
+  toast.style.color = isError ? '#ef4444' : '#22c55e';
+  toast.style.border = '1px solid ' + (isError ? '#ef4444' : '#22c55e');
+  toast.textContent = msg;
+  toast.style.display = 'block';
+  setTimeout(() => toast.style.display = 'none', 3000);
+}
+
+async function loadAgent(key) {
+  currentAgent = key;
+  isEditing = false;
+  document.getElementById('editContainer').style.display = 'none';
+  document.getElementById('viewContainer').style.display = '';
+  document.getElementById('mdContent').innerHTML = '<span style="color:#64748b">Loading...</span>';
+
+  // Update active button
+  document.querySelectorAll('.agent-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.key === key);
+  });
+
+  try {
+    const resp = await fetch('/api/claude-md?agent=' + encodeURIComponent(key));
+    const data = await resp.json();
+    if (!data.ok) {
+      document.getElementById('mdContent').innerHTML = '<span style="color:#ef4444">Error: ' + (data.error || 'Unknown') + '</span>';
+      document.getElementById('editControls').style.display = 'none';
+      return;
+    }
+
+    document.getElementById('agentTitle').textContent = data.name;
+    const lines = data.content.split('\\n').length;
+    const sizeKb = (data.content.length / 1024).toFixed(1);
+    document.getElementById('agentMeta').textContent = '(' + lines + ' lines, ' + sizeKb + 'KB)';
+    document.getElementById('mdContent').innerHTML = data.html;
+    currentContent = data.content;
+
+    if (data.editable) {
+      document.getElementById('editControls').style.display = 'flex';
+      document.getElementById('toggleEditBtn').style.display = '';
+      document.getElementById('saveBtn').style.display = 'none';
+    } else {
+      document.getElementById('editControls').style.display = 'none';
+    }
+  } catch (err) {
+    document.getElementById('mdContent').innerHTML = '<span style="color:#ef4444">Failed to load: ' + err.message + '</span>';
+  }
+}
+
+function toggleEdit() {
+  isEditing = !isEditing;
+  if (isEditing) {
+    document.getElementById('viewContainer').style.display = 'none';
+    document.getElementById('editContainer').style.display = '';
+    document.getElementById('editArea').value = currentContent;
+    document.getElementById('toggleEditBtn').textContent = 'View';
+    document.getElementById('saveBtn').style.display = '';
+  } else {
+    document.getElementById('editContainer').style.display = 'none';
+    document.getElementById('viewContainer').style.display = '';
+    document.getElementById('toggleEditBtn').textContent = 'Edit';
+    document.getElementById('saveBtn').style.display = 'none';
+  }
+}
+
+async function saveContent() {
+  const content = document.getElementById('editArea').value;
+  if (!content || !content.startsWith('#')) {
+    showToast('Content must start with # (Markdown heading)', true);
+    return;
+  }
+  try {
+    const resp = await fetch('/api/claude-md?agent=ceo', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content })
+    });
+    const data = await resp.json();
+    if (data.ok) {
+      showToast('Saved successfully');
+      currentContent = content;
+      // Reload to update rendered view
+      await loadAgent('ceo');
+      isEditing = false;
+      document.getElementById('editContainer').style.display = 'none';
+      document.getElementById('viewContainer').style.display = '';
+      document.getElementById('toggleEditBtn').textContent = 'Edit';
+      document.getElementById('saveBtn').style.display = 'none';
+    } else {
+      showToast('Error: ' + (data.error || 'Save failed'), true);
+    }
+  } catch (err) {
+    showToast('Network error: ' + err.message, true);
+  }
+}
+
+// Load default agent on page load
+document.addEventListener('DOMContentLoaded', () => loadAgent('${defaultKey}'));
+</script>`;
+
+  return layoutHtml('Instructions', '/instructions', body);
+}
+
+// -- Growth Metrics Dashboard --
+
+async function pageGrowth() {
+  const articles = getArticleCounts();
+  const target = 1500;
+  const socialState = getSocialState();
+  const queueSize = getSocialQueueSize();
+
+  // Fetch all data sources in parallel with graceful fallbacks
+  let gscResult = { data: null, source: 'pending' };
+  let ga4Data = null;
+  let socialFollowers = { bluesky: null, mastodon: null };
+
+  try {
+    [gscResult, ga4Data, socialFollowers] = await Promise.all([
+      getCachedAsync('gsc', fetchGSCData),
+      getCachedAsync('ga4', fetchGA4Data).catch(e => { console.error('GA4 error:', e.message); return null; }),
+      getCachedAsync('social-followers', fetchSocialFollowers).catch(e => { console.error('Social error:', e.message); return { bluesky: null, mastodon: null }; }),
+    ]);
+  } catch (err) {
+    console.error('Growth data fetch error:', err.message);
+  }
+
+  // Parse GSC metrics
+  let gscImpressions = '--', gscClicks = '--', gscCtr = '--', gscPosition = '--';
+  let gscDailyRows = [], gscPageRows = [], gscQueryRows = [];
+  let page1Keywords = 0, page2Keywords = 0, page3Keywords = 0;
+  let gscSource = gscResult.source || 'none';
+
+  if (gscResult.data) {
+    const gd = gscResult.data;
+
+    // Daily data
+    if (gd.daily && gd.daily.rows) {
+      gscDailyRows = gd.daily.rows;
+      let totalImp = 0, totalClk = 0;
+      for (const row of gd.daily.rows) {
+        totalImp += row.impressions || 0;
+        totalClk += row.clicks || 0;
+      }
+      gscImpressions = totalImp;
+      gscClicks = totalClk;
+      gscCtr = totalImp > 0 ? ((totalClk / totalImp) * 100).toFixed(1) + '%' : '0%';
+    }
+
+    // Pages data
+    if (gd.pages && gd.pages.rows) {
+      gscPageRows = gd.pages.rows;
+      let totalPos = 0, posCount = 0;
+      for (const row of gd.pages.rows) {
+        if (row.position) { totalPos += row.position; posCount++; }
+      }
+      gscPosition = posCount > 0 ? (totalPos / posCount).toFixed(1) : '--';
+    }
+
+    // Query data — count keywords by position bracket
+    if (gd.queries_detailed && gd.queries_detailed.rows) {
+      gscQueryRows = gd.queries_detailed.rows;
+      for (const row of gd.queries_detailed.rows) {
+        const pos = row.position || 100;
+        if (pos <= 10) page1Keywords++;
+        else if (pos <= 20) page2Keywords++;
+        else if (pos <= 30) page3Keywords++;
+      }
+    }
+  }
+
+  // Parse GA4 metrics
+  let ga4Views = '--', ga4Users = '--', ga4Sessions = '--';
+  let ga4BounceRate = '--', ga4AvgDuration = '--';
+  let ga4DailyRows = [], ga4TopPages = [], ga4Sources = [];
+
+  if (ga4Data) {
+    // Daily
+    if (ga4Data.daily && ga4Data.daily.rows) {
+      ga4DailyRows = ga4Data.daily.rows;
+      let totalViews = 0, totalUsers = 0, totalSessions = 0;
+      for (const row of ga4Data.daily.rows) {
+        const vals = row.metricValues || [];
+        totalUsers += parseInt(vals[0]?.value || '0', 10);
+        totalViews += parseInt(vals[1]?.value || '0', 10);
+        totalSessions += parseInt(vals[2]?.value || '0', 10);
+      }
+      ga4Views = totalViews;
+      ga4Users = totalUsers;
+      ga4Sessions = totalSessions;
+    }
+
+    // Engagement
+    if (ga4Data.engagement && ga4Data.engagement.rows && ga4Data.engagement.rows[0]) {
+      const vals = ga4Data.engagement.rows[0].metricValues || [];
+      const bounce = parseFloat(vals[0]?.value || '0');
+      ga4BounceRate = (bounce * 100).toFixed(1) + '%';
+      const avgDur = parseFloat(vals[1]?.value || '0');
+      ga4AvgDuration = avgDur.toFixed(0) + 's';
+    }
+
+    // Top pages
+    if (ga4Data.topPages && ga4Data.topPages.rows) {
+      ga4TopPages = ga4Data.topPages.rows.map(r => ({
+        path: (r.dimensionValues || [])[0]?.value || '/',
+        views: parseInt((r.metricValues || [])[0]?.value || '0', 10)
+      }));
+    }
+
+    // Sources
+    if (ga4Data.sources && ga4Data.sources.rows) {
+      ga4Sources = ga4Data.sources.rows.map(r => ({
+        source: (r.dimensionValues || [])[0]?.value || '(none)',
+        medium: (r.dimensionValues || [])[1]?.value || '(none)',
+        sessions: parseInt((r.metricValues || [])[0]?.value || '0', 10)
+      }));
+    }
+  }
+
+  // Social follower total
+  const bskyFollowers = socialFollowers.bluesky;
+  const mastoFollowers = socialFollowers.mastodon;
+  const totalFollowers = (bskyFollowers || 0) + (mastoFollowers || 0);
+  const followerStr = totalFollowers > 0 ? String(totalFollowers) : '--';
+
+  // Color coding helpers
+  function metricColor(actual, target) {
+    if (typeof actual !== 'number' || isNaN(actual)) return '';
+    if (actual >= target) return 'metric-green';
+    if (actual >= target * 0.5) return 'metric-yellow';
+    return 'metric-red';
+  }
+
+  // Build page
+  let body = `<style>
+.metric-green { color: #22c55e; }
+.metric-yellow { color: #eab308; }
+.metric-red { color: #ef4444; }
+.top-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.top-card { background: #1a1d27; border: 1px solid #2d3148; border-radius: 10px; padding: 16px; text-align: center; }
+.top-card .label { color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.top-card .value { font-size: 28px; font-weight: 700; color: #22c55e; }
+.top-card .sub { color: #94a3b8; font-size: 11px; margin-top: 4px; }
+.sparkline { display: flex; align-items: flex-end; gap: 2px; height: 40px; }
+.sparkline .bar { background: #22c55e; border-radius: 2px; min-width: 8px; flex: 1; }
+</style>`;
+
+  body += `<h2 style="margin-bottom:4px">Growth Metrics</h2>
+<p style="color:#64748b;font-size:12px;margin-bottom:16px">Data source: ${escapeHtml(gscSource)} | Last refresh: ${new Date().toISOString().replace('T', ' ').slice(0, 19)} UTC</p>`;
+
+  // Top-line metric cards
+  body += `<div class="top-cards">
+  <div class="top-card">
+    <div class="label">Articles</div>
+    <div class="value ${metricColor(articles.total, target)}">${articles.total}</div>
+    <div class="sub">/ ${target} target</div>
+  </div>
+  <div class="top-card">
+    <div class="label">GSC Impressions</div>
+    <div class="value">${gscImpressions}</div>
+    <div class="sub">7-day total</div>
+  </div>
+  <div class="top-card">
+    <div class="label">GSC Clicks</div>
+    <div class="value">${gscClicks}</div>
+    <div class="sub">7-day total</div>
+  </div>
+  <div class="top-card">
+    <div class="label">GA4 Page Views</div>
+    <div class="value">${ga4Views}</div>
+    <div class="sub">7-day total</div>
+  </div>
+  <div class="top-card">
+    <div class="label">Page-1 Keywords</div>
+    <div class="value ${metricColor(page1Keywords, 100)}">${page1Keywords}</div>
+    <div class="sub">/ 100 target</div>
+  </div>
+  <div class="top-card">
+    <div class="label">Social Followers</div>
+    <div class="value">${followerStr}</div>
+    <div class="sub">${bskyFollowers !== null ? 'BS:' + bskyFollowers : ''} ${mastoFollowers !== null ? 'M:' + mastoFollowers : ''}</div>
+  </div>
+</div>`;
+
+  // Content & SEO section
+  body += `<div class="card wide" style="margin-bottom:16px">
+<h2>Content & SEO — GSC Performance (7 days)</h2>
+<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:12px">
+  <div><span style="color:#64748b">Impressions:</span> <strong>${gscImpressions}</strong></div>
+  <div><span style="color:#64748b">Clicks:</span> <strong>${gscClicks}</strong></div>
+  <div><span style="color:#64748b">CTR:</span> <strong>${gscCtr}</strong></div>
+  <div><span style="color:#64748b">Avg Position:</span> <strong>${gscPosition}</strong></div>
+</div>`;
+
+  // Daily impressions sparkline
+  if (gscDailyRows.length > 0) {
+    const maxImp = Math.max(...gscDailyRows.map(r => r.impressions || 0), 1);
+    body += `<div style="margin-bottom:12px"><div style="color:#64748b;font-size:12px;margin-bottom:4px">Daily Impressions</div><div class="sparkline">`;
+    for (const row of gscDailyRows) {
+      const imp = row.impressions || 0;
+      const height = Math.max(2, Math.round((imp / maxImp) * 40));
+      const date = (row.keys && row.keys[0]) || '';
+      const shortDate = date.slice(5);
+      body += `<div class="bar" style="height:${height}px" title="${escapeHtml(shortDate)}: ${imp}"></div>`;
+    }
+    body += `</div><div style="display:flex;justify-content:space-between;font-size:10px;color:#475569">`;
+    if (gscDailyRows.length > 0) {
+      body += `<span>${escapeHtml((gscDailyRows[0].keys && gscDailyRows[0].keys[0]) || '').slice(5)}</span>`;
+      body += `<span>${escapeHtml((gscDailyRows[gscDailyRows.length - 1].keys && gscDailyRows[gscDailyRows.length - 1].keys[0]) || '').slice(5)}</span>`;
+    }
+    body += `</div></div>`;
+  }
+
+  // Top pages table
+  if (gscPageRows.length > 0) {
+    body += `<div style="margin-bottom:12px"><div style="color:#64748b;font-size:12px;margin-bottom:4px">Top Pages by Impressions</div>
+<table><tr><th>Page</th><th>Impressions</th><th>Clicks</th><th>Position</th></tr>`;
+    for (const row of gscPageRows) {
+      const page = ((row.keys && row.keys[0]) || '').replace('https://selfhosting.sh', '');
+      body += `<tr><td style="font-size:12px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(page)}</td><td>${row.impressions || 0}</td><td>${row.clicks || 0}</td><td>${(row.position || 0).toFixed(1)}</td></tr>`;
+    }
+    body += '</table></div>';
+  }
+
+  // Top queries table
+  if (gscQueryRows.length > 0) {
+    const displayQueries = gscQueryRows.slice(0, 10);
+    body += `<div style="margin-bottom:12px"><div style="color:#64748b;font-size:12px;margin-bottom:4px">Top Queries by Impressions</div>
+<table><tr><th>Query</th><th>Impressions</th><th>Clicks</th><th>CTR</th><th>Position</th></tr>`;
+    for (const row of displayQueries) {
+      const query = (row.keys && row.keys[0]) || '';
+      const ctr = row.impressions > 0 ? ((row.clicks / row.impressions) * 100).toFixed(0) + '%' : '0%';
+      body += `<tr><td>${escapeHtml(query)}</td><td>${row.impressions || 0}</td><td>${row.clicks || 0}</td><td>${ctr}</td><td>${(row.position || 0).toFixed(1)}</td></tr>`;
+    }
+    body += '</table></div>';
+  }
+
+  // Keywords by position bracket
+  body += `<div style="margin-bottom:8px"><div style="color:#64748b;font-size:12px;margin-bottom:4px">Keywords by Position Bracket</div>
+<div style="display:flex;gap:16px">
+  <div>Page 1 (pos 1-10): <strong class="${metricColor(page1Keywords, 100)}">${page1Keywords}</strong></div>
+  <div>Page 2 (11-20): <strong>${page2Keywords}</strong></div>
+  <div>Page 3 (21-30): <strong>${page3Keywords}</strong></div>
+</div></div>`;
+
+  body += '</div>'; // Close Content & SEO card
+
+  // GA4 section
+  body += `<div class="card wide" style="margin-bottom:16px">
+<h2>Site Performance — GA4 (7 days)</h2>`;
+
+  if (ga4Data) {
+    body += `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:12px">
+  <div><span style="color:#64748b">Users:</span> <strong>${ga4Users}</strong></div>
+  <div><span style="color:#64748b">Sessions:</span> <strong>${ga4Sessions}</strong></div>
+  <div><span style="color:#64748b">Page Views:</span> <strong>${ga4Views}</strong></div>
+  <div><span style="color:#64748b">Bounce Rate:</span> <strong>${ga4BounceRate}</strong></div>
+  <div><span style="color:#64748b">Avg Session:</span> <strong>${ga4AvgDuration}</strong></div>
+</div>`;
+
+    // GA4 daily sparkline
+    if (ga4DailyRows.length > 0) {
+      const maxViews = Math.max(...ga4DailyRows.map(r => parseInt((r.metricValues || [])[1]?.value || '0', 10)), 1);
+      body += `<div style="margin-bottom:12px"><div style="color:#64748b;font-size:12px;margin-bottom:4px">Daily Page Views</div><div class="sparkline">`;
+      for (const row of ga4DailyRows) {
+        const views = parseInt((row.metricValues || [])[1]?.value || '0', 10);
+        const height = Math.max(2, Math.round((views / maxViews) * 40));
+        const date = (row.dimensionValues || [])[0]?.value || '';
+        body += `<div class="bar" style="height:${height}px;background:#3b82f6" title="${escapeHtml(date)}: ${views} views"></div>`;
+      }
+      body += '</div></div>';
+    }
+
+    // Top pages
+    if (ga4TopPages.length > 0) {
+      body += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">';
+      body += `<div><div style="color:#64748b;font-size:12px;margin-bottom:4px">Top Pages by Views</div>
+<table><tr><th>Page</th><th>Views</th></tr>`;
+      for (const p of ga4TopPages) {
+        body += `<tr><td style="font-size:12px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(p.path)}</td><td>${p.views}</td></tr>`;
+      }
+      body += '</table></div>';
+
+      // Sources
+      if (ga4Sources.length > 0) {
+        body += `<div><div style="color:#64748b;font-size:12px;margin-bottom:4px">Top Traffic Sources</div>
+<table><tr><th>Source / Medium</th><th>Sessions</th></tr>`;
+        for (const s of ga4Sources) {
+          body += `<tr><td style="font-size:12px">${escapeHtml(s.source)} / ${escapeHtml(s.medium)}</td><td>${s.sessions}</td></tr>`;
+        }
+        body += '</table></div>';
+      }
+      body += '</div>';
+    }
+  } else {
+    body += '<p style="color:#64748b">GA4 data unavailable. API may be unreachable or returning errors.</p>';
+  }
+
+  body += '</div>'; // Close GA4 card
+
+  // Social Media section
+  body += `<div class="card wide" style="margin-bottom:16px">
+<h2>Social Media</h2>
+<table><tr><th>Platform</th><th>Last Post</th><th>Followers</th><th>Status</th></tr>`;
+
+  const socialPlatforms = [
+    { name: 'X (Twitter)', key: 'x', followers: 'N/A' },
+    { name: 'Bluesky', key: 'bluesky', followers: bskyFollowers !== null ? String(bskyFollowers) : '--' },
+    { name: 'Mastodon', key: 'mastodon', followers: mastoFollowers !== null ? String(mastoFollowers) : '--' },
+    { name: 'Reddit', key: 'reddit', followers: '--' },
+    { name: 'Dev.to', key: 'devto', followers: '--' },
+    { name: 'Hashnode', key: 'hashnode', followers: '--' },
+  ];
+
+  const lastPosted = (socialState && socialState.last_posted) || {};
+  for (const p of socialPlatforms) {
+    const lp = lastPosted[p.key];
+    const lastTime = lp ? new Date(lp).toISOString().replace('T', ' ').slice(0, 16) + ' UTC' : '--';
+    const status = lp ? 'active' : (p.key === 'reddit' || p.key === 'hashnode') ? 'blocked' : 'inactive';
+    body += `<tr><td>${escapeHtml(p.name)}</td><td style="font-size:12px">${escapeHtml(lastTime)}</td><td>${escapeHtml(p.followers)}</td><td>${statusBadge(status)}</td></tr>`;
+  }
+  body += `</table>
+<div class="metric" style="margin-top:8px"><span class="metric-label">Queue</span><span class="metric-value">${queueSize} items remaining</span></div>
+</div>`;
+
+  // Operational Health section
+  body += `<div class="card wide" style="margin-bottom:16px">
+<h2>Operational Health</h2>`;
+
+  const coordState = getCoordinatorState();
+  const mem = getMemory();
+  const disk = getDisk();
+  const load = getLoad();
+
+  if (coordState && coordState.agents) {
+    const deptOrder = ['ceo', 'operations', 'technology', 'marketing', 'bi-finance', 'investor-relations'];
+    const sorted = Object.entries(coordState.agents).sort(([a], [b]) => {
+      const ai = deptOrder.indexOf(a);
+      const bi = deptOrder.indexOf(b);
+      if (ai >= 0 && bi >= 0) return ai - bi;
+      if (ai >= 0) return -1;
+      if (bi >= 0) return 1;
+      return a.localeCompare(b);
+    });
+    const runMap = (coordState.running) || {};
+
+    body += '<table><tr><th>Agent</th><th>Runs (24h)</th><th>Errors</th><th>Last Run</th><th>Status</th></tr>';
+    for (const [name, info] of sorted) {
+      const paused = isAgentPaused(name);
+      const hasErr = isActiveError(info, name);
+      const isRunning = !!runMap[name];
+      const status = isRunning ? 'running' : paused ? 'paused' : hasErr ? 'backoff' : 'idle';
+      const lastRun = info.lastStarted ? new Date(info.lastStarted).toISOString().replace('T', ' ').slice(0, 16) + ' UTC' : '--';
+      const errs = info.consecutiveErrors || 0;
+      body += `<tr><td>${escapeHtml(name)}</td><td>--</td><td>${errs > 0 ? '<span class="crit">' + errs + '</span>' : '0'}</td><td style="font-size:12px">${escapeHtml(lastRun)}</td><td>${statusBadge(status)}</td></tr>`;
+    }
+    body += '</table>';
+  }
+
+  const memPct = mem.total > 0 ? Math.round((mem.used / mem.total) * 100) : 0;
+  const diskPct = parseInt(disk.pct) || 0;
+  body += `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:12px">
+  <div><span style="color:#64748b">System:</span> Mem ${memPct}% | Disk ${diskPct}% | Load ${escapeHtml(load)}</div>
+</div>`;
+
+  body += '</div>'; // Close Operational Health card
+
+  return layoutHtml('Growth', '/growth', body);
+}
+
 // -- Server --
 
 function handleRequest(req, res) {
@@ -1338,6 +2093,79 @@ function handleRequest(req, res) {
     } else if (pathname === '/commits') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(pageCommits());
+    } else if (pathname === '/instructions') {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(pageInstructions());
+    } else if (pathname === '/growth') {
+      pageGrowth().then(html => {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end(html);
+      }).catch(err => {
+        console.error('Growth page error:', err.message);
+        res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end(layoutHtml('Error', '', '<h2>Error loading growth metrics</h2><p>' + escapeHtml(err.message) + '</p>'));
+      });
+      return;
+    } else if (pathname === '/api/claude-md' && req.method === 'GET') {
+      const agentKey = url.searchParams.get('agent');
+      const agent = AGENT_CLAUDE_MDS.find(a => a.key === agentKey);
+      if (!agent) {
+        res.writeHead(404, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ ok: false, error: 'Unknown agent' }));
+        return;
+      }
+      try {
+        const content = fs.readFileSync(agent.path, 'utf8');
+        const redacted = redactCredentials(content);
+        const html = renderMarkdown(content);
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ ok: true, name: agent.name, content: redacted, html, editable: agent.editable }));
+      } catch (err) {
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ ok: false, error: 'Failed to read file: ' + err.message }));
+      }
+      return;
+    } else if (pathname === '/api/claude-md' && req.method === 'POST') {
+      const agentKey = url.searchParams.get('agent');
+      if (agentKey !== 'ceo') {
+        res.writeHead(403, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ ok: false, error: 'Read-only' }));
+        return;
+      }
+      let body = '';
+      req.on('data', chunk => {
+        body += chunk;
+        if (body.length > 500000) req.destroy();
+      });
+      req.on('end', () => {
+        try {
+          const parsed = JSON.parse(body);
+          const content = parsed.content;
+          if (!content || typeof content !== 'string') {
+            res.writeHead(400, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: false, error: 'Content must be a non-empty string' }));
+            return;
+          }
+          if (content.length > 500000) {
+            res.writeHead(400, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: false, error: 'Content too large (max 500KB)' }));
+            return;
+          }
+          if (!content.startsWith('#')) {
+            res.writeHead(400, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: false, error: 'Content must start with # (Markdown heading)' }));
+            return;
+          }
+          const ceoAgent = AGENT_CLAUDE_MDS.find(a => a.key === 'ceo');
+          fs.writeFileSync(ceoAgent.path, content);
+          res.writeHead(200, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ ok: true, message: 'Saved' }));
+        } catch (err) {
+          res.writeHead(400, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ ok: false, error: 'Invalid JSON: ' + err.message }));
+        }
+      });
+      return;
     } else if (pathname === '/claudemd') {
       // Extra password gate for CLAUDE.md section
       if (!checkClaudemdSession(req)) {

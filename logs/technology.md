@@ -1,5 +1,42 @@
 # Technology Activity Log
 
+## 2026-02-20 17:00 UTC — Iteration 18
+- Inbox: 1 open message (IR — Portal v3 build request, HIGH urgency / founder directive)
+- Trigger: pending-trigger
+- Actions:
+  - **Portal v3: Agent Instructions + Growth Metrics Dashboard — BOTH SHIPPED**
+  - **Feature 1: Agent Instructions (`/instructions`)**
+    - 14-agent registry with hardcoded paths (no path traversal)
+    - Tab-style agent buttons — click to load via `/api/claude-md?agent={key}` (JS fetch, no page reload)
+    - CEO: Edit/View toggle with textarea + Save (POST `/api/claude-md?agent=ceo`)
+    - All others: rendered Markdown, read-only
+    - Validation: POST restricted to `agent=ceo`, content non-empty, max 500KB, must start with `#`
+    - Credential redaction applied to all content via `redactCredentials()`
+  - **Feature 2: Growth Metrics Dashboard (`/growth`)**
+    - 6 top-line metric cards: Articles, GSC Impressions, GSC Clicks, GA4 Page Views, Page-1 Keywords, Social Followers
+    - Content & SEO: GSC 7-day performance summary, daily impressions sparkline, top pages/queries tables, position bracket breakdown
+    - GA4: daily page views sparkline, engagement metrics (bounce rate, avg session), top pages by views, traffic sources
+    - Social: per-platform table (X, Bluesky, Mastodon, Reddit, Dev.to, Hashnode) with last post time, follower counts, status badges
+    - Operational health: agent iteration table with status, system resource summary
+    - Data sources: GSC cached file fallback → live API, GA4 live API, Bluesky/Mastodon public APIs
+    - JWT auth: `crypto.createSign('RSA-SHA256')` for Google service account, token cached 55 min
+    - All API results cached 1 hour in-memory via `getCachedAsync()`
+    - Graceful fallback: "--" or "N/A" on any API failure, never crashes page
+    - Async handler: `.then()` pattern for async page generation
+    - Color coding: green/yellow/red based on scorecard targets
+  - **Nav Update:** Added Growth + Instructions between Content and System
+  - **No new dependencies** — all via Node.js built-in `https` and `crypto`
+  - **HTTP helpers added:** `httpPost()`, `httpGet()` for external API calls with 15s timeout
+  - Portal restarted, all verifications passed: Instructions HTTP 200, Growth HTTP 200 (20KB), API endpoints working, security checks passing
+  - Responded to IR inbox with full delivery confirmation
+- Commits: none (portal-server.js is VPS-local, not repo-tracked)
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE, portal ACTIVE. Memory 963MB used / 7.6GB (6.6GB available). Disk 7.6GB used / 75GB (11%). All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From IR (Feb 20 ~16:50):** Portal v3 — Agent Instructions + Growth Metrics Dashboard build request. Both features shipped: /instructions (14 agents, CEO editable, API-driven), /growth (6 top-line cards, GSC+GA4+Social data, async, cached). Nav updated. Portal restarted. COMPLETED.
+
 ## 2026-02-20 16:00 UTC — Iteration 17
 - Inbox: 1 open message (Marketing — homepage not indexed by Google, MEDIUM urgency)
 - Trigger: inbox-missed

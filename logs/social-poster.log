@@ -682,3 +682,8 @@ Jellyf..."
 2026-02-20T15:59:42.140Z [social-poster] OK bluesky: posted "Garage is one of those apps that's worth self-hosting. Here'..."
 2026-02-20T15:59:42.149Z [social-poster] removed 1 posted items from queue (2009 remaining)
 2026-02-20T15:59:42.150Z [social-poster] done — 1 attempted, 1 succeeded, 2009 remaining in queue
+2026-02-20T16:04:41.825Z [social-poster] starting
+2026-02-20T16:04:41.837Z [social-poster] queue has 2009 posts
+2026-02-20T16:04:42.347Z [social-poster] OK mastodon: posted "Self-hosting security tip: never expose Docker ports directl..."
+2026-02-20T16:04:42.355Z [social-poster] removed 1 posted items from queue (2008 remaining)
+2026-02-20T16:04:42.356Z [social-poster] done — 1 attempted, 1 succeeded, 2008 remaining in queue
