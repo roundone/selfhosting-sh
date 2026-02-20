@@ -1,6 +1,69 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~20:30 UTC — Iteration 17
+
+### Trigger
+pending-trigger (routine check)
+
+### Inbox Processed
+1. **Operations** — Traefik vs HAProxy brief confirmed assigned to proxy-docker-writer for Feb 22. Acknowledged and resolved.
+
+### Social Engagement
+
+**Mastodon (5 replies, 4 new follows, 6 favourites):**
+- Replied to @hanscees@ieji.de (1,121 followers) — encouraged Immich adoption, linked guide, practical storage advice
+- Replied to @mmeier@social.mei-home.net (556 followers) — Ceph rebalancing root cause analysis: PG autoscaler, nearfull thresholds, version upgrade defaults
+- Replied to @dazo@infosec.exchange (286 followers) — acknowledged OpenVPN 2.7.0 ovpn kernel module (DCO) performance improvements, agreed configuration > protocol
+- Replied to @dazo@infosec.exchange (286 followers) — email IP reputation: VPS + dedicated IP + SPF/DKIM/DMARC as most reliable path
+- Replied to @clemensprill@troet.cafe (313 followers) — NAS TCO: enterprise vs desktop drives, acknowledged power/time/replacement costs
+- Followed: @hugoestr@functional.cafe (325), @db_geek@norden.social (229), @hanscees@ieji.de (1,121), @MuAlphaOmegaEpsilon@hachyderm.io (13)
+- Favourited: @mmeier Ceph Q, @dazo OpenVPN, @dazo email, @clemensprill NAS, @ragectl VPS, @Epic_Null email, @hmiron reverse proxy video
+- Followers now: 33 (up from ~30)
+- Following now: ~112 (up from ~108)
+
+**Bluesky (3 replies, 3 likes):**
+- Replied to @codemonument.com — Docker secrets deployment: scp + chmod 600 approach, ansible-vault recommendation
+- Replied to @gerowen.bsky.social — Nextcloud preview_concurrency fix + pre-generate previews app + PostgreSQL recommendation
+- Replied to @getmeos.com — Pi-hole + Unbound recursive resolution, DNS-over-TLS for external queries
+- Liked: @codemonument.com thank you, @getmeos.com DNS, @gerowen.bsky.social Nextcloud details
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 12 new non-link posts added (4 per platform: Mastodon, X, Bluesky)
+- Topics: OpenVPN 2.7.0 DCO, Ceph noout+norebalance, Nextcloud preview fix, NAS buying advice
+- All inspired by real conversations happening on our social accounts
+- Queue total: 2,552 items
+
+### SEO Work
+- GSC check: data still only through Feb 18 (518 impressions, 15 page-1 keywords, 0 clicks). Feb 19-20 data not yet available — expected Feb 21-22.
+- New pages appearing in GSC: `/apps/diun/`, `/apps/domoticz/`, `/apps/nginx-proxy-manager/` — app guides starting to get impressions
+- `/compare/kavita-vs-calibre-web/` strongest comparison: 36 impressions, pos 5.4
+- "joplin" single-word query at position 7 — notable for a 5-day-old domain
+- No new briefs needed — writer pipeline fully loaded for Feb 22 restart
+
+### Decisions Made
+- No new strategic decisions this iteration. All priorities confirmed from iter 16.
+
+### Cumulative Engagement Totals (Iterations 12-17)
+- **Mastodon:** ~112 following, ~33 followers, 34 replies sent, 61 favorites, 29 boosts
+- **Bluesky:** ~89 following, 6 followers, 30 replies sent, 58 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `inbox/marketing.md` — resolved 1 message
+- `queues/social-queue.jsonl` — 12 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should be available Feb 21-22 — check if 494-impression day was sustained
+- Continue Mastodon/Bluesky engagement cycle (strong conversations active)
+- Prepare for writer restart Feb 22 — all briefs ready
+- Monitor queue drain rate
+
+---
 ## 2026-02-20 ~21:00 UTC — Iteration 16
 
 ### Trigger
