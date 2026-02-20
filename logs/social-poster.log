@@ -523,3 +523,60 @@ docker run --rm -v myvolume..."
 2026-02-20T13:00:18.844Z [social-poster] OK mastodon: posted "Immich is the self-hosted Google Photos replacement you've b..."
 2026-02-20T13:00:18.854Z [social-poster] removed 2 posted items from queue (1978 remaining)
 2026-02-20T13:00:18.854Z [social-poster] done — 2 attempted, 2 succeeded, 1978 remaining in queue
+2026-02-20T13:05:17.447Z [social-poster] starting
+2026-02-20T13:05:17.457Z [social-poster] queue has 1978 posts
+2026-02-20T13:05:17.458Z [social-poster] done — 0 attempted, 0 succeeded, 1978 remaining in queue
+2026-02-20T13:10:17.524Z [social-poster] starting
+2026-02-20T13:10:17.539Z [social-poster] queue has 1978 posts
+2026-02-20T13:10:17.900Z [social-poster] OK bluesky: posted "Want to self-host Docker Registry? Our guide covers Docker C..."
+2026-02-20T13:10:17.915Z [social-poster] removed 1 posted items from queue (1977 remaining)
+2026-02-20T13:10:17.916Z [social-poster] done — 1 attempted, 1 succeeded, 1977 remaining in queue
+2026-02-20T13:15:17.562Z [social-poster] starting
+2026-02-20T13:15:17.571Z [social-poster] queue has 1977 posts
+2026-02-20T13:15:17.572Z [social-poster] done — 0 attempted, 0 succeeded, 1977 remaining in queue
+2026-02-20T13:20:17.662Z [social-poster] starting
+2026-02-20T13:20:17.672Z [social-poster] queue has 1977 posts
+2026-02-20T13:20:17.908Z [social-poster] OK x: posted "How to self-host Audiobookshelf — our step-by-step Docker Co..."
+2026-02-20T13:20:18.233Z [social-poster] OK mastodon: posted "Home Assistant: 2,000+ integrations, full local control, no ..."
+2026-02-20T13:20:18.243Z [social-poster] removed 2 posted items from queue (1975 remaining)
+2026-02-20T13:20:18.244Z [social-poster] done — 2 attempted, 2 succeeded, 1975 remaining in queue
+2026-02-20T13:25:17.749Z [social-poster] starting
+2026-02-20T13:25:17.758Z [social-poster] queue has 1975 posts
+2026-02-20T13:25:18.134Z [social-poster] OK bluesky: posted "Self-hosting Dockge is easier than you think. Docker Compose..."
+2026-02-20T13:25:18.144Z [social-poster] removed 1 posted items from queue (1974 remaining)
+2026-02-20T13:25:18.144Z [social-poster] done — 1 attempted, 1 succeeded, 1974 remaining in queue
+2026-02-20T13:30:17.856Z [social-poster] starting
+2026-02-20T13:30:17.868Z [social-poster] queue has 1974 posts
+2026-02-20T13:30:17.869Z [social-poster] done — 0 attempted, 0 succeeded, 1974 remaining in queue
+2026-02-20T13:35:17.956Z [social-poster] starting
+2026-02-20T13:35:17.965Z [social-poster] queue has 1974 posts
+2026-02-20T13:35:18.208Z [social-poster] OK x: posted "Deploy Authelia with Docker Compose in minutes. Full setup g..."
+2026-02-20T13:35:18.219Z [social-poster] removed 1 posted items from queue (1973 remaining)
+2026-02-20T13:35:18.219Z [social-poster] done — 1 attempted, 1 succeeded, 1973 remaining in queue
+2026-02-20T13:40:18.051Z [social-poster] starting
+2026-02-20T13:40:18.062Z [social-poster] queue has 1973 posts
+2026-02-20T13:40:18.408Z [social-poster] OK mastodon: posted "Vaultwarden is a lightweight Rust reimplementation of the Bi..."
+2026-02-20T13:40:18.740Z [social-poster] OK bluesky: posted "Want to self-host Docmost? Our guide covers Docker Compose s..."
+2026-02-20T13:40:18.750Z [social-poster] removed 2 posted items from queue (1971 remaining)
+2026-02-20T13:40:18.751Z [social-poster] done — 2 attempted, 2 succeeded, 1971 remaining in queue
+2026-02-20T13:45:18.134Z [social-poster] starting
+2026-02-20T13:45:18.144Z [social-poster] queue has 1971 posts
+2026-02-20T13:45:18.145Z [social-poster] done — 0 attempted, 0 succeeded, 1971 remaining in queue
+2026-02-20T13:50:18.235Z [social-poster] starting
+2026-02-20T13:50:18.245Z [social-poster] queue has 1971 posts
+2026-02-20T13:50:18.460Z [social-poster] OK x: posted "Self-host Authentik: Docker Compose config, setup walkthroug..."
+2026-02-20T13:50:18.470Z [social-poster] removed 1 posted items from queue (1970 remaining)
+2026-02-20T13:50:18.471Z [social-poster] done — 1 attempted, 1 succeeded, 1970 remaining in queue
+2026-02-20T13:55:18.258Z [social-poster] starting
+2026-02-20T13:55:18.269Z [social-poster] queue has 1970 posts
+2026-02-20T13:55:18.614Z [social-poster] OK bluesky: posted "Domoticz is one of those apps that's worth self-hosting. Her..."
+2026-02-20T13:55:18.623Z [social-poster] removed 1 posted items from queue (1969 remaining)
+2026-02-20T13:55:18.624Z [social-poster] done — 1 attempted, 1 succeeded, 1969 remaining in queue
+2026-02-20T14:00:18.293Z [social-poster] starting
+2026-02-20T14:00:18.302Z [social-poster] queue has 1969 posts
+2026-02-20T14:00:18.967Z [social-poster] OK mastodon: posted "Pi-hole: the gateway drug to self-hosting. Network-wide ad b..."
+2026-02-20T14:00:18.979Z [social-poster] removed 1 posted items from queue (1968 remaining)
+2026-02-20T14:00:18.980Z [social-poster] done — 1 attempted, 1 succeeded, 1968 remaining in queue
+2026-02-20T14:05:18.311Z [social-poster] starting
+2026-02-20T14:05:18.320Z [social-poster] queue has 1968 posts
+2026-02-20T14:05:18.321Z [social-poster] done — 0 attempted, 0 succeeded, 1968 remaining in queue

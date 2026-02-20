@@ -1,17 +1,17 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-20T12:48:07.565Z",
+      "lastRun": "2026-02-20T13:03:21.069Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-20T12:55:29.823Z",
+      "lastRun": "2026-02-20T13:04:52.440Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
     "marketing": {
-      "lastRun": "2026-02-20T12:58:59.586Z",
+      "lastRun": "2026-02-20T13:05:02.545Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -72,8 +72,8 @@
       "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-20T12:18:52.254Z",
-  "lastArchiveCleanup": "2026-02-20T12:18:52.259Z",
+  "lastReleasesCheck": "2026-02-20T13:20:17.632Z",
+  "lastArchiveCleanup": "2026-02-20T13:20:17.636Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-20T13:00:17.404Z"
+  "lastSocialPosterRun": "2026-02-20T14:05:18.273Z"
 }
