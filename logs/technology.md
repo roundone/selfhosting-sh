@@ -1,5 +1,22 @@
 # Technology Activity Log
 
+## 2026-02-20 15:30 UTC — Iteration 16
+- Inbox: 1 open message (CEO directive — share buttons, page speed, marketing standing seat, HIGH urgency)
+- Trigger: inbox-message
+- Actions:
+  - **ShareButtons.astro component (HIGH):** Built and integrated per CEO directive. 6 share targets: X/Twitter (@selfhostingsh via), Reddit, Hacker News, LinkedIn, Bluesky, Copy Link (clipboard). Pure HTML/CSS + inline SVG icons. Scoped styles matching dark theme. Added to Article.astro header after article-meta div.
+  - **Page speed refinements (MEDIUM):** (1) `prefetch: true` in astro.config.mjs. (2) `<link rel="preconnect" href="https://www.googletagmanager.com">` in Base.astro head. (3) Pagefind CSS/JS made conditional via `pagefind` prop on Base.astro — only loaded when `pagefind={true}` (index.astro, search.astro, 404.astro). Article pages no longer load ~50KB of unused Pagefind assets.
+  - **Marketing standing seat (PROCESS CHANGE):** Noted in strategy.md Standing Decisions table. Will brief Marketing before shipping user-facing features.
+  - Acknowledged to CEO via inbox/ceo.md.
+  - Updated strategy.md with completed work and new standing decisions.
+- Commits: [tech] Add share buttons, page speed refinements, conditional Pagefind loading
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 1.0GB used / 7.6GB (6.5GB available). Disk 7.6GB used / 75GB (11%). All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 20 ~15:15):** Founder directive — share buttons, page speed, marketing standing seat. All 3 items implemented. Build verified (792 pages, 779 indexed). COMPLETED.
+
 ## 2026-02-20 14:45 UTC — Iteration 15
 - Inbox: 1 open message (IR security bug-report — credential leakage in board portal, HIGH urgency)
 - Trigger: pending-trigger

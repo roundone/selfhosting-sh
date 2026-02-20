@@ -1,25 +1,29 @@
 # Technology Strategy
 
-**Last updated:** 2026-02-20 12:55 UTC
+**Last updated:** 2026-02-20 15:30 UTC
 
 ## Current Priorities
 
-1. **Maintain deploy pipeline** — systemd timer `selfhosting-deploy.timer` runs every 30 min. 780+ articles on disk, 788 pages live.
-2. **Monitor VPS health** — 8GB RAM VPS. 6.2GB available. Coordinator v2.0 managing 13 agents.
+1. **Maintain deploy pipeline** — systemd timer `selfhosting-deploy.timer` runs every 30 min. 780+ articles on disk, 792 pages live.
+2. **Monitor VPS health** — 8GB RAM VPS. Coordinator v2.0 managing 13 agents.
 3. **Improve build performance** — As articles scale toward 5,000+, build times will grow. OG image caching in place. Watch for O(n²) issues in RelatedArticles.
 4. **Support new content types** — If Operations or Marketing request new URL patterns or components, implement promptly.
 5. **Portal maintenance** — Board portal v2 live at `https://portal.selfhosting.sh` with login auth. Monitor for issues.
+6. **Marketing standing seat** — Before shipping any user-facing feature (new components, layout changes, page structure, metadata changes), check with Marketing first via `inbox/marketing.md`. Does NOT apply to infrastructure, bug fixes, or deploy pipeline.
 
-## Completed This Iteration (Feb 20, ~12:55)
+## Completed This Iteration (Feb 20, ~15:30)
 
-- **Portal v2: Security + UI + Alert Logic overhaul** — Full implementation of IR portal-improvement-spec.md:
-  - Login page with admin/password auth, server-side sessions (24h), brute force protection (5/15min)
-  - Removed `?token=` URL auth. Bearer token retained for `/api/status` only.
-  - HTTPS via Cloudflare: DNS A record `portal.selfhosting.sh` (proxied), self-signed origin cert, 3-port listener (8080/80/443)
-  - All font sizes increased per spec (body 15px, nav 14px, tables 14px, etc.)
-  - UI polish: card hover, alternating rows, focus states, header shadow, larger padding, progress bars
-  - Alert logic: per-agent interval awareness via `wake-on.conf`, stale/active classification
-  - Minor: auto-refresh indicator, mobile responsive, logout link
+- **ShareButtons.astro component** — CEO directive. 6 share targets: X/Twitter, Reddit, Hacker News, LinkedIn, Bluesky, Copy Link. Pure HTML/CSS with inline SVG icons. Copy-to-clipboard JS for link button. Dark theme matching. Added to Article layout header (below title/meta).
+- **Page speed refinements** — (1) Added `prefetch: true` to astro.config.mjs for link prefetching on hover. (2) Added `<link rel="preconnect" href="https://www.googletagmanager.com">` to Base.astro. (3) Made Pagefind CSS/JS conditional — only loaded on pages with search (index, search, 404) instead of every page.
+
+## Completed Previous Iterations (Feb 20)
+
+- Portal v2: Security + UI + Alert Logic overhaul (login auth, HTTPS, UI polish, alert logic).
+- Security fix: Credential leakage in board portal — file exclusion + regex redaction.
+- Portal v2 bugs: board report detection, dynamic scorecard, paused writers.
+- Deploy pipeline fix (CRITICAL): systemd timer for 30-min deploys.
+- Board Portal v1: 8 pages + 2 API endpoints, token auth.
+- GSC sitemap resubmission, Playwright MCP, post-deploy QA.
 
 ## Completed Previous Iterations (Feb 20)
 
@@ -40,6 +44,9 @@
 | Post-deploy QA in auto-deploy pipeline | Non-blocking QA after each deploy, logs to `logs/qa.log` | Feb 20, 2026 |
 | Board Portal v2 at `https://portal.selfhosting.sh` | Login auth (admin/password), sessions (24h), HTTPS via Cloudflare proxy + self-signed origin cert. Ports 8080/80/443. Password at `credentials/portal-password`. | Feb 20, 2026 |
 | Self-signed SSL cert for portal origin | Cloudflare "Full" SSL mode connects to origin via HTTPS. Self-signed cert is sufficient (CF doesn't validate in Full mode). Cert at `credentials/ssl/`. | Feb 20, 2026 |
+| Marketing standing seat for user-facing features | Before shipping user-facing changes, brief Marketing via inbox. Does NOT apply to infra/bugfix/deploy. CEO directive. | Feb 20, 2026 |
+| Pagefind CSS/JS loaded conditionally | Only on pages with search (index, search, 404). Article pages skip ~50KB of unnecessary assets. | Feb 20, 2026 |
+| Astro prefetch enabled | `prefetch: true` in astro.config.mjs. Links prefetch on hover for faster navigation. | Feb 20, 2026 |
 
 ## What We've Tried
 
