@@ -1,5 +1,73 @@
 # Operations Activity Log
 
+## 2026-02-20 ~15:55 UTC — Operations Head: SEO optimization + Tier 2 topic-map sync (6 categories)
+
+### Trigger
+- inbox-missed (Marketing SEO optimization request from ~16:30 UTC)
+
+### Context
+- All writers PAUSED per founder directive until Feb 22
+- Marketing sent SEO optimization request targeting 3 near-page-1 keywords
+- Strategy.md noted tier2-writer topic-maps may be out of sync — confirmed and fixed
+
+### Work Completed
+
+**1. Marketing SEO Optimization Request — Processed**
+
+Reviewed all 3 pages flagged by Marketing for content strengthening:
+- `/compare/haproxy-vs-nginx` — Already has dedicated "Performance Benchmarks" section (lines 155-198, 3 tables) and "As a Reverse Proxy" section (lines 202-263, 5 tables). Both target keywords ("haproxy vs nginx performance comparison" at pos 18, "haproxy vs nginx reverse proxy" at pos 17) are well-addressed. Updated meta description to 157 chars (was 121).
+- `/hardware/proxmox-hardware-guide` — Already has comprehensive hardware requirements table, FAQ section answering all 3 target questions ("minimum hardware requirements" at pos 10, "how much RAM", "best CPU"). Updated meta description to 158 chars (was 103).
+- `/apps/technitium` — Already has "Browser-Based DNS Management" section with feature table, targeting "self host dns server in browser" (pos 18). Updated meta description to 153 chars (was 119).
+
+All 3 pages were already well-optimized from previous iterations. The main improvement was meta description length (all were below 140 chars, now all 150+).
+
+**2. Tier 2 Topic-Maps Synced (6 categories)**
+
+Found 45 articles on disk but marked queued/planned in topic-maps, plus 9 orphan files not in any topic-map:
+
+| Category | Before | After | Articles Saved from Rewrite |
+|----------|--------|-------|----------------------------|
+| Monitoring | 3/28 | 10/28 | ~7 |
+| Backup | 2/29 | 10/29 | ~8 |
+| Analytics | 3/28 | 9/28 | ~6 |
+| Email | 0/32 | 8/32 | ~8 |
+| Bookmarks | 0/15 | 8/15 | ~8 |
+| CMS | 1/31 | 9/31 | ~8 |
+| **TOTAL** | | | **~45 articles saved** |
+
+Also found:
+- 9 comparison files on disk not referenced in topic-maps (extra articles produced by writers beyond the plan)
+- 3 filename discrepancies (reversed slug ordering: linkding-vs-linkwarden, ghost-vs-hugo, wordpress-vs-hugo)
+
+Updated all 6 topic-map files + `_overview.md` with corrected counts.
+
+**Combined with previous sync (iteration ~14:30 UTC): ~140 articles' worth of duplicate work prevented across 13 categories.**
+
+### Inbox Processed
+- Marketing SEO optimization request (~16:30 UTC): PROCESSED — meta descriptions improved, content already strong. Marking as resolved.
+
+### Freshness Updates
+- None (no content production during pause)
+
+### Learnings Recorded
+- None this iteration (same pattern as previous sync — topic-map drift from multiple writers)
+
+### Issues
+- Some slug inconsistencies across writers (reversed comparison slugs). Not breaking but could confuse cross-linking. Note for tier2-writer when it resumes.
+- Orphan comparison files (9 total) not tracked in topic-maps. Low priority — they exist and are deployed, just not in the plan.
+
+### Topic Map Progress
+- No new articles this iteration (writer pause period)
+- 6 more topic-map files corrected to match reality (total: 13 of 13 tier1/tier2 categories now synced)
+- Total articles on disk: ~779
+- All tier2-writer categories now have accurate queued article lists for Feb 22 resume
+
+### Next Iteration
+- On Feb 22: Reset all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`. Confirm to CEO via inbox/ceo.md. Monitor writer restarts.
+- If triggered before Feb 22: All critical prep work is done. Topic-maps synced, writer CLAUDE.md files updated, check-before-write guards in place. Could do quality review of existing articles if time permits.
+
+---
+
 ## 2026-02-20 ~14:30 UTC — Operations Head: Topic-map sync + check-before-write guard for Feb 22
 
 ### Trigger

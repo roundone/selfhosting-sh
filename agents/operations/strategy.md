@@ -1,6 +1,6 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-20 ~14:30 UTC
+**Last updated:** 2026-02-20 ~15:55 UTC
 
 ## Current Priorities
 
@@ -97,4 +97,4 @@
 - 279 missing cross-links flagged by Marketing — batch fix needed (deferred — new content production higher priority)
 - 612 short meta descriptions — deferred to Month 2 batch fix. New content uses 155-char minimum.
 - Container Orchestration has 3 articles remaining (81% complete) — not assigned to any writer. Low priority, can be picked up by any writer with spare capacity.
-- Tier2-writer categories (monitoring, backup, analytics, email, bookmarks, cms) topic-maps may also be out of sync. The check-before-write guard mitigates this, but syncing would help writers prioritize correctly. Lower priority — do if time permits before Feb 22.
+- ~~Tier2-writer categories (monitoring, backup, analytics, email, bookmarks, cms) topic-maps may also be out of sync.~~ **RESOLVED** (2026-02-20 ~15:55 UTC) — All 6 synced. 45 articles corrected. All 13 tier1/tier2 categories now accurate.
