@@ -5554,3 +5554,39 @@
 [2026-02-20T09:47:25.322Z] WRITER_SLOT ops-hardware-writer — writer slot freed by ops-foundations-writer
 [2026-02-20T09:47:25.322Z] AGENT ops-hardware-writer starting (trigger: writer-slot-available)
 [2026-02-20T09:47:25.323Z] AGENT ops-hardware-writer started (pid: 38812)
+[2026-02-20T09:47:42.976Z] AGENT technology exited (code=0, duration: 577s)
+[2026-02-20T09:47:42.977Z] STATE technology lastRun updated, errors reset
+[2026-02-20T09:47:42.977Z] PENDING technology processing queued trigger
+[2026-02-20T09:47:42.977Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T09:48:10.732Z] STATUS running=2/4 writers=1/1 freeMem=6778MB agents=[operations(60s), ops-hardware-writer(45s)] paused=no
+[2026-02-20T09:48:10.733Z] SOCIAL running social-poster.js
+[2026-02-20T09:48:10.763Z] SOCIAL 2026-02-20T09:48:10.761Z [social-poster] starting
+[2026-02-20T09:48:10.771Z] SOCIAL 2026-02-20T09:48:10.771Z [social-poster] queue has 1918 posts
+[2026-02-20T09:48:10.771Z] SOCIAL 2026-02-20T09:48:10.771Z [social-poster] done — 0 attempted, 0 succeeded, 1918 remaining in queue
+[2026-02-20T09:48:10.774Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:48:25.436Z] WRITER_LIMIT ops-foundations-writer — 1 writers already running, queued
+[2026-02-20T09:50:31.087Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T09:50:31.088Z] AGENT ceo started (pid: 39435)
+[2026-02-20T09:52:43.104Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T09:52:43.106Z] AGENT technology started (pid: 39601)
+[2026-02-20T09:53:10.736Z] STATUS running=4/4 writers=1/1 freeMem=6432MB agents=[operations(360s), ops-hardware-writer(345s), ceo(160s), technology(28s)] paused=no
+[2026-02-20T09:53:10.736Z] SOCIAL running social-poster.js
+[2026-02-20T09:53:10.774Z] SOCIAL 2026-02-20T09:53:10.772Z [social-poster] starting
+[2026-02-20T09:53:10.784Z] SOCIAL 2026-02-20T09:53:10.784Z [social-poster] queue has 1918 posts
+[2026-02-20T09:53:10.785Z] SOCIAL 2026-02-20T09:53:10.785Z [social-poster] done — 0 attempted, 0 succeeded, 1918 remaining in queue
+[2026-02-20T09:53:10.789Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:58:10.750Z] STATUS running=4/4 writers=1/1 freeMem=6375MB agents=[operations(660s), ops-hardware-writer(645s), ceo(460s), technology(328s)] paused=no
+[2026-02-20T09:58:10.751Z] SOCIAL running social-poster.js
+[2026-02-20T09:58:10.801Z] SOCIAL 2026-02-20T09:58:10.798Z [social-poster] starting
+[2026-02-20T09:58:10.813Z] SOCIAL 2026-02-20T09:58:10.813Z [social-poster] queue has 1918 posts
+[2026-02-20T09:58:11.042Z] SOCIAL 2026-02-20T09:58:11.042Z [social-poster] OK x: posted "Docker Compose is the single highest-leverage skill for self..."
+[2026-02-20T09:58:11.367Z] SOCIAL 2026-02-20T09:58:11.367Z [social-poster] OK bluesky: posted "Self-hosting Bazarr is easier than you think. Docker Compose..."
+[2026-02-20T09:58:11.375Z] SOCIAL 2026-02-20T09:58:11.375Z [social-poster] removed 2 posted items from queue (1916 remaining)
+[2026-02-20T09:58:11.376Z] SOCIAL 2026-02-20T09:58:11.376Z [social-poster] done — 2 attempted, 2 succeeded, 1916 remaining in queue
+[2026-02-20T09:58:11.381Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T10:03:10.849Z] STATUS running=4/4 writers=1/1 freeMem=6351MB agents=[operations(960s), ops-hardware-writer(946s), ceo(760s), technology(628s)] paused=no
+[2026-02-20T10:03:10.849Z] SOCIAL running social-poster.js
+[2026-02-20T10:03:10.882Z] SOCIAL 2026-02-20T10:03:10.880Z [social-poster] starting
+[2026-02-20T10:03:10.891Z] SOCIAL 2026-02-20T10:03:10.891Z [social-poster] queue has 1916 posts
+[2026-02-20T10:03:10.892Z] SOCIAL 2026-02-20T10:03:10.891Z [social-poster] done — 0 attempted, 0 succeeded, 1916 remaining in queue
+[2026-02-20T10:03:10.895Z] SOCIAL social-poster.js exited (code: 0)
