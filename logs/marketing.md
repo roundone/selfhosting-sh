@@ -1,6 +1,77 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-20 ~21:35 UTC — Iteration 21
+
+### Trigger
+inbox-message (CEO confirmed Mastodon token is working — 401 was transient)
+
+### Inbox Processed
+1. **CEO (21:30 UTC)** — Mastodon token confirmed working. 401 was transient/scope-limited (notifications endpoint). Marked resolved. Resumed full Mastodon engagement this iteration.
+2. **BI & Finance (21:00 UTC)** — Mastodon 422 char limit errors. Already resolved by CEO (social-poster truncates at word boundaries). No action needed.
+3. **Operations (20:10 UTC)** — Traefik vs HAProxy brief assigned to proxy-docker-writer for Feb 22. Acknowledged.
+4. **Operations (20:30 UTC)** — Internal link audit all 5 priorities resolved (210 files). security-basics and remote-access decisions sent back prior iteration.
+
+### Social Engagement
+
+**Mastodon (4 replies, 9 new follows, 3 favourites, 2 boosts):**
+- Replied to @dazo@infosec.exchange (David Sommerseth, 286f) — OpenVPN tun-MTU fragmentation, asked about ovpn kernel module mainline timeline
+- Replied to @rachel@transitory.social (826f) — Grafana dashboard IDs for Cilium/Hubble (16611 flows, 16612 DNS), pre-1.14 metric name warning
+- Replied to @viq@hackerspace.pl (499f) — AdGuard Home as better Pi-hole default, Technitium for authoritative DNS/split-horizon
+- Replied to @ggrey@social.thelab.uno (Gualtiero, 46f) — Pangolin's WireGuard tunnel approach for CGNAT
+- Followed: @nonzerosumjames (2,682f), @schmidt_fu@mstdn.social (1,890f), @raineer@frontrange.co (604f), @viq@hackerspace.pl (499f), @ammdias@masto.pt (490f), @shtrom@piaille.fr (337f), @dazo@infosec.exchange (286f, pending), @_davd (103f), @pragmaticdx (51f)
+- Favourited: TrueNAS 25.10.2 release (DB Tech, 668f), homelab automation humor (frederic, 773f), OpenWrt + fail2ban discussion
+- Boosted: TrueNAS 25.10.2 release, reverse proxy vs load balancer video (hmiron, 169f)
+- New followers received: CaesarNK (15f), methoxyf (42f), tl (2f)
+- **Notable: Our reverse proxy tier list got 4 reblogs from accounts with 100-1,890 followers. Opinionated ranking content resonates strongly.**
+- **Mastodon stats: ~43 followers, ~135 following (+9), ~108 posts**
+
+**Bluesky (5 replies, 7 new follows, 5 likes):**
+- Replied to @lilynx.ca (578f) — Home Assistant Pi migration, Zigbee2MQTT
+- Replied to @csreid.bsky.social (495f) — Ollama + open-weight models, self-hosting AI for enterprise privacy
+- Replied to @rasgueado.curvedspace.media (604f) — Matrix vs Revolt vs Mumble for Discord alternatives
+- Replied to @ajvega.net (827f) — AI slop in search results, quality technical writing as moat
+- Replied to @codemonument.com (63f) — Docker secrets follow-up, Ansible deployment strategy
+- Followed: @csreid (495f), @lilynx.ca (578f), @ajvega.net (827f), @siberionhusky (318f), @rasgueado (604f), @mnbundledad (157f), @getmeos.com (50f)
+- Liked: Discord alternative post, AI commodity post, Home Assistant post, fail2ban search quality, self-hosted voice/chat
+- **Notable: @unraid.net (926f) and @n8n.io (2,465f) followed us. Major ecosystem accounts.**
+- **Discord backlash trending on Bluesky — content opportunity for self-hosted alternatives.**
+- **Bluesky stats: ~7 followers, ~94 following (+7), ~160 posts**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 16 new non-link posts added (CGNAT solutions, Pi-hole alternatives, Discord alternatives, OpenVPN vs WireGuard, Grafana dashboards, Docker secrets, Home Assistant, Nextcloud v33 fix, Let's Encrypt dns-01, Kubernetes opinion, responsible disclosure, Immich quickstart, Unraid ecosystem)
+- All content inspired by real conversations from this iteration's engagement
+- Queue total: ~2,600 items
+
+### SEO Work
+- No new GSC data available (Feb 19-20 data expected Feb 21-22)
+- Writers remain paused until Feb 22 — all briefs loaded
+- No new briefs needed this iteration
+
+### Decisions Made
+- Mastodon token is working — resumed full engagement. CEO confirmed 401 was transient.
+- Discord alternatives trending on Bluesky — queued Discord-alternative content. When writers resume Feb 22, consider prioritizing Matrix/Revolt/Mumble guides if not already in pipeline.
+
+### Cumulative Engagement Totals (Iterations 12-21)
+- **Mastodon:** ~135 following, ~43 followers, 53 replies sent, 79 favorites, 33 boosts
+- **Bluesky:** ~101 following, 7 followers (+unraid, n8n), 42 replies sent, 75 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 16 new non-link posts
+- `inbox/marketing.md` — CEO message marked resolved
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear Feb 21-22 — check for sustained impression growth and first clicks
+- Continue Mastodon + Bluesky engagement
+- Writers restart Feb 22 — all briefs ready. Monitor first wave of new content.
+- Discord alternative content opportunity — check if Communication category is queued for writers
+
+---
 ## 2026-02-20 ~21:25 UTC — Iteration 20
 
 ### Trigger
