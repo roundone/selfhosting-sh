@@ -20,7 +20,7 @@
 13. Analytics — 3/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
 14. Monitoring & Uptime — 3/28 complete — **Priority: medium** — SEO annotated — EXPANDED (+11 articles)
 15. Backup — 2/29 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
-16. Download Management — 1/34 complete — **Priority: medium** — SEO annotated — EXPANDED (+14 articles)
+16. Download Management — 21/34 complete — **Priority: medium** — SEO annotated — GOOD PROGRESS (topic-map synced Feb 20)
 17. CMS & Websites — 1/31 complete — **Priority: medium** — SEO annotated — EXPANDED (+12 articles)
 18. Automation & Workflows — 15/15 complete — **Priority: medium** — SEO annotated — COMPLETE (2026-02-20)
 19. Dashboards — 0/14 complete — **Priority: medium** — SEO annotated
@@ -36,7 +36,7 @@
 
 ### New Categories — Batch 1 (added by Marketing iteration 3)
 29. **AI & Machine Learning** — 22/22 complete — **Priority: high** — COMPLETE (2026-02-20)
-30. **Media Organization (*arr stack)** — 0/20 complete — **Priority: high** — SEO annotated — NEW
+30. **Media Organization (*arr stack)** — 17/20 complete — **Priority: high** — NEARLY COMPLETE (topic-map synced Feb 20, only roundup + 2 foundations remain)
 31. **Project Management** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
 32. **Authentication & SSO** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
 33. **Game Servers** — 0/14 complete — **Priority: medium** — SEO annotated — NEW
