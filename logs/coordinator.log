@@ -5155,3 +5155,372 @@
 [2026-02-20T07:23:13.783Z] SOCIAL 2026-02-20T07:23:13.783Z [social-poster] removed 3 posted items from queue (1929 remaining)
 [2026-02-20T07:23:13.784Z] SOCIAL 2026-02-20T07:23:13.784Z [social-poster] done — 3 attempted, 3 succeeded, 1929 remaining in queue
 [2026-02-20T07:23:13.789Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T07:58:06.555Z] AGENT ops-photo-media-writer exited (code=3, duration: 2691s)
+[2026-02-20T07:58:06.555Z] MODEL_FALLBACK ops-photo-media-writer — server served wrong model. Pausing ALL agents for 5h.
+[2026-02-20T07:58:06.555Z] PENDING ops-photo-media-writer processing queued trigger
+[2026-02-20T07:58:06.556Z] PAUSED ops-photo-media-writer — session limit active, 300min until 2026-02-20T12:58:06.555Z
+[2026-02-20T07:58:06.556Z] WRITER_SLOT ops-hardware-writer — writer slot freed by ops-photo-media-writer
+[2026-02-20T07:58:06.556Z] PAUSED ops-hardware-writer — session limit active, 300min until 2026-02-20T12:58:06.555Z
+[2026-02-20T07:58:08.551Z] EVENT ops-tier2-writer-ceo-wake-20260220T071235Z.json → ops-tier2-writer
+[2026-02-20T07:58:08.551Z] PAUSED ops-tier2-writer — session limit active, 300min until 2026-02-20T12:58:06.555Z
+[2026-02-20T07:58:09.381Z] STATUS running=0/6 writers=0/4 freeMem=7200MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T07:58:09.381Z] WAKE_CONF ops-foundations-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.381Z] WAKE_CONF ops-hardware-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] WAKE_CONF ops-homeauto-notes-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] WAKE_CONF ops-password-adblock-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] WAKE_CONF ops-photo-media-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] WAKE_CONF ops-proxy-docker-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] WAKE_CONF ops-tier2-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] WAKE_CONF ops-vpn-filesync-writer fallback changed: 480m → 60m
+[2026-02-20T07:58:09.382Z] FALLBACK ops-hardware-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T07:58:09.382Z] PAUSED ops-hardware-writer — session limit active, 300min until 2026-02-20T12:58:06.555Z
+[2026-02-20T07:58:09.382Z] FALLBACK ops-homeauto-notes-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T07:58:09.382Z] PAUSED ops-homeauto-notes-writer — session limit active, 300min until 2026-02-20T12:58:06.555Z
+[2026-02-20T07:58:09.382Z] SOCIAL running social-poster.js
+[2026-02-20T07:58:09.407Z] SOCIAL 2026-02-20T07:58:09.405Z [social-poster] starting
+[2026-02-20T07:58:09.414Z] SOCIAL 2026-02-20T07:58:09.413Z [social-poster] queue has 1929 posts
+[2026-02-20T07:58:09.537Z] SOCIAL 2026-02-20T07:58:09.537Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T07:58:09.861Z] SOCIAL 2026-02-20T07:58:09.861Z [social-poster] OK bluesky: posted "Quick env var tip: never put secrets directly in docker-comp..."
+[2026-02-20T07:58:09.870Z] SOCIAL 2026-02-20T07:58:09.869Z [social-poster] removed 1 posted items from queue (1928 remaining)
+[2026-02-20T07:58:09.870Z] SOCIAL 2026-02-20T07:58:09.870Z [social-poster] done — 2 attempted, 1 succeeded, 1928 remaining in queue
+[2026-02-20T07:58:09.875Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:03:09.482Z] STATUS running=0/6 writers=0/4 freeMem=7185MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:03:09.482Z] FALLBACK ops-hardware-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:03:09.483Z] PAUSED ops-hardware-writer — session limit active, 295min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:03:09.483Z] FALLBACK ops-homeauto-notes-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:03:09.483Z] PAUSED ops-homeauto-notes-writer — session limit active, 295min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:03:09.483Z] SOCIAL running social-poster.js
+[2026-02-20T08:03:09.515Z] SOCIAL 2026-02-20T08:03:09.513Z [social-poster] starting
+[2026-02-20T08:03:09.523Z] SOCIAL 2026-02-20T08:03:09.523Z [social-poster] queue has 1928 posts
+[2026-02-20T08:03:09.640Z] SOCIAL 2026-02-20T08:03:09.640Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:03:09.640Z] SOCIAL 2026-02-20T08:03:09.640Z [social-poster] done — 1 attempted, 0 succeeded, 1928 remaining in queue
+[2026-02-20T08:03:09.645Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:08:09.583Z] STATUS running=0/6 writers=0/4 freeMem=7193MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:08:09.583Z] FALLBACK ops-hardware-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:08:09.583Z] PAUSED ops-hardware-writer — session limit active, 290min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:08:09.583Z] FALLBACK ops-homeauto-notes-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:08:09.584Z] PAUSED ops-homeauto-notes-writer — session limit active, 290min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:08:09.584Z] SOCIAL running social-poster.js
+[2026-02-20T08:08:09.624Z] SOCIAL 2026-02-20T08:08:09.621Z [social-poster] starting
+[2026-02-20T08:08:09.635Z] SOCIAL 2026-02-20T08:08:09.634Z [social-poster] queue has 1928 posts
+[2026-02-20T08:08:09.752Z] SOCIAL 2026-02-20T08:08:09.752Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:08:09.753Z] SOCIAL 2026-02-20T08:08:09.753Z [social-poster] done — 1 attempted, 0 succeeded, 1928 remaining in queue
+[2026-02-20T08:08:09.757Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:13:09.633Z] STATUS running=0/6 writers=0/4 freeMem=7192MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:13:09.633Z] FALLBACK ops-hardware-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:13:09.633Z] PAUSED ops-hardware-writer — session limit active, 285min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:13:09.634Z] FALLBACK ops-homeauto-notes-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:13:09.634Z] PAUSED ops-homeauto-notes-writer — session limit active, 285min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:13:09.634Z] SOCIAL running social-poster.js
+[2026-02-20T08:13:09.665Z] SOCIAL 2026-02-20T08:13:09.663Z [social-poster] starting
+[2026-02-20T08:13:09.673Z] SOCIAL 2026-02-20T08:13:09.673Z [social-poster] queue has 1928 posts
+[2026-02-20T08:13:09.796Z] SOCIAL 2026-02-20T08:13:09.796Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:13:10.128Z] SOCIAL 2026-02-20T08:13:10.128Z [social-poster] OK bluesky: posted "Self-hosting Actual Budget is easier than you think. Docker ..."
+[2026-02-20T08:13:10.137Z] SOCIAL 2026-02-20T08:13:10.136Z [social-poster] removed 1 posted items from queue (1927 remaining)
+[2026-02-20T08:13:10.137Z] SOCIAL 2026-02-20T08:13:10.137Z [social-poster] done — 2 attempted, 1 succeeded, 1927 remaining in queue
+[2026-02-20T08:13:10.143Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:18:09.733Z] STATUS running=0/6 writers=0/4 freeMem=7207MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:18:09.734Z] FALLBACK ops-hardware-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:18:09.734Z] PAUSED ops-hardware-writer — session limit active, 280min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:18:09.734Z] FALLBACK ops-homeauto-notes-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:18:09.734Z] PAUSED ops-homeauto-notes-writer — session limit active, 280min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:18:09.734Z] RELEASES running check-releases.js
+[2026-02-20T08:18:09.735Z] SOCIAL running social-poster.js
+[2026-02-20T08:18:09.766Z] RELEASES 2026-02-20T08:18:09.764Z [check-releases] starting
+[2026-02-20T08:18:09.766Z] RELEASES 2026-02-20T08:18:09.766Z [check-releases] checking 29 GitHub repos
+[2026-02-20T08:18:09.767Z] SOCIAL 2026-02-20T08:18:09.765Z [social-poster] starting
+[2026-02-20T08:18:09.778Z] SOCIAL 2026-02-20T08:18:09.778Z [social-poster] queue has 1927 posts
+[2026-02-20T08:18:09.863Z] RELEASES 2026-02-20T08:18:09.862Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T08:18:09.889Z] SOCIAL 2026-02-20T08:18:09.889Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:18:09.890Z] SOCIAL 2026-02-20T08:18:09.889Z [social-poster] done — 1 attempted, 0 succeeded, 1927 remaining in queue
+[2026-02-20T08:18:09.895Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:18:10.424Z] RELEASES 2026-02-20T08:18:10.424Z [check-releases]   janeczku/calibre-web → 304 unchanged
+[2026-02-20T08:18:11.035Z] RELEASES 2026-02-20T08:18:11.034Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T08:18:11.608Z] RELEASES 2026-02-20T08:18:11.608Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T08:18:12.158Z] RELEASES 2026-02-20T08:18:12.158Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T08:18:12.717Z] RELEASES 2026-02-20T08:18:12.717Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T08:18:13.285Z] RELEASES 2026-02-20T08:18:13.285Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T08:18:13.842Z] RELEASES 2026-02-20T08:18:13.842Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T08:18:14.414Z] RELEASES 2026-02-20T08:18:14.414Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T08:18:14.982Z] RELEASES 2026-02-20T08:18:14.982Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T08:18:15.543Z] RELEASES 2026-02-20T08:18:15.543Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T08:18:16.151Z] RELEASES 2026-02-20T08:18:16.151Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T08:18:16.700Z] RELEASES 2026-02-20T08:18:16.699Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T08:18:17.404Z] RELEASES 2026-02-20T08:18:17.404Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T08:18:17.966Z] RELEASES 2026-02-20T08:18:17.966Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T08:18:18.528Z] RELEASES 2026-02-20T08:18:18.528Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T08:18:19.091Z] RELEASES 2026-02-20T08:18:19.091Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T08:18:19.665Z] RELEASES 2026-02-20T08:18:19.665Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T08:18:20.235Z] RELEASES 2026-02-20T08:18:20.234Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T08:18:20.788Z] RELEASES 2026-02-20T08:18:20.788Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T08:18:21.351Z] RELEASES 2026-02-20T08:18:21.351Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T08:18:21.913Z] RELEASES 2026-02-20T08:18:21.913Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T08:18:22.461Z] RELEASES 2026-02-20T08:18:22.461Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T08:18:23.024Z] RELEASES 2026-02-20T08:18:23.023Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T08:18:23.580Z] RELEASES 2026-02-20T08:18:23.580Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T08:18:24.148Z] RELEASES 2026-02-20T08:18:24.148Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T08:18:24.721Z] RELEASES 2026-02-20T08:18:24.720Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T08:18:25.300Z] RELEASES 2026-02-20T08:18:25.299Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-20T08:18:25.863Z] RELEASES 2026-02-20T08:18:25.863Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T08:18:26.364Z] RELEASES 2026-02-20T08:18:26.364Z [check-releases] checking 3 feeds
+[2026-02-20T08:18:26.432Z] RELEASES 2026-02-20T08:18:26.432Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T08:18:26.705Z] RELEASES 2026-02-20T08:18:26.705Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T08:18:27.043Z] RELEASES 2026-02-20T08:18:27.043Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T08:18:27.243Z] RELEASES 2026-02-20T08:18:27.243Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T08:18:27.248Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T08:23:09.761Z] STATUS running=0/6 writers=0/4 freeMem=7193MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:23:09.761Z] FALLBACK ops-hardware-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:23:09.761Z] PAUSED ops-hardware-writer — session limit active, 275min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:23:09.761Z] FALLBACK ops-homeauto-notes-writer — 6h since last run (4 due, starting up to 2)
+[2026-02-20T08:23:09.762Z] PAUSED ops-homeauto-notes-writer — session limit active, 275min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:23:09.762Z] SOCIAL running social-poster.js
+[2026-02-20T08:23:09.789Z] SOCIAL 2026-02-20T08:23:09.787Z [social-poster] starting
+[2026-02-20T08:23:09.796Z] SOCIAL 2026-02-20T08:23:09.795Z [social-poster] queue has 1927 posts
+[2026-02-20T08:23:09.909Z] SOCIAL 2026-02-20T08:23:09.908Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:23:09.909Z] SOCIAL 2026-02-20T08:23:09.909Z [social-poster] done — 1 attempted, 0 succeeded, 1927 remaining in queue
+[2026-02-20T08:23:09.914Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:28:09.861Z] STATUS running=0/6 writers=0/4 freeMem=7206MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:28:09.862Z] FALLBACK ops-foundations-writer — 1h since last run (5 due, starting up to 2)
+[2026-02-20T08:28:09.862Z] PAUSED ops-foundations-writer — session limit active, 270min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:28:09.862Z] FALLBACK ops-hardware-writer — 7h since last run (5 due, starting up to 2)
+[2026-02-20T08:28:09.862Z] PAUSED ops-hardware-writer — session limit active, 270min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:28:09.862Z] SOCIAL running social-poster.js
+[2026-02-20T08:28:09.896Z] SOCIAL 2026-02-20T08:28:09.893Z [social-poster] starting
+[2026-02-20T08:28:09.904Z] SOCIAL 2026-02-20T08:28:09.904Z [social-poster] queue has 1927 posts
+[2026-02-20T08:28:10.024Z] SOCIAL 2026-02-20T08:28:10.023Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:28:10.358Z] SOCIAL 2026-02-20T08:28:10.357Z [social-poster] OK bluesky: posted "Want to self-host AdGuard Home? Our guide covers Docker Comp..."
+[2026-02-20T08:28:10.372Z] SOCIAL 2026-02-20T08:28:10.372Z [social-poster] removed 1 posted items from queue (1926 remaining)
+[2026-02-20T08:28:10.373Z] SOCIAL 2026-02-20T08:28:10.373Z [social-poster] done — 2 attempted, 1 succeeded, 1926 remaining in queue
+[2026-02-20T08:28:10.382Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:33:09.921Z] STATUS running=0/6 writers=0/4 freeMem=7199MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:33:09.922Z] FALLBACK ops-foundations-writer — 1h since last run (5 due, starting up to 2)
+[2026-02-20T08:33:09.922Z] PAUSED ops-foundations-writer — session limit active, 265min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:33:09.922Z] FALLBACK ops-hardware-writer — 7h since last run (5 due, starting up to 2)
+[2026-02-20T08:33:09.922Z] PAUSED ops-hardware-writer — session limit active, 265min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:33:09.922Z] SOCIAL running social-poster.js
+[2026-02-20T08:33:09.956Z] SOCIAL 2026-02-20T08:33:09.954Z [social-poster] starting
+[2026-02-20T08:33:09.964Z] SOCIAL 2026-02-20T08:33:09.964Z [social-poster] queue has 1926 posts
+[2026-02-20T08:33:10.107Z] SOCIAL 2026-02-20T08:33:10.107Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:33:10.108Z] SOCIAL 2026-02-20T08:33:10.107Z [social-poster] done — 1 attempted, 0 succeeded, 1926 remaining in queue
+[2026-02-20T08:33:10.113Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:38:09.989Z] STATUS running=0/6 writers=0/4 freeMem=7203MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:38:09.989Z] FALLBACK ops-foundations-writer — 1h since last run (5 due, starting up to 2)
+[2026-02-20T08:38:09.989Z] PAUSED ops-foundations-writer — session limit active, 260min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:38:09.989Z] FALLBACK ops-hardware-writer — 7h since last run (5 due, starting up to 2)
+[2026-02-20T08:38:09.989Z] PAUSED ops-hardware-writer — session limit active, 260min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:38:09.989Z] SOCIAL running social-poster.js
+[2026-02-20T08:38:10.020Z] SOCIAL 2026-02-20T08:38:10.018Z [social-poster] starting
+[2026-02-20T08:38:10.031Z] SOCIAL 2026-02-20T08:38:10.031Z [social-poster] queue has 1926 posts
+[2026-02-20T08:38:10.143Z] SOCIAL 2026-02-20T08:38:10.143Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:38:10.144Z] SOCIAL 2026-02-20T08:38:10.144Z [social-poster] done — 1 attempted, 0 succeeded, 1926 remaining in queue
+[2026-02-20T08:38:10.148Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:43:10.065Z] STATUS running=0/6 writers=0/4 freeMem=7199MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:43:10.066Z] FALLBACK ops-foundations-writer — 1h since last run (5 due, starting up to 2)
+[2026-02-20T08:43:10.066Z] PAUSED ops-foundations-writer — session limit active, 255min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:43:10.066Z] FALLBACK ops-hardware-writer — 7h since last run (5 due, starting up to 2)
+[2026-02-20T08:43:10.066Z] PAUSED ops-hardware-writer — session limit active, 255min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:43:10.066Z] SOCIAL running social-poster.js
+[2026-02-20T08:43:10.103Z] SOCIAL 2026-02-20T08:43:10.100Z [social-poster] starting
+[2026-02-20T08:43:10.113Z] SOCIAL 2026-02-20T08:43:10.112Z [social-poster] queue has 1926 posts
+[2026-02-20T08:43:10.220Z] SOCIAL 2026-02-20T08:43:10.220Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:43:10.544Z] SOCIAL 2026-02-20T08:43:10.544Z [social-poster] OK bluesky: posted "AFFiNE is one of those apps that's worth self-hosting. Here'..."
+[2026-02-20T08:43:10.554Z] SOCIAL 2026-02-20T08:43:10.554Z [social-poster] removed 1 posted items from queue (1925 remaining)
+[2026-02-20T08:43:10.555Z] SOCIAL 2026-02-20T08:43:10.554Z [social-poster] done — 2 attempted, 1 succeeded, 1925 remaining in queue
+[2026-02-20T08:43:10.561Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:48:10.140Z] STATUS running=0/6 writers=0/4 freeMem=7192MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:48:10.141Z] FALLBACK ops-foundations-writer — 1h since last run (5 due, starting up to 2)
+[2026-02-20T08:48:10.141Z] PAUSED ops-foundations-writer — session limit active, 250min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:48:10.141Z] FALLBACK ops-hardware-writer — 7h since last run (5 due, starting up to 2)
+[2026-02-20T08:48:10.141Z] PAUSED ops-hardware-writer — session limit active, 250min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:48:10.141Z] SOCIAL running social-poster.js
+[2026-02-20T08:48:10.174Z] SOCIAL 2026-02-20T08:48:10.172Z [social-poster] starting
+[2026-02-20T08:48:10.182Z] SOCIAL 2026-02-20T08:48:10.182Z [social-poster] queue has 1925 posts
+[2026-02-20T08:48:10.299Z] SOCIAL 2026-02-20T08:48:10.299Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:48:10.300Z] SOCIAL 2026-02-20T08:48:10.300Z [social-poster] done — 1 attempted, 0 succeeded, 1925 remaining in queue
+[2026-02-20T08:48:10.304Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:53:10.238Z] STATUS running=0/6 writers=0/4 freeMem=7206MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:53:10.238Z] FALLBACK ops-foundations-writer — 1h since last run (5 due, starting up to 2)
+[2026-02-20T08:53:10.238Z] PAUSED ops-foundations-writer — session limit active, 245min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:53:10.238Z] FALLBACK ops-hardware-writer — 7h since last run (5 due, starting up to 2)
+[2026-02-20T08:53:10.238Z] PAUSED ops-hardware-writer — session limit active, 245min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:53:10.238Z] SOCIAL running social-poster.js
+[2026-02-20T08:53:10.292Z] SOCIAL 2026-02-20T08:53:10.288Z [social-poster] starting
+[2026-02-20T08:53:10.305Z] SOCIAL 2026-02-20T08:53:10.304Z [social-poster] queue has 1925 posts
+[2026-02-20T08:53:10.427Z] SOCIAL 2026-02-20T08:53:10.427Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:53:10.428Z] SOCIAL 2026-02-20T08:53:10.428Z [social-poster] done — 1 attempted, 0 succeeded, 1925 remaining in queue
+[2026-02-20T08:53:10.432Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T08:58:10.268Z] STATUS running=0/6 writers=0/4 freeMem=7198MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T08:58:10.269Z] FALLBACK ops-foundations-writer — 2h since last run (8 due, starting up to 2)
+[2026-02-20T08:58:10.269Z] PAUSED ops-foundations-writer — session limit active, 240min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:58:10.270Z] FALLBACK ops-hardware-writer — 7h since last run (8 due, starting up to 2)
+[2026-02-20T08:58:10.270Z] PAUSED ops-hardware-writer — session limit active, 240min until 2026-02-20T12:58:06.555Z
+[2026-02-20T08:58:10.270Z] SOCIAL running social-poster.js
+[2026-02-20T08:58:10.302Z] SOCIAL 2026-02-20T08:58:10.300Z [social-poster] starting
+[2026-02-20T08:58:10.310Z] SOCIAL 2026-02-20T08:58:10.309Z [social-poster] queue has 1925 posts
+[2026-02-20T08:58:10.465Z] SOCIAL 2026-02-20T08:58:10.465Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T08:58:10.792Z] SOCIAL 2026-02-20T08:58:10.792Z [social-poster] OK bluesky: posted "If you've been thinking about running AppFlowy yourself, her..."
+[2026-02-20T08:58:10.801Z] SOCIAL 2026-02-20T08:58:10.800Z [social-poster] removed 1 posted items from queue (1924 remaining)
+[2026-02-20T08:58:10.801Z] SOCIAL 2026-02-20T08:58:10.801Z [social-poster] done — 2 attempted, 1 succeeded, 1924 remaining in queue
+[2026-02-20T08:58:10.806Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:03:10.298Z] STATUS running=0/6 writers=0/4 freeMem=7187MB agents=[none] paused=2026-02-20T12:58:06.555Z
+[2026-02-20T09:03:10.298Z] FALLBACK ops-foundations-writer — 2h since last run (8 due, starting up to 2)
+[2026-02-20T09:03:10.299Z] PAUSED ops-foundations-writer — session limit active, 235min until 2026-02-20T12:58:06.555Z
+[2026-02-20T09:03:10.299Z] FALLBACK ops-hardware-writer — 7h since last run (8 due, starting up to 2)
+[2026-02-20T09:03:10.299Z] PAUSED ops-hardware-writer — session limit active, 235min until 2026-02-20T12:58:06.555Z
+[2026-02-20T09:03:10.299Z] SOCIAL running social-poster.js
+[2026-02-20T09:03:10.336Z] SOCIAL 2026-02-20T09:03:10.334Z [social-poster] starting
+[2026-02-20T09:03:10.346Z] SOCIAL 2026-02-20T09:03:10.346Z [social-poster] queue has 1924 posts
+[2026-02-20T09:03:10.466Z] SOCIAL 2026-02-20T09:03:10.466Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T09:03:10.467Z] SOCIAL 2026-02-20T09:03:10.467Z [social-poster] done — 1 attempted, 0 succeeded, 1924 remaining in queue
+[2026-02-20T09:03:10.472Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:06:06.623Z] EVENT ceo-manual-20260220T091000Z.json → ceo
+[2026-02-20T09:06:06.623Z] PAUSED ceo — session limit active, 232min until 2026-02-20T12:58:06.555Z
+[2026-02-20T09:06:42.653Z] UNPAUSE manual unpause event received — clearing global pause
+[2026-02-20T09:08:09.024Z] EVENT ceo-manual-20260220T090800Z.json → ceo
+[2026-02-20T09:08:09.025Z] AGENT ceo starting (trigger: ceo-manual-20260220T090800Z.json)
+[2026-02-20T09:08:09.027Z] AGENT ceo started (pid: 31424)
+[2026-02-20T09:08:10.299Z] STATUS running=1/6 writers=0/4 freeMem=7031MB agents=[ceo(1s)] paused=no
+[2026-02-20T09:08:10.299Z] FALLBACK ops-foundations-writer — 2h since last run (8 due, starting up to 2)
+[2026-02-20T09:08:10.300Z] AGENT ops-foundations-writer starting (trigger: 2h-fallback)
+[2026-02-20T09:08:10.301Z] AGENT ops-foundations-writer started (pid: 31451)
+[2026-02-20T09:08:10.301Z] FALLBACK ops-hardware-writer — 7h since last run (8 due, starting up to 2)
+[2026-02-20T09:08:10.301Z] AGENT ops-hardware-writer starting (trigger: 7h-fallback)
+[2026-02-20T09:08:10.303Z] AGENT ops-hardware-writer started (pid: 31453)
+[2026-02-20T09:08:10.303Z] SOCIAL running social-poster.js
+[2026-02-20T09:08:10.356Z] SOCIAL 2026-02-20T09:08:10.353Z [social-poster] starting
+[2026-02-20T09:08:10.366Z] SOCIAL 2026-02-20T09:08:10.366Z [social-poster] queue has 1924 posts
+[2026-02-20T09:08:10.472Z] SOCIAL 2026-02-20T09:08:10.472Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T09:08:10.473Z] SOCIAL 2026-02-20T09:08:10.473Z [social-poster] done — 1 attempted, 0 succeeded, 1924 remaining in queue
+[2026-02-20T09:08:10.477Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:13:10.399Z] STATUS running=3/6 writers=2/4 freeMem=6551MB agents=[ceo(301s), ops-foundations-writer(300s), ops-hardware-writer(300s)] paused=no
+[2026-02-20T09:13:10.400Z] FALLBACK ops-homeauto-notes-writer — 7h since last run (6 due, starting up to 2)
+[2026-02-20T09:13:10.400Z] AGENT ops-homeauto-notes-writer starting (trigger: 7h-fallback)
+[2026-02-20T09:13:10.401Z] AGENT ops-homeauto-notes-writer started (pid: 32656)
+[2026-02-20T09:13:10.402Z] FALLBACK ops-password-adblock-writer — 7h since last run (6 due, starting up to 2)
+[2026-02-20T09:13:10.402Z] AGENT ops-password-adblock-writer starting (trigger: 7h-fallback)
+[2026-02-20T09:13:10.404Z] AGENT ops-password-adblock-writer started (pid: 32657)
+[2026-02-20T09:13:10.404Z] SOCIAL running social-poster.js
+[2026-02-20T09:13:10.433Z] SOCIAL 2026-02-20T09:13:10.431Z [social-poster] starting
+[2026-02-20T09:13:10.442Z] SOCIAL 2026-02-20T09:13:10.442Z [social-poster] queue has 1924 posts
+[2026-02-20T09:13:10.574Z] SOCIAL 2026-02-20T09:13:10.573Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T09:13:10.903Z] SOCIAL 2026-02-20T09:13:10.902Z [social-poster] OK bluesky: posted "If you've been thinking about running Audiobookshelf yoursel..."
+[2026-02-20T09:13:10.911Z] SOCIAL 2026-02-20T09:13:10.911Z [social-poster] removed 1 posted items from queue (1923 remaining)
+[2026-02-20T09:13:10.911Z] SOCIAL 2026-02-20T09:13:10.911Z [social-poster] done — 2 attempted, 1 succeeded, 1923 remaining in queue
+[2026-02-20T09:13:10.917Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:13:13.557Z] CONFIG file changed, reloading
+[2026-02-20T09:13:13.557Z] CONFIG loaded: maxTotal=4, maxWriters=1, memMin=1200MB, writerFallback=8h, deptFallback=8h, minGap=5min
+[2026-02-20T09:17:17.417Z] INBOX ceo.md modified → ceo
+[2026-02-20T09:17:17.417Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T09:18:10.448Z] STATUS running=5/4 writers=4/1 freeMem=6192MB agents=[ceo(601s), ops-foundations-writer(600s), ops-hardware-writer(600s), ops-homeauto-notes-writer(300s), ops-password-adblock-writer(300s)] paused=no
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-foundations-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-hardware-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-homeauto-notes-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-password-adblock-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-photo-media-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-proxy-docker-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-tier2-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] WAKE_CONF ops-vpn-filesync-writer fallback changed: 60m → 480m
+[2026-02-20T09:18:10.450Z] RELEASES running check-releases.js
+[2026-02-20T09:18:10.452Z] SOCIAL running social-poster.js
+[2026-02-20T09:18:10.502Z] RELEASES 2026-02-20T09:18:10.498Z [check-releases] starting
+[2026-02-20T09:18:10.503Z] SOCIAL 2026-02-20T09:18:10.499Z [social-poster] starting
+[2026-02-20T09:18:10.503Z] RELEASES 2026-02-20T09:18:10.503Z [check-releases] checking 29 GitHub repos
+[2026-02-20T09:18:10.516Z] SOCIAL 2026-02-20T09:18:10.516Z [social-poster] queue has 1923 posts
+[2026-02-20T09:18:10.626Z] RELEASES 2026-02-20T09:18:10.626Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-20T09:18:10.651Z] SOCIAL 2026-02-20T09:18:10.650Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+[2026-02-20T09:18:10.651Z] SOCIAL 2026-02-20T09:18:10.651Z [social-poster] SKIP x: removing duplicate/rejected post from queue — "Bitwarden vs Vaultwarden: official server needs 2+ GB RAM an..."
+[2026-02-20T09:18:10.836Z] SOCIAL 2026-02-20T09:18:10.836Z [social-poster] OK x: posted "Best self-hosted home automation platforms in 2026 — Home As..." (after skipping duplicate)
+[2026-02-20T09:18:10.849Z] SOCIAL 2026-02-20T09:18:10.848Z [social-poster] removed 2 posted items from queue (1921 remaining)
+[2026-02-20T09:18:10.849Z] SOCIAL 2026-02-20T09:18:10.849Z [social-poster] done — 1 attempted, 1 succeeded, 1921 remaining in queue
+[2026-02-20T09:18:10.856Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:18:11.195Z] RELEASES 2026-02-20T09:18:11.195Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-20T09:18:11.811Z] RELEASES 2026-02-20T09:18:11.811Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-20T09:18:12.408Z] RELEASES 2026-02-20T09:18:12.407Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-20T09:18:12.980Z] RELEASES 2026-02-20T09:18:12.980Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-20T09:18:13.537Z] RELEASES 2026-02-20T09:18:13.537Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-20T09:18:14.113Z] RELEASES 2026-02-20T09:18:14.112Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-20T09:18:14.682Z] RELEASES 2026-02-20T09:18:14.682Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-20T09:18:15.260Z] RELEASES 2026-02-20T09:18:15.260Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-20T09:18:15.828Z] RELEASES 2026-02-20T09:18:15.828Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-20T09:18:16.379Z] RELEASES 2026-02-20T09:18:16.378Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-20T09:18:16.985Z] RELEASES 2026-02-20T09:18:16.984Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-20T09:18:17.541Z] RELEASES 2026-02-20T09:18:17.540Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-20T09:18:18.145Z] RELEASES 2026-02-20T09:18:18.145Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-20T09:18:18.714Z] RELEASES 2026-02-20T09:18:18.714Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-20T09:18:19.276Z] RELEASES 2026-02-20T09:18:19.276Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-20T09:18:19.833Z] RELEASES 2026-02-20T09:18:19.833Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-20T09:18:20.403Z] RELEASES 2026-02-20T09:18:20.403Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-20T09:18:20.988Z] RELEASES 2026-02-20T09:18:20.988Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-20T09:18:21.559Z] RELEASES 2026-02-20T09:18:21.559Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.1)
+[2026-02-20T09:18:22.130Z] RELEASES 2026-02-20T09:18:22.130Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-20T09:18:22.703Z] RELEASES 2026-02-20T09:18:22.703Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-20T09:18:23.280Z] RELEASES 2026-02-20T09:18:23.280Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-20T09:18:23.882Z] RELEASES 2026-02-20T09:18:23.882Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-20T09:18:24.450Z] RELEASES 2026-02-20T09:18:24.449Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-20T09:18:25.005Z] RELEASES 2026-02-20T09:18:25.005Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-20T09:18:25.599Z] RELEASES 2026-02-20T09:18:25.599Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-20T09:18:26.161Z] RELEASES 2026-02-20T09:18:26.160Z [check-releases]   nextcloud/server → 200 but same version (v33.0.0)
+[2026-02-20T09:18:26.718Z] RELEASES 2026-02-20T09:18:26.718Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-20T09:18:27.219Z] RELEASES 2026-02-20T09:18:27.219Z [check-releases] checking 3 feeds
+[2026-02-20T09:18:27.273Z] RELEASES 2026-02-20T09:18:27.273Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-20T09:18:27.551Z] RELEASES 2026-02-20T09:18:27.551Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-20T09:18:27.873Z] RELEASES 2026-02-20T09:18:27.873Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-20T09:18:28.074Z] RELEASES 2026-02-20T09:18:28.074Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-20T09:18:28.079Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-20T09:23:10.541Z] STATUS running=5/4 writers=4/1 freeMem=6136MB agents=[ceo(902s), ops-foundations-writer(900s), ops-hardware-writer(900s), ops-homeauto-notes-writer(600s), ops-password-adblock-writer(600s)] paused=no
+[2026-02-20T09:23:10.542Z] SOCIAL running social-poster.js
+[2026-02-20T09:23:10.574Z] SOCIAL 2026-02-20T09:23:10.572Z [social-poster] starting
+[2026-02-20T09:23:10.582Z] SOCIAL 2026-02-20T09:23:10.582Z [social-poster] queue has 1921 posts
+[2026-02-20T09:23:10.583Z] SOCIAL 2026-02-20T09:23:10.583Z [social-poster] done — 0 attempted, 0 succeeded, 1921 remaining in queue
+[2026-02-20T09:23:10.587Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:27:36.839Z] AGENT ops-hardware-writer exited (signal=SIGTERM, duration: 1167s)
+[2026-02-20T09:27:36.839Z] BACKOFF ops-hardware-writer error #3, next allowed in 120s
+[2026-02-20T09:27:36.840Z] PENDING ops-hardware-writer processing queued trigger
+[2026-02-20T09:27:36.840Z] CONCURRENCY ops-hardware-writer — 4/4 agents running, queued
+[2026-02-20T09:27:36.840Z] WRITER_SLOT ops-proxy-docker-writer — writer slot freed by ops-hardware-writer
+[2026-02-20T09:27:36.840Z] CONCURRENCY ops-proxy-docker-writer — 4/4 agents running, queued
+[2026-02-20T09:27:36.840Z] AGENT ops-homeauto-notes-writer exited (signal=SIGTERM, duration: 866s)
+[2026-02-20T09:27:36.840Z] BACKOFF ops-homeauto-notes-writer error #2, next allowed in 60s
+[2026-02-20T09:27:36.841Z] PENDING ops-homeauto-notes-writer processing queued trigger
+[2026-02-20T09:27:36.841Z] WRITER_LIMIT ops-homeauto-notes-writer — 1 writers already running, queued
+[2026-02-20T09:27:36.841Z] WRITER_SLOT ops-tier2-writer — writer slot freed by ops-homeauto-notes-writer
+[2026-02-20T09:27:36.841Z] WRITER_LIMIT ops-tier2-writer — 1 writers already running, queued
+[2026-02-20T09:27:36.842Z] AGENT ops-password-adblock-writer exited (signal=SIGTERM, duration: 866s)
+[2026-02-20T09:27:36.842Z] BACKOFF ops-password-adblock-writer error #2, next allowed in 60s
+[2026-02-20T09:27:36.842Z] PENDING ops-password-adblock-writer processing queued trigger
+[2026-02-20T09:27:36.842Z] WRITER_LIMIT ops-password-adblock-writer — 1 writers already running, queued
+[2026-02-20T09:27:36.842Z] WRITER_SLOT ops-photo-media-writer — writer slot freed by ops-password-adblock-writer
+[2026-02-20T09:27:36.842Z] WRITER_LIMIT ops-photo-media-writer — 1 writers already running, queued
+[2026-02-20T09:28:10.550Z] STATUS running=2/4 writers=1/1 freeMem=6739MB agents=[ceo(1202s), ops-foundations-writer(1200s)] paused=no
+[2026-02-20T09:28:10.550Z] SOCIAL running social-poster.js
+[2026-02-20T09:28:10.588Z] SOCIAL 2026-02-20T09:28:10.586Z [social-poster] starting
+[2026-02-20T09:28:10.596Z] SOCIAL 2026-02-20T09:28:10.596Z [social-poster] queue has 1921 posts
+[2026-02-20T09:28:10.966Z] SOCIAL 2026-02-20T09:28:10.966Z [social-poster] OK bluesky: posted "Want to self-host Authelia? Our guide covers Docker Compose ..."
+[2026-02-20T09:28:10.974Z] SOCIAL 2026-02-20T09:28:10.974Z [social-poster] removed 1 posted items from queue (1920 remaining)
+[2026-02-20T09:28:10.974Z] SOCIAL 2026-02-20T09:28:10.974Z [social-poster] done — 1 attempted, 1 succeeded, 1920 remaining in queue
+[2026-02-20T09:28:10.979Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:33:10.650Z] STATUS running=2/4 writers=1/1 freeMem=6718MB agents=[ceo(1502s), ops-foundations-writer(1500s)] paused=no
+[2026-02-20T09:33:10.651Z] SOCIAL running social-poster.js
+[2026-02-20T09:33:10.706Z] SOCIAL 2026-02-20T09:33:10.702Z [social-poster] starting
+[2026-02-20T09:33:10.719Z] SOCIAL 2026-02-20T09:33:10.718Z [social-poster] queue has 1920 posts
+[2026-02-20T09:33:10.719Z] SOCIAL 2026-02-20T09:33:10.719Z [social-poster] done — 0 attempted, 0 succeeded, 1920 remaining in queue
+[2026-02-20T09:33:10.724Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:37:19.000Z] AGENT ceo exited (code=2, duration: 1750s)
+[2026-02-20T09:37:19.000Z] BACKOFF ceo error #2, next allowed in 60s
+[2026-02-20T09:37:19.000Z] PENDING ceo processing queued trigger
+[2026-02-20T09:37:19.000Z] BACKOFF ceo in backoff for 60s more
+[2026-02-20T09:38:06.453Z] INBOX technology.md modified → technology
+[2026-02-20T09:38:06.454Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-20T09:38:06.456Z] AGENT technology started (pid: 36762)
+[2026-02-20T09:38:10.654Z] STATUS running=2/4 writers=1/1 freeMem=6534MB agents=[ops-foundations-writer(1800s), technology(4s)] paused=no
+[2026-02-20T09:38:10.655Z] SOCIAL running social-poster.js
+[2026-02-20T09:38:10.709Z] SOCIAL 2026-02-20T09:38:10.706Z [social-poster] starting
+[2026-02-20T09:38:10.723Z] SOCIAL 2026-02-20T09:38:10.723Z [social-poster] queue has 1920 posts
+[2026-02-20T09:38:10.963Z] SOCIAL 2026-02-20T09:38:10.962Z [social-poster] OK x: posted "Best self-hosted password managers ranked — Vaultwarden, Pas..."
+[2026-02-20T09:38:10.975Z] SOCIAL 2026-02-20T09:38:10.974Z [social-poster] removed 1 posted items from queue (1919 remaining)
+[2026-02-20T09:38:10.975Z] SOCIAL 2026-02-20T09:38:10.975Z [social-poster] done — 1 attempted, 1 succeeded, 1919 remaining in queue
+[2026-02-20T09:38:10.981Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T09:38:19.109Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T09:38:19.114Z] AGENT ceo started (pid: 36817)
+[2026-02-20T09:38:37.657Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T09:38:37.657Z] WARN unknown agent "investor-relations" — ignoring

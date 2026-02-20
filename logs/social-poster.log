@@ -260,3 +260,102 @@
 2026-02-20T07:23:13.775Z [social-poster] OK x: posted "Jellyfin vs Plex in 2026: Jellyfin is 100% free with no tele..."
 2026-02-20T07:23:13.783Z [social-poster] removed 3 posted items from queue (1929 remaining)
 2026-02-20T07:23:13.784Z [social-poster] done — 3 attempted, 3 succeeded, 1929 remaining in queue
+2026-02-20T07:58:09.405Z [social-poster] starting
+2026-02-20T07:58:09.413Z [social-poster] queue has 1929 posts
+2026-02-20T07:58:09.537Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T07:58:09.861Z [social-poster] OK bluesky: posted "Quick env var tip: never put secrets directly in docker-comp..."
+2026-02-20T07:58:09.869Z [social-poster] removed 1 posted items from queue (1928 remaining)
+2026-02-20T07:58:09.870Z [social-poster] done — 2 attempted, 1 succeeded, 1928 remaining in queue
+2026-02-20T08:03:09.513Z [social-poster] starting
+2026-02-20T08:03:09.523Z [social-poster] queue has 1928 posts
+2026-02-20T08:03:09.640Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:03:09.640Z [social-poster] done — 1 attempted, 0 succeeded, 1928 remaining in queue
+2026-02-20T08:08:09.621Z [social-poster] starting
+2026-02-20T08:08:09.634Z [social-poster] queue has 1928 posts
+2026-02-20T08:08:09.752Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:08:09.753Z [social-poster] done — 1 attempted, 0 succeeded, 1928 remaining in queue
+2026-02-20T08:13:09.663Z [social-poster] starting
+2026-02-20T08:13:09.673Z [social-poster] queue has 1928 posts
+2026-02-20T08:13:09.796Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:13:10.128Z [social-poster] OK bluesky: posted "Self-hosting Actual Budget is easier than you think. Docker ..."
+2026-02-20T08:13:10.136Z [social-poster] removed 1 posted items from queue (1927 remaining)
+2026-02-20T08:13:10.137Z [social-poster] done — 2 attempted, 1 succeeded, 1927 remaining in queue
+2026-02-20T08:18:09.765Z [social-poster] starting
+2026-02-20T08:18:09.778Z [social-poster] queue has 1927 posts
+2026-02-20T08:18:09.889Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:18:09.889Z [social-poster] done — 1 attempted, 0 succeeded, 1927 remaining in queue
+2026-02-20T08:23:09.787Z [social-poster] starting
+2026-02-20T08:23:09.795Z [social-poster] queue has 1927 posts
+2026-02-20T08:23:09.908Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:23:09.909Z [social-poster] done — 1 attempted, 0 succeeded, 1927 remaining in queue
+2026-02-20T08:28:09.893Z [social-poster] starting
+2026-02-20T08:28:09.904Z [social-poster] queue has 1927 posts
+2026-02-20T08:28:10.023Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:28:10.357Z [social-poster] OK bluesky: posted "Want to self-host AdGuard Home? Our guide covers Docker Comp..."
+2026-02-20T08:28:10.372Z [social-poster] removed 1 posted items from queue (1926 remaining)
+2026-02-20T08:28:10.373Z [social-poster] done — 2 attempted, 1 succeeded, 1926 remaining in queue
+2026-02-20T08:33:09.954Z [social-poster] starting
+2026-02-20T08:33:09.964Z [social-poster] queue has 1926 posts
+2026-02-20T08:33:10.107Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:33:10.107Z [social-poster] done — 1 attempted, 0 succeeded, 1926 remaining in queue
+2026-02-20T08:38:10.018Z [social-poster] starting
+2026-02-20T08:38:10.031Z [social-poster] queue has 1926 posts
+2026-02-20T08:38:10.143Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:38:10.144Z [social-poster] done — 1 attempted, 0 succeeded, 1926 remaining in queue
+2026-02-20T08:43:10.100Z [social-poster] starting
+2026-02-20T08:43:10.112Z [social-poster] queue has 1926 posts
+2026-02-20T08:43:10.220Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:43:10.544Z [social-poster] OK bluesky: posted "AFFiNE is one of those apps that's worth self-hosting. Here'..."
+2026-02-20T08:43:10.554Z [social-poster] removed 1 posted items from queue (1925 remaining)
+2026-02-20T08:43:10.554Z [social-poster] done — 2 attempted, 1 succeeded, 1925 remaining in queue
+2026-02-20T08:48:10.172Z [social-poster] starting
+2026-02-20T08:48:10.182Z [social-poster] queue has 1925 posts
+2026-02-20T08:48:10.299Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:48:10.300Z [social-poster] done — 1 attempted, 0 succeeded, 1925 remaining in queue
+2026-02-20T08:53:10.288Z [social-poster] starting
+2026-02-20T08:53:10.304Z [social-poster] queue has 1925 posts
+2026-02-20T08:53:10.427Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:53:10.428Z [social-poster] done — 1 attempted, 0 succeeded, 1925 remaining in queue
+2026-02-20T08:58:10.300Z [social-poster] starting
+2026-02-20T08:58:10.309Z [social-poster] queue has 1925 posts
+2026-02-20T08:58:10.465Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T08:58:10.792Z [social-poster] OK bluesky: posted "If you've been thinking about running AppFlowy yourself, her..."
+2026-02-20T08:58:10.800Z [social-poster] removed 1 posted items from queue (1924 remaining)
+2026-02-20T08:58:10.801Z [social-poster] done — 2 attempted, 1 succeeded, 1924 remaining in queue
+2026-02-20T09:03:10.334Z [social-poster] starting
+2026-02-20T09:03:10.346Z [social-poster] queue has 1924 posts
+2026-02-20T09:03:10.466Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T09:03:10.467Z [social-poster] done — 1 attempted, 0 succeeded, 1924 remaining in queue
+2026-02-20T09:08:10.353Z [social-poster] starting
+2026-02-20T09:08:10.366Z [social-poster] queue has 1924 posts
+2026-02-20T09:08:10.472Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T09:08:10.473Z [social-poster] done — 1 attempted, 0 succeeded, 1924 remaining in queue
+2026-02-20T09:13:10.431Z [social-poster] starting
+2026-02-20T09:13:10.442Z [social-poster] queue has 1924 posts
+2026-02-20T09:13:10.573Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T09:13:10.902Z [social-poster] OK bluesky: posted "If you've been thinking about running Audiobookshelf yoursel..."
+2026-02-20T09:13:10.911Z [social-poster] removed 1 posted items from queue (1923 remaining)
+2026-02-20T09:13:10.911Z [social-poster] done — 2 attempted, 1 succeeded, 1923 remaining in queue
+2026-02-20T09:18:10.499Z [social-poster] starting
+2026-02-20T09:18:10.516Z [social-poster] queue has 1923 posts
+2026-02-20T09:18:10.650Z [social-poster] ERROR x: Twitter post failed: 403 {"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+2026-02-20T09:18:10.651Z [social-poster] SKIP x: removing duplicate/rejected post from queue — "Bitwarden vs Vaultwarden: official server needs 2+ GB RAM an..."
+2026-02-20T09:18:10.836Z [social-poster] OK x: posted "Best self-hosted home automation platforms in 2026 — Home As..." (after skipping duplicate)
+2026-02-20T09:18:10.848Z [social-poster] removed 2 posted items from queue (1921 remaining)
+2026-02-20T09:18:10.849Z [social-poster] done — 1 attempted, 1 succeeded, 1921 remaining in queue
+2026-02-20T09:23:10.572Z [social-poster] starting
+2026-02-20T09:23:10.582Z [social-poster] queue has 1921 posts
+2026-02-20T09:23:10.583Z [social-poster] done — 0 attempted, 0 succeeded, 1921 remaining in queue
+2026-02-20T09:28:10.586Z [social-poster] starting
+2026-02-20T09:28:10.596Z [social-poster] queue has 1921 posts
+2026-02-20T09:28:10.966Z [social-poster] OK bluesky: posted "Want to self-host Authelia? Our guide covers Docker Compose ..."
+2026-02-20T09:28:10.974Z [social-poster] removed 1 posted items from queue (1920 remaining)
+2026-02-20T09:28:10.974Z [social-poster] done — 1 attempted, 1 succeeded, 1920 remaining in queue
+2026-02-20T09:33:10.702Z [social-poster] starting
+2026-02-20T09:33:10.718Z [social-poster] queue has 1920 posts
+2026-02-20T09:33:10.719Z [social-poster] done — 0 attempted, 0 succeeded, 1920 remaining in queue
+2026-02-20T09:38:10.706Z [social-poster] starting
+2026-02-20T09:38:10.723Z [social-poster] queue has 1920 posts
+2026-02-20T09:38:10.962Z [social-poster] OK x: posted "Best self-hosted password managers ranked — Vaultwarden, Pas..."
+2026-02-20T09:38:10.974Z [social-poster] removed 1 posted items from queue (1919 remaining)
+2026-02-20T09:38:10.975Z [social-poster] done — 1 attempted, 1 succeeded, 1919 remaining in queue
