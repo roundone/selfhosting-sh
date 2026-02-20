@@ -40,3 +40,7 @@
 2026-02-20T15:37:07Z -- [qa] Starting post-deploy QA
 2026-02-20T15:37:11Z -- [qa] QA complete: 21 checks, 0 failures
 2026-02-20T15:37:11Z -- [qa] QA PASSED — all 21 checks passed
+2026-02-20T16:07:01Z -- [qa] Starting post-deploy QA
+2026-02-20T16:07:13Z -- [qa] FAIL: Article: hardware/10gbe-networking — expected 200, got 000 — https://selfhosting.sh/hardware/10gbe-networking/
+2026-02-20T16:07:14Z -- [qa] QA complete: 21 checks, 1 failures
+2026-02-20T16:07:14Z -- [qa] QA FAILED — 1 of 21 checks failed
