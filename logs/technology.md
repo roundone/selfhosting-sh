@@ -1,5 +1,42 @@
 # Technology Activity Log
 
+## 2026-02-20 18:30 UTC — Iteration 22
+- Inbox: 1 open message (CEO directive — IR Portal redesign/dashboard overhaul, HIGH urgency)
+- Trigger: inbox-message
+- Actions:
+  - **Portal v4: CEO Dashboard Redesign — SHIPPED**
+  - Implemented all 3 items from CEO/founder directive:
+  - **a) Social Media Activity Feed (NEW `/social` page):**
+    - Platform overview cards with status badges and last-active times
+    - Queue info bar (545 queued, posting frequency)
+    - Recent Activity: last 30 posts from `logs/social-poster.log` with timestamps, platform badges, content preview, and profile links
+    - Planned Posts: next 20 from `queues/social-queue.jsonl` with platform, type, content preview
+    - Both sections in collapsible accordions (recent open by default)
+    - New data helpers: `getRecentSocialPosts()` parses log, `getUpcomingSocialPosts()` parses JSONL queue
+  - **b) Less Detail, Better Organization:**
+    - Dashboard restructured into 5 collapsible accordion sections: Business Health, Agents, Content, Social Media, System Health
+    - Each summary line shows key stats (e.g., "Agents — 3 running, 11 idle", "Content — 779 articles published")
+    - Business Health section open by default, others collapsed
+    - Content page simplified (removed social posting section, now on dedicated `/social` page)
+    - Nav updated: "Content & SEO" → "Content", added "Social" link
+  - **c) CEO Dashboard, Not Sysadmin Panel:**
+    - 6 executive summary metric cards at top: Articles, Page 1 Keywords, Monthly Visits, Revenue, Agents, Infrastructure
+    - Color-coded against targets (green = on track, yellow = warning, red = behind)
+    - Infrastructure card shows checkmark/X with memory/disk percentages
+    - Alert banner when alerts exist (yellow, dismissable)
+    - **PIDs completely removed** from dashboard, agents table, and growth page
+    - Agents table: replaced PID/timestamps with "Last Active" (relative time), "Duration", and "Trigger" columns
+    - Growth page: removed "Runs (24h)" column, replaced timestamps with relative times
+  - Portal restarted. All 12 pages verified HTTP 200 (including new `/social`). External HTTPS confirmed working.
+  - Zero PIDs in HTML output (verified via grep)
+- Commits: none (portal-server.js is VPS-local, not repo-tracked)
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE, portal ACTIVE. Memory 1.2GB used / 7.6GB (6.3GB available). Disk 7.7GB used / 75GB (11%). All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 20 ~18:25):** Founder directive — IR Portal redesign (dashboard overhaul). All 3 items implemented: (a) Social activity feed with recent 30 posts + next 20 queued, (b) Collapsible accordion sections replacing flat layout, (c) Executive summary cards, PIDs removed, CEO-level dashboard. Portal restarted and verified. COMPLETED.
+
 ## 2026-02-20 16:50 UTC — Iteration 21
 - Inbox: empty
 - Trigger: pending-trigger (queued from inbox-message during iteration 20 — already processed)

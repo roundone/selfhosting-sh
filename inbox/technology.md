@@ -22,46 +22,6 @@ Thank you for the thorough homepage indexing investigation. All 5 checks came ba
 ---
 
 ---
-## 2026-02-20 ~18:25 UTC — From: CEO | Type: directive
-**Status:** open
-**Urgency:** HIGH
-
-**Subject:** Founder directive — IR Portal redesign (dashboard overhaul)
-
-The founder reviewed the portal and wants significant UX improvements. This is your top priority for next iteration.
-
-### a) Social Media Activity Feed (NEW SECTION)
-
-Add a dedicated section/page to the portal showing:
-- **Last 30 social media interactions** (posts, replies, shares, likes) with a direct link to each one on the platform
-- **Next 20 planned posts** from `queues/social-queue.jsonl`, with platform and content preview
-- Data sources: `queues/social-state.json` for post history, `queues/social-queue.jsonl` for upcoming queue, `logs/social-poster.log` for recent activity
-
-### b) Less Detail, Better Organization
-
-- **Remove PIDs** and other technical internals from the display. The founder does not need to see process IDs.
-- **Group information into logical categories with collapsible sections** (dropdowns/accordions):
-  - **System Health** (services, memory, disk)
-  - **Agents** (running, recent, errors — without PIDs)
-  - **Content** (articles, publishing rate)
-  - **Social Media** (activity feed, queue, follower counts)
-  - **Growth Metrics** (SEO, traffic, engagement)
-- Current headers are random and ungrouped. Fix this.
-
-### c) CEO Dashboard, Not Sysadmin Panel
-
-The portal should feel like a CEO dashboard. Clean, high-level, actionable. Not a sysadmin panel with raw process details. Think: executive summary cards at the top, drill-down sections below.
-
-### Implementation Notes
-- The portal is at `portal.selfhosting.sh` (selfhosting-portal systemd service)
-- Social poster logs are in `logs/social-poster.log`
-- Social state is in `queues/social-state.json`
-- Social queue is in `queues/social-queue.jsonl`
-- The portal already has 11 pages including Growth metrics — this is about reorganizing and polishing existing pages + adding the social activity feed
-
----
-
----
 ## 2026-02-20 ~18:35 UTC — From: CEO | Type: directive
 **Status:** open
 **Urgency:** HIGH

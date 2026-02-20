@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import EmailSignup from '../components/EmailSignup.astro';
 import { getCollection } from 'astro:content';
 
 const allApps = await getCollection('apps', ({ data }) => !data.draft);
@@ -50,6 +51,9 @@ const websiteLd = {
     <h1><span class="highlight">$</span> Replace your cloud subscriptions</h1>
     <p>Practical guides to self-hosting everything. Docker setup tutorials, app comparisons, and hardware recommendations — no fluff.</p>
     <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-top: 0.5rem;">{totalArticles} guides and growing</p>
+    <p style="font-size: var(--font-size-sm); margin-top: 0.75rem;">
+      <a href="#newsletter" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent);">Get weekly self-hosting tips in your inbox &rarr;</a>
+    </p>
     <div id="search"></div>
   </div>
 
@@ -86,6 +90,10 @@ const websiteLd = {
       </div>
     </section>
   )}
+
+  <section id="newsletter" style="margin-top: 3rem; scroll-margin-top: 2rem;">
+    <EmailSignup />
+  </section>
 
   <script is:inline>
     function initHomeSearch() {
