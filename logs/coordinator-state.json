@@ -23,7 +23,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
     },
     "technology": {
-      "lastRun": "2026-02-20T19:49:57.977Z",
+      "lastRun": "2026-02-20T20:01:04.510Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -92,11 +92,6 @@
     "operations": {
       "pid": 185182,
       "startTime": "2026-02-20T19:53:58.494Z",
-      "trigger": "unknown"
-    },
-    "technology": {
-      "pid": 185587,
-      "startTime": "2026-02-20T19:54:58.093Z",
       "trigger": "unknown"
     }
   }
