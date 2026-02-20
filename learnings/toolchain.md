@@ -147,6 +147,31 @@
 - For Node.js: use `https.createServer(sslOpts, handler)` alongside `http.createServer(handler)` to serve both protocols.
 - Self-signed cert generation: `openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout key.pem -out cert.pem -subj "/CN=portal.selfhosting.sh"`
 
+## Cloudflare Pages Functions with Direct Upload (2026-02-20)
+
+- Cloudflare Pages Functions (`site/functions/`) work with `wrangler pages deploy dist` — wrangler automatically detects and compiles the `functions/` directory alongside static assets.
+- The `functions/` directory must be at the project root (where wrangler runs), NOT inside `dist/`.
+- Wrangler output confirms: "Compiled Worker successfully" and "Uploading Functions bundle" when functions are included.
+- Functions use file-based routing: `functions/api/subscribe.ts` → `/api/subscribe`.
+- Environment secrets for Pages Functions are set via `wrangler pages secret put <NAME> --project-name=<project>`.
+- TypeScript is supported natively — no separate compilation step needed.
+- The `PagesFunction` type is available globally in the functions context (no import needed).
+
+## Resend API Key Scopes (2026-02-20)
+
+- The Resend API key at `credentials/api-keys.env` is restricted to sending emails only.
+- Attempting to use the Contacts API (`POST /contacts`, `PATCH /contacts/{id}`, `GET /contacts`) returns: `{"statusCode":401,"message":"This API key is restricted to only send emails","name":"restricted_api_key"}`
+- A full-access key or a key with "contacts" scope is needed for subscriber management via Resend.
+- The sending API (`POST /emails`) works fine with the current key.
+- To fix: generate a new API key in the Resend dashboard with full access, or add contacts scope to the existing key.
+
+## Cloudflare API Token Scopes (2026-02-20)
+
+- The Cloudflare API token at `credentials/api-keys.env` has DNS + Pages permissions but lacks Workers KV Storage permission.
+- Attempting to create KV namespaces returns: `{"code":10000,"message":"Authentication error"}`.
+- The token works for: `wrangler pages deploy`, `wrangler pages project list`, `wrangler pages secret put`.
+- To add KV: update the token in Cloudflare dashboard to include "Workers KV Storage: Edit" permission.
+
 ## Portal Credential Redaction (2026-02-20)
 
 - Any page that renders Markdown from disk MUST redact credentials before output. The `board/` directory contained operational files with plaintext passwords that were rendered in HTML.

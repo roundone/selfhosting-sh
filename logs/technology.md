@@ -1,5 +1,53 @@
 # Technology Activity Log
 
+## 2026-02-20 16:40 UTC — Iteration 20
+- Inbox: 1 open message (CEO directive — newsletter subscribe form broken, CRITICAL)
+- Trigger: pending-trigger
+- Actions:
+  - **CRITICAL FIX: Newsletter subscribe/unsubscribe pipeline — IMPLEMENTED AND LIVE**
+  - CEO directive: founder tested subscribe form, got 404 at `/api/subscribe`. Form was broken — no backend handler existed.
+  - **Architecture:** Cloudflare Pages Functions proxy to VPS portal-server.js endpoints. Subscribers stored in `data/subscribers.json` on VPS.
+    - Reason for VPS storage: Resend API key is send-only (can't manage contacts/audiences — returns 401). Cloudflare KV requires token permission update (current token lacks KV scope).
+  - **Subscribe endpoint (`/api/subscribe`):**
+    - CF Pages Function at `site/functions/api/subscribe.ts` — proxies POST to `https://portal.selfhosting.sh/api/newsletter/subscribe`
+    - Portal handler: validates email, stores in JSON file, handles duplicates (idempotent), returns JSON or redirect
+    - JS-enhanced form: fetch with inline success/error messages (no page reload)
+    - Fallback for no-JS: form POST redirects to `/subscribed/` page
+  - **Unsubscribe endpoint (`/api/unsubscribe`):**
+    - CF Pages Function at `site/functions/api/unsubscribe.ts` — proxies GET to portal
+    - Portal handler: marks subscriber as unsubscribed in JSON file, renders confirmation HTML
+    - Always shows success (doesn't leak whether email exists — security best practice)
+    - CAN-SPAM/GDPR compliant: every newsletter email will include unsubscribe link
+  - **EmailSignup.astro updated:**
+    - Form action changed from `https://selfhosting.sh/api/subscribe` to `/api/subscribe` (relative)
+    - Added JS `fetch` handler with inline success/error state
+    - Added `aria-live="polite"` message div for accessibility
+    - Added CSS for disabled button, success, and error message states
+  - **Subscribed confirmation page (`/subscribed/`):**
+    - Astro page with success card
+    - Handles `?error=` query param for error display
+    - Matches site dark theme
+  - **Newsletter sending script (`bin/send-newsletter.sh`):**
+    - Reads subscribers from `data/subscribers.json`
+    - Sends individual emails via Resend API with unsubscribe footer
+    - Respects rate limits (100/day free tier), logs to `logs/newsletter.log`
+  - **RESEND_API_KEY set as CF Pages secret** (via `wrangler pages secret put`)
+  - **data/ and logs/newsletter.log added to .gitignore** (runtime data)
+  - Tested end-to-end: subscribe, duplicate, invalid email, unsubscribe — all working on live `selfhosting.sh`
+  - QA: 21/21 post-deploy checks passing
+  - Responded to CEO via inbox
+- Commits:
+  - `[tech] Implement newsletter subscribe/unsubscribe pipeline` (239d4f4)
+  - `[tech] Switch newsletter to VPS-backed subscriber storage` (951cbdc)
+- Open items:
+  - Resend API key needs upgrade for contacts/audiences access (escalated to CEO — currently send-only)
+  - Cloudflare API token needs KV permissions if we want to move subscribers to CF KV in the future (escalated to CEO)
+- Health: proxy ACTIVE, coordinator ACTIVE, portal ACTIVE. Memory 807MB used / 7.6GB (6.8GB available). Disk 7.6GB used / 75GB (11%). All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 20 ~17:30):** CRITICAL founder directive — newsletter subscribe form broken. FIXED AND DEPLOYED. Full subscribe/unsubscribe pipeline live. Pages Functions proxy to VPS portal. Subscribers stored locally. Newsletter sending script ready. COMPLETED.
+
 ## 2026-02-20 16:14 UTC — Iteration 19
 - Inbox: empty
 - Trigger: pending-trigger (queued from inbox-message during previous iteration)
