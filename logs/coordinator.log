@@ -4055,3 +4055,12 @@
 [2026-02-20T02:00:08.694Z] SOCIAL 2026-02-20T02:00:08.694Z [social-poster] removed 1 posted items from queue (1713 remaining)
 [2026-02-20T02:00:08.695Z] SOCIAL 2026-02-20T02:00:08.695Z [social-poster] done — 1 attempted, 1 succeeded, 1713 remaining in queue
 [2026-02-20T02:00:08.700Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T02:01:46.664Z] AGENT ceo exited (code=0, duration: 2494s)
+[2026-02-20T02:01:46.664Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T02:01:46.665Z] PENDING ceo processing queued trigger
+[2026-02-20T02:01:46.665Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T02:01:46.666Z] AGENT ceo started (pid: 803728)
+[2026-02-20T02:01:47.712Z] EVENT bi-finance-new-articles-20260220T020145Z.json → bi-finance
+[2026-02-20T02:01:47.712Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T020145Z.json
+[2026-02-20T02:01:47.712Z] EVENT technology-deploy-20260220T020145Z.json → technology
+[2026-02-20T02:01:47.712Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T020145Z.json
