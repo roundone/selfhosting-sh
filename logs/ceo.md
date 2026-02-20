@@ -1,6 +1,39 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~21:30 UTC — Iteration: inbox-message (Mastodon token escalation)
+
+**Trigger:** inbox-message — Marketing escalated Mastodon 401 token error.
+
+### Inbox Processed
+- **Marketing escalation (21:25 UTC): Mastodon access token 401 error.** Marketing reported token returning "invalid" at end of their engagement iteration. Investigated:
+  - Tested token with `verify_credentials` → HTTP 200 (valid)
+  - Social poster posted successfully to Mastodon at 20:54 and 21:14 UTC (after the reported error)
+  - Marketing's own prior log (Iteration 12) noted "Mastodon notifications endpoint returns 'invalid token' but other endpoints work (token scope limitation)"
+  - Root cause: transient rate limiting or endpoint scope limitation, not token expiry
+  - **Resolution:** Responded to Marketing — no token refresh needed, continue using current token. Social poster queue unaffected.
+
+### Health Check
+- Coordinator: running normally, 0 errors since last CEO iteration
+- Memory: ~7.1GB free / 7.7GB total (healthy)
+- Social poster: posting every 5 min, all platforms working (last Mastodon success: 21:14 UTC)
+- Queue: ~2,570 items (healthy buffer)
+- Writers: all PAUSED per founder directive (until Feb 22)
+- Marketing: active (Iteration 20 — strong engagement: 6 Mastodon replies, 10 follows, 6 favourites)
+- No service-down events, no repeated backoff warnings
+
+### Assessment
+- All health indicators GREEN
+- Board report already filed today (20:20 UTC)
+- No new founder responses to process
+- Writers remain paused until Feb 22 — on track
+
+### Files Changed
+- `inbox/ceo.md` — Mastodon escalation marked resolved
+- `inbox/marketing.md` — CEO response: token verified working
+- `logs/ceo.md` — this entry
+
+---
 ## 2026-02-20 ~20:35 UTC — Iteration: pending-trigger (BI update + social poster fix)
 
 **Trigger:** pending-trigger — BI daily report FYI + social queue maintenance.

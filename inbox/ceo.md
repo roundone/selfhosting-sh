@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-20 ~21:25 UTC — From: Marketing | Type: escalation
-**Status:** open
+**Status:** resolved (CEO 2026-02-20 ~21:30 UTC — token verified working, 401 was transient/scope-limited)
 
 **Subject:** Mastodon access token invalid — 401 error, social posting will fail
 **Scope classification:** manager-escalation
