@@ -6666,3 +6666,29 @@ Jellyf..."
 [2026-02-20T14:40:19.410Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T14:40:56.082Z] AGENT ceo exited (code=0, duration: 369s)
 [2026-02-20T14:40:56.082Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T14:42:52.616Z] AGENT operations exited (code=0, duration: 1324s)
+[2026-02-20T14:42:52.616Z] STATE operations lastRun updated, errors reset
+[2026-02-20T14:45:18.683Z] STATUS running=1/3 writers=0/1 freeMem=6952MB agents=[marketing(393s)] paused=no
+[2026-02-20T14:45:18.683Z] SOCIAL running social-poster.js
+[2026-02-20T14:45:18.715Z] SOCIAL 2026-02-20T14:45:18.714Z [social-poster] starting
+[2026-02-20T14:45:18.723Z] SOCIAL 2026-02-20T14:45:18.723Z [social-poster] queue has 1961 posts
+[2026-02-20T14:45:18.724Z] SOCIAL 2026-02-20T14:45:18.724Z [social-poster] done — 0 attempted, 0 succeeded, 1961 remaining in queue
+[2026-02-20T14:45:18.729Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T14:50:18.782Z] STATUS running=1/3 writers=0/1 freeMem=6956MB agents=[marketing(693s)] paused=no
+[2026-02-20T14:50:18.783Z] SOCIAL running social-poster.js
+[2026-02-20T14:50:18.820Z] SOCIAL 2026-02-20T14:50:18.818Z [social-poster] starting
+[2026-02-20T14:50:18.832Z] SOCIAL 2026-02-20T14:50:18.832Z [social-poster] queue has 1961 posts
+[2026-02-20T14:50:19.087Z] SOCIAL 2026-02-20T14:50:19.087Z [social-poster] OK x: posted "How to self-host Blocky — our step-by-step Docker Compose gu..."
+[2026-02-20T14:50:19.099Z] SOCIAL 2026-02-20T14:50:19.098Z [social-poster] removed 1 posted items from queue (1960 remaining)
+[2026-02-20T14:50:19.099Z] SOCIAL 2026-02-20T14:50:19.099Z [social-poster] done — 1 attempted, 1 succeeded, 1960 remaining in queue
+[2026-02-20T14:50:19.105Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T14:52:09.452Z] INBOX marketing.md modified → marketing
+[2026-02-20T14:52:09.452Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T14:55:18.785Z] STATUS running=1/3 writers=0/1 freeMem=6951MB agents=[marketing(993s)] paused=no
+[2026-02-20T14:55:18.785Z] SOCIAL running social-poster.js
+[2026-02-20T14:55:18.819Z] SOCIAL 2026-02-20T14:55:18.817Z [social-poster] starting
+[2026-02-20T14:55:18.827Z] SOCIAL 2026-02-20T14:55:18.827Z [social-poster] queue has 1990 posts
+[2026-02-20T14:55:19.177Z] SOCIAL 2026-02-20T14:55:19.176Z [social-poster] OK bluesky: posted "Want to self-host ESPHome? Our guide covers Docker Compose s..."
+[2026-02-20T14:55:19.184Z] SOCIAL 2026-02-20T14:55:19.184Z [social-poster] removed 1 posted items from queue (1989 remaining)
+[2026-02-20T14:55:19.184Z] SOCIAL 2026-02-20T14:55:19.184Z [social-poster] done — 1 attempted, 1 succeeded, 1989 remaining in queue
+[2026-02-20T14:55:19.189Z] SOCIAL social-poster.js exited (code: 0)
