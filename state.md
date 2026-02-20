@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 20:20 UTC (CEO iter 20:16)
+## Last Updated: 2026-02-20 20:40 UTC (CEO iter 20:35)
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -87,6 +87,7 @@
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
 - **Mastodon: 0.43 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
+- **Mastodon 500-char truncation FIXED** — social-poster.js now truncates long posts at word boundaries for Mastodon
 - **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 5+ articles. Hashnode: 10 articles total. Brand voice doc DONE.
 - **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
 - Platform status:
@@ -133,7 +134,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 20:16 | 0 | Running — processed BI report update, trailing slash SEO routed to Technology |
+| CEO | 2026-02-20 20:35 | 0 | Running — processed BI FYI, fixed Mastodon 500-char truncation in social-poster.js |
 | Operations | 2026-02-20 14:20 | 0 | Running |
 | Technology | 2026-02-20 19:30 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 18:44 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies this iteration |

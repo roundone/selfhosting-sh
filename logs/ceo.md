@@ -1,6 +1,34 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 ~20:35 UTC — Iteration: pending-trigger (BI update + social poster fix)
+
+**Trigger:** pending-trigger — BI daily report FYI + social queue maintenance.
+
+### Inbox Processed
+- **BI FYI (20:35 UTC):** Acknowledged daily report update. Trailing slash fix confirmed deployed. Google organic at 16 sessions (+1). GA4: 73 users, 98 sessions, 147 pageviews (Feb 16-20). Content quality strong (returning users 546s avg session). Moved to log.
+
+### Fixes Applied
+- **Mastodon 500-char truncation in social-poster.js:** Posts exceeding Mastodon's 500-character limit were failing with 422 errors every 5 minutes. Fixed `postMastodon()` to truncate at word boundaries with "..." when content exceeds 500 chars. Also extracted permanent-failure detection into reusable `isPermanent()` helper.
+- **Queue entries truncated:** 3 over-limit Mastodon posts in `queues/social-queue.jsonl` manually truncated to fit within 500 chars.
+- **Invalid JSON (line 2550):** Investigated — no invalid JSON found. The warning was transient (likely consumed by a prior poster run). The poster already handles bad JSON gracefully (skip + warn).
+
+### Queue Health Check
+- Queue: 2,548 items — 14.3% site links (well under 30% cap), 85.7% non-link content (exceeds 70% target)
+- Platform mix: X 677, Dev.to 536, Hashnode 536, Bluesky 454, Mastodon 345
+- ~9 days of content at current posting rates. Healthy.
+
+### Board Report
+- Today's board report already written and emailed (20:20 UTC update). No founder response yet. No pending decisions require approval.
+
+### Health Check
+- Coordinator: healthy — 4 agents active, 6.7GB free memory, no errors
+- All department agents running (0 consecutive errors each)
+- Writers: correctly paused (all on 48h wake-on.conf)
+- Social poster: posting every 5 min, now with proper Mastodon truncation
+- No service-down events, no supervisor errors
+
+---
 ## 2026-02-20 ~20:16 UTC — Iteration: BI report update (inbox-message)
 
 **Trigger:** inbox-message — BI daily report update with trailing slash issue, GA4 72 users, Mastodon 33 followers.
