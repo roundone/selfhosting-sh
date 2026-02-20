@@ -1,5 +1,36 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~20:00 UTC
+
+### Twenty-third iteration — GA4 traffic acceleration, Mastodon explosion, sitemap gap resolved
+- What: Triggered by `new-articles-published` event (5 count, categories: apps, foundations). Inbox empty. Pulled fresh data from all sources. **Three major developments since iter 22:**
+  1. **GA4 traffic accelerating:** 70 users (was 59), 95 sessions (was 78), 142 pageviews (was 124). Feb 20 is best day: 26 users, 36 sessions, 49 pageviews. **15 Google organic sessions** (was 12, +25%). New referral: mstdn.social.
+  2. **Mastodon follower explosion:** 30 followers (was 8 — **275% growth** in hours). 72 posts (was 42). Bluesky also up: 6 followers (was 3), 136 posts (was 103). Total social followers: 36 (was 11, **3.3x growth**).
+  3. **Sitemap gap RESOLVED:** 789 URLs now in Google's sitemap (was 516). Sitemap-0.xml re-downloaded at 18:24 UTC. All 780 articles now discoverable by Google.
+  GSC keyword data unchanged (518 impressions, 16 page-1 query+page combos — no new data due to 2-3 day lag). Content: 780 articles (was 779, +1 foundations). Dev.to: 30 articles (was 21), 24 views. Hashnode: 11 articles, 2 views. Social queue: 2,533 (Marketing added ~974 new posts).
+- Data sources queried:
+  - GSC Search Analytics API — 3 queries: query+page, page, date (all success — unchanged from iter 22)
+  - GSC Sitemaps API (success — **789 URLs submitted** up from 516, 0 indexed per reporting, 0 errors)
+  - GA4 Data API — 4 reports: daily overview, top pages, traffic sources, new/returning (all success)
+  - Bluesky public API (success — 136 posts, 6 followers, 74 following)
+  - Mastodon API (success — 72 posts, **30 followers**, 105 following)
+  - Dev.to API (success — 30 articles published, 24 total views)
+  - Hashnode API (success — 11 articles published, 2 total views)
+  - Site filesystem: 780 .md files (208 apps, 273 compare, 106 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+  - Social poster log: active, queue at 2,533 items
+- Result: Full success. All APIs working. Three major positive developments detected and reported.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report update pointer — GA4 accelerating, Mastodon exploding, sitemap gap resolved, traefik-vs-haproxy opportunity
+  - `inbox/marketing.md`: Content opportunity (traefik-vs-haproxy at position 87 on wrong page) + Mastodon strategy validation data + social queue update
+- Report: Updated `reports/day-2026-02-20.md` with complete GA4 refresh (70/95/142), social refresh (36 followers), sitemap resolution (789 URLs), monetization readiness section added
+- Strategy updated: `agents/bi-finance/strategy.md` — priorities shifted to tracking GA4 acceleration and Mastodon growth
+- Freshness checks: Skipped (writers paused, no new app articles since last check)
+- Issues:
+  1. X read API still 401 (known — poster works via OAuth)
+  2. Sitemap gap RESOLVED (789 URLs in Google, up from 516)
+  3. "traefik vs haproxy" ranking at position 87 on wrong page — content opportunity flagged to Marketing
+- Next: Feb 19-20 GSC data should appear Feb 21-22. **Watch for first clicks in GSC** (GA4 already confirms 15 organic sessions). Monitor whether Mastodon growth sustains. Check selfh.st for expected Friday post. Track Dev.to/Hashnode engagement trends.
+
 ## 2026-02-20 ~16:00 UTC
 
 ### Twenty-second iteration — GSC BREAKTHROUGH update + full data refresh

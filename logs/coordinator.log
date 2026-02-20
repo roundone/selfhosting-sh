@@ -7684,3 +7684,44 @@ iCloud..."
 [2026-02-20T19:49:44.156Z] SOCIAL 2026-02-20T19:49:44.155Z [social-poster] queue has 2533 posts
 [2026-02-20T19:49:44.156Z] SOCIAL 2026-02-20T19:49:44.156Z [social-poster] done — 0 attempted, 0 succeeded, 2533 remaining in queue
 [2026-02-20T19:49:44.160Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:49:57.977Z] AGENT technology exited (code=0, duration: 354s)
+[2026-02-20T19:49:57.977Z] STATE technology lastRun updated, errors reset
+[2026-02-20T19:49:57.977Z] PENDING technology processing queued trigger
+[2026-02-20T19:49:57.977Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T19:50:12.131Z] INBOX marketing.md modified → marketing
+[2026-02-20T19:50:12.132Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T19:50:37.295Z] INBOX operations.md modified → operations
+[2026-02-20T19:50:37.295Z] MINGAP operations — only 99s since last run (min: 5min), deferring 201s
+[2026-02-20T19:53:58.492Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-20T19:53:58.494Z] AGENT operations started (pid: 185182)
+[2026-02-20T19:53:58.494Z] QUEUED operations already running — trigger queued: pending-trigger
+[2026-02-20T19:53:58.494Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T19:54:44.119Z] STATUS running=3/4 writers=0/1 freeMem=6505MB agents=[marketing(625s), bi-finance(385s), operations(46s)] paused=no
+[2026-02-20T19:54:44.119Z] SOCIAL running social-poster.js
+[2026-02-20T19:54:44.158Z] SOCIAL 2026-02-20T19:54:44.156Z [social-poster] starting
+[2026-02-20T19:54:44.170Z] SOCIAL 2026-02-20T19:54:44.169Z [social-poster] queue has 2533 posts
+[2026-02-20T19:54:44.170Z] SOCIAL 2026-02-20T19:54:44.170Z [social-poster] done — 0 attempted, 0 succeeded, 2533 remaining in queue
+[2026-02-20T19:54:44.174Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:54:58.092Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-20T19:54:58.093Z] AGENT technology started (pid: 185587)
+[2026-02-20T19:58:33.594Z] INBOX ceo.md modified → ceo
+[2026-02-20T19:58:33.594Z] CONCURRENCY ceo — 4/4 agents running, queued
+[2026-02-20T19:59:17.788Z] INBOX marketing.md modified → marketing
+[2026-02-20T19:59:17.788Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-20T19:59:44.137Z] STATUS running=4/4 writers=0/1 freeMem=6329MB agents=[marketing(925s), bi-finance(685s), operations(346s), technology(286s)] paused=no
+[2026-02-20T19:59:44.138Z] SOCIAL running social-poster.js
+[2026-02-20T19:59:44.177Z] SOCIAL 2026-02-20T19:59:44.175Z [social-poster] starting
+[2026-02-20T19:59:44.189Z] SOCIAL 2026-02-20T19:59:44.189Z [social-poster] queue has 2533 posts
+[2026-02-20T19:59:44.460Z] SOCIAL 2026-02-20T19:59:44.460Z [social-poster] OK x: posted "If you're self-hosting anything accessible from the internet..."
+[2026-02-20T19:59:44.664Z] SOCIAL 2026-02-20T19:59:44.664Z [social-poster] OK bluesky: posted "Immich is the real deal. Face recognition, map view, mobile ..."
+[2026-02-20T19:59:44.673Z] SOCIAL 2026-02-20T19:59:44.672Z [social-poster] removed 2 posted items from queue (2531 remaining)
+[2026-02-20T19:59:44.673Z] SOCIAL 2026-02-20T19:59:44.673Z [social-poster] done — 2 attempted, 2 succeeded, 2531 remaining in queue
+[2026-02-20T19:59:44.678Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T19:59:51.136Z] INBOX operations.md modified → operations
+[2026-02-20T19:59:51.137Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-20T19:59:51.184Z] INBOX technology.md modified → technology
+[2026-02-20T19:59:51.184Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T20:00:09.681Z] EVENT bi-finance-new-articles-20260220T200007Z.json → bi-finance
+[2026-02-20T20:00:09.681Z] QUEUED bi-finance already running — trigger queued: bi-finance-new-articles-20260220T200007Z.json
+[2026-02-20T20:00:09.681Z] EVENT technology-deploy-20260220T200007Z.json → technology
+[2026-02-20T20:00:09.681Z] QUEUED technology already running — trigger queued: technology-deploy-20260220T200007Z.json
