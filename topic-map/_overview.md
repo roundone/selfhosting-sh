@@ -48,11 +48,11 @@
 
 ### New Categories — Batch 2 (added by Marketing iteration 4, from awesome-selfhosted mining)
 39. **Search Engines** — 18/18 complete — **Priority: high** — COMPLETE (2026-02-20)
-40. **Social Networks & Forums** — 0/24 complete — **Priority: high** — SEO annotated — NEW
-41. **Video Surveillance & NVR** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Frigate!)
-42. **File Sharing & Transfer** — 0/18 complete — **Priority: high** — SEO annotated — NEW
-43. **Task Management** — 0/16 complete — **Priority: high** — SEO annotated — NEW (Planka, AppFlowy)
-44. **Newsletters & Mailing Lists** — 0/14 complete — **Priority: high** — SEO annotated — NEW (Listmonk!)
+40. **Social Networks & Forums** — 7/24 complete — **Priority: high** — SEO annotated — synced Feb 20 (7 comparisons on disk)
+41. **Video Surveillance & NVR** — 7/14 complete — **Priority: high** — SEO annotated — synced Feb 20 (3 apps + 4 comparisons on disk)
+42. **File Sharing & Transfer** — 11/18 complete — **Priority: high** — SEO annotated — synced Feb 20 (8 apps + 3 comparisons on disk)
+43. **Task Management** — 6/16 complete — **Priority: high** — SEO annotated — synced Feb 20 (6 comparisons on disk)
+44. **Newsletters & Mailing Lists** — 8/14 complete — **Priority: high** — SEO annotated — synced Feb 20 (5 apps + 3 comparisons on disk)
 45. **E-Commerce** — 0/16 complete — **Priority: medium-high** — SEO annotated — NEW
 46. **Ticketing & Helpdesk** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW
 47. **Polls, Forms & Surveys** — 0/14 complete — **Priority: medium-high** — SEO annotated — NEW

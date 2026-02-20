@@ -1,4 +1,4 @@
-# Music & Audio [0/22 complete]
+# Music & Audio [9/22 complete]
 **Priority:** high
 **SEO notes:** Music streaming self-hosting is surging — "Spotify alternative self-hosted" has very high search volume. Navidrome is the community favorite (fast, modern, Subsonic API compatible). Funkwhale targets federated/social music sharing. Beets for music library management. LMS for multi-room audio. Cost savings angle is strong: Spotify family plan ~$17/month = $200+/year.
 **Category keyword cluster:** "self-hosted music server", "navidrome setup", "self-hosted spotify alternative", "best self-hosted music streaming"
@@ -13,7 +13,7 @@
 - **Secondary keywords:** "navidrome setup", "self-hosted music server", "navidrome subsonic"
 - **Estimated volume:** high
 - **Priority:** 1
-- **Status:** planned
+- **Status:** **COMPLETE**
 
 ### Self-Host Funkwhale — Federated Music Sharing Platform
 - **URL slug:** /apps/funkwhale
@@ -22,7 +22,7 @@
 - **Secondary keywords:** "funkwhale setup", "self-hosted music sharing", "federated music platform"
 - **Estimated volume:** medium
 - **Priority:** 2
-- **Status:** planned
+- **Status:** **COMPLETE**
 
 ### Self-Host Ampache — Web-Based Music Streaming
 - **URL slug:** /apps/ampache
@@ -31,7 +31,7 @@
 - **Secondary keywords:** "ampache setup", "self-hosted music streaming ampache", "ampache web player"
 - **Estimated volume:** medium
 - **Priority:** 3
-- **Status:** planned
+- **Status:** **COMPLETE**
 
 ### Self-Host Airsonic-Advanced — Music Streaming Fork
 - **URL slug:** /apps/airsonic-advanced
@@ -49,7 +49,7 @@
 - **Secondary keywords:** "koel setup", "koel music server", "self-hosted music player koel"
 - **Estimated volume:** low-medium
 - **Priority:** 5
-- **Status:** planned
+- **Status:** **COMPLETE**
 
 ### Self-Host gonic — Lightweight Subsonic Music Server
 - **URL slug:** /apps/gonic
@@ -76,7 +76,7 @@
 - **Secondary keywords:** "maloja setup", "self-hosted scrobbling", "last.fm alternative self-hosted"
 - **Estimated volume:** low-medium
 - **Priority:** 8
-- **Status:** planned
+- **Status:** **COMPLETE**
 
 ### Self-Host multi-scrobbler — Universal Scrobble Aggregator
 - **URL slug:** /apps/multi-scrobbler
@@ -105,7 +105,7 @@
 - **Secondary keywords:** "best self-hosted music server", "navidrome or funkwhale"
 - **Estimated volume:** medium
 - **Priority:** 1
-- **Status:** planned
+- **Status:** **COMPLETE** (also exists as funkwhale-vs-navidrome)
 
 ### Navidrome vs Airsonic — Modern vs Classic Music Streaming
 - **URL slug:** /compare/navidrome-vs-airsonic
@@ -114,7 +114,7 @@
 - **Secondary keywords:** "navidrome or airsonic-advanced", "subsonic compatible server comparison"
 - **Estimated volume:** medium
 - **Priority:** 2
-- **Status:** planned
+- **Status:** **COMPLETE**
 
 ### Navidrome vs Jellyfin (Music) — Dedicated vs All-in-One
 - **URL slug:** /compare/navidrome-vs-jellyfin-music
@@ -123,7 +123,7 @@
 - **Secondary keywords:** "navidrome or jellyfin for music", "dedicated music server vs media server"
 - **Estimated volume:** medium-high
 - **Priority:** 3
-- **Status:** planned
+- **Status:** **COMPLETE** (on disk as jellyfin-vs-navidrome-music + navidrome-vs-jellyfin)
 
 ### Ampache vs Koel — Web-Based Music Streaming Showdown
 - **URL slug:** /compare/ampache-vs-koel
@@ -159,7 +159,14 @@
 - **Secondary keywords:** "self-hosted scrobbling comparison", "last.fm alternative"
 - **Estimated volume:** low-medium
 - **Priority:** 7
-- **Status:** planned
+- **Status:** **COMPLETE**
+
+### Extra comparisons on disk (not in original plan)
+- /compare/navidrome-vs-subsonic — **COMPLETE** (bonus)
+- /compare/emby-vs-navidrome — **COMPLETE** (bonus)
+- /compare/plex-vs-navidrome — **COMPLETE** (bonus)
+- /compare/navidrome-vs-plex-music — **COMPLETE** (bonus)
+- /compare/koel-vs-navidrome — **COMPLETE** (bonus)
 
 ## Roundup
 

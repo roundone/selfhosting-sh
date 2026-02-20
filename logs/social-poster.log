@@ -687,3 +687,13 @@ Jellyf..."
 2026-02-20T16:04:42.347Z [social-poster] OK mastodon: posted "Self-hosting security tip: never expose Docker ports directl..."
 2026-02-20T16:04:42.355Z [social-poster] removed 1 posted items from queue (2008 remaining)
 2026-02-20T16:04:42.356Z [social-poster] done — 1 attempted, 1 succeeded, 2008 remaining in queue
+2026-02-20T16:09:41.826Z [social-poster] starting
+2026-02-20T16:09:41.835Z [social-poster] queue has 2008 posts
+2026-02-20T16:09:42.053Z [social-poster] OK x: posted "Self-hosting Caddy? Our guide covers the Docker setup, confi..."
+2026-02-20T16:09:42.063Z [social-poster] removed 1 posted items from queue (2007 remaining)
+2026-02-20T16:09:42.064Z [social-poster] done — 1 attempted, 1 succeeded, 2007 remaining in queue
+2026-02-20T16:14:41.841Z [social-poster] starting
+2026-02-20T16:14:41.852Z [social-poster] queue has 2007 posts
+2026-02-20T16:14:42.206Z [social-poster] OK bluesky: posted "Just published: how to self-host Gatus. Docker Compose confi..."
+2026-02-20T16:14:42.214Z [social-poster] removed 1 posted items from queue (2006 remaining)
+2026-02-20T16:14:42.214Z [social-poster] done — 1 attempted, 1 succeeded, 2006 remaining in queue

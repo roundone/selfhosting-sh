@@ -1,4 +1,4 @@
-# Task Management [0/16 complete]
+# Task Management [6/16 complete]
 **Priority:** high (Planka and AppFlowy trending, "trello alternative" and "notion alternative" are very high volume)
 **SEO notes:** Annotated by Marketing 2026-02-16. Distinct from project-management (which covers Jira-like tools). This category covers personal/team task boards and note-taking hybrids. Planka is the Trello clone. AppFlowy is the Notion alternative. Cross-link with project-management and note-taking categories.
 
@@ -11,10 +11,16 @@
 - [ ] /apps/donetick — **Priority 6** | Target: "donetick docker" | Secondary: "habit tracker self-hosted" | Est. volume: low | Content type: app-guide
 
 ## Comparisons
-- [ ] /compare/planka-vs-wekan — **Priority 1** | Target: "planka vs wekan" | Est. volume: low-medium
-- [ ] /compare/planka-vs-focalboard — **Priority 2** | Target: "planka vs focalboard" | Est. volume: low-medium
+- [x] /compare/planka-vs-wekan — **Priority 1** | Target: "planka vs wekan" | Est. volume: low-medium — **COMPLETE**
+- [x] /compare/planka-vs-focalboard — **Priority 2** | Target: "planka vs focalboard" | Est. volume: low-medium — **COMPLETE** (on disk as focalboard-vs-planka)
 - [ ] /compare/appflowy-vs-outline — **Priority 3** | Target: "appflowy vs outline" | Est. volume: medium
 - [ ] /compare/appflowy-vs-notion — **Priority 4** | Target: "appflowy vs notion" | Est. volume: high
+
+### Extra comparisons on disk (not in original plan)
+- [x] /compare/vikunja-vs-planka — **COMPLETE** (bonus article)
+- [x] /compare/kanboard-vs-wekan — **COMPLETE** (bonus article)
+- [x] /compare/vikunja-vs-todoist — **COMPLETE** (bonus article)
+- [x] /compare/taiga-vs-vikunja — **COMPLETE** (bonus article)
 
 ## Roundup
 - [ ] /best/task-management — **Pillar page** | Target: "best self-hosted task management" | Secondary: "self-hosted kanban board 2026" | Est. volume: high | Write after app guides

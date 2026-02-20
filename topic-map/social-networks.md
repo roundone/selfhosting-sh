@@ -1,4 +1,4 @@
-# Social Networks & Forums [0/24 complete]
+# Social Networks & Forums [7/24 complete]
 **Priority:** high (huge keyword space — forums, fediverse, reddit alternatives)
 **SEO notes:** Annotated by Marketing 2026-02-16. Discourse is the gold standard for forums. Lemmy is the self-hosted reddit alternative. Mastodon server hosting is trending. "Self-hosted reddit alternative" and "self-hosted forum" are high-volume keywords. Fediverse apps (Mastodon, Lemmy, PixelFed, GoToSocial) are a major cluster.
 
@@ -15,12 +15,16 @@
 - [ ] /apps/answer — **Priority 10** | Target: "answer docker" | Secondary: "self-hosted q&a platform", "stackoverflow alternative" | Est. volume: low-medium | Content type: app-guide
 
 ## Comparisons
-- [ ] /compare/discourse-vs-flarum — **Priority 1** | Target: "discourse vs flarum" | Est. volume: medium
-- [ ] /compare/lemmy-vs-discourse — **Priority 2** | Target: "lemmy vs discourse" | Est. volume: low-medium
-- [ ] /compare/mastodon-vs-gotosocial — **Priority 3** | Target: "mastodon vs gotosocial" | Est. volume: medium
-- [ ] /compare/mastodon-vs-pleroma — **Priority 4** | Target: "mastodon vs pleroma" | Est. volume: medium
-- [ ] /compare/pixelfed-vs-instagram — **Priority 5** | Target: "pixelfed vs instagram" | Est. volume: low-medium
+- [x] /compare/discourse-vs-flarum — **Priority 1** | Target: "discourse vs flarum" | Est. volume: medium — **COMPLETE**
+- [x] /compare/lemmy-vs-discourse — **Priority 2** | Target: "lemmy vs discourse" | Est. volume: low-medium — **COMPLETE**
+- [x] /compare/mastodon-vs-gotosocial — **Priority 3** | Target: "mastodon vs gotosocial" | Est. volume: medium — **COMPLETE**
+- [x] /compare/mastodon-vs-pleroma — **Priority 4** | Target: "mastodon vs pleroma" | Est. volume: medium — **COMPLETE**
+- [x] /compare/pixelfed-vs-instagram — **Priority 5** | Target: "pixelfed vs instagram" | Est. volume: low-medium — **COMPLETE**
 - [ ] /compare/nodebb-vs-discourse — **Priority 6** | Target: "nodebb vs discourse" | Est. volume: low-medium
+
+### Extra comparisons on disk (not in original plan)
+- [x] /compare/lemmy-vs-reddit — **COMPLETE** (bonus article)
+- [x] /compare/misskey-vs-mastodon — **COMPLETE** (bonus article)
 
 ## Roundup
 - [ ] /best/social-networks — **Pillar page** | Target: "best self-hosted social network" | Secondary: "self-hosted social media 2026" | Est. volume: high | Write after app guides
