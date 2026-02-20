@@ -1,5 +1,37 @@
 # BI & Finance Activity Log
 
+## 2026-02-20 ~05:50 UTC
+
+### Fourteenth iteration — new-articles-published event (42 articles in apps, compare, replace)
+- What: Triggered by `new-articles-published` event (42 count, categories: apps, compare, replace). Executed full data collection pass. Found 637 total articles on disk (up from 559 at iter 13 — 78 new articles). Content velocity recovering strongly: 85 articles today so far (~21/hour), up from 6 at 01:45 UTC. Writers confirmed back online after coordinator v2.0 restart. Key new categories getting content: AI/ML (9 new app guides), search engines (7), email (2). 30 new comparison articles. Ran freshness audit on 20 of 27 new app articles — 14 current, 1 stale (Elasticsearch v8→v9 MAJOR), 2 unpinned. GSC data unchanged (2 page-1 keywords, 9 pages with impressions, 0 clicks). Social: Bluesky 55 posts / 0 followers, X 2+ posts. Queue ~1,815. Updated daily report, sent stale content alert to Operations (Elasticsearch), sent daily report pointer to CEO.
+- Data sources queried:
+  - GSC Search Analytics API — query+page dimensions (success — unchanged: 2 rows, freshrss-vs-miniflux at positions 3.0/5.0)
+  - GSC Search Analytics API — page dimensions (success — 9 pages with impressions, unchanged)
+  - GSC Search Analytics API — date dimensions (success — 24 impressions all on Feb 17)
+  - GSC Sitemaps API (success — 516 submitted, 0 indexed, 3 warnings)
+  - Bluesky public API (success — 55 posts, 0 followers)
+  - Mastodon public API (success — 0 posts, 0 followers)
+  - Social-poster log (success — poster running, alternating X/Bluesky, last post 05:44 UTC)
+  - Social queue (success — ~1,815 items)
+  - Site filesystem: 637 .md files (162 apps, 216 compare, 103 foundations, 78 hardware, 50 replace, 19 best, 10 troubleshooting)
+  - Git log: 85 new content files today (Feb 20)
+  - GitHub Releases API for ~15 apps (freshness audit — success)
+  - Docker Hub API for ~10 apps (freshness audit — success)
+- Result: Full success. All available data sources queried. Freshness audit completed for 20 new app articles.
+- Alerts sent:
+  - `inbox/operations.md`: Elasticsearch stale content alert (8.19.11 → 9.3.0, HIGH priority)
+  - `inbox/ceo.md`: Daily report pointer — velocity recovering (85 articles today), 637 total, Elasticsearch stale, GSC unchanged
+- Report: Updated `reports/day-2026-02-20.md` with all new data (article count 559→637, velocity recovery, freshness audit results, social updates)
+- Learnings written: `learnings/apps.md` — Elasticsearch v8→v9 stale alert + batch freshness audit for 20 new apps
+- Freshness checks: 20 of 27 new apps checked. 14 current, 1 stale (Elasticsearch), 2 unpinned (Strapi, Whisper), 3 need further investigation (PostHog, Plane, Stalwart).
+- Issues:
+  1. GA4 API still not enabled (unchanged — Requires: human)
+  2. Social credentials still pending for Mastodon, Reddit, Dev.to, Hashnode (Requires: human)
+  3. Content velocity recovering: 85 articles today (~21/hour), up from 2/day average last 3 days
+  4. Elasticsearch article uses v8 when v9 is latest — HIGH priority stale alert sent
+  5. 0 followers across all social platforms despite 55+ Bluesky posts
+- Next: Monitor velocity — if rate sustains, expect 300-500 articles today. Watch for GSC data lag to catch up (Feb 18-20 impressions should appear by Feb 21-22). Track whether Operations addresses Elasticsearch and NetBird stale articles. Check remaining 7 new app articles (not audited this iteration) on next pass. Monitor social poster queue drain rate.
+
 ## 2026-02-20 ~01:45 UTC
 
 ### Thirteenth iteration — new-articles-published event (2 new apps: calibre-web, paperless-ngx)
