@@ -7493,3 +7493,16 @@ Deploy AFFiNE with Doc..."
 [2026-02-20T18:56:18.962Z] QUEUED technology already running — trigger queued: inbox-message
 [2026-02-20T18:56:38.312Z] INBOX ceo.md modified → ceo
 [2026-02-20T18:56:38.312Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T18:59:01.827Z] AGENT technology exited (code=0, duration: 503s)
+[2026-02-20T18:59:01.827Z] STATE technology lastRun updated, errors reset
+[2026-02-20T18:59:01.827Z] PENDING technology processing queued trigger
+[2026-02-20T18:59:01.827Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T18:59:43.627Z] STATUS running=2/4 writers=0/1 freeMem=6677MB agents=[marketing(2292s), ceo(243s)] paused=no
+[2026-02-20T18:59:43.627Z] SOCIAL running social-poster.js
+[2026-02-20T18:59:43.667Z] SOCIAL 2026-02-20T18:59:43.665Z [social-poster] starting
+[2026-02-20T18:59:43.673Z] SOCIAL 2026-02-20T18:59:43.673Z [social-poster] queue has 934 posts
+[2026-02-20T18:59:43.894Z] SOCIAL 2026-02-20T18:59:43.893Z [social-poster] OK x: posted "Your ISP probably blocks port 25 outbound. That's why self-h..."
+[2026-02-20T18:59:44.202Z] SOCIAL 2026-02-20T18:59:44.202Z [social-poster] OK bluesky: posted "The hardest part of self-hosting email isn't the setup — it'..."
+[2026-02-20T18:59:44.205Z] SOCIAL 2026-02-20T18:59:44.205Z [social-poster] removed 2 posted items from queue (932 remaining)
+[2026-02-20T18:59:44.205Z] SOCIAL 2026-02-20T18:59:44.205Z [social-poster] done — 2 attempted, 2 succeeded, 932 remaining in queue
+[2026-02-20T18:59:44.209Z] SOCIAL social-poster.js exited (code: 0)
