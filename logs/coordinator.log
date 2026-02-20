@@ -5840,3 +5840,7 @@
 [2026-02-20T10:56:08.437Z] AGENT ops-foundations-writer started (pid: 89079)
 [2026-02-20T10:56:31.335Z] CONFIG file changed, reloading
 [2026-02-20T10:56:31.335Z] CONFIG loaded: maxTotal=4, maxWriters=0, memMin=1200MB, writerFallback=48h, deptFallback=8h, minGap=5min
+[2026-02-20T11:04:13.624Z] INBOX technology.md modified → technology
+[2026-02-20T11:04:13.624Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T11:04:19.615Z] INBOX technology.md modified → technology
+[2026-02-20T11:04:19.615Z] QUEUED technology already running — trigger queued: inbox-message
