@@ -1,15 +1,14 @@
 ## Current Phase: Launch — Day 5 Operations
-## Last Updated: 2026-02-20 09:35 UTC
+## Last Updated: 2026-02-20 09:42 UTC
 
 ## Content
-- **Total articles on disk: 720** (up from 651 — writers produced ~69 new articles since last update)
-- Content types with articles: apps (187), compare (260), foundations (104), hardware (90), replace (51), best (21), troubleshooting (7) = 720 total
-- In progress: Operations head + Marketing + BI + writers active
+- **Total articles on disk: 728** (195 apps + 260 compare + 104 foundations + 90 hardware + 51 replace + 21 best + 7 troubleshooting)
+- In progress: foundations-writer running, technology processing IR portal build request
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
 - **Writer pipeline THROTTLED** — Founder override: max 1 concurrent writer (was 4), 8h fallback (was 1h). Only 1 writer at a time.
-- Velocity: **SLOWED** by founder config override. ~69 articles produced in ~3 hours (09:00-09:35 UTC).
-- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). Need ~780 more articles by Feb 28 (~98/day for 8 days).
-- Topic map: 1,224 planned across 78 categories, ~720 published = ~59% of topic map
+- Velocity: ~8 new articles since last update. Founder config override constrains throughput.
+- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). Need ~772 more articles by Feb 28 (~97/day for 8 days).
+- Topic map: 1,224 planned across 78 categories, ~728 published = ~59% of topic map
 - Categories with content: 19+ / 78 (AI/ML + Search Engines now COMPLETE; many categories have ZERO content)
 
 ## Category Completion Status
@@ -73,12 +72,12 @@
   - `/foundations/reverse-proxy-explained/` — 4 impressions, position 7.2
   - 6 more pages with 1-2 impressions each
 - **2 page-1 keywords confirmed:** "freshrss vs miniflux" (pos 3.0), "miniflux vs freshrss" (pos 5.0)
-- GSC sitemap warnings: 3 (Technology investigating)
+- GSC sitemap warnings: 0 (resolved)
 - Topic map: 1,224 articles across 78 categories
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **1,920 items** (draining slowly — 2 platforms active)
+- Queue: **1,919 items** (draining slowly — 2 platforms active)
 - **First follower on Bluesky!** (1 follower as of 06:18 UTC)
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item (fixed 09:10 UTC)
 - Platform status:
@@ -101,14 +100,15 @@
 - Tools/services: $0 / $200 (0% utilized)
 
 ## Execution Environment
-- **VPS: UPGRADED** — 7.7GB total RAM (was 3.8GB), ~6.4GB available
-- VPS uptime: rebooted ~05:14 UTC Feb 20
+- **VPS: UPGRADED** — 7.7GB total RAM (was 3.8GB), ~6.3GB available
+- VPS uptime: rebooted ~05:14 UTC Feb 20 (4.5h uptime)
 - **Infrastructure: Coordinator v2.0 RUNNING** (config-driven, concurrency limits, memory gate)
-  - selfhosting-coordinator.service: ACTIVE (v2.0, 13 agents discovered)
+  - selfhosting-coordinator.service: ACTIVE (v2.0, 13 agents discovered + IR pending next restart)
   - selfhosting-proxy.service: ACTIVE
   - selfhosting-watchdog.service: ACTIVE
-  - 2 claude processes active (CEO + 1 writer — founder concurrency limit)
-  - Memory: ~6.7GB available — healthy
+  - 8 claude processes active (CEO + foundations-writer + technology + others)
+  - Memory: ~6.3GB available — healthy
+  - Load: 0.12 — minimal
 - Rate-limiting proxy: ACTIVE at localhost:3128
 - Social poster: ACTIVE (running every 5 min via coordinator)
 
@@ -124,24 +124,26 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 09:35 | 1 | Running now |
+| CEO | 2026-02-20 09:38 | 2 | Running now |
 | Operations | 2026-02-20 07:27 | 1 | Idle (8h fallback) |
-| Technology | 2026-02-20 06:47 | 0 | Idle (8h fallback) |
+| Technology | 2026-02-20 09:38 | 0 | Running (processing IR portal build request) |
 | Marketing | 2026-02-20 06:56 | 0 | Idle (8h fallback) |
 | BI & Finance | 2026-02-20 06:54 | 0 | Idle (8h fallback) |
+| Investor Relations | — | — | Not yet discovered by coordinator (code fix staged) |
 | proxy-docker-writer | 2026-02-20 07:57 | 0 | Queued (8h writer fallback, 1-writer limit) |
 | tier2-writer | 2026-02-20 07:58 | 0 | Queued (8h writer fallback, 1-writer limit) |
 | vpn-filesync-writer | 2026-02-20 06:21 | 0 | Queued (8h writer fallback, 1-writer limit) |
 | foundations-writer | 2026-02-20 07:27 | 1 | Running (1 of 1 writer slot) |
-| hardware-writer | 2026-02-20 01:54 | 3 | Backoff until 09:29 UTC |
-| homeauto-notes-writer | 2026-02-20 02:13 | 2 | Backoff until 09:28 UTC |
-| password-adblock-writer | 2026-02-20 02:13 | 2 | Backoff until 09:28 UTC |
+| hardware-writer | 2026-02-20 01:54 | 3 | Backoff expired — waiting for 8h fallback |
+| homeauto-notes-writer | 2026-02-20 02:13 | 2 | Backoff expired — waiting for 8h fallback |
+| password-adblock-writer | 2026-02-20 02:13 | 2 | Backoff expired — waiting for 8h fallback |
 | photo-media-writer | 2026-02-20 07:58 | 0 | Queued (8h writer fallback, 1-writer limit) |
 
 ## Blockers
 - Social credentials PENDING for: Mastodon, Reddit, Dev.to, Hashnode, LinkedIn (Requires: human)
 - GA4 API not enabled — BI cannot track traffic (Requires: human)
-- Content velocity constrained — 720 articles vs 1,500 Month 1 target. Founder override limits writers to 1 concurrent with 8h fallback. ~98/day needed for 8 remaining days. At current throttle, this may be tight.
+- Content velocity constrained — 728 articles vs 1,500 Month 1 target. Founder override limits writers to 1 concurrent with 8h fallback. ~97/day needed for 8 remaining days. At current throttle, this may be tight.
+- Coordinator doesn't discover IR agent — code fix staged in coordinator.js, takes effect on next coordinator restart
 
 ## Founder Directives Status
 1. Fix broken search → **FIXED by CEO** (Feb 20 05:50 UTC)

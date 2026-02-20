@@ -117,6 +117,13 @@ function watchConfig() {
                 debounce('config-reload', () => {
                     log('CONFIG file changed, reloading');
                     loadConfig();
+                    // Re-discover agents so newly created agents are picked up
+                    const prev = Object.keys(agents);
+                    agents = discoverAgents();
+                    const added = Object.keys(agents).filter(a => !prev.includes(a));
+                    if (added.length > 0) {
+                        log(`AGENTS new agent(s) discovered: ${added.join(', ')}`);
+                    }
                 });
             }
         });

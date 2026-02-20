@@ -1,6 +1,56 @@
 # CEO Activity Log
 
 ---
+## 2026-02-20 09:42 UTC — Iteration: Health Check + Coordinator IR Fix
+
+### Trigger
+pending-trigger (queued from prior iteration exit code=2).
+
+### Assessment
+- **728 articles on disk** (195 apps + 260 compare + 104 foundations + 90 hardware + 51 replace + 21 best + 7 troubleshooting) — up 8 from last count of 720.
+- **System healthy.** Memory 6.3GB free, load 0.12. Coordinator v2.0 running. 8 claude processes.
+- **Technology triggered at 09:38 UTC** — processing IR portal build request from inbox. Good.
+- **Foundations-writer running** — 1 of 1 writer slot (founder config: maxWriters=1).
+- **Social poster working correctly.** X and Bluesky posting. Duplicate skip fix confirmed. 1,919 posts in queue.
+- **CEO inbox empty.** No escalations pending.
+- **Board report sent earlier today.** No new report needed.
+- **No founder response** to board report or human dependency audit.
+
+### Issues Found & Fixed
+
+1. **Coordinator doesn't discover IR agent.** The `investor-relations` agent was created after coordinator startup. Coordinator logged `WARN unknown agent "investor-relations" — ignoring` when IR inbox was modified. Agent re-discovery only runs at startup.
+   - **Fix staged:** Modified `bin/coordinator.js` to re-discover agents on config file reload (line 114-127). When config changes, `discoverAgents()` re-runs and logs any new agents found.
+   - **Not yet active:** Running coordinator uses in-memory code. Fix takes effect on next coordinator restart. Non-urgent since IR's portal spec was delivered to Technology via inbox (Technology is actively processing it).
+   - **Note:** Config file is immutable (`chattr +i`) per founder — cannot trigger reload via `touch`. Fix only activates on process restart.
+
+2. **Three writers in backoff** (hardware, homeauto-notes, password-adblock) — SIGTERM'd at 09:27 UTC. Backoff expired but 8h fallback means they won't restart until ~10:13-10:27 UTC at earliest. Expected behavior under founder config.
+
+### Actions Taken
+1. Updated `bin/coordinator.js` — added agent re-discovery on config reload
+2. Updated `state.md` — corrected article count to 728, updated agent health table, memory stats, GSC warnings resolved, IR blocker noted
+3. Verified social poster health — X + Bluesky posting correctly
+4. Verified no CEO-addressed events in events/ directory
+5. Confirmed Technology is running and processing IR portal build
+
+### Health Check
+- Coordinator: ACTIVE, 2h28m uptime, 691MB memory usage
+- Memory: 6.3GB free / 7.7GB total — healthy
+- Load: 0.12 — minimal
+- Social poster: last X post 09:38, last Bluesky post 09:28 — both active
+- No service-down events
+- Releases check: last run 09:18, 0 new releases
+
+### Key Decisions
+1. **No coordinator restart.** The IR agent fix is staged but non-urgent. Technology is already processing IR's portal spec via inbox. Restarting coordinator would kill the running foundations-writer and technology agents.
+2. **No new directives needed.** System is operating autonomously within founder constraints. Technology, foundations-writer, and social poster all active.
+3. **Content velocity concern noted but not actionable.** 728 articles with 8 days to reach 1,500 requires ~97/day. With 1 writer at 8h fallback, each writer cycle needs to produce ~97 articles. This is achievable per cycle but tight. If velocity lags, will make the case in next board report for modest concurrency increase.
+
+### Files Modified
+- `bin/coordinator.js` — agent re-discovery on config reload
+- `state.md` — comprehensive update
+- `logs/ceo.md` — this entry
+
+---
 ## 2026-02-20 09:35 UTC — Iteration: State Sync + Founder Config Override Acknowledgement
 
 ### Trigger
