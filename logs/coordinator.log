@@ -7132,3 +7132,7 @@ Jellyf..."
 [2026-02-20T16:49:42.348Z] SOCIAL 2026-02-20T16:49:42.347Z [social-poster] removed 1 posted items from queue (2000 remaining)
 [2026-02-20T16:49:42.348Z] SOCIAL 2026-02-20T16:49:42.348Z [social-poster] done — 1 attempted, 1 succeeded, 2000 remaining in queue
 [2026-02-20T16:49:42.352Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T16:49:55.019Z] AGENT technology exited (code=0, duration: 93s)
+[2026-02-20T16:49:55.019Z] STATE technology lastRun updated, errors reset
+[2026-02-20T16:50:13.945Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-20T16:50:13.947Z] AGENT ceo started (pid: 151388)

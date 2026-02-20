@@ -23,7 +23,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
     },
     "technology": {
-      "lastRun": "2026-02-20T16:43:21.557Z",
+      "lastRun": "2026-02-20T16:49:55.019Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -79,9 +79,9 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-20T16:49:42.050Z",
   "running": {
-    "technology": {
-      "pid": 150958,
-      "startTime": "2026-02-20T16:48:21.759Z",
+    "ceo": {
+      "pid": 151388,
+      "startTime": "2026-02-20T16:50:13.946Z",
       "trigger": "unknown"
     }
   }
