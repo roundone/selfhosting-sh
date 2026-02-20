@@ -6,7 +6,7 @@
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-20T16:07:17.260Z",
+      "lastRun": "2026-02-20T16:21:41.711Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
@@ -82,11 +82,6 @@
     "operations": {
       "pid": 140660,
       "startTime": "2026-02-20T16:02:31.882Z",
-      "trigger": "unknown"
-    },
-    "ceo": {
-      "pid": 143253,
-      "startTime": "2026-02-20T16:12:17.386Z",
       "trigger": "unknown"
     }
   }

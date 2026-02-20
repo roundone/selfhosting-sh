@@ -7019,3 +7019,7 @@ Jellyf..."
 [2026-02-20T16:19:41.890Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-20T16:20:12.891Z] INBOX ceo.md modified → ceo
 [2026-02-20T16:20:12.891Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-20T16:21:41.711Z] AGENT ceo exited (code=0, duration: 564s)
+[2026-02-20T16:21:41.711Z] STATE ceo lastRun updated, errors reset
+[2026-02-20T16:21:41.712Z] PENDING ceo processing queued trigger
+[2026-02-20T16:21:41.712Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
