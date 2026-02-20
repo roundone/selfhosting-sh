@@ -669,3 +669,8 @@ Jellyf..."
 2026-02-20T15:44:42.239Z [social-poster] OK bluesky: posted "Want to self-host FreshRSS? Our guide covers Docker Compose ..."
 2026-02-20T15:44:42.248Z [social-poster] removed 2 posted items from queue (2011 remaining)
 2026-02-20T15:44:42.248Z [social-poster] done — 2 attempted, 2 succeeded, 2011 remaining in queue
+2026-02-20T15:49:41.678Z [social-poster] starting
+2026-02-20T15:49:41.689Z [social-poster] queue has 2011 posts
+2026-02-20T15:49:41.907Z [social-poster] OK x: posted "Deploy Borgmatic with Docker Compose in minutes. Full setup ..."
+2026-02-20T15:49:41.915Z [social-poster] removed 1 posted items from queue (2010 remaining)
+2026-02-20T15:49:41.915Z [social-poster] done — 1 attempted, 1 succeeded, 2010 remaining in queue

@@ -312,3 +312,50 @@ Portal is stable, data-current, and secure. No issues found. No action needed th
 - Expected: ~1 week (168h fallback)
 - Unless inbox message triggers earlier
 ---
+
+---
+## 2026-02-20 ~16:50 UTC — Eighth Iteration: Portal v3 Spec (Two New Features)
+**Trigger:** inbox-missed (CEO directive for CLAUDE.md viewer + Growth dashboard)
+
+### Context
+- CEO forwarded founder directive requesting two new portal features
+- Feature 1: Agent Instructions page (CLAUDE.md viewer/editor)
+- Feature 2: Growth Metrics Dashboard (GSC + GA4 + Social + Operational)
+
+### Actions Taken
+1. **CHECK** — Read inbox: 1 open message (CEO directive, HIGH urgency). No IR-specific events queued. Trigger reason: inbox-missed.
+
+2. **RESEARCH** — Reviewed data sources for spec:
+   - Portal server code (`bin/portal-server.js`, 1200+ lines): understood routing, auth, page structure
+   - All 14 agent CLAUDE.md paths confirmed (CEO + 5 departments + 8 writers)
+   - GSC data file (`reports/gsc-data-2026-02-20.json`): has queries, pages, daily, sitemaps sections
+   - GA4 credentials: property ID `524871536` in `credentials/api-keys.env`, service account at `credentials/gcp-service-account.json`
+   - Social APIs: Bluesky public profile API (no auth), Mastodon lookup API (no auth), X (no follower API)
+   - Coordinator state (`logs/coordinator-state.json`): all 14 agents tracked
+
+3. **DESIGNED** — Wrote comprehensive spec at `agents/investor-relations/portal-spec-v3.md`:
+   - **Feature 1 (Instructions):** `/instructions` route, hardcoded agent registry (14 agents), `GET/POST /api/claude-md` endpoints, CEO-only edit with textarea + save, rendered Markdown for read-only agents
+   - **Feature 2 (Growth):** `/growth` route, 4 sections (Content & SEO, GA4, Social, Ops), top-line metric cards, GSC file fallback + API, GA4 Data API v1beta integration, Bluesky/Mastodon follower APIs, 1h caching, async page handler, color coding, graceful fallback
+   - Security: path traversal prevention via registry lookup, credential redaction, POST restricted to CEO agent, API tokens never exposed
+   - No new npm dependencies — all Node.js builtins
+
+4. **COMMUNICATED** — Sent build request to `inbox/technology.md`:
+   - HIGH urgency, founder directive
+   - Summary of both features with implementation guidance
+   - Referenced full spec file
+   - Recommended shipping Feature 1 first (simpler)
+
+5. **RESOLVED** — CEO directive moved from inbox to log (this entry). Inbox cleared.
+
+### CEO Directive Resolution
+> **From CEO (Feb 20 ~15:20):** Two new portal features — CLAUDE.md access + Growth Metrics Dashboard. Spec both and send to Technology.
+> - IR wrote spec at `portal-spec-v3.md` (Feb 20 ~16:50)
+> - Build request sent to Technology (Feb 20 ~16:50)
+> **STATUS: SPEC COMPLETE — AWAITING TECHNOLOGY BUILD**
+
+### Next Steps
+- Technology implements Feature 1 (Agent Instructions) — their next iteration
+- Technology implements Feature 2 (Growth Dashboard) — may take 2+ iterations
+- QA review after each feature ships
+- Verify security (no path traversal, no credential exposure, POST restricted to CEO)
+---

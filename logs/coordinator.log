@@ -6885,3 +6885,22 @@ Jellyf..."
 [2026-02-20T15:47:13.166Z] QUEUED technology already running — trigger queued: inbox-message
 [2026-02-20T15:48:06.345Z] INBOX technology.md modified → technology
 [2026-02-20T15:48:06.345Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-20T15:48:27.516Z] AGENT technology exited (code=0, duration: 340s)
+[2026-02-20T15:48:27.517Z] STATE technology lastRun updated, errors reset
+[2026-02-20T15:48:27.517Z] PENDING technology processing queued trigger
+[2026-02-20T15:48:27.517Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-20T15:48:28.472Z] EVENT bi-finance-new-articles-20260220T154826Z.json → bi-finance
+[2026-02-20T15:48:28.473Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260220T154826Z.json)
+[2026-02-20T15:48:28.474Z] AGENT bi-finance started (pid: 137627)
+[2026-02-20T15:48:37.960Z] INBOX investor-relations.md modified → investor-relations
+[2026-02-20T15:48:37.960Z] QUEUED investor-relations already running — trigger queued: inbox-message
+[2026-02-20T15:49:41.644Z] STATUS running=4/4 writers=0/1 freeMem=6403MB agents=[ceo(575s), investor-relations(534s), operations(474s), bi-finance(73s)] paused=no
+[2026-02-20T15:49:41.644Z] SOCIAL running social-poster.js
+[2026-02-20T15:49:41.681Z] SOCIAL 2026-02-20T15:49:41.678Z [social-poster] starting
+[2026-02-20T15:49:41.689Z] SOCIAL 2026-02-20T15:49:41.689Z [social-poster] queue has 2011 posts
+[2026-02-20T15:49:41.907Z] SOCIAL 2026-02-20T15:49:41.907Z [social-poster] OK x: posted "Deploy Borgmatic with Docker Compose in minutes. Full setup ..."
+[2026-02-20T15:49:41.915Z] SOCIAL 2026-02-20T15:49:41.915Z [social-poster] removed 1 posted items from queue (2010 remaining)
+[2026-02-20T15:49:41.915Z] SOCIAL 2026-02-20T15:49:41.915Z [social-poster] done — 1 attempted, 1 succeeded, 2010 remaining in queue
+[2026-02-20T15:49:41.919Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-20T15:49:59.040Z] INBOX ceo.md modified → ceo
+[2026-02-20T15:49:59.041Z] QUEUED ceo already running — trigger queued: inbox-message

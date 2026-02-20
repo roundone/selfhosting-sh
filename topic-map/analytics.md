@@ -5,21 +5,21 @@
 ## Apps
 - [x] /apps/plausible — done 2026-02-16 | **Target:** "plausible analytics docker compose" | **Volume:** Very High | **Priority:** done
 - [x] /apps/umami — done 2026-02-16 | **Target:** "umami analytics docker compose" | **Volume:** Very High | **Priority:** done
-- [ ] /apps/matomo — **Target:** "matomo docker compose" | **Secondary:** "self-host matomo", "matomo setup guide", "matomo self-hosted analytics" | **Volume:** High | **Priority:** 3
-- [ ] /apps/posthog — **Target:** "posthog docker compose" | **Secondary:** "self-host posthog", "posthog setup guide", "posthog self-hosted" | **Volume:** High | **Priority:** 4
+- [x] /apps/matomo — done 2026-02-20 (disk sync) | **Target:** "matomo docker compose" | **Secondary:** "self-host matomo", "matomo setup guide", "matomo self-hosted analytics" | **Volume:** High | **Priority:** done
+- [x] /apps/posthog — done 2026-02-20 (disk sync) | **Target:** "posthog docker compose" | **Secondary:** "self-host posthog", "posthog setup guide", "posthog self-hosted" | **Volume:** High | **Priority:** done
 - [ ] /apps/goaccess — **Target:** "goaccess setup" | **Secondary:** "self-host goaccess", "goaccess analytics", "goaccess log analyzer" | **Volume:** Medium | **Priority:** 5
 - [ ] /apps/fathom-lite — **Target:** "fathom lite self-hosted" | **Secondary:** "fathom analytics self-hosted", "fathom lite setup", "fathom lite docker" | **Volume:** Low-Medium | **Priority:** 6
 
 ## Comparisons
-- [ ] /compare/plausible-vs-umami — **Target:** "plausible vs umami" | **Secondary:** "plausible or umami", "best privacy-friendly analytics" | **Volume:** Very High | **Priority:** 1
-- [ ] /compare/plausible-vs-matomo — **Target:** "plausible vs matomo" | **Secondary:** "plausible or matomo", "best self-hosted analytics" | **Volume:** High | **Priority:** 2
-- [ ] /compare/umami-vs-matomo — **Target:** "umami vs matomo" | **Secondary:** "umami or matomo", "lightweight vs full analytics" | **Volume:** High | **Priority:** 3
+- [x] /compare/plausible-vs-umami — done 2026-02-20 (disk sync) | **Target:** "plausible vs umami" | **Secondary:** "plausible or umami", "best privacy-friendly analytics" | **Volume:** Very High | **Priority:** done
+- [x] /compare/plausible-vs-matomo — done 2026-02-20 (disk sync) | **Target:** "plausible vs matomo" | **Secondary:** "plausible or matomo", "best self-hosted analytics" | **Volume:** High | **Priority:** done
+- [x] /compare/umami-vs-matomo — done 2026-02-20 (disk sync) | **Target:** "umami vs matomo" | **Secondary:** "umami or matomo", "lightweight vs full analytics" | **Volume:** High | **Priority:** done
 - [ ] /compare/posthog-vs-matomo — **Target:** "posthog vs matomo" | **Secondary:** "posthog or matomo", "product analytics vs web analytics" | **Volume:** Medium-High | **Priority:** 4
 - [ ] /compare/plausible-vs-fathom — **Target:** "plausible vs fathom" | **Secondary:** "plausible or fathom", "simple analytics comparison" | **Volume:** Medium | **Priority:** 5
 - [ ] /compare/goaccess-vs-plausible — **Target:** "goaccess vs plausible" | **Secondary:** "goaccess or plausible", "log-based vs javascript analytics" | **Volume:** Low-Medium | **Priority:** 6
 
 ## Roundup
-- [ ] /best/analytics — **Target:** "best self-hosted analytics" | **Secondary:** "best self-hosted google analytics alternative", "best privacy-friendly analytics 2026", "top self-hosted analytics tools" | **Volume:** Very High | **Priority:** write after all app guides done
+- [x] /best/analytics — done 2026-02-20 (disk sync) | **Target:** "best self-hosted analytics" | **Secondary:** "best self-hosted google analytics alternative", "best privacy-friendly analytics 2026", "top self-hosted analytics tools" | **Volume:** Very High | **Priority:** done
 
 ## Replace Guides
 - [x] /replace/google-analytics — done 2026-02-16 | **Target:** "self-hosted alternative to google analytics" | **Volume:** Very High | **Priority:** done
