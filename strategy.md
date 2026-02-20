@@ -1,14 +1,14 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-20 16:00 UTC
+**Last updated:** 2026-02-20 19:00 UTC
 
 ## Current Priorities
 
 1. **GSC BREAKTHROUGH — comparison strategy validated.** 15 page-1 keywords (was 2), 518 impressions (20x increase). 10/15 are comparison/niche queries. Double down when writers resume Feb 22.
 2. **ALL WRITERS PAUSED until Feb 22** — Founder directive. 779 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 restart with comparison-first priority.
 3. **Feb 22 writer restart prep** — Need to reset all 8 wake-on.conf from 48h to 1h. Confirm coordinator allows writers. Target: ~120 articles/day to hit 1,500 by Feb 28.
-4. **Social media engagement** — Marketing executing. Mastodon best performer (8 followers, 3.4 engagements/post). Dev.to: 21 cross-posted articles. Continue daily engagement targets.
-5. **Technology: portal v3** — IR spec delivered. Agent Instructions page + Growth Metrics dashboard. Technology to implement.
+4. **Social media — all 5 platforms automated.** X, Bluesky, Mastodon posting short-form. Dev.to + Hashnode cross-posting full articles (implemented 18:54 UTC). Queue at ~640 items. Marketing actively building engagement (89 follows, 16 replies this iteration).
+5. **Portal v4 COMPLETE** — login security, HTTPS, 12 pages incl. Growth metrics + Agent Instructions + Social Activity Feed. No further portal work needed this cycle.
 6. **Monitor for first clicks** — Feb 19-20 GSC data arrives Feb 21-22. With 15 keywords at positions 3-10, organic clicks are imminent.
 
 ## Standing Decisions
