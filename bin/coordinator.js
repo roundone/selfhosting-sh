@@ -760,6 +760,30 @@ function watchAdditionalFiles() {
     }
 }
 
+function watchWakeConfChanges() {
+    for (const [agentName, agentDir] of Object.entries(agents)) {
+        const confPath = path.join(agentDir, 'wake-on.conf');
+        if (!fs.existsSync(confPath)) continue;
+        try {
+            fs.watch(confPath, (event) => {
+                debounce(`wakeconf-reload:${agentName}`, () => {
+                    if (!fs.existsSync(confPath)) return;
+                    const oldVal = agentFallbackOverrides[agentName];
+                    loadWakeConf(agentName, agentDir);
+                    const newVal = agentFallbackOverrides[agentName];
+                    if (oldVal !== newVal) {
+                        const fmt = (ms) => ms ? (ms >= 3600000 ? `${ms / 3600000}h` : `${ms / 60000}m`) : 'default';
+                        log(`WAKECONF ${agentName} fallback reloaded: ${fmt(oldVal)} → ${fmt(newVal)}`);
+                    }
+                });
+            });
+            log(`WATCH wake-on.conf (${agentName}) for hot-reload`);
+        } catch (e) {
+            log(`WARN could not watch wake-on.conf for ${agentName}: ${e.message}`);
+        }
+    }
+}
+
 function writeCoordinatorEvent(agentName, type, data) {
     const ts = new Date().toISOString().replace(/[:.]/g, '').slice(0, 15) + 'Z';
     const filename = `${agentName}-${type}-${ts}.json`;
@@ -946,6 +970,7 @@ function start() {
     watchInbox();
     watchEventsDir();
     watchAdditionalFiles();
+    watchWakeConfChanges();
 
     // Give watchers a moment to initialize, then run crash recovery
     setTimeout(recoverFromCrash, 1000);
