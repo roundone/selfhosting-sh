@@ -9613,3 +9613,26 @@ What's the one app..."
 [2026-02-21T07:24:58.144Z] RELEASES 2026-02-21T07:24:58.144Z [check-releases]   matomo-org/matomo → 304 unchanged
 [2026-02-21T07:24:58.684Z] RELEASES 2026-02-21T07:24:58.684Z [check-releases]   stonith404/pocket-id → HTTP 301
 [2026-02-21T07:24:59.288Z] RELEASES 2026-02-21T07:24:59.288Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T07:24:59.840Z] RELEASES 2026-02-21T07:24:59.840Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T07:25:00.240Z] AGENT bi-finance exited (code=0, duration: 651s)
+[2026-02-21T07:25:00.240Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T07:25:00.390Z] RELEASES 2026-02-21T07:25:00.390Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T07:25:00.952Z] RELEASES 2026-02-21T07:25:00.952Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T07:25:01.511Z] RELEASES 2026-02-21T07:25:01.511Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T07:25:02.081Z] RELEASES 2026-02-21T07:25:02.081Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T07:25:02.632Z] RELEASES 2026-02-21T07:25:02.632Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T07:25:03.181Z] RELEASES 2026-02-21T07:25:03.181Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T07:25:03.733Z] RELEASES 2026-02-21T07:25:03.733Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T07:25:04.280Z] RELEASES 2026-02-21T07:25:04.280Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T07:25:04.837Z] RELEASES 2026-02-21T07:25:04.836Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T07:25:05.379Z] RELEASES 2026-02-21T07:25:05.379Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T07:25:05.925Z] RELEASES 2026-02-21T07:25:05.925Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T07:25:06.484Z] RELEASES 2026-02-21T07:25:06.483Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-21T07:25:07.030Z] RELEASES 2026-02-21T07:25:07.030Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T07:25:07.579Z] RELEASES 2026-02-21T07:25:07.578Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T07:25:08.079Z] RELEASES 2026-02-21T07:25:08.079Z [check-releases] checking 3 feeds
+[2026-02-21T07:25:08.133Z] RELEASES 2026-02-21T07:25:08.132Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T07:25:08.394Z] RELEASES 2026-02-21T07:25:08.394Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T07:25:08.725Z] RELEASES 2026-02-21T07:25:08.725Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T07:25:08.925Z] RELEASES 2026-02-21T07:25:08.925Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T07:25:08.931Z] RELEASES check-releases.js exited (code: 0)
