@@ -34,7 +34,7 @@ This guide covers the concepts, architecture, and setup patterns common to all s
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - Basic understanding of REST APIs (for application search)
 - At least 256 MB free RAM (more for Elasticsearch/OpenSearch)
 
@@ -44,19 +44,19 @@ This guide covers the concepts, architecture, and setup patterns common to all s
 
 | If You Need... | Choose | Why |
 |----------------|--------|-----|
-| Simple, fast app search | [Meilisearch](/apps/meilisearch) | Zero-config, typo-tolerant, instant results |
-| Lowest possible latency | [Typesense](/apps/typesense) | In-memory indexes, sub-millisecond search |
-| Complex queries + analytics | [Elasticsearch](/apps/elasticsearch) | Full query DSL, aggregations, ELK stack |
-| Elasticsearch but open source | [OpenSearch](/apps/opensearch) | Apache 2.0 fork, API-compatible |
-| SQL-based search | [ManticoreSearch](/apps/manticoresearch) | MySQL protocol, familiar syntax |
-| Minimal resources | [Sonic](/apps/sonic) | 20 MB RAM, returns IDs only |
+| Simple, fast app search | [Meilisearch](/apps/meilisearch/) | Zero-config, typo-tolerant, instant results |
+| Lowest possible latency | [Typesense](/apps/typesense/) | In-memory indexes, sub-millisecond search |
+| Complex queries + analytics | [Elasticsearch](/apps/elasticsearch/) | Full query DSL, aggregations, ELK stack |
+| Elasticsearch but open source | [OpenSearch](/apps/opensearch/) | Apache 2.0 fork, API-compatible |
+| SQL-based search | [ManticoreSearch](/apps/manticoresearch/) | MySQL protocol, familiar syntax |
+| Minimal resources | [Sonic](/apps/sonic/) | 20 MB RAM, returns IDs only |
 
 ### Web Search Decision Matrix
 
 | If You Need... | Choose | Why |
 |----------------|--------|-----|
-| Private multi-engine search | [SearXNG](/apps/searxng) | 70+ engines, zero tracking |
-| Simple Google without tracking | [Whoogle](/apps/whoogle) | Google results, no ads/tracking |
+| Private multi-engine search | [SearXNG](/apps/searxng/) | 70+ engines, zero tracking |
+| Simple Google without tracking | [Whoogle](/apps/whoogle/) | Google results, no ads/tracking |
 
 ## Core Concepts
 
@@ -130,12 +130,12 @@ volumes:
 ```
 
 See the individual guides for complete Docker Compose configurations:
-- [Meilisearch Docker setup](/apps/meilisearch)
-- [Typesense Docker setup](/apps/typesense)
-- [Elasticsearch Docker setup](/apps/elasticsearch)
-- [OpenSearch Docker setup](/apps/opensearch)
-- [ManticoreSearch Docker setup](/apps/manticoresearch)
-- [Sonic Docker setup](/apps/sonic)
+- [Meilisearch Docker setup](/apps/meilisearch/)
+- [Typesense Docker setup](/apps/typesense/)
+- [Elasticsearch Docker setup](/apps/elasticsearch/)
+- [OpenSearch Docker setup](/apps/opensearch/)
+- [ManticoreSearch Docker setup](/apps/manticoresearch/)
+- [Sonic Docker setup](/apps/sonic/)
 
 ### 2. Create an Index
 
@@ -267,7 +267,7 @@ All application search engines support API key authentication. Always enable it 
 Search engines should **never be directly exposed to the internet**. Standard security setup:
 
 1. **Bind to localhost or Docker network only.** Don't expose ports 7700, 8108, 9200, etc. on `0.0.0.0` unless behind a reverse proxy.
-2. **Use a reverse proxy** for external access. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+2. **Use a reverse proxy** for external access. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 3. **Separate search keys from admin keys.** Frontend search uses read-only keys. Admin keys stay server-side.
 4. **Firewall rules.** Only allow access from your application servers.
 
@@ -289,7 +289,7 @@ docker run --rm -v search_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/search-backup-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Common Mistakes
 
@@ -339,20 +339,20 @@ Changing field types or adding new searchable fields often requires a full re-in
 
 ## Related
 
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Typesense](/apps/typesense)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [How to Self-Host OpenSearch](/apps/opensearch)
-- [How to Self-Host ManticoreSearch](/apps/manticoresearch)
-- [How to Self-Host Sonic](/apps/sonic)
-- [How to Self-Host SearXNG](/apps/searxng)
-- [How to Self-Host Whoogle](/apps/whoogle)
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Self-Hosted Google Alternatives](/replace/google-search)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Typesense](/apps/typesense/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [How to Self-Host OpenSearch](/apps/opensearch/)
+- [How to Self-Host ManticoreSearch](/apps/manticoresearch/)
+- [How to Self-Host Sonic](/apps/sonic/)
+- [How to Self-Host SearXNG](/apps/searxng/)
+- [How to Self-Host Whoogle](/apps/whoogle/)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Self-Hosted Google Alternatives](/replace/google-search/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

@@ -108,9 +108,9 @@ Yes. Both can read from the same audiobook directory simultaneously. They mainta
 
 ## Related
 
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Audiobookshelf vs Plex](/compare/audiobookshelf-vs-plex)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Audiobookshelf vs Plex](/compare/audiobookshelf-vs-plex/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

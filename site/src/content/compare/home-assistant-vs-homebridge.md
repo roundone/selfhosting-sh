@@ -112,10 +112,10 @@ Homebridge uses significantly less — 200 MB RAM vs 1-2 GB for Home Assistant. 
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Homebridge](/apps/homebridge)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Homebridge](/apps/homebridge/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit/)

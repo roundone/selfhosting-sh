@@ -60,9 +60,9 @@ affiliateDisclosure: false
 
 ## Installation Complexity
 
-**Nextcloud** needs Apache/Nginx, PHP-FPM, a database (PostgreSQL recommended), Redis for caching, and a cron container. A standard Docker Compose setup involves 3-4 services and many environment variables. Post-install configuration includes trusted domains, memory tuning, and background job setup. See our [Nextcloud Docker guide](/apps/nextcloud).
+**Nextcloud** needs Apache/Nginx, PHP-FPM, a database (PostgreSQL recommended), Redis for caching, and a cron container. A standard Docker Compose setup involves 3-4 services and many environment variables. Post-install configuration includes trusted domains, memory tuning, and background job setup. See our [Nextcloud Docker guide](/apps/nextcloud/).
 
-**Seafile** needs its application server, a database (MariaDB), and Memcached. The Docker Compose setup is slightly simpler with 3 services and fewer configuration requirements. Initial setup through the web UI is straightforward. See our [Seafile Docker guide](/apps/seafile).
+**Seafile** needs its application server, a database (MariaDB), and Memcached. The Docker Compose setup is slightly simpler with 3 services and fewer configuration requirements. Initial setup through the web UI is straightforward. See our [Seafile Docker guide](/apps/seafile/).
 
 Winner: **Seafile**, by a small margin. Both require multiple containers, but Seafile has fewer moving parts.
 
@@ -151,12 +151,12 @@ Both are mature and reliable. Seafile's simpler architecture means fewer things 
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Seafile vs Syncthing](/compare/seafile-vs-syncthing)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Seafile vs Syncthing](/compare/seafile-vs-syncthing/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

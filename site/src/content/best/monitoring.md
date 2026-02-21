@@ -25,8 +25,8 @@ affiliateDisclosure: false
 
 | Use Case | Best Choice | Why |
 |----------|-------------|-----|
-| Best full monitoring stack | [Grafana](/apps/grafana) + [Prometheus](/apps/prometheus) | Industry standard. Prometheus collects, Grafana visualizes. Thousands of community dashboards. |
-| Best uptime monitoring | [Uptime Kuma](/apps/uptime-kuma) | Simple, beautiful, fast setup. Monitors HTTP, TCP, DNS, ping. Notification integrations. |
+| Best full monitoring stack | [Grafana](/apps/grafana/) + [Prometheus](/apps/prometheus/) | Industry standard. Prometheus collects, Grafana visualizes. Thousands of community dashboards. |
+| Best uptime monitoring | [Uptime Kuma](/apps/uptime-kuma/) | Simple, beautiful, fast setup. Monitors HTTP, TCP, DNS, ping. Notification integrations. |
 | Best all-in-one | Netdata | Zero-config monitoring with 800+ integrations. Real-time dashboards out of the box. |
 | Best for enterprises | Zabbix | Scales to thousands of hosts. SNMP, IPMI, JMX. Template-based monitoring. |
 
@@ -34,7 +34,7 @@ affiliateDisclosure: false
 
 ### 1. Grafana + Prometheus — Best Full Monitoring Stack
 
-[Grafana](/apps/grafana) and [Prometheus](/apps/prometheus) together form the dominant monitoring stack in the self-hosting world. Prometheus scrapes metrics from your services at configurable intervals and stores them in a time-series database. Grafana connects to Prometheus (and dozens of other data sources) to build dashboards.
+[Grafana](/apps/grafana/) and [Prometheus](/apps/prometheus/) together form the dominant monitoring stack in the self-hosting world. Prometheus scrapes metrics from your services at configurable intervals and stores them in a time-series database. Grafana connects to Prometheus (and dozens of other data sources) to build dashboards.
 
 This combination is the industry standard for a reason: it's flexible, battle-tested, and has the largest ecosystem of exporters, dashboards, and integrations.
 
@@ -55,11 +55,11 @@ This combination is the industry standard for a reason: it's flexible, battle-te
 
 **Best for:** Anyone serious about monitoring. Home labs with multiple services, production environments, anyone who wants professional-grade observability.
 
-[Read our full Grafana guide](/apps/grafana) | [Read our full Prometheus guide](/apps/prometheus)
+[Read our full Grafana guide](/apps/grafana/) | [Read our full Prometheus guide](/apps/prometheus/)
 
 ### 2. Uptime Kuma — Best Uptime Monitor
 
-[Uptime Kuma](/apps/uptime-kuma) does one thing extremely well: monitoring whether your services are up. Clean UI, easy setup, supports HTTP(S), TCP, HTTP keyword, DNS, ping, gRPC, and Docker container monitoring. Notifications via 90+ integrations (Telegram, Discord, Slack, email, webhooks).
+[Uptime Kuma](/apps/uptime-kuma/) does one thing extremely well: monitoring whether your services are up. Clean UI, easy setup, supports HTTP(S), TCP, HTTP keyword, DNS, ping, gRPC, and Docker container monitoring. Notifications via 90+ integrations (Telegram, Discord, Slack, email, webhooks).
 
 **Pros:**
 - Beautiful, intuitive web UI
@@ -78,7 +78,7 @@ This combination is the industry standard for a reason: it's flexible, battle-te
 
 **Best for:** Anyone who needs to know when services go down. Perfect complement to Grafana/Prometheus — Uptime Kuma monitors availability, Grafana monitors performance.
 
-[Read our full guide: How to Self-Host Uptime Kuma](/apps/uptime-kuma)
+[Read our full guide: How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
 
 ### 3. Netdata — Best All-in-One Monitor
 
@@ -176,13 +176,13 @@ We evaluated each tool on: ease of setup, out-of-box value, customizability, ale
 
 ## Related
 
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Replace Datadog](/replace/datadog)
-- [Replace UptimeRobot](/replace/uptimerobot)
-- [Replace New Relic](/replace/new-relic)
-- [Replace Pingdom](/replace/pingdom)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Replace Datadog](/replace/datadog/)
+- [Replace UptimeRobot](/replace/uptimerobot/)
+- [Replace New Relic](/replace/new-relic/)
+- [Replace Pingdom](/replace/pingdom/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

@@ -36,7 +36,7 @@ Notion charges $10/user/month for the Plus plan and $18/user/month for Business.
 
 ### Outline — Closest to Notion
 
-[Outline](/apps/outline) is the closest self-hosted experience to Notion. Clean, modern interface with a block-based editor, slash commands, nested documents, and real-time collaboration. It's Markdown-native, has a REST API, and integrates with Slack.
+[Outline](/apps/outline/) is the closest self-hosted experience to Notion. Clean, modern interface with a block-based editor, slash commands, nested documents, and real-time collaboration. It's Markdown-native, has a REST API, and integrates with Slack.
 
 **How it compares to Notion:**
 - Similar block editor with slash commands
@@ -47,11 +47,11 @@ Notion charges $10/user/month for the Plus plan and $18/user/month for Business.
 
 **Setup complexity:** Medium. Requires PostgreSQL, Redis, and S3-compatible storage (MinIO for self-hosting). OAuth required for authentication (no username/password).
 
-[Read our full guide: [How to Self-Host Outline](/apps/outline)]
+[Read our full guide: [How to Self-Host Outline](/apps/outline/)]
 
 ### Wiki.js — Best for Technical Teams
 
-[Wiki.js](/apps/wikijs) offers a polished Markdown editor with live preview, Git-based content sync, and strong authentication options. While not a Notion clone, it covers the wiki/knowledge-base use case well. Git sync means your content is backed up in a repository automatically.
+[Wiki.js](/apps/wikijs/) offers a polished Markdown editor with live preview, Git-based content sync, and strong authentication options. While not a Notion clone, it covers the wiki/knowledge-base use case well. Git sync means your content is backed up in a repository automatically.
 
 **How it compares to Notion:**
 - Better Markdown editing experience
@@ -61,11 +61,11 @@ Notion charges $10/user/month for the Plus plan and $18/user/month for Business.
 
 **Setup complexity:** Low. Docker Compose with PostgreSQL. Straightforward.
 
-[Read our full guide: [How to Self-Host Wiki.js](/apps/wikijs)]
+[Read our full guide: [How to Self-Host Wiki.js](/apps/wikijs/)]
 
 ### BookStack — Best for Non-Technical Teams
 
-[BookStack](/apps/bookstack) uses a book-chapter-page organizational model that non-technical team members understand immediately. The WYSIWYG editor is reliable, permissions are granular, and the API enables automation.
+[BookStack](/apps/bookstack/) uses a book-chapter-page organizational model that non-technical team members understand immediately. The WYSIWYG editor is reliable, permissions are granular, and the API enables automation.
 
 **How it compares to Notion:**
 - More structured organization (books > chapters > pages)
@@ -75,11 +75,11 @@ Notion charges $10/user/month for the Plus plan and $18/user/month for Business.
 
 **Setup complexity:** Low. Docker Compose with MySQL. Well-documented.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### Docmost — Best Lightweight Option
 
-[Docmost](/apps/docmost) is a newer Notion-like wiki with a block editor, real-time collaboration, and spaces for organization. It's lightweight, actively developed, and feels modern. While less mature than the options above, it's growing fast.
+[Docmost](/apps/docmost/) is a newer Notion-like wiki with a block editor, real-time collaboration, and spaces for organization. It's lightweight, actively developed, and feels modern. While less mature than the options above, it's growing fast.
 
 **How it compares to Notion:**
 - Similar block-based editor
@@ -89,7 +89,7 @@ Notion charges $10/user/month for the Plus plan and $18/user/month for Business.
 
 **Setup complexity:** Low. Docker Compose with PostgreSQL.
 
-[Read our full guide: [How to Self-Host Docmost](/apps/docmost)]
+[Read our full guide: [How to Self-Host Docmost](/apps/docmost/)]
 
 ## Migration Guide
 
@@ -135,7 +135,7 @@ Outline supports bulk Markdown import:
 ## What You Give Up
 
 - **Mobile apps.** Notion's mobile apps are polished. Outline has a PWA, Wiki.js and BookStack are mobile-responsive but don't have native apps.
-- **Databases and Kanban.** Notion's database views (tables, boards, timelines, galleries) have no direct self-hosted equivalent. If your team relies heavily on Notion databases, you'll need a separate tool for that (like [Vikunja](/apps/vikunja) for tasks or [NocoDB](/apps/nocodb) for databases).
+- **Databases and Kanban.** Notion's database views (tables, boards, timelines, galleries) have no direct self-hosted equivalent. If your team relies heavily on Notion databases, you'll need a separate tool for that (like [Vikunja](/apps/vikunja/) for tasks or [NocoDB](/apps/nocodb/) for databases).
 - **Integrations.** Notion's integration ecosystem is larger. Self-hosted tools have APIs but fewer pre-built integrations.
 - **Zero maintenance.** Notion requires zero server maintenance. Self-hosting means you handle updates, backups, and uptime.
 
@@ -143,12 +143,12 @@ For most teams using Notion primarily as a knowledge base/wiki, these trade-offs
 
 ## Related
 
-- [Best Self-Hosted Wiki](/best/wiki)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host Wiki.js](/apps/wikijs)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Docmost](/apps/docmost)
-- [Outline vs Notion](/compare/outline-vs-notion)
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Wiki](/best/wiki/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host Wiki.js](/apps/wikijs/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [Outline vs Notion](/compare/outline-vs-notion/)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

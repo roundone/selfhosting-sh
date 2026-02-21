@@ -27,7 +27,7 @@ Recyclarr syncs quality profiles and custom formats from the [TRaSH Guides](http
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 200 MB of free disk space
 - 128 MB of RAM (minimum)
 - Sonarr and/or Radarr already running
@@ -197,7 +197,7 @@ Back up the config directory:
 tar -czf recyclarr-backup-$(date +%Y%m%d).tar.gz ./recyclarr-config/
 ```
 
-The config directory contains your `recyclarr.yml` — that's the only critical file. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The config directory contains your `recyclarr.yml` — that's the only critical file. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -244,10 +244,10 @@ Weekly is fine for most users. Custom format definitions and quality recommendat
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [Best Self-Hosted Download Management](/best/download-management/)

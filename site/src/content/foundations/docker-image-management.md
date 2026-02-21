@@ -15,15 +15,15 @@ affiliateDisclosure: false
 
 ## What Is Docker Image Management?
 
-Docker images are the blueprints for your containers. Every self-hosted app you run — [Nextcloud](/apps/nextcloud), [Immich](/apps/immich), [Vaultwarden](/apps/vaultwarden) — starts as an image downloaded from a registry. Over time, these images pile up. Old versions linger after updates. Dangling layers accumulate. Without active management, Docker images will consume tens of gigabytes of disk space on a typical self-hosting server.
+Docker images are the blueprints for your containers. Every self-hosted app you run — [Nextcloud](/apps/nextcloud/), [Immich](/apps/immich/), [Vaultwarden](/apps/vaultwarden/) — starts as an image downloaded from a registry. Over time, these images pile up. Old versions linger after updates. Dangling layers accumulate. Without active management, Docker images will consume tens of gigabytes of disk space on a typical self-hosting server.
 
 Image management is about understanding where images come from, how to control which versions you run, and how to clean up what you no longer need.
 
 ## Prerequisites
 
-- Docker installed on your server — see [Docker Compose Basics](/foundations/docker-compose-basics)
-- Basic Linux command line knowledge — see [Linux Basics](/foundations/linux-basics-self-hosting)
-- SSH access to your server — see [SSH Setup](/foundations/ssh-setup)
+- Docker installed on your server — see [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Basic Linux command line knowledge — see [Linux Basics](/foundations/linux-basics-self-hosting/)
+- SSH access to your server — see [SSH Setup](/foundations/ssh-setup/)
 
 ## How Docker Images Work
 
@@ -217,7 +217,7 @@ docker image rm a1b2c3d4e5f6
 
 ### Automate Cleanup
 
-Add a cron job to clean up weekly — see [Cron Jobs](/foundations/linux-cron-jobs):
+Add a cron job to clean up weekly — see [Cron Jobs](/foundations/linux-cron-jobs/):
 
 ```bash
 # Clean unused Docker images every Sunday at 3 AM
@@ -228,7 +228,7 @@ The `-f` flag skips the confirmation prompt.
 
 ## Updating Images
 
-When a new version of an app is released, you need to pull the updated image and recreate the container. See [Updating Docker Containers](/foundations/docker-updating) for the full workflow.
+When a new version of an app is released, you need to pull the updated image and recreate the container. See [Updating Docker Containers](/foundations/docker-updating/) for the full workflow.
 
 The short version:
 
@@ -250,7 +250,7 @@ Check which architectures an image supports:
 docker manifest inspect vaultwarden/server:1.33.2
 ```
 
-This matters if you run a [Raspberry Pi](/hardware/raspberry-pi-home-server) (arm64) — not all images support ARM. Check before planning your stack.
+This matters if you run a [Raspberry Pi](/hardware/raspberry-pi-home-server/) (arm64) — not all images support ARM. Check before planning your stack.
 
 ## Practical Examples
 
@@ -312,9 +312,9 @@ Large images (Nextcloud, Immich, GitLab) can be 1-2 GB each. If your server has 
 
 ## Next Steps
 
-- [Updating Docker Containers](/foundations/docker-updating) — the full update workflow
-- [Docker Volumes](/foundations/docker-volumes) — manage persistent data
-- [Docker Security](/foundations/docker-security) — secure your container setup
+- [Updating Docker Containers](/foundations/docker-updating/) — the full update workflow
+- [Docker Volumes](/foundations/docker-volumes/) — manage persistent data
+- [Docker Security](/foundations/docker-security/) — secure your container setup
 
 ## FAQ
 
@@ -340,10 +340,10 @@ Yes. You can run your own registry with `docker run -d -p 5000:5000 registry:2` 
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Updating Docker Containers](/foundations/docker-updating)
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- [Docker Security](/foundations/docker-security)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Updating Docker Containers](/foundations/docker-updating/)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- [Docker Security](/foundations/docker-security/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

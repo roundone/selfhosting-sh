@@ -199,10 +199,10 @@ Rarely. Used Xeon systems are cheap but power-hungry (80–150W idle for a dual-
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best RAM for Home Servers](/hardware/best-ram-home-server)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best RAM for Home Servers](/hardware/best-ram-home-server/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)

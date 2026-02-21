@@ -136,10 +136,10 @@ No. Prowlarr is the recommended replacement. The Servarr team (who makes Sonarr 
 
 ## Related
 
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Jackett](/apps/jackett)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Jackett](/apps/jackett/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [Best Self-Hosted Download Management](/best/download-management/)

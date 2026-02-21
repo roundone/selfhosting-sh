@@ -26,7 +26,7 @@ Docker Swarm is Docker's built-in container orchestration mode. It turns a group
 ## Prerequisites
 
 - Two or more Linux servers (Ubuntu 22.04+ recommended) for a cluster, or one for testing
-- Docker installed on each node ([Docker install guide](/foundations/docker-compose-basics))
+- Docker installed on each node ([Docker install guide](/foundations/docker-compose-basics/))
 - 512 MB of RAM minimum per node
 - Ports open between nodes: 2377/TCP (management), 7946/TCP+UDP (node communication), 4789/UDP (overlay network)
 - All nodes must be able to reach each other on these ports
@@ -263,7 +263,7 @@ docker secret ls
 docker config ls
 ```
 
-For application data, back up the volumes used by your services. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+For application data, back up the volumes used by your services. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -324,7 +324,7 @@ Docker Swarm is the simplest container orchestrator. If you already use Docker C
 
 **Use Docker Swarm if:** You want simple multi-node container orchestration, you already know Docker well, and you don't need the full Kubernetes ecosystem (Helm charts, operators, CRDs).
 
-**Consider k3s instead if:** You want access to the Kubernetes ecosystem (Helm, operators, community manifests) or you're planning to scale beyond a handful of nodes. See [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes).
+**Consider k3s instead if:** You want access to the Kubernetes ecosystem (Helm, operators, community manifests) or you're planning to scale beyond a handful of nodes. See [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/).
 
 ## FAQ
 
@@ -342,11 +342,11 @@ One manager works for testing. For production, use 3 (tolerates 1 failure) or 5 
 
 ## Related
 
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [How to Self-Host k3s](/apps/k3s)
-- [Docker Compose vs Swarm](/compare/docker-compose-vs-swarm)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [Docker Compose vs Swarm](/compare/docker-compose-vs-swarm/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)

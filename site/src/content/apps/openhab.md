@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space minimum
 - 2 GB of RAM (4 GB recommended for large setups)
 - A domain name (optional, for remote access)
@@ -191,7 +191,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for full configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for full configuration.
 
 ## Backup
 
@@ -208,7 +208,7 @@ tar czf openhab-backup-$(date +%Y%m%d).tar.gz \
 docker compose start
 ```
 
-openHAB also has a built-in backup tool accessible via the Karaf console. See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide for a comprehensive approach.
+openHAB also has a built-in backup tool accessible via the Karaf console. See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -258,13 +258,13 @@ sudo udevadm control --reload-rules
 
 ## Verdict
 
-openHAB is the most flexible home automation platform available, supporting 400+ integrations through its binding system. It's the right choice if you need to unify devices across many different protocols and manufacturers into a single system. The Java-based architecture means higher resource usage than lighter alternatives, and the learning curve is steeper than [Home Assistant](/apps/home-assistant). For most users starting fresh, Home Assistant is easier to get running. openHAB shines when you need deep customization, complex rule logic, or support for industrial/legacy protocols that Home Assistant doesn't cover.
+openHAB is the most flexible home automation platform available, supporting 400+ integrations through its binding system. It's the right choice if you need to unify devices across many different protocols and manufacturers into a single system. The Java-based architecture means higher resource usage than lighter alternatives, and the learning curve is steeper than [Home Assistant](/apps/home-assistant/). For most users starting fresh, Home Assistant is easier to get running. openHAB shines when you need deep customization, complex rule logic, or support for industrial/legacy protocols that Home Assistant doesn't cover.
 
 ## FAQ
 
 ### How does openHAB compare to Home Assistant?
 
-openHAB has broader protocol support and more powerful rule engines, but Home Assistant has a larger community, more polished UI, and easier initial setup. See our [Home Assistant vs openHAB comparison](/compare/home-assistant-vs-openhab) for a detailed breakdown.
+openHAB has broader protocol support and more powerful rule engines, but Home Assistant has a larger community, more polished UI, and easier initial setup. See our [Home Assistant vs openHAB comparison](/compare/home-assistant-vs-openhab/) for a detailed breakdown.
 
 ### Can openHAB work with Zigbee and Z-Wave devices?
 
@@ -276,13 +276,13 @@ No. openHAB runs entirely locally. Cloud integrations (voice assistants, remote 
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [openHAB vs Gladys](/compare/openhab-vs-gladys)
-- [openHAB vs ioBroker](/compare/openhab-vs-iobroker)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Replace Amazon Alexa](/replace/amazon-alexa)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [openHAB vs Gladys](/compare/openhab-vs-gladys/)
+- [openHAB vs ioBroker](/compare/openhab-vs-iobroker/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Replace Amazon Alexa](/replace/amazon-alexa/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

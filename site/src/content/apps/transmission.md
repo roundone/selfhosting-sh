@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - Storage for downloads
 - A domain name (optional, for remote access)
@@ -233,7 +233,7 @@ Flood gives you a modern, responsive UI with better sorting, filtering, and a cl
 
 Transmission integrates directly with the *arr stack as a download client.
 
-In [Sonarr](/apps/sonarr) or [Radarr](/apps/radarr):
+In [Sonarr](/apps/sonarr/) or [Radarr](/apps/radarr/):
 
 1. Go to **Settings > Download Clients > Add > Transmission**
 2. Configure:
@@ -251,7 +251,7 @@ For category-based sorting, create subdirectories on the host:
 mkdir -p /srv/downloads/complete/tv /srv/downloads/complete/movies
 ```
 
-If [Prowlarr](/apps/prowlarr) manages your indexers, it syncs them to Sonarr and Radarr automatically — no manual indexer setup needed in each app.
+If [Prowlarr](/apps/prowlarr/) manages your indexers, it syncs them to Sonarr and Radarr automatically — no manual indexer setup needed in each app.
 
 ### VPN Integration
 
@@ -320,7 +320,7 @@ Transmission downloads and applies the blocklist automatically. Update it period
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or another reverse proxy, forward your domain to `http://your-server-ip:9091`.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or another reverse proxy, forward your domain to `http://your-server-ip:9091`.
 
 Add your domain to the `HOST_WHITELIST` environment variable:
 
@@ -339,7 +339,7 @@ transmission.example.com {
 
 Transmission requires the `X-Forwarded-Host` header to be passed correctly. Most reverse proxies handle this by default.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration guides.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration guides.
 
 ## Backup
 
@@ -365,7 +365,7 @@ docker run --rm \
 docker compose start transmission
 ```
 
-Your downloaded files in `/srv/downloads` should be backed up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Your downloaded files in `/srv/downloads` should be backed up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -423,25 +423,25 @@ Your downloaded files in `/srv/downloads` should be backed up separately. See [B
 - **CPU:** Very low. Transmission is one of the lightest torrent clients available.
 - **Disk:** ~20 MB for the application. Storage depends entirely on your download volume.
 
-Transmission is measurably lighter than [qBittorrent](/apps/qbittorrent) — expect roughly half the memory usage at idle. This makes it a strong choice for low-resource servers like a Raspberry Pi.
+Transmission is measurably lighter than [qBittorrent](/apps/qbittorrent/) — expect roughly half the memory usage at idle. This makes it a strong choice for low-resource servers like a Raspberry Pi.
 
 ## Verdict
 
 Transmission is the best torrent client for self-hosters who want something lightweight and reliable. It does exactly what a torrent client should — downloads torrents efficiently with minimal resource overhead. The built-in web UI is basic but functional, and swapping in Flood makes it genuinely good-looking.
 
-The trade-off versus [qBittorrent](/apps/qbittorrent) is feature depth. qBittorrent has a richer web UI out of the box, more granular configuration options, and slightly better *arr stack integration (category management, sequential downloading). If you are running a full *arr stack and want maximum control, qBittorrent is the better pick. If you want something simpler, lighter, and just as reliable for basic downloading, Transmission is the way to go.
+The trade-off versus [qBittorrent](/apps/qbittorrent/) is feature depth. qBittorrent has a richer web UI out of the box, more granular configuration options, and slightly better *arr stack integration (category management, sequential downloading). If you are running a full *arr stack and want maximum control, qBittorrent is the better pick. If you want something simpler, lighter, and just as reliable for basic downloading, Transmission is the way to go.
 
-For a complete download setup, pair Transmission with [Sonarr](/apps/sonarr) for TV, [Radarr](/apps/radarr) for movies, and [Prowlarr](/apps/prowlarr) for indexer management.
+For a complete download setup, pair Transmission with [Sonarr](/apps/sonarr/) for TV, [Radarr](/apps/radarr/) for movies, and [Prowlarr](/apps/prowlarr/) for indexer management.
 
 ## Related
 
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Networking](/foundations/docker-networking/)

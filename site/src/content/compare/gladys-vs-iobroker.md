@@ -90,14 +90,14 @@ Gladys Assistant is the better platform for users who want home automation that 
 
 ioBroker is better for users who need broad device coverage and are willing to invest time configuring adapters. Its flexibility is unmatched among platforms at this level.
 
-Both are overshadowed by [Home Assistant](/apps/home-assistant) in terms of ecosystem size, but each carves out a valid niche — Gladys for simplicity, ioBroker for adapter breadth.
+Both are overshadowed by [Home Assistant](/apps/home-assistant/) in terms of ecosystem size, but each carves out a valid niche — Gladys for simplicity, ioBroker for adapter breadth.
 
 ## Related
 
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [How to Self-Host ioBroker](/apps/iobroker)
-- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys)
-- [openHAB vs ioBroker](/compare/openhab-vs-iobroker)
-- [Domoticz vs ioBroker](/compare/domoticz-vs-iobroker)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [How to Self-Host ioBroker](/apps/iobroker/)
+- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys/)
+- [openHAB vs ioBroker](/compare/openhab-vs-iobroker/)
+- [Domoticz vs ioBroker](/compare/domoticz-vs-iobroker/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)

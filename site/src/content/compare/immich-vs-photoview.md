@@ -111,9 +111,9 @@ The last release (v2.4.0) was in June 2024. There are commits in the repository 
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host Photoview](/apps/photoview)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs Lychee](/compare/immich-vs-lychee)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host Photoview](/apps/photoview/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs Lychee](/compare/immich-vs-lychee/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)

@@ -258,10 +258,10 @@ Technically yes, but not recommended. Laptops have limited RAM expansion, no PCI
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server)
-- [Best RAM for Home Servers](/hardware/best-ram-home-server)
-- [PCIe and M.2 Expansion Guide](/hardware/pcie-expansion-home-server)
-- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide)
-- [10GbE Networking Guide](/hardware/10gbe-networking)
-- [Used Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server/)
+- [Best RAM for Home Servers](/hardware/best-ram-home-server/)
+- [PCIe and M.2 Expansion Guide](/hardware/pcie-expansion-home-server/)
+- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/)
+- [10GbE Networking Guide](/hardware/10gbe-networking/)
+- [Used Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)

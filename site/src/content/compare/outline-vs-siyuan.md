@@ -90,14 +90,14 @@ Outline is for teams. SiYuan is for individuals. The feature sets barely overlap
 
 If you need collaborative documentation, Outline gives you a Notion-like experience. If you need a personal Notion-like note system with bidirectional linking and offline access, SiYuan delivers that.
 
-Be aware of SiYuan's non-standard data format (`.sy` JSON) — migrating away is more work than from Markdown-based tools. If data portability matters, consider [Joplin](/apps/joplin-server) or [TriliumNext](/apps/trilium) instead.
+Be aware of SiYuan's non-standard data format (`.sy` JSON) — migrating away is more work than from Markdown-based tools. If data portability matters, consider [Joplin](/apps/joplin-server/) or [TriliumNext](/apps/trilium/) instead.
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)

@@ -19,9 +19,9 @@ SSL certificate problems range from "your connection is not private" browser war
 
 ## Prerequisites
 
-- Understanding of SSL/TLS concepts ([SSL Certificates Explained](/foundations/ssl-certificates))
-- A reverse proxy configured ([Reverse Proxy Explained](/foundations/reverse-proxy-explained))
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
+- Understanding of SSL/TLS concepts ([SSL Certificates Explained](/foundations/ssl-certificates/))
+- A reverse proxy configured ([Reverse Proxy Explained](/foundations/reverse-proxy-explained/))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
 
 ## Diagnosing SSL Problems
 
@@ -359,7 +359,7 @@ for domain in $DOMAINS; do
 done
 ```
 
-Better option: use [Uptime Kuma](/apps/uptime-kuma) with certificate expiry monitoring.
+Better option: use [Uptime Kuma](/apps/uptime-kuma/) with certificate expiry monitoring.
 
 ## FAQ
 
@@ -381,10 +381,10 @@ Cloudflare provides a certificate between the client and Cloudflare's edge. But 
 
 ## Related
 
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Let's Encrypt Explained](/foundations/lets-encrypt-explained)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Traefik Setup](/foundations/traefik-setup)
-- [Caddy Setup](/foundations/caddy-setup)
-- [DNS Debugging](/foundations/dns-debugging)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Let's Encrypt Explained](/foundations/lets-encrypt-explained/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Traefik Setup](/foundations/traefik-setup/)
+- [Caddy Setup](/foundations/caddy-setup/)
+- [DNS Debugging](/foundations/dns-debugging/)

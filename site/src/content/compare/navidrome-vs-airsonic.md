@@ -129,7 +129,7 @@ Airsonic's JVM requires pre-allocated heap space (`-Xmx512m` minimum recommended
 
 ## Final Verdict
 
-**Navidrome wins decisively.** It's lighter, faster, actively maintained, and has a much larger community. Airsonic-Advanced's only remaining advantages — DLNA, jukebox mode, and podcasts — are niche features that most users don't need (and for podcasts, [Audiobookshelf](/apps/audiobookshelf) is a better dedicated option).
+**Navidrome wins decisively.** It's lighter, faster, actively maintained, and has a much larger community. Airsonic-Advanced's only remaining advantages — DLNA, jukebox mode, and podcasts — are niche features that most users don't need (and for podcasts, [Audiobookshelf](/apps/audiobookshelf/) is a better dedicated option).
 
 The development status alone makes this an easy call. Navidrome gets regular updates with security fixes and new features. Airsonic-Advanced hasn't been updated in years. For any new music server deployment, Navidrome is the answer.
 
@@ -149,10 +149,10 @@ No. Navidrome focuses on the Subsonic API and web streaming. If you need DLNA/UP
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Airsonic-Advanced](/apps/airsonic-advanced)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale)
-- [Koel vs Navidrome](/compare/koel-vs-navidrome)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Airsonic-Advanced](/apps/airsonic-advanced/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale/)
+- [Koel vs Navidrome](/compare/koel-vs-navidrome/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)

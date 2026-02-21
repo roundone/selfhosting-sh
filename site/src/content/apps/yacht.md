@@ -23,12 +23,12 @@ affiliateDisclosure: false
 
 [Yacht](https://yacht.sh) is a lightweight Docker container management UI designed for self-hosters. It provides a clean web interface for deploying, managing, and monitoring containers, with built-in app templates that let you deploy popular self-hosted apps in a few clicks. Think of it as a simpler alternative to Portainer — fewer features, but faster to learn.
 
-> **⚠️ Deprecated — Not Recommended for New Installations.** Yacht has not been updated since January 2023. The last published Docker tag is `v0.0.7-alpha`. The `v0.0.8` tag does not exist on Docker Hub. The project appears abandoned with no active development. **We strongly recommend [Portainer](/apps/portainer) or [Dockge](/apps/dockge) instead.** This guide is preserved for reference only.
+> **⚠️ Deprecated — Not Recommended for New Installations.** Yacht has not been updated since January 2023. The last published Docker tag is `v0.0.7-alpha`. The `v0.0.8` tag does not exist on Docker Hub. The project appears abandoned with no active development. **We strongly recommend [Portainer](/apps/portainer/) or [Dockge](/apps/dockge/) instead.** This guide is preserved for reference only.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM
 - 1 GB of free disk space
 
@@ -147,7 +147,7 @@ docker compose start yacht
 
 The `/config` volume contains Yacht's database (user accounts, templates, settings). Container data for apps deployed through Yacht lives in their own volumes.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -194,7 +194,7 @@ ports:
 
 **Symptom:** Yacht uses more memory than expected.
 
-**Fix:** Yacht's memory usage increases with the number of containers it monitors. For servers with 50+ containers, consider using [Portainer](/apps/portainer) which handles scale better.
+**Fix:** Yacht's memory usage increases with the number of containers it monitors. For servers with 50+ containers, consider using [Portainer](/apps/portainer/) which handles scale better.
 
 ## Resource Requirements
 
@@ -206,7 +206,7 @@ ports:
 
 **We do not recommend Yacht for new installations.** The project has been abandoned since January 2023 with no stable release ever published (only alpha tags). The maintainer mentioned a rewrite ("Yacht Next") but no progress has materialized in over three years.
 
-For Docker management, use [Portainer](/apps/portainer) (feature-complete, actively maintained) or [Dockge](/apps/dockge) (lightweight, Compose-focused). Both are superior choices in every dimension — features, security updates, and community support.
+For Docker management, use [Portainer](/apps/portainer/) (feature-complete, actively maintained) or [Dockge](/apps/dockge/) (lightweight, Compose-focused). Both are superior choices in every dimension — features, security updates, and community support.
 
 ## Frequently Asked Questions
 
@@ -220,7 +220,7 @@ Yes, through the Projects feature. However, the Compose support is basic compare
 
 ### How does Yacht compare to Portainer?
 
-Yacht is simpler with better app templates. Portainer is more feature-complete with Swarm/K8s support, RBAC, and active development. See our [Portainer vs Yacht comparison](/compare/portainer-vs-yacht).
+Yacht is simpler with better app templates. Portainer is more feature-complete with Swarm/K8s support, RBAC, and active development. See our [Portainer vs Yacht comparison](/compare/portainer-vs-yacht/).
 
 ### Does Yacht support ARM/Raspberry Pi?
 
@@ -228,11 +228,11 @@ Yes. The `selfhostedpro/yacht` image is available for both amd64 and arm64 archi
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Portainer vs Yacht](/compare/portainer-vs-yacht)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Portainer vs Yacht](/compare/portainer-vs-yacht/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)

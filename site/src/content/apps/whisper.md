@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB+ RAM (CPU mode) or NVIDIA GPU with 4+ GB VRAM
 - 5 GB+ free disk space
 - NVIDIA Container Toolkit (for GPU mode)
@@ -133,15 +133,15 @@ curl -X POST http://localhost:8000/v1/audio/transcriptions \
 
 ### Integration with Open WebUI
 
-[Open WebUI](/apps/open-webui) supports Whisper for voice input. Set the Whisper API URL in Open WebUI's settings to `http://whisper:8000/v1` to enable voice-to-text in your ChatGPT alternative.
+[Open WebUI](/apps/open-webui/) supports Whisper for voice input. Set the Whisper API URL in Open WebUI's settings to `http://whisper:8000/v1` to enable voice-to-text in your ChatGPT alternative.
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8000. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8000. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
-The models volume stores downloaded Whisper models. These can be re-downloaded, so backups are optional. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The models volume stores downloaded Whisper models. These can be re-downloaded, so backups are optional. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -171,14 +171,14 @@ The models volume stores downloaded Whisper models. These can be re-downloaded, 
 
 Self-hosted Whisper gives you private, unlimited speech-to-text transcription with no API costs. The faster-whisper implementation is significantly faster than the original OpenAI Whisper while maintaining accuracy. For most self-hosters, the `small` or `medium` model provides the best speed/accuracy balance.
 
-**Choose Whisper** for standalone speech-to-text. **Choose [LocalAI](/apps/localai)** if you want Whisper combined with LLM inference and image generation in one service.
+**Choose Whisper** for standalone speech-to-text. **Choose [LocalAI](/apps/localai/)** if you want Whisper combined with LLM inference and image generation in one service.
 
 ## Related
 
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host LocalAI](/apps/localai)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host LocalAI](/apps/localai/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

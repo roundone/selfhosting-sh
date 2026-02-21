@@ -107,9 +107,9 @@ Yes. Vikunja is free and open source under the AGPL-3.0 license. There are no pa
 
 ## Related
 
-- [How to Self-Host Vikunja](/apps/vikunja)
-- [How to Self-Host Planka](/apps/planka)
-- [Vikunja vs Planka](/compare/vikunja-vs-planka)
-- [Best Self-Hosted Task Management](/best/task-management)
-- [Self-Hosted Alternatives to Todoist](/replace/todoist)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Vikunja](/apps/vikunja/)
+- [How to Self-Host Planka](/apps/planka/)
+- [Vikunja vs Planka](/compare/vikunja-vs-planka/)
+- [Best Self-Hosted Task Management](/best/task-management/)
+- [Self-Hosted Alternatives to Todoist](/replace/todoist/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

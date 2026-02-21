@@ -50,7 +50,7 @@ Unraid itself is lightweight — it runs from a USB flash drive and barely touch
 
 **Intel QuickSync is the deciding factor** for Plex/Jellyfin users. AMD CPUs work fine for everything else, but Intel's hardware transcoding is significantly better supported in media server containers on Unraid.
 
-For CPU details, see [Best CPUs for Home Server](/hardware/best-cpu-home-server) and [Intel vs AMD](/hardware/intel-vs-amd-home-server).
+For CPU details, see [Best CPUs for Home Server](/hardware/best-cpu-home-server/) and [Intel vs AMD](/hardware/intel-vs-amd-home-server/).
 
 ### RAM Requirements
 
@@ -63,7 +63,7 @@ For CPU details, see [Best CPUs for Home Server](/hardware/best-cpu-home-server)
 
 Unraid doesn't require ECC RAM (unlike ZFS-based systems). Standard DDR4/DDR5 is fine. ECC works if your platform supports it but isn't necessary.
 
-For RAM recommendations, see [Best RAM for Home Server](/hardware/best-ram-home-server).
+For RAM recommendations, see [Best RAM for Home Server](/hardware/best-ram-home-server/).
 
 ### Storage Controller
 
@@ -213,17 +213,17 @@ Unraid's array is designed for HDDs — single-drive performance is fine for bul
 
 ### How does Unraid compare to TrueNAS and Synology?
 
-See [Synology vs Unraid](/hardware/synology-vs-unraid) and [TrueNAS vs Unraid](/hardware/truenas-vs-unraid).
+See [Synology vs Unraid](/hardware/synology-vs-unraid/) and [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/).
 
 ## Related
 
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Synology vs Unraid](/hardware/synology-vs-unraid)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best CPUs for Home Server](/hardware/best-cpu-home-server)
-- [Best RAM for Home Server](/hardware/best-ram-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Synology vs Unraid](/hardware/synology-vs-unraid/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best CPUs for Home Server](/hardware/best-cpu-home-server/)
+- [Best RAM for Home Server](/hardware/best-ram-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)

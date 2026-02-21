@@ -20,7 +20,7 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun/) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
 
 ## Quick Verdict
 
@@ -53,7 +53,7 @@ These are very different tools. Cosmos Cloud is a full self-hosting platform (co
 
 ## When Watchtower Still Makes Sense
 
-If you're already using [Portainer](/apps/portainer) or [Dockge](/apps/dockge) for container management and [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik) for proxying, adding Watchtower for auto-updates is a lightweight, focused solution. It doesn't replace any of those tools — it adds one capability they lack.
+If you're already using [Portainer](/apps/portainer/) or [Dockge](/apps/dockge/) for container management and [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/) for proxying, adding Watchtower for auto-updates is a lightweight, focused solution. It doesn't replace any of those tools — it adds one capability they lack.
 
 If you're using Cosmos Cloud, Watchtower is redundant. Cosmos handles updates natively.
 
@@ -78,7 +78,7 @@ If you're using Cosmos Cloud, Watchtower is redundant. Cosmos handles updates na
 
 **Cosmos Cloud if starting fresh, Watchtower if adding to existing setup.** Cosmos Cloud makes Watchtower redundant by including auto-updates as part of a larger platform. But if you already run Portainer + Traefik (or similar) and just want automated container updates, Watchtower is a 20 MB addition that does exactly that.
 
-**Note:** Watchtower hasn't had a release since November 2023. For a notify-only alternative (tells you about updates without auto-applying), consider [Diun](/apps/diun) which is actively maintained.
+**Note:** Watchtower hasn't had a release since November 2023. For a notify-only alternative (tells you about updates without auto-applying), consider [Diun](/apps/diun/) which is actively maintained.
 
 ## Frequently Asked Questions
 
@@ -96,9 +96,9 @@ Yes, for now. The current version works correctly. The risk is that future Docke
 
 ## Related
 
-- [How to Self-Host Watchtower](/apps/watchtower)
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Best Docker Management Tools](/best/docker-management)
-- [Updating Docker Containers Safely](/foundations/docker-updating)
+- [How to Self-Host Watchtower](/apps/watchtower/)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Updating Docker Containers Safely](/foundations/docker-updating/)

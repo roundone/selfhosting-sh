@@ -142,10 +142,10 @@ NPM (backed by Nginx) handles hundreds of proxy hosts efficiently. Zoraxy can ha
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Zoraxy](/apps/zoraxy)
-- [Zoraxy vs Caddy](/compare/zoraxy-vs-caddy)
-- [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Zoraxy](/apps/zoraxy/)
+- [Zoraxy vs Caddy](/compare/zoraxy-vs-caddy/)
+- [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

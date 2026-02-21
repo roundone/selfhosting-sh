@@ -119,13 +119,13 @@ Cosmos Cloud has an active GitHub repository with regular releases, a Discord co
 ### Choose Yacht If...
 
 - You shouldn't. The project is abandoned.
-- If you need a lightweight Docker GUI, use [Dockge](/apps/dockge) or [Portainer](/apps/portainer) instead.
+- If you need a lightweight Docker GUI, use [Dockge](/apps/dockge/) or [Portainer](/apps/portainer/) instead.
 
 ## Final Verdict
 
 **Use Cosmos Cloud.** There is no scenario where choosing Yacht makes sense in 2026. Yacht never made it past alpha, hasn't been updated in over three years, and has known bugs that will never be patched.
 
-If Cosmos Cloud is too heavy for your needs, [Dockge](/apps/dockge) offers lightweight Docker Compose management with an active developer (the Uptime Kuma creator), and [Portainer](/apps/portainer) offers the most feature-complete Docker management experience.
+If Cosmos Cloud is too heavy for your needs, [Dockge](/apps/dockge/) offers lightweight Docker Compose management with an active developer (the Uptime Kuma creator), and [Portainer](/apps/portainer/) offers the most feature-complete Docker management experience.
 
 ## Frequently Asked Questions
 
@@ -143,10 +143,10 @@ It's stable for self-hosting use. The project has regular releases and an active
 
 ## Related
 
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [How to Self-Host Yacht](/apps/yacht)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [How to Self-Host Yacht](/apps/yacht/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

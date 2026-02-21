@@ -133,9 +133,9 @@ Not for the same vault — they use different formats. But you can run both and 
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

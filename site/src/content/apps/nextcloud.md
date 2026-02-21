@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB recommended)
 - 10 GB of free disk space for the application, plus storage for your files
 - A domain name (strongly recommended for remote access and mobile apps)
@@ -230,7 +230,7 @@ environment:
 
 ## Reverse Proxy
 
-With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+With [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host for `cloud.yourdomain.com` → `http://nextcloud:80` (or `your-server-ip:8080`)
 2. Enable SSL with Let's Encrypt
@@ -243,7 +243,7 @@ With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
    ```
 4. Configure Nextcloud's trusted proxy and overwrite settings (see above)
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -259,7 +259,7 @@ docker run --rm -v nextcloud-html:/data -v $(pwd):/backup alpine tar czf /backup
 docker compose start
 ```
 
-The `/var/www/html` volume contains user files, configuration, and installed apps. The database contains user accounts, file metadata, sharing permissions, and calendar/contacts data. Both are critical. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The `/var/www/html` volume contains user files, configuration, and installed apps. The database contains user accounts, file metadata, sharing permissions, and calendar/contacts data. Both are critical. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -312,7 +312,7 @@ docker compose exec app php -i | grep memory_limit
 4. Use PostgreSQL, not SQLite
 
 For more detailed troubleshooting, see:
-- [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working)
+- [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working/)
 
 ## Resource Requirements
 
@@ -336,22 +336,22 @@ PostgreSQL is recommended for new installations. It handles concurrent access be
 
 ### How does Nextcloud compare to Seafile?
 
-Nextcloud is a full cloud platform (files, calendar, contacts, office, apps). [Seafile](/apps/seafile) focuses purely on file sync with better performance for large libraries. Use Nextcloud for an all-in-one platform. Use Seafile for fast file sync only.
+Nextcloud is a full cloud platform (files, calendar, contacts, office, apps). [Seafile](/apps/seafile/) focuses purely on file sync with better performance for large libraries. Use Nextcloud for an all-in-one platform. Use Seafile for fast file sync only.
 
 ## Verdict
 
-Nextcloud is the default recommendation for anyone wanting a self-hosted cloud platform. It replaces Dropbox, Google Drive, Google Calendar, Google Contacts, and more. The app ecosystem is massive, the community is the largest in self-hosting, and it's backed by a company with a sustainable business model. The downside is complexity — Nextcloud has more moving parts than simpler alternatives, and performance tuning requires attention. For users who only need file sync, [Syncthing](/apps/syncthing) or [Seafile](/apps/seafile) are lighter.
+Nextcloud is the default recommendation for anyone wanting a self-hosted cloud platform. It replaces Dropbox, Google Drive, Google Calendar, Google Contacts, and more. The app ecosystem is massive, the community is the largest in self-hosting, and it's backed by a company with a sustainable business model. The downside is complexity — Nextcloud has more moving parts than simpler alternatives, and performance tuning requires attention. For users who only need file sync, [Syncthing](/apps/syncthing/) or [Seafile](/apps/seafile/) are lighter.
 
 ## Related
 
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [Best Self-Hosted File Sync & Storage](/best/file-sync)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud)
-- [Nextcloud vs FileBrowser](/compare/nextcloud-vs-filebrowser)
-- [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working)
-- [Replace Dropbox](/replace/dropbox)
-- [Replace Google Drive](/replace/google-drive)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud/)
+- [Nextcloud vs FileBrowser](/compare/nextcloud-vs-filebrowser/)
+- [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working/)
+- [Replace Dropbox](/replace/dropbox/)
+- [Replace Google Drive](/replace/google-drive/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

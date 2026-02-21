@@ -124,7 +124,7 @@ Winner: **Caddy** by a wide margin.
 
 **Zoraxy wins on bundled features.** If you want a single tool that replaces your reverse proxy, uptime monitor, and GeoIP filter, Zoraxy consolidates three tools into one. That consolidation has value for people who want fewer moving parts.
 
-Our recommendation: start with [Caddy](/apps/caddy). If you later decide you want a GUI or built-in monitoring, try [Zoraxy](/apps/zoraxy) or [Nginx Proxy Manager](/apps/nginx-proxy-manager).
+Our recommendation: start with [Caddy](/apps/caddy/). If you later decide you want a GUI or built-in monitoring, try [Zoraxy](/apps/zoraxy/) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/).
 
 ## FAQ
 
@@ -139,10 +139,10 @@ Both handle it well. Caddy is slightly more mature — it has supported automati
 
 ## Related
 
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

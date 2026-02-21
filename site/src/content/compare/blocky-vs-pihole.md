@@ -126,9 +126,9 @@ They use the same blocklists, so blocking effectiveness is identical. The differ
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host Blocky](/apps/blocky)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Unbound vs CoreDNS](/compare/unbound-vs-coredns)
-- [Best Self-Hosted Ad Blocking](/best/ad-blocking)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Unbound vs CoreDNS](/compare/unbound-vs-coredns/)
+- [Best Self-Hosted Ad Blocking](/best/ad-blocking/)

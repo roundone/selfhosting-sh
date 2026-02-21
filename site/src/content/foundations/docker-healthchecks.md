@@ -21,7 +21,7 @@ Healthchecks add a third status beyond "running" and "stopped": **healthy** or *
 
 ## Prerequisites
 
-- Docker Engine 20.10+ with Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics))
+- Docker Engine 20.10+ with Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - A running self-hosted service to add healthchecks to
 
 ## How Healthchecks Work
@@ -323,10 +323,10 @@ If your healthcheck command (`curl`, `wget`) isn't installed in the container im
 
 ## Next Steps
 
-- Set up external monitoring with [Monitoring Basics](/foundations/monitoring-basics)
-- Learn about [Docker Resource Limits](/foundations/docker-resource-limits) to prevent resource exhaustion
-- Handle startup ordering with [Docker Compose Basics](/foundations/docker-compose-basics)
-- Debug container issues with [Docker Troubleshooting](/foundations/docker-troubleshooting)
+- Set up external monitoring with [Monitoring Basics](/foundations/monitoring-basics/)
+- Learn about [Docker Resource Limits](/foundations/docker-resource-limits/) to prevent resource exhaustion
+- Handle startup ordering with [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Debug container issues with [Docker Troubleshooting](/foundations/docker-troubleshooting/)
 
 ## FAQ
 
@@ -357,9 +357,9 @@ This disables any healthcheck defined in the Dockerfile. Useful for debugging bu
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- [Docker Resource Limits](/foundations/docker-resource-limits)
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Docker Container Not Starting](/foundations/docker-container-not-starting)
-- [Docker Performance Tuning](/foundations/docker-performance-tuning)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- [Docker Resource Limits](/foundations/docker-resource-limits/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Docker Container Not Starting](/foundations/docker-container-not-starting/)
+- [Docker Performance Tuning](/foundations/docker-performance-tuning/)

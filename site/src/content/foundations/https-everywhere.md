@@ -23,10 +23,10 @@ The excuse that "it's only on my local network" does not hold up. Other devices 
 
 ## Prerequisites
 
-- A Linux server with Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A Linux server with Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - At least one self-hosted service running that you want to secure
-- A domain name (for public-facing services) with DNS records configured ([DNS Explained](/foundations/dns-explained))
-- Basic terminal familiarity ([Getting Started](/foundations/getting-started))
+- A domain name (for public-facing services) with DNS records configured ([DNS Explained](/foundations/dns-explained/))
+- Basic terminal familiarity ([Getting Started](/foundations/getting-started/))
 
 For internal-only services, you do not need a public domain — see the "HTTPS for Internal Services" section below.
 
@@ -35,22 +35,22 @@ For internal-only services, you do not need a public domain — see the "HTTPS f
 HTTPS wraps HTTP inside a TLS (Transport Layer Security) encrypted connection. Here is the handshake, simplified:
 
 1. **Client Hello** — your browser connects to `https://photos.example.com` and sends supported TLS versions and cipher suites
-2. **Server Hello** — the server responds with its [SSL certificate](/foundations/ssl-certificates) and chosen cipher suite
+2. **Server Hello** — the server responds with its [SSL certificate](/foundations/ssl-certificates/) and chosen cipher suite
 3. **Certificate Verification** — the browser checks that the certificate is signed by a trusted Certificate Authority (CA), is not expired, and matches the domain name
 4. **Key Exchange** — browser and server perform a Diffie-Hellman key exchange to agree on a shared encryption key without transmitting it
 5. **Encrypted Session** — all subsequent data is encrypted with the shared key
 
 This happens in milliseconds. The performance cost is negligible on modern hardware.
 
-Certificates expire — 90 days for [Let's Encrypt](/foundations/lets-encrypt-explained), up to 13 months for paid CAs. Automation handles renewal so you never think about it.
+Certificates expire — 90 days for [Let's Encrypt](/foundations/lets-encrypt-explained/), up to 13 months for paid CAs. Automation handles renewal so you never think about it.
 
 ## Option 1: Reverse Proxy with Auto-SSL (Recommended)
 
-The best approach for public-facing services: run a [reverse proxy](/foundations/reverse-proxy-explained) that handles HTTPS termination and automatic certificate management for all your apps. One proxy, one certificate workflow, every service secured.
+The best approach for public-facing services: run a [reverse proxy](/foundations/reverse-proxy-explained/) that handles HTTPS termination and automatic certificate management for all your apps. One proxy, one certificate workflow, every service secured.
 
 ### Caddy — Simplest Option
 
-[Caddy](/foundations/caddy-setup) obtains and renews Let's Encrypt certificates automatically with zero SSL configuration. Specify a domain name and Caddy does the rest.
+[Caddy](/foundations/caddy-setup/) obtains and renews Let's Encrypt certificates automatically with zero SSL configuration. Specify a domain name and Caddy does the rest.
 
 Create a `Caddyfile`:
 
@@ -122,11 +122,11 @@ For DNS-01 challenges (wildcards, or when port 80 is blocked), use the Cloudflar
 }
 ```
 
-See the full [Caddy setup guide](/foundations/caddy-setup) for details.
+See the full [Caddy setup guide](/foundations/caddy-setup/) for details.
 
 ### Nginx Proxy Manager — Best GUI Option
 
-[Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) handles HTTPS through a web interface. No config files to write.
+[Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) handles HTTPS through a web interface. No config files to write.
 
 ```yaml
 services:
@@ -155,7 +155,7 @@ networks:
 
 After deploying, access `http://your-server-ip:81`, log in (default: `admin@example.com` / `changeme`), add a proxy host for each service, and enable SSL in the SSL tab. Check "Force SSL" and "HTTP/2 Support." NPM handles certificate issuance and renewal.
 
-See the full [Nginx Proxy Manager guide](/foundations/nginx-proxy-manager-setup).
+See the full [Nginx Proxy Manager guide](/foundations/nginx-proxy-manager-setup/).
 
 ### Traefik — Docker-Native Auto-Discovery
 
@@ -218,7 +218,7 @@ Traefik is more complex upfront but powerful for large deployments. Each new ser
 
 ## Option 2: Cloudflare Tunnel (Zero Port Forwarding)
 
-[Cloudflare Tunnel](/foundations/cloudflare-tunnel) creates an outbound encrypted connection from your server to Cloudflare's edge. No ports need to be open on your router. Cloudflare handles HTTPS on the public side and proxies traffic to your server through the tunnel.
+[Cloudflare Tunnel](/foundations/cloudflare-tunnel/) creates an outbound encrypted connection from your server to Cloudflare's edge. No ports need to be open on your router. Cloudflare handles HTTPS on the public side and proxies traffic to your server through the tunnel.
 
 ```yaml
 services:
@@ -251,7 +251,7 @@ Cloudflare handles SSL on the public side. Traffic between Cloudflare and your `
 
 **Trade-offs:** Your traffic routes through Cloudflare's servers. You depend on Cloudflare's availability. Some self-hosted purists object to this on principle. Cloudflare's free tier works for personal use but has Terms of Service restrictions on serving large media files.
 
-See the full [Cloudflare Tunnel guide](/foundations/cloudflare-tunnel).
+See the full [Cloudflare Tunnel guide](/foundations/cloudflare-tunnel/).
 
 ## Option 3: Let's Encrypt with Certbot (Manual)
 
@@ -300,7 +300,7 @@ services:
 
 **This approach is not recommended for most people.** A reverse proxy with auto-SSL is simpler, handles multiple services, and does not require you to manage certificate paths and renewal hooks per application. Use Certbot standalone only if you have a single service and a specific reason to avoid a reverse proxy.
 
-For a deep dive on Let's Encrypt, see [Let's Encrypt Explained](/foundations/lets-encrypt-explained).
+For a deep dive on Let's Encrypt, see [Let's Encrypt Explained](/foundations/lets-encrypt-explained/).
 
 ## Option 4: Self-Signed Certificates (Internal Only)
 
@@ -326,7 +326,7 @@ Services that never face the internet still benefit from HTTPS. Two good approac
 
 ### Tailscale HTTPS (Easiest)
 
-[Tailscale](/foundations/tailscale-setup) provides built-in HTTPS for devices on your tailnet. Enable the HTTPS feature and Tailscale issues certificates from its own CA, trusted by Let's Encrypt.
+[Tailscale](/foundations/tailscale-setup/) provides built-in HTTPS for devices on your tailnet. Enable the HTTPS feature and Tailscale issues certificates from its own CA, trusted by Let's Encrypt.
 
 ```bash
 # Enable HTTPS certificates on a Tailscale node
@@ -484,7 +484,7 @@ sudo certbot renew --dry-run
 docker logs caddy 2>&1 | grep -i "certificate"
 ```
 
-Set up monitoring with [Uptime Kuma](/apps/uptime-kuma) to alert you if HTTPS certificates are nearing expiry.
+Set up monitoring with [Uptime Kuma](/apps/uptime-kuma/) to alert you if HTTPS certificates are nearing expiry.
 
 ### Using port 8443 or other non-standard HTTPS ports
 
@@ -492,24 +492,24 @@ Browsers default to port 443 for HTTPS. Using non-standard ports means typing `h
 
 ## Next Steps
 
-- Set up a [reverse proxy](/foundations/reverse-proxy-explained) if you have not already
-- Learn about [SSL certificates](/foundations/ssl-certificates) in depth
-- Understand [Let's Encrypt challenges and automation](/foundations/lets-encrypt-explained)
-- Configure [Caddy](/foundations/caddy-setup) or [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) for your services
-- Set up [Cloudflare Tunnel](/foundations/cloudflare-tunnel) if you cannot forward ports
-- Use [Tailscale](/foundations/tailscale-setup) for secure internal access
+- Set up a [reverse proxy](/foundations/reverse-proxy-explained/) if you have not already
+- Learn about [SSL certificates](/foundations/ssl-certificates/) in depth
+- Understand [Let's Encrypt challenges and automation](/foundations/lets-encrypt-explained/)
+- Configure [Caddy](/foundations/caddy-setup/) or [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) for your services
+- Set up [Cloudflare Tunnel](/foundations/cloudflare-tunnel/) if you cannot forward ports
+- Use [Tailscale](/foundations/tailscale-setup/) for secure internal access
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates for Self-Hosting](/foundations/ssl-certificates)
-- [Let's Encrypt Explained](/foundations/lets-encrypt-explained)
-- [Caddy Reverse Proxy Setup](/foundations/caddy-setup)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Cloudflare Tunnel Setup](/foundations/cloudflare-tunnel)
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates for Self-Hosting](/foundations/ssl-certificates/)
+- [Let's Encrypt Explained](/foundations/lets-encrypt-explained/)
+- [Caddy Reverse Proxy Setup](/foundations/caddy-setup/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Cloudflare Tunnel Setup](/foundations/cloudflare-tunnel/)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
 
 ## FAQ
 

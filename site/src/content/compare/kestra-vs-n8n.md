@@ -182,13 +182,13 @@ Kestra is Java-based, so it has higher baseline resource consumption than n8n's 
 
 **Kestra** is a strong platform for developers who want code-first (YAML) workflow orchestration with a good UI. It's particularly compelling for data engineering workflows where you need script isolation, multiple languages, and version-controlled pipeline definitions. Its Apache 2.0 license is also an advantage over n8n's Sustainable Use License for organizations that care about licensing.
 
-If you're choosing between the two for general automation, pick n8n. If you're orchestrating data pipelines and scripts, Kestra is a modern alternative to [Airflow](/compare/airflow-vs-n8n) that's significantly easier to self-host.
+If you're choosing between the two for general automation, pick n8n. If you're orchestrating data pipelines and scripts, Kestra is a modern alternative to [Airflow](/compare/airflow-vs-n8n/) that's significantly easier to self-host.
 
 ## FAQ
 
 ### Is Kestra a Zapier alternative?
 
-Not directly. Kestra's plugin ecosystem is oriented toward infrastructure and data tools, not SaaS integrations. It can call APIs via HTTP tasks, but you won't find dedicated Slack, Gmail, or CRM nodes like n8n provides. For SaaS-to-SaaS automation, n8n or [Activepieces](/apps/activepieces) are better fits.
+Not directly. Kestra's plugin ecosystem is oriented toward infrastructure and data tools, not SaaS integrations. It can call APIs via HTTP tasks, but you won't find dedicated Slack, Gmail, or CRM nodes like n8n provides. For SaaS-to-SaaS automation, n8n or [Activepieces](/apps/activepieces/) are better fits.
 
 ### Can I use Kestra without Docker socket access?
 
@@ -200,10 +200,10 @@ Both have solid web UIs for execution monitoring. Kestra edges ahead with built-
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Airflow vs n8n](/compare/airflow-vs-n8n)
-- [Windmill vs n8n](/compare/windmill-vs-n8n)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
+- [How to Self-Host n8n](/apps/n8n/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Airflow vs n8n](/compare/airflow-vs-n8n/)
+- [Windmill vs n8n](/compare/windmill-vs-n8n/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)

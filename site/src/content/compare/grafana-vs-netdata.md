@@ -126,10 +126,10 @@ The best approach for many self-hosters: start with Netdata for instant monitori
 
 ## Related
 
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Netdata](/apps/netdata)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Grafana vs Prometheus](/compare/grafana-vs-prometheus)
-- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Netdata](/apps/netdata/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Grafana vs Prometheus](/compare/grafana-vs-prometheus/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)

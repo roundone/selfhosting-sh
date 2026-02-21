@@ -168,10 +168,10 @@ Yes. Port 81 is the admin UI and should never be publicly accessible. Access it 
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [NPM vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [NPM vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

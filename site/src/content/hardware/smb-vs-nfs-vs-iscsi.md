@@ -343,10 +343,10 @@ NFS has the lowest CPU overhead on Linux. SMB uses more CPU due to encryption (S
 
 ## Related
 
-- [Best NAS for Home Server](/hardware/best-nas)
-- [10GbE Networking Guide](/hardware/10gbe-networking)
-- [2.5GbE Networking Guide](/hardware/2.5gbe-networking)
-- [Homelab Network Topology](/hardware/homelab-network-topology)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Docker Networking Basics](/foundations/docker-networking)
-- [Docker Volumes Guide](/foundations/docker-volumes)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [10GbE Networking Guide](/hardware/10gbe-networking/)
+- [2.5GbE Networking Guide](/hardware/2.5gbe-networking/)
+- [Homelab Network Topology](/hardware/homelab-network-topology/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Docker Networking Basics](/foundations/docker-networking/)
+- [Docker Volumes Guide](/foundations/docker-volumes/)

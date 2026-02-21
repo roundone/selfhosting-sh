@@ -21,9 +21,9 @@ Git was built by Linus Torvalds for Linux kernel development. It is the standard
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- [SSH access](/foundations/ssh-setup) to your server
-- Basic command line familiarity — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [SSH access](/foundations/ssh-setup/) to your server
+- Basic command line familiarity — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
 - A text editor (nano, vim, or VS Code remote)
 
 ## Why Git Matters for Self-Hosting
@@ -136,7 +136,7 @@ Download a repository from a remote server:
 git clone git@github.com:youruser/server-configs.git /opt/stacks
 ```
 
-Or from a self-hosted [Gitea](/apps/gitea) or [Forgejo](/apps/forgejo) instance:
+Or from a self-hosted [Gitea](/apps/gitea/) or [Forgejo](/apps/forgejo/) instance:
 
 ```bash
 git clone git@git.yourdomain.com:youruser/stacks.git /opt/stacks
@@ -400,7 +400,7 @@ Git combined with a remote repository is a backup strategy for your configuratio
 
 - `.env` files with real passwords and secrets
 - TLS certificates and private keys
-- Database dumps (use a proper backup tool — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule))
+- Database dumps (use a proper backup tool — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/))
 - Docker volumes or application data
 - Anything in `credentials/` or `secrets/` directories
 
@@ -434,15 +434,15 @@ Pushing your server configs to GitHub works, but if your goal is self-hosting ev
 
 ### Gitea
 
-[Gitea](/apps/gitea) is a lightweight, self-hosted Git service. It provides a web UI similar to GitHub — repositories, issues, pull requests, a container registry, and CI/CD via Gitea Actions. It runs in a single container with SQLite (or PostgreSQL/MySQL for larger installs) and uses minimal resources.
+[Gitea](/apps/gitea/) is a lightweight, self-hosted Git service. It provides a web UI similar to GitHub — repositories, issues, pull requests, a container registry, and CI/CD via Gitea Actions. It runs in a single container with SQLite (or PostgreSQL/MySQL for larger installs) and uses minimal resources.
 
 Gitea is the best choice if you want a full-featured Git platform with low overhead. It handles personal infrastructure repos and small team collaboration well.
 
 ### Forgejo
 
-[Forgejo](/apps/forgejo) is a community fork of Gitea, created after concerns about Gitea's governance direction. It is functionally identical to Gitea for most use cases, with the same API and feature set. Forgejo is governed by a nonprofit (Codeberg e.V.) and prioritizes community ownership.
+[Forgejo](/apps/forgejo/) is a community fork of Gitea, created after concerns about Gitea's governance direction. It is functionally identical to Gitea for most use cases, with the same API and feature set. Forgejo is governed by a nonprofit (Codeberg e.V.) and prioritizes community ownership.
 
-Pick Forgejo if community governance matters to you. Pick Gitea if you want the larger ecosystem and more frequent feature additions. Both are excellent. For a detailed comparison, see [Gitea vs Forgejo](/compare/gitea-vs-forgejo).
+Pick Forgejo if community governance matters to you. Pick Gitea if you want the larger ecosystem and more frequent feature additions. Both are excellent. For a detailed comparison, see [Gitea vs Forgejo](/compare/gitea-vs-forgejo/).
 
 ### Why Self-Host Git?
 
@@ -457,7 +457,7 @@ For getting started, hosting on GitHub or a similar service is perfectly fine. M
 
 SSH is the recommended authentication method for Git remotes. It is more secure than HTTPS with passwords, and once configured, requires no credentials for push and pull operations.
 
-If you already have an SSH key from your [SSH setup](/foundations/ssh-setup), you can reuse it. Otherwise, generate one:
+If you already have an SSH key from your [SSH setup](/foundations/ssh-setup/), you can reuse it. Otherwise, generate one:
 
 ```bash
 ssh-keygen -t ed25519 -C "git@yourserver"
@@ -542,8 +542,8 @@ logs/
 ### Key Rules
 
 - **Always ignore `.env` files.** They contain passwords, API keys, and secrets. Commit `.env.example` files with placeholder values instead.
-- **Always ignore TLS keys and certificates.** These are secrets. Regenerate them during setup — see [SSL Certificates](/foundations/ssl-certificates).
-- **Ignore data directories.** Application data (uploads, databases, media) does not belong in Git. Use a proper backup tool like Restic or BorgBackup — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule).
+- **Always ignore TLS keys and certificates.** These are secrets. Regenerate them during setup — see [SSL Certificates](/foundations/ssl-certificates/).
+- **Ignore data directories.** Application data (uploads, databases, media) does not belong in Git. Use a proper backup tool like Restic or BorgBackup — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/).
 - **The `!` prefix is an exception.** `!.env.example` means "do track `.env.example` even though `.env` patterns are ignored."
 
 ### Check What Git Is Tracking
@@ -586,22 +586,22 @@ The file remains on disk but is no longer in the repository. Note that the old v
 You now have the tools to version-control your entire self-hosted infrastructure. Here is the path forward:
 
 1. **Today:** Initialize a Git repo in your stacks directory. Create a `.gitignore`. Make your first commit.
-2. **This week:** Set up a remote repository — GitHub for convenience, or [Gitea](/apps/gitea) / [Forgejo](/apps/forgejo) if you want to self-host.
+2. **This week:** Set up a remote repository — GitHub for convenience, or [Gitea](/apps/gitea/) / [Forgejo](/apps/forgejo/) if you want to self-host.
 3. **This month:** Build the commit habit. Every time you add a service, change a config, or upgrade an app version — commit and push.
-4. **Ongoing:** Combine Git with a proper backup tool for application data — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule).
+4. **Ongoing:** Combine Git with a proper backup tool for application data — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/).
 
-For the Docker Compose fundamentals that Git will be tracking, see [Docker Compose Basics](/foundations/docker-compose-basics). For managing the secrets in your `.env` files, see [Docker Environment Variables](/foundations/docker-environment-variables).
+For the Docker Compose fundamentals that Git will be tracking, see [Docker Compose Basics](/foundations/docker-compose-basics/). For managing the secrets in your `.env` files, see [Docker Environment Variables](/foundations/docker-environment-variables/).
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — the files you will be version-controlling
-- [SSH Setup and Security](/foundations/ssh-setup) — SSH keys for Git authentication
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) — back up what Git does not track
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting) — command line fundamentals
-- [Docker Environment Variables](/foundations/docker-environment-variables) — managing the secrets Git should ignore
-- [How to Self-Host Gitea](/apps/gitea) — self-hosted Git server
-- [How to Self-Host Forgejo](/apps/forgejo) — community-governed Gitea fork
-- [Gitea vs Forgejo](/compare/gitea-vs-forgejo) — detailed comparison
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — the files you will be version-controlling
+- [SSH Setup and Security](/foundations/ssh-setup/) — SSH keys for Git authentication
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) — back up what Git does not track
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/) — command line fundamentals
+- [Docker Environment Variables](/foundations/docker-environment-variables/) — managing the secrets Git should ignore
+- [How to Self-Host Gitea](/apps/gitea/) — self-hosted Git server
+- [How to Self-Host Forgejo](/apps/forgejo/) — community-governed Gitea fork
+- [Gitea vs Forgejo](/compare/gitea-vs-forgejo/) — detailed comparison
 
 ## FAQ
 
@@ -623,4 +623,4 @@ After every meaningful change. Added a new service — commit. Changed a port ma
 
 ### Can Git replace my backup strategy?
 
-No. Git tracks text files efficiently — Docker Compose configs, scripts, documentation. It does not handle large binary files, database dumps, or application data well. Use Git for configuration, and a tool like Restic or BorgBackup for everything else. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) for the full approach.
+No. Git tracks text files efficiently — Docker Compose configs, scripts, documentation. It does not handle large binary files, database dumps, or application data well. Use Git for configuration, and a tool like Restic or BorgBackup for everything else. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) for the full approach.

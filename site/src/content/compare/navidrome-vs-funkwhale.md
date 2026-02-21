@@ -158,10 +158,10 @@ Yes. Funkwhale uses ActivityPub and can share content with other ActivityPub-com
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Funkwhale](/apps/funkwhale)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Funkwhale](/apps/funkwhale/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

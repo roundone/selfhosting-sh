@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (NPM is lightweight)
 - Ports 80 and 443 available (not used by another web server)
 - A domain name with DNS pointing to your server (for SSL certificates)
@@ -196,7 +196,7 @@ ports:
 
 ## Reverse Proxy
 
-NPM *is* the reverse proxy. For configurations where NPM sits behind another proxy (e.g., Cloudflare), set the **Trusted Proxies** under the admin settings to include Cloudflare's IP ranges. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the broader architecture.
+NPM *is* the reverse proxy. For configurations where NPM sits behind another proxy (e.g., Cloudflare), set the **Trusted Proxies** under the admin settings to include Cloudflare's IP ranges. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the broader architecture.
 
 ## Backup
 
@@ -210,7 +210,7 @@ docker run --rm -v npm-letsencrypt:/letsencrypt -v $(pwd):/backup alpine tar czf
 docker compose start
 ```
 
-The `/data` volume contains the SQLite database (or connection config) and all proxy host configurations. The `/etc/letsencrypt` volume contains your SSL certificates. Both are critical. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+The `/data` volume contains the SQLite database (or connection config) and all proxy host configurations. The `/etc/letsencrypt` volume contains your SSL certificates. Both are critical. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -271,9 +271,9 @@ proxy_set_header Connection "upgrade";
 ```
 
 For more detailed troubleshooting, see:
-- [Nginx Proxy Manager: 502 Bad Gateway — Fix](/troubleshooting/nginx-proxy-manager/502-bad-gateway)
-- [NPM: Default Site Showing Instead of App — Fix](/troubleshooting/nginx-proxy-manager/default-site-showing)
-- [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing)
+- [Nginx Proxy Manager: 502 Bad Gateway — Fix](/troubleshooting/nginx-proxy-manager/502-bad-gateway/)
+- [NPM: Default Site Showing Instead of App — Fix](/troubleshooting/nginx-proxy-manager/default-site-showing/)
+- [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing/)
 
 ## Resource Requirements
 
@@ -301,22 +301,22 @@ Yes. Set Cloudflare DNS to proxy mode (orange cloud). NPM will terminate SSL fro
 
 ## Verdict
 
-Nginx Proxy Manager is the best reverse proxy solution for most self-hosters. It eliminates the need to write Nginx configs manually, handles SSL automatically, and provides a clean UI for managing everything. If you run more than one self-hosted service, NPM should be the first thing you deploy. For users who prefer configuration-as-code, look at [Traefik](/apps/traefik) or [Caddy](/apps/caddy) instead.
+Nginx Proxy Manager is the best reverse proxy solution for most self-hosters. It eliminates the need to write Nginx configs manually, handles SSL automatically, and provides a clean UI for managing everything. If you run more than one self-hosted service, NPM should be the first thing you deploy. For users who prefer configuration-as-code, look at [Traefik](/apps/traefik/) or [Caddy](/apps/caddy/) instead.
 
 ## Related
 
-- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager: 502 Bad Gateway — Fix](/troubleshooting/nginx-proxy-manager/502-bad-gateway)
-- [NPM: Default Site Showing Instead of App — Fix](/troubleshooting/nginx-proxy-manager/default-site-showing)
-- [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing)
-- [NPM vs Envoy](/compare/nginx-proxy-manager-vs-envoy)
-- [NPM vs HAProxy](/compare/nginx-proxy-manager-vs-haproxy)
-- [NPM vs Nginx](/compare/nginx-proxy-manager-vs-nginx)
-- [NPM vs Zoraxy](/compare/nginx-proxy-manager-vs-zoraxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Immich](/apps/immich)
-- [SSH and Security Basics](/foundations/ssh-setup)
+- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager: 502 Bad Gateway — Fix](/troubleshooting/nginx-proxy-manager/502-bad-gateway/)
+- [NPM: Default Site Showing Instead of App — Fix](/troubleshooting/nginx-proxy-manager/default-site-showing/)
+- [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing/)
+- [NPM vs Envoy](/compare/nginx-proxy-manager-vs-envoy/)
+- [NPM vs HAProxy](/compare/nginx-proxy-manager-vs-haproxy/)
+- [NPM vs Nginx](/compare/nginx-proxy-manager-vs-nginx/)
+- [NPM vs Zoraxy](/compare/nginx-proxy-manager-vs-zoraxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Immich](/apps/immich/)
+- [SSH and Security Basics](/foundations/ssh-setup/)

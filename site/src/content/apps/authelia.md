@@ -29,7 +29,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (Authelia + Redis + PostgreSQL)
 - A reverse proxy (Nginx Proxy Manager, Traefik, or Caddy) — **required**
 - A domain name with HTTPS and wildcard or per-app subdomains
@@ -350,7 +350,7 @@ Authelia **requires** a reverse proxy — it doesn't serve applications itself. 
 
 Supported proxies: Traefik, Nginx, Nginx Proxy Manager, Caddy, HAProxy, Envoy.
 
-See the [Authelia integration docs](https://www.authelia.com/integration/proxies/) for proxy-specific configuration. Also see our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+See the [Authelia integration docs](https://www.authelia.com/integration/proxies/) for proxy-specific configuration. Also see our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -368,7 +368,7 @@ tar czf authelia-config-backup.tar.gz config/ secrets/
 
 3. **Secrets files** — without these, Authelia can't decrypt session data or storage.
 
-See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -402,7 +402,7 @@ See our [backup strategy guide](/foundations/backup-3-2-1-rule).
 
 Authelia is the best self-hosted authentication layer for protecting web applications. It's lighter than Authentik, simpler to configure than Keycloak, and integrates cleanly with every major reverse proxy. Use it to add SSO and 2FA to apps that don't have their own authentication, or to create a unified login for your entire homelab. The main complexity is reverse proxy integration — once that's working, everything else is straightforward.
 
-**Note:** Authelia is an authentication proxy, not a password manager. It protects access to your web apps. For storing and managing passwords, use [Vaultwarden](/apps/vaultwarden) or [Passbolt](/apps/passbolt).
+**Note:** Authelia is an authentication proxy, not a password manager. It protects access to your web apps. For storing and managing passwords, use [Vaultwarden](/apps/vaultwarden/) or [Passbolt](/apps/passbolt/).
 
 ## FAQ
 
@@ -416,16 +416,16 @@ Yes. That's its primary use case. Any web application served behind a compatible
 
 ### Authelia vs Authentik — which should I use?
 
-Authelia is lighter and simpler — perfect for protecting web apps with forward auth. Authentik is heavier but more feature-rich — it's a full identity provider with user management UI, SCIM provisioning, and extensive OIDC/SAML support. For most homelabs, Authelia is sufficient. See our [Authelia vs Authentik comparison](/compare/authelia-vs-authentik).
+Authelia is lighter and simpler — perfect for protecting web apps with forward auth. Authentik is heavier but more feature-rich — it's a full identity provider with user management UI, SCIM provisioning, and extensive OIDC/SAML support. For most homelabs, Authelia is sufficient. See our [Authelia vs Authentik comparison](/compare/authelia-vs-authentik/).
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [How to Self-Host Traefik](/apps/traefik)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Security Basics](/foundations/firewall-ufw)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Security Basics](/foundations/firewall-ufw/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

@@ -28,7 +28,7 @@ Wiki.js is a strong choice for technical documentation, team wikis, and knowledg
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum (2 GB recommended)
 - 5 GB of free disk space
 - A domain name (recommended for remote access)
@@ -164,7 +164,7 @@ Under Administration → Theme, you can customize colors, add custom CSS, and in
 
 Set up a reverse proxy to access Wiki.js over HTTPS. Point your proxy to port 3000. Update the Site URL in Administration → General to match your external URL.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -176,7 +176,7 @@ Critical data to back up:
 
 Restore database: `cat wikijs_backup.sql | docker compose exec -T postgres psql -U wikijs wikijs`
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -210,18 +210,18 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 Wiki.js is the best self-hosted wiki for teams that want multiple editor options and Git-based content sync. The Markdown editor is excellent, the visual editor makes it accessible to non-technical users, and Git sync provides a robust backup and version control story.
 
-The downside compared to [Outline](/apps/outline) is that Wiki.js feels more like a traditional wiki than a modern documentation tool — the UI is functional but not as polished. Compared to [BookStack](/apps/bookstack), Wiki.js offers more flexibility (Git sync, multiple editors) but BookStack has a simpler, more intuitive navigation structure.
+The downside compared to [Outline](/apps/outline/) is that Wiki.js feels more like a traditional wiki than a modern documentation tool — the UI is functional but not as polished. Compared to [BookStack](/apps/bookstack/), Wiki.js offers more flexibility (Git sync, multiple editors) but BookStack has a simpler, more intuitive navigation structure.
 
 Choose Wiki.js if Git-based content management matters to you.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Replace Notion](/replace/notion)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Replace Notion](/replace/notion/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

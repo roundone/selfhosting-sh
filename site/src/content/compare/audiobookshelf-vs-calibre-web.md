@@ -116,15 +116,15 @@ You need a Calibre database (`metadata.db`), but you don't need to keep Calibre 
 Not recommended. Each app should manage its own directory. Audiobooks go to Audiobookshelf's library, ebooks go to Calibre-Web's library. Sharing files between them risks metadata conflicts.
 
 ### Which handles comics/manga better?
-Calibre-Web handles CBZ/CBR files and has a basic comic reader. For a dedicated comics experience, consider [Komga](/apps/komga) or [Kavita](/apps/kavita) instead.
+Calibre-Web handles CBZ/CBR files and has a basic comic reader. For a dedicated comics experience, consider [Komga](/apps/komga/) or [Kavita](/apps/kavita/) instead.
 
 ## Related
 
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga)
-- [Best Self-Hosted Ebook Readers](/best/ebook-readers)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga/)
+- [Best Self-Hosted Ebook Readers](/best/ebook-readers/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)

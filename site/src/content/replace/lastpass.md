@@ -49,7 +49,7 @@ Vaultwarden runs on SQLite and idles at ~50 MB of RAM. It supports organizations
 - Organizations and sharing work out of the box
 - Active development, large community
 
-[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden)
+[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden/)
 
 ### Passbolt — Best for Teams
 
@@ -59,7 +59,7 @@ Passbolt uses OpenPGP for end-to-end encryption and requires a browser extension
 
 **Best for:** Teams that need shared credential management with audit trails.
 
-[Read our full guide: How to Self-Host Passbolt](/apps/passbolt)
+[Read our full guide: How to Self-Host Passbolt](/apps/passbolt/)
 
 ### KeeWeb — Best Lightweight Option
 
@@ -67,7 +67,7 @@ Passbolt uses OpenPGP for end-to-end encryption and requires a browser extension
 
 **Best for:** Users already in the KeePass ecosystem who want a web UI, or anyone who wants a simple file-based vault with no server-side database.
 
-[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb)
+[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb/)
 
 ### Padloc — Best UI/UX
 
@@ -75,7 +75,7 @@ Passbolt uses OpenPGP for end-to-end encryption and requires a browser extension
 
 **Best for:** Users who prioritize a clean interface and are willing to trade community size for design quality.
 
-[Read our full guide: How to Self-Host Padloc](/apps/padloc)
+[Read our full guide: How to Self-Host Padloc](/apps/padloc/)
 
 ## Migration Guide
 
@@ -135,7 +135,7 @@ Be honest about the trade-offs:
 - **Dark web monitoring.** LastPass Premium includes breach monitoring. Self-hosted alternatives don't. Use [Have I Been Pwned](https://haveibeenpwned.com/) separately.
 - **Official support.** When something breaks, you're your own support team. Community forums and GitHub issues are your resources.
 
-**Mitigation:** Export your vault to an encrypted `.kdbx` backup stored locally. If your server dies, you can open it with KeePassXC offline while you rebuild. Set up automated backups with a [3-2-1 backup strategy](/foundations/backup-3-2-1-rule).
+**Mitigation:** Export your vault to an encrypted `.kdbx` backup stored locally. If your server dies, you can open it with KeePassXC offline while you rebuild. Set up automated backups with a [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/).
 
 ## FAQ
 
@@ -157,17 +157,17 @@ Yes. Vaultwarden supports organizations with collections, which work like shared
 
 ### Do I need HTTPS?
 
-Yes. Bitwarden clients refuse to connect over plain HTTP. You need a domain name and a reverse proxy with SSL. See our [reverse proxy setup guide](/foundations/reverse-proxy-explained) and [SSL certificate guide](/foundations/ssl-certificates).
+Yes. Bitwarden clients refuse to connect over plain HTTP. You need a domain name and a reverse proxy with SSL. See our [reverse proxy setup guide](/foundations/reverse-proxy-explained/) and [SSL certificate guide](/foundations/ssl-certificates/).
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [How to Self-Host Padloc](/apps/padloc)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [How to Self-Host Padloc](/apps/padloc/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

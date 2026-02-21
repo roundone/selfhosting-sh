@@ -118,9 +118,9 @@ Your photos are still on the server's disk — nothing is lost. You just can't a
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Immich](/apps/immich/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

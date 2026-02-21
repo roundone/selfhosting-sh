@@ -29,7 +29,7 @@ Outline requires an authentication provider (OIDC, Google, Slack, Azure AD, or D
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB recommended)
 - 10 GB of free disk space
 - A domain name (required — Outline needs a proper URL)
@@ -217,7 +217,7 @@ Outline supports custom team name and logo through the admin settings UI (Settin
 
 Set up a reverse proxy to access Outline over HTTPS with your domain. Point your proxy to port 3000 on the Outline container.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -229,7 +229,7 @@ Critical data to back up:
 
 Restore database: `cat outline_backup.sql | docker compose exec -T postgres psql -U outline outline`
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -268,20 +268,20 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 Outline is the best self-hosted Notion alternative for teams that need structured documentation. The UI is fast and polished, real-time collaboration works well, and the search is excellent. The main friction point is the mandatory external auth provider — there's no simple username/password login, so you need something like Authentik, Keycloak, or a Google Workspace account.
 
-For personal wikis where you don't want to set up OIDC, [BookStack](/apps/bookstack) is simpler. For teams already using an identity provider, Outline is the better choice.
+For personal wikis where you don't want to set up OIDC, [BookStack](/apps/bookstack/) is simpler. For teams already using an identity provider, Outline is the better choice.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Outline vs AppFlowy](/compare/outline-vs-affine)
-- [Outline vs Joplin](/compare/outline-vs-joplin)
-- [Outline vs SiYuan](/compare/outline-vs-siyuan)
-- [Outline vs Trilium](/compare/outline-vs-trilium)
-- [Replace Notion](/replace/notion)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Outline vs AppFlowy](/compare/outline-vs-affine/)
+- [Outline vs Joplin](/compare/outline-vs-joplin/)
+- [Outline vs SiYuan](/compare/outline-vs-siyuan/)
+- [Outline vs Trilium](/compare/outline-vs-trilium/)
+- [Replace Notion](/replace/notion/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

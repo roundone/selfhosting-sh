@@ -62,7 +62,7 @@ Proxmox VE is a Type 1 hypervisor based on Debian Linux. It runs directly on bar
 
 - **At least 1 Gbps.** Ideally 2+ NICs for separating management traffic from VM traffic.
 - **Intel NICs preferred.** Realtek works but Intel I210/I225/I226 have better driver support in Proxmox.
-- **10 GbE is worth it** if you're doing iSCSI, Ceph, or running storage-heavy VMs. See our [10GbE networking guide](/hardware/10gbe-networking).
+- **10 GbE is worth it** if you're doing iSCSI, Ceph, or running storage-heavy VMs. See our [10GbE networking guide](/hardware/10gbe-networking/).
 
 ## Recommended Builds
 
@@ -228,18 +228,18 @@ Proxmox VE is a Type 1 hypervisor based on Debian Linux. It runs directly on bar
 ## What Can You Run on Each Build?
 
 ### Budget (4C/32GB)
-- [Pi-hole](/apps/pi-hole) (LXC — 512 MB)
-- [Home Assistant](/apps/home-assistant) (VM — 2 GB)
-- [Vaultwarden](/apps/vaultwarden) (LXC — 512 MB)
-- [Uptime Kuma](/apps/uptime-kuma) (LXC — 512 MB)
-- [Nextcloud](/apps/nextcloud) (VM — 4 GB)
+- [Pi-hole](/apps/pi-hole/) (LXC — 512 MB)
+- [Home Assistant](/apps/home-assistant/) (VM — 2 GB)
+- [Vaultwarden](/apps/vaultwarden/) (LXC — 512 MB)
+- [Uptime Kuma](/apps/uptime-kuma/) (LXC — 512 MB)
+- [Nextcloud](/apps/nextcloud/) (VM — 4 GB)
 - Headroom for 2-3 more lightweight services
 
 ### Mid-Range (8C/64GB)
 - Everything above, plus:
-- [Jellyfin](/apps/jellyfin) with iGPU transcoding (VM — 4 GB)
-- [Gitea](/apps/gitea) (VM — 2 GB)
-- [Grafana](/apps/grafana) + [Prometheus](/apps/prometheus) (VM — 4 GB)
+- [Jellyfin](/apps/jellyfin/) with iGPU transcoding (VM — 4 GB)
+- [Gitea](/apps/gitea/) (VM — 2 GB)
+- [Grafana](/apps/grafana/) + [Prometheus](/apps/prometheus/) (VM — 4 GB)
 - TrueNAS VM for NAS storage (VM — 8-16 GB)
 - 5+ additional services
 
@@ -277,7 +277,7 @@ For most self-hosters, the **Intel Core i5-13500** (14 cores/20 threads, ~$180) 
 
 ### Can I run Proxmox on an Intel N100 mini PC?
 
-Technically yes, but it's a poor fit. The N100 has only 4 cores and most mini PCs max out at 16 GB RAM. Proxmox VMs need dedicated RAM allocations, so you'll run out fast. Use Docker directly on an N100 instead — see our [Intel N100 guide](/hardware/intel-n100-mini-pc). If you insist on Proxmox, stick to LXC containers only.
+Technically yes, but it's a poor fit. The N100 has only 4 cores and most mini PCs max out at 16 GB RAM. Proxmox VMs need dedicated RAM allocations, so you'll run out fast. Use Docker directly on an N100 instead — see our [Intel N100 guide](/hardware/intel-n100-mini-pc/). If you insist on Proxmox, stick to LXC containers only.
 
 ### Do I need ECC RAM for Proxmox?
 
@@ -297,12 +297,12 @@ Yes, if your system has a PCIe slot. Desktop towers and rack servers support thi
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC for Self-Hosting](/hardware/intel-n100-mini-pc)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [ECC RAM for Home Servers](/hardware/ecc-ram-home-server)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC for Self-Hosting](/hardware/intel-n100-mini-pc/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [ECC RAM for Home Servers](/hardware/ecc-ram-home-server/)

@@ -237,7 +237,7 @@ sudo cp /var/lib/rancher/k3s/server/db/state.db ./k3s-backup.db
 sudo k3s etcd-snapshot save --name backup-$(date +%Y%m%d)
 ```
 
-Back up your workload manifests and Helm releases independently. For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+Back up your workload manifests and Helm releases independently. For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -302,7 +302,7 @@ k3s is the best way to run Kubernetes for self-hosting. It gives you the full Ku
 
 **Use k3s if:** You want Kubernetes but don't want the operational overhead of kubeadm. You're deploying Helm charts to a home server. You want a lightweight orchestrator that scales from one node to a production cluster.
 
-**Consider Docker Compose instead if:** You're running a few containers on a single server and don't need Kubernetes features like rolling updates, service discovery, or declarative scaling. See [Docker Compose Basics](/foundations/docker-compose-basics).
+**Consider Docker Compose instead if:** You're running a few containers on a single server and don't need Kubernetes features like rolling updates, service discovery, or declarative scaling. See [Docker Compose Basics](/foundations/docker-compose-basics/).
 
 ## FAQ
 
@@ -320,11 +320,11 @@ Yes. k3s includes a HelmChart CRD for auto-deploying charts, and standard Helm C
 
 ## Related
 
-- [k3s vs Kubernetes](/compare/k3s-vs-k8s)
-- [k3s vs MicroK8s](/compare/k3s-vs-microk8s)
-- [k3s vs k0s](/compare/k3s-vs-k0s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [How to Self-Host Rancher](/apps/rancher)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [k3s vs Kubernetes](/compare/k3s-vs-k8s/)
+- [k3s vs MicroK8s](/compare/k3s-vs-microk8s/)
+- [k3s vs k0s](/compare/k3s-vs-k0s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [How to Self-Host Rancher](/apps/rancher/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

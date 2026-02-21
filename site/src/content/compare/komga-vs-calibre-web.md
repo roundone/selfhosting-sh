@@ -99,7 +99,7 @@ Calibre-Web is lighter, but if you enable format conversion, the Calibre binary 
 
 **Choose based on content type.** For comics and manga, Komga provides a significantly better reading experience with features Calibre-Web can't match — double-page spreads, RTL reading, page-level progress tracking, and Tachiyomi integration. For ebooks, Calibre-Web's format conversion, Kindle delivery, and deeper metadata integration make it the better choice.
 
-If you have both comics and ebooks, run both. They can coexist on the same server without conflict. Or consider [Kavita](/apps/kavita), which attempts to handle both content types in a single application.
+If you have both comics and ebooks, run both. They can coexist on the same server without conflict. Or consider [Kavita](/apps/kavita/), which attempts to handle both content types in a single application.
 
 ## FAQ
 
@@ -110,17 +110,17 @@ Yes, Komga reads EPUB files. However, its reader is optimized for image-based co
 You need a Calibre database file, but you don't need Calibre desktop running. Create the initial library once, then manage everything through the web interface.
 
 ### Which is better for PDFs?
-Both handle PDFs, but neither is optimized for them. For comics in PDF format, Komga is better (page navigation). For text PDFs, Calibre-Web is marginally better. For a dedicated PDF tool, consider [Stirling-PDF](/apps/stirling-pdf).
+Both handle PDFs, but neither is optimized for them. For comics in PDF format, Komga is better (page navigation). For text PDFs, Calibre-Web is marginally better. For a dedicated PDF tool, consider [Stirling-PDF](/apps/stirling-pdf/).
 
 ### Can I migrate from Calibre-Web to Komga?
 Not directly — they use different database formats. However, you can point Komga at the same book files. You'll lose Calibre-specific metadata (custom columns, tags) but keep the files themselves.
 
 ## Related
 
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga)
-- [Best Self-Hosted Ebook Readers](/best/ebook-readers)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga/)
+- [Best Self-Hosted Ebook Readers](/best/ebook-readers/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)

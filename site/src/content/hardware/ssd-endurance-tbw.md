@@ -156,7 +156,7 @@ sudo nano /etc/smartd.conf
 sudo systemctl restart smartd
 ```
 
-Or use [Netdata](/apps/netdata) or [Grafana](/apps/grafana) with [Prometheus](/apps/prometheus) for visual dashboards of SSD health metrics.
+Or use [Netdata](/apps/netdata/) or [Grafana](/apps/grafana/) with [Prometheus](/apps/prometheus/) for visual dashboards of SSD health metrics.
 
 ## Best SSDs by Use Case
 
@@ -208,9 +208,9 @@ Check the SMART data first. If Percentage Used is under 30% and Available Spare 
 
 ## Related
 
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [NVMe Enclosures Guide](/hardware/nvme-enclosures)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [NVMe Enclosures Guide](/hardware/nvme-enclosures/)

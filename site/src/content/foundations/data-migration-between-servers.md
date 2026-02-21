@@ -21,10 +21,10 @@ Done right, migration results in zero data loss and minimal downtime. Done wrong
 
 ## Prerequisites
 
-- SSH access to both old and new servers ([SSH Setup](/foundations/ssh-setup))
-- Docker and Docker Compose installed on the new server ([Docker Compose Basics](/foundations/docker-compose-basics))
+- SSH access to both old and new servers ([SSH Setup](/foundations/ssh-setup/))
+- Docker and Docker Compose installed on the new server ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - Enough storage on the new server for all your data
-- A basic understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes))
+- A basic understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes/))
 
 ## Migration Strategy Overview
 
@@ -245,9 +245,9 @@ Once everything is verified on the new server:
 # New: domain.com → new-server-ip
 ```
 
-If you're using [Cloudflare Tunnel](/foundations/cloudflare-tunnel), install `cloudflared` on the new server and re-configure the tunnel.
+If you're using [Cloudflare Tunnel](/foundations/cloudflare-tunnel/), install `cloudflared` on the new server and re-configure the tunnel.
 
-If you're using a [reverse proxy](/foundations/reverse-proxy-explained), set it up on the new server with the same configuration.
+If you're using a [reverse proxy](/foundations/reverse-proxy-explained/), set it up on the new server with the same configuration.
 
 DNS propagation can take minutes to hours. Keep the old server running until you're confident all traffic is hitting the new server.
 
@@ -303,10 +303,10 @@ If the new server runs a much newer or older Docker version, volume formats or C
 
 ## Next Steps
 
-- Set up automated backups on the new server with [Backup Strategy](/foundations/backup-3-2-1-rule)
-- Back up Docker volumes regularly using [Backup Docker Volumes](/foundations/backup-docker-volumes)
-- Consider [VPS vs Home Server](/foundations/vps-vs-home-server) for your next migration
-- Set up [Monitoring](/foundations/monitoring-basics) on the new server to catch issues early
+- Set up automated backups on the new server with [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- Back up Docker volumes regularly using [Backup Docker Volumes](/foundations/backup-docker-volumes/)
+- Consider [VPS vs Home Server](/foundations/vps-vs-home-server/) for your next migration
+- Set up [Monitoring](/foundations/monitoring-basics/) on the new server to catch issues early
 
 ## FAQ
 
@@ -324,7 +324,7 @@ Bind mounts (host paths like `/srv/myapp`) are easier to back up, inspect, and m
 
 ### Can I migrate from x86 to ARM (or vice versa)?
 
-Data transfers fine. But your Docker images need to support the target architecture. Check Docker Hub for multi-arch image support. Many popular self-hosted apps now publish multi-arch images. See [Docker Multi-Arch](/foundations/docker-multi-arch).
+Data transfers fine. But your Docker images need to support the target architecture. Check Docker Hub for multi-arch image support. Many popular self-hosted apps now publish multi-arch images. See [Docker Multi-Arch](/foundations/docker-multi-arch/).
 
 ### What about Tailscale/VPN connections?
 
@@ -332,10 +332,10 @@ Re-install Tailscale or WireGuard on the new server. Tailscale nodes get new IPs
 
 ## Related
 
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Backup Docker Volumes](/foundations/backup-docker-volumes)
-- [Docker Volumes](/foundations/docker-volumes)
-- [VPS vs Home Server](/foundations/vps-vs-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SSH Setup](/foundations/ssh-setup)
-- [Disaster Recovery](/foundations/disaster-recovery)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Backup Docker Volumes](/foundations/backup-docker-volumes/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [VPS vs Home Server](/foundations/vps-vs-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Disaster Recovery](/foundations/disaster-recovery/)

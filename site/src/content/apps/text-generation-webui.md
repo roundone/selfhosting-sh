@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - NVIDIA GPU with 8+ GB VRAM (recommended)
 - 16 GB+ system RAM
 - 30 GB+ free disk space
@@ -171,7 +171,7 @@ curl http://localhost:5000/v1/chat/completions \
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 7860 (Web UI) or 5000 (API). WebSocket support is required for the Gradio UI. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 7860 (Web UI) or 5000 (API). WebSocket support is required for the Gradio UI. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -181,7 +181,7 @@ Back up these directories:
 - `characters/` — Custom character definitions
 - `presets/` — Generation parameter presets
 
-Priority: `loras/` and `characters/` are irreplaceable. Models can be re-downloaded. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Priority: `loras/` and `characters/` are irreplaceable. Models can be re-downloaded. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -214,17 +214,17 @@ Priority: `loras/` and `characters/` are irreplaceable. Models can be re-downloa
 
 ## Verdict
 
-Text Generation WebUI is the power user's LLM interface. It supports more model formats and loading backends than any other tool, and the built-in LoRA training is unique. The trade-off is more complex setup and a less polished UI compared to [Open WebUI](/apps/open-webui).
+Text Generation WebUI is the power user's LLM interface. It supports more model formats and loading backends than any other tool, and the built-in LoRA training is unique. The trade-off is more complex setup and a less polished UI compared to [Open WebUI](/apps/open-webui/).
 
-**Choose Text Generation WebUI** if you want LoRA training, EXL2 model support, or deep control over inference parameters. **Choose [Open WebUI](/apps/open-webui) + [Ollama](/apps/ollama)** for a polished ChatGPT-like experience with simpler setup.
+**Choose Text Generation WebUI** if you want LoRA training, EXL2 model support, or deep control over inference parameters. **Choose [Open WebUI](/apps/open-webui/) + [Ollama](/apps/ollama/)** for a polished ChatGPT-like experience with simpler setup.
 
 ## Related
 
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [How to Self-Host Ollama](/apps/ollama)
-- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)

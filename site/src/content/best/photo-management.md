@@ -62,7 +62,7 @@ Immich runs four containers: the main server, a machine learning service, Postgr
 
 **Best for:** Anyone replacing Google Photos, iCloud Photos, or Amazon Photos. Families, individuals, anyone who wants mobile auto-upload with smart search.
 
-[Read our full guide: How to Self-Host Immich](/apps/immich)
+[Read our full guide: How to Self-Host Immich](/apps/immich/)
 
 ### 2. PhotoPrism — Best for AI Features
 
@@ -89,7 +89,7 @@ PhotoPrism is written in Go and uses MariaDB for its database. It needs 4 GB of 
 
 **Best for:** Photographers with large existing libraries who want AI tagging, RAW support, and a stable platform. Users who don't need mobile auto-upload.
 
-[Read our full guide: How to Self-Host PhotoPrism](/apps/photoprism)
+[Read our full guide: How to Self-Host PhotoPrism](/apps/photoprism/)
 
 ### 3. LibrePhotos — Best Fully Free Option
 
@@ -117,7 +117,7 @@ LibrePhotos runs four containers: a Django backend, a React frontend, PostgreSQL
 
 **Best for:** Users who want a fully FOSS photo management solution with face recognition and don't need mobile auto-upload or cutting-edge AI features.
 
-[Read our full guide: How to Self-Host LibrePhotos](/apps/librephotos)
+[Read our full guide: How to Self-Host LibrePhotos](/apps/librephotos/)
 
 ### 4. Lychee — Best for Photographers
 
@@ -145,7 +145,7 @@ Lychee needs just 2 GB of RAM and runs three containers (app, MariaDB, optional 
 
 **Best for:** Photographers sharing portfolios, event photography galleries, curated collections meant for viewing. Not for personal photo library management.
 
-[Read our full guide: How to Self-Host Lychee](/apps/lychee)
+[Read our full guide: How to Self-Host Lychee](/apps/lychee/)
 
 ### 5. Photoview — Best Lightweight Gallery
 
@@ -174,7 +174,7 @@ Photoview needs just 1 GB of RAM (2 GB recommended for face detection) and runs 
 
 **Best for:** Users who already have photos organized in folders on a NAS or server and want a fast gallery viewer without moving files. Ideal companion to Syncthing or Nextcloud file sync.
 
-[Read our full guide: How to Self-Host Photoview](/apps/photoview)
+[Read our full guide: How to Self-Host Photoview](/apps/photoview/)
 
 ### 6. Piwigo — Best for Large Collections
 
@@ -202,7 +202,7 @@ Piwigo needs just 1 GB of RAM and runs two containers (the LinuxServer.io image 
 
 **Best for:** Organizations, photography clubs, or large family archives that need proven reliability, fine-grained access control, and plugin extensibility. Not a Google Photos replacement.
 
-[Read our full guide: How to Self-Host Piwigo](/apps/piwigo)
+[Read our full guide: How to Self-Host Piwigo](/apps/piwigo/)
 
 ## Full Comparison Table
 
@@ -238,21 +238,21 @@ Immich wins because it is the only self-hosted app that genuinely competes with 
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [How to Self-Host Lychee](/apps/lychee)
-- [How to Self-Host Photoview](/apps/photoview)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [Immich vs Google Photos](/compare/immich-vs-google-photos)
-- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo)
-- [Self-Hosted Alternatives to Google Photos](/replace/google-photos)
-- [Self-Hosted Alternatives to iCloud Photos](/replace/icloud-photos)
-- [Self-Hosted Alternatives to Amazon Photos](/replace/amazon-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [How to Self-Host Photoview](/apps/photoview/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [Immich vs Google Photos](/compare/immich-vs-google-photos/)
+- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo/)
+- [Self-Hosted Alternatives to Google Photos](/replace/google-photos/)
+- [Self-Hosted Alternatives to iCloud Photos](/replace/icloud-photos/)
+- [Self-Hosted Alternatives to Amazon Photos](/replace/amazon-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

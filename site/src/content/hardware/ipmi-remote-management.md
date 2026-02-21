@@ -237,9 +237,9 @@ The BMC typically draws 3–5W. On a 100W server, that's negligible. On an idle 
 
 ## Related
 
-- [Used Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Used Enterprise Servers for Homelab](/hardware/used-enterprise-servers)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Home Server Rack Setup](/hardware/home-server-rack)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Used Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Used Enterprise Servers for Homelab](/hardware/used-enterprise-servers/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Home Server Rack Setup](/hardware/home-server-rack/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

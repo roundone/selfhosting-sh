@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Verdict
 
-**A Raspberry Pi 5 (8 GB) is a capable entry-level home server for $80.** It runs Pi-hole, Home Assistant, WireGuard, and a handful of lightweight Docker containers without issues. But it struggles with storage-heavy, compute-heavy, or multi-container workloads — and by the time you add a case, power supply, SSD, and cooling, you're spending $130-150, which puts you in [Intel N100 mini PC](/hardware/best-mini-pc) territory. The N100 is faster, more capable, and uses similar power.
+**A Raspberry Pi 5 (8 GB) is a capable entry-level home server for $80.** It runs Pi-hole, Home Assistant, WireGuard, and a handful of lightweight Docker containers without issues. But it struggles with storage-heavy, compute-heavy, or multi-container workloads — and by the time you add a case, power supply, SSD, and cooling, you're spending $130-150, which puts you in [Intel N100 mini PC](/hardware/best-mini-pc/) territory. The N100 is faster, more capable, and uses similar power.
 
 **Get a Raspberry Pi if** you already own one, you want to learn Linux on ARM, or you need a dedicated single-purpose server (Pi-hole, Home Assistant). **Get a mini PC instead if** you're starting from scratch and want the most capable self-hosting platform for the money.
 
@@ -56,7 +56,7 @@ affiliateDisclosure: true
 | UPS HAT | Battery backup for clean shutdowns during power outages | ~$25-40 |
 | USB-to-SATA adapter | Attach a 2.5" SSD or HDD for more storage | ~$10 |
 
-**Total cost for a ready-to-run setup: $120-150.** At this price, seriously consider an [Intel N100 mini PC](/hardware/best-mini-pc) at $150-160, which includes RAM, SSD, case, and PSU in one box with significantly more performance.
+**Total cost for a ready-to-run setup: $120-150.** At this price, seriously consider an [Intel N100 mini PC](/hardware/best-mini-pc/) at $150-160, which includes RAM, SSD, case, and PSU in one box with significantly more performance.
 
 ## Initial Setup
 
@@ -142,31 +142,31 @@ static domain_name_servers=192.168.1.1
 
 These services run comfortably on a Pi 5 with 8 GB RAM:
 
-- **[Pi-hole](/apps/pi-hole)** — DNS ad blocker. The Pi's original killer app. Uses ~50 MB RAM.
-- **[AdGuard Home](/apps/adguard-home)** — Modern Pi-hole alternative. ~80 MB RAM.
-- **[Home Assistant](/apps/home-assistant)** — Home automation hub. ~300 MB RAM. Zigbee/Z-Wave via USB.
-- **[WireGuard](/apps/wireguard)** — VPN server. Almost zero overhead.
-- **[Vaultwarden](/apps/vaultwarden)** — Bitwarden-compatible password manager. ~30 MB RAM.
-- **[Uptime Kuma](/apps/uptime-kuma)** — Monitoring dashboard. ~80 MB RAM.
-- **[Syncthing](/apps/syncthing)** — File sync. ~200 MB RAM.
-- **[FreshRSS](/apps/freshrss)** — RSS reader. ~100 MB RAM.
+- **[Pi-hole](/apps/pi-hole/)** — DNS ad blocker. The Pi's original killer app. Uses ~50 MB RAM.
+- **[AdGuard Home](/apps/adguard-home/)** — Modern Pi-hole alternative. ~80 MB RAM.
+- **[Home Assistant](/apps/home-assistant/)** — Home automation hub. ~300 MB RAM. Zigbee/Z-Wave via USB.
+- **[WireGuard](/apps/wireguard/)** — VPN server. Almost zero overhead.
+- **[Vaultwarden](/apps/vaultwarden/)** — Bitwarden-compatible password manager. ~30 MB RAM.
+- **[Uptime Kuma](/apps/uptime-kuma/)** — Monitoring dashboard. ~80 MB RAM.
+- **[Syncthing](/apps/syncthing/)** — File sync. ~200 MB RAM.
+- **[FreshRSS](/apps/freshrss/)** — RSS reader. ~100 MB RAM.
 
 ### Runs Adequately (moderate resource use)
 
 These work but may feel slower than on an x86 mini PC:
 
-- **[Nextcloud](/apps/nextcloud)** — File sync and collaboration. Works, but initial file scans and heavy PHP operations are noticeably slow. Use Redis and APCu caching.
-- **[BookStack](/apps/bookstack)** — Wiki. PHP-based, similar performance profile to Nextcloud.
-- **[Gitea](/apps/gitea)** or **Forgejo** — Git hosting. Fine for personal repos, slow for large repositories.
-- **[Paperless-ngx](/apps/paperless-ngx)** — Document management. OCR processing is slow on ARM but works.
+- **[Nextcloud](/apps/nextcloud/)** — File sync and collaboration. Works, but initial file scans and heavy PHP operations are noticeably slow. Use Redis and APCu caching.
+- **[BookStack](/apps/bookstack/)** — Wiki. PHP-based, similar performance profile to Nextcloud.
+- **[Gitea](/apps/gitea/)** or **Forgejo** — Git hosting. Fine for personal repos, slow for large repositories.
+- **[Paperless-ngx](/apps/paperless-ngx/)** — Document management. OCR processing is slow on ARM but works.
 
 ### Not Recommended
 
-- **[Plex](/apps/plex)** — No hardware transcoding on ARM. Direct play only. If clients can't direct play your media format, it will buffer.
-- **[Jellyfin](/apps/jellyfin)** — Same transcoding limitation. Direct play works fine.
-- **[Immich](/apps/immich)** — ML-based photo management. Face recognition and object detection will be painfully slow on a Pi's CPU.
-- **[GitLab](/apps/gitlab)** — Requires 4+ GB RAM just for itself. Will consume the entire Pi.
-- **[Matrix/Element](/apps/matrix)** — Resource-heavy. Synapse (the Matrix server) needs significant RAM and CPU for federation.
+- **[Plex](/apps/plex/)** — No hardware transcoding on ARM. Direct play only. If clients can't direct play your media format, it will buffer.
+- **[Jellyfin](/apps/jellyfin/)** — Same transcoding limitation. Direct play works fine.
+- **[Immich](/apps/immich/)** — ML-based photo management. Face recognition and object detection will be painfully slow on a Pi's CPU.
+- **[GitLab](/apps/gitlab/)** — Requires 4+ GB RAM just for itself. Will consume the entire Pi.
+- **[Matrix/Element](/apps/matrix/)** — Resource-heavy. Synapse (the Matrix server) needs significant RAM and CPU for federation.
 
 ## ARM Compatibility
 
@@ -228,7 +228,7 @@ The Pi saves ~$3/year versus an N100 mini PC in electricity. Over 5 years, that'
 
 The Pi's VideoCore GPU cannot be used for Plex or Jellyfin hardware transcoding. If a client requests a transcode, the CPU handles it — and 4 ARM cores at 2.4 GHz cannot keep up with even one 1080p software transcode smoothly. **Direct play only.**
 
-If you need Plex/Jellyfin transcoding, get an [Intel N100 mini PC](/hardware/intel-n100-mini-pc) with Quick Sync.
+If you need Plex/Jellyfin transcoding, get an [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) with Quick Sync.
 
 ### Limited Storage Expansion
 
@@ -260,7 +260,7 @@ The standard Pi 5 maxes out at 8 GB. The 16 GB model helps, but you can't upgrad
 | GPIO | Yes (40-pin) | No |
 | Best for | Single-purpose, GPIO projects, learning | General self-hosting |
 
-For the full comparison, see [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc).
+For the full comparison, see [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/).
 
 ## Recommended Setups by Use Case
 
@@ -291,7 +291,7 @@ Home Assistant on a Pi is well-supported by the HA team. The "Home Assistant Gre
 - Quality case (Argon ONE V3)
 - UPS HAT (optional but recommended for databases)
 
-At this budget, compare seriously with an [Intel N100 mini PC](/hardware/best-mini-pc). The mini PC gives you more for similar money.
+At this budget, compare seriously with an [Intel N100 mini PC](/hardware/best-mini-pc/). The mini PC gives you more for similar money.
 
 ## FAQ
 
@@ -309,7 +309,7 @@ Pi 5. It's 2-3x faster, supports NVMe storage, and costs only $25 more. The Pi 4
 
 ### Can I use a Raspberry Pi as a NAS?
 
-Technically yes (attach USB drives, run OpenMediaVault), but it's a poor NAS. No SATA, limited USB bandwidth, no drive redundancy. Get a [proper NAS](/hardware/best-nas) or a [DIY NAS build](/hardware/diy-nas-build) instead.
+Technically yes (attach USB drives, run OpenMediaVault), but it's a poor NAS. No SATA, limited USB bandwidth, no drive redundancy. Get a [proper NAS](/hardware/best-nas/) or a [DIY NAS build](/hardware/diy-nas-build/) instead.
 
 ### How long will a Raspberry Pi last running 24/7?
 
@@ -317,10 +317,10 @@ The board itself lasts indefinitely with adequate cooling. The weak point is the
 
 ## Related
 
-- [Raspberry Pi vs Mini PC for Self-Hosting](/hardware/raspberry-pi-vs-mini-pc)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Raspberry Pi Docker Setup Guide](/hardware/raspberry-pi-docker)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Raspberry Pi vs Mini PC for Self-Hosting](/hardware/raspberry-pi-vs-mini-pc/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Raspberry Pi Docker Setup Guide](/hardware/raspberry-pi-docker/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

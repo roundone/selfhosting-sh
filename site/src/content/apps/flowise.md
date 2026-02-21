@@ -26,10 +26,10 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB+ RAM
 - 5 GB free disk space
-- An LLM backend ([Ollama](/apps/ollama), OpenAI API key, or similar)
+- An LLM backend ([Ollama](/apps/ollama/), OpenAI API key, or similar)
 
 ## Docker Compose Configuration
 
@@ -186,7 +186,7 @@ curl -X POST http://localhost:3000/api/v1/prediction/your-chatflow-id \
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 3000. WebSocket support is required for the chat interface. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 3000. WebSocket support is required for the chat interface. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -197,7 +197,7 @@ docker run --rm -v flowise_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/flowise-backup.tar.gz /data
 ```
 
-This contains chatflows, credentials, API keys, and the SQLite database (if using SQLite). See [Backup Strategy](/foundations/backup-3-2-1-rule).
+This contains chatflows, credentials, API keys, and the SQLite database (if using SQLite). See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -226,14 +226,14 @@ This contains chatflows, credentials, API keys, and the SQLite database (if usin
 
 Flowise is the easiest way to build AI chatbots and RAG pipelines without writing code. The drag-and-drop interface makes it accessible to non-developers while remaining powerful enough for complex workflows. The embeddable chat widget is a killer feature for deploying AI chatbots to websites.
 
-**Choose Flowise** for no-code chatbot building. **Choose [Langflow](/apps/langflow)** if you need Python custom components and more advanced multi-agent orchestration.
+**Choose Flowise** for no-code chatbot building. **Choose [Langflow](/apps/langflow/)** if you need Python custom components and more advanced multi-agent orchestration.
 
 ## Related
 
-- [How to Self-Host Langflow](/apps/langflow)
-- [Flowise vs Langflow](/compare/flowise-vs-langflow)
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Langflow](/apps/langflow/)
+- [Flowise vs Langflow](/compare/flowise-vs-langflow/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

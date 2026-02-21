@@ -92,14 +92,14 @@ Don't choose between these — they're not competitors. BookStack is a wiki. Jop
 
 If you're building a team knowledge base, BookStack is the answer. If you want encrypted, synced personal notes across your devices, set up Joplin Server. Many self-hosters run both for their respective purposes.
 
-If you genuinely need one tool for both team docs and personal notes, look at [Outline](/apps/outline) or [Wiki.js](/apps/wiki-js) instead.
+If you genuinely need one tool for both team docs and personal notes, look at [Outline](/apps/outline/) or [Wiki.js](/apps/wiki-js/) instead.
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Evernote](/replace/evernote)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Evernote](/replace/evernote/)

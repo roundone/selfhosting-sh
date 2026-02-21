@@ -162,10 +162,10 @@ n8n by a significant margin. It runs comfortably on a $5-10/month VPS. Windmill'
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Windmill](/apps/windmill)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Windmill](/apps/windmill/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

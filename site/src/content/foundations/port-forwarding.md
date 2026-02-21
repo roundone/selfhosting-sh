@@ -19,14 +19,14 @@ Port forwarding tells your router to send incoming internet traffic on a specifi
 
 When someone visits `yourdomain.com:443` from the internet, the request hits your router's public IP. Port forwarding routes that request to your server at `192.168.1.50:443`.
 
-**Important:** Port forwarding exposes your server to the internet. Only do this with proper security in place — [firewall](/foundations/firewall-ufw), [fail2ban](/foundations/fail2ban), HTTPS via [reverse proxy](/foundations/reverse-proxy-explained), and strong passwords.
+**Important:** Port forwarding exposes your server to the internet. Only do this with proper security in place — [firewall](/foundations/firewall-ufw/), [fail2ban](/foundations/fail2ban/), HTTPS via [reverse proxy](/foundations/reverse-proxy-explained/), and strong passwords.
 
 ## Prerequisites
 
-- A self-hosted server with a static local IP ([Static IP Guide](/foundations/dhcp-static-ip))
-- A reverse proxy configured ([Reverse Proxy Explained](/foundations/reverse-proxy-explained))
+- A self-hosted server with a static local IP ([Static IP Guide](/foundations/dhcp-static-ip/))
+- A reverse proxy configured ([Reverse Proxy Explained](/foundations/reverse-proxy-explained/))
 - Access to your router's admin panel
-- Understanding of [network ports](/foundations/ports-explained)
+- Understanding of [network ports](/foundations/ports-explained/)
 
 ## How Port Forwarding Works
 
@@ -118,7 +118,7 @@ Name: cloud (or @ for root domain)
 Value: 203.0.113.50 (your public IP)
 ```
 
-If your IP changes (most residential ISPs), set up [Dynamic DNS](/foundations/dynamic-dns).
+If your IP changes (most residential ISPs), set up [Dynamic DNS](/foundations/dynamic-dns/).
 
 ## Safer Alternatives to Port Forwarding
 
@@ -200,9 +200,9 @@ Run your own VPN server. Requires port 51820 forwarded, but all other services s
 If you do port forward, ensure these are in place:
 
 - [ ] Reverse proxy with HTTPS (Let's Encrypt) on ports 80/443
-- [ ] [Firewall](/foundations/firewall-ufw) allowing only necessary ports
-- [ ] [Fail2ban](/foundations/fail2ban) blocking brute-force attempts
-- [ ] [SSH key authentication](/foundations/ssh-setup) (disable password auth)
+- [ ] [Firewall](/foundations/firewall-ufw/) allowing only necessary ports
+- [ ] [Fail2ban](/foundations/fail2ban/) blocking brute-force attempts
+- [ ] [SSH key authentication](/foundations/ssh-setup/) (disable password auth)
 - [ ] Strong passwords on all services
 - [ ] Regular updates on OS and Docker containers
 - [ ] No database ports (3306, 5432, 6379) exposed to the internet
@@ -222,7 +222,7 @@ Forwarding port 8096 directly to Jellyfin means no HTTPS and the URL has an ugly
 
 Port 22 gets hammered by bots. If you must expose SSH:
 - Use key-based authentication only
-- Run [fail2ban](/foundations/fail2ban)
+- Run [fail2ban](/foundations/fail2ban/)
 - Consider changing to a non-standard port (reduces noise, not a security measure)
 - Better: use Tailscale for SSH access and don't forward port 22 at all
 
@@ -264,16 +264,16 @@ There's no practical limit. But for self-hosting, you should only need 2–3 (80
 
 ## Next Steps
 
-- [Dynamic DNS](/foundations/dynamic-dns) — handle changing public IPs
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained) — route traffic to services
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — secure your server
+- [Dynamic DNS](/foundations/dynamic-dns/) — handle changing public IPs
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/) — route traffic to services
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — secure your server
 
 ## Related
 
-- [Network Ports Explained](/foundations/ports-explained)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [DNS Explained](/foundations/dns-explained)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Fail2ban Setup](/foundations/fail2ban)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Network Ports Explained](/foundations/ports-explained/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Fail2ban Setup](/foundations/fail2ban/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

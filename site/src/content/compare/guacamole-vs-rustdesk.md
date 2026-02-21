@@ -132,9 +132,9 @@ Yes — Guacamole connects via RDP, which is built into Windows Pro/Enterprise e
 
 ## Related
 
-- [How to Self-Host Apache Guacamole](/apps/guacamole)
-- [How to Self-Host RustDesk](/apps/rustdesk)
-- [How to Self-Host MeshCentral](/apps/meshcentral)
-- [RustDesk vs MeshCentral](/compare/rustdesk-vs-meshcentral)
-- [Self-Hosted TeamViewer Alternatives](/replace/teamviewer)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
+- [How to Self-Host Apache Guacamole](/apps/guacamole/)
+- [How to Self-Host RustDesk](/apps/rustdesk/)
+- [How to Self-Host MeshCentral](/apps/meshcentral/)
+- [RustDesk vs MeshCentral](/compare/rustdesk-vs-meshcentral/)
+- [Self-Hosted TeamViewer Alternatives](/replace/teamviewer/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)

@@ -24,8 +24,8 @@ This guide covers YAML from the ground up: syntax rules, data types, Docker Comp
 ## Prerequisites
 
 - Basic comfort with the Linux command line
-- A text editor — see [Linux Text Editors](/foundations/linux-text-editors)
-- Familiarity with [Docker Compose Basics](/foundations/docker-compose-basics) is helpful but not required
+- A text editor — see [Linux Text Editors](/foundations/linux-text-editors/)
+- Familiarity with [Docker Compose Basics](/foundations/docker-compose-basics/) is helpful but not required
 
 ## YAML Syntax Rules
 
@@ -306,7 +306,7 @@ environment:
 
 The mapping syntax is cleaner. The list syntax matches the format of `.env` files, making it easier to copy values back and forth. Pick one and be consistent within a project.
 
-For managing environment variables at scale, see [Docker Environment Variables](/foundations/docker-environment-variables).
+For managing environment variables at scale, see [Docker Environment Variables](/foundations/docker-environment-variables/).
 
 ### Ports as Quoted Strings
 
@@ -376,7 +376,7 @@ secrets:
     file: ./secrets/api_key.txt
 ```
 
-The `secrets` key appears twice — once inside a service (as a list of secret names) and once at the top level (defining where each secret lives). Both are valid YAML; Docker Compose gives them different meanings based on context. For a full walkthrough, see [Docker Compose Secrets](/foundations/docker-compose-secrets).
+The `secrets` key appears twice — once inside a service (as a list of secret names) and once at the top level (defining where each secret lives). Both are valid YAML; Docker Compose gives them different meanings based on context. For a full walkthrough, see [Docker Compose Secrets](/foundations/docker-compose-secrets/).
 
 ### Profiles
 
@@ -395,7 +395,7 @@ services:
     command: sleep infinity
 ```
 
-Only services without a `profiles` key (or with an active profile) start when you run `docker compose up`. See [Docker Compose Profiles](/foundations/docker-compose-profiles) for the full guide.
+Only services without a `profiles` key (or with an active profile) start when you run `docker compose up`. See [Docker Compose Profiles](/foundations/docker-compose-profiles/) for the full guide.
 
 ## YAML Anchors and Aliases
 
@@ -658,20 +658,20 @@ No error is raised. `DB_HOST` is `mysql`. Use `yamllint` to catch this — it wa
 
 YAML is a tool, not a destination. Now that you understand the syntax, put it to work:
 
-- **Build your first Compose stack** — [Docker Compose Basics](/foundations/docker-compose-basics) walks through deploying a real application
-- **Manage configuration cleanly** with environment variables — [Docker Environment Variables](/foundations/docker-environment-variables)
-- **Use profiles** to define optional services in a single Compose file — [Docker Compose Profiles](/foundations/docker-compose-profiles)
-- **Secure sensitive values** with the secrets feature — [Docker Compose Secrets](/foundations/docker-compose-secrets)
+- **Build your first Compose stack** — [Docker Compose Basics](/foundations/docker-compose-basics/) walks through deploying a real application
+- **Manage configuration cleanly** with environment variables — [Docker Environment Variables](/foundations/docker-environment-variables/)
+- **Use profiles** to define optional services in a single Compose file — [Docker Compose Profiles](/foundations/docker-compose-profiles/)
+- **Secure sensitive values** with the secrets feature — [Docker Compose Secrets](/foundations/docker-compose-secrets/)
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Docker Compose Profiles](/foundations/docker-compose-profiles)
-- [Docker Compose Secrets](/foundations/docker-compose-secrets)
-- [Linux Text Editors](/foundations/linux-text-editors)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Docker Compose Profiles](/foundations/docker-compose-profiles/)
+- [Docker Compose Secrets](/foundations/docker-compose-secrets/)
+- [Linux Text Editors](/foundations/linux-text-editors/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
 
 ## FAQ
 

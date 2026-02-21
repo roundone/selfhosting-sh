@@ -144,7 +144,7 @@ Zoraxy's documentation is improving but doesn't match Traefik's depth. For compl
 
 If you want a visual management interface and don't mind configuring routes manually through a web UI, Zoraxy offers a simpler experience with bonus features like GeoIP blocking and ZeroTier. It's particularly good for mixed environments (Docker + bare metal + VMs).
 
-For beginners who want the easiest GUI experience, [Nginx Proxy Manager](/apps/nginx-proxy-manager) remains the most established option.
+For beginners who want the easiest GUI experience, [Nginx Proxy Manager](/apps/nginx-proxy-manager/) remains the most established option.
 
 ## Frequently Asked Questions
 
@@ -162,10 +162,10 @@ For self-hosting, yes. For high-traffic production sites, Traefik or Nginx are m
 
 ## Related
 
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Zoraxy vs Caddy](/compare/zoraxy-vs-caddy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Zoraxy vs Caddy](/compare/zoraxy-vs-caddy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

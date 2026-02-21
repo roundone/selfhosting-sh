@@ -35,7 +35,7 @@ Your home server runs 24/7/365. Every watt at idle gets multiplied by 8,760 hour
 
 That 200W used rack server might be "free" from eBay, but it'll cost you over $1,000 in electricity in five years. A $160 mini PC running at 8W will cost $44 in electricity over the same period.
 
-For detailed electricity calculations, see [Electricity Cost Calculator](/hardware/electricity-cost-calculator).
+For detailed electricity calculations, see [Electricity Cost Calculator](/hardware/electricity-cost-calculator/).
 
 ## Best Low Power Hardware
 
@@ -52,7 +52,7 @@ These all use Intel's N100/N150 Alder Lake-N platform: 4 cores, 6W TDP, passive 
 
 The MeLE Quieter4C is the lowest-power option (fanless), but it only has 8 GB RAM and limited I/O. The Beelink EQ14 is the better all-rounder.
 
-For detailed reviews, see [Best Mini PCs](/hardware/best-mini-pc) and [Intel N100 Guide](/hardware/intel-n100-mini-pc).
+For detailed reviews, see [Best Mini PCs](/hardware/best-mini-pc/) and [Intel N100 Guide](/hardware/intel-n100-mini-pc/).
 
 ### Under 15W: Fanless Mini PCs
 
@@ -64,7 +64,7 @@ Fanless designs eliminate the fan — zero noise, zero moving parts, slightly hi
 | **ASUS PN42** | Intel N100 | 5–7W | ~$180 |
 | **Protectli VP2420** | Intel J6412 | 6–8W | ~$300 |
 
-The Protectli is primarily a firewall appliance (4x 2.5GbE ports) but works as a general-purpose server. Overkill for most self-hosters. See [Fanless Mini PC Guide](/hardware/fanless-mini-pc) for more options.
+The Protectli is primarily a firewall appliance (4x 2.5GbE ports) but works as a general-purpose server. Overkill for most self-hosters. See [Fanless Mini PC Guide](/hardware/fanless-mini-pc/) for more options.
 
 ### Under 15W: Single-Board Computers
 
@@ -76,7 +76,7 @@ The Protectli is primarily a firewall appliance (4x 2.5GbE ports) but works as a
 
 SBCs draw the least power but have significant limitations: limited RAM (4–8 GB), slow storage (microSD or USB), and ARM compatibility issues with some Docker images. The Raspberry Pi 5 is viable for lightweight services (Pi-hole, Home Assistant, Vaultwarden) but struggles with anything storage-intensive.
 
-See [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server) and [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc).
+See [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server/) and [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/).
 
 ### Under 25W: Used Office PCs
 
@@ -90,7 +90,7 @@ Used Dell OptiPlex and Lenovo ThinkCentre "Micro" and "Tiny" form factors use la
 
 Higher power than mini PCs, but much more upgradeable — up to 64 GB RAM, NVMe storage, and enterprise reliability. At 15W idle, they still cost under $16/year in electricity.
 
-See [Dell OptiPlex Guide](/hardware/used-dell-optiplex) and [Lenovo ThinkCentre Guide](/hardware/used-lenovo-thinkcentre).
+See [Dell OptiPlex Guide](/hardware/used-dell-optiplex/) and [Lenovo ThinkCentre Guide](/hardware/used-lenovo-thinkcentre/).
 
 ## Power Optimization Tips
 
@@ -179,7 +179,7 @@ sudo apt install linux-tools-common linux-tools-$(uname -r)
 sudo turbostat --show PkgWatt --interval 5
 ```
 
-For more on measuring and calculating costs, see [Mini PC Power Consumption](/hardware/mini-pc-power-consumption) and [Power Consumption Guide](/hardware/power-consumption-guide).
+For more on measuring and calculating costs, see [Mini PC Power Consumption](/hardware/mini-pc-power-consumption/) and [Power Consumption Guide](/hardware/power-consumption-guide/).
 
 ## What Can You Run at Under 10W?
 
@@ -216,13 +216,13 @@ A 10W server uses 240Wh/day. A single 100W solar panel generates 300–500Wh/day
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Fanless Mini PC Guide](/hardware/fanless-mini-pc)
-- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
-- [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs)
-- [Electricity Cost Calculator](/hardware/electricity-cost-calculator)
-- [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Best UPS for Home Server](/hardware/best-ups-home-server)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Fanless Mini PC Guide](/hardware/fanless-mini-pc/)
+- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs/)
+- [Electricity Cost Calculator](/hardware/electricity-cost-calculator/)
+- [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Best UPS for Home Server](/hardware/best-ups-home-server/)

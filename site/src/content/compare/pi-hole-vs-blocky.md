@@ -135,11 +135,11 @@ Not in a built-in web UI. Blocky can log queries to the console, CSV files, or a
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

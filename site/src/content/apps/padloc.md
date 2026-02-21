@@ -26,11 +26,11 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - 500 MB of free disk space
 - A domain name with HTTPS configured
-- A reverse proxy with SSL ([guide](/foundations/reverse-proxy-explained))
+- A reverse proxy with SSL ([guide](/foundations/reverse-proxy-explained/))
 - A working SMTP server for email notifications (required for account verification)
 
 ## Docker Compose Configuration
@@ -161,7 +161,7 @@ padloc-api.example.com {
 
 **Nginx Proxy Manager:** Create two proxy hosts — one for each subdomain pointing to the respective ports.
 
-See our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+See our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -174,7 +174,7 @@ docker run --rm -v padloc_padloc_data:/data -v $(pwd):/backup alpine \
 docker compose start padloc
 ```
 
-See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -204,7 +204,7 @@ docker compose logs padloc | grep -i email
 
 ## Verdict
 
-Padloc has the best-looking interface of any self-hosted password manager. The apps are clean and modern, the UX is thoughtful, and the multi-device sync works well. However, it has a significantly smaller community than [Vaultwarden](/apps/vaultwarden), limited browser auto-fill capabilities, and the two-container setup (API + PWA) adds complexity. For most users, Vaultwarden's Bitwarden client ecosystem offers better auto-fill, more mature mobile apps, and a larger community. Choose Padloc if design quality matters to you and you don't need deep browser integration.
+Padloc has the best-looking interface of any self-hosted password manager. The apps are clean and modern, the UX is thoughtful, and the multi-device sync works well. However, it has a significantly smaller community than [Vaultwarden](/apps/vaultwarden/), limited browser auto-fill capabilities, and the two-container setup (API + PWA) adds complexity. For most users, Vaultwarden's Bitwarden client ecosystem offers better auto-fill, more mature mobile apps, and a larger community. Choose Padloc if design quality matters to you and you don't need deep browser integration.
 
 ## FAQ
 
@@ -222,12 +222,12 @@ Padloc supports CSV import. Export from your current manager (LastPass, 1Passwor
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

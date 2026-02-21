@@ -105,7 +105,7 @@ Memos is the better tool for capturing information quickly. Trilium is the bette
 
 ### Can Memos handle long-form notes?
 
-Technically yes — there's no length limit. But the UI is optimized for short-form entries. Long documents feel awkward in the feed layout. For long-form writing, use Trilium, [BookStack](/apps/bookstack), or [Outline](/apps/outline).
+Technically yes — there's no length limit. But the UI is optimized for short-form entries. Long documents feel awkward in the feed layout. For long-form writing, use Trilium, [BookStack](/apps/bookstack/), or [Outline](/apps/outline/).
 
 ### Can Trilium do quick capture from mobile?
 
@@ -117,10 +117,10 @@ Memos supports multiple users, each with their own memo feed. Trilium supports s
 
 ## Related
 
-- [How to Self-Host Memos](/apps/memos)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [BookStack vs Trilium](/compare/bookstack-vs-trilium)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Evernote Alternatives](/replace/evernote)
-- [Self-Hosted Notion Alternatives](/replace/notion)
+- [How to Self-Host Memos](/apps/memos/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [BookStack vs Trilium](/compare/bookstack-vs-trilium/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Evernote Alternatives](/replace/evernote/)
+- [Self-Hosted Notion Alternatives](/replace/notion/)

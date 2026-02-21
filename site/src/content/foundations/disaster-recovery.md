@@ -21,9 +21,9 @@ The goal: if your server dies tonight, how fast can you be back online? With a s
 
 ## Prerequisites
 
-- Working backups in place ([3-2-1 Backup Rule](/foundations/backup-3-2-1-rule))
-- A Linux server ([Getting Started](/foundations/getting-started))
-- Docker Compose knowledge ([Docker Compose Basics](/foundations/docker-compose-basics))
+- Working backups in place ([3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/))
+- A Linux server ([Getting Started](/foundations/getting-started/))
+- Docker Compose knowledge ([Docker Compose Basics](/foundations/docker-compose-basics/))
 
 ## Disaster Scenarios
 
@@ -342,7 +342,7 @@ Copying PostgreSQL's data directory while the database is running produces incon
 
 ### 4. Keeping All Backups on the Same Server
 
-If the server is compromised or the disk fails, your backups are gone too. Follow the [3-2-1 rule](/foundations/backup-3-2-1-rule): 3 copies, 2 media types, 1 offsite.
+If the server is compromised or the disk fails, your backups are gone too. Follow the [3-2-1 rule](/foundations/backup-3-2-1-rule/): 3 copies, 2 media types, 1 offsite.
 
 ### 5. No Priority Order for Service Restoration
 
@@ -372,15 +372,15 @@ Keep daily backups for 7 days, weekly for 4 weeks, monthly for 12 months. Restic
 
 ## Next Steps
 
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule) — implement proper backup strategy
-- [Docker Compose Basics](/foundations/docker-compose-basics) — understand service configuration
-- [Linux Cron Jobs](/foundations/linux-cron-jobs) — automate backup schedules
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/) — implement proper backup strategy
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — understand service configuration
+- [Linux Cron Jobs](/foundations/linux-cron-jobs/) — automate backup schedules
 
 ## Related
 
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Linux Cron Jobs](/foundations/linux-cron-jobs)
-- [Systemd Services](/foundations/linux-systemd)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Linux Cron Jobs](/foundations/linux-cron-jobs/)
+- [Systemd Services](/foundations/linux-systemd/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

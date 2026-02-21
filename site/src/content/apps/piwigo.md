@@ -23,7 +23,7 @@ Piwigo is a gallery and sharing tool, not a Google Photos replacement. It doesn'
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB RAM minimum
 - Disk space for your photo library
 - A domain name (optional, for remote access)
@@ -166,7 +166,7 @@ Forward traffic to port 8085 (or whatever port you mapped).
 - **Forward Port:** `8085`
 - Enable SSL with Let's Encrypt
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -184,7 +184,7 @@ docker compose exec piwigo_db mysqldump -u piwigo -p piwigo > piwigo-db-backup-$
 tar czf piwigo-backup-$(date +%Y%m%d).tar.gz /opt/piwigo/config /opt/piwigo/gallery
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -218,7 +218,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup
 
 Piwigo is the most mature and battle-tested photo gallery in the self-hosted space. With 23 years of development and a rich plugin ecosystem, it handles large collections (500,000+ photos) reliably. It's the right choice for organizations, photographers, or anyone who needs granular permissions, extensive customization, and proven stability.
 
-For personal photo management with AI features, use [Immich](/apps/immich). For a modern, minimal gallery for sharing, use [Lychee](/apps/lychee). For a rock-solid gallery with maximum customizability and a proven track record, use Piwigo.
+For personal photo management with AI features, use [Immich](/apps/immich/). For a modern, minimal gallery for sharing, use [Lychee](/apps/lychee/). For a rock-solid gallery with maximum customizability and a proven track record, use Piwigo.
 
 ## FAQ
 
@@ -228,7 +228,7 @@ Piwigo is specifically designed for large collections. Users report smooth opera
 
 ### Does Piwigo support video?
 
-Not natively. The Video.js plugin adds video playback support, but Piwigo is primarily a photo gallery. For video, use [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex).
+Not natively. The Video.js plugin adds video playback support, but Piwigo is primarily a photo gallery. For video, use [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/).
 
 ### Can I import from Google Photos or Flickr?
 
@@ -240,11 +240,11 @@ Piwigo has official iOS and Android apps for browsing and uploading. The apps su
 
 ## Related
 
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo)
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host Lychee](/apps/lychee)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo/)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

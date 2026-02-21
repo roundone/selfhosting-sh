@@ -29,7 +29,7 @@ Tailscale is the better choice for most self-hosters. It uses WireGuard under th
 
 WireGuard is a VPN **protocol** — a kernel module with roughly 4,000 lines of code that creates encrypted tunnels between two endpoints. It is fast, simple, and secure, but it requires manual configuration: generating key pairs, editing config files, managing peer lists, and setting up port forwarding on your router.
 
-Tailscale is a VPN **product** built on top of WireGuard. It adds a coordination layer that handles device discovery, key exchange, NAT traversal, and access control automatically. Tailscale clients connect to a coordination server (run by Tailscale Inc. or [self-hosted via Headscale](/apps/headscale)) to exchange public keys and network state, then establish direct WireGuard tunnels between devices.
+Tailscale is a VPN **product** built on top of WireGuard. It adds a coordination layer that handles device discovery, key exchange, NAT traversal, and access control automatically. Tailscale clients connect to a coordination server (run by Tailscale Inc. or [self-hosted via Headscale](/apps/headscale/)) to exchange public keys and network state, then establish direct WireGuard tunnels between devices.
 
 The key distinction: WireGuard gives you the engine. Tailscale gives you the car.
 
@@ -49,15 +49,15 @@ The key distinction: WireGuard gives you the engine. Tailscale gives you the car
 | Subnet routing | Supported (manual) | Supported (automatic) |
 | Performance | Kernel-level, maximum throughput | Near-identical (also uses WireGuard) |
 | Resource usage | ~5 MB RAM | ~30-50 MB RAM |
-| Self-hosted control plane | N/A (no control plane) | [Headscale](/apps/headscale) |
+| Self-hosted control plane | N/A (no control plane) | [Headscale](/apps/headscale/) |
 | Cost | Free (open source, GPLv2) | Free (up to 100 devices), paid plans available |
 | Runs without internet | Yes | No (needs coordination server for key exchange) |
 
 ## Installation Complexity
 
-**WireGuard** requires generating key pairs for every device, writing config files on both server and client, setting up port forwarding on your router (UDP 51820), and configuring iptables rules for traffic routing. Adding a new client means editing the server config and restarting. For a visual UI, you can use [wg-easy](/apps/wg-easy) to manage clients through a web interface.
+**WireGuard** requires generating key pairs for every device, writing config files on both server and client, setting up port forwarding on your router (UDP 51820), and configuring iptables rules for traffic routing. Adding a new client means editing the server config and restarting. For a visual UI, you can use [wg-easy](/apps/wg-easy/) to manage clients through a web interface.
 
-**Tailscale** installs as a single package, you authenticate via SSO, and the device joins your network. Adding a new device takes under a minute with no config file editing. Running Tailscale in Docker is straightforward — see our [Tailscale Docker guide](/apps/tailscale).
+**Tailscale** installs as a single package, you authenticate via SSO, and the device joins your network. Adding a new device takes under a minute with no config file editing. Running Tailscale in Docker is straightforward — see our [Tailscale Docker guide](/apps/tailscale/).
 
 Winner: **Tailscale**, by a wide margin. The setup difference is significant — WireGuard setup takes 15-30 minutes per device; Tailscale takes 2 minutes.
 
@@ -97,7 +97,7 @@ In practice, you won't notice a performance difference unless you're saturating 
 - You're running on extremely constrained hardware (routers, embedded devices)
 - You want to learn VPN fundamentals hands-on
 - You need a site-to-site tunnel between two servers with static IPs
-- You want [wg-easy](/apps/wg-easy) for a simple client management UI
+- You want [wg-easy](/apps/wg-easy/) for a simple client management UI
 
 ### Choose Tailscale If...
 
@@ -115,7 +115,7 @@ In practice, you won't notice a performance difference unless you're saturating 
 
 Choose WireGuard if you specifically need a traditional VPN gateway, want zero external dependencies, or are running on hardware too constrained for Tailscale's userspace daemon.
 
-If you want the best of both worlds — Tailscale's ease of use with full control over the coordination server — check out [Headscale](/apps/headscale), a self-hosted Tailscale control plane.
+If you want the best of both worlds — Tailscale's ease of use with full control over the coordination server — check out [Headscale](/apps/headscale/), a self-hosted Tailscale control plane.
 
 ## FAQ
 
@@ -125,7 +125,7 @@ No. Tailscale's coordination server only handles key exchange and device discove
 
 ### Can I use Tailscale without trusting Tailscale's servers?
 
-Yes. [Headscale](/apps/headscale) is a self-hosted, open-source replacement for Tailscale's coordination server. All official Tailscale clients work with Headscale.
+Yes. [Headscale](/apps/headscale/) is a self-hosted, open-source replacement for Tailscale's coordination server. All official Tailscale clients work with Headscale.
 
 ### Is WireGuard faster than Tailscale?
 
@@ -141,12 +141,12 @@ OpenVPN is slower, more complex, and has a larger attack surface than both WireG
 
 ## Related
 
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [How to Self-Host Headscale](/apps/headscale)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [wg-easy vs WireGuard](/compare/wg-easy-vs-wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [wg-easy vs WireGuard](/compare/wg-easy-vs-wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

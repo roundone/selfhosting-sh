@@ -28,7 +28,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM
 - 1 GB of free disk space
 - A domain name (optional, for remote access)
@@ -198,7 +198,7 @@ Nginx Proxy Manager config:
 - **Forward Port:** 1880
 - **Websockets Support:** Enable (required for the editor)
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -215,7 +215,7 @@ Key files in the data volume:
 - `node_modules/` — installed community nodes
 - `package.json` — node dependency list
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -261,14 +261,14 @@ environment:
 
 ## Verdict
 
-Node-RED is the most flexible self-hosted automation tool. It's more powerful than [n8n](/apps/n8n) for IoT and hardware integration, but has a steeper learning curve. The visual flow editor is excellent once you learn it, and the 5,000+ community nodes cover almost any integration you can imagine. For pure API-to-API automation (Zapier-style), [n8n](/apps/n8n) is more approachable. For IoT, [Home Assistant](/apps/home-assistant) integration, or anything involving MQTT, serial devices, or custom protocols, Node-RED is the right tool.
+Node-RED is the most flexible self-hosted automation tool. It's more powerful than [n8n](/apps/n8n/) for IoT and hardware integration, but has a steeper learning curve. The visual flow editor is excellent once you learn it, and the 5,000+ community nodes cover almost any integration you can imagine. For pure API-to-API automation (Zapier-style), [n8n](/apps/n8n/) is more approachable. For IoT, [Home Assistant](/apps/home-assistant/) integration, or anything involving MQTT, serial devices, or custom protocols, Node-RED is the right tool.
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [Replace Zapier with Self-Hosted Tools](/replace/zapier)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [Replace Zapier with Self-Hosted Tools](/replace/zapier/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

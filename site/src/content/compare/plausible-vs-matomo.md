@@ -97,10 +97,10 @@ Choose Matomo if you're migrating from Google Analytics and need feature parity,
 
 ## Related
 
-- [How to Self-Host Plausible](/apps/plausible)
-- [How to Self-Host Matomo](/apps/matomo)
-- [How to Self-Host Umami](/apps/umami)
-- [Plausible vs Umami](/compare/plausible-vs-umami)
-- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
-- [Best Self-Hosted Analytics](/best/analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [How to Self-Host Umami](/apps/umami/)
+- [Plausible vs Umami](/compare/plausible-vs-umami/)
+- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics/)
+- [Best Self-Hosted Analytics](/best/analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

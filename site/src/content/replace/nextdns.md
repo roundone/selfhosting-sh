@@ -43,7 +43,7 @@ NextDNS is a solid cloud DNS service — ad blocking, analytics, per-device rule
 
 **Why it wins:** Most NextDNS features have direct equivalents in AdGuard Home — per-device rules, blocklist management, query analytics, encrypted DNS protocols.
 
-[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home)
+[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home/)
 
 ### Pi-hole — Best Community
 
@@ -51,7 +51,7 @@ NextDNS is a solid cloud DNS service — ad blocking, analytics, per-device rule
 
 **Best for:** Users who want the biggest support community and don't mind adding Unbound for encrypted DNS.
 
-[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole)
+[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole/)
 
 ### Blocky — Best Lightweight
 
@@ -59,7 +59,7 @@ NextDNS is a solid cloud DNS service — ad blocking, analytics, per-device rule
 
 **Best for:** Infrastructure-as-code setups, resource-constrained hardware, users who prefer config files over web UIs.
 
-[Read our full guide: How to Self-Host Blocky](/apps/blocky)
+[Read our full guide: How to Self-Host Blocky](/apps/blocky/)
 
 ### Technitium DNS — Best Full DNS Server
 
@@ -67,7 +67,7 @@ NextDNS is a solid cloud DNS service — ad blocking, analytics, per-device rule
 
 **Best for:** Users who want more than ad blocking — full DNS server capabilities with zones, DNSSEC, and clustering.
 
-[Read our full guide: How to Self-Host Technitium DNS](/apps/technitium)
+[Read our full guide: How to Self-Host Technitium DNS](/apps/technitium/)
 
 ## Migration Guide
 
@@ -116,7 +116,7 @@ NextDNS is a solid cloud DNS service — ad blocking, analytics, per-device rule
 - **Mobile profiles.** NextDNS provides iOS/Android configuration profiles for easy device setup. With self-hosted, you configure DNS manually on each device or use your router.
 - **Setup wizard.** NextDNS's onboarding is excellent. Self-hosted DNS has a steeper initial setup.
 
-**The remote access problem:** NextDNS works everywhere — home, office, coffee shop. A self-hosted DNS server only works on your local network unless you set up a VPN. Use [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard) to route DNS queries through your home network from anywhere.
+**The remote access problem:** NextDNS works everywhere — home, office, coffee shop. A self-hosted DNS server only works on your local network unless you set up a VPN. Use [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/) to route DNS queries through your home network from anywhere.
 
 ## FAQ
 
@@ -126,7 +126,7 @@ Yes. NextDNS uses standard blocklists that you can add to any self-hosted DNS se
 
 ### Can I use self-hosted DNS on my phone when I'm not home?
 
-Not directly. Self-hosted DNS only works on your local network. To use it remotely, set up a VPN like [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard) to route your DNS through your home network.
+Not directly. Self-hosted DNS only works on your local network. To use it remotely, set up a VPN like [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/) to route your DNS through your home network.
 
 ### How much maintenance does self-hosted DNS need?
 
@@ -138,13 +138,13 @@ Absolutely. All four options run on a Pi 4 or Pi 5. Pi-hole was designed for it.
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Technitium DNS](/apps/technitium)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Technitium DNS](/apps/technitium/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

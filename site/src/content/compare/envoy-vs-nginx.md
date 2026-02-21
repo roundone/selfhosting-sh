@@ -119,11 +119,11 @@ Winner: **Nginx** for community. Both are well-documented.
 
 ## Final Verdict
 
-**Nginx wins for self-hosting.** It does everything a self-hoster needs — reverse proxying, static files, caching, rate limiting, SSL — with the lowest resource usage and the largest community. If you need automatic HTTPS, pair it with Certbot or use [Caddy](/apps/caddy) instead.
+**Nginx wins for self-hosting.** It does everything a self-hoster needs — reverse proxying, static files, caching, rate limiting, SSL — with the lowest resource usage and the largest community. If you need automatic HTTPS, pair it with Certbot or use [Caddy](/apps/caddy/) instead.
 
 **Envoy wins for cloud-native infrastructure.** If you are running microservices with gRPC, need built-in observability, or are integrating with a service mesh, Envoy is the modern standard. It solves problems Nginx was not designed for.
 
-For a typical self-hosting setup: use [Nginx](/apps/nginx) (or [Caddy](/apps/caddy) for simpler HTTPS). Envoy is the right choice only when you have specific requirements that justify its complexity.
+For a typical self-hosting setup: use [Nginx](/apps/nginx/) (or [Caddy](/apps/caddy/) for simpler HTTPS). Envoy is the right choice only when you have specific requirements that justify its complexity.
 
 ## FAQ
 
@@ -138,10 +138,10 @@ Nginx can proxy gRPC traffic, but as a pass-through. It does not understand the 
 
 ## Related
 
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

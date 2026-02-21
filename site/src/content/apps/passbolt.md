@@ -27,11 +27,11 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (MariaDB + Passbolt)
 - 1 GB of free disk space
 - A domain name with HTTPS — required for the browser extension to work
-- A reverse proxy with SSL configured ([guide](/foundations/reverse-proxy-explained))
+- A reverse proxy with SSL configured ([guide](/foundations/reverse-proxy-explained/))
 - A working SMTP server for email notifications (required — Passbolt uses email for account recovery and verification)
 
 ## Docker Compose Configuration
@@ -223,7 +223,7 @@ passbolt.example.com {
 }
 ```
 
-For more options, see our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+For more options, see our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -245,7 +245,7 @@ docker cp passbolt:/etc/passbolt/gpg ./backup-gpg/
 docker cp passbolt:/etc/passbolt/jwt ./backup-jwt/
 ```
 
-Store backups securely — they contain the keys needed to decrypt your password vault. See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+Store backups securely — they contain the keys needed to decrypt your password vault. See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -282,7 +282,7 @@ Store backups securely — they contain the keys needed to decrypt your password
 
 ## Verdict
 
-Passbolt is the best self-hosted option for **team credential sharing**. Its OpenPGP-based E2E encryption is genuinely strong, the permission model is flexible, and the audit logs give you visibility into who accessed what. For personal use or family sharing, [Vaultwarden](/apps/vaultwarden) is the better choice — it has native mobile apps, better auto-fill, and a simpler setup. Passbolt's reliance on the browser extension and lack of mobile apps (in CE) limits its usefulness for personal password management.
+Passbolt is the best self-hosted option for **team credential sharing**. Its OpenPGP-based E2E encryption is genuinely strong, the permission model is flexible, and the audit logs give you visibility into who accessed what. For personal use or family sharing, [Vaultwarden](/apps/vaultwarden/) is the better choice — it has native mobile apps, better auto-fill, and a simpler setup. Passbolt's reliance on the browser extension and lack of mobile apps (in CE) limits its usefulness for personal password management.
 
 **Choose Passbolt if:** You need team credential sharing with granular permissions and audit trails.
 **Choose Vaultwarden if:** You want a personal/family password manager with full Bitwarden client support.
@@ -307,15 +307,15 @@ CE (Community Edition) is free and self-hosted — covers basic password managem
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Passbolt vs KeeWeb](/compare/passbolt-vs-keeweb)
-- [Passbolt vs Padloc](/compare/passbolt-vs-padloc)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Self-Hosted Alternatives to Dashlane](/replace/dashlane)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [SSL Certificates](/foundations/ssl-certificates)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Passbolt vs KeeWeb](/compare/passbolt-vs-keeweb/)
+- [Passbolt vs Padloc](/compare/passbolt-vs-padloc/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Self-Hosted Alternatives to Dashlane](/replace/dashlane/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [SSL Certificates](/foundations/ssl-certificates/)

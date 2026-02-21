@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB+ recommended for transcoding)
 - Storage for your media library (external drives, NAS, or local disks)
 - A Plex account at [plex.tv](https://www.plex.tv) (free)
@@ -130,7 +130,7 @@ Then open `http://localhost:32400/web` in your local browser.
 Enable remote access under **Settings > Remote Access**. Plex will attempt automatic port mapping via UPnP. If it fails:
 
 1. Manually forward port 32400 on your router to your server's IP
-2. Or use [Tailscale](/apps/tailscale) / [Cloudflare Tunnel](/apps/cloudflare-tunnel) for secure remote access without port forwarding
+2. Or use [Tailscale](/apps/tailscale/) / [Cloudflare Tunnel](/apps/cloudflare-tunnel/) for secure remote access without port forwarding
 
 ### Library Organization
 
@@ -211,13 +211,13 @@ Place your certificates in the `/config` directory and configure under **Setting
 
 ## Reverse Proxy
 
-If using a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+If using a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 - Forward `your-plex-domain.com` to `http://your-server-ip:32400`
 - Enable WebSocket support
 - The reverse proxy handles SSL; Plex communicates over HTTP internally
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the full configuration.
 
 ## Backup
 
@@ -233,7 +233,7 @@ docker compose start plex
 - `Library/` — database, metadata, artwork (can be very large — 50 GB+ for large libraries)
 - `Preferences.xml` — server settings
 
-Your media files are not in `/config` — back those up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Your media files are not in `/config` — back those up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -295,7 +295,7 @@ The server is free. The Plex Pass subscription ($5/month or $120 lifetime) adds 
 
 ### Should I use Plex or Jellyfin?
 
-Use [Jellyfin](/apps/jellyfin) if you want fully open source and free hardware transcoding. Use Plex if you want the most polished client apps across every platform, or if you share libraries with non-technical family members. See our [Plex vs Jellyfin comparison](/compare/jellyfin-vs-plex).
+Use [Jellyfin](/apps/jellyfin/) if you want fully open source and free hardware transcoding. Use Plex if you want the most polished client apps across every platform, or if you share libraries with non-technical family members. See our [Plex vs Jellyfin comparison](/compare/jellyfin-vs-plex/).
 
 ### Can I run Plex on a Raspberry Pi?
 
@@ -303,17 +303,17 @@ Technically yes, but transcoding is very limited. A Pi 4 can handle direct play 
 
 ## Verdict
 
-Plex remains the most polished and widely supported media server. Its client apps are available on everything, the interface is intuitive, and features like Skip Intro and automatic metadata matching work well. The downside is the proprietary nature — hardware transcoding requires a paid Plex Pass, and Plex the company has added features like ad-supported streaming and rentals that dilute the self-hosted focus. For a fully open alternative, use [Jellyfin](/apps/jellyfin). For most users sharing media with family, Plex's app ecosystem is hard to beat.
+Plex remains the most polished and widely supported media server. Its client apps are available on everything, the interface is intuitive, and features like Skip Intro and automatic metadata matching work well. The downside is the proprietary nature — hardware transcoding requires a paid Plex Pass, and Plex the company has added features like ad-supported streaming and rentals that dilute the self-hosted focus. For a fully open alternative, use [Jellyfin](/apps/jellyfin/). For most users sharing media with family, Plex's app ecosystem is hard to beat.
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Plex vs Jellyfin](/compare/jellyfin-vs-plex)
-- [Plex vs Emby for Music](/compare/plex-vs-emby-music)
-- [Plex vs Navidrome](/compare/plex-vs-navidrome)
-- [Replace Netflix with Self-Hosted Media](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Plex vs Jellyfin](/compare/jellyfin-vs-plex/)
+- [Plex vs Emby for Music](/compare/plex-vs-emby-music/)
+- [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Replace Netflix with Self-Hosted Media](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)

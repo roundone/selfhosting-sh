@@ -19,8 +19,8 @@ Docker container logs are your primary debugging tool. When a service crashes, w
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic command line skills ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic command line skills ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Viewing Container Logs
 
@@ -341,15 +341,15 @@ With default rotation (10 MB × 3 files per container), each container uses up t
 
 ## Next Steps
 
-- [Docker Troubleshooting](/foundations/docker-troubleshooting) — fix common container issues
-- [Monitoring Your Home Server](/foundations/monitoring-basics) — track service health
-- [Docker Compose Basics](/foundations/docker-compose-basics) — container management fundamentals
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/) — fix common container issues
+- [Monitoring Your Home Server](/foundations/monitoring-basics/) — track service health
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — container management fundamentals
 
 ## Related
 
-- [Docker Troubleshooting Guide](/foundations/docker-troubleshooting)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Monitoring Your Home Server](/foundations/monitoring-basics)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Troubleshooting Guide](/foundations/docker-troubleshooting/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Monitoring Your Home Server](/foundations/monitoring-basics/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -237,10 +237,10 @@ For basic self-hosting (Pi-hole, WireGuard, a few lightweight containers): yes. 
 
 ## Related
 
-- [Best RAM for Home Servers](/hardware/best-ram-home-server)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements)
-- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
+- [Best RAM for Home Servers](/hardware/best-ram-home-server/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements/)
+- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)

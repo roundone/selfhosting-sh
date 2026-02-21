@@ -37,7 +37,7 @@ Navidrome is a lightweight, purpose-built music server that streams your persona
 
 **What's different:** No discovery/radio based on a 100-million-song catalog. You're limited to your own collection. But you get lossless playback from any device, Last.fm/ListenBrainz scrobbling, smart playlists, and complete privacy.
 
-[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome)]
+[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome/)]
 
 ### Jellyfin — Best All-in-One Alternative
 
@@ -47,7 +47,7 @@ Jellyfin is a free, open-source media server that handles music alongside video,
 
 **What's different from Apple Music:** Finamp on iOS is good but not as polished as Navidrome's Subsonic client ecosystem. Jellyfin uses more resources (~250 MB vs ~50 MB for Navidrome). But it's completely free with no subscription tiers.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ### Plex with Plexamp — Best for Polish
 
@@ -57,7 +57,7 @@ Plexamp is the most polished self-hosted music experience available. Sonic analy
 
 **What's different:** Plexamp's Sonic Sage analyzes your library for tempo, mood, and sonic characteristics — creating smart playlists similar to Apple Music's "Made for You" mixes. It's the closest experience to a commercial streaming service.
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ## Migration Guide
 
@@ -142,11 +142,11 @@ A FLAC music library averages about 30-50 MB per album. 1,000 albums ≈ 30-50 G
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Plex for Music](/compare/navidrome-vs-plex-music)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Self-Hosted YouTube Music Alternatives](/replace/youtube-music)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Plex for Music](/compare/navidrome-vs-plex-music/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Self-Hosted YouTube Music Alternatives](/replace/youtube-music/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

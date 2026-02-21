@@ -205,7 +205,7 @@ No. The Intel N100 is roughly 50% faster in both single-thread and multi-thread 
 
 ### Can I run Proxmox on a Raspberry Pi?
 
-Not officially. Proxmox VE doesn't support ARM64. You can run VMs via QEMU/KVM manually on Raspberry Pi OS, but it's not a practical virtualization platform. Use an [N100 or N305 mini PC](/hardware/best-mini-pc) for Proxmox.
+Not officially. Proxmox VE doesn't support ARM64. You can run VMs via QEMU/KVM manually on Raspberry Pi OS, but it's not a practical virtualization platform. Use an [N100 or N305 mini PC](/hardware/best-mini-pc/) for Proxmox.
 
 ### Should I get a Pi 4 or Pi 5 for a server?
 
@@ -213,10 +213,10 @@ Pi 5. It's 2-3x faster, supports NVMe, and costs only $25 more. The Pi 4 is only
 
 ## Related
 
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Raspberry Pi Docker Setup Guide](/hardware/raspberry-pi-docker)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Raspberry Pi Docker Setup Guide](/hardware/raspberry-pi-docker/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

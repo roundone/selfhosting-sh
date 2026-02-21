@@ -17,7 +17,7 @@ affiliateDisclosure: true
 
 **Best WiFi 7 AP: UniFi U7 Pro** (~$190, tri-band, 2.5GbE uplink, excellent controller). **Best WiFi 6E budget: TP-Link EAP670** (~$130, tri-band, 2.5GbE). If you don't need 6 GHz: **UniFi U6 Lite** (~$100) handles most homes perfectly and costs half the price.
 
-For self-hosters, the AP ecosystem matters more than raw speed — you want APs with a self-hostable controller and [PoE](/hardware/poe-explained) support so your network infrastructure is as self-managed as your services.
+For self-hosters, the AP ecosystem matters more than raw speed — you want APs with a self-hostable controller and [PoE](/hardware/poe-explained/) support so your network infrastructure is as self-managed as your services.
 
 ## WiFi 6 vs 6E vs 7 — What Actually Matters
 
@@ -30,7 +30,7 @@ For self-hosters, the AP ecosystem matters more than raw speed — you want APs 
 | MLO (multi-link) | No | No | Yes |
 | Key benefit | Wide device support | 6 GHz = less congestion | Wider channels, lower latency |
 
-**The honest take:** WiFi 6 is fine for 90% of self-hosting use cases. Your [Jellyfin](/apps/jellyfin) streams at 20 Mbps. Your [Nextcloud](/apps/nextcloud) syncs don't need 2 Gbps. WiFi 6E/7 matters if you have many WiFi devices competing for bandwidth, need low-latency gaming/video calls, or are buying hardware that should last 5+ years.
+**The honest take:** WiFi 6 is fine for 90% of self-hosting use cases. Your [Jellyfin](/apps/jellyfin/) streams at 20 Mbps. Your [Nextcloud](/apps/nextcloud/) syncs don't need 2 Gbps. WiFi 6E/7 matters if you have many WiFi devices competing for bandwidth, need low-latency gaming/video calls, or are buying hardware that should last 5+ years.
 
 The 6 GHz band is the real benefit — it's empty. No neighbor interference, wider channels, faster speeds. That alone justifies 6E/7 in congested environments (apartments, dense neighborhoods).
 
@@ -193,7 +193,7 @@ For a 3-AP home: $38-65/year in electricity. Not significant, but worth knowing.
 2. **One AP per floor** is the minimum for a multi-story house. Two per floor for large homes.
 3. **Hardwire every AP** back to your PoE switch. Mesh/wireless uplinks halve throughput.
 4. **Put your server in the same room as the switch.** Short Ethernet runs to the switch, longer runs to APs.
-5. **Use VLANs** to separate IoT devices from your server network. A compromised smart bulb shouldn't reach your [Nextcloud](/apps/nextcloud).
+5. **Use VLANs** to separate IoT devices from your server network. A compromised smart bulb shouldn't reach your [Nextcloud](/apps/nextcloud/).
 
 ## Self-Hosting the Controller
 
@@ -249,10 +249,10 @@ Yes. OpenWrt gives you total control — no controller needed, everything runs o
 
 ## Related
 
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [Best PoE Switches for Homelab](/hardware/best-poe-switches)
-- [PoE Explained](/hardware/poe-explained)
-- [10GbE Networking for Home Servers](/hardware/10gbe-networking)
-- [Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [Best PoE Switches for Homelab](/hardware/best-poe-switches/)
+- [PoE Explained](/hardware/poe-explained/)
+- [10GbE Networking for Home Servers](/hardware/10gbe-networking/)
+- [Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)

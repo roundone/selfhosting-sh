@@ -283,10 +283,10 @@ Theoretically 65,000+ in a Zigbee network. Practically, 200-300 devices per coor
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Alternatives to Google Home](/replace/google-home)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [PoE Explained for Home Servers](/hardware/poe-explained)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Alternatives to Google Home](/replace/google-home/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [PoE Explained for Home Servers](/hardware/poe-explained/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

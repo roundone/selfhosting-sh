@@ -29,7 +29,7 @@ Paperless-ngx is the community-maintained successor to paperless and paperless-n
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (4 GB recommended for OCR processing)
 - 10 GB of free disk space (plus storage for documents)
 - A domain name (optional, for remote access)
@@ -234,7 +234,7 @@ Nginx Proxy Manager config:
 - **Forward Port:** 8000
 - **Enable WebSocket Support:** Yes
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -256,7 +256,7 @@ docker compose exec paperless_db pg_dump -U paperless paperless > paperless-back
 
 Back up the `paperless_media` volume separately — it contains your original documents and OCR'd versions.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -309,14 +309,14 @@ PAPERLESS_CONSUMER_ENABLE_ASN: "false"
 
 ## Verdict
 
-Paperless-ngx is the gold standard for self-hosted document management. Nothing else comes close in terms of features, community activity, and reliability. The OCR is accurate, the automatic tagging saves hours of manual work, and the search is excellent. Pair it with a scanner or use the email consumption feature to go fully paperless. If you just need a simple PDF viewer/editor without OCR and tagging, look at [Stirling-PDF](/apps/stirling-pdf). But for actual document management, Paperless-ngx is the only serious option.
+Paperless-ngx is the gold standard for self-hosted document management. Nothing else comes close in terms of features, community activity, and reliability. The OCR is accurate, the automatic tagging saves hours of manual work, and the search is excellent. Pair it with a scanner or use the email consumption feature to go fully paperless. If you just need a simple PDF viewer/editor without OCR and tagging, look at [Stirling-PDF](/apps/stirling-pdf/). But for actual document management, Paperless-ngx is the only serious option.
 
 ## Related
 
-- [Best Self-Hosted Document Management](/best/document-management)
-- [Paperless-ngx vs Stirling-PDF](/compare/paperless-ngx-vs-stirling-pdf)
-- [Replace Adobe Acrobat with Self-Hosted Tools](/replace/adobe-acrobat)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Volumes Explained](/foundations/docker-volumes)
+- [Best Self-Hosted Document Management](/best/document-management/)
+- [Paperless-ngx vs Stirling-PDF](/compare/paperless-ngx-vs-stirling-pdf/)
+- [Replace Adobe Acrobat with Self-Hosted Tools](/replace/adobe-acrobat/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes Explained](/foundations/docker-volumes/)

@@ -22,13 +22,13 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-**These tools solve fundamentally different problems.** [Cosmos Cloud](/apps/cosmos-cloud) is an all-in-one self-hosting platform that bundles container management, a reverse proxy, automatic HTTPS, SSO authentication, a VPN, and DDoS protection into a single deployment. [Dockge](/apps/dockge) is a lightweight Docker Compose file editor with a deploy button. Choose Cosmos Cloud if you want one tool to manage everything on your server. Choose Dockge if you already have a reverse proxy and auth system and just want a clean way to manage your Compose stacks.
+**These tools solve fundamentally different problems.** [Cosmos Cloud](/apps/cosmos-cloud/) is an all-in-one self-hosting platform that bundles container management, a reverse proxy, automatic HTTPS, SSO authentication, a VPN, and DDoS protection into a single deployment. [Dockge](/apps/dockge/) is a lightweight Docker Compose file editor with a deploy button. Choose Cosmos Cloud if you want one tool to manage everything on your server. Choose Dockge if you already have a reverse proxy and auth system and just want a clean way to manage your Compose stacks.
 
 ## Overview
 
 [Cosmos Cloud](https://cosmos-cloud.io) (v0.20.2) is an all-in-one self-hosting platform built in Go. It combines a reverse proxy with automatic Let's Encrypt HTTPS, container management, an app marketplace with one-click installs, multi-user authentication with SSO, a Nebula-based VPN (Constellation), SmartShield DDoS protection, and per-container firewall rules. Cosmos takes over ports 80 and 443 and becomes the gateway to everything on your server. It uses an embedded MongoDB instance for configuration storage.
 
-[Dockge](https://github.com/louislam/dockge) (v1.5.0) is a Docker Compose stack manager created by Louis Lam, the developer behind [Uptime Kuma](/apps/uptime-kuma). It is a Node.js application that does exactly one thing: manage `compose.yaml` files through a web UI. You create, edit, start, stop, and update stacks. The files live on disk as plain YAML. Dockge runs on port 5001, touches nothing else on your system, and uses around 30 MB of RAM.
+[Dockge](https://github.com/louislam/dockge) (v1.5.0) is a Docker Compose stack manager created by Louis Lam, the developer behind [Uptime Kuma](/apps/uptime-kuma/). It is a Node.js application that does exactly one thing: manage `compose.yaml` files through a web UI. You create, edit, start, stop, and update stacks. The files live on disk as plain YAML. Dockge runs on port 5001, touches nothing else on your system, and uses around 30 MB of RAM.
 
 The scope difference is enormous. Cosmos replaces your reverse proxy, auth provider, VPN server, and Docker management tool. Dockge replaces a text editor and a terminal window for running `docker compose up -d`.
 
@@ -75,7 +75,7 @@ volumes:
 
 After starting, a setup wizard walks you through domain configuration, Let's Encrypt provisioning, admin account creation, and MongoDB initialization. The setup takes a few minutes but configures everything: proxy, SSL, auth, and security in one pass.
 
-The catch: Cosmos needs exclusive access to ports 80 and 443. If you already run [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy) on those ports, you must remove it first. Cosmos replaces your reverse proxy entirely.
+The catch: Cosmos needs exclusive access to ports 80 and 443. If you already run [Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), or [Caddy](/apps/caddy/) on those ports, you must remove it first. Cosmos replaces your reverse proxy entirely.
 
 **Dockge** installs on port 5001 and stays out of the way:
 
@@ -147,7 +147,7 @@ The development pace difference is notable. Cosmos is under active development w
 
 ### Choose Dockge If...
 
-- You already have a reverse proxy ([NPM](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), [Caddy](/apps/caddy)) and do not want to replace it
+- You already have a reverse proxy ([NPM](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), [Caddy](/apps/caddy/)) and do not want to replace it
 - You want a focused Compose file editor, not a platform
 - You prefer your compose files stored as plain YAML on disk, not in a database
 - You value minimal resource usage (30 MB vs 250 MB)
@@ -182,7 +182,7 @@ Dockge is functional and stable at v1.5.0, but the last release was March 2025. 
 
 ### Which is better for a Raspberry Pi?
 
-Dockge, without question. At ~30 MB idle versus Cosmos's ~250 MB, Dockge leaves far more headroom for your actual services. Cosmos's embedded MongoDB alone can consume 100+ MB, which is significant on a 2 GB Pi. Pair Dockge with [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy) for a lighter overall stack.
+Dockge, without question. At ~30 MB idle versus Cosmos's ~250 MB, Dockge leaves far more headroom for your actual services. Cosmos's embedded MongoDB alone can consume 100+ MB, which is significant on a 2 GB Pi. Pair Dockge with [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/) for a lighter overall stack.
 
 ### Does Cosmos Cloud work without a domain name?
 
@@ -190,10 +190,10 @@ Cosmos can run with just an IP address during initial setup, but many features (
 
 ## Related
 
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

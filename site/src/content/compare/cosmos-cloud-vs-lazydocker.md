@@ -79,7 +79,7 @@ Cosmos Cloud is an operating system for self-hosting. Lazydocker is a diagnostic
 
 **Cosmos Cloud for platform management, Lazydocker for terminal debugging.** If you're setting up a self-hosting environment from scratch, Cosmos Cloud gives you container management, reverse proxy, and security in one package. If you already have a setup and just need a way to quickly check on containers via SSH, Lazydocker is the right tool.
 
-They're not competing — they're complementary. Install Cosmos Cloud (or [Portainer](/apps/portainer), or [Dockge](/apps/dockge)) for management, and keep Lazydocker installed as a host binary for when you need a quick terminal-based status check.
+They're not competing — they're complementary. Install Cosmos Cloud (or [Portainer](/apps/portainer/), or [Dockge](/apps/dockge/)) for management, and keep Lazydocker installed as a host binary for when you need a quick terminal-based status check.
 
 ## Frequently Asked Questions
 
@@ -97,10 +97,10 @@ Yes. Lazydocker provides ARM64 binaries. It works on Raspberry Pi 4/5, ARM-based
 
 ## Related
 
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Lazydocker vs Portainer](/compare/lazydocker-vs-portainer)
-- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Lazydocker vs Portainer](/compare/lazydocker-vs-portainer/)
+- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

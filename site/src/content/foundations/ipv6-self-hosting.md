@@ -23,10 +23,10 @@ The practical upside for self-hosting: every container, every service, every dev
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+) with [Docker installed](/foundations/docker-compose-basics)
+- A Linux server (Ubuntu 22.04+ or Debian 12+) with [Docker installed](/foundations/docker-compose-basics/)
 - An ISP that provides IPv6 connectivity (most do -- check below)
-- Basic understanding of [networking concepts](/foundations/ports-explained) and [DNS](/foundations/dns-explained)
-- A [firewall](/foundations/firewall-ufw) configured on your server
+- Basic understanding of [networking concepts](/foundations/ports-explained/) and [DNS](/foundations/dns-explained/)
+- A [firewall](/foundations/firewall-ufw/) configured on your server
 
 ## IPv6 vs IPv4 for Self-Hosting
 
@@ -45,7 +45,7 @@ The practical upside for self-hosting: every container, every service, every dev
 
 ### Why IPv6 Matters for Self-Hosting
 
-1. **No NAT, no port forwarding.** Your ISP gives you a public IPv6 prefix. Every device and container gets a globally routable address. No more [port forwarding](/foundations/port-forwarding) rules on your router.
+1. **No NAT, no port forwarding.** Your ISP gives you a public IPv6 prefix. Every device and container gets a globally routable address. No more [port forwarding](/foundations/port-forwarding/) rules on your router.
 
 2. **No CGNAT problems.** Many ISPs put residential customers behind CGNAT (Carrier-Grade NAT), making port forwarding impossible on IPv4. IPv6 bypasses this entirely because every address is public.
 
@@ -490,21 +490,21 @@ Setting up IPv6 on your server without adding AAAA DNS records means no one reac
 
 ## Next Steps
 
-- Configure [Docker networking](/foundations/docker-networking) to segment your containers securely
-- Set up a [reverse proxy](/foundations/reverse-proxy-explained) to handle dual-stack traffic
-- Harden your server with a [firewall](/foundations/firewall-ufw)
-- Understand [DNS](/foundations/dns-explained) to configure A and AAAA records correctly
-- Set up [port forwarding](/foundations/port-forwarding) for IPv4 (unnecessary for IPv6, but needed for v4 compatibility)
+- Configure [Docker networking](/foundations/docker-networking/) to segment your containers securely
+- Set up a [reverse proxy](/foundations/reverse-proxy-explained/) to handle dual-stack traffic
+- Harden your server with a [firewall](/foundations/firewall-ufw/)
+- Understand [DNS](/foundations/dns-explained/) to configure A and AAAA records correctly
+- Set up [port forwarding](/foundations/port-forwarding/) for IPv4 (unnecessary for IPv6, but needed for v4 compatibility)
 
 ## Related
 
-- [Docker Networking for Self-Hosting](/foundations/docker-networking)
-- [Network Ports Explained](/foundations/ports-explained)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [DNS Explained](/foundations/dns-explained)
-- [Home Network Setup](/foundations/home-network-setup)
-- [Port Forwarding for Self-Hosting](/foundations/port-forwarding)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Networking for Self-Hosting](/foundations/docker-networking/)
+- [Network Ports Explained](/foundations/ports-explained/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Home Network Setup](/foundations/home-network-setup/)
+- [Port Forwarding for Self-Hosting](/foundations/port-forwarding/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
 
 ## FAQ
 

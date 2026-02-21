@@ -94,12 +94,12 @@ Piwigo is dramatically more efficient. It runs on minimal hardware while LibrePh
 
 **LibrePhotos wins only on AI.** If facial recognition and automatic categorization are must-have features, LibrePhotos provides them natively. But the slower development pace and higher resource requirements are significant downsides.
 
-For AI features with mobile apps and active development, consider [Immich](/apps/immich) — it combines the best of both worlds, though with even higher resource requirements.
+For AI features with mobile apps and active development, consider [Immich](/apps/immich/) — it combines the best of both worlds, though with even higher resource requirements.
 
 ## Frequently Asked Questions
 
 ### Can Piwigo do facial recognition?
-Yes, through community plugins. The implementation isn't as deep as LibrePhotos' built-in ML, but it provides basic face detection and grouping. For advanced AI, LibrePhotos or [Immich](/apps/immich) are better options.
+Yes, through community plugins. The implementation isn't as deep as LibrePhotos' built-in ML, but it provides basic face detection and grouping. For advanced AI, LibrePhotos or [Immich](/apps/immich/) are better options.
 
 ### Which is better for a family photo sharing setup?
 Piwigo, without question. Its permission system lets you control who sees what, the mobile apps allow family members to upload directly, and the plugin ecosystem adds features like commenting and notifications. LibrePhotos' multi-user support is more basic.
@@ -109,9 +109,9 @@ No. LibrePhotos has no plugin system. What you see is what you get. If you need 
 
 ## Related
 
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [Immich vs Piwigo](/compare/immich-vs-piwigo)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [Immich vs Piwigo](/compare/immich-vs-piwigo/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)

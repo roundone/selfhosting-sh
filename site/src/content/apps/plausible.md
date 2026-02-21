@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (ClickHouse needs memory)
 - A CPU with SSE 4.2 or NEON instruction support (required by ClickHouse)
 - A domain name pointed at your server (required for automatic SSL)
@@ -164,7 +164,7 @@ Then create a matching goal in the Plausible UI under **Site Settings > Goals**.
 
 ## Reverse Proxy
 
-If running Plausible behind a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik), expose port 8000 in your override:
+If running Plausible behind a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/), expose port 8000 in your override:
 
 ```yaml
 services:
@@ -175,7 +175,7 @@ services:
 
 Set `BASE_URL` to your public domain (with `https://`) and let the reverse proxy handle SSL. Do not expose ports 80/443 in this setup — the reverse proxy manages those.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the full configuration.
 
 ## Backup
 
@@ -202,7 +202,7 @@ docker run --rm \
 docker compose start
 ```
 
-For ongoing backups, use PostgreSQL `pg_dump` and ClickHouse's native backup tools without stopping services. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+For ongoing backups, use PostgreSQL `pg_dump` and ClickHouse's native backup tools without stopping services. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -263,16 +263,16 @@ For most websites, yes. Plausible covers page views, referrers, top pages, geogr
 
 ## Verdict
 
-Plausible is the best self-hosted analytics tool for most websites. It's lightweight, privacy-friendly, and gives you 90% of the insights you actually look at in Google Analytics — on a single dashboard that loads instantly. The setup with Docker is straightforward thanks to the official Community Edition repo. The main limitations are the lack of advanced segmentation and e-commerce features. For product analytics or complex funnels, look at [PostHog](/apps/posthog) or [Matomo](/apps/matomo). For simple traffic analytics, Plausible is the clear winner.
+Plausible is the best self-hosted analytics tool for most websites. It's lightweight, privacy-friendly, and gives you 90% of the insights you actually look at in Google Analytics — on a single dashboard that loads instantly. The setup with Docker is straightforward thanks to the official Community Edition repo. The main limitations are the lack of advanced segmentation and e-commerce features. For product analytics or complex funnels, look at [PostHog](/apps/posthog/) or [Matomo](/apps/matomo/). For simple traffic analytics, Plausible is the clear winner.
 
 ## Related
 
-- [How to Self-Host Umami](/apps/umami)
-- [How to Self-Host Matomo](/apps/matomo)
-- [Plausible vs Umami](/compare/plausible-vs-umami)
-- [Plausible vs Matomo](/compare/plausible-vs-matomo)
-- [Best Self-Hosted Analytics](/best/analytics)
-- [Replace Google Analytics](/replace/google-analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Umami](/apps/umami/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [Plausible vs Umami](/compare/plausible-vs-umami/)
+- [Plausible vs Matomo](/compare/plausible-vs-matomo/)
+- [Best Self-Hosted Analytics](/best/analytics/)
+- [Replace Google Analytics](/replace/google-analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

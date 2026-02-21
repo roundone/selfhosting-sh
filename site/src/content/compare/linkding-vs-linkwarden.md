@@ -110,12 +110,12 @@ Not by default. It saves titles, descriptions, and URLs. You can enable ebook-mo
 
 ### Which is better for a homelab dashboard?
 
-Linkding. Its lightweight nature and RSS feed support make it more suitable as a quick-reference tool alongside your [dashboard](/apps/homarr).
+Linkding. Its lightweight nature and RSS feed support make it more suitable as a quick-reference tool alongside your [dashboard](/apps/homarr/).
 
 ## Related
 
-- [How to Self-Host Linkding](/apps/linkding)
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [Linkding vs Wallabag](/compare/linkding-vs-wallabag)
-- [Best Self-Hosted Bookmarks & Read Later](/best/bookmarks-read-later)
+- [How to Self-Host Linkding](/apps/linkding/)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [Linkding vs Wallabag](/compare/linkding-vs-wallabag/)
+- [Best Self-Hosted Bookmarks & Read Later](/best/bookmarks-read-later/)

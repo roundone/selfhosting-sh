@@ -21,8 +21,8 @@ When you run self-hosted services, each one listens on a specific port. Your rev
 
 ## Prerequisites
 
-- A Linux server ([Getting Started](/foundations/getting-started))
-- Basic Docker knowledge ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A Linux server ([Getting Started](/foundations/getting-started/))
+- Basic Docker knowledge ([Docker Compose Basics](/foundations/docker-compose-basics/))
 
 ## Port Ranges
 
@@ -151,7 +151,7 @@ If you don't specify, Docker assumes TCP.
 
 ### Option 1: Reverse Proxy (Recommended)
 
-Use a reverse proxy ([Nginx Proxy Manager](/apps/nginx-proxy-manager), Traefik, or Caddy) to route all traffic through ports 80 and 443. Each service gets a subdomain:
+Use a reverse proxy ([Nginx Proxy Manager](/apps/nginx-proxy-manager/), Traefik, or Caddy) to route all traffic through ports 80 and 443. Each service gets a subdomain:
 
 ```
 jellyfin.yourdomain.com → reverse proxy (443) → jellyfin container (8096)
@@ -239,7 +239,7 @@ nmap -p 22,80,443,8080,8096 your-server-ip
 
 ## Firewall and Ports
 
-Your firewall should only allow ports you explicitly need. Use [UFW](/foundations/firewall-ufw) to manage:
+Your firewall should only allow ports you explicitly need. Use [UFW](/foundations/firewall-ufw/) to manage:
 
 ```bash
 # Allow only necessary ports
@@ -317,7 +317,7 @@ Check the image's documentation, or inspect the container: `docker inspect <cont
 
 ### Should I change SSH from port 22?
 
-Changing SSH to a non-standard port (e.g., 2222) reduces automated scanning noise but isn't real security. Use key-based authentication and [fail2ban](/foundations/fail2ban) instead — those actually prevent unauthorized access.
+Changing SSH to a non-standard port (e.g., 2222) reduces automated scanning noise but isn't real security. Use key-based authentication and [fail2ban](/foundations/fail2ban/) instead — those actually prevent unauthorized access.
 
 ### What happens if I run out of ports?
 
@@ -325,15 +325,15 @@ You have 65,535 ports available. You'll run out of RAM and CPU long before you r
 
 ## Next Steps
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained) — route all traffic through one entry point
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — control which ports are accessible
-- [Docker Networking](/foundations/docker-networking) — how containers communicate
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/) — route all traffic through one entry point
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — control which ports are accessible
+- [Docker Networking](/foundations/docker-networking/) — how containers communicate
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [DNS Explained](/foundations/dns-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

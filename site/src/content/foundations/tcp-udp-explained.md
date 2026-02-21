@@ -23,8 +23,8 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are the two
 
 ## Prerequisites
 
-- Basic understanding of [ports](/foundations/ports-explained)
-- Familiarity with [Docker Compose](/foundations/docker-compose-basics)
+- Basic understanding of [ports](/foundations/ports-explained/)
+- Familiarity with [Docker Compose](/foundations/docker-compose-basics/)
 
 ## TCP vs UDP Comparison
 
@@ -142,11 +142,11 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 sudo iptables -A INPUT -p udp --dport 51820 -j ACCEPT
 ```
 
-See [Firewall Setup](/foundations/firewall-ufw) for complete firewall configuration.
+See [Firewall Setup](/foundations/firewall-ufw/) for complete firewall configuration.
 
 ## Reverse Proxies and Protocols
 
-Standard reverse proxies ([Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup), [Traefik](/foundations/traefik-setup), [Caddy](/foundations/caddy-setup)) handle TCP traffic. They proxy HTTP/HTTPS connections to your backend containers.
+Standard reverse proxies ([Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/), [Traefik](/foundations/traefik-setup/), [Caddy](/foundations/caddy-setup/)) handle TCP traffic. They proxy HTTP/HTTPS connections to your backend containers.
 
 UDP traffic **cannot** be proxied through standard HTTP reverse proxies. Services that use UDP (WireGuard, DNS) need direct port exposure:
 
@@ -223,10 +223,10 @@ HTTP reverse proxies don't handle UDP. WireGuard, DNS, and media streaming (Jits
 
 ## Next Steps
 
-- Learn about ports in detail at [Ports Explained](/foundations/ports-explained)
-- Set up your firewall with [UFW Firewall Setup](/foundations/firewall-ufw)
-- Configure a reverse proxy with [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- Set up a VPN with [WireGuard Setup](/foundations/wireguard-setup)
+- Learn about ports in detail at [Ports Explained](/foundations/ports-explained/)
+- Set up your firewall with [UFW Firewall Setup](/foundations/firewall-ufw/)
+- Configure a reverse proxy with [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- Set up a VPN with [WireGuard Setup](/foundations/wireguard-setup/)
 
 ## FAQ
 
@@ -248,9 +248,9 @@ No. Most services only use one protocol. Check the service's documentation for w
 
 ## Related
 
-- [Ports Explained](/foundations/ports-explained)
-- [Firewall Setup (UFW)](/foundations/firewall-ufw)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [WireGuard Setup](/foundations/wireguard-setup)
-- [DNS Explained](/foundations/dns-explained)
+- [Ports Explained](/foundations/ports-explained/)
+- [Firewall Setup (UFW)](/foundations/firewall-ufw/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [WireGuard Setup](/foundations/wireguard-setup/)
+- [DNS Explained](/foundations/dns-explained/)

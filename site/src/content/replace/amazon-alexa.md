@@ -44,25 +44,25 @@ For voice commands, you can build a local voice satellite using an ESP32 with a 
 
 Home Assistant can also control Alexa-compatible devices directly, so you don't have to replace hardware — just the brain.
 
-[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant)]
+[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant/)]
 
 ### openHAB — Best for Complex Setups
 
 openHAB offers 400+ bindings for home automation devices and industrial protocols. Its rule engine supports complex automation logic in DSL, Blockly, or JavaScript. openHAB doesn't have built-in voice support like Home Assistant's Assist, but it can integrate with external voice processing if needed. The strength is in automation depth, not voice control.
 
-[Read our full guide: [How to Self-Host openHAB](/apps/openhab)]
+[Read our full guide: [How to Self-Host openHAB](/apps/openhab/)]
 
 ### Gladys Assistant — Best for Privacy
 
 Gladys Assistant has zero cloud connectivity by design. No accounts, no telemetry, no optional cloud features. The integration list is small (~30 protocols) but covers the basics: Zigbee, Z-Wave, MQTT, Philips Hue, Sonos, Tasmota. If privacy is your #1 reason for leaving Alexa, Gladys is the strongest guarantee.
 
-[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant)]
+[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)]
 
 ### Domoticz — Best Lightweight Option
 
 Domoticz runs home automation at 50 MB RAM. Supports Z-Wave, Zigbee, MQTT, and 433 MHz RF natively. No voice control, but solid device management and Lua-based automation. Best for simple setups on minimal hardware.
 
-[Read our full guide: [How to Self-Host Domoticz](/apps/domoticz)]
+[Read our full guide: [How to Self-Host Domoticz](/apps/domoticz/)]
 
 ## Migration Guide
 
@@ -82,7 +82,7 @@ Domoticz runs home automation at 50 MB RAM. Supports Z-Wave, Zigbee, MQTT, and 4
 
 ### Migration Steps
 
-1. **Set up Home Assistant** ([guide](/apps/home-assistant))
+1. **Set up Home Assistant** ([guide](/apps/home-assistant/))
 2. **Get a Zigbee coordinator** — SONOFF Zigbee 3.0 USB Dongle Plus (~$25) or similar
 3. **Factory-reset Zigbee devices** and re-pair with Home Assistant via ZHA or Zigbee2MQTT
 4. **Add WiFi devices** via native integrations (TP-Link, Shelly, etc.) or Local Tuya for Tuya devices
@@ -112,11 +112,11 @@ Domoticz runs home automation at 50 MB RAM. Supports Z-Wave, Zigbee, MQTT, and 4
 
 ## Related
 
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Replace Google Home](/replace/google-home)
-- [Replace Apple HomeKit](/replace/apple-homekit)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Replace Google Home](/replace/google-home/)
+- [Replace Apple HomeKit](/replace/apple-homekit/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

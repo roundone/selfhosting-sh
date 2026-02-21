@@ -44,7 +44,7 @@ n8n handles everything IFTTT does and far more. Simple trigger-action automation
 - IFTTT filter → n8n IF node
 - IFTTT multiple actions → n8n workflow with multiple nodes
 
-[Read our full guide: How to Self-Host n8n](/apps/n8n)
+[Read our full guide: How to Self-Host n8n](/apps/n8n/)
 
 ### Node-RED — Best for Smart Home
 
@@ -57,13 +57,13 @@ If you used IFTTT primarily for smart home automations (lights, sensors, switche
 - Real-time triggers (no polling delays)
 - 4,000+ community nodes
 
-[Read our full guide: How to Self-Host Node-RED](/apps/node-red)
+[Read our full guide: How to Self-Host Node-RED](/apps/node-red/)
 
 ### Activepieces — Closest to IFTTT Simplicity
 
 Activepieces has the simplest UI of any self-hosted automation tool. Its step-by-step builder is closer to IFTTT's simplicity than n8n's canvas editor. If you want something easy and open-source (MIT), start here.
 
-[Read our full guide: How to Self-Host Activepieces](/apps/activepieces)
+[Read our full guide: How to Self-Host Activepieces](/apps/activepieces/)
 
 ### Huginn — Best for Web Monitoring Applets
 
@@ -71,7 +71,7 @@ If you used IFTTT to monitor websites, RSS feeds, or web services, Huginn's agen
 
 **Caveat:** Aging project with slow development. Use for monitoring-specific use cases; prefer n8n or Activepieces for general automation.
 
-[Read our full guide: How to Self-Host Huginn](/apps/huginn)
+[Read our full guide: How to Self-Host Huginn](/apps/huginn/)
 
 ## Migration Guide
 
@@ -116,10 +116,10 @@ If you used IFTTT to monitor websites, RSS feeds, or web services, Huginn's agen
 
 ## Related
 
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [How to Self-Host Activepieces](/apps/activepieces)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [How to Self-Host Activepieces](/apps/activepieces/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

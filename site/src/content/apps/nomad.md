@@ -324,7 +324,7 @@ nomad operator snapshot save nomad-backup.snap
 nomad operator snapshot restore nomad-backup.snap
 ```
 
-For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -374,7 +374,7 @@ Nomad is the simplest orchestrator available. A single binary, no dependencies, 
 
 **Use Nomad if:** You want simple orchestration without Kubernetes complexity. You need to run mixed workloads (containers + binaries + Java). You're already using HashiCorp tools.
 
-**Consider k3s instead if:** You want access to the Kubernetes ecosystem (Helm charts, operators). Most self-hosted apps ship Kubernetes manifests, not Nomad job files. See [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes).
+**Consider k3s instead if:** You want access to the Kubernetes ecosystem (Helm charts, operators). Most self-hosted apps ship Kubernetes manifests, not Nomad job files. See [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes/).
 
 **Note:** Nomad uses the BSL 1.1 license (source-available, not open source). Self-hosting for internal use is fine, but you cannot offer Nomad as a managed service.
 
@@ -394,10 +394,10 @@ For workload scheduling, yes. Nomad lacks the Kubernetes ecosystem — no Helm, 
 
 ## Related
 
-- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes)
-- [How to Self-Host k3s](/apps/k3s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
+- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)

@@ -167,10 +167,10 @@ Both handle large libraries (50,000+ tracks) well. Navidrome's Go-based scanner 
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Koel](/apps/koel)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale)
-- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Koel](/apps/koel/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale/)
+- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)

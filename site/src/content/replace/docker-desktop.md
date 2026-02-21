@@ -48,7 +48,7 @@ sudo sh get-docker.sh
 
 This gives you `docker` and `docker compose` — all you need for self-hosting.
 
-[Read our full guide: [Docker Compose Basics](/foundations/docker-compose-basics)]
+[Read our full guide: [Docker Compose Basics](/foundations/docker-compose-basics/)]
 
 ### Podman — Best Docker Alternative
 
@@ -58,7 +58,7 @@ Podman is a rootless, daemonless container engine that's CLI-compatible with Doc
 
 **Trade-off:** Some Docker-specific tools (Portainer, Watchtower (deprecated)) need socket compatibility configuration.
 
-[Read our full guide: [Podman for Self-Hosting](/apps/podman)]
+[Read our full guide: [Podman for Self-Hosting](/apps/podman/)]
 
 ### Portainer CE — Best Web UI for Docker
 
@@ -66,7 +66,7 @@ If you miss Docker Desktop's GUI, Portainer CE provides a web-based Docker manag
 
 **Why switch:** More features than Docker Desktop's UI, remote access, multi-host support, free for up to 5 nodes.
 
-[Read our full guide: [How to Self-Host Portainer](/apps/portainer)]
+[Read our full guide: [How to Self-Host Portainer](/apps/portainer/)]
 
 ### Dockge — Best Lightweight Compose Manager
 
@@ -74,7 +74,7 @@ Dockge is a lightweight Docker Compose manager with a clean web UI. It focuses s
 
 **Why switch:** Clean compose-focused UI, real-time logs, minimal resource usage.
 
-[Read our full guide: [How to Self-Host Dockge](/apps/dockge)]
+[Read our full guide: [How to Self-Host Dockge](/apps/dockge/)]
 
 ### Rancher Desktop — Best Desktop Alternative (macOS/Windows)
 
@@ -88,7 +88,7 @@ Lazydocker is a terminal-based Docker management tool. If you work primarily via
 
 **Why switch:** Zero overhead, works over SSH, no web server needed.
 
-[Read our full guide: [How to Set Up Lazydocker](/apps/lazydocker)]
+[Read our full guide: [How to Set Up Lazydocker](/apps/lazydocker/)]
 
 ## Migration Guide
 
@@ -131,18 +131,18 @@ If you're moving self-hosted services from a Docker Desktop machine to a Linux s
 ## What You Give Up
 
 - **Integrated development environment.** Docker Desktop includes Dev Environments, extensions marketplace, and GUI-based build tools. On a server, you use the CLI — which is more powerful but less visual.
-- **One-click updates.** Docker Desktop auto-updates. Docker Engine and Podman require manual updates (or [DIUN](/apps/diun) for container image update notifications — Watchtower is deprecated).
+- **One-click updates.** Docker Desktop auto-updates. Docker Engine and Podman require manual updates (or [DIUN](/apps/diun/) for container image update notifications — Watchtower is deprecated).
 - **Docker Scout.** Built-in vulnerability scanning in Docker Desktop. Alternative: Trivy (free, open-source).
 
 For self-hosting on a server, none of these losses matter. Docker Desktop is a development tool, not a server management tool.
 
 ## Related
 
-- [Podman for Self-Hosting](/apps/podman)
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Podman vs Docker](/compare/podman-vs-docker)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [How to Set Up Lazydocker](/apps/lazydocker)
+- [Podman for Self-Hosting](/apps/podman/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Podman vs Docker](/compare/podman-vs-docker/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [How to Set Up Lazydocker](/apps/lazydocker/)

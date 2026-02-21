@@ -43,7 +43,7 @@ Outline is the closest self-hosted match to Notion's documentation features. Mod
 
 **Best for:** Teams that primarily use Notion for docs, not databases.
 
-[Read our full guide: [How to Self-Host Outline](/apps/outline)]
+[Read our full guide: [How to Self-Host Outline](/apps/outline/)]
 
 ### AppFlowy — Best Full Notion Clone
 
@@ -51,7 +51,7 @@ AppFlowy covers the widest range of Notion features: documents, databases (table
 
 **Best for:** Teams that rely on Notion's database features and want a near-complete replacement.
 
-[Read our full guide: [How to Self-Host AppFlowy](/apps/appflowy)]
+[Read our full guide: [How to Self-Host AppFlowy](/apps/appflowy/)]
 
 ### AFFiNE — Best for Visual Thinkers
 
@@ -59,7 +59,7 @@ AFFiNE combines Notion-style documents with Miro-style whiteboards. Any page can
 
 **Best for:** Teams that need documents + visual thinking tools.
 
-[Read our full guide: [How to Self-Host AFFiNE](/apps/affine)]
+[Read our full guide: [How to Self-Host AFFiNE](/apps/affine/)]
 
 ### BookStack — Best for Simplicity
 
@@ -67,7 +67,7 @@ BookStack uses a structured hierarchy (Shelves → Books → Chapters → Pages)
 
 **Best for:** Small teams that want a simple, well-organized wiki without Notion's complexity.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### Wiki.js — Best for Developer Teams
 
@@ -75,7 +75,7 @@ Wiki.js offers Git-based content sync, multiple editors (Markdown, WYSIWYG, HTML
 
 **Best for:** Technical teams that want Git-based content management.
 
-[Read our full guide: [How to Self-Host Wiki.js](/apps/wiki-js)]
+[Read our full guide: [How to Self-Host Wiki.js](/apps/wiki-js/)]
 
 ## Migration Guide
 
@@ -130,13 +130,13 @@ Wiki.js offers Git-based content sync, multiple editors (Markdown, WYSIWYG, HTML
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [How to Self-Host AFFiNE](/apps/affine)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [How to Self-Host AFFiNE](/apps/affine/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

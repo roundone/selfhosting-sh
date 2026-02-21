@@ -132,10 +132,10 @@ Both are secure but use different approaches. Passbolt uses OpenPGP (asymmetric 
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

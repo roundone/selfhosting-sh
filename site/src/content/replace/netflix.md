@@ -34,7 +34,7 @@ affiliateDisclosure: false
 
 ### 1. Jellyfin — Best Overall (Free, Open Source)
 
-[Jellyfin](/apps/jellyfin) is a fully free, open-source media server with no paid tiers, no accounts, and no tracking. It streams movies, TV shows, music, books, and live TV. Client apps exist for every major platform — web, Android, iOS, Apple TV, Roku, Fire TV, Kodi, and more.
+[Jellyfin](/apps/jellyfin/) is a fully free, open-source media server with no paid tiers, no accounts, and no tracking. It streams movies, TV shows, music, books, and live TV. Client apps exist for every major platform — web, Android, iOS, Apple TV, Roku, Fire TV, Kodi, and more.
 
 **Why it's the best Netflix replacement:**
 - Completely free — no subscriptions, no premium features locked behind a paywall
@@ -44,13 +44,13 @@ affiliateDisclosure: false
 - Subtitle support (SRT, ASS, PGS) with on-the-fly transcoding
 - Active open-source development with frequent updates
 
-**Setup difficulty:** Easy. Single Docker container plus optional hardware passthrough for transcoding. See our [full Jellyfin guide](/apps/jellyfin).
+**Setup difficulty:** Easy. Single Docker container plus optional hardware passthrough for transcoding. See our [full Jellyfin guide](/apps/jellyfin/).
 
 **Minimum hardware:** 2 GB RAM, 2-core CPU. 4-core+ CPU or dedicated GPU recommended for transcoding.
 
 ### 2. Plex — Best Client App Ecosystem
 
-[Plex](/apps/plex) is the most polished media server with the widest client app support. The server software is free, with an optional Plex Pass subscription ($5/month or $120 lifetime) that unlocks hardware transcoding, mobile sync, and a few other features.
+[Plex](/apps/plex/) is the most polished media server with the widest client app support. The server software is free, with an optional Plex Pass subscription ($5/month or $120 lifetime) that unlocks hardware transcoding, mobile sync, and a few other features.
 
 **Why choose Plex:**
 - Best-in-class client apps on every platform (smart TVs, game consoles, streaming devices)
@@ -65,11 +65,11 @@ affiliateDisclosure: false
 - Not fully open source (server is proprietary)
 - Plex has been adding streaming/ad-supported content, cluttering the interface
 
-**Setup difficulty:** Easy. Single Docker container. See our [full Plex guide](/apps/plex).
+**Setup difficulty:** Easy. Single Docker container. See our [full Plex guide](/apps/plex/).
 
 ### 3. Emby — Best Middle Ground
 
-[Emby](/apps/emby) sits between Jellyfin's open-source purity and Plex's polish. It started as an open-source project (Jellyfin forked from it), then moved to a proprietary license with a Premiere subscription ($5/month or $119 lifetime).
+[Emby](/apps/emby/) sits between Jellyfin's open-source purity and Plex's polish. It started as an open-source project (Jellyfin forked from it), then moved to a proprietary license with a Premiere subscription ($5/month or $119 lifetime).
 
 **Why choose Emby:**
 - Clean, responsive web UI
@@ -83,7 +83,7 @@ affiliateDisclosure: false
 - Smaller community than Plex or Jellyfin
 - Proprietary license
 
-**Setup difficulty:** Easy. Single Docker container. See our [full Emby guide](/apps/emby).
+**Setup difficulty:** Easy. Single Docker container. See our [full Emby guide](/apps/emby/).
 
 ## Cost Comparison
 
@@ -122,7 +122,7 @@ affiliateDisclosure: false
 
 ### Can I access my media server outside my home network?
 
-Yes. Set up a reverse proxy with SSL and a domain name, or use a VPN like Tailscale for encrypted remote access. Jellyfin, Plex, and Emby all support remote streaming. See our [Remote Access guide](/foundations/remote-access) and [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Yes. Set up a reverse proxy with SSL and a domain name, or use a VPN like Tailscale for encrypted remote access. Jellyfin, Plex, and Emby all support remote streaming. See our [Remote Access guide](/foundations/remote-access/) and [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ### How much storage do I need?
 
@@ -142,11 +142,11 @@ All three servers support SRT, ASS/SSA, and PGS subtitle formats. SRT subtitles 
 
 ## Related
 
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

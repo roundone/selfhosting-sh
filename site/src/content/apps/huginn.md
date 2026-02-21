@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 512 MB of RAM (minimum), 1 GB recommended
 - A domain name (optional, for remote access)
@@ -224,9 +224,9 @@ And replace the PostgreSQL service with MySQL 5.7.
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), proxy to port 3000. Set the `DOMAIN` environment variable to your public domain and `FORCE_SSL=true` if using HTTPS.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), proxy to port 3000. Set the `DOMAIN` environment variable to your public domain and `FORCE_SSL=true` if using HTTPS.
 
-For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -238,7 +238,7 @@ docker exec huginn-postgres pg_dump -U huginn huginn > huginn_backup.sql
 
 The database contains all agents, scenarios, events, and credentials. The Docker volume `huginn-db` holds the PostgreSQL data.
 
-For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -295,11 +295,11 @@ docker exec huginn bundle exec rake agents:cleanup
 
 ## Verdict
 
-Huginn is a capable self-hosted automation tool with deep web scraping abilities, but its development has stalled — the last tagged release was August 2022. The agent configuration via JSON forms works but feels dated compared to visual editors like [n8n](/apps/n8n) or [Node-RED](/apps/node-red).
+Huginn is a capable self-hosted automation tool with deep web scraping abilities, but its development has stalled — the last tagged release was August 2022. The agent configuration via JSON forms works but feels dated compared to visual editors like [n8n](/apps/n8n/) or [Node-RED](/apps/node-red/).
 
 **Use Huginn if:** You specifically need web scraping agents, event monitoring, or you already have existing Huginn workflows. Its WebsiteAgent and event-chaining model are still powerful for monitoring use cases.
 
-**Consider alternatives if:** You're starting fresh with workflow automation. [n8n](/apps/n8n) offers a modern visual editor, 400+ integrations, active development, and better documentation. See our [n8n vs Huginn comparison](/compare/n8n-vs-huginn).
+**Consider alternatives if:** You're starting fresh with workflow automation. [n8n](/apps/n8n/) offers a modern visual editor, 400+ integrations, active development, and better documentation. See our [n8n vs Huginn comparison](/compare/n8n-vs-huginn/).
 
 ## FAQ
 
@@ -317,11 +317,11 @@ On a 1 GB RAM setup, Huginn comfortably handles 50-100 agents. The bottleneck is
 
 ## Related
 
-- [n8n vs Huginn](/compare/n8n-vs-huginn)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Self-Hosted Alternatives to IFTTT](/replace/ifttt)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [n8n vs Huginn](/compare/n8n-vs-huginn/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Self-Hosted Alternatives to IFTTT](/replace/ifttt/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -163,14 +163,14 @@ Yes. Both use small, independent tracking scripts. You can run both simultaneous
 
 ### What about Matomo as an alternative?
 
-[Matomo](/apps/matomo) is the heavyweight option — it replicates most of Google Analytics' feature set, including e-commerce tracking, heatmaps (paid plugin), and session recording (paid plugin). It uses significantly more resources than either Plausible or Umami. Choose Matomo if you need GA-level depth. Choose Plausible or Umami if you want simplicity and privacy first.
+[Matomo](/apps/matomo/) is the heavyweight option — it replicates most of Google Analytics' feature set, including e-commerce tracking, heatmaps (paid plugin), and session recording (paid plugin). It uses significantly more resources than either Plausible or Umami. Choose Matomo if you need GA-level depth. Choose Plausible or Umami if you want simplicity and privacy first.
 
 ## Related
 
-- [How to Self-Host Plausible](/apps/plausible)
-- [How to Self-Host Umami](/apps/umami)
-- [How to Self-Host Matomo](/apps/matomo)
-- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
-- [Best Self-Hosted Analytics](/best/analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [How to Self-Host Umami](/apps/umami/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics/)
+- [Best Self-Hosted Analytics](/best/analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

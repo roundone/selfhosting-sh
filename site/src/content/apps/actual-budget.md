@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - 500 MB of free disk space
 - A domain name (recommended for multi-device sync)
@@ -115,7 +115,7 @@ Nginx Proxy Manager config:
 
 HTTPS is strongly recommended since financial data is being transmitted.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -128,7 +128,7 @@ docker run --rm -v actual_data:/data -v $(pwd):/backup alpine \
 
 You can also export budget files from within the Actual web app.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -155,14 +155,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup appr
 
 ## Verdict
 
-Actual Budget is the best self-hosted budgeting app. The envelope budgeting approach works, the UI is fast and clean, and the local-first architecture means it works even when your server is down. Bank syncing via GoCardless (Europe) or SimpleFIN (US, $1.50/month) automates transaction imports. If you need more traditional accounting (double-entry, invoicing, tax tracking), look at [Firefly III](/apps/firefly-iii). But for personal budgeting, Actual is the clear winner.
+Actual Budget is the best self-hosted budgeting app. The envelope budgeting approach works, the UI is fast and clean, and the local-first architecture means it works even when your server is down. Bank syncing via GoCardless (Europe) or SimpleFIN (US, $1.50/month) automates transaction imports. If you need more traditional accounting (double-entry, invoicing, tax tracking), look at [Firefly III](/apps/firefly-iii/). But for personal budgeting, Actual is the clear winner.
 
 ## Related
 
-- [Best Self-Hosted Personal Finance Apps](/best/personal-finance)
-- [Actual Budget vs Firefly III](/compare/actual-vs-firefly-iii)
-- [Replace YNAB with Self-Hosted Budget](/replace/ynab)
-- [Replace Mint with Self-Hosted Finance](/replace/mint)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Personal Finance Apps](/best/personal-finance/)
+- [Actual Budget vs Firefly III](/compare/actual-vs-firefly-iii/)
+- [Replace YNAB with Self-Hosted Budget](/replace/ynab/)
+- [Replace Mint with Self-Hosted Finance](/replace/mint/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

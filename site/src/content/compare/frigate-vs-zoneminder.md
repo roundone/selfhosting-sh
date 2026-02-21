@@ -185,8 +185,8 @@ ZoneMinder was groundbreaking when it launched over 20 years ago, but it hasn't 
 
 ## Related
 
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring/Nest Cameras](/replace/ring-cameras)
-- [Home Assistant Setup Guide](/apps/home-assistant)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring/Nest Cameras](/replace/ring-cameras/)
+- [Home Assistant Setup Guide](/apps/home-assistant/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

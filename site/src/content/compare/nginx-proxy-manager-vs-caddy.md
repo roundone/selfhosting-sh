@@ -137,10 +137,10 @@ If you are reading this comparison and trying to decide, try Caddy first. If the
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)

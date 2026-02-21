@@ -26,10 +26,10 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB+ RAM
 - 5 GB free disk space
-- An LLM backend ([Ollama](/apps/ollama), OpenAI API key, or similar)
+- An LLM backend ([Ollama](/apps/ollama/), OpenAI API key, or similar)
 
 ## Docker Compose Configuration
 
@@ -177,7 +177,7 @@ Langflow can deploy flows as MCP (Model Context Protocol) servers, allowing AI a
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 7860. WebSocket support is required for the interactive playground. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 7860. WebSocket support is required for the interactive playground. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -188,7 +188,7 @@ docker run --rm -v langflow_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/langflow-backup.tar.gz /data
 ```
 
-This contains flows, credentials, custom components, and the SQLite database. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+This contains flows, credentials, custom components, and the SQLite database. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -215,16 +215,16 @@ This contains flows, credentials, custom components, and the SQLite database. Se
 
 ## Verdict
 
-Langflow is the more powerful visual AI builder. Its Python component system, multi-agent support, and API deployment capabilities make it a real development platform, not just a chatbot builder. The trade-off is a higher learning curve and heavier resource footprint compared to [Flowise](/apps/flowise).
+Langflow is the more powerful visual AI builder. Its Python component system, multi-agent support, and API deployment capabilities make it a real development platform, not just a chatbot builder. The trade-off is a higher learning curve and heavier resource footprint compared to [Flowise](/apps/flowise/).
 
-**Choose Langflow** for building AI applications with custom logic and API deployment. **Choose [Flowise](/apps/flowise)** for simpler chatbot building with a lower barrier to entry.
+**Choose Langflow** for building AI applications with custom logic and API deployment. **Choose [Flowise](/apps/flowise/)** for simpler chatbot building with a lower barrier to entry.
 
 ## Related
 
-- [How to Self-Host Flowise](/apps/flowise)
-- [Flowise vs Langflow](/compare/flowise-vs-langflow)
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Flowise](/apps/flowise/)
+- [Flowise vs Langflow](/compare/flowise-vs-langflow/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

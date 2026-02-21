@@ -174,7 +174,7 @@ sudo sensors-detect
 sensors
 ```
 
-For continuous monitoring, deploy [Netdata](/apps/netdata) or [Beszel](/apps/beszel) — both show CPU temperature graphs and can alert if temps exceed safe thresholds.
+For continuous monitoring, deploy [Netdata](/apps/netdata/) or [Beszel](/apps/beszel/) — both show CPU temperature graphs and can alert if temps exceed safe thresholds.
 
 **Safe ranges:**
 - CPU: Under 80°C sustained (under 90°C peak)
@@ -208,10 +208,10 @@ The Pi 4 has no fan by default but can throttle under sustained load. The Pi 5 r
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Fanless Mini PC Guide](/hardware/fanless-mini-pc)
-- [Home Server Noise Reduction](/hardware/home-server-noise-reduction)
-- [Cooling Solutions for Home Servers](/hardware/cooling-solutions-home-server)
-- [Low-Power Home Server](/hardware/low-power-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Fanless Mini PC Guide](/hardware/fanless-mini-pc/)
+- [Home Server Noise Reduction](/hardware/home-server-noise-reduction/)
+- [Cooling Solutions for Home Servers](/hardware/cooling-solutions-home-server/)
+- [Low-Power Home Server](/hardware/low-power-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

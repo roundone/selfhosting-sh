@@ -23,7 +23,7 @@ Home Assistant has one of the largest open-source communities in the smart home 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended) or Raspberry Pi 4/5
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB recommended for heavy automation use)
 - 32 GB of free disk space
 - Network access to your smart home devices (same subnet is strongly recommended for device discovery)
@@ -298,7 +298,7 @@ http:
     - 127.0.0.1        # Localhost
 ```
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for full configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for full configuration.
 
 **Option 2: Tailscale or WireGuard.** Install Tailscale on your server and your phone. Access Home Assistant at your Tailscale IP on port 8123 — no port forwarding, no reverse proxy, no SSL certificate management. This is the simplest secure remote access method.
 
@@ -319,7 +319,7 @@ The database can grow large over time. If you only need to back up configuration
 
 Even in the Docker install, Home Assistant has a built-in backup feature accessible from **Settings > System > Backups**. It creates `.tar` archives of your configuration. Use this in addition to your regular file-level backups.
 
-For automated backups, see our [Backup Strategy](/foundations/backup-3-2-1-rule) guide. A simple approach:
+For automated backups, see our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide. A simple approach:
 
 ```bash
 # Stop HA, copy config, restart
@@ -430,15 +430,15 @@ If you want a dedicated home automation appliance, install Home Assistant OS on 
 
 ## Related
 
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs ESPHome](/compare/home-assistant-vs-esphome)
-- [Home Assistant vs Homebridge](/compare/home-assistant-vs-homebridge)
-- [Home Assistant vs ioBroker](/compare/home-assistant-vs-iobroker)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs ESPHome](/compare/home-assistant-vs-esphome/)
+- [Home Assistant vs Homebridge](/compare/home-assistant-vs-homebridge/)
+- [Home Assistant vs ioBroker](/compare/home-assistant-vs-iobroker/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

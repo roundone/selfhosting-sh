@@ -134,9 +134,9 @@ Yes. Some setups use CoreDNS as the client-facing DNS server (for metrics and fl
 
 ## Related
 
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [Technitium vs Unbound](/compare/technitium-vs-unbound)
-- [Blocky vs Pi-hole](/compare/blocky-vs-pihole)
-- [Best Self-Hosted DNS](/best/dns-networking)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [Technitium vs Unbound](/compare/technitium-vs-unbound/)
+- [Blocky vs Pi-hole](/compare/blocky-vs-pihole/)
+- [Best Self-Hosted DNS](/best/dns-networking/)

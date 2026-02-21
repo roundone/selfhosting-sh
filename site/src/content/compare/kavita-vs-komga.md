@@ -122,7 +122,7 @@ Kavita. Its reader supports vertical scrolling mode (webtoon mode) natively. Kom
 
 ### Do either support audiobooks?
 
-No. For audiobooks, use [Audiobookshelf](/apps/audiobookshelf).
+No. For audiobooks, use [Audiobookshelf](/apps/audiobookshelf/).
 
 ### Can I run both on the same server?
 
@@ -134,10 +134,10 @@ Both support OPDS, which works with KOReader on e-ink devices. Neither has a ded
 
 ## Related
 
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

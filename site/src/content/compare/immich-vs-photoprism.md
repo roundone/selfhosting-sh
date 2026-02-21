@@ -139,14 +139,14 @@ The free AGPL tier covers most needs: browsing, search, face recognition, map vi
 
 ### Which is better for video?
 
-Both handle video playback and basic organization. Neither is a dedicated video management tool — for serious video library management, consider [Jellyfin](/apps/jellyfin). For photo management with some video, both Immich and PhotoPrism work fine.
+Both handle video playback and basic organization. Neither is a dedicated video management tool — for serious video library management, consider [Jellyfin](/apps/jellyfin/). For photo management with some video, both Immich and PhotoPrism work fine.
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

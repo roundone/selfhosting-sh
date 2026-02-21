@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum (2 GB+ recommended)
 - A domain name pointed at your server
 - Ports 80/443 available (or a reverse proxy)
@@ -201,7 +201,7 @@ docker exec wordpress wp --allow-root cache flush
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/):
 
 1. Forward your domain to `http://wordpress:80` (or `http://your-server:8080`)
 2. Add these environment variables for proper URL handling:
@@ -219,7 +219,7 @@ Note: `$$` is required in Docker Compose YAML to escape the dollar sign.
 
 3. Set your site URL in WordPress: **Settings > General > WordPress Address** and **Site Address** to `https://yourdomain.com`
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -261,7 +261,7 @@ docker run --rm \
 find "$BACKUP_DIR" -type f -mtime +7 -delete
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -341,16 +341,16 @@ For blogs and content sites that need frequent updates, WordPress is easier to m
 
 ## Verdict
 
-WordPress is still the most practical choice for most websites. The plugin ecosystem is unmatched — SEO, e-commerce, membership sites, forums — there's a plugin for everything. Self-hosting with Docker makes deployment and backups straightforward. The downsides: PHP-based sites are slower than static sites, and WordPress is a frequent target for automated attacks (keep it updated). For simple blogs, consider [Ghost](/apps/ghost) which is faster and cleaner. For everything else, WordPress's flexibility is hard to beat.
+WordPress is still the most practical choice for most websites. The plugin ecosystem is unmatched — SEO, e-commerce, membership sites, forums — there's a plugin for everything. Self-hosting with Docker makes deployment and backups straightforward. The downsides: PHP-based sites are slower than static sites, and WordPress is a frequent target for automated attacks (keep it updated). For simple blogs, consider [Ghost](/apps/ghost/) which is faster and cleaner. For everything else, WordPress's flexibility is hard to beat.
 
 ## Related
 
-- [How to Self-Host Ghost](/apps/ghost)
-- [WordPress vs Ghost](/compare/ghost-vs-wordpress)
-- [WordPress vs Hugo](/compare/wordpress-vs-hugo)
-- [Best Self-Hosted CMS](/best/cms-websites)
-- [Replace Squarespace](/replace/squarespace)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [WordPress vs Ghost](/compare/ghost-vs-wordpress/)
+- [WordPress vs Hugo](/compare/wordpress-vs-hugo/)
+- [Best Self-Hosted CMS](/best/cms-websites/)
+- [Replace Squarespace](/replace/squarespace/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

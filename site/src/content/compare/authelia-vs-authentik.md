@@ -130,9 +130,9 @@ Yes, since v4.37+. Authelia supports basic OIDC provider functionality — you c
 
 ## Related
 
-- [How to Self-Host Authelia](/apps/authelia)
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

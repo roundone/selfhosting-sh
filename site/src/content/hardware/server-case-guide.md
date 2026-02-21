@@ -15,9 +15,9 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-**For a NAS build: Jonsbo N3 (~$140).** 8 hot-swap 3.5" drive bays, ITX motherboard, included 250W PSU, compact footprint. It's the go-to case for [DIY NAS builds](/hardware/diy-nas-build).
+**For a NAS build: Jonsbo N3 (~$140).** 8 hot-swap 3.5" drive bays, ITX motherboard, included 250W PSU, compact footprint. It's the go-to case for [DIY NAS builds](/hardware/diy-nas-build/).
 
-**For a general server: you don't need a case.** A [mini PC](/hardware/best-mini-pc) comes with its own enclosure. Only buy a case if you're building a custom server with a separate motherboard.
+**For a general server: you don't need a case.** A [mini PC](/hardware/best-mini-pc/) comes with its own enclosure. Only buy a case if you're building a custom server with a separate motherboard.
 
 ## NAS Cases
 
@@ -99,8 +99,8 @@ ITX for most builds — it fits all popular NAS cases and N100/N305 boards are I
 
 ## Related
 
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Home Server Rack Setup](/hardware/home-server-rack)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Home Server Rack Setup](/hardware/home-server-rack/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-**The HP ProLiant DL360 Gen10 is the best used enterprise server for most homelabs.** 1U rack-mount, dual Xeon sockets, up to 1.5TB DDR4, iLO remote management, and prices starting around $200-400 on eBay. The trade-off: enterprise servers are loud and power-hungry compared to [mini PCs](/hardware/best-mini-pc). Only buy one if you need the compute density, ECC RAM, or iLO remote management.
+**The HP ProLiant DL360 Gen10 is the best used enterprise server for most homelabs.** 1U rack-mount, dual Xeon sockets, up to 1.5TB DDR4, iLO remote management, and prices starting around $200-400 on eBay. The trade-off: enterprise servers are loud and power-hungry compared to [mini PCs](/hardware/best-mini-pc/). Only buy one if you need the compute density, ECC RAM, or iLO remote management.
 
 ## Why Buy Used Enterprise Hardware?
 
@@ -136,7 +136,7 @@ Enterprise servers are designed for datacenters, not living rooms. Expect:
 
 **Noise mitigation:**
 - Place in a basement, garage, closet, or utility room
-- A [server rack](/hardware/home-server-rack) with acoustic foam panels helps
+- A [server rack](/hardware/home-server-rack/) with acoustic foam panels helps
 - Fan speed can be adjusted on some models via iLO (at your own risk — don't let CPUs overheat)
 - The DL20 Gen10 and ML-series towers are the quietest ProLiant options
 - Consider replacing fans with Noctua equivalents (common homelab mod, voids warranty)
@@ -163,7 +163,7 @@ An HP ProLiant Gen10 with dual Xeons and 128GB RAM is a legitimate datacenter-cl
 - **TrueNAS** with a massive ZFS pool (DL380 with 12 drives)
 - **Kubernetes cluster** (single node or multi-node with VMs)
 - **Full CI/CD pipeline** (GitLab, Jenkins, artifact storage)
-- **Multiple media servers** ([Plex](/apps/plex), [Jellyfin](/apps/jellyfin)) with software transcoding
+- **Multiple media servers** ([Plex](/apps/plex/), [Jellyfin](/apps/jellyfin/)) with software transcoding
 - **Database servers** (PostgreSQL, MySQL) with ECC-protected memory
 - **Anything a mini PC can run** — but with 10x the headroom
 
@@ -172,9 +172,9 @@ An HP ProLiant Gen10 with dual Xeons and 128GB RAM is a legitimate datacenter-cl
 | Server | Pros | Cons | Price |
 |--------|------|------|-------|
 | **HP ProLiant DL360/380** | iLO, huge used market, well documented | Loud, power hungry | $200-500 |
-| [Dell PowerEdge R630/R730](/hardware/used-enterprise-servers) | iDRAC, equally good, slightly cheaper | Similar noise/power | $150-450 |
-| [Dell OptiPlex Micro](/hardware/used-dell-optiplex) | Quiet, low power, desktop-class | No ECC, limited expansion | $100-300 |
-| [Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre) | Quiet, low power, compact | No ECC, limited expansion | $100-250 |
+| [Dell PowerEdge R630/R730](/hardware/used-enterprise-servers/) | iDRAC, equally good, slightly cheaper | Similar noise/power | $150-450 |
+| [Dell OptiPlex Micro](/hardware/used-dell-optiplex/) | Quiet, low power, desktop-class | No ECC, limited expansion | $100-300 |
+| [Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre/) | Quiet, low power, compact | No ECC, limited expansion | $100-250 |
 
 **HP ProLiant vs Dell PowerEdge** is largely personal preference. Both have excellent remote management (iLO vs iDRAC), similar pricing, and equivalent performance. Buy whichever has a better deal in your market.
 
@@ -191,10 +191,10 @@ An HP ProLiant Gen10 with dual Xeons and 128GB RAM is a legitimate datacenter-cl
 - You have a basement, garage, or closet to absorb the noise
 
 **Skip the ProLiant if:**
-- Your workload fits in 16-32GB RAM (use a [mini PC](/hardware/best-mini-pc))
-- Noise is a dealbreaker (use a [fanless mini PC](/hardware/fanless-mini-pc) or [silent build](/hardware/silent-fanless-home-server))
-- Power costs concern you (use a [low-power server](/hardware/low-power-home-server))
-- You only need file storage (use a [NAS](/hardware/best-nas))
+- Your workload fits in 16-32GB RAM (use a [mini PC](/hardware/best-mini-pc/))
+- Noise is a dealbreaker (use a [fanless mini PC](/hardware/fanless-mini-pc/) or [silent build](/hardware/silent-fanless-home-server/))
+- Power costs concern you (use a [low-power server](/hardware/low-power-home-server/))
+- You only need file storage (use a [NAS](/hardware/best-nas/))
 - You're starting your homelab (start with a mini PC, upgrade later if needed)
 
 ## FAQ
@@ -206,7 +206,7 @@ Gen10. It uses DDR4 (cheap), has modern iLO 5, and prices have dropped into the 
 At idle, a DL360 Gen10 is 35-50 dBA — roughly a loud air conditioner. Under load, 50-65 dBA. You will not want this in a bedroom or living room. Basement, garage, or dedicated closet with the door closed.
 
 ### Can I use desktop drives in a ProLiant?
-Yes, but use drive caddies designed for the server (HP SmartDrive caddies). Desktop drives work physically but lack TLER — see our [NAS vs desktop drives](/hardware/nas-vs-desktop-drives) guide. Enterprise SSDs (used Intel DC S3610/S4610, Samsung PM883) are cheap on eBay and ideal.
+Yes, but use drive caddies designed for the server (HP SmartDrive caddies). Desktop drives work physically but lack TLER — see our [NAS vs desktop drives](/hardware/nas-vs-desktop-drives/) guide. Enterprise SSDs (used Intel DC S3610/S4610, Samsung PM883) are cheap on eBay and ideal.
 
 ### Is the iLO license worth paying for?
 If your server came without iLO Advanced, you can buy a license for ~$30-50 (used keys on eBay). It's worth it for the remote KVM console alone — being able to install an OS remotely without connecting a monitor is invaluable.
@@ -216,11 +216,11 @@ A single-CPU DL360 Gen10 idles at ~80-100W. At $0.12/kWh, that's $84-105/year. A
 
 ## Related
 
-- [Used Dell OptiPlex Home Server](/hardware/used-dell-optiplex)
-- [Used Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre)
-- [Used Enterprise Servers](/hardware/used-enterprise-servers)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Home Server Rack Setup](/hardware/home-server-rack)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
+- [Used Dell OptiPlex Home Server](/hardware/used-dell-optiplex/)
+- [Used Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre/)
+- [Used Enterprise Servers](/hardware/used-enterprise-servers/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Home Server Rack Setup](/hardware/home-server-rack/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)

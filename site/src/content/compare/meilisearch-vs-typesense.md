@@ -148,8 +148,8 @@ If you're adding search to a personal project, blog, or documentation site — s
 
 ## Related
 
-- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Replace Google Search](/replace/google-search)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Replace Google Search](/replace/google-search/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

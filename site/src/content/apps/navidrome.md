@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (minimum)
 - Disk space for your music library
 - A domain name (optional, for remote access)
@@ -156,7 +156,7 @@ music.example.com {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for complete instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for complete instructions.
 
 ## Backup
 
@@ -164,7 +164,7 @@ Back up the `./data` directory. This contains:
 - The SQLite database (user accounts, playlists, play counts, ratings)
 - Album art cache
 
-Your music files are the source of truth and should be backed up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+Your music files are the source of truth and should be backed up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ```bash
 # Simple backup
@@ -210,19 +210,19 @@ Navidrome is one of the lightest music servers available. It runs comfortably on
 
 Navidrome is the best self-hosted music server for most people. It's lightweight, fast, has a clean web UI, and supports the Subsonic API — giving you access to dozens of polished mobile apps. If you have a personal music collection and want to stream it from anywhere, Navidrome is the answer.
 
-The main limitation is that it's music-only. If you need video streaming too, look at [Jellyfin](/apps/jellyfin) instead. For a music-specific server with more features (but heavier resource usage), consider Jellyfin's music capabilities or Funkwhale for social music sharing.
+The main limitation is that it's music-only. If you need video streaming too, look at [Jellyfin](/apps/jellyfin/) instead. For a music-specific server with more features (but heavier resource usage), consider Jellyfin's music capabilities or Funkwhale for social music sharing.
 
 ## Related
 
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic)
-- [Navidrome vs Emby](/compare/navidrome-vs-emby)
-- [Plex vs Navidrome](/compare/plex-vs-navidrome)
-- [Self-Hosted Spotify Alternative](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
+- [Navidrome vs Emby](/compare/navidrome-vs-emby/)
+- [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Self-Hosted Spotify Alternative](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

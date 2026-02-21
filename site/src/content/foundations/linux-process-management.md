@@ -21,9 +21,9 @@ If you self-host more than a couple of services, you will eventually hit a situa
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ recommended) — see [Getting Started](/foundations/getting-started)
-- SSH access with sudo privileges ([SSH Setup Guide](/foundations/ssh-setup))
-- Basic terminal familiarity ([Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting))
+- A Linux server (Ubuntu 22.04+ recommended) — see [Getting Started](/foundations/getting-started/)
+- SSH access with sudo privileges ([SSH Setup Guide](/foundations/ssh-setup/))
+- Basic terminal familiarity ([Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/))
 - `htop` installed: `sudo apt install htop -y`
 
 ## Essential Commands
@@ -280,8 +280,8 @@ ps aux | grep big-backup
 |----------|------|
 | Quick one-off command that must survive SSH disconnect | `nohup cmd &` |
 | Already running, need to detach before logout | `Ctrl+Z`, `bg`, `disown` |
-| Interactive session that must persist across SSH reconnects | `tmux` or `screen` ([tmux and screen](/foundations/tmux-screen-basics)) |
-| Service that should always run and restart on crash | systemd ([systemd guide](/foundations/linux-systemd)) |
+| Interactive session that must persist across SSH reconnects | `tmux` or `screen` ([tmux and screen](/foundations/tmux-screen-basics/)) |
+| Service that should always run and restart on crash | systemd ([systemd guide](/foundations/linux-systemd/)) |
 
 **The recommendation:** For anything that needs to run permanently, use systemd. For interactive work sessions, use tmux. Reserve `nohup` and `disown` for one-off tasks like migrations and large backups.
 
@@ -311,7 +311,7 @@ docker inspect --format '{{.State.Pid}}' immich-server
 sudo renice 5 -p 1512
 ```
 
-For persistent priority control on Docker containers, use Docker Compose resource limits instead — see [Docker Performance Tuning](/foundations/docker-performance-tuning).
+For persistent priority control on Docker containers, use Docker Compose resource limits instead — see [Docker Performance Tuning](/foundations/docker-performance-tuning/).
 
 ## Monitoring Resource Usage per Process
 
@@ -496,9 +496,9 @@ tmux new -s migration
 tmux attach -t migration
 ```
 
-See [tmux and screen](/foundations/tmux-screen-basics) for a full guide on terminal multiplexers.
+See [tmux and screen](/foundations/tmux-screen-basics/) for a full guide on terminal multiplexers.
 
-**For recurring tasks**, do not use nohup or tmux. Create a systemd service or timer instead — see [systemd Services](/foundations/linux-systemd).
+**For recurring tasks**, do not use nohup or tmux. Create a systemd service or timer instead — see [systemd Services](/foundations/linux-systemd/).
 
 ## Common Mistakes
 
@@ -534,7 +534,7 @@ dmesg | grep -i "oom"
 sudo journalctl -k | grep -i "out of memory"
 ```
 
-If you see OOM kills, either add more RAM, add swap space ([Linux Swap and Memory](/foundations/linux-swap-memory)), or set Docker memory limits to control which containers get killed first.
+If you see OOM kills, either add more RAM, add swap space ([Linux Swap and Memory](/foundations/linux-swap-memory/)), or set Docker memory limits to control which containers get killed first.
 
 ### Confusing VSZ with Actual Memory Usage
 
@@ -571,15 +571,15 @@ Both. `docker stats` shows resource usage per container with proper container na
 
 ### How do I automatically restart a crashed process?
 
-Use systemd. Create a service unit file with `Restart=on-failure` and `RestartSec=5`. systemd will automatically restart the process if it exits with an error code. For Docker containers, use `restart: unless-stopped` in your Docker Compose file. See [systemd Services](/foundations/linux-systemd) for the full setup.
+Use systemd. Create a service unit file with `Restart=on-failure` and `RestartSec=5`. systemd will automatically restart the process if it exits with an error code. For Docker containers, use `restart: unless-stopped` in your Docker Compose file. See [systemd Services](/foundations/linux-systemd/) for the full setup.
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Systemd Services for Self-Hosting](/foundations/linux-systemd)
-- [Monitoring Your Home Server](/foundations/monitoring-basics)
-- [tmux and screen Basics](/foundations/tmux-screen-basics)
-- [Docker Performance Tuning](/foundations/docker-performance-tuning)
-- [Linux Swap and Memory Management](/foundations/linux-swap-memory)
-- [Container Logging and Debugging](/foundations/container-logging)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Systemd Services for Self-Hosting](/foundations/linux-systemd/)
+- [Monitoring Your Home Server](/foundations/monitoring-basics/)
+- [tmux and screen Basics](/foundations/tmux-screen-basics/)
+- [Docker Performance Tuning](/foundations/docker-performance-tuning/)
+- [Linux Swap and Memory Management](/foundations/linux-swap-memory/)
+- [Container Logging and Debugging](/foundations/container-logging/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

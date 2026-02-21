@@ -21,8 +21,8 @@ For self-hosted servers, swap is a safety net, not a performance feature. If you
 
 ## Prerequisites
 
-- Root access to your Linux server ([SSH Setup](/foundations/ssh-setup))
-- Basic Linux command line skills ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Root access to your Linux server ([SSH Setup](/foundations/ssh-setup/))
+- Basic Linux command line skills ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Checking Current Memory and Swap
 
@@ -154,7 +154,7 @@ services:
     restart: unless-stopped
 ```
 
-See [Docker Resource Limits](/foundations/docker-resource-limits) for detailed guidance.
+See [Docker Resource Limits](/foundations/docker-resource-limits/) for detailed guidance.
 
 ### The OOM Killer
 
@@ -251,10 +251,10 @@ Self-hosting is addictive. Running 20 containers on 4 GB of RAM doesn't work, ev
 
 ## Next Steps
 
-- Set memory limits per container with [Docker Resource Limits](/foundations/docker-resource-limits)
-- Monitor your server with [Monitoring Basics](/foundations/monitoring-basics)
-- Choose the right hardware at [SSD vs HDD](/foundations/ssd-vs-hdd-servers)
-- Plan your server capacity with [Storage Planning](/foundations/storage-planning)
+- Set memory limits per container with [Docker Resource Limits](/foundations/docker-resource-limits/)
+- Monitor your server with [Monitoring Basics](/foundations/monitoring-basics/)
+- Choose the right hardware at [SSD vs HDD](/foundations/ssd-vs-hdd-servers/)
+- Plan your server capacity with [Storage Planning](/foundations/storage-planning/)
 
 ## FAQ
 
@@ -287,9 +287,9 @@ This requires enough free RAM to absorb the current swap contents while it's dis
 
 ## Related
 
-- [Docker Resource Limits](/foundations/docker-resource-limits)
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Docker Performance Tuning](/foundations/docker-performance-tuning)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [SSD vs HDD for Servers](/foundations/ssd-vs-hdd-servers)
+- [Docker Resource Limits](/foundations/docker-resource-limits/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Docker Performance Tuning](/foundations/docker-performance-tuning/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [SSD vs HDD for Servers](/foundations/ssd-vs-hdd-servers/)

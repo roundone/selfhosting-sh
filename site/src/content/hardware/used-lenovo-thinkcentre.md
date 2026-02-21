@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-**The Lenovo ThinkCentre M720q Tiny or M920q Tiny with an i5-8500T is the best used Lenovo for self-hosting.** Expect to pay $90-150 on eBay. It's comparable to a [Dell OptiPlex Micro](/hardware/used-dell-optiplex) — same generation CPUs, similar size, same use case. Buy whichever is cheaper on the day you order.
+**The Lenovo ThinkCentre M720q Tiny or M920q Tiny with an i5-8500T is the best used Lenovo for self-hosting.** Expect to pay $90-150 on eBay. It's comparable to a [Dell OptiPlex Micro](/hardware/used-dell-optiplex/) — same generation CPUs, similar size, same use case. Buy whichever is cheaper on the day you order.
 
 ## Best Models for Self-Hosting
 
@@ -55,7 +55,7 @@ Both are enterprise mini desktops with the same CPUs, similar specs, and compara
 
 ## Setup Guide
 
-Setup is identical to the [Dell OptiPlex server setup](/hardware/used-dell-optiplex) — they use the same Intel CPUs and standard components.
+Setup is identical to the [Dell OptiPlex server setup](/hardware/used-dell-optiplex/) — they use the same Intel CPUs and standard components.
 
 ### BIOS Configuration
 
@@ -108,16 +108,16 @@ Essentially identical to the Dell OptiPlex Micro with the same CPU. Annual cost 
 
 ## What You Can Run
 
-Same as the [Dell OptiPlex](/hardware/used-dell-optiplex) — the hardware is equivalent. With i5-8500T and 16 GB RAM:
+Same as the [Dell OptiPlex](/hardware/used-dell-optiplex/) — the hardware is equivalent. With i5-8500T and 16 GB RAM:
 
-- [Pi-hole](/apps/pi-hole), [Nextcloud](/apps/nextcloud), [Jellyfin](/apps/jellyfin), [Vaultwarden](/apps/vaultwarden)
-- [Home Assistant](/apps/home-assistant), [Uptime Kuma](/apps/uptime-kuma), [Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Immich](/apps/immich), [Paperless-ngx](/apps/paperless-ngx), [Syncthing](/apps/syncthing)
+- [Pi-hole](/apps/pi-hole/), [Nextcloud](/apps/nextcloud/), [Jellyfin](/apps/jellyfin/), [Vaultwarden](/apps/vaultwarden/)
+- [Home Assistant](/apps/home-assistant/), [Uptime Kuma](/apps/uptime-kuma/), [Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Immich](/apps/immich/), [Paperless-ngx](/apps/paperless-ngx/), [Syncthing](/apps/syncthing/)
 - 20+ Docker containers simultaneously
 
 With 32-64 GB RAM (M720q/M920q support this):
 - Proxmox with 3-5 VMs
-- Heavy applications like [GitLab CE](/apps/gitlab) or [Matrix](/apps/matrix)
+- Heavy applications like [GitLab CE](/apps/gitlab/) or [Matrix](/apps/matrix/)
 
 ## The M920x: The PCIe Exception
 
@@ -145,9 +145,9 @@ Yes. Some homelab users run 2-3 ThinkCentre/OptiPlex Micros as a Proxmox cluster
 
 ## Related
 
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -15,17 +15,17 @@ affiliateDisclosure: false
 
 ## What Is Nginx?
 
-Nginx (pronounced "engine-x") is a high-performance web server and reverse proxy. Understanding nginx configuration is essential for self-hosting because it powers several of the most popular reverse proxy tools — including [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup), which wraps nginx in a GUI. Even if you use a GUI tool day-to-day, you will eventually need to read or edit raw nginx config files when troubleshooting, tuning performance, or doing something the GUI does not support.
+Nginx (pronounced "engine-x") is a high-performance web server and reverse proxy. Understanding nginx configuration is essential for self-hosting because it powers several of the most popular reverse proxy tools — including [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/), which wraps nginx in a GUI. Even if you use a GUI tool day-to-day, you will eventually need to read or edit raw nginx config files when troubleshooting, tuning performance, or doing something the GUI does not support.
 
-Be pragmatic here: for most self-hosters, [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) or Caddy covers 90% of reverse proxy needs without touching config files. But when you need fine-grained control — custom headers, specific caching rules, rate limiting, load balancing across multiple containers — raw nginx config is the tool. This guide teaches you how to read it, write it, and debug it.
+Be pragmatic here: for most self-hosters, [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) or Caddy covers 90% of reverse proxy needs without touching config files. But when you need fine-grained control — custom headers, specific caching rules, rate limiting, load balancing across multiple containers — raw nginx config is the tool. This guide teaches you how to read it, write it, and debug it.
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started](/foundations/getting-started)
-- [Docker and Docker Compose installed](/foundations/docker-compose-basics) (for the Docker-based examples)
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started](/foundations/getting-started/)
+- [Docker and Docker Compose installed](/foundations/docker-compose-basics/) (for the Docker-based examples)
 - Basic familiarity with the Linux command line
 - A domain name pointed at your server (optional, but needed for SSL examples)
-- Ports 80 and 443 open on your firewall and forwarded through your router — see [Ports Explained](/foundations/ports-explained)
+- Ports 80 and 443 open on your firewall and forwarded through your router — see [Ports Explained](/foundations/ports-explained/)
 
 ## Nginx Config File Structure
 
@@ -278,7 +278,7 @@ docker compose exec nginx nginx -s reload
 
 ## Reverse Proxy Configuration
 
-This is the primary use case for nginx in self-hosting — sitting in front of your apps and forwarding traffic to them. For a broader overview of reverse proxy concepts, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+This is the primary use case for nginx in self-hosting — sitting in front of your apps and forwarding traffic to them. For a broader overview of reverse proxy concepts, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 Here is a complete reverse proxy configuration for a self-hosted app like Jellyfin:
 
@@ -356,11 +356,11 @@ proxy_pass http://127.0.0.1:8096;
 proxy_pass http://jellyfin:8096;
 ```
 
-When both are in Docker, put them on the same Docker network. See [Docker Compose Basics](/foundations/docker-compose-basics) for how Docker networking works across Compose files.
+When both are in Docker, put them on the same Docker network. See [Docker Compose Basics](/foundations/docker-compose-basics/) for how Docker networking works across Compose files.
 
 ## SSL/TLS Configuration
 
-For a full explanation of SSL certificates, see [SSL Certificates](/foundations/ssl-certificates). For automated certificate management with Let's Encrypt, see [Let's Encrypt Explained](/foundations/lets-encrypt-explained).
+For a full explanation of SSL certificates, see [SSL Certificates](/foundations/ssl-certificates/). For automated certificate management with Let's Encrypt, see [Let's Encrypt Explained](/foundations/lets-encrypt-explained/).
 
 Here is a solid SSL configuration block. Create a shared snippet at `/etc/nginx/conf.d/ssl-params.conf` and include it in every server block that uses HTTPS:
 
@@ -632,21 +632,21 @@ Put site-specific configs in `/etc/nginx/conf.d/` as separate `.conf` files. Edi
 
 ## Next Steps
 
-- Set up [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) if you want a GUI on top of nginx
-- Learn about [SSL certificates](/foundations/ssl-certificates) and [Let's Encrypt](/foundations/lets-encrypt-explained) for automated HTTPS
-- Understand [reverse proxy concepts](/foundations/reverse-proxy-explained) to choose between nginx, Caddy, and Traefik
-- Review [Docker Compose basics](/foundations/docker-compose-basics) for running nginx and your apps in containers
-- Read about [port forwarding](/foundations/ports-explained) if you are exposing services from a home network
+- Set up [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) if you want a GUI on top of nginx
+- Learn about [SSL certificates](/foundations/ssl-certificates/) and [Let's Encrypt](/foundations/lets-encrypt-explained/) for automated HTTPS
+- Understand [reverse proxy concepts](/foundations/reverse-proxy-explained/) to choose between nginx, Caddy, and Traefik
+- Review [Docker Compose basics](/foundations/docker-compose-basics/) for running nginx and your apps in containers
+- Read about [port forwarding](/foundations/ports-explained/) if you are exposing services from a home network
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Ports Explained](/foundations/ports-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Let's Encrypt Explained](/foundations/lets-encrypt-explained)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Docker Networking](/foundations/docker-networking)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Ports Explained](/foundations/ports-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Let's Encrypt Explained](/foundations/lets-encrypt-explained/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Docker Networking](/foundations/docker-networking/)
 
 ## FAQ
 

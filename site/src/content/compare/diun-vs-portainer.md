@@ -73,7 +73,7 @@ If you can only pick one: Portainer is more broadly useful since Docker manageme
 
 ### Why not just use Watchtower instead of Diun?
 
-Watchtower auto-updates containers, which can break things without warning. Diun only notifies — you decide when to update. For critical self-hosted services (password managers, file sync), notification-only is safer. See our [Watchtower vs Diun comparison](/compare/watchtower-vs-diun).
+Watchtower auto-updates containers, which can break things without warning. Diun only notifies — you decide when to update. For critical self-hosted services (password managers, file sync), notification-only is safer. See our [Watchtower vs Diun comparison](/compare/watchtower-vs-diun/).
 
 ### Can Portainer check for available updates?
 
@@ -85,9 +85,9 @@ Yes. Diun supports Docker Hub, GitHub Container Registry, GitLab Registry, and a
 
 ## Related
 
-- [How to Self-Host Diun](/apps/diun)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Watchtower vs Portainer](/compare/watchtower-vs-portainer)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Diun](/apps/diun/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Watchtower vs Portainer](/compare/watchtower-vs-portainer/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -53,7 +53,7 @@ Garage is a lightweight S3-compatible object storage system built in Rust by the
 
 **MinIO** was straightforward to deploy — a single binary or container with minimal configuration. However, since the project is archived, you'd be running unmaintained software with no security patches.
 
-**Garage** requires a TOML configuration file and a few more setup steps (generating an RPC secret, configuring the cluster layout), but the process is well-documented. For a single-node deployment, it's about 10 minutes of work. See our [full Garage setup guide](/apps/garage).
+**Garage** requires a TOML configuration file and a few more setup steps (generating an RPC secret, configuring the cluster layout), but the process is well-documented. For a single-node deployment, it's about 10 minutes of work. See our [full Garage setup guide](/apps/garage/).
 
 ## Performance and Resource Usage
 
@@ -88,7 +88,7 @@ Garage uses Zstandard compression by default, which can significantly reduce sto
 If you're running MinIO and want to migrate:
 
 1. **Export your data** using `mc mirror` or `rclone sync` from your MinIO instance
-2. **Set up Garage** following our [Garage setup guide](/apps/garage)
+2. **Set up Garage** following our [Garage setup guide](/apps/garage/)
 3. **Create matching buckets** in Garage using the `garage` CLI
 4. **Sync data** using `rclone sync` from MinIO to Garage (both support S3 protocol)
 5. **Update application configs** to point to Garage's S3 endpoint (port 3900 by default)
@@ -125,10 +125,10 @@ Yes. Garage has been used in production by Deuxfleurs and other organizations si
 
 ## Related
 
-- [How to Self-Host Garage](/apps/garage)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Garage](/apps/garage/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

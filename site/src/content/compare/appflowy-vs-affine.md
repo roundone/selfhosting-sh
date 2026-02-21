@@ -105,9 +105,9 @@ For production team use: AppFlowy. For personal experimentation: AFFiNE is worth
 
 ## Related
 
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [How to Self-Host AFFiNE](/apps/affine)
-- [How to Self-Host Outline](/apps/outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [How to Self-Host AFFiNE](/apps/affine/)
+- [How to Self-Host Outline](/apps/outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

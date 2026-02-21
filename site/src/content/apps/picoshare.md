@@ -23,12 +23,12 @@ affiliateDisclosure: false
 
 [PicoShare](https://github.com/mtlynch/picoshare) is a minimalist, self-hosted file sharing service. Upload a file, get a shareable link with optional expiry. That's it — no accounts for recipients, no complicated configuration, no JavaScript frameworks. Just a Go binary, a SQLite database, and a clean web UI.
 
-PicoShare is built by Michael Lynch (mtlynch), known for writing clear, well-engineered software. It's designed for simplicity: one container, one volume, one environment variable to get started. It replaces quick file sharing needs without the overhead of a full platform like [Nextcloud](/apps/nextcloud).
+PicoShare is built by Michael Lynch (mtlynch), known for writing clear, well-engineered software. It's designed for simplicity: one container, one volume, one environment variable to get started. It replaces quick file sharing needs without the overhead of a full platform like [Nextcloud](/apps/nextcloud/).
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - Disk space for uploaded files
 - A domain name (optional but recommended)
@@ -115,7 +115,7 @@ PicoShare supports guest upload links — generate a temporary URL that allows s
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 share.example.com {
@@ -135,7 +135,7 @@ docker run --rm -v picoshare-data:/data -v $(pwd):/backup alpine \
   tar czf /backup/picoshare-backup-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -162,14 +162,14 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 ## Verdict
 
-PicoShare is the most minimal file sharing tool you can self-host. One container, one env var, zero dependencies. It's perfect for quick "here's a file" sharing without the overhead of [Send](/apps/send) (which adds Redis and end-to-end encryption) or [Zipline](/apps/zipline) (which adds PostgreSQL and a full dashboard).
+PicoShare is the most minimal file sharing tool you can self-host. One container, one env var, zero dependencies. It's perfect for quick "here's a file" sharing without the overhead of [Send](/apps/send/) (which adds Redis and end-to-end encryption) or [Zipline](/apps/zipline/) (which adds PostgreSQL and a full dashboard).
 
-The trade-off is features — no end-to-end encryption, no ShareX integration, no multi-user support. If you need those, look at [Send](/apps/send) or [Zipline](/apps/zipline). If you just want to share files with minimal setup, PicoShare is hard to beat.
+The trade-off is features — no end-to-end encryption, no ShareX integration, no multi-user support. If you need those, look at [Send](/apps/send/) or [Zipline](/apps/zipline/). If you just want to share files with minimal setup, PicoShare is hard to beat.
 
 ## Frequently Asked Questions
 
 ### Does PicoShare encrypt files?
-No. Files are stored unencrypted in the SQLite database. For end-to-end encryption, use [Send](/apps/send).
+No. Files are stored unencrypted in the SQLite database. For end-to-end encryption, use [Send](/apps/send/).
 
 ### Can multiple people share files through PicoShare?
 There's one shared admin account (via the shared secret). Guest upload links let others upload without the admin password, but there's no multi-user management.
@@ -179,10 +179,10 @@ PicoShare has no built-in file size limit. The constraint is your server's disk 
 
 ## Related
 
-- [How to Self-Host Send](/apps/send)
-- [How to Self-Host Gokapi](/apps/gokapi)
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Send](/apps/send/)
+- [How to Self-Host Gokapi](/apps/gokapi/)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

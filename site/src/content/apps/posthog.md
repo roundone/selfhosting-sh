@@ -26,7 +26,7 @@ PostHog is an open-source product analytics platform that combines event trackin
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose v2.33.1+ installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose v2.33.1+ installed ([guide](/foundations/docker-compose-basics/))
 - 30 GB of free disk space minimum
 - 8 GB of RAM minimum (16 GB recommended)
 - 4 vCPUs minimum
@@ -128,7 +128,7 @@ web:
     - "8000:8000"
 ```
 
-Then configure your existing reverse proxy ([Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy)) to forward to port 8000.
+Then configure your existing reverse proxy ([Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), or [Caddy](/apps/caddy/)) to forward to port 8000.
 
 ### Environment Tuning
 
@@ -154,7 +154,7 @@ docker exec posthog-db-1 pg_dump -U posthog posthog > posthog-pg-backup.sql
 2. **ClickHouse data:** Back up the `clickhouse-data` Docker volume
 3. **Object storage (MinIO):** Back up the `objectstorage` Docker volume
 
-For the full backup strategy, see [Backup Strategy](/foundations/backup-strategy).
+For the full backup strategy, see [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -217,22 +217,22 @@ docker compose logs elasticsearch --tail 50
 - **Disk:** 30 GB minimum, grows with event volume (ClickHouse stores all raw events)
 - **Network:** Ports 80 and 443 for web access
 
-PostHog is the heaviest self-hosted analytics platform. If you want something lighter, consider [Plausible](/apps/plausible) or [Umami](/apps/umami).
+PostHog is the heaviest self-hosted analytics platform. If you want something lighter, consider [Plausible](/apps/plausible/) or [Umami](/apps/umami/).
 
 ## Verdict
 
 PostHog is the most feature-rich self-hosted analytics platform available. If you need product analytics — funnels, cohorts, session replays, feature flags, and A/B testing — nothing else comes close in the self-hosted space. But it's a resource hog. The ~20-service stack needs a dedicated server with at least 8 GB RAM, and it's realistically capped at 100K events/month for the hobby deployment.
 
-For most self-hosters who just want website analytics (pageviews, referrers, top pages), PostHog is overkill. Use [Plausible](/apps/plausible) or [Umami](/apps/umami) instead — they're lighter, simpler, and privacy-focused. But if you're building a product and need deep user behavior insights without sending data to third parties, PostHog is the answer.
+For most self-hosters who just want website analytics (pageviews, referrers, top pages), PostHog is overkill. Use [Plausible](/apps/plausible/) or [Umami](/apps/umami/) instead — they're lighter, simpler, and privacy-focused. But if you're building a product and need deep user behavior insights without sending data to third parties, PostHog is the answer.
 
 ## Related
 
-- [How to Self-Host Plausible](/apps/plausible)
-- [How to Self-Host Umami](/apps/umami)
-- [How to Self-Host Matomo](/apps/matomo)
-- [Plausible vs Umami](/compare/plausible-vs-umami)
-- [Plausible vs Matomo](/compare/plausible-vs-matomo)
-- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
-- [Best Self-Hosted Analytics](/best/analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [How to Self-Host Umami](/apps/umami/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [Plausible vs Umami](/compare/plausible-vs-umami/)
+- [Plausible vs Matomo](/compare/plausible-vs-matomo/)
+- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics/)
+- [Best Self-Hosted Analytics](/best/analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

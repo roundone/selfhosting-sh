@@ -54,9 +54,9 @@ This isn't a comparison between two different VPN protocols — wg-easy **is** W
 
 ## Installation Complexity
 
-**WireGuard (raw):** Install the `wireguard-tools` package, generate server and client key pairs, write `/etc/wireguard/wg0.conf`, configure iptables for NAT, enable IP forwarding, start the interface with `wg-quick up wg0`. Adding each client requires generating a new key pair, adding a `[Peer]` section to the server config, creating a client config file, and restarting. The [LinuxServer.io Docker image](/apps/wireguard) simplifies this somewhat but is still config-file driven.
+**WireGuard (raw):** Install the `wireguard-tools` package, generate server and client key pairs, write `/etc/wireguard/wg0.conf`, configure iptables for NAT, enable IP forwarding, start the interface with `wg-quick up wg0`. Adding each client requires generating a new key pair, adding a `[Peer]` section to the server config, creating a client config file, and restarting. The [LinuxServer.io Docker image](/apps/wireguard/) simplifies this somewhat but is still config-file driven.
 
-**wg-easy:** Create a `docker-compose.yml` with the wg-easy image, set your public hostname and admin password, run `docker compose up -d`. Adding a client takes 10 seconds through the web UI. See our [wg-easy Docker guide](/apps/wg-easy).
+**wg-easy:** Create a `docker-compose.yml` with the wg-easy image, set your public hostname and admin password, run `docker compose up -d`. Adding a client takes 10 seconds through the web UI. See our [wg-easy Docker guide](/apps/wg-easy/).
 
 Winner: **wg-easy**, by a wide margin. The web UI eliminates the most tedious part of running a WireGuard VPN — client management.
 
@@ -129,10 +129,10 @@ Yes, but restrict access. Either put port 51821 behind a reverse proxy with auth
 
 ## Related
 
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

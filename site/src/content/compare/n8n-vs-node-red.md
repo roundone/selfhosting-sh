@@ -152,10 +152,10 @@ Node-RED has a dedicated Home Assistant palette (`node-red-contrib-home-assistan
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [n8n vs Huginn](/compare/n8n-vs-huginn)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [n8n vs Huginn](/compare/n8n-vs-huginn/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

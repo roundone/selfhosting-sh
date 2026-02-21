@@ -29,7 +29,7 @@ The server handles synchronization between Joplin clients. You write and read no
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum
 - 5 GB of free disk space (scales with note and attachment volume)
 - A domain name (required for HTTPS sync)
@@ -178,7 +178,7 @@ Set up a reverse proxy to access Joplin Server over HTTPS. Point your proxy to p
 
 Ensure the `APP_BASE_URL` matches the external URL exactly.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -191,7 +191,7 @@ Restore: `cat joplin_backup.sql | docker compose exec -T postgres psql -U joplin
 
 Note: If you use Joplin's E2EE, the database backup contains encrypted data. You need the master password to decrypt after restore.
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -230,17 +230,17 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 Joplin Server is the best self-hosted sync solution if you're already using or planning to use Joplin as your note-taking app. The client apps are solid (especially the desktop app), Markdown support is excellent, and E2EE provides genuine privacy.
 
-The main limitation is that Joplin Server is primarily a sync backend — the web interface is basic. If you want a full web-based note experience, [Outline](/apps/outline) or [BookStack](/apps/bookstack) are better. If you want a personal knowledge base with hierarchical notes and relation maps, [Trilium](/apps/trilium) offers more organizational power. But for syncing Markdown notes across devices with end-to-end encryption, Joplin Server is the right tool.
+The main limitation is that Joplin Server is primarily a sync backend — the web interface is basic. If you want a full web-based note experience, [Outline](/apps/outline/) or [BookStack](/apps/bookstack/) are better. If you want a personal knowledge base with hierarchical notes and relation maps, [Trilium](/apps/trilium/) offers more organizational power. But for syncing Markdown notes across devices with end-to-end encryption, Joplin Server is the right tool.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [Joplin vs SiYuan](/compare/joplin-vs-siyuan)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [Replace Evernote](/replace/evernote)
-- [Replace OneNote](/replace/onenote)
-- [Replace Notion](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [Joplin vs SiYuan](/compare/joplin-vs-siyuan/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [Replace Evernote](/replace/evernote/)
+- [Replace OneNote](/replace/onenote/)
+- [Replace Notion](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -118,9 +118,9 @@ Both validate DNSSEC. Unbound has DNSSEC enabled by default and has been the ref
 
 ## Related
 
-- [Unbound vs CoreDNS](/compare/unbound-vs-coredns)
-- [Pi-hole vs AdGuard Home DNS](/compare/pihole-vs-adguard-dns)
-- [How to Self-Host Technitium](/apps/technitium)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [Blocky vs Pi-hole](/compare/blocky-vs-pihole)
-- [Best Self-Hosted DNS](/best/dns-networking)
+- [Unbound vs CoreDNS](/compare/unbound-vs-coredns/)
+- [Pi-hole vs AdGuard Home DNS](/compare/pihole-vs-adguard-dns/)
+- [How to Self-Host Technitium](/apps/technitium/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [Blocky vs Pi-hole](/compare/blocky-vs-pihole/)
+- [Best Self-Hosted DNS](/best/dns-networking/)

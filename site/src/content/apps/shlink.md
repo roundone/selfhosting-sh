@@ -20,12 +20,12 @@ affiliateDisclosure: false
 
 ## What Is Shlink?
 
-Shlink is a modern, API-first URL shortener with a clean web client. It supports custom slugs, QR code generation, device-specific redirects, tag-based organization, and detailed visit analytics — all built-in without plugins. Unlike [YOURLS](/apps/yourls) which is PHP/jQuery, Shlink is built on PHP 8 with Swoole for high performance and ships with a React-based web client. [Official site](https://shlink.io/)
+Shlink is a modern, API-first URL shortener with a clean web client. It supports custom slugs, QR code generation, device-specific redirects, tag-based organization, and detailed visit analytics — all built-in without plugins. Unlike [YOURLS](/apps/yourls/) which is PHP/jQuery, Shlink is built on PHP 8 with Swoole for high performance and ships with a React-based web client. [Official site](https://shlink.io/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM minimum
 - A domain name for your short URLs
@@ -216,7 +216,7 @@ Your reverse proxy should send traffic to:
 
 Example: `sho.rt` → port 8080, `admin.sho.rt` → port 8081
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -224,7 +224,7 @@ Example: `sho.rt` → port 8080, `admin.sho.rt` → port 8081
 docker compose exec shlink_db mariadb-dump -u shlink -p shlink > shlink-backup-$(date +%Y%m%d).sql
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -256,7 +256,7 @@ docker compose exec shlink_db mariadb-dump -u shlink -p shlink > shlink-backup-$
 
 ## Verdict
 
-Shlink is the best URL shortener for developers and API-driven workflows. The built-in QR codes, device-specific redirects, and multi-domain support are features that YOURLS only gets through plugins. The separate web client means you can run the API server on your short domain and the management UI on a different domain or behind authentication. For a simpler, more established option, [YOURLS](/apps/yourls) is the alternative.
+Shlink is the best URL shortener for developers and API-driven workflows. The built-in QR codes, device-specific redirects, and multi-domain support are features that YOURLS only gets through plugins. The separate web client means you can run the API server on your short domain and the management UI on a different domain or behind authentication. For a simpler, more established option, [YOURLS](/apps/yourls/) is the alternative.
 
 ## FAQ
 
@@ -274,10 +274,10 @@ No. The API server works standalone — you can create and manage URLs entirely 
 
 ## Related
 
-- [How to Self-Host YOURLS](/apps/yourls)
-- [How to Self-Host PrivateBin](/apps/privatebin)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [HTTPS Setup for Self-Hosted Services](/foundations/https-everywhere)
-- [Database Basics for Self-Hosting](/foundations/database-basics)
+- [How to Self-Host YOURLS](/apps/yourls/)
+- [How to Self-Host PrivateBin](/apps/privatebin/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [HTTPS Setup for Self-Hosted Services](/foundations/https-everywhere/)
+- [Database Basics for Self-Hosting](/foundations/database-basics/)

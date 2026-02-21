@@ -31,7 +31,7 @@ SSH is the primary target for automated attacks. Thousands of bots scan the inte
   PasswordAuthentication no
   PubkeyAuthentication yes
   ```
-  See [SSH Setup](/foundations/ssh-setup) for the complete guide.
+  See [SSH Setup](/foundations/ssh-setup/) for the complete guide.
 
 - [ ] **Disable root login over SSH**
   ```bash
@@ -54,7 +54,7 @@ SSH is the primary target for automated attacks. Thousands of bots scan the inte
   ```bash
   sudo apt install -y fail2ban
   ```
-  See [Fail2ban Setup](/foundations/fail2ban) for configuration.
+  See [Fail2ban Setup](/foundations/fail2ban/) for configuration.
 
 - [ ] **Limit SSH access to specific users**
   ```bash
@@ -73,7 +73,7 @@ A firewall blocks all traffic except what you explicitly allow. Without one, eve
   sudo ufw allow ssh    # or your custom SSH port
   sudo ufw enable
   ```
-  See [Firewall Setup with UFW](/foundations/firewall-ufw) for the full guide.
+  See [Firewall Setup with UFW](/foundations/firewall-ufw/) for the full guide.
 
 - [ ] **Only open ports you actually use** — every open port is an attack surface
 - [ ] **Review open ports regularly**
@@ -96,7 +96,7 @@ Unpatched software is the most common way servers get compromised after weak SSH
   sudo apt update && sudo apt upgrade -y
   ```
 
-- [ ] **Update Docker images regularly** — see [Updating Docker Containers](/foundations/docker-updating)
+- [ ] **Update Docker images regularly** — see [Updating Docker Containers](/foundations/docker-updating/)
 
 - [ ] **Subscribe to security advisories** for software you run (GitHub watch → releases)
 
@@ -145,14 +145,14 @@ Docker containers add their own security considerations.
       internal: true  # Not accessible from host network
   ```
 
-See [Docker Security Best Practices](/foundations/docker-security) for the complete guide.
+See [Docker Security Best Practices](/foundations/docker-security/) for the complete guide.
 
 ### Reverse Proxy Security (High Priority)
 
 Your reverse proxy is the front door to all services.
 
 - [ ] **Force HTTPS everywhere** — redirect all HTTP to HTTPS
-- [ ] **Use automatic SSL certificates** from Let's Encrypt — see [Let's Encrypt Explained](/foundations/lets-encrypt-explained)
+- [ ] **Use automatic SSL certificates** from Let's Encrypt — see [Let's Encrypt Explained](/foundations/lets-encrypt-explained/)
 - [ ] **Set security headers**
   ```
   Strict-Transport-Security: max-age=31536000; includeSubDomains
@@ -160,7 +160,7 @@ Your reverse proxy is the front door to all services.
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   ```
-- [ ] **Don't expose admin interfaces** (Portainer, database admin tools) to the internet — use SSH tunnels or VPN instead. See [SSH Tunneling](/foundations/ssh-tunneling)
+- [ ] **Don't expose admin interfaces** (Portainer, database admin tools) to the internet — use SSH tunnels or VPN instead. See [SSH Tunneling](/foundations/ssh-tunneling/)
 - [ ] **Rate-limit authentication endpoints**
 - [ ] **Use basic auth or IP restriction** for sensitive dashboards
 
@@ -171,9 +171,9 @@ Your reverse proxy is the front door to all services.
   openssl rand -base64 32
   ```
 
-- [ ] **Enable two-factor authentication** on every service that supports it — see [Two-Factor Authentication](/foundations/two-factor-auth)
+- [ ] **Enable two-factor authentication** on every service that supports it — see [Two-Factor Authentication](/foundations/two-factor-auth/)
 
-- [ ] **Use a self-hosted password manager** like [Vaultwarden](/apps/vaultwarden) to manage credentials
+- [ ] **Use a self-hosted password manager** like [Vaultwarden](/apps/vaultwarden/) to manage credentials
 
 - [ ] **Change default credentials immediately** after deploying any service
 
@@ -182,17 +182,17 @@ Your reverse proxy is the front door to all services.
 ### Network Security (Medium Priority)
 
 - [ ] **Disable UPnP on your router** — prevents devices from opening ports without your knowledge
-- [ ] **Use VLANs to segment your network** — see [Subnets and VLANs](/foundations/subnets-vlans)
+- [ ] **Use VLANs to segment your network** — see [Subnets and VLANs](/foundations/subnets-vlans/)
   - Servers on one VLAN
   - IoT devices on another (they can't reach your server)
   - Personal devices on a third
-- [ ] **Use Tailscale or WireGuard for remote access** instead of port forwarding — see [Tailscale Setup](/foundations/tailscale-setup) or [WireGuard Setup](/foundations/wireguard-setup)
+- [ ] **Use Tailscale or WireGuard for remote access** instead of port forwarding — see [Tailscale Setup](/foundations/tailscale-setup/) or [WireGuard Setup](/foundations/wireguard-setup/)
 - [ ] **Disable IPv6 if you're not using it** — it can bypass your IPv4 firewall rules
-- [ ] **Minimize port forwarding** — prefer Cloudflare Tunnel for web services. See [Cloudflare Tunnel](/foundations/cloudflare-tunnel)
+- [ ] **Minimize port forwarding** — prefer Cloudflare Tunnel for web services. See [Cloudflare Tunnel](/foundations/cloudflare-tunnel/)
 
 ### Data Protection (Medium Priority)
 
-- [ ] **Follow the 3-2-1 backup rule** — see [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
+- [ ] **Follow the 3-2-1 backup rule** — see [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
 - [ ] **Encrypt backups** — especially off-site backups
 - [ ] **Test backup restores** — a backup you can't restore is not a backup
 - [ ] **Use full-disk encryption** on your server (LUKS) if physical theft is a concern
@@ -201,8 +201,8 @@ Your reverse proxy is the front door to all services.
 
 ### Monitoring and Detection (Medium Priority)
 
-- [ ] **Monitor system resources** — see [Monitoring Basics](/foundations/monitoring-basics)
-- [ ] **Set up uptime monitoring** — use [Uptime Kuma](/apps/uptime-kuma) to alert on service failures
+- [ ] **Monitor system resources** — see [Monitoring Basics](/foundations/monitoring-basics/)
+- [ ] **Set up uptime monitoring** — use [Uptime Kuma](/apps/uptime-kuma/) to alert on service failures
 - [ ] **Review logs regularly**
   ```bash
   # Check auth logs for suspicious activity
@@ -219,8 +219,8 @@ Your reverse proxy is the front door to all services.
 
 ### DNS Security (Lower Priority)
 
-- [ ] **Use encrypted DNS** (DoH or DoT) — see [Encrypted DNS](/foundations/encrypted-dns)
-- [ ] **Run your own DNS resolver** — [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home)
+- [ ] **Use encrypted DNS** (DoH or DoT) — see [Encrypted DNS](/foundations/encrypted-dns/)
+- [ ] **Run your own DNS resolver** — [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/)
 - [ ] **Enable DNSSEC** on your domain if your registrar supports it
 
 ## Quick-Start: Minimum Viable Security
@@ -255,10 +255,10 @@ Default error pages from reverse proxies and web servers can leak software versi
 
 ## Next Steps
 
-- Start with SSH — [SSH Setup](/foundations/ssh-setup)
-- Set up your firewall — [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Harden Docker — [Docker Security Best Practices](/foundations/docker-security)
-- Plan your backups — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
+- Start with SSH — [SSH Setup](/foundations/ssh-setup/)
+- Set up your firewall — [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Harden Docker — [Docker Security Best Practices](/foundations/docker-security/)
+- Plan your backups — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
 
 ## FAQ
 
@@ -280,11 +280,11 @@ Both add mandatory access control that limits what processes can do. Ubuntu ship
 
 ## Related
 
-- [SSH Setup](/foundations/ssh-setup)
-- [Fail2ban Setup](/foundations/fail2ban)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Docker Security Best Practices](/foundations/docker-security)
-- [Two-Factor Authentication](/foundations/two-factor-auth)
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [Monitoring Basics](/foundations/monitoring-basics)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Fail2ban Setup](/foundations/fail2ban/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Docker Security Best Practices](/foundations/docker-security/)
+- [Two-Factor Authentication](/foundations/two-factor-auth/)
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [Monitoring Basics](/foundations/monitoring-basics/)

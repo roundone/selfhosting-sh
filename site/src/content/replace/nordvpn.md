@@ -38,43 +38,43 @@ affiliateDisclosure: false
 
 ### WireGuard + wg-easy — Best Overall Replacement
 
-[wg-easy](/apps/wg-easy) gives you a WireGuard VPN server with a web-based management UI. Create client configs in seconds, generate QR codes for mobile devices, and manage access through a clean interface. It runs as a single Docker container.
+[wg-easy](/apps/wg-easy/) gives you a WireGuard VPN server with a web-based management UI. Create client configs in seconds, generate QR codes for mobile devices, and manage access through a clean interface. It runs as a single Docker container.
 
 **Why it replaces NordVPN:** Encrypted tunnel to your home network or VPS, allowing you to access your self-hosted services securely from anywhere. All traffic can be routed through your server (full tunnel) or only specific traffic (split tunnel).
 
 **Setup time:** 15 minutes including Docker install.
 
-[Read our full guide: [How to Self-Host wg-easy](/apps/wg-easy)]
+[Read our full guide: [How to Self-Host wg-easy](/apps/wg-easy/)]
 
 ### Tailscale — Best for Multiple Devices
 
-[Tailscale](/apps/tailscale) creates a mesh VPN network across all your devices using WireGuard under the hood. Unlike a traditional VPN, traffic goes directly between devices — not through a central server. NAT traversal, DNS, and access controls are automatic.
+[Tailscale](/apps/tailscale/) creates a mesh VPN network across all your devices using WireGuard under the hood. Unlike a traditional VPN, traffic goes directly between devices — not through a central server. NAT traversal, DNS, and access controls are automatic.
 
 **Why it replaces NordVPN:** Secure access to all your devices and services from anywhere, without port forwarding or complex configuration. Free for up to 100 devices.
 
 **Setup time:** 5 minutes per device.
 
-[Read our full guide: [How to Set Up Tailscale](/apps/tailscale)]
+[Read our full guide: [How to Set Up Tailscale](/apps/tailscale/)]
 
 ### Headscale — Best for Full Privacy
 
-[Headscale](/apps/headscale) is a self-hosted replacement for Tailscale's coordination server. You get all the benefits of Tailscale's mesh VPN — automatic NAT traversal, MagicDNS, ACLs — but the coordination server runs on your own infrastructure. Zero dependency on any third-party service.
+[Headscale](/apps/headscale/) is a self-hosted replacement for Tailscale's coordination server. You get all the benefits of Tailscale's mesh VPN — automatic NAT traversal, MagicDNS, ACLs — but the coordination server runs on your own infrastructure. Zero dependency on any third-party service.
 
 **Why it replaces NordVPN:** Same mesh VPN convenience as Tailscale, but with no external service dependency. Your network topology, device keys, and policies never leave your control.
 
 **Setup time:** 45-60 minutes (requires a public server and domain name).
 
-[Read our full guide: [How to Self-Host Headscale](/apps/headscale)]
+[Read our full guide: [How to Self-Host Headscale](/apps/headscale/)]
 
 ### Raw WireGuard — Best for Maximum Control
 
-[WireGuard](/apps/wireguard) gives you the most control over your VPN setup. Run it as a kernel module with manual configuration for peak performance and complete customization. Ideal for site-to-site tunnels and advanced routing.
+[WireGuard](/apps/wireguard/) gives you the most control over your VPN setup. Run it as a kernel module with manual configuration for peak performance and complete customization. Ideal for site-to-site tunnels and advanced routing.
 
 **Why it replaces NordVPN:** The most lightweight, performant VPN option. Runs on anything from a Raspberry Pi to a cloud server. Total control over every aspect of the VPN.
 
 **Setup time:** 30-60 minutes (manual key management and config files).
 
-[Read our full guide: [How to Self-Host WireGuard](/apps/wireguard)]
+[Read our full guide: [How to Self-Host WireGuard](/apps/wireguard/)]
 
 ## Migration Guide
 
@@ -92,7 +92,7 @@ For most users, we recommend **wg-easy** on a VPS:
 
 1. Provision a VPS with Ubuntu 22.04+
 2. Install Docker and Docker Compose
-3. Follow our [wg-easy guide](/apps/wg-easy)
+3. Follow our [wg-easy guide](/apps/wg-easy/)
 4. Forward UDP port 51820 on your VPS firewall
 5. Create client configs for each device
 
@@ -159,11 +159,11 @@ Your ISP can see encrypted traffic going to your VPN server's IP, but they can't
 
 ## Related
 
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [How to Self-Host Headscale](/apps/headscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

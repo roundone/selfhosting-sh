@@ -36,7 +36,7 @@ affiliateDisclosure: false
 
 ### Cloudflare Tunnel — Best Overall Replacement
 
-[Cloudflare Tunnel](/apps/cloudflare-tunnel) creates an encrypted outbound connection from your server to Cloudflare's edge network. It provides a stable public URL for any local service — no port forwarding, no dynamic DNS, no public IP required. Completely free for unlimited tunnels and bandwidth.
+[Cloudflare Tunnel](/apps/cloudflare-tunnel/) creates an encrypted outbound connection from your server to Cloudflare's edge network. It provides a stable public URL for any local service — no port forwarding, no dynamic DNS, no public IP required. Completely free for unlimited tunnels and bandwidth.
 
 **What you get:** Stable public URLs with your own domain, automatic SSL, DDoS protection, Cloudflare Access integration for authentication, web application firewall. All free.
 
@@ -44,7 +44,7 @@ affiliateDisclosure: false
 
 **Requirements:** A Cloudflare account and a domain managed by Cloudflare (free plan works).
 
-[Read our full guide: [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel)]
+[Read our full guide: [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel/)]
 
 ### frp (Fast Reverse Proxy) — Best Fully Self-Hosted
 
@@ -93,7 +93,7 @@ Tailscale Funnel allows you to expose a local service to the public internet thr
 
 ### For Permanent Service Exposure
 
-1. Set up [Cloudflare Tunnel](/apps/cloudflare-tunnel) (30 minutes)
+1. Set up [Cloudflare Tunnel](/apps/cloudflare-tunnel/) (30 minutes)
 2. Point your domain's DNS to Cloudflare (if not already)
 3. Create a tunnel and configure routes to your local services
 4. Update any webhook URLs or DNS records to your new domain
@@ -154,11 +154,11 @@ These are simpler alternatives to ngrok but share the same fundamental issue —
 
 ## Related
 
-- [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel)
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel/)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

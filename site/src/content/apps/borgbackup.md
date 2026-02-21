@@ -331,27 +331,27 @@ Always have a separate backup before running repair.
 
 ### BorgBackup vs Restic — which should I use?
 
-Borg has better compression and is more efficient for local/SSH backups. [Restic](/apps/restic) supports more storage backends (S3, B2, Azure, GCS) and is better for cloud storage. See [Restic vs BorgBackup](/compare/restic-vs-borgbackup).
+Borg has better compression and is more efficient for local/SSH backups. [Restic](/apps/restic/) supports more storage backends (S3, B2, Azure, GCS) and is better for cloud storage. See [Restic vs BorgBackup](/compare/restic-vs-borgbackup/).
 
 ### Can BorgBackup back up to the cloud?
 
-Not natively. Borg works with local paths and SSH. For cloud storage, use [Borgmatic](/apps/borgmatic) with rclone, or use [Restic](/apps/restic) which has native S3/B2 support.
+Not natively. Borg works with local paths and SSH. For cloud storage, use [Borgmatic](/apps/borgmatic/) with rclone, or use [Restic](/apps/restic/) which has native S3/B2 support.
 
 ### What is Borgmatic?
 
-[Borgmatic](/apps/borgmatic) is a wrapper around BorgBackup that simplifies configuration with a YAML config file. It handles creating, pruning, and checking backups automatically. Think of it as "BorgBackup made easy."
+[Borgmatic](/apps/borgmatic/) is a wrapper around BorgBackup that simplifies configuration with a YAML config file. It handles creating, pruning, and checking backups automatically. Think of it as "BorgBackup made easy."
 
 ## Verdict
 
-BorgBackup is rock-solid and extremely space-efficient. The deduplication and compression mean your backups use a fraction of the original data size, and the encryption is strong by default. The main downsides: SSH-only for remote backups (no native cloud storage support), and the CLI can be complex for beginners. For local or SSH-based backups, Borg is the best choice. For cloud backups, use [Restic](/apps/restic). For an easier interface on top of Borg, use [Borgmatic](/apps/borgmatic).
+BorgBackup is rock-solid and extremely space-efficient. The deduplication and compression mean your backups use a fraction of the original data size, and the encryption is strong by default. The main downsides: SSH-only for remote backups (no native cloud storage support), and the CLI can be complex for beginners. For local or SSH-based backups, Borg is the best choice. For cloud backups, use [Restic](/apps/restic/). For an easier interface on top of Borg, use [Borgmatic](/apps/borgmatic/).
 
 ## Related
 
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [Restic vs BorgBackup](/compare/restic-vs-borgbackup)
-- [Best Self-Hosted Backup](/best/backup)
-- [Replace CrashPlan](/replace/crashplan)
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Linux Basics](/foundations/linux-basics-self-hosting)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [Restic vs BorgBackup](/compare/restic-vs-borgbackup/)
+- [Best Self-Hosted Backup](/best/backup/)
+- [Replace CrashPlan](/replace/crashplan/)
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Linux Basics](/foundations/linux-basics-self-hosting/)

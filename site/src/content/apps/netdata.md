@@ -25,7 +25,7 @@ Netdata is a real-time infrastructure monitoring tool that collects thousands of
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 512 MB of RAM minimum (Netdata itself uses ~100-200 MB)
 
@@ -187,7 +187,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** netdata
 - **Forward Port:** 19999
 
-**Important:** Netdata has no built-in authentication. When exposing via reverse proxy, enable basic auth or use [Authelia](/apps/authelia) for access control. [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+**Important:** Netdata has no built-in authentication. When exposing via reverse proxy, enable basic auth or use [Authelia](/apps/authelia/) for access control. [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -197,7 +197,7 @@ tar -czf netdata-backup-$(date +%Y%m%d).tar.gz ./netdataconfig ./netdatalib
 docker compose start netdata
 ```
 
-The cache directory doesn't need backup — it's rebuilt automatically. [Backup Strategy](/foundations/backup-3-2-1-rule)
+The cache directory doesn't need backup — it's rebuilt automatically. [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -229,7 +229,7 @@ The cache directory doesn't need backup — it's rebuilt automatically. [Backup 
 
 ## Verdict
 
-Netdata is the fastest way to get comprehensive server monitoring running. The zero-configuration auto-discovery is genuinely impressive — install it and immediately see every metric that matters. The per-second granularity catches issues that tools polling every 30-60 seconds miss. For long-term trend analysis and multi-server dashboards, pair it with [Grafana](/apps/grafana) and [Prometheus](/apps/prometheus). For just watching your server's health in real time, Netdata alone is enough.
+Netdata is the fastest way to get comprehensive server monitoring running. The zero-configuration auto-discovery is genuinely impressive — install it and immediately see every metric that matters. The per-second granularity catches issues that tools polling every 30-60 seconds miss. For long-term trend analysis and multi-server dashboards, pair it with [Grafana](/apps/grafana/) and [Prometheus](/apps/prometheus/). For just watching your server's health in real time, Netdata alone is enough.
 
 ## FAQ
 
@@ -247,10 +247,10 @@ Yes. Official ARM64 images are available. Performance is fine on a Pi 4. Reduce 
 
 ## Related
 
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Grafana vs Prometheus](/compare/grafana-vs-prometheus)
-- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Grafana vs Prometheus](/compare/grafana-vs-prometheus/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

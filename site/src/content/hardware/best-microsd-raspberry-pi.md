@@ -123,7 +123,7 @@ Recommended SSDs for USB boot:
 - **Kingston A400 240 GB** (~$20) — budget option, no DRAM cache but adequate for Pi workloads
 - **Crucial BX500 240 GB** (~$22) — good middle ground
 
-For more, see [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server) and [USB Boot Guide](/hardware/usb-boot-home-server).
+For more, see [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server/) and [USB Boot Guide](/hardware/usb-boot-home-server/).
 
 ## Extending microSD Life
 
@@ -195,10 +195,10 @@ Don't. It's technically possible (USB readers + mdadm) but practically useless. 
 
 ## Related
 
-- [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server)
-- [Raspberry Pi Docker Setup](/hardware/raspberry-pi-docker)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [USB Boot Guide](/hardware/usb-boot-home-server)
-- [Best SSDs for Home Server](/hardware/best-ssd-home-server)
-- [HDD vs SSD for Home Server](/hardware/hdd-vs-ssd-home-server)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
+- [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server/)
+- [Raspberry Pi Docker Setup](/hardware/raspberry-pi-docker/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [USB Boot Guide](/hardware/usb-boot-home-server/)
+- [Best SSDs for Home Server](/hardware/best-ssd-home-server/)
+- [HDD vs SSD for Home Server](/hardware/hdd-vs-ssd-home-server/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)

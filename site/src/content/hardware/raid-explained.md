@@ -37,7 +37,7 @@ affiliateDisclosure: true
 - Controller failure (can corrupt the entire array)
 - Human error (wrong rebuild, wrong drive pulled)
 
-**You need both RAID (for uptime) and backups (for data protection).** See our [Backup Strategy guide](/foundations/backup-strategy).
+**You need both RAID (for uptime) and backups (for data protection).** See our [Backup Strategy guide](/foundations/backup-strategy/).
 
 ## RAID Levels in Detail
 
@@ -201,7 +201,7 @@ During a RAID 5 rebuild with large drives, your array runs without redundancy fo
 
 ### Does RAID replace backups?
 
-No. RAID protects against drive failure. Backups protect against deletion, corruption, ransomware, and disasters. You need both. See our [Backup Strategy guide](/foundations/backup-strategy).
+No. RAID protects against drive failure. Backups protect against deletion, corruption, ransomware, and disasters. You need both. See our [Backup Strategy guide](/foundations/backup-strategy/).
 
 ### Should I use hardware or software RAID?
 
@@ -224,9 +224,9 @@ Only if every drive contains data that's also backed up elsewhere. JBOD has zero
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Backup Strategy](/foundations/backup-strategy/)

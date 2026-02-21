@@ -129,14 +129,14 @@ Both have excellent documentation and active communities. Mailcow has a slightly
 
 **For organizations or users who want a managed experience:** Mailcow is the better choice. The web admin, webmail, calendar integration, and user self-service justify the higher resource usage.
 
-If you want something even more modern with lower resource usage and built-in everything (JMAP, web admin, CalDAV, CardDAV, spam filtering) in a single container, also consider [Stalwart](/apps/stalwart).
+If you want something even more modern with lower resource usage and built-in everything (JMAP, web admin, CalDAV, CardDAV, spam filtering) in a single container, also consider [Stalwart](/apps/stalwart/).
 
 ## Related
 
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [How to Self-Host docker-mailserver](/apps/docker-mailserver)
-- [How to Self-Host Mailu](/apps/mailu)
-- [How to Self-Host Stalwart](/apps/stalwart)
-- [Mailu vs Mailcow](/compare/mailu-vs-mailcow)
-- [Best Self-Hosted Email Servers](/best/email)
-- [Self-Hosted Alternatives to Gmail](/replace/gmail)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [How to Self-Host docker-mailserver](/apps/docker-mailserver/)
+- [How to Self-Host Mailu](/apps/mailu/)
+- [How to Self-Host Stalwart](/apps/stalwart/)
+- [Mailu vs Mailcow](/compare/mailu-vs-mailcow/)
+- [Best Self-Hosted Email Servers](/best/email/)
+- [Self-Hosted Alternatives to Gmail](/replace/gmail/)

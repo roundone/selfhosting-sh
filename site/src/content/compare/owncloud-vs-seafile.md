@@ -53,9 +53,9 @@ Seafile has been an independent project since 2012, focused specifically on file
 
 ## Installation Complexity
 
-**ownCloud oCIS** is a single binary with an embedded datastore — no external database needed. The Docker deployment is straightforward: one container with volume mounts for data and config. Configuration is via environment variables. Setup takes about 15 minutes. See our [ownCloud setup guide](/apps/owncloud).
+**ownCloud oCIS** is a single binary with an embedded datastore — no external database needed. The Docker deployment is straightforward: one container with volume mounts for data and config. Configuration is via environment variables. Setup takes about 15 minutes. See our [ownCloud setup guide](/apps/owncloud/).
 
-**Seafile** requires MariaDB/MySQL and Memcached alongside the Seafile server container. The Docker Compose is more complex (3-4 services), and initial configuration requires setting admin credentials via environment variables. Setup takes about 20-30 minutes. See our [Seafile setup guide](/apps/seafile).
+**Seafile** requires MariaDB/MySQL and Memcached alongside the Seafile server container. The Docker Compose is more complex (3-4 services), and initial configuration requires setting admin credentials via environment variables. Setup takes about 20-30 minutes. See our [Seafile setup guide](/apps/seafile/).
 
 ## Performance and Resource Usage
 
@@ -128,10 +128,10 @@ Not really in a useful way. Both ownCloud and Seafile have their own sync client
 
 ## Related
 
-- [How to Self-Host ownCloud](/apps/owncloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host ownCloud](/apps/owncloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -73,13 +73,13 @@ Without Prowlarr, you'd add indexers directly in Sonarr's settings. Prowlarr cen
 
 | Tool | Role |
 |------|------|
-| [Prowlarr](/apps/prowlarr) | Indexer manager (searches) |
-| [Sonarr](/apps/sonarr) | TV show manager |
-| [Radarr](/apps/radarr) | Movie manager |
-| [Lidarr](/apps/lidarr) | Music manager |
-| [Readarr](/apps/readarr) | Ebook/audiobook manager |
-| [Bazarr](/apps/bazarr) | Subtitle manager |
-| [SABnzbd](/apps/sabnzbd) or [qBittorrent](/apps/qbittorrent) | Download client |
+| [Prowlarr](/apps/prowlarr/) | Indexer manager (searches) |
+| [Sonarr](/apps/sonarr/) | TV show manager |
+| [Radarr](/apps/radarr/) | Movie manager |
+| [Lidarr](/apps/lidarr/) | Music manager |
+| [Readarr](/apps/readarr/) | Ebook/audiobook manager |
+| [Bazarr](/apps/bazarr/) | Subtitle manager |
+| [SABnzbd](/apps/sabnzbd/) or [qBittorrent](/apps/qbittorrent/) | Download client |
 
 ## Setup Order
 
@@ -102,12 +102,12 @@ Technically yes — Prowlarr has a built-in search interface. But it can't downl
 
 ### Does Prowlarr replace Jackett?
 
-Yes. Prowlarr is the *arr team's replacement for [Jackett](/apps/jackett). See our [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr) comparison.
+Yes. Prowlarr is the *arr team's replacement for [Jackett](/apps/jackett/). See our [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr/) comparison.
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr/)
+- [Best Self-Hosted Download Management](/best/download-management/)

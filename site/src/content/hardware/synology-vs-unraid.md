@@ -139,7 +139,7 @@ With an NVMe cache pool, Unraid's effective write speed for normal use feels fas
 |--------------|------|
 | Unraid Pro license | $129 |
 | Used Dell OptiPlex + USB SATA + 2x 8 TB | ~$130 + $129 + $280 = $540 |
-| [DIY NAS build](/hardware/diy-nas-build) + 4x 8 TB | ~$500 + $129 + $560 = $1,190 |
+| [DIY NAS build](/hardware/diy-nas-build/) + 4x 8 TB | ~$500 + $129 + $560 = $1,190 |
 
 At 4 bays, pricing is comparable. Unraid's advantage shows at 6+ bays — the hardware is cheaper than Synology's larger enclosures, and the license is a one-time cost.
 
@@ -167,7 +167,7 @@ Synology is the better NAS. Unraid is the better server platform.
 
 If your primary need is **reliable storage with a polished experience**, Synology wins. If your primary need is a **flexible home server that also does storage**, Unraid wins.
 
-Many homelabbers eventually run both — a Synology for bulk storage and backups, and a separate [mini PC](/hardware/best-mini-pc) or Unraid server for Docker containers and VMs.
+Many homelabbers eventually run both — a Synology for bulk storage and backups, and a separate [mini PC](/hardware/best-mini-pc/) or Unraid server for Docker containers and VMs.
 
 ## FAQ
 
@@ -181,7 +181,7 @@ Yes. The Pro license (unlimited drives) is a one-time cost. Compared to Synology
 
 ### Does Unraid support ZFS?
 
-Unraid 7.x added experimental ZFS support for cache pools, but the main array still uses its traditional parity system with XFS/Btrfs per drive. For full ZFS, use [TrueNAS SCALE](/hardware/synology-vs-truenas).
+Unraid 7.x added experimental ZFS support for cache pools, but the main array still uses its traditional parity system with XFS/Btrfs per drive. For full ZFS, use [TrueNAS SCALE](/hardware/synology-vs-truenas/).
 
 ### Which is better for Plex?
 
@@ -189,9 +189,9 @@ Unraid — GPU passthrough gives you dedicated hardware transcoding with NVIDIA 
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)

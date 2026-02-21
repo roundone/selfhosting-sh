@@ -133,9 +133,9 @@ AGPLv3 is an OSI-approved open-source license. If your organization requires OSI
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Automatisch](/apps/automatisch)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Automatisch](/apps/automatisch/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)

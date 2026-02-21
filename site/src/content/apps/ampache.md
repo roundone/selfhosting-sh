@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB+ of free RAM
 - A music library in common audio formats
 - A domain name (optional, for remote access)
@@ -212,7 +212,7 @@ Forward Port: 80
 
 No special configuration needed. Ensure your `ampache.cfg.php` has the correct `web_path` and `http_host` settings if behind a reverse proxy.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -231,7 +231,7 @@ docker cp ampache:/var/www/config ./ampache-config-backup/
 
 Your music files are mounted read-only — back them up separately.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -269,17 +269,17 @@ Check that files have proper ID3 tags. Ampache relies on metadata — files with
 
 Ampache is a veteran music server with features that newer alternatives lack: video support, podcast management, remote catalogs, and granular user permissions. Its Subsonic API support gives you access to the mobile app ecosystem. The 20+ years of development show in the breadth of features.
 
-However, the web UI feels dated compared to Koel or Navidrome's interfaces, and the PHP/MySQL stack is heavier than Navidrome's Go binary. For most self-hosters who just want to stream their music library, [Navidrome](/apps/navidrome) is the simpler, lighter choice. Choose Ampache if you need its specific features: video catalogs, podcast management, remote catalogs, or detailed user permission controls.
+However, the web UI feels dated compared to Koel or Navidrome's interfaces, and the PHP/MySQL stack is heavier than Navidrome's Go binary. For most self-hosters who just want to stream their music library, [Navidrome](/apps/navidrome/) is the simpler, lighter choice. Choose Ampache if you need its specific features: video catalogs, podcast management, remote catalogs, or detailed user permission controls.
 
 ## Frequently Asked Questions
 
 ### How does Ampache compare to Navidrome?
 
-Ampache has more features (video, podcasts, remote catalogs) but is heavier and has an older UI. Navidrome is lighter, faster, and has a cleaner interface. Both support the Subsonic API. See [Koel vs Navidrome](/compare/koel-vs-navidrome) for a related comparison.
+Ampache has more features (video, podcasts, remote catalogs) but is heavier and has an older UI. Navidrome is lighter, faster, and has a cleaner interface. Both support the Subsonic API. See [Koel vs Navidrome](/compare/koel-vs-navidrome/) for a related comparison.
 
 ### Can Ampache stream video?
 
-Yes. Ampache can catalog and stream video files through its web UI. This is a unique feature — most self-hosted music servers are audio-only. For dedicated video, [Jellyfin](/apps/jellyfin) is more capable.
+Yes. Ampache can catalog and stream video files through its web UI. This is a unique feature — most self-hosted music servers are audio-only. For dedicated video, [Jellyfin](/apps/jellyfin/) is more capable.
 
 ### Is Ampache still actively developed?
 
@@ -287,11 +287,11 @@ Yes. Ampache v7.9.0 was released February 19, 2026 with PHP 8.5 support and new 
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [Koel vs Navidrome](/compare/koel-vs-navidrome)
-- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [Koel vs Navidrome](/compare/koel-vs-navidrome/)
+- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

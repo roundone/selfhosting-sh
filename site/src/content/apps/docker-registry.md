@@ -25,7 +25,7 @@ Docker Registry is the official open-source container image registry from the CN
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 10 GB+ of free disk space (depends on image count)
 - 512 MB+ RAM
 - A domain name (required for TLS in production)
@@ -223,7 +223,7 @@ environment:
 
 ## Reverse Proxy
 
-Put the registry behind a reverse proxy for TLS termination and domain-based access. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+Put the registry behind a reverse proxy for TLS termination and domain-based access. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 Nginx Proxy Manager config: set the forward hostname to the registry container and port 5000. Enable WebSocket support. Set the maximum upload size high enough for large images (e.g., 2 GB).
 
@@ -238,7 +238,7 @@ docker run --rm -v registry-data:/data -v $(pwd)/backup:/backup \
   alpine tar czf /backup/registry-backup-$(date +%Y%m%d).tar.gz /data
 ```
 
-The `/var/lib/registry` volume contains all image layers and metadata. This is the only volume you need to back up. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+The `/var/lib/registry` volume contains all image layers and metadata. This is the only volume you need to back up. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -287,7 +287,7 @@ docker exec registry bin/registry garbage-collect /etc/distribution/config.yml
 
 ## Verdict
 
-A self-hosted Docker Registry is essential if you build custom images, run CI/CD pipelines, or want to avoid Docker Hub's pull rate limits. The official registry is lightweight, battle-tested, and straightforward to deploy. For small-to-medium self-hosting setups, the basic filesystem storage is all you need. If you want a web UI for browsing images, pair it with a registry frontend or use [Gitea](/apps/gitea), which includes a built-in container registry.
+A self-hosted Docker Registry is essential if you build custom images, run CI/CD pipelines, or want to avoid Docker Hub's pull rate limits. The official registry is lightweight, battle-tested, and straightforward to deploy. For small-to-medium self-hosting setups, the basic filesystem storage is all you need. If you want a web UI for browsing images, pair it with a registry frontend or use [Gitea](/apps/gitea/), which includes a built-in container registry.
 
 ## FAQ
 
@@ -297,19 +297,19 @@ If you only pull public images, a pull-through cache is more useful than a full 
 
 ### Can I use this with Podman?
 
-Yes. Podman is fully compatible with OCI registries. Use `podman push` and `podman pull` with the same `your-server:5000/image:tag` format. See our [Podman guide](/apps/podman).
+Yes. Podman is fully compatible with OCI registries. Use `podman push` and `podman pull` with the same `your-server:5000/image:tag` format. See our [Podman guide](/apps/podman/).
 
 ### How does this compare to Harbor or Gitea's registry?
 
-Docker Registry is a bare-bones image store — no UI, no vulnerability scanning, no RBAC. [Harbor](https://goharbor.io/) adds all of those on top of the Distribution project. [Gitea](/apps/gitea) bundles a container registry with Git hosting. Use plain Registry for simplicity; Harbor for enterprise features; Gitea if you want Git + images in one tool.
+Docker Registry is a bare-bones image store — no UI, no vulnerability scanning, no RBAC. [Harbor](https://goharbor.io/) adds all of those on top of the Distribution project. [Gitea](/apps/gitea/) bundles a container registry with Git hosting. Use plain Registry for simplicity; Harbor for enterprise features; Gitea if you want Git + images in one tool.
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [How to Self-Host Gitea](/apps/gitea)
-- [Best Docker Management Tools](/best/docker-management)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [How to Self-Host Gitea](/apps/gitea/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

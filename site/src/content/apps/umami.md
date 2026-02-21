@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum
 - A domain name (optional, for remote access)
 
@@ -144,14 +144,14 @@ Events appear in the dashboard under the **Events** tab and can be filtered by c
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), forward traffic to port 3000. Set `CLIENT_IP_HEADER` to get accurate visitor IPs:
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), forward traffic to port 3000. Set `CLIENT_IP_HEADER` to get accurate visitor IPs:
 
 ```yaml
 environment:
   CLIENT_IP_HEADER: "X-Forwarded-For"
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the full configuration.
 
 ## Backup
 
@@ -167,7 +167,7 @@ Restore:
 cat umami-backup.sql | docker exec -i umami-db psql -U umami umami
 ```
 
-For automated backups, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For automated backups, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -231,7 +231,7 @@ The self-hosted version is fully free and open source under the MIT license. Uma
 
 ### Umami vs Plausible — which should I use?
 
-Both are excellent privacy-friendly analytics tools. Umami is lighter on resources and completely free (MIT license). [Plausible](/apps/plausible) has a more polished UI and built-in features like Google Search Console integration and email reports. See [Umami vs Plausible](/compare/plausible-vs-umami) for the full comparison.
+Both are excellent privacy-friendly analytics tools. Umami is lighter on resources and completely free (MIT license). [Plausible](/apps/plausible/) has a more polished UI and built-in features like Google Search Console integration and email reports. See [Umami vs Plausible](/compare/plausible-vs-umami/) for the full comparison.
 
 ### Does Umami support MySQL?
 
@@ -239,16 +239,16 @@ Umami v2+ only supports PostgreSQL. MySQL support was dropped. Use the PostgreSQ
 
 ## Verdict
 
-Umami is the lightest self-hosted analytics tool you can run. It's dead simple to set up, uses minimal resources, and gives you clean privacy-friendly data. The MIT license means no restrictions on use. The downsides: fewer built-in features than [Plausible](/apps/plausible) (no email reports, no Search Console integration out of the box) and a more basic dashboard. For a single-developer project or personal site, Umami is perfect. For a team or business needing more features, consider Plausible or [Matomo](/apps/matomo).
+Umami is the lightest self-hosted analytics tool you can run. It's dead simple to set up, uses minimal resources, and gives you clean privacy-friendly data. The MIT license means no restrictions on use. The downsides: fewer built-in features than [Plausible](/apps/plausible/) (no email reports, no Search Console integration out of the box) and a more basic dashboard. For a single-developer project or personal site, Umami is perfect. For a team or business needing more features, consider Plausible or [Matomo](/apps/matomo/).
 
 ## Related
 
-- [How to Self-Host Plausible](/apps/plausible)
-- [How to Self-Host Matomo](/apps/matomo)
-- [Plausible vs Umami](/compare/plausible-vs-umami)
-- [Umami vs Matomo](/compare/umami-vs-matomo)
-- [Best Self-Hosted Analytics](/best/analytics)
-- [Replace Google Analytics](/replace/google-analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [Plausible vs Umami](/compare/plausible-vs-umami/)
+- [Umami vs Matomo](/compare/umami-vs-matomo/)
+- [Best Self-Hosted Analytics](/best/analytics/)
+- [Replace Google Analytics](/replace/google-analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

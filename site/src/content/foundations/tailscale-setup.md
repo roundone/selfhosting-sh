@@ -21,7 +21,7 @@ For self-hosting, Tailscale lets you access your server from anywhere without op
 
 ## Prerequisites
 
-- A self-hosted server running Linux ([Getting Started](/foundations/getting-started))
+- A self-hosted server running Linux ([Getting Started](/foundations/getting-started/))
 - A Tailscale account (free for personal use, up to 100 devices)
 
 ## Why Tailscale for Self-Hosting?
@@ -38,7 +38,7 @@ For self-hosting, Tailscale lets you access your server from anywhere without op
 
 **Use Tailscale when:** You want private access to your services from your own devices. No public access needed.
 
-**Use Cloudflare Tunnel when:** You need public access (sharing with others, hosting a website). See [Port Forwarding](/foundations/port-forwarding) for alternatives comparison.
+**Use Cloudflare Tunnel when:** You need public access (sharing with others, hosting a website). See [Port Forwarding](/foundations/port-forwarding/) for alternatives comparison.
 
 ## Installation
 
@@ -252,15 +252,15 @@ Tailscale establishes direct connections between devices when possible (no relay
 
 ## Next Steps
 
-- [Port Forwarding Guide](/foundations/port-forwarding) — comparison of remote access methods
-- [WireGuard Setup](/foundations/wireguard-setup) — DIY VPN alternative
-- [Docker Compose Basics](/foundations/docker-compose-basics) — deploy services to access
+- [Port Forwarding Guide](/foundations/port-forwarding/) — comparison of remote access methods
+- [WireGuard Setup](/foundations/wireguard-setup/) — DIY VPN alternative
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — deploy services to access
 
 ## Related
 
-- [Port Forwarding for Self-Hosting](/foundations/port-forwarding)
-- [Dynamic DNS Setup](/foundations/dynamic-dns)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Docker Networking](/foundations/docker-networking)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Port Forwarding for Self-Hosting](/foundations/port-forwarding/)
+- [Dynamic DNS Setup](/foundations/dynamic-dns/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

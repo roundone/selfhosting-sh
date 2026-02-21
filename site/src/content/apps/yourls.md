@@ -25,7 +25,7 @@ YOURLS (Your Own URL Shortener) is a self-hosted URL shortener that gives you fu
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM minimum
 - A short domain name (recommended for short URLs)
@@ -151,7 +151,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** yourls
 - **Forward Port:** 80
 
-Set `YOURLS_SITE` to your public URL (with `https://`) when using a reverse proxy. [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+Set `YOURLS_SITE` to your public URL (with `https://`) when using a reverse proxy. [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -162,7 +162,7 @@ docker compose exec yourls_db mariadb-dump -u yourls -p yourls > yourls-backup-$
 tar -czf yourls-plugins-backup-$(date +%Y%m%d).tar.gz ./plugins
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -194,7 +194,7 @@ tar -czf yourls-plugins-backup-$(date +%Y%m%d).tar.gz ./plugins
 
 ## Verdict
 
-YOURLS is the standard self-hosted URL shortener. It's been around since 2009, is stable, well-documented, and has an active plugin ecosystem. If you want a private URL shortener with analytics on your own domain, YOURLS is the reliable, battle-tested choice. For a more modern alternative with built-in features like QR codes and API-first design, look at [Shlink](/apps/shlink).
+YOURLS is the standard self-hosted URL shortener. It's been around since 2009, is stable, well-documented, and has an active plugin ecosystem. If you want a private URL shortener with analytics on your own domain, YOURLS is the reliable, battle-tested choice. For a more modern alternative with built-in features like QR codes and API-first design, look at [Shlink](/apps/shlink/).
 
 ## FAQ
 
@@ -204,7 +204,7 @@ YOURLS is older, more established, with a larger plugin ecosystem. Shlink is new
 
 ### Can I use YOURLS for a public link shortener?
 
-Technically yes, but it's designed for private/personal use. For a public-facing service, you'd need rate limiting, captcha, and abuse prevention plugins. Consider [Kutt](/apps/kutt) for that use case.
+Technically yes, but it's designed for private/personal use. For a public-facing service, you'd need rate limiting, captcha, and abuse prevention plugins. Consider [Kutt](/apps/kutt/) for that use case.
 
 ### Does YOURLS support custom domains?
 
@@ -212,10 +212,10 @@ YOURLS runs on whatever domain you configure via `YOURLS_SITE`. To use a short d
 
 ## Related
 
-- [How to Self-Host Shlink](/apps/shlink)
-- [How to Self-Host PrivateBin](/apps/privatebin)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [HTTPS Setup for Self-Hosted Services](/foundations/https-everywhere)
+- [How to Self-Host Shlink](/apps/shlink/)
+- [How to Self-Host PrivateBin](/apps/privatebin/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [HTTPS Setup for Self-Hosted Services](/foundations/https-everywhere/)

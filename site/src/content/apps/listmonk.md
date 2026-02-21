@@ -22,14 +22,14 @@ affiliateDisclosure: false
 
 ## What Is Listmonk?
 
-[Listmonk](https://listmonk.app/) is a high-performance, self-hosted newsletter and mailing list manager built in Go. It handles subscriber management, campaign creation, analytics, and transactional emails through a clean web UI -- all backed by PostgreSQL. It replaces [Mailchimp](/replace/mailchimp), Substack, ConvertKit, and every other SaaS email platform that charges you per subscriber.
+[Listmonk](https://listmonk.app/) is a high-performance, self-hosted newsletter and mailing list manager built in Go. It handles subscriber management, campaign creation, analytics, and transactional emails through a clean web UI -- all backed by PostgreSQL. It replaces [Mailchimp](/replace/mailchimp/), Substack, ConvertKit, and every other SaaS email platform that charges you per subscriber.
 
 Listmonk is a single binary that ships millions of emails without breaking a sweat. It supports templating, media uploads, subscriber segmentation, and both rich HTML and plain text campaigns. AGPL-3.0 licensed, free forever, and your subscriber list stays on your server.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus database growth over time)
 - 512 MB of free RAM
 - A domain name pointed at your server (required for email deliverability)
@@ -193,7 +193,7 @@ Running Listmonk behind a reverse proxy gives you SSL termination and a clean UR
 
 Configure your reverse proxy to forward traffic to `localhost:9000`. After setting up the proxy, update the **Root URL** in **Settings > General** to your public domain (e.g., `https://newsletter.yourdomain.com`). This ensures all generated links (unsubscribe, tracking, public pages) use the correct URL.
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for complete Nginx Proxy Manager, Traefik, and Caddy configurations.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for complete Nginx Proxy Manager, Traefik, and Caddy configurations.
 
 ## Backup
 
@@ -214,7 +214,7 @@ Back up the uploads volume:
 docker compose cp listmonk:/listmonk/uploads ./uploads-backup
 ```
 
-Automate this on a schedule and store backups off-server. See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide for the full 3-2-1 approach.
+Automate this on a schedule and store backups off-server. See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide for the full 3-2-1 approach.
 
 To restore from a database backup:
 
@@ -264,18 +264,18 @@ docker compose exec -T listmonk-db psql -U listmonk listmonk < listmonk-backup-Y
 
 Listmonk is the best self-hosted newsletter tool available. It is fast, simple to deploy, and handles everything from a personal blog newsletter to a six-figure mailing list without flinching. The Go binary is lightweight, the PostgreSQL backend is rock-solid, and the web UI is clean and functional.
 
-Compared to [Mailtrain](/apps/mailtrain) and [Mautic](/apps/mautic), Listmonk is significantly easier to set up and lighter on resources. Mautic is a full marketing automation platform -- powerful but heavy and complex. Mailtrain works but feels dated. Listmonk hits the sweet spot: enough features for serious newsletter operations without the bloat.
+Compared to [Mailtrain](/apps/mailtrain/) and [Mautic](/apps/mautic/), Listmonk is significantly easier to set up and lighter on resources. Mautic is a full marketing automation platform -- powerful but heavy and complex. Mailtrain works but feels dated. Listmonk hits the sweet spot: enough features for serious newsletter operations without the bloat.
 
 If you are paying Mailchimp, ConvertKit, or Substack for email, stop. Self-host Listmonk, pair it with a transactional email provider like Amazon SES ($0.10 per 1,000 emails), and your mailing list costs drop to nearly zero. You own your subscriber data, you control deliverability, and there is no per-subscriber pricing that punishes you for growing your audience.
 
 ## Related
 
-- [Best Self-Hosted Newsletter Tools](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
-- [Docker Networking Explained](/foundations/docker-networking)
-- [Docker Volumes and Persistent Data](/foundations/docker-volumes)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Plausible Analytics](/apps/plausible)
+- [Best Self-Hosted Newsletter Tools](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)
+- [Docker Networking Explained](/foundations/docker-networking/)
+- [Docker Volumes and Persistent Data](/foundations/docker-volumes/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Plausible Analytics](/apps/plausible/)

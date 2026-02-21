@@ -26,7 +26,7 @@ affiliateDisclosure: false
 
 ## Overview
 
-[Tailscale](https://tailscale.com) is a mesh VPN built on WireGuard. Clients connect to Tailscale's coordination server for key exchange and peer discovery, then establish direct WireGuard tunnels. The coordination server is proprietary (self-hostable via [Headscale](/apps/headscale)).
+[Tailscale](https://tailscale.com) is a mesh VPN built on WireGuard. Clients connect to Tailscale's coordination server for key exchange and peer discovery, then establish direct WireGuard tunnels. The coordination server is proprietary (self-hostable via [Headscale](/apps/headscale/)).
 
 [NetBird](https://netbird.io) is a mesh VPN built on WireGuard that was designed from the ground up for self-hosting. All components — management, signal, relay, dashboard, and TURN server — are open source and can be deployed via Docker Compose. NetBird uses WireGuard kernel mode on Linux for maximum performance.
 
@@ -145,10 +145,10 @@ Headscale is significantly easier. It's a single binary/container with minimal c
 
 ## Related
 
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [How to Self-Host Headscale](/apps/headscale)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

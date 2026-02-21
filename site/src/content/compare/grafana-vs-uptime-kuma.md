@@ -92,10 +92,10 @@ Running both is common and recommended for any self-hoster with more than a hand
 
 ## Related
 
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Grafana vs Prometheus: Understanding the Stack](/compare/grafana-vs-prometheus)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Monitoring Basics](/foundations/monitoring-basics)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Grafana vs Prometheus: Understanding the Stack](/compare/grafana-vs-prometheus/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Monitoring Basics](/foundations/monitoring-basics/)

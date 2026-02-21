@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (2 GB recommended with Meilisearch)
 - 5 GB of free disk space (archives grow over time)
 - A domain name (optional, for remote access)
@@ -188,7 +188,7 @@ Nginx Proxy Manager config:
 - **Forward Hostname:** linkwarden
 - **Forward Port:** 3000
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -211,7 +211,7 @@ docker run --rm -v linkwarden_meili:/data -v $(pwd):/backup alpine \
   tar czf /backup/linkwarden-meili-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -242,16 +242,16 @@ docker compose logs linkwarden | grep -i archive
 
 ## Verdict
 
-Linkwarden is the best self-hosted bookmark manager for users who want archival and team collaboration. The automatic page archiving means your bookmarks survive even when the original pages disappear. If you want something simpler and lighter — just bookmarks without archival — look at [Linkding](https://github.com/sissbruecker/linkding). If you want a read-later app focused on article reading, [Wallabag](/apps/wallabag) is better suited. But for a full-featured, team-friendly bookmark manager, Linkwarden is the top choice.
+Linkwarden is the best self-hosted bookmark manager for users who want archival and team collaboration. The automatic page archiving means your bookmarks survive even when the original pages disappear. If you want something simpler and lighter — just bookmarks without archival — look at [Linkding](https://github.com/sissbruecker/linkding). If you want a read-later app focused on article reading, [Wallabag](/apps/wallabag/) is better suited. But for a full-featured, team-friendly bookmark manager, Linkwarden is the top choice.
 
 ## Related
 
-- [Best Self-Hosted Bookmark Managers](/best/bookmarks-read-later)
-- [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag)
-- [Linkwarden vs Hoarder](/compare/linkwarden-vs-hoarder)
-- [Linkding vs Linkwarden](/compare/linkding-vs-linkwarden)
-- [Replace Pocket with Self-Hosted Tools](/replace/pocket)
-- [Replace Raindrop.io with Self-Hosted Tools](/replace/raindrop)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Bookmark Managers](/best/bookmarks-read-later/)
+- [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag/)
+- [Linkwarden vs Hoarder](/compare/linkwarden-vs-hoarder/)
+- [Linkding vs Linkwarden](/compare/linkding-vs-linkwarden/)
+- [Replace Pocket with Self-Hosted Tools](/replace/pocket/)
+- [Replace Raindrop.io with Self-Hosted Tools](/replace/raindrop/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

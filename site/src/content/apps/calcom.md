@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - **8 GB of RAM recommended** (4 GB minimum — Cal.com is a Next.js app and needs headroom)
 - 20+ GB of free disk space
 - A domain name (required — Cal.com needs a proper URL for OAuth callbacks and email links)
@@ -229,7 +229,7 @@ Cal.com supports team features out of the box:
 
 ### Webhooks and API
 
-Cal.com has a REST API and supports webhooks for integration with external systems. Configure webhooks under **Settings > Developer > Webhooks** to trigger automations on booking events — useful for connecting to [n8n](/apps/n8n) or other workflow tools.
+Cal.com has a REST API and supports webhooks for integration with external systems. Configure webhooks under **Settings > Developer > Webhooks** to trigger automations on booking events — useful for connecting to [n8n](/apps/n8n/) or other workflow tools.
 
 ## Reverse Proxy
 
@@ -237,7 +237,7 @@ Cal.com must run behind a reverse proxy with HTTPS in production. The OAuth call
 
 Nginx Proxy Manager example — set the proxy target to `calcom:3000` (or `your-server-ip:3000`) and enable SSL with Let's Encrypt. Make sure WebSocket support is enabled.
 
-For full reverse proxy setup instructions, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For full reverse proxy setup instructions, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -259,7 +259,7 @@ Also back up your `.env` file — it contains your encryption keys. Losing `CALE
 
 Redis data is ephemeral (session cache) and does not need backup.
 
-For a complete backup strategy, see [Backup: The 3-2-1 Rule](/foundations/backup-3-2-1-rule).
+For a complete backup strategy, see [Backup: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -333,11 +333,11 @@ For personal use where you just need a simple booking link, Cal.com is overkill 
 
 ## Related
 
-- [Best Self-Hosted Booking and Scheduling Tools](/best/booking-scheduling)
-- [Self-Hosted Alternatives to Calendly](/replace/calendly)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Backup: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Radicale](/apps/radicale)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [Best Self-Hosted Booking and Scheduling Tools](/best/booking-scheduling/)
+- [Self-Hosted Alternatives to Calendly](/replace/calendly/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Backup: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Radicale](/apps/radicale/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

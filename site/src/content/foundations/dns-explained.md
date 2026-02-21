@@ -21,8 +21,8 @@ For self-hosting, DNS matters in three situations: pointing a public domain at y
 
 ## Prerequisites
 
-- A Linux server running on your network ([Getting Started](/foundations/getting-started))
-- Basic terminal familiarity ([Linux Basics](/foundations/linux-basics-self-hosting))
+- A Linux server running on your network ([Getting Started](/foundations/getting-started/))
+- Basic terminal familiarity ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - A domain name (optional but recommended for remote access)
 
 ## How DNS Resolution Works
@@ -70,7 +70,7 @@ In Cloudflare's DNS dashboard, create:
 | CNAME | `files` | `@` | Proxied or DNS only |
 | CNAME | `music` | `@` | Proxied or DNS only |
 
-Now `photos.example.com`, `files.example.com`, and `music.example.com` all resolve to your server. Your [reverse proxy](/foundations/reverse-proxy-explained) routes each subdomain to the correct container.
+Now `photos.example.com`, `files.example.com`, and `music.example.com` all resolve to your server. Your [reverse proxy](/foundations/reverse-proxy-explained/) routes each subdomain to the correct container.
 
 **Proxied vs DNS Only:** Cloudflare's proxy hides your real IP and adds DDoS protection. Use "Proxied" for web services. Use "DNS Only" for non-HTTP services (SSH, WireGuard, game servers) because the proxy only handles HTTP/HTTPS traffic.
 
@@ -169,10 +169,10 @@ Self-hosting a DNS server gives you ad blocking, privacy (no DNS queries going t
 
 | DNS Server | Best For | Resource Usage |
 |------------|----------|---------------|
-| [Pi-hole](/apps/pi-hole) | Ad blocking + local DNS, great web UI | ~100 MB RAM |
-| [AdGuard Home](/apps/adguard-home) | Ad blocking + DNS rewrites with wildcard support | ~80 MB RAM |
-| [Technitium](/apps/technitium) | Full-featured DNS server with advanced features | ~150 MB RAM |
-| [Blocky](/apps/blocky) | Lightweight, config-file-based DNS proxy | ~30 MB RAM |
+| [Pi-hole](/apps/pi-hole/) | Ad blocking + local DNS, great web UI | ~100 MB RAM |
+| [AdGuard Home](/apps/adguard-home/) | Ad blocking + DNS rewrites with wildcard support | ~80 MB RAM |
+| [Technitium](/apps/technitium/) | Full-featured DNS server with advanced features | ~150 MB RAM |
+| [Blocky](/apps/blocky/) | Lightweight, config-file-based DNS proxy | ~30 MB RAM |
 
 **The recommendation:** Pi-hole if you want the most mature ecosystem and community support. AdGuard Home if you want wildcard DNS rewrite support out of the box. Both run in Docker and are easy to configure.
 
@@ -193,15 +193,15 @@ The `.local` suffix is reserved for mDNS (Bonjour/Avahi). Using it for custom DN
 If your self-hosted DNS server goes down, your entire network loses DNS resolution. Configure a secondary DNS server (like `1.1.1.1`) on your router as a fallback. Some DNS servers like Pi-hole can also be deployed as a pair for redundancy.
 
 ### Hardcoding IPs in Docker Compose
-Use hostnames in Docker Compose configs instead of IP addresses when possible. Docker's internal DNS resolves container names automatically within the same network. See [Docker Networking](/foundations/docker-networking).
+Use hostnames in Docker Compose configs instead of IP addresses when possible. Docker's internal DNS resolves container names automatically within the same network. See [Docker Networking](/foundations/docker-networking/).
 
 ## Next Steps
 
-- Set up a [reverse proxy](/foundations/reverse-proxy-explained) to route subdomains to containers
-- Install [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) for network-wide DNS
-- Secure your connections with [SSL certificates](/foundations/ssl-certificates)
-- Learn about [port forwarding](/foundations/ports-explained) if exposing services to the internet
-- Set up [SSH](/foundations/ssh-setup) for remote server management
+- Set up a [reverse proxy](/foundations/reverse-proxy-explained/) to route subdomains to containers
+- Install [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) for network-wide DNS
+- Secure your connections with [SSL certificates](/foundations/ssl-certificates/)
+- Learn about [port forwarding](/foundations/ports-explained/) if exposing services to the internet
+- Set up [SSH](/foundations/ssh-setup/) for remote server management
 
 ## FAQ
 
@@ -219,9 +219,9 @@ For stable records, 3600 (1 hour) is fine. Before making changes, lower it to 30
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Networking](/foundations/docker-networking)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [SSL Certificates Guide](/foundations/ssl-certificates)
-- [Port Forwarding Explained](/foundations/ports-explained)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Networking](/foundations/docker-networking/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [SSL Certificates Guide](/foundations/ssl-certificates/)
+- [Port Forwarding Explained](/foundations/ports-explained/)

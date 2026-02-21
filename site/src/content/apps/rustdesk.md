@@ -28,7 +28,7 @@ RustDesk is an open-source remote desktop application that works like TeamViewer
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 512 MB of RAM (minimum)
 - A public IP address or domain name (clients need to reach the server)
@@ -178,9 +178,9 @@ For the main service, expose ports 21115-21117 directly. If you need to change d
 command: hbbs -r your-server-ip:21117 -p 21116
 ```
 
-For web client access through [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), proxy to port 21118.
+For web client access through [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), proxy to port 21118.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for general guidance.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for general guidance.
 
 ## Backup
 
@@ -193,7 +193,7 @@ Back up the `data/` directory. The critical file is the keypair:
 tar czf rustdesk-backup-$(date +%Y%m%d).tar.gz data/
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -260,12 +260,12 @@ The server is lightweight and can handle hundreds of concurrent connections on m
 
 ## Related
 
-- [RustDesk vs Guacamole](/compare/rustdesk-vs-guacamole)
-- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
-- [Self-Hosted Alternatives to ngrok](/replace/ngrok)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Tailscale Setup Guide](/apps/tailscale)
-- [WireGuard Docker Setup](/apps/wireguard)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Linux Security Basics](/foundations/security-hardening)
+- [RustDesk vs Guacamole](/compare/rustdesk-vs-guacamole/)
+- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer/)
+- [Self-Hosted Alternatives to ngrok](/replace/ngrok/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Tailscale Setup Guide](/apps/tailscale/)
+- [WireGuard Docker Setup](/apps/wireguard/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Linux Security Basics](/foundations/security-hardening/)

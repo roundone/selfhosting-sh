@@ -95,10 +95,10 @@ For most English-speaking users, openHAB's better documentation and structured c
 
 ## Related
 
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host ioBroker](/apps/iobroker)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host ioBroker](/apps/iobroker/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)

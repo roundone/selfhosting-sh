@@ -24,7 +24,7 @@ A static IP is an address that never changes. Your server is always at 192.168.1
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- SSH access ([SSH Setup Guide](/foundations/ssh-setup))
+- SSH access ([SSH Setup Guide](/foundations/ssh-setup/))
 - Access to your router's admin interface
 - Knowledge of your current network configuration
 
@@ -206,7 +206,7 @@ ping -c 3 192.168.1.1
 
 ## DNS Considerations
 
-Once your server has a static IP, point local DNS records at it. If you run [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home), add local DNS entries:
+Once your server has a static IP, point local DNS records at it. If you run [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/), add local DNS entries:
 
 ```
 server.local      → 192.168.1.50
@@ -214,7 +214,7 @@ jellyfin.local    → 192.168.1.50
 gitea.local       → 192.168.1.50
 ```
 
-For external access with a domain name, create A records in your DNS provider pointing to your public IP, and set up a reverse proxy to route traffic to the correct service. See [DNS Explained](/foundations/dns-explained) and [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For external access with a domain name, create A records in your DNS provider pointing to your public IP, and set up a reverse proxy to route traffic to the correct service. See [DNS Explained](/foundations/dns-explained/) and [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Common Mistakes
 
@@ -267,7 +267,7 @@ addresses:
 
 ### Do I need a static IP for Docker containers?
 
-No. Docker containers communicate via Docker networks using container names as hostnames. The static IP is for the host server, not individual containers. See [Docker Networking](/foundations/docker-networking).
+No. Docker containers communicate via Docker networks using container names as hostnames. The static IP is for the host server, not individual containers. See [Docker Networking](/foundations/docker-networking/).
 
 ### Should I use DHCP reservation or server-side static IP?
 
@@ -287,15 +287,15 @@ No. Cloud VPS providers (Hetzner, DigitalOcean, Linode) assign static public IPs
 
 ## Next Steps
 
-- [DNS Explained](/foundations/dns-explained) — point domain names at your server
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained) — route traffic to services
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — secure your server's network
+- [DNS Explained](/foundations/dns-explained/) — point domain names at your server
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/) — route traffic to services
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — secure your server's network
 
 ## Related
 
-- [DNS Explained for Self-Hosting](/foundations/dns-explained)
-- [Network Ports Explained](/foundations/ports-explained)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [SSH Setup Guide](/foundations/ssh-setup)
+- [DNS Explained for Self-Hosting](/foundations/dns-explained/)
+- [Network Ports Explained](/foundations/ports-explained/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [SSH Setup Guide](/foundations/ssh-setup/)

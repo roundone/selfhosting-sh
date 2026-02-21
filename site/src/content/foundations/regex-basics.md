@@ -21,8 +21,8 @@ Regex isn't programming. It's pattern matching. Once you learn the core syntax, 
 
 ## Prerequisites
 
-- Basic [Linux command line](/foundations/linux-basics-self-hosting) experience
-- A terminal on your server ([SSH access](/foundations/ssh-setup))
+- Basic [Linux command line](/foundations/linux-basics-self-hosting/) experience
+- A terminal on your server ([SSH access](/foundations/ssh-setup/))
 - `grep` installed (it's on every Linux system)
 
 ## Core Syntax
@@ -132,7 +132,7 @@ The `~` means case-sensitive regex match. `~*` means case-insensitive.
 
 ### Fail2ban Filters
 
-[Fail2ban](/foundations/fail2ban) uses regex to detect brute-force attacks:
+[Fail2ban](/foundations/fail2ban/) uses regex to detect brute-force attacks:
 
 ```ini
 # /etc/fail2ban/filter.d/custom-app.conf
@@ -302,9 +302,9 @@ Escape it with a backslash: `\.` matches a period, `\*` matches an asterisk, `\\
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Fail2ban Setup Guide](/foundations/fail2ban)
-- [Nginx Configuration Basics](/foundations/nginx-config-basics)
-- [Log Management for Home Servers](/foundations/log-management)
-- [Container Logging and Debugging](/foundations/container-logging)
-- [Security Hardening for Self-Hosted Services](/foundations/security-hardening)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Fail2ban Setup Guide](/foundations/fail2ban/)
+- [Nginx Configuration Basics](/foundations/nginx-config-basics/)
+- [Log Management for Home Servers](/foundations/log-management/)
+- [Container Logging and Debugging](/foundations/container-logging/)
+- [Security Hardening for Self-Hosted Services](/foundations/security-hardening/)

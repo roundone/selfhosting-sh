@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (512 MB if enabling FastGeoIP)
 - 500 MB of disk space
 - Ports 80 and 443 available
@@ -156,7 +156,7 @@ Back up these directories:
 tar -czf zoraxy-backup-$(date +%Y%m%d).tar.gz config/ plugin/
 ```
 
-The `config/` directory contains everything needed to restore your Zoraxy setup. See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide for a comprehensive approach.
+The `config/` directory contains everything needed to restore your Zoraxy setup. See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -205,7 +205,7 @@ ls -la /var/run/docker.sock
 
 Zoraxy is an excellent choice if you want a web UI for reverse proxy management with more features than Nginx Proxy Manager. The built-in uptime monitoring, GeoIP filtering, stream proxying, and Docker integration make it a compelling all-in-one tool. Its web SSH terminal is a nice touch for managing servers through the browser.
 
-The main downsides: it is newer and less battle-tested than NPM or Traefik, and the community is smaller (~5K GitHub stars vs NPM's 23K+ or Traefik's 53K+). If you want maximum stability and the largest community, stick with [Nginx Proxy Manager](/apps/nginx-proxy-manager). If you want Docker auto-discovery without a web UI, use [Traefik](/apps/traefik). But if you want a feature-rich GUI proxy that does more than NPM, Zoraxy is worth trying.
+The main downsides: it is newer and less battle-tested than NPM or Traefik, and the community is smaller (~5K GitHub stars vs NPM's 23K+ or Traefik's 53K+). If you want maximum stability and the largest community, stick with [Nginx Proxy Manager](/apps/nginx-proxy-manager/). If you want Docker auto-discovery without a web UI, use [Traefik](/apps/traefik/). But if you want a feature-rich GUI proxy that does more than NPM, Zoraxy is worth trying.
 
 ## FAQ
 
@@ -216,22 +216,22 @@ Zoraxy offers more built-in features: stream proxying, GeoIP filtering, uptime m
 Yes. Zoraxy supports DNS-01 challenge for wildcard certificates. Configure your DNS provider credentials in the SSL/TLS settings section of the web UI.
 
 ### Can Zoraxy replace both Nginx Proxy Manager and Uptime Kuma?
-Partially. Zoraxy's built-in uptime monitoring covers basic health checks, but [Uptime Kuma](/apps/uptime-kuma) offers significantly more notification channels, monitoring types, and status page features. For simple uptime checks, Zoraxy's built-in monitoring is sufficient.
+Partially. Zoraxy's built-in uptime monitoring covers basic health checks, but [Uptime Kuma](/apps/uptime-kuma/) offers significantly more notification channels, monitoring types, and status page features. For simple uptime checks, Zoraxy's built-in monitoring is sufficient.
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Uptime Kuma with Docker](/apps/uptime-kuma)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Zoraxy vs Caddy](/compare/zoraxy-vs-caddy)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik)
-- [Zoraxy vs Cosmos Cloud](/compare/zoraxy-vs-cosmos-cloud)
-- [HAProxy vs Zoraxy](/compare/haproxy-vs-zoraxy)
-- [Nginx vs Zoraxy](/compare/nginx-vs-zoraxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Uptime Kuma with Docker](/apps/uptime-kuma/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Zoraxy vs Caddy](/compare/zoraxy-vs-caddy/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik/)
+- [Zoraxy vs Cosmos Cloud](/compare/zoraxy-vs-cosmos-cloud/)
+- [HAProxy vs Zoraxy](/compare/haproxy-vs-zoraxy/)
+- [Nginx vs Zoraxy](/compare/nginx-vs-zoraxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

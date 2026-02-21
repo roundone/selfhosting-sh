@@ -107,9 +107,9 @@ It depends on your usage. A personal instance with a few hundred photos needs a 
 
 ## Related
 
-- [How to Self-Host Pixelfed](/apps/pixelfed)
-- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial)
-- [Best Self-Hosted Social Networks](/best/social-networks)
-- [Self-Hosted Alternatives to Instagram](/replace/instagram)
-- [The Fediverse Explained](/foundations/fediverse-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Pixelfed](/apps/pixelfed/)
+- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial/)
+- [Best Self-Hosted Social Networks](/best/social-networks/)
+- [Self-Hosted Alternatives to Instagram](/replace/instagram/)
+- [The Fediverse Explained](/foundations/fediverse-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

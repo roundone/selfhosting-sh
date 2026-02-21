@@ -26,7 +26,7 @@ Mailu is a full-featured, self-hosted mail server built from standard open-sourc
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended) with a **dedicated public IP address** -- shared hosting won't work for mail
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB recommended if enabling ClamAV antivirus)
 - 10 GB of free disk space (grows with mailbox usage)
 - A **domain name** you control with full DNS access (MX, TXT, PTR records required)
@@ -556,7 +556,7 @@ Assign a second IP to your server and bind Mailu to it exclusively by changing `
 
 ### Option 2: External Reverse Proxy
 
-If you need an external proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-manager)):
+If you need an external proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-manager/)):
 
 1. Set `TLS_FLAVOR=notls` in `mailu.env` (the external proxy handles TLS)
 2. Change the `front` port mapping to avoid conflicts:
@@ -577,7 +577,7 @@ If you need an external proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-man
 
 **Important:** Only HTTP(S) traffic goes through the proxy. SMTP, IMAP, and POP3 ports (25, 465, 587, 143, 993, 110, 995) must still be mapped directly -- reverse proxies don't handle mail protocols.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for general configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for general configuration.
 
 ## Backup
 
@@ -610,7 +610,7 @@ docker compose start
 
 For zero-downtime backups, use filesystem snapshots or rsync the Maildir directories while Dovecot is running (Maildir format is safe for this).
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -691,7 +691,7 @@ Mailu is the best Docker-native mail server for people who want a complete, batt
 
 That said, self-hosting email remains one of the hardest things to self-host. IP reputation is a real problem -- if your server IP was previously used for spam, major providers will reject your mail regardless of how perfectly you configure DNS. Port 25 restrictions from cloud providers add another barrier. And unlike other self-hosted services, email has zero tolerance for downtime -- if your server is offline, you miss messages.
 
-Compared to [Mailcow](/apps/mailcow), Mailu is lighter on resources and simpler to configure. Mailcow has a more polished web UI and includes SOGo for calendar/contacts integration. Choose Mailu if you want a lean, efficient mail stack. Choose Mailcow if you want groupware features alongside email. See our [Mailu vs Mailcow comparison](/compare/mailu-vs-mailcow) for a detailed breakdown.
+Compared to [Mailcow](/apps/mailcow/), Mailu is lighter on resources and simpler to configure. Mailcow has a more polished web UI and includes SOGo for calendar/contacts integration. Choose Mailu if you want a lean, efficient mail stack. Choose Mailcow if you want groupware features alongside email. See our [Mailu vs Mailcow comparison](/compare/mailu-vs-mailcow/) for a detailed breakdown.
 
 **Recommendation:** If you need self-hosted email and understand the challenges, Mailu is the right choice for personal and small-team use. If you just want reliable email and don't need full server control, a privacy-focused provider like Proton Mail or Fastmail will save you significant operational headaches.
 
@@ -719,11 +719,11 @@ Technically yes, but not recommended. Mailu's multi-container stack consumes 1-2
 
 ## Related
 
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [Mailu vs Mailcow](/compare/mailu-vs-mailcow)
-- [Best Self-Hosted Email Servers](/best/email)
-- [Replace Gmail with Self-Hosted Email](/replace/gmail)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [Mailu vs Mailcow](/compare/mailu-vs-mailcow/)
+- [Best Self-Hosted Email Servers](/best/email/)
+- [Replace Gmail with Self-Hosted Email](/replace/gmail/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

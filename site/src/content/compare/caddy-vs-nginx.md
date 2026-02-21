@@ -164,11 +164,11 @@ For self-hosting, start with Caddy. Move to Nginx only if you hit a limitation C
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

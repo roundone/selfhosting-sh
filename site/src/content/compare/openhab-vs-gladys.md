@@ -89,14 +89,14 @@ Gladys has a smaller community, primarily French and English. Documentation is c
 
 These platforms target different users entirely. openHAB is for people who want to build and maintain a sophisticated automation system. Gladys is for people who want their lights to turn on when they get home.
 
-If you're reading this comparison because you're overwhelmed by [Home Assistant](/apps/home-assistant) and want something simpler, Gladys is your answer. If you're looking at openHAB because Home Assistant doesn't offer enough structure, openHAB delivers that in spades.
+If you're reading this comparison because you're overwhelmed by [Home Assistant](/apps/home-assistant/) and want something simpler, Gladys is your answer. If you're looking at openHAB because Home Assistant doesn't offer enough structure, openHAB delivers that in spades.
 
 ## Related
 
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Apple HomeKit](/replace/apple-homekit)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Apple HomeKit](/replace/apple-homekit/)

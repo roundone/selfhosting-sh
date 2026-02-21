@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - Ports 80 and 443 available (not used by another web server)
 - A domain name with DNS A record pointing to your server (required for automatic HTTPS)
@@ -392,7 +392,7 @@ docker compose start
 cp ~/caddy/Caddyfile ~/backups/Caddyfile.bak
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -470,7 +470,7 @@ sudo systemctl stop nginx && sudo systemctl disable nginx
 
 Caddy is the best reverse proxy for most self-hosters. Its automatic HTTPS with zero configuration is unmatched — where Nginx Proxy Manager needs you to click through a UI and Traefik requires Docker labels on every service, Caddy just works when you give it a domain name. The Caddyfile syntax is cleaner and more readable than Nginx configs or Traefik's YAML/TOML files. It uses less RAM than Nginx Proxy Manager and has a simpler mental model than Traefik.
 
-Choose [Nginx Proxy Manager](/apps/nginx-proxy-manager) if you want a web UI and never want to touch config files. Choose [Traefik](/apps/traefik) if you need deep Docker integration with automatic service discovery via labels. Choose Caddy for everything else — it is the right default for self-hosting in 2026.
+Choose [Nginx Proxy Manager](/apps/nginx-proxy-manager/) if you want a web UI and never want to touch config files. Choose [Traefik](/apps/traefik/) if you need deep Docker integration with automatic service discovery via labels. Choose Caddy for everything else — it is the right default for self-hosting in 2026.
 
 ## Frequently Asked Questions
 
@@ -496,16 +496,16 @@ Yes. The `caddy:2.10.2-alpine` image supports arm64. Caddy's low resource usage 
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik](/apps/traefik)
-- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy)
-- [NPM vs Caddy Comparison](/compare/nginx-proxy-manager-vs-caddy)
-- [Traefik vs Caddy Comparison](/compare/traefik-vs-caddy)
-- [Caddy vs Envoy](/compare/caddy-vs-envoy)
-- [Caddy vs HAProxy](/compare/caddy-vs-haproxy)
-- [Caddy vs Cosmos Cloud](/compare/caddy-vs-cosmos-cloud)
-- [Caddy vs Zoraxy](/compare/caddy-vs-zoraxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [Best Self-Hosted Reverse Proxy & SSL](/best/reverse-proxy/)
+- [NPM vs Caddy Comparison](/compare/nginx-proxy-manager-vs-caddy/)
+- [Traefik vs Caddy Comparison](/compare/traefik-vs-caddy/)
+- [Caddy vs Envoy](/compare/caddy-vs-envoy/)
+- [Caddy vs HAProxy](/compare/caddy-vs-haproxy/)
+- [Caddy vs Cosmos Cloud](/compare/caddy-vs-cosmos-cloud/)
+- [Caddy vs Zoraxy](/compare/caddy-vs-zoraxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

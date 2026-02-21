@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM
 - 1 GB of free disk space (plus storage for uploads)
 - A domain name (optional, for remote access)
@@ -194,14 +194,14 @@ BookStack uses MySQL/MariaDB full-text search by default. For better search resu
 
 ## Reverse Proxy
 
-With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+With [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host pointing to `bookstack:80` (or `your-server-ip:6875`)
 2. Enable SSL
 3. Update `APP_URL` in BookStack to match the proxied URL
 4. Restart the BookStack container
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -226,7 +226,7 @@ Alternatively, use MariaDB's built-in dump for a portable database backup:
 docker exec bookstack-db mysqldump -u bookstack -p'your-password' bookstack > bookstack-db.sql
 ```
 
-The `/config` volume contains uploaded files, images, and themes. The database contains all page content, user accounts, and settings. Both are critical. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The `/config` volume contains uploaded files, images, and themes. The database contains all page content, user accounts, and settings. Both are critical. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -288,23 +288,23 @@ Yes. BookStack runs well on a Raspberry Pi 4 with 2+ GB RAM. The LinuxServer.io 
 
 ### How does BookStack compare to Wiki.js?
 
-BookStack uses a book/chapter/page hierarchy. [Wiki.js](/apps/wiki-js) uses a flat page structure with folder organization. BookStack is simpler and better for structured documentation. Wiki.js is more flexible and supports multiple editors (Markdown, WYSIWYG, raw HTML).
+BookStack uses a book/chapter/page hierarchy. [Wiki.js](/apps/wiki-js/) uses a flat page structure with folder organization. BookStack is simpler and better for structured documentation. Wiki.js is more flexible and supports multiple editors (Markdown, WYSIWYG, raw HTML).
 
 ## Verdict
 
-BookStack is the best self-hosted wiki for teams that want structured, organized documentation without complexity. The shelf/book/chapter/page hierarchy forces content organization in a way that flat wikis don't. The WYSIWYG editor is good enough for non-technical users, and Markdown mode satisfies developers. For personal notes and more freeform knowledge management, look at [Outline](/apps/outline) or [SiYuan](/apps/siyuan). For a traditional wiki with maximum flexibility, consider [Wiki.js](/apps/wiki-js).
+BookStack is the best self-hosted wiki for teams that want structured, organized documentation without complexity. The shelf/book/chapter/page hierarchy forces content organization in a way that flat wikis don't. The WYSIWYG editor is good enough for non-technical users, and Markdown mode satisfies developers. For personal notes and more freeform knowledge management, look at [Outline](/apps/outline/) or [SiYuan](/apps/siyuan/). For a traditional wiki with maximum flexibility, consider [Wiki.js](/apps/wiki-js/).
 
 ## Related
 
-- [Best Self-Hosted Note Taking & Knowledge](/best/note-taking)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [BookStack vs AppFlowy](/compare/bookstack-vs-appflowy)
-- [BookStack vs Joplin](/compare/bookstack-vs-joplin)
-- [BookStack vs SiYuan](/compare/bookstack-vs-siyuan)
-- [BookStack vs Trilium](/compare/bookstack-vs-trilium)
-- [Replace Notion](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
+- [Best Self-Hosted Note Taking & Knowledge](/best/note-taking/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [BookStack vs AppFlowy](/compare/bookstack-vs-appflowy/)
+- [BookStack vs Joplin](/compare/bookstack-vs-joplin/)
+- [BookStack vs SiYuan](/compare/bookstack-vs-siyuan/)
+- [BookStack vs Trilium](/compare/bookstack-vs-trilium/)
+- [Replace Notion](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)

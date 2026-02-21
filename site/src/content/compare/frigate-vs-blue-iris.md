@@ -140,10 +140,10 @@ Frigate+ is an optional paid service ($50/year) that provides a custom AI model 
 
 ## Related
 
-- [How to Self-Host Frigate](/apps/frigate)
-- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder)
-- [Frigate vs Shinobi](/compare/frigate-vs-shinobi)
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring](/replace/ring)
-- [NVR Hardware Guide](/hardware/nvr-hardware)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Frigate](/apps/frigate/)
+- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder/)
+- [Frigate vs Shinobi](/compare/frigate-vs-shinobi/)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring](/replace/ring/)
+- [NVR Hardware Guide](/hardware/nvr-hardware/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

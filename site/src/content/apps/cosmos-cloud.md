@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- Docker installed ([guide](/foundations/docker-compose-basics))
+- Docker installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM minimum (2 GB recommended)
 - 2 GB of free disk space
 - A domain name pointing to your server (required for HTTPS)
@@ -181,7 +181,7 @@ The `/config` volume contains:
 
 Apps deployed through Cosmos store their data in their own volumes — back those up separately.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -230,7 +230,7 @@ If using a non-standard Docker socket path, adjust the volume mount.
 
 **Symptom:** Cosmos uses 500+ MB of RAM.
 
-**Fix:** The embedded MongoDB instance is the main consumer. This is normal for Cosmos's feature set. If memory is tight, consider lighter alternatives like [Dockge](/apps/dockge) for container management and [Nginx Proxy Manager](/apps/nginx-proxy-manager) for reverse proxying separately.
+**Fix:** The embedded MongoDB instance is the main consumer. This is normal for Cosmos's feature set. If memory is tight, consider lighter alternatives like [Dockge](/apps/dockge/) for container management and [Nginx Proxy Manager](/apps/nginx-proxy-manager/) for reverse proxying separately.
 
 ## Resource Requirements
 
@@ -254,7 +254,7 @@ Yes. Cosmos Cloud is open source and free to use. There are no paid tiers or fea
 
 ### How does Cosmos compare to Portainer?
 
-Cosmos bundles a reverse proxy, auth, and VPN that Portainer doesn't have. Portainer has better multi-host management, Docker Swarm/K8s support, and a larger community. See our [Portainer vs Cosmos comparison](/compare/portainer-vs-cosmos).
+Cosmos bundles a reverse proxy, auth, and VPN that Portainer doesn't have. Portainer has better multi-host management, Docker Swarm/K8s support, and a larger community. See our [Portainer vs Cosmos comparison](/compare/portainer-vs-cosmos/).
 
 ### Does Cosmos replace Nginx Proxy Manager?
 
@@ -270,11 +270,11 @@ Yes, Cosmos supports ARM64. However, the resource requirements (especially Mongo
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

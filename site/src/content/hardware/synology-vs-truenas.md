@@ -23,7 +23,7 @@ TrueNAS SCALE is free, runs on any hardware, uses ZFS (the most reliable filesys
 
 **For most self-hosters:** Buy a Synology DS423+ or DS224+. The convenience premium is worth it.
 
-**For experienced users who want ZFS, custom hardware, or maximum storage per dollar:** Build a [DIY NAS](/hardware/diy-nas-build) and run TrueNAS SCALE.
+**For experienced users who want ZFS, custom hardware, or maximum storage per dollar:** Build a [DIY NAS](/hardware/diy-nas-build/) and run TrueNAS SCALE.
 
 ## Overview
 
@@ -284,11 +284,11 @@ Yes, but you'll need to move your data off the Synology first (SHR isn't compati
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Synology vs Unraid](/hardware/synology-vs-unraid)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Synology vs Unraid](/hardware/synology-vs-unraid/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -23,10 +23,10 @@ Most popular self-hosted apps now publish multi-arch images that include both `l
 
 ## Prerequisites
 
-- Docker installed on your server — see [Docker Compose Basics](/foundations/docker-compose-basics)
-- Basic understanding of Docker images — see [Docker Image Management](/foundations/docker-image-management)
-- Familiarity with Dockerfiles — see [Dockerfile Basics](/foundations/dockerfile-basics)
-- SSH access to your server — see [SSH Setup](/foundations/ssh-setup)
+- Docker installed on your server — see [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Basic understanding of Docker images — see [Docker Image Management](/foundations/docker-image-management/)
+- Familiarity with Dockerfiles — see [Dockerfile Basics](/foundations/dockerfile-basics/)
+- SSH access to your server — see [SSH Setup](/foundations/ssh-setup/)
 
 ## How Docker Handles Architectures
 
@@ -512,21 +512,21 @@ The `docker run --privileged multiarch/qemu-user-static` method registers QEMU h
 
 ## Next Steps
 
-- Learn Dockerfile fundamentals in [Dockerfile Basics](/foundations/dockerfile-basics)
-- Understand image lifecycle in [Docker Image Management](/foundations/docker-image-management)
-- Set up a Raspberry Pi or ARM server using [Getting Started with Self-Hosting](/foundations/getting-started)
-- Troubleshoot container issues with [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- Run virtual machines alongside Docker with [Proxmox Basics](/foundations/proxmox-basics)
+- Learn Dockerfile fundamentals in [Dockerfile Basics](/foundations/dockerfile-basics/)
+- Understand image lifecycle in [Docker Image Management](/foundations/docker-image-management/)
+- Set up a Raspberry Pi or ARM server using [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Troubleshoot container issues with [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- Run virtual machines alongside Docker with [Proxmox Basics](/foundations/proxmox-basics/)
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Image Management](/foundations/docker-image-management)
-- [Dockerfile Basics](/foundations/dockerfile-basics)
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- [Proxmox Basics](/foundations/proxmox-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Networking](/foundations/docker-networking)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Image Management](/foundations/docker-image-management/)
+- [Dockerfile Basics](/foundations/dockerfile-basics/)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- [Proxmox Basics](/foundations/proxmox-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Networking](/foundations/docker-networking/)
 
 ## FAQ
 

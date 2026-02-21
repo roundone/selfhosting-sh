@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Do You Need a Rack?
 
-**Probably not.** A [mini PC](/hardware/best-mini-pc) on a shelf, a [NAS](/hardware/best-nas) next to it, and a switch on top is a perfectly functional homelab. Racks are for organization, not performance.
+**Probably not.** A [mini PC](/hardware/best-mini-pc/) on a shelf, a [NAS](/hardware/best-nas/) next to it, and a switch on top is a perfectly functional homelab. Racks are for organization, not performance.
 
 **Get a rack if:**
 - You have 3+ rack-mountable devices
@@ -105,7 +105,7 @@ Use Velcro cable ties instead of zip ties. Velcro is reusable — you'll be addi
 
 ### UPS
 
-A rack-mount UPS keeps everything running during brief outages. See our [UPS guide](/hardware/best-ups-home-server).
+A rack-mount UPS keeps everything running during brief outages. See our [UPS guide](/hardware/best-ups-home-server/).
 
 - **CyberPower OR1500PFCLCD** (1500VA, 2U rack-mount, ~$300) — pure sine wave, LCD display
 - **APC SMT1500RM2U** (1500VA, 2U rack-mount, ~$500) — enterprise-grade, network management card compatible
@@ -125,7 +125,7 @@ Rack-mount servers are loud. Enterprise 1U/2U servers use high-RPM fans (40-60 d
 - **Garage** — temperature control may be an issue (too hot in summer, too cold in winter for drives)
 - **Basement** — ideal if you have one. Cool, out of the way.
 
-**If the rack is in a living space:** Avoid rack-mount servers entirely. Use [mini PCs](/hardware/best-mini-pc) and [NAS devices](/hardware/best-nas) on a rack shelf — they're near-silent.
+**If the rack is in a living space:** Avoid rack-mount servers entirely. Use [mini PCs](/hardware/best-mini-pc/) and [NAS devices](/hardware/best-nas/) on a rack shelf — they're near-silent.
 
 ## Total Cost
 
@@ -168,8 +168,8 @@ Most networking gear (switches, patch panels) is shallow — 8-12" deep. Mini PC
 
 ## Related
 
-- [Best Server Cases for Homelab](/hardware/server-case-guide)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Server Cases for Homelab](/hardware/server-case-guide/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

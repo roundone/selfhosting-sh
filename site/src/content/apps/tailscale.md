@@ -22,12 +22,12 @@ affiliateDisclosure: false
 
 ## What Is Tailscale?
 
-[Tailscale](https://tailscale.com) is a mesh VPN built on top of WireGuard that connects your devices into a private network without opening ports, configuring firewalls, or managing encryption keys. Unlike a traditional VPN server where all traffic funnels through a single gateway, Tailscale creates direct peer-to-peer connections between every device in your network. Each device gets a stable 100.x.y.z IP address that works regardless of which physical network it is on. NAT traversal is automatic — Tailscale punches through firewalls and CGNATs without any router configuration. The coordination servers handle key exchange and device discovery, while actual traffic flows directly between your devices using WireGuard encryption. For users who want to eliminate the coordination server dependency entirely, [Headscale](/apps/headscale) is a self-hosted drop-in replacement.
+[Tailscale](https://tailscale.com) is a mesh VPN built on top of WireGuard that connects your devices into a private network without opening ports, configuring firewalls, or managing encryption keys. Unlike a traditional VPN server where all traffic funnels through a single gateway, Tailscale creates direct peer-to-peer connections between every device in your network. Each device gets a stable 100.x.y.z IP address that works regardless of which physical network it is on. NAT traversal is automatic — Tailscale punches through firewalls and CGNATs without any router configuration. The coordination servers handle key exchange and device discovery, while actual traffic flows directly between your devices using WireGuard encryption. For users who want to eliminate the coordination server dependency entirely, [Headscale](/apps/headscale/) is a self-hosted drop-in replacement.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - A free Tailscale account at [login.tailscale.com](https://login.tailscale.com)
 - 128 MB of free RAM
 - An auth key generated from the Tailscale admin console
@@ -325,9 +325,9 @@ docker exec tailscale tailscale serve https /files http://localhost:8080
 
 Each path routes to a different local service with automatic HTTPS certificates.
 
-**Option 2: Keep a traditional reverse proxy.** If you already have [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik) set up, Tailscale works alongside it. Your services are accessible via the Tailscale IP, and the reverse proxy handles routing and TLS as usual.
+**Option 2: Keep a traditional reverse proxy.** If you already have [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/) set up, Tailscale works alongside it. Your services are accessible via the Tailscale IP, and the reverse proxy handles routing and TLS as usual.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for general reverse proxy guidance.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for general reverse proxy guidance.
 
 ## Backup
 
@@ -343,7 +343,7 @@ The `/var/lib/tailscale` volume contains the node's WireGuard keys and identity.
 
 That said, Tailscale state is low-stakes compared to application data. If you lose the state, generate a new auth key and restart the container. The node re-registers with a new IP, and you update any references to the old IP. No data is stored in the Tailscale container.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -414,15 +414,15 @@ Tailscale is one of the lightest services you can run. It adds negligible overhe
 
 Tailscale is the easiest way to connect all your devices and self-hosted services into a secure private network. Zero port forwarding, zero firewall configuration, zero certificate management. The mesh architecture means traffic flows directly between devices at WireGuard speeds rather than through a central server. The free tier supports up to 100 devices and 3 users, which is more than enough for personal self-hosting.
 
-The main trade-off is dependency on Tailscale's coordination servers. Your traffic does not flow through Tailscale (it is peer-to-peer), but device discovery and key exchange do. If that dependency bothers you, [Headscale](/apps/headscale) is a self-hosted implementation of the Tailscale control server that is fully compatible with official Tailscale clients.
+The main trade-off is dependency on Tailscale's coordination servers. Your traffic does not flow through Tailscale (it is peer-to-peer), but device discovery and key exchange do. If that dependency bothers you, [Headscale](/apps/headscale/) is a self-hosted implementation of the Tailscale control server that is fully compatible with official Tailscale clients.
 
-For users who want a raw [WireGuard](/apps/wireguard) server with no external dependencies, that remains an option — but you lose automatic NAT traversal, MagicDNS, and the zero-config experience. Tailscale is WireGuard made effortless.
+For users who want a raw [WireGuard](/apps/wireguard/) server with no external dependencies, that remains an option — but you lose automatic NAT traversal, MagicDNS, and the zero-config experience. Tailscale is WireGuard made effortless.
 
 ## Frequently Asked Questions
 
 ### What is the difference between Tailscale and WireGuard?
 
-Tailscale is built on top of WireGuard. WireGuard is the encryption protocol — fast, modern, and minimal. Tailscale adds automatic key management, NAT traversal, device discovery, MagicDNS, and a coordination layer on top. Think of WireGuard as the engine and Tailscale as the car. If you want full control and no dependencies, use [WireGuard directly](/apps/wireguard). If you want things to work without configuration, use Tailscale.
+Tailscale is built on top of WireGuard. WireGuard is the encryption protocol — fast, modern, and minimal. Tailscale adds automatic key management, NAT traversal, device discovery, MagicDNS, and a coordination layer on top. Think of WireGuard as the engine and Tailscale as the car. If you want full control and no dependencies, use [WireGuard directly](/apps/wireguard/). If you want things to work without configuration, use Tailscale.
 
 ### Is Tailscale free?
 
@@ -430,7 +430,7 @@ Yes, for personal use. The free plan includes up to 100 devices, 3 users, and al
 
 ### What is Headscale and should I use it?
 
-[Headscale](/apps/headscale) is an open-source, self-hosted implementation of the Tailscale coordination server. It is compatible with official Tailscale clients. Use Headscale if you want to eliminate the dependency on Tailscale's servers entirely and run the complete stack yourself. The trade-off is more setup complexity and maintaining the coordination server yourself. For most self-hosters, Tailscale's free tier is the pragmatic choice.
+[Headscale](/apps/headscale/) is an open-source, self-hosted implementation of the Tailscale coordination server. It is compatible with official Tailscale clients. Use Headscale if you want to eliminate the dependency on Tailscale's servers entirely and run the complete stack yourself. The trade-off is more setup complexity and maintaining the coordination server yourself. For most self-hosters, Tailscale's free tier is the pragmatic choice.
 
 ### Can I expose services to the public internet with Tailscale?
 
@@ -442,12 +442,12 @@ Yes, in two ways. First, you can run Tailscale as a standalone container to give
 
 ## Related
 
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host Headscale](/apps/headscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Replace NordVPN with Self-Hosted VPN](/replace/nordvpn)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Replace NordVPN with Self-Hosted VPN](/replace/nordvpn/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

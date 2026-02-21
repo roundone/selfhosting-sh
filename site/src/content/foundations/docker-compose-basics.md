@@ -17,15 +17,15 @@ affiliateDisclosure: false
 
 Docker Compose is a tool for defining and running multi-container applications with a single YAML file. Instead of manually running `docker run` commands with dozens of flags, you describe your entire stack — the app, its database, its cache, the volumes, the networks — in one `docker-compose.yml` file and bring it all up with a single command.
 
-For self-hosting, Docker Compose is the standard. Nearly every self-hosted app ships with a `docker-compose.yml` in its repository. Learning Compose is the single highest-leverage skill for running your own services. Once you understand it, you can deploy anything from [Immich](/apps/immich) to [Vaultwarden](/apps/vaultwarden) in minutes.
+For self-hosting, Docker Compose is the standard. Nearly every self-hosted app ships with a `docker-compose.yml` in its repository. Learning Compose is the single highest-leverage skill for running your own services. Once you understand it, you can deploy anything from [Immich](/apps/immich/) to [Vaultwarden](/apps/vaultwarden/) in minutes.
 
 This guide covers everything you need to go from zero to running multi-service stacks confidently.
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- SSH access to your server — see [SSH Setup](/foundations/ssh-setup)
-- Basic familiarity with the Linux command line — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- SSH access to your server — see [SSH Setup](/foundations/ssh-setup/)
+- Basic familiarity with the Linux command line — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
 - Root or sudo access
 
 ## Installation
@@ -76,7 +76,7 @@ You should see `Docker Compose version v2.x.x`. If you see `command not found`, 
 
 ## The Docker Compose File
 
-Every Compose setup starts with a file named `docker-compose.yml` in a project directory. Here is a practical example that runs [Uptime Kuma](/apps/uptime-kuma), a self-hosted monitoring tool:
+Every Compose setup starts with a file named `docker-compose.yml` in a project directory. Here is a practical example that runs [Uptime Kuma](/apps/uptime-kuma/), a self-hosted monitoring tool:
 
 ```yaml
 services:
@@ -119,7 +119,7 @@ To run the app on a different host port (for example, if 3001 is taken), change 
 
 Mounts persistent storage into the container. Without volumes, all data inside a container is lost when the container is removed. The `uptime-kuma-data:/app/data` line means a named volume called `uptime-kuma-data` is mounted at `/app/data` inside the container. The `volumes:` section at the bottom of the file declares the named volume.
 
-For a deep dive on volume types, bind mounts, and permissions, see [Docker Volumes](/foundations/docker-volumes).
+For a deep dive on volume types, bind mounts, and permissions, see [Docker Volumes](/foundations/docker-volumes/).
 
 ### `environment`
 
@@ -138,7 +138,7 @@ Controls what happens when the container stops. Use `unless-stopped` for every s
 
 ### `networks`
 
-Not shown in the simple example above because Compose creates a default network for each project automatically. All services in the same `docker-compose.yml` can reach each other by service name on this default network. You only need to define custom networks when you want to isolate services or connect containers across different Compose projects. See [Docker Networking](/foundations/docker-networking) for details.
+Not shown in the simple example above because Compose creates a default network for each project automatically. All services in the same `docker-compose.yml` can reach each other by service name on this default network. You only need to define custom networks when you want to isolate services or connect containers across different Compose projects. See [Docker Networking](/foundations/docker-networking/) for details.
 
 ## Essential Commands
 
@@ -264,7 +264,7 @@ volumes:
 
 Named volumes are simpler. Bind mounts give you direct access to the files on the host filesystem, which makes backups easier. For most self-hosted apps, either approach works. Pick one convention and stick with it across your server.
 
-Back up your volumes regularly. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) for a complete guide. For a deeper look at volume types, permissions, and troubleshooting, see [Docker Volumes](/foundations/docker-volumes).
+Back up your volumes regularly. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) for a complete guide. For a deeper look at volume types, permissions, and troubleshooting, see [Docker Volumes](/foundations/docker-volumes/).
 
 ## Networks
 
@@ -280,7 +280,7 @@ services:
     image: postgres:16.2
 ```
 
-Custom networks become important when you run a [reverse proxy](/foundations/reverse-proxy-explained) that needs to reach containers defined in separate Compose files, or when you want to isolate services from each other. See [Docker Networking](/foundations/docker-networking) for the full guide.
+Custom networks become important when you run a [reverse proxy](/foundations/reverse-proxy-explained/) that needs to reach containers defined in separate Compose files, or when you want to isolate services from each other. See [Docker Networking](/foundations/docker-networking/) for the full guide.
 
 ## Multi-Service Stacks
 
@@ -388,24 +388,24 @@ The `-v` flag deletes all named volumes — your database, your uploads, your co
 
 You now have the fundamentals to deploy any Docker Compose-based self-hosted application. Here is where to go next:
 
-- **Set up a reverse proxy** so you can access your services via domain names with HTTPS instead of IP addresses and port numbers — [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- **Understand Docker networking** to connect services across Compose files and isolate sensitive containers — [Docker Networking](/foundations/docker-networking)
-- **Master volumes and storage** for reliable data persistence and clean backup workflows — [Docker Volumes](/foundations/docker-volumes)
-- **Implement a backup strategy** before you have data you care about — [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- **Set up a reverse proxy** so you can access your services via domain names with HTTPS instead of IP addresses and port numbers — [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- **Understand Docker networking** to connect services across Compose files and isolate sensitive containers — [Docker Networking](/foundations/docker-networking/)
+- **Master volumes and storage** for reliable data persistence and clean backup workflows — [Docker Volumes](/foundations/docker-volumes/)
+- **Implement a backup strategy** before you have data you care about — [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
 
 Ready to deploy your first app? Start with one of these beginner-friendly self-hosted applications:
 
-- [Uptime Kuma](/apps/uptime-kuma) — simple, single-container monitoring with a clean UI
-- [Pi-hole](/apps/pi-hole) — network-wide ad blocking that makes an immediate difference
-- [Vaultwarden](/apps/vaultwarden) — a self-hosted password manager compatible with Bitwarden clients
-- [Immich](/apps/immich) — a full-featured Google Photos replacement
+- [Uptime Kuma](/apps/uptime-kuma/) — simple, single-container monitoring with a clean UI
+- [Pi-hole](/apps/pi-hole/) — network-wide ad blocking that makes an immediate difference
+- [Vaultwarden](/apps/vaultwarden/) — a self-hosted password manager compatible with Bitwarden clients
+- [Immich](/apps/immich/) — a full-featured Google Photos replacement
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [SSH Setup](/foundations/ssh-setup)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)

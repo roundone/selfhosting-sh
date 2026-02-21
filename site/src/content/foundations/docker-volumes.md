@@ -17,16 +17,16 @@ affiliateDisclosure: false
 
 Containers are ephemeral. Every time you run `docker compose down && docker compose up -d`, your containers are destroyed and recreated from scratch. Without volumes, everything inside them -- databases, config files, uploaded photos, media libraries -- vanishes.
 
-Volumes solve this by mapping storage outside the container's filesystem. Your [Immich](/apps/immich) photo library, your [Jellyfin](/apps/jellyfin) media collection, your [Nextcloud](/apps/nextcloud) files -- all of it survives container rebuilds, image upgrades, and host reboots because the data lives on the host, not inside the container.
+Volumes solve this by mapping storage outside the container's filesystem. Your [Immich](/apps/immich/) photo library, your [Jellyfin](/apps/jellyfin/) media collection, your [Nextcloud](/apps/nextcloud/) files -- all of it survives container rebuilds, image upgrades, and host reboots because the data lives on the host, not inside the container.
 
 If you self-host anything you care about, understanding volumes is non-negotiable. Get this wrong and you lose data. Get it right and upgrades become a one-line operation.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic terminal comfort ([Getting Started with Self-Hosting](/foundations/getting-started))
-- Understanding of Linux file permissions ([Linux Permissions](/foundations/linux-permissions))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic terminal comfort ([Getting Started with Self-Hosting](/foundations/getting-started/))
+- Understanding of Linux file permissions ([Linux Permissions](/foundations/linux-permissions/))
 
 ## Named Volumes vs Bind Mounts
 
@@ -276,7 +276,7 @@ docker exec myapp id
 docker exec myapp ls -la /data
 ```
 
-If ownership doesn't match, fix it with `chown`. See [Linux Permissions](/foundations/linux-permissions) for a deeper dive on UIDs, GIDs, and the Linux permissions model.
+If ownership doesn't match, fix it with `chown`. See [Linux Permissions](/foundations/linux-permissions/) for a deeper dive on UIDs, GIDs, and the Linux permissions model.
 
 ## Backing Up Volume Data
 
@@ -320,7 +320,7 @@ This spins up a minimal Alpine container, mounts the named volume as read-only, 
 
 ### Automate It
 
-Manual backups don't happen. Set up automated backups with a cron job or a tool like restic, borgmatic, or Kopia. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) for a complete backup guide covering self-hosted backup solutions.
+Manual backups don't happen. Set up automated backups with a cron job or a tool like restic, borgmatic, or Kopia. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) for a complete backup guide covering self-hosted backup solutions.
 
 ## Volume Drivers and Remote Storage
 
@@ -448,18 +448,18 @@ Pattern: Some people prefer bind mounts even for databases when they want simple
 
 ## Next Steps
 
-- Learn inter-container networking in [Docker Networking](/foundations/docker-networking)
-- Set up automated backups with [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- Understand file ownership issues in [Linux Permissions](/foundations/linux-permissions)
-- Deploy your first self-hosted app: [Immich](/apps/immich), [Jellyfin](/apps/jellyfin), or [Nextcloud](/apps/nextcloud)
+- Learn inter-container networking in [Docker Networking](/foundations/docker-networking/)
+- Set up automated backups with [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- Understand file ownership issues in [Linux Permissions](/foundations/linux-permissions/)
+- Deploy your first self-hosted app: [Immich](/apps/immich/), [Jellyfin](/apps/jellyfin/), or [Nextcloud](/apps/nextcloud/)
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Linux Permissions](/foundations/linux-permissions)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Linux Permissions](/foundations/linux-permissions/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)

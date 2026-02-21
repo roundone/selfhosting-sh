@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-For **Plex/Jellyfin hardware transcoding:** Get an [Intel N100 mini PC](/hardware/intel-n100-mini-pc) with Quick Sync — it handles 10+ simultaneous transcodes at 8W. No discrete GPU needed.
+For **Plex/Jellyfin hardware transcoding:** Get an [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) with Quick Sync — it handles 10+ simultaneous transcodes at 8W. No discrete GPU needed.
 
 For **AI inference (Ollama, LocalAI):** NVIDIA GeForce RTX 3060 12GB (~$200 used) is the best value — 12GB VRAM runs 7B-13B parameter models. Pair with Proxmox GPU passthrough.
 
@@ -25,7 +25,7 @@ For **gaming VM + server on one box:** NVIDIA RTX 4060 or AMD RX 7600 passed thr
 
 | Use Case | GPU Required? | Best Option |
 |----------|--------------|-------------|
-| [Plex](/apps/plex)/[Jellyfin](/apps/jellyfin) transcoding | No — Intel Quick Sync is better | Intel iGPU (N100, 12th gen+) |
+| [Plex](/apps/plex/)/[Jellyfin](/apps/jellyfin/) transcoding | No — Intel Quick Sync is better | Intel iGPU (N100, 12th gen+) |
 | AI/LLM inference (Ollama) | Yes — VRAM matters most | NVIDIA RTX 3060 12GB |
 | Stable Diffusion / ComfyUI | Yes — VRAM + compute | NVIDIA RTX 3090 24GB |
 | Gaming VM (single-player) | Yes — passthrough to VM | NVIDIA RTX 4060 / AMD RX 7600 |
@@ -159,7 +159,7 @@ This hides the hypervisor from the NVIDIA driver.
 
 ### LXC Container GPU Access (No Passthrough)
 
-For Docker workloads like [Jellyfin](/apps/jellyfin) transcoding or Ollama, you don't need full passthrough. Mount the GPU device into an LXC container:
+For Docker workloads like [Jellyfin](/apps/jellyfin/) transcoding or Ollama, you don't need full passthrough. Mount the GPU device into an LXC container:
 
 ```bash
 # In the LXC container config (/etc/pve/lxc/<id>.conf)
@@ -186,12 +186,12 @@ GPUs draw significant idle power even when not processing. Consider powering dow
 
 | Server Type | GPU Recommendation | Why |
 |-------------|-------------------|-----|
-| [Intel N100 Mini PC](/hardware/intel-n100-mini-pc) | None (use iGPU) | No PCIe slot, iGPU is enough |
-| [Dell OptiPlex](/hardware/used-dell-optiplex) Micro/SFF | Low-profile RTX A2000 | SFF only fits low-profile cards |
-| [Dell OptiPlex](/hardware/used-dell-optiplex) MT | RTX 3060 | Full-height PCIe x16 |
-| [DIY NAS Build](/hardware/diy-nas-build) | Usually none | NAS workloads don't need GPU |
-| [Enterprise Server](/hardware/used-enterprise-servers) (R730) | RTX 3090 or Tesla P40 | Full-size PCIe, adequate PSU |
-| [Proxmox](/hardware/proxmox-hardware-guide) cluster | RTX 3060 per node | GPU passthrough to VMs |
+| [Intel N100 Mini PC](/hardware/intel-n100-mini-pc/) | None (use iGPU) | No PCIe slot, iGPU is enough |
+| [Dell OptiPlex](/hardware/used-dell-optiplex/) Micro/SFF | Low-profile RTX A2000 | SFF only fits low-profile cards |
+| [Dell OptiPlex](/hardware/used-dell-optiplex/) MT | RTX 3060 | Full-height PCIe x16 |
+| [DIY NAS Build](/hardware/diy-nas-build/) | Usually none | NAS workloads don't need GPU |
+| [Enterprise Server](/hardware/used-enterprise-servers/) (R730) | RTX 3090 or Tesla P40 | Full-size PCIe, adequate PSU |
+| [Proxmox](/hardware/proxmox-hardware-guide/) cluster | RTX 3060 per node | GPU passthrough to VMs |
 
 ## FAQ
 
@@ -217,10 +217,10 @@ No. Laptop GPUs are not removable or usable in desktops. If you need a low-power
 
 ## Related
 
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Used Enterprise Servers](/hardware/used-enterprise-servers)
-- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Home Server Noise Reduction](/hardware/home-server-noise-reduction)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Used Enterprise Servers](/hardware/used-enterprise-servers/)
+- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Home Server Noise Reduction](/hardware/home-server-noise-reduction/)

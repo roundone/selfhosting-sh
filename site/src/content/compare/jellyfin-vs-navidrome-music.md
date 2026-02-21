@@ -116,10 +116,10 @@ Yes, via the Last.fm plugin or Jellyfin-LastFM-Plugin. It's not built-in like Na
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Emby vs Navidrome](/compare/emby-vs-navidrome)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Emby vs Navidrome](/compare/emby-vs-navidrome/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

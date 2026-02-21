@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 8 GB of RAM minimum (16 GB+ recommended for larger models)
 - 20-50 GB of free disk space for models
 - NVIDIA GPU with CUDA support (optional but strongly recommended for performance)
@@ -244,7 +244,7 @@ Using `q8_0` reduces VRAM usage with minimal quality loss. `q4_0` saves more VRA
 
 ### Connecting to Open WebUI
 
-Ollama's API is designed to work with web interfaces. The most popular is [Open WebUI](/apps/open-webui):
+Ollama's API is designed to work with web interfaces. The most popular is [Open WebUI](/apps/open-webui/):
 
 ```yaml
 services:
@@ -281,11 +281,11 @@ volumes:
   open-webui_data:
 ```
 
-See the full [Open WebUI guide](/apps/open-webui) for detailed setup.
+See the full [Open WebUI guide](/apps/open-webui/) for detailed setup.
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or another reverse proxy, forward to port 11434 (API) or port 3000 if using Open WebUI.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or another reverse proxy, forward to port 11434 (API) or port 3000 if using Open WebUI.
 
 For the Ollama API specifically, ensure WebSocket passthrough is enabled and increase proxy timeouts — model inference can take 30+ seconds for large prompts.
 
@@ -301,7 +301,7 @@ location /ollama/ {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -316,7 +316,7 @@ docker compose start ollama
 
 The `/root/.ollama` volume contains downloaded models and configuration. Models can be re-downloaded, so backing up is optional if bandwidth isn't a concern.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -383,18 +383,18 @@ environment:
 
 ## Verdict
 
-Ollama is the best way to run LLMs locally. The Docker setup is dead simple, GPU passthrough works reliably, and the OpenAI-compatible API means it integrates with virtually every AI tool. Pair it with [Open WebUI](/apps/open-webui) for a ChatGPT-like interface, or use the API directly from your applications.
+Ollama is the best way to run LLMs locally. The Docker setup is dead simple, GPU passthrough works reliably, and the OpenAI-compatible API means it integrates with virtually every AI tool. Pair it with [Open WebUI](/apps/open-webui/) for a ChatGPT-like interface, or use the API directly from your applications.
 
-For a complete self-hosted AI stack, Ollama is the runtime and [Open WebUI](/apps/open-webui) is the interface. If you need an OpenAI API drop-in replacement with support for multiple model formats, [LocalAI](/apps/localai) is an alternative — but Ollama is simpler and faster for most use cases.
+For a complete self-hosted AI stack, Ollama is the runtime and [Open WebUI](/apps/open-webui/) is the interface. If you need an OpenAI API drop-in replacement with support for multiple model formats, [LocalAI](/apps/localai/) is an alternative — but Ollama is simpler and faster for most use cases.
 
 ## Related
 
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [How to Self-Host LocalAI](/apps/localai)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Self-Hosted Alternatives to ChatGPT](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [GPU Passthrough in Docker](/foundations/gpu-passthrough-docker)
-- [LLM Hardware Guide](/foundations/llm-hardware-guide)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [How to Self-Host LocalAI](/apps/localai/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Self-Hosted Alternatives to ChatGPT](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [GPU Passthrough in Docker](/foundations/gpu-passthrough-docker/)
+- [LLM Hardware Guide](/foundations/llm-hardware-guide/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

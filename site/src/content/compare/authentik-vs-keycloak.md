@@ -78,7 +78,7 @@ Both have comparable setup complexity. Authentik has more containers; Keycloak h
 | Startup time | ~15-20 seconds | ~30-60 seconds |
 | Containers | 3+ (server, worker, DB, Redis) | 2 (app, DB) |
 
-Both are resource-heavy compared to lightweight alternatives like [Authelia](/apps/authelia). Keycloak uses more RAM due to the JVM, but Authentik's Python worker adds up too. Neither is suitable for Raspberry Pi deployments.
+Both are resource-heavy compared to lightweight alternatives like [Authelia](/apps/authelia/). Keycloak uses more RAM due to the JVM, but Authentik's Python worker adds up too. Neither is suitable for Raspberry Pi deployments.
 
 ## Community and Support
 
@@ -108,7 +108,7 @@ Both are resource-heavy compared to lightweight alternatives like [Authelia](/ap
 
 ## Final Verdict
 
-For the typical self-hoster running 5-20 services at home, Authentik is the better choice. Its UI is more approachable, the flow designer is genuinely useful, and OIDC covers 95% of what self-hosted apps need. Keycloak wins in enterprise scenarios — SAML-heavy environments, Active Directory shops, and organizations that need fine-grained authorization. Both are overkill if you just want SSO and 2FA for your reverse proxy — use [Authelia](/apps/authelia) for that.
+For the typical self-hoster running 5-20 services at home, Authentik is the better choice. Its UI is more approachable, the flow designer is genuinely useful, and OIDC covers 95% of what self-hosted apps need. Keycloak wins in enterprise scenarios — SAML-heavy environments, Active Directory shops, and organizations that need fine-grained authorization. Both are overkill if you just want SSO and 2FA for your reverse proxy — use [Authelia](/apps/authelia/) for that.
 
 ## FAQ
 
@@ -130,10 +130,10 @@ Both have strong security models. Keycloak has more years of security audits and
 
 ## Related
 
-- [How to Self-Host Authentik](/apps/authentik)
-- [How to Self-Host Keycloak](/apps/keycloak)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Authelia vs Keycloak](/compare/authelia-vs-keycloak)
-- [How to Self-Host Authelia](/apps/authelia)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
+- [How to Self-Host Authentik](/apps/authentik/)
+- [How to Self-Host Keycloak](/apps/keycloak/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Authelia vs Keycloak](/compare/authelia-vs-keycloak/)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)

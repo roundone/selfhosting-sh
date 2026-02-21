@@ -23,12 +23,12 @@ affiliateDisclosure: false
 
 [GNU Mailman](https://list.org/) is the granddaddy of mailing list software. Version 3 (Mailman 3) modernizes the classic with a REST API, a Django-based web UI (Postorius), and a web-based archive viewer (HyperKitty). It manages discussion-style mailing lists — think project mailing lists, community forums via email, and announcement lists.
 
-Mailman is different from newsletter tools like [Listmonk](/apps/listmonk) or [Keila](/apps/keila). Those are one-to-many broadcast tools. Mailman is many-to-many — subscribers can reply, discuss, and interact through email. It's the tool for open-source projects, academic departments, community organizations, and any group that communicates via email threads.
+Mailman is different from newsletter tools like [Listmonk](/apps/listmonk/) or [Keila](/apps/keila/). Those are one-to-many broadcast tools. Mailman is many-to-many — subscribers can reply, discuss, and interact through email. It's the tool for open-source projects, academic departments, community organizations, and any group that communicates via email threads.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (minimum)
 - 5 GB of free disk space
 - A domain name (required — Mailman needs proper DNS for email delivery)
@@ -189,7 +189,7 @@ HyperKitty provides a web-based archive of all mailing list discussions:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 lists.example.com {
@@ -214,7 +214,7 @@ Back up these volumes:
 docker exec mailman-db pg_dumpall -U mailman > mailman_backup_$(date +%Y%m%d).sql
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -243,7 +243,7 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 Mailman 3 is the right tool for discussion-based mailing lists — open-source project communication, community groups, academic departments. Its threading, moderation, and archive features are purpose-built for many-to-many email discussion.
 
-It's not the right tool for newsletters. If you need one-to-many email campaigns (marketing, announcements), use [Listmonk](/apps/listmonk), [Keila](/apps/keila), or [Mautic](/apps/mautic). The setup complexity of Mailman (MTA integration, DNS, multiple containers) is only justified when you need actual mailing list functionality.
+It's not the right tool for newsletters. If you need one-to-many email campaigns (marketing, announcements), use [Listmonk](/apps/listmonk/), [Keila](/apps/keila/), or [Mautic](/apps/mautic/). The setup complexity of Mailman (MTA integration, DNS, multiple containers) is only justified when you need actual mailing list functionality.
 
 ## Frequently Asked Questions
 
@@ -258,11 +258,11 @@ For outbound email, yes — configure your MTA to relay through SES. For inbound
 
 ## Related
 
-- [How to Self-Host Listmonk](/apps/listmonk)
-- [How to Self-Host Keila](/apps/keila)
-- [How to Self-Host Mautic](/apps/mautic)
-- [Listmonk vs Keila](/compare/listmonk-vs-keila)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Listmonk](/apps/listmonk/)
+- [How to Self-Host Keila](/apps/keila/)
+- [How to Self-Host Mautic](/apps/mautic/)
+- [Listmonk vs Keila](/compare/listmonk-vs-keila/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

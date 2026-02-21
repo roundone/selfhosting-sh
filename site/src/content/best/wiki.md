@@ -58,7 +58,7 @@ Wiki.js delivers the best balance of features, usability, and resource efficienc
 
 **Best for:** Teams that want a modern, polished wiki with strong version control integration.
 
-[Read our full guide: [How to Self-Host Wiki.js](/apps/wikijs)]
+[Read our full guide: [How to Self-Host Wiki.js](/apps/wikijs/)]
 
 ### 2. BookStack — Best for Organized Documentation
 
@@ -79,7 +79,7 @@ BookStack uses a book-chapter-page organizational model that makes documentation
 
 **Best for:** Teams that want structured, browsable documentation that non-technical people can navigate.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### 3. DokuWiki — Best Flat-File Wiki
 
@@ -101,7 +101,7 @@ DokuWiki stores everything as plain text files — no database at all. Backup is
 
 **Best for:** Sysadmins who value simplicity, zero dependencies, and easy backups above all else.
 
-[Read our full guide: [How to Self-Host DokuWiki](/apps/dokuwiki)]
+[Read our full guide: [How to Self-Host DokuWiki](/apps/dokuwiki/)]
 
 ### 4. MediaWiki — Best for Enterprise Scale
 
@@ -123,7 +123,7 @@ MediaWiki powers Wikipedia — the sixth most visited website on the planet. It 
 
 **Best for:** Large organizations needing Wikipedia-level features — structured data, templates, and massive scalability.
 
-[Read our full guide: [How to Self-Host MediaWiki](/apps/mediawiki)]
+[Read our full guide: [How to Self-Host MediaWiki](/apps/mediawiki/)]
 
 ### 5. XWiki — Best for Structured Applications
 
@@ -145,7 +145,7 @@ XWiki is both a wiki and an application platform. Its "Application Within Minute
 
 **Best for:** Enterprise teams that need structured applications alongside documentation, or Confluence replacements.
 
-[Read our full guide: [How to Self-Host XWiki](/apps/xwiki)]
+[Read our full guide: [How to Self-Host XWiki](/apps/xwiki/)]
 
 ### 6. Outline — Best Notion Alternative
 
@@ -167,7 +167,7 @@ Outline is a modern knowledge base with a clean, fast editor that feels like Not
 
 **Best for:** Teams migrating from Notion who want a similar experience with full data ownership.
 
-[Read our full guide: [How to Self-Host Outline](/apps/outline)]
+[Read our full guide: [How to Self-Host Outline](/apps/outline/)]
 
 ### 7. Docmost — Best New Contender
 
@@ -187,7 +187,7 @@ Docmost is a newer entrant with a Notion-like editor, real-time collaboration, a
 
 **Best for:** Teams who want a modern, lightweight wiki and are comfortable with a newer project.
 
-[Read our full guide: [How to Self-Host Docmost](/apps/docmost)]
+[Read our full guide: [How to Self-Host Docmost](/apps/docmost/)]
 
 ## Full Comparison Table
 
@@ -219,18 +219,18 @@ We evaluated each wiki on:
 
 ## Related
 
-- [How to Self-Host Wiki.js](/apps/wikijs)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host DokuWiki](/apps/dokuwiki)
-- [How to Self-Host MediaWiki](/apps/mediawiki)
-- [How to Self-Host XWiki](/apps/xwiki)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host Docmost](/apps/docmost)
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki)
-- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki)
-- [Outline vs Notion](/compare/outline-vs-notion)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Self-Hosted Alternatives to Notion (Wiki)](/replace/notion-wiki)
-- [Self-Hosted Alternatives to GitBook](/replace/gitbook)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Wiki.js](/apps/wikijs/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host DokuWiki](/apps/dokuwiki/)
+- [How to Self-Host MediaWiki](/apps/mediawiki/)
+- [How to Self-Host XWiki](/apps/xwiki/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki/)
+- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki/)
+- [Outline vs Notion](/compare/outline-vs-notion/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Self-Hosted Alternatives to Notion (Wiki)](/replace/notion-wiki/)
+- [Self-Hosted Alternatives to GitBook](/replace/gitbook/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

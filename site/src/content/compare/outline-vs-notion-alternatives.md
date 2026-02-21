@@ -95,12 +95,12 @@ If you need a complete Notion replacement, **AppFlowy** comes closest. If you wa
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [How to Self-Host AFFiNE](/apps/affine)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [Replace Notion](/replace/notion)
-- [Best Self-Hosted Note Taking](/best/note-taking)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [How to Self-Host AFFiNE](/apps/affine/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [Replace Notion](/replace/notion/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)

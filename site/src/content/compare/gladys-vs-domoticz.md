@@ -86,7 +86,7 @@ Domoticz has a larger community due to its longer history. The forum is active w
 
 ## Final Verdict
 
-Gladys Assistant is the better platform for new installations. Its modern UI, privacy focus, and growing feature set make it a solid choice for users who want home automation without the complexity of [Home Assistant](/apps/home-assistant) or [openHAB](/apps/openhab).
+Gladys Assistant is the better platform for new installations. Its modern UI, privacy focus, and growing feature set make it a solid choice for users who want home automation without the complexity of [Home Assistant](/apps/home-assistant/) or [openHAB](/apps/openhab/).
 
 Domoticz is the pick for resource-constrained setups or users who need legacy hardware protocol support. Its age shows in the UI, but the underlying engine is reliable and battle-tested.
 
@@ -94,10 +94,10 @@ Neither matches Home Assistant's ecosystem, but both serve specific niches well.
 
 ## Related
 
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Apple HomeKit](/replace/apple-homekit)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Apple HomeKit](/replace/apple-homekit/)

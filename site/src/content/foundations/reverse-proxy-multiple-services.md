@@ -29,9 +29,9 @@ One server, one IP, one set of ports — unlimited services.
 ## Prerequisites
 
 - A domain name with DNS pointing to your server
-- A reverse proxy installed ([NPM](/foundations/nginx-proxy-manager-setup), [Traefik](/foundations/traefik-setup), or [Caddy](/foundations/caddy-setup))
-- Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Understanding of DNS records ([DNS Explained](/foundations/dns-explained))
+- A reverse proxy installed ([NPM](/foundations/nginx-proxy-manager-setup/), [Traefik](/foundations/traefik-setup/), or [Caddy](/foundations/caddy-setup/))
+- Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Understanding of DNS records ([DNS Explained](/foundations/dns-explained/))
 
 ## DNS Setup
 
@@ -106,7 +106,7 @@ networks:
   internal:
 ```
 
-See [Advanced Docker Compose Networking](/foundations/docker-compose-networking-advanced) for details on this pattern.
+See [Advanced Docker Compose Networking](/foundations/docker-compose-networking-advanced/) for details on this pattern.
 
 ## Nginx Proxy Manager Setup
 
@@ -404,7 +404,7 @@ dash.example.com {
 }
 ```
 
-See [Security Hardening](/foundations/security-hardening) for more.
+See [Security Hardening](/foundations/security-hardening/) for more.
 
 ## FAQ
 
@@ -426,10 +426,10 @@ That's fine. Port conflicts only matter on the host. Two services can both liste
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Traefik Setup](/foundations/traefik-setup)
-- [Caddy Setup](/foundations/caddy-setup)
-- [Advanced Docker Compose Networking](/foundations/docker-compose-networking-advanced)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [DNS Explained](/foundations/dns-explained)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Traefik Setup](/foundations/traefik-setup/)
+- [Caddy Setup](/foundations/caddy-setup/)
+- [Advanced Docker Compose Networking](/foundations/docker-compose-networking-advanced/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [DNS Explained](/foundations/dns-explained/)

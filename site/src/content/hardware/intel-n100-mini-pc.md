@@ -62,25 +62,25 @@ Real-world measurements from N100 mini PCs running self-hosting workloads:
 ## What Can You Run on an N100?
 
 ### Comfortably (8–12 GB RAM used, CPU barely noticed):
-- [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) — 50 MB RAM
-- [Nextcloud](/apps/nextcloud) + MariaDB — 500 MB RAM
-- [Vaultwarden](/apps/vaultwarden) — 30 MB RAM
-- [Uptime Kuma](/apps/uptime-kuma) — 80 MB RAM
-- [Home Assistant](/apps/home-assistant) — 300 MB RAM
-- [Nginx Proxy Manager](/apps/nginx-proxy-manager) — 100 MB RAM
-- [Dockge](/apps/dockge) or [Portainer](/apps/portainer) — 150 MB RAM
-- [Syncthing](/apps/syncthing) — 200 MB RAM
-- [BookStack](/apps/bookstack) + MariaDB — 300 MB RAM
-- [Jellyfin](/apps/jellyfin) — 500 MB idle, spikes during transcoding
+- [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) — 50 MB RAM
+- [Nextcloud](/apps/nextcloud/) + MariaDB — 500 MB RAM
+- [Vaultwarden](/apps/vaultwarden/) — 30 MB RAM
+- [Uptime Kuma](/apps/uptime-kuma/) — 80 MB RAM
+- [Home Assistant](/apps/home-assistant/) — 300 MB RAM
+- [Nginx Proxy Manager](/apps/nginx-proxy-manager/) — 100 MB RAM
+- [Dockge](/apps/dockge/) or [Portainer](/apps/portainer/) — 150 MB RAM
+- [Syncthing](/apps/syncthing/) — 200 MB RAM
+- [BookStack](/apps/bookstack/) + MariaDB — 300 MB RAM
+- [Jellyfin](/apps/jellyfin/) — 500 MB idle, spikes during transcoding
 - PostgreSQL, Redis, and other supporting databases
 
 All of the above simultaneously. Total: ~2.2 GB RAM for the apps, plus ~1.5 GB for the OS and Docker overhead. You'll have 12+ GB free on a 16 GB system.
 
 ### With some effort (CPU-intensive, but manageable):
-- [Plex](/apps/plex) with 1–2 simultaneous hardware transcodes (Quick Sync handles this)
-- [Immich](/apps/immich) with machine learning (slow but functional — ML inference takes 2–5 seconds per photo instead of <1 second on a Ryzen)
-- [PhotoPrism](/apps/photoprism) — initial indexing is slow, day-to-day use is fine
-- [Gitea](/apps/gitea) or Forgejo — CI runners will be slow for large builds
+- [Plex](/apps/plex/) with 1–2 simultaneous hardware transcodes (Quick Sync handles this)
+- [Immich](/apps/immich/) with machine learning (slow but functional — ML inference takes 2–5 seconds per photo instead of <1 second on a Ryzen)
+- [PhotoPrism](/apps/photoprism/) — initial indexing is slow, day-to-day use is fine
+- [Gitea](/apps/gitea/) or Forgejo — CI runners will be slow for large builds
 
 ### Not recommended:
 - Plex with 4+ simultaneous transcodes (Quick Sync has limits)
@@ -128,7 +128,7 @@ It's NOT worth it if:
 - You prioritize lowest possible power draw
 - You're on a tight budget
 
-See our [Best Mini PCs for Home Servers](/hardware/best-mini-pc) guide for the full comparison.
+See our [Best Mini PCs for Home Servers](/hardware/best-mini-pc/) guide for the full comparison.
 
 ## Setup Tips for Self-Hosting
 
@@ -157,11 +157,11 @@ ls -la /dev/dri/
 
 ### 3. Use Docker Compose
 
-See our [Docker Compose Basics](/foundations/docker-compose-basics) guide. Every app guide on this site includes a complete, copy-paste-ready Docker Compose config.
+See our [Docker Compose Basics](/foundations/docker-compose-basics/) guide. Every app guide on this site includes a complete, copy-paste-ready Docker Compose config.
 
 ### 4. Set Up Remote Access
 
-Install [Tailscale](https://tailscale.com) or [WireGuard](/foundations/remote-access) to access your server from anywhere without exposing ports to the internet.
+Install [Tailscale](https://tailscale.com) or [WireGuard](/foundations/remote-access/) to access your server from anywhere without exposing ports to the internet.
 
 ### 5. Configure Automatic Updates
 
@@ -190,10 +190,10 @@ Intel Alder Lake-N launched in Q1 2023. Intel typically provides microcode updat
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Raspberry Pi vs Mini PC for Self-Hosting](/hardware/raspberry-pi-vs-mini-pc)
-- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Raspberry Pi vs Mini PC for Self-Hosting](/hardware/raspberry-pi-vs-mini-pc/)
+- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

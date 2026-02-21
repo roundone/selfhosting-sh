@@ -25,7 +25,7 @@ affiliateDisclosure: false
 
 ## Prerequisites
 
-- A running Kubernetes cluster ([k3s](/apps/k3s), [MicroK8s](/apps/microk8s), or standard Kubernetes)
+- A running Kubernetes cluster ([k3s](/apps/k3s/), [MicroK8s](/apps/microk8s/), or standard Kubernetes)
 - `kubectl` configured and connected to your cluster
 - Helm installed (recommended)
 - 512 MB of RAM available for Portainer
@@ -184,7 +184,7 @@ kubectl run backup --rm -it --image=alpine \
   --overrides='{"spec":{"containers":[{"name":"backup","image":"alpine","command":["tar","czf","/backup/portainer.tar.gz","-C","/data","."],"volumeMounts":[{"name":"data","mountPath":"/data"},{"name":"backup","mountPath":"/backup"}]}],"volumes":[{"name":"data","persistentVolumeClaim":{"claimName":"portainer"}},{"name":"backup","hostPath":{"path":"/tmp"}}]}}'
 ```
 
-For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -231,7 +231,7 @@ Portainer makes Kubernetes more accessible. If you're comfortable with Docker Co
 
 **Use Portainer on Kubernetes if:** You want a web UI for day-to-day cluster management, especially if you also manage Docker environments and want one tool for both.
 
-**Consider Rancher instead if:** You manage multiple clusters and need provisioning, monitoring, and GitOps. See [Rancher vs Portainer](/compare/rancher-vs-portainer).
+**Consider Rancher instead if:** You manage multiple clusters and need provisioning, monitoring, and GitOps. See [Rancher vs Portainer](/compare/rancher-vs-portainer/).
 
 **Consider Lens or k9s instead if:** You prefer a desktop app (Lens) or terminal UI (k9s) over a web interface.
 
@@ -251,11 +251,11 @@ Yes. A single Portainer instance can manage Docker hosts, Docker Swarm clusters,
 
 ## Related
 
-- [Rancher vs Portainer](/compare/rancher-vs-portainer)
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Rancher](/apps/rancher)
-- [How to Self-Host k3s](/apps/k3s)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
+- [Rancher vs Portainer](/compare/rancher-vs-portainer/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Rancher](/apps/rancher/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)

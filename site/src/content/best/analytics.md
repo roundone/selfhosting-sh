@@ -24,9 +24,9 @@ affiliateDisclosure: false
 
 | Use Case | Best Choice | Why |
 |----------|-------------|-----|
-| Best overall | [Plausible](/apps/plausible) | Lightweight, privacy-first, beautiful single-page dashboard, under 1 KB tracking script |
-| Best for beginners | [Umami](/apps/umami) | Simplest setup — one container plus PostgreSQL. Clean UI, minimal configuration. |
-| Best full GA replacement | [Matomo](/apps/matomo) | Most features, closest Google Analytics parity, plugin ecosystem, GA data import |
+| Best overall | [Plausible](/apps/plausible/) | Lightweight, privacy-first, beautiful single-page dashboard, under 1 KB tracking script |
+| Best for beginners | [Umami](/apps/umami/) | Simplest setup — one container plus PostgreSQL. Clean UI, minimal configuration. |
+| Best full GA replacement | [Matomo](/apps/matomo/) | Most features, closest Google Analytics parity, plugin ecosystem, GA data import |
 | Best zero-overhead | GoAccess | Log-based analysis, no JavaScript tracking needed, runs from the terminal or as a static HTML report |
 
 ## The Full Ranking
@@ -59,7 +59,7 @@ Plausible is cookie-free by design. It uses a hash of the visitor's IP address a
 
 **Best for:** Most self-hosters. If you want simple, accurate, privacy-respecting analytics and your server has at least 2 GB of RAM, Plausible is the right choice.
 
-[Read our full guide: How to Self-Host Plausible](/apps/plausible)
+[Read our full guide: How to Self-Host Plausible](/apps/plausible/)
 
 ### 2. Umami — Best for Simple Analytics
 
@@ -90,7 +90,7 @@ The tracking script is about 2 KB — larger than Plausible's but still negligib
 
 **Best for:** Developers and small site owners who want minimal analytics with minimal overhead. If you run a personal blog, a docs site, or a small project and just want to know how many visitors you get and where they come from, Umami does exactly that.
 
-[Read our full guide: How to Self-Host Umami](/apps/umami)
+[Read our full guide: How to Self-Host Umami](/apps/umami/)
 
 ### 3. Matomo — Best Full-Featured Analytics
 
@@ -123,7 +123,7 @@ The cost is complexity and resources. Matomo needs at least 2 GB of RAM (4 GB re
 
 **Best for:** Businesses that need full-featured analytics — funnels, e-commerce tracking, A/B testing, or Google Analytics migration. If you are replacing GA4 for a site with complex tracking requirements, Matomo is the only self-hosted option with comparable depth.
 
-[Read our full guide: How to Self-Host Matomo](/apps/matomo)
+[Read our full guide: How to Self-Host Matomo](/apps/matomo/)
 
 ### 4. GoAccess — Best for Log Analysis
 
@@ -188,14 +188,14 @@ For most self-hosters running a blog, documentation site, or small web applicati
 
 ## Related
 
-- [How to Self-Host Plausible](/apps/plausible)
-- [How to Self-Host Umami](/apps/umami)
-- [How to Self-Host Matomo](/apps/matomo)
-- [Plausible vs Umami: Which Should You Self-Host?](/compare/plausible-vs-umami)
-- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [How to Self-Host Grafana](/apps/grafana)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [How to Self-Host Umami](/apps/umami/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [Plausible vs Umami: Which Should You Self-Host?](/compare/plausible-vs-umami/)
+- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [How to Self-Host Grafana](/apps/grafana/)

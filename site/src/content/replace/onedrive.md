@@ -37,33 +37,33 @@ affiliateDisclosure: false
 
 ### Nextcloud — Best Full Replacement
 
-[Nextcloud](/apps/nextcloud) replaces OneDrive and much of Microsoft 365. File sync, sharing, collaborative editing (via Nextcloud Office or OnlyOffice), calendar, contacts, and 400+ apps. It's the most complete Microsoft ecosystem replacement available.
+[Nextcloud](/apps/nextcloud/) replaces OneDrive and much of Microsoft 365. File sync, sharing, collaborative editing (via Nextcloud Office or OnlyOffice), calendar, contacts, and 400+ apps. It's the most complete Microsoft ecosystem replacement available.
 
 **What you get:** Desktop sync clients for Windows, macOS, and Linux. Mobile apps. Web file manager. Sharing links. Real-time document editing. Calendar and contacts (CalDAV/CardDAV). File versioning.
 
 **Best for:** Users who want to leave the Microsoft ecosystem entirely. Nextcloud can replace OneDrive, Outlook calendar, and basic Office features.
 
-[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud)]
+[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud/)]
 
 ### Seafile — Best for Performance
 
-[Seafile](/apps/seafile) is a file sync and share server that prioritizes speed. Its block-level sync engine is 2-3x faster than Nextcloud, and it uses less RAM and CPU. Great for users whose primary need is fast, reliable file sync without the platform overhead.
+[Seafile](/apps/seafile/) is a file sync and share server that prioritizes speed. Its block-level sync engine is 2-3x faster than Nextcloud, and it uses less RAM and CPU. Great for users whose primary need is fast, reliable file sync without the platform overhead.
 
 **What you get:** Fast desktop sync clients. Web file manager. Sharing links. File versioning. Client-side encryption per library.
 
 **Best for:** Users who want the best file sync performance and don't need Nextcloud's broader platform features.
 
-[Read our full guide: [How to Self-Host Seafile](/apps/seafile)]
+[Read our full guide: [How to Self-Host Seafile](/apps/seafile/)]
 
 ### Syncthing — Best for Privacy
 
-[Syncthing](/apps/syncthing) syncs files directly between your devices with no central server. Peer-to-peer, encrypted, no account needed. Zero data touches any third-party infrastructure.
+[Syncthing](/apps/syncthing/) syncs files directly between your devices with no central server. Peer-to-peer, encrypted, no account needed. Zero data touches any third-party infrastructure.
 
 **What you get:** Automatic, encrypted sync between devices. Block-level delta sync. File versioning. Cross-platform. Zero maintenance.
 
 **Best for:** Users who want maximum privacy — no server, no cloud, no third party. Files exist only on your devices.
 
-[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing)]
+[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing/)]
 
 ## Migration Guide
 
@@ -88,9 +88,9 @@ affiliateDisclosure: false
 ### Step 2: Set Up Your Replacement
 
 For most OneDrive users, **Nextcloud** is the best fit:
-1. Follow our [Nextcloud Docker guide](/apps/nextcloud)
+1. Follow our [Nextcloud Docker guide](/apps/nextcloud/)
 2. Install the Nextcloud desktop client on all devices
-3. Configure SSL via [reverse proxy](/apps/nginx-proxy-manager)
+3. Configure SSL via [reverse proxy](/apps/nginx-proxy-manager/)
 
 ### Step 3: Upload and Sync
 
@@ -142,7 +142,7 @@ Not significantly. You lose the File Explorer integration and Files On-Demand, b
 
 ### What about OneNote?
 
-OneNote stores data in OneDrive. For a self-hosted replacement, consider [BookStack](/apps/bookstack) for structured documentation, or Joplin Server for note-taking with markdown support and sync.
+OneNote stores data in OneDrive. For a self-hosted replacement, consider [BookStack](/apps/bookstack/) for structured documentation, or Joplin Server for note-taking with markdown support and sync.
 
 ### Can I keep OneDrive for some things?
 
@@ -150,13 +150,13 @@ Yes. Many people use Nextcloud for personal files and keep a minimal Microsoft 3
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Self-Hosted Alternatives to iCloud Drive](/replace/icloud-drive)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Self-Hosted Alternatives to iCloud Drive](/replace/icloud-drive/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

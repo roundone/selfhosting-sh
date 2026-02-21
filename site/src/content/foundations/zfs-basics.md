@@ -24,7 +24,7 @@ For self-hosting, ZFS provides:
 - **RAID equivalents** — mirrors and raidz levels built in
 - **Copy-on-write** — data is never overwritten in place, preventing corruption during power loss
 
-ZFS is the recommended filesystem for [Proxmox](/foundations/proxmox-basics), [TrueNAS](/foundations/nas-basics), and any serious self-hosting storage setup.
+ZFS is the recommended filesystem for [Proxmox](/foundations/proxmox-basics/), [TrueNAS](/foundations/nas-basics/), and any serious self-hosting storage setup.
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ A vdev is a group of disks within a pool. A pool can contain multiple vdevs. Dat
 | raidz2 | 4+ | 2 disks can fail | (n-2)/n | Larger arrays, safer |
 | raidz3 | 5+ | 3 disks can fail | (n-3)/n | Very large arrays |
 
-For more context on RAID levels, see [RAID Configurations Explained](/foundations/raid-explained).
+For more context on RAID levels, see [RAID Configurations Explained](/foundations/raid-explained/).
 
 ## Creating a Pool
 
@@ -354,10 +354,10 @@ If `zpool status` shows checksum errors after a scrub, investigate immediately. 
 
 ## Next Steps
 
-- Set up a NAS with ZFS — [NAS Basics](/foundations/nas-basics)
-- Understand RAID choices — [RAID Configurations Explained](/foundations/raid-explained)
-- Plan your backup strategy — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- Run ZFS on Proxmox — [Proxmox VE Basics](/foundations/proxmox-basics)
+- Set up a NAS with ZFS — [NAS Basics](/foundations/nas-basics/)
+- Understand RAID choices — [RAID Configurations Explained](/foundations/raid-explained/)
+- Plan your backup strategy — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- Run ZFS on Proxmox — [Proxmox VE Basics](/foundations/proxmox-basics/)
 
 ## FAQ
 
@@ -379,9 +379,9 @@ Run `zpool status` and look for lines showing `CKSUM` errors being repaired. ZFS
 
 ## Related
 
-- [RAID Configurations Explained](/foundations/raid-explained)
-- [NAS Basics](/foundations/nas-basics)
-- [Proxmox VE Basics](/foundations/proxmox-basics)
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Choosing a Linux Distro](/foundations/choosing-linux-distro)
+- [RAID Configurations Explained](/foundations/raid-explained/)
+- [NAS Basics](/foundations/nas-basics/)
+- [Proxmox VE Basics](/foundations/proxmox-basics/)
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Choosing a Linux Distro](/foundations/choosing-linux-distro/)

@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum
 - 10 GB of free disk space for the application, plus storage for your files
 - A domain name (recommended for remote access and mobile/desktop sync clients)
@@ -305,7 +305,7 @@ LDAP_LOGIN_ATTR = 'uid'
 
 ## Reverse Proxy
 
-Seafile runs Nginx internally on port 80. To serve it over HTTPS using [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+Seafile runs Nginx internally on port 80. To serve it over HTTPS using [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host for `seafile.yourdomain.com`
 2. Forward to `http://seafile:80` (if on the same Docker network) or `http://your-server-ip:80`
@@ -330,7 +330,7 @@ SEAFILE_SERVER_PROTOCOL=https
 
 Restart the Seafile container for the change to take effect.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed configuration guides.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed configuration guides.
 
 ## Backup
 
@@ -369,7 +369,7 @@ docker compose -f ~/seafile/docker-compose.yml start seafile
 find "$BACKUP_DIR" -name "seafile-*" -mtime +7 -delete
 ```
 
-The `/shared/seafile` volume contains all configuration files (`conf/`), the Seafile data directory, and Nginx config. Losing it means a full reconfiguration. Follow a [3-2-1 backup strategy](/foundations/backup-3-2-1-rule) — keep copies on a separate disk and offsite.
+The `/shared/seafile` volume contains all configuration files (`conf/`), the Seafile data directory, and Nginx config. Losing it means a full reconfiguration. Follow a [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/) — keep copies on a separate disk and offsite.
 
 ## Troubleshooting
 
@@ -447,7 +447,7 @@ FILE_SERVER_ROOT = "https://seafile.yourdomain.com/seafhttp"
 
 ### What is the difference between Seafile and Nextcloud?
 
-Seafile focuses on file sync and share. It is faster at syncing, uses fewer resources, and handles large file libraries more efficiently. [Nextcloud](/apps/nextcloud) is a full cloud platform with calendar, contacts, office document editing, and hundreds of apps. Choose Seafile if you primarily need reliable, fast file sync. Choose Nextcloud if you want an all-in-one cloud workspace. See our [detailed comparison](/compare/nextcloud-vs-seafile).
+Seafile focuses on file sync and share. It is faster at syncing, uses fewer resources, and handles large file libraries more efficiently. [Nextcloud](/apps/nextcloud/) is a full cloud platform with calendar, contacts, office document editing, and hundreds of apps. Choose Seafile if you primarily need reliable, fast file sync. Choose Nextcloud if you want an all-in-one cloud workspace. See our [detailed comparison](/compare/nextcloud-vs-seafile/).
 
 ### Does Seafile have desktop and mobile clients?
 
@@ -463,23 +463,23 @@ The Community Edition is free and open source. It includes file sync, sharing, v
 
 ## Verdict
 
-Seafile is the fastest self-hosted file sync and share solution available. If your primary need is syncing files between devices and sharing with collaborators, Seafile outperforms [Nextcloud](/apps/nextcloud) in raw sync speed, resource efficiency, and reliability with large file libraries. The block-level deduplication and delta sync mean only changed portions of files transfer, which makes a real difference with large files.
+Seafile is the fastest self-hosted file sync and share solution available. If your primary need is syncing files between devices and sharing with collaborators, Seafile outperforms [Nextcloud](/apps/nextcloud/) in raw sync speed, resource efficiency, and reliability with large file libraries. The block-level deduplication and delta sync mean only changed portions of files transfer, which makes a real difference with large files.
 
 The trade-off is ecosystem. Nextcloud has calendar, contacts, office suites, and hundreds of plugins. Seafile does file sync and does it exceptionally well. If you need a full Google Workspace replacement, use Nextcloud. If you need a fast, reliable Dropbox replacement and nothing else, Seafile is the better choice.
 
-For users coming from [Syncthing](/apps/syncthing) who want a central server with a web interface and user management, Seafile is the natural step up — it adds a proper web UI and multi-user support while keeping sync performance competitive.
+For users coming from [Syncthing](/apps/syncthing/) who want a central server with a web interface and user management, Seafile is the natural step up — it adds a proper web UI and multi-user support while keeping sync performance competitive.
 
 ## Related
 
-- [Best Self-Hosted File Sync & Storage](/best/file-sync)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Seafile vs Syncthing](/compare/seafile-vs-syncthing)
-- [ownCloud vs Seafile](/compare/owncloud-vs-seafile)
-- [Seafile vs FileBrowser](/compare/seafile-vs-filebrowser)
-- [Replace Google Drive](/replace/google-drive)
-- [Replace Dropbox](/replace/dropbox)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Seafile vs Syncthing](/compare/seafile-vs-syncthing/)
+- [ownCloud vs Seafile](/compare/owncloud-vs-seafile/)
+- [Seafile vs FileBrowser](/compare/seafile-vs-filebrowser/)
+- [Replace Google Drive](/replace/google-drive/)
+- [Replace Dropbox](/replace/dropbox/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

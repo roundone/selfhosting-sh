@@ -48,7 +48,7 @@ affiliateDisclosure: true
 | **CPU cooler** | Included with motherboard (N305 is fanless or low-profile) | Included |
 | **Total** | | **~$450-550** |
 
-Add drives separately — see our [Best Hard Drives for NAS](/hardware/best-hard-drives-nas) guide. Budget $140-190 per 8 TB drive.
+Add drives separately — see our [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/) guide. Budget $140-190 per 8 TB drive.
 
 ### Budget Build (~$250-350 diskless)
 
@@ -176,7 +176,7 @@ TrueNAS SCALE is the recommended OS for DIY NAS builds:
 - **VMs:** KVM with GPU passthrough
 - **License:** $59-129 (one-time)
 
-**Downsides:** Not ZFS — less data integrity protection. Parity-based writes are slow. Single-parity = single-drive fault tolerance. See our [TrueNAS vs Unraid](/hardware/truenas-vs-unraid) comparison.
+**Downsides:** Not ZFS — less data integrity protection. Parity-based writes are slow. Single-parity = single-drive fault tolerance. See our [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/) comparison.
 
 ### OpenMediaVault — Best for Simplicity
 
@@ -349,12 +349,12 @@ Depends on fans and drives. 3.5" HDDs produce 25-35 dB of noise. 7200 RPM drives
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

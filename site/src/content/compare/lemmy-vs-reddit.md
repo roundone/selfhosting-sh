@@ -109,9 +109,9 @@ Yes, with appropriate hardware. Lemmy.world handles 100K+ users. The Rust backen
 
 ## Related
 
-- [How to Self-Host Lemmy](/apps/lemmy)
-- [Lemmy vs Discourse](/compare/lemmy-vs-discourse)
-- [Best Self-Hosted Social Networks](/best/social-networks)
-- [Self-Hosted Alternatives to Reddit](/replace/reddit)
-- [The Fediverse Explained](/foundations/fediverse-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Lemmy](/apps/lemmy/)
+- [Lemmy vs Discourse](/compare/lemmy-vs-discourse/)
+- [Best Self-Hosted Social Networks](/best/social-networks/)
+- [Self-Hosted Alternatives to Reddit](/replace/reddit/)
+- [The Fediverse Explained](/foundations/fediverse-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

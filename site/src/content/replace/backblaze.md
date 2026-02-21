@@ -40,35 +40,35 @@ Self-hosting your backup infrastructure gives you:
 
 ### Kopia — Best Overall Replacement
 
-[Kopia](/apps/kopia) is a modern backup tool with a built-in web UI, encryption, deduplication, and compression. It supports local storage, NFS, SFTP, and S3-compatible backends. The web dashboard makes managing backup policies and monitoring status easy without CLI knowledge.
+[Kopia](/apps/kopia/) is a modern backup tool with a built-in web UI, encryption, deduplication, and compression. It supports local storage, NFS, SFTP, and S3-compatible backends. The web dashboard makes managing backup policies and monitoring status easy without CLI knowledge.
 
 **Why it's the best replacement:** Kopia's web UI provides a similar "set it and forget it" experience to Backblaze's desktop client, but you control where the data goes. Built-in scheduling, email notifications, and repository management make it the most complete self-hosted backup solution.
 
-[Read our full guide: How to Self-Host Kopia](/apps/kopia)
+[Read our full guide: How to Self-Host Kopia](/apps/kopia/)
 
 ### Restic — Best for Power Users
 
-[Restic](/apps/restic) is a fast, secure backup program that encrypts and deduplicates everything by default. It's CLI-only but has the largest ecosystem of third-party tools — pair it with [Borgmatic](/apps/borgmatic) for automated scheduling, or use Autorestic for a simpler config file approach.
+[Restic](/apps/restic/) is a fast, secure backup program that encrypts and deduplicates everything by default. It's CLI-only but has the largest ecosystem of third-party tools — pair it with [Borgmatic](/apps/borgmatic/) for automated scheduling, or use Autorestic for a simpler config file approach.
 
 **Why it works:** Restic's wide storage backend support (S3, B2, SFTP, local, REST) means you can back up to your own NAS, a second server, or even keep Backblaze B2 as a backend while controlling the encryption keys yourself.
 
-[Read our full guide: How to Self-Host Restic](/apps/restic)
+[Read our full guide: How to Self-Host Restic](/apps/restic/)
 
 ### BorgBackup + Borgmatic — Best for Automation
 
-[BorgBackup](/apps/borgbackup) provides excellent deduplication and compression, while [Borgmatic](/apps/borgmatic) wraps it with scheduled backups, retention policies, and monitoring hooks. The combination is popular in the self-hosting community for its reliability and mature codebase.
+[BorgBackup](/apps/borgbackup/) provides excellent deduplication and compression, while [Borgmatic](/apps/borgmatic/) wraps it with scheduled backups, retention policies, and monitoring hooks. The combination is popular in the self-hosting community for its reliability and mature codebase.
 
 **Why it works:** Borgmatic's configuration-as-YAML approach makes it easy to define multiple backup targets, retention schedules, and pre/post hooks. It's the closest to a "configure once, run forever" backup solution.
 
-[Read our full guide: How to Self-Host Borgmatic](/apps/borgmatic)
+[Read our full guide: How to Self-Host Borgmatic](/apps/borgmatic/)
 
 ### Duplicati — Best for Beginners
 
-[Duplicati](/apps/duplicati) has a web-based interface for configuring backups without touching the command line. It supports 20+ storage backends and includes scheduling, encryption, and incremental backups.
+[Duplicati](/apps/duplicati/) has a web-based interface for configuring backups without touching the command line. It supports 20+ storage backends and includes scheduling, encryption, and incremental backups.
 
 **Why it works:** If you're replacing Backblaze because you want control but don't want to learn CLI tools, Duplicati's web UI is the gentlest learning curve.
 
-[Read our full guide: How to Self-Host Duplicati](/apps/duplicati)
+[Read our full guide: How to Self-Host Duplicati](/apps/duplicati/)
 
 ## Migration Guide
 
@@ -118,11 +118,11 @@ This gives you self-hosted encryption (you hold the keys) while still using B2's
 
 ## Related
 
-- [Best Self-Hosted Backup Tools](/best/backup)
-- [How to Self-Host Kopia](/apps/kopia)
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [Kopia vs Restic](/compare/kopia-vs-restic)
-- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Best Self-Hosted Backup Tools](/best/backup/)
+- [How to Self-Host Kopia](/apps/kopia/)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [Kopia vs Restic](/compare/kopia-vs-restic/)
+- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Backup Strategy](/foundations/backup-strategy/)

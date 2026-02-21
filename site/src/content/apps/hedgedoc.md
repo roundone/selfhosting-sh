@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 512 MB of RAM (minimum)
 - A domain name (recommended for sharing notes)
@@ -224,7 +224,7 @@ location / {
 }
 ```
 
-Set `CMD_DOMAIN`, `CMD_PROTOCOL_USESSL`, and `CMD_URL_ADDPORT` to match your reverse proxy setup. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Set `CMD_DOMAIN`, `CMD_PROTOCOL_USESSL`, and `CMD_URL_ADDPORT` to match your reverse proxy setup. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -242,7 +242,7 @@ docker run --rm -v hedgedoc_hedgedoc-uploads:/data -v $(pwd):/backup alpine \
   tar -czf /backup/hedgedoc-uploads-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -297,18 +297,18 @@ Ensure the database container is healthy before HedgeDoc starts (the healthcheck
 
 HedgeDoc is the best self-hosted option for real-time collaborative Markdown editing. The share-a-link-and-edit model is simple and intuitive. Slide mode is a nice bonus. If your team writes in Markdown and needs a shared scratch pad, HedgeDoc is the tool.
 
-It's not a knowledge base — there's no folder structure, no search across notes, no wiki-style organization. For that, use [BookStack](/apps/bookstack) or [Outline](/apps/outline). HedgeDoc is for collaborative editing sessions, meeting notes, and shared documents. For that specific use case, it's excellent.
+It's not a knowledge base — there's no folder structure, no search across notes, no wiki-style organization. For that, use [BookStack](/apps/bookstack/) or [Outline](/apps/outline/). HedgeDoc is for collaborative editing sessions, meeting notes, and shared documents. For that specific use case, it's excellent.
 
-[Etherpad](/apps/etherpad) is the main alternative for real-time collaborative editing, but it uses rich text instead of Markdown. If your team prefers Markdown, HedgeDoc wins.
+[Etherpad](/apps/etherpad/) is the main alternative for real-time collaborative editing, but it uses rich text instead of Markdown. If your team prefers Markdown, HedgeDoc wins.
 
 ## Related
 
-- [How to Self-Host Etherpad](/apps/etherpad)
-- [HedgeDoc vs Etherpad](/compare/hedgedoc-vs-etherpad)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Alternatives to Notion](/replace/notion)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Etherpad](/apps/etherpad/)
+- [HedgeDoc vs Etherpad](/compare/hedgedoc-vs-etherpad/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Alternatives to Notion](/replace/notion/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

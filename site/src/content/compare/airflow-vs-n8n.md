@@ -130,10 +130,10 @@ n8n. Airflow's 4+ GB RAM requirement and 5+ container architecture is excessive 
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Temporal vs n8n](/compare/temporal-vs-n8n)
-- [Windmill vs n8n](/compare/windmill-vs-n8n)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
+- [How to Self-Host n8n](/apps/n8n/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Temporal vs n8n](/compare/temporal-vs-n8n/)
+- [Windmill vs n8n](/compare/windmill-vs-n8n/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)

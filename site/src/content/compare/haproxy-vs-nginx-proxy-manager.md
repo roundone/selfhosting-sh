@@ -155,9 +155,9 @@ NPM. HAProxy is designed for data center workloads. A homelab routing traffic to
 
 ## Related
 
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

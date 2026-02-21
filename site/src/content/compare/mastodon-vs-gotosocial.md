@@ -131,10 +131,10 @@ Both use the same Mastodon-compatible API, so the same apps (Tusky, Ice Cubes, M
 
 ## Related
 
-- [How to Self-Host Mastodon](/apps/mastodon)
-- [How to Self-Host GoToSocial](/apps/gotosocial)
-- [Mastodon vs Pleroma](/compare/mastodon-vs-pleroma)
-- [Misskey vs Mastodon](/compare/misskey-vs-mastodon)
-- [Best Self-Hosted Social Networks](/best/social-networks)
-- [Replace Twitter](/replace/twitter)
-- [The Fediverse Explained](/foundations/fediverse-explained)
+- [How to Self-Host Mastodon](/apps/mastodon/)
+- [How to Self-Host GoToSocial](/apps/gotosocial/)
+- [Mastodon vs Pleroma](/compare/mastodon-vs-pleroma/)
+- [Misskey vs Mastodon](/compare/misskey-vs-mastodon/)
+- [Best Self-Hosted Social Networks](/best/social-networks/)
+- [Replace Twitter](/replace/twitter/)
+- [The Fediverse Explained](/foundations/fediverse-explained/)

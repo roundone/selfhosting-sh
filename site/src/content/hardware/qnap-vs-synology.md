@@ -112,7 +112,7 @@ Synology units cost slightly more upfront but the gap is smaller than most peopl
 
 Factor in 10 years of software updates from Synology vs QNAP's shorter support window, and the total cost of ownership favors Synology in most cases.
 
-Both brands use standard 3.5" SATA drives. Use the same drives regardless of brand — we recommend [WD Red Plus or Seagate IronWolf](/hardware/best-hard-drives-nas).
+Both brands use standard 3.5" SATA drives. Use the same drives regardless of brand — we recommend [WD Red Plus or Seagate IronWolf](/hardware/best-hard-drives-nas/).
 
 ## Community and Ecosystem
 
@@ -124,7 +124,7 @@ QNAP's community is smaller but growing. QTS documentation has improved signific
 
 Both brands have had security incidents. QNAP was hit by multiple ransomware campaigns targeting QTS vulnerabilities in 2021-2022 (Qlocker, eCh0raix). Synology has had fewer high-profile incidents but is not immune.
 
-**Mitigation for both:** Never expose your NAS directly to the internet. Use a VPN ([WireGuard](/apps/wireguard), [Tailscale](/apps/headscale)) or [Cloudflare Tunnel](/apps/cloudflare-tunnel) for remote access.
+**Mitigation for both:** Never expose your NAS directly to the internet. Use a VPN ([WireGuard](/apps/wireguard/), [Tailscale](/apps/headscale/)) or [Cloudflare Tunnel](/apps/cloudflare-tunnel/) for remote access.
 
 ## Choose QNAP If
 
@@ -149,7 +149,7 @@ Both brands have had security incidents. QNAP was hit by multiple ransomware cam
 
 If you need more raw power and don't mind QTS, the **QNAP TS-464** at $549 gives you more built-in features (2.5GbE, more RAM) for slightly less money.
 
-If budget is tight, consider skipping pre-built NAS entirely and [building a DIY NAS](/hardware/diy-nas-build) with a [mini PC](/hardware/best-mini-pc) running TrueNAS or Unraid. You'll get significantly more compute power per dollar.
+If budget is tight, consider skipping pre-built NAS entirely and [building a DIY NAS](/hardware/diy-nas-build/) with a [mini PC](/hardware/best-mini-pc/) running TrueNAS or Unraid. You'll get significantly more compute power per dollar.
 
 ## FAQ
 
@@ -166,15 +166,15 @@ Not directly. The RAID formats are incompatible. You'd need to back up all data,
 The hardware typically lasts 5-10+ years. Synology provides OS updates for roughly 10 years after a model launches. QNAP's support window is shorter and less predictable.
 
 ### Should I buy a NAS or build a server?
-If you want a plug-and-play appliance with minimal maintenance, buy a NAS. If you want maximum performance and flexibility, [build a server](/hardware/home-server-build-guide). See our [mini PC vs NAS comparison](/hardware/raspberry-pi-vs-mini-pc) for more detail.
+If you want a plug-and-play appliance with minimal maintenance, buy a NAS. If you want maximum performance and flexibility, [build a server](/hardware/home-server-build-guide/). See our [mini PC vs NAS comparison](/hardware/raspberry-pi-vs-mini-pc/) for more detail.
 
 ## Related
 
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Synology vs Unraid](/hardware/synology-vs-unraid)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Synology vs Unraid](/hardware/synology-vs-unraid/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

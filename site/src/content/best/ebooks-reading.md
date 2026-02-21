@@ -58,7 +58,7 @@ Calibre-Web is the most mature self-hosted ebook server. It provides a web inter
 
 **Best for:** Anyone with an existing Calibre library who wants web access and e-reader sync.
 
-[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web)]
+[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web/)]
 
 ### 2. Kavita — Best for Manga and Comics
 
@@ -81,7 +81,7 @@ Kavita is a fast, modern ebook server with first-class support for manga, comics
 
 **Best for:** Manga and comic readers who want a polished reading experience with automatic metadata.
 
-[Read our full guide: [How to Self-Host Kavita](/apps/kavita)]
+[Read our full guide: [How to Self-Host Kavita](/apps/kavita/)]
 
 ### 3. Komga — Best Comic and Manga Server
 
@@ -103,7 +103,7 @@ Komga is a media server specifically built for comics and manga. It scans your l
 
 **Best for:** Dedicated comic and manga readers who want a focused, clean experience.
 
-[Read our full guide: [How to Self-Host Komga](/apps/komga)]
+[Read our full guide: [How to Self-Host Komga](/apps/komga/)]
 
 ### 4. Stump — Best Lightweight Option
 
@@ -125,7 +125,7 @@ Stump is a newer, lightweight comic and ebook server written in Rust. It's fast,
 
 **Best for:** Users who want a lightweight, fast ebook/comic server without the overhead of larger projects.
 
-[Read our full guide: [How to Self-Host Stump](/apps/stump)]
+[Read our full guide: [How to Self-Host Stump](/apps/stump/)]
 
 ### 5. Audiobookshelf — Best for Audiobooks
 
@@ -180,26 +180,26 @@ We evaluated each platform on:
 
 For a comprehensive reading setup:
 
-1. **[Readarr](/apps/readarr)** — automated ebook acquisition from indexers
-2. **[Calibre-Web](/apps/calibre-web)** — web interface for your Calibre library, OPDS for e-readers
-3. **[Kavita](/apps/kavita)** — dedicated manga/comic reading with superior reader
-4. **[Audiobookshelf](/apps/audiobookshelf)** — audiobook and podcast management
+1. **[Readarr](/apps/readarr/)** — automated ebook acquisition from indexers
+2. **[Calibre-Web](/apps/calibre-web/)** — web interface for your Calibre library, OPDS for e-readers
+3. **[Kavita](/apps/kavita/)** — dedicated manga/comic reading with superior reader
+4. **[Audiobookshelf](/apps/audiobookshelf/)** — audiobook and podcast management
 
-Use [Readarr](/apps/readarr) to automate acquisitions into your Calibre library, Calibre-Web for ebook access, Kavita for manga/comics, and Audiobookshelf for audiobooks.
+Use [Readarr](/apps/readarr/) to automate acquisitions into your Calibre library, Calibre-Web for ebook access, Kavita for manga/comics, and Audiobookshelf for audiobooks.
 
 ## Related
 
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Stump](/apps/stump)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Readarr](/apps/readarr)
-- [How to Self-Host LazyLibrarian](/apps/lazylibrarian)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Komga vs Kavita](/compare/komga-vs-kavita)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Stump vs Komga](/compare/stump-vs-komga)
-- [Readarr vs LazyLibrarian](/compare/readarr-vs-lazylibrarian)
-- [Self-Hosted Alternatives to Kindle Unlimited](/replace/kindle-unlimited)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Stump](/apps/stump/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Readarr](/apps/readarr/)
+- [How to Self-Host LazyLibrarian](/apps/lazylibrarian/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Komga vs Kavita](/compare/komga-vs-kavita/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Stump vs Komga](/compare/stump-vs-komga/)
+- [Readarr vs LazyLibrarian](/compare/readarr-vs-lazylibrarian/)
+- [Self-Hosted Alternatives to Kindle Unlimited](/replace/kindle-unlimited/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

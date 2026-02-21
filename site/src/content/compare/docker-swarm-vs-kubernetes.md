@@ -174,7 +174,7 @@ This matters for self-hosting. When you hit a Swarm-specific problem, you may st
 - You don't need automatic failover across machines
 - You have never felt limited by Docker Compose
 
-**Seriously — most self-hosters should stay with Docker Compose.** Adding an orchestrator to a single-node setup adds complexity with zero benefit. Orchestration solves multi-node problems. If you don't have multiple nodes, you don't have those problems. A well-managed Docker Compose setup with good backups and [DIUN](/apps/diun) for image update notifications is all you need.
+**Seriously — most self-hosters should stay with Docker Compose.** Adding an orchestrator to a single-node setup adds complexity with zero benefit. Orchestration solves multi-node problems. If you don't have multiple nodes, you don't have those problems. A well-managed Docker Compose setup with good backups and [DIUN](/apps/diun/) for image update notifications is all you need.
 
 ## Final Verdict
 
@@ -210,9 +210,9 @@ Not in a meaningful way. They are competing orchestration layers. Running both o
 
 ## Related
 
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Podman for Self-Hosting](/apps/podman)
-- [Podman vs Docker](/compare/podman-vs-docker)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Podman for Self-Hosting](/apps/podman/)
+- [Podman vs Docker](/compare/podman-vs-docker/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -37,7 +37,7 @@ affiliateDisclosure: false
 
 ### Nextcloud — Best for Apple Users
 
-[Nextcloud](/apps/nextcloud) is the strongest iCloud Drive replacement for Apple users because it covers the most ground: file sync, sharing, calendar (CalDAV), and contacts (CardDAV). Apple's built-in Calendar and Contacts apps work natively with CalDAV/CardDAV, so you can replace iCloud Calendar and Contacts at the same time.
+[Nextcloud](/apps/nextcloud/) is the strongest iCloud Drive replacement for Apple users because it covers the most ground: file sync, sharing, calendar (CalDAV), and contacts (CardDAV). Apple's built-in Calendar and Contacts apps work natively with CalDAV/CardDAV, so you can replace iCloud Calendar and Contacts at the same time.
 
 **What you get:** iOS and macOS sync via the Nextcloud app. Web file browser. Sharing links. Collaborative editing. Calendar and contacts sync with Apple's native apps via CalDAV/CardDAV. File versioning.
 
@@ -45,21 +45,21 @@ affiliateDisclosure: false
 
 **iOS experience:** The Nextcloud iOS app supports automatic photo upload, file browsing, and offline access. It's not as deeply integrated as iCloud (no Files app integration for on-demand access), but it covers the core use cases well.
 
-[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud)]
+[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud/)]
 
 ### Seafile — Best for Speed
 
-[Seafile](/apps/seafile) offers the fastest file sync available in a self-hosted solution. Block-level deduplication and delta sync make it 2-3x faster than Nextcloud. The iOS and Android apps work well for file access and photo upload.
+[Seafile](/apps/seafile/) offers the fastest file sync available in a self-hosted solution. Block-level deduplication and delta sync make it 2-3x faster than Nextcloud. The iOS and Android apps work well for file access and photo upload.
 
 **What you get:** Fast sync clients for macOS and Windows. iOS app with auto-upload. Web file browser. Sharing links. Client-side encryption per library.
 
 **Best for:** Users who prioritize sync speed and don't need calendar/contacts sync.
 
-[Read our full guide: [How to Self-Host Seafile](/apps/seafile)]
+[Read our full guide: [How to Self-Host Seafile](/apps/seafile/)]
 
 ### Syncthing — Best for Privacy (Mac/Android Only)
 
-[Syncthing](/apps/syncthing) syncs files peer-to-peer with no central server. Perfect privacy — no data touches any server. However, **there is no official iOS app**, making it a poor choice for iPhone users who need sync on their phone.
+[Syncthing](/apps/syncthing/) syncs files peer-to-peer with no central server. Perfect privacy — no data touches any server. However, **there is no official iOS app**, making it a poor choice for iPhone users who need sync on their phone.
 
 **What you get:** Automatic sync between Mac, Windows, Linux, and Android devices. No server needed. Block-level delta sync.
 
@@ -67,7 +67,7 @@ affiliateDisclosure: false
 
 **Major limitation:** No official iOS support. This makes Syncthing a non-starter for most Apple users. Consider Nextcloud or Seafile instead.
 
-[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing)]
+[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing/)]
 
 ## Migration Guide
 
@@ -87,8 +87,8 @@ affiliateDisclosure: false
 ### Step 2: Set Up Your Replacement
 
 For Apple users, we recommend **Nextcloud**:
-1. Follow our [Nextcloud Docker guide](/apps/nextcloud)
-2. Configure SSL via [reverse proxy](/apps/nginx-proxy-manager)
+1. Follow our [Nextcloud Docker guide](/apps/nextcloud/)
+2. Configure SSL via [reverse proxy](/apps/nginx-proxy-manager/)
 3. Set up CalDAV/CardDAV for calendar and contacts
 
 ### Step 3: Migrate Calendar and Contacts (Optional)
@@ -132,8 +132,8 @@ If also replacing iCloud Calendar and Contacts:
 ## What You Give Up
 
 - **Deep iOS/macOS integration.** iCloud Drive is built into Files app, Finder, and virtually every Apple app. Self-hosted solutions use separate apps and can't replicate the seamless "it just works" experience.
-- **iCloud Photos.** If you use iCloud Photos (not just Drive), replacing it requires [Immich](/apps/immich) or a similar photo management solution in addition to file sync.
-- **Keychain sync.** iCloud Keychain syncs passwords across Apple devices. Replace with [Vaultwarden](/apps/vaultwarden) for a cross-platform password manager.
+- **iCloud Photos.** If you use iCloud Photos (not just Drive), replacing it requires [Immich](/apps/immich/) or a similar photo management solution in addition to file sync.
+- **Keychain sync.** iCloud Keychain syncs passwords across Apple devices. Replace with [Vaultwarden](/apps/vaultwarden/) for a cross-platform password manager.
 - **Find My.** This stays on iCloud regardless — no self-hosted alternative.
 - **Family Sharing simplicity.** iCloud+ plans can be shared with up to 5 family members. Self-hosted solutions require creating user accounts for each person.
 - **Seamless backup.** iPhone backups go to iCloud automatically. Self-hosted backup requires manual setup or third-party tools.
@@ -155,17 +155,17 @@ No. iCloud is deeply integrated into iOS — self-hosted solutions can't match t
 
 ### What about Apple Photos?
 
-iCloud Photos is separate from iCloud Drive. To replace it, look at [Immich](/apps/immich) or [PhotoPrism](/apps/photoprism) for self-hosted photo management with mobile auto-upload.
+iCloud Photos is separate from iCloud Drive. To replace it, look at [Immich](/apps/immich/) or [PhotoPrism](/apps/photoprism/) for self-hosted photo management with mobile auto-upload.
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [How to Self-Host Immich](/apps/immich)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Self-Hosted Alternatives to Google Photos](/replace/google-photos)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [How to Self-Host Immich](/apps/immich/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Self-Hosted Alternatives to Google Photos](/replace/google-photos/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

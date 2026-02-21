@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB+ RAM
 - 1 GB free disk space
 - No GPU required
@@ -123,11 +123,11 @@ Whoogle supports DuckDuckGo-style bang searches:
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 5000. Set `WHOOGLE_CONFIG_URL` to your public URL. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 5000. Set `WHOOGLE_CONFIG_URL` to your public URL. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
-Whoogle is stateless — it stores no persistent data. The `tmpfs` mounts are in-memory and cleared on restart. No backup needed. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Whoogle is stateless — it stores no persistent data. The `tmpfs` mounts are in-memory and cleared on restart. No backup needed. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -156,14 +156,14 @@ Whoogle is stateless — it stores no persistent data. The `tmpfs` mounts are in
 
 Whoogle is the simplest way to get private Google search results. It's extremely lightweight, stateless, and easy to deploy. The main downside is that Google actively fights scrapers — you may encounter CAPTCHAs or blocks, especially from datacenter IPs. The Tor proxy mitigates this but adds latency.
 
-**Choose Whoogle** if you specifically want Google results without tracking. **Choose [SearXNG](/apps/searxng)** if you want results from multiple search engines and more reliability (SearXNG is less likely to be blocked since it distributes queries across many engines).
+**Choose Whoogle** if you specifically want Google results without tracking. **Choose [SearXNG](/apps/searxng/)** if you want results from multiple search engines and more reliability (SearXNG is less likely to be blocked since it distributes queries across many engines).
 
 ## Related
 
-- [How to Self-Host SearXNG](/apps/searxng)
-- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
-- [SearXNG vs Google](/compare/searxng-vs-google)
-- [Self-Hosted Google Alternatives](/replace/google-search)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host SearXNG](/apps/searxng/)
+- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
+- [SearXNG vs Google](/compare/searxng-vs-google/)
+- [Self-Hosted Google Alternatives](/replace/google-search/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

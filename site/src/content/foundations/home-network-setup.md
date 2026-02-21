@@ -22,9 +22,9 @@ This guide walks through the network configuration changes you need to make your
 ## Prerequisites
 
 - A home router with admin access (most consumer routers work)
-- A server or mini PC for hosting — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- Basic understanding of IP addresses — see [DHCP and Static IPs](/foundations/dhcp-static-ip)
-- SSH access to your server — see [SSH Setup](/foundations/ssh-setup)
+- A server or mini PC for hosting — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Basic understanding of IP addresses — see [DHCP and Static IPs](/foundations/dhcp-static-ip/)
+- SSH access to your server — see [SSH Setup](/foundations/ssh-setup/)
 
 ## Step 1: Assign a Static IP to Your Server
 
@@ -78,7 +78,7 @@ sudo netplan apply
 
 Pick an IP outside your router's DHCP range to avoid conflicts. Most routers use `192.168.1.100-254` for DHCP — assign your server something like `192.168.1.10`.
 
-For a deeper dive on this topic, see [DHCP and Static IPs Explained](/foundations/dhcp-static-ip).
+For a deeper dive on this topic, see [DHCP and Static IPs Explained](/foundations/dhcp-static-ip/).
 
 ## Step 2: Configure DNS
 
@@ -86,7 +86,7 @@ Your server needs reliable DNS resolution, and ideally your local devices should
 
 ### Local DNS with Pi-hole or AdGuard Home
 
-Running [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) gives you:
+Running [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) gives you:
 
 - Ad blocking for all devices on your network
 - Local DNS records so you can access services by name (e.g., `immich.home` instead of `192.168.1.100:2283`)
@@ -111,7 +111,7 @@ Restart the resolver:
 sudo systemctl restart systemd-resolved
 ```
 
-For more about DNS, see [DNS Explained](/foundations/dns-explained).
+For more about DNS, see [DNS Explained](/foundations/dns-explained/).
 
 ## Step 3: Port Forwarding for External Access
 
@@ -135,11 +135,11 @@ Only forward ports you actually need. Every open port is a potential attack surf
 
 Port forwarding exposes your home IP and requires a firewall. For most self-hosters, a tunnel-based approach is safer:
 
-- **[Cloudflare Tunnel](/foundations/cloudflare-tunnel)** — exposes web services through Cloudflare's network without opening ports
-- **[Tailscale](/foundations/tailscale-setup)** — creates a private mesh VPN for accessing services remotely without any port forwarding
-- **[WireGuard](/foundations/wireguard-setup)** — a fast VPN for encrypted remote access
+- **[Cloudflare Tunnel](/foundations/cloudflare-tunnel/)** — exposes web services through Cloudflare's network without opening ports
+- **[Tailscale](/foundations/tailscale-setup/)** — creates a private mesh VPN for accessing services remotely without any port forwarding
+- **[WireGuard](/foundations/wireguard-setup/)** — a fast VPN for encrypted remote access
 
-For the full guide on port forwarding, see [Port Forwarding Guide](/foundations/port-forwarding).
+For the full guide on port forwarding, see [Port Forwarding Guide](/foundations/port-forwarding/).
 
 ## Step 4: Network Segmentation (Optional but Recommended)
 
@@ -160,14 +160,14 @@ Create firewall rules to control inter-VLAN traffic:
 - IoT devices cannot access servers or personal devices
 - Servers can access the internet (for updates and external APIs)
 
-For a detailed VLAN walkthrough, see [Subnets and VLANs Explained](/foundations/subnets-vlans).
+For a detailed VLAN walkthrough, see [Subnets and VLANs Explained](/foundations/subnets-vlans/).
 
 ### Without VLAN Support
 
 If your router doesn't support VLANs, at minimum:
-- Use a strong firewall on your server — see [Firewall Setup with UFW](/foundations/firewall-ufw)
+- Use a strong firewall on your server — see [Firewall Setup with UFW](/foundations/firewall-ufw/)
 - Disable UPnP on your router (it allows devices to open ports without your permission)
-- Keep your server's SSH hardened — see [SSH Setup](/foundations/ssh-setup)
+- Keep your server's SSH hardened — see [SSH Setup](/foundations/ssh-setup/)
 
 ## Step 5: Set Up a Reverse Proxy
 
@@ -180,11 +180,11 @@ Benefits:
 
 The most popular options for self-hosters:
 
-- **[Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup)** — web-based GUI, easiest for beginners
-- **[Traefik](/foundations/traefik-setup)** — automatic Docker integration, config-as-code
-- **[Caddy](/foundations/caddy-setup)** — automatic HTTPS, simple config syntax
+- **[Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/)** — web-based GUI, easiest for beginners
+- **[Traefik](/foundations/traefik-setup/)** — automatic Docker integration, config-as-code
+- **[Caddy](/foundations/caddy-setup/)** — automatic HTTPS, simple config syntax
 
-For the conceptual overview, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For the conceptual overview, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Step 6: Dynamic DNS
 
@@ -192,7 +192,7 @@ Most home internet connections have a dynamic public IP that changes periodicall
 
 You need this if you're using port forwarding for external access. You don't need it if you're using Cloudflare Tunnel or Tailscale exclusively.
 
-For the full setup guide, see [Dynamic DNS Setup](/foundations/dynamic-dns).
+For the full setup guide, see [Dynamic DNS Setup](/foundations/dynamic-dns/).
 
 ## Step 7: UPS (Uninterruptible Power Supply)
 
@@ -257,10 +257,10 @@ Your ISP may provide IPv6. If it does, your server might be directly reachable f
 
 ## Next Steps
 
-- Set up Docker to run self-hosted apps — [Docker Compose Basics](/foundations/docker-compose-basics)
-- Deploy your first app — [Getting Started with Self-Hosting](/foundations/getting-started)
-- Secure your server — [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Set up encrypted remote access — [Tailscale Setup](/foundations/tailscale-setup) or [WireGuard VPN Setup](/foundations/wireguard-setup)
+- Set up Docker to run self-hosted apps — [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Deploy your first app — [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Secure your server — [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Set up encrypted remote access — [Tailscale Setup](/foundations/tailscale-setup/) or [WireGuard VPN Setup](/foundations/wireguard-setup/)
 
 ## FAQ
 
@@ -270,7 +270,7 @@ No. You can access everything by IP address on your local network. But a domain 
 
 ### Can I self-host behind CGNAT?
 
-CGNAT (Carrier-Grade NAT) means your ISP shares a public IP among multiple customers. Port forwarding won't work. Use [Cloudflare Tunnel](/foundations/cloudflare-tunnel) or [Tailscale](/foundations/tailscale-setup) instead — both work behind CGNAT without opening any ports.
+CGNAT (Carrier-Grade NAT) means your ISP shares a public IP among multiple customers. Port forwarding won't work. Use [Cloudflare Tunnel](/foundations/cloudflare-tunnel/) or [Tailscale](/foundations/tailscale-setup/) instead — both work behind CGNAT without opening any ports.
 
 ### How much bandwidth do I need?
 
@@ -282,12 +282,12 @@ ISP routers are usually limited in features — poor VLAN support, no advanced f
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [DHCP and Static IPs Explained](/foundations/dhcp-static-ip)
-- [DNS Explained](/foundations/dns-explained)
-- [Port Forwarding Guide](/foundations/port-forwarding)
-- [Subnets and VLANs Explained](/foundations/subnets-vlans)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Cloudflare Tunnel Setup](/foundations/cloudflare-tunnel)
-- [Tailscale Setup](/foundations/tailscale-setup)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [DHCP and Static IPs Explained](/foundations/dhcp-static-ip/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Port Forwarding Guide](/foundations/port-forwarding/)
+- [Subnets and VLANs Explained](/foundations/subnets-vlans/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Cloudflare Tunnel Setup](/foundations/cloudflare-tunnel/)
+- [Tailscale Setup](/foundations/tailscale-setup/)

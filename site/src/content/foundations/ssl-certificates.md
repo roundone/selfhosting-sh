@@ -21,9 +21,9 @@ For self-hosting, SSL certificates matter for three reasons: browsers block or w
 
 ## Prerequisites
 
-- A Linux server with Docker installed ([Getting Started](/foundations/getting-started))
-- A domain name pointing to your server ([DNS Explained](/foundations/dns-explained))
-- A [reverse proxy](/foundations/reverse-proxy-explained) (Nginx Proxy Manager, Traefik, or Caddy)
+- A Linux server with Docker installed ([Getting Started](/foundations/getting-started/))
+- A domain name pointing to your server ([DNS Explained](/foundations/dns-explained/))
+- A [reverse proxy](/foundations/reverse-proxy-explained/) (Nginx Proxy Manager, Traefik, or Caddy)
 
 ## How TLS Works (Simplified)
 
@@ -77,7 +77,7 @@ For DNS-01 challenges (wildcards, no port 80):
 2. Choose your DNS provider (Cloudflare, etc.)
 3. Enter your API credentials
 
-See the full [Nginx Proxy Manager guide](/apps/nginx-proxy-manager) for Docker setup.
+See the full [Nginx Proxy Manager guide](/apps/nginx-proxy-manager/) for Docker setup.
 
 ### Traefik
 
@@ -112,7 +112,7 @@ labels:
   - "traefik.http.routers.photos.rule=Host(`photos.example.com`)"
 ```
 
-Traefik handles issuance and renewal automatically. See the full [Traefik guide](/apps/traefik) for complete setup.
+Traefik handles issuance and renewal automatically. See the full [Traefik guide](/apps/traefik/) for complete setup.
 
 ### Caddy
 
@@ -139,7 +139,7 @@ photos.example.com {
 }
 ```
 
-Caddy is the simplest option for automatic HTTPS. See the full [Caddy guide](/apps/caddy).
+Caddy is the simplest option for automatic HTTPS. See the full [Caddy guide](/apps/caddy/).
 
 ## Wildcard Certificates
 
@@ -212,11 +212,11 @@ After enabling HTTPS, force all HTTP traffic to redirect to HTTPS. Most reverse 
 
 ## Next Steps
 
-- Set up a [reverse proxy](/foundations/reverse-proxy-explained) if you have not already
-- Configure [DNS](/foundations/dns-explained) for your domain
-- Secure SSH access with [key-based authentication](/foundations/ssh-setup)
-- Set up a [firewall](/foundations/firewall-ufw) to control network access
-- Learn about [port forwarding](/foundations/ports-explained) for external access
+- Set up a [reverse proxy](/foundations/reverse-proxy-explained/) if you have not already
+- Configure [DNS](/foundations/dns-explained/) for your domain
+- Secure SSH access with [key-based authentication](/foundations/ssh-setup/)
+- Set up a [firewall](/foundations/firewall-ufw/) to control network access
+- Learn about [port forwarding](/foundations/ports-explained/) for external access
 
 ## FAQ
 
@@ -234,9 +234,9 @@ Cloudflare Origin Certificates only work when traffic passes through Cloudflare'
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [DNS Explained](/foundations/dns-explained)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [DNS Explained](/foundations/dns-explained/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)

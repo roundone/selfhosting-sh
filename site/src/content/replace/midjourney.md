@@ -37,33 +37,33 @@ affiliateDisclosure: true
 
 ### Stable Diffusion WebUI (AUTOMATIC1111) — Best Overall Replacement
 
-[Stable Diffusion WebUI](/apps/stable-diffusion-webui) is the most popular self-hosted image generation interface. It provides a complete GUI for txt2img, img2img, inpainting, upscaling, and more. The extension ecosystem includes ControlNet, IP-Adapter, and hundreds of other tools.
+[Stable Diffusion WebUI](/apps/stable-diffusion-webui/) is the most popular self-hosted image generation interface. It provides a complete GUI for txt2img, img2img, inpainting, upscaling, and more. The extension ecosystem includes ControlNet, IP-Adapter, and hundreds of other tools.
 
 **Closest to Midjourney quality:** Use SDXL or FLUX models with quality-tuned LoRAs. The gap between Midjourney v6 and the best open-source models has narrowed significantly.
 
-[Read our Stable Diffusion WebUI guide](/apps/stable-diffusion-webui)
+[Read our Stable Diffusion WebUI guide](/apps/stable-diffusion-webui/)
 
 ### ComfyUI — Best for Advanced Workflows
 
-[ComfyUI](/apps/comfyui) uses a node-based editor where you build generation pipelines visually. It gives you complete control over every step — model loading, conditioning, sampling, upscaling, face fixing. Workflows are saveable, shareable, and reproducible.
+[ComfyUI](/apps/comfyui/) uses a node-based editor where you build generation pipelines visually. It gives you complete control over every step — model loading, conditioning, sampling, upscaling, face fixing. Workflows are saveable, shareable, and reproducible.
 
 **Best for:** Power users who want to build complex generation pipelines with multiple models and post-processing steps.
 
-[Read our ComfyUI guide](/apps/comfyui)
+[Read our ComfyUI guide](/apps/comfyui/)
 
 ### LocalAI — Best for API Access
 
-[LocalAI](/apps/localai) provides an OpenAI-compatible API for image generation. If you need programmatic access to image generation (e.g., for a website or app), LocalAI's API is the simplest integration path.
+[LocalAI](/apps/localai/) provides an OpenAI-compatible API for image generation. If you need programmatic access to image generation (e.g., for a website or app), LocalAI's API is the simplest integration path.
 
 **Best for:** Developers building applications that need image generation via API.
 
-[Read our LocalAI guide](/apps/localai)
+[Read our LocalAI guide](/apps/localai/)
 
 ## Migration Guide
 
 ### From Midjourney to Stable Diffusion WebUI
 
-1. Install [Stable Diffusion WebUI](/apps/stable-diffusion-webui) (requires NVIDIA GPU with 8+ GB VRAM)
+1. Install [Stable Diffusion WebUI](/apps/stable-diffusion-webui/) (requires NVIDIA GPU with 8+ GB VRAM)
 2. Download an SDXL model (e.g., SDXL base) — place in `models/Stable-diffusion/`
 3. Download quality LoRAs from CivitAI for specific styles
 4. Start generating with your own prompts
@@ -98,9 +98,9 @@ For most use cases — especially if you need privacy, unlimited generations, or
 
 ## Related
 
-- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui)
-- [How to Self-Host ComfyUI](/apps/comfyui)
-- [Stable Diffusion vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
+- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui/)
+- [How to Self-Host ComfyUI](/apps/comfyui/)
+- [Stable Diffusion vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)

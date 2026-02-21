@@ -156,10 +156,10 @@ Portainer CE is free for up to 5 environments and covers most self-hosting needs
 
 ## Related
 
-- [How to Self-Host Rancher](/apps/rancher)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Rancher](/apps/rancher/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

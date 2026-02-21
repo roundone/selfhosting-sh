@@ -21,9 +21,9 @@ Linux uses numeric User IDs (UIDs) and Group IDs (GIDs) internally. The names yo
 
 ## Prerequisites
 
-- A Linux server with SSH access ([SSH Setup](/foundations/ssh-setup))
-- Basic command line knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
-- Understanding of file permissions helps ([Linux Permissions](/foundations/linux-permissions))
+- A Linux server with SSH access ([SSH Setup](/foundations/ssh-setup/))
+- Basic command line knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
+- Understanding of file permissions helps ([Linux Permissions](/foundations/linux-permissions/))
 
 ## Key Concepts
 
@@ -194,7 +194,7 @@ sudo chown -R 1000:1000 /srv/myapp
 sudo chown -R 33:33 /srv/nextcloud
 ```
 
-See [Docker Volume Permissions](/foundations/docker-volume-permissions) for a thorough troubleshooting guide.
+See [Docker Volume Permissions](/foundations/docker-volume-permissions/) for a thorough troubleshooting guide.
 
 ## Practical Examples
 
@@ -266,10 +266,10 @@ Setting everything to world-writable (777) fixes permission errors but creates a
 
 ## Next Steps
 
-- Fix specific Docker permission errors with [Docker Volume Permissions](/foundations/docker-volume-permissions)
-- Understand file permissions in depth at [Linux Permissions](/foundations/linux-permissions)
-- Secure your server with [Security Hardening](/foundations/security-hardening)
-- Learn about Docker's isolation model in [Docker Security](/foundations/docker-security)
+- Fix specific Docker permission errors with [Docker Volume Permissions](/foundations/docker-volume-permissions/)
+- Understand file permissions in depth at [Linux Permissions](/foundations/linux-permissions/)
+- Secure your server with [Security Hardening](/foundations/security-hardening/)
+- Learn about Docker's isolation model in [Docker Security](/foundations/docker-security/)
 
 ## FAQ
 
@@ -295,10 +295,10 @@ Docker can remap container UIDs to different host UIDs using the `userns-remap` 
 
 ## Related
 
-- [Linux Permissions](/foundations/linux-permissions)
-- [Docker Volume Permissions](/foundations/docker-volume-permissions)
-- [Docker Security](/foundations/docker-security)
-- [Security Hardening](/foundations/security-hardening)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [SSH Setup](/foundations/ssh-setup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Linux Permissions](/foundations/linux-permissions/)
+- [Docker Volume Permissions](/foundations/docker-volume-permissions/)
+- [Docker Security](/foundations/docker-security/)
+- [Security Hardening](/foundations/security-hardening/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

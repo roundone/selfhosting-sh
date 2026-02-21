@@ -29,7 +29,7 @@ Obsidian is the better choice for most users — plain Markdown files, a massive
 
 **SiYuan** is an open-source, local-first note-taking app with block-level editing, bidirectional links, graph view, and database-style content views. It uses a custom JSON storage format and can be self-hosted as a Docker container for web access. Developed by B3log, a Chinese open-source organization.
 
-**Obsidian** is a commercial (but free for personal use) Markdown-based knowledge management app. It stores notes as plain `.md` files, supports bidirectional links and a graph view, and has a massive plugin ecosystem. Obsidian itself isn't open-source, but self-hosted sync is possible via the community [LiveSync plugin](/apps/obsidian-livesync) with CouchDB.
+**Obsidian** is a commercial (but free for personal use) Markdown-based knowledge management app. It stores notes as plain `.md` files, supports bidirectional links and a graph view, and has a massive plugin ecosystem. Obsidian itself isn't open-source, but self-hosted sync is possible via the community [LiveSync plugin](/apps/obsidian-livesync/) with CouchDB.
 
 ## Feature Comparison
 
@@ -109,10 +109,10 @@ If portability and ecosystem matter: Obsidian. If native WYSIWYG power matters: 
 
 ## Related
 
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [How to Self-Host Obsidian Sync](/apps/obsidian-livesync)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
-- [Replace Evernote](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [How to Self-Host Obsidian Sync](/apps/obsidian-livesync/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)
+- [Replace Evernote](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

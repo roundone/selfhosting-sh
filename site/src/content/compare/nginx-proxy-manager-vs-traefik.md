@@ -137,11 +137,11 @@ Technically yes — you could put Traefik in front of NPM or vice versa — but 
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik](/apps/traefik)
-- [How to Self-Host Caddy](/apps/caddy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [NPM vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [How to Self-Host Caddy](/apps/caddy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [NPM vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

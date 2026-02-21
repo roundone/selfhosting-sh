@@ -25,14 +25,14 @@ affiliateDisclosure: false
 
 [Firezone](https://www.firezone.dev/) is a zero-trust remote access platform built on WireGuard. It replaces traditional VPNs with a modern approach: instead of granting full network access, Firezone lets you define granular policies that control which users can access which resources. It uses peer-to-peer encrypted tunnels, automatic NAT traversal, and ephemeral WireGuard keys that rotate constantly.
 
-Firezone 1.x uses a split architecture: the admin portal and control plane run as a managed service at `app.firezone.dev`, while **Gateways** — the components that connect users to your resources — run on your infrastructure. You self-host the gateways; Firezone manages the control plane. This is different from traditional self-hosted VPN solutions like [WireGuard](/apps/wireguard) or [wg-easy](/apps/wg-easy) where you own the entire stack.
+Firezone 1.x uses a split architecture: the admin portal and control plane run as a managed service at `app.firezone.dev`, while **Gateways** — the components that connect users to your resources — run on your infrastructure. You self-host the gateways; Firezone manages the control plane. This is different from traditional self-hosted VPN solutions like [WireGuard](/apps/wireguard/) or [wg-easy](/apps/wg-easy/) where you own the entire stack.
 
-If you need a fully self-hosted VPN with no cloud dependency, look at [wg-easy](/apps/wg-easy), [Headscale](/apps/headscale), or [NetBird](/apps/netbird) instead. Firezone is the right choice when you want enterprise-grade zero-trust access policies without building that infrastructure yourself.
+If you need a fully self-hosted VPN with no cloud dependency, look at [wg-easy](/apps/wg-easy/), [Headscale](/apps/headscale/), or [NetBird](/apps/netbird/) instead. Firezone is the right choice when you want enterprise-grade zero-trust access policies without building that infrastructure yourself.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 128 MB of free RAM (per gateway)
 - A [Firezone account](https://app.firezone.dev/) (free tier available)
 - A Firezone Site and Gateway token from the admin portal
@@ -237,7 +237,7 @@ FIREZONE_NO_TELEMETRY=true
 
 Firezone Gateways don't serve a web UI — the admin interface is the cloud-hosted portal at `app.firezone.dev`. No reverse proxy configuration is needed for the gateway itself.
 
-If you're using Firezone to provide access to services behind a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik), define those services as Resources in the admin portal and create policies to control access. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+If you're using Firezone to provide access to services behind a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/), define those services as Resources in the admin portal and create policies to control access. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -245,7 +245,7 @@ The gateway's persistent state in `/var/lib/firezone` contains cached configurat
 
 What you should back up is your Firezone account configuration (Sites, Resources, Policies). That lives in Firezone's managed service, which handles its own backups.
 
-For general backup strategies, see [Backup Strategy](/foundations/backup-strategy).
+For general backup strategies, see [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -317,15 +317,15 @@ Firezone occupies a unique niche: it brings enterprise-grade zero-trust access t
 
 **Choose Firezone if:** You want granular, policy-based access control (specific users can access specific resources), built-in SSO/identity provider integration, and multi-site gateway management. It's the best option for teams and organizations where access policies matter more than full infrastructure ownership.
 
-**Look elsewhere if:** You want a fully self-hosted VPN with zero cloud dependencies. [wg-easy](/apps/wg-easy) gives you a simple WireGuard server with a web UI. [Headscale](/apps/headscale) gives you a self-hosted Tailscale control plane. [NetBird](/apps/netbird) offers a fully self-hostable zero-trust platform including the control plane.
+**Look elsewhere if:** You want a fully self-hosted VPN with zero cloud dependencies. [wg-easy](/apps/wg-easy/) gives you a simple WireGuard server with a web UI. [Headscale](/apps/headscale/) gives you a self-hosted Tailscale control plane. [NetBird](/apps/netbird/) offers a fully self-hostable zero-trust platform including the control plane.
 
-For most home lab users who just need remote access to their services, [Tailscale](/apps/tailscale) or [wg-easy](/apps/wg-easy) are simpler choices. Firezone shines when you need real access policies.
+For most home lab users who just need remote access to their services, [Tailscale](/apps/tailscale/) or [wg-easy](/apps/wg-easy/) are simpler choices. Firezone shines when you need real access policies.
 
 ## Frequently Asked Questions
 
 ### Is Firezone fully self-hostable?
 
-No. As of Firezone 1.x, the admin portal and control plane are cloud-managed services. You self-host the Gateways (the data plane). The source code is open and you can technically build the entire stack yourself, but it's not officially supported for production self-hosting. If you need full self-hosting, look at [NetBird](/apps/netbird) or [Headscale](/apps/headscale).
+No. As of Firezone 1.x, the admin portal and control plane are cloud-managed services. You self-host the Gateways (the data plane). The source code is open and you can technically build the entire stack yourself, but it's not officially supported for production self-hosting. If you need full self-hosting, look at [NetBird](/apps/netbird/) or [Headscale](/apps/headscale/).
 
 ### Is there a free tier?
 
@@ -337,7 +337,7 @@ Traditional VPNs grant full network access once connected. Firezone uses zero-tr
 
 ### Can I use Firezone alongside other VPN solutions?
 
-Yes. Firezone Gateways are isolated — they create their own WireGuard interfaces and don't interfere with existing VPN setups. You can run Firezone alongside [WireGuard](/apps/wireguard) or [Tailscale](/apps/tailscale) on the same host.
+Yes. Firezone Gateways are isolated — they create their own WireGuard interfaces and don't interfere with existing VPN setups. You can run Firezone alongside [WireGuard](/apps/wireguard/) or [Tailscale](/apps/tailscale/) on the same host.
 
 ### What happens if Firezone's cloud goes down?
 
@@ -345,13 +345,13 @@ Existing tunnels continue to work — the data plane is peer-to-peer. However, n
 
 ## Related
 
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [How to Self-Host Headscale](/apps/headscale)
-- [How to Self-Host NetBird](/apps/netbird)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Self-Hosted NordVPN Alternatives](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [How to Self-Host NetBird](/apps/netbird/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Self-Hosted NordVPN Alternatives](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

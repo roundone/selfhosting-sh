@@ -113,10 +113,10 @@ Not directly, but both support M3U playlist files. Export playlists from Plex as
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Plex](/apps/plex)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic)
-- [Emby vs Navidrome](/compare/emby-vs-navidrome)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
+- [Emby vs Navidrome](/compare/emby-vs-navidrome/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

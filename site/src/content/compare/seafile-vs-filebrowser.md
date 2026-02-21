@@ -53,9 +53,9 @@ FileBrowser is a single-binary web file manager. Point it at a directory, and yo
 
 ## Installation Complexity
 
-**Seafile** requires MariaDB/MySQL, Memcached, and the Seafile server containers. The Docker Compose setup involves 3-4 services and environment-specific configuration. Expect 20-30 minutes. See our [Seafile setup guide](/apps/seafile).
+**Seafile** requires MariaDB/MySQL, Memcached, and the Seafile server containers. The Docker Compose setup involves 3-4 services and environment-specific configuration. Expect 20-30 minutes. See our [Seafile setup guide](/apps/seafile/).
 
-**FileBrowser** is a single container with no dependencies. Default config works immediately. Under 5 minutes to deploy. See our [FileBrowser setup guide](/apps/filebrowser).
+**FileBrowser** is a single container with no dependencies. Default config works immediately. Under 5 minutes to deploy. See our [FileBrowser setup guide](/apps/filebrowser/).
 
 ## Performance and Resource Usage
 
@@ -92,7 +92,7 @@ Seafile's sync performance is its standout feature. Block-level delta sync means
 - Resource usage matters (Raspberry Pi, small VPS)
 - You don't need sync clients
 - You want zero-maintenance file management
-- You already use [Syncthing](/apps/syncthing) for sync and just need a web file manager
+- You already use [Syncthing](/apps/syncthing/) for sync and just need a web file manager
 - You want quick file sharing without running a full platform
 
 ## Final Verdict
@@ -105,7 +105,7 @@ Many self-hosters run both: Seafile for synced data and FileBrowser for browsing
 
 ### Can FileBrowser replace Seafile for file sync?
 
-No. FileBrowser has no sync clients. You can access files via WebDAV, but it's not a sync platform. For sync without Seafile, look at [Syncthing](/apps/syncthing).
+No. FileBrowser has no sync clients. You can access files via WebDAV, but it's not a sync platform. For sync without Seafile, look at [Syncthing](/apps/syncthing/).
 
 ### Is Seafile faster than Nextcloud for file sync?
 
@@ -121,10 +121,10 @@ Yes, but it's a manual process. Upload your files to Seafile libraries through t
 
 ## Related
 
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host FileBrowser](/apps/filebrowser)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Seafile vs Syncthing](/compare/seafile-vs-syncthing)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host FileBrowser](/apps/filebrowser/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Seafile vs Syncthing](/compare/seafile-vs-syncthing/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

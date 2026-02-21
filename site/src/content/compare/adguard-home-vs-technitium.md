@@ -88,7 +88,7 @@ AdGuard Home is lighter. Technitium uses more memory due to the .NET runtime and
 - You want the simplest setup and cleanest UI
 - You need parental controls or safe search enforcement
 - You want a lighter footprint
-- You're migrating from [Pi-hole](/apps/pi-hole) and want a similar but modern experience
+- You're migrating from [Pi-hole](/apps/pi-hole/) and want a similar but modern experience
 - DNS privacy (DoH/DoT/DoQ) is your main concern
 
 ### Choose Technitium If...
@@ -112,7 +112,7 @@ Yes, but it's uncommon. You could use Technitium as your authoritative DNS serve
 
 ### How do they compare to Pi-hole?
 
-[Pi-hole](/apps/pi-hole) falls between these two. It's focused on ad blocking like AdGuard Home but with a less modern UI. It doesn't have authoritative DNS like Technitium. See our [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home) and [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium) comparisons.
+[Pi-hole](/apps/pi-hole/) falls between these two. It's focused on ad blocking like AdGuard Home but with a less modern UI. It doesn't have authoritative DNS like Technitium. See our [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/) and [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium/) comparisons.
 
 ### Which has better ad blocking?
 
@@ -120,10 +120,10 @@ AdGuard Home. It was purpose-built for ad blocking with filter list management, 
 
 ## Related
 
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Technitium](/apps/technitium)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted DNS Alternatives](/replace/google-dns)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Technitium](/apps/technitium/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted DNS Alternatives](/replace/google-dns/)

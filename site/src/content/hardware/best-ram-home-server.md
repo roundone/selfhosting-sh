@@ -201,10 +201,10 @@ No. Raspberry Pi RAM is soldered. Buy the 8 GB model if you plan to run more tha
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [ECC vs Non-ECC RAM for Home Servers](/hardware/ecc-vs-non-ecc-ram)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [ECC vs Non-ECC RAM for Home Servers](/hardware/ecc-vs-non-ecc-ram/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

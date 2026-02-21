@@ -21,8 +21,8 @@ For self-hosting, security matters because your server faces the internet. A com
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic Linux security knowledge ([Firewall Setup](/foundations/firewall-ufw), [SSH Setup](/foundations/ssh-setup))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic Linux security knowledge ([Firewall Setup](/foundations/firewall-ufw/), [SSH Setup](/foundations/ssh-setup/))
 
 ## Run Containers as Non-Root
 
@@ -266,7 +266,7 @@ secrets:
     file: ./secrets/db_password.txt
 ```
 
-See [Docker Environment Variables](/foundations/docker-environment-variables) for more on secrets management.
+See [Docker Environment Variables](/foundations/docker-environment-variables/) for more on secrets management.
 
 ## Keep Images Updated
 
@@ -281,7 +281,7 @@ docker compose pull
 docker compose up -d
 ```
 
-See [Updating Docker Containers](/foundations/docker-updating) for a full update strategy.
+See [Updating Docker Containers](/foundations/docker-updating/) for a full update strategy.
 
 ### Use Minimal Base Images
 
@@ -421,16 +421,16 @@ Yes, with proper security: HTTPS via reverse proxy, firewall, fail2ban, non-root
 
 ## Next Steps
 
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — host-level network security
-- [Fail2ban Setup](/foundations/fail2ban) — block brute-force attacks
-- [Updating Docker Containers](/foundations/docker-updating) — keep images patched
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — host-level network security
+- [Fail2ban Setup](/foundations/fail2ban/) — block brute-force attacks
+- [Updating Docker Containers](/foundations/docker-updating/) — keep images patched
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Fail2ban Setup](/foundations/fail2ban)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Fail2ban Setup](/foundations/fail2ban/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

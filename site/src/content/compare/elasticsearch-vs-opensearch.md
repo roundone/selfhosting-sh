@@ -164,10 +164,10 @@ For a new self-hosted search deployment with no existing Elastic infrastructure:
 
 ## Related
 
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [How to Self-Host OpenSearch](/apps/opensearch)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [How to Self-Host OpenSearch](/apps/opensearch/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

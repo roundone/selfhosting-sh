@@ -117,6 +117,6 @@ Common label mistakes:
 
 ## Related
 
-- [How to Self-Host Traefik](/apps/traefik)
-- [Docker Networking](/foundations/docker-networking)
-- [Traefik vs Nginx Proxy Manager](/compare/nginx-proxy-manager-vs-traefik)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Traefik vs Nginx Proxy Manager](/compare/nginx-proxy-manager-vs-traefik/)

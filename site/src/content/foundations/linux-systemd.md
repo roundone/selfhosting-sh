@@ -22,8 +22,8 @@ Docker Compose handles container lifecycle, but systemd manages Docker itself an
 ## Prerequisites
 
 - A Linux server running a systemd-based distro (Ubuntu 20.04+, Debian 11+, Fedora 38+)
-- SSH access with sudo privileges ([SSH Setup Guide](/foundations/ssh-setup))
-- Basic terminal skills ([Linux Basics](/foundations/linux-basics-self-hosting))
+- SSH access with sudo privileges ([SSH Setup Guide](/foundations/ssh-setup/))
+- Basic terminal skills ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Essential systemctl Commands
 
@@ -374,15 +374,15 @@ Always in `/etc/systemd/system/`. Never modify files in `/lib/systemd/system/` �
 
 ## Next Steps
 
-- [Linux Cron Jobs](/foundations/linux-cron-jobs) — alternative task scheduling
-- [Docker Compose Basics](/foundations/docker-compose-basics) — container orchestration
-- [Monitoring Your Home Server](/foundations/monitoring-basics) — track service health
+- [Linux Cron Jobs](/foundations/linux-cron-jobs/) — alternative task scheduling
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — container orchestration
+- [Monitoring Your Home Server](/foundations/monitoring-basics/) — track service health
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

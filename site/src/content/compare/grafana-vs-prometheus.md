@@ -232,13 +232,13 @@ Grafana and Prometheus are not an either/or decision. They are the two halves of
 
 **Deploy both.** The Docker Compose above takes five minutes to set up and gives you production-grade monitoring that replaces Datadog, New Relic, or UptimeRobot. The only scenario where you would run one without the other is if you already have an alternative for that layer — for example, Grafana with InfluxDB instead of Prometheus, or Prometheus with Alertmanager only and no dashboards.
 
-If you want simpler uptime monitoring without the full metrics stack, look at [Uptime Kuma](/apps/uptime-kuma) instead — it is a single container that handles uptime checks with a clean UI and no configuration files. For full infrastructure observability, Prometheus + Grafana is the answer.
+If you want simpler uptime monitoring without the full metrics stack, look at [Uptime Kuma](/apps/uptime-kuma/) instead — it is a single container that handles uptime checks with a clean UI and no configuration files. For full infrastructure observability, Prometheus + Grafana is the answer.
 
 ## Related
 
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

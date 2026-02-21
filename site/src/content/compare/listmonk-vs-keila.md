@@ -124,9 +124,9 @@ Listmonk. It has a dedicated transactional email API. Keila is newsletters-only 
 
 ## Related
 
-- [How to Self-Host Listmonk](/apps/listmonk)
-- [How to Self-Host Keila](/apps/keila)
-- [Listmonk vs Mautic](/compare/listmonk-vs-mautic)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Listmonk](/apps/listmonk/)
+- [How to Self-Host Keila](/apps/keila/)
+- [Listmonk vs Mautic](/compare/listmonk-vs-mautic/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

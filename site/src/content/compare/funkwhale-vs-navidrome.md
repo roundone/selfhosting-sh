@@ -193,9 +193,9 @@ Yes. Navidrome supports multiple users with separate libraries, playlists, and s
 
 ## Related
 
-- [Best Self-Hosted Music Servers](/best/music-audio)
-- [Replace Spotify with Self-Hosted Music](/replace/spotify)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin-music)
-- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Best Self-Hosted Music Servers](/best/music-audio/)
+- [Replace Spotify with Self-Hosted Music](/replace/spotify/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin-music/)
+- [Navidrome vs Airsonic](/compare/navidrome-vs-airsonic/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

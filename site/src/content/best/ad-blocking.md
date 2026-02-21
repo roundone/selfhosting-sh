@@ -54,7 +54,7 @@ affiliateDisclosure: false
 
 **Best for:** Most users. The best balance of features, simplicity, and resource usage.
 
-[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home)
+[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home/)
 
 ### 2. Pi-hole — Best Community
 
@@ -77,7 +77,7 @@ affiliateDisclosure: false
 
 **Best for:** Users who want the biggest community, most integrations, and don't mind adding Unbound for encrypted DNS.
 
-[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole)
+[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole/)
 
 ### 3. Blocky — Best Lightweight
 
@@ -102,7 +102,7 @@ affiliateDisclosure: false
 
 **Best for:** Infrastructure-as-code users, resource-constrained hardware, users who don't need a web dashboard.
 
-[Read our full guide: How to Self-Host Blocky](/apps/blocky)
+[Read our full guide: How to Self-Host Blocky](/apps/blocky/)
 
 ### 4. Technitium DNS — Best Full DNS Server
 
@@ -128,7 +128,7 @@ affiliateDisclosure: false
 
 **Best for:** Homelabbers who want one tool for all DNS needs — ad blocking, zone hosting, recursive resolution, and infrastructure management.
 
-[Read our full guide: How to Self-Host Technitium DNS](/apps/technitium)
+[Read our full guide: How to Self-Host Technitium DNS](/apps/technitium/)
 
 ## Full Comparison Table
 
@@ -193,16 +193,16 @@ Unbound is a recursive DNS resolver, not an ad blocker. Pair it with Pi-hole for
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Technitium DNS](/apps/technitium)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
-- [Self-Hosted Alternatives to NextDNS](/replace/nextdns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [DNS Explained](/foundations/dns-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Technitium DNS](/apps/technitium/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
+- [Self-Hosted Alternatives to NextDNS](/replace/nextdns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

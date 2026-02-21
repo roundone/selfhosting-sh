@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - **8 GB of RAM minimum** (4 GB is technically possible but will be slow under load — Plane runs 13 services)
 - 20+ GB of free disk space
 - A domain name (recommended for team access)
@@ -169,7 +169,7 @@ location / {
 
 The `Upgrade` and `Connection` headers are required for the `live` service's WebSocket connections. Without them, real-time collaboration will not work.
 
-For a full reverse proxy setup guide, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For a full reverse proxy setup guide, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -197,7 +197,7 @@ docker run --rm -v plane_uploads:/data -v $(pwd):/backup alpine tar czf /backup/
 docker compose exec -T plane-db psql -U plane plane < plane-db-backup-20260220.sql
 ```
 
-Schedule automated backups with a cron job and follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule) — three copies, two different media, one offsite.
+Schedule automated backups with a cron job and follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/) — three copies, two different media, one offsite.
 
 ## Troubleshooting
 
@@ -274,15 +274,15 @@ Plane is one of the heaviest self-hosted apps you can run. A dedicated mini PC o
 
 Plane is the best self-hosted Jira alternative available today. The UI is modern and fast, the feature set covers issues, sprints, cycles, modules, and pages — and it does not nickel-and-dime you with per-seat pricing. For teams that want to own their project management data, Plane is the clear first choice.
 
-The trade-off is operational complexity. Thirteen services is a lot. Startup is slow, RAM requirements are steep, and debugging issues means understanding which of those 13 containers is misbehaving. If you are a solo developer or a small team that just needs a kanban board, look at something lighter like [Vikunja](/apps/vikunja) or [Focalboard](/apps/focalboard). But if you are a team of 5+ that currently pays for Jira or Linear and wants out, Plane is worth the infrastructure investment.
+The trade-off is operational complexity. Thirteen services is a lot. Startup is slow, RAM requirements are steep, and debugging issues means understanding which of those 13 containers is misbehaving. If you are a solo developer or a small team that just needs a kanban board, look at something lighter like [Vikunja](/apps/vikunja/) or [Focalboard](/apps/focalboard/). But if you are a team of 5+ that currently pays for Jira or Linear and wants out, Plane is worth the infrastructure investment.
 
 ## Related
 
-- [Best Self-Hosted Project Management Tools](/best/project-management)
-- [Self-Hosted Alternatives to Jira](/replace/jira)
-- [Self-Hosted Alternatives to Trello](/replace/trello)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Networking](/foundations/docker-networking)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted Project Management Tools](/best/project-management/)
+- [Self-Hosted Alternatives to Jira](/replace/jira/)
+- [Self-Hosted Alternatives to Trello](/replace/trello/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -148,10 +148,10 @@ Legacy and alpha APIs, in-tree cloud provider code, and in-tree storage drivers.
 
 ## Related
 
-- [How to Self-Host k3s](/apps/k3s)
-- [k3s vs MicroK8s](/compare/k3s-vs-microk8s)
-- [k3s vs k0s](/compare/k3s-vs-k0s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
+- [How to Self-Host k3s](/apps/k3s/)
+- [k3s vs MicroK8s](/compare/k3s-vs-microk8s/)
+- [k3s vs k0s](/compare/k3s-vs-k0s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)

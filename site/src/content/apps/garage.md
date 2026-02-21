@@ -29,7 +29,7 @@ Garage is a lightweight, self-hosted S3-compatible object storage system built i
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for your data)
 - 512 MB of RAM (minimum)
 - A domain name (optional, for web hosting and S3 endpoint)
@@ -200,9 +200,9 @@ docker compose exec garage /garage node connect OTHER_NODE_ID@other-server:3901
 
 For S3 API access behind a reverse proxy, proxy to port 3900. Ensure your proxy passes the `Host` header correctly — S3 virtual-hosted-style requests depend on it.
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager), create a proxy host pointing to port 3900. Set the domain to `s3.example.com`.
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/), create a proxy host pointing to port 3900. Set the domain to `s3.example.com`.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 ## Backup
 
@@ -220,7 +220,7 @@ docker compose start
 
 For multi-node deployments with replication, losing one node doesn't lose data — but back up metadata regularly regardless.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -259,13 +259,13 @@ docker compose exec garage /garage layout apply --version 1
 
 Garage is the best self-hosted S3-compatible storage for small to medium deployments. It replaced MinIO (now archived on GitHub) as the go-to lightweight option. The Rust implementation is memory-efficient, the multi-node replication works well, and the S3 API compatibility means it integrates with any tool that speaks S3.
 
-Use Garage when you need S3 API compatibility for backups, application storage, or static site hosting. For file sync and sharing with a web UI, look at [Nextcloud](/apps/nextcloud) or [Seafile](/apps/seafile) instead.
+Use Garage when you need S3 API compatibility for backups, application storage, or static site hosting. For file sync and sharing with a web UI, look at [Nextcloud](/apps/nextcloud/) or [Seafile](/apps/seafile/) instead.
 
 ## FAQ
 
 ### Can I use Garage as a backup target for Restic or Borg?
 
-Yes. [Restic](/apps/restic) supports S3 backends natively. Point it at your Garage endpoint. Borg doesn't support S3 directly, but you can use rclone as a transport layer.
+Yes. [Restic](/apps/restic/) supports S3 backends natively. Point it at your Garage endpoint. Borg doesn't support S3 directly, but you can use rclone as a transport layer.
 
 ### Is Garage a drop-in MinIO replacement?
 
@@ -281,11 +281,11 @@ Yes. Garage's ARM64 Docker image works on Raspberry Pi 4/5. With 1 GB of RAM all
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [How to Self-Host Restic](/apps/restic)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [How to Self-Host Restic](/apps/restic/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

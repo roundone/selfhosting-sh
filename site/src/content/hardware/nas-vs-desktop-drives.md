@@ -105,7 +105,7 @@ Toshiba N300 drives are solid and often cheaper per TB than WD Red Plus or IronW
 
 NAS drives cost roughly 15-30% more per TB. Over a 5-year drive life, the cost difference is $20-60 total. Cheap compared to losing data.
 
-**For best per-TB value:** Buy the largest NAS drive you can afford. 8TB and 12TB NAS drives hit the sweet spot of price per TB. Also consider [shucking external drives](/hardware/hard-drive-shucking) — WD Elements and Seagate Expansion externals often contain NAS-class drives at lower per-TB prices.
+**For best per-TB value:** Buy the largest NAS drive you can afford. 8TB and 12TB NAS drives hit the sweet spot of price per TB. Also consider [shucking external drives](/hardware/hard-drive-shucking/) — WD Elements and Seagate Expansion externals often contain NAS-class drives at lower per-TB prices.
 
 ## When Desktop Drives Are Fine
 
@@ -131,7 +131,7 @@ Backblaze publishes quarterly drive reliability reports. Key takeaways for home 
 - NAS drives consistently show lower annualized failure rates (0.5-1.5%) vs desktop drives under continuous operation (1.5-3%)
 - Individual drive models vary more than brand averages — check Backblaze reports for specific models
 - The biggest reliability factor is temperature. Keep drives under 40°C with adequate airflow
-- [Seagate Exos and WD Ultrastar](/hardware/best-hard-drives-nas) enterprise drives show the lowest failure rates but cost more and run louder
+- [Seagate Exos and WD Ultrastar](/hardware/best-hard-drives-nas/) enterprise drives show the lowest failure rates but cost more and run louder
 
 ## Mixing Drive Brands and Models
 
@@ -158,10 +158,10 @@ For non-critical storage (media library, cache), refurbished enterprise drives (
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [HDD vs SSD for Home Server](/hardware/hdd-vs-ssd-home-server)
-- [Best SSD for Home Server](/hardware/best-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Hard Drive Shucking Guide](/hardware/hard-drive-shucking)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [HDD vs SSD for Home Server](/hardware/hdd-vs-ssd-home-server/)
+- [Best SSD for Home Server](/hardware/best-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Hard Drive Shucking Guide](/hardware/hard-drive-shucking/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)

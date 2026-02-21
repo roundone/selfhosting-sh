@@ -156,10 +156,10 @@ Lazydocker, because it doesn't expose a web interface. Portainer's web UI on por
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge)
-- [Portainer vs Yacht](/compare/portainer-vs-yacht)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge/)
+- [Portainer vs Yacht](/compare/portainer-vs-yacht/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

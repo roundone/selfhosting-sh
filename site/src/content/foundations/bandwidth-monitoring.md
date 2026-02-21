@@ -21,9 +21,9 @@ Without monitoring, bandwidth issues are invisible until something breaks or you
 
 ## Prerequisites
 
-- A running Linux server ([Getting Started](/foundations/getting-started))
-- SSH access ([SSH Setup](/foundations/ssh-setup))
-- Docker installed for container-level monitoring ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A running Linux server ([Getting Started](/foundations/getting-started/))
+- SSH access ([SSH Setup](/foundations/ssh-setup/))
+- Docker installed for container-level monitoring ([Docker Compose Basics](/foundations/docker-compose-basics/))
 
 ## Quick Bandwidth Check Tools
 
@@ -183,7 +183,7 @@ Create Grafana dashboards showing:
 - Daily/weekly/monthly totals
 - Alerts when usage exceeds thresholds
 
-See [Monitoring Basics](/foundations/monitoring-basics) for setting up the Prometheus + Grafana stack.
+See [Monitoring Basics](/foundations/monitoring-basics/) for setting up the Prometheus + Grafana stack.
 
 ### NetFlow / sFlow Analysis
 
@@ -272,10 +272,10 @@ In Docker Swarm or when using overlay networks, traffic is encapsulated. The act
 
 ## Next Steps
 
-- Set up comprehensive monitoring with [Monitoring Basics](/foundations/monitoring-basics)
-- Configure your firewall to control traffic with [Firewall Setup](/foundations/firewall-ufw)
-- Understand network concepts at [Networking Concepts](/foundations/ports-explained)
-- Manage power costs with [Power Management](/foundations/power-management)
+- Set up comprehensive monitoring with [Monitoring Basics](/foundations/monitoring-basics/)
+- Configure your firewall to control traffic with [Firewall Setup](/foundations/firewall-ufw/)
+- Understand network concepts at [Networking Concepts](/foundations/ports-explained/)
+- Manage power costs with [Power Management](/foundations/power-management/)
 
 ## FAQ
 
@@ -297,9 +297,9 @@ Yes. `docker stats` shows cumulative network I/O per container. For historical d
 
 ## Related
 
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Firewall Setup (UFW)](/foundations/firewall-ufw)
-- [Ports Explained](/foundations/ports-explained)
-- [Docker Networking](/foundations/docker-networking)
-- [Power Management](/foundations/power-management)
-- [Home Network Setup](/foundations/home-network-setup)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Firewall Setup (UFW)](/foundations/firewall-ufw/)
+- [Ports Explained](/foundations/ports-explained/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Power Management](/foundations/power-management/)
+- [Home Network Setup](/foundations/home-network-setup/)

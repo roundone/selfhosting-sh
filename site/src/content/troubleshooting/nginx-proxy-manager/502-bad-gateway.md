@@ -92,6 +92,6 @@ In the NPM Proxy Host edit screen, check "Scheme":
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Docker Networking](/foundations/docker-networking/)

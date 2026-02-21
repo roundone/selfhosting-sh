@@ -89,7 +89,7 @@ Both are lightweight. Stash uses more resources when generating thumbnails and s
 
 **Stash is the more capable and actively maintained option.** Its metadata management, tagging system, and plugin ecosystem make it a powerful tool for organizing video content. The active community ensures ongoing improvements and support.
 
-**Dim serves a niche for simple, clean media browsing** but its slowing development makes it hard to recommend over alternatives. For basic movie/TV organization and streaming, [Jellyfin](/apps/jellyfin) is a better long-term choice with broader features and active development.
+**Dim serves a niche for simple, clean media browsing** but its slowing development makes it hard to recommend over alternatives. For basic movie/TV organization and streaming, [Jellyfin](/apps/jellyfin/) is a better long-term choice with broader features and active development.
 
 ## Frequently Asked Questions
 
@@ -100,12 +100,12 @@ No. Stash is a media organizer and metadata manager, not a streaming server. It 
 Development has slowed significantly. While the project isn't officially abandoned, releases are infrequent. For new deployments, consider alternatives with more active development.
 
 ### Can Stash handle movies and TV shows like Dim?
-Stash can organize any video content, but it's not specifically designed for the movie/TV library management workflow that Dim or [Jellyfin](/apps/jellyfin) provides. Stash excels at detailed per-scene tagging and metadata management.
+Stash can organize any video content, but it's not specifically designed for the movie/TV library management workflow that Dim or [Jellyfin](/apps/jellyfin/) provides. Stash excels at detailed per-scene tagging and metadata management.
 
 ## Related
 
-- [How to Self-Host Stash](/apps/stash)
-- [How to Self-Host Dim](/apps/dim)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Stash](/apps/stash/)
+- [How to Self-Host Dim](/apps/dim/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

@@ -21,16 +21,16 @@ affiliateDisclosure: false
 
 ## What Is Readarr?
 
-Readarr is an ebook and audiobook collection manager in the *arr stack family. Like [Sonarr](/apps/sonarr) for TV and [Radarr](/apps/radarr) for movies, Readarr monitors authors, tracks new releases, and automatically downloads books through Usenet or torrent clients. It uses GoodReads and OpenLibrary for metadata. [Official site](https://readarr.com/)
+Readarr is an ebook and audiobook collection manager in the *arr stack family. Like [Sonarr](/apps/sonarr/) for TV and [Radarr](/apps/radarr/) for movies, Readarr monitors authors, tracks new releases, and automatically downloads books through Usenet or torrent clients. It uses GoodReads and OpenLibrary for metadata. [Official site](https://readarr.com/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for books)
 - 512 MB of RAM minimum
-- A download client: [SABnzbd](/apps/sabnzbd) (Usenet) or [qBittorrent](/apps/qbittorrent) (torrents)
-- An indexer manager: [Prowlarr](/apps/prowlarr) (recommended)
+- A download client: [SABnzbd](/apps/sabnzbd/) (Usenet) or [qBittorrent](/apps/qbittorrent/) (torrents)
+- An indexer manager: [Prowlarr](/apps/prowlarr/) (recommended)
 
 ## Docker Compose Configuration
 
@@ -86,7 +86,7 @@ docker compose up -d
    - Add `/books` for ebooks
    - Optionally add a separate path for audiobooks
 4. Connect your download client: **Settings → Download Clients**
-5. Add indexers via [Prowlarr](/apps/prowlarr) or manually
+5. Add indexers via [Prowlarr](/apps/prowlarr/) or manually
 
 ## Configuration
 
@@ -126,7 +126,7 @@ Control what Readarr monitors:
 
 Readarr can send books directly to a Calibre library:
 
-1. Install Calibre Content Server or [Calibre-Web](/apps/calibre-web)
+1. Install Calibre Content Server or [Calibre-Web](/apps/calibre-web/)
 2. In Readarr: **Settings → Download Clients → Add → Calibre**
 3. Enter Calibre's host, port, and library path
 4. Readarr imports books into Calibre instead of moving files directly
@@ -152,7 +152,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** readarr
 - **Forward Port:** 8787
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -162,7 +162,7 @@ tar -czf readarr-backup-$(date +%Y%m%d).tar.gz ./config
 docker compose start readarr
 ```
 
-Readarr has built-in backups under **System → Backup**. [Backup Strategy](/foundations/backup-3-2-1-rule)
+Readarr has built-in backups under **System → Backup**. [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -212,10 +212,10 @@ Readarr. LazyLibrarian is older and has a less polished UI. Readarr's *arr stack
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

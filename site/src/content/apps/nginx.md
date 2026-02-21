@@ -21,12 +21,12 @@ affiliateDisclosure: false
 
 ## What Is Nginx?
 
-[Nginx](https://nginx.org) is the most widely used web server and reverse proxy on the internet. It handles HTTP, HTTPS, TCP, and UDP traffic with high performance and low memory usage. For self-hosting, Nginx serves as a reverse proxy to route traffic to your Docker containers, terminate SSL, serve static files, and load balance across multiple backends. Unlike [Nginx Proxy Manager](/apps/nginx-proxy-manager), plain Nginx has no web UI — you configure everything through text files.
+[Nginx](https://nginx.org) is the most widely used web server and reverse proxy on the internet. It handles HTTP, HTTPS, TCP, and UDP traffic with high performance and low memory usage. For self-hosting, Nginx serves as a reverse proxy to route traffic to your Docker containers, terminate SSL, serve static files, and load balance across multiple backends. Unlike [Nginx Proxy Manager](/apps/nginx-proxy-manager/), plain Nginx has no web UI — you configure everything through text files.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB of free RAM (Nginx is very lightweight)
 - Ports 80 and 443 available
 - A domain name (optional, required for SSL)
@@ -309,7 +309,7 @@ set_real_ip_from 172.16.0.0/12;  # Docker network range
 real_ip_header X-Forwarded-For;
 ```
 
-For simpler reverse proxy management, consider [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Caddy](/apps/caddy), or [Traefik](/apps/traefik).
+For simpler reverse proxy management, consider [Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Caddy](/apps/caddy/), or [Traefik](/apps/traefik/).
 
 ## Backup
 
@@ -320,7 +320,7 @@ Back up these files:
 - `certs/` — SSL certificates and private keys
 - `html/` — static content
 
-Nginx configuration is entirely file-based, so standard file backup works. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a general approach.
+Nginx configuration is entirely file-based, so standard file backup works. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a general approach.
 
 ## Troubleshooting
 
@@ -357,7 +357,7 @@ Nginx configuration is entirely file-based, so standard file backup works. See [
 
 ## Verdict
 
-Nginx is the most battle-tested reverse proxy available. It handles anything you throw at it with minimal resources. But for self-hosting, **it is not the best choice for most people.** Manual SSL setup, verbose config syntax, and no web UI make it harder to use than [Caddy](/apps/caddy) (simpler config, automatic HTTPS) or [Nginx Proxy Manager](/apps/nginx-proxy-manager) (web UI, automatic SSL).
+Nginx is the most battle-tested reverse proxy available. It handles anything you throw at it with minimal resources. But for self-hosting, **it is not the best choice for most people.** Manual SSL setup, verbose config syntax, and no web UI make it harder to use than [Caddy](/apps/caddy/) (simpler config, automatic HTTPS) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/) (web UI, automatic SSL).
 
 Use plain Nginx if you need maximum control, custom caching rules, rate limiting, or complex routing logic that other proxies cannot handle. For typical homelab reverse proxying, Caddy or NPM will get you there faster with less maintenance.
 
@@ -365,7 +365,7 @@ Use plain Nginx if you need maximum control, custom caching rules, rate limiting
 
 ### Should I use Nginx or Nginx Proxy Manager?
 
-If you want a web UI and automatic SSL management, use [Nginx Proxy Manager](/apps/nginx-proxy-manager). If you need full control over Nginx configuration (custom caching, rate limiting, complex routing), use plain Nginx. NPM is built on Nginx internally, so you're using the same engine either way.
+If you want a web UI and automatic SSL management, use [Nginx Proxy Manager](/apps/nginx-proxy-manager/). If you need full control over Nginx configuration (custom caching, rate limiting, complex routing), use plain Nginx. NPM is built on Nginx internally, so you're using the same engine either way.
 
 ### How do I reload config without restarting?
 
@@ -377,16 +377,16 @@ Both work identically. The Alpine variant (`nginx:1.28.2-alpine`) is smaller (~1
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Nginx vs Envoy](/compare/nginx-vs-envoy)
-- [Nginx vs HAProxy](/compare/nginx-vs-haproxy)
-- [Nginx vs Zoraxy](/compare/nginx-vs-zoraxy)
-- [Nginx Proxy Manager vs Nginx](/compare/nginx-proxy-manager-vs-nginx)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Nginx vs Envoy](/compare/nginx-vs-envoy/)
+- [Nginx vs HAProxy](/compare/nginx-vs-haproxy/)
+- [Nginx vs Zoraxy](/compare/nginx-vs-zoraxy/)
+- [Nginx Proxy Manager vs Nginx](/compare/nginx-proxy-manager-vs-nginx/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

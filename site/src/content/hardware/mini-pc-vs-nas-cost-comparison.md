@@ -21,7 +21,7 @@ affiliateDisclosure: true
 
 ### Approach A: Dedicated NAS
 
-Buy a pre-built NAS from [Synology](/hardware/synology-vs-truenas), [QNAP](/hardware/qnap-vs-synology), or similar. Plug in drives. Use the manufacturer's OS.
+Buy a pre-built NAS from [Synology](/hardware/synology-vs-truenas/), [QNAP](/hardware/qnap-vs-synology/), or similar. Plug in drives. Use the manufacturer's OS.
 
 **Strengths:** Plug-and-play, polished software, RAID management built in, compact form factor, long software support.
 
@@ -29,7 +29,7 @@ Buy a pre-built NAS from [Synology](/hardware/synology-vs-truenas), [QNAP](/hard
 
 ### Approach B: Mini PC + External Storage
 
-Buy a [mini PC](/hardware/best-mini-pc) and add storage via USB DAS enclosure, internal SATA bay, or NFS from another server. Install TrueNAS, Unraid, Proxmox, or just Docker on Ubuntu.
+Buy a [mini PC](/hardware/best-mini-pc/) and add storage via USB DAS enclosure, internal SATA bay, or NFS from another server. Install TrueNAS, Unraid, Proxmox, or just Docker on Ubuntu.
 
 **Strengths:** 2-5x more compute per dollar, hardware transcoding, full OS flexibility, GPU passthrough possible.
 
@@ -186,11 +186,11 @@ TerraMaster D5-300C (5-bay, USB 3.1, ~$150) or ORICO multi-bay enclosures are po
 
 ## Related
 
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc)
-- [Intel N305 Mini PC](/hardware/intel-n305-mini-pc)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [DAS vs NAS](/hardware/das-vs-nas)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc/)
+- [Intel N305 Mini PC](/hardware/intel-n305-mini-pc/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [DAS vs NAS](/hardware/das-vs-nas/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)

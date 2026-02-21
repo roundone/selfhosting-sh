@@ -107,10 +107,10 @@ For everyone else: start with Home Assistant.
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

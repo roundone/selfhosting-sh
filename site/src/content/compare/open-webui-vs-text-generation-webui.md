@@ -162,8 +162,8 @@ For most self-hosters: start with Open WebUI + Ollama. Move to Text Generation W
 
 ## Related
 
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
-- [Best Self-Hosted AI Tools](/best/ai-machine-learning)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
+- [Best Self-Hosted AI Tools](/best/ai-machine-learning/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

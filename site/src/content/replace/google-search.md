@@ -35,19 +35,19 @@ affiliateDisclosure: true
 
 ### SearXNG — Best Overall Replacement
 
-[SearXNG](/apps/searxng) is a metasearch engine that aggregates results from 70+ search engines (including Google, Bing, DuckDuckGo, and Brave). Your queries go from your browser to your SearXNG server, then from your server to the search engines — they see your server's IP, not yours. No tracking, no ads, no personalization.
+[SearXNG](/apps/searxng/) is a metasearch engine that aggregates results from 70+ search engines (including Google, Bing, DuckDuckGo, and Brave). Your queries go from your browser to your SearXNG server, then from your server to the search engines — they see your server's IP, not yours. No tracking, no ads, no personalization.
 
 **Why SearXNG over Google:** You still get Google-quality results (since Google is one of the source engines) but without any tracking. Plus you get results from multiple engines, giving you a broader view.
 
-[Read our SearXNG guide](/apps/searxng)
+[Read our SearXNG guide](/apps/searxng/)
 
 ### Whoogle — Best Google-Only Experience
 
-[Whoogle](/apps/whoogle) proxies Google specifically, stripping ads, tracking, and JavaScript. If you want pure Google results without the Google surveillance, Whoogle delivers exactly that — the same search page, minus the data collection.
+[Whoogle](/apps/whoogle/) proxies Google specifically, stripping ads, tracking, and JavaScript. If you want pure Google results without the Google surveillance, Whoogle delivers exactly that — the same search page, minus the data collection.
 
 **Caveat:** Google actively fights scrapers. Whoogle may encounter CAPTCHAs or blocks from datacenter IPs. SearXNG is more resilient since it distributes queries across many engines.
 
-[Read our Whoogle guide](/apps/whoogle)
+[Read our Whoogle guide](/apps/whoogle/)
 
 ### SearXNG + Whoogle Together
 
@@ -93,9 +93,9 @@ For most searches — finding information, research, technical queries — self-
 
 ## Related
 
-- [How to Self-Host SearXNG](/apps/searxng)
-- [How to Self-Host Whoogle](/apps/whoogle)
-- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
-- [SearXNG vs Google](/compare/searxng-vs-google)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host SearXNG](/apps/searxng/)
+- [How to Self-Host Whoogle](/apps/whoogle/)
+- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
+- [SearXNG vs Google](/compare/searxng-vs-google/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

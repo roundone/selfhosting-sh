@@ -119,6 +119,6 @@ command:
 
 ## Related
 
-- [How to Self-Host Traefik](/apps/traefik)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)

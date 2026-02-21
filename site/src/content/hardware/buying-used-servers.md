@@ -61,7 +61,7 @@ Avoid used rack servers (Dell PowerEdge, HP ProLiant) unless you have a server r
 
 **Why these?** T-series (low-power) CPUs, compact form factor, near-silent operation, enterprise reliability, and enough RAM for any Docker workload. The 7060 Micro is the sweet spot: widely available, well-priced, 8th gen i5 with QuickSync for Plex transcoding.
 
-Detailed guides: [Dell OptiPlex](/hardware/used-dell-optiplex) | [Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre)
+Detailed guides: [Dell OptiPlex](/hardware/used-dell-optiplex/) | [Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre/)
 
 ### For NAS + Docker (More Storage)
 
@@ -84,7 +84,7 @@ These have room for 3.5" drives and PCIe expansion (add an HBA for more SATA por
 
 Used workstations are the hidden gem for Proxmox. ECC RAM support, Xeon CPUs, PCIe slots for GPUs and 10GbE, and tower cases that are quieter than rack servers.
 
-See [Used Workstations Guide](/hardware/used-workstations-home-server).
+See [Used Workstations Guide](/hardware/used-workstations-home-server/).
 
 ### For Rack Servers (Homelabs Only)
 
@@ -102,7 +102,7 @@ Rack servers offer extreme compute density but come with serious trade-offs:
 
 Only buy a rack server if you have a basement, garage, or dedicated server room. They're impractical in a living space.
 
-See [Used Enterprise Servers](/hardware/used-enterprise-servers).
+See [Used Enterprise Servers](/hardware/used-enterprise-servers/).
 
 ## What to Check When Receiving Used Hardware
 
@@ -180,7 +180,7 @@ When you receive a used system, upgrade in this order:
 
 1. **RAM** — Most used systems ship with 8 GB. Upgrade to 16–32 GB DDR4 ($20–$50). This is the single biggest performance improvement.
 2. **Storage** — Add an NVMe SSD if the system has an M.2 slot. A 500 GB NVMe ($30) transforms boot and container performance.
-3. **Network** — If you need faster than 1 Gbps, add a USB 3.0 to 2.5GbE adapter ($15). See [2.5GbE Guide](/hardware/2.5gbe-networking).
+3. **Network** — If you need faster than 1 Gbps, add a USB 3.0 to 2.5GbE adapter ($15). See [2.5GbE Guide](/hardware/2.5gbe-networking/).
 4. **Cooling** — Replace thermal paste on the CPU ($5) if the system is 3+ years old. Arctic MX-6 or Noctua NT-H1 are reliable choices.
 
 ## FAQ
@@ -203,12 +203,12 @@ Desktop hardware (OptiPlex, ThinkCentre) is better for home self-hosting: quiet,
 
 ## Related
 
-- [Dell OptiPlex Home Server](/hardware/used-dell-optiplex)
-- [Lenovo ThinkCentre Home Server](/hardware/used-lenovo-thinkcentre)
-- [Used Workstations Guide](/hardware/used-workstations-home-server)
-- [Used Enterprise Servers](/hardware/used-enterprise-servers)
-- [Best Mini PCs](/hardware/best-mini-pc)
-- [Best CPUs for Home Server](/hardware/best-cpu-home-server)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best RAM for Home Server](/hardware/best-ram-home-server)
+- [Dell OptiPlex Home Server](/hardware/used-dell-optiplex/)
+- [Lenovo ThinkCentre Home Server](/hardware/used-lenovo-thinkcentre/)
+- [Used Workstations Guide](/hardware/used-workstations-home-server/)
+- [Used Enterprise Servers](/hardware/used-enterprise-servers/)
+- [Best Mini PCs](/hardware/best-mini-pc/)
+- [Best CPUs for Home Server](/hardware/best-cpu-home-server/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best RAM for Home Server](/hardware/best-ram-home-server/)

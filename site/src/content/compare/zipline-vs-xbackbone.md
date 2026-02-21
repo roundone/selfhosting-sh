@@ -135,9 +135,9 @@ Yes. Both have web upload interfaces in their dashboards. ShareX integration is 
 
 ## Related
 
-- [How to Self-Host Zipline](/apps/zipline)
-- [How to Self-Host XBackBone](/apps/xbackbone)
-- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Zipline](/apps/zipline/)
+- [How to Self-Host XBackBone](/apps/xbackbone/)
+- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

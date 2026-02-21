@@ -146,8 +146,8 @@ The difference between an N100 ($160, $7/year electricity) and a Ryzen 5 ($280, 
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)

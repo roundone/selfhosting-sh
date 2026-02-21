@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 128 MB of free RAM
 - A notification endpoint (Discord webhook, Telegram bot, Slack webhook, email server, or similar)
 
@@ -368,7 +368,7 @@ docker run --rm -v diun-data:/data -v $(pwd):/backup alpine \
 docker compose start diun
 ```
 
-If you lose the database, DIUN treats every image as new on the next scan and sends notifications for all of them. This is annoying but not destructive — no data is lost, just noise in your notifications. The config file (`diun.yml`) is the critical piece to back up. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+If you lose the database, DIUN treats every image as new on the next scan and sends notifications for all of them. This is annoying but not destructive — no data is lost, just noise in your notifications. The config file (`diun.yml`) is the critical piece to back up. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -452,7 +452,7 @@ There is little reason to, since Watchtower is now deprecated and its repository
 
 ### Does DIUN need a web UI?
 
-DIUN does not have a web UI. It is a background daemon that checks registries on a schedule and sends notifications. If you need a dashboard to see update status, consider pairing DIUN with [Portainer](/apps/portainer) or [Dockge](/apps/dockge) for container management, using DIUN purely for update alerts.
+DIUN does not have a web UI. It is a background daemon that checks registries on a schedule and sends notifications. If you need a dashboard to see update status, consider pairing DIUN with [Portainer](/apps/portainer/) or [Dockge](/apps/dockge/) for container management, using DIUN purely for update alerts.
 
 ### How do I watch images from private registries?
 
@@ -464,16 +464,16 @@ DIUN supports Docker, Podman (via the Docker-compatible socket), Swarm, Kubernet
 
 ## Verdict
 
-DIUN is the right tool for anyone running self-hosted services. With Watchtower now deprecated, DIUN is the recommended replacement for staying on top of container updates. In any environment where stability matters, you want to know about updates before they happen — not after your containers have already been replaced. DIUN gives you exactly that: awareness without risk. It is tiny, reliable, and supports every notification channel you could want. Pair it with [Dockge](/apps/dockge) or [Portainer](/apps/portainer) for container management, and you have a complete Docker workflow where nothing updates without your knowledge.
+DIUN is the right tool for anyone running self-hosted services. With Watchtower now deprecated, DIUN is the recommended replacement for staying on top of container updates. In any environment where stability matters, you want to know about updates before they happen — not after your containers have already been replaced. DIUN gives you exactly that: awareness without risk. It is tiny, reliable, and supports every notification channel you could want. Pair it with [Dockge](/apps/dockge/) or [Portainer](/apps/portainer/) for container management, and you have a complete Docker workflow where nothing updates without your knowledge.
 
 ## Related
 
-- [How to Self-Host Watchtower](/apps/watchtower)
-- [Watchtower vs DIUN](/compare/watchtower-vs-diun)
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Watchtower](/apps/watchtower/)
+- [Watchtower vs DIUN](/compare/watchtower-vs-diun/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

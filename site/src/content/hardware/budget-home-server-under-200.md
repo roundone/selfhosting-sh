@@ -21,7 +21,7 @@ affiliateDisclosure: true
 
 ### 1. Intel N100 Mini PC — Best Overall ($150-200)
 
-The [Intel N100](/hardware/intel-n100-mini-pc) has transformed budget self-hosting since its 2023 launch. A $180 mini PC now handles what required a $500 setup three years ago.
+The [Intel N100](/hardware/intel-n100-mini-pc/) has transformed budget self-hosting since its 2023 launch. A $180 mini PC now handles what required a $500 setup three years ago.
 
 **Recommended models:**
 - **Beelink Mini S12 Pro** (N100, 16GB DDR5, 500GB SSD): ~$180
@@ -39,7 +39,7 @@ The [Intel N100](/hardware/intel-n100-mini-pc) has transformed budget self-hosti
 | Form factor | ~5" x 5" x 2" |
 
 **What it runs (simultaneously):**
-- [Pi-hole](/apps/pi-hole) + [Nextcloud](/apps/nextcloud) + [Jellyfin](/apps/jellyfin) + [Vaultwarden](/apps/vaultwarden) + [Uptime Kuma](/apps/uptime-kuma) + 5-8 more containers
+- [Pi-hole](/apps/pi-hole/) + [Nextcloud](/apps/nextcloud/) + [Jellyfin](/apps/jellyfin/) + [Vaultwarden](/apps/vaultwarden/) + [Uptime Kuma](/apps/uptime-kuma/) + 5-8 more containers
 - 1-2 concurrent Plex/Jellyfin 4K transcodes with hardware acceleration
 - 15-20 Docker containers total
 
@@ -47,7 +47,7 @@ The [Intel N100](/hardware/intel-n100-mini-pc) has transformed budget self-hosti
 
 ### 2. Used Dell OptiPlex Micro ($80-150)
 
-[Used Dell OptiPlex Micro](/hardware/used-dell-optiplex) desktops are the hidden gem of budget self-hosting. An OptiPlex 3060/5060 Micro with an i5-8500T costs $80-120 on eBay.
+[Used Dell OptiPlex Micro](/hardware/used-dell-optiplex/) desktops are the hidden gem of budget self-hosting. An OptiPlex 3060/5060 Micro with an i5-8500T costs $80-120 on eBay.
 
 **What you get for $100:**
 - Intel i5-8500T (6C/6T, 3.5 GHz boost)
@@ -73,7 +73,7 @@ The [Intel N100](/hardware/intel-n100-mini-pc) has transformed budget self-hosti
 
 ### 3. Used Lenovo ThinkCentre Tiny ($80-140)
 
-The [Lenovo ThinkCentre M720q/M920q](/hardware/used-lenovo-thinkcentre) is the equivalent of the OptiPlex in Lenovo's lineup. Similar specs, similar pricing.
+The [Lenovo ThinkCentre M720q/M920q](/hardware/used-lenovo-thinkcentre/) is the equivalent of the OptiPlex in Lenovo's lineup. Similar specs, similar pricing.
 
 | Spec | Value |
 |------|-------|
@@ -87,7 +87,7 @@ Functionally identical to the OptiPlex Micro. Buy whichever is cheaper in your m
 
 ### 4. Raspberry Pi 5 ($80-100)
 
-The [Raspberry Pi 5](/hardware/raspberry-pi-home-server) is the entry-level self-hosting platform. At $80 for the 8GB model (plus $15 for a power supply and $15 for a microSD card), it's the cheapest way to start.
+The [Raspberry Pi 5](/hardware/raspberry-pi-home-server/) is the entry-level self-hosting platform. At $80 for the 8GB model (plus $15 for a power supply and $15 for a microSD card), it's the cheapest way to start.
 
 | Spec | Value |
 |------|-------|
@@ -103,13 +103,13 @@ The [Raspberry Pi 5](/hardware/raspberry-pi-home-server) is the entry-level self
 
 **Cons:** ARM architecture (some Docker images are x86 only). No hardware transcoding. microSD storage is slow and unreliable for 24/7 use (add NVMe HAT). Limited to 8GB RAM.
 
-**Best for:** Pi-hole, [AdGuard Home](/apps/adguard-home), [Home Assistant](/apps/home-assistant), lightweight containers. Not for media transcoding.
+**Best for:** Pi-hole, [AdGuard Home](/apps/adguard-home/), [Home Assistant](/apps/home-assistant/), lightweight containers. Not for media transcoding.
 
 **Annual electricity cost:** $3-5
 
 ### 5. Zimaboard 832 ($200)
 
-The [Zimaboard 832](/hardware/zimaboard-setup-guide) is a unique option: an x86 single-board server with built-in SATA ports, dual GbE, and PCIe expansion. CasaOS pre-installed.
+The [Zimaboard 832](/hardware/zimaboard-setup-guide/) is a unique option: an x86 single-board server with built-in SATA ports, dual GbE, and PCIe expansion. CasaOS pre-installed.
 
 | Spec | Value |
 |------|-------|
@@ -143,7 +143,7 @@ The [Zimaboard 832](/hardware/zimaboard-setup-guide) is a unique option: an x86 
 
 ## What About Used Enterprise Servers?
 
-You can find used [Dell PowerEdge](/hardware/used-enterprise-servers) or [HP ProLiant](/hardware/used-hp-proliant) servers under $200. A DL360 Gen9 with a Xeon E5-2620 v3 and 32GB RAM goes for $100-150 on eBay.
+You can find used [Dell PowerEdge](/hardware/used-enterprise-servers/) or [HP ProLiant](/hardware/used-hp-proliant/) servers under $200. A DL360 Gen9 with a Xeon E5-2620 v3 and 32GB RAM goes for $100-150 on eBay.
 
 **Why we don't recommend them for beginners:**
 - 80-150W idle power ($84-158/year — more than the hardware cost)
@@ -183,12 +183,12 @@ The used enterprise server is the most expensive option over 3 years despite bei
 
 Regardless of which hardware you choose:
 
-1. **Install an OS.** Ubuntu Server 24.04 LTS or Debian 12 are the standards. See our [Linux Basics](/foundations/linux-basics-self-hosting) guide.
-2. **Install Docker.** See [Docker Compose Basics](/foundations/docker-compose-basics).
-3. **Set up your first app.** [Pi-hole](/apps/pi-hole) is the classic first self-hosted service — immediate value, minimal resources.
-4. **Set up remote access.** [Tailscale](/apps/headscale) or [Cloudflare Tunnel](/apps/cloudflare-tunnel) — access your server from anywhere.
-5. **Set up backups.** [Duplicati](/apps/duplicati) or [Restic](/apps/restic) to an external drive or cloud storage.
-6. **Add more apps.** [Nextcloud](/apps/nextcloud), [Jellyfin](/apps/jellyfin), [Vaultwarden](/apps/vaultwarden) — see our [Getting Started](/foundations/getting-started) guide.
+1. **Install an OS.** Ubuntu Server 24.04 LTS or Debian 12 are the standards. See our [Linux Basics](/foundations/linux-basics-self-hosting/) guide.
+2. **Install Docker.** See [Docker Compose Basics](/foundations/docker-compose-basics/).
+3. **Set up your first app.** [Pi-hole](/apps/pi-hole/) is the classic first self-hosted service — immediate value, minimal resources.
+4. **Set up remote access.** [Tailscale](/apps/headscale/) or [Cloudflare Tunnel](/apps/cloudflare-tunnel/) — access your server from anywhere.
+5. **Set up backups.** [Duplicati](/apps/duplicati/) or [Restic](/apps/restic/) to an external drive or cloud storage.
+6. **Add more apps.** [Nextcloud](/apps/nextcloud/), [Jellyfin](/apps/jellyfin/), [Vaultwarden](/apps/vaultwarden/) — see our [Getting Started](/foundations/getting-started/) guide.
 
 ## FAQ
 
@@ -199,7 +199,7 @@ Yes. An N100 mini PC at $180 runs 15-20 Docker containers, handles Plex/Jellyfin
 Both are valid. New N100 mini PCs ($150-200) offer the best efficiency and warranty. Used OptiPlex/ThinkCentre ($80-150) offer more cores and RAM per dollar with older QuickSync. For absolute beginners, buy new for the warranty and simplicity.
 
 ### Can I upgrade later?
-Yes. Start with a mini PC. If you outgrow it, add a [NAS](/hardware/best-nas) for storage and keep the mini PC for compute. Or upgrade to an [N305](/hardware/intel-n305-mini-pc) or [used enterprise server](/hardware/used-hp-proliant) when your workload demands it. Nothing is wasted — the original mini PC becomes a backup server, a dedicated VPN gateway, or a gift for a friend.
+Yes. Start with a mini PC. If you outgrow it, add a [NAS](/hardware/best-nas/) for storage and keep the mini PC for compute. Or upgrade to an [N305](/hardware/intel-n305-mini-pc/) or [used enterprise server](/hardware/used-hp-proliant/) when your workload demands it. Nothing is wasted — the original mini PC becomes a backup server, a dedicated VPN gateway, or a gift for a friend.
 
 ### Do I need a dedicated server, or can I use an old laptop?
 An old laptop works if it has an Intel CPU from 2016 or newer (6th gen+, for QuickSync). Laptops have built-in UPS (battery), built-in display for debugging, and low power consumption. The downsides: thermal throttling under sustained loads, limited RAM expansion, and no second NIC.
@@ -209,12 +209,12 @@ A $5/month VPS (Hetzner, DigitalOcean) is great for lightweight services (Pi-hol
 
 ## Related
 
-- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc)
-- [Used Dell OptiPlex Home Server](/hardware/used-dell-optiplex)
-- [Used Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre)
-- [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server)
-- [Zimaboard Setup Guide](/hardware/zimaboard-setup-guide)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Beginner Hardware Bundle](/hardware/beginner-hardware-bundle)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc/)
+- [Used Dell OptiPlex Home Server](/hardware/used-dell-optiplex/)
+- [Used Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre/)
+- [Raspberry Pi Home Server](/hardware/raspberry-pi-home-server/)
+- [Zimaboard Setup Guide](/hardware/zimaboard-setup-guide/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Beginner Hardware Bundle](/hardware/beginner-hardware-bundle/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

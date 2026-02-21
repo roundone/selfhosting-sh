@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of RAM minimum
 - Storage for downloads
 - A VPN (strongly recommended for privacy)
@@ -112,7 +112,7 @@ Under **Tools > Options > Connection**:
 
 ### *arr Stack Integration
 
-qBittorrent is the preferred download client for [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and [Lidarr](/apps/lidarr). In each *arr app:
+qBittorrent is the preferred download client for [Sonarr](/apps/sonarr/), [Radarr](/apps/radarr/), and [Lidarr](/apps/lidarr/). In each *arr app:
 
 1. Go to **Settings > Download Clients > Add > qBittorrent**
 2. Set:
@@ -180,13 +180,13 @@ In qBittorrent web UI, go to **Tools > Options > Advanced > Network interface** 
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Forward your domain to `http://your-server-ip:8080`
 2. In qBittorrent, go to **Tools > Options > Web UI** and add your domain to **Optional: Trusted reverse proxy headers**
 3. Set `Host header validation` to your domain
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -201,7 +201,7 @@ docker run --rm \
 docker compose start qbittorrent
 ```
 
-Your downloaded files are in `/downloads` — back those up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Your downloaded files are in `/downloads` — back those up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -254,7 +254,7 @@ qBittorrent itself is safe — it's open source and widely audited. The safety c
 
 ### qBittorrent vs Transmission — which should I use?
 
-qBittorrent has a more feature-rich web UI, better *arr stack integration, and more configuration options. [Transmission](/apps/transmission) is simpler and lighter on resources. For most self-hosters using the *arr stack, qBittorrent is the better choice.
+qBittorrent has a more feature-rich web UI, better *arr stack integration, and more configuration options. [Transmission](/apps/transmission/) is simpler and lighter on resources. For most self-hosters using the *arr stack, qBittorrent is the better choice.
 
 ### Do I need port forwarding?
 
@@ -266,12 +266,12 @@ qBittorrent is the go-to torrent client for self-hosters. The web UI is clean an
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [qBittorrent vs Transmission](/compare/qbittorrent-vs-transmission)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [VPN & Remote Access](/best/vpn)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [qBittorrent vs Transmission](/compare/qbittorrent-vs-transmission/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [VPN & Remote Access](/best/vpn/)
+- [Docker Networking](/foundations/docker-networking/)

@@ -165,7 +165,7 @@ Winner: **Envoy** for enterprise. **Zoraxy** for self-hosting.
 
 **Envoy solves problems self-hosters do not have.** Service mesh data planes, xDS control plane integration, gRPC transcoding, Maglev load balancing -- these are enterprise infrastructure concerns. Running Envoy for a homelab is like using a CNC machine to cut a sandwich. It will work, but you will spend most of your time on configuration instead of results.
 
-If you want a GUI proxy for your homelab, choose [Zoraxy](/apps/zoraxy) or [Nginx Proxy Manager](/apps/nginx-proxy-manager). If you are building cloud-native infrastructure with microservices, [Envoy](/apps/envoy) is the industry standard.
+If you want a GUI proxy for your homelab, choose [Zoraxy](/apps/zoraxy/) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/). If you are building cloud-native infrastructure with microservices, [Envoy](/apps/envoy/) is the industry standard.
 
 ## FAQ
 
@@ -183,10 +183,10 @@ There is no automated migration. Envoy's YAML-based route definitions would need
 
 ## Related
 
-- [How to Self-Host Envoy Proxy](/apps/envoy)
-- [How to Self-Host Zoraxy](/apps/zoraxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Envoy Proxy](/apps/envoy/)
+- [How to Self-Host Zoraxy](/apps/zoraxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -35,11 +35,11 @@ Don't overthink hardware for your first server. The best hardware is the hardwar
 **Power draw:** 10–15W idle. ~$13–16/year electricity.
 
 **What you can run:**
-- [Pi-hole](/apps/pi-hole) (network-wide ad blocking)
-- [Vaultwarden](/apps/vaultwarden) (password manager)
-- [Uptime Kuma](/apps/uptime-kuma) (monitoring)
-- [FreshRSS](/apps/freshrss) (RSS reader)
-- [Homarr](/apps/homarr) (dashboard)
+- [Pi-hole](/apps/pi-hole/) (network-wide ad blocking)
+- [Vaultwarden](/apps/vaultwarden/) (password manager)
+- [Uptime Kuma](/apps/uptime-kuma/) (monitoring)
+- [FreshRSS](/apps/freshrss/) (RSS reader)
+- [Homarr](/apps/homarr/) (dashboard)
 - 5–10 additional lightweight containers
 
 **What you can't run:** Heavy Plex transcoding, large Nextcloud instances, Proxmox with VMs. The i5-8500T handles light transcoding (1–2 streams with QuickSync).
@@ -58,12 +58,12 @@ Don't overthink hardware for your first server. The best hardware is the hardwar
 
 **What you can run:**
 - Everything from Build 1, plus:
-- [Nextcloud](/apps/nextcloud) (file sync, replaces Dropbox/Google Drive)
-- [Jellyfin](/apps/jellyfin) (media server with hardware transcoding)
-- [Immich](/apps/immich) (photo management, replaces Google Photos)
-- [Home Assistant](/apps/home-assistant) (home automation)
-- [Navidrome](/apps/navidrome) (music server)
-- [BookStack](/apps/bookstack) (wiki/notes)
+- [Nextcloud](/apps/nextcloud/) (file sync, replaces Dropbox/Google Drive)
+- [Jellyfin](/apps/jellyfin/) (media server with hardware transcoding)
+- [Immich](/apps/immich/) (photo management, replaces Google Photos)
+- [Home Assistant](/apps/home-assistant/) (home automation)
+- [Navidrome](/apps/navidrome/) (music server)
+- [BookStack](/apps/bookstack/) (wiki/notes)
 - 15–20 containers total
 
 **What you can't run:** Multiple 4K transcode streams simultaneously, VMs (no Proxmox), large media library (500 GB fills fast — add external storage).
@@ -89,9 +89,9 @@ Don't overthink hardware for your first server. The best hardware is the hardwar
 - Everything from Builds 1 and 2, plus:
 - 16 TB storage for media, photos, documents
 - Heavy Plex/Jellyfin transcoding (i5-11500 QuickSync handles 4K)
-- [Paperless-ngx](/apps/paperless-ngx) (document management)
-- [Gitea](/apps/gitea) (code hosting)
-- [n8n](/apps/n8n) (automation)
+- [Paperless-ngx](/apps/paperless-ngx/) (document management)
+- [Gitea](/apps/gitea/) (code hosting)
+- [n8n](/apps/n8n/) (automation)
 - 30+ containers
 - Could run Proxmox with 2–3 VMs
 
@@ -102,26 +102,26 @@ Regardless of which build you choose, install these in order:
 ### Day 1: Foundation
 
 1. **Ubuntu Server 24.04 LTS** — [Download](https://ubuntu.com/download/server), flash to USB with [Rufus](https://rufus.ie) or [Balena Etcher](https://etcher.balena.io), install.
-2. **Docker + Docker Compose** — [Installation guide](/foundations/docker-compose-basics)
-3. **[Portainer](/apps/portainer) or [Dockge](/apps/dockge)** — Visual Docker management
+2. **Docker + Docker Compose** — [Installation guide](/foundations/docker-compose-basics/)
+3. **[Portainer](/apps/portainer/) or [Dockge](/apps/dockge/)** — Visual Docker management
 
 ### Day 2: Essential Services
 
-4. **[Pi-hole](/apps/pi-hole)** — Block ads for your whole network
-5. **[Vaultwarden](/apps/vaultwarden)** — Replace LastPass/1Password
-6. **[Uptime Kuma](/apps/uptime-kuma)** — Monitor your services
+4. **[Pi-hole](/apps/pi-hole/)** — Block ads for your whole network
+5. **[Vaultwarden](/apps/vaultwarden/)** — Replace LastPass/1Password
+6. **[Uptime Kuma](/apps/uptime-kuma/)** — Monitor your services
 
 ### Week 1: Productivity
 
-7. **[Nextcloud](/apps/nextcloud)** — Replace Google Drive/Dropbox
-8. **[Immich](/apps/immich)** — Replace Google Photos (if you have photos to back up)
-9. **[FreshRSS](/apps/freshrss)** — Replace Feedly/news apps
+7. **[Nextcloud](/apps/nextcloud/)** — Replace Google Drive/Dropbox
+8. **[Immich](/apps/immich/)** — Replace Google Photos (if you have photos to back up)
+9. **[FreshRSS](/apps/freshrss/)** — Replace Feedly/news apps
 
 ### Week 2: Media and More
 
-10. **[Jellyfin](/apps/jellyfin)** — Media server for your movie/music collection
-11. **[Home Assistant](/apps/home-assistant)** — If you have smart home devices
-12. **[Nginx Proxy Manager](/apps/nginx-proxy-manager)** — Reverse proxy for remote access
+10. **[Jellyfin](/apps/jellyfin/)** — Media server for your movie/music collection
+11. **[Home Assistant](/apps/home-assistant/)** — If you have smart home devices
+12. **[Nginx Proxy Manager](/apps/nginx-proxy-manager/)** — Reverse proxy for remote access
 
 ## Hardware Shopping Checklist
 
@@ -150,7 +150,7 @@ Wi-Fi adds latency, drops connections, and reduces throughput. Run an Ethernet c
 
 ### Skipping Backups
 
-Your server WILL fail eventually. Set up [automated backups](/foundations/backup-3-2-1-rule) from day 1:
+Your server WILL fail eventually. Set up [automated backups](/foundations/backup-3-2-1-rule/) from day 1:
 - **Restic or BorgBackup** to an external USB drive
 - **Weekly** at minimum, daily is better
 - **Test your restore process** before you need it
@@ -161,7 +161,7 @@ SD cards are not designed for server workloads. They wear out quickly under the 
 
 ### Not Securing SSH
 
-Change the default SSH port, disable password login (use keys instead), and install fail2ban. Your server is on your home network — it's not exposed to the internet unless you choose to expose it — but good security habits start on day 1. See our [Security Basics guide](/foundations/security-hardening).
+Change the default SSH port, disable password login (use keys instead), and install fail2ban. Your server is on your home network — it's not exposed to the internet unless you choose to expose it — but good security habits start on day 1. See our [Security Basics guide](/foundations/security-hardening/).
 
 ## Upgrade Path
 
@@ -187,7 +187,7 @@ Not to start. Access your server by IP address on your local network (e.g., `htt
 
 ### Should I run Windows or Linux?
 
-Linux. Specifically Ubuntu Server 24.04 LTS. Docker runs natively on Linux with zero overhead. Docker on Windows runs in a Linux VM, which adds complexity and uses more resources. If you've never used Linux, now is a great time to learn — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting).
+Linux. Specifically Ubuntu Server 24.04 LTS. Docker runs natively on Linux with zero overhead. Docker on Windows runs in a Linux VM, which adds complexity and uses more resources. If you've never used Linux, now is a great time to learn — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/).
 
 ### How much internet speed do I need?
 
@@ -199,10 +199,10 @@ Yes. Modern hardware is designed for continuous operation. An efficient mini PC 
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)

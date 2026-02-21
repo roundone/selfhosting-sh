@@ -42,7 +42,7 @@ Joplin's notebook-and-note structure is the closest match to OneNote's organizat
 
 **Best for:** OneNote users who want a similar organizational structure with self-hosted sync.
 
-[Read our full guide: [How to Self-Host Joplin Server](/apps/joplin-server)]
+[Read our full guide: [How to Self-Host Joplin Server](/apps/joplin-server/)]
 
 ### Trilium Notes — Best for Knowledge Bases
 
@@ -50,7 +50,7 @@ Trilium offers deep hierarchical organization that goes beyond OneNote's noteboo
 
 **Best for:** Power users building interconnected knowledge bases.
 
-[Read our full guide: [How to Self-Host Trilium Notes](/apps/trilium)]
+[Read our full guide: [How to Self-Host Trilium Notes](/apps/trilium/)]
 
 ### BookStack — Best for Shared Notes
 
@@ -58,7 +58,7 @@ If you use OneNote for team notebooks, BookStack's structured hierarchy (Shelves
 
 **Best for:** Teams replacing shared OneNote notebooks.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### SiYuan — Best for Visual Organization
 
@@ -66,7 +66,7 @@ SiYuan's block-based editor with bidirectional links and graph view provides a m
 
 **Best for:** Visual thinkers who want a WYSIWYG editor with modern knowledge management features.
 
-[Read our full guide: [How to Self-Host SiYuan](/apps/siyuan)]
+[Read our full guide: [How to Self-Host SiYuan](/apps/siyuan/)]
 
 ## Migration Guide
 
@@ -116,12 +116,12 @@ SiYuan's block-based editor with bidirectional links and graph view provides a m
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [Replace Evernote](/replace/evernote)
-- [Replace Notion](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [Replace Evernote](/replace/evernote/)
+- [Replace Notion](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

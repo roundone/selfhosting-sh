@@ -15,17 +15,17 @@ affiliateDisclosure: false
 
 ## What Is Network File Sharing?
 
-Network file sharing lets machines on your network read and write files stored on a central server. For a self-hosted server, this is foundational — you need it for media libraries, shared documents, backups, and feeding data into apps like [Jellyfin](/apps/jellyfin) or [Nextcloud](/apps/nextcloud). Four protocols dominate: SMB, NFS, SFTP, and WebDAV. Each has different strengths. Picking the right one for your network file sharing self-hosted server setup avoids performance headaches and permission nightmares down the road.
+Network file sharing lets machines on your network read and write files stored on a central server. For a self-hosted server, this is foundational — you need it for media libraries, shared documents, backups, and feeding data into apps like [Jellyfin](/apps/jellyfin/) or [Nextcloud](/apps/nextcloud/). Four protocols dominate: SMB, NFS, SFTP, and WebDAV. Each has different strengths. Picking the right one for your network file sharing self-hosted server setup avoids performance headaches and permission nightmares down the road.
 
 This guide covers all four protocols, walks through full server-side configuration, and shows you how to mount shares on Linux, Windows, and macOS clients.
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- Basic Linux command-line knowledge — see [Linux Basics](/foundations/linux-basics-self-hosting)
-- Understanding of [Linux file permissions](/foundations/linux-permissions)
-- [Docker and Docker Compose](/foundations/docker-compose-basics) installed (for SFTP and WebDAV sections)
-- A [firewall configured](/foundations/firewall-ufw) on your server
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Basic Linux command-line knowledge — see [Linux Basics](/foundations/linux-basics-self-hosting/)
+- Understanding of [Linux file permissions](/foundations/linux-permissions/)
+- [Docker and Docker Compose](/foundations/docker-compose-basics/) installed (for SFTP and WebDAV sections)
+- A [firewall configured](/foundations/firewall-ufw/) on your server
 - At least one client machine on the same network
 
 ## Protocols Compared
@@ -141,7 +141,7 @@ sudo chown -R shareuser:shareuser /srv/share
 sudo chmod -R 2775 /srv/share
 ```
 
-The `2775` permission sets the setgid bit, ensuring new files inherit the group ownership. See [Linux Permissions](/foundations/linux-permissions) for a full explanation of permission bits.
+The `2775` permission sets the setgid bit, ensuring new files inherit the group ownership. See [Linux Permissions](/foundations/linux-permissions/) for a full explanation of permission bits.
 
 ### Add a Samba User
 
@@ -229,7 +229,7 @@ sudo systemctl enable smbd nmbd
 
 ### Open Firewall Ports
 
-If you use UFW (see [Firewall Setup](/foundations/firewall-ufw)):
+If you use UFW (see [Firewall Setup](/foundations/firewall-ufw/)):
 
 ```bash
 sudo ufw allow from 192.168.1.0/24 to any app Samba
@@ -310,7 +310,7 @@ sudo ufw allow from 192.168.1.0/24 to any port 2049 proto tcp
 sudo ufw allow from 192.168.1.0/24 to any port 2049 proto udp
 ```
 
-Like SMB, never expose NFS to the internet. Keep it on your LAN or behind a VPN like [WireGuard](/foundations/wireguard-setup) or [Tailscale](/foundations/tailscale-setup).
+Like SMB, never expose NFS to the internet. Keep it on your LAN or behind a VPN like [WireGuard](/foundations/wireguard-setup/) or [Tailscale](/foundations/tailscale-setup/).
 
 ## SFTP with Docker
 
@@ -389,7 +389,7 @@ For key-based authentication (recommended over passwords), mount your public key
       - ./sftpuser_authorized_keys:/home/sftpuser/.ssh/keys/id_ed25519.pub:ro
 ```
 
-Users are chrooted to their home directory by default — they cannot browse outside `/home/sftpuser/`. See [Security Hardening](/foundations/security-hardening) for more on chroot jails.
+Users are chrooted to their home directory by default — they cannot browse outside `/home/sftpuser/`. See [Security Hardening](/foundations/security-hardening/) for more on chroot jails.
 
 ### Firewall Configuration
 
@@ -457,7 +457,7 @@ curl -u webdavuser:YourPassword -T /tmp/testfile.txt http://localhost:8080/testf
 curl -u webdavuser:YourPassword -X PROPFIND http://localhost:8080/
 ```
 
-**Important:** Run WebDAV behind a [reverse proxy](/foundations/reverse-proxy-explained) with TLS in production. Basic auth over plain HTTP sends credentials in clear text. Use [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup), [Caddy](/foundations/caddy-setup), or [Traefik](/foundations/traefik-setup) to terminate TLS.
+**Important:** Run WebDAV behind a [reverse proxy](/foundations/reverse-proxy-explained/) with TLS in production. Basic auth over plain HTTP sends credentials in clear text. Use [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/), [Caddy](/foundations/caddy-setup/), or [Traefik](/foundations/traefik-setup/) to terminate TLS.
 
 ## Mounting Network Shares on Client Machines
 
@@ -595,7 +595,7 @@ NFS and SMB handle this reasonably well. SFTP suffers because each file requires
 
 ### 1. Exposing SMB or NFS to the Internet
 
-SMB (port 445) and NFS (port 2049) are designed for trusted local networks. Exposing them to the internet is a critical security risk. Use a VPN for remote access, or use SFTP/WebDAV over HTTPS instead. See [Security Hardening](/foundations/security-hardening).
+SMB (port 445) and NFS (port 2049) are designed for trusted local networks. Exposing them to the internet is a critical security risk. Use a VPN for remote access, or use SFTP/WebDAV over HTTPS instead. See [Security Hardening](/foundations/security-hardening/).
 
 ### 2. UID/GID Mismatches with NFS
 
@@ -637,7 +637,7 @@ volumes:
       device: ":/srv/nfs/media"
 ```
 
-This mounts the NFS share directly into the container without mounting it on the host first. See [Docker Volumes](/foundations/docker-volumes) for more volume driver options.
+This mounts the NFS share directly into the container without mounting it on the host first. See [Docker Volumes](/foundations/docker-volumes/) for more volume driver options.
 
 ### Is SFTP the same as FTPS?
 
@@ -645,20 +645,20 @@ No. SFTP runs over SSH (port 22). FTPS is FTP with TLS bolted on (ports 990, 989
 
 ### How do I share files between Docker containers?
 
-You do not need a network file sharing protocol for this. Use Docker named volumes or bind mounts shared between containers in the same Compose stack. See [Docker Volumes](/foundations/docker-volumes) and [Docker Compose Basics](/foundations/docker-compose-basics).
+You do not need a network file sharing protocol for this. Use Docker named volumes or bind mounts shared between containers in the same Compose stack. See [Docker Volumes](/foundations/docker-volumes/) and [Docker Compose Basics](/foundations/docker-compose-basics/).
 
 ### Do I need a NAS for network file sharing?
 
-No. Any Linux server can serve files over SMB, NFS, SFTP, or WebDAV. A dedicated NAS (see [NAS Basics](/foundations/nas-basics)) adds hardware RAID, a management UI, and sometimes ECC RAM — useful for large storage pools but not required. A Raspberry Pi with an external drive can serve files to a small network. See [Storage Planning](/foundations/storage-planning) for sizing guidance.
+No. Any Linux server can serve files over SMB, NFS, SFTP, or WebDAV. A dedicated NAS (see [NAS Basics](/foundations/nas-basics/)) adds hardware RAID, a management UI, and sometimes ECC RAM — useful for large storage pools but not required. A Raspberry Pi with an external drive can serve files to a small network. See [Storage Planning](/foundations/storage-planning/) for sizing guidance.
 
 ## Related
 
-- [Linux Permissions](/foundations/linux-permissions) — understand ownership, chmod, and setgid
-- [Docker Compose Basics](/foundations/docker-compose-basics) — the foundation for Docker-based SFTP and WebDAV
-- [NAS Basics](/foundations/nas-basics) — dedicated storage hardware for file sharing at scale
-- [Storage Planning](/foundations/storage-planning) — sizing drives and planning capacity
-- [Security Hardening](/foundations/security-hardening) — lock down your server before exposing services
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — restrict access to file sharing ports
-- [Docker Volumes](/foundations/docker-volumes) — volume management for containerized services
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained) — put WebDAV behind TLS
-- [Getting Started with Self-Hosting](/foundations/getting-started) — the beginner's starting point
+- [Linux Permissions](/foundations/linux-permissions/) — understand ownership, chmod, and setgid
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — the foundation for Docker-based SFTP and WebDAV
+- [NAS Basics](/foundations/nas-basics/) — dedicated storage hardware for file sharing at scale
+- [Storage Planning](/foundations/storage-planning/) — sizing drives and planning capacity
+- [Security Hardening](/foundations/security-hardening/) — lock down your server before exposing services
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — restrict access to file sharing ports
+- [Docker Volumes](/foundations/docker-volumes/) — volume management for containerized services
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/) — put WebDAV behind TLS
+- [Getting Started with Self-Hosting](/foundations/getting-started/) — the beginner's starting point

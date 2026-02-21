@@ -20,12 +20,12 @@ affiliateDisclosure: false
 
 ## What Is Speedtest Tracker?
 
-Speedtest Tracker runs automated internet speed tests on a schedule and displays results in a dashboard with historical charts. Unlike [LibreSpeed](/apps/librespeed) (which is a manual test), Speedtest Tracker runs tests unattended every hour (or whatever interval you set) and tracks download speed, upload speed, and ping over days, weeks, and months. It uses Ookla's Speedtest CLI under the hood. [Official site](https://docs.speedtest-tracker.dev/)
+Speedtest Tracker runs automated internet speed tests on a schedule and displays results in a dashboard with historical charts. Unlike [LibreSpeed](/apps/librespeed/) (which is a manual test), Speedtest Tracker runs tests unattended every hour (or whatever interval you set) and tracks download speed, upload speed, and ping over days, weeks, and months. It uses Ookla's Speedtest CLI under the hood. [Official site](https://docs.speedtest-tracker.dev/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM minimum
 
@@ -163,7 +163,7 @@ volumes:
 
 ### Grafana Integration
 
-Export Speedtest Tracker data to [Grafana](/apps/grafana) for custom dashboards:
+Export Speedtest Tracker data to [Grafana](/apps/grafana/) for custom dashboards:
 
 1. Use the Speedtest Tracker API: `http://speedtest-tracker:80/api/v1/results`
 2. Create a JSON data source in Grafana pointing to this endpoint
@@ -177,7 +177,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** speedtest-tracker
 - **Forward Port:** 80
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -185,7 +185,7 @@ Example Nginx Proxy Manager configuration:
 tar -czf speedtest-tracker-backup-$(date +%Y%m%d).tar.gz ./config
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -217,7 +217,7 @@ tar -czf speedtest-tracker-backup-$(date +%Y%m%d).tar.gz ./config
 
 ## Verdict
 
-Speedtest Tracker is the best way to monitor your internet connection quality over time. It answers "is my ISP delivering the speed I'm paying for?" with hard data. The dashboard makes it easy to spot patterns — slowdowns at peak hours, degradation over weeks, or sudden drops. Pair it with [LibreSpeed](/apps/librespeed) for manual LAN speed tests.
+Speedtest Tracker is the best way to monitor your internet connection quality over time. It answers "is my ISP delivering the speed I'm paying for?" with hard data. The dashboard makes it easy to spot patterns — slowdowns at peak hours, degradation over weeks, or sudden drops. Pair it with [LibreSpeed](/apps/librespeed/) for manual LAN speed tests.
 
 ## FAQ
 
@@ -235,10 +235,10 @@ Speedtest Tracker is built around Ookla's CLI. For a fully self-hosted alternati
 
 ## Related
 
-- [How to Self-Host LibreSpeed](/apps/librespeed)
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Home Network Setup](/foundations/home-network-setup)
+- [How to Self-Host LibreSpeed](/apps/librespeed/)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Home Network Setup](/foundations/home-network-setup/)

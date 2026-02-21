@@ -73,7 +73,7 @@ Different tools for different philosophies. Caddy is a dedicated reverse proxy w
 
 **Caddy + Portainer/Dockge for modular setups. Cosmos Cloud for all-in-one simplicity.**
 
-If you want the best reverse proxy, use Caddy. Pair it with [Portainer](/apps/portainer) or [Dockge](/apps/dockge) for container management. This modular approach gives you the best tool for each job.
+If you want the best reverse proxy, use Caddy. Pair it with [Portainer](/apps/portainer/) or [Dockge](/apps/dockge/) for container management. This modular approach gives you the best tool for each job.
 
 If you want one platform that handles everything adequately, Cosmos Cloud simplifies your stack at the cost of proxy flexibility. Its built-in proxy covers 80% of self-hosting needs.
 
@@ -93,9 +93,9 @@ Caddy: ~30-50 MB for just the proxy. Cosmos Cloud: ~150-200 MB for the full plat
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

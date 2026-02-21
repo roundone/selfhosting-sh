@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB+ RAM (2 GB minimum for JVM heap)
 - 10 GB+ free disk space
 - Set `vm.max_map_count=262144` on the host (required)
@@ -215,11 +215,11 @@ Most standard single-node setups with `discovery.type=single-node` work without 
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 9200 (API) and 5601 (Kibana). See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 9200 (API) and 5601 (Kibana). See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
-Use Elasticsearch's snapshot API for consistent backups. The data volume can also be backed up when the service is stopped. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Use Elasticsearch's snapshot API for consistent backups. The data volume can also be backed up when the service is stopped. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -253,15 +253,15 @@ Use Elasticsearch's snapshot API for consistent backups. The data volume can als
 
 Elasticsearch is the industry standard for search and analytics. If you need full-text search, log aggregation, or an observability platform, nothing else has the same depth of features and ecosystem. The trade-off is significant resource requirements and complexity.
 
-**Choose Elasticsearch** for search + analytics + logging. **Choose [OpenSearch](/apps/opensearch)** for the same capabilities with a fully open-source license. **Choose [Meilisearch](/apps/meilisearch) or [Typesense](/apps/typesense)** if you just need application search without the analytics overhead.
+**Choose Elasticsearch** for search + analytics + logging. **Choose [OpenSearch](/apps/opensearch/)** for the same capabilities with a fully open-source license. **Choose [Meilisearch](/apps/meilisearch/) or [Typesense](/apps/typesense/)** if you just need application search without the analytics overhead.
 
 ## Related
 
-- [How to Self-Host OpenSearch](/apps/opensearch)
-- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host OpenSearch](/apps/opensearch/)
+- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

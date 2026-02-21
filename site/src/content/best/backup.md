@@ -23,8 +23,8 @@ affiliateDisclosure: false
 
 | Use Case | Best Choice | Why |
 |----------|-------------|-----|
-| Best overall | [Restic](/apps/restic) | Fast, encrypted, supports 20+ storage backends (S3, B2, SFTP, local). The community standard. |
-| Best deduplication | [BorgBackup](/apps/borgbackup) | Superior compression ratios. Best for large, slowly-changing datasets. |
+| Best overall | [Restic](/apps/restic/) | Fast, encrypted, supports 20+ storage backends (S3, B2, SFTP, local). The community standard. |
+| Best deduplication | [BorgBackup](/apps/borgbackup/) | Superior compression ratios. Best for large, slowly-changing datasets. |
 | Best modern alternative | Kopia | Restic-like features plus a web UI, policies, and snapshot management. |
 | Best with GUI | Duplicati | Web-based GUI for scheduling and configuring backups. Best for non-CLI users. |
 | Best Borg automation | Borgmatic | YAML-configured wrapper around BorgBackup. Automates the 3-2-1 rule. |
@@ -33,7 +33,7 @@ affiliateDisclosure: false
 
 ### 1. Restic — Best Overall
 
-[Restic](/apps/restic) is the most versatile self-hosted backup tool. It encrypts all data by default (AES-256), deduplicates at the content level, and supports more storage backends than any alternative — local directories, SFTP, S3-compatible storage (AWS, Backblaze B2, MinIO, Wasabi), Azure Blob, Google Cloud Storage, and REST servers.
+[Restic](/apps/restic/) is the most versatile self-hosted backup tool. It encrypts all data by default (AES-256), deduplicates at the content level, and supports more storage backends than any alternative — local directories, SFTP, S3-compatible storage (AWS, Backblaze B2, MinIO, Wasabi), Azure Blob, Google Cloud Storage, and REST servers.
 
 Backups are fast thanks to content-defined chunking. Restores are straightforward. The community is large and active. If you're choosing one backup tool, choose Restic.
 
@@ -56,11 +56,11 @@ Backups are fast thanks to content-defined chunking. Restores are straightforwar
 
 **Best for:** Anyone who wants reliable, encrypted backups to any storage backend. The default recommendation for self-hosters.
 
-[Read our full guide: How to Set Up Restic](/apps/restic)
+[Read our full guide: How to Set Up Restic](/apps/restic/)
 
 ### 2. BorgBackup — Best for Storage Efficiency
 
-[BorgBackup](/apps/borgbackup) excels at compression and deduplication. For datasets with many similar files (VMs, databases, Docker volumes), Borg achieves smaller backup sizes than Restic. The authenticated encryption is solid, and append-only mode provides protection against ransomware.
+[BorgBackup](/apps/borgbackup/) excels at compression and deduplication. For datasets with many similar files (VMs, databases, Docker volumes), Borg achieves smaller backup sizes than Restic. The authenticated encryption is solid, and append-only mode provides protection against ransomware.
 
 **Pros:**
 - Best-in-class compression (lz4, zstd, zlib, lzma)
@@ -79,7 +79,7 @@ Backups are fast thanks to content-defined chunking. Restores are straightforwar
 
 **Best for:** Users backing up to another Linux server via SSH who need maximum storage efficiency.
 
-[Read our full guide: How to Set Up BorgBackup](/apps/borgbackup)
+[Read our full guide: How to Set Up BorgBackup](/apps/borgbackup/)
 
 ### 3. Kopia — Best Modern Alternative
 
@@ -175,7 +175,7 @@ Every self-hoster should follow the 3-2-1 rule:
 
 This costs roughly $5-10/month for 1 TB of B2 storage — far less than any managed backup service.
 
-[Read our full guide: Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy)
+[Read our full guide: Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy/)
 
 ## How We Evaluated
 
@@ -183,13 +183,13 @@ We evaluated each tool on: reliability (does restore actually work?), encryption
 
 ## Related
 
-- [How to Set Up Restic](/apps/restic)
-- [How to Set Up BorgBackup](/apps/borgbackup)
-- [Restic vs BorgBackup](/compare/restic-vs-borgbackup)
-- [Replace Backblaze](/replace/backblaze)
-- [Replace CrashPlan](/replace/crashplan)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes & Bind Mounts](/foundations/docker-volumes)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [How to Set Up Restic](/apps/restic/)
+- [How to Set Up BorgBackup](/apps/borgbackup/)
+- [Restic vs BorgBackup](/compare/restic-vs-borgbackup/)
+- [Replace Backblaze](/replace/backblaze/)
+- [Replace CrashPlan](/replace/crashplan/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes & Bind Mounts](/foundations/docker-volumes/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

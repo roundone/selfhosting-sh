@@ -17,17 +17,17 @@ affiliateDisclosure: false
 
 LXC containers are lightweight Linux virtualization that runs isolated environments sharing the host kernel. Unlike full virtual machines, LXC containers don't emulate hardware or boot their own kernel — they carve out a separate userspace on the same kernel. Unlike Docker, which isolates a single application process, LXC containers behave like full Linux systems with init, multiple services, package managers, and persistent state.
 
-For self-hosting, LXC containers fill the gap between bare metal and Docker. They give you VM-like isolation with near-native performance and minimal overhead. If you run [Proxmox](/foundations/proxmox-basics), you're already using LXC — every "CT" in the Proxmox UI is an LXC container.
+For self-hosting, LXC containers fill the gap between bare metal and Docker. They give you VM-like isolation with near-native performance and minimal overhead. If you run [Proxmox](/foundations/proxmox-basics/), you're already using LXC — every "CT" in the Proxmox UI is an LXC container.
 
 The practical use case: you want isolated environments for services that don't fit neatly into Docker, or you want to run Docker itself inside an isolated container rather than on bare metal. Pi-hole on LXC, a Docker host in LXC, a dedicated database server in LXC — these are all common and sensible patterns.
 
 ## Prerequisites
 
-- A Linux server running Ubuntu 22.04+, Debian 12+, or Proxmox VE 8+ — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- A Linux server running Ubuntu 22.04+, Debian 12+, or Proxmox VE 8+ — see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
 - Root or sudo access
 - For standalone LXC: `lxc` and `lxd` packages (or `incus`, the community fork)
 - For Proxmox: LXC support is built in, no extra packages needed
-- Basic understanding of [Linux permissions](/foundations/linux-permissions)
+- Basic understanding of [Linux permissions](/foundations/linux-permissions/)
 
 ## How LXC Works (vs Docker)
 
@@ -127,7 +127,7 @@ exit
 
 ### Path B: Proxmox
 
-If you run [Proxmox VE](/foundations/proxmox-basics), LXC containers are a first-class feature.
+If you run [Proxmox VE](/foundations/proxmox-basics/), LXC containers are a first-class feature.
 
 1. Download a template: **Datacenter -> Storage -> local -> CT Templates -> Templates** -> download `ubuntu-24.04-standard`
 
@@ -346,7 +346,7 @@ To place an LXC container on a specific VLAN (requires a VLAN-aware bridge):
 pct set 200 --net0 name=eth0,bridge=vmbr0,ip=192.168.10.50/24,gw=192.168.10.1,tag=10
 ```
 
-This tags the container's traffic with VLAN ID 10. Your switch and router must be configured to handle this VLAN. See [Docker Networking](/foundations/docker-networking) for related container networking concepts.
+This tags the container's traffic with VLAN ID 10. Your switch and router must be configured to handle this VLAN. See [Docker Networking](/foundations/docker-networking/) for related container networking concepts.
 
 ### Container-to-Container Communication
 
@@ -433,7 +433,7 @@ docker compose version
 
 If Docker fails to start with errors about cgroups or AppArmor, the container is missing the nesting or keyctl features. Go back and enable them.
 
-For Docker Compose usage inside the container, see [Docker Compose Basics](/foundations/docker-compose-basics).
+For Docker Compose usage inside the container, see [Docker Compose Basics](/foundations/docker-compose-basics/).
 
 ### Storage Considerations for Docker-in-LXC
 
@@ -583,11 +583,11 @@ Or use idmap entries in the container config for more granular control.
 
 ## Next Steps
 
-- Deploy apps with Docker Compose inside your LXC container — [Docker Compose Basics](/foundations/docker-compose-basics)
-- Set up Proxmox to manage LXC and VMs — [Proxmox VE Basics](/foundations/proxmox-basics)
-- Understand networking between containers and hosts — [Docker Networking](/foundations/docker-networking)
-- Back up your containers and data — [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- Learn Linux fundamentals for managing LXC environments — [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- Deploy apps with Docker Compose inside your LXC container — [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Set up Proxmox to manage LXC and VMs — [Proxmox VE Basics](/foundations/proxmox-basics/)
+- Understand networking between containers and hosts — [Docker Networking](/foundations/docker-networking/)
+- Back up your containers and data — [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- Learn Linux fundamentals for managing LXC environments — [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
 
 ## FAQ
 
@@ -613,11 +613,11 @@ Unprivileged LXC containers provide strong isolation. The container's root user 
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Proxmox VE Basics](/foundations/proxmox-basics)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Docker Networking](/foundations/docker-networking)
-- [Linux Permissions](/foundations/linux-permissions)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [ZFS Basics](/foundations/zfs-basics)
-- [NAS Basics](/foundations/nas-basics)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Proxmox VE Basics](/foundations/proxmox-basics/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Linux Permissions](/foundations/linux-permissions/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [ZFS Basics](/foundations/zfs-basics/)
+- [NAS Basics](/foundations/nas-basics/)

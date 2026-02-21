@@ -77,7 +77,7 @@ Start the container:
 docker compose up -d <service_name>
 ```
 
-If it exits immediately, the application is crashing on startup. Check the logs for the root cause — missing environment variables, database connection failures, or permission errors are the usual culprits. See [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors) for detailed fixes.
+If it exits immediately, the application is crashing on startup. Check the logs for the root cause — missing environment variables, database connection failures, or permission errors are the usual culprits. See [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors/) for detailed fixes.
 
 Add `restart: unless-stopped` to every service so containers recover from transient failures:
 
@@ -227,7 +227,7 @@ Both containers are now on `proxy_network` and can communicate using their servi
 
 **Important:** Keep `default` in the networks list alongside `proxy_network`. Internal services like databases should stay on the default network only (not exposed to the proxy network). Only the service that needs proxy access should be on `proxy_network`.
 
-For a full explanation of Docker networking concepts, see [Docker Networking](/foundations/docker-networking).
+For a full explanation of Docker networking concepts, see [Docker Networking](/foundations/docker-networking/).
 
 ---
 
@@ -623,10 +623,10 @@ myapp.example.com {
 
 ## Related
 
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik](/apps/traefik)
-- [How to Self-Host Caddy](/apps/caddy)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [How to Self-Host Caddy](/apps/caddy/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

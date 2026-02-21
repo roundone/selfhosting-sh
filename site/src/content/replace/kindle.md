@@ -34,7 +34,7 @@ Amazon's Kindle ecosystem locks you in. Books purchased on Kindle are tied to yo
 
 ### Calibre-Web — Best for Kindle Device Users
 
-[Calibre-Web](/apps/calibre-web) is the best self-hosted option if you own a Kindle device and want to continue using it. Its send-to-Kindle feature pushes ebooks directly to your Kindle via email, and it handles format conversion (EPUB → MOBI/KFX) automatically.
+[Calibre-Web](/apps/calibre-web/) is the best self-hosted option if you own a Kindle device and want to continue using it. Its send-to-Kindle feature pushes ebooks directly to your Kindle via email, and it handles format conversion (EPUB → MOBI/KFX) automatically.
 
 **Key features for Kindle replacement:**
 - Send books to Kindle via email with one click
@@ -45,11 +45,11 @@ Amazon's Kindle ecosystem locks you in. Books purchased on Kindle are tied to yo
 
 **Best for:** People who own a Kindle and want to fill it with self-hosted content instead of Amazon purchases.
 
-[Read our full guide: How to Self-Host Calibre-Web](/apps/calibre-web)
+[Read our full guide: How to Self-Host Calibre-Web](/apps/calibre-web/)
 
 ### Kavita — Best All-in-One Reading Server
 
-[Kavita](/apps/kavita) is a standalone reading server that handles ebooks, manga, comics, and light novels in one app. Its web-based reader is excellent for EPUB files, and it tracks reading progress per user across devices.
+[Kavita](/apps/kavita/) is a standalone reading server that handles ebooks, manga, comics, and light novels in one app. Its web-based reader is excellent for EPUB files, and it tracks reading progress per user across devices.
 
 **Key features for Kindle replacement:**
 - Built-in web reader for EPUB and PDF (no Kindle needed)
@@ -60,15 +60,15 @@ Amazon's Kindle ecosystem locks you in. Books purchased on Kindle are tied to yo
 
 **Best for:** People who want to ditch the Kindle hardware entirely and read on phones, tablets, or computers via a web browser or OPDS app.
 
-[Read our full guide: How to Self-Host Kavita](/apps/kavita)
+[Read our full guide: How to Self-Host Kavita](/apps/kavita/)
 
 ### Komga — Best for Comics and Manga
 
-[Komga](/apps/komga) is a comics and manga server with excellent metadata management and Tachiyomi/Mihon integration. While it supports EPUB, its reader is optimized for image-based content.
+[Komga](/apps/komga/) is a comics and manga server with excellent metadata management and Tachiyomi/Mihon integration. While it supports EPUB, its reader is optimized for image-based content.
 
 **Best for:** People who primarily read comics and manga and want to replace both Kindle and ComiXology.
 
-[Read our full guide: How to Self-Host Komga](/apps/komga)
+[Read our full guide: How to Self-Host Komga](/apps/komga/)
 
 ## Migration Guide
 
@@ -189,11 +189,11 @@ EPUB is the universal standard. It works with all self-hosted servers and most r
 
 ## Related
 
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Komga](/apps/komga)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Komga](/apps/komga/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

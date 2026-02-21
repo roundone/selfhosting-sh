@@ -247,10 +247,10 @@ LGA 2011-3 era workstations have PCIe 3.0 slots but usually no M.2 slot on the m
 
 ## Related
 
-- [Used Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Used Lenovo ThinkCentre as a Home Server](/hardware/used-lenovo-thinkcentre)
-- [Used Enterprise Servers for Homelab](/hardware/used-enterprise-servers)
-- [Best RAM for Home Servers](/hardware/best-ram-home-server)
-- [PCIe and M.2 Expansion Guide](/hardware/pcie-expansion-home-server)
-- [IPMI, iDRAC, and iLO Guide](/hardware/ipmi-remote-management)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Used Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Used Lenovo ThinkCentre as a Home Server](/hardware/used-lenovo-thinkcentre/)
+- [Used Enterprise Servers for Homelab](/hardware/used-enterprise-servers/)
+- [Best RAM for Home Servers](/hardware/best-ram-home-server/)
+- [PCIe and M.2 Expansion Guide](/hardware/pcie-expansion-home-server/)
+- [IPMI, iDRAC, and iLO Guide](/hardware/ipmi-remote-management/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

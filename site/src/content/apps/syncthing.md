@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - Storage for the files you want to sync
 - At least one other device running Syncthing to sync with
@@ -187,7 +187,7 @@ Syncthing handles NAT traversal automatically using UPnP, NAT-PMP, and relay fal
 
 ## Reverse Proxy
 
-For remote access to the web UI through [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+For remote access to the web UI through [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host for `syncthing.yourdomain.com`
 2. Forward to `http://your-server-ip:8384`
@@ -195,7 +195,7 @@ For remote access to the web UI through [Nginx Proxy Manager](/apps/nginx-proxy-
 
 The sync protocol itself (port 22000) does not go through the reverse proxy — it connects directly between devices. Only the web UI uses the proxy.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 ## Backup
 
@@ -207,7 +207,7 @@ docker run --rm -v syncthing-config:/config -v $(pwd):/backup alpine tar czf /ba
 docker compose start syncthing
 ```
 
-The `/config` volume contains device identity (keys and certificates), folder configuration, and the local database. Losing the device identity means other devices won't recognize this node. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The `/config` volume contains device identity (keys and certificates), folder configuration, and the local database. Losing the device identity means other devices won't recognize this node. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -281,7 +281,7 @@ Yes. Syncthing is fully open source under the MPL-2.0 license. No paid tiers, no
 
 ### How does Syncthing compare to Nextcloud?
 
-Syncthing is peer-to-peer file sync only — no web UI for browsing files, no apps ecosystem, no calendar or contacts. [Nextcloud](/apps/nextcloud) is a full cloud platform with file sync, office documents, and dozens of apps. Use Syncthing if you only need file sync between known devices. Use Nextcloud if you want a Dropbox/Google Drive replacement with a web interface.
+Syncthing is peer-to-peer file sync only — no web UI for browsing files, no apps ecosystem, no calendar or contacts. [Nextcloud](/apps/nextcloud/) is a full cloud platform with file sync, office documents, and dozens of apps. Use Syncthing if you only need file sync between known devices. Use Nextcloud if you want a Dropbox/Google Drive replacement with a web interface.
 
 ### Can Syncthing run on a Raspberry Pi?
 
@@ -293,15 +293,15 @@ Yes. Syncthing is peer-to-peer — no central server is required. Each device co
 
 ## Verdict
 
-Syncthing is the best self-hosted file sync tool for users who want simplicity, privacy, and no central server. It does one thing — sync files between devices — and does it extremely well. The peer-to-peer architecture means there's no single point of failure and no cloud dependency. For users who want a full file management platform with web access, sharing links, and office integration, [Nextcloud](/apps/nextcloud) or [Seafile](/apps/seafile) are better choices.
+Syncthing is the best self-hosted file sync tool for users who want simplicity, privacy, and no central server. It does one thing — sync files between devices — and does it extremely well. The peer-to-peer architecture means there's no single point of failure and no cloud dependency. For users who want a full file management platform with web access, sharing links, and office integration, [Nextcloud](/apps/nextcloud/) or [Seafile](/apps/seafile/) are better choices.
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [Best Self-Hosted File Sync & Storage](/best/file-sync)
-- [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud)
-- [Replace Dropbox](/replace/dropbox)
-- [Replace Google Drive](/replace/google-drive)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync/)
+- [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud/)
+- [Replace Dropbox](/replace/dropbox/)
+- [Replace Google Drive](/replace/google-drive/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Networking](/foundations/docker-networking/)

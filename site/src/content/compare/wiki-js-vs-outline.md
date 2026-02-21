@@ -105,10 +105,10 @@ Both are excellent. Pick based on whether Git-based workflows or real-time colla
 
 ## Related
 
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [How to Self-Host Outline](/apps/outline)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [How to Self-Host Outline](/apps/outline/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

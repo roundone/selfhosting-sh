@@ -19,8 +19,8 @@ DNS issues are the second most common self-hosting problem after permission erro
 
 ## Prerequisites
 
-- Basic understanding of DNS ([DNS Explained](/foundations/dns-explained))
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
+- Basic understanding of DNS ([DNS Explained](/foundations/dns-explained/))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
 - `dig` installed (`sudo apt install dnsutils` on Debian/Ubuntu)
 
 ## Diagnostic Toolkit
@@ -184,7 +184,7 @@ Common causes:
 - Container not fully started yet (use `depends_on` with health checks)
 - Container name vs service name confusion — use the **service name** from `docker-compose.yml`
 
-See [Docker Networking](/foundations/docker-networking) for details.
+See [Docker Networking](/foundations/docker-networking/) for details.
 
 ### Docker Overrides Pi-hole/AdGuard DNS
 
@@ -254,7 +254,7 @@ On the client device, add to `/etc/hosts`:
 
 **Solution 3: Use Tailscale/WireGuard**
 
-Access services via their Tailscale IP or WireGuard IP, bypassing DNS and NAT entirely. See [Tailscale Setup](/foundations/tailscale-setup) or [WireGuard Setup](/foundations/wireguard-setup).
+Access services via their Tailscale IP or WireGuard IP, bypassing DNS and NAT entirely. See [Tailscale Setup](/foundations/tailscale-setup/) or [WireGuard Setup](/foundations/wireguard-setup/).
 
 ## SSL and DNS Interaction
 
@@ -272,7 +272,7 @@ If using Cloudflare proxy (orange cloud):
 - DNS challenges work regardless of proxy status
 - HTTP challenges require the proxy to be enabled or disabled depending on your setup
 
-See [SSL Certificates](/foundations/ssl-certificates) and [Let's Encrypt Explained](/foundations/lets-encrypt-explained).
+See [SSL Certificates](/foundations/ssl-certificates/) and [Let's Encrypt Explained](/foundations/lets-encrypt-explained/).
 
 ### CNAME and SSL Conflicts
 
@@ -334,10 +334,10 @@ Multiple layers: your browser (2-5 minutes), your OS resolver cache, your local 
 
 ## Related
 
-- [DNS Explained](/foundations/dns-explained)
-- [Docker Networking](/foundations/docker-networking)
-- [Encrypted DNS](/foundations/encrypted-dns)
-- [Dynamic DNS](/foundations/dynamic-dns)
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [DHCP and Static IPs](/foundations/dhcp-static-ip)
+- [DNS Explained](/foundations/dns-explained/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Encrypted DNS](/foundations/encrypted-dns/)
+- [Dynamic DNS](/foundations/dynamic-dns/)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [DHCP and Static IPs](/foundations/dhcp-static-ip/)

@@ -21,11 +21,11 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - 500 MB of free disk space
 - **A domain name with HTTPS** — Bitwarden clients refuse to connect over plain HTTP. This is non-negotiable.
-- A reverse proxy with SSL configured ([guide](/foundations/reverse-proxy-explained))
+- A reverse proxy with SSL configured ([guide](/foundations/reverse-proxy-explained/))
 
 ## Docker Compose Configuration
 
@@ -274,7 +274,7 @@ location / {
 }
 ```
 
-For full reverse proxy setup instructions, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For full reverse proxy setup instructions, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -333,7 +333,7 @@ chmod +x /opt/vaultwarden/backup.sh
 echo "0 3 * * * /opt/vaultwarden/backup.sh" | crontab -
 ```
 
-**Do not skip this.** Use the SQLite `.backup` command — copying the database file directly while Vaultwarden is running risks corruption. Follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule): three copies, two media types, one offsite.
+**Do not skip this.** Use the SQLite `.backup` command — copying the database file directly while Vaultwarden is running risks corruption. Follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/): three copies, two media types, one offsite.
 
 ## Troubleshooting
 
@@ -391,16 +391,16 @@ Vaultwarden is the best self-hosted password manager, period. It consumes almost
 
 The only hard requirement is HTTPS, and the only real risk is losing your data. You **must** maintain disciplined backups — losing access to your password vault is catastrophic. If you are not comfortable committing to a reliable backup routine, use cloud Bitwarden instead. At $10/year for a premium account, it is fair pricing for managed infrastructure and peace of mind. But if you can handle backups, there is no reason to trust your passwords to anyone else.
 
-For alternatives, [Passbolt](/apps/passbolt) is worth considering if you need team-focused features with GPG-based encryption, but for personal and family use, Vaultwarden wins outright.
+For alternatives, [Passbolt](/apps/passbolt/) is worth considering if you need team-focused features with GPG-based encryption, but for personal and family use, Vaultwarden wins outright.
 
 ## Related
 
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Replace LastPass](/replace/lastpass)
-- [Replace 1Password](/replace/1password)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Replace LastPass](/replace/lastpass/)
+- [Replace 1Password](/replace/1password/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

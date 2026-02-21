@@ -117,7 +117,7 @@ HAProxy has 25 years of production use. Its documentation covers every edge case
 
 **Envoy wins for cloud-native workloads.** If you run gRPC microservices, need built-in observability, or are building on Istio, Envoy is the standard. Its dynamic configuration via xDS APIs enables control plane integration that HAProxy cannot match.
 
-For self-hosters: neither is the ideal choice for a simple homelab. Both are production-grade tools designed for infrastructure engineers. If you just need a reverse proxy with HTTPS, use [Caddy](/apps/caddy) or [Traefik](/apps/traefik) instead.
+For self-hosters: neither is the ideal choice for a simple homelab. Both are production-grade tools designed for infrastructure engineers. If you just need a reverse proxy with HTTPS, use [Caddy](/apps/caddy/) or [Traefik](/apps/traefik/) instead.
 
 ## FAQ
 
@@ -128,14 +128,14 @@ Yes. Some architectures use HAProxy as the L4 edge load balancer and Envoy as th
 HAProxy. It has decades of use as a PostgreSQL, MySQL, and Redis load balancer. Its TCP health checks, stick tables for session persistence, and simple configuration make it the standard choice. Envoy works for database proxying but is more complex to configure for this use case.
 
 ### Does either support automatic HTTPS?
-Neither. Both require an external ACME client (Certbot) or manual certificate management. For automatic HTTPS, use [Caddy](/apps/caddy) or [Traefik](/apps/traefik).
+Neither. Both require an external ACME client (Certbot) or manual certificate management. For automatic HTTPS, use [Caddy](/apps/caddy/) or [Traefik](/apps/traefik/).
 
 ## Related
 
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

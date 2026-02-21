@@ -43,7 +43,7 @@ Note: you can still use Cloudflare DNS (1.1.1.1) as an upstream resolver for you
 
 **Best for:** Users who want the most established, well-documented solution with the largest community and plugin ecosystem.
 
-[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole)
+[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole/)
 
 ### AdGuard Home — Best Modern Alternative
 
@@ -51,7 +51,7 @@ Note: you can still use Cloudflare DNS (1.1.1.1) as an upstream resolver for you
 
 **Best for:** Users who want a modern UI with built-in encrypted DNS and parental controls. The closest to a "Cloudflare 1.1.1.1 for Families" replacement.
 
-[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home)
+[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home/)
 
 ### Blocky — Best for Infrastructure-as-Code
 
@@ -59,7 +59,7 @@ Note: you can still use Cloudflare DNS (1.1.1.1) as an upstream resolver for you
 
 **Best for:** Users who want DNS configuration as code, Kubernetes/Docker-native deployments, and minimal resource usage.
 
-[Read our full guide: How to Self-Host Blocky](/apps/blocky)
+[Read our full guide: How to Self-Host Blocky](/apps/blocky/)
 
 ### Technitium — Best Full DNS Server
 
@@ -67,7 +67,7 @@ Note: you can still use Cloudflare DNS (1.1.1.1) as an upstream resolver for you
 
 **Best for:** Users who need a full DNS server (zone hosting, split-horizon, DHCP) alongside ad blocking.
 
-[Read our full guide: How to Self-Host Technitium](/apps/technitium)
+[Read our full guide: How to Self-Host Technitium](/apps/technitium/)
 
 ## Migration Guide
 
@@ -121,7 +121,7 @@ Yes — this is the recommended approach. Your self-hosted DNS handles local que
 
 ### Which self-hosted DNS should I pick?
 
-For most home users: [AdGuard Home](/apps/adguard-home). It has the best balance of features and simplicity. See our detailed comparisons: [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home), [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky), [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium).
+For most home users: [AdGuard Home](/apps/adguard-home/). It has the best balance of features and simplicity. See our detailed comparisons: [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/), [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/), [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium/).
 
 ### Will this slow down my internet?
 
@@ -133,13 +133,13 @@ DNS-based blocking works for ads served from separate domains. It doesn't block 
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Technitium](/apps/technitium)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted DNS Alternatives](/replace/google-dns)
-- [Self-Hosted NextDNS Alternatives](/replace/nextdns)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Technitium](/apps/technitium/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted DNS Alternatives](/replace/google-dns/)
+- [Self-Hosted NextDNS Alternatives](/replace/nextdns/)

@@ -40,7 +40,7 @@ affiliateDisclosure: false
 
 **Replaces these Okta features:** SSO, SAML integration, LDAP/AD federation, MFA, user lifecycle management, self-service portal, social login.
 
-[Read our full guide: How to Self-Host Keycloak](/apps/keycloak)
+[Read our full guide: How to Self-Host Keycloak](/apps/keycloak/)
 
 ### Authentik — Best Modern Alternative
 
@@ -48,7 +48,7 @@ affiliateDisclosure: false
 
 **Replaces these Okta features:** SSO, SAML, LDAP proxy, MFA, user management, social login, SCIM provisioning.
 
-[Read our full guide: How to Self-Host Authentik](/apps/authentik)
+[Read our full guide: How to Self-Host Authentik](/apps/authentik/)
 
 ### Authelia — Best Lightweight Alternative
 
@@ -56,14 +56,14 @@ affiliateDisclosure: false
 
 **Replaces these Okta features:** Basic SSO (forward-auth), MFA (TOTP, WebAuthn), access policies.
 
-[Read our full guide: How to Self-Host Authelia](/apps/authelia)
+[Read our full guide: How to Self-Host Authelia](/apps/authelia/)
 
 ## Migration Guide
 
 ### From Okta to Keycloak
 
 1. **Export users:** Use Okta's API to export your user directory (GET `/api/v1/users`). Map fields to Keycloak's user schema.
-2. **Deploy Keycloak** following our [setup guide](/apps/keycloak)
+2. **Deploy Keycloak** following our [setup guide](/apps/keycloak/)
 3. **Create a realm** for your organization
 4. **Import users:** Use Keycloak's Admin REST API or User Federation to import users. If migrating from Okta LDAP, configure LDAP federation in Keycloak.
 5. **Recreate applications:** For each Okta application integration:
@@ -75,7 +75,7 @@ affiliateDisclosure: false
 
 ### From Okta to Authentik
 
-1. **Deploy Authentik** following our [setup guide](/apps/authentik)
+1. **Deploy Authentik** following our [setup guide](/apps/authentik/)
 2. **Create providers** (OIDC or SAML) for each application
 3. **Import users** via CSV or configure LDAP sync if you use AD
 4. **Update application configs** to point to Authentik
@@ -118,11 +118,11 @@ Keycloak. It has the broadest feature overlap: SAML, OIDC, LDAP federation, user
 
 ## Related
 
-- [How to Self-Host Keycloak](/apps/keycloak)
-- [How to Self-Host Authentik](/apps/authentik)
-- [How to Self-Host Authelia](/apps/authelia)
-- [Authentik vs Keycloak](/compare/authentik-vs-keycloak)
-- [Authelia vs Keycloak](/compare/authelia-vs-keycloak)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
+- [How to Self-Host Keycloak](/apps/keycloak/)
+- [How to Self-Host Authentik](/apps/authentik/)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [Authentik vs Keycloak](/compare/authentik-vs-keycloak/)
+- [Authelia vs Keycloak](/compare/authelia-vs-keycloak/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)

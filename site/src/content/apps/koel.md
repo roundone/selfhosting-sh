@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB+ of free RAM
 - MariaDB or MySQL database
 - FFmpeg (included in the Docker image)
@@ -249,7 +249,7 @@ WebSocket Support: OFF
 
 If serving over HTTPS, set `FORCE_HTTPS=true` and `APP_URL=https://music.yourdomain.com` in the environment variables.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -269,7 +269,7 @@ docker cp koel:/var/www/html/public/img/covers ./koel-covers-backup/
 
 Your music files are mounted read-only — back them up separately.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -319,7 +319,7 @@ proxy_send_timeout 300s;
 
 Koel offers the best web listening experience among self-hosted music servers. Its Spotify-like UI with visualizer, equalizer, and smart playlists makes it feel like a premium music service. The Spotify integration is a unique feature — mixing local and Spotify content in one interface.
 
-The trade-off is heavier resource usage (PHP/Laravel + MariaDB vs Navidrome's single Go binary) and limited mobile app support. There's no Subsonic API, so you're limited to the web UI, PWA, or the paid iOS app ($5). For mobile-first usage with multiple client options, [Navidrome](/apps/navidrome) is the better choice. For the best web experience with your local library, Koel is excellent.
+The trade-off is heavier resource usage (PHP/Laravel + MariaDB vs Navidrome's single Go binary) and limited mobile app support. There's no Subsonic API, so you're limited to the web UI, PWA, or the paid iOS app ($5). For mobile-first usage with multiple client options, [Navidrome](/apps/navidrome/) is the better choice. For the best web experience with your local library, Koel is excellent.
 
 ## Frequently Asked Questions
 
@@ -333,15 +333,15 @@ Yes. Spotify integration is entirely optional. Without it, Koel works as a stand
 
 ### How does Koel compare to Navidrome?
 
-Koel has a better web UI and Spotify integration. Navidrome is lighter (10x less RAM), has Subsonic API for mobile apps, and is more actively developed. See our [Koel vs Navidrome](/compare/koel-vs-navidrome) comparison for details.
+Koel has a better web UI and Spotify integration. Navidrome is lighter (10x less RAM), has Subsonic API for mobile apps, and is more actively developed. See our [Koel vs Navidrome](/compare/koel-vs-navidrome/) comparison for details.
 
 ## Related
 
-- [Koel vs Navidrome](/compare/koel-vs-navidrome)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
-- [Replace Apple Music](/replace/apple-music)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Koel vs Navidrome](/compare/koel-vs-navidrome/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)
+- [Replace Apple Music](/replace/apple-music/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

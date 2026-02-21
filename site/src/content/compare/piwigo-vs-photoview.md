@@ -112,9 +112,9 @@ Piwigo, by a significant margin. Its permission system supports groups, roles, a
 
 ## Related
 
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [How to Self-Host Photoview](/apps/photoview)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo)
-- [Lychee vs Photoview](/compare/lychee-vs-photoview)
-- [Best Self-Hosted Photo Management](/best/photo-management)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [How to Self-Host Photoview](/apps/photoview/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo/)
+- [Lychee vs Photoview](/compare/lychee-vs-photoview/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)

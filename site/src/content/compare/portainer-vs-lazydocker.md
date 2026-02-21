@@ -22,7 +22,7 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-**These are different tools for different workflows.** Portainer is a full-featured web UI for managing Docker remotely from a browser. Lazydocker is a lightweight terminal UI for quick container monitoring over SSH. Use [Portainer](/apps/portainer) if you want a web dashboard, multi-host management, or team access control. Use [Lazydocker](/apps/lazydocker) if you live in the terminal and want instant Docker visibility without opening a browser. Many self-hosters run both — they complement each other perfectly.
+**These are different tools for different workflows.** Portainer is a full-featured web UI for managing Docker remotely from a browser. Lazydocker is a lightweight terminal UI for quick container monitoring over SSH. Use [Portainer](/apps/portainer/) if you want a web dashboard, multi-host management, or team access control. Use [Lazydocker](/apps/lazydocker/) if you live in the terminal and want instant Docker visibility without opening a browser. Many self-hosters run both — they complement each other perfectly.
 
 ## Overview
 
@@ -167,7 +167,7 @@ No. Lazydocker runs entirely in your terminal session. It accesses the Docker so
 
 ### Can Lazydocker deploy new containers or Compose stacks?
 
-No. Lazydocker manages existing containers — start, stop, restart, remove, view logs, inspect. For deploying new services, use [Portainer](/apps/portainer), [Dockge](/apps/dockge), or `docker compose` directly.
+No. Lazydocker manages existing containers — start, stop, restart, remove, view logs, inspect. For deploying new services, use [Portainer](/apps/portainer/), [Dockge](/apps/dockge/), or `docker compose` directly.
 
 ### Is Lazydocker safe to use on production servers?
 
@@ -179,10 +179,10 @@ No. Portainer is web-only. You can open a container console through the Portaine
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [How to Self-Host Dockge](/apps/dockge)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [How to Self-Host Dockge](/apps/dockge/)

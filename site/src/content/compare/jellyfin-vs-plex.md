@@ -168,10 +168,10 @@ Yes. Point both at the same media directories. They don't interfere with each ot
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternative](/replace/netflix)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternative](/replace/netflix/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

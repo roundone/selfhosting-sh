@@ -93,9 +93,9 @@ Cosmos Cloud. It provides a guided setup, app store, and visual management. Trae
 
 ## Related
 
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Best Docker Management Tools](/best/docker-management)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Best Docker Management Tools](/best/docker-management/)

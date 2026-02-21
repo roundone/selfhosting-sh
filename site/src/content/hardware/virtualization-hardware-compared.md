@@ -188,10 +188,10 @@ Not to start. 32 GB handles 3–5 lightweight VMs comfortably. You need 64 GB if
 
 ## Related
 
-- [Proxmox Hardware Requirements](/hardware/proxmox-hardware-requirements)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server)
-- [Best RAM for Home Servers](/hardware/best-ram-home-server)
-- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide)
+- [Proxmox Hardware Requirements](/hardware/proxmox-hardware-requirements/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server/)
+- [Best RAM for Home Servers](/hardware/best-ram-home-server/)
+- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/)

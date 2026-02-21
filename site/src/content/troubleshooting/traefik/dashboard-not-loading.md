@@ -80,6 +80,6 @@ Always include `--api.dashboard=true` in your Traefik static configuration from 
 
 ## Related
 
-- [How to Self-Host Traefik](/apps/traefik)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
+- [How to Self-Host Traefik](/apps/traefik/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)

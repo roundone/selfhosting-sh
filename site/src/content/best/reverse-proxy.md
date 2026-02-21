@@ -58,7 +58,7 @@ For the typical self-hoster running 5-30 services on a single server, Caddy gets
 
 **Best for:** Most self-hosters who want the simplest, lightest reverse proxy with automatic HTTPS.
 
-[Read our full guide: How to Self-Host Caddy with Docker](/apps/caddy)
+[Read our full guide: How to Self-Host Caddy with Docker](/apps/caddy/)
 
 ### 2. Nginx Proxy Manager — Best for Beginners
 
@@ -83,7 +83,7 @@ NPM is the right choice if you or the people you share your homelab with prefer 
 
 **Best for:** Beginners, GUI-preferring users, and shared homelabs where multiple people manage proxy hosts.
 
-[Read our full guide: How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
+[Read our full guide: How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
 
 ### 3. Traefik — Best for Docker-Heavy Setups
 
@@ -109,7 +109,7 @@ Traefik is ideal if you frequently add, remove, or update containers. Its auto-d
 
 **Best for:** Self-hosters who frequently deploy containers, Docker Swarm/Kubernetes users, and those who want config-as-code with routing defined alongside services.
 
-[Read our full guide: How to Self-Host Traefik with Docker](/apps/traefik)
+[Read our full guide: How to Self-Host Traefik with Docker](/apps/traefik/)
 
 ### 4. Nginx — Best for Maximum Control
 
@@ -136,7 +136,7 @@ Nginx gives you complete control over every aspect of request handling. The conf
 
 **Best for:** Power users who need advanced caching, rate limiting, URL rewriting, or Lua scripting. Production deployments at scale.
 
-[Read our full guide: How to Self-Host Nginx with Docker](/apps/nginx)
+[Read our full guide: How to Self-Host Nginx with Docker](/apps/nginx/)
 
 ### 5. HAProxy — Best for Load Balancing
 
@@ -163,7 +163,7 @@ HAProxy is overkill for most homelabs but unmatched when you need production-gra
 
 **Best for:** Multi-server load balancing, TCP proxying, high-availability setups. Not ideal for typical single-server homelabs.
 
-[Read our full guide: How to Self-Host HAProxy with Docker](/apps/haproxy)
+[Read our full guide: How to Self-Host HAProxy with Docker](/apps/haproxy/)
 
 ## Full Comparison Table
 
@@ -198,18 +198,18 @@ The ranking prioritizes the self-hosting use case. In a production infrastructur
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Self-Hosted Alternatives to Managed Hosting](/replace/managed-hosting)
-- [Self-Hosted Alternatives to Paid SSL](/replace/ssl-services)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Self-Hosted Alternatives to Managed Hosting](/replace/managed-hosting/)
+- [Self-Hosted Alternatives to Paid SSL](/replace/ssl-services/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

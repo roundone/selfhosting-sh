@@ -162,10 +162,10 @@ Komga. It has been tested with libraries of 100,000+ files and has optimizations
 
 ## Related
 
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Stump](/apps/stump)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Stump](/apps/stump/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

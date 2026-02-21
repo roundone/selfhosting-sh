@@ -242,10 +242,10 @@ Synology DS224+ and similar 2-bay NAS units have fans, but they're very quiet (1
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption)
-- [Home Server Noise Reduction](/hardware/home-server-noise-reduction)
-- [Cooling Solutions for Home Servers](/hardware/cooling-solutions-home-server)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption/)
+- [Home Server Noise Reduction](/hardware/home-server-noise-reduction/)
+- [Cooling Solutions for Home Servers](/hardware/cooling-solutions-home-server/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)

@@ -97,7 +97,7 @@ PhotoPrism's ML processing is resource-intensive, especially during initial inde
 
 **Lychee wins for lightweight photo sharing.** If you want a clean gallery to share photos with family, clients, or publicly — without the overhead of ML models — Lychee is elegant and efficient. It does less, but what it does, it does well.
 
-For a Google Photos-like experience, look at [Immich](/apps/immich) instead — it combines PhotoPrism's AI with mobile auto-upload that neither PhotoPrism nor Lychee fully provides.
+For a Google Photos-like experience, look at [Immich](/apps/immich/) instead — it combines PhotoPrism's AI with mobile auto-upload that neither PhotoPrism nor Lychee fully provides.
 
 ## Frequently Asked Questions
 
@@ -108,13 +108,13 @@ Technically you can disable some ML features, but the AI is deeply integrated in
 Yes, Lychee can display RAW photos by generating JPEG previews. PhotoPrism has more extensive RAW format support and better RAW processing, but both handle the common formats.
 
 ### Which has better mobile support?
-Neither has a native mobile app. PhotoPrism offers a Progressive Web App (PWA) that works well on mobile browsers. Lychee's web UI is responsive. For native mobile apps with auto-upload, use [Immich](/apps/immich).
+Neither has a native mobile app. PhotoPrism offers a Progressive Web App (PWA) that works well on mobile browsers. Lychee's web UI is responsive. For native mobile apps with auto-upload, use [Immich](/apps/immich/).
 
 ## Related
 
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host Lychee](/apps/lychee)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)

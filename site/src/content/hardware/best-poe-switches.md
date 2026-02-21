@@ -54,7 +54,7 @@ Add them up, then add 20% headroom. That's your minimum PoE budget.
 | Price | Lower | Higher |
 | Setup | Plug and play | Requires configuration |
 
-**For self-hosting: get managed.** VLANs let you isolate IoT devices from your server network — critical for security when running [Home Assistant](/apps/home-assistant) with smart home devices. Per-port PoE control lets you remotely power-cycle a frozen camera or AP.
+**For self-hosting: get managed.** VLANs let you isolate IoT devices from your server network — critical for security when running [Home Assistant](/apps/home-assistant/) with smart home devices. Per-port PoE control lets you remotely power-cycle a frozen camera or AP.
 
 ## Top Picks
 
@@ -267,7 +267,7 @@ Self-hosting the controller on your server is better than running it on cloud �
 
 ### Can I use PoE to power a mini PC?
 
-Not directly. Most mini PCs don't have PoE input. You'd need a PoE splitter that converts PoE to a barrel connector or USB-C PD. PoE++ (Type 3/4) splitters can output 30-60W, enough for an [Intel N100 mini PC](/hardware/intel-n100-mini-pc) at idle.
+Not directly. Most mini PCs don't have PoE input. You'd need a PoE splitter that converts PoE to a barrel connector or USB-C PD. PoE++ (Type 3/4) splitters can output 30-60W, enough for an [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) at idle.
 
 ### Do I need PoE+ or is PoE enough?
 
@@ -283,10 +283,10 @@ The switch will deny power to the last device plugged in, or prioritize based on
 
 ## Related
 
-- [PoE Explained](/hardware/poe-explained)
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [10GbE Networking for Home Servers](/hardware/10gbe-networking)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Home Server Rack Setup Guide](/hardware/home-server-rack)
+- [PoE Explained](/hardware/poe-explained/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [10GbE Networking for Home Servers](/hardware/10gbe-networking/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Home Server Rack Setup Guide](/hardware/home-server-rack/)

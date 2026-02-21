@@ -165,7 +165,7 @@ If you're managing email for a team or organization — multiple domains, many u
 
 ### Mailu
 
-Backup is manual. You back up the Docker volumes (`/mailu` data directory) and your `mailu.env` file. There are no built-in backup scripts. Most users pair Mailu with [Borgmatic](/apps/borgmatic) or [Restic](/apps/restic) for automated backups.
+Backup is manual. You back up the Docker volumes (`/mailu` data directory) and your `mailu.env` file. There are no built-in backup scripts. Most users pair Mailu with [Borgmatic](/apps/borgmatic/) or [Restic](/apps/restic/) for automated backups.
 
 Updates: pull new images and recreate containers.
 
@@ -244,10 +244,10 @@ If you're hosting email just for yourself and a family member, Mailu is the prag
 
 ## Related
 
-- [How to Self-Host Mailu](/apps/mailu)
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [Best Self-Hosted Email Servers](/best/email)
-- [Replace Gmail](/replace/gmail)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [How to Self-Host Mailu](/apps/mailu/)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [Best Self-Hosted Email Servers](/best/email/)
+- [Replace Gmail](/replace/gmail/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

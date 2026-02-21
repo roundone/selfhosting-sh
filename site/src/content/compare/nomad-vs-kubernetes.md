@@ -72,7 +72,7 @@ For production with service discovery, you also need Consul. For secrets, add Va
 curl -sfL https://get.k3s.io | sh -
 ```
 
-One command, everything bundled. Standard kubeadm is more complex (see [k3s vs k8s](/compare/k3s-vs-k8s)).
+One command, everything bundled. Standard kubeadm is more complex (see [k3s vs k8s](/compare/k3s-vs-k8s/)).
 
 **Verdict:** Nomad alone is simpler. Nomad + Consul + Vault approaches Kubernetes complexity. k3s makes Kubernetes almost as simple as standalone Nomad.
 
@@ -149,9 +149,9 @@ Kubernetes, overwhelmingly. It dominates the job market for container orchestrat
 
 ## Related
 
-- [How to Self-Host Nomad](/apps/nomad)
-- [How to Self-Host k3s](/apps/k3s)
-- [k3s vs Kubernetes](/compare/k3s-vs-k8s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
+- [How to Self-Host Nomad](/apps/nomad/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [k3s vs Kubernetes](/compare/k3s-vs-k8s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)

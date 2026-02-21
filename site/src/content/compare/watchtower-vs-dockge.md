@@ -20,7 +20,7 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun/) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
 
 ## Quick Verdict
 
@@ -56,7 +56,7 @@ There's a practical tension between Dockge and Watchtower. Dockge encourages man
 **If you use both:** Consider either:
 1. Using Watchtower only for containers with `:latest` tags (not version-pinned)
 2. Using Watchtower's `--monitor-only` mode to notify without applying updates, then updating the compose file in Dockge manually
-3. Using [Diun](/apps/diun) instead of Watchtower (notify-only approach avoids the conflict entirely)
+3. Using [Diun](/apps/diun/) instead of Watchtower (notify-only approach avoids the conflict entirely)
 
 ## Use Cases
 
@@ -80,7 +80,7 @@ There's a practical tension between Dockge and Watchtower. Dockge encourages man
 
 ## Final Verdict
 
-**Dockge for management, Diun over Watchtower for update awareness.** The combination of Dockge for stack management plus [Diun](/apps/diun) for update notifications is a better pairing than Dockge + Watchtower, because Diun's notify-only approach avoids the version pinning conflict entirely.
+**Dockge for management, Diun over Watchtower for update awareness.** The combination of Dockge for stack management plus [Diun](/apps/diun/) for update notifications is a better pairing than Dockge + Watchtower, because Diun's notify-only approach avoids the version pinning conflict entirely.
 
 If you specifically want automatic updates (accepting the version mismatch risk), Dockge + Watchtower works — just be aware that Watchtower will update containers beyond what's specified in your compose files.
 
@@ -100,10 +100,10 @@ Generally no. Watchtower works best with `:latest` tags. If you pin versions in 
 
 ## Related
 
-- [How to Self-Host Dockge](/apps/dockge)
-- [How to Self-Host Watchtower](/apps/watchtower)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Diun vs Dockge](/compare/diun-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Updating Docker Containers Safely](/foundations/docker-updating)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [How to Self-Host Watchtower](/apps/watchtower/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Diun vs Dockge](/compare/diun-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Updating Docker Containers Safely](/foundations/docker-updating/)

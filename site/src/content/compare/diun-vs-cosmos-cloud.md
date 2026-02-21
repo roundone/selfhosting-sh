@@ -85,9 +85,9 @@ Diun by a wide margin (~15 MB vs ~200 MB). But that's an unfair comparison — C
 
 ## Related
 
-- [How to Self-Host Diun with Docker](/apps/diun)
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Best Docker Management Tools](/best/docker-management)
-- [Updating Docker Containers Safely](/foundations/docker-updating)
+- [How to Self-Host Diun with Docker](/apps/diun/)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Updating Docker Containers Safely](/foundations/docker-updating/)

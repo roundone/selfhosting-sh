@@ -60,7 +60,7 @@ The trade-off is resource usage. Nextcloud is a PHP application backed by Postgr
 
 **Best for:** Anyone who wants a single platform replacing Dropbox, Google Drive, Google Calendar, Google Contacts, and Google Docs. The all-in-one play.
 
-[Read our full guide: How to Self-Host Nextcloud](/apps/nextcloud)
+[Read our full guide: How to Self-Host Nextcloud](/apps/nextcloud/)
 
 ### 2. Seafile — Best Pure File Sync
 
@@ -86,7 +86,7 @@ Seafile provides file versioning, client-side encryption for libraries, and coll
 
 **Best for:** Users who want Dropbox-like file sync without the bloat. If you only need file sync and don't care about calendar, contacts, or office docs, Seafile is the better choice over Nextcloud.
 
-[Read our full guide: How to Self-Host Seafile](/apps/seafile)
+[Read our full guide: How to Self-Host Seafile](/apps/seafile/)
 
 ### 3. Syncthing — Best Peer-to-Peer
 
@@ -115,11 +115,11 @@ The downside: no web UI for file browsing (just the admin dashboard), no link-ba
 
 **Best for:** Privacy-focused users who want file sync between devices without trusting any server. Pairs well with a Nextcloud or Filebrowser instance for web access.
 
-[Read our full guide: How to Self-Host Syncthing](/apps/syncthing)
+[Read our full guide: How to Self-Host Syncthing](/apps/syncthing/)
 
 ### 4. ownCloud oCIS — Best Lightweight Platform
 
-[ownCloud oCIS](/apps/owncloud) is a complete rewrite of ownCloud in Go. It runs as a single container with no external database — metadata is stored in the filesystem. Spaces (project-based collaboration areas) are a standout feature that Nextcloud doesn't natively offer. Lighter and faster than Nextcloud, with a modern web UI.
+[ownCloud oCIS](/apps/owncloud/) is a complete rewrite of ownCloud in Go. It runs as a single container with no external database — metadata is stored in the filesystem. Spaces (project-based collaboration areas) are a standout feature that Nextcloud doesn't natively offer. Lighter and faster than Nextcloud, with a modern web UI.
 
 **Pros:**
 - Single container — no database, cache, or cron needed
@@ -138,7 +138,7 @@ The downside: no web UI for file browsing (just the admin dashboard), no link-ba
 
 **Best for:** Teams who want file sync with project-based collaboration (Spaces) and prefer a lighter, simpler platform than Nextcloud.
 
-[Read our full guide: How to Self-Host ownCloud oCIS](/apps/owncloud)
+[Read our full guide: How to Self-Host ownCloud oCIS](/apps/owncloud/)
 
 ### 5. Filebrowser — Best Lightweight File Manager
 
@@ -163,7 +163,7 @@ Filebrowser fills a different niche than the sync tools above. Use it when you w
 
 **Best for:** Accessing server files from a browser. Use alongside Syncthing for sync + web access, or as a lightweight alternative when Nextcloud is overkill.
 
-[Read our full guide: How to Self-Host Filebrowser](/apps/filebrowser)
+[Read our full guide: How to Self-Host Filebrowser](/apps/filebrowser/)
 
 ## Full Comparison Table
 
@@ -216,22 +216,22 @@ As much as you have files. All four solutions store data on your server's filesy
 
 ### Do I need a reverse proxy for these?
 
-For remote access with HTTPS, yes. All four work behind [Nginx Proxy Manager, Traefik, or Caddy](/foundations/reverse-proxy-explained). Syncthing is the exception for sync traffic (it handles its own encryption), but the web UI benefits from a reverse proxy if exposed remotely.
+For remote access with HTTPS, yes. All four work behind [Nginx Proxy Manager, Traefik, or Caddy](/foundations/reverse-proxy-explained/). Syncthing is the exception for sync traffic (it handles its own encryption), but the web UI benefits from a reverse proxy if exposed remotely.
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [How to Self-Host Filebrowser](/apps/filebrowser)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Seafile vs Syncthing](/compare/seafile-vs-syncthing)
-- [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Self-Hosted Alternatives to OneDrive](/replace/onedrive)
-- [Self-Hosted Alternatives to iCloud Drive](/replace/icloud-drive)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [How to Self-Host Filebrowser](/apps/filebrowser/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Seafile vs Syncthing](/compare/seafile-vs-syncthing/)
+- [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Self-Hosted Alternatives to OneDrive](/replace/onedrive/)
+- [Self-Hosted Alternatives to iCloud Drive](/replace/icloud-drive/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

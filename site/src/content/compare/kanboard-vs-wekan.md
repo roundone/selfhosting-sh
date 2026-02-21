@@ -111,9 +111,9 @@ There's no built-in migration tool. You'd need to export data via Kanboard's API
 
 ## Related
 
-- [How to Self-Host Kanboard](/apps/kanboard)
-- [How to Self-Host WeKan](/apps/wekan)
-- [Planka vs WeKan](/compare/planka-vs-wekan)
-- [Best Self-Hosted Task Management](/best/task-management)
-- [Self-Hosted Alternatives to Trello](/replace/trello)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Kanboard](/apps/kanboard/)
+- [How to Self-Host WeKan](/apps/wekan/)
+- [Planka vs WeKan](/compare/planka-vs-wekan/)
+- [Best Self-Hosted Task Management](/best/task-management/)
+- [Self-Hosted Alternatives to Trello](/replace/trello/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

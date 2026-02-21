@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker installed ([guide](/foundations/docker-compose-basics))
+- Docker installed ([guide](/foundations/docker-compose-basics/))
 - Terminal access (SSH or local)
 
 ## Installation
@@ -268,7 +268,7 @@ No. Lazydocker is a standalone Go binary that talks to the Docker socket directl
 
 ### Can Lazydocker deploy new containers?
 
-No. It manages existing containers — start, stop, restart, remove, view logs. For deploying new containers, use [Dockge](/apps/dockge), [Portainer](/apps/portainer), or Docker Compose directly.
+No. It manages existing containers — start, stop, restart, remove, view logs. For deploying new containers, use [Dockge](/apps/dockge/), [Portainer](/apps/portainer/), or Docker Compose directly.
 
 ### Does Lazydocker work with Docker Compose?
 
@@ -284,11 +284,11 @@ Lazydocker is more feature-rich. `ctop` shows container metrics (like `top` for 
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [How to Self-Host Yacht](/apps/yacht)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [How to Self-Host Yacht](/apps/yacht/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)

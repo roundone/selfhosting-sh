@@ -21,14 +21,14 @@ affiliateDisclosure: false
 
 ## What Is Keila?
 
-[Keila](https://www.keila.io/) is a self-hosted newsletter and email marketing tool built in Elixir. It provides subscriber management, campaign creation with WYSIWYG and Markdown editors, visual contact segmentation, and embeddable signup forms. Keila replaces [Mailchimp](/replace/mailchimp), ConvertKit, and similar SaaS email platforms — your subscriber data stays on your server, and you pay nothing per subscriber.
+[Keila](https://www.keila.io/) is a self-hosted newsletter and email marketing tool built in Elixir. It provides subscriber management, campaign creation with WYSIWYG and Markdown editors, visual contact segmentation, and embeddable signup forms. Keila replaces [Mailchimp](/replace/mailchimp/), ConvertKit, and similar SaaS email platforms — your subscriber data stays on your server, and you pay nothing per subscriber.
 
-Keila is AGPL-3.0 licensed with an active development community. It's lighter on features than [Mautic](/apps/mautic) but more approachable than raw [Listmonk](/apps/listmonk) for users who prefer visual tools over SQL queries.
+Keila is AGPL-3.0 licensed with an active development community. It's lighter on features than [Mautic](/apps/mautic/) but more approachable than raw [Listmonk](/apps/listmonk/) for users who prefer visual tools over SQL queries.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum)
 - 2 GB of free disk space
 - A domain name (recommended for production)
@@ -199,9 +199,9 @@ Ensure your SES account is out of sandbox mode and your domain has verified SPF/
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or another reverse proxy, point your domain to `localhost:4000`. Ensure WebSocket support is enabled for live preview functionality.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or another reverse proxy, point your domain to `localhost:4000`. Ensure WebSocket support is enabled for live preview functionality.
 
-For Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+For Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 keila.example.com {
@@ -225,7 +225,7 @@ docker run --rm -v keila-uploads:/data -v $(pwd):/backup alpine \
   tar czf /backup/keila-uploads-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -257,9 +257,9 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete backup approa
 
 ## Verdict
 
-Keila is the best self-hosted newsletter tool for users who value a polished UI. The WYSIWYG editor, visual segmentation, and built-in contact forms make it more approachable than [Listmonk](/apps/listmonk), which requires HTML templates and SQL queries. For raw performance and minimal resource usage, Listmonk still wins — but Keila's user experience is meaningfully better for non-technical newsletter operators.
+Keila is the best self-hosted newsletter tool for users who value a polished UI. The WYSIWYG editor, visual segmentation, and built-in contact forms make it more approachable than [Listmonk](/apps/listmonk/), which requires HTML templates and SQL queries. For raw performance and minimal resource usage, Listmonk still wins — but Keila's user experience is meaningfully better for non-technical newsletter operators.
 
-Choose Keila if you want visual tools. Choose [Listmonk](/apps/listmonk) if you want maximum throughput with minimum overhead.
+Choose Keila if you want visual tools. Choose [Listmonk](/apps/listmonk/) if you want maximum throughput with minimum overhead.
 
 ## Frequently Asked Questions
 
@@ -270,16 +270,16 @@ Yes. Contact forms support double opt-in automatically. Subscribers receive a co
 Yes. Export your Mailchimp subscribers as CSV and import them into Keila via the Contacts section.
 
 ### Does Keila support transactional emails?
-No. Keila is newsletters and marketing campaigns only. For transactional emails, pair it with [Listmonk](/apps/listmonk) or a dedicated transactional service.
+No. Keila is newsletters and marketing campaigns only. For transactional emails, pair it with [Listmonk](/apps/listmonk/) or a dedicated transactional service.
 
 ## Related
 
-- [Listmonk vs Keila](/compare/listmonk-vs-keila)
-- [Listmonk vs Mautic](/compare/listmonk-vs-mautic)
-- [How to Self-Host Listmonk](/apps/listmonk)
-- [How to Self-Host Mautic](/apps/mautic)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Listmonk vs Keila](/compare/listmonk-vs-keila/)
+- [Listmonk vs Mautic](/compare/listmonk-vs-mautic/)
+- [How to Self-Host Listmonk](/apps/listmonk/)
+- [How to Self-Host Mautic](/apps/mautic/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

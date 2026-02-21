@@ -28,7 +28,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM
 - 1 GB of free disk space
 - A domain name (optional, for remote access)
@@ -164,7 +164,7 @@ environment:
 
 ### RSS Feeds
 
-Wallabag generates RSS feeds for your saved articles — useful for syncing with RSS readers like [FreshRSS](/apps/freshrss) or [Miniflux](/apps/miniflux):
+Wallabag generates RSS feeds for your saved articles — useful for syncing with RSS readers like [FreshRSS](/apps/freshrss/) or [Miniflux](/apps/miniflux/):
 
 1. Go to **Config → RSS**
 2. Generate a token
@@ -209,7 +209,7 @@ Nginx Proxy Manager config:
 - **Forward Hostname:** wallabag
 - **Forward Port:** 80
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -222,7 +222,7 @@ docker run --rm -v wallabag_images:/data -v $(pwd):/backup alpine \
   tar czf /backup/wallabag-images-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -269,15 +269,15 @@ environment:
 
 ## Verdict
 
-Wallabag is the best self-hosted read-later app. It does one thing well: save articles for clean, distraction-free reading later. The mobile apps work offline, the browser extensions make saving effortless, and the Pocket/Instapaper import makes migration painless. It's not a bookmark manager — if you need collections, team sharing, and page archiving, use [Linkwarden](/apps/linkwarden). But for personal read-later use, Wallabag is exactly right.
+Wallabag is the best self-hosted read-later app. It does one thing well: save articles for clean, distraction-free reading later. The mobile apps work offline, the browser extensions make saving effortless, and the Pocket/Instapaper import makes migration painless. It's not a bookmark manager — if you need collections, team sharing, and page archiving, use [Linkwarden](/apps/linkwarden/). But for personal read-later use, Wallabag is exactly right.
 
 ## Related
 
-- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later)
-- [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag)
-- [Wallabag vs Hoarder](/compare/wallabag-vs-hoarder)
-- [Replace Pocket with Self-Hosted Tools](/replace/pocket)
-- [Replace Instapaper with Self-Hosted Tools](/replace/instapaper)
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later/)
+- [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag/)
+- [Wallabag vs Hoarder](/compare/wallabag-vs-hoarder/)
+- [Replace Pocket with Self-Hosted Tools](/replace/pocket/)
+- [Replace Instapaper with Self-Hosted Tools](/replace/instapaper/)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

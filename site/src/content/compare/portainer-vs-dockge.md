@@ -21,7 +21,7 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-**Dockge is the better choice for most self-hosters** who manage their services with Docker Compose files. It is simpler, lighter, and stores your compose files as standard YAML on disk. Choose [Portainer](/apps/portainer) if you need to manage individual containers, Docker Swarm clusters, Kubernetes, or multiple remote Docker hosts with granular user permissions. For the typical homelab running 5-30 Compose stacks on a single server, Dockge gets the job done with far less overhead.
+**Dockge is the better choice for most self-hosters** who manage their services with Docker Compose files. It is simpler, lighter, and stores your compose files as standard YAML on disk. Choose [Portainer](/apps/portainer/) if you need to manage individual containers, Docker Swarm clusters, Kubernetes, or multiple remote Docker hosts with granular user permissions. For the typical homelab running 5-30 Compose stacks on a single server, Dockge gets the job done with far less overhead.
 
 ## Overview
 
@@ -184,16 +184,16 @@ With Dockge, your stacks are standard `compose.yaml` files in `/opt/stacks/`. Un
 
 ### Does either tool support automatic container updates?
 
-Neither Portainer CE nor Dockge has built-in automatic image updates. Portainer supports webhook-triggered redeployment, which can be connected to a CI/CD pipeline. For update notifications, use [Diun](/apps/diun) alongside either manager. (Watchtower, which offered automatic updates, is now deprecated.)
+Neither Portainer CE nor Dockge has built-in automatic image updates. Portainer supports webhook-triggered redeployment, which can be connected to a CI/CD pipeline. For update notifications, use [Diun](/apps/diun/) alongside either manager. (Watchtower, which offered automatic updates, is now deprecated.)
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Portainer vs Yacht](/compare/portainer-vs-yacht)
-- [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [How to Self-Host DIUN](/apps/diun)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Portainer vs Yacht](/compare/portainer-vs-yacht/)
+- [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [How to Self-Host DIUN](/apps/diun/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)

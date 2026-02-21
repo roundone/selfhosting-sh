@@ -29,7 +29,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB of free RAM
 - 100 MB of free disk space
 - A domain name (strongly recommended — most CalDAV clients require HTTPS)
@@ -199,7 +199,7 @@ Nginx Proxy Manager config:
 - Add **Custom Location** for `/.well-known/caldav` redirecting to `/`
 - Add **Custom Location** for `/.well-known/carddav` redirecting to `/`
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -212,7 +212,7 @@ docker run --rm -v radicale_data:/data -v $(pwd):/backup alpine \
 
 This backs up all calendars, contacts, and user configuration.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -248,14 +248,14 @@ docker compose logs radicale
 
 ## Verdict
 
-Radicale is the best lightweight CalDAV/CardDAV server. It does exactly one thing: sync calendars and contacts across devices. No web UI for managing events (use your native calendar app), no database, no complexity. If you want a web-based calendar interface, look at [Baikal](/apps/baikal) (still CalDAV, but with a nicer web admin) or pair Radicale with a web calendar client. For pure sync with minimal resource usage, Radicale is unbeatable.
+Radicale is the best lightweight CalDAV/CardDAV server. It does exactly one thing: sync calendars and contacts across devices. No web UI for managing events (use your native calendar app), no database, no complexity. If you want a web-based calendar interface, look at [Baikal](/apps/baikal/) (still CalDAV, but with a nicer web admin) or pair Radicale with a web calendar client. For pure sync with minimal resource usage, Radicale is unbeatable.
 
 ## Related
 
-- [Best Self-Hosted Calendar & Contacts](/best/calendar-contacts)
-- [Radicale vs Baikal](/compare/radicale-vs-baikal)
-- [Replace Google Calendar with Self-Hosted](/replace/google-calendar)
-- [Replace iCloud Calendar with Self-Hosted](/replace/icloud-calendar)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Calendar & Contacts](/best/calendar-contacts/)
+- [Radicale vs Baikal](/compare/radicale-vs-baikal/)
+- [Replace Google Calendar with Self-Hosted](/replace/google-calendar/)
+- [Replace iCloud Calendar with Self-Hosted](/replace/icloud-calendar/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

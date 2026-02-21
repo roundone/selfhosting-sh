@@ -21,15 +21,15 @@ affiliateDisclosure: false
 
 ## What Is Prowlarr?
 
-Prowlarr is a centralized indexer manager that integrates with the entire *arr stack — [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), Lidarr, Readarr, and more. Instead of manually adding and maintaining indexers in each application separately, you configure them once in Prowlarr and it syncs everything automatically. It supports both torrent trackers and Usenet indexers. [Official site](https://prowlarr.com/)
+Prowlarr is a centralized indexer manager that integrates with the entire *arr stack — [Sonarr](/apps/sonarr/), [Radarr](/apps/radarr/), Lidarr, Readarr, and more. Instead of manually adding and maintaining indexers in each application separately, you configure them once in Prowlarr and it syncs everything automatically. It supports both torrent trackers and Usenet indexers. [Official site](https://prowlarr.com/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM (minimum)
-- At least one *arr app to connect to, such as [Sonarr](/apps/sonarr) or [Radarr](/apps/radarr)
+- At least one *arr app to connect to, such as [Sonarr](/apps/sonarr/) or [Radarr](/apps/radarr/)
 - Indexer accounts (public or private torrent trackers, Usenet indexers, or both)
 
 ## Docker Compose Configuration
@@ -93,14 +93,14 @@ Click **Test** to verify the connection, then **Save**.
 
 This is where Prowlarr earns its place in your stack. Go to **Settings > Apps > Add Application**.
 
-For [Sonarr](/apps/sonarr):
+For [Sonarr](/apps/sonarr/):
 
 - **Sync Level:** Full Sync (recommended — pushes all indexers and syncs changes automatically)
 - **Prowlarr Server:** `http://prowlarr:9696` (if on the same Docker network) or `http://your-server-ip:9696`
 - **Sonarr Server:** `http://sonarr:8989` (if on the same Docker network) or `http://your-server-ip:8989`
 - **API Key:** Found in Sonarr under **Settings > General > API Key**
 
-For [Radarr](/apps/radarr):
+For [Radarr](/apps/radarr/):
 
 - **Sync Level:** Full Sync
 - **Prowlarr Server:** `http://prowlarr:9696`
@@ -131,7 +131,7 @@ networks:
     external: true
 ```
 
-Do the same for Sonarr, Radarr, [qBittorrent](/apps/qbittorrent), and any other *arr stack containers.
+Do the same for Sonarr, Radarr, [qBittorrent](/apps/qbittorrent/), and any other *arr stack containers.
 
 ## Configuration
 
@@ -264,7 +264,7 @@ location / {
 
 If using a URL base (subfolder), set it under **Settings > General > URL Base** before configuring the reverse proxy.
 
-For full reverse proxy setup instructions, see our [Reverse Proxy guide](/foundations/reverse-proxy-explained).
+For full reverse proxy setup instructions, see our [Reverse Proxy guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -297,7 +297,7 @@ To restore from a built-in backup:
 3. Start Prowlarr and go to **System > Backup**
 4. Click **Restore** on the backup file
 
-For a comprehensive backup strategy, see our [Backup 3-2-1 Rule guide](/foundations/backup-3-2-1-rule).
+For a comprehensive backup strategy, see our [Backup 3-2-1 Rule guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -375,20 +375,20 @@ Prowlarr is one of the lightest apps in the *arr stack. It runs comfortably on a
 
 ## Verdict
 
-Prowlarr is a must-have if you run more than one *arr app. The moment you have both [Sonarr](/apps/sonarr) and [Radarr](/apps/radarr), managing indexers individually becomes tedious — add Prowlarr and you configure each indexer exactly once. It syncs everything to all connected apps automatically, and adding a new indexer takes seconds instead of repeating the same setup across multiple services.
+Prowlarr is a must-have if you run more than one *arr app. The moment you have both [Sonarr](/apps/sonarr/) and [Radarr](/apps/radarr/), managing indexers individually becomes tedious — add Prowlarr and you configure each indexer exactly once. It syncs everything to all connected apps automatically, and adding a new indexer takes seconds instead of repeating the same setup across multiple services.
 
-If you only run a single *arr app, Prowlarr is still worth it for the cleaner indexer management interface and the Flaresolverr integration. But the real payoff comes at scale: add Lidarr for music, Readarr for books, and [Bazarr](/apps/bazarr) for subtitles, and Prowlarr keeps all of them fed with indexers without any extra work.
+If you only run a single *arr app, Prowlarr is still worth it for the cleaner indexer management interface and the Flaresolverr integration. But the real payoff comes at scale: add Lidarr for music, Readarr for books, and [Bazarr](/apps/bazarr/) for subtitles, and Prowlarr keeps all of them fed with indexers without any extra work.
 
 Skip Prowlarr only if you exclusively use a single *arr app with one or two indexers that never change. Everyone else should deploy it.
 
 ## Related
 
-- [How to Self-Host Sonarr with Docker Compose](/apps/sonarr)
-- [How to Self-Host Radarr with Docker Compose](/apps/radarr)
-- [How to Self-Host qBittorrent with Docker](/apps/qbittorrent)
-- [How to Self-Host Bazarr with Docker](/apps/bazarr)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Sonarr with Docker Compose](/apps/sonarr/)
+- [How to Self-Host Radarr with Docker Compose](/apps/radarr/)
+- [How to Self-Host qBittorrent with Docker](/apps/qbittorrent/)
+- [How to Self-Host Bazarr with Docker](/apps/bazarr/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Networking](/foundations/docker-networking/)

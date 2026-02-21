@@ -20,12 +20,12 @@ affiliateDisclosure: false
 
 ## What Is Gatus?
 
-Gatus is a developer-oriented health dashboard and status page. It monitors HTTP, TCP, ICMP, DNS, and SSH endpoints, evaluates conditions you define (status codes, response times, certificate expiry), and displays results on a clean status page. Unlike [Uptime Kuma](/apps/uptime-kuma) which is configured via a web UI, Gatus uses YAML configuration — infrastructure-as-code for monitoring. [Official site](https://gatus.io/)
+Gatus is a developer-oriented health dashboard and status page. It monitors HTTP, TCP, ICMP, DNS, and SSH endpoints, evaluates conditions you define (status codes, response times, certificate expiry), and displays results on a clean status page. Unlike [Uptime Kuma](/apps/uptime-kuma/) which is configured via a web UI, Gatus uses YAML configuration — infrastructure-as-code for monitoring. [Official site](https://gatus.io/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM minimum
 - Endpoints to monitor (websites, APIs, services)
@@ -243,7 +243,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** gatus
 - **Forward Port:** 8080
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -253,7 +253,7 @@ Back up the config and data directories:
 tar -czf gatus-backup-$(date +%Y%m%d).tar.gz ./config ./data
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -285,7 +285,7 @@ tar -czf gatus-backup-$(date +%Y%m%d).tar.gz ./config ./data
 
 ## Verdict
 
-Gatus is the best monitoring tool for developers who prefer config-as-code over clicking through UIs. If you want a public status page that's defined in a YAML file and version-controlled in Git, Gatus is the answer. For a more traditional UI-driven approach, use [Uptime Kuma](/apps/uptime-kuma) instead. Gatus's extremely low resource usage makes it suitable for even the smallest VPS.
+Gatus is the best monitoring tool for developers who prefer config-as-code over clicking through UIs. If you want a public status page that's defined in a YAML file and version-controlled in Git, Gatus is the answer. For a more traditional UI-driven approach, use [Uptime Kuma](/apps/uptime-kuma/) instead. Gatus's extremely low resource usage makes it suitable for even the smallest VPS.
 
 ## FAQ
 
@@ -303,10 +303,10 @@ No. You must restart the container after config changes. This is by design — c
 
 ## Related
 
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

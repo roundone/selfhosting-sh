@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB+ of free RAM
 - IP cameras with RTSP support
 - Storage space for recordings
@@ -221,7 +221,7 @@ WebSocket Support: ON (required for live streaming)
 
 WebSocket support is critical — Shinobi's live view uses WebSocket connections for low-latency streaming.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -239,7 +239,7 @@ docker exec shinobi-db mysqldump -u majesticflame -p'your-db-password' ccio > sh
 docker cp shinobi:/config ./shinobi-config-backup/
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -287,7 +287,7 @@ Shinobi is a functional NVR with a modern web interface and useful multi-tenant 
 
 However, the development pace has slowed significantly, documentation is sparse, and the project is essentially a one-person operation. The Docker image uses rolling `dev` tags with no semantic versioning, making reproducible deployments harder.
 
-For new NVR deployments in 2026, [Frigate](/apps/frigate) is the recommended choice — better AI detection, better documentation, larger community, and more active development. Consider Shinobi if you specifically need multi-tenant user management or prefer web-based camera configuration over YAML files.
+For new NVR deployments in 2026, [Frigate](/apps/frigate/) is the recommended choice — better AI detection, better documentation, larger community, and more active development. Consider Shinobi if you specifically need multi-tenant user management or prefer web-based camera configuration over YAML files.
 
 ## Frequently Asked Questions
 
@@ -305,12 +305,12 @@ Shinobi CE (Community Edition) is the open-source version. Shinobi Pro was a pai
 
 ## Related
 
-- [Frigate vs Shinobi](/compare/frigate-vs-shinobi)
-- [ZoneMinder vs Shinobi](/compare/zoneminder-vs-shinobi)
-- [How to Self-Host Frigate](/apps/frigate)
-- [How to Self-Host ZoneMinder](/apps/zoneminder)
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring](/replace/ring)
-- [NVR Hardware Guide](/hardware/nvr-hardware)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Frigate vs Shinobi](/compare/frigate-vs-shinobi/)
+- [ZoneMinder vs Shinobi](/compare/zoneminder-vs-shinobi/)
+- [How to Self-Host Frigate](/apps/frigate/)
+- [How to Self-Host ZoneMinder](/apps/zoneminder/)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring](/replace/ring/)
+- [NVR Hardware Guide](/hardware/nvr-hardware/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

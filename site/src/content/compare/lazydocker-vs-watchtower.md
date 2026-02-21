@@ -20,7 +20,7 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun/) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
 
 ## Quick Verdict
 
@@ -112,7 +112,7 @@ Watchtower checks for new image versions on a schedule (daily at 4 AM in this ex
 
 If you must choose one: Watchtower provides more ongoing value by automating updates you'd otherwise have to do manually. Lazydocker is convenient but not essential — you can always use `docker ps` and `docker logs` directly.
 
-**Note on Watchtower:** The project hasn't had a release since November 2023 and appears to be in maintenance mode. It still works well, but if you want an actively developed alternative for update notifications, consider [Diun](/apps/diun) (which notifies you about available updates without automatically applying them).
+**Note on Watchtower:** The project hasn't had a release since November 2023 and appears to be in maintenance mode. It still works well, but if you want an actively developed alternative for update notifications, consider [Diun](/apps/diun/) (which notifies you about available updates without automatically applying them).
 
 ## Frequently Asked Questions
 
@@ -126,14 +126,14 @@ Indirectly. When Watchtower recreates a container, Lazydocker will show the new 
 
 ### Should I worry about Watchtower being in maintenance mode?
 
-Not immediately. The current version works fine. But if automated updates are critical to your workflow, monitor the project's GitHub for any activity. [Diun](/apps/diun) is an actively developed alternative that takes a notify-only approach (it tells you about updates but doesn't apply them automatically).
+Not immediately. The current version works fine. But if automated updates are critical to your workflow, monitor the project's GitHub for any activity. [Diun](/apps/diun/) is an actively developed alternative that takes a notify-only approach (it tells you about updates but doesn't apply them automatically).
 
 ## Related
 
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [How to Self-Host Watchtower](/apps/watchtower)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Updating Docker Containers Safely](/foundations/docker-updating)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [How to Self-Host Watchtower](/apps/watchtower/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Updating Docker Containers Safely](/foundations/docker-updating/)

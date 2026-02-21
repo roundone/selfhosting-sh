@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-**For most households, an Intel N100 or N305 mini PC is the best Jellyfin hardware.** Intel QuickSync handles hardware transcoding efficiently, power consumption stays under 15W, and the total cost is $150-350. If you only direct-play media (no transcoding), even a [Raspberry Pi 5](/hardware/raspberry-pi-home-server) works.
+**For most households, an Intel N100 or N305 mini PC is the best Jellyfin hardware.** Intel QuickSync handles hardware transcoding efficiently, power consumption stays under 15W, and the total cost is $150-350. If you only direct-play media (no transcoding), even a [Raspberry Pi 5](/hardware/raspberry-pi-home-server/) works.
 
 ## What Jellyfin Needs from Your Hardware
 
@@ -46,7 +46,7 @@ Most users need transcoding at least sometimes — when streaming to a phone on 
 
 If every client in your house can direct-play your media (modern smart TVs, Apple TV 4K, NVIDIA Shield), you barely need any compute power.
 
-**Recommended:** [Raspberry Pi 5](/hardware/raspberry-pi-home-server) (8GB, ~$80) or any leftover PC.
+**Recommended:** [Raspberry Pi 5](/hardware/raspberry-pi-home-server/) (8GB, ~$80) or any leftover PC.
 
 | Spec | Minimum |
 |------|---------|
@@ -60,7 +60,7 @@ If every client in your house can direct-play your media (modern smart TVs, Appl
 
 For a household where 1-2 people might transcode simultaneously.
 
-**Recommended:** [Intel N100 mini PC](/hardware/intel-n100-mini-pc) (~$150-200)
+**Recommended:** [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) (~$150-200)
 
 | Spec | Recommended |
 |------|------------|
@@ -76,7 +76,7 @@ The N100's 24 GPU execution units handle QuickSync transcoding efficiently. At 6
 
 For larger households or remote access with multiple concurrent viewers.
 
-**Recommended:** [Intel N305 mini PC](/hardware/intel-n305-mini-pc) (~$300-400)
+**Recommended:** [Intel N305 mini PC](/hardware/intel-n305-mini-pc/) (~$300-400)
 
 | Spec | Recommended |
 |------|------------|
@@ -138,10 +138,10 @@ For the best HDR tone mapping experience, use Intel 10th gen or newer. The N100 
 |-------------|-------------------|
 | Under 2TB | USB 3.0 external HDD |
 | 2-8TB | Internal SATA HDD (if your case has a bay) |
-| 8-20TB | [DAS enclosure](/hardware/das-vs-nas) or 2-bay NAS |
-| 20TB+ | [4+ bay NAS](/hardware/best-nas) or [DIY NAS](/hardware/diy-nas-build) |
+| 8-20TB | [DAS enclosure](/hardware/das-vs-nas/) or 2-bay NAS |
+| 20TB+ | [4+ bay NAS](/hardware/best-nas/) or [DIY NAS](/hardware/diy-nas-build/) |
 
-Use [NAS-rated drives](/hardware/best-hard-drives-nas) (WD Red Plus, Seagate IronWolf) for 24/7 operation. Desktop drives work but have shorter lifespans under continuous use.
+Use [NAS-rated drives](/hardware/best-hard-drives-nas/) (WD Red Plus, Seagate IronWolf) for 24/7 operation. Desktop drives work but have shorter lifespans under continuous use.
 
 ### Network Storage (NAS)
 Jellyfin can read media from NFS or SMB network shares. This is the cleanest setup: keep your Jellyfin compute node separate from your storage. Mount the NAS share and point Jellyfin at it.
@@ -199,7 +199,7 @@ If your media lives on a NAS, the NAS-to-Jellyfin link is the bottleneck. Use at
 
 | Component | Choice | Price |
 |-----------|--------|-------|
-| Computer | [Intel N100 mini PC](/hardware/intel-n100-mini-pc) (16GB/512GB) | ~$180 |
+| Computer | [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) (16GB/512GB) | ~$180 |
 | Media storage | Existing USB HDD or NAS | $0+ |
 | **Total** | | **~$180** |
 
@@ -209,7 +209,7 @@ Handles a household of 2-3 with occasional transcoding. Silent, tiny, draws 8-10
 
 | Component | Choice | Price |
 |-----------|--------|-------|
-| Computer | [Intel N305 mini PC](/hardware/intel-n305-mini-pc) (16GB/500GB) | ~$350 |
+| Computer | [Intel N305 mini PC](/hardware/intel-n305-mini-pc/) (16GB/500GB) | ~$350 |
 | Media storage | 4TB WD Red Plus (internal SATA bay) | ~$90 |
 | **Total** | | **~$440** |
 
@@ -219,10 +219,10 @@ Handles 3-5 concurrent streams, runs 10+ other containers alongside Jellyfin.
 
 | Component | Choice | Price |
 |-----------|--------|-------|
-| Computer | [Used Dell OptiPlex](/hardware/used-dell-optiplex) Micro (i5-12500T) | ~$200-300 |
+| Computer | [Used Dell OptiPlex](/hardware/used-dell-optiplex/) Micro (i5-12500T) | ~$200-300 |
 | GPU | NVIDIA Quadro P2000 (used) or T400 | ~$60-120 |
 | RAM | 32GB DDR4 | ~$60 |
-| Media storage | [Synology DS923+](/hardware/best-nas) or NFS share | ~$600+ |
+| Media storage | [Synology DS923+](/hardware/best-nas/) or NFS share | ~$600+ |
 | **Total** | | **~$600-1,000** |
 
 Handles 10-15+ concurrent transcodes. Dedicated GPU removes any transcoding ceiling. Pair with a NAS for storage.
@@ -291,12 +291,12 @@ A NAS is cleaner — it separates compute from storage, and you can share the sa
 
 ## Related
 
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc)
-- [Intel N305 Mini PC](/hardware/intel-n305-mini-pc)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Plex Transcoding Hardware Guide](/hardware/plex-transcoding-hardware)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [Used Dell OptiPlex Home Server](/hardware/used-dell-optiplex)
-- [DAS vs NAS](/hardware/das-vs-nas)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc/)
+- [Intel N305 Mini PC](/hardware/intel-n305-mini-pc/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Plex Transcoding Hardware Guide](/hardware/plex-transcoding-hardware/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [Used Dell OptiPlex Home Server](/hardware/used-dell-optiplex/)
+- [DAS vs NAS](/hardware/das-vs-nas/)

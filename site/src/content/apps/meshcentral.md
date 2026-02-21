@@ -29,7 +29,7 @@ Think of it as a self-hosted combination of TeamViewer, remote monitoring, and d
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (1 GB recommended for 50+ devices)
 - Ports 80 and 443 accessible (or use a reverse proxy)
 - A domain name (strongly recommended — MeshCentral works best with TLS)
@@ -161,7 +161,7 @@ docker compose up -d
 
 ### Behind a Reverse Proxy
 
-If using [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy):
+If using [Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), or [Caddy](/apps/caddy/):
 
 ```yaml
 environment:
@@ -242,7 +242,7 @@ MeshCentral requires WebSocket support in your reverse proxy. For Nginx Proxy Ma
 
 Critical: Do not use MeshCentral's built-in update mechanism when running in Docker. Update by pulling a newer image version instead.
 
-For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -260,7 +260,7 @@ docker compose start meshcentral
 
 The critical data is in `meshcentral-data` — this contains the config, database, and certificates. The `meshcentral-files` volume contains user-uploaded files.
 
-For your broader backup strategy, see [Backup Strategy](/foundations/backup-strategy).
+For your broader backup strategy, see [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -307,7 +307,7 @@ MeshCentral is the most feature-complete self-hosted remote management platform 
 
 **Choose MeshCentral if:** You manage multiple devices and need a centralized management console with remote desktop, terminal, file access, and device grouping. It's the right tool for IT teams, small businesses, and anyone managing more than a handful of machines.
 
-**Look elsewhere if:** You just need simple remote desktop between two machines. [RustDesk](/apps/rustdesk) is lighter and has better cross-platform clients for personal use. If you need browser-based access to specific servers without installing agents, [Apache Guacamole](/apps/guacamole) is more appropriate.
+**Look elsewhere if:** You just need simple remote desktop between two machines. [RustDesk](/apps/rustdesk/) is lighter and has better cross-platform clients for personal use. If you need browser-based access to specific servers without installing agents, [Apache Guacamole](/apps/guacamole/) is more appropriate.
 
 ## Frequently Asked Questions
 
@@ -317,7 +317,7 @@ Yes, fully open source under Apache 2.0. No paid tier, no feature gating. The en
 
 ### How does it compare to RustDesk?
 
-MeshCentral is a full device management platform; RustDesk is focused on remote desktop. MeshCentral has more features (scripting, device groups, user roles, Intel AMT) but more complexity. RustDesk has lighter clients and simpler setup for pure remote desktop use. See our [RustDesk vs MeshCentral comparison](/compare/rustdesk-vs-meshcentral).
+MeshCentral is a full device management platform; RustDesk is focused on remote desktop. MeshCentral has more features (scripting, device groups, user roles, Intel AMT) but more complexity. RustDesk has lighter clients and simpler setup for pure remote desktop use. See our [RustDesk vs MeshCentral comparison](/compare/rustdesk-vs-meshcentral/).
 
 ### Can I use it without installing an agent?
 
@@ -329,12 +329,12 @@ MeshCentral has a mobile-responsive web interface for managing devices from a ph
 
 ## Related
 
-- [How to Self-Host RustDesk](/apps/rustdesk)
-- [How to Self-Host Apache Guacamole](/apps/guacamole)
-- [RustDesk vs MeshCentral](/compare/rustdesk-vs-meshcentral)
-- [Self-Hosted TeamViewer Alternatives](/replace/teamviewer)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host Tailscale](/apps/tailscale)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host RustDesk](/apps/rustdesk/)
+- [How to Self-Host Apache Guacamole](/apps/guacamole/)
+- [RustDesk vs MeshCentral](/compare/rustdesk-vs-meshcentral/)
+- [Self-Hosted TeamViewer Alternatives](/replace/teamviewer/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host Tailscale](/apps/tailscale/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

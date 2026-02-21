@@ -151,10 +151,10 @@ Yes. Caddy supports upstream groups with load balancing policies (round_robin, l
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

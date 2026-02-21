@@ -50,7 +50,7 @@ Mailcow is a full-featured email server stack with a modern web UI, CalDAV/CardD
 - x86_64 only — no ARM support
 - Complex stack (15+ containers)
 
-[Read our full guide: How to Self-Host Mailcow](/apps/mailcow)
+[Read our full guide: How to Self-Host Mailcow](/apps/mailcow/)
 
 ### Mailu — Best Lightweight Alternative
 
@@ -67,7 +67,7 @@ Mailu is a simpler email server that's easier to set up and uses fewer resources
 - Less feature-rich admin UI than Mailcow
 - Smaller community
 
-[Read our full guide: How to Self-Host Mailu](/apps/mailu)
+[Read our full guide: How to Self-Host Mailu](/apps/mailu/)
 
 ### Stalwart — Best Modern Option
 
@@ -170,8 +170,8 @@ Yes. The Gmail app supports IMAP accounts. Add your self-hosted email as an IMAP
 
 ## Related
 
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [How to Self-Host Mailu](/apps/mailu)
-- [Mailu vs Mailcow](/compare/mailu-vs-mailcow)
-- [Best Self-Hosted Email Servers](/best/email)
-- [SMTP and Email Basics](/foundations/smtp-email-basics)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [How to Self-Host Mailu](/apps/mailu/)
+- [Mailu vs Mailcow](/compare/mailu-vs-mailcow/)
+- [Best Self-Hosted Email Servers](/best/email/)
+- [SMTP and Email Basics](/foundations/smtp-email-basics/)

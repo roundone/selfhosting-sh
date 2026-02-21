@@ -40,7 +40,7 @@ affiliateDisclosure: false
 
 **Replaces these Auth0 features:** Universal Login, Social Connections, custom flows (via flow designer), OIDC/SAML, MFA, user management, SCIM.
 
-[Read our full guide: How to Self-Host Authentik](/apps/authentik)
+[Read our full guide: How to Self-Host Authentik](/apps/authentik/)
 
 ### Keycloak — Most Feature-Complete Replacement
 
@@ -48,7 +48,7 @@ affiliateDisclosure: false
 
 **Replaces these Auth0 features:** Everything Authentik does, plus mature SAML, UMA authorization, LDAP federation, and the broadest protocol support.
 
-[Read our full guide: How to Self-Host Keycloak](/apps/keycloak)
+[Read our full guide: How to Self-Host Keycloak](/apps/keycloak/)
 
 ### Authelia — Simplest SSO Layer
 
@@ -56,14 +56,14 @@ affiliateDisclosure: false
 
 **Replaces these Auth0 features:** Basic SSO, MFA (TOTP, WebAuthn), access policies. Does not replace: SAML, social login, user management, custom flows.
 
-[Read our full guide: How to Self-Host Authelia](/apps/authelia)
+[Read our full guide: How to Self-Host Authelia](/apps/authelia/)
 
 ## Migration Guide
 
 ### From Auth0 to Authentik/Keycloak
 
 1. **Export users:** Use Auth0's Management API (`GET /api/v2/users`) to export your user directory. Auth0 doesn't export password hashes for security reasons — users will need to reset passwords.
-2. **Deploy your chosen IdP** ([Authentik guide](/apps/authentik) or [Keycloak guide](/apps/keycloak))
+2. **Deploy your chosen IdP** ([Authentik guide](/apps/authentik/) or [Keycloak guide](/apps/keycloak/))
 3. **Recreate social connections:** Configure the same OAuth providers (Google, GitHub, etc.) in your new IdP using the same client IDs from each provider's developer console
 4. **Recreate applications:** For each Auth0 application:
    - Create an OIDC client/provider in your new IdP
@@ -107,15 +107,15 @@ Yes. Auth0's OIDC implementation is standards-compliant, and so are Keycloak and
 
 ### Which is easier to set up: Authentik or Keycloak?
 
-Authentik has a gentler learning curve for developers familiar with Auth0's style. Keycloak has more features but a steeper initial setup. See our [Authentik vs Keycloak comparison](/compare/authentik-vs-keycloak).
+Authentik has a gentler learning curve for developers familiar with Auth0's style. Keycloak has more features but a steeper initial setup. See our [Authentik vs Keycloak comparison](/compare/authentik-vs-keycloak/).
 
 ## Related
 
-- [How to Self-Host Authentik](/apps/authentik)
-- [How to Self-Host Keycloak](/apps/keycloak)
-- [How to Self-Host Authelia](/apps/authelia)
-- [Authentik vs Keycloak](/compare/authentik-vs-keycloak)
-- [Authelia vs Keycloak](/compare/authelia-vs-keycloak)
-- [Self-Hosted Alternatives to Okta](/replace/okta)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Best Self-Hosted Password Managers](/best/password-management)
+- [How to Self-Host Authentik](/apps/authentik/)
+- [How to Self-Host Keycloak](/apps/keycloak/)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [Authentik vs Keycloak](/compare/authentik-vs-keycloak/)
+- [Authelia vs Keycloak](/compare/authelia-vs-keycloak/)
+- [Self-Hosted Alternatives to Okta](/replace/okta/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Best Self-Hosted Password Managers](/best/password-management/)

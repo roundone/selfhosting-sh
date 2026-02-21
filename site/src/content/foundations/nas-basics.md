@@ -19,7 +19,7 @@ A NAS (Network-Attached Storage) is a dedicated device that provides file storag
 
 For self-hosting, a NAS fills two roles:
 
-1. **Storage backend** — media libraries for [Jellyfin](/apps/jellyfin), photo collections for [Immich](/apps/immich), file sync for [Nextcloud](/apps/nextcloud), and backups for everything
+1. **Storage backend** — media libraries for [Jellyfin](/apps/jellyfin/), photo collections for [Immich](/apps/immich/), file sync for [Nextcloud](/apps/nextcloud/), and backups for everything
 2. **Docker host** — many NAS devices run Docker containers directly, doubling as both storage and application server
 
 ## NAS vs General-Purpose Server
@@ -109,7 +109,7 @@ OpenMediaVault (OMV) is a Debian-based NAS OS. Lightweight, free, and straightfo
 
 You can run Ubuntu Server or Debian and set up file sharing manually. Maximum flexibility, but you manage everything yourself — ZFS/mdadm, Samba, NFS, Docker, monitoring. Good if you already know Linux administration.
 
-See [Choosing a Linux Distro](/foundations/choosing-linux-distro) for server OS recommendations.
+See [Choosing a Linux Distro](/foundations/choosing-linux-distro/) for server OS recommendations.
 
 ## Storage Planning
 
@@ -134,7 +134,7 @@ RAID (Redundant Array of Independent Disks) protects your data from drive failur
 | RAID 6 | 4 | (n-2) drives | 2 drives | 5+ bay, maximum safety |
 | RAID 10 | 4 | 50% | 1 per mirror | Performance-critical |
 
-For a deeper explanation, see [RAID Configurations Explained](/foundations/raid-explained).
+For a deeper explanation, see [RAID Configurations Explained](/foundations/raid-explained/).
 
 **The recommendation:** For a 2-bay NAS, use RAID 1 (mirror). For 4+ bays, use RAID 5 or RAID 6. If using ZFS, the equivalents are `mirror`, `raidz1`, and `raidz2`.
 
@@ -228,7 +228,7 @@ services:
 
 RAID is not a backup. RAID protects against drive failure. It does not protect against accidental deletion, ransomware, filesystem corruption, or fire/theft. You still need an off-site backup.
 
-Follow the [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule): 3 copies, 2 different media types, 1 off-site.
+Follow the [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/): 3 copies, 2 different media types, 1 off-site.
 
 ### Using Desktop Drives in a RAID Array
 
@@ -244,10 +244,10 @@ A sudden power loss during a RAID write can corrupt your array. Connect your NAS
 
 ## Next Steps
 
-- Set up Docker to run apps on your NAS or server — [Docker Compose Basics](/foundations/docker-compose-basics)
-- Understand RAID configurations — [RAID Explained](/foundations/raid-explained)
-- Plan your backup strategy — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- Choose server hardware — [Getting Started with Self-Hosting](/foundations/getting-started)
+- Set up Docker to run apps on your NAS or server — [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Understand RAID configurations — [RAID Explained](/foundations/raid-explained/)
+- Plan your backup strategy — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- Choose server hardware — [Getting Started with Self-Hosting](/foundations/getting-started/)
 
 ## FAQ
 
@@ -269,10 +269,10 @@ Prebuilt NAS devices from Synology and QNAP are generally quiet (20-30 dB) when 
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [RAID Configurations Explained](/foundations/raid-explained)
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Home Network Setup](/foundations/home-network-setup)
-- [Choosing a Linux Distro](/foundations/choosing-linux-distro)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [RAID Configurations Explained](/foundations/raid-explained/)
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Home Network Setup](/foundations/home-network-setup/)
+- [Choosing a Linux Distro](/foundations/choosing-linux-distro/)

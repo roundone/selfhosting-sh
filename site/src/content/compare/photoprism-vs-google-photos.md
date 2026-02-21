@@ -111,7 +111,7 @@ At 2 TB+, self-hosting is significantly cheaper. At smaller storage levels, Goog
 - **Google Lens.** No equivalent in self-hosted photo tools.
 - **Uptime guarantee.** Google's infrastructure is always available. Your home server depends on your internet and hardware.
 
-For a better mobile experience with self-hosted AI features, consider [Immich](/apps/immich) instead — it has native mobile apps with background upload while still offering facial recognition and smart search.
+For a better mobile experience with self-hosted AI features, consider [Immich](/apps/immich/) instead — it has native mobile apps with background upload while still offering facial recognition and smart search.
 
 ## Frequently Asked Questions
 
@@ -119,16 +119,16 @@ For a better mobile experience with self-hosted AI features, consider [Immich](/
 No. Google's AI is trained on billions of photos with Google's massive compute resources. PhotoPrism's TensorFlow models are good — face detection works well, scene classification is decent — but Google's natural language search is noticeably more accurate and flexible.
 
 ### Can PhotoPrism auto-upload from my phone?
-Not directly. PhotoPrism has no mobile app. The recommended workaround is using Syncthing to sync your phone's camera folder to a directory that PhotoPrism watches. It works but adds complexity. For native auto-upload, use [Immich](/apps/immich).
+Not directly. PhotoPrism has no mobile app. The recommended workaround is using Syncthing to sync your phone's camera folder to a directory that PhotoPrism watches. It works but adds complexity. For native auto-upload, use [Immich](/apps/immich/).
 
 ### What about Google Photos' sharing features?
-PhotoPrism supports link-based sharing but lacks Google's collaborative features (shared albums with commenting, partner sharing, family libraries). For richer sharing, combine PhotoPrism with a shared folder via [Nextcloud](/apps/nextcloud).
+PhotoPrism supports link-based sharing but lacks Google's collaborative features (shared albums with commenting, partner sharing, family libraries). For richer sharing, combine PhotoPrism with a shared folder via [Nextcloud](/apps/nextcloud/).
 
 ## Related
 
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [Immich vs Google Photos](/compare/immich-vs-google-photos)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [Immich vs Google Photos](/compare/immich-vs-google-photos/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

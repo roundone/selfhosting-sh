@@ -107,10 +107,10 @@ If you're starting fresh with home automation, go with Home Assistant. Consider 
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host ioBroker](/apps/iobroker)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [openHAB vs ioBroker](/compare/openhab-vs-iobroker)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host ioBroker](/apps/iobroker/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [openHAB vs ioBroker](/compare/openhab-vs-iobroker/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)

@@ -23,7 +23,7 @@ Unlike Immich or PhotoPrism which focus on personal photo library management wit
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB RAM minimum
 - Disk space for your photo library
 - A domain name (recommended for public sharing)
@@ -266,7 +266,7 @@ Forward traffic to port 8000 (not port 80 — this changed in Lychee v7).
 
 After setting up the proxy, update `APP_URL` in your `.env` to the full HTTPS URL and restart the container.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -283,7 +283,7 @@ docker compose exec lychee_db mysqldump -u lychee -p lychee > lychee-db-backup-$
 tar czf lychee-uploads-backup-$(date +%Y%m%d).tar.gz /opt/lychee/uploads
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -317,7 +317,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup
 
 Lychee is the best self-hosted option for photo sharing and gallery presentation. Its clean, minimal UI is ideal for portfolios, event photography, and sharing curated collections via public links. The v7 rewrite on FrankenPHP delivers 3-4x better performance than the legacy version.
 
-Lychee is **not** a Google Photos replacement — it doesn't have mobile auto-upload, AI search, or face recognition. For those features, use [Immich](/apps/immich). Use Lychee when your primary goal is presenting and sharing beautiful photo galleries.
+Lychee is **not** a Google Photos replacement — it doesn't have mobile auto-upload, AI search, or face recognition. For those features, use [Immich](/apps/immich/). Use Lychee when your primary goal is presenting and sharing beautiful photo galleries.
 
 ## FAQ
 
@@ -327,7 +327,7 @@ Different tools for different purposes. Immich replaces Google Photos (mobile up
 
 ### Does Lychee support RAW files?
 
-Lychee supports JPEG, PNG, GIF, and WebP natively. RAW file support depends on the server's image processing capabilities. For RAW editing and management, consider [PhotoPrism](/apps/photoprism) instead.
+Lychee supports JPEG, PNG, GIF, and WebP natively. RAW file support depends on the server's image processing capabilities. For RAW editing and management, consider [PhotoPrism](/apps/photoprism/) instead.
 
 ### Can I import from Google Photos?
 
@@ -339,15 +339,15 @@ Yes. Use `ghcr.io/lycheeorg/lychee:v7.3.3-legacy` for the nginx+PHP-FPM variant.
 
 ## Related
 
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [Lychee vs PhotoView](/compare/lychee-vs-photoview)
-- [Immich vs Lychee](/compare/immich-vs-lychee)
-- [PhotoPrism vs Lychee](/compare/photoprism-vs-lychee)
-- [LibrePhotos vs Lychee](/compare/librephotos-vs-lychee)
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [Lychee vs PhotoView](/compare/lychee-vs-photoview/)
+- [Immich vs Lychee](/compare/immich-vs-lychee/)
+- [PhotoPrism vs Lychee](/compare/photoprism-vs-lychee/)
+- [LibrePhotos vs Lychee](/compare/librephotos-vs-lychee/)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

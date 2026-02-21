@@ -114,9 +114,9 @@ Vikunja has more granular permissions, assignees with priority levels, and API a
 
 ## Related
 
-- [How to Self-Host Vikunja](/apps/vikunja)
-- [How to Self-Host Planka](/apps/planka)
-- [Planka vs WeKan](/compare/planka-vs-wekan)
-- [Vikunja vs Todoist](/compare/vikunja-vs-todoist)
-- [Best Self-Hosted Task Management](/best/task-management)
-- [Self-Hosted Alternatives to Trello](/replace/trello)
+- [How to Self-Host Vikunja](/apps/vikunja/)
+- [How to Self-Host Planka](/apps/planka/)
+- [Planka vs WeKan](/compare/planka-vs-wekan/)
+- [Vikunja vs Todoist](/compare/vikunja-vs-todoist/)
+- [Best Self-Hosted Task Management](/best/task-management/)
+- [Self-Hosted Alternatives to Trello](/replace/trello/)

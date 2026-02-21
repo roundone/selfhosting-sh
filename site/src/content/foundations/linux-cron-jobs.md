@@ -20,8 +20,8 @@ Cron is Linux's built-in task scheduler. It runs commands on a schedule — ever
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- SSH access with sudo privileges ([SSH Setup Guide](/foundations/ssh-setup))
-- Basic command line familiarity ([Linux Basics](/foundations/linux-basics-self-hosting))
+- SSH access with sudo privileges ([SSH Setup Guide](/foundations/ssh-setup/))
+- Basic command line familiarity ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Cron Schedule Syntax
 
@@ -368,7 +368,7 @@ echo $?  # 0 = success
 
 ### Should I use cron or systemd timers?
 
-For simple, one-off scheduled tasks, cron is fine. For tasks that need dependency ordering, resource limits, automatic logging, or catch-up after missed runs, use [systemd timers](/foundations/linux-systemd). Both work well for self-hosting.
+For simple, one-off scheduled tasks, cron is fine. For tasks that need dependency ordering, resource limits, automatic logging, or catch-up after missed runs, use [systemd timers](/foundations/linux-systemd/). Both work well for self-hosting.
 
 ### How do I schedule a job to run every 30 seconds?
 
@@ -388,15 +388,15 @@ Yes, but it's generally better to run cron on the host and use `docker exec` to 
 
 ## Next Steps
 
-- [Systemd Services](/foundations/linux-systemd) — manage long-running services
-- [Backup Strategy](/foundations/backup-3-2-1-rule) — what to automate with cron
-- [Docker Compose Basics](/foundations/docker-compose-basics) — container management
+- [Systemd Services](/foundations/linux-systemd/) — manage long-running services
+- [Backup Strategy](/foundations/backup-3-2-1-rule/) — what to automate with cron
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — container management
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Systemd Services](/foundations/linux-systemd)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Systemd Services](/foundations/linux-systemd/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

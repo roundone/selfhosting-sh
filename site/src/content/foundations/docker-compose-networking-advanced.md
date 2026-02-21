@@ -19,9 +19,9 @@ Docker Compose automatically creates a bridge network for each project. That's e
 
 ## Prerequisites
 
-- Docker Compose basics ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Docker networking fundamentals ([Docker Networking](/foundations/docker-networking))
-- Understanding of IP addresses and subnets ([Subnets and VLANs](/foundations/subnets-vlans))
+- Docker Compose basics ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Docker networking fundamentals ([Docker Networking](/foundations/docker-networking/))
+- Understanding of IP addresses and subnets ([Subnets and VLANs](/foundations/subnets-vlans/))
 
 ## Custom Named Networks
 
@@ -355,7 +355,7 @@ docker network disconnect mynetwork mycontainer
 docker network prune
 ```
 
-See [Docker Networking Issues](/foundations/docker-networking-issues) for comprehensive troubleshooting.
+See [Docker Networking Issues](/foundations/docker-networking-issues/) for comprehensive troubleshooting.
 
 ## Common Patterns for Self-Hosting
 
@@ -421,9 +421,9 @@ No. Use separate networks for isolation. A compromised container on a shared net
 
 ## Related
 
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Networking Issues](/foundations/docker-networking-issues)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Subnets and VLANs](/foundations/subnets-vlans)
-- [Docker Security](/foundations/docker-security)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Networking Issues](/foundations/docker-networking-issues/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Subnets and VLANs](/foundations/subnets-vlans/)
+- [Docker Security](/foundations/docker-security/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

@@ -43,7 +43,7 @@ Self-hosting your audiobook collection means DRM-free playback, permanent access
 
 **What you lose vs Audible:** No Whispersync (Kindle book + Audible narration sync). No access to Audible's catalog — you need to own the audiobook files. No Audible Originals or Plus catalog.
 
-[Read our full guide: [How to Self-Host Audiobookshelf](/apps/audiobookshelf)]
+[Read our full guide: [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)]
 
 ### Jellyfin — If You Already Run It
 
@@ -53,7 +53,7 @@ Self-hosting your audiobook collection means DRM-free playback, permanent access
 
 **Why you shouldn't:** Audiobookshelf is dramatically better for audiobooks. The dedicated mobile apps, proper chapter navigation, and book-level progress tracking make a real difference.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ## Migration Guide
 
@@ -152,9 +152,9 @@ Yes. It manages podcast subscriptions with automatic episode downloads, playback
 
 ## Related
 
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

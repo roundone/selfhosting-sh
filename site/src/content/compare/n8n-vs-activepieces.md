@@ -144,9 +144,9 @@ Both support importing Zapier-style workflows conceptually, but neither has a di
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Activepieces](/apps/activepieces)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Huginn](/compare/n8n-vs-huginn)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Activepieces](/apps/activepieces/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Huginn](/compare/n8n-vs-huginn/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)

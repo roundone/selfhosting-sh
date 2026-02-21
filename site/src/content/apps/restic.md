@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker installed ([guide](/foundations/docker-compose-basics)) — or install Restic directly
+- Docker installed ([guide](/foundations/docker-compose-basics/)) — or install Restic directly
 - Storage destination for backups (local disk, NAS, S3 bucket, SFTP server)
 - Data to back up (Docker volumes, config files, databases)
 
@@ -318,7 +318,7 @@ Yes. All data is encrypted with AES-256 before leaving your machine. The reposit
 
 ### Restic vs BorgBackup — which should I use?
 
-Restic supports more storage backends (S3, B2, Azure, GCS) and is easier to set up with cloud storage. [BorgBackup](/apps/borgbackup) has better compression and is slightly more efficient on local/SSH storage. See [Restic vs BorgBackup](/compare/restic-vs-borgbackup) for the full comparison.
+Restic supports more storage backends (S3, B2, Azure, GCS) and is easier to set up with cloud storage. [BorgBackup](/apps/borgbackup/) has better compression and is slightly more efficient on local/SSH storage. See [Restic vs BorgBackup](/compare/restic-vs-borgbackup/) for the full comparison.
 
 ### Can Restic back up to multiple destinations?
 
@@ -328,21 +328,21 @@ RESTIC_REPOSITORY="/mnt/local-backup" restic backup /data
 RESTIC_REPOSITORY="s3:s3.amazonaws.com/offsite-bucket" restic backup /data
 ```
 
-This is a good practice for the [3-2-1 backup rule](/foundations/backup-3-2-1-rule).
+This is a good practice for the [3-2-1 backup rule](/foundations/backup-3-2-1-rule/).
 
 ## Verdict
 
-Restic is the best general-purpose backup tool for self-hosters. It encrypts by default, deduplicates efficiently, and supports every storage backend you'd want — from a local USB drive to S3 or Backblaze B2. The CLI is clean and well-documented. The main downside is no built-in GUI — if you want a web interface for managing backups, look at [Duplicati](/apps/duplicati) or pair Restic with [Borgmatic](/apps/borgmatic)-style wrappers. For anyone comfortable with the command line, Restic should be your first choice.
+Restic is the best general-purpose backup tool for self-hosters. It encrypts by default, deduplicates efficiently, and supports every storage backend you'd want — from a local USB drive to S3 or Backblaze B2. The CLI is clean and well-documented. The main downside is no built-in GUI — if you want a web interface for managing backups, look at [Duplicati](/apps/duplicati/) or pair Restic with [Borgmatic](/apps/borgmatic/)-style wrappers. For anyone comfortable with the command line, Restic should be your first choice.
 
 ## Related
 
-- [How to Self-Host BorgBackup](/apps/borgbackup)
-- [How to Self-Host Kopia](/apps/kopia)
-- [Restic vs BorgBackup](/compare/restic-vs-borgbackup)
-- [Borgmatic vs Restic](/compare/borgmatic-vs-restic)
-- [Duplicati vs Restic](/compare/duplicati-vs-restic)
-- [Best Self-Hosted Backup](/best/backup)
-- [Replace Backblaze](/replace/backblaze)
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
+- [How to Self-Host BorgBackup](/apps/borgbackup/)
+- [How to Self-Host Kopia](/apps/kopia/)
+- [Restic vs BorgBackup](/compare/restic-vs-borgbackup/)
+- [Borgmatic vs Restic](/compare/borgmatic-vs-restic/)
+- [Duplicati vs Restic](/compare/duplicati-vs-restic/)
+- [Best Self-Hosted Backup](/best/backup/)
+- [Replace Backblaze](/replace/backblaze/)
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)

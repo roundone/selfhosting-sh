@@ -42,7 +42,7 @@ Outline provides the editing experience Confluence wishes it had. Fast, clean, r
 
 **Best for:** Teams that want a fast, modern documentation platform to replace Confluence's sluggish UI.
 
-[Read our full guide: [How to Self-Host Outline](/apps/outline)]
+[Read our full guide: [How to Self-Host Outline](/apps/outline/)]
 
 ### BookStack — Best for Structured Documentation
 
@@ -50,7 +50,7 @@ BookStack's Shelves → Books → Chapters → Pages hierarchy maps naturally to
 
 **Best for:** Teams that want a structured wiki similar to Confluence's organizational model.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### Wiki.js — Best for Developer Documentation
 
@@ -58,7 +58,7 @@ Wiki.js offers Git sync (push all content to a repo), Markdown + WYSIWYG + HTML 
 
 **Best for:** Development teams that want Git-integrated documentation.
 
-[Read our full guide: [How to Self-Host Wiki.js](/apps/wiki-js)]
+[Read our full guide: [How to Self-Host Wiki.js](/apps/wiki-js/)]
 
 ### AppFlowy — Best for Project Documentation
 
@@ -66,7 +66,7 @@ If your Confluence use includes databases, task boards, and project tracking alo
 
 **Best for:** Teams using Confluence alongside Jira for project documentation with structured data.
 
-[Read our full guide: [How to Self-Host AppFlowy](/apps/appflowy)]
+[Read our full guide: [How to Self-Host AppFlowy](/apps/appflowy/)]
 
 ## Migration Guide
 
@@ -125,13 +125,13 @@ If your Confluence use includes databases, task boards, and project tracking alo
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [Replace Notion](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [Replace Notion](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

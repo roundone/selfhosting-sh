@@ -21,9 +21,9 @@ This guide covers automatic update solutions, when to use them, and when not to.
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Understanding of Docker images and tags ([Docker Image Management](/foundations/docker-image-management))
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Understanding of Docker images and tags ([Docker Image Management](/foundations/docker-image-management/))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
 
 ## Should You Auto-Update?
 
@@ -43,7 +43,7 @@ Automatic updates are convenient but come with risk. A broken update at 3 AM wit
 
 ## Watchtower
 
-> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. For new setups, use [DIUN](/apps/diun) (notify-only, never touches containers) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval). The configuration below is kept for reference if you have an existing Watchtower installation.
+> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. For new setups, use [DIUN](/apps/diun/) (notify-only, never touches containers) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval). The configuration below is kept for reference if you have an existing Watchtower installation.
 
 Watchtower was the most popular automatic update tool for Docker containers. It monitors running containers, checks for new image versions, pulls them, and recreates containers with the same configuration.
 
@@ -192,7 +192,7 @@ echo "=== Update complete ==="
 docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
 ```
 
-See [Docker Updating](/foundations/docker-updating) for the complete manual update process.
+See [Docker Updating](/foundations/docker-updating/) for the complete manual update process.
 
 ## Rollback Strategy
 
@@ -244,16 +244,16 @@ docker compose up -d postgres
 docker exec -i postgres psql -U postgres < /backup/db-YYYYMMDD.sql
 ```
 
-See [Backup Docker Volumes](/foundations/backup-docker-volumes) for backup strategies.
+See [Backup Docker Volumes](/foundations/backup-docker-volumes/) for backup strategies.
 
 ## Update Schedule Recommendations
 
 | Category | Update Frequency | Method |
 |----------|-----------------|--------|
 | Security-critical (reverse proxy, auth) | Weekly | Manual or auto with notifications |
-| Standard web apps | Weekly to monthly | Auto with [DIUN](/apps/diun) notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) |
+| Standard web apps | Weekly to monthly | Auto with [DIUN](/apps/diun/) notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) |
 | Databases | Monthly, after backup | Manual only |
-| Monitoring tools | Monthly | Auto with [DIUN](/apps/diun) notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) |
+| Monitoring tools | Monthly | Auto with [DIUN](/apps/diun/) notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) |
 | Media servers | Monthly | Auto or manual |
 
 ### Cron-Based Manual Updates
@@ -284,7 +284,7 @@ done
 
 ### Is Watchtower safe to use in production?
 
-Watchtower is now deprecated — the `containrrr/watchtower` repository has been archived. It was widely used but carried inherent risk, as any automatic update can break things. For new setups, use [DIUN](/apps/diun) (notify-only) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained with manual approval support). If you have an existing Watchtower installation, it will continue to function but will not receive updates or security patches.
+Watchtower is now deprecated — the `containrrr/watchtower` repository has been archived. It was widely used but carried inherent risk, as any automatic update can break things. For new setups, use [DIUN](/apps/diun/) (notify-only) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained with manual approval support). If you have an existing Watchtower installation, it will continue to function but will not receive updates or security patches.
 
 ### Why shouldn't I use `:latest` tags with auto-updates?
 
@@ -300,9 +300,9 @@ Watchtower only updates images — it doesn't modify your `docker-compose.yml`. 
 
 ## Related
 
-- [Docker Updating](/foundations/docker-updating)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Image Management](/foundations/docker-image-management)
-- [Backup Docker Volumes](/foundations/backup-docker-volumes)
-- [Docker Common Issues](/foundations/docker-common-issues)
-- [Monitoring Basics](/foundations/monitoring-basics)
+- [Docker Updating](/foundations/docker-updating/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Image Management](/foundations/docker-image-management/)
+- [Backup Docker Volumes](/foundations/backup-docker-volumes/)
+- [Docker Common Issues](/foundations/docker-common-issues/)
+- [Monitoring Basics](/foundations/monitoring-basics/)

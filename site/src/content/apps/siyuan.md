@@ -29,7 +29,7 @@ Running SiYuan as a Docker container provides a web-accessible note-taking inter
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum (2 GB recommended)
 - 5 GB of free disk space
 - A domain name (recommended for remote access)
@@ -138,7 +138,7 @@ id -u && id -g
 
 Set up a reverse proxy to access SiYuan over HTTPS. Point your proxy to port 6806. SiYuan uses WebSocket connections, so ensure your proxy supports WebSocket passthrough.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -158,7 +158,7 @@ docker cp $(docker compose ps -q siyuan):/siyuan/workspace ./siyuan-backup
 docker compose start siyuan
 ```
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -192,20 +192,20 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 SiYuan is the best self-hosted option if you want Obsidian-like features (bidirectional links, graph view, block references) with a WYSIWYG editor instead of plain Markdown. The block-level architecture enables powerful features like block embedding and database views that most note-taking apps can't match.
 
-The trade-off is complexity — the learning curve is steeper than [BookStack](/apps/bookstack) or [Joplin](/apps/joplin-server), and the custom storage format means your notes aren't plain Markdown files. If you want simple Markdown notes with sync, use [Joplin](/apps/joplin-server). If you want a team wiki, use [BookStack](/apps/bookstack) or [Outline](/apps/outline). For a personal knowledge base with maximum power, SiYuan delivers.
+The trade-off is complexity — the learning curve is steeper than [BookStack](/apps/bookstack/) or [Joplin](/apps/joplin-server/), and the custom storage format means your notes aren't plain Markdown files. If you want simple Markdown notes with sync, use [Joplin](/apps/joplin-server/). If you want a team wiki, use [BookStack](/apps/bookstack/) or [Outline](/apps/outline/). For a personal knowledge base with maximum power, SiYuan delivers.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [Joplin vs SiYuan](/compare/joplin-vs-siyuan)
-- [Outline vs SiYuan](/compare/outline-vs-siyuan)
-- [Trilium vs SiYuan](/compare/trilium-vs-siyuan)
-- [BookStack vs SiYuan](/compare/bookstack-vs-siyuan)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [Replace Notion](/replace/notion)
-- [Replace Evernote](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [Joplin vs SiYuan](/compare/joplin-vs-siyuan/)
+- [Outline vs SiYuan](/compare/outline-vs-siyuan/)
+- [Trilium vs SiYuan](/compare/trilium-vs-siyuan/)
+- [BookStack vs SiYuan](/compare/bookstack-vs-siyuan/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [Replace Notion](/replace/notion/)
+- [Replace Evernote](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

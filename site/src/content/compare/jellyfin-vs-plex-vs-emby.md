@@ -220,13 +220,13 @@ Jellyfin. It's the lightest, runs well on a Pi 4/5, and supports hardware transc
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

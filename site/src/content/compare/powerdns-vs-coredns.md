@@ -110,8 +110,8 @@ PowerDNS serves authoritative DNS for major hosting providers and ISPs. CoreDNS 
 
 ## Related
 
-- [Unbound vs CoreDNS](/compare/unbound-vs-coredns)
-- [Technitium vs Unbound](/compare/technitium-vs-unbound)
-- [Pi-hole vs AdGuard Home DNS](/compare/pihole-vs-adguard-dns)
-- [Best Self-Hosted DNS](/best/dns-networking)
-- [DNS Explained](/foundations/dns-explained)
+- [Unbound vs CoreDNS](/compare/unbound-vs-coredns/)
+- [Technitium vs Unbound](/compare/technitium-vs-unbound/)
+- [Pi-hole vs AdGuard Home DNS](/compare/pihole-vs-adguard-dns/)
+- [Best Self-Hosted DNS](/best/dns-networking/)
+- [DNS Explained](/foundations/dns-explained/)

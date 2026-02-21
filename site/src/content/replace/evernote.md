@@ -44,7 +44,7 @@ Joplin even has an Evernote import tool that handles `.enex` files, preserving t
 
 **Best for:** Evernote users who want a familiar workflow with self-hosted sync.
 
-[Read our full guide: [How to Self-Host Joplin Server](/apps/joplin-server)]
+[Read our full guide: [How to Self-Host Joplin Server](/apps/joplin-server/)]
 
 ### Trilium Notes — Best for Power Users
 
@@ -52,7 +52,7 @@ Trilium offers hierarchical notes with features Evernote never had: note cloning
 
 **Best for:** Users who outgrew Evernote and want a more powerful knowledge management tool.
 
-[Read our full guide: [How to Self-Host Trilium Notes](/apps/trilium)]
+[Read our full guide: [How to Self-Host Trilium Notes](/apps/trilium/)]
 
 ### SiYuan — Best Block Editor
 
@@ -60,7 +60,7 @@ SiYuan provides a WYSIWYG block editor with bidirectional links, block reference
 
 **Best for:** Users who want to upgrade from Evernote's basic editor to block-based editing with bidirectional links.
 
-[Read our full guide: [How to Self-Host SiYuan](/apps/siyuan)]
+[Read our full guide: [How to Self-Host SiYuan](/apps/siyuan/)]
 
 ### Obsidian + LiveSync — Best for Markdown Purists
 
@@ -68,7 +68,7 @@ Obsidian stores notes as plain Markdown files with a massive plugin ecosystem (1
 
 **Best for:** Users who want plain Markdown files they own forever, with a great editor and plugin ecosystem.
 
-[Read our full guide: [How to Self-Host Obsidian Sync](/apps/obsidian-livesync)]
+[Read our full guide: [How to Self-Host Obsidian Sync](/apps/obsidian-livesync/)]
 
 ## Migration Guide
 
@@ -119,13 +119,13 @@ The Joplin import handles Evernote's format well. Most formatting transfers clea
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [How to Self-Host Obsidian Sync](/apps/obsidian-livesync)
-- [Replace Notion](/replace/notion)
-- [Replace OneNote](/replace/onenote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [How to Self-Host Obsidian Sync](/apps/obsidian-livesync/)
+- [Replace Notion](/replace/notion/)
+- [Replace OneNote](/replace/onenote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -100,10 +100,10 @@ Outline is leaner overall. AFFiNE's whiteboard and block editor features consume
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host AFFiNE](/apps/affine)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Alternatives to Notion](/replace/notion)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host AFFiNE](/apps/affine/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Alternatives to Notion](/replace/notion/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)

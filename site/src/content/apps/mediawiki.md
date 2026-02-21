@@ -26,7 +26,7 @@ MediaWiki is the wiki engine behind Wikipedia. It powers one of the most visited
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space
 - 512 MB of RAM minimum, 1 GB recommended
 - A domain name (optional, for remote access)
@@ -234,7 +234,7 @@ For team wikis, integrate with Active Directory or LDAP using the `LDAPProvider`
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 When running behind a reverse proxy, update `LocalSettings.php`:
 
@@ -279,7 +279,7 @@ MediaWiki also includes a built-in maintenance script for XML dumps:
 docker exec mediawiki php maintenance/dumpBackup.php --full > mediawiki-content-$(date +%Y%m%d).xml
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ## Troubleshooting
 
@@ -333,23 +333,23 @@ docker exec mediawiki ls -la /var/www/html/LocalSettings.php
 
 MediaWiki is the most powerful self-hosted wiki available. The template system, structured data support, extension ecosystem, and proven scalability are unmatched. It literally runs Wikipedia.
 
-The trade-off is complexity. MediaWiki's setup is more involved than [Wiki.js](/apps/wikijs) or [BookStack](/apps/bookstack), the default editing experience is wiki-syntax-based (VisualEditor adds WYSIWYG but requires extra setup), and theming is less intuitive. For a small team wiki, MediaWiki is overkill. For a large knowledge base with complex organizational needs, nothing else comes close.
+The trade-off is complexity. MediaWiki's setup is more involved than [Wiki.js](/apps/wikijs/) or [BookStack](/apps/bookstack/), the default editing experience is wiki-syntax-based (VisualEditor adds WYSIWYG but requires extra setup), and theming is less intuitive. For a small team wiki, MediaWiki is overkill. For a large knowledge base with complex organizational needs, nothing else comes close.
 
 **Choose MediaWiki if:** you need Wikipedia-level features — templates, structured data, categories, and scalability to millions of pages.
 
-**Choose [Wiki.js](/apps/wikijs) if:** you want a modern, easy-to-set-up wiki with a great editor experience.
+**Choose [Wiki.js](/apps/wikijs/) if:** you want a modern, easy-to-set-up wiki with a great editor experience.
 
-**Choose [DokuWiki](/apps/dokuwiki) if:** you want zero database overhead and flat-file simplicity.
+**Choose [DokuWiki](/apps/dokuwiki/) if:** you want zero database overhead and flat-file simplicity.
 
 ## Related
 
-- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki)
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [How to Self-Host Wiki.js](/apps/wikijs)
-- [How to Self-Host DokuWiki](/apps/dokuwiki)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [Best Self-Hosted Wiki](/best/wiki)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki/)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [How to Self-Host Wiki.js](/apps/wikijs/)
+- [How to Self-Host DokuWiki](/apps/dokuwiki/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [Best Self-Hosted Wiki](/best/wiki/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

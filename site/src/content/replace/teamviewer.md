@@ -91,19 +91,19 @@ networks:
 
 ### Tailscale + Native RDP/VNC — Best for Simple Remote Access
 
-If you just need to access your machines remotely (not provide support to others), [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard) combined with native RDP (Windows) or VNC (Linux/Mac) gives you direct, encrypted remote desktop access without a middleman.
+If you just need to access your machines remotely (not provide support to others), [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/) combined with native RDP (Windows) or VNC (Linux/Mac) gives you direct, encrypted remote desktop access without a middleman.
 
 **What you get:** Encrypted network access to all your machines. Use Windows Remote Desktop, VNC, or SSH natively. No port forwarding needed with Tailscale.
 
 **Best for:** Self-hosters who need to access their own machines remotely. Not ideal for providing support to non-technical users (they'd need Tailscale installed).
 
-[Read our Tailscale guide: [How to Set Up Tailscale](/apps/tailscale)]
+[Read our Tailscale guide: [How to Set Up Tailscale](/apps/tailscale/)]
 
 ## Migration Guide
 
 ### For Personal Remote Access
 
-1. Install [Tailscale](/apps/tailscale) on all your devices (5 minutes per device)
+1. Install [Tailscale](/apps/tailscale/) on all your devices (5 minutes per device)
 2. Connect to remote machines using native RDP (Windows) or VNC (Linux/Mac) over Tailscale's encrypted network
 3. Uninstall TeamViewer
 4. Done — no server to maintain, no port forwarding
@@ -166,10 +166,10 @@ AnyDesk has similar commercial-use restrictions as TeamViewer and is also propri
 
 ## Related
 
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -179,7 +179,7 @@ Unraid's license cost is offset by lower RAM requirements. TrueNAS's "free" soft
 
 **Unraid is the better home server.** GPU passthrough, flexible storage, and Community Applications make it the better platform for self-hosting Docker containers and VMs alongside storage.
 
-If you primarily want storage with some Docker: TrueNAS. If you primarily want a Docker/VM server with flexible storage: Unraid. Many homelabbers run both — TrueNAS for critical data, Unraid or a [mini PC](/hardware/best-mini-pc) for containers.
+If you primarily want storage with some Docker: TrueNAS. If you primarily want a Docker/VM server with flexible storage: Unraid. Many homelabbers run both — TrueNAS for critical data, Unraid or a [mini PC](/hardware/best-mini-pc/) for containers.
 
 ## FAQ
 
@@ -201,9 +201,9 @@ Unraid 7.x added ZFS support for cache pools. The main array still uses Unraid's
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Synology vs Unraid](/hardware/synology-vs-unraid)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [RAID Levels Explained](/hardware/raid-explained)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Synology vs Unraid](/hardware/synology-vs-unraid/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [RAID Levels Explained](/hardware/raid-explained/)

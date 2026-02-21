@@ -49,7 +49,7 @@ HDDs win by 4x on cost for bulk storage.
 
 ### NAS Primary Storage
 
-For a [NAS](/hardware/best-nas) storing files, photos, and backups alongside media, HDDs are the practical choice. SHR/RAID 5 across 4 HDDs gives you reasonable random I/O performance through striping, and the cost per TB makes large arrays affordable.
+For a [NAS](/hardware/best-nas/) storing files, photos, and backups alongside media, HDDs are the practical choice. SHR/RAID 5 across 4 HDDs gives you reasonable random I/O performance through striping, and the cost per TB makes large arrays affordable.
 
 ### Cold Backups
 
@@ -136,7 +136,7 @@ HDDs produce 25-35 dB of noise from spinning platters and head movement. SSDs ar
 If your server is in a living space, bedroom, or home office, noise matters. Options:
 - Use SSDs for everything (expensive for bulk storage)
 - Put the NAS in a closet, basement, or utility room
-- Use 5400 RPM drives (quieter than 7200 RPM) — see [WD Red Plus](/hardware/best-hard-drives-nas)
+- Use 5400 RPM drives (quieter than 7200 RPM) — see [WD Red Plus](/hardware/best-hard-drives-nas/)
 - Enable HDD hibernation for infrequently-accessed drives
 
 ## FAQ
@@ -159,9 +159,9 @@ No. Consumer NVMe SSDs have more than enough endurance for home server workloads
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best SSD for Home Servers](/hardware/best-ssd-home-server)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best SSD for Home Servers](/hardware/best-ssd-home-server/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

@@ -116,9 +116,9 @@ Both handle large libraries reasonably well. Lychee uses MariaDB for indexing, w
 
 ## Related
 
-- [How to Self-Host Lychee](/apps/lychee)
-- [How to Self-Host Photoview](/apps/photoview)
-- [Immich vs Lychee](/compare/immich-vs-lychee)
-- [Immich vs Photoview](/compare/immich-vs-photoview)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [Best Self-Hosted Photo Management](/best/photo-management)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [How to Self-Host Photoview](/apps/photoview/)
+- [Immich vs Lychee](/compare/immich-vs-lychee/)
+- [Immich vs Photoview](/compare/immich-vs-photoview/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)

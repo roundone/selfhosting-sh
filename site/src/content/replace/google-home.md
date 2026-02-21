@@ -42,25 +42,25 @@ Home Assistant is the clear #1 replacement for Google Home. With 2,000+ integrat
 
 Home Assistant can even integrate with Google Home if you want to keep using Google speakers for voice commands while running all automation logic locally.
 
-[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant)]
+[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant/)]
 
 ### openHAB — Best for Protocol Diversity
 
 openHAB supports 400+ bindings and excels at integrating diverse protocols — KNX, Modbus, EnOcean, Z-Wave, Zigbee, MQTT, and more. If your smart home includes industrial or niche hardware that Google Home can't control at all, openHAB likely has a binding for it. The Java-based rule engine is powerful for complex automation logic.
 
-[Read our full guide: [How to Self-Host openHAB](/apps/openhab)]
+[Read our full guide: [How to Self-Host openHAB](/apps/openhab/)]
 
 ### Gladys Assistant — Best for Privacy Purists
 
 Gladys Assistant is designed from the ground up with zero cloud connectivity. There's no optional cloud sync, no telemetry, no account creation on external servers. If your primary reason for leaving Google Home is privacy, Gladys delivers the strongest guarantee. The UI is clean and modern, though the integration list (~30) is limited compared to Home Assistant.
 
-[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant)]
+[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)]
 
 ### Domoticz — Best Lightweight Option
 
 If you want home automation on a Raspberry Pi Zero or similarly constrained hardware, Domoticz runs at 50 MB RAM. It supports Z-Wave, Zigbee, MQTT, and 433 MHz RF devices natively. The UI is dated but functional, and Lua scripting provides flexible automation. Not a feature-for-feature Google Home replacement, but a solid lightweight platform.
 
-[Read our full guide: [How to Self-Host Domoticz](/apps/domoticz)]
+[Read our full guide: [How to Self-Host Domoticz](/apps/domoticz/)]
 
 ## Migration Guide
 
@@ -78,7 +78,7 @@ If you want home automation on a Raspberry Pi Zero or similarly constrained hard
 
 ### Migration Steps
 
-1. **Set up Home Assistant** on your server or Pi ([guide](/apps/home-assistant))
+1. **Set up Home Assistant** on your server or Pi ([guide](/apps/home-assistant/))
 2. **Add your Zigbee/Z-Wave coordinator** — if you use a Zigbee stick, pair it with ZHA or Zigbee2MQTT
 3. **Re-pair WiFi devices** — most WiFi devices can be added via their native integration (Hue, TP-Link, Shelly, etc.)
 4. **Recreate automations** — convert Google Home routines to Home Assistant automations
@@ -109,12 +109,12 @@ Be honest about the trade-offs:
 
 ## Related
 
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Replace Amazon Alexa](/replace/amazon-alexa)
-- [Replace Apple HomeKit](/replace/apple-homekit)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Replace Amazon Alexa](/replace/amazon-alexa/)
+- [Replace Apple HomeKit](/replace/apple-homekit/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

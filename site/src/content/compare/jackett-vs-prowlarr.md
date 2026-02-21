@@ -115,8 +115,8 @@ Unlikely in the near term. Jackett has a large user base and active maintainers.
 
 ## Related
 
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Jackett](/apps/jackett)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Jackett](/apps/jackett/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [Best Self-Hosted Download Management](/best/download-management/)

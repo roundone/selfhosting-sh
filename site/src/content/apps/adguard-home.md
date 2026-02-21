@@ -18,12 +18,12 @@ affiliateDisclosure: false
 
 [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) is a network-wide ad blocker and DNS server. Point your router or devices at it and every DNS query passes through AdGuard Home first -- ads, trackers, malware domains, and telemetry get blocked before the connection is ever made. No per-device software required. Phones, smart TVs, IoT devices, laptops -- everything on the network benefits immediately.
 
-What sets AdGuard Home apart from [Pi-hole](/apps/pi-hole) is built-in support for encrypted DNS protocols (DNS-over-HTTPS, DNS-over-TLS, DNS-over-QUIC), a cleaner web interface, and a more modern codebase written in Go. It replaces browser-based ad blockers, cloud DNS filtering services, and commercial "secure DNS" subscriptions.
+What sets AdGuard Home apart from [Pi-hole](/apps/pi-hole/) is built-in support for encrypted DNS protocols (DNS-over-HTTPS, DNS-over-TLS, DNS-over-QUIC), a cleaner web interface, and a more modern codebase written in Go. It replaces browser-based ad blockers, cloud DNS filtering services, and commercial "secure DNS" subscriptions.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (80 MB typical idle usage)
 - 500 MB of free disk space
 - A static IP address or DHCP reservation for your server -- your network depends on this IP for DNS resolution
@@ -177,7 +177,7 @@ Go to **Filters > DNS rewrites**. This is one of AdGuard Home's most useful feat
 | `jellyfin.home.lan` | `192.168.1.100` |
 | `grafana.home.lan` | `192.168.1.100` |
 
-This works like a local DNS zone. Combined with a [reverse proxy](/foundations/reverse-proxy-explained), you get clean URLs for every self-hosted service without running a separate DNS server.
+This works like a local DNS zone. Combined with a [reverse proxy](/foundations/reverse-proxy-explained/), you get clean URLs for every self-hosted service without running a separate DNS server.
 
 ### DHCP Server
 
@@ -195,7 +195,7 @@ Under **Settings > DNS settings > Rate limit**, the default is 20 requests per s
 
 ### DNS-over-HTTPS and DNS-over-TLS
 
-AdGuard Home can serve encrypted DNS to your clients, not just query encrypted upstream servers. This protects DNS queries between your devices and AdGuard Home -- useful when devices connect from outside your LAN via [VPN](/foundations/remote-access).
+AdGuard Home can serve encrypted DNS to your clients, not just query encrypted upstream servers. This protects DNS queries between your devices and AdGuard Home -- useful when devices connect from outside your LAN via [VPN](/foundations/remote-access/).
 
 Go to **Settings > Encryption settings**:
 
@@ -238,7 +238,7 @@ This is more powerful than the GUI-based DNS rewrites and supports pattern match
 
 If you want to access the AdGuard Home dashboard through a reverse proxy with HTTPS, point your proxy to port 80 on the AdGuard Home container. Do not proxy the DNS ports -- DNS traffic (port 53) must go directly to AdGuard Home.
 
-See the full [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for Nginx Proxy Manager, Traefik, and Caddy configurations.
+See the full [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for Nginx Proxy Manager, Traefik, and Caddy configurations.
 
 ## Backup
 
@@ -253,7 +253,7 @@ Back up at minimum the `conf` directory. A simple cron job works:
 tar czf ~/backups/adguardhome-$(date +%Y%m%d).tar.gz -C ~/adguardhome conf
 ```
 
-For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -297,18 +297,18 @@ For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3
 
 AdGuard Home is the better choice for anyone setting up network-wide ad blocking today. Its web UI is significantly cleaner than Pi-hole's, encrypted DNS (DoH/DoT/DoQ) works out of the box without bolting on Unbound or Cloudflared, and the DNS rewrites feature is genuinely useful for self-hosters managing multiple services.
 
-[Pi-hole](/apps/pi-hole) still has a larger community, more third-party integrations (like the PADD terminal dashboard), and a deeper ecosystem of community-maintained blocklists. If you want maximum community support and are comfortable with a more manual encrypted DNS setup, Pi-hole is a solid alternative.
+[Pi-hole](/apps/pi-hole/) still has a larger community, more third-party integrations (like the PADD terminal dashboard), and a deeper ecosystem of community-maintained blocklists. If you want maximum community support and are comfortable with a more manual encrypted DNS setup, Pi-hole is a solid alternative.
 
 For a new deployment, go with AdGuard Home. The built-in encrypted DNS, simpler Docker setup, and modern interface make it the pragmatic choice.
 
 ## Related
 
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Remote Access with VPN](/foundations/remote-access)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Remote Access with VPN](/foundations/remote-access/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

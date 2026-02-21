@@ -25,7 +25,7 @@ This is useful for self-hosting when you have:
 
 ## Prerequisites
 
-- Docker Engine 20.10+ with Docker Compose v2 — see [Docker Compose Basics](/foundations/docker-compose-basics)
+- Docker Engine 20.10+ with Docker Compose v2 — see [Docker Compose Basics](/foundations/docker-compose-basics/)
 - An existing Docker Compose setup to add profiles to
 
 ## Basic Syntax
@@ -305,10 +305,10 @@ If you have 10 different profiles, your Compose file is probably too complex. Co
 
 ## Next Steps
 
-- Learn Docker Compose fundamentals — [Docker Compose Basics](/foundations/docker-compose-basics)
-- Manage secrets in Compose — [Docker Compose Secrets](/foundations/docker-compose-secrets)
-- Set up monitoring — [Monitoring Basics](/foundations/monitoring-basics)
-- Understand Docker networking — [Docker Networking](/foundations/docker-networking)
+- Learn Docker Compose fundamentals — [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Manage secrets in Compose — [Docker Compose Secrets](/foundations/docker-compose-secrets/)
+- Set up monitoring — [Monitoring Basics](/foundations/monitoring-basics/)
+- Understand Docker networking — [Docker Networking](/foundations/docker-networking/)
 
 ## FAQ
 
@@ -326,8 +326,8 @@ Yes. `docker compose --profile dev build` builds only the services in the `dev` 
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Compose Secrets](/foundations/docker-compose-secrets)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Docker Networking](/foundations/docker-networking)
-- [Monitoring Basics](/foundations/monitoring-basics)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Compose Secrets](/foundations/docker-compose-secrets/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Monitoring Basics](/foundations/monitoring-basics/)

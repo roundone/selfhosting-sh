@@ -170,8 +170,8 @@ The deciding factor is scale: big community with budget for a proper server → 
 
 ## Related
 
-- [Best Self-Hosted Forum Software](/best/social-networks-forums)
-- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial)
-- [Replace Reddit](/replace/reddit)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted Forum Software](/best/social-networks-forums/)
+- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial/)
+- [Replace Reddit](/replace/reddit/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -848,10 +848,10 @@ docker exec -u www-data <nextcloud_container> php occ config:system:set memcache
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors)
-- [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors/)
+- [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)

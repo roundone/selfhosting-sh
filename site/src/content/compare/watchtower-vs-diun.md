@@ -21,7 +21,7 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun/) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
 
 ## Quick Verdict
 
@@ -132,9 +132,9 @@ Use Watchtower only if you are fully committed to automatic updates and accept t
 
 ## Related
 
-- [How to Self-Host Watchtower with Docker](/apps/watchtower)
-- [How to Self-Host DIUN with Docker](/apps/diun)
-- [How to Self-Host Portainer with Docker](/apps/portainer)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Watchtower with Docker](/apps/watchtower/)
+- [How to Self-Host DIUN with Docker](/apps/diun/)
+- [How to Self-Host Portainer with Docker](/apps/portainer/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)

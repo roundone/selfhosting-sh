@@ -114,10 +114,10 @@ They're comparable. Misskey has fewer moving parts (single process vs Mastodon's
 
 ## Related
 
-- [How to Self-Host Misskey](/apps/misskey)
-- [How to Self-Host Mastodon](/apps/mastodon)
-- [Mastodon vs Pleroma](/compare/mastodon-vs-pleroma)
-- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial)
-- [Best Self-Hosted Social Networks](/best/social-networks)
-- [Best Fediverse Software](/best/fediverse)
-- [The Fediverse Explained](/foundations/fediverse-explained)
+- [How to Self-Host Misskey](/apps/misskey/)
+- [How to Self-Host Mastodon](/apps/mastodon/)
+- [Mastodon vs Pleroma](/compare/mastodon-vs-pleroma/)
+- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial/)
+- [Best Self-Hosted Social Networks](/best/social-networks/)
+- [Best Fediverse Software](/best/fediverse/)
+- [The Fediverse Explained](/foundations/fediverse-explained/)

@@ -149,10 +149,10 @@ The encrypted file is automatically deleted from the server. Neither the file no
 
 ## Related
 
-- [How to Self-Host PairDrop](/apps/pairdrop)
-- [How to Self-Host Send](/apps/send)
-- [Send vs WeTransfer](/compare/send-vs-wetransfer)
-- [Self-Hosted Alternatives to AirDrop](/replace/airdrop)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host PairDrop](/apps/pairdrop/)
+- [How to Self-Host Send](/apps/send/)
+- [Send vs WeTransfer](/compare/send-vs-wetransfer/)
+- [Self-Hosted Alternatives to AirDrop](/replace/airdrop/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

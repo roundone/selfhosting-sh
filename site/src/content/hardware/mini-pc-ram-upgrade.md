@@ -225,10 +225,10 @@ Consumer mini PCs do not support ECC memory. If you need ECC (mainly for ZFS whe
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)

@@ -97,10 +97,10 @@ For most users, Joplin's encryption, Markdown compatibility, and plugin ecosyste
 
 ## Related
 
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Evernote](/replace/evernote)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Evernote](/replace/evernote/)

@@ -21,8 +21,8 @@ You'll need Dockerfile knowledge when an app doesn't have a Docker image, when y
 
 ## Prerequisites
 
-- Docker installed on your server ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic command line knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Docker installed on your server ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic command line knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - Understanding of Docker images and containers
 
 ## Basic Dockerfile Structure
@@ -400,15 +400,15 @@ Yes, with `docker buildx`: `docker buildx build --platform linux/amd64,linux/arm
 
 ## Next Steps
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — orchestrate multi-container apps
-- [Docker Environment Variables](/foundations/docker-environment-variables) — configure containers at runtime
-- [Docker Volumes](/foundations/docker-volumes) — persist data outside containers
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — orchestrate multi-container apps
+- [Docker Environment Variables](/foundations/docker-environment-variables/) — configure containers at runtime
+- [Docker Volumes](/foundations/docker-volumes/) — persist data outside containers
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

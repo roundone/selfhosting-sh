@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space
 - 1 GB of RAM (minimum)
 - A domain name (recommended for OAuth callbacks)
@@ -235,11 +235,11 @@ environment:
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), proxy to port 3000. HTTPS is effectively required for OAuth callbacks.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), proxy to port 3000. HTTPS is effectively required for OAuth callbacks.
 
 Set `HOST` and `PROTOCOL` environment variables to match your public URL.
 
-For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -254,7 +254,7 @@ docker run --rm -v automatisch-storage:/data -v $(pwd):/backup alpine \
   tar czf /backup/automatisch-storage.tar.gz -C /data .
 ```
 
-For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -293,11 +293,11 @@ The worker handles all background job execution. If it's not running, flows won'
 
 Automatisch is the most Zapier-like self-hosted automation tool. If you want an interface that feels familiar to Zapier users and you only need integrations with major platforms, it works. The AGPLv3 license is genuinely open source.
 
-**The concern is development pace.** With ~40 integrations, months between releases, and a small team, Automatisch lags behind [n8n](/apps/n8n) (400+ integrations, weekly releases) and [Activepieces](/apps/activepieces) (200+ integrations, MIT license, weekly releases).
+**The concern is development pace.** With ~40 integrations, months between releases, and a small team, Automatisch lags behind [n8n](/apps/n8n/) (400+ integrations, weekly releases) and [Activepieces](/apps/activepieces/) (200+ integrations, MIT license, weekly releases).
 
 **Use Automatisch if:** You want the simplest possible Zapier replacement with AGPLv3 licensing and your workflows only use common apps.
 
-**Consider alternatives:** [n8n](/apps/n8n) for power and integrations. [Activepieces](/apps/activepieces) for MIT licensing with more features. See [Automatisch vs n8n](/compare/automatisch-vs-n8n).
+**Consider alternatives:** [n8n](/apps/n8n/) for power and integrations. [Activepieces](/apps/activepieces/) for MIT licensing with more features. See [Automatisch vs n8n](/compare/automatisch-vs-n8n/).
 
 ## FAQ
 
@@ -315,10 +315,10 @@ Simple trigger-action chains work well. For complex branching, loops, or multi-s
 
 ## Related
 
-- [Automatisch vs n8n](/compare/automatisch-vs-n8n)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Activepieces](/apps/activepieces)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Automatisch vs n8n](/compare/automatisch-vs-n8n/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Activepieces](/apps/activepieces/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

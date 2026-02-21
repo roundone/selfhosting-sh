@@ -25,7 +25,7 @@ For self-hosting, VLANs and subnets let you isolate IoT devices from your server
 
 - A managed switch that supports VLANs (unmanaged switches don't)
 - A router or firewall that supports VLANs (pfSense, OPNsense, or a VLAN-aware consumer router)
-- Basic networking knowledge ([Network Ports](/foundations/ports-explained), [Static IP](/foundations/dhcp-static-ip))
+- Basic networking knowledge ([Network Ports](/foundations/ports-explained/), [Static IP](/foundations/dhcp-static-ip/))
 - Understanding of IP addressing
 
 ## Subnets Explained
@@ -286,15 +286,15 @@ Yes, using macvlan Docker networks. Each container gets its own IP on the VLAN. 
 
 ## Next Steps
 
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — secure each VLAN
-- [DNS Explained](/foundations/dns-explained) — set up DNS per VLAN
-- [Static IP and DHCP](/foundations/dhcp-static-ip) — assign addresses on each subnet
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — secure each VLAN
+- [DNS Explained](/foundations/dns-explained/) — set up DNS per VLAN
+- [Static IP and DHCP](/foundations/dhcp-static-ip/) — assign addresses on each subnet
 
 ## Related
 
-- [Network Ports Explained](/foundations/ports-explained)
-- [Static IP and DHCP](/foundations/dhcp-static-ip)
-- [DNS Explained for Self-Hosting](/foundations/dns-explained)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Docker Networking](/foundations/docker-networking)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Network Ports Explained](/foundations/ports-explained/)
+- [Static IP and DHCP](/foundations/dhcp-static-ip/)
+- [DNS Explained for Self-Hosting](/foundations/dns-explained/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

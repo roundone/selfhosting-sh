@@ -131,10 +131,10 @@ Yes. The .NET runtime runs on ARM64 (Pi 4 and Pi 5). Performance is good for hom
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host Technitium DNS](/apps/technitium)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host Technitium DNS](/apps/technitium/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)

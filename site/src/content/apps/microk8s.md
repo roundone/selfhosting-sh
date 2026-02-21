@@ -223,7 +223,7 @@ sudo tar czf microk8s-data.tar.gz /var/snap/microk8s/common/
 sudo cp -r /var/snap/microk8s/current/var/kubernetes/backend/ ./dqlite-backup/
 ```
 
-For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -301,7 +301,7 @@ MicroK8s is a solid Kubernetes distribution with a unique addon-based architectu
 
 **Use MicroK8s if:** You're on Ubuntu and want a Kubernetes distribution with easy addon management. The built-in registry, GPU support, and HA clustering are well-integrated.
 
-**Consider k3s instead if:** You want a lighter, snap-free Kubernetes distribution that works on any Linux. k3s uses fewer resources and installs without package manager dependencies. See [k3s vs MicroK8s](/compare/k3s-vs-microk8s).
+**Consider k3s instead if:** You want a lighter, snap-free Kubernetes distribution that works on any Linux. k3s uses fewer resources and installs without package manager dependencies. See [k3s vs MicroK8s](/compare/k3s-vs-microk8s/).
 
 ## FAQ
 
@@ -319,10 +319,10 @@ Yes, with caveats. Canonical positions MicroK8s for production edge computing. F
 
 ## Related
 
-- [k3s vs MicroK8s](/compare/k3s-vs-microk8s)
-- [How to Self-Host k3s](/apps/k3s)
-- [k3s vs Kubernetes](/compare/k3s-vs-k8s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [k3s vs MicroK8s](/compare/k3s-vs-microk8s/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [k3s vs Kubernetes](/compare/k3s-vs-k8s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

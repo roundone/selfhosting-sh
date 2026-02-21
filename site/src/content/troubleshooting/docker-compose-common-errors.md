@@ -17,7 +17,7 @@ affiliateDisclosure: false
 
 Docker Compose is the backbone of self-hosting, but its error messages range from helpful to cryptic. This guide covers the ten most common errors you will encounter, with exact error messages, root causes, and fixes.
 
-If you are new to Docker Compose, read [Docker Compose Basics](/foundations/docker-compose-basics) first. The errors below assume you have a working Docker installation and are running `docker compose up -d` on a Compose file.
+If you are new to Docker Compose, read [Docker Compose Basics](/foundations/docker-compose-basics/) first. The errors below assume you have a working Docker installation and are running `docker compose up -d` on a Compose file.
 
 ---
 
@@ -69,7 +69,7 @@ ports:
 
 The left side is the host port (changeable). The right side is the container port (fixed by the application).
 
-**Option C: Use a random host port.** If you are using a [reverse proxy](/foundations/reverse-proxy-explained), you do not need to expose a fixed host port at all. Remove the `ports:` section and access the container through Docker's internal network.
+**Option C: Use a random host port.** If you are using a [reverse proxy](/foundations/reverse-proxy-explained/), you do not need to expose a fixed host port at all. Remove the `ports:` section and access the container through Docker's internal network.
 
 ---
 
@@ -192,7 +192,7 @@ services:
 
 **Warning:** Do not `chmod 777` your data directories. It works, but it is a security disaster. Fix ownership properly instead.
 
-For more details on volume management, see [Docker Volumes](/foundations/docker-volumes).
+For more details on volume management, see [Docker Volumes](/foundations/docker-volumes/).
 
 ---
 
@@ -206,7 +206,7 @@ network my_proxy_network declared as external, but could not be found
 
 ### The Cause
 
-Your Compose file references an external Docker network that does not exist yet. External networks are created outside of the Compose file and shared between multiple Compose stacks — commonly used when a [reverse proxy](/foundations/reverse-proxy-explained) needs to reach backend containers.
+Your Compose file references an external Docker network that does not exist yet. External networks are created outside of the Compose file and shared between multiple Compose stacks — commonly used when a [reverse proxy](/foundations/reverse-proxy-explained/) needs to reach backend containers.
 
 ### The Fix
 
@@ -233,7 +233,7 @@ networks:
 
 **Common pattern:** If you are using Nginx Proxy Manager, Traefik, or Caddy as a reverse proxy in a separate Compose stack, create a shared network that both stacks connect to. The proxy stack creates it, and application stacks reference it as external.
 
-For a deeper explanation of how Docker networks interact, see [Docker Networking](/foundations/docker-networking).
+For a deeper explanation of how Docker networks interact, see [Docker Networking](/foundations/docker-networking/).
 
 ---
 
@@ -405,7 +405,7 @@ services:
     # container_name: myapp   # Remove this line
 ```
 
-**Tip:** If you manage many containers, [Portainer](/apps/portainer) or [Dockge](/apps/dockge) provide a visual interface for managing container lifecycle, making it easier to spot orphaned containers.
+**Tip:** If you manage many containers, [Portainer](/apps/portainer/) or [Dockge](/apps/dockge/) provide a visual interface for managing container lifecycle, making it easier to spot orphaned containers.
 
 ---
 
@@ -663,10 +663,10 @@ These practices prevent most of the errors above:
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

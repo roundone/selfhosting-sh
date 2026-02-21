@@ -51,7 +51,7 @@ Linkding is a minimal, fast bookmark manager that does exactly what it should an
 
 **Best for:** Anyone who wants a fast, reliable bookmark manager without complexity.
 
-[Read our full guide: [How to Self-Host Linkding](/apps/linkding)]
+[Read our full guide: [How to Self-Host Linkding](/apps/linkding/)]
 
 ### 2. Wallabag — Best Read-Later App
 
@@ -73,7 +73,7 @@ Wallabag is the self-hosted Pocket replacement. It doesn't just save links — i
 
 **Best for:** Avid readers who save articles to read later and want full content archiving.
 
-[Read our full guide: [How to Self-Host Wallabag](/apps/wallabag)]
+[Read our full guide: [How to Self-Host Wallabag](/apps/wallabag/)]
 
 ### 3. Linkwarden — Best Feature-Rich Option
 
@@ -95,7 +95,7 @@ Linkwarden goes beyond basic bookmarking with automatic screenshots, full-page a
 
 **Best for:** Users who want rich bookmark management with archiving and collaboration.
 
-[Read our full guide: [How to Self-Host Linkwarden](/apps/linkwarden)]
+[Read our full guide: [How to Self-Host Linkwarden](/apps/linkwarden/)]
 
 ### 4. Hoarder — Best AI-Powered Option
 
@@ -140,13 +140,13 @@ We assessed each tool on setup complexity, daily usability, resource requirement
 
 ## Related
 
-- [How to Self-Host Linkding](/apps/linkding)
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [Linkding vs Wallabag](/compare/linkding-vs-wallabag)
-- [Self-Hosted Alternatives to Pocket](/replace/pocket)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [How to Self-Host FreshRSS](/apps/freshrss)
+- [How to Self-Host Linkding](/apps/linkding/)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [Linkding vs Wallabag](/compare/linkding-vs-wallabag/)
+- [Self-Hosted Alternatives to Pocket](/replace/pocket/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [How to Self-Host FreshRSS](/apps/freshrss/)

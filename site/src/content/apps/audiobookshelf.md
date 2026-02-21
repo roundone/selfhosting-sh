@@ -21,7 +21,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB RAM minimum
 - Disk space for your audiobook/podcast library
 - A domain name (optional, for remote access)
@@ -155,7 +155,7 @@ audiobooks.yourdomain.com {
 
 Caddy supports WebSockets by default — no extra configuration needed.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ### Running on a Subfolder
 
@@ -191,7 +191,7 @@ Manual backup of critical data:
 tar czf audiobookshelf-backup-$(date +%Y%m%d).tar.gz /opt/audiobookshelf/config /opt/audiobookshelf/metadata
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -213,7 +213,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup
 ### Mobile app can't connect
 
 **Symptom:** The app shows "Unable to connect" or times out.
-**Fix:** Ensure the server URL includes the port (`http://your-server:13378`). For remote access outside your LAN, set up a reverse proxy with SSL or use a VPN like [Tailscale](/apps/tailscale). Check that port 13378 is not blocked by your firewall.
+**Fix:** Ensure the server URL includes the port (`http://your-server:13378`). For remote access outside your LAN, set up a reverse proxy with SSL or use a VPN like [Tailscale](/apps/tailscale/). Check that port 13378 is not blocked by your firewall.
 
 ### Metadata not found for some books
 
@@ -248,19 +248,19 @@ Yes. Create user accounts under **Settings** → **Users**. Each user gets their
 
 ### Can I stream over the internet?
 
-Yes. Set up a reverse proxy with SSL for secure remote access, or use [Tailscale](/apps/tailscale) for a VPN-based approach. The mobile apps work over any network connection once the server is reachable.
+Yes. Set up a reverse proxy with SSL for secure remote access, or use [Tailscale](/apps/tailscale/) for a VPN-based approach. The mobile apps work over any network connection once the server is reachable.
 
 ### How does it compare to Plex for audiobooks?
 
-Plex treats audiobooks as music, which creates problems — no chapter support, no progress tracking per book, and poor metadata matching. Audiobookshelf is purpose-built for audiobooks with proper chapter navigation, book-level progress tracking, and Audible metadata integration. Use Audiobookshelf for audiobooks and [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex) for video.
+Plex treats audiobooks as music, which creates problems — no chapter support, no progress tracking per book, and poor metadata matching. Audiobookshelf is purpose-built for audiobooks with proper chapter navigation, book-level progress tracking, and Audible metadata integration. Use Audiobookshelf for audiobooks and [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/) for video.
 
 ## Related
 
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

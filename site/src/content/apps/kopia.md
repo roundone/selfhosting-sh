@@ -20,12 +20,12 @@ affiliateDisclosure: false
 
 ## What Is Kopia?
 
-Kopia is a fast, encrypted backup tool with a web UI. It supports deduplication, compression, and encryption by default, and can back up to local storage, NFS, SFTP, S3, B2, Google Cloud, Azure, and more. Think of it as a modern alternative to [BorgBackup](/apps/borgbackup) with a graphical interface and cross-platform support. [Official site](https://kopia.io/)
+Kopia is a fast, encrypted backup tool with a web UI. It supports deduplication, compression, and encryption by default, and can back up to local storage, NFS, SFTP, S3, B2, Google Cloud, Azure, and more. Think of it as a modern alternative to [BorgBackup](/apps/borgbackup/) with a graphical interface and cross-platform support. [Official site](https://kopia.io/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space (plus backup storage)
 - 512 MB of RAM minimum
 - A backup destination (local drive, NAS, S3 bucket, etc.)
@@ -192,7 +192,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** kopia
 - **Forward Port:** 51515
 
-Enable WebSocket support for the real-time dashboard. [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+Enable WebSocket support for the real-time dashboard. [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -202,7 +202,7 @@ Kopia IS the backup tool. For backing up Kopia's own configuration:
 tar -czf kopia-config-backup-$(date +%Y%m%d).tar.gz ./config
 ```
 
-**Critical:** Save your repository password separately. Without it, all backups are permanently encrypted and inaccessible. [Backup Strategy](/foundations/backup-3-2-1-rule)
+**Critical:** Save your repository password separately. Without it, all backups are permanently encrypted and inaccessible. [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -234,7 +234,7 @@ tar -czf kopia-config-backup-$(date +%Y%m%d).tar.gz ./config
 
 ## Verdict
 
-Kopia is the best modern backup tool for self-hosters who want a web UI. It combines the technical excellence of BorgBackup (deduplication, compression, encryption) with the accessibility of a graphical interface. The wide range of storage backends means you can back up anywhere. For CLI purists, [BorgBackup](/apps/borgbackup) with [Borgmatic](/apps/borgmatic) is the alternative. For a simpler GUI-first approach with more backend integrations (cloud drives), [Duplicati](/apps/duplicati) is another option.
+Kopia is the best modern backup tool for self-hosters who want a web UI. It combines the technical excellence of BorgBackup (deduplication, compression, encryption) with the accessibility of a graphical interface. The wide range of storage backends means you can back up anywhere. For CLI purists, [BorgBackup](/apps/borgbackup/) with [Borgmatic](/apps/borgmatic/) is the alternative. For a simpler GUI-first approach with more backend integrations (cloud drives), [Duplicati](/apps/duplicati/) is another option.
 
 ## FAQ
 
@@ -252,10 +252,10 @@ Yes. Mount Docker volumes read-only into the Kopia container and create snapshot
 
 ## Related
 
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
-- [Best Self-Hosted Backup Tools](/best/backup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Disaster Recovery for Self-Hosting](/foundations/disaster-recovery)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Best Self-Hosted Backup Tools](/best/backup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Disaster Recovery for Self-Hosting](/foundations/disaster-recovery/)

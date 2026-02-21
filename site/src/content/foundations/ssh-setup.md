@@ -21,11 +21,11 @@ SSH replaces older protocols like Telnet that sent everything, including passwor
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) -- see [Getting Started with Self-Hosting](/foundations/getting-started)
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) -- see [Getting Started with Self-Hosting](/foundations/getting-started/)
 - A terminal: macOS Terminal, any Linux terminal emulator, or Windows PowerShell / WSL
 - Your server's IP address
 - A user account on the server (root or a sudo-capable user)
-- Basic familiarity with the command line -- see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- Basic familiarity with the command line -- see [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
 
 ## Connecting for the First Time
 
@@ -144,7 +144,7 @@ Also, if you are using a firewall, allow the new SSH port **before** restarting:
 sudo ufw allow 2222/tcp
 ```
 
-See [Firewall Setup with UFW](/foundations/firewall-ufw) for the full guide.
+See [Firewall Setup with UFW](/foundations/firewall-ufw/) for the full guide.
 
 Now restart the SSH daemon:
 
@@ -255,7 +255,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
 ## Setting Up fail2ban
 
-Even with password authentication disabled, automated bots will hammer your SSH port. [fail2ban](/foundations/fail2ban) monitors your SSH logs and temporarily bans IPs that fail authentication repeatedly.
+Even with password authentication disabled, automated bots will hammer your SSH port. [fail2ban](/foundations/fail2ban/) monitors your SSH logs and temporarily bans IPs that fail authentication repeatedly.
 
 Install and enable it:
 
@@ -265,7 +265,7 @@ sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 ```
 
-The default configuration protects SSH out of the box. For custom ban times, thresholds, and email alerts, see the [full fail2ban guide](/foundations/fail2ban).
+The default configuration protects SSH out of the box. For custom ban times, thresholds, and email alerts, see the [full fail2ban guide](/foundations/fail2ban/).
 
 ## Firewall Basics
 
@@ -278,7 +278,7 @@ sudo ufw allow 2222/tcp comment "SSH"
 sudo ufw enable
 ```
 
-**Critical:** Allow your SSH port **before** enabling the firewall. If you enable UFW without an SSH allow rule, you will lock yourself out. See the [full UFW guide](/foundations/firewall-ufw) for detailed configuration.
+**Critical:** Allow your SSH port **before** enabling the firewall. If you enable UFW without an SSH allow rule, you will lock yourself out. See the [full UFW guide](/foundations/firewall-ufw/) for detailed configuration.
 
 ## Common Mistakes
 
@@ -304,16 +304,16 @@ chmod 600 ~/.ssh/config
 
 With SSH secured, your server has a solid foundation. Move on to:
 
-- Set up a firewall to control all network access -- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Install fail2ban for automated intrusion prevention -- [fail2ban Setup](/foundations/fail2ban)
-- Install Docker and start deploying services -- [Docker Compose Basics](/foundations/docker-compose-basics)
-- Set up a reverse proxy for HTTPS access -- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- Set up a firewall to control all network access -- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Install fail2ban for automated intrusion prevention -- [fail2ban Setup](/foundations/fail2ban/)
+- Install Docker and start deploying services -- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Set up a reverse proxy for HTTPS access -- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [fail2ban Setup](/foundations/fail2ban)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [fail2ban Setup](/foundations/fail2ban/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

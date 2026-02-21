@@ -17,9 +17,9 @@ affiliateDisclosure: true
 
 **Best value: Dell PowerEdge R730xd** (~$150-250 used, dual Xeon E5 v3/v4, up to 768GB RAM, 12x 3.5" bays). It's the homelab workhorse — massive storage capacity, cheap to buy, and well-supported. The trade-off is noise (40-50 dBA) and power draw (150-300W idle).
 
-**If noise and power matter more than raw capacity:** Skip enterprise rack servers entirely. A [used Dell OptiPlex](/hardware/used-dell-optiplex) or [mini PC](/hardware/best-mini-pc) at 15-30W idle is a better fit for most homes.
+**If noise and power matter more than raw capacity:** Skip enterprise rack servers entirely. A [used Dell OptiPlex](/hardware/used-dell-optiplex/) or [mini PC](/hardware/best-mini-pc/) at 15-30W idle is a better fit for most homes.
 
-**Enterprise servers make sense when:** You need 100TB+ storage, 128GB+ RAM, multiple CPUs, or you're running a serious [Proxmox](/hardware/proxmox-hardware-guide) virtualization cluster. They do NOT make sense when a $150 mini PC handles your workload at 1/10th the power draw.
+**Enterprise servers make sense when:** You need 100TB+ storage, 128GB+ RAM, multiple CPUs, or you're running a serious [Proxmox](/hardware/proxmox-hardware-guide/) virtualization cluster. They do NOT make sense when a $150 mini PC handles your workload at 1/10th the power draw.
 
 ## The Used Enterprise Market
 
@@ -64,7 +64,7 @@ Data centers refresh hardware every 3-5 years. Perfectly functional servers hit 
 | Noise | 40-50 dBA under load |
 | Used price | $150-300 (barebones), $300-500 (configured) |
 
-**Why this server:** 12 LFF (3.5") bays hold 12x 20TB drives = 240TB raw storage. That's enough for a lifetime of media, backups, and every self-hosted app's data. The dual CPUs handle [Proxmox](/hardware/proxmox-hardware-guide) virtualization, [Plex](/apps/plex) transcoding, and dozens of Docker containers simultaneously.
+**Why this server:** 12 LFF (3.5") bays hold 12x 20TB drives = 240TB raw storage. That's enough for a lifetime of media, backups, and every self-hosted app's data. The dual CPUs handle [Proxmox](/hardware/proxmox-hardware-guide/) virtualization, [Plex](/apps/plex/) transcoding, and dozens of Docker containers simultaneously.
 
 **Typical config for homelab:**
 - 2x E5-2680 v4 (14 cores each, 28 total) — ~$30 for the pair
@@ -98,7 +98,7 @@ HP's equivalent to the R730. The SFF (Small Form Factor) model with 8x 2.5" bays
 | IPMI | Built-in BMC |
 | Used price | $80-150 (board only) |
 
-Buy the board and build it into whatever case you want. Supermicro boards are the foundation of most custom NAS and storage server builds. Put it in a [quiet case](/hardware/server-case-guide) with [Noctua fans](/hardware/home-server-noise-reduction) and you get enterprise features without enterprise noise.
+Buy the board and build it into whatever case you want. Supermicro boards are the foundation of most custom NAS and storage server builds. Put it in a [quiet case](/hardware/server-case-guide/) with [Noctua fans](/hardware/home-server-noise-reduction/) and you get enterprise features without enterprise noise.
 
 ### Dell PowerEdge T620 — Best Tower
 
@@ -124,7 +124,7 @@ Tower form factor = larger fans = quieter. The T620 is the quietest option if yo
 
 4. **Power supplies** — Test both PSUs. Redundant PSUs mean the server runs on one if the other fails. Replace any PSU with a burnt smell or bulging capacitors.
 
-5. **RAM errors** — Run MemTest86 for at least one pass. Enterprise servers with [ECC RAM](/hardware/ecc-vs-non-ecc-ram) will log correctable errors in the BIOS/iDRAC — a few is normal, hundreds indicate a failing DIMM.
+5. **RAM errors** — Run MemTest86 for at least one pass. Enterprise servers with [ECC RAM](/hardware/ecc-vs-non-ecc-ram/) will log correctable errors in the BIOS/iDRAC — a few is normal, hundreds indicate a failing DIMM.
 
 ### Nice to Have
 
@@ -144,7 +144,7 @@ This is where enterprise servers hurt. Electricity is an ongoing cost that often
 | Dell T620 (2x E5-2650 v2, 64GB, 6 HDDs) | 150W | 300W | $158-315 |
 | For comparison: Intel N100 mini PC | 8W | 25W | $8-26 |
 
-**The math is brutal.** A R730xd at 180W idle costs $190/year in electricity. An [N100 mini PC](/hardware/intel-n100-mini-pc) at 8W idle costs $8/year. Over 3 years, the N100 saves $546 in electricity — more than both devices cost to buy.
+**The math is brutal.** A R730xd at 180W idle costs $190/year in electricity. An [N100 mini PC](/hardware/intel-n100-mini-pc/) at 8W idle costs $8/year. Over 3 years, the N100 saves $546 in electricity — more than both devices cost to buy.
 
 ### Power Reduction Tips
 
@@ -160,10 +160,10 @@ An enterprise server with dual Xeons and 128GB RAM handles massive workloads:
 
 | Workload | CPU Cores Used | RAM Used | Notes |
 |----------|---------------|----------|-------|
-| [Proxmox](/hardware/proxmox-hardware-guide) with 10+ VMs | 10-20 | 64-128 GB | The primary use case |
-| [TrueNAS](/hardware/synology-vs-truenas) with ZFS | 4-8 | 32-64 GB | 1GB RAM per TB of storage is a myth, but more helps |
-| [Plex](/apps/plex) transcoding (4 streams) | 8 | 4 GB | Quick Sync not available — CPU transcode only |
-| [Nextcloud](/apps/nextcloud) + [Immich](/apps/immich) + 20 more containers | 8-12 | 16-32 GB | Barely touching the available resources |
+| [Proxmox](/hardware/proxmox-hardware-guide/) with 10+ VMs | 10-20 | 64-128 GB | The primary use case |
+| [TrueNAS](/hardware/synology-vs-truenas/) with ZFS | 4-8 | 32-64 GB | 1GB RAM per TB of storage is a myth, but more helps |
+| [Plex](/apps/plex/) transcoding (4 streams) | 8 | 4 GB | Quick Sync not available — CPU transcode only |
+| [Nextcloud](/apps/nextcloud/) + [Immich](/apps/immich/) + 20 more containers | 8-12 | 16-32 GB | Barely touching the available resources |
 | Kubernetes cluster (single-node) | All of them | All of it | Enterprise servers are where K8s starts to make sense |
 | AI/ML inference (with GPU) | 4-8 + GPU | 16-32 GB | GPU passthrough to VM, run Ollama/LLaMA |
 
@@ -183,7 +183,7 @@ Enterprise rack servers are designed for data centers, not bedrooms. Expect 40-5
    ```
 4. **Accept it** — If it's in a garage or basement, the noise doesn't matter.
 
-See the [noise reduction guide](/hardware/home-server-noise-reduction) for detailed strategies.
+See the [noise reduction guide](/hardware/home-server-noise-reduction/) for detailed strategies.
 
 ## Enterprise vs Consumer: Decision Matrix
 
@@ -211,7 +211,7 @@ Very. These servers ran 24/7 in climate-controlled data centers with UPS power. 
 
 ### Should I buy a server with or without drives?
 
-Without. Data center pulls often include old, worn drives with thousands of power-on hours. Buy new NAS-grade drives ([WD Red Plus, Seagate IronWolf](/hardware/best-hard-drives-nas)) for reliability.
+Without. Data center pulls often include old, worn drives with thousands of power-on hours. Buy new NAS-grade drives ([WD Red Plus, Seagate IronWolf](/hardware/best-hard-drives-nas/)) for reliability.
 
 ### Can I use a PERC H730 with TrueNAS/ZFS?
 
@@ -227,11 +227,11 @@ Used EPYC 7001/7002 servers are starting to appear at reasonable prices ($300-60
 
 ## Related
 
-- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex)
-- [Used Lenovo ThinkCentre Guide](/hardware/used-lenovo-thinkcentre)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Home Server Noise Reduction Guide](/hardware/home-server-noise-reduction)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
+- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex/)
+- [Used Lenovo ThinkCentre Guide](/hardware/used-lenovo-thinkcentre/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Home Server Noise Reduction Guide](/hardware/home-server-noise-reduction/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)

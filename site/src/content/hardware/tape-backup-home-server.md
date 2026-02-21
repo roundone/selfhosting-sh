@@ -284,9 +284,9 @@ Yes. LTO is an open standard. Any LTO-6 drive (or LTO-7/8 with backward compatib
 
 ## Related
 
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Home Server Rack Setup Guide](/hardware/home-server-rack)
-- [Used Enterprise Servers](/hardware/used-enterprise-servers)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Home Server Rack Setup Guide](/hardware/home-server-rack/)
+- [Used Enterprise Servers](/hardware/used-enterprise-servers/)

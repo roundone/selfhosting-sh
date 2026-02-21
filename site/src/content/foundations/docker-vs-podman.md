@@ -23,7 +23,7 @@ Docker is the container runtime that made containerization mainstream. It uses a
 
 For self-hosting, Docker is the de facto standard. When an app's README says "deploy with Docker," they mean Docker specifically. The `docker-compose.yml` files you find in nearly every self-hosted project are written for Docker Compose.
 
-See [Docker Compose Basics](/foundations/docker-compose-basics) for a full setup guide.
+See [Docker Compose Basics](/foundations/docker-compose-basics/) for a full setup guide.
 
 ## What Is Podman?
 
@@ -75,7 +75,7 @@ podman run -d -p 8080:80 docker.io/library/nginx:1.27
 docker run -d -p 8080:80 nginx:1.27
 ```
 
-**What this means in practice:** For a home server behind a firewall, Docker's root daemon is an acceptable risk — the convenience is worth it. For an internet-facing server, or if you run untrusted containers, Podman's rootless default is meaningfully more secure. See [Docker Security Best Practices](/foundations/docker-security) for hardening either runtime.
+**What this means in practice:** For a home server behind a firewall, Docker's root daemon is an acceptable risk — the convenience is worth it. For an internet-facing server, or if you run untrusted containers, Podman's rootless default is meaningfully more secure. See [Docker Security Best Practices](/foundations/docker-security/) for hardening either runtime.
 
 ### Compose Support
 
@@ -109,7 +109,7 @@ This is where Docker wins decisively for self-hosting:
 - **Tutorials:** Searching "self-host [app]" returns Docker guides 95% of the time.
 - **Troubleshooting:** When something breaks, Docker error messages return more Stack Overflow results.
 - **Tools:** Management UIs like Portainer, Dockge, and Yacht are built for Docker. Podman support is partial or nonexistent in most of them.
-- **Container updates:** Watchtower (deprecated — the repository is archived) only worked with Docker. [DIUN](/apps/diun) and [What's Up Docker](https://github.com/fmartinou/whats-up-docker) are the actively maintained alternatives. Podman users can use `podman auto-update` with specific image label requirements.
+- **Container updates:** Watchtower (deprecated — the repository is archived) only worked with Docker. [DIUN](/apps/diun/) and [What's Up Docker](https://github.com/fmartinou/whats-up-docker) are the actively maintained alternatives. Podman users can use `podman auto-update` with specific image label requirements.
 
 ### Image Compatibility
 
@@ -358,20 +358,20 @@ Podman's default behavior of requiring `docker.io/library/nginx:1.27` instead of
 
 ## Next Steps
 
-- Set up your container runtime with [Docker Compose Basics](/foundations/docker-compose-basics)
-- Secure your containers with [Docker Security Best Practices](/foundations/docker-security)
-- Learn container networking with [Docker Networking](/foundations/docker-networking)
-- Understand container logs with [Container Logging](/foundations/container-logging)
-- Explore systemd service management with [Linux Systemd Basics](/foundations/linux-systemd)
+- Set up your container runtime with [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Secure your containers with [Docker Security Best Practices](/foundations/docker-security/)
+- Learn container networking with [Docker Networking](/foundations/docker-networking/)
+- Understand container logs with [Container Logging](/foundations/container-logging/)
+- Explore systemd service management with [Linux Systemd Basics](/foundations/linux-systemd/)
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Security Best Practices](/foundations/docker-security)
-- [Docker Networking](/foundations/docker-networking)
-- [Container Logging and Debugging](/foundations/container-logging)
-- [Linux Systemd Basics](/foundations/linux-systemd)
-- [LXC Containers](/foundations/lxc-containers)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Security Best Practices](/foundations/docker-security/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Container Logging and Debugging](/foundations/container-logging/)
+- [Linux Systemd Basics](/foundations/linux-systemd/)
+- [LXC Containers](/foundations/lxc-containers/)
 
 ## FAQ
 
@@ -381,7 +381,7 @@ Yes, for most simple stacks. Use `podman-compose` or install the Docker Compose 
 
 ### Is Podman more secure than Docker?
 
-In its default configuration, yes. Podman runs rootless by default, meaning a container escape doesn't grant root access to the host. Docker runs its daemon as root by default, and the `docker` group effectively grants root-equivalent access. However, Docker supports rootless mode as an opt-in feature, and proper Docker security practices (non-root containers, dropped capabilities, read-only filesystems) close much of the gap. See [Docker Security Best Practices](/foundations/docker-security).
+In its default configuration, yes. Podman runs rootless by default, meaning a container escape doesn't grant root access to the host. Docker runs its daemon as root by default, and the `docker` group effectively grants root-equivalent access. However, Docker supports rootless mode as an opt-in feature, and proper Docker security practices (non-root containers, dropped capabilities, read-only filesystems) close much of the gap. See [Docker Security Best Practices](/foundations/docker-security/).
 
 ### Should I switch from Docker to Podman?
 
@@ -393,4 +393,4 @@ Portainer requires the Docker socket API. You can expose a Podman socket that's 
 
 ### Do Watchtower and other Docker tools work with Podman?
 
-Watchtower (deprecated) does not work with Podman. For automated container updates with Podman, use `podman auto-update`, which checks for new images and recreates containers that have the `io.containers.autoupdate=registry` label. For update notifications, [DIUN](/apps/diun) supports Podman via the Docker-compatible socket. Most Docker-specific tooling (Dockge, Yacht) assumes the Docker daemon API. Some tools work through the Podman socket compatibility layer, but expect rough edges.
+Watchtower (deprecated) does not work with Podman. For automated container updates with Podman, use `podman auto-update`, which checks for new images and recreates containers that have the `io.containers.autoupdate=registry` label. For update notifications, [DIUN](/apps/diun/) supports Podman via the Docker-compatible socket. Most Docker-specific tooling (Dockge, Yacht) assumes the Docker daemon API. Some tools work through the Podman socket compatibility layer, but expect rough edges.

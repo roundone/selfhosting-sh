@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - 500 MB of free disk space
 - Port 53 available (not used by another DNS resolver)
@@ -124,7 +124,7 @@ Technitium's entire configuration is managed through its built-in web UI — no 
 | Backup and restore | Yes |
 | User and access management | Yes |
 
-This makes Technitium the most capable browser-managed DNS server you can self-host. [Pi-hole](/apps/pi-hole) and [AdGuard Home](/apps/adguard-home) also have web UIs for ad blocking, but neither offers full authoritative DNS zone management or clustering from the browser.
+This makes Technitium the most capable browser-managed DNS server you can self-host. [Pi-hole](/apps/pi-hole/) and [AdGuard Home](/apps/adguard-home/) also have web UIs for ad blocking, but neither offers full authoritative DNS zone management or clustering from the browser.
 
 ## Configuration
 
@@ -189,7 +189,7 @@ dns-admin.example.com {
 }
 ```
 
-**Important:** Restrict web console access to trusted networks. It has full control over your DNS server. See our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+**Important:** Restrict web console access to trusted networks. It has full control over your DNS server. See our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -209,7 +209,7 @@ docker compose start dns-server
 
 Alternatively, use the built-in backup feature in the web UI: **Settings** → **Backup** → **Create Backup**. This generates a downloadable `.zip` file.
 
-See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -247,7 +247,7 @@ echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 
 ## Verdict
 
-Technitium DNS is the most feature-complete self-hosted DNS server available. If you want a full DNS infrastructure tool — authoritative zones, split-horizon DNS, DNSSEC, clustering, DHCP — Technitium is the only choice that covers it all with a web UI. For pure ad blocking, [AdGuard Home](/apps/adguard-home) has a cleaner interface and simpler setup. For minimal resource usage with config-as-code, [Blocky](/apps/blocky) is lighter. But if you're running a homelab and want one DNS server that does everything, Technitium is the answer.
+Technitium DNS is the most feature-complete self-hosted DNS server available. If you want a full DNS infrastructure tool — authoritative zones, split-horizon DNS, DNSSEC, clustering, DHCP — Technitium is the only choice that covers it all with a web UI. For pure ad blocking, [AdGuard Home](/apps/adguard-home/) has a cleaner interface and simpler setup. For minimal resource usage with config-as-code, [Blocky](/apps/blocky/) is lighter. But if you're running a homelab and want one DNS server that does everything, Technitium is the answer.
 
 ## FAQ
 
@@ -265,13 +265,13 @@ Technitium is a complete DNS server; Pi-hole is a DNS proxy with ad blocking. Te
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Blocky](/apps/blocky)
-- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [DNS Explained](/foundations/dns-explained)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

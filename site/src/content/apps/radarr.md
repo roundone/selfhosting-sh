@@ -21,16 +21,16 @@ affiliateDisclosure: false
 
 ## What Is Radarr?
 
-Radarr is an automated movie collection manager that searches indexers, grabs releases from Usenet or BitTorrent, and organizes your movie library. It's a fork of [Sonarr](/apps/sonarr) adapted for movies instead of TV shows. If you want new movies downloaded automatically the moment they're available in your preferred quality, Radarr handles it. [Official site](https://radarr.video/)
+Radarr is an automated movie collection manager that searches indexers, grabs releases from Usenet or BitTorrent, and organizes your movie library. It's a fork of [Sonarr](/apps/sonarr/) adapted for movies instead of TV shows. If you want new movies downloaded automatically the moment they're available in your preferred quality, Radarr handles it. [Official site](https://radarr.video/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for media)
 - 512 MB of RAM (minimum)
-- A download client like [qBittorrent](/apps/qbittorrent) or SABnzbd
-- An indexer or indexer manager like [Prowlarr](/apps/prowlarr)
+- A download client like [qBittorrent](/apps/qbittorrent/) or SABnzbd
+- An indexer or indexer manager like [Prowlarr](/apps/prowlarr/)
 
 ## Docker Compose Configuration
 
@@ -94,7 +94,7 @@ Go to **Settings → Download Clients → Add**:
 
 ### Connect an Indexer
 
-Go to **Settings → Indexers → Add**, or use [Prowlarr](/apps/prowlarr) to sync indexers automatically across all your *arr apps.
+Go to **Settings → Indexers → Add**, or use [Prowlarr](/apps/prowlarr/) to sync indexers automatically across all your *arr apps.
 
 ## Configuration
 
@@ -157,7 +157,7 @@ Radarr's REST API is available on port 7878. API key is under **Settings → Gen
 
 ## Reverse Proxy
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 - **Scheme:** `http`
 - **Forward Hostname:** `radarr` (container name) or server IP
@@ -166,7 +166,7 @@ For [Nginx Proxy Manager](/apps/nginx-proxy-manager):
 
 If running under a subpath, set **Settings → General → URL Base** (e.g., `/radarr`).
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed configuration.
 
 ## Backup
 
@@ -178,7 +178,7 @@ Radarr stores everything in the `/config` volume:
 
 Radarr creates automatic backups under **System → Backup**. These zip files contain the database and config — store them off-server.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -215,13 +215,13 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 ## Verdict
 
-Radarr is the definitive tool for automated movie management. It's the movie counterpart to [Sonarr](/apps/sonarr), and together they form the backbone of any self-hosted media automation stack. The v6 release migrated from Mono to .NET, improving performance and stability. Pair it with [Prowlarr](/apps/prowlarr) for centralized indexer management, a download client like [qBittorrent](/apps/qbittorrent), and a media server like [Jellyfin](/apps/jellyfin) for a complete end-to-end pipeline.
+Radarr is the definitive tool for automated movie management. It's the movie counterpart to [Sonarr](/apps/sonarr/), and together they form the backbone of any self-hosted media automation stack. The v6 release migrated from Mono to .NET, improving performance and stability. Pair it with [Prowlarr](/apps/prowlarr/) for centralized indexer management, a download client like [qBittorrent](/apps/qbittorrent/), and a media server like [Jellyfin](/apps/jellyfin/) for a complete end-to-end pipeline.
 
 ## FAQ
 
 ### How is Radarr different from Sonarr?
 
-[Sonarr](/apps/sonarr) manages TV series (seasons, episodes, series packs). Radarr manages individual movies. They share the same architecture and UI paradigm but are separate applications. Run both for complete media automation.
+[Sonarr](/apps/sonarr/) manages TV series (seasons, episodes, series packs). Radarr manages individual movies. They share the same architecture and UI paradigm but are separate applications. Run both for complete media automation.
 
 ### Can Radarr handle 4K and 1080p copies of the same movie?
 
@@ -229,16 +229,16 @@ Yes. Run two Radarr instances — one for 4K, one for 1080p — with different r
 
 ### Does Radarr work with Plex and Jellyfin?
 
-Radarr doesn't interact directly with media servers. It downloads and organizes files into your movie library folder. [Plex](/apps/plex) and [Jellyfin](/apps/jellyfin) monitor that same folder and pick up new content automatically.
+Radarr doesn't interact directly with media servers. It downloads and organizes files into your movie library folder. [Plex](/apps/plex/) and [Jellyfin](/apps/jellyfin/) monitor that same folder and pick up new content automatically.
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Bazarr](/apps/bazarr)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Bazarr](/apps/bazarr/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

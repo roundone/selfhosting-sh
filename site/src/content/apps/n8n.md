@@ -29,7 +29,7 @@ The key difference from Zapier: your data stays on your server, there are no per
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (2 GB recommended)
 - 2 GB of free disk space
 - A domain name (recommended for webhook URLs)
@@ -205,7 +205,7 @@ Nginx Proxy Manager config:
 - **Forward Port:** 5678
 - **Enable WebSocket Support:** Yes (critical for the editor)
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -222,7 +222,7 @@ docker run --rm -v n8n_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/n8n-data-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -266,17 +266,17 @@ proxy_set_header Connection "upgrade";
 
 ## Verdict
 
-n8n is the best self-hosted workflow automation tool. It's the closest you'll get to Zapier without paying per execution or sending your data to a third party. The visual editor is intuitive, the integration library is massive, and the ability to write custom JavaScript/Python code makes it handle edge cases that Zapier can't. The main competition is [Node-RED](/apps/node-red) — which is more IoT/hardware focused — and [Huginn](/apps/huginn) — which is more developer-oriented. For most workflow automation needs, n8n is the clear winner.
+n8n is the best self-hosted workflow automation tool. It's the closest you'll get to Zapier without paying per execution or sending your data to a third party. The visual editor is intuitive, the integration library is massive, and the ability to write custom JavaScript/Python code makes it handle edge cases that Zapier can't. The main competition is [Node-RED](/apps/node-red/) — which is more IoT/hardware focused — and [Huginn](/apps/huginn/) — which is more developer-oriented. For most workflow automation needs, n8n is the clear winner.
 
 ## Related
 
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [Airflow vs n8n](/compare/airflow-vs-n8n)
-- [Kestra vs n8n](/compare/kestra-vs-n8n)
-- [Temporal vs n8n](/compare/temporal-vs-n8n)
-- [Replace Zapier with Self-Hosted Automation](/replace/zapier)
-- [Replace IFTTT with Self-Hosted Automation](/replace/ifttt)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [Airflow vs n8n](/compare/airflow-vs-n8n/)
+- [Kestra vs n8n](/compare/kestra-vs-n8n/)
+- [Temporal vs n8n](/compare/temporal-vs-n8n/)
+- [Replace Zapier with Self-Hosted Automation](/replace/zapier/)
+- [Replace IFTTT with Self-Hosted Automation](/replace/ifttt/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

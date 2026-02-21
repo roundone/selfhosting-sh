@@ -23,8 +23,8 @@ Two processes can't listen on the same port. When you start a new container and 
 
 ## Prerequisites
 
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
-- Docker installed ([Docker Compose Basics](/foundations/docker-compose-basics))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
+- Docker installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
 
 ## Find What's Using the Port
 
@@ -305,9 +305,9 @@ sudo ss -tulnp   # Both
 
 ## Related
 
-- [Ports Explained](/foundations/ports-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Networking Issues](/foundations/docker-networking-issues)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Firewall Setup](/foundations/firewall-ufw)
+- [Ports Explained](/foundations/ports-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Networking Issues](/foundations/docker-networking-issues/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Firewall Setup](/foundations/firewall-ufw/)

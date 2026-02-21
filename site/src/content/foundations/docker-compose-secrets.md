@@ -21,8 +21,8 @@ Environment variables are visible in `docker inspect`, process listings, and con
 
 ## Prerequisites
 
-- Docker Engine with Docker Compose v2 — see [Docker Compose Basics](/foundations/docker-compose-basics)
-- Basic understanding of environment variables — see [Docker Environment Variables](/foundations/docker-environment-variables)
+- Docker Engine with Docker Compose v2 — see [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Basic understanding of environment variables — see [Docker Environment Variables](/foundations/docker-environment-variables/)
 
 ## The Problem with Environment Variables
 
@@ -314,10 +314,10 @@ If Docker needs to read them (and you're running Docker as root, which is defaul
 
 ## Next Steps
 
-- Learn Docker Compose fundamentals — [Docker Compose Basics](/foundations/docker-compose-basics)
-- Understand environment variables — [Docker Environment Variables](/foundations/docker-environment-variables)
-- Review your security setup — [Security Checklist](/foundations/selfhosting-security-checklist)
-- Harden Docker — [Docker Security Best Practices](/foundations/docker-security)
+- Learn Docker Compose fundamentals — [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Understand environment variables — [Docker Environment Variables](/foundations/docker-environment-variables/)
+- Review your security setup — [Security Checklist](/foundations/selfhosting-security-checklist/)
+- Harden Docker — [Docker Security Best Practices](/foundations/docker-security/)
 
 ## FAQ
 
@@ -339,8 +339,8 @@ Kubernetes has its own secrets system. If you're running K3s or K8s for self-hos
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Docker Security Best Practices](/foundations/docker-security)
-- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist)
-- [Docker Compose Profiles](/foundations/docker-compose-profiles)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Docker Security Best Practices](/foundations/docker-security/)
+- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/)
+- [Docker Compose Profiles](/foundations/docker-compose-profiles/)

@@ -27,7 +27,7 @@ Both are excellent. AdGuard Home has a more modern feature set — built-in DNS-
 
 ## Overview
 
-This comparison focuses specifically on DNS server capabilities — filtering, resolution, encryption, and network management. For ad blocking features, see [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home).
+This comparison focuses specifically on DNS server capabilities — filtering, resolution, encryption, and network management. For ad blocking features, see [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/).
 
 **Pi-hole** uses FTLDNS (a fork of dnsmasq) as its DNS engine. It handles DNS resolution, DHCP, and provides a query logging/analytics dashboard. DNS filtering is its core purpose. [Pi-hole site](https://pi-hole.net/)
 
@@ -137,10 +137,10 @@ Yes, both can serve as DHCP servers. Disable DHCP on your router and enable it i
 
 ## Related
 
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [Unbound vs CoreDNS](/compare/unbound-vs-coredns)
-- [Blocky vs Pi-hole](/compare/blocky-vs-pihole)
-- [Technitium vs Unbound](/compare/technitium-vs-unbound)
-- [Best Self-Hosted Ad Blocking](/best/ad-blocking)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [Unbound vs CoreDNS](/compare/unbound-vs-coredns/)
+- [Blocky vs Pi-hole](/compare/blocky-vs-pihole/)
+- [Technitium vs Unbound](/compare/technitium-vs-unbound/)
+- [Best Self-Hosted Ad Blocking](/best/ad-blocking/)

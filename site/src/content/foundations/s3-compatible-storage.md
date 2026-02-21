@@ -15,17 +15,17 @@ affiliateDisclosure: false
 
 ## What Is S3-Compatible Storage?
 
-S3-compatible object storage gives you an API-compatible alternative to Amazon S3 that runs on your own hardware. Instead of paying AWS per gigabyte, you store blobs, backups, photos, and application data on local disks behind the same API that thousands of tools already support. If you self-host apps like [Nextcloud](/apps/nextcloud), [Immich](/apps/immich), or any backup tool, S3-compatible self-hosted storage lets you centralize your data without cloud lock-in.
+S3-compatible object storage gives you an API-compatible alternative to Amazon S3 that runs on your own hardware. Instead of paying AWS per gigabyte, you store blobs, backups, photos, and application data on local disks behind the same API that thousands of tools already support. If you self-host apps like [Nextcloud](/apps/nextcloud/), [Immich](/apps/immich/), or any backup tool, S3-compatible self-hosted storage lets you centralize your data without cloud lock-in.
 
 Object storage differs from filesystem storage. Rather than a hierarchy of directories and files, you have flat buckets containing objects identified by keys. Each object carries metadata alongside its data. This model is simpler for large-scale unstructured data — photos, backups, logs, media — and the S3 API has become the universal interface for accessing it.
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics)
+- A Linux server (Ubuntu 22.04+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics/)
 - At least 1 GB of free RAM (2 GB+ recommended for production)
-- Dedicated storage volume for object data — see [Storage Planning](/foundations/storage-planning)
-- Basic understanding of Docker volumes — see [Docker Volumes](/foundations/docker-volumes)
+- Dedicated storage volume for object data — see [Storage Planning](/foundations/storage-planning/)
+- Basic understanding of Docker volumes — see [Docker Volumes](/foundations/docker-volumes/)
 
 ## Core Concepts
 
@@ -169,7 +169,7 @@ You should see output indicating the S3 API is listening on port 9000 and the co
 - **`MINIO_SERVER_URL`**: Set this to the URL that external clients use to reach the S3 API. If you are behind a reverse proxy with a domain like `s3.example.com`, set this to `https://s3.example.com`. Incorrect values cause presigned URL failures.
 - **`MINIO_BROWSER_REDIRECT_URL`**: The URL for the web console. If you serve the console through a reverse proxy on a different subdomain, set it here.
 - **`MINIO_DEFAULT_BUCKETS`**: Comma-separated list of buckets to create on first startup. Useful for preprovisioning buckets for your apps.
-- **`minio-data` volume**: All object data lives here. Back this up — see [Backup Strategy](/foundations/backup-3-2-1-rule). For large datasets, use a bind mount to a dedicated disk instead of a named volume.
+- **`minio-data` volume**: All object data lives here. Back this up — see [Backup Strategy](/foundations/backup-3-2-1-rule/). For large datasets, use a bind mount to a dedicated disk instead of a named volume.
 
 ### Using a Bind Mount for Data
 
@@ -304,7 +304,7 @@ In Nextcloud's `config.php`, configure S3 as the primary storage backend:
 ],
 ```
 
-The `hostname` is `minio` if Nextcloud and MinIO are on the same Docker network. Set `use_path_style` to `true` — this is required for MinIO. See the full [Nextcloud setup guide](/apps/nextcloud) for Docker network configuration.
+The `hostname` is `minio` if Nextcloud and MinIO are on the same Docker network. Set `use_path_style` to `true` — this is required for MinIO. See the full [Nextcloud setup guide](/apps/nextcloud/) for Docker network configuration.
 
 ### Immich
 
@@ -320,7 +320,7 @@ S3_BUCKET=immich-uploads
 S3_REGION=us-east-1
 ```
 
-Check the [Immich guide](/apps/immich) for the full Docker Compose configuration. Make sure MinIO is on the same Docker network as Immich's services.
+Check the [Immich guide](/apps/immich/) for the full Docker Compose configuration. Make sure MinIO is on the same Docker network as Immich's services.
 
 ### Backup Tools (Restic, Borgmatic, Duplicati)
 
@@ -349,11 +349,11 @@ Create it once:
 docker network create s3-net
 ```
 
-Then add `networks: [s3-net]` to both the MinIO service and any app service that needs S3 access. See [Docker Networking](/foundations/docker-networking) for more detail.
+Then add `networks: [s3-net]` to both the MinIO service and any app service that needs S3 access. See [Docker Networking](/foundations/docker-networking/) for more detail.
 
 ## Reverse Proxy Setup
 
-If you need to expose MinIO externally (for remote backups or multi-server setups), run it behind a [reverse proxy](/foundations/reverse-proxy-explained) with TLS.
+If you need to expose MinIO externally (for remote backups or multi-server setups), run it behind a [reverse proxy](/foundations/reverse-proxy-explained/) with TLS.
 
 Key points for proxying MinIO:
 
@@ -380,7 +380,7 @@ When MinIO generates presigned URLs (for direct uploads/downloads), it uses the 
 
 ### Ignoring Volume Backups
 
-Object storage is not a backup. If your disk fails and the MinIO data volume is on that disk, everything is gone. Back up the data volume to a separate location — another disk, another server, or an offsite destination. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Object storage is not a backup. If your disk fails and the MinIO data volume is on that disk, everything is gone. Back up the data volume to a separate location — another disk, another server, or an offsite destination. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ### Running Out of Disk Space
 
@@ -410,11 +410,11 @@ Yes, because they all speak the S3 API. Use `mc mirror` or `rclone sync` to copy
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes and Persistent Data](/foundations/docker-volumes)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Server Storage Planning](/foundations/storage-planning)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Immich](/apps/immich)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes and Persistent Data](/foundations/docker-volumes/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Server Storage Planning](/foundations/storage-planning/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Immich](/apps/immich/)

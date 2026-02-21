@@ -21,8 +21,8 @@ HDDs (Hard Disk Drives) store data on spinning magnetic platters. SSDs (Solid St
 
 ## Prerequisites
 
-- Understanding your storage needs ([Storage Planning](/foundations/storage-planning))
-- Basic knowledge of [RAID configurations](/foundations/raid-explained) if using multiple drives
+- Understanding your storage needs ([Storage Planning](/foundations/storage-planning/))
+- Basic knowledge of [RAID configurations](/foundations/raid-explained/) if using multiple drives
 
 ## Performance Comparison
 
@@ -74,7 +74,7 @@ HDDs cost 3-5x less per terabyte. For a media library with 20+ TB of video files
 | SATA SSD | 0.02-0.05W | 1-3W | Negligible |
 | NVMe SSD | 0.01-0.05W | 3-8W | Higher peak than SATA SSD |
 
-A server with 4x 3.5" HDDs uses 20-48W just for storage. The same capacity in SSDs uses under 5W. Over a year, that's a meaningful electricity cost difference. See [Power Management](/foundations/power-management) for cost calculations.
+A server with 4x 3.5" HDDs uses 20-48W just for storage. The same capacity in SSDs uses under 5W. Over a year, that's a meaningful electricity cost difference. See [Power Management](/foundations/power-management/) for cost calculations.
 
 ## Use Cases for Self-Hosting
 
@@ -170,7 +170,7 @@ Key SMART attributes to monitor:
 | Temperature | Drive temperature in Celsius | >50°C for HDDs, >70°C for SSDs |
 | Wear Leveling Count (SSD) | Flash cell wear percentage | Below 10% remaining |
 
-Set up automated SMART monitoring with [Monitoring Basics](/foundations/monitoring-basics).
+Set up automated SMART monitoring with [Monitoring Basics](/foundations/monitoring-basics/).
 
 ## Common Mistakes
 
@@ -188,14 +188,14 @@ A drive reporting reallocated sectors is actively dying. Replace it immediately 
 
 ### No Redundancy for Important Data
 
-A single drive failure shouldn't mean data loss. Use [RAID](/foundations/raid-explained) for redundancy and always maintain offsite backups following the [3-2-1 rule](/foundations/backup-3-2-1-rule).
+A single drive failure shouldn't mean data loss. Use [RAID](/foundations/raid-explained/) for redundancy and always maintain offsite backups following the [3-2-1 rule](/foundations/backup-3-2-1-rule/).
 
 ## Next Steps
 
-- Plan your storage layout with [Storage Planning](/foundations/storage-planning)
-- Set up drive redundancy with [RAID Explained](/foundations/raid-explained)
-- Learn about ZFS for advanced storage at [ZFS Basics](/foundations/zfs-basics)
-- Protect your data with [Backup Strategy](/foundations/backup-3-2-1-rule)
+- Plan your storage layout with [Storage Planning](/foundations/storage-planning/)
+- Set up drive redundancy with [RAID Explained](/foundations/raid-explained/)
+- Learn about ZFS for advanced storage at [ZFS Basics](/foundations/zfs-basics/)
+- Protect your data with [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## FAQ
 
@@ -221,10 +221,10 @@ Modern SSDs are rated for hundreds of TBW (Terabytes Written). A typical self-ho
 
 ## Related
 
-- [Storage Planning](/foundations/storage-planning)
-- [RAID Explained](/foundations/raid-explained)
-- [ZFS Basics](/foundations/zfs-basics)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [NAS Basics](/foundations/nas-basics)
-- [Power Management](/foundations/power-management)
-- [Monitoring Basics](/foundations/monitoring-basics)
+- [Storage Planning](/foundations/storage-planning/)
+- [RAID Explained](/foundations/raid-explained/)
+- [ZFS Basics](/foundations/zfs-basics/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [NAS Basics](/foundations/nas-basics/)
+- [Power Management](/foundations/power-management/)
+- [Monitoring Basics](/foundations/monitoring-basics/)

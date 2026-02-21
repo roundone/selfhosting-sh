@@ -92,14 +92,14 @@ Both have active communities. Restic has more GitHub stars, more frequent releas
 
 **Duplicati wins for accessibility.** The web UI lowers the barrier to entry significantly. If you want backups running without touching the command line, Duplicati delivers.
 
-Consider also: [Borgmatic](/apps/borgmatic) wraps BorgBackup (Restic's main competitor) with a YAML config file and Docker support, offering a middle ground between Restic's bare CLI and Duplicati's full GUI.
+Consider also: [Borgmatic](/apps/borgmatic/) wraps BorgBackup (Restic's main competitor) with a YAML config file and Docker support, offering a middle ground between Restic's bare CLI and Duplicati's full GUI.
 
 ## Related
 
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
-- [Borgmatic vs Restic](/compare/borgmatic-vs-restic)
-- [Best Self-Hosted Backup Tools](/best/backup)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Borgmatic vs Restic](/compare/borgmatic-vs-restic/)
+- [Best Self-Hosted Backup Tools](/best/backup/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)

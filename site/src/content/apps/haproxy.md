@@ -26,10 +26,10 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB of free RAM
 - Ports 80 and 443 available
-- Basic understanding of frontend/backend proxy concepts ([guide](/foundations/reverse-proxy-explained))
+- Basic understanding of frontend/backend proxy concepts ([guide](/foundations/reverse-proxy-explained/))
 
 ## Docker Compose Configuration
 
@@ -272,7 +272,7 @@ frontend http_front
 
 ## Reverse Proxy
 
-HAProxy IS the reverse proxy. For typical self-hosting setups, consider whether you actually need HAProxy's advanced features. [Caddy](/apps/caddy) and [Nginx Proxy Manager](/apps/nginx-proxy-manager) are simpler for basic reverse proxying with automatic HTTPS.
+HAProxy IS the reverse proxy. For typical self-hosting setups, consider whether you actually need HAProxy's advanced features. [Caddy](/apps/caddy/) and [Nginx Proxy Manager](/apps/nginx-proxy-manager/) are simpler for basic reverse proxying with automatic HTTPS.
 
 ## Backup
 
@@ -281,7 +281,7 @@ Back up these files:
 - `haproxy.cfg` — your entire configuration
 - `certs/` — SSL certificates and keys (if using SSL termination)
 
-HAProxy is stateless — there is no database to back up. Your config file is the only critical artifact. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+HAProxy is stateless — there is no database to back up. Your config file is the only critical artifact. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -320,13 +320,13 @@ HAProxy is stateless — there is no database to back up. Your config file is th
 
 HAProxy is the most capable load balancer you can self-host. Its health checks, stick tables, rate limiting, and TCP proxying are best-in-class. But for most self-hosters running 5-20 services on a single server, **HAProxy is overkill.** The config syntax has a learning curve, there is no automatic HTTPS, and adding a new service requires editing config files and reloading.
 
-Use HAProxy if you need production-grade load balancing, TCP proxying, or advanced traffic management. For standard HTTP reverse proxying with HTTPS, [Caddy](/apps/caddy) or [Nginx Proxy Manager](/apps/nginx-proxy-manager) are better choices. If you want config-as-code with Docker auto-discovery, [Traefik](/apps/traefik) is the closer competitor.
+Use HAProxy if you need production-grade load balancing, TCP proxying, or advanced traffic management. For standard HTTP reverse proxying with HTTPS, [Caddy](/apps/caddy/) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/) are better choices. If you want config-as-code with Docker auto-discovery, [Traefik](/apps/traefik/) is the closer competitor.
 
 ## FAQ
 
 ### How does HAProxy compare to Nginx for reverse proxying?
 
-Both are production-grade. HAProxy has better load balancing, health checks, and TCP proxying. Nginx has better static file serving, caching, and HTTP feature support. For pure reverse proxying and load balancing, HAProxy is technically superior. For web serving plus proxying, Nginx is more versatile. See [Traefik vs HAProxy](/compare/traefik-vs-haproxy) for a modern comparison.
+Both are production-grade. HAProxy has better load balancing, health checks, and TCP proxying. Nginx has better static file serving, caching, and HTTP feature support. For pure reverse proxying and load balancing, HAProxy is technically superior. For web serving plus proxying, Nginx is more versatile. See [Traefik vs HAProxy](/compare/traefik-vs-haproxy/) for a modern comparison.
 
 ### Can HAProxy get Let's Encrypt certificates automatically?
 
@@ -338,15 +338,15 @@ By default, the stats frontend is accessible to anyone who can reach the port. I
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [HAProxy vs Nginx](/compare/haproxy-vs-nginx)
-- [HAProxy vs Caddy](/compare/haproxy-vs-caddy)
-- [HAProxy vs Envoy](/compare/haproxy-vs-envoy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [HAProxy vs Nginx](/compare/haproxy-vs-nginx/)
+- [HAProxy vs Caddy](/compare/haproxy-vs-caddy/)
+- [HAProxy vs Envoy](/compare/haproxy-vs-envoy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

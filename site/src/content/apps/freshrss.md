@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (minimum)
 - 1 GB of free disk space
 - A domain name (optional, for remote access)
@@ -185,7 +185,7 @@ Example Nginx Proxy Manager config:
 - **Forward Port:** 80
 - **Enable WebSocket Support:** Yes (for real-time features)
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -200,7 +200,7 @@ docker run --rm -v freshrss_data:/data -v $(pwd):/backup alpine \
 docker compose exec freshrss_db pg_dump -U freshrss freshrss > freshrss-backup.sql
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -242,14 +242,14 @@ docker compose exec freshrss php ./cli/reconfigure.php
 
 ## Verdict
 
-FreshRSS is the best self-hosted RSS reader for most people. It's lightweight, feature-rich, supports mobile app sync via Google Reader API, and handles thousands of feeds reliably. If you want a single-binary, minimalist alternative, look at [Miniflux](/apps/miniflux). But for most users, FreshRSS hits the sweet spot of features, performance, and ease of setup.
+FreshRSS is the best self-hosted RSS reader for most people. It's lightweight, feature-rich, supports mobile app sync via Google Reader API, and handles thousands of feeds reliably. If you want a single-binary, minimalist alternative, look at [Miniflux](/apps/miniflux/). But for most users, FreshRSS hits the sweet spot of features, performance, and ease of setup.
 
 ## Related
 
-- [Best Self-Hosted RSS Readers](/best/rss-readers)
-- [FreshRSS vs Miniflux](/compare/freshrss-vs-miniflux)
-- [Replace Feedly with Self-Hosted RSS](/replace/feedly)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [Best Self-Hosted RSS Readers](/best/rss-readers/)
+- [FreshRSS vs Miniflux](/compare/freshrss-vs-miniflux/)
+- [Replace Feedly with Self-Hosted RSS](/replace/feedly/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

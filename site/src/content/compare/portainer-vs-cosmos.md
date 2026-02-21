@@ -57,7 +57,7 @@ These tools have fundamentally different scopes. Portainer is a specialist. Cosm
 
 ## Installation Complexity
 
-**Portainer** is a single container with a Docker socket mount. Simple and fast. But you still need to separately set up a reverse proxy ([Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy)) and an auth solution ([Authelia](https://www.authelia.com/) or [Authentik](https://goauthentik.io/)) if you want HTTPS and SSO.
+**Portainer** is a single container with a Docker socket mount. Simple and fast. But you still need to separately set up a reverse proxy ([Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), or [Caddy](/apps/caddy/)) and an auth solution ([Authelia](https://www.authelia.com/) or [Authentik](https://goauthentik.io/)) if you want HTTPS and SSO.
 
 **Cosmos Cloud** installs as a single container but bundles significantly more functionality. First-time setup includes a wizard that configures your domain, HTTPS certificates, admin account, and security settings. The setup is guided but takes longer because Cosmos is doing more — configuring a proxy, provisioning certificates, and setting up authentication in one pass.
 
@@ -131,10 +131,10 @@ If you already run Traefik or Caddy and Authelia, adding Portainer makes more se
 
 ## Related
 
-- [How to Self-Host Portainer with Docker](/apps/portainer)
-- [How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Portainer vs Yacht](/compare/portainer-vs-yacht)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Portainer with Docker](/apps/portainer/)
+- [How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Portainer vs Yacht](/compare/portainer-vs-yacht/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

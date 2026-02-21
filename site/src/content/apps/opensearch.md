@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB+ RAM (2 GB minimum for JVM heap)
 - 10 GB+ free disk space
 - Set `vm.max_map_count=262144` on the host
@@ -207,7 +207,7 @@ curl -X PUT "http://localhost:9200/_plugins/_ism/policies/logs-policy" \
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 9200 (API) and 5601 (Dashboards). See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 9200 (API) and 5601 (Dashboards). See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -223,7 +223,7 @@ curl -X PUT "http://localhost:9200/_snapshot/backups" \
 curl -X PUT "http://localhost:9200/_snapshot/backups/snapshot_1"
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -252,14 +252,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule).
 
 OpenSearch is the best fully open-source alternative to Elasticsearch. You get security, alerting, anomaly detection, and SQL queries for free — without licensing restrictions. The API is compatible with Elasticsearch 7.x tooling. The trade-off is slightly lower performance than Elasticsearch in benchmarks, but for most self-hosted deployments, the difference is negligible.
 
-**Choose OpenSearch** for open-source search + analytics without licensing concerns. **Choose [Elasticsearch](/apps/elasticsearch)** if you need cutting-edge Elastic features or tight ELK Stack integration.
+**Choose OpenSearch** for open-source search + analytics without licensing concerns. **Choose [Elasticsearch](/apps/elasticsearch/)** if you need cutting-edge Elastic features or tight ELK Stack integration.
 
 ## Related
 
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

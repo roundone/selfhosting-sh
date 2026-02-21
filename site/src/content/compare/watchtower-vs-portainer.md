@@ -20,7 +20,7 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun/) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
 
 ## Quick Verdict
 
@@ -106,7 +106,7 @@ services:
 
 ## A Note on Watchtower's Project Status
 
-Watchtower's last release was v1.7.1 in November 2023. The project is in maintenance mode — it works but isn't actively developed. For a more actively maintained alternative that does update notifications (but not automatic updates), consider [Diun](/apps/diun). See our [Watchtower vs Diun comparison](/compare/watchtower-vs-diun).
+Watchtower's last release was v1.7.1 in November 2023. The project is in maintenance mode — it works but isn't actively developed. For a more actively maintained alternative that does update notifications (but not automatic updates), consider [Diun](/apps/diun/). See our [Watchtower vs Diun comparison](/compare/watchtower-vs-diun/).
 
 ## Final Verdict
 
@@ -124,7 +124,7 @@ Yes. Watchtower updates any running container, including itself and Portainer. I
 
 ### Should I worry about Watchtower auto-updating breaking things?
 
-Yes — automatic updates can break applications if a new version has breaking changes. Use Watchtower's label system to exclude critical containers: add `com.centurylinklabs.watchtower.enable: "false"` to containers you want to update manually. Or use [Diun](/apps/diun) for notifications-only (no auto-update).
+Yes — automatic updates can break applications if a new version has breaking changes. Use Watchtower's label system to exclude critical containers: add `com.centurylinklabs.watchtower.enable: "false"` to containers you want to update manually. Or use [Diun](/apps/diun/) for notifications-only (no auto-update).
 
 ### Can I use Diun instead of Watchtower with Portainer?
 
@@ -132,10 +132,10 @@ Diun only notifies you about available updates — it doesn't automatically appl
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Watchtower](/apps/watchtower)
-- [How to Self-Host Diun](/apps/diun)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Watchtower](/apps/watchtower/)
+- [How to Self-Host Diun](/apps/diun/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

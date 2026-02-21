@@ -26,7 +26,7 @@ FlareSolverr is a proxy server that solves Cloudflare and DDoS-GUARD challenges 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 512 MB of RAM (minimum — headless browser is memory-hungry)
 - Prowlarr or Jackett for indexer management
@@ -118,7 +118,7 @@ FlareSolverr doesn't need a reverse proxy — it's an internal service used only
 
 ## Backup
 
-FlareSolverr is stateless. No backup needed — recreate the container from the compose file. See [Backup Strategy](/foundations/backup-3-2-1-rule) for your other services.
+FlareSolverr is stateless. No backup needed — recreate the container from the compose file. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for your other services.
 
 ## Troubleshooting
 
@@ -165,10 +165,10 @@ Some people extract Cloudflare cookies from a regular browser and paste them int
 
 ## Related
 
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Jackett](/apps/jackett)
-- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Jackett](/apps/jackett/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [Best Self-Hosted Download Management](/best/download-management/)

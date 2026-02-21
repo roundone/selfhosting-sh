@@ -52,7 +52,7 @@ Ghost is a modern publishing platform built specifically for content creators. I
 
 **Best for:** Bloggers, newsletter creators, and publishers who want a polished publishing experience without the complexity of WordPress.
 
-[Read our full guide: [How to Self-Host Ghost](/apps/ghost)]
+[Read our full guide: [How to Self-Host Ghost](/apps/ghost/)]
 
 ### 2. WordPress — Best for Flexibility
 
@@ -75,7 +75,7 @@ WordPress powers 43% of the web for a reason. With 60,000+ plugins and thousands
 
 **Best for:** Users who need maximum flexibility, e-commerce, or specific functionality that only WordPress plugins provide.
 
-[Read our full guide: [How to Self-Host WordPress](/apps/wordpress)]
+[Read our full guide: [How to Self-Host WordPress](/apps/wordpress/)]
 
 ### 3. Hugo — Best for Developers
 
@@ -98,7 +98,7 @@ Hugo is the fastest static site generator available. Written in Go, it builds th
 
 **Best for:** Developers and technical users who want maximum speed, security, and simplicity for blogs and documentation sites.
 
-[Read our full guide: [How to Self-Host Hugo](/apps/hugo)]
+[Read our full guide: [How to Self-Host Hugo](/apps/hugo/)]
 
 ### 4. Astro — Best Modern Static Framework
 
@@ -143,13 +143,13 @@ We prioritized publishing experience, maintenance burden, and security surface a
 
 ## Related
 
-- [How to Self-Host Ghost](/apps/ghost)
-- [How to Self-Host WordPress](/apps/wordpress)
-- [How to Self-Host Hugo](/apps/hugo)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Self-Hosted Alternatives to Squarespace](/replace/squarespace)
-- [Self-Hosted Alternatives to Medium](/replace/medium)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Best Self-Hosted Analytics](/best/analytics)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [How to Self-Host Hugo](/apps/hugo/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Self-Hosted Alternatives to Squarespace](/replace/squarespace/)
+- [Self-Hosted Alternatives to Medium](/replace/medium/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Best Self-Hosted Analytics](/best/analytics/)

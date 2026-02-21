@@ -256,9 +256,9 @@ LiFePO4 (lithium) UPS units exist and offer 2–3x longer battery life than lead
 
 ## Related
 
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Home Server Battery Backup](/hardware/home-server-battery-backup)
-- [Electricity Cost Calculator](/hardware/electricity-cost-calculator)
-- [Wake-on-LAN Guide](/hardware/wake-on-lan)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Home Server Battery Backup](/hardware/home-server-battery-backup/)
+- [Electricity Cost Calculator](/hardware/electricity-cost-calculator/)
+- [Wake-on-LAN Guide](/hardware/wake-on-lan/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)

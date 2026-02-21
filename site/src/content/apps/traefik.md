@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM minimum
 - Ports 80 and 443 available (not used by another web server)
 - A domain name with DNS A records pointing to your server's public IP
@@ -442,7 +442,7 @@ docker run --rm \
 echo "Backup saved to $BACKUP_DIR"
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -511,9 +511,9 @@ command:
 Switch back to production (remove the `caserver` flag) once your configuration is correct. Staging certificates are not trusted by browsers but are not rate-limited.
 
 For more detailed troubleshooting, see:
-- [Traefik: Docker Containers Not Detected — Fix](/troubleshooting/traefik/container-not-detected)
-- [Traefik: Dashboard Not Loading — Fix](/troubleshooting/traefik/dashboard-not-loading)
-- [Traefik: SSL Certificate Not Generating — Fix](/troubleshooting/traefik/ssl-certificate-not-generating)
+- [Traefik: Docker Containers Not Detected — Fix](/troubleshooting/traefik/container-not-detected/)
+- [Traefik: Dashboard Not Loading — Fix](/troubleshooting/traefik/dashboard-not-loading/)
+- [Traefik: SSL Certificate Not Generating — Fix](/troubleshooting/traefik/ssl-certificate-not-generating/)
 
 ## Resource Requirements
 
@@ -523,11 +523,11 @@ For more detailed troubleshooting, see:
 
 ## Verdict
 
-Traefik is the best reverse proxy for Docker-native self-hosting setups. Its automatic service discovery via Docker labels means you never touch a proxy config file when adding a new service — just add labels to the container and Traefik picks it up. This is a fundamentally different workflow from [Nginx Proxy Manager](/apps/nginx-proxy-manager), which requires clicking through a web UI for each new service, and from [Caddy](/apps/caddy), which requires editing a Caddyfile.
+Traefik is the best reverse proxy for Docker-native self-hosting setups. Its automatic service discovery via Docker labels means you never touch a proxy config file when adding a new service — just add labels to the container and Traefik picks it up. This is a fundamentally different workflow from [Nginx Proxy Manager](/apps/nginx-proxy-manager/), which requires clicking through a web UI for each new service, and from [Caddy](/apps/caddy/), which requires editing a Caddyfile.
 
 The trade-off is initial setup complexity. Traefik's learning curve is steeper than NPM's. The label syntax is verbose, and the v2-to-v3 migration broke many existing guides. But once configured, Traefik is hands-off in a way no other reverse proxy matches. Add a container with the right labels, and it is live with HTTPS in seconds.
 
-**Choose Traefik if:** You manage 5+ services, prefer infrastructure-as-code, want zero-touch HTTPS provisioning, or plan to scale. **Choose [Nginx Proxy Manager](/apps/nginx-proxy-manager) if:** You want a web UI and simpler initial setup. **Choose [Caddy](/apps/caddy) if:** You want a single-file config with automatic HTTPS but without Docker label complexity.
+**Choose Traefik if:** You manage 5+ services, prefer infrastructure-as-code, want zero-touch HTTPS provisioning, or plan to scale. **Choose [Nginx Proxy Manager](/apps/nginx-proxy-manager/) if:** You want a web UI and simpler initial setup. **Choose [Caddy](/apps/caddy/) if:** You want a single-file config with automatic HTTPS but without Docker label complexity.
 
 For most self-hosters running a serious Docker stack, Traefik is the right answer.
 
@@ -575,19 +575,19 @@ Yes. Mounting `/var/run/docker.sock` gives Traefik (and anyone who compromises i
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Caddy](/apps/caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Traefik vs Cosmos Cloud](/compare/traefik-vs-cosmos-cloud)
-- [Traefik vs Nginx](/compare/traefik-vs-nginx)
-- [Traefik vs Zoraxy](/compare/traefik-vs-zoraxy)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Traefik: Docker Containers Not Detected — Fix](/troubleshooting/traefik/container-not-detected)
-- [Traefik: Dashboard Not Loading — Fix](/troubleshooting/traefik/dashboard-not-loading)
-- [Traefik: SSL Certificate Not Generating — Fix](/troubleshooting/traefik/ssl-certificate-not-generating)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Replace Managed Hosting](/replace/managed-hosting)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Caddy](/apps/caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Traefik vs Cosmos Cloud](/compare/traefik-vs-cosmos-cloud/)
+- [Traefik vs Nginx](/compare/traefik-vs-nginx/)
+- [Traefik vs Zoraxy](/compare/traefik-vs-zoraxy/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Traefik: Docker Containers Not Detected — Fix](/troubleshooting/traefik/container-not-detected/)
+- [Traefik: Dashboard Not Loading — Fix](/troubleshooting/traefik/dashboard-not-loading/)
+- [Traefik: SSL Certificate Not Generating — Fix](/troubleshooting/traefik/ssl-certificate-not-generating/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Replace Managed Hosting](/replace/managed-hosting/)

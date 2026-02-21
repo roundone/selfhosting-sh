@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - NVIDIA GPU with 4+ GB VRAM (8+ GB recommended)
 - 8 GB+ system RAM
 - 20 GB+ free disk space
@@ -193,7 +193,7 @@ ComfyUI supports Flux models. Download the Flux checkpoint and use the appropria
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8188. WebSocket support is required for the node editor and generation progress. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8188. WebSocket support is required for the node editor and generation progress. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -202,7 +202,7 @@ Back up these directories:
 - `custom_nodes/` — Installed custom nodes (can be re-downloaded)
 - `models/` — Downloaded models (large, can be re-downloaded)
 
-Priority: Save your workflow JSON files — they capture your entire generation pipeline and are small. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Priority: Save your workflow JSON files — they capture your entire generation pipeline and are small. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -235,16 +235,16 @@ Priority: Save your workflow JSON files — they capture your entire generation 
 
 ## Verdict
 
-ComfyUI is the power user's image generation tool. The node-based workflow gives you complete control over every step of the generation pipeline — something no other interface provides. Workflows are reproducible, shareable, and composable. The trade-off is a steeper learning curve compared to [Stable Diffusion WebUI](/apps/stable-diffusion-webui).
+ComfyUI is the power user's image generation tool. The node-based workflow gives you complete control over every step of the generation pipeline — something no other interface provides. Workflows are reproducible, shareable, and composable. The trade-off is a steeper learning curve compared to [Stable Diffusion WebUI](/apps/stable-diffusion-webui/).
 
-**Choose ComfyUI** if you want maximum control over image generation pipelines, reproducible workflows, and the ability to build complex generation chains. **Choose [Stable Diffusion WebUI](/apps/stable-diffusion-webui)** if you want a simpler, more traditional interface.
+**Choose ComfyUI** if you want maximum control over image generation pipelines, reproducible workflows, and the ability to build complex generation chains. **Choose [Stable Diffusion WebUI](/apps/stable-diffusion-webui/)** if you want a simpler, more traditional interface.
 
 ## Related
 
-- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui)
-- [Stable Diffusion vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
-- [Self-Hosted Midjourney Alternatives](/replace/midjourney)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui/)
+- [Stable Diffusion vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
+- [Self-Hosted Midjourney Alternatives](/replace/midjourney/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

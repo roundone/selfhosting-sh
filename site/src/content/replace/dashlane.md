@@ -45,7 +45,7 @@ Vaultwarden matches or exceeds Dashlane's core features: password storage, auto-
 
 **What Dashlane has that Vaultwarden doesn't:** Dark web monitoring, built-in VPN (Premium), and password health dashboard (Vaultwarden has vault health reports instead).
 
-[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden)
+[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden/)
 
 ### Passbolt — Best for Teams
 
@@ -53,7 +53,7 @@ Vaultwarden matches or exceeds Dashlane's core features: password storage, auto-
 
 **Best for:** Teams migrating from Dashlane Business who need shared credential management.
 
-[Read our full guide: How to Self-Host Passbolt](/apps/passbolt)
+[Read our full guide: How to Self-Host Passbolt](/apps/passbolt/)
 
 ### KeeWeb — Best File-Based Option
 
@@ -61,7 +61,7 @@ Vaultwarden matches or exceeds Dashlane's core features: password storage, auto-
 
 **Best for:** Users who want maximum simplicity and portability with a file-based vault.
 
-[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb)
+[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb/)
 
 ## Migration Guide
 
@@ -106,7 +106,7 @@ Vaultwarden matches or exceeds Dashlane's core features: password storage, auto-
 ## What You Give Up
 
 - **Dark web monitoring.** Dashlane scans breach databases for your email addresses. Use [Have I Been Pwned](https://haveibeenpwned.com/) and its free notification service instead.
-- **Built-in VPN.** Dashlane Premium includes a VPN. Self-host [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard) for remote access instead.
+- **Built-in VPN.** Dashlane Premium includes a VPN. Self-host [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/) for remote access instead.
 - **Effortless setup.** Dashlane's onboarding is polished. Self-hosting requires Docker, a reverse proxy, and SSL certificates.
 - **Automatic updates.** Dashlane updates itself. Self-hosted requires pulling new Docker images periodically.
 
@@ -114,7 +114,7 @@ Vaultwarden matches or exceeds Dashlane's core features: password storage, auto-
 
 ### Is Vaultwarden as secure as Dashlane?
 
-Both use strong encryption (AES-256). Vaultwarden encrypts your vault client-side before it reaches the server, same as Dashlane. The key difference is operational: Dashlane has a professional security team, while self-hosting puts security responsibility on you. Keep your server updated and follow our [security basics guide](/foundations/firewall-ufw).
+Both use strong encryption (AES-256). Vaultwarden encrypts your vault client-side before it reaches the server, same as Dashlane. The key difference is operational: Dashlane has a professional security team, while self-hosting puts security responsibility on you. Keep your server updated and follow our [security basics guide](/foundations/firewall-ufw/).
 
 ### Will I lose my password history?
 
@@ -126,12 +126,12 @@ Yes. Vaultwarden works with the official Bitwarden mobile apps on iOS and Androi
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

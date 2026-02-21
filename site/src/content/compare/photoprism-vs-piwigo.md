@@ -118,7 +118,7 @@ If you want one tool: **PhotoPrism** if AI features and smart search matter most
 
 Some users run both — Piwigo as the gallery frontend for sharing with family/clients, and PhotoPrism as the personal browsing and search interface for the same underlying photo library.
 
-For a full Google Photos replacement with mobile upload and modern UI, use [Immich](/apps/immich) instead of either.
+For a full Google Photos replacement with mobile upload and modern UI, use [Immich](/apps/immich/) instead of either.
 
 ## FAQ
 
@@ -136,15 +136,15 @@ Piwigo. Users report smooth operation at 500K+ photos. PhotoPrism handles 100K+ 
 
 ### Does Piwigo have any AI features?
 
-Not built-in. Some community plugins add basic tagging automation, but nothing comparable to PhotoPrism's TensorFlow classification, face recognition, or CLIP search. If AI features matter, choose PhotoPrism or [Immich](/apps/immich).
+Not built-in. Some community plugins add basic tagging automation, but nothing comparable to PhotoPrism's TensorFlow classification, face recognition, or CLIP search. If AI features matter, choose PhotoPrism or [Immich](/apps/immich/).
 
 ## Related
 
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [How to Self-Host Immich](/apps/immich)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [How to Self-Host Immich](/apps/immich/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)

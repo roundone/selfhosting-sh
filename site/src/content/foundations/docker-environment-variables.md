@@ -21,8 +21,8 @@ Every self-hosted Docker app uses environment variables. Getting them right is t
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic terminal knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic terminal knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Setting Environment Variables in Docker Compose
 
@@ -420,15 +420,15 @@ They're visible via `docker inspect` and inside the container. For production se
 
 ## Next Steps
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — full Compose file reference
-- [Docker Volumes](/foundations/docker-volumes) — persistent storage configuration
-- [Linux File Permissions](/foundations/linux-permissions) — secure your .env files
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — full Compose file reference
+- [Docker Volumes](/foundations/docker-volumes/) — persistent storage configuration
+- [Linux File Permissions](/foundations/linux-permissions/) — secure your .env files
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

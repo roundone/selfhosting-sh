@@ -109,7 +109,7 @@ Both projects are under active development with responsive maintainers.
 
 - You want the simplest possible local LLM setup
 - You only need text generation and embeddings
-- You're pairing it with a separate UI like [Open WebUI](/apps/open-webui)
+- You're pairing it with a separate UI like [Open WebUI](/apps/open-webui/)
 - You want one-command model management (`ollama pull`, `ollama run`)
 - You're running on consumer hardware with limited resources
 - You want the largest community and ecosystem
@@ -129,12 +129,12 @@ Both projects are under active development with responsive maintainers.
 
 **LocalAI is the better choice if you're building infrastructure.** When you need a single API endpoint that handles text, images, audio, and embeddings — all OpenAI-compatible — LocalAI is uniquely capable. The trade-off is more complexity in setup and higher resource usage.
 
-For most people starting with self-hosted AI: install Ollama, pair it with [Open WebUI](/apps/open-webui), and you'll be running local models within minutes.
+For most people starting with self-hosted AI: install Ollama, pair it with [Open WebUI](/apps/open-webui/), and you'll be running local models within minutes.
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [Best Self-Hosted AI & Machine Learning Tools](/best/ai-machine-learning)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [Best Self-Hosted AI & Machine Learning Tools](/best/ai-machine-learning/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

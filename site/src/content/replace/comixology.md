@@ -37,7 +37,7 @@ Self-hosting your comic library means you own your files, read them in purpose-b
 
 ### Kavita — Best Overall
 
-[Kavita](/apps/kavita) is the best overall replacement for ComiXology. It handles CBR, CBZ, CB7, PDF, and raw image folders with a polished web reader that supports manga right-to-left reading, webtoon scrolling mode, and double-page spreads. Metadata scraping from ComicVine, AniList, and MyAnimeList keeps your library organized automatically.
+[Kavita](/apps/kavita/) is the best overall replacement for ComiXology. It handles CBR, CBZ, CB7, PDF, and raw image folders with a polished web reader that supports manga right-to-left reading, webtoon scrolling mode, and double-page spreads. Metadata scraping from ComicVine, AniList, and MyAnimeList keeps your library organized automatically.
 
 **How it compares to ComiXology:**
 - Supports all comic formats (CBR, CBZ, CB7, PDF, EPUB)
@@ -50,11 +50,11 @@ Self-hosting your comic library means you own your files, read them in purpose-b
 
 **Setup complexity:** Low. Single Docker container, no external database needed.
 
-[Read our full guide: [How to Self-Host Kavita](/apps/kavita)]
+[Read our full guide: [How to Self-Host Kavita](/apps/kavita/)]
 
 ### Komga — Best for Collection Management
 
-[Komga](/apps/komga) is a dedicated comic and manga server with excellent metadata management. It integrates with Tachiyomi (the most popular manga reader on Android), supports reading lists and collections, and has a clean API for third-party integrations.
+[Komga](/apps/komga/) is a dedicated comic and manga server with excellent metadata management. It integrates with Tachiyomi (the most popular manga reader on Android), supports reading lists and collections, and has a clean API for third-party integrations.
 
 **How it compares to ComiXology:**
 - Clean web reader for comics and manga
@@ -66,11 +66,11 @@ Self-hosting your comic library means you own your files, read them in purpose-b
 
 **Setup complexity:** Low. Single Docker container with embedded database.
 
-[Read our full guide: [How to Self-Host Komga](/apps/komga)]
+[Read our full guide: [How to Self-Host Komga](/apps/komga/)]
 
 ### Stump — Best Lightweight Option
 
-[Stump](/apps/stump) is a newer comic server written in Rust. It's fast, uses minimal resources, and provides a clean reading experience. While less feature-rich than Kavita or Komga, it's the right choice if you want something light.
+[Stump](/apps/stump/) is a newer comic server written in Rust. It's fast, uses minimal resources, and provides a clean reading experience. While less feature-rich than Kavita or Komga, it's the right choice if you want something light.
 
 **How it compares to ComiXology:**
 - Fast, lightweight comic server
@@ -81,15 +81,15 @@ Self-hosting your comic library means you own your files, read them in purpose-b
 
 **Setup complexity:** Low. Single Docker container.
 
-[Read our full guide: [How to Self-Host Stump](/apps/stump)]
+[Read our full guide: [How to Self-Host Stump](/apps/stump/)]
 
 ## Building Your Comic Server Stack
 
 For the best experience:
 
-1. **Choose your server:** [Kavita](/apps/kavita) for manga + comics, [Komga](/apps/komga) for comics-focused
+1. **Choose your server:** [Kavita](/apps/kavita/) for manga + comics, [Komga](/apps/komga/) for comics-focused
 2. **Mobile reader:** Tachiyomi (Android) connects to Komga natively. For Kavita, use the web app or OPDS-compatible readers (Panels on iOS, Librera on Android)
-3. **Acquisition:** [Readarr](/apps/readarr) can automate comic downloads from indexers
+3. **Acquisition:** [Readarr](/apps/readarr/) can automate comic downloads from indexers
 4. **Organization:** Keep files organized in a `Series/Volume/` folder structure for automatic detection
 
 ## Migration Guide
@@ -143,13 +143,13 @@ For readers frustrated with Amazon's degradation of ComiXology, self-hosting del
 
 ## Related
 
-- [Best Self-Hosted Ebook Servers](/best/ebooks-reading)
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Stump](/apps/stump)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Komga vs Kavita](/compare/komga-vs-kavita)
-- [Stump vs Komga](/compare/stump-vs-komga)
-- [Self-Hosted Alternatives to Goodreads](/replace/goodreads)
-- [Self-Hosted Alternatives to Kindle Unlimited](/replace/kindle-unlimited)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Ebook Servers](/best/ebooks-reading/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Stump](/apps/stump/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Komga vs Kavita](/compare/komga-vs-kavita/)
+- [Stump vs Komga](/compare/stump-vs-komga/)
+- [Self-Hosted Alternatives to Goodreads](/replace/goodreads/)
+- [Self-Hosted Alternatives to Kindle Unlimited](/replace/kindle-unlimited/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -168,10 +168,10 @@ If you are managing a homelab with Docker containers and want reliable, efficien
 
 ## Related
 
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [How to Self-Host Restic](/apps/restic)
-- [Restic vs BorgBackup](/compare/restic-vs-borgbackup)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Best Self-Hosted Backup Solutions](/best/backup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [How to Self-Host Restic](/apps/restic/)
+- [Restic vs BorgBackup](/compare/restic-vs-borgbackup/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Best Self-Hosted Backup Solutions](/best/backup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -26,7 +26,7 @@ Ghost is an open-source publishing platform built for professional bloggers, jou
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space
 - 1 GB of RAM (minimum)
 - A domain name (required for production use)
@@ -174,7 +174,7 @@ For newsletters to large subscriber lists, Ghost integrates directly with Mailgu
 
 Ghost must run behind a reverse proxy for production use (HTTPS is required for memberships and Stripe).
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 - **Scheme:** `http`
 - **Forward Hostname:** `ghost` (container name) or server IP
@@ -184,7 +184,7 @@ For [Nginx Proxy Manager](/apps/nginx-proxy-manager):
 
 Ensure the `url` environment variable matches your domain with `https://`.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed configuration.
 
 ## Backup
 
@@ -201,7 +201,7 @@ For database backup:
 docker compose exec ghost_db mysqldump -u ghost -p ghost_db > ghost_backup.sql
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -238,13 +238,13 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 ## Verdict
 
-Ghost is the best self-hosted option for professional publishing and newsletter platforms. Its editor is excellent, the membership system is built-in (no plugins needed), and it's fast. If you're building a publication, newsletter, or content business, Ghost beats [WordPress](/apps/wordpress) on simplicity and performance. WordPress wins on extensibility and plugin ecosystem. For a blog that "just works" with modern features, Ghost is the clear choice.
+Ghost is the best self-hosted option for professional publishing and newsletter platforms. Its editor is excellent, the membership system is built-in (no plugins needed), and it's fast. If you're building a publication, newsletter, or content business, Ghost beats [WordPress](/apps/wordpress/) on simplicity and performance. WordPress wins on extensibility and plugin ecosystem. For a blog that "just works" with modern features, Ghost is the clear choice.
 
 ## FAQ
 
 ### Ghost vs WordPress — which should I self-host?
 
-Ghost is purpose-built for publishing — it's faster, simpler, and has built-in memberships. [WordPress](/apps/wordpress) is more flexible with thousands of plugins but requires more maintenance. See our [Ghost vs WordPress comparison](/compare/ghost-vs-wordpress) for details.
+Ghost is purpose-built for publishing — it's faster, simpler, and has built-in memberships. [WordPress](/apps/wordpress/) is more flexible with thousands of plugins but requires more maintenance. See our [Ghost vs WordPress comparison](/compare/ghost-vs-wordpress/) for details.
 
 ### Can I migrate from WordPress to Ghost?
 
@@ -256,11 +256,11 @@ Ghost is open source (MIT license) and free to self-host. Ghost(Pro) is the paid
 
 ## Related
 
-- [How to Self-Host WordPress](/apps/wordpress)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Ghost vs Hugo](/compare/ghost-vs-hugo)
-- [Best Self-Hosted CMS Platforms](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Ghost vs Hugo](/compare/ghost-vs-hugo/)
+- [Best Self-Hosted CMS Platforms](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)

@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space
 - 1 GB of RAM (minimum)
 - A domain name (optional, for webhooks and remote access)
@@ -215,9 +215,9 @@ Activepieces supports creating custom pieces (integrations) using TypeScript. Se
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), proxy to port 8080. Set `AP_FRONTEND_URL` to your public HTTPS URL — this is critical for webhook URLs.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), proxy to port 8080. Set `AP_FRONTEND_URL` to your public HTTPS URL — this is critical for webhook URLs.
 
-For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -231,7 +231,7 @@ docker exec activepieces-postgres pg_dump -U activepieces activepieces > activep
 docker exec activepieces-redis redis-cli BGSAVE
 ```
 
-The database contains all flows, connections (encrypted), and execution history. For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+The database contains all flows, connections (encrypted), and execution history. For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -275,7 +275,7 @@ Activepieces is the best truly open-source (MIT) workflow automation platform av
 
 **Use Activepieces if:** You want open-source licensing, a clean UI, and standard business workflow automation. It's the closest self-hosted experience to Zapier.
 
-**Consider n8n instead if:** You need more integrations (400+), advanced error handling, code execution in Python, or more mature multi-user features. See our [n8n vs Activepieces comparison](/compare/n8n-vs-activepieces).
+**Consider n8n instead if:** You need more integrations (400+), advanced error handling, code execution in Python, or more mature multi-user features. See our [n8n vs Activepieces comparison](/compare/n8n-vs-activepieces/).
 
 ## FAQ
 
@@ -293,11 +293,11 @@ No direct import. You'll need to recreate workflows manually. Activepieces' UI i
 
 ## Related
 
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [How to Self-Host Huginn](/apps/huginn)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Self-Hosted Alternatives to IFTTT](/replace/ifttt)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [How to Self-Host Huginn](/apps/huginn/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Self-Hosted Alternatives to IFTTT](/replace/ifttt/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

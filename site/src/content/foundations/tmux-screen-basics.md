@@ -21,8 +21,8 @@ This is essential for self-hosting. Long-running tasks like database migrations,
 
 ## Prerequisites
 
-- SSH access to your server ([SSH Setup](/foundations/ssh-setup))
-- Basic Linux command line skills ([Linux Basics](/foundations/linux-basics-self-hosting))
+- SSH access to your server ([SSH Setup](/foundations/ssh-setup/))
+- Basic Linux command line skills ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## tmux (Recommended)
 
@@ -218,7 +218,7 @@ screen -dr server
 | Database migration | tmux session |
 | rsync large transfer | tmux session |
 
-For permanent background services, use [systemd](/foundations/linux-systemd) instead of tmux. tmux is for interactive or temporary long-running tasks.
+For permanent background services, use [systemd](/foundations/linux-systemd/) instead of tmux. tmux is for interactive or temporary long-running tasks.
 
 ## Common Mistakes
 
@@ -236,19 +236,19 @@ SSH into a server that auto-starts tmux, then run `tmux` inside it. Now `Ctrl+b`
 
 ### Running Services in tmux Instead of systemd
 
-tmux sessions survive SSH disconnects, but they don't survive server reboots. For services that should always be running, write a [systemd unit file](/foundations/linux-systemd) instead.
+tmux sessions survive SSH disconnects, but they don't survive server reboots. For services that should always be running, write a [systemd unit file](/foundations/linux-systemd/) instead.
 
 ## Next Steps
 
-- Set up proper service management with [systemd](/foundations/linux-systemd)
-- Improve your SSH workflow with [SSH Setup](/foundations/ssh-setup)
-- Learn more Linux basics at [Linux Basics](/foundations/linux-basics-self-hosting)
+- Set up proper service management with [systemd](/foundations/linux-systemd/)
+- Improve your SSH workflow with [SSH Setup](/foundations/ssh-setup/)
+- Learn more Linux basics at [Linux Basics](/foundations/linux-basics-self-hosting/)
 
 ## FAQ
 
 ### Does tmux survive a server reboot?
 
-No. tmux sessions are lost on reboot. For processes that must start automatically after a reboot, use [systemd](/foundations/linux-systemd). Use tmux for interactive sessions and temporary long-running tasks.
+No. tmux sessions are lost on reboot. For processes that must start automatically after a reboot, use [systemd](/foundations/linux-systemd/). Use tmux for interactive sessions and temporary long-running tasks.
 
 ### Can multiple users share a tmux session?
 
@@ -264,8 +264,8 @@ Press `Ctrl+b [` to enter copy mode, then use arrow keys or Page Up/Down to scro
 
 ## Related
 
-- [Linux systemd](/foundations/linux-systemd)
-- [SSH Setup](/foundations/ssh-setup)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Linux Text Editors](/foundations/linux-text-editors)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Linux systemd](/foundations/linux-systemd/)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Linux Text Editors](/foundations/linux-text-editors/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

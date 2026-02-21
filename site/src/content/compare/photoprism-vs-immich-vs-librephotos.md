@@ -150,12 +150,12 @@ PhotoPrism with TensorFlow disabled (~1 GB). Immich and LibrePhotos both need ~2
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos/)

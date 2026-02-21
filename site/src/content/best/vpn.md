@@ -40,9 +40,9 @@ affiliateDisclosure: false
 
 ### 1. WireGuard (via wg-easy) — Best Overall
 
-[WireGuard](/apps/wireguard) is the VPN protocol that powers most of the tools on this list. It's built into the Linux kernel, uses ~4,000 lines of code (vs. OpenVPN's 100,000+), and delivers the best performance of any VPN protocol. Running WireGuard directly gives you maximum control and zero overhead.
+[WireGuard](/apps/wireguard/) is the VPN protocol that powers most of the tools on this list. It's built into the Linux kernel, uses ~4,000 lines of code (vs. OpenVPN's 100,000+), and delivers the best performance of any VPN protocol. Running WireGuard directly gives you maximum control and zero overhead.
 
-[wg-easy](/apps/wg-easy) wraps WireGuard in a web UI that makes client management painless — create, delete, and download client configs from a browser instead of editing config files.
+[wg-easy](/apps/wg-easy/) wraps WireGuard in a web UI that makes client management painless — create, delete, and download client configs from a browser instead of editing config files.
 
 **Pros:**
 - Fastest VPN protocol available — kernel-level, minimal overhead
@@ -59,11 +59,11 @@ affiliateDisclosure: false
 
 **Best for:** Remote access to your home network and self-hosted services. The default choice for most self-hosters.
 
-[Read our full guide: [How to Self-Host WireGuard](/apps/wireguard)] | [wg-easy guide](/apps/wg-easy)]
+[Read our full guide: [How to Self-Host WireGuard](/apps/wireguard/)] | [wg-easy guide](/apps/wg-easy/)]
 
 ### 2. Headscale — Best Self-Hosted Mesh VPN
 
-[Headscale](/apps/headscale) is a self-hosted, open-source implementation of Tailscale's coordination server. It gives you Tailscale's mesh networking — automatic NAT traversal, direct peer-to-peer connections, MagicDNS — without depending on Tailscale's infrastructure.
+[Headscale](/apps/headscale/) is a self-hosted, open-source implementation of Tailscale's coordination server. It gives you Tailscale's mesh networking — automatic NAT traversal, direct peer-to-peer connections, MagicDNS — without depending on Tailscale's infrastructure.
 
 **Pros:**
 - Full mesh networking — every device connects directly to every other device
@@ -81,11 +81,11 @@ affiliateDisclosure: false
 
 **Best for:** Self-hosters who want Tailscale's mesh networking without the Tailscale dependency. The best balance of features and self-hosting control.
 
-[Read our full guide: [How to Self-Host Headscale](/apps/headscale)]
+[Read our full guide: [How to Self-Host Headscale](/apps/headscale/)]
 
 ### 3. NetBird — Best for Teams
 
-[NetBird](/apps/netbird) is a fully self-hosted mesh VPN with enterprise-grade network management. Zero-trust access controls, DNS management, network routes, peer groups, and a polished web dashboard. It's what Tailscale would be if it were fully open source and self-hostable.
+[NetBird](/apps/netbird/) is a fully self-hosted mesh VPN with enterprise-grade network management. Zero-trust access controls, DNS management, network routes, peer groups, and a polished web dashboard. It's what Tailscale would be if it were fully open source and self-hostable.
 
 **Pros:**
 - Most feature-complete self-hosted mesh VPN
@@ -103,11 +103,11 @@ affiliateDisclosure: false
 
 **Best for:** Teams and organizations with existing identity providers who need enterprise-grade network segmentation.
 
-[Read our full guide: [How to Self-Host NetBird](/apps/netbird)]
+[Read our full guide: [How to Self-Host NetBird](/apps/netbird/)]
 
 ### 4. Tailscale — Best for Beginners
 
-[Tailscale](/apps/tailscale) is the easiest mesh VPN to set up. Install the client, log in, and your devices are connected. Automatic NAT traversal, MagicDNS, subnet routing, exit nodes, SSH — all configured through a web dashboard. The free tier supports up to 100 devices and 3 users.
+[Tailscale](/apps/tailscale/) is the easiest mesh VPN to set up. Install the client, log in, and your devices are connected. Automatic NAT traversal, MagicDNS, subnet routing, exit nodes, SSH — all configured through a web dashboard. The free tier supports up to 100 devices and 3 users.
 
 **Pros:**
 - Zero-configuration setup — works in minutes
@@ -117,18 +117,18 @@ affiliateDisclosure: false
 - Generous free tier (100 devices, 3 users)
 
 **Cons:**
-- **Not self-hosted** — coordination server is Tailscale's (use [Headscale](/apps/headscale) for self-hosting)
+- **Not self-hosted** — coordination server is Tailscale's (use [Headscale](/apps/headscale/) for self-hosting)
 - Vendor dependency — Tailscale, Inc. controls the infrastructure
 - Authentication requires a third-party SSO provider (Google, Microsoft, GitHub, etc.)
 - Paid plans needed for more than 3 users
 
-**Best for:** Beginners and anyone who wants mesh VPN without managing infrastructure. Use [Headscale](/apps/headscale) when you outgrow the free tier or want full control.
+**Best for:** Beginners and anyone who wants mesh VPN without managing infrastructure. Use [Headscale](/apps/headscale/) when you outgrow the free tier or want full control.
 
-[Read our full guide: [How to Set Up Tailscale](/apps/tailscale)]
+[Read our full guide: [How to Set Up Tailscale](/apps/tailscale/)]
 
 ### 5. ZeroTier (with ZTNET) — Best for L2 Networking
 
-[ZeroTier](/apps/zerotier) creates virtual Layer 2 Ethernet networks between your devices. Unlike Tailscale and WireGuard (Layer 3), ZeroTier supports multicast, broadcast, and non-IP protocols — making it ideal for gaming LANs, IoT networks, and legacy protocol bridging. Self-hosting the controller via [ZTNET](https://github.com/sinamics/ztnet) removes the 10-device free tier limit.
+[ZeroTier](/apps/zerotier/) creates virtual Layer 2 Ethernet networks between your devices. Unlike Tailscale and WireGuard (Layer 3), ZeroTier supports multicast, broadcast, and non-IP protocols — making it ideal for gaming LANs, IoT networks, and legacy protocol bridging. Self-hosting the controller via [ZTNET](https://github.com/sinamics/ztnet) removes the 10-device free tier limit.
 
 **Pros:**
 - Layer 2 networking — supports multicast, broadcast, ARP
@@ -146,11 +146,11 @@ affiliateDisclosure: false
 
 **Best for:** Gaming LANs, IoT networks, or any scenario requiring Layer 2 connectivity. Not the best choice for simple remote access.
 
-[Read our full guide: [How to Self-Host ZeroTier](/apps/zerotier)]
+[Read our full guide: [How to Self-Host ZeroTier](/apps/zerotier/)]
 
 ### 6. Cloudflare Tunnel — Best for Exposing Services
 
-[Cloudflare Tunnel](/apps/cloudflare-tunnel) isn't a VPN in the traditional sense — it creates encrypted outbound connections from your server to Cloudflare's edge, giving your local services a public HTTPS URL. No VPN client needed on the accessing device. Free, unlimited tunnels, with DDoS protection and Cloudflare Access for authentication.
+[Cloudflare Tunnel](/apps/cloudflare-tunnel/) isn't a VPN in the traditional sense — it creates encrypted outbound connections from your server to Cloudflare's edge, giving your local services a public HTTPS URL. No VPN client needed on the accessing device. Free, unlimited tunnels, with DDoS protection and Cloudflare Access for authentication.
 
 **Pros:**
 - No VPN client needed — services accessible via any browser
@@ -168,7 +168,7 @@ affiliateDisclosure: false
 
 **Best for:** Exposing self-hosted web applications (Nextcloud, Vaultwarden, Jellyfin) to the internet securely. Complements a VPN rather than replacing one.
 
-[Read our full guide: [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel)]
+[Read our full guide: [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel/)]
 
 ## Full Comparison Table
 
@@ -215,7 +215,7 @@ For exposing web services, yes. Cloudflare Tunnel is excellent for making your N
 
 ### Is Tailscale really not self-hosted?
 
-The Tailscale client is open source. The coordination server (which handles key exchange, device discovery, and ACLs) is proprietary and runs on Tailscale's infrastructure. [Headscale](/apps/headscale) is a self-hosted replacement for the coordination server that works with official Tailscale clients. Use Headscale if you want Tailscale's experience without the vendor dependency.
+The Tailscale client is open source. The coordination server (which handles key exchange, device discovery, and ACLs) is proprietary and runs on Tailscale's infrastructure. [Headscale](/apps/headscale/) is a self-hosted replacement for the coordination server that works with official Tailscale clients. Use Headscale if you want Tailscale's experience without the vendor dependency.
 
 ### What about OpenVPN?
 
@@ -223,19 +223,19 @@ OpenVPN works but is significantly slower than WireGuard, uses more resources, a
 
 ## Related
 
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [How to Self-Host Headscale](/apps/headscale)
-- [How to Set Up Tailscale](/apps/tailscale)
-- [How to Self-Host NetBird](/apps/netbird)
-- [How to Self-Host ZeroTier](/apps/zerotier)
-- [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [NetBird vs Tailscale](/compare/netbird-vs-tailscale)
-- [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale)
-- [wg-easy vs WireGuard](/compare/wg-easy-vs-wireguard)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
-- [Self-Hosted Alternatives to ngrok](/replace/ngrok)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [How to Set Up Tailscale](/apps/tailscale/)
+- [How to Self-Host NetBird](/apps/netbird/)
+- [How to Self-Host ZeroTier](/apps/zerotier/)
+- [How to Set Up Cloudflare Tunnel](/apps/cloudflare-tunnel/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [NetBird vs Tailscale](/compare/netbird-vs-tailscale/)
+- [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale/)
+- [wg-easy vs WireGuard](/compare/wg-easy-vs-wireguard/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer/)
+- [Self-Hosted Alternatives to ngrok](/replace/ngrok/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

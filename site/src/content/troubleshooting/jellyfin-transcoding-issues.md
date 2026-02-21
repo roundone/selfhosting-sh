@@ -569,7 +569,7 @@ If your hardware cannot transcode in real-time (especially 4K HEVC on low-power 
 
 **Step 5: Configure your reverse proxy for streaming.**
 
-If using a reverse proxy, increase buffer sizes and timeouts. See [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway) for timeout configuration. Additionally, for Nginx/NPM, add these to the Advanced configuration:
+If using a reverse proxy, increase buffer sizes and timeouts. See [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway/) for timeout configuration. Additionally, for Nginx/NPM, add these to the Advanced configuration:
 
 ```nginx
 proxy_buffering off;
@@ -634,10 +634,10 @@ When transcoding is not working, run through this in order:
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors)
-- [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Docker Compose Common Errors](/troubleshooting/docker-compose-common-errors/)
+- [Reverse Proxy 502 Bad Gateway](/troubleshooting/reverse-proxy-502-bad-gateway/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

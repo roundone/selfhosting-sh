@@ -20,16 +20,16 @@ affiliateDisclosure: false
 
 ## What Is Lidarr?
 
-Lidarr is a music collection manager that automatically monitors, downloads, and organizes music. It's the music equivalent of [Sonarr](/apps/sonarr) (TV shows) and [Radarr](/apps/radarr) (movies) — part of the *arr stack. You add artists, Lidarr tracks their discography, and downloads albums through Usenet or torrent clients. [Official site](https://lidarr.audio/)
+Lidarr is a music collection manager that automatically monitors, downloads, and organizes music. It's the music equivalent of [Sonarr](/apps/sonarr/) (TV shows) and [Radarr](/apps/radarr/) (movies) — part of the *arr stack. You add artists, Lidarr tracks their discography, and downloads albums through Usenet or torrent clients. [Official site](https://lidarr.audio/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for music)
 - 512 MB of RAM minimum
-- A download client: [SABnzbd](/apps/sabnzbd) (Usenet) or [qBittorrent](/apps/qbittorrent) (torrents)
-- An indexer manager: [Prowlarr](/apps/prowlarr) (recommended)
+- A download client: [SABnzbd](/apps/sabnzbd/) (Usenet) or [qBittorrent](/apps/qbittorrent/) (torrents)
+- An indexer manager: [Prowlarr](/apps/prowlarr/) (recommended)
 
 ## Docker Compose Configuration
 
@@ -81,7 +81,7 @@ docker compose up -d
 2. Set up authentication under **Settings → General → Security** — Lidarr has no default password
 3. Add a root folder: **Settings → Media Management → Root Folders** → add `/music`
 4. Connect your download client: **Settings → Download Clients**
-5. Add indexers via [Prowlarr](/apps/prowlarr) or manually under **Settings → Indexers**
+5. Add indexers via [Prowlarr](/apps/prowlarr/) or manually under **Settings → Indexers**
 
 ## Configuration
 
@@ -155,7 +155,7 @@ networks:
     driver: bridge
 ```
 
-Connect [Prowlarr](/apps/prowlarr) to Lidarr: in Prowlarr, go to **Settings → Apps → Add → Lidarr**, enter `http://lidarr:8686` and Lidarr's API key.
+Connect [Prowlarr](/apps/prowlarr/) to Lidarr: in Prowlarr, go to **Settings → Apps → Add → Lidarr**, enter `http://lidarr:8686` and Lidarr's API key.
 
 ### Import Existing Library
 
@@ -174,7 +174,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** lidarr
 - **Forward Port:** 8686
 
-Set a URL base under **Settings → General** if running under a subdirectory. [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+Set a URL base under **Settings → General** if running under a subdirectory. [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -186,7 +186,7 @@ tar -czf lidarr-backup-$(date +%Y%m%d).tar.gz ./config
 docker compose start lidarr
 ```
 
-Lidarr also has built-in backups under **System → Backup**. [Backup Strategy](/foundations/backup-3-2-1-rule)
+Lidarr also has built-in backups under **System → Backup**. [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -224,7 +224,7 @@ Lidarr fills the music gap in the *arr stack. If you already run Sonarr and Rada
 
 ### Does Lidarr work with Spotify or streaming services?
 
-No. Lidarr manages downloaded music files (FLAC, MP3, etc.), not streaming. Use [Navidrome](/apps/navidrome) to stream your downloaded collection.
+No. Lidarr manages downloaded music files (FLAC, MP3, etc.), not streaming. Use [Navidrome](/apps/navidrome/) to stream your downloaded collection.
 
 ### Can Lidarr download from YouTube?
 
@@ -236,10 +236,10 @@ Lidarr replaced Headphones. Headphones is no longer actively maintained. Lidarr 
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

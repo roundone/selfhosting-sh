@@ -20,8 +20,8 @@ Linux file permissions control who can read, write, and execute files and direct
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup))
-- Basic terminal familiarity ([Linux Basics](/foundations/linux-basics-self-hosting))
+- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup/))
+- Basic terminal familiarity ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Understanding Permission Notation
 
@@ -375,15 +375,15 @@ Check the container's UID with `docker exec <container> id`, then set the host d
 
 ## Next Steps
 
-- [Docker Volumes](/foundations/docker-volumes) — how volumes work and why permissions matter
-- [SSH Setup Guide](/foundations/ssh-setup) — secure remote access to your server
-- [Docker Compose Basics](/foundations/docker-compose-basics) — define multi-container applications
+- [Docker Volumes](/foundations/docker-volumes/) — how volumes work and why permissions matter
+- [SSH Setup Guide](/foundations/ssh-setup/) — secure remote access to your server
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — define multi-container applications
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Docker Volumes Explained](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Docker Volumes Explained](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

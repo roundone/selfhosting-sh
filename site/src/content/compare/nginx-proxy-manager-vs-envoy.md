@@ -144,7 +144,7 @@ NPM has a large self-hosting community with tutorials, YouTube videos, and forum
 
 **NPM for self-hosting, Envoy for infrastructure engineering.** Choosing Envoy for a homelab is like using a commercial aircraft engine to power a go-kart. It'll work, but you'll spend more time on configuration than on actually using your self-hosted services.
 
-If you're genuinely building a service mesh or Kubernetes cluster, Envoy is the right tool. For everything else in the self-hosting world, NPM (or [Traefik](/apps/traefik) for Docker-native auto-discovery) is the practical choice.
+If you're genuinely building a service mesh or Kubernetes cluster, Envoy is the right tool. For everything else in the self-hosting world, NPM (or [Traefik](/apps/traefik/) for Docker-native auto-discovery) is the practical choice.
 
 ## Frequently Asked Questions
 
@@ -162,10 +162,10 @@ Yes. If you're running a k8s cluster (even k3s), Envoy-based ingress controllers
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Envoy vs Nginx](/compare/envoy-vs-nginx)
-- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Envoy vs Nginx](/compare/envoy-vs-nginx/)
+- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

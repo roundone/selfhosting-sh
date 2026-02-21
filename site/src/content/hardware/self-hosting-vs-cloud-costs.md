@@ -25,20 +25,20 @@ The catch: self-hosting requires time to set up and maintain. If your time is wo
 
 | Cloud Service | Monthly Cost | Self-Hosted Alternative | Notes |
 |---------------|-------------|------------------------|-------|
-| Google One 2 TB | $10/mo | [Nextcloud](/apps/nextcloud) | File sync + photos + docs |
-| iCloud+ 2 TB | $10/mo | [Nextcloud](/apps/nextcloud) | |
-| Dropbox Plus 2 TB | $12/mo | [Seafile](/apps/seafile), [Syncthing](/apps/syncthing) | |
-| Google Photos | $3–10/mo | [Immich](/apps/immich) | Included in Google One |
-| Netflix | $16–23/mo | [Jellyfin](/apps/jellyfin), [Plex](/apps/plex) | Personal media only |
-| Spotify | $11–17/mo | [Navidrome](/apps/navidrome) | Personal music library |
-| 1Password Family | $5/mo | [Vaultwarden](/apps/vaultwarden) | |
-| Notion Personal Pro | $10/mo | [Outline](/apps/outline), [BookStack](/apps/bookstack) | |
+| Google One 2 TB | $10/mo | [Nextcloud](/apps/nextcloud/) | File sync + photos + docs |
+| iCloud+ 2 TB | $10/mo | [Nextcloud](/apps/nextcloud/) | |
+| Dropbox Plus 2 TB | $12/mo | [Seafile](/apps/seafile/), [Syncthing](/apps/syncthing/) | |
+| Google Photos | $3–10/mo | [Immich](/apps/immich/) | Included in Google One |
+| Netflix | $16–23/mo | [Jellyfin](/apps/jellyfin/), [Plex](/apps/plex/) | Personal media only |
+| Spotify | $11–17/mo | [Navidrome](/apps/navidrome/) | Personal music library |
+| 1Password Family | $5/mo | [Vaultwarden](/apps/vaultwarden/) | |
+| Notion Personal Pro | $10/mo | [Outline](/apps/outline/), [BookStack](/apps/bookstack/) | |
 | Todoist Pro | $5/mo | Various self-hosted todo apps | |
-| Tailscale Personal Plus | $5/mo | [Headscale](/apps/headscale) | Free tier may suffice |
-| UptimeRobot Pro | $7/mo | [Uptime Kuma](/apps/uptime-kuma) | |
-| Google Analytics | Free (data cost) | [Plausible](/apps/plausible), [Umami](/apps/umami) | Privacy benefit |
-| Zapier Starter | $20/mo | [n8n](/apps/n8n) | |
-| Feedly Pro | $6/mo | [FreshRSS](/apps/freshrss), [Miniflux](/apps/miniflux) | |
+| Tailscale Personal Plus | $5/mo | [Headscale](/apps/headscale/) | Free tier may suffice |
+| UptimeRobot Pro | $7/mo | [Uptime Kuma](/apps/uptime-kuma/) | |
+| Google Analytics | Free (data cost) | [Plausible](/apps/plausible/), [Umami](/apps/umami/) | Privacy benefit |
+| Zapier Starter | $20/mo | [n8n](/apps/n8n/) | |
+| Feedly Pro | $6/mo | [FreshRSS](/apps/freshrss/), [Miniflux](/apps/miniflux/) | |
 
 **Typical replacement total: $50–120/month saved** depending on which services you use.
 
@@ -165,11 +165,11 @@ Most users with unlimited internet don't notice the impact. If you have a 1 TB d
 | Troubleshooting issues | As needed | 0–2 hours/month |
 | Hardware maintenance (cleaning, drive replacement) | Yearly | 1–2 hours |
 
-**Realistic monthly time: 1–2 hours** for a well-set-up server. Most of that is Docker updates, which tools like [DIUN](/apps/diun) can help you track (Watchtower, the former go-to for automatic updates, is deprecated).
+**Realistic monthly time: 1–2 hours** for a well-set-up server. Most of that is Docker updates, which tools like [DIUN](/apps/diun/) can help you track (Watchtower, the former go-to for automatic updates, is deprecated).
 
 ### Domain Name (Optional)
 
-A domain for remote access via reverse proxy: $10–15/year. Not required — services like [Tailscale](/apps/tailscale) and [Cloudflare Tunnel](/apps/cloudflare-tunnel) provide remote access without a domain.
+A domain for remote access via reverse proxy: $10–15/year. Not required — services like [Tailscale](/apps/tailscale/) and [Cloudflare Tunnel](/apps/cloudflare-tunnel/) provide remote access without a domain.
 
 ## What Cloud Still Does Better
 
@@ -184,7 +184,7 @@ Be honest about the trade-offs:
 | **Uptime** | Cloud: 99.99%. Your home server: 99.5% if you're diligent (power outages, ISP issues) |
 | **Sharing** | Cloud services make sharing with non-technical family members easier |
 
-**The biggest risk:** Hardware failure. A cloud provider replicates your data across datacenters. Your single home server doesn't. This is why [backups (3-2-1 rule)](/foundations/backup-3-2-1-rule) are non-negotiable for self-hosting.
+**The biggest risk:** Hardware failure. A cloud provider replicates your data across datacenters. Your single home server doesn't. This is why [backups (3-2-1 rule)](/foundations/backup-3-2-1-rule/) are non-negotiable for self-hosting.
 
 ## Making the Decision
 
@@ -216,7 +216,7 @@ Yes, unless electricity is extremely expensive (>$0.30/kWh). Even at $0.30/kWh, 
 
 ### What if my server dies? Do I lose everything?
 
-Only if you don't have backups. Follow the [3-2-1 backup rule](/foundations/backup-3-2-1-rule): 3 copies, 2 different media, 1 offsite. Use [Restic](/apps/restic) or [BorgBackup](/apps/borgbackup) for automated encrypted backups to an external drive and/or cloud backup service.
+Only if you don't have backups. Follow the [3-2-1 backup rule](/foundations/backup-3-2-1-rule/): 3 copies, 2 different media, 1 offsite. Use [Restic](/apps/restic/) or [BorgBackup](/apps/borgbackup/) for automated encrypted backups to an external drive and/or cloud backup service.
 
 ### Can I self-host on a Raspberry Pi to save money?
 
@@ -228,9 +228,9 @@ A VPS ($5–20/month) splits the difference. No hardware cost, no electricity, n
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)

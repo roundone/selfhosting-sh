@@ -22,12 +22,12 @@ affiliateDisclosure: false
 
 ## What Is docker-mailserver?
 
-docker-mailserver is a production-ready, full-featured mail server that runs entirely in a single Docker container. It bundles Postfix (SMTP), Dovecot (IMAP/POP3), OpenDKIM, SpamAssassin or Rspamd, ClamAV, and Fail2ban. Unlike [Mailu](/apps/mailu) or [Mailcow](/apps/mailcow), it has no web UI — all management happens through CLI commands. This makes it lightweight and ideal for sysadmins who prefer configuration files over dashboards. [Official repository](https://github.com/docker-mailserver/docker-mailserver).
+docker-mailserver is a production-ready, full-featured mail server that runs entirely in a single Docker container. It bundles Postfix (SMTP), Dovecot (IMAP/POP3), OpenDKIM, SpamAssassin or Rspamd, ClamAV, and Fail2ban. Unlike [Mailu](/apps/mailu/) or [Mailcow](/apps/mailcow/), it has no web UI — all management happens through CLI commands. This makes it lightweight and ideal for sysadmins who prefer configuration files over dashboards. [Official repository](https://github.com/docker-mailserver/docker-mailserver).
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended) with a **static public IP**
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB if enabling ClamAV)
 - A domain name with DNS access
 - Port 25 open and not blocked by your hosting provider (check with them first — many VPS providers block port 25 by default)
@@ -194,7 +194,7 @@ Set up MX, SPF, DKIM, and DMARC records for each domain.
 
 ### TLS Certificate with Let's Encrypt
 
-If you're using a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik) that manages Let's Encrypt certificates, mount the certificate directory:
+If you're using a reverse proxy like [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/) that manages Let's Encrypt certificates, mount the certificate directory:
 
 ```yaml
 volumes:
@@ -242,7 +242,7 @@ RELAY_PASSWORD=your-sendgrid-api-key
 
 ## Reverse Proxy
 
-docker-mailserver handles its own TLS for SMTP/IMAP connections. You don't need a reverse proxy for email protocols. However, if you want a webmail interface, pair it with [Roundcube](https://roundcube.net/) or [Snappymail](https://snappymail.eu/) behind your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)).
+docker-mailserver handles its own TLS for SMTP/IMAP connections. You don't need a reverse proxy for email protocols. However, if you want a webmail interface, pair it with [Roundcube](https://roundcube.net/) or [Snappymail](https://snappymail.eu/) behind your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)).
 
 ## Backup
 
@@ -259,7 +259,7 @@ Back up these directories:
 ./docker-data/dms/config/
 ```
 
-The config directory is the most critical — it contains your DKIM private keys and account credentials. See [Backup Strategy](/foundations/backup-strategy).
+The config directory is the most critical — it contains your DKIM private keys and account credentials. See [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -308,20 +308,20 @@ docker compose restart
 
 ## Verdict
 
-docker-mailserver is the best choice for sysadmins who want a lightweight, no-frills email server managed entirely through the command line. It's more resource-efficient than [Mailcow](/apps/mailcow) and simpler than [Mailu](/apps/mailu) because it skips the web UI entirely. If you're comfortable managing email accounts via CLI and editing configuration files, this is the most reliable self-hosted email solution.
+docker-mailserver is the best choice for sysadmins who want a lightweight, no-frills email server managed entirely through the command line. It's more resource-efficient than [Mailcow](/apps/mailcow/) and simpler than [Mailu](/apps/mailu/) because it skips the web UI entirely. If you're comfortable managing email accounts via CLI and editing configuration files, this is the most reliable self-hosted email solution.
 
-If you want a web admin panel and webmail built in, look at [Mailcow](/apps/mailcow) instead. If you want something even simpler and more modern, [Stalwart](/apps/stalwart) is worth considering.
+If you want a web admin panel and webmail built in, look at [Mailcow](/apps/mailcow/) instead. If you want something even simpler and more modern, [Stalwart](/apps/stalwart/) is worth considering.
 
 Self-hosting email is hard. DNS, deliverability, IP reputation, and spam filtering all require ongoing attention. If you're not prepared for that, use a privacy-focused provider like Proton Mail or Fastmail.
 
 ## Related
 
-- [How to Self-Host Mailu](/apps/mailu)
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [How to Self-Host Stalwart](/apps/stalwart)
-- [Mailu vs Mailcow](/compare/mailu-vs-mailcow)
-- [Best Self-Hosted Email Servers](/best/email)
-- [Self-Hosted Alternatives to Gmail](/replace/gmail)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Mailu](/apps/mailu/)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [How to Self-Host Stalwart](/apps/stalwart/)
+- [Mailu vs Mailcow](/compare/mailu-vs-mailcow/)
+- [Best Self-Hosted Email Servers](/best/email/)
+- [Self-Hosted Alternatives to Gmail](/replace/gmail/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

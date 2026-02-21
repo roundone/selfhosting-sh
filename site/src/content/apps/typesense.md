@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB+ RAM (scales with index size — 2-3x indexed data size)
 - 5 GB+ free disk space
 - No GPU required
@@ -207,7 +207,7 @@ curl -X PUT "http://localhost:8108/collections/movies/overrides/featured-scifi" 
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8108. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8108. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -227,14 +227,14 @@ docker run --rm -v typesense_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/typesense-backup.tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
 ### High Memory Usage
 
 **Symptom:** Typesense uses more RAM than expected.
-**Fix:** Typesense keeps the entire index in RAM. Expect 2-3x the size of your indexed fields. Remove unused fields from the schema. Consider [Meilisearch](/apps/meilisearch) if your dataset is too large for RAM.
+**Fix:** Typesense keeps the entire index in RAM. Expect 2-3x the size of your indexed fields. Remove unused fields from the schema. Consider [Meilisearch](/apps/meilisearch/) if your dataset is too large for RAM.
 
 ### Collection Creation Fails
 
@@ -256,15 +256,15 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule).
 
 Typesense is the fastest application search engine you can self-host. Sub-millisecond latency is real — and it makes search-as-you-type feel instant. The trade-off is RAM usage: keeping the entire index in memory means larger datasets get expensive. Built-in Raft clustering and result curation are standout features.
 
-**Choose Typesense** for application search where speed is critical and your index fits in RAM. **Choose [Meilisearch](/apps/meilisearch)** for similar functionality with lower RAM usage (disk-based). **Choose [Elasticsearch](/apps/elasticsearch)** for analytics, logging, and massive-scale search.
+**Choose Typesense** for application search where speed is critical and your index fits in RAM. **Choose [Meilisearch](/apps/meilisearch/)** for similar functionality with lower RAM usage (disk-based). **Choose [Elasticsearch](/apps/elasticsearch/)** for analytics, logging, and massive-scale search.
 
 ## Related
 
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch)
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch/)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

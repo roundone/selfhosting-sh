@@ -22,8 +22,8 @@ Docker provides several network drivers. You'll use two or three of them regular
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic familiarity with ports and IP addresses ([Networking Concepts](/foundations/ports-explained))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic familiarity with ports and IP addresses ([Networking Concepts](/foundations/ports-explained/))
 
 ## Default Network Behavior
 
@@ -111,7 +111,7 @@ volumes:
 
 ### When to Use Host Networking
 
-- **DNS servers** like [Pi-hole](/apps/pi-hole) that need to bind to port 53 on all interfaces and handle raw DNS traffic.
+- **DNS servers** like [Pi-hole](/apps/pi-hole/) that need to bind to port 53 on all interfaces and handle raw DNS traffic.
 - **Network monitoring tools** that need to see actual client IPs without NAT translation.
 - **DHCP servers** that need Layer 2 access to the host's network.
 
@@ -227,7 +227,7 @@ networks:
 
 Now `nginx-proxy-manager` can reach `nextcloud` by service name across Compose files. The `db` container stays isolated on the `backend` network -- the reverse proxy cannot reach it.
 
-This pattern scales to any number of apps. Every app joins the shared `proxy` network for ingress and keeps its own private network for backend services. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the full configuration.
+This pattern scales to any number of apps. Every app joins the shared `proxy` network for ingress and keeps its own private network for backend services. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the full configuration.
 
 ## Port Mapping
 
@@ -259,7 +259,7 @@ ports:
   - "127.0.0.1:8080:80"
 ```
 
-This is important when you have a [reverse proxy](/foundations/reverse-proxy-explained) in front. The app should only accept connections from the proxy, not directly from the internet. Bind to `127.0.0.1` or, better yet, skip `ports` entirely and keep the app on a shared bridge network with the proxy.
+This is important when you have a [reverse proxy](/foundations/reverse-proxy-explained/) in front. The app should only accept connections from the proxy, not directly from the internet. Bind to `127.0.0.1` or, better yet, skip `ports` entirely and keep the app on a shared bridge network with the proxy.
 
 **Best practice for apps behind a reverse proxy:** Don't publish ports at all. Put the app and proxy on the same Docker network and let the proxy connect directly on the container port. No host port, no exposure.
 
@@ -300,7 +300,7 @@ networks:
 
 ### When Macvlan Makes Sense
 
-- Running [Pi-hole](/apps/pi-hole) or AdGuard Home as your network's DNS server. A dedicated LAN IP means you can point your router's DHCP to it without port conflicts.
+- Running [Pi-hole](/apps/pi-hole/) or AdGuard Home as your network's DNS server. A dedicated LAN IP means you can point your router's DHCP to it without port conflicts.
 - Running a service that needs to appear as a first-class network citizen (its own IP, no NAT).
 
 ### Trade-offs
@@ -325,17 +325,17 @@ Macvlan adds real complexity. The host cannot communicate with macvlan container
 
 ## Next Steps
 
-- Set up a [reverse proxy](/foundations/reverse-proxy-explained) to route traffic to your containerized apps with automatic SSL.
-- Learn [Docker volume management](/foundations/docker-volumes) for persistent storage across container restarts.
-- Follow the [Getting Started](/foundations/getting-started) guide to deploy your first self-hosted app.
-- Read about [DNS fundamentals](/foundations/dns-explained) to understand how name resolution works beyond Docker.
+- Set up a [reverse proxy](/foundations/reverse-proxy-explained/) to route traffic to your containerized apps with automatic SSL.
+- Learn [Docker volume management](/foundations/docker-volumes/) for persistent storage across container restarts.
+- Follow the [Getting Started](/foundations/getting-started/) guide to deploy your first self-hosted app.
+- Read about [DNS fundamentals](/foundations/dns-explained/) to understand how name resolution works beyond Docker.
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes and Persistent Storage](/foundations/docker-volumes)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Networking Concepts: Ports, DNS, DHCP](/foundations/ports-explained)
-- [DNS Explained](/foundations/dns-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes and Persistent Storage](/foundations/docker-volumes/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Networking Concepts: Ports, DNS, DHCP](/foundations/ports-explained/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)

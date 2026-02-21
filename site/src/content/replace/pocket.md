@@ -37,23 +37,23 @@ Self-hosting your read-later service means your reading list stays private, work
 
 ### Wallabag — Best Overall Replacement
 
-[Wallabag](/apps/wallabag) is the closest self-hosted equivalent to Pocket. Save articles, read them in a clean format, sync across devices.
+[Wallabag](/apps/wallabag/) is the closest self-hosted equivalent to Pocket. Save articles, read them in a clean format, sync across devices.
 
 **Why it wins:** Native mobile apps (Android + iOS), offline reading, Pocket import, e-reader integration (Kindle/Kobo), mature and stable (10+ years of development).
 
 **Trade-off:** No page archival — only extracts article text. If the original page changes layout, Wallabag's saved version won't reflect it.
 
-[Read our full guide: [How to Self-Host Wallabag](/apps/wallabag)]
+[Read our full guide: [How to Self-Host Wallabag](/apps/wallabag/)]
 
 ### Linkwarden — Best for Bookmark Power Users
 
-[Linkwarden](/apps/linkwarden) is a bookmark manager with page archiving and full-text search. Less focused on reading articles, more focused on preserving and organizing links.
+[Linkwarden](/apps/linkwarden/) is a bookmark manager with page archiving and full-text search. Less focused on reading articles, more focused on preserving and organizing links.
 
 **Why to consider:** Archives full pages (screenshots + PDFs + HTML). Team sharing. Meilisearch-powered full-text search. If you use Pocket mainly as a bookmark collection rather than an article reader, Linkwarden is the better fit.
 
 **Trade-off:** No native mobile app (PWA only). No offline reading support. Heavier resource usage due to Meilisearch.
 
-[Read our full guide: [How to Self-Host Linkwarden](/apps/linkwarden)]
+[Read our full guide: [How to Self-Host Linkwarden](/apps/linkwarden/)]
 
 ### Omnivore — Best if You Want a Managed Option
 
@@ -98,8 +98,8 @@ Omnivore was an open-source read-later app, but it was acquired by ElevenLabs in
 
 ## Related
 
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag)
-- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag/)
+- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

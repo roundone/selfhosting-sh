@@ -164,8 +164,8 @@ For production self-hosting: k3s. For learning Kubernetes: either works, but Mic
 
 ## Related
 
-- [k3s vs k0s](/compare/k3s-vs-k0s)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking Guide](/foundations/docker-networking)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [k3s vs k0s](/compare/k3s-vs-k0s/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking Guide](/foundations/docker-networking/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

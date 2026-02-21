@@ -23,8 +23,8 @@ affiliateDisclosure: false
 
 | Use Case | Best Choice | Why |
 |----------|-------------|-----|
-| Best overall | [Mailcow](/apps/mailcow) | Most features, best admin UI, SOGo groupware (calendar, contacts), built-in backup scripts |
-| Best lightweight | [Mailu](/apps/mailu) | Fewer containers, ARM64 support, simpler configuration, runs on 2 GB RAM |
+| Best overall | [Mailcow](/apps/mailcow/) | Most features, best admin UI, SOGo groupware (calendar, contacts), built-in backup scripts |
+| Best lightweight | [Mailu](/apps/mailu/) | Fewer containers, ARM64 support, simpler configuration, runs on 2 GB RAM |
 | Best modern approach | Stalwart | Rust-based all-in-one binary, JMAP support, lowest resource usage, no container sprawl |
 | Best for beginners | Mail-in-a-Box | Automated Ubuntu installer, batteries-included DNS management, zero Docker knowledge needed |
 
@@ -50,7 +50,7 @@ If you've read all that and still want to proceed, the tools below will get you 
 
 ### 1. Mailcow -- Best Overall
 
-[Mailcow](/apps/mailcow) is the most feature-complete self-hosted mail server. It bundles Postfix, Dovecot, Rspamd, ClamAV, SOGo groupware, MariaDB, and a polished web admin UI into a single Docker Compose deployment. You manage domains, mailboxes, DKIM signing, spam filtering, quotas, and two-factor authentication entirely through the web interface -- no config file editing after initial setup.
+[Mailcow](/apps/mailcow/) is the most feature-complete self-hosted mail server. It bundles Postfix, Dovecot, Rspamd, ClamAV, SOGo groupware, MariaDB, and a polished web admin UI into a single Docker Compose deployment. You manage domains, mailboxes, DKIM signing, spam filtering, quotas, and two-factor authentication entirely through the web interface -- no config file editing after initial setup.
 
 The killer feature is SOGo integration. SOGo provides webmail, calendar (CalDAV), and contacts (CardDAV) in one package. If you need groupware alongside email -- shared calendars, address books, meeting scheduling -- Mailcow is the only option on this list that includes it natively.
 
@@ -78,11 +78,11 @@ Installation uses a git-clone-and-configure approach rather than a hand-written 
 
 **Best for:** Anyone with a dedicated server (8+ GB RAM) who wants the most complete mail server with groupware, a professional admin UI, and built-in management tools.
 
-[Read our full guide: How to Self-Host Mailcow](/apps/mailcow)
+[Read our full guide: How to Self-Host Mailcow](/apps/mailcow/)
 
 ### 2. Mailu -- Best Lightweight Option
 
-[Mailu](/apps/mailu) packages the same core components as Mailcow -- Postfix, Dovecot, Rspamd, and a webmail client (SnappyMail or Roundcube) -- but in a leaner stack with 6-8 containers instead of 15+. Configuration is driven by a single environment file (`mailu.env`) rather than a generated config, making it easier to understand and customize.
+[Mailu](/apps/mailu/) packages the same core components as Mailcow -- Postfix, Dovecot, Rspamd, and a webmail client (SnappyMail or Roundcube) -- but in a leaner stack with 6-8 containers instead of 15+. Configuration is driven by a single environment file (`mailu.env`) rather than a generated config, making it easier to understand and customize.
 
 Mailu runs comfortably on 1.5-2 GB of RAM without ClamAV, making it viable on smaller VPS instances and even ARM64 hardware. The admin interface is functional but not as polished as Mailcow's. It handles domain management, user creation, DKIM key generation, and alias configuration. Mailu also includes a built-in DNS resolver (Unbound) and supports fetchmail for migrating from external accounts.
 
@@ -109,7 +109,7 @@ The trade-off compared to Mailcow is clear: no SOGo groupware (no calendar/conta
 
 **Best for:** Personal mail servers, small teams, resource-constrained VPS instances, ARM64 deployments, or anyone who wants a straightforward Docker mail stack without the weight of groupware.
 
-[Read our full guide: How to Self-Host Mailu](/apps/mailu)
+[Read our full guide: How to Self-Host Mailu](/apps/mailu/)
 
 ### 3. Stalwart -- Best Modern Approach
 
@@ -209,7 +209,7 @@ The trade-off is rigidity. MIAB expects to be the only thing running on the serv
 - **You want to learn.** Running a mail server teaches you more about DNS, SMTP, TLS, authentication, and internet infrastructure than almost any other project. The educational value is enormous.
 - **You need full custom domain control.** You want catch-all addresses, unlimited aliases, custom routing rules, or integration with your own applications -- and you don't want to depend on a third party's feature roadmap.
 - **You already run infrastructure.** If you have a dedicated server with a clean IP, experience with DNS, and an understanding of deliverability -- the marginal effort of adding email is lower.
-- **You're building a homelab.** Having your own mail server is a rewarding addition to a broader self-hosting setup, especially when paired with services like [Nextcloud](/apps/nextcloud) for a complete productivity stack.
+- **You're building a homelab.** Having your own mail server is a rewarding addition to a broader self-hosting setup, especially when paired with services like [Nextcloud](/apps/nextcloud/) for a complete productivity stack.
 
 ### Do NOT self-host email if:
 
@@ -234,15 +234,15 @@ Mailcow ranks #1 overall because it offers the most complete feature set with th
 
 ## Related
 
-- [How to Self-Host Mailu](/apps/mailu)
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [Mailu vs Mailcow](/compare/mailu-vs-mailcow)
-- [Replace Gmail with Self-Hosted Email](/replace/gmail)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SMTP and Email Basics](/foundations/smtp-email-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [DNS Explained](/foundations/dns-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [How to Self-Host Mailu](/apps/mailu/)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [Mailu vs Mailcow](/compare/mailu-vs-mailcow/)
+- [Replace Gmail with Self-Hosted Email](/replace/gmail/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SMTP and Email Basics](/foundations/smtp-email-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

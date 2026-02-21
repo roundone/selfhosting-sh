@@ -125,12 +125,12 @@ If AI tagging isn't important to you and you just want reliable bookmark archiva
 
 ## Related
 
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [How to Self-Host Karakeep (Hoarder)](/apps/hoarder)
-- [How to Self-Host Linkding](/apps/linkding)
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [Linkding vs Wallabag](/compare/linkding-vs-wallabag)
-- [Linkding vs Linkwarden](/compare/linkding-vs-linkwarden)
-- [Wallabag vs Hoarder](/compare/wallabag-vs-hoarder)
-- [Self-Hosted Alternatives to Pocket](/replace/pocket)
-- [Best Self-Hosted Bookmark Managers](/best/bookmarks-read-later)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [How to Self-Host Karakeep (Hoarder)](/apps/hoarder/)
+- [How to Self-Host Linkding](/apps/linkding/)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [Linkding vs Wallabag](/compare/linkding-vs-wallabag/)
+- [Linkding vs Linkwarden](/compare/linkding-vs-linkwarden/)
+- [Wallabag vs Hoarder](/compare/wallabag-vs-hoarder/)
+- [Self-Hosted Alternatives to Pocket](/replace/pocket/)
+- [Best Self-Hosted Bookmark Managers](/best/bookmarks-read-later/)

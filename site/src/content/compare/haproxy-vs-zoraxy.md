@@ -131,7 +131,7 @@ HAProxy is one of the fastest proxies available. For self-hosting workloads (typ
 
 **Zoraxy for self-hosting, HAProxy for infrastructure.** HAProxy's power is wasted on a homelab — its strength is handling millions of connections across server farms with complex failover logic. Zoraxy provides everything a self-hoster needs in a more accessible package.
 
-If you need HAProxy's specific features (advanced ACLs, stick-tables, agent health checks), you probably already know you need HAProxy. Everyone else should use Zoraxy, [Nginx Proxy Manager](/apps/nginx-proxy-manager), or [Traefik](/apps/traefik).
+If you need HAProxy's specific features (advanced ACLs, stick-tables, agent health checks), you probably already know you need HAProxy. Everyone else should use Zoraxy, [Nginx Proxy Manager](/apps/nginx-proxy-manager/), or [Traefik](/apps/traefik/).
 
 ## Frequently Asked Questions
 
@@ -149,10 +149,10 @@ Yes, via ACLs with GeoIP lookup maps. It requires downloading a GeoIP database, 
 
 ## Related
 
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [HAProxy vs Envoy](/compare/envoy-vs-haproxy)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [HAProxy vs Envoy](/compare/envoy-vs-haproxy/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

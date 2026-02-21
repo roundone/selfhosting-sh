@@ -160,9 +160,9 @@ For most self-hosters building their first AI chatbot: Flowise. For developers b
 
 ## Related
 
-- [How to Self-Host Flowise](/apps/flowise)
-- [How to Self-Host Langflow](/apps/langflow)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Flowise](/apps/flowise/)
+- [How to Self-Host Langflow](/apps/langflow/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

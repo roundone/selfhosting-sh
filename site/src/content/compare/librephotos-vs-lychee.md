@@ -99,7 +99,7 @@ Lychee has the healthier project trajectory right now.
 
 **Lychee wins on everything else.** It's simpler, lighter, more actively maintained, has better authentication options, and provides a more polished user experience. For most users who don't specifically need AI, Lychee is the better gallery.
 
-If you want AI features AND active development AND mobile apps, [Immich](/apps/immich) is the strongest option — but it's even more resource-intensive than LibrePhotos.
+If you want AI features AND active development AND mobile apps, [Immich](/apps/immich/) is the strongest option — but it's even more resource-intensive than LibrePhotos.
 
 ## Frequently Asked Questions
 
@@ -114,9 +114,9 @@ No practical difference. Both are permissive MIT licenses. You can use, modify, 
 
 ## Related
 
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [How to Self-Host Lychee](/apps/lychee)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [Immich vs Lychee](/compare/immich-vs-lychee)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [Immich vs Lychee](/compare/immich-vs-lychee/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)

@@ -124,7 +124,7 @@ Plex has the superior ecosystem. Its app quality, device coverage, and third-par
 
 But Plex's direction concerns many self-hosters. The mandatory online account, the ad-supported content mixed with personal libraries, the social features — these feel antithetical to why people self-host. If you want a media server that stays a media server, Emby is the safer bet.
 
-For a completely free alternative with no paid tier at all, [Jellyfin](/apps/jellyfin) is the best option. It offers hardware transcoding for free and is fully open-source.
+For a completely free alternative with no paid tier at all, [Jellyfin](/apps/jellyfin/) is the best option. It offers hardware transcoding for free and is fully open-source.
 
 ## FAQ
 
@@ -150,11 +150,11 @@ You can unpin the ad-supported content sources from your home screen and sidebar
 
 ## Related
 
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

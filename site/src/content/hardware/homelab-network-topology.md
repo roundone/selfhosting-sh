@@ -175,7 +175,7 @@ The AP sends traffic for each SSID with the appropriate VLAN tag to the switch v
 
 ### Local DNS with Pi-hole or AdGuard Home
 
-Run [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) as your network's DNS server. Benefits:
+Run [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) as your network's DNS server. Benefits:
 - Ad blocking for all devices
 - Local DNS records (server.home → 10.0.20.10)
 - DNS query logging
@@ -231,10 +231,10 @@ Inter-VLAN routing means the router forwards traffic between VLANs. A firewall a
 
 ## Related
 
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [PoE Explained](/hardware/poe-explained)
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [Network Cables Guide](/hardware/network-cables-guide)
-- [VLANs and Subnets for Self-Hosting](/foundations/subnets-vlans)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [Network Cables Guide](/hardware/network-cables-guide/)
+- [VLANs and Subnets for Self-Hosting](/foundations/subnets-vlans/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

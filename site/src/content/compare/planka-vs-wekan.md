@@ -197,12 +197,12 @@ Wekan has the longer history and more stars, but Planka's growth trajectory is s
 
 **Wekan is for power users who need specific features.** If you need swimlanes, calendar view, custom fields, automation rules, or Trello import, Wekan has them and Planka doesn't. But these features come at the cost of a cluttered UI and higher resource usage.
 
-For personal task management or small team use: Planka. For complex project management with advanced workflow needs: Wekan — or consider [Vikunja](/apps/vikunja) as a more modern alternative to both.
+For personal task management or small team use: Planka. For complex project management with advanced workflow needs: Wekan — or consider [Vikunja](/apps/vikunja/) as a more modern alternative to both.
 
 ## Related
 
-- [Vikunja vs Todoist](/compare/vikunja-vs-todoist)
-- [Best Self-Hosted Task Management](/best/task-management)
-- [Replace Trello](/replace/trello)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Vikunja vs Todoist](/compare/vikunja-vs-todoist/)
+- [Best Self-Hosted Task Management](/best/task-management/)
+- [Replace Trello](/replace/trello/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

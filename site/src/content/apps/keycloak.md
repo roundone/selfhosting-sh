@@ -29,11 +29,11 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM minimum (Keycloak is a Java application — 4 GB recommended for production)
 - 1 GB of free disk space
 - A domain name with HTTPS configured
-- A reverse proxy with SSL ([guide](/foundations/reverse-proxy-explained))
+- A reverse proxy with SSL ([guide](/foundations/reverse-proxy-explained/))
 
 ## Docker Compose Configuration
 
@@ -228,7 +228,7 @@ auth.example.com {
 }
 ```
 
-For more reverse proxy options, see our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained).
+For more reverse proxy options, see our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -247,7 +247,7 @@ Restore the database:
 docker compose exec -T keycloak-db psql -U keycloak keycloak < keycloak-backup.sql
 ```
 
-For a comprehensive backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a comprehensive backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -284,17 +284,17 @@ For a comprehensive backup strategy, see [Backup Strategy](/foundations/backup-3
 
 ## Verdict
 
-Keycloak is the gold standard for self-hosted identity management. If you need a full-featured identity provider with SAML, LDAP federation, fine-grained authorization, and enterprise-grade reliability, Keycloak is the answer. It's heavier than [Authelia](/apps/authelia) (which just does forward-auth SSO) and more complex than [Authentik](/apps/authentik) (which has a friendlier UI), but no other self-hosted IdP matches its protocol support and maturity. Choose Keycloak when you need the full enterprise feature set. Choose Authelia if you just want SSO + 2FA for your reverse proxy. Choose Authentik if you want a middle ground with a better UI.
+Keycloak is the gold standard for self-hosted identity management. If you need a full-featured identity provider with SAML, LDAP federation, fine-grained authorization, and enterprise-grade reliability, Keycloak is the answer. It's heavier than [Authelia](/apps/authelia/) (which just does forward-auth SSO) and more complex than [Authentik](/apps/authentik/) (which has a friendlier UI), but no other self-hosted IdP matches its protocol support and maturity. Choose Keycloak when you need the full enterprise feature set. Choose Authelia if you just want SSO + 2FA for your reverse proxy. Choose Authentik if you want a middle ground with a better UI.
 
 ## FAQ
 
 ### How does Keycloak compare to Authelia?
 
-Different tools for different jobs. [Authelia](/apps/authelia) is a lightweight forward-auth proxy that adds SSO and 2FA to services behind a reverse proxy. Keycloak is a full identity provider with OIDC, SAML, LDAP federation, and user management. Use Authelia for simple homelab auth. Use Keycloak when apps need OIDC/SAML integration. See our [Authelia vs Keycloak comparison](/compare/authelia-vs-keycloak).
+Different tools for different jobs. [Authelia](/apps/authelia/) is a lightweight forward-auth proxy that adds SSO and 2FA to services behind a reverse proxy. Keycloak is a full identity provider with OIDC, SAML, LDAP federation, and user management. Use Authelia for simple homelab auth. Use Keycloak when apps need OIDC/SAML integration. See our [Authelia vs Keycloak comparison](/compare/authelia-vs-keycloak/).
 
 ### How does Keycloak compare to Authentik?
 
-Both are full identity providers. [Authentik](/apps/authentik) has a more modern UI and visual flow designer. Keycloak has broader protocol support (SAML is more mature), enterprise features, and a larger ecosystem. See our [Authentik vs Keycloak comparison](/compare/authentik-vs-keycloak).
+Both are full identity providers. [Authentik](/apps/authentik/) has a more modern UI and visual flow designer. Keycloak has broader protocol support (SAML is more mature), enterprise features, and a larger ecosystem. See our [Authentik vs Keycloak comparison](/compare/authentik-vs-keycloak/).
 
 ### Can I use Keycloak with Nextcloud, Grafana, and Portainer?
 
@@ -302,17 +302,17 @@ Yes. All three support OIDC. Create a client in Keycloak for each app, configure
 
 ### Is Keycloak overkill for a homelab?
 
-For most homelabs with <10 services, yes — [Authelia](/apps/authelia) or [Authentik](/apps/authentik) are simpler choices. Keycloak makes sense when you need SAML support, LDAP federation, or manage 10+ applications with complex access policies.
+For most homelabs with <10 services, yes — [Authelia](/apps/authelia/) or [Authentik](/apps/authentik/) are simpler choices. Keycloak makes sense when you need SAML support, LDAP federation, or manage 10+ applications with complex access policies.
 
 ## Related
 
-- [How to Self-Host Authelia](/apps/authelia)
-- [How to Self-Host Authentik](/apps/authentik)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Authelia vs Keycloak](/compare/authelia-vs-keycloak)
-- [Authentik vs Keycloak](/compare/authentik-vs-keycloak)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [How to Self-Host Authentik](/apps/authentik/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Authelia vs Keycloak](/compare/authelia-vs-keycloak/)
+- [Authentik vs Keycloak](/compare/authentik-vs-keycloak/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

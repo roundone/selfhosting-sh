@@ -17,15 +17,15 @@ affiliateDisclosure: false
 
 Wake-on-LAN (WoL) lets you power on a computer remotely by sending a special network packet called a magic packet. For self-hosting, a proper wake on lan setup means your server doesn't need to run 24/7. You boot it on demand, run your workloads, and shut it down — cutting power costs by 50-80% depending on your usage pattern.
 
-WoL is essential for servers that don't need constant uptime. A Jellyfin media server that only runs during evenings, a backup server that wakes for nightly jobs, or a development machine you start from your phone — all perfect WoL use cases. Combined with [scheduled tasks](/foundations/linux-cron-jobs) and auto-shutdown scripts, WoL turns a power-hungry server into an on-demand appliance.
+WoL is essential for servers that don't need constant uptime. A Jellyfin media server that only runs during evenings, a backup server that wakes for nightly jobs, or a development machine you start from your phone — all perfect WoL use cases. Combined with [scheduled tasks](/foundations/linux-cron-jobs/) and auto-shutdown scripts, WoL turns a power-hungry server into an on-demand appliance.
 
-The catch: WoL only works reliably on the local network. Over the internet, it's fragile and insecure without a VPN. Use [Tailscale](/foundations/tailscale-setup) if you need to wake machines remotely.
+The catch: WoL only works reliably on the local network. Over the internet, it's fragile and insecure without a VPN. Use [Tailscale](/foundations/tailscale-setup/) if you need to wake machines remotely.
 
 ## Prerequisites
 
 - A server with a wired Ethernet connection (Wi-Fi WoL exists but is unreliable — don't bother)
 - A motherboard that supports Wake-on-LAN (virtually all modern boards do)
-- Linux installed on the server ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Linux installed on the server ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - Root/sudo access
 - `ethtool` installed (`sudo apt install ethtool` on Debian/Ubuntu)
 - A second device on the same network to send magic packets
@@ -302,7 +302,7 @@ Enter your server's MAC address and the broadcast address (`192.168.1.255` for m
 
 Sending WoL magic packets over the internet directly is a bad idea. The magic packet is an unauthenticated UDP broadcast — anyone who knows your MAC address can wake your machine. You'd also need to forward UDP port 9 through your router and set up a directed broadcast, which most routers don't support.
 
-**Use a VPN instead.** The approach: keep a small, low-power device (Raspberry Pi, router, or always-on NUC) on your LAN running [Tailscale](/foundations/tailscale-setup). SSH into that device from anywhere, then send the magic packet locally.
+**Use a VPN instead.** The approach: keep a small, low-power device (Raspberry Pi, router, or always-on NUC) on your LAN running [Tailscale](/foundations/tailscale-setup/). SSH into that device from anywhere, then send the magic packet locally.
 
 ### Setup with Tailscale
 
@@ -338,7 +338,7 @@ This is the correct way to do remote WoL. No port forwarding, no security holes,
 
 ### Scheduled Wake with a Cron Job
 
-Run a cron job on an always-on device to wake your server on a schedule. See [Cron Jobs](/foundations/linux-cron-jobs) for cron basics.
+Run a cron job on an always-on device to wake your server on a schedule. See [Cron Jobs](/foundations/linux-cron-jobs/) for cron basics.
 
 ```bash
 crontab -e
@@ -374,7 +374,7 @@ fi
 sudo chmod +x /usr/local/bin/auto-shutdown.sh
 ```
 
-Schedule it via [systemd timer](/foundations/linux-systemd) or cron:
+Schedule it via [systemd timer](/foundations/linux-systemd/) or cron:
 
 ```cron
 # Check every 30 minutes after 11 PM
@@ -507,7 +507,7 @@ sudo systemctl enable wol-shutdown.service
 
 ### WoL Works from One Device but Not Another
 
-The sending device must be on the same broadcast domain (same subnet/VLAN). If you have VLANs, the magic packet won't cross VLAN boundaries unless your router/switch is configured to relay broadcasts. See [Subnets and VLANs](/foundations/subnets-vlans).
+The sending device must be on the same broadcast domain (same subnet/VLAN). If you have VLANs, the magic packet won't cross VLAN boundaries unless your router/switch is configured to relay broadcasts. See [Subnets and VLANs](/foundations/subnets-vlans/).
 
 ### Server Wakes Up Randomly
 
@@ -528,27 +528,27 @@ Also check BIOS for "Wake on LAN from S1-S3" — disable this unless you specifi
 
 **Not making ethtool settings persistent.** Running `ethtool -s enp0s3 wol g` once works until the next reboot. Use one of the persistence methods above.
 
-**Trying WoL over the internet without a VPN.** Magic packets are Layer 2 broadcasts. They don't route across the internet. Even with port forwarding tricks, ARP entries expire after a few minutes, making it unreliable. Use [Tailscale](/foundations/tailscale-setup).
+**Trying WoL over the internet without a VPN.** Magic packets are Layer 2 broadcasts. They don't route across the internet. Even with port forwarding tricks, ARP entries expire after a few minutes, making it unreliable. Use [Tailscale](/foundations/tailscale-setup/).
 
 **Wrong broadcast address.** If `wakeonlan aa:bb:cc:dd:ee:ff` doesn't work, try specifying the broadcast address explicitly: `wakeonlan -i 192.168.1.255 aa:bb:cc:dd:ee:ff`. The default broadcast `255.255.255.255` doesn't work on all systems.
 
 ## Next Steps
 
-- **Set up power management policies** to auto-shutdown your server during idle periods — [Power Management](/foundations/power-management)
-- **Configure Tailscale** for secure remote WoL — [Tailscale Setup](/foundations/tailscale-setup)
-- **Create systemd services** for your WoL automation — [Linux systemd](/foundations/linux-systemd)
-- **Schedule wake/sleep cycles** with cron — [Cron Jobs](/foundations/linux-cron-jobs)
-- **Segment your network** to control WoL broadcast domains — [Home Network Setup](/foundations/home-network-setup)
+- **Set up power management policies** to auto-shutdown your server during idle periods — [Power Management](/foundations/power-management/)
+- **Configure Tailscale** for secure remote WoL — [Tailscale Setup](/foundations/tailscale-setup/)
+- **Create systemd services** for your WoL automation — [Linux systemd](/foundations/linux-systemd/)
+- **Schedule wake/sleep cycles** with cron — [Cron Jobs](/foundations/linux-cron-jobs/)
+- **Segment your network** to control WoL broadcast domains — [Home Network Setup](/foundations/home-network-setup/)
 
 ## Related
 
-- [Power Management for Home Servers](/foundations/power-management)
-- [Home Network Setup for Self-Hosting](/foundations/home-network-setup)
-- [Tailscale Setup for Self-Hosting](/foundations/tailscale-setup)
-- [Linux systemd Basics](/foundations/linux-systemd)
-- [Cron Jobs for Server Maintenance](/foundations/linux-cron-jobs)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Subnets and VLANs](/foundations/subnets-vlans)
+- [Power Management for Home Servers](/foundations/power-management/)
+- [Home Network Setup for Self-Hosting](/foundations/home-network-setup/)
+- [Tailscale Setup for Self-Hosting](/foundations/tailscale-setup/)
+- [Linux systemd Basics](/foundations/linux-systemd/)
+- [Cron Jobs for Server Maintenance](/foundations/linux-cron-jobs/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Subnets and VLANs](/foundations/subnets-vlans/)
 
 ## FAQ
 
@@ -566,7 +566,7 @@ Not directly. Magic packets are Layer 2 broadcasts and don't cross VLAN or subne
 
 ### Is Wake-on-LAN secure?
 
-The magic packet has no authentication. Anyone on your local network who knows the MAC address can wake your machine. On a trusted home network, this is a non-issue. Never expose WoL to the internet — use a VPN like [Tailscale](/foundations/tailscale-setup) for remote wakeups.
+The magic packet has no authentication. Anyone on your local network who knows the MAC address can wake your machine. On a trusted home network, this is a non-issue. Never expose WoL to the internet — use a VPN like [Tailscale](/foundations/tailscale-setup/) for remote wakeups.
 
 ### Does WoL work after a power outage?
 

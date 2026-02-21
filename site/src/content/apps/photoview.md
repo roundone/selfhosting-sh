@@ -21,7 +21,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB RAM minimum (2 GB recommended for face detection)
 - Disk space for your photo library plus ~20% for thumbnail cache
 - A domain name (optional, for remote access)
@@ -181,7 +181,7 @@ photos.yourdomain.com {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -199,7 +199,7 @@ docker compose exec photoview-db mysqldump -u photoview -p photoview > photoview
 docker run --rm -v photoview-cache:/data -v $(pwd):/backup alpine tar czf /backup/photoview-cache-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -238,7 +238,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup
 
 Photoview is the best lightweight gallery for people who already have organized photo directories. It doesn't try to be a Google Photos replacement — there's no mobile upload, no AI-powered search, no sharing ecosystem. What it does instead is present your existing photo collection beautifully with face detection, map views, and fast browsing. It's read-only by design, which means it never touches your originals.
 
-Choose Photoview if you have a NAS full of photos and want a clean web gallery on top. For a full Google Photos replacement with mobile upload and AI search, use [Immich](/apps/immich). For a smart indexing tool for large existing libraries, use [PhotoPrism](/apps/photoprism). For a simple sharing-focused gallery, use [Lychee](/apps/lychee).
+Choose Photoview if you have a NAS full of photos and want a clean web gallery on top. For a full Google Photos replacement with mobile upload and AI search, use [Immich](/apps/immich/). For a smart indexing tool for large existing libraries, use [PhotoPrism](/apps/photoprism/). For a simple sharing-focused gallery, use [Lychee](/apps/lychee/).
 
 ## FAQ
 
@@ -264,13 +264,13 @@ No native app. The web UI is responsive and works well on mobile browsers. You c
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host Lychee](/apps/lychee)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

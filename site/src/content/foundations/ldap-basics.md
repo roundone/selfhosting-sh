@@ -21,10 +21,10 @@ LDAP has been around since the 1990s. It is not glamorous, but it is the most wi
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics)
-- Basic understanding of Docker networking — see [Docker Networking](/foundations/docker-networking)
-- A working reverse proxy if you want web-based LDAP management — see [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Basic understanding of Docker networking — see [Docker Networking](/foundations/docker-networking/)
+- A working reverse proxy if you want web-based LDAP management — see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Core Concepts
 
@@ -105,7 +105,7 @@ Three protocols dominate self-hosted authentication. Here is when to use each:
 
 **The practical recommendation:** Use LDAP as your user directory, then add an OIDC provider like Authelia or Authentik on top if you want true single sign-on. LDAP gives you one user database. OIDC gives you one login screen. They complement each other — LDAP as the backend, OIDC as the frontend.
 
-For a deeper guide on SSO providers, see [SSO and Authentication](/foundations/sso-authentication).
+For a deeper guide on SSO providers, see [SSO and Authentication](/foundations/sso-authentication/).
 
 ## Self-Hosted LDAP Servers
 
@@ -239,7 +239,7 @@ Every LDAP-aware app needs the same core settings. Here is what they mean:
 
 ### Nextcloud LDAP Configuration
 
-In [Nextcloud](/apps/nextcloud), enable the **LDAP user and group backend** app from the Apps page, then go to **Administration Settings > LDAP/AD Integration**:
+In [Nextcloud](/apps/nextcloud/), enable the **LDAP user and group backend** app from the Apps page, then go to **Administration Settings > LDAP/AD Integration**:
 
 **Server tab:**
 - Host: `lldap` (if on the same Docker network) or your server IP
@@ -263,7 +263,7 @@ Click **Test Configuration** on the Server tab to verify the connection.
 
 ### Gitea LDAP Configuration
 
-In [Gitea](/apps/gitea), go to **Site Administration > Authentication Sources > Add Authentication Source**:
+In [Gitea](/apps/gitea/), go to **Site Administration > Authentication Sources > Add Authentication Source**:
 
 - Authentication type: **LDAP (via BindDN)**
 - Host: `lldap` or your server IP
@@ -350,7 +350,7 @@ Every app that connects to LDAP needs a bind account. Using the admin account fo
 
 ### Forgetting to Put LLDAP on the Same Docker Network
 
-If your apps and LLDAP are in different Docker Compose files, they cannot reach each other by container name unless they share a Docker network. Create an external network and attach both stacks to it. See [Docker Networking](/foundations/docker-networking) for details.
+If your apps and LLDAP are in different Docker Compose files, they cannot reach each other by container name unless they share a Docker network. Create an external network and attach both stacks to it. See [Docker Networking](/foundations/docker-networking/) for details.
 
 ```yaml
 # In each docker-compose.yml:
@@ -372,7 +372,7 @@ LDAP filters treat `*`, `(`, `)`, `\`, and NUL as special characters. If a usern
 
 ### Ignoring TLS for LDAP Connections
 
-By default, LLDAP uses unencrypted LDAP on port 3890. This is fine if your apps connect over a private Docker network. If LDAP traffic crosses the open network (for example, apps on a different server), configure LDAPS (LDAP over TLS) or tunnel the traffic through WireGuard. See [Security Hardening](/foundations/security-hardening) for transport encryption options.
+By default, LLDAP uses unencrypted LDAP on port 3890. This is fine if your apps connect over a private Docker network. If LDAP traffic crosses the open network (for example, apps on a different server), configure LDAPS (LDAP over TLS) or tunnel the traffic through WireGuard. See [Security Hardening](/foundations/security-hardening/) for transport encryption options.
 
 ## FAQ
 
@@ -401,21 +401,21 @@ docker run --rm -v lldap_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/lldap-backup-$(date +%F).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach to backing up all your self-hosted services.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach to backing up all your self-hosted services.
 
 ## Next Steps
 
-- Add an OIDC layer on top of LDAP for true single sign-on — see [SSO and Authentication](/foundations/sso-authentication)
-- Secure your LDAP traffic and server — see [Security Hardening](/foundations/security-hardening)
-- Connect more apps: most apps in our [app guides](/apps) section document their LDAP settings
-- Set up automated backups of your LLDAP data — see [Backup Strategy](/foundations/backup-3-2-1-rule)
+- Add an OIDC layer on top of LDAP for true single sign-on — see [SSO and Authentication](/foundations/sso-authentication/)
+- Secure your LDAP traffic and server — see [Security Hardening](/foundations/security-hardening/)
+- Connect more apps: most apps in our [app guides](/apps/) section document their LDAP settings
+- Set up automated backups of your LLDAP data — see [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — prerequisite for running LLDAP
-- [Docker Networking](/foundations/docker-networking) — connecting LLDAP to your app containers
-- [Security Hardening](/foundations/security-hardening) — securing LDAP traffic and your server
-- [SSO and Authentication](/foundations/sso-authentication) — adding OIDC on top of LDAP
-- [Nextcloud Setup Guide](/apps/nextcloud) — full Nextcloud deployment with LDAP
-- [Gitea Setup Guide](/apps/gitea) — full Gitea deployment with LDAP
-- [Backup Strategy](/foundations/backup-3-2-1-rule) — backing up your LDAP database
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — prerequisite for running LLDAP
+- [Docker Networking](/foundations/docker-networking/) — connecting LLDAP to your app containers
+- [Security Hardening](/foundations/security-hardening/) — securing LDAP traffic and your server
+- [SSO and Authentication](/foundations/sso-authentication/) — adding OIDC on top of LDAP
+- [Nextcloud Setup Guide](/apps/nextcloud/) — full Nextcloud deployment with LDAP
+- [Gitea Setup Guide](/apps/gitea/) — full Gitea deployment with LDAP
+- [Backup Strategy](/foundations/backup-3-2-1-rule/) — backing up your LDAP database

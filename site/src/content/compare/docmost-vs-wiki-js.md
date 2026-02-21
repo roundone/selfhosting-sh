@@ -96,10 +96,10 @@ For technical documentation with version control needs, Wiki.js is the clear win
 
 ## Related
 
-- [How to Self-Host Docmost](/apps/docmost)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Docmost vs BookStack](/compare/docmost-vs-bookstack)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Confluence](/replace/confluence)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Docmost vs BookStack](/compare/docmost-vs-bookstack/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Confluence](/replace/confluence/)

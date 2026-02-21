@@ -15,9 +15,9 @@ affiliateDisclosure: true
 
 ## Quick Verdict
 
-**Non-ECC is fine for most home servers.** If you're running Docker containers, [Plex](/apps/plex), [Nextcloud](/apps/nextcloud), or [Home Assistant](/apps/home-assistant), ECC won't make a noticeable difference. The risk of a bit flip causing data corruption in a home environment is extremely low.
+**Non-ECC is fine for most home servers.** If you're running Docker containers, [Plex](/apps/plex/), [Nextcloud](/apps/nextcloud/), or [Home Assistant](/apps/home-assistant/), ECC won't make a noticeable difference. The risk of a bit flip causing data corruption in a home environment is extremely low.
 
-**ECC matters for ZFS/TrueNAS.** ZFS trusts RAM absolutely — if a bit flip occurs in RAM, ZFS may write corrupted data to disk and checksum it as valid. While the real-world risk is debated, ECC is cheap insurance when your NAS stores irreplaceable data. [TrueNAS](/hardware/synology-vs-truenas) officially recommends ECC.
+**ECC matters for ZFS/TrueNAS.** ZFS trusts RAM absolutely — if a bit flip occurs in RAM, ZFS may write corrupted data to disk and checksum it as valid. While the real-world risk is debated, ECC is cheap insurance when your NAS stores irreplaceable data. [TrueNAS](/hardware/synology-vs-truenas/) officially recommends ECC.
 
 ## What ECC Actually Does
 
@@ -42,7 +42,7 @@ ECC prevents this by catching the bit flip in RAM before it reaches ZFS. This is
 
 ### Database Servers
 
-If you run PostgreSQL, MariaDB, or SQLite databases for self-hosted apps ([Nextcloud](/apps/nextcloud), [Immich](/apps/immich), [Gitea](/apps/gitea)), a bit flip in a database page could corrupt your data. ECC prevents this. In practice, databases have their own integrity checks, and the risk is low — but for critical data, ECC adds a layer of protection.
+If you run PostgreSQL, MariaDB, or SQLite databases for self-hosted apps ([Nextcloud](/apps/nextcloud/), [Immich](/apps/immich/), [Gitea](/apps/gitea/)), a bit flip in a database page could corrupt your data. ECC prevents this. In practice, databases have their own integrity checks, and the risk is low — but for critical data, ECC adds a layer of protection.
 
 ### Long-Uptime Servers
 
@@ -52,11 +52,11 @@ The longer your server runs without a reboot, the more RAM-hours accumulate, and
 
 ### Docker Containers Running Services
 
-If [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) gets a bit flip, the worst case is a DNS query returns the wrong result or the process crashes and restarts. No permanent damage.
+If [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) gets a bit flip, the worst case is a DNS query returns the wrong result or the process crashes and restarts. No permanent damage.
 
 ### Media Servers
 
-A bit flip in a video stream for [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex) causes a single-frame glitch. The source file on disk isn't affected. Not worth ECC for this alone.
+A bit flip in a video stream for [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/) causes a single-frame glitch. The source file on disk isn't affected. Not worth ECC for this alone.
 
 ### Temporary/Reproducible Data
 
@@ -91,7 +91,7 @@ Not every CPU and motherboard supports ECC. Check before buying.
 | Xeon W / Xeon E | Yes |
 | Xeon Scalable | Yes (RDIMM) |
 
-The [Intel N100](/hardware/intel-n100-mini-pc) supporting ECC is a huge deal for budget NAS builds. Not all N100 *motherboards* support it — check the board specs.
+The [Intel N100](/hardware/intel-n100-mini-pc/) supporting ECC is a huge deal for budget NAS builds. Not all N100 *motherboards* support it — check the board specs.
 
 ### AMD
 
@@ -162,7 +162,7 @@ The performance impact is <2% — essentially unmeasurable in real-world self-ho
 
 ### Should I get ECC for Unraid?
 
-[Unraid](/hardware/truenas-vs-unraid) doesn't use ZFS (it uses its own parity system + XFS/Btrfs). The ZFS argument for ECC doesn't apply directly. ECC is still good practice for any server with important data, but it's less critical for Unraid than for TrueNAS/ZFS.
+[Unraid](/hardware/truenas-vs-unraid/) doesn't use ZFS (it uses its own parity system + XFS/Btrfs). The ZFS argument for ECC doesn't apply directly. ECC is still good practice for any server with important data, but it's less critical for Unraid than for TrueNAS/ZFS.
 
 ### How do I check if ECC is active?
 
@@ -178,11 +178,11 @@ cat /sys/devices/system/edac/mc/mc0/ue_count    # Uncorrectable errors
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
-- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)
+- [Used Dell OptiPlex Guide](/hardware/used-dell-optiplex/)

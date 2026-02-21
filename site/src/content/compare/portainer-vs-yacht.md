@@ -107,7 +107,7 @@ This is the deciding factor. **Yacht's development has stalled.** The last relea
 
 ### Is Yacht still being maintained?
 
-Barely. The last release was in 2023, and development activity is minimal. For a tool with Docker socket access, this is a security concern. Consider [Dockge](/apps/dockge) as an alternative lightweight option that is actively maintained.
+Barely. The last release was in 2023, and development activity is minimal. For a tool with Docker socket access, this is a security concern. Consider [Dockge](/apps/dockge/) as an alternative lightweight option that is actively maintained.
 
 ### Can Portainer's free tier do everything Yacht does?
 
@@ -115,19 +115,19 @@ Yes. Portainer CE (free) covers everything Yacht offers and significantly more. 
 
 ### What about Dockge as an alternative to both?
 
-[Dockge](/apps/dockge) is a strong third option. It focuses exclusively on Docker Compose stacks with a clean UI, stores files on disk as standard YAML, and is actively maintained. See [Portainer vs Dockge](/compare/portainer-vs-dockge) and [Dockge vs Yacht](/compare/dockge-vs-yacht).
+[Dockge](/apps/dockge/) is a strong third option. It focuses exclusively on Docker Compose stacks with a clean UI, stores files on disk as standard YAML, and is actively maintained. See [Portainer vs Dockge](/compare/portainer-vs-dockge/) and [Dockge vs Yacht](/compare/dockge-vs-yacht/).
 
 ## Final Verdict
 
 **Portainer is the clear winner.** It does everything Yacht does and far more, uses fewer resources, and is actively maintained with monthly releases. Yacht's template system is nice, but it does not compensate for stale development, missing features, and higher resource usage.
 
-If Portainer feels too complex, look at [Dockge](/apps/dockge) rather than Yacht. Dockge is lighter, focused, and actively maintained. Yacht is hard to recommend in 2026.
+If Portainer feels too complex, look at [Dockge](/apps/dockge/) rather than Yacht. Dockge is lighter, focused, and actively maintained. Yacht is hard to recommend in 2026.
 
 ## Related
 
-- [How to Self-Host Portainer with Docker](/apps/portainer)
-- [How to Self-Host Yacht with Docker](/apps/yacht)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Portainer with Docker](/apps/portainer/)
+- [How to Self-Host Yacht with Docker](/apps/yacht/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

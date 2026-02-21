@@ -146,7 +146,7 @@ Temporal is designed for high-throughput, mission-critical workloads. n8n handle
 
 **n8n wins for self-hosters.** If you're reading a self-hosting comparison, you almost certainly want n8n. It does what Zapier does — connect services, automate workflows, react to events — but runs on your own infrastructure with no per-execution fees.
 
-Temporal is an exceptional piece of engineering, but it's infrastructure for software teams building distributed applications. It's not a Zapier replacement. It's closer to a message queue with workflow semantics. If you're building a fintech payment processing pipeline or an e-commerce order fulfillment system, Temporal is worth evaluating. If you want to automatically save email attachments to Nextcloud when they match a filter, use [n8n](/apps/n8n).
+Temporal is an exceptional piece of engineering, but it's infrastructure for software teams building distributed applications. It's not a Zapier replacement. It's closer to a message queue with workflow semantics. If you're building a fintech payment processing pipeline or an e-commerce order fulfillment system, Temporal is worth evaluating. If you want to automatically save email attachments to Nextcloud when they match a filter, use [n8n](/apps/n8n/).
 
 ## FAQ
 
@@ -164,10 +164,10 @@ n8n by a wide margin. It runs comfortably in 256 MB of RAM. A minimal Temporal s
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Huginn](/compare/n8n-vs-huginn)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Windmill vs n8n](/compare/windmill-vs-n8n)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
+- [How to Self-Host n8n](/apps/n8n/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Huginn](/compare/n8n-vs-huginn/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Windmill vs n8n](/compare/windmill-vs-n8n/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)

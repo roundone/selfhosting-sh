@@ -45,7 +45,7 @@ The fundamental difference: Compose manages containers on one machine. Swarm man
 | **Network model** | Bridge networks (single host) | Overlay networks spanning all nodes via VXLAN encapsulation |
 | **Volume management** | Bind mounts and named volumes on the local host | Local volumes only per node -- no built-in distributed storage (need NFS, GlusterFS, or similar) |
 | **Resource limits** | `deploy.resources` in Compose file (requires `--compatibility` flag or Swarm mode) | Native resource limits and reservations per service enforced by the scheduler |
-| **Monitoring** | None built-in -- use [Portainer](/apps/portainer), `docker stats`, or external tools | `docker service ls`, `docker service ps`, built-in health check-driven rescheduling |
+| **Monitoring** | None built-in -- use [Portainer](/apps/portainer/), `docker stats`, or external tools | `docker service ls`, `docker service ps`, built-in health check-driven rescheduling |
 
 ## Installation
 
@@ -138,7 +138,7 @@ If your needs have genuinely outgrown a single server and Docker Compose, consid
 
 **Docker Compose.** Unless you genuinely need multi-node orchestration, Compose is simpler, lighter, and better supported. It is the standard that the entire self-hosting ecosystem is built around.
 
-The honest truth is that most self-hosters who think they need Swarm do not. A single server with 32 GB RAM and a modern CPU can run 50+ services simultaneously. If you are running out of resources, the first step is upgrading your hardware (an [Intel N100 mini PC](/hardware/intel-n100-mini-pc) with 16 GB RAM costs under $200 and handles dozens of services). Moving to a multi-node cluster is a significant operational burden that should be a last resort, not a first instinct.
+The honest truth is that most self-hosters who think they need Swarm do not. A single server with 32 GB RAM and a modern CPU can run 50+ services simultaneously. If you are running out of resources, the first step is upgrading your hardware (an [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) with 16 GB RAM costs under $200 and handles dozens of services). Moving to a multi-node cluster is a significant operational burden that should be a last resort, not a first instinct.
 
 If you do need multi-node orchestration, Swarm is the easier on-ramp compared to Kubernetes. But go in with your eyes open: Swarm is in maintenance mode, and the long-term bet is on Kubernetes. For most people, that decision is years away -- if it ever comes at all. Start with Compose. You can always migrate later.
 
@@ -162,15 +162,15 @@ Yes, with caveats. `docker stack deploy -c compose.yaml` reads a Compose file an
 
 ### Do I need Swarm for Docker secrets?
 
-No. While Swarm's encrypted secrets are the most secure built-in option, they only work in Swarm mode. For Compose deployments, the common alternatives are: `.env` files with restrictive permissions (`chmod 600`), Docker Compose `secrets` with file-based secrets (available since Compose v2.x, though stored unencrypted on disk), or external secret managers like HashiCorp Vault or [Authelia](/apps/authelia) for application-level secrets. For a homelab, `.env` files with proper file permissions are sufficient.
+No. While Swarm's encrypted secrets are the most secure built-in option, they only work in Swarm mode. For Compose deployments, the common alternatives are: `.env` files with restrictive permissions (`chmod 600`), Docker Compose `secrets` with file-based secrets (available since Compose v2.x, though stored unencrypted on disk), or external secret managers like HashiCorp Vault or [Authelia](/apps/authelia/) for application-level secrets. For a homelab, `.env` files with proper file permissions are sufficient.
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Best Docker Management Tools](/best/docker-management)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Podman vs Docker](/compare/podman-vs-docker)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Podman vs Docker](/compare/podman-vs-docker/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)

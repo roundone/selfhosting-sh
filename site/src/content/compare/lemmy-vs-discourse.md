@@ -128,10 +128,10 @@ Discourse handles larger communities more gracefully due to its maturity and opt
 
 ## Related
 
-- [How to Self-Host Lemmy](/apps/lemmy)
-- [How to Self-Host Discourse](/apps/discourse)
-- [Discourse vs Flarum](/compare/discourse-vs-flarum)
-- [Lemmy vs Reddit](/compare/lemmy-vs-reddit)
-- [Best Self-Hosted Social Networks](/best/social-networks)
-- [Replace Reddit](/replace/reddit)
-- [The Fediverse Explained](/foundations/fediverse-explained)
+- [How to Self-Host Lemmy](/apps/lemmy/)
+- [How to Self-Host Discourse](/apps/discourse/)
+- [Discourse vs Flarum](/compare/discourse-vs-flarum/)
+- [Lemmy vs Reddit](/compare/lemmy-vs-reddit/)
+- [Best Self-Hosted Social Networks](/best/social-networks/)
+- [Replace Reddit](/replace/reddit/)
+- [The Fediverse Explained](/foundations/fediverse-explained/)

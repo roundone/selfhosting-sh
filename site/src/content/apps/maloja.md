@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB+ of free RAM
 - A music player that supports Last.fm or ListenBrainz scrobbling (Navidrome, Jellyfin, Plex, etc.)
 - A domain name (optional, for remote access)
@@ -172,7 +172,7 @@ Forward Port: 42010
 
 No special configuration needed — Maloja serves a standard HTTP web application.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -188,7 +188,7 @@ The data directory contains:
 - **Configuration** — API keys, rules, settings
 - **Artist images** — cached artwork
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -238,10 +238,10 @@ Maloja's statistics are more accurate for your local library because you control
 
 ## Related
 
-- [Maloja vs Last.fm](/compare/maloja-vs-lastfm)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Maloja vs Last.fm](/compare/maloja-vs-lastfm/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

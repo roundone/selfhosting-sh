@@ -37,31 +37,31 @@ Managed hosting services like Vercel, Netlify, AWS Amplify, and traditional shar
 
 ### Caddy — Best Overall Replacement
 
-[Caddy](/apps/caddy) is the closest thing to managed hosting you can run yourself. Point it at a domain name and it handles SSL certificates, HTTP/2, HTTP/3, and static file serving automatically. The Caddyfile is two lines per site. No Nginx config files, no Certbot cron jobs, no SSL renewal scripts.
+[Caddy](/apps/caddy/) is the closest thing to managed hosting you can run yourself. Point it at a domain name and it handles SSL certificates, HTTP/2, HTTP/3, and static file serving automatically. The Caddyfile is two lines per site. No Nginx config files, no Certbot cron jobs, no SSL renewal scripts.
 
 Caddy serves static sites (Hugo, Astro, Next.js exports) and reverse proxies dynamic apps equally well. If you are moving from Vercel or Netlify and just need to serve a static site with HTTPS, Caddy is the answer.
 
-[Read our full guide: How to Self-Host Caddy with Docker](/apps/caddy)
+[Read our full guide: How to Self-Host Caddy with Docker](/apps/caddy/)
 
 ### Nginx Proxy Manager — Best for Non-Technical Users
 
-[Nginx Proxy Manager](/apps/nginx-proxy-manager) provides a web UI for managing proxy hosts and SSL certificates. If you host sites for family members or a small team and want them to manage their own domains without touching config files, NPM is the right tool.
+[Nginx Proxy Manager](/apps/nginx-proxy-manager/) provides a web UI for managing proxy hosts and SSL certificates. If you host sites for family members or a small team and want them to manage their own domains without touching config files, NPM is the right tool.
 
 It handles Let's Encrypt certificates with a checkbox, supports custom Nginx directives for power users, and provides access control lists for restricting access.
 
-[Read our full guide: How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
+[Read our full guide: How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
 
 ### Traefik — Best for Container-Heavy Setups
 
-If you run many Docker services and want zero-touch routing, [Traefik](/apps/traefik) auto-discovers containers via Docker labels and provisions SSL certificates automatically. Adding a new site is a matter of adding labels to your Docker Compose file — no proxy config editing needed.
+If you run many Docker services and want zero-touch routing, [Traefik](/apps/traefik/) auto-discovers containers via Docker labels and provisions SSL certificates automatically. Adding a new site is a matter of adding labels to your Docker Compose file — no proxy config editing needed.
 
-[Read our full guide: How to Self-Host Traefik with Docker](/apps/traefik)
+[Read our full guide: How to Self-Host Traefik with Docker](/apps/traefik/)
 
 ### Nginx — Best for Maximum Control
 
-[Nginx](/apps/nginx) is what most managed hosting runs behind the scenes. Running it yourself gives you full control over caching, rate limiting, URL rewriting, and request handling. The learning curve is steeper but the flexibility is unmatched.
+[Nginx](/apps/nginx/) is what most managed hosting runs behind the scenes. Running it yourself gives you full control over caching, rate limiting, URL rewriting, and request handling. The learning curve is steeper but the flexibility is unmatched.
 
-[Read our full guide: How to Self-Host Nginx with Docker](/apps/nginx)
+[Read our full guide: How to Self-Host Nginx with Docker](/apps/nginx/)
 
 ## Migration Guide
 
@@ -86,7 +86,7 @@ mysite.com {
 
 1. Export your WordPress database (`mysqldump`)
 2. Copy your WordPress files to your server
-3. Deploy WordPress via Docker Compose (see our [WordPress guide](/apps/wordpress) when available)
+3. Deploy WordPress via Docker Compose (see our [WordPress guide](/apps/wordpress/) when available)
 4. Import the database into the Docker MySQL container
 5. Point your reverse proxy at the WordPress container
 6. Update DNS records
@@ -116,20 +116,20 @@ A $100 Intel N100 mini PC running Caddy can host dozens of sites with HTTPS for 
 
 ## What You Give Up
 
-- **Zero-ops deployment.** `git push` to deploy is convenient. Self-hosting requires you to set up a deployment pipeline (or use tools like [Dockge](/apps/dockge) or [Portainer](/apps/portainer) for one-click redeploys).
+- **Zero-ops deployment.** `git push` to deploy is convenient. Self-hosting requires you to set up a deployment pipeline (or use tools like [Dockge](/apps/dockge/) or [Portainer](/apps/portainer/) for one-click redeploys).
 - **Global CDN edge locations.** Vercel and Cloudflare Pages serve from hundreds of edge locations worldwide. Your self-hosted server has one location. Mitigate this with Cloudflare's free CDN proxy.
 - **Managed scaling.** If you go viral, managed platforms auto-scale. Your single server has fixed resources. For most self-hosted sites, this is not a realistic concern.
 - **Managed SSL.** Actually, this is not a loss — Caddy, Traefik, and NPM all handle SSL automatically.
-- **Uptime guarantees.** You are responsible for your own availability. Use [Uptime Kuma](/apps/uptime-kuma) for monitoring.
+- **Uptime guarantees.** You are responsible for your own availability. Use [Uptime Kuma](/apps/uptime-kuma/) for monitoring.
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

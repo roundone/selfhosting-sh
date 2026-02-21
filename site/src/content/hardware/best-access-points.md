@@ -162,8 +162,8 @@ Both are excellent. TP-Link is cheaper with comparable features. UniFi has a mor
 
 ## Related
 
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [PoE Explained](/hardware/poe-explained)
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

@@ -19,8 +19,8 @@ Every self-hoster faces this question: run services on a VPS (Virtual Private Se
 
 ## Prerequisites
 
-- Understanding of what self-hosting involves ([Getting Started](/foundations/getting-started))
-- Basic networking knowledge ([Networking Concepts](/foundations/ports-explained))
+- Understanding of what self-hosting involves ([Getting Started](/foundations/getting-started/))
+- Basic networking knowledge ([Networking Concepts](/foundations/ports-explained/))
 
 ## Quick Comparison
 
@@ -116,10 +116,10 @@ Add more RAM, swap drives, add a second NIC. No plan tiers, no provider limitati
 
 Most ISPs assign dynamic IPs and block ports 80/443. You need workarounds:
 
-- **Dynamic DNS** to handle changing IPs ([Dynamic DNS Setup](/foundations/dynamic-dns))
-- **Port forwarding** on your router ([Port Forwarding](/foundations/port-forwarding))
-- **Cloudflare Tunnel** to bypass blocked ports ([Cloudflare Tunnel](/foundations/cloudflare-tunnel))
-- **Tailscale/WireGuard** for private access ([Tailscale Setup](/foundations/tailscale-setup))
+- **Dynamic DNS** to handle changing IPs ([Dynamic DNS Setup](/foundations/dynamic-dns/))
+- **Port forwarding** on your router ([Port Forwarding](/foundations/port-forwarding/))
+- **Cloudflare Tunnel** to bypass blocked ports ([Cloudflare Tunnel](/foundations/cloudflare-tunnel/))
+- **Tailscale/WireGuard** for private access ([Tailscale Setup](/foundations/tailscale-setup/))
 
 These are solvable problems, but they add complexity a VPS doesn't have.
 
@@ -179,7 +179,7 @@ Connect them with Tailscale or WireGuard for a seamless private network.
 | $80-150 | Raspberry Pi 5 | ARM, 8 GB RAM, USB SSD |
 | $300-600 | NAS (Synology/DIY) | 2-4 drive bays, RAID support |
 
-See [Choosing Hardware](/foundations/choosing-hardware) and [Home Server Cost Breakdown](/foundations/home-server-cost) for detailed recommendations.
+See [Choosing Hardware](/foundations/choosing-hardware/) and [Home Server Cost Breakdown](/foundations/home-server-cost/) for detailed recommendations.
 
 ## Decision Framework
 
@@ -218,14 +218,14 @@ For services only you use (or your household), latency is near zero on your loca
 
 ### Can I self-host on a regular desktop or laptop?
 
-Yes, temporarily. But desktops are power-hungry and laptops throttle under sustained load. A dedicated mini PC or used SFF (small form factor) desktop is better for 24/7 operation. See [Power Management](/foundations/power-management) for efficiency considerations.
+Yes, temporarily. But desktops are power-hungry and laptops throttle under sustained load. A dedicated mini PC or used SFF (small form factor) desktop is better for 24/7 operation. See [Power Management](/foundations/power-management/) for efficiency considerations.
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Home Server Cost Breakdown](/foundations/home-server-cost)
-- [Choosing Hardware](/foundations/choosing-hardware)
-- [Port Forwarding](/foundations/port-forwarding)
-- [Cloudflare Tunnel](/foundations/cloudflare-tunnel)
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [Backup Strategy — 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Home Server Cost Breakdown](/foundations/home-server-cost/)
+- [Choosing Hardware](/foundations/choosing-hardware/)
+- [Port Forwarding](/foundations/port-forwarding/)
+- [Cloudflare Tunnel](/foundations/cloudflare-tunnel/)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [Backup Strategy — 3-2-1 Rule](/foundations/backup-3-2-1-rule/)

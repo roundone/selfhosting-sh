@@ -24,12 +24,12 @@ affiliateDisclosure: false
 
 [Send](https://github.com/timvisee/send) is a self-hosted, end-to-end encrypted file sharing service — a maintained fork of the discontinued Firefox Send. Upload a file through the web UI, get a link with configurable download limits and expiry. Files are encrypted in your browser before upload using AES-GCM, so the server only stores encrypted blobs it cannot read.
 
-Send replaces [WeTransfer](/replace/wetransfer), Dropbox Transfer, and other cloud file sharing services. Your files stay on your server, encrypted at rest, and automatically delete after the link expires.
+Send replaces [WeTransfer](/replace/wetransfer/), Dropbox Transfer, and other cloud file sharing services. Your files stay on your server, encrypted at rest, and automatically delete after the link expires.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (minimum)
 - Disk space for stored files (depends on your upload limits)
 - A domain name (required — Send needs `BASE_URL` for encryption to work)
@@ -154,7 +154,7 @@ docker exec send du -sh /uploads
 
 ## Reverse Proxy
 
-Send **requires** HTTPS. The browser-side encryption depends on a secure context. Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Send **requires** HTTPS. The browser-side encryption depends on a secure context. Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 send.example.com {
@@ -162,7 +162,7 @@ send.example.com {
 }
 ```
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager), create a proxy host pointing to `localhost:1443` with SSL enabled. Enable WebSocket support.
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/), create a proxy host pointing to `localhost:1443` with SSL enabled. Enable WebSocket support.
 
 **Important:** Set `BASE_URL` in your environment to match the exact public URL including `https://`. Mismatched URLs break the encryption key derivation.
 
@@ -183,7 +183,7 @@ docker run --rm -v send-uploads:/data -v $(pwd):/backup alpine \
   tar czf /backup/send-uploads-$(date +%Y%m%d).tar.gz /data
 ```
 
-In practice, most Send deployments don't need regular backups — the data is ephemeral by design. See [Backup Strategy](/foundations/backup-strategy) for general guidance.
+In practice, most Send deployments don't need regular backups — the data is ephemeral by design. See [Backup Strategy](/foundations/backup-strategy/) for general guidance.
 
 ## Troubleshooting
 
@@ -222,7 +222,7 @@ In practice, most Send deployments don't need regular backups — the data is ep
 
 Send is the best self-hosted solution for link-based file sharing. End-to-end encryption, configurable expiry, download limits, zero accounts — it does exactly what WeTransfer does, minus the ads and privacy concerns. The Firefox Send heritage means the UI is clean and battle-tested.
 
-For local device-to-device transfers (AirDrop-style), use [PairDrop](/apps/pairdrop) instead. For permanent file sharing and sync, use [Nextcloud](/apps/nextcloud) or [Seafile](/apps/seafile). Send is purpose-built for "here's a file, download it before the link expires."
+For local device-to-device transfers (AirDrop-style), use [PairDrop](/apps/pairdrop/) instead. For permanent file sharing and sync, use [Nextcloud](/apps/nextcloud/) or [Seafile](/apps/seafile/). Send is purpose-built for "here's a file, download it before the link expires."
 
 ## Frequently Asked Questions
 
@@ -233,15 +233,15 @@ Yes. Encryption happens in the sender's browser using AES-GCM. The decryption ke
 No. Anyone with access to your Send instance can upload files. Recipients don't need accounts either — just the link.
 
 ### Can I restrict who can upload?
-Not natively. Send has no authentication. To restrict access, put it behind a reverse proxy with basic auth or a VPN like [Tailscale](/apps/tailscale).
+Not natively. Send has no authentication. To restrict access, put it behind a reverse proxy with basic auth or a VPN like [Tailscale](/apps/tailscale/).
 
 ## Related
 
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Send vs WeTransfer](/compare/send-vs-wetransfer)
-- [How to Self-Host PairDrop](/apps/pairdrop)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Self-Hosted Alternatives to AirDrop](/replace/airdrop)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Send vs WeTransfer](/compare/send-vs-wetransfer/)
+- [How to Self-Host PairDrop](/apps/pairdrop/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Self-Hosted Alternatives to AirDrop](/replace/airdrop/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

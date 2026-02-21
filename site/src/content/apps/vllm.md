@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - NVIDIA GPU with 16+ GB VRAM (required — no CPU mode)
 - NVIDIA Container Toolkit installed
 - 30 GB+ free disk space (for model downloads)
@@ -179,7 +179,7 @@ command: >
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8000. WebSocket support is recommended for streaming. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8000. WebSocket support is recommended for streaming. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -190,7 +190,7 @@ docker run --rm -v huggingface_cache:/data -v $(pwd):/backup alpine \
   tar czf /backup/vllm-models-backup.tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -225,15 +225,15 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 vLLM is the production-grade LLM serving engine. If you need to serve multiple concurrent users with consistent latency, vLLM's PagedAttention and continuous batching make it 2-5x more efficient than sequential inference engines. The trade-off is a hard GPU requirement and more complex setup.
 
-**Choose vLLM** if you're building an application that serves LLM responses to multiple users. **Choose [Ollama](/apps/ollama)** if you want simpler setup for personal use or small teams.
+**Choose vLLM** if you're building an application that serves LLM responses to multiple users. **Choose [Ollama](/apps/ollama/)** if you want simpler setup for personal use or small teams.
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [Ollama vs vLLM](/compare/ollama-vs-vllm)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [Ollama vs vLLM](/compare/ollama-vs-vllm/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

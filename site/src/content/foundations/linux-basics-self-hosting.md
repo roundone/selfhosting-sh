@@ -21,8 +21,8 @@ Ubuntu Server 24.04 LTS is the recommended distribution for self-hosting. It has
 
 ## Prerequisites
 
-- A Linux server (Ubuntu Server 24.04 LTS recommended) — see [Getting Started](/foundations/getting-started)
-- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup))
+- A Linux server (Ubuntu Server 24.04 LTS recommended) — see [Getting Started](/foundations/getting-started/)
+- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup/))
 
 ## Navigating the File System
 
@@ -176,7 +176,7 @@ sudo usermod -aG sudo deploy
 sudo usermod -aG docker deploy
 ```
 
-**The recommendation:** Create a non-root user for daily operations. Add it to the `docker` and `sudo` groups. Only use `sudo` when a command specifically needs root access. See [Linux Permissions](/foundations/linux-permissions) for deeper coverage.
+**The recommendation:** Create a non-root user for daily operations. Add it to the `docker` and `sudo` groups. Only use `sudo` when a command specifically needs root access. See [Linux Permissions](/foundations/linux-permissions/) for deeper coverage.
 
 ## Process and Service Management
 
@@ -218,7 +218,7 @@ sudo journalctl -u docker --since "1 hour ago"
 sudo journalctl -u docker -f    # Follow logs in real-time
 ```
 
-See [systemd Services](/foundations/linux-systemd) for a deeper guide.
+See [systemd Services](/foundations/linux-systemd/) for a deeper guide.
 
 ## Networking Commands
 
@@ -245,7 +245,7 @@ ping -c 4 8.8.8.8
 sudo ss -tnp
 ```
 
-For networking concepts, see [DNS Explained](/foundations/dns-explained) and [Ports Explained](/foundations/ports-explained).
+For networking concepts, see [DNS Explained](/foundations/dns-explained/) and [Ports Explained](/foundations/ports-explained/).
 
 ## Disk and Storage
 
@@ -270,7 +270,7 @@ sudo blkid /dev/sdb1
 # UUID=xxxx-xxxx /mnt/external ext4 defaults 0 2
 ```
 
-For storage management with Docker, see [Docker Volumes](/foundations/docker-volumes).
+For storage management with Docker, see [Docker Volumes](/foundations/docker-volumes/).
 
 ## Essential Utilities
 
@@ -350,7 +350,7 @@ dmesg | grep -i "oom"
 Use a regular user with `sudo` for privilege elevation. Running everything as root means a single mistake (like `rm -rf /`) has no safety net. Docker should be run as your user (add yourself to the docker group), not as root.
 
 ### Not checking disk space before it's full
-Docker images and volumes consume disk space silently. A full disk causes containers to crash, databases to corrupt, and the system to become unresponsive. Monitor with `df -h` regularly and set up [monitoring](/foundations/monitoring-basics).
+Docker images and volumes consume disk space silently. A full disk causes containers to crash, databases to corrupt, and the system to become unresponsive. Monitor with `df -h` regularly and set up [monitoring](/foundations/monitoring-basics/).
 
 ### Editing config files without a backup
 Before editing any critical file:
@@ -369,11 +369,11 @@ Unpatched systems get compromised. At minimum, enable automatic security updates
 
 ## Next Steps
 
-- Learn about [Linux file permissions](/foundations/linux-permissions)
-- Set up [SSH key authentication](/foundations/ssh-setup)
-- Configure a [firewall with UFW](/foundations/firewall-ufw)
-- Install [Docker and Docker Compose](/foundations/docker-compose-basics)
-- Understand [systemd services](/foundations/linux-systemd)
+- Learn about [Linux file permissions](/foundations/linux-permissions/)
+- Set up [SSH key authentication](/foundations/ssh-setup/)
+- Configure a [firewall with UFW](/foundations/firewall-ufw/)
+- Install [Docker and Docker Compose](/foundations/docker-compose-basics/)
+- Understand [systemd services](/foundations/linux-systemd/)
 
 ## FAQ
 
@@ -384,16 +384,16 @@ Ubuntu Server 24.04 LTS. It has the largest community, the best Docker documenta
 No. The 20 commands in this guide cover 95% of daily self-hosting tasks. Docker abstracts away most software management — you rarely need to configure anything at the OS level beyond what's in this guide.
 
 ### How do I keep my server secure?
-Four things: SSH key authentication (disable password login), UFW firewall (only open needed ports), fail2ban (block brute-force attempts), and automatic security updates. See [SSH Setup](/foundations/ssh-setup), [UFW Firewall](/foundations/firewall-ufw), and [Fail2ban](/foundations/fail2ban).
+Four things: SSH key authentication (disable password login), UFW firewall (only open needed ports), fail2ban (block brute-force attempts), and automatic security updates. See [SSH Setup](/foundations/ssh-setup/), [UFW Firewall](/foundations/firewall-ufw/), and [Fail2ban](/foundations/fail2ban/).
 
 ### Should I use a GUI on my server?
-No. A GUI consumes RAM and CPU that your self-hosted apps could use. Manage everything over SSH. For Docker management with a web UI, use [Portainer](/apps/portainer) or [Dockge](/apps/dockge) — they run as containers, not as a desktop environment.
+No. A GUI consumes RAM and CPU that your self-hosted apps could use. Manage everything over SSH. For Docker management with a web UI, use [Portainer](/apps/portainer/) or [Dockge](/apps/dockge/) — they run as containers, not as a desktop environment.
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Linux Permissions](/foundations/linux-permissions)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Docker Volumes](/foundations/docker-volumes)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Linux Permissions](/foundations/linux-permissions/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Docker Volumes](/foundations/docker-volumes/)

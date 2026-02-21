@@ -54,9 +54,9 @@ FileBrowser is a lightweight web-based file manager. It gives you a clean UI to 
 
 ## Installation Complexity
 
-**Nextcloud** requires a database (PostgreSQL recommended), a web server (Apache bundled in the Docker image), and careful configuration of upload limits, cron jobs, and reverse proxy settings. Plan for 30-60 minutes for a proper setup. See our [Nextcloud setup guide](/apps/nextcloud).
+**Nextcloud** requires a database (PostgreSQL recommended), a web server (Apache bundled in the Docker image), and careful configuration of upload limits, cron jobs, and reverse proxy settings. Plan for 30-60 minutes for a proper setup. See our [Nextcloud setup guide](/apps/nextcloud/).
 
-**FileBrowser** is a single binary or container with zero dependencies. Default config works out of the box. You can be up and running in under 5 minutes. See our [FileBrowser setup guide](/apps/filebrowser).
+**FileBrowser** is a single binary or container with zero dependencies. Default config works out of the box. You can be up and running in under 5 minutes. See our [FileBrowser setup guide](/apps/filebrowser/).
 
 ## Performance and Resource Usage
 
@@ -94,7 +94,7 @@ FileBrowser is 10-20x lighter than Nextcloud. On a Raspberry Pi or small VPS, th
 - You just need to browse and manage files on your server via a web UI
 - You're running on limited hardware (Raspberry Pi, small VPS)
 - You want something simple with minimal maintenance
-- You already have other tools for sync (like [Syncthing](/apps/syncthing))
+- You already have other tools for sync (like [Syncthing](/apps/syncthing/))
 - You need a quick file sharing solution without the bloat
 - You want a web UI for a specific directory (media, backups, downloads)
 
@@ -112,7 +112,7 @@ For most self-hosters, **start with FileBrowser** if you're unsure. You can alwa
 
 ### Can FileBrowser sync files to my desktop?
 
-Not natively. FileBrowser is a web interface, not a sync platform. For sync, pair FileBrowser with [Syncthing](/apps/syncthing), or use Nextcloud which has built-in sync clients.
+Not natively. FileBrowser is a web interface, not a sync platform. For sync, pair FileBrowser with [Syncthing](/apps/syncthing/), or use Nextcloud which has built-in sync clients.
 
 ### Does Nextcloud have a file manager view?
 
@@ -128,10 +128,10 @@ Yes, FileBrowser includes a WebDAV server. You can mount it as a network drive o
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host FileBrowser](/apps/filebrowser)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host FileBrowser](/apps/filebrowser/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)

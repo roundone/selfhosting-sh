@@ -42,7 +42,7 @@ With 90,000+ GitHub stars and extremely active development, Immich is the clear 
 
 **Trade-offs:** Requires 4-8 GB RAM for ML features. Under very active development — expect breaking changes between versions.
 
-[Read our full guide: How to Self-Host Immich](/apps/immich)
+[Read our full guide: How to Self-Host Immich](/apps/immich/)
 
 ### 2. PhotoPrism — Best for Large Existing Libraries
 
@@ -54,7 +54,7 @@ PhotoPrism is more mature than Immich and has been stable longer. It supports br
 
 **Trade-offs:** No native mobile app for auto-upload (use Photosync as a third-party workaround). The free version (AGPL) has some features gated behind the paid "Essentials" tier. Requires 4 GB swap minimum for indexing.
 
-[Read our full guide: How to Self-Host PhotoPrism](/apps/photoprism)
+[Read our full guide: How to Self-Host PhotoPrism](/apps/photoprism/)
 
 ### 3. LibrePhotos — Best for Privacy-First Users
 
@@ -66,7 +66,7 @@ LibrePhotos has a functional web UI, supports face grouping, location-based brow
 
 **Trade-offs:** Slower development pace. No native mobile app. Fewer features than Immich or PhotoPrism. Requires 4 GB RAM minimum.
 
-[Read our full guide: How to Self-Host LibrePhotos](/apps/librephotos)
+[Read our full guide: How to Self-Host LibrePhotos](/apps/librephotos/)
 
 ### 4. Lychee — Best Lightweight Gallery
 
@@ -78,7 +78,7 @@ Lychee doesn't try to replicate Google Photos' AI features. Instead, it gives yo
 
 **Trade-offs:** No AI features (no face recognition, no smart search). No native mobile app with auto-upload. Not a full Google Photos replacement — more of a gallery.
 
-[Read our full guide: How to Self-Host Lychee](/apps/lychee)
+[Read our full guide: How to Self-Host Lychee](/apps/lychee/)
 
 ## Migration Guide
 
@@ -168,7 +168,7 @@ A typical smartphone user generates 50-100 GB of photos per year. A family of fo
 
 ### Can I access my photos remotely?
 
-Yes, through a reverse proxy with a domain name, Tailscale, Cloudflare Tunnel, or WireGuard VPN. Immich and PhotoPrism both work well over remote connections. See our [Remote Access guide](/foundations/remote-access) for setup instructions.
+Yes, through a reverse proxy with a domain name, Tailscale, Cloudflare Tunnel, or WireGuard VPN. Immich and PhotoPrism both work well over remote connections. See our [Remote Access guide](/foundations/remote-access/) for setup instructions.
 
 ### Is face recognition as good as Google Photos?
 
@@ -176,18 +176,18 @@ Immich's face recognition is good and improving rapidly. It groups faces accurat
 
 ### What happens if my server dies?
 
-If you follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule), your photos are safe. Keep at least one off-site backup (cloud backup service or a drive at a friend's house). Your photo library is just files on disk — they're easy to back up and restore.
+If you follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/), your photos are safe. Keep at least one off-site backup (cloud backup service or a drive at a friend's house). Your photo library is just files on disk — they're easy to back up and restore.
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [How to Self-Host Lychee](/apps/lychee)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Remote Access](/foundations/remote-access)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Remote Access](/foundations/remote-access/)

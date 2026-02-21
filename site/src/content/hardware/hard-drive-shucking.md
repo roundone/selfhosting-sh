@@ -223,9 +223,9 @@ You can, but the savings are minimal. SSD externals don't have the same pricing 
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [SSD Endurance and TBW Explained](/hardware/ssd-endurance-tbw)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [SSD Endurance and TBW Explained](/hardware/ssd-endurance-tbw/)

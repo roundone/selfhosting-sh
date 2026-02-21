@@ -340,10 +340,10 @@ Yes. Each adapter gets its own interface name and MAC address. You can run two, 
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [PoE Explained](/hardware/poe-explained)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)

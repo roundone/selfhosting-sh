@@ -26,7 +26,7 @@ Wiki.js is a modern, open-source wiki platform built on Node.js. It has a polish
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 512 MB of RAM (minimum), 1 GB recommended
 - A domain name (optional, for remote access)
@@ -125,7 +125,7 @@ This means your wiki content lives in Git and can be edited externally via pull 
 
 ### Search
 
-Wiki.js includes a built-in database search engine that works without additional setup. For larger wikis, you can switch to [Elasticsearch](/apps/elasticsearch) or Algolia under **Administration > Search**.
+Wiki.js includes a built-in database search engine that works without additional setup. For larger wikis, you can switch to [Elasticsearch](/apps/elasticsearch/) or Algolia under **Administration > Search**.
 
 ### Rendering
 
@@ -171,7 +171,7 @@ The default `Administrators` and `Guests` groups are pre-configured.
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 3000. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full details.
+Configure your reverse proxy to forward to port 3000. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full details.
 
 **Caddy** example:
 
@@ -212,7 +212,7 @@ To restore:
 docker exec -i wikijs-db psql -U wikijs wikijs < wikijs-backup-20260220.sql
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ## Troubleshooting
 
@@ -256,23 +256,23 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
 
 Wiki.js is the best self-hosted wiki for most teams. The editor experience is excellent — the Markdown editor with live preview rivals dedicated tools, and the WYSIWYG editor works well for non-technical contributors. Git sync is a standout feature that no other wiki offers as cleanly. The permission system is granular enough for multi-team use without being overcomplicated.
 
-The main drawback is that Wiki.js v3 has been in development for years with no stable release. v2 is stable and maintained but isn't getting major new features. If you need a wiki today, v2 is solid. If you want the most actively developed option, [BookStack](/apps/bookstack) is updated more frequently.
+The main drawback is that Wiki.js v3 has been in development for years with no stable release. v2 is stable and maintained but isn't getting major new features. If you need a wiki today, v2 is solid. If you want the most actively developed option, [BookStack](/apps/bookstack/) is updated more frequently.
 
 **Choose Wiki.js if:** you want a polished, modern wiki with Git sync and strong authentication options.
 
-**Choose [BookStack](/apps/bookstack) if:** you prefer a book-chapter-page organizational model with more active development.
+**Choose [BookStack](/apps/bookstack/) if:** you prefer a book-chapter-page organizational model with more active development.
 
-**Choose [DokuWiki](/apps/dokuwiki) if:** you want a flat-file wiki with zero database dependencies.
+**Choose [DokuWiki](/apps/dokuwiki/) if:** you want a flat-file wiki with zero database dependencies.
 
 ## Related
 
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host DokuWiki](/apps/dokuwiki)
-- [How to Self-Host Outline](/apps/outline)
-- [Best Self-Hosted Wiki](/best/wiki)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host DokuWiki](/apps/dokuwiki/)
+- [How to Self-Host Outline](/apps/outline/)
+- [Best Self-Hosted Wiki](/best/wiki/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

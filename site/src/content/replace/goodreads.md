@@ -34,7 +34,7 @@ Goodreads is Amazon-owned and has barely been updated in years. The UI is stuck 
 
 ### Kavita — Best All-in-One Solution
 
-[Kavita](/apps/kavita) is primarily an ebook/manga server, but it doubles as a reading tracker. It tracks reading progress per book, maintains "want to read" and "currently reading" lists, and displays your reading history. If you self-host your ebook library with Kavita, you get reading tracking built in.
+[Kavita](/apps/kavita/) is primarily an ebook/manga server, but it doubles as a reading tracker. It tracks reading progress per book, maintains "want to read" and "currently reading" lists, and displays your reading history. If you self-host your ebook library with Kavita, you get reading tracking built in.
 
 **How it compares to Goodreads:**
 - Tracks reading progress automatically (you're reading the books in Kavita)
@@ -45,11 +45,11 @@ Goodreads is Amazon-owned and has barely been updated in years. The UI is stuck 
 
 **Setup complexity:** Low. Docker Compose, no database required (uses SQLite internally).
 
-[Read our full guide: [How to Self-Host Kavita](/apps/kavita)]
+[Read our full guide: [How to Self-Host Kavita](/apps/kavita/)]
 
 ### Calibre-Web — Best for Library Management
 
-[Calibre-Web](/apps/calibre-web) provides a web interface for your Calibre library. While not a social reading tracker like Goodreads, it handles reading lists, user shelves, and OPDS sync to e-readers. Combined with the Calibre desktop app for metadata management, it's a solid book management solution.
+[Calibre-Web](/apps/calibre-web/) provides a web interface for your Calibre library. While not a social reading tracker like Goodreads, it handles reading lists, user shelves, and OPDS sync to e-readers. Combined with the Calibre desktop app for metadata management, it's a solid book management solution.
 
 **How it compares to Goodreads:**
 - Full ebook library management with metadata, covers, and descriptions
@@ -60,7 +60,7 @@ Goodreads is Amazon-owned and has barely been updated in years. The UI is stuck 
 
 **Setup complexity:** Low-medium. Requires a Calibre `metadata.db` file (create with Calibre desktop).
 
-[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web)]
+[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web/)]
 
 ### BookWyrm — Best Social Reading Tracker
 
@@ -78,9 +78,9 @@ BookWyrm is a federated social reading platform — the closest self-hosted equi
 
 ### Komga + Tachiyomi — Best for Manga Tracking
 
-If your reading is primarily manga and comics, [Komga](/apps/komga) with the Tachiyomi mobile reader provides reading progress tracking, library management, and a clean reading experience. Tachiyomi tracks chapters read and syncs with your Komga server.
+If your reading is primarily manga and comics, [Komga](/apps/komga/) with the Tachiyomi mobile reader provides reading progress tracking, library management, and a clean reading experience. Tachiyomi tracks chapters read and syncs with your Komga server.
 
-[Read our full guide: [How to Self-Host Komga](/apps/komga)]
+[Read our full guide: [How to Self-Host Komga](/apps/komga/)]
 
 ## Migration Guide
 
@@ -131,11 +131,11 @@ For readers who primarily want to track what they've read and manage their libra
 
 ## Related
 
-- [Best Self-Hosted Ebook Servers](/best/ebooks-reading)
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Komga](/apps/komga)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Komga vs Kavita](/compare/komga-vs-kavita)
-- [Self-Hosted Alternatives to Kindle Unlimited](/replace/kindle-unlimited)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Ebook Servers](/best/ebooks-reading/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Komga](/apps/komga/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Komga vs Kavita](/compare/komga-vs-kavita/)
+- [Self-Hosted Alternatives to Kindle Unlimited](/replace/kindle-unlimited/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

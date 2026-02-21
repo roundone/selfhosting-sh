@@ -40,7 +40,7 @@ More RAM = faster reads because more data lives in cache. ZFS without adequate R
 
 **ECC RAM is strongly recommended.** Not technically required, but ZFS's data integrity guarantees assume reliable RAM. A single bit flip during a scrub or resilver can cause silent data corruption that ZFS can't detect. ECC prevents this.
 
-For the ECC debate, see [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram).
+For the ECC debate, see [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/).
 
 ### CPU: Moderate Power, AES-NI Required
 
@@ -161,7 +161,7 @@ Full NAS + VMs + heavy Docker. 48+ TB usable.
 
 **Never use RAIDZ1 with large drives (8+ TB).** Resilver times with large drives can exceed 24 hours, during which a second failure destroys the pool. Use RAIDZ2 or mirrors for drives 8 TB and larger.
 
-For ZFS hardware requirements, see [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements).
+For ZFS hardware requirements, see [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements/).
 
 ## TrueNAS SCALE vs CORE
 
@@ -204,13 +204,13 @@ You can add new vdevs (groups of drives) to a pool at any time. You **cannot** a
 
 ## Related
 
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best CPUs for Home Server](/hardware/best-cpu-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best CPUs for Home Server](/hardware/best-cpu-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)

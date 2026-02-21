@@ -165,10 +165,10 @@ Yes. Development continues on GitLab with frequent commits. The LinuxServer.io i
 
 ## Related
 
-- [How to Self-Host Readarr](/apps/readarr)
-- [How to Self-Host LazyLibrarian](/apps/lazylibrarian)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Komga vs Kavita](/compare/komga-vs-kavita)
-- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading)
-- [*arr Stack Setup Guide](/foundations/arr-stack-setup)
-- [Best Self-Hosted Media Organization](/best/media-organization)
+- [How to Self-Host Readarr](/apps/readarr/)
+- [How to Self-Host LazyLibrarian](/apps/lazylibrarian/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Komga vs Kavita](/compare/komga-vs-kavita/)
+- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading/)
+- [*arr Stack Setup Guide](/foundations/arr-stack-setup/)
+- [Best Self-Hosted Media Organization](/best/media-organization/)

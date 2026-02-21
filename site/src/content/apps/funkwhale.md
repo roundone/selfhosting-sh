@@ -20,7 +20,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB recommended)
 - A dedicated domain or subdomain (e.g., `music.example.com`) — Funkwhale cannot run in a subdirectory
 - Ports 80 and 443 accessible (required for federation)
@@ -214,7 +214,7 @@ Funkwhale requires HTTPS for federation. Example Nginx Proxy Manager setup:
 
 **Important:** Funkwhale must run on a dedicated domain or subdomain. It does not support subdirectory installations (e.g., `example.com/funkwhale` will not work).
 
-For other reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For other reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -232,7 +232,7 @@ docker run --rm -v funkwhale-media:/data -v $(pwd):/backup alpine tar czf /backu
 
 3. **Your music library** — back up as part of your general storage strategy
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -284,7 +284,7 @@ api:
 
 Funkwhale is the most feature-rich self-hosted music server if you want social/federation features. The ActivityPub integration, podcast support, and Subsonic API compatibility make it uniquely versatile.
 
-The trade-off is complexity. Four containers, a required dedicated domain, and federation configuration make Funkwhale heavier to set up and run than [Navidrome](/apps/navidrome), which is a simpler, lighter alternative for pure music streaming. If you just want to play your music collection with a clean UI, Navidrome is the better fit. If you want a social music platform with federation, Funkwhale is the only self-hosted option.
+The trade-off is complexity. Four containers, a required dedicated domain, and federation configuration make Funkwhale heavier to set up and run than [Navidrome](/apps/navidrome/), which is a simpler, lighter alternative for pure music streaming. If you just want to play your music collection with a clean UI, Navidrome is the better fit. If you want a social music platform with federation, Funkwhale is the only self-hosted option.
 
 ## FAQ
 
@@ -302,11 +302,11 @@ Yes. Funkwhale can transcode on-the-fly for streaming at lower bitrates. This us
 
 ## Related
 
-- [Funkwhale vs Navidrome](/compare/funkwhale-vs-navidrome)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Funkwhale vs Navidrome](/compare/funkwhale-vs-navidrome/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -218,7 +218,7 @@ curl -fsSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
 ```
 
-From here, follow our [Docker Compose Basics](/foundations/docker-compose-basics) guide and start deploying services.
+From here, follow our [Docker Compose Basics](/foundations/docker-compose-basics/) guide and start deploying services.
 
 ### 4. Power and Placement
 
@@ -262,11 +262,11 @@ Yes, the HP t640 and Dell Wyse 5070 both run Proxmox VE. The t640 with 32 GB RAM
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Used Dell OptiPlex for Self-Hosting](/hardware/used-dell-optiplex)
-- [Used Lenovo ThinkCentre Guide](/hardware/used-lenovo-thinkcentre)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Used Dell OptiPlex for Self-Hosting](/hardware/used-dell-optiplex/)
+- [Used Lenovo ThinkCentre Guide](/hardware/used-lenovo-thinkcentre/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)

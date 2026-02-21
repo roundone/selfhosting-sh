@@ -152,13 +152,13 @@ When you self-host SearXNG, your search queries go from your browser to your ser
 
 For self-hosters who value privacy, SearXNG is one of the easiest and most impactful services you can run. Set it as your default search engine in your browser and you'll rarely notice a quality difference while gaining complete search privacy.
 
-**Pair SearXNG with [Whoogle](/apps/whoogle) if you want a Google-only interface** — Whoogle proxies Google results specifically, while SearXNG aggregates from many engines.
+**Pair SearXNG with [Whoogle](/apps/whoogle/) if you want a Google-only interface** — Whoogle proxies Google results specifically, while SearXNG aggregates from many engines.
 
 ## Related
 
-- [How to Self-Host SearXNG](/apps/searxng)
-- [How to Self-Host Whoogle](/apps/whoogle)
-- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
-- [Self-Hosted Google Alternatives](/replace/google-search)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host SearXNG](/apps/searxng/)
+- [How to Self-Host Whoogle](/apps/whoogle/)
+- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
+- [Self-Hosted Google Alternatives](/replace/google-search/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

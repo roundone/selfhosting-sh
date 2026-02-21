@@ -244,7 +244,7 @@ Frigate is the gold standard for self-hosted NVR:
 - Zones, masks, and object filters
 - Free and open source
 
-[How to Self-Host Frigate](/apps/frigate) (if available)
+[How to Self-Host Frigate](/apps/frigate/) (if available)
 
 ### Other Options
 
@@ -330,10 +330,10 @@ Some cameras can record to microSD as a backup. It's fine as a fallback, but don
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [PoE Explained for Home Servers](/hardware/poe-explained)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Homelab Network Topology Guide](/hardware/homelab-network-topology)
-- [Best Self-Hosted Home Automation](/best/home-automation)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [PoE Explained for Home Servers](/hardware/poe-explained/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Homelab Network Topology Guide](/hardware/homelab-network-topology/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)

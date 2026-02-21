@@ -128,10 +128,10 @@ HAProxy wins in a different arena: production infrastructure, high-traffic load 
 
 ## Related
 
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

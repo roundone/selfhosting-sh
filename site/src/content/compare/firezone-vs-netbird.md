@@ -114,9 +114,9 @@ If yes, **NetBird is your only option** among modern zero-trust VPN platforms. I
 
 If no, **Firezone is a compelling choice** — simpler setup, less infrastructure to maintain, and the same zero-trust policy model. You trust Firezone with your configuration metadata, but the actual traffic flows peer-to-peer and never touches their servers (except relay fallback).
 
-For home lab users: if you already have [Authentik](/apps/authentik) or Keycloak running, NetBird integrates naturally and gives you a fully private VPN. If you don't want to run an identity provider, Firezone gets you to zero-trust access faster.
+For home lab users: if you already have [Authentik](/apps/authentik/) or Keycloak running, NetBird integrates naturally and gives you a fully private VPN. If you don't want to run an identity provider, Firezone gets you to zero-trust access faster.
 
-For a simpler alternative to both: [Headscale](/apps/headscale) + [Tailscale clients](/apps/tailscale) gives you a self-hosted mesh VPN without the zero-trust policy complexity.
+For a simpler alternative to both: [Headscale](/apps/headscale/) + [Tailscale clients](/apps/tailscale/) gives you a self-hosted mesh VPN without the zero-trust policy complexity.
 
 ## Frequently Asked Questions
 
@@ -138,9 +138,9 @@ Existing tunnels keep working — the data plane is peer-to-peer. New connection
 
 ## Related
 
-- [How to Self-Host Firezone](/apps/firezone)
-- [How to Self-Host NetBird](/apps/netbird)
-- [NetBird vs Tailscale](/compare/netbird-vs-tailscale)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted NordVPN Alternatives](/replace/nordvpn)
+- [How to Self-Host Firezone](/apps/firezone/)
+- [How to Self-Host NetBird](/apps/netbird/)
+- [NetBird vs Tailscale](/compare/netbird-vs-tailscale/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted NordVPN Alternatives](/replace/nordvpn/)

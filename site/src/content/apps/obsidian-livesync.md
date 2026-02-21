@@ -29,7 +29,7 @@ LiveSync supports real-time synchronization across desktop and mobile Obsidian c
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum
 - 5 GB of free disk space
 - A domain name (required — LiveSync needs HTTPS for mobile clients)
@@ -180,7 +180,7 @@ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Forwarded-Proto $scheme;
 ```
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -190,7 +190,7 @@ For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
 
 Your Obsidian vault on each device is also a complete backup — every device has a full copy of all notes.
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -224,16 +224,16 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 Self-hosted Obsidian LiveSync is the best way to sync Obsidian vaults across devices without paying for Obsidian Sync. The setup is more involved than Obsidian's paid service, but once configured, it works reliably across desktop and mobile. E2EE support means your notes stay private.
 
-The main caveat: this only works if you use Obsidian. If you're choosing a note-taking app from scratch and want built-in sync, [Joplin](/apps/joplin-server) or [Trilium](/apps/trilium) have server-based sync built into their architecture. But if you're already invested in Obsidian and want to self-host your sync, LiveSync + CouchDB is the way to go.
+The main caveat: this only works if you use Obsidian. If you're choosing a note-taking app from scratch and want built-in sync, [Joplin](/apps/joplin-server/) or [Trilium](/apps/trilium/) have server-based sync built into their architecture. But if you're already invested in Obsidian and want to self-host your sync, LiveSync + CouchDB is the way to go.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [Replace Notion](/replace/notion)
-- [Replace Evernote](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [Replace Notion](/replace/notion/)
+- [Replace Evernote](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

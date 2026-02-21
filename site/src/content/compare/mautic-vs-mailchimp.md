@@ -137,9 +137,9 @@ Yes. You manage updates, backups, server security, and SMTP configuration. With 
 
 ## Related
 
-- [How to Self-Host Mautic](/apps/mautic)
-- [Listmonk vs Mautic](/compare/listmonk-vs-mautic)
-- [Listmonk vs Keila](/compare/listmonk-vs-keila)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Mautic](/apps/mautic/)
+- [Listmonk vs Mautic](/compare/listmonk-vs-mautic/)
+- [Listmonk vs Keila](/compare/listmonk-vs-keila/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

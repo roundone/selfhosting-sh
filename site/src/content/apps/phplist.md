@@ -28,7 +28,7 @@ phpList is GPL-licensed and designed for high-volume email sending. It supports 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum)
 - 2 GB of free disk space
 - A domain name (recommended)
@@ -160,7 +160,7 @@ phpList supports custom subscriber attributes beyond email:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 newsletter.example.com {
@@ -181,7 +181,7 @@ Back up these volumes:
 docker exec phplist-db mysqldump -u root -p"${DB_ROOT_PASSWORD}" phplist > phplist_backup_$(date +%Y%m%d).sql
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -210,7 +210,7 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 phpList is the proven workhorse of self-hosted email. If you need reliable, high-volume newsletter sending with battle-tested bounce processing and throttling, phpList has 20+ years of production use behind it. The UI is dated, but the email sending infrastructure is solid.
 
-For a modern UI and simpler setup, use [Listmonk](/apps/listmonk) or [Keila](/apps/keila). For marketing automation beyond newsletters, use [Mautic](/apps/mautic). phpList is the choice when reliability and volume matter more than UI polish.
+For a modern UI and simpler setup, use [Listmonk](/apps/listmonk/) or [Keila](/apps/keila/). For marketing automation beyond newsletters, use [Mautic](/apps/mautic/). phpList is the choice when reliability and volume matter more than UI polish.
 
 ## Frequently Asked Questions
 
@@ -225,10 +225,10 @@ Yes. Export your Mailchimp list as CSV and import via phpList's admin interface 
 
 ## Related
 
-- [How to Self-Host Listmonk](/apps/listmonk)
-- [How to Self-Host Keila](/apps/keila)
-- [How to Self-Host Mautic](/apps/mautic)
-- [Listmonk vs Keila](/compare/listmonk-vs-keila)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Listmonk](/apps/listmonk/)
+- [How to Self-Host Keila](/apps/keila/)
+- [How to Self-Host Mautic](/apps/mautic/)
+- [Listmonk vs Keila](/compare/listmonk-vs-keila/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

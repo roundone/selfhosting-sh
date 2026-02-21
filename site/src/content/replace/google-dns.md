@@ -53,7 +53,7 @@ Out of the box, AdGuard Home does everything Google DNS does (resolve queries) p
 - Rewrites and custom DNS rules
 - Safe Search enforcement for Google/YouTube/Bing
 
-[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home)
+[Read our full guide: How to Self-Host AdGuard Home](/apps/adguard-home/)
 
 ### Pi-hole — Best Community Support
 
@@ -63,7 +63,7 @@ Pi-hole is excellent at ad blocking but requires add-ons for encrypted DNS (pair
 
 **Best for:** Users who want the largest community, most blocklist options, and don't mind adding Unbound for encrypted DNS.
 
-[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole)
+[Read our full guide: How to Self-Host Pi-hole](/apps/pi-hole/)
 
 ### Blocky — Best Lightweight Option
 
@@ -73,7 +73,7 @@ Blocky is ideal if you want a DNS-level ad blocker that's configured declarative
 
 **Best for:** Users comfortable with YAML configuration who want minimal resource usage and no web UI overhead.
 
-[Read our full guide: How to Self-Host Blocky](/apps/blocky)
+[Read our full guide: How to Self-Host Blocky](/apps/blocky/)
 
 ### Technitium DNS — Best Full DNS Server
 
@@ -81,7 +81,7 @@ Blocky is ideal if you want a DNS-level ad blocker that's configured declarative
 
 **Best for:** Users who want a complete DNS infrastructure tool, not just an ad blocker. Network admins, homelabbers running complex setups.
 
-[Read our full guide: How to Self-Host Technitium DNS](/apps/technitium)
+[Read our full guide: How to Self-Host Technitium DNS](/apps/technitium/)
 
 ## Migration Guide
 
@@ -169,14 +169,14 @@ Absolutely. Pi-hole was originally designed for Raspberry Pi. AdGuard Home, Bloc
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Technitium DNS](/apps/technitium)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to NextDNS](/replace/nextdns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [DNS Explained](/foundations/dns-explained)
-- [Networking Concepts](/foundations/docker-networking)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Technitium DNS](/apps/technitium/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to NextDNS](/replace/nextdns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Networking Concepts](/foundations/docker-networking/)

@@ -116,7 +116,7 @@ There's no direct migration tool. Both support Markdown export, so you can expor
 
 ### Which is better for replacing Confluence?
 
-BookStack. Its book/chapter/page hierarchy is the closest equivalent to Confluence's spaces/pages model. Non-technical users will adapt faster. See [Self-Hosted Alternatives to Confluence](/replace/confluence).
+BookStack. Its book/chapter/page hierarchy is the closest equivalent to Confluence's spaces/pages model. Non-technical users will adapt faster. See [Self-Hosted Alternatives to Confluence](/replace/confluence/).
 
 ### Does Wiki.js v3 change the comparison?
 
@@ -128,10 +128,10 @@ Both have good full-text search powered by their respective databases. Wiki.js s
 
 ## Related
 
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Best Self-Hosted Wiki](/best/wiki)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Best Self-Hosted Wiki](/best/wiki/)

@@ -112,7 +112,7 @@ Community tools exist for both directions, but the markup syntaxes differ signif
 
 ### Is MediaWiki overkill for a small team?
 
-For a team of 5-20 people writing internal docs, yes. MediaWiki is designed for the scale of Wikipedia. DokuWiki or [BookStack](/apps/bookstack) would be more appropriate for small teams.
+For a team of 5-20 people writing internal docs, yes. MediaWiki is designed for the scale of Wikipedia. DokuWiki or [BookStack](/apps/bookstack/) would be more appropriate for small teams.
 
 ### Which is more secure?
 
@@ -124,8 +124,8 @@ DokuWiki handles thousands of pages fine. Performance degrades with very large l
 
 ## Related
 
-- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki)
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Best Self-Hosted Wiki](/best/wiki)
+- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki/)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Best Self-Hosted Wiki](/best/wiki/)

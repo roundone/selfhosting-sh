@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - A public IP address or dynamic DNS domain pointing to your server
 - Port 51820/UDP forwarded on your router to the server's LAN IP
 - 128 MB of free RAM
@@ -119,7 +119,7 @@ Number of peer configs to generate. Set to an integer (`"3"`) to create numbered
 
 ### PEERDNS
 
-The DNS server peers will use when connected to the VPN. `auto` uses the host's DNS servers. Set to a specific IP to use a custom DNS — for example, your [Pi-hole](/apps/pi-hole) instance at `10.13.13.1` or `192.168.1.100`.
+The DNS server peers will use when connected to the VPN. `auto` uses the host's DNS servers. Set to a specific IP to use a custom DNS — for example, your [Pi-hole](/apps/pi-hole/) instance at `10.13.13.1` or `192.168.1.100`.
 
 ### ALLOWEDIPS
 
@@ -192,7 +192,7 @@ Or if your DNS server is on a different machine on your LAN:
 PEERDNS: "192.168.1.100"  # Your Pi-hole/AdGuard Home LAN IP
 ```
 
-Make sure the DNS server is accessible from the WireGuard subnet. If [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) runs on the same host, use the WireGuard gateway IP (`10.13.13.1`) so traffic stays inside the VPN tunnel.
+Make sure the DNS server is accessible from the WireGuard subnet. If [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) runs on the same host, use the WireGuard gateway IP (`10.13.13.1`) so traffic stays inside the VPN tunnel.
 
 ### Named Peers
 
@@ -226,11 +226,11 @@ Ensure the WireGuard server host has routes to all these subnets and IP forwardi
 
 ## Reverse Proxy
 
-WireGuard uses UDP on port 51820. Reverse proxies like [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), and [Caddy](/apps/caddy) operate on HTTP/HTTPS (TCP). You cannot put WireGuard behind a standard reverse proxy.
+WireGuard uses UDP on port 51820. Reverse proxies like [Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), and [Caddy](/apps/caddy/) operate on HTTP/HTTPS (TCP). You cannot put WireGuard behind a standard reverse proxy.
 
 Port 51820/UDP must be forwarded directly from your router to the WireGuard container. There is no SSL certificate to manage — WireGuard handles its own encryption using Curve25519 key pairs.
 
-For general reverse proxy setup for your other self-hosted services, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For general reverse proxy setup for your other self-hosted services, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -250,7 +250,7 @@ docker run --rm -v wireguard-config:/config -v $(pwd):/backup alpine sh -c "cd /
 docker compose start wireguard
 ```
 
-Store backups securely — the `/config` directory contains private keys. Anyone with these keys can connect to your VPN. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Store backups securely — the `/config` directory contains private keys. Anyone with these keys can connect to your VPN. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -352,7 +352,7 @@ You should see a `MASQUERADE` rule. If not, restart the container — the rules 
 
 WireGuard is the VPN protocol you should use. It is faster than OpenVPN, simpler than IPSec, and has a smaller attack surface than both. The LinuxServer.io Docker image makes deployment trivial — define your peers, start the container, scan a QR code, and you are connected.
 
-The one limitation: WireGuard has no built-in web UI. If you want a browser-based admin panel to manage peers, look at [wg-easy](/apps/wg-easy) — it wraps WireGuard with a clean web interface. If you want automatic mesh networking without port forwarding, [Tailscale](/apps/tailscale) or [Headscale](/apps/headscale) build on WireGuard with NAT traversal and device management built in.
+The one limitation: WireGuard has no built-in web UI. If you want a browser-based admin panel to manage peers, look at [wg-easy](/apps/wg-easy/) — it wraps WireGuard with a clean web interface. If you want automatic mesh networking without port forwarding, [Tailscale](/apps/tailscale/) or [Headscale](/apps/headscale/) build on WireGuard with NAT traversal and device management built in.
 
 For a raw VPN server with maximum performance and minimum overhead, WireGuard is the clear winner.
 
@@ -360,7 +360,7 @@ For a raw VPN server with maximum performance and minimum overhead, WireGuard is
 
 ### WireGuard vs OpenVPN — which is better?
 
-WireGuard is better for nearly every use case. It is 3-4x faster in throughput benchmarks, connects in under 100ms (vs seconds for OpenVPN), uses less battery on mobile, and has a far smaller codebase. OpenVPN's only advantage is TCP support for restrictive networks that block UDP — WireGuard is UDP-only. If your network blocks UDP, use [Cloudflare Tunnel](/apps/cloudflare-tunnel) instead.
+WireGuard is better for nearly every use case. It is 3-4x faster in throughput benchmarks, connects in under 100ms (vs seconds for OpenVPN), uses less battery on mobile, and has a far smaller codebase. OpenVPN's only advantage is TCP support for restrictive networks that block UDP — WireGuard is UDP-only. If your network blocks UDP, use [Cloudflare Tunnel](/apps/cloudflare-tunnel/) instead.
 
 ### Is WireGuard safe to expose to the internet?
 
@@ -380,13 +380,13 @@ Yes. WireGuard runs well on a Raspberry Pi 4 or 5. The kernel module is availabl
 
 ## Related
 
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [How to Self-Host Tailscale](/apps/tailscale)
-- [How to Self-Host Headscale](/apps/headscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [WireGuard vs OpenVPN](/compare/wireguard-vs-openvpn)
-- [Replace NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [How to Self-Host Tailscale](/apps/tailscale/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [WireGuard vs OpenVPN](/compare/wireguard-vs-openvpn/)
+- [Replace NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

@@ -95,7 +95,7 @@ No self-hosted alternative offers anything comparable to Sonic Analysis. It's Pl
 
 **Jellyfin is the best free option.** It handles music competently, and with the OpenSubsonic plugin, you get access to the Subsonic app ecosystem. You miss out on PlexAmp's premium features, but the core experience is solid.
 
-**For dedicated music streaming without paying anything,** [Navidrome](/apps/navidrome) beats both — it's lighter than Jellyfin and purpose-built for music with native Subsonic API support.
+**For dedicated music streaming without paying anything,** [Navidrome](/apps/navidrome/) beats both — it's lighter than Jellyfin and purpose-built for music with native Subsonic API support.
 
 ## Frequently Asked Questions
 
@@ -110,10 +110,10 @@ Via community plugins. The experience isn't as seamless as PlexAmp's built-in ly
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Plex vs Navidrome](/compare/plex-vs-navidrome)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

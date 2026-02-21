@@ -109,7 +109,7 @@ Then install the Tabby IDE extension and point it at your server. Tabby download
 }
 ```
 
-Continue connects to whatever LLM backend you already have running. If you have [Ollama](/apps/ollama) set up, Continue works with it immediately. No separate deployment needed.
+Continue connects to whatever LLM backend you already have running. If you have [Ollama](/apps/ollama/) set up, Continue works with it immediately. No separate deployment needed.
 
 Continue has the simpler setup if you already have an LLM backend. Tabby is simpler if you want an all-in-one code AI server.
 
@@ -165,14 +165,14 @@ Both have strong communities. Continue has broader LLM ecosystem integration. Ta
 
 **Tabby is the better choice for teams.** A centralized Tabby server gives you admin controls, usage analytics, repository-level context, and consistent AI assistance across your development team. The all-in-one deployment is simpler than managing Ollama + Continue separately when you're setting up AI for a team.
 
-For a self-hoster who wants AI code assistance: install [Ollama](/apps/ollama), install Continue in your IDE, and you're done. For a team lead setting up AI for developers: deploy Tabby.
+For a self-hoster who wants AI code assistance: install [Ollama](/apps/ollama/), install Continue in your IDE, and you're done. For a team lead setting up AI for developers: deploy Tabby.
 
 ## Related
 
-- [How to Self-Host Tabby](/apps/tabby)
-- [How to Self-Host Ollama](/apps/ollama)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Ollama vs vLLM](/compare/ollama-vs-vllm)
-- [Self-Hosted GitHub Copilot Alternatives](/replace/github-copilot)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Tabby](/apps/tabby/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Ollama vs vLLM](/compare/ollama-vs-vllm/)
+- [Self-Hosted GitHub Copilot Alternatives](/replace/github-copilot/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

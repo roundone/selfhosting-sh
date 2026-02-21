@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB+ of free RAM (4 GB recommended for multiple stations)
 - Music files to upload or a live audio source
 - Ports 80, 443, and 8000-8999 available
@@ -226,7 +226,7 @@ AzuraCast includes its own Nginx and handles SSL via Let's Encrypt. Running it b
 
 For Nginx Proxy Manager, forward to the AzuraCast container's HTTP port and add the streaming ports as separate stream entries.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -252,7 +252,7 @@ docker exec azuracast mysqldump -u azuracast azuracast > azuracast-backup.sql
 docker cp azuracast:/var/azuracast/stations ./stations-backup/
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -299,7 +299,7 @@ If you want to run an internet radio station — whether for personal listening,
 
 ### Can I use AzuraCast for personal music streaming?
 
-Technically yes, but it's overkill. AzuraCast is designed for broadcasting to listeners, not personal library streaming. For personal music, use [Navidrome](/apps/navidrome) or [Koel](/apps/koel). Use AzuraCast when you want a radio station.
+Technically yes, but it's overkill. AzuraCast is designed for broadcasting to listeners, not personal library streaming. For personal music, use [Navidrome](/apps/navidrome/) or [Koel](/apps/koel/). Use AzuraCast when you want a radio station.
 
 ### How many listeners can AzuraCast handle?
 
@@ -311,10 +311,10 @@ No. AzuraCast streams your own uploaded audio files. You cannot stream content f
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale)
-- [How to Self-Host Funkwhale](/apps/funkwhale)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale/)
+- [How to Self-Host Funkwhale](/apps/funkwhale/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

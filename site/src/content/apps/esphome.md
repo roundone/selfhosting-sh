@@ -23,12 +23,12 @@ affiliateDisclosure: false
 
 ## What Is ESPHome?
 
-[ESPHome](https://esphome.io/) is a system for controlling ESP8266 and ESP32 microcontrollers through simple YAML configuration files. Write YAML describing your sensors and actuators, ESPHome compiles custom firmware, and you flash it to your device — over the air or via USB. It integrates natively with [Home Assistant](/apps/home-assistant) and communicates over WiFi. ESPHome turns cheap $5 microcontrollers into smart home devices without writing a single line of C++ code.
+[ESPHome](https://esphome.io/) is a system for controlling ESP8266 and ESP32 microcontrollers through simple YAML configuration files. Write YAML describing your sensors and actuators, ESPHome compiles custom firmware, and you flash it to your device — over the air or via USB. It integrates natively with [Home Assistant](/apps/home-assistant/) and communicates over WiFi. ESPHome turns cheap $5 microcontrollers into smart home devices without writing a single line of C++ code.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (for compilation caches)
 - 1 GB of RAM (minimum — firmware compilation is memory-intensive)
 - ESP8266 or ESP32 devices to flash
@@ -239,7 +239,7 @@ esphome:
 
 ESPHome's dashboard runs on port 6052. If using `network_mode: host`, the port is bound to the host directly — point your reverse proxy to `http://your-server-ip:6052`.
 
-**Security warning:** The ESPHome dashboard has no built-in authentication. If exposing beyond your LAN, protect it with reverse proxy authentication. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+**Security warning:** The ESPHome dashboard has no built-in authentication. If exposing beyond your LAN, protect it with reverse proxy authentication. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -254,7 +254,7 @@ Critical files:
 - `secrets.yaml` — WiFi passwords, API keys, OTA passwords
 - `.esphome/` — compilation cache (optional, can be rebuilt)
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -324,11 +324,11 @@ The main alternative is Tasmota, which uses a pre-built firmware with web-based 
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Zigbee2MQTT](/apps/zigbee2mqtt)
-- [How to Self-Host Mosquitto MQTT Broker](/apps/mosquitto)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Zigbee2MQTT](/apps/zigbee2mqtt/)
+- [How to Self-Host Mosquitto MQTT Broker](/apps/mosquitto/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

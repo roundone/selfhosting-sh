@@ -45,9 +45,9 @@ Measure or estimate the total power draw of everything on the UPS:
 
 | Device | Typical Draw |
 |--------|-------------|
-| Mini PC ([N100](/hardware/intel-n100-mini-pc)) | 8-25W |
+| Mini PC ([N100](/hardware/intel-n100-mini-pc/)) | 8-25W |
 | Desktop server (Ryzen/Intel) | 50-120W |
-| [Enterprise rack server](/hardware/used-enterprise-servers) | 150-350W |
+| [Enterprise rack server](/hardware/used-enterprise-servers/) | 150-350W |
 | 4-bay NAS (Synology/QNAP) | 30-50W |
 | Managed switch | 10-20W |
 | Router | 10-15W |
@@ -94,7 +94,7 @@ Runtime depends on load and battery capacity. Manufacturer specs are optimistic 
 | Runtime @ 100W | ~15 min |
 | Price | ~$75 |
 
-Perfect for an [Intel N100 mini PC](/hardware/intel-n100-mini-pc) + switch + router. The 50W load gives 30 minutes — more than enough.
+Perfect for an [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) + switch + router. The 50W load gives 30 minutes — more than enough.
 
 ### APC Back-UPS Pro 1500S (BR1500MS2) — Best Overall
 
@@ -123,7 +123,7 @@ The homelab standard. Handles a server + NAS + networking gear comfortably. The 
 | Runtime @ 200W | ~15 min |
 | Price | ~$280 |
 
-Fits in a [server rack](/hardware/home-server-rack) next to your enterprise hardware. 2U form factor, front LCD display.
+Fits in a [server rack](/hardware/home-server-rack/) next to your enterprise hardware. 2U form factor, front LCD display.
 
 ## Automatic Shutdown with NUT
 
@@ -246,13 +246,13 @@ The master waits for all slaves to shut down before shutting itself down.
 
 ### With Uptime Kuma
 
-[Uptime Kuma](/apps/uptime-kuma) can monitor NUT status:
+[Uptime Kuma](/apps/uptime-kuma/) can monitor NUT status:
 - Add a TCP monitor for `localhost:3493`
 - Or use the NUT monitor type if your version supports it
 
 ### With Grafana + Prometheus
 
-Use the `nut_exporter` to expose UPS metrics to [Prometheus](/apps/prometheus):
+Use the `nut_exporter` to expose UPS metrics to [Prometheus](/apps/prometheus/):
 
 ```yaml
 services:
@@ -265,7 +265,7 @@ services:
     restart: unless-stopped
 ```
 
-Track battery charge, load percentage, input voltage, and runtime remaining on your [Grafana](/apps/grafana) dashboard.
+Track battery charge, load percentage, input voltage, and runtime remaining on your [Grafana](/apps/grafana/) dashboard.
 
 ## Battery Maintenance
 
@@ -306,9 +306,9 @@ Yes. If the server stays up but your network goes down, remote management (SSH, 
 
 ## Related
 
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Rack Setup Guide](/hardware/home-server-rack)
-- [Monitoring Your Home Server](/foundations/monitoring-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Rack Setup Guide](/hardware/home-server-rack/)
+- [Monitoring Your Home Server](/foundations/monitoring-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

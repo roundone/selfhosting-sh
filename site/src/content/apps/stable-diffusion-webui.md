@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - NVIDIA GPU with 8+ GB VRAM (4 GB minimum, 12+ GB recommended)
 - 16 GB+ system RAM
 - 20 GB+ free disk space (models are 2-7 GB each)
@@ -159,7 +159,7 @@ SDXL models require 12+ GB VRAM. Use `--xformers` and consider `--medvram` if yo
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 7861. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 7861. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -168,7 +168,7 @@ Back up these volumes:
 - `sd_outputs/` — Generated images (irreplaceable)
 - `sd_extensions/` — Installed extensions (can be re-downloaded)
 
-Priority: `sd_outputs/` is irreplaceable. Models and extensions can be re-downloaded. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Priority: `sd_outputs/` is irreplaceable. Models and extensions can be re-downloaded. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -203,14 +203,14 @@ Priority: `sd_outputs/` is irreplaceable. Models and extensions can be re-downlo
 
 Stable Diffusion WebUI (AUTOMATIC1111) is the most feature-rich image generation interface. The extension ecosystem, model compatibility, and community are unmatched. The trade-off is a more complex setup compared to cloud alternatives, and it requires a decent NVIDIA GPU.
 
-**Choose Stable Diffusion WebUI** for a feature-rich, traditional image generation workflow. **Choose [ComfyUI](/apps/comfyui)** for node-based workflows with more control over the generation pipeline.
+**Choose Stable Diffusion WebUI** for a feature-rich, traditional image generation workflow. **Choose [ComfyUI](/apps/comfyui/)** for node-based workflows with more control over the generation pipeline.
 
 ## Related
 
-- [How to Self-Host ComfyUI](/apps/comfyui)
-- [Stable Diffusion vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
-- [Self-Hosted Midjourney Alternatives](/replace/midjourney)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host ComfyUI](/apps/comfyui/)
+- [Stable Diffusion vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
+- [Self-Hosted Midjourney Alternatives](/replace/midjourney/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

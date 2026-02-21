@@ -50,7 +50,7 @@ If every client supports your media formats natively (4K HEVC on Apple TV, NVIDI
 | CPU | Any quad-core | Any quad-core |
 | RAM | 2GB+ | 2GB+ |
 | GPU | Not needed | Not needed |
-| Example hardware | [Raspberry Pi 5](/hardware/raspberry-pi-home-server) | Raspberry Pi 5 |
+| Example hardware | [Raspberry Pi 5](/hardware/raspberry-pi-home-server/) | Raspberry Pi 5 |
 | Cost | ~$80 | ~$80 |
 
 No meaningful difference. Both stream direct-play content with near-zero CPU usage.
@@ -62,7 +62,7 @@ No meaningful difference. Both stream direct-play content with near-zero CPU usa
 | CPU | Intel i5/Ryzen 5 (12,000+ PassMark) | Intel N100+ (QuickSync) | Intel N100+ (QuickSync) |
 | RAM | 4-8GB | 4-8GB | 4-8GB |
 | GPU | CPU only (no HW transcode) | Intel iGPU | Intel iGPU |
-| Example hardware | [Used Dell OptiPlex i5](/hardware/used-dell-optiplex) | [N100 mini PC](/hardware/intel-n100-mini-pc) | N100 mini PC |
+| Example hardware | [Used Dell OptiPlex i5](/hardware/used-dell-optiplex/) | [N100 mini PC](/hardware/intel-n100-mini-pc/) | N100 mini PC |
 | Cost | $150-250 | $180 + $120 (Pass) | $180 |
 | **Total** | **$150-250** | **$300** | **$180** |
 
@@ -75,7 +75,7 @@ Jellyfin wins on total cost. The hardware transcoding that requires a $120 Plex 
 | CPU | Intel N305+ or dedicated GPU | Intel N305+ or dedicated GPU |
 | RAM | 8-16GB | 8-16GB |
 | GPU | Intel 32 EU+ or NVIDIA NVENC | Intel 32 EU+ or NVIDIA NVENC |
-| Example hardware | [N305 mini PC](/hardware/intel-n305-mini-pc) | N305 mini PC |
+| Example hardware | [N305 mini PC](/hardware/intel-n305-mini-pc/) | N305 mini PC |
 | Cost | $350 + $120 (Pass) | $350 |
 
 At this tier, both need similar hardware. Plex still costs $120 more for the Pass.
@@ -113,7 +113,7 @@ Both support NVIDIA hardware transcoding. Key differences:
 | Quadro/Tesla | Unlimited sessions | Unlimited sessions |
 
 Consumer GeForce cards are limited to 3 simultaneous NVENC sessions by NVIDIA's driver. Both Plex and Jellyfin hit this limit. Workarounds:
-- Use a [Quadro P2000](/hardware/plex-transcoding-hardware) (~$60-80 used) for unlimited sessions
+- Use a [Quadro P2000](/hardware/plex-transcoding-hardware/) (~$60-80 used) for unlimited sessions
 - Apply the [nvidia-patch](https://github.com/keylase/nvidia-patch) to unlock GeForce cards (Linux only)
 
 ### AMD
@@ -199,7 +199,7 @@ Same transcoding capability as Jellyfin on the same hardware, but $120 more for 
 
 | Component | Choice |
 |-----------|--------|
-| Hardware | [Intel N305 mini PC](/hardware/intel-n305-mini-pc) (16-32GB RAM) |
+| Hardware | [Intel N305 mini PC](/hardware/intel-n305-mini-pc/) (16-32GB RAM) |
 | Cost | ~$350 |
 | Software | Jellyfin (free) or Plex + Pass ($120) |
 | Transcoding | 3-5 concurrent via QuickSync |
@@ -242,11 +242,11 @@ AMD APUs have powerful iGPUs but transcoding support in both Plex and Jellyfin i
 
 ## Related
 
-- [Best Hardware for Jellyfin](/hardware/jellyfin-media-server-hardware)
-- [Plex Transcoding Hardware Guide](/hardware/plex-transcoding-hardware)
-- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc)
-- [Intel N305 Mini PC](/hardware/intel-n305-mini-pc)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide)
+- [Best Hardware for Jellyfin](/hardware/jellyfin-media-server-hardware/)
+- [Plex Transcoding Hardware Guide](/hardware/plex-transcoding-hardware/)
+- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc/)
+- [Intel N305 Mini PC](/hardware/intel-n305-mini-pc/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/)

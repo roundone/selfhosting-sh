@@ -25,7 +25,7 @@ MicroBin is a tiny, self-hosted pastebin that also handles file uploads, URL sho
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 100 MB of free disk space (plus storage for uploads)
 - 64 MB of RAM minimum
 
@@ -142,7 +142,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** microbin
 - **Forward Port:** 8080
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -150,7 +150,7 @@ Example Nginx Proxy Manager configuration:
 tar -czf microbin-backup-$(date +%Y%m%d).tar.gz ./data
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -177,7 +177,7 @@ tar -czf microbin-backup-$(date +%Y%m%d).tar.gz ./data
 
 ## Verdict
 
-MicroBin is the lightest self-hosted pastebin available. Under 10 MB of RAM, no database dependency, and a single container. For personal or small-team use where you need a quick place to share text, code, and files, MicroBin is hard to beat. For a more feature-rich alternative with zero-knowledge encryption as the primary focus, use [PrivateBin](/apps/privatebin).
+MicroBin is the lightest self-hosted pastebin available. Under 10 MB of RAM, no database dependency, and a single container. For personal or small-team use where you need a quick place to share text, code, and files, MicroBin is hard to beat. For a more feature-rich alternative with zero-knowledge encryption as the primary focus, use [PrivateBin](/apps/privatebin/).
 
 ## FAQ
 
@@ -195,10 +195,10 @@ MicroBin has a basic API for creating pastes programmatically. Use `curl` to POS
 
 ## Related
 
-- [How to Self-Host PrivateBin](/apps/privatebin)
-- [How to Self-Host YOURLS](/apps/yourls)
-- [How to Self-Host Shlink](/apps/shlink)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [How to Self-Host PrivateBin](/apps/privatebin/)
+- [How to Self-Host YOURLS](/apps/yourls/)
+- [How to Self-Host Shlink](/apps/shlink/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

@@ -175,11 +175,11 @@ If you are reading this article trying to decide which reverse proxy to set up o
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [HAProxy vs Nginx](/compare/haproxy-vs-nginx)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [HAProxy vs Nginx](/compare/haproxy-vs-nginx/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -74,7 +74,7 @@ Nginx is the right choice for self-hosting. It's a proven web server and reverse
 
 **Nginx for self-hosting, Envoy for cloud-native infrastructure.** Nginx is simpler, lighter, doubles as a web server, and has vastly more self-hosting community resources. Envoy's features target problems (service mesh routing, gRPC load balancing, distributed tracing) that don't exist in typical self-hosting setups.
 
-For self-hosters who want even less complexity than raw Nginx, use [Nginx Proxy Manager](/apps/nginx-proxy-manager) (GUI), [Caddy](/apps/caddy) (automatic HTTPS), or [Traefik](/apps/traefik) (Docker auto-discovery).
+For self-hosters who want even less complexity than raw Nginx, use [Nginx Proxy Manager](/apps/nginx-proxy-manager/) (GUI), [Caddy](/apps/caddy/) (automatic HTTPS), or [Traefik](/apps/traefik/) (Docker auto-discovery).
 
 ## Frequently Asked Questions
 
@@ -92,10 +92,10 @@ Nginx by a wide margin. Decades of community content, tutorials for every self-h
 
 ## Related
 
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Traefik vs Nginx](/compare/traefik-vs-nginx)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Traefik vs Nginx](/compare/traefik-vs-nginx/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

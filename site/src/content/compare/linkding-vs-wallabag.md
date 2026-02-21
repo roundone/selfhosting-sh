@@ -26,9 +26,9 @@ Linkding and Wallabag solve different problems. Linkding is a bookmark manager �
 
 ## Overview
 
-**[Linkding](/apps/linkding)** is a lightweight, self-hosted bookmark manager built with Python and Django. You save a URL, linkding fetches the title and description, and you tag it for later retrieval. It runs as a single Docker container with SQLite, uses about 50 MB of RAM, and gives you fast full-text search across all your bookmarks. The interface is intentionally minimal — a search bar, a tag sidebar, and a list of links.
+**[Linkding](/apps/linkding/)** is a lightweight, self-hosted bookmark manager built with Python and Django. You save a URL, linkding fetches the title and description, and you tag it for later retrieval. It runs as a single Docker container with SQLite, uses about 50 MB of RAM, and gives you fast full-text search across all your bookmarks. The interface is intentionally minimal — a search bar, a tag sidebar, and a list of links.
 
-**[Wallabag](/apps/wallabag)** is a self-hosted read-it-later application built with PHP and Symfony. When you save a URL, Wallabag downloads the entire article, strips out ads and navigation chrome, and stores the clean content locally. You can read saved articles offline, annotate them, send them to a Kindle, and export them in multiple formats. It requires PostgreSQL (or MySQL) plus Redis, and runs as a multi-container stack consuming around 150 MB of RAM.
+**[Wallabag](/apps/wallabag/)** is a self-hosted read-it-later application built with PHP and Symfony. When you save a URL, Wallabag downloads the entire article, strips out ads and navigation chrome, and stores the clean content locally. You can read saved articles offline, annotate them, send them to a Kindle, and export them in multiple formats. It requires PostgreSQL (or MySQL) plus Redis, and runs as a multi-container stack consuming around 150 MB of RAM.
 
 The core distinction: Linkding saves *links*. Wallabag saves *content*.
 
@@ -162,7 +162,7 @@ Both projects are actively maintained and MIT-licensed. Neither is at risk of ab
 - You send articles to a Kindle or Kobo for distraction-free reading
 - You want automatic tagging rules to organize incoming content
 - You are replacing Pocket or Instapaper specifically
-- You want RSS feeds of your saved articles to pipe into other tools like [FreshRSS](/apps/freshrss)
+- You want RSS feeds of your saved articles to pipe into other tools like [FreshRSS](/apps/freshrss/)
 
 ### Run Both If...
 
@@ -172,18 +172,18 @@ You want a lightweight bookmark index *and* full article archival for selected c
 
 These are complementary tools, not competitors. Linkding is a bookmark manager. Wallabag is a read-it-later app. Comparing them is like comparing a file cabinet to a reading nook — both store information, but the intent and workflow are different.
 
-**For most self-hosters who just want to save and organize links:** Use [Linkding](/apps/linkding). It is fast, lightweight, and does bookmark management better than anything else in the self-hosted space. Deploy it in under two minutes and forget about it.
+**For most self-hosters who just want to save and organize links:** Use [Linkding](/apps/linkding/). It is fast, lightweight, and does bookmark management better than anything else in the self-hosted space. Deploy it in under two minutes and forget about it.
 
-**For anyone who saves articles to actually read later:** Use [Wallabag](/apps/wallabag). The full content archival, clean reading view, mobile apps, and Kindle integration make it the definitive self-hosted Pocket replacement.
+**For anyone who saves articles to actually read later:** Use [Wallabag](/apps/wallabag/). The full content archival, clean reading view, mobile apps, and Kindle integration make it the definitive self-hosted Pocket replacement.
 
-**If you want both bookmarking and read-later in a single app:** Look at [Linkwarden](/apps/linkwarden), which combines bookmark management with full-page archival and collaborative collections — though it is heavier than either Linkding or Wallabag individually.
+**If you want both bookmarking and read-later in a single app:** Look at [Linkwarden](/apps/linkwarden/), which combines bookmark management with full-page archival and collaborative collections — though it is heavier than either Linkding or Wallabag individually.
 
 ## Related
 
-- [How to Self-Host Linkding](/apps/linkding)
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [Self-Hosted Alternatives to Pocket](/replace/pocket)
-- [How to Self-Host FreshRSS](/apps/freshrss)
-- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Linkding](/apps/linkding/)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [Self-Hosted Alternatives to Pocket](/replace/pocket/)
+- [How to Self-Host FreshRSS](/apps/freshrss/)
+- [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

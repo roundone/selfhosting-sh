@@ -19,8 +19,8 @@ Your container is stuck in `Exited`, `Created`, or `Restarting` status. The fix 
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
 
 ## Step 1: Check Status and Logs
 
@@ -269,7 +269,7 @@ ports:
   - "8081:8080"  # Map to 8081 on the host instead
 ```
 
-See [Port Already In Use](/foundations/port-already-in-use) for detailed solutions.
+See [Port Already In Use](/foundations/port-already-in-use/) for detailed solutions.
 
 ## Image Pull Issues
 
@@ -295,7 +295,7 @@ uname -m
 docker pull --platform linux/amd64 myimage:tag
 ```
 
-See [Docker Multi-Architecture](/foundations/docker-multi-arch) for details.
+See [Docker Multi-Architecture](/foundations/docker-multi-arch/) for details.
 
 ## Dependency Service Failures
 
@@ -359,10 +359,10 @@ Something always changed. Check: disk space full (`df -h`), Docker auto-updated 
 
 ## Related
 
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- [Docker Common Issues](/foundations/docker-common-issues)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Docker Networking](/foundations/docker-networking)
-- [Container Logging](/foundations/container-logging)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- [Docker Common Issues](/foundations/docker-common-issues/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Container Logging](/foundations/container-logging/)

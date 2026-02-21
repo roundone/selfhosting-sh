@@ -136,10 +136,10 @@ Traefik is the better tool if your workflow is container-centric and you want ro
 
 ## Related
 
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

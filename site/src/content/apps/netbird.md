@@ -29,7 +29,7 @@ NetBird provides a web dashboard for managing peers, routes, DNS, access control
 ## Prerequisites
 
 - A Linux server with a public IP (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - A domain name pointing to your server (required — Let's Encrypt needs it)
 - An OIDC identity provider (see below)
 - `jq` installed (`apt install jq`)
@@ -205,7 +205,7 @@ If you want to put NetBird behind an existing reverse proxy instead of using its
 
 Your reverse proxy must handle TLS termination and forward to the appropriate service ports. Note that signal and management use gRPC — ensure your proxy supports HTTP/2 and gRPC passthrough.
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for details.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for details.
 
 ## Backup
 
@@ -269,7 +269,7 @@ cp docker-compose.yml management.json turnserver.conf ./backup-config/
 
 NetBird is the most feature-complete self-hosted mesh VPN available. The zero-trust access controls, DNS management, network routes, and groups give you Tailscale-level functionality with full self-hosting. The web dashboard is polished and actively developed.
 
-The significant downside is **setup complexity**. The mandatory OIDC provider requirement adds an entire service to deploy and configure before you can even start using NetBird. If you want a self-hosted mesh VPN without the OIDC dependency, use [Headscale](/apps/headscale) (Tailscale-compatible) or [WireGuard](/apps/wireguard) with [wg-easy](/apps/wg-easy) for a simpler setup.
+The significant downside is **setup complexity**. The mandatory OIDC provider requirement adds an entire service to deploy and configure before you can even start using NetBird. If you want a self-hosted mesh VPN without the OIDC dependency, use [Headscale](/apps/headscale/) (Tailscale-compatible) or [WireGuard](/apps/wireguard/) with [wg-easy](/apps/wg-easy/) for a simpler setup.
 
 NetBird is best for teams and organizations that already have an identity provider and want enterprise-grade network segmentation. For personal use or small homelab setups, it's overkill.
 
@@ -281,7 +281,7 @@ No. NetBird fundamentally requires OIDC for authentication. There is no built-in
 
 ### How does NetBird compare to Tailscale?
 
-NetBird offers similar features (mesh VPN, ACLs, DNS, routes) but can be fully self-hosted. Tailscale is easier to set up but requires Tailscale's coordination server (unless you use [Headscale](/apps/headscale)). See our [NetBird vs Tailscale](/compare/netbird-vs-tailscale) comparison.
+NetBird offers similar features (mesh VPN, ACLs, DNS, routes) but can be fully self-hosted. Tailscale is easier to set up but requires Tailscale's coordination server (unless you use [Headscale](/apps/headscale/)). See our [NetBird vs Tailscale](/compare/netbird-vs-tailscale/) comparison.
 
 ### Is NetBird free for commercial use?
 
@@ -297,13 +297,13 @@ Existing peer-to-peer WireGuard tunnels continue working. New peers can't join, 
 
 ## Related
 
-- [NetBird vs Tailscale](/compare/netbird-vs-tailscale)
-- [Firezone vs NetBird](/compare/firezone-vs-netbird)
-- [How to Self-Host Tailscale (Headscale)](/apps/headscale)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [NetBird vs Tailscale](/compare/netbird-vs-tailscale/)
+- [Firezone vs NetBird](/compare/firezone-vs-netbird/)
+- [How to Self-Host Tailscale (Headscale)](/apps/headscale/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -26,12 +26,12 @@ affiliateDisclosure: false
 
 | Use Case | Best Choice | Why |
 |----------|-------------|-----|
-| Best overall | [Jellyfin](/apps/jellyfin) | Fully free, open-source, handles video, music, and books with zero licensing headaches |
-| Most polished experience | [Plex](/apps/plex) | Best client apps, slickest UI, widest device support |
-| Best for music only | [Navidrome](/apps/navidrome) | Lightweight, Subsonic API compatible, purpose-built for music libraries |
-| Best for audiobooks | [Audiobookshelf](/apps/audiobookshelf) | Tracks progress, handles podcasts, mobile apps included |
-| Best middle ground | [Emby](/apps/emby) | Jellyfin's upstream codebase with a more traditional licensing model |
-| Best media organizer | [Stash](/apps/stash) | Powerful metadata scraping and tagging for large unstructured libraries |
+| Best overall | [Jellyfin](/apps/jellyfin/) | Fully free, open-source, handles video, music, and books with zero licensing headaches |
+| Most polished experience | [Plex](/apps/plex/) | Best client apps, slickest UI, widest device support |
+| Best for music only | [Navidrome](/apps/navidrome/) | Lightweight, Subsonic API compatible, purpose-built for music libraries |
+| Best for audiobooks | [Audiobookshelf](/apps/audiobookshelf/) | Tracks progress, handles podcasts, mobile apps included |
+| Best middle ground | [Emby](/apps/emby/) | Jellyfin's upstream codebase with a more traditional licensing model |
+| Best media organizer | [Stash](/apps/stash/) | Powerful metadata scraping and tagging for large unstructured libraries |
 
 ## The Full Ranking
 
@@ -57,7 +57,7 @@ The project forked from Emby in 2018 when Emby went proprietary, and has since s
 
 **Best for:** Anyone who wants a single, free media server for their entire library without licensing concerns.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ### 2. Plex -- Most Polished Experience
 
@@ -82,7 +82,7 @@ The catch: Plex is freemium. Core playback is free, but hardware transcoding, sk
 
 **Best for:** Users who want the smoothest multi-device experience and share their library with non-technical family members.
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ### 3. Emby -- The Middle Ground
 
@@ -106,7 +106,7 @@ Emby has a loyal user base, but the community is smaller than both Jellyfin and 
 
 **Best for:** Existing Emby users who are happy with their setup. New users should choose Jellyfin instead.
 
-[Read our full guide: [How to Self-Host Emby](/apps/emby)]
+[Read our full guide: [How to Self-Host Emby](/apps/emby/)]
 
 ### 4. Navidrome -- Best for Music
 
@@ -130,7 +130,7 @@ Navidrome is written in Go, compiles to a single binary, and uses under 50 MB of
 
 **Best for:** Anyone who wants a dedicated music server with wide client support and minimal resource usage.
 
-[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome)]
+[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome/)]
 
 ### 5. Audiobookshelf -- Best for Audiobooks and Podcasts
 
@@ -154,7 +154,7 @@ If you have a large audiobook collection and are tired of using a general-purpos
 
 **Best for:** Audiobook listeners who want dedicated progress tracking, series management, and podcast support in one app.
 
-[Read our full guide: [How to Self-Host Audiobookshelf](/apps/audiobookshelf)]
+[Read our full guide: [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)]
 
 ### 6. Stash -- Best Media Organizer
 
@@ -178,7 +178,7 @@ Stash uses a scene-based model rather than the movie/TV show model that Jellyfin
 
 **Best for:** Users with large unstructured video collections who need automated metadata matching and organization.
 
-[Read our full guide: [How to Self-Host Stash](/apps/stash)]
+[Read our full guide: [How to Self-Host Stash](/apps/stash/)]
 
 ### 7. Kavita -- Best for Manga and Comics
 
@@ -237,17 +237,17 @@ Jellyfin wins because it scores highest across the board when you factor in that
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Stash](/apps/stash)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [Self-Hosted Alternatives to Netflix](/replace/netflix)
-- [Self-Hosted Alternatives to Spotify](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Stash](/apps/stash/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [Self-Hosted Alternatives to Netflix](/replace/netflix/)
+- [Self-Hosted Alternatives to Spotify](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

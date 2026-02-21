@@ -62,11 +62,11 @@ If port 25 is blocked and you cannot get it unblocked, you will need an outbound
 
 ### Domain Name with Full DNS Control
 
-You need a domain where you can create MX, TXT, CNAME, and A records. Cloudflare, Route 53, or your registrar's DNS panel all work. See [DNS Explained](/foundations/dns-explained) for a primer on DNS management.
+You need a domain where you can create MX, TXT, CNAME, and A records. Cloudflare, Route 53, or your registrar's DNS panel all work. See [DNS Explained](/foundations/dns-explained/) for a primer on DNS management.
 
 ### TLS Certificates
 
-Your mail server needs valid TLS certificates for encrypting connections. Let's Encrypt works perfectly. Most self-hosted email solutions handle certificate provisioning automatically, but you should understand how [SSL certificates](/foundations/ssl-certificates) work before troubleshooting issues.
+Your mail server needs valid TLS certificates for encrypting connections. Let's Encrypt works perfectly. Most self-hosted email solutions handle certificate provisioning automatically, but you should understand how [SSL certificates](/foundations/ssl-certificates/) work before troubleshooting issues.
 
 ## Email Protocol Stack
 
@@ -104,7 +104,7 @@ Sender's client → SMTP (587) → Sender's server → SMTP (25) → Your server
                                                               IMAP (993) → Your client
 ```
 
-For more on how SMTP fits together, see [SMTP and Email Basics](/foundations/smtp-email-basics).
+For more on how SMTP fits together, see [SMTP and Email Basics](/foundations/smtp-email-basics/).
 
 ## DNS Records You Need
 
@@ -381,7 +381,7 @@ Email servers need ongoing attention. Set up monitoring for:
 
 ### Not Having Backups
 
-Email is often irreplaceable data. Back up your mail storage volumes and your configuration regularly. See [Backup Strategy](/foundations/backup-3-2-1-rule) for the fundamentals.
+Email is often irreplaceable data. Back up your mail storage volumes and your configuration regularly. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for the fundamentals.
 
 ## FAQ
 
@@ -391,7 +391,7 @@ For most people, no. The time investment in setup, maintenance, and deliverabili
 
 ### Can I self-host email at home?
 
-Technically yes, but practically it is very difficult. Most residential ISPs block port 25, assign dynamic IPs, and their IP ranges are universally blocklisted. A $5/month VPS is the minimum viable approach. See [VPS vs Home Server](/foundations/vps-vs-home-server) for a detailed comparison.
+Technically yes, but practically it is very difficult. Most residential ISPs block port 25, assign dynamic IPs, and their IP ranges are universally blocklisted. A $5/month VPS is the minimum viable approach. See [VPS vs Home Server](/foundations/vps-vs-home-server/) for a detailed comparison.
 
 ### How much RAM does a self-hosted email server need?
 
@@ -407,10 +407,10 @@ Yes. Most mail clients support IMAP-to-IMAP migration. Tools like `imapsync` can
 
 ## Related
 
-- [DNS Explained](/foundations/dns-explained)
-- [SMTP and Email Basics](/foundations/smtp-email-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Security Hardening](/foundations/security-hardening)
-- [VPS vs Home Server](/foundations/vps-vs-home-server)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [DNS Explained](/foundations/dns-explained/)
+- [SMTP and Email Basics](/foundations/smtp-email-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Security Hardening](/foundations/security-hardening/)
+- [VPS vs Home Server](/foundations/vps-vs-home-server/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

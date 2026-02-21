@@ -37,33 +37,33 @@ affiliateDisclosure: false
 
 ### Syncthing — Best Direct Replacement
 
-[Syncthing](/apps/syncthing) is the closest thing to what Dropbox should be — fast, reliable file sync without the bloat. It syncs folders between your devices using peer-to-peer connections. No central server, no account, no monthly fee. Block-level delta sync means only changed parts of files are transferred.
+[Syncthing](/apps/syncthing/) is the closest thing to what Dropbox should be — fast, reliable file sync without the bloat. It syncs folders between your devices using peer-to-peer connections. No central server, no account, no monthly fee. Block-level delta sync means only changed parts of files are transferred.
 
 **What you get:** Automatic file sync between all your devices. File versioning. Conflict detection. Cross-platform (Windows, macOS, Linux, Android). Uses ~30-50 MB of RAM.
 
 **Best for:** Anyone who uses Dropbox purely for syncing files between their own devices. If you don't share files via links, Syncthing is a straight upgrade.
 
-[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing)]
+[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing/)]
 
 ### Seafile — Best for Speed + Sharing
 
-[Seafile](/apps/seafile) combines fast file sync with a web interface and sharing capabilities. Its block-level sync engine is the fastest in the self-hosted space — 2-3x faster than Nextcloud. It includes sharing links, file versioning, and client-side encryption.
+[Seafile](/apps/seafile/) combines fast file sync with a web interface and sharing capabilities. Its block-level sync engine is the fastest in the self-hosted space — 2-3x faster than Nextcloud. It includes sharing links, file versioning, and client-side encryption.
 
 **What you get:** Desktop sync clients, web file browser, password-protected sharing links, file versioning, client-side encryption per library. Lighter than Nextcloud.
 
 **Best for:** Users who need both file sync and sharing, and want the best sync performance available.
 
-[Read our full guide: [How to Self-Host Seafile](/apps/seafile)]
+[Read our full guide: [How to Self-Host Seafile](/apps/seafile/)]
 
 ### Nextcloud — Best Full Platform
 
-[Nextcloud](/apps/nextcloud) replaces Dropbox and then some. File sync, web file manager, sharing, collaborative editing, calendar, contacts, and 400+ apps. It's heavier than Syncthing or Seafile but offers the most complete feature set.
+[Nextcloud](/apps/nextcloud/) replaces Dropbox and then some. File sync, web file manager, sharing, collaborative editing, calendar, contacts, and 400+ apps. It's heavier than Syncthing or Seafile but offers the most complete feature set.
 
 **What you get:** Everything Dropbox offers (sync, sharing, web access) plus calendars, contacts, office suite, and video calls. Desktop and mobile sync clients.
 
 **Best for:** Users who want to replace Dropbox and potentially other Google/Microsoft cloud services in one platform.
 
-[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud)]
+[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud/)]
 
 ## Migration Guide
 
@@ -79,13 +79,13 @@ affiliateDisclosure: false
 ### Step 2: Deploy Your Replacement
 
 **For Syncthing (most Dropbox users):**
-1. Follow our [Syncthing Docker guide](/apps/syncthing)
+1. Follow our [Syncthing Docker guide](/apps/syncthing/)
 2. Install Syncthing on each device
 3. Pair devices using Device IDs
 4. Add your files folder as a shared folder
 
 **For Seafile or Nextcloud:**
-1. Follow our [Seafile](/apps/seafile) or [Nextcloud](/apps/nextcloud) Docker guide
+1. Follow our [Seafile](/apps/seafile/) or [Nextcloud](/apps/nextcloud/) Docker guide
 2. Install the desktop sync client
 3. Upload or sync your files
 
@@ -129,7 +129,7 @@ If you share folders with others:
 
 ## What You Give Up
 
-- **Dropbox Paper.** If you use Dropbox Paper for notes and wikis, you'll need a separate replacement. [BookStack](/apps/bookstack) or Nextcloud's built-in notes work well.
+- **Dropbox Paper.** If you use Dropbox Paper for notes and wikis, you'll need a separate replacement. [BookStack](/apps/bookstack/) or Nextcloud's built-in notes work well.
 - **Effortless sharing with non-tech users.** Dropbox sharing "just works" for everyone. Nextcloud/Seafile sharing links also work well, but your server needs to be publicly accessible and maintained.
 - **Smart Sync (on-demand files).** Nextcloud has a similar "Virtual files" feature on Windows. Syncthing doesn't support on-demand files — everything syncs.
 - **Dropbox Sign / DocSend.** Business features with no direct self-hosted equivalent.
@@ -156,12 +156,12 @@ With Syncthing, your files exist on all synced devices — no single point of fa
 
 ## Related
 
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Filebrowser](/apps/filebrowser)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Filebrowser](/apps/filebrowser/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -106,7 +106,7 @@ Blocky is 5x lighter than Technitium. It's stateless — no persistent volumes n
 
 These tools complement different workflows rather than competing directly. Blocky is the minimalist's choice — a single YAML file, stateless operation, minimal resources. Technitium is the power user's choice — every DNS feature you could want in a web UI. Pick Blocky for a Kubernetes homelab or any setup where config-as-code matters. Pick Technitium when you need real DNS server features beyond proxying and blocking.
 
-If your primary need is just ad blocking with a web UI, skip both and use [AdGuard Home](/apps/adguard-home) or [Pi-hole](/apps/pi-hole) instead.
+If your primary need is just ad blocking with a web UI, skip both and use [AdGuard Home](/apps/adguard-home/) or [Pi-hole](/apps/pi-hole/) instead.
 
 ## FAQ
 
@@ -120,14 +120,14 @@ Blocky. It's stateless, configured via a single file (perfect for ConfigMaps), l
 
 ### Can I use Blocky with Grafana?
 
-Yes. Blocky exposes Prometheus metrics on port 4000 by default. Add it as a Prometheus scrape target and import the community Grafana dashboard. See our [Grafana guide](/apps/grafana) and [Prometheus guide](/apps/prometheus).
+Yes. Blocky exposes Prometheus metrics on port 4000 by default. Add it as a Prometheus scrape target and import the community Grafana dashboard. See our [Grafana guide](/apps/grafana/) and [Prometheus guide](/apps/prometheus/).
 
 ## Related
 
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Technitium](/apps/technitium)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium)
-- [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Technitium](/apps/technitium/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium/)
+- [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)

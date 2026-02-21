@@ -105,7 +105,7 @@ For music specifically, Plexamp has a dedicated community of enthusiasts. Emby d
 
 **For music, Plex with Plexamp is the clear winner.** Plexamp is what separates these two — it's a purpose-built music experience that makes your self-hosted library feel like a commercial streaming service. Emby treats music as a secondary feature alongside video.
 
-That said, **neither Emby nor Plex is the best choice if music is your primary need.** [Navidrome](/apps/navidrome) is lighter, free, and gives you access to 50+ Subsonic-compatible music apps. Consider Navidrome for music and keep Emby or Plex for video.
+That said, **neither Emby nor Plex is the best choice if music is your primary need.** [Navidrome](/apps/navidrome/) is lighter, free, and gives you access to 50+ Subsonic-compatible music apps. Consider Navidrome for music and keep Emby or Plex for video.
 
 If you're choosing between Emby and Plex as an all-in-one media server and music is a factor — Plex wins this comparison thanks to Plexamp.
 
@@ -121,15 +121,15 @@ Technically yes — point both at the same media directory. But managing two med
 Plex, definitively. Plexamp on iOS and Android is purpose-built for music. Emby's mobile app handles music but it's designed primarily for video browsing.
 
 ### What about Jellyfin?
-[Jellyfin](/apps/jellyfin) is the free, open-source alternative to both Emby and Plex. Its music experience is between Emby and Plex — better than Emby (Finamp is a decent dedicated music app) but not as polished as Plexamp. See our [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby) comparison.
+[Jellyfin](/apps/jellyfin/) is the free, open-source alternative to both Emby and Plex. Its music experience is between Emby and Plex — better than Emby (Finamp is a decent dedicated music app) but not as polished as Plexamp. See our [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby/) comparison.
 
 ## Related
 
-- [How to Self-Host Emby](/apps/emby)
-- [How to Self-Host Plex](/apps/plex)
-- [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [Navidrome vs Plex for Music](/compare/navidrome-vs-plex-music)
-- [Navidrome vs Emby for Music](/compare/navidrome-vs-emby)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
+- [How to Self-Host Emby](/apps/emby/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [Navidrome vs Plex for Music](/compare/navidrome-vs-plex-music/)
+- [Navidrome vs Emby for Music](/compare/navidrome-vs-emby/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)

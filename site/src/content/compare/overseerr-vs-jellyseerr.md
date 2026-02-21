@@ -135,10 +135,10 @@ Jellyseerr doesn't interact with Prowlarr directly. It sends requests to Sonarr/
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Download Management](/best/download-management/)

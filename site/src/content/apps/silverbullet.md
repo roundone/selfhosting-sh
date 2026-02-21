@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space (plus storage for your notes)
 - 256 MB of RAM (minimum)
 - A domain name (recommended for remote access)
@@ -139,7 +139,7 @@ notes.example.com {
 }
 ```
 
-See the [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained) for full configuration.
+See the [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -152,7 +152,7 @@ rsync -av ./space/ /backup/silverbullet/
 # Or use your preferred backup tool
 ```
 
-Because notes are plain Markdown files, they're inherently portable. You can open them in any Markdown editor (VS Code, Obsidian, Typora) as a fallback. See the [Backup Strategy guide](/foundations/backup-3-2-1-rule) for comprehensive backup approaches.
+Because notes are plain Markdown files, they're inherently portable. You can open them in any Markdown editor (VS Code, Obsidian, Typora) as a fallback. See the [Backup Strategy guide](/foundations/backup-3-2-1-rule/) for comprehensive backup approaches.
 
 ## Troubleshooting
 
@@ -196,7 +196,7 @@ Ensure the host directory is owned by the same user: `chown -R 1000:1000 ./space
 
 ## Verdict
 
-SilverBullet is the best self-hosted option for people who want Obsidian-like features in a browser with zero vendor lock-in. Your notes are plain Markdown files on disk — no database, no proprietary format, no sync subscription. The wiki linking, Objects/Queries system, and Lua scripting make it powerful beyond simple note-taking. It's ideal for solo knowledge workers who want full control over their data. For team collaboration, look at [Outline](/apps/outline) or [BookStack](/apps/bookstack) instead — SilverBullet is designed for personal use.
+SilverBullet is the best self-hosted option for people who want Obsidian-like features in a browser with zero vendor lock-in. Your notes are plain Markdown files on disk — no database, no proprietary format, no sync subscription. The wiki linking, Objects/Queries system, and Lua scripting make it powerful beyond simple note-taking. It's ideal for solo knowledge workers who want full control over their data. For team collaboration, look at [Outline](/apps/outline/) or [BookStack](/apps/bookstack/) instead — SilverBullet is designed for personal use.
 
 ## FAQ
 
@@ -214,12 +214,12 @@ No native app, but the web UI is responsive and works on mobile browsers. You ca
 
 ## Related
 
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Notion Alternatives](/replace/notion)
-- [Self-Hosted Evernote Alternatives](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Notion Alternatives](/replace/notion/)
+- [Self-Hosted Evernote Alternatives](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

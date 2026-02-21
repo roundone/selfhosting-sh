@@ -21,18 +21,18 @@ affiliateDisclosure: false
 
 ## What Is Jackett?
 
-Jackett is an indexer proxy that translates queries from apps like [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and other *arr tools into tracker-specific requests. It supports hundreds of public and private torrent trackers and Usenet indexers through a unified Torznab/Potato API. Instead of each app needing native support for every tracker, Jackett acts as the translator in between. [Official site](https://github.com/Jackett/Jackett)
+Jackett is an indexer proxy that translates queries from apps like [Sonarr](/apps/sonarr/), [Radarr](/apps/radarr/), and other *arr tools into tracker-specific requests. It supports hundreds of public and private torrent trackers and Usenet indexers through a unified Torznab/Potato API. Instead of each app needing native support for every tracker, Jackett acts as the translator in between. [Official site](https://github.com/Jackett/Jackett)
 
-**A note on Prowlarr:** [Prowlarr](/apps/prowlarr) is the newer, purpose-built replacement for Jackett. It integrates natively with the *arr stack without requiring manual API key copy-paste for each app/indexer combination. If you're building a fresh setup, start with Prowlarr. If you already run Jackett and it works, there's no urgent reason to migrate -- Jackett is still actively maintained.
+**A note on Prowlarr:** [Prowlarr](/apps/prowlarr/) is the newer, purpose-built replacement for Jackett. It integrates natively with the *arr stack without requiring manual API key copy-paste for each app/indexer combination. If you're building a fresh setup, start with Prowlarr. If you already run Jackett and it works, there's no urgent reason to migrate -- Jackett is still actively maintained.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM (minimum)
-- At least one *arr app to connect to, such as [Sonarr](/apps/sonarr) or [Radarr](/apps/radarr)
-- A download client like [qBittorrent](/apps/qbittorrent) or [Transmission](/apps/transmission)
+- At least one *arr app to connect to, such as [Sonarr](/apps/sonarr/) or [Radarr](/apps/radarr/)
+- A download client like [qBittorrent](/apps/qbittorrent/) or [Transmission](/apps/transmission/)
 - Accounts on your preferred torrent trackers or Usenet indexers
 
 ## Docker Compose Configuration
@@ -99,7 +99,7 @@ Each configured indexer gets a Torznab feed URL. Click the **Copy Torznab Feed**
 
 ### 4. Connect to Sonarr/Radarr
 
-In [Sonarr](/apps/sonarr) or [Radarr](/apps/radarr):
+In [Sonarr](/apps/sonarr/) or [Radarr](/apps/radarr/):
 
 1. Go to **Settings > Indexers > Add**
 2. Select **Torznab** (under Torrent) or **Newznab** (under Usenet)
@@ -108,7 +108,7 @@ In [Sonarr](/apps/sonarr) or [Radarr](/apps/radarr):
 5. Set categories appropriate to the app (e.g., TV categories for Sonarr, Movie categories for Radarr)
 6. Test and Save
 
-Repeat for each indexer you want available in each *arr app. This per-indexer, per-app configuration is the main reason [Prowlarr](/apps/prowlarr) was created as a replacement -- it eliminates this repetitive step entirely.
+Repeat for each indexer you want available in each *arr app. This per-indexer, per-app configuration is the main reason [Prowlarr](/apps/prowlarr/) was created as a replacement -- it eliminates this repetitive step entirely.
 
 ## Configuration
 
@@ -169,7 +169,7 @@ Jackett caches search results by default (1200-second TTL). This reduces load on
 
 ## Reverse Proxy
 
-If you want to access Jackett over HTTPS with a domain name, put it behind a reverse proxy. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full details.
+If you want to access Jackett over HTTPS with a domain name, put it behind a reverse proxy. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full details.
 
 **Nginx Proxy Manager:** Create a proxy host pointing to `http://jackett:9117` (if on the same Docker network) or `http://your-server-ip:9117`.
 
@@ -212,7 +212,7 @@ docker compose start jackett
 
 To restore, extract the tarball into the named volume before starting the container.
 
-Jackett's config is small (a few MB). Include it in your regular backup schedule. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+Jackett's config is small (a few MB). Include it in your regular backup schedule. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 **What matters in the backup:**
 - `ServerConfig.json` -- API key, admin password hash, FlareSolverr URL, cache settings
@@ -268,21 +268,21 @@ Jackett is one of the lightest components in a typical *arr stack.
 
 Jackett works and it works reliably. If you already have it running in your *arr stack, there's no pressing reason to rip it out. It supports more trackers than almost any alternative and has years of community battle-testing behind it.
 
-That said, for new setups, **[Prowlarr](/apps/prowlarr) is the better choice.** Prowlarr syncs indexers to all your *arr apps automatically -- no copying Torznab URLs and API keys into every application. It's built by the same team behind the *arr ecosystem and integrates natively. The manual configuration overhead of Jackett adds up quickly when you have multiple indexers and multiple *arr apps.
+That said, for new setups, **[Prowlarr](/apps/prowlarr/) is the better choice.** Prowlarr syncs indexers to all your *arr apps automatically -- no copying Torznab URLs and API keys into every application. It's built by the same team behind the *arr ecosystem and integrates natively. The manual configuration overhead of Jackett adds up quickly when you have multiple indexers and multiple *arr apps.
 
 **Use Jackett if:** you already run it and it's working, you need a specific tracker that Prowlarr doesn't support yet, or you use non-*arr applications that need Torznab endpoints.
 
-**Use [Prowlarr](/apps/prowlarr) if:** you're starting fresh or willing to migrate. The native integration is worth the switch.
+**Use [Prowlarr](/apps/prowlarr/) if:** you're starting fresh or willing to migrate. The native integration is worth the switch.
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr) -- automated TV show management, primary Jackett consumer
-- [How to Self-Host Radarr](/apps/radarr) -- automated movie management, primary Jackett consumer
-- [How to Self-Host Prowlarr](/apps/prowlarr) -- the recommended modern replacement for Jackett
-- [How to Self-Host qBittorrent](/apps/qbittorrent) -- download client that works with the *arr stack
-- [How to Self-Host Transmission](/apps/transmission) -- lightweight alternative download client
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr) -- understanding the difference between the two
-- [Best Self-Hosted Download Management](/best/download-management) -- full category roundup
-- [Docker Compose Basics](/foundations/docker-compose-basics) -- foundation guide for all Docker setups
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained) -- expose services securely over HTTPS
-- [Backup Strategy](/foundations/backup-3-2-1-rule) -- protect your self-hosted data
+- [How to Self-Host Sonarr](/apps/sonarr/) -- automated TV show management, primary Jackett consumer
+- [How to Self-Host Radarr](/apps/radarr/) -- automated movie management, primary Jackett consumer
+- [How to Self-Host Prowlarr](/apps/prowlarr/) -- the recommended modern replacement for Jackett
+- [How to Self-Host qBittorrent](/apps/qbittorrent/) -- download client that works with the *arr stack
+- [How to Self-Host Transmission](/apps/transmission/) -- lightweight alternative download client
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/) -- understanding the difference between the two
+- [Best Self-Hosted Download Management](/best/download-management/) -- full category roundup
+- [Docker Compose Basics](/foundations/docker-compose-basics/) -- foundation guide for all Docker setups
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) -- expose services securely over HTTPS
+- [Backup Strategy](/foundations/backup-3-2-1-rule/) -- protect your self-hosted data

@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB+ RAM (more for larger datasets)
 - 2 GB+ free disk space
 - No GPU required
@@ -176,7 +176,7 @@ Create scoped API tokens for multi-tenant applications:
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 7700. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 7700. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -198,7 +198,7 @@ docker run --rm -v meili_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/meilisearch-backup.tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -230,15 +230,15 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 ## Verdict
 
-Meilisearch is the best search engine for most self-hosted applications. The instant typo-tolerant search, zero-config relevance, and minimal resource usage make it ideal for adding search to websites, documentation sites, and internal tools. The only real limitation is single-node architecture in the Community Edition — if you need horizontal scaling, look at [Elasticsearch](/apps/elasticsearch) or [Typesense](/apps/typesense).
+Meilisearch is the best search engine for most self-hosted applications. The instant typo-tolerant search, zero-config relevance, and minimal resource usage make it ideal for adding search to websites, documentation sites, and internal tools. The only real limitation is single-node architecture in the Community Edition — if you need horizontal scaling, look at [Elasticsearch](/apps/elasticsearch/) or [Typesense](/apps/typesense/).
 
 ## Related
 
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [How to Self-Host Typesense](/apps/typesense)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [How to Self-Host Typesense](/apps/typesense/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

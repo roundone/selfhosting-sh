@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum
 - A data source to connect to (this guide includes Prometheus)
 
@@ -212,13 +212,13 @@ environment:
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/):
 
 - Forward your domain to `http://grafana:3000`
 - Set `GF_SERVER_ROOT_URL` to your public URL (e.g., `https://grafana.example.com`)
 - Enable WebSocket support in your proxy for live dashboard updates
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the full configuration.
 
 ## Backup
 
@@ -242,7 +242,7 @@ for uid in $(curl -s http://admin:password@localhost:3000/api/search | jq -r '.[
 done
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -308,16 +308,16 @@ For self-hosted infrastructure monitoring, yes. Grafana + Prometheus + Node Expo
 
 ## Verdict
 
-Grafana is the undisputed standard for self-hosted monitoring dashboards. The community dashboard library saves hours of setup, the alerting system is flexible, and the plugin ecosystem covers virtually every data source. Pair it with Prometheus and Node Exporter and you have enterprise-grade monitoring for free. The only downside is complexity — if you just want simple uptime monitoring, [Uptime Kuma](/apps/uptime-kuma) is much simpler. But for anything beyond basic uptime checks, Grafana is the tool.
+Grafana is the undisputed standard for self-hosted monitoring dashboards. The community dashboard library saves hours of setup, the alerting system is flexible, and the plugin ecosystem covers virtually every data source. Pair it with Prometheus and Node Exporter and you have enterprise-grade monitoring for free. The only downside is complexity — if you just want simple uptime monitoring, [Uptime Kuma](/apps/uptime-kuma/) is much simpler. But for anything beyond basic uptime checks, Grafana is the tool.
 
 ## Related
 
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Grafana vs Netdata](/compare/grafana-vs-netdata)
-- [Best Self-Hosted Monitoring](/best/monitoring)
-- [Replace Datadog](/replace/datadog)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Grafana vs Netdata](/compare/grafana-vs-netdata/)
+- [Best Self-Hosted Monitoring](/best/monitoring/)
+- [Replace Datadog](/replace/datadog/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Networking](/foundations/docker-networking/)

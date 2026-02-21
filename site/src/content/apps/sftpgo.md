@@ -30,7 +30,7 @@ SFTPGo is a full-featured SFTP, FTP/S, WebDAV, and HTTP/S file server written in
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for user data)
 - 512 MB of RAM (minimum)
 - A domain name (optional, for WebDAV and web client access)
@@ -119,7 +119,7 @@ Mount as a WebDAV drive from any OS using `http://your-server-ip:8090/dav`.
 
 ### S3 Backend Storage
 
-SFTPGo can use S3-compatible storage (including [Garage](/apps/garage)) as a backend:
+SFTPGo can use S3-compatible storage (including [Garage](/apps/garage/)) as a backend:
 
 ```yaml
     environment:
@@ -156,11 +156,11 @@ Users configure TOTP through the web client interface.
 
 For HTTPS access to the web UI and WebDAV, proxy ports 8080 (admin) and 8090 (client/WebDAV).
 
-With [Nginx Proxy Manager](/apps/nginx-proxy-manager), create two proxy hosts — one for admin, one for the client interface. Enable WebSocket support for the web client.
+With [Nginx Proxy Manager](/apps/nginx-proxy-manager/), create two proxy hosts — one for admin, one for the client interface. Enable WebSocket support for the web client.
 
 SFTP (port 2022) and FTP (port 2121) cannot be reverse-proxied through HTTP proxies. Expose these ports directly.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 ## Backup
 
@@ -180,7 +180,7 @@ tar czf sftpgo-backup-$(date +%Y%m%d).tar.gz \
 docker compose start
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -214,13 +214,13 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 SFTPGo is the best self-hosted SFTP/FTP server available. It provides a proper multi-user file transfer server with a modern admin interface, quota management, and flexible storage backends. If you need to give users SFTP or FTP access with per-user home directories and permissions, SFTPGo is the answer.
 
-For general file sync and sharing with mobile apps and desktop clients, [Nextcloud](/apps/nextcloud) or [Syncthing](/apps/syncthing) are better fits. SFTPGo excels when you specifically need SFTP/FTP/WebDAV protocols with centralized user management.
+For general file sync and sharing with mobile apps and desktop clients, [Nextcloud](/apps/nextcloud/) or [Syncthing](/apps/syncthing/) are better fits. SFTPGo excels when you specifically need SFTP/FTP/WebDAV protocols with centralized user management.
 
 ## FAQ
 
 ### Can I use SFTPGo as a Dropbox replacement?
 
-Partially. SFTPGo provides file storage and sharing, but it doesn't have desktop sync clients. For full Dropbox replacement, use [Nextcloud](/apps/nextcloud) or [Seafile](/apps/seafile). SFTPGo works well alongside sync tools as a backend.
+Partially. SFTPGo provides file storage and sharing, but it doesn't have desktop sync clients. For full Dropbox replacement, use [Nextcloud](/apps/nextcloud/) or [Seafile](/apps/seafile/). SFTPGo works well alongside sync tools as a backend.
 
 ### Does SFTPGo support public file sharing?
 
@@ -236,11 +236,11 @@ SFTPGo is significantly more feature-rich: web UI, virtual filesystems, S3 backe
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [How to Self-Host FileBrowser](/apps/filebrowser)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [How to Self-Host FileBrowser](/apps/filebrowser/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

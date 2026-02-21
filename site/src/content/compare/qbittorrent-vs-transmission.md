@@ -88,10 +88,10 @@ Choose Transmission if you're running on constrained hardware or you genuinely p
 
 ## Related
 
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Transmission](/apps/transmission)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Transmission](/apps/transmission/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -25,11 +25,11 @@ SABnzbd is a free, open-source Usenet binary downloader written in Python. It au
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for downloads)
 - 512 MB of RAM minimum
 - A Usenet provider subscription (Newshosting, Eweka, Frugal Usenet, etc.)
-- An NZB indexer account (NZBGeek, DrunkenSlug, etc.) or integration with [Prowlarr](/apps/prowlarr)
+- An NZB indexer account (NZBGeek, DrunkenSlug, etc.) or integration with [Prowlarr](/apps/prowlarr/)
 
 ## Docker Compose Configuration
 
@@ -113,10 +113,10 @@ Found under **Config → General → Security**. You'll need this to connect Son
 
 SABnzbd works as the download client for the *arr stack:
 
-1. In [Sonarr](/apps/sonarr): **Settings → Download Clients → Add → SABnzbd**
+1. In [Sonarr](/apps/sonarr/): **Settings → Download Clients → Add → SABnzbd**
 2. Enter SABnzbd's host (`sabnzbd` if on the same Docker network), port `8080`, and API key
 3. Set category to `tv`
-4. Repeat in [Radarr](/apps/radarr) with category `movies`
+4. Repeat in [Radarr](/apps/radarr/) with category `movies`
 
 ### Performance Tuning
 
@@ -136,7 +136,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** sabnzbd (or container IP)
 - **Forward Port:** 8080
 
-If using a reverse proxy, set `url_base` in SABnzbd's config or add to `host_whitelist` under **Config → General → Security**. [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+If using a reverse proxy, set `url_base` in SABnzbd's config or add to `host_whitelist` under **Config → General → Security**. [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -148,7 +148,7 @@ tar -czf sabnzbd-backup-$(date +%Y%m%d).tar.gz ./config
 docker compose start sabnzbd
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -203,11 +203,11 @@ Yes, but par2 repair and unpacking will be slow on a Pi's ARM CPU. Fine for ligh
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -21,8 +21,8 @@ UFW ships with Ubuntu and is the recommended firewall for self-hosting setups. I
 
 ## Prerequisites
 
-- A Linux server running Ubuntu 22.04+ or Debian 12+ ([Getting Started](/foundations/getting-started))
-- SSH access to your server ([SSH Setup](/foundations/ssh-setup))
+- A Linux server running Ubuntu 22.04+ or Debian 12+ ([Getting Started](/foundations/getting-started/))
+- SSH access to your server ([SSH Setup](/foundations/ssh-setup/))
 - Root or sudo access
 
 ## Installing and Enabling UFW
@@ -77,7 +77,7 @@ sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
 
-If you run a [reverse proxy](/foundations/reverse-proxy-explained), these are the only ports that need to be open for web services. The reverse proxy routes traffic to individual containers internally.
+If you run a [reverse proxy](/foundations/reverse-proxy-explained/), these are the only ports that need to be open for web services. The reverse proxy routes traffic to individual containers internally.
 
 ### Allow Specific Ports
 
@@ -124,7 +124,7 @@ UFW can rate-limit connections to prevent brute-force attacks:
 sudo ufw limit 22/tcp
 ```
 
-This is a lightweight alternative to [fail2ban](/foundations/fail2ban) for SSH protection.
+This is a lightweight alternative to [fail2ban](/foundations/fail2ban/) for SSH protection.
 
 ## The Docker and UFW Problem
 
@@ -147,7 +147,7 @@ services:
     restart: unless-stopped
 ```
 
-The service is now only reachable from the server itself. Your [reverse proxy](/foundations/reverse-proxy-explained) (which runs on the same server) can still reach it. External traffic hits the reverse proxy on ports 80/443, which forwards to `127.0.0.1:3000`.
+The service is now only reachable from the server itself. Your [reverse proxy](/foundations/reverse-proxy-explained/) (which runs on the same server) can still reach it. External traffic hits the reverse proxy on ports 80/443, which forwards to `127.0.0.1:3000`.
 
 **Option 2: Use Docker networks without port exposure**
 
@@ -261,11 +261,11 @@ UFW handles IPv6 by default on Ubuntu, but verify with `sudo ufw status verbose`
 
 ## Next Steps
 
-- Set up [fail2ban](/foundations/fail2ban) for brute-force protection
-- Secure SSH with [key-based authentication](/foundations/ssh-setup)
-- Configure [SSL certificates](/foundations/ssl-certificates) for encrypted connections
-- Learn about [Docker networking](/foundations/docker-networking) to understand container connectivity
-- Set up [remote access](/foundations/remote-access) with WireGuard or Tailscale
+- Set up [fail2ban](/foundations/fail2ban/) for brute-force protection
+- Secure SSH with [key-based authentication](/foundations/ssh-setup/)
+- Configure [SSL certificates](/foundations/ssl-certificates/) for encrypted connections
+- Learn about [Docker networking](/foundations/docker-networking/) to understand container connectivity
+- Set up [remote access](/foundations/remote-access/) with WireGuard or Tailscale
 
 ## FAQ
 
@@ -283,9 +283,9 @@ Yes, and you should. UFW sets static rules (which ports are open). Fail2ban adds
 
 ## Related
 
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Fail2ban Setup](/foundations/fail2ban)
-- [Docker Networking](/foundations/docker-networking)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Fail2ban Setup](/foundations/fail2ban/)
+- [Docker Networking](/foundations/docker-networking/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

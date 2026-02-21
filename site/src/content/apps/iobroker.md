@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian Bookworm+)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space
 - 2 GB of RAM minimum (4 GB recommended)
 - A domain name (optional, for remote access)
@@ -177,7 +177,7 @@ With Nginx Proxy Manager, create a proxy host pointing to port 8081 for the admi
 
 If you use VIS, create a separate proxy host for port 8082.
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for full configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for full configuration.
 
 ## Backup
 
@@ -196,7 +196,7 @@ tar czf iobroker-backup-$(date +%Y%m%d).tar.gz \
 docker compose start
 ```
 
-See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide.
+See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide.
 
 ## Troubleshooting
 
@@ -238,7 +238,7 @@ See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide.
 
 ## Verdict
 
-ioBroker excels at integrating diverse smart home ecosystems through its massive adapter library. It's particularly strong in the European market with excellent support for KNX, Homematic, and other EU-popular protocols that [Home Assistant](/apps/home-assistant) sometimes handles less gracefully. The VIS dashboard builder is more powerful than most alternatives' built-in dashboards. The downside: documentation is heavily German-language, the community is smaller internationally, and initial setup is more complex than Home Assistant. Choose ioBroker if you need deep integration with European home automation protocols or want VIS's visualization power. For most English-speaking users, Home Assistant is the safer bet.
+ioBroker excels at integrating diverse smart home ecosystems through its massive adapter library. It's particularly strong in the European market with excellent support for KNX, Homematic, and other EU-popular protocols that [Home Assistant](/apps/home-assistant/) sometimes handles less gracefully. The VIS dashboard builder is more powerful than most alternatives' built-in dashboards. The downside: documentation is heavily German-language, the community is smaller internationally, and initial setup is more complex than Home Assistant. Choose ioBroker if you need deep integration with European home automation protocols or want VIS's visualization power. For most English-speaking users, Home Assistant is the safer bet.
 
 ## FAQ
 
@@ -256,11 +256,11 @@ The Docker image handles ioBroker core updates. Individual adapters update throu
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

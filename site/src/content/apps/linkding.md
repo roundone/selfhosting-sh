@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - A domain name (optional, for remote access)
 
@@ -198,7 +198,7 @@ The API supports pagination, filtering by tag, and full-text search. Full docume
 
 ### Authentication Proxy
 
-If you run an authentication proxy like [Authelia](/apps/authelia) or Authentik in front of linkding, enable auth proxy support:
+If you run an authentication proxy like [Authelia](/apps/authelia/) or Authentik in front of linkding, enable auth proxy support:
 
 ```yaml
 environment:
@@ -235,7 +235,7 @@ Linkding can automatically create snapshots of bookmarked pages on the Internet 
 
 ## Reverse Proxy
 
-With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+With [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host for `bookmarks.yourdomain.com`
 2. Forward to `http://your-server-ip:9090`
@@ -250,7 +250,7 @@ bookmarks.yourdomain.com {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration details.
 
 ## Backup
 
@@ -277,7 +277,7 @@ docker exec linkding-db pg_dump -U linkding linkding > linkding-db-$(date +%F).s
 
 You can also export bookmarks from the web UI (**Settings > General > Export**) as a portable HTML file that can be imported into any browser or bookmark manager.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -353,15 +353,15 @@ docker compose restart linkding
 
 Linkding is the best self-hosted bookmark manager for people who want something fast and minimal. It launches in seconds, has a clean interface that stays out of your way, and the browser extensions make it practical for daily use. The REST API opens it up for automation. If you're coming from Pocket or Raindrop.io and just want a place to save and search links with tags, linkding is the right choice.
 
-If you need more — full-page archiving, annotations, or collaborative collections — look at [Linkwarden](/apps/linkwarden) or [Wallabag](/apps/wallabag) instead. But for pure bookmark management, linkding does exactly what it should and nothing more.
+If you need more — full-page archiving, annotations, or collaborative collections — look at [Linkwarden](/apps/linkwarden/) or [Wallabag](/apps/wallabag/) instead. But for pure bookmark management, linkding does exactly what it should and nothing more.
 
 ## Related
 
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [Best Self-Hosted Bookmarks and Read Later Apps](/best/bookmarks-read-later)
-- [Linkding vs Wallabag](/compare/linkding-vs-wallabag)
-- [Replace Pocket with Self-Hosted Alternatives](/replace/pocket)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [Best Self-Hosted Bookmarks and Read Later Apps](/best/bookmarks-read-later/)
+- [Linkding vs Wallabag](/compare/linkding-vs-wallabag/)
+- [Replace Pocket with Self-Hosted Alternatives](/replace/pocket/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

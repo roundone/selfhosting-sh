@@ -155,7 +155,7 @@ Mini PCs like the Beelink S12 Pro, ACEMAGIC S1, MinisForum UN100C, and Trigkey G
 
 **This is what we recommend for most self-hosters starting out.** The N100 eliminates the ARM vs x86 trade-off entirely. You get ARM-like power consumption with x86's universal compatibility. Unless you specifically need GPIO or have a sub-$100 budget, the N100 is the better starting point.
 
-For a detailed breakdown of N100 mini PCs, see our [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc).
+For a detailed breakdown of N100 mini PCs, see our [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/).
 
 ## FAQ
 
@@ -181,10 +181,10 @@ Container data (databases, config files, media) transfers between architectures 
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Best NAS for Home Servers](/hardware/best-nas)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Best NAS for Home Servers](/hardware/best-nas/)

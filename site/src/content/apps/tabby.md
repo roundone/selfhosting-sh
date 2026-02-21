@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - NVIDIA GPU with 4+ GB VRAM (recommended) or CPU mode (slower)
 - 8 GB+ RAM
 - 10 GB+ free disk space
@@ -152,7 +152,7 @@ environment:
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -163,7 +163,7 @@ docker run --rm -v tabby_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/tabby-backup.tar.gz /data
 ```
 
-This contains user accounts, repository indexes, and configuration. Models can be re-downloaded. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+This contains user accounts, repository indexes, and configuration. Models can be re-downloaded. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -198,15 +198,15 @@ This contains user accounts, repository indexes, and configuration. Models can b
 
 Tabby is the best self-hosted code completion server for teams. The admin dashboard, user management, repository indexing, and usage analytics make it a proper enterprise-ready tool. The trade-off is that it requires a dedicated GPU for reasonable performance, and the model selection is more limited than using a general-purpose LLM backend like Ollama.
 
-**Choose Tabby** for a centralized code AI server for your team. **Choose Continue.dev + [Ollama](/apps/ollama)** if you want more flexibility and don't need centralized management.
+**Choose Tabby** for a centralized code AI server for your team. **Choose Continue.dev + [Ollama](/apps/ollama/)** if you want more flexibility and don't need centralized management.
 
 ## Related
 
-- [Tabby vs Continue](/compare/tabby-vs-continue)
-- [How to Self-Host Ollama](/apps/ollama)
-- [Ollama vs vLLM](/compare/ollama-vs-vllm)
-- [Self-Hosted GitHub Copilot Alternatives](/replace/github-copilot)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
+- [Tabby vs Continue](/compare/tabby-vs-continue/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [Ollama vs vLLM](/compare/ollama-vs-vllm/)
+- [Self-Hosted GitHub Copilot Alternatives](/replace/github-copilot/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)

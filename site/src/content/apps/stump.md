@@ -17,12 +17,12 @@ affiliateDisclosure: false
 
 [Stump](https://stumpapp.dev/) is a self-hosted comic, manga, and ebook server written in Rust. It scans your library of CBZ, CBR, PDF, and EPUB files, organizes them into series, and provides a web-based reader. Stump is the lightweight, modern alternative to Komga — built for speed and low resource usage.
 
-**Important:** Stump is pre-release software (v0.0.12). The developer explicitly states it's "not ready for normal usage yet." Use it for experimentation, not as your primary library server. For production use, consider [Komga](/apps/komga) or [Kavita](/apps/kavita) instead.
+**Important:** Stump is pre-release software (v0.0.12). The developer explicitly states it's "not ready for normal usage yet." Use it for experimentation, not as your primary library server. For production use, consider [Komga](/apps/komga/) or [Kavita](/apps/kavita/) instead.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (minimum)
 - Storage for your comic/ebook collection
 - A domain name (optional, for remote access)
@@ -119,7 +119,7 @@ Stump works behind a reverse proxy. Example Nginx Proxy Manager configuration:
 - **Forward Port:** `10801`
 - **WebSocket Support:** Enable it (recommended for real-time updates)
 
-For other reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For other reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -131,7 +131,7 @@ tar -czf stump-backup-$(date +%Y%m%d).tar.gz -C /var/lib/docker/volumes stump-co
 docker compose start stump
 ```
 
-Your actual comic/ebook files should be backed up separately as part of your general storage backup strategy. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Your actual comic/ebook files should be backed up separately as part of your general storage backup strategy. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -174,7 +174,7 @@ docker compose up -d
 
 Stump is the fastest and lightest comic/ebook server available. Its Rust foundation makes it ideal for low-resource hardware like a Raspberry Pi. The modern React UI is clean and responsive.
 
-However, it's pre-release software. Missing features include full OPDS support, advanced metadata scraping, and the mature ecosystem of reader apps that [Komga](/apps/komga) offers. If you need production reliability today, use Komga. If you want to experiment with the future of self-hosted comic servers, Stump is worth trying.
+However, it's pre-release software. Missing features include full OPDS support, advanced metadata scraping, and the mature ecosystem of reader apps that [Komga](/apps/komga/) offers. If you need production reliability today, use Komga. If you want to experiment with the future of self-hosted comic servers, Stump is worth trying.
 
 ## FAQ
 
@@ -184,7 +184,7 @@ CBZ, CBR, PDF, and EPUB. These cover the vast majority of comic, manga, and eboo
 
 ### Does Stump have mobile apps?
 
-Not yet. Stump's web reader works on mobile browsers, but there are no dedicated iOS or Android apps. For mobile reading with native apps, [Komga](/apps/komga) has better support through Tachiyomi/Mihon and Panels.
+Not yet. Stump's web reader works on mobile browsers, but there are no dedicated iOS or Android apps. For mobile reading with native apps, [Komga](/apps/komga/) has better support through Tachiyomi/Mihon and Panels.
 
 ### Can I migrate from Komga to Stump?
 
@@ -196,10 +196,10 @@ Yes, but development is focused on the unstable branch. The v0.0.12 release (Oct
 
 ## Related
 
-- [Stump vs Komga](/compare/stump-vs-komga)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Kavita](/apps/kavita)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Stump vs Komga](/compare/stump-vs-komga/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

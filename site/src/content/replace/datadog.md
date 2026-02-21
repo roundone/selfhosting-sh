@@ -40,37 +40,37 @@ Self-hosted monitoring eliminates per-host and per-metric pricing entirely:
 
 ### Grafana + Prometheus — Best Full Replacement
 
-The [Grafana](/apps/grafana) + [Prometheus](/apps/prometheus) stack is the industry-standard open-source monitoring platform. Prometheus collects and stores metrics. Grafana visualizes them in customizable dashboards. Add Loki for logs and Alertmanager for notifications, and you've replicated 90% of Datadog's functionality.
+The [Grafana](/apps/grafana/) + [Prometheus](/apps/prometheus/) stack is the industry-standard open-source monitoring platform. Prometheus collects and stores metrics. Grafana visualizes them in customizable dashboards. Add Loki for logs and Alertmanager for notifications, and you've replicated 90% of Datadog's functionality.
 
 **Why it's the best replacement:** This is what companies migrate to when they leave Datadog. The ecosystem is massive — every major service has a Prometheus exporter. Grafana's dashboard builder matches Datadog's quality. Alertmanager handles complex routing rules.
 
 **Trade-off:** Setup and maintenance require more effort than Datadog's SaaS. You'll spend time configuring scrape targets, building dashboards, and managing storage.
 
-[Read our full guide: How to Self-Host Grafana](/apps/grafana)
+[Read our full guide: How to Self-Host Grafana](/apps/grafana/)
 
 ### Netdata — Best for Quick Setup
 
-[Netdata](/apps/netdata) is a real-time monitoring agent that auto-discovers everything running on your server and immediately starts collecting thousands of metrics. Pre-built dashboards are included — no configuration needed. It's the fastest path from zero to monitoring.
+[Netdata](/apps/netdata/) is a real-time monitoring agent that auto-discovers everything running on your server and immediately starts collecting thousands of metrics. Pre-built dashboards are included — no configuration needed. It's the fastest path from zero to monitoring.
 
 **Why it works:** Install Netdata on each server and you instantly get per-second metrics, auto-detected services, built-in alerting, and a web dashboard. No Prometheus, no exporters, no dashboard building. For monitoring 1-10 servers, Netdata replaces Datadog's infrastructure monitoring in under 5 minutes.
 
 **Trade-off:** Less customizable than Grafana. No log aggregation. The cloud dashboard (optional) has its own pricing for premium features.
 
-[Read our full guide: How to Self-Host Netdata](/apps/netdata)
+[Read our full guide: How to Self-Host Netdata](/apps/netdata/)
 
 ### Uptime Kuma — Best for Uptime Monitoring
 
-If you're using Datadog primarily for uptime checks and status pages, [Uptime Kuma](/apps/uptime-kuma) does exactly that with a beautiful interface. It supports HTTP, TCP, DNS, Docker, and MQTT monitoring with notifications via 90+ channels (Slack, Discord, email, Telegram, etc.).
+If you're using Datadog primarily for uptime checks and status pages, [Uptime Kuma](/apps/uptime-kuma/) does exactly that with a beautiful interface. It supports HTTP, TCP, DNS, Docker, and MQTT monitoring with notifications via 90+ channels (Slack, Discord, email, Telegram, etc.).
 
 **Why it works:** Uptime Kuma is lightweight (a single container), has an excellent UI, and covers the external monitoring use case that Datadog's Synthetic Monitoring handles. Perfect for monitoring websites and APIs.
 
-[Read our full guide: How to Self-Host Uptime Kuma](/apps/uptime-kuma)
+[Read our full guide: How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
 
 ### Beszel — Best Lightweight Agent
 
-[Beszel](/apps/beszel) is a lightweight server monitoring hub with a Docker stats collector. It's designed for self-hosters who want simple, beautiful server monitoring without the complexity of Prometheus.
+[Beszel](/apps/beszel/) is a lightweight server monitoring hub with a Docker stats collector. It's designed for self-hosters who want simple, beautiful server monitoring without the complexity of Prometheus.
 
-[Read our full guide: How to Self-Host Beszel](/apps/beszel)
+[Read our full guide: How to Self-Host Beszel](/apps/beszel/)
 
 ## Migration Guide
 
@@ -116,11 +116,11 @@ At 10+ hosts, self-hosted monitoring pays for itself within the first month.
 
 ## Related
 
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [How to Self-Host Netdata](/apps/netdata)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [Grafana vs Netdata](/compare/grafana-vs-netdata)
-- [Grafana vs Prometheus](/compare/grafana-vs-prometheus)
-- [Self-Hosted Alternatives to UptimeRobot](/replace/uptimerobot)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [How to Self-Host Netdata](/apps/netdata/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [Grafana vs Netdata](/compare/grafana-vs-netdata/)
+- [Grafana vs Prometheus](/compare/grafana-vs-prometheus/)
+- [Self-Hosted Alternatives to UptimeRobot](/replace/uptimerobot/)

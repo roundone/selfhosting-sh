@@ -103,7 +103,7 @@ Calibre-Web has more stars due to Calibre's large user base, but Komga has more 
 
 **Use the tool that matches your content type.** Calibre-Web is the right answer for ebook readers — the Calibre integration, send-to-Kindle, and Kobo sync are features that comic server apps simply don't offer. Komga is the right answer for comic and manga readers — the series organization, Tachiyomi integration, and comic reader are purpose-built for that content.
 
-If you have both ebooks and comics, consider running both. Or use [Kavita](/apps/kavita), which handles both ebooks and comics reasonably well in a single app.
+If you have both ebooks and comics, consider running both. Or use [Kavita](/apps/kavita/), which handles both ebooks and comics reasonably well in a single app.
 
 ## FAQ
 
@@ -113,11 +113,11 @@ Yes. Point Calibre-Web at your Calibre ebook library and Komga at your comics/ma
 
 ### Which should I choose if I have both ebooks and comics?
 
-Run both, or use [Kavita](/apps/kavita) as a single solution. Kavita handles EPUB and comics in one app, though it lacks Calibre-Web's send-to-Kindle and Komga's Tachiyomi integration.
+Run both, or use [Kavita](/apps/kavita/) as a single solution. Kavita handles EPUB and comics in one app, though it lacks Calibre-Web's send-to-Kindle and Komga's Tachiyomi integration.
 
 ### Does either support audiobooks?
 
-No. For audiobooks, use [Audiobookshelf](/apps/audiobookshelf).
+No. For audiobooks, use [Audiobookshelf](/apps/audiobookshelf/).
 
 ### Can Komga read Calibre libraries?
 
@@ -125,10 +125,10 @@ No. Komga manages its own library based on folder structure. It doesn't read Cal
 
 ## Related
 
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Kavita](/apps/kavita)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)

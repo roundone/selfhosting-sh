@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (256 MB absolute minimum, 512+ MB recommended)
 - 1 GB of free disk space
 - A domain name (recommended for remote access via HTTPS)
@@ -283,7 +283,7 @@ server:
 
 An Nginx Proxy Manager location entry for SearXNG needs no special headers beyond the standard proxy configuration. Point it at `http://searxng:8080` (if on the same Docker network) or `http://your-server-ip:8080`.
 
-For full reverse proxy setup instructions, see: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For full reverse proxy setup instructions, see: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -299,7 +299,7 @@ The Valkey volume stores cached search results. It is ephemeral and does not nee
 tar -czf searxng-backup-$(date +%Y%m%d).tar.gz config/
 ```
 
-For a full backup strategy, see: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a full backup strategy, see: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -371,11 +371,11 @@ Setup takes five minutes. Resource usage is negligible. The only real trade-off 
 
 ## Related
 
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Self-Hosted Alternatives to Google Search](/replace/google-search)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [How to Self-Host AdGuard Home](/apps/adguard-home) -- pair with SearXNG for full DNS-level ad blocking alongside private search
-- [How to Self-Host Whoogle](/apps/whoogle) -- a lighter alternative if you only want Google results without tracking
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Self-Hosted Alternatives to Google Search](/replace/google-search/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/) -- pair with SearXNG for full DNS-level ad blocking alongside private search
+- [How to Self-Host Whoogle](/apps/whoogle/) -- a lighter alternative if you only want Google results without tracking
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

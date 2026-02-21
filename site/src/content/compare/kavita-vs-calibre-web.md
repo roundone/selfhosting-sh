@@ -130,10 +130,10 @@ Kavita has been tested with 50,000+ files. Calibre-Web works well up to ~20,000 
 
 ## Related
 
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Komga](/apps/komga)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Komga](/apps/komga/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)

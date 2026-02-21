@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB+ RAM (Sonic is extremely lightweight)
 - 1 GB free disk space
 - No GPU required
@@ -173,7 +173,7 @@ All client connections must authenticate with `START [mode] [password]`.
 
 ## Reverse Proxy
 
-Sonic uses a TCP protocol, not HTTP. You cannot put it behind a standard HTTP reverse proxy. Access it directly via port 1491 from your application servers. Restrict access via firewall rules. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Sonic uses a TCP protocol, not HTTP. You cannot put it behind a standard HTTP reverse proxy. Access it directly via port 1491 from your application servers. Restrict access via firewall rules. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -184,7 +184,7 @@ docker run --rm -v sonic_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/sonic-backup.tar.gz /data
 ```
 
-Sonic stores search indexes only. If you lose the data, you can re-index from your source database. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Sonic stores search indexes only. If you lose the data, you can re-index from your source database. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -213,14 +213,14 @@ Sonic stores search indexes only. If you lose the data, you can re-index from yo
 
 Sonic is the lightest search engine you can self-host. If you need basic full-text search and auto-suggest for an application and don't want the overhead of Elasticsearch or even Meilisearch, Sonic does the job in 20 MB of RAM. The trade-off is a limited feature set — no faceting, no aggregations, no HTTP API.
 
-**Choose Sonic** for minimal search on resource-constrained servers (Raspberry Pi, cheap VPS). **Choose [Meilisearch](/apps/meilisearch)** for a more complete search engine with an HTTP API. **Choose [Elasticsearch](/apps/elasticsearch)** for full-featured search and analytics.
+**Choose Sonic** for minimal search on resource-constrained servers (Raspberry Pi, cheap VPS). **Choose [Meilisearch](/apps/meilisearch/)** for a more complete search engine with an HTTP API. **Choose [Elasticsearch](/apps/elasticsearch/)** for full-featured search and analytics.
 
 ## Related
 
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Typesense](/apps/typesense)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Typesense](/apps/typesense/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

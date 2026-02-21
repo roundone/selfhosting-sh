@@ -84,7 +84,7 @@ volumes:
 
 Workers run separately — typically on the same machine or wherever your flows need to execute. You install Prefect in your Python environment and start a worker that polls the server for work.
 
-**Airflow** requires a multi-container deployment. The official Docker Compose has 5+ services, Redis for the Celery executor, and significant configuration. See the [Airflow vs n8n comparison](/compare/airflow-vs-n8n) for Airflow's architecture details.
+**Airflow** requires a multi-container deployment. The official Docker Compose has 5+ services, Redis for the Celery executor, and significant configuration. See the [Airflow vs n8n comparison](/compare/airflow-vs-n8n/) for Airflow's architecture details.
 
 ## Performance and Resource Usage
 
@@ -156,9 +156,9 @@ Both scale horizontally. Airflow with Celery or Kubernetes executors handles tho
 
 ## Related
 
-- [Airflow vs n8n](/compare/airflow-vs-n8n)
-- [Temporal vs Airflow](/compare/temporal-vs-airflow)
-- [Temporal vs n8n](/compare/temporal-vs-n8n)
-- [Windmill vs n8n](/compare/windmill-vs-n8n)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
+- [Airflow vs n8n](/compare/airflow-vs-n8n/)
+- [Temporal vs Airflow](/compare/temporal-vs-airflow/)
+- [Temporal vs n8n](/compare/temporal-vs-n8n/)
+- [Windmill vs n8n](/compare/windmill-vs-n8n/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)

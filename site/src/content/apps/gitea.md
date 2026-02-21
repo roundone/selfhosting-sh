@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (1 GB recommended)
 - 2 GB of free disk space (plus storage for repositories)
 - A domain name (recommended for SSH access)
@@ -201,7 +201,7 @@ Nginx Proxy Manager config:
 - **Forward Port:** 3000
 - **Enable WebSocket Support:** Yes
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -215,7 +215,7 @@ docker compose exec gitea_db pg_dump -U gitea gitea > gitea-backup-$(date +%Y%m%
 
 The `gitea dump` command creates a ZIP with repositories, database, configuration, and LFS data.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -247,14 +247,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup appr
 
 ## Verdict
 
-Gitea is the best lightweight self-hosted Git platform. It gives you 90% of GitHub's features at 10% of GitLab's resource usage. The Go binary is fast, the web UI is clean, and Gitea Actions provides CI/CD without an external service. If you need a heavier platform with built-in DevOps features (container registry, monitoring, etc.), look at [GitLab CE](/apps/gitlab-ce). If you want a community-governed fork, check [Forgejo](/apps/forgejo). For most self-hosters, Gitea hits the sweet spot.
+Gitea is the best lightweight self-hosted Git platform. It gives you 90% of GitHub's features at 10% of GitLab's resource usage. The Go binary is fast, the web UI is clean, and Gitea Actions provides CI/CD without an external service. If you need a heavier platform with built-in DevOps features (container registry, monitoring, etc.), look at [GitLab CE](/apps/gitlab-ce/). If you want a community-governed fork, check [Forgejo](/apps/forgejo/). For most self-hosters, Gitea hits the sweet spot.
 
 ## Related
 
-- [Best Self-Hosted Git Platforms](/best/git-hosting)
-- [Gitea vs Forgejo](/compare/gitea-vs-forgejo)
-- [Gitea vs GitLab](/compare/gitea-vs-gitlab)
-- [Replace GitHub with Self-Hosted Git](/replace/github)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Git Platforms](/best/git-hosting/)
+- [Gitea vs Forgejo](/compare/gitea-vs-forgejo/)
+- [Gitea vs GitLab](/compare/gitea-vs-gitlab/)
+- [Replace GitHub with Self-Hosted Git](/replace/github/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

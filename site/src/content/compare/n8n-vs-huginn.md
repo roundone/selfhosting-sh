@@ -135,9 +135,9 @@ n8n uses the Sustainable Use License, which permits self-hosting for internal us
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Huginn](/apps/huginn)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Huginn](/apps/huginn/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)

@@ -21,12 +21,12 @@ affiliateDisclosure: false
 
 ## What Is Dockge?
 
-[Dockge](https://github.com/louislam/dockge) is a Docker Compose stack manager with a web UI, created by the developer behind Uptime Kuma. Unlike [Portainer](/apps/portainer), which manages individual containers and has a complex feature set, Dockge focuses exclusively on Docker Compose stacks. You create, edit, start, stop, and update `compose.yaml` files through a clean interface — and the files stay on disk as standard Compose files you can use anywhere. It is lightweight, opinionated, and ideal if your self-hosting workflow revolves around Docker Compose.
+[Dockge](https://github.com/louislam/dockge) is a Docker Compose stack manager with a web UI, created by the developer behind Uptime Kuma. Unlike [Portainer](/apps/portainer/), which manages individual containers and has a complex feature set, Dockge focuses exclusively on Docker Compose stacks. You create, edit, start, stop, and update `compose.yaml` files through a clean interface — and the files stay on disk as standard Compose files you can use anywhere. It is lightweight, opinionated, and ideal if your self-hosting workflow revolves around Docker Compose.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (Dockge is very lightweight)
 - A domain name (optional, for remote access)
 
@@ -132,7 +132,7 @@ volumes:
   - ./ssl:/app/data/ssl
 ```
 
-For most setups, it's simpler to put Dockge behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) and let it handle SSL.
+For most setups, it's simpler to put Dockge behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) and let it handle SSL.
 
 ### Private Registry Authentication
 
@@ -152,13 +152,13 @@ Dockge supports managing remote Docker hosts via agent nodes. Deploy a Dockge ag
 
 ## Reverse Proxy
 
-With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+With [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host for `dockge.yourdomain.com`
 2. Forward to `http://your-server-ip:5001`
 3. Enable SSL and WebSocket support
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the full configuration.
 
 ## Backup
 
@@ -172,7 +172,7 @@ tar czf dockge-data-backup.tar.gz /opt/dockge/data
 tar czf dockge-stacks-backup.tar.gz /opt/stacks
 ```
 
-The stacks directory contains your `compose.yaml` files and any `.env` files — this is the most important backup. The data directory stores user accounts and Dockge settings. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The stacks directory contains your `compose.yaml` files and any `.env` files — this is the most important backup. The data directory stores user accounts and Dockge settings. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -230,7 +230,7 @@ Yes. Dockge is fully open source under the MIT license.
 
 ### Should I use Dockge or Portainer?
 
-Use Dockge if you work exclusively with Docker Compose and want a simple, focused tool. Use [Portainer](/apps/portainer) if you need to manage individual containers, Docker Swarm, Kubernetes, or need a more comprehensive management interface. See our [Dockge vs Portainer comparison](/compare/portainer-vs-dockge).
+Use Dockge if you work exclusively with Docker Compose and want a simple, focused tool. Use [Portainer](/apps/portainer/) if you need to manage individual containers, Docker Swarm, Kubernetes, or need a more comprehensive management interface. See our [Dockge vs Portainer comparison](/compare/portainer-vs-dockge/).
 
 ### Can I run Dockge on a Raspberry Pi?
 
@@ -242,18 +242,18 @@ Dockge reads and writes standard `compose.yaml` files. You can edit them outside
 
 ## Verdict
 
-Dockge is the best Docker Compose management UI for self-hosters who want simplicity. It does one thing — manage Compose stacks — and does it well. The files stay on disk as standard Compose files, so you're never locked in. For users who need more than Compose management (individual containers, Swarm, Kubernetes), [Portainer](/apps/portainer) is the better choice. For everyone else, Dockge is the right tool.
+Dockge is the best Docker Compose management UI for self-hosters who want simplicity. It does one thing — manage Compose stacks — and does it well. The files stay on disk as standard Compose files, so you're never locked in. For users who need more than Compose management (individual containers, Swarm, Kubernetes), [Portainer](/apps/portainer/) is the better choice. For everyone else, Dockge is the right tool.
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Dockge vs Portainer](/compare/portainer-vs-dockge)
-- [Cosmos Cloud vs Dockge](/compare/cosmos-cloud-vs-dockge)
-- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge)
-- [Watchtower (deprecated) vs Dockge](/compare/watchtower-vs-dockge)
-- [Diun vs Dockge](/compare/diun-vs-dockge)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Dockge vs Portainer](/compare/portainer-vs-dockge/)
+- [Cosmos Cloud vs Dockge](/compare/cosmos-cloud-vs-dockge/)
+- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge/)
+- [Watchtower (deprecated) vs Dockge](/compare/watchtower-vs-dockge/)
+- [Diun vs Dockge](/compare/diun-vs-dockge/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

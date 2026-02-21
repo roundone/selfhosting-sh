@@ -89,14 +89,14 @@ ioBroker is the better platform for anyone building a serious smart home. Its ad
 
 Domoticz remains relevant for resource-constrained deployments where you just need basic device control without the overhead. If you're running a Pi Zero and want to toggle some Z-Wave switches, Domoticz does that with minimal fuss.
 
-For most users starting fresh, ioBroker (or [Home Assistant](/apps/home-assistant), which outclasses both) is the better investment of your time.
+For most users starting fresh, ioBroker (or [Home Assistant](/apps/home-assistant/), which outclasses both) is the better investment of your time.
 
 ## Related
 
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [How to Self-Host ioBroker](/apps/iobroker)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [openHAB vs ioBroker](/compare/openhab-vs-iobroker)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Amazon Alexa](/replace/amazon-alexa)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [How to Self-Host ioBroker](/apps/iobroker/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [openHAB vs ioBroker](/compare/openhab-vs-iobroker/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Amazon Alexa](/replace/amazon-alexa/)

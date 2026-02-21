@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space (plus storage for archived pages)
 - 1 GB of RAM (minimum)
 - A domain name (optional, for remote access)
@@ -180,13 +180,13 @@ NEXTAUTH_URL=https://bookmarks.example.com
 
 Karakeep uses NextAuth.js — the URL must exactly match what users type in their browser, including the protocol. Mismatch causes authentication failures.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for Nginx Proxy Manager or Traefik configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for Nginx Proxy Manager or Traefik configuration.
 
 ## Reverse Proxy
 
 Karakeep runs on port 3000. Point your reverse proxy to `http://karakeep:3000`. No special headers or WebSocket configuration needed for basic use.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full instructions.
 
 ## Backup
 
@@ -204,7 +204,7 @@ docker run --rm -v karakeep_meilisearch:/meili_data -v $(pwd):/backup alpine \
 docker compose up -d
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -272,17 +272,17 @@ Common causes: missing `NEXTAUTH_SECRET`, invalid `MEILI_MASTER_KEY`, or Meilise
 
 ## Verdict
 
-Karakeep is the best self-hosted bookmark manager if you want AI-powered auto-tagging and full-page archiving. The Meilisearch integration makes search fast, the browser extensions work well, and the mobile apps are solid. It's more resource-heavy than [Linkwarden](/apps/linkwarden) or [Linkding](/apps/linkding) due to the Chrome and Meilisearch containers, but the features justify the overhead.
+Karakeep is the best self-hosted bookmark manager if you want AI-powered auto-tagging and full-page archiving. The Meilisearch integration makes search fast, the browser extensions work well, and the mobile apps are solid. It's more resource-heavy than [Linkwarden](/apps/linkwarden/) or [Linkding](/apps/linkding/) due to the Chrome and Meilisearch containers, but the features justify the overhead.
 
-If you just need simple bookmarks without AI or archiving, [Linkding](/apps/linkding) is lighter. If you want a read-later app with article parsing, [Wallabag](/apps/wallabag) is more focused. Karakeep sits in the sweet spot between bookmark manager and personal archive.
+If you just need simple bookmarks without AI or archiving, [Linkding](/apps/linkding/) is lighter. If you want a read-later app with article parsing, [Wallabag](/apps/wallabag/) is more focused. Karakeep sits in the sweet spot between bookmark manager and personal archive.
 
 ## Related
 
-- [How to Self-Host Linkwarden](/apps/linkwarden)
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [How to Self-Host Linkding](/apps/linkding)
-- [Best Self-Hosted Bookmarks & Read Later Apps](/best/bookmarks-read-later)
-- [Self-Hosted Alternatives to Pocket](/replace/pocket)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Linkwarden](/apps/linkwarden/)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [How to Self-Host Linkding](/apps/linkding/)
+- [Best Self-Hosted Bookmarks & Read Later Apps](/best/bookmarks-read-later/)
+- [Self-Hosted Alternatives to Pocket](/replace/pocket/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

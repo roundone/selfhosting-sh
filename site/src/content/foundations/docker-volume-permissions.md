@@ -21,9 +21,9 @@ Understanding how Docker maps users between the container and host is the key to
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Linux file permissions basics ([Linux Permissions](/foundations/linux-permissions))
-- Docker volumes basics ([Docker Volumes](/foundations/docker-volumes))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Linux file permissions basics ([Linux Permissions](/foundations/linux-permissions/))
+- Docker volumes basics ([Docker Volumes](/foundations/docker-volumes/))
 
 ## How Container Users Work
 
@@ -344,9 +344,9 @@ The container is running as root (UID 0). Either set `user: "1000:1000"` in your
 
 ## Related
 
-- [Docker Volumes](/foundations/docker-volumes)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Security](/foundations/docker-security)
-- [Docker Common Issues](/foundations/docker-common-issues)
-- [Docker Container Won't Start](/foundations/docker-container-not-starting)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Security](/foundations/docker-security/)
+- [Docker Common Issues](/foundations/docker-common-issues/)
+- [Docker Container Won't Start](/foundations/docker-container-not-starting/)

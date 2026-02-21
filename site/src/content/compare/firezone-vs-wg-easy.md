@@ -110,7 +110,7 @@ For the typical self-hoster running a home lab, **wg-easy is the right answer**.
 
 The deal-breaker for many self-hosters will be Firezone's cloud-hosted control plane. If you want everything on your own metal, Firezone isn't an option. If you're comfortable with the split architecture (and the free tier covers your needs), it's a capable platform.
 
-**For a fully self-hosted zero-trust alternative, look at [NetBird](/apps/netbird)** — it offers similar policy-based access with a self-hostable control plane.
+**For a fully self-hosted zero-trust alternative, look at [NetBird](/apps/netbird/)** — it offers similar policy-based access with a self-hostable control plane.
 
 ## Frequently Asked Questions
 
@@ -136,10 +136,10 @@ Existing Firezone tunnels continue working. New connections and policy changes w
 
 ## Related
 
-- [How to Self-Host Firezone](/apps/firezone)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host NetBird](/apps/netbird)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [NetBird vs Tailscale](/compare/netbird-vs-tailscale)
-- [Self-Hosted NordVPN Alternatives](/replace/nordvpn)
+- [How to Self-Host Firezone](/apps/firezone/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host NetBird](/apps/netbird/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [NetBird vs Tailscale](/compare/netbird-vs-tailscale/)
+- [Self-Hosted NordVPN Alternatives](/replace/nordvpn/)

@@ -28,7 +28,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB+ of free RAM (more with many cameras)
 - IP cameras with RTSP support
 - Google Coral USB TPU (recommended, ~$30) or Intel CPU with OpenVINO support
@@ -276,7 +276,7 @@ WebSocket Support: ON (required for live view)
 
 For Traefik or Caddy, ensure WebSocket passthrough is enabled. Frigate's live view and event streaming rely on WebSocket connections.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -293,7 +293,7 @@ tar czf frigate-config-backup.tar.gz ./config/
 rsync -av /path/to/recordings/ /backup/frigate-recordings/
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -346,7 +346,7 @@ docker logs frigate 2>&1 | grep -i "error"
 
 Frigate is the best self-hosted NVR available. Its AI object detection with Coral TPU support is the killer feature — you get reliable person/car/animal detection with near-zero CPU overhead for ~$30. Home Assistant integration turns dumb cameras into smart automation triggers. The project is actively maintained, well-documented, and has a thriving community.
 
-The main limitation is that Frigate is Linux/Docker only and requires some YAML configuration. If you're comfortable with Docker and want the best self-hosted surveillance system, Frigate is the answer. If you need a Windows GUI-based NVR, look at [Blue Iris](/compare/frigate-vs-blue-iris).
+The main limitation is that Frigate is Linux/Docker only and requires some YAML configuration. If you're comfortable with Docker and want the best self-hosted surveillance system, Frigate is the answer. If you need a Windows GUI-based NVR, look at [Blue Iris](/compare/frigate-vs-blue-iris/).
 
 ## Frequently Asked Questions
 
@@ -364,13 +364,13 @@ Yes. Frigate works standalone as an NVR with its web UI. You don't need MQTT or 
 
 ## Related
 
-- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder)
-- [Frigate vs Blue Iris](/compare/frigate-vs-blue-iris)
-- [Frigate vs Shinobi](/compare/frigate-vs-shinobi)
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring](/replace/ring)
-- [Replace Nest Cam](/replace/nest-cam)
-- [NVR Hardware Guide](/hardware/nvr-hardware)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder/)
+- [Frigate vs Blue Iris](/compare/frigate-vs-blue-iris/)
+- [Frigate vs Shinobi](/compare/frigate-vs-shinobi/)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring](/replace/ring/)
+- [Replace Nest Cam](/replace/nest-cam/)
+- [NVR Hardware Guide](/hardware/nvr-hardware/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

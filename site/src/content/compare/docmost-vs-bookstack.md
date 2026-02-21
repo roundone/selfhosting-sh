@@ -96,14 +96,14 @@ BookStack is the safer choice in 2026. A decade of development has produced a po
 
 Docmost is the forward-looking choice. Its real-time collaboration, modern editor, and workspace model feel like the next generation of self-hosted wikis. If you're starting fresh and real-time editing is important, Docmost is worth the trade-off in maturity.
 
-For teams migrating from Confluence, [BookStack](/apps/bookstack) is the natural fit (similar structure). For teams migrating from Notion, [Docmost](/apps/docmost) or [Outline](/apps/outline) feel more familiar.
+For teams migrating from Confluence, [BookStack](/apps/bookstack/) is the natural fit (similar structure). For teams migrating from Notion, [Docmost](/apps/docmost/) or [Outline](/apps/outline/) feel more familiar.
 
 ## Related
 
-- [How to Self-Host Docmost](/apps/docmost)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Docmost vs Outline](/compare/docmost-vs-outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Docmost vs Outline](/compare/docmost-vs-outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)

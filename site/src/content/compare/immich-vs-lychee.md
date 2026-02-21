@@ -103,7 +103,7 @@ For most self-hosters looking to move away from cloud photo services, Immich is 
 ## Frequently Asked Questions
 
 ### Can Lychee auto-upload photos from my phone?
-No. Lychee has no native mobile app and no background upload feature. You'd need to manually upload through the web interface or use a tool like Syncthing to sync photos to a folder, then import them. For auto-upload, use [Immich](/apps/immich).
+No. Lychee has no native mobile app and no background upload feature. You'd need to manually upload through the web interface or use a tool like Syncthing to sync photos to a folder, then import them. For auto-upload, use [Immich](/apps/immich/).
 
 ### Does Immich work on a Raspberry Pi?
 Technically yes, but performance is poor. The ML models need significant RAM and CPU. A Raspberry Pi 4 with 8 GB can run Immich with ML disabled, but you lose the best features. Lychee runs well on a Pi 4.
@@ -113,9 +113,9 @@ There's no direct migration tool, but both store original files. You can point I
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host Lychee](/apps/lychee)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)

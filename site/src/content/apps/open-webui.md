@@ -22,15 +22,15 @@ affiliateDisclosure: false
 
 ## What Is Open WebUI?
 
-[Open WebUI](https://github.com/open-webui/open-webui) is a self-hosted web interface for interacting with large language models. It provides a ChatGPT-like experience — conversation history, model switching, file uploads, web search, and multi-user support — all running on your own hardware. It connects to [Ollama](/apps/ollama) for local models and supports OpenAI-compatible APIs for cloud models.
+[Open WebUI](https://github.com/open-webui/open-webui) is a self-hosted web interface for interacting with large language models. It provides a ChatGPT-like experience — conversation history, model switching, file uploads, web search, and multi-user support — all running on your own hardware. It connects to [Ollama](/apps/ollama/) for local models and supports OpenAI-compatible APIs for cloud models.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM minimum (8 GB+ recommended with Ollama)
 - 5 GB of free disk space (plus model storage)
-- [Ollama](/apps/ollama) running locally or accessible on the network
+- [Ollama](/apps/ollama/) running locally or accessible on the network
 
 ## Docker Compose Configuration
 
@@ -220,7 +220,7 @@ Enable web search so models can access current information:
 
 1. Go to **Admin Panel** > **Settings** > **Web Search**
 2. Configure a search provider (SearXNG, Google, Brave, etc.)
-3. If you're self-hosting [SearXNG](/apps/searxng), point it to your instance
+3. If you're self-hosting [SearXNG](/apps/searxng/), point it to your instance
 
 ### Model Presets and Customization
 
@@ -266,7 +266,7 @@ location / {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -281,7 +281,7 @@ docker compose start open-webui
 
 The data volume contains the database (conversations, users, settings), uploaded files, and custom configurations.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -342,18 +342,18 @@ proxy_cache off;
 
 ## Verdict
 
-Open WebUI is the best self-hosted ChatGPT alternative. The interface is polished, feature-rich, and actively developed. Combined with [Ollama](/apps/ollama), you get a fully local AI assistant with zero data leaving your network. Multi-user support, conversation history, document uploads, and web search make it genuinely useful for daily work.
+Open WebUI is the best self-hosted ChatGPT alternative. The interface is polished, feature-rich, and actively developed. Combined with [Ollama](/apps/ollama/), you get a fully local AI assistant with zero data leaving your network. Multi-user support, conversation history, document uploads, and web search make it genuinely useful for daily work.
 
-If you want a simpler text-generation interface without the ChatGPT-style features, [Text Generation WebUI](/apps/text-generation-webui) gives more low-level control. But for most people, Open WebUI + Ollama is the right stack.
+If you want a simpler text-generation interface without the ChatGPT-style features, [Text Generation WebUI](/apps/text-generation-webui/) gives more low-level control. But for most people, Open WebUI + Ollama is the right stack.
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host LocalAI](/apps/localai)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui)
-- [Self-Hosted Alternatives to ChatGPT](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [GPU Passthrough in Docker](/foundations/gpu-passthrough-docker)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host LocalAI](/apps/localai/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui/)
+- [Self-Hosted Alternatives to ChatGPT](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [GPU Passthrough in Docker](/foundations/gpu-passthrough-docker/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

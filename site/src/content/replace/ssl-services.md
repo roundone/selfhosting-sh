@@ -36,7 +36,7 @@ Paid SSL certificates are a relic. Since Let's Encrypt launched in 2016, there i
 
 ### Caddy — Best Overall (Zero-Config SSL)
 
-[Caddy](/apps/caddy) is the gold standard for automated HTTPS. Every site you add to the Caddyfile gets a Let's Encrypt certificate automatically. No configuration, no commands, no cron jobs. Caddy handles provisioning, renewal, OCSP stapling, and HTTP-to-HTTPS redirection without a single line of SSL-related config.
+[Caddy](/apps/caddy/) is the gold standard for automated HTTPS. Every site you add to the Caddyfile gets a Let's Encrypt certificate automatically. No configuration, no commands, no cron jobs. Caddy handles provisioning, renewal, OCSP stapling, and HTTP-to-HTTPS redirection without a single line of SSL-related config.
 
 Caddy also supports:
 - Wildcard certificates (via DNS challenge)
@@ -44,23 +44,23 @@ Caddy also supports:
 - ACME with any compatible CA (Let's Encrypt, ZeroSSL, custom)
 - Automatic OCSP stapling
 
-[Read our full guide: How to Self-Host Caddy with Docker](/apps/caddy)
+[Read our full guide: How to Self-Host Caddy with Docker](/apps/caddy/)
 
 ### Traefik — Best for Docker Environments
 
-[Traefik](/apps/traefik) provisions Let's Encrypt certificates per-service via Docker labels. When you deploy a new container with the right labels, Traefik creates a route and provisions a certificate automatically. Like Caddy, it handles renewal and OCSP stapling.
+[Traefik](/apps/traefik/) provisions Let's Encrypt certificates per-service via Docker labels. When you deploy a new container with the right labels, Traefik creates a route and provisions a certificate automatically. Like Caddy, it handles renewal and OCSP stapling.
 
 Traefik supports HTTP, TLS-ALPN, and DNS challenges, plus wildcard certificates. Certificate storage is configurable (file-based by default, but can use Consul, etcd, or other stores).
 
-[Read our full guide: How to Self-Host Traefik with Docker](/apps/traefik)
+[Read our full guide: How to Self-Host Traefik with Docker](/apps/traefik/)
 
 ### Nginx Proxy Manager — Best for GUI Management
 
-[Nginx Proxy Manager](/apps/nginx-proxy-manager) provides a web UI where enabling SSL is literally a checkbox. Click "Request a new SSL Certificate," select "Force SSL," and NPM handles the rest. It supports HTTP and DNS challenges, wildcard certificates, and automatic renewal.
+[Nginx Proxy Manager](/apps/nginx-proxy-manager/) provides a web UI where enabling SSL is literally a checkbox. Click "Request a new SSL Certificate," select "Force SSL," and NPM handles the rest. It supports HTTP and DNS challenges, wildcard certificates, and automatic renewal.
 
 For self-hosters who prefer GUIs, NPM makes SSL certificate management as simple as it gets.
 
-[Read our full guide: How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
+[Read our full guide: How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
 
 ### Certbot — Best for Existing Nginx/Apache Setups
 
@@ -70,7 +70,7 @@ For self-hosters who prefer GUIs, NPM makes SSL certificate management as simple
 
 ### Migrating from Paid SSL to Caddy
 
-1. Deploy Caddy on your server ([guide](/apps/caddy))
+1. Deploy Caddy on your server ([guide](/apps/caddy/))
 2. Add your sites to the Caddyfile — HTTPS is automatic
 3. Update DNS to point to your server
 4. Remove the old paid SSL certificate from your server
@@ -80,7 +80,7 @@ No certificate import needed. Caddy provisions fresh Let's Encrypt certificates 
 
 ### Migrating from Paid SSL to Nginx Proxy Manager
 
-1. Deploy NPM ([guide](/apps/nginx-proxy-manager))
+1. Deploy NPM ([guide](/apps/nginx-proxy-manager/))
 2. Create proxy hosts for your sites
 3. Enable SSL on each host — NPM provisions certificates via Let's Encrypt
 4. Update DNS records
@@ -88,7 +88,7 @@ No certificate import needed. Caddy provisions fresh Let's Encrypt certificates 
 
 ### Migrating from Paid SSL to Traefik
 
-1. Deploy Traefik ([guide](/apps/traefik))
+1. Deploy Traefik ([guide](/apps/traefik/))
 2. Add Docker labels to your services for routing and SSL
 3. Traefik auto-provisions certificates
 4. Update DNS records
@@ -118,10 +118,10 @@ The only SSL feature you cannot get for free is Extended Validation (EV), which 
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

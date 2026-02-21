@@ -86,10 +86,10 @@ For pure documentation, BookStack wins. For "Notion but self-hosted," AppFlowy i
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)

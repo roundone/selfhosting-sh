@@ -26,11 +26,11 @@ NZBGet is a Usenet downloader optimized for performance. It downloads NZB files 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus download storage)
 - 256 MB of RAM (minimum)
 - A Usenet provider subscription
-- A Usenet indexer (or [Prowlarr](/apps/prowlarr) for indexer management)
+- A Usenet indexer (or [Prowlarr](/apps/prowlarr/) for indexer management)
 
 ## Docker Compose Configuration
 
@@ -166,7 +166,7 @@ NZBGet supports post-processing scripts for notifications, cleanup, and integrat
 
 ## Reverse Proxy
 
-NZBGet works behind a reverse proxy on port 6789. For more options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+NZBGet works behind a reverse proxy on port 6789. For more options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -178,7 +178,7 @@ tar -czf nzbget-backup-$(date +%Y%m%d).tar.gz /var/lib/docker/volumes/nzbget-con
 docker compose start nzbget
 ```
 
-The config directory contains settings and download history. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The config directory contains settings and download history. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -207,7 +207,7 @@ The config directory contains settings and download history. See [Backup Strateg
 
 NZBGet is the performance-oriented choice for Usenet downloading. It's faster and lighter than SABnzbd while providing all the features needed for a complete *arr stack integration. The C++ codebase makes it significantly faster at unpacking large archives.
 
-If you use Usenet, NZBGet plus [Prowlarr](/apps/prowlarr) plus [Sonarr](/apps/sonarr)/[Radarr](/apps/radarr) is a proven automation stack.
+If you use Usenet, NZBGet plus [Prowlarr](/apps/prowlarr/) plus [Sonarr](/apps/sonarr/)/[Radarr](/apps/radarr/) is a proven automation stack.
 
 ## FAQ
 
@@ -217,7 +217,7 @@ NZBGet is faster (C++ vs Python) and uses less RAM. SABnzbd has a more polished 
 
 ### Do I need both NZBGet and qBittorrent?
 
-Only if you use both Usenet and torrents. Many people run both — NZBGet for Usenet and [qBittorrent](/apps/qbittorrent) for torrents — to maximize download availability.
+Only if you use both Usenet and torrents. Many people run both — NZBGet for Usenet and [qBittorrent](/apps/qbittorrent/) for torrents — to maximize download availability.
 
 ### Is NZBGet still maintained?
 
@@ -225,10 +225,10 @@ Yes. NZBGet was briefly abandoned in 2023 but was forked and revived. The curren
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host SABnzbd](/apps/sabnzbd)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host SABnzbd](/apps/sabnzbd/)
+- [Best Self-Hosted Download Management](/best/download-management/)

@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM (minimum)
 - A domain name (optional, for sharing pads)
@@ -189,7 +189,7 @@ IMPORT_MAX_FILE_SIZE: "52428800"  # 50 MB max file import
 
 ### API Key
 
-Etherpad exposes an HTTP API for programmatic pad management. The API key is auto-generated and stored in the data volume at `APIKEY.txt`. Use it for integrations with [n8n](/apps/n8n), scripts, or custom applications.
+Etherpad exposes an HTTP API for programmatic pad management. The API key is auto-generated and stored in the data volume at `APIKEY.txt`. Use it for integrations with [n8n](/apps/n8n/), scripts, or custom applications.
 
 ## Reverse Proxy
 
@@ -212,7 +212,7 @@ location / {
 }
 ```
 
-Set `TRUST_PROXY: "true"` when running behind a reverse proxy. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Set `TRUST_PROXY: "true"` when running behind a reverse proxy. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -231,7 +231,7 @@ docker run --rm -v etherpad_etherpad-data:/data -v $(pwd):/backup alpine \
   tar -czf /backup/etherpad-data-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -281,16 +281,16 @@ If using `ETHERPAD_PLUGINS`, verify the plugin names are correct (check the Ethe
 
 Etherpad is the simplest self-hosted solution for real-time collaborative editing. Its biggest strength is zero friction — share a link, start typing, no accounts needed. The plugin system extends it well beyond basic text editing.
 
-For Markdown-specific collaboration, [HedgeDoc](/apps/hedgedoc) is a better fit. For full knowledge management, [BookStack](/apps/bookstack) or [Outline](/apps/outline) are more appropriate. Etherpad is best when you need a shared writing space with minimal setup and no login requirements — meeting notes, brainstorming sessions, and ad-hoc collaboration.
+For Markdown-specific collaboration, [HedgeDoc](/apps/hedgedoc/) is a better fit. For full knowledge management, [BookStack](/apps/bookstack/) or [Outline](/apps/outline/) are more appropriate. Etherpad is best when you need a shared writing space with minimal setup and no login requirements — meeting notes, brainstorming sessions, and ad-hoc collaboration.
 
 ## Related
 
-- [How to Self-Host HedgeDoc](/apps/hedgedoc)
-- [HedgeDoc vs Etherpad](/compare/hedgedoc-vs-etherpad)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Alternatives to Notion](/replace/notion)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host HedgeDoc](/apps/hedgedoc/)
+- [HedgeDoc vs Etherpad](/compare/hedgedoc-vs-etherpad/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Alternatives to Notion](/replace/notion/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

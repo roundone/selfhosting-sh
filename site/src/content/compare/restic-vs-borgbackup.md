@@ -156,7 +156,7 @@ Neither tool has a built-in scheduler. Both need external automation.
 
 **For Restic:** Use [Resticprofile](https://github.com/creativeprojects/resticprofile), [Autorestic](https://autorestic.vercel.app/), or simple cron/systemd timers.
 
-**For BorgBackup:** Use [Borgmatic](/apps/borgmatic) — a YAML-configured wrapper that handles scheduling, retention, consistency checks, and pre/post hooks. Borgmatic is the recommended way to run Borg in production.
+**For BorgBackup:** Use [Borgmatic](/apps/borgmatic/) — a YAML-configured wrapper that handles scheduling, retention, consistency checks, and pre/post hooks. Borgmatic is the recommended way to run Borg in production.
 
 ## Final Verdict
 
@@ -168,9 +168,9 @@ If you're unsure, start with Restic. You can always switch later — both tools 
 
 ## Related
 
-- [How to Set Up Restic](/apps/restic)
-- [How to Set Up BorgBackup](/apps/borgbackup)
-- [Best Self-Hosted Backup Solutions](/best/backup)
-- [Replace Backblaze](/replace/backblaze)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy)
-- [Docker Volumes & Bind Mounts](/foundations/docker-volumes)
+- [How to Set Up Restic](/apps/restic/)
+- [How to Set Up BorgBackup](/apps/borgbackup/)
+- [Best Self-Hosted Backup Solutions](/best/backup/)
+- [Replace Backblaze](/replace/backblaze/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-strategy/)
+- [Docker Volumes & Bind Mounts](/foundations/docker-volumes/)

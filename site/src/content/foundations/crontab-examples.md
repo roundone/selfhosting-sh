@@ -17,12 +17,12 @@ affiliateDisclosure: false
 
 Crontab is the configuration file for cron, Linux's built-in task scheduler. Every self-hosted server needs automated maintenance — backups, log rotation, certificate renewal, container cleanup. Crontab handles all of it.
 
-If you need a refresher on cron syntax, read [Cron Jobs for Maintenance](/foundations/linux-cron-jobs) first. This guide focuses on practical, copy-paste-ready examples for self-hosting.
+If you need a refresher on cron syntax, read [Cron Jobs for Maintenance](/foundations/linux-cron-jobs/) first. This guide focuses on practical, copy-paste-ready examples for self-hosting.
 
 ## Prerequisites
 
-- A Linux server with [SSH access](/foundations/ssh-setup)
-- Basic [Linux command line](/foundations/linux-basics-self-hosting) knowledge
+- A Linux server with [SSH access](/foundations/ssh-setup/)
+- Basic [Linux command line](/foundations/linux-basics-self-hosting/) knowledge
 - `cron` installed (present on virtually all Linux distributions)
 
 ## Crontab Syntax Refresher
@@ -199,7 +199,7 @@ Most modern systems use `systemd-timesyncd`, but if you need manual sync:
 
 ## Dynamic DNS Update
 
-If your home IP changes and you use [Dynamic DNS](/foundations/dynamic-dns):
+If your home IP changes and you use [Dynamic DNS](/foundations/dynamic-dns/):
 
 ```bash
 */5 * * * * /usr/local/bin/update-ddns.sh >> /var/log/ddns.log 2>&1
@@ -309,13 +309,13 @@ Cron uses the system timezone. Check with `timedatectl`. If your server is in UT
 
 ## Next Steps
 
-Crontab covers most scheduling needs for self-hosting. For more complex scheduling (dependencies between jobs, retry logic, conditional execution), consider [systemd timers](/foundations/linux-systemd) or self-hosted automation tools like [n8n](/apps/n8n).
+Crontab covers most scheduling needs for self-hosting. For more complex scheduling (dependencies between jobs, retry logic, conditional execution), consider [systemd timers](/foundations/linux-systemd/) or self-hosted automation tools like [n8n](/apps/n8n/).
 
 ## FAQ
 
 ### Should I use cron or systemd timers?
 
-Cron for simple, recurring jobs. [Systemd timers](/foundations/linux-systemd) for jobs that need dependency management, better logging, or resource controls. For most self-hosting maintenance tasks, cron is simpler and sufficient.
+Cron for simple, recurring jobs. [Systemd timers](/foundations/linux-systemd/) for jobs that need dependency management, better logging, or resource controls. For most self-hosting maintenance tasks, cron is simpler and sufficient.
 
 ### How do I see what cron jobs are scheduled?
 
@@ -331,9 +331,9 @@ Redirect both stdout and stderr to a log file (`>> /var/log/myjob.log 2>&1`), th
 
 ## Related
 
-- [Cron Jobs for Maintenance](/foundations/linux-cron-jobs)
-- [Systemd Service Basics](/foundations/linux-systemd)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Backing Up Docker Volumes](/foundations/backup-docker-volumes)
-- [Docker Automatic Updates](/foundations/docker-automatic-updates)
-- [Log Management for Home Servers](/foundations/log-management)
+- [Cron Jobs for Maintenance](/foundations/linux-cron-jobs/)
+- [Systemd Service Basics](/foundations/linux-systemd/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Backing Up Docker Volumes](/foundations/backup-docker-volumes/)
+- [Docker Automatic Updates](/foundations/docker-automatic-updates/)
+- [Log Management for Home Servers](/foundations/log-management/)

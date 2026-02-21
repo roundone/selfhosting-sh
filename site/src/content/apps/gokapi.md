@@ -24,12 +24,12 @@ affiliateDisclosure: false
 
 [Gokapi](https://github.com/Forceu/Gokapi) is a lightweight, self-hosted file sharing server written in Go. Upload files via the admin interface or API, share download links with configurable expiry (time-based and download-count-based), and optionally store files in S3-compatible storage. Gokapi is designed for single-admin use — one person uploads, anyone with the link downloads.
 
-Gokapi fills the gap between [PicoShare](/apps/picoshare) (minimal, no encryption) and [Send](/apps/send) (encrypted, needs Redis). It adds S3 support, end-to-end encryption (optional), and a clean admin dashboard without requiring external dependencies beyond a single container.
+Gokapi fills the gap between [PicoShare](/apps/picoshare/) (minimal, no encryption) and [Send](/apps/send/) (encrypted, needs Redis). It adds S3 support, end-to-end encryption (optional), and a clean admin dashboard without requiring external dependencies beyond a single container.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - Disk space for uploaded files (or S3 storage)
 - A domain name (optional but recommended)
@@ -137,7 +137,7 @@ Gokapi supports OAuth2 and OIDC for admin authentication, integrating with Authe
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 share.example.com {
@@ -164,7 +164,7 @@ done
 
 **Important:** If using encryption, the config volume contains the encryption keys. Losing the config volume means losing access to encrypted files — even if the data volume or S3 bucket is intact.
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -196,9 +196,9 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 ## Verdict
 
-Gokapi is the best middle-ground file sharing tool. It's more capable than [PicoShare](/apps/picoshare) (adds S3 support, encryption, API, password protection) without the complexity of [Send](/apps/send) (no Redis required). The admin dashboard is clean, the API is straightforward, and S3 storage support is a significant advantage for large-volume use.
+Gokapi is the best middle-ground file sharing tool. It's more capable than [PicoShare](/apps/picoshare/) (adds S3 support, encryption, API, password protection) without the complexity of [Send](/apps/send/) (no Redis required). The admin dashboard is clean, the API is straightforward, and S3 storage support is a significant advantage for large-volume use.
 
-If you need end-to-end encryption with zero-knowledge design, use [Send](/apps/send). If you want absolute minimalism, use [PicoShare](/apps/picoshare). Gokapi sits between them and handles most file sharing needs elegantly.
+If you need end-to-end encryption with zero-knowledge design, use [Send](/apps/send/). If you want absolute minimalism, use [PicoShare](/apps/picoshare/). Gokapi sits between them and handles most file sharing needs elegantly.
 
 ## Frequently Asked Questions
 
@@ -213,10 +213,10 @@ Not natively through the web UI. The API handles large files in a single request
 
 ## Related
 
-- [How to Self-Host PicoShare](/apps/picoshare)
-- [How to Self-Host Send](/apps/send)
-- [Send vs WeTransfer](/compare/send-vs-wetransfer)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Self-Hosted Alternatives to Dropbox Transfer](/replace/dropbox-transfer)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host PicoShare](/apps/picoshare/)
+- [How to Self-Host Send](/apps/send/)
+- [Send vs WeTransfer](/compare/send-vs-wetransfer/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Self-Hosted Alternatives to Dropbox Transfer](/replace/dropbox-transfer/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

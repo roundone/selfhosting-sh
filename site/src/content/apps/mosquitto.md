@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 50 MB of free disk space
 - 64 MB of RAM (minimum — Mosquitto is extremely lightweight)
 - Understanding of MQTT concepts (topics, publish/subscribe) is helpful but not required
@@ -239,7 +239,7 @@ location /mqtt {
 }
 ```
 
-For the native MQTT port, use a TCP/stream proxy or expose the port directly. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for general guidance.
+For the native MQTT port, use a TCP/stream proxy or expose the port directly. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for general guidance.
 
 ## Backup
 
@@ -252,7 +252,7 @@ Back up these directories:
 tar -czf mosquitto-backup-$(date +%Y%m%d).tar.gz mosquitto/
 ```
 
-The data directory contains the persistence database (`mosquitto.db`). Without it, retained messages and durable subscriptions are lost on restore. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+The data directory contains the persistence database (`mosquitto.db`). Without it, retained messages and durable subscriptions are lost on restore. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -316,11 +316,11 @@ The only reason to look elsewhere is if you need clustering (multiple broker nod
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Zigbee2MQTT](/apps/zigbee2mqtt)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Zigbee2MQTT](/apps/zigbee2mqtt/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

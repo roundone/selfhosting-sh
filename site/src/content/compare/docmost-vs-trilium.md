@@ -98,7 +98,7 @@ These tools serve fundamentally different purposes. Docmost is a team tool — u
 
 ### Can Trilium be used by a small team?
 
-Technically, yes — multiple desktop clients can sync to the same Trilium server. But there's no real-time collaboration, no concurrent editing protection, and limited user management. For 2-3 people sharing notes asynchronously, it works. For a proper team wiki, use Docmost, [Outline](/apps/outline), or [BookStack](/apps/bookstack).
+Technically, yes — multiple desktop clients can sync to the same Trilium server. But there's no real-time collaboration, no concurrent editing protection, and limited user management. For 2-3 people sharing notes asynchronously, it works. For a proper team wiki, use Docmost, [Outline](/apps/outline/), or [BookStack](/apps/bookstack/).
 
 ### Does Docmost support Markdown?
 
@@ -110,10 +110,10 @@ Trilium. Its relation maps, note cloning, and deep hierarchy are designed for in
 
 ## Related
 
-- [How to Self-Host Docmost](/apps/docmost)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [Docmost vs BookStack](/compare/docmost-vs-bookstack)
-- [Docmost vs Outline](/compare/docmost-vs-outline)
-- [BookStack vs Trilium](/compare/bookstack-vs-trilium)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Confluence Alternatives](/replace/confluence)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [Docmost vs BookStack](/compare/docmost-vs-bookstack/)
+- [Docmost vs Outline](/compare/docmost-vs-outline/)
+- [BookStack vs Trilium](/compare/bookstack-vs-trilium/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Confluence Alternatives](/replace/confluence/)

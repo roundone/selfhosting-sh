@@ -114,10 +114,10 @@ Navidrome, easily. The Subsonic API ecosystem includes polished, music-focused a
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Emby](/apps/emby)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)

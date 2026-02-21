@@ -23,7 +23,7 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-These serve completely different use cases. Passbolt is a team password manager with server-side user management, OpenPGP encryption, and granular sharing. KeeWeb is a browser-based client for personal KeePass vaults with zero server-side logic. Choose Passbolt for teams, KeeWeb for solo use with KeePass files. For the best of both worlds, use [Vaultwarden](/apps/vaultwarden).
+These serve completely different use cases. Passbolt is a team password manager with server-side user management, OpenPGP encryption, and granular sharing. KeeWeb is a browser-based client for personal KeePass vaults with zero server-side logic. Choose Passbolt for teams, KeeWeb for solo use with KeePass files. For the best of both worlds, use [Vaultwarden](/apps/vaultwarden/).
 
 ## Overview
 
@@ -88,18 +88,18 @@ KeeWeb is 6-7x lighter than Passbolt. This isn't a fair comparison though — th
 - You're a single user managing personal passwords
 - You already use KeePass (.kdbx) files
 - You want zero server-side trust
-- You sync vaults through WebDAV ([Nextcloud](/apps/nextcloud)), Dropbox, or Google Drive
+- You sync vaults through WebDAV ([Nextcloud](/apps/nextcloud/)), Dropbox, or Google Drive
 - You want the simplest possible deployment
 - Offline access is important
 
 ### Choose Neither If...
 
-- You want browser auto-fill on every platform — use [Vaultwarden](/apps/vaultwarden)
-- You want a single-user password manager that also handles teams — use [Vaultwarden](/apps/vaultwarden)
+- You want browser auto-fill on every platform — use [Vaultwarden](/apps/vaultwarden/)
+- You want a single-user password manager that also handles teams — use [Vaultwarden](/apps/vaultwarden/)
 
 ## Final Verdict
 
-Don't compare these as competitors — they're different tools for different problems. Passbolt is a team credential management platform. KeeWeb is a web viewer for personal vault files. If you're a solo self-hoster, KeeWeb's simplicity is appealing but its dormancy is concerning. If you manage a team, Passbolt is the right tool. For most people who want one password manager that does personal and team use well, [Vaultwarden](/apps/vaultwarden) remains the best answer.
+Don't compare these as competitors — they're different tools for different problems. Passbolt is a team credential management platform. KeeWeb is a web viewer for personal vault files. If you're a solo self-hoster, KeeWeb's simplicity is appealing but its dormancy is concerning. If you manage a team, Passbolt is the right tool. For most people who want one password manager that does personal and team use well, [Vaultwarden](/apps/vaultwarden/) remains the best answer.
 
 ## FAQ
 
@@ -117,9 +117,9 @@ Both use strong encryption. KeeWeb has a smaller attack surface (static files, c
 
 ## Related
 
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)

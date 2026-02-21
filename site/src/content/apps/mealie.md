@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM
 - 1 GB of free disk space
 - A domain name (optional, for remote access)
@@ -159,7 +159,7 @@ Nginx Proxy Manager config:
 - **Forward Hostname:** mealie
 - **Forward Port:** 9000
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -174,7 +174,7 @@ docker run --rm -v mealie_data:/data -v $(pwd):/backup alpine \
 
 Mealie also has a built-in backup feature under **Settings → Backups**.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -201,14 +201,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup appr
 
 ## Verdict
 
-Mealie is the best self-hosted recipe manager. The URL scraping works well on most recipe sites, the meal planning calendar is genuinely useful, and the grocery list feature saves real time. The UI is clean and mobile-friendly. If you need a more restaurant-focused solution with scaling and nutrition tracking, look at [Tandoor](/apps/tandoor). But for home cooks who want to organize recipes and plan meals, Mealie is the clear winner.
+Mealie is the best self-hosted recipe manager. The URL scraping works well on most recipe sites, the meal planning calendar is genuinely useful, and the grocery list feature saves real time. The UI is clean and mobile-friendly. If you need a more restaurant-focused solution with scaling and nutrition tracking, look at [Tandoor](/apps/tandoor/). But for home cooks who want to organize recipes and plan meals, Mealie is the clear winner.
 
 ## Related
 
-- [Best Self-Hosted Recipe Managers](/best/recipes)
-- [Mealie vs Tandoor](/compare/mealie-vs-tandoor)
-- [How to Self-Host Tandoor](/apps/tandoor)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Volumes Explained](/foundations/docker-volumes)
+- [Best Self-Hosted Recipe Managers](/best/recipes/)
+- [Mealie vs Tandoor](/compare/mealie-vs-tandoor/)
+- [How to Self-Host Tandoor](/apps/tandoor/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes Explained](/foundations/docker-volumes/)

@@ -130,10 +130,10 @@ Yes, with extra setup. Enable Prometheus metrics in Blocky, then set up Grafana 
 
 ## Related
 
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)

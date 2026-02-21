@@ -19,9 +19,9 @@ A reverse proxy sits between the internet and your self-hosted services. When it
 
 ## Prerequisites
 
-- A reverse proxy set up ([Reverse Proxy Explained](/foundations/reverse-proxy-explained))
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
-- Basic understanding of HTTP and DNS ([DNS Explained](/foundations/dns-explained))
+- A reverse proxy set up ([Reverse Proxy Explained](/foundations/reverse-proxy-explained/))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
+- Basic understanding of HTTP and DNS ([DNS Explained](/foundations/dns-explained/))
 
 ## The Debugging Flow
 
@@ -198,7 +198,7 @@ labels:
   - "traefik.http.services.myapp.loadbalancer.server.scheme=https"
 ```
 
-See [SSL Certificate Troubleshooting](/foundations/ssl-certificate-issues) for certificate-specific problems.
+See [SSL Certificate Troubleshooting](/foundations/ssl-certificate-issues/) for certificate-specific problems.
 
 ## WebSocket Issues
 
@@ -382,7 +382,7 @@ curl -vvv https://myapp.example.com 2>&1
 
 ### Should I use Nginx Proxy Manager, Traefik, or Caddy?
 
-NPM for simplicity (GUI-based, quick setup). Traefik for Docker-native auto-discovery (add labels, it just works). Caddy for clean config files and automatic HTTPS. All three work well for self-hosting. See [NPM Setup](/foundations/nginx-proxy-manager-setup), [Traefik Setup](/foundations/traefik-setup), and [Caddy Setup](/foundations/caddy-setup).
+NPM for simplicity (GUI-based, quick setup). Traefik for Docker-native auto-discovery (add labels, it just works). Caddy for clean config files and automatic HTTPS. All three work well for self-hosting. See [NPM Setup](/foundations/nginx-proxy-manager-setup/), [Traefik Setup](/foundations/traefik-setup/), and [Caddy Setup](/foundations/caddy-setup/).
 
 ### Can I run multiple reverse proxies?
 
@@ -398,10 +398,10 @@ No. Only open ports 80 and 443 for the reverse proxy. Backend services don't nee
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Traefik Setup](/foundations/traefik-setup)
-- [Caddy Setup](/foundations/caddy-setup)
-- [SSL Certificate Troubleshooting](/foundations/ssl-certificate-issues)
-- [Docker Networking](/foundations/docker-networking)
-- [DNS Debugging](/foundations/dns-debugging)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Traefik Setup](/foundations/traefik-setup/)
+- [Caddy Setup](/foundations/caddy-setup/)
+- [SSL Certificate Troubleshooting](/foundations/ssl-certificate-issues/)
+- [Docker Networking](/foundations/docker-networking/)
+- [DNS Debugging](/foundations/dns-debugging/)

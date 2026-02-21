@@ -143,7 +143,7 @@ Caddy has a significantly larger community, years of production use, commercial 
 
 That said, Zoraxy's built-in GeoIP blocking and ZeroTier integration are genuine differentiators. If you need those features and prefer visual management, Zoraxy is a solid choice.
 
-For self-hosters who don't want to touch config files at all, [Nginx Proxy Manager](/apps/nginx-proxy-manager) is the most established GUI option.
+For self-hosters who don't want to touch config files at all, [Nginx Proxy Manager](/apps/nginx-proxy-manager/) is the most established GUI option.
 
 ## Frequently Asked Questions
 
@@ -165,10 +165,10 @@ Both support wildcard SSL via DNS challenge. Caddy has more built-in DNS provide
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

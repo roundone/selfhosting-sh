@@ -25,7 +25,7 @@ Self-hosting Immich means your photos never leave your server. No scanning, no t
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker Engine v25+ and Docker Compose v2 installed ([guide](/foundations/docker-compose-basics))
+- Docker Engine v25+ and Docker Compose v2 installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB RAM minimum (8 GB recommended for machine learning features)
 - 20 GB free disk space for the application, plus unlimited storage for your photo library
 - A domain name (recommended for remote access and mobile app connectivity)
@@ -363,7 +363,7 @@ immich.yourdomain.com {
 }
 ```
 
-For full reverse proxy configuration details, see the [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide.
+For full reverse proxy configuration details, see the [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide.
 
 ## Backup
 
@@ -407,7 +407,7 @@ cat /opt/immich/backups/immich-db-20260216.sql | docker exec -i immich_postgres 
 docker compose up -d
 ```
 
-For a comprehensive backup strategy, see the [Backup Strategy](/foundations/backup-3-2-1-rule) guide.
+For a comprehensive backup strategy, see the [Backup Strategy](/foundations/backup-3-2-1-rule/) guide.
 
 ## Troubleshooting
 
@@ -482,15 +482,15 @@ With proper backups in place, Immich is the clear winner in the photo management
 
 ## Related
 
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [Immich vs iCloud Photos](/compare/immich-vs-icloud-photos)
-- [Immich vs Lychee](/compare/immich-vs-lychee)
-- [Immich vs PhotoView](/compare/immich-vs-photoview)
-- [Immich vs Piwigo](/compare/immich-vs-piwigo)
-- [Replace Google Photos](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [Immich vs iCloud Photos](/compare/immich-vs-icloud-photos/)
+- [Immich vs Lychee](/compare/immich-vs-lychee/)
+- [Immich vs PhotoView](/compare/immich-vs-photoview/)
+- [Immich vs Piwigo](/compare/immich-vs-piwigo/)
+- [Replace Google Photos](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

@@ -131,10 +131,10 @@ Listmonk. Fewer moving parts, simpler upgrades (single binary + database migrati
 
 ## Related
 
-- [How to Self-Host Listmonk](/apps/listmonk)
-- [How to Self-Host Mautic](/apps/mautic)
-- [Listmonk vs Keila](/compare/listmonk-vs-keila)
-- [Mautic vs Mailchimp](/compare/mautic-vs-mailchimp)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Listmonk](/apps/listmonk/)
+- [How to Self-Host Mautic](/apps/mautic/)
+- [Listmonk vs Keila](/compare/listmonk-vs-keila/)
+- [Mautic vs Mailchimp](/compare/mautic-vs-mailchimp/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

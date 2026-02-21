@@ -35,37 +35,37 @@ affiliateDisclosure: true
 
 ### Tabby — Best Dedicated Server
 
-[Tabby](/apps/tabby) is a self-hosted code completion server with an admin dashboard, user management, and repository indexing. It indexes your codebase for context-aware suggestions — the closest experience to Copilot's repo-aware completions.
+[Tabby](/apps/tabby/) is a self-hosted code completion server with an admin dashboard, user management, and repository indexing. It indexes your codebase for context-aware suggestions — the closest experience to Copilot's repo-aware completions.
 
 **IDE support:** VS Code, JetBrains, Vim/Neovim.
 
 **Requires:** NVIDIA GPU with 4+ GB VRAM (or CPU mode, slower).
 
-[Read our Tabby guide](/apps/tabby) | [Tabby vs Continue](/compare/tabby-vs-continue)
+[Read our Tabby guide](/apps/tabby/) | [Tabby vs Continue](/compare/tabby-vs-continue/)
 
 ### Continue.dev + Ollama — Best Flexible Setup
 
-Continue.dev is an open-source VS Code / JetBrains extension that connects to any LLM backend. Pair it with [Ollama](/apps/ollama) for a completely self-hosted setup. You get chat, autocomplete, and inline editing powered by any model Ollama supports.
+Continue.dev is an open-source VS Code / JetBrains extension that connects to any LLM backend. Pair it with [Ollama](/apps/ollama/) for a completely self-hosted setup. You get chat, autocomplete, and inline editing powered by any model Ollama supports.
 
 **Advantages over Tabby:** Use different models for different tasks (fast small model for autocomplete, large model for chat). No dedicated server needed — just Ollama running locally or on a server.
 
 **IDE support:** VS Code, JetBrains.
 
-[Read our Ollama guide](/apps/ollama)
+[Read our Ollama guide](/apps/ollama/)
 
 ### vLLM — Best for Team Serving
 
-[vLLM](/apps/vllm) serves code models to multiple developers simultaneously with high throughput. Pair with Continue.dev extensions for a team-scale setup.
+[vLLM](/apps/vllm/) serves code models to multiple developers simultaneously with high throughput. Pair with Continue.dev extensions for a team-scale setup.
 
 **Best for:** Teams of 5+ developers who need fast, concurrent code completions.
 
-[Read our vLLM guide](/apps/vllm)
+[Read our vLLM guide](/apps/vllm/)
 
 ## Migration Guide
 
 ### From Copilot to Tabby
 
-1. Deploy [Tabby](/apps/tabby) on a machine with an NVIDIA GPU
+1. Deploy [Tabby](/apps/tabby/) on a machine with an NVIDIA GPU
 2. Add your repositories in Tabby's admin dashboard for context indexing
 3. Install the Tabby extension in VS Code or JetBrains
 4. Point the extension at your Tabby server URL
@@ -73,7 +73,7 @@ Continue.dev is an open-source VS Code / JetBrains extension that connects to an
 
 ### From Copilot to Continue + Ollama
 
-1. Install [Ollama](/apps/ollama) on your development machine or a server
+1. Install [Ollama](/apps/ollama/) on your development machine or a server
 2. Pull a code model: `ollama pull deepseek-coder-v2:16b`
 3. Pull a fast model for autocomplete: `ollama pull starcoder2:3b`
 4. Install Continue.dev extension in VS Code
@@ -104,10 +104,10 @@ For most code completion tasks — inline completions, function generation, docs
 
 ## Related
 
-- [How to Self-Host Tabby](/apps/tabby)
-- [How to Self-Host Ollama](/apps/ollama)
-- [Tabby vs Continue](/compare/tabby-vs-continue)
-- [Ollama vs vLLM](/compare/ollama-vs-vllm)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
+- [How to Self-Host Tabby](/apps/tabby/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [Tabby vs Continue](/compare/tabby-vs-continue/)
+- [Ollama vs vLLM](/compare/ollama-vs-vllm/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)

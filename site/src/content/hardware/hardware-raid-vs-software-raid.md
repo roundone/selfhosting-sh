@@ -172,7 +172,7 @@ Enable compression:
 sudo zfs set compression=lz4 tank
 ```
 
-For full ZFS configuration, see our [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements) guide.
+For full ZFS configuration, see our [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements/) guide.
 
 ## Setting Up mdadm (Quick Start)
 
@@ -215,11 +215,11 @@ Not in-place. You need to back up your data, replace the RAID controller with an
 
 ## Related
 
-- [RAID Levels Explained](/hardware/raid-explained)
-- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Best HBA Cards](/hardware/best-hba-card)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Best NAS for Home Servers](/hardware/best-nas)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Best HBA Cards](/hardware/best-hba-card/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Best NAS for Home Servers](/hardware/best-nas/)

@@ -121,7 +121,7 @@ Winner: **Traefik** by a wide margin.
 
 **Zoraxy wins for visual management.** If you prefer clicking through a web UI over writing Docker labels, and you value built-in extras like uptime monitoring and GeoIP filtering, Zoraxy gives you more per deployment. It is a genuine alternative to running NPM + Uptime Kuma + GeoIP tools separately.
 
-For most self-hosters running Docker: [Traefik](/apps/traefik). For those who want a rich GUI with built-in monitoring: [Zoraxy](/apps/zoraxy).
+For most self-hosters running Docker: [Traefik](/apps/traefik/). For those who want a rich GUI with built-in monitoring: [Zoraxy](/apps/zoraxy/).
 
 ## FAQ
 
@@ -136,10 +136,10 @@ Zoraxy. Its web UI is self-explanatory — click to add a proxy rule, toggle to 
 
 ## Related
 
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

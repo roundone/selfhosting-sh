@@ -172,7 +172,7 @@ rsync -avh --delete "$SOURCE" "$BACKUP_DEST" >> "$LOG" 2>&1
 echo "$(date): Backup completed" >> "$LOG"
 ```
 
-Or use [Restic](/apps/restic) or [BorgBackup](/apps/borgbackup) for deduplicated, encrypted backups.
+Or use [Restic](/apps/restic/) or [BorgBackup](/apps/borgbackup/) for deduplicated, encrypted backups.
 
 ## Shucking Guide
 
@@ -219,10 +219,10 @@ The connector doesn't determine speed. USB 3.0 (5 Gbps) comes in both Type-A and
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [DAS vs NAS](/hardware/das-vs-nas)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host BorgBackup](/apps/borgbackup)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [DAS vs NAS](/hardware/das-vs-nas/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host BorgBackup](/apps/borgbackup/)

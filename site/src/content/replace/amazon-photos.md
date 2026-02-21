@@ -43,7 +43,7 @@ Self-hosting your photos means permanent ownership, no subscription dependency, 
 
 **What you lose vs Amazon Photos:** No integration with Amazon Echo Show or Fire TV. No Family Vault equivalent (but shared albums cover most of the same use case). Setup requires a server and Docker.
 
-[Read our full guide: [How to Self-Host Immich](/apps/immich)]
+[Read our full guide: [How to Self-Host Immich](/apps/immich/)]
 
 ### PhotoPrism — Best for Existing Libraries
 
@@ -58,13 +58,13 @@ Self-hosting your photos means permanent ownership, no subscription dependency, 
 
 **What you lose:** No native mobile apps or auto-upload. PhotoPrism is a browser, not an uploader. For mobile upload, pair it with Syncthing or use Immich instead.
 
-[Read our full guide: [How to Self-Host PhotoPrism](/apps/photoprism)]
+[Read our full guide: [How to Self-Host PhotoPrism](/apps/photoprism/)]
 
 ### Lychee — Best Lightweight Gallery
 
 [Lychee](https://lychee.com/) is a modern, minimal photo gallery for sharing albums. It's lighter than Immich or PhotoPrism and doesn't do AI classification — just clean album organization, drag-and-drop upload, and beautiful presentation. Good for portfolios, family sharing, or simple album management.
 
-[Read our full guide: [How to Self-Host Lychee](/apps/lychee)]
+[Read our full guide: [How to Self-Host Lychee](/apps/lychee/)]
 
 ## Migration Guide
 
@@ -150,11 +150,11 @@ If you have Prime anyway, using Amazon Photos as a secondary backup is reasonabl
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host Lychee](/apps/lychee)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

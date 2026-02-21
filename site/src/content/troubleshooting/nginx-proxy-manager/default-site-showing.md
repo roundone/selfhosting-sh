@@ -84,6 +84,6 @@ Look for errors related to the specific proxy host or SSL certificate issues tha
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Docker Networking](/foundations/docker-networking/)

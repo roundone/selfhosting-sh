@@ -140,7 +140,7 @@ Airsonic was a fork of Subsonic that kept the Java codebase. Airsonic-Advanced w
 
 ### Does Navidrome support podcasts?
 
-No. Navidrome is music-only. For podcasts, use [Audiobookshelf](/apps/audiobookshelf) (which also handles audiobooks) or a dedicated podcast app on your phone.
+No. Navidrome is music-only. For podcasts, use [Audiobookshelf](/apps/audiobookshelf/) (which also handles audiobooks) or a dedicated podcast app on your phone.
 
 ### Can I migrate my Subsonic data to Navidrome?
 
@@ -148,9 +148,9 @@ Your music files transfer directly — just point Navidrome at the same music di
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

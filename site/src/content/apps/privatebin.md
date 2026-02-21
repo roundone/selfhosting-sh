@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 128 MB of free RAM
 - 200 MB of free disk space
 - A domain name (optional, for remote access)
@@ -165,7 +165,7 @@ Nginx Proxy Manager config:
 
 If using the `traffic` limiter, set `header = "X-Forwarded-For"` in the config so rate limiting works on real client IPs.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -176,7 +176,7 @@ docker run --rm -v privatebin_data:/data -v $(pwd):/backup alpine \
 
 Note: Backups contain encrypted data that cannot be read without the URL fragments (which only the users have).
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -207,8 +207,8 @@ PrivateBin is the best self-hosted pastebin. The zero-knowledge encryption means
 
 ## Related
 
-- [Best Self-Hosted Pastebins](/best/pastebin)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Pastebins](/best/pastebin/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

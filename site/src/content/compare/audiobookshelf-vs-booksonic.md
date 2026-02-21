@@ -149,9 +149,9 @@ Yes. Since v2.0, Audiobookshelf supports EPUB and PDF ebooks with a built-in web
 
 ## Related
 
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Audiobookshelf vs Jellyfin](/compare/audiobookshelf-vs-jellyfin)
-- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita)
-- [Replace Audible](/replace/audible)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Audiobookshelf vs Jellyfin](/compare/audiobookshelf-vs-jellyfin/)
+- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita/)
+- [Replace Audible](/replace/audible/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

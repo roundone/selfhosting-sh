@@ -40,7 +40,7 @@ YouTube Music has specific issues beyond the general streaming complaints:
 - Last.fm scrobbling for listening stats
 - Runs on a Raspberry Pi
 
-[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome)]
+[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome/)]
 
 ### Plex + Plexamp — Best Listening Experience
 
@@ -48,13 +48,13 @@ YouTube Music has specific issues beyond the general streaming complaints:
 
 **Why choose it:** Plexamp is the closest thing to YouTube Music's recommendation engine for a personal library. Sonic Exploration analyzes audio characteristics to find similar songs — no cloud service needed.
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ### Jellyfin + Finamp — Best Free All-in-One
 
 [Jellyfin](https://jellyfin.org/) handles music alongside video, and [Finamp](https://github.com/jmshrv/finamp) is a dedicated music client for iOS and Android. If you already run Jellyfin for video, adding music costs nothing — same server, same infrastructure. Finamp provides offline downloads, gapless playback, and a music-focused UI.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ## Migration Guide
 
@@ -127,7 +127,7 @@ Plexamp's Sonic Exploration creates radio-like mixes from your library by analyz
 
 ### What if I mostly use YouTube Music for music videos?
 
-Self-hosted music servers don't handle music videos. For that use case, YouTube Music (or YouTube itself) has no real alternative. You could download music videos and serve them through [Jellyfin](/apps/jellyfin), but there's no integrated audio-video music experience.
+Self-hosted music servers don't handle music videos. For that use case, YouTube Music (or YouTube itself) has no real alternative. You could download music videos and serve them through [Jellyfin](/apps/jellyfin/), but there's no integrated audio-video music experience.
 
 ### Is the audio quality actually better?
 
@@ -139,14 +139,14 @@ Yes. Navidrome supports multiple users with individual playlists, favorites, and
 
 ### What about podcasts?
 
-YouTube Music includes podcast integration. For self-hosted podcasts, use [Audiobookshelf](/apps/audiobookshelf) or a standalone podcast app. Most podcast apps (Pocket Casts, AntennaPod) work independently of any streaming service.
+YouTube Music includes podcast integration. For self-hosted podcasts, use [Audiobookshelf](/apps/audiobookshelf/) or a standalone podcast app. Most podcast apps (Pocket Casts, AntennaPod) work independently of any streaming service.
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

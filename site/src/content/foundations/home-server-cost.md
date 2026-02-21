@@ -19,7 +19,7 @@ Self-hosting has three ongoing costs: hardware (amortized), electricity, and int
 
 ## Prerequisites
 
-- Interest in self-hosting ([Getting Started](/foundations/getting-started))
+- Interest in self-hosting ([Getting Started](/foundations/getting-started/))
 - Basic understanding of what services you want to replace
 
 ## The Cloud Subscription Bill
@@ -260,15 +260,15 @@ An N100 mini PC adds $1–3/month to your electricity bill. A DIY server adds $8
 
 ## Next Steps
 
-- [Getting Started with Self-Hosting](/foundations/getting-started) — your first server setup
-- [Docker Compose Basics](/foundations/docker-compose-basics) — deploy your first services
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) — protect your investment
+- [Getting Started with Self-Hosting](/foundations/getting-started/) — your first server setup
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — deploy your first services
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) — protect your investment
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Disaster Recovery](/foundations/disaster-recovery)
-- [SSH Setup Guide](/foundations/ssh-setup)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Disaster Recovery](/foundations/disaster-recovery/)
+- [SSH Setup Guide](/foundations/ssh-setup/)

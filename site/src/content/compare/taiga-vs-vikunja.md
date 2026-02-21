@@ -111,17 +111,17 @@ Technically yes, but it's overkill. Taiga's UI is designed for team agile workfl
 
 ### Does Vikunja support sprints?
 
-No. Vikunja doesn't have sprint planning, story points, or burndown charts. If you need agile sprint management, use Taiga or [Plane](/apps/plane).
+No. Vikunja doesn't have sprint planning, story points, or burndown charts. If you need agile sprint management, use Taiga or [Plane](/apps/plane/).
 
 ### Can I migrate from Trello to either?
 
-Taiga has a Trello import feature. Vikunja doesn't have built-in Trello import but can import from Todoist. For Trello migration, Taiga or [Planka](/apps/planka) are better options.
+Taiga has a Trello import feature. Vikunja doesn't have built-in Trello import but can import from Todoist. For Trello migration, Taiga or [Planka](/apps/planka/) are better options.
 
 ## Related
 
-- [How to Self-Host Taiga](/apps/taiga)
-- [How to Self-Host Vikunja](/apps/vikunja)
-- [Vikunja vs Todoist](/compare/vikunja-vs-todoist)
-- [Vikunja vs Planka](/compare/vikunja-vs-planka)
-- [Best Self-Hosted Task Management](/best/task-management)
-- [Self-Hosted Alternatives to Asana](/replace/asana)
+- [How to Self-Host Taiga](/apps/taiga/)
+- [How to Self-Host Vikunja](/apps/vikunja/)
+- [Vikunja vs Todoist](/compare/vikunja-vs-todoist/)
+- [Vikunja vs Planka](/compare/vikunja-vs-planka/)
+- [Best Self-Hosted Task Management](/best/task-management/)
+- [Self-Hosted Alternatives to Asana](/replace/asana/)

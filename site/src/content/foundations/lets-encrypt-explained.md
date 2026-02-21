@@ -17,9 +17,9 @@ affiliateDisclosure: false
 
 Let's Encrypt is a free, automated certificate authority (CA) that issues SSL/TLS certificates. Before Let's Encrypt, getting HTTPS on a website meant paying $50-200/year per certificate and going through a manual verification process. Let's Encrypt eliminated both barriers — certificates are free and can be obtained programmatically.
 
-For self-hosting, Let's Encrypt is how you get HTTPS on your services. Whether you're running [Nextcloud](/apps/nextcloud), [Jellyfin](/apps/jellyfin), or any other web app, Let's Encrypt provides the certificate that encrypts traffic between your browser and your server.
+For self-hosting, Let's Encrypt is how you get HTTPS on your services. Whether you're running [Nextcloud](/apps/nextcloud/), [Jellyfin](/apps/jellyfin/), or any other web app, Let's Encrypt provides the certificate that encrypts traffic between your browser and your server.
 
-For the broader context on what SSL certificates are and why they matter, see [SSL Certificates Explained](/foundations/ssl-certificates).
+For the broader context on what SSL certificates are and why they matter, see [SSL Certificates Explained](/foundations/ssl-certificates/).
 
 ## How It Works
 
@@ -80,9 +80,9 @@ You rarely interact with Let's Encrypt directly. Most reverse proxies have ACME 
 
 | Reverse Proxy | ACME Support | Configuration |
 |---------------|-------------|---------------|
-| [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) | Built-in, GUI toggle | Check "Force SSL" per host |
-| [Traefik](/foundations/traefik-setup) | Built-in, config file | Set `certResolver` in `traefik.yml` |
-| [Caddy](/foundations/caddy-setup) | Built-in, automatic | Zero config — HTTPS by default |
+| [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) | Built-in, GUI toggle | Check "Force SSL" per host |
+| [Traefik](/foundations/traefik-setup/) | Built-in, config file | Set `certResolver` in `traefik.yml` |
+| [Caddy](/foundations/caddy-setup/) | Built-in, automatic | Zero config — HTTPS by default |
 
 If you're using any of these, you already have Let's Encrypt. No additional setup needed.
 
@@ -211,10 +211,10 @@ sudo certbot renew --deploy-hook "systemctl reload nginx"
 
 ## Next Steps
 
-- Set up a reverse proxy with automatic SSL — [Caddy](/foundations/caddy-setup), [Traefik](/foundations/traefik-setup), or [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup)
-- Understand SSL certificates in depth — [SSL Certificates Explained](/foundations/ssl-certificates)
-- Configure DNS for your domain — [DNS Explained](/foundations/dns-explained)
-- Set up a firewall — [Firewall Setup with UFW](/foundations/firewall-ufw)
+- Set up a reverse proxy with automatic SSL — [Caddy](/foundations/caddy-setup/), [Traefik](/foundations/traefik-setup/), or [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/)
+- Understand SSL certificates in depth — [SSL Certificates Explained](/foundations/ssl-certificates/)
+- Configure DNS for your domain — [DNS Explained](/foundations/dns-explained/)
+- Set up a firewall — [Firewall Setup with UFW](/foundations/firewall-ufw/)
 
 ## FAQ
 
@@ -228,7 +228,7 @@ To encourage automation and limit risk. A compromised certificate is only valid 
 
 ### Can I use Let's Encrypt for email servers?
 
-Yes. Let's Encrypt certificates work for SMTP, IMAP, and POP3 servers. Self-hosted email solutions like [Mailcow](/apps/mailcow) and [Mailu](/apps/mailu) typically handle this automatically.
+Yes. Let's Encrypt certificates work for SMTP, IMAP, and POP3 servers. Self-hosted email solutions like [Mailcow](/apps/mailcow/) and [Mailu](/apps/mailu/) typically handle this automatically.
 
 ### What happens if Let's Encrypt goes down?
 
@@ -236,9 +236,9 @@ Your existing certificates continue to work until they expire. Let's Encrypt has
 
 ## Related
 
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Caddy Reverse Proxy Setup](/foundations/caddy-setup)
-- [Traefik Reverse Proxy Setup](/foundations/traefik-setup)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [DNS Explained](/foundations/dns-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Caddy Reverse Proxy Setup](/foundations/caddy-setup/)
+- [Traefik Reverse Proxy Setup](/foundations/traefik-setup/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

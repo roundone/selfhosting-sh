@@ -23,11 +23,11 @@ For self-hosting, SSH tunnels are useful when:
 - You want to access your server securely from a coffee shop without a full VPN
 - You need to bypass restrictive firewalls
 
-SSH tunneling requires SSH access to your server — see [SSH Setup](/foundations/ssh-setup) if you haven't configured that yet.
+SSH tunneling requires SSH access to your server — see [SSH Setup](/foundations/ssh-setup/) if you haven't configured that yet.
 
 ## Prerequisites
 
-- SSH access to your server with key-based authentication — see [SSH Setup](/foundations/ssh-setup)
+- SSH access to your server with key-based authentication — see [SSH Setup](/foundations/ssh-setup/)
 - OpenSSH client on your local machine (built into Linux, macOS, and Windows 10+)
 - A service running on your server that you want to access
 
@@ -108,7 +108,7 @@ If your home server is behind CGNAT (no public IP), you can expose a service thr
 ssh -R 8080:localhost:8096 user@your-vps.com
 ```
 
-Now `your-vps.com:8080` reaches Jellyfin on your home server. For a more robust version of this, consider [Cloudflare Tunnel](/foundations/cloudflare-tunnel) or [Tailscale](/foundations/tailscale-setup).
+Now `your-vps.com:8080` reaches Jellyfin on your home server. For a more robust version of this, consider [Cloudflare Tunnel](/foundations/cloudflare-tunnel/) or [Tailscale](/foundations/tailscale-setup/).
 
 ## Dynamic Port Forwarding (SOCKS Proxy)
 
@@ -270,14 +270,14 @@ Host *
 
 ### Using SSH Tunnels for Everything
 
-SSH tunnels are great for ad-hoc access and debugging. For permanent remote access to multiple services, use a proper solution: [Tailscale](/foundations/tailscale-setup), [WireGuard](/foundations/wireguard-setup), or a [reverse proxy](/foundations/reverse-proxy-explained) with [Cloudflare Tunnel](/foundations/cloudflare-tunnel).
+SSH tunnels are great for ad-hoc access and debugging. For permanent remote access to multiple services, use a proper solution: [Tailscale](/foundations/tailscale-setup/), [WireGuard](/foundations/wireguard-setup/), or a [reverse proxy](/foundations/reverse-proxy-explained/) with [Cloudflare Tunnel](/foundations/cloudflare-tunnel/).
 
 ## Next Steps
 
-- Set up SSH properly — [SSH Setup](/foundations/ssh-setup)
-- For permanent remote access — [Tailscale Setup](/foundations/tailscale-setup) or [WireGuard VPN Setup](/foundations/wireguard-setup)
-- Secure your server — [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Learn about reverse proxies — [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- Set up SSH properly — [SSH Setup](/foundations/ssh-setup/)
+- For permanent remote access — [Tailscale Setup](/foundations/tailscale-setup/) or [WireGuard VPN Setup](/foundations/wireguard-setup/)
+- Secure your server — [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Learn about reverse proxies — [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
 
 ## FAQ
 
@@ -301,9 +301,9 @@ SSH tunnels are per-port and ad-hoc — good for accessing specific services tem
 
 ## Related
 
-- [SSH Setup](/foundations/ssh-setup)
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [WireGuard VPN Setup](/foundations/wireguard-setup)
-- [Cloudflare Tunnel Setup](/foundations/cloudflare-tunnel)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [WireGuard VPN Setup](/foundations/wireguard-setup/)
+- [Cloudflare Tunnel Setup](/foundations/cloudflare-tunnel/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)

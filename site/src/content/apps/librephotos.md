@@ -23,7 +23,7 @@ LibrePhotos scans your photo library, detects faces, groups them, extracts locat
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB RAM minimum (8 GB recommended for face recognition)
 - 10 GB free disk space for application data and ML models, plus storage for your photo library
 - A domain name (optional, for remote access)
@@ -212,7 +212,7 @@ Nginx Proxy Manager configuration:
 - Enable SSL with Let's Encrypt
 - Set `csrfTrustedOrigins` in `.env` to your full domain URL (e.g., `https://photos.example.com`)
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -225,7 +225,7 @@ Critical data to back up:
 
 The ML models and cache can be regenerated from a rescan, so they're lower priority for backup.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -268,7 +268,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup
 
 LibrePhotos is a solid choice for users who want a fully open-source, no-paid-tier photo management solution with face recognition and auto-tagging. It does the basics well: scan a library, detect faces, browse by timeline and location.
 
-However, it trails behind [Immich](/apps/immich) in features (no native mobile app, no auto-upload, no CLIP search) and behind [PhotoPrism](/apps/photoprism) in maturity and polish. Development has slowed — the last major release was late 2025. If you specifically value the MIT license and fully FOSS approach, LibrePhotos delivers. If you want the most features or the most active development, Immich is the better pick.
+However, it trails behind [Immich](/apps/immich/) in features (no native mobile app, no auto-upload, no CLIP search) and behind [PhotoPrism](/apps/photoprism/) in maturity and polish. Development has slowed — the last major release was late 2025. If you specifically value the MIT license and fully FOSS approach, LibrePhotos delivers. If you want the most features or the most active development, Immich is the better pick.
 
 **Recommended for:** Users who prioritize fully open-source software with no paid tiers. Users with existing libraries who want face grouping and timeline browsing without the complexity of Immich's multi-service stack.
 
@@ -276,7 +276,7 @@ However, it trails behind [Immich](/apps/immich) in features (no native mobile a
 
 ### How does LibrePhotos compare to Immich?
 
-Immich has native mobile apps, auto-upload, CLIP-based smart search, and much faster development. LibrePhotos has a simpler architecture and is fully MIT-licensed with no paid tier. For most users, Immich is the better choice. See our [Immich vs LibrePhotos comparison](/compare/immich-vs-librephotos).
+Immich has native mobile apps, auto-upload, CLIP-based smart search, and much faster development. LibrePhotos has a simpler architecture and is fully MIT-licensed with no paid tier. For most users, Immich is the better choice. See our [Immich vs LibrePhotos comparison](/compare/immich-vs-librephotos/).
 
 ### Does LibrePhotos modify my original photos?
 
@@ -296,15 +296,15 @@ Yes. You can create multiple users and assign each user a scan directory. Users 
 
 ## Related
 
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [LibrePhotos vs Lychee](/compare/librephotos-vs-lychee)
-- [LibrePhotos vs PhotoView](/compare/librephotos-vs-photoview)
-- [LibrePhotos vs Piwigo](/compare/librephotos-vs-piwigo)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [LibrePhotos vs Lychee](/compare/librephotos-vs-lychee/)
+- [LibrePhotos vs PhotoView](/compare/librephotos-vs-photoview/)
+- [LibrePhotos vs Piwigo](/compare/librephotos-vs-piwigo/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

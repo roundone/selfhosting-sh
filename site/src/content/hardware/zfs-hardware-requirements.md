@@ -224,7 +224,7 @@ For small pools up to 12 TB. SMB shares, Plex, Docker containers.
 | HBA | Not needed — use motherboard SATA | — |
 | UPS | APC BE600M1 | $60–80 |
 
-This handles ZFS with LZ4 compression, SMB serving, and a few Docker containers without issue. The i5-8500T has Quick Sync for [Plex/Jellyfin transcoding](/apps/jellyfin). 16 GB of RAM gives you a healthy ARC for up to 12 TB of storage.
+This handles ZFS with LZ4 compression, SMB serving, and a few Docker containers without issue. The i5-8500T has Quick Sync for [Plex/Jellyfin transcoding](/apps/jellyfin/). 16 GB of RAM gives you a healthy ARC for up to 12 TB of storage.
 
 ### Mid-Range ZFS NAS (~$500–700)
 
@@ -284,7 +284,7 @@ Each 3.5" HDD adds roughly 5–8 W at idle. SSDs add 1–3 W each. The biggest v
 
 **3. Enabling deduplication without massive RAM.** The dedup table requires approximately 5 GB of RAM per TB of storage. A 20 TB pool with dedup needs 100 GB of RAM. If you do not have that, dedup will spill the DDT to disk, and your pool performance will collapse. Use compression instead — LZ4 or ZSTD give you 1.3–2x space savings with negligible overhead.
 
-**4. No UPS.** ZFS is resilient to power loss, but it is not immune. A power failure during a scrub or resilver can leave a pool in a degraded state. In extreme cases, simultaneous power loss and disk failure can cause data loss. A $60 UPS solves this. Configure your NAS to shut down gracefully when the UPS battery runs low. See our [UPS guide](/hardware/best-ups-home-server) for recommendations.
+**4. No UPS.** ZFS is resilient to power loss, but it is not immune. A power failure during a scrub or resilver can leave a pool in a degraded state. In extreme cases, simultaneous power loss and disk failure can cause data loss. A $60 UPS solves this. Configure your NAS to shut down gracefully when the UPS battery runs low. See our [UPS guide](/hardware/best-ups-home-server/) for recommendations.
 
 **5. Mixing drive sizes in a RAIDZ vdev.** In a RAIDZ vdev, the usable capacity of each drive equals the size of the smallest drive. Put a 12 TB drive in a vdev with 8 TB drives and you waste 4 TB on that drive. Use identical drives within each vdev.
 
@@ -304,7 +304,7 @@ No. ZFS co-creator Matt Ahrens has confirmed this. ECC is recommended because it
 
 ### Can an Intel N100 run ZFS?
 
-Yes. The N100 handles ZFS with LZ4 compression and SMB serving for a basic NAS. It struggles if you add heavy workloads on top (Plex transcoding + ZFS scrub + ZSTD compression simultaneously), but for a dedicated NAS it is fine. See our [Intel N100 mini PC review](/hardware/intel-n100-mini-pc) for specific models.
+Yes. The N100 handles ZFS with LZ4 compression and SMB serving for a basic NAS. It struggles if you add heavy workloads on top (Plex transcoding + ZFS scrub + ZSTD compression simultaneously), but for a dedicated NAS it is fine. See our [Intel N100 mini PC review](/hardware/intel-n100-mini-pc/) for specific models.
 
 ### How many drives do I need for ZFS?
 
@@ -321,18 +321,18 @@ You can add new **vdevs** to a pool at any time. A vdev is a group of drives (a 
 - **RAIDZ2:** Double parity. Use for 4–8 drives. Recommended for drives 8 TB and larger, where rebuild times are long.
 - **RAIDZ3:** Triple parity. For 8+ drives. Enterprise paranoia territory but valid for large arrays.
 
-See our [RAID Levels Explained](/hardware/raid-explained) guide for a deeper breakdown.
+See our [RAID Levels Explained](/hardware/raid-explained/) guide for a deeper breakdown.
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best NAS for Home Servers](/hardware/best-nas)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best NAS for Home Servers](/hardware/best-nas/)

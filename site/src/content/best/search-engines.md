@@ -44,7 +44,7 @@ affiliateDisclosure: false
 
 #### 1. Meilisearch — Best Application Search
 
-[Meilisearch](/apps/meilisearch) is an instant, typo-tolerant search engine designed for application search. It provides sub-50ms search with zero configuration — add documents, start searching. The API is RESTful, SDKs exist for every major language, and it's compatible with Algolia's InstantSearch.js frontend library.
+[Meilisearch](/apps/meilisearch/) is an instant, typo-tolerant search engine designed for application search. It provides sub-50ms search with zero configuration — add documents, start searching. The API is RESTful, SDKs exist for every major language, and it's compatible with Algolia's InstantSearch.js frontend library.
 
 **Pros:**
 - Instant search out of the box — no tuning required
@@ -61,11 +61,11 @@ affiliateDisclosure: false
 
 **Best for:** Adding search to websites, apps, and e-commerce. The closest self-hosted alternative to Algolia.
 
-[Read our Meilisearch guide](/apps/meilisearch) | [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
+[Read our Meilisearch guide](/apps/meilisearch/) | [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
 
 #### 2. Typesense — Best for Speed
 
-[Typesense](/apps/typesense) keeps its entire search index in RAM for sub-millisecond latency. It includes built-in high availability via Raft clustering, result curation/pinning, and search analytics — features that competitors charge extra for.
+[Typesense](/apps/typesense/) keeps its entire search index in RAM for sub-millisecond latency. It includes built-in high availability via Raft clustering, result curation/pinning, and search analytics — features that competitors charge extra for.
 
 **Pros:**
 - Sub-millisecond search latency (in-memory)
@@ -82,11 +82,11 @@ affiliateDisclosure: false
 
 **Best for:** Applications where search speed is critical. E-commerce product search. Sites needing built-in HA without paying for it.
 
-[Read our Typesense guide](/apps/typesense) | [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
+[Read our Typesense guide](/apps/typesense/) | [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
 
 #### 3. Elasticsearch — Best for Complex Search
 
-[Elasticsearch](/apps/elasticsearch) is the industry standard for search and analytics. It handles everything from simple full-text search to complex aggregations, log analytics, and the full ELK (Elasticsearch, Logstash, Kibana) stack. If you need more than basic search — analytics, dashboards, distributed scaling — Elasticsearch is the answer.
+[Elasticsearch](/apps/elasticsearch/) is the industry standard for search and analytics. It handles everything from simple full-text search to complex aggregations, log analytics, and the full ELK (Elasticsearch, Logstash, Kibana) stack. If you need more than basic search — analytics, dashboards, distributed scaling — Elasticsearch is the answer.
 
 **Pros:**
 - Most feature-rich search engine available
@@ -104,11 +104,11 @@ affiliateDisclosure: false
 
 **Best for:** Log analytics, complex search requirements, large-scale deployments, teams already using the ELK stack.
 
-[Read our Elasticsearch guide](/apps/elasticsearch) | [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
+[Read our Elasticsearch guide](/apps/elasticsearch/) | [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
 
 #### 4. OpenSearch — Best Elasticsearch Alternative
 
-[OpenSearch](/apps/opensearch) is Amazon's fork of Elasticsearch 7.10, created after Elastic changed its license. It's fully open source (Apache 2.0), API-compatible with Elasticsearch, and includes OpenSearch Dashboards (Kibana equivalent). If you want Elasticsearch without the license concerns, OpenSearch is a drop-in replacement.
+[OpenSearch](/apps/opensearch/) is Amazon's fork of Elasticsearch 7.10, created after Elastic changed its license. It's fully open source (Apache 2.0), API-compatible with Elasticsearch, and includes OpenSearch Dashboards (Kibana equivalent). If you want Elasticsearch without the license concerns, OpenSearch is a drop-in replacement.
 
 **Pros:**
 - Apache 2.0 license — genuinely open source
@@ -126,11 +126,11 @@ affiliateDisclosure: false
 
 **Best for:** Organizations wanting Elasticsearch capabilities with a truly open-source license. AWS-native environments.
 
-[Read our OpenSearch guide](/apps/opensearch) | [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch)
+[Read our OpenSearch guide](/apps/opensearch/) | [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch/)
 
 #### 5. ManticoreSearch — Best SQL-Based Search
 
-[ManticoreSearch](/apps/manticoresearch) is a high-performance search engine forked from Sphinx Search. Its killer feature: a MySQL-compatible SQL interface. Query your search index with standard SQL clients, standard SQL syntax. If your team knows SQL, ManticoreSearch eliminates the learning curve.
+[ManticoreSearch](/apps/manticoresearch/) is a high-performance search engine forked from Sphinx Search. Its killer feature: a MySQL-compatible SQL interface. Query your search index with standard SQL clients, standard SQL syntax. If your team knows SQL, ManticoreSearch eliminates the learning curve.
 
 **Pros:**
 - MySQL-compatible protocol — use any MySQL client
@@ -148,11 +148,11 @@ affiliateDisclosure: false
 
 **Best for:** Teams who know SQL and don't want to learn a new query language. Lightweight Elasticsearch alternative.
 
-[Read our ManticoreSearch guide](/apps/manticoresearch)
+[Read our ManticoreSearch guide](/apps/manticoresearch/)
 
 #### 6. Sonic — Best Lightweight Search
 
-[Sonic](/apps/sonic) is the lightest search engine you can self-host. Written in Rust, it uses less than 20 MB of RAM while providing full-text search with auto-complete suggestions. It stores only search indexes — not documents — and returns IDs that you look up in your database.
+[Sonic](/apps/sonic/) is the lightest search engine you can self-host. Written in Rust, it uses less than 20 MB of RAM while providing full-text search with auto-complete suggestions. It stores only search indexes — not documents — and returns IDs that you look up in your database.
 
 **Pros:**
 - Extremely lightweight (10-50 MB RAM)
@@ -170,13 +170,13 @@ affiliateDisclosure: false
 
 **Best for:** Resource-constrained servers (Raspberry Pi, $5 VPS). Applications needing basic full-text search with minimal overhead.
 
-[Read our Sonic guide](/apps/sonic)
+[Read our Sonic guide](/apps/sonic/)
 
 ### Web Metasearch (private Google alternatives)
 
 #### 7. SearXNG — Best Private Web Search
 
-[SearXNG](/apps/searxng) is a privacy-respecting metasearch engine that aggregates results from 70+ search engines (Google, Bing, DuckDuckGo, and more) without tracking. It strips tracking parameters, proxies images, and never sends your queries to search engines with identifying information.
+[SearXNG](/apps/searxng/) is a privacy-respecting metasearch engine that aggregates results from 70+ search engines (Google, Bing, DuckDuckGo, and more) without tracking. It strips tracking parameters, proxies images, and never sends your queries to search engines with identifying information.
 
 **Pros:**
 - Aggregates 70+ search engines
@@ -194,11 +194,11 @@ affiliateDisclosure: false
 
 **Best for:** Privacy-conscious users who want comprehensive search without tracking. Families, organizations, or networks wanting a private search portal.
 
-[Read our SearXNG guide](/apps/searxng) | [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
+[Read our SearXNG guide](/apps/searxng/) | [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
 
 #### 8. Whoogle — Simplest Google Replacement
 
-[Whoogle](/apps/whoogle) is the simplest self-hosted search solution: it gives you Google search results without ads, tracking, JavaScript, or AMP links. That's it. No configuration, no engine selection, no complexity.
+[Whoogle](/apps/whoogle/) is the simplest self-hosted search solution: it gives you Google search results without ads, tracking, JavaScript, or AMP links. That's it. No configuration, no engine selection, no complexity.
 
 **Pros:**
 - Google results without tracking
@@ -216,7 +216,7 @@ affiliateDisclosure: false
 
 **Best for:** Users who want Google-quality results without tracking and don't need multi-engine aggregation.
 
-[Read our Whoogle guide](/apps/whoogle) | [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
+[Read our Whoogle guide](/apps/whoogle/) | [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
 
 ## Full Comparison Table
 
@@ -256,21 +256,21 @@ We tested each search engine on: setup complexity, search speed, feature set, re
 
 ## Related
 
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Typesense](/apps/typesense)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [How to Self-Host OpenSearch](/apps/opensearch)
-- [How to Self-Host ManticoreSearch](/apps/manticoresearch)
-- [How to Self-Host Sonic](/apps/sonic)
-- [How to Self-Host SearXNG](/apps/searxng)
-- [How to Self-Host Whoogle](/apps/whoogle)
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch)
-- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch)
-- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle)
-- [SearXNG vs Google](/compare/searxng-vs-google)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Self-Hosted Google Alternatives](/replace/google-search)
-- [Search Engine Setup Guide](/foundations/search-engine-setup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Typesense](/apps/typesense/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [How to Self-Host OpenSearch](/apps/opensearch/)
+- [How to Self-Host ManticoreSearch](/apps/manticoresearch/)
+- [How to Self-Host Sonic](/apps/sonic/)
+- [How to Self-Host SearXNG](/apps/searxng/)
+- [How to Self-Host Whoogle](/apps/whoogle/)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Typesense vs Elasticsearch](/compare/typesense-vs-elasticsearch/)
+- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch/)
+- [SearXNG vs Whoogle](/compare/searxng-vs-whoogle/)
+- [SearXNG vs Google](/compare/searxng-vs-google/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Self-Hosted Google Alternatives](/replace/google-search/)
+- [Search Engine Setup Guide](/foundations/search-engine-setup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

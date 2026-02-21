@@ -58,7 +58,7 @@ Feature-for-feature, Vaultwarden covers most of what makes 1Password valuable:
 
 **What you lose:** Watchtower (1Password's breach/weak password scanner) and Travel Mode. For breach monitoring, use [Have I Been Pwned](https://haveibeenpwned.com/) directly. Bitwarden's built-in vault health reports cover weak and reused passwords.
 
-[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden)
+[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden/)
 
 ### Passbolt — Best for Teams and Organizations
 
@@ -68,7 +68,7 @@ The Community Edition is free and covers core password sharing. The Pro edition 
 
 **Best for:** Teams migrating from 1Password Business who need shared credential workflows with audit trails.
 
-[Read our full guide: How to Self-Host Passbolt](/apps/passbolt)
+[Read our full guide: How to Self-Host Passbolt](/apps/passbolt/)
 
 ### KeeWeb — Best for KeePass Users
 
@@ -78,7 +78,7 @@ The KeePass ecosystem has mature desktop clients (KeePassXC) and mobile apps (St
 
 **Best for:** Users who want a file-based vault with no server-side database and maximum portability.
 
-[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb)
+[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb/)
 
 ## Migration Guide
 
@@ -140,13 +140,13 @@ Running Vaultwarden on a Raspberry Pi or existing server costs nothing beyond el
 - **Guaranteed uptime.** 1Password manages infrastructure with redundancy. Your self-hosted instance is only as reliable as your server and internet connection.
 - **Official support.** 1Password has responsive customer support. Self-hosting means community forums and GitHub issues.
 
-**Mitigation:** Keep an encrypted vault backup in KeePass (`.kdbx`) format on a USB drive. If your server fails, you have offline access while you rebuild. Automate backups with our [3-2-1 backup strategy](/foundations/backup-3-2-1-rule).
+**Mitigation:** Keep an encrypted vault backup in KeePass (`.kdbx`) format on a USB drive. If your server fails, you have offline access while you rebuild. Automate backups with our [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/).
 
 ## FAQ
 
 ### Is self-hosted password management as secure as 1Password?
 
-For the encryption itself, yes — Vaultwarden uses AES-256 with Argon2 key derivation, comparable to 1Password's approach. The difference is operational security: 1Password has a dedicated security team, bug bounty program, and infrastructure redundancy. When self-hosting, you're responsible for server security, updates, and backups. Follow our [security basics guide](/foundations/firewall-ufw) and keep your server patched.
+For the encryption itself, yes — Vaultwarden uses AES-256 with Argon2 key derivation, comparable to 1Password's approach. The difference is operational security: 1Password has a dedicated security team, bug bounty program, and infrastructure redundancy. When self-hosting, you're responsible for server security, updates, and backups. Follow our [security basics guide](/foundations/firewall-ufw/) and keep your server patched.
 
 ### Can I migrate my 2FA codes from 1Password?
 
@@ -162,14 +162,14 @@ Yes. Vaultwarden supports organizations with collections (shared folders). Creat
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

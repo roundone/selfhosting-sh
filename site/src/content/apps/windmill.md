@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM (minimum for server + workers)
 - 5 GB of free disk space
 - Docker socket accessible (workers need it for execution)
@@ -227,9 +227,9 @@ Windmill can sync scripts and flows with a Git repository:
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), proxy to port 8000. WebSocket support is required for the real-time editor. Set `BASE_URL` to your public HTTPS URL.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), proxy to port 8000. WebSocket support is required for the real-time editor. Set `BASE_URL` to your public HTTPS URL.
 
-For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For detailed reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -241,7 +241,7 @@ docker exec windmill-db pg_dump -U windmill windmill > windmill_backup.sql
 
 The database stores all scripts, flows, schedules, variables, resources, and execution history. Worker cache is disposable.
 
-For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -292,11 +292,11 @@ Or add the worker container user to the Docker group.
 
 Windmill is the most powerful self-hosted platform for developer workflows. If your team writes scripts, builds internal tools, or needs data pipelines with approval flows, Windmill is unmatched. The auto-generated UIs from script parameters are genuinely useful — no frontend work needed.
 
-**The trade-off is complexity.** Windmill requires more resources than simpler tools like [n8n](/apps/n8n) or [Node-RED](/apps/node-red), and the multi-container setup needs proper infrastructure. It's designed for developer teams, not casual automators.
+**The trade-off is complexity.** Windmill requires more resources than simpler tools like [n8n](/apps/n8n/) or [Node-RED](/apps/node-red/), and the multi-container setup needs proper infrastructure. It's designed for developer teams, not casual automators.
 
 **Use Windmill if:** You're a development team that needs to run scheduled scripts, build internal tools, and orchestrate complex jobs in multiple languages.
 
-**Consider n8n instead if:** You want visual workflow automation with pre-built integrations and simpler deployment. See [Windmill vs n8n](/compare/windmill-vs-n8n).
+**Consider n8n instead if:** You want visual workflow automation with pre-built integrations and simpler deployment. See [Windmill vs n8n](/compare/windmill-vs-n8n/).
 
 ## FAQ
 
@@ -318,11 +318,11 @@ Default workers use Docker to run scripts in isolated containers, which requires
 
 ## Related
 
-- [Windmill vs n8n](/compare/windmill-vs-n8n)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
+- [Windmill vs n8n](/compare/windmill-vs-n8n/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)

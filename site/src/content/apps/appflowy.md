@@ -29,7 +29,7 @@ AppFlowy Cloud is the self-hostable server component that provides sync, collabo
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM minimum (8 GB recommended)
 - 20 GB of free disk space
 - A domain name (required for the cloud server)
@@ -153,7 +153,7 @@ GOTRUE_SMTP_ADMIN_EMAIL=admin@yourdomain.com
 
 Set up a reverse proxy to serve AppFlowy Cloud over HTTPS. Point your proxy to the AppFlowy Cloud API port (default 9000). Ensure WebSocket passthrough is enabled for real-time collaboration.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -169,7 +169,7 @@ docker compose exec postgres pg_dump -U supabase appflowy > appflowy_backup.sql
 # MinIO data is in the minio-data volume
 ```
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -203,18 +203,18 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 AppFlowy is the most feature-complete self-hosted Notion replacement available. Documents, databases, kanban boards, calendar views — it covers the core Notion feature set. The desktop and mobile clients are polished and actively developed.
 
-The trade-off is complexity. The self-hosted stack has 5+ services compared to Outline's 3 or BookStack's 2. Resource requirements are higher. And AppFlowy is still maturing — expect occasional rough edges compared to the more established [Outline](/apps/outline) or [BookStack](/apps/bookstack).
+The trade-off is complexity. The self-hosted stack has 5+ services compared to Outline's 3 or BookStack's 2. Resource requirements are higher. And AppFlowy is still maturing — expect occasional rough edges compared to the more established [Outline](/apps/outline/) or [BookStack](/apps/bookstack/).
 
-Choose AppFlowy if you specifically want Notion's database/kanban features in a self-hosted package. For pure documentation/wiki, [Outline](/apps/outline) or [BookStack](/apps/bookstack) are simpler and more mature.
+Choose AppFlowy if you specifically want Notion's database/kanban features in a self-hosted package. For pure documentation/wiki, [Outline](/apps/outline/) or [BookStack](/apps/bookstack/) are simpler and more mature.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [Replace Notion](/replace/notion)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [Replace Notion](/replace/notion/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

@@ -35,7 +35,7 @@ Navidrome is a lightweight music server that streams your FLAC, WAV, ALAC, and o
 
 **What's different from Tidal:** No catalog of 100+ million songs. You stream your own collection. No MQA (which is arguably a positive — MQA is controversial in the audiophile community and Tidal has been moving away from it). No Dolby Atmos mixes.
 
-[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome)]
+[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome/)]
 
 ### Jellyfin — Best for Multi-Media Lossless
 
@@ -43,7 +43,7 @@ Jellyfin handles lossless music alongside video, audiobooks, and more. Its music
 
 **Why it works for audiophiles:** Jellyfin serves your files without re-encoding by default. If you have 24-bit/96kHz FLAC files, that's what gets delivered to the client. Combined with a good DAC and headphones, the experience matches or exceeds Tidal.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ### Plex with Plexamp — Best for Tidal Refugees
 
@@ -53,7 +53,7 @@ Plexamp's loudness normalization and sonic analysis features create a streaming-
 
 **Cost:** Plex Pass is $5/month, $40/year, or $120 lifetime. Cheaper than Tidal and a one-time cost.
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ## Migration Guide
 
@@ -143,11 +143,11 @@ Roon doesn't integrate with Navidrome or Jellyfin. Roon is its own ecosystem. If
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Self-Hosted Apple Music Alternatives](/replace/apple-music)
-- [Self-Hosted YouTube Music Alternatives](/replace/youtube-music)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Self-Hosted Apple Music Alternatives](/replace/apple-music/)
+- [Self-Hosted YouTube Music Alternatives](/replace/youtube-music/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

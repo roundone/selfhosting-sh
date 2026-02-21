@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Verdict
 
-**For most home servers, NIC bonding isn't necessary.** A single gigabit connection handles typical self-hosting workloads. If you need more bandwidth, upgrade to [2.5 GbE](/hardware/2.5gbe-networking) or [10 GbE](/hardware/10gbe-networking) instead of bonding two 1 GbE ports. Bonding makes sense when you need **failover** (redundancy) or when you're serving **many concurrent clients** and want aggregate throughput.
+**For most home servers, NIC bonding isn't necessary.** A single gigabit connection handles typical self-hosting workloads. If you need more bandwidth, upgrade to [2.5 GbE](/hardware/2.5gbe-networking/) or [10 GbE](/hardware/10gbe-networking/) instead of bonding two 1 GbE ports. Bonding makes sense when you need **failover** (redundancy) or when you're serving **many concurrent clients** and want aggregate throughput.
 
 ## What Is NIC Bonding?
 
@@ -256,9 +256,9 @@ In all bonding modes, the bond continues operating with the remaining NIC(s). Tr
 
 ## Related
 
-- [2.5 GbE Networking Guide](/hardware/2.5gbe-networking)
-- [10 GbE Networking Guide](/hardware/10gbe-networking)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [Homelab Network Topology](/hardware/homelab-network-topology)
-- [Home Server Networking](/hardware/home-server-networking)
-- [Best USB Ethernet Adapters](/hardware/best-usb-ethernet-adapters)
+- [2.5 GbE Networking Guide](/hardware/2.5gbe-networking/)
+- [10 GbE Networking Guide](/hardware/10gbe-networking/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [Homelab Network Topology](/hardware/homelab-network-topology/)
+- [Home Server Networking](/hardware/home-server-networking/)
+- [Best USB Ethernet Adapters](/hardware/best-usb-ethernet-adapters/)

@@ -108,9 +108,9 @@ Yes. Some users run Immich as their phone backup/daily driver and Piwigo as a cu
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)

@@ -17,7 +17,7 @@ affiliateDisclosure: true
 
 **For most self-hosters, buy a Synology DS423+.** It costs ~$450, runs Docker natively, has Intel Quick Sync for Plex transcoding, supports NVMe caching, and Synology's DSM software is the most polished NAS OS on the market. Pair it with two 8 TB Seagate IronWolf drives (~$150 each) in SHR (Synology Hybrid RAID) and you have a 8 TB usable, fault-tolerant storage server for about $750 total.
 
-**If you want maximum control and flexibility**, build a DIY NAS with TrueNAS SCALE or Unraid. You'll get more hardware for your money, but you'll spend more time configuring it. See our [DIY NAS Build Guide](/hardware/diy-nas-build).
+**If you want maximum control and flexibility**, build a DIY NAS with TrueNAS SCALE or Unraid. You'll get more hardware for your money, but you'll spend more time configuring it. See our [DIY NAS Build Guide](/hardware/diy-nas-build/).
 
 ## What to Look For
 
@@ -162,7 +162,7 @@ Build your own using a Jonsbo N3 case (8 bays), an Intel N305 motherboard, and 3
 - No mobile app ecosystem like Synology Drive/Photos
 - No hardware warranty on the complete system
 
-**Best for:** Experienced users who want ZFS, maximum storage density, and full control. See our [DIY NAS Build Guide](/hardware/diy-nas-build) for step-by-step instructions.
+**Best for:** Experienced users who want ZFS, maximum storage density, and full control. See our [DIY NAS Build Guide](/hardware/diy-nas-build/) for step-by-step instructions.
 
 ### 5. Unraid on Any x86 Hardware — Best Flexibility
 
@@ -189,7 +189,7 @@ Unraid isn't hardware — it's an OS. Install it on any x86 PC (old desktop, min
 - Parity-based redundancy is slow for writes
 - Array access speed limited by single-drive read speed (cache helps)
 
-**Best for:** Homelabbers who accumulate drives over time and want painless expansion. See our [Synology vs Unraid](/hardware/synology-vs-unraid) and [TrueNAS vs Unraid](/hardware/truenas-vs-unraid) comparisons.
+**Best for:** Homelabbers who accumulate drives over time and want painless expansion. See our [Synology vs Unraid](/hardware/synology-vs-unraid/) and [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/) comparisons.
 
 ## Full Comparison Table
 
@@ -225,26 +225,26 @@ NAS power consumption depends heavily on the number and type of drives installed
 ### Every NAS (2+ GB RAM):
 - File sharing (SMB, NFS, AFP)
 - Automated backups (Hyper Backup, rsync, Borg)
-- [Syncthing](/apps/syncthing) — file sync across devices
+- [Syncthing](/apps/syncthing/) — file sync across devices
 
 ### 4+ GB RAM NAS:
-- [Plex](/apps/plex) or [Jellyfin](/apps/jellyfin) — media server (Intel CPU recommended for transcoding)
-- [Nextcloud](/apps/nextcloud) — file sync, calendar, contacts
-- [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) — DNS ad blocking
-- [Vaultwarden](/apps/vaultwarden) — password management
-- [Immich](/apps/immich) — photo management (needs 4+ GB, Intel CPU preferred)
+- [Plex](/apps/plex/) or [Jellyfin](/apps/jellyfin/) — media server (Intel CPU recommended for transcoding)
+- [Nextcloud](/apps/nextcloud/) — file sync, calendar, contacts
+- [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) — DNS ad blocking
+- [Vaultwarden](/apps/vaultwarden/) — password management
+- [Immich](/apps/immich/) — photo management (needs 4+ GB, Intel CPU preferred)
 
 ### 8+ GB RAM NAS:
 - Everything above, plus:
-- [Home Assistant](/apps/home-assistant) — home automation
-- [BookStack](/apps/bookstack) — wiki/knowledge base
-- [Uptime Kuma](/apps/uptime-kuma) — monitoring
+- [Home Assistant](/apps/home-assistant/) — home automation
+- [BookStack](/apps/bookstack/) — wiki/knowledge base
+- [Uptime Kuma](/apps/uptime-kuma/) — monitoring
 - Multiple databases (PostgreSQL, MariaDB)
 
 ### 16+ GB RAM (DIY/Unraid):
 - Everything above, plus:
 - Virtual machines
-- [Immich](/apps/immich) with ML processing
+- [Immich](/apps/immich/) with ML processing
 - CI/CD runners
 - Large Nextcloud instances with full-text search
 
@@ -257,20 +257,20 @@ Buy a Synology if you value your time and want everything to "just work." Build 
 Start with two drives in a 4-bay NAS. Use SHR/RAID 1 for redundancy (you get one drive's worth of usable space). Add more drives as you need them. Starting with two 8 TB drives gives you 8 TB usable for ~$300.
 
 ### Do I need a NAS if I have a mini PC?
-They complement each other. Use a [mini PC](/hardware/best-mini-pc) for compute (Docker containers, VMs, transcoding) and a NAS for bulk storage (media, backups, photos). Connect them over your LAN with NFS or SMB mounts. This separation is cleaner and more reliable than trying to do everything on one device.
+They complement each other. Use a [mini PC](/hardware/best-mini-pc/) for compute (Docker containers, VMs, transcoding) and a NAS for bulk storage (media, backups, photos). Connect them over your LAN with NFS or SMB mounts. This separation is cleaner and more reliable than trying to do everything on one device.
 
 ### Which drives should I buy?
-See our [Best Hard Drives for NAS](/hardware/best-hard-drives-nas) guide. Short answer: Seagate IronWolf or WD Red Plus in 8–16 TB capacities for the best price per TB.
+See our [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/) guide. Short answer: Seagate IronWolf or WD Red Plus in 8–16 TB capacities for the best price per TB.
 
 ## Related
 
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Synology vs Unraid](/hardware/synology-vs-unraid)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Synology vs Unraid](/hardware/synology-vs-unraid/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)

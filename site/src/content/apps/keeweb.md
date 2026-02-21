@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB of free RAM
 - An existing `.kdbx` vault file (or create one with KeePassXC)
 - A domain name with HTTPS recommended (for secure access)
@@ -127,7 +127,7 @@ keeweb.example.com {
 }
 ```
 
-For more options, see our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+For more options, see our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -142,7 +142,7 @@ cp /opt/keeweb/keeweb-data/vault.kdbx /path/to/backup/
 
 The `.kdbx` format is a KeePass standard — you can open the backup with KeePassXC, Strongbox, KeePassDX, or any KeePass-compatible client.
 
-See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -171,7 +171,7 @@ KeeWeb is one of the lightest self-hosted apps you can run. The server just serv
 
 ## Verdict
 
-KeeWeb is the best self-hosted option if you're already in the KeePass ecosystem or want the simplest possible vault architecture — a single encrypted file with no server-side database. The tradeoff is that it lacks the polished auto-fill, mobile apps, and organization features of [Vaultwarden](/apps/vaultwarden). For most users starting fresh, Vaultwarden is the better choice. But if you have existing `.kdbx` vaults, want to use KeePassXC on desktop alongside a web UI, or prefer the KeePass file-based model, KeeWeb gives you browser access to your vault without changing your workflow.
+KeeWeb is the best self-hosted option if you're already in the KeePass ecosystem or want the simplest possible vault architecture — a single encrypted file with no server-side database. The tradeoff is that it lacks the polished auto-fill, mobile apps, and organization features of [Vaultwarden](/apps/vaultwarden/). For most users starting fresh, Vaultwarden is the better choice. But if you have existing `.kdbx` vaults, want to use KeePassXC on desktop alongside a web UI, or prefer the KeePass file-based model, KeeWeb gives you browser access to your vault without changing your workflow.
 
 ## FAQ
 
@@ -189,12 +189,12 @@ KeeWeb itself doesn't do browser auto-fill. For that, use the KeePassXC browser 
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

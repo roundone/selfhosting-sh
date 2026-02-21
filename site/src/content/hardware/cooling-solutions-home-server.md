@@ -178,10 +178,10 @@ Under 25 dBA is effectively silent from 2 meters away. 25–35 dBA is noticeable
 
 ## Related
 
-- [Home Server Noise Reduction](/hardware/home-server-noise-reduction)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Server Cases for Homelab](/hardware/server-case-guide)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
+- [Home Server Noise Reduction](/hardware/home-server-noise-reduction/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Server Cases for Homelab](/hardware/server-case-guide/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)

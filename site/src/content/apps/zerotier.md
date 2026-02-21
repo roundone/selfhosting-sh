@@ -37,7 +37,7 @@ ZeroTier 1.16.0 (September 2024) moved the network controller code to a commerci
 ## Prerequisites
 
 - A Linux server with a public IP (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB RAM minimum
 - 5 GB free disk space
 - A domain name (optional, for remote dashboard access)
@@ -267,7 +267,7 @@ server {
 
 Update `NEXTAUTH_URL` in your Docker Compose to match the public URL (e.g., `https://ztnet.example.com`).
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for Nginx Proxy Manager or Traefik configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for Nginx Proxy Manager or Traefik configuration.
 
 ## Backup
 
@@ -330,7 +330,7 @@ docker compose up -d
 
 ZeroTier with ZTNET is the best choice for users who need a **Layer 2 mesh network** with self-hosted control. The L2 architecture means you can run protocols that Tailscale and WireGuard can't handle — multicast, broadcast, non-IP protocols. The self-hosted controller eliminates the 10-device limit and gives you full network sovereignty.
 
-For simpler VPN needs (site-to-site, remote access), [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard) are easier to set up. ZeroTier's sweet spot is complex networking scenarios: bridging multiple LANs, gaming networks, IoT deployments, or environments where L2 connectivity matters.
+For simpler VPN needs (site-to-site, remote access), [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/) are easier to set up. ZeroTier's sweet spot is complex networking scenarios: bridging multiple LANs, gaming networks, IoT deployments, or environments where L2 connectivity matters.
 
 ## FAQ
 
@@ -344,7 +344,7 @@ For personal and non-profit use, no — the commercial source-available license 
 
 ### Can ZeroTier replace Tailscale?
 
-For mesh networking, yes. ZeroTier's Layer 2 approach is more flexible than Tailscale's Layer 3. However, Tailscale is simpler to set up, has better SSO integration, and doesn't require a self-hosted controller for basic use. See our [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale) comparison.
+For mesh networking, yes. ZeroTier's Layer 2 approach is more flexible than Tailscale's Layer 3. However, Tailscale is simpler to set up, has better SSO integration, and doesn't require a self-hosted controller for basic use. See our [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale/) comparison.
 
 ### How many devices can a self-hosted controller handle?
 
@@ -356,11 +356,11 @@ Use ZeroTier 1.14.2 with ZTNET — this is the version ZTNET is tested against a
 
 ## Related
 
-- [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale)
-- [How to Self-Host Tailscale (Headscale)](/apps/headscale)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale/)
+- [How to Self-Host Tailscale (Headscale)](/apps/headscale/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

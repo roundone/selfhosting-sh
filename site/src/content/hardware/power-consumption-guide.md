@@ -91,7 +91,7 @@ Mini PCs are the most power-efficient general-purpose servers:
 | Pi 4 (4 GB) | 3-4W | 4-5W | 6-7W | $4-5 |
 | Pi 5 (8 GB) | 3-5W | 5-7W | 10-12W | $5-7 |
 
-The Pi 5 is marginally more efficient than a mini PC at idle (3-5W vs 6-8W), but the difference is ~$2-3/year. Not enough to outweigh the mini PC's performance advantage. See our [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc) comparison.
+The Pi 5 is marginally more efficient than a mini PC at idle (3-5W vs 6-8W), but the difference is ~$2-3/year. Not enough to outweigh the mini PC's performance advantage. See our [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/) comparison.
 
 ### NAS Devices
 
@@ -122,7 +122,7 @@ NAS power consumption is dominated by drives, not the NAS CPU:
 | HP ProLiant DL360 Gen9 (E5-2620v3) | 1x Xeon | 80-100W | 200-350W | $84-105 |
 | Dell PowerEdge T620 (E5-2630v2) | 1x Xeon | 90-130W | 250-400W | $95-137 |
 
-**Used mini desktops (OptiPlex Micro, ThinkCentre Tiny)** are a reasonable middle ground — 2-4x the power of an N100 mini PC but much cheaper to buy ($100-200 used). See our [Dell OptiPlex guide](/hardware/used-dell-optiplex).
+**Used mini desktops (OptiPlex Micro, ThinkCentre Tiny)** are a reasonable middle ground — 2-4x the power of an N100 mini PC but much cheaper to buy ($100-200 used). See our [Dell OptiPlex guide](/hardware/used-dell-optiplex/).
 
 **Used rack servers are expensive to run.** A PowerEdge R720 at 130W idle costs $137/year — nearly the purchase price of the server itself. After 2-3 years, you've spent more on electricity than the hardware cost. For home use, avoid rack servers unless you need specific enterprise features (many PCIe slots, ECC RAM, IPMI/iDRAC).
 
@@ -213,7 +213,7 @@ A UPS (Uninterruptible Power Supply) keeps your server running during brief powe
 - Mini PC + 4-bay NAS (40W load): ~15 minutes
 - Full homelab stack (100W load): ~5 minutes
 
-See our [Best UPS for Home Servers](/hardware/best-ups-home-server) guide.
+See our [Best UPS for Home Servers](/hardware/best-ups-home-server/) guide.
 
 ## FAQ
 
@@ -235,15 +235,15 @@ No. The power savings are minimal (a few watts × 8 hours = pennies per night), 
 
 ### How do I monitor power consumption over time?
 
-Use a smart plug with energy monitoring (Shelly Plug S, TP-Link Kasa, Tapo P110). These log power consumption hourly and calculate monthly/yearly totals. You can also monitor from within your homelab using [Home Assistant](/apps/home-assistant) with an energy monitoring integration.
+Use a smart plug with energy monitoring (Shelly Plug S, TP-Link Kasa, Tapo P110). These log power consumption hourly and calculate monthly/yearly totals. You can also monitor from within your homelab using [Home Assistant](/apps/home-assistant/) with an energy monitoring integration.
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc)
-- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc/)
+- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -54,7 +54,7 @@ Proxmox Virtual Environment is a Debian-based hypervisor that runs both KVM virt
 
 **Minimum hardware:** 4 GB RAM (8 GB+ recommended), 64-bit CPU with VT-x/VT-d, 32 GB boot drive.
 
-**Recommended hardware:** [Intel N100/N305 mini PC](/hardware/best-mini-pc) with 16-32 GB RAM for a starter setup. [DIY build](/hardware/diy-nas-build) with 32-64 GB ECC RAM for serious virtualization.
+**Recommended hardware:** [Intel N100/N305 mini PC](/hardware/best-mini-pc/) with 16-32 GB RAM for a starter setup. [DIY build](/hardware/diy-nas-build/) with 32-64 GB ECC RAM for serious virtualization.
 
 **Pros:** Free, mature (15+ years), excellent ZFS integration, web UI, huge community, enterprise-grade features.
 
@@ -75,7 +75,7 @@ TrueNAS SCALE is a Linux-based NAS OS built around ZFS and OpenZFS. It includes 
 | Replication | Built-in ZFS send/receive |
 | License | BSD (free), TrueNAS Enterprise for paid support |
 
-**Minimum hardware:** 8 GB RAM (16 GB+ recommended for ZFS), ECC RAM recommended but not required, 2+ drives for redundancy. See our [TrueNAS hardware guide](/hardware/truenas-hardware-guide).
+**Minimum hardware:** 8 GB RAM (16 GB+ recommended for ZFS), ECC RAM recommended but not required, 2+ drives for redundancy. See our [TrueNAS hardware guide](/hardware/truenas-hardware-guide/).
 
 **Pros:** Best ZFS management UI, built-in replication, SMB/NFS shares, Docker Apps catalog, active development by iXsystems.
 
@@ -96,7 +96,7 @@ Unraid is a proprietary Linux-based server OS focused on ease of use. Its killer
 | Web UI | Yes |
 | License | $59 (Basic), $89 (Plus), $129 (Pro) |
 
-**Minimum hardware:** 2 GB RAM, 64-bit CPU, USB flash drive for boot. See our [Unraid hardware guide](/hardware/unraid-hardware-guide).
+**Minimum hardware:** 2 GB RAM, 64-bit CPU, USB flash drive for boot. See our [Unraid hardware guide](/hardware/unraid-hardware-guide/).
 
 **Pros:** Easiest setup, mixed drive sizes, community apps ecosystem, excellent Docker integration, active forums.
 
@@ -113,7 +113,7 @@ If you just want to run Docker containers and don't need a hypervisor or NAS fea
 | Package manager | apt |
 | Updates | Automatic security updates via unattended-upgrades |
 
-**When to use this:** You have a [mini PC](/hardware/best-mini-pc) dedicated to Docker containers. You don't need VMs. You manage storage separately (external NAS, cloud backup). You want the largest ecosystem of tutorials and Stack Overflow answers.
+**When to use this:** You have a [mini PC](/hardware/best-mini-pc/) dedicated to Docker containers. You don't need VMs. You manage storage separately (external NAS, cloud backup). You want the largest ecosystem of tutorials and Stack Overflow answers.
 
 **Pros:** Most popular server Linux (largest community), 5-year LTS support, works on everything, vast package ecosystem.
 
@@ -140,7 +140,7 @@ OMV is a Debian-based NAS OS with a web UI. Think of it as a free alternative to
 | Shares | SMB, NFS, FTP |
 | Docker | Via OMV-Extras plugin |
 
-**When to use this:** You want a NAS OS that's free and easier than TrueNAS. Good for repurposed hardware — old PCs, [Dell Optiplex](/hardware/used-dell-optiplex) machines, Raspberry Pi.
+**When to use this:** You want a NAS OS that's free and easier than TrueNAS. Good for repurposed hardware — old PCs, [Dell Optiplex](/hardware/used-dell-optiplex/) machines, Raspberry Pi.
 
 **Pros:** Free, low resource requirements, runs on Raspberry Pi, Debian base means Docker works.
 
@@ -189,12 +189,12 @@ CasaOS is a lightweight overlay that installs on top of Debian or Ubuntu. It add
 
 | OS | Ideal Hardware | Budget |
 |----|---------------|--------|
-| Proxmox VE | [Intel N305 mini PC](/hardware/best-mini-pc) 32 GB RAM, or [DIY build](/hardware/home-server-build-guide) | $200-600 |
-| TrueNAS SCALE | [DIY NAS](/hardware/diy-nas-build) with 16-32 GB RAM, 4+ drive bays | $400-800 |
+| Proxmox VE | [Intel N305 mini PC](/hardware/best-mini-pc/) 32 GB RAM, or [DIY build](/hardware/home-server-build-guide/) | $200-600 |
+| TrueNAS SCALE | [DIY NAS](/hardware/diy-nas-build/) with 16-32 GB RAM, 4+ drive bays | $400-800 |
 | Unraid | Any x86 hardware with 2+ drives, USB boot drive | $200-500 + license |
-| Ubuntu/Debian | [Intel N100 mini PC](/hardware/intel-n100-mini-pc), 16 GB RAM | $150-250 |
-| OMV | [Used Dell Optiplex](/hardware/used-dell-optiplex) or Raspberry Pi 5 | $50-200 |
-| CasaOS | [Intel N100 mini PC](/hardware/intel-n100-mini-pc) | $150-200 |
+| Ubuntu/Debian | [Intel N100 mini PC](/hardware/intel-n100-mini-pc/), 16 GB RAM | $150-250 |
+| OMV | [Used Dell Optiplex](/hardware/used-dell-optiplex/) or Raspberry Pi 5 | $50-200 |
+| CasaOS | [Intel N100 mini PC](/hardware/intel-n100-mini-pc/) | $150-200 |
 
 ## FAQ
 
@@ -204,7 +204,7 @@ Don't. Pick one and commit. If you want to try multiple OSes, use Proxmox and ru
 
 ### Should I use ECC RAM?
 
-For TrueNAS with ZFS, ECC is recommended (but not required). ZFS checksums data regardless — ECC protects against bit flips in RAM before data reaches ZFS. For Proxmox, Unraid, or Docker on Ubuntu, ECC is nice to have but not necessary. See our [ECC vs non-ECC guide](/hardware/ecc-vs-non-ecc-ram).
+For TrueNAS with ZFS, ECC is recommended (but not required). ZFS checksums data regardless — ECC protects against bit flips in RAM before data reaches ZFS. For Proxmox, Unraid, or Docker on Ubuntu, ECC is nice to have but not necessary. See our [ECC vs non-ECC guide](/hardware/ecc-vs-non-ecc-ram/).
 
 ### What about Fedora Server or Arch Linux?
 
@@ -216,13 +216,13 @@ If your data is on separate drives from the OS (which it should be), you can rei
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
-- [TrueNAS Hardware Guide](/hardware/truenas-hardware-guide)
-- [Unraid Hardware Guide](/hardware/unraid-hardware-guide)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)
+- [TrueNAS Hardware Guide](/hardware/truenas-hardware-guide/)
+- [Unraid Hardware Guide](/hardware/unraid-hardware-guide/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

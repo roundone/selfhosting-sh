@@ -21,12 +21,12 @@ affiliateDisclosure: false
 
 ## What Is Directus?
 
-Directus is an open-source headless CMS and data platform that wraps any SQL database with auto-generated REST and GraphQL APIs plus a visual admin panel called Data Studio. Unlike [Strapi](/apps/strapi), Directus doesn't impose its own schema — it mirrors your existing database tables. This makes it useful both as a CMS and as an instant API layer for any SQL database. [Official site](https://directus.io/).
+Directus is an open-source headless CMS and data platform that wraps any SQL database with auto-generated REST and GraphQL APIs plus a visual admin panel called Data Studio. Unlike [Strapi](/apps/strapi/), Directus doesn't impose its own schema — it mirrors your existing database tables. This makes it useful both as a CMS and as an instant API layer for any SQL database. [Official site](https://directus.io/).
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum (2 GB recommended with Redis)
 - 5 GB of free disk space
 - A domain name (optional, for production access)
@@ -221,7 +221,7 @@ Real-time data updates are available via WebSocket when `WEBSOCKETS_ENABLED` is 
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8055. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy).
+Configure your reverse proxy to forward to port 8055. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), or [Caddy](/apps/caddy/).
 
 ## Backup
 
@@ -236,7 +236,7 @@ docker run --rm -v directus-uploads:/data -v $(pwd):/backup alpine \
   tar czf /backup/directus-uploads.tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-strategy).
+See [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -287,19 +287,19 @@ The `node` user (UID 1000) must own the directory.
 
 Directus is the best self-hosted headless CMS for teams that want a pre-built Docker image, instant APIs, and a polished admin interface. The database-agnostic approach is its killer feature — connect it to an existing PostgreSQL or MySQL database and you instantly get REST + GraphQL APIs with a visual admin panel. The built-in Flows automation engine and granular role-based permissions make it production-ready out of the box.
 
-Choose Directus over [Strapi](/apps/strapi) if you want simpler deployment (pre-built Docker image vs build-from-source), database flexibility, or the ability to wrap an existing database. Choose Strapi if you prefer its content-type builder workflow or need its larger plugin ecosystem.
+Choose Directus over [Strapi](/apps/strapi/) if you want simpler deployment (pre-built Docker image vs build-from-source), database flexibility, or the ability to wrap an existing database. Choose Strapi if you prefer its content-type builder workflow or need its larger plugin ecosystem.
 
 **Licensing note:** Directus uses BSL 1.1, which is free for organizations with less than $5M in total finances. Larger organizations need a commercial license.
 
 ## Related
 
-- [How to Self-Host Strapi](/apps/strapi)
-- [How to Self-Host Ghost](/apps/ghost)
-- [How to Self-Host WordPress](/apps/wordpress)
-- [How to Self-Host Hugo](/apps/hugo)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Directus vs Strapi](/compare/directus-vs-strapi)
-- [Best Self-Hosted CMS](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Strapi](/apps/strapi/)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [How to Self-Host Hugo](/apps/hugo/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Directus vs Strapi](/compare/directus-vs-strapi/)
+- [Best Self-Hosted CMS](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

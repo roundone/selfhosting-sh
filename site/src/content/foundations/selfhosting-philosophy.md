@@ -35,7 +35,7 @@ Cloud subscriptions add up fast. A typical tech household spends $50–150/month
 
 A $175 mini PC running 10W costs ~$17/year in electricity. It replaces $40–80/month in subscriptions. Break-even in 3–6 months, then you're saving $500+/year indefinitely.
 
-See the full math in [Home Server Cost Breakdown](/foundations/home-server-cost).
+See the full math in [Home Server Cost Breakdown](/foundations/home-server-cost/).
 
 ## The Data Ownership Argument
 
@@ -51,7 +51,7 @@ When you use a cloud service, you don't own your data in any meaningful sense. Y
 
 Self-hosting removes single points of failure. Your data lives on your hardware. No company can delete your account, change the terms, raise the price, or discontinue the product.
 
-**The caveat:** you become responsible for backups. A house fire destroys your server and your data if you don't have offsite backups. The [3-2-1 backup rule](/foundations/backup-3-2-1-rule) solves this.
+**The caveat:** you become responsible for backups. A house fire destroys your server and your data if you don't have offsite backups. The [3-2-1 backup rule](/foundations/backup-3-2-1-rule/) solves this.
 
 ## The Privacy Argument
 
@@ -125,7 +125,7 @@ Start with high-impact, low-effort services:
 | 5 | Uptime Kuma (monitoring) | Know when things break | Easy |
 | 6 | Jellyfin (media) | Personal Netflix from your own media | Medium |
 
-See [Getting Started with Self-Hosting](/foundations/getting-started) for the full beginner guide.
+See [Getting Started with Self-Hosting](/foundations/getting-started/) for the full beginner guide.
 
 ## When NOT to Self-Host
 
@@ -141,7 +141,7 @@ Self-hosting isn't always the answer:
 
 ### Is self-hosting safe?
 
-As safe as you make it. With proper security practices ([firewall](/foundations/firewall-ufw), [fail2ban](/foundations/fail2ban), [SSH keys](/foundations/ssh-setup), automatic updates), a self-hosted server is no less secure than a cloud service — and in many cases more secure, because your attack surface is smaller.
+As safe as you make it. With proper security practices ([firewall](/foundations/firewall-ufw/), [fail2ban](/foundations/fail2ban/), [SSH keys](/foundations/ssh-setup/), automatic updates), a self-hosted server is no less secure than a cloud service — and in many cases more secure, because your attack surface is smaller.
 
 ### Don't I need to be a Linux expert?
 
@@ -149,7 +149,7 @@ No. If you can follow a tutorial and copy-paste Docker Compose commands, you can
 
 ### What if my server breaks while I'm on vacation?
 
-Set up [monitoring](/foundations/monitoring-basics) with mobile alerts. Most self-hosted services are surprisingly stable — Docker containers with `restart: unless-stopped` handle most issues automatically. For extended trips, Tailscale gives you remote SSH access from your phone.
+Set up [monitoring](/foundations/monitoring-basics/) with mobile alerts. Most self-hosted services are surprisingly stable — Docker containers with `restart: unless-stopped` handle most issues automatically. For extended trips, Tailscale gives you remote SSH access from your phone.
 
 ### How much time does self-hosting actually take?
 
@@ -157,19 +157,19 @@ Initial setup: 4–20 hours depending on how many services. Monthly maintenance:
 
 ### Can I self-host if my ISP blocks ports?
 
-Yes. Use Cloudflare Tunnel (free) to expose web services without opening ports, and Tailscale (free) for personal access. CGNAT and blocked ports are increasingly common but completely solvable. See [Port Forwarding Alternatives](/foundations/port-forwarding).
+Yes. Use Cloudflare Tunnel (free) to expose web services without opening ports, and Tailscale (free) for personal access. CGNAT and blocked ports are increasingly common but completely solvable. See [Port Forwarding Alternatives](/foundations/port-forwarding/).
 
 ## Next Steps
 
-- [Getting Started with Self-Hosting](/foundations/getting-started) — set up your first server
-- [Home Server Cost Breakdown](/foundations/home-server-cost) — the full financial picture
-- [Docker Compose Basics](/foundations/docker-compose-basics) — deploy your first service
+- [Getting Started with Self-Hosting](/foundations/getting-started/) — set up your first server
+- [Home Server Cost Breakdown](/foundations/home-server-cost/) — the full financial picture
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — deploy your first service
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Home Server Cost Breakdown](/foundations/home-server-cost)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Home Server Cost Breakdown](/foundations/home-server-cost/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)

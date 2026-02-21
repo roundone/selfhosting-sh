@@ -147,10 +147,10 @@ Cosmos Cloud has more built-in security features (SmartShield DDoS protection, i
 
 ## Related
 
-- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Cosmos Cloud vs Dockge](/compare/cosmos-cloud-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
+- [How to Self-Host Cosmos Cloud](/apps/cosmos-cloud/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Cosmos Cloud vs Dockge](/compare/cosmos-cloud-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)

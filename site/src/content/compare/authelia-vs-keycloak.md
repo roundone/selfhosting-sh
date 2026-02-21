@@ -107,7 +107,7 @@ This is actually a valid pattern. Use Keycloak as your identity provider for app
 
 ## Final Verdict
 
-Start with Authelia. It covers the most common homelab need — "put a login page in front of my services" — with minimal resources and complexity. Graduate to Keycloak when you outgrow Authelia: when you need SAML, Active Directory federation, or a proper user management portal. If you're between these two, [Authentik](/apps/authentik) offers a middle ground with a modern UI. See [Authelia vs Authentik](/compare/authelia-vs-authentik) and [Authentik vs Keycloak](/compare/authentik-vs-keycloak).
+Start with Authelia. It covers the most common homelab need — "put a login page in front of my services" — with minimal resources and complexity. Graduate to Keycloak when you outgrow Authelia: when you need SAML, Active Directory federation, or a proper user management portal. If you're between these two, [Authentik](/apps/authentik/) offers a middle ground with a modern UI. See [Authelia vs Authentik](/compare/authelia-vs-authentik/) and [Authentik vs Keycloak](/compare/authentik-vs-keycloak/).
 
 ## FAQ
 
@@ -129,10 +129,10 @@ Yes. You can add Keycloak alongside Authelia and migrate apps one by one. Start 
 
 ## Related
 
-- [How to Self-Host Authelia](/apps/authelia)
-- [How to Self-Host Keycloak](/apps/keycloak)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Authentik vs Keycloak](/compare/authentik-vs-keycloak)
-- [How to Self-Host Authentik](/apps/authentik)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [How to Self-Host Keycloak](/apps/keycloak/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Authentik vs Keycloak](/compare/authentik-vs-keycloak/)
+- [How to Self-Host Authentik](/apps/authentik/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

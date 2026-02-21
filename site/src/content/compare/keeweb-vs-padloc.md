@@ -23,7 +23,7 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-KeeWeb is the better choice if you want a file-based password vault with KeePass compatibility and zero server-side processing. Padloc is better if you want a multi-device sync experience with a modern UI. But both projects are dormant — for a maintained password manager, use [Vaultwarden](/apps/vaultwarden).
+KeeWeb is the better choice if you want a file-based password vault with KeePass compatibility and zero server-side processing. Padloc is better if you want a multi-device sync experience with a modern UI. But both projects are dormant — for a maintained password manager, use [Vaultwarden](/apps/vaultwarden/).
 
 ## Overview
 
@@ -95,13 +95,13 @@ Both projects are dormant:
 
 ### Choose Neither If...
 
-- You need browser auto-fill — neither has extensions. Use [Vaultwarden](/apps/vaultwarden)
+- You need browser auto-fill — neither has extensions. Use [Vaultwarden](/apps/vaultwarden/)
 - You need active security maintenance — both are dormant
-- You need team password sharing — use [Passbolt](/apps/passbolt) or [Vaultwarden](/apps/vaultwarden)
+- You need team password sharing — use [Passbolt](/apps/passbolt/) or [Vaultwarden](/apps/vaultwarden/)
 
 ## Final Verdict
 
-KeeWeb is the safer bet despite being older. It uses the well-established KeePass format (your data is never locked into a dead project), requires no server-side infrastructure beyond nginx, and its static nature means fewer security concerns from lack of updates. Padloc has a nicer UX but ties your data to a proprietary format from a dormant project. For serious use, both lose to [Vaultwarden](/apps/vaultwarden).
+KeeWeb is the safer bet despite being older. It uses the well-established KeePass format (your data is never locked into a dead project), requires no server-side infrastructure beyond nginx, and its static nature means fewer security concerns from lack of updates. Padloc has a nicer UX but ties your data to a proprietary format from a dormant project. For serious use, both lose to [Vaultwarden](/apps/vaultwarden/).
 
 ## FAQ
 
@@ -119,9 +119,9 @@ Yes. This is the most common setup: store your .kdbx vault in Nextcloud, open it
 
 ## Related
 
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [How to Self-Host Padloc](/apps/padloc)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [How to Self-Host Padloc](/apps/padloc/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)

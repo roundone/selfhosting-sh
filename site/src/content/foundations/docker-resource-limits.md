@@ -21,9 +21,9 @@ Resource limits let you cap what each container can use. They're essential for a
 
 ## Prerequisites
 
-- Docker Engine 20.10+ installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- A running Linux server ([Getting Started](/foundations/getting-started))
-- Basic understanding of Docker Compose files ([YAML Basics](/foundations/yaml-basics))
+- Docker Engine 20.10+ installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- A running Linux server ([Getting Started](/foundations/getting-started/))
+- Basic understanding of Docker Compose files ([YAML Basics](/foundations/yaml-basics/))
 
 ## Memory Limits
 
@@ -239,10 +239,10 @@ A single noisy container can fill your disk with log data overnight. Always conf
 
 ## Next Steps
 
-- Monitor your containers with [Monitoring Basics](/foundations/monitoring-basics) to find the right limits
-- Learn about [Docker Compose Basics](/foundations/docker-compose-basics) if you're new to Compose
-- Set up [Docker Healthchecks](/foundations/docker-healthchecks) to detect containers that are running but unresponsive
-- Review [Docker Performance Tuning](/foundations/docker-performance-tuning) for more optimization techniques
+- Monitor your containers with [Monitoring Basics](/foundations/monitoring-basics/) to find the right limits
+- Learn about [Docker Compose Basics](/foundations/docker-compose-basics/) if you're new to Compose
+- Set up [Docker Healthchecks](/foundations/docker-healthchecks/) to detect containers that are running but unresponsive
+- Review [Docker Performance Tuning](/foundations/docker-performance-tuning/) for more optimization techniques
 
 ## FAQ
 
@@ -268,10 +268,10 @@ Reservations are soft guarantees. Docker uses them for scheduling decisions but 
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Performance Tuning](/foundations/docker-performance-tuning)
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- [Container Logging](/foundations/container-logging)
-- [Log Management](/foundations/log-management)
-- [Docker Volumes](/foundations/docker-volumes)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Performance Tuning](/foundations/docker-performance-tuning/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- [Container Logging](/foundations/container-logging/)
+- [Log Management](/foundations/log-management/)
+- [Docker Volumes](/foundations/docker-volumes/)

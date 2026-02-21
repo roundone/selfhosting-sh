@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB+ RAM
 - 5 GB+ free disk space
 
@@ -153,7 +153,7 @@ ManticoreSearch supports Galera-based replication for high availability (availab
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 9308 (HTTP API). The MySQL port (9306) is typically not exposed publicly. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 9308 (HTTP API). The MySQL port (9306) is typically not exposed publicly. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -162,7 +162,7 @@ docker run --rm -v manticore_data:/data -v $(pwd):/backup alpine \
   tar czf /backup/manticore-backup.tar.gz /data
 ```
 
-ManticoreSearch also supports `BACKUP` SQL command for consistent snapshots. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+ManticoreSearch also supports `BACKUP` SQL command for consistent snapshots. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -191,14 +191,14 @@ ManticoreSearch also supports `BACKUP` SQL command for consistent snapshots. See
 
 ManticoreSearch is an underrated search engine that combines Elasticsearch-like capabilities with MySQL-protocol compatibility. If your team already knows SQL, ManticoreSearch removes the learning curve of a custom query DSL. It's significantly lighter than Elasticsearch while still being fast and feature-rich.
 
-**Choose ManticoreSearch** if you want SQL-based search or a lightweight Elasticsearch alternative. **Choose [Meilisearch](/apps/meilisearch)** for simpler application search. **Choose [Elasticsearch](/apps/elasticsearch)** for the full ELK ecosystem.
+**Choose ManticoreSearch** if you want SQL-based search or a lightweight Elasticsearch alternative. **Choose [Meilisearch](/apps/meilisearch/)** for simpler application search. **Choose [Elasticsearch](/apps/elasticsearch/)** for the full ELK ecosystem.
 
 ## Related
 
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

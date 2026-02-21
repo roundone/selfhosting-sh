@@ -21,10 +21,10 @@ SMTP handles outbound delivery only. Receiving email uses different protocols (I
 
 ## Prerequisites
 
-- A Linux server with Docker installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic terminal knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
+- A Linux server with Docker installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic terminal knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - A domain name (required for proper email delivery)
-- Access to your domain's DNS settings ([DNS Explained](/foundations/dns-explained))
+- Access to your domain's DNS settings ([DNS Explained](/foundations/dns-explained/))
 
 ## How Email Works: SMTP, IMAP, and POP3
 
@@ -284,7 +284,7 @@ services:
     restart: unless-stopped
 ```
 
-Gitea uses `smtps` for port 465 (implicit TLS) and `smtp+starttls` for port 587. The double-underscore syntax (`GITEA__section__key`) maps to Gitea's `app.ini` configuration file ([Docker Environment Variables](/foundations/docker-environment-variables)).
+Gitea uses `smtps` for port 465 (implicit TLS) and `smtp+starttls` for port 587. The double-underscore syntax (`GITEA__section__key`) maps to Gitea's `app.ini` configuration file ([Docker Environment Variables](/foundations/docker-environment-variables/)).
 
 ### Uptime Kuma
 
@@ -489,25 +489,25 @@ Test emails often arrive in spam the first time, especially before DKIM and DMAR
 
 ### Wrong Container Network
 
-If using a local Postfix relay, apps must be on the same Docker network as the relay container. If an app can't connect to `postfix-relay:587`, check that both containers share a network ([Docker Networking](/foundations/docker-networking)).
+If using a local Postfix relay, apps must be on the same Docker network as the relay container. If an app can't connect to `postfix-relay:587`, check that both containers share a network ([Docker Networking](/foundations/docker-networking/)).
 
 ## Next Steps
 
-- Set up a specific app with email: [Nextcloud](/apps/nextcloud), [Gitea](/apps/gitea), [Vaultwarden](/apps/vaultwarden)
-- Understand Docker networking for container-to-container communication: [Docker Networking](/foundations/docker-networking)
-- Learn about managing secrets and credentials: [Docker Environment Variables](/foundations/docker-environment-variables)
-- Secure your server and services: [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist)
-- Understand SSL certificates for encrypted connections: [SSL Certificates Explained](/foundations/ssl-certificates)
+- Set up a specific app with email: [Nextcloud](/apps/nextcloud/), [Gitea](/apps/gitea/), [Vaultwarden](/apps/vaultwarden/)
+- Understand Docker networking for container-to-container communication: [Docker Networking](/foundations/docker-networking/)
+- Learn about managing secrets and credentials: [Docker Environment Variables](/foundations/docker-environment-variables/)
+- Secure your server and services: [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/)
+- Understand SSL certificates for encrypted connections: [SSL Certificates Explained](/foundations/ssl-certificates/)
 
 ## Related
 
-- [DNS Explained for Self-Hosting](/foundations/dns-explained) — understanding MX, TXT, and other DNS records
-- [Docker Environment Variables](/foundations/docker-environment-variables) — managing SMTP credentials in Docker
-- [SSL Certificates Explained](/foundations/ssl-certificates) — TLS encryption for SMTP and beyond
-- [Ports Explained](/foundations/ports-explained) — understanding ports 25, 465, and 587
-- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist) — securing your server and services
-- [Docker Networking](/foundations/docker-networking) — container-to-container communication for local relays
-- [Docker Compose Basics](/foundations/docker-compose-basics) — foundational Docker knowledge
+- [DNS Explained for Self-Hosting](/foundations/dns-explained/) — understanding MX, TXT, and other DNS records
+- [Docker Environment Variables](/foundations/docker-environment-variables/) — managing SMTP credentials in Docker
+- [SSL Certificates Explained](/foundations/ssl-certificates/) — TLS encryption for SMTP and beyond
+- [Ports Explained](/foundations/ports-explained/) — understanding ports 25, 465, and 587
+- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/) — securing your server and services
+- [Docker Networking](/foundations/docker-networking/) — container-to-container communication for local relays
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — foundational Docker knowledge
 
 ## FAQ
 

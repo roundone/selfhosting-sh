@@ -165,9 +165,9 @@ Airflow, by a significant margin. It's been around since 2015, is used by thousa
 
 ## Related
 
-- [Temporal vs n8n](/compare/temporal-vs-n8n)
-- [Airflow vs n8n](/compare/airflow-vs-n8n)
-- [Prefect vs Airflow](/compare/prefect-vs-airflow)
-- [Kestra vs n8n](/compare/kestra-vs-n8n)
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
+- [Temporal vs n8n](/compare/temporal-vs-n8n/)
+- [Airflow vs n8n](/compare/airflow-vs-n8n/)
+- [Prefect vs Airflow](/compare/prefect-vs-airflow/)
+- [Kestra vs n8n](/compare/kestra-vs-n8n/)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)

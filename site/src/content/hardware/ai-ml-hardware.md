@@ -52,7 +52,7 @@ NVIDIA GPUs with CUDA are required for most AI tools. AMD ROCm support exists bu
 
 ### System RAM Matters for CPU Inference
 
-If you want to run models on CPU (no GPU, or models too large for VRAM), system RAM becomes the bottleneck. [Ollama](/apps/ollama) and [LocalAI](/apps/localai) support CPU inference — slower, but functional.
+If you want to run models on CPU (no GPU, or models too large for VRAM), system RAM becomes the bottleneck. [Ollama](/apps/ollama/) and [LocalAI](/apps/localai/) support CPU inference — slower, but functional.
 
 | System RAM | CPU Inference Capability |
 |-----------|------------------------|
@@ -102,7 +102,7 @@ The RTX 4090 is the most powerful consumer GPU for AI workloads. 24 GB VRAM hand
 - TDP: 450W
 - Price: $1,600-1,800
 
-**Can run:** 70B models (4-bit quantized), all image generation workflows, multiple concurrent models, fine-tuning smaller models, [vLLM](/apps/vllm) for production inference
+**Can run:** 70B models (4-bit quantized), all image generation workflows, multiple concurrent models, fine-tuning smaller models, [vLLM](/apps/vllm/) for production inference
 
 ### NVIDIA RTX 3090 — Best Used Value
 
@@ -147,7 +147,7 @@ For experimenting with AI models. Runs 7B LLMs, Stable Diffusion, and code compl
 
 **Power consumption:** ~200W under AI load. ~$15/month electricity at $0.12/kWh.
 
-**What this runs:** [Ollama](/apps/ollama) with 7B-13B models, [Open WebUI](/apps/open-webui), [ComfyUI](/apps/comfyui) with SDXL, [Tabby](/apps/tabby) for code completion, [Whisper](/apps/whisper) for transcription.
+**What this runs:** [Ollama](/apps/ollama/) with 7B-13B models, [Open WebUI](/apps/open-webui/), [ComfyUI](/apps/comfyui/) with SDXL, [Tabby](/apps/tabby/) for code completion, [Whisper](/apps/whisper/) for transcription.
 
 ### Mid-Range Build — $800-1,200
 
@@ -164,7 +164,7 @@ For serious self-hosted AI. Runs larger models, faster inference, more concurren
 
 **Power consumption:** ~300W under AI load. ~$22/month electricity at $0.12/kWh.
 
-**What this runs:** Everything in the starter build plus: 30B-70B models (quantized on 24 GB VRAM), [vLLM](/apps/vllm) for production serving, complex ComfyUI workflows with ControlNet and IP-Adapter, multiple models loaded simultaneously.
+**What this runs:** Everything in the starter build plus: 30B-70B models (quantized on 24 GB VRAM), [vLLM](/apps/vllm/) for production serving, complex ComfyUI workflows with ControlNet and IP-Adapter, multiple models loaded simultaneously.
 
 ### High-End Build — $2,000-3,000
 
@@ -194,7 +194,7 @@ No GPU. For experimenting with smaller models or batch processing where speed do
 | Storage | 500 GB NVMe SSD | $40-50 |
 | **Total** | | **$180-310** |
 
-**What this runs:** [Ollama](/apps/ollama) or [LocalAI](/apps/localai) with 7B quantized models on CPU (slow but functional), [Flowise](/apps/flowise) for AI workflows (calling external APIs), [Whisper](/apps/whisper) on CPU (slower transcription).
+**What this runs:** [Ollama](/apps/ollama/) or [LocalAI](/apps/localai/) with 7B quantized models on CPU (slow but functional), [Flowise](/apps/flowise/) for AI workflows (calling external APIs), [Whisper](/apps/whisper/) on CPU (slower transcription).
 
 **Not recommended for:** Image generation, real-time chat, production serving, anything requiring fast inference.
 
@@ -213,7 +213,7 @@ No GPU. For experimenting with smaller models or batch processing where speed do
 
 ## Power Consumption and Running Costs
 
-Self-hosted AI hardware consumes significantly more power than typical homelab equipment. A server running [Jellyfin](/apps/jellyfin) idles at 10-30W. A GPU under AI inference load draws 170-450W.
+Self-hosted AI hardware consumes significantly more power than typical homelab equipment. A server running [Jellyfin](/apps/jellyfin/) idles at 10-30W. A GPU under AI inference load draws 170-450W.
 
 | GPU | Idle Power | AI Load Power | Monthly Cost (24/7, $0.12/kWh) |
 |-----|-----------|--------------|-------------------------------|
@@ -230,16 +230,16 @@ Self-hosted AI hardware consumes significantly more power than typical homelab e
 
 | Tool | Min GPU | Recommended GPU | Can Use CPU? |
 |------|---------|----------------|-------------|
-| [Ollama](/apps/ollama) (7B) | 4 GB VRAM | 8 GB+ VRAM | Yes (slow) |
-| [Ollama](/apps/ollama) (70B Q4) | 24 GB VRAM | 24 GB VRAM | Yes (very slow) |
-| [vLLM](/apps/vllm) | 8 GB VRAM | 24 GB VRAM | No |
-| [LocalAI](/apps/localai) | None | 8 GB+ VRAM | Yes |
-| [ComfyUI](/apps/comfyui) | 4 GB VRAM | 12 GB+ VRAM | No |
-| [SD WebUI](/apps/stable-diffusion-webui) | 4 GB VRAM | 12 GB+ VRAM | No |
-| [Tabby](/apps/tabby) | 4 GB VRAM | 8 GB+ VRAM | No |
-| [Whisper](/apps/whisper) | None | 8 GB+ VRAM | Yes (slower) |
-| [Flowise](/apps/flowise) | None | None (calls LLM APIs) | Yes |
-| [Text Gen WebUI](/apps/text-generation-webui) | 4 GB VRAM | 12 GB+ VRAM | Yes (slow) |
+| [Ollama](/apps/ollama/) (7B) | 4 GB VRAM | 8 GB+ VRAM | Yes (slow) |
+| [Ollama](/apps/ollama/) (70B Q4) | 24 GB VRAM | 24 GB VRAM | Yes (very slow) |
+| [vLLM](/apps/vllm/) | 8 GB VRAM | 24 GB VRAM | No |
+| [LocalAI](/apps/localai/) | None | 8 GB+ VRAM | Yes |
+| [ComfyUI](/apps/comfyui/) | 4 GB VRAM | 12 GB+ VRAM | No |
+| [SD WebUI](/apps/stable-diffusion-webui/) | 4 GB VRAM | 12 GB+ VRAM | No |
+| [Tabby](/apps/tabby/) | 4 GB VRAM | 8 GB+ VRAM | No |
+| [Whisper](/apps/whisper/) | None | 8 GB+ VRAM | Yes (slower) |
+| [Flowise](/apps/flowise/) | None | None (calls LLM APIs) | Yes |
+| [Text Gen WebUI](/apps/text-generation-webui/) | 4 GB VRAM | 12 GB+ VRAM | Yes (slow) |
 
 ## Multi-GPU Considerations
 
@@ -269,15 +269,15 @@ Some tools support multi-GPU setups:
 
 ## Related
 
-- [Best Self-Hosted AI & ML Tools](/best/ai-ml)
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [How to Self-Host vLLM](/apps/vllm)
-- [How to Self-Host ComfyUI](/apps/comfyui)
-- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui)
-- [How to Self-Host Tabby](/apps/tabby)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Self-Hosted Midjourney Alternatives](/replace/midjourney)
-- [Self-Hosted Copilot Alternatives](/replace/github-copilot)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted AI & ML Tools](/best/ai-ml/)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [How to Self-Host vLLM](/apps/vllm/)
+- [How to Self-Host ComfyUI](/apps/comfyui/)
+- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui/)
+- [How to Self-Host Tabby](/apps/tabby/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Self-Hosted Midjourney Alternatives](/replace/midjourney/)
+- [Self-Hosted Copilot Alternatives](/replace/github-copilot/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

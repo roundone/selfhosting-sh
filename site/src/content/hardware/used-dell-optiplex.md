@@ -50,7 +50,7 @@ Millions of OptiPlex units were deployed in offices worldwide. As companies upgr
 | **OptiPlex 7080 Micro** | i5-10500T, i7-10700T | 64 GB DDR4 | M.2 NVMe + 2.5" | $180-250 |
 | **OptiPlex 5080 Micro** | i5-10500T | 64 GB DDR4 | M.2 NVMe + 2.5" | $150-220 |
 
-These are still entering the used market — prices will drop. At current prices, a new [N100 or N305 mini PC](/hardware/best-mini-pc) is often the better deal.
+These are still entering the used market — prices will drop. At current prices, a new [N100 or N305 mini PC](/hardware/best-mini-pc/) is often the better deal.
 
 ### Tier 3: Cheap and Cheerful (4th-5th Gen, ~$40-80)
 
@@ -226,23 +226,23 @@ The OptiPlex costs ~$13/year more in electricity than an N100 mini PC. Over 5 ye
 
 With an i5-8500T (6 cores) and 16 GB RAM, the OptiPlex handles a full self-hosting stack:
 
-- [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home)
-- [Nextcloud](/apps/nextcloud) with database
-- [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex) (2-3 hardware transcodes via Quick Sync)
-- [Vaultwarden](/apps/vaultwarden)
-- [Home Assistant](/apps/home-assistant)
-- [Uptime Kuma](/apps/uptime-kuma)
-- [Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Immich](/apps/immich) (ML features are faster than N100 due to more cores)
-- [Paperless-ngx](/apps/paperless-ngx)
-- [Syncthing](/apps/syncthing)
+- [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/)
+- [Nextcloud](/apps/nextcloud/) with database
+- [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/) (2-3 hardware transcodes via Quick Sync)
+- [Vaultwarden](/apps/vaultwarden/)
+- [Home Assistant](/apps/home-assistant/)
+- [Uptime Kuma](/apps/uptime-kuma/)
+- [Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Immich](/apps/immich/) (ML features are faster than N100 due to more cores)
+- [Paperless-ngx](/apps/paperless-ngx/)
+- [Syncthing](/apps/syncthing/)
 - PostgreSQL, MariaDB, Redis
 - 20+ additional lightweight containers
 
 With 32 GB RAM, add:
 - Proxmox with 2-3 VMs
-- [GitLab CE](/apps/gitlab) or heavy [Forgejo](/apps/forgejo) instances
-- [Matrix/Element](/apps/matrix) (Synapse)
+- [GitLab CE](/apps/gitlab/) or heavy [Forgejo](/apps/forgejo/) instances
+- [Matrix/Element](/apps/matrix/) (Synapse)
 
 ## FAQ
 
@@ -260,18 +260,18 @@ Enterprise PCs are designed for 5-7 years of office use (8+ hours/day, frequent 
 
 ### Can I add a second Ethernet port?
 
-Not easily on the Micro form factor — there's no PCIe slot. You can use a USB 3.0 to 2.5 GbE adapter ($15) for a second NIC, but it's not ideal. If you need dual NICs, consider a [Beelink EQ12](/hardware/best-mini-pc) or the OptiPlex SFF/Tower form factors (which have PCIe slots).
+Not easily on the Micro form factor — there's no PCIe slot. You can use a USB 3.0 to 2.5 GbE adapter ($15) for a second NIC, but it's not ideal. If you need dual NICs, consider a [Beelink EQ12](/hardware/best-mini-pc/) or the OptiPlex SFF/Tower form factors (which have PCIe slots).
 
 ### Can I use an OptiPlex as a NAS?
 
-The Micro has one M.2 NVMe slot and one 2.5" SATA bay — not enough for a NAS. You can attach USB drives for basic storage, but for serious NAS use, get a [dedicated NAS](/hardware/best-nas) or [build a DIY NAS](/hardware/diy-nas-build).
+The Micro has one M.2 NVMe slot and one 2.5" SATA bay — not enough for a NAS. You can attach USB drives for basic storage, but for serious NAS use, get a [dedicated NAS](/hardware/best-nas/) or [build a DIY NAS](/hardware/diy-nas-build/).
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Lenovo ThinkCentre as a Home Server](/hardware/used-lenovo-thinkcentre)
-- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Lenovo ThinkCentre as a Home Server](/hardware/used-lenovo-thinkcentre/)
+- [Intel N100: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

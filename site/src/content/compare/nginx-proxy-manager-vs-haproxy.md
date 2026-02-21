@@ -152,11 +152,11 @@ HAProxy's config validation (`haproxy -c -f /path/to/config`) catches errors bef
 
 ## Related
 
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host HAProxy](/apps/haproxy)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [HAProxy vs Nginx](/compare/haproxy-vs-nginx)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host HAProxy](/apps/haproxy/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [HAProxy vs Nginx](/compare/haproxy-vs-nginx/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)

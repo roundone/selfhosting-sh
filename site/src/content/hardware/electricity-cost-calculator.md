@@ -232,7 +232,7 @@ If you already have a UPS (and you should for any server with spinning drives), 
 - **CyberPower CP1500PFCLCD** -- reports watts on the LCD and via USB/NUT
 - **APC Back-UPS Pro BR1500MS2** -- reports via USB/PowerChute or NUT
 
-Connect via USB and use [NUT (Network UPS Tools)](/apps/nut) to log power draw over time. No additional hardware required.
+Connect via USB and use [NUT (Network UPS Tools)](/apps/nut/) to log power draw over time. No additional hardware required.
 
 ### What to Measure
 
@@ -329,7 +329,7 @@ The electricity cost of self-hosting is almost always trivial compared to cloud 
 
 After break-even, you save the full subscription cost every year -- minus the small electricity cost. A $200 mini PC replacing $200/year in cloud subscriptions pays for itself in year one and saves $193/year after that.
 
-For a deep dive with 5-year TCO projections, see our full analysis: [Self-Hosting vs Cloud: Cost Comparison](/hardware/self-hosting-vs-cloud-costs).
+For a deep dive with 5-year TCO projections, see our full analysis: [Self-Hosting vs Cloud: Cost Comparison](/hardware/self-hosting-vs-cloud-costs/).
 
 ## FAQ
 
@@ -359,15 +359,15 @@ A typical homelab with a mini PC server (6-15W), a managed switch (6W), and an a
 
 ## Related
 
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption)
-- [Self-Hosting vs Cloud: Cost Comparison](/hardware/self-hosting-vs-cloud-costs)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Mini PC Power Consumption Compared](/hardware/mini-pc-power-consumption/)
+- [Self-Hosting vs Cloud: Cost Comparison](/hardware/self-hosting-vs-cloud-costs/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

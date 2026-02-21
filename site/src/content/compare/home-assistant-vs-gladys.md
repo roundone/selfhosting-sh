@@ -106,10 +106,10 @@ Start with Home Assistant unless you specifically want Gladys's simplicity and y
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

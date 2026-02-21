@@ -161,7 +161,7 @@ Ollama has the broader community. vLLM has the deeper ML engineering community.
 - You're running AI for personal use or a small team
 - You want the simplest possible setup
 - You need CPU-only inference (no GPU available)
-- You're pairing it with [Open WebUI](/apps/open-webui) for a ChatGPT replacement
+- You're pairing it with [Open WebUI](/apps/open-webui/) for a ChatGPT replacement
 - You want to quickly test different models
 - You need Apple Silicon or AMD GPU support
 - You don't serve more than 2-3 concurrent users
@@ -186,10 +186,10 @@ Most self-hosters should start with Ollama. Graduate to vLLM when you need to se
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host vLLM](/apps/vllm)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host vLLM](/apps/vllm/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

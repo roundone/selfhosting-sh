@@ -15,7 +15,7 @@ affiliateDisclosure: false
 
 ## Why Storage Planning Matters
 
-Running out of disk space is the most common preventable failure in self-hosting. Your [Jellyfin](/apps/jellyfin) media library grows. Your [Immich](/apps/immich) photo backups accumulate. Your [Nextcloud](/apps/nextcloud) file sync eats gigabytes without warning. One day, a Docker container crashes because `/var` is full, and half your services go down.
+Running out of disk space is the most common preventable failure in self-hosting. Your [Jellyfin](/apps/jellyfin/) media library grows. Your [Immich](/apps/immich/) photo backups accumulate. Your [Nextcloud](/apps/nextcloud/) file sync eats gigabytes without warning. One day, a Docker container crashes because `/var` is full, and half your services go down.
 
 Server storage planning prevents this. Before you install a single container, you should know how much space you need, where your data will live, what file system to use, and how you will expand when you outgrow your initial setup. Getting this right upfront saves you from painful data migrations later.
 
@@ -24,8 +24,8 @@ The core rule: **separate your OS drive from your data storage.** Your operating
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Basic terminal comfort ([Linux Basics](/foundations/linux-basics-self-hosting))
-- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes))
+- Basic terminal comfort ([Linux Basics](/foundations/linux-basics-self-hosting/))
+- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes/))
 - Familiarity with your planned self-hosted applications
 
 ## Estimating Your Storage Needs
@@ -75,7 +75,7 @@ File sync storage depends entirely on how many users you have and what they stor
 
 ### Backups (Duplicati, BorgBackup, Restic)
 
-Your [backup strategy](/foundations/backup-3-2-1-rule) determines backup storage needs. With deduplication and compression (which Borg and Restic handle automatically), backup storage is smaller than you might think.
+Your [backup strategy](/foundations/backup-3-2-1-rule/) determines backup storage needs. With deduplication and compression (which Borg and Restic handle automatically), backup storage is smaller than you might think.
 
 | Strategy | Storage Needed |
 |----------|---------------|
@@ -83,7 +83,7 @@ Your [backup strategy](/foundations/backup-3-2-1-rule) determines backup storage
 | Incremental with dedup (Borg/Restic) | 1.2-1.5x source data for 30+ snapshots |
 | Database dumps only | 1-10 GB per database, compressed |
 
-**Starting recommendation:** Allocate 1.5x your total data for local backups with deduplication. Off-site backups are a separate concern — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule).
+**Starting recommendation:** Allocate 1.5x your total data for local backups with deduplication. Off-site backups are a separate concern — see [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/).
 
 ### The 2x Rule
 
@@ -107,7 +107,7 @@ Plan for at least **2x your current needs** as a minimum. 3x is better if budget
 
 **The recommendation:** Use an SSD for your OS drive and Docker root (`/var/lib/docker`). Use HDDs for bulk storage — media libraries, photo archives, backups. This gives you fast container performance where it matters and cheap bulk storage where speed is less important.
 
-For database-heavy workloads ([Nextcloud](/apps/nextcloud), [Immich](/apps/immich), [BookStack](/apps/bookstack)), put database volumes on the SSD. Database random I/O performance on an HDD is painful.
+For database-heavy workloads ([Nextcloud](/apps/nextcloud/), [Immich](/apps/immich/), [BookStack](/apps/bookstack/)), put database volumes on the SSD. Database random I/O performance on an HDD is painful.
 
 ### Internal vs External
 
@@ -129,7 +129,7 @@ Never use an external USB drive as primary storage for Docker volumes. USB disco
 
 For most self-hosting beginners: DAS. Plug drives directly into your server. Simpler, faster, fewer failure points.
 
-Graduate to a NAS when you have multiple servers that need access to the same storage, or when you want a dedicated storage appliance with drive management features. See [NAS Basics](/foundations/nas-basics) for a full comparison.
+Graduate to a NAS when you have multiple servers that need access to the same storage, or when you want a dedicated storage appliance with drive management features. See [NAS Basics](/foundations/nas-basics/) for a full comparison.
 
 ## File Systems
 
@@ -179,7 +179,7 @@ The most feature-rich file system available on Linux. Built-in RAID, checksummin
 | Transparent compression | License incompatibility with Linux kernel (must use DKMS/module) |
 | Send/receive for backups | |
 
-**Use ZFS when:** You have 8+ GB of RAM, multiple drives, and you value data integrity above all else. ZFS is the gold standard for NAS and storage server builds. See [ZFS Basics](/foundations/zfs-basics) for setup details.
+**Use ZFS when:** You have 8+ GB of RAM, multiple drives, and you value data integrity above all else. ZFS is the gold standard for NAS and storage server builds. See [ZFS Basics](/foundations/zfs-basics/) for setup details.
 
 ### Btrfs
 
@@ -209,7 +209,7 @@ Linux-native copy-on-write file system. Offers many of ZFS's features with less 
 
 ## RAID vs No RAID
 
-RAID protects against drive failure. It does **not** replace backups. See [RAID Explained](/foundations/raid-explained) for the full breakdown.
+RAID protects against drive failure. It does **not** replace backups. See [RAID Explained](/foundations/raid-explained/) for the full breakdown.
 
 ### When You Need RAID
 
@@ -225,7 +225,7 @@ RAID protects against drive failure. It does **not** replace backups. See [RAID 
 
 ### The Recommendation
 
-For a first home server with one or two drives: skip RAID, invest in good backups. A single drive with automated off-site backups ([Backup Strategy](/foundations/backup-3-2-1-rule)) is more resilient than a RAID array with no backups.
+For a first home server with one or two drives: skip RAID, invest in good backups. A single drive with automated off-site backups ([Backup Strategy](/foundations/backup-3-2-1-rule/)) is more resilient than a RAID array with no backups.
 
 For a storage server with 3+ drives: use RAID (ZFS RAIDZ1 for 3-4 drives, RAIDZ2 for 5+ drives). But still maintain backups — RAID does not protect against accidental deletion, ransomware, or fire.
 
@@ -268,7 +268,7 @@ A well-planned directory layout makes backups, migrations, and troubleshooting v
 
 ### Docker Compose Example
 
-Here is how this layout looks in a [Docker Compose file](/foundations/docker-compose-basics):
+Here is how this layout looks in a [Docker Compose file](/foundations/docker-compose-basics/):
 
 ```yaml
 services:
@@ -438,7 +438,7 @@ docker volume prune
 
 ### Automated Monitoring
 
-For persistent monitoring, set up [Uptime Kuma](/apps/uptime-kuma) or [Beszel](/apps/beszel) with disk usage alerts. At minimum, add a cron job that warns you:
+For persistent monitoring, set up [Uptime Kuma](/apps/uptime-kuma/) or [Beszel](/apps/beszel/) with disk usage alerts. At minimum, add a cron job that warns you:
 
 ```bash
 # /etc/cron.daily/disk-check
@@ -458,7 +458,7 @@ Set your threshold at **85%.** This gives you time to react before hitting 100%.
 
 **Putting everything on one drive.** When your single drive fills up, your OS, Docker, and all your apps fail simultaneously. Separate your OS drive from data storage. When the data drive fills up, your OS and Docker engine still function normally.
 
-**Using `:latest` Docker images on a small SSD.** Docker pulls new image layers with each `:latest` update, and old layers accumulate. Pin image versions and run `docker system prune` periodically to reclaim space. See [Docker Volumes](/foundations/docker-volumes) for more on managing Docker storage.
+**Using `:latest` Docker images on a small SSD.** Docker pulls new image layers with each `:latest` update, and old layers accumulate. Pin image versions and run `docker system prune` periodically to reclaim space. See [Docker Volumes](/foundations/docker-volumes/) for more on managing Docker storage.
 
 **Not monitoring disk usage.** A drive at 98% capacity does not send you an email. It silently corrupts your database when a write fails. Set up alerts well before you run out of space.
 
@@ -474,23 +474,23 @@ Set your threshold at **85%.** This gives you time to react before hitting 100%.
 
 With your storage planned and mounted, you are ready to:
 
-1. **Set up Docker volumes** that map to your storage layout — [Docker Volumes](/foundations/docker-volumes)
-2. **Configure RAID** if you have multiple drives — [RAID Explained](/foundations/raid-explained)
-3. **Deploy your first app** with proper volume mounts — [Docker Compose Basics](/foundations/docker-compose-basics)
-4. **Implement backups** so storage failure does not mean data loss — [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-5. **Explore NAS options** if you want centralized storage — [NAS Basics](/foundations/nas-basics)
-6. **Set up ZFS** for advanced data integrity — [ZFS Basics](/foundations/zfs-basics)
+1. **Set up Docker volumes** that map to your storage layout — [Docker Volumes](/foundations/docker-volumes/)
+2. **Configure RAID** if you have multiple drives — [RAID Explained](/foundations/raid-explained/)
+3. **Deploy your first app** with proper volume mounts — [Docker Compose Basics](/foundations/docker-compose-basics/)
+4. **Implement backups** so storage failure does not mean data loss — [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+5. **Explore NAS options** if you want centralized storage — [NAS Basics](/foundations/nas-basics/)
+6. **Set up ZFS** for advanced data integrity — [ZFS Basics](/foundations/zfs-basics/)
 
 ## Related
 
-- [Docker Volumes and Persistent Data](/foundations/docker-volumes)
-- [RAID Explained for Self-Hosting](/foundations/raid-explained)
-- [NAS Basics for Self-Hosting](/foundations/nas-basics)
-- [ZFS Basics](/foundations/zfs-basics)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Monitoring Basics](/foundations/monitoring-basics)
+- [Docker Volumes and Persistent Data](/foundations/docker-volumes/)
+- [RAID Explained for Self-Hosting](/foundations/raid-explained/)
+- [NAS Basics for Self-Hosting](/foundations/nas-basics/)
+- [ZFS Basics](/foundations/zfs-basics/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
 
 ## FAQ
 
@@ -512,4 +512,4 @@ For media streaming and file storage, NFS works well. For databases, no. Databas
 
 ### What happens when a drive fails?
 
-Without RAID: the data on that drive is gone. You restore from backup. With RAID: the array continues operating in degraded mode while you replace the failed drive. Either way, you need backups. RAID buys you uptime; backups buy you recoverability. See [RAID Explained](/foundations/raid-explained) and [Backup Strategy](/foundations/backup-3-2-1-rule).
+Without RAID: the data on that drive is gone. You restore from backup. With RAID: the array continues operating in degraded mode while you replace the failed drive. Either way, you need backups. RAID buys you uptime; backups buy you recoverability. See [RAID Explained](/foundations/raid-explained/) and [Backup Strategy](/foundations/backup-3-2-1-rule/).

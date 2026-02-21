@@ -239,10 +239,10 @@ For RAID/ZFS arrays with redundancy, yes. The risk of a single drive failure is 
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Best SSD for Home Servers](/hardware/best-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Best SSD for Home Servers](/hardware/best-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)

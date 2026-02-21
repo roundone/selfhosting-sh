@@ -22,8 +22,8 @@ Without DDNS, your self-hosted services become unreachable when your IP changes 
 ## Prerequisites
 
 - A domain name with DNS managed by a supported provider
-- A self-hosted server ([Getting Started](/foundations/getting-started))
-- Port forwarding or Cloudflare Tunnel configured ([Port Forwarding Guide](/foundations/port-forwarding))
+- A self-hosted server ([Getting Started](/foundations/getting-started/))
+- Port forwarding or Cloudflare Tunnel configured ([Port Forwarding Guide](/foundations/port-forwarding/))
 
 ## Do You Need Dynamic DNS?
 
@@ -295,15 +295,15 @@ Yes. Either update multiple A records in your DDNS script, or create one A recor
 
 ## Next Steps
 
-- [Port Forwarding Guide](/foundations/port-forwarding) — expose services to the internet
-- [DNS Explained](/foundations/dns-explained) — understand DNS records and resolution
-- [SSL Certificates](/foundations/ssl-certificates) — set up HTTPS for your services
+- [Port Forwarding Guide](/foundations/port-forwarding/) — expose services to the internet
+- [DNS Explained](/foundations/dns-explained/) — understand DNS records and resolution
+- [SSL Certificates](/foundations/ssl-certificates/) — set up HTTPS for your services
 
 ## Related
 
-- [DNS Explained for Self-Hosting](/foundations/dns-explained)
-- [Port Forwarding Guide](/foundations/port-forwarding)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates for Self-Hosting](/foundations/ssl-certificates)
-- [Static IP and DHCP](/foundations/dhcp-static-ip)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [DNS Explained for Self-Hosting](/foundations/dns-explained/)
+- [Port Forwarding Guide](/foundations/port-forwarding/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates for Self-Hosting](/foundations/ssl-certificates/)
+- [Static IP and DHCP](/foundations/dhcp-static-ip/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

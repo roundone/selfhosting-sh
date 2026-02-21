@@ -26,9 +26,9 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (minimum)
-- [Sonarr](/apps/sonarr) and/or [Radarr](/apps/radarr) already running and configured
+- [Sonarr](/apps/sonarr/) and/or [Radarr](/apps/radarr/) already running and configured
 - Media directories accessible to the Bazarr container
 - An account with at least one subtitle provider (OpenSubtitles, Subscene, Addic7ed, etc.)
 
@@ -207,7 +207,7 @@ Create a proxy host pointing to `http://bazarr-ip:6767`. No special configuratio
 
 If you need a subpath (e.g., `/bazarr`), set the base URL in Bazarr under **Settings → General → Base URL** to `/bazarr`, then configure your proxy accordingly.
 
-For a full reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For a full reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -227,7 +227,7 @@ docker compose start bazarr
 
 You do not need to back up subtitle files themselves — Bazarr can re-download them. The configuration is what matters.
 
-For a comprehensive approach, see [Backup Strategy](/foundations/backup-strategy).
+For a comprehensive approach, see [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -275,12 +275,12 @@ Bazarr is essential if you run Sonarr and Radarr and watch content that benefits
 
 ## Related
 
-- [How to Self-Host Sonarr with Docker](/apps/sonarr)
-- [How to Self-Host Radarr with Docker](/apps/radarr)
-- [How to Self-Host Prowlarr with Docker](/apps/prowlarr)
-- [How to Self-Host qBittorrent with Docker](/apps/qbittorrent)
-- [How to Self-Host Jellyfin with Docker](/apps/jellyfin)
-- [Best Self-Hosted Download Management](/best/download-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Sonarr with Docker](/apps/sonarr/)
+- [How to Self-Host Radarr with Docker](/apps/radarr/)
+- [How to Self-Host Prowlarr with Docker](/apps/prowlarr/)
+- [How to Self-Host qBittorrent with Docker](/apps/qbittorrent/)
+- [How to Self-Host Jellyfin with Docker](/apps/jellyfin/)
+- [Best Self-Hosted Download Management](/best/download-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

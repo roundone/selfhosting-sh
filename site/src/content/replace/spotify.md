@@ -38,7 +38,7 @@ Self-hosted music streaming gives you lossless playback (FLAC, ALAC), zero track
 
 **What you lose vs Spotify:** No discovery algorithm, no curated playlists, no social features, no lyrics integration (some clients add this). You need to own your music files.
 
-[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome)]
+[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome/)]
 
 ### Jellyfin — Best All-in-One (Music + Video)
 
@@ -53,7 +53,7 @@ Self-hosted music streaming gives you lossless playback (FLAC, ALAC), zero track
 
 **What you lose vs Spotify:** Music experience is secondary to video. Dedicated music apps like Finamp are good but not as polished as Subsonic clients. No gapless playback on all clients.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ### Plex + Plexamp — Best Music Experience
 
@@ -68,7 +68,7 @@ Self-hosted music streaming gives you lossless playback (FLAC, ALAC), zero track
 
 **What you lose:** Plexamp requires Plex Pass ($5/month or $120 lifetime). Plex requires an online account. Your server phones home to Plex's cloud. For a fully local music server, Navidrome is better.
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ### Funkwhale — Best for Social Music Sharing
 
@@ -159,7 +159,7 @@ Be honest about the trade-offs:
 - **Catalog size:** You'll never match Spotify's 100M+ song library. Self-hosting is for music you own and love, not for sampling everything ever recorded.
 - **Social features:** No shared listening sessions, no public playlists, no "what are my friends listening to."
 - **Lyrics:** Spotify has real-time synced lyrics. Some Subsonic clients support lyrics via third-party sources, but it's not as seamless.
-- **Podcasts:** Spotify bundles podcasts. Self-host podcasts separately with [Audiobookshelf](/apps/audiobookshelf) or use a podcast app directly.
+- **Podcasts:** Spotify bundles podcasts. Self-host podcasts separately with [Audiobookshelf](/apps/audiobookshelf/) or use a podcast app directly.
 - **Convenience:** Spotify works instantly on any device with zero setup. Self-hosting requires initial setup and ongoing maintenance.
 
 ## FAQ
@@ -186,11 +186,11 @@ Yes, as long as you own the music. Ripping CDs you own, playing files you purcha
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

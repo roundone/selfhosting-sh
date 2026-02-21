@@ -35,39 +35,39 @@ affiliateDisclosure: true
 
 ### Meilisearch — Best Direct Replacement
 
-[Meilisearch](/apps/meilisearch) is the closest self-hosted alternative to Algolia. It provides instant, typo-tolerant search with minimal configuration — the same core value proposition as Algolia. The API design is similar (RESTful, JSON-based), and it has official SDKs for JavaScript, Python, PHP, Ruby, Go, and more.
+[Meilisearch](/apps/meilisearch/) is the closest self-hosted alternative to Algolia. It provides instant, typo-tolerant search with minimal configuration — the same core value proposition as Algolia. The API design is similar (RESTful, JSON-based), and it has official SDKs for JavaScript, Python, PHP, Ruby, Go, and more.
 
 **Why Meilisearch over Algolia:** Zero per-query costs. Full data control. MIT license (Community Edition). InstantSearch.js compatible (Algolia's frontend library works with Meilisearch).
 
 **Trade-off:** Single-node in the Community Edition. No horizontal scaling without the paid Cloud tier.
 
-[Read our Meilisearch guide](/apps/meilisearch)
+[Read our Meilisearch guide](/apps/meilisearch/)
 
 ### Typesense — Best for Speed
 
-[Typesense](/apps/typesense) keeps the entire search index in RAM for sub-millisecond latency. It includes built-in high availability (Raft clustering), result curation/pinning, and search analytics — features that Algolia charges extra for.
+[Typesense](/apps/typesense/) keeps the entire search index in RAM for sub-millisecond latency. It includes built-in high availability (Raft clustering), result curation/pinning, and search analytics — features that Algolia charges extra for.
 
 **Why Typesense over Algolia:** Fastest search latency. Built-in clustering (free). InstantSearch.js compatible. Result overrides for merchandising.
 
 **Trade-off:** RAM usage scales linearly with index size (2-3x indexed data in RAM).
 
-[Read our Typesense guide](/apps/typesense)
+[Read our Typesense guide](/apps/typesense/)
 
 ### Elasticsearch — Best for Complex Search
 
-[Elasticsearch](/apps/elasticsearch) is the industry standard for search at scale. If you've outgrown Algolia or need advanced analytics, aggregations, and the full ELK Stack, Elasticsearch handles it all.
+[Elasticsearch](/apps/elasticsearch/) is the industry standard for search at scale. If you've outgrown Algolia or need advanced analytics, aggregations, and the full ELK Stack, Elasticsearch handles it all.
 
 **Why Elasticsearch over Algolia:** Unlimited scale. Full query DSL. Analytics and aggregations. Log integration.
 
 **Trade-off:** Significantly more complex to set up and maintain. Higher resource requirements.
 
-[Read our Elasticsearch guide](/apps/elasticsearch)
+[Read our Elasticsearch guide](/apps/elasticsearch/)
 
 ## Migration Guide
 
 ### From Algolia to Meilisearch
 
-1. Deploy [Meilisearch](/apps/meilisearch) with Docker
+1. Deploy [Meilisearch](/apps/meilisearch/) with Docker
 2. Export your Algolia data using the Algolia dashboard or API
 3. Create indexes in Meilisearch with matching field names
 4. Import documents via the Meilisearch REST API
@@ -80,7 +80,7 @@ affiliateDisclosure: true
 
 ### From Algolia to Typesense
 
-1. Deploy [Typesense](/apps/typesense) with Docker
+1. Deploy [Typesense](/apps/typesense/) with Docker
 2. Create a collection with a schema matching your Algolia index
 3. Export and import your documents
 4. Update your frontend: install `typesense-instantsearch-adapter`:
@@ -112,10 +112,10 @@ For most applications, self-hosted search (especially Meilisearch or Typesense) 
 
 ## Related
 
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Typesense](/apps/typesense)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Typesense](/apps/typesense/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

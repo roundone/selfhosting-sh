@@ -204,11 +204,11 @@ No. Endurance depends on the NAND flash type (TLC vs QLC) and the drive's rated 
 
 ## Related
 
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

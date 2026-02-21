@@ -38,7 +38,7 @@ affiliateDisclosure: false
 
 ### Nextcloud — Best Overall Replacement
 
-[Nextcloud](/apps/nextcloud) is the closest self-hosted equivalent to Google Drive — and then some. File sync, web file manager, sharing links, collaborative editing, calendar, contacts, and 400+ apps. It replaces not just Google Drive but most of Google Workspace.
+[Nextcloud](/apps/nextcloud/) is the closest self-hosted equivalent to Google Drive — and then some. File sync, web file manager, sharing links, collaborative editing, calendar, contacts, and 400+ apps. It replaces not just Google Drive but most of Google Workspace.
 
 **What you get:** Desktop and mobile sync clients, web-based file browser, password-protected sharing links, real-time collaborative editing (via Nextcloud Office or OnlyOffice), file versioning, and 15 GB storage included on their hosted plans. Self-hosted: unlimited storage.
 
@@ -46,11 +46,11 @@ affiliateDisclosure: false
 
 **Trade-offs:** Heavier resource usage than dedicated file sync tools. PHP-based, so sync speed is moderate. Requires a database and multiple services.
 
-[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud)]
+[Read our full guide: [How to Self-Host Nextcloud](/apps/nextcloud/)]
 
 ### Seafile — Best Performance
 
-[Seafile](/apps/seafile) is a file sync and share server built for speed. It uses block-level deduplication and delta sync, making it 2-3x faster than Nextcloud for file operations. The web UI is clean and responsive. Sharing, versioning, and client-side encryption work well.
+[Seafile](/apps/seafile/) is a file sync and share server built for speed. It uses block-level deduplication and delta sync, making it 2-3x faster than Nextcloud for file operations. The web UI is clean and responsive. Sharing, versioning, and client-side encryption work well.
 
 **What you get:** Fast desktop sync clients, web file manager, sharing links, file versioning, client-side encryption per library. SeaDoc for document editing. Does not include calendar, contacts, or the broad app ecosystem of Nextcloud.
 
@@ -58,11 +58,11 @@ affiliateDisclosure: false
 
 **Trade-offs:** Smaller ecosystem than Nextcloud. No built-in calendar/contacts. The community around it is smaller.
 
-[Read our full guide: [How to Self-Host Seafile](/apps/seafile)]
+[Read our full guide: [How to Self-Host Seafile](/apps/seafile/)]
 
 ### Syncthing — Best for Device-to-Device Sync
 
-[Syncthing](/apps/syncthing) is a decentralized, peer-to-peer file sync tool. No central server needed — devices sync directly with each other. It replaces Google Drive's sync engine while being faster, more private, and completely free.
+[Syncthing](/apps/syncthing/) is a decentralized, peer-to-peer file sync tool. No central server needed — devices sync directly with each other. It replaces Google Drive's sync engine while being faster, more private, and completely free.
 
 **What you get:** Automatic, encrypted sync between all your devices. Block-level delta sync. File versioning. Cross-platform support. Zero server maintenance.
 
@@ -70,11 +70,11 @@ affiliateDisclosure: false
 
 **Trade-offs:** No web file browser. No sharing links. No mobile app on iOS (Android only officially). Can't access files from a random browser — only from devices with Syncthing installed.
 
-[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing)]
+[Read our full guide: [How to Self-Host Syncthing](/apps/syncthing/)]
 
 ### Filebrowser — Best Lightweight File Access
 
-[Filebrowser](/apps/filebrowser) is a web-based file manager. Point it at a directory and get instant browser-based access to browse, upload, download, and share files. No sync engine — just a web UI for your filesystem.
+[Filebrowser](/apps/filebrowser/) is a web-based file manager. Point it at a directory and get instant browser-based access to browse, upload, download, and share files. No sync engine — just a web UI for your filesystem.
 
 **What you get:** Clean web file manager, multi-user support, file sharing via links, built-in text editor. Uses ~15 MB of RAM.
 
@@ -82,7 +82,7 @@ affiliateDisclosure: false
 
 **Trade-offs:** No desktop sync client. No mobile app. No collaboration features. It's a file manager, not a sync engine.
 
-[Read our full guide: [How to Self-Host Filebrowser](/apps/filebrowser)]
+[Read our full guide: [How to Self-Host Filebrowser](/apps/filebrowser/)]
 
 ## Migration Guide
 
@@ -100,8 +100,8 @@ affiliateDisclosure: false
 
 For most users replacing Google Drive, we recommend **Nextcloud**:
 
-1. Follow our [Nextcloud Docker guide](/apps/nextcloud)
-2. Configure SSL via [reverse proxy](/apps/nginx-proxy-manager)
+1. Follow our [Nextcloud Docker guide](/apps/nextcloud/)
+2. Configure SSL via [reverse proxy](/apps/nginx-proxy-manager/)
 3. Create user accounts
 4. Install the desktop sync client
 
@@ -179,13 +179,13 @@ Yes. Tools like Rclone can sync your self-hosted storage to Google Drive (encryp
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [How to Self-Host Filebrowser](/apps/filebrowser)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Self-Hosted Alternatives to OneDrive](/replace/onedrive)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [How to Self-Host Filebrowser](/apps/filebrowser/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Self-Hosted Alternatives to OneDrive](/replace/onedrive/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

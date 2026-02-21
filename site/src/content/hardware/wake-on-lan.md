@@ -211,7 +211,7 @@ WoL magic packets are broadcast-only — they don't cross routers or reach acros
 
 ### Option 1: Tailscale + Always-On Device (Recommended)
 
-Run [Tailscale](/apps/tailscale) on an always-on device (Raspberry Pi, thin client) that stays connected to your home network. SSH into that device from anywhere and send the WoL packet from there.
+Run [Tailscale](/apps/tailscale/) on an always-on device (Raspberry Pi, thin client) that stays connected to your home network. SSH into that device from anywhere and send the WoL packet from there.
 
 ```bash
 ssh pi@100.x.x.x "wakeonlan aa:bb:cc:dd:ee:ff"
@@ -225,7 +225,7 @@ Forward UDP port 9 to your subnet's broadcast address on your router. This is le
 
 ### Option 3: VPN
 
-If you run [WireGuard](/apps/wireguard) or another VPN on an always-on device, connect to the VPN and send the magic packet from within your network.
+If you run [WireGuard](/apps/wireguard/) or another VPN on an always-on device, connect to the VPN and send the magic packet from within your network.
 
 ## Automating Wake and Sleep
 
@@ -318,9 +318,9 @@ Most motherboards made after 2010 support WoL. Check your BIOS for the setting. 
 
 ## Related
 
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption)
-- [Low-Power Home Server](/hardware/low-power-home-server)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [Refurbished Thin Clients](/hardware/refurbished-thin-clients)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption/)
+- [Low-Power Home Server](/hardware/low-power-home-server/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [Refurbished Thin Clients](/hardware/refurbished-thin-clients/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

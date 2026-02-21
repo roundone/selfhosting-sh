@@ -21,7 +21,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB RAM minimum (4 GB recommended for transcoding)
 - Disk space for your media library
 - A domain name (optional, for remote access)
@@ -201,7 +201,7 @@ proxy_read_timeout 600s;
 proxy_send_timeout 600s;
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -217,7 +217,7 @@ tar czf emby-config-backup-$(date +%Y%m%d).tar.gz /opt/emby/config
 docker compose up -d
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -267,7 +267,7 @@ The server is free to download and use. Most features work without payment. Howe
 
 ### How does Emby compare to Jellyfin?
 
-Jellyfin is a fork of Emby from before Emby went proprietary. Jellyfin is fully free and open-source, including hardware transcoding. Emby has a slightly more polished UI and some features Jellyfin lacks (Cinema Mode, offline sync), but requires a paid subscription for hardware transcoding. See our [Jellyfin vs Emby comparison](/compare/jellyfin-vs-emby).
+Jellyfin is a fork of Emby from before Emby went proprietary. Jellyfin is fully free and open-source, including hardware transcoding. Emby has a slightly more polished UI and some features Jellyfin lacks (Cinema Mode, offline sync), but requires a paid subscription for hardware transcoding. See our [Jellyfin vs Emby comparison](/compare/jellyfin-vs-emby/).
 
 ### Can I migrate from Plex to Emby?
 
@@ -283,14 +283,14 @@ Emby has native apps for Android, iOS, Android TV, Amazon Fire TV, Roku, Apple T
 
 ## Related
 
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [Emby vs Navidrome](/compare/emby-vs-navidrome)
-- [Emby vs Plex for Music](/compare/emby-vs-plex-music)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [Emby vs Navidrome](/compare/emby-vs-navidrome/)
+- [Emby vs Plex for Music](/compare/emby-vs-plex-music/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

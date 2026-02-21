@@ -21,8 +21,8 @@ Unlike Tailscale (which uses WireGuard under the hood with automated management)
 
 ## Prerequisites
 
-- A Linux server with a public IP or port forwarding ([Port Forwarding Guide](/foundations/port-forwarding))
-- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup))
+- A Linux server with a public IP or port forwarding ([Port Forwarding Guide](/foundations/port-forwarding/))
+- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup/))
 - Port 51820/UDP forwarded from your router to your server
 - A client device (phone, laptop) to connect from
 
@@ -39,7 +39,7 @@ Unlike Tailscale (which uses WireGuard under the hood with automated management)
 | Dependencies | None (kernel module) | Tailscale service + account |
 
 **Use raw WireGuard if:** You want full control, have a public IP, or don't want to depend on Tailscale's infrastructure.
-**Use Tailscale if:** You want zero-config setup, are behind CGNAT, or need mesh networking. See [Tailscale Setup](/foundations/tailscale-setup).
+**Use Tailscale if:** You want zero-config setup, are behind CGNAT, or need mesh networking. See [Tailscale Setup](/foundations/tailscale-setup/).
 
 ## Method 1: Docker with wg-easy (Recommended)
 
@@ -219,7 +219,7 @@ sudo ufw allow 51820/udp
 sudo ufw route allow in on wg0 out on eth0
 ```
 
-See [Firewall Setup with UFW](/foundations/firewall-ufw) for more details.
+See [Firewall Setup with UFW](/foundations/firewall-ufw/) for more details.
 
 ## Common Mistakes
 
@@ -267,15 +267,15 @@ Yes. Include your LAN subnet in the client's `AllowedIPs` (e.g., `192.168.1.0/24
 
 ## Next Steps
 
-- [Tailscale Setup](/foundations/tailscale-setup) — managed WireGuard alternative
-- [Port Forwarding Guide](/foundations/port-forwarding) — expose WireGuard to the internet
-- [Firewall Setup with UFW](/foundations/firewall-ufw) — secure your VPN server
+- [Tailscale Setup](/foundations/tailscale-setup/) — managed WireGuard alternative
+- [Port Forwarding Guide](/foundations/port-forwarding/) — expose WireGuard to the internet
+- [Firewall Setup with UFW](/foundations/firewall-ufw/) — secure your VPN server
 
 ## Related
 
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [Port Forwarding for Self-Hosting](/foundations/port-forwarding)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [DNS Explained](/foundations/dns-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [Port Forwarding for Self-Hosting](/foundations/port-forwarding/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -304,10 +304,10 @@ sudo cp /etc/ssh/sshd_config.bak /etc/ssh/sshd_config
 
 ## Next Steps
 
-- Learn the Linux basics — [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- Understand file permissions — [Linux File Permissions](/foundations/linux-permissions)
-- Set up SSH — [SSH Setup](/foundations/ssh-setup)
-- Start editing Docker Compose files — [Docker Compose Basics](/foundations/docker-compose-basics)
+- Learn the Linux basics — [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- Understand file permissions — [Linux File Permissions](/foundations/linux-permissions/)
+- Set up SSH — [SSH Setup](/foundations/ssh-setup/)
+- Start editing Docker Compose files — [Docker Compose Basics](/foundations/docker-compose-basics/)
 
 ## FAQ
 
@@ -325,8 +325,8 @@ Yes. VS Code's Remote-SSH extension lets you edit files on your server with a fu
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [SSH Setup](/foundations/ssh-setup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

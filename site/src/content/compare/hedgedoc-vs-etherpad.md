@@ -100,7 +100,7 @@ Not directly. HedgeDoc stores Markdown; Etherpad stores rich text. You can expor
 
 ### Which is better for a wiki-like knowledge base?
 
-Neither is ideal as a wiki. HedgeDoc is closer — it has document organization and linking. But for a proper knowledge base, look at [BookStack](/apps/bookstack), [Wiki.js](/apps/wiki-js), or [Outline](/apps/outline).
+Neither is ideal as a wiki. HedgeDoc is closer — it has document organization and linking. But for a proper knowledge base, look at [BookStack](/apps/bookstack/), [Wiki.js](/apps/wiki-js/), or [Outline](/apps/outline/).
 
 ### Can Etherpad handle Markdown?
 
@@ -108,9 +108,9 @@ With the `ep_markdown` plugin, Etherpad can render Markdown, but it's not a firs
 
 ## Related
 
-- [How to Self-Host HedgeDoc](/apps/hedgedoc)
-- [How to Self-Host Etherpad](/apps/etherpad)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Notion Alternatives](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host HedgeDoc](/apps/hedgedoc/)
+- [How to Self-Host Etherpad](/apps/etherpad/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Notion Alternatives](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 100 MB of free disk space (plus storage for notes)
 - 128 MB of RAM (minimum)
 - A domain name (optional, for remote access)
@@ -134,7 +134,7 @@ notes.example.com {
 }
 ```
 
-See the [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained) for Nginx Proxy Manager and Traefik configs.
+See the [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained/) for Nginx Proxy Manager and Traefik configs.
 
 ## Backup
 
@@ -148,7 +148,7 @@ docker run --rm -v flatnotes-data:/data -v $(pwd):/backup alpine tar czf /backup
 tar czf flatnotes-backup.tar.gz ./data
 ```
 
-Since notes are plain Markdown files, you can also back up or sync the files directly. The search index rebuilds automatically if deleted. See the [Backup Strategy guide](/foundations/backup-3-2-1-rule) for more options.
+Since notes are plain Markdown files, you can also back up or sync the files directly. The search index rebuilds automatically if deleted. See the [Backup Strategy guide](/foundations/backup-3-2-1-rule/) for more options.
 
 ## Troubleshooting
 
@@ -178,7 +178,7 @@ Since notes are plain Markdown files, you can also back up or sync the files dir
 
 ## Verdict
 
-Flatnotes is the best choice when you want the absolute simplest self-hosted note app. No database, no complex setup, no learning curve — just Markdown files in a folder with a web UI on top. It's not trying to be Notion or a team wiki. It's a personal notepad that respects your data by storing everything as plain files. If you need collaboration, hierarchy, or advanced features, look at [Outline](/apps/outline), [Trilium](/apps/trilium), or [BookStack](/apps/bookstack). If you want minimal and functional, Flatnotes nails it.
+Flatnotes is the best choice when you want the absolute simplest self-hosted note app. No database, no complex setup, no learning curve — just Markdown files in a folder with a web UI on top. It's not trying to be Notion or a team wiki. It's a personal notepad that respects your data by storing everything as plain files. If you need collaboration, hierarchy, or advanced features, look at [Outline](/apps/outline/), [Trilium](/apps/trilium/), or [BookStack](/apps/bookstack/). If you want minimal and functional, Flatnotes nails it.
 
 ## FAQ
 
@@ -188,20 +188,20 @@ Yes. Notes are plain `.md` files in the data directory. Open them with any text 
 
 ### Does Flatnotes support multiple users?
 
-No. Flatnotes has a single set of credentials. All notes are shared. For multi-user note-taking, use [Memos](/apps/memos) or [Outline](/apps/outline).
+No. Flatnotes has a single set of credentials. All notes are shared. For multi-user note-taking, use [Memos](/apps/memos/) or [Outline](/apps/outline/).
 
 ### How does Flatnotes compare to Memos?
 
-[Memos](/apps/memos) is a microblog-style feed for quick capture. Flatnotes is a traditional note app with titled documents. Use Memos for quick thoughts and Flatnotes for structured notes.
+[Memos](/apps/memos/) is a microblog-style feed for quick capture. Flatnotes is a traditional note app with titled documents. Use Memos for quick thoughts and Flatnotes for structured notes.
 
 ## Related
 
-- [How to Self-Host Memos](/apps/memos)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [Memos vs Trilium](/compare/memos-vs-trilium)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Evernote Alternatives](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Memos](/apps/memos/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [Memos vs Trilium](/compare/memos-vs-trilium/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Evernote Alternatives](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

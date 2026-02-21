@@ -60,7 +60,7 @@ Tailscale's coordination server handles key exchange and peer discovery while th
 
 **Best for:** Most self-hosters. If you want to access your homelab from anywhere with zero networking headaches, Tailscale is the answer.
 
-[Read our full guide: How to Self-Host Tailscale](/apps/tailscale)
+[Read our full guide: How to Self-Host Tailscale](/apps/tailscale/)
 
 ### 2. WireGuard — Best Performance
 
@@ -85,7 +85,7 @@ WireGuard is a protocol, not a product. It gives you a tunnel and nothing else �
 
 **Best for:** Users who want maximum performance and don't mind manual configuration. Ideal as a single-endpoint VPN into your homelab.
 
-[Read our full guide: How to Self-Host WireGuard](/apps/wireguard)
+[Read our full guide: How to Self-Host WireGuard](/apps/wireguard/)
 
 ### 3. Headscale — Best Fully Self-Hosted
 
@@ -111,7 +111,7 @@ This is the option for self-hosters who want the Tailscale UX but refuse to depe
 
 **Best for:** Self-hosters who want Tailscale's mesh networking without trusting a third party with their network topology.
 
-[Read our full guide: How to Self-Host Headscale](/apps/headscale)
+[Read our full guide: How to Self-Host Headscale](/apps/headscale/)
 
 ### 4. Cloudflare Tunnel — Best Zero-Trust Access
 
@@ -138,7 +138,7 @@ This is not a VPN in the traditional sense — it's a reverse tunnel. You don't 
 
 **Best for:** Exposing web-based self-hosted apps (Nextcloud, Immich, Jellyfin) to the internet without opening ports. Pairs well with a mesh VPN for full network access.
 
-[Read our full guide: How to Self-Host Cloudflare Tunnel](/apps/cloudflare-tunnel)
+[Read our full guide: How to Self-Host Cloudflare Tunnel](/apps/cloudflare-tunnel/)
 
 ### 5. NetBird — Best Open-Source Mesh VPN
 
@@ -163,7 +163,7 @@ This is not a VPN in the traditional sense — it's a reverse tunnel. You don't 
 
 **Best for:** Users who want a fully open-source mesh VPN they can self-host entirely, without using Tailscale clients.
 
-[Read our full guide: How to Self-Host NetBird](/apps/netbird)
+[Read our full guide: How to Self-Host NetBird](/apps/netbird/)
 
 ### 6. wg-easy — Best WireGuard with a GUI
 
@@ -189,7 +189,7 @@ If you want WireGuard but don't want to edit config files every time you add a d
 
 **Best for:** Users who want WireGuard's performance with an easy way to manage peers through a web browser.
 
-[Read our full guide: How to Self-Host wg-easy](/apps/wg-easy)
+[Read our full guide: How to Self-Host wg-easy](/apps/wg-easy/)
 
 ### 7. ZeroTier — Honorable Mention
 
@@ -236,28 +236,28 @@ Most self-hosters need one of three setups:
 
 **Mesh VPN for full network access.** Use Tailscale (easiest) or Headscale (fully self-hosted) to connect all your devices into a private network. Every device can reach every other device. Best for accessing your entire homelab from anywhere.
 
-**Point-to-point VPN for a single entry point.** Use WireGuard or wg-easy to create a tunnel into your home network. All traffic enters through one server. Simpler architecture, better for single-site setups. See our [WireGuard vs Tailscale comparison](/compare/tailscale-vs-wireguard) for a detailed breakdown.
+**Point-to-point VPN for a single entry point.** Use WireGuard or wg-easy to create a tunnel into your home network. All traffic enters through one server. Simpler architecture, better for single-site setups. See our [WireGuard vs Tailscale comparison](/compare/tailscale-vs-wireguard/) for a detailed breakdown.
 
-**Reverse tunnel for web app access.** Use Cloudflare Tunnel to expose specific services (Nextcloud, Jellyfin, Immich) to the internet without opening ports. Combine with a mesh VPN for full network access when needed. Check our [self-hosted ngrok alternatives](/replace/ngrok) for more options.
+**Reverse tunnel for web app access.** Use Cloudflare Tunnel to expose specific services (Nextcloud, Jellyfin, Immich) to the internet without opening ports. Combine with a mesh VPN for full network access when needed. Check our [self-hosted ngrok alternatives](/replace/ngrok/) for more options.
 
 These approaches are not mutually exclusive. A common setup is Tailscale for device-to-device access plus Cloudflare Tunnel for public-facing services.
 
 ## Related
 
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host Tailscale](/apps/tailscale)
-- [How to Self-Host Headscale](/apps/headscale)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [How to Self-Host Cloudflare Tunnel](/apps/cloudflare-tunnel)
-- [How to Self-Host NetBird](/apps/netbird)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [wg-easy vs WireGuard](/compare/wg-easy-vs-wireguard)
-- [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale)
-- [NetBird vs Tailscale](/compare/netbird-vs-tailscale)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
-- [Self-Hosted Alternatives to ngrok](/replace/ngrok)
-- [Remote Access Guide](/foundations/remote-access)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host Tailscale](/apps/tailscale/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [How to Self-Host Cloudflare Tunnel](/apps/cloudflare-tunnel/)
+- [How to Self-Host NetBird](/apps/netbird/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [wg-easy vs WireGuard](/compare/wg-easy-vs-wireguard/)
+- [ZeroTier vs Tailscale](/compare/zerotier-vs-tailscale/)
+- [NetBird vs Tailscale](/compare/netbird-vs-tailscale/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer/)
+- [Self-Hosted Alternatives to ngrok](/replace/ngrok/)
+- [Remote Access Guide](/foundations/remote-access/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

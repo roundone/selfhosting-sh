@@ -200,14 +200,14 @@ For support, WordPress has more resources available (tutorials, forums, YouTube 
 
 The wrong choice: using WordPress for a simple blog (overkill) or using Ghost for an online store (wrong tool). Match the CMS to the job.
 
-If you want the performance of a static site with none of the CMS overhead, consider [Hugo](/apps/hugo) -- it generates static HTML and eliminates server-side rendering entirely.
+If you want the performance of a static site with none of the CMS overhead, consider [Hugo](/apps/hugo/) -- it generates static HTML and eliminates server-side rendering entirely.
 
 ## Related
 
-- [How to Self-Host Ghost](/apps/ghost)
-- [How to Self-Host WordPress](/apps/wordpress)
-- [How to Self-Host Hugo](/apps/hugo)
-- [Best Self-Hosted CMS Platforms](/best/cms-websites)
-- [Replace Squarespace with Self-Hosted CMS](/replace/squarespace)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [How to Self-Host Hugo](/apps/hugo/)
+- [Best Self-Hosted CMS Platforms](/best/cms-websites/)
+- [Replace Squarespace with Self-Hosted CMS](/replace/squarespace/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

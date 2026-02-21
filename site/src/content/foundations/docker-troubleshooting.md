@@ -25,8 +25,8 @@ When a Docker container misbehaves, diagnose systematically:
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- SSH access to your server ([SSH Setup Guide](/foundations/ssh-setup/))
 
 ## Container Won't Start
 
@@ -167,7 +167,7 @@ environment:
   - PGID=1000
 ```
 
-See [Linux File Permissions](/foundations/linux-permissions) for a deep dive.
+See [Linux File Permissions](/foundations/linux-permissions/) for a deep dive.
 
 ### Docker Socket Permission Denied
 
@@ -423,7 +423,7 @@ Override the entrypoint to get a shell: `docker compose run --rm --entrypoint sh
 
 ### Why does my container lose data when recreated?
 
-Data is only persisted in volumes. If you're using anonymous volumes or writing to the container filesystem (not a mounted volume), data is lost on recreate. See [Docker Volumes](/foundations/docker-volumes).
+Data is only persisted in volumes. If you're using anonymous volumes or writing to the container filesystem (not a mounted volume), data is lost on recreate. See [Docker Volumes](/foundations/docker-volumes/).
 
 ### How do I reset a container to a fresh state?
 
@@ -445,15 +445,15 @@ Use V2 (`docker compose` with a space). V1 (`docker-compose` with a hyphen) is d
 
 ## Next Steps
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — review fundamentals
-- [Docker Networking](/foundations/docker-networking) — understand container networking
-- [Docker Volumes](/foundations/docker-volumes) — persistent storage
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — review fundamentals
+- [Docker Networking](/foundations/docker-networking/) — understand container networking
+- [Docker Volumes](/foundations/docker-volumes/) — persistent storage
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Linux File Permissions](/foundations/linux-permissions)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Linux File Permissions](/foundations/linux-permissions/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

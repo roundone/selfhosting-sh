@@ -28,7 +28,7 @@ affiliateDisclosure: false
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) with a **dedicated public IP address** -- shared hosting will not work
 - **6 GB of RAM minimum** (8 GB recommended -- ClamAV, SOGo, and MariaDB are memory-hungry)
 - 20 GB of free disk space for the base installation, plus storage for mailboxes
-- Docker and Docker Compose v2 installed ([Docker Compose Basics](/foundations/docker-compose-basics))
+- Docker and Docker Compose v2 installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - A registered domain name with full DNS control
 - A clean IP address not on any email blacklists (check at [mxtoolbox.com](https://mxtoolbox.com/blacklists.aspx))
 - **No other services running on ports 25, 80, 443, 110, 143, 465, 587, 993, 995, or 4190** -- Mailcow needs exclusive access to these ports
@@ -370,7 +370,7 @@ curl -X POST "https://mail.example.com/api/v1/add/mailbox" \
 
 ### Running Behind a Reverse Proxy
 
-If you need Mailcow behind an existing reverse proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik)), change the HTTP/HTTPS ports in `mailcow.conf`:
+If you need Mailcow behind an existing reverse proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/)), change the HTTP/HTTPS ports in `mailcow.conf`:
 
 ```ini
 HTTP_PORT=8080
@@ -381,7 +381,7 @@ HTTPS_BIND=127.0.0.1
 
 Configure your reverse proxy to forward traffic to `127.0.0.1:8080` (HTTP) and `127.0.0.1:8443` (HTTPS). You must pass the `X-Forwarded-For` and `X-Forwarded-Proto` headers. Disable Mailcow's built-in ACME and handle SSL certificates in your reverse proxy.
 
-See Mailcow's [reverse proxy documentation](https://docs.mailcow.email/post_installation/firststeps-rp/) for proxy-specific configurations. Also see our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained) for general reverse proxy concepts.
+See Mailcow's [reverse proxy documentation](https://docs.mailcow.email/post_installation/firststeps-rp/) for proxy-specific configurations. Also see our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained/) for general reverse proxy concepts.
 
 ## Backup
 
@@ -432,7 +432,7 @@ cd /opt/mailcow-dockerized
 ./helper-scripts/backup_and_restore.sh restore
 ```
 
-The restore script shows available backup snapshots and lets you choose which one to restore. For the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule), copy backup files to an offsite location after each run.
+The restore script shows available backup snapshots and lets you choose which one to restore. For the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/), copy backup files to an offsite location after each run.
 
 ## Troubleshooting
 
@@ -454,7 +454,7 @@ Check current memory usage per container:
 docker stats --no-stream --format "table {{.Name}}\t{{.MemUsage}}"
 ```
 
-If you cannot add more RAM, Mailcow may not be the right choice for your server -- consider [Mailu](/apps/mailu) as a lighter alternative.
+If you cannot add more RAM, Mailcow may not be the right choice for your server -- consider [Mailu](/apps/mailu/) as a lighter alternative.
 
 ### Port Conflicts
 
@@ -588,18 +588,18 @@ Mailcow is the most feature-complete self-hosted mail server solution available.
 
 The trade-off is resource consumption. At 6+ GB of RAM for comfortable operation, Mailcow demands more than most self-hosted apps combined. It also requires a server with clean IP reputation and correct DNS -- getting email deliverability right is an ongoing responsibility, not a one-time setup.
 
-If you have a dedicated server with 8+ GB of RAM and want a polished, all-in-one mail server with a web UI for everything, Mailcow is the best option. If you are running a smaller VPS with limited resources, look at [Mailu](/apps/mailu) instead -- it provides similar functionality with a smaller footprint. If you just need to send transactional emails from your self-hosted apps, skip the full mail server entirely and use an [SMTP relay service](/foundations/smtp-email-basics).
+If you have a dedicated server with 8+ GB of RAM and want a polished, all-in-one mail server with a web UI for everything, Mailcow is the best option. If you are running a smaller VPS with limited resources, look at [Mailu](/apps/mailu/) instead -- it provides similar functionality with a smaller footprint. If you just need to send transactional emails from your self-hosted apps, skip the full mail server entirely and use an [SMTP relay service](/foundations/smtp-email-basics/).
 
 Self-hosting email is the hardest category of self-hosting. IP reputation, DNS configuration, spam filtering, and deliverability monitoring are ongoing tasks. Mailcow handles the technical stack well, but you still own the operational responsibility. Go in with that understanding.
 
 ## Related
 
-- [SMTP Email Basics](/foundations/smtp-email-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Traefik](/apps/traefik)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [DNS Explained](/foundations/dns-explained)
-- [Security Basics](/foundations/selfhosting-security-checklist)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [SMTP Email Basics](/foundations/smtp-email-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Traefik](/apps/traefik/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Security Basics](/foundations/selfhosting-security-checklist/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

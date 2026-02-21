@@ -163,14 +163,14 @@ Elasticsearch has the larger ecosystem by orders of magnitude. Meilisearch has a
 
 **Elasticsearch is the right choice for data infrastructure.** If you need log aggregation, complex analytics, or search at massive scale, Elasticsearch is battle-tested at every scale imaginable. The trade-off is significantly more complexity and resource requirements.
 
-For most self-hosters adding search to an application: Meilisearch. For building an observability stack: Elasticsearch (or consider [OpenSearch](/apps/opensearch) as a fully open-source alternative).
+For most self-hosters adding search to an application: Meilisearch. For building an observability stack: Elasticsearch (or consider [OpenSearch](/apps/opensearch/) as a fully open-source alternative).
 
 ## Related
 
-- [How to Self-Host Meilisearch](/apps/meilisearch)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Meilisearch](/apps/meilisearch/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Elasticsearch vs OpenSearch](/compare/elasticsearch-vs-opensearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

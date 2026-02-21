@@ -25,7 +25,7 @@ LibreSpeed is a self-hosted speed test that measures download speed, upload spee
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 100 MB of free disk space
 - 128 MB of RAM minimum
 
@@ -151,7 +151,7 @@ volumes:
 
 ### HTTPS
 
-When behind a reverse proxy with SSL, LibreSpeed works without additional configuration. For direct HTTPS, use [Caddy](/apps/caddy) or [Nginx Proxy Manager](/apps/nginx-proxy-manager) in front.
+When behind a reverse proxy with SSL, LibreSpeed works without additional configuration. For direct HTTPS, use [Caddy](/apps/caddy/) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/) in front.
 
 ## Reverse Proxy
 
@@ -161,7 +161,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** librespeed
 - **Forward Port:** 80
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -169,7 +169,7 @@ Example Nginx Proxy Manager configuration:
 tar -czf librespeed-backup-$(date +%Y%m%d).tar.gz ./config
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -196,7 +196,7 @@ tar -czf librespeed-backup-$(date +%Y%m%d).tar.gz ./config
 
 ## Verdict
 
-LibreSpeed is the go-to self-hosted speed test. It's simple, works out of the box, and gives you the exact same functionality as Speedtest.net without the tracking. Deploy it on your LAN to test internal network speeds, or expose it publicly as a service for your users. For tracking speed test results over time with historical charts, pair it with [Speedtest Tracker](/apps/speedtest-tracker).
+LibreSpeed is the go-to self-hosted speed test. It's simple, works out of the box, and gives you the exact same functionality as Speedtest.net without the tracking. Deploy it on your LAN to test internal network speeds, or expose it publicly as a service for your users. For tracking speed test results over time with historical charts, pair it with [Speedtest Tracker](/apps/speedtest-tracker/).
 
 ## FAQ
 
@@ -214,10 +214,10 @@ For measuring the connection between your device and the server, yes. For measur
 
 ## Related
 
-- [How to Self-Host Speedtest Tracker](/apps/speedtest-tracker)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Home Network Setup](/foundations/home-network-setup)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
+- [How to Self-Host Speedtest Tracker](/apps/speedtest-tracker/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Home Network Setup](/foundations/home-network-setup/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)

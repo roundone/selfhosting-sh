@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - A [Cloudflare account](https://dash.cloudflare.com/sign-up) (free tier works)
 - A domain name with DNS managed by Cloudflare (Cloudflare must be your authoritative DNS provider)
 - At least one self-hosted service running locally that you want to expose
@@ -233,9 +233,9 @@ The dashboard approach is simpler for most users and allows changes without rest
 
 ## Comparison with Reverse Proxy
 
-Cloudflare Tunnel and a traditional [reverse proxy](/foundations/reverse-proxy-explained) solve similar problems differently.
+Cloudflare Tunnel and a traditional [reverse proxy](/foundations/reverse-proxy-explained/) solve similar problems differently.
 
-| | Cloudflare Tunnel | Reverse Proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-manager)) |
+| | Cloudflare Tunnel | Reverse Proxy (e.g., [Nginx Proxy Manager](/apps/nginx-proxy-manager/)) |
 |---|---|---|
 | Port forwarding required | No | Yes (80, 443) |
 | SSL certificates | Automatic (Cloudflare-managed) | Automatic (Let's Encrypt) but you manage renewal |
@@ -338,9 +338,9 @@ Look for `Retrying connection` messages. Frequent retries indicate network issue
 
 Cloudflare Tunnel is the easiest way to expose self-hosted services to the internet. No port forwarding, no dynamic DNS, no SSL certificate management, no firewall rules. It works behind CGNAT, which eliminates the biggest barrier for self-hosters on residential ISPs. It is free with no usage limits.
 
-The trade-off is straightforward: all your traffic routes through Cloudflare. They terminate TLS at their edge, which means they can technically inspect your traffic. For most self-hosting use cases — a Jellyfin server, a Nextcloud instance, a wiki — this is an acceptable trade-off in exchange for the simplicity. If the idea of a third party in the middle of your traffic bothers you, run [WireGuard](/apps/wireguard) or [Tailscale](/apps/tailscale) instead and access services directly over a VPN.
+The trade-off is straightforward: all your traffic routes through Cloudflare. They terminate TLS at their edge, which means they can technically inspect your traffic. For most self-hosting use cases — a Jellyfin server, a Nextcloud instance, a wiki — this is an acceptable trade-off in exchange for the simplicity. If the idea of a third party in the middle of your traffic bothers you, run [WireGuard](/apps/wireguard/) or [Tailscale](/apps/tailscale/) instead and access services directly over a VPN.
 
-For LAN-only access (you only need to reach services from your own devices), Cloudflare Tunnel is overkill. Use [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard) — they create a private mesh network without exposing anything to the public internet.
+For LAN-only access (you only need to reach services from your own devices), Cloudflare Tunnel is overkill. Use [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/) — they create a private mesh network without exposing anything to the public internet.
 
 For public-facing services where you want anyone on the internet to reach them, Cloudflare Tunnel is the best free option available.
 
@@ -352,11 +352,11 @@ Yes. Cloudflare Tunnel is free with no bandwidth limits, no connection limits, a
 
 ### Can Cloudflare see my traffic?
 
-Cloudflare terminates TLS at their edge and re-encrypts the connection to your origin. This means they technically *can* inspect unencrypted traffic between their edge and your server. For self-hosted services over HTTP internally, Cloudflare can see the data in transit. For most users this is acceptable, but if you handle highly sensitive data, consider end-to-end encryption or a direct VPN like [WireGuard](/apps/wireguard).
+Cloudflare terminates TLS at their edge and re-encrypts the connection to your origin. This means they technically *can* inspect unencrypted traffic between their edge and your server. For self-hosted services over HTTP internally, Cloudflare can see the data in transit. For most users this is acceptable, but if you handle highly sensitive data, consider end-to-end encryption or a direct VPN like [WireGuard](/apps/wireguard/).
 
 ### Cloudflare Tunnel vs Tailscale — which should I use?
 
-They solve different problems. Cloudflare Tunnel makes services available to **anyone on the internet** (with optional access controls). [Tailscale](/apps/tailscale) makes services available only to **your devices** on a private mesh network. Use Cloudflare Tunnel when you want public access (a blog, a file sharing link, a public-facing app). Use Tailscale when you want private access (your personal Jellyfin, your Home Assistant dashboard). You can use both simultaneously.
+They solve different problems. Cloudflare Tunnel makes services available to **anyone on the internet** (with optional access controls). [Tailscale](/apps/tailscale/) makes services available only to **your devices** on a private mesh network. Use Cloudflare Tunnel when you want public access (a blog, a file sharing link, a public-facing app). Use Tailscale when you want private access (your personal Jellyfin, your Home Assistant dashboard). You can use both simultaneously.
 
 ### Can I run multiple services on one tunnel?
 
@@ -368,11 +368,11 @@ Yes. Cloudflare Tunnel supports TCP and UDP services in addition to HTTP/HTTPS. 
 
 ## Related
 
-- [Best Self-Hosted VPN & Remote Access](/best/vpn)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host Tailscale](/apps/tailscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [How to Set Up Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Replace NordVPN with Self-Hosted VPN](/replace/nordvpn)
+- [Best Self-Hosted VPN & Remote Access](/best/vpn/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host Tailscale](/apps/tailscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [How to Set Up Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Replace NordVPN with Self-Hosted VPN](/replace/nordvpn/)

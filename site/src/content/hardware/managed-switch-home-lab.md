@@ -24,7 +24,7 @@ affiliateDisclosure: true
 ### You DON'T Need One If:
 
 - All your devices are on one flat network
-- You're running [Tailscale](/apps/tailscale) or Cloudflare Tunnel (no local network complexity)
+- You're running [Tailscale](/apps/tailscale/) or Cloudflare Tunnel (no local network complexity)
 - You have fewer than 10 wired devices
 - Your router handles DHCP and DNS adequately
 
@@ -122,7 +122,7 @@ This setup means a compromised IoT device can't reach your server or personal de
 | Ubiquiti USW-Lite-8-PoE (with 2 APs) | 20-25W |
 | MikroTik CRS305 10GbE | 5W |
 
-Add the switch's power draw to your [power consumption calculations](/hardware/power-consumption-guide).
+Add the switch's power draw to your [power consumption calculations](/hardware/power-consumption-guide/).
 
 ## FAQ
 
@@ -140,8 +140,8 @@ Only if you have PoE devices: WiFi access points, IP cameras, or Raspberry Pis w
 
 ## Related
 
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [PoE Explained](/hardware/poe-explained)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

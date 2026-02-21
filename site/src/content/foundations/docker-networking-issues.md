@@ -19,9 +19,9 @@ Docker networking connects containers to each other and to the outside world. Wh
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Understanding of Docker networks ([Docker Networking](/foundations/docker-networking))
-- Basic networking knowledge ([Networking Concepts](/foundations/ports-explained))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Understanding of Docker networks ([Docker Networking](/foundations/docker-networking/))
+- Basic networking knowledge ([Networking Concepts](/foundations/ports-explained/))
 
 ## Container Can't Reach the Internet
 
@@ -95,7 +95,7 @@ EOF
 sudo systemctl restart docker
 ```
 
-See [DNS Debugging](/foundations/dns-debugging) for more DNS solutions.
+See [DNS Debugging](/foundations/dns-debugging/) for more DNS solutions.
 
 ## Container-to-Container Communication Fails
 
@@ -208,7 +208,7 @@ ports:
   - "8080:80"  # Map to a different host port
 ```
 
-See [Port Already In Use](/foundations/port-already-in-use) for detailed solutions.
+See [Port Already In Use](/foundations/port-already-in-use/) for detailed solutions.
 
 ### Port Accessible Locally But Not Remotely
 
@@ -238,7 +238,7 @@ sudo ufw status
 sudo ufw allow 8080/tcp
 ```
 
-See [Firewall Setup](/foundations/firewall-ufw).
+See [Firewall Setup](/foundations/firewall-ufw/).
 
 ### Container Port vs Host Port Confusion
 
@@ -353,7 +353,7 @@ services:
     # No ports: section = not accessible from host
 ```
 
-See [Docker Security](/foundations/docker-security) for more on securing Docker networking.
+See [Docker Security](/foundations/docker-security/) for more on securing Docker networking.
 
 ## macvlan and ipvlan Issues
 
@@ -426,10 +426,10 @@ Docker's default bridge subnet (172.17.0.0/16) likely conflicts with your VPN's 
 
 ## Related
 
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Compose Networking Advanced](/foundations/docker-compose-networking-advanced)
-- [Docker Common Issues](/foundations/docker-common-issues)
-- [Docker Security](/foundations/docker-security)
-- [DNS Debugging](/foundations/dns-debugging)
-- [Port Already In Use](/foundations/port-already-in-use)
-- [Firewall Setup](/foundations/firewall-ufw)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Compose Networking Advanced](/foundations/docker-compose-networking-advanced/)
+- [Docker Common Issues](/foundations/docker-common-issues/)
+- [Docker Security](/foundations/docker-security/)
+- [DNS Debugging](/foundations/dns-debugging/)
+- [Port Already In Use](/foundations/port-already-in-use/)
+- [Firewall Setup](/foundations/firewall-ufw/)

@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## What Is Zimaboard?
 
-Zimaboard is an x86 single-board server that bridges the gap between a [Raspberry Pi](/hardware/raspberry-pi-home-server) and a [mini PC](/hardware/best-mini-pc). It runs Intel Celeron processors, has dual SATA ports, dual Gigabit Ethernet, a PCIe slot, and ships with CasaOS pre-installed. Unlike ARM boards, Zimaboard runs any x86 Linux distribution, Windows, Proxmox, or TrueNAS without compatibility issues.
+Zimaboard is an x86 single-board server that bridges the gap between a [Raspberry Pi](/hardware/raspberry-pi-home-server/) and a [mini PC](/hardware/best-mini-pc/). It runs Intel Celeron processors, has dual SATA ports, dual Gigabit Ethernet, a PCIe slot, and ships with CasaOS pre-installed. Unlike ARM boards, Zimaboard runs any x86 Linux distribution, Windows, Proxmox, or TrueNAS without compatibility issues.
 
 The standout feature is the combination of SATA storage, PCIe expansion, and dual NICs in a form factor barely larger than a Raspberry Pi — all drawing under 4W at idle.
 
@@ -56,7 +56,7 @@ ZimaCube is Zimaboard's evolution into a full NAS enclosure:
 | Thunderbolt | No | Thunderbolt 4 |
 | Price | ~$519 | ~$1,099 |
 
-ZimaCube is compelling for people who want a pre-built NAS with full Docker support. At $519 for the standard model, it's cheaper than comparable [Synology](/hardware/synology-vs-truenas) or [QNAP](/hardware/qnap-vs-synology) units while offering more compute flexibility. The Pro model with a 10C/12T i5 is overkill for most but can double as a serious Docker host.
+ZimaCube is compelling for people who want a pre-built NAS with full Docker support. At $519 for the standard model, it's cheaper than comparable [Synology](/hardware/synology-vs-truenas/) or [QNAP](/hardware/qnap-vs-synology/) units while offering more compute flexibility. The Pro model with a 10C/12T i5 is overkill for most but can double as a serious Docker host.
 
 ## CasaOS
 
@@ -145,7 +145,7 @@ The PCIe 2.0 x4 slot accepts:
 - **2.5GbE or 10GbE NIC** — upgrade from onboard 1GbE
 - **NVMe adapter** — add M.2 NVMe storage
 - **SATA expansion card** — add more SATA ports
-- **Coral TPU** — hardware ML acceleration for [Frigate](/apps/frigate) camera detection
+- **Coral TPU** — hardware ML acceleration for [Frigate](/apps/frigate/) camera detection
 
 Install the card, boot, and the Linux kernel typically detects it automatically. No driver installation needed for most NICs and storage controllers.
 
@@ -161,19 +161,19 @@ Zimaboard's efficiency is its killer feature for 24/7 operation:
 | Moderate load (5 containers) | 8-12W | ~$8-13 |
 | Full CPU load | 15-20W | ~$16-21 |
 
-Compare this to a [mini PC](/hardware/mini-pc-power-consumption) at 8-15W idle or a [Synology NAS](/hardware/best-nas) at 15-30W idle. Zimaboard is among the most power-efficient x86 self-hosting platforms available.
+Compare this to a [mini PC](/hardware/mini-pc-power-consumption/) at 8-15W idle or a [Synology NAS](/hardware/best-nas/) at 15-30W idle. Zimaboard is among the most power-efficient x86 self-hosting platforms available.
 
 ## What Can You Run?
 
 ### ZimaBoard 832 (8GB RAM) — Realistic Workload
 
 Simultaneously:
-- [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) — DNS ad blocking
-- [Nextcloud](/apps/nextcloud) — file sync for 1-2 users
-- [Vaultwarden](/apps/vaultwarden) — password manager
-- [Uptime Kuma](/apps/uptime-kuma) — monitoring
-- [FreshRSS](/apps/freshrss) — RSS reader
-- [Homepage](/apps/homepage) — dashboard
+- [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) — DNS ad blocking
+- [Nextcloud](/apps/nextcloud/) — file sync for 1-2 users
+- [Vaultwarden](/apps/vaultwarden/) — password manager
+- [Uptime Kuma](/apps/uptime-kuma/) — monitoring
+- [FreshRSS](/apps/freshrss/) — RSS reader
+- [Homepage](/apps/homepage/) — dashboard
 - 2-3 additional lightweight containers
 
 **What the 832 can't handle well:**
@@ -212,7 +212,7 @@ Simultaneously:
 
 ## Zimaboard vs Mini PC
 
-A $200 Zimaboard 832 competes with $200-250 [N100 mini PCs](/hardware/intel-n100-mini-pc):
+A $200 Zimaboard 832 competes with $200-250 [N100 mini PCs](/hardware/intel-n100-mini-pc/):
 
 | Dimension | Zimaboard 832 | N100 Mini PC |
 |-----------|---------------|-------------|
@@ -238,8 +238,8 @@ The N100 mini PC is faster and more versatile. The Zimaboard wins on power effic
 
 **Skip Zimaboard if:**
 - You need more than 8GB RAM
-- Plex/Jellyfin transcoding is a priority (get an [N100](/hardware/intel-n100-mini-pc) or [N305](/hardware/intel-n305-mini-pc) mini PC)
-- You need 4+ drive bays (get a [NAS](/hardware/best-nas) or [ZimaCube](/hardware/zimaboard-setup-guide#zimacube-nas-version))
+- Plex/Jellyfin transcoding is a priority (get an [N100](/hardware/intel-n100-mini-pc/) or [N305](/hardware/intel-n305-mini-pc/) mini PC)
+- You need 4+ drive bays (get a [NAS](/hardware/best-nas/) or [ZimaCube](/hardware/zimaboard-setup-guide#zimacube-nas-version))
 - You want maximum compute per dollar (mini PCs win)
 
 ## FAQ
@@ -254,18 +254,18 @@ For beginners, CasaOS is the easiest way to get into self-hosting. The web UI an
 Zimaboard is a bare board — add your own case, drives, and power supply. ZimaCube is a complete NAS enclosure with 6 drive bays, M.2 slots, and better CPUs. ZimaCube starts at $519. Choose Zimaboard for a single-purpose, ultra-compact setup. Choose ZimaCube for a multi-drive NAS.
 
 ### Does Zimaboard support hardware video transcoding?
-The N3450 has Intel HD Graphics 500 with basic QuickSync support (H.264, H.265 decode). It can handle a single 1080p transcode but struggles with 4K. For serious media serving, use a [mini PC with N100/N305](/hardware/best-mini-pc).
+The N3450 has Intel HD Graphics 500 with basic QuickSync support (H.264, H.265 decode). It can handle a single 1080p transcode but struggles with 4K. For serious media serving, use a [mini PC with N100/N305](/hardware/best-mini-pc/).
 
 ### What case should I use for a Zimaboard?
-Zimaboard sells an official metal case. Third-party 3D-printed cases are available on Thingiverse and Printables. Some users mount the bare board directly in a [server rack](/hardware/home-server-rack) with standoffs.
+Zimaboard sells an official metal case. Third-party 3D-printed cases are available on Thingiverse and Printables. Some users mount the bare board directly in a [server rack](/hardware/home-server-rack/) with standoffs.
 
 ## Related
 
-- [Raspberry Pi Home Server Guide](/hardware/raspberry-pi-home-server)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Low Power Home Server](/hardware/low-power-home-server)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
+- [Raspberry Pi Home Server Guide](/hardware/raspberry-pi-home-server/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Intel N100 Mini PC](/hardware/intel-n100-mini-pc/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Low Power Home Server](/hardware/low-power-home-server/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)

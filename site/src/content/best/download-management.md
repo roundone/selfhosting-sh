@@ -28,12 +28,12 @@ affiliateDisclosure: false
 
 | Use Case | Best Choice | Why |
 |----------|-------------|-----|
-| Best for TV automation | [Sonarr](/apps/sonarr) | Monitors RSS feeds, grabs episodes automatically, upgrades quality, renames and organizes your library |
-| Best for movie automation | [Radarr](/apps/radarr) | Sonarr's fork for movies — same quality automation and organization, purpose-built for films |
-| Best torrent client | [qBittorrent](/apps/qbittorrent) | Feature-rich web UI, excellent *arr integration, VPN-compatible, no ads or bloat |
-| Best indexer manager | [Prowlarr](/apps/prowlarr) | Manages all your indexers in one place, syncs directly with Sonarr/Radarr/Lidarr |
-| Best lightweight torrent client | [Transmission](/apps/transmission) | Minimal resource footprint, clean interface, gets the job done without overhead |
-| Best for subtitles | [Bazarr](/apps/bazarr) | Automatically finds and downloads subtitles for your entire Sonarr/Radarr library |
+| Best for TV automation | [Sonarr](/apps/sonarr/) | Monitors RSS feeds, grabs episodes automatically, upgrades quality, renames and organizes your library |
+| Best for movie automation | [Radarr](/apps/radarr/) | Sonarr's fork for movies — same quality automation and organization, purpose-built for films |
+| Best torrent client | [qBittorrent](/apps/qbittorrent/) | Feature-rich web UI, excellent *arr integration, VPN-compatible, no ads or bloat |
+| Best indexer manager | [Prowlarr](/apps/prowlarr/) | Manages all your indexers in one place, syncs directly with Sonarr/Radarr/Lidarr |
+| Best lightweight torrent client | [Transmission](/apps/transmission/) | Minimal resource footprint, clean interface, gets the job done without overhead |
+| Best for subtitles | [Bazarr](/apps/bazarr/) | Automatically finds and downloads subtitles for your entire Sonarr/Radarr library |
 
 ## The Full Ranking
 
@@ -41,7 +41,7 @@ affiliateDisclosure: false
 
 [Sonarr](https://sonarr.tv/) is the backbone of any self-hosted TV automation setup. It monitors RSS feeds and indexers, automatically downloads new episodes in your preferred quality, renames files to your naming convention, and organizes them into your media library. When a better quality version of an episode becomes available, Sonarr grabs it and replaces the old one.
 
-Sonarr handles the entire lifecycle: you add a show, set your quality profile (720p, 1080p, 4K), and walk away. New episodes download automatically as they air. Season packs, daily shows, anime -- Sonarr handles all of it. It integrates directly with download clients like [qBittorrent](/apps/qbittorrent) and [Transmission](/apps/transmission), and uses [Prowlarr](/apps/prowlarr) or [Jackett](/apps/jackett) for indexer management.
+Sonarr handles the entire lifecycle: you add a show, set your quality profile (720p, 1080p, 4K), and walk away. New episodes download automatically as they air. Season packs, daily shows, anime -- Sonarr handles all of it. It integrates directly with download clients like [qBittorrent](/apps/qbittorrent/) and [Transmission](/apps/transmission/), and uses [Prowlarr](/apps/prowlarr/) or [Jackett](/apps/jackett/) for indexer management.
 
 The web UI is polished and responsive. Calendar views show upcoming episodes, activity feeds track downloads in progress, and the wanted list shows missing episodes. API access enables integration with mobile apps like Lunasea and NZB360.
 
@@ -66,11 +66,11 @@ The web UI is polished and responsive. Calendar views show upcoming episodes, ac
 
 **Resources:** ~512 MB RAM, low CPU usage, minimal disk for the application itself.
 
-[Read our full guide: How to Self-Host Sonarr](/apps/sonarr)
+[Read our full guide: How to Self-Host Sonarr](/apps/sonarr/)
 
 ### 2. Radarr -- Best for Automated Movie Management
 
-[Radarr](https://radarr.video/) does for movies what [Sonarr](/apps/sonarr) does for TV shows. It is a fork of Sonarr adapted specifically for movie collection management. Add movies to your watchlist, set quality preferences, and Radarr searches indexers, grabs the best available release, downloads it through your torrent or Usenet client, and organizes it in your library.
+[Radarr](https://radarr.video/) does for movies what [Sonarr](/apps/sonarr/) does for TV shows. It is a fork of Sonarr adapted specifically for movie collection management. Add movies to your watchlist, set quality preferences, and Radarr searches indexers, grabs the best available release, downloads it through your torrent or Usenet client, and organizes it in your library.
 
 Radarr's quality profile system lets you define exactly what you want: minimum quality (1080p), preferred quality (4K Remux), and custom formats to prioritize or avoid specific release characteristics (HDR, Atmos, x265). It monitors for upgrades and automatically replaces files when a better release appears.
 
@@ -96,7 +96,7 @@ The UI mirrors Sonarr's design, so if you know one, you know the other. Discover
 
 **Resources:** ~512 MB RAM, low CPU usage, minimal disk for the application itself.
 
-[Read our full guide: How to Self-Host Radarr](/apps/radarr)
+[Read our full guide: How to Self-Host Radarr](/apps/radarr/)
 
 ### 3. qBittorrent -- Best Torrent Client for Self-Hosting
 
@@ -127,13 +127,13 @@ VPN integration is straightforward using Gluetun as a network container. Route q
 
 **Resources:** ~200-400 MB RAM depending on active torrents, low CPU unless actively downloading.
 
-[Read our full guide: How to Self-Host qBittorrent](/apps/qbittorrent)
+[Read our full guide: How to Self-Host qBittorrent](/apps/qbittorrent/)
 
 ### 4. Prowlarr -- Best Indexer Manager
 
-[Prowlarr](https://prowlarr.com/) is a centralized indexer manager that eliminates the tedium of configuring indexers separately in every *arr app. Add your torrent trackers and Usenet indexers to Prowlarr once, and it syncs them automatically to [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), Lidarr, Readarr, and any other connected application.
+[Prowlarr](https://prowlarr.com/) is a centralized indexer manager that eliminates the tedium of configuring indexers separately in every *arr app. Add your torrent trackers and Usenet indexers to Prowlarr once, and it syncs them automatically to [Sonarr](/apps/sonarr/), [Radarr](/apps/radarr/), Lidarr, Readarr, and any other connected application.
 
-Prowlarr replaced [Jackett](/apps/jackett) as the recommended indexer proxy in the *arr ecosystem. The key difference: Prowlarr integrates natively with the *arr apps. Instead of copy-pasting API keys and Torznab URLs, Prowlarr pushes indexer configurations directly to connected apps. Add a new tracker to Prowlarr, and it appears in Sonarr and Radarr within seconds.
+Prowlarr replaced [Jackett](/apps/jackett/) as the recommended indexer proxy in the *arr ecosystem. The key difference: Prowlarr integrates natively with the *arr apps. Instead of copy-pasting API keys and Torznab URLs, Prowlarr pushes indexer configurations directly to connected apps. Add a new tracker to Prowlarr, and it appears in Sonarr and Radarr within seconds.
 
 For indexers behind Cloudflare protection, Prowlarr supports FlareSolverr as a captcha-solving proxy. The search interface lets you test indexers and run manual searches across all configured sources simultaneously.
 
@@ -155,7 +155,7 @@ For indexers behind Cloudflare protection, Prowlarr supports FlareSolverr as a c
 
 **Resources:** ~256 MB RAM, very low CPU, minimal disk.
 
-[Read our full guide: How to Self-Host Prowlarr](/apps/prowlarr)
+[Read our full guide: How to Self-Host Prowlarr](/apps/prowlarr/)
 
 ### 5. Transmission -- Best Lightweight Torrent Client
 
@@ -185,11 +185,11 @@ The trade-off for simplicity is fewer features. No built-in search engine, no RS
 
 **Resources:** ~100-200 MB RAM, very low CPU, minimal disk.
 
-[Read our full guide: How to Self-Host Transmission](/apps/transmission)
+[Read our full guide: How to Self-Host Transmission](/apps/transmission/)
 
 ### 6. Bazarr -- Best for Automated Subtitles
 
-[Bazarr](https://www.bazarr.media/) is the subtitle companion for the *arr stack. It connects to [Sonarr](/apps/sonarr) and [Radarr](/apps/radarr), scans your media library, and automatically downloads matching subtitles from providers like OpenSubtitles, Addic7ed, and Subscene. If you watch content in multiple languages or need subtitles for non-native audio, Bazarr eliminates the manual search.
+[Bazarr](https://www.bazarr.media/) is the subtitle companion for the *arr stack. It connects to [Sonarr](/apps/sonarr/) and [Radarr](/apps/radarr/), scans your media library, and automatically downloads matching subtitles from providers like OpenSubtitles, Addic7ed, and Subscene. If you watch content in multiple languages or need subtitles for non-native audio, Bazarr eliminates the manual search.
 
 Bazarr monitors your library continuously. When Sonarr adds a new episode or Radarr grabs a movie, Bazarr detects it and finds subtitles. It supports multiple languages simultaneously, subtitle scoring to pick the best match, and automatic upgrades when better subtitles become available.
 
@@ -214,11 +214,11 @@ The critical setup requirement: Bazarr's media volume paths must exactly match t
 
 **Resources:** ~256-512 MB RAM, low CPU, minimal disk.
 
-[Read our full guide: How to Self-Host Bazarr](/apps/bazarr)
+[Read our full guide: How to Self-Host Bazarr](/apps/bazarr/)
 
 ### 7. Jackett -- Legacy Indexer Proxy
 
-[Jackett](https://github.com/Jackett/Jackett) translates queries from Sonarr, Radarr, and other *arr apps into tracker-specific requests. It was the original solution for connecting private torrent trackers and Usenet indexers to the *arr ecosystem, and it still works reliably. However, [Prowlarr](/apps/prowlarr) has largely replaced it as the recommended option.
+[Jackett](https://github.com/Jackett/Jackett) translates queries from Sonarr, Radarr, and other *arr apps into tracker-specific requests. It was the original solution for connecting private torrent trackers and Usenet indexers to the *arr ecosystem, and it still works reliably. However, [Prowlarr](/apps/prowlarr/) has largely replaced it as the recommended option.
 
 Jackett supports over 700 trackers and indexers, which is its main advantage -- if you use a niche tracker that Prowlarr does not yet support, Jackett probably does. Configuration involves adding trackers in Jackett's web UI, then copy-pasting the Torznab feed URL and API key into each *arr app that needs it.
 
@@ -237,11 +237,11 @@ That manual URL and API key process is exactly why Prowlarr is preferred. Prowla
 - Prowlarr does the same job with better integration
 - No automatic sync with *arr apps
 
-**Best for:** Users with niche trackers not yet supported by Prowlarr. For everyone else, use [Prowlarr](/apps/prowlarr) instead.
+**Best for:** Users with niche trackers not yet supported by Prowlarr. For everyone else, use [Prowlarr](/apps/prowlarr/) instead.
 
 **Resources:** ~256-512 MB RAM (JVM-based), low CPU, minimal disk.
 
-[Read our full guide: How to Self-Host Jackett](/apps/jackett)
+[Read our full guide: How to Self-Host Jackett](/apps/jackett/)
 
 ## Full Comparison Table
 
@@ -307,7 +307,7 @@ The *arr stack is a collection of applications that work together to automate me
 
 4. **Bazarr** monitors the media library. When new files appear, it searches subtitle providers and downloads matching subtitles.
 
-5. Optionally, a media server like [Jellyfin](/apps/jellyfin) or Plex scans the same library to serve content to your devices.
+5. Optionally, a media server like [Jellyfin](/apps/jellyfin/) or Plex scans the same library to serve content to your devices.
 
 ### Shared Volume Paths Are Critical
 
@@ -357,15 +357,15 @@ All tools were tested with Docker Compose using LinuxServer.io images where avai
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Transmission](/apps/transmission)
-- [How to Self-Host Bazarr](/apps/bazarr)
-- [How to Self-Host Jackett](/apps/jackett)
-- [Sonarr vs Radarr: Which Do You Need?](/compare/sonarr-vs-radarr)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Transmission](/apps/transmission/)
+- [How to Self-Host Bazarr](/apps/bazarr/)
+- [How to Self-Host Jackett](/apps/jackett/)
+- [Sonarr vs Radarr: Which Do You Need?](/compare/sonarr-vs-radarr/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

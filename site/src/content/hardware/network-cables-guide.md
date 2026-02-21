@@ -144,9 +144,9 @@ Yes. Shielded cable without proper grounding is worse than unshielded cable — 
 
 ## Related
 
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [PoE Explained](/hardware/poe-explained)
-- [10GbE Networking Guide](/hardware/10gbe-networking)
-- [Home Server Rack Setup](/hardware/home-server-rack)
-- [Best Access Points for Homelab](/hardware/best-access-points)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [PoE Explained](/hardware/poe-explained/)
+- [10GbE Networking Guide](/hardware/10gbe-networking/)
+- [Home Server Rack Setup](/hardware/home-server-rack/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)

@@ -359,14 +359,14 @@ Nginx. Its error log format is straightforward, and you can test configs with `n
 
 **HAProxy is the right choice if load balancing is your primary need.** Its health checking is genuinely superior — you can check HTTP status codes, response bodies, and gradually drain servers. Its stick-tables provide session persistence and rate limiting without external dependencies. Its free stats page gives you real-time visibility that Nginx locks behind a paid tier.
 
-For a typical homelab running 5-30 services behind a reverse proxy, Nginx (or better yet, [Caddy](/apps/caddy) or [Nginx Proxy Manager](/apps/nginx-proxy-manager)) gets you there faster. Reach for HAProxy when you are running multiple replicas of a service and need intelligent traffic distribution.
+For a typical homelab running 5-30 services behind a reverse proxy, Nginx (or better yet, [Caddy](/apps/caddy/) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/)) gets you there faster. Reach for HAProxy when you are running multiple replicas of a service and need intelligent traffic distribution.
 
 ## Related
 
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

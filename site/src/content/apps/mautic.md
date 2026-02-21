@@ -24,12 +24,12 @@ affiliateDisclosure: false
 
 [Mautic](https://www.mautic.org/) is a self-hosted marketing automation platform. It handles email campaigns, contact management, lead scoring, landing pages, dynamic content, forms, and CRM integrations. It's the self-hosted answer to HubSpot, ActiveCampaign, and Marketo — running on your server with unlimited contacts and zero per-subscriber fees.
 
-Mautic is GPL-3.0 licensed, backed by a large open-source community, and replaces [Mailchimp](/replace/mailchimp) and more expensive marketing SaaS platforms. If you need more than newsletters — drip campaigns, lead scoring, automation workflows — Mautic is the tool.
+Mautic is GPL-3.0 licensed, backed by a large open-source community, and replaces [Mailchimp](/replace/mailchimp/) and more expensive marketing SaaS platforms. If you need more than newsletters — drip campaigns, lead scoring, automation workflows — Mautic is the tool.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (minimum, 4 GB recommended)
 - 5 GB of free disk space
 - A domain name (required for production use)
@@ -252,7 +252,7 @@ Mautic supports Salesforce, SugarCRM, vTiger, and other CRMs via plugins:
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 mautic.example.com {
@@ -281,7 +281,7 @@ for vol in mautic-config mautic-media-files mautic-media-images; do
 done
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -320,7 +320,7 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 Mautic is the only serious self-hosted marketing automation platform. If you need drip campaigns, lead scoring, landing pages, or CRM integration, nothing else in the self-hosted space comes close. The trade-off is complexity — four containers, PHP stack, careful configuration.
 
-If you only need newsletters, use [Listmonk](/apps/listmonk) instead. It's dramatically simpler and lighter. But if you're replacing HubSpot, ActiveCampaign, or Marketo — Mautic is the tool.
+If you only need newsletters, use [Listmonk](/apps/listmonk/) instead. It's dramatically simpler and lighter. But if you're replacing HubSpot, ActiveCampaign, or Marketo — Mautic is the tool.
 
 ## Frequently Asked Questions
 
@@ -335,13 +335,13 @@ Yes. SES is the recommended SMTP relay for cost-effective high-volume sending. C
 
 ## Related
 
-- [Listmonk vs Mautic](/compare/listmonk-vs-mautic)
-- [Mautic vs Mailchimp](/compare/mautic-vs-mailchimp)
-- [How to Self-Host Listmonk](/apps/listmonk)
-- [How to Self-Host Keila](/apps/keila)
-- [Best Self-Hosted Newsletter Software](/best/newsletters)
-- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp)
-- [Self-Hosted Alternatives to ConvertKit](/replace/convertkit)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Listmonk vs Mautic](/compare/listmonk-vs-mautic/)
+- [Mautic vs Mailchimp](/compare/mautic-vs-mailchimp/)
+- [How to Self-Host Listmonk](/apps/listmonk/)
+- [How to Self-Host Keila](/apps/keila/)
+- [Best Self-Hosted Newsletter Software](/best/newsletters/)
+- [Self-Hosted Alternatives to Mailchimp](/replace/mailchimp/)
+- [Self-Hosted Alternatives to ConvertKit](/replace/convertkit/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

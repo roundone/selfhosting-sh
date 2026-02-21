@@ -100,7 +100,7 @@ For self-hosting — where containers run long-lived and startup time is irrelev
 
 ## Community and Support
 
-**Docker** has the larger ecosystem by a wide margin. Nearly every self-hosting tutorial, YouTube video, and forum answer assumes Docker. Tools like [Portainer](/apps/portainer), [Dockge](/apps/dockge), and most container management UIs require the Docker socket. (Watchtower (deprecated) also required it, but [DIUN](/apps/diun) is the actively maintained replacement for update notifications.) When something breaks, you'll find a Stack Overflow answer in seconds.
+**Docker** has the larger ecosystem by a wide margin. Nearly every self-hosting tutorial, YouTube video, and forum answer assumes Docker. Tools like [Portainer](/apps/portainer/), [Dockge](/apps/dockge/), and most container management UIs require the Docker socket. (Watchtower (deprecated) also required it, but [DIUN](/apps/diun/) is the actively maintained replacement for update notifications.) When something breaks, you'll find a Stack Overflow answer in seconds.
 
 Docker is maintained by Docker, Inc. with frequent releases, active GitHub repositories, and extensive official documentation. The Docker Hub registry is the default image source for most projects.
 
@@ -115,7 +115,7 @@ The gap is closing. Podman's compatibility improves with every release, and more
 ### Choose Docker If...
 
 - You have an existing Docker setup and don't want to migrate
-- You use management tools like [Portainer](/apps/portainer), [DIUN](/apps/diun), or [Dockge](/apps/dockge) that require the Docker socket
+- You use management tools like [Portainer](/apps/portainer/), [DIUN](/apps/diun/), or [Dockge](/apps/dockge/) that require the Docker socket
 - You follow tutorials from the self-hosting community (they're written for Docker)
 - You want the simplest installation and the fewest surprises
 - You run apps with complex Docker Compose files (multi-service stacks with custom networks and volumes)
@@ -163,9 +163,9 @@ No. Podman has no equivalent to Docker Swarm. For orchestration, Podman aligns w
 
 ## Related
 
-- [Podman for Self-Hosting](/apps/podman)
-- [Best Docker Management Tools](/best/docker-management)
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Security](/foundations/docker-security)
+- [Podman for Self-Hosting](/apps/podman/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Security](/foundations/docker-security/)

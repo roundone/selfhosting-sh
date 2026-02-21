@@ -122,7 +122,7 @@ Emby has professional development with a smaller but dedicated team. Support qua
 
 Emby is a solid product, and its smart TV app support (Samsung, LG) is genuinely better than Jellyfin's. If you watch primarily on a Samsung or LG TV and want a polished native app, Emby Premiere may be worth the $119 lifetime cost. But for everyone else — especially those who transcode regularly — Jellyfin delivers the same core experience at zero cost.
 
-Both are better than the free tier of [Plex](/apps/plex) for local streaming, since Plex's free tier has increasing restrictions and account requirements.
+Both are better than the free tier of [Plex](/apps/plex/) for local streaming, since Plex's free tier has increasing restrictions and account requirements.
 
 ## FAQ
 
@@ -148,11 +148,11 @@ If you need hardware transcoding, yes — $119 lifetime is reasonable for a feat
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Emby](/apps/emby)
-- [How to Self-Host Plex](/apps/plex)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Emby](/apps/emby/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

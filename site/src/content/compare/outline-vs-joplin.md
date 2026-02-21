@@ -71,14 +71,14 @@ Joplin Server is the sync backend for the Joplin note-taking app. It doesn't hav
 
 This is not a meaningful comparison — use whichever matches your actual need. Team wiki? Outline. Personal encrypted notes? Joplin.
 
-If you want something that works for both personal and team use, look at [BookStack](/apps/bookstack) (team-friendly with simple personal use) or [Docmost](/apps/docmost) (team wiki with simpler auth than Outline).
+If you want something that works for both personal and team use, look at [BookStack](/apps/bookstack/) (team-friendly with simple personal use) or [Docmost](/apps/docmost/) (team wiki with simpler auth than Outline).
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace OneNote](/replace/onenote)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace OneNote](/replace/onenote/)

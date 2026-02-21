@@ -22,8 +22,8 @@ This solves the three biggest problems with traditional port forwarding: you don
 ## Prerequisites
 
 - A domain name with DNS managed by Cloudflare (free tier works)
-- A self-hosted server running Linux ([Getting Started](/foundations/getting-started))
-- Docker installed ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A self-hosted server running Linux ([Getting Started](/foundations/getting-started/))
+- Docker installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - At least one web service running to expose
 
 ## Cloudflare Tunnel vs Alternatives
@@ -40,7 +40,7 @@ This solves the three biggest problems with traditional port forwarding: you don
 | Cost | Free | Free | Free (personal) |
 
 **Use Cloudflare Tunnel for:** Public-facing web services (Nextcloud, Gitea, blogs).
-**Use Tailscale for:** Private access to all services. See [Tailscale Setup](/foundations/tailscale-setup).
+**Use Tailscale for:** Private access to all services. See [Tailscale Setup](/foundations/tailscale-setup/).
 
 ## Setup: Docker Method (Recommended)
 
@@ -282,15 +282,15 @@ Your services become unreachable from the internet. This is the trade-off of rou
 
 ## Next Steps
 
-- [Tailscale Setup](/foundations/tailscale-setup) — private access alternative
-- [Port Forwarding Guide](/foundations/port-forwarding) — direct access comparison
-- [SSL Certificates](/foundations/ssl-certificates) — understand HTTPS
+- [Tailscale Setup](/foundations/tailscale-setup/) — private access alternative
+- [Port Forwarding Guide](/foundations/port-forwarding/) — direct access comparison
+- [SSL Certificates](/foundations/ssl-certificates/) — understand HTTPS
 
 ## Related
 
-- [Port Forwarding for Self-Hosting](/foundations/port-forwarding)
-- [Tailscale Setup](/foundations/tailscale-setup)
-- [DNS Explained](/foundations/dns-explained)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Dynamic DNS Setup](/foundations/dynamic-dns)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Port Forwarding for Self-Hosting](/foundations/port-forwarding/)
+- [Tailscale Setup](/foundations/tailscale-setup/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Dynamic DNS Setup](/foundations/dynamic-dns/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

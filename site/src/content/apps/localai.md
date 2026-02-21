@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 8 GB+ RAM (CPU mode) or NVIDIA GPU with 8+ GB VRAM
 - 20 GB+ free disk space (models are large)
 - NVIDIA Container Toolkit (for GPU mode)
@@ -204,7 +204,7 @@ curl http://localhost:8080/v1/audio/speech \
 
 ## Reverse Proxy
 
-For HTTPS access, configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+For HTTPS access, configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 Nginx Proxy Manager: Create a proxy host pointing to `localai:8080`. Enable WebSocket support for streaming responses.
 
@@ -217,7 +217,7 @@ docker run --rm -v localai_models:/data -v $(pwd):/backup alpine \
   tar czf /backup/localai-models-backup.tar.gz /data
 ```
 
-The models volume contains downloaded models and YAML configurations. Models can be re-downloaded, but custom configs should be backed up. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+The models volume contains downloaded models and YAML configurations. Models can be re-downloaded, but custom configs should be backed up. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -255,17 +255,17 @@ The models volume contains downloaded models and YAML configurations. Models can
 
 ## Verdict
 
-LocalAI is the Swiss Army knife of self-hosted AI. If you need a single service that handles text generation, image generation, audio transcription, and text-to-speech — all behind an OpenAI-compatible API — LocalAI is the only option that does it all. The trade-off is more complex setup compared to [Ollama](/apps/ollama), which only does LLM inference but does it with less friction.
+LocalAI is the Swiss Army knife of self-hosted AI. If you need a single service that handles text generation, image generation, audio transcription, and text-to-speech — all behind an OpenAI-compatible API — LocalAI is the only option that does it all. The trade-off is more complex setup compared to [Ollama](/apps/ollama/), which only does LLM inference but does it with less friction.
 
-**Choose LocalAI** if you're migrating an application from the OpenAI API to self-hosted, or if you need multi-modal AI (text + images + audio) from one endpoint. **Choose [Ollama](/apps/ollama)** if you only need LLM inference and want the simplest setup.
+**Choose LocalAI** if you're migrating an application from the OpenAI API to self-hosted, or if you need multi-modal AI (text + images + audio) from one endpoint. **Choose [Ollama](/apps/ollama/)** if you only need LLM inference and want the simplest setup.
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Self-Hosted Midjourney Alternatives](/replace/midjourney)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Self-Hosted Midjourney Alternatives](/replace/midjourney/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

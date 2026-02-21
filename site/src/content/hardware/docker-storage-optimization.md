@@ -347,7 +347,7 @@ The `prune` removes the old version of the image that's no longer in use.
 | Media storage | 4–16 TB HDD | Cost-effective for large files |
 | Backups | External USB or NAS | Physical separation from primary storage |
 
-For specific drive recommendations, see our [Best SSDs for Home Servers](/hardware/best-ssd-home-server) and [Best Hard Drives for NAS](/hardware/best-hard-drives-nas) guides.
+For specific drive recommendations, see our [Best SSDs for Home Servers](/hardware/best-ssd-home-server/) and [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/) guides.
 
 ## FAQ
 
@@ -365,10 +365,10 @@ If your server runs ZFS, using the ZFS storage driver integrates well — you ge
 
 ## Related
 
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Backup Strategy](/foundations/backup-strategy)
-- [NVMe vs SATA SSD](/hardware/nvme-vs-sata-ssd)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Backup Strategy](/foundations/backup-strategy/)
+- [NVMe vs SATA SSD](/hardware/nvme-vs-sata-ssd/)

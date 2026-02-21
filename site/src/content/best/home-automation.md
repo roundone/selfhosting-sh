@@ -57,7 +57,7 @@ The Lovelace dashboard system is highly customizable. The automation engine supp
 
 **Best for:** Everyone. Beginners, enthusiasts, and power users. The integration breadth and community support make it the safest choice.
 
-[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant)]
+[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant/)]
 
 ### 2. openHAB — Best for Protocol Diversity
 
@@ -80,7 +80,7 @@ openHAB is the second most mature open-source home automation platform. Its stre
 
 **Best for:** Users with diverse protocol needs, especially industrial or niche hardware (KNX installations, Modbus sensors, EnOcean switches).
 
-[Read our full guide: [How to Self-Host openHAB](/apps/openhab)]
+[Read our full guide: [How to Self-Host openHAB](/apps/openhab/)]
 
 ### 3. ioBroker — Best for JavaScript Developers
 
@@ -103,7 +103,7 @@ ioBroker is a Node.js-based home automation platform popular in the German-speak
 
 **Best for:** JavaScript/TypeScript developers, users in German-speaking regions, and those who want adapter isolation for stability.
 
-[Read our full guide: [How to Self-Host ioBroker](/apps/iobroker)]
+[Read our full guide: [How to Self-Host ioBroker](/apps/iobroker/)]
 
 ### 4. Gladys Assistant — Best for Privacy
 
@@ -126,7 +126,7 @@ Gladys Assistant takes a privacy-first approach that goes beyond other platforms
 
 **Best for:** Privacy-focused users with a small number of devices using supported protocols (Zigbee, Z-Wave, MQTT, Hue).
 
-[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant)]
+[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)]
 
 ### 5. Domoticz — Best Lightweight
 
@@ -150,7 +150,7 @@ Domoticz is the lightest home automation platform available. Written in C++, it 
 
 **Best for:** Ultra-lightweight deployments, 433 MHz RF setups, Raspberry Pi Zero users, simple monitoring setups.
 
-[Read our full guide: [How to Self-Host Domoticz](/apps/domoticz)]
+[Read our full guide: [How to Self-Host Domoticz](/apps/domoticz/)]
 
 ## Full Comparison Table
 
@@ -179,16 +179,16 @@ We evaluated each platform on: integration count and breadth, installation compl
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host ioBroker](/apps/iobroker)
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [Home Assistant vs Gladys Assistant](/compare/home-assistant-vs-gladys)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Replace Google Home](/replace/google-home)
-- [Replace Amazon Alexa](/replace/amazon-alexa)
-- [Replace Apple HomeKit](/replace/apple-homekit)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host ioBroker](/apps/iobroker/)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [Home Assistant vs Gladys Assistant](/compare/home-assistant-vs-gladys/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Replace Google Home](/replace/google-home/)
+- [Replace Amazon Alexa](/replace/amazon-alexa/)
+- [Replace Apple HomeKit](/replace/apple-homekit/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

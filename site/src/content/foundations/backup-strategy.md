@@ -29,7 +29,7 @@ Every backup strategy starts with the 3-2-1 rule:
 | **2 media types** | Store backups on different physical media (SSD + HDD, local + cloud) | A power surge that kills your SSD won't touch your HDD in a different machine. |
 | **1 offsite** | At least one backup physically away from your server | A fire, flood, or theft takes out everything in one location. |
 
-For a deeper dive into implementing the 3-2-1 rule with specific examples, see [The 3-2-1 Backup Rule Explained](/foundations/backup-3-2-1-rule).
+For a deeper dive into implementing the 3-2-1 rule with specific examples, see [The 3-2-1 Backup Rule Explained](/foundations/backup-3-2-1-rule/).
 
 ## What to Back Up
 
@@ -47,7 +47,7 @@ Not everything on your server needs the same backup treatment.
 
 **Rule of thumb:** If losing it would cost you more than 30 minutes to recreate, back it up. If losing it would be permanent (photos, personal data), back it up with the highest priority.
 
-For Docker-specific backup procedures (named volumes, bind mounts, database dumps), see [Backing Up Docker Volumes](/foundations/backup-docker-volumes).
+For Docker-specific backup procedures (named volumes, bind mounts, database dumps), see [Backing Up Docker Volumes](/foundations/backup-docker-volumes/).
 
 ## Backup Tools Compared
 
@@ -220,10 +220,10 @@ A backup that silently fails is worse than no backup — it gives you false conf
 
 | Monitoring Method | Tool | How |
 |------------------|------|-----|
-| Heartbeat monitoring | [Uptime Kuma](/apps/uptime-kuma), [Healthchecks.io](/apps/healthchecks) | Backup script pings a URL on success. Alert if no ping received. |
+| Heartbeat monitoring | [Uptime Kuma](/apps/uptime-kuma/), [Healthchecks.io](/apps/healthchecks/) | Backup script pings a URL on success. Alert if no ping received. |
 | Systemd timer status | `systemctl list-timers` | Check that backup timer last triggered recently |
 | Backup age check | Custom script | Alert if newest snapshot is older than 48 hours |
-| Disk space monitoring | [Netdata](/apps/netdata), [Beszel](/apps/beszel) | Alert if backup volume drops below 20% free |
+| Disk space monitoring | [Netdata](/apps/netdata/), [Beszel](/apps/beszel/) | Alert if backup volume drops below 20% free |
 
 ### Healthchecks Integration
 
@@ -251,22 +251,22 @@ curl -fsS "http://uptime-kuma:3001/api/push/YOUR-TOKEN?status=up&msg=OK" > /dev/
 
 ## Next Steps
 
-1. **Pick a tool.** [Restic](/apps/restic) for most people. [Kopia](/apps/kopia) if you want a web UI.
+1. **Pick a tool.** [Restic](/apps/restic/) for most people. [Kopia](/apps/kopia/) if you want a web UI.
 2. **Set up local backup.** Get a working backup to a local HDD or NAS first.
 3. **Add offsite.** Configure Backblaze B2 or another cloud backend as your second target.
 4. **Automate.** Set up systemd timers so backups run without you thinking about it.
-5. **Monitor.** Integrate with [Uptime Kuma](/apps/uptime-kuma) or similar to alert on failures.
+5. **Monitor.** Integrate with [Uptime Kuma](/apps/uptime-kuma/) or similar to alert on failures.
 6. **Test.** Restore from backup at least once a month to verify it works.
 
 ## Related
 
-- [The 3-2-1 Backup Rule Explained](/foundations/backup-3-2-1-rule)
-- [Backing Up Docker Volumes](/foundations/backup-docker-volumes)
-- [Best Self-Hosted Backup Tools](/best/backup)
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host Kopia](/apps/kopia)
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Security Hardening](/foundations/security-hardening)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [The 3-2-1 Backup Rule Explained](/foundations/backup-3-2-1-rule/)
+- [Backing Up Docker Volumes](/foundations/backup-docker-volumes/)
+- [Best Self-Hosted Backup Tools](/best/backup/)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host Kopia](/apps/kopia/)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Security Hardening](/foundations/security-hardening/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

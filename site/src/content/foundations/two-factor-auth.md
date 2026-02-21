@@ -31,7 +31,7 @@ For self-hosters, 2FA is critical. Your self-hosted apps often contain sensitive
 
 - A self-hosted application with 2FA support
 - An authenticator app (Aegis, 2FAS, or your password manager's TOTP feature)
-- Basic understanding of [security for self-hosting](/foundations/firewall-ufw)
+- Basic understanding of [security for self-hosting](/foundations/firewall-ufw/)
 
 ## Types of 2FA
 
@@ -125,7 +125,7 @@ Vaultwarden supports TOTP, WebAuthn, and Duo push notifications.
 5. Enter the verification code
 6. **Save your recovery code** — this is your only way back if you lose your authenticator
 
-[Full guide: How to Self-Host Vaultwarden](/apps/vaultwarden)
+[Full guide: How to Self-Host Vaultwarden](/apps/vaultwarden/)
 
 ### Authelia
 
@@ -142,7 +142,7 @@ access_control:
 
 Users register their TOTP device on first login. Authelia also supports WebAuthn for hardware keys.
 
-[Full guide: How to Self-Host Authelia](/apps/authelia)
+[Full guide: How to Self-Host Authelia](/apps/authelia/)
 
 ### Nextcloud
 
@@ -169,7 +169,7 @@ Users register their TOTP device on first login. Authelia also supports WebAuthn
 
 Many self-hosted apps have no authentication at all, let alone 2FA. Use Authelia or Authentik as an authentication proxy:
 
-1. Deploy [Authelia](/apps/authelia) behind your reverse proxy
+1. Deploy [Authelia](/apps/authelia/) behind your reverse proxy
 2. Configure forward authentication in your proxy (Traefik, Nginx, Caddy)
 3. Set the policy to `two_factor` for sensitive apps
 4. Every app behind the proxy now requires login + 2FA, even if the app itself has no auth
@@ -224,18 +224,18 @@ Your reverse proxy admin panel (Nginx Proxy Manager, Traefik dashboard) and Dock
 
 ## Next Steps
 
-- Set up Authelia for centralized 2FA: [How to Self-Host Authelia](/apps/authelia)
-- Store your passwords securely: [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- Harden your server: [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Secure SSH access: [SSH Setup Guide](/foundations/ssh-setup)
+- Set up Authelia for centralized 2FA: [How to Self-Host Authelia](/apps/authelia/)
+- Store your passwords securely: [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- Harden your server: [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Secure SSH access: [SSH Setup Guide](/foundations/ssh-setup/)
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Authelia](/apps/authelia)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [SSL Certificates Guide](/foundations/ssl-certificates)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [SSL Certificates Guide](/foundations/ssl-certificates/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

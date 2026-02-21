@@ -221,9 +221,9 @@ No special requirements. PoE cables are standard Ethernet cables carrying up to 
 
 ## Related
 
-- [Home Server Rack Setup Guide](/hardware/home-server-rack)
-- [Best Server Cases for Homelab](/hardware/server-case-guide)
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [Network Cables for Home Servers](/hardware/network-cables-guide)
-- [Homelab Network Topology Guide](/hardware/homelab-network-topology)
-- [PoE Explained for Home Servers](/hardware/poe-explained)
+- [Home Server Rack Setup Guide](/hardware/home-server-rack/)
+- [Best Server Cases for Homelab](/hardware/server-case-guide/)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [Network Cables for Home Servers](/hardware/network-cables-guide/)
+- [Homelab Network Topology Guide](/hardware/homelab-network-topology/)
+- [PoE Explained for Home Servers](/hardware/poe-explained/)

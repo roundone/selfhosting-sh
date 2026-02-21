@@ -166,9 +166,9 @@ HAProxy has a Runtime API for updating servers, weights, and states without rest
 
 ## Related
 
-- [How to Self-Host HAProxy](/apps/haproxy)
-- [How to Self-Host Envoy Proxy](/apps/envoy)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host HAProxy](/apps/haproxy/)
+- [How to Self-Host Envoy Proxy](/apps/envoy/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

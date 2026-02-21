@@ -62,7 +62,7 @@ The one friction point: Outline requires an external authentication provider (OI
 
 **Best for:** Teams with an identity provider that want a Notion-like documentation experience.
 
-[Read our full guide: [How to Self-Host Outline](/apps/outline)]
+[Read our full guide: [How to Self-Host Outline](/apps/outline/)]
 
 ### 2. BookStack — Best Simple Wiki
 
@@ -82,7 +82,7 @@ BookStack is the easiest wiki to set up and use. Shelves → Books → Chapters 
 
 **Best for:** Small to medium teams wanting a well-organized wiki without complexity.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### 3. Wiki.js — Best for Developer Documentation
 
@@ -102,7 +102,7 @@ Wiki.js stands out with Git-based content sync — all pages push to a Git repos
 
 **Best for:** Technical teams that want Git-integrated documentation with diagram support.
 
-[Read our full guide: [How to Self-Host Wiki.js](/apps/wiki-js)]
+[Read our full guide: [How to Self-Host Wiki.js](/apps/wiki-js/)]
 
 ### 4. Trilium Notes — Best Personal Knowledge Base
 
@@ -123,7 +123,7 @@ Trilium is the most powerful personal knowledge management tool. Hierarchical no
 
 **Best for:** Individuals building interconnected personal knowledge bases.
 
-[Read our full guide: [How to Self-Host Trilium Notes](/apps/trilium)]
+[Read our full guide: [How to Self-Host Trilium Notes](/apps/trilium/)]
 
 ### 5. Joplin Server — Best for Note Sync
 
@@ -144,7 +144,7 @@ Joplin Server is the best self-hosted option for syncing notes across devices. T
 
 **Best for:** Individuals and families who want Markdown notes synced across all devices with E2EE.
 
-[Read our full guide: [How to Self-Host Joplin Server](/apps/joplin-server)]
+[Read our full guide: [How to Self-Host Joplin Server](/apps/joplin-server/)]
 
 ### 6. SiYuan — Best Block Editor
 
@@ -166,7 +166,7 @@ SiYuan offers the most powerful WYSIWYG block editor in the self-hosted space. B
 
 **Best for:** Users who want Obsidian-like features with a WYSIWYG editor.
 
-[Read our full guide: [How to Self-Host SiYuan](/apps/siyuan)]
+[Read our full guide: [How to Self-Host SiYuan](/apps/siyuan/)]
 
 ### 7. Obsidian + LiveSync — Best for Obsidian Users
 
@@ -186,7 +186,7 @@ If you're already using Obsidian (or plan to), self-hosted sync via CouchDB + th
 
 **Best for:** Existing or prospective Obsidian users who want self-hosted sync.
 
-[Read our full guide: [How to Self-Host Obsidian Sync](/apps/obsidian-livesync)]
+[Read our full guide: [How to Self-Host Obsidian Sync](/apps/obsidian-livesync/)]
 
 ### 8. AppFlowy — Best Full Notion Clone
 
@@ -206,7 +206,7 @@ AppFlowy covers the widest range of Notion features: documents, databases (table
 
 **Best for:** Teams that need Notion's database features (kanban, calendar, tables) self-hosted.
 
-[Read our full guide: [How to Self-Host AppFlowy](/apps/appflowy)]
+[Read our full guide: [How to Self-Host AppFlowy](/apps/appflowy/)]
 
 ### 9. AFFiNE — Best for Visual Thinkers
 
@@ -226,7 +226,7 @@ AFFiNE uniquely combines documents and whiteboards. Any page can switch between 
 
 **Best for:** Visual thinkers who want documents and whiteboards together, willing to tolerate beta software.
 
-[Read our full guide: [How to Self-Host AFFiNE](/apps/affine)]
+[Read our full guide: [How to Self-Host AFFiNE](/apps/affine/)]
 
 ## Full Comparison Table
 
@@ -249,23 +249,23 @@ We evaluated each app on: editing experience, collaboration features, organizati
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [How to Self-Host Obsidian Sync](/apps/obsidian-livesync)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [How to Self-Host AFFiNE](/apps/affine)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [Replace Notion](/replace/notion)
-- [Replace Evernote](/replace/evernote)
-- [Replace OneNote](/replace/onenote)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [How to Self-Host Obsidian Sync](/apps/obsidian-livesync/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [How to Self-Host AFFiNE](/apps/affine/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [Replace Notion](/replace/notion/)
+- [Replace Evernote](/replace/evernote/)
+- [Replace OneNote](/replace/onenote/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -127,10 +127,10 @@ Directus's community is smaller but highly engaged, and the documentation is tho
 
 ## Related
 
-- [How to Self-Host Directus](/apps/directus)
-- [How to Self-Host Strapi](/apps/strapi)
-- [How to Self-Host Ghost](/apps/ghost)
-- [How to Self-Host WordPress](/apps/wordpress)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Best Self-Hosted CMS](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Directus](/apps/directus/)
+- [How to Self-Host Strapi](/apps/strapi/)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Best Self-Hosted CMS](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -42,7 +42,7 @@ Power over Ethernet (PoE) delivers electrical power and data over the same Ether
 | Ubiquiti UniFi AP | 10-13W | PoE or PoE+ (varies by model) |
 | Small switch (PoE-powered) | 5-10W | PoE |
 
-**PoE cannot power:** Full-size servers, NAS devices, desktop PCs, or anything drawing more than 90W. Your [mini PC](/hardware/best-mini-pc) and NAS still need regular power adapters.
+**PoE cannot power:** Full-size servers, NAS devices, desktop PCs, or anything drawing more than 90W. Your [mini PC](/hardware/best-mini-pc/) and NAS still need regular power adapters.
 
 ## Do You Need PoE?
 
@@ -107,8 +107,8 @@ The PoE switch itself draws 5-15W. Plus the power delivered to PoE devices (whic
 
 ## Related
 
-- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

@@ -23,12 +23,12 @@ affiliateDisclosure: false
 
 ## What Is Stalwart?
 
-Stalwart is a modern, all-in-one mail server written in Rust. It supports JMAP, IMAP, POP3, and SMTP in a single binary with a built-in web admin UI, spam filtering, full-text search, and encryption at rest. Unlike [Mailu](/apps/mailu) or [Mailcow](/apps/mailcow), Stalwart needs no external database, no Redis, and no separate components — everything runs in one container with embedded RocksDB storage. It also includes CalDAV and CardDAV support. [Official site](https://stalw.art/).
+Stalwart is a modern, all-in-one mail server written in Rust. It supports JMAP, IMAP, POP3, and SMTP in a single binary with a built-in web admin UI, spam filtering, full-text search, and encryption at rest. Unlike [Mailu](/apps/mailu/) or [Mailcow](/apps/mailcow/), Stalwart needs no external database, no Redis, and no separate components — everything runs in one container with embedded RocksDB storage. It also includes CalDAV and CardDAV support. [Official site](https://stalw.art/).
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum (2 GB recommended)
 - 10 GB of free disk space
 - A domain name with DNS access
@@ -186,7 +186,7 @@ ports:
   - "127.0.0.1:8080:8080"  # Through reverse proxy — Web Admin
 ```
 
-Then proxy `https://mail.example.com` to `http://localhost:8080` in your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)).
+Then proxy `https://mail.example.com` to `http://localhost:8080` in your reverse proxy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)).
 
 ## Backup
 
@@ -198,7 +198,7 @@ docker run --rm -v stalwart-data:/data -v $(pwd):/backup alpine \
   tar czf /backup/stalwart-backup-$(date +%Y%m%d).tar.gz /data
 ```
 
-This includes configuration, the RocksDB database, mail blobs, full-text search indexes, TLS certificates, and Sieve scripts. See [Backup Strategy](/foundations/backup-strategy).
+This includes configuration, the RocksDB database, mail blobs, full-text search indexes, TLS certificates, and Sieve scripts. See [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -243,18 +243,18 @@ Stalwart is the lightest full-featured mail server available. It uses a fraction
 
 Stalwart is the most modern and resource-efficient self-hosted mail server available. The single-binary Rust architecture means no juggling PostgreSQL, Redis, and multiple containers — everything runs in one container with one volume. The built-in web admin, JMAP support, CalDAV/CardDAV, and spam filtering make it genuinely competitive with commercial solutions.
 
-Choose Stalwart if you want a modern mail server that's easy to deploy and light on resources. Choose [Mailcow](/apps/mailcow) if you want a more established solution with a larger community. Choose [docker-mailserver](/apps/docker-mailserver) if you prefer CLI-only management without a web UI.
+Choose Stalwart if you want a modern mail server that's easy to deploy and light on resources. Choose [Mailcow](/apps/mailcow/) if you want a more established solution with a larger community. Choose [docker-mailserver](/apps/docker-mailserver/) if you prefer CLI-only management without a web UI.
 
 Fair warning: Stalwart is newer than Mailu and Mailcow, so the community is smaller and you'll find fewer guides online. But development is very active and the architecture is sound.
 
 ## Related
 
-- [How to Self-Host Mailu](/apps/mailu)
-- [How to Self-Host Mailcow](/apps/mailcow)
-- [How to Self-Host docker-mailserver](/apps/docker-mailserver)
-- [Mailu vs Mailcow](/compare/mailu-vs-mailcow)
-- [Best Self-Hosted Email Servers](/best/email)
-- [Self-Hosted Alternatives to Gmail](/replace/gmail)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Mailu](/apps/mailu/)
+- [How to Self-Host Mailcow](/apps/mailcow/)
+- [How to Self-Host docker-mailserver](/apps/docker-mailserver/)
+- [Mailu vs Mailcow](/compare/mailu-vs-mailcow/)
+- [Best Self-Hosted Email Servers](/best/email/)
+- [Self-Hosted Alternatives to Gmail](/replace/gmail/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

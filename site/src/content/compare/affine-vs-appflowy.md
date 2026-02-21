@@ -90,13 +90,13 @@ AFFiNE has strong momentum (35,000+ GitHub stars) and an active team, but the pr
 
 ## Final Verdict
 
-Neither is fully production-ready for team use, but AppFlowy is closer. Its database features are more mature, the desktop app is more polished, and the project has more community momentum. AFFiNE's whiteboard integration is genuinely unique — no other Notion alternative offers infinite canvas editing alongside structured documents — but the self-hosted version needs more time to stabilize. For personal use or small teams willing to tolerate rough edges, either works. For anything approaching production, consider [Outline](/apps/outline) or [BookStack](/apps/bookstack) instead.
+Neither is fully production-ready for team use, but AppFlowy is closer. Its database features are more mature, the desktop app is more polished, and the project has more community momentum. AFFiNE's whiteboard integration is genuinely unique — no other Notion alternative offers infinite canvas editing alongside structured documents — but the self-hosted version needs more time to stabilize. For personal use or small teams willing to tolerate rough edges, either works. For anything approaching production, consider [Outline](/apps/outline/) or [BookStack](/apps/bookstack/) instead.
 
 ## FAQ
 
 ### Are either of these ready for production team use?
 
-Not fully. Both are pre-1.0 on the server side. AppFlowy's desktop app is usable for personal productivity. For team knowledge bases, [Outline](/apps/outline) and [BookStack](/apps/bookstack) are more battle-tested.
+Not fully. Both are pre-1.0 on the server side. AppFlowy's desktop app is usable for personal productivity. For team knowledge bases, [Outline](/apps/outline/) and [BookStack](/apps/bookstack/) are more battle-tested.
 
 ### Can I use both without self-hosting the server?
 
@@ -108,10 +108,10 @@ Both support Markdown import from Notion exports, but neither preserves Notion d
 
 ## Related
 
-- [How to Self-Host AFFiNE](/apps/affine)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [AppFlowy vs Outline](/compare/appflowy-vs-outline)
-- [Outline vs AFFiNE](/compare/outline-vs-affine)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Notion Alternatives](/replace/notion)
-- [Self-Hosted Evernote Alternatives](/replace/evernote)
+- [How to Self-Host AFFiNE](/apps/affine/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [AppFlowy vs Outline](/compare/appflowy-vs-outline/)
+- [Outline vs AFFiNE](/compare/outline-vs-affine/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Notion Alternatives](/replace/notion/)
+- [Self-Hosted Evernote Alternatives](/replace/evernote/)

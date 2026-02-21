@@ -57,9 +57,9 @@ A USB DAS enclosure is a simple, cheap backup target. Plug it in, run your backu
 ### Multi-Device Access
 
 The moment you need two or more machines to access the same files, you need a NAS. This includes:
-- [Plex](/apps/plex) or [Jellyfin](/apps/jellyfin) media library shared across devices
-- [Nextcloud](/apps/nextcloud) storage backend
-- Shared family photo storage with [Immich](/apps/immich)
+- [Plex](/apps/plex/) or [Jellyfin](/apps/jellyfin/) media library shared across devices
+- [Nextcloud](/apps/nextcloud/) storage backend
+- Shared family photo storage with [Immich](/apps/immich/)
 - Development files accessed from multiple workstations
 
 ### Running Self-Hosted Apps
@@ -72,7 +72,7 @@ NAS platforms have mature RAID, snapshot, and replication features. Synology's S
 
 ### Remote Access
 
-NAS devices are network-accessible by design. Pair with [Tailscale](/apps/tailscale) or [Cloudflare Tunnel](/apps/cloudflare-tunnel) and your files are available from anywhere.
+NAS devices are network-accessible by design. Pair with [Tailscale](/apps/tailscale/) or [Cloudflare Tunnel](/apps/cloudflare-tunnel/) and your files are available from anywhere.
 
 ## DAS Options
 
@@ -104,10 +104,10 @@ NAS devices are network-accessible by design. Pair with [Tailscale](/apps/tailsc
 
 | Platform | Type | Price Range | Best For |
 |----------|------|-------------|----------|
-| [Synology](/hardware/synology-vs-truenas) | Prebuilt appliance | $300-2,000+ | Beginners, polished UI |
-| [TrueNAS](/hardware/synology-vs-truenas) | Software (free) | $0 + hardware | ZFS power users, enterprise features |
-| [Unraid](/hardware/truenas-vs-unraid) | Software ($59-129) | License + hardware | Mixed drive sizes, Docker/VMs |
-| [DIY NAS](/hardware/diy-nas-build) | Custom build | $200-800 | Maximum flexibility, budget control |
+| [Synology](/hardware/synology-vs-truenas/) | Prebuilt appliance | $300-2,000+ | Beginners, polished UI |
+| [TrueNAS](/hardware/synology-vs-truenas/) | Software (free) | $0 + hardware | ZFS power users, enterprise features |
+| [Unraid](/hardware/truenas-vs-unraid/) | Software ($59-129) | License + hardware | Mixed drive sizes, Docker/VMs |
+| [DIY NAS](/hardware/diy-nas-build/) | Custom build | $200-800 | Maximum flexibility, budget control |
 
 ## Performance Comparison
 
@@ -155,7 +155,7 @@ This gives you the best of both worlds: shared network access where you need it,
 
 ### Can I turn a DAS into a NAS?
 
-Sort of. Connect a DAS to a [Raspberry Pi](/hardware/raspberry-pi-home-server) or mini PC, install TrueNAS or OpenMediaVault, and share the storage over the network. It works, but you lose the simplicity advantage of DAS and the integrated management of a purpose-built NAS.
+Sort of. Connect a DAS to a [Raspberry Pi](/hardware/raspberry-pi-home-server/) or mini PC, install TrueNAS or OpenMediaVault, and share the storage over the network. It works, but you lose the simplicity advantage of DAS and the integrated management of a purpose-built NAS.
 
 ### Is a USB DAS reliable for 24/7 use?
 
@@ -171,11 +171,11 @@ SAS (Serial Attached SCSI) DAS enclosures like the Dell MD1200 are available che
 
 ## Related
 
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [10GbE Networking for Home Servers](/hardware/10gbe-networking)
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [10GbE Networking for Home Servers](/hardware/10gbe-networking/)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

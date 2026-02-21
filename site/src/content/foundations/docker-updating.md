@@ -21,9 +21,9 @@ Docker containers freeze software at a specific version. This is great for stabi
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes))
-- Working backups ([3-2-1 Backup Rule](/foundations/backup-3-2-1-rule))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes/))
+- Working backups ([3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/))
 
 ## Manual Update Process
 
@@ -121,7 +121,7 @@ docker compose up -d
 
 ## Automated Updates with Watchtower
 
-> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. For new setups, use [DIUN](/apps/diun) (notify-only, never touches containers) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval). The configuration below is kept for reference.
+> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. For new setups, use [DIUN](/apps/diun/) (notify-only, never touches containers) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval). The configuration below is kept for reference.
 
 Watchtower monitors your containers and automatically updates them when new images are available.
 
@@ -289,7 +289,7 @@ docker system prune -a
 docker system df
 ```
 
-Schedule cleanup weekly ([Cron Jobs](/foundations/linux-cron-jobs)):
+Schedule cleanup weekly ([Cron Jobs](/foundations/linux-cron-jobs/)):
 
 ```bash
 # Weekly cleanup (Sunday at 3 AM)
@@ -326,7 +326,7 @@ Check for updates weekly. Apply security patches immediately. Apply feature upda
 
 ### Is Watchtower safe to use?
 
-Watchtower is now deprecated — the `containrrr/watchtower` repository has been archived and will not receive further updates or security patches. If you have an existing installation, it will continue to function, but for new setups use [DIUN](/apps/diun) for update notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) for managed updates. Never auto-update databases regardless of the tool you use.
+Watchtower is now deprecated — the `containrrr/watchtower` repository has been archived and will not receive further updates or security patches. If you have an existing installation, it will continue to function, but for new setups use [DIUN](/apps/diun/) for update notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) for managed updates. Never auto-update databases regardless of the tool you use.
 
 ### What if I'm many versions behind?
 
@@ -342,15 +342,15 @@ Yes. `docker compose up -d nextcloud` recreates only the nextcloud service. Othe
 
 ## Next Steps
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — understand Compose file structure
-- [Docker Volumes](/foundations/docker-volumes) — how data persists across updates
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) — protect your data
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — understand Compose file structure
+- [Docker Volumes](/foundations/docker-volumes/) — how data persists across updates
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) — protect your data
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Linux Cron Jobs](/foundations/linux-cron-jobs)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Linux Cron Jobs](/foundations/linux-cron-jobs/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

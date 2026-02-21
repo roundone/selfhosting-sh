@@ -62,7 +62,7 @@ Continuously runs on battery while charging. Zero switchover time. Expensive and
 | Runtime (30W mini PC + switch) | ~15 minutes |
 | Price | ~$65 |
 
-**Best for:** A single [N100 mini PC](/hardware/best-mini-pc) drawing 6-15W idle. 45+ minutes of runtime gives you plenty of time for automatic shutdown.
+**Best for:** A single [N100 mini PC](/hardware/best-mini-pc/) drawing 6-15W idle. 45+ minutes of runtime gives you plenty of time for automatic shutdown.
 
 ### 2. CyberPower CP1000PFCLCD — Best for Mini PC + NAS
 
@@ -257,8 +257,8 @@ Yes, if you want network access during power outages. Your server being online i
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

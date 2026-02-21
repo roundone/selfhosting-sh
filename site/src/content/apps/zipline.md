@@ -29,7 +29,7 @@ Built with Next.js and PostgreSQL, Zipline offers a modern dashboard with user m
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum)
 - Disk space for uploaded files (or S3 storage)
 - A domain name (recommended for shareable URLs)
@@ -184,7 +184,7 @@ Zipline supports custom themes. Place theme files in the `./themes` directory an
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 zipline.example.com {
@@ -192,7 +192,7 @@ zipline.example.com {
 }
 ```
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager), create a proxy host pointing to `localhost:3000` with SSL. Increase the upload size limit if you handle large files:
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/), create a proxy host pointing to `localhost:3000` with SSL. Increase the upload size limit if you handle large files:
 
 ```nginx
 client_max_body_size 100m;
@@ -214,7 +214,7 @@ docker exec zipline-db pg_dump -U zipline zipline > zipline_backup_$(date +%Y%m%
 tar czf zipline-uploads-$(date +%Y%m%d).tar.gz ./uploads
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -253,7 +253,7 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 Zipline is the best self-hosted ShareX server available. The feature set is comprehensive — file hosting, URL shortener, paste bin, multi-user support, S3 storage, embed metadata — all in a modern, well-maintained package. If you use ShareX (or Flameshot on Linux), Zipline is the obvious server-side companion.
 
-For simpler needs (just upload and share, no dashboard), consider [XBackBone](/apps/xbackbone). For ephemeral, encrypted file sharing via links, use [Send](/apps/send). For AirDrop-style local transfers, use [PairDrop](/apps/pairdrop).
+For simpler needs (just upload and share, no dashboard), consider [XBackBone](/apps/xbackbone/). For ephemeral, encrypted file sharing via links, use [Send](/apps/send/). For AirDrop-style local transfers, use [PairDrop](/apps/pairdrop/).
 
 ## Frequently Asked Questions
 
@@ -268,11 +268,11 @@ No direct migration tool exists. Re-upload files to Zipline or manually copy the
 
 ## Related
 
-- [Zipline vs XBackBone](/compare/zipline-vs-xbackbone)
-- [How to Self-Host XBackBone](/apps/xbackbone)
-- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Zipline vs XBackBone](/compare/zipline-vs-xbackbone/)
+- [How to Self-Host XBackBone](/apps/xbackbone/)
+- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

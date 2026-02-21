@@ -124,10 +124,10 @@ Both are very light. Diun uses ~15-20 MB running continuously. Lazydocker uses ~
 
 ## Related
 
-- [How to Self-Host Diun with Docker](/apps/diun)
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Updating Docker Containers Safely](/foundations/docker-updating)
+- [How to Self-Host Diun with Docker](/apps/diun/)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Updating Docker Containers Safely](/foundations/docker-updating/)

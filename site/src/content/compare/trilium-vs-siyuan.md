@@ -96,10 +96,10 @@ For hierarchical thinkers: TriliumNext. For graph thinkers: SiYuan. Both are str
 
 ## Related
 
-- [How to Self-Host TriliumNext](/apps/trilium)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [Joplin vs SiYuan](/compare/joplin-vs-siyuan)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Evernote](/replace/evernote)
+- [How to Self-Host TriliumNext](/apps/trilium/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [Joplin vs SiYuan](/compare/joplin-vs-siyuan/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Evernote](/replace/evernote/)

@@ -45,7 +45,7 @@ k3s is the obvious choice for self-hosted Kubernetes. It installs in 30 seconds,
 - Runs on ARM (Raspberry Pi)
 - HA mode with 3+ nodes
 
-[Read our full guide: How to Self-Host k3s](/apps/k3s)
+[Read our full guide: How to Self-Host k3s](/apps/k3s/)
 
 ### MicroK8s — Best Addon Ecosystem
 
@@ -55,7 +55,7 @@ MicroK8s is Canonical's Kubernetes distribution. It installs via snap and adds f
 
 **Trade-off:** Requires snap. Not available on distros without snap support.
 
-[Read our full guide: How to Self-Host MicroK8s](/apps/microk8s)
+[Read our full guide: How to Self-Host MicroK8s](/apps/microk8s/)
 
 ### Docker Swarm — Simplest Alternative
 
@@ -65,7 +65,7 @@ If you don't actually need Kubernetes and just want multi-node container orchest
 
 **Trade-off:** No Helm charts, no operators, smaller ecosystem.
 
-[Read our full guide: How to Set Up Docker Swarm](/apps/docker-swarm)
+[Read our full guide: How to Set Up Docker Swarm](/apps/docker-swarm/)
 
 ### Nomad — Best Non-Kubernetes Option
 
@@ -75,7 +75,7 @@ If Kubernetes feels like the wrong tool, HashiCorp Nomad offers workload orchest
 
 **Trade-off:** Smaller ecosystem, BSL license.
 
-[Read our full guide: How to Self-Host Nomad](/apps/nomad)
+[Read our full guide: How to Self-Host Nomad](/apps/nomad/)
 
 ## Migration Guide
 
@@ -126,10 +126,10 @@ For most self-hosters running personal services, these trade-offs are irrelevant
 
 ## Related
 
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [How to Self-Host k3s](/apps/k3s)
-- [How to Self-Host MicroK8s](/apps/microk8s)
-- [k3s vs Kubernetes](/compare/k3s-vs-k8s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [How to Self-Host MicroK8s](/apps/microk8s/)
+- [k3s vs Kubernetes](/compare/k3s-vs-k8s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)

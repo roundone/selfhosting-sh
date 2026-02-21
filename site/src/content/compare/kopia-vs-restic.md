@@ -22,7 +22,7 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-Kopia is the better choice for most self-hosters because it includes a web UI, faster snapshot creation, and more granular retention policies out of the box. Restic has a larger community and more third-party integrations, but requires CLI-only operation unless you add [Borgmatic](/apps/borgmatic) or another wrapper.
+Kopia is the better choice for most self-hosters because it includes a web UI, faster snapshot creation, and more granular retention policies out of the box. Restic has a larger community and more third-party integrations, but requires CLI-only operation unless you add [Borgmatic](/apps/borgmatic/) or another wrapper.
 
 ## Overview
 
@@ -51,7 +51,7 @@ Both tools encrypt and deduplicate your data by default, and both support a wide
 
 **Kopia** provides an official Docker image and can run as both a CLI tool and a web server. The Docker setup is straightforward — mount your data, point it at a repository, and the web UI handles the rest.
 
-**Restic** is distributed as a single binary with no official Docker image. Docker deployment requires community images or custom Dockerfiles. For scheduling and automation, most people pair Restic with [Borgmatic](/apps/borgmatic), cron, or a systemd timer.
+**Restic** is distributed as a single binary with no official Docker image. Docker deployment requires community images or custom Dockerfiles. For scheduling and automation, most people pair Restic with [Borgmatic](/apps/borgmatic/), cron, or a systemd timer.
 
 Kopia wins on installation simplicity, especially for users who want a visual interface.
 
@@ -108,17 +108,17 @@ Kopia's community is smaller but growing fast. The project's development velocit
 
 Restic is still excellent and has a massive head start in community size and documentation. If you're already using Restic and happy with it, there's no urgent reason to switch. But for new setups, Kopia offers more out of the box with less configuration.
 
-For a GUI-less, automation-focused approach, pairing Restic with [Borgmatic](/apps/borgmatic) closes the gap significantly.
+For a GUI-less, automation-focused approach, pairing Restic with [Borgmatic](/apps/borgmatic/) closes the gap significantly.
 
 ## Related
 
-- [How to Self-Host Kopia](/apps/kopia)
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
-- [Duplicati vs Restic](/compare/duplicati-vs-restic)
-- [Borgmatic vs Restic](/compare/borgmatic-vs-restic)
-- [Restic vs BorgBackup](/compare/restic-vs-borgbackup)
-- [Best Self-Hosted Backup Tools](/best/backup)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Kopia](/apps/kopia/)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Duplicati vs Restic](/compare/duplicati-vs-restic/)
+- [Borgmatic vs Restic](/compare/borgmatic-vs-restic/)
+- [Restic vs BorgBackup](/compare/restic-vs-borgbackup/)
+- [Best Self-Hosted Backup Tools](/best/backup/)
+- [Backup Strategy](/foundations/backup-strategy/)

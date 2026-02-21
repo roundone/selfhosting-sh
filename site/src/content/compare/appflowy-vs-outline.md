@@ -54,7 +54,7 @@ Outline is the more mature and production-ready choice for teams that need a sel
 
 ## Installation Complexity
 
-Outline requires three services: the Outline app, PostgreSQL, and Redis. You also need to configure an external authentication provider — there's no built-in username/password login. This is the biggest friction point. You'll need a Google Workspace, Slack workspace, Azure AD, or a self-hosted OIDC provider like [Authentik](/apps/authentik) or [Keycloak](/apps/keycloak). Once auth is configured, Outline runs reliably.
+Outline requires three services: the Outline app, PostgreSQL, and Redis. You also need to configure an external authentication provider — there's no built-in username/password login. This is the biggest friction point. You'll need a Google Workspace, Slack workspace, Azure AD, or a self-hosted OIDC provider like [Authentik](/apps/authentik/) or [Keycloak](/apps/keycloak/). Once auth is configured, Outline runs reliably.
 
 AppFlowy Cloud requires five or more services: the API server, GoTrue (authentication), PostgreSQL, Redis, and MinIO (S3-compatible storage). Deployment follows the official repo's docker-compose setup. Configuration involves multiple `.env` files and service coordination. It works, but the stack is heavier and less battle-tested than Outline's.
 
@@ -101,7 +101,7 @@ Yes. The AppFlowy desktop app works fully offline with local data storage. The s
 
 ### Does Outline support databases like Notion?
 
-No. Outline is a document-focused wiki. If you need inline databases, kanban views, or spreadsheet-like tables inside documents, look at AppFlowy or [AFFiNE](/apps/affine).
+No. Outline is a document-focused wiki. If you need inline databases, kanban views, or spreadsheet-like tables inside documents, look at AppFlowy or [AFFiNE](/apps/affine/).
 
 ### Can I migrate from Notion to either app?
 
@@ -109,10 +109,10 @@ Both support Markdown import, and Notion can export to Markdown. Outline handles
 
 ## Related
 
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [How to Self-Host Outline](/apps/outline)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Notion Alternatives](/replace/notion)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [How to Self-Host Outline](/apps/outline/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Notion Alternatives](/replace/notion/)

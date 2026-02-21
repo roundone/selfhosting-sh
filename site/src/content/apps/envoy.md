@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM minimum
 - 1 GB of disk space
 - Basic understanding of YAML configuration
@@ -307,7 +307,7 @@ http_connection_manager:
 
 Envoy *is* a reverse proxy, so this section covers using it behind another proxy or alongside other services.
 
-To place Envoy behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy), proxy to the HTTP listener port (8080 by default). Ensure `x-forwarded-for` headers are preserved by configuring `use_remote_address: true` in the HTTP connection manager:
+To place Envoy behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/), proxy to the HTTP listener port (8080 by default). Ensure `x-forwarded-for` headers are preserved by configuring `use_remote_address: true` in the HTTP connection manager:
 
 ```yaml
 http_connection_manager:
@@ -331,7 +331,7 @@ Envoy's configuration is stateless — all routing rules live in the config file
 tar -czf envoy-backup-$(date +%Y%m%d).tar.gz envoy.yaml certs/
 ```
 
-See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide for a comprehensive approach.
+See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -381,7 +381,7 @@ stats_config:
 
 Envoy is the most powerful proxy on this list, but it is overkill for most self-hosters. If you run gRPC services, need advanced load balancing algorithms (Maglev, ring hash), want circuit breaking and automatic retries, or are building a service mesh — Envoy is the right tool. Its observability (built-in Prometheus metrics, distributed tracing) is unmatched.
 
-For a typical homelab with 5-20 HTTP services, [Caddy](/apps/caddy) or [Traefik](/apps/traefik) will get you running in minutes instead of hours. Use Envoy when you've outgrown simpler tools or have specific requirements they cannot meet.
+For a typical homelab with 5-20 HTTP services, [Caddy](/apps/caddy/) or [Traefik](/apps/traefik/) will get you running in minutes instead of hours. Use Envoy when you've outgrown simpler tools or have specific requirements they cannot meet.
 
 ## FAQ
 
@@ -389,25 +389,25 @@ For a typical homelab with 5-20 HTTP services, [Caddy](/apps/caddy) or [Traefik]
 Yes, significantly. Envoy's YAML configuration is verbose and requires fully-qualified type annotations (`typed_config` with `@type` fields). A simple HTTP proxy that takes 2 lines in a Caddyfile takes 30+ lines in Envoy. This verbosity enables precision but costs development time.
 
 ### Can Envoy handle automatic HTTPS like Caddy?
-Not natively. Envoy does not include a built-in ACME client. You need an external tool like Certbot to obtain and renew Let's Encrypt certificates, then mount them into the container. For automatic HTTPS, use [Caddy](/apps/caddy) or [Traefik](/apps/traefik) instead.
+Not natively. Envoy does not include a built-in ACME client. You need an external tool like Certbot to obtain and renew Let's Encrypt certificates, then mount them into the container. For automatic HTTPS, use [Caddy](/apps/caddy/) or [Traefik](/apps/traefik/) instead.
 
 ### When should I choose Envoy over Traefik?
-Choose Envoy when you need: gRPC-native proxying with transcoding, advanced load balancing algorithms (Maglev, ring hash), circuit breaking with detailed thresholds, or Prometheus metrics with distributed tracing. For standard HTTP/HTTPS reverse proxying with Docker auto-discovery, [Traefik](/apps/traefik) is simpler and sufficient.
+Choose Envoy when you need: gRPC-native proxying with transcoding, advanced load balancing algorithms (Maglev, ring hash), circuit breaking with detailed thresholds, or Prometheus metrics with distributed tracing. For standard HTTP/HTTPS reverse proxying with Docker auto-discovery, [Traefik](/apps/traefik/) is simpler and sufficient.
 
 ### Does Envoy support hot reloading?
 Envoy supports hot restart (launching a new process alongside the old one for zero-downtime restarts) and dynamic configuration via xDS APIs. For static file configs, you need to restart the container or use the `/config_dump` admin endpoint with a control plane.
 
 ### How does Envoy compare to HAProxy?
-Both are production-grade L4/L7 proxies. Envoy has better gRPC support, built-in observability, and dynamic configuration via APIs. [HAProxy](/apps/haproxy) has simpler configuration, lower memory usage, and decades of battle testing. For TCP load balancing, HAProxy is simpler. For microservices and gRPC, Envoy wins.
+Both are production-grade L4/L7 proxies. Envoy has better gRPC support, built-in observability, and dynamic configuration via APIs. [HAProxy](/apps/haproxy/) has simpler configuration, lower memory usage, and decades of battle testing. For TCP load balancing, HAProxy is simpler. For microservices and gRPC, Envoy wins.
 
 ## Related
 
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking Explained](/foundations/docker-networking)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking Explained](/foundations/docker-networking/)

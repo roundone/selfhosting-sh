@@ -98,7 +98,7 @@ Winner: **Nginx Proxy Manager** by a wide margin.
 ## Use Cases
 
 ### Choose Zoraxy If...
-- You want uptime monitoring without running a separate [Uptime Kuma](/apps/uptime-kuma) instance
+- You want uptime monitoring without running a separate [Uptime Kuma](/apps/uptime-kuma/) instance
 - GeoIP filtering is important (block countries, geographic analytics)
 - You need TCP/UDP stream proxying through a web UI
 - Docker container auto-discovery appeals to you
@@ -119,7 +119,7 @@ Winner: **Nginx Proxy Manager** by a wide margin.
 
 **Zoraxy wins on features.** If you value having uptime monitoring, GeoIP filtering, and Docker discovery in a single tool, Zoraxy delivers more per deployment. It trades community support for functionality.
 
-For beginners: start with [Nginx Proxy Manager](/apps/nginx-proxy-manager). For experienced self-hosters who want to consolidate tools: give [Zoraxy](/apps/zoraxy) a try.
+For beginners: start with [Nginx Proxy Manager](/apps/nginx-proxy-manager/). For experienced self-hosters who want to consolidate tools: give [Zoraxy](/apps/zoraxy/) a try.
 
 ## FAQ
 
@@ -134,10 +134,10 @@ Both mount the Docker socket optionally and run as root by default. Security-wis
 
 ## Related
 
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Nginx Proxy Manager vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

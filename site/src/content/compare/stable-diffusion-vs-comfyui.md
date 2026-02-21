@@ -159,8 +159,8 @@ If you're getting started: try Forge first, move to ComfyUI when you want more c
 
 ## Related
 
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Best Self-Hosted AI Tools](/best/ai-machine-learning)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Best Mini PCs for Self-Hosting](/hardware/best-mini-pc)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Best Self-Hosted AI Tools](/best/ai-machine-learning/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Best Mini PCs for Self-Hosting](/hardware/best-mini-pc/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

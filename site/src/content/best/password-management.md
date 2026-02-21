@@ -54,7 +54,7 @@ affiliateDisclosure: false
 
 **Best for:** Everyone. Personal use, family sharing, small teams.
 
-[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden)
+[Read our full guide: How to Self-Host Vaultwarden](/apps/vaultwarden/)
 
 ### 2. Passbolt — Best for Teams
 
@@ -76,7 +76,7 @@ affiliateDisclosure: false
 
 **Best for:** Teams and organizations that need shared credential management with audit trails.
 
-[Read our full guide: How to Self-Host Passbolt](/apps/passbolt)
+[Read our full guide: How to Self-Host Passbolt](/apps/passbolt/)
 
 ### 3. KeeWeb — Best Lightweight Option
 
@@ -98,7 +98,7 @@ affiliateDisclosure: false
 
 **Best for:** KeePass users who want web access, minimalists who prefer file-based vaults.
 
-[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb)
+[Read our full guide: How to Self-Host KeeWeb](/apps/keeweb/)
 
 ### 4. Padloc — Best UI Design
 
@@ -119,7 +119,7 @@ affiliateDisclosure: false
 
 **Best for:** Users who prioritize design quality and don't rely heavily on browser auto-fill.
 
-[Read our full guide: How to Self-Host Padloc](/apps/padloc)
+[Read our full guide: How to Self-Host Padloc](/apps/padloc/)
 
 ### 5. Authelia — Best for App Protection
 
@@ -140,7 +140,7 @@ affiliateDisclosure: false
 
 **Best for:** Adding authentication to unprotected self-hosted apps. Pair with Vaultwarden for complete password + auth coverage.
 
-[Read our full guide: How to Self-Host Authelia](/apps/authelia)
+[Read our full guide: How to Self-Host Authelia](/apps/authelia/)
 
 ## Full Comparison Table
 
@@ -190,18 +190,18 @@ The official Bitwarden server (bitwarden/server) requires MSSQL and significantl
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host KeeWeb](/apps/keeweb)
-- [How to Self-Host Padloc](/apps/padloc)
-- [How to Self-Host Authelia](/apps/authelia)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Self-Hosted Alternatives to Dashlane](/replace/dashlane)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host KeeWeb](/apps/keeweb/)
+- [How to Self-Host Padloc](/apps/padloc/)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Self-Hosted Alternatives to Dashlane](/replace/dashlane/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

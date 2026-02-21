@@ -46,7 +46,7 @@ The key difference: **Tailscale operates at Layer 3 (IP routing). ZeroTier opera
 | ACLs | Flow rules (L2/L3/L4) | HuJSON policies (L3/L4) |
 | Multicast/broadcast | Yes (virtual L2) | No (L3 only) |
 | SSO integration | No (account-based) | Yes (Google, Microsoft, GitHub, etc.) |
-| Self-hosted controller | Yes (open source, with caveats) | Yes ([Headscale](/apps/headscale)) |
+| Self-hosted controller | Yes (open source, with caveats) | Yes ([Headscale](/apps/headscale/)) |
 | Authentication | Account + network join approval | SSO (Google, Microsoft, GitHub) |
 | Exit nodes | Via routing rules | One-click toggle |
 | Subnet routing | Yes | Yes |
@@ -63,7 +63,7 @@ The key difference: **Tailscale operates at Layer 3 (IP routing). ZeroTier opera
 
 **ZeroTier:** Install the client, run `zerotier-cli join <network-id>`, then approve the device in the web controller (my.zerotier.com or self-hosted). Slightly more steps but still straightforward.
 
-For **self-hosted controllers**, ZeroTier has the edge — [ZTNET](https://github.com/sinamics/ztnet) provides a full-featured controller UI. Tailscale's self-hosted option ([Headscale](/apps/headscale)) is less feature-complete but actively improving.
+For **self-hosted controllers**, ZeroTier has the edge — [ZTNET](https://github.com/sinamics/ztnet) provides a full-featured controller UI. Tailscale's self-hosted option ([Headscale](/apps/headscale/)) is less feature-complete but actively improving.
 
 Winner: **Tailscale** for standard usage. **ZeroTier** if self-hosting the controller is a priority.
 
@@ -132,7 +132,7 @@ Both use strong encryption. ZeroTier uses Salsa20/Poly1305 with Curve25519. Tail
 
 ### Can I self-host both?
 
-Yes. ZeroTier's controller can be self-hosted via ZTNET (with some licensing caveats since 1.16). Tailscale's coordination server can be self-hosted via [Headscale](/apps/headscale).
+Yes. ZeroTier's controller can be self-hosted via ZTNET (with some licensing caveats since 1.16). Tailscale's coordination server can be self-hosted via [Headscale](/apps/headscale/).
 
 ### What's the deal with ZeroTier's license change?
 
@@ -144,10 +144,10 @@ Yes. They use different network interfaces and don't conflict. You can run both 
 
 ## Related
 
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [How to Self-Host Headscale](/apps/headscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

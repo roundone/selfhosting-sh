@@ -17,15 +17,15 @@ affiliateDisclosure: true
 
 **For most self-hosters: keep your existing router.** Any modern consumer router handles NAT, port forwarding, and DHCP well enough. Put your energy into the server, not the router.
 
-**If you want to upgrade:** Run OPNsense on a [dual-NIC mini PC](/hardware/best-mini-pc) (like the Beelink EQ12 with dual 2.5 GbE) and use your existing router as a WiFi access point only. This gives you enterprise-grade firewall, VPN, DNS, and traffic shaping for ~$180 in hardware.
+**If you want to upgrade:** Run OPNsense on a [dual-NIC mini PC](/hardware/best-mini-pc/) (like the Beelink EQ12 with dual 2.5 GbE) and use your existing router as a WiFi access point only. This gives you enterprise-grade firewall, VPN, DNS, and traffic shaping for ~$180 in hardware.
 
 ## Do You Need a Better Router?
 
 ### You DON'T Need to Upgrade If:
 
 - Your current router supports port forwarding and static DHCP leases
-- You're using [Tailscale](/apps/tailscale) or [Cloudflare Tunnel](/foundations/cloudflare-tunnel) for remote access (no port forwarding needed)
-- You run [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) on your server for DNS
+- You're using [Tailscale](/apps/tailscale/) or [Cloudflare Tunnel](/foundations/cloudflare-tunnel/) for remote access (no port forwarding needed)
+- You run [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) on your server for DNS
 - You don't need VLANs or advanced traffic management
 
 Most self-hosting setups work perfectly with a $50 consumer router. Don't over-engineer your network before you've built the server.
@@ -137,7 +137,7 @@ VLANs segment your network into isolated groups. Common setup for self-hosting:
 | 20 | 192.168.20.0/24 | IoT | Smart home devices, cameras |
 | 30 | 192.168.30.0/24 | Guest | Guest WiFi |
 
-**Why VLANs matter:** An IoT device (smart bulb, cheap camera) with a security vulnerability can't reach your server if they're on different VLANs with firewall rules between them. VLANs require a managed switch — see our [managed switch guide](/hardware/managed-switch-home-lab).
+**Why VLANs matter:** An IoT device (smart bulb, cheap camera) with a security vulnerability can't reach your server if they're on different VLANs with firewall rules between them. VLANs require a managed switch — see our [managed switch guide](/hardware/managed-switch-home-lab/).
 
 ## FAQ
 
@@ -159,9 +159,9 @@ Mesh systems (TP-Link Deco, Eero, Google Nest WiFi) are for WiFi coverage, not r
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Managed Switch for Homelab](/hardware/managed-switch-home-lab)
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [PoE Explained](/hardware/poe-explained)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Managed Switch for Homelab](/hardware/managed-switch-home-lab/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

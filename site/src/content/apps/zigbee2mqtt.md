@@ -23,14 +23,14 @@ affiliateDisclosure: false
 
 ## What Is Zigbee2MQTT?
 
-[Zigbee2MQTT](https://www.zigbee2mqtt.io/) is a bridge that connects Zigbee devices to your MQTT broker, eliminating the need for proprietary Zigbee hubs. Pair your Zigbee sensors, lights, switches, and locks directly with a USB Zigbee coordinator — Zigbee2MQTT handles the protocol translation and publishes device states to MQTT topics. Works with over 4,000 devices from 400+ manufacturers. Use it with [Home Assistant](/apps/home-assistant), [Node-RED](/apps/node-red), or any MQTT-compatible platform.
+[Zigbee2MQTT](https://www.zigbee2mqtt.io/) is a bridge that connects Zigbee devices to your MQTT broker, eliminating the need for proprietary Zigbee hubs. Pair your Zigbee sensors, lights, switches, and locks directly with a USB Zigbee coordinator — Zigbee2MQTT handles the protocol translation and publishes device states to MQTT topics. Works with over 4,000 devices from 400+ manufacturers. Use it with [Home Assistant](/apps/home-assistant/), [Node-RED](/apps/node-red/), or any MQTT-compatible platform.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - A Zigbee coordinator USB dongle (see Hardware section below)
-- An MQTT broker running ([Mosquitto setup guide](/apps/mosquitto))
+- An MQTT broker running ([Mosquitto setup guide](/apps/mosquitto/))
 - 200 MB of free disk space
 - 256 MB of RAM (minimum)
 
@@ -49,7 +49,7 @@ The SONOFF Dongle Plus-E is the most popular choice for beginners.
 
 ## Docker Compose Configuration
 
-This setup assumes you already have [Mosquitto](/apps/mosquitto) running. If not, set that up first.
+This setup assumes you already have [Mosquitto](/apps/mosquitto/) running. If not, set that up first.
 
 Create a configuration directory:
 
@@ -217,7 +217,7 @@ Use different `base_topic` values in each instance's config.
 
 Zigbee2MQTT's web frontend runs on port 8080. Point your reverse proxy to `http://zigbee2mqtt:8080`.
 
-**Security warning:** The web frontend has no built-in authentication. If exposing it beyond your LAN, protect it with reverse proxy authentication (Basic auth, Authelia, or Authentik). See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+**Security warning:** The web frontend has no built-in authentication. If exposing it beyond your LAN, protect it with reverse proxy authentication (Basic auth, Authelia, or Authentik). See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -233,7 +233,7 @@ Critical files in the data directory:
 - `database.db` — device database with pairing info and network map
 - `state.json` — current device states
 
-The `coordinator_backup.json` is especially important — it contains the Zigbee network key and device pairing data. Without it, you'd need to re-pair all devices after a restore. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+The `coordinator_backup.json` is especially important — it contains the Zigbee network key and device pairing data. Without it, you'd need to re-pair all devices after a restore. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -309,15 +309,15 @@ Zigbee2MQTT is essential for anyone building a self-hosted smart home with Zigbe
 
 The main competitor is ZHA (Zigbee Home Automation) — Home Assistant's built-in Zigbee integration. ZHA is simpler (no MQTT broker needed) but supports fewer devices and gives you less control. Zigbee2MQTT is the better choice if you want maximum device compatibility, detailed configuration, and the flexibility of MQTT.
 
-You need a [Mosquitto MQTT broker](/apps/mosquitto) running alongside Zigbee2MQTT. If you don't already have one, set that up first.
+You need a [Mosquitto MQTT broker](/apps/mosquitto/) running alongside Zigbee2MQTT. If you don't already have one, set that up first.
 
 ## Related
 
-- [How to Self-Host Mosquitto MQTT Broker](/apps/mosquitto)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit)
-- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Mosquitto MQTT Broker](/apps/mosquitto/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit/)
+- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

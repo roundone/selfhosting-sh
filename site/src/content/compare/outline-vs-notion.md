@@ -142,7 +142,7 @@ For documentation and wikis, yes. For databases, project management, and all-in-
 
 ### Why does Outline require OIDC?
 
-Outline was built for teams that already have identity management (Google Workspace, Okta, Azure AD). Adding basic auth would duplicate user management. For self-hosters without an existing IdP, deploy [Keycloak](/apps/keycloak) or [Authentik](/apps/authentik) alongside Outline.
+Outline was built for teams that already have identity management (Google Workspace, Okta, Azure AD). Adding basic auth would duplicate user management. For self-hosters without an existing IdP, deploy [Keycloak](/apps/keycloak/) or [Authentik](/apps/authentik/) alongside Outline.
 
 ### Is Outline free?
 
@@ -150,14 +150,14 @@ The self-hosted version is free under the BSL license (converts to Apache 2.0 af
 
 ### What about AppFlowy or AFFiNE as alternatives?
 
-Both aim to be open-source Notion alternatives with database features. [AppFlowy](/apps/appflowy) and [AFFiNE](/apps/affine) are worth watching but are less mature than Outline for team documentation. They're better for personal use currently.
+Both aim to be open-source Notion alternatives with database features. [AppFlowy](/apps/appflowy/) and [AFFiNE](/apps/affine/) are worth watching but are less mature than Outline for team documentation. They're better for personal use currently.
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Self-Hosted Alternatives to Notion](/replace/notion)
-- [AppFlowy vs Outline](/compare/appflowy-vs-outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Best Self-Hosted Wiki](/best/wiki)
+- [How to Self-Host Outline](/apps/outline/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Self-Hosted Alternatives to Notion](/replace/notion/)
+- [AppFlowy vs Outline](/compare/appflowy-vs-outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Best Self-Hosted Wiki](/best/wiki/)

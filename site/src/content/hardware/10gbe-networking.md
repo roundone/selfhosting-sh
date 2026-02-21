@@ -282,7 +282,7 @@ ip link set enp3s0 mtu 9000
 | VM storage (iSCSI/NFS datastore) | Major — VM boot and I/O greatly improved |
 | Docker container networking | None — containers rarely saturate 1GbE |
 | Backup (Restic, BorgBackup to NAS) | Major — backup windows shrink 10x |
-| [Nextcloud](/apps/nextcloud) file sync | Moderate — only matters for large file uploads |
+| [Nextcloud](/apps/nextcloud/) file sync | Moderate — only matters for large file uploads |
 
 ## FAQ
 
@@ -308,11 +308,11 @@ Mellanox ConnectX-4 cards (25GbE) are now $30-50 used. If you're buying new and 
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Managed Switches for Homelab](/hardware/managed-switch-home-lab)
-- [PoE Explained](/hardware/poe-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Managed Switches for Homelab](/hardware/managed-switch-home-lab/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

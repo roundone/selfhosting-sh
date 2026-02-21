@@ -22,7 +22,7 @@ Think of it as the Sonarr/Radarr equivalent for books — but with magazine supp
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM
 - Storage for your book collection
 - At least one download client (SABnzbd, NZBGet, qBittorrent, Transmission)
@@ -138,7 +138,7 @@ For remote access, put LazyLibrarian behind a reverse proxy:
 - **Forward Hostname:** `lazylibrarian` (or your server IP)
 - **Forward Port:** `5299`
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -150,7 +150,7 @@ tar -czf lazylibrarian-backup-$(date +%Y%m%d).tar.gz -C /var/lib/docker/volumes 
 docker compose start lazylibrarian
 ```
 
-Your book library should be backed up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Your book library should be backed up separately. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -190,13 +190,13 @@ The mod requires x86_64 architecture — it's not available on ARM.
 
 LazyLibrarian is the most feature-complete self-hosted book manager. Magazine support, Goodreads integration, and Calibre conversion make it uniquely capable for dedicated book collectors. The trade-off is a dated UI and a less polished experience compared to the *arr apps.
 
-If you're already in the *arr ecosystem and only need ebooks, [Readarr](/apps/readarr) is the smoother choice. If you want magazine tracking, audiobook conversion, or deep Goodreads/Calibre integration, LazyLibrarian is worth the rougher interface.
+If you're already in the *arr ecosystem and only need ebooks, [Readarr](/apps/readarr/) is the smoother choice. If you want magazine tracking, audiobook conversion, or deep Goodreads/Calibre integration, LazyLibrarian is worth the rougher interface.
 
 ## FAQ
 
 ### LazyLibrarian or Readarr?
 
-Use Readarr if you run the *arr stack and only need ebooks/audiobooks. Use LazyLibrarian if you need magazine support, Goodreads integration, or Calibre format conversion. See our [full comparison](/compare/readarr-vs-lazylibrarian).
+Use Readarr if you run the *arr stack and only need ebooks/audiobooks. Use LazyLibrarian if you need magazine support, Goodreads integration, or Calibre format conversion. See our [full comparison](/compare/readarr-vs-lazylibrarian/).
 
 ### Does LazyLibrarian work with Prowlarr?
 
@@ -208,11 +208,11 @@ Not directly, but with Calibre integration enabled, you can convert books to Kin
 
 ## Related
 
-- [Readarr vs LazyLibrarian](/compare/readarr-vs-lazylibrarian)
-- [How to Self-Host Readarr](/apps/readarr)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading)
-- [Best Self-Hosted Media Organization](/best/media-organization)
-- [*arr Stack Setup Guide](/foundations/arr-stack-setup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Readarr vs LazyLibrarian](/compare/readarr-vs-lazylibrarian/)
+- [How to Self-Host Readarr](/apps/readarr/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading/)
+- [Best Self-Hosted Media Organization](/best/media-organization/)
+- [*arr Stack Setup Guide](/foundations/arr-stack-setup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -37,7 +37,7 @@ Navidrome replaces Amazon Music with a lightweight, self-hosted music server. Po
 
 **Key advantage over Amazon Music:** No quality tiers, no shuffle-only limitations, no ads. Every track plays at the full quality of your source files. FLAC stays FLAC.
 
-[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome)]
+[Read our full guide: [How to Self-Host Navidrome](/apps/navidrome/)]
 
 ### Jellyfin — Best for Amazon Ecosystem Refugees
 
@@ -45,7 +45,7 @@ If you're leaving the Amazon ecosystem entirely (Prime Video, Music, Photos), Je
 
 **Why it works here:** One migration, one server, one solution for all your media. Instead of separate replacements for Prime Video, Amazon Music, and Amazon Photos, Jellyfin handles everything.
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ### Plex with Plexamp — Best for Casual Listeners
 
@@ -53,7 +53,7 @@ If Amazon Music was your background-listening service — something playing whil
 
 **Cost:** Plex Pass is $5/month or $120 lifetime. Even at the monthly price, it's cheaper than Amazon Music Unlimited ($9-11/month).
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ## Migration Guide
 
@@ -140,11 +140,11 @@ Probably not — evaluate Prime holistically (shipping, video, photos). But if m
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Self-Hosted Apple Music Alternatives](/replace/apple-music)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Plex for Music](/compare/navidrome-vs-plex-music)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Self-Hosted Apple Music Alternatives](/replace/apple-music/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Plex for Music](/compare/navidrome-vs-plex-music/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

@@ -21,11 +21,11 @@ For self-hosting, NPM is the easiest way to give each service its own subdomain 
 
 ## Prerequisites
 
-- A Linux server with Docker ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A Linux server with Docker ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - A domain name with DNS access
 - Ports 80 and 443 available (not used by another service)
-- DNS records pointing to your server (A records or CNAME via [Dynamic DNS](/foundations/dynamic-dns))
-- Understanding of [reverse proxies](/foundations/reverse-proxy-explained)
+- DNS records pointing to your server (A records or CNAME via [Dynamic DNS](/foundations/dynamic-dns/))
+- Understanding of [reverse proxies](/foundations/reverse-proxy-explained/)
 
 ## Installation
 
@@ -68,7 +68,7 @@ ssh -L 8181:127.0.0.1:81 user@your-server-ip
 # Then open http://localhost:8181 in your browser
 ```
 
-Or use [Tailscale](/foundations/tailscale-setup) to access it via the server's Tailscale IP.
+Or use [Tailscale](/foundations/tailscale-setup/) to access it via the server's Tailscale IP.
 
 ## Setting Up DNS
 
@@ -88,7 +88,7 @@ Name: *       (wildcard — optional, catches all subdomains)
 Value: YOUR_PUBLIC_IP
 ```
 
-If your IP is dynamic, use [Dynamic DNS](/foundations/dynamic-dns) to keep records updated.
+If your IP is dynamic, use [Dynamic DNS](/foundations/dynamic-dns/) to keep records updated.
 
 ## Adding a Proxy Host
 
@@ -389,16 +389,16 @@ Common causes: DNS not pointing to your server, port 80 blocked by ISP or firewa
 
 ## Next Steps
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained) — understand the concepts
-- [SSL Certificates](/foundations/ssl-certificates) — how HTTPS works
-- [Dynamic DNS](/foundations/dynamic-dns) — keep DNS updated
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/) — understand the concepts
+- [SSL Certificates](/foundations/ssl-certificates/) — how HTTPS works
+- [Dynamic DNS](/foundations/dynamic-dns/) — keep DNS updated
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [SSL Certificates for Self-Hosting](/foundations/ssl-certificates)
-- [DNS Explained](/foundations/dns-explained)
-- [Dynamic DNS Setup](/foundations/dynamic-dns)
-- [Port Forwarding Guide](/foundations/port-forwarding)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [SSL Certificates for Self-Hosting](/foundations/ssl-certificates/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Dynamic DNS Setup](/foundations/dynamic-dns/)
+- [Port Forwarding Guide](/foundations/port-forwarding/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

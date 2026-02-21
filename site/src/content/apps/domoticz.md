@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian Bookworm+)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM minimum (512 MB recommended)
 - A domain name (optional, for remote access)
@@ -157,7 +157,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for full configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for full configuration.
 
 ## Backup
 
@@ -170,7 +170,7 @@ tar czf domoticz-backup-$(date +%Y%m%d).tar.gz \
 docker compose start
 ```
 
-Domoticz also has a built-in backup feature under **Setup → Backup/Restore**. See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide.
+Domoticz also has a built-in backup feature under **Setup → Backup/Restore**. See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide.
 
 ## Troubleshooting
 
@@ -206,7 +206,7 @@ Domoticz also has a built-in backup feature under **Setup → Backup/Restore**. 
 
 ## Verdict
 
-Domoticz is the lightest home automation platform you can run. It uses a fraction of the resources of [Home Assistant](/apps/home-assistant) or [openHAB](/apps/openhab), making it perfect for Raspberry Pi and low-power setups. The trade-off is a dated UI and smaller community compared to Home Assistant. If you want maximum efficiency on minimal hardware and don't mind a less polished interface, Domoticz delivers. For a modern UI and the largest integration ecosystem, Home Assistant is the better choice for most users.
+Domoticz is the lightest home automation platform you can run. It uses a fraction of the resources of [Home Assistant](/apps/home-assistant/) or [openHAB](/apps/openhab/), making it perfect for Raspberry Pi and low-power setups. The trade-off is a dated UI and smaller community compared to Home Assistant. If you want maximum efficiency on minimal hardware and don't mind a less polished interface, Domoticz delivers. For a modern UI and the largest integration ecosystem, Home Assistant is the better choice for most users.
 
 ## FAQ
 
@@ -224,11 +224,11 @@ Yes, via Zigbee2MQTT. Run Zigbee2MQTT as a separate container with an MQTT broke
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

@@ -140,8 +140,8 @@ Whoogle's simplicity is appealing, but the reliability risk is real. If you want
 
 ## Related
 
-- [How to Self-Host SearXNG](/apps/searxng)
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Replace Google Search](/replace/google-search)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host SearXNG](/apps/searxng/)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Replace Google Search](/replace/google-search/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -111,10 +111,10 @@ Yes, and many people do. Point each at the same music directory. Navidrome serve
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Emby](/apps/emby)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

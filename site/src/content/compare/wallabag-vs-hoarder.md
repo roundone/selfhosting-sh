@@ -117,8 +117,8 @@ Hoarder is closer — it saves full pages with AI tagging and search. Wallabag i
 
 ## Related
 
-- [How to Self-Host Wallabag](/apps/wallabag)
-- [How to Self-Host Hoarder](/apps/hoarder)
-- [How to Self-Host Linkding](/apps/linkding)
-- [Linkding vs Wallabag](/compare/linkding-vs-wallabag)
-- [Best Self-Hosted Bookmarks & Read Later](/best/bookmarks-read-later)
+- [How to Self-Host Wallabag](/apps/wallabag/)
+- [How to Self-Host Hoarder](/apps/hoarder/)
+- [How to Self-Host Linkding](/apps/linkding/)
+- [Linkding vs Wallabag](/compare/linkding-vs-wallabag/)
+- [Best Self-Hosted Bookmarks & Read Later](/best/bookmarks-read-later/)

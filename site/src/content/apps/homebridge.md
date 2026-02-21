@@ -28,7 +28,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 200 MB of free disk space
 - 512 MB of RAM (minimum)
 - An Apple device with the Home app (iPhone, iPad, or Mac)
@@ -124,7 +124,7 @@ Use `homebridge-mqttthing` to bridge any MQTT device to HomeKit:
 }
 ```
 
-This pairs well with [Zigbee2MQTT](/apps/zigbee2mqtt) and [Mosquitto](/apps/mosquitto).
+This pairs well with [Zigbee2MQTT](/apps/zigbee2mqtt/) and [Mosquitto](/apps/mosquitto/).
 
 ## Advanced Configuration (Optional)
 
@@ -172,7 +172,7 @@ The Homebridge web UI runs on port 8581. Since the container uses `network_mode:
 
 **Do NOT proxy the HomeKit protocol itself** — HomeKit uses mDNS and direct connections that won't work through a proxy. Only proxy the web management UI if needed.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for the web UI.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for the web UI.
 
 ## Backup
 
@@ -190,7 +190,7 @@ Critical files:
 - `persist/` — HomeKit pairing data (without this, you must re-pair)
 - `accessories/` — cached accessory data
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -243,15 +243,15 @@ docker exec homebridge npm remove homebridge-problematic-plugin
 
 Homebridge is the definitive solution for bringing non-HomeKit devices into Apple's ecosystem. If you're an Apple household and have smart home devices that don't support HomeKit natively, Homebridge is the answer. The plugin ecosystem is massive and the Docker deployment is straightforward.
 
-The main limitation is that it only helps Apple users. If you use Android or want a platform-agnostic solution, [Home Assistant](/apps/home-assistant) is the better choice — it supports HomeKit as one of many integrations, plus 2,000+ other platforms. If you're all-in on Apple and just want HomeKit integration, Homebridge is simpler to set up and maintain for that specific purpose.
+The main limitation is that it only helps Apple users. If you use Android or want a platform-agnostic solution, [Home Assistant](/apps/home-assistant/) is the better choice — it supports HomeKit as one of many integrations, plus 2,000+ other platforms. If you're all-in on Apple and just want HomeKit integration, Homebridge is simpler to set up and maintain for that specific purpose.
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Zigbee2MQTT](/apps/zigbee2mqtt)
-- [How to Self-Host Mosquitto MQTT Broker](/apps/mosquitto)
-- [How to Self-Host ESPHome](/apps/esphome)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Zigbee2MQTT](/apps/zigbee2mqtt/)
+- [How to Self-Host Mosquitto MQTT Broker](/apps/mosquitto/)
+- [How to Self-Host ESPHome](/apps/esphome/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Apple HomeKit Alternatives](/replace/apple-homekit/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

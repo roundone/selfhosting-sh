@@ -53,9 +53,9 @@ Apache Guacamole is a clientless remote desktop gateway. It runs as a web applic
 
 ## Installation Complexity
 
-**RustDesk Server** requires two processes (hbbs for rendezvous, hbbr for relay) in a single Docker container using `network_mode: host`. Setup is quick — about 10 minutes. You then install the RustDesk client on each machine and configure it to use your server. See our [RustDesk setup guide](/apps/rustdesk).
+**RustDesk Server** requires two processes (hbbs for rendezvous, hbbr for relay) in a single Docker container using `network_mode: host`. Setup is quick — about 10 minutes. You then install the RustDesk client on each machine and configure it to use your server. See our [RustDesk setup guide](/apps/rustdesk/).
 
-**Apache Guacamole** requires three containers: guacd (the connection daemon), the Guacamole web app, and a database (PostgreSQL or MySQL). You must manually initialize the database schema with SQL scripts. Setup takes 20-30 minutes. See our [Guacamole setup guide](/apps/guacamole).
+**Apache Guacamole** requires three containers: guacd (the connection daemon), the Guacamole web app, and a database (PostgreSQL or MySQL). You must manually initialize the database schema with SQL scripts. Setup takes 20-30 minutes. See our [Guacamole setup guide](/apps/guacamole/).
 
 ## Performance and Resource Usage
 
@@ -131,10 +131,10 @@ Yes. RustDesk has native clients for Windows, macOS, Linux, Android, and iOS. Th
 
 ## Related
 
-- [How to Self-Host RustDesk](/apps/rustdesk)
-- [How to Self-Host Apache Guacamole](/apps/guacamole)
-- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Self-Hosted Alternatives to ngrok](/replace/ngrok)
-- [Remote Access Guide](/foundations/tailscale-setup)
+- [How to Self-Host RustDesk](/apps/rustdesk/)
+- [How to Self-Host Apache Guacamole](/apps/guacamole/)
+- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Self-Hosted Alternatives to ngrok](/replace/ngrok/)
+- [Remote Access Guide](/foundations/tailscale-setup/)

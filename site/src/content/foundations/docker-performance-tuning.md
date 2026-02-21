@@ -19,9 +19,9 @@ On a small self-hosting server, resources are limited. A single misconfigured co
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic Linux familiarity ([Linux Basics](/foundations/linux-basics-self-hosting))
-- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic Linux familiarity ([Linux Basics](/foundations/linux-basics-self-hosting/))
+- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes/))
 
 ## Measure Before You Optimize
 
@@ -257,7 +257,7 @@ EOF
 sudo systemctl restart docker
 ```
 
-See [Container Logging](/foundations/container-logging) for detailed log management.
+See [Container Logging](/foundations/container-logging/) for detailed log management.
 
 ### Clean Up Old Logs
 
@@ -376,7 +376,7 @@ done
 
 ### Better: Use a Monitoring Stack
 
-For proper performance monitoring, deploy a monitoring solution. See [Monitoring Basics](/foundations/monitoring-basics) for options like Uptime Kuma, Grafana, or Netdata.
+For proper performance monitoring, deploy a monitoring solution. See [Monitoring Basics](/foundations/monitoring-basics/) for options like Uptime Kuma, Grafana, or Netdata.
 
 ## FAQ
 
@@ -398,10 +398,10 @@ The Docker daemon uses 50-100MB. Each container adds minimal overhead (a few MB 
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Container Logging](/foundations/container-logging)
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Docker Common Issues](/foundations/docker-common-issues)
-- [Storage Planning](/foundations/storage-planning)
-- [Power Management](/foundations/power-management)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Container Logging](/foundations/container-logging/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Docker Common Issues](/foundations/docker-common-issues/)
+- [Storage Planning](/foundations/storage-planning/)
+- [Power Management](/foundations/power-management/)

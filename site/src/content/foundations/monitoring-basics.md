@@ -21,8 +21,8 @@ At minimum, monitor three things: **service uptime** (is it running?), **resourc
 
 ## Prerequisites
 
-- A running self-hosted server ([Getting Started](/foundations/getting-started))
-- Docker Compose knowledge ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A running self-hosted server ([Getting Started](/foundations/getting-started/))
+- Docker Compose knowledge ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - At least one service to monitor
 
 ## Monitoring Stack Options
@@ -328,15 +328,15 @@ Uptime Kuma monitors HTTPS endpoints and shows certificate expiry. Set an alert 
 
 ## Next Steps
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — add health checks to your services
-- [Linux Cron Jobs](/foundations/linux-cron-jobs) — schedule monitoring scripts
-- [Systemd Services](/foundations/linux-systemd) — run monitoring as system services
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — add health checks to your services
+- [Linux Cron Jobs](/foundations/linux-cron-jobs/) — schedule monitoring scripts
+- [Systemd Services](/foundations/linux-systemd/) — run monitoring as system services
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Linux Cron Jobs](/foundations/linux-cron-jobs)
-- [Systemd Services](/foundations/linux-systemd)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Fail2ban Setup](/foundations/fail2ban)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Linux Cron Jobs](/foundations/linux-cron-jobs/)
+- [Systemd Services](/foundations/linux-systemd/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Fail2ban Setup](/foundations/fail2ban/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -29,7 +29,7 @@ XBackBone is the minimalist choice. One container, SQLite database, PHP-based. I
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - Disk space for uploaded files
 - A domain name (recommended for shareable URLs)
@@ -199,7 +199,7 @@ XBackBone supports LDAP for centralized authentication. Configure in `config.php
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 xbackbone.example.com {
@@ -226,7 +226,7 @@ All persistent data lives in the `./config` directory:
 tar czf xbackbone-backup-$(date +%Y%m%d).tar.gz ./config
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -260,7 +260,7 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 XBackBone is the right choice if you want the simplest possible ShareX upload server. One container, SQLite, zero dependencies, works out of the box. The gallery view is clean, user management is adequate, and LDAP support adds enterprise flexibility.
 
-For more features — URL shortening, paste bin, S3 storage, Discord embeds — use [Zipline](/apps/zipline) instead. XBackBone trades features for simplicity, and that's a valid choice for users who just want a reliable upload destination.
+For more features — URL shortening, paste bin, S3 storage, Discord embeds — use [Zipline](/apps/zipline/) instead. XBackBone trades features for simplicity, and that's a valid choice for users who just want a reliable upload destination.
 
 ## Frequently Asked Questions
 
@@ -268,17 +268,17 @@ For more features — URL shortening, paste bin, S3 storage, Discord embeds — 
 Yes. XBackBone accepts any file type. Video files are stored and served as downloads — there's no built-in video player or transcoding.
 
 ### Does XBackBone support S3 storage?
-No. XBackBone supports local storage and FTP only. For S3 support, use [Zipline](/apps/zipline).
+No. XBackBone supports local storage and FTP only. For S3 support, use [Zipline](/apps/zipline/).
 
 ### How do I upgrade XBackBone?
 Pull the new image and restart: `docker compose pull && docker compose up -d`. The LinuxServer.io image handles database migrations automatically.
 
 ## Related
 
-- [Zipline vs XBackBone](/compare/zipline-vs-xbackbone)
-- [How to Self-Host Zipline](/apps/zipline)
-- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Zipline vs XBackBone](/compare/zipline-vs-xbackbone/)
+- [How to Self-Host Zipline](/apps/zipline/)
+- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

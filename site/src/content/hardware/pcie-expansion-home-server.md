@@ -198,10 +198,10 @@ No. It's a passive adapter with no performance penalty. The M.2 NVMe protocol is
 
 ## Related
 
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [10GbE Networking Guide](/hardware/10gbe-networking)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [NVMe Enclosures Guide](/hardware/nvme-enclosures)
-- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide)
-- [Home Server Rack Setup](/hardware/home-server-rack)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [10GbE Networking Guide](/hardware/10gbe-networking/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [NVMe Enclosures Guide](/hardware/nvme-enclosures/)
+- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/)
+- [Home Server Rack Setup](/hardware/home-server-rack/)

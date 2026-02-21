@@ -26,7 +26,7 @@ Tautulli is a monitoring and tracking tool for Plex Media Server. It shows you w
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 500 MB of free disk space
 - 256 MB of RAM (minimum)
 - A running Plex Media Server
@@ -159,7 +159,7 @@ Common use cases: auto-kill transcodes over a certain quality, notify specific u
 
 Tautulli works behind a reverse proxy on port 8181. Enable **Settings → Web Interface → HTTP Root** if hosting under a subpath.
 
-For more reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For more reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -173,7 +173,7 @@ docker compose start tautulli
 
 The config directory contains the SQLite database with all viewing history. Losing this means losing your statistics.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ## Troubleshooting
 
@@ -220,11 +220,11 @@ Yes. During initial setup, Tautulli imports Plex's built-in viewing history. The
 
 ## Related
 
-- [How to Self-Host Plex](/apps/plex)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Jellyseerr](/apps/jellyseerr)
-- [Overseerr vs Jellyseerr](/compare/overseerr-vs-jellyseerr)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [How to Self-Host Plex](/apps/plex/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Jellyseerr](/apps/jellyseerr/)
+- [Overseerr vs Jellyseerr](/compare/overseerr-vs-jellyseerr/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Best Self-Hosted Download Management](/best/download-management/)

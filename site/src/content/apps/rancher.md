@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker installed ([guide](/foundations/docker-compose-basics))
+- Docker installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM minimum (8 GB recommended)
 - 2 CPU cores minimum
 - A domain name (recommended for TLS)
@@ -163,9 +163,9 @@ For the Docker deployment, use a reverse proxy with proper certificates. For Hel
 
 ## Reverse Proxy
 
-If running the Docker deployment behind a reverse proxy, configure [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy) to proxy HTTPS to Rancher on port 443. WebSocket support is required for the real-time UI.
+If running the Docker deployment behind a reverse proxy, configure [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/) to proxy HTTPS to Rancher on port 443. WebSocket support is required for the real-time UI.
 
-For detailed proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For detailed proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -186,7 +186,7 @@ helm install rancher-backup-crd rancher-charts/rancher-backup-crd -n cattle-reso
 helm install rancher-backup rancher-charts/rancher-backup -n cattle-resources-system
 ```
 
-For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a full strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -233,9 +233,9 @@ Rancher is the best Kubernetes management UI available. If you're running multip
 
 **Use Rancher if:** You manage multiple Kubernetes clusters and want a unified management UI. You need cluster provisioning, RBAC management, monitoring, and GitOps.
 
-**Consider Portainer instead if:** You primarily manage Docker containers and want a simpler tool. See [Rancher vs Portainer](/compare/rancher-vs-portainer).
+**Consider Portainer instead if:** You primarily manage Docker containers and want a simpler tool. See [Rancher vs Portainer](/compare/rancher-vs-portainer/).
 
-**Consider just k3s if:** You only have one cluster and don't need a management UI — kubectl and Helm are enough. See [How to Self-Host k3s](/apps/k3s).
+**Consider just k3s if:** You only have one cluster and don't need a management UI — kubectl and Helm are enough. See [How to Self-Host k3s](/apps/k3s/).
 
 ## FAQ
 
@@ -253,10 +253,10 @@ Rancher is open source (Apache 2.0). SUSE Rancher Prime adds enterprise support 
 
 ## Related
 
-- [Rancher vs Portainer](/compare/rancher-vs-portainer)
-- [How to Self-Host k3s](/apps/k3s)
-- [How to Self-Host Portainer](/apps/portainer)
-- [k3s vs Kubernetes](/compare/k3s-vs-k8s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
+- [Rancher vs Portainer](/compare/rancher-vs-portainer/)
+- [How to Self-Host k3s](/apps/k3s/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [k3s vs Kubernetes](/compare/k3s-vs-k8s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)

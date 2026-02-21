@@ -21,12 +21,12 @@ affiliateDisclosure: false
 
 ## What Is Prometheus?
 
-[Prometheus](https://prometheus.io) is an open-source monitoring and alerting toolkit. It scrapes metrics from configured targets at regular intervals, stores them in a time-series database, and provides a powerful query language (PromQL) for analysis. Prometheus is the backbone of most self-hosted monitoring stacks — it collects the data that [Grafana](/apps/grafana) visualizes. It replaces the data collection layer of paid tools like Datadog, New Relic, and Pingdom.
+[Prometheus](https://prometheus.io) is an open-source monitoring and alerting toolkit. It scrapes metrics from configured targets at regular intervals, stores them in a time-series database, and provides a powerful query language (PromQL) for analysis. Prometheus is the backbone of most self-hosted monitoring stacks — it collects the data that [Grafana](/apps/grafana/) visualizes. It replaces the data collection layer of paid tools like Datadog, New Relic, and Pingdom.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of RAM minimum (2 GB+ recommended for many scrape targets)
 - Services or exporters to monitor
 
@@ -171,7 +171,7 @@ docker compose up -d
    - `node_memory_MemAvailable_bytes` — available memory
    - `rate(node_cpu_seconds_total{mode="idle"}[5m])` — CPU idle rate
 
-Prometheus is a data backend — for dashboards, connect it to [Grafana](/apps/grafana).
+Prometheus is a data backend — for dashboards, connect it to [Grafana](/apps/grafana/).
 
 ## Configuration
 
@@ -273,11 +273,11 @@ alerting:
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik), forward traffic to port 9090. Add `--web.external-url=https://prometheus.example.com` to the command to fix redirect URLs.
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/), forward traffic to port 9090. Add `--web.external-url=https://prometheus.example.com` to the command to fix redirect URLs.
 
 **Security:** Prometheus has no built-in authentication. Either use a reverse proxy with basic auth or restrict access to your local network. Do not expose port 9090 publicly without authentication.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -294,7 +294,7 @@ docker compose start prometheus
 
 Also back up your configuration files (`prometheus.yml`, `alert-rules.yml`, `alertmanager.yml`).
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -354,17 +354,17 @@ A single Prometheus instance can comfortably scrape 500+ targets with 15s interv
 
 ## Verdict
 
-Prometheus is the standard for self-hosted metrics collection. The exporter ecosystem covers everything — servers, containers, databases, network devices, and custom applications. PromQL is powerful once learned, and the community has built thousands of pre-made dashboards and alert rules. Pair it with [Grafana](/apps/grafana) for visualization and you have an enterprise-grade monitoring stack for free. The learning curve is steeper than simpler tools like [Uptime Kuma](/apps/uptime-kuma) or [Netdata](/apps/netdata), but the flexibility and scalability are worth it.
+Prometheus is the standard for self-hosted metrics collection. The exporter ecosystem covers everything — servers, containers, databases, network devices, and custom applications. PromQL is powerful once learned, and the community has built thousands of pre-made dashboards and alert rules. Pair it with [Grafana](/apps/grafana/) for visualization and you have an enterprise-grade monitoring stack for free. The learning curve is steeper than simpler tools like [Uptime Kuma](/apps/uptime-kuma/) or [Netdata](/apps/netdata/), but the flexibility and scalability are worth it.
 
 ## Related
 
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [How to Self-Host Netdata](/apps/netdata)
-- [Prometheus vs Zabbix](/compare/prometheus-vs-zabbix)
-- [Best Self-Hosted Monitoring](/best/monitoring)
-- [Replace Datadog](/replace/datadog)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [How to Self-Host Netdata](/apps/netdata/)
+- [Prometheus vs Zabbix](/compare/prometheus-vs-zabbix/)
+- [Best Self-Hosted Monitoring](/best/monitoring/)
+- [Replace Datadog](/replace/datadog/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

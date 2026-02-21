@@ -30,7 +30,7 @@ Self-hosted services need reliable, low-latency connections. Wi-Fi introduces:
 
 Run a Cat6 cable from your router to your server. If you can't run a cable, use a MoCA adapter (Ethernet over coax) or powerline adapter as a last resort. Never rely on Wi-Fi for a 24/7 server.
 
-For cable recommendations, see [Network Cables Guide](/hardware/network-cables-guide).
+For cable recommendations, see [Network Cables Guide](/hardware/network-cables-guide/).
 
 ### Set a Static IP Address
 
@@ -109,9 +109,9 @@ This makes your services accessible by name on your local network without going 
 | **2.5 Gbps** | USB 3.0 to 2.5GbE adapter + 2.5GbE switch | $15 adapter + $40 switch |
 | **10 Gbps** | PCIe 10GbE NIC + 10GbE switch | $30 NIC (used) + $150+ switch |
 
-**2.5 Gbps is the practical sweet spot** for home users. USB adapters are cheap, Cat6 cables work (same as 1 Gbps cables), and 2.5GbE switches are affordable. See [2.5GbE Networking Guide](/hardware/2.5gbe-networking).
+**2.5 Gbps is the practical sweet spot** for home users. USB adapters are cheap, Cat6 cables work (same as 1 Gbps cables), and 2.5GbE switches are affordable. See [2.5GbE Networking Guide](/hardware/2.5gbe-networking/).
 
-**10 Gbps** only makes sense if you have a dedicated NAS serving multiple clients simultaneously or do professional video editing against network storage. See [10GbE Networking Guide](/hardware/10gbe-networking).
+**10 Gbps** only makes sense if you have a dedicated NAS serving multiple clients simultaneously or do professional video editing against network storage. See [10GbE Networking Guide](/hardware/10gbe-networking/).
 
 ## Remote Access
 
@@ -161,7 +161,7 @@ cloudflared tunnel create my-server
 
 The traditional approach. Expose ports 80 and 443 on your router, point them at a reverse proxy (Nginx Proxy Manager, Caddy, Traefik) on your server.
 
-1. Set up a reverse proxy — [Reverse Proxy Setup Guide](/foundations/reverse-proxy-explained)
+1. Set up a reverse proxy — [Reverse Proxy Setup Guide](/foundations/reverse-proxy-explained/)
 2. Get a domain name and point it at your public IP
 3. Forward ports 80 (HTTP) and 443 (HTTPS) on your router to your server
 4. Set up SSL certificates (Let's Encrypt, automatic with most reverse proxies)
@@ -171,7 +171,7 @@ The traditional approach. Expose ports 80 and 443 on your router, point them at 
 - **Security responsibility is yours** — exposed ports are attack surface
 - **Dynamic DNS needed** if your public IP changes (most residential ISPs)
 
-**Security warning:** Exposing ports to the internet means your server is directly reachable. Use a reverse proxy with SSL, enable fail2ban, keep software updated. See [Security Basics](/foundations/security-hardening).
+**Security warning:** Exposing ports to the internet means your server is directly reachable. Use a reverse proxy with SSL, enable fail2ban, keep software updated. See [Security Basics](/foundations/security-hardening/).
 
 ## VLANs (Optional, Advanced)
 
@@ -180,11 +180,11 @@ VLANs (Virtual LANs) segment your network into isolated subnets. Useful for:
 - **Server VLAN** — dedicate a subnet to your servers
 - **Guest network** — separate guest Wi-Fi from your LAN
 
-VLANs require a **managed switch** (not the unmanaged switch that came with your router). See [Managed Switch for Homelab](/hardware/managed-switch-home-lab).
+VLANs require a **managed switch** (not the unmanaged switch that came with your router). See [Managed Switch for Homelab](/hardware/managed-switch-home-lab/).
 
 **Skip VLANs if:** You have fewer than 10 networked devices, you don't have IoT devices, and you don't need network segmentation. VLANs add complexity that most self-hosters don't need.
 
-For network topology planning, see [Homelab Network Topology](/hardware/homelab-network-topology).
+For network topology planning, see [Homelab Network Topology](/hardware/homelab-network-topology/).
 
 ## Recommended Network Hardware
 
@@ -196,7 +196,7 @@ Your ISP's router is usually fine for self-hosting. Upgrade if you need:
 - VPN server built-in
 - More reliable DHCP/DNS
 
-See [Best Routers for Self-Hosting](/hardware/best-router-self-hosting).
+See [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/).
 
 ### Switch
 
@@ -210,7 +210,7 @@ If you need more Ethernet ports than your router provides:
 | **2.5GbE 5-port** | 5 | $40–$60 | Faster NAS transfers |
 | **PoE 8-port** | 8 | $80–$150 | Powering cameras, APs |
 
-For PoE needs, see [PoE Explained](/hardware/poe-explained) and [Best PoE Switches](/hardware/best-poe-switches).
+For PoE needs, see [PoE Explained](/hardware/poe-explained/) and [Best PoE Switches](/hardware/best-poe-switches/).
 
 ### Access Points
 
@@ -219,7 +219,7 @@ If your Wi-Fi needs improvement (not for the server — for your other devices):
 - **Ubiquiti U6 Lite** (~$100) — good ecosystem, Wi-Fi 6
 - **TP-Link EAP670** (~$120) — Wi-Fi 6, high throughput
 
-See [Best Access Points for Homelab](/hardware/best-access-points).
+See [Best Access Points for Homelab](/hardware/best-access-points/).
 
 ## Common Networking Mistakes
 
@@ -246,14 +246,14 @@ For self-hosting services: yes, easily. 1 Gbps handles 50+ simultaneous 1080p Pl
 
 ## Related
 
-- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting)
-- [Managed Switch for Homelab](/hardware/managed-switch-home-lab)
-- [Best Access Points for Homelab](/hardware/best-access-points)
-- [2.5GbE Networking Guide](/hardware/2.5gbe-networking)
-- [10GbE Networking Guide](/hardware/10gbe-networking)
-- [PoE Explained](/hardware/poe-explained)
-- [Network Cables Guide](/hardware/network-cables-guide)
-- [Homelab Network Topology](/hardware/homelab-network-topology)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Routers for Self-Hosting](/hardware/best-router-self-hosting/)
+- [Managed Switch for Homelab](/hardware/managed-switch-home-lab/)
+- [Best Access Points for Homelab](/hardware/best-access-points/)
+- [2.5GbE Networking Guide](/hardware/2.5gbe-networking/)
+- [10GbE Networking Guide](/hardware/10gbe-networking/)
+- [PoE Explained](/hardware/poe-explained/)
+- [Network Cables Guide](/hardware/network-cables-guide/)
+- [Homelab Network Topology](/hardware/homelab-network-topology/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

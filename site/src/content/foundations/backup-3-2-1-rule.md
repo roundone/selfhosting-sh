@@ -49,7 +49,7 @@ Not everything on your server needs backing up. Focus on data you cannot recreat
 
 ### Back Up These
 
-**Docker volumes and bind mounts.** This is where your applications store persistent data — databases, uploads, configuration, user files. If you use [bind mounts or named volumes](/foundations/docker-volumes), back up the underlying host directories.
+**Docker volumes and bind mounts.** This is where your applications store persistent data — databases, uploads, configuration, user files. If you use [bind mounts or named volumes](/foundations/docker-volumes/), back up the underlying host directories.
 
 For named volumes, find the host path:
 
@@ -86,7 +86,7 @@ docker exec my-app sqlite3 /data/db.sqlite3 ".backup '/data/backup.sqlite3'"
 
 ### Restic (Recommended)
 
-[Restic](/apps/restic) is the best backup tool for most self-hosters. It handles deduplication, encryption, and supports multiple storage backends out of the box — local directories, SFTP, Amazon S3, Backblaze B2, Wasabi, and more.
+[Restic](/apps/restic/) is the best backup tool for most self-hosters. It handles deduplication, encryption, and supports multiple storage backends out of the box — local directories, SFTP, Amazon S3, Backblaze B2, Wasabi, and more.
 
 Key strengths:
 
@@ -110,11 +110,11 @@ export B2_ACCOUNT_KEY="your-account-key"
 restic -r b2:my-backup-bucket:/restic backup /opt/stacks
 ```
 
-Restic handles retention policies (keep last 7 daily, 4 weekly, 12 monthly) and prunes old snapshots automatically. See the [full Restic guide](/apps/restic) for complete Docker Compose setup and automation.
+Restic handles retention policies (keep last 7 daily, 4 weekly, 12 monthly) and prunes old snapshots automatically. See the [full Restic guide](/apps/restic/) for complete Docker Compose setup and automation.
 
 ### BorgBackup / Borgmatic
 
-[BorgBackup](/apps/borgmatic) (commonly used through its automation wrapper Borgmatic) is the other top-tier option. It offers excellent deduplication and compression, with strong community support.
+[BorgBackup](/apps/borgmatic/) (commonly used through its automation wrapper Borgmatic) is the other top-tier option. It offers excellent deduplication and compression, with strong community support.
 
 Key strengths:
 
@@ -126,7 +126,7 @@ The trade-off versus Restic: Borg natively supports only local and SSH backends.
 
 ### Duplicati
 
-[Duplicati](/apps/duplicati) is the GUI-based option. If you prefer configuring backups through a web interface rather than the command line, Duplicati works well.
+[Duplicati](/apps/duplicati/) is the GUI-based option. If you prefer configuring backups through a web interface rather than the command line, Duplicati works well.
 
 Key strengths:
 
@@ -161,7 +161,7 @@ find /mnt/external/backups/ -maxdepth 1 -type d -mtime +7 -exec rm -rf {} \;
 echo "Backup complete: $BACKUP_DIR"
 ```
 
-This is better than nothing, but it lacks deduplication (each backup is a full copy), encryption (data is stored in plain text), and integrity verification. Graduate to Restic or Borg when your setup grows. See [Docker Compose Basics](/foundations/docker-compose-basics) for structuring your stacks directory.
+This is better than nothing, but it lacks deduplication (each backup is a full copy), encryption (data is stored in plain text), and integrity verification. Graduate to Restic or Borg when your setup grows. See [Docker Compose Basics](/foundations/docker-compose-basics/) for structuring your stacks directory.
 
 ## Automating Backups
 
@@ -315,18 +315,18 @@ If you have a friend or family member who self-hosts, arrange a mutual offsite b
 Start with the basics and build up:
 
 1. **Today:** Identify what needs backing up. List your Docker stacks, volumes, and databases.
-2. **This week:** Set up Restic or Borgmatic with a local backup to a separate drive. See the [Restic guide](/apps/restic) or [Borgmatic guide](/apps/borgmatic) for full Docker Compose configurations.
+2. **This week:** Set up Restic or Borgmatic with a local backup to a separate drive. See the [Restic guide](/apps/restic/) or [Borgmatic guide](/apps/borgmatic/) for full Docker Compose configurations.
 3. **This month:** Add an offsite copy via cloud storage or a remote server.
 4. **Quarterly:** Test a full restore. Put it on your calendar.
 
-If you are just starting with self-hosting, read [Getting Started with Self-Hosting](/foundations/getting-started) first. For understanding how Docker stores your data, see [Docker Volumes](/foundations/docker-volumes).
+If you are just starting with self-hosting, read [Getting Started with Self-Hosting](/foundations/getting-started/) first. For understanding how Docker stores your data, see [Docker Volumes](/foundations/docker-volumes/).
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) -- structuring your stacks for easy backup
-- [Docker Volumes](/foundations/docker-volumes) -- understanding where your data lives
-- [Getting Started with Self-Hosting](/foundations/getting-started) -- the complete beginner's guide
-- [How to Self-Host Restic](/apps/restic) -- recommended backup tool, full setup guide
-- [How to Self-Host Borgmatic](/apps/borgmatic) -- BorgBackup with automated scheduling
-- [How to Self-Host Duplicati](/apps/duplicati) -- GUI-based backup for those who prefer it
-- [Best Self-Hosted Backup Solutions](/best/backup) -- full comparison of all backup tools
+- [Docker Compose Basics](/foundations/docker-compose-basics/) -- structuring your stacks for easy backup
+- [Docker Volumes](/foundations/docker-volumes/) -- understanding where your data lives
+- [Getting Started with Self-Hosting](/foundations/getting-started/) -- the complete beginner's guide
+- [How to Self-Host Restic](/apps/restic/) -- recommended backup tool, full setup guide
+- [How to Self-Host Borgmatic](/apps/borgmatic/) -- BorgBackup with automated scheduling
+- [How to Self-Host Duplicati](/apps/duplicati/) -- GUI-based backup for those who prefer it
+- [Best Self-Hosted Backup Solutions](/best/backup/) -- full comparison of all backup tools

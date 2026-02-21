@@ -101,10 +101,10 @@ Neither beats Home Assistant for most users — but between these two, pick Open
 
 ## Related
 
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [How to Self-Host OpenHAB](/apps/openhab)
-- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [OpenHAB vs Domoticz](/compare/openhab-vs-domoticz)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [How to Self-Host OpenHAB](/apps/openhab/)
+- [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [OpenHAB vs Domoticz](/compare/openhab-vs-domoticz/)

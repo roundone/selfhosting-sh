@@ -23,7 +23,7 @@ Pi-hole is often called the "gateway drug to self-hosting" for good reason. It d
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (100 MB typical usage)
 - 1 GB of free disk space
 - A static IP address or DHCP reservation for your server (critical — your entire network depends on this IP for DNS)
@@ -198,7 +198,7 @@ Pi-hole can serve as a local DNS server for your other self-hosted apps. Instead
    - `nextcloud.home` -> `192.168.1.50`
    - `grafana.home` -> `192.168.1.50`
 
-This is especially useful if you run multiple services on the same server — you can use different hostnames with a [reverse proxy](/foundations/reverse-proxy-explained) to route traffic.
+This is especially useful if you run multiple services on the same server — you can use different hostnames with a [reverse proxy](/foundations/reverse-proxy-explained/) to route traffic.
 
 ### DHCP Server
 
@@ -215,7 +215,7 @@ The trade-off: if Pi-hole goes down, devices can't get new IP addresses until it
 
 ## Reverse Proxy
 
-If you want to access Pi-hole's admin interface over HTTPS with a proper domain name (e.g., `pihole.yourdomain.com`), put it behind a reverse proxy. With [Nginx Proxy Manager](/foundations/reverse-proxy-explained):
+If you want to access Pi-hole's admin interface over HTTPS with a proper domain name (e.g., `pihole.yourdomain.com`), put it behind a reverse proxy. With [Nginx Proxy Manager](/foundations/reverse-proxy-explained/):
 
 1. Add a new proxy host pointing to your server's IP on port 80
 2. Set the domain to `pihole.yourdomain.com`
@@ -228,7 +228,7 @@ If you want to access Pi-hole's admin interface over HTTPS with a proper domain 
 
 Keep in mind that the DNS service itself (port 53) should not go through the reverse proxy — only the web admin interface on port 80/443.
 
-For more reverse proxy options, see the [Reverse Proxy Setup](/foundations/reverse-proxy-explained) foundation guide.
+For more reverse proxy options, see the [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) foundation guide.
 
 ## Backup
 
@@ -254,7 +254,7 @@ docker compose start pihole
 
 For automated backups, Pi-hole also has a built-in Teleporter tool: **Settings > Teleporter > Export**. This creates a downloadable archive of your settings, blocklists, and whitelists.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -370,14 +370,14 @@ Setup takes 10 minutes. Resource usage is trivial. Maintenance is nearly zero on
 
 If you self-host only one thing, make it Pi-hole.
 
-The main alternative is [AdGuard Home](/apps/adguard-home), which has a more modern UI, built-in DNS-over-HTTPS support, and slightly easier initial setup. But Pi-hole's community is larger, its blocklist ecosystem is more mature, and its query log and filtering tools are more powerful. For most people, Pi-hole is the better choice.
+The main alternative is [AdGuard Home](/apps/adguard-home/), which has a more modern UI, built-in DNS-over-HTTPS support, and slightly easier initial setup. But Pi-hole's community is larger, its blocklist ecosystem is more mature, and its query log and filtering tools are more powerful. For most people, Pi-hole is the better choice.
 
 ## Related
 
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server with a public IP (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (4 GB recommended for 10+ simultaneous participants)
 - 10 GB of free disk space
 - A domain name pointing to your server (required for HTTPS)
@@ -208,7 +208,7 @@ Your reverse proxy must:
 
 **UDP port 10000 cannot go through an HTTP reverse proxy.** It must be forwarded directly to the JVB container. This is the media transport port — without it, video and audio will not work for remote participants.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 ## Backup
 
@@ -220,7 +220,7 @@ tar czf jitsi-backup-$(date +%Y%m%d).tar.gz ~/.jitsi-meet-cfg/
 
 Jitsi Meet itself is mostly stateless — meetings are ephemeral. The config directory stores Prosody user accounts, SSL certificates, and custom configuration.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -262,7 +262,7 @@ Jitsi Meet is the best self-hosted video conferencing platform. It works in the 
 
 The main trade-off vs Zoom/Google Meet is reliability at scale — Jitsi requires more server resources per participant since you're hosting the media infrastructure yourself. For organizations that need privacy, compliance, or just want to stop paying per-user fees, it's the clear choice.
 
-If you need something lighter for small teams, look at peer-to-peer options. For large-scale education or webinars, [BigBlueButton](/apps/bigbluebutton) has more classroom features.
+If you need something lighter for small teams, look at peer-to-peer options. For large-scale education or webinars, [BigBlueButton](/apps/bigbluebutton/) has more classroom features.
 
 ## FAQ
 
@@ -280,15 +280,15 @@ Yes. Official apps are available for iOS and Android. They connect to your self-
 
 ### How does Jitsi compare to Zoom?
 
-Jitsi is free, self-hosted, and has no participant limits. Zoom has better performance at scale, breakout rooms, and a more polished UI. See our [Jitsi vs Zoom Alternatives](/compare/jitsi-vs-zoom-alternatives) comparison.
+Jitsi is free, self-hosted, and has no participant limits. Zoom has better performance at scale, breakout rooms, and a more polished UI. See our [Jitsi vs Zoom Alternatives](/compare/jitsi-vs-zoom-alternatives/) comparison.
 
 ## Related
 
-- [Best Self-Hosted Video Conferencing](/best/video-conferencing)
-- [How to Self-Host BigBlueButton](/apps/bigbluebutton)
-- [Self-Hosted Alternatives to Zoom](/replace/zoom)
-- [Self-Hosted Alternatives to Google Meet](/replace/google-meet)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Security Basics for Self-Hosting](/foundations/security-hardening)
+- [Best Self-Hosted Video Conferencing](/best/video-conferencing/)
+- [How to Self-Host BigBlueButton](/apps/bigbluebutton/)
+- [Self-Hosted Alternatives to Zoom](/replace/zoom/)
+- [Self-Hosted Alternatives to Google Meet](/replace/google-meet/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Security Basics for Self-Hosting](/foundations/security-hardening/)

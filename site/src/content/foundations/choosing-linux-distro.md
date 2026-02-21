@@ -21,8 +21,8 @@ That said, the distro choice matters less than you think. Docker abstracts away 
 
 ## Prerequisites
 
-- Decision to self-host ([Why Self-Host?](/foundations/selfhosting-philosophy))
-- Hardware selected ([Home Server Cost Breakdown](/foundations/home-server-cost))
+- Decision to self-host ([Why Self-Host?](/foundations/selfhosting-philosophy/))
+- Hardware selected ([Home Server Cost Breakdown](/foundations/home-server-cost/))
 
 ## Quick Recommendation
 
@@ -124,7 +124,7 @@ sudo usermod -aG docker $USER
 
 ### Desktop Environment
 
-Don't install one. Server distros are headless. You manage them via [SSH](/foundations/ssh-setup). A desktop environment wastes RAM and increases attack surface.
+Don't install one. Server distros are headless. You manage them via [SSH](/foundations/ssh-setup/). A desktop environment wastes RAM and increases attack surface.
 
 ### Init System
 
@@ -161,7 +161,7 @@ Regardless of distro:
 
 1. **Use the server/minimal install** — no desktop, no GUI
 2. **Set up SSH during install** — you'll manage remotely
-3. **Set a static IP** or configure DHCP reservation ([Static IP Guide](/foundations/dhcp-static-ip))
+3. **Set a static IP** or configure DHCP reservation ([Static IP Guide](/foundations/dhcp-static-ip/))
 4. **Create a non-root user** with sudo access
 5. **Enable automatic security updates:**
 
@@ -171,7 +171,7 @@ sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 
-6. **Set up a firewall** ([UFW Guide](/foundations/firewall-ufw)):
+6. **Set up a firewall** ([UFW Guide](/foundations/firewall-ufw/)):
 ```bash
 sudo ufw allow 22/tcp
 sudo ufw enable
@@ -207,15 +207,15 @@ If you're asking this question, use Ubuntu. Debian is marginally more stable, Ub
 
 ## Next Steps
 
-- [Getting Started with Self-Hosting](/foundations/getting-started) — set up your first server
-- [SSH Setup Guide](/foundations/ssh-setup) — configure remote access
-- [Docker Compose Basics](/foundations/docker-compose-basics) — deploy your first service
+- [Getting Started with Self-Hosting](/foundations/getting-started/) — set up your first server
+- [SSH Setup Guide](/foundations/ssh-setup/) — configure remote access
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — deploy your first service
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Home Server Cost Breakdown](/foundations/home-server-cost)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Home Server Cost Breakdown](/foundations/home-server-cost/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -95,10 +95,10 @@ Audiobookshelf has dedicated native apps for iOS and Android. Kavita relies on i
 
 ## Related
 
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Kavita](/apps/kavita)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
-- [Best Self-Hosted Ebook Servers](/best/ebook-readers)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)
+- [Best Self-Hosted Ebook Servers](/best/ebook-readers/)

@@ -24,9 +24,9 @@ Docker's default `json-file` logging driver works fine for small setups with few
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) with root or sudo access
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Basic terminal skills ([Linux Basics](/foundations/linux-basics-self-hosting))
-- Familiarity with systemd ([Linux Systemd Fundamentals](/foundations/linux-systemd))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Basic terminal skills ([Linux Basics](/foundations/linux-basics-self-hosting/))
+- Familiarity with systemd ([Linux Systemd Fundamentals](/foundations/linux-systemd/))
 
 ## Linux System Logs
 
@@ -679,19 +679,19 @@ If logs fill the disk, your applications and databases go down too. On servers w
 
 ## Next Steps
 
-- [Container Logging Deep Dive](/foundations/container-logging) -- Docker-specific logging details including structured logging and per-container configuration
-- [Monitoring Your Home Server](/foundations/monitoring-basics) -- track uptime and resource usage alongside logs
-- [Docker Troubleshooting](/foundations/docker-troubleshooting) -- use logs to debug common container issues
-- [Storage Planning](/foundations/storage-planning) -- plan disk allocation for logs, data, and backups
+- [Container Logging Deep Dive](/foundations/container-logging/) -- Docker-specific logging details including structured logging and per-container configuration
+- [Monitoring Your Home Server](/foundations/monitoring-basics/) -- track uptime and resource usage alongside logs
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/) -- use logs to debug common container issues
+- [Storage Planning](/foundations/storage-planning/) -- plan disk allocation for logs, data, and backups
 
 ## Related
 
-- [Container Logging](/foundations/container-logging)
-- [Monitoring Your Home Server](/foundations/monitoring-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Linux Systemd Fundamentals](/foundations/linux-systemd)
-- [Storage Planning](/foundations/storage-planning)
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
+- [Container Logging](/foundations/container-logging/)
+- [Monitoring Your Home Server](/foundations/monitoring-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Linux Systemd Fundamentals](/foundations/linux-systemd/)
+- [Storage Planning](/foundations/storage-planning/)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
 
 ## FAQ
 

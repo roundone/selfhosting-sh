@@ -21,11 +21,11 @@ An API turns your collection of self-hosted apps into a programmable platform. W
 
 ## Prerequisites
 
-- A Linux server with at least one self-hosted app running ([Getting Started](/foundations/getting-started))
-- Basic terminal knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
+- A Linux server with at least one self-hosted app running ([Getting Started](/foundations/getting-started/))
+- Basic terminal knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - `curl` installed (ships with every major Linux distro)
 - Python 3.8+ installed (optional, for Python examples)
-- Docker and Docker Compose if following along with the app examples ([Docker Compose Basics](/foundations/docker-compose-basics))
+- Docker and Docker Compose if following along with the app examples ([Docker Compose Basics](/foundations/docker-compose-basics/))
 
 ## REST API Fundamentals
 
@@ -157,7 +157,7 @@ curl -u "admin:your_password" \
   https://nextcloud.example.com/ocs/v2.php/cloud/users?format=json
 ```
 
-Basic Auth sends credentials with every request. Always use it over HTTPS — never over plain HTTP, or your password travels in cleartext. See [SSL Certificates](/foundations/ssl-certificates) for setting up HTTPS.
+Basic Auth sends credentials with every request. Always use it over HTTPS — never over plain HTTP, or your password travels in cleartext. See [SSL Certificates](/foundations/ssl-certificates/) for setting up HTTPS.
 
 ### OAuth 2.0 Basics
 
@@ -604,7 +604,7 @@ server.serve_forever()
 
 Always verify webhook signatures. Without verification, anyone who discovers your webhook URL can send fake events. The shared secret ensures only the legitimate source can trigger your receiver.
 
-For production use, run webhook receivers behind your reverse proxy with HTTPS. Tools like [n8n](/apps/n8n) and [Huginn](/apps/huginn) provide webhook receivers with visual workflow builders — far better than rolling your own for complex automation chains.
+For production use, run webhook receivers behind your reverse proxy with HTTPS. Tools like [n8n](/apps/n8n/) and [Huginn](/apps/huginn/) provide webhook receivers with visual workflow builders — far better than rolling your own for complex automation chains.
 
 ## Common Mistakes
 
@@ -622,7 +622,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"name": "test"}' https://a
 
 ### Using HTTP Instead of HTTPS
 
-API tokens sent over plain HTTP are visible to anyone on the network. Always use HTTPS, even on your local network. Self-signed certificates or a proper reverse proxy with Let's Encrypt solve this. See [SSL Certificates](/foundations/ssl-certificates) for setup.
+API tokens sent over plain HTTP are visible to anyone on the network. Always use HTTPS, even on your local network. Self-signed certificates or a proper reverse proxy with Let's Encrypt solve this. See [SSL Certificates](/foundations/ssl-certificates/) for setup.
 
 ### Hardcoding Credentials in Scripts
 
@@ -637,7 +637,7 @@ import os
 TOKEN = os.environ["GITEA_TOKEN"]
 ```
 
-Store credentials in environment variables or a `.env` file excluded from version control. See [Docker Environment Variables](/foundations/docker-environment-variables) for patterns.
+Store credentials in environment variables or a `.env` file excluded from version control. See [Docker Environment Variables](/foundations/docker-environment-variables/) for patterns.
 
 ### Not Handling Errors
 
@@ -669,20 +669,20 @@ Use `jq` to validate JSON before sending: `echo '{"name": "test"}' | jq .`
 
 ## Next Steps
 
-- **Automate with n8n.** If you want visual workflow automation between your self-hosted apps, [n8n](/apps/n8n) connects to hundreds of APIs with a drag-and-drop interface.
+- **Automate with n8n.** If you want visual workflow automation between your self-hosted apps, [n8n](/apps/n8n/) connects to hundreds of APIs with a drag-and-drop interface.
 - **Explore your apps' API docs.** Most self-hosted apps publish API documentation — Gitea at `/api/swagger`, Home Assistant at `/api/`, Nextcloud at the developer docs site.
-- **Build a monitoring script.** Use what you learned here to write a script that checks the health of all your services via their APIs and sends alerts through [SMTP](/foundations/smtp-email-basics).
-- **Secure your API endpoints.** Restrict API access with firewall rules and strong tokens. See the [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist).
-- **Learn about ports and networking.** Understanding how your services expose APIs on the network is critical. See [Ports Explained](/foundations/ports-explained).
+- **Build a monitoring script.** Use what you learned here to write a script that checks the health of all your services via their APIs and sends alerts through [SMTP](/foundations/smtp-email-basics/).
+- **Secure your API endpoints.** Restrict API access with firewall rules and strong tokens. See the [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/).
+- **Learn about ports and networking.** Understanding how your services expose APIs on the network is critical. See [Ports Explained](/foundations/ports-explained/).
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics) — deploy the apps you'll be interacting with via APIs
-- [Docker Environment Variables](/foundations/docker-environment-variables) — securely manage API keys and tokens in your containers
-- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist) — protect your API endpoints
-- [SSL Certificates](/foundations/ssl-certificates) — encrypt API traffic with HTTPS
-- [Ports Explained](/foundations/ports-explained) — understand how services expose their APIs on the network
-- [SMTP Email Basics](/foundations/smtp-email-basics) — send notifications triggered by API events
+- [Docker Compose Basics](/foundations/docker-compose-basics/) — deploy the apps you'll be interacting with via APIs
+- [Docker Environment Variables](/foundations/docker-environment-variables/) — securely manage API keys and tokens in your containers
+- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/) — protect your API endpoints
+- [SSL Certificates](/foundations/ssl-certificates/) — encrypt API traffic with HTTPS
+- [Ports Explained](/foundations/ports-explained/) — understand how services expose their APIs on the network
+- [SMTP Email Basics](/foundations/smtp-email-basics/) — send notifications triggered by API events
 
 ## FAQ
 
@@ -700,7 +700,7 @@ Start with the app's official documentation. Many apps publish interactive API d
 
 ### Is it safe to expose self-hosted APIs to the internet?
 
-Only behind HTTPS with proper authentication. Never expose an API endpoint over plain HTTP. Use a reverse proxy with SSL termination, require strong API tokens, and consider restricting access by IP or through a VPN like Tailscale or WireGuard. For internal-only automation, keep APIs on your local network and use [Cloudflare Tunnel](/foundations/cloudflare-tunnel) or [Tailscale](/foundations/tailscale-setup) for remote access instead of opening ports.
+Only behind HTTPS with proper authentication. Never expose an API endpoint over plain HTTP. Use a reverse proxy with SSL termination, require strong API tokens, and consider restricting access by IP or through a VPN like Tailscale or WireGuard. For internal-only automation, keep APIs on your local network and use [Cloudflare Tunnel](/foundations/cloudflare-tunnel/) or [Tailscale](/foundations/tailscale-setup/) for remote access instead of opening ports.
 
 ### What's the difference between an API key and a bearer token?
 

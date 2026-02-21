@@ -56,7 +56,7 @@ k3s is the standard for self-hosted Kubernetes. A single 70 MB binary installs i
 
 **Best for:** Anyone who wants Kubernetes without the operational overhead.
 
-[Read our full guide: How to Self-Host k3s](/apps/k3s)
+[Read our full guide: How to Self-Host k3s](/apps/k3s/)
 
 ### 2. Docker Swarm — Simplest Orchestration
 
@@ -78,7 +78,7 @@ Docker Swarm is built into Docker Engine. There's nothing to install — `docker
 
 **Best for:** Docker users who want multi-node orchestration without learning Kubernetes.
 
-[Read our full guide: How to Set Up Docker Swarm](/apps/docker-swarm)
+[Read our full guide: How to Set Up Docker Swarm](/apps/docker-swarm/)
 
 ### 3. Rancher — Best Management UI
 
@@ -100,7 +100,7 @@ Rancher is a Kubernetes management platform, not a Kubernetes distribution. It p
 
 **Best for:** Teams managing multiple Kubernetes clusters.
 
-[Read our full guide: How to Self-Host Rancher](/apps/rancher)
+[Read our full guide: How to Self-Host Rancher](/apps/rancher/)
 
 ### 4. MicroK8s — Best for Ubuntu
 
@@ -121,7 +121,7 @@ MicroK8s is Canonical's snap-based Kubernetes distribution. Its addon system (`m
 
 **Best for:** Ubuntu users who want a batteries-included Kubernetes with easy addon management.
 
-[Read our full guide: How to Self-Host MicroK8s](/apps/microk8s)
+[Read our full guide: How to Self-Host MicroK8s](/apps/microk8s/)
 
 ### 5. Nomad — Best Non-Kubernetes
 
@@ -143,7 +143,7 @@ Nomad is HashiCorp's workload orchestrator. Unlike everything else on this list,
 
 **Best for:** HashiCorp ecosystem users or those who need to orchestrate non-container workloads.
 
-[Read our full guide: How to Self-Host Nomad](/apps/nomad)
+[Read our full guide: How to Self-Host Nomad](/apps/nomad/)
 
 ### 6. Portainer — Best Docker Management UI
 
@@ -164,7 +164,7 @@ Portainer isn't an orchestrator — it's a management UI that works with Docker,
 
 **Best for:** Self-hosters who want a visual container management UI.
 
-[Read our full guide: How to Self-Host Portainer](/apps/portainer)
+[Read our full guide: How to Self-Host Portainer](/apps/portainer/)
 
 ## Full Comparison Table
 
@@ -192,17 +192,17 @@ Portainer isn't an orchestrator — it's a management UI that works with Docker,
 
 ## Related
 
-- [How to Self-Host k3s](/apps/k3s)
-- [How to Set Up Docker Swarm](/apps/docker-swarm)
-- [How to Self-Host Rancher](/apps/rancher)
-- [How to Self-Host MicroK8s](/apps/microk8s)
-- [How to Self-Host Nomad](/apps/nomad)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Portainer for Kubernetes](/apps/portainer-kubernetes)
-- [k3s vs Kubernetes](/compare/k3s-vs-k8s)
-- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes)
-- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes)
-- [k3s vs MicroK8s](/compare/k3s-vs-microk8s)
-- [Rancher vs Portainer](/compare/rancher-vs-portainer)
-- [Self-Hosted Alternatives to Managed Kubernetes](/replace/managed-kubernetes)
-- [Container Orchestration Basics](/foundations/container-orchestration-basics)
+- [How to Self-Host k3s](/apps/k3s/)
+- [How to Set Up Docker Swarm](/apps/docker-swarm/)
+- [How to Self-Host Rancher](/apps/rancher/)
+- [How to Self-Host MicroK8s](/apps/microk8s/)
+- [How to Self-Host Nomad](/apps/nomad/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Portainer for Kubernetes](/apps/portainer-kubernetes/)
+- [k3s vs Kubernetes](/compare/k3s-vs-k8s/)
+- [Docker Swarm vs Kubernetes](/compare/docker-swarm-vs-kubernetes/)
+- [Nomad vs Kubernetes](/compare/nomad-vs-kubernetes/)
+- [k3s vs MicroK8s](/compare/k3s-vs-microk8s/)
+- [Rancher vs Portainer](/compare/rancher-vs-portainer/)
+- [Self-Hosted Alternatives to Managed Kubernetes](/replace/managed-kubernetes/)
+- [Container Orchestration Basics](/foundations/container-orchestration-basics/)

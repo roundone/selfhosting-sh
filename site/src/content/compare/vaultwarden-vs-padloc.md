@@ -125,9 +125,9 @@ Vaultwarden, via the Bitwarden apps. They've been refined over years with millio
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Padloc](/apps/padloc)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Padloc](/apps/padloc/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)

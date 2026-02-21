@@ -17,12 +17,12 @@ affiliateDisclosure: false
 
 JSON (JavaScript Object Notation) is a text format for structured data. You'll encounter it constantly in self-hosting: Docker daemon configuration, API responses, application settings, Portainer templates, and webhook payloads.
 
-Unlike [YAML](/foundations/yaml-basics) (which Docker Compose uses), JSON uses braces and brackets instead of indentation. It's stricter — no comments allowed, trailing commas break parsing — but also more universal. Every programming language and API speaks JSON.
+Unlike [YAML](/foundations/yaml-basics/) (which Docker Compose uses), JSON uses braces and brackets instead of indentation. It's stricter — no comments allowed, trailing commas break parsing — but also more universal. Every programming language and API speaks JSON.
 
 ## Prerequisites
 
-- Basic command line knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
-- A text editor ([Linux Text Editors](/foundations/linux-text-editors))
+- Basic command line knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
+- A text editor ([Linux Text Editors](/foundations/linux-text-editors/))
 
 ## JSON Syntax
 
@@ -319,9 +319,9 @@ JSON does not support comments. Some tools (like VS Code) allow JSONC (JSON with
 
 ## Next Steps
 
-- Learn YAML syntax at [YAML Basics](/foundations/yaml-basics) — used for Docker Compose
-- Work with APIs using [API Basics](/foundations/api-basics)
-- Configure Docker with [Docker Compose Basics](/foundations/docker-compose-basics)
+- Learn YAML syntax at [YAML Basics](/foundations/yaml-basics/) — used for Docker Compose
+- Work with APIs using [API Basics](/foundations/api-basics/)
+- Configure Docker with [Docker Compose Basics](/foundations/docker-compose-basics/)
 
 ## FAQ
 
@@ -343,8 +343,8 @@ Historical reasons. The Docker daemon predates Docker Compose and was configured
 
 ## Related
 
-- [YAML Basics](/foundations/yaml-basics)
-- [API Basics](/foundations/api-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Linux Text Editors](/foundations/linux-text-editors)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [YAML Basics](/foundations/yaml-basics/)
+- [API Basics](/foundations/api-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Linux Text Editors](/foundations/linux-text-editors/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

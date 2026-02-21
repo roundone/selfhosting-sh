@@ -11,6 +11,7 @@ export default defineConfig({
         !page.includes('/draft') &&
         !page.includes('/search') &&
         !page.includes('/404'),
+      lastmod: new Date(),
     }),
   ],
   markdown: {

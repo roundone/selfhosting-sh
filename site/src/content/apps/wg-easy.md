@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended) with a public IP address
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 50 MB of free RAM
 - UDP port 51820 forwarded from your router to the server (required for VPN tunnel traffic)
 - A domain name pointing to your server's public IP (optional but recommended)
@@ -162,7 +162,7 @@ The WireGuard tunnel port (51820/udp) cannot be proxied. It must remain directly
 
 ### Custom DNS for Clients
 
-By default, wg-easy assigns DNS settings to clients through the web UI configuration panel. You can point clients at a self-hosted DNS server like [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) to get ad blocking across all VPN-connected devices. Set the DNS server address in the wg-easy web UI settings to your Pi-hole or AdGuard Home IP.
+By default, wg-easy assigns DNS settings to clients through the web UI configuration panel. You can point clients at a self-hosted DNS server like [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) to get ad blocking across all VPN-connected devices. Set the DNS server address in the wg-easy web UI settings to your Pi-hole or AdGuard Home IP.
 
 ### IPv6 Configuration
 
@@ -176,7 +176,7 @@ You can reverse-proxy the wg-easy web UI (port 51821) but **not** the WireGuard 
 
 ### Nginx Proxy Manager
 
-1. Add a new proxy host in [Nginx Proxy Manager](/apps/nginx-proxy-manager)
+1. Add a new proxy host in [Nginx Proxy Manager](/apps/nginx-proxy-manager/)
 2. Set the domain to your chosen subdomain (e.g., `vpn.example.com`)
 3. Forward to `http://YOUR_SERVER_IP:51821`
 4. Enable SSL with Let's Encrypt
@@ -184,7 +184,7 @@ You can reverse-proxy the wg-easy web UI (port 51821) but **not** the WireGuard 
 
 Make sure `INSECURE: "true"` is set in your Docker Compose environment, or the UI will not load behind the proxy.
 
-For more reverse proxy options, see the [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide.
+For more reverse proxy options, see the [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide.
 
 ### Firewall Considerations
 
@@ -224,7 +224,7 @@ docker run --rm \
 docker compose up -d
 ```
 
-If you lose this volume, all client configurations become invalid. Every client would need new configs generated and redistributed. Back this up regularly — see [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+If you lose this volume, all client configurations become invalid. Every client would need new configs generated and redistributed. Back this up regularly — see [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -238,7 +238,7 @@ If you lose this volume, all client configurations become invalid. Every client 
 
 **Symptom:** WireGuard client shows "handshake did not complete" or no connectivity after connecting.
 
-**Fix:** Verify UDP port 51820 is forwarded from your router to the server. Test with `sudo ss -ulnp | grep 51820` on the host to confirm the port is listening. Check that your ISP does not block UDP traffic on non-standard ports. If behind CGNAT (common with some ISPs), port forwarding will not work — consider [Cloudflare Tunnel](/apps/cloudflare-tunnel) or [Tailscale](/apps/tailscale) as alternatives.
+**Fix:** Verify UDP port 51820 is forwarded from your router to the server. Test with `sudo ss -ulnp | grep 51820` on the host to confirm the port is listening. Check that your ISP does not block UDP traffic on non-standard ports. If behind CGNAT (common with some ISPs), port forwarding will not work — consider [Cloudflare Tunnel](/apps/cloudflare-tunnel/) or [Tailscale](/apps/tailscale/) as alternatives.
 
 ### Port Forwarding Not Working
 
@@ -268,11 +268,11 @@ wg-easy is one of the lightest self-hosted applications you can run. It works co
 
 ## Verdict
 
-wg-easy is the best way to run a WireGuard VPN server if you want a GUI. Raw [WireGuard](/apps/wireguard) is faster to deploy for a single user who is comfortable with config files, but the moment you need to manage multiple clients — family members, multiple devices, friends — wg-easy saves significant time. Creating a client, handing someone a QR code, and having them connected in 30 seconds is hard to beat.
+wg-easy is the best way to run a WireGuard VPN server if you want a GUI. Raw [WireGuard](/apps/wireguard/) is faster to deploy for a single user who is comfortable with config files, but the moment you need to manage multiple clients — family members, multiple devices, friends — wg-easy saves significant time. Creating a client, handing someone a QR code, and having them connected in 30 seconds is hard to beat.
 
 The trade-off is minimal. You get the same WireGuard performance (kernel-level encryption, sub-millisecond overhead) with the convenience of a web dashboard for client management. Over 12 million Docker pulls confirm this is the community's preferred approach.
 
-If you want a managed mesh VPN instead of a traditional hub-and-spoke server, look at [Tailscale](/apps/tailscale) or [Headscale](/apps/headscale). If you prefer full CLI control with no web UI, use raw [WireGuard](/apps/wireguard) directly.
+If you want a managed mesh VPN instead of a traditional hub-and-spoke server, look at [Tailscale](/apps/tailscale/) or [Headscale](/apps/headscale/). If you prefer full CLI control with no web UI, use raw [WireGuard](/apps/wireguard/) directly.
 
 For most self-hosters running a VPN for personal or family use, wg-easy is the right choice.
 
@@ -296,16 +296,16 @@ Not directly. wg-easy manages its own key pairs and client configs in a specific
 
 ### Does wg-easy work behind CGNAT?
 
-No. WireGuard requires a publicly reachable UDP port. If your ISP uses CGNAT (carrier-grade NAT), incoming connections cannot reach your server. Alternatives for CGNAT situations include [Tailscale](/apps/tailscale), which uses relay servers, or [Cloudflare Tunnel](/apps/cloudflare-tunnel) for HTTP-based access.
+No. WireGuard requires a publicly reachable UDP port. If your ISP uses CGNAT (carrier-grade NAT), incoming connections cannot reach your server. Alternatives for CGNAT situations include [Tailscale](/apps/tailscale/), which uses relay servers, or [Cloudflare Tunnel](/apps/cloudflare-tunnel/) for HTTP-based access.
 
 ## Related
 
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host WireGuard with Docker](/apps/wireguard)
-- [How to Self-Host Tailscale with Docker](/apps/tailscale)
-- [wg-easy vs WireGuard: Which Should You Self-Host?](/compare/wg-easy-vs-wireguard)
-- [Tailscale vs WireGuard Comparison](/compare/tailscale-vs-wireguard)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host WireGuard with Docker](/apps/wireguard/)
+- [How to Self-Host Tailscale with Docker](/apps/tailscale/)
+- [wg-easy vs WireGuard: Which Should You Self-Host?](/compare/wg-easy-vs-wireguard/)
+- [Tailscale vs WireGuard Comparison](/compare/tailscale-vs-wireguard/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

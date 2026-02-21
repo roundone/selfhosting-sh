@@ -133,7 +133,7 @@ For a VM that runs Docker containers:
 | Start at boot | Yes (Options → Start at boot) |
 | Boot order | Disk first (after OS install) |
 
-After OS installation, install Docker using the official method — see [Docker Compose Basics](/foundations/docker-compose-basics).
+After OS installation, install Docker using the official method — see [Docker Compose Basics](/foundations/docker-compose-basics/).
 
 ## Creating an LXC Container
 
@@ -249,7 +249,7 @@ Or manually:
 vzdump 100 --storage local --mode snapshot --compress zstd
 ```
 
-For off-site backups, back up to an NFS share on your [NAS](/foundations/nas-basics) and ensure your NAS has its own off-site backup — see [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule).
+For off-site backups, back up to an NFS share on your [NAS](/foundations/nas-basics/) and ensure your NAS has its own off-site backup — see [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/).
 
 ## Networking
 
@@ -270,7 +270,7 @@ Then assign VLAN tags to VM network interfaces:
 Web UI → VM → Hardware → Network Device → VLAN Tag: 10
 ```
 
-For VLAN concepts, see [Subnets and VLANs Explained](/foundations/subnets-vlans).
+For VLAN concepts, see [Subnets and VLANs Explained](/foundations/subnets-vlans/).
 
 ### Firewall
 
@@ -283,7 +283,7 @@ Default policy is DROP for incoming — you must explicitly allow ports. At mini
 
 ## GPU Passthrough
 
-Passing a GPU through to a VM enables hardware-accelerated transcoding in [Jellyfin](/apps/jellyfin), machine learning in [Immich](/apps/immich), and other GPU-intensive workloads.
+Passing a GPU through to a VM enables hardware-accelerated transcoding in [Jellyfin](/apps/jellyfin/), machine learning in [Immich](/apps/immich/), and other GPU-intensive workloads.
 
 ### Intel iGPU Passthrough
 
@@ -330,10 +330,10 @@ Always create **unprivileged** containers unless you have a specific reason not 
 
 ## Next Steps
 
-- Set up Docker inside a Proxmox VM — [Docker Compose Basics](/foundations/docker-compose-basics)
-- Configure networking and VLANs — [Home Network Setup](/foundations/home-network-setup)
-- Plan your storage — [RAID Explained](/foundations/raid-explained) and [NAS Basics](/foundations/nas-basics)
-- Back up your VMs — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
+- Set up Docker inside a Proxmox VM — [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Configure networking and VLANs — [Home Network Setup](/foundations/home-network-setup/)
+- Plan your storage — [RAID Explained](/foundations/raid-explained/) and [NAS Basics](/foundations/nas-basics/)
+- Back up your VMs — [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
 
 ## FAQ
 
@@ -359,11 +359,11 @@ Proxmox. VMware ESXi's free tier was discontinued, and the full product requires
 
 ## Related
 
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [NAS Basics](/foundations/nas-basics)
-- [RAID Configurations Explained](/foundations/raid-explained)
-- [Home Network Setup](/foundations/home-network-setup)
-- [Subnets and VLANs Explained](/foundations/subnets-vlans)
-- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [NAS Basics](/foundations/nas-basics/)
+- [RAID Configurations Explained](/foundations/raid-explained/)
+- [Home Network Setup](/foundations/home-network-setup/)
+- [Subnets and VLANs Explained](/foundations/subnets-vlans/)
+- [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

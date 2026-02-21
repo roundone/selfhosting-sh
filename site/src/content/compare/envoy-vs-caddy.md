@@ -129,7 +129,7 @@ Winner: **Caddy** for self-hosting documentation and community guides.
 
 **Envoy wins for specialized infrastructure.** gRPC-native proxying, Maglev load balancing, circuit breaking, and built-in observability are capabilities Caddy does not offer. But these are capabilities most self-hosters do not need.
 
-The recommendation is simple: use [Caddy](/apps/caddy). If you find yourself needing something Caddy cannot do, that is when you evaluate [Envoy](/apps/envoy), [Traefik](/apps/traefik), or [HAProxy](/apps/haproxy).
+The recommendation is simple: use [Caddy](/apps/caddy/). If you find yourself needing something Caddy cannot do, that is when you evaluate [Envoy](/apps/envoy/), [Traefik](/apps/traefik/), or [HAProxy](/apps/haproxy/).
 
 ## FAQ
 
@@ -144,10 +144,10 @@ Yes. Both use config files that are independent of each other. Switch your port 
 
 ## Related
 
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -42,19 +42,19 @@ Home Assistant supports 2,000+ integrations, including a native HomeKit Controll
 
 The automation engine is vastly more powerful than HomeKit's. Visual automations, YAML, Node-RED, custom templates — anything you can imagine can be automated. The Lovelace dashboard works on any device (iOS, Android, desktop), removing the Apple-only limitation.
 
-[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant)]
+[Read our full guide: [How to Self-Host Home Assistant](/apps/home-assistant/)]
 
 ### openHAB — Best for Multi-Protocol Homes
 
 openHAB supports 400+ bindings including HomeKit-compatible devices. If your smart home mixes Zigbee, Z-Wave, KNX, Modbus, and WiFi protocols, openHAB provides a vendor-neutral platform that unifies them. The HomeKit Add-on in openHAB can also expose devices to Apple Home for gradual migration.
 
-[Read our full guide: [How to Self-Host openHAB](/apps/openhab)]
+[Read our full guide: [How to Self-Host openHAB](/apps/openhab/)]
 
 ### Gladys Assistant — Best for Simplicity
 
 Gladys offers a clean, modern UI with zero cloud dependencies. Supports Zigbee, Z-Wave, MQTT, Hue, and Sonos. If you found HomeKit appealing for its simplicity and want a self-hosted platform that keeps things simple (without the Apple lock-in), Gladys is the closest match in philosophy.
 
-[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant)]
+[Read our full guide: [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)]
 
 ## Migration Guide
 
@@ -75,7 +75,7 @@ Gladys offers a clean, modern UI with zero cloud dependencies. Supports Zigbee, 
 
 ### Migration Steps
 
-1. **Set up Home Assistant** ([guide](/apps/home-assistant))
+1. **Set up Home Assistant** ([guide](/apps/home-assistant/))
 2. **Use HomeKit Controller integration** to pair existing HomeKit devices directly — no factory reset required for many devices
 3. **Add a Zigbee coordinator** for Zigbee devices you want to pair natively (better reliability than HomeKit pairing)
 4. **Recreate automations** in Home Assistant (more powerful than HomeKit automations)
@@ -106,11 +106,11 @@ Gladys offers a clean, modern UI with zero cloud dependencies. Supports Zigbee, 
 
 ## Related
 
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Gladys Assistant](/apps/gladys-assistant)
-- [Replace Google Home](/replace/google-home)
-- [Replace Amazon Alexa](/replace/amazon-alexa)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Gladys Assistant](/apps/gladys-assistant/)
+- [Replace Google Home](/replace/google-home/)
+- [Replace Amazon Alexa](/replace/amazon-alexa/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

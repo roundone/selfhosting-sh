@@ -142,10 +142,10 @@ There's no official migration tool, but your blocklist URLs can be copied over m
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted DNS Alternative](/replace/google-dns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [DNS Basics](/foundations/dns-explained)
-- [Docker Networking](/foundations/docker-networking)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted DNS Alternative](/replace/google-dns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [DNS Basics](/foundations/dns-explained/)
+- [Docker Networking](/foundations/docker-networking/)

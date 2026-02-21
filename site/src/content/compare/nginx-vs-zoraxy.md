@@ -130,7 +130,7 @@ Zoraxy uses more memory — ~50-100 MB baseline, and up to ~1 GB if you enable t
 
 For homelab self-hosting, Zoraxy offers a better out-of-the-box experience with its web UI, automatic HTTPS, and container discovery. Nginx is the more capable tool — faster, more mature, and infinitely more documented — but that power comes with manual configuration for every feature.
 
-If you're comfortable with Nginx config files and want maximum control, use Nginx. If you want a modern homelab proxy that works immediately with minimal effort, Zoraxy is the better starting point. For the best of both worlds (Nginx engine + web UI), consider [Nginx Proxy Manager](/apps/nginx-proxy-manager) instead.
+If you're comfortable with Nginx config files and want maximum control, use Nginx. If you want a modern homelab proxy that works immediately with minimal effort, Zoraxy is the better starting point. For the best of both worlds (Nginx engine + web UI), consider [Nginx Proxy Manager](/apps/nginx-proxy-manager/) instead.
 
 ## FAQ
 
@@ -144,7 +144,7 @@ Not really. Zoraxy includes a basic web file manager but isn't designed as a web
 
 ### Does Nginx have a web UI option?
 
-Nginx itself doesn't have a web UI. Nginx Proxy Manager adds one on top of Nginx — it's the most popular way to get a GUI for Nginx reverse proxying. See our [NPM guide](/apps/nginx-proxy-manager).
+Nginx itself doesn't have a web UI. Nginx Proxy Manager adds one on top of Nginx — it's the most popular way to get a GUI for Nginx reverse proxying. See our [NPM guide](/apps/nginx-proxy-manager/).
 
 ### Can I migrate from Zoraxy to Nginx later?
 
@@ -152,10 +152,10 @@ Yes, but there's no automated migration tool. You'd need to recreate your proxy 
 
 ## Related
 
-- [How to Self-Host Nginx](/apps/nginx)
-- [How to Self-Host Zoraxy](/apps/zoraxy)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nginx](/apps/nginx/)
+- [How to Self-Host Zoraxy](/apps/zoraxy/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [Zoraxy vs Nginx Proxy Manager](/compare/zoraxy-vs-nginx-proxy-manager/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

@@ -149,11 +149,11 @@ Music files are the same — just point the new server at your music directory. 
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Self-Hosted YouTube Music Alternatives](/replace/youtube-music)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Self-Hosted YouTube Music Alternatives](/replace/youtube-music/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

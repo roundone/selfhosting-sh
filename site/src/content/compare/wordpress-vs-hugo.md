@@ -98,10 +98,10 @@ Hugo has a strong developer community but expects command-line proficiency. You 
 
 ## Related
 
-- [How to Self-Host WordPress](/apps/wordpress)
-- [How to Self-Host Hugo](/apps/hugo)
-- [How to Self-Host Ghost](/apps/ghost)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Ghost vs Hugo](/compare/ghost-vs-hugo)
-- [Best Self-Hosted CMS Platforms](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [How to Self-Host Hugo](/apps/hugo/)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Ghost vs Hugo](/compare/ghost-vs-hugo/)
+- [Best Self-Hosted CMS Platforms](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

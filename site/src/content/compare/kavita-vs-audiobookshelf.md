@@ -127,11 +127,11 @@ Kavita. Light novels are typically EPUB files with occasional illustrations — 
 
 ## Related
 
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita)
-- [Best Self-Hosted Ebook Readers](/best/ebook-readers)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita/)
+- [Best Self-Hosted Ebook Readers](/best/ebook-readers/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)

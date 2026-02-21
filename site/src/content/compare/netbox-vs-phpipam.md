@@ -118,8 +118,8 @@ phpIPAM has native PowerDNS integration. NetBox has DNS plugins (netbox-dns). Bo
 
 ## Related
 
-- [Unbound vs CoreDNS](/compare/unbound-vs-coredns)
-- [PowerDNS vs CoreDNS](/compare/powerdns-vs-coredns)
-- [Best Self-Hosted DNS](/best/dns-networking)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Networking Concepts](/foundations/ports-explained)
+- [Unbound vs CoreDNS](/compare/unbound-vs-coredns/)
+- [PowerDNS vs CoreDNS](/compare/powerdns-vs-coredns/)
+- [Best Self-Hosted DNS](/best/dns-networking/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Networking Concepts](/foundations/ports-explained/)

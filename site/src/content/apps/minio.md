@@ -24,12 +24,12 @@ affiliateDisclosure: false
 
 [MinIO](https://min.io/) is a high-performance, S3-compatible object storage server. It provides the same API as Amazon S3, which means any tool, library, or application that works with S3 works with MinIO — backups, media storage, application data, container registry storage, you name it. MinIO was the go-to self-hosted object storage for years.
 
-**Important: MinIO's GitHub repository was archived in February 2026.** Official Docker images were discontinued in October 2025. The software still works, but there are no new releases, security patches, or community support. For new deployments, strongly consider [Garage](/apps/garage) instead. This guide covers MinIO for existing users and those who need specific MinIO compatibility.
+**Important: MinIO's GitHub repository was archived in February 2026.** Official Docker images were discontinued in October 2025. The software still works, but there are no new releases, security patches, or community support. For new deployments, strongly consider [Garage](/apps/garage/) instead. This guide covers MinIO for existing users and those who need specific MinIO compatibility.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum)
 - Disk space proportional to your storage needs
 - A domain name (optional, for remote access)
@@ -203,7 +203,7 @@ For Nginx Proxy Manager, create two proxy hosts:
 - `s3.yourdomain.com` → `minio:9000`
 - `console.yourdomain.com` → `minio:9001`
 
-Enable WebSocket support for the console. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Enable WebSocket support for the console. For general reverse proxy setup, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -222,7 +222,7 @@ For live backups, use MinIO Client (`mc`) to mirror to another location:
 docker compose exec minio mc mirror local/backups /tmp/backup-export/
 ```
 
-For your broader backup strategy, see [Backup Strategy](/foundations/backup-strategy).
+For your broader backup strategy, see [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -274,9 +274,9 @@ deploy:
 
 MinIO was the best self-hosted S3-compatible storage for years, and it still works. But with the project archived and no security patches coming, recommending it for new deployments is difficult.
 
-**If you have an existing MinIO deployment:** It continues to work. No rush to migrate, but start planning a transition to [Garage](/apps/garage) or SeaweedFS before a security vulnerability surfaces that won't get patched.
+**If you have an existing MinIO deployment:** It continues to work. No rush to migrate, but start planning a transition to [Garage](/apps/garage/) or SeaweedFS before a security vulnerability surfaces that won't get patched.
 
-**If you're starting fresh:** Use [Garage](/apps/garage). It's actively maintained, lighter on resources, and designed for self-hosted deployments. If you need near-complete S3 API compatibility for a specific tool, test against Garage first — it covers the most common operations.
+**If you're starting fresh:** Use [Garage](/apps/garage/). It's actively maintained, lighter on resources, and designed for self-hosted deployments. If you need near-complete S3 API compatibility for a specific tool, test against Garage first — it covers the most common operations.
 
 **If you specifically need MinIO:** The Bitnami image (`bitnami/minio:2025.4.22`) works today. Pin to that version and accept the risk of running unmaintained software.
 
@@ -288,7 +288,7 @@ The software itself works, but no security patches are being published. For inte
 
 ### What's the best MinIO replacement?
 
-[Garage](/apps/garage) for most self-hosted use cases. It's lightweight, S3-compatible, actively maintained, and designed for small to medium deployments. SeaweedFS is another option for larger-scale needs.
+[Garage](/apps/garage/) for most self-hosted use cases. It's lightweight, S3-compatible, actively maintained, and designed for small to medium deployments. SeaweedFS is another option for larger-scale needs.
 
 ### Can I migrate my data from MinIO to Garage?
 
@@ -300,12 +300,12 @@ MinIO shifted focus to its commercial enterprise product and stopped supporting 
 
 ## Related
 
-- [MinIO vs Garage](/compare/minio-vs-garage)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [Self-Hosted Google Drive Alternatives](/replace/google-drive)
-- [Self-Hosted Dropbox Alternatives](/replace/dropbox)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [MinIO vs Garage](/compare/minio-vs-garage/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [Self-Hosted Google Drive Alternatives](/replace/google-drive/)
+- [Self-Hosted Dropbox Alternatives](/replace/dropbox/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

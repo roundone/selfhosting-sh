@@ -131,8 +131,8 @@ Yes. RustDesk uses ports 21115-21119, MeshCentral uses 443 (or a custom port). N
 
 ## Related
 
-- [How to Self-Host RustDesk](/apps/rustdesk)
-- [How to Self-Host MeshCentral](/apps/meshcentral)
-- [How to Self-Host Apache Guacamole](/apps/guacamole)
-- [Self-Hosted TeamViewer Alternatives](/replace/teamviewer)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
+- [How to Self-Host RustDesk](/apps/rustdesk/)
+- [How to Self-Host MeshCentral](/apps/meshcentral/)
+- [How to Self-Host Apache Guacamole](/apps/guacamole/)
+- [Self-Hosted TeamViewer Alternatives](/replace/teamviewer/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)

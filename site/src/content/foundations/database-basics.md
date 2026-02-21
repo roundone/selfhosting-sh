@@ -17,15 +17,15 @@ affiliateDisclosure: false
 
 Every self-hosted app that stores structured data — users, settings, bookmarks, notes, financial records — needs a database. Understanding database basics for self-hosting is the difference between a stack that runs reliably for years and one that loses data on the first upgrade.
 
-Most self-hosted apps bundle a database in their `docker-compose.yml`. You will see PostgreSQL, MariaDB, or SQLite referenced in nearly every app you deploy. Knowing what each one does, when to use it, and how to back it up means you can confidently run [Nextcloud](/apps/nextcloud), [Immich](/apps/immich), [Gitea](/apps/gitea), or any other app that depends on persistent structured storage.
+Most self-hosted apps bundle a database in their `docker-compose.yml`. You will see PostgreSQL, MariaDB, or SQLite referenced in nearly every app you deploy. Knowing what each one does, when to use it, and how to back it up means you can confidently run [Nextcloud](/apps/nextcloud/), [Immich](/apps/immich/), [Gitea](/apps/gitea/), or any other app that depends on persistent structured storage.
 
 This guide covers the four databases you will encounter most often, how to run them in Docker, and how to keep your data safe.
 
 ## Prerequisites
 
-- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started)
-- Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics)
-- Basic understanding of Docker volumes — see [Docker Volumes and Persistent Data](/foundations/docker-volumes)
+- A Linux server (Ubuntu 22.04+ or Debian 12+ recommended) — see [Getting Started with Self-Hosting](/foundations/getting-started/)
+- Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Basic understanding of Docker volumes — see [Docker Volumes and Persistent Data](/foundations/docker-volumes/)
 - Basic terminal comfort
 
 ## Database Types
@@ -158,7 +158,7 @@ services:
         condition: service_healthy
 ```
 
-If the app runs in the same Compose file as PostgreSQL, use the service name (`postgres`) as the hostname. If the app runs in a different Compose file, either put both on the same [Docker network](/foundations/docker-networking) or connect via `127.0.0.1:5432` (since we bound the port to localhost).
+If the app runs in the same Compose file as PostgreSQL, use the service name (`postgres`) as the hostname. If the app runs in a different Compose file, either put both on the same [Docker network](/foundations/docker-networking/) or connect via `127.0.0.1:5432` (since we bound the port to localhost).
 
 ### Creating Additional Databases
 
@@ -353,7 +353,7 @@ Add this line for daily backups at 3 AM:
 0 3 * * * /opt/scripts/db-backup.sh >> /var/log/db-backup.log 2>&1
 ```
 
-Store these backups off-server using the [3-2-1 backup rule](/foundations/backup-3-2-1-rule). A local dump is only protection against application-level corruption, not hardware failure.
+Store these backups off-server using the [3-2-1 backup rule](/foundations/backup-3-2-1-rule/). A local dump is only protection against application-level corruption, not hardware failure.
 
 ## Performance Tuning Basics
 
@@ -440,7 +440,7 @@ docker logs mariadb --tail 50
 
 **Using `:latest` tags for database images.** A database engine upgrade can change the on-disk format. If `postgres:latest` silently upgrades from 16 to 17, your data volume may become incompatible. Always pin: `postgres:16.6`, not `postgres:latest`.
 
-**Exposing database ports to the public internet.** Never bind database ports to `0.0.0.0`. The configs above bind to `127.0.0.1`, which means only the local machine can connect. If your apps connect over Docker networks, you do not need to expose the port at all — remove the `ports` section entirely and use [Docker networking](/foundations/docker-networking).
+**Exposing database ports to the public internet.** Never bind database ports to `0.0.0.0`. The configs above bind to `127.0.0.1`, which means only the local machine can connect. If your apps connect over Docker networks, you do not need to expose the port at all — remove the `ports` section entirely and use [Docker networking](/foundations/docker-networking/).
 
 **Not backing up databases.** "I have the Docker volume" is not a backup strategy. Volume data can be corrupted, accidentally deleted, or lost with the host. Run `pg_dump` or `mariadb-dump` daily and store the dumps off-server.
 
@@ -450,23 +450,23 @@ docker logs mariadb --tail 50
 
 **Copying database files for backup while the database is running.** This produces corrupt backups. Always use `pg_dump` or `mariadb-dump` — they produce consistent snapshots regardless of active writes.
 
-**Using weak passwords.** The `changeme123` passwords in this guide are placeholders. Generate real passwords with `openssl rand -base64 24` and store them using [Docker Compose secrets](/foundations/docker-compose-secrets) or an [environment variables](/foundations/docker-environment-variables) file that is not committed to version control.
+**Using weak passwords.** The `changeme123` passwords in this guide are placeholders. Generate real passwords with `openssl rand -base64 24` and store them using [Docker Compose secrets](/foundations/docker-compose-secrets/) or an [environment variables](/foundations/docker-environment-variables/) file that is not committed to version control.
 
 ## Next Steps
 
-- Set up automated off-server backups with the [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule)
-- Learn how containers communicate over [Docker Networking](/foundations/docker-networking)
-- Harden your database setup with [Docker Security Best Practices](/foundations/docker-security)
-- Deploy your first app that uses a database — [Immich](/apps/immich), [Nextcloud](/apps/nextcloud), or [Gitea](/apps/gitea) are good starting points
+- Set up automated off-server backups with the [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)
+- Learn how containers communicate over [Docker Networking](/foundations/docker-networking/)
+- Harden your database setup with [Docker Security Best Practices](/foundations/docker-security/)
+- Deploy your first app that uses a database — [Immich](/apps/immich/), [Nextcloud](/apps/nextcloud/), or [Gitea](/apps/gitea/) are good starting points
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes and Persistent Data](/foundations/docker-volumes)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Networking](/foundations/docker-networking)
-- [Environment Variables in Docker](/foundations/docker-environment-variables)
-- [Docker Security Best Practices](/foundations/docker-security)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes and Persistent Data](/foundations/docker-volumes/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Environment Variables in Docker](/foundations/docker-environment-variables/)
+- [Docker Security Best Practices](/foundations/docker-security/)
 
 ## FAQ
 

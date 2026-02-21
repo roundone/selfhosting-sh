@@ -159,11 +159,11 @@ Immich should never be your only backup. It stores photos on your local filesyst
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
-- [Self-Hosted Amazon Photos Alternatives](/replace/amazon-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Immich](/apps/immich/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos/)
+- [Self-Hosted Amazon Photos Alternatives](/replace/amazon-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

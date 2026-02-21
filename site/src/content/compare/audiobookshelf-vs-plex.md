@@ -101,16 +101,16 @@ Audiobookshelf is significantly lighter because it doesn't transcode audio. Plex
 Yes, and this is the recommended approach. Point Plex at your video/music library and Audiobookshelf at your audiobook/podcast library. They don't conflict.
 
 ### Does Audiobookshelf support music?
-No. It's specifically designed for audiobooks and podcasts. For music, use [Navidrome](/apps/navidrome) or [Jellyfin](/apps/jellyfin).
+No. It's specifically designed for audiobooks and podcasts. For music, use [Navidrome](/apps/navidrome/) or [Jellyfin](/apps/jellyfin/).
 
 ### Can Audiobookshelf import my Audible library?
 Not directly. You need to download and convert your Audible files first (using tools like OpenAudible or the Audible CLI). Once you have the audio files, Audiobookshelf will scrape metadata from Audible to match covers, descriptions, and narrator info.
 
 ## Related
 
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [How to Self-Host Plex](/apps/plex)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)

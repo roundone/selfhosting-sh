@@ -108,7 +108,7 @@ For most self-hosters — especially those running a personal or small-community
 
 Mastodon makes sense for large public instances where moderation tooling and the familiar UI matter. But if you're reading an article about self-hosting a Fediverse server, you're probably not planning to run mastodon.social — and Pleroma handles small-to-medium instances better with far less overhead.
 
-Note: If Pleroma's lighter approach appeals to you but you want something even more minimal, also look at [GoToSocial](/apps/gotosocial) — it's a headless ActivityPub server with no built-in frontend at all, designed purely as a personal instance.
+Note: If Pleroma's lighter approach appeals to you but you want something even more minimal, also look at [GoToSocial](/apps/gotosocial/) — it's a headless ActivityPub server with no built-in frontend at all, designed purely as a personal instance.
 
 ## FAQ
 
@@ -126,10 +126,10 @@ Akkoma is a fork of Pleroma with additional features (emoji reactions, better fr
 
 ## Related
 
-- [How to Self-Host Mastodon](/apps/mastodon)
-- [How to Self-Host Pleroma](/apps/pleroma)
-- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial)
-- [Best Self-Hosted Social Networks](/best/social-networks)
-- [Best Fediverse Software](/best/fediverse)
-- [Self-Hosted Alternatives to Twitter](/replace/twitter)
-- [The Fediverse Explained](/foundations/fediverse-explained)
+- [How to Self-Host Mastodon](/apps/mastodon/)
+- [How to Self-Host Pleroma](/apps/pleroma/)
+- [Mastodon vs GoToSocial](/compare/mastodon-vs-gotosocial/)
+- [Best Self-Hosted Social Networks](/best/social-networks/)
+- [Best Fediverse Software](/best/fediverse/)
+- [Self-Hosted Alternatives to Twitter](/replace/twitter/)
+- [The Fediverse Explained](/foundations/fediverse-explained/)

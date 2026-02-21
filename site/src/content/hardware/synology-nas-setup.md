@@ -53,7 +53,7 @@ AMD Ryzen R1600 (2C/4T) is faster than the Celeron J4125 in the DS224+. Four bay
 
 ### 1. Physical Setup
 
-1. Insert drives (Seagate IronWolf or WD Red Plus recommended — see [Best Hard Drives for NAS](/hardware/best-hard-drives-nas))
+1. Insert drives (Seagate IronWolf or WD Red Plus recommended — see [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/))
 2. Connect Ethernet to your router/switch
 3. Connect power and press the power button
 4. Wait 2–3 minutes for boot
@@ -208,7 +208,7 @@ For the DS923+/DS1522+, max out at 32 GB (2x16 GB DDR4 ECC SODIMM) if you plan h
 
 **Choose Mini PC if:** You want Docker containers first and storage second. Cheapest and lowest power. Pair with a USB drive or NAS-mounted shares for storage.
 
-For detailed comparisons, see [Synology vs TrueNAS](/hardware/synology-vs-truenas) and [Synology vs Unraid](/hardware/synology-vs-unraid).
+For detailed comparisons, see [Synology vs TrueNAS](/hardware/synology-vs-truenas/) and [Synology vs Unraid](/hardware/synology-vs-unraid/).
 
 ## Limitations of Synology for Self-Hosting
 
@@ -236,11 +236,11 @@ If you value your time and want a turnkey experience: yes. DSM is genuinely the 
 
 ## Related
 
-- [Best NAS for Home Server](/hardware/best-nas)
-- [Synology vs TrueNAS](/hardware/synology-vs-truenas)
-- [Synology vs Unraid](/hardware/synology-vs-unraid)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [Synology vs TrueNAS](/hardware/synology-vs-truenas/)
+- [Synology vs Unraid](/hardware/synology-vs-unraid/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

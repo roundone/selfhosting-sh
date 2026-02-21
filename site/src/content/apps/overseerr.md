@@ -20,7 +20,7 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **Overseerr is archived and no longer maintained.** The GitHub repository was archived in 2024. No new features, bug fixes, or security patches will be released. Use [Jellyseerr](/apps/jellyseerr) instead — it's the actively developed fork that adds Jellyfin and Emby support while maintaining full Plex compatibility. See our [Overseerr vs Jellyseerr comparison](/compare/overseerr-vs-jellyseerr) for details.
+> **Overseerr is archived and no longer maintained.** The GitHub repository was archived in 2024. No new features, bug fixes, or security patches will be released. Use [Jellyseerr](/apps/jellyseerr/) instead — it's the actively developed fork that adds Jellyfin and Emby support while maintaining full Plex compatibility. See our [Overseerr vs Jellyseerr comparison](/compare/overseerr-vs-jellyseerr/) for details.
 
 ## What Is Overseerr?
 
@@ -29,7 +29,7 @@ Overseerr is a media request management tool for Plex. It provides a clean inter
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 512 MB of RAM (minimum)
 - A running Plex Media Server
@@ -75,7 +75,7 @@ docker compose up -d
 
 ## Configuration
 
-Configuration is identical to [Jellyseerr](/apps/jellyseerr) — the fork maintained the same settings interface. Refer to the Jellyseerr guide for detailed configuration.
+Configuration is identical to [Jellyseerr](/apps/jellyseerr/) — the fork maintained the same settings interface. Refer to the Jellyseerr guide for detailed configuration.
 
 Key settings:
 
@@ -87,7 +87,7 @@ Key settings:
 
 Overseerr works behind a reverse proxy on port 5055. Enable WebSocket support for real-time updates.
 
-For more options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For more options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -97,13 +97,13 @@ tar -czf overseerr-backup-$(date +%Y%m%d).tar.gz /var/lib/docker/volumes/oversee
 docker compose start overseerr
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
 ### Should I migrate to Jellyseerr?
 
-**Yes.** Overseerr won't receive security patches. [Jellyseerr](/apps/jellyseerr) imports Overseerr's database — migration preserves your request history and user accounts.
+**Yes.** Overseerr won't receive security patches. [Jellyseerr](/apps/jellyseerr/) imports Overseerr's database — migration preserves your request history and user accounts.
 
 ### Overseerr can't connect to Plex
 
@@ -118,14 +118,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule).
 
 ## Verdict
 
-**Do not install Overseerr for new deployments.** Use [Jellyseerr](/apps/jellyseerr) instead. This guide exists because Overseerr remains a common search term and many existing installations are still running. If you're currently running Overseerr, plan a migration to Jellyseerr — it's a straightforward database import.
+**Do not install Overseerr for new deployments.** Use [Jellyseerr](/apps/jellyseerr/) instead. This guide exists because Overseerr remains a common search term and many existing installations are still running. If you're currently running Overseerr, plan a migration to Jellyseerr — it's a straightforward database import.
 
 ## Related
 
-- [Overseerr vs Jellyseerr](/compare/overseerr-vs-jellyseerr)
-- [How to Self-Host Jellyseerr](/apps/jellyseerr)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Plex](/apps/plex)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [Overseerr vs Jellyseerr](/compare/overseerr-vs-jellyseerr/)
+- [How to Self-Host Jellyseerr](/apps/jellyseerr/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Download Management](/best/download-management/)

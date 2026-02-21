@@ -117,10 +117,10 @@ Plex requires authentication through plex.tv servers. If Plex's auth servers go 
 
 ## Related
 
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [How to Self-Host Plex](/apps/plex)
-- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Plex vs Navidrome](/compare/plex-vs-navidrome)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [How to Self-Host Plex](/apps/plex/)
+- [Navidrome vs Jellyfin for Music](/compare/navidrome-vs-jellyfin/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)

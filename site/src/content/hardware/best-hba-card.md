@@ -165,7 +165,7 @@ If you buy a card in IR (RAID) mode, you'll need to cross-flash it to IT mode. T
 | Dell H310 | 3W | 7W | Passive |
 | LSI 9305-16i | 6W | 12W | Passive |
 
-These cards run warm. In a well-ventilated NAS case like the [Jonsbo N3](/hardware/server-case-guide), passive cooling is fine. In a compact or poorly-ventilated enclosure, stick a 40mm fan on the heatsink with zip ties.
+These cards run warm. In a well-ventilated NAS case like the [Jonsbo N3](/hardware/server-case-guide/), passive cooling is fine. In a compact or poorly-ventilated enclosure, stick a 40mm fan on the heatsink with zip ties.
 
 ## FAQ
 
@@ -191,11 +191,11 @@ Software RAID (ZFS, Unraid, mdadm) is better for home servers because:
 
 ## Related
 
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [RAID Levels Explained](/hardware/raid-explained)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [TrueNAS Hardware Guide](/hardware/truenas-hardware-guide)
-- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements)
-- [Server Case Guide](/hardware/server-case-guide)
-- [PCIe Expansion for Home Servers](/hardware/pcie-expansion-home-server)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [RAID Levels Explained](/hardware/raid-explained/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [TrueNAS Hardware Guide](/hardware/truenas-hardware-guide/)
+- [ZFS Hardware Requirements](/hardware/zfs-hardware-requirements/)
+- [Server Case Guide](/hardware/server-case-guide/)
+- [PCIe Expansion for Home Servers](/hardware/pcie-expansion-home-server/)

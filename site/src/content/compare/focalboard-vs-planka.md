@@ -106,13 +106,13 @@ There's no built-in migration tool. Focalboard data is in SQLite or PostgreSQL; 
 
 ### Does Planka support multiple views like Focalboard?
 
-No. Planka is kanban-only. If you need table, calendar, or gallery views, look at [Vikunja](/apps/vikunja) instead.
+No. Planka is kanban-only. If you need table, calendar, or gallery views, look at [Vikunja](/apps/vikunja/) instead.
 
 ## Related
 
-- [How to Self-Host Planka](/apps/planka)
-- [How to Self-Host Focalboard](/apps/focalboard)
-- [Planka vs WeKan](/compare/planka-vs-wekan)
-- [Vikunja vs Planka](/compare/vikunja-vs-planka)
-- [Best Self-Hosted Task Management](/best/task-management)
-- [Self-Hosted Alternatives to Trello](/replace/trello)
+- [How to Self-Host Planka](/apps/planka/)
+- [How to Self-Host Focalboard](/apps/focalboard/)
+- [Planka vs WeKan](/compare/planka-vs-wekan/)
+- [Vikunja vs Planka](/compare/vikunja-vs-planka/)
+- [Best Self-Hosted Task Management](/best/task-management/)
+- [Self-Hosted Alternatives to Trello](/replace/trello/)

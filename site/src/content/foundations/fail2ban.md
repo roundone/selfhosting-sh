@@ -21,9 +21,9 @@ It works with SSH, web applications, mail servers, and any service that logs aut
 
 ## Prerequisites
 
-- A Linux server running Ubuntu 22.04+ or Debian 12+ ([Getting Started](/foundations/getting-started))
-- [SSH access](/foundations/ssh-setup) to your server
-- [UFW firewall](/foundations/firewall-ufw) configured (recommended but not required)
+- A Linux server running Ubuntu 22.04+ or Debian 12+ ([Getting Started](/foundations/getting-started/))
+- [SSH access](/foundations/ssh-setup/) to your server
+- [UFW firewall](/foundations/firewall-ufw/) configured (recommended but not required)
 - Root or sudo access
 
 ## Installing Fail2ban
@@ -112,7 +112,7 @@ bantime = 3600
 findtime = 600
 ```
 
-Combined with [SSH key authentication](/foundations/ssh-setup) (which disables password login), this makes SSH extremely secure. The bots still get banned quickly, reducing log noise and server load.
+Combined with [SSH key authentication](/foundations/ssh-setup/) (which disables password login), this makes SSH extremely secure. The bots still get banned quickly, reducing log noise and server load.
 
 ### Aggressive Mode for Repeat Offenders
 
@@ -284,11 +284,11 @@ sudo systemctl restart fail2ban
 
 ## Next Steps
 
-- Harden [SSH with key-based authentication](/foundations/ssh-setup) to make password brute-force irrelevant
-- Configure your [firewall with UFW](/foundations/firewall-ufw) for static port rules
-- Set up [SSL certificates](/foundations/ssl-certificates) to encrypt all connections
-- Learn about [Docker networking](/foundations/docker-networking) for container security
-- Set up [monitoring](/foundations/monitoring-basics) to track banned IPs and attack patterns
+- Harden [SSH with key-based authentication](/foundations/ssh-setup/) to make password brute-force irrelevant
+- Configure your [firewall with UFW](/foundations/firewall-ufw/) for static port rules
+- Set up [SSL certificates](/foundations/ssl-certificates/) to encrypt all connections
+- Learn about [Docker networking](/foundations/docker-networking/) for container security
+- Set up [monitoring](/foundations/monitoring-basics/) to track banned IPs and attack patterns
 
 ## FAQ
 
@@ -306,8 +306,8 @@ Set `bantime = -1` for permanent bans. Be careful — this grows the ban list in
 
 ## Related
 
-- [SSH Setup Guide](/foundations/ssh-setup)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Docker Networking](/foundations/docker-networking)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [SSH Setup Guide](/foundations/ssh-setup/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

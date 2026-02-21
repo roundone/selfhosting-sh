@@ -98,11 +98,11 @@ Both are excellent. The biggest factor is your backup destination: cloud storage
 
 ## Related
 
-- [How to Self-Host Borgmatic](/apps/borgmatic)
-- [How to Self-Host Restic](/apps/restic)
-- [How to Self-Host BorgBackup](/apps/borgbackup)
-- [How to Self-Host Duplicati](/apps/duplicati)
-- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
-- [Duplicati vs Restic](/compare/duplicati-vs-restic)
-- [Best Self-Hosted Backup Tools](/best/backup)
-- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Borgmatic](/apps/borgmatic/)
+- [How to Self-Host Restic](/apps/restic/)
+- [How to Self-Host BorgBackup](/apps/borgbackup/)
+- [How to Self-Host Duplicati](/apps/duplicati/)
+- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Duplicati vs Restic](/compare/duplicati-vs-restic/)
+- [Best Self-Hosted Backup Tools](/best/backup/)
+- [Backup Strategy (3-2-1 Rule)](/foundations/backup-3-2-1-rule/)

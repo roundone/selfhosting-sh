@@ -160,12 +160,12 @@ Your workloads (deployments, services, configmaps) are standard Kubernetes objec
 
 ### Do I need Kubernetes for self-hosting?
 
-For most self-hosters, Docker Compose is simpler and sufficient. Kubernetes makes sense if you're running 10+ services, want automatic failover, or need to manage multiple nodes. Start with [Docker Compose](/foundations/docker-compose-basics) and graduate to Kubernetes when you outgrow it.
+For most self-hosters, Docker Compose is simpler and sufficient. Kubernetes makes sense if you're running 10+ services, want automatic failover, or need to manage multiple nodes. Start with [Docker Compose](/foundations/docker-compose-basics/) and graduate to Kubernetes when you outgrow it.
 
 ## Related
 
-- [k3s vs MicroK8s](/compare/k3s-vs-microk8s)
-- [Best Self-Hosted Container Orchestration](/best/container-orchestration)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Best Hardware for Self-Hosting](/hardware/best-mini-pc)
+- [k3s vs MicroK8s](/compare/k3s-vs-microk8s/)
+- [Best Self-Hosted Container Orchestration](/best/container-orchestration/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Best Hardware for Self-Hosting](/hardware/best-mini-pc/)

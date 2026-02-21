@@ -77,8 +77,8 @@ Not a competition. **Paperless-ngx** manages your documents. **Stirling-PDF** ma
 
 ## Related
 
-- [How to Self-Host Paperless-ngx](/apps/paperless-ngx)
-- [How to Self-Host Stirling-PDF](/apps/stirling-pdf)
-- [Best Self-Hosted Document Management](/best/document-management)
-- [Replace Adobe Acrobat with Self-Hosted Tools](/replace/adobe-acrobat)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Paperless-ngx](/apps/paperless-ngx/)
+- [How to Self-Host Stirling-PDF](/apps/stirling-pdf/)
+- [Best Self-Hosted Document Management](/best/document-management/)
+- [Replace Adobe Acrobat with Self-Hosted Tools](/replace/adobe-acrobat/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

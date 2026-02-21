@@ -138,9 +138,9 @@ ListenBrainz is an open-source, community-run alternative to Last.fm by the Musi
 
 ## Related
 
-- [How to Self-Host Maloja](/apps/maloja)
-- [How to Self-Host Navidrome](/apps/navidrome)
-- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin)
-- [Best Self-Hosted Music Streaming](/best/music-streaming)
-- [Replace Spotify](/replace/spotify)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Maloja](/apps/maloja/)
+- [How to Self-Host Navidrome](/apps/navidrome/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
+- [Best Self-Hosted Music Streaming](/best/music-streaming/)
+- [Replace Spotify](/replace/spotify/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

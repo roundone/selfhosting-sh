@@ -55,7 +55,7 @@ n8n is the most capable self-hosted automation platform available. Its visual ca
 
 **Best for:** Teams and individuals replacing Zapier/Make who need the most integrations and features.
 
-[Read our full guide: How to Self-Host n8n](/apps/n8n)
+[Read our full guide: How to Self-Host n8n](/apps/n8n/)
 
 ### 2. Activepieces — Best Open Source
 
@@ -76,7 +76,7 @@ Activepieces is the fastest-growing self-hosted automation tool and the best cho
 
 **Best for:** Users who want open-source licensing with a clean, simple UI.
 
-[Read our full guide: How to Self-Host Activepieces](/apps/activepieces)
+[Read our full guide: How to Self-Host Activepieces](/apps/activepieces/)
 
 ### 3. Node-RED — Best for IoT
 
@@ -98,7 +98,7 @@ Node-RED is the oldest and most established tool on this list (since 2013, by IB
 
 **Best for:** IoT enthusiasts, smart home users, developers who want maximum flexibility.
 
-[Read our full guide: How to Self-Host Node-RED](/apps/node-red)
+[Read our full guide: How to Self-Host Node-RED](/apps/node-red/)
 
 ### 4. Windmill — Best for Developers
 
@@ -120,7 +120,7 @@ Windmill isn't a workflow automation tool in the Zapier sense — it's a develop
 
 **Best for:** Developer teams building internal tools, scripts, and data pipelines.
 
-[Read our full guide: How to Self-Host Windmill](/apps/windmill)
+[Read our full guide: How to Self-Host Windmill](/apps/windmill/)
 
 ### 5. Huginn — Best for Web Monitoring
 
@@ -142,7 +142,7 @@ Huginn pioneered self-hosted automation. Its agent model — agents that watch, 
 
 **Best for:** Web monitoring and scraping workflows. Not recommended for new general-purpose automation projects.
 
-[Read our full guide: How to Self-Host Huginn](/apps/huginn)
+[Read our full guide: How to Self-Host Huginn](/apps/huginn/)
 
 ### 6. Automatisch — Simplest Zapier Clone
 
@@ -162,7 +162,7 @@ Automatisch is the most Zapier-like tool on this list — simple trigger-action 
 
 **Best for:** Simple automations with major platforms. Not recommended over n8n or Activepieces for most users.
 
-[Read our full guide: How to Self-Host Automatisch](/apps/automatisch)
+[Read our full guide: How to Self-Host Automatisch](/apps/automatisch/)
 
 ## Full Comparison Table
 
@@ -190,17 +190,17 @@ Automatisch is the most Zapier-like tool on this list — simple trigger-action 
 
 ## Related
 
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Activepieces](/apps/activepieces)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [How to Self-Host Windmill](/apps/windmill)
-- [How to Self-Host Huginn](/apps/huginn)
-- [How to Self-Host Automatisch](/apps/automatisch)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [n8n vs Huginn](/compare/n8n-vs-huginn)
-- [Windmill vs n8n](/compare/windmill-vs-n8n)
-- [Automatisch vs n8n](/compare/automatisch-vs-n8n)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Self-Hosted Alternatives to IFTTT](/replace/ifttt)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Activepieces](/apps/activepieces/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [How to Self-Host Windmill](/apps/windmill/)
+- [How to Self-Host Huginn](/apps/huginn/)
+- [How to Self-Host Automatisch](/apps/automatisch/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [n8n vs Huginn](/compare/n8n-vs-huginn/)
+- [Windmill vs n8n](/compare/windmill-vs-n8n/)
+- [Automatisch vs n8n](/compare/automatisch-vs-n8n/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Self-Hosted Alternatives to IFTTT](/replace/ifttt/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

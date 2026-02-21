@@ -26,7 +26,7 @@ Jellyseerr is a media request management tool that gives your users a polished i
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 512 MB of RAM (minimum)
 - A running media server (Jellyfin, Plex, or Emby)
@@ -153,7 +153,7 @@ Jellyseerr works behind a reverse proxy. Use the internal port 5055. Example Ngi
 - **Forward Port:** 5055
 - **WebSocket support:** Enable (required for real-time updates)
 
-For more reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For more reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -167,7 +167,7 @@ docker compose start jellyseerr
 
 For named volumes, use `docker run --rm -v jellyseerr-config:/data -v $(pwd):/backup alpine tar -czf /backup/jellyseerr-backup.tar.gz /data`.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ## Troubleshooting
 
@@ -219,11 +219,11 @@ Technically you can run it standalone as a media discovery/request tracker, but 
 
 ## Related
 
-- [Overseerr vs Jellyseerr](/compare/overseerr-vs-jellyseerr)
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Download Management](/best/download-management)
+- [Overseerr vs Jellyseerr](/compare/overseerr-vs-jellyseerr/)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Download Management](/best/download-management/)

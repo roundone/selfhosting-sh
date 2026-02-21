@@ -120,9 +120,9 @@ For Synology: yes, Synology recommends mirrored NVMe cache. If one cache SSD fai
 
 ## Related
 
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

@@ -27,10 +27,10 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended) with a public IP address
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - A domain name pointing to your server (required for clients to connect over HTTPS)
-- A reverse proxy with SSL configured ([guide](/foundations/reverse-proxy-explained))
+- A reverse proxy with SSL configured ([guide](/foundations/reverse-proxy-explained/))
 
 ## Docker Compose Configuration
 
@@ -391,7 +391,7 @@ Headscale requires HTTPS — Tailscale clients refuse plaintext connections. You
 3. Enable "Websockets Support" — Headscale uses long-lived HTTP connections for client coordination
 4. Under the SSL tab, request a Let's Encrypt certificate and enable "Force SSL"
 
-**Caddy configuration** (if using [Caddy](/apps/caddy) instead):
+**Caddy configuration** (if using [Caddy](/apps/caddy/) instead):
 
 ```
 headscale.example.com {
@@ -403,7 +403,7 @@ Caddy handles HTTPS automatically with Let's Encrypt. No additional TLS configur
 
 Make sure the `server_url` in your `config.yaml` matches the domain on your reverse proxy exactly. A mismatch causes clients to fail authentication.
 
-For full reverse proxy setup instructions, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For full reverse proxy setup instructions, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -444,7 +444,7 @@ find "$BACKUP_DIR" -name "headscale-*.tar.gz" -mtime +30 -delete
 echo "Backup complete: headscale-$TIMESTAMP.tar.gz"
 ```
 
-Schedule it with cron to run daily. Follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule): three copies, two media types, one offsite.
+Schedule it with cron to run daily. Follow the [3-2-1 backup strategy](/foundations/backup-3-2-1-rule/): three copies, two media types, one offsite.
 
 ## Troubleshooting
 
@@ -526,7 +526,7 @@ For most people, the right path is to start with Tailscale's free tier (up to 10
 
 ### What is the difference between Headscale and Tailscale?
 
-Tailscale is a commercial product with a hosted coordination server, polished web dashboard, and managed infrastructure. Headscale is a community-built, open-source reimplementation of that coordination server. Both use the same Tailscale clients and WireGuard protocol. The difference is who controls the server that manages your network — Tailscale Inc. or you. See [Headscale vs Tailscale](/compare/headscale-vs-tailscale) for a full comparison.
+Tailscale is a commercial product with a hosted coordination server, polished web dashboard, and managed infrastructure. Headscale is a community-built, open-source reimplementation of that coordination server. Both use the same Tailscale clients and WireGuard protocol. The difference is who controls the server that manages your network — Tailscale Inc. or you. See [Headscale vs Tailscale](/compare/headscale-vs-tailscale/) for a full comparison.
 
 ### Is Headscale compatible with official Tailscale clients?
 
@@ -542,12 +542,12 @@ Headscale is used in production by individuals, homelabs, and small organization
 
 ## Related
 
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [How to Self-Host Tailscale](/apps/tailscale)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Replace NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [How to Self-Host Tailscale](/apps/tailscale/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Replace NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

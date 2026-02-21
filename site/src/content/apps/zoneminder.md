@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB+ of free RAM (4 GB+ recommended for 5+ cameras)
 - IP cameras with RTSP or MJPEG support
 - Sufficient storage for video recordings (plan 10-50 GB per camera per week)
@@ -188,7 +188,7 @@ Install the event notification server alongside ZoneMinder:
 3. Download YOLO weights and config files
 4. Set `use_object_detection=yes` in the event notification config
 
-This adds significant capability but also complexity. For a simpler AI detection experience, consider [Frigate](/apps/frigate) instead.
+This adds significant capability but also complexity. For a simpler AI detection experience, consider [Frigate](/apps/frigate/) instead.
 
 ### Multi-Server Setup
 
@@ -223,7 +223,7 @@ location /zm/ {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -241,7 +241,7 @@ docker exec zm-db mysqldump -u zmuser -p'your-password' zm > zm-backup.sql
 docker cp zoneminder:/etc/zm ./zm-config-backup/
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -290,7 +290,7 @@ tmpfs:
 
 ZoneMinder is a reliable, battle-tested NVR with 20+ years of development behind it. It handles everything from a single home camera to dozens of cameras in a commercial deployment. The web UI is functional if dated, and the motion detection zone system is powerful once configured.
 
-However, for new self-hosted NVR deployments in 2026, [Frigate](/apps/frigate) is the better choice for most users. Frigate's AI-powered object detection (with Coral TPU) is more accurate than ZoneMinder's pixel-based motion detection, and its Home Assistant integration is significantly tighter. Choose ZoneMinder if you need a mature, proven system and don't need AI detection, or if you're already familiar with it.
+However, for new self-hosted NVR deployments in 2026, [Frigate](/apps/frigate/) is the better choice for most users. Frigate's AI-powered object detection (with Coral TPU) is more accurate than ZoneMinder's pixel-based motion detection, and its Home Assistant integration is significantly tighter. Choose ZoneMinder if you need a mature, proven system and don't need AI detection, or if you're already familiar with it.
 
 ## Frequently Asked Questions
 
@@ -304,16 +304,16 @@ Yes, through the ZoneMinder integration in Home Assistant. It provides camera en
 
 ### Should I choose ZoneMinder or Frigate?
 
-For most new setups: Frigate. For large deployments where you need fine-grained zone control, multi-server support, or have existing ZoneMinder experience: ZoneMinder. See our [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder) comparison for details.
+For most new setups: Frigate. For large deployments where you need fine-grained zone control, multi-server support, or have existing ZoneMinder experience: ZoneMinder. See our [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder/) comparison for details.
 
 ## Related
 
-- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder)
-- [ZoneMinder vs Shinobi](/compare/zoneminder-vs-shinobi)
-- [How to Self-Host Frigate](/apps/frigate)
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring](/replace/ring)
-- [Replace Nest Cam](/replace/nest-cam)
-- [NVR Hardware Guide](/hardware/nvr-hardware)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder/)
+- [ZoneMinder vs Shinobi](/compare/zoneminder-vs-shinobi/)
+- [How to Self-Host Frigate](/apps/frigate/)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring](/replace/ring/)
+- [Replace Nest Cam](/replace/nest-cam/)
+- [NVR Hardware Guide](/hardware/nvr-hardware/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

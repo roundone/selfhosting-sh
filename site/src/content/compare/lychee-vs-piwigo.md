@@ -118,13 +118,13 @@ Piwigo's longevity is remarkable — 23 years of continuous development. Its plu
 
 **Piwigo wins for serious photo management at scale.** If you have hundreds of thousands of photos, need granular user permissions, or want to customize extensively through plugins, Piwigo's 23 years of development show. It's battle-tested, scalable, and extensible in ways Lychee isn't.
 
-For AI-powered photo management with mobile upload, skip both and use [Immich](/apps/immich). For smart browsing of an existing library, use [PhotoPrism](/apps/photoprism). Lychee and Piwigo are galleries — they display and share photos, not manage or classify them.
+For AI-powered photo management with mobile upload, skip both and use [Immich](/apps/immich/). For smart browsing of an existing library, use [PhotoPrism](/apps/photoprism/). Lychee and Piwigo are galleries — they display and share photos, not manage or classify them.
 
 ## FAQ
 
 ### Can either replace Google Photos?
 
-No. Neither has mobile auto-upload (Piwigo's mobile app supports it, but it's limited compared to Google Photos), AI search, face recognition, or smart organization. For a Google Photos replacement, use [Immich](/apps/immich). Lychee and Piwigo are gallery tools for displaying and sharing photos.
+No. Neither has mobile auto-upload (Piwigo's mobile app supports it, but it's limited compared to Google Photos), AI search, face recognition, or smart organization. For a Google Photos replacement, use [Immich](/apps/immich/). Lychee and Piwigo are gallery tools for displaying and sharing photos.
 
 ### Which is better for a photography portfolio?
 
@@ -140,15 +140,15 @@ Not natively. There are community plugins for LDAP and external authentication, 
 
 ### Which handles RAW files better?
 
-Piwigo has broader RAW format support through its longer development history and plugin ecosystem. Lychee supports common RAW formats but processing is less mature. For RAW-heavy workflows, consider [PhotoPrism](/apps/photoprism), which has the best RAW handling.
+Piwigo has broader RAW format support through its longer development history and plugin ecosystem. Lychee supports common RAW formats but processing is less mature. For RAW-heavy workflows, consider [PhotoPrism](/apps/photoprism/), which has the best RAW handling.
 
 ## Related
 
-- [How to Self-Host Lychee](/apps/lychee)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

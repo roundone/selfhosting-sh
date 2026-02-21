@@ -86,9 +86,9 @@ Watchtower (deprecated) automatically applied updates, which could break service
 
 ## Related
 
-- [How to Self-Host Dockge with Docker](/apps/dockge)
-- [How to Self-Host Diun with Docker](/apps/diun)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Best Docker Management Tools](/best/docker-management)
-- [Updating Docker Containers Safely](/foundations/docker-updating)
+- [How to Self-Host Dockge with Docker](/apps/dockge/)
+- [How to Self-Host Diun with Docker](/apps/diun/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Updating Docker Containers Safely](/foundations/docker-updating/)

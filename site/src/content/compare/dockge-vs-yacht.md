@@ -107,11 +107,11 @@ Development has effectively stalled. The last release was in 2023, and there is 
 
 ### Can Dockge handle templates like Yacht?
 
-No, Dockge does not have a template system. You write Compose files or paste them from external sources. If you want templates, [Portainer](/apps/portainer) offers them alongside full Compose support.
+No, Dockge does not have a template system. You write Compose files or paste them from external sources. If you want templates, [Portainer](/apps/portainer/) offers them alongside full Compose support.
 
 ### What about Portainer as an alternative?
 
-[Portainer](/apps/portainer) is the full-featured option that covers what both Dockge and Yacht do, plus much more. It is heavier but more capable. See [Portainer vs Dockge](/compare/portainer-vs-dockge) and [Portainer vs Yacht](/compare/portainer-vs-yacht).
+[Portainer](/apps/portainer/) is the full-featured option that covers what both Dockge and Yacht do, plus much more. It is heavier but more capable. See [Portainer vs Dockge](/compare/portainer-vs-dockge/) and [Portainer vs Yacht](/compare/portainer-vs-yacht/).
 
 ## Final Verdict
 
@@ -121,9 +121,9 @@ If you want a lightweight Docker Compose manager, use Dockge. If you want templa
 
 ## Related
 
-- [How to Self-Host Dockge with Docker](/apps/dockge)
-- [How to Self-Host Yacht with Docker](/apps/yacht)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Portainer vs Yacht](/compare/portainer-vs-yacht)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Dockge with Docker](/apps/dockge/)
+- [How to Self-Host Yacht with Docker](/apps/yacht/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Portainer vs Yacht](/compare/portainer-vs-yacht/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

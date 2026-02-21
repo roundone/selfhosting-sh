@@ -163,14 +163,14 @@ Elasticsearch has a vastly larger ecosystem. Typesense compensates with simplici
 
 **Elasticsearch is the right choice for data infrastructure.** If you need log aggregation, complex analytics, or search at massive scale with the full ELK ecosystem, Elasticsearch remains the standard.
 
-Also consider [Meilisearch](/apps/meilisearch) as another application search alternative — it offers similar simplicity to Typesense with disk-based storage (lower RAM requirements at the cost of higher latency).
+Also consider [Meilisearch](/apps/meilisearch/) as another application search alternative — it offers similar simplicity to Typesense with disk-based storage (lower RAM requirements at the cost of higher latency).
 
 ## Related
 
-- [How to Self-Host Typesense](/apps/typesense)
-- [How to Self-Host Elasticsearch](/apps/elasticsearch)
-- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense)
-- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch)
-- [Best Self-Hosted Search Engines](/best/search-engines)
-- [Self-Hosted Algolia Alternatives](/replace/algolia)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Typesense](/apps/typesense/)
+- [How to Self-Host Elasticsearch](/apps/elasticsearch/)
+- [Meilisearch vs Typesense](/compare/meilisearch-vs-typesense/)
+- [Meilisearch vs Elasticsearch](/compare/meilisearch-vs-elasticsearch/)
+- [Best Self-Hosted Search Engines](/best/search-engines/)
+- [Self-Hosted Algolia Alternatives](/replace/algolia/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

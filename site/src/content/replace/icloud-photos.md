@@ -32,7 +32,7 @@ affiliateDisclosure: false
 
 ### 1. Immich — Best Overall Replacement
 
-[Immich](/apps/immich) is the closest thing to a self-hosted iCloud Photos experience. It has native iOS and Android apps with background auto-upload, facial recognition, CLIP-based smart search, shared albums, timeline view, and a map view — nearly everything iCloud Photos offers, running on your own server.
+[Immich](/apps/immich/) is the closest thing to a self-hosted iCloud Photos experience. It has native iOS and Android apps with background auto-upload, facial recognition, CLIP-based smart search, shared albums, timeline view, and a map view — nearly everything iCloud Photos offers, running on your own server.
 
 **Why it's the best iCloud Photos replacement:**
 - The iOS app feels familiar to iCloud Photos users — auto-upload just works
@@ -41,13 +41,13 @@ affiliateDisclosure: false
 - Shared albums work for family photo sharing
 - Partner sharing gives full library access to family members
 
-**Setup difficulty:** Medium. Four Docker containers, 15 minutes to deploy. See our [full Immich guide](/apps/immich).
+**Setup difficulty:** Medium. Four Docker containers, 15 minutes to deploy. See our [full Immich guide](/apps/immich/).
 
 **Minimum hardware:** 4 GB RAM, 4-core CPU, SSD for database.
 
 ### 2. PhotoPrism — Best for Existing Libraries
 
-[PhotoPrism](/apps/photoprism) excels at indexing and browsing large existing photo libraries. It scans your photos, extracts metadata, detects faces, and provides a clean browsing interface. It's more of a photo library browser than a full iCloud replacement.
+[PhotoPrism](/apps/photoprism/) excels at indexing and browsing large existing photo libraries. It scans your photos, extracts metadata, detects faces, and provides a clean browsing interface. It's more of a photo library browser than a full iCloud replacement.
 
 **Why choose PhotoPrism:**
 - Excellent at scanning and organizing existing photo directories
@@ -61,11 +61,11 @@ affiliateDisclosure: false
 - No shared albums
 - Development has slowed
 
-**Setup difficulty:** Medium. Three Docker containers. See our [full PhotoPrism guide](/apps/photoprism).
+**Setup difficulty:** Medium. Three Docker containers. See our [full PhotoPrism guide](/apps/photoprism/).
 
 ### 3. LibrePhotos — Best Fully Open-Source Option
 
-[LibrePhotos](/apps/librephotos) is a fully MIT-licensed photo manager with face recognition, auto-tagging, and timeline views. It's the best option if open-source licensing matters to you.
+[LibrePhotos](/apps/librephotos/) is a fully MIT-licensed photo manager with face recognition, auto-tagging, and timeline views. It's the best option if open-source licensing matters to you.
 
 **Why choose LibrePhotos:**
 - MIT license — fully open, no restrictions
@@ -79,7 +79,7 @@ affiliateDisclosure: false
 - No CLIP search
 - Slower development velocity
 
-**Setup difficulty:** Medium. Four Docker containers. See our [full LibrePhotos guide](/apps/librephotos).
+**Setup difficulty:** Medium. Four Docker containers. See our [full LibrePhotos guide](/apps/librephotos/).
 
 ## Migration Guide
 
@@ -174,10 +174,10 @@ Immich supports shared albums with a shareable link. Recipients don't need an ac
 
 ## Related
 
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [How to Self-Host Immich](/apps/immich)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [How to Self-Host Immich](/apps/immich/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

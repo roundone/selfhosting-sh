@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-**Intel N100 mini PC (~$150) handles 3-5 simultaneous 4K→1080p transcodes** via Intel Quick Sync. That's enough for most households. The 6W TDP means your electricity cost is under $1/month. For most self-hosters running [Plex](/apps/plex) or [Jellyfin](/apps/jellyfin), this is the sweet spot — you don't need a dedicated GPU.
+**Intel N100 mini PC (~$150) handles 3-5 simultaneous 4K→1080p transcodes** via Intel Quick Sync. That's enough for most households. The 6W TDP means your electricity cost is under $1/month. For most self-hosters running [Plex](/apps/plex/) or [Jellyfin](/apps/jellyfin/), this is the sweet spot — you don't need a dedicated GPU.
 
 If you need 10+ simultaneous transcodes (shared library with many users), an Intel Arc A380 GPU ($100-130) or an Intel N305 mini PC ($250-350) scales further.
 
@@ -67,7 +67,7 @@ If you regularly have 10+ simultaneous transcodes, a dedicated GPU provides more
 | NVIDIA GTX 1650 | 4 GB | 3 (patched: unlimited) | 75W | $100-150 |
 | NVIDIA P2000 | 5 GB | Unlimited | 75W | $150-200 (used) |
 
-**Intel Arc A380 is the best choice for a dedicated transcoding GPU.** No artificial stream limits, AV1 encode/decode, lower power than NVIDIA options, and cheaper. The A380 in a [low-power mini PC](/hardware/low-power-home-server) or [DIY build](/hardware/diy-nas-build) handles more transcodes than most households will ever need.
+**Intel Arc A380 is the best choice for a dedicated transcoding GPU.** No artificial stream limits, AV1 encode/decode, lower power than NVIDIA options, and cheaper. The A380 in a [low-power mini PC](/hardware/low-power-home-server/) or [DIY build](/hardware/diy-nas-build/) handles more transcodes than most households will ever need.
 
 **NVIDIA caveat:** Consumer NVIDIA GPUs (GTX/RTX) are limited to 3 simultaneous NVENC sessions by the driver. You can patch the driver to remove this limit, but it breaks on every driver update. Professional cards (Quadro P2000, T400, A2000) have no limit but cost more. The NVIDIA driver patch works on Linux — search "nvidia-patch" on GitHub.
 
@@ -90,7 +90,7 @@ Without hardware transcoding, the CPU does all the work in software. A modern 8-
 | HDR tone mapping | Supported (12th Gen+ Intel) | Supported (12th Gen+ Intel) |
 | AV1 decode | Supported | Supported |
 
-**Jellyfin is free.** Plex requires Plex Pass ($5/month or $120 lifetime) for hardware transcoding. If hardware transcoding is a priority and you don't want to pay, Jellyfin is the move. See our [Plex vs Jellyfin comparison](/compare/plex-vs-jellyfin).
+**Jellyfin is free.** Plex requires Plex Pass ($5/month or $120 lifetime) for hardware transcoding. If hardware transcoding is a priority and you don't want to pay, Jellyfin is the move. See our [Plex vs Jellyfin comparison](/compare/plex-vs-jellyfin/).
 
 ## Setting Up Hardware Transcoding
 
@@ -196,10 +196,10 @@ For self-hosting, Intel Quick Sync wins. It's integrated into the CPU (no separa
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Low-Power Home Server](/hardware/low-power-home-server)
-- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server)
-- [Fanless Mini PCs](/hardware/fanless-mini-pc)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Low-Power Home Server](/hardware/low-power-home-server/)
+- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server/)
+- [Fanless Mini PCs](/hardware/fanless-mini-pc/)

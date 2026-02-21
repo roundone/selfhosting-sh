@@ -34,7 +34,7 @@ GitBook's free plan is limited to one public space with one user. The Plus plan 
 
 ### Wiki.js — Best for Git-Synced Documentation
 
-[Wiki.js](/apps/wikijs) is the closest self-hosted replacement for GitBook. It supports Markdown natively, syncs content to a Git repository bidirectionally, has a polished editor with live preview, and serves clean documentation pages. The Git sync means your docs live in your repo — edit locally in VS Code or through the web UI.
+[Wiki.js](/apps/wikijs/) is the closest self-hosted replacement for GitBook. It supports Markdown natively, syncs content to a Git repository bidirectionally, has a polished editor with live preview, and serves clean documentation pages. The Git sync means your docs live in your repo — edit locally in VS Code or through the web UI.
 
 **How it compares to GitBook:**
 - Bidirectional Git sync (GitBook's is increasingly restricted)
@@ -44,11 +44,11 @@ GitBook's free plan is limited to one public space with one user. The Plus plan 
 
 **Setup complexity:** Low. Docker Compose with PostgreSQL.
 
-[Read our full guide: [How to Self-Host Wiki.js](/apps/wikijs)]
+[Read our full guide: [How to Self-Host Wiki.js](/apps/wikijs/)]
 
 ### BookStack — Best for Structured Product Docs
 
-[BookStack](/apps/bookstack) organizes content into books, chapters, and pages — a natural fit for product documentation. The WYSIWYG editor is reliable, the API allows automation, and the search is excellent.
+[BookStack](/apps/bookstack/) organizes content into books, chapters, and pages — a natural fit for product documentation. The WYSIWYG editor is reliable, the API allows automation, and the search is excellent.
 
 **How it compares to GitBook:**
 - Better organizational hierarchy (shelves > books > chapters > pages)
@@ -58,7 +58,7 @@ GitBook's free plan is limited to one public space with one user. The Plus plan 
 
 **Setup complexity:** Low. Docker Compose with MySQL.
 
-[Read our full guide: [How to Self-Host BookStack](/apps/bookstack)]
+[Read our full guide: [How to Self-Host BookStack](/apps/bookstack/)]
 
 ### Docusaurus — Best for Developer Documentation
 
@@ -87,7 +87,7 @@ MkDocs generates documentation sites from Markdown. The Material theme makes the
 
 ### Docmost — Best Collaborative Option
 
-[Docmost](/apps/docmost) is a newer wiki with a Notion-like block editor, real-time collaboration, and team spaces. While not a documentation-specific tool like GitBook, it works well for internal docs.
+[Docmost](/apps/docmost/) is a newer wiki with a Notion-like block editor, real-time collaboration, and team spaces. While not a documentation-specific tool like GitBook, it works well for internal docs.
 
 **How it compares to GitBook:**
 - Block-based editor with real-time collaboration
@@ -96,7 +96,7 @@ MkDocs generates documentation sites from Markdown. The Material theme makes the
 
 **Setup complexity:** Low. Docker Compose with PostgreSQL.
 
-[Read our full guide: [How to Self-Host Docmost](/apps/docmost)]
+[Read our full guide: [How to Self-Host Docmost](/apps/docmost/)]
 
 ## Migration Guide
 
@@ -134,18 +134,18 @@ MkDocs generates documentation sites from Markdown. The Material theme makes the
 ## What You Give Up
 
 - **Published site polish.** GitBook generates clean, professional documentation sites out of the box. Self-hosted tools require more configuration to achieve the same look.
-- **AI features.** GitBook's AI search and writing assistant have no self-hosted equivalent (though you can integrate [Ollama](/apps/ollama) or other LLMs).
+- **AI features.** GitBook's AI search and writing assistant have no self-hosted equivalent (though you can integrate [Ollama](/apps/ollama/) or other LLMs).
 - **Zero maintenance.** GitBook is SaaS — they handle uptime, updates, and infrastructure. Self-hosting means you manage all of this.
 - **Change requests.** GitBook's change request workflow (similar to pull requests) is built in. Wiki.js achieves this via Git sync, but BookStack and Docmost don't have this feature.
 
 ## Related
 
-- [Best Self-Hosted Wiki](/best/wiki)
-- [How to Self-Host Wiki.js](/apps/wikijs)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Docmost](/apps/docmost)
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Self-Hosted Alternatives to Notion](/replace/notion-wiki)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Wiki](/best/wiki/)
+- [How to Self-Host Wiki.js](/apps/wikijs/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Self-Hosted Alternatives to Notion](/replace/notion-wiki/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

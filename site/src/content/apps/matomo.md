@@ -17,14 +17,14 @@ affiliateDisclosure: false
 
 Matomo (formerly Piwik) is the most feature-rich self-hosted web analytics platform available. It gives you everything Google Analytics does — pageviews, referrers, goals, funnels, e-commerce tracking, custom dimensions, a tag manager — except you own the data and the infrastructure. It's GDPR compliant out of the box and can run in cookieless mode, which means no consent banners required.
 
-If you need a full Google Analytics replacement with plugin extensibility and enterprise-grade reporting, Matomo is the tool. If you just need simple visitor counts and top pages, look at [Plausible](/apps/plausible) or [Umami](/apps/umami) instead — they're lighter and simpler.
+If you need a full Google Analytics replacement with plugin extensibility and enterprise-grade reporting, Matomo is the tool. If you just need simple visitor counts and top pages, look at [Plausible](/apps/plausible/) or [Umami](/apps/umami/) instead — they're lighter and simpler.
 
 [Official site: matomo.org](https://matomo.org) | [GitHub: matomo-org/matomo](https://github.com/matomo-org/matomo)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB recommended for sites with significant traffic)
 - 10 GB of free disk space (grows with traffic volume)
 - A domain name pointed at your server (for HTTPS and the tracking endpoint)
@@ -315,7 +315,7 @@ assume_secure_protocol = 1
 proxy_client_headers[] = HTTP_X_FORWARDED_FOR
 ```
 
-For a detailed reverse proxy walkthrough, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For a detailed reverse proxy walkthrough, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -348,7 +348,7 @@ docker run --rm -v matomo-data:/data -v $(pwd)/backups:/backup alpine \
   tar xzf /backup/matomo-files-20260216.tar.gz -C /data
 ```
 
-Run backups on a schedule. The database is the critical piece — analytics data is irreplaceable. See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+Run backups on a schedule. The database is the critical piece — analytics data is irreplaceable. See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -413,7 +413,7 @@ Or add it through the UI at **Administration → System → General Settings →
 - **CPU:** Medium. PHP-based, so report archiving is CPU-intensive. One or two cores handles moderate traffic fine. Heavy sites (100K+ pageviews/day) benefit from more.
 - **Disk:** ~500 MB for the application. Database grows roughly 1 GB per million pageviews tracked, depending on what you log. Plan storage based on your traffic volume.
 
-Matomo is significantly heavier than [Plausible](/apps/plausible) or [Umami](/apps/umami). It earns that weight with deeper analytics capabilities.
+Matomo is significantly heavier than [Plausible](/apps/plausible/) or [Umami](/apps/umami/). It earns that weight with deeper analytics capabilities.
 
 ## Verdict
 
@@ -423,19 +423,19 @@ The trade-off is resource usage and complexity. Matomo is a PHP application with
 
 **Choose Matomo if:** You need enterprise-grade analytics features, want a direct Google Analytics replacement with data import, need e-commerce tracking, or have compliance requirements that demand a full audit trail of analytics data.
 
-**Choose [Plausible](/apps/plausible) if:** You want lightweight, privacy-first analytics with a clean dashboard and minimal resource usage. It's the best option for most blogs and marketing sites.
+**Choose [Plausible](/apps/plausible/) if:** You want lightweight, privacy-first analytics with a clean dashboard and minimal resource usage. It's the best option for most blogs and marketing sites.
 
-**Choose [Umami](/apps/umami) if:** You want something between the two — more features than Plausible, lighter than Matomo, with a modern UI.
+**Choose [Umami](/apps/umami/) if:** You want something between the two — more features than Plausible, lighter than Matomo, with a modern UI.
 
 For most self-hosters running personal sites or small businesses, Plausible or Umami is the better fit. For teams that actually use advanced analytics features, Matomo is the only self-hosted option that competes with Google Analytics feature-for-feature.
 
 ## Related
 
-- [How to Self-Host Plausible Analytics](/apps/plausible)
-- [How to Self-Host Umami](/apps/umami)
-- [Plausible vs Umami: Which Should You Self-Host?](/compare/plausible-vs-umami)
-- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
-- [Best Self-Hosted Analytics Platforms](/best/analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Plausible Analytics](/apps/plausible/)
+- [How to Self-Host Umami](/apps/umami/)
+- [Plausible vs Umami: Which Should You Self-Host?](/compare/plausible-vs-umami/)
+- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics/)
+- [Best Self-Hosted Analytics Platforms](/best/analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

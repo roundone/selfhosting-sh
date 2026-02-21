@@ -29,7 +29,7 @@ AFFiNE is still maturing but is one of the most ambitious self-hosted Notion alt
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM minimum (8 GB recommended)
 - 20 GB of free disk space
 - A domain name (required for remote access)
@@ -178,7 +178,7 @@ environment:
 
 Set up a reverse proxy pointing to port 3010. AFFiNE uses WebSocket connections for real-time collaboration, so ensure WebSocket passthrough is enabled.
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -188,7 +188,7 @@ Critical data to back up:
 - **Config volume:** `affine-config` contains server configuration
 - **Environment file:** Your `.env` with credentials
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -222,18 +222,18 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 AFFiNE is the most visually ambitious self-hosted Notion alternative. The combination of documents and whiteboards in one app is unique — no other self-hosted tool does this. If you use Notion and Miro together, AFFiNE aims to replace both.
 
-The caveat: AFFiNE is still in active development (pre-1.0). Expect bugs, missing features, and breaking changes between versions. For production team documentation, [Outline](/apps/outline) or [BookStack](/apps/bookstack) are more stable. For personal experimentation or teams comfortable with beta software, AFFiNE is exciting and worth watching.
+The caveat: AFFiNE is still in active development (pre-1.0). Expect bugs, missing features, and breaking changes between versions. For production team documentation, [Outline](/apps/outline/) or [BookStack](/apps/bookstack/) are more stable. For personal experimentation or teams comfortable with beta software, AFFiNE is exciting and worth watching.
 
-Choose AFFiNE if whiteboards are essential to your workflow. Choose [AppFlowy](/apps/appflowy) for a more mature Notion clone. Choose [Outline](/apps/outline) for stable team documentation.
+Choose AFFiNE if whiteboards are essential to your workflow. Choose [AppFlowy](/apps/appflowy/) for a more mature Notion clone. Choose [Outline](/apps/outline/) for stable team documentation.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine)
-- [How to Self-Host AppFlowy](/apps/appflowy)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [Replace Notion](/replace/notion)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [How to Self-Host AppFlowy](/apps/appflowy/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [Replace Notion](/replace/notion/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

@@ -48,7 +48,7 @@ affiliateDisclosure: false
 
 #### 1. Ollama + Open WebUI — Best Overall
 
-[Ollama](/apps/ollama) is the easiest way to run LLMs locally. One command downloads and runs models — Llama 3, Mistral, Gemma, Phi, and dozens more. Pair it with [Open WebUI](/apps/open-webui) for a polished ChatGPT-like interface with conversations, model switching, RAG, and multi-user support.
+[Ollama](/apps/ollama/) is the easiest way to run LLMs locally. One command downloads and runs models — Llama 3, Mistral, Gemma, Phi, and dozens more. Pair it with [Open WebUI](/apps/open-webui/) for a polished ChatGPT-like interface with conversations, model switching, RAG, and multi-user support.
 
 **Pros:**
 - Dead-simple setup — `ollama run llama3` and you're chatting
@@ -64,11 +64,11 @@ affiliateDisclosure: false
 
 **Best for:** Personal use, small teams, developers experimenting with LLMs.
 
-[Read our Ollama guide](/apps/ollama) | [Read our Open WebUI guide](/apps/open-webui)
+[Read our Ollama guide](/apps/ollama/) | [Read our Open WebUI guide](/apps/open-webui/)
 
 #### 2. vLLM — Best for Production
 
-[vLLM](/apps/vllm) is a high-throughput LLM serving engine with PagedAttention for efficient memory management. It serves an OpenAI-compatible API and handles concurrent requests efficiently — the go-to choice for production deployments.
+[vLLM](/apps/vllm/) is a high-throughput LLM serving engine with PagedAttention for efficient memory management. It serves an OpenAI-compatible API and handles concurrent requests efficiently — the go-to choice for production deployments.
 
 **Pros:**
 - Highest throughput of any self-hosted LLM server
@@ -84,11 +84,11 @@ affiliateDisclosure: false
 
 **Best for:** Production APIs, high-concurrency applications, teams serving LLMs to multiple users.
 
-[Read our vLLM guide](/apps/vllm) | [Ollama vs vLLM](/compare/ollama-vs-vllm)
+[Read our vLLM guide](/apps/vllm/) | [Ollama vs vLLM](/compare/ollama-vs-vllm/)
 
 #### 3. LocalAI — Best OpenAI Drop-In
 
-[LocalAI](/apps/localai) provides an OpenAI-compatible API that runs multiple model types — LLMs, image generation, audio transcription, embeddings — all through one endpoint. If you have code using the OpenAI SDK, point it at LocalAI and it works.
+[LocalAI](/apps/localai/) provides an OpenAI-compatible API that runs multiple model types — LLMs, image generation, audio transcription, embeddings — all through one endpoint. If you have code using the OpenAI SDK, point it at LocalAI and it works.
 
 **Pros:**
 - Full OpenAI API compatibility (chat, images, audio, embeddings)
@@ -104,11 +104,11 @@ affiliateDisclosure: false
 
 **Best for:** Replacing OpenAI API calls without code changes. CPU-only servers.
 
-[Read our LocalAI guide](/apps/localai) | [Ollama vs LocalAI](/compare/ollama-vs-localai)
+[Read our LocalAI guide](/apps/localai/) | [Ollama vs LocalAI](/compare/ollama-vs-localai/)
 
 #### 4. Text Generation WebUI — Best for Model Experimentation
 
-[Text Generation WebUI](/apps/text-generation-webui) (oobabooga) is the Swiss Army knife of LLM interfaces. It supports every model format, every loading method, and exposes every parameter. If you want to fine-tune generation settings or test multiple model backends, this is the tool.
+[Text Generation WebUI](/apps/text-generation-webui/) (oobabooga) is the Swiss Army knife of LLM interfaces. It supports every model format, every loading method, and exposes every parameter. If you want to fine-tune generation settings or test multiple model backends, this is the tool.
 
 **Pros:**
 - Supports every model format (GGUF, GPTQ, AWQ, EXL2, HQQ)
@@ -124,13 +124,13 @@ affiliateDisclosure: false
 
 **Best for:** Power users who want maximum control over model loading and generation parameters.
 
-[Read our Text Generation WebUI guide](/apps/text-generation-webui) | [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui)
+[Read our Text Generation WebUI guide](/apps/text-generation-webui/) | [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui/)
 
 ### Image Generation
 
 #### 5. ComfyUI — Best for Image Generation
 
-[ComfyUI](/apps/comfyui) is a node-based interface for Stable Diffusion that gives you complete control over the generation pipeline. Build visual workflows connecting models, samplers, LoRAs, ControlNet, and post-processing — then save and share them.
+[ComfyUI](/apps/comfyui/) is a node-based interface for Stable Diffusion that gives you complete control over the generation pipeline. Build visual workflows connecting models, samplers, LoRAs, ControlNet, and post-processing — then save and share them.
 
 **Pros:**
 - Node-based workflow gives total control
@@ -146,11 +146,11 @@ affiliateDisclosure: false
 
 **Best for:** Serious image generation work. Artists, designers, and anyone who wants reproducible workflows.
 
-[Read our ComfyUI guide](/apps/comfyui) | [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
+[Read our ComfyUI guide](/apps/comfyui/) | [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
 
 #### 6. Stable Diffusion WebUI — Best for Beginners (Images)
 
-[Stable Diffusion WebUI](/apps/stable-diffusion-webui) (AUTOMATIC1111) is the most popular Stable Diffusion interface. Type a prompt, click generate, get an image. Extensions add inpainting, upscaling, ControlNet, and more.
+[Stable Diffusion WebUI](/apps/stable-diffusion-webui/) (AUTOMATIC1111) is the most popular Stable Diffusion interface. Type a prompt, click generate, get an image. Extensions add inpainting, upscaling, ControlNet, and more.
 
 **Pros:**
 - Simple prompt-to-image interface
@@ -167,13 +167,13 @@ affiliateDisclosure: false
 
 **Best for:** Getting started with image generation. Users who want a simple interface without building node workflows.
 
-[Read our Stable Diffusion WebUI guide](/apps/stable-diffusion-webui) | [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
+[Read our Stable Diffusion WebUI guide](/apps/stable-diffusion-webui/) | [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
 
 ### AI Workflows & Agents
 
 #### 7. Flowise — Best for AI Workflows
 
-[Flowise](/apps/flowise) is a drag-and-drop UI for building LLM workflows. Create RAG pipelines, chatbots, and AI agents by connecting nodes visually — no code required. It supports LangChain and LlamaIndex under the hood.
+[Flowise](/apps/flowise/) is a drag-and-drop UI for building LLM workflows. Create RAG pipelines, chatbots, and AI agents by connecting nodes visually — no code required. It supports LangChain and LlamaIndex under the hood.
 
 **Pros:**
 - Visual drag-and-drop builder — no coding required
@@ -189,11 +189,11 @@ affiliateDisclosure: false
 
 **Best for:** Building RAG chatbots and AI agents without writing code.
 
-[Read our Flowise guide](/apps/flowise) | [Flowise vs Langflow](/compare/flowise-vs-langflow)
+[Read our Flowise guide](/apps/flowise/) | [Flowise vs Langflow](/compare/flowise-vs-langflow/)
 
 #### 8. Langflow — Best for Developers (Workflows)
 
-[Langflow](/apps/langflow) is similar to Flowise but with a more developer-oriented approach. It provides a visual flow builder backed by Python, with the ability to write custom components and export flows as Python code.
+[Langflow](/apps/langflow/) is similar to Flowise but with a more developer-oriented approach. It provides a visual flow builder backed by Python, with the ability to write custom components and export flows as Python code.
 
 **Pros:**
 - Visual builder with Python code export
@@ -209,13 +209,13 @@ affiliateDisclosure: false
 
 **Best for:** Developers building production AI pipelines who want visual prototyping with code export.
 
-[Read our Langflow guide](/apps/langflow) | [Flowise vs Langflow](/compare/flowise-vs-langflow)
+[Read our Langflow guide](/apps/langflow/) | [Flowise vs Langflow](/compare/flowise-vs-langflow/)
 
 ### Code Completion
 
 #### 9. Tabby — Best for Code Completion
 
-[Tabby](/apps/tabby) is a self-hosted GitHub Copilot alternative. It provides IDE code completion via extensions for VS Code, JetBrains, and Vim — backed by code-specialized models running on your hardware.
+[Tabby](/apps/tabby/) is a self-hosted GitHub Copilot alternative. It provides IDE code completion via extensions for VS Code, JetBrains, and Vim — backed by code-specialized models running on your hardware.
 
 **Pros:**
 - Purpose-built for code completion
@@ -231,13 +231,13 @@ affiliateDisclosure: false
 
 **Best for:** Developers wanting private code completion without sending code to the cloud.
 
-[Read our Tabby guide](/apps/tabby) | [Tabby vs Continue](/compare/tabby-vs-continue) | [Self-Hosted Copilot Alternatives](/replace/github-copilot)
+[Read our Tabby guide](/apps/tabby/) | [Tabby vs Continue](/compare/tabby-vs-continue/) | [Self-Hosted Copilot Alternatives](/replace/github-copilot/)
 
 ### Speech & Audio
 
 #### 10. Whisper — Best for Speech-to-Text
 
-[Whisper](/apps/whisper) (self-hosted via faster-whisper-server) runs OpenAI's Whisper model locally for speech-to-text transcription. Near-human accuracy across 99 languages, with an OpenAI-compatible API.
+[Whisper](/apps/whisper/) (self-hosted via faster-whisper-server) runs OpenAI's Whisper model locally for speech-to-text transcription. Near-human accuracy across 99 languages, with an OpenAI-compatible API.
 
 **Pros:**
 - Near-human transcription accuracy
@@ -253,7 +253,7 @@ affiliateDisclosure: false
 
 **Best for:** Transcribing meetings, podcasts, videos. Any application needing accurate speech-to-text.
 
-[Read our Whisper guide](/apps/whisper)
+[Read our Whisper guide](/apps/whisper/)
 
 ## Full Comparison Table
 
@@ -285,28 +285,28 @@ New to self-hosted AI? Here's the recommended path:
 4. **Build workflows** — use Flowise when you need RAG pipelines or AI agents
 5. **Scale up** — move to vLLM when you need production throughput
 
-Check our [AI/ML Hardware Guide](/hardware/ai-ml-hardware) for GPU and server recommendations.
+Check our [AI/ML Hardware Guide](/hardware/ai-ml-hardware/) for GPU and server recommendations.
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [How to Self-Host vLLM](/apps/vllm)
-- [How to Self-Host LocalAI](/apps/localai)
-- [How to Self-Host ComfyUI](/apps/comfyui)
-- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui)
-- [How to Self-Host Text Generation WebUI](/apps/text-generation-webui)
-- [How to Self-Host Flowise](/apps/flowise)
-- [How to Self-Host Langflow](/apps/langflow)
-- [How to Self-Host Tabby](/apps/tabby)
-- [How to Self-Host Whisper](/apps/whisper)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Ollama vs vLLM](/compare/ollama-vs-vllm)
-- [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui)
-- [Flowise vs Langflow](/compare/flowise-vs-langflow)
-- [Tabby vs Continue](/compare/tabby-vs-continue)
-- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt)
-- [Self-Hosted Midjourney Alternatives](/replace/midjourney)
-- [Self-Hosted Copilot Alternatives](/replace/github-copilot)
-- [AI/ML Hardware Guide](/hardware/ai-ml-hardware)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [How to Self-Host vLLM](/apps/vllm/)
+- [How to Self-Host LocalAI](/apps/localai/)
+- [How to Self-Host ComfyUI](/apps/comfyui/)
+- [How to Self-Host Stable Diffusion WebUI](/apps/stable-diffusion-webui/)
+- [How to Self-Host Text Generation WebUI](/apps/text-generation-webui/)
+- [How to Self-Host Flowise](/apps/flowise/)
+- [How to Self-Host Langflow](/apps/langflow/)
+- [How to Self-Host Tabby](/apps/tabby/)
+- [How to Self-Host Whisper](/apps/whisper/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Ollama vs vLLM](/compare/ollama-vs-vllm/)
+- [Stable Diffusion WebUI vs ComfyUI](/compare/stable-diffusion-vs-comfyui/)
+- [Flowise vs Langflow](/compare/flowise-vs-langflow/)
+- [Tabby vs Continue](/compare/tabby-vs-continue/)
+- [Self-Hosted ChatGPT Alternatives](/replace/chatgpt/)
+- [Self-Hosted Midjourney Alternatives](/replace/midjourney/)
+- [Self-Hosted Copilot Alternatives](/replace/github-copilot/)
+- [AI/ML Hardware Guide](/hardware/ai-ml-hardware/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

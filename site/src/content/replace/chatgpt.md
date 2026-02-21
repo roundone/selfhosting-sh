@@ -35,7 +35,7 @@ affiliateDisclosure: true
 
 ### Ollama + Open WebUI — Best Overall Replacement
 
-The combination of [Ollama](/apps/ollama) (inference engine) and [Open WebUI](/apps/open-webui) (web interface) is the closest thing to a self-hosted ChatGPT. Open WebUI provides the familiar chat interface — conversations, model switching, RAG, web search, and multi-user support. Ollama handles downloading and running models with a single command.
+The combination of [Ollama](/apps/ollama/) (inference engine) and [Open WebUI](/apps/open-webui/) (web interface) is the closest thing to a self-hosted ChatGPT. Open WebUI provides the familiar chat interface — conversations, model switching, RAG, web search, and multi-user support. Ollama handles downloading and running models with a single command.
 
 **Setup time:** 10 minutes.
 
@@ -47,31 +47,31 @@ The combination of [Ollama](/apps/ollama) (inference engine) and [Open WebUI](/a
 - `deepseek-coder-v2` — Best for code-related tasks
 - `gemma2` — Google's open model, strong reasoning
 
-[Read our Ollama guide](/apps/ollama) | [Read our Open WebUI guide](/apps/open-webui)
+[Read our Ollama guide](/apps/ollama/) | [Read our Open WebUI guide](/apps/open-webui/)
 
 ### LocalAI — Best for Application Integration
 
-[LocalAI](/apps/localai) is a drop-in OpenAI API replacement. If you have an application that uses the OpenAI API, you can point it at LocalAI instead — same endpoints, same response format. It also handles image generation (Stable Diffusion), audio transcription (Whisper), and text-to-speech in a single service.
+[LocalAI](/apps/localai/) is a drop-in OpenAI API replacement. If you have an application that uses the OpenAI API, you can point it at LocalAI instead — same endpoints, same response format. It also handles image generation (Stable Diffusion), audio transcription (Whisper), and text-to-speech in a single service.
 
 **Best for:** Developers migrating applications from the OpenAI API to self-hosted.
 
-[Read our LocalAI guide](/apps/localai)
+[Read our LocalAI guide](/apps/localai/)
 
 ### Text Generation WebUI — Best for Power Users
 
-[Text Generation WebUI](/apps/text-generation-webui) (Oobabooga) supports the widest range of model formats and includes LoRA training. If you want to fine-tune models, experiment with quantization methods, or test different inference backends, this is your tool.
+[Text Generation WebUI](/apps/text-generation-webui/) (Oobabooga) supports the widest range of model formats and includes LoRA training. If you want to fine-tune models, experiment with quantization methods, or test different inference backends, this is your tool.
 
 **Best for:** ML enthusiasts who want deep control over model inference and training.
 
-[Read our Text Generation WebUI guide](/apps/text-generation-webui)
+[Read our Text Generation WebUI guide](/apps/text-generation-webui/)
 
 ## Migration Guide
 
 ### From ChatGPT to Ollama + Open WebUI
 
-1. Install [Ollama](/apps/ollama) with Docker
+1. Install [Ollama](/apps/ollama/) with Docker
 2. Pull a model: `docker exec ollama ollama pull llama3.2`
-3. Install [Open WebUI](/apps/open-webui) with Docker, pointing at your Ollama instance
+3. Install [Open WebUI](/apps/open-webui/) with Docker, pointing at your Ollama instance
 4. Open the web interface and start chatting
 
 **What transfers:** Nothing. ChatGPT conversations can be exported as JSON but there's no import tool for Open WebUI. Start fresh.
@@ -80,7 +80,7 @@ The combination of [Ollama](/apps/ollama) (inference engine) and [Open WebUI](/a
 
 ### From ChatGPT API to LocalAI
 
-1. Install [LocalAI](/apps/localai) with Docker
+1. Install [LocalAI](/apps/localai/) with Docker
 2. Load a model (GGUF format recommended)
 3. Change your application's API base URL from `https://api.openai.com` to `http://your-server:8080`
 4. Keep the same code — the API is compatible
@@ -112,10 +112,10 @@ For most everyday tasks (writing, coding, Q&A, summarization), self-hosted model
 
 ## Related
 
-- [How to Self-Host Ollama](/apps/ollama)
-- [How to Self-Host Open WebUI](/apps/open-webui)
-- [How to Self-Host LocalAI](/apps/localai)
-- [Ollama vs LocalAI](/compare/ollama-vs-localai)
-- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui)
-- [Best Self-Hosted AI Tools](/best/ai-ml)
-- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware)
+- [How to Self-Host Ollama](/apps/ollama/)
+- [How to Self-Host Open WebUI](/apps/open-webui/)
+- [How to Self-Host LocalAI](/apps/localai/)
+- [Ollama vs LocalAI](/compare/ollama-vs-localai/)
+- [Open WebUI vs Text Generation WebUI](/compare/open-webui-vs-text-generation-webui/)
+- [Best Self-Hosted AI Tools](/best/ai-ml/)
+- [Hardware for Self-Hosted AI](/hardware/ai-ml-hardware/)

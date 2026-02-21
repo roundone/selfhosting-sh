@@ -23,10 +23,10 @@ If you are running self-hosted services, you will encounter webhooks everywhere.
 
 ## Prerequisites
 
-- A Linux server with Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics)
-- Basic understanding of HTTP requests (GET, POST, headers, status codes) — see [API Basics](/foundations/api-basics)
-- A domain name with a reverse proxy configured (for receiving external webhooks) — see [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- SSH access to your server — see [SSH Setup](/foundations/ssh-setup)
+- A Linux server with Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics/)
+- Basic understanding of HTTP requests (GET, POST, headers, status codes) — see [API Basics](/foundations/api-basics/)
+- A domain name with a reverse proxy configured (for receiving external webhooks) — see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- SSH access to your server — see [SSH Setup](/foundations/ssh-setup/)
 
 ## How Webhooks Work
 
@@ -52,7 +52,7 @@ The receiver is an HTTP endpoint that listens for incoming POST requests. When a
 2. Parses the payload
 3. Executes an action (runs a script, triggers a build, sends a notification)
 
-The receiver can be anything that accepts HTTP requests — a dedicated webhook server, an automation platform like [n8n](/apps/n8n), or a custom script behind a web server.
+The receiver can be anything that accepts HTTP requests — a dedicated webhook server, an automation platform like [n8n](/apps/n8n/), or a custom script behind a web server.
 
 ### The Payload
 
@@ -266,7 +266,7 @@ fi
 
 Always terminate TLS in front of your webhook receiver. Webhook payloads often contain sensitive data — repository names, commit messages, email addresses. Without HTTPS, this data travels in plaintext.
 
-Put your webhook server behind a reverse proxy with a valid SSL certificate. See [SSL Certificates](/foundations/ssl-certificates) and [Reverse Proxy Explained](/foundations/reverse-proxy-explained) for setup instructions. A typical Nginx Proxy Manager config points `webhook.yourdomain.com` to `http://webhook-server:9000` and handles TLS termination automatically.
+Put your webhook server behind a reverse proxy with a valid SSL certificate. See [SSL Certificates](/foundations/ssl-certificates/) and [Reverse Proxy Explained](/foundations/reverse-proxy-explained/) for setup instructions. A typical Nginx Proxy Manager config points `webhook.yourdomain.com` to `http://webhook-server:9000` and handles TLS termination automatically.
 
 ### IP Allowlisting
 
@@ -353,7 +353,7 @@ curl -s -X POST "https://ntfy.yourdomain.com/alerts" \
 
 ### n8n Workflow Triggers
 
-[n8n](/apps/n8n) is a self-hosted workflow automation platform that can both send and receive webhooks. It is the most flexible option when your webhook logic is more complex than "run a shell script."
+[n8n](/apps/n8n/) is a self-hosted workflow automation platform that can both send and receive webhooks. It is the most flexible option when your webhook logic is more complex than "run a shell script."
 
 n8n provides built-in Webhook trigger nodes. You create a workflow, add a Webhook node as the trigger, and n8n gives you a URL. Any service that sends a POST to that URL starts the workflow. From there, you can filter, transform, route to other services, query databases, and send notifications — all without writing code.
 
@@ -441,7 +441,7 @@ Use environment variables or Docker secrets instead of plaintext secrets in conf
 
 ### Can I receive webhooks without a public IP or domain?
 
-Yes, but only from services on your local network. For external services (GitHub, GitLab.com, cloud APIs), you need either a public IP with port forwarding, a reverse proxy on a VPS, or a tunnel service like Cloudflare Tunnel or Tailscale Funnel. See [HTTPS Everywhere](/foundations/https-everywhere) for options.
+Yes, but only from services on your local network. For external services (GitHub, GitLab.com, cloud APIs), you need either a public IP with port forwarding, a reverse proxy on a VPS, or a tunnel service like Cloudflare Tunnel or Tailscale Funnel. See [HTTPS Everywhere](/foundations/https-everywhere/) for options.
 
 ### How do I debug a webhook that is not firing?
 
@@ -453,7 +453,7 @@ It depends on the sender. Most senders retry a few times with exponential backof
 
 ### Should I use a dedicated webhook server or n8n?
 
-Use the standalone `webhook` tool for simple "event happens, run script" flows. It uses minimal resources (under 10 MB of RAM) and has no dependencies. Use [n8n](/apps/n8n) when you need conditional logic, data transformation, multi-step workflows, or integration with dozens of APIs. Both are solid choices — the decision is about complexity, not quality.
+Use the standalone `webhook` tool for simple "event happens, run script" flows. It uses minimal resources (under 10 MB of RAM) and has no dependencies. Use [n8n](/apps/n8n/) when you need conditional logic, data transformation, multi-step workflows, or integration with dozens of APIs. Both are solid choices — the decision is about complexity, not quality.
 
 ### Is it safe to receive webhooks from external services?
 
@@ -461,11 +461,11 @@ Yes, with proper security: HMAC signature verification, HTTPS termination, IP al
 
 ## Related
 
-- [API Basics](/foundations/api-basics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [HTTPS Everywhere](/foundations/https-everywhere)
-- [n8n: Self-Hosted Workflow Automation](/apps/n8n)
-- [Firewall Basics](/foundations/firewall-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [API Basics](/foundations/api-basics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [HTTPS Everywhere](/foundations/https-everywhere/)
+- [n8n: Self-Hosted Workflow Automation](/apps/n8n/)
+- [Firewall Basics](/foundations/firewall-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

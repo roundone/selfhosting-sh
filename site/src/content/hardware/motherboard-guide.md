@@ -168,10 +168,10 @@ Yes, if the CPU has integrated graphics (Intel with UHD, AMD G-series). You only
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best RAM for Home Servers](/hardware/best-ram-home-server)
-- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server)
-- [PCIe and M.2 Expansion Guide](/hardware/pcie-expansion-home-server)
-- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best RAM for Home Servers](/hardware/best-ram-home-server/)
+- [Intel vs AMD for Home Servers](/hardware/intel-vs-amd-home-server/)
+- [PCIe and M.2 Expansion Guide](/hardware/pcie-expansion-home-server/)
+- [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)

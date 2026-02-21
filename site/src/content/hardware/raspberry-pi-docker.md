@@ -16,7 +16,7 @@ affiliateDisclosure: true
 ## Prerequisites
 
 - Raspberry Pi 4 (4 GB+) or Pi 5 (recommended)
-- 64-bit Raspberry Pi OS Lite installed (see our [Pi home server guide](/hardware/raspberry-pi-home-server))
+- 64-bit Raspberry Pi OS Lite installed (see our [Pi home server guide](/hardware/raspberry-pi-home-server/))
 - NVMe SSD via HAT or USB SSD (avoid microSD for Docker)
 - SSH access to your Pi
 
@@ -60,19 +60,19 @@ The Pi runs ARM64 (aarch64) architecture. Most popular self-hosted apps publish 
 
 These apps publish official ARM64 images:
 
-- [Pi-hole](/apps/pi-hole) — `pihole/pihole`
-- [AdGuard Home](/apps/adguard-home) — `adguard/adguardhome`
-- [Home Assistant](/apps/home-assistant) — `ghcr.io/home-assistant/home-assistant`
-- [Vaultwarden](/apps/vaultwarden) — `vaultwarden/server`
-- [Nextcloud](/apps/nextcloud) — `nextcloud`
-- [Uptime Kuma](/apps/uptime-kuma) — `louislam/uptime-kuma`
-- [Jellyfin](/apps/jellyfin) — `jellyfin/jellyfin`
-- [FreshRSS](/apps/freshrss) — `freshrss/freshrss`
-- [Syncthing](/apps/syncthing) — `syncthing/syncthing`
-- [Traefik](/apps/traefik) — `traefik`
-- [Caddy](/apps/caddy) — `caddy`
-- [Gitea](/apps/gitea) / Forgejo — `gitea/gitea`
-- [Paperless-ngx](/apps/paperless-ngx) — `ghcr.io/paperless-ngx/paperless-ngx`
+- [Pi-hole](/apps/pi-hole/) — `pihole/pihole`
+- [AdGuard Home](/apps/adguard-home/) — `adguard/adguardhome`
+- [Home Assistant](/apps/home-assistant/) — `ghcr.io/home-assistant/home-assistant`
+- [Vaultwarden](/apps/vaultwarden/) — `vaultwarden/server`
+- [Nextcloud](/apps/nextcloud/) — `nextcloud`
+- [Uptime Kuma](/apps/uptime-kuma/) — `louislam/uptime-kuma`
+- [Jellyfin](/apps/jellyfin/) — `jellyfin/jellyfin`
+- [FreshRSS](/apps/freshrss/) — `freshrss/freshrss`
+- [Syncthing](/apps/syncthing/) — `syncthing/syncthing`
+- [Traefik](/apps/traefik/) — `traefik`
+- [Caddy](/apps/caddy/) — `caddy`
+- [Gitea](/apps/gitea/) / Forgejo — `gitea/gitea`
+- [Paperless-ngx](/apps/paperless-ngx/) — `ghcr.io/paperless-ngx/paperless-ngx`
 - PostgreSQL, MariaDB, Redis, Nginx — all official images support ARM64
 
 **LinuxServer.io images** are a safe bet — LSIO builds all their images for ARM64.
@@ -174,7 +174,7 @@ docker compose ps
 
 ### 1. Use NVMe or USB SSD Storage
 
-Docker's overlay2 filesystem generates heavy random I/O. On microSD, container startup takes 5-15 seconds. On NVMe, it takes 1-2 seconds. See the storage section in our [Pi home server guide](/hardware/raspberry-pi-home-server).
+Docker's overlay2 filesystem generates heavy random I/O. On microSD, container startup takes 5-15 seconds. On NVMe, it takes 1-2 seconds. See the storage section in our [Pi home server guide](/hardware/raspberry-pi-home-server/).
 
 ### 2. Use Active Cooling
 
@@ -224,7 +224,7 @@ docker stats --no-stream
 
 ## Automatic Container Updates
 
-> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Use [DIUN](/apps/diun) instead — it notifies you when updates are available without touching your running containers.
+> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Use [DIUN](/apps/diun/) instead — it notifies you when updates are available without touching your running containers.
 
 Use DIUN to get notified when container image updates are available:
 
@@ -245,7 +245,7 @@ volumes:
   diun-data:
 ```
 
-DIUN checks for new image versions every 6 hours and sends notifications through Discord, Slack, email, or 20+ other channels. You decide when and how to apply updates. See [How to Self-Host DIUN](/apps/diun) for full configuration.
+DIUN checks for new image versions every 6 hours and sends notifications through Discord, Slack, email, or 20+ other channels. You decide when and how to apply updates. See [How to Self-Host DIUN](/apps/diun/) for full configuration.
 
 ## Troubleshooting
 
@@ -255,7 +255,7 @@ The image doesn't support ARM64. Find an alternative image, build from source, o
 
 ### Container runs out of memory
 
-Check current usage with `docker stats`. Add memory limits. Consider upgrading to a [mini PC](/hardware/best-mini-pc) with 16 GB RAM if you consistently need more than 6 GB for containers.
+Check current usage with `docker stats`. Add memory limits. Consider upgrading to a [mini PC](/hardware/best-mini-pc/) with 16 GB RAM if you consistently need more than 6 GB for containers.
 
 ### Docker Compose command not found
 
@@ -280,17 +280,17 @@ Technically yes (64-bit OS required), but with only 1 GB RAM and a much slower C
 
 ### Docker on Pi vs Docker on mini PC — what's different?
 
-Architecture (ARM64 vs x86_64) affects image compatibility. Performance is lower on the Pi (fewer IOPS, less RAM, slower CPU). Docker commands and Compose files are identical. See our [Pi vs Mini PC comparison](/hardware/raspberry-pi-vs-mini-pc).
+Architecture (ARM64 vs x86_64) affects image compatibility. Performance is lower on the Pi (fewer IOPS, less RAM, slower CPU). Docker commands and Compose files are identical. See our [Pi vs Mini PC comparison](/hardware/raspberry-pi-vs-mini-pc/).
 
 ### Should I use Portainer or Dockge on a Pi?
 
-Both work on ARM64. [Dockge](/apps/dockge) is lighter (~50 MB RAM) and manages Docker Compose files directly. [Portainer](/apps/portainer) is more feature-rich (~150 MB RAM). On a RAM-limited Pi, Dockge is the better choice.
+Both work on ARM64. [Dockge](/apps/dockge/) is lighter (~50 MB RAM) and manages Docker Compose files directly. [Portainer](/apps/portainer/) is more feature-rich (~150 MB RAM). On a RAM-limited Pi, Dockge is the better choice.
 
 ## Related
 
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -23,7 +23,7 @@ affiliateDisclosure: false
 
 ## Quick Verdict
 
-Passbolt is the better choice for teams that need auditable, enterprise-grade password sharing with OpenPGP encryption. Padloc is better if you want a clean, modern UI for personal or small-team use and don't need advanced permission controls. For most self-hosters, though, [Vaultwarden](/apps/vaultwarden) beats both.
+Passbolt is the better choice for teams that need auditable, enterprise-grade password sharing with OpenPGP encryption. Padloc is better if you want a clean, modern UI for personal or small-team use and don't need advanced permission controls. For most self-hosters, though, [Vaultwarden](/apps/vaultwarden/) beats both.
 
 ## Overview
 
@@ -55,7 +55,7 @@ Passbolt is the better choice for teams that need auditable, enterprise-grade pa
 
 **Padloc** is simpler in concept but requires two containers: an API server and a separate PWA frontend. Each needs its own URL/subdomain. SMTP is also required for account creation. No CLI setup needed — everything happens through the web UI.
 
-Both require SMTP, which adds a dependency most self-hosted password managers avoid. [Vaultwarden](/apps/vaultwarden) works without SMTP for basic use.
+Both require SMTP, which adds a dependency most self-hosted password managers avoid. [Vaultwarden](/apps/vaultwarden/) works without SMTP for basic use.
 
 ## Performance and Resource Usage
 
@@ -93,13 +93,13 @@ Both are lightweight. Passbolt uses slightly more memory due to MariaDB.
 
 ### Choose Neither If...
 
-- You want the best overall self-hosted password manager — [Vaultwarden](/apps/vaultwarden) is the answer
+- You want the best overall self-hosted password manager — [Vaultwarden](/apps/vaultwarden/) is the answer
 - You need browser auto-fill on every platform
 - You want a single-container, no-SMTP-required setup
 
 ## Final Verdict
 
-Passbolt wins on features, security model, and active development. Padloc wins on UI design but loses everywhere else — and its dormant development makes it a risky choice for new deployments. For team password management, Passbolt is solid. For personal use, skip both and use [Vaultwarden](/apps/vaultwarden).
+Passbolt wins on features, security model, and active development. Padloc wins on UI design but loses everywhere else — and its dormant development makes it a risky choice for new deployments. For team password management, Passbolt is solid. For personal use, skip both and use [Vaultwarden](/apps/vaultwarden/).
 
 ## FAQ
 
@@ -109,7 +109,7 @@ There's no direct migration path. You'd need to export passwords from Padloc (CS
 
 ### Does either support passkeys?
 
-Neither Passbolt CE nor Padloc support passkey storage. [Vaultwarden](/apps/vaultwarden) supports passkeys via Bitwarden client compatibility.
+Neither Passbolt CE nor Padloc support passkey storage. [Vaultwarden](/apps/vaultwarden/) supports passkeys via Bitwarden client compatibility.
 
 ### Is Padloc still safe to use?
 
@@ -117,9 +117,9 @@ The encryption is sound, but no security patches have been released since 2023. 
 
 ## Related
 
-- [How to Self-Host Passbolt](/apps/passbolt)
-- [How to Self-Host Padloc](/apps/padloc)
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc)
-- [Best Self-Hosted Password Managers](/best/password-management)
+- [How to Self-Host Passbolt](/apps/passbolt/)
+- [How to Self-Host Padloc](/apps/padloc/)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc/)
+- [Best Self-Hosted Password Managers](/best/password-management/)

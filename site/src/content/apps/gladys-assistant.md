@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended) or Raspberry Pi 3+
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space
 - 1 GB of RAM minimum
 - A domain name (optional, for remote access)
@@ -172,7 +172,7 @@ Gladys Plus is a paid service ($9.99/month) providing:
 - Google Home and Alexa voice control via encrypted tunnel
 - Automatic backups
 
-This is optional. For free remote access, use a VPN like [WireGuard](/apps/wireguard) or [Tailscale](/apps/tailscale).
+This is optional. For free remote access, use a VPN like [WireGuard](/apps/wireguard/) or [Tailscale](/apps/tailscale/).
 
 ## Reverse Proxy
 
@@ -180,7 +180,7 @@ Since Gladys uses `network_mode: host`, configure your reverse proxy to point to
 
 With Nginx Proxy Manager, create a proxy host pointing to `http://your-server-ip:80`. Enable WebSocket support for real-time updates.
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for full configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for full configuration.
 
 ## Backup
 
@@ -192,7 +192,7 @@ tar czf gladys-backup-$(date +%Y%m%d).tar.gz /var/lib/gladysassistant
 docker compose start gladys
 ```
 
-The critical file is `gladys-production.db` (SQLite database). See our [Backup Strategy](/foundations/backup-3-2-1-rule) guide.
+The critical file is `gladys-production.db` (SQLite database). See our [Backup Strategy](/foundations/backup-3-2-1-rule/) guide.
 
 ## Troubleshooting
 
@@ -228,13 +228,13 @@ The critical file is `gladys-production.db` (SQLite database). See our [Backup S
 
 ## Verdict
 
-Gladys Assistant is the best choice if you want a clean, modern home automation UI with a privacy-first design and minimal configuration overhead. It's simpler than [Home Assistant](/apps/home-assistant) and [openHAB](/apps/openhab) but has a smaller integration ecosystem. Choose Gladys if you want something that works out of the box with common smart home protocols and don't need the 2,000+ integrations that Home Assistant offers. For maximum flexibility and community support, Home Assistant remains the default recommendation for most users.
+Gladys Assistant is the best choice if you want a clean, modern home automation UI with a privacy-first design and minimal configuration overhead. It's simpler than [Home Assistant](/apps/home-assistant/) and [openHAB](/apps/openhab/) but has a smaller integration ecosystem. Choose Gladys if you want something that works out of the box with common smart home protocols and don't need the 2,000+ integrations that Home Assistant offers. For maximum flexibility and community support, Home Assistant remains the default recommendation for most users.
 
 ## FAQ
 
 ### How does Gladys compare to Home Assistant?
 
-Gladys prioritizes simplicity and privacy. It has fewer integrations (around 30 vs Home Assistant's 2,000+) but is easier to set up and use. Home Assistant is more powerful; Gladys is more approachable. See our [Home Assistant vs Gladys comparison](/compare/home-assistant-vs-gladys).
+Gladys prioritizes simplicity and privacy. It has fewer integrations (around 30 vs Home Assistant's 2,000+) but is easier to set up and use. Home Assistant is more powerful; Gladys is more approachable. See our [Home Assistant vs Gladys comparison](/compare/home-assistant-vs-gladys/).
 
 ### Does Gladys require cloud access?
 
@@ -246,11 +246,11 @@ Yes. Gladys is lightweight enough for a Raspberry Pi 3B+ or newer. A Pi 4 with 2
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Home Assistant vs Gladys](/compare/home-assistant-vs-gladys/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

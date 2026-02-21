@@ -94,7 +94,7 @@ LibrePhotos is significantly heavier due to its ML models. If your server has li
 
 **Photoview wins on simplicity and efficiency.** If you just want to browse your photos through a web UI, Photoview does it with a fraction of the resources and setup effort.
 
-Neither project is rapidly developing. For the most active, feature-rich option with AI and mobile apps, consider [Immich](/apps/immich) instead. Both LibrePhotos and Photoview fill specific niches — LibrePhotos for AI without mobile apps, Photoview for minimal read-only browsing.
+Neither project is rapidly developing. For the most active, feature-rich option with AI and mobile apps, consider [Immich](/apps/immich/) instead. Both LibrePhotos and Photoview fill specific niches — LibrePhotos for AI without mobile apps, Photoview for minimal read-only browsing.
 
 ## Frequently Asked Questions
 
@@ -105,13 +105,13 @@ No. Like Photoview, LibrePhotos scans directories in place. It stores its index,
 Partially. Photoview can group photos by detected faces when `PHOTOVIEW_FACE_RECOGNITION_ENABLED=1` is set. But it doesn't identify who the faces belong to, doesn't detect objects or scenes, and doesn't enable smart search. LibrePhotos' AI is a full tier above.
 
 ### Which project is more likely to still be maintained in a year?
-Both have uncertain futures given slow development. Photoview's simplicity makes it more likely to remain functional without updates. LibrePhotos' complexity means bugs or security issues could become problematic without active maintenance. For a long-term bet, [Immich](/apps/immich) is the safest choice in the self-hosted photo space.
+Both have uncertain futures given slow development. Photoview's simplicity makes it more likely to remain functional without updates. LibrePhotos' complexity means bugs or security issues could become problematic without active maintenance. For a long-term bet, [Immich](/apps/immich/) is the safest choice in the self-hosted photo space.
 
 ## Related
 
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [How to Self-Host Photoview](/apps/photoview)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
-- [Immich vs Photoview](/compare/immich-vs-photoview)
-- [Best Self-Hosted Photo Management](/best/photo-management)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [How to Self-Host Photoview](/apps/photoview/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos/)
+- [Immich vs Photoview](/compare/immich-vs-photoview/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)

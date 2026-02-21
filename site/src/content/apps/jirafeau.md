@@ -28,7 +28,7 @@ Jirafeau has been around since 2008, making it one of the oldest self-hosted fil
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - Disk space for uploaded files
 - A domain name (optional but recommended)
@@ -123,7 +123,7 @@ Access `your-domain/admin.php` to:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 share.example.com {
@@ -149,7 +149,7 @@ docker run --rm -v jirafeau-data:/data -v $(pwd):/backup alpine \
   tar czf /backup/jirafeau-backup-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -178,7 +178,7 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 Jirafeau is the grandparent of self-hosted file sharing. It works, it's stable, and it has zero external dependencies. If you want a minimal PHP-based upload tool that runs on anything, Jirafeau is a safe choice.
 
-That said, it's showing its age. The UI is functional but dated compared to [PicoShare](/apps/picoshare) or [Gokapi](/apps/gokapi). It lacks features like API uploads, S3 storage, or end-to-end encryption. For new deployments, [Gokapi](/apps/gokapi) or [PicoShare](/apps/picoshare) offer a more modern experience with similar simplicity.
+That said, it's showing its age. The UI is functional but dated compared to [PicoShare](/apps/picoshare/) or [Gokapi](/apps/gokapi/). It lacks features like API uploads, S3 storage, or end-to-end encryption. For new deployments, [Gokapi](/apps/gokapi/) or [PicoShare](/apps/picoshare/) offer a more modern experience with similar simplicity.
 
 ## Frequently Asked Questions
 
@@ -193,10 +193,10 @@ Yes, but development is slow. The project is stable and mature — it receives s
 
 ## Related
 
-- [How to Self-Host Gokapi](/apps/gokapi)
-- [How to Self-Host PicoShare](/apps/picoshare)
-- [How to Self-Host Send](/apps/send)
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Gokapi](/apps/gokapi/)
+- [How to Self-Host PicoShare](/apps/picoshare/)
+- [How to Self-Host Send](/apps/send/)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

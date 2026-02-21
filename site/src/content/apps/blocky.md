@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB of free RAM (Blocky is extremely lightweight)
 - Port 53 available (not used by another DNS resolver — check with `sudo lsof -i :53`)
 - Basic familiarity with YAML configuration
@@ -161,7 +161,7 @@ dig @127.0.0.1 google.com
 dig @127.0.0.1 ads.google.com
 ```
 
-3. **Point your devices to Blocky** — set your router's DNS to the server's IP address, or change DNS on individual devices. See our [guide to replacing Google DNS](/replace/google-dns) for detailed instructions.
+3. **Point your devices to Blocky** — set your router's DNS to the server's IP address, or change DNS on individual devices. See our [guide to replacing Google DNS](/replace/google-dns/) for detailed instructions.
 
 ## Configuration
 
@@ -279,7 +279,7 @@ The HTTP API on port 4000 can be proxied for remote management. Only expose this
 
 For DNS, no reverse proxy is needed — clients connect directly on port 53.
 
-See our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+See our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -290,7 +290,7 @@ Blocky is **stateless** — all configuration is in `config.yml`. To back up:
 
 If you're using query logging to a database, back up that database separately.
 
-See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -326,7 +326,7 @@ bootstrapDns:
 ### No web UI?
 
 **Symptom:** You expected a web dashboard but Blocky doesn't have one.
-**Fix:** Blocky is intentionally UI-less — configure via YAML. If you want a web UI, use the HTTP API (port 4000) or pair with Grafana + Prometheus. If you need a built-in UI, consider [AdGuard Home](/apps/adguard-home) or [Pi-hole](/apps/pi-hole).
+**Fix:** Blocky is intentionally UI-less — configure via YAML. If you want a web UI, use the HTTP API (port 4000) or pair with Grafana + Prometheus. If you need a built-in UI, consider [AdGuard Home](/apps/adguard-home/) or [Pi-hole](/apps/pi-hole/).
 
 ## Resource Requirements
 
@@ -338,7 +338,7 @@ Blocky is the most lightweight DNS ad blocker available. It runs comfortably on 
 
 ## Verdict
 
-Blocky is the best DNS ad blocker for infrastructure-as-code enthusiasts who prefer YAML configuration over web UIs. It's absurdly lightweight, supports encrypted DNS natively, and the per-client filtering is more flexible than Pi-hole's. If you want a web dashboard for monitoring and configuration, use [AdGuard Home](/apps/adguard-home) instead. If you want the largest community and most third-party integrations, use [Pi-hole](/apps/pi-hole). But if you're comfortable with config files and want the smallest, fastest DNS blocker possible, Blocky is the right choice.
+Blocky is the best DNS ad blocker for infrastructure-as-code enthusiasts who prefer YAML configuration over web UIs. It's absurdly lightweight, supports encrypted DNS natively, and the per-client filtering is more flexible than Pi-hole's. If you want a web dashboard for monitoring and configuration, use [AdGuard Home](/apps/adguard-home/) instead. If you want the largest community and most third-party integrations, use [Pi-hole](/apps/pi-hole/). But if you're comfortable with config files and want the smallest, fastest DNS blocker possible, Blocky is the right choice.
 
 ## FAQ
 
@@ -356,13 +356,13 @@ Check the container logs (`docker compose logs -f blocky`) or enable Prometheus 
 
 ## Related
 
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Technitium DNS](/apps/technitium)
-- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky)
-- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky)
-- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [DNS Explained](/foundations/dns-explained)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Technitium DNS](/apps/technitium/)
+- [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
+- [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [DNS Explained](/foundations/dns-explained/)

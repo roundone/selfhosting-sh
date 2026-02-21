@@ -54,7 +54,7 @@ The key architectural difference: Outline requires an external authentication pr
 
 **Docmost** deploys with three containers and a `.env` file. Set `APP_URL`, generate `APP_SECRET`, configure database credentials, and you're running. First user registers through the web UI. No external services needed beyond what's in the compose file.
 
-**Outline** also deploys three containers, but additionally requires an external OIDC provider. You either need to run [Keycloak](/apps/keycloak), [Authentik](/apps/authentik), or [Authelia](/apps/authelia), or configure Google/Slack/Azure OAuth. Secrets must be 64 hex characters. The `URL` env var must exactly match the access URL or OIDC redirects break.
+**Outline** also deploys three containers, but additionally requires an external OIDC provider. You either need to run [Keycloak](/apps/keycloak/), [Authentik](/apps/authentik/), or [Authelia](/apps/authelia/), or configure Google/Slack/Azure OAuth. Secrets must be 64 hex characters. The `URL` env var must exactly match the access URL or OIDC redirects break.
 
 Docmost's deployment takes 10–15 minutes. Outline's takes 30–60 minutes including OIDC setup (or longer if you're deploying an identity provider from scratch).
 
@@ -94,10 +94,10 @@ Both are strong options. Docmost is where the momentum is in early 2026; Outline
 
 ## Related
 
-- [How to Self-Host Docmost](/apps/docmost)
-- [How to Self-Host Outline](/apps/outline)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Confluence](/replace/confluence)
+- [How to Self-Host Docmost](/apps/docmost/)
+- [How to Self-Host Outline](/apps/outline/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Confluence](/replace/confluence/)

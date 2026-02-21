@@ -75,7 +75,7 @@ Both Plex and Emby handle music. Both have premium tiers at similar price points
 
 **Plex wins for music, and it's not close.** PlexAmp has no equivalent in Emby or any other self-hosted media server. If music streaming quality matters to you, Plex Pass is worth the cost for PlexAmp alone.
 
-**Emby is fine for casual music listening.** If you primarily use your media server for video and occasionally play music, Emby handles it adequately. But if music is important, Plex (with PlexAmp) or a dedicated server like [Navidrome](/apps/navidrome) is the better choice.
+**Emby is fine for casual music listening.** If you primarily use your media server for video and occasionally play music, Emby handles it adequately. But if music is important, Plex (with PlexAmp) or a dedicated server like [Navidrome](/apps/navidrome/) is the better choice.
 
 ## Frequently Asked Questions
 
@@ -86,15 +86,15 @@ No. PlexAmp requires an active Plex Pass subscription. You can use Plex's standa
 Not specifically for music. Emby Premiere's music benefits (smart playlists, offline sync) are incremental. Its primary value is in video features (hardware transcoding, DVR). If music is your goal, spend the money on Plex Pass instead.
 
 ### What about Navidrome as an alternative to both?
-[Navidrome](/apps/navidrome) is a dedicated music server that's free, lightweight, and supports 50+ Subsonic-compatible apps. It doesn't have PlexAmp's Sonic Analysis, but for general music streaming, it's better than either Plex (without PlexAmp) or Emby.
+[Navidrome](/apps/navidrome/) is a dedicated music server that's free, lightweight, and supports 50+ Subsonic-compatible apps. It doesn't have PlexAmp's Sonic Analysis, but for general music streaming, it's better than either Plex (without PlexAmp) or Emby.
 
 ## Related
 
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Plex vs Emby](/compare/plex-vs-emby)
-- [Jellyfin vs Plex for Music](/compare/jellyfin-vs-plex-music)
-- [Plex vs Navidrome](/compare/plex-vs-navidrome)
-- [Emby vs Navidrome](/compare/emby-vs-navidrome)
-- [Self-Hosted Spotify Alternatives](/replace/spotify)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Plex vs Emby](/compare/plex-vs-emby/)
+- [Jellyfin vs Plex for Music](/compare/jellyfin-vs-plex-music/)
+- [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Emby vs Navidrome](/compare/emby-vs-navidrome/)
+- [Self-Hosted Spotify Alternatives](/replace/spotify/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

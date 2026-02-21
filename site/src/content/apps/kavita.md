@@ -23,7 +23,7 @@ If you have a collection of manga, comics, or ebooks and want a clean way to rea
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB RAM minimum (1 GB recommended for large libraries)
 - Storage for your book/manga collection
 - A domain name (optional, for remote access)
@@ -146,7 +146,7 @@ Example Nginx Proxy Manager setup:
 - **Forward Port:** 5000
 - Enable **Websockets Support** for real-time reading progress
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -159,7 +159,7 @@ Back up the `config/` directory, which contains:
 tar -czf kavita-backup-$(date +%Y%m%d).tar.gz /opt/kavita/config/
 ```
 
-Your actual book/manga files are stored on the host and should be part of your regular [backup strategy](/foundations/backup-strategy).
+Your actual book/manga files are stored on the host and should be part of your regular [backup strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -198,7 +198,7 @@ Your actual book/manga files are stored on the host and should be part of your r
 
 Kavita is the best self-hosted reader for manga and comics, and a strong option for ebooks. The web reader is fast and responsive, series tracking works well, and OPDS support means you can use your preferred reading app. It handles large libraries (50,000+ files) without breaking a sweat.
 
-If your primary focus is manga and comics, choose Kavita. If you need a more traditional ebook library manager with Calibre integration, look at [Calibre-Web](/apps/calibre-web). If you want a comics-only solution with deeper metadata scraping, [Komga](/apps/komga) is the alternative.
+If your primary focus is manga and comics, choose Kavita. If you need a more traditional ebook library manager with Calibre integration, look at [Calibre-Web](/apps/calibre-web/). If you want a comics-only solution with deeper metadata scraping, [Komga](/apps/komga/) is the alternative.
 
 ## FAQ
 
@@ -216,21 +216,21 @@ Yes. Each user has independent reading progress. Multiple people can read the sa
 
 ### Does Kavita support audiobooks?
 
-No. Kavita is for visual reading only (text and images). For audiobooks, use [Audiobookshelf](/apps/audiobookshelf).
+No. Kavita is for visual reading only (text and images). For audiobooks, use [Audiobookshelf](/apps/audiobookshelf/).
 
 ### How does Kavita compare to Komga?
 
-Kavita supports more formats (EPUB, PDF in addition to comics) and has a built-in web reader. Komga focuses specifically on comics/manga with better metadata scraping. See our [Kavita vs Komga comparison](/compare/kavita-vs-komga).
+Kavita supports more formats (EPUB, PDF in addition to comics) and has a built-in web reader. Komga focuses specifically on comics/manga with better metadata scraping. See our [Kavita vs Komga comparison](/compare/kavita-vs-komga/).
 
 ## Related
 
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

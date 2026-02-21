@@ -95,10 +95,10 @@ Many users run both — BookStack for team docs, TriliumNext for personal notes.
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host TriliumNext](/apps/trilium)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Confluence](/replace/confluence)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host TriliumNext](/apps/trilium/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Confluence](/replace/confluence/)

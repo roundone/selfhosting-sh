@@ -21,9 +21,9 @@ For most self-hosting setups, **APT on Ubuntu Server 24.04 LTS is the right choi
 
 ## Prerequisites
 
-- A Linux server with SSH access ([SSH Setup Guide](/foundations/ssh-setup))
+- A Linux server with SSH access ([SSH Setup Guide](/foundations/ssh-setup/))
 - `sudo` privileges on the server
-- Familiarity with basic Linux commands ([Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting))
+- Familiarity with basic Linux commands ([Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/))
 
 ## APT (Debian/Ubuntu)
 
@@ -351,7 +351,7 @@ Regardless of your distribution, automatic security updates should be running. U
 | Fedora/RHEL | `dnf-automatic` | `sudo dnf install dnf-automatic -y && sudo systemctl enable --now dnf-automatic-install.timer` |
 | Arch | No built-in auto-update | Manual: `sudo pacman -Syu` regularly. Consider a cron job, but test updates first. |
 
-**What about Docker containers?** Package managers handle the host OS. Docker containers are updated separately — see [Updating Docker Containers](/foundations/docker-updating). The host OS and Docker containers are two independent update tracks. Keep both current.
+**What about Docker containers?** Package managers handle the host OS. Docker containers are updated separately — see [Updating Docker Containers](/foundations/docker-updating/). The host OS and Docker containers are two independent update tracks. Keep both current.
 
 ## Snap vs Flatpak vs AppImage
 
@@ -371,7 +371,7 @@ You will encounter these alternative package formats. Here is when they matter f
 - No dependency management, no auto-updates.
 - Occasionally useful for one-off tools.
 
-**The recommendation for self-hosting: use Docker for application deployment, not Snap or Flatpak.** Docker gives you version pinning, isolated networking, volume management, and reproducible deployments. Package managers handle the host OS (kernel, SSH, system tools). Docker handles the applications (Nextcloud, Jellyfin, Immich). This separation keeps your host minimal and your applications portable. See [Docker Compose Basics](/foundations/docker-compose-basics) for the full setup.
+**The recommendation for self-hosting: use Docker for application deployment, not Snap or Flatpak.** Docker gives you version pinning, isolated networking, volume management, and reproducible deployments. Package managers handle the host OS (kernel, SSH, system tools). Docker handles the applications (Nextcloud, Jellyfin, Immich). This separation keeps your host minimal and your applications portable. See [Docker Compose Basics](/foundations/docker-compose-basics/) for the full setup.
 
 The only exception: if a tool is only available as a Snap and there is no Docker image (rare), install the Snap. Otherwise, Docker wins for self-hosted services.
 
@@ -416,7 +416,7 @@ APT on Ubuntu Server 24.04 LTS or Debian 12. The combination of long-term suppor
 
 ### Should I use my package manager or Docker to install self-hosted apps?
 
-Docker, almost always. Use your package manager for system-level software: the kernel, SSH, system libraries, Docker itself, monitoring agents, and CLI tools. Use Docker for applications: Nextcloud, Jellyfin, Vaultwarden, and everything else. This keeps your host OS clean and makes applications portable between servers. See [Docker Compose Basics](/foundations/docker-compose-basics) for why this matters.
+Docker, almost always. Use your package manager for system-level software: the kernel, SSH, system libraries, Docker itself, monitoring agents, and CLI tools. Use Docker for applications: Nextcloud, Jellyfin, Vaultwarden, and everything else. This keeps your host OS clean and makes applications portable between servers. See [Docker Compose Basics](/foundations/docker-compose-basics/) for why this matters.
 
 ### How do I know if a package is safe to install?
 
@@ -428,14 +428,14 @@ Yes, but keep it minimal. Use APT for system packages and Docker for application
 
 ### How often should I update my server?
 
-Security updates: automatically, daily (via `unattended-upgrades` or `dnf-automatic`). Non-security updates: manually, at least monthly. Kernel updates require a reboot — schedule reboots during low-traffic hours. Check [Security Hardening](/foundations/security-hardening) for a complete server maintenance checklist.
+Security updates: automatically, daily (via `unattended-upgrades` or `dnf-automatic`). Non-security updates: manually, at least monthly. Kernel updates require a reboot — schedule reboots during low-traffic hours. Check [Security Hardening](/foundations/security-hardening/) for a complete server maintenance checklist.
 
 ## Related
 
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Choosing a Linux Distro for Self-Hosting](/foundations/choosing-linux-distro)
-- [Security Hardening](/foundations/security-hardening)
-- [Linux Systemd Services](/foundations/linux-systemd)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Updating Docker Containers](/foundations/docker-updating)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Choosing a Linux Distro for Self-Hosting](/foundations/choosing-linux-distro/)
+- [Security Hardening](/foundations/security-hardening/)
+- [Linux Systemd Services](/foundations/linux-systemd/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Updating Docker Containers](/foundations/docker-updating/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)

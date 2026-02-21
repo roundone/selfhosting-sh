@@ -52,7 +52,7 @@ n8n is the closest thing to a self-hosted Zapier that actually works. It has 400
 - Learning curve for the canvas editor
 - Uses Sustainable Use License (not OSI open source)
 
-[Read our full guide: How to Self-Host n8n](/apps/n8n)
+[Read our full guide: How to Self-Host n8n](/apps/n8n/)
 
 ### Activepieces — Best Open-Source Alternative
 
@@ -69,7 +69,7 @@ Activepieces is the best choice if open-source licensing (MIT) matters to you. I
 - Younger project (since 2023)
 - Less advanced error handling
 
-[Read our full guide: How to Self-Host Activepieces](/apps/activepieces)
+[Read our full guide: How to Self-Host Activepieces](/apps/activepieces/)
 
 ### Node-RED — Best for IoT & Custom Flows
 
@@ -85,7 +85,7 @@ Node-RED isn't a Zapier clone — it's a flow-based programming tool. But if you
 - Non-technical users (steeper learning curve)
 - SaaS-to-SaaS business automations (fewer pre-built connectors)
 
-[Read our full guide: How to Self-Host Node-RED](/apps/node-red)
+[Read our full guide: How to Self-Host Node-RED](/apps/node-red/)
 
 ### Windmill — Best for Developer Teams
 
@@ -97,7 +97,7 @@ Windmill is a code-first platform for scripts, workflows, and internal tools. If
 - Multi-language support (Python, TypeScript, Go, Bash, SQL)
 - Approval workflows with human-in-the-loop
 
-[Read our full guide: How to Self-Host Windmill](/apps/windmill)
+[Read our full guide: How to Self-Host Windmill](/apps/windmill/)
 
 ### Huginn — Best for Web Monitoring
 
@@ -111,13 +111,13 @@ Huginn is the original self-hosted automation tool (since 2013). Its strength is
 
 **Caveat:** Development has slowed (last tagged release: Aug 2022). For new projects, consider n8n or Activepieces instead.
 
-[Read our full guide: How to Self-Host Huginn](/apps/huginn)
+[Read our full guide: How to Self-Host Huginn](/apps/huginn/)
 
 ### Automatisch — Simplest Zapier Clone
 
 Automatisch is the most faithful Zapier clone — simple trigger-action workflows with a familiar UI. However, with only ~40 integrations and slower development, it's best suited for simple automations with major platforms.
 
-[Read our full guide: How to Self-Host Automatisch](/apps/automatisch)
+[Read our full guide: How to Self-Host Automatisch](/apps/automatisch/)
 
 ## Migration Guide
 
@@ -171,12 +171,12 @@ For most self-hosters, the cost savings and data ownership far outweigh these tr
 
 ## Related
 
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Activepieces](/apps/activepieces)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [How to Self-Host Windmill](/apps/windmill)
-- [n8n vs Node-RED](/compare/n8n-vs-node-red)
-- [n8n vs Activepieces](/compare/n8n-vs-activepieces)
-- [Self-Hosted Alternatives to IFTTT](/replace/ifttt)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Activepieces](/apps/activepieces/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [How to Self-Host Windmill](/apps/windmill/)
+- [n8n vs Node-RED](/compare/n8n-vs-node-red/)
+- [n8n vs Activepieces](/compare/n8n-vs-activepieces/)
+- [Self-Hosted Alternatives to IFTTT](/replace/ifttt/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

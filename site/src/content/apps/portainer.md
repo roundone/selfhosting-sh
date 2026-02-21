@@ -23,7 +23,7 @@ If you run more than a handful of containers, Portainer gives you a single dashb
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (Portainer is lightweight)
 - Docker socket access (`/var/run/docker.sock`)
 - A domain name (optional, for remote HTTPS access)
@@ -207,7 +207,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Port:** `9000`
 - **SSL:** enabled via the proxy
 
-For a full reverse proxy setup guide, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For a full reverse proxy setup guide, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -226,7 +226,7 @@ docker run --rm -v portainer_data:/data -v $(pwd):/backup alpine \
 docker compose start portainer
 ```
 
-Portainer also has a built-in backup feature under **Settings > Backup configuration** where you can download or schedule backups of the internal database. For a complete backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+Portainer also has a built-in backup feature under **Settings > Backup configuration** where you can download or schedule backups of the internal database. For a complete backup strategy, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -284,21 +284,21 @@ Portainer CE is the best Docker management UI for self-hosters. It saves real ti
 
 Power users will still use the CLI for complex deployments and scripting, but Portainer is the fastest way to get a visual overview of your Docker host and handle quick management tasks. The multi-host Agent feature is a bonus if you run Docker across several machines.
 
-The main alternative is [Dockge](/apps/dockge) — a simpler, more focused tool built around `docker-compose.yml` file management. Choose Portainer if you want a comprehensive Docker management dashboard with container inspection, image management, network control, and multi-host support. Choose Dockge if you want a clean, minimal interface focused specifically on managing Compose stacks. For most self-hosters, Portainer is the right starting point.
+The main alternative is [Dockge](/apps/dockge/) — a simpler, more focused tool built around `docker-compose.yml` file management. Choose Portainer if you want a comprehensive Docker management dashboard with container inspection, image management, network control, and multi-host support. Choose Dockge if you want a clean, minimal interface focused specifically on managing Compose stacks. For most self-hosters, Portainer is the right starting point.
 
 ## Related
 
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Cosmos Cloud vs Portainer](/compare/cosmos-cloud-vs-portainer)
-- [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker)
-- [Watchtower (deprecated) vs Portainer](/compare/watchtower-vs-portainer)
-- [Diun vs Portainer](/compare/diun-vs-portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Security Basics](/foundations/security-hardening)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Cosmos Cloud vs Portainer](/compare/cosmos-cloud-vs-portainer/)
+- [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker/)
+- [Watchtower (deprecated) vs Portainer](/compare/watchtower-vs-portainer/)
+- [Diun vs Portainer](/compare/diun-vs-portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Security Basics](/foundations/security-hardening/)

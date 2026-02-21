@@ -23,7 +23,7 @@ Calibre-Web is the most popular way to self-host a Calibre library for family or
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - An existing Calibre library (a directory with `metadata.db` and your ebook files), OR willingness to create one
 - 256 MB RAM minimum (512 MB recommended)
 - A domain name (optional, for remote access)
@@ -157,7 +157,7 @@ Standard reverse proxy setup. Point your proxy to port 8083.
 
 If using Kobo sync behind a reverse proxy, ensure the proxy passes the `X-Forwarded-For` header and supports WebSocket connections.
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -173,7 +173,7 @@ tar -czf calibre-library-$(date +%Y%m%d).tar.gz /path/to/calibre/library/
 
 The `metadata.db` file in your library directory is critical — it contains all book metadata, user annotations, and library structure. Include it in every backup.
 
-[Backup Strategy](/foundations/backup-strategy)
+[Backup Strategy](/foundations/backup-strategy/)
 
 ## Troubleshooting
 
@@ -212,7 +212,7 @@ The `metadata.db` file in your library directory is critical — it contains all
 
 Calibre-Web is the best choice if you already have a Calibre library or want tight integration with Calibre's metadata management. It's mature, lightweight, and the send-to-Kindle feature alone makes it worth setting up for ebook readers.
 
-For manga and comics, [Kavita](/apps/kavita) is a better choice — it has a superior comic reader and handles CBZ/CBR files natively. For comics specifically with metadata scraping, [Komga](/apps/komga) is worth considering. But for a traditional ebook library that the whole family can access, Calibre-Web is the standard.
+For manga and comics, [Kavita](/apps/kavita/) is a better choice — it has a superior comic reader and handles CBZ/CBR files natively. For comics specifically with metadata scraping, [Komga](/apps/komga/) is worth considering. But for a traditional ebook library that the whole family can access, Calibre-Web is the standard.
 
 ## FAQ
 
@@ -238,13 +238,13 @@ Enable uploads in the admin settings. Users with upload permission can add books
 
 ## Related
 
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Calibre-Web vs Kavita](/compare/kavita-vs-calibre-web)
-- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Calibre-Web vs Kavita](/compare/kavita-vs-calibre-web/)
+- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

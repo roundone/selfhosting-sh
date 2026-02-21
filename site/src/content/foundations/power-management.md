@@ -23,9 +23,9 @@ After hardware, the highest-impact optimizations are the CPU power governor and 
 
 ## Prerequisites
 
-- A running Linux server ([Getting Started](/foundations/getting-started))
+- A running Linux server ([Getting Started](/foundations/getting-started/))
 - Root or sudo access
-- Basic command-line familiarity ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Basic command-line familiarity ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - A kill-a-watt meter or smart plug with power monitoring (optional but recommended)
 
 ## Measuring Power Consumption
@@ -36,7 +36,7 @@ You cannot optimize what you do not measure. Start by finding your server's actu
 
 The most accurate method is a plug-in power meter between your server and the wall outlet. Kill-a-watt meters cost $20–30 and show real-time watts, cumulative kWh, and cost projections.
 
-Smart plugs with energy monitoring (TP-Link Kasa, Shelly Plug S) provide the same data and integrate with [Home Assistant](/apps/home-assistant) for long-term tracking.
+Smart plugs with energy monitoring (TP-Link Kasa, Shelly Plug S) provide the same data and integrate with [Home Assistant](/apps/home-assistant/) for long-term tracking.
 
 ### Software Estimation with PowerTOP
 
@@ -117,7 +117,7 @@ The US average electricity rate is approximately $0.16/kWh. Your rate may differ
 
 Quick reference: **every 10W of idle power costs roughly $14/year at US average rates.** This is why hardware choice matters more than any software tweak — the difference between a 10W mini PC and a 100W tower is $126/year, every year.
 
-For a deeper breakdown including hardware amortization, see [Home Server Cost Breakdown](/foundations/home-server-cost).
+For a deeper breakdown including hardware amortization, see [Home Server Cost Breakdown](/foundations/home-server-cost/).
 
 ## CPU Power States and Governors
 
@@ -364,7 +364,7 @@ Add:
 0 0 * * * /sbin/shutdown -h now
 ```
 
-For more on cron syntax, see [Cron Jobs for Maintenance](/foundations/linux-cron-jobs).
+For more on cron syntax, see [Cron Jobs for Maintenance](/foundations/linux-cron-jobs/).
 
 ### Scheduled Startup with RTC Wake
 
@@ -514,7 +514,7 @@ Integrate power data into your existing monitoring stack:
 cat /sys/class/powercap/intel-rapl:0/energy_uj
 ```
 
-For broader monitoring setup, see [Monitoring Your Home Server](/foundations/monitoring-basics).
+For broader monitoring setup, see [Monitoring Your Home Server](/foundations/monitoring-basics/).
 
 ### What to Track
 
@@ -550,12 +550,12 @@ For broader monitoring setup, see [Monitoring Your Home Server](/foundations/mon
 
 ## Related
 
-- [Home Server Cost Breakdown](/foundations/home-server-cost) — full cost analysis including electricity
-- [Monitoring Your Home Server](/foundations/monitoring-basics) — track power usage over time
-- [Systemd Service Basics](/foundations/linux-systemd) — create persistent services for power settings
-- [Cron Jobs for Maintenance](/foundations/linux-cron-jobs) — schedule shutdowns and maintenance
-- [Choosing a Linux Distro](/foundations/choosing-linux-distro) — some distros handle power management better than others
-- [Getting Started with Self-Hosting](/foundations/getting-started) — initial server setup
+- [Home Server Cost Breakdown](/foundations/home-server-cost/) — full cost analysis including electricity
+- [Monitoring Your Home Server](/foundations/monitoring-basics/) — track power usage over time
+- [Systemd Service Basics](/foundations/linux-systemd/) — create persistent services for power settings
+- [Cron Jobs for Maintenance](/foundations/linux-cron-jobs/) — schedule shutdowns and maintenance
+- [Choosing a Linux Distro](/foundations/choosing-linux-distro/) — some distros handle power management better than others
+- [Getting Started with Self-Hosting](/foundations/getting-started/) — initial server setup
 
 ## FAQ
 

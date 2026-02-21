@@ -97,10 +97,10 @@ Most personal sites and small businesses will be better served by Umami. Enterpr
 
 ## Related
 
-- [How to Self-Host Umami](/apps/umami)
-- [How to Self-Host Matomo](/apps/matomo)
-- [How to Self-Host Plausible](/apps/plausible)
-- [Plausible vs Umami](/compare/plausible-vs-umami)
-- [Plausible vs Matomo](/compare/plausible-vs-matomo)
-- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics)
-- [Best Self-Hosted Analytics](/best/analytics)
+- [How to Self-Host Umami](/apps/umami/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [Plausible vs Umami](/compare/plausible-vs-umami/)
+- [Plausible vs Matomo](/compare/plausible-vs-matomo/)
+- [Self-Hosted Alternatives to Google Analytics](/replace/google-analytics/)
+- [Best Self-Hosted Analytics](/best/analytics/)

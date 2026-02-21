@@ -117,7 +117,7 @@ Winner: **Tie.** Both are comparable in community size and maturity risk.
 
 **Zoraxy wins as a reverse proxy.** If you already have container management sorted (or prefer managing containers via CLI/Compose), Zoraxy is the better pure proxy. Its uptime monitoring, GeoIP filtering, and stream proxying are features Cosmos Cloud lacks.
 
-For new self-hosters starting from scratch: consider [Cosmos Cloud](/apps/cosmos-cloud). For experienced self-hosters who want a better proxy: consider [Zoraxy](/apps/zoraxy). For the most battle-tested options: use [Portainer](/apps/portainer) + [Caddy](/apps/caddy) or [Nginx Proxy Manager](/apps/nginx-proxy-manager) separately.
+For new self-hosters starting from scratch: consider [Cosmos Cloud](/apps/cosmos-cloud/). For experienced self-hosters who want a better proxy: consider [Zoraxy](/apps/zoraxy/). For the most battle-tested options: use [Portainer](/apps/portainer/) + [Caddy](/apps/caddy/) or [Nginx Proxy Manager](/apps/nginx-proxy-manager/) separately.
 
 ## FAQ
 
@@ -128,15 +128,15 @@ You could run Zoraxy as your proxy and Cosmos Cloud for container management (di
 Neither is as battle-tested as established tools like Nginx Proxy Manager or Portainer. Cosmos Cloud's pre-1.0 status (v0.20.2) means more likely breaking changes. Zoraxy's v3.3.1 suggests more stability, but it still has a smaller user base than established alternatives.
 
 ### Do either support Kubernetes?
-No. Both are designed for single-server Docker environments. For Kubernetes, use [Traefik](/apps/traefik) or Envoy-based ingress controllers.
+No. Both are designed for single-server Docker environments. For Kubernetes, use [Traefik](/apps/traefik/) or Envoy-based ingress controllers.
 
 ## Related
 
-- [How to Self-Host Zoraxy with Docker](/apps/zoraxy)
-- [How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud)
-- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager)
-- [How to Self-Host Portainer with Docker](/apps/portainer)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Zoraxy with Docker](/apps/zoraxy/)
+- [How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud/)
+- [How to Self-Host Nginx Proxy Manager](/apps/nginx-proxy-manager/)
+- [How to Self-Host Portainer with Docker](/apps/portainer/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

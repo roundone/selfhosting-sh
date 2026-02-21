@@ -104,10 +104,10 @@ Domoticz has a niche: ultra-lightweight deployments on minimal hardware. If you'
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [openHAB vs Domoticz](/compare/openhab-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [openHAB vs Domoticz](/compare/openhab-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

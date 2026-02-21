@@ -26,7 +26,7 @@ DokuWiki is a flat-file wiki that stores all content as plain text files — no 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 200 MB of free disk space
 - 128 MB of RAM (minimum)
 - A domain name (optional, for remote access)
@@ -170,7 +170,7 @@ DokuWiki organizes pages into namespaces (similar to folders). Create a page at 
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full details.
+Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full details.
 
 **Caddy** example:
 
@@ -201,7 +201,7 @@ Key directories inside `/config`:
 
 To restore: extract the tarball into the named volume before starting the container.
 
-Since everything is flat files, you can also back up DokuWiki by simply rsyncing the volume directory. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+Since everything is flat files, you can also back up DokuWiki by simply rsyncing the volume directory. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ## Troubleshooting
 
@@ -243,7 +243,7 @@ If DNS fails, add DNS settings to your Compose file:
 
 **Symptom:** Wiki becomes slow with thousands of pages.
 
-**Fix:** DokuWiki's flat-file approach scales to tens of thousands of pages but can slow down with heavy indexing. Enable the built-in caching (it's on by default). For very large wikis (50,000+ pages), consider [Wiki.js](/apps/wikijs) or [BookStack](/apps/bookstack) with a database backend.
+**Fix:** DokuWiki's flat-file approach scales to tens of thousands of pages but can slow down with heavy indexing. Enable the built-in caching (it's on by default). For very large wikis (50,000+ pages), consider [Wiki.js](/apps/wikijs/) or [BookStack](/apps/bookstack/) with a database backend.
 
 ## Resource Requirements
 
@@ -257,23 +257,23 @@ DokuWiki is one of the lightest wiki options available.
 
 DokuWiki is the right choice when simplicity matters most. No database, no complex setup, no migration headaches. Back up your wiki by copying a folder. Restore it by pasting it back. The plugin ecosystem is massive and covers nearly every use case.
 
-The trade-offs are real: the default syntax isn't Markdown (though a plugin adds it), the UI looks dated compared to [Wiki.js](/apps/wikijs) or [BookStack](/apps/bookstack), and the WYSIWYG editor is basic. If your team values modern UI and native Markdown, look at Wiki.js instead.
+The trade-offs are real: the default syntax isn't Markdown (though a plugin adds it), the UI looks dated compared to [Wiki.js](/apps/wikijs/) or [BookStack](/apps/bookstack/), and the WYSIWYG editor is basic. If your team values modern UI and native Markdown, look at Wiki.js instead.
 
 **Choose DokuWiki if:** you want zero database dependencies, easy backups, and a massive plugin ecosystem.
 
-**Choose [Wiki.js](/apps/wikijs) if:** you want a modern UI, Git sync, and native Markdown.
+**Choose [Wiki.js](/apps/wikijs/) if:** you want a modern UI, Git sync, and native Markdown.
 
-**Choose [MediaWiki](/apps/mediawiki) if:** you want Wikipedia-style features like structured data, extensions, and massive scalability.
+**Choose [MediaWiki](/apps/mediawiki/) if:** you want Wikipedia-style features like structured data, extensions, and massive scalability.
 
 ## Related
 
-- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki)
-- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki)
-- [How to Self-Host Wiki.js](/apps/wikijs)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host MediaWiki](/apps/mediawiki)
-- [Best Self-Hosted Wiki](/best/wiki)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki/)
+- [Wiki.js vs DokuWiki](/compare/wikijs-vs-dokuwiki/)
+- [How to Self-Host Wiki.js](/apps/wikijs/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host MediaWiki](/apps/mediawiki/)
+- [Best Self-Hosted Wiki](/best/wiki/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

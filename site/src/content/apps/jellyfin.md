@@ -25,7 +25,7 @@ Jellyfin replaces [Plex](https://plex.tv) (proprietary, paid features gated behi
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of RAM minimum (4 GB+ recommended if you plan to transcode)
 - Media files on accessible storage (local drives, NAS mounts, or external USB)
 - A domain name (optional, for remote access via reverse proxy)
@@ -242,7 +242,7 @@ Jellyfin supports live TV through HDHomeRun tuners and IPTV/M3U streams:
 
 ### Networking
 
-For remote access, put Jellyfin behind a [reverse proxy](/foundations/reverse-proxy-explained) rather than exposing port 8096 directly to the internet.
+For remote access, put Jellyfin behind a [reverse proxy](/foundations/reverse-proxy-explained/) rather than exposing port 8096 directly to the internet.
 
 Jellyfin uses **WebSockets** for SyncPlay (synchronized playback across multiple clients). Your reverse proxy must support WebSocket connections, or SyncPlay will not work. Both Nginx Proxy Manager and Caddy handle this without extra configuration. For Nginx directly, ensure you include `proxy_set_header Upgrade $http_upgrade` and `proxy_set_header Connection "upgrade"` in your config.
 
@@ -262,7 +262,7 @@ For Nginx Proxy Manager, add a new proxy host pointing to `http://your-server-ip
 
 After setting up the reverse proxy, update `JELLYFIN_PublishedServerUrl` in your `docker-compose.yml` to your public domain (e.g., `https://jellyfin.yourdomain.com`) and restart the container.
 
-See the full [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for detailed instructions.
+See the full [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for detailed instructions.
 
 ## Backup
 
@@ -270,7 +270,7 @@ The `/config` volume contains everything Jellyfin needs: the database, user acco
 
 The `/cache` volume is expendable — it contains transcoding artifacts and cached images that Jellyfin regenerates automatically.
 
-Your media files should be backed up separately as part of your overall [backup strategy](/foundations/backup-3-2-1-rule).
+Your media files should be backed up separately as part of your overall [backup strategy](/foundations/backup-3-2-1-rule/).
 
 To back up the config volume:
 
@@ -319,7 +319,7 @@ If `renderD128` is missing, check your `docker-compose.yml` devices section. If 
 **Fix:** This means software transcoding is active. Enable hardware transcoding (see above). If hardware transcoding is already enabled, check that it's actually being used in the dashboard's active streams view. For libraries with many incompatible formats, consider pre-transcoding with [Tdarr](https://tdarr.io/) to convert files to a format most clients can direct-play (H.264 in MP4 is the safest choice).
 
 For more detailed troubleshooting, see:
-- [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues)
+- [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues/)
 
 ## Resource Requirements
 
@@ -333,19 +333,19 @@ Jellyfin is the best self-hosted media server for most people. It is completely 
 
 Hardware transcoding with Intel QuickSync works excellently in Jellyfin and requires nothing more than a $100 N100 mini PC. The client app ecosystem covers every major platform. The plugin system is extensible without being overwhelming.
 
-If you want a media server that you fully own and control, Jellyfin is the answer. Start here, and only look at [Plex](/compare/jellyfin-vs-plex) or [Emby](/compare/jellyfin-vs-emby) if you hit a specific limitation that Jellyfin can't solve.
+If you want a media server that you fully own and control, Jellyfin is the answer. Start here, and only look at [Plex](/compare/jellyfin-vs-plex/) or [Emby](/compare/jellyfin-vs-emby/) if you hit a specific limitation that Jellyfin can't solve.
 
 ## Related
 
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Dim vs Jellyfin](/compare/dim-vs-jellyfin)
-- [Jellyfin vs Navidrome for Music](/compare/jellyfin-vs-navidrome-music)
-- [Jellyfin vs Plex for Music](/compare/jellyfin-vs-plex-music)
-- [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Dim vs Jellyfin](/compare/dim-vs-jellyfin/)
+- [Jellyfin vs Navidrome for Music](/compare/jellyfin-vs-navidrome-music/)
+- [Jellyfin vs Plex for Music](/compare/jellyfin-vs-plex-music/)
+- [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

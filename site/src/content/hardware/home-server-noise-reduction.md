@@ -40,7 +40,7 @@ If noise is a hard constraint (server in a bedroom or living room): buy a fanles
 
 ## Strategy 1: Replace Fans
 
-The highest-impact, lowest-cost fix. Stock fans — especially on used enterprise hardware like [Dell OptiPlex](/hardware/used-dell-optiplex) or [Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre) — prioritize reliability over noise.
+The highest-impact, lowest-cost fix. Stock fans — especially on used enterprise hardware like [Dell OptiPlex](/hardware/used-dell-optiplex/) or [Lenovo ThinkCentre](/hardware/used-lenovo-thinkcentre/) — prioritize reliability over noise.
 
 ### Recommended Fan Replacements
 
@@ -89,7 +89,7 @@ Zero noise, zero maintenance. Trade-off: lower sustained performance due to pass
 
 *Some Beelink models have a fan that rarely spins. Check reviews for your specific model.
 
-The [Intel N100](/hardware/intel-n100-mini-pc) can handle 10-15 Docker containers including [Jellyfin](/apps/jellyfin) (with hardware transcoding), [Nextcloud](/apps/nextcloud), [Pi-hole](/apps/pi-hole), and more — all passively cooled.
+The [Intel N100](/hardware/intel-n100-mini-pc/) can handle 10-15 Docker containers including [Jellyfin](/apps/jellyfin/) (with hardware transcoding), [Nextcloud](/apps/nextcloud/), [Pi-hole](/apps/pi-hole/), and more — all passively cooled.
 
 ### Quiet NAS Units
 
@@ -141,13 +141,13 @@ The most effective vibration fix: **replace HDDs with SSDs.** SSDs have zero mov
 | Fractal Design Node 304 | Mini-ITX | Sound-dampened, 6-bay, compact | ~$100 |
 | Silverstone CS380 | NAS tower | 8-bay, HDD vibration dampening | ~$150 |
 
-The [Fractal Design Node 304](/hardware/server-case-guide) is a popular choice for silent NAS builds — it fits 6 HDDs in a compact case with sound dampening.
+The [Fractal Design Node 304](/hardware/server-case-guide/) is a popular choice for silent NAS builds — it fits 6 HDDs in a compact case with sound dampening.
 
 ### Placement Strategies
 
 1. **Closet / utility room** — The best noise fix is distance. A server in a closet with the door closed is inaudible. Ensure ventilation — leave the door cracked or install a vent.
 
-2. **Server rack with sound dampening** — If you have a [server rack](/hardware/home-server-rack), line it with acoustic foam. Rack-mounted servers are inherently louder (1U fans are small and fast).
+2. **Server rack with sound dampening** — If you have a [server rack](/hardware/home-server-rack/), line it with acoustic foam. Rack-mounted servers are inherently louder (1U fans are small and fast).
 
 3. **Under a desk** — Effective for mini PCs and small NAS. The desk blocks direct sound.
 
@@ -223,10 +223,10 @@ Yes, indirectly. Undervolting reduces heat, which reduces fan speed. On AMD Ryze
 
 ## Related
 
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Best Server Cases for Homelab](/hardware/server-case-guide)
-- [Home Server Rack Setup Guide](/hardware/home-server-rack)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Best Server Cases for Homelab](/hardware/server-case-guide/)
+- [Home Server Rack Setup Guide](/hardware/home-server-rack/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)

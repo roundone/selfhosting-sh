@@ -103,10 +103,10 @@ If you're setting up a wiki for a small team and don't want to configure an iden
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
-- [Replace Confluence](/replace/confluence)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)
+- [Replace Confluence](/replace/confluence/)

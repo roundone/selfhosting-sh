@@ -26,7 +26,7 @@ Strapi is an open-source headless CMS built on Node.js. It provides a visual adm
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - Node.js 22 (for building the Docker image)
 - 2 GB of RAM minimum
 - 10 GB of free disk space
@@ -247,7 +247,7 @@ location / {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager), [Traefik](/apps/traefik), or [Caddy](/apps/caddy).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full guides with [Nginx Proxy Manager](/apps/nginx-proxy-manager/), [Traefik](/apps/traefik/), or [Caddy](/apps/caddy/).
 
 ## Backup
 
@@ -263,7 +263,7 @@ docker exec strapi-db pg_dump -U strapi strapi > strapi-backup.sql
 docker cp strapi:/opt/app/public/uploads ./strapi-uploads-backup
 ```
 
-See [Backup Strategy](/foundations/backup-strategy).
+See [Backup Strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -306,19 +306,19 @@ If you changed `PUBLIC_URL` or `STRAPI_ADMIN_BACKEND_URL`, you must rebuild — 
 
 ## Verdict
 
-Strapi is the best open-source headless CMS for developers who want a visual admin panel backed by auto-generated APIs. The Content-Type Builder makes defining schemas painless, and the REST/GraphQL APIs work out of the box. It's the right choice if you're building a JAMstack site with [Hugo](/apps/hugo), Astro, or Next.js and need a content backend.
+Strapi is the best open-source headless CMS for developers who want a visual admin panel backed by auto-generated APIs. The Content-Type Builder makes defining schemas painless, and the REST/GraphQL APIs work out of the box. It's the right choice if you're building a JAMstack site with [Hugo](/apps/hugo/), Astro, or Next.js and need a content backend.
 
-The main drawback is the build-from-source Docker workflow — there's no pre-built image, so every deployment requires compiling the admin panel. This adds minutes to your CI/CD pipeline. If you want a simpler deployment, [Directus](/apps/directus) offers a pre-built Docker image with similar capabilities. If you just want a blog, [Ghost](/apps/ghost) or [WordPress](/apps/wordpress) are simpler choices.
+The main drawback is the build-from-source Docker workflow — there's no pre-built image, so every deployment requires compiling the admin panel. This adds minutes to your CI/CD pipeline. If you want a simpler deployment, [Directus](/apps/directus/) offers a pre-built Docker image with similar capabilities. If you just want a blog, [Ghost](/apps/ghost/) or [WordPress](/apps/wordpress/) are simpler choices.
 
 ## Related
 
-- [How to Self-Host Directus](/apps/directus)
-- [How to Self-Host Ghost](/apps/ghost)
-- [How to Self-Host WordPress](/apps/wordpress)
-- [How to Self-Host Hugo](/apps/hugo)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Directus vs Strapi](/compare/directus-vs-strapi)
-- [Best Self-Hosted CMS](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Directus](/apps/directus/)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [How to Self-Host Hugo](/apps/hugo/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Directus vs Strapi](/compare/directus-vs-strapi/)
+- [Best Self-Hosted CMS](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

@@ -22,7 +22,7 @@ For expanding a mini PC server: **CalDigit TS4** (~$350, 18 ports, 2.5GbE, 3x Th
 ## When a Thunderbolt Dock Makes Sense
 
 **Good use cases:**
-- **Mini PC as server + workstation.** One Thunderbolt cable connects your [Intel N100](/hardware/intel-n100-mini-pc) to monitors, keyboard, Ethernet, and storage. Undock to move the PC.
+- **Mini PC as server + workstation.** One Thunderbolt cable connects your [Intel N100](/hardware/intel-n100-mini-pc/) to monitors, keyboard, Ethernet, and storage. Undock to move the PC.
 - **Expanding limited I/O.** Some mini PCs have only 2 USB ports and 1 Ethernet. A dock adds more of everything.
 - **Adding 2.5/10GbE.** If your mini PC lacks PCIe, a Thunderbolt dock with built-in 2.5GbE or an external Thunderbolt-to-10GbE adapter is your only option.
 - **External NVMe storage.** Thunderbolt delivers near-native NVMe speeds (~2,800 MB/s) vs USB's ~1,000 MB/s cap.
@@ -52,7 +52,7 @@ Thunderbolt 4 vs 3: same bandwidth, but TB4 mandates USB4 compatibility, hub sup
 | Thunderbolt downstream | Daisy-chain NVMe enclosures |
 | USB-A 3.2 | USB drives, UPS monitoring |
 | USB-C 3.2 | External SSDs, peripherals |
-| SD card | Camera imports (for [Immich](/apps/immich)) |
+| SD card | Camera imports (for [Immich](/apps/immich/)) |
 | DisplayPort / HDMI | Emergency console access |
 
 ### Power Delivery
@@ -205,9 +205,9 @@ Usually not. If you never plug in a monitor and just need network + storage, dir
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [10GbE Networking for Home Servers](/hardware/10gbe-networking)
-- [NVMe Enclosures for Home Servers](/hardware/nvme-enclosures)
-- [DAS vs NAS: Which Storage?](/hardware/das-vs-nas)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [10GbE Networking for Home Servers](/hardware/10gbe-networking/)
+- [NVMe Enclosures for Home Servers](/hardware/nvme-enclosures/)
+- [DAS vs NAS: Which Storage?](/hardware/das-vs-nas/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

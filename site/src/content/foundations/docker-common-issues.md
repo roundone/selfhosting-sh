@@ -15,13 +15,13 @@ affiliateDisclosure: false
 
 ## The Most Common Docker Problems
 
-Docker issues fall into a few predictable categories. This guide covers the ones you'll hit most often when self-hosting, with direct fixes for each. For a broader diagnostic approach, see [Docker Troubleshooting](/foundations/docker-troubleshooting).
+Docker issues fall into a few predictable categories. This guide covers the ones you'll hit most often when self-hosting, with direct fixes for each. For a broader diagnostic approach, see [Docker Troubleshooting](/foundations/docker-troubleshooting/).
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Terminal access to your server ([SSH Setup](/foundations/ssh-setup))
-- Basic familiarity with Linux commands ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Terminal access to your server ([SSH Setup](/foundations/ssh-setup/))
+- Basic familiarity with Linux commands ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Image Pull Failures
 
@@ -91,7 +91,7 @@ uname -m
 docker manifest inspect nginx:1.25 | jq '.manifests[].platform'
 ```
 
-If the image doesn't support your architecture, look for alternative images or builds. LinuxServer.io images typically support both amd64 and arm64. See [Docker Multi-Architecture](/foundations/docker-multi-arch) for details.
+If the image doesn't support your architecture, look for alternative images or builds. LinuxServer.io images typically support both amd64 and arm64. See [Docker Multi-Architecture](/foundations/docker-multi-arch/) for details.
 
 ## Container Startup Failures
 
@@ -125,7 +125,7 @@ environment:
 ls -la .env
 ```
 
-See [Docker Environment Variables](/foundations/docker-environment-variables) for full details.
+See [Docker Environment Variables](/foundations/docker-environment-variables/) for full details.
 
 ### Database Connection Refused
 
@@ -222,7 +222,7 @@ EOF
 sudo systemctl restart docker
 ```
 
-See [Container Logging](/foundations/container-logging) for log management strategies.
+See [Container Logging](/foundations/container-logging/) for log management strategies.
 
 ### Out of Memory (OOM) Kills
 
@@ -338,7 +338,7 @@ sudo ufw allow 8080/tcp
 sudo iptables -L -n | grep 8080
 ```
 
-See [Firewall Setup](/foundations/firewall-ufw) for firewall configuration.
+See [Firewall Setup](/foundations/firewall-ufw/) for firewall configuration.
 
 ### DNS Resolution Fails Inside Container
 
@@ -357,7 +357,7 @@ services:
       - 8.8.8.8
 ```
 
-See [Docker Networking](/foundations/docker-networking) for a comprehensive networking guide.
+See [Docker Networking](/foundations/docker-networking/) for a comprehensive networking guide.
 
 ## Volume and Data Issues
 
@@ -382,7 +382,7 @@ volumes:
   postgres_data:
 ```
 
-See [Docker Volumes](/foundations/docker-volumes) for volume management.
+See [Docker Volumes](/foundations/docker-volumes/) for volume management.
 
 ### Permission Denied on Volume Mounts
 
@@ -394,7 +394,7 @@ docker exec mycontainer id
 sudo chown -R 1000:1000 /path/to/data
 ```
 
-See [Docker Volume Permissions](/foundations/docker-volume-permissions) for detailed solutions.
+See [Docker Volume Permissions](/foundations/docker-volume-permissions/) for detailed solutions.
 
 ## Quick Diagnostic Checklist
 
@@ -448,11 +448,11 @@ Check disk I/O (`iostat -x 1`), Docker daemon health (`sudo systemctl status doc
 
 ## Related
 
-- [Docker Troubleshooting](/foundations/docker-troubleshooting)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Environment Variables](/foundations/docker-environment-variables)
-- [Docker Security](/foundations/docker-security)
-- [Container Logging](/foundations/container-logging)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
+- [Docker Troubleshooting](/foundations/docker-troubleshooting/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Environment Variables](/foundations/docker-environment-variables/)
+- [Docker Security](/foundations/docker-security/)
+- [Container Logging](/foundations/container-logging/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

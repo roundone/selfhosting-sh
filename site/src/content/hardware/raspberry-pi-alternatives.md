@@ -181,9 +181,9 @@ Technically yes (Kubernetes, Docker Swarm). Practically, one N100 mini PC outper
 
 ## Related
 
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Raspberry Pi Docker Setup](/hardware/raspberry-pi-docker)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Raspberry Pi Docker Setup](/hardware/raspberry-pi-docker/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

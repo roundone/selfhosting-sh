@@ -28,7 +28,7 @@ Stirling-PDF processes everything locally — your documents are never sent to t
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (1 GB recommended for OCR features)
 - 2 GB of free disk space
 - A domain name (optional, for remote access)
@@ -163,7 +163,7 @@ client_max_body_size 100M;
 proxy_read_timeout 300s;
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -174,7 +174,7 @@ docker run --rm -v stirling_config:/data -v $(pwd):/backup alpine \
   tar czf /backup/stirling-config-$(date +%Y%m%d).tar.gz /data
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -201,14 +201,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup appr
 
 ## Verdict
 
-Stirling-PDF is the best self-hosted PDF tool. It handles everything Adobe Acrobat does without sending your documents to the cloud. The web UI is intuitive, the API makes automation easy, and it's completely stateless — no database, no complex setup. It doesn't replace [Paperless-ngx](/apps/paperless-ngx) for document management and archival — Stirling-PDF is a tool, not an archive. Use both: Paperless-ngx for organizing and searching your documents, Stirling-PDF for manipulating them.
+Stirling-PDF is the best self-hosted PDF tool. It handles everything Adobe Acrobat does without sending your documents to the cloud. The web UI is intuitive, the API makes automation easy, and it's completely stateless — no database, no complex setup. It doesn't replace [Paperless-ngx](/apps/paperless-ngx/) for document management and archival — Stirling-PDF is a tool, not an archive. Use both: Paperless-ngx for organizing and searching your documents, Stirling-PDF for manipulating them.
 
 ## Related
 
-- [Best Self-Hosted Document Management](/best/document-management)
-- [Paperless-ngx vs Stirling-PDF](/compare/paperless-ngx-vs-stirling-pdf)
-- [How to Self-Host Paperless-ngx](/apps/paperless-ngx)
-- [Replace Adobe Acrobat with Self-Hosted Tools](/replace/adobe-acrobat)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Document Management](/best/document-management/)
+- [Paperless-ngx vs Stirling-PDF](/compare/paperless-ngx-vs-stirling-pdf/)
+- [How to Self-Host Paperless-ngx](/apps/paperless-ngx/)
+- [Replace Adobe Acrobat with Self-Hosted Tools](/replace/adobe-acrobat/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

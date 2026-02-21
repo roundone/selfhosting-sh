@@ -19,18 +19,18 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
-> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Watchtower also carries a risk of data corruption — it can auto-update containers (including databases) mid-transaction. Consider [DIUN](/apps/diun) for update notifications with manual approval, or [What's Up Docker (WUCT)](https://github.com/fmartinou/whats-up-docker) as an actively maintained alternative. This guide remains available for existing users.
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Watchtower also carries a risk of data corruption — it can auto-update containers (including databases) mid-transaction. Consider [DIUN](/apps/diun/) for update notifications with manual approval, or [What's Up Docker (WUCT)](https://github.com/fmartinou/whats-up-docker) as an actively maintained alternative. This guide remains available for existing users.
 
 ## What Is Watchtower?
 
 [Watchtower](https://github.com/containrrr/watchtower) is a Docker container that monitors your running containers and automatically updates them when a new image is pushed to the registry. It pulls the latest version of each image, gracefully shuts down the existing container, and restarts it with the same configuration. There is no web UI — Watchtower runs as a background daemon and does its job silently unless you configure notifications.
 
-**Note:** Watchtower's GitHub repository (`containrrr/watchtower`) has been archived. The project is no longer actively maintained. While existing installations continue to work, no new features or bug fixes will be released. For new setups, consider [DIUN](/apps/diun) (notify-only) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval before updates).
+**Note:** Watchtower's GitHub repository (`containrrr/watchtower`) has been archived. The project is no longer actively maintained. While existing installations continue to work, no new features or bug fixes will be released. For new setups, consider [DIUN](/apps/diun/) (notify-only) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval before updates).
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 64 MB of free RAM
 - Running containers you want to keep updated
 
@@ -344,7 +344,7 @@ docker image prune -f
 **If you currently use Watchtower:** It will keep working — the container image exists and functions. But you will receive no bug fixes, security patches, or new features. The risk of auto-updating containers (especially databases) mid-transaction remains a fundamental design concern that was never addressed.
 
 **For new setups, use one of these instead:**
-- **[DIUN](/apps/diun)** — notifies you when updates are available without touching your containers. You decide when and how to apply updates. The safest approach.
+- **[DIUN](/apps/diun/)** — notifies you when updates are available without touching your containers. You decide when and how to apply updates. The safest approach.
 - **[What's Up Docker (WUCT)](https://github.com/fmartinou/whats-up-docker)** — actively maintained, provides update notifications with manual approval workflows. The closest feature-for-feature replacement for Watchtower, but with a safer update model.
 
 If you insist on fully automatic updates for non-critical services, Watchtower still functions. But for anything you care about, use DIUN or WUCT instead.
@@ -365,7 +365,7 @@ By default, Watchtower monitors all containers including itself. This is general
 
 ### What is the difference between Watchtower and Diun?
 
-Watchtower automatically pulls new images and restarts containers. [Diun](/apps/diun) only notifies you that an update is available — it never touches your running containers. Use Watchtower for hands-off updates. Use Diun when you want to review and apply updates manually. See our [Watchtower vs Diun comparison](/compare/watchtower-vs-diun).
+Watchtower automatically pulls new images and restarts containers. [Diun](/apps/diun/) only notifies you that an update is available — it never touches your running containers. Use Watchtower for hands-off updates. Use Diun when you want to review and apply updates manually. See our [Watchtower vs Diun comparison](/compare/watchtower-vs-diun/).
 
 ### Does Watchtower work with Docker Compose?
 
@@ -373,11 +373,11 @@ Watchtower works at the Docker daemon level, not the Compose level. It sees and 
 
 ## Related
 
-- [How to Self-Host Portainer](/apps/portainer)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Watchtower vs Diun](/compare/watchtower-vs-diun)
-- [Best Self-Hosted Docker Management](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
-- [Docker Networking](/foundations/docker-networking)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

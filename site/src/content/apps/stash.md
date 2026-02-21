@@ -21,7 +21,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB RAM minimum (4 GB recommended for large libraries and transcoding)
 - Disk space for your media library plus cache for generated thumbnails/previews
 - A domain name (optional, for remote access)
@@ -151,7 +151,7 @@ stash.yourdomain.com {
 }
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed instructions.
 
 ## Backup
 
@@ -171,7 +171,7 @@ tar czf stash-backup-$(date +%Y%m%d).tar.gz /opt/stash/config /opt/stash/metadat
 
 Stash also has a built-in backup feature under **Settings** → **System** → **Backup** that creates database snapshots.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive backup approach.
 
 ## Troubleshooting
 
@@ -210,7 +210,7 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive backup
 
 Stash is a capable media organizer with strong metadata scraping and tagging features. The plugin system and community scraper ecosystem add flexibility. The single-container deployment with embedded SQLite keeps setup trivially simple.
 
-Stash fills a specific niche — if you need a metadata-driven organizer with tagging, filtering, and scene detection, it does that well. For general video streaming to multiple devices, use [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex). For music, use [Navidrome](/apps/navidrome).
+Stash fills a specific niche — if you need a metadata-driven organizer with tagging, filtering, and scene detection, it does that well. For general video streaming to multiple devices, use [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/). For music, use [Navidrome](/apps/navidrome/).
 
 ## FAQ
 
@@ -236,12 +236,12 @@ Yes. Stash and Jellyfin serve different purposes and can point to the same media
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

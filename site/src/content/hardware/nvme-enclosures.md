@@ -21,10 +21,10 @@ For a single NVMe drive as fast external storage: **UGREEN M.2 NVMe Enclosure** 
 
 NVMe drives in external enclosures solve specific self-hosting problems:
 
-- **Fast VM/container storage** for [Proxmox](/hardware/proxmox-hardware-guide) hosts that lack internal M.2 slots
+- **Fast VM/container storage** for [Proxmox](/hardware/proxmox-hardware-guide/) hosts that lack internal M.2 slots
 - **High-speed backup target** that's portable for offsite rotation
 - **Boot drive upgrade** for mini PCs with limited internal storage
-- **Database storage** for apps like [Nextcloud](/apps/nextcloud) where SQLite/PostgreSQL I/O matters
+- **Database storage** for apps like [Nextcloud](/apps/nextcloud/) where SQLite/PostgreSQL I/O matters
 - **Cache tier** for NAS systems that support SSD caching
 
 ## What to Look For
@@ -195,7 +195,7 @@ Tested with Samsung 970 EVO Plus 1TB:
 
 ### Fast Boot Drive for Mini PCs
 
-Many [Intel N100 mini PCs](/hardware/intel-n100-mini-pc) have one M.2 slot. Use the internal slot for the OS and an external NVMe for container volumes:
+Many [Intel N100 mini PCs](/hardware/intel-n100-mini-pc/) have one M.2 slot. Use the internal slot for the OS and an external NVMe for container volumes:
 
 ```bash
 # Mount external NVMe for Docker data
@@ -209,11 +209,11 @@ sudo mkdir -p /mnt/nvme-external
 
 ### Database Storage
 
-Self-hosted apps with heavy database usage ([Nextcloud](/apps/nextcloud), [Gitea](/apps/gitea), [Immich](/apps/immich)) benefit from NVMe's random I/O performance. Mount the NVMe enclosure and point PostgreSQL data directory to it.
+Self-hosted apps with heavy database usage ([Nextcloud](/apps/nextcloud/), [Gitea](/apps/gitea/), [Immich](/apps/immich/)) benefit from NVMe's random I/O performance. Mount the NVMe enclosure and point PostgreSQL data directory to it.
 
 ### Offsite Backup Shuttle
 
-Load your [Restic](/apps/restic) or [BorgBackup](/apps/borgbackup) repository onto an NVMe in an enclosure. Swap the enclosure weekly for offsite rotation. A 1TB NVMe fills 10x faster than an HDD.
+Load your [Restic](/apps/restic/) or [BorgBackup](/apps/borgbackup/) repository onto an NVMe in an enclosure. Swap the enclosure weekly for offsite rotation. A 1TB NVMe fills 10x faster than an HDD.
 
 ## Power Consumption
 
@@ -246,10 +246,10 @@ Most modern BIOS/UEFI systems can boot from USB storage. Performance is near-nat
 
 ## Related
 
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [DAS vs NAS: Which Storage?](/hardware/das-vs-nas)
-- [Best NAS for Home Servers](/hardware/best-nas)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [DAS vs NAS: Which Storage?](/hardware/das-vs-nas/)
+- [Best NAS for Home Servers](/hardware/best-nas/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)

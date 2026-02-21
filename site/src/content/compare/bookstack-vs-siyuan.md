@@ -87,10 +87,10 @@ If you're choosing one for team documentation, BookStack is the only answer here
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host SiYuan](/apps/siyuan)
-- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host SiYuan](/apps/siyuan/)
+- [BookStack vs Wiki.js](/compare/bookstack-vs-wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)

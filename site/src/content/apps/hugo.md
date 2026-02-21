@@ -28,7 +28,7 @@ Hugo is not a typical Docker app. There is no persistent service to run. Instead
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (for builds; the production Nginx container uses ~20 MB)
 - A Hugo site initialized locally or in a git repository
 - Basic familiarity with Markdown
@@ -473,11 +473,11 @@ networks:
     external: true
 ```
 
-For a full reverse proxy setup, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For a full reverse proxy setup, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ### Caddy
 
-If you use [Caddy](/apps/caddy) as your reverse proxy, add to your Caddyfile:
+If you use [Caddy](/apps/caddy/) as your reverse proxy, add to your Caddyfile:
 
 ```caddyfile
 yourdomain.com {
@@ -512,7 +512,7 @@ If your Hugo site is in a git repository (it should be), your content is already
 tar --exclude='public' --exclude='.git' -czf hugo-backup-$(date +%Y%m%d).tar.gz /opt/hugo-site/
 ```
 
-For a comprehensive approach, see [Backup Strategy — The 3-2-1 Rule](/foundations/backup-3-2-1-rule).
+For a comprehensive approach, see [Backup Strategy — The 3-2-1 Rule](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -586,9 +586,9 @@ Hugo is one of the least resource-intensive options for running a website. A sin
 
 Hugo is the best option for developers and technical users who want a fast, secure, low-maintenance website. If you are comfortable writing Markdown and can run `docker compose up`, Hugo gives you a site that loads in under 100ms, costs next to nothing to serve, and has zero security vulnerabilities from server-side code.
 
-Choose Hugo over [Ghost](/apps/ghost) if you do not need a web-based editor, memberships, or newsletters. Ghost is a full CMS with a database — powerful but heavier. Hugo is a build tool that produces plain HTML — simpler and faster.
+Choose Hugo over [Ghost](/apps/ghost/) if you do not need a web-based editor, memberships, or newsletters. Ghost is a full CMS with a database — powerful but heavier. Hugo is a build tool that produces plain HTML — simpler and faster.
 
-Choose Hugo over [WordPress](/apps/wordpress) if you want speed, security, and simplicity above all else. WordPress has a massive plugin ecosystem and visual editing, but it requires PHP, MySQL, and constant security patching. Hugo has none of that overhead.
+Choose Hugo over [WordPress](/apps/wordpress/) if you want speed, security, and simplicity above all else. WordPress has a massive plugin ecosystem and visual editing, but it requires PHP, MySQL, and constant security patching. Hugo has none of that overhead.
 
 Choose Ghost or WordPress over Hugo if non-technical people need to edit content through a web browser, or if you need built-in membership and payment features.
 
@@ -596,12 +596,12 @@ For most personal blogs, documentation sites, and project pages maintained by a 
 
 ## Related
 
-- [How to Self-Host Ghost with Docker Compose](/apps/ghost)
-- [How to Self-Host WordPress with Docker Compose](/apps/wordpress)
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [Ghost vs WordPress: Which Should You Self-Host?](/compare/ghost-vs-wordpress)
-- [Best Self-Hosted CMS Platforms](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Backup Strategy — The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Ghost with Docker Compose](/apps/ghost/)
+- [How to Self-Host WordPress with Docker Compose](/apps/wordpress/)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [Ghost vs WordPress: Which Should You Self-Host?](/compare/ghost-vs-wordpress/)
+- [Best Self-Hosted CMS Platforms](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Backup Strategy — The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)

@@ -55,9 +55,9 @@ OpenVPN has been the standard self-hosted VPN solution since 2001. It runs in us
 
 ## Installation Complexity
 
-**WireGuard** is installed as a kernel module (already present on most modern Linux distros) or via Docker. Configuration is a single file per peer. You generate a key pair, define peers, and you're done. No certificate authority, no PKI, no TLS negotiation. A basic setup takes 10-15 minutes. See our [WireGuard setup guide](/apps/wireguard).
+**WireGuard** is installed as a kernel module (already present on most modern Linux distros) or via Docker. Configuration is a single file per peer. You generate a key pair, define peers, and you're done. No certificate authority, no PKI, no TLS negotiation. A basic setup takes 10-15 minutes. See our [WireGuard setup guide](/apps/wireguard/).
 
-For an even simpler experience, use [wg-easy](/apps/wg-easy) — a web UI that manages WireGuard configuration and generates QR codes for mobile clients.
+For an even simpler experience, use [wg-easy](/apps/wg-easy/) — a web UI that manages WireGuard configuration and generates QR codes for mobile clients.
 
 **OpenVPN** requires setting up a Public Key Infrastructure (PKI) with a certificate authority, generating server and client certificates, configuring the server with dozens of options, and distributing `.ovpn` config files to clients. Plan for 30-60 minutes minimum. Tools like [easy-rsa](https://github.com/OpenVPN/easy-rsa) help, but it's still more involved.
 
@@ -85,7 +85,7 @@ WireGuard's kernel integration is the key differentiator. It processes packets i
 
 This is OpenVPN's remaining killer feature. WireGuard uses UDP only, which is blocked by some corporate firewalls, airports, and restrictive networks. OpenVPN can run over TCP port 443, making it indistinguishable from HTTPS traffic — it works almost everywhere.
 
-If you need VPN access from networks that block UDP, OpenVPN over TCP is your best option. Alternatively, pair WireGuard with [Cloudflare Tunnel](/apps/cloudflare-tunnel) or use [Tailscale](/apps/tailscale) which includes relay servers for traversal.
+If you need VPN access from networks that block UDP, OpenVPN over TCP is your best option. Alternatively, pair WireGuard with [Cloudflare Tunnel](/apps/cloudflare-tunnel/) or use [Tailscale](/apps/tailscale/) which includes relay servers for traversal.
 
 ## Community and Support
 
@@ -120,7 +120,7 @@ If you need VPN access from networks that block UDP, OpenVPN over TCP is your be
 
 The only scenario where OpenVPN wins is **firewall traversal**: if you regularly connect from networks that block UDP, OpenVPN over TCP port 443 is the reliable fallback. Some self-hosters run both — WireGuard as the primary VPN and OpenVPN as a backup for restrictive networks.
 
-If WireGuard's bare-bones configuration is too manual for you, use [wg-easy](/apps/wg-easy) for a web UI, or [Tailscale](/apps/tailscale)/[Headscale](/apps/headscale) for a zero-config mesh network built on WireGuard.
+If WireGuard's bare-bones configuration is too manual for you, use [wg-easy](/apps/wg-easy/) for a web UI, or [Tailscale](/apps/tailscale/)/[Headscale](/apps/headscale/) for a zero-config mesh network built on WireGuard.
 
 ## FAQ
 
@@ -138,7 +138,7 @@ Yes, but they use different protocols, so it's not a direct migration. Set up Wi
 
 ### Does WireGuard support dynamic IP assignment?
 
-Not natively. Each peer gets a static IP defined in the config file. If you need dynamic assignment, use [Tailscale](/apps/tailscale) or [Headscale](/apps/headscale) which handle IP management automatically on top of WireGuard.
+Not natively. Each peer gets a static IP defined in the config file. If you need dynamic assignment, use [Tailscale](/apps/tailscale/) or [Headscale](/apps/headscale/) which handle IP management automatically on top of WireGuard.
 
 ### Which is better for a site-to-site VPN?
 
@@ -146,10 +146,10 @@ WireGuard. Its low overhead and high throughput make it ideal for site-to-site l
 
 ## Related
 
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [How to Self-Host wg-easy](/apps/wg-easy)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [Headscale vs Tailscale](/compare/headscale-vs-tailscale)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Cloudflare Tunnel Setup](/apps/cloudflare-tunnel)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [How to Self-Host wg-easy](/apps/wg-easy/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [Headscale vs Tailscale](/compare/headscale-vs-tailscale/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Cloudflare Tunnel Setup](/apps/cloudflare-tunnel/)

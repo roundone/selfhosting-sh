@@ -19,14 +19,14 @@ Caddy is a web server and reverse proxy written in Go. Its defining feature is a
 
 Caddy's configuration format (the Caddyfile) is dramatically simpler than Nginx config or Traefik labels. A complete reverse proxy rule for a service is two lines. This makes Caddy the fastest reverse proxy to get running for self-hosting.
 
-For the conceptual overview of reverse proxies, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For the conceptual overview of reverse proxies, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Prerequisites
 
-- A Linux server with Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics)
+- A Linux server with Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics/)
 - A domain name with A records pointed at your server's IP
 - Ports 80 and 443 available (not used by another reverse proxy)
-- Basic familiarity with Docker — see [Docker Networking](/foundations/docker-networking)
+- Basic familiarity with Docker — see [Docker Networking](/foundations/docker-networking/)
 
 ## Docker Compose Configuration
 
@@ -212,7 +212,7 @@ docker run --rm caddy:2.9.1-alpine caddy hash-password --plaintext 'your-passwor
 
 ### Websocket Support
 
-Caddy proxies websockets automatically — no extra configuration needed. This means apps like [Home Assistant](/apps/home-assistant), chat services, and real-time dashboards work out of the box.
+Caddy proxies websockets automatically — no extra configuration needed. This means apps like [Home Assistant](/apps/home-assistant/), chat services, and real-time dashboards work out of the box.
 
 ### Rate Limiting
 
@@ -332,7 +332,7 @@ Update the Caddyfile:
 | Config reload | Zero downtime | Restart required | Automatic |
 | Best for | Simple setups, clean configs | Beginners | Docker-heavy infra |
 
-Use Caddy if you want the simplest possible configuration with excellent defaults. Use [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) if you want a GUI. Use [Traefik](/foundations/traefik-setup) if you need native Docker label integration.
+Use Caddy if you want the simplest possible configuration with excellent defaults. Use [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) if you want a GUI. Use [Traefik](/foundations/traefik-setup/) if you need native Docker label integration.
 
 ## Common Mistakes
 
@@ -378,10 +378,10 @@ Let's Encrypt needs to reach your server on port 80 for HTTP challenge verificat
 
 ## Next Steps
 
-- Proxy your first app — try [Jellyfin](/apps/jellyfin) or [Vaultwarden](/apps/vaultwarden)
-- Understand Docker networking — [Docker Networking](/foundations/docker-networking)
-- Set up a firewall — [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Learn about SSL in depth — [SSL Certificates Explained](/foundations/ssl-certificates)
+- Proxy your first app — try [Jellyfin](/apps/jellyfin/) or [Vaultwarden](/apps/vaultwarden/)
+- Understand Docker networking — [Docker Networking](/foundations/docker-networking/)
+- Set up a firewall — [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Learn about SSL in depth — [SSL Certificates Explained](/foundations/ssl-certificates/)
 
 ## FAQ
 
@@ -399,14 +399,14 @@ Not by default. Caddy is a reverse proxy — it forwards requests to your backen
 
 ### How do I update Caddy?
 
-Change the image tag in `docker-compose.yml` (e.g., `caddy:2.9.2-alpine`) and run `docker compose up -d`. Certificates and configuration persist in the mounted volumes. See [Updating Docker Containers](/foundations/docker-updating).
+Change the image tag in `docker-compose.yml` (e.g., `caddy:2.9.2-alpine`) and run `docker compose up -d`. Certificates and configuration persist in the mounted volumes. See [Updating Docker Containers](/foundations/docker-updating/).
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Traefik Reverse Proxy Setup](/foundations/traefik-setup)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Firewall Setup with UFW](/foundations/firewall-ufw)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Traefik Reverse Proxy Setup](/foundations/traefik-setup/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Firewall Setup with UFW](/foundations/firewall-ufw/)

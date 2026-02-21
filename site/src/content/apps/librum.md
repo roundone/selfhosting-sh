@@ -17,12 +17,12 @@ affiliateDisclosure: false
 
 [Librum](https://librumreader.com/) is a self-hosted ebook reader and library manager with a native desktop client. Upload your ebook collection to the Librum server, and read from any device with the client app. It supports EPUB, PDF, CBZ, and other formats, with features like highlights, bookmarks, notes, and cross-device sync.
 
-Unlike [Calibre-Web](/apps/calibre-web) (browser-based), Librum uses a dedicated desktop/mobile client for reading. The server handles storage, sync, and user management.
+Unlike [Calibre-Web](/apps/calibre-web/) (browser-based), Librum uses a dedicated desktop/mobile client for reading. The server handles storage, sync, and user management.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM
 - Storage for your ebook collection
 - The [Librum client app](https://librumreader.com/) installed on your reading devices
@@ -158,7 +158,7 @@ Put Librum behind a reverse proxy for HTTPS access:
 
 The client app connects to the API endpoint, so ensure the proxy passes through properly.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -174,7 +174,7 @@ docker run --rm -v librum-data:/data -v $(pwd):/backup alpine tar czf /backup/li
 docker compose exec librum-db mariadb-dump -u librum -pYOUR_DB_PASSWORD librum > librum-db-$(date +%Y%m%d).sql
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule).
+See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -217,7 +217,7 @@ docker compose exec librum-db mariadb-admin ping -u librum -pYOUR_DB_PASSWORD
 
 Librum is a solid choice if you want a dedicated ebook reader with cloud sync. The native client app provides a better reading experience than browser-based alternatives like Calibre-Web. Cross-device sync, highlights, and bookmarks work seamlessly.
 
-The main trade-off is the client requirement — you need the Librum app installed on every device. Browser-based alternatives like [Calibre-Web](/apps/calibre-web) or [Kavita](/apps/kavita) offer immediate access from any browser without installing anything. Librum also doesn't publish versioned Docker tags, which makes reproducible deployments harder.
+The main trade-off is the client requirement — you need the Librum app installed on every device. Browser-based alternatives like [Calibre-Web](/apps/calibre-web/) or [Kavita](/apps/kavita/) offer immediate access from any browser without installing anything. Librum also doesn't publish versioned Docker tags, which makes reproducible deployments harder.
 
 For dedicated readers who want the best reading experience, Librum is worth it. For casual access to your ebook library, stick with Calibre-Web or Kavita.
 
@@ -229,7 +229,7 @@ Yes. The self-hosted server and client are free. Librum also offers a managed cl
 
 ### Can I use Librum in a browser?
 
-No. Librum requires the desktop or mobile client app. For browser-based reading, use [Calibre-Web](/apps/calibre-web) or [Kavita](/apps/kavita).
+No. Librum requires the desktop or mobile client app. For browser-based reading, use [Calibre-Web](/apps/calibre-web/) or [Kavita](/apps/kavita/).
 
 ### Does Librum support Kindle files?
 
@@ -237,10 +237,10 @@ Yes. Librum reads MOBI files (the Kindle format). It also supports EPUB, PDF, CB
 
 ## Related
 
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Kavita](/apps/kavita)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Readarr vs LazyLibrarian](/compare/readarr-vs-lazylibrarian)
-- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading)
-- [Self-Hosted Kindle Unlimited Alternatives](/replace/kindle-unlimited)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Readarr vs LazyLibrarian](/compare/readarr-vs-lazylibrarian/)
+- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading/)
+- [Self-Hosted Kindle Unlimited Alternatives](/replace/kindle-unlimited/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

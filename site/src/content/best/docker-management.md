@@ -63,7 +63,7 @@ Portainer has been in active development since 2016, ships monthly updates, and 
 
 **Best for:** Anyone who wants a single tool to manage all Docker resources. The default recommendation for most self-hosters.
 
-[Read our full guide: How to Self-Host Portainer with Docker](/apps/portainer)
+[Read our full guide: How to Self-Host Portainer with Docker](/apps/portainer/)
 
 ### 2. Dockge — Best Lightweight Compose Manager
 
@@ -90,7 +90,7 @@ Dockge's killer feature is that your config stays as plain text files on the fil
 
 **Best for:** Self-hosters who manage everything with Docker Compose and want their files on disk as standard YAML.
 
-[Read our full guide: How to Self-Host Dockge with Docker](/apps/dockge)
+[Read our full guide: How to Self-Host Dockge with Docker](/apps/dockge/)
 
 ### 3. Cosmos Cloud — Best All-in-One Platform
 
@@ -117,7 +117,7 @@ Cosmos is ideal for newcomers who want to deploy a fully functional self-hosting
 
 **Best for:** Newcomers setting up a fresh server who want one tool instead of four.
 
-[Read our full guide: How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud)
+[Read our full guide: How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud/)
 
 ### 4. DIUN — Best Update Notifier
 
@@ -142,7 +142,7 @@ DIUN is the responsible approach to container updates. You get notified, you rea
 
 **Best for:** Self-hosters who want to control when updates happen. The safer alternative to Watchtower.
 
-[Read our full guide: How to Self-Host DIUN with Docker](/apps/diun)
+[Read our full guide: How to Self-Host DIUN with Docker](/apps/diun/)
 
 ### 5. Watchtower — Auto-Update Tool (Deprecated)
 
@@ -165,7 +165,7 @@ DIUN is the responsible approach to container updates. You get notified, you rea
 
 **Best for:** Existing users only. For new setups, use DIUN for notifications or What's Up Docker for a maintained auto-update alternative.
 
-[Read our full guide: How to Self-Host Watchtower with Docker](/apps/watchtower)
+[Read our full guide: How to Self-Host Watchtower with Docker](/apps/watchtower/)
 
 ### 6. Lazydocker — Best Terminal UI
 
@@ -192,7 +192,7 @@ Lazydocker is perfect for SSH sessions. You get a visual overview of your Docker
 
 **Best for:** Sysadmins and power users who manage Docker over SSH and want a visual terminal UI.
 
-[Read our full guide: How to Set Up Lazydocker](/apps/lazydocker)
+[Read our full guide: How to Set Up Lazydocker](/apps/lazydocker/)
 
 ### 7. Yacht — Honorable Mention
 
@@ -200,7 +200,7 @@ Lazydocker is perfect for SSH sessions. You get a visual overview of your Docker
 
 If you want templates, Portainer has them. If you want lightweight, Dockge is lighter. If you want a guided experience, Cosmos Cloud is more complete. Yacht's window has closed.
 
-[Read our full guide: How to Self-Host Yacht with Docker](/apps/yacht)
+[Read our full guide: How to Self-Host Yacht with Docker](/apps/yacht/)
 
 ## Full Comparison Table
 
@@ -233,18 +233,18 @@ Docker management tools were evaluated on:
 
 ## Related
 
-- [How to Self-Host Portainer with Docker](/apps/portainer)
-- [How to Self-Host Dockge with Docker](/apps/dockge)
-- [How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud)
-- [How to Self-Host DIUN with Docker](/apps/diun)
-- [How to Self-Host Watchtower with Docker](/apps/watchtower)
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [How to Self-Host Yacht with Docker](/apps/yacht)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Portainer vs Yacht](/compare/portainer-vs-yacht)
-- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos)
-- [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [Watchtower vs DIUN](/compare/watchtower-vs-diun)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes Explained](/foundations/docker-volumes)
-- [Docker Networking Explained](/foundations/docker-networking)
+- [How to Self-Host Portainer with Docker](/apps/portainer/)
+- [How to Self-Host Dockge with Docker](/apps/dockge/)
+- [How to Self-Host Cosmos Cloud with Docker](/apps/cosmos-cloud/)
+- [How to Self-Host DIUN with Docker](/apps/diun/)
+- [How to Self-Host Watchtower with Docker](/apps/watchtower/)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [How to Self-Host Yacht with Docker](/apps/yacht/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Portainer vs Yacht](/compare/portainer-vs-yacht/)
+- [Portainer vs Cosmos Cloud](/compare/portainer-vs-cosmos/)
+- [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [Watchtower vs DIUN](/compare/watchtower-vs-diun/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes Explained](/foundations/docker-volumes/)
+- [Docker Networking Explained](/foundations/docker-networking/)

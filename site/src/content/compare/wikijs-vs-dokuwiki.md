@@ -125,9 +125,9 @@ Via a plugin, yes, but it's not the native syntax. DokuWiki's own syntax is well
 
 ## Related
 
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Best Self-Hosted Wiki](/best/wiki)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Best Self-Hosted Wiki](/best/wiki/)

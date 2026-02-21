@@ -37,7 +37,7 @@ Self-hosting workloads are embarrassingly parallel — dozens of containers each
 
 If you're running ZFS (TrueNAS, Proxmox with ZFS), ECC memory prevents bit-flip corruption in your storage pool. Consumer Intel CPUs don't support ECC. AMD Ryzen generally does (though motherboard support varies). Intel Xeon E and AMD EPYC support ECC fully. For most self-hosters not running ZFS, ECC is unnecessary.
 
-For more on ECC, see [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram).
+For more on ECC, see [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/).
 
 ## The Rankings
 
@@ -53,7 +53,7 @@ Best for: running 5–20 Docker containers, single Plex transcode, Pi-hole, Home
 
 **Pick the N100/N150** if you want the cheapest option that still handles real workloads. **Pick the N305** if you plan to run 20+ containers or need headroom for growth.
 
-The N150 is the N100's successor with 6–10% better performance at the same power. Buy whichever is cheaper. See [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc) for detailed benchmarks.
+The N150 is the N100's successor with 6–10% better performance at the same power. Buy whichever is cheaper. See [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/) for detailed benchmarks.
 
 ### Tier 2: Efficient Desktop (35–65W TDP)
 
@@ -100,7 +100,7 @@ Used Xeons from decommissioned servers offer extreme core counts at low prices. 
 
 These make sense only if you already have a server chassis and motherboard (from a used Dell PowerEdge or HP ProLiant), or you're buying a complete used server. The platform cost (motherboard + ECC DDR4) often exceeds the CPU cost for LGA 2011 systems.
 
-For used server recommendations, see [Used Enterprise Servers](/hardware/used-enterprise-servers).
+For used server recommendations, see [Used Enterprise Servers](/hardware/used-enterprise-servers/).
 
 ## Comparison Table
 
@@ -128,7 +128,7 @@ This comes up constantly, so here's the short version:
 - You want more cores per dollar at the Tier 2–3 level
 - You don't need hardware video transcoding
 
-For a full comparison, see [Intel vs AMD for Home Server](/hardware/intel-vs-amd-home-server).
+For a full comparison, see [Intel vs AMD for Home Server](/hardware/intel-vs-amd-home-server/).
 
 ## How to Choose
 
@@ -150,7 +150,7 @@ Technically yes, but you can't buy laptop CPUs separately. You'd be buying a lap
 
 ### Do I need a GPU?
 
-Only if you want NVIDIA hardware transcoding (for Plex/Jellyfin when Intel QuickSync isn't available) or GPU passthrough for AI/ML workloads. Intel's integrated graphics handle transcoding well enough that a discrete GPU is unnecessary for most self-hosters. See [GPU Passthrough Guide](/hardware/gpu-passthrough-guide).
+Only if you want NVIDIA hardware transcoding (for Plex/Jellyfin when Intel QuickSync isn't available) or GPU passthrough for AI/ML workloads. Intel's integrated graphics handle transcoding well enough that a discrete GPU is unnecessary for most self-hosters. See [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/).
 
 ### How long will these CPUs last?
 
@@ -158,13 +158,13 @@ Self-hosting workloads are light. An Intel N100 or i5-12400 will handle typical 
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Intel vs AMD for Home Server](/hardware/intel-vs-amd-home-server)
-- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram)
-- [Best RAM for Home Server](/hardware/best-ram-home-server)
-- [Home Server Build Guide](/hardware/home-server-build-guide)
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
-- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide)
-- [Power Consumption Guide](/hardware/power-consumption-guide)
-- [Used Enterprise Servers](/hardware/used-enterprise-servers)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Intel vs AMD for Home Server](/hardware/intel-vs-amd-home-server/)
+- [ECC vs Non-ECC RAM](/hardware/ecc-vs-non-ecc-ram/)
+- [Best RAM for Home Server](/hardware/best-ram-home-server/)
+- [Home Server Build Guide](/hardware/home-server-build-guide/)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)
+- [GPU Passthrough Guide](/hardware/gpu-passthrough-guide/)
+- [Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Used Enterprise Servers](/hardware/used-enterprise-servers/)

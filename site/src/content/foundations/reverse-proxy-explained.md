@@ -21,10 +21,10 @@ Every self-hoster running more than one app needs a reverse proxy. It solves thr
 
 ## Prerequisites
 
-- A Linux server with [Docker and Docker Compose installed](/foundations/docker-compose-basics)
-- A domain name with DNS pointed to your server's public IP ([DNS basics](/foundations/dns-explained))
-- Ports 80 (HTTP) and 443 (HTTPS) forwarded to your server through your router or [firewall](/foundations/firewall-ufw)
-- Basic familiarity with the terminal ([getting started guide](/foundations/getting-started))
+- A Linux server with [Docker and Docker Compose installed](/foundations/docker-compose-basics/)
+- A domain name with DNS pointed to your server's public IP ([DNS basics](/foundations/dns-explained/))
+- Ports 80 (HTTP) and 443 (HTTPS) forwarded to your server through your router or [firewall](/foundations/firewall-ufw/)
+- Basic familiarity with the terminal ([getting started guide](/foundations/getting-started/))
 
 If you are running on a VPS with a public IP, port forwarding is already handled. If you are behind a home router, forward ports 80 and 443 to your server's local IP before continuing.
 
@@ -40,7 +40,7 @@ The recommendation: **start with Nginx Proxy Manager.** You can always migrate l
 
 ## Option 1: Nginx Proxy Manager (Recommended)
 
-Nginx Proxy Manager (NPM) wraps Nginx in a clean web UI with built-in Let's Encrypt support. For the full dedicated guide, see [Nginx Proxy Manager setup](/apps/nginx-proxy-manager).
+Nginx Proxy Manager (NPM) wraps Nginx in a clean web UI with built-in Let's Encrypt support. For the full dedicated guide, see [Nginx Proxy Manager setup](/apps/nginx-proxy-manager/).
 
 ### Docker Compose
 
@@ -151,7 +151,7 @@ networks:
 
 Notice: no `ports` section. The app does not need to expose ports to the host because NPM accesses it directly over the shared Docker network. This is more secure -- the app is not reachable from outside except through the reverse proxy.
 
-For more on how Docker networks function, see [Docker Networking](/foundations/docker-networking).
+For more on how Docker networks function, see [Docker Networking](/foundations/docker-networking/).
 
 ## Option 2: Caddy
 
@@ -305,7 +305,7 @@ All three reverse proxies integrate with Let's Encrypt for free, automatically r
 
 **DNS challenge** (for wildcard certificates or when port 80 is blocked): You prove domain ownership by creating a DNS TXT record. NPM supports this through its UI for many DNS providers. Caddy and Traefik support it through plugins or additional configuration. Use this if you want a single wildcard certificate (`*.example.com`) covering all subdomains.
 
-For deeper coverage of certificate types and troubleshooting, see [SSL Certificates](/foundations/ssl-certificates).
+For deeper coverage of certificate types and troubleshooting, see [SSL Certificates](/foundations/ssl-certificates/).
 
 ## Connecting Your Apps
 
@@ -360,7 +360,7 @@ Let's Encrypt cannot issue certificates if port 80 is blocked. Your reverse prox
 sudo ufw status
 ```
 
-Ports 80 and 443 must be allowed. See [Firewall and UFW setup](/foundations/firewall-ufw) for configuration details.
+Ports 80 and 443 must be allowed. See [Firewall and UFW setup](/foundations/firewall-ufw/) for configuration details.
 
 ### Using IP Addresses Instead of Container Names
 
@@ -383,18 +383,18 @@ If an app's Compose file maps ports to the host (e.g., `ports: - "8096:8096"`), 
 
 With a reverse proxy running, you can deploy any self-hosted app behind a clean HTTPS domain. Start with a few apps to get comfortable with the workflow, then expand.
 
-- Set up [Docker networking](/foundations/docker-networking) to understand how containers communicate
-- Learn about [SSL certificates](/foundations/ssl-certificates) for wildcard setups and DNS challenges
-- Read the full [Nginx Proxy Manager guide](/apps/nginx-proxy-manager) for advanced features like access lists and custom locations
-- Review [Docker Compose basics](/foundations/docker-compose-basics) if you need a refresher on Compose file structure
-- Configure your [firewall](/foundations/firewall-ufw) to lock down access to only the ports you need
+- Set up [Docker networking](/foundations/docker-networking/) to understand how containers communicate
+- Learn about [SSL certificates](/foundations/ssl-certificates/) for wildcard setups and DNS challenges
+- Read the full [Nginx Proxy Manager guide](/apps/nginx-proxy-manager/) for advanced features like access lists and custom locations
+- Review [Docker Compose basics](/foundations/docker-compose-basics/) if you need a refresher on Compose file structure
+- Configure your [firewall](/foundations/firewall-ufw/) to lock down access to only the ports you need
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [DNS Explained](/foundations/dns-explained)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Firewall and UFW Setup](/foundations/firewall-ufw)
-- [Nginx Proxy Manager](/apps/nginx-proxy-manager)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [DNS Explained](/foundations/dns-explained/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Firewall and UFW Setup](/foundations/firewall-ufw/)
+- [Nginx Proxy Manager](/apps/nginx-proxy-manager/)

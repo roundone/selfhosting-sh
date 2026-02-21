@@ -121,7 +121,7 @@ Winner: **Traefik** for self-hosting. **Envoy** for enterprise/infrastructure us
 
 **Envoy wins for infrastructure.** If you are running gRPC microservices, need advanced traffic management, or are building a service mesh, Envoy is the industry standard. But it solves problems most self-hosters do not have.
 
-If you are reading this comparison to decide which proxy to run for your homelab: use [Traefik](/apps/traefik). If you are reading it because you already know you need Envoy's specific capabilities, use [Envoy](/apps/envoy).
+If you are reading this comparison to decide which proxy to run for your homelab: use [Traefik](/apps/traefik/). If you are reading it because you already know you need Envoy's specific capabilities, use [Envoy](/apps/envoy/).
 
 ## FAQ
 
@@ -136,10 +136,10 @@ Both have excellent Kubernetes support, but in different ways. Envoy powers Isti
 
 ## Related
 
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [How to Self-Host Traefik with Docker](/apps/traefik)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [How to Self-Host Traefik with Docker](/apps/traefik/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

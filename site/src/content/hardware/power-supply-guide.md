@@ -226,7 +226,7 @@ Not bad, just slightly less efficient. A 750W PSU powering a 40W load is at ~5% 
 
 ### Do I need a UPS with my PSU?
 
-Strongly recommended for NAS builds. A power outage during a write to a ZFS pool or ext4 filesystem can cause data corruption. A UPS gives you 5–15 minutes to cleanly shut down. See our [UPS guide](/hardware/best-ups-home-server).
+Strongly recommended for NAS builds. A power outage during a write to a ZFS pool or ext4 filesystem can cause data corruption. A UPS gives you 5–15 minutes to cleanly shut down. See our [UPS guide](/hardware/best-ups-home-server/).
 
 ### Should I buy a used server PSU?
 
@@ -234,9 +234,9 @@ Used enterprise PSUs (like HP 750W units) are cheap ($10–20) and reliable, but
 
 ## Related
 
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Best UPS for Home Servers](/hardware/best-ups-home-server)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Best Server Cases for Homelab](/hardware/server-case-guide)
-- [Best Motherboards for Home Servers](/hardware/motherboard-guide)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Best UPS for Home Servers](/hardware/best-ups-home-server/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Best Server Cases for Homelab](/hardware/server-case-guide/)
+- [Best Motherboards for Home Servers](/hardware/motherboard-guide/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)

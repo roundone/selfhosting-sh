@@ -24,12 +24,12 @@ affiliateDisclosure: false
 
 [ChibiSafe](https://github.com/chibisafe/chibisafe) is a modern, self-hosted file upload service (formerly known as lolisafe/safe.fiery.me). Upload files through the web UI, ShareX, or the API, organize them into albums, and share links. It features a polished Next.js frontend, user management, album sharing, and file tagging.
 
-ChibiSafe focuses on the media gallery experience — clean thumbnails, album organization, and shareable galleries. It's more opinionated than [Zipline](/apps/zipline) about presentation and less focused on URL shortening or paste bin features.
+ChibiSafe focuses on the media gallery experience — clean thumbnails, album organization, and shareable galleries. It's more opinionated than [Zipline](/apps/zipline/) about presentation and less focused on URL shortening or paste bin features.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum)
 - Disk space for uploaded files
 - A domain name (recommended)
@@ -128,7 +128,7 @@ ChibiSafe supports multi-user with role-based access:
 
 ## Reverse Proxy
 
-Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 files.example.com {
@@ -159,7 +159,7 @@ for vol in chibisafe-database chibisafe-uploads; do
 done
 ```
 
-See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
+See [Backup Strategy](/foundations/backup-strategy/) for a complete approach.
 
 ## Troubleshooting
 
@@ -193,12 +193,12 @@ See [Backup Strategy](/foundations/backup-strategy) for a complete approach.
 
 ChibiSafe offers the best gallery and album experience among self-hosted upload servers. If you want organized media collections with shareable album links, ChibiSafe does it well. The multi-user support and clean UI make it a good choice for teams or family use.
 
-For raw feature count (URL shortener, paste bin, S3 support, embed metadata), [Zipline](/apps/zipline) is more capable. For minimal file sharing without gallery features, [PicoShare](/apps/picoshare) or [Gokapi](/apps/gokapi) are lighter alternatives.
+For raw feature count (URL shortener, paste bin, S3 support, embed metadata), [Zipline](/apps/zipline/) is more capable. For minimal file sharing without gallery features, [PicoShare](/apps/picoshare/) or [Gokapi](/apps/gokapi/) are lighter alternatives.
 
 ## Frequently Asked Questions
 
 ### Does ChibiSafe support S3 storage?
-ChibiSafe v6 stores files locally. S3 support is not built-in. For S3 storage, use [Zipline](/apps/zipline).
+ChibiSafe v6 stores files locally. S3 support is not built-in. For S3 storage, use [Zipline](/apps/zipline/).
 
 ### Can I migrate from lolisafe?
 ChibiSafe is the successor to lolisafe. Database migrations exist for upgrading from older versions — check the GitHub repo for migration guides.
@@ -208,10 +208,10 @@ Yes, via the API. Configure Flameshot to POST to the upload endpoint with your A
 
 ## Related
 
-- [Zipline vs XBackBone](/compare/zipline-vs-xbackbone)
-- [How to Self-Host Zipline](/apps/zipline)
-- [How to Self-Host XBackBone](/apps/xbackbone)
-- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Zipline vs XBackBone](/compare/zipline-vs-xbackbone/)
+- [How to Self-Host Zipline](/apps/zipline/)
+- [How to Self-Host XBackBone](/apps/xbackbone/)
+- [Self-Hosted Alternatives to ShareX Server](/replace/sharex-server/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

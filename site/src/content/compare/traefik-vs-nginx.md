@@ -176,10 +176,10 @@ Nginx. It idles at 5-10 MB compared to Traefik's 50-80 MB. On a 2 GB server this
 
 ## Related
 
-- [How to Self-Host Traefik with Docker Compose](/apps/traefik)
-- [How to Self-Host Nginx with Docker Compose](/apps/nginx)
-- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Traefik with Docker Compose](/apps/traefik/)
+- [How to Self-Host Nginx with Docker Compose](/apps/nginx/)
+- [Nginx Proxy Manager vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

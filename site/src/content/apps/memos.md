@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 100 MB of free disk space (plus storage for uploads)
 - 256 MB of RAM (minimum)
 - A domain name (optional, for remote access)
@@ -114,7 +114,7 @@ Memos exposes a REST and gRPC API for integrations. Useful for:
 
 - Saving memos from scripts or automation tools
 - Building custom clients
-- Integrating with [n8n](/apps/n8n) or [Node-RED](/apps/node-red) workflows
+- Integrating with [n8n](/apps/n8n/) or [Node-RED](/apps/node-red/) workflows
 
 Access the API at `http://your-server:5230/api/v1/`.
 
@@ -157,7 +157,7 @@ Point your reverse proxy to `http://memos:5230`. No special configuration needed
 
 **Nginx Proxy Manager:** Create a proxy host pointing to your server's IP on port 5230. Enable SSL.
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full instructions.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full instructions.
 
 ## Backup
 
@@ -180,7 +180,7 @@ Use `pg_dump` for the database, and back up the memos-data volume for uploaded f
 docker exec memos-db pg_dump -U memos memos > memos-db-$(date +%Y%m%d).sql
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -226,17 +226,17 @@ Memos is one of the lightest self-hosted apps available. It runs comfortably on 
 
 Memos is the best self-hosted option for quick-capture notes and microblogging. The deployment couldn't be simpler — one container, one volume, done. It starts in seconds, uses almost no resources, and the Markdown + hashtag system is intuitive.
 
-It's not a replacement for full knowledge bases like [BookStack](/apps/bookstack) or [Outline](/apps/outline) — there's no document organization, no folders, no collaborative editing. Memos is for quick thoughts, daily logs, and fleeting notes. For that use case, nothing else is this lightweight and polished.
+It's not a replacement for full knowledge bases like [BookStack](/apps/bookstack/) or [Outline](/apps/outline/) — there's no document organization, no folders, no collaborative editing. Memos is for quick thoughts, daily logs, and fleeting notes. For that use case, nothing else is this lightweight and polished.
 
-If you want a full Notion replacement, look at [Outline](/apps/outline) or [AppFlowy](/apps/appflowy). If you want quick notes that just work, Memos is it.
+If you want a full Notion replacement, look at [Outline](/apps/outline/) or [AppFlowy](/apps/appflowy/). If you want quick notes that just work, Memos is it.
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host Trilium](/apps/trilium)
-- [Best Self-Hosted Note Taking Apps](/best/note-taking)
-- [Self-Hosted Alternatives to Notion](/replace/notion)
-- [Self-Hosted Alternatives to Evernote](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host Trilium](/apps/trilium/)
+- [Best Self-Hosted Note Taking Apps](/best/note-taking/)
+- [Self-Hosted Alternatives to Notion](/replace/notion/)
+- [Self-Hosted Alternatives to Evernote](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

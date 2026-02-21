@@ -108,17 +108,17 @@ It works for basic use cases, but expect missing features and occasional bugs. I
 Not natively. Dim is web-only — no Roku, Fire TV, Apple TV, or Android TV apps. You'd need to cast from a browser. Jellyfin has dedicated apps for all major TV platforms.
 
 ### Does Dim support music?
-No. Dim focuses on video content only. For music, use [Navidrome](/apps/navidrome) or Jellyfin's built-in music support.
+No. Dim focuses on video content only. For music, use [Navidrome](/apps/navidrome/) or Jellyfin's built-in music support.
 
 ### Is Dim being actively developed?
 Yes, but at a slower pace than Jellyfin. Check the GitHub repository for recent commit activity before committing to it for long-term use.
 
 ## Related
 
-- [How to Self-Host Dim](/apps/dim)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
-- [Stash vs Dim](/compare/stash-vs-dim)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
+- [How to Self-Host Dim](/apps/dim/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Emby](/compare/jellyfin-vs-emby/)
+- [Stash vs Dim](/compare/stash-vs-dim/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)

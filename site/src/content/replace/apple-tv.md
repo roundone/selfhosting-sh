@@ -42,7 +42,7 @@ Jellyfin is a completely free, open-source media server that streams your video 
 - Live TV and DVR support with an HDHomeRun or similar tuner
 - Plugin ecosystem for additional functionality
 
-[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin)]
+[Read our full guide: [How to Self-Host Jellyfin](/apps/jellyfin/)]
 
 ### Plex — Best Ecosystem and Client Support
 
@@ -55,7 +55,7 @@ Plex has the most polished client experience and widest device support. The serv
 - PlexAmp for dedicated music streaming
 - Easy remote access (Plex handles NAT traversal)
 
-[Read our full guide: [How to Self-Host Plex](/apps/plex)]
+[Read our full guide: [How to Self-Host Plex](/apps/plex/)]
 
 ### Emby — Best Middle Ground
 
@@ -68,7 +68,7 @@ Emby sits between Jellyfin's openness and Plex's polish. It has good apps, suppo
 - Parental controls and user management
 - DLNA support for older devices
 
-[Read our full guide: [How to Self-Host Emby](/apps/emby)]
+[Read our full guide: [How to Self-Host Emby](/apps/emby/)]
 
 ## Migration Guide
 
@@ -112,8 +112,8 @@ Install the appropriate app on your TV, phone, or streaming device:
 ### Step 5: Configure Remote Access
 
 For streaming outside your home:
-- Set up a reverse proxy with SSL ([Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Caddy](/apps/caddy))
-- Or use [Tailscale](/apps/tailscale) for a VPN-based approach
+- Set up a reverse proxy with SSL ([Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Caddy](/apps/caddy/))
+- Or use [Tailscale](/apps/tailscale/) for a VPN-based approach
 - Or configure port forwarding on your router (less secure)
 
 ## Cost Comparison
@@ -151,10 +151,10 @@ Yes, all three servers support multi-user accounts. Jellyfin is free for unlimit
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

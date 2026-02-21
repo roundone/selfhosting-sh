@@ -51,7 +51,7 @@ Uptime Kuma is the most popular self-hosted monitoring tool. It monitors HTTP, T
 - Single-node (no built-in clustering)
 - SQLite-based (fine for most use cases)
 
-[Read our full guide: How to Self-Host Uptime Kuma](/apps/uptime-kuma)
+[Read our full guide: How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
 
 ### Gatus — Best for DevOps Teams
 
@@ -69,7 +69,7 @@ Gatus uses YAML configuration for endpoint monitoring — infrastructure-as-code
 - Requires container restart for config changes
 - Smaller community than Uptime Kuma
 
-[Read our full guide: How to Self-Host Gatus](/apps/gatus)
+[Read our full guide: How to Self-Host Gatus](/apps/gatus/)
 
 ### Beszel — Best for Server Monitoring
 
@@ -85,7 +85,7 @@ If you need server-level monitoring (CPU, RAM, disk) rather than endpoint monito
 - Not endpoint-focused (monitors servers, not URLs)
 - Newer project, less mature
 
-[Read our full guide: How to Self-Host Beszel](/apps/beszel)
+[Read our full guide: How to Self-Host Beszel](/apps/beszel/)
 
 ## Cost Comparison
 
@@ -125,8 +125,8 @@ Not automatically. You'll need to recreate your monitors manually. For Uptime Ku
 
 ## Related
 
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [How to Self-Host Gatus](/apps/gatus)
-- [How to Self-Host Beszel](/apps/beszel)
-- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [How to Self-Host Gatus](/apps/gatus/)
+- [How to Self-Host Beszel](/apps/beszel/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)

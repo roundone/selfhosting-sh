@@ -21,14 +21,14 @@ affiliateDisclosure: false
 
 ## What Is ownCloud oCIS?
 
-[ownCloud Infinite Scale (oCIS)](https://owncloud.com) is a complete rewrite of ownCloud in Go with a microservices architecture. Unlike the legacy PHP-based ownCloud 10 (now in maintenance mode), oCIS runs as a **single binary** with no external database required — metadata is stored in the filesystem. It's lighter, faster, and simpler to deploy than both its predecessor and [Nextcloud](/apps/nextcloud).
+[ownCloud Infinite Scale (oCIS)](https://owncloud.com) is a complete rewrite of ownCloud in Go with a microservices architecture. Unlike the legacy PHP-based ownCloud 10 (now in maintenance mode), oCIS runs as a **single binary** with no external database required — metadata is stored in the filesystem. It's lighter, faster, and simpler to deploy than both its predecessor and [Nextcloud](/apps/nextcloud/).
 
 oCIS replaces Google Drive, Dropbox, and OneDrive with self-hosted file sync, sharing, Spaces (project-based collaboration), a modern web UI, and desktop/mobile sync clients. It includes a built-in identity provider and OIDC support.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB RAM minimum (4 GB recommended for production)
 - 5 GB free disk space (plus storage for user files)
 - A domain name (required — oCIS serves HTTPS by default)
@@ -210,7 +210,7 @@ server {
 
 **Critical:** `OCIS_URL` must exactly match the URL users access (including protocol and port). Mismatches cause authentication failures and redirect loops.
 
-See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained) guide for Nginx Proxy Manager or Traefik configuration.
+See our [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) guide for Nginx Proxy Manager or Traefik configuration.
 
 ## Backup
 
@@ -276,7 +276,7 @@ oCIS uses significantly fewer resources than Nextcloud (which requires PHP, Post
 
 ownCloud oCIS is the **lightest and simplest** self-hosted file sync platform to deploy. One container, no database, fast startup, low resource usage. Spaces are a genuinely useful feature for team collaboration that Nextcloud doesn't natively offer.
 
-However, oCIS is still catching up to Nextcloud in feature breadth. There's no calendar (CalDAV), no contacts (CardDAV), no video calling, and the app ecosystem is minimal compared to Nextcloud's 400+ apps. If you want a focused, fast file sync platform, oCIS is excellent. If you want a full Google Workspace replacement, [Nextcloud](/apps/nextcloud) is the better choice.
+However, oCIS is still catching up to Nextcloud in feature breadth. There's no calendar (CalDAV), no contacts (CardDAV), no video calling, and the app ecosystem is minimal compared to Nextcloud's 400+ apps. If you want a focused, fast file sync platform, oCIS is excellent. If you want a full Google Workspace replacement, [Nextcloud](/apps/nextcloud/) is the better choice.
 
 The legacy PHP-based ownCloud 10 should not be considered for new deployments — it's in maintenance mode with no future development. If choosing ownCloud, use oCIS.
 
@@ -284,7 +284,7 @@ The legacy PHP-based ownCloud 10 should not be considered for new deployments �
 
 ### How does oCIS compare to Nextcloud?
 
-oCIS is faster, lighter, and simpler to deploy. Nextcloud has far more features (calendar, contacts, mail, 400+ apps). For file sync only, oCIS wins on performance. For a full productivity platform, Nextcloud wins on features. See our [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud) comparison.
+oCIS is faster, lighter, and simpler to deploy. Nextcloud has far more features (calendar, contacts, mail, 400+ apps). For file sync only, oCIS wins on performance. For a full productivity platform, Nextcloud wins on features. See our [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud/) comparison.
 
 ### Can I migrate from ownCloud 10 to oCIS?
 
@@ -292,7 +292,7 @@ ownCloud provides migration documentation, but it's non-trivial. oCIS uses a com
 
 ### Does oCIS support CalDAV/CardDAV?
 
-No. oCIS focuses on file sync and sharing. For calendar and contacts, use [Nextcloud](/apps/nextcloud) or a dedicated CalDAV server like [Radicale](/apps/radicale).
+No. oCIS focuses on file sync and sharing. For calendar and contacts, use [Nextcloud](/apps/nextcloud/) or a dedicated CalDAV server like [Radicale](/apps/radicale/).
 
 ### Is oCIS production-ready?
 
@@ -304,13 +304,13 @@ Yes. oCIS supports LDAP and Active Directory for user management. Configure the 
 
 ## Related
 
-- [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Seafile](/apps/seafile)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [Nextcloud vs ownCloud](/compare/nextcloud-vs-owncloud/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

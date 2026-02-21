@@ -106,14 +106,14 @@ Both communities are significantly smaller than Home Assistant's, which is worth
 
 Domoticz makes sense for specific scenarios: Raspberry Pi Zero deployments, simple RF-based setups, or situations where every megabyte of RAM counts. It's a solid, stable platform that does what it does well — it just does less.
 
-If neither of these fully fits your needs, consider [Home Assistant](/apps/home-assistant), which surpasses both in integrations, community, and UI quality.
+If neither of these fully fits your needs, consider [Home Assistant](/apps/home-assistant/), which surpasses both in integrations, community, and UI quality.
 
 ## Related
 
-- [How to Self-Host openHAB](/apps/openhab)
-- [How to Self-Host Domoticz](/apps/domoticz)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Replace Google Home](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host openHAB](/apps/openhab/)
+- [How to Self-Host Domoticz](/apps/domoticz/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Domoticz](/compare/home-assistant-vs-domoticz/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Replace Google Home](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

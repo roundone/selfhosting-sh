@@ -114,8 +114,8 @@ Both are excellent. You won't regret either choice.
 
 ## Related
 
-- [How to Self-Host FreshRSS](/apps/freshrss)
-- [How to Self-Host Miniflux](/apps/miniflux)
-- [Best Self-Hosted RSS Readers](/best/rss-readers)
-- [Replace Feedly with Self-Hosted RSS](/replace/feedly)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host FreshRSS](/apps/freshrss/)
+- [How to Self-Host Miniflux](/apps/miniflux/)
+- [Best Self-Hosted RSS Readers](/best/rss-readers/)
+- [Replace Feedly with Self-Hosted RSS](/replace/feedly/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

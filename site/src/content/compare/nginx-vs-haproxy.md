@@ -142,7 +142,7 @@ Nginx has an enormous community with decades of documentation, tutorials, and St
 
 **Nginx for self-hosting, HAProxy for load balancing.** Neither has automatic HTTPS, so both require Certbot or similar for SSL. Nginx wins for self-hosting because it's a web server that can proxy, while HAProxy is a load balancer that can proxy — and self-hosters need the former more often.
 
-If you want the easiest reverse proxy experience, skip both and use [Nginx Proxy Manager](/apps/nginx-proxy-manager) (GUI on top of Nginx), [Caddy](/apps/caddy) (automatic HTTPS, simple config), or [Traefik](/apps/traefik) (Docker-native auto-discovery).
+If you want the easiest reverse proxy experience, skip both and use [Nginx Proxy Manager](/apps/nginx-proxy-manager/) (GUI on top of Nginx), [Caddy](/apps/caddy/) (automatic HTTPS, simple config), or [Traefik](/apps/traefik/) (Docker-native auto-discovery).
 
 ## Frequently Asked Questions
 
@@ -160,15 +160,15 @@ For basic load balancing and proxying, yes. For advanced features (12 load balan
 
 ### Neither has automatic HTTPS — what should I use instead?
 
-For self-hosting with automatic HTTPS: [Caddy](/apps/caddy) (Caddyfile + automatic HTTPS), [Nginx Proxy Manager](/apps/nginx-proxy-manager) (GUI + Let's Encrypt), or [Traefik](/apps/traefik) (Docker labels + ACME).
+For self-hosting with automatic HTTPS: [Caddy](/apps/caddy/) (Caddyfile + automatic HTTPS), [Nginx Proxy Manager](/apps/nginx-proxy-manager/) (GUI + Let's Encrypt), or [Traefik](/apps/traefik/) (Docker labels + ACME).
 
 ## Related
 
-- [How to Self-Host Nginx with Docker](/apps/nginx)
-- [How to Self-Host HAProxy with Docker](/apps/haproxy)
-- [Traefik vs Nginx](/compare/traefik-vs-nginx)
-- [Traefik vs HAProxy](/compare/traefik-vs-haproxy)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Caddy vs HAProxy](/compare/caddy-vs-haproxy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Nginx with Docker](/apps/nginx/)
+- [How to Self-Host HAProxy with Docker](/apps/haproxy/)
+- [Traefik vs Nginx](/compare/traefik-vs-nginx/)
+- [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Caddy vs HAProxy](/compare/caddy-vs-haproxy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

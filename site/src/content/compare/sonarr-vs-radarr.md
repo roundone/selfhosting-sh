@@ -30,7 +30,7 @@ Sonarr and Radarr are not competitors -- they are complementary tools that handl
 
 [Radarr](https://radarr.video/) does the same thing for movies. It started as a fork of Sonarr in 2017, adapted to handle films instead of episodic content. Instead of tracking seasons and episodes, Radarr manages individual movie files -- monitoring for releases, grabbing the best quality available, and upgrading files when a better release appears.
 
-Both projects use LinuxServer.io Docker images, integrate with the same indexers (via [Prowlarr](/apps/prowlarr)), and send downloads to the same clients ([qBittorrent](/apps/qbittorrent), Transmission, SABnzbd). The UI is nearly identical because they share the same codebase heritage. If you learn one, you already know the other.
+Both projects use LinuxServer.io Docker images, integrate with the same indexers (via [Prowlarr](/apps/prowlarr/)), and send downloads to the same clients ([qBittorrent](/apps/qbittorrent/), Transmission, SABnzbd). The UI is nearly identical because they share the same codebase heritage. If you learn one, you already know the other.
 
 ## Feature Comparison
 
@@ -96,7 +96,7 @@ services:
     restart: unless-stopped
 ```
 
-The only differences are the image name, container name, media volume path, and port number. If you can set up one, you can set up the other in under two minutes. Both need the same post-install steps: connect a download client, add indexers (or connect [Prowlarr](/apps/prowlarr)), set quality profiles, and add media to monitor.
+The only differences are the image name, container name, media volume path, and port number. If you can set up one, you can set up the other in under two minutes. Both need the same post-install steps: connect a download client, add indexers (or connect [Prowlarr](/apps/prowlarr/)), set quality profiles, and add media to monitor.
 
 **Complexity: Equal.** Both are trivial single-container deployments with no database dependencies.
 
@@ -152,11 +152,11 @@ Both projects share the same Servarr wiki and Discord server. The communities ov
 
 - You watch both TV shows and movies (this is most people)
 - You want a complete automated media pipeline
-- You are building a full *arr stack with [Prowlarr](/apps/prowlarr), [Bazarr](/apps/bazarr), and a download client
+- You are building a full *arr stack with [Prowlarr](/apps/prowlarr/), [Bazarr](/apps/bazarr/), and a download client
 
 ## Running Both Together
 
-Most users run Sonarr and Radarr side by side as part of the *arr stack. Here is a combined Docker Compose that includes both, plus [Prowlarr](/apps/prowlarr) for centralized indexer management and [qBittorrent](/apps/qbittorrent) as the download client:
+Most users run Sonarr and Radarr side by side as part of the *arr stack. Here is a combined Docker Compose that includes both, plus [Prowlarr](/apps/prowlarr/) for centralized indexer management and [qBittorrent](/apps/qbittorrent/) as the download client:
 
 ```yaml
 services:
@@ -245,8 +245,8 @@ volumes:
 - **Separate media directories.** TV shows go to `/data/media/tv`, movies go to `/data/media/movies`. Keep them separate for clean library organization.
 - **Prowlarr as the indexer hub.** Configure your indexers once in Prowlarr, and it syncs them to both Sonarr and Radarr automatically. No duplicate indexer configuration.
 - **Single download client.** Both tools send downloads to the same qBittorrent instance. They tag downloads with their app name so there are no conflicts.
-- **Add [Bazarr](/apps/bazarr) for subtitles.** Bazarr integrates with both Sonarr and Radarr to automatically download subtitles for your media.
-- **Feed into [Jellyfin](/apps/jellyfin) or Plex.** Point your media server at `/data/media/` and it picks up both TV shows and movies. Both Sonarr and Radarr can send notifications to your media server when new content is imported.
+- **Add [Bazarr](/apps/bazarr/) for subtitles.** Bazarr integrates with both Sonarr and Radarr to automatically download subtitles for your media.
+- **Feed into [Jellyfin](/apps/jellyfin/) or Plex.** Point your media server at `/data/media/` and it picks up both TV shows and movies. Both Sonarr and Radarr can send notifications to your media server when new content is imported.
 
 ## Final Verdict
 
@@ -254,7 +254,7 @@ Sonarr and Radarr are not an either/or decision. They solve different problems (
 
 If you watch TV shows, install Sonarr. If you watch movies, install Radarr. If you watch both -- and most people do -- install both. They run side by side with minimal resource overhead, share the same download client and indexer infrastructure via Prowlarr, and together give you a fully automated media pipeline.
 
-The real power of both tools is the *arr ecosystem they belong to. Add [Prowlarr](/apps/prowlarr) for indexer management, [Bazarr](/apps/bazarr) for subtitles, [qBittorrent](/apps/qbittorrent) for downloads, and [Jellyfin](/apps/jellyfin) for playback. That stack replaces every streaming subscription with a self-hosted media system you fully control.
+The real power of both tools is the *arr ecosystem they belong to. Add [Prowlarr](/apps/prowlarr/) for indexer management, [Bazarr](/apps/bazarr/) for subtitles, [qBittorrent](/apps/qbittorrent/) for downloads, and [Jellyfin](/apps/jellyfin/) for playback. That stack replaces every streaming subscription with a self-hosted media system you fully control.
 
 ## Frequently Asked Questions
 
@@ -268,7 +268,7 @@ Yes, and this is the standard setup. They use different ports (8989 and 7878), d
 
 ### Do I need Prowlarr if I have both Sonarr and Radarr?
 
-You do not strictly need it, but you strongly should use it. Without Prowlarr, you have to configure every indexer separately in both Sonarr and Radarr. With [Prowlarr](/apps/prowlarr), you configure indexers once and it syncs them to all connected *arr apps. This also makes adding or removing indexers much simpler.
+You do not strictly need it, but you strongly should use it. Without Prowlarr, you have to configure every indexer separately in both Sonarr and Radarr. With [Prowlarr](/apps/prowlarr/), you configure indexers once and it syncs them to all connected *arr apps. This also makes adding or removing indexers much simpler.
 
 ### What about Lidarr and Readarr?
 
@@ -280,11 +280,11 @@ No. Each tool is purpose-built for one media type. Sonarr cannot manage movies a
 
 ## Related
 
-- [How to Self-Host Sonarr](/apps/sonarr)
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Bazarr](/apps/bazarr)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Jellyfin vs Plex: Which Media Server?](/compare/jellyfin-vs-plex)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Sonarr](/apps/sonarr/)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Bazarr](/apps/bazarr/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Jellyfin vs Plex: Which Media Server?](/compare/jellyfin-vs-plex/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

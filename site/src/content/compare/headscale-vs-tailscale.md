@@ -60,7 +60,7 @@ The data plane is identical in both cases — WireGuard tunnels flow directly be
 
 **Tailscale (hosted):** Create an account, install the client, authenticate. Done. No server to manage, no SSL certificates, no DNS configuration. The fastest possible setup.
 
-**Headscale:** Requires a VPS or server with a public IP, a domain name, SSL certificates (via reverse proxy or built-in ACME), and initial configuration. Setup takes 30-60 minutes. You also need to configure a DERP server if you want relay functionality independent of Tailscale's public relays. See our [Headscale Docker guide](/apps/headscale) for the full walkthrough.
+**Headscale:** Requires a VPS or server with a public IP, a domain name, SSL certificates (via reverse proxy or built-in ACME), and initial configuration. Setup takes 30-60 minutes. You also need to configure a DERP server if you want relay functionality independent of Tailscale's public relays. See our [Headscale Docker guide](/apps/headscale/) for the full walkthrough.
 
 Winner: **Tailscale**, obviously. Headscale is for people who consciously choose self-hosting for privacy or control reasons — not for ease of setup.
 
@@ -138,10 +138,10 @@ Existing WireGuard tunnels between devices continue working. You just can't add 
 
 ## Related
 
-- [How to Self-Host Headscale](/apps/headscale)
-- [How to Set Up Tailscale with Docker](/apps/tailscale)
-- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
-- [How to Self-Host WireGuard](/apps/wireguard)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Headscale](/apps/headscale/)
+- [How to Set Up Tailscale with Docker](/apps/tailscale/)
+- [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard/)
+- [How to Self-Host WireGuard](/apps/wireguard/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

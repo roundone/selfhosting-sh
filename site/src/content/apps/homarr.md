@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM
 - 500 MB of free disk space
 - A domain name (optional, for remote access)
@@ -146,7 +146,7 @@ Nginx Proxy Manager config:
 - **Forward Port:** 7575
 - **Enable WebSocket Support:** Yes
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -157,7 +157,7 @@ docker run --rm -v homarr_appdata:/data -v $(pwd):/backup alpine \
 
 The `appdata` volume contains your dashboard configuration, user data, and settings.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete backup approach.
 
 ## Troubleshooting
 
@@ -184,14 +184,14 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete backup appr
 
 ## Verdict
 
-Homarr is the best self-hosted dashboard for home server management. The drag-and-drop UI is polished, the integrations with *arr apps and Docker are excellent, and it looks great out of the box. If you want something simpler and more minimal, [Homepage](/apps/homepage) is lighter and faster. If you want maximum customizability with YAML configuration, [Dashy](/apps/dashy) gives you more control. For most home server users who want a visual dashboard with real integrations, Homarr is the top pick.
+Homarr is the best self-hosted dashboard for home server management. The drag-and-drop UI is polished, the integrations with *arr apps and Docker are excellent, and it looks great out of the box. If you want something simpler and more minimal, [Homepage](/apps/homepage/) is lighter and faster. If you want maximum customizability with YAML configuration, [Dashy](/apps/dashy/) gives you more control. For most home server users who want a visual dashboard with real integrations, Homarr is the top pick.
 
 ## Related
 
-- [Best Self-Hosted Dashboards](/best/dashboards)
-- [Homarr vs Homepage](/compare/homarr-vs-homepage)
-- [Homarr vs Dashy](/compare/homarr-vs-dashy)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [How to Self-Host Portainer](/apps/portainer)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Dashboards](/best/dashboards/)
+- [Homarr vs Homepage](/compare/homarr-vs-homepage/)
+- [Homarr vs Dashy](/compare/homarr-vs-dashy/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [How to Self-Host Portainer](/apps/portainer/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

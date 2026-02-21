@@ -21,9 +21,9 @@ This guide covers backing up every type of Docker data — named volumes, bind m
 
 ## Prerequisites
 
-- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes))
-- Understanding of the 3-2-1 backup rule ([Backup Strategy](/foundations/backup-3-2-1-rule))
+- Docker and Docker Compose installed ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Understanding of Docker volumes ([Docker Volumes](/foundations/docker-volumes/))
+- Understanding of the 3-2-1 backup rule ([Backup Strategy](/foundations/backup-3-2-1-rule/))
 
 ## Types of Docker Data
 
@@ -248,7 +248,7 @@ sudo crontab -e
 0 3 * * * /opt/scripts/backup-docker.sh >> /var/log/docker-backup.log 2>&1
 ```
 
-See [Cron Jobs](/foundations/linux-cron-jobs) for cron setup.
+See [Cron Jobs](/foundations/linux-cron-jobs/) for cron setup.
 
 ## Offsite Backup
 
@@ -375,9 +375,9 @@ Bind mounts are easier because they're regular directories you can back up with 
 
 ## Related
 
-- [Backup Strategy — 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Disaster Recovery](/foundations/disaster-recovery)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Cron Jobs](/foundations/linux-cron-jobs)
-- [Storage Planning](/foundations/storage-planning)
+- [Backup Strategy — 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Disaster Recovery](/foundations/disaster-recovery/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Cron Jobs](/foundations/linux-cron-jobs/)
+- [Storage Planning](/foundations/storage-planning/)

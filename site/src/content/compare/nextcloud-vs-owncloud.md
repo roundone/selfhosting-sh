@@ -62,7 +62,7 @@ affiliateDisclosure: false
 
 ## Installation Complexity
 
-**Nextcloud** requires PHP, a database (PostgreSQL recommended), Redis, and a cron container. Typical Docker setup: 3-4 services. See our [Nextcloud Docker guide](/apps/nextcloud).
+**Nextcloud** requires PHP, a database (PostgreSQL recommended), Redis, and a cron container. Typical Docker setup: 3-4 services. See our [Nextcloud Docker guide](/apps/nextcloud/).
 
 **ownCloud oCIS** runs as a single binary or single Docker container. No external database required — it uses embedded storage. Setup is simpler, though configuration of OIDC, Spaces, and external integrations adds complexity.
 
@@ -144,10 +144,10 @@ Both are actively maintained with security updates. Nextcloud has a larger attac
 
 ## Related
 
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
-- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Self-Hosted Alternatives to Dropbox](/replace/dropbox)
-- [Best Self-Hosted File Sync Solutions](/best/file-sync)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Self-Hosted Alternatives to Dropbox](/replace/dropbox/)
+- [Best Self-Hosted File Sync Solutions](/best/file-sync/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

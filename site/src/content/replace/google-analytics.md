@@ -55,7 +55,7 @@ affiliateDisclosure: false
 
 **Setup complexity:** Easy. Docker Compose with PostgreSQL and ClickHouse. Takes 15 minutes.
 
-[Read our full guide: How to Self-Host Plausible](/apps/plausible)
+[Read our full guide: How to Self-Host Plausible](/apps/plausible/)
 
 ### Umami — Best Lightweight Option
 
@@ -76,7 +76,7 @@ affiliateDisclosure: false
 
 **Setup complexity:** Very easy. Docker Compose with PostgreSQL. Takes 10 minutes.
 
-[Read our full guide: How to Self-Host Umami](/apps/umami)
+[Read our full guide: How to Self-Host Umami](/apps/umami/)
 
 ### Matomo — Best Full-Featured Replacement
 
@@ -97,7 +97,7 @@ affiliateDisclosure: false
 
 **Setup complexity:** Moderate. Docker Compose with MariaDB. More configuration than Plausible or Umami.
 
-[Read our full guide: How to Self-Host Matomo](/apps/matomo)
+[Read our full guide: How to Self-Host Matomo](/apps/matomo/)
 
 ## Migration Guide
 
@@ -196,18 +196,18 @@ For most websites, blogs, and small businesses, these trade-offs don't matter. Y
 
 ## Verdict
 
-**For most websites:** Use [Plausible](/apps/plausible). It's the best balance of features, simplicity, and privacy. The dashboard is clean, setup is straightforward, and it covers everything most site owners actually look at.
+**For most websites:** Use [Plausible](/apps/plausible/). It's the best balance of features, simplicity, and privacy. The dashboard is clean, setup is straightforward, and it covers everything most site owners actually look at.
 
-**For personal sites and developers:** Use [Umami](/apps/umami). It's the lightest option, completely free (MIT license), and dead simple.
+**For personal sites and developers:** Use [Umami](/apps/umami/). It's the lightest option, completely free (MIT license), and dead simple.
 
-**For businesses needing GA4 feature parity:** Use [Matomo](/apps/matomo). It's the only self-hosted tool that matches GA4's depth, with funnels, segments, and e-commerce tracking.
+**For businesses needing GA4 feature parity:** Use [Matomo](/apps/matomo/). It's the only self-hosted tool that matches GA4's depth, with funnels, segments, and e-commerce tracking.
 
 ## Related
 
-- [How to Self-Host Plausible](/apps/plausible)
-- [How to Self-Host Umami](/apps/umami)
-- [How to Self-Host Matomo](/apps/matomo)
-- [Plausible vs Umami](/compare/plausible-vs-umami)
-- [Plausible vs Matomo](/compare/plausible-vs-matomo)
-- [Best Self-Hosted Analytics](/best/analytics)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Plausible](/apps/plausible/)
+- [How to Self-Host Umami](/apps/umami/)
+- [How to Self-Host Matomo](/apps/matomo/)
+- [Plausible vs Umami](/compare/plausible-vs-umami/)
+- [Plausible vs Matomo](/compare/plausible-vs-matomo/)
+- [Best Self-Hosted Analytics](/best/analytics/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

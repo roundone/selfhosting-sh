@@ -23,12 +23,12 @@ affiliateDisclosure: false
 
 [PairDrop](https://github.com/schlagmichdoch/PairDrop) is a self-hosted, peer-to-peer file sharing tool that works like Apple's AirDrop — but across every platform. Open the web UI on two devices on the same network, and they discover each other automatically. Select files, click send, done. Files transfer directly between browsers via WebRTC and never touch the server.
 
-PairDrop is a fork of Snapdrop with major improvements: persistent device pairing, room-based sharing, text message support, and a cleaner UI. It replaces [AirDrop](/replace/airdrop) for cross-platform use and works on any device with a modern browser.
+PairDrop is a fork of Snapdrop with major improvements: persistent device pairing, room-based sharing, text message support, and a cleaner UI. It replaces [AirDrop](/replace/airdrop/) for cross-platform use and works on any device with a modern browser.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - Negligible disk space (files don't touch the server)
 
@@ -171,7 +171,7 @@ Enable `WS_FALLBACK=true` if users connect through VPNs or corporate networks th
 
 ## Reverse Proxy
 
-Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained)):
+Behind [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or Caddy ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/)):
 
 ```
 pairdrop.example.com {
@@ -219,9 +219,9 @@ PairDrop is stateless — there is nothing to back up. No database, no persisten
 
 ## Verdict
 
-PairDrop is the easiest self-hosted app you'll ever deploy. One container, zero configuration, works instantly across every platform. It's the definitive [AirDrop replacement](/replace/airdrop) — faster to set up, works on Windows/Linux/Android, and your files never touch a third-party server.
+PairDrop is the easiest self-hosted app you'll ever deploy. One container, zero configuration, works instantly across every platform. It's the definitive [AirDrop replacement](/replace/airdrop/) — faster to set up, works on Windows/Linux/Android, and your files never touch a third-party server.
 
-The only limitation is LAN-only transfers without a TURN server. For sharing files with people outside your network, use [Send](/apps/send) instead. For local device-to-device transfers, nothing beats PairDrop.
+The only limitation is LAN-only transfers without a TURN server. For sharing files with people outside your network, use [Send](/apps/send/) instead. For local device-to-device transfers, nothing beats PairDrop.
 
 ## Frequently Asked Questions
 
@@ -236,10 +236,10 @@ No limit. Since files transfer peer-to-peer, the only constraint is the sender's
 
 ## Related
 
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [How to Self-Host Send](/apps/send)
-- [Self-Hosted Alternatives to AirDrop](/replace/airdrop)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [How to Self-Host Send](/apps/send/)
+- [Self-Hosted Alternatives to AirDrop](/replace/airdrop/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

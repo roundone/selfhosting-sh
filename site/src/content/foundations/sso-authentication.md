@@ -26,10 +26,10 @@ For self-hosters running five or more services, SSO eliminates password fatigue 
 
 ## Prerequisites
 
-- A Linux server with [Docker and Docker Compose](/foundations/docker-compose-basics) installed
-- A [reverse proxy](/foundations/reverse-proxy-explained) (Traefik, Nginx Proxy Manager, or Caddy) — SSO requires HTTP header forwarding
-- A domain name with [SSL certificates](/foundations/ssl-certificates) configured — SSO cookies require HTTPS
-- Basic familiarity with [Docker networking](/foundations/docker-networking)
+- A Linux server with [Docker and Docker Compose](/foundations/docker-compose-basics/) installed
+- A [reverse proxy](/foundations/reverse-proxy-explained/) (Traefik, Nginx Proxy Manager, or Caddy) — SSO requires HTTP header forwarding
+- A domain name with [SSL certificates](/foundations/ssl-certificates/) configured — SSO cookies require HTTPS
+- Basic familiarity with [Docker networking](/foundations/docker-networking/)
 - DNS records pointing your SSO subdomain (e.g., `auth.example.com`) to your server
 
 ## Authentication vs. Authorization
@@ -64,7 +64,7 @@ You will encounter SAML when integrating with enterprise apps or legacy systems 
 
 LDAP is not an SSO protocol — it is a directory protocol. But it is essential for SSO because it serves as the user backend. Your IdP authenticates users against an LDAP directory, then issues OIDC or SAML tokens to applications.
 
-LDAP provides centralized user and group management. You define users once in the directory, and every connected service (both OIDC-capable apps and legacy apps that only support LDAP directly) can query it. See [LDAP Basics](/foundations/ldap-basics) for a detailed setup guide.
+LDAP provides centralized user and group management. You define users once in the directory, and every connected service (both OIDC-capable apps and legacy apps that only support LDAP directly) can query it. See [LDAP Basics](/foundations/ldap-basics/) for a detailed setup guide.
 
 ### Forward Auth (Proxy-Level SSO)
 
@@ -80,7 +80,7 @@ Three providers cover the full spectrum of self-hosting needs. Pick based on you
 
 [Authelia](https://www.authelia.com/) is a lightweight authentication server written in Go. It provides forward auth, OIDC, and two-factor authentication through a clean web portal. It runs in a single container, uses minimal resources (under 50 MB RAM), and integrates tightly with Traefik, Nginx Proxy Manager, and Caddy.
 
-Authelia stores users in a flat YAML file or queries an LDAP backend. For most home server setups with one to five users, the YAML file backend is simpler and works fine. For larger deployments, pair it with [LLDAP](/foundations/ldap-basics) as the directory backend.
+Authelia stores users in a flat YAML file or queries an LDAP backend. For most home server setups with one to five users, the YAML file backend is simpler and works fine. For larger deployments, pair it with [LLDAP](/foundations/ldap-basics/) as the directory backend.
 
 **Choose Authelia if:** You run a home server or small lab, want SSO with minimal overhead, and your apps either support OIDC or need forward auth protection.
 
@@ -378,7 +378,7 @@ labels:
 
 Every request to that service now goes through Authelia first. Unauthenticated users see the Authelia login portal. Authenticated users pass through transparently.
 
-For a complete Traefik setup, see [Traefik Reverse Proxy Setup](/foundations/traefik-setup).
+For a complete Traefik setup, see [Traefik Reverse Proxy Setup](/foundations/traefik-setup/).
 
 ### Nginx Proxy Manager Integration
 
@@ -418,7 +418,7 @@ proxy_set_header Remote-Email $email;
 
 Replace `auth.example.com` with your Authelia domain. The Authelia container must be on the same Docker network as Nginx Proxy Manager.
 
-For a complete Nginx Proxy Manager setup, see [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup).
+For a complete Nginx Proxy Manager setup, see [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/).
 
 ## Practical Examples
 
@@ -523,7 +523,7 @@ The session cookie domain in Authelia's `configuration.yml` must match your root
 
 ### Running SSO Without HTTPS
 
-SSO session cookies have the `Secure` flag set by default, meaning browsers will not send them over plain HTTP. If you skip SSL and try to run Authelia on HTTP, authentication will appear to work at the login portal but cookies will never arrive at protected apps. Always terminate TLS at your reverse proxy. See [SSL Certificates](/foundations/ssl-certificates) for setup instructions.
+SSO session cookies have the `Secure` flag set by default, meaning browsers will not send them over plain HTTP. If you skip SSL and try to run Authelia on HTTP, authentication will appear to work at the login portal but cookies will never arrive at protected apps. Always terminate TLS at your reverse proxy. See [SSL Certificates](/foundations/ssl-certificates/) for setup instructions.
 
 ### Using the Filesystem Notifier in Production
 
@@ -535,11 +535,11 @@ Every secret in Authelia's configuration (`jwt_secret`, `session_secret`, `stora
 
 ### Skipping 2FA for Sensitive Services
 
-Forward auth with `one_factor` policy means a stolen password gives access to everything. At minimum, set `two_factor` policy for password managers ([Vaultwarden](/apps/vaultwarden)), admin panels, and anything with access to personal data. The overhead of tapping a TOTP code is trivial compared to the risk. See [Two-Factor Authentication](/foundations/two-factor-auth) for setup details.
+Forward auth with `one_factor` policy means a stolen password gives access to everything. At minimum, set `two_factor` policy for password managers ([Vaultwarden](/apps/vaultwarden/)), admin panels, and anything with access to personal data. The overhead of tapping a TOTP code is trivial compared to the risk. See [Two-Factor Authentication](/foundations/two-factor-auth/) for setup details.
 
 ### Docker Network Misconfiguration
 
-Authelia must be on the same Docker network as both the reverse proxy and the services it protects. If Authelia is on network A and your app is on network B, the reverse proxy cannot reach Authelia for forward auth verification and every request returns a 500 or 401 error. When running multiple Compose files, use an external Docker network that all stacks join. See [Docker Networking](/foundations/docker-networking) for network configuration details.
+Authelia must be on the same Docker network as both the reverse proxy and the services it protects. If Authelia is on network A and your app is on network B, the reverse proxy cannot reach Authelia for forward auth verification and every request returns a 500 or 401 error. When running multiple Compose files, use an external Docker network that all stacks join. See [Docker Networking](/foundations/docker-networking/) for network configuration details.
 
 ## FAQ
 
@@ -553,7 +553,7 @@ No. Authelia supports a file-based user database (`users.yml`) that works well f
 
 ### What happens if Authelia goes down?
 
-If Authelia is unreachable, forward auth requests fail and the reverse proxy returns an error (usually 500 or 502) for all protected services. Unprotected services and services with `bypass` policy continue working. Set `restart: unless-stopped` on the Authelia container, use the built-in health check, and consider monitoring it with [Uptime Kuma](/apps/uptime-kuma). Authelia is lightweight and stable — crashes are rare.
+If Authelia is unreachable, forward auth requests fail and the reverse proxy returns an error (usually 500 or 502) for all protected services. Unprotected services and services with `bypass` policy continue working. Set `restart: unless-stopped` on the Authelia container, use the built-in health check, and consider monitoring it with [Uptime Kuma](/apps/uptime-kuma/). Authelia is lightweight and stable — crashes are rare.
 
 ### Can I migrate from Authelia to Authentik later?
 
@@ -565,13 +565,13 @@ Forward auth operates at the reverse proxy level — the proxy asks Authelia "sh
 
 ## Related
 
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Security Hardening](/foundations/security-hardening)
-- [Two-Factor Authentication](/foundations/two-factor-auth)
-- [LDAP Basics](/foundations/ldap-basics)
-- [Traefik Reverse Proxy Setup](/foundations/traefik-setup)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Docker Networking](/foundations/docker-networking)
-- [Vaultwarden](/apps/vaultwarden)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Security Hardening](/foundations/security-hardening/)
+- [Two-Factor Authentication](/foundations/two-factor-auth/)
+- [LDAP Basics](/foundations/ldap-basics/)
+- [Traefik Reverse Proxy Setup](/foundations/traefik-setup/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Vaultwarden](/apps/vaultwarden/)

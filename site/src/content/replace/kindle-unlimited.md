@@ -29,43 +29,43 @@ affiliateDisclosure: false
 
 ### Calibre-Web — Best Overall Replacement
 
-[Calibre-Web](/apps/calibre-web) is the most popular self-hosted ebook server. It provides a web-based interface to browse and read your Calibre library, with OPDS support for third-party reader apps, per-user accounts, and an in-browser ebook reader.
+[Calibre-Web](/apps/calibre-web/) is the most popular self-hosted ebook server. It provides a web-based interface to browse and read your Calibre library, with OPDS support for third-party reader apps, per-user accounts, and an in-browser ebook reader.
 
 **Why it's the best replacement:** Calibre-Web runs on top of a Calibre database — the same tool most ebook collectors already use. If you manage ebooks with Calibre on your desktop, Calibre-Web makes that library accessible from anywhere. The OPDS feed works with apps like KOReader, Moon+ Reader, and Panels.
 
 **Best for:** People who already use Calibre for library management and want web/mobile access.
 
-[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web)]
+[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web/)]
 
 ### Kavita — Best Modern Interface
 
-[Kavita](/apps/kavita) is a fast, modern ebook and manga server with a Netflix-like browsing experience. It supports EPUB, PDF, CBZ/CBR, and has built-in reading tracking, recommendations, and a responsive web reader.
+[Kavita](/apps/kavita/) is a fast, modern ebook and manga server with a Netflix-like browsing experience. It supports EPUB, PDF, CBZ/CBR, and has built-in reading tracking, recommendations, and a responsive web reader.
 
 **Why it's great:** Kavita's interface is the closest to a commercial ebook service. It automatically scrapes metadata, creates series groupings, and provides a polished reading experience. The web reader supports bookmarks, themes, and reading progress sync.
 
 **Best for:** Users who want the best browsing and reading experience without installing apps.
 
-[Read our full guide: [How to Self-Host Kavita](/apps/kavita)]
+[Read our full guide: [How to Self-Host Kavita](/apps/kavita/)]
 
 ### Komga — Best for Comics and Manga
 
-[Komga](/apps/komga) specializes in comics and manga (CBZ, CBR, PDF, EPUB). It has excellent metadata scraping, OPDS support, and integrations with Tachiyomi/Mihon for mobile reading.
+[Komga](/apps/komga/) specializes in comics and manga (CBZ, CBR, PDF, EPUB). It has excellent metadata scraping, OPDS support, and integrations with Tachiyomi/Mihon for mobile reading.
 
 **Why it's great:** If your "Kindle Unlimited" use case is reading manga or comics, Komga is purpose-built for it. The Tachiyomi/Mihon integration provides a best-in-class mobile reading experience.
 
 **Best for:** Comic and manga readers, especially on mobile with Tachiyomi/Mihon.
 
-[Read our full guide: [How to Self-Host Komga](/apps/komga)]
+[Read our full guide: [How to Self-Host Komga](/apps/komga/)]
 
 ### Librum — Best Desktop Reading Experience
 
-[Librum](/apps/librum) takes a different approach with a dedicated desktop/mobile client instead of a web interface. Books sync through your self-hosted server, with highlights, bookmarks, and notes preserved across devices.
+[Librum](/apps/librum/) takes a different approach with a dedicated desktop/mobile client instead of a web interface. Books sync through your self-hosted server, with highlights, bookmarks, and notes preserved across devices.
 
 **Why it's great:** If you want a reading experience closer to the Kindle app than a web page, Librum's native client is the answer. Cross-device sync works seamlessly.
 
 **Best for:** Dedicated readers who want a native app experience.
 
-[Read our full guide: [How to Self-Host Librum](/apps/librum)]
+[Read our full guide: [How to Self-Host Librum](/apps/librum/)]
 
 ## Migration Guide
 
@@ -90,7 +90,7 @@ Sources for DRM-free ebooks:
 
 ### Step 3: Set Up Your Server
 
-1. Choose your server: [Calibre-Web](/apps/calibre-web) for most users
+1. Choose your server: [Calibre-Web](/apps/calibre-web/) for most users
 2. Follow the Docker setup guide
 3. Import your ebooks (EPUB, PDF, MOBI, CBZ)
 4. Install a reader app on your devices (KOReader, Moon+ Reader, or use the built-in web reader)
@@ -133,10 +133,10 @@ A typical EPUB is 1-5 MB. A library of 1,000 ebooks fits in ~5 GB. Even 10,000 b
 
 ## Related
 
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Librum](/apps/librum)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Stump vs Komga](/compare/stump-vs-komga)
-- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Librum](/apps/librum/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Stump vs Komga](/compare/stump-vs-komga/)
+- [Best Self-Hosted Ebooks & Reading](/best/ebooks-reading/)

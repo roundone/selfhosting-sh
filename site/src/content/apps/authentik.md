@@ -29,7 +29,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (minimum)
 - A domain name with HTTPS configured
 - An SMTP server for email notifications (optional but recommended)
@@ -271,7 +271,7 @@ labels:
   - "traefik.http.services.authentik.loadbalancer.server.port=9000"
 ```
 
-See our [reverse proxy setup guide](/foundations/reverse-proxy-explained).
+See our [reverse proxy setup guide](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -292,7 +292,7 @@ tar czf authentik-data-backup.tar.gz data/
 cp .env .env.backup
 ```
 
-See our [backup strategy guide](/foundations/backup-3-2-1-rule).
+See our [backup strategy guide](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -329,7 +329,7 @@ See our [backup strategy guide](/foundations/backup-3-2-1-rule).
 
 ## Verdict
 
-Authentik is the most capable self-hosted identity provider. If you need SAML, SCIM, social login, user self-registration, or a visual flow designer, nothing else compares in the self-hosted space. It's heavier than [Authelia](/apps/authelia) (~1 GB vs ~300 MB RAM) and more complex to set up, but the feature set justifies it for larger deployments or enterprise-adjacent use cases.
+Authentik is the most capable self-hosted identity provider. If you need SAML, SCIM, social login, user self-registration, or a visual flow designer, nothing else compares in the self-hosted space. It's heavier than [Authelia](/apps/authelia/) (~1 GB vs ~300 MB RAM) and more complex to set up, but the feature set justifies it for larger deployments or enterprise-adjacent use cases.
 
 **Use Authentik if:** you need a full identity provider — OIDC + SAML + LDAP + user management + social login. It's the self-hosted Okta/Auth0.
 
@@ -341,7 +341,7 @@ Authentik is the most capable self-hosted identity provider. If you need SAML, S
 
 ### Authentik vs Authelia — which should I use?
 
-Authelia is lighter and simpler — it adds forward-auth SSO + 2FA to your reverse proxy. Authentik is a full identity provider with user management, SAML, SCIM, social login, and enrollment flows. For most homelabs, Authelia is sufficient. Choose Authentik when you need the full identity platform. See our [Authelia vs Authentik comparison](/compare/authelia-vs-authentik).
+Authelia is lighter and simpler — it adds forward-auth SSO + 2FA to your reverse proxy. Authentik is a full identity provider with user management, SAML, SCIM, social login, and enrollment flows. For most homelabs, Authelia is sufficient. Choose Authentik when you need the full identity platform. See our [Authelia vs Authentik comparison](/compare/authelia-vs-authentik/).
 
 ### Can I use Authentik with Nginx Proxy Manager?
 
@@ -357,12 +357,12 @@ The worker mounts `/var/run/docker.sock` to manage outpost containers automatica
 
 ## Related
 
-- [How to Self-Host Authelia](/apps/authelia)
-- [Authelia vs Authentik](/compare/authelia-vs-authentik)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [How to Self-Host Keycloak](/apps/keycloak)
-- [Two-Factor Authentication Guide](/foundations/two-factor-auth)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [SSL Certificates](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Authelia](/apps/authelia/)
+- [Authelia vs Authentik](/compare/authelia-vs-authentik/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [How to Self-Host Keycloak](/apps/keycloak/)
+- [Two-Factor Authentication Guide](/foundations/two-factor-auth/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [SSL Certificates](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

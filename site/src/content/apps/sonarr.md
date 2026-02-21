@@ -26,11 +26,11 @@ Sonarr is an automated TV series management tool that monitors RSS feeds, search
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free disk space (plus storage for media)
 - 512 MB of RAM (minimum)
-- A download client like [qBittorrent](/apps/qbittorrent) or SABnzbd
-- An indexer or indexer manager like [Prowlarr](/apps/prowlarr)
+- A download client like [qBittorrent](/apps/qbittorrent/) or SABnzbd
+- An indexer or indexer manager like [Prowlarr](/apps/prowlarr/)
 
 ## Docker Compose Configuration
 
@@ -94,7 +94,7 @@ Go to **Settings → Download Clients → Add**:
 
 ### Connect an Indexer
 
-Go to **Settings → Indexers → Add**, or use [Prowlarr](/apps/prowlarr) to manage indexers centrally and sync them to Sonarr automatically.
+Go to **Settings → Indexers → Add**, or use [Prowlarr](/apps/prowlarr/) to manage indexers centrally and sync them to Sonarr automatically.
 
 ## Configuration
 
@@ -130,11 +130,11 @@ Sonarr v4 supports custom formats for granular quality filtering:
 
 ### API Integration
 
-Sonarr exposes a REST API on the same port (8989). Find your API key under **Settings → General → Security**. Use it for integration with [Prowlarr](/apps/prowlarr), Overseerr, or custom scripts.
+Sonarr exposes a REST API on the same port (8989). Find your API key under **Settings → General → Security**. Use it for integration with [Prowlarr](/apps/prowlarr/), Overseerr, or custom scripts.
 
 ### Connecting to Prowlarr
 
-[Prowlarr](/apps/prowlarr) can manage all your indexers in one place and push them to Sonarr:
+[Prowlarr](/apps/prowlarr/) can manage all your indexers in one place and push them to Sonarr:
 
 1. In Prowlarr, go to **Settings → Apps → Add → Sonarr**
 2. Enter Sonarr's URL and API key
@@ -149,9 +149,9 @@ Nginx Proxy Manager configuration:
 - **Forward Port:** `8989`
 - Enable **Websockets Support**
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager) or other reverse proxies, set the base URL under **Settings → General → URL Base** if running under a subpath (e.g., `/sonarr`).
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or other reverse proxies, set the base URL under **Settings → General → URL Base** if running under a subpath (e.g., `/sonarr`).
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for detailed configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for detailed configuration.
 
 ## Backup
 
@@ -163,7 +163,7 @@ Sonarr stores all configuration in the `/config` volume:
 
 Back up the entire `/config` volume. Sonarr also has a built-in backup under **System → Backup** that creates zip archives on a schedule.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -200,21 +200,21 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 ## Verdict
 
-Sonarr is the standard tool for automated TV show management and the centerpiece of any *arr stack. It's mature, well-maintained, and has an enormous community. If you download and organize TV shows, Sonarr is non-negotiable — nothing else comes close for this specific job. Pair it with [Prowlarr](/apps/prowlarr) for indexer management and [Radarr](/apps/radarr) for movies to build a complete media automation pipeline.
+Sonarr is the standard tool for automated TV show management and the centerpiece of any *arr stack. It's mature, well-maintained, and has an enormous community. If you download and organize TV shows, Sonarr is non-negotiable — nothing else comes close for this specific job. Pair it with [Prowlarr](/apps/prowlarr/) for indexer management and [Radarr](/apps/radarr/) for movies to build a complete media automation pipeline.
 
 ## FAQ
 
 ### What's the difference between Sonarr and Radarr?
 
-Sonarr manages TV series (episodes, seasons, series monitoring). [Radarr](/apps/radarr) manages movies. They share the same codebase architecture and UI design but are separate applications. Most users run both.
+Sonarr manages TV series (episodes, seasons, series monitoring). [Radarr](/apps/radarr/) manages movies. They share the same codebase architecture and UI design but are separate applications. Most users run both.
 
 ### Can Sonarr work without a VPN?
 
-Sonarr itself doesn't download files — it tells your download client what to grab. If you need VPN protection, configure it on your download client (e.g., [qBittorrent with Gluetun](/apps/qbittorrent)), not on Sonarr.
+Sonarr itself doesn't download files — it tells your download client what to grab. If you need VPN protection, configure it on your download client (e.g., [qBittorrent with Gluetun](/apps/qbittorrent/)), not on Sonarr.
 
 ### Does Sonarr support Usenet and BitTorrent?
 
-Yes, both. Sonarr works with Usenet clients (SABnzbd, NZBGet) and BitTorrent clients ([qBittorrent](/apps/qbittorrent), [Transmission](/apps/transmission), Deluge). You can use multiple download clients simultaneously.
+Yes, both. Sonarr works with Usenet clients (SABnzbd, NZBGet) and BitTorrent clients ([qBittorrent](/apps/qbittorrent/), [Transmission](/apps/transmission/), Deluge). You can use multiple download clients simultaneously.
 
 ### How do I add anime to Sonarr?
 
@@ -222,12 +222,12 @@ Enable **Settings → Media Management → Episode Naming → Standard Episode F
 
 ## Related
 
-- [How to Self-Host Radarr](/apps/radarr)
-- [How to Self-Host qBittorrent](/apps/qbittorrent)
-- [How to Self-Host Prowlarr](/apps/prowlarr)
-- [How to Self-Host Bazarr](/apps/bazarr)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Sonarr vs Radarr](/compare/sonarr-vs-radarr)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [How to Self-Host Radarr](/apps/radarr/)
+- [How to Self-Host qBittorrent](/apps/qbittorrent/)
+- [How to Self-Host Prowlarr](/apps/prowlarr/)
+- [How to Self-Host Bazarr](/apps/bazarr/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

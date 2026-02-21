@@ -97,10 +97,10 @@ The deciding factor is whether you need an admin UI. If yes, Ghost. If you're ha
 
 ## Related
 
-- [How to Self-Host Ghost](/apps/ghost)
-- [How to Self-Host Hugo](/apps/hugo)
-- [How to Self-Host WordPress](/apps/wordpress)
-- [Ghost vs WordPress](/compare/ghost-vs-wordpress)
-- [Best Self-Hosted CMS Platforms](/best/cms-websites)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Ghost](/apps/ghost/)
+- [How to Self-Host Hugo](/apps/hugo/)
+- [How to Self-Host WordPress](/apps/wordpress/)
+- [Ghost vs WordPress](/compare/ghost-vs-wordpress/)
+- [Best Self-Hosted CMS Platforms](/best/cms-websites/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

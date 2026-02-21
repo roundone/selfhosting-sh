@@ -26,7 +26,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of free RAM (minimum for production)
 - 10 GB of free disk space (plus storage for file uploads)
 - A domain name (required for production use)
@@ -190,7 +190,7 @@ Nginx Proxy Manager config:
 
 For the Calls plugin, also forward UDP/TCP port 8443 directly (cannot go through an HTTP proxy).
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for full configuration.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for full configuration.
 
 ## Backup
 
@@ -211,7 +211,7 @@ Critical data to back up:
 - `/mattermost/config` (server configuration)
 - `/mattermost/data` (file uploads, attachments)
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -248,9 +248,9 @@ See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approa
 
 ## Verdict
 
-Mattermost is the best self-hosted Slack alternative for teams that need full-featured chat with integrations. The Team Edition gives you channels, threads, search, file sharing, plugins, and even built-in audio/video calls — all for free with no user limits. It's more resource-heavy than lighter options like [Rocket.Chat](/apps/rocket-chat), but the trade-off is a polished, enterprise-ready experience.
+Mattermost is the best self-hosted Slack alternative for teams that need full-featured chat with integrations. The Team Edition gives you channels, threads, search, file sharing, plugins, and even built-in audio/video calls — all for free with no user limits. It's more resource-heavy than lighter options like [Rocket.Chat](/apps/rocket-chat/), but the trade-off is a polished, enterprise-ready experience.
 
-For personal or small homelab use, Mattermost is overkill — look at [Matrix/Element](/apps/element) for a federated option or [ntfy](/apps/ntfy) for just notifications. For teams of 10-500 who want a self-hosted Slack replacement, Mattermost is the clear winner.
+For personal or small homelab use, Mattermost is overkill — look at [Matrix/Element](/apps/element/) for a federated option or [ntfy](/apps/ntfy/) for just notifications. For teams of 10-500 who want a self-hosted Slack replacement, Mattermost is the clear winner.
 
 ## FAQ
 
@@ -272,12 +272,12 @@ The Team Edition with PostgreSQL comfortably handles 500-1000 users on a 4-core,
 
 ## Related
 
-- [Best Self-Hosted Team Chat](/best/communication)
-- [Mattermost vs Rocket.Chat](/compare/mattermost-vs-rocket-chat)
-- [Mattermost vs Slack Alternatives](/compare/mattermost-vs-slack-alternatives)
-- [Self-Hosted Alternatives to Slack](/replace/slack)
-- [Self-Hosted Alternatives to Microsoft Teams](/replace/microsoft-teams)
-- [How to Self-Host Element (Matrix)](/apps/element)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Team Chat](/best/communication/)
+- [Mattermost vs Rocket.Chat](/compare/mattermost-vs-rocket-chat/)
+- [Mattermost vs Slack Alternatives](/compare/mattermost-vs-slack-alternatives/)
+- [Self-Hosted Alternatives to Slack](/replace/slack/)
+- [Self-Hosted Alternatives to Microsoft Teams](/replace/microsoft-teams/)
+- [How to Self-Host Element (Matrix)](/apps/element/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

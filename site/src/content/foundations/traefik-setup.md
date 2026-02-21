@@ -15,18 +15,18 @@ affiliateDisclosure: false
 
 ## What Is Traefik?
 
-Traefik is a modern reverse proxy and load balancer designed for containerized environments. Unlike [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup), which uses a web GUI, Traefik reads Docker labels directly from your containers and configures routing automatically. Add a label to a container, and Traefik picks it up — no manual config files, no GUI clicking.
+Traefik is a modern reverse proxy and load balancer designed for containerized environments. Unlike [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/), which uses a web GUI, Traefik reads Docker labels directly from your containers and configures routing automatically. Add a label to a container, and Traefik picks it up — no manual config files, no GUI clicking.
 
 Traefik handles automatic SSL certificate provisioning via Let's Encrypt, supports HTTP/2 and HTTP/3, and has a built-in dashboard for monitoring. It's the reverse proxy of choice for self-hosters who prefer infrastructure-as-code over GUIs.
 
-For the conceptual overview of what reverse proxies do and why you need one, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For the conceptual overview of what reverse proxies do and why you need one, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Prerequisites
 
-- A Linux server with Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics)
+- A Linux server with Docker and Docker Compose installed — see [Docker Compose Basics](/foundations/docker-compose-basics/)
 - A domain name pointed at your server's IP (A record)
 - Ports 80 and 443 available (not used by another service)
-- Basic understanding of Docker networking — see [Docker Networking](/foundations/docker-networking)
+- Basic understanding of Docker networking — see [Docker Networking](/foundations/docker-networking/)
 
 ## Directory Structure
 
@@ -320,7 +320,7 @@ labels:
 | Dashboard | Built-in | Built-in | Via plugin |
 | Best for | Docker-heavy setups | Beginners, GUI users | Simple configs, Go devs |
 
-Use Traefik if you prefer config-as-code and run everything in Docker. Use [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup) if you want a GUI. Use [Caddy](/foundations/caddy-setup) if you want something in between.
+Use Traefik if you prefer config-as-code and run everything in Docker. Use [Nginx Proxy Manager](/foundations/nginx-proxy-manager-setup/) if you want a GUI. Use [Caddy](/foundations/caddy-setup/) if you want something in between.
 
 ## Common Mistakes
 
@@ -356,10 +356,10 @@ Docker Compose interprets `$` as variable substitution. In labels (especially `b
 
 ## Next Steps
 
-- Add your first service behind Traefik — try [Jellyfin](/apps/jellyfin) or [Immich](/apps/immich)
-- Learn about Docker networking in depth — [Docker Networking](/foundations/docker-networking)
-- Secure your server — [Firewall Setup with UFW](/foundations/firewall-ufw)
-- Set up monitoring to watch Traefik — [Monitoring Basics](/foundations/monitoring-basics)
+- Add your first service behind Traefik — try [Jellyfin](/apps/jellyfin/) or [Immich](/apps/immich/)
+- Learn about Docker networking in depth — [Docker Networking](/foundations/docker-networking/)
+- Secure your server — [Firewall Setup with UFW](/foundations/firewall-ufw/)
+- Set up monitoring to watch Traefik — [Monitoring Basics](/foundations/monitoring-basics/)
 
 ## FAQ
 
@@ -382,7 +382,7 @@ Then define routes in `dynamic.yml`.
 
 ### How do I update Traefik?
 
-Change the image tag in `docker-compose.yml` to the new version (e.g., `traefik:v3.3.4`) and run `docker compose up -d`. Your configuration and certificates are preserved in the mounted volumes. See [Updating Docker Containers](/foundations/docker-updating) for the general process.
+Change the image tag in `docker-compose.yml` to the new version (e.g., `traefik:v3.3.4`) and run `docker compose up -d`. Your configuration and certificates are preserved in the mounted volumes. See [Updating Docker Containers](/foundations/docker-updating/) for the general process.
 
 ### How do I debug routing issues?
 
@@ -397,10 +397,10 @@ Then check `docker compose logs traefik` for detailed routing information. Switc
 
 ## Related
 
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup)
-- [Caddy Reverse Proxy Setup](/foundations/caddy-setup)
-- [SSL Certificates Explained](/foundations/ssl-certificates)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [DNS Explained](/foundations/dns-explained)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Nginx Proxy Manager Setup](/foundations/nginx-proxy-manager-setup/)
+- [Caddy Reverse Proxy Setup](/foundations/caddy-setup/)
+- [SSL Certificates Explained](/foundations/ssl-certificates/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [DNS Explained](/foundations/dns-explained/)

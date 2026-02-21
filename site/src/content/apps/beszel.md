@@ -20,12 +20,12 @@ affiliateDisclosure: false
 
 ## What Is Beszel?
 
-Beszel is a lightweight server monitoring hub with a clean web UI, Docker container stats, historical data, and alerting. It uses a hub-agent architecture: a central hub collects data from agents running on each server you want to monitor. Beszel sits between simple tools like [Uptime Kuma](/apps/uptime-kuma) (which checks endpoints) and heavy stacks like [Grafana](/apps/grafana) + [Prometheus](/apps/prometheus) (which require significant setup). [Official site](https://beszel.dev/)
+Beszel is a lightweight server monitoring hub with a clean web UI, Docker container stats, historical data, and alerting. It uses a hub-agent architecture: a central hub collects data from agents running on each server you want to monitor. Beszel sits between simple tools like [Uptime Kuma](/apps/uptime-kuma/) (which checks endpoints) and heavy stacks like [Grafana](/apps/grafana/) + [Prometheus](/apps/prometheus/) (which require significant setup). [Official site](https://beszel.dev/)
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 200 MB of free disk space
 - 128 MB of RAM minimum
 - SSH key pair for hub-agent authentication
@@ -157,7 +157,7 @@ Example Nginx Proxy Manager configuration:
 - **Forward Hostname:** beszel
 - **Forward Port:** 8090
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -169,7 +169,7 @@ tar -czf beszel-backup-$(date +%Y%m%d).tar.gz ./data
 docker compose start beszel
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -214,10 +214,10 @@ Beszel is pre-1.0 but stable for monitoring. It's used by thousands of homelabbe
 
 ## Related
 
-- [How to Self-Host Uptime Kuma](/apps/uptime-kuma)
-- [How to Self-Host Grafana](/apps/grafana)
-- [How to Self-Host Netdata](/apps/netdata)
-- [How to Self-Host Prometheus](/apps/prometheus)
-- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma)
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
+- [How to Self-Host Grafana](/apps/grafana/)
+- [How to Self-Host Netdata](/apps/netdata/)
+- [How to Self-Host Prometheus](/apps/prometheus/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

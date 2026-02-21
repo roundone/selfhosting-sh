@@ -28,7 +28,7 @@ TriliumNext is the community fork of the original Trilium Notes project (which i
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of RAM minimum (1 GB recommended)
 - 2 GB of free disk space
 - A domain name (recommended for remote sync)
@@ -132,7 +132,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
-For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+For detailed setup: [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -149,7 +149,7 @@ docker compose exec trilium cp /home/node/trilium-data/document.db /home/node/tr
 
 Or copy from the host volume. Since it's SQLite, you can also use Trilium's built-in export (Menu → Export) for portable formats.
 
-For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule)
+For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -183,17 +183,17 @@ For a complete backup strategy: [Backup Strategy](/foundations/backup-3-2-1-rule
 
 TriliumNext Notes is the best self-hosted option for personal knowledge management with a hierarchical structure. The note cloning feature (same note appearing in multiple places without duplication), relation maps, and built-in scripting make it uniquely powerful for building interconnected knowledge bases.
 
-The UI is functional but not as polished as [Outline](/apps/outline) or commercial apps like Notion. It's designed for power users who want deep organizational features over visual beauty. If you want something simpler for team documentation, use [BookStack](/apps/bookstack). If you want a more modern UI for team wikis, use [Outline](/apps/outline). For personal knowledge management with maximum depth, Trilium is unmatched.
+The UI is functional but not as polished as [Outline](/apps/outline/) or commercial apps like Notion. It's designed for power users who want deep organizational features over visual beauty. If you want something simpler for team documentation, use [BookStack](/apps/bookstack/). If you want a more modern UI for team wikis, use [Outline](/apps/outline/). For personal knowledge management with maximum depth, Trilium is unmatched.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Trilium vs Joplin](/compare/trilium-vs-joplin)
-- [Trilium vs SiYuan](/compare/trilium-vs-siyuan)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Outline](/apps/outline)
-- [Replace Notion](/replace/notion)
-- [Replace Evernote](/replace/evernote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Trilium vs Joplin](/compare/trilium-vs-joplin/)
+- [Trilium vs SiYuan](/compare/trilium-vs-siyuan/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Outline](/apps/outline/)
+- [Replace Notion](/replace/notion/)
+- [Replace Evernote](/replace/evernote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

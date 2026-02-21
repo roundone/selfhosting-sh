@@ -134,10 +134,10 @@ Neither fully replaces Portainer's feature set (multi-host management, RBAC, app
 
 ## Related
 
-- [How to Set Up Lazydocker](/apps/lazydocker)
-- [How to Self-Host Dockge](/apps/dockge)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker)
-- [Best Docker Management Tools](/best/docker-management)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Security](/foundations/docker-security)
+- [How to Set Up Lazydocker](/apps/lazydocker/)
+- [How to Self-Host Dockge](/apps/dockge/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker/)
+- [Best Docker Management Tools](/best/docker-management/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Security](/foundations/docker-security/)

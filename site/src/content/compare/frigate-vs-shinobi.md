@@ -139,11 +139,11 @@ Yes. Both run in Docker and can connect to the same cameras via separate RTSP st
 
 ## Related
 
-- [How to Self-Host Frigate](/apps/frigate)
-- [How to Self-Host Shinobi](/apps/shinobi)
-- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder)
-- [Frigate vs Blue Iris](/compare/frigate-vs-blue-iris)
-- [ZoneMinder vs Shinobi](/compare/zoneminder-vs-shinobi)
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring](/replace/ring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Frigate](/apps/frigate/)
+- [How to Self-Host Shinobi](/apps/shinobi/)
+- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder/)
+- [Frigate vs Blue Iris](/compare/frigate-vs-blue-iris/)
+- [ZoneMinder vs Shinobi](/compare/zoneminder-vs-shinobi/)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring](/replace/ring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -46,7 +46,7 @@ Lychee provides the closest experience to Flickr's public gallery and sharing mo
 - Lightweight — runs on a Raspberry Pi
 - MIT license, actively maintained
 
-[Read our full guide: [How to Self-Host Lychee](/apps/lychee)]
+[Read our full guide: [How to Self-Host Lychee](/apps/lychee/)]
 
 ### Piwigo — Best for Communities and Organizations
 
@@ -60,7 +60,7 @@ Piwigo is the most feature-complete Flickr replacement for communities. Its plug
 - Proven at scale with large photo collections
 - 20+ years of development stability
 
-[Read our full guide: [How to Self-Host Piwigo](/apps/piwigo)]
+[Read our full guide: [How to Self-Host Piwigo](/apps/piwigo/)]
 
 ### PhotoPrism — Best for Personal Libraries with AI
 
@@ -73,7 +73,7 @@ PhotoPrism provides AI-powered photo management — facial recognition, scene de
 - Handles large libraries well
 - Progressive Web App for mobile access
 
-[Read our full guide: [How to Self-Host PhotoPrism](/apps/photoprism)]
+[Read our full guide: [How to Self-Host PhotoPrism](/apps/photoprism/)]
 
 ## Migration Guide
 
@@ -136,10 +136,10 @@ Yes, with proper setup. Ensure your gallery is publicly accessible, has descript
 
 ## Related
 
-- [How to Self-Host Lychee](/apps/lychee)
-- [How to Self-Host Piwigo](/apps/piwigo)
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
+- [How to Self-Host Lychee](/apps/lychee/)
+- [How to Self-Host Piwigo](/apps/piwigo/)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Self-Hosted iCloud Photos Alternatives](/replace/icloud-photos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)

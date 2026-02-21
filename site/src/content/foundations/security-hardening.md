@@ -22,8 +22,8 @@ This guide covers the essential hardening steps. Apply them in order — each bu
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- Root or sudo access ([SSH Setup](/foundations/ssh-setup))
-- Basic command line familiarity ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Root or sudo access ([SSH Setup](/foundations/ssh-setup/))
+- Basic command line familiarity ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## 1. SSH Hardening
 
@@ -68,7 +68,7 @@ sudo systemctl restart sshd
 
 **Test SSH access in a NEW terminal before closing the current session.** If you lock yourself out, you'll need console access to fix it.
 
-See [SSH Setup](/foundations/ssh-setup) for the complete guide including key generation.
+See [SSH Setup](/foundations/ssh-setup/) for the complete guide including key generation.
 
 ## 2. Firewall Configuration
 
@@ -100,7 +100,7 @@ sudo ufw status verbose
 
 **Important:** Docker bypasses UFW by default. See the Docker-specific firewall section below.
 
-See [Firewall Setup](/foundations/firewall-ufw) for the full guide.
+See [Firewall Setup](/foundations/firewall-ufw/) for the full guide.
 
 ## 3. Automatic Security Updates
 
@@ -202,7 +202,7 @@ sudo fail2ban-client status sshd
 # Shows number of currently banned IPs
 ```
 
-See [fail2ban Guide](/foundations/fail2ban) for detailed configuration.
+See [fail2ban Guide](/foundations/fail2ban/) for detailed configuration.
 
 ## 6. Docker Security
 
@@ -281,7 +281,7 @@ volumes:
 
 Only Portainer, Traefik, and similar management tools need socket access. For these, consider using a Docker socket proxy.
 
-See [Docker Security](/foundations/docker-security) for the complete guide.
+See [Docker Security](/foundations/docker-security/) for the complete guide.
 
 ## 7. Network Security
 
@@ -366,7 +366,7 @@ EOF
 sudo systemctl restart systemd-resolved
 ```
 
-See [Encrypted DNS](/foundations/encrypted-dns) for full setup.
+See [Encrypted DNS](/foundations/encrypted-dns/) for full setup.
 
 ## 10. Regular Maintenance
 
@@ -396,7 +396,7 @@ df -h
 docker system df
 ```
 
-See [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist) for the complete checklist.
+See [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/) for the complete checklist.
 
 ## Hardening Summary
 
@@ -422,7 +422,7 @@ Monthly for the checklist above. Immediately when you add a new service or chang
 
 ### Should I use a VPN to access my server instead of exposing SSH?
 
-Yes, if you can. Using Tailscale or WireGuard to access your server, then closing SSH's public port, is the most secure approach. See [Tailscale Setup](/foundations/tailscale-setup) and [WireGuard Setup](/foundations/wireguard-setup).
+Yes, if you can. Using Tailscale or WireGuard to access your server, then closing SSH's public port, is the most secure approach. See [Tailscale Setup](/foundations/tailscale-setup/) and [WireGuard Setup](/foundations/wireguard-setup/).
 
 ### Is Docker's default security enough?
 
@@ -430,10 +430,10 @@ Docker provides good isolation by default (namespaces, cgroups, seccomp profiles
 
 ## Related
 
-- [SSH Setup](/foundations/ssh-setup)
-- [Firewall Setup](/foundations/firewall-ufw)
-- [fail2ban Guide](/foundations/fail2ban)
-- [Docker Security](/foundations/docker-security)
-- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist)
-- [Two-Factor Authentication](/foundations/two-factor-auth)
-- [Encrypted DNS](/foundations/encrypted-dns)
+- [SSH Setup](/foundations/ssh-setup/)
+- [Firewall Setup](/foundations/firewall-ufw/)
+- [fail2ban Guide](/foundations/fail2ban/)
+- [Docker Security](/foundations/docker-security/)
+- [Self-Hosting Security Checklist](/foundations/selfhosting-security-checklist/)
+- [Two-Factor Authentication](/foundations/two-factor-auth/)
+- [Encrypted DNS](/foundations/encrypted-dns/)

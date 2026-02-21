@@ -17,18 +17,18 @@ affiliateDisclosure: false
 
 Container orchestration is the automation of deploying, scaling, networking, and managing containers across one or more machines. If you run a single server with Docker Compose, you are already doing basic container orchestration for self-hosting -- defining services, networks, and volumes in a YAML file and letting Docker manage the lifecycle. Full orchestration platforms like Kubernetes and Docker Swarm extend this to multi-node clusters with automatic failover, load balancing, rolling updates, and service discovery.
 
-The honest recommendation: **most self-hosters do not need a full orchestration platform.** A single machine running [Docker Compose](/foundations/docker-compose-basics) handles dozens of self-hosted apps without breaking a sweat. Orchestration becomes valuable when you have multiple physical machines and want services to survive a node failure, or when you are running workloads that genuinely need horizontal scaling.
+The honest recommendation: **most self-hosters do not need a full orchestration platform.** A single machine running [Docker Compose](/foundations/docker-compose-basics/) handles dozens of self-hosted apps without breaking a sweat. Orchestration becomes valuable when you have multiple physical machines and want services to survive a node failure, or when you are running workloads that genuinely need horizontal scaling.
 
 This guide covers what orchestration is, when it matters, the main options available, and how to set up k3s and Docker Swarm for a home lab.
 
 ## Prerequisites
 
-- Familiarity with Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics))
-- Understanding of Docker networking concepts ([Docker Networking](/foundations/docker-networking))
+- Familiarity with Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics/))
+- Understanding of Docker networking concepts ([Docker Networking](/foundations/docker-networking/))
 - A Linux server (Ubuntu 22.04+ or Debian 12+ recommended)
-- SSH access to your server(s) -- see [SSH Setup](/foundations/ssh-setup)
+- SSH access to your server(s) -- see [SSH Setup](/foundations/ssh-setup/)
 - For multi-node setups: two or three Linux machines on the same network
-- Basic command-line skills ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Basic command-line skills ([Linux Basics](/foundations/linux-basics-self-hosting/))
 
 ## Docker Compose vs Kubernetes vs Docker Swarm
 
@@ -525,10 +525,10 @@ For self-hosting, start with plain manifests. Helm charts add a templating layer
 
 ## Related
 
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Linux Systemd Basics](/foundations/linux-systemd)
-- [Monitoring Basics](/foundations/monitoring-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Linux Systemd Basics](/foundations/linux-systemd/)
+- [Monitoring Basics](/foundations/monitoring-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)

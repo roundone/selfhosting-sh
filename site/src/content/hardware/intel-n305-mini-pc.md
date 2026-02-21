@@ -15,7 +15,7 @@ affiliateDisclosure: true
 
 ## Quick Recommendation
 
-The **Intel N305 is the best processor for serious self-hosting on a budget.** It doubles the N100's core count (8 vs 4) for roughly $50-100 more, handles 2-3 simultaneous 4K Plex transcodes via QuickSync, and idles under 11W. If you're running more than a handful of Docker containers, the N305 is worth the premium over the [N100](/hardware/intel-n100-mini-pc).
+The **Intel N305 is the best processor for serious self-hosting on a budget.** It doubles the N100's core count (8 vs 4) for roughly $50-100 more, handles 2-3 simultaneous 4K Plex transcodes via QuickSync, and idles under 11W. If you're running more than a handful of Docker containers, the N305 is worth the premium over the [N100](/hardware/intel-n100-mini-pc/).
 
 ## Intel N305 Specifications
 
@@ -34,7 +34,7 @@ The **Intel N305 is the best processor for serious self-hosting on a budget.** I
 
 ## N305 vs N100
 
-The [N100](/hardware/intel-n100-mini-pc) dominates the budget mini PC market. The N305 steps up significantly:
+The [N100](/hardware/intel-n100-mini-pc/) dominates the budget mini PC market. The N305 steps up significantly:
 
 | Spec | N305 | N100 |
 |------|------|------|
@@ -153,22 +153,22 @@ The N305's 15W TDP is the full-system design target. Real-world measurements:
 
 Running an N305 mini PC 24/7 costs roughly **$1-3.50/month in electricity**. That's less than a single LED light bulb.
 
-For detailed measurements and comparisons with other hardware, see our [power consumption guide](/hardware/power-consumption-guide) and [mini PC power consumption comparison](/hardware/mini-pc-power-consumption).
+For detailed measurements and comparisons with other hardware, see our [power consumption guide](/hardware/power-consumption-guide/) and [mini PC power consumption comparison](/hardware/mini-pc-power-consumption/).
 
 ## What Can You Run on an N305?
 
 With 16-32GB RAM and an NVMe SSD, an N305 mini PC comfortably handles:
 
 **Simultaneously running (15-25 containers):**
-- [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex) with 1-2 active transcodes
-- [Nextcloud](/apps/nextcloud) for 2-5 users
-- [Immich](/apps/immich) for photo management
-- [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home)
-- [Vaultwarden](/apps/vaultwarden)
-- [Home Assistant](/apps/home-assistant)
-- [Nginx Proxy Manager](/apps/nginx-proxy-manager) or [Traefik](/apps/traefik)
-- [Uptime Kuma](/apps/uptime-kuma)
-- [Duplicati](/apps/duplicati) or [Restic](/apps/restic) for backups
+- [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/) with 1-2 active transcodes
+- [Nextcloud](/apps/nextcloud/) for 2-5 users
+- [Immich](/apps/immich/) for photo management
+- [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/)
+- [Vaultwarden](/apps/vaultwarden/)
+- [Home Assistant](/apps/home-assistant/)
+- [Nginx Proxy Manager](/apps/nginx-proxy-manager/) or [Traefik](/apps/traefik/)
+- [Uptime Kuma](/apps/uptime-kuma/)
+- [Duplicati](/apps/duplicati/) or [Restic](/apps/restic/) for backups
 - 5-10 additional lightweight services
 
 **Plex/Jellyfin transcoding capacity:**
@@ -197,21 +197,21 @@ Primary M.2 NVMe (PCIe 3.0 x4): OS + apps — 512GB-1TB
 SATA 2.5" bay: Media library — 2-4TB HDD or SSD
 ```
 
-For higher capacity, add external drives via USB 3.0 or consider a [DAS (Direct Attached Storage)](/hardware/das-vs-nas) enclosure. If you need 4+ drives, a [dedicated NAS](/hardware/best-nas) or [DIY NAS build](/hardware/diy-nas-build) makes more sense.
+For higher capacity, add external drives via USB 3.0 or consider a [DAS (Direct Attached Storage)](/hardware/das-vs-nas/) enclosure. If you need 4+ drives, a [dedicated NAS](/hardware/best-nas/) or [DIY NAS build](/hardware/diy-nas-build/) makes more sense.
 
 ## Who Should Buy an N305 Mini PC
 
 **Buy an N305 if:**
-- You're running 10+ Docker containers and the [N100](/hardware/intel-n100-mini-pc) feels limiting
+- You're running 10+ Docker containers and the [N100](/hardware/intel-n100-mini-pc/) feels limiting
 - Plex/Jellyfin transcoding for your household is a primary use case
 - You want headroom for growth without jumping to a full server
 - Power efficiency matters (running 24/7)
 
 **Skip the N305 if:**
 - You only need Pi-hole + a few light services (N100 is cheaper and sufficient)
-- You need 4+ drive bays (get a [NAS](/hardware/best-nas) instead)
+- You need 4+ drive bays (get a [NAS](/hardware/best-nas/) instead)
 - Budget is under $200 (N100 mini PCs start around $150)
-- You need ECC memory or server-grade reliability (look at [used Dell OptiPlex](/hardware/used-dell-optiplex) or [ThinkCentre](/hardware/used-lenovo-thinkcentre))
+- You need ECC memory or server-grade reliability (look at [used Dell OptiPlex](/hardware/used-dell-optiplex/) or [ThinkCentre](/hardware/used-lenovo-thinkcentre/))
 
 ## FAQ
 
@@ -232,11 +232,11 @@ The Beelink EQ12 Pro. Dual 2.5GbE handles high-bandwidth media streaming, the co
 
 ## Related
 
-- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc)
-- [Best Mini PC for Home Server](/hardware/best-mini-pc)
-- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Best SSD for Home Server](/hardware/best-ssd-home-server)
-- [Plex Transcoding Hardware Guide](/hardware/plex-transcoding-hardware)
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Intel N100 Mini PC Review](/hardware/intel-n100-mini-pc/)
+- [Best Mini PC for Home Server](/hardware/best-mini-pc/)
+- [Mini PC Power Consumption](/hardware/mini-pc-power-consumption/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Best SSD for Home Server](/hardware/best-ssd-home-server/)
+- [Plex Transcoding Hardware Guide](/hardware/plex-transcoding-hardware/)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

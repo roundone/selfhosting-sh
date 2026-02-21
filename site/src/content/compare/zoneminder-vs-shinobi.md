@@ -106,7 +106,7 @@ ZoneMinder wins on community size and long-term reliability. Shinobi's smaller c
 
 Shinobi has a better UI and is easier to deploy initially, but its uncertain development trajectory and thin documentation make it harder to recommend for anything beyond a small home setup. If you're choosing between these two, go with ZoneMinder.
 
-That said, if you're starting fresh in 2026, consider [Frigate](/apps/frigate) instead of either. Frigate's AI-first approach with Coral TPU support and Home Assistant integration has made it the most popular choice in the self-hosted NVR space.
+That said, if you're starting fresh in 2026, consider [Frigate](/apps/frigate/) instead of either. Frigate's AI-first approach with Coral TPU support and Home Assistant integration has made it the most popular choice in the self-hosted NVR space.
 
 ## Frequently Asked Questions
 
@@ -124,10 +124,10 @@ There's no automated migration tool. Both store recordings as video files on dis
 
 ## Related
 
-- [How to Self-Host ZoneMinder](/apps/zoneminder)
-- [How to Self-Host Shinobi](/apps/shinobi)
-- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder)
-- [Frigate vs Shinobi](/compare/frigate-vs-shinobi)
-- [Best Self-Hosted Video Surveillance](/best/video-surveillance)
-- [Replace Ring](/replace/ring)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host ZoneMinder](/apps/zoneminder/)
+- [How to Self-Host Shinobi](/apps/shinobi/)
+- [Frigate vs ZoneMinder](/compare/frigate-vs-zoneminder/)
+- [Frigate vs Shinobi](/compare/frigate-vs-shinobi/)
+- [Best Self-Hosted Video Surveillance](/best/video-surveillance/)
+- [Replace Ring](/replace/ring/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

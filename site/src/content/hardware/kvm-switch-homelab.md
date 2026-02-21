@@ -23,7 +23,7 @@ Before spending money, consider whether you need one:
 
 **You DON'T need a KVM if:**
 - All your servers run Linux and you manage them via SSH
-- Your servers have IPMI/iDRAC/iLO (see [IPMI Guide](/hardware/ipmi-remote-management))
+- Your servers have IPMI/iDRAC/iLO (see [IPMI Guide](/hardware/ipmi-remote-management/))
 - You use Proxmox, ESXi, or Unraid with web-based consoles
 - You only have one server
 
@@ -166,7 +166,7 @@ If your servers have IPMI, iDRAC, or iLO management ports, you already have an I
 - Hardware health monitoring
 - Alert notifications
 
-Used Dell OptiPlex and Lenovo ThinkCentre machines don't have IPMI. Used Dell PowerEdge and HP ProLiant servers do. See our [IPMI Guide](/hardware/ipmi-remote-management) for details.
+Used Dell OptiPlex and Lenovo ThinkCentre machines don't have IPMI. Used Dell PowerEdge and HP ProLiant servers do. See our [IPMI Guide](/hardware/ipmi-remote-management/) for details.
 
 ## Comparison Table
 
@@ -208,7 +208,7 @@ sudo apt install barrier
 → **PiKVM or JetKVM** ($70-250). Access from anywhere on your network via browser. Mount ISOs remotely. Control power.
 
 ### Enterprise servers (Dell PowerEdge, HP ProLiant)
-→ **Use built-in IPMI/iDRAC/iLO.** No additional hardware needed. See [IPMI Guide](/hardware/ipmi-remote-management).
+→ **Use built-in IPMI/iDRAC/iLO.** No additional hardware needed. See [IPMI Guide](/hardware/ipmi-remote-management/).
 
 ### Just sharing keyboard/mouse, all machines have monitors
 → **Barrier** (free software). No hardware required.
@@ -240,9 +240,9 @@ Enterprise KVM-over-IP solutions (Raritan, Avocent, ATEN KN series) cost $1,000+
 
 ## Related
 
-- [IPMI, iDRAC, and iLO for Home Servers](/hardware/ipmi-remote-management)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Home Server Rack Setup Guide](/hardware/home-server-rack)
-- [Homelab Cable Management Guide](/hardware/cable-management)
-- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server)
+- [IPMI, iDRAC, and iLO for Home Servers](/hardware/ipmi-remote-management/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Home Server Rack Setup Guide](/hardware/home-server-rack/)
+- [Homelab Cable Management Guide](/hardware/cable-management/)
+- [Raspberry Pi as a Home Server](/hardware/raspberry-pi-home-server/)

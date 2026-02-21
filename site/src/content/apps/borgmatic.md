@@ -21,12 +21,12 @@ affiliateDisclosure: false
 
 ## What Is Borgmatic?
 
-[Borgmatic](https://torsion.org/borgmatic/) is a wrapper around [BorgBackup](/apps/borgbackup) that replaces manual borg commands with a single YAML configuration file and built-in scheduling. Where BorgBackup gives you a powerful deduplication and encryption engine, borgmatic gives you automated, scheduled, hands-off backups that run from a Docker container with cron built in. It supports local repositories, remote SSH/SFTP destinations, and S3-compatible or Backblaze B2 storage via rclone integration. If you are paying for CrashPlan, Backblaze, or any managed backup service, borgmatic lets you self-host the same functionality with full control over encryption keys and storage destinations.
+[Borgmatic](https://torsion.org/borgmatic/) is a wrapper around [BorgBackup](/apps/borgbackup/) that replaces manual borg commands with a single YAML configuration file and built-in scheduling. Where BorgBackup gives you a powerful deduplication and encryption engine, borgmatic gives you automated, scheduled, hands-off backups that run from a Docker container with cron built in. It supports local repositories, remote SSH/SFTP destinations, and S3-compatible or Backblaze B2 storage via rclone integration. If you are paying for CrashPlan, Backblaze, or any managed backup service, borgmatic lets you self-host the same functionality with full control over encryption keys and storage destinations.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum; more for large backup sets)
 - Storage for backup repositories (local disk, NAS, or remote server)
 - SSH key pair (if using remote backup destinations)
@@ -240,7 +240,7 @@ repositories:
     label: offsite
 ```
 
-This follows the [3-2-1 backup rule](/foundations/backup-3-2-1-rule): three copies, two different media types, one offsite.
+This follows the [3-2-1 backup rule](/foundations/backup-3-2-1-rule/): three copies, two different media types, one offsite.
 
 ### Exclude Patterns
 
@@ -560,22 +560,22 @@ Common causes: YAML indentation errors, deprecated options from older borgmatic 
 
 Borgmatic is the best way to run BorgBackup in a Docker environment. If you already understand and trust borg's deduplication and encryption (and you should — it is one of the most battle-tested backup engines available), borgmatic removes the operational burden of writing shell scripts, managing cron jobs, and remembering the right flags. The YAML configuration is clear, the built-in scheduling eliminates external cron dependencies, and the notification and database dump integrations make it genuinely hands-off.
 
-Compared to [Duplicati](/apps/duplicati), borgmatic is more CLI-oriented and lacks a web UI, but it produces dramatically more efficient backup repositories and is far more reliable for large datasets. Duplicati's web interface is friendly but its backup engine has a history of database corruption on long-running backup sets.
+Compared to [Duplicati](/apps/duplicati/), borgmatic is more CLI-oriented and lacks a web UI, but it produces dramatically more efficient backup repositories and is far more reliable for large datasets. Duplicati's web interface is friendly but its backup engine has a history of database corruption on long-running backup sets.
 
-Compared to [Restic](/apps/restic), borgmatic offers more structured automation out of the box. Restic is a fantastic backup engine with broader native backend support (S3, B2, Azure, GCS without rclone), but you need to wrap it in your own scripts and scheduling. If you want a Docker container that handles everything — scheduling, pruning, verification, notifications — borgmatic is the more complete solution.
+Compared to [Restic](/apps/restic/), borgmatic offers more structured automation out of the box. Restic is a fantastic backup engine with broader native backend support (S3, B2, Azure, GCS without rclone), but you need to wrap it in your own scripts and scheduling. If you want a Docker container that handles everything — scheduling, pruning, verification, notifications — borgmatic is the more complete solution.
 
 **Use borgmatic if:** You want automated, encrypted, deduplicated backups running in Docker with minimal ongoing maintenance. You value data integrity and efficient storage over a graphical interface.
 
-**Look elsewhere if:** You need a web UI for backup management ([Duplicati](/apps/duplicati)), native S3/B2 support without rclone ([Restic](/apps/restic)), or you are backing up a single machine and prefer a simpler tool.
+**Look elsewhere if:** You need a web UI for backup management ([Duplicati](/apps/duplicati/)), native S3/B2 support without rclone ([Restic](/apps/restic/)), or you are backing up a single machine and prefer a simpler tool.
 
 ## Related
 
-- [How to Self-Host BorgBackup](/apps/borgbackup)
-- [How to Self-Host Duplicati with Docker](/apps/duplicati)
-- [How to Self-Host Restic Backup](/apps/restic)
-- [Restic vs BorgBackup: Which Should You Self-Host?](/compare/restic-vs-borgbackup)
-- [Borgmatic vs Restic](/compare/borgmatic-vs-restic)
-- [Best Self-Hosted Backup Solutions](/best/backup)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host BorgBackup](/apps/borgbackup/)
+- [How to Self-Host Duplicati with Docker](/apps/duplicati/)
+- [How to Self-Host Restic Backup](/apps/restic/)
+- [Restic vs BorgBackup: Which Should You Self-Host?](/compare/restic-vs-borgbackup/)
+- [Borgmatic vs Restic](/compare/borgmatic-vs-restic/)
+- [Best Self-Hosted Backup Solutions](/best/backup/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

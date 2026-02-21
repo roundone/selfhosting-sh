@@ -23,7 +23,7 @@ Komga's standout features are its metadata scraping capabilities, read progress 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB RAM minimum (1 GB recommended for large libraries)
 - A Java-compatible filesystem for the config directory (local, not NFS/CIFS)
 - Storage for your comic/manga collection
@@ -173,7 +173,7 @@ location / {
 }
 ```
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -186,7 +186,7 @@ tar -czf komga-backup-$(date +%Y%m%d).tar.gz /opt/komga/config/
 docker compose start komga
 ```
 
-The database stores: user accounts, reading progress, collections, metadata overrides, and thumbnails. Your actual comic/manga files are on the host filesystem and should be part of your regular [backup strategy](/foundations/backup-strategy).
+The database stores: user accounts, reading progress, collections, metadata overrides, and thumbnails. Your actual comic/manga files are on the host filesystem and should be part of your regular [backup strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -225,17 +225,17 @@ The database stores: user accounts, reading progress, collections, metadata over
 
 Komga is the best self-hosted option for comics and manga if you value metadata management, a great API, and Tachiyomi/Mihon integration. The web reader is solid, the OPDS feed works well, and the organized library view makes browsing large collections easy.
 
-If you also need ebook (EPUB) support with a built-in reader, [Kavita](/apps/kavita) covers more formats. If you want ebook management with Calibre integration and send-to-Kindle, [Calibre-Web](/apps/calibre-web) is the better fit. For manga + comics specifically, Komga and Kavita are both excellent — Komga has better metadata capabilities, while Kavita has a better built-in reader.
+If you also need ebook (EPUB) support with a built-in reader, [Kavita](/apps/kavita/) covers more formats. If you want ebook management with Calibre integration and send-to-Kindle, [Calibre-Web](/apps/calibre-web/) is the better fit. For manga + comics specifically, Komga and Kavita are both excellent — Komga has better metadata capabilities, while Kavita has a better built-in reader.
 
 ## FAQ
 
 ### Komga vs Kavita — which should I use?
 
-Komga has better metadata scraping and Tachiyomi integration. Kavita supports more formats (EPUB, PDF natively) and has a superior built-in reader. If you primarily use a mobile reader like Mihon, choose Komga. If you read in the browser, choose Kavita. See our [detailed comparison](/compare/kavita-vs-komga).
+Komga has better metadata scraping and Tachiyomi integration. Kavita supports more formats (EPUB, PDF natively) and has a superior built-in reader. If you primarily use a mobile reader like Mihon, choose Komga. If you read in the browser, choose Kavita. See our [detailed comparison](/compare/kavita-vs-komga/).
 
 ### Can Komga serve ebooks?
 
-Komga supports EPUB and PDF files, but its reader is optimized for comics and manga. For a better ebook reading experience, use [Calibre-Web](/apps/calibre-web) or [Kavita](/apps/kavita).
+Komga supports EPUB and PDF files, but its reader is optimized for comics and manga. For a better ebook reading experience, use [Calibre-Web](/apps/calibre-web/) or [Kavita](/apps/kavita/).
 
 ### Does Komga work with Kindle?
 
@@ -251,13 +251,13 @@ Use [ComicTagger](https://github.com/comictagger/comictagger) to embed ComicInfo
 
 ## Related
 
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Komga vs Kavita](/compare/kavita-vs-komga)
-- [Komga vs Calibre-Web](/compare/calibre-web-vs-komga)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Komga vs Kavita](/compare/kavita-vs-komga/)
+- [Komga vs Calibre-Web](/compare/calibre-web-vs-komga/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

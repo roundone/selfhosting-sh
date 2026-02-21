@@ -43,14 +43,14 @@ This guide covers all three, with exact component recommendations.
 
 The EQ14 is the right choice for most people. You plug it in, install a Linux distro, set up Docker, and start deploying containers. Done.
 
-For a detailed breakdown, see [Best Mini PCs for Home Servers](/hardware/best-mini-pc) and [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc).
+For a detailed breakdown, see [Best Mini PCs for Home Servers](/hardware/best-mini-pc/) and [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/).
 
 ### Mini PC Setup
 
 1. Unbox and connect power, Ethernet, monitor, keyboard
 2. Boot from USB installer (Ubuntu Server 24.04 LTS recommended)
 3. Install the OS, create your user, enable SSH
-4. Install Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics))
+4. Install Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics/))
 5. Deploy your first containers
 
 That's it. No assembly required.
@@ -77,7 +77,7 @@ Used Dell OptiPlex and Lenovo ThinkCentre machines are the best-kept secret in s
 - **Low power.** 15–25W idle for the T-series (low-power) CPUs.
 - **Reliable.** Enterprise hardware with enterprise quality control.
 
-For detailed guides, see [Dell OptiPlex Home Server](/hardware/used-dell-optiplex) and [Lenovo ThinkCentre Home Server](/hardware/used-lenovo-thinkcentre).
+For detailed guides, see [Dell OptiPlex Home Server](/hardware/used-dell-optiplex/) and [Lenovo ThinkCentre Home Server](/hardware/used-lenovo-thinkcentre/).
 
 ### Recommended Upgrades
 
@@ -111,7 +111,7 @@ This is the sweet spot for a DIY NAS running TrueNAS or Unraid.
 | **PSU** | Corsair CX450M (450W, 80+ Bronze) | $45 |
 | **Total** | | **~$360** |
 
-Add your storage drives separately. For drive recommendations, see [Best Hard Drives for NAS](/hardware/best-hard-drives-nas) and [HDD vs SSD for Home Server](/hardware/hdd-vs-ssd-home-server).
+Add your storage drives separately. For drive recommendations, see [Best Hard Drives for NAS](/hardware/best-hard-drives-nas/) and [HDD vs SSD for Home Server](/hardware/hdd-vs-ssd-home-server/).
 
 ### Performance Build ($600–$800)
 
@@ -154,9 +154,9 @@ Once hardware is ready, install an OS. These are the best options for self-hosti
 
 For most self-hosters running Docker containers, **Ubuntu Server 24.04 LTS** is the right choice. It has the widest documentation coverage and the easiest Docker installation.
 
-For NAS-focused builds, [TrueNAS vs Unraid](/hardware/truenas-vs-unraid) compares the two best options.
+For NAS-focused builds, [TrueNAS vs Unraid](/hardware/truenas-vs-unraid/) compares the two best options.
 
-For virtualization, see [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide).
+For virtualization, see [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/).
 
 ## First Steps After Build
 
@@ -164,10 +164,10 @@ For virtualization, see [Proxmox Hardware Guide](/hardware/proxmox-hardware-guid
 2. **Update everything:** `sudo apt update && sudo apt upgrade -y`
 3. **Enable SSH:** `sudo systemctl enable ssh`
 4. **Set a static IP** in your router's DHCP settings or via netplan
-5. **Install Docker and Docker Compose** ([guide](/foundations/docker-compose-basics))
-6. **Install your first app** — we recommend [Portainer](/apps/portainer) for a Docker management GUI, then [Pi-hole](/apps/pihole) as your first real service
-7. **Set up a reverse proxy** — [Nginx Proxy Manager](/apps/nginx-proxy-manager) is the easiest. See our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained)
-8. **Configure backups** — [Backup Strategy](/foundations/backup-strategy)
+5. **Install Docker and Docker Compose** ([guide](/foundations/docker-compose-basics/))
+6. **Install your first app** — we recommend [Portainer](/apps/portainer/) for a Docker management GUI, then [Pi-hole](/apps/pihole/) as your first real service
+7. **Set up a reverse proxy** — [Nginx Proxy Manager](/apps/nginx-proxy-manager/) is the easiest. See our [Reverse Proxy Setup guide](/foundations/reverse-proxy-explained/)
+8. **Configure backups** — [Backup Strategy](/foundations/backup-strategy/)
 
 ## Power Consumption and Running Costs
 
@@ -180,7 +180,7 @@ For virtualization, see [Proxmox Hardware Guide](/hardware/proxmox-hardware-guid
 
 Compare that to cloud hosting: a basic VPS costs $5–$20/month ($60–$240/year), with limited storage. A home server pays for itself in electricity savings within the first year.
 
-For more detail, see [Home Server Power Consumption Guide](/hardware/power-consumption-guide) and [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs).
+For more detail, see [Home Server Power Consumption Guide](/hardware/power-consumption-guide/) and [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs/).
 
 ## What Can You Run?
 
@@ -199,9 +199,9 @@ For app-specific resource requirements, check individual [app guides](/apps/).
 
 1. **Buying too much hardware.** Most self-hosters never use more than 8 GB of RAM. Start small, upgrade when you actually hit limits.
 2. **Ignoring power consumption.** A used enterprise rack server draws 200–400W idle. At $0.12/kWh, that's $210–$420/year in electricity. A mini PC does the same job at $10/year.
-3. **Skipping backups.** Your server will fail eventually. RAID is not a backup. Set up automated backups before you put data on the server. See [Backup Strategy](/foundations/backup-strategy).
-4. **Using Wi-Fi instead of Ethernet.** Self-hosted services need reliable, low-latency connections. Run an Ethernet cable. See [Network Cables Guide](/hardware/network-cables-guide).
-5. **No UPS.** A $50 UPS protects against power surges and gives you time for a clean shutdown. See [Best UPS for Home Server](/hardware/best-ups-home-server).
+3. **Skipping backups.** Your server will fail eventually. RAID is not a backup. Set up automated backups before you put data on the server. See [Backup Strategy](/foundations/backup-strategy/).
+4. **Using Wi-Fi instead of Ethernet.** Self-hosted services need reliable, low-latency connections. Run an Ethernet cable. See [Network Cables Guide](/hardware/network-cables-guide/).
+5. **No UPS.** A $50 UPS protects against power surges and gives you time for a clean shutdown. See [Best UPS for Home Server](/hardware/best-ups-home-server/).
 
 ## FAQ
 
@@ -215,11 +215,11 @@ No. A mini PC sits on a shelf. A small tower fits in a closet. You only need ded
 
 ### Is a Raspberry Pi good enough?
 
-The Raspberry Pi 5 (8 GB) can run lightweight containers — Pi-hole, Vaultwarden, Home Assistant. But it struggles with anything storage-heavy (Nextcloud, Jellyfin) due to USB-based storage and limited RAM. A $160 mini PC is faster, has NVMe storage, and costs the same as a fully-kitted Pi. See [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc).
+The Raspberry Pi 5 (8 GB) can run lightweight containers — Pi-hole, Vaultwarden, Home Assistant. But it struggles with anything storage-heavy (Nextcloud, Jellyfin) due to USB-based storage and limited RAM. A $160 mini PC is faster, has NVMe storage, and costs the same as a fully-kitted Pi. See [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/).
 
 ### Should I use Proxmox or just Docker?
 
-If you only want to run containers, skip Proxmox. Install Ubuntu Server and Docker directly. Proxmox adds value when you need VMs — for testing different OSes, isolating workloads, or GPU passthrough. See [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide).
+If you only want to run containers, skip Proxmox. Install Ubuntu Server and Docker directly. Proxmox adds value when you need VMs — for testing different OSes, isolating workloads, or GPU passthrough. See [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/).
 
 ### How much RAM do I actually need?
 
@@ -232,16 +232,16 @@ Start with 16 GB. Upgrade to 32 if you feel constrained.
 
 ## Related
 
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc)
-- [Dell OptiPlex Home Server](/hardware/used-dell-optiplex)
-- [Lenovo ThinkCentre Home Server](/hardware/used-lenovo-thinkcentre)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [DIY NAS Build Guide](/hardware/diy-nas-build)
-- [Home Server Power Consumption](/hardware/power-consumption-guide)
-- [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
-- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc)
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
-- [Backup Strategy](/foundations/backup-strategy)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Intel N100 Mini PC Guide](/hardware/intel-n100-mini-pc/)
+- [Dell OptiPlex Home Server](/hardware/used-dell-optiplex/)
+- [Lenovo ThinkCentre Home Server](/hardware/used-lenovo-thinkcentre/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [DIY NAS Build Guide](/hardware/diy-nas-build/)
+- [Home Server Power Consumption](/hardware/power-consumption-guide/)
+- [Self-Hosting vs Cloud Costs](/hardware/self-hosting-vs-cloud-costs/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Raspberry Pi vs Mini PC](/hardware/raspberry-pi-vs-mini-pc/)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)
+- [Backup Strategy](/foundations/backup-strategy/)

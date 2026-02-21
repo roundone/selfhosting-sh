@@ -50,7 +50,7 @@ Kavita is the best all-around self-hosted ebook server. It handles EPUB, PDF, CB
 
 **Best for:** Users with mixed libraries (ebooks + manga + comics) who want one server.
 
-[Read our full guide: [How to Self-Host Kavita](/apps/kavita)]
+[Read our full guide: [How to Self-Host Kavita](/apps/kavita/)]
 
 ### 2. Calibre-Web — Best for Ebook Libraries
 
@@ -72,7 +72,7 @@ Calibre-Web provides the best ebook browsing and reading experience, especially 
 
 **Best for:** Users who manage their ebook library in Calibre desktop and want a web interface for reading and sharing.
 
-[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web)]
+[Read our full guide: [How to Self-Host Calibre-Web](/apps/calibre-web/)]
 
 ### 3. Komga — Best for Comics and Manga
 
@@ -95,7 +95,7 @@ Komga is purpose-built for comics, manga, and graphic novels. Its metadata manag
 
 **Best for:** Users whose library is primarily comics, manga, or graphic novels.
 
-[Read our full guide: [How to Self-Host Komga](/apps/komga)]
+[Read our full guide: [How to Self-Host Komga](/apps/komga/)]
 
 ### 4. Audiobookshelf — Best for Audiobooks
 
@@ -118,7 +118,7 @@ Audiobookshelf isn't an ebook reader per se, but it handles both audiobooks and 
 
 **Best for:** Users who primarily listen to audiobooks but also want to read some ebooks.
 
-[Read our full guide: [How to Self-Host Audiobookshelf](/apps/audiobookshelf)]
+[Read our full guide: [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)]
 
 ## Full Comparison Table
 
@@ -180,14 +180,14 @@ Kavita comes closest — it handles ebooks, manga, and comics in one UI. For aud
 
 ## Related
 
-- [How to Self-Host Kavita](/apps/kavita)
-- [How to Self-Host Calibre-Web](/apps/calibre-web)
-- [How to Self-Host Komga](/apps/komga)
-- [How to Self-Host Audiobookshelf](/apps/audiobookshelf)
-- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web)
-- [Kavita vs Komga](/compare/kavita-vs-komga)
-- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga)
-- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga)
-- [Self-Hosted Kindle Alternatives](/replace/kindle)
-- [Self-Hosted Audible Alternatives](/replace/audible)
-- [Best Self-Hosted Media Servers](/best/media-servers)
+- [How to Self-Host Kavita](/apps/kavita/)
+- [How to Self-Host Calibre-Web](/apps/calibre-web/)
+- [How to Self-Host Komga](/apps/komga/)
+- [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
+- [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
+- [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Calibre-Web vs Komga](/compare/calibre-web-vs-komga/)
+- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga/)
+- [Self-Hosted Kindle Alternatives](/replace/kindle/)
+- [Self-Hosted Audible Alternatives](/replace/audible/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)

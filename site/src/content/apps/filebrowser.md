@@ -28,7 +28,7 @@ Think of it as the file browsing part of Google Drive without the sync, collabor
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 512 MB of free RAM (Filebrowser itself uses very little)
 - A directory of files you want to access via the web
 
@@ -211,7 +211,7 @@ location / {
 
 The `client_max_body_size` directive controls the maximum upload size. Set it to match the largest files you expect to upload. `proxy_request_buffering off` prevents Nginx from buffering the entire upload in memory before forwarding it to Filebrowser.
 
-For other reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For other reverse proxy options, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -238,7 +238,7 @@ docker run --rm \
 docker compose start filebrowser
 ```
 
-The database is small (typically under 1 MB) so backups are fast. Schedule this with a cron job or include it in your broader backup strategy. See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+The database is small (typically under 1 MB) so backups are fast. Schedule this with a cron job or include it in your broader backup strategy. See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -317,7 +317,7 @@ Filebrowser is one of the lightest self-hosted applications you can run. It work
 
 Filebrowser is the best option when you need simple, fast web access to files on your server and nothing else. It installs in seconds, uses almost no resources, and provides a clean UI for browsing, uploading, downloading, and sharing files.
 
-It is not a [Nextcloud](/apps/nextcloud) replacement. There is no file sync, no office suite, no calendar, no app ecosystem. But that is exactly the point. If you already use [Syncthing](/apps/syncthing) for file sync and just want a web UI to access those files from a browser, Filebrowser is the perfect companion. If you need a full collaboration platform, look at Nextcloud or [Seafile](/apps/seafile) instead.
+It is not a [Nextcloud](/apps/nextcloud/) replacement. There is no file sync, no office suite, no calendar, no app ecosystem. But that is exactly the point. If you already use [Syncthing](/apps/syncthing/) for file sync and just want a web UI to access those files from a browser, Filebrowser is the perfect companion. If you need a full collaboration platform, look at Nextcloud or [Seafile](/apps/seafile/) instead.
 
 Filebrowser is also excellent as a secondary tool on any server. Mount your Docker volume backups, media library, or shared storage to it and give yourself (or your family) easy browser-based access without installing a heavier platform.
 
@@ -325,7 +325,7 @@ Filebrowser is also excellent as a secondary tool on any server. Mount your Dock
 
 ### Filebrowser vs Nextcloud — which should I use?
 
-Use Filebrowser if you only need web-based file access (browse, upload, download, share). Use [Nextcloud](/apps/nextcloud) if you need file sync across devices, a calendar, contacts, office document editing, or a plugin ecosystem. Filebrowser uses 30 MB of RAM; Nextcloud uses 500 MB+. They serve different purposes and can run side by side.
+Use Filebrowser if you only need web-based file access (browse, upload, download, share). Use [Nextcloud](/apps/nextcloud/) if you need file sync across devices, a calendar, contacts, office document editing, or a plugin ecosystem. Filebrowser uses 30 MB of RAM; Nextcloud uses 500 MB+. They serve different purposes and can run side by side.
 
 ### Can multiple users access Filebrowser simultaneously?
 
@@ -345,11 +345,11 @@ Yes. Filebrowser includes a built-in text editor that works for configuration fi
 
 ## Related
 
-- [Best Self-Hosted File Sync & Storage](/best/file-sync)
-- [How to Self-Host Nextcloud](/apps/nextcloud)
-- [How to Self-Host Syncthing](/apps/syncthing)
-- [How to Self-Host Seafile](/apps/seafile)
-- [Self-Hosted Alternatives to Google Drive](/replace/google-drive)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Best Self-Hosted File Sync & Storage](/best/file-sync/)
+- [How to Self-Host Nextcloud](/apps/nextcloud/)
+- [How to Self-Host Syncthing](/apps/syncthing/)
+- [How to Self-Host Seafile](/apps/seafile/)
+- [Self-Hosted Alternatives to Google Drive](/replace/google-drive/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

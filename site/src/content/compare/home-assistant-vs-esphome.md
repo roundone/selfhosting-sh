@@ -122,10 +122,10 @@ Hundreds. The ESPHome native API is lightweight. Users regularly run 50-100+ ESP
 
 ## Related
 
-- [How to Self-Host Home Assistant](/apps/home-assistant)
-- [How to Self-Host ESPHome](/apps/esphome)
-- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
-- [Home Assistant vs Homebridge](/compare/home-assistant-vs-homebridge)
-- [Best Self-Hosted Home Automation](/best/home-automation)
-- [Self-Hosted Google Home Alternatives](/replace/google-home)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Home Assistant](/apps/home-assistant/)
+- [How to Self-Host ESPHome](/apps/esphome/)
+- [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab/)
+- [Home Assistant vs Homebridge](/compare/home-assistant-vs-homebridge/)
+- [Best Self-Hosted Home Automation](/best/home-automation/)
+- [Self-Hosted Google Home Alternatives](/replace/google-home/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

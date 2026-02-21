@@ -21,7 +21,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 256 MB of free RAM (minimum)
 - 500 MB of free disk space
 - A domain name (optional, for remote access and public status pages)
@@ -54,7 +54,7 @@ volumes:
   uptime-kuma-data:
 ```
 
-That is the entire configuration. No `.env` file needed. No Postgres, no Redis, no companion services. This makes Uptime Kuma an excellent second self-hosted app after [Pi-hole](/apps/pi-hole) — it teaches you nothing can go wrong with a single-container setup.
+That is the entire configuration. No `.env` file needed. No Postgres, no Redis, no companion services. This makes Uptime Kuma an excellent second self-hosted app after [Pi-hole](/apps/pi-hole/) — it teaches you nothing can go wrong with a single-container setup.
 
 Start it:
 
@@ -141,13 +141,13 @@ Uptime Kuma can serve public status pages — useful for showing users or teamma
 4. Add monitor groups and select which monitors appear on the page.
 5. Customize the description, footer, and incident reporting.
 
-The status page is accessible at `http://your-server-ip:3001/status/your-slug`. Point a custom domain at it through your [reverse proxy](/foundations/reverse-proxy-explained) for a professional look.
+The status page is accessible at `http://your-server-ip:3001/status/your-slug`. Point a custom domain at it through your [reverse proxy](/foundations/reverse-proxy-explained/) for a professional look.
 
 ### Monitor Groups
 
 As your monitor count grows, organization matters. Create groups to categorize monitors:
 
-- **Home Lab** — internal services like [Jellyfin](/apps/jellyfin), Nextcloud, [Vaultwarden](/apps/vaultwarden)
+- **Home Lab** — internal services like [Jellyfin](/apps/jellyfin/), Nextcloud, [Vaultwarden](/apps/vaultwarden/)
 - **External** — public-facing sites and APIs
 - **Infrastructure** — DNS, reverse proxy, Docker host health
 
@@ -263,7 +263,7 @@ The `Upgrade` and `Connection` headers are critical. Without them, the dashboard
 
 After configuring your reverse proxy, enable **Settings → Reverse Proxy → Trust Proxy** inside Uptime Kuma so it logs correct client IPs.
 
-For a full reverse proxy walkthrough, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+For a full reverse proxy walkthrough, see [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -284,7 +284,7 @@ docker compose start uptime-kuma
 
 Alternatively, Uptime Kuma has a built-in **Settings → Backup** feature that exports your configuration (monitors, notifications, status pages) as a JSON file. This does not include historical uptime data, but it covers everything you need to recreate your setup quickly.
 
-For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -336,10 +336,10 @@ The only reason to look elsewhere is if you need metrics collection and time-ser
 
 ## Related
 
-- [Best Self-Hosted Monitoring Tools](/best/monitoring)
-- [Uptime Kuma vs UptimeRobot](/compare/uptime-kuma-vs-uptimerobot)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Self-Hosted Monitoring Tools](/best/monitoring/)
+- [Uptime Kuma vs UptimeRobot](/compare/uptime-kuma-vs-uptimerobot/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -18,14 +18,14 @@ affiliateDisclosure: false
 
 [Dim](https://github.com/Dusk-Labs/dim) is a self-hosted media manager that organizes and streams your movie and TV show collections through a clean web interface. With minimal setup, Dim scans your media directories, fetches metadata (posters, descriptions, ratings), and provides a browseable, searchable library you can stream from any device with a web browser.
 
-Dim is built with Rust (backend) and React (frontend), supports hardware-accelerated transcoding via FFmpeg, and aims to be a lightweight alternative to [Jellyfin](/apps/jellyfin) and [Plex](/apps/plex).
+Dim is built with Rust (backend) and React (frontend), supports hardware-accelerated transcoding via FFmpeg, and aims to be a lightweight alternative to [Jellyfin](/apps/jellyfin/) and [Plex](/apps/plex/).
 
-**Note:** Dim is a smaller project compared to Jellyfin, Plex, or Emby. Development activity has been intermittent, and there are no stable versioned releases — only `dev` and `master` branch builds. Consider Dim if you want a lightweight, minimal media server, but for a production home media setup, [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex) are more mature choices.
+**Note:** Dim is a smaller project compared to Jellyfin, Plex, or Emby. Development activity has been intermittent, and there are no stable versioned releases — only `dev` and `master` branch builds. Consider Dim if you want a lightweight, minimal media server, but for a production home media setup, [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/) are more mature choices.
 
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB RAM minimum (2 GB recommended for transcoding)
 - Media files on accessible storage
 - A domain name (optional, for remote access)
@@ -127,7 +127,7 @@ Dim supports multiple user accounts. Each user gets:
 
 Standard reverse proxy configuration. Point your proxy to port 8000. Ensure WebSocket support is enabled for real-time playback updates.
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -137,7 +137,7 @@ Back up the `config/` directory, which contains Dim's SQLite database (library m
 tar -czf dim-backup-$(date +%Y%m%d).tar.gz /opt/dim/config/
 ```
 
-Your media files are stored on the host and should be part of your regular [backup strategy](/foundations/backup-strategy).
+Your media files are stored on the host and should be part of your regular [backup strategy](/foundations/backup-strategy/).
 
 ## Troubleshooting
 
@@ -173,7 +173,7 @@ Dim is an interesting lightweight media server, but it's not ready to replace Je
 
 **Use Dim if:** You want the simplest possible media server with minimal resource usage and don't need mobile apps, DLNA, or a large plugin ecosystem.
 
-**Otherwise, choose:** [Jellyfin](/apps/jellyfin) for a fully free, feature-rich alternative. [Plex](/apps/plex) for the most polished client ecosystem. [Emby](/apps/emby) for a middle ground between the two.
+**Otherwise, choose:** [Jellyfin](/apps/jellyfin/) for a fully free, feature-rich alternative. [Plex](/apps/plex/) for the most polished client ecosystem. [Emby](/apps/emby/) for a middle ground between the two.
 
 ## FAQ
 
@@ -191,16 +191,16 @@ Yes, for direct play. Transcoding 4K requires significant CPU power or hardware 
 
 ### How does Dim compare to Jellyfin?
 
-Jellyfin is more mature, has native mobile/TV apps, supports music and books, has a plugin ecosystem, and has a larger community. Dim is lighter and simpler. For most use cases, Jellyfin is the better choice. See our [Jellyfin guide](/apps/jellyfin).
+Jellyfin is more mature, has native mobile/TV apps, supports music and books, has a plugin ecosystem, and has a larger community. Dim is lighter and simpler. For most use cases, Jellyfin is the better choice. See our [Jellyfin guide](/apps/jellyfin/).
 
 ## Related
 
-- [How to Self-Host Jellyfin](/apps/jellyfin)
-- [How to Self-Host Plex](/apps/plex)
-- [How to Self-Host Emby](/apps/emby)
-- [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
-- [Best Self-Hosted Media Servers](/best/media-servers)
-- [Self-Hosted Netflix Alternatives](/replace/netflix)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-strategy)
+- [How to Self-Host Jellyfin](/apps/jellyfin/)
+- [How to Self-Host Plex](/apps/plex/)
+- [How to Self-Host Emby](/apps/emby/)
+- [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Best Self-Hosted Media Servers](/best/media-servers/)
+- [Self-Hosted Netflix Alternatives](/replace/netflix/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-strategy/)

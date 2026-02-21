@@ -26,7 +26,7 @@ XWiki is an open-source enterprise wiki and application development platform bui
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM minimum (JVM + database + Solr indexing)
 - 5 GB of free disk space
 - A domain name (optional, for remote access)
@@ -196,7 +196,7 @@ secrets:
 
 ## Reverse Proxy
 
-Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained).
+Configure your reverse proxy to forward to port 8080. See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/).
 
 **Caddy** example:
 
@@ -227,7 +227,7 @@ The data directory contains extensions, Solr indexes, and configuration. The dat
 
 XWiki also supports export/import via XAR files (wiki archive format) from the admin panel.
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a complete approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a complete approach.
 
 ## Troubleshooting
 
@@ -271,24 +271,24 @@ XWiki is the heaviest wiki option due to the JVM. Plan resources accordingly.
 
 XWiki is the most capable self-hosted wiki if you need structured applications alongside documentation. The Application Within Minutes feature is unique — no other wiki lets you build custom database apps without leaving the platform. Real-time collaborative editing, granular permissions, and the extension marketplace make it suitable for enterprise teams.
 
-The cost is resource consumption. XWiki needs 2-4 GB of RAM at minimum — more than [Wiki.js](/apps/wikijs) (256 MB), [DokuWiki](/apps/dokuwiki) (128 MB), or [BookStack](/apps/bookstack) (256 MB). The JVM startup time is slow, and administration is more complex. If you just need a wiki, XWiki is overkill.
+The cost is resource consumption. XWiki needs 2-4 GB of RAM at minimum — more than [Wiki.js](/apps/wikijs/) (256 MB), [DokuWiki](/apps/dokuwiki/) (128 MB), or [BookStack](/apps/bookstack/) (256 MB). The JVM startup time is slow, and administration is more complex. If you just need a wiki, XWiki is overkill.
 
 **Choose XWiki if:** you need structured applications within your wiki, or you're replacing Confluence for an enterprise team.
 
-**Choose [Wiki.js](/apps/wikijs) if:** you want a modern wiki with good editors and lower resource usage.
+**Choose [Wiki.js](/apps/wikijs/) if:** you want a modern wiki with good editors and lower resource usage.
 
-**Choose [BookStack](/apps/bookstack) if:** you want organized documentation with a book-chapter-page model.
+**Choose [BookStack](/apps/bookstack/) if:** you want organized documentation with a book-chapter-page model.
 
 ## Related
 
-- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack)
-- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki)
-- [How to Self-Host Wiki.js](/apps/wikijs)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host DokuWiki](/apps/dokuwiki)
-- [How to Self-Host MediaWiki](/apps/mediawiki)
-- [Best Self-Hosted Wiki](/best/wiki)
-- [Self-Hosted Alternatives to Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
+- [Wiki.js vs BookStack](/compare/wikijs-vs-bookstack/)
+- [DokuWiki vs MediaWiki](/compare/dokuwiki-vs-mediawiki/)
+- [How to Self-Host Wiki.js](/apps/wikijs/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host DokuWiki](/apps/dokuwiki/)
+- [How to Self-Host MediaWiki](/apps/mediawiki/)
+- [Best Self-Hosted Wiki](/best/wiki/)
+- [Self-Hosted Alternatives to Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)

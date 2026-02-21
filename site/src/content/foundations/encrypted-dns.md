@@ -37,7 +37,7 @@ All three achieve the same goal — encrypting DNS traffic — but differ in how
 
 ## Prerequisites
 
-- Basic DNS understanding ([DNS Explained](/foundations/dns-explained))
+- Basic DNS understanding ([DNS Explained](/foundations/dns-explained/))
 - A self-hosted DNS server (optional — can use public resolvers)
 - A domain name with SSL certificates (for running your own encrypted DNS server)
 
@@ -148,7 +148,7 @@ https://dns.quad9.net/dns-query
 
 In Settings → Encryption settings, provide your TLS certificate and key. AdGuard Home then serves DoH on port 443 and DoT on port 853 automatically.
 
-[Full setup guide: How to Self-Host AdGuard Home](/apps/adguard-home)
+[Full setup guide: How to Self-Host AdGuard Home](/apps/adguard-home/)
 
 ### Blocky
 
@@ -164,7 +164,7 @@ upstreams:
 
 Blocky can also serve as a DoH/DoT server with TLS certificates configured in the `ports` section.
 
-[Full setup guide: How to Self-Host Blocky](/apps/blocky)
+[Full setup guide: How to Self-Host Blocky](/apps/blocky/)
 
 ### Pi-hole
 
@@ -186,7 +186,7 @@ services:
 
 Then set Pi-hole's upstream DNS to `cloudflared#5053`.
 
-[Full setup guide: How to Self-Host Pi-hole](/apps/pi-hole)
+[Full setup guide: How to Self-Host Pi-hole](/apps/pi-hole/)
 
 ### Technitium DNS
 
@@ -196,7 +196,7 @@ Configure in the web UI under Settings → DNS Server → Forwarders. Select "DN
 
 For serving encrypted DNS to clients, configure TLS certificates under Settings → DNS Server → Optional Protocols.
 
-[Full setup guide: How to Self-Host Technitium DNS](/apps/technitium)
+[Full setup guide: How to Self-Host Technitium DNS](/apps/technitium/)
 
 ## Configuring Clients
 
@@ -326,18 +326,18 @@ Firefox and Chrome enable DoH by default to Cloudflare or Google, which bypasses
 
 ## Next Steps
 
-- Set up a DNS ad blocker: [AdGuard Home](/apps/adguard-home), [Pi-hole](/apps/pi-hole), or [Blocky](/apps/blocky)
-- Configure SSL certificates: [SSL Certificates Guide](/foundations/ssl-certificates)
-- Set up remote access to your DNS server: [Remote Access Guide](/foundations/port-forwarding)
+- Set up a DNS ad blocker: [AdGuard Home](/apps/adguard-home/), [Pi-hole](/apps/pi-hole/), or [Blocky](/apps/blocky/)
+- Configure SSL certificates: [SSL Certificates Guide](/foundations/ssl-certificates/)
+- Set up remote access to your DNS server: [Remote Access Guide](/foundations/port-forwarding/)
 
 ## Related
 
-- [DNS Explained for Self-Hosting](/foundations/dns-explained)
-- [How to Self-Host AdGuard Home](/apps/adguard-home)
-- [How to Self-Host Pi-hole](/apps/pi-hole)
-- [How to Self-Host Blocky](/apps/blocky)
-- [How to Self-Host Technitium DNS](/apps/technitium)
-- [Best Self-Hosted Ad Blockers](/best/ad-blocking)
-- [Self-Hosted Alternatives to Google DNS](/replace/google-dns)
-- [Self-Hosted Alternatives to NextDNS](/replace/nextdns)
-- [SSL Certificates Guide](/foundations/ssl-certificates)
+- [DNS Explained for Self-Hosting](/foundations/dns-explained/)
+- [How to Self-Host AdGuard Home](/apps/adguard-home/)
+- [How to Self-Host Pi-hole](/apps/pi-hole/)
+- [How to Self-Host Blocky](/apps/blocky/)
+- [How to Self-Host Technitium DNS](/apps/technitium/)
+- [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
+- [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
+- [Self-Hosted Alternatives to NextDNS](/replace/nextdns/)
+- [SSL Certificates Guide](/foundations/ssl-certificates/)

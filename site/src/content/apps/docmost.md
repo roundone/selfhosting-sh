@@ -28,7 +28,7 @@ Docmost is an open-source collaborative wiki and documentation platform — a se
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free RAM (minimum)
 - 5 GB of free disk space
 - A domain name (recommended for HTTPS access)
@@ -178,7 +178,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
-[Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+[Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 
 ## Backup
 
@@ -193,7 +193,7 @@ For PostgreSQL, a database dump is more reliable than volume backup:
 docker compose exec db pg_dump -U docmost docmost > docmost_backup.sql
 ```
 
-[Backup Strategy](/foundations/backup-3-2-1-rule)
+[Backup Strategy](/foundations/backup-3-2-1-rule/)
 
 ## Troubleshooting
 
@@ -237,21 +237,21 @@ A healthy instance returns `200 OK`.
 
 Docmost is one of the most promising self-hosted wiki platforms in 2026. It delivers a Notion/Confluence-like editing experience with real-time collaboration, clean UI, and straightforward Docker deployment. The three-service stack (app + PostgreSQL + Redis) is standard and manageable.
 
-Compared to [Outline](/apps/outline), Docmost has a simpler setup — no external OIDC provider required. Built-in email/password authentication makes it accessible to teams without SSO infrastructure. Compared to [BookStack](/apps/bookstack), Docmost offers a more modern editor and real-time collaboration at the cost of slightly higher resource usage.
+Compared to [Outline](/apps/outline/), Docmost has a simpler setup — no external OIDC provider required. Built-in email/password authentication makes it accessible to teams without SSO infrastructure. Compared to [BookStack](/apps/bookstack/), Docmost offers a more modern editor and real-time collaboration at the cost of slightly higher resource usage.
 
-The main caveat: Docmost is pre-1.0 software (v0.25.x). Expect occasional rough edges. For production team use, [BookStack](/apps/bookstack) or [Wiki.js](/apps/wiki-js) are more mature. For teams willing to adopt newer software, Docmost is the most Notion-like self-hosted option available.
+The main caveat: Docmost is pre-1.0 software (v0.25.x). Expect occasional rough edges. For production team use, [BookStack](/apps/bookstack/) or [Wiki.js](/apps/wiki-js/) are more mature. For teams willing to adopt newer software, Docmost is the most Notion-like self-hosted option available.
 
 ## Related
 
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Docmost vs BookStack](/compare/docmost-vs-bookstack)
-- [Docmost vs Outline](/compare/docmost-vs-outline)
-- [Docmost vs Trilium](/compare/docmost-vs-trilium)
-- [Docmost vs Wiki.js](/compare/docmost-vs-wiki-js)
-- [Replace Notion](/replace/notion)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Docmost vs BookStack](/compare/docmost-vs-bookstack/)
+- [Docmost vs Outline](/compare/docmost-vs-outline/)
+- [Docmost vs Trilium](/compare/docmost-vs-trilium/)
+- [Docmost vs Wiki.js](/compare/docmost-vs-wiki-js/)
+- [Replace Notion](/replace/notion/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

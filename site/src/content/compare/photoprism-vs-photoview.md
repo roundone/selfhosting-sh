@@ -97,12 +97,12 @@ Photoview runs on a Raspberry Pi. PhotoPrism needs a proper server or beefy mini
 
 **Photoview wins for no-frills photo browsing.** If your photos are already organized on disk and you just want a clean web interface to browse them, Photoview is the lightest path to that goal. It respects your existing organization and doesn't try to be more than a viewer.
 
-Given Photoview's slow development pace, consider whether you need its specific read-only approach. If you want an actively maintained lightweight option, [Lychee](/apps/lychee) is also worth considering.
+Given Photoview's slow development pace, consider whether you need its specific read-only approach. If you want an actively maintained lightweight option, [Lychee](/apps/lychee/) is also worth considering.
 
 ## Frequently Asked Questions
 
 ### Can Photoview organize photos into albums?
-No. Photoview mirrors your filesystem structure. "Albums" in Photoview are your directories. If you want software-managed albums, use PhotoPrism or [Immich](/apps/immich).
+No. Photoview mirrors your filesystem structure. "Albums" in Photoview are your directories. If you want software-managed albums, use PhotoPrism or [Immich](/apps/immich/).
 
 ### Does PhotoPrism modify my original files?
 By default, no. PhotoPrism stores its index, thumbnails, and metadata separately. Your originals remain untouched in their original location. However, the import feature can move files.
@@ -112,9 +112,9 @@ Photoview, by a wide margin. PhotoPrism's TensorFlow models consume about 1 GB. 
 
 ## Related
 
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host Photoview](/apps/photoview)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs Photoview](/compare/immich-vs-photoview)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host Photoview](/apps/photoview/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs Photoview](/compare/immich-vs-photoview/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)

@@ -33,29 +33,29 @@ Self-hosted automation replaces cloud services like Zapier, Make, and IFTTT with
 
 Before setting up automation, you need:
 
-- A Linux server with Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics))
+- A Linux server with Docker and Docker Compose ([Docker Compose Basics](/foundations/docker-compose-basics/))
 - 1-2 GB of RAM (depends on the tool)
 - A domain name with HTTPS (required for webhooks and OAuth callbacks)
-- A [reverse proxy](/foundations/reverse-proxy-explained) (for HTTPS termination)
+- A [reverse proxy](/foundations/reverse-proxy-explained/) (for HTTPS termination)
 
 ## Choosing Your Automation Tool
 
 | If You Need... | Use This |
 |----------------|----------|
-| Most integrations + visual editor | [n8n](/apps/n8n) |
-| Open-source (MIT) + simple UI | [Activepieces](/apps/activepieces) |
-| IoT and smart home automation | [Node-RED](/apps/node-red) |
-| Developer scripts + internal tools | [Windmill](/apps/windmill) |
-| Simple Zapier replacement | [Activepieces](/apps/activepieces) or [n8n](/apps/n8n) |
+| Most integrations + visual editor | [n8n](/apps/n8n/) |
+| Open-source (MIT) + simple UI | [Activepieces](/apps/activepieces/) |
+| IoT and smart home automation | [Node-RED](/apps/node-red/) |
+| Developer scripts + internal tools | [Windmill](/apps/windmill/) |
+| Simple Zapier replacement | [Activepieces](/apps/activepieces/) or [n8n](/apps/n8n/) |
 
-For a detailed comparison, see [Best Self-Hosted Automation Tools](/best/automation).
+For a detailed comparison, see [Best Self-Hosted Automation Tools](/best/automation/).
 
 ### Quick Decision Tree
 
-1. **Are you replacing Zapier/Make?** → Start with [n8n](/apps/n8n)
-2. **Do you need open-source licensing?** → [Activepieces](/apps/activepieces) (MIT) or [Node-RED](/apps/node-red) (Apache 2.0)
-3. **Are you automating smart home/IoT?** → [Node-RED](/apps/node-red)
-4. **Are you a developer writing scripts?** → [Windmill](/apps/windmill)
+1. **Are you replacing Zapier/Make?** → Start with [n8n](/apps/n8n/)
+2. **Do you need open-source licensing?** → [Activepieces](/apps/activepieces/) (MIT) or [Node-RED](/apps/node-red/) (Apache 2.0)
+3. **Are you automating smart home/IoT?** → [Node-RED](/apps/node-red/)
+4. **Are you a developer writing scripts?** → [Windmill](/apps/windmill/)
 5. **Not sure?** → Start with n8n — it handles the widest range of use cases
 
 ## Building Your First Workflow
@@ -170,7 +170,7 @@ If your automation tool supports Git sync (Windmill, n8n), use it. If not, perio
 
 ### Secure Your Instance
 
-- Put your automation tool behind HTTPS ([Reverse Proxy Setup](/foundations/reverse-proxy-explained))
+- Put your automation tool behind HTTPS ([Reverse Proxy Setup](/foundations/reverse-proxy-explained/))
 - Use strong passwords for the admin account
 - Restrict network access if possible
 - Keep your automation tool updated
@@ -215,20 +215,20 @@ Extract data, transform it, load to a destination:
 
 ## Next Steps
 
-1. **Pick a tool** — see [Best Self-Hosted Automation Tools](/best/automation) for the full comparison
+1. **Pick a tool** — see [Best Self-Hosted Automation Tools](/best/automation/) for the full comparison
 2. **Deploy it** — follow the tool's setup guide
 3. **Build your first workflow** — start with something simple
 4. **Iterate** — add error handling, monitoring, and more workflows as needed
 
 ## Related
 
-- [Best Self-Hosted Automation Tools](/best/automation)
-- [How to Self-Host n8n](/apps/n8n)
-- [How to Self-Host Activepieces](/apps/activepieces)
-- [How to Self-Host Node-RED](/apps/node-red)
-- [How to Self-Host Windmill](/apps/windmill)
-- [Self-Hosted Alternatives to Zapier](/replace/zapier)
-- [Self-Hosted Alternatives to IFTTT](/replace/ifttt)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Webhook Basics](/foundations/webhook-basics)
+- [Best Self-Hosted Automation Tools](/best/automation/)
+- [How to Self-Host n8n](/apps/n8n/)
+- [How to Self-Host Activepieces](/apps/activepieces/)
+- [How to Self-Host Node-RED](/apps/node-red/)
+- [How to Self-Host Windmill](/apps/windmill/)
+- [Self-Hosted Alternatives to Zapier](/replace/zapier/)
+- [Self-Hosted Alternatives to IFTTT](/replace/ifttt/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Webhook Basics](/foundations/webhook-basics/)

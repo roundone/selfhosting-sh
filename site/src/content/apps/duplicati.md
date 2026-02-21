@@ -25,7 +25,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 1 GB of free RAM (minimum)
 - Disk space for local backup staging or a configured remote backend (S3, B2, SFTP, etc.)
 - A domain name (optional, for remote access to the web UI)
@@ -220,7 +220,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 
 Make sure you set `CLI_ARGS=--webservice-allowed-hostnames=*` in your `.env` file, otherwise Duplicati will reject requests that arrive via the reverse proxy with a hostname other than `localhost`.
 
-For other reverse proxy setups, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained).
+For other reverse proxy setups, see [Reverse Proxy Explained](/foundations/reverse-proxy-explained/).
 
 ## Backup
 
@@ -320,17 +320,17 @@ ls -la /path/to/problematic/file
 
 Duplicati is the best self-hosted backup solution for users who want a web UI, encrypted cloud backups, and broad backend support without writing scripts. The web-based setup wizard makes it accessible even if you have never configured backup software before, and AES-256 encryption is on by default.
 
-Where Duplicati falls short is performance on very large datasets. If you are backing up multiple terabytes, [BorgBackup](/apps/borgmatic) (via Borgmatic) will be significantly faster thanks to content-defined chunking and better deduplication. Borg is also more battle-tested for bare-metal disaster recovery scenarios.
+Where Duplicati falls short is performance on very large datasets. If you are backing up multiple terabytes, [BorgBackup](/apps/borgmatic/) (via Borgmatic) will be significantly faster thanks to content-defined chunking and better deduplication. Borg is also more battle-tested for bare-metal disaster recovery scenarios.
 
 Choose Duplicati if you want a GUI-driven backup tool with native support for S3, B2, Google Drive, and dozens of other cloud backends. Choose Borgmatic if you prefer CLI-driven backups, need to handle multi-terabyte datasets efficiently, or want the best deduplication ratios.
 
 ## Related
 
-- [How to Self-Host Borgmatic with Docker](/apps/borgmatic)
-- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
-- [Duplicati vs Restic](/compare/duplicati-vs-restic)
-- [Best Self-Hosted Backup Solutions](/best/backup)
-- [Replace Backblaze and CrashPlan](/replace/cloud-backup)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-strategy)
+- [How to Self-Host Borgmatic with Docker](/apps/borgmatic/)
+- [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Duplicati vs Restic](/compare/duplicati-vs-restic/)
+- [Best Self-Hosted Backup Solutions](/best/backup/)
+- [Replace Backblaze and CrashPlan](/replace/cloud-backup/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-strategy/)

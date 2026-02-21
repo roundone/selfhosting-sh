@@ -148,17 +148,17 @@ Yes. Send's web UI is responsive and works on all mobile browsers. There's no na
 Files are temporarily unavailable until the server comes back up. No data is lost — files persist on disk. This is the trade-off of self-hosting vs. WeTransfer's managed infrastructure.
 
 ### Can I use Send for team file sharing?
-Yes, but Send is designed for one-off transfers, not permanent file storage. For team file sharing with persistent access, consider [Nextcloud](/apps/nextcloud) or [Seafile](/apps/seafile).
+Yes, but Send is designed for one-off transfers, not permanent file storage. For team file sharing with persistent access, consider [Nextcloud](/apps/nextcloud/) or [Seafile](/apps/seafile/).
 
 ### How much disk space does Send need?
 Depends on your upload limits and expiry settings. With a 5 GB max file size and 24-hour default expiry, you'll rarely need more than 20-50 GB. Set `MAX_FILE_SIZE` and `MAX_EXPIRE_SECONDS` to control this.
 
 ## Related
 
-- [How to Self-Host Send](/apps/send)
-- [PairDrop vs Send](/compare/pairdrop-vs-send)
-- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer)
-- [Self-Hosted Alternatives to AirDrop](/replace/airdrop)
-- [Best Self-Hosted File Sharing Tools](/best/file-sharing)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host Send](/apps/send/)
+- [PairDrop vs Send](/compare/pairdrop-vs-send/)
+- [Self-Hosted Alternatives to WeTransfer](/replace/wetransfer/)
+- [Self-Hosted Alternatives to AirDrop](/replace/airdrop/)
+- [Best Self-Hosted File Sharing Tools](/best/file-sharing/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

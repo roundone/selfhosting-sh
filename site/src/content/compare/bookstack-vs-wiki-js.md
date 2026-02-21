@@ -100,10 +100,10 @@ Wiki.js wins for technical teams that treat documentation like code — Git sync
 
 ## Related
 
-- [How to Self-Host BookStack](/apps/bookstack)
-- [How to Self-Host Wiki.js](/apps/wiki-js)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [Wiki.js vs Outline](/compare/wiki-js-vs-outline)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Confluence](/replace/confluence)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [How to Self-Host Wiki.js](/apps/wiki-js/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [Wiki.js vs Outline](/compare/wiki-js-vs-outline/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Confluence](/replace/confluence/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -17,12 +17,12 @@ affiliateDisclosure: false
 
 RAID (Redundant Array of Independent Disks) combines multiple drives into a single logical volume for redundancy, performance, or both. If a drive fails in a RAID array, your data survives — you replace the dead drive and the array rebuilds.
 
-**RAID is not a backup.** RAID protects against hardware failure (a drive dying). It does NOT protect against accidental deletion, ransomware, file corruption, fire, theft, or software bugs. You need both RAID and backups. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule).
+**RAID is not a backup.** RAID protects against hardware failure (a drive dying). It does NOT protect against accidental deletion, ransomware, file corruption, fire, theft, or software bugs. You need both RAID and backups. See [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/).
 
 ## Prerequisites
 
 - Multiple drives (2+ for most RAID levels)
-- Basic Linux knowledge ([Linux Basics](/foundations/linux-basics-self-hosting))
+- Basic Linux knowledge ([Linux Basics](/foundations/linux-basics-self-hosting/))
 - Understanding of your storage needs
 
 ## RAID Levels Compared
@@ -283,15 +283,15 @@ Monthly. Scrubbing reads all data and verifies integrity. For ZFS, it also fixes
 
 ## Next Steps
 
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule) — RAID is not a backup
-- [Home Server Cost Breakdown](/foundations/home-server-cost) — hardware costs including drives
-- [Disaster Recovery](/foundations/disaster-recovery) — recover when things go wrong
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/) — RAID is not a backup
+- [Home Server Cost Breakdown](/foundations/home-server-cost/) — hardware costs including drives
+- [Disaster Recovery](/foundations/disaster-recovery/) — recover when things go wrong
 
 ## Related
 
-- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
-- [Disaster Recovery](/foundations/disaster-recovery)
-- [Home Server Cost Breakdown](/foundations/home-server-cost)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule/)
+- [Disaster Recovery](/foundations/disaster-recovery/)
+- [Home Server Cost Breakdown](/foundations/home-server-cost/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

@@ -92,14 +92,14 @@ Outline is a team tool. TriliumNext is a personal tool. This is the clearest dif
 
 If you're setting up a shared knowledge base for a team or organization, Outline delivers a Notion-like experience self-hosted. If you're building a personal wiki with deep note interconnections, TriliumNext is purpose-built for that workflow.
 
-For a middle ground that works for both individuals and small teams, consider [BookStack](/apps/bookstack) — simpler than Outline, more shareable than TriliumNext.
+For a middle ground that works for both individuals and small teams, consider [BookStack](/apps/bookstack/) — simpler than Outline, more shareable than TriliumNext.
 
 ## Related
 
-- [How to Self-Host Outline](/apps/outline)
-- [How to Self-Host TriliumNext](/apps/trilium)
-- [BookStack vs Outline](/compare/bookstack-vs-outline)
-- [BookStack vs Trilium](/compare/bookstack-vs-trilium)
-- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Notion](/replace/notion)
+- [How to Self-Host Outline](/apps/outline/)
+- [How to Self-Host TriliumNext](/apps/trilium/)
+- [BookStack vs Outline](/compare/bookstack-vs-outline/)
+- [BookStack vs Trilium](/compare/bookstack-vs-trilium/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Notion](/replace/notion/)

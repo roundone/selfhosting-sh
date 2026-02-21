@@ -27,7 +27,7 @@ affiliateDisclosure: false
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 4 GB of RAM minimum (AI features are memory-hungry)
 - At least 4 GB of swap space (required for indexing RAW files and panoramas)
 - Storage for your photo library plus ~50% extra for thumbnails and cache
@@ -278,7 +278,7 @@ Supported ranges: 0, 33, 50-99, 500-600, 900-1250, 2000-2100. Ensure file permis
 
 ## Reverse Proxy
 
-With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
+With [Nginx Proxy Manager](/apps/nginx-proxy-manager/):
 
 1. Add a proxy host for `photos.yourdomain.com` → `http://photoprism:2342`
 2. Enable SSL
@@ -286,7 +286,7 @@ With [Nginx Proxy Manager](/apps/nginx-proxy-manager):
 4. Update `PHOTOPRISM_SITE_URL` to `https://photos.yourdomain.com/`
 5. Set `PHOTOPRISM_DISABLE_TLS: "true"` to avoid double TLS termination
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 ## Backup
 
@@ -302,7 +302,7 @@ docker run --rm -v photoprism-storage:/storage -v $(pwd):/backup alpine tar czf 
 docker compose start
 ```
 
-Your originals are the most critical data — back them up separately with your regular backup strategy. The storage volume contains thumbnails (regenerable), sidecar files, and the built-in backups. See [Backup Strategy](/foundations/backup-3-2-1-rule).
+Your originals are the most critical data — back them up separately with your regular backup strategy. The storage volume contains thumbnails (regenerable), sidecar files, and the built-in backups. See [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -378,7 +378,7 @@ The Pi 4 with 4 GB RAM can run PhotoPrism, but indexing is very slow and face re
 
 ### How does PhotoPrism compare to Immich?
 
-[Immich](/apps/immich) is designed as a mobile-first Google Photos replacement with native apps and automatic backup. PhotoPrism focuses on indexing and managing an existing library. Use Immich if mobile auto-upload is critical. Use PhotoPrism if you have an existing library you want to organize with AI. See our [Immich vs PhotoPrism comparison](/compare/immich-vs-photoprism).
+[Immich](/apps/immich/) is designed as a mobile-first Google Photos replacement with native apps and automatic backup. PhotoPrism focuses on indexing and managing an existing library. Use Immich if mobile auto-upload is critical. Use PhotoPrism if you have an existing library you want to organize with AI. See our [Immich vs PhotoPrism comparison](/compare/immich-vs-photoprism/).
 
 ### Can PhotoPrism use SQLite instead of MariaDB?
 
@@ -386,18 +386,18 @@ Yes. Set `PHOTOPRISM_DATABASE_DRIVER: "sqlite"` and remove the MariaDB service. 
 
 ## Verdict
 
-PhotoPrism is the best self-hosted photo manager for users with existing libraries who want AI-powered organization without uploading to the cloud. Its facial recognition, location mapping, and smart search are genuinely useful and improve as the library grows. The trade-off is higher resource usage — TensorFlow needs RAM, and initial indexing is slow. For a mobile-first experience with auto-backup from phones, [Immich](/apps/immich) is the better choice. For pure photo organizing with AI, PhotoPrism is excellent.
+PhotoPrism is the best self-hosted photo manager for users with existing libraries who want AI-powered organization without uploading to the cloud. Its facial recognition, location mapping, and smart search are genuinely useful and improve as the library grows. The trade-off is higher resource usage — TensorFlow needs RAM, and initial indexing is slow. For a mobile-first experience with auto-backup from phones, [Immich](/apps/immich/) is the better choice. For pure photo organizing with AI, PhotoPrism is excellent.
 
 ## Related
 
-- [How to Self-Host Immich](/apps/immich)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [PhotoPrism vs Lychee](/compare/photoprism-vs-lychee)
-- [PhotoPrism vs PhotoView](/compare/photoprism-vs-photoview)
-- [PhotoPrism vs Google Photos](/compare/photoprism-vs-google-photos)
-- [Replace Google Photos](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
-- [Backup Strategy](/foundations/backup-3-2-1-rule)
-- [Docker Volumes and Storage](/foundations/docker-volumes)
+- [How to Self-Host Immich](/apps/immich/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [PhotoPrism vs Lychee](/compare/photoprism-vs-lychee/)
+- [PhotoPrism vs PhotoView](/compare/photoprism-vs-photoview/)
+- [PhotoPrism vs Google Photos](/compare/photoprism-vs-google-photos/)
+- [Replace Google Photos](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Docker Volumes and Storage](/foundations/docker-volumes/)

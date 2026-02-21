@@ -220,21 +220,21 @@ Power consumption is the hidden cost of a home server. Here's what each pick cos
 ## What Can You Run?
 
 ### On an N100/N150 (4 cores, 16 GB RAM):
-- [Pi-hole](/apps/pi-hole) or [AdGuard Home](/apps/adguard-home) — DNS ad blocking
-- [Nextcloud](/apps/nextcloud) — file sync and storage
-- [Immich](/apps/immich) — photo management (ML features will be slow but functional)
-- [Jellyfin](/apps/jellyfin) or [Plex](/apps/plex) — media server with 1–2 hardware transcodes
-- [Home Assistant](/apps/home-assistant) — home automation
-- [Vaultwarden](/apps/vaultwarden) — password management
-- [Uptime Kuma](/apps/uptime-kuma) — monitoring
-- [Nginx Proxy Manager](/apps/nginx-proxy-manager) — reverse proxy
+- [Pi-hole](/apps/pi-hole/) or [AdGuard Home](/apps/adguard-home/) — DNS ad blocking
+- [Nextcloud](/apps/nextcloud/) — file sync and storage
+- [Immich](/apps/immich/) — photo management (ML features will be slow but functional)
+- [Jellyfin](/apps/jellyfin/) or [Plex](/apps/plex/) — media server with 1–2 hardware transcodes
+- [Home Assistant](/apps/home-assistant/) — home automation
+- [Vaultwarden](/apps/vaultwarden/) — password management
+- [Uptime Kuma](/apps/uptime-kuma/) — monitoring
+- [Nginx Proxy Manager](/apps/nginx-proxy-manager/) — reverse proxy
 - All of the above simultaneously — they'll use about 8–12 GB RAM combined
 
 ### On an N305 (8 cores, 16 GB RAM):
 - Everything above, plus:
 - Proxmox with 2–3 lightweight VMs
 - Multiple simultaneous Plex 4K→1080p transcodes
-- [Immich](/apps/immich) with faster ML processing
+- [Immich](/apps/immich/) with faster ML processing
 - Heavier databases (PostgreSQL with large datasets)
 - CI/CD runners (Gitea Actions, Drone)
 
@@ -257,17 +257,17 @@ No. ECC RAM prevents bit-flip errors, which matter for enterprise file servers a
 Yes, all of them. The N100/N150 handles 1–2 lightweight VMs well. The N305 and Ryzen options handle more. For serious virtualization, get the EQ12 Pro or SER5 Max and upgrade RAM to 32 GB.
 
 ### Should I get a mini PC or build a NAS?
-Different tools for different jobs. A mini PC is a general-purpose server — run Docker containers, VMs, and services. A NAS is optimized for storage — multiple drive bays, RAID, data redundancy. Many self-hosters run both: a mini PC for compute and a NAS for storage. See our [Best NAS for Home Server](/hardware/best-nas) guide.
+Different tools for different jobs. A mini PC is a general-purpose server — run Docker containers, VMs, and services. A NAS is optimized for storage — multiple drive bays, RAID, data redundancy. Many self-hosters run both: a mini PC for compute and a NAS for storage. See our [Best NAS for Home Server](/hardware/best-nas/) guide.
 
 ### How do I add more storage to a mini PC?
-Most mini PCs have one M.2 slot and sometimes a 2.5" SATA bay. For bulk storage, connect a USB 3.0 external drive or a [NAS](/hardware/best-nas) over the network. Don't try to turn a mini PC into a storage server — that's what NAS devices are for.
+Most mini PCs have one M.2 slot and sometimes a 2.5" SATA bay. For bulk storage, connect a USB 3.0 external drive or a [NAS](/hardware/best-nas/) over the network. Don't try to turn a mini PC into a storage server — that's what NAS devices are for.
 
 ## Related
 
-- [Intel N100 Mini PC: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc)
-- [Best NAS for Home Server](/hardware/best-nas)
-- [Raspberry Pi vs Mini PC for Self-Hosting](/hardware/raspberry-pi-vs-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Intel N100 Mini PC: The Self-Hoster's Best Friend](/hardware/intel-n100-mini-pc/)
+- [Best NAS for Home Server](/hardware/best-nas/)
+- [Raspberry Pi vs Mini PC for Self-Hosting](/hardware/raspberry-pi-vs-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Dell OptiPlex as a Home Server](/hardware/used-dell-optiplex/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

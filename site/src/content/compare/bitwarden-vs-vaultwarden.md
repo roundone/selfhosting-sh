@@ -152,10 +152,10 @@ Bitwarden offers a free cloud plan with basic features. If you don't need organi
 
 ## Related
 
-- [How to Self-Host Vaultwarden](/apps/vaultwarden)
-- [Best Self-Hosted Password Managers](/best/password-management)
-- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
-- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb)
-- [Self-Hosted Alternatives to LastPass](/replace/lastpass)
-- [Self-Hosted Alternatives to 1Password](/replace/1password)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Vaultwarden](/apps/vaultwarden/)
+- [Best Self-Hosted Password Managers](/best/password-management/)
+- [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt/)
+- [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
+- [Self-Hosted Alternatives to 1Password](/replace/1password/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -111,7 +111,7 @@ If your server has an M.2 slot or a SATA port, use it. This is the correct answe
 | 512 GB NVMe SSD | $30-40 | More room for Docker images and volumes |
 | 1 TB NVMe SSD | $50-65 | If you want OS + Docker + small data on one drive |
 
-A 256 GB SSD is the sweet spot for a boot drive. Plenty of space for the OS, Docker images, container volumes, and logs. [See our SSD buying guide](/hardware/best-ssd-home-server) for specific model recommendations.
+A 256 GB SSD is the sweet spot for a boot drive. Plenty of space for the OS, Docker images, container volumes, and logs. [See our SSD buying guide](/hardware/best-ssd-home-server/) for specific model recommendations.
 
 ### External USB SSD (If No Internal Slot)
 
@@ -123,7 +123,7 @@ Some mini PCs and Raspberry Pis lack internal SATA ports or M.2 slots. In that c
 
 You get real TRIM support (via UAS protocol), real SMART monitoring, real wear leveling, and 30-50x better random write performance than a flash drive. The USB 3.0 bus (5 Gbps) bottlenecks sequential speeds at ~400 MB/s, but that's irrelevant for random I/O -- the SSD controller handles that internally.
 
-For Raspberry Pi users, this is the recommended boot setup. The Pi 4 and Pi 5 both support USB boot natively. [See our Raspberry Pi home server guide](/hardware/raspberry-pi-home-server) for details.
+For Raspberry Pi users, this is the recommended boot setup. The Pi 4 and Pi 5 both support USB boot natively. [See our Raspberry Pi home server guide](/hardware/raspberry-pi-home-server/) for details.
 
 ### Industrial USB Flash Drives (Last Resort)
 
@@ -333,15 +333,15 @@ Almost. The SSD controller, NAND, and firmware are identical -- you get the same
 
 ### Can I use a microSD card instead of USB?
 
-No. MicroSD cards have the same problems as USB flash drives -- low endurance, no TRIM, no SMART, poor random write performance. They're even worse in some cases because microSD controllers are designed for cameras and phones, not 24/7 server workloads. The Raspberry Pi community learned this the hard way -- [boot from USB SSD](/hardware/raspberry-pi-home-server) instead.
+No. MicroSD cards have the same problems as USB flash drives -- low endurance, no TRIM, no SMART, poor random write performance. They're even worse in some cases because microSD controllers are designed for cameras and phones, not 24/7 server workloads. The Raspberry Pi community learned this the hard way -- [boot from USB SSD](/hardware/raspberry-pi-home-server/) instead.
 
 ## Related
 
-- [Best SSDs for Home Servers](/hardware/best-ssd-home-server)
-- [SSD Endurance and TBW Explained](/hardware/ssd-endurance-tbw)
-- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server)
-- [Best Mini PCs for Home Servers](/hardware/best-mini-pc)
-- [Home Server Power Consumption Guide](/hardware/power-consumption-guide)
-- [Raspberry Pi Home Server Guide](/hardware/raspberry-pi-home-server)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide)
+- [Best SSDs for Home Servers](/hardware/best-ssd-home-server/)
+- [SSD Endurance and TBW Explained](/hardware/ssd-endurance-tbw/)
+- [HDD vs SSD for Home Servers](/hardware/hdd-vs-ssd-home-server/)
+- [Best Mini PCs for Home Servers](/hardware/best-mini-pc/)
+- [Home Server Power Consumption Guide](/hardware/power-consumption-guide/)
+- [Raspberry Pi Home Server Guide](/hardware/raspberry-pi-home-server/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Proxmox Hardware Guide](/hardware/proxmox-hardware-guide/)

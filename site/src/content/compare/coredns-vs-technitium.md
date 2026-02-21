@@ -118,7 +118,7 @@ Not natively in the same way Technitium or Pi-hole do. You can use the `hosts` p
 
 ### Is Technitium a Pi-hole replacement?
 
-Yes, and then some. Technitium includes everything Pi-hole does (DNS sinkhole with blocklists) plus authoritative DNS hosting, DHCP, encrypted DNS protocols, and doesn't require a separate web server. See our [Technitium vs Unbound](/compare/technitium-vs-unbound) comparison for more.
+Yes, and then some. Technitium includes everything Pi-hole does (DNS sinkhole with blocklists) plus authoritative DNS hosting, DHCP, encrypted DNS protocols, and doesn't require a separate web server. See our [Technitium vs Unbound](/compare/technitium-vs-unbound/) comparison for more.
 
 ### Does CoreDNS support DNS-over-HTTPS?
 
@@ -126,10 +126,10 @@ Yes, through plugins, but it requires more configuration than Technitium's built
 
 ## Related
 
-- [Technitium vs Unbound](/compare/technitium-vs-unbound)
-- [Unbound vs CoreDNS](/compare/unbound-vs-coredns)
-- [Pi-hole vs AdGuard Home](/compare/pihole-vs-adguard-dns)
-- [Blocky vs Pi-hole](/compare/blocky-vs-pihole)
-- [PowerDNS vs CoreDNS](/compare/powerdns-vs-coredns)
-- [Best Self-Hosted DNS](/best/dns-networking)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [Technitium vs Unbound](/compare/technitium-vs-unbound/)
+- [Unbound vs CoreDNS](/compare/unbound-vs-coredns/)
+- [Pi-hole vs AdGuard Home](/compare/pihole-vs-adguard-dns/)
+- [Blocky vs Pi-hole](/compare/blocky-vs-pihole/)
+- [PowerDNS vs CoreDNS](/compare/powerdns-vs-coredns/)
+- [Best Self-Hosted DNS](/best/dns-networking/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

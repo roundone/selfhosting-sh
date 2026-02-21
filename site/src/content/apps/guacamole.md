@@ -30,7 +30,7 @@ Apache Guacamole is a clientless remote desktop gateway. It supports RDP, VNC, S
 ## Prerequisites
 
 - A Linux server (Ubuntu 22.04+ recommended)
-- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics))
+- Docker and Docker Compose installed ([guide](/foundations/docker-compose-basics/))
 - 2 GB of free disk space
 - 1 GB of RAM (minimum)
 - A domain name (recommended for HTTPS access)
@@ -205,7 +205,7 @@ When behind a reverse proxy, add:
       REMOTE_IP_VALVE_ENABLED: "true"
 ```
 
-For [Nginx Proxy Manager](/apps/nginx-proxy-manager), enable the "WebSockets Support" toggle on the proxy host.
+For [Nginx Proxy Manager](/apps/nginx-proxy-manager/), enable the "WebSockets Support" toggle on the proxy host.
 
 For Nginx manually, add to the location block:
 
@@ -216,7 +216,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection $http_connection;
 ```
 
-See [Reverse Proxy Setup](/foundations/reverse-proxy-explained) for details.
+See [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) for details.
 
 ## Backup
 
@@ -236,7 +236,7 @@ tar czf guacamole-data-$(date +%Y%m%d).tar.gz \
 docker compose start
 ```
 
-See [Backup Strategy](/foundations/backup-3-2-1-rule) for a comprehensive approach.
+See [Backup Strategy](/foundations/backup-3-2-1-rule/) for a comprehensive approach.
 
 ## Troubleshooting
 
@@ -288,9 +288,9 @@ docker compose exec postgres psql -U guacamole_user guacamole_db
 
 ## Verdict
 
-Apache Guacamole is the definitive self-hosted remote access gateway. Nothing else matches its protocol support (RDP, VNC, SSH, telnet, Kubernetes) delivered entirely through a browser with zero client installation. The setup is more involved than [RustDesk](/apps/rustdesk) — you need a database and three containers — but the payoff is a centralized, auditable gateway to all your remote machines.
+Apache Guacamole is the definitive self-hosted remote access gateway. Nothing else matches its protocol support (RDP, VNC, SSH, telnet, Kubernetes) delivered entirely through a browser with zero client installation. The setup is more involved than [RustDesk](/apps/rustdesk/) — you need a database and three containers — but the payoff is a centralized, auditable gateway to all your remote machines.
 
-Use Guacamole when you need browser-based access to multiple machines. Use [RustDesk](/apps/rustdesk) when you need peer-to-peer remote desktop with a native client.
+Use Guacamole when you need browser-based access to multiple machines. Use [RustDesk](/apps/rustdesk/) when you need peer-to-peer remote desktop with a native client.
 
 ## FAQ
 
@@ -308,16 +308,16 @@ It depends on the protocol and server resources. Each RDP session uses 50-100 MB
 
 ### Is Guacamole secure enough for internet exposure?
 
-With HTTPS, strong passwords, and TOTP enabled, yes. For extra security, put it behind [Authelia](/apps/authelia) or restrict access via a VPN like [Tailscale](/apps/tailscale) or [WireGuard](/apps/wireguard).
+With HTTPS, strong passwords, and TOTP enabled, yes. For extra security, put it behind [Authelia](/apps/authelia/) or restrict access via a VPN like [Tailscale](/apps/tailscale/) or [WireGuard](/apps/wireguard/).
 
 ## Related
 
-- [How to Self-Host RustDesk](/apps/rustdesk)
-- [Guacamole vs RustDesk](/compare/guacamole-vs-rustdesk)
-- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
-- [Best Self-Hosted VPN Solutions](/best/vpn)
-- [Tailscale Setup Guide](/apps/tailscale)
-- [WireGuard Docker Setup](/apps/wireguard)
-- [Authelia SSO Setup](/apps/authelia)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Reverse Proxy Setup](/foundations/reverse-proxy-explained)
+- [How to Self-Host RustDesk](/apps/rustdesk/)
+- [Guacamole vs RustDesk](/compare/guacamole-vs-rustdesk/)
+- [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer/)
+- [Best Self-Hosted VPN Solutions](/best/vpn/)
+- [Tailscale Setup Guide](/apps/tailscale/)
+- [WireGuard Docker Setup](/apps/wireguard/)
+- [Authelia SSO Setup](/apps/authelia/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

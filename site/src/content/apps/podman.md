@@ -327,7 +327,7 @@ podman volume inspect myvolume --format '{{.Mountpoint}}'
 tar -czf myvolume-backup.tar.gz -C $(podman volume inspect myvolume --format '{{.Mountpoint}}') .
 ```
 
-For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3-2-1-rule).
+For a comprehensive backup approach, see [Backup Strategy](/foundations/backup-3-2-1-rule/).
 
 ## Troubleshooting
 
@@ -424,12 +424,12 @@ Yes, but you need to enable the Podman socket and point Portainer to it. Set `DO
 
 ## Related
 
-- [Best Docker Management Tools](/best/docker-management)
-- [How to Self-Host Portainer with Docker](/apps/portainer)
-- [How to Self-Host Dockge with Docker](/apps/dockge)
-- [Portainer vs Dockge](/compare/portainer-vs-dockge)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
-- [Docker Networking](/foundations/docker-networking)
-- [Docker Volumes](/foundations/docker-volumes)
-- [Docker Security](/foundations/docker-security)
-- [Getting Started with Self-Hosting](/foundations/getting-started)
+- [Best Docker Management Tools](/best/docker-management/)
+- [How to Self-Host Portainer with Docker](/apps/portainer/)
+- [How to Self-Host Dockge with Docker](/apps/dockge/)
+- [Portainer vs Dockge](/compare/portainer-vs-dockge/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Docker Networking](/foundations/docker-networking/)
+- [Docker Volumes](/foundations/docker-volumes/)
+- [Docker Security](/foundations/docker-security/)
+- [Getting Started with Self-Hosting](/foundations/getting-started/)

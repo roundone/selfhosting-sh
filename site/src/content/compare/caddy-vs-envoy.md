@@ -130,10 +130,10 @@ Yes, but as a passthrough proxy rather than with Envoy's native gRPC-specific fe
 
 ## Related
 
-- [How to Self-Host Caddy with Docker](/apps/caddy)
-- [How to Self-Host Envoy with Docker](/apps/envoy)
-- [Envoy vs Traefik](/compare/envoy-vs-traefik)
-- [Caddy vs Nginx](/compare/caddy-vs-nginx)
-- [Traefik vs Caddy](/compare/traefik-vs-caddy)
-- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy)
-- [Reverse Proxy Explained](/foundations/reverse-proxy-explained)
+- [How to Self-Host Caddy with Docker](/apps/caddy/)
+- [How to Self-Host Envoy with Docker](/apps/envoy/)
+- [Envoy vs Traefik](/compare/envoy-vs-traefik/)
+- [Caddy vs Nginx](/compare/caddy-vs-nginx/)
+- [Traefik vs Caddy](/compare/traefik-vs-caddy/)
+- [Best Self-Hosted Reverse Proxies](/best/reverse-proxy/)
+- [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

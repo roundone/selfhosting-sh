@@ -103,10 +103,10 @@ Most people who just want "notes that sync" should start with Joplin. People who
 
 ## Related
 
-- [How to Self-Host Trilium Notes](/apps/trilium)
-- [How to Self-Host Joplin Server](/apps/joplin-server)
-- [How to Self-Host BookStack](/apps/bookstack)
-- [Best Self-Hosted Note Taking](/best/note-taking)
-- [Replace Evernote](/replace/evernote)
-- [Replace OneNote](/replace/onenote)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host Trilium Notes](/apps/trilium/)
+- [How to Self-Host Joplin Server](/apps/joplin-server/)
+- [How to Self-Host BookStack](/apps/bookstack/)
+- [Best Self-Hosted Note Taking](/best/note-taking/)
+- [Replace Evernote](/replace/evernote/)
+- [Replace OneNote](/replace/onenote/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)

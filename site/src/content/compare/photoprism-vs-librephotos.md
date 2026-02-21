@@ -116,7 +116,7 @@ PhotoPrism has a significantly larger community, better documentation, and a sus
 
 LibrePhotos is a decent project with an MIT license (more permissive than PhotoPrism's AGPL), but slowing development and a smaller community make it harder to recommend for new deployments. If LibrePhotos' development picks back up, this comparison could change — but today, PhotoPrism is the stronger choice.
 
-For a full Google Photos replacement with mobile upload and native apps, skip both and use [Immich](/apps/immich). Both PhotoPrism and LibrePhotos are photo library browsers, not mobile-first photo management platforms.
+For a full Google Photos replacement with mobile upload and native apps, skip both and use [Immich](/apps/immich/). Both PhotoPrism and LibrePhotos are photo library browsers, not mobile-first photo management platforms.
 
 ## FAQ
 
@@ -142,11 +142,11 @@ As of early 2026, LibrePhotos receives occasional updates but development veloci
 
 ## Related
 
-- [How to Self-Host PhotoPrism](/apps/photoprism)
-- [How to Self-Host LibrePhotos](/apps/librephotos)
-- [How to Self-Host Immich](/apps/immich)
-- [Immich vs PhotoPrism](/compare/immich-vs-photoprism)
-- [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
-- [Best Self-Hosted Photo Management](/best/photo-management)
-- [Self-Hosted Google Photos Alternatives](/replace/google-photos)
-- [Docker Compose Basics](/foundations/docker-compose-basics)
+- [How to Self-Host PhotoPrism](/apps/photoprism/)
+- [How to Self-Host LibrePhotos](/apps/librephotos/)
+- [How to Self-Host Immich](/apps/immich/)
+- [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Immich vs LibrePhotos](/compare/immich-vs-librephotos/)
+- [Best Self-Hosted Photo Management](/best/photo-management/)
+- [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
+- [Docker Compose Basics](/foundations/docker-compose-basics/)
