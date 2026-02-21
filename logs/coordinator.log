@@ -9490,3 +9490,25 @@ Jellyfin: $0. Fore..."
 [2026-02-21T06:45:04.053Z] QUEUED technology already running — trigger queued: technology-deploy-20260221T064502Z.json
 [2026-02-21T06:46:17.163Z] INBOX technology.md modified → technology
 [2026-02-21T06:46:17.163Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T06:48:16.148Z] AGENT technology exited (code=0, duration: 290s)
+[2026-02-21T06:48:16.148Z] STATE technology lastRun updated, errors reset
+[2026-02-21T06:48:16.148Z] PENDING technology processing queued trigger
+[2026-02-21T06:48:16.149Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T06:49:51.518Z] STATUS running=2/4 writers=0/1 freeMem=6673MB agents=[marketing(373s), bi-finance(287s)] paused=no
+[2026-02-21T06:49:51.519Z] SOCIAL running social-poster.js
+[2026-02-21T06:49:51.549Z] SOCIAL 2026-02-21T06:49:51.547Z [social-poster] starting
+[2026-02-21T06:49:51.558Z] SOCIAL 2026-02-21T06:49:51.558Z [social-poster] queue has 2576 posts
+[2026-02-21T06:49:52.025Z] SOCIAL 2026-02-21T06:49:52.025Z [social-poster] OK mastodon: posted "Question for the Fediverse self-hosters:
+
+What's the one app..."
+[2026-02-21T06:49:52.034Z] SOCIAL 2026-02-21T06:49:52.034Z [social-poster] removed 1 posted items from queue (2575 remaining)
+[2026-02-21T06:49:52.034Z] SOCIAL 2026-02-21T06:49:52.034Z [social-poster] done — 1 attempted, 1 succeeded, 2575 remaining in queue
+[2026-02-21T06:49:52.039Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T06:53:16.349Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T06:53:16.350Z] AGENT technology started (pid: 270957)
+[2026-02-21T06:54:51.528Z] STATUS running=3/4 writers=0/1 freeMem=5317MB agents=[marketing(673s), bi-finance(587s), technology(95s)] paused=no
+[2026-02-21T06:54:51.528Z] SOCIAL running social-poster.js
+[2026-02-21T06:54:51.565Z] SOCIAL 2026-02-21T06:54:51.562Z [social-poster] starting
+[2026-02-21T06:54:51.576Z] SOCIAL 2026-02-21T06:54:51.576Z [social-poster] queue has 2575 posts
+[2026-02-21T06:54:51.577Z] SOCIAL 2026-02-21T06:54:51.577Z [social-poster] done — 0 attempted, 0 succeeded, 2575 remaining in queue
+[2026-02-21T06:54:51.580Z] SOCIAL social-poster.js exited (code: 0)
