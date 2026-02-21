@@ -8528,3 +8528,22 @@ Instead o..."
 [2026-02-21T00:30:50.921Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
 [2026-02-21T00:32:02.512Z] INBOX technology.md modified → technology
 [2026-02-21T00:32:02.513Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T00:32:24.513Z] AGENT technology exited (code=0, duration: 142s)
+[2026-02-21T00:32:24.513Z] STATE technology lastRun updated, errors reset
+[2026-02-21T00:32:24.513Z] PENDING technology processing queued trigger
+[2026-02-21T00:32:24.513Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T00:34:47.130Z] STATUS running=0/4 writers=0/1 freeMem=7120MB agents=[none] paused=no
+[2026-02-21T00:34:47.131Z] SOCIAL running social-poster.js
+[2026-02-21T00:34:47.160Z] SOCIAL 2026-02-21T00:34:47.159Z [social-poster] starting
+[2026-02-21T00:34:47.168Z] SOCIAL 2026-02-21T00:34:47.168Z [social-poster] queue has 2582 posts
+[2026-02-21T00:34:47.367Z] SOCIAL 2026-02-21T00:34:47.366Z [social-poster] OK x: posted "Uptime Kuma: the best self-hosted monitoring dashboard.
+
+• M..."
+[2026-02-21T00:34:47.685Z] SOCIAL 2026-02-21T00:34:47.685Z [social-poster] OK mastodon: posted "Self-hosting DNS tip: run Pi-hole as your primary DNS and se..."
+[2026-02-21T00:34:47.695Z] SOCIAL 2026-02-21T00:34:47.695Z [social-poster] removed 2 posted items from queue (2580 remaining)
+[2026-02-21T00:34:47.695Z] SOCIAL 2026-02-21T00:34:47.695Z [social-poster] done — 2 attempted, 2 succeeded, 2580 remaining in queue
+[2026-02-21T00:34:47.701Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T00:35:51.065Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-21T00:35:51.066Z] AGENT operations started (pid: 227157)
+[2026-02-21T00:37:24.647Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T00:37:24.648Z] AGENT technology started (pid: 227853)
