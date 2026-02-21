@@ -12,7 +12,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-21T18:43:08.780Z",
+      "lastRun": "2026-02-21T18:54:40.159Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -77,11 +77,11 @@
   "lastReleasesCheck": "2026-02-21T18:24:59.595Z",
   "lastArchiveCleanup": "2026-02-21T18:24:59.598Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T18:49:59.887Z",
+  "lastSocialPosterRun": "2026-02-21T18:59:59.928Z",
   "running": {
     "marketing": {
-      "pid": 341570,
-      "startTime": "2026-02-21T18:48:08.978Z",
+      "pid": 342491,
+      "startTime": "2026-02-21T18:59:40.361Z",
       "trigger": "unknown"
     }
   }

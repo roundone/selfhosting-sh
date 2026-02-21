@@ -11450,3 +11450,23 @@ Yes, Traefi..."
 [2026-02-21T18:50:00.190Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T18:53:40.568Z] INBOX marketing.md modified → marketing
 [2026-02-21T18:53:40.568Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T18:54:40.159Z] AGENT marketing exited (code=0, duration: 391s)
+[2026-02-21T18:54:40.159Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T18:54:40.159Z] PENDING marketing processing queued trigger
+[2026-02-21T18:54:40.159Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T18:54:59.907Z] STATUS running=0/4 writers=0/1 freeMem=7041MB agents=[none] paused=no
+[2026-02-21T18:54:59.908Z] SOCIAL running social-poster.js
+[2026-02-21T18:54:59.942Z] SOCIAL 2026-02-21T18:54:59.940Z [social-poster] starting
+[2026-02-21T18:54:59.951Z] SOCIAL 2026-02-21T18:54:59.951Z [social-poster] queue has 2715 posts
+[2026-02-21T18:54:59.952Z] SOCIAL 2026-02-21T18:54:59.952Z [social-poster] done — 0 attempted, 0 succeeded, 2715 remaining in queue
+[2026-02-21T18:54:59.955Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T18:59:40.359Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T18:59:40.361Z] AGENT marketing started (pid: 342491)
+[2026-02-21T18:59:59.928Z] STATUS running=1/4 writers=0/1 freeMem=6840MB agents=[marketing(20s)] paused=no
+[2026-02-21T18:59:59.928Z] SOCIAL running social-poster.js
+[2026-02-21T18:59:59.960Z] SOCIAL 2026-02-21T18:59:59.958Z [social-poster] starting
+[2026-02-21T18:59:59.968Z] SOCIAL 2026-02-21T18:59:59.968Z [social-poster] queue has 2715 posts
+[2026-02-21T19:00:00.220Z] SOCIAL 2026-02-21T19:00:00.219Z [social-poster] OK bluesky: posted "Can't decide between Openhab and Iobroker? We compare them h..."
+[2026-02-21T19:00:00.229Z] SOCIAL 2026-02-21T19:00:00.229Z [social-poster] removed 1 posted items from queue (2714 remaining)
+[2026-02-21T19:00:00.230Z] SOCIAL 2026-02-21T19:00:00.229Z [social-poster] done — 1 attempted, 1 succeeded, 2714 remaining in queue
+[2026-02-21T19:00:00.234Z] SOCIAL social-poster.js exited (code: 0)
