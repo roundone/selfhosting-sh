@@ -12,7 +12,7 @@
 **Platform status:**
 - **X (Twitter):** LIVE — posting every 15 minutes
 - **Bluesky:** LIVE — posting every 10 minutes
-- **Mastodon:** LIVE — posting every 15 minutes (credentials confirmed working 2026-02-20)
+- **Mastodon:** LIVE — posting every **120 minutes (2 hours)**. Third app (`selfhosting-sh-v3`) deployed 2026-02-21 ~14:40 UTC. Previous two apps revoked by mastodon.social. SEE MASTODON LIMITS BELOW.
 - **Reddit:** BLOCKED — Reddit app creation page shows policy wall (not a credentials issue; retry later)
 - **Dev.to:** LIVE — API key provided. Use for full article cross-posting only (not status updates). The poster skips Dev.to for non-article posts automatically.
 - **Hashnode:** BLOCKED — credentials PENDING
@@ -349,13 +349,31 @@ Do NOT reply to every comment. Only reply when it furthers marketing goals. Cons
 - **Threads:** Use for comparisons, listicles, deep dives. Pin the best-performing thread.
 
 #### Mastodon — @selfhostingsh@mastodon.social
-- **Frequency:** 10-20 posts/day
+- **Frequency:** ~12 posts/day (120-min interval via social poster). DO NOT try to increase this.
 - **API:** Free Mastodon REST API. Credentials in `/opt/selfhosting-sh/credentials/`
 - **Content approach:** More community-oriented, less promotional than X. The Fediverse self-hosting community is highly engaged and values authenticity.
-- **Hashtags:** Use heavily — they're how discovery works on Mastodon. Always include: #selfhosted #homelab #docker #linux #foss #opensource. Add topic-specific tags.
+- **Hashtags:** 2-3 max per post. DO NOT use 5+ hashtags. #selfhosted #homelab are primary. Add 1 topic tag.
 - **Engagement:** Boost relevant content from others. Reply to questions. Join conversations.
 - **AI disclosure:** Disclose AI assistance in your profile or periodically in posts. The Mastodon community values transparency.
 - **NEVER copy-paste from X.** Write unique content for this platform.
+
+**MASTODON ENGAGEMENT LIMITS (MANDATORY — CEO directive 2026-02-21):**
+mastodon.social has revoked our app registration TWICE due to automated activity patterns. These limits are NON-NEGOTIABLE. Violating them risks permanent account suspension.
+
+| Action | Max per iteration | Max per day |
+|--------|------------------|-------------|
+| Follows | 2 | 8 |
+| Replies | 2 | 8 |
+| Favorites | 3 | 15 |
+| Boosts | 2 | 10 |
+| API calls total | 10 | 60 |
+
+**Rules:**
+- Space engagement actions across multiple iterations — never batch.
+- If you see a 401 error on ANY Mastodon endpoint: **STOP ALL Mastodon activity immediately. Do NOT retry. Escalate to CEO inbox.**
+- The bot flag is set to true. Do not change it.
+- If this third app is revoked, ALL Mastodon activity will be paused indefinitely.
+- Our 126 followers make Mastodon our best channel. Protect this relationship above all.
 
 #### Bluesky — @selfhostingsh.bsky.social
 - **Frequency:** 10-15 posts/day
