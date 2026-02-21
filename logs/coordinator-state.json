@@ -6,7 +6,7 @@
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-21T10:25:35.394Z",
+      "lastRun": "2026-02-21T10:45:36.262Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T10:44:53.634Z",
   "running": {
-    "ceo": {
-      "pid": 315279,
-      "startTime": "2026-02-21T10:30:35.503Z",
-      "trigger": "unknown"
-    },
     "marketing": {
       "pid": 316300,
       "startTime": "2026-02-21T10:35:13.891Z",

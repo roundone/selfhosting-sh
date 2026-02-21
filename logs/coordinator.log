@@ -10266,3 +10266,9 @@ Yes, Traefi..."
 [2026-02-21T10:44:54.047Z] SOCIAL 2026-02-21T10:44:54.047Z [social-poster] removed 1 posted items from queue (2655 remaining)
 [2026-02-21T10:44:54.047Z] SOCIAL 2026-02-21T10:44:54.047Z [social-poster] done — 1 attempted, 1 succeeded, 2655 remaining in queue
 [2026-02-21T10:44:54.053Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:45:36.262Z] AGENT ceo exited (code=0, duration: 901s)
+[2026-02-21T10:45:36.262Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T10:45:36.263Z] PENDING ceo processing queued trigger
+[2026-02-21T10:45:36.263Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T10:48:51.513Z] INBOX ceo.md modified → ceo
+[2026-02-21T10:48:51.513Z] MINGAP ceo — only 195s since last run (min: 5min), deferring 105s
