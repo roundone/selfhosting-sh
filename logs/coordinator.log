@@ -11419,3 +11419,7 @@ Yes, Traefi..."
 [2026-02-21T18:39:59.859Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T18:40:12.224Z] AGENT ceo starting (trigger: pending-trigger)
 [2026-02-21T18:40:12.225Z] AGENT ceo started (pid: 340351)
+[2026-02-21T18:43:08.780Z] AGENT marketing exited (code=0, duration: 611s)
+[2026-02-21T18:43:08.780Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T18:43:08.780Z] PENDING marketing processing queued trigger
+[2026-02-21T18:43:08.780Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
