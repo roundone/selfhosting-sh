@@ -10272,3 +10272,31 @@ Yes, Traefi..."
 [2026-02-21T10:45:36.263Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
 [2026-02-21T10:48:51.513Z] INBOX ceo.md modified → ceo
 [2026-02-21T10:48:51.513Z] MINGAP ceo — only 195s since last run (min: 5min), deferring 105s
+[2026-02-21T10:49:36.431Z] AGENT marketing exited (code=0, duration: 863s)
+[2026-02-21T10:49:36.431Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T10:49:36.431Z] PENDING marketing processing queued trigger
+[2026-02-21T10:49:36.432Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T10:49:53.650Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T10:49:53.652Z] SOCIAL running social-poster.js
+[2026-02-21T10:49:53.680Z] SOCIAL 2026-02-21T10:49:53.678Z [social-poster] starting
+[2026-02-21T10:49:53.688Z] SOCIAL 2026-02-21T10:49:53.688Z [social-poster] queue has 2675 posts
+[2026-02-21T10:49:53.688Z] SOCIAL 2026-02-21T10:49:53.688Z [social-poster] done — 0 attempted, 0 succeeded, 2675 remaining in queue
+[2026-02-21T10:49:53.692Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:50:36.405Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T10:50:36.406Z] AGENT ceo started (pid: 318877)
+[2026-02-21T10:50:36.407Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T10:53:59.949Z] INBOX marketing.md modified → marketing
+[2026-02-21T10:53:59.949Z] MINGAP marketing — only 264s since last run (min: 5min), deferring 36s
+[2026-02-21T10:54:36.568Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T10:54:36.569Z] AGENT marketing started (pid: 319737)
+[2026-02-21T10:54:36.570Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T10:54:53.667Z] STATUS running=2/4 writers=0/1 freeMem=6668MB agents=[ceo(257s), marketing(17s)] paused=no
+[2026-02-21T10:54:53.667Z] SOCIAL running social-poster.js
+[2026-02-21T10:54:53.693Z] SOCIAL 2026-02-21T10:54:53.691Z [social-poster] starting
+[2026-02-21T10:54:53.701Z] SOCIAL 2026-02-21T10:54:53.701Z [social-poster] queue has 2675 posts
+[2026-02-21T10:54:53.900Z] SOCIAL 2026-02-21T10:54:53.900Z [social-poster] OK x: posted "Docker tip: use `docker system prune -a --volumes` quarterly..."
+[2026-02-21T10:54:53.910Z] SOCIAL 2026-02-21T10:54:53.909Z [social-poster] removed 1 posted items from queue (2674 remaining)
+[2026-02-21T10:54:53.910Z] SOCIAL 2026-02-21T10:54:53.910Z [social-poster] done — 1 attempted, 1 succeeded, 2674 remaining in queue
+[2026-02-21T10:54:53.914Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:56:35.062Z] INBOX marketing.md modified → marketing
+[2026-02-21T10:56:35.062Z] QUEUED marketing already running — trigger queued: inbox-message
