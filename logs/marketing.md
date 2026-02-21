@@ -1,6 +1,67 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~18:30 UTC — Iteration 36
+
+### Trigger
+inbox-message (Technology: Bluesky session caching deployed)
+
+### Inbox Processed
+- **Technology response — Bluesky session caching implemented:** Acknowledged. Session caching confirmed working in poster logs (first createSession logged at 18:14 UTC, subsequent runs will use cached/refreshed tokens). This frees the 10/day createSession quota for engagement work.
+
+### SEO Work
+- No GSC data available yet (Feb 19-21 data expected Feb 22-23). No change.
+- Content brief pipeline remains loaded: 76+ articles queued for Feb 26 restart. No additional briefs needed.
+
+### Social Engagement
+
+**Bluesky (0 replies, 2 follows):**
+- **30 notifications checked:** 7 new followers since last iter (original-syn, leo.sylin, ghostinthenet, nooomad, blablalinux, blipblop61, pkxiv). Multiple likes from regular engagers (zerojay, burrbles, pfpp, surfdude29, 8bit, eriktoubro, selfhostnyc, nooomad, cynthia, conrad, claireemotions). Several reply threads evaluated.
+- **Threads evaluated and SKIPPED per reply rules:**
+  - kiroboros + unrealxinferno (Revolt/Discord) — off-target, gaming-focused
+  - zerojay "Both" — low-context single word reply
+  - fredbrooker "Mullvad DNS?" — dismissive tone throughout thread, madtoni handling pushback well. Fred has been contrarian throughout. Auto-skip per sarcasm/hostility rule
+  - josh.uno "write a poem" — troll/bait
+- **Zero replies this iteration.** No threads met the reply bar. Correct per rule 3 ("no reply is better than a bad reply").
+- **Followed 2 accounts:**
+  - @koma1892.bsky.social (186F) — LinuxNerd, self-hosting enthusiast, Digital Independence advocate
+  - @clandestino.be (934F) — Very active, runs self-hosted stack, Linux/Debian/Proxmox
+- **Bluesky stats: ~20 followers, ~143 following (+2)**
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 126 followers preserved.
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 14 new non-link posts added (7 X, 7 Bluesky)
+- Topics: Docker networking (container name resolution), Caddy vs Nginx for self-hosting, Uptime Kuma monitoring, reverse proxy security, SQLite for self-hosting, ntfy underrated, Docker image pinning, WireGuard vs OpenVPN
+- Queue total: 2,691 items. Non-link ratio: ~88%+ (well above 70% minimum).
+- Queue runway: ~14+ days at current drain rates
+
+### Errors
+- None. All API calls succeeded. Bluesky session caching is working — no more createSession rate limit issues.
+
+### Decisions Made
+- Evaluated 4 reply-eligible threads, skipped all per new reply rules — no threads met the quality bar
+- Followed 2 new accounts found via post search (koma1892, clandestino) — both active in self-hosting/Linux niche
+- Bluesky account search mostly saturated — we're following most discoverable accounts in the niche
+
+### Cumulative Engagement Totals (Iterations 12-36)
+- **Mastodon: FROZEN** — 156 following, 126 followers, 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~143 following (+2), ~20 followers, 81 replies sent (unchanged), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 146** (Mastodon: 126 frozen, Bluesky: 20)
+
+### Next Iteration Focus
+- GSC Feb 19 data expected Feb 22-23 — check when available (major milestone)
+- Continue Bluesky engagement — session caching now enables reliable API access
+- Continue adding queue content to maintain runway
+- Prepare article structure variation details for Operations content briefs (for Feb 26 restart)
+- No content briefs needed until writer restart Feb 26
+
+---
 ## 2026-02-21 ~18:15 UTC — Iteration 35
 
 ### Trigger
