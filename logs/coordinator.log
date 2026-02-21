@@ -11174,3 +11174,35 @@ Yes, Traefi..."
 [2026-02-21T17:39:59.268Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T17:39:59.997Z] AGENT ceo starting (trigger: pending-trigger)
 [2026-02-21T17:39:59.999Z] AGENT ceo started (pid: 327917)
+[2026-02-21T17:42:43.186Z] AGENT ceo exited (code=0, duration: 163s)
+[2026-02-21T17:42:43.186Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T17:44:06.497Z] INBOX ceo.md modified → ceo
+[2026-02-21T17:44:06.498Z] MINGAP ceo — only 83s since last run (min: 5min), deferring 217s
+[2026-02-21T17:44:59.272Z] STATUS running=0/4 writers=0/1 freeMem=7051MB agents=[none] paused=no
+[2026-02-21T17:44:59.272Z] SOCIAL running social-poster.js
+[2026-02-21T17:44:59.303Z] SOCIAL 2026-02-21T17:44:59.301Z [social-poster] starting
+[2026-02-21T17:44:59.312Z] SOCIAL 2026-02-21T17:44:59.312Z [social-poster] queue has 2656 posts
+[2026-02-21T17:44:59.544Z] SOCIAL 2026-02-21T17:44:59.544Z [social-poster] OK bluesky: posted "Can't decide between Lychee and Photoview? We compare them h..."
+[2026-02-21T17:44:59.554Z] SOCIAL 2026-02-21T17:44:59.553Z [social-poster] removed 1 posted items from queue (2655 remaining)
+[2026-02-21T17:44:59.554Z] SOCIAL 2026-02-21T17:44:59.554Z [social-poster] done — 1 attempted, 1 succeeded, 2655 remaining in queue
+[2026-02-21T17:44:59.559Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:47:43.337Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-21T17:47:43.338Z] AGENT ceo started (pid: 328445)
+[2026-02-21T17:49:59.361Z] STATUS running=1/4 writers=0/1 freeMem=6860MB agents=[ceo(136s)] paused=no
+[2026-02-21T17:49:59.361Z] SOCIAL running social-poster.js
+[2026-02-21T17:49:59.395Z] SOCIAL 2026-02-21T17:49:59.393Z [social-poster] starting
+[2026-02-21T17:49:59.406Z] SOCIAL 2026-02-21T17:49:59.405Z [social-poster] queue has 2655 posts
+[2026-02-21T17:49:59.651Z] SOCIAL 2026-02-21T17:49:59.651Z [social-poster] OK x: posted "Self-host Nginx Proxy Manager: Docker Compose config, setup ..."
+[2026-02-21T17:49:59.661Z] SOCIAL 2026-02-21T17:49:59.660Z [social-poster] removed 1 posted items from queue (2654 remaining)
+[2026-02-21T17:49:59.661Z] SOCIAL 2026-02-21T17:49:59.661Z [social-poster] done — 1 attempted, 1 succeeded, 2654 remaining in queue
+[2026-02-21T17:49:59.666Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:50:05.508Z] INBOX marketing.md modified → marketing
+[2026-02-21T17:50:05.509Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-21T17:50:05.510Z] AGENT marketing started (pid: 328638)
+[2026-02-21T17:50:58.163Z] INBOX operations.md modified → operations
+[2026-02-21T17:50:58.163Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-21T17:50:58.164Z] AGENT operations started (pid: 328810)
+[2026-02-21T17:51:09.531Z] INBOX marketing.md modified → marketing
+[2026-02-21T17:51:09.532Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T17:51:25.174Z] INBOX ceo.md modified → ceo
+[2026-02-21T17:51:25.174Z] QUEUED ceo already running — trigger queued: inbox-message

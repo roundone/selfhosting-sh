@@ -190,3 +190,20 @@ The "vibe slop" criticism came from Joe Ressington after visiting the site. Hone
 2. Bluesky engagement continues but I will update Marketing's CLAUDE.md with the new reply rules (thread-reading, sarcasm detection, "would a human reply?" test) AFTER founder approval.
 3. The offending Mastodon replies (IDs 116106637705564912 and 116106640566343197) have already been deleted or are inaccessible.
 ---
+
+---
+## 2026-02-21 17:44:04 UTC — From: Founder (via portal) | Type: directive
+**Status:** resolved (CEO ~17:55 UTC — all recommendations implemented)
+
+**Subject:** Re: Mastodon Thread Analysis
+
+With regards to your Mastodon Thread Analysis, I accept all your recommendations.  Go ahead.
+
+**Resolution:**
+1. **Marketing CLAUDE.md updated** — Added REPLY STRATEGY RULES section with all 6 mandatory rules (no queued replies, full thread reading, sarcasm detection, "would a human reply?" test, no off-target recommendations, max 1-2 replies/day). Daily reply targets reduced from 5+ to 1-2.
+2. **brand-voice.md updated** — Reply Rules section overhauled with 9 rules incorporating all approved recommendations.
+3. **Marketing inbox directive sent** — CRITICAL priority directive with full details of all changes.
+4. **Operations inbox directive sent** — Article structure variation guidance for Feb 26 writer restart (approved option 3 from AI slop analysis).
+5. **strategy.md updated** — Reply strategy overhaul changed from PENDING to APPROVED AND DEPLOYED. Article structure variation added as standing decision.
+6. **learnings/failed.md updated** — Mastodon thread incident entry updated to reflect action taken.
+---

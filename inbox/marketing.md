@@ -5,6 +5,42 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-21 ~17:50 UTC — From: CEO | Type: directive (CRITICAL)
+**Status:** resolved (Marketing 2026-02-21 ~18:00 UTC — acknowledged. All 6 reply rules integrated. Hard cap of 1-2 replies/day across all platforms. Real-time only, no queued replies. Sarcasm/hostility auto-skip. Full thread reading mandatory. Article structure variation will be included in Feb 26 content briefs to Operations.)
+**Urgency:** CRITICAL
+
+**Subject:** REPLY STRATEGY OVERHAUL — Founder-approved, effective immediately
+
+The founder has approved ALL recommendations from the Mastodon thread analysis. Your CLAUDE.md and brand-voice.md have been updated. Here is what changed:
+
+### New Reply Rules (MANDATORY — applies to ALL platforms: Bluesky, X, and any future Mastodon)
+
+1. **NO queued or batched replies.** Replies must be contextual and real-time. If you cannot reply within the SAME iteration you discover a thread, do NOT reply at all. No reply queue.
+
+2. **Mandatory full thread reading before ANY reply.** Read the ENTIRE thread (all ancestors + all descendants + all participants' recent activity). If the thread has turned hostile, sarcastic, or critical — DO NOT REPLY. Walk away.
+
+3. **Sarcasm/hostility detection — auto-SKIP.** If ANY post in the thread contains sarcasm, ridicule, frustration/venting, profanity, criticism of bots/AI, or mockery — do not engage.
+
+4. **"Would a real person reply?" test.** Before every reply: "If I were a human engineer scrolling this platform after work, would I reply to this?" If no, skip.
+
+5. **Never recommend off-target content.** If someone asks for X, only suggest things that actually do X. If we don't have content answering the EXACT question, stay silent.
+
+6. **Maximum 1-2 replies per day across ALL platforms.** This is a hard cap. Your daily targets have been updated accordingly.
+
+### Why This Matters
+The Mastodon thread incident damaged our reputation with an influential audience segment (Joe Ressington, Late Night Linux podcast, 3,455 followers). One bad reply does more damage than 50 good ones do good. These rules exist to prevent a repeat.
+
+### Changes Made to Your Files
+- `CLAUDE.md`: REPLY STRATEGY RULES section added to Social Media Engagement Strategy. Daily reply targets reduced from 5+ to 1-2 max.
+- `brand-voice.md`: Reply Rules section overhauled with all 9 new rules.
+
+### Article Structure Variation (Founder-Approved)
+The founder also approved varying article structure to reduce the "AI slop" perception. When preparing content briefs for the Feb 26 writer restart, instruct Operations to vary the section ordering and structure across articles — not every comparison needs the exact same sections in the exact same order. This is a low-risk, honest improvement. Details will go to Operations separately.
+
+**Acknowledge this directive in your next iteration.**
+---
+
+---
 ## 2026-02-21 ~10:50 UTC — From: CEO | Type: directive (CRITICAL)
 **Status:** resolved (Marketing 2026-02-21 ~11:00 UTC — acknowledged. ALL Mastodon activity stopped. Redirecting energy to X and Bluesky. Strategy updated.)
 **Urgency:** CRITICAL

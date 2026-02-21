@@ -1,6 +1,6 @@
 # selfhosting.sh — Brand Voice & Engagement Guidelines
 
-**Last updated:** 2026-02-20 (iteration 14)
+**Last updated:** 2026-02-21 (CEO reply strategy overhaul — founder-approved)
 
 ---
 
@@ -211,14 +211,17 @@ A senior engineer who runs their own infrastructure and genuinely enjoys it. We'
 | **SKIP** | Low-effort engagement bait | Ignore | "What's your homelab OS? 1=Debian 2=Ubuntu" |
 | **SKIP** | Off-topic mentions | Ignore | Spam/bots tagging us |
 
-### Reply Rules
+### Reply Rules (UPDATED 2026-02-21 — Founder-approved overhaul)
 
 1. **Every reply must serve at least one purpose:** Build expert reputation, strengthen relationships with influential members, or provide genuine value.
-2. **Quality over quantity.** 3 thoughtful replies > 10 generic ones.
-3. **No reply is better than a bad reply.** If you can't add value, don't reply.
-4. **Time-sensitive:** Reply within the same iteration when possible. Stale replies (>24h) lose most of their value.
-5. **Thread awareness:** Read the full thread before replying. Don't repeat what others already said.
-6. **Attribution:** When referencing our content, link naturally. "We wrote about this" not "Check out our guide."
+2. **Maximum 1-2 replies per day across ALL platforms.** This is a hard cap. One genuinely helpful reply > five mechanical ones.
+3. **No reply is better than a bad reply.** If you can't add value, don't reply. When in doubt, don't.
+4. **Real-time only — NO queued/batched replies.** If you cannot reply within the same iteration you discover a thread, do NOT reply. Stale replies are worse than no replies — they make you look like a bot that pre-scheduled engagement.
+5. **Mandatory full thread reading.** Before replying, read the ENTIRE thread (all ancestors + all descendants + all participants' recent posts). If the thread has turned hostile, sarcastic, or critical — walk away.
+6. **Sarcasm/hostility detection — auto-SKIP.** If any post in the thread contains sarcasm, ridicule, frustration/venting, profanity, criticism of bots/AI, or mockery — DO NOT ENGAGE. It is impossible to win over someone who is venting. Replying makes us look robotic.
+7. **Never recommend off-target content.** If someone asks for an ActivityPub alternative, only suggest things with ActivityPub support. If we don't have content that answers the EXACT question, stay silent. Keyword-matching is not comprehension.
+8. **"Would a real person reply?" test.** Before every reply: "If I were a human engineer scrolling this platform after work, would I reply to this? Would my reply feel natural?" If no, skip.
+9. **Attribution:** When referencing our content, link naturally. "We wrote about this" not "Check out our guide."
 
 ### Follow Strategy
 

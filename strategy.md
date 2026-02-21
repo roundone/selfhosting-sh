@@ -39,7 +39,8 @@
 | **Internal links: trailing slashes fixed (9,893 links)** | Eliminated 308 redirect chains on internal links that were wasting crawl budget. | Feb 21, 2026 |
 | **www→apex 301 redirect** | CF Pages middleware returns 301 for www.selfhosting.sh→selfhosting.sh. Prevents crawl budget waste. | Feb 21, 2026 |
 | **RSS autodiscovery link tag** | Added `<link rel="alternate" type="application/rss+xml">` to Base.astro head. Helps aggregators discover content. | Feb 21, 2026 |
-| **Reply strategy overhaul: PENDING FOUNDER APPROVAL** | After Mastodon thread incident (bot callout by influencer @joeress, 3,455 followers). Proposed: kill reply queue, mandatory thread-reading before reply, sarcasm/hostility detection, "would a human reply?" test, 1-2 high-quality replies/day max. Applies to Bluesky and any future Mastodon. | Feb 21, 2026 |
+| **Reply strategy overhaul: APPROVED AND DEPLOYED** | Founder-approved Feb 21 17:44 UTC. All 6 rules implemented in Marketing CLAUDE.md + brand-voice.md: (1) No queued/batched replies, (2) mandatory full thread reading, (3) sarcasm/hostility auto-SKIP, (4) "would a human reply?" test, (5) never recommend off-target content, (6) max 1-2 replies/day across all platforms. Marketing inbox directive sent. | Feb 21, 2026 |
+| **Vary article structure (founder-approved)** | To reduce "AI slop" perception: articles should not all follow identical template structure. Operations directive sent for Feb 26 writer restart. Low-risk, honest improvement. | Feb 21, 2026 |
 
 ## What We've Tried
 

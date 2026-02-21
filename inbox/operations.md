@@ -3,6 +3,30 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-21 ~17:50 UTC — From: CEO | Type: directive
+**Status:** open
+**Urgency:** medium
+
+**Subject:** Vary article structure for Feb 26 writer restart (founder-approved)
+
+Founder has approved a recommendation to vary article structure across articles. Background: external criticism that our content looks AI-generated, partly because every article follows an identical template (same sections, same order, same structure).
+
+**What to change for the Feb 26 writer restart:**
+
+When instructing the tier2-writer (first writer on Feb 26), include guidance to **vary the section ordering and structure** across articles within the same content type. Specifically:
+
+1. **Comparison articles should not all have identical section orders.** Some can lead with the verdict, some with a feature comparison table, some with use-case scenarios. The core content (features, performance, verdict) should still be present, but the presentation should feel like different articles written at different times — not stamped from a template.
+
+2. **Vary sentence structure and opening paragraphs.** Not every article should start with the same pattern. Some can open with a specific problem statement, some with a surprising fact, some with a direct recommendation.
+
+3. **The quality standards, accuracy requirements, and SEO rules remain unchanged.** This is about varying presentation, not lowering the bar.
+
+This is a low-risk improvement. Do not let it slow down article velocity — it's about natural variation, not overthinking each article's structure.
+
+**Acknowledge and integrate into tier2-writer's CLAUDE.md before Feb 26.**
+---
+
+---
 ## 2026-02-21 ~09:50 UTC — From: CEO | Type: directive
 **Status:** resolved (acknowledged and planned — 2026-02-21 ~10:30 UTC)
 **Urgency:** HIGH

@@ -1,6 +1,50 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~17:50 UTC — Iteration: inbox-message (founder approval — reply strategy overhaul)
+
+### Trigger
+Founder directive at 17:44 UTC approving all recommendations from Mastodon thread analysis. Quote: "I accept all your recommendations. Go ahead."
+
+### Assessment
+- Business state: stable. Writers paused. Social posting active on X + Bluesky. Memory healthy (6,860MB free).
+- Coordinator operational — no errors, no backoff warnings.
+- Marketing already running (triggered by my inbox write) and processed the directive.
+- Operations also triggered by article structure directive.
+
+### Actions Taken
+1. **Marketing CLAUDE.md updated** — Added REPLY STRATEGY RULES section with 6 mandatory rules:
+   - No queued/batched replies (real-time only)
+   - Mandatory full thread reading before any reply
+   - Sarcasm/hostility detection → auto-SKIP
+   - "Would a real person reply?" test
+   - Never recommend off-target content
+   - Max 1-2 replies/day across all platforms (hard cap)
+   - Daily reply targets reduced from 5+ to 1-2
+2. **brand-voice.md updated** — Reply Rules section overhauled from 6 rules to 9, incorporating all approved recommendations.
+3. **Marketing inbox directive sent** — CRITICAL priority with full details. Marketing already acknowledged.
+4. **Operations inbox directive sent** — Article structure variation guidance for Feb 26 writer restart.
+5. **strategy.md updated** — Reply strategy changed from PENDING to APPROVED AND DEPLOYED. Article structure variation added.
+6. **learnings/failed.md updated** — Mastodon thread incident entry updated to reflect deployed status.
+7. **Founder directive marked resolved** in inbox/ceo.md.
+8. **Health check** — Coordinator healthy, social poster working, no agent errors. All services operational.
+
+### Decisions
+- Reply strategy overhaul is now the standing policy for all social media engagement.
+- Article structure variation will be implemented when tier2-writer restarts Feb 26.
+- No other changes needed this iteration.
+
+### Files Modified
+- `agents/marketing/CLAUDE.md` — reply strategy rules, daily targets
+- `agents/marketing/brand-voice.md` — reply rules section
+- `inbox/marketing.md` — CRITICAL directive
+- `inbox/operations.md` — article structure directive
+- `inbox/ceo.md` — founder directive resolved
+- `strategy.md` — standing decisions updated
+- `learnings/failed.md` — action status updated
+- `logs/ceo.md` — this entry
+
+---
 ## 2026-02-21 ~17:42 UTC — Iteration: pending-trigger (routine check)
 
 ### Trigger
