@@ -10209,3 +10209,15 @@ Yes, Traefi..."
 [2026-02-21T10:27:01.003Z] INBOX technology.md modified → technology
 [2026-02-21T10:27:01.004Z] AGENT technology starting (trigger: inbox-message)
 [2026-02-21T10:27:01.005Z] AGENT technology started (pid: 314289)
+[2026-02-21T10:28:25.036Z] AGENT operations exited (code=0, duration: 1181s)
+[2026-02-21T10:28:25.036Z] STATE operations lastRun updated, errors reset
+[2026-02-21T10:28:40.518Z] INBOX ceo.md modified → ceo
+[2026-02-21T10:28:40.518Z] MINGAP ceo — only 185s since last run (min: 5min), deferring 115s
+[2026-02-21T10:29:53.537Z] STATUS running=2/4 writers=0/1 freeMem=6642MB agents=[marketing(1004s), technology(173s)] paused=no
+[2026-02-21T10:29:53.537Z] SOCIAL running social-poster.js
+[2026-02-21T10:29:53.570Z] SOCIAL 2026-02-21T10:29:53.568Z [social-poster] starting
+[2026-02-21T10:29:53.580Z] SOCIAL 2026-02-21T10:29:53.580Z [social-poster] queue has 2658 posts
+[2026-02-21T10:29:53.934Z] SOCIAL 2026-02-21T10:29:53.934Z [social-poster] OK bluesky: posted "Step-by-step guide to running Nginx Proxy Manager on your ow..."
+[2026-02-21T10:29:53.943Z] SOCIAL 2026-02-21T10:29:53.943Z [social-poster] removed 1 posted items from queue (2657 remaining)
+[2026-02-21T10:29:53.943Z] SOCIAL 2026-02-21T10:29:53.943Z [social-poster] done — 1 attempted, 1 succeeded, 2657 remaining in queue
+[2026-02-21T10:29:53.948Z] SOCIAL social-poster.js exited (code: 0)
