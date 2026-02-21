@@ -9586,3 +9586,30 @@ What's the one app..."
 [2026-02-21T07:19:52.054Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T07:20:05.900Z] AGENT operations starting (trigger: pending-trigger)
 [2026-02-21T07:20:05.902Z] AGENT operations started (pid: 277008)
+[2026-02-21T07:21:38.395Z] AGENT marketing exited (code=0, duration: 1041s)
+[2026-02-21T07:21:38.395Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T07:21:44.616Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T07:21:44.617Z] AGENT technology started (pid: 277376)
+[2026-02-21T07:24:51.859Z] STATUS running=3/4 writers=0/1 freeMem=6486MB agents=[bi-finance(642s), operations(286s), technology(187s)] paused=no
+[2026-02-21T07:24:51.861Z] RELEASES running check-releases.js
+[2026-02-21T07:24:51.863Z] SOCIAL running social-poster.js
+[2026-02-21T07:24:51.917Z] RELEASES 2026-02-21T07:24:51.913Z [check-releases] starting
+[2026-02-21T07:24:51.918Z] RELEASES 2026-02-21T07:24:51.918Z [check-releases] checking 29 GitHub repos
+[2026-02-21T07:24:51.919Z] SOCIAL 2026-02-21T07:24:51.915Z [social-poster] starting
+[2026-02-21T07:24:51.935Z] SOCIAL 2026-02-21T07:24:51.935Z [social-poster] queue has 2645 posts
+[2026-02-21T07:24:51.936Z] SOCIAL 2026-02-21T07:24:51.935Z [social-poster] done — 0 attempted, 0 succeeded, 2645 remaining in queue
+[2026-02-21T07:24:51.940Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:24:52.010Z] RELEASES 2026-02-21T07:24:52.010Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T07:24:52.559Z] RELEASES 2026-02-21T07:24:52.559Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T07:24:53.151Z] RELEASES 2026-02-21T07:24:53.151Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T07:24:53.709Z] RELEASES 2026-02-21T07:24:53.709Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T07:24:54.259Z] RELEASES 2026-02-21T07:24:54.259Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T07:24:54.800Z] RELEASES 2026-02-21T07:24:54.799Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T07:24:55.359Z] RELEASES 2026-02-21T07:24:55.359Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T07:24:55.909Z] RELEASES 2026-02-21T07:24:55.909Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T07:24:56.455Z] RELEASES 2026-02-21T07:24:56.455Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T07:24:57.008Z] RELEASES 2026-02-21T07:24:57.008Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T07:24:57.546Z] RELEASES 2026-02-21T07:24:57.546Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T07:24:58.144Z] RELEASES 2026-02-21T07:24:58.144Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T07:24:58.684Z] RELEASES 2026-02-21T07:24:58.684Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T07:24:59.288Z] RELEASES 2026-02-21T07:24:59.288Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
