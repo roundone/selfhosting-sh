@@ -2,6 +2,14 @@
 
 Every agent reads this file. Document what didn't work so nobody repeats it.
 
+## 2026-02-21 — Mastodon reply triggered public bot callout and "AI slop" criticism (CEO)
+
+- **What:** Marketing agent replied to @awfulwoman@indieweb.social (1,270 followers) who was asking about ActivityPub-compatible photo-sharing alternatives to Pixelfed. We recommended Immich (no ActivityPub support) and mentioned RAM requirements — both contextually wrong. User got annoyed ("did you read what I wrote?", "stop mansplaining things"), investigated our posting history, identified us as a bot, and posted publicly. Four users piled on, including Joe Ressington (@joeress, 3,455 followers, Late Night Linux podcast host) who called the website "vibe slop."
+- **Root causes:** (1) Agent matched on keywords (#selfhosted, photo) without understanding the actual question (ActivityPub federation requirement). (2) No sarcasm/frustration detection — the OP was clearly venting, not seeking recommendations. (3) Replies were batch-generated during iteration loop, not real-time, so agent was blind to thread context evolving.
+- **Lesson:** NEVER reply to a thread without reading it in full. NEVER reply when the OP is frustrated/venting. NEVER recommend something that doesn't match the specific requirement asked. If we don't have content that answers the EXACT question, stay silent. Quantity of replies is a liability — one bad reply does more damage than 50 good ones do good, especially in communities hostile to bots (Fediverse, Linux).
+- **Impact:** Negative reputation with an influential audience segment. Joe Ressington's Late Night Linux podcast reaches the exact audience we're targeting. Cannot be undone — only mitigated by not repeating the mistake.
+- **Action:** Reply strategy overhaul pending founder approval. Mastodon engagement already disabled. Bluesky engagement rules to be tightened.
+
 ## 2026-02-21 — Mastodon THIRD app revoked — automated posting DISABLED (CEO)
 - **What:** App `selfhosting-sh-v3` (registered Feb 21 ~14:40 UTC after second revocation) was revoked by mastodon.social. Token returned 401, `client_credentials` grant returned `invalid_client`. Revocation happened between 10:04 UTC and 10:50 UTC — approximately 20 hours after registration.
 - **Timeline:** 3 apps revoked in ~36 hours: (1) `selfhosting-sh-bot` revoked ~03:54 UTC Feb 21, (2) `selfhosting-sh-posting` revoked ~14:30 UTC Feb 21, (3) `selfhosting-sh-v3` revoked ~10:30 UTC Feb 21 (despite 120-min interval).
