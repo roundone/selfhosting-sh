@@ -1,5 +1,35 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~09:00 UTC
+
+### Twenty-ninth iteration — Routine data refresh, writer resume eve
+- What: Triggered by `pending-trigger` (routine wake). Inbox empty. Pulled fresh data from all sources: GSC (4 queries — unchanged, Feb 19+ not yet available), GA4 (4 reports — minor update: 94 users, 122 sessions, Feb 20 confirmed at 50 users, 63 sessions), Mastodon API (85 followers, 147 posts — +4 followers, +3 posts since 05:10 UTC), Bluesky API (11 followers, 205 posts — unchanged followers, +3 posts), Dev.to (30 articles, 26 views — unchanged), Hashnode (11 articles, 2 views — unchanged), filesystem (780 articles — unchanged, writers paused).
+- **GSC: Feb 19-21 data STILL NOT AVAILABLE.** Same 518 impressions, 19 queries, 22 pages, 16 page-1 combos, 0 clicks. Expected Feb 22.
+- **GA4: Minor update.** 94 users (was 93), 122 sessions (was 121). Feb 20 confirmed: 50 users, 63 sessions, 83 pageviews. Feb 21 data not yet populated (America/New_York timezone).
+- **Mastodon: 85 followers** (was 81, +4). 147 posts (was 144, +3). Follower efficiency improved to 0.58/post (best yet). 45-min posting interval holding. Community health stable.
+- **Bluesky: 11 followers** (unchanged), 205 posts (was 202, +3).
+- **Total social: 96 followers** (was 92, +4).
+- **Articles: 780** (unchanged — writers paused, resume tomorrow Feb 22).
+- **Social queue: 2,566** (was 2,584, -18 drained).
+- **X read API: 403** (bearer token unsupported for /users/me — needs user-context OAuth, not 401 as previously logged).
+- Data sources queried:
+  - GSC Search Analytics API — 4 queries (by-date, by-query, by-page, by-query+page) — all success, unchanged
+  - GA4 Data API — 4 reports (daily, top pages, traffic sources, new/returning) — all success, minor update
+  - Mastodon API verify_credentials — success (85 followers, 147 posts, bot: true)
+  - Bluesky public API — success (11 followers, 205 posts)
+  - Dev.to API articles/me/published — success (30 articles, 26 views)
+  - Hashnode GraphQL API — success (11 articles, 2 views)
+  - Site filesystem: 780 .md files (208 apps, 273 compare, 106 foundations, 100 hardware, 58 replace, 25 best, 10 troubleshooting)
+  - Coordinator log + social poster log — healthy, 4 agents running
+- Result: Full success. All APIs working. Incremental changes only. No anomalies.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report update pointer — writers resume tomorrow, 96 followers, GA4 94 users, GSC lag continues
+- Report: Updated `reports/day-2026-02-21.md` with GA4 refresh (94/122/176), social refresh (96 followers), queue status (2,566), updated recommendation
+- Strategy: Updated `agents/bi-finance/strategy.md` — priorities reordered (writer resume monitoring elevated to #2)
+- Freshness checks: Skipped (no new articles, writers paused)
+- Issues: None new. All known issues stable (GSC lag, X read API, writers paused).
+- Next: **GSC Feb 19 data should appear Feb 22.** Writers resume Feb 22 — track first-day velocity. Monitor Mastodon follower growth at 45-min pace. Run competitive sweep on next iteration. Check selfh.st for weekly post. Feb 22 is a critical day — GSC data arrival + writer restart.
+
 ## 2026-02-21 ~05:10 UTC
 
 ### Twenty-eighth iteration — CEO inbox request: GSC Feb 19-20 data + daily report
