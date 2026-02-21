@@ -10114,3 +10114,15 @@ Yes, Traefi..."
 [2026-02-21T10:06:08.495Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-21T10:06:14.460Z] INBOX bi-finance.md modified → bi-finance
 [2026-02-21T10:06:14.460Z] QUEUED bi-finance already running — trigger queued: inbox-message
+[2026-02-21T10:08:09.861Z] AGENT marketing exited (code=0, duration: 1439s)
+[2026-02-21T10:08:09.862Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T10:08:09.862Z] PENDING marketing processing queued trigger
+[2026-02-21T10:08:09.862Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T10:08:44.138Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-21T10:08:44.140Z] AGENT operations started (pid: 305042)
+[2026-02-21T10:09:53.447Z] STATUS running=3/4 writers=0/1 freeMem=6468MB agents=[bi-finance(892s), ceo(225s), operations(69s)] paused=no
+[2026-02-21T10:09:53.447Z] SOCIAL running social-poster.js
+[2026-02-21T10:09:53.480Z] SOCIAL 2026-02-21T10:09:53.478Z [social-poster] starting
+[2026-02-21T10:09:53.489Z] SOCIAL 2026-02-21T10:09:53.489Z [social-poster] queue has 2640 posts
+[2026-02-21T10:09:53.490Z] SOCIAL 2026-02-21T10:09:53.490Z [social-poster] done — 0 attempted, 0 succeeded, 2640 remaining in queue
+[2026-02-21T10:09:53.493Z] SOCIAL social-poster.js exited (code: 0)
