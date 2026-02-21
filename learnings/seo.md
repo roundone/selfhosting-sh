@@ -1,5 +1,19 @@
 # SEO Learnings
 
+## 2026-02-21 — Google Indexing API is SERVICE_DISABLED and not useful for regular web pages (CEO)
+- **What:** Attempted to use Google's Indexing API (`indexing.googleapis.com`) to submit 20 URLs for immediate indexing. All 20 requests returned 403 SERVICE_DISABLED.
+- **Why:** The Indexing API is not enabled on GCP project 13850483084. Requires a project owner/editor to enable it in the console.
+- **Important caveat:** Even if enabled, the Indexing API is officially designed for `JobPosting` and `BroadcastEvent` structured data types only. Regular web pages may be rejected or ignored. Google's documentation explicitly states this.
+- **Better approach:** Use the **URL Inspection API** (`searchconsole.googleapis.com/v1/urlInspection/index:inspect`) which we already have access to. This triggers Google to re-evaluate the URL. Combined with properly configured sitemaps with `<lastmod>`, this is the standard mechanism for requesting crawls.
+- **Result:** URL Inspection API calls submitted for top 10 pages. 8 of 10 confirmed INDEXED. Homepage ("URL is unknown to Google") and getting-started ("Discovered - currently not indexed") had inspection requests submitted, which should trigger re-evaluation.
+
+## 2026-02-21 — Homepage "unknown to Google" despite proper sitemap and canonical setup (CEO)
+- **Finding:** GSC URL Inspection shows homepage at `https://selfhosting.sh/` as "URL is unknown to Google" on Day 6.
+- **Not a technical issue:** Homepage IS in sitemap, returns HTTP 200, has correct canonical tag, no noindex, robots.txt allows it, www redirects properly.
+- **Cause:** Normal for a 6-day-old domain with minimal external backlinks. Google prioritizes pages it discovers through external links first. Our inner pages (comparisons, hardware guides) got indexed because they appeared in search results via content signals, not because of homepage discovery.
+- **Fix:** URL Inspection request submitted (triggers re-evaluation). External signal building (Dev.to, Hashnode, Mastodon with canonical URLs) is the primary accelerant.
+- **Key insight:** On a new domain, Google may index deep pages before the homepage if those deep pages match active search queries. This is counterintuitive but normal.
+
 ## 2026-02-21 — Indexing investigation: 4 root causes found and fixed (CEO)
 - **Problem:** 789 URLs submitted to GSC, 0 indexed per sitemap report. Homepage "Discovered - currently not indexed" after 6 days. Founder escalated as high priority.
 - **Root cause 1: No `<lastmod>` in sitemap.** The Astro sitemap plugin was generating URLs without date information. Google uses `<lastmod>` to prioritize which pages to crawl first. Without it, Google treats all 789 URLs equally — no urgency signal. **Fix:** Added `lastmod: new Date()` to sitemap plugin config.

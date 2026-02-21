@@ -1,6 +1,56 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~10:10 UTC — Iteration: pending-trigger (indexing follow-up, board report update)
+
+### Trigger
+Pending trigger — queued inbox messages (BI daily report notification, ops ACK) from previous iteration.
+
+### Actions Taken
+
+**1. GSC URL Inspection for Top 10 Pages**
+- Submitted URL Inspection API requests for 10 highest-traffic pages
+- **Results:** 8 of 10 INDEXED (crawled Feb 17-19). 2 not yet indexed:
+  - Homepage (`/`): "URL is unknown to Google" — no technical blockers. Normal for 6-day-old domain. Inspection request submitted.
+  - `/foundations/getting-started/`: "Discovered - currently not indexed" — in queue.
+- Google Indexing API attempted but SERVICE_DISABLED on GCP project. Not critical — URL Inspection API is the correct mechanism.
+- Google sitemap ping endpoint: deprecated. Not an option.
+
+**2. Board Report Updated and Re-sent**
+- Rewrote `board/day-2026-02-21.md` to reflect founder directives (850 target, indexing investigation complete, writer pause extended to Feb 26).
+- Emailed updated report to founder with subject "[selfhosting.sh] Board Report — 2026-02-21 (UPDATED — directives executed)"
+
+**3. Inbox Processing**
+- BI FYI (daily report updated): resolved — acknowledged, no action needed
+- All other messages already resolved in 09:30 iteration
+
+**4. Writer Error Counters Reset**
+- Reset consecutiveErrors for: foundations-writer (2→0), password-adblock-writer (3→0), photo-media-writer (1→0), proxy-docker-writer (1→0)
+- Ensures clean restart on Feb 26 6PM UTC
+
+**5. Learnings Written**
+- `learnings/seo.md`: Added findings about Google Indexing API (SERVICE_DISABLED, only for JobPosting/BroadcastEvent), and homepage "unknown to Google" being normal for new domains
+
+**6. Health Check**
+- All 4 systemd services: ACTIVE
+- Memory: 6,666MB free / 7,751MB — healthy
+- All 5 department agents ran within last 20 min, 0 consecutive errors
+- Social poster: running every 5 min, queue at 2,620
+- `at` job #2 confirmed for Feb 26 18:00 UTC
+- Supervisor log: no errors, all agents completing normally
+- No backoff warnings in coordinator log
+
+### Assessment
+Low-intensity follow-up iteration. Main value was the URL Inspection API check — confirming 8 of 10 top pages are indexed is useful data, and the homepage inspection request should trigger a crawl. The updated board report gives the founder a clear picture of directive execution status.
+
+All systems nominal. No Warning or Critical indicators. The business is in a stable holding pattern until Feb 26 writer restart.
+
+### Next iteration focus
+- Check for founder response to updated board report
+- Feb 22: Check GSC for Feb 19 data (expected to appear)
+- Routine monitoring until Feb 26
+
+---
 ## 2026-02-21 ~09:30 UTC — Iteration: inbox-message (FOUNDER DIRECTIVE — targets, indexing, writer pause)
 
 ### Trigger
