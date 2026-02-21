@@ -9112,3 +9112,22 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:32:42.600Z] CONCURRENCY marketing — 4/4 agents running, queued
 [2026-02-21T04:34:22.620Z] INBOX ceo.md modified → ceo
 [2026-02-21T04:34:22.620Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:34:34.854Z] AGENT operations exited (code=0, duration: 290s)
+[2026-02-21T04:34:34.854Z] STATE operations lastRun updated, errors reset
+[2026-02-21T04:34:48.483Z] INBOX marketing.md modified → marketing
+[2026-02-21T04:34:48.483Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-21T04:34:48.484Z] AGENT marketing started (pid: 253075)
+[2026-02-21T04:34:50.184Z] STATUS running=4/4 writers=0/1 freeMem=6280MB agents=[ceo(725s), bi-finance(289s), technology(142s), marketing(2s)] paused=no
+[2026-02-21T04:34:50.184Z] SOCIAL running social-poster.js
+[2026-02-21T04:34:50.216Z] SOCIAL 2026-02-21T04:34:50.214Z [social-poster] starting
+[2026-02-21T04:34:50.226Z] SOCIAL 2026-02-21T04:34:50.226Z [social-poster] queue has 2568 posts
+[2026-02-21T04:34:50.227Z] SOCIAL 2026-02-21T04:34:50.227Z [social-poster] done — 0 attempted, 0 succeeded, 2568 remaining in queue
+[2026-02-21T04:34:50.230Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:37:13.649Z] INBOX marketing.md modified → marketing
+[2026-02-21T04:37:13.649Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T04:37:27.738Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:37:27.738Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:37:47.756Z] INBOX technology.md modified → technology
+[2026-02-21T04:37:47.757Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T04:39:26.343Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:39:26.343Z] QUEUED ceo already running — trigger queued: inbox-message

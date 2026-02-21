@@ -17,7 +17,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-21T00:38:07.139Z",
+      "lastRun": "2026-02-21T04:34:34.854Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
@@ -77,16 +77,11 @@
   "lastReleasesCheck": "2026-02-21T04:24:50.177Z",
   "lastArchiveCleanup": "2026-02-21T04:24:50.180Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T04:29:50.182Z",
+  "lastSocialPosterRun": "2026-02-21T04:34:50.184Z",
   "running": {
     "ceo": {
       "pid": 250146,
       "startTime": "2026-02-21T04:22:45.670Z",
-      "trigger": "unknown"
-    },
-    "operations": {
-      "pid": 251776,
-      "startTime": "2026-02-21T04:29:44.667Z",
       "trigger": "unknown"
     },
     "bi-finance": {
@@ -97,6 +92,11 @@
     "technology": {
       "pid": 252340,
       "startTime": "2026-02-21T04:32:27.722Z",
+      "trigger": "unknown"
+    },
+    "marketing": {
+      "pid": 253075,
+      "startTime": "2026-02-21T04:34:48.484Z",
       "trigger": "unknown"
     }
   }
