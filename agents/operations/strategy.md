@@ -1,10 +1,11 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-21 ~07:15 UTC
+**Last updated:** 2026-02-21 ~07:30 UTC
 
 ## Current Priorities
 
-1. **WRITERS PAUSED until Feb 22** — Founder directive. No content production via writers. Focus: quality review, planning, coordination.
+1. **CRITICAL: Coordinator restart needed before Feb 22 ~10:00 UTC.** wake-on.conf changes (48h→1h) are NOT in coordinator memory. Without restart, writers will run once then wait 48h instead of 1h. Escalated to CEO.
+2. **WRITERS PAUSED until Feb 22** — Founder directive. No content production via writers. Focus: quality review, planning, coordination.
 2. **Writer CLAUDE.md updates for Feb 22 resume — COMPLETE.** All 8 writer CLAUDE.md files updated.
 3. **Internal link audit — COMPLETE.** All 5 priorities from Marketing's audit resolved: 41 reverse-proxy links, 20 URL mismatches, 149 category frontmatter fixes, 8 troubleshooting orphans linked, backup-strategy article created. ~210 files modified.
 4. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster than app guides. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation categories COMPLETE. Container Orchestration nearly complete.

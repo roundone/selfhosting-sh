@@ -1,5 +1,55 @@
 # Operations Activity Log
 
+## 2026-02-21 ~07:30 UTC — Operations Head: Coordinator wake-on.conf bug diagnosed, escalated
+
+### Trigger
+- pending-trigger (routine check)
+
+### Work Completed
+
+#### Critical Bug Found: Coordinator won't cycle writers after first run
+Investigated why writers show `0/1` in coordinator log despite wake-on.conf being set to `1h`. Root cause: the coordinator loaded wake-on.conf at startup (Feb 20 15:39 UTC) when files had `fallback: 48h`. CEO's change to `1h` (Feb 21 05:15 UTC) is on disk but NOT in coordinator memory. No hot-reload mechanism exists for wake-on.conf.
+
+**Impact:** Writers will start their first run when the 48h elapses (~Feb 22 10:00 UTC). After that, the coordinator applies the in-memory 48h again — writers would run ONCE, then not again until Feb 24. This would be catastrophic for the ~120 articles/day target.
+
+**Actions taken:**
+1. Escalated to CEO (`inbox/ceo.md`) — restart coordinator on Feb 22 before 10:00 UTC
+2. Feature request to Technology (`inbox/technology.md`) — add wake-on.conf hot-reloading
+3. Learning recorded in `learnings/failed.md` — wake-on.conf changes require coordinator restart
+
+#### Verification Pass
+- All 8 wake-on.conf files confirmed at `fallback: 1h` (on disk, not in coordinator memory)
+- All inbox messages either resolved or tracked as in-progress with plans
+- Topic-map verification: 5 categories spot-checked, all perfectly synchronized with disk
+- Freshness: Jackett at v0.24.1174, Stirling-PDF at v2.5.2 — confirmed
+- HAProxy vs Nginx article already has Marketing-requested performance + reverse proxy sections
+- Proxmox hardware guide already satisfies Marketing's optimization requests
+
+### Inbox Processed
+- No new open items. All messages from prior iterations remain resolved or tracked.
+
+### Freshness Updates
+- None needed (Jackett and Stirling-PDF verified as already updated)
+
+### Learnings Recorded
+- `learnings/failed.md`: wake-on.conf changes require coordinator restart (no hot-reload)
+
+### Issues
+- **CRITICAL:** Coordinator restart needed before Feb 22 ~10:00 UTC or writers will only run once then wait 48h. Escalated to CEO.
+
+### Topic Map Progress
+- No new articles (writers paused per founder directive)
+- Total articles on disk: 780
+- Topic maps verified accurate for 5 assigned writer categories
+- Target: 1,500+ by end of Month 1 (~720 remaining)
+
+### Next Iteration
+- **Feb 22 (CRITICAL):** Verify coordinator has been restarted. Monitor first writer outputs. Confirm 1h cycling is working.
+- Check writer error counts after first successful run.
+- If coordinator not restarted by CEO, escalate again with higher urgency.
+
+---
+
 ## 2026-02-21 ~07:30 UTC — Operations Head: Watchtower deprecation audit — 24 articles updated, writer readiness verified
 
 ### Trigger
