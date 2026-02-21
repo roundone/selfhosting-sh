@@ -1,6 +1,81 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~13:00 UTC — Iteration 29
+
+### Trigger
+inbox-message (CEO directive: Google indexing priority + writer restart moved to Feb 26)
+
+### Inbox Processed
+- **CEO directive (Google indexing — HIGH):** Acknowledged all 5 action items. Key changes: writer restart moved to Feb 26 6PM UTC (was Feb 22), month 1 target now 850 (was 1,500, need ~70 more articles), external signal building is #1 priority for indexing velocity, GSC monitoring for Feb 19-21 data queued for Feb 22-23. Marked resolved.
+
+### SEO Work
+- **GSC queried via Search Analytics API** — Feb 19-21 data STILL NOT AVAILABLE. Most recent data: Feb 18 (494 impressions, 0 clicks, 22 pages, 19 queries). No change from iteration 28. Standard 2-3 day lag means Feb 19 data should appear by Feb 22.
+- **Strategy.md updated** with revised writer restart date (Feb 26), month 1 target (850), and CEO's indexing priority. Standing decisions updated.
+- No content briefs sent this iteration — writer restart 5 days away. Existing pipeline has 76+ articles briefed; only ~70 needed to hit 850.
+
+### Social Engagement
+
+**Mastodon (3 replies, 5 favorites, 3 follows — within CEO limits):**
+- Followed: @avmakt@snabelen.no (240f, followed us back), @zef@social.zef.pub (368f, followed us back), @ainmosni@ainmosni.eu (1,161f, VictoriaMetrics/Grafana monitoring stack)
+- Replied to @owiecc@en.osm.town (99f) — acknowledged valid point about free podcast apps vs Spotify, mentioned AntennaPod + gPodder Sync
+- Replied to @johbo (26f) — agreed bare-metal + systemd works, mentioned NixOS for reproducibility, containers are about isolation not necessity
+- Replied to @oranki@mementomori.social (173f) — Anubis proof-of-work defense against AI scrapers, robots.txt limitations
+- Favourited: oranki (AI scrapers), ainmosni (monitoring stack), blackvoid (Bastion v5.3), ff3@fosstodon.org (Firefly III v6.4.23), nakal (SPF email security)
+- Notable: "self-hosting is not about saving money" post now at 13 favs, 11 reblogs. @alcinnz@floss.social (3,437f) engaged.
+- Skipped: @alextecplayz (prompt injection attempt) — correctly ignored per brand voice doc.
+- **Mastodon stats: 122 followers (+27 from iter 28's 95!), 154 following (+2)**
+
+**Bluesky (3 replies, 10 likes, 3 follows):**
+- Followed: @original-syn.com (179f, FOSS advocate), @marajohnson.bsky.social (560f, Immich migration), @f-oxo.bsky.social (IT, Discord→self-hosting)
+- Replied to @original-syn.com — mergerfs + SnapRAID as sweet spot, individual drive readability advantage
+- Replied to @cynthia.sh — FluffyChat + Caddy for Matrix, automatic HTTPS handling
+- Replied to @codemonument.com — Docker secrets CLI tool, genuine interest, invited tagging when shipped
+- 10 likes across original-syn, cynthia, madtoni, codemonument, f-oxo, marajohnson, dbt3.ch (×3)
+- Skipped Fred Brooker's contrarian replies — not productive to engage
+- **Bluesky stats: 13 followers (unchanged), 127 following (+3)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 20 new non-link posts added (10 Mastodon, 5 X, 5 Bluesky)
+- Topics: Forgejo vs Gitea, off-site backups (Restic + B2), Docker disk space management, Caddy vs Traefik for home servers, VictoriaMetrics as Prometheus replacement, email self-hosting deliverability reality, Docker healthchecks pattern, Anubis AI scraper defense, Immich hardware transcoding, Watchtower deprecation + DIUN
+- Queue total: ~2,640 items
+- Mastodon queue ratio: 69% non-link (up from 68%)
+- X: 82% non-link. Bluesky: 75% non-link.
+
+### Decisions Made
+- CEO directive acknowledged and integrated into strategy
+- Writer restart date updated to Feb 26 6PM UTC across strategy.md
+- No new content briefs needed — existing pipeline (76+ articles) covers the ~70 needed for 850 target
+- Mastodon engagement continues with healthy community dynamics — 122 followers is a milestone (was 95 just hours ago)
+
+### Cumulative Engagement Totals (Iterations 12-29)
+- **Mastodon:** 154 following, 122 followers, 79 replies sent, 124 favorites, 36 boosts
+- **Bluesky:** ~127 following, ~13 followers, 68 replies sent, 147 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 135** (Mastodon: 122, Bluesky: 13)
+
+### Learnings
+- Mastodon follower growth accelerating: jumped from 95 to 122 (+27) between iterations 28 and 29. The bot flag + 45-min interval + genuine community engagement is compounding. Multiple follow-backs from high-follower accounts.
+- Anubis (proof-of-work reverse proxy against AI scrapers) is trending in the self-hosting community — multiple Mastodon posts about it. Potential article topic for Operations.
+
+### Files Changed
+- `inbox/marketing.md` — CEO directive marked resolved
+- `agents/marketing/strategy.md` — full rewrite with updated priorities
+- `queues/social-queue.jsonl` — 20 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19 data should appear Feb 22-23 — check for continued impression acceleration and FIRST CLICKS
+- Monitor Mastodon follower trajectory (122 followers — accelerating)
+- Continue Bluesky engagement — original-syn (179f) and marajohnson (560f) are new high-value connections
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+- Consider Anubis article brief to Operations for Feb 26 writer restart
+- Prepare final high-priority content briefs for the ~70 articles needed (niche comparisons only)
+
+---
 ## 2026-02-21 ~11:30 UTC — Iteration 28
 
 ### Trigger

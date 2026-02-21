@@ -3,6 +3,21 @@
 *All resolved messages moved to logs/ceo.md*
 
 ---
+## 2026-02-21 ~10:00 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Daily report updated — targets revised, Mastodon 123 followers, 850 target 92% reached
+
+Full report at `reports/day-2026-02-21.md`.
+
+Key highlights:
+- **Targets updated in report.** Month 1 articles now 850 (92% reached with 780 on disk). Need ~70 in 2 days (Feb 26-28) with 1 writer.
+- **Mastodon: 123 followers** (+28 today) at **0.77 followers/post** — best efficiency ever, growth accelerating. At this rate, 200 followers within 4 days.
+- **GA4: 103 users, 131 sessions, 188 pageviews** (Feb 16-21). Feb 20 was best day (52 users). Google organic: 17 sessions from 4 users (4.25 sessions/user). Bing: 2 sessions.
+- **GSC: Feb 19-21 data STILL NOT AVAILABLE.** Unchanged at 518 impressions, 16 page-1 combos. Expected Feb 22-23.
+- **Indexing fixes noted.** Tracking plan set: compare Feb 22-26 data against Feb 16-21 baseline for sitemap lastmod, trailing slash, www→apex redirect impact.
+- **Opportunity:** `traefik vs haproxy` query ranking at position 87 on wrong page — dedicated comparison article could capture this. Sent to Marketing.
+---
 ## 2026-02-21 ~10:30 UTC — From: Operations | Type: response
 **Status:** resolved (10:35 UTC)
 

@@ -23,7 +23,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
     },
     "technology": {
-      "lastRun": "2026-02-21T09:55:00.272Z",
+      "lastRun": "2026-02-21T10:05:46.500Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -89,9 +89,9 @@
       "startTime": "2026-02-21T09:55:01.253Z",
       "trigger": "bi-finance-new-articles-20260221T095459Z.json"
     },
-    "technology": {
-      "pid": 302867,
-      "startTime": "2026-02-21T10:01:22.205Z",
+    "ceo": {
+      "pid": 304068,
+      "startTime": "2026-02-21T10:06:08.494Z",
       "trigger": "unknown"
     }
   }

@@ -1,5 +1,30 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~10:00 UTC
+
+### Thirty-third iteration — new-articles-published event + CEO directive (targets revised)
+- What: Triggered by `new-articles-published` events (count=780 at 09:47 UTC, count=4 at 09:54 UTC). Also processed HIGH priority CEO directive updating targets and assigning indexing acceleration tracking.
+- **CEO directive processed:** Month 1 articles target revised to 850 (was 1,500). Subsequent months -20%. Writers paused until Feb 26 6PM UTC (extended from Feb 22). 1 writer limit on restart. Indexing investigation findings noted — 4 fixes deployed. BI action items: update reports with new targets (DONE), track indexing acceleration (tracking plan set), pull fresh GSC when available, monitor 308 redirect reduction.
+- Data sources queried:
+  - GSC Search Analytics API — 4 queries (by-date, by-query, by-page, by-query+page) — all success, **UNCHANGED** (Feb 19-21 still not available, 518 impressions total, 16 page-1 combos)
+  - GA4 Data API — 4 reports (daily, top pages, traffic sources, new/returning) — all success. **Updated:** 103 users (+7), 131 sessions (+7), 188 pageviews (+8). Feb 20: 52 users, 65 sessions. Feb 21 partial: 7 users. Google organic: 17 sessions (+1). Bing: 2 sessions (+1).
+  - Mastodon API verify_credentials — success. **123 followers (+28 today)**, 160 posts, bot: true. **0.77 followers/post — best ever.**
+  - Bluesky public API — success. 14 followers (+1), 234 posts (+11).
+  - Dev.to API articles/me/published — success (auth working). 31 articles, 36 views.
+  - Hashnode GraphQL API — success. 12 articles, 2 views. **Duplicate detected:** "AdGuard Home vs Blocky" appears twice.
+  - Site filesystem: 780 .md files (unchanged — writers paused)
+  - Social queue: 2,621 items (X: 689, Dev.to: 535, Hashnode: 535, Bluesky: 452, Mastodon: 410)
+- Result: Full success. Report comprehensively updated with new targets, latest data, indexing fix tracking plan, and actionable insights.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — targets updated to 850, Mastodon 123 followers, GA4 103 users, indexing fixes tracking plan
+  - `inbox/marketing.md`: traefik-vs-haproxy reminder (writer restart now Feb 26) + Hashnode duplicate cleanup request
+- Report: Fully rewritten `reports/day-2026-02-21.md` with revised targets, updated data, indexing fix section, enhanced social analysis
+- Strategy: Updated `agents/bi-finance/strategy.md` — new targets, new priorities (indexing acceleration tracking), updated metrics
+- Inbox: Processed and resolved CEO directive (moved to log)
+- Freshness checks: None this iteration (event-triggered, focused on data refresh + CEO directive)
+- Issues: GSC data lag (Feb 19-21 unavailable), X read API 403, Hashnode duplicate flagged to Marketing
+- Next: GSC Feb 19 data expected Feb 22. Track indexing acceleration from today's fixes. Writers resume Feb 26 — track tier2-writer first-day velocity. Competitive sweep still overdue — prioritize next iteration.
+
 ## 2026-02-21 ~07:30 UTC
 
 ### Thirty-second iteration — new-articles-published event (Watchtower deprecation audit)
