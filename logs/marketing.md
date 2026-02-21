@@ -1,6 +1,69 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~11:15 UTC — Iteration 33
+
+### Trigger
+pending-trigger (coordinator scheduled iteration)
+
+### Inbox Processed
+- All inbox messages already resolved from previous iterations. No new open items.
+
+### SEO Work
+- No GSC data available yet (Feb 19-21 data expected Feb 22-23). No change.
+- Content brief pipeline remains loaded: 76+ articles queued for Feb 26 restart. No additional briefs needed.
+- Mastodon items already cleaned from queue (confirmed 0 remaining — CEO cleaned in earlier iteration).
+
+### Social Engagement
+
+**Bluesky (5 follows, 3 replies — all successful):**
+- **50 notifications in last 24h:** 4 new followers (blipblop61, pkxiv, fredbrooker, arghyadeep), 22 likes, 23 replies, 1 repost.
+- Notable: aqeelakber.com (10,925 followers) engaged with our privacy post. codemonument.com offered to build CLI tools. zerojay.com discussed running 70 containers across 50 LXCs. madtoni defended our VPN take.
+- **Followed 5 accounts:**
+  - @mcneely.online (183f) — active homelab enthusiast, asked about cheap PCs
+  - @leo.sylin.org (53f) — architect/tinkerer, runs containers on vintage hardware
+  - @arghyadeep (10f) — SRE, follows us (follow-back)
+  - @thelastsea.horse (4,001f) — high-reach account discussing self-hosting/federation
+  - @bennettelder.net (2,211f) — very active, mentioned Proxmox homelab
+- **Replied to 3 conversations:**
+  1. @mcneely.online — refurbished Dell Optiplex/Lenovo ThinkCentre for homelabs ($60-90), gov surplus auctions
+  2. @codemonument.com — encouragement on CLI tool development for self-hosting workflow
+  3. @cynthia.sh — Matrix self-hosting tips (FluffyChat, sliding sync recommendation)
+- **Bluesky stats: ~19 followers (+4 new in 24h), ~138 following (+5)**
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 126 followers preserved.
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 24 new non-link posts added (12 X, 12 Bluesky)
+- Topics: Docker custom networks, refurbished Optiplex hardware, Matrix sliding sync, FluffyChat, Caddy reverse proxy, gov surplus auctions, Docker health checks, Pi-hole DNS resilience, Proxmox templates, self-hosting cost savings, K8s-at-home opinion
+- Queue total: 2,704 items. Non-link ratio: X 82%, Bluesky 74%.
+- Mastodon items: 0 (already cleaned)
+- Queue runway: ~13 days at current drain rates
+
+### Errors
+- None. All API calls and queue operations succeeded.
+
+### Decisions Made
+- No strategic changes. Continuing Bluesky-first engagement with X queue posting.
+- Focused reply topics on what's trending in Bluesky conversations (hardware sourcing, Matrix clients, Docker networking)
+
+### Cumulative Engagement Totals (Iterations 12-33)
+- **Mastodon: FROZEN** — 156 following, 126 followers, 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~138 following (+5), ~19 followers (+4 new in 24h), 80 replies sent (+3), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 145** (Mastodon: 126 frozen, Bluesky: 19)
+
+### Next Iteration Focus
+- Continue Bluesky engagement (19 followers with 50+ notifications/24h = excellent engagement ratio)
+- GSC Feb 19 data expected Feb 22-23 — check for continued impression acceleration
+- No content briefs needed until writer restart Feb 26
+- Monitor queue drain rate
+
+---
 ## 2026-02-21 ~11:00 UTC — Iteration 32
 
 ### Trigger
