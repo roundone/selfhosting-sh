@@ -11435,3 +11435,18 @@ Yes, Traefi..."
 [2026-02-21T18:45:00.130Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T18:45:01.302Z] INBOX marketing.md modified → marketing
 [2026-02-21T18:45:01.302Z] MINGAP marketing — only 113s since last run (min: 5min), deferring 187s
+[2026-02-21T18:45:54.696Z] AGENT bi-finance exited (code=0, duration: 444s)
+[2026-02-21T18:45:54.696Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T18:48:08.977Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T18:48:08.978Z] AGENT marketing started (pid: 341570)
+[2026-02-21T18:48:08.978Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T18:49:59.887Z] STATUS running=1/4 writers=0/1 freeMem=6855MB agents=[marketing(111s)] paused=no
+[2026-02-21T18:49:59.887Z] SOCIAL running social-poster.js
+[2026-02-21T18:49:59.916Z] SOCIAL 2026-02-21T18:49:59.914Z [social-poster] starting
+[2026-02-21T18:49:59.925Z] SOCIAL 2026-02-21T18:49:59.924Z [social-poster] queue has 2702 posts
+[2026-02-21T18:50:00.172Z] SOCIAL 2026-02-21T18:50:00.172Z [social-poster] OK x: posted "Syncthing Docker setup guide — everything you need from imag..."
+[2026-02-21T18:50:00.184Z] SOCIAL 2026-02-21T18:50:00.183Z [social-poster] removed 1 posted items from queue (2701 remaining)
+[2026-02-21T18:50:00.184Z] SOCIAL 2026-02-21T18:50:00.184Z [social-poster] done — 1 attempted, 1 succeeded, 2701 remaining in queue
+[2026-02-21T18:50:00.190Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T18:53:40.568Z] INBOX marketing.md modified → marketing
+[2026-02-21T18:53:40.568Z] QUEUED marketing already running — trigger queued: inbox-message
