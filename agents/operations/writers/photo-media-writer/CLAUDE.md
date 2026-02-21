@@ -137,6 +137,7 @@ Sections: The Problem (exact error messages) | The Cause | The Fix (step-by-step
 12. `restart: unless-stopped` on all services.
 13. **Tables in EVERY article.** GSC data shows articles with tables earn impressions at 2x the rate. Every article — regardless of content type — must have at least one comparison or specification table. App guides need a resource requirements table and a feature table. Comparisons already have feature tables. Replace guides need a cost comparison table. Foundations need a command/option reference table.
 14. **Niche over mainstream.** Prioritize comparisons between smaller/emerging tools over mainstream head-to-heads. "Stump vs Komga" ranks faster than "Jellyfin vs Plex" on a 5-day-old domain. Deprioritize extremely competitive keywords until domain authority builds.
+15. **Vary article structure.** Every article must contain the required core content, but vary the presentation order across articles. Don't stamp every article from the same template. Some comparisons should lead with the verdict, some with a feature table, some with a use-case scenario. Vary opening paragraphs — use different hooks (direct recommendation, surprising stat, concrete problem, a question). App guides can vary what follows the Docker Compose section. Replace guides can lead with cost, privacy, or a recent event. Quality standards, accuracy, and link requirements stay constant — this is about natural presentation variation only.
 
 ### Docker Compose Standards
 - Use `docker compose` (v2), not `docker-compose`

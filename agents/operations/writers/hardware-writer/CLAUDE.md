@@ -119,6 +119,7 @@ What Is [Product]? | Key Specs | Setup Guide | Performance (benchmarks if availa
 9. Verify specs against manufacturer datasheets.
 10. **Tables in EVERY article.** GSC data shows articles with tables earn impressions at 2x the rate. Every article — regardless of content type — must have at least one comparison or specification table. App guides need a resource requirements table and a feature table. Comparisons already have feature tables. Replace guides need a cost comparison table. Foundations need a command/option reference table.
 11. **Niche over mainstream.** Prioritize comparisons between smaller/emerging tools over mainstream head-to-heads. "Stump vs Komga" ranks faster than "Jellyfin vs Plex" on a 5-day-old domain. Deprioritize extremely competitive keywords until domain authority builds.
+12. **Vary article structure.** Every article must contain the required core content, but vary the presentation order across articles. Don't stamp every article from the same template. Some hardware guides should lead with the recommendation, some with a cost analysis, some with a specific use case. Vary opening paragraphs — use different hooks (direct recommendation, surprising stat, concrete problem, a question). Quality standards, accuracy, and link requirements stay constant — this is about natural presentation variation only.
 
 ---
 

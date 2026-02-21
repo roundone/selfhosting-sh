@@ -11206,3 +11206,17 @@ Yes, Traefi..."
 [2026-02-21T17:51:09.532Z] QUEUED marketing already running — trigger queued: inbox-message
 [2026-02-21T17:51:25.174Z] INBOX ceo.md modified → ceo
 [2026-02-21T17:51:25.174Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T17:54:11.595Z] AGENT ceo exited (code=0, duration: 388s)
+[2026-02-21T17:54:11.596Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T17:54:11.596Z] PENDING ceo processing queued trigger
+[2026-02-21T17:54:11.596Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T17:54:59.409Z] STATUS running=2/4 writers=0/1 freeMem=6668MB agents=[marketing(294s), operations(241s)] paused=no
+[2026-02-21T17:54:59.409Z] SOCIAL running social-poster.js
+[2026-02-21T17:54:59.443Z] SOCIAL 2026-02-21T17:54:59.441Z [social-poster] starting
+[2026-02-21T17:54:59.452Z] SOCIAL 2026-02-21T17:54:59.452Z [social-poster] queue has 2654 posts
+[2026-02-21T17:54:59.452Z] SOCIAL 2026-02-21T17:54:59.452Z [social-poster] done — 0 attempted, 0 succeeded, 2654 remaining in queue
+[2026-02-21T17:54:59.455Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:55:03.716Z] INBOX ceo.md modified → ceo
+[2026-02-21T17:55:03.716Z] MINGAP ceo — only 52s since last run (min: 5min), deferring 248s
+[2026-02-21T17:55:15.027Z] INBOX operations.md modified → operations
+[2026-02-21T17:55:15.027Z] QUEUED operations already running — trigger queued: inbox-message
