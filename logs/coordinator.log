@@ -8989,3 +8989,28 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:04:50.062Z] SOCIAL 2026-02-21T04:04:50.062Z [social-poster] queue has 2560 posts
 [2026-02-21T04:04:50.063Z] SOCIAL 2026-02-21T04:04:50.063Z [social-poster] done — 0 attempted, 0 succeeded, 2560 remaining in queue
 [2026-02-21T04:04:50.067Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:08:10.196Z] AGENT marketing exited (code=0, duration: 586s)
+[2026-02-21T04:08:10.196Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T04:09:50.115Z] STATUS running=1/4 writers=0/1 freeMem=6741MB agents=[ceo(537s)] paused=no
+[2026-02-21T04:09:50.115Z] SOCIAL running social-poster.js
+[2026-02-21T04:09:50.153Z] SOCIAL 2026-02-21T04:09:50.151Z [social-poster] starting
+[2026-02-21T04:09:50.162Z] SOCIAL 2026-02-21T04:09:50.162Z [social-poster] queue has 2560 posts
+[2026-02-21T04:09:50.405Z] SOCIAL 2026-02-21T04:09:50.405Z [social-poster] OK x: posted "Use `.env` files in Docker Compose for passwords and config...."
+[2026-02-21T04:09:50.414Z] SOCIAL 2026-02-21T04:09:50.414Z [social-poster] removed 1 posted items from queue (2559 remaining)
+[2026-02-21T04:09:50.414Z] SOCIAL 2026-02-21T04:09:50.414Z [social-poster] done — 1 attempted, 1 succeeded, 2559 remaining in queue
+[2026-02-21T04:09:50.419Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:13:56.221Z] INBOX marketing.md modified → marketing
+[2026-02-21T04:13:56.221Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-21T04:13:56.222Z] AGENT marketing started (pid: 247607)
+[2026-02-21T04:14:43.278Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:14:43.278Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:14:50.121Z] STATUS running=2/4 writers=0/1 freeMem=6687MB agents=[ceo(837s), marketing(54s)] paused=no
+[2026-02-21T04:14:50.122Z] SOCIAL running social-poster.js
+[2026-02-21T04:14:50.160Z] SOCIAL 2026-02-21T04:14:50.158Z [social-poster] starting
+[2026-02-21T04:14:50.171Z] SOCIAL 2026-02-21T04:14:50.171Z [social-poster] queue has 2559 posts
+[2026-02-21T04:14:50.516Z] SOCIAL 2026-02-21T04:14:50.515Z [social-poster] OK bluesky: posted "Self-hosting tip: use restart: unless-stopped instead of res..."
+[2026-02-21T04:14:50.525Z] SOCIAL 2026-02-21T04:14:50.525Z [social-poster] removed 1 posted items from queue (2558 remaining)
+[2026-02-21T04:14:50.525Z] SOCIAL 2026-02-21T04:14:50.525Z [social-poster] done — 1 attempted, 1 succeeded, 2558 remaining in queue
+[2026-02-21T04:14:50.530Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:15:30.322Z] INBOX marketing.md modified → marketing
+[2026-02-21T04:15:30.322Z] QUEUED marketing already running — trigger queued: inbox-message
