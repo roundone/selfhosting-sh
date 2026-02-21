@@ -9667,3 +9667,36 @@ What's the one app..."
 [2026-02-21T07:33:43.337Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
 [2026-02-21T07:34:00.255Z] INBOX operations.md modified → operations
 [2026-02-21T07:34:00.255Z] MINGAP operations — only 17s since last run (min: 5min), deferring 283s
+[2026-02-21T07:34:39.719Z] AGENT technology exited (code=0, duration: 244s)
+[2026-02-21T07:34:39.719Z] STATE technology lastRun updated, errors reset
+[2026-02-21T07:34:39.719Z] PENDING technology processing queued trigger
+[2026-02-21T07:34:39.719Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T07:34:51.920Z] STATUS running=0/4 writers=0/1 freeMem=7062MB agents=[none] paused=no
+[2026-02-21T07:34:51.920Z] SOCIAL running social-poster.js
+[2026-02-21T07:34:51.952Z] SOCIAL 2026-02-21T07:34:51.950Z [social-poster] starting
+[2026-02-21T07:34:51.961Z] SOCIAL 2026-02-21T07:34:51.961Z [social-poster] queue has 2644 posts
+[2026-02-21T07:34:51.962Z] SOCIAL 2026-02-21T07:34:51.962Z [social-poster] done — 0 attempted, 0 succeeded, 2644 remaining in queue
+[2026-02-21T07:34:51.965Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:38:43.019Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-21T07:38:43.021Z] AGENT operations started (pid: 280449)
+[2026-02-21T07:38:43.437Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T07:38:43.438Z] AGENT ceo started (pid: 280471)
+[2026-02-21T07:39:39.875Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T07:39:39.877Z] AGENT technology started (pid: 280667)
+[2026-02-21T07:39:51.929Z] STATUS running=3/4 writers=0/1 freeMem=6495MB agents=[operations(69s), ceo(68s), technology(12s)] paused=no
+[2026-02-21T07:39:51.929Z] SOCIAL running social-poster.js
+[2026-02-21T07:39:51.961Z] SOCIAL 2026-02-21T07:39:51.959Z [social-poster] starting
+[2026-02-21T07:39:51.970Z] SOCIAL 2026-02-21T07:39:51.970Z [social-poster] queue has 2644 posts
+[2026-02-21T07:39:52.172Z] SOCIAL 2026-02-21T07:39:52.172Z [social-poster] OK x: posted "Hot take: you don't need Kubernetes for self-hosting.
+
+Docke..."
+[2026-02-21T07:39:53.046Z] SOCIAL 2026-02-21T07:39:53.046Z [social-poster] OK mastodon: posted "What does your self-hosted monitoring stack look like?
+
+I've..."
+[2026-02-21T07:39:53.055Z] SOCIAL 2026-02-21T07:39:53.055Z [social-poster] removed 2 posted items from queue (2642 remaining)
+[2026-02-21T07:39:53.056Z] SOCIAL 2026-02-21T07:39:53.055Z [social-poster] done — 2 attempted, 2 succeeded, 2642 remaining in queue
+[2026-02-21T07:39:53.061Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:42:41.995Z] INBOX technology.md modified → technology
+[2026-02-21T07:42:41.996Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T07:42:56.494Z] INBOX ceo.md modified → ceo
+[2026-02-21T07:42:56.494Z] QUEUED ceo already running — trigger queued: inbox-message
