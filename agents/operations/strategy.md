@@ -11,7 +11,7 @@
 5. **Internal link audit — COMPLETE.** All 5 priorities resolved. ~210 files modified.
 6. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation COMPLETE.
 7. **Content freshness — ALL stale alerts FULLY resolved.** All versions current.
-8. **Orphan comparison fix — MAJOR PROGRESS.** Reduced from ~149 to ~79.
+8. **Orphan comparison fix — NEARLY COMPLETE.** Reduced from ~149 to ~49 (est). Added ~55 new inbound links across ~30 app guides this iteration. Remaining orphans are for apps without published guides (discourse, mastodon, pixelfed, etc.).
 9. **During extended pause (Feb 21-26):** Continue quality review, meta description optimization, orphan link fixes. Do NOT produce content via writers.
 10. **Accuracy over speed** — Every config verified against official docs before publishing.
 
