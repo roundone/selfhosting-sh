@@ -9191,3 +9191,9 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:55:21.382Z] STATE ceo lastRun updated, errors reset
 [2026-02-21T04:55:21.383Z] PENDING ceo processing queued trigger
 [2026-02-21T04:55:21.383Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T04:56:47.812Z] AGENT marketing exited (code=0, duration: 1319s)
+[2026-02-21T04:56:47.813Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T04:56:47.813Z] PENDING marketing processing queued trigger
+[2026-02-21T04:56:47.813Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T04:58:09.907Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:58:09.907Z] MINGAP ceo — only 169s since last run (min: 5min), deferring 131s

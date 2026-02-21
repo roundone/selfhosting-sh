@@ -12,7 +12,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-21T04:27:42.499Z",
+      "lastRun": "2026-02-21T04:56:47.813Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T04:54:50.229Z",
   "running": {
-    "marketing": {
-      "pid": 253075,
-      "startTime": "2026-02-21T04:34:48.484Z",
-      "trigger": "unknown"
-    },
     "bi-finance": {
       "pid": 255562,
       "startTime": "2026-02-21T04:47:52.750Z",
