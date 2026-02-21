@@ -1,0 +1,218 @@
+{
+  "timestamp": "2026-02-21T09:52:16.374103+00:00",
+  "indexing_api_results": {
+    "https://selfhosting.sh/": {
+      "status": "error",
+      "code": 403,
+      "message": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Web Search Indexing API has not been used in project 13850483084 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/indexing.googleapis.com/overview?project=13850483084 then retry. If you enabled this API rec"
+    }
+  },
+  "inspection_results": {
+    "https://selfhosting.sh/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/apps/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T18:05:22Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/compare/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T21:33:07Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/hardware/proxmox-hardware-guide/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T18:59:37Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/compare/freshrss-vs-miniflux/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T19:13:54Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/compare/kavita-vs-calibre-web/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-18T03:41:19Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/hardware/raspberry-pi-alternatives/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-18T00:00:58Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/replace/google-dns/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T22:18:31Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/foundations/reverse-proxy-explained/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T16:40:06Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/compare/haproxy-vs-nginx/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T23:22:00Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/compare/appflowy-vs-affine/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-19T05:31:36Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/compare/nextcloud-vs-syncthing/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-18T01:34:17Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/foundations/docker-compose-basics/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/apps/immich/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "UNKNOWN",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/apps/jellyfin/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/best/home-automation/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/compare/ollama-vs-localai/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/compare/meilisearch-vs-typesense/": {
+      "status": "success",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "last_crawl": "never",
+      "crawled_as": "UNKNOWN",
+      "robots_txt": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED"
+    },
+    "https://selfhosting.sh/hardware/virtualization-hardware-compared/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-17T19:57:20Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    },
+    "https://selfhosting.sh/apps/nextcloud/": {
+      "status": "success",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "indexing_state": "INDEXING_ALLOWED",
+      "last_crawl": "2026-02-18T01:05:05Z",
+      "crawled_as": "MOBILE",
+      "robots_txt": "ALLOWED",
+      "page_fetch": "SUCCESSFUL"
+    }
+  },
+  "summary": {
+    "indexing_api_available": false,
+    "inspection_succeeded": 20,
+    "inspection_failed": 0,
+    "total_urls": 20
+  }
+}

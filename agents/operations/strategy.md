@@ -1,19 +1,18 @@
 # Operations Strategy
 
-**Last updated:** 2026-02-21 ~07:30 UTC
+**Last updated:** 2026-02-21 ~10:30 UTC
 
 ## Current Priorities
 
-1. **CRITICAL: Coordinator restart needed before Feb 22 ~10:00 UTC.** wake-on.conf changes (48h→1h) are NOT in coordinator memory. Without restart, writers will run once then wait 48h instead of 1h. Escalated to CEO.
-2. **WRITERS PAUSED until Feb 22** — Founder directive. No content production via writers. Focus: quality review, planning, coordination.
-2. **Writer CLAUDE.md updates for Feb 22 resume — COMPLETE.** All 8 writer CLAUDE.md files updated.
-3. **Internal link audit — COMPLETE.** All 5 priorities from Marketing's audit resolved: 41 reverse-proxy links, 20 URL mismatches, 149 category frontmatter fixes, 8 troubleshooting orphans linked, backup-strategy article created. ~210 files modified.
-4. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster than app guides. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation categories COMPLETE. Container Orchestration nearly complete.
-5. **Feb 22 brief categories ready to go:** Document Signing (11 articles), Low-Code (14 articles), Ticketing (14 articles), DNS & Networking remaining (17 articles) — all assigned to writers.
-6. **Content freshness — ALL stale alerts FULLY resolved.** All versions current. 17 `:latest` tags fixed.
-7. **Orphan comparison fix — MAJOR PROGRESS.** Added ~104 inbound links from 44 app guides to orphan comparisons. Orphan comparisons reduced from ~149 to ~79. Remaining orphans are for apps without guides yet (cosmos-cloud, lazydocker, watchtower, pixelfed, discourse, mastodon, etc.) — will resolve as writers produce those guides. `/foundations/security-basics` FIXED. `/foundations/remote-access` assigned to vpn-filesync-writer for Feb 22.
-8. **New GSC-confirmed opportunity:** `/compare/traefik-vs-haproxy/` assigned to proxy-docker-writer as Priority 0 for Feb 22.
-9. **Execute content queue from topic-map** — 1,224 articles planned, ~778 on disk (~64%). Need ~722 more by ~Feb 28.
+1. **WRITERS PAUSED until Feb 26 6PM UTC** — Founder directive (extended from Feb 22). 1 writer limit on restart. wake-on.conf already set to 130h fallback. Coordinator restart scheduled Feb 26 18:00 UTC via `at` job. Do NOT reset wake-on.conf before Feb 26.
+2. **Only ~70 articles needed** — 780 on disk, 850 target (revised from 1,500). Focus on highest-value content: niche comparisons, hardware guides, replace articles.
+3. **First writer on Feb 26: `tier2-writer`** — Covers most categories (Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks). Produces niche comparisons across many categories for maximum SEO breadth. Alternative: `password-adblock-writer` (Social Networks + Task Management niche comparisons).
+4. **Writer CLAUDE.md updates — COMPLETE.** All 8 writer CLAUDE.md files updated for reassignment.
+5. **Internal link audit — COMPLETE.** All 5 priorities resolved. ~210 files modified.
+6. **Comparison articles — CRITICAL priority from Marketing.** GSC data shows comparisons rank 2-3x faster. AI/ML + Search Engines + Automation & Workflows + Wiki & Documentation COMPLETE.
+7. **Content freshness — ALL stale alerts FULLY resolved.** All versions current.
+8. **Orphan comparison fix — MAJOR PROGRESS.** Reduced from ~149 to ~79.
+9. **During extended pause (Feb 21-26):** Continue quality review, meta description optimization, orphan link fixes. Do NOT produce content via writers.
 10. **Accuracy over speed** — Every config verified against official docs before publishing.
 
 ## Standing Decisions
@@ -33,11 +32,11 @@
 | **Tables in EVERY article** | GSC data: articles with tables earn 2x more impressions. Every article must have at least one comparison/specification table regardless of content type. | Feb 20, 2026 (Marketing) |
 | **Niche comparisons over mainstream** | "Stump vs Komga" ranks faster than "Jellyfin vs Plex" on a new domain. Deprioritize highly competitive keywords until domain authority builds. | Feb 20, 2026 (Marketing) |
 
-## Writer Reassignment Plan (Feb 22 Resume) — FINAL
+## Writer Restart Plan (Feb 26 6PM UTC Resume) — REVISED
 
-**Goal:** ~727 articles needed in ~6 days = ~121 articles/day. With 8 writers doing ~15-25 articles each per iteration, need aggressive assignment.
+**Goal:** ~70 articles needed (780 on disk, 850 target). Only 1 writer runs at a time (maxWriterConcurrent: 1). Focus on highest SEO-value content per article.
 
-**Strategy:** Reassign writers whose categories are complete to new high-value Marketing brief categories. Categories nearly complete get remaining stragglers plus new work.
+**Strategy:** Start with the writer that maximizes niche comparison output. Only 1 writer at a time means we must sequence carefully. Priority: niche comparisons > hardware > replace articles > app guides.
 
 | Writer | New Assignment | Articles | Priority |
 |--------|---------------|----------|----------|
@@ -65,18 +64,18 @@
 | Draft articles stuck | 0 | None | Clean |
 | Filler language | 0 | None | Voice guidelines well-followed |
 
-## Writer Assignments (Current — ALL PAUSED, CLAUDE.md UPDATED for Feb 22)
+## Writer Assignments (Current — ALL PAUSED until Feb 26 6PM UTC, 1 writer limit on restart)
 
-| Writer | Categories (NEW) | CLAUDE.md Updated | Status |
-|--------|-----------------|-------------------|--------|
-| foundations-writer | *arr finish + Document Signing + Low-Code | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| proxy-docker-writer | Newsletters + File Sharing | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| homeauto-notes-writer | Music & Audio + Video Surveillance | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| password-adblock-writer | Social Networks + Task Management | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| vpn-filesync-writer | DNS & Networking | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| photo-media-writer | Ebooks finish + Ticketing & Helpdesk | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | ✅ Feb 20 | **PAUSED** (until Feb 22) |
-| hardware-writer | Hardware (expanding) | ✅ Feb 20 | **PAUSED** (until Feb 22) |
+| Writer | Categories (NEW) | CLAUDE.md Updated | Restart Order |
+|--------|-----------------|-------------------|---------------|
+| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | ✅ Feb 20 | **1st** — most categories, niche comparison breadth |
+| password-adblock-writer | Social Networks + Task Management | ✅ Feb 20 | 2nd — niche comparisons (discourse-vs-flarum, etc.) |
+| proxy-docker-writer | Newsletters + File Sharing + traefik-vs-haproxy | ✅ Feb 20 | 3rd — GSC-confirmed opportunity |
+| foundations-writer | *arr finish + Document Signing + Low-Code | ✅ Feb 20 | 4th |
+| homeauto-notes-writer | Music & Audio + Video Surveillance | ✅ Feb 20 | 5th |
+| vpn-filesync-writer | DNS & Networking | ✅ Feb 20 | 6th |
+| photo-media-writer | Ebooks finish + Ticketing & Helpdesk | ✅ Feb 20 | 7th |
+| hardware-writer | Hardware (expanding) | ✅ Feb 20 | 8th |
 
 ## What We've Tried
 

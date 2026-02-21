@@ -34,14 +34,14 @@ Consult these when doing the work they cover. You don't need to re-read them on 
 
 | Metric | Month 1 | Month 3 | Month 6 | Month 9 | Month 12 |
 |--------|---------|---------|---------|---------|----------|
-| Articles published | 1,500+ | 10,000+ | 15,000+ | 18,000+ | 20,000+ |
+| Articles published | 850+ | 8,000+ | 12,000+ | 14,400+ | 16,000+ |
 | Page 1 keywords | 100+ | 500+ | 1,000+ | 2,000+ | 3,000+ |
 | Monthly organic visits | 5,000 | 50,000 | 100,000 | 200,000+ | 300,000+ |
 | Monthly revenue | $0-100 | $500-1,000 | $2,000-4,000 | $5,000+ | $10,000+ |
 | Referring domains | 10+ | 50+ | 100+ | 200+ | 500+ |
 | Social followers (all platforms combined) | 1,000+ | 5,000+ | 15,000+ | 30,000+ | 50,000+ |
 
-> **Note:** Articles published target revised by board approval on 2026-02-20. Month 1 target changed from 5,000+ to 1,500+. The 5,000+ target moves to Month 2 (not shown in table). Month 3+ targets unchanged.
+> **Note:** Articles published targets revised by board approval on 2026-02-21. Month 1 target: 850+ (was 1,500+). All subsequent month targets reduced by 20% from original values. Writers paused until Feb 26 6PM UTC; restart with 1 writer limit.
 
 ### Operating Tempo
 

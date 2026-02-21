@@ -4,12 +4,12 @@
 
 ## Current Priorities
 
-1. **Writers resume Feb 22.** All 8 CLAUDE.md files updated with new category assignments, 155-char meta description requirement, comparison-first priority. Operations directed to reset wake-on.conf from 48h→1h on Feb 22. Target: ~103 articles/day for 7 remaining days to hit 1,500.
-2. **GA4 Feb 20 breakout.** 49 users, 62 sessions, 83 pageviews — 69% jump over previous best. Total: 93 users, 121 sessions. Traffic accelerating even with writers paused. Proves content is compounding.
-3. **Mastodon stabilized + frequency reduced.** App revocation resolved, posting interval increased 15→45 min after community pushback. 81 followers (0.56/post). Must protect this community relationship.
-4. **Trailing slash — ALREADY FIXED (Technology confirmed).** 308 redirects in place since Feb 20. GSC split is historical artifact. CEO's initial diagnosis was wrong — no further action needed. Monitor for consolidation in Feb 22-25 GSC data.
-5. **GSC data lag.** Feb 18 data (latest) shows 518 impressions, 22 pages, 0 clicks. Feb 19-20 data not yet available (2-3 day lag). First clicks expected when that data arrives. BI tasked with fresh pull.
-6. **Social media — posting healthy.** Queue at ~2,557 items. Mastodon at 45-min interval, X at 15-min, Bluesky at 10-min. Mastodon engagement limits in effect.
+1. **INDEXING FIXES (HIGH PRIORITY — founder directive).** Root causes identified and fixed: (1) Sitemap `<lastmod>` added, (2) 9,893 internal links fixed to include trailing slashes (eliminates crawl-budget-wasting 308 redirects), (3) www→apex 301 redirect deployed via CF Pages middleware, (4) RSS autodiscovery `<link>` tag added. Next: manual indexing requests for top 20 pages via GSC API. Deploy and resubmit sitemap.
+2. **Writers paused until Feb 26 6PM UTC (founder directive).** Extended from Feb 22. Resume with **1 writer limit only**. All 8 wake-on.conf set to 130h. Coordinator restart scheduled Feb 26 18:00 UTC.
+3. **Month 1 target: 850 articles (founder directive).** Down from 1,500. All subsequent targets reduced 20%. 780 on disk. Need ~70 more in final 2 days with 1 writer. Very achievable.
+4. **GA4 traffic accelerating.** 93+ users, 121+ sessions despite writers paused. 16 organic sessions from Google with 4x repeat rate. Content is compounding.
+5. **Social media — healthy.** Mastodon: 105 followers at 45-min interval. Bluesky: 13 followers. X: 31 following. Queue at ~2,639 items.
+6. **GSC data lag.** Feb 18 data shows 518 impressions, 22 pages, 0 clicks. Feb 19-21 data expected Feb 22-23. First clicks likely when that data arrives.
 
 ## Standing Decisions
 
@@ -20,12 +20,12 @@
 | Social posting via queue only | Founder directive — agents never call social APIs directly. bin/social-poster.js handles all posting. | Feb 19, 2026 |
 | No affiliate disclosures until founder says otherwise | Premature disclosures damage trust. We have zero affiliate relationships. | Feb 19, 2026 |
 | Marketing can queue social posts freely | HOLD lifted Feb 20. Queue handles rate limiting automatically. | Feb 20, 2026 |
-| **ALL WRITERS PAUSED (founder directive)** | Founder paused all writers until Feb 22. 773 articles sufficient. Focus: Technology, Marketing, BI, IR. | Feb 20, 2026 |
-| **48h fallback (paused until Feb 22)** | Founder directive. Do NOT override without board approval. | Feb 20, 2026 |
+| **ALL WRITERS PAUSED (founder directive)** | Founder paused all writers until **Feb 26 6PM UTC**. 780 articles. Resume with **1 writer only**. | Feb 21, 2026 |
+| **130h fallback (paused until Feb 26 6PM UTC)** | Founder directive. Do NOT override without board approval. | Feb 21, 2026 |
 | Comparison articles first | GSC data shows comparisons rank 2-3x faster than app guides. All writer CLAUDE.md files prioritize comparisons. | Feb 20, 2026 |
 | CEO directly fixes critical issues when departments stall | Technology was non-functional for 5 days. CEO fixed search directly. Escalation-only approach was too slow. | Feb 20, 2026 |
 | Pagefind index/ → idx/ rename in build | Cloudflare Pages treats `index/` as directory-index reference. Post-build step renames it. | Feb 20, 2026 |
-| **Month 1 target: 1,500 articles (revised from 5,000)** | Board approved. 5,000 moves to Month 2. Realistic given infrastructure constraints and ramp-up time. | Feb 20, 2026 |
+| **Month 1 target: 850 articles (revised from 1,500)** | Founder directive Feb 21. All subsequent targets reduced 20%. | Feb 21, 2026 |
 | **Playwright-first policy** | All agents must attempt Playwright browser automation before escalating to human. Founder directive. | Feb 20, 2026 |
 | **Social poster skips 403 duplicates** | Fixed infinite loop where X duplicate content errors blocked all X posting. Poster now removes rejected posts and tries next. | Feb 20, 2026 |
 | **Social engagement > syndication** | Founder directive: max 30% article links, 70%+ engagement/original content. Active follows, replies, boosts daily. | Feb 20, 2026 |
@@ -35,6 +35,10 @@
 | **Mastodon engagement limits** | Max 3 follows/iteration, 15/day. Max 3 replies/iteration. Max 15 API calls/iteration. Prevents app revocation. | Feb 21, 2026 |
 | **Trailing slash: ALREADY FIXED** | Cloudflare Pages issues 308 redirects (equivalent to 301 for SEO). GSC split is historical artifact. No action needed. | Feb 21, 2026 |
 | **Mastodon posting interval: 45 min** | Increased from 15 min after community pushback on posting frequency. ~32 posts/day still substantial. Community trust > volume. | Feb 21, 2026 |
+| **Sitemap lastmod added** | Astro sitemap plugin now emits `<lastmod>` dates. Helps Google prioritize crawling. | Feb 21, 2026 |
+| **Internal links: trailing slashes fixed (9,893 links)** | Eliminated 308 redirect chains on internal links that were wasting crawl budget. | Feb 21, 2026 |
+| **www→apex 301 redirect** | CF Pages middleware returns 301 for www.selfhosting.sh→selfhosting.sh. Prevents crawl budget waste. | Feb 21, 2026 |
+| **RSS autodiscovery link tag** | Added `<link rel="alternate" type="application/rss+xml">` to Base.astro head. Helps aggregators discover content. | Feb 21, 2026 |
 
 ## What We've Tried
 
@@ -52,7 +56,7 @@
 
 ## Open Questions
 
-- **Writer pause impact on Month 1 target** — 779 articles published vs 1,500 target. Writers paused until Feb 22. With 6 days remaining (Feb 22-28), need ~721 articles in 6 days (~120/day). Achievable with 8 concurrent writers but tight.
+- **Writer pause impact on Month 1 target** — 780 articles published vs 850 target. Writers paused until Feb 26 6PM UTC. With ~2 days remaining (Feb 26 6PM - Feb 28), need ~70 articles with 1 writer. Very achievable (~35/day).
 - **Social engagement execution** — Marketing showed strong first results (41 follows, 8 replies). Can they sustain and grow? Mastodon is the clear winner. → PARTIALLY ANSWERED: Yes, first iteration exceeded all targets.
 - **Portal security + v3** — ✅ RESOLVED. Portal v3 live with login auth, 11 pages including Growth metrics and Agent Instructions. HTTPS at portal.selfhosting.sh.
 - **GA4 data availability** — ✅ RESOLVED. BI successfully querying GA4 API. Property ID 524871536 confirmed working.

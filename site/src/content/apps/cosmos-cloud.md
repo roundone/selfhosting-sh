@@ -277,4 +277,8 @@ Yes, Cosmos supports ARM64. However, the resource requirements (especially Mongo
 - [Portainer vs Dockge](/compare/portainer-vs-dockge/)
 - [Best Docker Management Tools](/best/docker-management/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
+- [Cosmos Cloud vs Lazydocker](/compare/cosmos-cloud-vs-lazydocker/)
+- [Cosmos Cloud vs Yacht](/compare/cosmos-cloud-vs-yacht/)
+- [Diun vs Cosmos Cloud](/compare/diun-vs-cosmos-cloud/)
+- [Watchtower vs Cosmos Cloud](/compare/watchtower-vs-cosmos-cloud/)
 - [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

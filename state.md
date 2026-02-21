@@ -1,13 +1,13 @@
 ## Current Phase: Launch — Day 6 Operations
-## Last Updated: 2026-02-21 08:02 UTC (CEO iter 08:02)
+## Last Updated: 2026-02-21 09:45 UTC (CEO iter 09:45)
 
 ## Content
 - **Total articles on disk: 780** (208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
-- In progress: **ALL WRITERS PAUSED** (Founder directive 2026-02-20). No writers running. Resume Feb 22.
+- In progress: **ALL WRITERS PAUSED** (Founder directive 2026-02-21). No writers running. Resume **Feb 26 6PM UTC** with **1 writer limit**.
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
-- **Writer pipeline RESUME READY** — All 8 wake-on.conf updated from 48h→1h. Error counts reset (all 4 writers with stale errors now at 0). **Coordinator restart scheduled Feb 22 08:00 UTC** (via `at` job) to pick up new 1h fallback intervals. Writers auto-start when 48h window elapses (~Feb 22 10:00 UTC).
-- Velocity: +225 articles today (writers now PAUSED — no further production until Feb 22).
-- Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 780 published. Writers paused until Feb 22 per founder directive. Need ~103/day for 7 remaining days (Feb 22-28).
+- **Writer pause EXTENDED** — All 8 wake-on.conf updated to 130h fallback. Coordinator restart scheduled **Feb 26 18:00 UTC** (via `at` job). maxWriterConcurrent: 1.
+- Velocity: 0 (writers PAUSED — no further production until Feb 26 6PM UTC).
+- Target: **850+ articles by end of Month 1** (revised from 1,500 by founder directive 2026-02-21). All subsequent month targets reduced 20%. 780 published. Need ~70 more articles in final 2 days (Feb 26-28) with 1 writer.
 - Topic map: 1,224 planned across 78 categories, ~778 published = ~64% of topic map
 - Categories with content: 22+ / 78 (AI/ML, Search Engines, Automation & Workflows COMPLETE; Container Orchestration 13/16)
 
@@ -35,17 +35,17 @@
 | **NEW: Container Orchestration** | 13 | 16 | 81% | Nearly complete (writer done, 3 articles remaining) |
 | **NEW: Automation & Workflows** | 15 | 15 | 100% | **COMPLETE** |
 
-## Writer Assignments (updated 2026-02-20 ~13:00 UTC — ALL PAUSED, CLAUDE.md UPDATED for Feb 22 resume)
-| Writer | Categories (Feb 22 Assignment) | Status |
+## Writer Assignments (updated 2026-02-21 ~09:45 UTC — ALL PAUSED until Feb 26 6PM UTC, 1 writer limit on restart)
+| Writer | Categories (Assignment) | Status |
 |--------|-------------------------------|--------|
-| foundations-writer | *arr finish (3) + Document Signing (11) + Low-Code (14) | **PAUSED** (CLAUDE.md updated) |
-| proxy-docker-writer | Newsletters & Mailing Lists + File Sharing & Transfer | **PAUSED** (CLAUDE.md updated) |
-| homeauto-notes-writer | Video Surveillance + Music & Audio (remaining ~12) | **PAUSED** (CLAUDE.md updated) |
-| password-adblock-writer | Social Networks & Forums + Task Management | **PAUSED** (CLAUDE.md updated) |
-| vpn-filesync-writer | DNS & Networking remaining (17) | **PAUSED** (CLAUDE.md updated) |
-| photo-media-writer | Ebooks finish (3) + Ticketing & Helpdesk (14) | **PAUSED** (CLAUDE.md updated) |
-| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | **PAUSED** (CLAUDE.md updated) |
-| hardware-writer | Hardware (expanding) | **PAUSED** (CLAUDE.md updated) |
+| foundations-writer | *arr finish (3) + Document Signing (11) + Low-Code (14) | **PAUSED** (until Feb 26 6PM UTC) |
+| proxy-docker-writer | Newsletters & Mailing Lists + File Sharing & Transfer | **PAUSED** (until Feb 26 6PM UTC) |
+| homeauto-notes-writer | Video Surveillance + Music & Audio (remaining ~12) | **PAUSED** (until Feb 26 6PM UTC) |
+| password-adblock-writer | Social Networks & Forums + Task Management | **PAUSED** (until Feb 26 6PM UTC) |
+| vpn-filesync-writer | DNS & Networking remaining (17) | **PAUSED** (until Feb 26 6PM UTC) |
+| photo-media-writer | Ebooks finish (3) + Ticketing & Helpdesk (14) | **PAUSED** (until Feb 26 6PM UTC) |
+| tier2-writer | Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks | **PAUSED** (until Feb 26 6PM UTC) |
+| hardware-writer | Hardware (expanding) | **PAUSED** (until Feb 26 6PM UTC) |
 
 ## Site
 - Status: LIVE
@@ -123,14 +123,14 @@
 - Rate-limiting proxy: ACTIVE at localhost:3128
 - Social poster: ACTIVE (running every 5 min via coordinator)
 
-## Coordinator Config (FOUNDER OVERRIDE 2026-02-20)
+## Coordinator Config (FOUNDER OVERRIDE 2026-02-21)
 - maxTotalConcurrent: 4
-- maxWriterConcurrent: 0 (config file immutable; writers paused via 48h wake-on.conf)
-- writerFallbackHours: 48 (all writers paused until Feb 22 per founder directive)
+- maxWriterConcurrent: 1 (1 writer limit on restart per founder directive 2026-02-21)
+- writerFallbackHours: 8
 - deptFallbackHours: 8
 - memoryMinFreeMb: 1200
 - minIterationGapMinutes: 5
-- **Note:** Founder directive 2026-02-20: ALL writers paused until Feb 22. Config file locked (immutable attr). Focus: Technology, Marketing, BI, IR.
+- **Note:** Founder directive 2026-02-21: ALL writers paused until Feb 26 6PM UTC (130h wake-on.conf). Restart with 1 writer limit. Coordinator restart scheduled Feb 26 18:00 UTC via `at` job.
 
 ## Agent Health
 | Agent | Last Run | Errors | Status |
@@ -154,7 +154,7 @@
 - Social credentials PENDING for: Reddit (app creation blocked by policy wall)
 - LinkedIn API approval PENDING (deprioritized per founder)
 - GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 72 users, 97 sessions, 15 organic sessions (Feb 16-20).
-- **Content production PAUSED** — Founder directive: all writers paused until Feb 22. 778 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 resume. Focus: Technology, Marketing, BI, IR until resume date.
+- **Content production PAUSED** — Founder directive 2026-02-21: all writers paused until **Feb 26 6PM UTC**. 780 articles on disk. Restart with **1 writer limit**. Focus: Technology, Marketing, BI, indexing fixes until resume date.
 - Coordinator v2.0 now discovers IR agent (restarted at 12:35 UTC — 14 agents discovered)
 
 ## Founder Directives Status
@@ -173,7 +173,7 @@
 13. Human dependency audit → **DONE** (Feb 20 09:15 UTC) — `board/human-dependency-audit-2026-02-20.md` emailed to founder
 14. Playwright-first policy → **DONE** (Feb 20 09:15 UTC) — Added as sacrosanct directive in all 5 department CLAUDE.md files
 15. Create IR department → **DONE** (Feb 20 prior iteration) — agents/investor-relations/ created with CLAUDE.md, inbox, wake-on.conf
-16. **Pause ALL writers until Feb 22** → **DONE** (Feb 20 10:25 UTC) — All 8 writer wake-on.conf set to 48h. No writers running. Focus: Technology, Marketing, BI, IR.
+16. **Pause ALL writers until Feb 22** → **SUPERSEDED** by directive 36 (Feb 21) — Extended to Feb 26 6PM UTC with 1 writer limit.
 17. **Social media strategy overhaul** → **DONE** (Feb 20 ~11:00 UTC) — Marketing CLAUDE.md updated with full engagement strategy. Inbox directive sent. Daily targets: 10+ follows, 5+ replies, 3+ posts (70%+ non-link).
 18. **Portal improvements (security, UI, alerts)** → **COMPLETE** (Feb 20 ~14:25 UTC) — Portal Phase 1 done: login security (sessions, brute-force), HTTPS at portal.selfhosting.sh, polished UI, per-agent alert intervals, credential redaction verified. IR transitioning to Phase 2 (weekly cadence).
 19. **New credentials (Mastodon, Dev.to)** → **DONE** (Feb 20) — Mastodon posting confirmed working at 10:53 UTC. Dev.to API key provided. Social poster config already enabled. Marketing notified.
@@ -193,3 +193,6 @@
 33. **Brand voice + smart reply strategy** → **COMPLETE** (Feb 20 ~19:45 UTC) — Marketing created `agents/marketing/brand-voice.md` with all 7 required sections. All future engagement follows this document.
 34. **Dev.to/Hashnode cross-post queue** → **COMPLETE** (Feb 20 ~19:30 UTC) — Technology implemented `postDevto`/`postHashnode` in social-poster.js. Both tested end-to-end (Dev.to 201, Hashnode 200). 49 entries per platform in queue. Marketing to upload brand assets to social profiles.
 35. **Mastodon 401 investigation** → **RESOLVED** (Feb 21 ~04:15 UTC) — Root cause: mastodon.social revoked app registration due to aggressive automated activity (108+ follows, high-volume API usage). Account NOT suspended. Fix: new app registered (`selfhosting-sh-posting`), new token via Playwright OAuth, bot flag set to true, mandatory engagement limits sent to Marketing. See `learnings/failed.md` for details.
+36. **Lower Month 1 target to 850, reduce subsequent by 20%** → **DONE** (Feb 21 ~09:45 UTC) — Scorecard updated in CLAUDE.md: M1=850, M3=8,000, M6=12,000, M9=14,400, M12=16,000. state.md and strategy.md updated.
+37. **Investigate Google indexing issues (HIGH PRIORITY)** → **IN PROGRESS** (Feb 21 ~09:45 UTC) — Investigation complete. Root causes: (1) No `<lastmod>` in sitemap, (2) 428 articles published same day = quality filter trigger, (3) ~9,893 internal links missing trailing slashes wasting crawl budget, (4) www.selfhosting.sh not redirecting to apex. Fixes applied: sitemap lastmod added, 9,893 links fixed, www→apex 301 redirect via CF Pages middleware, RSS autodiscovery tag added. Manual indexing requests pending. Technology notified to deploy.
+38. **Extend writer pause to Feb 26 6PM UTC, 1 writer limit** → **DONE** (Feb 21 ~09:45 UTC) — All 8 wake-on.conf updated to 130h fallback. Feb 22 `at` job cancelled, new `at` job for Feb 26 18:00 UTC. maxWriterConcurrent: 1.

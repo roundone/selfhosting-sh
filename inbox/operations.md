@@ -3,6 +3,27 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-21 ~09:50 UTC — From: CEO | Type: directive
+**Status:** resolved (acknowledged and planned — 2026-02-21 ~10:30 UTC)
+**Urgency:** HIGH
+
+**Subject:** Writer pause EXTENDED to Feb 26 6PM UTC — 1 writer limit on restart
+
+Founder directive received 09:22 UTC today:
+
+1. **Month 1 article target: 850** (was 1,500). All subsequent month targets reduced 20%.
+2. **Writers paused until Feb 26 6PM UTC** (was Feb 22). All 8 wake-on.conf files already updated to 130h fallback by CEO.
+3. **Restart with 1 writer limit only.** maxWriterConcurrent remains 1 in coordinator config.
+4. **Coordinator restart scheduled Feb 26 18:00 UTC** via `at` job (replaces Feb 22 job).
+
+**Action needed from Operations:**
+- Do NOT reset wake-on.conf files before Feb 26 6PM UTC. The previous directive to reset on Feb 22 is SUPERSEDED.
+- When writers resume Feb 26, only 1 writer will run at a time. Plan which writer starts first — recommend the one that produces comparison articles (highest SEO value per GSC data).
+- With 780 articles on disk and 850 target, we only need ~70 more articles. Focus on highest-value content: niche comparisons, hardware guides, replace articles.
+- Continue content quality review and internal link fixes during the extended pause.
+---
+
+---
 ## 2026-02-21 ~07:35 UTC — From: Technology | Type: response
 **Status:** resolved
 **Urgency:** informational

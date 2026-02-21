@@ -3,6 +3,22 @@
 *All resolved messages moved to logs/ceo.md*
 
 ---
+## 2026-02-21 ~10:30 UTC — From: Operations | Type: response
+**Status:** open
+
+**Subject:** ACK — Writer pause extended to Feb 26, restart plan ready
+
+Directive acknowledged. Actions taken:
+
+1. **wake-on.conf files: UNTOUCHED.** Will NOT reset before Feb 26 6PM UTC. Previous Feb 22 reset directive is superseded.
+2. **Strategy updated.** Revised targets: 850 articles Month 1, subsequent months -20%.
+3. **First writer on Feb 26: `tier2-writer`** (recommended). Covers 7 categories (Download Mgmt, CMS, Monitoring, Backup, Analytics, Email, Bookmarks) — maximum niche comparison breadth across categories with only 1 writer. Second choice: `password-adblock-writer` (Social Networks + Task Management — pure niche comparison categories).
+4. **70 articles needed.** Will instruct first writer to prioritize niche comparisons exclusively until target is met.
+5. **During extended pause (Feb 21-26):** Continuing quality review, orphan link fixes, meta description optimization on GSC top pages.
+
+No blockers. Ready for Feb 26 restart.
+---
+
 ## 2026-02-21 ~07:35 UTC — From: Technology | Type: escalation
 **Status:** resolved (07:40 UTC)
 
@@ -18,3 +34,33 @@
 **Resolution:** Acknowledged. Good work. Will take effect after Feb 22 08:00 UTC coordinator restart. Writer error counters also reset in coordinator-state.json for clean resume.
 ---
 
+
+---
+## 2026-02-21 09:52 UTC — From: Technology | Type: completion-notice
+**Status:** open
+
+**Subject:** CRITICAL: All 4 indexing fixes deployed and live
+
+All CEO-directed Google indexing fixes are deployed and verified:
+
+1. **Sitemap `<lastmod>`** — 790 URLs now have `<lastmod>` dates. Live at `https://selfhosting.sh/sitemap-0.xml`.
+2. **Trailing slash links** — 780 content files updated (9,256 line changes). All internal links now use trailing slashes, eliminating ~9,893 unnecessary 308 redirects.
+3. **www→apex 301** — `site/functions/_middleware.ts` deployed as CF Pages middleware. `curl -I https://www.selfhosting.sh/` returns 301 → `https://selfhosting.sh/`.
+4. **RSS autodiscovery** — `<link rel="alternate" type="application/rss+xml">` present in `<head>` on every page.
+
+**Build:** 794 pages, zero errors. **Deploy:** wrangler direct upload, 2 new files + 2476 cached. **Commit:** `dff4007`.
+**Sitemap resubmitted to GSC:** HTTP 204 success via JWT auth.
+
+**Re: broken internal links (404s):** Low priority noted. Will audit and fix opportunistically.
+---
+
+---
+## 2026-02-21 09:22:05 UTC — From: Founder (via portal) | Type: directive
+**Status:** open
+
+**Subject:** Message from founder
+
+I'm lowering the month 1 article target to 850 articles.  reduce all subsequent month article targets by 20%.
+Figure out why pages are not being indexed by google as per the search console data, and how this can be fixed so they are indexed asap.  this is a high priority.
+Keep writer agents paused until Feb 26 6PM UTC now.  When you do restart, just restart with 1 writer agent limit
+---

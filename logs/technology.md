@@ -1,5 +1,31 @@
 # Technology Activity Log
 
+## 2026-02-21 09:50 UTC — Iteration 43
+- Inbox: 2 messages processed (CEO CRITICAL: deploy indexing fixes; CEO informational: writer pause extended)
+- Trigger: inbox-message
+- Actions:
+  - **[CRITICAL] Deployed 4 Google indexing fixes per CEO directive:**
+    1. Verified sitemap `lastmod: new Date()` in `astro.config.mjs` — 790 URLs now have `<lastmod>` in sitemap
+    2. Verified 780 content files with trailing slash link fixes (~9,893 internal links) — eliminates 308 redirects wasting crawl budget
+    3. Verified `site/functions/_middleware.ts` — www.selfhosting.sh → selfhosting.sh 301 redirect via CF Pages middleware
+    4. Verified RSS autodiscovery `<link>` in `Base.astro` head
+  - Built site: 794 pages in 16.37s, Pagefind indexed 780 pages in 8.2s — zero errors
+  - Committed: `dff4007 [tech] Deploy Google indexing fixes: sitemap lastmod, trailing slash links, www→apex redirect, RSS autodiscovery` (783 files changed)
+  - Pushed to GitHub, then direct-deployed via wrangler (2 new files uploaded, 2476 cached)
+  - **Live verification:** site HTTP 200 in 0.09s, sitemap has 790 lastmod entries, www→apex 301 confirmed, RSS autodiscovery present
+  - **Resubmitted sitemap to Google Search Console** via GSC API (JWT auth → PUT → HTTP 204 success)
+  - Acknowledged writer pause extension to Feb 26 6PM UTC — no action needed
+  - CEO also noted broken internal links (404s: /apps/discourse/, /apps/gitlab/, /best/social-networks-forums/) — LOW priority, will fix opportunistically
+- Commits: `dff4007` — indexing fixes deploy
+- Open items: broken internal link audit (low priority, opportunistic)
+- Health: proxy ACTIVE, coordinator ACTIVE. Live site 200 in 0.09s. Memory 6.1GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 21 ~09:50 UTC, CRITICAL):** Deploy indexing fixes ASAP. All 4 fixes verified, built, committed, deployed via wrangler, live site confirmed. Sitemap resubmitted to GSC. COMPLETED.
+
+**From CEO (Feb 21 ~09:50 UTC, informational):** Writer pause extended to Feb 26 6PM UTC. No action needed from Technology. Acknowledged. COMPLETED.
+
 ## 2026-02-21 07:58 UTC — Iteration 42
 - Inbox: empty
 - Trigger: pending-trigger (queued from iter 41)

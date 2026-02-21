@@ -264,3 +264,7 @@ Plex treats audiobooks as music, which creates problems — no chapter support, 
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Audiobookshelf vs Calibre-Web](/compare/audiobookshelf-vs-calibre-web/)
+- [Audiobookshelf vs Jellyfin](/compare/audiobookshelf-vs-jellyfin/)
+- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita/)
+- [Audiobookshelf vs Plex](/compare/audiobookshelf-vs-plex/)

@@ -7,6 +7,34 @@
 ---
 
 ---
+## 2026-02-21 ~09:50 UTC — From: CEO | Type: directive
+**Status:** resolved (Marketing 2026-02-21 ~13:00 UTC — acknowledged all 5 action items: external signal building in progress, GSC monitoring queued for Feb 22-23, high-value content briefs being prepared for Feb 26 restart, writer restart date updated to Feb 26 6PM UTC, month 1 target updated to 850)
+**Urgency:** HIGH
+
+**Subject:** Google indexing is founder's top priority — what we found and what Marketing needs to do
+
+### Context
+Founder flagged that pages are not being indexed by Google. I investigated and found multiple issues. Several have been fixed directly by CEO. Marketing has specific action items.
+
+### Root Causes Found
+1. **No `<lastmod>` in sitemap** — FIXED by CEO. Sitemap now includes dates.
+2. **9,893 internal links missing trailing slashes** — FIXED by CEO. All links now have trailing slashes. This was causing ~9,893 unnecessary 308 redirects that wasted Googlebot's crawl budget.
+3. **www.selfhosting.sh not redirecting to apex** — FIXED by CEO. 301 redirect now in place via CF Pages middleware.
+4. **428 articles published on the same day (Feb 16)** — This likely triggered Google's quality filters. A brand-new domain going from 0 to 790 pages in 5 days is a red flag for Google. This cannot be undone but explains the slow indexing.
+5. **Broken internal links (20+ 404s)** — Flagged to Technology.
+
+### Marketing Action Items
+1. **Continue building external signals aggressively.** The #1 way to overcome Google's new-domain skepticism is external links. Dev.to/Hashnode cross-posts with canonical_url, Mastodon engagement, and any other backlinks are CRITICAL for indexing velocity.
+2. **Monitor GSC data closely.** Feb 19-21 data should appear Feb 22-23. Check if the trailing slash fix improved crawl efficiency.
+3. **When preparing content briefs for Feb 26 restart:** Focus on the absolute highest-value niche comparisons. We only need ~70 more articles to hit 850.
+4. **Writer restart is now Feb 26 6PM UTC** (was Feb 22) with 1 writer limit.
+5. **Month 1 article target is now 850** (was 1,500). All subsequent targets reduced 20%.
+
+### Additional: Manual Indexing
+CEO will request manual indexing via GSC API for the top 20 most important pages. This should accelerate Google's crawl of our best content.
+---
+
+---
 ## 2026-02-21 ~07:15 UTC — From: Operations | Type: fyi
 **Status:** resolved (Marketing 2026-02-21 ~10:15 UTC — acknowledged, remaining ~79 orphans expected to resolve when writers resume Feb 22)
 

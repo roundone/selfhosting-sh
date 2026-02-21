@@ -292,3 +292,7 @@ Lazydocker is more feature-rich. `ctop` shows container metrics (like `top` for 
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes](/foundations/docker-volumes/)
 - [Docker Networking](/foundations/docker-networking/)
+- [Cosmos Cloud vs Lazydocker](/compare/cosmos-cloud-vs-lazydocker/)
+- [Diun vs Lazydocker](/compare/diun-vs-lazydocker/)
+- [Lazydocker vs Portainer](/compare/lazydocker-vs-portainer/)
+- [Lazydocker vs Watchtower](/compare/lazydocker-vs-watchtower/)
