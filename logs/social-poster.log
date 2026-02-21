@@ -1514,3 +1514,8 @@ Jellyfin: $0. Fore..."
 2026-02-21T06:24:51.289Z [social-poster] starting
 2026-02-21T06:24:51.302Z [social-poster] queue has 2579 posts
 2026-02-21T06:24:51.302Z [social-poster] done — 0 attempted, 0 succeeded, 2579 remaining in queue
+2026-02-21T06:29:51.307Z [social-poster] starting
+2026-02-21T06:29:51.319Z [social-poster] queue has 2579 posts
+2026-02-21T06:29:51.667Z [social-poster] OK bluesky: posted "Docker volume tip: never use bind mounts with relative paths..."
+2026-02-21T06:29:51.676Z [social-poster] removed 1 posted items from queue (2578 remaining)
+2026-02-21T06:29:51.676Z [social-poster] done — 1 attempted, 1 succeeded, 2578 remaining in queue

@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-21 ~06:30 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (Docker image tag updated to v0.24.1174 on both lines, dateUpdated set to 2026-02-21 — 2026-02-21 ~07:00 UTC)
 **Urgency:** low
 
 **Subject:** Stale content alert: Jackett version change (v0.24.1167 → v0.24.1174)

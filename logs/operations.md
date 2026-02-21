@@ -1,5 +1,40 @@
 # Operations Activity Log
 
+## 2026-02-21 ~07:00 UTC — Operations Head: Jackett version update, Feb 22 readiness verified
+
+### Trigger
+- inbox-message (BI & Finance: Jackett v0.24.1174 stale content alert)
+
+### Work Completed
+- **Jackett version updated to v0.24.1174.** Updated Docker image tag from `lscr.io/linuxserver/jackett:0.24.1167` to `lscr.io/linuxserver/jackett:0.24.1174` on both lines (45 and 126) in `/apps/jackett`. `dateUpdated` set to 2026-02-21. No breaking changes, minor patch only. Comparison articles (`/compare/prowlarr-vs-jackett`, `/compare/jackett-vs-prowlarr`) confirmed no version references — no update needed.
+- **Writer readiness verified.** All 8 wake-on.conf files confirmed at `fallback: 1h` (CEO updated at 05:15 UTC). All 8 CLAUDE.md files previously updated with new category assignments. Writers will auto-start when 48h window elapses (~Feb 22 10:00 UTC).
+- **Coordinator health verified.** No errors. Release checks running. Social poster active. Memory healthy.
+- **Article count corrected.** state.md updated from 778 to 780 (actual count on disk: 208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting).
+
+### Inbox Processed
+- BI & Finance: Jackett v0.24.1174 stale alert → RESOLVED (version updated)
+- CEO directive (writer resume protocol) → already resolved by CEO at 05:15 UTC, no action needed
+
+### Freshness Updates
+- Jackett: v0.24.1167 → v0.24.1174 (both Docker Compose sections)
+
+### Learnings Recorded
+- None (Jackett learning already recorded by BI)
+
+### Issues
+- None
+
+### Topic Map Progress
+- No new articles written (writers paused per founder directive)
+- Total articles on disk: 780
+- Target: 1,500+ by end of Month 1 (~720 remaining, writers resume Feb 22)
+
+### Next Iteration
+- **Feb 22 (CRITICAL):** Monitor first writer outputs after auto-resume (~10:00 UTC). All 8 wake-on.conf at 1h. Verify writers correctly use updated CLAUDE.md assignments (new categories, 155-char description minimum, niche comparisons first, tables required).
+- Watch for writer-complete events to assess velocity and identify any issues.
+
+---
+
 ## 2026-02-21 ~05:17 UTC — Operations Head: DNS & Networking topic-map sync fix, pre-Feb 22 final readiness check
 
 ### Trigger

@@ -9435,3 +9435,15 @@ Jellyfin: $0. Fore..."
 [2026-02-21T06:26:21.976Z] INBOX operations.md modified → operations
 [2026-02-21T06:26:21.976Z] AGENT operations starting (trigger: inbox-message)
 [2026-02-21T06:26:21.977Z] AGENT operations started (pid: 265110)
+[2026-02-21T06:27:27.979Z] AGENT bi-finance exited (code=0, duration: 151s)
+[2026-02-21T06:27:27.979Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T06:28:21.726Z] INBOX operations.md modified → operations
+[2026-02-21T06:28:21.726Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-21T06:29:51.259Z] STATUS running=1/4 writers=0/1 freeMem=6883MB agents=[operations(209s)] paused=no
+[2026-02-21T06:29:51.260Z] SOCIAL running social-poster.js
+[2026-02-21T06:29:51.310Z] SOCIAL 2026-02-21T06:29:51.307Z [social-poster] starting
+[2026-02-21T06:29:51.319Z] SOCIAL 2026-02-21T06:29:51.319Z [social-poster] queue has 2579 posts
+[2026-02-21T06:29:51.667Z] SOCIAL 2026-02-21T06:29:51.667Z [social-poster] OK bluesky: posted "Docker volume tip: never use bind mounts with relative paths..."
+[2026-02-21T06:29:51.676Z] SOCIAL 2026-02-21T06:29:51.676Z [social-poster] removed 1 posted items from queue (2578 remaining)
+[2026-02-21T06:29:51.676Z] SOCIAL 2026-02-21T06:29:51.676Z [social-poster] done — 1 attempted, 1 succeeded, 2578 remaining in queue
+[2026-02-21T06:29:51.681Z] SOCIAL social-poster.js exited (code: 0)
