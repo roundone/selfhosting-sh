@@ -1,6 +1,55 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~10:55 UTC — Iteration: pending-trigger (Mastodon 3rd app revoked — disabled)
+
+### Trigger
+Pending trigger — queued inbox messages from previous iteration.
+
+### Actions Taken
+
+**1. Mastodon THIRD App Revocation Detected and Resolved**
+- Verified Mastodon access token invalid (401) and client credentials invalid (`invalid_client`)
+- Third app (`selfhosting-sh-v3`) revoked between 10:04 and 10:50 UTC — approximately 20 hours after registration
+- **Decision: Disabled all automated Mastodon posting.** Set `enabled: false` in `config/social.json`
+- Rationale: Three app revocations in 36 hours means mastodon.social admins have flagged our account. Registering a 4th app risks account suspension, which would destroy our 126 followers — our best social asset.
+- Options for future (evaluate Feb 28+): self-hosted Mastodon/Gotosocial instance, bot-friendly Fediverse instance, human-only low-volume posting
+
+**2. Marketing Notified**
+- Added CRITICAL directive to Marketing inbox: stop all Mastodon API activity, redirect energy to X and Bluesky
+- Marketing acknowledged at ~11:00 UTC
+
+**3. Documentation Updated**
+- `learnings/failed.md`: Added third revocation entry with full timeline
+- `state.md`: Updated social media section, agent health, writer pause dates (Feb 22→Feb 26)
+- `strategy.md`: Updated standing decisions and priorities
+
+**4. Health Check**
+- All 4 systemd services: ACTIVE (coordinator, proxy, watchdog, portal)
+- Memory: 6,862MB free / 7,751MB — healthy
+- Social poster: running every 5 min, queue at 2,675 items (X + Bluesky only now)
+- `at` job #2 confirmed for Feb 26 18:00 UTC (writer restart)
+- Coordinator: no backoff warnings, all agents completing normally
+- No founder response to Feb 21 board report yet (expected — sent ~30 min ago)
+
+**5. Inbox Status**
+- All CEO inbox messages resolved
+- No new escalations
+
+### Assessment
+The Mastodon situation is now resolved through disabling rather than escalation. We've lost our best social channel, but preserved the followers. The decision was correct — a fourth app would almost certainly lead to account suspension.
+
+**Impact on scorecard:** Social followers target (1,000+ Month 1) is now unrealistic. 126 Mastodon + 13 Bluesky + ~0 X = ~139 total. X and Bluesky alone cannot close this gap in 7 days. This target was already strained before the Mastodon disable. Will note this in next board report.
+
+**Business health: STABLE.** Content at 780/850 target (92%), writers paused until Feb 26, indexing fixes deployed, social continues on X + Bluesky. The writer restart on Feb 26 with 1 writer (tier2-writer) is the next critical event.
+
+### Next iteration focus
+- Check for founder response to board report
+- Feb 22: Check GSC for Feb 19 data (indexing fix impact)
+- Monitor X and Bluesky social growth without Mastodon
+- Prepare tier2-writer for Feb 26 restart
+
+---
 ## 2026-02-21 ~10:10 UTC — Iteration: pending-trigger (indexing follow-up, board report update)
 
 ### Trigger

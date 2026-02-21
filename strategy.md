@@ -1,6 +1,6 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-21 05:15 UTC
+**Last updated:** 2026-02-21 10:55 UTC
 
 ## Current Priorities
 
@@ -8,7 +8,7 @@
 2. **Writers paused until Feb 26 6PM UTC (founder directive).** Extended from Feb 22. Resume with **1 writer limit only**. All 8 wake-on.conf set to 130h. Coordinator restart scheduled Feb 26 18:00 UTC.
 3. **Month 1 target: 850 articles (founder directive).** Down from 1,500. All subsequent targets reduced 20%. 780 on disk. Need ~70 more in final 2 days with 1 writer. Very achievable.
 4. **GA4 traffic accelerating.** 93+ users, 121+ sessions despite writers paused. 16 organic sessions from Google with 4x repeat rate. Content is compounding.
-5. **Social media — healthy.** Mastodon: 105 followers at 45-min interval. Bluesky: 13 followers. X: 31 following. Queue at ~2,639 items.
+5. **Social media — Mastodon DISABLED.** 3 app revocations in 36 hours. Automated Mastodon posting disabled to protect 126 followers. X and Bluesky continue posting. Queue at ~2,675 items.
 6. **GSC data lag.** Feb 18 data shows 518 impressions, 22 pages, 0 clicks. Feb 19-21 data expected Feb 22-23. First clicks likely when that data arrives.
 
 ## Standing Decisions
@@ -32,9 +32,9 @@
 | **Meta descriptions: 155-char minimum for new content** | Existing 612 short descriptions deferred to Month 2 batch fix. New content must hit 155+ chars. | Feb 20, 2026 |
 | **Coordinator tracks lastErrorAt** | For smarter portal alert display — error age relative to agent's run interval. | Feb 20, 2026 |
 | **Mastodon bot flag = true** | Account marked as bot per Mastodon convention. Reduces moderation risk for automated posting. | Feb 21, 2026 |
-| **Mastodon engagement limits** | Max 3 follows/iteration, 15/day. Max 3 replies/iteration. Max 15 API calls/iteration. Prevents app revocation. | Feb 21, 2026 |
+| **Mastodon engagement limits** | SUPERSEDED — all Mastodon activity disabled after 3 app revocations. No API calls allowed until re-evaluation Feb 28+. | Feb 21, 2026 |
 | **Trailing slash: ALREADY FIXED** | Cloudflare Pages issues 308 redirects (equivalent to 301 for SEO). GSC split is historical artifact. No action needed. | Feb 21, 2026 |
-| **Mastodon posting interval: 45 min** | Increased from 15 min after community pushback on posting frequency. ~32 posts/day still substantial. Community trust > volume. | Feb 21, 2026 |
+| **Mastodon automated posting: DISABLED** | 3 app revocations in 36 hours. Disabled to protect 126 followers from account suspension. Re-evaluate Feb 28+. Options: self-hosted instance, bot-friendly instance, or human-only posting. | Feb 21, 2026 |
 | **Sitemap lastmod added** | Astro sitemap plugin now emits `<lastmod>` dates. Helps Google prioritize crawling. | Feb 21, 2026 |
 | **Internal links: trailing slashes fixed (9,893 links)** | Eliminated 308 redirect chains on internal links that were wasting crawl budget. | Feb 21, 2026 |
 | **www→apex 301 redirect** | CF Pages middleware returns 301 for www.selfhosting.sh→selfhosting.sh. Prevents crawl budget waste. | Feb 21, 2026 |
