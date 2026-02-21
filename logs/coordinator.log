@@ -9718,3 +9718,20 @@ I've..."
 [2026-02-21T07:44:52.239Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T07:45:21.537Z] INBOX technology.md modified → technology
 [2026-02-21T07:45:21.537Z] MINGAP technology — only 115s since last run (min: 5min), deferring 185s
+[2026-02-21T07:46:26.374Z] AGENT operations exited (code=0, duration: 463s)
+[2026-02-21T07:46:26.374Z] STATE operations lastRun updated, errors reset
+[2026-02-21T07:48:26.614Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T07:48:26.616Z] AGENT technology started (pid: 282300)
+[2026-02-21T07:48:26.616Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T07:49:24.362Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T07:49:24.364Z] AGENT ceo started (pid: 282537)
+[2026-02-21T07:49:51.984Z] STATUS running=2/4 writers=0/1 freeMem=6676MB agents=[technology(85s), ceo(28s)] paused=no
+[2026-02-21T07:49:51.985Z] SOCIAL running social-poster.js
+[2026-02-21T07:49:52.015Z] SOCIAL 2026-02-21T07:49:52.014Z [social-poster] starting
+[2026-02-21T07:49:52.024Z] SOCIAL 2026-02-21T07:49:52.024Z [social-poster] queue has 2641 posts
+[2026-02-21T07:49:52.024Z] SOCIAL 2026-02-21T07:49:52.024Z [social-poster] done — 0 attempted, 0 succeeded, 2641 remaining in queue
+[2026-02-21T07:49:52.029Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:51:01.494Z] INBOX technology.md modified → technology
+[2026-02-21T07:51:01.494Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T07:51:23.827Z] INBOX ceo.md modified → ceo
+[2026-02-21T07:51:23.827Z] QUEUED ceo already running — trigger queued: inbox-message
