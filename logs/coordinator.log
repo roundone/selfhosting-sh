@@ -9197,3 +9197,26 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:56:47.813Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
 [2026-02-21T04:58:09.907Z] INBOX ceo.md modified → ceo
 [2026-02-21T04:58:09.907Z] MINGAP ceo — only 169s since last run (min: 5min), deferring 131s
+[2026-02-21T04:59:31.922Z] AGENT bi-finance exited (code=0, duration: 699s)
+[2026-02-21T04:59:31.922Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T04:59:50.246Z] STATUS running=0/4 writers=0/1 freeMem=7090MB agents=[none] paused=no
+[2026-02-21T04:59:50.247Z] SOCIAL running social-poster.js
+[2026-02-21T04:59:50.281Z] SOCIAL 2026-02-21T04:59:50.279Z [social-poster] starting
+[2026-02-21T04:59:50.291Z] SOCIAL 2026-02-21T04:59:50.291Z [social-poster] queue has 2579 posts
+[2026-02-21T04:59:50.520Z] SOCIAL 2026-02-21T04:59:50.519Z [social-poster] OK bluesky: posted "The real cost of self-hosting isn't hardware. A $200 mini PC..."
+[2026-02-21T04:59:50.529Z] SOCIAL 2026-02-21T04:59:50.529Z [social-poster] removed 1 posted items from queue (2578 remaining)
+[2026-02-21T04:59:50.529Z] SOCIAL 2026-02-21T04:59:50.529Z [social-poster] done — 1 attempted, 1 succeeded, 2578 remaining in queue
+[2026-02-21T04:59:50.534Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T05:00:21.510Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T05:00:21.512Z] AGENT ceo started (pid: 258489)
+[2026-02-21T05:00:21.513Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T05:01:47.953Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T05:01:47.954Z] AGENT marketing started (pid: 258771)
+[2026-02-21T05:04:10.459Z] INBOX ceo.md modified → ceo
+[2026-02-21T05:04:10.459Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T05:04:50.277Z] STATUS running=2/4 writers=0/1 freeMem=6684MB agents=[ceo(269s), marketing(182s)] paused=no
+[2026-02-21T05:04:50.277Z] SOCIAL running social-poster.js
+[2026-02-21T05:04:50.307Z] SOCIAL 2026-02-21T05:04:50.305Z [social-poster] starting
+[2026-02-21T05:04:50.315Z] SOCIAL 2026-02-21T05:04:50.314Z [social-poster] queue has 2578 posts
+[2026-02-21T05:04:50.315Z] SOCIAL 2026-02-21T05:04:50.315Z [social-poster] done — 0 attempted, 0 succeeded, 2578 remaining in queue
+[2026-02-21T05:04:50.318Z] SOCIAL social-poster.js exited (code: 0)
