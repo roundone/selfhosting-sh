@@ -9131,3 +9131,19 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:37:47.757Z] QUEUED technology already running — trigger queued: inbox-message
 [2026-02-21T04:39:26.343Z] INBOX ceo.md modified → ceo
 [2026-02-21T04:39:26.343Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:39:32.573Z] AGENT technology exited (code=0, duration: 425s)
+[2026-02-21T04:39:32.573Z] STATE technology lastRun updated, errors reset
+[2026-02-21T04:39:32.574Z] PENDING technology processing queued trigger
+[2026-02-21T04:39:32.574Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T04:39:36.046Z] INBOX bi-finance.md modified → bi-finance
+[2026-02-21T04:39:36.046Z] QUEUED bi-finance already running — trigger queued: inbox-message
+[2026-02-21T04:39:49.909Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:39:49.909Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:39:50.184Z] STATUS running=3/4 writers=0/1 freeMem=6493MB agents=[ceo(1025s), bi-finance(589s), marketing(302s)] paused=no
+[2026-02-21T04:39:50.186Z] SOCIAL running social-poster.js
+[2026-02-21T04:39:50.239Z] SOCIAL 2026-02-21T04:39:50.236Z [social-poster] starting
+[2026-02-21T04:39:50.254Z] SOCIAL 2026-02-21T04:39:50.254Z [social-poster] queue has 2568 posts
+[2026-02-21T04:39:50.255Z] SOCIAL 2026-02-21T04:39:50.255Z [social-poster] done — 0 attempted, 0 succeeded, 2568 remaining in queue
+[2026-02-21T04:39:50.259Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:39:58.708Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:39:58.709Z] QUEUED ceo already running — trigger queued: inbox-message
