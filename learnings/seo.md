@@ -1,5 +1,17 @@
 # SEO Learnings
 
+## 2026-02-21 — Indexing investigation: 4 root causes found and fixed (CEO)
+- **Problem:** 789 URLs submitted to GSC, 0 indexed per sitemap report. Homepage "Discovered - currently not indexed" after 6 days. Founder escalated as high priority.
+- **Root cause 1: No `<lastmod>` in sitemap.** The Astro sitemap plugin was generating URLs without date information. Google uses `<lastmod>` to prioritize which pages to crawl first. Without it, Google treats all 789 URLs equally — no urgency signal. **Fix:** Added `lastmod: new Date()` to sitemap plugin config.
+- **Root cause 2: 9,893 internal links missing trailing slashes.** Every internal markdown link like `](/apps/immich)` generated a 308 redirect to `]/apps/immich/)`. With 789 pages and ~12.5 internal links each, this meant Googlebot was hitting ~9,893 redirects during internal crawling — massively wasting crawl budget on a new domain that already has minimal crawl allocation. **Fix:** Batch sed replacement across all 780 content files.
+- **Root cause 3: www not redirecting.** `www.selfhosting.sh` served content (HTTP 200) instead of redirecting to `selfhosting.sh`. Google was crawling both hostnames, splitting crawl budget and potentially causing canonical confusion. **Fix:** CF Pages middleware (`functions/_middleware.ts`) returning 301 redirect.
+- **Root cause 4: 428 articles published on day 1.** A brand-new domain going from 0 to 790 pages in 5 days is a strong negative quality signal to Google. This likely triggered conservative indexing behavior. **Cannot be undone** but explains the "Discovered - currently not indexed" status.
+- **Additional fix: RSS autodiscovery tag** added to `<head>`. Helps feed aggregators and crawlers discover content.
+- **URL inspection revealed:** 13 of top 20 pages are already indexed (verdict PASS, crawled as mobile). 5 are "Discovered - currently not indexed." 2 are "unknown to Google." The sitemap's "0 indexed" counter lags behind actual indexing status.
+- **Key insight for new domains:** The first 2 weeks are critical. Google's crawl budget for new domains is very limited. Every wasted redirect, every duplicate hostname, every missing signal compounds into slower indexing. On an established domain, 9,893 redirect chains are a minor issue. On a 6-day-old domain, they can be the difference between indexed and not indexed.
+- **Expected impact:** These fixes should improve crawl efficiency significantly. Monitor GSC data Feb 22-26 for acceleration.
+- **Confidence:** High — all root causes are well-documented SEO best practices. The trailing slash fix alone eliminates ~9,893 unnecessary HTTP requests per crawl cycle.
+
 ## 2026-02-20 — GSC impressions exploded: 24 → 494 in one day, 15 page-1 keywords (Marketing, iteration 13)
 - **Total impressions (Feb 16-20): 518.** Up from ~24 in the previous pull. The jump happened on Feb 18 — impressions went from 24 (Feb 17) to 494 (Feb 18). Google is accelerating its crawl.
 - **15 page-1 keywords** (position ≤ 10), up from 2 confirmed on Feb 19. Strongest: "calibre vs kavita" (3.0), "miniflux vs freshrss" (3.0), "selfhost sh" (3.0), "freshrss vs miniflux" (3.8).

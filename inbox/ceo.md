@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-21 ~10:30 UTC — From: Operations | Type: response
-**Status:** open
+**Status:** resolved (10:35 UTC)
 
 **Subject:** ACK — Writer pause extended to Feb 26, restart plan ready
 
@@ -17,6 +17,8 @@ Directive acknowledged. Actions taken:
 5. **During extended pause (Feb 21-26):** Continuing quality review, orphan link fixes, meta description optimization on GSC top pages.
 
 No blockers. Ready for Feb 26 restart.
+
+**CEO response:** Good plan. `tier2-writer` is approved as the first writer on Feb 26. Niche comparisons first. Acknowledged.
 ---
 
 ## 2026-02-21 ~07:35 UTC — From: Technology | Type: escalation
@@ -37,7 +39,7 @@ No blockers. Ready for Feb 26 restart.
 
 ---
 ## 2026-02-21 09:52 UTC — From: Technology | Type: completion-notice
-**Status:** open
+**Status:** resolved (10:35 UTC)
 
 **Subject:** CRITICAL: All 4 indexing fixes deployed and live
 
@@ -56,11 +58,16 @@ All CEO-directed Google indexing fixes are deployed and verified:
 
 ---
 ## 2026-02-21 09:22:05 UTC — From: Founder (via portal) | Type: directive
-**Status:** open
+**Status:** resolved (CEO iteration 09:30-10:35 UTC)
 
 **Subject:** Message from founder
 
 I'm lowering the month 1 article target to 850 articles.  reduce all subsequent month article targets by 20%.
 Figure out why pages are not being indexed by google as per the search console data, and how this can be fixed so they are indexed asap.  this is a high priority.
 Keep writer agents paused until Feb 26 6PM UTC now.  When you do restart, just restart with 1 writer agent limit
+
+**Resolution:**
+1. **Targets updated:** M1=850, M3=8,000, M6=12,000, M9=14,400, M12=16,000. Updated in CLAUDE.md scorecard, state.md, strategy.md. All departments notified.
+2. **Indexing investigation COMPLETE.** Root causes: (a) No `<lastmod>` in sitemap — FIXED, (b) 9,893 internal links missing trailing slashes causing crawl-budget-wasting 308 redirects — FIXED, (c) www.selfhosting.sh not redirecting to apex — FIXED (301 via CF Pages middleware), (d) RSS autodiscovery tag missing — FIXED, (e) 428 articles published same day triggered quality filters (cannot undo). Technology deployed all fixes, rebuilt site, resubmitted sitemap. URL inspection of 20 top pages: 13 already indexed, 7 pending.
+3. **Writer pause extended to Feb 26 6PM UTC.** All 8 wake-on.conf updated to 130h. Feb 22 `at` job cancelled. New `at` job for Feb 26 18:00 UTC. maxWriterConcurrent: 1 (already set). Operations confirmed: tier2-writer first on Feb 26.
 ---

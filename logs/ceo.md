@@ -1,6 +1,72 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~09:30 UTC — Iteration: inbox-message (FOUNDER DIRECTIVE — targets, indexing, writer pause)
+
+### Trigger
+Founder directive via portal at 09:22 UTC. Three directives: (1) Lower M1 target to 850, reduce subsequent 20%, (2) Investigate indexing issues (HIGH PRIORITY), (3) Extend writer pause to Feb 26 6PM UTC, 1 writer limit.
+
+### Actions Taken
+
+**1. Article Targets Updated**
+- CLAUDE.md scorecard: M1=850, M3=8,000, M6=12,000, M9=14,400, M12=16,000
+- state.md, strategy.md updated
+- All 4 departments notified via inbox
+
+**2. Google Indexing Investigation (HIGH PRIORITY)**
+- Queried GSC API: 789 URLs submitted, 0 indexed per sitemap report. Homepage "Discovered - currently not indexed." 518 impressions, 0 clicks.
+- URL inspection of 20 top pages: 13 already indexed (sitemap counter lags), 7 pending.
+- **Root causes identified and FIXED:**
+  - (a) No `<lastmod>` in sitemap → Added to astro.config.mjs
+  - (b) 9,893 internal links missing trailing slashes → Batch fixed across 780 content files. Eliminates crawl-budget-wasting 308 redirects.
+  - (c) www.selfhosting.sh serving content instead of redirecting → 301 redirect via CF Pages middleware (`functions/_middleware.ts`)
+  - (d) RSS autodiscovery tag missing → Added to Base.astro `<head>`
+  - (e) 428 articles published on day 1 triggered quality filters → Cannot undo
+- Technology deployed all fixes, rebuilt site (794 pages), resubmitted sitemap (HTTP 204). Commit `dff4007`.
+- Learnings written to `learnings/seo.md`
+
+**3. Writer Pause Extended to Feb 26 6PM UTC**
+- All 8 wake-on.conf files updated from 1h → 130h fallback
+- Feb 22 `at` job (ID 1) cancelled
+- New `at` job (ID 2) for Feb 26 18:00 UTC coordinator restart
+- maxWriterConcurrent: 1 (already set in coordinator config)
+- Operations confirmed: `tier2-writer` first on Feb 26, niche comparisons only
+- 780 articles on disk vs 850 target → need ~70 more, very achievable with 1 writer in 2 days
+
+**4. Inbox Processing**
+- Founder directive: resolved
+- Operations ACK (writer restart plan): resolved — approved tier2-writer as first
+- Technology completion notice (all 4 indexing fixes deployed): resolved
+- Marketing ACK: resolved (all 5 action items acknowledged)
+
+**5. Health Check**
+- All 4 systemd services: ACTIVE (coordinator, proxy, watchdog, portal)
+- Memory: 6,227MB available / 7,751MB total — healthy
+- No backoff warnings in coordinator log
+- Social posting: running normally
+
+### Assessment
+Critical iteration. Founder directive fully executed. The indexing investigation was the most impactful work — the trailing slash fix alone eliminates ~9,893 unnecessary HTTP redirects per Google crawl cycle, which on a new domain with limited crawl budget is substantial. Combined with sitemap lastmod, www redirect, and RSS tag, these should materially improve indexing velocity. Monitor GSC data Feb 22-26 for acceleration.
+
+Month 1 target of 850 is very achievable — 780 on disk, need only 70 more in 2 days (Feb 26-28) with 1 writer.
+
+### Changes Made to CLAUDE.md / Agent Configs
+- `CLAUDE.md`: Scorecard articles row updated (850/8,000/12,000/14,400/16,000). Note updated.
+- `site/astro.config.mjs`: Added `lastmod: new Date()` to sitemap plugin
+- `site/src/layouts/Base.astro`: Added RSS autodiscovery `<link>` tag
+- `site/functions/_middleware.ts`: Created (www→apex 301 redirect)
+- All 780 content .md files: Trailing slashes added to internal links
+- All 8 writer wake-on.conf: Changed to `fallback: 130h`
+- `state.md`: Updated targets, writer pause date, coordinator config section, founder directives
+- `strategy.md`: Updated priorities, standing decisions, open questions
+
+### Next iteration focus
+- Check GSC for Feb 19-21 data (expected Feb 22-23) — first data after indexing fixes
+- Monitor whether indexing velocity improves after the 4 fixes
+- Prepare Feb 26 writer restart (tier2-writer)
+- Daily board report if not done today
+
+---
 ## 2026-02-21 ~08:02 UTC — Iteration: pending-trigger (routine check)
 
 ### Trigger
