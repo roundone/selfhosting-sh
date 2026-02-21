@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 6 Operations
-## Last Updated: 2026-02-21 10:55 UTC (CEO iter 10:50)
+## Last Updated: 2026-02-21 18:00 UTC (CEO iter 18:00)
 
 ## Content
 - **Total articles on disk: 780** (208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -82,15 +82,16 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~2,683 items** (active posting to X + Bluesky, draining ~18/day). Mastodon posts cleaned: 435 removed/converted to Bluesky.
-- **Mastodon: 126 followers, ~153 following** — **DISABLED.** Third app (`selfhosting-sh-v3`) revoked ~10:30 UTC Feb 21. Three app revocations in 36 hours. Automated posting disabled to protect account and 126 followers. Evaluate resumption Feb 28+.
-- **Bluesky: 13 followers, 124 following** — posting active, engagement low but growing.
-- **X: 31 following** — posting active. Account still too new for inbound mentions.
+- Queue: **~2,655 items** (active posting to X + Bluesky). Mastodon posts cleaned: 435 removed/converted to Bluesky.
+- **Mastodon: 126 followers** — **DISABLED.** Third app revoked. Automated posting disabled to protect 126 followers. Evaluate resumption Feb 28+.
+- **Bluesky: ~14 followers** — posting active, engagement low but growing.
+- **X: ~31 following** — posting active. Account still too new for inbound mentions.
+- **Reply strategy: OVERHAULED** (founder-approved Feb 21 17:44 UTC). 6 mandatory rules: no queued replies, full thread reading, sarcasm detection, "would a human reply?" test, no off-target recommendations, max 1-2 replies/day.
 - **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
 - Platform status:
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
-  - **Mastodon: DISABLED** — 3 app revocations in 36 hours. `config/social.json` set `enabled: false`. Account preserved with 126 followers. Re-evaluate Feb 28+.
+  - **Mastodon: DISABLED** — 3 app revocations in 36 hours. Account preserved with 126 followers. Re-evaluate Feb 28+.
   - **Dev.to: LIVE** — Full article cross-posting via social-poster.js. Interval 6h (4 articles/day). 30+ articles published.
   - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
   - **Hashnode: LIVE** — Full article cross-posting via social-poster.js. Interval 6h (4 articles/day). 11+ articles published.
@@ -131,20 +132,20 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-21 11:03 | 0 | Running — queue cleanup, error counters reset |
-| Operations | 2026-02-21 10:28 | 0 | Running — internal link audit P1-P5 COMPLETE, security-basics links fixed |
+| CEO | 2026-02-21 18:00 | 0 | Running — reply strategy deployed, board report updated |
+| Operations | 2026-02-21 17:56 | 0 | Running — 8 writer CLAUDE.md files updated with structure variation |
 | Technology | 2026-02-21 10:39 | 0 | Running — all indexing fixes deployed |
-| Marketing | 2026-02-21 11:02 | 0 | Running — engagement active on X + Bluesky (Mastodon disabled) |
+| Marketing | 2026-02-21 17:58 | 0 | Running — reply strategy overhaul integrated, engagement on X + Bluesky |
 | BI & Finance | 2026-02-21 10:10 | 0 | Running — daily report delivered |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
-| proxy-docker-writer | 2026-02-20 07:57 | 0 | **PAUSED** (until Feb 26 6PM UTC) — errors reset |
+| proxy-docker-writer | 2026-02-20 07:57 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
 | tier2-writer | 2026-02-20 10:48 | 0 | **PAUSED** (until Feb 26 6PM UTC) — first writer on restart |
 | vpn-filesync-writer | 2026-02-20 06:21 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
-| foundations-writer | 2026-02-20 10:56 | 0 | **PAUSED** (until Feb 26 6PM UTC) — errors reset |
+| foundations-writer | 2026-02-20 10:56 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
 | hardware-writer | 2026-02-20 10:13 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
 | homeauto-notes-writer | 2026-02-20 10:45 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
-| password-adblock-writer | 2026-02-20 10:55 | 0 | **PAUSED** (until Feb 26 6PM UTC) — errors reset |
-| photo-media-writer | 2026-02-20 10:56 | 0 | **PAUSED** (until Feb 26 6PM UTC) — errors reset |
+| password-adblock-writer | 2026-02-20 10:55 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
+| photo-media-writer | 2026-02-20 10:56 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
 
 ## Blockers
 - Social credentials PENDING for: Reddit (app creation blocked by policy wall)
@@ -190,5 +191,7 @@
 34. **Dev.to/Hashnode cross-post queue** → **COMPLETE** (Feb 20 ~19:30 UTC) — Technology implemented `postDevto`/`postHashnode` in social-poster.js. Both tested end-to-end (Dev.to 201, Hashnode 200). 49 entries per platform in queue. Marketing to upload brand assets to social profiles.
 35. **Mastodon 401 investigation** → **THREE REVOCATIONS — DISABLED** (Feb 21) — mastodon.social revoked 3 app registrations in 36 hours. Third app (`selfhosting-sh-v3`) revoked ~10:30 UTC despite 120min interval. **ALL automated Mastodon activity disabled** (`config/social.json` enabled=false). 126 followers preserved. Re-evaluate Feb 28+ (self-hosted instance or bot-friendly Fediverse instance).
 36. **Lower Month 1 target to 850, reduce subsequent by 20%** → **DONE** (Feb 21 ~09:45 UTC) — Scorecard updated in CLAUDE.md: M1=850, M3=8,000, M6=12,000, M9=14,400, M12=16,000. state.md and strategy.md updated.
-37. **Investigate Google indexing issues (HIGH PRIORITY)** → **IN PROGRESS** (Feb 21 ~09:45 UTC) — Investigation complete. Root causes: (1) No `<lastmod>` in sitemap, (2) 428 articles published same day = quality filter trigger, (3) ~9,893 internal links missing trailing slashes wasting crawl budget, (4) www.selfhosting.sh not redirecting to apex. Fixes applied: sitemap lastmod added, 9,893 links fixed, www→apex 301 redirect via CF Pages middleware, RSS autodiscovery tag added. Manual indexing requests pending. Technology notified to deploy.
+37. **Investigate Google indexing issues (HIGH PRIORITY)** → **DONE** (Feb 21 ~10:00 UTC) — Investigation complete. All 4 fixes deployed by Technology: sitemap lastmod, 9,893 trailing slash links, www→apex 301, RSS autodiscovery. 8/10 top pages indexed. Tracking post-fix impact Feb 22-26.
 38. **Extend writer pause to Feb 26 6PM UTC, 1 writer limit** → **DONE** (Feb 21 ~09:45 UTC) — All 8 wake-on.conf updated to 130h fallback. Feb 22 `at` job cancelled, new `at` job for Feb 26 18:00 UTC. maxWriterConcurrent: 1.
+39. **Mastodon thread analysis + reply strategy** → **DONE** (Feb 21 ~17:55 UTC) — Founder approved all 6 recommendations. Marketing CLAUDE.md + brand-voice.md updated. Reply rules: no queued replies, thread reading, sarcasm detection, human test, no off-target recs, max 1-2/day.
+40. **Article structure variation** → **DONE** (Feb 21 ~18:00 UTC) — Founder-approved option 3. Operations updated all 8 writer CLAUDE.md files. Ready for Feb 26 restart.
