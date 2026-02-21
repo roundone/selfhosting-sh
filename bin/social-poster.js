@@ -118,23 +118,81 @@ function httpRequest(url, options, body) {
     });
 }
 
-// ─── Platform Posters ────────────────────────────────────────────────────────
+// ─── Bluesky Session Cache ───────────────────────────────────────────────────
 
-async function postBluesky(creds, text) {
-    // Step 1: Create session
-    const authBody = JSON.stringify({
-        identifier: creds.BLUESKY_HANDLE,
-        password: creds.BLUESKY_APP_PASSWORD,
-    });
+const BSKY_SESSION_FILE = path.join(REPO_ROOT, 'credentials', 'bsky-session.json');
+
+function isJwtExpired(jwt) {
+    try {
+        const payload = JSON.parse(Buffer.from(jwt.split('.')[1], 'base64url').toString());
+        // Treat as expired 60 seconds before actual expiry to avoid edge cases
+        return !payload.exp || (payload.exp - 60) < Math.floor(Date.now() / 1000);
+    } catch {
+        return true;
+    }
+}
+
+function loadBskySession() {
+    try {
+        return JSON.parse(fs.readFileSync(BSKY_SESSION_FILE, 'utf8'));
+    } catch {
+        return null;
+    }
+}
+
+function saveBskySession(session) {
+    fs.writeFileSync(BSKY_SESSION_FILE, JSON.stringify(session, null, 2) + '\n', { mode: 0o600 });
+}
+
+async function getBlueskySession(creds) {
+    const pds = creds.BLUESKY_PDS || 'https://bsky.social';
+    const cached = loadBskySession();
+
+    // Try cached session if accessJwt is still valid
+    if (cached && cached.accessJwt && !isJwtExpired(cached.accessJwt)) {
+        return cached;
+    }
+
+    // Try refreshing with refreshJwt
+    if (cached && cached.refreshJwt && !isJwtExpired(cached.refreshJwt)) {
+        try {
+            const refreshRes = await httpRequest(
+                `${pds}/xrpc/com.atproto.server.refreshSession`,
+                { method: 'POST', headers: { 'Authorization': `Bearer ${cached.refreshJwt}` } }
+            );
+            if (refreshRes.status === 200) {
+                const refreshed = JSON.parse(refreshRes.body);
+                const session = { did: refreshed.did, accessJwt: refreshed.accessJwt, refreshJwt: refreshed.refreshJwt };
+                saveBskySession(session);
+                log('Bluesky session refreshed (no createSession call)');
+                return session;
+            }
+            log(`Bluesky refresh failed: ${refreshRes.status} — falling back to createSession`);
+        } catch (e) {
+            log(`Bluesky refresh error: ${e.message} — falling back to createSession`);
+        }
+    }
+
+    // Last resort: create new session (rate-limited to 10/day)
     const authRes = await httpRequest(
-        `${creds.BLUESKY_PDS || 'https://bsky.social'}/xrpc/com.atproto.server.createSession`,
+        `${pds}/xrpc/com.atproto.server.createSession`,
         { method: 'POST', headers: { 'Content-Type': 'application/json' } },
-        authBody
+        JSON.stringify({ identifier: creds.BLUESKY_HANDLE, password: creds.BLUESKY_APP_PASSWORD })
     );
     if (authRes.status !== 200) {
         throw new Error(`Bluesky auth failed: ${authRes.status} ${authRes.body.slice(0, 200)}`);
     }
     const session = JSON.parse(authRes.body);
+    saveBskySession({ did: session.did, accessJwt: session.accessJwt, refreshJwt: session.refreshJwt });
+    log('Bluesky session created (createSession call used — 10/day limit)');
+    return session;
+}
+
+// ─── Platform Posters ────────────────────────────────────────────────────────
+
+async function postBluesky(creds, text) {
+    // Step 1: Get session (cached, refreshed, or new)
+    const session = await getBlueskySession(creds);
 
     // Step 2: Parse facets for links
     const facets = [];
