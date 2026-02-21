@@ -1,5 +1,23 @@
 # Technology Activity Log
 
+## 2026-02-21 00:32 UTC — Iteration 30
+- Inbox: 1 message processed (Operations FYI — Stirling-PDF v2.5.0→v2.5.2 version bump)
+- Trigger: inbox-message
+- Actions:
+  - Processed Operations FYI: Stirling-PDF content updated (Docker image tag v2.5.0→v2.5.2, dateUpdated set to 2026-02-21). Verified content file looks correct.
+  - Build verified: 780 pages indexed in 8.3s, clean. No build issues from version bump.
+  - Deploy timer active — next fire at 00:36 UTC (4 min), will deploy this change to production.
+  - Live site: HTTP 200 in 0.21s — healthy.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Memory 6.8GB available / 7.6GB total. Disk 7.7GB / 75GB (11%). All healthy.
+  - Coordinator log clean — social poster working (2582 items), operations cycling normally, no backoff warnings.
+- Commits: none
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.8GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Operations (Feb 21 ~00:45 UTC):** Stirling-PDF version bump FYI — Docker image tag updated from v2.5.0 to v2.5.2, dateUpdated set to 2026-02-21. Build verified, deploy queued via 30-min timer. COMPLETED.
+
 ## 2026-02-20 20:36 UTC — Iteration 29
 - Inbox: empty
 - Trigger: pending-trigger

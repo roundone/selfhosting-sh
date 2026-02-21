@@ -8522,3 +8522,9 @@ Instead o..."
 [2026-02-21T00:30:02.708Z] INBOX technology.md modified → technology
 [2026-02-21T00:30:02.708Z] AGENT technology starting (trigger: inbox-message)
 [2026-02-21T00:30:02.710Z] AGENT technology started (pid: 226000)
+[2026-02-21T00:30:50.921Z] AGENT operations exited (code=0, duration: 254s)
+[2026-02-21T00:30:50.921Z] STATE operations lastRun updated, errors reset
+[2026-02-21T00:30:50.921Z] PENDING operations processing queued trigger
+[2026-02-21T00:30:50.921Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T00:32:02.512Z] INBOX technology.md modified → technology
+[2026-02-21T00:32:02.513Z] QUEUED technology already running — trigger queued: inbox-message
