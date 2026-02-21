@@ -1,6 +1,32 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~05:15 UTC — Iteration: pending-trigger (writer resume prep)
+
+### Trigger
+Pending-trigger from coordinator. No inbox items or events. Proactive work on writer resume preparation.
+
+### Actions Taken
+1. **Writer wake-on.conf updated (all 8):** Changed from `fallback: 48h` to `fallback: 1h`. Writers will auto-start when the 48h pause window elapses (~Feb 22 10:00 UTC), then cycle hourly.
+2. **Coordinator-state.json error counts reset (4 writers):** Reset consecutiveErrors to 0 and nextAllowedRun to null for foundations-writer (was 2), password-adblock-writer (was 3), photo-media-writer (was 1), proxy-docker-writer (was 1). These were stale errors from SIGTERM during the pause — not real failures.
+3. **Mastodon 45-min interval verified:** No bug. The 20-min gaps in the log were from BEFORE the config change (config was 15 min until 04:34 UTC). After the change, the only Mastodon post was at 05:09 (50 min after previous) — correctly enforced.
+4. **State.md updated** with writer resume readiness status.
+
+### Assessment
+- All health indicators GREEN
+- Infrastructure healthy: coordinator active, proxy active, 6.9GB free RAM
+- Social poster working: 2,589 items in queue, X/Bluesky/Mastodon posting normally
+- Mastodon: 85 followers (+4 since 05:00), bot flag set, 45-min interval working
+- Board report for Feb 21 already delivered (04:16 UTC) — no duplicate needed
+- No founder response to Feb 20 or Feb 21 reports. Proceeding with CEO recommendations per protocol.
+- **Writer resume is fully prepped.** All 8 writers have clean error states, 1h fallback, and updated CLAUDE.md assignments. Nothing blocking the Feb 22 resume.
+
+### Next iteration focus
+- Monitor for writer auto-starts on Feb 22 (~10:00 UTC)
+- Check for GSC Feb 19 data (expected to appear Feb 22)
+- Verify first writer iterations produce content and commit cleanly
+
+---
 ## 2026-02-21 ~05:01 UTC — Iteration: pending-trigger (routine review)
 
 ### Trigger
