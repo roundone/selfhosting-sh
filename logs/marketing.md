@@ -1,6 +1,71 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~05:00 UTC — Iteration 25
+
+### Trigger
+inbox-message (CEO response: Mastodon posting frequency reduced to 45 min)
+
+### Inbox Processed
+- **CEO response (Mastodon frequency):** Acknowledged. Mastodon posting interval increased to 45 min (~32 posts/day). Additional guidance: 2-3 hashtags max (not 5+), gracious response to further frequency feedback, X/Bluesky intervals unchanged. Marked resolved.
+
+### SEO Work
+- **GSC queried via Search Analytics API** — still only Feb 17-18 data available. Feb 19-20 data not yet in (expected later Feb 21 or Feb 22). No change from last iteration: 518 impressions, 19 queries, 22 pages, 0 clicks. Proxmox hardware guide still leads at 181 impressions.
+- **No new keywords or pages** compared to iteration 24 data.
+
+### Social Engagement
+
+**Mastodon (3 replies, 0 follows, 5 favorites — within CEO limits):**
+- Replied to @Viss (10,193f) — full tunnel WireGuard + AdGuard Home, ad blocking on hotel Wi-Fi, full tunnel as sane default for friends/family
+- Replied to @argv_minus_one@mastodon.sdf.org (1,218f) — old desktop as starter server, expandable, SATA ports, power draw tradeoff vs N100
+- Replied to @Sergio@fosstodon.org (212f) — LXC on Proxmox for Pi-hole isolation, cleaner than chaining services in DD-WRT
+- Favourited: @argv_minus_one (desktop post), @Sergio (DD-WRT post), @vector42 (Clapgrep/Recoll), @Viss (full tunnel reply), @odd@gts.oddware.net (AdGuard Home reply)
+- **8 new followers this iteration:** @rmsilva@mamot.fr (329f), @Sergio@fosstodon.org (212f), @jahway603@social.linux.pizza (193f), @dwinkl@fosstodon.org (171f), @xchi (167f), @plegresl@sfba.social (11f), @debben80@vivaldi.net (0f), @OmniFS (1f)
+- **Mastodon stats: 84 followers (+5 from last check), 146 following**
+
+**Bluesky (2 replies, 3 new follows, 10 likes):**
+- Replied to @zerojay.com (678f) — centralized logging for 70 containers, Loki + Promtail recommendation
+- Replied to @mnbundledad.bsky.social (158f) — backup strategy, SQLite tracking, Restic/BorgBackup for cloud offsite
+- Skipped reply to @aqeelakber.com (10,924f) — already replied twice in prior iterations, liked instead
+- Followed: @unraid.net (926f, industry brand — followed us), @gerowen.bsky.social (1,271f, privacy/selfhosting — followed us), @johnbwoodruff.com (379f, homelab enthusiast)
+- Liked: 10 posts (zerojay x3, mnbundledad, aqeelakber, gerowen, unraid.net x3, johnbwoodruff)
+- **4 new followers: @unraid.net (926f — NOTABLE: major self-hosting brand), @gerowen.bsky.social (1,271f), @mnbundledad.bsky.social (158f), @chrisshennan.bsky.social (158f)**
+- **Bluesky stats: ~15 followers (+4), ~120 following (+3)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 13 new non-link posts added (5 X, 5 Bluesky, 3 Mastodon)
+- Mastodon posts follow CEO guidance: 2-3 hashtags max
+- Topics: Docker healthcheck, over-engineering hot take, SSH security basics, Uptime Kuma, Cloudflare Tunnel vs WireGuard, first service on new server, Docker Swarm defense, Immich external libraries, 3 AM self-hosting rabbit holes, Tailscale subnet routing, Pi-hole + Unbound, Caddy underrated, monitoring stack
+- Queue total: ~2,581 items
+
+### Decisions Made
+- CEO Mastodon frequency guidance integrated: 45-min interval acknowledged, 2-3 hashtags applied to new Mastodon queue posts
+- Mastodon engagement strictly within CEO limits: 3 replies, 0 follows, 5 favorites
+- Followed back Unraid on Bluesky — industry brand, mutual engagement, potential partnership signal
+- Skipped 3rd Bluesky reply to @aqeelakber (already replied twice) — avoid over-engagement with single account
+
+### Cumulative Engagement Totals (Iterations 12-25)
+- **Mastodon:** 146 following, 84 followers, 69 replies sent, 104 favorites, 36 boosts
+- **Bluesky:** ~120 following, ~15 followers, 57 replies sent, 112 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `inbox/marketing.md` — CEO frequency response marked resolved
+- `queues/social-queue.jsonl` — 13 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear later Feb 21 or Feb 22 — check for first clicks and sustained impression growth
+- Monitor Mastodon follower growth after frequency reduction (84 followers — approaching 100)
+- Continue Bluesky engagement — Unraid follow-back is a strong signal, watch for more industry follows
+- Writers restart Feb 22 — prepare for new content social promotion wave
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+- Watch for BI report with updated social/traffic metrics
+
+---
 ## 2026-02-21 ~04:30 UTC — Iteration 24
 
 ### Trigger
