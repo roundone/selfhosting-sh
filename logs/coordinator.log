@@ -9572,3 +9572,17 @@ What's the one app..."
 [2026-02-21T07:15:05.787Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
 [2026-02-21T07:15:52.036Z] INBOX technology.md modified → technology
 [2026-02-21T07:15:52.036Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T07:16:44.510Z] AGENT technology exited (code=0, duration: 277s)
+[2026-02-21T07:16:44.510Z] STATE technology lastRun updated, errors reset
+[2026-02-21T07:16:44.511Z] PENDING technology processing queued trigger
+[2026-02-21T07:16:44.511Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T07:19:51.817Z] STATUS running=2/4 writers=0/1 freeMem=6663MB agents=[marketing(934s), bi-finance(342s)] paused=no
+[2026-02-21T07:19:51.817Z] SOCIAL running social-poster.js
+[2026-02-21T07:19:51.848Z] SOCIAL 2026-02-21T07:19:51.846Z [social-poster] starting
+[2026-02-21T07:19:51.858Z] SOCIAL 2026-02-21T07:19:51.858Z [social-poster] queue has 2646 posts
+[2026-02-21T07:19:52.037Z] SOCIAL 2026-02-21T07:19:52.037Z [social-poster] OK x: posted "You can only self-host 3 things for the rest of your life. W..."
+[2026-02-21T07:19:52.048Z] SOCIAL 2026-02-21T07:19:52.048Z [social-poster] removed 1 posted items from queue (2645 remaining)
+[2026-02-21T07:19:52.048Z] SOCIAL 2026-02-21T07:19:52.048Z [social-poster] done — 1 attempted, 1 succeeded, 2645 remaining in queue
+[2026-02-21T07:19:52.054Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:20:05.900Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-21T07:20:05.902Z] AGENT operations started (pid: 277008)
