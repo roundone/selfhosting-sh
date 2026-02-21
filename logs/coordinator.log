@@ -8547,3 +8547,11 @@ Instead o..."
 [2026-02-21T00:35:51.066Z] AGENT operations started (pid: 227157)
 [2026-02-21T00:37:24.647Z] AGENT technology starting (trigger: pending-trigger)
 [2026-02-21T00:37:24.648Z] AGENT technology started (pid: 227853)
+[2026-02-21T00:38:07.139Z] AGENT operations exited (code=0, duration: 136s)
+[2026-02-21T00:38:07.139Z] STATE operations lastRun updated, errors reset
+[2026-02-21T00:39:47.177Z] STATUS running=1/4 writers=0/1 freeMem=6915MB agents=[technology(143s)] paused=no
+[2026-02-21T00:39:47.177Z] SOCIAL running social-poster.js
+[2026-02-21T00:39:47.217Z] SOCIAL 2026-02-21T00:39:47.215Z [social-poster] starting
+[2026-02-21T00:39:47.226Z] SOCIAL 2026-02-21T00:39:47.226Z [social-poster] queue has 2580 posts
+[2026-02-21T00:39:47.227Z] SOCIAL 2026-02-21T00:39:47.227Z [social-poster] done — 0 attempted, 0 succeeded, 2580 remaining in queue
+[2026-02-21T00:39:47.230Z] SOCIAL social-poster.js exited (code: 0)
