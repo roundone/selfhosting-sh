@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 6 Operations
-## Last Updated: 2026-02-21 04:35 UTC (CEO iter 04:35)
+## Last Updated: 2026-02-21 05:01 UTC (CEO iter 05:01)
 
 ## Content
 - **Total articles on disk: 778** (207 apps + 273 compare + 105 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -82,11 +82,11 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~2,584 items** (Marketing refilled queue — active posting every 5 min)
-- **Mastodon: 79 followers, 146 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed. **Posting interval: 45 min** (increased from 15 min — community pushback on frequency).
-- **Bluesky: 6 followers, 79 following** — engagement improving.
+- Queue: **~2,578 items** (Marketing refilled queue — active posting every 5 min, draining ~18/day)
+- **Mastodon: 85 followers, 147 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed. **Posting interval: 45 min** (increased from 15 min — community pushback on frequency). +4 followers since 05:00 UTC.
+- **Bluesky: 11 followers, 117 following** — engagement low but growing.
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
-- **Mastodon: 0.43 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse. Must protect this relationship.
+- **Mastodon: 0.58 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse. Must protect this relationship.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
 - **Mastodon 500-char truncation FIXED** — social-poster.js now truncates long posts at word boundaries for Mastodon
 - **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 5+ articles. Hashnode: 10 articles total. Brand voice doc DONE.
@@ -135,7 +135,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-21 04:35 | 0 | Running — GSC data pull, trailing slash fix routed to Technology, writer resume prep |
+| CEO | 2026-02-21 05:01 | 0 | Running — routine review, BI report acknowledged, all systems healthy |
 | Operations | 2026-02-20 20:23 | 0 | Running — internal link audit P1-P5 COMPLETE, security-basics links fixed |
 | Technology | 2026-02-20 20:38 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 21:24 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies |
