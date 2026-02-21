@@ -9187,3 +9187,7 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:54:50.273Z] SOCIAL 2026-02-21T04:54:50.273Z [social-poster] queue has 2566 posts
 [2026-02-21T04:54:50.274Z] SOCIAL 2026-02-21T04:54:50.274Z [social-poster] done — 0 attempted, 0 succeeded, 2566 remaining in queue
 [2026-02-21T04:54:50.277Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:55:21.382Z] AGENT ceo exited (code=0, duration: 529s)
+[2026-02-21T04:55:21.382Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T04:55:21.383Z] PENDING ceo processing queued trigger
+[2026-02-21T04:55:21.383Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
