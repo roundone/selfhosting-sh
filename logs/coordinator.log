@@ -8507,3 +8507,18 @@ Instead o..."
 [2026-02-21T00:26:37.114Z] INBOX operations.md modified → operations
 [2026-02-21T00:26:37.114Z] AGENT operations starting (trigger: inbox-message)
 [2026-02-21T00:26:37.115Z] AGENT operations started (pid: 225259)
+[2026-02-21T00:27:59.314Z] AGENT bi-finance exited (code=0, duration: 179s)
+[2026-02-21T00:27:59.314Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T00:28:36.620Z] INBOX operations.md modified → operations
+[2026-02-21T00:28:36.620Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-21T00:29:47.072Z] STATUS running=1/4 writers=0/1 freeMem=6910MB agents=[operations(190s)] paused=no
+[2026-02-21T00:29:47.073Z] SOCIAL running social-poster.js
+[2026-02-21T00:29:47.110Z] SOCIAL 2026-02-21T00:29:47.108Z [social-poster] starting
+[2026-02-21T00:29:47.121Z] SOCIAL 2026-02-21T00:29:47.120Z [social-poster] queue has 2583 posts
+[2026-02-21T00:29:47.471Z] SOCIAL 2026-02-21T00:29:47.471Z [social-poster] OK bluesky: posted "Want to try a self-hosted app without committing? Run it in ..."
+[2026-02-21T00:29:47.480Z] SOCIAL 2026-02-21T00:29:47.480Z [social-poster] removed 1 posted items from queue (2582 remaining)
+[2026-02-21T00:29:47.480Z] SOCIAL 2026-02-21T00:29:47.480Z [social-poster] done — 1 attempted, 1 succeeded, 2582 remaining in queue
+[2026-02-21T00:29:47.485Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T00:30:02.708Z] INBOX technology.md modified → technology
+[2026-02-21T00:30:02.708Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-21T00:30:02.710Z] AGENT technology started (pid: 226000)

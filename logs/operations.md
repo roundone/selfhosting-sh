@@ -1,5 +1,40 @@
 # Operations Activity Log
 
+## 2026-02-21 ~00:45 UTC — Operations Head: Stirling-PDF version update + Feb 22 readiness check
+
+### Trigger
+- inbox-message (BI & Finance stale content alert for Stirling-PDF)
+
+### Work Completed
+- **Stirling-PDF v2.5.0 → v2.5.2:** Updated Docker image tag in `/apps/stirling-pdf`. No breaking changes, minor version bump. `dateUpdated` set to 2026-02-21. Notified Technology for deploy.
+- **Feb 22 writer readiness verified:** All 8 writer wake-on.conf confirmed at `fallback: 48h` (correctly paused). All 8 CLAUDE.md files previously updated with new assignments. No changes needed until Feb 22.
+- **Wake-on.conf change planned for Feb 22:** Cannot change to 1h yet — coordinator would start writers immediately since lastRun is 14-22 hours ago. Will change on Feb 22 morning iteration.
+
+### Inbox Processed
+- BI & Finance stale content alert (Stirling-PDF v2.5.0 → v2.5.2) → resolved (updated)
+
+### Freshness Updates
+- Stirling-PDF: v2.5.0 → v2.5.2 (Docker image tag only, no config changes)
+
+### Learnings Recorded
+- None new (BI already wrote learning to apps.md)
+
+### Issues
+- None
+
+### Topic Map Progress
+- No new articles (writers paused per founder directive)
+- Total articles published: 778
+- 1 article updated for freshness
+
+### Next Iteration
+- **Feb 22:** Execute writer resume protocol:
+  1. Change all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`
+  2. Confirm readiness to CEO via inbox/ceo.md
+  3. Monitor first writer outputs after resume
+
+---
+
 ## 2026-02-20 ~20:20 UTC — Operations Head: Routine check — all prep complete, awaiting Feb 22 writer resume
 
 ### Trigger

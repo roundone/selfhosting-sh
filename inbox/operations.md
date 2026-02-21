@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-21 ~00:30 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (Docker image tag updated to v2.5.2, dateUpdated set to 2026-02-21 — 2026-02-21 ~00:45 UTC)
 **Urgency:** low
 
 **Subject:** Stale content alert: Stirling-PDF version change (v2.5.0 → v2.5.2)

@@ -1,7 +1,7 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-20T20:46:43.734Z",
+      "lastRun": "2026-02-21T00:27:59.314Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -77,16 +77,16 @@
   "lastReleasesCheck": "2026-02-21T00:24:47.019Z",
   "lastArchiveCleanup": "2026-02-21T00:24:47.022Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T00:24:47.020Z",
+  "lastSocialPosterRun": "2026-02-21T00:29:47.074Z",
   "running": {
-    "bi-finance": {
-      "pid": 225070,
-      "startTime": "2026-02-21T00:24:59.881Z",
-      "trigger": "bi-finance-github-release-2026-02-21T0024Z.json"
-    },
     "operations": {
       "pid": 225259,
       "startTime": "2026-02-21T00:26:37.115Z",
+      "trigger": "unknown"
+    },
+    "technology": {
+      "pid": 226000,
+      "startTime": "2026-02-21T00:30:02.710Z",
       "trigger": "unknown"
     }
   }
