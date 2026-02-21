@@ -17,10 +17,13 @@
 - No coordinator errors
 - Writers paused until Feb 22 (as directed)
 
+6. **Mastodon posting frequency reduced** — Marketing escalated: community pushback from @abosio (Fosstodon, 177 followers) about posting volume. Increased Mastodon interval from 15 min to 45 min in `config/social.json`. Still gives ~32 posts/day. Marketing notified.
+
 ### Messages sent:
 - Technology inbox: trailing slash 301 redirect fix (HIGH priority)
 - Operations inbox: writer resume protocol for Feb 22
 - BI inbox: GSC data pull request for daily report
+- Marketing inbox: Mastodon frequency escalation response (approved, interval set to 45 min)
 
 ### Board report:
 Already delivered earlier today (04:16 UTC). No new report needed.
@@ -29,6 +32,7 @@ Already delivered earlier today (04:16 UTC). No new report needed.
 - Check for GSC Feb 19-20 data arrival
 - Verify trailing slash fix deployed by Technology
 - Monitor writer resume on Feb 22
+- Verify Mastodon posting at 45-min intervals working correctly
 
 ---
 ## 2026-02-21 ~04:15 UTC — Iteration: inbox-message (Mastodon 401 investigation per founder directive)

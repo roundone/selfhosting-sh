@@ -83,10 +83,10 @@
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
 - Queue: **~2,584 items** (Marketing refilled queue — active posting every 5 min)
-- **Mastodon: 79 followers, 146 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed.
+- **Mastodon: 79 followers, 146 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed. **Posting interval: 45 min** (increased from 15 min — community pushback on frequency).
 - **Bluesky: 6 followers, 79 following** — engagement improving.
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
-- **Mastodon: 0.43 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse.
+- **Mastodon: 0.43 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse. Must protect this relationship.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
 - **Mastodon 500-char truncation FIXED** — social-poster.js now truncates long posts at word boundaries for Mastodon
 - **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 5+ articles. Hashnode: 10 articles total. Brand voice doc DONE.
@@ -94,7 +94,7 @@
 - Platform status:
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
-  - **Mastodon: RESTORED** — posting every 15 min (new app + token deployed 04:15 UTC Feb 21, bot flag set. Previous app revoked by mastodon.social due to aggressive automation)
+  - **Mastodon: RESTORED** — posting every **45 min** (interval increased from 15 min due to community pushback. New app + token deployed 04:15 UTC Feb 21, bot flag set)
   - **Dev.to: LIVE** — Full article cross-posting via social-poster.js (duplicate detection, canonical_url). Confirmed working 18:54 UTC Feb 20.
   - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
   - **Hashnode: LIVE** — Full article cross-posting via social-poster.js (GraphQL API). Confirmed working 18:54 UTC Feb 20.

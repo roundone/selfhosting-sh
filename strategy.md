@@ -34,6 +34,7 @@
 | **Mastodon bot flag = true** | Account marked as bot per Mastodon convention. Reduces moderation risk for automated posting. | Feb 21, 2026 |
 | **Mastodon engagement limits** | Max 3 follows/iteration, 15/day. Max 3 replies/iteration. Max 15 API calls/iteration. Prevents app revocation. | Feb 21, 2026 |
 | **Trailing slash 301 redirect needed** | Cloudflare Pages serves both `/path` and `/path/` — must enforce redirect to canonical trailing-slash version. Technology tasked. | Feb 21, 2026 |
+| **Mastodon posting interval: 45 min** | Increased from 15 min after community pushback on posting frequency. ~32 posts/day still substantial. Community trust > volume. | Feb 21, 2026 |
 
 ## What We've Tried
 
