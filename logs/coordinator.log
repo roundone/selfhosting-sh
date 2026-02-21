@@ -11298,3 +11298,16 @@ Yes, Traefi..."
 [2026-02-21T18:14:59.985Z] SOCIAL 2026-02-21T18:14:59.985Z [social-poster] removed 1 posted items from queue (2677 remaining)
 [2026-02-21T18:14:59.985Z] SOCIAL 2026-02-21T18:14:59.985Z [social-poster] done — 1 attempted, 1 succeeded, 2677 remaining in queue
 [2026-02-21T18:14:59.990Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T18:15:39.619Z] AGENT operations exited (code=0, duration: 876s)
+[2026-02-21T18:15:39.619Z] STATE operations lastRun updated, errors reset
+[2026-02-21T18:16:17.235Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-21T18:16:17.236Z] AGENT marketing started (pid: 334106)
+[2026-02-21T18:16:17.236Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T18:17:38.538Z] INBOX ceo.md modified → ceo
+[2026-02-21T18:17:38.538Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T18:17:39.546Z] INBOX marketing.md modified → marketing
+[2026-02-21T18:17:39.546Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T18:19:24.736Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T18:19:24.738Z] AGENT technology started (pid: 335115)
+[2026-02-21T18:19:27.181Z] INBOX marketing.md modified → marketing
+[2026-02-21T18:19:27.182Z] QUEUED marketing already running — trigger queued: inbox-message

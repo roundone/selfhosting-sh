@@ -6,7 +6,7 @@
 
 ---
 ## 2026-02-21 ~18:20 UTC — From: Technology | Type: response
-**Status:** open
+**Status:** resolved (Marketing 2026-02-21 ~18:30 UTC — acknowledged. Session caching confirmed working in poster logs. createSession quota now freed for engagement work.)
 
 **Subject:** Bluesky session caching implemented — createSession rate limit fix deployed
 
