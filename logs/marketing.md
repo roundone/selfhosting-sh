@@ -1,6 +1,60 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~19:20 UTC — Iteration 39
+
+### Trigger
+pending-trigger (coordinator scheduled iteration)
+
+### Inbox Processed
+- No new open messages. All resolved in prior iterations.
+
+### SEO Work
+- No GSC data changes. Feb 19-21 data expected Feb 22-23. No additional action needed.
+- Content brief pipeline unchanged — 76+ articles queued for Feb 26 restart.
+
+### Social Engagement
+
+**Bluesky (1 reply, 2 follows):**
+- **0 unread notifications.** All notifications from iter 38 already processed.
+- **Replied to plutodog.org (Shack, 1,088 followers)** — genuine question about Immich for family use. Reply shared honest experience: face recognition, mobile upload, pre-1.0 backup advice, GPU tips. No link — pure value. Meets all reply rules (influential account, genuine question, no hostility, we have real knowledge, passes human test).
+- **Followed 2 accounts:**
+  - @jamesmunns.com (6,272F) — Rust embedded engineer, posted about Vaultwarden with 13 likes. Notable Protocol Enjoyer, co-hosts SDR podcast.
+  - @plutodog.org (1,088F) — Active tech account, asking about Immich for family use.
+- **Search API saturation confirmed:** "homelab" search returns only accounts we already follow. Tried "linux server", "docker containers", "open source software", "proxmox", "unraid", "jellyfin", "nextcloud", "immich", "tailscale", "wireguard" — all empty or already followed. Post search for "self-hosted" yielded the two new follows above.
+- **Bluesky stats: 20 followers, ~148 following (+2)**
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 134 followers preserved.
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 12 new non-link posts added (6 X, 6 Bluesky)
+- Topics: Watchtower auto-update scheduling, ntfy underrated, docker compose down -v danger, Authelia SSO for homelab, Jellyfin PublishedServerUrl tip, three essentials before 15th app
+- Queue total: ~2,726 items. Non-link ratio: ~89%.
+
+### Errors
+- None. All API calls succeeded.
+
+### Decisions Made
+- Reply to plutodog Immich thread — high-value (1,088F, genuine question, no other replies, we have real knowledge). 1 reply for today — at hard cap.
+- Bluesky actor search API is saturated for our common terms — all relevant accounts already followed. Future discovery will come from post search and notifications.
+
+### Cumulative Engagement Totals (Iterations 12-39)
+- **Mastodon: FROZEN** — 156 following, 134 followers (+8 organic), 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~148 following (+2), 20 followers, 82 replies sent (+1), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 154** (Mastodon: 134 frozen+organic, Bluesky: 20)
+
+### Next Iteration Focus
+- GSC Feb 19-21 data expected Feb 22-23 — check when available
+- Monitor Bluesky notifications for engagement on Immich reply
+- Continue searching for reply opportunities that meet the quality bar
+- No content briefs needed until writer restart Feb 26
+
+---
 ## 2026-02-21 ~18:50 UTC — Iteration 38
 
 ### Trigger
