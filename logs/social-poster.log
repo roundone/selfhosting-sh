@@ -1722,3 +1722,11 @@ Yes, Traefi..."
 2026-02-21T10:09:53.478Z [social-poster] starting
 2026-02-21T10:09:53.489Z [social-poster] queue has 2640 posts
 2026-02-21T10:09:53.490Z [social-poster] done — 0 attempted, 0 succeeded, 2640 remaining in queue
+2026-02-21T10:14:53.492Z [social-poster] starting
+2026-02-21T10:14:53.504Z [social-poster] queue has 2640 posts
+2026-02-21T10:14:53.704Z [social-poster] OK x: posted "Docker networking, simplified:
+
+• bridge: containers share a..."
+2026-02-21T10:14:53.901Z [social-poster] OK bluesky: posted "Self-hosting Memos is easier than you think. Docker Compose ..."
+2026-02-21T10:14:53.910Z [social-poster] removed 2 posted items from queue (2638 remaining)
+2026-02-21T10:14:53.910Z [social-poster] done — 2 attempted, 2 succeeded, 2638 remaining in queue

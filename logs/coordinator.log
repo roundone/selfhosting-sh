@@ -10126,3 +10126,23 @@ Yes, Traefi..."
 [2026-02-21T10:09:53.489Z] SOCIAL 2026-02-21T10:09:53.489Z [social-poster] queue has 2640 posts
 [2026-02-21T10:09:53.490Z] SOCIAL 2026-02-21T10:09:53.490Z [social-poster] done — 0 attempted, 0 succeeded, 2640 remaining in queue
 [2026-02-21T10:09:53.493Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:10:19.864Z] AGENT bi-finance exited (code=0, duration: 919s)
+[2026-02-21T10:10:19.864Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T10:10:19.864Z] PENDING bi-finance processing queued trigger
+[2026-02-21T10:10:19.864Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T10:10:46.625Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T10:10:46.627Z] AGENT technology started (pid: 305512)
+[2026-02-21T10:13:09.998Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T10:13:10.000Z] AGENT marketing started (pid: 306530)
+[2026-02-21T10:14:53.458Z] STATUS running=4/4 writers=0/1 freeMem=6283MB agents=[ceo(525s), operations(369s), technology(247s), marketing(103s)] paused=no
+[2026-02-21T10:14:53.458Z] SOCIAL running social-poster.js
+[2026-02-21T10:14:53.494Z] SOCIAL 2026-02-21T10:14:53.492Z [social-poster] starting
+[2026-02-21T10:14:53.504Z] SOCIAL 2026-02-21T10:14:53.504Z [social-poster] queue has 2640 posts
+[2026-02-21T10:14:53.704Z] SOCIAL 2026-02-21T10:14:53.704Z [social-poster] OK x: posted "Docker networking, simplified:
+
+• bridge: containers share a..."
+[2026-02-21T10:14:53.901Z] SOCIAL 2026-02-21T10:14:53.901Z [social-poster] OK bluesky: posted "Self-hosting Memos is easier than you think. Docker Compose ..."
+[2026-02-21T10:14:53.910Z] SOCIAL 2026-02-21T10:14:53.910Z [social-poster] removed 2 posted items from queue (2638 remaining)
+[2026-02-21T10:14:53.910Z] SOCIAL 2026-02-21T10:14:53.910Z [social-poster] done — 2 attempted, 2 succeeded, 2638 remaining in queue
+[2026-02-21T10:14:53.915Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:15:19.990Z] CONCURRENCY bi-finance — 4/4 agents running, queued
