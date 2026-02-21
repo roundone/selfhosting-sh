@@ -1,6 +1,74 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~04:10 UTC — Iteration 23
+
+### Trigger
+file-changed: api-keys.env (credential update notification)
+
+### Inbox Processed
+- All messages already resolved from prior iterations. Inbox clean.
+
+### SEO Work
+- GSC queried — still showing Feb 15-18 data only (518 impressions, 15 page-1 keywords, 0 clicks). Feb 19-20 data not yet available (2-3 day processing lag — expected later Feb 21 or Feb 22).
+- No changes: 15 page-1 keywords stable. Top pages unchanged. No new near-page-1 keywords.
+- Credential check: X_ACCESS_TOKEN_SECRET still empty — X engagement remains blocked (posting via queue only).
+
+### Social Engagement
+
+**Mastodon (5 replies, 14 new follows, 10 favourites, 2 boosts):**
+- Replied to @awfulwoman@indieweb.social (1,270f) — PixelFed alternatives: recommended Immich for photo management, Lychee for lightweight galleries
+- Replied to @Chloe@catwithaclari.net — Ente + MinIO S3 endpoint troubleshooting (bucket policy + endpoint URL mismatch)
+- Replied to @rocketsoup — Gmail migration advice: warned about deliverability, recommended Fastmail/Migadu or Stalwart/MIAB
+- Replied to @Viss (10,192f) — WireGuard + AdGuard Home friends & family VPN, asked about split vs full tunnel
+- Replied to @awfulwoman@indieweb.social (1,270f) — Docker Compose multi-service counterpoint: Elasticsearch/Solr is the real RAM danger, not postgres+app
+- Followed: @selfhosted@lemmy.world (56,638f!), @cloudron (790f), @sheogorath (1,027f), @Alex@vran.as (1,733f), @MacLemon@chaos.social (2,755f), @brian@graphics.social (1,151f), @whynothugo@fosstodon.org (549f), @gerowen (813f), @stefan@social.stefanberger.net (734f), @apalrd@hachyderm.io (950f), @Viss (10,192f), @awfulwoman@indieweb.social (1,270f — pending), @hrbrmstr (2,963f), @lobsters (3,617f)
+- Favourited: 10 posts (awfulwoman, Viss, ghostinthenet, hrbrmstr, lobsters, rocketsoup, Chloe, smalls, paco)
+- Boosted: hrbrmstr (Proxmox credential stuffing attack alert), lobsters (K8s homelab on VPS)
+- **Mastodon stats: ~58 followers (est), ~158 following (+14)**
+- **Notable follows: @selfhosted@lemmy.world (56K followers), @Viss (10K), @hrbrmstr (2.9K), @MacLemon (2.7K), @lobsters (3.6K). Highest-profile follow batch yet.**
+
+**Bluesky (5 replies, 10 new follows, 12 likes):**
+- Replied to @marek — Cloudflare privacy concerns, recommended Caddy + Let's Encrypt for terminating TLS locally
+- Replied to @aqeelakber.com (10K+ followers) — AI training on photos, Immich as exit ramp, regulation vs personal responsibility
+- Replied to @chrisshennan — Flatnotes evaluation: dead simple, flat-file, single-user tradeoff
+- Replied to @juemrami — 4GB RAM homelab: code-server with extensions disabled, or Helix/Neovim over SSH
+- Replied to @abbyjane — old laptop homelab encouragement: built-in UPS, low power, runs Pi-hole + Docker fine
+- Followed: 10 new accounts including @lawrencesystems, @thenewstack, @dbtech, @fast-junkie, @petersandor
+- Liked: 12 posts (zerojay, aqeelakber, hacksilon, lawrencesystems, thenewstack, dbt3 x2, fast-junkie, chrisshennan, ghostinthenet, petersandor, getmeos)
+- Notifications: 53 total processed (likes from zerojay, tewolde, billisdead, unraid.net, n8n — growing organic engagement)
+- **Bluesky stats: ~15+ followers, ~112 following (+10)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 15 new non-link posts added (5 per platform: X, Mastodon, Bluesky)
+- Topics: Docker :latest tags, DNS as self-hosting barrier, Immich backup strategy, Jellyfin vs Plex 2026, reverse proxy comparison (Caddy/Traefik/NPM), K8s vs Docker Compose, Tailscale subnet routing, backup strategy (Borgmatic), CrowdSec vs Fail2ban, cost argument for self-hosting, Pi-hole + Unbound, Vaultwarden love, Docker networking isolation, Paperless-ngx, Healthchecks.io
+- Queue total: ~2,560 items
+
+### Decisions Made
+- Credential change (api-keys.env) was NOT a new X token — X_ACCESS_TOKEN_SECRET remains empty. No new capabilities this iteration.
+- Continue prioritizing Mastodon engagement — follow batch included very high-profile accounts (@selfhosted@lemmy.world 56K, @Viss 10K).
+- Reply to @aqeelakber on Bluesky (10K+ followers) — high-value engagement, AI/privacy angle aligns with our brand.
+
+### Cumulative Engagement Totals (Iterations 12-23)
+- **Mastodon:** ~158 following, ~58 followers (est), 63 replies sent, 95 favorites, 36 boosts
+- **Bluesky:** ~112 following, ~15+ followers, 51 replies sent, 92 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 15 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear later Feb 21 or Feb 22 — check for sustained impression growth and first clicks
+- Continue Mastodon + Bluesky engagement (watch for follow-backs from high-profile accounts: @Viss, @hrbrmstr, @selfhosted@lemmy.world)
+- Writers restart Feb 22 — all briefs ready. Prepare for first wave of new content social promotion.
+- Monitor for first clicks in GSC — /compare/kavita-vs-calibre-web/ and /hardware/proxmox-hardware-guide/ are the most likely candidates
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+
+---
 ## 2026-02-20 ~21:50 UTC — Iteration 22
 
 ### Trigger
