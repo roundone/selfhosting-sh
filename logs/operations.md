@@ -1,5 +1,74 @@
 # Operations Activity Log
 
+## 2026-02-21 ~18:30 UTC — Operations Head: Orphan comparison link fixes (batch 3) + writer readiness verification
+
+### Trigger
+- pending-trigger (routine iteration during writer pause)
+
+### Inbox Processed
+- No new unprocessed messages. All prior messages remain at their resolved/in-progress status.
+
+### Articles Written
+- None (writers paused per founder directive until Feb 26 6PM UTC)
+
+### Orphan Comparison Link Fixes — BATCH 3 (23 new links across 18 app guides)
+
+Identified 33 orphan comparison articles with zero inbound links from app guides. Of those, 15 had at least one corresponding app guide. Fixed all 15 by adding 23 total links to 18 app guide files:
+
+| App Guide | Links Added |
+|-----------|-------------|
+| audiobookshelf.md | +audiobookshelf-vs-booksonic |
+| vaultwarden.md | +bitwarden-vs-vaultwarden |
+| blocky.md | +blocky-vs-pihole |
+| pi-hole.md | +blocky-vs-pihole, +pihole-vs-adguard-dns |
+| technitium.md | +coredns-vs-technitium, +technitium-vs-unbound |
+| gladys-assistant.md | +gladys-vs-domoticz, +gladys-vs-iobroker, +gladys-vs-openhab |
+| domoticz.md | +gladys-vs-domoticz |
+| iobroker.md | +gladys-vs-iobroker |
+| openhab.md | +gladys-vs-openhab |
+| immich.md | +immich-vs-google-photos |
+| kavita.md | +kavita-vs-calibre-web-vs-komga |
+| calibre-web.md | +kavita-vs-calibre-web-vs-komga |
+| komga.md | +kavita-vs-calibre-web-vs-komga |
+| navidrome.md | +navidrome-vs-plex-music |
+| plex.md | +navidrome-vs-plex-music |
+| outline.md | +outline-vs-notion-alternatives, +outline-vs-notion |
+| adguard-home.md | +pihole-vs-adguard-dns |
+| podman.md | +podman-vs-docker |
+
+**Running totals (Batch 1 + 2 + 3):**
+- ~108 new inbound links added across ~67 app guides over 3 iterations
+- Orphan comparisons reduced from ~79 (original) → ~49 (batch 2) → ~18 (batch 3)
+- Remaining 18 orphans are for apps without published guides (discourse, flarum, mastodon, pixelfed, lemmy, planka, wekan, etc.)
+
+### Writer Restart Readiness Verification
+Verified all 8 writers for Feb 26 restart:
+- All CLAUDE.md files: updated with structure variation guidance, 155-char meta desc requirement, correct category assignments
+- All wake-on.conf files: set to 130h fallback (paused until Feb 26)
+- No corrections needed. All writers are ready.
+
+### Freshness Updates
+- None needed
+
+### Learnings Recorded
+- None
+
+### Issues
+- None. All systems healthy. Writers paused per directive.
+
+### Topic Map Progress
+- No new articles (writers paused)
+- Total articles on disk: 780
+- Target: 850+ by end of Month 1 (~70 remaining, writers resume Feb 26)
+- Orphan comparisons: reduced to ~18 (from original ~79)
+
+### Next Iteration
+- Continue quality review during extended pause if triggered
+- Monitor for new BI stale content alerts
+- Feb 26: verify coordinator restart, monitor first writer output
+
+---
+
 ## 2026-02-21 ~18:00 UTC — Operations Head: Article structure variation — all 8 writer CLAUDE.md files updated
 
 ### Trigger

@@ -12,7 +12,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-21T17:58:19.922Z",
+      "lastRun": "2026-02-21T18:11:17.101Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -84,14 +84,14 @@
       "startTime": "2026-02-21T18:01:03.322Z",
       "trigger": "unknown"
     },
-    "marketing": {
-      "pid": 330917,
-      "startTime": "2026-02-21T18:03:20.107Z",
-      "trigger": "unknown"
-    },
     "technology": {
       "pid": 332600,
       "startTime": "2026-02-21T18:10:18.483Z",
+      "trigger": "unknown"
+    },
+    "ceo": {
+      "pid": 333063,
+      "startTime": "2026-02-21T18:12:03.755Z",
       "trigger": "unknown"
     }
   }

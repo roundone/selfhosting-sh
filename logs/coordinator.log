@@ -11266,3 +11266,19 @@ Yes, Traefi..."
 [2026-02-21T18:10:18.481Z] INBOX technology.md modified → technology
 [2026-02-21T18:10:18.481Z] AGENT technology starting (trigger: inbox-message)
 [2026-02-21T18:10:18.483Z] AGENT technology started (pid: 332600)
+[2026-02-21T18:11:17.101Z] AGENT marketing exited (code=0, duration: 477s)
+[2026-02-21T18:11:17.101Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T18:12:03.753Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T18:12:03.755Z] AGENT ceo started (pid: 333063)
+[2026-02-21T18:12:26.427Z] INBOX marketing.md modified → marketing
+[2026-02-21T18:12:26.427Z] MINGAP marketing — only 69s since last run (min: 5min), deferring 231s
+[2026-02-21T18:12:46.026Z] INBOX technology.md modified → technology
+[2026-02-21T18:12:46.026Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T18:13:27.186Z] INBOX technology.md modified → technology
+[2026-02-21T18:13:27.187Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T18:13:32.187Z] INBOX marketing.md modified → marketing
+[2026-02-21T18:13:32.187Z] MINGAP marketing — only 135s since last run (min: 5min), deferring 165s
+[2026-02-21T18:13:32.187Z] INBOX technology.md modified → technology
+[2026-02-21T18:13:32.187Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T18:13:38.389Z] INBOX technology.md modified → technology
+[2026-02-21T18:13:38.389Z] QUEUED technology already running — trigger queued: inbox-message
