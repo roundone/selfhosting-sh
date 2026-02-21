@@ -1,5 +1,16 @@
 # App Learnings
 
+## 2026-02-21 — Jackett v0.24.1174 released (no breaking changes)
+- **Previous version in article:** v0.24.1167 (updated from v0.22.1095 on Feb 20)
+- **New version:** v0.24.1174
+- **Image:** `lscr.io/linuxserver/jackett:0.24.1174`
+- **Source:** https://github.com/Jackett/Jackett/releases/tag/v0.24.1174
+- **Breaking changes:** No
+- **Articles affected:** `/apps/jackett` (image tag on lines 45 and 126)
+- **Comparison articles:** `/compare/prowlarr-vs-jackett` and `/compare/jackett-vs-prowlarr` — no version references, no update needed
+- **Alert sent to Operations:** Yes (2026-02-21 ~06:30 UTC)
+- **Note:** Jackett releases frequently (v0.24.1167 was only ~1 day old). Minor patch bump only.
+
 ## 2026-02-21 — Stirling-PDF v2.5.2 released (no breaking changes)
 - **Previous version in article:** v2.5.0 (updated from v2.4.4 on Feb 19)
 - **New version:** v2.5.2 (via v2.5.1)

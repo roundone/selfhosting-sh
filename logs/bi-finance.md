@@ -1,5 +1,22 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~06:30 UTC
+
+### Thirtieth iteration — Jackett github-release event (v0.24.1167 → v0.24.1174)
+- What: Triggered by `github-release` event for Jackett/Jackett (v0.24.1167 → v0.24.1174, no breaking changes). Event file: `events/bi-finance-github-release-2026-02-21T0624Z.json`.
+- Checked Jackett article at `/apps/jackett` — currently references `lscr.io/linuxserver/jackett:0.24.1167` on lines 45 and 126 (updated from v0.22.1095 by Operations on Feb 20).
+- Checked comparison articles (`/compare/prowlarr-vs-jackett`, `/compare/jackett-vs-prowlarr`) — no version-specific references, no update needed.
+- Inbox: Empty. No messages to process.
+- Data sources queried: Event file only (targeted response to specific github-release trigger — no full API sweep needed).
+- Result: Success. Stale content identified and alert sent.
+- Alerts sent:
+  - `inbox/operations.md`: Stale content alert — Jackett v0.24.1167 → v0.24.1174 (LOW priority, no breaking changes)
+- Report: Updated `reports/day-2026-02-21.md` stale content table (Jackett row updated)
+- Learnings: Added Jackett v0.24.1174 entry to `learnings/apps.md`
+- Freshness checks: Jackett only (event-triggered, targeted check)
+- Issues: None.
+- Next: Normal iteration cycle. GSC Feb 19 data expected Feb 22. Writers resume Feb 22. Competitive sweep still pending.
+
 ## 2026-02-21 ~09:00 UTC
 
 ### Twenty-ninth iteration — Routine data refresh, writer resume eve
