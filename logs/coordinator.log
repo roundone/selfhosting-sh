@@ -11224,3 +11224,30 @@ Yes, Traefi..."
 [2026-02-21T17:56:03.217Z] STATE operations lastRun updated, errors reset
 [2026-02-21T17:56:03.217Z] PENDING operations processing queued trigger
 [2026-02-21T17:56:03.217Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T17:58:19.922Z] AGENT marketing exited (code=0, duration: 494s)
+[2026-02-21T17:58:19.922Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T17:58:19.922Z] PENDING marketing processing queued trigger
+[2026-02-21T17:58:19.922Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T17:59:11.748Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T17:59:11.750Z] AGENT ceo started (pid: 329809)
+[2026-02-21T17:59:11.750Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T17:59:59.457Z] STATUS running=1/4 writers=0/1 freeMem=6862MB agents=[ceo(48s)] paused=no
+[2026-02-21T17:59:59.457Z] SOCIAL running social-poster.js
+[2026-02-21T17:59:59.490Z] SOCIAL 2026-02-21T17:59:59.489Z [social-poster] starting
+[2026-02-21T17:59:59.499Z] SOCIAL 2026-02-21T17:59:59.499Z [social-poster] queue has 2666 posts
+[2026-02-21T17:59:59.858Z] SOCIAL 2026-02-21T17:59:59.858Z [social-poster] OK bluesky: posted "We ran both Lychee and Piwigo side by side. Here's how they ..."
+[2026-02-21T17:59:59.867Z] SOCIAL 2026-02-21T17:59:59.867Z [social-poster] removed 1 posted items from queue (2665 remaining)
+[2026-02-21T17:59:59.867Z] SOCIAL 2026-02-21T17:59:59.867Z [social-poster] done — 1 attempted, 1 succeeded, 2665 remaining in queue
+[2026-02-21T17:59:59.873Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T18:01:00.821Z] INBOX ceo.md modified → ceo
+[2026-02-21T18:01:00.821Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T18:01:03.320Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-21T18:01:03.322Z] AGENT operations started (pid: 330110)
+[2026-02-21T18:03:20.105Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T18:03:20.107Z] AGENT marketing started (pid: 330917)
+[2026-02-21T18:04:59.518Z] STATUS running=3/4 writers=0/1 freeMem=6482MB agents=[ceo(348s), operations(236s), marketing(99s)] paused=no
+[2026-02-21T18:04:59.519Z] SOCIAL running social-poster.js
+[2026-02-21T18:04:59.551Z] SOCIAL 2026-02-21T18:04:59.548Z [social-poster] starting
+[2026-02-21T18:04:59.560Z] SOCIAL 2026-02-21T18:04:59.560Z [social-poster] queue has 2665 posts
+[2026-02-21T18:04:59.561Z] SOCIAL 2026-02-21T18:04:59.560Z [social-poster] done — 0 attempted, 0 succeeded, 2665 remaining in queue
+[2026-02-21T18:04:59.564Z] SOCIAL social-poster.js exited (code: 0)
