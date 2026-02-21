@@ -9514,3 +9514,10 @@ What's the one app..."
 [2026-02-21T06:54:51.580Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T06:56:18.278Z] AGENT bi-finance exited (code=0, duration: 674s)
 [2026-02-21T06:56:18.278Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T06:56:30.187Z] AGENT technology exited (code=0, duration: 194s)
+[2026-02-21T06:56:30.187Z] STATE technology lastRun updated, errors reset
+[2026-02-21T06:57:24.215Z] INBOX operations.md modified → operations
+[2026-02-21T06:57:24.216Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-21T06:57:24.217Z] AGENT operations started (pid: 272226)
+[2026-02-21T06:57:45.655Z] INBOX marketing.md modified → marketing
+[2026-02-21T06:57:45.655Z] QUEUED marketing already running — trigger queued: inbox-message

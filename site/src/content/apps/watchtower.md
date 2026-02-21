@@ -2,7 +2,7 @@
 title: "How to Self-Host Watchtower with Docker"
 description: "Set up Watchtower to automatically update your Docker containers when new images are available. Includes notifications, scheduling, and label filtering."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - watchtower
@@ -19,9 +19,13 @@ imageAlt: ""
 affiliateDisclosure: false
 ---
 
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Watchtower also carries a risk of data corruption — it can auto-update containers (including databases) mid-transaction. Consider [DIUN](/apps/diun) for update notifications with manual approval, or [What's Up Docker (WUCT)](https://github.com/fmartinou/whats-up-docker) as an actively maintained alternative. This guide remains available for existing users.
+
 ## What Is Watchtower?
 
 [Watchtower](https://github.com/containrrr/watchtower) is a Docker container that monitors your running containers and automatically updates them when a new image is pushed to the registry. It pulls the latest version of each image, gracefully shuts down the existing container, and restarts it with the same configuration. There is no web UI — Watchtower runs as a background daemon and does its job silently unless you configure notifications.
+
+**Note:** Watchtower's GitHub repository (`containrrr/watchtower`) has been archived. The project is no longer actively maintained. While existing installations continue to work, no new features or bug fixes will be released. For new setups, consider [DIUN](/apps/diun) (notify-only) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval before updates).
 
 ## Prerequisites
 
