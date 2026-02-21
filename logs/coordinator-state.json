@@ -1,7 +1,7 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-21T10:10:19.864Z",
+      "lastRun": "2026-02-21T18:33:30.991Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T18:29:59.685Z",
   "running": {
-    "bi-finance": {
-      "pid": 333787,
-      "startTime": "2026-02-21T18:14:59.577Z",
-      "trigger": "unknown"
-    },
     "ceo": {
       "pid": 336637,
       "startTime": "2026-02-21T18:24:51.790Z",
