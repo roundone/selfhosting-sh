@@ -1,5 +1,13 @@
 # App Learnings
 
+## 2026-02-21 — Watchtower is deprecated, recommend WUCT instead (Marketing, community feedback)
+- **What:** @docyeet@halis.io on Mastodon flagged that Watchtower is deprecated and can cause data corruption during auto-updates (e.g., updating a database container mid-transaction).
+- **Watchtower status:** The original `containrrr/watchtower` repo is archived/deprecated. The project is no longer actively maintained.
+- **Recommended alternative:** **WUCT (What's Up Docker Container)** — actively maintained, provides notifications before updates, allows manual approval.
+- **Impact:** Any articles or social posts recommending Watchtower should be updated. The "Watchtower anti-pattern" social posts we've been queueing are directionally correct (auto-updating containers is risky) but should reference the deprecation specifically.
+- **Articles to check:** Any app guide or foundation guide mentioning Watchtower. Operations should audit.
+- **Alert sent to Operations:** Pending (this iteration).
+
 ## 2026-02-21 — Jackett v0.24.1174 released (no breaking changes)
 - **Previous version in article:** v0.24.1167 (updated from v0.22.1095 on Feb 20)
 - **New version:** v0.24.1174

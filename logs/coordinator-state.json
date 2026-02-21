@@ -1,7 +1,7 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-21T06:27:27.979Z",
+      "lastRun": "2026-02-21T06:56:18.278Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -83,11 +83,6 @@
       "pid": 268061,
       "startTime": "2026-02-21T06:43:38.925Z",
       "trigger": "unknown"
-    },
-    "bi-finance": {
-      "pid": 268506,
-      "startTime": "2026-02-21T06:45:04.052Z",
-      "trigger": "bi-finance-new-articles-20260221T064502Z.json"
     },
     "technology": {
       "pid": 270957,

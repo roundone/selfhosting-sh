@@ -9512,3 +9512,5 @@ What's the one app..."
 [2026-02-21T06:54:51.576Z] SOCIAL 2026-02-21T06:54:51.576Z [social-poster] queue has 2575 posts
 [2026-02-21T06:54:51.577Z] SOCIAL 2026-02-21T06:54:51.577Z [social-poster] done — 0 attempted, 0 succeeded, 2575 remaining in queue
 [2026-02-21T06:54:51.580Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T06:56:18.278Z] AGENT bi-finance exited (code=0, duration: 674s)
+[2026-02-21T06:56:18.278Z] STATE bi-finance lastRun updated, errors reset
