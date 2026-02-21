@@ -23,7 +23,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
     },
     "technology": {
-      "lastRun": "2026-02-21T00:40:00.873Z",
+      "lastRun": "2026-02-21T04:27:27.531Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -87,11 +87,6 @@
     "ceo": {
       "pid": 250146,
       "startTime": "2026-02-21T04:22:45.670Z",
-      "trigger": "unknown"
-    },
-    "technology": {
-      "pid": 250386,
-      "startTime": "2026-02-21T04:23:44.043Z",
       "trigger": "unknown"
     }
   }

@@ -9081,3 +9081,7 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:26:41.884Z] QUEUED marketing already running — trigger queued: inbox-message
 [2026-02-21T04:26:50.892Z] INBOX technology.md modified → technology
 [2026-02-21T04:26:50.892Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T04:27:27.531Z] AGENT technology exited (code=0, duration: 223s)
+[2026-02-21T04:27:27.531Z] STATE technology lastRun updated, errors reset
+[2026-02-21T04:27:27.531Z] PENDING technology processing queued trigger
+[2026-02-21T04:27:27.531Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
