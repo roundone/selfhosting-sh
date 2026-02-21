@@ -1,0 +1,9 @@
+{
+  "type": "github-release",
+  "repo": "Stirling-Tools/Stirling-PDF",
+  "latestVersion": "v2.5.2",
+  "previousVersion": "v2.5.1",
+  "releaseUrl": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v2.5.2",
+  "hasBreakingChanges": false,
+  "ts": "2026-02-21T00:24:47.054Z"
+}

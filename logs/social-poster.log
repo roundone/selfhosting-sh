@@ -1049,3 +1049,144 @@ Authelia: config..."
 If PhotoPrism crashes durin..."
 2026-02-20T21:54:45.647Z [social-poster] removed 1 posted items from queue (2608 remaining)
 2026-02-20T21:54:45.648Z [social-poster] done — 1 attempted, 1 succeeded, 2608 remaining in queue
+2026-02-20T21:59:45.315Z [social-poster] starting
+2026-02-20T21:59:45.326Z [social-poster] queue has 2608 posts
+2026-02-20T21:59:45.539Z [social-poster] OK x: posted "WireGuard changed everything for self-hosting. Fast, simple,..."
+2026-02-20T21:59:45.863Z [social-poster] OK bluesky: posted "Paperless-ngx is one of those self-hosted apps that changes ..."
+2026-02-20T21:59:45.873Z [social-poster] removed 2 posted items from queue (2606 remaining)
+2026-02-20T21:59:45.873Z [social-poster] done — 2 attempted, 2 succeeded, 2606 remaining in queue
+2026-02-20T22:04:45.394Z [social-poster] starting
+2026-02-20T22:04:45.405Z [social-poster] queue has 2606 posts
+2026-02-20T22:04:45.406Z [social-poster] done — 0 attempted, 0 succeeded, 2606 remaining in queue
+2026-02-20T22:09:45.473Z [social-poster] starting
+2026-02-20T22:09:45.484Z [social-poster] queue has 2606 posts
+2026-02-20T22:09:45.484Z [social-poster] done — 0 attempted, 0 succeeded, 2606 remaining in queue
+2026-02-20T22:14:45.481Z [social-poster] starting
+2026-02-20T22:14:45.491Z [social-poster] queue has 2606 posts
+2026-02-20T22:14:46.520Z [social-poster] OK mastodon: posted "Docker Compose isn't just for single-host deployments. You p..."
+2026-02-20T22:14:46.722Z [social-poster] OK bluesky: posted "n8n is self-hosted Zapier with 400+ integrations. Visual wor..."
+2026-02-20T22:14:46.734Z [social-poster] removed 2 posted items from queue (2604 remaining)
+2026-02-20T22:14:46.734Z [social-poster] done — 2 attempted, 2 succeeded, 2604 remaining in queue
+2026-02-20T22:19:45.520Z [social-poster] starting
+2026-02-20T22:19:45.531Z [social-poster] queue has 2604 posts
+2026-02-20T22:19:45.725Z [social-poster] OK x: posted "Common Docker mistake: using `latest` tag in production.
+
+Al..."
+2026-02-20T22:19:45.734Z [social-poster] removed 1 posted items from queue (2603 remaining)
+2026-02-20T22:19:45.734Z [social-poster] done — 1 attempted, 1 succeeded, 2603 remaining in queue
+2026-02-20T22:24:45.533Z [social-poster] starting
+2026-02-20T22:24:45.553Z [social-poster] queue has 2603 posts
+2026-02-20T22:24:45.554Z [social-poster] done — 0 attempted, 0 succeeded, 2603 remaining in queue
+2026-02-20T22:29:45.562Z [social-poster] starting
+2026-02-20T22:29:45.573Z [social-poster] queue has 2603 posts
+2026-02-20T22:29:45.803Z [social-poster] OK bluesky: posted "Traefik's killer feature for self-hosting: Docker label-base..."
+2026-02-20T22:29:45.812Z [social-poster] removed 1 posted items from queue (2602 remaining)
+2026-02-20T22:29:45.813Z [social-poster] done — 1 attempted, 1 succeeded, 2602 remaining in queue
+2026-02-20T22:34:45.575Z [social-poster] starting
+2026-02-20T22:34:45.587Z [social-poster] queue has 2602 posts
+2026-02-20T22:34:46.467Z [social-poster] OK mastodon: posted "n8n — the self-hosted alternative to Zapier and Make.com
+
+Vi..."
+2026-02-20T22:34:46.480Z [social-poster] removed 1 posted items from queue (2601 remaining)
+2026-02-20T22:34:46.480Z [social-poster] done — 1 attempted, 1 succeeded, 2601 remaining in queue
+2026-02-20T22:39:45.677Z [social-poster] starting
+2026-02-20T22:39:45.688Z [social-poster] queue has 2601 posts
+2026-02-20T22:39:45.896Z [social-poster] OK x: posted "Nextcloud performance tip: switch from SQLite to PostgreSQL...."
+2026-02-20T22:39:45.905Z [social-poster] removed 1 posted items from queue (2600 remaining)
+2026-02-20T22:39:45.906Z [social-poster] done — 1 attempted, 1 succeeded, 2600 remaining in queue
+2026-02-20T22:44:45.738Z [social-poster] starting
+2026-02-20T22:44:45.749Z [social-poster] queue has 2600 posts
+2026-02-20T22:44:46.184Z [social-poster] OK bluesky: posted "The self-hosted backup golden rule: if it's not automated AN..."
+2026-02-20T22:44:46.193Z [social-poster] removed 1 posted items from queue (2599 remaining)
+2026-02-20T22:44:46.193Z [social-poster] done — 1 attempted, 1 succeeded, 2599 remaining in queue
+2026-02-20T22:49:45.810Z [social-poster] starting
+2026-02-20T22:49:45.825Z [social-poster] queue has 2599 posts
+2026-02-20T22:49:45.825Z [social-poster] done — 0 attempted, 0 succeeded, 2599 remaining in queue
+2026-02-20T22:54:45.886Z [social-poster] starting
+2026-02-20T22:54:45.898Z [social-poster] queue has 2599 posts
+2026-02-20T22:54:46.139Z [social-poster] OK x: posted "Reverse proxy recommendation for beginners: Caddy.
+
+Automati..."
+2026-02-20T22:54:46.577Z [social-poster] OK mastodon: posted "Paperless-ngx deserves more attention.
+
+Scan a physical docu..."
+2026-02-20T22:54:46.589Z [social-poster] removed 2 posted items from queue (2597 remaining)
+2026-02-20T22:54:46.589Z [social-poster] done — 2 attempted, 2 succeeded, 2597 remaining in queue
+2026-02-20T22:59:45.985Z [social-poster] starting
+2026-02-20T22:59:45.995Z [social-poster] queue has 2597 posts
+2026-02-20T22:59:46.347Z [social-poster] OK bluesky: posted "Quick Docker tip: `docker compose down` stops and removes co..."
+2026-02-20T22:59:46.357Z [social-poster] removed 1 posted items from queue (2596 remaining)
+2026-02-20T22:59:46.358Z [social-poster] done — 1 attempted, 1 succeeded, 2596 remaining in queue
+2026-02-20T23:04:46.006Z [social-poster] starting
+2026-02-20T23:04:46.018Z [social-poster] queue has 2596 posts
+2026-02-20T23:04:46.018Z [social-poster] done — 0 attempted, 0 succeeded, 2596 remaining in queue
+2026-02-20T23:09:46.076Z [social-poster] starting
+2026-02-20T23:09:46.087Z [social-poster] queue has 2596 posts
+2026-02-20T23:09:46.087Z [social-poster] done — 0 attempted, 0 succeeded, 2596 remaining in queue
+2026-02-20T23:14:46.148Z [social-poster] starting
+2026-02-20T23:14:46.157Z [social-poster] queue has 2596 posts
+2026-02-20T23:14:46.351Z [social-poster] OK x: posted "PhotoPrism requires 4GB swap minimum or the OOM killer will ..."
+2026-02-20T23:14:46.654Z [social-poster] OK mastodon: posted "Traefik's superpower: Docker label-based routing.
+
+Instead o..."
+2026-02-20T23:14:46.993Z [social-poster] OK bluesky: posted "If you're self-hosting anything with a database, schedule a ..."
+2026-02-20T23:14:47.002Z [social-poster] removed 3 posted items from queue (2593 remaining)
+2026-02-20T23:14:47.002Z [social-poster] done — 3 attempted, 3 succeeded, 2593 remaining in queue
+2026-02-20T23:19:46.252Z [social-poster] starting
+2026-02-20T23:19:46.264Z [social-poster] queue has 2593 posts
+2026-02-20T23:19:46.264Z [social-poster] done — 0 attempted, 0 succeeded, 2593 remaining in queue
+2026-02-20T23:24:46.265Z [social-poster] starting
+2026-02-20T23:24:46.276Z [social-poster] queue has 2593 posts
+2026-02-20T23:24:46.276Z [social-poster] done — 0 attempted, 0 succeeded, 2593 remaining in queue
+2026-02-20T23:29:46.318Z [social-poster] starting
+2026-02-20T23:29:46.328Z [social-poster] queue has 2593 posts
+2026-02-20T23:29:46.671Z [social-poster] OK bluesky: posted "Self-hosting security tip that takes 2 minutes: change the d..."
+2026-02-20T23:29:46.680Z [social-poster] removed 1 posted items from queue (2592 remaining)
+2026-02-20T23:29:46.680Z [social-poster] done — 1 attempted, 1 succeeded, 2592 remaining in queue
+2026-02-20T23:34:46.390Z [social-poster] starting
+2026-02-20T23:34:46.401Z [social-poster] queue has 2592 posts
+2026-02-20T23:34:46.618Z [social-poster] OK x: posted "Authelia or Authentik? Both add SSO to your self-hosted stac..."
+2026-02-20T23:34:46.932Z [social-poster] OK mastodon: posted "Tip: use `docker compose up -d --remove-orphans` instead of ..."
+2026-02-20T23:34:46.943Z [social-poster] removed 2 posted items from queue (2590 remaining)
+2026-02-20T23:34:46.944Z [social-poster] done — 2 attempted, 2 succeeded, 2590 remaining in queue
+2026-02-20T23:39:46.461Z [social-poster] starting
+2026-02-20T23:39:46.480Z [social-poster] queue has 2590 posts
+2026-02-20T23:39:46.480Z [social-poster] done — 0 attempted, 0 succeeded, 2590 remaining in queue
+2026-02-20T23:44:46.499Z [social-poster] starting
+2026-02-20T23:44:46.510Z [social-poster] queue has 2590 posts
+2026-02-20T23:44:46.861Z [social-poster] OK bluesky: posted "Uptime Kuma is the easiest monitoring tool to self-host. One..."
+2026-02-20T23:44:46.870Z [social-poster] removed 1 posted items from queue (2589 remaining)
+2026-02-20T23:44:46.870Z [social-poster] done — 1 attempted, 1 succeeded, 2589 remaining in queue
+2026-02-20T23:49:46.589Z [social-poster] starting
+2026-02-20T23:49:46.606Z [social-poster] queue has 2589 posts
+2026-02-20T23:49:46.607Z [social-poster] done — 0 attempted, 0 succeeded, 2589 remaining in queue
+2026-02-20T23:54:46.628Z [social-poster] starting
+2026-02-20T23:54:46.642Z [social-poster] queue has 2589 posts
+2026-02-20T23:54:46.904Z [social-poster] OK x: posted "Self-hosted backup rule: if your backup isn't automated and ..."
+2026-02-20T23:54:47.189Z [social-poster] OK mastodon: posted "If you're running multiple services behind a reverse proxy, ..."
+2026-02-20T23:54:47.204Z [social-poster] removed 2 posted items from queue (2587 remaining)
+2026-02-20T23:54:47.205Z [social-poster] done — 2 attempted, 2 succeeded, 2587 remaining in queue
+2026-02-20T23:59:46.719Z [social-poster] starting
+2026-02-20T23:59:46.732Z [social-poster] queue has 2587 posts
+2026-02-20T23:59:46.956Z [social-poster] OK bluesky: posted "Docker Compose trick: use `profiles` to group services you d..."
+2026-02-20T23:59:46.966Z [social-poster] removed 1 posted items from queue (2586 remaining)
+2026-02-20T23:59:46.967Z [social-poster] done — 1 attempted, 1 succeeded, 2586 remaining in queue
+2026-02-21T00:04:46.752Z [social-poster] starting
+2026-02-21T00:04:46.762Z [social-poster] queue has 2586 posts
+2026-02-21T00:04:46.762Z [social-poster] done — 0 attempted, 0 succeeded, 2586 remaining in queue
+2026-02-21T00:09:46.843Z [social-poster] starting
+2026-02-21T00:09:46.854Z [social-poster] queue has 2586 posts
+2026-02-21T00:09:46.855Z [social-poster] done — 0 attempted, 0 succeeded, 2586 remaining in queue
+2026-02-21T00:14:46.946Z [social-poster] starting
+2026-02-21T00:14:46.958Z [social-poster] queue has 2586 posts
+2026-02-21T00:14:47.220Z [social-poster] OK x: posted "Traefik tip: use Docker labels for routing instead of a conf..."
+2026-02-21T00:14:47.755Z [social-poster] OK mastodon: posted "Database backups in Docker: don't just copy volume files whi..."
+2026-02-21T00:14:48.088Z [social-poster] OK bluesky: posted "If your Docker containers can't resolve each other by name, ..."
+2026-02-21T00:14:48.099Z [social-poster] removed 3 posted items from queue (2583 remaining)
+2026-02-21T00:14:48.100Z [social-poster] done — 3 attempted, 3 succeeded, 2583 remaining in queue
+2026-02-21T00:19:47.015Z [social-poster] starting
+2026-02-21T00:19:47.026Z [social-poster] queue has 2583 posts
+2026-02-21T00:19:47.027Z [social-poster] done — 0 attempted, 0 succeeded, 2583 remaining in queue
+2026-02-21T00:24:47.055Z [social-poster] starting
+2026-02-21T00:24:47.065Z [social-poster] queue has 2583 posts
+2026-02-21T00:24:47.066Z [social-poster] done — 0 attempted, 0 succeeded, 2583 remaining in queue
