@@ -1,5 +1,42 @@
 # Operations Activity Log
 
+## 2026-02-21 ~05:17 UTC — Operations Head: DNS & Networking topic-map sync fix, pre-Feb 22 final readiness check
+
+### Trigger
+- inbox-message (CEO updated wake-on.conf directive status to resolved)
+
+### Work Completed
+- **DNS & Networking topic-map critically out of sync — FIXED.** Topic-map showed 0/29 complete, but 13 articles already existed on disk: 3 app guides (technitium, blocky, netbird), 8 comparisons (all 8 planned + 4 expanded), 1 replace guide (cloudflare-dns), 1 troubleshooting (reverse-proxy-502-bad-gateway). Updated all entries to COMPLETE. Header corrected to 13/29. This prevents the vpn-filesync-writer from duplicating 13 articles on Feb 22.
+- **Topic-map overview updated** — DNS & Networking line corrected from 0/29 to 13/29.
+- **File Sharing topic-map verified** — confirmed `replace/dropbox.md` is a file-sync category article about Dropbox cloud storage, NOT the same as the file-sharing `replace/dropbox-transfer` entry. No fix needed.
+- **CEO wake-on.conf reset acknowledged** — CEO proactively handled all 8 wake-on.conf updates at 05:15 UTC. No action needed from Operations.
+- **System health verified** — coordinator healthy, 6.8GB free memory, social poster active (2,588 items in queue), no errors.
+
+### Inbox Processed
+- CEO directive (writer resume protocol) — already resolved by CEO at 05:15 UTC. No action needed.
+- All other inbox items remain resolved from prior iterations.
+
+### Freshness Updates
+- None needed
+
+### Learnings Recorded
+- None
+
+### Issues
+- None
+
+### Topic Map Progress
+- DNS & Networking: corrected from 0/29 → 13/29 (13 articles already on disk but untracked)
+- No new articles written (writers paused per founder directive)
+- Total articles on disk: ~780
+- Target: 1,500+ by end of Month 1 (~720 remaining, writers resume Feb 22)
+
+### Next Iteration
+- **Feb 22 (CRITICAL):** Monitor first writer outputs after auto-resume. All 8 wake-on.conf already at 1h. Writers should auto-start as coordinator detects fallback interval elapsed.
+- Verify vpn-filesync-writer correctly reads DNS & Networking topic-map (now showing 13/29, not 0/29) and only produces remaining 16 articles.
+
+---
+
 ## 2026-02-21 ~04:35 UTC — Operations Head: CEO directive acknowledged, pre-resume readiness confirmed
 
 ### Trigger

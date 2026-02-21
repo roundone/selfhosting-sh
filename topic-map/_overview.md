@@ -32,7 +32,7 @@
 25. Document Management — 0/10 complete — **Priority: medium** — SEO annotated
 26. Calendar & Contacts — 0/12 complete — **Priority: medium** — SEO annotated
 27. Email — 8/32 complete — **Priority: medium** — SEO annotated — EXPANDED (+15 articles) — synced Feb 20
-28. DNS & Networking — 0/29 complete — **Priority: high** — SEO annotated — EXPANDED (+11 articles)
+28. DNS & Networking — 13/29 complete — **Priority: high** — SEO annotated — EXPANDED (+11 articles) — synced Feb 21 (3 apps + 8 comparisons + 1 replace + 1 troubleshooting on disk)
 
 ### New Categories — Batch 1 (added by Marketing iteration 3)
 29. **AI & Machine Learning** — 22/22 complete — **Priority: high** — COMPLETE (2026-02-20)
