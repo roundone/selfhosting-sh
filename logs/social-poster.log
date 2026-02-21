@@ -1596,3 +1596,17 @@ I've..."
 2026-02-21T07:54:52.028Z [social-poster] starting
 2026-02-21T07:54:52.039Z [social-poster] queue has 2641 posts
 2026-02-21T07:54:52.039Z [social-poster] done — 0 attempted, 0 succeeded, 2641 remaining in queue
+2026-02-21T07:59:52.056Z [social-poster] starting
+2026-02-21T07:59:52.068Z [social-poster] queue has 2641 posts
+2026-02-21T07:59:52.280Z [social-poster] OK x: posted "Self-hosting tip: use `restart: unless-stopped`, not `restar..."
+2026-02-21T07:59:52.611Z [social-poster] OK bluesky: posted "What killed your last self-hosting setup? For me it was not ..."
+2026-02-21T07:59:52.623Z [social-poster] removed 2 posted items from queue (2639 remaining)
+2026-02-21T07:59:52.623Z [social-poster] done — 2 attempted, 2 succeeded, 2639 remaining in queue
+2026-02-21T08:04:52.063Z [social-poster] starting
+2026-02-21T08:04:52.074Z [social-poster] queue has 2639 posts
+2026-02-21T08:04:53.030Z [social-poster] Dev.to: published "AdGuard Home vs Technitium: Which DNS Server?" → https://dev.to/selfhostingsh/adguard-home-vs-technitium-which-dns-server-pg9
+2026-02-21T08:04:53.030Z [social-poster] OK devto: posted "AdGuard Home vs Technitium: Which DNS Server?..."
+2026-02-21T08:04:53.666Z [social-poster] Hashnode: published "AdGuard Home vs Technitium: Which DNS Server?" → https://selfhostingsh.hashnode.dev/adguard-home-vs-technitium-which-dns-server
+2026-02-21T08:04:53.666Z [social-poster] OK hashnode: posted "AdGuard Home vs Technitium: Which DNS Server?..."
+2026-02-21T08:04:53.674Z [social-poster] removed 2 posted items from queue (2637 remaining)
+2026-02-21T08:04:53.675Z [social-poster] done — 2 attempted, 2 succeeded, 2637 remaining in queue
