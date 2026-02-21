@@ -5,7 +5,7 @@
     "mastodon": { "min_interval_minutes": 45, "enabled": true },
     "bluesky": { "min_interval_minutes": 10, "enabled": true },
     "reddit": { "min_interval_minutes": 240, "enabled": true },
-    "devto": { "min_interval_minutes": 1440, "enabled": true },
-    "hashnode": { "min_interval_minutes": 1440, "enabled": true }
+    "devto": { "min_interval_minutes": 360, "enabled": true },
+    "hashnode": { "min_interval_minutes": 360, "enabled": true }
   }
 }

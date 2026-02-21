@@ -1,11 +1,11 @@
 ## Current Phase: Launch — Day 6 Operations
-## Last Updated: 2026-02-21 05:15 UTC (CEO iter 05:15)
+## Last Updated: 2026-02-21 08:02 UTC (CEO iter 08:02)
 
 ## Content
 - **Total articles on disk: 780** (208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
 - In progress: **ALL WRITERS PAUSED** (Founder directive 2026-02-20). No writers running. Resume Feb 22.
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
-- **Writer pipeline RESUME READY** — All 8 wake-on.conf updated from 48h→1h (CEO 05:15 UTC). Error counts reset for 4 writers. **Coordinator restart scheduled Feb 22 08:00 UTC** (via `at` job) to pick up new 1h fallback intervals. Writers auto-start when 48h window elapses (~Feb 22 10:00 UTC).
+- **Writer pipeline RESUME READY** — All 8 wake-on.conf updated from 48h→1h. Error counts reset (all 4 writers with stale errors now at 0). **Coordinator restart scheduled Feb 22 08:00 UTC** (via `at` job) to pick up new 1h fallback intervals. Writers auto-start when 48h window elapses (~Feb 22 10:00 UTC).
 - Velocity: +225 articles today (writers now PAUSED — no further production until Feb 22).
 - Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 780 published. Writers paused until Feb 22 per founder directive. Need ~103/day for 7 remaining days (Feb 22-28).
 - Topic map: 1,224 planned across 78 categories, ~778 published = ~64% of topic map
@@ -82,22 +82,22 @@
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~2,578 items** (Marketing refilled queue — active posting every 5 min, draining ~18/day)
-- **Mastodon: 85 followers, 147 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed. **Posting interval: 45 min** (increased from 15 min — community pushback on frequency). +4 followers since 05:00 UTC.
-- **Bluesky: 11 followers, 117 following** — engagement low but growing.
+- Queue: **~2,639 items** (Marketing refilled queue — active posting every 5 min, draining ~18/day)
+- **Mastodon: 105 followers, 151 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed. **Posting interval: 45 min** (increased from 15 min — community pushback on frequency). +20 followers today.
+- **Bluesky: 13 followers, 124 following** — engagement low but growing.
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
-- **Mastodon: 0.58 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse. Must protect this relationship.
+- **Mastodon: 0.66 followers/post** (105 followers / 158 posts) — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse. Must protect this relationship.
 - **X duplicate content fix WORKING** — social-poster.js now skips 403 duplicates and posts next item
 - **Mastodon 500-char truncation FIXED** — social-poster.js now truncates long posts at word boundaries for Mastodon
-- **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 5+ articles. Hashnode: 10 articles total. Brand voice doc DONE.
+- **FOUNDER DIRECTIVE (Feb 20):** Social engagement strategy overhaul EXECUTING — Marketing iteration totals: 89 new follows, 16 genuine replies, 22 favs/likes, 3 boosts. Dev.to: 30 articles. Hashnode: 11 articles total. Brand voice doc DONE. **Total followers: 118** (Mastodon: 105, Bluesky: 13).
 - **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
 - Platform status:
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
   - **Mastodon: RESTORED** — posting every **45 min** (interval increased from 15 min due to community pushback. New app + token deployed 04:15 UTC Feb 21, bot flag set)
-  - **Dev.to: LIVE** — Full article cross-posting via social-poster.js (duplicate detection, canonical_url). Confirmed working 18:54 UTC Feb 20.
+  - **Dev.to: LIVE** — Full article cross-posting via social-poster.js. Interval reduced 24h→6h (4 articles/day). 30 articles published.
   - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
-  - **Hashnode: LIVE** — Full article cross-posting via social-poster.js (GraphQL API). Confirmed working 18:54 UTC Feb 20.
+  - **Hashnode: LIVE** — Full article cross-posting via social-poster.js. Interval reduced 24h→6h (4 articles/day). 11 articles published.
   - LinkedIn: DEPRIORITIZED (API approval PENDING)
 
 ## Revenue & Finance
@@ -135,7 +135,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-21 07:30 | 0 | Running — processed Operations escalation, coordinator restart scheduled for Feb 22 08:00 UTC |
+| CEO | 2026-02-21 08:02 | 0 | Running — routine check, writer error counters reset, Dev.to/Hashnode interval 24h→6h |
 | Operations | 2026-02-20 20:23 | 0 | Running — internal link audit P1-P5 COMPLETE, security-basics links fixed |
 | Technology | 2026-02-20 20:38 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 21:24 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies |
