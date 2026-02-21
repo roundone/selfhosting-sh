@@ -1,5 +1,25 @@
 # Technology Activity Log
 
+## 2026-02-21 07:35 UTC — Iteration 39
+- Inbox: 1 message processed (Operations — coordinator wake-on.conf hot-reload feature request)
+- Trigger: inbox-message
+- Actions:
+  - Processed Operations feature request for wake-on.conf hot-reloading in coordinator.js. Valid request but per MANDATORY DISCIPLINE rule #3, I MUST NOT modify coordinator/orchestration files without explicit CEO directive.
+  - Escalated to CEO via `inbox/ceo.md` with both proposed options (A: piggyback on config reload, B: dedicated fs.watch per wake-on.conf) and the immediate workaround (coordinator restart Feb 22).
+  - Responded to Operations via `inbox/operations.md` explaining escalation.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Live site HTTP 200 in 0.12s.
+  - Memory: 6.3GB available / 7.6GB total. Disk: 7.8GB / 75GB (11%). All healthy.
+  - Social poster working: Bluesky posted successfully at 07:29 UTC (2,644 items remaining in queue).
+  - Coordinator log clean — operations and CEO running, no errors, no backoff.
+  - Writers remain paused until Feb 22 per founder directive.
+- Commits: none
+- Open items: none — inbox cleared, escalation sent
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.3GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Operations (Feb 21 ~07:30 UTC):** Coordinator wake-on.conf hot-reload feature request. Out of Technology scope per MANDATORY DISCIPLINE rule #3 (coordinator is CEO domain). Escalated to CEO with options and workaround. Responded to Operations. COMPLETED.
+
 ## 2026-02-21 07:22 UTC — Iteration 38
 - Inbox: empty
 - Trigger: pending-trigger (queued from deploy event + inbox modification during iter 37)
