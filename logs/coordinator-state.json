@@ -12,7 +12,7 @@
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
     },
     "marketing": {
-      "lastRun": "2026-02-21T11:02:53.991Z",
+      "lastRun": "2026-02-21T11:16:02.627Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -74,14 +74,14 @@
       "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-21T10:24:53.473Z",
-  "lastArchiveCleanup": "2026-02-21T10:24:53.476Z",
+  "lastReleasesCheck": "2026-02-21T17:24:59.027Z",
+  "lastArchiveCleanup": "2026-02-21T17:24:59.032Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T11:14:53.954Z",
+  "lastSocialPosterRun": "2026-02-21T17:29:59.119Z",
   "running": {
-    "marketing": {
-      "pid": 322158,
-      "startTime": "2026-02-21T11:07:54.112Z",
+    "ceo": {
+      "pid": 327026,
+      "startTime": "2026-02-21T17:26:33.539Z",
       "trigger": "unknown"
     }
   }

@@ -10344,3 +10344,815 @@ Yes, Traefi..."
 [2026-02-21T11:14:54.378Z] SOCIAL 2026-02-21T11:14:54.378Z [social-poster] removed 1 posted items from queue (2681 remaining)
 [2026-02-21T11:14:54.378Z] SOCIAL 2026-02-21T11:14:54.378Z [social-poster] done — 1 attempted, 1 succeeded, 2681 remaining in queue
 [2026-02-21T11:14:54.383Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:16:02.627Z] AGENT marketing exited (code=0, duration: 489s)
+[2026-02-21T11:16:02.627Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T11:19:54.054Z] STATUS running=0/4 writers=0/1 freeMem=7036MB agents=[none] paused=no
+[2026-02-21T11:19:54.054Z] SOCIAL running social-poster.js
+[2026-02-21T11:19:54.088Z] SOCIAL 2026-02-21T11:19:54.086Z [social-poster] starting
+[2026-02-21T11:19:54.098Z] SOCIAL 2026-02-21T11:19:54.098Z [social-poster] queue has 2704 posts
+[2026-02-21T11:19:54.098Z] SOCIAL 2026-02-21T11:19:54.098Z [social-poster] done — 0 attempted, 0 succeeded, 2704 remaining in queue
+[2026-02-21T11:19:54.102Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:24:54.155Z] STATUS running=0/4 writers=0/1 freeMem=7061MB agents=[none] paused=no
+[2026-02-21T11:24:54.156Z] RELEASES running check-releases.js
+[2026-02-21T11:24:54.157Z] SOCIAL running social-poster.js
+[2026-02-21T11:24:54.188Z] RELEASES 2026-02-21T11:24:54.186Z [check-releases] starting
+[2026-02-21T11:24:54.189Z] RELEASES 2026-02-21T11:24:54.189Z [check-releases] checking 29 GitHub repos
+[2026-02-21T11:24:54.194Z] SOCIAL 2026-02-21T11:24:54.192Z [social-poster] starting
+[2026-02-21T11:24:54.206Z] SOCIAL 2026-02-21T11:24:54.206Z [social-poster] queue has 2704 posts
+[2026-02-21T11:24:54.284Z] RELEASES 2026-02-21T11:24:54.284Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T11:24:54.446Z] SOCIAL 2026-02-21T11:24:54.446Z [social-poster] OK x: posted "What's the most underrated self-hosted app you run? Mine is ..."
+[2026-02-21T11:24:54.454Z] SOCIAL 2026-02-21T11:24:54.454Z [social-poster] removed 1 posted items from queue (2703 remaining)
+[2026-02-21T11:24:54.455Z] SOCIAL 2026-02-21T11:24:54.455Z [social-poster] done — 1 attempted, 1 succeeded, 2703 remaining in queue
+[2026-02-21T11:24:54.459Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:24:54.846Z] RELEASES 2026-02-21T11:24:54.846Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T11:24:55.438Z] RELEASES 2026-02-21T11:24:55.438Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T11:24:56.005Z] RELEASES 2026-02-21T11:24:56.004Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T11:24:56.548Z] RELEASES 2026-02-21T11:24:56.548Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T11:24:57.105Z] RELEASES 2026-02-21T11:24:57.105Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T11:24:57.672Z] RELEASES 2026-02-21T11:24:57.672Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T11:24:58.270Z] RELEASES 2026-02-21T11:24:58.270Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T11:24:58.852Z] RELEASES 2026-02-21T11:24:58.852Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T11:24:59.411Z] RELEASES 2026-02-21T11:24:59.410Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T11:24:59.960Z] RELEASES 2026-02-21T11:24:59.960Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T11:25:00.561Z] RELEASES 2026-02-21T11:25:00.561Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-21T11:25:01.103Z] RELEASES 2026-02-21T11:25:01.103Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T11:25:01.675Z] RELEASES 2026-02-21T11:25:01.675Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T11:25:02.234Z] RELEASES 2026-02-21T11:25:02.234Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T11:25:02.778Z] RELEASES 2026-02-21T11:25:02.778Z [check-releases]   open-webui/open-webui → 200 but same version (v0.8.3)
+[2026-02-21T11:25:03.327Z] RELEASES 2026-02-21T11:25:03.327Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T11:25:03.888Z] RELEASES 2026-02-21T11:25:03.888Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T11:25:04.448Z] RELEASES 2026-02-21T11:25:04.448Z [check-releases]   drakkan/sftpgo → 304 unchanged
+[2026-02-21T11:25:05.006Z] RELEASES 2026-02-21T11:25:05.006Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T11:25:05.570Z] RELEASES 2026-02-21T11:25:05.570Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T11:25:06.116Z] RELEASES 2026-02-21T11:25:06.115Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T11:25:06.664Z] RELEASES 2026-02-21T11:25:06.664Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T11:25:07.219Z] RELEASES 2026-02-21T11:25:07.219Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T11:25:07.774Z] RELEASES 2026-02-21T11:25:07.773Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T11:25:08.334Z] RELEASES 2026-02-21T11:25:08.334Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T11:25:08.889Z] RELEASES 2026-02-21T11:25:08.889Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-21T11:25:09.431Z] RELEASES 2026-02-21T11:25:09.431Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T11:25:09.984Z] RELEASES 2026-02-21T11:25:09.984Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T11:25:10.485Z] RELEASES 2026-02-21T11:25:10.485Z [check-releases] checking 3 feeds
+[2026-02-21T11:25:10.546Z] RELEASES 2026-02-21T11:25:10.545Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T11:25:10.808Z] RELEASES 2026-02-21T11:25:10.807Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T11:25:11.141Z] RELEASES 2026-02-21T11:25:11.141Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T11:25:11.343Z] RELEASES 2026-02-21T11:25:11.342Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T11:25:11.347Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T11:29:54.204Z] STATUS running=0/4 writers=0/1 freeMem=7054MB agents=[none] paused=no
+[2026-02-21T11:29:54.204Z] SOCIAL running social-poster.js
+[2026-02-21T11:29:54.234Z] SOCIAL 2026-02-21T11:29:54.232Z [social-poster] starting
+[2026-02-21T11:29:54.245Z] SOCIAL 2026-02-21T11:29:54.244Z [social-poster] queue has 2703 posts
+[2026-02-21T11:29:54.604Z] SOCIAL 2026-02-21T11:29:54.604Z [social-poster] OK bluesky: posted "If you've been thinking about running Tailscale yourself, he..."
+[2026-02-21T11:29:54.613Z] SOCIAL 2026-02-21T11:29:54.613Z [social-poster] removed 1 posted items from queue (2702 remaining)
+[2026-02-21T11:29:54.613Z] SOCIAL 2026-02-21T11:29:54.613Z [social-poster] done — 1 attempted, 1 succeeded, 2702 remaining in queue
+[2026-02-21T11:29:54.618Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:34:54.300Z] STATUS running=0/4 writers=0/1 freeMem=7051MB agents=[none] paused=no
+[2026-02-21T11:34:54.300Z] SOCIAL running social-poster.js
+[2026-02-21T11:34:54.335Z] SOCIAL 2026-02-21T11:34:54.333Z [social-poster] starting
+[2026-02-21T11:34:54.346Z] SOCIAL 2026-02-21T11:34:54.345Z [social-poster] queue has 2702 posts
+[2026-02-21T11:34:54.346Z] SOCIAL 2026-02-21T11:34:54.346Z [social-poster] done — 0 attempted, 0 succeeded, 2702 remaining in queue
+[2026-02-21T11:34:54.350Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:39:54.305Z] STATUS running=0/4 writers=0/1 freeMem=7041MB agents=[none] paused=no
+[2026-02-21T11:39:54.305Z] SOCIAL running social-poster.js
+[2026-02-21T11:39:54.342Z] SOCIAL 2026-02-21T11:39:54.339Z [social-poster] starting
+[2026-02-21T11:39:54.353Z] SOCIAL 2026-02-21T11:39:54.353Z [social-poster] queue has 2702 posts
+[2026-02-21T11:39:54.353Z] SOCIAL 2026-02-21T11:39:54.353Z [social-poster] done — 0 attempted, 0 succeeded, 2702 remaining in queue
+[2026-02-21T11:39:54.357Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:44:54.344Z] STATUS running=0/4 writers=0/1 freeMem=7045MB agents=[none] paused=no
+[2026-02-21T11:44:54.345Z] SOCIAL running social-poster.js
+[2026-02-21T11:44:54.372Z] SOCIAL 2026-02-21T11:44:54.371Z [social-poster] starting
+[2026-02-21T11:44:54.383Z] SOCIAL 2026-02-21T11:44:54.383Z [social-poster] queue has 2702 posts
+[2026-02-21T11:44:54.586Z] SOCIAL 2026-02-21T11:44:54.586Z [social-poster] OK x: posted "Stop using :latest tags in Docker Compose. Pin to a specific..."
+[2026-02-21T11:44:54.940Z] SOCIAL 2026-02-21T11:44:54.939Z [social-poster] OK bluesky: posted "Want to self-host Uptime Kuma? Our guide covers Docker Compo..."
+[2026-02-21T11:44:54.950Z] SOCIAL 2026-02-21T11:44:54.949Z [social-poster] removed 2 posted items from queue (2700 remaining)
+[2026-02-21T11:44:54.950Z] SOCIAL 2026-02-21T11:44:54.950Z [social-poster] done — 2 attempted, 2 succeeded, 2700 remaining in queue
+[2026-02-21T11:44:54.956Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:49:54.407Z] STATUS running=0/4 writers=0/1 freeMem=7039MB agents=[none] paused=no
+[2026-02-21T11:49:54.407Z] SOCIAL running social-poster.js
+[2026-02-21T11:49:54.445Z] SOCIAL 2026-02-21T11:49:54.442Z [social-poster] starting
+[2026-02-21T11:49:54.456Z] SOCIAL 2026-02-21T11:49:54.456Z [social-poster] queue has 2700 posts
+[2026-02-21T11:49:54.457Z] SOCIAL 2026-02-21T11:49:54.456Z [social-poster] done — 0 attempted, 0 succeeded, 2700 remaining in queue
+[2026-02-21T11:49:54.460Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:54:54.508Z] STATUS running=0/4 writers=0/1 freeMem=7043MB agents=[none] paused=no
+[2026-02-21T11:54:54.508Z] SOCIAL running social-poster.js
+[2026-02-21T11:54:54.543Z] SOCIAL 2026-02-21T11:54:54.541Z [social-poster] starting
+[2026-02-21T11:54:54.554Z] SOCIAL 2026-02-21T11:54:54.554Z [social-poster] queue has 2700 posts
+[2026-02-21T11:54:54.554Z] SOCIAL 2026-02-21T11:54:54.554Z [social-poster] done — 0 attempted, 0 succeeded, 2700 remaining in queue
+[2026-02-21T11:54:54.558Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:59:54.561Z] STATUS running=0/4 writers=0/1 freeMem=7055MB agents=[none] paused=no
+[2026-02-21T11:59:54.561Z] SOCIAL running social-poster.js
+[2026-02-21T11:59:54.602Z] SOCIAL 2026-02-21T11:59:54.599Z [social-poster] starting
+[2026-02-21T11:59:54.617Z] SOCIAL 2026-02-21T11:59:54.617Z [social-poster] queue has 2700 posts
+[2026-02-21T11:59:54.821Z] SOCIAL 2026-02-21T11:59:54.821Z [social-poster] OK x: posted "You don't need a rack server to start self-hosting. A Raspbe..."
+[2026-02-21T11:59:55.148Z] SOCIAL 2026-02-21T11:59:55.148Z [social-poster] OK bluesky: posted "Self-hosting YOURLS is easier than you think. Docker Compose..."
+[2026-02-21T11:59:55.157Z] SOCIAL 2026-02-21T11:59:55.157Z [social-poster] removed 2 posted items from queue (2698 remaining)
+[2026-02-21T11:59:55.157Z] SOCIAL 2026-02-21T11:59:55.157Z [social-poster] done — 2 attempted, 2 succeeded, 2698 remaining in queue
+[2026-02-21T11:59:55.163Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:04:54.608Z] STATUS running=0/4 writers=0/1 freeMem=7037MB agents=[none] paused=no
+[2026-02-21T12:04:54.608Z] SOCIAL running social-poster.js
+[2026-02-21T12:04:54.636Z] SOCIAL 2026-02-21T12:04:54.634Z [social-poster] starting
+[2026-02-21T12:04:54.644Z] SOCIAL 2026-02-21T12:04:54.644Z [social-poster] queue has 2698 posts
+[2026-02-21T12:04:54.645Z] SOCIAL 2026-02-21T12:04:54.645Z [social-poster] done — 0 attempted, 0 succeeded, 2698 remaining in queue
+[2026-02-21T12:04:54.648Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:09:54.650Z] STATUS running=0/4 writers=0/1 freeMem=7037MB agents=[none] paused=no
+[2026-02-21T12:09:54.650Z] SOCIAL running social-poster.js
+[2026-02-21T12:09:54.682Z] SOCIAL 2026-02-21T12:09:54.680Z [social-poster] starting
+[2026-02-21T12:09:54.691Z] SOCIAL 2026-02-21T12:09:54.691Z [social-poster] queue has 2698 posts
+[2026-02-21T12:09:54.692Z] SOCIAL 2026-02-21T12:09:54.691Z [social-poster] done — 0 attempted, 0 succeeded, 2698 remaining in queue
+[2026-02-21T12:09:54.695Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:14:54.750Z] STATUS running=0/4 writers=0/1 freeMem=7043MB agents=[none] paused=no
+[2026-02-21T12:14:54.750Z] SOCIAL running social-poster.js
+[2026-02-21T12:14:54.776Z] SOCIAL 2026-02-21T12:14:54.775Z [social-poster] starting
+[2026-02-21T12:14:54.783Z] SOCIAL 2026-02-21T12:14:54.783Z [social-poster] queue has 2698 posts
+[2026-02-21T12:14:55.129Z] SOCIAL 2026-02-21T12:14:55.129Z [social-poster] OK bluesky: posted "BookStack or Joplin? We compare features, performance, ease ..."
+[2026-02-21T12:14:55.138Z] SOCIAL 2026-02-21T12:14:55.138Z [social-poster] removed 1 posted items from queue (2697 remaining)
+[2026-02-21T12:14:55.138Z] SOCIAL 2026-02-21T12:14:55.138Z [social-poster] done — 1 attempted, 1 succeeded, 2697 remaining in queue
+[2026-02-21T12:14:55.143Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:19:54.849Z] STATUS running=0/4 writers=0/1 freeMem=7053MB agents=[none] paused=no
+[2026-02-21T12:19:54.849Z] SOCIAL running social-poster.js
+[2026-02-21T12:19:54.877Z] SOCIAL 2026-02-21T12:19:54.875Z [social-poster] starting
+[2026-02-21T12:19:54.886Z] SOCIAL 2026-02-21T12:19:54.886Z [social-poster] queue has 2697 posts
+[2026-02-21T12:19:55.139Z] SOCIAL 2026-02-21T12:19:55.139Z [social-poster] OK x: posted "Compose trick: use `depends_on` with health checks instead o..."
+[2026-02-21T12:19:55.148Z] SOCIAL 2026-02-21T12:19:55.148Z [social-poster] removed 1 posted items from queue (2696 remaining)
+[2026-02-21T12:19:55.148Z] SOCIAL 2026-02-21T12:19:55.148Z [social-poster] done — 1 attempted, 1 succeeded, 2696 remaining in queue
+[2026-02-21T12:19:55.153Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:24:54.949Z] STATUS running=0/4 writers=0/1 freeMem=7057MB agents=[none] paused=no
+[2026-02-21T12:24:54.950Z] RELEASES running check-releases.js
+[2026-02-21T12:24:54.953Z] SOCIAL running social-poster.js
+[2026-02-21T12:24:55.018Z] RELEASES 2026-02-21T12:24:55.014Z [check-releases] starting
+[2026-02-21T12:24:55.019Z] SOCIAL 2026-02-21T12:24:55.016Z [social-poster] starting
+[2026-02-21T12:24:55.019Z] RELEASES 2026-02-21T12:24:55.019Z [check-releases] checking 29 GitHub repos
+[2026-02-21T12:24:55.036Z] SOCIAL 2026-02-21T12:24:55.035Z [social-poster] queue has 2696 posts
+[2026-02-21T12:24:55.036Z] SOCIAL 2026-02-21T12:24:55.036Z [social-poster] done — 0 attempted, 0 succeeded, 2696 remaining in queue
+[2026-02-21T12:24:55.041Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:24:55.108Z] RELEASES 2026-02-21T12:24:55.108Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T12:24:55.656Z] RELEASES 2026-02-21T12:24:55.656Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T12:24:56.258Z] RELEASES 2026-02-21T12:24:56.258Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T12:24:56.842Z] RELEASES 2026-02-21T12:24:56.842Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T12:24:57.390Z] RELEASES 2026-02-21T12:24:57.389Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T12:24:57.942Z] RELEASES 2026-02-21T12:24:57.942Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T12:24:58.511Z] RELEASES 2026-02-21T12:24:58.510Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T12:24:59.070Z] RELEASES 2026-02-21T12:24:59.070Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T12:24:59.642Z] RELEASES 2026-02-21T12:24:59.642Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T12:25:00.249Z] RELEASES 2026-02-21T12:25:00.249Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T12:25:00.796Z] RELEASES 2026-02-21T12:25:00.796Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T12:25:01.397Z] RELEASES 2026-02-21T12:25:01.397Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T12:25:01.940Z] RELEASES 2026-02-21T12:25:01.940Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T12:25:02.529Z] RELEASES 2026-02-21T12:25:02.529Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T12:25:03.081Z] RELEASES 2026-02-21T12:25:03.081Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T12:25:03.640Z] RELEASES 2026-02-21T12:25:03.639Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T12:25:04.195Z] RELEASES 2026-02-21T12:25:04.195Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T12:25:04.751Z] RELEASES 2026-02-21T12:25:04.751Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T12:25:05.320Z] RELEASES 2026-02-21T12:25:05.319Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T12:25:05.875Z] RELEASES 2026-02-21T12:25:05.875Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T12:25:06.430Z] RELEASES 2026-02-21T12:25:06.429Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T12:25:06.980Z] RELEASES 2026-02-21T12:25:06.980Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T12:25:07.535Z] RELEASES 2026-02-21T12:25:07.535Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T12:25:08.095Z] RELEASES 2026-02-21T12:25:08.095Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T12:25:08.645Z] RELEASES 2026-02-21T12:25:08.644Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T12:25:09.200Z] RELEASES 2026-02-21T12:25:09.200Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T12:25:09.752Z] RELEASES 2026-02-21T12:25:09.752Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-21T12:25:10.304Z] RELEASES 2026-02-21T12:25:10.303Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T12:25:10.857Z] RELEASES 2026-02-21T12:25:10.857Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T12:25:11.358Z] RELEASES 2026-02-21T12:25:11.358Z [check-releases] checking 3 feeds
+[2026-02-21T12:25:11.412Z] RELEASES 2026-02-21T12:25:11.412Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T12:25:11.676Z] RELEASES 2026-02-21T12:25:11.676Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T12:25:12.004Z] RELEASES 2026-02-21T12:25:12.004Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T12:25:12.205Z] RELEASES 2026-02-21T12:25:12.205Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T12:25:12.210Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T12:29:55.046Z] STATUS running=0/4 writers=0/1 freeMem=7037MB agents=[none] paused=no
+[2026-02-21T12:29:55.046Z] SOCIAL running social-poster.js
+[2026-02-21T12:29:55.079Z] SOCIAL 2026-02-21T12:29:55.077Z [social-poster] starting
+[2026-02-21T12:29:55.094Z] SOCIAL 2026-02-21T12:29:55.094Z [social-poster] queue has 2696 posts
+[2026-02-21T12:29:55.416Z] SOCIAL 2026-02-21T12:29:55.416Z [social-poster] OK bluesky: posted "Can't decide between Caddy and Cosmos Cloud? We compare them..."
+[2026-02-21T12:29:55.424Z] SOCIAL 2026-02-21T12:29:55.424Z [social-poster] removed 1 posted items from queue (2695 remaining)
+[2026-02-21T12:29:55.424Z] SOCIAL 2026-02-21T12:29:55.424Z [social-poster] done — 1 attempted, 1 succeeded, 2695 remaining in queue
+[2026-02-21T12:29:55.428Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:34:55.148Z] STATUS running=0/4 writers=0/1 freeMem=7037MB agents=[none] paused=no
+[2026-02-21T12:34:55.148Z] SOCIAL running social-poster.js
+[2026-02-21T12:34:55.185Z] SOCIAL 2026-02-21T12:34:55.183Z [social-poster] starting
+[2026-02-21T12:34:55.195Z] SOCIAL 2026-02-21T12:34:55.195Z [social-poster] queue has 2695 posts
+[2026-02-21T12:34:55.465Z] SOCIAL 2026-02-21T12:34:55.465Z [social-poster] OK x: posted "Replaced Google Photos, Spotify, Google Drive, and a VPN sub..."
+[2026-02-21T12:34:55.477Z] SOCIAL 2026-02-21T12:34:55.476Z [social-poster] removed 1 posted items from queue (2694 remaining)
+[2026-02-21T12:34:55.477Z] SOCIAL 2026-02-21T12:34:55.477Z [social-poster] done — 1 attempted, 1 succeeded, 2694 remaining in queue
+[2026-02-21T12:34:55.483Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:39:55.217Z] STATUS running=0/4 writers=0/1 freeMem=7048MB agents=[none] paused=no
+[2026-02-21T12:39:55.217Z] SOCIAL running social-poster.js
+[2026-02-21T12:39:55.249Z] SOCIAL 2026-02-21T12:39:55.247Z [social-poster] starting
+[2026-02-21T12:39:55.259Z] SOCIAL 2026-02-21T12:39:55.258Z [social-poster] queue has 2694 posts
+[2026-02-21T12:39:55.259Z] SOCIAL 2026-02-21T12:39:55.259Z [social-poster] done — 0 attempted, 0 succeeded, 2694 remaining in queue
+[2026-02-21T12:39:55.262Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:44:55.318Z] STATUS running=0/4 writers=0/1 freeMem=7048MB agents=[none] paused=no
+[2026-02-21T12:44:55.318Z] SOCIAL running social-poster.js
+[2026-02-21T12:44:55.361Z] SOCIAL 2026-02-21T12:44:55.358Z [social-poster] starting
+[2026-02-21T12:44:55.373Z] SOCIAL 2026-02-21T12:44:55.373Z [social-poster] queue has 2694 posts
+[2026-02-21T12:44:55.730Z] SOCIAL 2026-02-21T12:44:55.730Z [social-poster] OK bluesky: posted "Can't decide between Caddy and Envoy? We compare them head-t..."
+[2026-02-21T12:44:55.739Z] SOCIAL 2026-02-21T12:44:55.739Z [social-poster] removed 1 posted items from queue (2693 remaining)
+[2026-02-21T12:44:55.739Z] SOCIAL 2026-02-21T12:44:55.739Z [social-poster] done — 1 attempted, 1 succeeded, 2693 remaining in queue
+[2026-02-21T12:44:55.744Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:49:55.393Z] STATUS running=0/4 writers=0/1 freeMem=7044MB agents=[none] paused=no
+[2026-02-21T12:49:55.393Z] SOCIAL running social-poster.js
+[2026-02-21T12:49:55.427Z] SOCIAL 2026-02-21T12:49:55.425Z [social-poster] starting
+[2026-02-21T12:49:55.437Z] SOCIAL 2026-02-21T12:49:55.436Z [social-poster] queue has 2693 posts
+[2026-02-21T12:49:55.437Z] SOCIAL 2026-02-21T12:49:55.437Z [social-poster] done — 0 attempted, 0 succeeded, 2693 remaining in queue
+[2026-02-21T12:49:55.440Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:54:55.494Z] STATUS running=0/4 writers=0/1 freeMem=7048MB agents=[none] paused=no
+[2026-02-21T12:54:55.494Z] SOCIAL running social-poster.js
+[2026-02-21T12:54:55.527Z] SOCIAL 2026-02-21T12:54:55.525Z [social-poster] starting
+[2026-02-21T12:54:55.537Z] SOCIAL 2026-02-21T12:54:55.536Z [social-poster] queue has 2693 posts
+[2026-02-21T12:54:55.754Z] SOCIAL 2026-02-21T12:54:55.754Z [social-poster] OK x: posted "Your family photos shouldn't live on someone else's server. ..."
+[2026-02-21T12:54:55.763Z] SOCIAL 2026-02-21T12:54:55.763Z [social-poster] removed 1 posted items from queue (2692 remaining)
+[2026-02-21T12:54:55.764Z] SOCIAL 2026-02-21T12:54:55.764Z [social-poster] done — 1 attempted, 1 succeeded, 2692 remaining in queue
+[2026-02-21T12:54:55.769Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T12:59:55.521Z] STATUS running=0/4 writers=0/1 freeMem=7025MB agents=[none] paused=no
+[2026-02-21T12:59:55.522Z] SOCIAL running social-poster.js
+[2026-02-21T12:59:55.557Z] SOCIAL 2026-02-21T12:59:55.554Z [social-poster] starting
+[2026-02-21T12:59:55.567Z] SOCIAL 2026-02-21T12:59:55.567Z [social-poster] queue has 2692 posts
+[2026-02-21T12:59:55.917Z] SOCIAL 2026-02-21T12:59:55.917Z [social-poster] OK bluesky: posted "Caddy vs Nginx — honest comparison. We break down who each o..."
+[2026-02-21T12:59:55.929Z] SOCIAL 2026-02-21T12:59:55.929Z [social-poster] removed 1 posted items from queue (2691 remaining)
+[2026-02-21T12:59:55.929Z] SOCIAL 2026-02-21T12:59:55.929Z [social-poster] done — 1 attempted, 1 succeeded, 2691 remaining in queue
+[2026-02-21T12:59:55.934Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:04:55.578Z] STATUS running=0/4 writers=0/1 freeMem=7031MB agents=[none] paused=no
+[2026-02-21T13:04:55.578Z] SOCIAL running social-poster.js
+[2026-02-21T13:04:55.613Z] SOCIAL 2026-02-21T13:04:55.611Z [social-poster] starting
+[2026-02-21T13:04:55.622Z] SOCIAL 2026-02-21T13:04:55.622Z [social-poster] queue has 2691 posts
+[2026-02-21T13:04:55.623Z] SOCIAL 2026-02-21T13:04:55.623Z [social-poster] done — 0 attempted, 0 succeeded, 2691 remaining in queue
+[2026-02-21T13:04:55.626Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:09:55.623Z] STATUS running=0/4 writers=0/1 freeMem=7039MB agents=[none] paused=no
+[2026-02-21T13:09:55.623Z] SOCIAL running social-poster.js
+[2026-02-21T13:09:55.657Z] SOCIAL 2026-02-21T13:09:55.655Z [social-poster] starting
+[2026-02-21T13:09:55.666Z] SOCIAL 2026-02-21T13:09:55.666Z [social-poster] queue has 2691 posts
+[2026-02-21T13:09:55.667Z] SOCIAL 2026-02-21T13:09:55.667Z [social-poster] done — 0 attempted, 0 succeeded, 2691 remaining in queue
+[2026-02-21T13:09:55.670Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:14:55.724Z] STATUS running=0/4 writers=0/1 freeMem=7034MB agents=[none] paused=no
+[2026-02-21T13:14:55.724Z] SOCIAL running social-poster.js
+[2026-02-21T13:14:55.758Z] SOCIAL 2026-02-21T13:14:55.756Z [social-poster] starting
+[2026-02-21T13:14:55.769Z] SOCIAL 2026-02-21T13:14:55.768Z [social-poster] queue has 2691 posts
+[2026-02-21T13:14:55.989Z] SOCIAL 2026-02-21T13:14:55.989Z [social-poster] OK x: posted "Self-host Domoticz: Docker Compose config, setup walkthrough..."
+[2026-02-21T13:14:56.306Z] SOCIAL 2026-02-21T13:14:56.306Z [social-poster] OK bluesky: posted "Cosmos Cloud vs Dockge — honest comparison. We break down wh..."
+[2026-02-21T13:14:56.316Z] SOCIAL 2026-02-21T13:14:56.315Z [social-poster] removed 2 posted items from queue (2689 remaining)
+[2026-02-21T13:14:56.316Z] SOCIAL 2026-02-21T13:14:56.316Z [social-poster] done — 2 attempted, 2 succeeded, 2689 remaining in queue
+[2026-02-21T13:14:56.321Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:19:55.768Z] STATUS running=0/4 writers=0/1 freeMem=7050MB agents=[none] paused=no
+[2026-02-21T13:19:55.769Z] SOCIAL running social-poster.js
+[2026-02-21T13:19:55.799Z] SOCIAL 2026-02-21T13:19:55.797Z [social-poster] starting
+[2026-02-21T13:19:55.808Z] SOCIAL 2026-02-21T13:19:55.808Z [social-poster] queue has 2689 posts
+[2026-02-21T13:19:55.808Z] SOCIAL 2026-02-21T13:19:55.808Z [social-poster] done — 0 attempted, 0 succeeded, 2689 remaining in queue
+[2026-02-21T13:19:55.812Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:24:55.773Z] STATUS running=0/4 writers=0/1 freeMem=7032MB agents=[none] paused=no
+[2026-02-21T13:24:55.773Z] RELEASES running check-releases.js
+[2026-02-21T13:24:55.775Z] SOCIAL running social-poster.js
+[2026-02-21T13:24:55.802Z] RELEASES 2026-02-21T13:24:55.799Z [check-releases] starting
+[2026-02-21T13:24:55.802Z] RELEASES 2026-02-21T13:24:55.802Z [check-releases] checking 29 GitHub repos
+[2026-02-21T13:24:55.806Z] SOCIAL 2026-02-21T13:24:55.804Z [social-poster] starting
+[2026-02-21T13:24:55.816Z] SOCIAL 2026-02-21T13:24:55.816Z [social-poster] queue has 2689 posts
+[2026-02-21T13:24:55.816Z] SOCIAL 2026-02-21T13:24:55.816Z [social-poster] done — 0 attempted, 0 succeeded, 2689 remaining in queue
+[2026-02-21T13:24:55.820Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:24:55.890Z] RELEASES 2026-02-21T13:24:55.890Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T13:24:56.451Z] RELEASES 2026-02-21T13:24:56.451Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T13:24:57.034Z] RELEASES 2026-02-21T13:24:57.033Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T13:24:57.623Z] RELEASES 2026-02-21T13:24:57.622Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T13:24:58.183Z] RELEASES 2026-02-21T13:24:58.183Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T13:24:58.735Z] RELEASES 2026-02-21T13:24:58.735Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T13:24:59.295Z] RELEASES 2026-02-21T13:24:59.294Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T13:24:59.845Z] RELEASES 2026-02-21T13:24:59.845Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T13:25:00.405Z] RELEASES 2026-02-21T13:25:00.405Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T13:25:00.958Z] RELEASES 2026-02-21T13:25:00.958Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T13:25:01.511Z] RELEASES 2026-02-21T13:25:01.511Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T13:25:02.126Z] RELEASES 2026-02-21T13:25:02.126Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T13:25:02.673Z] RELEASES 2026-02-21T13:25:02.672Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T13:25:03.255Z] RELEASES 2026-02-21T13:25:03.254Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T13:25:03.824Z] RELEASES 2026-02-21T13:25:03.824Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T13:25:04.376Z] RELEASES 2026-02-21T13:25:04.375Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T13:25:04.951Z] RELEASES 2026-02-21T13:25:04.950Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T13:25:05.514Z] RELEASES 2026-02-21T13:25:05.513Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T13:25:06.091Z] RELEASES 2026-02-21T13:25:06.091Z [check-releases]   drakkan/sftpgo → 304 unchanged
+[2026-02-21T13:25:06.675Z] RELEASES 2026-02-21T13:25:06.674Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T13:25:07.238Z] RELEASES 2026-02-21T13:25:07.238Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T13:25:07.793Z] RELEASES 2026-02-21T13:25:07.792Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T13:25:08.349Z] RELEASES 2026-02-21T13:25:08.349Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T13:25:08.901Z] RELEASES 2026-02-21T13:25:08.900Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T13:25:09.455Z] RELEASES 2026-02-21T13:25:09.455Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T13:25:10.016Z] RELEASES 2026-02-21T13:25:10.016Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T13:25:10.571Z] RELEASES 2026-02-21T13:25:10.570Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-21T13:25:11.129Z] RELEASES 2026-02-21T13:25:11.129Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T13:25:11.685Z] RELEASES 2026-02-21T13:25:11.685Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T13:25:12.186Z] RELEASES 2026-02-21T13:25:12.186Z [check-releases] checking 3 feeds
+[2026-02-21T13:25:12.231Z] RELEASES 2026-02-21T13:25:12.231Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T13:25:12.498Z] RELEASES 2026-02-21T13:25:12.498Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T13:25:12.790Z] RELEASES 2026-02-21T13:25:12.789Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T13:25:12.990Z] RELEASES 2026-02-21T13:25:12.990Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T13:25:12.995Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T13:29:55.842Z] STATUS running=0/4 writers=0/1 freeMem=7057MB agents=[none] paused=no
+[2026-02-21T13:29:55.842Z] SOCIAL running social-poster.js
+[2026-02-21T13:29:55.880Z] SOCIAL 2026-02-21T13:29:55.878Z [social-poster] starting
+[2026-02-21T13:29:55.892Z] SOCIAL 2026-02-21T13:29:55.892Z [social-poster] queue has 2689 posts
+[2026-02-21T13:29:56.246Z] SOCIAL 2026-02-21T13:29:56.246Z [social-poster] OK bluesky: posted "We ran both Cosmos Cloud and Lazydocker side by side. Here's..."
+[2026-02-21T13:29:56.255Z] SOCIAL 2026-02-21T13:29:56.255Z [social-poster] removed 1 posted items from queue (2688 remaining)
+[2026-02-21T13:29:56.255Z] SOCIAL 2026-02-21T13:29:56.255Z [social-poster] done — 1 attempted, 1 succeeded, 2688 remaining in queue
+[2026-02-21T13:29:56.260Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:34:55.915Z] STATUS running=0/4 writers=0/1 freeMem=7049MB agents=[none] paused=no
+[2026-02-21T13:34:55.915Z] SOCIAL running social-poster.js
+[2026-02-21T13:34:55.947Z] SOCIAL 2026-02-21T13:34:55.945Z [social-poster] starting
+[2026-02-21T13:34:55.957Z] SOCIAL 2026-02-21T13:34:55.957Z [social-poster] queue has 2688 posts
+[2026-02-21T13:34:56.177Z] SOCIAL 2026-02-21T13:34:56.177Z [social-poster] OK x: posted "Self-hosting Envoy? Our guide covers the Docker setup, confi..."
+[2026-02-21T13:34:56.185Z] SOCIAL 2026-02-21T13:34:56.185Z [social-poster] removed 1 posted items from queue (2687 remaining)
+[2026-02-21T13:34:56.186Z] SOCIAL 2026-02-21T13:34:56.185Z [social-poster] done — 1 attempted, 1 succeeded, 2687 remaining in queue
+[2026-02-21T13:34:56.191Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:39:56.016Z] STATUS running=0/4 writers=0/1 freeMem=7043MB agents=[none] paused=no
+[2026-02-21T13:39:56.017Z] SOCIAL running social-poster.js
+[2026-02-21T13:39:56.047Z] SOCIAL 2026-02-21T13:39:56.045Z [social-poster] starting
+[2026-02-21T13:39:56.057Z] SOCIAL 2026-02-21T13:39:56.057Z [social-poster] queue has 2687 posts
+[2026-02-21T13:39:56.057Z] SOCIAL 2026-02-21T13:39:56.057Z [social-poster] done — 0 attempted, 0 succeeded, 2687 remaining in queue
+[2026-02-21T13:39:56.061Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:44:56.057Z] STATUS running=0/4 writers=0/1 freeMem=7038MB agents=[none] paused=no
+[2026-02-21T13:44:56.058Z] SOCIAL running social-poster.js
+[2026-02-21T13:44:56.090Z] SOCIAL 2026-02-21T13:44:56.088Z [social-poster] starting
+[2026-02-21T13:44:56.100Z] SOCIAL 2026-02-21T13:44:56.099Z [social-poster] queue has 2687 posts
+[2026-02-21T13:44:56.459Z] SOCIAL 2026-02-21T13:44:56.459Z [social-poster] OK bluesky: posted "Cosmos Cloud vs Portainer — honest comparison. We break down..."
+[2026-02-21T13:44:56.469Z] SOCIAL 2026-02-21T13:44:56.468Z [social-poster] removed 1 posted items from queue (2686 remaining)
+[2026-02-21T13:44:56.469Z] SOCIAL 2026-02-21T13:44:56.469Z [social-poster] done — 1 attempted, 1 succeeded, 2686 remaining in queue
+[2026-02-21T13:44:56.474Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:49:56.137Z] STATUS running=0/4 writers=0/1 freeMem=7064MB agents=[none] paused=no
+[2026-02-21T13:49:56.138Z] SOCIAL running social-poster.js
+[2026-02-21T13:49:56.170Z] SOCIAL 2026-02-21T13:49:56.168Z [social-poster] starting
+[2026-02-21T13:49:56.179Z] SOCIAL 2026-02-21T13:49:56.178Z [social-poster] queue has 2686 posts
+[2026-02-21T13:49:56.667Z] SOCIAL 2026-02-21T13:49:56.667Z [social-poster] OK x: posted "ESPHome Docker setup guide — everything you need from image ..."
+[2026-02-21T13:49:56.676Z] SOCIAL 2026-02-21T13:49:56.676Z [social-poster] removed 1 posted items from queue (2685 remaining)
+[2026-02-21T13:49:56.677Z] SOCIAL 2026-02-21T13:49:56.677Z [social-poster] done — 1 attempted, 1 succeeded, 2685 remaining in queue
+[2026-02-21T13:49:56.682Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:54:56.237Z] STATUS running=0/4 writers=0/1 freeMem=7057MB agents=[none] paused=no
+[2026-02-21T13:54:56.237Z] SOCIAL running social-poster.js
+[2026-02-21T13:54:56.270Z] SOCIAL 2026-02-21T13:54:56.268Z [social-poster] starting
+[2026-02-21T13:54:56.279Z] SOCIAL 2026-02-21T13:54:56.279Z [social-poster] queue has 2685 posts
+[2026-02-21T13:54:56.279Z] SOCIAL 2026-02-21T13:54:56.279Z [social-poster] done — 0 attempted, 0 succeeded, 2685 remaining in queue
+[2026-02-21T13:54:56.283Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T13:59:56.266Z] STATUS running=0/4 writers=0/1 freeMem=7045MB agents=[none] paused=no
+[2026-02-21T13:59:56.267Z] SOCIAL running social-poster.js
+[2026-02-21T13:59:56.302Z] SOCIAL 2026-02-21T13:59:56.299Z [social-poster] starting
+[2026-02-21T13:59:56.312Z] SOCIAL 2026-02-21T13:59:56.312Z [social-poster] queue has 2685 posts
+[2026-02-21T13:59:56.543Z] SOCIAL 2026-02-21T13:59:56.542Z [social-poster] OK bluesky: posted "Docker Compose vs Swarm — honest comparison. We break down w..."
+[2026-02-21T13:59:56.552Z] SOCIAL 2026-02-21T13:59:56.552Z [social-poster] removed 1 posted items from queue (2684 remaining)
+[2026-02-21T13:59:56.552Z] SOCIAL 2026-02-21T13:59:56.552Z [social-poster] done — 1 attempted, 1 succeeded, 2684 remaining in queue
+[2026-02-21T13:59:56.558Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:04:56.367Z] STATUS running=0/4 writers=0/1 freeMem=7047MB agents=[none] paused=no
+[2026-02-21T14:04:56.368Z] SOCIAL running social-poster.js
+[2026-02-21T14:04:56.399Z] SOCIAL 2026-02-21T14:04:56.397Z [social-poster] starting
+[2026-02-21T14:04:56.409Z] SOCIAL 2026-02-21T14:04:56.409Z [social-poster] queue has 2684 posts
+[2026-02-21T14:04:57.373Z] SOCIAL 2026-02-21T14:04:57.373Z [social-poster] Dev.to: published "AFFiNE vs AppFlowy: Open-Source Notion Clones" → https://dev.to/selfhostingsh/affine-vs-appflowy-open-source-notion-clones-2mg4
+[2026-02-21T14:04:57.373Z] SOCIAL 2026-02-21T14:04:57.373Z [social-poster] OK devto: posted "AFFiNE vs AppFlowy: Open-Source Notion Clones..."
+[2026-02-21T14:04:58.008Z] SOCIAL 2026-02-21T14:04:58.007Z [social-poster] Hashnode: published "AFFiNE vs AppFlowy: Open-Source Notion Clones" → https://selfhostingsh.hashnode.dev/affine-vs-appflowy-open-source-notion-clones
+[2026-02-21T14:04:58.008Z] SOCIAL 2026-02-21T14:04:58.007Z [social-poster] OK hashnode: posted "AFFiNE vs AppFlowy: Open-Source Notion Clones..."
+[2026-02-21T14:04:58.016Z] SOCIAL 2026-02-21T14:04:58.016Z [social-poster] removed 2 posted items from queue (2682 remaining)
+[2026-02-21T14:04:58.016Z] SOCIAL 2026-02-21T14:04:58.016Z [social-poster] done — 2 attempted, 2 succeeded, 2682 remaining in queue
+[2026-02-21T14:04:58.021Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:09:56.425Z] STATUS running=0/4 writers=0/1 freeMem=7034MB agents=[none] paused=no
+[2026-02-21T14:09:56.425Z] SOCIAL running social-poster.js
+[2026-02-21T14:09:56.460Z] SOCIAL 2026-02-21T14:09:56.458Z [social-poster] starting
+[2026-02-21T14:09:56.469Z] SOCIAL 2026-02-21T14:09:56.469Z [social-poster] queue has 2682 posts
+[2026-02-21T14:09:56.754Z] SOCIAL 2026-02-21T14:09:56.754Z [social-poster] OK x: posted "Take control of your data — self-host FreshRSS. Docker guide..."
+[2026-02-21T14:09:56.763Z] SOCIAL 2026-02-21T14:09:56.763Z [social-poster] removed 1 posted items from queue (2681 remaining)
+[2026-02-21T14:09:56.763Z] SOCIAL 2026-02-21T14:09:56.763Z [social-poster] done — 1 attempted, 1 succeeded, 2681 remaining in queue
+[2026-02-21T14:09:56.768Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:14:56.518Z] STATUS running=0/4 writers=0/1 freeMem=7038MB agents=[none] paused=no
+[2026-02-21T14:14:56.519Z] SOCIAL running social-poster.js
+[2026-02-21T14:14:56.550Z] SOCIAL 2026-02-21T14:14:56.548Z [social-poster] starting
+[2026-02-21T14:14:56.560Z] SOCIAL 2026-02-21T14:14:56.560Z [social-poster] queue has 2681 posts
+[2026-02-21T14:14:56.916Z] SOCIAL 2026-02-21T14:14:56.916Z [social-poster] OK bluesky: posted "Can't decide between Emby and Plex Music? We compare them he..."
+[2026-02-21T14:14:56.925Z] SOCIAL 2026-02-21T14:14:56.925Z [social-poster] removed 1 posted items from queue (2680 remaining)
+[2026-02-21T14:14:56.925Z] SOCIAL 2026-02-21T14:14:56.925Z [social-poster] done — 1 attempted, 1 succeeded, 2680 remaining in queue
+[2026-02-21T14:14:56.930Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:19:56.570Z] STATUS running=0/4 writers=0/1 freeMem=7041MB agents=[none] paused=no
+[2026-02-21T14:19:56.570Z] SOCIAL running social-poster.js
+[2026-02-21T14:19:56.605Z] SOCIAL 2026-02-21T14:19:56.603Z [social-poster] starting
+[2026-02-21T14:19:56.620Z] SOCIAL 2026-02-21T14:19:56.620Z [social-poster] queue has 2680 posts
+[2026-02-21T14:19:56.621Z] SOCIAL 2026-02-21T14:19:56.621Z [social-poster] done — 0 attempted, 0 succeeded, 2680 remaining in queue
+[2026-02-21T14:19:56.626Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:24:56.633Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T14:24:56.633Z] RELEASES running check-releases.js
+[2026-02-21T14:24:56.635Z] SOCIAL running social-poster.js
+[2026-02-21T14:24:56.666Z] RELEASES 2026-02-21T14:24:56.663Z [check-releases] starting
+[2026-02-21T14:24:56.666Z] RELEASES 2026-02-21T14:24:56.666Z [check-releases] checking 29 GitHub repos
+[2026-02-21T14:24:56.667Z] SOCIAL 2026-02-21T14:24:56.665Z [social-poster] starting
+[2026-02-21T14:24:56.677Z] SOCIAL 2026-02-21T14:24:56.677Z [social-poster] queue has 2680 posts
+[2026-02-21T14:24:56.677Z] SOCIAL 2026-02-21T14:24:56.677Z [social-poster] done — 0 attempted, 0 succeeded, 2680 remaining in queue
+[2026-02-21T14:24:56.681Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:24:56.747Z] RELEASES 2026-02-21T14:24:56.746Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T14:24:57.303Z] RELEASES 2026-02-21T14:24:57.302Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T14:24:57.951Z] RELEASES 2026-02-21T14:24:57.951Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T14:24:58.537Z] RELEASES 2026-02-21T14:24:58.537Z [check-releases]   crazy-max/diun → 200 but same version (v4.31.0)
+[2026-02-21T14:24:59.086Z] RELEASES 2026-02-21T14:24:59.085Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T14:24:59.637Z] RELEASES 2026-02-21T14:24:59.636Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T14:25:00.195Z] RELEASES 2026-02-21T14:25:00.195Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T14:25:00.757Z] RELEASES 2026-02-21T14:25:00.757Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T14:25:01.312Z] RELEASES 2026-02-21T14:25:01.312Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T14:25:01.869Z] RELEASES 2026-02-21T14:25:01.869Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T14:25:02.415Z] RELEASES 2026-02-21T14:25:02.414Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T14:25:03.031Z] RELEASES 2026-02-21T14:25:03.031Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-21T14:25:03.576Z] RELEASES 2026-02-21T14:25:03.575Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T14:25:04.154Z] RELEASES 2026-02-21T14:25:04.154Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T14:25:04.725Z] RELEASES 2026-02-21T14:25:04.725Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T14:25:05.282Z] RELEASES 2026-02-21T14:25:05.281Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T14:25:05.832Z] RELEASES 2026-02-21T14:25:05.832Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T14:25:06.388Z] RELEASES 2026-02-21T14:25:06.387Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T14:25:06.952Z] RELEASES 2026-02-21T14:25:06.952Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T14:25:07.509Z] RELEASES 2026-02-21T14:25:07.509Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T14:25:08.064Z] RELEASES 2026-02-21T14:25:08.064Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T14:25:08.621Z] RELEASES 2026-02-21T14:25:08.620Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T14:25:09.176Z] RELEASES 2026-02-21T14:25:09.175Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T14:25:09.737Z] RELEASES 2026-02-21T14:25:09.737Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T14:25:10.295Z] RELEASES 2026-02-21T14:25:10.295Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T14:25:10.849Z] RELEASES 2026-02-21T14:25:10.849Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T14:25:11.398Z] RELEASES 2026-02-21T14:25:11.397Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-21T14:25:11.957Z] RELEASES 2026-02-21T14:25:11.957Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T14:25:12.527Z] RELEASES 2026-02-21T14:25:12.526Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T14:25:13.028Z] RELEASES 2026-02-21T14:25:13.027Z [check-releases] checking 3 feeds
+[2026-02-21T14:25:13.102Z] RELEASES 2026-02-21T14:25:13.102Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T14:25:13.375Z] RELEASES 2026-02-21T14:25:13.375Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T14:25:13.717Z] RELEASES 2026-02-21T14:25:13.717Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T14:25:13.917Z] RELEASES 2026-02-21T14:25:13.917Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T14:25:13.922Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T14:29:56.721Z] STATUS running=0/4 writers=0/1 freeMem=7047MB agents=[none] paused=no
+[2026-02-21T14:29:56.721Z] SOCIAL running social-poster.js
+[2026-02-21T14:29:56.747Z] SOCIAL 2026-02-21T14:29:56.746Z [social-poster] starting
+[2026-02-21T14:29:56.755Z] SOCIAL 2026-02-21T14:29:56.755Z [social-poster] queue has 2680 posts
+[2026-02-21T14:29:57.024Z] SOCIAL 2026-02-21T14:29:57.024Z [social-poster] OK x: posted "How to self-host Garage — our step-by-step Docker Compose gu..."
+[2026-02-21T14:29:57.360Z] SOCIAL 2026-02-21T14:29:57.359Z [social-poster] OK bluesky: posted "We ran both Envoy and HAProxy side by side. Here's how they ..."
+[2026-02-21T14:29:57.369Z] SOCIAL 2026-02-21T14:29:57.368Z [social-poster] removed 2 posted items from queue (2678 remaining)
+[2026-02-21T14:29:57.369Z] SOCIAL 2026-02-21T14:29:57.369Z [social-poster] done — 2 attempted, 2 succeeded, 2678 remaining in queue
+[2026-02-21T14:29:57.374Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:34:56.821Z] STATUS running=0/4 writers=0/1 freeMem=7039MB agents=[none] paused=no
+[2026-02-21T14:34:56.822Z] SOCIAL running social-poster.js
+[2026-02-21T14:34:56.855Z] SOCIAL 2026-02-21T14:34:56.853Z [social-poster] starting
+[2026-02-21T14:34:56.864Z] SOCIAL 2026-02-21T14:34:56.864Z [social-poster] queue has 2678 posts
+[2026-02-21T14:34:56.865Z] SOCIAL 2026-02-21T14:34:56.864Z [social-poster] done — 0 attempted, 0 succeeded, 2678 remaining in queue
+[2026-02-21T14:34:56.868Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:39:56.827Z] STATUS running=0/4 writers=0/1 freeMem=7051MB agents=[none] paused=no
+[2026-02-21T14:39:56.827Z] SOCIAL running social-poster.js
+[2026-02-21T14:39:56.860Z] SOCIAL 2026-02-21T14:39:56.858Z [social-poster] starting
+[2026-02-21T14:39:56.869Z] SOCIAL 2026-02-21T14:39:56.869Z [social-poster] queue has 2678 posts
+[2026-02-21T14:39:56.870Z] SOCIAL 2026-02-21T14:39:56.870Z [social-poster] done — 0 attempted, 0 succeeded, 2678 remaining in queue
+[2026-02-21T14:39:56.873Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:44:56.897Z] STATUS running=0/4 writers=0/1 freeMem=7052MB agents=[none] paused=no
+[2026-02-21T14:44:56.897Z] SOCIAL running social-poster.js
+[2026-02-21T14:44:56.933Z] SOCIAL 2026-02-21T14:44:56.931Z [social-poster] starting
+[2026-02-21T14:44:56.943Z] SOCIAL 2026-02-21T14:44:56.943Z [social-poster] queue has 2678 posts
+[2026-02-21T14:44:57.306Z] SOCIAL 2026-02-21T14:44:57.306Z [social-poster] OK bluesky: posted "Gladys or Domoticz? We compare features, performance, ease o..."
+[2026-02-21T14:44:57.315Z] SOCIAL 2026-02-21T14:44:57.315Z [social-poster] removed 1 posted items from queue (2677 remaining)
+[2026-02-21T14:44:57.315Z] SOCIAL 2026-02-21T14:44:57.315Z [social-poster] done — 1 attempted, 1 succeeded, 2677 remaining in queue
+[2026-02-21T14:44:57.320Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:49:56.929Z] STATUS running=0/4 writers=0/1 freeMem=7051MB agents=[none] paused=no
+[2026-02-21T14:49:56.929Z] SOCIAL running social-poster.js
+[2026-02-21T14:49:56.967Z] SOCIAL 2026-02-21T14:49:56.965Z [social-poster] starting
+[2026-02-21T14:49:56.977Z] SOCIAL 2026-02-21T14:49:56.976Z [social-poster] queue has 2677 posts
+[2026-02-21T14:49:57.205Z] SOCIAL 2026-02-21T14:49:57.204Z [social-poster] OK x: posted "How to self-host Gatus — our step-by-step Docker Compose gui..."
+[2026-02-21T14:49:57.214Z] SOCIAL 2026-02-21T14:49:57.214Z [social-poster] removed 1 posted items from queue (2676 remaining)
+[2026-02-21T14:49:57.214Z] SOCIAL 2026-02-21T14:49:57.214Z [social-poster] done — 1 attempted, 1 succeeded, 2676 remaining in queue
+[2026-02-21T14:49:57.220Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:54:56.963Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T14:54:56.964Z] SOCIAL running social-poster.js
+[2026-02-21T14:54:56.996Z] SOCIAL 2026-02-21T14:54:56.994Z [social-poster] starting
+[2026-02-21T14:54:57.006Z] SOCIAL 2026-02-21T14:54:57.006Z [social-poster] queue has 2676 posts
+[2026-02-21T14:54:57.006Z] SOCIAL 2026-02-21T14:54:57.006Z [social-poster] done — 0 attempted, 0 succeeded, 2676 remaining in queue
+[2026-02-21T14:54:57.010Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T14:59:57.018Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T14:59:57.019Z] SOCIAL running social-poster.js
+[2026-02-21T14:59:57.052Z] SOCIAL 2026-02-21T14:59:57.050Z [social-poster] starting
+[2026-02-21T14:59:57.062Z] SOCIAL 2026-02-21T14:59:57.062Z [social-poster] queue has 2676 posts
+[2026-02-21T14:59:57.419Z] SOCIAL 2026-02-21T14:59:57.419Z [social-poster] OK bluesky: posted "Grafana vs Uptime Kuma — honest comparison. We break down wh..."
+[2026-02-21T14:59:57.429Z] SOCIAL 2026-02-21T14:59:57.429Z [social-poster] removed 1 posted items from queue (2675 remaining)
+[2026-02-21T14:59:57.430Z] SOCIAL 2026-02-21T14:59:57.429Z [social-poster] done — 1 attempted, 1 succeeded, 2675 remaining in queue
+[2026-02-21T14:59:57.435Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:04:57.109Z] STATUS running=0/4 writers=0/1 freeMem=7065MB agents=[none] paused=no
+[2026-02-21T15:04:57.109Z] SOCIAL running social-poster.js
+[2026-02-21T15:04:57.141Z] SOCIAL 2026-02-21T15:04:57.140Z [social-poster] starting
+[2026-02-21T15:04:57.151Z] SOCIAL 2026-02-21T15:04:57.150Z [social-poster] queue has 2675 posts
+[2026-02-21T15:04:57.151Z] SOCIAL 2026-02-21T15:04:57.151Z [social-poster] done — 0 attempted, 0 succeeded, 2675 remaining in queue
+[2026-02-21T15:04:57.154Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:09:57.142Z] STATUS running=0/4 writers=0/1 freeMem=7040MB agents=[none] paused=no
+[2026-02-21T15:09:57.142Z] SOCIAL running social-poster.js
+[2026-02-21T15:09:57.174Z] SOCIAL 2026-02-21T15:09:57.172Z [social-poster] starting
+[2026-02-21T15:09:57.186Z] SOCIAL 2026-02-21T15:09:57.186Z [social-poster] queue has 2675 posts
+[2026-02-21T15:09:57.436Z] SOCIAL 2026-02-21T15:09:57.436Z [social-poster] OK x: posted "Self-host Headscale: Docker Compose config, setup walkthroug..."
+[2026-02-21T15:09:57.446Z] SOCIAL 2026-02-21T15:09:57.445Z [social-poster] removed 1 posted items from queue (2674 remaining)
+[2026-02-21T15:09:57.446Z] SOCIAL 2026-02-21T15:09:57.446Z [social-poster] done — 1 attempted, 1 succeeded, 2674 remaining in queue
+[2026-02-21T15:09:57.451Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:14:57.242Z] STATUS running=0/4 writers=0/1 freeMem=7058MB agents=[none] paused=no
+[2026-02-21T15:14:57.243Z] SOCIAL running social-poster.js
+[2026-02-21T15:14:57.274Z] SOCIAL 2026-02-21T15:14:57.273Z [social-poster] starting
+[2026-02-21T15:14:57.283Z] SOCIAL 2026-02-21T15:14:57.283Z [social-poster] queue has 2674 posts
+[2026-02-21T15:14:57.633Z] SOCIAL 2026-02-21T15:14:57.632Z [social-poster] OK bluesky: posted "HAProxy vs Zoraxy — honest comparison. We break down who eac..."
+[2026-02-21T15:14:57.647Z] SOCIAL 2026-02-21T15:14:57.646Z [social-poster] removed 1 posted items from queue (2673 remaining)
+[2026-02-21T15:14:57.647Z] SOCIAL 2026-02-21T15:14:57.647Z [social-poster] done — 1 attempted, 1 succeeded, 2673 remaining in queue
+[2026-02-21T15:14:57.654Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:19:57.329Z] STATUS running=0/4 writers=0/1 freeMem=7048MB agents=[none] paused=no
+[2026-02-21T15:19:57.329Z] SOCIAL running social-poster.js
+[2026-02-21T15:19:57.361Z] SOCIAL 2026-02-21T15:19:57.359Z [social-poster] starting
+[2026-02-21T15:19:57.370Z] SOCIAL 2026-02-21T15:19:57.369Z [social-poster] queue has 2673 posts
+[2026-02-21T15:19:57.370Z] SOCIAL 2026-02-21T15:19:57.370Z [social-poster] done — 0 attempted, 0 succeeded, 2673 remaining in queue
+[2026-02-21T15:19:57.373Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:24:57.429Z] STATUS running=0/4 writers=0/1 freeMem=7052MB agents=[none] paused=no
+[2026-02-21T15:24:57.429Z] RELEASES running check-releases.js
+[2026-02-21T15:24:57.431Z] SOCIAL running social-poster.js
+[2026-02-21T15:24:57.457Z] SOCIAL 2026-02-21T15:24:57.455Z [social-poster] starting
+[2026-02-21T15:24:57.460Z] RELEASES 2026-02-21T15:24:57.456Z [check-releases] starting
+2026-02-21T15:24:57.459Z [check-releases] checking 29 GitHub repos
+[2026-02-21T15:24:57.465Z] SOCIAL 2026-02-21T15:24:57.465Z [social-poster] queue has 2673 posts
+[2026-02-21T15:24:57.545Z] RELEASES 2026-02-21T15:24:57.545Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T15:24:57.696Z] SOCIAL 2026-02-21T15:24:57.696Z [social-poster] OK x: posted "Self-host Hugo: Docker Compose config, setup walkthrough, an..."
+[2026-02-21T15:24:57.704Z] SOCIAL 2026-02-21T15:24:57.704Z [social-poster] removed 1 posted items from queue (2672 remaining)
+[2026-02-21T15:24:57.705Z] SOCIAL 2026-02-21T15:24:57.705Z [social-poster] done — 1 attempted, 1 succeeded, 2672 remaining in queue
+[2026-02-21T15:24:57.710Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:24:58.105Z] RELEASES 2026-02-21T15:24:58.104Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T15:24:58.711Z] RELEASES 2026-02-21T15:24:58.710Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T15:24:59.304Z] RELEASES 2026-02-21T15:24:59.304Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T15:24:59.857Z] RELEASES 2026-02-21T15:24:59.857Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T15:25:00.407Z] RELEASES 2026-02-21T15:25:00.407Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T15:25:00.968Z] RELEASES 2026-02-21T15:25:00.968Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T15:25:01.526Z] RELEASES 2026-02-21T15:25:01.526Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T15:25:02.091Z] RELEASES 2026-02-21T15:25:02.091Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T15:25:02.645Z] RELEASES 2026-02-21T15:25:02.645Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T15:25:03.195Z] RELEASES 2026-02-21T15:25:03.195Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T15:25:03.838Z] RELEASES 2026-02-21T15:25:03.838Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T15:25:04.390Z] RELEASES 2026-02-21T15:25:04.390Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T15:25:04.977Z] RELEASES 2026-02-21T15:25:04.977Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T15:25:05.540Z] RELEASES 2026-02-21T15:25:05.540Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T15:25:06.118Z] RELEASES 2026-02-21T15:25:06.118Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T15:25:06.681Z] RELEASES 2026-02-21T15:25:06.680Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T15:25:07.248Z] RELEASES 2026-02-21T15:25:07.248Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T15:25:07.822Z] RELEASES 2026-02-21T15:25:07.822Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T15:25:08.395Z] RELEASES 2026-02-21T15:25:08.394Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T15:25:08.951Z] RELEASES 2026-02-21T15:25:08.951Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T15:25:09.502Z] RELEASES 2026-02-21T15:25:09.502Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T15:25:10.054Z] RELEASES 2026-02-21T15:25:10.054Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T15:25:10.613Z] RELEASES 2026-02-21T15:25:10.613Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T15:25:11.165Z] RELEASES 2026-02-21T15:25:11.165Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T15:25:11.719Z] RELEASES 2026-02-21T15:25:11.719Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T15:25:12.277Z] RELEASES 2026-02-21T15:25:12.277Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-21T15:25:12.829Z] RELEASES 2026-02-21T15:25:12.829Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T15:25:13.386Z] RELEASES 2026-02-21T15:25:13.386Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T15:25:13.887Z] RELEASES 2026-02-21T15:25:13.887Z [check-releases] checking 3 feeds
+[2026-02-21T15:25:13.940Z] RELEASES 2026-02-21T15:25:13.940Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T15:25:14.188Z] RELEASES 2026-02-21T15:25:14.188Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T15:25:14.528Z] RELEASES 2026-02-21T15:25:14.528Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T15:25:14.729Z] RELEASES 2026-02-21T15:25:14.729Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T15:25:14.734Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T15:29:57.529Z] STATUS running=0/4 writers=0/1 freeMem=7054MB agents=[none] paused=no
+[2026-02-21T15:29:57.529Z] SOCIAL running social-poster.js
+[2026-02-21T15:29:57.562Z] SOCIAL 2026-02-21T15:29:57.560Z [social-poster] starting
+[2026-02-21T15:29:57.572Z] SOCIAL 2026-02-21T15:29:57.572Z [social-poster] queue has 2672 posts
+[2026-02-21T15:29:57.933Z] SOCIAL 2026-02-21T15:29:57.932Z [social-poster] OK bluesky: posted "We ran both Headscale and Tailscale side by side. Here's how..."
+[2026-02-21T15:29:57.942Z] SOCIAL 2026-02-21T15:29:57.942Z [social-poster] removed 1 posted items from queue (2671 remaining)
+[2026-02-21T15:29:57.942Z] SOCIAL 2026-02-21T15:29:57.942Z [social-poster] done — 1 attempted, 1 succeeded, 2671 remaining in queue
+[2026-02-21T15:29:57.947Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:34:57.630Z] STATUS running=0/4 writers=0/1 freeMem=7054MB agents=[none] paused=no
+[2026-02-21T15:34:57.630Z] SOCIAL running social-poster.js
+[2026-02-21T15:34:57.663Z] SOCIAL 2026-02-21T15:34:57.661Z [social-poster] starting
+[2026-02-21T15:34:57.672Z] SOCIAL 2026-02-21T15:34:57.671Z [social-poster] queue has 2671 posts
+[2026-02-21T15:34:57.672Z] SOCIAL 2026-02-21T15:34:57.672Z [social-poster] done — 0 attempted, 0 succeeded, 2671 remaining in queue
+[2026-02-21T15:34:57.675Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:39:57.697Z] STATUS running=0/4 writers=0/1 freeMem=7053MB agents=[none] paused=no
+[2026-02-21T15:39:57.697Z] SOCIAL running social-poster.js
+[2026-02-21T15:39:57.730Z] SOCIAL 2026-02-21T15:39:57.728Z [social-poster] starting
+[2026-02-21T15:39:57.740Z] SOCIAL 2026-02-21T15:39:57.739Z [social-poster] queue has 2671 posts
+[2026-02-21T15:39:57.967Z] SOCIAL 2026-02-21T15:39:57.967Z [social-poster] OK x: posted "Self-host Jitsi Meet: Docker Compose config, setup walkthrou..."
+[2026-02-21T15:39:57.977Z] SOCIAL 2026-02-21T15:39:57.977Z [social-poster] removed 1 posted items from queue (2670 remaining)
+[2026-02-21T15:39:57.977Z] SOCIAL 2026-02-21T15:39:57.977Z [social-poster] done — 1 attempted, 1 succeeded, 2670 remaining in queue
+[2026-02-21T15:39:57.982Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:44:57.729Z] STATUS running=0/4 writers=0/1 freeMem=7037MB agents=[none] paused=no
+[2026-02-21T15:44:57.729Z] SOCIAL running social-poster.js
+[2026-02-21T15:44:57.757Z] SOCIAL 2026-02-21T15:44:57.755Z [social-poster] starting
+[2026-02-21T15:44:57.767Z] SOCIAL 2026-02-21T15:44:57.767Z [social-poster] queue has 2670 posts
+[2026-02-21T15:44:58.118Z] SOCIAL 2026-02-21T15:44:58.117Z [social-poster] OK bluesky: posted "Immich or Lychee? We compare features, performance, ease of ..."
+[2026-02-21T15:44:58.129Z] SOCIAL 2026-02-21T15:44:58.129Z [social-poster] removed 1 posted items from queue (2669 remaining)
+[2026-02-21T15:44:58.130Z] SOCIAL 2026-02-21T15:44:58.129Z [social-poster] done — 1 attempted, 1 succeeded, 2669 remaining in queue
+[2026-02-21T15:44:58.137Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:49:57.777Z] STATUS running=0/4 writers=0/1 freeMem=7056MB agents=[none] paused=no
+[2026-02-21T15:49:57.777Z] SOCIAL running social-poster.js
+[2026-02-21T15:49:57.813Z] SOCIAL 2026-02-21T15:49:57.811Z [social-poster] starting
+[2026-02-21T15:49:57.825Z] SOCIAL 2026-02-21T15:49:57.824Z [social-poster] queue has 2669 posts
+[2026-02-21T15:49:57.825Z] SOCIAL 2026-02-21T15:49:57.825Z [social-poster] done — 0 attempted, 0 succeeded, 2669 remaining in queue
+[2026-02-21T15:49:57.829Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:54:57.793Z] STATUS running=0/4 writers=0/1 freeMem=7048MB agents=[none] paused=no
+[2026-02-21T15:54:57.793Z] SOCIAL running social-poster.js
+[2026-02-21T15:54:57.831Z] SOCIAL 2026-02-21T15:54:57.829Z [social-poster] starting
+[2026-02-21T15:54:57.843Z] SOCIAL 2026-02-21T15:54:57.843Z [social-poster] queue has 2669 posts
+[2026-02-21T15:54:57.843Z] SOCIAL 2026-02-21T15:54:57.843Z [social-poster] done — 0 attempted, 0 succeeded, 2669 remaining in queue
+[2026-02-21T15:54:57.847Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T15:59:57.825Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T15:59:57.825Z] SOCIAL running social-poster.js
+[2026-02-21T15:59:57.858Z] SOCIAL 2026-02-21T15:59:57.856Z [social-poster] starting
+[2026-02-21T15:59:57.867Z] SOCIAL 2026-02-21T15:59:57.867Z [social-poster] queue has 2669 posts
+[2026-02-21T15:59:58.092Z] SOCIAL 2026-02-21T15:59:58.092Z [social-poster] OK x: posted "Run Lazydocker on your own hardware. Full Docker Compose set..."
+[2026-02-21T15:59:58.443Z] SOCIAL 2026-02-21T15:59:58.443Z [social-poster] OK bluesky: posted "Can't decide between Immich and PhotoPrism? We compare them ..."
+[2026-02-21T15:59:58.454Z] SOCIAL 2026-02-21T15:59:58.454Z [social-poster] removed 2 posted items from queue (2667 remaining)
+[2026-02-21T15:59:58.455Z] SOCIAL 2026-02-21T15:59:58.455Z [social-poster] done — 2 attempted, 2 succeeded, 2667 remaining in queue
+[2026-02-21T15:59:58.460Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:04:57.926Z] STATUS running=0/4 writers=0/1 freeMem=7055MB agents=[none] paused=no
+[2026-02-21T16:04:57.926Z] SOCIAL running social-poster.js
+[2026-02-21T16:04:57.959Z] SOCIAL 2026-02-21T16:04:57.957Z [social-poster] starting
+[2026-02-21T16:04:57.969Z] SOCIAL 2026-02-21T16:04:57.969Z [social-poster] queue has 2667 posts
+[2026-02-21T16:04:57.969Z] SOCIAL 2026-02-21T16:04:57.969Z [social-poster] done — 0 attempted, 0 succeeded, 2667 remaining in queue
+[2026-02-21T16:04:57.973Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:09:57.937Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T16:09:57.937Z] SOCIAL running social-poster.js
+[2026-02-21T16:09:57.970Z] SOCIAL 2026-02-21T16:09:57.968Z [social-poster] starting
+[2026-02-21T16:09:57.980Z] SOCIAL 2026-02-21T16:09:57.979Z [social-poster] queue has 2667 posts
+[2026-02-21T16:09:57.980Z] SOCIAL 2026-02-21T16:09:57.980Z [social-poster] done — 0 attempted, 0 succeeded, 2667 remaining in queue
+[2026-02-21T16:09:57.983Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:14:58.038Z] STATUS running=0/4 writers=0/1 freeMem=7042MB agents=[none] paused=no
+[2026-02-21T16:14:58.038Z] SOCIAL running social-poster.js
+[2026-02-21T16:14:58.077Z] SOCIAL 2026-02-21T16:14:58.075Z [social-poster] starting
+[2026-02-21T16:14:58.089Z] SOCIAL 2026-02-21T16:14:58.089Z [social-poster] queue has 2667 posts
+[2026-02-21T16:14:58.304Z] SOCIAL 2026-02-21T16:14:58.303Z [social-poster] OK bluesky: posted "Jackett vs Prowlarr — honest comparison. We break down who e..."
+[2026-02-21T16:14:58.312Z] SOCIAL 2026-02-21T16:14:58.312Z [social-poster] removed 1 posted items from queue (2666 remaining)
+[2026-02-21T16:14:58.312Z] SOCIAL 2026-02-21T16:14:58.312Z [social-poster] done — 1 attempted, 1 succeeded, 2666 remaining in queue
+[2026-02-21T16:14:58.317Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:19:58.139Z] STATUS running=0/4 writers=0/1 freeMem=7047MB agents=[none] paused=no
+[2026-02-21T16:19:58.139Z] SOCIAL running social-poster.js
+[2026-02-21T16:19:58.175Z] SOCIAL 2026-02-21T16:19:58.173Z [social-poster] starting
+[2026-02-21T16:19:58.185Z] SOCIAL 2026-02-21T16:19:58.185Z [social-poster] queue has 2666 posts
+[2026-02-21T16:19:58.432Z] SOCIAL 2026-02-21T16:19:58.431Z [social-poster] OK x: posted "Self-host Linkwarden: Docker Compose config, setup walkthrou..."
+[2026-02-21T16:19:58.440Z] SOCIAL 2026-02-21T16:19:58.440Z [social-poster] removed 1 posted items from queue (2665 remaining)
+[2026-02-21T16:19:58.441Z] SOCIAL 2026-02-21T16:19:58.440Z [social-poster] done — 1 attempted, 1 succeeded, 2665 remaining in queue
+[2026-02-21T16:19:58.445Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:24:58.234Z] STATUS running=0/4 writers=0/1 freeMem=7031MB agents=[none] paused=no
+[2026-02-21T16:24:58.234Z] RELEASES running check-releases.js
+[2026-02-21T16:24:58.236Z] SOCIAL running social-poster.js
+[2026-02-21T16:24:58.262Z] RELEASES 2026-02-21T16:24:58.260Z [check-releases] starting
+[2026-02-21T16:24:58.262Z] RELEASES 2026-02-21T16:24:58.262Z [check-releases] checking 29 GitHub repos
+[2026-02-21T16:24:58.266Z] SOCIAL 2026-02-21T16:24:58.264Z [social-poster] starting
+[2026-02-21T16:24:58.277Z] SOCIAL 2026-02-21T16:24:58.277Z [social-poster] queue has 2665 posts
+[2026-02-21T16:24:58.278Z] SOCIAL 2026-02-21T16:24:58.277Z [social-poster] done — 0 attempted, 0 succeeded, 2665 remaining in queue
+[2026-02-21T16:24:58.281Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:24:58.338Z] RELEASES 2026-02-21T16:24:58.337Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T16:24:58.889Z] RELEASES 2026-02-21T16:24:58.889Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T16:24:59.473Z] RELEASES 2026-02-21T16:24:59.473Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T16:25:00.052Z] RELEASES 2026-02-21T16:25:00.051Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T16:25:00.597Z] RELEASES 2026-02-21T16:25:00.597Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T16:25:01.140Z] RELEASES 2026-02-21T16:25:01.140Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T16:25:01.704Z] RELEASES 2026-02-21T16:25:01.704Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T16:25:02.261Z] RELEASES 2026-02-21T16:25:02.261Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T16:25:02.823Z] RELEASES 2026-02-21T16:25:02.822Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T16:25:03.382Z] RELEASES 2026-02-21T16:25:03.382Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T16:25:03.933Z] RELEASES 2026-02-21T16:25:03.933Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T16:25:04.527Z] RELEASES 2026-02-21T16:25:04.527Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T16:25:05.071Z] RELEASES 2026-02-21T16:25:05.071Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T16:25:05.654Z] RELEASES 2026-02-21T16:25:05.654Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T16:25:06.205Z] RELEASES 2026-02-21T16:25:06.204Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T16:25:06.761Z] RELEASES 2026-02-21T16:25:06.760Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T16:25:07.373Z] RELEASES 2026-02-21T16:25:07.372Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T16:25:07.927Z] RELEASES 2026-02-21T16:25:07.926Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T16:25:08.510Z] RELEASES 2026-02-21T16:25:08.510Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T16:25:09.080Z] RELEASES 2026-02-21T16:25:09.079Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T16:25:09.633Z] RELEASES 2026-02-21T16:25:09.633Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T16:25:10.195Z] RELEASES 2026-02-21T16:25:10.195Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T16:25:10.748Z] RELEASES 2026-02-21T16:25:10.748Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T16:25:11.303Z] RELEASES 2026-02-21T16:25:11.303Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T16:25:11.853Z] RELEASES 2026-02-21T16:25:11.853Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T16:25:12.406Z] RELEASES 2026-02-21T16:25:12.406Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T16:25:12.962Z] RELEASES 2026-02-21T16:25:12.962Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-21T16:25:13.512Z] RELEASES 2026-02-21T16:25:13.512Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T16:25:14.065Z] RELEASES 2026-02-21T16:25:14.065Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T16:25:14.566Z] RELEASES 2026-02-21T16:25:14.566Z [check-releases] checking 3 feeds
+[2026-02-21T16:25:14.622Z] RELEASES 2026-02-21T16:25:14.622Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T16:25:14.887Z] RELEASES 2026-02-21T16:25:14.887Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T16:25:15.238Z] RELEASES 2026-02-21T16:25:15.238Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T16:25:15.438Z] RELEASES 2026-02-21T16:25:15.438Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T16:25:15.443Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T16:29:58.268Z] STATUS running=0/4 writers=0/1 freeMem=7041MB agents=[none] paused=no
+[2026-02-21T16:29:58.269Z] SOCIAL running social-poster.js
+[2026-02-21T16:29:58.304Z] SOCIAL 2026-02-21T16:29:58.302Z [social-poster] starting
+[2026-02-21T16:29:58.316Z] SOCIAL 2026-02-21T16:29:58.315Z [social-poster] queue has 2665 posts
+[2026-02-21T16:29:58.675Z] SOCIAL 2026-02-21T16:29:58.675Z [social-poster] OK bluesky: posted "Jellyfin vs Plex Music — honest comparison. We break down wh..."
+[2026-02-21T16:29:58.685Z] SOCIAL 2026-02-21T16:29:58.684Z [social-poster] removed 1 posted items from queue (2664 remaining)
+[2026-02-21T16:29:58.685Z] SOCIAL 2026-02-21T16:29:58.685Z [social-poster] done — 1 attempted, 1 succeeded, 2664 remaining in queue
+[2026-02-21T16:29:58.690Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:34:58.370Z] STATUS running=0/4 writers=0/1 freeMem=7042MB agents=[none] paused=no
+[2026-02-21T16:34:58.370Z] SOCIAL running social-poster.js
+[2026-02-21T16:34:58.403Z] SOCIAL 2026-02-21T16:34:58.401Z [social-poster] starting
+[2026-02-21T16:34:58.413Z] SOCIAL 2026-02-21T16:34:58.412Z [social-poster] queue has 2664 posts
+[2026-02-21T16:34:58.413Z] SOCIAL 2026-02-21T16:34:58.413Z [social-poster] done — 0 attempted, 0 succeeded, 2664 remaining in queue
+[2026-02-21T16:34:58.416Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:39:58.407Z] STATUS running=0/4 writers=0/1 freeMem=7044MB agents=[none] paused=no
+[2026-02-21T16:39:58.407Z] SOCIAL running social-poster.js
+[2026-02-21T16:39:58.438Z] SOCIAL 2026-02-21T16:39:58.437Z [social-poster] starting
+[2026-02-21T16:39:58.447Z] SOCIAL 2026-02-21T16:39:58.447Z [social-poster] queue has 2664 posts
+[2026-02-21T16:39:58.679Z] SOCIAL 2026-02-21T16:39:58.678Z [social-poster] OK x: posted "Self-hosting Lychee? Our guide covers the Docker setup, conf..."
+[2026-02-21T16:39:58.687Z] SOCIAL 2026-02-21T16:39:58.687Z [social-poster] removed 1 posted items from queue (2663 remaining)
+[2026-02-21T16:39:58.687Z] SOCIAL 2026-02-21T16:39:58.687Z [social-poster] done — 1 attempted, 1 succeeded, 2663 remaining in queue
+[2026-02-21T16:39:58.692Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:44:58.492Z] STATUS running=0/4 writers=0/1 freeMem=7050MB agents=[none] paused=no
+[2026-02-21T16:44:58.492Z] SOCIAL running social-poster.js
+[2026-02-21T16:44:58.533Z] SOCIAL 2026-02-21T16:44:58.531Z [social-poster] starting
+[2026-02-21T16:44:58.544Z] SOCIAL 2026-02-21T16:44:58.544Z [social-poster] queue has 2663 posts
+[2026-02-21T16:44:58.885Z] SOCIAL 2026-02-21T16:44:58.885Z [social-poster] OK bluesky: posted "Foundation guide: Jellyfin vs Plex vs Emby: Complete Media S..."
+[2026-02-21T16:44:58.894Z] SOCIAL 2026-02-21T16:44:58.894Z [social-poster] removed 1 posted items from queue (2662 remaining)
+[2026-02-21T16:44:58.895Z] SOCIAL 2026-02-21T16:44:58.894Z [social-poster] done — 1 attempted, 1 succeeded, 2662 remaining in queue
+[2026-02-21T16:44:58.900Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:49:58.531Z] STATUS running=0/4 writers=0/1 freeMem=7046MB agents=[none] paused=no
+[2026-02-21T16:49:58.532Z] SOCIAL running social-poster.js
+[2026-02-21T16:49:58.564Z] SOCIAL 2026-02-21T16:49:58.562Z [social-poster] starting
+[2026-02-21T16:49:58.573Z] SOCIAL 2026-02-21T16:49:58.573Z [social-poster] queue has 2662 posts
+[2026-02-21T16:49:58.574Z] SOCIAL 2026-02-21T16:49:58.574Z [social-poster] done — 0 attempted, 0 succeeded, 2662 remaining in queue
+[2026-02-21T16:49:58.577Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:54:58.577Z] STATUS running=0/4 writers=0/1 freeMem=7038MB agents=[none] paused=no
+[2026-02-21T16:54:58.577Z] SOCIAL running social-poster.js
+[2026-02-21T16:54:58.608Z] SOCIAL 2026-02-21T16:54:58.606Z [social-poster] starting
+[2026-02-21T16:54:58.618Z] SOCIAL 2026-02-21T16:54:58.618Z [social-poster] queue has 2662 posts
+[2026-02-21T16:54:58.618Z] SOCIAL 2026-02-21T16:54:58.618Z [social-poster] done — 0 attempted, 0 succeeded, 2662 remaining in queue
+[2026-02-21T16:54:58.622Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T16:59:58.611Z] STATUS running=0/4 writers=0/1 freeMem=7061MB agents=[none] paused=no
+[2026-02-21T16:59:58.611Z] SOCIAL running social-poster.js
+[2026-02-21T16:59:58.648Z] SOCIAL 2026-02-21T16:59:58.646Z [social-poster] starting
+[2026-02-21T16:59:58.658Z] SOCIAL 2026-02-21T16:59:58.658Z [social-poster] queue has 2662 posts
+[2026-02-21T16:59:58.893Z] SOCIAL 2026-02-21T16:59:58.893Z [social-poster] OK x: posted "Mailcow Docker setup guide — everything you need from image ..."
+[2026-02-21T16:59:59.224Z] SOCIAL 2026-02-21T16:59:59.224Z [social-poster] OK bluesky: posted "Can't decide between LibrePhotos and Piwigo? We compare them..."
+[2026-02-21T16:59:59.233Z] SOCIAL 2026-02-21T16:59:59.233Z [social-poster] removed 2 posted items from queue (2660 remaining)
+[2026-02-21T16:59:59.233Z] SOCIAL 2026-02-21T16:59:59.233Z [social-poster] done — 2 attempted, 2 succeeded, 2660 remaining in queue
+[2026-02-21T16:59:59.239Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:04:58.711Z] STATUS running=0/4 writers=0/1 freeMem=7047MB agents=[none] paused=no
+[2026-02-21T17:04:58.712Z] SOCIAL running social-poster.js
+[2026-02-21T17:04:58.750Z] SOCIAL 2026-02-21T17:04:58.748Z [social-poster] starting
+[2026-02-21T17:04:58.761Z] SOCIAL 2026-02-21T17:04:58.761Z [social-poster] queue has 2660 posts
+[2026-02-21T17:04:58.762Z] SOCIAL 2026-02-21T17:04:58.762Z [social-poster] done — 0 attempted, 0 succeeded, 2660 remaining in queue
+[2026-02-21T17:04:58.766Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:09:58.768Z] STATUS running=0/4 writers=0/1 freeMem=7066MB agents=[none] paused=no
+[2026-02-21T17:09:58.769Z] SOCIAL running social-poster.js
+[2026-02-21T17:09:58.804Z] SOCIAL 2026-02-21T17:09:58.802Z [social-poster] starting
+[2026-02-21T17:09:58.815Z] SOCIAL 2026-02-21T17:09:58.815Z [social-poster] queue has 2660 posts
+[2026-02-21T17:09:58.816Z] SOCIAL 2026-02-21T17:09:58.816Z [social-poster] done — 0 attempted, 0 succeeded, 2660 remaining in queue
+[2026-02-21T17:09:58.819Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:14:58.869Z] STATUS running=0/4 writers=0/1 freeMem=7050MB agents=[none] paused=no
+[2026-02-21T17:14:58.869Z] SOCIAL running social-poster.js
+[2026-02-21T17:14:58.901Z] SOCIAL 2026-02-21T17:14:58.899Z [social-poster] starting
+[2026-02-21T17:14:58.912Z] SOCIAL 2026-02-21T17:14:58.911Z [social-poster] queue has 2660 posts
+[2026-02-21T17:14:59.135Z] SOCIAL 2026-02-21T17:14:59.135Z [social-poster] OK x: posted "Run Matomo on your own hardware. Full Docker Compose setup g..."
+[2026-02-21T17:14:59.331Z] SOCIAL 2026-02-21T17:14:59.331Z [social-poster] OK bluesky: posted "Can't decide between linkding and Wallabag? We compare them ..."
+[2026-02-21T17:14:59.340Z] SOCIAL 2026-02-21T17:14:59.339Z [social-poster] removed 2 posted items from queue (2658 remaining)
+[2026-02-21T17:14:59.340Z] SOCIAL 2026-02-21T17:14:59.340Z [social-poster] done — 2 attempted, 2 succeeded, 2658 remaining in queue
+[2026-02-21T17:14:59.344Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:19:58.970Z] STATUS running=0/4 writers=0/1 freeMem=7042MB agents=[none] paused=no
+[2026-02-21T17:19:58.970Z] SOCIAL running social-poster.js
+[2026-02-21T17:19:58.998Z] SOCIAL 2026-02-21T17:19:58.995Z [social-poster] starting
+[2026-02-21T17:19:59.006Z] SOCIAL 2026-02-21T17:19:59.006Z [social-poster] queue has 2658 posts
+[2026-02-21T17:19:59.006Z] SOCIAL 2026-02-21T17:19:59.006Z [social-poster] done — 0 attempted, 0 succeeded, 2658 remaining in queue
+[2026-02-21T17:19:59.009Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:24:59.027Z] STATUS running=0/4 writers=0/1 freeMem=7042MB agents=[none] paused=no
+[2026-02-21T17:24:59.027Z] RELEASES running check-releases.js
+[2026-02-21T17:24:59.029Z] SOCIAL running social-poster.js
+[2026-02-21T17:24:59.064Z] RELEASES 2026-02-21T17:24:59.060Z [check-releases] starting
+2026-02-21T17:24:59.063Z [check-releases] checking 29 GitHub repos
+[2026-02-21T17:24:59.070Z] SOCIAL 2026-02-21T17:24:59.068Z [social-poster] starting
+[2026-02-21T17:24:59.082Z] SOCIAL 2026-02-21T17:24:59.081Z [social-poster] queue has 2658 posts
+[2026-02-21T17:24:59.082Z] SOCIAL 2026-02-21T17:24:59.082Z [social-poster] done — 0 attempted, 0 succeeded, 2658 remaining in queue
+[2026-02-21T17:24:59.086Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:24:59.194Z] RELEASES 2026-02-21T17:24:59.194Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T17:24:59.743Z] RELEASES 2026-02-21T17:24:59.743Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T17:25:00.328Z] RELEASES 2026-02-21T17:25:00.328Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T17:25:00.912Z] RELEASES 2026-02-21T17:25:00.911Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T17:25:01.452Z] RELEASES 2026-02-21T17:25:01.452Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T17:25:01.998Z] RELEASES 2026-02-21T17:25:01.998Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T17:25:02.567Z] RELEASES 2026-02-21T17:25:02.567Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T17:25:03.123Z] RELEASES 2026-02-21T17:25:03.123Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T17:25:03.683Z] RELEASES 2026-02-21T17:25:03.683Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T17:25:04.236Z] RELEASES 2026-02-21T17:25:04.236Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T17:25:04.818Z] RELEASES 2026-02-21T17:25:04.818Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T17:25:05.438Z] RELEASES 2026-02-21T17:25:05.438Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T17:25:05.983Z] RELEASES 2026-02-21T17:25:05.983Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T17:25:06.568Z] RELEASES 2026-02-21T17:25:06.568Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T17:25:07.127Z] RELEASES 2026-02-21T17:25:07.127Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T17:25:07.681Z] RELEASES 2026-02-21T17:25:07.681Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T17:25:08.234Z] RELEASES 2026-02-21T17:25:08.234Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T17:25:08.795Z] RELEASES 2026-02-21T17:25:08.795Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T17:25:09.366Z] RELEASES 2026-02-21T17:25:09.366Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T17:25:09.924Z] RELEASES 2026-02-21T17:25:09.924Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T17:25:10.496Z] RELEASES 2026-02-21T17:25:10.496Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T17:25:11.049Z] RELEASES 2026-02-21T17:25:11.049Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T17:25:11.605Z] RELEASES 2026-02-21T17:25:11.604Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T17:25:12.167Z] RELEASES 2026-02-21T17:25:12.167Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T17:25:12.717Z] RELEASES 2026-02-21T17:25:12.717Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T17:25:13.268Z] RELEASES 2026-02-21T17:25:13.268Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T17:25:13.827Z] RELEASES 2026-02-21T17:25:13.827Z [check-releases]   gurucomputing/headscale-ui → 200 but same version (2025.08.23)
+[2026-02-21T17:25:14.387Z] RELEASES 2026-02-21T17:25:14.387Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T17:25:14.946Z] RELEASES 2026-02-21T17:25:14.946Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T17:25:15.447Z] RELEASES 2026-02-21T17:25:15.447Z [check-releases] checking 3 feeds
+[2026-02-21T17:25:15.493Z] RELEASES 2026-02-21T17:25:15.493Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T17:25:15.761Z] RELEASES 2026-02-21T17:25:15.761Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T17:25:16.110Z] RELEASES 2026-02-21T17:25:16.109Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T17:25:16.310Z] RELEASES 2026-02-21T17:25:16.310Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T17:25:16.315Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T17:26:33.537Z] INBOX ceo.md modified → ceo
+[2026-02-21T17:26:33.537Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-21T17:26:33.539Z] AGENT ceo started (pid: 327026)
+[2026-02-21T17:29:59.119Z] STATUS running=1/4 writers=0/1 freeMem=6856MB agents=[ceo(206s)] paused=no
+[2026-02-21T17:29:59.119Z] SOCIAL running social-poster.js
+[2026-02-21T17:29:59.151Z] SOCIAL 2026-02-21T17:29:59.149Z [social-poster] starting
+[2026-02-21T17:29:59.160Z] SOCIAL 2026-02-21T17:29:59.160Z [social-poster] queue has 2658 posts
+[2026-02-21T17:29:59.455Z] SOCIAL 2026-02-21T17:29:59.454Z [social-poster] OK x: posted "Take control of your data — self-host Memos. Docker guide wa..."
+[2026-02-21T17:29:59.647Z] SOCIAL 2026-02-21T17:29:59.647Z [social-poster] OK bluesky: posted "Linkwarden vs Wallabag — honest comparison. We break down wh..."
+[2026-02-21T17:29:59.661Z] SOCIAL 2026-02-21T17:29:59.661Z [social-poster] removed 2 posted items from queue (2656 remaining)
+[2026-02-21T17:29:59.661Z] SOCIAL 2026-02-21T17:29:59.661Z [social-poster] done — 2 attempted, 2 succeeded, 2656 remaining in queue
+[2026-02-21T17:29:59.669Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:33:11.902Z] INBOX ceo.md modified → ceo
+[2026-02-21T17:33:11.902Z] QUEUED ceo already running — trigger queued: inbox-message
