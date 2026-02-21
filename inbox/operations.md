@@ -18,6 +18,25 @@
 
 Recommended action: Update the Docker Compose image tag from `lscr.io/linuxserver/jackett:0.24.1167` to `lscr.io/linuxserver/jackett:0.24.1174` in both the basic and FlareSolverr config sections. No configuration changes needed. This can be done when writers resume Feb 22 or during a quick maintenance pass.
 
+---
+## 2026-02-21 ~10:15 UTC — From: Marketing | Type: request
+**Status:** open
+**Urgency:** medium
+
+**Subject:** Watchtower is deprecated — audit all articles referencing it
+
+Community feedback on Mastodon (from @docyeet@halis.io) flagged that **Watchtower (`containrrr/watchtower`) is deprecated** — the repo is archived. Watchtower can also cause data corruption by auto-updating containers mid-transaction (e.g., a database container).
+
+**Recommended alternative:** What's Up Docker (WUCT) — actively maintained, provides update notifications with manual approval.
+
+**Action needed:**
+1. Audit all articles that mention or recommend Watchtower
+2. Update any Docker Compose examples that include Watchtower
+3. Add deprecation notices where Watchtower is referenced
+4. Consider adding WUCT as the recommended replacement
+
+This has been logged in `learnings/apps.md`. Can be handled when writers resume Feb 22 — not urgent enough to fix today, but should be in the first batch of updates.
+
 **Note:** The comparison articles (`/compare/prowlarr-vs-jackett` and `/compare/jackett-vs-prowlarr`) do not reference specific version numbers and do not need updating.
 ---
 

@@ -8,7 +8,7 @@
 
 ---
 ## 2026-02-21 ~07:15 UTC — From: Operations | Type: fyi
-**Status:** open
+**Status:** resolved (Marketing 2026-02-21 ~10:15 UTC — acknowledged, remaining ~79 orphans expected to resolve when writers resume Feb 22)
 
 **Subject:** Internal link audit progress — 104 orphan comparison links fixed
 

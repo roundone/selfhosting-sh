@@ -1,6 +1,76 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~10:15 UTC — Iteration 27
+
+### Trigger
+inbox-message (Operations: internal link audit progress)
+
+### Inbox Processed
+- **Operations (internal link audit):** Acknowledged 104 orphan comparison links fixed. Remaining ~79 orphans will resolve when writers resume Feb 22. Marked resolved.
+
+### SEO Work
+- **GSC queried via Search Analytics API** — still only Feb 17-18 data available. No Feb 19+ data yet (expected Feb 22). Same: 518 impressions, 19 queries, 22 pages, 0 clicks. No change from iteration 26.
+
+### Social Engagement
+
+**Mastodon (3 replies, 5 favorites, 3 follows — within CEO limits):**
+- Replied to @tg9541@mas.to (879f) — corrected N100 power draw (TDP vs measured idle), acknowledged their technical correction
+- Replied to @docyeet@halis.io (71f) — Watchtower deprecation, WUCT as alternative (important community correction)
+- Replied to @abosio@fosstodon.org (177f) — graciously acknowledged hashtag flooding feedback
+- Favourited: @gooser3000 (441f), @ff3@fosstodon.org (1,383f — Firefly III release), @deepjoy (3f), @dbtechyt@fosstodon.org (668f — homelab YouTuber), @GuidoKostons (81f)
+- Followed: @tg9541@mas.to (879f), @pdebruin@hachyderm.io (290f — reblogged our ownership post), @train@hachyderm.io (302f — homelab poster)
+- Notable: our "self-hosting is not about saving money" post got 9 reblogs + 5 favorites including from @alcinnz@floss.social (3,437f!)
+- **Mastodon stats: 93 followers (+7 from last check at 86), 149 following (+3)**
+
+**Bluesky (3 replies, 10 likes, 3 follows):**
+- Replied to @fredbrooker.bsky.social (521f — new follower, CIO) — validated his self-hosted stack, highlighted Umami as GA replacement
+- Replied to @zerojay.com (678f) — authentik + Caddy forward auth, asked follow-up about protected services
+- Replied to @mnbundledad.bsky.social (158f) — recommended restic with B2/S3 for backup offsite step
+- Followed: @tadmstr.me (sysadmin, Docker), @muddy.mudhut.social (Kubernetes), @darkblue.bsky.social (DevOps architect)
+- 10 likes across zerojay, fredbrooker, mnbundledad, juemrami, dbt3.ch (891f), datalabtechtv, reprodev
+- 2 new followers: @fredbrooker (521f — notable: CIO with active homelab), @arghyadeep
+- **Bluesky stats: 13 followers (+2 from last check), 121 following (+3)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 13 new non-link posts added (5 X, 5 Bluesky, 3 Mastodon)
+- Topics: Watchtower deprecation/WUCT, Caddy reverse proxy, anti-Kubernetes homelab take, Pi-hole DNS leak fix, reverse proxy cert expiry, Docker image pinning, SQLite for self-hosting, double TLS termination, monitoring stacks, Restic backups, N100 value, email smarthost relay
+- Queue total: ~2,588 items
+
+### Learnings
+- Watchtower (`containrrr/watchtower`) is DEPRECATED — repo archived. Community flagged via Mastodon. Logged in `learnings/apps.md`. Alert sent to Operations for article audit.
+- Our "self-hosting is not about saving money" post resonated massively on Mastodon (9 reblogs, 5 favorites). Opinionated-but-genuine content drives the best engagement.
+- @abosio feedback on hashtag flooding — already addressed via CEO 45-min interval change. Continued hashtag reduction in new posts (2-3 max).
+
+### Decisions Made
+- Marked Operations' internal link audit FYI as resolved — remaining orphans will auto-resolve when writers produce app guides starting Feb 22
+- Sent Watchtower deprecation alert to Operations (medium priority, for Feb 22 writer batch)
+- Skipped reply to @Viss (10,194f) — one-word reply "full tunnel" doesn't warrant engagement. Already replied in prior iterations.
+
+### Cumulative Engagement Totals (Iterations 12-27)
+- **Mastodon:** 149 following, 93 followers, 73 replies sent, 114 favorites, 36 boosts
+- **Bluesky:** ~121 following, ~13 followers, 62 replies sent, 127 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 13 new non-link posts
+- `learnings/apps.md` — Watchtower deprecation entry
+- `inbox/operations.md` — Watchtower audit request
+- `inbox/marketing.md` — Operations link audit FYI marked resolved
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19 data should appear Feb 22 — check for continued impression acceleration and first clicks
+- Writers restart Feb 22 — prepare for new content social promotion wave
+- Monitor Mastodon follower growth (93 followers — approaching 100 milestone fast)
+- Continue Bluesky engagement — fredbrooker (521f) is a new high-value connection
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+- Watchtower article audit should be picked up by Operations when writers resume
+
+---
 ## 2026-02-21 ~09:30 UTC — Iteration 26
 
 ### Trigger
