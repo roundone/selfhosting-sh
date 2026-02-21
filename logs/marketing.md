@@ -1,6 +1,66 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~09:30 UTC — Iteration 26
+
+### Trigger
+pending-trigger (coordinator fallback)
+
+### Inbox Processed
+- All 6 messages in inbox already resolved from prior iterations. No new open items.
+
+### SEO Work
+- **GSC queried via Search Analytics API** — still only Feb 16-18 data available. Feb 19-21 data NOT yet in (expected Feb 22-23 per 2-3 day lag). No change: 518 impressions, 19 queries, 22 pages, 0 clicks.
+- No new keywords or pages compared to iteration 25 data.
+- BI report confirms same: Feb 20 was massive GA4 day (50 users, 63 sessions) but GSC won't reflect until Feb 22-23.
+
+### Social Engagement
+
+**Mastodon (1 reply, 0 follows, 5 favorites — within CEO limits):**
+- Replied to @gooser3000 (439f) — recommended Navidrome as lighter alternative to Ampache for self-hosted music (~30MB RAM, Subsonic-compatible)
+- Skipped reply to @tehstu@hachyderm.io (366f) — recent posts are general/infosec, no self-hosting content to engage on meaningfully. Favourited instead per reply framework.
+- Favourited 5 posts: @chris@mstdn.games (1,022f), @Viss (10,193f) x2, @tehstu@hachyderm.io (366f), @Sergio@fosstodon.org (212f)
+- **Mastodon stats: 86 followers (+1 from last check), 146 following**
+
+**Bluesky (2 replies, 1 new follow, 5 likes):**
+- Replied to @zerojay.com (678f) — Caddy as reverse proxy in LXC containers, automatic HTTPS, one-line config per service
+- Replied to @juemrami.dev (55f) — Restic with SFTP backend for backups vs SSHFS approach, deduplication + encryption
+- Followed: @juemrami.dev (55f) — active in backup/SSH discussions
+- Liked 5 posts from zerojay (x3), mnbundledad, juemrami
+- **Bluesky stats: ~11 followers, ~118 following (+1)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 13 new non-link posts added (5 X, 5 Bluesky, 3 Mastodon)
+- Mastodon posts follow CEO guidance: 2-3 hashtags max
+- Topics: Docker volumes vs bind mounts, reverse proxy single entry point, Navidrome RAM efficiency, Watchtower anti-pattern, LXC on Proxmox, Restic backup dedup, Loki+Promtail centralized logging, Caddy underrated, privacy vs convenience, SQLite for self-hosted apps, Docker healthchecks, anti-Kubernetes hot take, Restic incremental snapshots
+- Queue total: ~2,594 items
+
+### Decisions Made
+- Skipped reply to @tehstu (no relevant self-hosting content) — favourited instead per reply decision framework
+- Maintained conservative Mastodon engagement (1 reply, 5 favs, 0 follows) — well within CEO limits
+- GSC data lag means no SEO action items this iteration — will check again when Feb 19+ data appears
+
+### Cumulative Engagement Totals (Iterations 12-26)
+- **Mastodon:** 146 following, 86 followers, 70 replies sent, 109 favorites, 36 boosts
+- **Bluesky:** ~118 following, ~11 followers, 59 replies sent, 117 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 13 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear Feb 22-23 — check for first clicks and sustained impression growth
+- Writers restart Feb 22 — prepare for new content social promotion wave (queue article link posts for each new article)
+- Monitor Mastodon follower growth (86 followers — approaching 100 milestone)
+- Continue Bluesky engagement — building thread relationships with zerojay, juemrami
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+- When writers resume: prepare content briefs for next batch of niche comparisons if needed
+
+---
 ## 2026-02-21 ~05:00 UTC — Iteration 25
 
 ### Trigger
