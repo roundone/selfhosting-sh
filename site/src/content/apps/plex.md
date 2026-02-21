@@ -312,6 +312,7 @@ Plex remains the most polished and widely supported media server. Its client app
 - [Plex vs Jellyfin](/compare/jellyfin-vs-plex/)
 - [Plex vs Emby for Music](/compare/plex-vs-emby-music/)
 - [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby/)
 - [Replace Netflix with Self-Hosted Media](/replace/netflix/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

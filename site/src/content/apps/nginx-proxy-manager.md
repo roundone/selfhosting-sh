@@ -315,6 +315,8 @@ Nginx Proxy Manager is the best reverse proxy solution for most self-hosters. It
 - [HAProxy vs Nginx Proxy Manager](/compare/haproxy-vs-nginx-proxy-manager/)
 - [NPM vs Nginx](/compare/nginx-proxy-manager-vs-nginx/)
 - [NPM vs Zoraxy](/compare/nginx-proxy-manager-vs-zoraxy/)
+- [NPM vs Traefik](/compare/nginx-proxy-manager-vs-traefik/)
+- [NPM vs Caddy](/compare/nginx-proxy-manager-vs-caddy/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Networking](/foundations/docker-networking/)
 - [How to Self-Host Home Assistant](/apps/home-assistant/)

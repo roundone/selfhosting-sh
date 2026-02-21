@@ -1,5 +1,72 @@
 # Operations Activity Log
 
+## 2026-02-21 ~12:00 UTC — Operations Head: Quality audit + orphan comparison link batch fix (wave 2)
+
+### Trigger
+- pending-trigger (routine iteration during writer pause)
+
+### Inbox Processed
+- No new unprocessed messages. All prior messages remain at their resolved/in-progress status.
+
+### Articles Written
+- None (writers paused per founder directive until Feb 26 6PM UTC)
+
+### Quality Audit Results
+- **Watchtower deprecation:** Verified THOROUGH — all 19 files with Watchtower references have clear deprecation warnings pointing to DIUN/WUCT. No action needed.
+- **`:latest` Docker tags:** Only 3 justified exceptions (Librum, Huginn, Stable Diffusion WebUI — all have no versioned tags). All 3 have explanatory comments. No action needed.
+- **Troubleshooting sections:** All 208 app guides have `## Troubleshooting` sections. 100% coverage.
+- **Draft articles:** Zero articles with `draft: true`. All 780 are `draft: false`.
+
+### Orphan Comparison Link Fixes — BATCH 2 (~30 new links across 19 app guides)
+
+**Critical orphans fixed (8 comparisons, 15 app guide edits):**
+- adguard-home.md, technitium.md: +adguard-home-vs-technitium
+- grafana.md: +grafana-vs-prometheus, +grafana-vs-uptime-kuma
+- prometheus.md: +grafana-vs-prometheus
+- uptime-kuma.md: +grafana-vs-uptime-kuma
+- kopia.md, restic.md: +kopia-vs-restic
+- memos.md, trilium.md: +memos-vs-trilium
+- navidrome.md: +navidrome-vs-funkwhale, +navidrome-vs-jellyfin
+- jellyfin.md: +jellyfin-vs-plex-vs-emby, +navidrome-vs-jellyfin
+- emby.md, plex.md: +jellyfin-vs-plex-vs-emby
+- prowlarr.md, jackett.md: +prowlarr-vs-jackett
+
+**Broken link fixes (2 files):**
+- nextcloud.md: syncthing-vs-nextcloud → nextcloud-vs-syncthing (file didn't exist at old URL)
+- syncthing.md: syncthing-vs-nextcloud → nextcloud-vs-syncthing
+
+**Additional orphan fixes (4 app guides):**
+- n8n.md: +4 links (activepieces, huginn, automatisch, windmill)
+- photoview.md: +4 links (photoprism, lychee, immich, librephotos)
+- caddy.md: +3 links (zoraxy, nginx, haproxy)
+- nginx-proxy-manager.md: +2 links (traefik, caddy)
+
+**Running totals (Batch 1 + Batch 2):**
+- ~85 new inbound links added across ~49 app guides over 2 iterations
+- Orphan comparisons reduced from ~79 (original) to estimated ~20-30
+
+### Freshness Updates
+- None needed (all stale alerts resolved in prior iterations)
+
+### Learnings Recorded
+- None
+
+### Issues
+- None. All systems healthy. Writers paused per directive.
+
+### Topic Map Progress
+- No new articles (writers paused)
+- Total articles on disk: 780
+- Target: 850+ by end of Month 1 (~70 remaining, writers resume Feb 26)
+
+### Next Iteration
+- Continue quality review during extended pause if triggered
+- Look for remaining orphan comparisons and cross-link opportunities
+- Monitor for new BI stale content alerts
+- Feb 26: verify coordinator restart, monitor first writer output
+
+---
+
 ## 2026-02-21 ~11:00 UTC — Operations Head: CEO directive acknowledged, orphan comparison links fixed
 
 ### Trigger
