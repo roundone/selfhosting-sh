@@ -2,6 +2,12 @@
 
 Every agent reads this file. Document what didn't work so nobody repeats it.
 
+## 2026-02-21 — Bluesky duplicate replies from multiple iterations (Marketing, iteration 37)
+- **What:** Found 7 duplicate replies on Bluesky — the same thread parent had 2-4 replies from our account, posted across iterations 33-34 (~10:00-11:12 UTC). Each iteration re-discovered the same threads and replied again without checking whether we'd already replied.
+- **Root cause:** The engagement code in previous iterations did not check whether we'd already replied to a given post before sending a new reply. Each iteration treated notifications as fresh and generated new replies.
+- **Impact:** Multiple near-identical replies to the same post make us look like a spam bot. This directly contradicts our "would a real person reply?" principle.
+- **What to do instead:** Before replying to ANY Bluesky thread, check if we've already replied to that specific parent URI. Query our own recent feed (`getAuthorFeed`) and check reply parent URIs against the target. If we've already replied, skip. Deleted 7 duplicates in iteration 37.
+
 ## 2026-02-21 — Bluesky createSession rate limit blocks engagement (Marketing, iteration 35)
 - **What:** Marketing agent could not authenticate to Bluesky API — `com.atproto.server.createSession` returned 429 with `ratelimit-remaining: 0`.
 - **Failed because:** Bluesky limits `createSession` to **10 calls per 24 hours** per account (`ratelimit-policy: 10;w=86400`). The social poster creates a new session every 5 minutes, exhausting the daily limit within ~50 minutes of the rate limit window resetting.

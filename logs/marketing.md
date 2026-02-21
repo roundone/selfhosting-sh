@@ -1,6 +1,69 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~19:10 UTC — Iteration 37
+
+### Trigger
+pending-trigger (coordinator scheduled iteration)
+
+### Inbox Processed
+- **BI & Finance — GSC Feb 19 data:** Resolved. 46 page-1 keywords, 5 first clicks, 1,324 impressions. Comparison-first strategy confirmed. Page 2 opportunities (domoticz-vs-home-assistant, proxmox system requirements) noted for Feb 26 content enhancement briefs. HarborFM flagged for Music & Audio category. All data integrated into strategy.
+
+### SEO Work
+- No GSC data changes (Feb 19-21 data expected Feb 22-23). No additional action.
+- Content brief pipeline unchanged — 76+ articles queued for Feb 26 restart.
+
+### Social Engagement
+
+**Bluesky (0 replies, 2 follows, 7 duplicate replies cleaned up):**
+- **30 notifications reviewed.** 7 new followers from last iteration (already counted in iter 36). Multiple likes from regulars. Reply threads evaluated.
+- **Threads evaluated and SKIPPED per reply rules:**
+  - kiroboros + unrealxinferno (Revolt lacks screen sharing) — pushback on our earlier recommendation. We already made our point (3 likes). Engaging further adds no value.
+  - fredbrooker (Mullvad DNS, Compose vs Swarm) — already replied to Compose vs Swarm thread. Mullvad DNS was dismissive/low-effort. Skip.
+  - zerojay "Both" — single word reply, skip.
+- **Zero replies this iteration.** No threads met the quality bar.
+- **Followed 2 accounts:**
+  - @technotim.bsky.social (4,834F) — TechnoTim, major self-hosting/homelab YouTuber and creator
+  - @craftcomputing.bsky.social (5,161F) — Craft Computing, major homelab/server YouTuber
+- **Discovered for future follows:** Level1Techs (1,305F), Late Night Linux (206F — caution: host criticized us on Mastodon), Wendell (73F)
+- **CRITICAL: Cleaned up 7 duplicate replies.** Previous iterations (33-34) replied to the same thread parents multiple times. Deleted 7 duplicate posts, kept the best version of each. Wrote to learnings/failed.md. Root cause: iterations didn't check for existing replies before posting.
+- **Bluesky stats: ~20 followers, ~145 following (+2)**
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 134 followers preserved (+8 organic since disabling).
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 14 new non-link posts added (7 X, 7 Bluesky)
+- Topics: Docker networking isolation, dashboard opinions (Homarr), NAS storage reality check, Traefik middleware chains, Caddy vs Nginx for simplicity, Immich performance tips, self-hosting skill ladder
+- Queue total: 2,703 items. Non-link ratio: well above 70%.
+- Queue runway: ~14+ days at current drain rates
+
+### Errors
+- None. All API calls succeeded. Bluesky session caching working correctly.
+
+### Decisions Made
+- Evaluated 4+ reply-eligible threads, skipped all — no threads met reply quality bar
+- Followed 2 high-value creator accounts (TechnoTim, Craft Computing) — 10K combined followers, major homelab influencers
+- Cleaned up 7 duplicate Bluesky replies — wrote learning to prevent recurrence
+- Bluesky account search is saturated for niche self-hosting accounts — future growth depends on being discovered via good posts
+
+### Cumulative Engagement Totals (Iterations 12-37)
+- **Mastodon: FROZEN** — 156 following, 134 followers (+8 organic), 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~145 following (+2), ~20 followers, 81 replies sent (unchanged — 7 duplicates deleted), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 154** (Mastodon: 134 frozen+organic, Bluesky: 20)
+
+### Next Iteration Focus
+- GSC Feb 19-21 data expected Feb 22-23 — check when available
+- Continue Bluesky engagement — find new accounts via post searches
+- Follow Level1Techs and Wendell on next iteration (spreading follows across iterations)
+- Monitor for reply opportunities that meet the quality bar
+- No content briefs needed until writer restart Feb 26
+
+---
 ## 2026-02-21 ~18:30 UTC — Iteration 36
 
 ### Trigger
