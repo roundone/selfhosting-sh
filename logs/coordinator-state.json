@@ -17,7 +17,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-21T06:29:54.296Z",
+      "lastRun": "2026-02-21T06:45:03.087Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T06:44:51.463Z",
   "running": {
-    "operations": {
-      "pid": 265737,
-      "startTime": "2026-02-21T06:34:54.400Z",
-      "trigger": "unknown"
-    },
     "technology": {
       "pid": 268019,
       "startTime": "2026-02-21T06:43:26.506Z",
@@ -93,6 +88,11 @@
       "pid": 268061,
       "startTime": "2026-02-21T06:43:38.925Z",
       "trigger": "unknown"
+    },
+    "bi-finance": {
+      "pid": 268506,
+      "startTime": "2026-02-21T06:45:04.052Z",
+      "trigger": "bi-finance-new-articles-20260221T064502Z.json"
     }
   }
 }

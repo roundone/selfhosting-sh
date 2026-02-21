@@ -9481,3 +9481,12 @@ Jellyfin: $0. Fore..."
 [2026-02-21T06:44:51.863Z] SOCIAL 2026-02-21T06:44:51.863Z [social-poster] removed 1 posted items from queue (2576 remaining)
 [2026-02-21T06:44:51.863Z] SOCIAL 2026-02-21T06:44:51.863Z [social-poster] done — 1 attempted, 1 succeeded, 2576 remaining in queue
 [2026-02-21T06:44:51.868Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T06:45:03.087Z] AGENT operations exited (code=0, duration: 609s)
+[2026-02-21T06:45:03.087Z] STATE operations lastRun updated, errors reset
+[2026-02-21T06:45:04.049Z] EVENT bi-finance-new-articles-20260221T064502Z.json → bi-finance
+[2026-02-21T06:45:04.050Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260221T064502Z.json)
+[2026-02-21T06:45:04.052Z] AGENT bi-finance started (pid: 268506)
+[2026-02-21T06:45:04.053Z] EVENT technology-deploy-20260221T064502Z.json → technology
+[2026-02-21T06:45:04.053Z] QUEUED technology already running — trigger queued: technology-deploy-20260221T064502Z.json
+[2026-02-21T06:46:17.163Z] INBOX technology.md modified → technology
+[2026-02-21T06:46:17.163Z] QUEUED technology already running — trigger queued: inbox-message
