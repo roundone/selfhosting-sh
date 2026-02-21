@@ -1,6 +1,6 @@
 # Marketing Strategy
 
-**Last updated:** 2026-02-21 (iteration 32)
+**Last updated:** 2026-02-21 (iteration 34)
 
 ## Current Priorities
 
@@ -8,7 +8,7 @@
 2. **Writer restart moved to Feb 26 6PM UTC (was Feb 22).** Month 1 target reduced to 850 (was 1,500). We have 780 published. Need ~70 more articles in 2-3 days with 1 writer limit. Focus: absolute highest-value niche comparisons that rank fastest.
 3. **GSC Feb 19-21 data expected Feb 22-23.** Feb 18 showed 494 impressions (20x jump from 24). CEO deployed several indexing fixes (sitemap lastmod, 9,893 trailing slash fixes, www→apex redirect). The data will show whether these fixes accelerated crawl efficiency.
 4. **MASTODON: ALL AUTOMATED ACTIVITY DISABLED.** Third app revoked. CEO directive: no API calls, no follows, no replies, no posting. Account cooling down for at least 1 week (evaluate Feb 28+). 126 followers preserved. Do NOT register a 4th app.
-5. **Redirect social energy to X and Bluesky.** These platforms are not penalizing us. Bluesky has 15+ followers and active engagement (50 notifications/24h). X posting continues at 15-min intervals.
+5. **Redirect social energy to X and Bluesky.** These platforms are not penalizing us. Bluesky has 21 followers and active engagement (30+ notifications since last iter). X posting continues at 15-min intervals.
 6. **"traefik vs haproxy" — GSC-confirmed content opportunity.** Position 87 against wrong page. HIGH priority brief sent to Operations for Feb 26.
 7. **Brand voice document governs all engagement.** `agents/marketing/brand-voice.md` — all replies follow the reply decision framework.
 8. **Content briefs pipeline fully loaded for Feb 26 restart.** 5+ category briefs ready (76+ articles). Traefik vs HAProxy + remote-access + high-value niche comparisons. Only need ~70 articles — focus on the highest-value ones.
@@ -34,7 +34,7 @@
 | **ALL Mastodon activity DISABLED** | **THIRD app revocation.** CEO directive: no API calls at all. Account cooling for 1 week minimum. Evaluate Feb 28+. Options: self-hosted instance, different fediverse instance, or human-only posting. | Feb 21, 2026 (CEO directive — CRITICAL) |
 | Dev.to + Hashnode cross-posting with canonical_url | Generates backlinks + reaches technical audiences on two platforms | Feb 20, 2026 |
 | **Use Bluesky REST API for engagement** | Faster and more reliable than Playwright for follows, likes, replies | Feb 20, 2026 (iter 12) |
-| **Daily engagement: 10+ follows, 5+ replies, 3+ original posts** | Founder directive — active engagement builds followers, pure syndication doesn't | Feb 20, 2026 (founder) |
+| **Daily engagement: 10+ follows, 1-2 replies MAX, 3+ original posts** | Founder directive — reply strategy overhauled Feb 21. Hard cap 1-2 replies/day. Real-time only, no queued replies. Sarcasm/hostility auto-skip. Full thread reading mandatory. | Feb 21, 2026 (founder — reply overhaul) |
 | **Brand voice document governs all engagement** | Founder directive — create and follow brand-voice.md before engagement | Feb 20, 2026 (founder) |
 | **Newsletter: weekly, Tue/Wed** | CEO approved. Hero pick + curated articles + quick tip + community spotlight + CTA | Feb 20, 2026 (CEO approved) |
 | **Comments system: SKIP** | No humans for moderation, spam risk > marginal SEO benefit | Feb 20, 2026 (CEO approved) |
@@ -64,4 +64,5 @@
 - X_ACCESS_TOKEN_SECRET still empty — X engagement blocked, queue-only posting continues.
 - Will "traefik vs haproxy" article capture the position-87 opportunity quickly after publication?
 - **Mastodon next steps (evaluate Feb 28+):** Self-hosted instance vs different fediverse instance vs human-only posting. 126 followers are our most valuable social asset.
-- **Bluesky growth acceleration:** With Mastodon disabled, can we grow Bluesky faster? 50 notifications/24h is promising. Need to convert engagement into followers (currently 15).
+- **Bluesky growth acceleration:** With Mastodon disabled, can we grow Bluesky faster? 30+ notifications per iteration. 21 followers now (was 15). Engagement-to-follower conversion improving.
+- **Article structure variation:** Founder-approved. Need to include in Feb 26 content briefs to Operations — vary section ordering across articles to reduce "AI slop" perception.

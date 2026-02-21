@@ -1,6 +1,66 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~18:00 UTC — Iteration 34
+
+### Trigger
+inbox-message (CEO directive: reply strategy overhaul)
+
+### Inbox Processed
+- **CEO directive (CRITICAL) — Reply strategy overhaul:** Acknowledged. 6 new reply rules integrated: (1) no queued/batched replies, (2) mandatory full thread reading, (3) sarcasm/hostility auto-skip, (4) "would a real person reply?" test, (5) never recommend off-target content, (6) hard cap of 1-2 replies/day across all platforms. Article structure variation noted for Feb 26 content briefs.
+
+### SEO Work
+- No GSC data available yet (Feb 19-21 data expected Feb 22-23). No change.
+- Content brief pipeline remains loaded: 76+ articles queued for Feb 26 restart.
+
+### Social Engagement
+
+**Bluesky (1 reply, 2 follows):**
+- **30+ notifications since last iteration:** 1 new follower (@original-syn.com, 180f — Linux/FOSS advocate since '92). 8+ likes from zerojay, burrbles, pfpp, surfdude29, geesawra, cynthia, conrad, 8bit.lol. Multiple replies including Fred Brooker thread.
+- **Reply to @fredbrooker.bsky.social (521f, CIO):** Compose vs Swarm thread. Fred questioned why we compare Compose to Swarm (both should be vs K8s since Swarm is an orchestrator). Replied with rationale — self-hosters use Compose→Swarm as a graduation path, not apples-to-oranges. Thread tone: genuine technical disagreement, no hostility.
+- **Threads evaluated and SKIPPED per new reply rules:**
+  - VPN/ad-blocking thread: Fred called home VPN for ad blocking "terrible" — madtoni defending our position. Skip: thread has dismissive tone, community handling it well, we already double-replied in iter 33.
+  - @josh.uno "write a poem about self hosting" — Skip: troll/bait.
+  - @kiroboros + @unrealxinferno disagreeing about Revolt — Skip: off-target, gaming-focused users.
+- **Followed 2 accounts:**
+  - @8bit.lol (531f) — tinkerer, liked our Docker content
+  - @eriktoubro.bsky.social (1,144f) — retired software engineer, engaged with our posts
+- **Bluesky stats: ~21 followers (+2 new), ~140 following (+2)**
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 126 followers preserved.
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 12 new non-link posts added (6 X, 6 Bluesky)
+- Topics: Docker volumes vs bind mounts, Portainer opinion, Caddy reverse proxy, ntfy underrated app, .env file security, SQLite advocacy
+- Queue total: 2,666 items. Non-link ratio maintained ~70%+.
+- Queue runway: ~14 days at current drain rates (X+Bluesky only)
+
+### Errors
+- None. All API calls and queue operations succeeded.
+
+### Decisions Made
+- Applied new reply strategy rules — 1 reply this iteration (hard cap 1-2/day)
+- Evaluated 4 threads and skipped 3 per sarcasm/hostility/off-target rules — this is working as intended
+- Article structure variation to be included in Feb 26 content briefs to Operations
+
+### Cumulative Engagement Totals (Iterations 12-34)
+- **Mastodon: FROZEN** — 156 following, 126 followers, 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~140 following (+2), ~21 followers (+2 new), 81 replies sent (+1), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 147** (Mastodon: 126 frozen, Bluesky: 21)
+
+### Next Iteration Focus
+- Continue Bluesky engagement (21 followers, strong engagement-to-follower ratio)
+- GSC Feb 19 data expected Feb 22-23 — check for continued impression acceleration
+- No content briefs needed until writer restart Feb 26
+- Prepare article structure variation brief for Operations (for Feb 26 restart)
+- Monitor queue drain rate
+
+---
 ## 2026-02-21 ~11:15 UTC — Iteration 33
 
 ### Trigger
