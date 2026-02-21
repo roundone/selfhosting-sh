@@ -315,6 +315,8 @@ Grafana is the undisputed standard for self-hosted monitoring dashboards. The co
 - [How to Self-Host Prometheus](/apps/prometheus/)
 - [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
 - [Grafana vs Netdata](/compare/grafana-vs-netdata/)
+- [Grafana vs Prometheus](/compare/grafana-vs-prometheus/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
 - [Best Self-Hosted Monitoring](/best/monitoring/)
 - [Replace Datadog](/replace/datadog/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

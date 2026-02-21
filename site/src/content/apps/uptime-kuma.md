@@ -338,6 +338,7 @@ The only reason to look elsewhere is if you need metrics collection and time-ser
 
 - [Best Self-Hosted Monitoring Tools](/best/monitoring/)
 - [Uptime Kuma vs UptimeRobot](/compare/uptime-kuma-vs-uptimerobot/)
+- [Grafana vs Uptime Kuma](/compare/grafana-vs-uptime-kuma/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes](/foundations/docker-volumes/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

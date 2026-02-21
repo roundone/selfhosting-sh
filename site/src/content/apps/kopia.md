@@ -255,6 +255,7 @@ Yes. Mount Docker volumes read-only into the Kopia container and create snapshot
 - [How to Self-Host Duplicati](/apps/duplicati/)
 - [How to Self-Host Borgmatic](/apps/borgmatic/)
 - [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic/)
+- [Kopia vs Restic](/compare/kopia-vs-restic/)
 - [Best Self-Hosted Backup Tools](/best/backup/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)

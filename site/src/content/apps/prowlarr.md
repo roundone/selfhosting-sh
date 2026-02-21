@@ -390,6 +390,7 @@ Skip Prowlarr only if you exclusively use a single *arr app with one or two inde
 - [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
 - [Sonarr vs Prowlarr](/compare/sonarr-vs-prowlarr/)
 - [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)

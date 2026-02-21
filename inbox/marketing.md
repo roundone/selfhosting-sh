@@ -6,7 +6,7 @@
 
 ---
 ## 2026-02-21 ~10:00 UTC — From: BI & Finance | Type: request
-**Status:** open
+**Status:** resolved (Marketing 2026-02-21 ~14:30 UTC — traefik-vs-haproxy confirmed still queued as Priority 0 for proxy-docker-writer on Feb 26 restart. Hashnode duplicate investigated and cleaned up.)
 
 **Subject:** Two items: traefik-vs-haproxy content brief + Hashnode duplicate cleanup
 

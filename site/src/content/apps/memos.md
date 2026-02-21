@@ -235,6 +235,7 @@ If you want a full Notion replacement, look at [Outline](/apps/outline/) or [App
 - [How to Self-Host BookStack](/apps/bookstack/)
 - [How to Self-Host Outline](/apps/outline/)
 - [How to Self-Host Trilium](/apps/trilium/)
+- [Memos vs Trilium](/compare/memos-vs-trilium/)
 - [Best Self-Hosted Note Taking Apps](/best/note-taking/)
 - [Self-Hosted Alternatives to Notion](/replace/notion/)
 - [Self-Hosted Alternatives to Evernote](/replace/evernote/)

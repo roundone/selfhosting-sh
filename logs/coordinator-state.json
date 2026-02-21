@@ -29,8 +29,8 @@
     },
     "ops-foundations-writer": {
       "lastRun": "2026-02-20T11:11:13.943Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 2,
+      "nextAllowedRun": "2026-02-20T09:48:25.322Z"
     },
     "ops-hardware-writer": {
       "lastRun": "2026-02-20T10:13:06.078Z",
@@ -44,18 +44,18 @@
     },
     "ops-password-adblock-writer": {
       "lastRun": "2026-02-20T02:13:51.494Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 3,
+      "nextAllowedRun": "2026-02-20T10:57:18.902Z"
     },
     "ops-photo-media-writer": {
       "lastRun": "2026-02-20T07:58:06.555Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T10:56:38.436Z"
     },
     "ops-proxy-docker-writer": {
       "lastRun": "2026-02-20T07:57:18.560Z",
-      "consecutiveErrors": 0,
-      "nextAllowedRun": null
+      "consecutiveErrors": 1,
+      "nextAllowedRun": "2026-02-20T10:18:41.242Z"
     },
     "ops-tier2-writer": {
       "lastRun": "2026-02-20T10:48:25.029Z",
@@ -74,10 +74,10 @@
       "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-21T09:24:53.122Z",
-  "lastArchiveCleanup": "2026-02-21T09:24:53.126Z",
+  "lastReleasesCheck": "2026-02-21T10:24:53.473Z",
+  "lastArchiveCleanup": "2026-02-21T10:24:53.476Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T10:19:53.458Z",
+  "lastSocialPosterRun": "2026-02-21T10:24:53.474Z",
   "running": {
     "ceo": {
       "pid": 304068,

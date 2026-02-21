@@ -341,6 +341,7 @@ Restic is the best general-purpose backup tool for self-hosters. It encrypts by 
 - [Restic vs BorgBackup](/compare/restic-vs-borgbackup/)
 - [Borgmatic vs Restic](/compare/borgmatic-vs-restic/)
 - [Duplicati vs Restic](/compare/duplicati-vs-restic/)
+- [Kopia vs Restic](/compare/kopia-vs-restic/)
 - [Best Self-Hosted Backup](/best/backup/)
 - [Replace Backblaze](/replace/backblaze/)
 - [3-2-1 Backup Rule](/foundations/backup-3-2-1-rule/)

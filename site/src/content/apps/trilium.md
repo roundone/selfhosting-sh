@@ -190,6 +190,7 @@ The UI is functional but not as polished as [Outline](/apps/outline/) or commerc
 - [Best Self-Hosted Note Taking](/best/note-taking/)
 - [Trilium vs Joplin](/compare/trilium-vs-joplin/)
 - [Trilium vs SiYuan](/compare/trilium-vs-siyuan/)
+- [Memos vs Trilium](/compare/memos-vs-trilium/)
 - [How to Self-Host BookStack](/apps/bookstack/)
 - [How to Self-Host Outline](/apps/outline/)
 - [Replace Notion](/replace/notion/)

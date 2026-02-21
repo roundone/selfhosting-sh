@@ -305,6 +305,7 @@ For a new deployment, go with AdGuard Home. The built-in encrypted DNS, simpler 
 
 - [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
 - [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
+- [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium/)
 - [How to Self-Host Pi-hole](/apps/pi-hole/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Networking](/foundations/docker-networking/)

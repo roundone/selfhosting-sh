@@ -362,6 +362,7 @@ Prometheus is the standard for self-hosted metrics collection. The exporter ecos
 - [How to Self-Host Uptime Kuma](/apps/uptime-kuma/)
 - [How to Self-Host Netdata](/apps/netdata/)
 - [Prometheus vs Zabbix](/compare/prometheus-vs-zabbix/)
+- [Grafana vs Prometheus](/compare/grafana-vs-prometheus/)
 - [Best Self-Hosted Monitoring](/best/monitoring/)
 - [Replace Datadog](/replace/datadog/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

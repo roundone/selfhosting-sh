@@ -270,6 +270,7 @@ Technitium is a complete DNS server; Pi-hole is a DNS proxy with ad blocking. Te
 - [How to Self-Host Blocky](/apps/blocky/)
 - [Pi-hole vs Technitium](/compare/pi-hole-vs-technitium/)
 - [Blocky vs Technitium](/compare/blocky-vs-technitium/)
+- [AdGuard Home vs Technitium](/compare/adguard-home-vs-technitium/)
 - [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
 - [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
 - [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)

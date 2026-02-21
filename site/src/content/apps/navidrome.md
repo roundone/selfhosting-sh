@@ -222,6 +222,8 @@ The main limitation is that it's music-only. If you need video streaming too, lo
 - [Navidrome vs Subsonic](/compare/navidrome-vs-subsonic/)
 - [Navidrome vs Emby](/compare/navidrome-vs-emby/)
 - [Plex vs Navidrome](/compare/plex-vs-navidrome/)
+- [Navidrome vs Funkwhale](/compare/navidrome-vs-funkwhale/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
 - [Self-Hosted Spotify Alternative](/replace/spotify/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

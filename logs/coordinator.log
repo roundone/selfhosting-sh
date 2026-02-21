@@ -10146,3 +10146,59 @@ Yes, Traefi..."
 [2026-02-21T10:14:53.910Z] SOCIAL 2026-02-21T10:14:53.910Z [social-poster] done — 2 attempted, 2 succeeded, 2638 remaining in queue
 [2026-02-21T10:14:53.915Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T10:15:19.990Z] CONCURRENCY bi-finance — 4/4 agents running, queued
+[2026-02-21T10:15:57.422Z] AGENT technology exited (code=0, duration: 311s)
+[2026-02-21T10:15:57.422Z] STATE technology lastRun updated, errors reset
+[2026-02-21T10:18:05.428Z] INBOX marketing.md modified → marketing
+[2026-02-21T10:18:05.428Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T10:19:40.904Z] INBOX ceo.md modified → ceo
+[2026-02-21T10:19:40.904Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T10:19:53.458Z] STATUS running=3/4 writers=0/1 freeMem=6420MB agents=[ceo(825s), operations(669s), marketing(403s)] paused=no
+[2026-02-21T10:19:53.458Z] SOCIAL running social-poster.js
+[2026-02-21T10:19:53.495Z] SOCIAL 2026-02-21T10:19:53.493Z [social-poster] starting
+[2026-02-21T10:19:53.507Z] SOCIAL 2026-02-21T10:19:53.507Z [social-poster] queue has 2658 posts
+[2026-02-21T10:19:53.507Z] SOCIAL 2026-02-21T10:19:53.507Z [social-poster] done — 0 attempted, 0 succeeded, 2658 remaining in queue
+[2026-02-21T10:19:53.511Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:24:53.472Z] STATUS running=3/4 writers=0/1 freeMem=6434MB agents=[ceo(1125s), operations(969s), marketing(703s)] paused=no
+[2026-02-21T10:24:53.473Z] RELEASES running check-releases.js
+[2026-02-21T10:24:53.474Z] SOCIAL running social-poster.js
+[2026-02-21T10:24:53.505Z] RELEASES 2026-02-21T10:24:53.503Z [check-releases] starting
+[2026-02-21T10:24:53.506Z] RELEASES 2026-02-21T10:24:53.506Z [check-releases] checking 29 GitHub repos
+[2026-02-21T10:24:53.510Z] SOCIAL 2026-02-21T10:24:53.508Z [social-poster] starting
+[2026-02-21T10:24:53.521Z] SOCIAL 2026-02-21T10:24:53.520Z [social-poster] queue has 2658 posts
+[2026-02-21T10:24:53.521Z] SOCIAL 2026-02-21T10:24:53.521Z [social-poster] done — 0 attempted, 0 succeeded, 2658 remaining in queue
+[2026-02-21T10:24:53.525Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:24:53.585Z] RELEASES 2026-02-21T10:24:53.584Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T10:24:54.131Z] RELEASES 2026-02-21T10:24:54.131Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T10:24:54.736Z] RELEASES 2026-02-21T10:24:54.735Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T10:24:55.310Z] RELEASES 2026-02-21T10:24:55.310Z [check-releases]   crazy-max/diun → 200 but same version (v4.31.0)
+[2026-02-21T10:24:55.851Z] RELEASES 2026-02-21T10:24:55.851Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T10:24:56.392Z] RELEASES 2026-02-21T10:24:56.392Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T10:24:56.973Z] RELEASES 2026-02-21T10:24:56.973Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T10:24:57.529Z] RELEASES 2026-02-21T10:24:57.528Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1174)
+[2026-02-21T10:24:58.078Z] RELEASES 2026-02-21T10:24:58.078Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T10:24:58.626Z] RELEASES 2026-02-21T10:24:58.626Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T10:24:59.178Z] RELEASES 2026-02-21T10:24:59.178Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T10:24:59.774Z] RELEASES 2026-02-21T10:24:59.774Z [check-releases]   matomo-org/matomo → 200 but same version (5.7.1)
+[2026-02-21T10:25:00.315Z] RELEASES 2026-02-21T10:25:00.315Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T10:25:00.882Z] RELEASES 2026-02-21T10:25:00.882Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T10:25:01.431Z] RELEASES 2026-02-21T10:25:01.430Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T10:25:01.988Z] RELEASES 2026-02-21T10:25:01.988Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T10:25:02.556Z] RELEASES 2026-02-21T10:25:02.555Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T10:25:03.116Z] RELEASES 2026-02-21T10:25:03.116Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T10:25:03.679Z] RELEASES 2026-02-21T10:25:03.679Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T10:25:04.248Z] RELEASES 2026-02-21T10:25:04.248Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T10:25:04.798Z] RELEASES 2026-02-21T10:25:04.798Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T10:25:05.354Z] RELEASES 2026-02-21T10:25:05.353Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T10:25:05.896Z] RELEASES 2026-02-21T10:25:05.895Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T10:25:06.448Z] RELEASES 2026-02-21T10:25:06.448Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T10:25:07.000Z] RELEASES 2026-02-21T10:25:07.000Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T10:25:07.570Z] RELEASES 2026-02-21T10:25:07.570Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T10:25:08.143Z] RELEASES 2026-02-21T10:25:08.143Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-21T10:25:08.704Z] RELEASES 2026-02-21T10:25:08.703Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T10:25:09.257Z] RELEASES 2026-02-21T10:25:09.257Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T10:25:09.758Z] RELEASES 2026-02-21T10:25:09.758Z [check-releases] checking 3 feeds
+[2026-02-21T10:25:09.829Z] RELEASES 2026-02-21T10:25:09.829Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T10:25:10.086Z] RELEASES 2026-02-21T10:25:10.085Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T10:25:10.416Z] RELEASES 2026-02-21T10:25:10.416Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T10:25:10.616Z] RELEASES 2026-02-21T10:25:10.616Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T10:25:10.621Z] RELEASES check-releases.js exited (code: 0)

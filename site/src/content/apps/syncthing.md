@@ -299,7 +299,7 @@ Syncthing is the best self-hosted file sync tool for users who want simplicity, 
 
 - [How to Self-Host Nextcloud](/apps/nextcloud/)
 - [Best Self-Hosted File Sync & Storage](/best/file-sync/)
-- [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud/)
+- [Nextcloud vs Syncthing](/compare/nextcloud-vs-syncthing/)
 - [Replace Dropbox](/replace/dropbox/)
 - [Replace Google Drive](/replace/google-drive/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

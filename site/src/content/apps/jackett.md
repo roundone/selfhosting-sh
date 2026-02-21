@@ -283,6 +283,7 @@ That said, for new setups, **[Prowlarr](/apps/prowlarr/) is the better choice.**
 - [How to Self-Host Transmission](/apps/transmission/) -- lightweight alternative download client
 - [Sonarr vs Radarr](/compare/sonarr-vs-radarr/) -- understanding the difference between the two
 - [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr/)
+- [Prowlarr vs Jackett](/compare/prowlarr-vs-jackett/)
 - [Best Self-Hosted Download Management](/best/download-management/) -- full category roundup
 - [Docker Compose Basics](/foundations/docker-compose-basics/) -- foundation guide for all Docker setups
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/) -- expose services securely over HTTPS

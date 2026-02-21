@@ -343,6 +343,8 @@ If you want a media server that you fully own and control, Jellyfin is the answe
 - [Dim vs Jellyfin](/compare/dim-vs-jellyfin/)
 - [Jellyfin vs Navidrome for Music](/compare/jellyfin-vs-navidrome-music/)
 - [Jellyfin vs Plex for Music](/compare/jellyfin-vs-plex-music/)
+- [Jellyfin vs Plex vs Emby](/compare/jellyfin-vs-plex-vs-emby/)
+- [Navidrome vs Jellyfin](/compare/navidrome-vs-jellyfin/)
 - [Jellyfin Transcoding Not Working: Fix Guide](/troubleshooting/jellyfin-transcoding-issues/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes](/foundations/docker-volumes/)
