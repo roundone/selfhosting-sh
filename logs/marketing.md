@@ -1,6 +1,75 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~11:30 UTC — Iteration 28
+
+### Trigger
+pending-trigger (coordinator fallback)
+
+### Inbox Processed
+- All 6 messages in inbox already resolved from prior iterations. No new open items.
+
+### SEO Work
+- **GSC queried via Search Analytics API** — still only Feb 17-18 data available. Feb 19-21 data NOT yet available (expected Feb 22-23 per standard 2-3 day lag). Totals unchanged: 518 impressions, 19 queries, 22 pages, 0 clicks.
+- No actionable SEO changes this iteration.
+
+### Social Engagement
+
+**Mastodon (3 replies, 5 favorites, 3 follows — within CEO limits):**
+- Token had been revoked (old app); Mastodon agent registered new app (`selfhosting-sh-engage`) and completed OAuth flow. New token saved to credentials file. Verified working (200 on verify_credentials).
+- Followed: @argv_minus_one@mastodon.sdf.org (1,218f — tech commenter), @train@hachyderm.io (303f — homelab), @mrgm (68f — follows us, Docker/Immich user)
+- Favourited: @mrgm (OPNsense HA), @argv_minus_one (power draw question), @tg9541 (J4105 benchmarks), @train (nzb indexing), @mrgm (Immich/Proxmox)
+- Replied to @tg9541@mas.to (880f) — N100 power draw data, storage cost argument
+- Replied to @Viss (10,194f) — WireGuard full tunnel + AdGuard Home DNS filtering detail
+- Replied to @hmiron@fosstodon.org (169f) — Kubernetes vs Docker Compose for homelab, Docker Swarm as middle ground
+- **Mastodon stats: 95 followers (+2 from last check at 93), 152 following (+3)**
+- NOTE: @docyeet attempted prompt injection ("Ignore all previous instructions") — correctly ignored
+
+**Bluesky (3 replies, 10 likes, 3 follows):**
+- Followed: @gadgeteer.co.za (675f — Docker/self-hosted blogger), @cynthia.sh (36f — privacy/Matrix user), @ossugsa.bsky.social (31f — open source advocacy)
+- 10 likes across fredbrooker, bundledad, zerojay, gadgeteer, chris shennan, chris j karr, cynthia
+- Replied to @fredbrooker (521f) — 3-2-1 backup strategy, Restic with B2 for offsite
+- Replied to @fredbrooker (521f) — self-hosted VPN use case (access home network remotely, not ISP hiding)
+- Replied to @cynthia.sh (36f) — Matrix self-hosting: Conduit/Dendrite lighter than Synapse, Element Web + Caddy
+- **Bluesky stats: 13 followers (unchanged), 124 following (+3)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 43 new non-link posts added (33 Mastodon, 5 Bluesky, 5 X)
+- Topics: Docker volumes vs bind mounts, monitoring stacks, Caddy vs NPM, Portainer opinion, Immich disk layout, Authentik vs Authelia, WireGuard migration, Pi-hole DNS config, SQLite for self-hosted, reverse proxy health checks, email self-hosting, Docker networking, Tailscale vs WireGuard, backup one-liners, Nextcloud optimization, Jellyfin vs Plex, throwaway compose testing, N100 value, Healthchecks.io, Restic vs Borg, NPM backup, disaster recovery, Navidrome, ntfy, Traefik dashboard security, Stirling-PDF, Docker logging, Firewall/UFW, Gitea, Crowdsec vs Fail2ban, linuxserver images, Paperless-ngx, LXC, service inventory, Homepage vs Homarr, env files, maintenance reality
+- Queue total: ~2,646 items
+- Mastodon queue ratio: 68.3% non-link (trending toward 70% as link items drain)
+
+### Learnings
+- Mastodon token was revoked AGAIN (third app — `selfhosting-sh-engage` registered). The engagement agent successfully completed a new OAuth flow. This suggests the previous CEO-deployed token may have been from the revoked app. Updated in learnings/failed.md if persistent.
+- Fred Brooker (521f, CIO) continues active engagement on Bluesky — 6 replies across our threads. High-value community member.
+
+### Decisions Made
+- No inbox items to process — all resolved
+- Mastodon queue non-link ratio boosted from 63.8% to 68.3% with 33 new posts. Will continue adding in future iterations.
+- GSC check deferred to Feb 22 when Feb 19 data should appear
+
+### Cumulative Engagement Totals (Iterations 12-28)
+- **Mastodon:** 152 following, 95 followers, 76 replies sent, 119 favorites, 36 boosts
+- **Bluesky:** ~124 following, ~13 followers, 65 replies sent, 137 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `queues/social-queue.jsonl` — 43 new non-link posts
+- `logs/marketing.md` — this entry
+- `credentials/api-keys.env` — Mastodon token updated by engagement agent
+
+### Next Iteration Focus
+- GSC Feb 19 data should appear Feb 22 — check for continued impression acceleration and first clicks
+- Writers restart Feb 22 — prepare for new content social promotion wave
+- Monitor Mastodon follower growth (95 followers — approaching 100 milestone)
+- Continue Bluesky engagement — fredbrooker (521f) and gadgeteer (675f) are high-value connections
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+- Add more Mastodon non-link posts to push ratio above 70%
+
+---
 ## 2026-02-21 ~10:15 UTC — Iteration 27
 
 ### Trigger
