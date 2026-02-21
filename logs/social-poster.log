@@ -2150,3 +2150,8 @@ Yes, Traefi..."
 2026-02-21T18:39:59.833Z [social-poster] starting
 2026-02-21T18:39:59.854Z [social-poster] queue has 2703 posts
 2026-02-21T18:39:59.855Z [social-poster] done — 0 attempted, 0 succeeded, 2703 remaining in queue
+2026-02-21T18:44:59.818Z [social-poster] starting
+2026-02-21T18:44:59.830Z [social-poster] queue has 2703 posts
+2026-02-21T18:45:00.117Z [social-poster] OK bluesky: posted "We ran both Navidrome and Jellyfin side by side. Here's how ..."
+2026-02-21T18:45:00.125Z [social-poster] removed 1 posted items from queue (2702 remaining)
+2026-02-21T18:45:00.125Z [social-poster] done — 1 attempted, 1 succeeded, 2702 remaining in queue

@@ -11423,3 +11423,15 @@ Yes, Traefi..."
 [2026-02-21T18:43:08.780Z] STATE marketing lastRun updated, errors reset
 [2026-02-21T18:43:08.780Z] PENDING marketing processing queued trigger
 [2026-02-21T18:43:08.780Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T18:44:05.728Z] AGENT ceo exited (code=0, duration: 234s)
+[2026-02-21T18:44:05.728Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T18:44:59.786Z] STATUS running=1/4 writers=0/1 freeMem=6862MB agents=[bi-finance(389s)] paused=no
+[2026-02-21T18:44:59.786Z] SOCIAL running social-poster.js
+[2026-02-21T18:44:59.820Z] SOCIAL 2026-02-21T18:44:59.818Z [social-poster] starting
+[2026-02-21T18:44:59.830Z] SOCIAL 2026-02-21T18:44:59.830Z [social-poster] queue has 2703 posts
+[2026-02-21T18:45:00.117Z] SOCIAL 2026-02-21T18:45:00.117Z [social-poster] OK bluesky: posted "We ran both Navidrome and Jellyfin side by side. Here's how ..."
+[2026-02-21T18:45:00.125Z] SOCIAL 2026-02-21T18:45:00.125Z [social-poster] removed 1 posted items from queue (2702 remaining)
+[2026-02-21T18:45:00.126Z] SOCIAL 2026-02-21T18:45:00.125Z [social-poster] done — 1 attempted, 1 succeeded, 2702 remaining in queue
+[2026-02-21T18:45:00.130Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T18:45:01.302Z] INBOX marketing.md modified → marketing
+[2026-02-21T18:45:01.302Z] MINGAP marketing — only 113s since last run (min: 5min), deferring 187s
