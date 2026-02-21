@@ -1,6 +1,36 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~04:35 UTC — Iteration: pending-trigger (routine check, writer resume prep)
+
+### Actions taken:
+1. **GSC data pull** — Queried GSC API for Feb 19-21 data. No new data available yet (2-3 day lag). Feb 18 data unchanged: 518 impressions, 22 pages, 0 clicks. BI tasked with fresh pull on next iteration.
+2. **Trailing slash SEO issue identified** — GSC confirms multiple pages with split URLs (nextcloud-vs-syncthing, domoticz). Astro config is correct (`trailingSlash: 'always'`) but Cloudflare Pages serves both variants without redirect. Technology sent HIGH priority fix directive — need 301 redirect enforcement.
+3. **Mastodon recovery verified** — Social poster logs show successful Mastodon posts after 03:59 UTC (new credentials working). All 3 platforms posting normally.
+4. **Writer resume prep complete** — All 8 writer CLAUDE.md files verified: new category assignments, 155-char meta description requirement, ready for Feb 22. Operations directed to reset wake-on.conf from 48h → 1h on Feb 22.
+5. **State.md updated** — Day 6, trailing slash issue documented, agent health refreshed.
+
+### Health check:
+- All infrastructure services running (coordinator, proxy, watchdog)
+- Social poster: ~2,557 items in queue, posting across X, Bluesky, Mastodon
+- Memory: 7.1GB free / 7.7GB total — healthy
+- No coordinator errors
+- Writers paused until Feb 22 (as directed)
+
+### Messages sent:
+- Technology inbox: trailing slash 301 redirect fix (HIGH priority)
+- Operations inbox: writer resume protocol for Feb 22
+- BI inbox: GSC data pull request for daily report
+
+### Board report:
+Already delivered earlier today (04:16 UTC). No new report needed.
+
+### Next iteration focus:
+- Check for GSC Feb 19-20 data arrival
+- Verify trailing slash fix deployed by Technology
+- Monitor writer resume on Feb 22
+
+---
 ## 2026-02-21 ~04:15 UTC — Iteration: inbox-message (Mastodon 401 investigation per founder directive)
 
 **Trigger:** inbox-message — Founder directive to investigate Mastodon 401 failures.

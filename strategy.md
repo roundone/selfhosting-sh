@@ -1,15 +1,15 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-20 19:00 UTC
+**Last updated:** 2026-02-21 04:35 UTC
 
 ## Current Priorities
 
-1. **GSC BREAKTHROUGH — comparison strategy validated.** 15 page-1 keywords (was 2), 518 impressions (20x increase). 10/15 are comparison/niche queries. Double down when writers resume Feb 22.
-2. **ALL WRITERS PAUSED until Feb 22** — Founder directive. 779 articles on disk. All 8 writer CLAUDE.md files updated for Feb 22 restart with comparison-first priority.
-3. **Feb 22 writer restart prep** — Need to reset all 8 wake-on.conf from 48h to 1h. Confirm coordinator allows writers. Target: ~120 articles/day to hit 1,500 by Feb 28.
-4. **Social media — all 5 platforms automated.** X, Bluesky, Mastodon posting short-form. Dev.to + Hashnode cross-posting full articles (implemented 18:54 UTC). Queue at ~640 items. Marketing actively building engagement (89 follows, 16 replies this iteration).
-5. **Portal v4 COMPLETE** — login security, HTTPS, 12 pages incl. Growth metrics + Agent Instructions + Social Activity Feed. No further portal work needed this cycle.
-6. **Monitor for first clicks** — Feb 19-20 GSC data arrives Feb 21-22. With 15 keywords at positions 3-10, organic clicks are imminent.
+1. **TRAILING SLASH FIX — HIGH PRIORITY SEO.** GSC confirms split URLs across multiple pages (domoticz, nextcloud-vs-syncthing). Astro `trailingSlash: 'always'` is correct but Cloudflare Pages serves both variants without 301 redirect. Technology tasked. This is fragmenting ranking authority across potentially all 778 pages.
+2. **Writers resume Feb 22.** All 8 CLAUDE.md files updated with new category assignments, 155-char meta description requirement, comparison-first priority. Operations directed to reset wake-on.conf from 48h→1h on Feb 22. Target: ~103 articles/day for 7 remaining days to hit 1,500.
+3. **Mastodon stabilized.** App revocation incident resolved (new app registered, bot flag set, engagement limits imposed). Marketing acknowledged limits. Social poster confirmed working across all 3 platforms.
+4. **GSC data lag.** Feb 18 data (latest) shows 518 impressions, 22 pages, 0 clicks. Feb 19-20 data not yet available (2-3 day lag). First clicks expected when that data arrives. BI tasked with fresh pull.
+5. **Social media — posting healthy.** Queue at ~2,557 items. All 5 platforms automated (X, Bluesky, Mastodon short-form; Dev.to + Hashnode full articles). Mastodon engagement limits in effect per CEO directive.
+6. **Portal v4 COMPLETE.** No further portal work needed this cycle.
 
 ## Standing Decisions
 
@@ -31,6 +31,9 @@
 | **Social engagement > syndication** | Founder directive: max 30% article links, 70%+ engagement/original content. Active follows, replies, boosts daily. | Feb 20, 2026 |
 | **Meta descriptions: 155-char minimum for new content** | Existing 612 short descriptions deferred to Month 2 batch fix. New content must hit 155+ chars. | Feb 20, 2026 |
 | **Coordinator tracks lastErrorAt** | For smarter portal alert display — error age relative to agent's run interval. | Feb 20, 2026 |
+| **Mastodon bot flag = true** | Account marked as bot per Mastodon convention. Reduces moderation risk for automated posting. | Feb 21, 2026 |
+| **Mastodon engagement limits** | Max 3 follows/iteration, 15/day. Max 3 replies/iteration. Max 15 API calls/iteration. Prevents app revocation. | Feb 21, 2026 |
+| **Trailing slash 301 redirect needed** | Cloudflare Pages serves both `/path` and `/path/` — must enforce redirect to canonical trailing-slash version. Technology tasked. | Feb 21, 2026 |
 
 ## What We've Tried
 

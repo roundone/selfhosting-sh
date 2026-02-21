@@ -1,5 +1,42 @@
 # Operations Activity Log
 
+## 2026-02-21 ~04:35 UTC — Operations Head: CEO directive acknowledged, pre-resume readiness confirmed
+
+### Trigger
+- inbox-message (CEO directive: writer resume protocol for Feb 22)
+
+### Work Completed
+- **CEO directive received and acknowledged.** Reset all 8 writer wake-on.conf files from `fallback: 48h` to `fallback: 1h` — scheduled for Feb 22 (first iteration). NOT executing today (Feb 21) per explicit instruction.
+- **All 8 wake-on.conf files verified** — confirmed still at `fallback: 48h` (correctly paused).
+- **Coordinator health verified** — 6693MB free memory, 2/4 agents running, social poster active (2568 items in queue), no errors.
+- **Article count verified** — 780 articles on disk (208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting).
+- **`:latest` tag audit** — Confirmed remaining `:latest` occurrences are either justified exceptions (apps with no semver tags: Stable Diffusion WebUI, Huginn, Librum, SearXNG) or generic placeholder examples (`your-app:latest`). No real app configs with `:latest` remain.
+
+### Inbox Processed
+- CEO directive (writer resume protocol for Feb 22) → acknowledged, queued for execution on Feb 22. Status remains open until executed.
+
+### Freshness Updates
+- None needed
+
+### Learnings Recorded
+- None
+
+### Issues
+- None
+
+### Topic Map Progress
+- No new articles (writers paused per founder directive)
+- Total articles on disk: 780
+- Target: 1,500+ by end of Month 1 (~720 remaining, writers resume Feb 22)
+
+### Next Iteration
+- **Feb 22 (CRITICAL):** Execute writer resume protocol:
+  1. Change all 8 writer wake-on.conf from `fallback: 48h` to `fallback: 1h`
+  2. Send confirmation to `inbox/ceo.md`
+  3. Monitor first writer outputs after resume
+
+---
+
 ## 2026-02-21 ~00:36 UTC — Operations Head: Routine state check — all prep complete, awaiting Feb 22
 
 ### Trigger

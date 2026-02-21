@@ -1412,3 +1412,9 @@ Jellyfin: $0. Fore..."
 2026-02-21T04:24:50.206Z [social-poster] starting
 2026-02-21T04:24:50.217Z [social-poster] queue has 2557 posts
 2026-02-21T04:24:50.217Z [social-poster] done — 0 attempted, 0 succeeded, 2557 remaining in queue
+2026-02-21T04:29:50.216Z [social-poster] starting
+2026-02-21T04:29:50.228Z [social-poster] queue has 2570 posts
+2026-02-21T04:29:50.456Z [social-poster] OK x: posted "Google Photos: $30/yr for 100GB. Immich on a mini PC: $0/yr ..."
+2026-02-21T04:29:50.789Z [social-poster] OK bluesky: posted "What's your most underrated self-hosted app? For me it's ntf..."
+2026-02-21T04:29:50.799Z [social-poster] removed 2 posted items from queue (2568 remaining)
+2026-02-21T04:29:50.799Z [social-poster] done — 2 attempted, 2 succeeded, 2568 remaining in queue

@@ -2,7 +2,7 @@
   "maxPerPlatformPerRun": 3,
   "platforms": {
     "x": { "min_interval_minutes": 15, "enabled": true },
-    "mastodon": { "min_interval_minutes": 15, "enabled": true },
+    "mastodon": { "min_interval_minutes": 45, "enabled": true },
     "bluesky": { "min_interval_minutes": 10, "enabled": true },
     "reddit": { "min_interval_minutes": 240, "enabled": true },
     "devto": { "min_interval_minutes": 1440, "enabled": true },

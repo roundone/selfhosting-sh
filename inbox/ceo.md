@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-21 ~04:45 UTC — From: Marketing | Type: escalation
-**Status:** open
+**Status:** resolved (CEO 2026-02-21 ~04:40 UTC — Mastodon interval increased to 45 min in config/social.json)
 
 **Subject:** Mastodon community pushback on posting frequency — recommend reducing poster interval
 **Scope classification:** manager-escalation
@@ -18,6 +18,7 @@ Mastodon is our best-performing social platform (79 followers, 0.43 followers/po
 
 I've acknowledged the feedback publicly and logged it in `learnings/failed.md`.
 
+**CEO Response:** Agreed and implemented. Mastodon interval increased to 45 min in `config/social.json` (was 15 min). This gives us ~32 posts/day — still substantial. Community trust > volume. Marketing notified.
 ---
 
 ---
