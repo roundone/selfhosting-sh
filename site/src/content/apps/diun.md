@@ -2,7 +2,7 @@
 title: "How to Self-Host DIUN with Docker Compose"
 description: "Set up DIUN (Docker Image Update Notifier) to monitor Docker images for updates and get notified via Discord, Slack, Telegram, and more."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - diun
@@ -20,7 +20,7 @@ affiliateDisclosure: false
 
 ## What Is DIUN?
 
-[DIUN](https://github.com/crazy-max/diun) (Docker Image Update Notifier) monitors your Docker images and notifies you when a new version is available on the registry. Unlike [Watchtower](/apps/watchtower), which automatically pulls and restarts containers, DIUN only sends notifications — it never touches your running containers. This makes it the safer choice for production environments where you want to control exactly when and how updates are applied.
+[DIUN](https://github.com/crazy-max/diun) (Docker Image Update Notifier) monitors your Docker images and notifies you when a new version is available on the registry. Unlike Watchtower (deprecated — the `containrrr/watchtower` repository is archived), which automatically pulled and restarted containers, DIUN only sends notifications — it never touches your running containers. **DIUN is the recommended replacement for Watchtower** for anyone who wants to stay informed about container updates. For managed auto-updates with manual approval, see [What's Up Docker](https://github.com/fmartinou/whats-up-docker).
 
 ## Prerequisites
 
@@ -444,11 +444,11 @@ DIUN is one of the lightest self-hosted tools you can run. It has virtually no i
 
 ### Does DIUN update my containers?
 
-No. DIUN only notifies you that an update is available. It never pulls images, stops containers, or modifies your stack. You decide when and how to update. If you want automatic updates, use [Watchtower](/apps/watchtower) — but for production, notification-only is the safer approach.
+No. DIUN only notifies you that an update is available. It never pulls images, stops containers, or modifies your stack. You decide when and how to update. Watchtower (deprecated) used to offer automatic updates, but the project has been archived. For actively maintained auto-updates with manual approval, see [What's Up Docker](https://github.com/fmartinou/whats-up-docker). For most setups, notification-only via DIUN is the safer approach.
 
 ### Can I use DIUN and Watchtower together?
 
-Yes, but it is redundant. If Watchtower is already auto-updating your containers, DIUN notifications will tell you about updates that Watchtower will handle anyway. The more useful pattern is DIUN for production (notify, then manually update) and Watchtower for dev/testing environments (auto-update everything).
+There is little reason to, since Watchtower is now deprecated and its repository is archived. If you still have a running Watchtower instance, DIUN notifications would be redundant for the containers Watchtower manages. The recommended approach is to replace Watchtower with DIUN for update notifications and apply updates manually.
 
 ### Does DIUN need a web UI?
 
@@ -464,7 +464,7 @@ DIUN supports Docker, Podman (via the Docker-compatible socket), Swarm, Kubernet
 
 ## Verdict
 
-DIUN is the right tool for anyone running self-hosted services in production. Auto-updating containers with [Watchtower](/apps/watchtower) is convenient for a homelab, but in any environment where stability matters, you want to know about updates before they happen — not after your containers have already been replaced. DIUN gives you exactly that: awareness without risk. It is tiny, reliable, and supports every notification channel you could want. Pair it with [Dockge](/apps/dockge) or [Portainer](/apps/portainer) for container management, and you have a complete Docker workflow where nothing updates without your knowledge. For production self-hosting, DIUN over Watchtower is the obvious choice.
+DIUN is the right tool for anyone running self-hosted services. With Watchtower now deprecated, DIUN is the recommended replacement for staying on top of container updates. In any environment where stability matters, you want to know about updates before they happen — not after your containers have already been replaced. DIUN gives you exactly that: awareness without risk. It is tiny, reliable, and supports every notification channel you could want. Pair it with [Dockge](/apps/dockge) or [Portainer](/apps/portainer) for container management, and you have a complete Docker workflow where nothing updates without your knowledge.
 
 ## Related
 

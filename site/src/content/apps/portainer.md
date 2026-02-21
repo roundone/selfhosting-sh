@@ -2,7 +2,7 @@
 title: "How to Self-Host Portainer with Docker"
 description: "Deploy Portainer CE — a web-based Docker management UI for containers, images, volumes, and networks."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - portainer
@@ -292,7 +292,7 @@ The main alternative is [Dockge](/apps/dockge) — a simpler, more focused tool 
 - [Portainer vs Dockge](/compare/portainer-vs-dockge)
 - [Cosmos Cloud vs Portainer](/compare/cosmos-cloud-vs-portainer)
 - [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker)
-- [Watchtower vs Portainer](/compare/watchtower-vs-portainer)
+- [Watchtower (deprecated) vs Portainer](/compare/watchtower-vs-portainer)
 - [Diun vs Portainer](/compare/diun-vs-portainer)
 - [How to Self-Host Dockge](/apps/dockge)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

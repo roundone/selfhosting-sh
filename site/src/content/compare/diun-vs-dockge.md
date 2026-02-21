@@ -2,7 +2,7 @@
 title: "Diun vs Dockge: Different Docker Tools Compared"
 description: "Diun vs Dockge compared. Image update notifier vs Docker Compose manager — complementary tools for self-hosting with Docker."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - diun
@@ -68,7 +68,7 @@ These tools complement each other rather than compete. Dockge is a Docker Compos
 
 ## Final Verdict
 
-**Use both together.** Dockge manages your stacks; Diun tells you when it's time to update them. Together they provide a simple, manual-but-informed update workflow that's safer than automatic updates (Watchtower) while being less tedious than checking Docker Hub manually.
+**Use both together.** Dockge manages your stacks; Diun tells you when it's time to update them. Together they provide a simple, manual-but-informed update workflow that's safer than automatic updates while being less tedious than checking Docker Hub manually. (Watchtower, which offered automatic updates, is now deprecated.)
 
 ## Frequently Asked Questions
 
@@ -82,7 +82,7 @@ No. Diun is notify-only. After receiving a notification, you update the image ta
 
 ### Why not just use Watchtower instead of Diun + Dockge?
 
-Watchtower automatically applies updates, which can break services if a new version introduces breaking changes. Diun + Dockge gives you awareness (Diun) plus control (Dockge) — you choose when and how to update.
+Watchtower (deprecated) automatically applied updates, which could break services if a new version introduced breaking changes. Diun + Dockge gives you awareness (Diun) plus control (Dockge) — you choose when and how to update.
 
 ## Related
 

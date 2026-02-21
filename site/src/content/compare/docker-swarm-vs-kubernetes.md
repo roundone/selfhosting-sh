@@ -2,7 +2,7 @@
 title: "Docker Swarm vs Kubernetes for Self-Hosting"
 description: "Docker Swarm vs Kubernetes compared for self-hosting. Setup complexity, resource usage, scaling, and which orchestrator fits homelab use."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps: []
 tags:
@@ -174,7 +174,7 @@ This matters for self-hosting. When you hit a Swarm-specific problem, you may st
 - You don't need automatic failover across machines
 - You have never felt limited by Docker Compose
 
-**Seriously — most self-hosters should stay with Docker Compose.** Adding an orchestrator to a single-node setup adds complexity with zero benefit. Orchestration solves multi-node problems. If you don't have multiple nodes, you don't have those problems. A well-managed Docker Compose setup with good backups and [Watchtower](/apps/watchtower) for image updates is all you need.
+**Seriously — most self-hosters should stay with Docker Compose.** Adding an orchestrator to a single-node setup adds complexity with zero benefit. Orchestration solves multi-node problems. If you don't have multiple nodes, you don't have those problems. A well-managed Docker Compose setup with good backups and [DIUN](/apps/diun) for image update notifications is all you need.
 
 ## Final Verdict
 

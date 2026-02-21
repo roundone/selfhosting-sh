@@ -2,7 +2,7 @@
 title: "Diun vs Lazydocker: Different Docker Tools"
 description: "Diun vs Lazydocker compared. Image update notifier vs terminal monitoring UI — when to use each for managing Docker containers."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - diun
@@ -89,7 +89,7 @@ See all containers, their status, CPU/RAM usage, and logs. Navigate with keyboar
 - You want to know when container images have updates available
 - You prefer to update manually but want to be informed
 - You want notifications in Discord, Slack, email, or other channels
-- You want to avoid Watchtower's automatic updates but still stay informed
+- You want to avoid automatic updates (Watchtower is deprecated) and still stay informed
 
 ### Use Lazydocker When...
 
@@ -112,7 +112,7 @@ If you must choose one: Diun provides more ongoing value by keeping you aware of
 
 ### Does Diun automatically update containers like Watchtower?
 
-No. Diun only notifies you that updates are available. You decide when and how to apply them. This is safer than Watchtower's automatic updates, which can break things if an update introduces breaking changes.
+No. Diun only notifies you that updates are available. You decide when and how to apply them. This is safer than automatic updates. (Note: Watchtower (deprecated), which did apply automatic updates, has been archived and is no longer maintained.)
 
 ### Can Lazydocker show which containers have updates available?
 

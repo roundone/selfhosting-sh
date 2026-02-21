@@ -2,7 +2,7 @@
 title: "Docker Security Best Practices"
 description: "Secure your Docker containers and self-hosted services — run as non-root, limit capabilities, manage secrets, and harden your Docker daemon."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "foundations"
 apps: []
 tags: ["docker", "security", "hardening", "foundations"]
@@ -72,7 +72,7 @@ volumes:
   - /var/run/docker.sock:/var/run/docker.sock
 ```
 
-**Services that need the socket:** Portainer, Watchtower, Traefik (for auto-discovery). These are management tools that inherently need Docker access.
+**Services that need the socket:** Portainer, Watchtower (deprecated), Traefik (for auto-discovery). These are management tools that inherently need Docker access.
 
 **Mitigations when you must use it:**
 1. Use a Docker socket proxy that restricts API access:
@@ -360,7 +360,7 @@ For every Docker Compose deployment:
 
 ### 1. Mounting the Docker Socket Into Every Container
 
-Only management tools (Portainer, Watchtower, Traefik) need it. A compromised container with socket access owns your entire server.
+Only management tools (Portainer, Watchtower (deprecated), Traefik) need it. A compromised container with socket access owns your entire server.
 
 ### 2. Running Everything as Root
 

@@ -2,7 +2,7 @@
 title: "Docker vs Podman for Self-Hosting"
 description: "Docker vs Podman compared for self-hosting — architecture, rootless support, Compose compatibility, and which container runtime to choose for your home server."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "foundations"
 apps: []
 tags: ["foundations", "docker", "podman", "containers", "rootless"]
@@ -109,7 +109,7 @@ This is where Docker wins decisively for self-hosting:
 - **Tutorials:** Searching "self-host [app]" returns Docker guides 95% of the time.
 - **Troubleshooting:** When something breaks, Docker error messages return more Stack Overflow results.
 - **Tools:** Management UIs like Portainer, Dockge, and Yacht are built for Docker. Podman support is partial or nonexistent in most of them.
-- **Watchtower/container updates:** Watchtower, the most popular auto-updater, only works with Docker. Podman users need `podman auto-update` with specific image label requirements.
+- **Container updates:** Watchtower (deprecated — the repository is archived) only worked with Docker. [DIUN](/apps/diun) and [What's Up Docker](https://github.com/fmartinou/whats-up-docker) are the actively maintained alternatives. Podman users can use `podman auto-update` with specific image label requirements.
 
 ### Image Compatibility
 
@@ -393,4 +393,4 @@ Portainer requires the Docker socket API. You can expose a Podman socket that's 
 
 ### Do Watchtower and other Docker tools work with Podman?
 
-Watchtower does not work with Podman. For automated container updates with Podman, use `podman auto-update`, which checks for new images and recreates containers that have the `io.containers.autoupdate=registry` label. Most Docker-specific tooling (Watchtower, Dockge, Yacht) assumes the Docker daemon API. Some tools work through the Podman socket compatibility layer, but expect rough edges.
+Watchtower (deprecated) does not work with Podman. For automated container updates with Podman, use `podman auto-update`, which checks for new images and recreates containers that have the `io.containers.autoupdate=registry` label. For update notifications, [DIUN](/apps/diun) supports Podman via the Docker-compatible socket. Most Docker-specific tooling (Dockge, Yacht) assumes the Docker daemon API. Some tools work through the Podman socket compatibility layer, but expect rough edges.

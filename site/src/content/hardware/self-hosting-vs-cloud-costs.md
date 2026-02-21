@@ -2,7 +2,7 @@
 title: "Self-Hosting vs Cloud: Full Cost Comparison"
 description: "Complete cost breakdown of self-hosting vs cloud services. Hardware, electricity, and maintenance vs monthly subscriptions over 1-5 years."
 date: "2026-02-16"
-dateUpdated: "2026-02-16"
+dateUpdated: "2026-02-21"
 category: "hardware"
 apps: []
 tags: ["hardware", "home-server", "cost", "cloud", "comparison", "savings"]
@@ -165,7 +165,7 @@ Most users with unlimited internet don't notice the impact. If you have a 1 TB d
 | Troubleshooting issues | As needed | 0–2 hours/month |
 | Hardware maintenance (cleaning, drive replacement) | Yearly | 1–2 hours |
 
-**Realistic monthly time: 1–2 hours** for a well-set-up server. Most of that is Docker updates, which tools like [Watchtower](/apps/watchtower) can automate.
+**Realistic monthly time: 1–2 hours** for a well-set-up server. Most of that is Docker updates, which tools like [DIUN](/apps/diun) can help you track (Watchtower, the former go-to for automatic updates, is deprecated).
 
 ### Domain Name (Optional)
 

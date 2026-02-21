@@ -339,13 +339,15 @@ docker image prune -f
 
 ## Verdict
 
-Watchtower is the simplest way to keep your self-hosted containers updated. For a homelab where you run 10-30 containers and want them to stay current without manual intervention, it is the right tool.
+**Watchtower is deprecated.** The repository is archived, and the project is no longer maintained. While existing installations continue to work, you should plan to migrate to an alternative.
 
-**Use it for homelabs.** Automatic updates mean you get security patches and bug fixes without thinking about it. Enable notifications so you know what changed, and enable cleanup so old images do not fill your disk.
+**If you currently use Watchtower:** It will keep working — the container image exists and functions. But you will receive no bug fixes, security patches, or new features. The risk of auto-updating containers (especially databases) mid-transaction remains a fundamental design concern that was never addressed.
 
-**Be cautious in production.** Automatic, unattended updates to production services are risky. An upstream breaking change will propagate to your server without warning. If you run anything mission-critical, use `WATCHTOWER_LABEL_ENABLE` to limit which containers are auto-updated, or use [Diun](/apps/diun) instead — it notifies you about available updates without applying them, so you stay in control of when updates happen.
+**For new setups, use one of these instead:**
+- **[DIUN](/apps/diun)** — notifies you when updates are available without touching your containers. You decide when and how to apply updates. The safest approach.
+- **[What's Up Docker (WUCT)](https://github.com/fmartinou/whats-up-docker)** — actively maintained, provides update notifications with manual approval workflows. The closest feature-for-feature replacement for Watchtower, but with a safer update model.
 
-For most self-hosters, Watchtower with label filtering and notifications is the ideal setup: auto-update the things that are safe to update, get notified about everything, and manually handle the rest.
+If you insist on fully automatic updates for non-critical services, Watchtower still functions. But for anything you care about, use DIUN or WUCT instead.
 
 ## Frequently Asked Questions
 

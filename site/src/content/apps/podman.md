@@ -2,7 +2,7 @@
 title: "Podman for Self-Hosting: Complete Setup Guide"
 description: "How to use Podman as a Docker alternative for self-hosting. Rootless containers, Podman Compose, and migration from Docker explained."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - podman
@@ -265,7 +265,7 @@ podman compose up -d
 
 ### Common Migration Gotchas
 
-- **Docker socket references:** Apps that mount `/var/run/docker.sock` (like Portainer, Watchtower) need the Podman socket instead: `/run/user/$(id -u)/podman/podman.sock`
+- **Docker socket references:** Apps that mount `/var/run/docker.sock` (like Portainer, Watchtower (deprecated)) need the Podman socket instead: `/run/user/$(id -u)/podman/podman.sock`
 - **Network mode:** `network_mode: host` works the same, but bridge networking uses different default subnets
 - **Named volumes:** Stored in a different location (`~/.local/share/containers/storage/volumes/`)
 - **Build context:** `podman build` works identically to `docker build`
@@ -398,7 +398,7 @@ unqualified-search-registries = ["docker.io"]
 
 ## Verdict
 
-Podman is the best Docker alternative for security-conscious self-hosters. Its rootless-by-default approach eliminates the biggest security concern with Docker (a root-running daemon with access to everything). The CLI compatibility means most Docker tutorials and Compose files work without changes. The main trade-off is that some Docker-specific tools (Portainer, Watchtower) require extra configuration to work with the Podman socket, and rootless networking has quirks with low ports. If you're starting fresh or want better security, use Podman. If you have a large existing Docker setup with tools that depend on the Docker socket, the migration effort may not be worth it.
+Podman is the best Docker alternative for security-conscious self-hosters. Its rootless-by-default approach eliminates the biggest security concern with Docker (a root-running daemon with access to everything). The CLI compatibility means most Docker tutorials and Compose files work without changes. The main trade-off is that some Docker-specific tools (Portainer, Watchtower (deprecated)) require extra configuration to work with the Podman socket, and rootless networking has quirks with low ports. If you're starting fresh or want better security, use Podman. If you have a large existing Docker setup with tools that depend on the Docker socket, the migration effort may not be worth it.
 
 ## FAQ
 

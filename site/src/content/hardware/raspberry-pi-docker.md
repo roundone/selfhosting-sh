@@ -2,7 +2,7 @@
 title: "Raspberry Pi Docker Setup Guide"
 description: "How to install and run Docker on a Raspberry Pi 5. Complete setup guide with Docker Compose, ARM64 images, and performance tips."
 date: "2026-02-16"
-dateUpdated: "2026-02-16"
+dateUpdated: "2026-02-21"
 category: "hardware"
 apps: []
 tags: ["hardware", "raspberry-pi", "docker", "arm64", "self-hosting"]
@@ -224,22 +224,28 @@ docker stats --no-stream
 
 ## Automatic Container Updates
 
-Use Watchtower to automatically update containers when new images are published:
+> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Use [DIUN](/apps/diun) instead — it notifies you when updates are available without touching your running containers.
+
+Use DIUN to get notified when container image updates are available:
 
 ```yaml
 services:
-  watchtower:
-    image: containrrr/watchtower:1.7.1
-    container_name: watchtower
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    environment:
-      WATCHTOWER_CLEANUP: "true"
-      WATCHTOWER_SCHEDULE: "0 0 4 * * *"  # Check at 4 AM daily
+  diun:
+    image: crazymax/diun:4.31.0
+    container_name: diun
     restart: unless-stopped
+    volumes:
+      - diun-data:/data
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      DIUN_WATCH_SCHEDULE: "0 */6 * * *"
+      DIUN_PROVIDERS_DOCKER: "true"
+
+volumes:
+  diun-data:
 ```
 
-**Caution:** Watchtower updates ALL containers automatically. For production setups, prefer manual updates or pin image versions and update deliberately.
+DIUN checks for new image versions every 6 hours and sends notifications through Discord, Slack, email, or 20+ other channels. You decide when and how to apply updates. See [How to Self-Host DIUN](/apps/diun) for full configuration.
 
 ## Troubleshooting
 

@@ -2,7 +2,7 @@
 title: "Portainer vs Dockge: Which Docker Manager?"
 description: "Portainer vs Dockge compared for self-hosting. Full feature breakdown, resource usage, installation complexity, and an opinionated verdict on the winner."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - portainer
@@ -184,7 +184,7 @@ With Dockge, your stacks are standard `compose.yaml` files in `/opt/stacks/`. Un
 
 ### Does either tool support automatic container updates?
 
-Neither Portainer CE nor Dockge has built-in automatic image updates. Portainer supports webhook-triggered redeployment, which can be connected to a CI/CD pipeline. For automated updates, use a dedicated tool like [Watchtower](/apps/watchtower) or [Diun](/apps/diun) alongside either manager.
+Neither Portainer CE nor Dockge has built-in automatic image updates. Portainer supports webhook-triggered redeployment, which can be connected to a CI/CD pipeline. For update notifications, use [Diun](/apps/diun) alongside either manager. (Watchtower, which offered automatic updates, is now deprecated.)
 
 ## Related
 
@@ -193,7 +193,7 @@ Neither Portainer CE nor Dockge has built-in automatic image updates. Portainer 
 - [Best Self-Hosted Docker Management](/best/docker-management)
 - [Portainer vs Yacht](/compare/portainer-vs-yacht)
 - [Dockge vs Yacht](/compare/dockge-vs-yacht)
-- [How to Self-Host Watchtower](/apps/watchtower)
+- [How to Self-Host DIUN](/apps/diun)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Networking](/foundations/docker-networking)
 - [Docker Volumes and Storage](/foundations/docker-volumes)

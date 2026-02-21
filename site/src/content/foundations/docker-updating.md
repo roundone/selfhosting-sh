@@ -2,7 +2,7 @@
 title: "Updating Docker Containers Safely"
 description: "How to update self-hosted Docker containers without losing data — manual updates, Watchtower automation, rollback strategies, and best practices."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "foundations"
 apps: []
 tags: ["docker", "updates", "maintenance", "foundations"]
@@ -121,6 +121,8 @@ docker compose up -d
 
 ## Automated Updates with Watchtower
 
+> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. For new setups, use [DIUN](/apps/diun) (notify-only, never touches containers) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval). The configuration below is kept for reference.
+
 Watchtower monitors your containers and automatically updates them when new images are available.
 
 ```yaml
@@ -185,7 +187,7 @@ services:
 
 - Monitoring tools (Uptime Kuma, Grafana)
 - Dashboards (Homepage, Homarr)
-- Utility containers (Watchtower itself, DDNS updaters)
+- Utility containers (DDNS updaters)
 - Stateless tools (Stirling PDF, PrivateBin)
 
 ## Version Pinning Strategy
@@ -324,7 +326,7 @@ Check for updates weekly. Apply security patches immediately. Apply feature upda
 
 ### Is Watchtower safe to use?
 
-Watchtower is safe for non-critical, stateless services. Use `WATCHTOWER_MONITOR_ONLY=true` for notifications on critical services, then update manually. Never auto-update databases.
+Watchtower is now deprecated — the `containrrr/watchtower` repository has been archived and will not receive further updates or security patches. If you have an existing installation, it will continue to function, but for new setups use [DIUN](/apps/diun) for update notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) for managed updates. Never auto-update databases regardless of the tool you use.
 
 ### What if I'm many versions behind?
 

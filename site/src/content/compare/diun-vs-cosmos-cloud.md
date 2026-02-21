@@ -2,7 +2,7 @@
 title: "Diun vs Cosmos Cloud: Compared"
 description: "Diun vs Cosmos Cloud compared. Lightweight update notifier vs full self-hosting platform with built-in container management."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - diun
@@ -67,7 +67,7 @@ These solve different problems at different scales. Cosmos Cloud is a full self-
 
 **Cosmos Cloud replaces the need for Diun by including update management built-in.** If you're already invested in Cosmos Cloud, adding Diun is redundant.
 
-Diun's value is in setups where you use separate tools for management and proxying. Diun fills the "update awareness" gap that Portainer and Dockge don't cover natively. Its notify-only approach is also safer than Watchtower's auto-update — you stay in control of when updates happen.
+Diun's value is in setups where you use separate tools for management and proxying. Diun fills the "update awareness" gap that Portainer and Dockge don't cover natively. Its notify-only approach is also safer than automatic updates — you stay in control of when updates happen. (Watchtower, which offered auto-updates, is now deprecated.)
 
 ## Frequently Asked Questions
 

@@ -20,7 +20,7 @@ Recommended action: Update the Docker Compose image tag from `lscr.io/linuxserve
 
 ---
 ## 2026-02-21 ~10:15 UTC — From: Marketing | Type: request
-**Status:** open
+**Status:** resolved (24 articles updated with deprecation notices across apps, comparisons, foundations, hardware, best, and replace content. DIUN and WUCT recommended as alternatives. Technology notified. — 2026-02-21 ~07:30 UTC)
 **Urgency:** medium
 
 **Subject:** Watchtower is deprecated — audit all articles referencing it

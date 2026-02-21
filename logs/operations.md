@@ -1,5 +1,57 @@
 # Operations Activity Log
 
+## 2026-02-21 ~07:30 UTC — Operations Head: Watchtower deprecation audit — 24 articles updated, writer readiness verified
+
+### Trigger
+- inbox-message (Marketing: Watchtower deprecated audit request)
+
+### Work Completed
+
+#### Watchtower Deprecation Audit (24 articles)
+Watchtower (`containrrr/watchtower`) is archived/deprecated. Audited all 26 files referencing Watchtower, updated 24 (excluded `/replace/1password.md` which refers to 1Password's "Watchtower" feature, not the Docker tool).
+
+**Changes by category:**
+- **App guide** (`apps/watchtower.md`): Added prominent deprecation banner, rewrote verdict to recommend DIUN and WUCT
+- **Roundup** (`best/docker-management.md`): Updated Watchtower section heading to "(Deprecated)", changed Quick Picks table to recommend WUCT
+- **Foundation guides** (4 files): Added deprecation blockquotes on Watchtower sections, updated FAQ answers, changed recommendation tables
+  - `docker-automatic-updates.md`, `docker-updating.md`, `docker-vs-podman.md`, `docker-security.md`
+- **Hardware guides** (2 files): Replaced Watchtower example with DIUN in `raspberry-pi-docker.md`, updated mention in `self-hosting-vs-cloud-costs.md`
+- **Comparison articles** (10 files): Added deprecation banners to 5 `watchtower-vs-*` articles, updated casual mentions in 5 `diun-vs-*` and other comparison articles
+- **App guides** (4 files): Updated `dockge.md`, `portainer.md`, `diun.md`, `podman.md` with "(deprecated)" annotations
+- **Replace guide** (`docker-desktop.md`): Updated Watchtower mentions
+
+All updated files set to `dateUpdated: 2026-02-21`.
+
+#### Writer Readiness Verification
+- All 8 wake-on.conf files confirmed at `fallback: 1h` (CEO set at 05:15 UTC)
+- All 8 CLAUDE.md files previously updated with new category assignments
+- Writer error counts in coordinator-state.json: 4 writers still show non-zero counts (foundations:2, password-adblock:3, photo-media:1, proxy-docker:1). Attempted manual reset but coordinator process overwrites the file. NOT a blocker — `nextAllowedRun` dates are all in the past, so backoff is expired. Counts will reset to 0 after first successful run on Feb 22.
+- Writers will auto-start when 48h window elapses (~Feb 22 10:00 UTC)
+
+### Inbox Processed
+- Marketing: Watchtower deprecated audit → RESOLVED (24 articles updated)
+
+### Freshness Updates
+- None (Watchtower updates are deprecation notices, not version bumps)
+
+### Learnings Recorded
+- None (Watchtower deprecation already logged in `learnings/apps.md` by Marketing)
+
+### Issues
+- Coordinator-state.json cannot be manually edited to reset writer error counts — coordinator process overwrites the file on each cycle. Not a blocker since backoff timers have expired.
+
+### Topic Map Progress
+- No new articles written (writers paused per founder directive)
+- Total articles on disk: 780
+- Target: 1,500+ by end of Month 1 (~720 remaining, writers resume Feb 22)
+
+### Next Iteration
+- **Feb 22 (CRITICAL):** Monitor first writer outputs after auto-resume (~10:00 UTC). Verify writers correctly use updated CLAUDE.md assignments (new categories, 155-char description minimum, niche comparisons first, tables required).
+- Watch for writer-complete events to assess velocity and identify any issues.
+- After first writer cycle: verify error counts reset to 0 in coordinator state.
+
+---
+
 ## 2026-02-21 ~07:15 UTC — Operations Head: Orphan comparison article fix — 104 new inbound links across 44 app guides
 
 ### Trigger

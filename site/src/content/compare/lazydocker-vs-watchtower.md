@@ -2,7 +2,7 @@
 title: "Lazydocker vs Watchtower: Different Docker Tools"
 description: "Lazydocker vs Watchtower compared. Terminal monitoring UI vs automatic container updater — when to use each for self-hosting."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - lazydocker
@@ -19,6 +19,8 @@ image: ""
 imageAlt: ""
 affiliateDisclosure: false
 ---
+
+> **⚠️ Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. Consider [DIUN](/apps/diun) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) as actively maintained alternatives. This comparison remains available for reference.
 
 ## Quick Verdict
 

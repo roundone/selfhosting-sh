@@ -2,7 +2,7 @@
 title: "How to Self-Host Dockge with Docker Compose"
 description: "Set up Dockge for managing Docker Compose stacks through a clean web UI. Lightweight Portainer alternative focused on Compose."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "docker-management"
 apps:
   - dockge
@@ -251,7 +251,7 @@ Dockge is the best Docker Compose management UI for self-hosters who want simpli
 - [Dockge vs Portainer](/compare/portainer-vs-dockge)
 - [Cosmos Cloud vs Dockge](/compare/cosmos-cloud-vs-dockge)
 - [Lazydocker vs Dockge](/compare/lazydocker-vs-dockge)
-- [Watchtower vs Dockge](/compare/watchtower-vs-dockge)
+- [Watchtower (deprecated) vs Dockge](/compare/watchtower-vs-dockge)
 - [Diun vs Dockge](/compare/diun-vs-dockge)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Volumes and Storage](/foundations/docker-volumes)

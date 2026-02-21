@@ -1,8 +1,8 @@
 ---
 title: "Automatic Docker Container Updates"
-description: "Set up automatic Docker container updates with Watchtower and alternatives — update strategies, rollback plans, and safe automation practices."
+description: "Set up automatic Docker container updates with DIUN, What's Up Docker, and alternatives — update strategies, rollback plans, and safe automation."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "foundations"
 apps: []
 tags: ["docker", "updates", "watchtower", "automation", "foundations"]
@@ -43,7 +43,9 @@ Automatic updates are convenient but come with risk. A broken update at 3 AM wit
 
 ## Watchtower
 
-Watchtower is the most popular automatic update tool for Docker containers. It monitors running containers, checks for new image versions, pulls them, and recreates containers with the same configuration.
+> **Watchtower is deprecated.** The `containrrr/watchtower` repository is archived and no longer maintained. For new setups, use [DIUN](/apps/diun) (notify-only, never touches containers) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained, supports manual approval). The configuration below is kept for reference if you have an existing Watchtower installation.
+
+Watchtower was the most popular automatic update tool for Docker containers. It monitors running containers, checks for new image versions, pulls them, and recreates containers with the same configuration.
 
 ### Basic Setup
 
@@ -249,9 +251,9 @@ See [Backup Docker Volumes](/foundations/backup-docker-volumes) for backup strat
 | Category | Update Frequency | Method |
 |----------|-----------------|--------|
 | Security-critical (reverse proxy, auth) | Weekly | Manual or auto with notifications |
-| Standard web apps | Weekly to monthly | Auto with Watchtower |
+| Standard web apps | Weekly to monthly | Auto with [DIUN](/apps/diun) notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) |
 | Databases | Monthly, after backup | Manual only |
-| Monitoring tools | Monthly | Auto with Watchtower |
+| Monitoring tools | Monthly | Auto with [DIUN](/apps/diun) notifications or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) |
 | Media servers | Monthly | Auto or manual |
 
 ### Cron-Based Manual Updates
@@ -282,7 +284,7 @@ done
 
 ### Is Watchtower safe to use in production?
 
-Watchtower is widely used but carries inherent risk — any automatic update can break things. Mitigate by: excluding databases, using notifications, having backups, and scheduling updates during low-traffic hours. For critical setups, use monitor-only mode and update manually.
+Watchtower is now deprecated — the `containrrr/watchtower` repository has been archived. It was widely used but carried inherent risk, as any automatic update can break things. For new setups, use [DIUN](/apps/diun) (notify-only) or [What's Up Docker](https://github.com/fmartinou/whats-up-docker) (actively maintained with manual approval support). If you have an existing Watchtower installation, it will continue to function but will not receive updates or security patches.
 
 ### Why shouldn't I use `:latest` tags with auto-updates?
 
