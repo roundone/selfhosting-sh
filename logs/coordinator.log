@@ -10230,3 +10230,19 @@ Yes, Traefi..."
 [2026-02-21T10:30:35.502Z] AGENT ceo starting (trigger: pending-trigger)
 [2026-02-21T10:30:35.503Z] AGENT ceo started (pid: 315279)
 [2026-02-21T10:30:35.503Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T10:31:37.508Z] AGENT technology exited (code=0, duration: 277s)
+[2026-02-21T10:31:37.508Z] STATE technology lastRun updated, errors reset
+[2026-02-21T10:31:37.508Z] PENDING technology processing queued trigger
+[2026-02-21T10:31:37.508Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T10:34:53.583Z] STATUS running=1/4 writers=0/1 freeMem=6860MB agents=[ceo(258s)] paused=no
+[2026-02-21T10:34:53.584Z] SOCIAL running social-poster.js
+[2026-02-21T10:34:53.616Z] SOCIAL 2026-02-21T10:34:53.614Z [social-poster] starting
+[2026-02-21T10:34:53.625Z] SOCIAL 2026-02-21T10:34:53.625Z [social-poster] queue has 2657 posts
+[2026-02-21T10:34:53.825Z] SOCIAL 2026-02-21T10:34:53.825Z [social-poster] OK x: posted "Proxmox + ZFS tip: don't use qcow2 files on ZFS. Use zvols i..."
+[2026-02-21T10:34:53.836Z] SOCIAL 2026-02-21T10:34:53.836Z [social-poster] removed 1 posted items from queue (2656 remaining)
+[2026-02-21T10:34:53.837Z] SOCIAL 2026-02-21T10:34:53.837Z [social-poster] done — 1 attempted, 1 succeeded, 2656 remaining in queue
+[2026-02-21T10:34:53.843Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:35:13.889Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T10:35:13.891Z] AGENT marketing started (pid: 316300)
+[2026-02-21T10:36:37.691Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T10:36:37.692Z] AGENT technology started (pid: 316630)
