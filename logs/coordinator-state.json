@@ -1,7 +1,7 @@
 {
   "agents": {
     "bi-finance": {
-      "lastRun": "2026-02-21T00:27:59.314Z",
+      "lastRun": "2026-02-21T04:42:52.626Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null
     },
@@ -77,16 +77,26 @@
   "lastReleasesCheck": "2026-02-21T04:24:50.177Z",
   "lastArchiveCleanup": "2026-02-21T04:24:50.180Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T04:39:50.186Z",
+  "lastSocialPosterRun": "2026-02-21T04:49:50.217Z",
   "running": {
-    "bi-finance": {
-      "pid": 251867,
-      "startTime": "2026-02-21T04:30:00.844Z",
-      "trigger": "unknown"
-    },
     "marketing": {
       "pid": 253075,
       "startTime": "2026-02-21T04:34:48.484Z",
+      "trigger": "unknown"
+    },
+    "technology": {
+      "pid": 254654,
+      "startTime": "2026-02-21T04:44:32.775Z",
+      "trigger": "unknown"
+    },
+    "ceo": {
+      "pid": 255117,
+      "startTime": "2026-02-21T04:46:32.557Z",
+      "trigger": "unknown"
+    },
+    "bi-finance": {
+      "pid": 255562,
+      "startTime": "2026-02-21T04:47:52.750Z",
       "trigger": "unknown"
     }
   }

@@ -9151,3 +9151,29 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:41:32.390Z] STATE ceo lastRun updated, errors reset
 [2026-02-21T04:41:32.391Z] PENDING ceo processing queued trigger
 [2026-02-21T04:41:32.391Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T04:42:52.626Z] AGENT bi-finance exited (code=0, duration: 772s)
+[2026-02-21T04:42:52.626Z] STATE bi-finance lastRun updated, errors reset
+[2026-02-21T04:42:52.627Z] PENDING bi-finance processing queued trigger
+[2026-02-21T04:42:52.627Z] MINGAP bi-finance — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T04:44:32.773Z] AGENT technology starting (trigger: pending-trigger)
+[2026-02-21T04:44:32.775Z] AGENT technology started (pid: 254654)
+[2026-02-21T04:44:50.203Z] STATUS running=2/4 writers=0/1 freeMem=6680MB agents=[marketing(602s), technology(17s)] paused=no
+[2026-02-21T04:44:50.203Z] SOCIAL running social-poster.js
+[2026-02-21T04:44:50.235Z] SOCIAL 2026-02-21T04:44:50.233Z [social-poster] starting
+[2026-02-21T04:44:50.245Z] SOCIAL 2026-02-21T04:44:50.245Z [social-poster] queue has 2568 posts
+[2026-02-21T04:44:50.640Z] SOCIAL 2026-02-21T04:44:50.640Z [social-poster] OK bluesky: posted "Running Immich for photo management? The face recognition mo..."
+[2026-02-21T04:44:50.650Z] SOCIAL 2026-02-21T04:44:50.650Z [social-poster] removed 1 posted items from queue (2567 remaining)
+[2026-02-21T04:44:50.650Z] SOCIAL 2026-02-21T04:44:50.650Z [social-poster] done — 1 attempted, 1 succeeded, 2567 remaining in queue
+[2026-02-21T04:44:50.655Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:46:32.555Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T04:46:32.557Z] AGENT ceo started (pid: 255117)
+[2026-02-21T04:47:52.748Z] AGENT bi-finance starting (trigger: pending-trigger)
+[2026-02-21T04:47:52.750Z] AGENT bi-finance started (pid: 255562)
+[2026-02-21T04:49:50.216Z] STATUS running=4/4 writers=0/1 freeMem=6324MB agents=[marketing(902s), technology(317s), ceo(198s), bi-finance(117s)] paused=no
+[2026-02-21T04:49:50.217Z] SOCIAL running social-poster.js
+[2026-02-21T04:49:50.252Z] SOCIAL 2026-02-21T04:49:50.250Z [social-poster] starting
+[2026-02-21T04:49:50.260Z] SOCIAL 2026-02-21T04:49:50.260Z [social-poster] queue has 2567 posts
+[2026-02-21T04:49:50.493Z] SOCIAL 2026-02-21T04:49:50.493Z [social-poster] OK x: posted "1Password family plan: $60/yr. Vaultwarden on Docker: $0/yr...."
+[2026-02-21T04:49:50.502Z] SOCIAL 2026-02-21T04:49:50.502Z [social-poster] removed 1 posted items from queue (2566 remaining)
+[2026-02-21T04:49:50.503Z] SOCIAL 2026-02-21T04:49:50.502Z [social-poster] done — 1 attempted, 1 succeeded, 2566 remaining in queue
+[2026-02-21T04:49:50.508Z] SOCIAL social-poster.js exited (code: 0)
