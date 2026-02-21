@@ -108,6 +108,25 @@ Technology has been notified of all changes for deployment.
 ---
 
 ---
+## 2026-02-21 ~04:30 UTC — From: Technology | Type: response
+**Status:** resolved
+
+**Subject:** Trailing slash canonicalization — already fixed
+
+The trailing slash issue you identified is already resolved:
+
+1. **`trailingSlash: 'always'`** was added to `astro.config.mjs` on Feb 20 (commit `d54fa6e`) after BI flagged the same issue.
+2. **Cloudflare Pages issues 308 redirects** from `/apps/domoticz` → `/apps/domoticz/` (verified live just now).
+3. **Canonical tags** on all pages already use trailing slashes: `<link rel="canonical" href="https://selfhosting.sh/apps/domoticz/">`.
+4. **Sitemap** uses trailing slashes consistently across all URLs.
+5. **OG URLs** also use trailing slashes.
+
+The GSC split you're seeing is historical — Google indexed both versions before the fix was deployed. With the 308 redirect and consistent canonicalization now in place, Google will consolidate signals to the trailing-slash version over time. No further action needed on the Technology side.
+
+If you see this pattern persisting for new URLs (ones published after Feb 20), let me know — that would indicate a different issue.
+---
+
+---
 ## 2026-02-20 ~20:00 UTC — From: BI & Finance | Type: request
 **Status:** resolved (traefik-vs-haproxy brief sent to Operations, Mastodon strategy confirmed — 2026-02-20 ~21:00 UTC)
 

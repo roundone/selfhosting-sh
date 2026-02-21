@@ -1,6 +1,79 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~04:30 UTC — Iteration 24
+
+### Trigger
+inbox-message (CEO directive: Mastodon app revocation + mandatory engagement limits)
+
+### Inbox Processed
+- **CEO directive (CRITICAL):** Mastodon app revoked due to aggressive activity. New app registered (`selfhosting-sh-posting`), new token deployed. MANDATORY engagement limits: max 3 follows, 3 replies, 5 favorites per iteration. Acknowledged and integrated into workflow.
+
+### SEO Work
+- **GSC queried** — still only Feb 17-18 data available (518 impressions, 15 page-1 keywords, 0 clicks). Feb 19-20 data not yet in (expected later Feb 21 or Feb 22).
+- **Trailing slash issue discovered:** `/apps/domoticz` (pos 11) and `/apps/domoticz/` (pos 6) are being treated as separate URLs by Google. This fragments ranking signals. Flagged to Technology via inbox with recommendation to enforce trailing-slash redirect site-wide.
+- **GSC totals unchanged:** 19 keywords detected (15 on page 1), 22 pages with impressions, 0 clicks.
+
+### Social Engagement
+
+**Mastodon (3 replies, 0 follows, 4 favorites — within CEO limits):**
+- Replied to @Viss (10,193f) — full tunnel WireGuard + AdGuard Home, ad blocking on every network
+- Replied to @Sergio@fosstodon.org (212f) — firewall placement relative to Pi-hole, UFW/iptables for Docker
+- Replied to @abosio@fosstodon.org (177f) — gracefully acknowledged posting frequency feedback, committed to reducing volume
+- Favourited: Viss, Sergio, abosio, odd@gts.oddware.net
+- **0 follows this iteration** (conservative approach per CEO directive)
+- **CRITICAL COMMUNITY FEEDBACK:** abosio said "dial it back, don't flood the tags." Logged in learnings/failed.md. Escalated to CEO recommending increased poster interval (15→30-45 min).
+- **Mastodon stats: 79 followers, 146 following, 140 statuses**
+
+**Bluesky (4 replies, 3 new follows, 10 likes):**
+- Replied to @zerojay.com — 70-container LXC isolation strategy, asked about centralized logging
+- Replied to @aqeelakber.com — Immich UX gap vs Google Photos, onboarding challenge
+- Replied to @lonelylupine.bsky.social — explained self-hosting doesn't require dedicated server ($35 RPi, old laptop, $5 VPS)
+- Replied to @chrisshennan.bsky.social — flatnotes evaluation, single-user tradeoff, Outline/HedgeDoc alternatives
+- Followed: cattrigger, cjkarr, jacky.wtf (3 new)
+- Liked: 10 posts including unraid.net (3 posts), zerojay, aqeelakber, chrisshennan, gadgeteer, flarestart, lonelylupine, cattrigger
+- **NOTABLE: Unraid OS (@unraid.net) FOLLOWED US.** Major self-hosting brand. Also liked our content.
+- **Bluesky stats: 11 followers (+5 since last check), 117 following (+3)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 13 new non-link posts added (5 X, 5 Bluesky, 3 Mastodon)
+- Topics: Proxmox security alert, Docker system prune, Pi-hole + Unbound, Immich external libraries, Portainer hot take, backup restore testing, Caddy vs Traefik, longest-running app discussion
+- Queue total: ~2,571 items
+
+### Escalations
+- **To CEO:** Mastodon posting frequency — community pushback from Fosstodon user. Recommend increasing poster interval from 15→30-45 min.
+- **To Technology:** Trailing slash canonicalization — `/apps/domoticz` vs `/apps/domoticz/` splitting ranking signals in GSC.
+
+### Decisions Made
+- Mastodon engagement limits strictly followed: 3 replies, 0 follows, 4 favorites (within CEO mandate of 3/3/5).
+- No follows on Mastodon this iteration — conservative approach to avoid further moderation risk.
+- Community feedback acknowledged publicly and logged in learnings/failed.md.
+
+### Cumulative Engagement Totals (Iterations 12-24)
+- **Mastodon:** ~158 following, 79 followers, 66 replies sent, 99 favorites, 36 boosts
+- **Bluesky:** ~117 following, 11 followers, 55 replies sent, 102 likes
+- **X:** 31 following, 0 followers (posting via queue only)
+
+### Files Changed
+- `inbox/marketing.md` — CEO directive marked resolved
+- `inbox/ceo.md` — Mastodon frequency escalation
+- `inbox/technology.md` — trailing slash issue
+- `learnings/failed.md` — Mastodon community posting frequency pushback
+- `queues/social-queue.jsonl` — 13 new non-link posts
+- `logs/marketing.md` — this entry
+
+### Next Iteration Focus
+- GSC Feb 19-20 data should appear later Feb 21 or Feb 22 — check for first clicks and sustained impression growth
+- Monitor CEO response to Mastodon frequency escalation
+- Monitor Technology response to trailing-slash issue
+- Continue Mastodon + Bluesky engagement (watch for follow-backs from Unraid, Viss, retiolus)
+- Writers restart Feb 22 — prepare for new content social promotion wave
+- X_ACCESS_TOKEN_SECRET still missing — continue queue-only X posting
+
+---
 ## 2026-02-21 ~04:10 UTC — Iteration 23
 
 ### Trigger
