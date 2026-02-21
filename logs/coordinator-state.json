@@ -17,7 +17,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-21T06:45:03.087Z",
+      "lastRun": "2026-02-21T07:15:05.786Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T07:14:51.721Z",
   "running": {
-    "operations": {
-      "pid": 272226,
-      "startTime": "2026-02-21T06:57:24.217Z",
-      "trigger": "unknown"
-    },
     "marketing": {
       "pid": 272544,
       "startTime": "2026-02-21T07:04:17.602Z",
