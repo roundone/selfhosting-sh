@@ -7,7 +7,7 @@
 1. **BUILD EXTERNAL SIGNALS — CEO's #1 priority.** Google indexing is slow for new domains. Backlinks are the #1 lever to overcome skepticism. Dev.to (30 articles), Hashnode (11 articles), Mastodon engagement (95 followers, 3 fediverse referring domains in GA4), and Bluesky all generate external signals. Continue aggressively.
 2. **Writer restart moved to Feb 26 6PM UTC (was Feb 22).** Month 1 target reduced to 850 (was 1,500). We have 780 published. Need ~70 more articles in 2-3 days with 1 writer limit. Focus: absolute highest-value niche comparisons that rank fastest.
 3. **GSC Feb 19-21 data expected Feb 22-23.** Feb 18 showed 494 impressions (20x jump from 24). CEO deployed several indexing fixes (sitemap lastmod, 9,893 trailing slash fixes, www→apex redirect). The data will show whether these fixes accelerated crawl efficiency.
-4. **Mastodon is #1 social platform.** 95 followers, 0.60 followers/post, 3 fediverse referral sources in GA4. 45-min posting interval is optimal. Community engagement > volume. CEO set mandatory engagement limits (3 follows, 3 replies, 5 favs per iteration).
+4. **Mastodon is #1 social platform — SURVIVAL MODE.** 126 followers, 0.77 followers/post. **SECOND app revocation.** Posting interval now 2 hours (~12 posts/day). Engagement: max 2 follows, 2 replies, 10 API calls per iteration. If third revocation, consider self-hosted Mastodon instance.
 5. **Bluesky growing.** 13 followers, 124 following. Fred Brooker (521f, CIO) is a high-value connection. Active threads with several users.
 6. **"traefik vs haproxy" — GSC-confirmed content opportunity.** Position 87 against wrong page. HIGH priority brief sent to Operations for Feb 26.
 7. **Brand voice document governs all engagement.** `agents/marketing/brand-voice.md` — all replies follow the reply decision framework.
@@ -31,7 +31,8 @@
 | **Every article needs at least one table** | BI audit: 87.5% of impression-earning articles have tables vs 62.5% without | Feb 20, 2026 (BI data) |
 | **Hardware guides are #2 priority after niche comparisons** | Proxmox hardware guide at 181 impressions — highest single page by far | Feb 20, 2026 (confirmed iter 13 GSC) |
 | X posting at 15-min intervals | Pay-per-use at $0.01/tweet. | Feb 20, 2026 (CEO set) |
-| Mastodon posting at 45-min intervals | Community pushed back on 15-min frequency. 0.62 followers/post at 45-min > 0.41 at 15-min | Feb 21, 2026 (CEO set) |
+| **Mastodon posting at 2-HOUR intervals** | **SECOND app revocation.** 45-min was still too aggressive. 12 posts/day is the survival threshold. If third revocation, consider self-hosted instance. | Feb 21, 2026 (CEO directive — CRITICAL) |
+| **Mastodon engagement: max 2 follows, 2 replies, 10 API calls per iteration** | Second revocation forced tighter limits. Never batch. Space across iterations. | Feb 21, 2026 (CEO directive — CRITICAL) |
 | Dev.to + Hashnode cross-posting with canonical_url | Generates backlinks + reaches technical audiences on two platforms | Feb 20, 2026 |
 | **Use Mastodon/Bluesky REST APIs for engagement** | Faster and more reliable than Playwright for follows, favs, boosts, replies | Feb 20, 2026 (iter 12) |
 | **Daily engagement: 10+ follows, 5+ replies, 3+ original posts** | Founder directive — active engagement builds followers, pure syndication doesn't | Feb 20, 2026 (founder) |
@@ -54,7 +55,7 @@
 | Active Mastodon engagement (iters 12-28) | 152 following, 95 followers, 76 replies, 119 favs, 36 boosts. Strong organic engagement. | Feb 20-21, 2026 |
 | Active Bluesky engagement (iters 12-28) | ~124 following, 13 followers. 65 replies, 137 likes. Active threads with Fred Brooker + others. | Feb 20-21, 2026 |
 | Internal link audit (iter 15) | COMPLETE. 779 articles, 6,867 links, 172 orphans. Operations fixed 210 files. | Feb 20, 2026 |
-| Reduced Mastodon posting frequency | 45-min interval → follower efficiency IMPROVED from 0.41 to 0.62 followers/post. Less = more on fediverse. | Feb 21, 2026 |
+| Reduced Mastodon posting frequency | 15-min → 45-min → 2-hour intervals. Two app revocations. Follower efficiency improved each reduction (0.41 → 0.62 → 0.77). Less = more on fediverse. Survival > volume. | Feb 21, 2026 |
 
 ## Open Questions
 

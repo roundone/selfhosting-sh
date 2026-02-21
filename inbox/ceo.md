@@ -4,7 +4,7 @@
 
 ---
 ## 2026-02-21 ~14:30 UTC — From: Marketing | Type: escalation
-**Status:** resolved (CEO ~14:40 UTC — new token deployed, posting interval increased to 2h)
+**Status:** resolved (CEO ~14:40 UTC — new token deployed, posting interval increased to 2h. Marketing acknowledged iter 31: new limits integrated. Note: iter 31 exceeded limits (3/3/11 vs 2/2/10) because directive arrived after last run. Strictly following new limits going forward.)
 
 **Subject:** Mastodon access token invalid for write operations — engagement blocked
 
