@@ -9521,3 +9521,48 @@ What's the one app..."
 [2026-02-21T06:57:24.217Z] AGENT operations started (pid: 272226)
 [2026-02-21T06:57:45.655Z] INBOX marketing.md modified → marketing
 [2026-02-21T06:57:45.655Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T06:59:17.494Z] AGENT marketing exited (code=0, duration: 939s)
+[2026-02-21T06:59:17.494Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T06:59:17.494Z] PENDING marketing processing queued trigger
+[2026-02-21T06:59:17.495Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T06:59:51.553Z] STATUS running=1/4 writers=0/1 freeMem=6878MB agents=[operations(147s)] paused=no
+[2026-02-21T06:59:51.553Z] SOCIAL running social-poster.js
+[2026-02-21T06:59:51.584Z] SOCIAL 2026-02-21T06:59:51.582Z [social-poster] starting
+[2026-02-21T06:59:51.594Z] SOCIAL 2026-02-21T06:59:51.594Z [social-poster] queue has 2588 posts
+[2026-02-21T06:59:51.792Z] SOCIAL 2026-02-21T06:59:51.792Z [social-poster] OK x: posted "Self-hosters: what's your total monthly power cost for runni..."
+[2026-02-21T06:59:52.119Z] SOCIAL 2026-02-21T06:59:52.119Z [social-poster] OK bluesky: posted "Honest question: has anyone actually saved money with Unraid..."
+[2026-02-21T06:59:52.135Z] SOCIAL 2026-02-21T06:59:52.135Z [social-poster] removed 2 posted items from queue (2586 remaining)
+[2026-02-21T06:59:52.136Z] SOCIAL 2026-02-21T06:59:52.135Z [social-poster] done — 2 attempted, 2 succeeded, 2586 remaining in queue
+[2026-02-21T06:59:52.144Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:04:17.601Z] AGENT marketing starting (trigger: pending-trigger)
+[2026-02-21T07:04:17.602Z] AGENT marketing started (pid: 272544)
+[2026-02-21T07:04:51.586Z] STATUS running=2/4 writers=0/1 freeMem=6672MB agents=[operations(447s), marketing(34s)] paused=no
+[2026-02-21T07:04:51.586Z] SOCIAL running social-poster.js
+[2026-02-21T07:04:51.619Z] SOCIAL 2026-02-21T07:04:51.617Z [social-poster] starting
+[2026-02-21T07:04:51.628Z] SOCIAL 2026-02-21T07:04:51.628Z [social-poster] queue has 2586 posts
+[2026-02-21T07:04:51.628Z] SOCIAL 2026-02-21T07:04:51.628Z [social-poster] done — 0 attempted, 0 succeeded, 2586 remaining in queue
+[2026-02-21T07:04:51.631Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:09:51.686Z] STATUS running=2/4 writers=0/1 freeMem=6648MB agents=[operations(747s), marketing(334s)] paused=no
+[2026-02-21T07:09:51.686Z] SOCIAL running social-poster.js
+[2026-02-21T07:09:51.731Z] SOCIAL 2026-02-21T07:09:51.729Z [social-poster] starting
+[2026-02-21T07:09:51.741Z] SOCIAL 2026-02-21T07:09:51.741Z [social-poster] queue has 2586 posts
+[2026-02-21T07:09:51.742Z] SOCIAL 2026-02-21T07:09:51.742Z [social-poster] done — 0 attempted, 0 succeeded, 2586 remaining in queue
+[2026-02-21T07:09:51.745Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:12:07.548Z] INBOX technology.md modified → technology
+[2026-02-21T07:12:07.548Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-21T07:12:07.550Z] AGENT technology started (pid: 274774)
+[2026-02-21T07:12:49.698Z] INBOX operations.md modified → operations
+[2026-02-21T07:12:49.698Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-21T07:14:09.685Z] EVENT bi-finance-new-articles-20260221T071407Z.json → bi-finance
+[2026-02-21T07:14:09.685Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260221T071407Z.json)
+[2026-02-21T07:14:09.686Z] AGENT bi-finance started (pid: 275675)
+[2026-02-21T07:14:09.687Z] EVENT technology-deploy-20260221T071407Z.json → technology
+[2026-02-21T07:14:09.687Z] QUEUED technology already running — trigger queued: technology-deploy-20260221T071407Z.json
+[2026-02-21T07:14:51.721Z] STATUS running=4/4 writers=0/1 freeMem=6205MB agents=[operations(1048s), marketing(634s), technology(164s), bi-finance(42s)] paused=no
+[2026-02-21T07:14:51.721Z] SOCIAL running social-poster.js
+[2026-02-21T07:14:51.754Z] SOCIAL 2026-02-21T07:14:51.752Z [social-poster] starting
+[2026-02-21T07:14:51.763Z] SOCIAL 2026-02-21T07:14:51.763Z [social-poster] queue has 2586 posts
+[2026-02-21T07:14:52.121Z] SOCIAL 2026-02-21T07:14:52.120Z [social-poster] OK bluesky: posted "If you're exposing self-hosted services to the internet, ple..."
+[2026-02-21T07:14:52.129Z] SOCIAL 2026-02-21T07:14:52.129Z [social-poster] removed 1 posted items from queue (2585 remaining)
+[2026-02-21T07:14:52.129Z] SOCIAL 2026-02-21T07:14:52.129Z [social-poster] done — 1 attempted, 1 succeeded, 2585 remaining in queue
+[2026-02-21T07:14:52.134Z] SOCIAL social-poster.js exited (code: 0)
