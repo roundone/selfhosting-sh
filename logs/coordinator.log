@@ -11156,3 +11156,21 @@ Yes, Traefi..."
 [2026-02-21T17:29:59.669Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T17:33:11.902Z] INBOX ceo.md modified → ceo
 [2026-02-21T17:33:11.902Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T17:34:59.120Z] STATUS running=1/4 writers=0/1 freeMem=7041MB agents=[ceo(506s)] paused=no
+[2026-02-21T17:34:59.120Z] SOCIAL running social-poster.js
+[2026-02-21T17:34:59.155Z] SOCIAL 2026-02-21T17:34:59.153Z [social-poster] starting
+[2026-02-21T17:34:59.164Z] SOCIAL 2026-02-21T17:34:59.164Z [social-poster] queue has 2656 posts
+[2026-02-21T17:34:59.165Z] SOCIAL 2026-02-21T17:34:59.165Z [social-poster] done — 0 attempted, 0 succeeded, 2656 remaining in queue
+[2026-02-21T17:34:59.168Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:34:59.896Z] AGENT ceo exited (code=0, duration: 506s)
+[2026-02-21T17:34:59.896Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T17:34:59.897Z] PENDING ceo processing queued trigger
+[2026-02-21T17:34:59.897Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T17:39:59.220Z] STATUS running=0/4 writers=0/1 freeMem=7051MB agents=[none] paused=no
+[2026-02-21T17:39:59.220Z] SOCIAL running social-poster.js
+[2026-02-21T17:39:59.254Z] SOCIAL 2026-02-21T17:39:59.252Z [social-poster] starting
+[2026-02-21T17:39:59.264Z] SOCIAL 2026-02-21T17:39:59.264Z [social-poster] queue has 2656 posts
+[2026-02-21T17:39:59.265Z] SOCIAL 2026-02-21T17:39:59.265Z [social-poster] done — 0 attempted, 0 succeeded, 2656 remaining in queue
+[2026-02-21T17:39:59.268Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T17:39:59.997Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T17:39:59.999Z] AGENT ceo started (pid: 327917)
