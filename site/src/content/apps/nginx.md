@@ -382,6 +382,7 @@ Both work identically. The Alpine variant (`nginx:1.28.2-alpine`) is smaller (~1
 - [How to Self-Host Caddy with Docker](/apps/caddy/)
 - [Caddy vs Nginx](/compare/caddy-vs-nginx/)
 - [Nginx vs Envoy](/compare/nginx-vs-envoy/)
+- [Envoy vs Nginx](/compare/envoy-vs-nginx/)
 - [Nginx vs HAProxy](/compare/nginx-vs-haproxy/)
 - [Nginx vs Zoraxy](/compare/nginx-vs-zoraxy/)
 - [Nginx Proxy Manager vs Nginx](/compare/nginx-proxy-manager-vs-nginx/)

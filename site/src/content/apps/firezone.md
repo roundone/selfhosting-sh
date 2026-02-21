@@ -354,4 +354,5 @@ Existing tunnels continue to work — the data plane is peer-to-peer. However, n
 - [Self-Hosted NordVPN Alternatives](/replace/nordvpn/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Firezone vs WG-Easy](/compare/firezone-vs-wg-easy/)
 - [Backup Strategy](/foundations/backup-strategy/)

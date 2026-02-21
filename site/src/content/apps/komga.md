@@ -256,6 +256,7 @@ Use [ComicTagger](https://github.com/comictagger/comictagger) to embed ComicInfo
 - [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
 - [Komga vs Kavita](/compare/kavita-vs-komga/)
 - [Komga vs Calibre-Web](/compare/calibre-web-vs-komga/)
+- [Komga vs Calibre-Web](/compare/komga-vs-calibre-web/)
 - [Best Self-Hosted Media Servers](/best/media-servers/)
 - [Self-Hosted Kindle Alternatives](/replace/kindle/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -247,4 +247,6 @@ Enable uploads in the admin settings. Users with upload permission can add books
 - [Self-Hosted Kindle Alternatives](/replace/kindle/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Audiobookshelf vs Calibre-Web](/compare/audiobookshelf-vs-calibre-web/)
+- [Komga vs Calibre-Web](/compare/komga-vs-calibre-web/)
 - [Backup Strategy](/foundations/backup-strategy/)

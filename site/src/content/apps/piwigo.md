@@ -242,6 +242,7 @@ Piwigo has official iOS and Android apps for browsing and uploading. The apps su
 
 - [Lychee vs Piwigo](/compare/lychee-vs-piwigo/)
 - [PhotoPrism vs Piwigo](/compare/photoprism-vs-piwigo/)
+- [Piwigo vs Photoview](/compare/piwigo-vs-photoview/)
 - [How to Self-Host Immich](/apps/immich/)
 - [How to Self-Host Lychee](/apps/lychee/)
 - [Best Self-Hosted Photo Management](/best/photo-management/)

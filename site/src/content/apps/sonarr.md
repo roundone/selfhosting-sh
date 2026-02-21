@@ -228,6 +228,7 @@ Enable **Settings → Media Management → Episode Naming → Standard Episode F
 - [How to Self-Host Bazarr](/apps/bazarr/)
 - [How to Self-Host Jellyfin](/apps/jellyfin/)
 - [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Sonarr vs Prowlarr](/compare/sonarr-vs-prowlarr/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)

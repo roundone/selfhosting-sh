@@ -344,6 +344,8 @@ By default, the stats frontend is accessible to anyone who can reach the port. I
 - [Traefik vs HAProxy](/compare/traefik-vs-haproxy/)
 - [HAProxy vs Nginx](/compare/haproxy-vs-nginx/)
 - [HAProxy vs Caddy](/compare/haproxy-vs-caddy/)
+- [HAProxy vs Nginx Proxy Manager](/compare/haproxy-vs-nginx-proxy-manager/)
+- [Envoy vs HAProxy](/compare/envoy-vs-haproxy/)
 - [HAProxy vs Envoy](/compare/haproxy-vs-envoy/)
 - [Best Self-Hosted Reverse Proxy](/best/reverse-proxy/)
 - [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)

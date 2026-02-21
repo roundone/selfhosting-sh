@@ -316,4 +316,5 @@ Plex remains the most polished and widely supported media server. Its client app
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Audiobookshelf vs Plex](/compare/audiobookshelf-vs-plex/)
 - [Docker Volumes and Storage](/foundations/docker-volumes/)

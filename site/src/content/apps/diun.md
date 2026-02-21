@@ -473,6 +473,8 @@ DIUN is the right tool for anyone running self-hosted services. With Watchtower 
 - [How to Self-Host Portainer](/apps/portainer/)
 - [How to Self-Host Dockge](/apps/dockge/)
 - [Best Self-Hosted Docker Management](/best/docker-management/)
+- [Diun vs Cosmos Cloud](/compare/diun-vs-cosmos-cloud/)
+- [Diun vs Lazydocker](/compare/diun-vs-lazydocker/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes and Storage](/foundations/docker-volumes/)
 - [Docker Networking](/foundations/docker-networking/)

@@ -361,6 +361,7 @@ Check the container logs (`docker compose logs -f blocky`) or enable Prometheus 
 - [How to Self-Host Technitium DNS](/apps/technitium/)
 - [Pi-hole vs Blocky](/compare/pi-hole-vs-blocky/)
 - [AdGuard Home vs Blocky](/compare/adguard-home-vs-blocky/)
+- [Blocky vs Technitium](/compare/blocky-vs-technitium/)
 - [Pi-hole vs AdGuard Home](/compare/pi-hole-vs-adguard-home/)
 - [Best Self-Hosted Ad Blockers](/best/ad-blocking/)
 - [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)

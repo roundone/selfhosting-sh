@@ -233,6 +233,7 @@ Yes. The `selfhostedpro/yacht` image is available for both amd64 and arm64 archi
 - [Portainer vs Yacht](/compare/portainer-vs-yacht/)
 - [Portainer vs Dockge](/compare/portainer-vs-dockge/)
 - [Dockge vs Yacht](/compare/dockge-vs-yacht/)
+- [Cosmos Cloud vs Yacht](/compare/cosmos-cloud-vs-yacht/)
 - [Best Docker Management Tools](/best/docker-management/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes](/foundations/docker-volumes/)

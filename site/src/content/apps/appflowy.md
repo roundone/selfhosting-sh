@@ -211,6 +211,8 @@ Choose AppFlowy if you specifically want Notion's database/kanban features in a 
 
 - [Best Self-Hosted Note Taking](/best/note-taking/)
 - [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [Affine vs AppFlowy](/compare/affine-vs-appflowy/)
+- [AppFlowy vs Outline](/compare/appflowy-vs-outline/)
 - [How to Self-Host Outline](/apps/outline/)
 - [How to Self-Host BookStack](/apps/bookstack/)
 - [Replace Notion](/replace/notion/)

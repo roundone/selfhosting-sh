@@ -199,6 +199,7 @@ Jellyfin is more mature, has native mobile/TV apps, supports music and books, ha
 - [How to Self-Host Plex](/apps/plex/)
 - [How to Self-Host Emby](/apps/emby/)
 - [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Stash vs Dim](/compare/stash-vs-dim/)
 - [Best Self-Hosted Media Servers](/best/media-servers/)
 - [Self-Hosted Netflix Alternatives](/replace/netflix/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

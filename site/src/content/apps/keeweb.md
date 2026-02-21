@@ -192,6 +192,7 @@ KeeWeb itself doesn't do browser auto-fill. For that, use the KeePassXC browser 
 - [How to Self-Host Vaultwarden](/apps/vaultwarden/)
 - [How to Self-Host Passbolt](/apps/passbolt/)
 - [Vaultwarden vs KeeWeb](/compare/vaultwarden-vs-keeweb/)
+- [KeeWeb vs Padloc](/compare/keeweb-vs-padloc/)
 - [Best Self-Hosted Password Managers](/best/password-management/)
 - [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
 - [Self-Hosted Alternatives to 1Password](/replace/1password/)

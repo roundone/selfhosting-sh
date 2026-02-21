@@ -502,6 +502,7 @@ Yes. The `caddy:2.10.2-alpine` image supports arm64. Caddy's low resource usage 
 - [NPM vs Caddy Comparison](/compare/nginx-proxy-manager-vs-caddy/)
 - [Traefik vs Caddy Comparison](/compare/traefik-vs-caddy/)
 - [Caddy vs Envoy](/compare/caddy-vs-envoy/)
+- [Envoy vs Caddy](/compare/envoy-vs-caddy/)
 - [Caddy vs HAProxy](/compare/caddy-vs-haproxy/)
 - [Caddy vs Cosmos Cloud](/compare/caddy-vs-cosmos-cloud/)
 - [Caddy vs Zoraxy](/compare/caddy-vs-zoraxy/)

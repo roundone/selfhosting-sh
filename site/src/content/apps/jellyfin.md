@@ -348,4 +348,5 @@ If you want a media server that you fully own and control, Jellyfin is the answe
 - [Docker Volumes](/foundations/docker-volumes/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Audiobookshelf vs Jellyfin](/compare/audiobookshelf-vs-jellyfin/)
 - [Getting Started with Self-Hosting](/foundations/getting-started/)

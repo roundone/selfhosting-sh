@@ -489,6 +489,7 @@ With proper backups in place, Immich is the clear winner in the photo management
 - [Immich vs Lychee](/compare/immich-vs-lychee/)
 - [Immich vs PhotoView](/compare/immich-vs-photoview/)
 - [Immich vs Piwigo](/compare/immich-vs-piwigo/)
+- [PhotoPrism vs Immich vs LibrePhotos](/compare/photoprism-vs-immich-vs-librephotos/)
 - [Replace Google Photos](/replace/google-photos/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes](/foundations/docker-volumes/)

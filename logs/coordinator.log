@@ -10058,3 +10058,25 @@ Yes, Traefi..."
 [2026-02-21T09:54:53.578Z] SOCIAL 2026-02-21T09:54:53.578Z [social-poster] removed 1 posted items from queue (2622 remaining)
 [2026-02-21T09:54:53.579Z] SOCIAL 2026-02-21T09:54:53.579Z [social-poster] done — 1 attempted, 1 succeeded, 2622 remaining in queue
 [2026-02-21T09:54:53.584Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T09:55:00.272Z] AGENT technology exited (code=0, duration: 698s)
+[2026-02-21T09:55:00.272Z] STATE technology lastRun updated, errors reset
+[2026-02-21T09:55:00.272Z] PENDING technology processing queued trigger
+[2026-02-21T09:55:00.272Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T09:55:01.252Z] EVENT bi-finance-new-articles-20260221T095459Z.json → bi-finance
+[2026-02-21T09:55:01.252Z] AGENT bi-finance starting (trigger: bi-finance-new-articles-20260221T095459Z.json)
+[2026-02-21T09:55:01.253Z] AGENT bi-finance started (pid: 301220)
+[2026-02-21T09:55:12.940Z] INBOX ceo.md modified → ceo
+[2026-02-21T09:55:12.940Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T09:55:51.769Z] INBOX ceo.md modified → ceo
+[2026-02-21T09:55:51.770Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T09:56:25.215Z] INBOX ceo.md modified → ceo
+[2026-02-21T09:56:25.216Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T09:59:53.317Z] STATUS running=4/4 writers=0/1 freeMem=6184MB agents=[ceo(2266s), operations(968s), marketing(942s), bi-finance(292s)] paused=no
+[2026-02-21T09:59:53.317Z] SOCIAL running social-poster.js
+[2026-02-21T09:59:53.356Z] SOCIAL 2026-02-21T09:59:53.353Z [social-poster] starting
+[2026-02-21T09:59:53.368Z] SOCIAL 2026-02-21T09:59:53.368Z [social-poster] queue has 2622 posts
+[2026-02-21T09:59:53.720Z] SOCIAL 2026-02-21T09:59:53.719Z [social-poster] OK bluesky: posted "Step-by-step guide to running Matomo on your own server. Doc..."
+[2026-02-21T09:59:53.728Z] SOCIAL 2026-02-21T09:59:53.728Z [social-poster] removed 1 posted items from queue (2621 remaining)
+[2026-02-21T09:59:53.729Z] SOCIAL 2026-02-21T09:59:53.729Z [social-poster] done — 1 attempted, 1 succeeded, 2621 remaining in queue
+[2026-02-21T09:59:53.733Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T10:00:00.379Z] CONCURRENCY technology — 4/4 agents running, queued

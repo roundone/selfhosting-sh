@@ -305,6 +305,7 @@ No. WireGuard requires a publicly reachable UDP port. If your ISP uses CGNAT (ca
 - [How to Self-Host Tailscale with Docker](/apps/tailscale/)
 - [wg-easy vs WireGuard: Which Should You Self-Host?](/compare/wg-easy-vs-wireguard/)
 - [Tailscale vs WireGuard Comparison](/compare/tailscale-vs-wireguard/)
+- [Firezone vs WG-Easy](/compare/firezone-vs-wg-easy/)
 - [Self-Hosted Alternatives to NordVPN](/replace/nordvpn/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

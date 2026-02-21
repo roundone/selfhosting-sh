@@ -230,6 +230,7 @@ Choose AFFiNE if whiteboards are essential to your workflow. Choose [AppFlowy](/
 
 - [Best Self-Hosted Note Taking](/best/note-taking/)
 - [AppFlowy vs AFFiNE](/compare/appflowy-vs-affine/)
+- [Affine vs AppFlowy](/compare/affine-vs-appflowy/)
 - [How to Self-Host AppFlowy](/apps/appflowy/)
 - [How to Self-Host Outline](/apps/outline/)
 - [How to Self-Host BookStack](/apps/bookstack/)

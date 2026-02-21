@@ -280,6 +280,7 @@ For personal wikis where you don't want to set up OIDC, [BookStack](/apps/bookst
 - [Outline vs Joplin](/compare/outline-vs-joplin/)
 - [Outline vs SiYuan](/compare/outline-vs-siyuan/)
 - [Outline vs Trilium](/compare/outline-vs-trilium/)
+- [AppFlowy vs Outline](/compare/appflowy-vs-outline/)
 - [Replace Notion](/replace/notion/)
 - [Replace Confluence](/replace/confluence/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

@@ -376,6 +376,8 @@ Watchtower works at the Docker daemon level, not the Compose level. It sees and 
 - [How to Self-Host Portainer](/apps/portainer/)
 - [How to Self-Host Dockge](/apps/dockge/)
 - [Watchtower vs Diun](/compare/watchtower-vs-diun/)
+- [Lazydocker vs Watchtower](/compare/lazydocker-vs-watchtower/)
+- [Watchtower vs Cosmos Cloud](/compare/watchtower-vs-cosmos-cloud/)
 - [Best Self-Hosted Docker Management](/best/docker-management/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Volumes and Storage](/foundations/docker-volumes/)

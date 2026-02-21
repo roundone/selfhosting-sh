@@ -396,6 +396,7 @@ PhotoPrism is the best self-hosted photo manager for users with existing librari
 - [PhotoPrism vs Lychee](/compare/photoprism-vs-lychee/)
 - [PhotoPrism vs PhotoView](/compare/photoprism-vs-photoview/)
 - [PhotoPrism vs Google Photos](/compare/photoprism-vs-google-photos/)
+- [PhotoPrism vs Immich vs LibrePhotos](/compare/photoprism-vs-immich-vs-librephotos/)
 - [Replace Google Photos](/replace/google-photos/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)

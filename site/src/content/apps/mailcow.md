@@ -602,4 +602,5 @@ Self-hosting email is the hardest category of self-hosting. IP reputation, DNS c
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
 - [DNS Explained](/foundations/dns-explained/)
 - [Security Basics](/foundations/selfhosting-security-checklist/)
+- [Mailcow vs Docker-Mailserver](/compare/mailcow-vs-docker-mailserver/)
 - [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)

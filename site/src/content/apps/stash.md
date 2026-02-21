@@ -240,6 +240,7 @@ Yes. Stash and Jellyfin serve different purposes and can point to the same media
 - [How to Self-Host Plex](/apps/plex/)
 - [How to Self-Host Emby](/apps/emby/)
 - [Jellyfin vs Plex](/compare/jellyfin-vs-plex/)
+- [Stash vs Dim](/compare/stash-vs-dim/)
 - [Best Self-Hosted Media Servers](/best/media-servers/)
 - [Self-Hosted Netflix Alternatives](/replace/netflix/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

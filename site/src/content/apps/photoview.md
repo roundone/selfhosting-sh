@@ -269,6 +269,7 @@ No native app. The web UI is responsive and works well on mobile browsers. You c
 - [How to Self-Host Lychee](/apps/lychee/)
 - [How to Self-Host Piwigo](/apps/piwigo/)
 - [Immich vs PhotoPrism](/compare/immich-vs-photoprism/)
+- [Piwigo vs Photoview](/compare/piwigo-vs-photoview/)
 - [Best Self-Hosted Photo Management](/best/photo-management/)
 - [Self-Hosted Google Photos Alternatives](/replace/google-photos/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

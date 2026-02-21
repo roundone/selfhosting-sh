@@ -226,6 +226,7 @@ Padloc supports CSV import. Export from your current manager (LastPass, 1Passwor
 - [How to Self-Host Passbolt](/apps/passbolt/)
 - [How to Self-Host KeeWeb](/apps/keeweb/)
 - [Vaultwarden vs Padloc](/compare/vaultwarden-vs-padloc/)
+- [KeeWeb vs Padloc](/compare/keeweb-vs-padloc/)
 - [Best Self-Hosted Password Managers](/best/password-management/)
 - [Self-Hosted Alternatives to LastPass](/replace/lastpass/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

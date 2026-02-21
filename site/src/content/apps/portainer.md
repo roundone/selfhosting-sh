@@ -294,6 +294,7 @@ The main alternative is [Dockge](/apps/dockge/) — a simpler, more focused tool
 - [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker/)
 - [Watchtower (deprecated) vs Portainer](/compare/watchtower-vs-portainer/)
 - [Diun vs Portainer](/compare/diun-vs-portainer/)
+- [Lazydocker vs Portainer](/compare/lazydocker-vs-portainer/)
 - [How to Self-Host Dockge](/apps/dockge/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Docker Networking](/foundations/docker-networking/)

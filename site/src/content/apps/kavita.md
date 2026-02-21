@@ -229,6 +229,8 @@ Kavita supports more formats (EPUB, PDF in addition to comics) and has a built-i
 - [How to Self-Host Audiobookshelf](/apps/audiobookshelf/)
 - [Kavita vs Calibre-Web](/compare/kavita-vs-calibre-web/)
 - [Kavita vs Komga](/compare/kavita-vs-komga/)
+- [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita/)
+- [Kavita vs Audiobookshelf](/compare/kavita-vs-audiobookshelf/)
 - [Best Self-Hosted Media Servers](/best/media-servers/)
 - [Self-Hosted Kindle Alternatives](/replace/kindle/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

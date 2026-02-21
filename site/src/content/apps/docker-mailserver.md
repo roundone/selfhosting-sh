@@ -324,4 +324,5 @@ Self-hosting email is hard. DNS, deliverability, IP reputation, and spam filteri
 - [Self-Hosted Alternatives to Gmail](/replace/gmail/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Mailcow vs Docker-Mailserver](/compare/mailcow-vs-docker-mailserver/)
 - [Backup Strategy](/foundations/backup-strategy/)

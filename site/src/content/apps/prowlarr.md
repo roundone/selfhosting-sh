@@ -388,6 +388,8 @@ Skip Prowlarr only if you exclusively use a single *arr app with one or two inde
 - [How to Self-Host qBittorrent with Docker](/apps/qbittorrent/)
 - [How to Self-Host Bazarr with Docker](/apps/bazarr/)
 - [Sonarr vs Radarr](/compare/sonarr-vs-radarr/)
+- [Sonarr vs Prowlarr](/compare/sonarr-vs-prowlarr/)
+- [Jackett vs Prowlarr](/compare/jackett-vs-prowlarr/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)

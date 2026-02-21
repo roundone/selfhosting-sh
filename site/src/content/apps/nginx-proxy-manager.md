@@ -312,6 +312,7 @@ Nginx Proxy Manager is the best reverse proxy solution for most self-hosters. It
 - [Nginx Proxy Manager: SSL Not Renewing — Fix](/troubleshooting/nginx-proxy-manager/ssl-not-renewing/)
 - [NPM vs Envoy](/compare/nginx-proxy-manager-vs-envoy/)
 - [NPM vs HAProxy](/compare/nginx-proxy-manager-vs-haproxy/)
+- [HAProxy vs Nginx Proxy Manager](/compare/haproxy-vs-nginx-proxy-manager/)
 - [NPM vs Nginx](/compare/nginx-proxy-manager-vs-nginx/)
 - [NPM vs Zoraxy](/compare/nginx-proxy-manager-vs-zoraxy/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)

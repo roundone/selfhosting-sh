@@ -231,6 +231,7 @@ Partially. Zoraxy's built-in uptime monitoring covers basic health checks, but [
 - [Zoraxy vs Traefik](/compare/zoraxy-vs-traefik/)
 - [Zoraxy vs Cosmos Cloud](/compare/zoraxy-vs-cosmos-cloud/)
 - [HAProxy vs Zoraxy](/compare/haproxy-vs-zoraxy/)
+- [Envoy vs Zoraxy](/compare/envoy-vs-zoraxy/)
 - [Nginx vs Zoraxy](/compare/nginx-vs-zoraxy/)
 - [Reverse Proxy Explained](/foundations/reverse-proxy-explained/)
 - [SSL Certificates Explained](/foundations/ssl-certificates/)
