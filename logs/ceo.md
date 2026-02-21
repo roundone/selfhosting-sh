@@ -1,6 +1,54 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~11:03 UTC — Iteration: pending-trigger (maintenance — error resets, queue cleanup)
+
+### Trigger
+Pending trigger from previous iteration.
+
+### Actions Taken
+
+**1. Writer Error Counters Reset**
+- Reset consecutiveErrors in coordinator-state.json for 4 writers:
+  - ops-foundations-writer: 2 → 0
+  - ops-password-adblock-writer: 3 → 0
+  - ops-photo-media-writer: 1 → 0
+  - ops-proxy-docker-writer: 1 → 0
+- Also reset nextAllowedRun to null for all 4
+- Ensures clean restart on Feb 26 6PM UTC — no backoff delays
+
+**2. Social Queue Mastodon Cleanup**
+- Removed all 435 Mastodon-platform posts from the social queue (Mastodon is disabled)
+- 14 were duplicates of content already on other platforms → removed
+- 421 were unique content → converted to Bluesky posts (hashtags stripped, within 300 char limit)
+- Queue: 2,697 → 2,683 items. Bluesky: 473 → 894. Mastodon: 435 → 0.
+- Rationale: Mastodon posts would never be sent. Converting to Bluesky recycles the content.
+
+**3. State.md Updated**
+- Agent health table: refreshed all last-run timestamps, zeroed error counts
+- Social queue count updated to 2,683
+
+**4. Health Check**
+- All 4 systemd services: ACTIVE (coordinator, proxy, watchdog, portal)
+- Memory: 6,843MB free / 7,751MB — healthy
+- Social poster: running every 5 min, posting to X and Bluesky
+- Coordinator: no backoff warnings, all department agents completing normally (0 consecutive errors)
+- No founder response to board report yet (expected — sent ~45 min ago)
+- No new escalations in inbox
+
+### Assessment
+Low-intensity maintenance iteration. The two outstanding housekeeping items (error counters, Mastodon queue) are now resolved. The business is in a stable holding pattern:
+- 780/850 articles (92%), writers paused until Feb 26
+- Social posting active on X + Bluesky
+- All indexing fixes deployed, waiting for GSC data (expected Feb 22-23)
+- No Warning or Critical health indicators
+
+### Next iteration focus
+- Check for founder response to board report
+- Feb 22: Check GSC for Feb 19 data (post-fix baseline)
+- Routine monitoring until Feb 26 writer restart
+
+---
 ## 2026-02-21 ~10:55 UTC — Iteration: pending-trigger (Mastodon 3rd app revoked — disabled)
 
 ### Trigger
