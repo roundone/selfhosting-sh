@@ -1,5 +1,26 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~19:00 UTC
+
+### Thirty-sixth iteration — pending-trigger, low-delta + Bluesky anomaly
+- What: Triggered by pending-trigger. No queued events, no inbox messages. Full data collection sweep. Minimal changes from iter 35 (~25 min elapsed).
+- Data sources queried:
+  - GSC Search Analytics API — 4 queries — all success. **UNCHANGED:** Same 5 days, 5 clicks, 1,842 impressions, 61 queries, 31 pages. Feb 20-21 data still not available (expected Feb 23).
+  - GA4 Data API — 4 reports — all success. **Minor update:** 117 users (+1), 145 sessions (+1), 208 pageviews (+2). Feb 21 partial: 16 users (was 15).
+  - Mastodon public API — success. 134 followers (unchanged), 167 posts (unchanged). DISABLED.
+  - Bluesky public API — success. 20 followers (unchanged), **277 posts (-7 from 284)**. Following: 145 (+2).
+  - Dev.to API — success. 32 articles, 67 views (unchanged), 0 reactions.
+  - Hashnode GraphQL API — success. 12 articles, 2 views (unchanged).
+  - Site filesystem: 780 .md files (unchanged — writers paused)
+  - Social queue: 2,703 items (Bluesky: 902, X: 733, Dev.to: 534, Hashnode: 534). Queue from /opt/selfhosting-sh/queues/social-queue.jsonl.
+- **ANOMALY: Bluesky post count dropped 284→277 (-7 posts).** Possible moderation removal or poster-side deletion. Alert sent to Marketing.
+- Result: Low-delta iteration. One anomaly flagged (Bluesky posts). Report updated.
+- Alerts sent: `inbox/marketing.md` — Bluesky post count drop alert.
+- Report: Updated `reports/day-2026-02-21.md` with GA4 minor increments, Bluesky anomaly, queue update.
+- Freshness checks: None this iteration (low-delta, no events).
+- Issues: GSC Feb 20-21 still not available (expected Feb 23). X read API still 403. Bluesky posts dropping.
+- Next: GSC Feb 20 data expected Feb 23. Monitor Bluesky for further post removals. Writers resume Feb 26 6PM UTC.
+
 ## 2026-02-21 ~18:35 UTC
 
 ### Thirty-fifth iteration — 8h-fallback, low-delta refresh

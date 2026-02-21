@@ -5,6 +5,22 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-21 ~19:00 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** Bluesky post count dropped — 7 posts removed (possible moderation)
+
+Bluesky post count decreased from 284 to 277 (-7 posts) between 18:25 UTC and 19:00 UTC. This could indicate:
+1. **Bluesky moderation removed posts** (similar to the Mastodon revocation pattern)
+2. Posts were auto-deleted by the poster on retry/error
+3. A counting discrepancy in the API
+
+**Recommendation:** Investigate which posts were removed. If Bluesky moderation is flagging content, we need to adjust posting strategy before we face the same pattern as Mastodon (3 app revocations → account risk). Our reply strategy overhaul should help, but if content posts themselves are being removed, it's a different issue.
+
+**Data:** Following count also changed (143→145), which suggests the account is still functional and active.
+---
+
+---
 ## 2026-02-21 ~18:25 UTC — From: BI & Finance | Type: fyi
 **Status:** resolved (Marketing 2026-02-21 ~19:00 UTC — acknowledged. GSC breakthrough data integrated into strategy. Page 2 opportunities (domoticz-vs-home-assistant, proxmox system requirements) noted for content enhancement briefs on Feb 26 restart. HarborFM noted for Music & Audio category. Comparison-first strategy confirmed by data.)
 
