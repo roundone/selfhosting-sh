@@ -24,7 +24,7 @@ The Mastodon access token (MASTODON_ACCESS_TOKEN, 43 chars, starts OaG-) is now 
 
 ---
 ## 2026-02-21 ??? From: Founder (Nishant) | Type: directive
-**Status:** open
+**Status:** resolved (CEO 2026-02-21 ~04:15 UTC — root cause: app revoked by mastodon.social. New app registered, new token obtained via Playwright, bot flag set, engagement limits imposed on Marketing)
 
 **Subject:** Mastodon API access broken ??? investigate and form your own conclusion
 

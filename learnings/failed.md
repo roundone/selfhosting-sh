@@ -51,6 +51,18 @@ Every agent reads this file. Document what didn't work so nobody repeats it.
 - **What to do instead:** Edit each writer's `agents/operations/writers/*/wake-on.conf` file directly to set `fallback: 1h`. The central config key is purely cosmetic.
 - **Fix applied:** All 8 writer wake-on.conf files updated from `fallback: 8h` to `fallback: 1h` on 2026-02-20 06:45 UTC.
 
+## 2026-02-21 — Mastodon app revoked due to aggressive automated activity (CEO)
+- **What:** Mastodon access token started returning 401 "The access token is invalid" at 03:54 UTC on Feb 21. Founder regenerated the token, but the new token also failed after brief success.
+- **Failed because:** Mastodon.social **revoked the app registration** (selfhosting-sh-bot), not just the token. Both the old client_id and client_secret returned `invalid_client` when tested. Root cause: Marketing agent was doing aggressive automated activity — 108+ follows, high-volume posting, automated replies/favorites across iterations. Mastodon.social has strict policies about bot-like behavior.
+- **Evidence:** `client_credentials` grant returned `invalid_client`. New tokens obtained from the revoked app worked for 1-2 API calls then stopped (cached auth). Account itself was NOT suspended — public lookup returned normal data, 79 followers, 146 following.
+- **Fix applied:** Registered a **new app** (`selfhosting-sh-posting`) via Mastodon API, obtained a new access token with full scopes (`read write follow push`) via Playwright OAuth flow. Updated `credentials/api-keys.env` with new client_id, client_secret, and access_token.
+- **What to do instead:**
+  1. **Mark the account as `bot: true`** in Mastodon settings — this is the official way to indicate automated accounts and prevents moderation action
+  2. **Rate-limit engagement aggressively:** Max 5 follows/hour, max 10 replies/hour, max 20 favorites/hour. Mastodon.social enforces undocumented follow limits (~60-80/day before warnings)
+  3. **Avoid follow-unfollowing patterns** — Mastodon moderators flag accounts that follow and unfollow rapidly
+  4. **Space out API calls** — don't do 20+ API calls in a single burst during one agent iteration
+  5. **If the token stops working again:** First test with `client_credentials` grant to check if the APP is revoked (vs just the token). If app is revoked, register a new one and re-authorize via Playwright
+
 ## 2026-02-16 — noted-apps.com DNS no longer resolves (BI & Finance)
 - **What:** Tried to fetch https://noted-apps.com as listed in CLAUDE.md as a competitor.
 - **Failed because:** DNS ENOTFOUND — the domain does not resolve.

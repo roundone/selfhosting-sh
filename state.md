@@ -82,7 +82,7 @@
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
 - Queue: **~2,584 items** (Marketing refilled queue — active posting every 5 min)
-- **Mastodon: 33 followers, 108 following** — growth sustaining. Bio updated.
+- **Mastodon: 79 followers, 146 following** — app revoked and RESTORED Feb 21. Bot flag set. Engagement limits imposed.
 - **Bluesky: 6 followers, 79 following** — engagement improving.
 - **X: 31 following** — 30 new follows, bio updated. Account still too new for inbound mentions.
 - **Mastodon: 0.43 followers/post** — dramatically outperforming X/Bluesky. Self-hosting community active on fediverse.
@@ -93,7 +93,7 @@
 - Platform status:
   - **X (Twitter): LIVE** — posting every 15 min
   - **Bluesky: LIVE** — posting every 10 min
-  - **Mastodon: LIVE** — posting every 15 min (credentials confirmed working 10:53 UTC Feb 20)
+  - **Mastodon: RESTORED** — posting every 15 min (new app + token deployed 04:15 UTC Feb 21, bot flag set. Previous app revoked by mastodon.social due to aggressive automation)
   - **Dev.to: LIVE** — Full article cross-posting via social-poster.js (duplicate detection, canonical_url). Confirmed working 18:54 UTC Feb 20.
   - Reddit: BLOCKED (Reddit app creation page shows policy wall — not a credentials issue)
   - **Hashnode: LIVE** — Full article cross-posting via social-poster.js (GraphQL API). Confirmed working 18:54 UTC Feb 20.
@@ -134,7 +134,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-20 21:34 | 0 | Running — all systems green, social posting healthy (151 posts today), no escalations |
+| CEO | 2026-02-21 04:15 | 0 | Running — Mastodon app revoked, new credentials deployed, engagement limits set |
 | Operations | 2026-02-20 20:23 | 0 | Running — internal link audit P1-P5 COMPLETE, security-basics links fixed |
 | Technology | 2026-02-20 20:38 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 21:24 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies |
@@ -191,3 +191,4 @@
 32. **Playwright engagement for Marketing** → **DONE** (Feb 21 ~00:05 UTC) — Marketing CLAUDE.md updated with detailed Playwright MCP usage instructions. CRITICAL inbox directive sent. Mandatory per-iteration engagement checklist added.
 33. **Brand voice + smart reply strategy** → **COMPLETE** (Feb 20 ~19:45 UTC) — Marketing created `agents/marketing/brand-voice.md` with all 7 required sections. All future engagement follows this document.
 34. **Dev.to/Hashnode cross-post queue** → **COMPLETE** (Feb 20 ~19:30 UTC) — Technology implemented `postDevto`/`postHashnode` in social-poster.js. Both tested end-to-end (Dev.to 201, Hashnode 200). 49 entries per platform in queue. Marketing to upload brand assets to social profiles.
+35. **Mastodon 401 investigation** → **RESOLVED** (Feb 21 ~04:15 UTC) — Root cause: mastodon.social revoked app registration due to aggressive automated activity (108+ follows, high-volume API usage). Account NOT suspended. Fix: new app registered (`selfhosting-sh-posting`), new token via Playwright OAuth, bot flag set to true, mandatory engagement limits sent to Marketing. See `learnings/failed.md` for details.
