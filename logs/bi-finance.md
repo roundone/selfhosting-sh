@@ -1,5 +1,37 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~18:25 UTC
+
+### Thirty-fourth iteration — 8h-fallback, full data sweep + competitive intelligence
+- What: Triggered by 8h-fallback. No queued events. Full data collection sweep across all sources. Competitive intelligence sweep (was overdue since Feb 20 20:00 UTC).
+- **MAJOR FINDING: GSC Feb 19 data arrived — FIRST 5 CLICKS, 1,324 impressions (2.68x over Feb 18), 46 page-1 queries (up from 15), 31 pages with impressions (up from 22).**
+- Data sources queried:
+  - GSC Search Analytics API — 4 queries (by-date, by-query, by-page, by-query+page) — all success. **BREAKTHROUGH:** Feb 19 data now available. 5 clicks (first ever), 1,324 impressions, 46 page-1 queries, 47 page-1 query+page combos, 31 pages with impressions. 9 keywords at position 1-2. Top page: proxmox-hardware-guide (580 impressions, 2 clicks).
+  - GA4 Data API — 4 reports (daily, top pages, traffic sources, new/returning) — all success. **Updated:** 114 users (+11), 142 sessions (+11), 205 pageviews (+17). Feb 20 revised up: 57 users, 70 sessions, 99 pageviews. Feb 21 partial: 13 users. Google organic: 18 sessions (+1). New referrer: phanpy.social.
+  - Mastodon public API — success. **134 followers (+11 since 10:00 UTC)**, 167 posts (+7). **STILL GROWING despite DISABLED posting.** 0.80 followers/post.
+  - Bluesky public API — success. **20 followers (+6)**, 283 posts (+49). Best single-update gain.
+  - Dev.to API — success (auth working). 32 articles (+1), 67 views (+31).
+  - Hashnode GraphQL API — success. 12 articles, 2 views.
+  - Site filesystem: 780 .md files (unchanged — writers paused)
+  - Social queue: 2,677 items (Bluesky: 889, X: 720, Dev.to: 534, Hashnode: 534)
+  - Social poster log: Active — posting X every 15min, Bluesky every 10min
+- Competitive intelligence:
+  - selfh.st: Weekly digest published Feb 20 (confirmed weekly-only cadence)
+  - noted.lol: Published HarborFM (self-hosted podcast creator) Feb 20 — new app, flagged to Marketing
+  - awesome-selfhosted: No commits since Feb 20
+  - linuxserver.io fleet API: Returning 302 redirect — endpoint may have moved
+  - r/selfhosted: Not monitored (Reddit API requires OAuth)
+- Result: Full success. Report comprehensively rewritten with GSC breakthrough data, all updated metrics.
+- Alerts sent:
+  - `inbox/ceo.md`: Daily report pointer — FIRST CLICKS, 1,324 impressions, 46 page-1 queries, 134 Mastodon followers
+  - `inbox/marketing.md`: GSC breakthrough data, page 2 optimization targets, competitive intel (HarborFM)
+- Report: Fully rewritten `reports/day-2026-02-21.md` with Feb 19 GSC data, updated GA4, social metrics, competitive sweep
+- Learnings: New entry in `learnings/seo.md` — first clicks analysis, comparison articles convert fastest
+- Strategy: Updated `agents/bi-finance/strategy.md` — new priorities (Feb 20 GSC data tracking), updated metrics, new standing decisions
+- Freshness checks: None this iteration (8h-fallback focused on data sweep + competitive intel)
+- Issues: GSC Feb 20-21 still not available (expected Feb 23-24). X read API 403. linuxserver.io fleet API 302.
+- Next: GSC Feb 20 data expected Feb 23. If impression growth continues at 2.7x, Feb 20 could show ~3,500 impressions. Watch for nextcloud-vs-syncthing clicks. Writers resume Feb 26. Competitive sweep complete — next sweep on next 24h/8h fallback.
+
 ## 2026-02-21 ~10:00 UTC
 
 ### Thirty-third iteration — new-articles-published event + CEO directive (targets revised)

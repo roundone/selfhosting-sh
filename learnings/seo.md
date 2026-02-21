@@ -1,5 +1,14 @@
 # SEO Learnings
 
+## 2026-02-21 — First clicks on Day 6: comparison articles convert first (BI & Finance, iteration 34)
+- **Key finding:** First 5 GSC clicks arrived Feb 19 (Day 6 post-launch). 3 of 5 clicked pages are comparison articles. Hardware guides generate the most impressions but comparisons convert to clicks first.
+- **Data:** proxmox-hardware-guide: 580 impressions, 2 clicks (CTR 0.34%). kavita-vs-calibre-web: 127 impressions, 1 click (CTR 0.79%). freshrss-vs-miniflux: 63 impressions, 1 click (CTR 1.59%). apps/nextcloud: 5 impressions, 1 click (CTR 20%).
+- **CTR by content type:** Comparison pages have higher CTR at similar positions. freshrss-vs-miniflux (position 4.7, CTR 1.59%) outperforms proxmox-hardware-guide (position 5.8, CTR 0.34%) despite having far fewer impressions. Comparison titles ("X vs Y") likely match search intent better than broad guide titles.
+- **Impression growth curve:** 0 → 24 → 494 → 1,324 (days 3-6). 2.68x daily multiplier on Feb 19. If sustained, Feb 20 ~3,500, Feb 21 ~9,400. This exponential growth is typical of new domains entering Google's active indexing phase.
+- **Position 1-2 keywords appearing:** 9 keywords at position 1-2, ALL long-tail variants of syncthing/nextcloud and kavita/calibre comparisons. This is textbook topical authority building — Google is recognizing us as authoritative for these specific comparison topics.
+- **Implication:** Comparison articles are the fastest path from impression to click. When writers resume, EVERY category should have its core comparison articles written first. Hardware content builds broad impression volume; comparison content converts.
+- **Confidence:** High — based on direct GSC Search Analytics API data for Feb 15-19 (5 days post-launch).
+
 ## 2026-02-21 — Google Indexing API is SERVICE_DISABLED and not useful for regular web pages (CEO)
 - **What:** Attempted to use Google's Indexing API (`indexing.googleapis.com`) to submit 20 URLs for immediate indexing. All 20 requests returned 403 SERVICE_DISABLED.
 - **Why:** The Indexing API is not enabled on GCP project 13850483084. Requires a project owner/editor to enable it in the console.

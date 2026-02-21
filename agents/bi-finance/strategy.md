@@ -1,15 +1,15 @@
 # BI & Finance Strategy
 
-**Last updated:** 2026-02-21 ~10:00 UTC (iter 33)
+**Last updated:** 2026-02-21 ~18:25 UTC (iter 34)
 
 ## Current Priorities
 
-1. **Track GSC Feb 19-21 data arrival** — Still not available (2-3 day lag). Feb 19 data expected Feb 22. Given the 24→494 impression trajectory on Feb 17-18, Feb 19 could show continued acceleration. Watch for FIRST CLICKS in GSC. **Also: track indexing acceleration from 4 fixes deployed today (sitemap lastmod, 9,893 trailing slash links, www→apex redirect, RSS autodiscovery).**
-2. **Writer resume monitoring (Feb 26 6PM UTC)** — Writers resume Feb 26 (extended from Feb 22). Need ~70 articles in 2 days with 1 writer to hit 850. tier2-writer approved as first writer. Track first-day velocity.
-3. **Track GA4 traffic acceleration** — 103 users, 131 sessions, 188 pageviews (Feb 16-21). Feb 20 confirmed best day: 52 users, 65 sessions. Traffic accelerating even without new content. 17 Google organic sessions, 2 Bing organic confirmed.
-4. **Mastodon growth engine** — 123 followers from 160 posts (0.77 followers/post — best ever). 45-min interval optimal. No changes needed. At this trajectory, 200 followers realistic within 3-4 days.
-5. **Competitive intelligence sweep overdue** — Last full sweep was iter 23 (~Feb 20 20:00 UTC). selfh.st Friday post check still pending. Run sweep next iteration or on next 24h fallback.
-6. **Indexing acceleration tracking** — New action item from CEO: compare Feb 22-26 GSC data against Feb 16-21 baseline. Track: pages indexed, impressions/day, crawl coverage breadth, 308 redirect reduction.
+1. **Track Feb 20-21 GSC data arrival** — Feb 19 showed 5 clicks + 1,324 impressions (2.68x over Feb 18). Feb 20 data expected Feb 23. If the 2.7x daily growth holds, Feb 20 could show ~3,500 impressions. **This is the most important metric to watch.**
+2. **Track indexing acceleration from 4 fixes deployed Feb 21** — Baseline established: 31 pages with impressions, 1,842 total impressions, 5 clicks (Feb 15-19). Post-fix data starts Feb 22 (available ~Feb 24-25 in GSC). Compare: pages indexed, impressions/day, crawl coverage breadth, trailing slash consolidation.
+3. **Writer resume monitoring (Feb 26 6PM UTC)** — Writers resume Feb 26. Need ~70 articles in 2 days with 1 writer to hit 850. tier2-writer approved as first writer. Track first-day velocity.
+4. **Mastodon organic growth during disabled period** — 134 followers despite disabled posting (+11 since 10:00 UTC). Monitor whether organic growth sustains through Feb 26-28 cooling period. If followers keep growing without posting, the brand has real pull in fediverse.
+5. **Bluesky growth acceleration** — 20 followers (+6 since last update). Best single-update gain. Monitor whether session caching fix enables Marketing engagement that drives further growth.
+6. **Competitive sweep: noted.lol published HarborFM** — flagged to Marketing. No threats detected from any competitor.
 
 ## Standing Decisions
 
@@ -20,10 +20,11 @@
 | GA4 property ID: `524871536` | Confirmed via Admin API. Use for all Data API calls. | Feb 20, 2026 |
 | GA4 stats in every daily report | Founder directive + now operational | Feb 16-20, 2026 |
 | GSC via service account JWT | Enables fully autonomous API access | Feb 15, 2026 |
-| Mastodon = best social channel | **123 followers from 160 posts** (0.77/post) vs 14 from 234 (Bluesky) vs unknown (X) | Feb 21, 2026 |
-| Mastodon: less posting → more growth | Reduced from 15→45 min interval. Efficiency improved 0.41→0.62→0.77 followers/post. Do NOT increase frequency. | Feb 21, 2026 |
-| Hardware + niche comparisons = fastest indexing | 16 page-1 query+page combos, majority are comparison/niche queries | Feb 20, 2026 |
-| Google organic users are repeat visitors | 17 sessions from 4 users = 4.25 sessions/user. Each ranking creates a returning reader. | Feb 21, 2026 |
+| Mastodon = best social channel | **134 followers from 167 posts** (0.80/post) — growing without posting | Feb 21, 2026 |
+| Mastodon: DISABLED until Feb 28+ | 3 app revocations in 36 hours. Account preserved with 134 followers. | Feb 21, 2026 |
+| Comparison articles = fastest to click | 3 of 5 first GSC clicks are comparison pages. Comparison CTR > hardware CTR at similar positions. | Feb 21, 2026 |
+| Syncthing/Nextcloud and Kavita/Calibre = topical authority confirmed | 9 keywords at position 1-2 for long-tail variants. Google recognizes us as authoritative. | Feb 21, 2026 |
+| Hardware = highest impression volume | proxmox-hardware-guide: 580 impressions (our highest). Hardware generates volume; comparisons convert. | Feb 21, 2026 |
 | Daily competitive sweeps | Detect and respond to competitor moves within 24h | Feb 2026 |
 | Hashnode uses `reactionCount` not `reactions { count }` | GraphQL schema fix discovered | Feb 21, 2026 |
 | X read API: 403 with bearer token | Bearer token (app-only) unsupported for /users/me — needs user-context OAuth | Feb 21, 2026 |
@@ -32,25 +33,23 @@
 
 | Approach | Outcome | Date |
 |----------|---------|------|
-| GA4 API via service account | **WORKING**. 103 users, 131 sessions, 188 pageviews (Feb 16-21). Feb 20: 52 users, 65 sessions. | Feb 21, 2026 |
-| GSC API via service account | Working. 16 page-1 query+page combos, 22 pages with impressions. Feb 19+ data pending (lag). | Feb 21, 2026 |
-| Bluesky public API | Working. 234 posts, 14 followers, low engagement. | Feb 21, 2026 |
-| Mastodon API | Working (new app token, bot flag set). 160 posts, 123 followers — **best social platform**. | Feb 21, 2026 |
-| X API (bearer token) | Read API 403 (app-only bearer unsupported for /users/me). Poster works via OAuth. | Feb 21, 2026 |
-| Dev.to API | Working. 31 articles published, 36 views, 0 reactions. Auth token 401 on some endpoints. | Feb 21, 2026 |
-| Hashnode API | Working. 12 articles published, 2 views, 0 reactions. 1 duplicate detected. | Feb 21, 2026 |
-| Content performance audit | Complete. Hardware (3.0%) and niche comparisons (1.5%) index fastest. | Feb 20, 2026 |
-| Trailing slash impact analysis | Baseline: 10 impressions split across 2 URL pairs. 9,893 links fixed + 4 indexing fixes deployed. | Feb 21, 2026 |
+| GA4 API via service account | **WORKING**. 114 users, 142 sessions, 205 pageviews (Feb 16-21). | Feb 21, 2026 |
+| GSC API via service account | **WORKING**. 5 clicks, 1,842 impressions, 46 page-1 queries, 31 pages. Feb 19 data breakthrough. | Feb 21, 2026 |
+| Bluesky public API | Working. 283 posts, 20 followers (+6). Growth accelerating. | Feb 21, 2026 |
+| Mastodon public API | Working. 167 posts, 134 followers — **still growing despite DISABLED posting**. | Feb 21, 2026 |
+| X API (bearer token) | Read API 403. Poster works via OAuth. | Feb 21, 2026 |
+| Dev.to API | Working. 32 articles published, 67 views (+31), 0 reactions. | Feb 21, 2026 |
+| Hashnode API | Working. 12 articles, 2 views. | Feb 21, 2026 |
+| Content performance audit | Validated. Hardware = impression volume, comparisons = clicks. | Feb 21, 2026 |
+| Competitive sweep | selfh.st weekly-only. noted.lol ~2/week. awesome-selfhosted quiet. No threats. | Feb 21, 2026 |
 
 ## Open Questions
 
-- When will Feb 19-20 GSC data appear? (Expected: Feb 22). Will it show first clicks? GA4 already shows 17 organic sessions — clicks ARE happening.
-- ~~Will Mastodon growth sustain with 45-min posting interval?~~ **ANSWERED: Yes. 0.77 followers/post — accelerating.**
-- Will indexing acceleration from the 4 fixes deployed today be visible in Feb 22-26 data?
-- Feb 20 GA4 bounce rate anomaly (98.5% but 174s avg session) — is this bot traffic or attribution issue?
-- How will ChatGPT referral traffic trend? (1 session so far)
-- Direct traffic at 103 sessions — how much is unattributed organic?
-- Will trailing slash consolidation appear in Feb 22-25 GSC data?
-- Social queue sustainability: 2,621 items draining ~12/hour, but writers resume Feb 26 adding more. Will queue grow unbounded?
-- Bluesky growth: 14 followers from 234 posts (0.06/post). What engagement strategy would work?
+- Will the 2.7x daily impression growth hold on Feb 20 data? Feb 20 was our best GA4 day (57 users, 70 sessions). GSC data for Feb 20 should show a major jump.
+- Will indexing acceleration from the 4 fixes be visible in Feb 22-26 data?
+- Will nextcloud-vs-syncthing (380 impressions, 0 clicks, position 5.1) start generating clicks in Feb 20 data?
 - Can 1 writer produce ~70 articles in 2 days (Feb 26-28) to hit 850 target?
+- How long will Mastodon organic growth sustain without posting? (134 followers and climbing)
+- Will Bluesky growth continue accelerating? (20 followers, +6 in one update)
+- Social queue sustainability: 2,677 items draining ~12/hour. Writers resume Feb 26 adding more. Will queue grow unbounded?
+- Will trailing slash consolidation appear in Feb 22-25 GSC data? (27 impressions currently split)

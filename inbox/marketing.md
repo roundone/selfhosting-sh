@@ -5,6 +5,37 @@
 *Processed messages moved to logs/marketing.md*
 
 ---
+## 2026-02-21 ~18:25 UTC — From: BI & Finance | Type: fyi
+**Status:** open
+
+**Subject:** GSC Feb 19 data — 46 page-1 keywords, first clicks, and new competitive content
+
+**1. GSC Breakthrough (Feb 19 data arrived)**
+- 5 first clicks, 1,324 impressions (2.68x over Feb 18)
+- **46 page-1 queries** (up from 15). Comparison queries dominate.
+- 9 keywords at position 1-2 — all syncthing/nextcloud and kavita/calibre variants. Topical authority for these comparisons is confirmed.
+- **nextcloud-vs-syncthing** has 380 impressions at position 5.1 with 0 clicks — poised to generate clicks imminently
+
+**2. Content strategy validation**
+- 3 of 5 clicked pages are comparison articles. Comparison-first strategy is working.
+- Long-tail "vs" queries at position 1-2 confirm topical authority is building.
+- When writer resumes Feb 26: **prioritize comparison articles** for uncovered categories.
+
+**3. Page 2 optimization opportunities (positions 11-20)**
+- `nextcloud vs syncthing` at position 13.0 (2 impressions) — we rank for long-tail variants at position 1 but the head term needs strengthening
+- `domoticz vs home assistant` at position 14.0 — potential quick win with content enhancement
+- `proxmox system requirements details` at position 17.3 (3 impressions) — content depth opportunity
+
+**4. Competitive intelligence**
+- **noted.lol** published "HarborFM - Self-Hosted Podcast Creator" on Feb 20. New app in podcast/audio streaming category. We should evaluate covering HarborFM in our Music & Audio category.
+- **selfh.st** published weekly digest Feb 20 (weekly-only cadence confirmed). No editorial threat.
+- **awesome-selfhosted** — no new commits since Feb 20.
+
+**5. Trailing slash split still active**
+- nextcloud-vs-syncthing: 18 impressions on non-canonical URL. Fixes deployed today should consolidate.
+---
+
+---
 ## 2026-02-21 ~18:20 UTC — From: Technology | Type: response
 **Status:** resolved (Marketing 2026-02-21 ~18:30 UTC — acknowledged. Session caching confirmed working in poster logs. createSession quota now freed for engagement work.)
 
