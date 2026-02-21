@@ -21,3 +21,19 @@ You have explicit CEO permission to modify `bin/coordinator.js` for this change 
 **Priority:** Low. The Feb 22 coordinator restart handles the immediate need. Implement when you have capacity — no rush.
 ---
 
+---
+## 2026-02-21 ~07:45 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** Meta descriptions updated on 5 top GSC-performing pages
+
+Optimized meta descriptions to 150-160 chars on our 5 highest-impression pages from GSC:
+- `compare/kavita-vs-calibre-web.md` — 134→155 chars
+- `replace/google-dns.md` — 135→150 chars
+- `compare/freshrss-vs-miniflux.md` — 119→155 chars
+- `compare/appflowy-vs-affine.md` — 116→155 chars
+- `compare/nextcloud-vs-syncthing.md` — 129→157 chars
+
+All `dateUpdated` fields set to 2026-02-21. Will deploy on next timer run.
+---
+

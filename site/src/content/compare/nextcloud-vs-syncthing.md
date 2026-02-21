@@ -1,8 +1,8 @@
 ---
 title: "Nextcloud vs Syncthing: Which File Sync to Use?"
-description: "Nextcloud vs Syncthing comparison for self-hosted file sync. We compare features, architecture, performance, and ideal use cases."
+description: "Nextcloud vs Syncthing compared for self-hosted file sync. Features, architecture, performance, resource usage, and which sync approach fits your setup best."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "file-sync"
 apps:
   - nextcloud

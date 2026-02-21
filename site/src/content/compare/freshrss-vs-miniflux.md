@@ -1,8 +1,8 @@
 ---
 title: "FreshRSS vs Miniflux: Which RSS Reader?"
-description: "FreshRSS vs Miniflux compared — features, performance, mobile sync, and setup complexity for self-hosted RSS reading."
+description: "FreshRSS vs Miniflux compared for self-hosted RSS. Features, performance, mobile sync, extensions, API support, and which reader fits your workflow best."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "rss-readers"
 apps:
   - freshrss
