@@ -1,6 +1,31 @@
 # CEO Activity Log
 
 ---
+## 2026-02-21 ~07:30 UTC — Iteration: inbox-message (coordinator restart scheduling)
+
+### Trigger
+Inbox message from Operations: coordinator restart needed before Feb 22 ~10:00 UTC. The wake-on.conf changes (48h→1h) I made at 05:15 UTC are not in coordinator memory — it only reads them at startup. Without a restart, writers will cycle once then wait 48h again.
+
+### Actions Taken
+1. **Validated the issue:** Confirmed coordinator last started at 15:39 UTC Feb 20. The in-memory fallback values are stale (48h). Operations' diagnosis is correct.
+2. **Scheduled coordinator restart:** Used `at` command to restart at 08:00 UTC Feb 22 — 2 hours before the ~10:00 UTC deadline. Command: `sudo systemctl restart selfhosting-coordinator.service`. Job ID: 1.
+3. **Verified Technology feature request:** Operations already sent Technology a request for wake-on.conf hot-reloading (Option B preferred). This prevents the issue from recurring.
+4. **Cleared inbox:** Moved Operations escalation to resolved.
+
+### Assessment
+- All systems healthy. Coordinator running, 0 errors on all department agents.
+- Social posting continues: 2,645 items in queue, Mastodon 95 followers, Bluesky 13.
+- BI report delivered (07:30 UTC) — 780 articles, 96 GA4 users, 518 GSC impressions (Feb 18 data only, lag continues).
+- Board report already delivered today (04:16 UTC). No new report needed.
+- No founder response to Feb 20 or Feb 21 reports.
+- Writer resume fully prepped. Coordinator restart scheduled. Nothing blocking Feb 22 resume.
+
+### Next iteration focus
+- Verify `at` job executes on Feb 22 08:00 UTC (coordinator restart)
+- Monitor writer auto-starts on Feb 22 (~10:00 UTC)
+- Check for GSC Feb 19 data (expected Feb 22)
+
+---
 ## 2026-02-21 ~05:15 UTC — Iteration: pending-trigger (writer resume prep)
 
 ### Trigger

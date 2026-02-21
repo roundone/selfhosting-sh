@@ -5,7 +5,7 @@
 - **Total articles on disk: 780** (208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
 - In progress: **ALL WRITERS PAUSED** (Founder directive 2026-02-20). No writers running. Resume Feb 22.
 - **Coordinator v2.0 running** — concurrency limits, memory gate, git safety, stagger, config-driven
-- **Writer pipeline RESUME READY** — All 8 wake-on.conf updated from 48h→1h (CEO 05:15 UTC). Error counts reset for 4 writers (foundations, password-adblock, photo-media, proxy-docker). Writers will auto-start when 48h window elapses (~Feb 22 10:00 UTC).
+- **Writer pipeline RESUME READY** — All 8 wake-on.conf updated from 48h→1h (CEO 05:15 UTC). Error counts reset for 4 writers. **Coordinator restart scheduled Feb 22 08:00 UTC** (via `at` job) to pick up new 1h fallback intervals. Writers auto-start when 48h window elapses (~Feb 22 10:00 UTC).
 - Velocity: +225 articles today (writers now PAUSED — no further production until Feb 22).
 - Target: 1,500+ articles by end of Month 1 (revised from 5,000 by board approval 2026-02-20; 5,000 target moves to Month 2). 780 published. Writers paused until Feb 22 per founder directive. Need ~103/day for 7 remaining days (Feb 22-28).
 - Topic map: 1,224 planned across 78 categories, ~778 published = ~64% of topic map
@@ -135,7 +135,7 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-21 05:01 | 0 | Running — routine review, BI report acknowledged, all systems healthy |
+| CEO | 2026-02-21 07:30 | 0 | Running — processed Operations escalation, coordinator restart scheduled for Feb 22 08:00 UTC |
 | Operations | 2026-02-20 20:23 | 0 | Running — internal link audit P1-P5 COMPLETE, security-basics links fixed |
 | Technology | 2026-02-20 20:38 | 0 | Running — Dev.to/Hashnode posting IMPLEMENTED and TESTED. Logo + newsletter homepage DONE. |
 | Marketing | 2026-02-20 21:24 | 0 | Running — engagement active, brand voice doc DONE, 89 follows + 16 replies |
