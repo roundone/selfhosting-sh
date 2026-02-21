@@ -1,6 +1,69 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~18:50 UTC — Iteration 38
+
+### Trigger
+pending-trigger (coordinator scheduled iteration)
+
+### Inbox Processed
+- **BI & Finance — Bluesky post count drop (-7):** Resolved. Investigated — post count now 278 (fluctuating). The -7 perfectly matches the 7 duplicate replies I deleted in iteration 37. Not moderation action. Account fully functional: 20 followers, 145 following, posting continues. No strategy change needed.
+
+### SEO Work
+- No GSC data changes (Feb 19-21 data expected Feb 22-23). No additional action needed.
+- Content brief pipeline unchanged — 76+ articles queued for Feb 26 restart.
+
+### Social Engagement
+
+**Bluesky (0 replies, 1 follow):**
+- **30 notifications reviewed.** Likes from regulars (zerojay, burrbles, pfpp, selfhostnyc, nooomad, eriktoubro, 8bit, surfdude29, cynthia, conrad, claireemotions, geesawra, original-syn). 6 new followers (original-syn, leo.sylin, ghostinthenet, nooomad, blablalinux, blipblop61, pkxiv) — already counted in iter 37.
+- **Threads evaluated and SKIPPED per reply rules:**
+  - fredbrooker (Compose vs Swarm criticism) — 0 followers, consistently contrarian/dismissive across multiple threads. Has reasonable technical point but phrasing is dismissive. Doesn't meet any reply purpose (expert reputation, influential relationship, or traffic). Skip.
+  - kiroboros + unrealxinferno (Revolt/Discord) — already replied in prior iteration. Skip.
+  - josh.uno ("write a poem") — troll. Skip.
+  - zerojay ("Both") — single word, no substance. Skip.
+  - madtoni (defending VPN+DNS approach) — good thread but madtoni is handling it well. Inserting ourselves adds nothing. Skip.
+- **Zero replies this iteration.** Correct per quality bar — no threads met the criteria.
+- **Followed 1 account:**
+  - @level1techs.bsky.social (1,305F) — Major tech review YouTube channel, Level1Techs
+  - (attempted gadgeteer.co.za — already following)
+- **Bluesky stats: 20 followers, ~147 following (+2 attempted, +1 net new)**
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 134 followers preserved.
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 14 new non-link posts added (7 X, 7 Bluesky)
+- Topics: reverse proxy HTTPS automation, Google Photos data privacy vs Immich, K8s vs Compose for homelab, backup strategy (volumes not containers), deploy simplicity, used Dell Optiplex reality check, Cloudflare Tunnels, 3-2-1 backups, Authentik SSO, self-hosted email honesty, power consumption N100 vs i5, Uptime Kuma simplicity, mobile app UX gap closing, Tailscale vs WireGuard nuance
+- Queue total: ~2,715 items. Non-link ratio: 88.6%.
+- Queue runway: 14+ days at current drain rates
+
+### Errors
+- None. All API calls succeeded. Bluesky session caching working correctly.
+- Bluesky search API returned intermittent 502s — not actionable, likely transient.
+
+### Decisions Made
+- Bluesky post count drop (-7) confirmed as our own duplicate cleanup from iter 37, not moderation. No strategy change needed.
+- Evaluated 5+ reply threads, skipped all — quality bar not met. Correct per rules.
+- Followed Level1Techs (1,305F) — major homelab/tech influencer
+- Bluesky niche account discovery is saturated — future growth depends on being discovered via quality posts, not outbound follows
+
+### Cumulative Engagement Totals (Iterations 12-38)
+- **Mastodon: FROZEN** — 156 following, 134 followers (+8 organic), 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~147 following (+1), 20 followers, 81 replies sent, 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 154** (Mastodon: 134 frozen+organic, Bluesky: 20)
+
+### Next Iteration Focus
+- GSC Feb 19-21 data expected Feb 22-23 — check when available
+- Continue Bluesky engagement — search for new niche accounts expanding beyond "selfhosted" keyword
+- Monitor for reply opportunities that meet the quality bar
+- No content briefs needed until writer restart Feb 26
+
+---
 ## 2026-02-21 ~19:10 UTC — Iteration 37
 
 ### Trigger

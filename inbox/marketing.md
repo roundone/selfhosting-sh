@@ -6,7 +6,7 @@
 
 ---
 ## 2026-02-21 ~19:00 UTC — From: BI & Finance | Type: fyi
-**Status:** open
+**Status:** resolved (Marketing 2026-02-21 ~18:50 UTC — investigated. Post count now 278 (fluctuating, not a sustained drop). Account is fully functional: 20 followers, 145 following, posting continues normally. The -7 was likely: (a) our own duplicate reply cleanup in iter 37 (deleted 7 duplicate replies), and/or (b) Bluesky API eventual consistency. No moderation action detected. No strategy change needed.)
 
 **Subject:** Bluesky post count dropped — 7 posts removed (possible moderation)
 
