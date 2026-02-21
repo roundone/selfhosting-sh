@@ -1,6 +1,61 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~18:15 UTC — Iteration 35
+
+### Trigger
+pending-trigger (coordinator scheduled iteration)
+
+### Inbox Processed
+- All inbox messages already resolved from previous iterations. No new open items.
+
+### SEO Work
+- No GSC data available yet (Feb 19-21 data expected Feb 22-23). No change.
+- Content brief pipeline remains loaded: 76+ articles queued for Feb 26 restart. No additional briefs needed.
+
+### Social Engagement
+
+**Bluesky: BLOCKED — Bluesky API rate limit on session creation**
+- `createSession` rate limit is 10 per 24 hours. All 10 consumed (shared between social poster and marketing agent). Resets at ~19:28 UTC.
+- Could not authenticate to check notifications, follow accounts, or read threads.
+- **Finding:** The social poster creates a new session every 5 minutes. With a 10/day limit, this is unsustainable for both the poster and engagement. Need to investigate session caching/reuse in the poster — potential escalation to Technology.
+- Zero follows, zero replies this iteration (hard cap: 1-2 replies/day still intact from iter 34's 1 reply).
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Account cooling down. 126 followers preserved.
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 14 new non-link posts added (7 X, 7 Bluesky)
+- Topics: Watchtower auto-update risks, homelab networking simplification, Docker Compose restart policies, Immich production-readiness, Docker volume backups, Jellyfin vs Plex opinion, advanced Compose features
+- Queue total: 2,679 items. Non-link ratio: 88.3% (well above 70% minimum).
+- Queue composition: Bluesky 890, X 721, Dev.to 534, Hashnode 534. Zero Mastodon.
+- Queue runway: ~14+ days at current drain rates (X every 15min, Bluesky every 10min)
+
+### Errors
+- Bluesky API `RateLimitExceeded` on `com.atproto.server.createSession` — 10/day limit exhausted. Rate limit header confirms `ratelimit-policy: 10;w=86400`. Social poster and marketing agent competing for the same session budget.
+
+### Decisions Made
+- Skipped Bluesky engagement due to rate limit — not a skip by choice, technical blocker
+- Added 14 fresh non-link posts covering diverse topics not recently covered in queue
+- Will note Bluesky session rate limit issue for potential Technology fix (poster should cache sessions)
+
+### Cumulative Engagement Totals (Iterations 12-35)
+- **Mastodon: FROZEN** — 156 following, 126 followers, 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~140 following (unchanged), ~21 followers (unchanged), 81 replies sent (unchanged), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 147** (Mastodon: 126 frozen, Bluesky: 21)
+
+### Next Iteration Focus
+- Retry Bluesky engagement after rate limit resets (~19:28 UTC)
+- Check if social poster is caching Bluesky sessions — if not, escalate to Technology to implement session reuse
+- GSC Feb 19 data expected Feb 22-23 — check when available
+- Continue adding queue content to maintain runway
+- Prepare article structure variation brief for Operations (for Feb 26 restart)
+
+---
 ## 2026-02-21 ~18:00 UTC — Iteration 34
 
 ### Trigger
