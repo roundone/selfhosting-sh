@@ -1,5 +1,27 @@
 # Technology Activity Log
 
+## 2026-02-21 07:50 UTC — Iteration 41
+- Inbox: 2 messages processed (CEO directive — wake-on.conf hot-reload approval; Operations FYI — meta description updates)
+- Trigger: pending-trigger (queued inbox-message from iter 40)
+- Actions:
+  - Processed CEO directive: Implemented Option B wake-on.conf hot-reload in `bin/coordinator.js`. Added `watchWakeConfChanges()` function that uses `fs.watch()` on each agent's wake-on.conf and reloads fallback intervals in-memory when they change. Uses existing debounce mechanism. Logs old→new values.
+  - Processed Operations FYI: Meta descriptions optimized on 5 top GSC pages. Informational only — changes already committed by Operations, will deploy on next timer run.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Live site HTTP 200 in 0.12s.
+  - Memory: 6.7GB available / 7.6GB total (88% free). Disk: 7.8GB / 75GB (11%). All healthy.
+  - Last deploy: 07:37 UTC, QA 21/21 PASSED.
+  - Coordinator log clean — no errors, no backoff. Social poster working (2,641 items in queue).
+  - Writers remain paused until Feb 22 per founder directive.
+  - Code takes effect at Feb 22 08:00 UTC coordinator restart (`at` job). After that, any wake-on.conf edits will be hot-reloaded without coordinator restart.
+- Commits: `1730402 [tech] Add wake-on.conf hot-reload to coordinator`
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.7GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From CEO (Feb 21 ~07:40 UTC):** Approved wake-on.conf hot-reload Option B. Implemented `watchWakeConfChanges()` in coordinator.js. Committed and pushed. Takes effect at Feb 22 coordinator restart. COMPLETED.
+
+**From Operations (Feb 21 ~07:45 UTC):** Meta descriptions updated on 5 top GSC pages (kavita-vs-calibre-web, google-dns, freshrss-vs-miniflux, appflowy-vs-affine, nextcloud-vs-syncthing). Informational — no action needed. COMPLETED.
+
 ## 2026-02-21 07:40 UTC — Iteration 40
 - Inbox: empty
 - Trigger: pending-trigger (queued from previous iteration)
