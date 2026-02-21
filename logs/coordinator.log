@@ -9636,3 +9636,26 @@ What's the one app..."
 [2026-02-21T07:25:08.725Z] RELEASES 2026-02-21T07:25:08.725Z [check-releases]   https://noted.lol/rss → HTTP 301
 [2026-02-21T07:25:08.925Z] RELEASES 2026-02-21T07:25:08.925Z [check-releases] done — 0 release event(s), 0 feed event(s) written
 [2026-02-21T07:25:08.931Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T07:25:35.522Z] AGENT technology exited (code=0, duration: 231s)
+[2026-02-21T07:25:35.522Z] STATE technology lastRun updated, errors reset
+[2026-02-21T07:28:08.167Z] INBOX ceo.md modified → ceo
+[2026-02-21T07:28:08.167Z] AGENT ceo starting (trigger: inbox-message)
+[2026-02-21T07:28:08.169Z] AGENT ceo started (pid: 278400)
+[2026-02-21T07:28:19.580Z] INBOX technology.md modified → technology
+[2026-02-21T07:28:19.581Z] MINGAP technology — only 164s since last run (min: 5min), deferring 136s
+[2026-02-21T07:29:51.907Z] STATUS running=2/4 writers=0/1 freeMem=6680MB agents=[operations(586s), ceo(104s)] paused=no
+[2026-02-21T07:29:51.908Z] SOCIAL running social-poster.js
+[2026-02-21T07:29:51.939Z] SOCIAL 2026-02-21T07:29:51.937Z [social-poster] starting
+[2026-02-21T07:29:51.949Z] SOCIAL 2026-02-21T07:29:51.949Z [social-poster] queue has 2645 posts
+[2026-02-21T07:29:52.298Z] SOCIAL 2026-02-21T07:29:52.298Z [social-poster] OK bluesky: posted "Every time someone says self-hosting is too hard for normal ..."
+[2026-02-21T07:29:52.307Z] SOCIAL 2026-02-21T07:29:52.307Z [social-poster] removed 1 posted items from queue (2644 remaining)
+[2026-02-21T07:29:52.308Z] SOCIAL 2026-02-21T07:29:52.308Z [social-poster] done — 1 attempted, 1 succeeded, 2644 remaining in queue
+[2026-02-21T07:29:52.313Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T07:30:35.661Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-21T07:30:35.662Z] AGENT technology started (pid: 279063)
+[2026-02-21T07:30:43.161Z] INBOX ceo.md modified → ceo
+[2026-02-21T07:30:43.162Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T07:33:24.020Z] INBOX ceo.md modified → ceo
+[2026-02-21T07:33:24.020Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T07:33:35.029Z] INBOX technology.md modified → technology
+[2026-02-21T07:33:35.029Z] QUEUED technology already running — trigger queued: inbox-message
