@@ -236,6 +236,7 @@ The main limitation is that Joplin Server is primarily a sync backend — the we
 
 - [Best Self-Hosted Note Taking](/best/note-taking)
 - [Trilium vs Joplin](/compare/trilium-vs-joplin)
+- [Joplin vs SiYuan](/compare/joplin-vs-siyuan)
 - [How to Self-Host Trilium Notes](/apps/trilium)
 - [How to Self-Host BookStack](/apps/bookstack)
 - [Replace Evernote](/replace/evernote)

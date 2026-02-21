@@ -476,6 +476,8 @@ For users coming from [Syncthing](/apps/syncthing) who want a central server wit
 - [How to Self-Host Syncthing](/apps/syncthing)
 - [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
 - [Seafile vs Syncthing](/compare/seafile-vs-syncthing)
+- [ownCloud vs Seafile](/compare/owncloud-vs-seafile)
+- [Seafile vs FileBrowser](/compare/seafile-vs-filebrowser)
 - [Replace Google Drive](/replace/google-drive)
 - [Replace Dropbox](/replace/dropbox)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

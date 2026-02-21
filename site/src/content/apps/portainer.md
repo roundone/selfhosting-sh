@@ -290,6 +290,10 @@ The main alternative is [Dockge](/apps/dockge) — a simpler, more focused tool 
 
 - [Best Self-Hosted Docker Management](/best/docker-management)
 - [Portainer vs Dockge](/compare/portainer-vs-dockge)
+- [Cosmos Cloud vs Portainer](/compare/cosmos-cloud-vs-portainer)
+- [Portainer vs Lazydocker](/compare/portainer-vs-lazydocker)
+- [Watchtower vs Portainer](/compare/watchtower-vs-portainer)
+- [Diun vs Portainer](/compare/diun-vs-portainer)
 - [How to Self-Host Dockge](/apps/dockge)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Networking](/foundations/docker-networking)

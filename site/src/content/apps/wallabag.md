@@ -275,6 +275,7 @@ Wallabag is the best self-hosted read-later app. It does one thing well: save ar
 
 - [Best Self-Hosted Bookmark & Read Later Apps](/best/bookmarks-read-later)
 - [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag)
+- [Wallabag vs Hoarder](/compare/wallabag-vs-hoarder)
 - [Replace Pocket with Self-Hosted Tools](/replace/pocket)
 - [Replace Instapaper with Self-Hosted Tools](/replace/instapaper)
 - [How to Self-Host Linkwarden](/apps/linkwarden)

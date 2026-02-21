@@ -347,6 +347,7 @@ WordPress is still the most practical choice for most websites. The plugin ecosy
 
 - [How to Self-Host Ghost](/apps/ghost)
 - [WordPress vs Ghost](/compare/ghost-vs-wordpress)
+- [WordPress vs Hugo](/compare/wordpress-vs-hugo)
 - [Best Self-Hosted CMS](/best/cms-websites)
 - [Replace Squarespace](/replace/squarespace)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

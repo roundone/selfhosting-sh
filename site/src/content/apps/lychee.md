@@ -340,6 +340,10 @@ Yes. Use `ghcr.io/lycheeorg/lychee:v7.3.3-legacy` for the nginx+PHP-FPM variant.
 ## Related
 
 - [Lychee vs Piwigo](/compare/lychee-vs-piwigo)
+- [Lychee vs PhotoView](/compare/lychee-vs-photoview)
+- [Immich vs Lychee](/compare/immich-vs-lychee)
+- [PhotoPrism vs Lychee](/compare/photoprism-vs-lychee)
+- [LibrePhotos vs Lychee](/compare/librephotos-vs-lychee)
 - [How to Self-Host Immich](/apps/immich)
 - [How to Self-Host PhotoPrism](/apps/photoprism)
 - [Best Self-Hosted Photo Management](/best/photo-management)

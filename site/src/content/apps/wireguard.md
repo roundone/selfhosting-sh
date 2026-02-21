@@ -385,6 +385,7 @@ Yes. WireGuard runs well on a Raspberry Pi 4 or 5. The kernel module is availabl
 - [How to Self-Host Tailscale](/apps/tailscale)
 - [How to Self-Host Headscale](/apps/headscale)
 - [Tailscale vs WireGuard](/compare/tailscale-vs-wireguard)
+- [WireGuard vs OpenVPN](/compare/wireguard-vs-openvpn)
 - [Replace NordVPN](/replace/nordvpn)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

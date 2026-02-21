@@ -298,6 +298,9 @@ Yes. You can create multiple users and assign each user a scan directory. Users 
 
 - [Immich vs LibrePhotos](/compare/immich-vs-librephotos)
 - [PhotoPrism vs LibrePhotos](/compare/photoprism-vs-librephotos)
+- [LibrePhotos vs Lychee](/compare/librephotos-vs-lychee)
+- [LibrePhotos vs PhotoView](/compare/librephotos-vs-photoview)
+- [LibrePhotos vs Piwigo](/compare/librephotos-vs-piwigo)
 - [Self-Hosted Google Photos Alternatives](/replace/google-photos)
 - [Best Self-Hosted Photo Management](/best/photo-management)
 - [How to Self-Host Immich](/apps/immich)

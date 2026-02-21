@@ -198,6 +198,10 @@ The trade-off is complexity — the learning curve is steeper than [BookStack](/
 
 - [Best Self-Hosted Note Taking](/best/note-taking)
 - [SiYuan vs Obsidian](/compare/siyuan-vs-obsidian)
+- [Joplin vs SiYuan](/compare/joplin-vs-siyuan)
+- [Outline vs SiYuan](/compare/outline-vs-siyuan)
+- [Trilium vs SiYuan](/compare/trilium-vs-siyuan)
+- [BookStack vs SiYuan](/compare/bookstack-vs-siyuan)
 - [How to Self-Host Trilium Notes](/apps/trilium)
 - [How to Self-Host BookStack](/apps/bookstack)
 - [How to Self-Host Outline](/apps/outline)

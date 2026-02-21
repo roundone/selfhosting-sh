@@ -328,6 +328,7 @@ Choose Duplicati if you want a GUI-driven backup tool with native support for S3
 
 - [How to Self-Host Borgmatic with Docker](/apps/borgmatic)
 - [Duplicati vs Borgmatic](/compare/duplicati-vs-borgmatic)
+- [Duplicati vs Restic](/compare/duplicati-vs-restic)
 - [Best Self-Hosted Backup Solutions](/best/backup)
 - [Replace Backblaze and CrashPlan](/replace/cloud-backup)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

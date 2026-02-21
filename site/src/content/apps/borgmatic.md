@@ -574,6 +574,7 @@ Compared to [Restic](/apps/restic), borgmatic offers more structured automation 
 - [How to Self-Host Duplicati with Docker](/apps/duplicati)
 - [How to Self-Host Restic Backup](/apps/restic)
 - [Restic vs BorgBackup: Which Should You Self-Host?](/compare/restic-vs-borgbackup)
+- [Borgmatic vs Restic](/compare/borgmatic-vs-restic)
 - [Best Self-Hosted Backup Solutions](/best/backup)
 - [Backup Strategy: The 3-2-1 Rule](/foundations/backup-3-2-1-rule)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

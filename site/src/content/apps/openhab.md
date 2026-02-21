@@ -278,6 +278,8 @@ No. openHAB runs entirely locally. Cloud integrations (voice assistants, remote 
 
 - [How to Self-Host Home Assistant](/apps/home-assistant)
 - [Home Assistant vs openHAB](/compare/home-assistant-vs-openhab)
+- [openHAB vs Gladys](/compare/openhab-vs-gladys)
+- [openHAB vs ioBroker](/compare/openhab-vs-iobroker)
 - [Best Self-Hosted Home Automation](/best/home-automation)
 - [Replace Google Home](/replace/google-home)
 - [Replace Amazon Alexa](/replace/amazon-alexa)

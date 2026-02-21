@@ -432,6 +432,9 @@ If you want a dedicated home automation appliance, install Home Assistant OS on 
 
 - [Best Self-Hosted Home Automation](/best/home-automation)
 - [Home Assistant vs OpenHAB](/compare/home-assistant-vs-openhab)
+- [Home Assistant vs ESPHome](/compare/home-assistant-vs-esphome)
+- [Home Assistant vs Homebridge](/compare/home-assistant-vs-homebridge)
+- [Home Assistant vs ioBroker](/compare/home-assistant-vs-iobroker)
 - [Replace Google Home](/replace/google-home)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Docker Networking](/foundations/docker-networking)

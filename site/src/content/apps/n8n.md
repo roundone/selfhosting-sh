@@ -272,6 +272,9 @@ n8n is the best self-hosted workflow automation tool. It's the closest you'll ge
 
 - [Best Self-Hosted Automation Tools](/best/automation)
 - [n8n vs Node-RED](/compare/n8n-vs-node-red)
+- [Airflow vs n8n](/compare/airflow-vs-n8n)
+- [Kestra vs n8n](/compare/kestra-vs-n8n)
+- [Temporal vs n8n](/compare/temporal-vs-n8n)
 - [Replace Zapier with Self-Hosted Automation](/replace/zapier)
 - [Replace IFTTT with Self-Hosted Automation](/replace/ifttt)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

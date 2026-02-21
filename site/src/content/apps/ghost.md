@@ -258,6 +258,7 @@ Ghost is open source (MIT license) and free to self-host. Ghost(Pro) is the paid
 
 - [How to Self-Host WordPress](/apps/wordpress)
 - [Ghost vs WordPress](/compare/ghost-vs-wordpress)
+- [Ghost vs Hugo](/compare/ghost-vs-hugo)
 - [Best Self-Hosted CMS Platforms](/best/cms-websites)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

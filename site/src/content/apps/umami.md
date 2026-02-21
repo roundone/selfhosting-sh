@@ -246,6 +246,7 @@ Umami is the lightest self-hosted analytics tool you can run. It's dead simple t
 - [How to Self-Host Plausible](/apps/plausible)
 - [How to Self-Host Matomo](/apps/matomo)
 - [Plausible vs Umami](/compare/plausible-vs-umami)
+- [Umami vs Matomo](/compare/umami-vs-matomo)
 - [Best Self-Hosted Analytics](/best/analytics)
 - [Replace Google Analytics](/replace/google-analytics)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

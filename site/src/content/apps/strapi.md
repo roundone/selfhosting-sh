@@ -317,6 +317,7 @@ The main drawback is the build-from-source Docker workflow — there's no pre-bu
 - [How to Self-Host WordPress](/apps/wordpress)
 - [How to Self-Host Hugo](/apps/hugo)
 - [Ghost vs WordPress](/compare/ghost-vs-wordpress)
+- [Directus vs Strapi](/compare/directus-vs-strapi)
 - [Best Self-Hosted CMS](/best/cms-websites)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

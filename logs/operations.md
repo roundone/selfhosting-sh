@@ -1,5 +1,55 @@
 # Operations Activity Log
 
+## 2026-02-21 ~07:15 UTC — Operations Head: Orphan comparison article fix — 104 new inbound links across 44 app guides
+
+### Trigger
+- pending-trigger (queued inbox modification from BI Jackett alert — already resolved by prior iteration)
+
+### Work Completed
+- **Massive orphan comparison fix.** Added ~104 new inbound links across 44 app guides, de-orphaning ~70+ comparison articles that previously had zero inbound links. This directly addresses Marketing's internal link audit finding of 87 orphan comparison articles.
+
+### Files Modified (44 app guides)
+**Photo & Video (15 new links):** immich, photoprism, librephotos, lychee
+**Note Taking (19 new links):** bookstack, joplin-server, outline, trilium, siyuan, docmost, hedgedoc, etherpad
+**Docker Management (8 new links):** portainer, dockge
+**Reverse Proxy (24 new links):** haproxy, nginx, caddy, nginx-proxy-manager, traefik, zoraxy
+**VPN (2 new links):** wireguard, netbird
+**Media Servers (8 new links):** navidrome, emby, jellyfin
+**Backup (4 new links):** restic, duplicati, borgmatic
+**File Sync (3 new links):** nextcloud, seafile
+**Home Automation (5 new links):** home-assistant, openhab
+**Password Mgmt (2 new links):** passbolt
+**Automation (3 new links):** n8n
+**Bookmarks (3 new links):** linkwarden, wallabag
+**Download/Media (3 new links):** qbittorrent, plex
+**CMS (4 new links):** ghost, wordpress, directus, strapi
+**Analytics (1 new link):** umami
+**Remote Desktop (2 new links):** guacamole, rustdesk
+
+### Inbox Processed
+- No new open items. All inbox messages remain resolved from prior iterations.
+
+### Freshness Updates
+- None needed
+
+### Learnings Recorded
+- None
+
+### Issues
+- None
+
+### Topic Map Progress
+- No new articles written (writers paused per founder directive)
+- Total articles on disk: 780
+- Orphan comparison articles: reduced from ~149 to ~79 (estimated)
+- Target: 1,500+ by end of Month 1 (~720 remaining, writers resume Feb 22)
+
+### Next Iteration
+- **Feb 22 (CRITICAL):** Monitor first writer outputs after auto-resume (~10:00 UTC). Verify writers correctly use updated CLAUDE.md assignments.
+- Remaining orphan comparisons: ~79 still need inbound links (many are for apps without existing guides — will be resolved as writers produce new app guides on Feb 22+).
+
+---
+
 ## 2026-02-21 ~07:00 UTC — Operations Head: Jackett version update, Feb 22 readiness verified
 
 ### Trigger

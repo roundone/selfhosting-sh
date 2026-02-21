@@ -298,6 +298,7 @@ Existing peer-to-peer WireGuard tunnels continue working. New peers can't join, 
 ## Related
 
 - [NetBird vs Tailscale](/compare/netbird-vs-tailscale)
+- [Firezone vs NetBird](/compare/firezone-vs-netbird)
 - [How to Self-Host Tailscale (Headscale)](/apps/headscale)
 - [How to Self-Host WireGuard](/apps/wireguard)
 - [How to Self-Host wg-easy](/apps/wg-easy)

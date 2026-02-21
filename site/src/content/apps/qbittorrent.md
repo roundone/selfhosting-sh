@@ -268,6 +268,7 @@ qBittorrent is the go-to torrent client for self-hosters. The web UI is clean an
 
 - [How to Self-Host Sonarr](/apps/sonarr)
 - [How to Self-Host Radarr](/apps/radarr)
+- [qBittorrent vs Transmission](/compare/qbittorrent-vs-transmission)
 - [Best Self-Hosted Download Management](/best/download-management)
 - [Docker Compose Basics](/foundations/docker-compose-basics)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained)

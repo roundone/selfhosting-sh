@@ -348,6 +348,7 @@ Nextcloud is the default recommendation for anyone wanting a self-hosted cloud p
 - [Best Self-Hosted File Sync & Storage](/best/file-sync)
 - [Nextcloud vs Seafile](/compare/nextcloud-vs-seafile)
 - [Syncthing vs Nextcloud](/compare/syncthing-vs-nextcloud)
+- [Nextcloud vs FileBrowser](/compare/nextcloud-vs-filebrowser)
 - [Nextcloud Sync Not Working: Fix Guide](/troubleshooting/nextcloud-sync-not-working)
 - [Replace Dropbox](/replace/dropbox)
 - [Replace Google Drive](/replace/google-drive)

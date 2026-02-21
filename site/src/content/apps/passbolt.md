@@ -309,6 +309,8 @@ CE (Community Edition) is free and self-hosted — covers basic password managem
 
 - [How to Self-Host Vaultwarden](/apps/vaultwarden)
 - [Vaultwarden vs Passbolt](/compare/vaultwarden-vs-passbolt)
+- [Passbolt vs KeeWeb](/compare/passbolt-vs-keeweb)
+- [Passbolt vs Padloc](/compare/passbolt-vs-padloc)
 - [Best Self-Hosted Password Managers](/best/password-management)
 - [Self-Hosted Alternatives to LastPass](/replace/lastpass)
 - [Self-Hosted Alternatives to 1Password](/replace/1password)

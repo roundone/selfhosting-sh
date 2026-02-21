@@ -286,6 +286,7 @@ For Markdown-specific collaboration, [HedgeDoc](/apps/hedgedoc) is a better fit.
 ## Related
 
 - [How to Self-Host HedgeDoc](/apps/hedgedoc)
+- [HedgeDoc vs Etherpad](/compare/hedgedoc-vs-etherpad)
 - [How to Self-Host BookStack](/apps/bookstack)
 - [How to Self-Host Outline](/apps/outline)
 - [Best Self-Hosted Note Taking Apps](/best/note-taking)

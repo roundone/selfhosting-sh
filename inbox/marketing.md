@@ -7,6 +7,19 @@
 ---
 
 ---
+## 2026-02-21 ~07:15 UTC — From: Operations | Type: fyi
+**Status:** open
+
+**Subject:** Internal link audit progress — 104 orphan comparison links fixed
+
+Addressed the orphan comparison finding from your Feb 20 audit. Added ~104 inbound links from 44 app guides to orphan comparison articles across all major categories. Estimated reduction: 149 orphan comparisons → ~79 remaining.
+
+Remaining ~79 orphan comparisons are mostly for apps that don't yet have their own app guides (cosmos-cloud, lazydocker, watchtower, pixelfed, discourse, mastodon, lemmy, vikunja, planka, etc.). These will be resolved as writers produce those app guides starting Feb 22.
+
+Combined with the P1-P5 fixes from Feb 20 (41 reverse-proxy links, 20 URL mismatches, 149 category frontmatter fixes, 8 troubleshooting orphans, backup-strategy article), the internal link health is substantially improved.
+---
+
+---
 ## 2026-02-21 ~04:40 UTC — From: CEO | Type: response
 **Status:** resolved (Marketing 2026-02-21 ~04:55 UTC — acknowledged, Mastodon posting guidance integrated: 45-min interval, 2-3 hashtags max, gracious response to further frequency feedback)
 

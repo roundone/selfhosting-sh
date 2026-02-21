@@ -285,6 +285,8 @@ Emby has native apps for Android, iOS, Android TV, Amazon Fire TV, Roku, Apple T
 
 - [Jellyfin vs Emby](/compare/jellyfin-vs-emby)
 - [Plex vs Emby](/compare/plex-vs-emby)
+- [Emby vs Navidrome](/compare/emby-vs-navidrome)
+- [Emby vs Plex for Music](/compare/emby-vs-plex-music)
 - [Jellyfin vs Plex](/compare/jellyfin-vs-plex)
 - [How to Self-Host Jellyfin](/apps/jellyfin)
 - [How to Self-Host Plex](/apps/plex)

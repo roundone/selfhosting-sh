@@ -248,6 +248,8 @@ Linkwarden is the best self-hosted bookmark manager for users who want archival 
 
 - [Best Self-Hosted Bookmark Managers](/best/bookmarks-read-later)
 - [Linkwarden vs Wallabag](/compare/linkwarden-vs-wallabag)
+- [Linkwarden vs Hoarder](/compare/linkwarden-vs-hoarder)
+- [Linkding vs Linkwarden](/compare/linkding-vs-linkwarden)
 - [Replace Pocket with Self-Hosted Tools](/replace/pocket)
 - [Replace Raindrop.io with Self-Hosted Tools](/replace/raindrop)
 - [Docker Compose Basics](/foundations/docker-compose-basics)

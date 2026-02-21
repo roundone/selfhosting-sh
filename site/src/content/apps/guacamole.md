@@ -313,6 +313,7 @@ With HTTPS, strong passwords, and TOTP enabled, yes. For extra security, put it 
 ## Related
 
 - [How to Self-Host RustDesk](/apps/rustdesk)
+- [Guacamole vs RustDesk](/compare/guacamole-vs-rustdesk)
 - [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
 - [Best Self-Hosted VPN Solutions](/best/vpn)
 - [Tailscale Setup Guide](/apps/tailscale)

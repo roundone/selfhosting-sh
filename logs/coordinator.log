@@ -9447,3 +9447,37 @@ Jellyfin: $0. Fore..."
 [2026-02-21T06:29:51.676Z] SOCIAL 2026-02-21T06:29:51.676Z [social-poster] removed 1 posted items from queue (2578 remaining)
 [2026-02-21T06:29:51.676Z] SOCIAL 2026-02-21T06:29:51.676Z [social-poster] done — 1 attempted, 1 succeeded, 2578 remaining in queue
 [2026-02-21T06:29:51.681Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T06:29:54.296Z] AGENT operations exited (code=0, duration: 212s)
+[2026-02-21T06:29:54.296Z] STATE operations lastRun updated, errors reset
+[2026-02-21T06:29:54.296Z] PENDING operations processing queued trigger
+[2026-02-21T06:29:54.297Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T06:34:51.357Z] STATUS running=0/4 writers=0/1 freeMem=7070MB agents=[none] paused=no
+[2026-02-21T06:34:51.358Z] SOCIAL running social-poster.js
+[2026-02-21T06:34:51.391Z] SOCIAL 2026-02-21T06:34:51.389Z [social-poster] starting
+[2026-02-21T06:34:51.400Z] SOCIAL 2026-02-21T06:34:51.400Z [social-poster] queue has 2578 posts
+[2026-02-21T06:34:51.401Z] SOCIAL 2026-02-21T06:34:51.401Z [social-poster] done — 0 attempted, 0 succeeded, 2578 remaining in queue
+[2026-02-21T06:34:51.404Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T06:34:54.399Z] AGENT operations starting (trigger: pending-trigger)
+[2026-02-21T06:34:54.400Z] AGENT operations started (pid: 265737)
+[2026-02-21T06:39:51.458Z] STATUS running=1/4 writers=0/1 freeMem=6889MB agents=[operations(297s)] paused=no
+[2026-02-21T06:39:51.459Z] SOCIAL running social-poster.js
+[2026-02-21T06:39:51.493Z] SOCIAL 2026-02-21T06:39:51.491Z [social-poster] starting
+[2026-02-21T06:39:51.503Z] SOCIAL 2026-02-21T06:39:51.503Z [social-poster] queue has 2578 posts
+[2026-02-21T06:39:51.724Z] SOCIAL 2026-02-21T06:39:51.723Z [social-poster] OK x: posted "What was the first thing you self-hosted? For most people it..."
+[2026-02-21T06:39:51.732Z] SOCIAL 2026-02-21T06:39:51.732Z [social-poster] removed 1 posted items from queue (2577 remaining)
+[2026-02-21T06:39:51.733Z] SOCIAL 2026-02-21T06:39:51.732Z [social-poster] done — 1 attempted, 1 succeeded, 2577 remaining in queue
+[2026-02-21T06:39:51.737Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T06:43:26.505Z] INBOX technology.md modified → technology
+[2026-02-21T06:43:26.505Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-21T06:43:26.506Z] AGENT technology started (pid: 268019)
+[2026-02-21T06:43:38.923Z] INBOX marketing.md modified → marketing
+[2026-02-21T06:43:38.924Z] AGENT marketing starting (trigger: inbox-message)
+[2026-02-21T06:43:38.925Z] AGENT marketing started (pid: 268061)
+[2026-02-21T06:44:51.461Z] STATUS running=3/4 writers=0/1 freeMem=6496MB agents=[operations(597s), technology(85s), marketing(73s)] paused=no
+[2026-02-21T06:44:51.461Z] SOCIAL running social-poster.js
+[2026-02-21T06:44:51.498Z] SOCIAL 2026-02-21T06:44:51.496Z [social-poster] starting
+[2026-02-21T06:44:51.507Z] SOCIAL 2026-02-21T06:44:51.507Z [social-poster] queue has 2577 posts
+[2026-02-21T06:44:51.854Z] SOCIAL 2026-02-21T06:44:51.853Z [social-poster] OK bluesky: posted "The best home server OS in 2026 is just Debian 12 with Docke..."
+[2026-02-21T06:44:51.863Z] SOCIAL 2026-02-21T06:44:51.863Z [social-poster] removed 1 posted items from queue (2576 remaining)
+[2026-02-21T06:44:51.863Z] SOCIAL 2026-02-21T06:44:51.863Z [social-poster] done — 1 attempted, 1 succeeded, 2576 remaining in queue
+[2026-02-21T06:44:51.868Z] SOCIAL social-poster.js exited (code: 0)

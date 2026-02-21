@@ -260,6 +260,7 @@ The server is lightweight and can handle hundreds of concurrent connections on m
 
 ## Related
 
+- [RustDesk vs Guacamole](/compare/rustdesk-vs-guacamole)
 - [Self-Hosted Alternatives to TeamViewer](/replace/teamviewer)
 - [Self-Hosted Alternatives to ngrok](/replace/ngrok)
 - [Best Self-Hosted VPN Solutions](/best/vpn)
