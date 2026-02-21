@@ -10312,3 +10312,15 @@ Yes, Traefi..."
 [2026-02-21T10:59:54.162Z] SOCIAL 2026-02-21T10:59:54.161Z [social-poster] removed 1 posted items from queue (2697 remaining)
 [2026-02-21T10:59:54.162Z] SOCIAL 2026-02-21T10:59:54.162Z [social-poster] done — 1 attempted, 1 succeeded, 2697 remaining in queue
 [2026-02-21T10:59:54.167Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T11:02:53.991Z] AGENT marketing exited (code=0, duration: 497s)
+[2026-02-21T11:02:53.991Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T11:02:53.991Z] PENDING marketing processing queued trigger
+[2026-02-21T11:02:53.991Z] MINGAP marketing — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T11:03:00.771Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T11:03:00.772Z] AGENT ceo started (pid: 321327)
+[2026-02-21T11:04:53.768Z] STATUS running=1/4 writers=0/1 freeMem=6845MB agents=[ceo(113s)] paused=no
+[2026-02-21T11:04:53.769Z] SOCIAL running social-poster.js
+[2026-02-21T11:04:53.795Z] SOCIAL 2026-02-21T11:04:53.793Z [social-poster] starting
+[2026-02-21T11:04:53.804Z] SOCIAL 2026-02-21T11:04:53.804Z [social-poster] queue has 2697 posts
+[2026-02-21T11:04:53.804Z] SOCIAL 2026-02-21T11:04:53.804Z [social-poster] done — 0 attempted, 0 succeeded, 2697 remaining in queue
+[2026-02-21T11:04:53.807Z] SOCIAL social-poster.js exited (code: 0)
