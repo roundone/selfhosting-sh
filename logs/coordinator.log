@@ -9220,3 +9220,16 @@ Jellyfin: $0. Fore..."
 [2026-02-21T05:04:50.315Z] SOCIAL 2026-02-21T05:04:50.314Z [social-poster] queue has 2578 posts
 [2026-02-21T05:04:50.315Z] SOCIAL 2026-02-21T05:04:50.315Z [social-poster] done — 0 attempted, 0 succeeded, 2578 remaining in queue
 [2026-02-21T05:04:50.318Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T05:05:54.652Z] AGENT ceo exited (code=0, duration: 333s)
+[2026-02-21T05:05:54.652Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T05:05:54.653Z] PENDING ceo processing queued trigger
+[2026-02-21T05:05:54.653Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T05:09:50.281Z] STATUS running=1/4 writers=0/1 freeMem=6888MB agents=[marketing(482s)] paused=no
+[2026-02-21T05:09:50.281Z] SOCIAL running social-poster.js
+[2026-02-21T05:09:50.314Z] SOCIAL 2026-02-21T05:09:50.311Z [social-poster] starting
+[2026-02-21T05:09:50.325Z] SOCIAL 2026-02-21T05:09:50.324Z [social-poster] queue has 2591 posts
+[2026-02-21T05:09:50.532Z] SOCIAL 2026-02-21T05:09:50.531Z [social-poster] OK x: posted "Notion + Dropbox + Google Calendar + Todoist = ~$35/mo. Next..."
+[2026-02-21T05:09:51.113Z] SOCIAL 2026-02-21T05:09:51.112Z [social-poster] OK mastodon: posted "Self-hosting is not about saving money. It's about ownership..."
+[2026-02-21T05:09:51.123Z] SOCIAL 2026-02-21T05:09:51.123Z [social-poster] removed 2 posted items from queue (2589 remaining)
+[2026-02-21T05:09:51.124Z] SOCIAL 2026-02-21T05:09:51.123Z [social-poster] done — 2 attempted, 2 succeeded, 2589 remaining in queue
+[2026-02-21T05:09:51.129Z] SOCIAL social-poster.js exited (code: 0)

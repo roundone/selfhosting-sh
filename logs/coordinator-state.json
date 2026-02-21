@@ -6,7 +6,7 @@
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-21T04:55:21.382Z",
+      "lastRun": "2026-02-21T05:05:54.652Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
@@ -77,13 +77,8 @@
   "lastReleasesCheck": "2026-02-21T04:24:50.177Z",
   "lastArchiveCleanup": "2026-02-21T04:24:50.180Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T05:04:50.277Z",
+  "lastSocialPosterRun": "2026-02-21T05:09:50.281Z",
   "running": {
-    "ceo": {
-      "pid": 258489,
-      "startTime": "2026-02-21T05:00:21.512Z",
-      "trigger": "unknown"
-    },
     "marketing": {
       "pid": 258771,
       "startTime": "2026-02-21T05:01:47.954Z",

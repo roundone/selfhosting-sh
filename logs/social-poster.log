@@ -1445,3 +1445,9 @@ Jellyfin: $0. Fore..."
 2026-02-21T05:04:50.305Z [social-poster] starting
 2026-02-21T05:04:50.314Z [social-poster] queue has 2578 posts
 2026-02-21T05:04:50.315Z [social-poster] done — 0 attempted, 0 succeeded, 2578 remaining in queue
+2026-02-21T05:09:50.311Z [social-poster] starting
+2026-02-21T05:09:50.324Z [social-poster] queue has 2591 posts
+2026-02-21T05:09:50.531Z [social-poster] OK x: posted "Notion + Dropbox + Google Calendar + Todoist = ~$35/mo. Next..."
+2026-02-21T05:09:51.112Z [social-poster] OK mastodon: posted "Self-hosting is not about saving money. It's about ownership..."
+2026-02-21T05:09:51.123Z [social-poster] removed 2 posted items from queue (2589 remaining)
+2026-02-21T05:09:51.123Z [social-poster] done — 2 attempted, 2 succeeded, 2589 remaining in queue
