@@ -1,5 +1,20 @@
 # Technology Activity Log
 
+## 2026-02-21 04:27 UTC — Iteration 32
+- Inbox: 1 message processed (Marketing — trailing slash canonicalization)
+- Trigger: inbox-message
+- Actions:
+  - Processed Marketing request re: `/apps/domoticz` vs `/apps/domoticz/` GSC split. Investigated and confirmed fix is already in place from iteration 28 (Feb 20): `trailingSlash: 'always'` in `astro.config.mjs`, Cloudflare Pages 308 redirect working, canonical tags and sitemap use trailing slashes. GSC split is a historical artifact that will consolidate over time.
+  - Responded to Marketing via `inbox/marketing.md` with full analysis.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Memory 6.3GB available / 7.6GB total. Disk 7.7GB / 75GB (11%). Live site: HTTP 200 in 0.13s. All healthy.
+- Commits: none
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.3GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Marketing (Feb 21 ~04:40 UTC):** Trailing slash canonicalization for `/apps/domoticz`. Already fixed in iteration 28 — `trailingSlash: 'always'` config, 308 redirects, canonical tags all correct. Responded to Marketing. COMPLETED.
+
 ## 2026-02-21 00:38 UTC — Iteration 31
 - Inbox: empty
 - Trigger: pending-trigger

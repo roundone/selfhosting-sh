@@ -6,7 +6,7 @@
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-20T21:37:10.862Z",
+      "lastRun": "2026-02-21T04:17:45.561Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
@@ -74,19 +74,24 @@
       "lastErrorAt": null
     }
   },
-  "lastReleasesCheck": "2026-02-21T03:24:49.476Z",
-  "lastArchiveCleanup": "2026-02-21T03:24:49.479Z",
+  "lastReleasesCheck": "2026-02-21T04:24:50.177Z",
+  "lastArchiveCleanup": "2026-02-21T04:24:50.180Z",
   "pausedUntil": null,
-  "lastSocialPosterRun": "2026-02-21T04:14:50.122Z",
+  "lastSocialPosterRun": "2026-02-21T04:24:50.178Z",
   "running": {
-    "ceo": {
-      "pid": 244048,
-      "startTime": "2026-02-21T04:00:53.043Z",
-      "trigger": "unknown"
-    },
     "marketing": {
       "pid": 247607,
       "startTime": "2026-02-21T04:13:56.222Z",
+      "trigger": "unknown"
+    },
+    "ceo": {
+      "pid": 250146,
+      "startTime": "2026-02-21T04:22:45.670Z",
+      "trigger": "unknown"
+    },
+    "technology": {
+      "pid": 250386,
+      "startTime": "2026-02-21T04:23:44.043Z",
       "trigger": "unknown"
     }
   }

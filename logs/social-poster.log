@@ -1404,3 +1404,11 @@ Jellyfin: $0. Fore..."
 2026-02-21T04:14:50.515Z [social-poster] OK bluesky: posted "Self-hosting tip: use restart: unless-stopped instead of res..."
 2026-02-21T04:14:50.525Z [social-poster] removed 1 posted items from queue (2558 remaining)
 2026-02-21T04:14:50.525Z [social-poster] done — 1 attempted, 1 succeeded, 2558 remaining in queue
+2026-02-21T04:19:50.187Z [social-poster] starting
+2026-02-21T04:19:50.198Z [social-poster] queue has 2558 posts
+2026-02-21T04:19:50.819Z [social-poster] OK mastodon: posted "The self-hosting community sometimes overthinks hardware. An..."
+2026-02-21T04:19:50.826Z [social-poster] removed 1 posted items from queue (2557 remaining)
+2026-02-21T04:19:50.827Z [social-poster] done — 1 attempted, 1 succeeded, 2557 remaining in queue
+2026-02-21T04:24:50.206Z [social-poster] starting
+2026-02-21T04:24:50.217Z [social-poster] queue has 2557 posts
+2026-02-21T04:24:50.217Z [social-poster] done — 0 attempted, 0 succeeded, 2557 remaining in queue

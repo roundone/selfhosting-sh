@@ -9014,3 +9014,70 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:14:50.530Z] SOCIAL social-poster.js exited (code: 0)
 [2026-02-21T04:15:30.322Z] INBOX marketing.md modified → marketing
 [2026-02-21T04:15:30.322Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T04:17:45.561Z] AGENT ceo exited (code=0, duration: 1013s)
+[2026-02-21T04:17:45.561Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T04:17:45.561Z] PENDING ceo processing queued trigger
+[2026-02-21T04:17:45.561Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T04:19:50.153Z] STATUS running=1/4 writers=0/1 freeMem=6855MB agents=[marketing(354s)] paused=no
+[2026-02-21T04:19:50.153Z] SOCIAL running social-poster.js
+[2026-02-21T04:19:50.189Z] SOCIAL 2026-02-21T04:19:50.187Z [social-poster] starting
+[2026-02-21T04:19:50.198Z] SOCIAL 2026-02-21T04:19:50.198Z [social-poster] queue has 2558 posts
+[2026-02-21T04:19:50.819Z] SOCIAL 2026-02-21T04:19:50.819Z [social-poster] OK mastodon: posted "The self-hosting community sometimes overthinks hardware. An..."
+[2026-02-21T04:19:50.827Z] SOCIAL 2026-02-21T04:19:50.826Z [social-poster] removed 1 posted items from queue (2557 remaining)
+[2026-02-21T04:19:50.827Z] SOCIAL 2026-02-21T04:19:50.827Z [social-poster] done — 1 attempted, 1 succeeded, 2557 remaining in queue
+[2026-02-21T04:19:50.832Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:22:45.668Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T04:22:45.670Z] AGENT ceo started (pid: 250146)
+[2026-02-21T04:23:44.042Z] INBOX technology.md modified → technology
+[2026-02-21T04:23:44.042Z] AGENT technology starting (trigger: inbox-message)
+[2026-02-21T04:23:44.043Z] AGENT technology started (pid: 250386)
+[2026-02-21T04:24:50.176Z] STATUS running=3/4 writers=0/1 freeMem=6484MB agents=[marketing(654s), ceo(125s), technology(66s)] paused=no
+[2026-02-21T04:24:50.177Z] RELEASES running check-releases.js
+[2026-02-21T04:24:50.178Z] SOCIAL running social-poster.js
+[2026-02-21T04:24:50.208Z] SOCIAL 2026-02-21T04:24:50.206Z [social-poster] starting
+[2026-02-21T04:24:50.208Z] RELEASES 2026-02-21T04:24:50.206Z [check-releases] starting
+[2026-02-21T04:24:50.209Z] RELEASES 2026-02-21T04:24:50.209Z [check-releases] checking 29 GitHub repos
+[2026-02-21T04:24:50.217Z] SOCIAL 2026-02-21T04:24:50.217Z [social-poster] queue has 2557 posts
+[2026-02-21T04:24:50.217Z] SOCIAL 2026-02-21T04:24:50.217Z [social-poster] done — 0 attempted, 0 succeeded, 2557 remaining in queue
+[2026-02-21T04:24:50.220Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:24:50.291Z] RELEASES 2026-02-21T04:24:50.291Z [check-releases]   AppFlowy-IO/AppFlowy-Cloud → 304 unchanged
+[2026-02-21T04:24:50.844Z] RELEASES 2026-02-21T04:24:50.844Z [check-releases]   janeczku/calibre-web → 200 but same version (0.6.26)
+[2026-02-21T04:24:51.455Z] RELEASES 2026-02-21T04:24:51.455Z [check-releases]   Dusk-Labs/dim → 304 unchanged
+[2026-02-21T04:24:52.032Z] RELEASES 2026-02-21T04:24:52.031Z [check-releases]   crazy-max/diun → 304 unchanged
+[2026-02-21T04:24:52.579Z] RELEASES 2026-02-21T04:24:52.579Z [check-releases]   louislam/dockge → 304 unchanged
+[2026-02-21T04:24:53.122Z] RELEASES 2026-02-21T04:24:53.122Z [check-releases]   docmost/docmost → 304 unchanged
+[2026-02-21T04:24:53.678Z] RELEASES 2026-02-21T04:24:53.678Z [check-releases]   juanfont/headscale → 200 but same version (v0.28.0)
+[2026-02-21T04:24:54.229Z] RELEASES 2026-02-21T04:24:54.228Z [check-releases]   Jackett/Jackett → 200 but same version (v0.24.1167)
+[2026-02-21T04:24:54.784Z] RELEASES 2026-02-21T04:24:54.784Z [check-releases]   jesseduffield/lazydocker → 200 but same version (v0.24.4)
+[2026-02-21T04:24:55.332Z] RELEASES 2026-02-21T04:24:55.331Z [check-releases]   LibrePhotos/librephotos → 404 (no releases or repo not found)
+[2026-02-21T04:24:55.894Z] RELEASES 2026-02-21T04:24:55.893Z [check-releases]   sissbruecker/linkding → 304 unchanged
+[2026-02-21T04:24:56.514Z] RELEASES 2026-02-21T04:24:56.513Z [check-releases]   matomo-org/matomo → 304 unchanged
+[2026-02-21T04:24:57.059Z] RELEASES 2026-02-21T04:24:57.059Z [check-releases]   stonith404/pocket-id → HTTP 301
+[2026-02-21T04:24:57.633Z] RELEASES 2026-02-21T04:24:57.633Z [check-releases]   netbirdio/netbird → 200 but same version (v0.65.3)
+[2026-02-21T04:24:58.201Z] RELEASES 2026-02-21T04:24:58.201Z [check-releases]   vrtmrz/obsidian-livesync → 200 but same version (0.25.43)
+[2026-02-21T04:24:58.757Z] RELEASES 2026-02-21T04:24:58.756Z [check-releases]   open-webui/open-webui → 304 unchanged
+[2026-02-21T04:24:59.309Z] RELEASES 2026-02-21T04:24:59.309Z [check-releases]   plausible/community-edition → 404 (no releases or repo not found)
+[2026-02-21T04:24:59.868Z] RELEASES 2026-02-21T04:24:59.868Z [check-releases]   restic/restic → 200 but same version (v0.18.1)
+[2026-02-21T04:25:00.449Z] RELEASES 2026-02-21T04:25:00.448Z [check-releases]   drakkan/sftpgo → 200 but same version (v2.7.0)
+[2026-02-21T04:25:01.023Z] RELEASES 2026-02-21T04:25:01.023Z [check-releases]   Stirling-Tools/Stirling-PDF → 200 but same version (v2.5.2)
+[2026-02-21T04:25:01.588Z] RELEASES 2026-02-21T04:25:01.587Z [check-releases]   TriliumNext/Notes → 304 unchanged
+[2026-02-21T04:25:02.146Z] RELEASES 2026-02-21T04:25:02.146Z [check-releases]   louislam/uptime-kuma → 200 but same version (2.1.3)
+[2026-02-21T04:25:02.698Z] RELEASES 2026-02-21T04:25:02.698Z [check-releases]   dani-garcia/vaultwarden → 304 unchanged
+[2026-02-21T04:25:03.269Z] RELEASES 2026-02-21T04:25:03.269Z [check-releases]   containrrr/watchtower → 304 unchanged
+[2026-02-21T04:25:03.819Z] RELEASES 2026-02-21T04:25:03.819Z [check-releases]   wg-easy/wg-easy → 304 unchanged
+[2026-02-21T04:25:04.371Z] RELEASES 2026-02-21T04:25:04.371Z [check-releases]   sinamics/ztnet → 304 unchanged
+[2026-02-21T04:25:04.934Z] RELEASES 2026-02-21T04:25:04.934Z [check-releases]   gurucomputing/headscale-ui → 304 unchanged
+[2026-02-21T04:25:05.484Z] RELEASES 2026-02-21T04:25:05.484Z [check-releases]   nextcloud/server → 304 unchanged
+[2026-02-21T04:25:06.051Z] RELEASES 2026-02-21T04:25:06.051Z [check-releases]   fatedier/frp → 200 but same version (v0.67.0)
+[2026-02-21T04:25:06.552Z] RELEASES 2026-02-21T04:25:06.552Z [check-releases] checking 3 feeds
+[2026-02-21T04:25:06.612Z] RELEASES 2026-02-21T04:25:06.611Z [check-releases]   https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/contents/README.md → 304 unchanged
+[2026-02-21T04:25:06.877Z] RELEASES 2026-02-21T04:25:06.877Z [check-releases]   https://selfh.st/index.xml → HTTP 404
+[2026-02-21T04:25:07.220Z] RELEASES 2026-02-21T04:25:07.219Z [check-releases]   https://noted.lol/rss → HTTP 301
+[2026-02-21T04:25:07.421Z] RELEASES 2026-02-21T04:25:07.421Z [check-releases] done — 0 release event(s), 0 feed event(s) written
+[2026-02-21T04:25:07.425Z] RELEASES check-releases.js exited (code: 0)
+[2026-02-21T04:25:11.992Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:25:11.993Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:26:41.884Z] INBOX marketing.md modified → marketing
+[2026-02-21T04:26:41.884Z] QUEUED marketing already running — trigger queued: inbox-message
+[2026-02-21T04:26:50.892Z] INBOX technology.md modified → technology
+[2026-02-21T04:26:50.892Z] QUEUED technology already running — trigger queued: inbox-message
