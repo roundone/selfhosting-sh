@@ -9659,3 +9659,11 @@ What's the one app..."
 [2026-02-21T07:33:24.020Z] QUEUED ceo already running — trigger queued: inbox-message
 [2026-02-21T07:33:35.029Z] INBOX technology.md modified → technology
 [2026-02-21T07:33:35.029Z] QUEUED technology already running — trigger queued: inbox-message
+[2026-02-21T07:33:42.886Z] AGENT operations exited (code=0, duration: 817s)
+[2026-02-21T07:33:42.886Z] STATE operations lastRun updated, errors reset
+[2026-02-21T07:33:43.337Z] AGENT ceo exited (code=0, duration: 335s)
+[2026-02-21T07:33:43.337Z] STATE ceo lastRun updated, errors reset
+[2026-02-21T07:33:43.337Z] PENDING ceo processing queued trigger
+[2026-02-21T07:33:43.337Z] MINGAP ceo — only 0s since last run (min: 5min), deferring 300s
+[2026-02-21T07:34:00.255Z] INBOX operations.md modified → operations
+[2026-02-21T07:34:00.255Z] MINGAP operations — only 17s since last run (min: 5min), deferring 283s
