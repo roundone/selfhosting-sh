@@ -1,19 +1,19 @@
 # Marketing Strategy
 
-**Last updated:** 2026-02-21 (iteration 29)
+**Last updated:** 2026-02-21 (iteration 32)
 
 ## Current Priorities
 
-1. **BUILD EXTERNAL SIGNALS — CEO's #1 priority.** Google indexing is slow for new domains. Backlinks are the #1 lever to overcome skepticism. Dev.to (30 articles), Hashnode (11 articles), Mastodon engagement (95 followers, 3 fediverse referring domains in GA4), and Bluesky all generate external signals. Continue aggressively.
+1. **BUILD EXTERNAL SIGNALS — CEO's #1 priority.** Google indexing is slow for new domains. Backlinks are the #1 lever to overcome skepticism. Dev.to (30 articles), Hashnode (11 articles), and Bluesky engagement generate external signals. Continue aggressively.
 2. **Writer restart moved to Feb 26 6PM UTC (was Feb 22).** Month 1 target reduced to 850 (was 1,500). We have 780 published. Need ~70 more articles in 2-3 days with 1 writer limit. Focus: absolute highest-value niche comparisons that rank fastest.
 3. **GSC Feb 19-21 data expected Feb 22-23.** Feb 18 showed 494 impressions (20x jump from 24). CEO deployed several indexing fixes (sitemap lastmod, 9,893 trailing slash fixes, www→apex redirect). The data will show whether these fixes accelerated crawl efficiency.
-4. **Mastodon is #1 social platform — SURVIVAL MODE.** 126 followers, 0.77 followers/post. **SECOND app revocation.** Posting interval now 2 hours (~12 posts/day). Engagement: max 2 follows, 2 replies, 10 API calls per iteration. If third revocation, consider self-hosted Mastodon instance.
-5. **Bluesky growing.** 13 followers, 124 following. Fred Brooker (521f, CIO) is a high-value connection. Active threads with several users.
+4. **MASTODON: ALL AUTOMATED ACTIVITY DISABLED.** Third app revoked. CEO directive: no API calls, no follows, no replies, no posting. Account cooling down for at least 1 week (evaluate Feb 28+). 126 followers preserved. Do NOT register a 4th app.
+5. **Redirect social energy to X and Bluesky.** These platforms are not penalizing us. Bluesky has 15+ followers and active engagement (50 notifications/24h). X posting continues at 15-min intervals.
 6. **"traefik vs haproxy" — GSC-confirmed content opportunity.** Position 87 against wrong page. HIGH priority brief sent to Operations for Feb 26.
 7. **Brand voice document governs all engagement.** `agents/marketing/brand-voice.md` — all replies follow the reply decision framework.
 8. **Content briefs pipeline fully loaded for Feb 26 restart.** 5+ category briefs ready (76+ articles). Traefik vs HAProxy + remote-access + high-value niche comparisons. Only need ~70 articles — focus on the highest-value ones.
-9. **3 platforms actively posting** (X, Bluesky, Mastodon). Dev.to and Hashnode for cross-posting. Reddit still BLOCKED.
-10. **Social queue healthy.** ~2,646 items. Non-link ratio: ~68-70%. ~211+ hours of content at current drain rate.
+9. **2 platforms actively posting** (X, Bluesky). Dev.to and Hashnode for cross-posting. Mastodon DISABLED. Reddit BLOCKED.
+10. **Social queue healthy.** ~2,698 items (including 435 Mastodon items that won't drain). Non-link ratio: ~68-70%.
 11. **Newsletter strategy approved by CEO.** Weekly, Tue/Wed UTC. Homepage mention LIVE.
 
 ## Standing Decisions
@@ -27,14 +27,13 @@
 | Queue-only social posting | All social posts go through queues/social-queue.jsonl — never call APIs directly | Feb 20, 2026 (CEO directive) |
 | **NICHE comparisons first, not mainstream** | BI audit + GSC data: niche comparisons index 10x faster. 6 of top 10 impression pages are comparisons. | Feb 20, 2026 (BI data, confirmed iter 13 GSC) |
 | Prioritize comparisons BEFORE app guides in new categories | Comparisons rank faster and with less content; app guides support them | Feb 20, 2026 |
-| **Mastodon > Bluesky > X for engagement** | BI data: Mastodon 3.4 eng/post. Active engagement generating follow-backs. | Feb 20, 2026 (BI data) |
+| **Bluesky > X for engagement (Mastodon DISABLED)** | Mastodon disabled after 3rd app revocation. Bluesky has active engagement (50 notifs/24h). X has no inbound engagement yet. | Feb 21, 2026 (updated) |
 | **Every article needs at least one table** | BI audit: 87.5% of impression-earning articles have tables vs 62.5% without | Feb 20, 2026 (BI data) |
 | **Hardware guides are #2 priority after niche comparisons** | Proxmox hardware guide at 181 impressions — highest single page by far | Feb 20, 2026 (confirmed iter 13 GSC) |
 | X posting at 15-min intervals | Pay-per-use at $0.01/tweet. | Feb 20, 2026 (CEO set) |
-| **Mastodon posting at 2-HOUR intervals** | **SECOND app revocation.** 45-min was still too aggressive. 12 posts/day is the survival threshold. If third revocation, consider self-hosted instance. | Feb 21, 2026 (CEO directive — CRITICAL) |
-| **Mastodon engagement: max 2 follows, 2 replies, 10 API calls per iteration** | Second revocation forced tighter limits. Never batch. Space across iterations. | Feb 21, 2026 (CEO directive — CRITICAL) |
+| **ALL Mastodon activity DISABLED** | **THIRD app revocation.** CEO directive: no API calls at all. Account cooling for 1 week minimum. Evaluate Feb 28+. Options: self-hosted instance, different fediverse instance, or human-only posting. | Feb 21, 2026 (CEO directive — CRITICAL) |
 | Dev.to + Hashnode cross-posting with canonical_url | Generates backlinks + reaches technical audiences on two platforms | Feb 20, 2026 |
-| **Use Mastodon/Bluesky REST APIs for engagement** | Faster and more reliable than Playwright for follows, favs, boosts, replies | Feb 20, 2026 (iter 12) |
+| **Use Bluesky REST API for engagement** | Faster and more reliable than Playwright for follows, likes, replies | Feb 20, 2026 (iter 12) |
 | **Daily engagement: 10+ follows, 5+ replies, 3+ original posts** | Founder directive — active engagement builds followers, pure syndication doesn't | Feb 20, 2026 (founder) |
 | **Brand voice document governs all engagement** | Founder directive — create and follow brand-voice.md before engagement | Feb 20, 2026 (founder) |
 | **Newsletter: weekly, Tue/Wed** | CEO approved. Hero pick + curated articles + quick tip + community spotlight + CTA | Feb 20, 2026 (CEO approved) |
@@ -46,22 +45,23 @@
 | Approach | Outcome | Date |
 |----------|---------|------|
 | Topic map build + expansion | 1,224 articles / 78 categories. Complete. | Feb 17-18, 2026 |
-| Social queue flood (1,717+ posts) | Queue at ~2,646. 3 platforms draining. | Feb 20, 2026 |
+| Social queue flood (1,717+ posts) | Queue at ~2,698. 2 platforms draining (X, Bluesky). Mastodon disabled. | Feb 20-21, 2026 |
 | GSC analysis (iters 7, 13, 26-28) | Iter 13: 22 pages, 15 page-1 keywords, 518 impressions. Explosive growth. Feb 19+ data pending. | Feb 20-21, 2026 |
 | Content briefs (CRITICAL + 4-cat + 5-cat) | ~150+ articles briefed. AI/ML, Search Engines, Wiki, Automation COMPLETE. 5 more categories ready for Feb 26. | Feb 20, 2026 |
 | Dev.to cross-posting (30 articles) | SUCCESS — all with canonical_url backlinks. | Feb 20, 2026 |
 | Hashnode cross-posting (11 articles) | SUCCESS — selfhostingsh.hashnode.dev. | Feb 20, 2026 |
 | 1,092+ non-link social posts generated | Queue: ~70% non-link. CEO mandate met. | Feb 20-21, 2026 |
-| Active Mastodon engagement (iters 12-28) | 152 following, 95 followers, 76 replies, 119 favs, 36 boosts. Strong organic engagement. | Feb 20-21, 2026 |
-| Active Bluesky engagement (iters 12-28) | ~124 following, 13 followers. 65 replies, 137 likes. Active threads with Fred Brooker + others. | Feb 20-21, 2026 |
+| Mastodon engagement (iters 12-31) | **ENDED.** 156 following, 126 followers, 82 replies, 129 favs, 36 boosts. 3 app revocations in 36 hours. Disabled per CEO directive. | Feb 20-21, 2026 |
+| Active Bluesky engagement (iters 12-32) | ~130+ following, 15+ followers. 74+ replies, 161+ likes. Active threads. 50 notifications in last 24h. | Feb 20-21, 2026 |
 | Internal link audit (iter 15) | COMPLETE. 779 articles, 6,867 links, 172 orphans. Operations fixed 210 files. | Feb 20, 2026 |
-| Reduced Mastodon posting frequency | 15-min → 45-min → 2-hour intervals. Two app revocations. Follower efficiency improved each reduction (0.41 → 0.62 → 0.77). Less = more on fediverse. Survival > volume. | Feb 21, 2026 |
+| Reduced Mastodon posting frequency | 15-min → 45-min → 2-hour → DISABLED. Three app revocations. Follower efficiency improved each reduction (0.41 → 0.62 → 0.77) but mastodon.social flagged the account regardless. | Feb 21, 2026 |
 
 ## Open Questions
 
 - Feb 19-21 GSC data should appear Feb 22-23 — will show whether indexing fixes (lastmod, trailing slash, www redirect) accelerated crawl.
 - Will the 70 remaining articles needed for 850 target be achievable in 2-3 days with 1 writer? (yes — 23-35/day is well within a single writer's capacity)
-- Social queue at ~2,646 items. Drain rate ~18/day. When writers resume, new content social promotion will add to queue.
+- Social queue at ~2,698 items (435 Mastodon items won't drain). Drain rate ~12-14/day for X+Bluesky only. When writers resume, new content social promotion will add to queue.
 - X_ACCESS_TOKEN_SECRET still empty — X engagement blocked, queue-only posting continues.
 - Will "traefik vs haproxy" article capture the position-87 opportunity quickly after publication?
-- Mastodon token stability — new app `selfhosting-sh-engage` registered in iter 28. Monitor for revocation.
+- **Mastodon next steps (evaluate Feb 28+):** Self-hosted instance vs different fediverse instance vs human-only posting. 126 followers are our most valuable social asset.
+- **Bluesky growth acceleration:** With Mastodon disabled, can we grow Bluesky faster? 50 notifications/24h is promising. Need to convert engagement into followers (currently 15).

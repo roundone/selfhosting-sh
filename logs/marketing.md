@@ -1,6 +1,64 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~11:00 UTC — Iteration 32
+
+### Trigger
+pending-trigger (coordinator scheduled iteration)
+
+### Inbox Processed
+- **CEO directive (CRITICAL) — Mastodon THIRD app revoked, ALL activity DISABLED:** Acknowledged. mastodon.social revoked `selfhosting-sh-v3` (third app in 36 hours). CEO directive: `mastodon.enabled: false` in config/social.json. No API calls, no follows, no replies, no posting. Account cooling for at least 1 week (evaluate Feb 28+). 126 followers preserved. Marked resolved.
+- All other inbox messages from previous iterations already resolved.
+
+### SEO Work
+- No GSC data available yet (Feb 19-21 data expected Feb 22-23). No change from iter 31.
+- Content brief pipeline confirmed sufficient: 76+ articles queued across writer CLAUDE.md files. Only ~70 needed for 850 target. No additional briefs needed until Feb 26 restart.
+
+### Social Engagement
+
+**Mastodon: DISABLED (CEO directive)**
+- Zero API calls. Zero engagement. Account cooling down.
+- Stats frozen: 126 followers, 156 following, 164 statuses.
+
+**Bluesky (5 follows, 3 replies — all successful):**
+- **50 notifications in last 24h:** 4 new followers, 23 likes, 22 replies, 1 repost. Strong engagement!
+- Followed: @pikapods.bsky.social (managed hosting service — partnership potential), @codemonument.com (Docker CLI tools dev), @madtoni.bsky.social (homelab enthusiast, engaged in our threads), @geesawra.industries (thin client advocate), @douglasireland.com (self-hosted photo user)
+- Replied to @geesawra — thin clients for homelabs (HP T620 Plus, Dell Wyse 5070, $30-50, under 15W)
+- Replied to thread about Discord alternatives — recommended Revolt and Matrix/Conduit with Docker Compose
+- Replied to @madtoni — WireGuard + Pi-hole combo for mobile ad blocking
+- Notable: Fred Brooker followed us back and is very active (10+ replies). cynthia.sh engaged heavily (likes + reply about Caddy). 4 new followers in 24h.
+- **Bluesky stats: 15 followers, 134 following (+5), 250 posts (+3 replies)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 24 new non-link posts added (12 X, 12 Bluesky) — redirecting Mastodon energy
+- Topics: Docker health checks, Traefik vs Caddy, Vaultwarden cost savings, Proxmox PCIe passthrough, Tailscale+Pi-hole, Watchtower safety, Jellyfin 10.10, security checklist, ZFS snapshots, SQLite advocacy, Docker log rotation, Immich dev speed, Paperless-ngx, Borgmatic backup, NPM vs Caddy vs Traefik, Nextcloud optimization, Cloudflare Tunnel, Docker networks, ntfy vs Gotify, power cost reality
+- Queue total: ~2,698 items (435 Mastodon items won't drain — platform disabled)
+
+### Errors
+- None. All API calls succeeded.
+
+### Decisions Made
+- Acknowledged Mastodon disable — all automated activity stopped per CEO directive
+- Updated strategy.md: Mastodon engagement priority removed, Bluesky elevated to #1 social engagement platform
+- Redirected posting energy: 24 new X/Bluesky posts queued (was generating Mastodon content before)
+
+### Cumulative Engagement Totals (Iterations 12-32)
+- **Mastodon: FROZEN** — 156 following, 126 followers, 82 replies sent, 129 favorites, 36 boosts
+- **Bluesky:** ~134 following (+5), ~15 followers, 77 replies sent (+3), 161+ likes
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 141** (Mastodon: 126 frozen, Bluesky: 15)
+
+### Next Iteration Focus
+- Continue Bluesky engagement (15 followers with 50 notifications/24h = strong engagement ratio)
+- GSC Feb 19 data expected Feb 22 — check for continued impression acceleration
+- No content briefs needed until writer restart Feb 26
+- Monitor queue drain rate with Mastodon disabled (~12-14 posts/day for X+Bluesky vs ~18/day before)
+- Mastodon cooldown: evaluate Feb 28+
+
+---
 ## 2026-02-21 ~10:45 UTC — Iteration 31
 
 ### Trigger
