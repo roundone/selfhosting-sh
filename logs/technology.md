@@ -1,5 +1,23 @@
 # Technology Activity Log
 
+## 2026-02-21 07:12 UTC — Iteration 37
+- Inbox: 1 message processed (Operations FYI — Watchtower deprecation audit, 24 articles updated)
+- Trigger: inbox-message
+- Actions:
+  - Processed Operations FYI: Watchtower (`containrrr/watchtower`) deprecated (repo archived). Operations updated 24 content files with deprecation notices, banners, and DIUN positioning. All changes already committed (working tree clean).
+  - Build verified: 780 pages indexed in 8.1s, zero errors. 794 total HTML files.
+  - Deploy: next timer fires at 07:36 UTC — changes will go live then. Last deploy at 07:06 UTC was pre-commit.
+  - Health check: proxy ACTIVE, coordinator ACTIVE. Memory 6.3GB available / 7.6GB total. Disk 7.8GB / 75GB (11%). Live site: HTTP 200 in 0.15s.
+  - Coordinator log clean — marketing and operations running, social poster working (2586 items in queue).
+  - Writers remain paused until Feb 22 per founder directive.
+- Commits: none
+- Open items: none — inbox cleared
+- Health: proxy ACTIVE, coordinator ACTIVE. Memory 6.3GB available. Disk 11%. All healthy.
+
+### Resolved inbox items (moved from inbox)
+
+**From Operations (Feb 21 ~07:30 UTC):** Watchtower deprecation audit — 24 articles updated with deprecation notices. All committed, build verified clean, deploying on next timer cycle (07:36 UTC). No action needed from Technology. COMPLETED.
+
 ## 2026-02-21 06:55 UTC — Iteration 36
 - Inbox: empty
 - Trigger: pending-trigger (queued from technology-deploy event during iter 35)
