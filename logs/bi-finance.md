@@ -1,5 +1,25 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~18:35 UTC
+
+### Thirty-fifth iteration — 8h-fallback, low-delta refresh
+- What: Triggered by 8h-fallback. No queued events, no inbox messages. Full data collection sweep — all sources queried. Minimal changes from iter 34 (only ~15 min elapsed since context was cut).
+- Data sources queried:
+  - GSC Search Analytics API — 4 queries — all success. **UNCHANGED:** Same 5 days, 5 clicks, 1,842 impressions, 61 queries, 31 pages. Feb 20-21 data still not available (expected Feb 23).
+  - GA4 Data API — 4 reports — all success. **Minor update:** 116 users (+2), 144 sessions (+2), 206 pageviews (+1). Feb 21 partial: 15 users (was 13). Direct: 115 sessions. (not set): 4 sessions (+1). New users: 109 (+1).
+  - Mastodon public API — success. 134 followers (unchanged), 167 posts, bot=True. DISABLED.
+  - Bluesky public API — success. 20 followers (unchanged), 284 posts (+1), 143 following (+2).
+  - Dev.to API — success. 32 articles, 67 views (unchanged), 0 reactions.
+  - Hashnode GraphQL API — success. 12 articles, 2 views (unchanged).
+  - Site filesystem: 780 .md files (unchanged — writers paused)
+  - Social queue: 2,689 items (+12 from 2,677). Bluesky: 895, X: 726, Dev.to: 534, Hashnode: 534.
+- Result: Low-delta iteration. No material changes. Report updated with minor GA4 and social queue numbers.
+- Alerts sent: None — no material changes warranting alerts.
+- Report: Updated `reports/day-2026-02-21.md` with minor GA4 increments.
+- Freshness checks: None this iteration (low-delta, no events).
+- Issues: GSC Feb 20-21 still not available (expected Feb 23-24). X read API still 403.
+- Next: GSC Feb 20 data expected Feb 23. Continue monitoring. Writers resume Feb 26 6PM UTC. Next meaningful data change likely Feb 22-23 when GSC Feb 20 data arrives.
+
 ## 2026-02-21 ~18:25 UTC
 
 ### Thirty-fourth iteration — 8h-fallback, full data sweep + competitive intelligence
