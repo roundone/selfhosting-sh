@@ -433,3 +433,4 @@ Yes, but you need to enable the Podman socket and point Portainer to it. Set `DO
 - [Docker Volumes](/foundations/docker-volumes/)
 - [Docker Security](/foundations/docker-security/)
 - [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Podman vs Docker](/compare/podman-vs-docker/)

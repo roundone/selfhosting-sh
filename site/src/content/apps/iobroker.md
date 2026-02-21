@@ -265,3 +265,4 @@ The Docker image handles ioBroker core updates. Individual adapters update throu
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Domoticz vs ioBroker](/compare/domoticz-vs-iobroker/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Gladys vs ioBroker](/compare/gladys-vs-iobroker/)

@@ -286,3 +286,4 @@ No. openHAB runs entirely locally. Cloud integrations (voice assistants, remote 
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Gladys vs openHAB](/compare/gladys-vs-openhab/)

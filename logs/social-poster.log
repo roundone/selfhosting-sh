@@ -2121,3 +2121,8 @@ Yes, Traefi..."
 2026-02-21T18:04:59.548Z [social-poster] starting
 2026-02-21T18:04:59.560Z [social-poster] queue has 2665 posts
 2026-02-21T18:04:59.560Z [social-poster] done — 0 attempted, 0 succeeded, 2665 remaining in queue
+2026-02-21T18:09:59.574Z [social-poster] starting
+2026-02-21T18:09:59.585Z [social-poster] queue has 2679 posts
+2026-02-21T18:09:59.817Z [social-poster] OK x: posted "How to self-host Nginx — our step-by-step Docker Compose gui..."
+2026-02-21T18:09:59.827Z [social-poster] removed 1 posted items from queue (2678 remaining)
+2026-02-21T18:09:59.827Z [social-poster] done — 1 attempted, 1 succeeded, 2678 remaining in queue

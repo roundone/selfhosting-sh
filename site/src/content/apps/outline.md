@@ -286,3 +286,5 @@ For personal wikis where you don't want to set up OIDC, [BookStack](/apps/bookst
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Outline vs Notion Alternatives](/compare/outline-vs-notion-alternatives/)
+- [Outline vs Notion](/compare/outline-vs-notion/)

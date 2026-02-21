@@ -367,3 +367,4 @@ Check the container logs (`docker compose logs -f blocky`) or enable Prometheus 
 - [Self-Hosted Alternatives to Google DNS](/replace/google-dns/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [DNS Explained](/foundations/dns-explained/)
+- [Blocky vs Pi-hole](/compare/blocky-vs-pihole/)

@@ -233,3 +233,4 @@ Yes, via Zigbee2MQTT. Run Zigbee2MQTT as a separate container with an MQTT broke
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Domoticz vs ioBroker](/compare/domoticz-vs-iobroker/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Gladys vs Domoticz](/compare/gladys-vs-domoticz/)

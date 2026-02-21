@@ -250,3 +250,4 @@ Enable uploads in the admin settings. Users with upload permission can add books
 - [Audiobookshelf vs Calibre-Web](/compare/audiobookshelf-vs-calibre-web/)
 - [Komga vs Calibre-Web](/compare/komga-vs-calibre-web/)
 - [Backup Strategy](/foundations/backup-strategy/)
+- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga/)

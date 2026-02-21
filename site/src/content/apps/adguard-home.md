@@ -313,3 +313,4 @@ For a new deployment, go with AdGuard Home. The built-in encrypted DNS, simpler 
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
 - [Remote Access with VPN](/foundations/remote-access/)
 - [Linux Basics for Self-Hosting](/foundations/linux-basics-self-hosting/)
+- [Pi-hole vs AdGuard Home DNS](/compare/pihole-vs-adguard-dns/)

@@ -404,3 +404,4 @@ For alternatives, [Passbolt](/apps/passbolt/) is worth considering if you need t
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
 - [Getting Started with Self-Hosting](/foundations/getting-started/)
 - [Security Basics for Self-Hosting](/foundations/security-hardening/)
+- [Bitwarden vs Vaultwarden](/compare/bitwarden-vs-vaultwarden/)

@@ -262,3 +262,4 @@ Use [ComicTagger](https://github.com/comictagger/comictagger) to embed ComicInfo
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-strategy/)
+- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga/)

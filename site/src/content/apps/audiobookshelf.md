@@ -268,3 +268,4 @@ Plex treats audiobooks as music, which creates problems — no chapter support, 
 - [Audiobookshelf vs Jellyfin](/compare/audiobookshelf-vs-jellyfin/)
 - [Audiobookshelf vs Kavita](/compare/audiobookshelf-vs-kavita/)
 - [Audiobookshelf vs Plex](/compare/audiobookshelf-vs-plex/)
+- [Audiobookshelf vs Booksonic](/compare/audiobookshelf-vs-booksonic/)

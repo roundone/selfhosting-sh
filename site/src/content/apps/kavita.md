@@ -236,3 +236,4 @@ Kavita supports more formats (EPUB, PDF in addition to comics) and has a built-i
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-strategy/)
+- [Kavita vs Calibre-Web vs Komga](/compare/kavita-vs-calibre-web-vs-komga/)

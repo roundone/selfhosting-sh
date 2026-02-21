@@ -319,3 +319,4 @@ Plex remains the most polished and widely supported media server. Its client app
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
 - [Audiobookshelf vs Plex](/compare/audiobookshelf-vs-plex/)
 - [Docker Volumes and Storage](/foundations/docker-volumes/)
+- [Navidrome vs Plex Music](/compare/navidrome-vs-plex-music/)

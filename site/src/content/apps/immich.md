@@ -495,3 +495,4 @@ With proper backups in place, Immich is the clear winner in the photo management
 - [Docker Volumes](/foundations/docker-volumes/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Immich vs Google Photos](/compare/immich-vs-google-photos/)

@@ -381,3 +381,5 @@ The main alternative is [AdGuard Home](/apps/adguard-home/), which has a more mo
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
 - [Getting Started with Self-Hosting](/foundations/getting-started/)
+- [Blocky vs Pi-hole](/compare/blocky-vs-pihole/)
+- [Pi-hole vs AdGuard Home DNS](/compare/pihole-vs-adguard-dns/)

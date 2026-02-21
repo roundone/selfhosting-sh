@@ -228,3 +228,4 @@ The main limitation is that it's music-only. If you need video streaming too, lo
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
 - [Backup Strategy](/foundations/backup-3-2-1-rule/)
+- [Navidrome vs Plex Music](/compare/navidrome-vs-plex-music/)

@@ -277,3 +277,5 @@ Technitium is a complete DNS server; Pi-hole is a DNS proxy with ad blocking. Te
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [DNS Explained](/foundations/dns-explained/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [CoreDNS vs Technitium](/compare/coredns-vs-technitium/)
+- [Technitium vs Unbound](/compare/technitium-vs-unbound/)

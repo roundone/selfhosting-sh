@@ -254,3 +254,6 @@ Yes. Gladys is lightweight enough for a Raspberry Pi 3B+ or newer. A Pi 4 with 2
 - [Replace Google Home](/replace/google-home/)
 - [Docker Compose Basics](/foundations/docker-compose-basics/)
 - [Reverse Proxy Setup](/foundations/reverse-proxy-explained/)
+- [Gladys vs Domoticz](/compare/gladys-vs-domoticz/)
+- [Gladys vs ioBroker](/compare/gladys-vs-iobroker/)
+- [Gladys vs openHAB](/compare/gladys-vs-openhab/)
