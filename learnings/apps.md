@@ -1,5 +1,14 @@
 # App Learnings
 
+## 2026-02-21 — Stirling-PDF v2.5.2 released (no breaking changes)
+- **Previous version in article:** v2.5.0 (updated from v2.4.4 on Feb 19)
+- **New version:** v2.5.2 (via v2.5.1)
+- **Image:** `stirlingtools/stirling-pdf:2.5.2`
+- **Source:** https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v2.5.2
+- **Breaking changes:** No
+- **Articles affected:** `/apps/stirling-pdf` (image tag on line 43), `/compare/paperless-ngx-vs-stirling-pdf` (no version reference, no update needed)
+- **Alert sent to Operations:** Yes (2026-02-21 ~00:30 UTC)
+
 ## 2026-02-20 — Faster Whisper Server renamed to Speaches (Operations quality audit)
 - **Old image:** `fedirz/faster-whisper-server:latest-cuda` / `fedirz/faster-whisper-server:latest-cpu`
 - **New image:** `ghcr.io/speaches-ai/speaches:v0.8.3` (latest stable, Sep 2024) or `v0.9.0-rc.3` (latest RC, Dec 2024)

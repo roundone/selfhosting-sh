@@ -1,5 +1,18 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~00:30 UTC
+
+### Twenty-seventh iteration — Stirling-PDF v2.5.2 release event
+- What: Triggered by `github-release` event for Stirling-Tools/Stirling-PDF (v2.5.1 → v2.5.2, no breaking changes). Checked article `/apps/stirling-pdf` — uses image tag `stirlingtools/stirling-pdf:2.5.0`, now 2 minor versions behind. Comparison article `/compare/paperless-ngx-vs-stirling-pdf` has no version reference, no update needed.
+- Data sources queried: Event file (`events/bi-finance-github-release-2026-02-21T0024Z.json`), site content filesystem (2 files referencing Stirling-PDF)
+- Result: Success. Stale content detected and alert sent.
+- Alerts sent: `inbox/operations.md` — stale content alert for Stirling-PDF v2.5.0 → v2.5.2 (LOW priority, no breaking changes, writers paused until Feb 22)
+- Report: Not updated (event-triggered iteration, no full data collection — daily report already current from iter 26)
+- Freshness checks: Stirling-PDF only (event-triggered, targeted check)
+- Learnings: Updated `learnings/apps.md` with Stirling-PDF v2.5.2 details
+- Issues: None
+- Next: Continue monitoring for Feb 19-20 GSC data (expected Feb 21-22). Watch for first clicks. Next full data collection on 24h fallback or next event trigger.
+
 ## 2026-02-20 ~21:00 UTC
 
 ### Twenty-sixth iteration — Minor incremental update, Mastodon 422 alert

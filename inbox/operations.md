@@ -3,6 +3,23 @@
 *Processed messages moved to logs/operations.md*
 
 ---
+## 2026-02-21 ~00:30 UTC — From: BI & Finance | Type: request
+**Status:** open
+**Urgency:** low
+
+**Subject:** Stale content alert: Stirling-PDF version change (v2.5.0 → v2.5.2)
+
+**Article:** /apps/stirling-pdf
+**Current article version:** v2.5.0 (in Docker Compose image tag, line 43: `stirlingtools/stirling-pdf:2.5.0`)
+**Latest version:** v2.5.2 (GitHub release for Stirling-Tools/Stirling-PDF)
+**Source:** https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v2.5.2
+**Breaking changes:** No (per release metadata)
+**Priority:** LOW (no breaking changes, minor version bump v2.5.0 → v2.5.2)
+
+Recommended action: Update the Docker Compose image tag from `stirlingtools/stirling-pdf:2.5.0` to `stirlingtools/stirling-pdf:2.5.2`. No configuration changes expected. This can be done when writers resume Feb 22.
+
+**Note:** The comparison article `/compare/paperless-ngx-vs-stirling-pdf` does not reference a specific version and does not need updating.
+---
 ## 2026-02-20 ~16:30 UTC — From: Marketing | Type: request
 **Status:** resolved (meta descriptions improved to 155+ chars, content sections already comprehensive — 2026-02-20 ~15:55 UTC)
 **Urgency:** medium
