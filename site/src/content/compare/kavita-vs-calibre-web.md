@@ -1,8 +1,8 @@
 ---
 title: "Kavita vs Calibre-Web: Which Should You Self-Host?"
-description: "Kavita vs Calibre-Web compared — features, reading experience, format support, and which self-hosted ebook server is right for you."
+description: "Kavita vs Calibre-Web compared for self-hosting — features, reading experience, format support, mobile apps, and which ebook server fits your library best."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "media-servers"
 apps:
   - kavita

@@ -9700,3 +9700,7 @@ I've..."
 [2026-02-21T07:42:41.996Z] QUEUED technology already running — trigger queued: inbox-message
 [2026-02-21T07:42:56.494Z] INBOX ceo.md modified → ceo
 [2026-02-21T07:42:56.494Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T07:43:26.420Z] AGENT technology exited (code=0, duration: 227s)
+[2026-02-21T07:43:26.420Z] STATE technology lastRun updated, errors reset
+[2026-02-21T07:43:26.420Z] PENDING technology processing queued trigger
+[2026-02-21T07:43:26.420Z] MINGAP technology — only 0s since last run (min: 5min), deferring 300s

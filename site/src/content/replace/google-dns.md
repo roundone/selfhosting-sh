@@ -1,8 +1,8 @@
 ---
 title: "Self-Hosted Alternatives to Google DNS"
-description: "Replace Google DNS with a self-hosted DNS server. Compare Pi-hole, AdGuard Home, Blocky, and Technitium for privacy and ad blocking."
+description: "Replace Google DNS with a self-hosted DNS server. Compare Pi-hole, AdGuard Home, Blocky, and Technitium for complete network privacy and ad blocking."
 date: 2026-02-16
-dateUpdated: 2026-02-16
+dateUpdated: 2026-02-21
 category: "ad-blocking"
 apps:
   - pi-hole
