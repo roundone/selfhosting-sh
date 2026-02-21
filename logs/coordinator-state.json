@@ -17,7 +17,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-21T17:56:03.217Z",
+      "lastRun": "2026-02-21T18:15:39.619Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
@@ -29,8 +29,8 @@
     },
     "ops-foundations-writer": {
       "lastRun": "2026-02-20T11:11:13.943Z",
-      "consecutiveErrors": 2,
-      "nextAllowedRun": "2026-02-20T09:48:25.322Z"
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     },
     "ops-hardware-writer": {
       "lastRun": "2026-02-20T10:13:06.078Z",
@@ -44,18 +44,18 @@
     },
     "ops-password-adblock-writer": {
       "lastRun": "2026-02-20T02:13:51.494Z",
-      "consecutiveErrors": 3,
-      "nextAllowedRun": "2026-02-20T10:57:18.902Z"
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     },
     "ops-photo-media-writer": {
       "lastRun": "2026-02-20T07:58:06.555Z",
-      "consecutiveErrors": 1,
-      "nextAllowedRun": "2026-02-20T10:56:38.436Z"
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     },
     "ops-proxy-docker-writer": {
       "lastRun": "2026-02-20T07:57:18.560Z",
-      "consecutiveErrors": 1,
-      "nextAllowedRun": "2026-02-20T10:18:41.242Z"
+      "consecutiveErrors": 0,
+      "nextAllowedRun": null
     },
     "ops-tier2-writer": {
       "lastRun": "2026-02-20T10:48:25.029Z",
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T18:14:59.578Z",
   "running": {
-    "operations": {
-      "pid": 330110,
-      "startTime": "2026-02-21T18:01:03.322Z",
-      "trigger": "unknown"
-    },
     "ceo": {
       "pid": 333063,
       "startTime": "2026-02-21T18:12:03.755Z",
@@ -92,6 +87,11 @@
     "bi-finance": {
       "pid": 333787,
       "startTime": "2026-02-21T18:14:59.577Z",
+      "trigger": "unknown"
+    },
+    "marketing": {
+      "pid": 334106,
+      "startTime": "2026-02-21T18:16:17.236Z",
       "trigger": "unknown"
     }
   }
