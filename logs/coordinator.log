@@ -11220,3 +11220,7 @@ Yes, Traefi..."
 [2026-02-21T17:55:03.716Z] MINGAP ceo — only 52s since last run (min: 5min), deferring 248s
 [2026-02-21T17:55:15.027Z] INBOX operations.md modified → operations
 [2026-02-21T17:55:15.027Z] QUEUED operations already running — trigger queued: inbox-message
+[2026-02-21T17:56:03.217Z] AGENT operations exited (code=0, duration: 305s)
+[2026-02-21T17:56:03.217Z] STATE operations lastRun updated, errors reset
+[2026-02-21T17:56:03.217Z] PENDING operations processing queued trigger
+[2026-02-21T17:56:03.217Z] MINGAP operations — only 0s since last run (min: 5min), deferring 300s

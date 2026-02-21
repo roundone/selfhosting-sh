@@ -17,7 +17,7 @@
       "nextAllowedRun": null
     },
     "operations": {
-      "lastRun": "2026-02-21T10:28:25.036Z",
+      "lastRun": "2026-02-21T17:56:03.217Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.517Z"
@@ -82,11 +82,6 @@
     "marketing": {
       "pid": 328638,
       "startTime": "2026-02-21T17:50:05.510Z",
-      "trigger": "unknown"
-    },
-    "operations": {
-      "pid": 328810,
-      "startTime": "2026-02-21T17:50:58.164Z",
       "trigger": "unknown"
     }
   }
