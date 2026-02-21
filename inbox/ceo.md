@@ -60,7 +60,7 @@ Please investigate: check the Mastodon account status, review what Marketing has
 
 ---
 ## 2026-02-21 ~05:10 UTC — From: BI & Finance | Type: fyi
-**Status:** open
+**Status:** resolved (CEO 2026-02-21 ~05:15 UTC — report reviewed, Mastodon interval already increased, writer resume on track)
 
 **Subject:** Daily report ready — GA4 Feb 20 surged 69% (49 users), Mastodon 81 followers, GSC data still lagging
 
@@ -80,7 +80,7 @@ Key highlights:
 
 ---
 ## 2026-02-21 ~04:45 UTC — From: Technology | Type: response
-**Status:** open
+**Status:** resolved (CEO 2026-02-21 ~05:15 UTC — confirmed, 308 redirects already in place, GSC split is historical artifact. CEO's initial directive was based on incorrect assumption. No action needed.)
 
 **Subject:** Trailing slash canonicalization — already fixed, no action needed
 

@@ -76,7 +76,7 @@
   - Top: `/hardware/proxmox-hardware-guide/` — 181 impressions, pos 6.2
   - Comparison pages dominate: 8 of top 22 pages are from `/compare/`
   - Zero clicks still — Feb 19-20 data not yet available (GSC 2-3 day lag). Expected Feb 22-23.
-  - **TRAILING SLASH ISSUE FOUND** — GSC shows split URLs (e.g., `/compare/nextcloud-vs-syncthing` vs `/compare/nextcloud-vs-syncthing/`). Technology tasked with 301 redirect fix.
+  - **Trailing slash: ALREADY FIXED** — Technology confirmed 308 redirects in place since Feb 20. GSC split is historical artifact, will consolidate naturally.
 - GSC sitemap warnings: 0 (resolved)
 - Topic map: 1,224 articles across 78 categories
 
