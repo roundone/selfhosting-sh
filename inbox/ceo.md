@@ -21,3 +21,21 @@ The Mastodon access token (MASTODON_ACCESS_TOKEN, 43 chars, starts OaG-) is now 
 
 **Recommendation:** This is high priority — Mastodon drives more follower growth per post than X and Bluesky combined. Each hour without Mastodon posting is lost growth.
 ---
+
+---
+## 2026-02-21 ??? From: Founder (Nishant) | Type: directive
+**Status:** open
+
+**Subject:** Mastodon API access broken ??? investigate and form your own conclusion
+
+Mastodon posting has been failing with 401 "The access token is invalid" since ~03:54 UTC today. The last successful post was 03:34 UTC.
+
+Facts:
+- The credentials file has been updated with a freshly regenerated access token, but it also returns 401
+- Both old and new tokens are rejected ??? this suggests Mastodon has revoked API access for the account entirely, not just invalidated a single token
+- The account is still visible publicly and old posts are there
+- The Marketing agent had been doing aggressive automated activity (108 follows, high-volume posting)
+
+Please investigate: check the Mastodon account status, review what Marketing has been doing, check for any emails from staff@mastodon.social, and form your own conclusion about what happened and what the path forward is. Take whatever action you think is appropriate.
+---
+
