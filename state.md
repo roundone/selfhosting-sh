@@ -1,5 +1,5 @@
 ## Current Phase: Launch — Day 6 Operations
-## Last Updated: 2026-02-21 18:00 UTC (CEO iter 18:00)
+## Last Updated: 2026-02-21 18:30 UTC (CEO iter 18:30)
 
 ## Content
 - **Total articles on disk: 780** (208 apps + 273 compare + 106 foundations + 100 hardware + 58 replace + 25 best + 10 troubleshooting)
@@ -70,21 +70,22 @@
 
 ## SEO & Marketing
 - GSC property: sc-domain:selfhosting.sh (domain-level, siteFullUser permission)
-- **GSC: sitemap resubmitted Feb 20 05:50 UTC** (should pick up 604 articles on next Google crawl)
-- **GSC BREAKTHROUGH (Feb 18 data): 518 impressions (20x increase from 24), 22 pages showing**
-  - 22 pages showing impressions. Google shifted to active indexing.
-  - Top: `/hardware/proxmox-hardware-guide/` — 181 impressions, pos 6.2
-  - Comparison pages dominate: 8 of top 22 pages are from `/compare/`
-  - Zero clicks still — Feb 19-20 data not yet available (GSC 2-3 day lag). Expected Feb 22-23.
-  - **Trailing slash: ALREADY FIXED** — Technology confirmed 308 redirects in place since Feb 20. GSC split is historical artifact, will consolidate naturally.
+- **GSC MILESTONE (Feb 19 data): FIRST 5 CLICKS, 1,324 impressions, 46 page-1 queries**
+  - Impression curve: 0→24→494→1,324 (exponential, 2.68x daily growth)
+  - 31 pages showing impressions. 9 keywords at position 1-2 (syncthing/nextcloud, kavita/calibre variants)
+  - Top: `/hardware/proxmox-hardware-guide/` — 580 impressions, 2 clicks, pos 5.8
+  - Star page: `/compare/nextcloud-vs-syncthing/` — 380 impressions, pos 5.1, 0 clicks (CTR expected imminently)
+  - 3 of 5 clicked pages are comparison articles. Comparison-first strategy validated.
+  - **Trailing slash split:** 18 impressions still on non-canonical nextcloud-vs-syncthing. Fixes deployed Feb 21. Monitor Feb 22-25.
+  - **4 indexing fixes deployed Feb 21:** sitemap lastmod, 9,893 trailing slash links, www→apex 301, RSS autodiscovery
 - GSC sitemap warnings: 0 (resolved)
 - Topic map: 1,224 articles across 78 categories
 
 ## Social Media
 - **Queue system: LIVE** (bin/social-poster.js, 5-min timer via coordinator)
-- Queue: **~2,655 items** (active posting to X + Bluesky). Mastodon posts cleaned: 435 removed/converted to Bluesky.
-- **Mastodon: 126 followers** — **DISABLED.** Third app revoked. Automated posting disabled to protect 126 followers. Evaluate resumption Feb 28+.
-- **Bluesky: ~14 followers** — posting active, engagement low but growing.
+- Queue: **~2,677 items** (896 Bluesky, 727 X, 534 Dev.to, 534 Hashnode). Draining ~120/day (X+Bluesky) + ~8/day (Dev.to+Hashnode).
+- **Mastodon: 134 followers** (+11 despite DISABLED posting) — **DISABLED.** Third app revoked. Organic growth continuing. Evaluate resumption Feb 28+.
+- **Bluesky: 20 followers** (+6) — posting active, best single-update gain. 283 posts.
 - **X: ~31 following** — posting active. Account still too new for inbound mentions.
 - **Reply strategy: OVERHAULED** (founder-approved Feb 21 17:44 UTC). 6 mandatory rules: no queued replies, full thread reading, sarcasm detection, "would a human reply?" test, no off-target recommendations, max 1-2 replies/day.
 - **Share buttons: LIVE** — 6 targets (X, Reddit, HN, LinkedIn, Bluesky, Copy Link) on every article page. Pure HTML/CSS.
@@ -115,8 +116,8 @@
   - selfhosting-proxy.service: ACTIVE
   - selfhosting-watchdog.service: ACTIVE
   - 4 agents active (CEO, BI, marketing, technology). IR completed. Writers PAUSED until Feb 26 6PM UTC.
-  - Memory: ~6.9GB available / 7.7GB total — healthy
-  - Load: minimal
+  - Memory: ~6.4GB available / 7.7GB total — healthy
+  - Load: minimal (0.01)
 - Rate-limiting proxy: ACTIVE at localhost:3128
 - Social poster: ACTIVE (running every 5 min via coordinator)
 
@@ -132,11 +133,11 @@
 ## Agent Health
 | Agent | Last Run | Errors | Status |
 |-------|----------|--------|--------|
-| CEO | 2026-02-21 18:00 | 0 | Running — reply strategy deployed, board report updated |
+| CEO | 2026-02-21 18:30 | 0 | Running — GSC breakthrough processed, strategy updated, writer counters reset |
 | Operations | 2026-02-21 17:56 | 0 | Running — 8 writer CLAUDE.md files updated with structure variation |
-| Technology | 2026-02-21 10:39 | 0 | Running — all indexing fixes deployed |
-| Marketing | 2026-02-21 17:58 | 0 | Running — reply strategy overhaul integrated, engagement on X + Bluesky |
-| BI & Finance | 2026-02-21 10:10 | 0 | Running — daily report delivered |
+| Technology | 2026-02-21 18:23 | 0 | Running — all indexing fixes deployed, Bluesky session caching working |
+| Marketing | 2026-02-21 18:28 | 0 | Running — reply strategy overhaul integrated, engagement on X + Bluesky |
+| BI & Finance | 2026-02-21 10:10 | 0 | Running — daily report delivered with Feb 19 GSC data |
 | Investor Relations | 2026-02-20 14:26 | 0 | Completed — Phase 1 DONE, weekly cadence (168h fallback) |
 | proxy-docker-writer | 2026-02-20 07:57 | 0 | **PAUSED** (until Feb 26 6PM UTC) |
 | tier2-writer | 2026-02-20 10:48 | 0 | **PAUSED** (until Feb 26 6PM UTC) — first writer on restart |
@@ -150,7 +151,7 @@
 ## Blockers
 - Social credentials PENDING for: Reddit (app creation blocked by policy wall)
 - LinkedIn API approval PENDING (deprioritized per founder)
-- GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 72 users, 97 sessions, 15 organic sessions (Feb 16-20).
+- GA4 API: **WORKING** (Feb 20). Property ID `524871536`. 114 users, 142 sessions, 18 Google organic sessions (Feb 16-21).
 - **Content production PAUSED** — Founder directive 2026-02-21: all writers paused until **Feb 26 6PM UTC**. 780 articles on disk. Restart with **1 writer limit**. Focus: Technology, Marketing, BI, indexing fixes until resume date.
 - Coordinator v2.0 now discovers IR agent (restarted at 12:35 UTC — 14 agents discovered)
 

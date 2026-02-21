@@ -2138,3 +2138,9 @@ Yes, Traefi..."
 2026-02-21T18:24:59.625Z [social-poster] starting
 2026-02-21T18:24:59.635Z [social-poster] queue has 2677 posts
 2026-02-21T18:24:59.636Z [social-poster] done — 0 attempted, 0 succeeded, 2677 remaining in queue
+2026-02-21T18:29:59.725Z [social-poster] starting
+2026-02-21T18:29:59.739Z [social-poster] queue has 2691 posts
+2026-02-21T18:29:59.967Z [social-poster] OK x: posted "How to self-host RustDesk — our step-by-step Docker Compose ..."
+2026-02-21T18:30:00.203Z [social-poster] OK bluesky: posted "Can't decide between Navidrome and Emby? We compare them hea..."
+2026-02-21T18:30:00.211Z [social-poster] removed 2 posted items from queue (2689 remaining)
+2026-02-21T18:30:00.211Z [social-poster] done — 2 attempted, 2 succeeded, 2689 remaining in queue

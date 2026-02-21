@@ -1,15 +1,15 @@
 # CEO Strategy
 
-**Last updated:** 2026-02-21 10:55 UTC
+**Last updated:** 2026-02-21 18:30 UTC
 
 ## Current Priorities
 
-1. **INDEXING FIXES (HIGH PRIORITY — founder directive).** Root causes identified and fixed: (1) Sitemap `<lastmod>` added, (2) 9,893 internal links fixed to include trailing slashes (eliminates crawl-budget-wasting 308 redirects), (3) www→apex 301 redirect deployed via CF Pages middleware, (4) RSS autodiscovery `<link>` tag added. Next: manual indexing requests for top 20 pages via GSC API. Deploy and resubmit sitemap.
-2. **Writers paused until Feb 26 6PM UTC (founder directive).** Extended from Feb 22. Resume with **1 writer limit only**. All 8 wake-on.conf set to 130h. Coordinator restart scheduled Feb 26 18:00 UTC.
-3. **Month 1 target: 850 articles (founder directive).** Down from 1,500. All subsequent targets reduced 20%. 780 on disk. Need ~70 more in final 2 days with 1 writer. Very achievable.
-4. **GA4 traffic accelerating.** 93+ users, 121+ sessions despite writers paused. 16 organic sessions from Google with 4x repeat rate. Content is compounding.
-5. **Social media — Mastodon DISABLED.** 3 app revocations in 36 hours. Automated Mastodon posting disabled to protect 126 followers. X and Bluesky continue posting. Queue at ~2,675 items.
-6. **GSC data lag.** Feb 18 data shows 518 impressions, 22 pages, 0 clicks. Feb 19-21 data expected Feb 22-23. First clicks likely when that data arrives.
+1. **GSC BREAKTHROUGH — FIRST CLICKS CONFIRMED.** Feb 19 data: 5 clicks, 1,324 impressions (2.68x over Feb 18), 46 page-1 queries, 9 at position 1-2. Exponential impression curve: 0→24→494→1,324. Content-to-traffic pipeline is validated. Top performers: proxmox-hardware-guide (580 impr, 2 clicks), nextcloud-vs-syncthing (380 impr, pos 5.1 — about to generate clicks).
+2. **INDEXING FIXES DEPLOYED — MONITORING POST-FIX.** All 4 fixes live since Feb 21 09:50 UTC: sitemap lastmod, 9,893 trailing slash links, www→apex 301, RSS autodiscovery. Post-fix data expected in GSC Feb 24-25. Trailing slash split on nextcloud-vs-syncthing (18 impressions on non-canonical) should consolidate.
+3. **Writers paused until Feb 26 6PM UTC (founder directive).** 780 articles on disk vs 850 target. Need ~70 in final 2 days with 1 writer. Achievable (~35/day). Writer error counters reset for clean restart.
+4. **Comparison articles are the growth engine.** 3 of 5 clicked pages are comparisons. Of 46 page-1 queries, majority are "X vs Y". When writer resumes Feb 26, comparison articles are top priority across all categories.
+5. **Social media — Mastodon DISABLED, X+Bluesky ACTIVE.** Mastodon: 134 followers (+11 despite disabled posting — organic growth continues). Bluesky: 20 followers (+6). Queue at ~2,677 items. Reply strategy overhauled (6 mandatory rules deployed).
+6. **GA4 traffic growing.** 114 users, 142 sessions, 205 pageviews (Feb 16-21). Feb 20 was best day: 57 users, 70 sessions. 18 Google organic sessions from 5 users (3.6 sessions/user — high repeat rate).
 
 ## Standing Decisions
 
@@ -58,10 +58,11 @@
 
 ## Open Questions
 
-- **Writer pause impact on Month 1 target** — 780 articles published vs 850 target. Writers paused until Feb 26 6PM UTC. With ~2 days remaining (Feb 26 6PM - Feb 28), need ~70 articles with 1 writer. Very achievable (~35/day).
-- **Social engagement execution** — Marketing showed strong first results (41 follows, 8 replies). Can they sustain and grow? Mastodon is the clear winner. → PARTIALLY ANSWERED: Yes, first iteration exceeded all targets.
-- **Portal security + v3** — ✅ RESOLVED. Portal v3 live with login auth, 11 pages including Growth metrics and Agent Instructions. HTTPS at portal.selfhosting.sh.
-- **GA4 data availability** — ✅ RESOLVED. BI successfully querying GA4 API. Property ID 524871536 confirmed working.
+- **Writer pause impact on Month 1 target** — 780 articles vs 850 target. Need ~70 in 2 days with 1 writer. Achievable.
+- **Post-fix indexing impact** — 4 SEO fixes deployed Feb 21. Will they accelerate impression growth? Feb 22-25 GSC data will tell. Expected Feb 24-25.
+- **Nextcloud-vs-syncthing breakout** — 380 impressions at position 5.1 with 0 clicks. When will CTR kick in? Typical position 5 CTR is 3-5%, suggesting 11-19 clicks/day once users start clicking.
 - **Reddit app creation blocked** — Policy wall on Reddit's end. Monitor and retry.
-- **Dev.to cross-posting volume** — Marketing cross-posted 21 articles. Prioritizing niche comparisons per GSC data. Ongoing.
-- **When will first clicks arrive?** — 15 keywords at positions 3-10 with 518 impressions. Feb 19-20 GSC data (available Feb 21-22) should confirm first click-throughs.
+- **Mastodon re-evaluation Feb 28+** — Options: self-hosted instance, bot-friendly Fediverse instance, human-only posting. Organic growth continues despite disabled posting (134 followers, +11 since disabled).
+- ✅ **First clicks arrived** — RESOLVED. Feb 19: 5 clicks from 3 pages. Pipeline validated.
+- ✅ **GA4 data availability** — RESOLVED.
+- ✅ **Portal security** — RESOLVED.
