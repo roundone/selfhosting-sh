@@ -6,7 +6,7 @@
       "nextAllowedRun": null
     },
     "ceo": {
-      "lastRun": "2026-02-21T04:17:45.561Z",
+      "lastRun": "2026-02-21T04:41:32.390Z",
       "consecutiveErrors": 0,
       "nextAllowedRun": null,
       "lastErrorAt": "2026-02-20T15:39:36.516Z"
@@ -79,11 +79,6 @@
   "pausedUntil": null,
   "lastSocialPosterRun": "2026-02-21T04:39:50.186Z",
   "running": {
-    "ceo": {
-      "pid": 250146,
-      "startTime": "2026-02-21T04:22:45.670Z",
-      "trigger": "unknown"
-    },
     "bi-finance": {
       "pid": 251867,
       "startTime": "2026-02-21T04:30:00.844Z",
