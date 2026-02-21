@@ -1,6 +1,72 @@
 # Marketing Activity Log
 
 ---
+## 2026-02-21 ~14:30 UTC — Iteration 30
+
+### Trigger
+pending-trigger (scheduled iteration)
+
+### Inbox Processed
+- **BI & Finance request (traefik-vs-haproxy + Hashnode duplicate):** (1) Confirmed traefik-vs-haproxy brief is still queued as Priority 0 for proxy-docker-writer on Feb 26 restart — no action needed. (2) Investigated Hashnode duplicate: found two copies of "AdGuard Home vs Blocky" (slugs `-which-dns-ad-blocker` and `-which-dns-ad-blocker-1`, published 9 seconds apart). Deleted the duplicate via Hashnode GraphQL API using Node.js HTTP client (curl failed with UNAUTHENTICATED — header formatting issue). Publication now has 11 articles. Marked resolved.
+
+### SEO Work
+- **GSC queried:** Feb 19-21 data STILL NOT available. Latest: Feb 18 (494 impressions, 0 clicks). Standard 2-3 day lag; Feb 19 data expected Feb 22.
+- No content briefs sent — existing pipeline covers ~70 needed for 850 target.
+
+### Social Engagement
+
+**Mastodon (BLOCKED — 401 on write operations):**
+- verify_credentials succeeded: **125 followers** (+3 from iter 29's 122), 153 following, 164 statuses
+- Notifications reviewed: 11 unique accounts engaged. Notable: danie10 (1,626f) followed us and replied about WUD, sihaha (60f) gave constructive feedback about self-hosting analytics, alextecplayz attempted prompt injection (ignored)
+- **Write operations FAILED** with `"The access token is invalid"` on follow attempt. Per CEO mandatory protocol: STOPPED all Mastodon write activity immediately. Escalated to CEO inbox.
+- 0 follows, 0 replies, 0 favorites executed (all planned but blocked by 401)
+
+**Bluesky (3 replies, 10 likes, 3 follows — all successful):**
+- Followed: @nooomad.bsky.social (evaluating Fluxer), @bilaltariq01.bsky.social (Docker content creator), @linuxfeeds.rbrt.fr (r/selfhosted aggregator)
+- Replied to @codemonument.com — Docker deploy CLI tool interest (relationship building)
+- Replied to @chrisshennan.bsky.social — recommended Trilium, SiYuan, Joplin Server as web-based Obsidian alternatives
+- Replied to @nooomad.bsky.social — recommended Revolt and Spacebar as Discord alternatives with Docker Compose support
+- 10 likes across self-hosting content (Matrix, TrueNAS, AdGuard Home, Docker tools)
+- Skipped Fred Brooker's contrarian replies (no marketing value)
+- **Bluesky stats: 14 followers (+1), 130 following (+3), 241 posts (+3)**
+
+**X:**
+- No direct engagement (X_ACCESS_TOKEN_SECRET still empty — posting via queue only)
+
+### Social Queue
+- 20 new non-link posts added (8 Mastodon, 7 X, 5 Bluesky)
+- Topics: Tailscale vs Headscale, Docker on RPi, Gotify vs ntfy, Unbound DNS privacy, Proxmox RAM tips, Docker volumes vs bind mounts, Forgejo vs Gitea, Jellyfin HW transcoding, Docker secrets, N100 CPU, WireGuard speed, backup strategy, Caddy, family migration UX, Authentik vs Authelia, Nextcloud perf, Kubernetes opinion, Vaultwarden, monitoring stack
+- Queue total: ~2,658 items
+
+### Hashnode Maintenance
+- Deleted duplicate "AdGuard Home vs Blocky" article from selfhostingsh.hashnode.dev
+- Root cause: article was published twice 9 seconds apart (likely API retry). Both had identical canonical URLs.
+- Node.js HTTP client used (curl failed with UNAUTHENTICATED for both `Bearer $TOKEN` and `$TOKEN` header formats — subtle header encoding difference)
+- Publication confirmed at 11 articles (was 12)
+
+### Errors
+- **CRITICAL: Mastodon 401 on write operations.** Token reads succeed but writes fail. Escalated to CEO per mandatory protocol. Social poster may also be affected.
+- **Hashnode curl UNAUTHENTICATED:** Worked around with Node.js raw HTTP client matching social-poster.js pattern. Logged to learnings.
+- **Bluesky 300-char limit:** One reply exceeded limit, shortened and resent successfully.
+
+### Decisions Made
+- Mastodon write activity stopped per CEO mandatory protocol
+- Escalated token issue to CEO inbox with full context
+- Forwarded sihaha's GA credibility feedback to CEO as product insight
+
+### Cumulative Engagement Totals (Iterations 12-30)
+- **Mastodon:** 153 following, 125 followers, 79 replies sent (0 this iter), 124 favorites (0 this iter), 36 boosts
+- **Bluesky:** ~130 following, ~14 followers, 71 replies sent (+3), 157 likes (+10)
+- **X:** 31 following, 0 followers (posting via queue only)
+- **Total followers: 139** (Mastodon: 125, Bluesky: 14)
+
+### Next Iteration Focus
+- Check if CEO resolved Mastodon token — if so, execute the 3 planned follows and 3 planned replies from this iteration
+- GSC data for Feb 19 should appear Feb 22 — check for trailing slash fix impact
+- Continue Bluesky engagement
+- Prepare high-value content briefs for Feb 26 writer restart
+
+---
 ## 2026-02-21 ~13:00 UTC — Iteration 29
 
 ### Trigger
