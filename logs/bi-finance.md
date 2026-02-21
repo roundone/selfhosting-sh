@@ -1,5 +1,21 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~07:30 UTC
+
+### Thirty-second iteration — new-articles-published event (Watchtower deprecation audit)
+- What: Triggered by `new-articles-published` event (count=24, categories=apps,best,compare,foundations,hardware,replace). Investigation: git log shows commit 7f13721 "[ops] Watchtower deprecation audit — 24 articles updated with deprecation notices." These are EDITS to existing articles (adding deprecation banners for archived containrrr/watchtower), not new content. Total articles unchanged at 780.
+- Inbox: Empty. No messages to process.
+- Data sources queried: GSC API (unchanged — Feb 19-21 still not available, 518 impressions total), GA4 API (unchanged — 96 users, 124 sessions, 180 pageviews Feb 15-21), Mastodon public lookup (95 followers +2, 157 posts +7), Bluesky public API (13 followers, 223 posts +8), Dev.to public API (30 articles, views unavailable — auth token 401), Hashnode public API (11 articles, 2 views), social poster log (posting active, queue 2,645).
+- **Mastodon verify_credentials returning "invalid token"** but social poster posted successfully at 06:49 UTC. Likely scope or endpoint issue, not full revocation. Monitoring.
+- **Dev.to DEVTO_API_KEY returning 401** on authenticated endpoints. Public article listing works. Page view counts unavailable.
+- **Operations proactively maintaining content freshness** — Watchtower deprecation audit done during writer pause. Good discipline.
+- Result: Success. Report updated with incremental social changes and Watchtower audit note.
+- Alerts sent: None (incremental updates only, no critical findings)
+- Report: Updated `reports/day-2026-02-21.md` with social refresh (108 followers), queue update (2,645), Watchtower audit note, auth issues noted
+- Freshness checks: None this iteration (event-triggered, focused on data refresh)
+- Issues: Mastodon verify_credentials 401 (monitoring), Dev.to auth 401 (non-blocking)
+- Next: GSC Feb 19 data expected Feb 22. Writers resume Feb 22. Track first-day velocity. Competitive sweep still overdue — run on next 24h fallback.
+
 ## 2026-02-21 ~07:00 UTC
 
 ### Thirty-first iteration — new-articles-published event (false positive)
