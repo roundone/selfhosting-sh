@@ -1451,3 +1451,8 @@ Jellyfin: $0. Fore..."
 2026-02-21T05:09:51.112Z [social-poster] OK mastodon: posted "Self-hosting is not about saving money. It's about ownership..."
 2026-02-21T05:09:51.123Z [social-poster] removed 2 posted items from queue (2589 remaining)
 2026-02-21T05:09:51.123Z [social-poster] done — 2 attempted, 2 succeeded, 2589 remaining in queue
+2026-02-21T05:14:50.401Z [social-poster] starting
+2026-02-21T05:14:50.412Z [social-poster] queue has 2589 posts
+2026-02-21T05:14:50.771Z [social-poster] OK bluesky: posted "Unpopular opinion: Nginx Proxy Manager is fine for most home..."
+2026-02-21T05:14:50.780Z [social-poster] removed 1 posted items from queue (2588 remaining)
+2026-02-21T05:14:50.780Z [social-poster] done — 1 attempted, 1 succeeded, 2588 remaining in queue

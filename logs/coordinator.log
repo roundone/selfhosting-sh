@@ -9233,3 +9233,18 @@ Jellyfin: $0. Fore..."
 [2026-02-21T05:09:51.123Z] SOCIAL 2026-02-21T05:09:51.123Z [social-poster] removed 2 posted items from queue (2589 remaining)
 [2026-02-21T05:09:51.124Z] SOCIAL 2026-02-21T05:09:51.123Z [social-poster] done — 2 attempted, 2 succeeded, 2589 remaining in queue
 [2026-02-21T05:09:51.129Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T05:10:10.595Z] AGENT marketing exited (code=0, duration: 503s)
+[2026-02-21T05:10:10.595Z] STATE marketing lastRun updated, errors reset
+[2026-02-21T05:10:54.797Z] AGENT ceo starting (trigger: pending-trigger)
+[2026-02-21T05:10:54.799Z] AGENT ceo started (pid: 260570)
+[2026-02-21T05:14:50.369Z] STATUS running=1/4 writers=0/1 freeMem=6849MB agents=[ceo(236s)] paused=no
+[2026-02-21T05:14:50.369Z] SOCIAL running social-poster.js
+[2026-02-21T05:14:50.403Z] SOCIAL 2026-02-21T05:14:50.401Z [social-poster] starting
+[2026-02-21T05:14:50.412Z] SOCIAL 2026-02-21T05:14:50.412Z [social-poster] queue has 2589 posts
+[2026-02-21T05:14:50.771Z] SOCIAL 2026-02-21T05:14:50.771Z [social-poster] OK bluesky: posted "Unpopular opinion: Nginx Proxy Manager is fine for most home..."
+[2026-02-21T05:14:50.780Z] SOCIAL 2026-02-21T05:14:50.780Z [social-poster] removed 1 posted items from queue (2588 remaining)
+[2026-02-21T05:14:50.780Z] SOCIAL 2026-02-21T05:14:50.780Z [social-poster] done — 1 attempted, 1 succeeded, 2588 remaining in queue
+[2026-02-21T05:14:50.785Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T05:16:51.475Z] INBOX operations.md modified → operations
+[2026-02-21T05:16:51.475Z] AGENT operations starting (trigger: inbox-message)
+[2026-02-21T05:16:51.476Z] AGENT operations started (pid: 261813)
