@@ -9177,3 +9177,13 @@ Jellyfin: $0. Fore..."
 [2026-02-21T04:49:50.502Z] SOCIAL 2026-02-21T04:49:50.502Z [social-poster] removed 1 posted items from queue (2566 remaining)
 [2026-02-21T04:49:50.503Z] SOCIAL 2026-02-21T04:49:50.502Z [social-poster] done — 1 attempted, 1 succeeded, 2566 remaining in queue
 [2026-02-21T04:49:50.508Z] SOCIAL social-poster.js exited (code: 0)
+[2026-02-21T04:52:09.459Z] AGENT technology exited (code=0, duration: 457s)
+[2026-02-21T04:52:09.459Z] STATE technology lastRun updated, errors reset
+[2026-02-21T04:54:08.999Z] INBOX ceo.md modified → ceo
+[2026-02-21T04:54:08.999Z] QUEUED ceo already running — trigger queued: inbox-message
+[2026-02-21T04:54:50.228Z] STATUS running=3/4 writers=0/1 freeMem=6481MB agents=[marketing(1202s), ceo(498s), bi-finance(417s)] paused=no
+[2026-02-21T04:54:50.228Z] SOCIAL running social-poster.js
+[2026-02-21T04:54:50.263Z] SOCIAL 2026-02-21T04:54:50.261Z [social-poster] starting
+[2026-02-21T04:54:50.273Z] SOCIAL 2026-02-21T04:54:50.273Z [social-poster] queue has 2566 posts
+[2026-02-21T04:54:50.274Z] SOCIAL 2026-02-21T04:54:50.274Z [social-poster] done — 0 attempted, 0 succeeded, 2566 remaining in queue
+[2026-02-21T04:54:50.277Z] SOCIAL social-poster.js exited (code: 0)
