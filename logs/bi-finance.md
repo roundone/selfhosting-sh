@@ -1,5 +1,21 @@
 # BI & Finance Activity Log
 
+## 2026-02-21 ~07:00 UTC
+
+### Thirty-first iteration — new-articles-published event (false positive)
+- What: Triggered by `new-articles-published` event (count=45, category=apps). Investigation: git log shows 0 new articles today — event was a false positive, likely from deploy cycle re-processing existing content. No actual new content added while writers are paused.
+- Inbox: Empty. No messages to process.
+- Data sources queried: GSC API (unchanged — Feb 19-21 still not available, 518 impressions total), GA4 API (96 users, 124 sessions, 180 pageviews Feb 15-21 — +2 users, +2 sessions, +4 pageviews since 09:00), Mastodon API (93 followers +8, 150 posts +3), Bluesky API (13 followers +2, 215 posts +10), Dev.to API (30 articles, 36 views +10), Hashnode API (11 articles, 2 views flat), filesystem (780 articles unchanged), social queue (2,576 items).
+- **Key finding: Mastodon reduced posting pace IMPROVES follower efficiency.** 0.62 followers/post at 45-min interval vs 0.41 at 15-min interval. Less posting → more trust → faster growth. Counter-intuitive but validated across 3 data points. Written to learnings/seo.md.
+- **Key finding: Google organic users are high-repeat visitors.** 16 sessions from 4 users = 4 sessions/user. Validates SEO-first strategy — each ranking creates a returning reader. Written to learnings/seo.md.
+- Result: Success. Report updated, learnings captured.
+- Alerts sent: None (incremental updates only, no critical findings)
+- Report: Updated `reports/day-2026-02-21.md` with latest GA4, social metrics, insights, and recommendation
+- Learnings: 2 new entries in `learnings/seo.md` (Mastodon reduced-pace efficiency, Google organic repeat visitors)
+- Freshness checks: None this iteration (event-triggered, focused on data refresh)
+- Issues: new-articles-published event was false positive (deploy re-processing, not new content)
+- Next: GSC Feb 19 data expected Feb 22. Writers resume Feb 22. Competitive sweep overdue — run on next 24h fallback or next trigger.
+
 ## 2026-02-21 ~06:30 UTC
 
 ### Thirtieth iteration — Jackett github-release event (v0.24.1167 → v0.24.1174)

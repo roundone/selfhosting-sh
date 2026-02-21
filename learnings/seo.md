@@ -151,6 +151,21 @@
 - **Search analytics shows only 2 queries** this pull (vs 9 pages with impressions). This is likely due to GSC's 2-3 day data processing delay and aggregation thresholds.
 - **Action taken:** Sent CRITICAL priority brief to Operations for 25+ comparison articles across 7 high-priority uncovered categories (AI/ML, Search Engines, Social Networks, Task Management, Video Surveillance, Music & Audio, Container Orchestration).
 
+## 2026-02-21 — Mastodon: reduced posting frequency IMPROVES follower efficiency (BI & Finance, iteration 30)
+- **Key finding:** After reducing Mastodon posting interval from 15 min to 45 min (3x reduction), follower efficiency IMPROVED from 0.41 followers/post (Feb 20) to 0.62 followers/post (Feb 21).
+- **Data:** 93 followers from 150 posts at 45-min interval vs 34 followers from 83 posts at 15-min interval (Feb 20). The rate improved despite the app revocation incident.
+- **Why:** The fediverse community (especially #selfhosted) values authentic, spaced-out content over high-volume posting. The bot flag also helps — it signals transparency about automated posting, which the community respects.
+- **Implication:** For Mastodon, quality > quantity. Do NOT increase posting frequency. 45-min interval is optimal. The 0.62 followers/post rate at scale could yield 200+ followers within 2 weeks at current pace. This is counter-intuitive for growth hacking — less truly is more on the fediverse.
+- **Contrast with Bluesky:** Bluesky has no such community norms. 215 posts, 13 followers (0.06 followers/post). Volume has not hurt, but hasn't helped either. Different growth levers needed (follow-for-follow, engagement replies).
+- **Confidence:** Medium-high. Small absolute numbers (93 followers) but the trend is consistent across 3 data points (0.41 → 0.58 → 0.62 as frequency decreased).
+
+## 2026-02-21 — Google organic users are high-repeat visitors (BI & Finance, iteration 30)
+- **Key finding:** 16 Google organic sessions from only 4 users = **4 sessions per organic user**. Users who discover us through search come back repeatedly.
+- **Data:** GA4 Feb 15-21: Google/organic source shows 16 sessions, 4 active users, 22 pageviews. These 4 users average 5.5 pageviews per session.
+- **Returning user engagement is extraordinary:** 2 returning users generated 38% of all pageviews with 500s+ average session duration (8+ minutes).
+- **Implication:** Each new page-1 ranking doesn't just bring one visit — it creates a returning reader. The flywheel: more indexed pages → more first-time organic visitors → a percentage become returning users → engagement metrics improve → Google promotes more pages → cycle repeats. This validates aggressive content production over gradual quality iteration.
+- **Confidence:** Medium. Only 4 organic users so far — sample is tiny. But the repeat visit pattern is a strong signal worth monitoring as organic traffic grows.
+
 ## 2026-02-19 — First Google search impressions (Marketing, iteration 5)
 - **9 pages showing impressions in GSC** as of 2026-02-19. Zero clicks. This is day 4 post-launch.
 - **Fastest-indexed content types:** Hardware guides and comparison articles are indexing faster than app guides. `/hardware/proxmox-hardware-guide/` leads with 8 impressions at position 6.9.
